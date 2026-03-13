@@ -1,0 +1,318 @@
+[
+  {
+    "title": "MXene-Assisted NiFe sulfides for high-performance anion exchange membrane seawater electrolysis",
+    "跨学科关系": [
+      {
+        "head": "MXene (Ti<sub>3</sub>C<sub>2</sub>)",
+        "relation": "integrates with",
+        "relation_type": "method_applied_to",
+        "relation_type_norm": "method_applied_to",
+        "relation_type_raw": "method_applied_to",
+        "tail": "NiFe sulfides ((Ni,Fe)S<sub>2</sub>@Ti<sub>3</sub>C<sub>2</sub>)",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [],
+        "evidence": "Herein, we report a robust OER electrocatalyst for AEMSE by integrating MXene (Ti<sub>3</sub>C<sub>2</sub>) with NiFe sulfides ((Ni,Fe)S<sub>2</sub>@Ti<sub>3</sub>C<sub>2</sub>)",
+        "source": "abstract",
+        "confidence": 1.0
+      },
+      {
+        "head": "(Ni,Fe)S<sub>2</sub> and Ti<sub>3</sub>C<sub>2</sub>",
+        "relation": "induces electron distribution to trigger",
+        "relation_type": "driven_by",
+        "relation_type_norm": "driven_by",
+        "relation_type_raw": "driven_by",
+        "tail": "lattice oxygen mechanism",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [],
+        "evidence": "The strong interaction between (Ni,Fe)S<sub>2</sub> and Ti<sub>3</sub>C<sub>2</sub> induces electron distribution to trigger lattice oxygen mechanism",
+        "source": "abstract",
+        "confidence": 1.0
+      },
+      {
+        "head": "Ti-O-Fe bonding",
+        "relation": "prohibits",
+        "relation_type": "constrains",
+        "relation_type_norm": "constrains",
+        "relation_type_raw": "constrains",
+        "tail": "dissolution of Fe species during OER process",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [],
+        "evidence": "particularly prohibits the dissolution of Fe species during OER process via the Ti-O-Fe bonding effectively",
+        "source": "abstract",
+        "confidence": 1.0
+      },
+      {
+        "head": "good retention of sulfates and the abundant groups of Ti<sub>3</sub>C<sub>2</sub>",
+        "relation": "provides",
+        "relation_type": "improves_metric",
+        "relation_type_norm": "improves_metric",
+        "relation_type_raw": "improves_metric",
+        "tail": "Cl<sup>-</sup> resistance",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [],
+        "evidence": "the good retention of sulfates and the abundant groups of Ti<sub>3</sub>C<sub>2</sub> provide effective Cl<sup>-</sup> resistance",
+        "source": "abstract",
+        "confidence": 1.0
+      },
+      {
+        "head": "(Ni,Fe)S<sub>2</sub>@Ti<sub>3</sub>C<sub>2</sub>",
+        "relation": "achieves",
+        "relation_type": "improves_metric",
+        "relation_type_norm": "improves_metric",
+        "relation_type_raw": "improves_metric",
+        "tail": "OER activity (1.598 V@2 A cm<sup>-2</sup>)",
+        "direction": "->",
+        "quant": {
+          "metric": "voltage",
+          "value": "1.598 V@2 A cm<sup>-2</sup>"
+        },
+        "assumptions": [],
+        "evidence": "(Ni,Fe)S<sub>2</sub>@Ti<sub>3</sub>C<sub>2</sub> achieves high OER activity (1.598 V@2 A cm<sup>-2</sup>)",
+        "source": "abstract",
+        "confidence": 1.0
+      },
+      {
+        "head": "(Ni,Fe)S<sub>2</sub>@Ti<sub>3</sub>C<sub>2</sub>",
+        "relation": "achieves",
+        "relation_type": "improves_metric",
+        "relation_type_norm": "improves_metric",
+        "relation_type_raw": "improves_metric",
+        "tail": "long-term durability (1000 h)",
+        "direction": "->",
+        "quant": {
+          "metric": "time",
+          "value": "1000 h"
+        },
+        "assumptions": [],
+        "evidence": "and long-term durability (1000 h) in seawater system",
+        "source": "abstract",
+        "confidence": 1.0
+      }
+    ],
+    "按辅助学科分类": {}
+  },
+  {
+    "title": "Leaf-based energy harvesting and storage utilizing hygroscopic iron hydrogel for continuous power generation",
+    "跨学科关系": [
+      {
+        "head": "hygroscopic iron hydrogels",
+        "relation": "establishes",
+        "relation_type": "method_applied_to",
+        "relation_type_norm": "method_applied_to",
+        "relation_type_raw": "method_applied_to",
+        "tail": "water gradient",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [],
+        "evidence": "a water gradient is established between areas with/without hydrogel coating",
+        "source": "abstract",
+        "confidence": 1.0
+      },
+      {
+        "head": "water gradient",
+        "relation": "forms",
+        "relation_type": "method_applied_to",
+        "relation_type_norm": "method_applied_to",
+        "relation_type_raw": "method_applied_to",
+        "tail": "electrical double layers",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [],
+        "evidence": "forming electrical double layers over the leaf surface",
+        "source": "abstract",
+        "confidence": 1.0
+      },
+      {
+        "head": "electrical double layers",
+        "relation": "shows",
+        "relation_type": "method_applied_to",
+        "relation_type_norm": "method_applied_to",
+        "relation_type_raw": "method_applied_to",
+        "tail": "capacitance-like behavior",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [],
+        "evidence": "showing capacitance-like behavior for energy charging and discharging",
+        "source": "abstract",
+        "confidence": 1.0
+      },
+      {
+        "head": "leaf cell structures",
+        "relation": "enables",
+        "relation_type": "method_applied_to",
+        "relation_type_norm": "method_applied_to",
+        "relation_type_raw": "method_applied_to",
+        "tail": "carbon coatings",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [],
+        "evidence": "enabled uniform carbon coatings instead of aggregations",
+        "source": "abstract",
+        "confidence": 1.0
+      },
+      {
+        "head": "carbon coatings",
+        "relation": "results in",
+        "relation_type": "improves_metric",
+        "relation_type_norm": "improves_metric",
+        "relation_type_raw": "improves_metric",
+        "tail": "electrical conductivity",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [],
+        "evidence": "high electrical conductivity",
+        "source": "abstract",
+        "confidence": 1.0
+      },
+      {
+        "head": "electrical conductivity",
+        "relation": "results in",
+        "relation_type": "improves_metric",
+        "relation_type_norm": "improves_metric",
+        "relation_type_raw": "improves_metric",
+        "tail": "49 μA/cm 2",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [],
+        "evidence": "resulting in 49 μA/cm 2 and 497 μW/cm 3 electrical output",
+        "source": "abstract",
+        "confidence": 1.0
+      },
+      {
+        "head": "electrical conductivity",
+        "relation": "results in",
+        "relation_type": "improves_metric",
+        "relation_type_norm": "improves_metric",
+        "relation_type_raw": "improves_metric",
+        "tail": "497 μW/cm 3",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [],
+        "evidence": "resulting in 49 μA/cm 2 and 497 μW/cm 3 electrical output",
+        "source": "abstract",
+        "confidence": 1.0
+      }
+    ],
+    "按辅助学科分类": {}
+  },
+  {
+    "title": "Precisely designing asymmetrical selenium-based dual-atom sites for efficient oxygen reduction",
+    "跨学科关系": [
+      {
+        "head": "dual-atom catalysts (DACs)",
+        "relation": "facilitates",
+        "relation_type": "improves_metric",
+        "relation_type_norm": "improves_metric",
+        "relation_type_raw": "improves_metric",
+        "tail": "oxygen reduction reaction (ORR)",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [],
+        "evidence": "dual-atom catalysts (DACs) with well-defined active sites are attracting increasing attention",
+        "source": "abstract",
+        "confidence": 0.9
+      },
+      {
+        "head": "heteronuclear SeN<sub>2</sub>-MN<sub>2</sub>",
+        "relation": "designed for",
+        "relation_type": "method_applied_to",
+        "relation_type_norm": "method_applied_to",
+        "relation_type_raw": "method_applied_to",
+        "tail": "oxygen reduction reaction (ORR)",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [],
+        "evidence": "asymmetric selenium-based dual-atom catalysts that comprise heteronuclear SeN<sub>2</sub>-MN<sub>2</sub> (M = Fe, Mn, Co, Ni, Cu, Mo, etc.) active sites for the efficient oxygen reduction reaction (ORR)",
+        "source": "abstract",
+        "confidence": 1.0
+      },
+      {
+        "head": "SeFe dual-atom sites",
+        "relation": "compared with",
+        "relation_type": "improves_metric",
+        "relation_type_norm": "improves_metric",
+        "relation_type_raw": "improves_metric",
+        "tail": "Se or Fe single-atom sites",
+        "direction": "->",
+        "quant": {
+          "metric": "conversion energy barrier",
+          "value": "reduction"
+        },
+        "assumptions": [],
+        "evidence": "compared with the Se or Fe single-atom sites, the SeFe dual-atom sites facilitate a reduction in the conversion energy barrier from *O to *OH via the coadsorption of *O intermediates",
+        "source": "abstract",
+        "confidence": 1.0
+      },
+      {
+        "head": "selenium-iron dual-atom catalysts",
+        "relation": "achieves",
+        "relation_type": "improves_metric",
+        "relation_type_norm": "improves_metric",
+        "relation_type_raw": "improves_metric",
+        "tail": "half-wave potential",
+        "direction": "->",
+        "quant": {
+          "metric": "half-wave potential",
+          "value": "0.926 V"
+        },
+        "assumptions": [],
+        "evidence": "selenium-iron dual-atom catalysts achieves superior alkaline ORR performance, with a half-wave potential of 0.926 V vs. a reversible hydrogen electrode",
+        "source": "abstract",
+        "confidence": 1.0
+      },
+      {
+        "head": "SeN<sub>2</sub>-FeN<sub>2</sub>-based Zn-air battery",
+        "relation": "has",
+        "relation_type": "improves_metric",
+        "relation_type_norm": "improves_metric",
+        "relation_type_raw": "improves_metric",
+        "tail": "specific capacity",
+        "direction": "->",
+        "quant": {
+          "metric": "specific capacity",
+          "value": "764.8 mAh g<sup>-1</sup>"
+        },
+        "assumptions": [],
+        "evidence": "the SeN<sub>2</sub>-FeN<sub>2</sub>-based Zn-air battery has a high specific capacity (764.8 mAh g<sup>-1</sup>)",
+        "source": "abstract",
+        "confidence": 1.0
+      },
+      {
+        "head": "SeN<sub>2</sub>-FeN<sub>2</sub>-based Zn-air battery",
+        "relation": "has",
+        "relation_type": "improves_metric",
+        "relation_type_norm": "improves_metric",
+        "relation_type_raw": "improves_metric",
+        "tail": "power density",
+        "direction": "->",
+        "quant": {
+          "metric": "power density",
+          "value": "287.2 mW cm<sup>-2</sup>"
+        },
+        "assumptions": [],
+        "evidence": "a maximum power density (287.2 mW cm<sup>-2</sup>)",
+        "source": "abstract",
+        "confidence": 1.0
+      },
+      {
+        "head": "heteronuclear DACs",
+        "relation": "improves",
+        "relation_type": "improves_metric",
+        "relation_type_norm": "improves_metric",
+        "relation_type_raw": "improves_metric",
+        "tail": "oxygen reduction reaction (ORR)",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [],
+        "evidence": "This work may provide a good perspective for designing heteronuclear DACs to improve ORR efficiency",
+        "source": "abstract",
+        "confidence": 0.9
+      }
+    ],
+    "按辅助学科分类": {}
+  }
+]

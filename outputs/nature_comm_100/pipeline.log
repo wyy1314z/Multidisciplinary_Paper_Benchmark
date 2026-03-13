@@ -1,0 +1,1690 @@
+nohup: ignoring input
+
+══════════════════════════════════════════════════════════════
+[03:53:59] [STEP] Stage 1: 学科分类 + 跨学科筛选 (100篇 × ~3次LLM调用)
+══════════════════════════════════════════════════════════════
+
+2026-03-11 03:54:00,370 | INFO | Loaded taxonomy with 50 L1 categories from /ssd/wangyuyang/git/benchmark/data/msc_converted.json
+2026-03-11 03:54:02,959 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:03,602 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:03,950 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:04,047 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:04,052 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:04,498 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:04,598 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:04,720 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:04,840 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:04,973 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:04,975 | WARNING | Level 1 attempt 1/4: no valid items, base_path=['化学']
+2026-03-11 03:54:05,136 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:05,138 | WARNING | Level 1 attempt 1/4: no valid items, base_path=['物理学']
+2026-03-11 03:54:05,891 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:06,117 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:06,155 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:06,352 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:06,705 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:06,714 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:06,717 | WARNING | Level 1 attempt 1/4: no valid items, base_path=['化学']
+2026-03-11 03:54:07,002 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:07,004 | WARNING | Level 1 attempt 2/4: no valid items, base_path=['化学']
+2026-03-11 03:54:07,049 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:07,297 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:07,786 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:07,789 | INFO | [8/100] Non-multidisciplinary: Bamboo-inspired ultra-strong nanofiber-reinforced composite 
+2026-03-11 03:54:08,117 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:08,119 | WARNING | Level 1 attempt 2/4: no valid items, base_path=['物理学']
+2026-03-11 03:54:08,410 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:08,412 | INFO | [6/100] Non-multidisciplinary: Biomimetic and biodegradable separator with high modulus and
+2026-03-11 03:54:08,414 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:08,415 | WARNING | Level 2 attempt 1/4: no valid items, base_path=['化学', '无机化学']
+2026-03-11 03:54:08,465 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:08,467 | WARNING | Level 1 attempt 2/4: no valid items, base_path=['化学']
+2026-03-11 03:54:08,508 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:08,510 | WARNING | Level 1 attempt 1/4: no valid items, base_path=['化学']
+2026-03-11 03:54:08,636 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:08,639 | INFO | [7/100] Multidisciplinary: A parts-per-million scale electrolyte additive for durable a → primary=化学, secondary=
+2026-03-11 03:54:08,940 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:08,943 | INFO | [9/100] Non-multidisciplinary: Leaf-based energy harvesting and storage utilizing hygroscop
+2026-03-11 03:54:09,450 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:09,451 | INFO | [5/100] Multidisciplinary: High-sensitivity, high-speed, broadband mid-infrared photode → primary=物理学, secondary=
+2026-03-11 03:54:10,298 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:10,301 | WARNING | Level 1 attempt 3/4: no valid items, base_path=['化学']
+2026-03-11 03:54:10,303 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:10,305 | WARNING | Level 1 attempt 3/4: no valid items, base_path=['物理学']
+2026-03-11 03:54:10,343 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:10,347 | INFO | [3/100] Multidisciplinary: MXene-Assisted NiFe sulfides for high-performance anion exch → primary=化学, secondary=
+2026-03-11 03:54:10,794 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:10,884 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:11,249 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:11,511 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:11,903 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:12,434 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:12,436 | WARNING | Level 1 attempt 4/4: no valid items, base_path=['物理学']
+2026-03-11 03:54:12,436 | WARNING | Level 1: all retries exhausted for base_path=['物理学']
+2026-03-11 03:54:12,436 | INFO | [10/100] Non-multidisciplinary: Three-dimensional mapping of the altermagnetic spin splittin
+2026-03-11 03:54:12,484 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:12,528 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:12,613 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:12,615 | INFO | [2/100] Multidisciplinary: High-entropy alloy enables multi-path electron synergism and → primary=化学, secondary=
+2026-03-11 03:54:12,668 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:12,670 | WARNING | Level 1 attempt 4/4: no valid items, base_path=['化学']
+2026-03-11 03:54:12,670 | WARNING | Level 1: all retries exhausted for base_path=['化学']
+2026-03-11 03:54:13,448 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:13,450 | WARNING | Level 1 attempt 1/4: no valid items, base_path=['化学']
+2026-03-11 03:54:13,562 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:13,564 | INFO | [1/100] Multidisciplinary: Nano-island-encapsulated cobalt single-atom catalysts for br → primary=化学, secondary=
+2026-03-11 03:54:13,813 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:13,940 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:14,600 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:14,758 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:14,963 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:15,411 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:15,624 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:15,816 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:15,818 | WARNING | Level 2 attempt 1/4: no valid items, base_path=['化学', '无机化学']
+2026-03-11 03:54:16,287 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:16,346 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:16,348 | INFO | [11/100] Non-multidisciplinary: Multi-modal framework for battery state of health evaluation
+2026-03-11 03:54:16,381 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:16,833 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:16,835 | WARNING | Level 1 attempt 2/4: no valid items, base_path=['化学']
+2026-03-11 03:54:16,843 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:16,845 | WARNING | Level 2 attempt 1/4: no valid items, base_path=['化学', '无机化学']
+2026-03-11 03:54:17,152 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:17,168 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:17,371 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:17,373 | WARNING | Level 2 attempt 1/4: no valid items, base_path=['化学', '无机化学']
+2026-03-11 03:54:18,232 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:18,234 | WARNING | Level 1 attempt 1/4: no valid items, base_path=['化学']
+2026-03-11 03:54:18,385 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:18,387 | INFO | [16/100] Multidisciplinary: Atomic-level Ru-Ir mixing in rutile-type (RuIr)O2 for effici → primary=化学, secondary=
+2026-03-11 03:54:18,404 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:18,406 | WARNING | Level 2 attempt 2/4: no valid items, base_path=['化学', '无机化学']
+2026-03-11 03:54:18,813 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:18,816 | WARNING | Level 2 attempt 2/4: no valid items, base_path=['化学', '无机化学']
+2026-03-11 03:54:19,162 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:19,163 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:19,168 | WARNING | Level 1 attempt 3/4: no valid items, base_path=['化学']
+2026-03-11 03:54:19,192 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:19,194 | INFO | [18/100] Non-multidisciplinary: High-energy and long-life O3-type layered cathode material f
+2026-03-11 03:54:19,436 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:19,438 | WARNING | Level 1 attempt 1/4: no valid items, base_path=['化学']
+2026-03-11 03:54:19,798 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:19,800 | WARNING | Level 2 attempt 2/4: no valid items, base_path=['化学', '无机化学']
+2026-03-11 03:54:19,939 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:20,080 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:20,233 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:20,235 | INFO | [15/100] Multidisciplinary: Bilateral in-situ functionalization towards Ah-scale aqueous → primary=化学, secondary=
+2026-03-11 03:54:20,747 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:20,749 | INFO | [17/100] Multidisciplinary: Thermoelectric porous laser-induced graphene-based strain-te → primary=材料科学, secondary=
+2026-03-11 03:54:20,826 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:20,829 | WARNING | Level 2 attempt 3/4: no valid items, base_path=['化学', '无机化学']
+2026-03-11 03:54:21,211 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:21,273 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:21,683 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:21,685 | WARNING | Level 2 attempt 1/4: no valid items, base_path=['化学', '物理化学']
+2026-03-11 03:54:22,267 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:22,269 | WARNING | Level 2 attempt 3/4: no valid items, base_path=['化学', '无机化学']
+2026-03-11 03:54:22,519 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:22,521 | WARNING | Level 1 attempt 1/4: no valid items, base_path=['化学']
+2026-03-11 03:54:22,881 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:23,081 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:23,159 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:23,161 | WARNING | Level 1 attempt 4/4: no valid items, base_path=['化学']
+2026-03-11 03:54:23,161 | WARNING | Level 1: all retries exhausted for base_path=['化学']
+2026-03-11 03:54:23,452 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:23,454 | WARNING | Level 2 attempt 4/4: no valid items, base_path=['化学', '无机化学']
+2026-03-11 03:54:23,455 | WARNING | Level 2: all retries exhausted for base_path=['化学', '无机化学']
+2026-03-11 03:54:23,594 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:23,842 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:23,844 | INFO | [19/100] Non-multidisciplinary: Redefining closed pores in carbons by solvation structures f
+2026-03-11 03:54:24,374 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:24,377 | INFO | [22/100] Non-multidisciplinary: Impact of population screening for Lynch syndrome insights f
+2026-03-11 03:54:24,483 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:24,485 | WARNING | Level 1 attempt 2/4: no valid items, base_path=['化学']
+2026-03-11 03:54:24,599 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:24,601 | WARNING | Level 2 attempt 4/4: no valid items, base_path=['化学', '无机化学']
+2026-03-11 03:54:24,601 | WARNING | Level 2: all retries exhausted for base_path=['化学', '无机化学']
+2026-03-11 03:54:24,635 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:24,639 | INFO | [20/100] Multidisciplinary: A scalable solar-driven photocatalytic system for separated  → primary=化学, secondary=
+2026-03-11 03:54:25,055 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:25,497 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:25,845 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:25,908 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:25,910 | WARNING | Level 1 attempt 3/4: no valid items, base_path=['化学']
+2026-03-11 03:54:26,045 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:27,006 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:27,090 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:27,157 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:27,304 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:27,568 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:27,829 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:27,961 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:27,963 | WARNING | Level 2 attempt 1/4: no valid items, base_path=['化学', '无机化学']
+2026-03-11 03:54:28,902 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:28,956 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:29,048 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:29,050 | WARNING | Level 1 attempt 1/4: no valid items, base_path=['生物学']
+2026-03-11 03:54:29,141 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:29,170 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:29,172 | INFO | [25/100] Multidisciplinary: AlphaFold prediction of structural ensembles of disordered p → primary=生物学, secondary=
+2026-03-11 03:54:29,354 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:29,356 | INFO | [26/100] Non-multidisciplinary: Breaking linear scaling relationships in oxygen evolution vi
+2026-03-11 03:54:29,561 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:29,564 | WARNING | Level 1 attempt 1/4: no valid items, base_path=['化学']
+2026-03-11 03:54:29,589 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:29,591 | WARNING | Level 2 attempt 1/4: no valid items, base_path=['化学', '无机化学']
+2026-03-11 03:54:30,261 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:30,263 | WARNING | Level 2 attempt 2/4: no valid items, base_path=['化学', '无机化学']
+2026-03-11 03:54:30,467 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:30,559 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:30,561 | INFO | [28/100] Non-multidisciplinary: Soil organic carbon thresholds control fertilizer effects on
+2026-03-11 03:54:31,265 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:31,267 | WARNING | Level 2 attempt 1/4: no valid items, base_path=['材料科学', '材料科学基础学科']
+2026-03-11 03:54:31,641 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:31,643 | WARNING | Level 1 attempt 2/4: no valid items, base_path=['生物学']
+2026-03-11 03:54:31,653 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:31,655 | WARNING | Level 1 attempt 1/4: no valid items, base_path=['化学']
+2026-03-11 03:54:31,662 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:31,665 | WARNING | Level 2 attempt 2/4: no valid items, base_path=['化学', '无机化学']
+2026-03-11 03:54:31,997 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:32,138 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:32,525 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:32,527 | WARNING | Level 2 attempt 3/4: no valid items, base_path=['化学', '无机化学']
+2026-03-11 03:54:32,651 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:32,718 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:32,720 | INFO | [31/100] Non-multidisciplinary: Rationally designed universal passivator for high-performanc
+2026-03-11 03:54:33,170 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:33,172 | INFO | [21/100] Non-multidisciplinary: Termination-acidity tailoring of molybdenum carbides for alk
+2026-03-11 03:54:33,710 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:33,712 | WARNING | Level 2 attempt 2/4: no valid items, base_path=['材料科学', '材料科学基础学科']
+2026-03-11 03:54:33,728 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:33,832 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:34,308 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:34,310 | INFO | [29/100] Multidisciplinary: Water-shielding electric double layer and stable interphase  → primary=化学, secondary=
+2026-03-11 03:54:34,417 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:34,688 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:34,692 | WARNING | Level 2 attempt 4/4: no valid items, base_path=['化学', '无机化学']
+2026-03-11 03:54:34,692 | WARNING | Level 2: all retries exhausted for base_path=['化学', '无机化学']
+2026-03-11 03:54:35,052 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:35,054 | WARNING | Level 1 attempt 3/4: no valid items, base_path=['生物学']
+2026-03-11 03:54:35,573 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:35,575 | WARNING | Level 2 attempt 3/4: no valid items, base_path=['材料科学', '材料科学基础学科']
+2026-03-11 03:54:35,652 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:36,073 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:36,075 | WARNING | Level 2 attempt 1/4: no valid items, base_path=['化学', '无机化学']
+2026-03-11 03:54:36,091 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:36,708 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:36,710 | INFO | [33/100] Non-multidisciplinary: The Human Microglia Atlas (HuMicA) unravels changes in disea
+2026-03-11 03:54:37,414 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:37,590 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:37,677 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:37,679 | INFO | [30/100] Multidisciplinary: Self-assembled polyelectrolytes with ion-separation accelera → primary=化学, secondary=
+2026-03-11 03:54:38,041 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:38,167 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:38,328 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:38,330 | WARNING | Level 1 attempt 4/4: no valid items, base_path=['生物学']
+2026-03-11 03:54:38,330 | WARNING | Level 1: all retries exhausted for base_path=['生物学']
+2026-03-11 03:54:38,809 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:38,811 | WARNING | Level 2 attempt 4/4: no valid items, base_path=['材料科学', '材料科学基础学科']
+2026-03-11 03:54:38,811 | WARNING | Level 2: all retries exhausted for base_path=['材料科学', '材料科学基础学科']
+2026-03-11 03:54:38,811 | INFO | [27/100] Non-multidisciplinary: Unravelling the structure-stability interplay of O3-type lay
+2026-03-11 03:54:39,226 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:39,533 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:39,535 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:39,540 | INFO | [34/100] Non-multidisciplinary: Time-resolved spectroscopy uncovers deprotonation-induced re
+2026-03-11 03:54:39,792 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:40,092 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:40,505 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:40,555 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:40,557 | INFO | [35/100] Multidisciplinary: Antigen-presenting cancer associated fibroblasts enhance ant → primary=生物学, secondary=
+2026-03-11 03:54:40,674 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:41,207 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:41,209 | WARNING | Level 2 attempt 1/4: no valid items, base_path=['化学', '无机化学']
+2026-03-11 03:54:41,414 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:41,416 | INFO | [38/100] Non-multidisciplinary: The future of antibiotic use in livestock
+2026-03-11 03:54:41,567 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:41,568 | INFO | [32/100] Non-multidisciplinary: Segregation-dislocation self-organized structures ductilize 
+2026-03-11 03:54:41,838 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:41,840 | INFO | [37/100] Multidisciplinary: CatPred: a comprehensive framework for deep learning in vitr → primary=生物学, secondary=
+2026-03-11 03:54:42,372 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:42,377 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:42,847 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:42,849 | WARNING | Level 1 attempt 1/4: no valid items, base_path=['计算机科学技术']
+2026-03-11 03:54:43,168 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:43,174 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:43,176 | WARNING | Level 1 attempt 1/4: no valid items, base_path=['化学']
+2026-03-11 03:54:43,180 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:43,182 | WARNING | Level 2 attempt 2/4: no valid items, base_path=['化学', '无机化学']
+2026-03-11 03:54:43,767 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:44,515 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:44,731 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:44,732 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:44,798 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:44,801 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:44,802 | WARNING | Level 1 attempt 2/4: no valid items, base_path=['化学']
+2026-03-11 03:54:44,967 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:45,121 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:45,122 | WARNING | Level 2 attempt 3/4: no valid items, base_path=['化学', '无机化学']
+2026-03-11 03:54:45,323 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:45,645 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:46,251 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:46,324 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:46,524 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:46,526 | WARNING | Level 1 attempt 1/4: no valid items, base_path=['生物学']
+2026-03-11 03:54:46,678 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:46,680 | WARNING | Level 2 attempt 4/4: no valid items, base_path=['化学', '无机化学']
+2026-03-11 03:54:46,680 | WARNING | Level 2: all retries exhausted for base_path=['化学', '无机化学']
+2026-03-11 03:54:46,711 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:46,713 | INFO | [41/100] Multidisciplinary: Surface-hydroxylated single-atom catalyst with an isolated C → primary=化学, secondary=
+2026-03-11 03:54:46,914 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:46,917 | INFO | [43/100] Multidisciplinary: Large Language Models lack essential metacognition for relia → primary=计算机科学技术, secondary=
+2026-03-11 03:54:46,965 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:47,323 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:47,324 | INFO | [40/100] Multidisciplinary: Machine learning-assisted wearable sensing systems for speec → primary=计算机科学技术, secondary=
+2026-03-11 03:54:47,841 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:48,306 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:48,308 | WARNING | Level 2 attempt 1/4: no valid items, base_path=['化学', '无机化学']
+2026-03-11 03:54:48,667 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:48,668 | WARNING | Level 2 attempt 1/4: no valid items, base_path=['生物学', '生物化学']
+2026-03-11 03:54:48,860 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:48,861 | WARNING | Level 2 attempt 1/4: no valid items, base_path=['化学', '物理化学']
+2026-03-11 03:54:49,162 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:49,163 | INFO | [45/100] Non-multidisciplinary: All-round enhancement induced by oxophilic single Ru and W a
+2026-03-11 03:54:49,430 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:49,764 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:50,015 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:50,017 | INFO | [39/100] Multidisciplinary: Antisite defect unleashes catalytic potential in high-entrop → primary=化学, secondary=
+2026-03-11 03:54:50,049 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:50,051 | INFO | [44/100] Multidisciplinary: Ocean wave-driven covalent organic framework/ZnO heterostruc → primary=化学, secondary=
+2026-03-11 03:54:50,378 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:50,390 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:50,708 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:50,855 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:50,856 | WARNING | Level 2 attempt 2/4: no valid items, base_path=['生物学', '生物化学']
+2026-03-11 03:54:50,906 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:50,909 | WARNING | Level 1 attempt 1/4: no valid items, base_path=['化学']
+2026-03-11 03:54:51,226 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:51,227 | INFO | [47/100] Multidisciplinary: TRAPT: a multi-stage fused deep learning framework for predi → primary=生物学, secondary=
+2026-03-11 03:54:51,514 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:51,515 | INFO | [42/100] Non-multidisciplinary: Structure Sensitivity and Catalyst Restructuring for CO2 Ele
+2026-03-11 03:54:51,741 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:52,269 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:52,623 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:52,625 | WARNING | Level 1 attempt 2/4: no valid items, base_path=['化学']
+2026-03-11 03:54:52,886 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:52,887 | WARNING | Level 2 attempt 3/4: no valid items, base_path=['生物学', '生物化学']
+2026-03-11 03:54:53,064 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:53,365 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:53,824 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:54,046 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:54,297 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:54,316 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:54,317 | WARNING | Level 1 attempt 3/4: no valid items, base_path=['化学']
+2026-03-11 03:54:54,329 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:54,331 | WARNING | Level 2 attempt 4/4: no valid items, base_path=['生物学', '生物化学']
+2026-03-11 03:54:54,331 | WARNING | Level 2: all retries exhausted for base_path=['生物学', '生物化学']
+2026-03-11 03:54:54,682 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:54,684 | WARNING | Level 2 attempt 1/4: no valid items, base_path=['化学', '无机化学']
+2026-03-11 03:54:54,713 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:55,246 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:55,248 | INFO | [49/100] Multidisciplinary: Atomically thin high-entropy oxides via naked metal ion self → primary=化学, secondary=
+2026-03-11 03:54:55,585 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:55,590 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:55,591 | INFO | [52/100] Non-multidisciplinary: Lysosomal lipid peroxidation contributes to ferroptosis indu
+2026-03-11 03:54:56,306 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:56,308 | WARNING | Level 1 attempt 1/4: no valid items, base_path=['计算机科学技术']
+2026-03-11 03:54:56,462 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:56,778 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:56,779 | INFO | [51/100] Multidisciplinary: Lanthanide single-atom catalysts for efficient CO2-to-CO ele → primary=化学, secondary=
+2026-03-11 03:54:56,792 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:57,081 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:57,154 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:57,242 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:57,243 | WARNING | Level 1 attempt 4/4: no valid items, base_path=['化学']
+2026-03-11 03:54:57,243 | WARNING | Level 1: all retries exhausted for base_path=['化学']
+2026-03-11 03:54:57,243 | INFO | [50/100] Non-multidisciplinary: Hydrogen-bonded organic frameworks for photocatalytic synthe
+2026-03-11 03:54:58,201 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:58,361 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:58,362 | WARNING | Level 1 attempt 2/4: no valid items, base_path=['计算机科学技术']
+2026-03-11 03:54:58,405 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:58,407 | WARNING | Level 2 attempt 1/4: no valid items, base_path=['化学', '无机化学']
+2026-03-11 03:54:58,850 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:58,995 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:59,258 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:59,261 | INFO | [54/100] Multidisciplinary: Gradient all-nanostructured aerogel fibers for enhanced ther → primary=材料科学, secondary=
+2026-03-11 03:54:59,564 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:59,579 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:59,644 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:54:59,645 | WARNING | Level 1 attempt 1/4: no valid items, base_path=['化学']
+2026-03-11 03:54:59,932 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:00,680 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:00,682 | INFO | [56/100] Multidisciplinary: Engineering high-density microcrystalline boundary with V-do → primary=化学, secondary=
+2026-03-11 03:55:00,702 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:00,704 | WARNING | Level 2 attempt 1/4: no valid items, base_path=['化学', '无机化学']
+2026-03-11 03:55:01,041 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:01,204 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:01,206 | WARNING | Level 2 attempt 1/4: no valid items, base_path=['化学', '无机化学']
+2026-03-11 03:55:01,457 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:01,459 | INFO | [55/100] Non-multidisciplinary: Data-driven energy management for electric vehicles using of
+2026-03-11 03:55:01,763 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:01,765 | WARNING | Level 1 attempt 2/4: no valid items, base_path=['化学']
+2026-03-11 03:55:01,783 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:01,787 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:02,718 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:02,720 | WARNING | Level 2 attempt 2/4: no valid items, base_path=['化学', '无机化学']
+2026-03-11 03:55:02,825 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:03,080 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:03,083 | INFO | [59/100] Multidisciplinary: Therapy-induced senescent cancer cells contribute to cancer  → primary=生物学, secondary=
+2026-03-11 03:55:03,098 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:03,100 | INFO | [61/100] Non-multidisciplinary: Boosting hydrogel conductivity via water-dispersible conduct
+2026-03-11 03:55:03,336 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:03,339 | INFO | [60/100] Non-multidisciplinary: Methylammonium-free, high-efficiency, and stable all-perovsk
+2026-03-11 03:55:03,389 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:03,391 | WARNING | Level 2 attempt 2/4: no valid items, base_path=['化学', '无机化学']
+2026-03-11 03:55:03,522 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:03,707 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:03,811 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:03,932 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:04,434 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:05,393 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:05,394 | INFO | [58/100] Non-multidisciplinary: Surface engineering on bulk Cu2O for efficient electrosynthe
+2026-03-11 03:55:05,689 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:06,037 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:06,398 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:06,400 | INFO | [63/100] Non-multidisciplinary: Global-optimized energy storage performance in multilayer fe
+2026-03-11 03:55:06,748 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:06,750 | WARNING | Level 1 attempt 1/4: no valid items, base_path=['材料科学']
+2026-03-11 03:55:06,929 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:06,931 | WARNING | Level 2 attempt 3/4: no valid items, base_path=['化学', '无机化学']
+2026-03-11 03:55:07,014 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:07,047 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:07,049 | INFO | [57/100] Multidisciplinary: Sunlight-driven simultaneous CO2 reduction and water oxidati → primary=化学, secondary=
+2026-03-11 03:55:07,143 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:07,150 | INFO | [65/100] Non-multidisciplinary: Electricity- and hydrogen-driven energy system sector-coupli
+2026-03-11 03:55:07,821 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:07,823 | INFO | [62/100] Multidisciplinary: Silver single atoms and nanoparticles on floatable monolithi → primary=化学, secondary=
+2026-03-11 03:55:07,874 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:08,653 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:09,362 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:09,364 | WARNING | Level 2 attempt 4/4: no valid items, base_path=['化学', '无机化学']
+2026-03-11 03:55:09,364 | WARNING | Level 2: all retries exhausted for base_path=['化学', '无机化学']
+2026-03-11 03:55:09,372 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:09,401 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:09,490 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:09,530 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:09,793 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:10,167 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:10,610 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:10,659 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:10,661 | INFO | [67/100] Multidisciplinary: A network correspondence toolbox for quantitative evaluation → primary=生物学, secondary=
+2026-03-11 03:55:11,003 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:11,306 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:11,417 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:11,418 | WARNING | Level 1 attempt 1/4: no valid items, base_path=['化学']
+2026-03-11 03:55:11,513 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:11,692 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:11,694 | INFO | [68/100] Non-multidisciplinary: Enhancing catalytic durability in alkaline oxygen evolution 
+2026-03-11 03:55:11,996 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:11,998 | WARNING | Level 2 attempt 1/4: no valid items, base_path=['材料科学', '材料科学基础学科']
+2026-03-11 03:55:12,206 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:12,208 | INFO | [66/100] Multidisciplinary: Planar chlorination engineering induced symmetry-broken sing → primary=化学, secondary=
+2026-03-11 03:55:12,583 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:12,585 | WARNING | Level 1 attempt 1/4: no valid items, base_path=['化学']
+2026-03-11 03:55:13,037 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:13,164 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:13,165 | WARNING | Level 1 attempt 2/4: no valid items, base_path=['化学']
+2026-03-11 03:55:13,223 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:13,226 | INFO | [72/100] Non-multidisciplinary: Sensitive dependence of pairing symmetry on Ni-eg crystal fi
+2026-03-11 03:55:13,973 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:13,975 | WARNING | Level 2 attempt 2/4: no valid items, base_path=['材料科学', '材料科学基础学科']
+2026-03-11 03:55:14,006 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:14,151 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:14,809 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:14,811 | WARNING | Level 1 attempt 2/4: no valid items, base_path=['化学']
+2026-03-11 03:55:14,933 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:14,935 | WARNING | Level 1 attempt 3/4: no valid items, base_path=['化学']
+2026-03-11 03:55:15,149 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:15,269 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:15,454 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:15,703 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:15,705 | WARNING | Level 1 attempt 1/4: no valid items, base_path=['化学']
+2026-03-11 03:55:16,050 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:16,052 | WARNING | Level 2 attempt 3/4: no valid items, base_path=['材料科学', '材料科学基础学科']
+2026-03-11 03:55:16,488 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:16,490 | WARNING | Level 1 attempt 1/4: no valid items, base_path=['化学']
+2026-03-11 03:55:16,648 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:16,649 | WARNING | Level 1 attempt 3/4: no valid items, base_path=['化学']
+2026-03-11 03:55:17,289 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:17,641 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:17,651 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:17,653 | INFO | [73/100] Multidisciplinary: In-situ positive electrode-electrolyte interphase constructi → primary=化学, secondary=
+2026-03-11 03:55:17,767 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:17,854 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:17,996 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:17,997 | WARNING | Level 2 attempt 4/4: no valid items, base_path=['材料科学', '材料科学基础学科']
+2026-03-11 03:55:17,998 | WARNING | Level 2: all retries exhausted for base_path=['材料科学', '材料科学基础学科']
+2026-03-11 03:55:18,081 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:18,084 | WARNING | Level 1 attempt 4/4: no valid items, base_path=['化学']
+2026-03-11 03:55:18,084 | WARNING | Level 1: all retries exhausted for base_path=['化学']
+2026-03-11 03:55:18,951 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:18,953 | INFO | [78/100] Non-multidisciplinary: Super elastic and negative triboelectric polymer matrix for 
+2026-03-11 03:55:18,962 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:19,067 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:19,069 | WARNING | Level 1 attempt 4/4: no valid items, base_path=['化学']
+2026-03-11 03:55:19,069 | WARNING | Level 1: all retries exhausted for base_path=['化学']
+2026-03-11 03:55:19,405 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:19,407 | WARNING | Level 1 attempt 2/4: no valid items, base_path=['化学']
+2026-03-11 03:55:19,479 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:20,534 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:20,536 | INFO | [76/100] Multidisciplinary: A global atlas and drivers of antimicrobial resistance in Sa → primary=生物学, secondary=
+2026-03-11 03:55:20,957 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:21,021 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:21,049 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:21,118 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:21,367 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:21,898 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:21,900 | INFO | [75/100] Multidisciplinary: Organic magnetic nanoparticles catalyze CO2 capture in hydro → primary=化学, secondary=
+2026-03-11 03:55:22,067 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:22,961 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:23,228 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:23,230 | WARNING | Level 1 attempt 1/4: no valid items, base_path=['化学']
+2026-03-11 03:55:23,366 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:23,449 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:24,016 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:24,052 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:24,293 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:24,295 | INFO | [80/100] Non-multidisciplinary: Observation of topological hydrogen-bonding domains in physi
+2026-03-11 03:55:24,435 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:25,004 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:25,073 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:25,075 | INFO | [74/100] Non-multidisciplinary: Smart gel polymer electrolytes enlightening high safety and 
+2026-03-11 03:55:25,242 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:25,421 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:25,422 | WARNING | Level 2 attempt 1/4: no valid items, base_path=['化学', '无机化学']
+2026-03-11 03:55:26,123 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:26,171 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:26,378 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:26,380 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:26,381 | INFO | [83/100] Non-multidisciplinary: Core microbes regulate plant-soil resilience by maintaining 
+2026-03-11 03:55:26,386 | WARNING | Level 1 attempt 1/4: no valid items, base_path=['材料科学']
+2026-03-11 03:55:26,848 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:26,850 | INFO | [84/100] Non-multidisciplinary: Ultrahigh-power-density flexible piezoelectric energy harves
+2026-03-11 03:55:27,062 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:27,064 | INFO | [82/100] Non-multidisciplinary: Dynamic modulation of electron redistribution at the heterog
+2026-03-11 03:55:27,404 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:27,406 | INFO | [81/100] Multidisciplinary: Fluorinated amorphous halides with improved ionic conduction → primary=化学, secondary=
+2026-03-11 03:55:27,975 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:28,038 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:28,040 | WARNING | Level 1 attempt 1/4: no valid items, base_path=['物理学']
+2026-03-11 03:55:28,536 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:28,544 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:28,545 | WARNING | Level 1 attempt 1/4: no valid items, base_path=['物理学']
+2026-03-11 03:55:29,506 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:30,078 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:30,080 | WARNING | Level 1 attempt 1/4: no valid items, base_path=['化学']
+2026-03-11 03:55:30,114 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:30,117 | INFO | [87/100] Non-multidisciplinary: Bioinspired photothermal zwitterionic fibrous membrane for h
+2026-03-11 03:55:30,158 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:30,417 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:30,540 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:30,541 | WARNING | Level 1 attempt 2/4: no valid items, base_path=['物理学']
+2026-03-11 03:55:30,694 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:30,747 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:31,267 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:31,364 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:31,744 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:32,192 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:32,202 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:32,202 | INFO | [86/100] Multidisciplinary: Far-field femtosecond laser-driven λ/73 super-resolution fab → primary=物理学, secondary=
+2026-03-11 03:55:32,514 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:32,516 | WARNING | Level 1 attempt 1/4: no valid items, base_path=['物理学']
+2026-03-11 03:55:33,062 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:33,466 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:33,468 | INFO | [91/100] Multidisciplinary: Phosphorylated tau 181 and 217 are elevated in serum and mus → primary=生物学, secondary=
+2026-03-11 03:55:33,681 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:33,683 | WARNING | Level 2 attempt 1/4: no valid items, base_path=['化学', '无机化学']
+2026-03-11 03:55:33,801 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:33,802 | WARNING | Level 1 attempt 3/4: no valid items, base_path=['物理学']
+2026-03-11 03:55:33,846 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:34,072 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:34,475 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:34,574 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:34,577 | WARNING | Level 1 attempt 2/4: no valid items, base_path=['物理学']
+2026-03-11 03:55:34,589 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:34,590 | WARNING | Level 1 attempt 1/4: no valid items, base_path=['物理学']
+2026-03-11 03:55:35,476 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:35,496 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:35,498 | INFO | [90/100] Multidisciplinary: Large scale investigation of GPCR molecular dynamics data un → primary=生物学, secondary=
+2026-03-11 03:55:35,594 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:35,595 | WARNING | Level 2 attempt 2/4: no valid items, base_path=['化学', '无机化学']
+2026-03-11 03:55:35,764 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:36,205 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:36,478 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:36,479 | WARNING | Level 1 attempt 3/4: no valid items, base_path=['物理学']
+2026-03-11 03:55:36,507 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:36,508 | INFO | [93/100] Multidisciplinary: High-entropy solvation chemistry towards affordable and prac → primary=化学, secondary=
+2026-03-11 03:55:36,513 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:36,514 | WARNING | Level 1 attempt 4/4: no valid items, base_path=['物理学']
+2026-03-11 03:55:36,514 | WARNING | Level 1: all retries exhausted for base_path=['物理学']
+2026-03-11 03:55:36,723 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:36,725 | WARNING | Level 2 attempt 1/4: no valid items, base_path=['化学', '无机化学']
+2026-03-11 03:55:36,980 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:36,982 | WARNING | Level 2 attempt 3/4: no valid items, base_path=['化学', '无机化学']
+2026-03-11 03:55:37,555 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:37,557 | WARNING | Level 1 attempt 2/4: no valid items, base_path=['物理学']
+2026-03-11 03:55:38,305 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:38,422 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:38,424 | INFO | [96/100] Multidisciplinary: Tailoring industrial enzymes for thermostability and activit → primary=生物学, secondary=
+2026-03-11 03:55:38,543 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:38,545 | WARNING | Level 2 attempt 4/4: no valid items, base_path=['化学', '无机化学']
+2026-03-11 03:55:38,545 | WARNING | Level 2: all retries exhausted for base_path=['化学', '无机化学']
+2026-03-11 03:55:38,561 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:38,646 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:38,831 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:38,833 | WARNING | Level 2 attempt 2/4: no valid items, base_path=['化学', '无机化学']
+2026-03-11 03:55:40,026 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:40,288 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:40,289 | INFO | [98/100] Non-multidisciplinary: The tetracycline resistome is shaped by selection for specif
+2026-03-11 03:55:40,325 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:40,328 | INFO | [95/100] Multidisciplinary: 3D-printed aberration-free terahertz metalens for ultra-broa → primary=物理学, secondary=
+2026-03-11 03:55:40,512 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:40,515 | WARNING | Level 1 attempt 3/4: no valid items, base_path=['物理学']
+2026-03-11 03:55:40,921 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:40,922 | INFO | [97/100] Multidisciplinary: Allogeneic CD33-directed CAR-NKT cells for the treatment of  → primary=生物学, secondary=
+2026-03-11 03:55:41,190 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:41,192 | WARNING | Level 2 attempt 3/4: no valid items, base_path=['化学', '无机化学']
+2026-03-11 03:55:41,290 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:42,259 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:42,261 | WARNING | Level 1 attempt 1/4: no valid items, base_path=['化学']
+2026-03-11 03:55:43,781 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:43,783 | INFO | [92/100] Multidisciplinary: Stable Ni(II) sites in Prussian blue analogue for selective, → primary=化学, secondary=
+2026-03-11 03:55:44,354 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:44,355 | WARNING | Level 1 attempt 1/4: no valid items, base_path=['化学']
+2026-03-11 03:55:44,551 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:44,553 | WARNING | Level 1 attempt 4/4: no valid items, base_path=['物理学']
+2026-03-11 03:55:44,553 | WARNING | Level 1: all retries exhausted for base_path=['物理学']
+2026-03-11 03:55:44,846 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:46,073 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:46,075 | WARNING | Level 1 attempt 2/4: no valid items, base_path=['化学']
+2026-03-11 03:55:47,462 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:47,464 | WARNING | Level 2 attempt 1/4: no valid items, base_path=['化学', '无机化学']
+2026-03-11 03:55:49,311 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:49,312 | WARNING | Level 1 attempt 3/4: no valid items, base_path=['化学']
+2026-03-11 03:55:50,724 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:50,726 | WARNING | Level 2 attempt 2/4: no valid items, base_path=['化学', '无机化学']
+2026-03-11 03:55:51,893 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:53,579 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:53,581 | WARNING | Level 2 attempt 3/4: no valid items, base_path=['化学', '无机化学']
+2026-03-11 03:55:53,632 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:53,633 | WARNING | Level 2 attempt 1/4: no valid items, base_path=['化学', '无机化学']
+2026-03-11 03:55:55,397 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:55,399 | INFO | [100/100] Multidisciplinary: A standalone bismuth vanadate-silicon artificial leaf achiev → primary=化学, secondary=
+2026-03-11 03:55:56,263 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:56,264 | WARNING | Level 2 attempt 4/4: no valid items, base_path=['化学', '无机化学']
+2026-03-11 03:55:56,264 | WARNING | Level 2: all retries exhausted for base_path=['化学', '无机化学']
+2026-03-11 03:55:56,265 | INFO | Classification complete: 100 total → 100 classified → 63 multidisciplinary → outputs/nature_comm_100/classified.jsonl
+[03:55:56] [INFO] 跨学科论文: 42 篇
+Stage 1 样例已保存 (42 篇跨学科论文)
+
+══════════════════════════════════════════════════════════════
+[03:55:56] [STEP] Stage 2: 三阶段知识抽取 (概念→关系→查询→假设)
+══════════════════════════════════════════════════════════════
+
+2026-03-11 03:55:56,925 | INFO | 开始处理：共 42 条，跳过 0 条，待处理 42 条 (num_workers=2, language_mode=chinese)
+2026-03-11 03:55:56,925 | INFO | 使用 ThreadPoolExecutor 并行处理，max_workers=2
+2026-03-11 03:55:58,541 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:55:59,289 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:56:24,565 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:56:25,876 | WARNING | Supplementary concept extraction failed: 'str' object has no attribute 'get'
+2026-03-11 03:56:25,877 | WARNING | Taxonomy file not found: /ssd/wangyuyang/git/benchmark/crossdisc_extractor/data/msc_converted.json
+2026-03-11 03:56:25,878 | INFO | Loaded terminology dictionary: 0 terms, 0 disciplines
+2026-03-11 03:56:25,878 | INFO | Concept grounding and filtering completed
+2026-03-11 03:56:26,979 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:56:27,913 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:56:30,472 | WARNING | Supplementary concept extraction failed: 'str' object has no attribute 'get'
+2026-03-11 03:56:30,472 | WARNING | Taxonomy file not found: /ssd/wangyuyang/git/benchmark/crossdisc_extractor/data/msc_converted.json
+2026-03-11 03:56:30,472 | INFO | Loaded terminology dictionary: 0 terms, 0 disciplines
+2026-03-11 03:56:30,472 | INFO | Concept grounding and filtering completed
+2026-03-11 03:56:32,615 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:56:45,701 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:56:51,370 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:57:02,851 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:57:06,934 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:57:09,907 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:57:15,257 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:57:18,739 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:57:25,428 | INFO | Hypothesis entity alignment: 0/0 (0.0%)
+2026-03-11 03:57:26,607 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:57:28,107 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:57:34,990 | INFO | Hypothesis entity alignment: 0/0 (0.0%)
+2026-03-11 03:57:36,792 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:58:01,459 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:58:01,506 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:58:03,488 | WARNING | Supplementary concept extraction failed: 'str' object has no attribute 'get'
+2026-03-11 03:58:03,489 | WARNING | Taxonomy file not found: /ssd/wangyuyang/git/benchmark/crossdisc_extractor/data/msc_converted.json
+2026-03-11 03:58:03,489 | INFO | Loaded terminology dictionary: 0 terms, 0 disciplines
+2026-03-11 03:58:03,489 | INFO | Concept grounding and filtering completed
+2026-03-11 03:58:03,650 | WARNING | Supplementary concept extraction failed: 'str' object has no attribute 'get'
+2026-03-11 03:58:03,650 | WARNING | Taxonomy file not found: /ssd/wangyuyang/git/benchmark/crossdisc_extractor/data/msc_converted.json
+2026-03-11 03:58:03,650 | INFO | Loaded terminology dictionary: 0 terms, 0 disciplines
+2026-03-11 03:58:03,651 | INFO | Concept grounding and filtering completed
+2026-03-11 03:58:05,752 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:58:05,845 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:58:20,063 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:58:25,512 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:58:33,320 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:58:41,563 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:58:46,100 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:58:49,911 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:58:53,906 | INFO | Hypothesis entity alignment: 0/0 (0.0%)
+2026-03-11 03:58:55,174 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:59:03,532 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:59:18,956 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:59:28,696 | INFO | Hypothesis entity alignment: 0/0 (0.0%)
+2026-03-11 03:59:30,372 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:59:32,368 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 03:59:33,997 | WARNING | Supplementary concept extraction failed: 'str' object has no attribute 'get'
+2026-03-11 03:59:33,997 | WARNING | Taxonomy file not found: /ssd/wangyuyang/git/benchmark/crossdisc_extractor/data/msc_converted.json
+2026-03-11 03:59:33,997 | INFO | Loaded terminology dictionary: 0 terms, 0 disciplines
+2026-03-11 03:59:33,998 | INFO | Concept grounding and filtering completed
+2026-03-11 03:59:35,689 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:00:00,779 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:00:03,739 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:00:06,014 | WARNING | Supplementary concept extraction failed: 'str' object has no attribute 'get'
+2026-03-11 04:00:06,015 | WARNING | Taxonomy file not found: /ssd/wangyuyang/git/benchmark/crossdisc_extractor/data/msc_converted.json
+2026-03-11 04:00:06,015 | INFO | Loaded terminology dictionary: 0 terms, 0 disciplines
+2026-03-11 04:00:06,015 | INFO | Concept grounding and filtering completed
+2026-03-11 04:00:07,897 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:00:07,928 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:00:24,929 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:00:37,532 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:00:38,992 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:00:45,771 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:00:49,369 | INFO | Hypothesis entity alignment: 0/0 (0.0%)
+2026-03-11 04:00:51,236 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:01:03,297 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:01:20,525 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:01:31,923 | INFO | Hypothesis entity alignment: 0/0 (0.0%)
+2026-03-11 04:01:33,396 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:01:38,540 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:01:40,185 | WARNING | Supplementary concept extraction failed: 'str' object has no attribute 'get'
+2026-03-11 04:01:40,185 | WARNING | Taxonomy file not found: /ssd/wangyuyang/git/benchmark/crossdisc_extractor/data/msc_converted.json
+2026-03-11 04:01:40,185 | INFO | Loaded terminology dictionary: 0 terms, 0 disciplines
+2026-03-11 04:01:40,185 | INFO | Concept grounding and filtering completed
+2026-03-11 04:01:41,841 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:02:04,001 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:02:05,973 | WARNING | Supplementary concept extraction failed: 'str' object has no attribute 'get'
+2026-03-11 04:02:05,973 | WARNING | Taxonomy file not found: /ssd/wangyuyang/git/benchmark/crossdisc_extractor/data/msc_converted.json
+2026-03-11 04:02:05,973 | INFO | Loaded terminology dictionary: 0 terms, 0 disciplines
+2026-03-11 04:02:05,974 | INFO | Concept grounding and filtering completed
+2026-03-11 04:02:09,958 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:02:10,735 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:02:19,065 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:02:31,265 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:02:36,738 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:02:41,512 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:02:44,939 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:02:52,774 | INFO | Hypothesis entity alignment: 0/0 (0.0%)
+2026-03-11 04:02:55,136 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:03:04,410 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:03:14,711 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:03:24,047 | INFO | Hypothesis entity alignment: 0/0 (0.0%)
+2026-03-11 04:03:25,810 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:03:28,818 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:03:30,475 | WARNING | Supplementary concept extraction failed: 'str' object has no attribute 'get'
+2026-03-11 04:03:30,475 | WARNING | Taxonomy file not found: /ssd/wangyuyang/git/benchmark/crossdisc_extractor/data/msc_converted.json
+2026-03-11 04:03:30,475 | INFO | Loaded terminology dictionary: 0 terms, 0 disciplines
+2026-03-11 04:03:30,475 | INFO | Concept grounding and filtering completed
+2026-03-11 04:03:32,267 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:03:55,775 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:03:56,781 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:03:57,988 | WARNING | Supplementary concept extraction failed: 'str' object has no attribute 'get'
+2026-03-11 04:03:57,989 | WARNING | Taxonomy file not found: /ssd/wangyuyang/git/benchmark/crossdisc_extractor/data/msc_converted.json
+2026-03-11 04:03:57,989 | INFO | Loaded terminology dictionary: 0 terms, 0 disciplines
+2026-03-11 04:03:57,989 | INFO | Concept grounding and filtering completed
+2026-03-11 04:04:00,203 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:04:03,751 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:04:20,199 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:04:20,530 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:04:24,756 | WARNING | 检测到查询中含英文，已自动清洗为中文（不再报错）。
+2026-03-11 04:04:26,401 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:04:32,602 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:04:40,141 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:04:42,657 | INFO | Hypothesis entity alignment: 0/0 (0.0%)
+2026-03-11 04:04:44,067 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:04:52,579 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:04:59,709 | INFO | Hypothesis entity alignment: 0/0 (0.0%)
+2026-03-11 04:04:59,719 | INFO | [10/42] 当前成功 10
+2026-03-11 04:05:01,309 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:05:20,000 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:05:23,631 | WARNING | Supplementary concept extraction failed: 'str' object has no attribute 'get'
+2026-03-11 04:05:23,631 | WARNING | Taxonomy file not found: /ssd/wangyuyang/git/benchmark/crossdisc_extractor/data/msc_converted.json
+2026-03-11 04:05:23,631 | INFO | Loaded terminology dictionary: 0 terms, 0 disciplines
+2026-03-11 04:05:23,631 | INFO | Concept grounding and filtering completed
+2026-03-11 04:05:25,279 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:05:33,323 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:05:36,481 | WARNING | Supplementary concept extraction failed: 'str' object has no attribute 'get'
+2026-03-11 04:05:36,481 | WARNING | Taxonomy file not found: /ssd/wangyuyang/git/benchmark/crossdisc_extractor/data/msc_converted.json
+2026-03-11 04:05:36,481 | INFO | Loaded terminology dictionary: 0 terms, 0 disciplines
+2026-03-11 04:05:36,482 | INFO | Concept grounding and filtering completed
+2026-03-11 04:05:37,656 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:05:56,314 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:06:00,891 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:06:03,429 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:06:08,513 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:06:17,762 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:06:21,878 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:06:30,767 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:06:39,723 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:06:40,761 | INFO | Hypothesis entity alignment: 0/0 (0.0%)
+2026-03-11 04:06:46,365 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:06:54,978 | INFO | Hypothesis entity alignment: 0/0 (0.0%)
+2026-03-11 04:06:56,054 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:07:14,670 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:07:16,653 | WARNING | Supplementary concept extraction failed: 'str' object has no attribute 'get'
+2026-03-11 04:07:16,653 | WARNING | Taxonomy file not found: /ssd/wangyuyang/git/benchmark/crossdisc_extractor/data/msc_converted.json
+2026-03-11 04:07:16,653 | INFO | Loaded terminology dictionary: 0 terms, 0 disciplines
+2026-03-11 04:07:16,653 | INFO | Concept grounding and filtering completed
+2026-03-11 04:07:17,998 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:07:24,651 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:07:25,255 | INFO | Supplementary extraction merged successfully
+2026-03-11 04:07:25,255 | WARNING | Taxonomy file not found: /ssd/wangyuyang/git/benchmark/crossdisc_extractor/data/msc_converted.json
+2026-03-11 04:07:25,255 | INFO | Loaded terminology dictionary: 0 terms, 0 disciplines
+2026-03-11 04:07:25,255 | INFO | Concept grounding and filtering completed
+2026-03-11 04:07:27,259 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:07:32,963 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:07:43,238 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:07:45,633 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:07:50,262 | WARNING | 检测到查询中含英文，已自动清洗为中文（不再报错）。
+2026-03-11 04:07:51,738 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:07:57,550 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:08:05,440 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:08:11,016 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:08:19,691 | INFO | Hypothesis entity alignment: 0/0 (0.0%)
+2026-03-11 04:08:19,802 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:08:21,041 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:08:32,539 | INFO | Hypothesis entity alignment: 0/0 (0.0%)
+2026-03-11 04:08:33,933 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:08:55,948 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:08:57,267 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:08:58,534 | WARNING | Supplementary concept extraction failed: 'str' object has no attribute 'get'
+2026-03-11 04:08:58,534 | WARNING | Taxonomy file not found: /ssd/wangyuyang/git/benchmark/crossdisc_extractor/data/msc_converted.json
+2026-03-11 04:08:58,534 | INFO | Loaded terminology dictionary: 0 terms, 0 disciplines
+2026-03-11 04:08:58,534 | INFO | Concept grounding and filtering completed
+2026-03-11 04:08:59,758 | WARNING | Supplementary concept extraction failed: 'str' object has no attribute 'get'
+2026-03-11 04:08:59,758 | WARNING | Taxonomy file not found: /ssd/wangyuyang/git/benchmark/crossdisc_extractor/data/msc_converted.json
+2026-03-11 04:08:59,758 | INFO | Loaded terminology dictionary: 0 terms, 0 disciplines
+2026-03-11 04:08:59,758 | INFO | Concept grounding and filtering completed
+2026-03-11 04:09:00,184 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:09:02,441 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:09:19,974 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:09:22,757 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:09:26,806 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:09:28,922 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:09:39,795 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:09:40,779 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:09:53,978 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:09:56,163 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:10:02,367 | INFO | Hypothesis entity alignment: 0/0 (0.0%)
+2026-03-11 04:10:04,013 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:10:07,999 | INFO | Hypothesis entity alignment: 0/0 (0.0%)
+2026-03-11 04:10:09,609 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:10:31,340 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:10:31,998 | INFO | Supplementary extraction merged successfully
+2026-03-11 04:10:31,999 | WARNING | Taxonomy file not found: /ssd/wangyuyang/git/benchmark/crossdisc_extractor/data/msc_converted.json
+2026-03-11 04:10:31,999 | INFO | Loaded terminology dictionary: 0 terms, 0 disciplines
+2026-03-11 04:10:31,999 | INFO | Concept grounding and filtering completed
+2026-03-11 04:10:34,314 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:10:40,237 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:10:42,120 | WARNING | Supplementary concept extraction failed: 'str' object has no attribute 'get'
+2026-03-11 04:10:42,120 | WARNING | Taxonomy file not found: /ssd/wangyuyang/git/benchmark/crossdisc_extractor/data/msc_converted.json
+2026-03-11 04:10:42,121 | INFO | Loaded terminology dictionary: 0 terms, 0 disciplines
+2026-03-11 04:10:42,121 | INFO | Concept grounding and filtering completed
+2026-03-11 04:10:44,055 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:10:58,183 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:11:04,613 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:11:15,447 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:11:20,855 | WARNING | 检测到查询中含英文，已自动清洗为中文（不再报错）。
+2026-03-11 04:11:21,416 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:11:22,918 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:11:33,165 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:11:43,947 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:11:44,003 | INFO | Hypothesis entity alignment: 0/0 (0.0%)
+2026-03-11 04:11:45,174 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:11:55,499 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:12:07,429 | INFO | Hypothesis entity alignment: 0/0 (0.0%)
+2026-03-11 04:12:08,537 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:12:22,853 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:12:24,507 | WARNING | Supplementary concept extraction failed: 'str' object has no attribute 'get'
+2026-03-11 04:12:24,507 | WARNING | Taxonomy file not found: /ssd/wangyuyang/git/benchmark/crossdisc_extractor/data/msc_converted.json
+2026-03-11 04:12:24,508 | INFO | Loaded terminology dictionary: 0 terms, 0 disciplines
+2026-03-11 04:12:24,508 | INFO | Concept grounding and filtering completed
+2026-03-11 04:12:25,969 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:12:50,643 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:12:51,967 | WARNING | Supplementary concept extraction failed: 'str' object has no attribute 'get'
+2026-03-11 04:12:51,967 | WARNING | Taxonomy file not found: /ssd/wangyuyang/git/benchmark/crossdisc_extractor/data/msc_converted.json
+2026-03-11 04:12:51,967 | INFO | Loaded terminology dictionary: 0 terms, 0 disciplines
+2026-03-11 04:12:51,967 | INFO | Concept grounding and filtering completed
+2026-03-11 04:12:52,274 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:12:54,827 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:12:59,796 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:13:09,064 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:13:21,605 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:13:27,174 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:13:29,628 | INFO | Hypothesis entity alignment: 0/0 (0.0%)
+2026-03-11 04:13:31,990 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:13:35,644 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:13:56,074 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:14:08,899 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:14:10,558 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:14:10,893 | WARNING | Supplementary concept extraction failed: 'str' object has no attribute 'get'
+2026-03-11 04:14:10,893 | WARNING | Taxonomy file not found: /ssd/wangyuyang/git/benchmark/crossdisc_extractor/data/msc_converted.json
+2026-03-11 04:14:10,893 | INFO | Loaded terminology dictionary: 0 terms, 0 disciplines
+2026-03-11 04:14:10,893 | INFO | Concept grounding and filtering completed
+2026-03-11 04:14:12,889 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:14:19,849 | INFO | Hypothesis entity alignment: 0/0 (0.0%)
+2026-03-11 04:14:19,861 | INFO | [20/42] 当前成功 20
+2026-03-11 04:14:22,558 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:14:34,074 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:14:38,127 | WARNING | 检测到查询中含英文，已自动清洗为中文（不再报错）。
+2026-03-11 04:14:40,396 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:14:51,964 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:14:53,625 | WARNING | Supplementary concept extraction failed: 'str' object has no attribute 'get'
+2026-03-11 04:14:53,625 | WARNING | Taxonomy file not found: /ssd/wangyuyang/git/benchmark/crossdisc_extractor/data/msc_converted.json
+2026-03-11 04:14:53,626 | INFO | Loaded terminology dictionary: 0 terms, 0 disciplines
+2026-03-11 04:14:53,626 | INFO | Concept grounding and filtering completed
+2026-03-11 04:14:55,221 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:14:58,532 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:15:07,519 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:15:18,767 | INFO | Hypothesis entity alignment: 0/0 (0.0%)
+2026-03-11 04:15:21,370 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:15:25,293 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:15:29,504 | WARNING | 检测到查询中含英文，已自动清洗为中文（不再报错）。
+2026-03-11 04:15:31,213 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:15:42,367 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:15:55,381 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:16:03,922 | INFO | Hypothesis entity alignment: 0/0 (0.0%)
+2026-03-11 04:16:05,360 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:16:11,441 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:16:15,279 | WARNING | Supplementary concept extraction failed: 'str' object has no attribute 'get'
+2026-03-11 04:16:15,279 | WARNING | Taxonomy file not found: /ssd/wangyuyang/git/benchmark/crossdisc_extractor/data/msc_converted.json
+2026-03-11 04:16:15,279 | INFO | Loaded terminology dictionary: 0 terms, 0 disciplines
+2026-03-11 04:16:15,280 | INFO | Concept grounding and filtering completed
+2026-03-11 04:16:18,146 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:16:41,803 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:16:43,559 | WARNING | Supplementary concept extraction failed: 'str' object has no attribute 'get'
+2026-03-11 04:16:43,559 | WARNING | Taxonomy file not found: /ssd/wangyuyang/git/benchmark/crossdisc_extractor/data/msc_converted.json
+2026-03-11 04:16:43,560 | INFO | Loaded terminology dictionary: 0 terms, 0 disciplines
+2026-03-11 04:16:43,560 | INFO | Concept grounding and filtering completed
+2026-03-11 04:16:45,322 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:16:54,806 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:17:02,560 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:17:08,096 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:17:12,636 | WARNING | 检测到查询中含英文，已自动清洗为中文（不再报错）。
+2026-03-11 04:17:14,628 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:17:18,449 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:17:29,933 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:17:32,689 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:17:43,031 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:17:44,790 | INFO | Hypothesis entity alignment: 0/0 (0.0%)
+2026-03-11 04:17:46,666 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:17:52,375 | INFO | Hypothesis entity alignment: 0/0 (0.0%)
+2026-03-11 04:17:53,720 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:18:16,833 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:18:19,241 | WARNING | Supplementary concept extraction failed: 'str' object has no attribute 'get'
+2026-03-11 04:18:19,242 | WARNING | Taxonomy file not found: /ssd/wangyuyang/git/benchmark/crossdisc_extractor/data/msc_converted.json
+2026-03-11 04:18:19,242 | INFO | Loaded terminology dictionary: 0 terms, 0 disciplines
+2026-03-11 04:18:19,242 | INFO | Concept grounding and filtering completed
+2026-03-11 04:18:20,867 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:18:24,554 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:18:26,654 | WARNING | Supplementary concept extraction failed: 'str' object has no attribute 'get'
+2026-03-11 04:18:26,654 | WARNING | Taxonomy file not found: /ssd/wangyuyang/git/benchmark/crossdisc_extractor/data/msc_converted.json
+2026-03-11 04:18:26,655 | INFO | Loaded terminology dictionary: 0 terms, 0 disciplines
+2026-03-11 04:18:26,655 | INFO | Concept grounding and filtering completed
+2026-03-11 04:18:28,418 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:18:44,679 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:18:48,935 | WARNING | 检测到查询中含英文，已自动清洗为中文（不再报错）。
+2026-03-11 04:18:49,805 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:18:51,470 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:18:54,442 | WARNING | 检测到查询中含英文，已自动清洗为中文（不再报错）。
+2026-03-11 04:18:56,922 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:19:07,035 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:19:11,441 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:19:21,537 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:19:22,177 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:19:28,996 | INFO | Hypothesis entity alignment: 0/0 (0.0%)
+2026-03-11 04:19:30,366 | INFO | Hypothesis entity alignment: 0/0 (0.0%)
+2026-03-11 04:19:30,893 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:19:32,086 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:20:10,511 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:20:11,284 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:20:12,510 | WARNING | Supplementary concept extraction failed: 'str' object has no attribute 'get'
+2026-03-11 04:20:12,510 | WARNING | Taxonomy file not found: /ssd/wangyuyang/git/benchmark/crossdisc_extractor/data/msc_converted.json
+2026-03-11 04:20:12,510 | INFO | Loaded terminology dictionary: 0 terms, 0 disciplines
+2026-03-11 04:20:12,510 | INFO | Concept grounding and filtering completed
+2026-03-11 04:20:12,825 | WARNING | Supplementary concept extraction failed: 'str' object has no attribute 'get'
+2026-03-11 04:20:12,825 | WARNING | Taxonomy file not found: /ssd/wangyuyang/git/benchmark/crossdisc_extractor/data/msc_converted.json
+2026-03-11 04:20:12,825 | INFO | Loaded terminology dictionary: 0 terms, 0 disciplines
+2026-03-11 04:20:12,825 | INFO | Concept grounding and filtering completed
+2026-03-11 04:20:14,381 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:20:14,816 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:20:35,710 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:20:41,471 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:20:56,411 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:20:58,270 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:21:05,049 | WARNING | 检测到查询中含英文，已自动清洗为中文（不再报错）。
+2026-03-11 04:21:08,131 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:21:08,699 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:21:18,524 | INFO | Hypothesis entity alignment: 0/0 (0.0%)
+2026-03-11 04:21:20,539 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:21:23,350 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:21:36,765 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:21:38,564 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:21:39,219 | INFO | Supplementary extraction merged successfully
+2026-03-11 04:21:39,220 | WARNING | Taxonomy file not found: /ssd/wangyuyang/git/benchmark/crossdisc_extractor/data/msc_converted.json
+2026-03-11 04:21:39,220 | INFO | Loaded terminology dictionary: 0 terms, 0 disciplines
+2026-03-11 04:21:39,220 | INFO | Concept grounding and filtering completed
+2026-03-11 04:21:40,847 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:21:49,000 | INFO | Hypothesis entity alignment: 0/0 (0.0%)
+2026-03-11 04:21:50,529 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:22:05,071 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:22:10,576 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:22:16,818 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:22:20,336 | WARNING | Supplementary concept extraction failed: 'str' object has no attribute 'get'
+2026-03-11 04:22:20,336 | WARNING | Taxonomy file not found: /ssd/wangyuyang/git/benchmark/crossdisc_extractor/data/msc_converted.json
+2026-03-11 04:22:20,336 | INFO | Loaded terminology dictionary: 0 terms, 0 disciplines
+2026-03-11 04:22:20,336 | INFO | Concept grounding and filtering completed
+2026-03-11 04:22:21,648 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:22:24,367 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:22:38,912 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:22:44,392 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:22:49,004 | WARNING | 检测到查询中含英文，已自动清洗为中文（不再报错）。
+2026-03-11 04:22:49,814 | INFO | Hypothesis entity alignment: 0/0 (0.0%)
+2026-03-11 04:22:51,832 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:22:52,964 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:23:01,880 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:23:13,470 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:23:14,378 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:23:17,377 | WARNING | Supplementary concept extraction failed: 'str' object has no attribute 'get'
+2026-03-11 04:23:17,377 | WARNING | Taxonomy file not found: /ssd/wangyuyang/git/benchmark/crossdisc_extractor/data/msc_converted.json
+2026-03-11 04:23:17,377 | INFO | Loaded terminology dictionary: 0 terms, 0 disciplines
+2026-03-11 04:23:17,377 | INFO | Concept grounding and filtering completed
+2026-03-11 04:23:18,800 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:23:22,685 | INFO | Hypothesis entity alignment: 0/0 (0.0%)
+2026-03-11 04:23:22,690 | INFO | [30/42] 当前成功 30
+2026-03-11 04:23:23,861 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:23:39,433 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:23:44,615 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:23:57,595 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:24:05,145 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:24:07,564 | WARNING | Supplementary concept extraction failed: 'str' object has no attribute 'get'
+2026-03-11 04:24:07,564 | WARNING | Taxonomy file not found: /ssd/wangyuyang/git/benchmark/crossdisc_extractor/data/msc_converted.json
+2026-03-11 04:24:07,564 | INFO | Loaded terminology dictionary: 0 terms, 0 disciplines
+2026-03-11 04:24:07,565 | INFO | Concept grounding and filtering completed
+2026-03-11 04:24:07,953 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:24:12,328 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:24:16,172 | INFO | Hypothesis entity alignment: 0/0 (0.0%)
+2026-03-11 04:24:17,703 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:24:29,027 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:24:36,371 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:24:51,880 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:25:03,980 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:25:12,428 | INFO | Hypothesis entity alignment: 0/0 (0.0%)
+2026-03-11 04:25:13,093 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:25:13,952 | WARNING | Supplementary concept extraction failed: 'str' object has no attribute 'get'
+2026-03-11 04:25:13,952 | WARNING | Taxonomy file not found: /ssd/wangyuyang/git/benchmark/crossdisc_extractor/data/msc_converted.json
+2026-03-11 04:25:13,952 | INFO | Loaded terminology dictionary: 0 terms, 0 disciplines
+2026-03-11 04:25:13,953 | INFO | Concept grounding and filtering completed
+2026-03-11 04:25:15,089 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:25:15,778 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:25:39,698 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:25:46,825 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:25:50,447 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:25:52,611 | WARNING | Supplementary concept extraction failed: 'str' object has no attribute 'get'
+2026-03-11 04:25:52,611 | WARNING | Taxonomy file not found: /ssd/wangyuyang/git/benchmark/crossdisc_extractor/data/msc_converted.json
+2026-03-11 04:25:52,611 | INFO | Loaded terminology dictionary: 0 terms, 0 disciplines
+2026-03-11 04:25:52,611 | INFO | Concept grounding and filtering completed
+2026-03-11 04:25:55,564 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:26:04,982 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:26:15,824 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:26:19,963 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:26:23,088 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:26:34,054 | INFO | Hypothesis entity alignment: 0/0 (0.0%)
+2026-03-11 04:26:34,197 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:26:37,058 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:26:49,623 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:26:57,053 | INFO | Hypothesis entity alignment: 0/0 (0.0%)
+2026-03-11 04:26:58,499 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:27:01,530 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:27:03,286 | WARNING | Supplementary concept extraction failed: 'str' object has no attribute 'get'
+2026-03-11 04:27:03,286 | WARNING | Taxonomy file not found: /ssd/wangyuyang/git/benchmark/crossdisc_extractor/data/msc_converted.json
+2026-03-11 04:27:03,286 | INFO | Loaded terminology dictionary: 0 terms, 0 disciplines
+2026-03-11 04:27:03,287 | INFO | Concept grounding and filtering completed
+2026-03-11 04:27:04,649 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:27:26,260 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:27:26,349 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:27:28,400 | WARNING | Supplementary concept extraction failed: 'str' object has no attribute 'get'
+2026-03-11 04:27:28,401 | WARNING | Taxonomy file not found: /ssd/wangyuyang/git/benchmark/crossdisc_extractor/data/msc_converted.json
+2026-03-11 04:27:28,401 | INFO | Loaded terminology dictionary: 0 terms, 0 disciplines
+2026-03-11 04:27:28,401 | INFO | Concept grounding and filtering completed
+2026-03-11 04:27:30,301 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:27:30,903 | WARNING | 检测到查询中含英文，已自动清洗为中文（不再报错）。
+2026-03-11 04:27:32,617 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:27:48,662 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:27:58,459 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:28:03,902 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:28:08,244 | WARNING | 检测到查询中含英文，已自动清洗为中文（不再报错）。
+2026-03-11 04:28:09,559 | INFO | Hypothesis entity alignment: 0/0 (0.0%)
+2026-03-11 04:28:10,976 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:28:12,235 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:28:26,310 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:28:36,696 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:28:39,885 | WARNING | Supplementary concept extraction failed: 'str' object has no attribute 'get'
+2026-03-11 04:28:39,885 | WARNING | Taxonomy file not found: /ssd/wangyuyang/git/benchmark/crossdisc_extractor/data/msc_converted.json
+2026-03-11 04:28:39,886 | INFO | Loaded terminology dictionary: 0 terms, 0 disciplines
+2026-03-11 04:28:39,886 | INFO | Concept grounding and filtering completed
+2026-03-11 04:28:39,954 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:28:41,187 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:28:47,656 | INFO | Hypothesis entity alignment: 0/0 (0.0%)
+2026-03-11 04:28:49,299 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:29:03,941 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:29:09,533 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:29:10,595 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:29:11,303 | WARNING | Supplementary concept extraction failed: 'str' object has no attribute 'get'
+2026-03-11 04:29:11,303 | WARNING | Taxonomy file not found: /ssd/wangyuyang/git/benchmark/crossdisc_extractor/data/msc_converted.json
+2026-03-11 04:29:11,303 | INFO | Loaded terminology dictionary: 0 terms, 0 disciplines
+2026-03-11 04:29:11,303 | INFO | Concept grounding and filtering completed
+2026-03-11 04:29:13,257 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:29:26,943 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:29:34,765 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:29:41,945 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:29:43,094 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:29:52,076 | INFO | Hypothesis entity alignment: 0/0 (0.0%)
+2026-03-11 04:29:53,318 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:30:00,068 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:30:11,359 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:30:19,476 | INFO | Hypothesis entity alignment: 0/0 (0.0%)
+2026-03-11 04:30:21,774 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:30:23,830 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:30:26,192 | WARNING | Supplementary concept extraction failed: 'str' object has no attribute 'get'
+2026-03-11 04:30:26,193 | WARNING | Taxonomy file not found: /ssd/wangyuyang/git/benchmark/crossdisc_extractor/data/msc_converted.json
+2026-03-11 04:30:26,193 | INFO | Loaded terminology dictionary: 0 terms, 0 disciplines
+2026-03-11 04:30:26,193 | INFO | Concept grounding and filtering completed
+2026-03-11 04:30:27,445 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:30:44,426 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:30:47,037 | WARNING | Supplementary concept extraction failed: 'str' object has no attribute 'get'
+2026-03-11 04:30:47,037 | WARNING | Taxonomy file not found: /ssd/wangyuyang/git/benchmark/crossdisc_extractor/data/msc_converted.json
+2026-03-11 04:30:47,037 | INFO | Loaded terminology dictionary: 0 terms, 0 disciplines
+2026-03-11 04:30:47,037 | INFO | Concept grounding and filtering completed
+2026-03-11 04:30:48,366 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:30:49,362 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:30:54,962 | WARNING | 检测到查询中含英文，已自动清洗为中文（不再报错）。
+2026-03-11 04:30:57,163 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:31:03,821 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:31:06,748 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:31:08,583 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:31:18,792 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:31:22,930 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:31:29,119 | INFO | Hypothesis entity alignment: 0/0 (0.0%)
+2026-03-11 04:31:30,947 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:31:32,093 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:31:42,696 | INFO | Hypothesis entity alignment: 0/0 (0.0%)
+2026-03-11 04:31:42,706 | INFO | [40/42] 当前成功 40
+2026-03-11 04:31:45,022 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:32:17,662 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:32:19,037 | WARNING | Supplementary concept extraction failed: 'str' object has no attribute 'get'
+2026-03-11 04:32:19,037 | WARNING | Taxonomy file not found: /ssd/wangyuyang/git/benchmark/crossdisc_extractor/data/msc_converted.json
+2026-03-11 04:32:19,037 | INFO | Loaded terminology dictionary: 0 terms, 0 disciplines
+2026-03-11 04:32:19,037 | INFO | Concept grounding and filtering completed
+2026-03-11 04:32:20,763 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:32:20,778 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:32:22,801 | WARNING | Supplementary concept extraction failed: 'str' object has no attribute 'get'
+2026-03-11 04:32:22,801 | WARNING | Taxonomy file not found: /ssd/wangyuyang/git/benchmark/crossdisc_extractor/data/msc_converted.json
+2026-03-11 04:32:22,801 | INFO | Loaded terminology dictionary: 0 terms, 0 disciplines
+2026-03-11 04:32:22,801 | INFO | Concept grounding and filtering completed
+2026-03-11 04:32:24,879 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:32:46,077 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:32:52,399 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:32:57,663 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:33:01,914 | WARNING | 检测到查询中含英文，已自动清洗为中文（不再报错）。
+2026-03-11 04:33:04,613 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:33:09,352 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:33:19,521 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:33:21,504 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:33:30,011 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:33:30,452 | INFO | Hypothesis entity alignment: 0/0 (0.0%)
+2026-03-11 04:33:39,130 | INFO | Hypothesis entity alignment: 0/0 (0.0%)
+2026-03-11 04:33:39,141 | INFO | [42/42] 当前成功 42
+2026-03-11 04:33:39,154 | INFO | 完成：总计 42，成功 42，失败 0。输出 -> outputs/nature_comm_100/extraction_results.jsonl
+抽取完成: 42/42 成功
+Stage 2 各子阶段样例已保存
+GT 集: 39 篇, 测试集: 3 篇
+  测试: Tailoring industrial enzymes for thermostability and activit
+  测试: Allogeneic CD33-directed CAR-NKT cells for the treatment of 
+  测试: A standalone bismuth vanadate-silicon artificial leaf achiev
+
+══════════════════════════════════════════════════════════════
+[04:33:39] [STEP] Stage 3: 构建 Benchmark GT 数据集 (evidence-grounded)
+══════════════════════════════════════════════════════════════
+
+2026-03-11 04:33:39,614 | INFO | Loaded terminology dictionary: 2686 terms, 50 disciplines
+2026-03-11 04:33:39,614 | INFO | Stage 1: Extracting terms from paper: Nano-island-encapsulated cobalt single-atom catalysts for br
+2026-03-11 04:33:40,483 | INFO | Extracted 10 terms (0 grounded)
+2026-03-11 04:33:40,483 | INFO | Stage 2: Building relations from co-occurrence + classification
+2026-03-11 04:33:40,484 | INFO | Built 8 relations
+2026-03-11 04:33:40,484 | INFO | Stage 3: Building GT paths via graph traversal
+2026-03-11 04:33:40,484 | INFO | Built 0 GT paths
+2026-03-11 04:33:40,489 | INFO | Loaded terminology dictionary: 2686 terms, 50 disciplines
+2026-03-11 04:33:40,489 | INFO | Stage 1: Extracting terms from paper: High-entropy alloy enables multi-path electron synergism and
+2026-03-11 04:33:41,189 | INFO | Extracted 10 terms (0 grounded)
+2026-03-11 04:33:41,189 | INFO | Stage 2: Building relations from co-occurrence + classification
+2026-03-11 04:33:41,189 | INFO | Built 3 relations
+2026-03-11 04:33:41,189 | INFO | Stage 3: Building GT paths via graph traversal
+2026-03-11 04:33:41,189 | INFO | Built 0 GT paths
+2026-03-11 04:33:41,194 | INFO | Loaded terminology dictionary: 2686 terms, 50 disciplines
+2026-03-11 04:33:41,194 | INFO | Stage 1: Extracting terms from paper: MXene-Assisted NiFe sulfides for high-performance anion exch
+2026-03-11 04:33:42,037 | INFO | Extracted 13 terms (0 grounded)
+2026-03-11 04:33:42,037 | INFO | Stage 2: Building relations from co-occurrence + classification
+2026-03-11 04:33:42,038 | INFO | Built 3 relations
+2026-03-11 04:33:42,038 | INFO | Stage 3: Building GT paths via graph traversal
+2026-03-11 04:33:42,038 | INFO | Built 0 GT paths
+2026-03-11 04:33:42,042 | INFO | Loaded terminology dictionary: 2686 terms, 50 disciplines
+2026-03-11 04:33:42,043 | INFO | Stage 1: Extracting terms from paper: High-sensitivity, high-speed, broadband mid-infrared photode
+2026-03-11 04:33:42,813 | INFO | Extracted 10 terms (0 grounded)
+2026-03-11 04:33:42,813 | INFO | Stage 2: Building relations from co-occurrence + classification
+2026-03-11 04:33:42,814 | INFO | Built 5 relations
+2026-03-11 04:33:42,814 | INFO | Stage 3: Building GT paths via graph traversal
+2026-03-11 04:33:42,814 | INFO | Built 0 GT paths
+2026-03-11 04:33:42,819 | INFO | Loaded terminology dictionary: 2686 terms, 50 disciplines
+2026-03-11 04:33:42,819 | INFO | Stage 1: Extracting terms from paper: A parts-per-million scale electrolyte additive for durable a
+2026-03-11 04:33:43,640 | INFO | Extracted 15 terms (0 grounded)
+2026-03-11 04:33:43,640 | INFO | Stage 2: Building relations from co-occurrence + classification
+2026-03-11 04:33:43,641 | INFO | Built 16 relations
+2026-03-11 04:33:43,641 | INFO | Stage 3: Building GT paths via graph traversal
+2026-03-11 04:33:43,641 | INFO | Built 0 GT paths
+2026-03-11 04:33:43,655 | INFO | Loaded terminology dictionary: 2686 terms, 50 disciplines
+2026-03-11 04:33:43,655 | INFO | Stage 1: Extracting terms from paper: Bilateral in-situ functionalization towards Ah-scale aqueous
+2026-03-11 04:33:44,388 | INFO | Extracted 12 terms (0 grounded)
+2026-03-11 04:33:44,388 | INFO | Stage 2: Building relations from co-occurrence + classification
+2026-03-11 04:33:44,389 | INFO | Built 6 relations
+2026-03-11 04:33:44,389 | INFO | Stage 3: Building GT paths via graph traversal
+2026-03-11 04:33:44,389 | INFO | Built 0 GT paths
+2026-03-11 04:33:44,394 | INFO | Loaded terminology dictionary: 2686 terms, 50 disciplines
+2026-03-11 04:33:44,394 | INFO | Stage 1: Extracting terms from paper: Atomic-level Ru-Ir mixing in rutile-type (RuIr)O2 for effici
+2026-03-11 04:33:45,334 | INFO | Extracted 13 terms (0 grounded)
+2026-03-11 04:33:45,335 | INFO | Stage 2: Building relations from co-occurrence + classification
+2026-03-11 04:33:45,336 | INFO | Built 12 relations
+2026-03-11 04:33:45,336 | INFO | Stage 3: Building GT paths via graph traversal
+2026-03-11 04:33:45,336 | INFO | Built 0 GT paths
+2026-03-11 04:33:45,341 | INFO | Loaded terminology dictionary: 2686 terms, 50 disciplines
+2026-03-11 04:33:45,341 | INFO | Stage 1: Extracting terms from paper: Thermoelectric porous laser-induced graphene-based strain-te
+2026-03-11 04:33:46,108 | INFO | Extracted 15 terms (1 grounded)
+2026-03-11 04:33:46,108 | INFO | Stage 2: Building relations from co-occurrence + classification
+2026-03-11 04:33:46,109 | INFO | Built 18 relations
+2026-03-11 04:33:46,109 | INFO | Stage 3: Building GT paths via graph traversal
+2026-03-11 04:33:46,109 | INFO | Built 0 GT paths
+2026-03-11 04:33:46,114 | INFO | Loaded terminology dictionary: 2686 terms, 50 disciplines
+2026-03-11 04:33:46,114 | INFO | Stage 1: Extracting terms from paper: A scalable solar-driven photocatalytic system for separated 
+2026-03-11 04:33:47,190 | INFO | Extracted 15 terms (0 grounded)
+2026-03-11 04:33:47,190 | INFO | Stage 2: Building relations from co-occurrence + classification
+2026-03-11 04:33:47,192 | INFO | Built 26 relations
+2026-03-11 04:33:47,192 | INFO | Stage 3: Building GT paths via graph traversal
+2026-03-11 04:33:47,192 | INFO | Built 0 GT paths
+2026-03-11 04:33:47,197 | INFO | Loaded terminology dictionary: 2686 terms, 50 disciplines
+2026-03-11 04:33:47,197 | INFO | Stage 1: Extracting terms from paper: AlphaFold prediction of structural ensembles of disordered p
+2026-03-11 04:33:47,830 | INFO | Extracted 10 terms (1 grounded)
+2026-03-11 04:33:47,830 | INFO | Stage 2: Building relations from co-occurrence + classification
+2026-03-11 04:33:47,832 | INFO | Built 25 relations
+2026-03-11 04:33:47,832 | INFO | Stage 3: Building GT paths via graph traversal
+2026-03-11 04:33:47,832 | INFO | Built 0 GT paths
+2026-03-11 04:33:47,838 | INFO | Loaded terminology dictionary: 2686 terms, 50 disciplines
+2026-03-11 04:33:47,838 | INFO | Stage 1: Extracting terms from paper: Water-shielding electric double layer and stable interphase 
+2026-03-11 04:33:48,608 | INFO | Extracted 13 terms (0 grounded)
+2026-03-11 04:33:48,608 | INFO | Stage 2: Building relations from co-occurrence + classification
+2026-03-11 04:33:48,609 | INFO | Built 10 relations
+2026-03-11 04:33:48,609 | INFO | Stage 3: Building GT paths via graph traversal
+2026-03-11 04:33:48,609 | INFO | Built 0 GT paths
+2026-03-11 04:33:48,614 | INFO | Loaded terminology dictionary: 2686 terms, 50 disciplines
+2026-03-11 04:33:48,614 | INFO | Stage 1: Extracting terms from paper: Self-assembled polyelectrolytes with ion-separation accelera
+2026-03-11 04:33:49,404 | INFO | Extracted 12 terms (0 grounded)
+2026-03-11 04:33:49,404 | INFO | Stage 2: Building relations from co-occurrence + classification
+2026-03-11 04:33:49,404 | INFO | Built 4 relations
+2026-03-11 04:33:49,404 | INFO | Stage 3: Building GT paths via graph traversal
+2026-03-11 04:33:49,404 | INFO | Built 0 GT paths
+2026-03-11 04:33:49,409 | INFO | Loaded terminology dictionary: 2686 terms, 50 disciplines
+2026-03-11 04:33:49,409 | INFO | Stage 1: Extracting terms from paper: Antigen-presenting cancer associated fibroblasts enhance ant
+2026-03-11 04:33:50,417 | INFO | Extracted 15 terms (0 grounded)
+2026-03-11 04:33:50,418 | INFO | Stage 2: Building relations from co-occurrence + classification
+2026-03-11 04:33:50,418 | INFO | Built 17 relations
+2026-03-11 04:33:50,418 | INFO | Stage 3: Building GT paths via graph traversal
+2026-03-11 04:33:50,419 | INFO | Built 0 GT paths
+2026-03-11 04:33:50,424 | INFO | Loaded terminology dictionary: 2686 terms, 50 disciplines
+2026-03-11 04:33:50,424 | INFO | Stage 1: Extracting terms from paper: CatPred: a comprehensive framework for deep learning in vitr
+2026-03-11 04:33:51,092 | INFO | Extracted 9 terms (0 grounded)
+2026-03-11 04:33:51,092 | INFO | Stage 2: Building relations from co-occurrence + classification
+2026-03-11 04:33:51,092 | INFO | Built 7 relations
+2026-03-11 04:33:51,093 | INFO | Stage 3: Building GT paths via graph traversal
+2026-03-11 04:33:51,093 | INFO | Built 0 GT paths
+2026-03-11 04:33:51,098 | INFO | Loaded terminology dictionary: 2686 terms, 50 disciplines
+2026-03-11 04:33:51,098 | INFO | Stage 1: Extracting terms from paper: Antisite defect unleashes catalytic potential in high-entrop
+2026-03-11 04:33:51,979 | INFO | Extracted 11 terms (0 grounded)
+2026-03-11 04:33:51,979 | INFO | Stage 2: Building relations from co-occurrence + classification
+2026-03-11 04:33:51,980 | INFO | Built 7 relations
+2026-03-11 04:33:51,980 | INFO | Stage 3: Building GT paths via graph traversal
+2026-03-11 04:33:51,980 | INFO | Built 0 GT paths
+2026-03-11 04:33:51,985 | INFO | Loaded terminology dictionary: 2686 terms, 50 disciplines
+2026-03-11 04:33:51,985 | INFO | Stage 1: Extracting terms from paper: Machine learning-assisted wearable sensing systems for speec
+2026-03-11 04:33:52,789 | INFO | Extracted 8 terms (0 grounded)
+2026-03-11 04:33:52,789 | INFO | Stage 2: Building relations from co-occurrence + classification
+2026-03-11 04:33:52,789 | INFO | Built 3 relations
+2026-03-11 04:33:52,789 | INFO | Stage 3: Building GT paths via graph traversal
+2026-03-11 04:33:52,790 | INFO | Built 0 GT paths
+2026-03-11 04:33:52,794 | INFO | Loaded terminology dictionary: 2686 terms, 50 disciplines
+2026-03-11 04:33:52,794 | INFO | Stage 1: Extracting terms from paper: Surface-hydroxylated single-atom catalyst with an isolated C
+2026-03-11 04:33:54,050 | INFO | Extracted 15 terms (0 grounded)
+2026-03-11 04:33:54,050 | INFO | Stage 2: Building relations from co-occurrence + classification
+2026-03-11 04:33:54,051 | INFO | Built 14 relations
+2026-03-11 04:33:54,051 | INFO | Stage 3: Building GT paths via graph traversal
+2026-03-11 04:33:54,051 | INFO | Built 0 GT paths
+2026-03-11 04:33:54,056 | INFO | Loaded terminology dictionary: 2686 terms, 50 disciplines
+2026-03-11 04:33:54,056 | INFO | Stage 1: Extracting terms from paper: Large Language Models lack essential metacognition for relia
+2026-03-11 04:33:54,594 | INFO | Extracted 10 terms (1 grounded)
+2026-03-11 04:33:54,594 | INFO | Stage 2: Building relations from co-occurrence + classification
+2026-03-11 04:33:54,594 | INFO | Built 5 relations
+2026-03-11 04:33:54,594 | INFO | Stage 3: Building GT paths via graph traversal
+2026-03-11 04:33:54,594 | INFO | Built 0 GT paths
+2026-03-11 04:33:54,599 | INFO | Loaded terminology dictionary: 2686 terms, 50 disciplines
+2026-03-11 04:33:54,599 | INFO | Stage 1: Extracting terms from paper: Ocean wave-driven covalent organic framework/ZnO heterostruc
+2026-03-11 04:33:55,277 | INFO | Extracted 14 terms (0 grounded)
+2026-03-11 04:33:55,278 | INFO | Stage 2: Building relations from co-occurrence + classification
+2026-03-11 04:33:55,278 | INFO | Built 23 relations
+2026-03-11 04:33:55,279 | INFO | Stage 3: Building GT paths via graph traversal
+2026-03-11 04:33:55,279 | INFO | Built 0 GT paths
+2026-03-11 04:33:55,284 | INFO | Loaded terminology dictionary: 2686 terms, 50 disciplines
+2026-03-11 04:33:55,284 | INFO | Stage 1: Extracting terms from paper: TRAPT: a multi-stage fused deep learning framework for predi
+2026-03-11 04:33:56,350 | INFO | Extracted 14 terms (0 grounded)
+2026-03-11 04:33:56,350 | INFO | Stage 2: Building relations from co-occurrence + classification
+2026-03-11 04:33:56,352 | INFO | Built 24 relations
+2026-03-11 04:33:56,352 | INFO | Stage 3: Building GT paths via graph traversal
+2026-03-11 04:33:56,352 | INFO | Built 0 GT paths
+2026-03-11 04:33:56,357 | INFO | Loaded terminology dictionary: 2686 terms, 50 disciplines
+2026-03-11 04:33:56,357 | INFO | Stage 1: Extracting terms from paper: Atomically thin high-entropy oxides via naked metal ion self
+2026-03-11 04:33:57,071 | INFO | Extracted 12 terms (0 grounded)
+2026-03-11 04:33:57,071 | INFO | Stage 2: Building relations from co-occurrence + classification
+2026-03-11 04:33:57,072 | INFO | Built 15 relations
+2026-03-11 04:33:57,072 | INFO | Stage 3: Building GT paths via graph traversal
+2026-03-11 04:33:57,073 | INFO | Built 0 GT paths
+2026-03-11 04:33:57,078 | INFO | Loaded terminology dictionary: 2686 terms, 50 disciplines
+2026-03-11 04:33:57,078 | INFO | Stage 1: Extracting terms from paper: Lanthanide single-atom catalysts for efficient CO2-to-CO ele
+2026-03-11 04:33:57,873 | INFO | Extracted 12 terms (1 grounded)
+2026-03-11 04:33:57,873 | INFO | Stage 2: Building relations from co-occurrence + classification
+2026-03-11 04:33:57,874 | INFO | Built 4 relations
+2026-03-11 04:33:57,874 | INFO | Stage 3: Building GT paths via graph traversal
+2026-03-11 04:33:57,874 | INFO | Built 0 GT paths
+2026-03-11 04:33:57,880 | INFO | Loaded terminology dictionary: 2686 terms, 50 disciplines
+2026-03-11 04:33:57,880 | INFO | Stage 1: Extracting terms from paper: Gradient all-nanostructured aerogel fibers for enhanced ther
+2026-03-11 04:33:58,671 | INFO | Extracted 14 terms (0 grounded)
+2026-03-11 04:33:58,671 | INFO | Stage 2: Building relations from co-occurrence + classification
+2026-03-11 04:33:58,671 | INFO | Built 8 relations
+2026-03-11 04:33:58,671 | INFO | Stage 3: Building GT paths via graph traversal
+2026-03-11 04:33:58,672 | INFO | Built 0 GT paths
+2026-03-11 04:33:58,677 | INFO | Loaded terminology dictionary: 2686 terms, 50 disciplines
+2026-03-11 04:33:58,677 | INFO | Stage 1: Extracting terms from paper: Engineering high-density microcrystalline boundary with V-do
+2026-03-11 04:33:59,754 | INFO | Extracted 15 terms (0 grounded)
+2026-03-11 04:33:59,754 | INFO | Stage 2: Building relations from co-occurrence + classification
+2026-03-11 04:33:59,755 | INFO | Built 10 relations
+2026-03-11 04:33:59,755 | INFO | Stage 3: Building GT paths via graph traversal
+2026-03-11 04:33:59,755 | INFO | Built 0 GT paths
+2026-03-11 04:33:59,761 | INFO | Loaded terminology dictionary: 2686 terms, 50 disciplines
+2026-03-11 04:33:59,761 | INFO | Stage 1: Extracting terms from paper: Sunlight-driven simultaneous CO2 reduction and water oxidati
+2026-03-11 04:34:00,984 | INFO | Extracted 17 terms (0 grounded)
+2026-03-11 04:34:00,984 | INFO | Stage 2: Building relations from co-occurrence + classification
+2026-03-11 04:34:00,984 | INFO | Built 12 relations
+2026-03-11 04:34:00,985 | INFO | Stage 3: Building GT paths via graph traversal
+2026-03-11 04:34:00,985 | INFO | Built 0 GT paths
+2026-03-11 04:34:00,990 | INFO | Loaded terminology dictionary: 2686 terms, 50 disciplines
+2026-03-11 04:34:00,990 | INFO | Stage 1: Extracting terms from paper: Therapy-induced senescent cancer cells contribute to cancer 
+2026-03-11 04:34:01,877 | INFO | Extracted 10 terms (0 grounded)
+2026-03-11 04:34:01,877 | INFO | Stage 2: Building relations from co-occurrence + classification
+2026-03-11 04:34:01,879 | INFO | Built 19 relations
+2026-03-11 04:34:01,879 | INFO | Stage 3: Building GT paths via graph traversal
+2026-03-11 04:34:01,879 | INFO | Built 0 GT paths
+2026-03-11 04:34:01,884 | INFO | Loaded terminology dictionary: 2686 terms, 50 disciplines
+2026-03-11 04:34:01,884 | INFO | Stage 1: Extracting terms from paper: Silver single atoms and nanoparticles on floatable monolithi
+2026-03-11 04:34:02,753 | INFO | Extracted 14 terms (0 grounded)
+2026-03-11 04:34:02,753 | INFO | Stage 2: Building relations from co-occurrence + classification
+2026-03-11 04:34:02,753 | INFO | Built 11 relations
+2026-03-11 04:34:02,753 | INFO | Stage 3: Building GT paths via graph traversal
+2026-03-11 04:34:02,754 | INFO | Built 0 GT paths
+2026-03-11 04:34:02,759 | INFO | Loaded terminology dictionary: 2686 terms, 50 disciplines
+2026-03-11 04:34:02,759 | INFO | Stage 1: Extracting terms from paper: Planar chlorination engineering induced symmetry-broken sing
+2026-03-11 04:34:03,884 | INFO | Extracted 10 terms (0 grounded)
+2026-03-11 04:34:03,884 | INFO | Stage 2: Building relations from co-occurrence + classification
+2026-03-11 04:34:03,885 | INFO | Built 13 relations
+2026-03-11 04:34:03,885 | INFO | Stage 3: Building GT paths via graph traversal
+2026-03-11 04:34:03,885 | INFO | Built 0 GT paths
+2026-03-11 04:34:03,890 | INFO | Loaded terminology dictionary: 2686 terms, 50 disciplines
+2026-03-11 04:34:03,890 | INFO | Stage 1: Extracting terms from paper: A network correspondence toolbox for quantitative evaluation
+2026-03-11 04:34:04,390 | INFO | Extracted 9 terms (1 grounded)
+2026-03-11 04:34:04,390 | INFO | Stage 2: Building relations from co-occurrence + classification
+2026-03-11 04:34:04,390 | INFO | Built 8 relations
+2026-03-11 04:34:04,390 | INFO | Stage 3: Building GT paths via graph traversal
+2026-03-11 04:34:04,390 | INFO | Built 0 GT paths
+2026-03-11 04:34:04,396 | INFO | Loaded terminology dictionary: 2686 terms, 50 disciplines
+2026-03-11 04:34:04,397 | INFO | Stage 1: Extracting terms from paper: In-situ positive electrode-electrolyte interphase constructi
+2026-03-11 04:34:05,189 | INFO | Extracted 10 terms (0 grounded)
+2026-03-11 04:34:05,189 | INFO | Stage 2: Building relations from co-occurrence + classification
+2026-03-11 04:34:05,189 | INFO | Built 4 relations
+2026-03-11 04:34:05,189 | INFO | Stage 3: Building GT paths via graph traversal
+2026-03-11 04:34:05,189 | INFO | Built 0 GT paths
+2026-03-11 04:34:05,194 | INFO | Loaded terminology dictionary: 2686 terms, 50 disciplines
+2026-03-11 04:34:05,194 | INFO | Stage 1: Extracting terms from paper: Organic magnetic nanoparticles catalyze CO2 capture in hydro
+2026-03-11 04:34:05,882 | INFO | Extracted 10 terms (0 grounded)
+2026-03-11 04:34:05,882 | INFO | Stage 2: Building relations from co-occurrence + classification
+2026-03-11 04:34:05,882 | INFO | Built 3 relations
+2026-03-11 04:34:05,882 | INFO | Stage 3: Building GT paths via graph traversal
+2026-03-11 04:34:05,882 | INFO | Built 0 GT paths
+2026-03-11 04:34:05,888 | INFO | Loaded terminology dictionary: 2686 terms, 50 disciplines
+2026-03-11 04:34:05,888 | INFO | Stage 1: Extracting terms from paper: A global atlas and drivers of antimicrobial resistance in Sa
+2026-03-11 04:34:06,688 | INFO | Extracted 16 terms (0 grounded)
+2026-03-11 04:34:06,688 | INFO | Stage 2: Building relations from co-occurrence + classification
+2026-03-11 04:34:06,692 | INFO | Built 42 relations
+2026-03-11 04:34:06,692 | INFO | Stage 3: Building GT paths via graph traversal
+2026-03-11 04:34:06,692 | INFO | Built 0 GT paths
+2026-03-11 04:34:06,697 | INFO | Loaded terminology dictionary: 2686 terms, 50 disciplines
+2026-03-11 04:34:06,697 | INFO | Stage 1: Extracting terms from paper: Fluorinated amorphous halides with improved ionic conduction
+2026-03-11 04:34:07,847 | INFO | Extracted 17 terms (0 grounded)
+2026-03-11 04:34:07,848 | INFO | Stage 2: Building relations from co-occurrence + classification
+2026-03-11 04:34:07,848 | INFO | Built 11 relations
+2026-03-11 04:34:07,848 | INFO | Stage 3: Building GT paths via graph traversal
+2026-03-11 04:34:07,848 | INFO | Built 0 GT paths
+2026-03-11 04:34:07,853 | INFO | Loaded terminology dictionary: 2686 terms, 50 disciplines
+2026-03-11 04:34:07,853 | INFO | Stage 1: Extracting terms from paper: Far-field femtosecond laser-driven λ/73 super-resolution fab
+2026-03-11 04:34:08,700 | INFO | Extracted 12 terms (0 grounded)
+2026-03-11 04:34:08,700 | INFO | Stage 2: Building relations from co-occurrence + classification
+2026-03-11 04:34:08,701 | INFO | Built 1 relations
+2026-03-11 04:34:08,701 | INFO | Stage 3: Building GT paths via graph traversal
+2026-03-11 04:34:08,701 | INFO | Built 0 GT paths
+2026-03-11 04:34:08,706 | INFO | Loaded terminology dictionary: 2686 terms, 50 disciplines
+2026-03-11 04:34:08,706 | INFO | Stage 1: Extracting terms from paper: Large scale investigation of GPCR molecular dynamics data un
+2026-03-11 04:34:09,585 | INFO | Extracted 10 terms (0 grounded)
+2026-03-11 04:34:09,585 | INFO | Stage 2: Building relations from co-occurrence + classification
+2026-03-11 04:34:09,585 | INFO | Built 5 relations
+2026-03-11 04:34:09,585 | INFO | Stage 3: Building GT paths via graph traversal
+2026-03-11 04:34:09,585 | INFO | Built 0 GT paths
+2026-03-11 04:34:09,590 | INFO | Loaded terminology dictionary: 2686 terms, 50 disciplines
+2026-03-11 04:34:09,590 | INFO | Stage 1: Extracting terms from paper: Phosphorylated tau 181 and 217 are elevated in serum and mus
+2026-03-11 04:34:10,244 | INFO | Extracted 10 terms (1 grounded)
+2026-03-11 04:34:10,244 | INFO | Stage 2: Building relations from co-occurrence + classification
+2026-03-11 04:34:10,244 | INFO | Built 6 relations
+2026-03-11 04:34:10,244 | INFO | Stage 3: Building GT paths via graph traversal
+2026-03-11 04:34:10,244 | INFO | Built 0 GT paths
+2026-03-11 04:34:10,249 | INFO | Loaded terminology dictionary: 2686 terms, 50 disciplines
+2026-03-11 04:34:10,249 | INFO | Stage 1: Extracting terms from paper: Stable Ni(II) sites in Prussian blue analogue for selective,
+2026-03-11 04:34:10,964 | INFO | Extracted 10 terms (0 grounded)
+2026-03-11 04:34:10,964 | INFO | Stage 2: Building relations from co-occurrence + classification
+2026-03-11 04:34:10,964 | INFO | Built 7 relations
+2026-03-11 04:34:10,964 | INFO | Stage 3: Building GT paths via graph traversal
+2026-03-11 04:34:10,965 | INFO | Built 0 GT paths
+2026-03-11 04:34:10,970 | INFO | Loaded terminology dictionary: 2686 terms, 50 disciplines
+2026-03-11 04:34:10,970 | INFO | Stage 1: Extracting terms from paper: High-entropy solvation chemistry towards affordable and prac
+2026-03-11 04:34:11,733 | INFO | Extracted 10 terms (0 grounded)
+2026-03-11 04:34:11,733 | INFO | Stage 2: Building relations from co-occurrence + classification
+2026-03-11 04:34:11,734 | INFO | Built 10 relations
+2026-03-11 04:34:11,734 | INFO | Stage 3: Building GT paths via graph traversal
+2026-03-11 04:34:11,734 | INFO | Built 0 GT paths
+2026-03-11 04:34:11,748 | INFO | Loaded terminology dictionary: 2686 terms, 50 disciplines
+2026-03-11 04:34:11,748 | INFO | Stage 1: Extracting terms from paper: 3D-printed aberration-free terahertz metalens for ultra-broa
+2026-03-11 04:34:12,753 | INFO | Extracted 12 terms (0 grounded)
+2026-03-11 04:34:12,754 | INFO | Stage 2: Building relations from co-occurrence + classification
+2026-03-11 04:34:12,754 | INFO | Built 5 relations
+2026-03-11 04:34:12,754 | INFO | Stage 3: Building GT paths via graph traversal
+2026-03-11 04:34:12,754 | INFO | Built 0 GT paths
+Loading data from outputs/nature_comm_100/gt_extraction.json...
+Found 39 valid items.
+GT construction mode: evidence
+Converted 39 items to benchmark format.
+Saved benchmark dataset to outputs/nature_comm_100/benchmark_dataset.json
+
+=== Evidence-Grounded GT Summary ===
+  Total terms: 474 (6 grounded to dictionary)
+  Total relations: 430
+  Total paths: 0
+Stage 3 样例已保存 (共 39 条 GT)
+
+══════════════════════════════════════════════════════════════
+[04:34:12] [STEP] Stage 4: P1-P5 五级 Prompt 假设生成 (测试集 3 篇 × 5 级)
+══════════════════════════════════════════════════════════════
+
+
+======================================================================
+[1/3] Tailoring industrial enzymes for thermostability and activit...
+  [04:34:13] P1... done (6.9s)
+  [04:34:20] P2... done (7.5s)
+  [04:34:27] P3... done (13.8s)
+  [04:34:41] P4... done (22.2s)
+  [04:35:03] P5... done (0.0s)
+
+======================================================================
+[2/3] Allogeneic CD33-directed CAR-NKT cells for the treatment of ...
+  [04:35:03] P1... done (12.1s)
+  [04:35:15] P2... done (8.6s)
+  [04:35:24] P3... done (16.1s)
+  [04:35:40] P4... done (24.0s)
+  [04:36:04] P5... done (0.0s)
+
+======================================================================
+[3/3] A standalone bismuth vanadate-silicon artificial leaf achiev...
+  [04:36:04] P1... done (12.5s)
+  [04:36:17] P2... done (9.1s)
+  [04:36:26] P3... done (19.0s)
+  [04:36:45] P4... done (22.3s)
+  [04:37:07] P5... done (0.0s)
+
+P1-P5 生成完成, 样例已保存
+
+══════════════════════════════════════════════════════════════
+[04:37:07] [STEP] Stage 5: 多维度评测 (LLM-as-Judge + 文本相似度 + 结构化指标)
+══════════════════════════════════════════════════════════════
+
+  [1/15] P1 - Tailoring industrial enzymes for thermostability a...
+  [2/15] P2 - Tailoring industrial enzymes for thermostability a...
+  [3/15] P3 - Tailoring industrial enzymes for thermostability a...
+  [4/15] P4 - Tailoring industrial enzymes for thermostability a...
+  [5/15] P5 - Tailoring industrial enzymes for thermostability a...
+  [6/15] P1 - Allogeneic CD33-directed CAR-NKT cells for the tre...
+  [7/15] P2 - Allogeneic CD33-directed CAR-NKT cells for the tre...
+  [8/15] P3 - Allogeneic CD33-directed CAR-NKT cells for the tre...
+  [9/15] P4 - Allogeneic CD33-directed CAR-NKT cells for the tre...
+  [10/15] P5 - Allogeneic CD33-directed CAR-NKT cells for the tre...
+  [11/15] P1 - A standalone bismuth vanadate-silicon artificial l...
+  [12/15] P2 - A standalone bismuth vanadate-silicon artificial l...
+  [13/15] P3 - A standalone bismuth vanadate-silicon artificial l...
+  [14/15] P4 - A standalone bismuth vanadate-silicon artificial l...
+  [15/15] P5 - A standalone bismuth vanadate-silicon artificial l...
+
+================================================================================
+  BASELINE COMPARISON RESULTS
+================================================================================
+
+--- Text Similarity (IdeaBench-style) ---
+Metric                             P1                  P2                  P3                  P4                  P5                  
+---------------------------------------------------------------------------------------------------------------------------------------
+text_bertscore_f1                  0.0000              0.0000              0.0000              0.0000              0.0000              
+text_bleu                          0.0000              0.0000              0.0000              0.0000              0.0000              
+text_rouge1                        0.0000              0.0000              0.0000              0.0000              0.0000              
+text_rouge2                        0.0000              0.0000              0.0000              0.0000              0.0000              
+text_rougeL                        0.0000              0.0000              0.0000              0.0000              0.0000              
+
+--- LLM Judge (multi-dim) ---
+Metric                             P1                  P2                  P3                  P4                  P5                  
+---------------------------------------------------------------------------------------------------------------------------------------
+judge_cross_disciplinary           8.0000              9.0000              8.0000              N/A                 7.6667              
+judge_feasibility                  7.3333              7.0000              7.3333              N/A                 7.0000              
+judge_novelty                      8.6667              9.0000              8.6667              N/A                 8.0000              
+judge_relevance                    9.0000              10.0000             10.0000             N/A                 9.6667              
+judge_specificity                  8.3333              8.0000              8.3333              N/A                 8.3333              
+
+--- Structural (CrossDisc-only) ---
+Metric                             P1                  P2                  P3                  P4                  P5                  
+---------------------------------------------------------------------------------------------------------------------------------------
+struct_avg_path_length             N/A                 N/A                 N/A                 N/A                 3.0000              
+struct_chain_coherence             N/A                 N/A                 N/A                 N/A                 1.0000              
+struct_entity_grounding_rate       N/A                 N/A                 N/A                 N/A                 1.0000              
+struct_has_L1                      N/A                 N/A                 N/A                 N/A                 1.0000              
+struct_has_L2                      N/A                 N/A                 N/A                 N/A                 1.0000              
+struct_has_L3                      N/A                 N/A                 N/A                 N/A                 1.0000              
+struct_relation_diversity          N/A                 N/A                 N/A                 N/A                 2.5000              
+
+--- General ---
+Metric                             P1                  P2                  P3                  P4                  P5                  
+---------------------------------------------------------------------------------------------------------------------------------------
+elapsed_seconds                    10.5066             8.4207              16.3340             22.8135             0.0001              
+num_hypotheses                     1.0000              1.0000              1.0000              1.0000              6.0000              
+
+================================================================================
+评测完成, 样例已保存
+
+══════════════════════════════════════════════════════════════
+[04:38:18] [STEP] Stage 6: KG-based 结构化评测
+══════════════════════════════════════════════════════════════
+
+2026-03-11 04:38:18,545 | INFO | 正在加载 Benchmark 数据集构建知识图谱: outputs/nature_comm_100/benchmark_dataset.json
+2026-03-11 04:38:18,563 | INFO | KG 构建完成。共索引 225 条路径，覆盖 5 个学科。
+Evaluating:   0%|          | 0/3 [00:00<?, ?it/s]2026-03-11 04:38:20,306 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:38:24,459 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:38:29,917 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:38:33,833 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:38:38,573 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:38:43,079 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:38:48,317 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:38:52,436 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:38:58,387 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:39:02,719 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:39:07,564 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:39:11,397 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+Evaluating:  33%|███▎      | 1/3 [00:56<01:53, 56.78s/it]2026-03-11 04:39:17,018 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:39:21,822 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:39:26,885 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:39:33,525 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:39:38,487 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:39:42,174 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:39:48,078 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:39:51,648 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:40:01,205 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:40:04,924 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:40:09,890 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:40:13,459 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+Evaluating:  67%|██████▋   | 2/3 [01:58<00:59, 59.90s/it]2026-03-11 04:40:18,917 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:40:23,249 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:40:28,733 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:40:32,647 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:40:38,217 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:40:41,351 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:40:47,327 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:40:51,844 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:40:57,457 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:41:00,787 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:41:05,699 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-11 04:41:09,659 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+Evaluating: 100%|██████████| 3/3 [02:54<00:00, 58.18s/it]Evaluating: 100%|██████████| 3/3 [02:54<00:00, 58.33s/it]
+
+=== Evaluation Summary (v2) ===
+  L1_atypical_combination: 0.8983 ± 0.0000
+  L1_bridging: 0.9722 ± 0.0481
+  L1_chain_coherence: 0.6134 ± 0.0445
+  L1_concept_f1: 0.0000 ± 0.0000
+  L1_concept_precision: 0.0000 ± 0.0000
+  L1_concept_recall: 0.0000 ± 0.0000
+  L1_consistency: 0.0000 ± 0.0000
+  L1_consistency_f1: 0.0000 ± 0.0000
+  L1_consistency_precision: 0.0000 ± 0.0000
+  L1_consistency_recall: 0.0000 ± 0.0000
+  L1_embedding_bridging: 0.9524 ± 0.0825
+  L1_entity_coverage: 0.9583 ± 0.0722
+  L1_evidence_coverage: 0.0000 ± 0.0000
+  L1_feasibility: 6.4167 ± 0.8036
+  L1_flexibility: 2.8333 ± 0.2887
+  L1_fluency: 2.0000 ± 0.0000
+  L1_info_novelty: 1.0000 ± 0.0000
+  L1_innovation: 8.0000 ± 0.0000
+  L1_pairwise_diversity: 0.9524 ± 0.0825
+  L1_path_alignment_best: 0.0000 ± 0.0000
+  L1_path_alignment_mean: 0.0000 ± 0.0000
+  L1_rao_stirling: 0.0000 ± 0.0000
+  L1_relation_precision: 0.0000 ± 0.0000
+  L1_relation_type_accuracy: 0.0000 ± 0.0000
+  L1_scientificity: 6.6667 ± 1.4434
+  L1_testability: 7.1875 ± 0.9458
+  L2_atypical_combination: 0.8983 ± 0.0000
+  L2_bridging: 1.0000 ± 0.0000
+  L2_chain_coherence: 0.5883 ± 0.0685
+  L2_concept_f1: 0.0000 ± 0.0000
+  L2_concept_precision: 0.0000 ± 0.0000
+  L2_concept_recall: 0.0000 ± 0.0000
+  L2_consistency: 0.0000 ± 0.0000
+  L2_consistency_f1: 0.0000 ± 0.0000
+  L2_consistency_precision: 0.0000 ± 0.0000
+  L2_consistency_recall: 0.0000 ± 0.0000
+  L2_embedding_bridging: 1.0000 ± 0.0000
+  L2_entity_coverage: 0.9167 ± 0.0722
+  L2_evidence_coverage: 0.0000 ± 0.0000
+  L2_feasibility: 6.6667 ± 1.7559
+  L2_flexibility: 3.0000 ± 0.0000
+  L2_fluency: 2.0000 ± 0.0000
+  L2_info_novelty: 1.0000 ± 0.0000
+  L2_innovation: 7.0000 ± 0.6614
+  L2_pairwise_diversity: 0.9047 ± 0.0825
+  L2_path_alignment_best: 0.0000 ± 0.0000
+  L2_path_alignment_mean: 0.0000 ± 0.0000
+  L2_rao_stirling: 0.0000 ± 0.0000
+  L2_relation_precision: 0.0000 ± 0.0000
+  L2_relation_type_accuracy: 0.0000 ± 0.0000
+  L2_scientificity: 7.7500 ± 1.2500
+  L2_testability: 7.6042 ± 0.6006
+  L3_atypical_combination: 0.8983 ± 0.0000
+  L3_bridging: 0.9317 ± 0.0169
+  L3_chain_coherence: 0.5939 ± 0.0322
+  L3_concept_f1: 0.0000 ± 0.0000
+  L3_concept_precision: 0.0000 ± 0.0000
+  L3_concept_recall: 0.0000 ± 0.0000
+  L3_consistency: 0.0000 ± 0.0000
+  L3_consistency_f1: 0.0000 ± 0.0000
+  L3_consistency_precision: 0.0000 ± 0.0000
+  L3_consistency_recall: 0.0000 ± 0.0000
+  L3_embedding_bridging: 0.8804 ± 0.0264
+  L3_entity_coverage: 0.9167 ± 0.1443
+  L3_evidence_coverage: 0.0000 ± 0.0000
+  L3_feasibility: 6.9167 ± 0.8780
+  L3_flexibility: 3.0000 ± 0.0000
+  L3_fluency: 2.0000 ± 0.0000
+  L3_info_novelty: 1.0000 ± 0.0000
+  L3_innovation: 7.4167 ± 0.2887
+  L3_pairwise_diversity: 0.8889 ± 0.1924
+  L3_path_alignment_best: 0.0000 ± 0.0000
+  L3_path_alignment_mean: 0.0000 ± 0.0000
+  L3_rao_stirling: 0.0000 ± 0.0000
+  L3_relation_precision: 0.0000 ± 0.0000
+  L3_relation_type_accuracy: 0.0000 ± 0.0000
+  L3_scientificity: 8.2500 ± 0.4330
+  L3_testability: 7.5208 ± 0.0361
+  depth_depth_quality: 0.1458 ± 0.0698
+  depth_l2_anchoring: 0.5714 ± 0.1759
+  depth_l2_concept_expansion: 0.4107 ± 0.1462
+  depth_l3_anchoring: 0.8690 ± 0.1254
+  depth_l3_concept_expansion: 0.1250 ± 0.1250
+  depth_span_progression_l1_l2: 0.0476 ± 0.0825
+  depth_span_progression_l2_l3: 0.0000 ± 0.0000
+
+Detailed results saved to outputs/nature_comm_100/p5_kg_eval_results.json
+Stage 6 样例已保存 (3 条)
+
+══════════════════════════════════════════════════════════════
+[04:41:13] [STEP] Stage 7: 生成汇报文档 (Word)
+══════════════════════════════════════════════════════════════
+
+汇报文档已保存至: outputs/nature_comm_100/全流程汇报文档.docx
+[04:41:14] [INFO] 全套流程完成！
+  📂 outputs/nature_comm_100/
+  └── 汇报文档: outputs/nature_comm_100/全流程汇报文档.docx

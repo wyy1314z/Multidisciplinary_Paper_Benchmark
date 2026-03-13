@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import argparse
 import csv
+import hashlib
 import json
 import logging
 import os
@@ -35,10 +36,336 @@ from crossdisc_extractor.prompts.hypothesis_prompt_split import (
 from crossdisc_extractor.graph_builder import build_graph_and_metrics
 
 logger = logging.getLogger("crossdisc.main")
-logging.basicConfig(
-    level=logging.INFO,
-    format="%(asctime)s | %(levelname)s | %(message)s",
-)
+# NOTE: logging.basicConfig 移至 main() 中调用，避免库代码污染调用方的日志配置
+
+
+# ---------------------- Direction 5: Supplementary concept extraction ----------------------
+
+SYSTEM_PROMPT_CONCEPTS_SUPPLEMENT = """你是一名跨学科信息抽取与本体对齐专家。
+任务：检查论文原文，找出所有尚未被抽取的专业术语和专有名词。
+
+以下概念已经被抽取（请不要重复）：
+{existing_concepts}
+
+请逐句扫描 abstract 和 introduction，找出所有遗漏的专业术语，特别关注：
+- 解剖结构名（如 centromedian nucleus, internal medullary lamina）
+- 化学物质/材料名（如 ionic liquid, cellulose nanofiber）
+- 实验技术/仪器名（如 sub-scalp EEG, X-ray diffraction, intraoperative recording）
+- 定量指标名（如 cortical delta power, seizure reduction rate, phase transition temperature）
+- 缩写及其全称（如 DBS, EEG, FGFR）
+- 具体疾病/症状名（如 drug-resistant epilepsy）
+- 具体算法/模型名（如 Jensen-Shannon distance, random forest）
+
+【严禁抽取】学科名称（如 Neurology, Biology）、通用词（如 method, approach）、人名、机构名。
+
+term 字段必须是论文原文中实际出现的词语，直接从原文复制，不得改写。
+
+输出格式：
+- 严格输出一个 JSON 对象：{{ "补充概念": {{ "主学科": [...], "辅学科": {{...}} }} }}
+- ConceptEntry 格式同第一轮。
+- 如果没有遗漏的概念，输出空列表即可。
+- 禁止输出任何说明文字或 Markdown 代码块。
+"""
+
+USER_TEMPLATE_CONCEPTS_SUPPLEMENT = """输入元信息：
+- title: {title}
+- abstract: {abstract}
+- introduction: {introduction}
+- primary: {primary}
+- secondary_list: [{secondary_list}]
+
+请找出所有尚未被抽取的专业术语，只输出一个 JSON 对象：
+{{ "补充概念": {{ "主学科": [...], "辅学科": {{...}} }} }}。"""
+
+
+def _build_existing_concepts_str(concepts_obj: Dict[str, Any]) -> str:
+    """Build a string listing all already-extracted concepts for the supplement prompt."""
+    if not isinstance(concepts_obj, dict):
+        return "(none)"
+    lines = []
+    concepts = concepts_obj.get("概念", concepts_obj)
+    for c in concepts.get("主学科", []):
+        term = c.get("term", "")
+        norm = c.get("normalized", "")
+        if term or norm:
+            lines.append(f"  - {term}" + (f" ({norm})" if norm and norm != term else ""))
+    for disc, clist in concepts.get("辅学科", {}).items():
+        for c in clist:
+            term = c.get("term", "")
+            norm = c.get("normalized", "")
+            if term or norm:
+                lines.append(f"  - {term}" + (f" ({norm})" if norm and norm != term else ""))
+    return "\n".join(lines) if lines else "（无）"
+
+
+def _merge_concepts(
+    base: Dict[str, Any],
+    supplement: Dict[str, Any],
+) -> Dict[str, Any]:
+    """Merge supplementary concepts into base, deduplicating by normalized form."""
+    from difflib import SequenceMatcher
+
+    # Collect all existing normalized forms
+    existing_norms: set = set()
+    for c in base.get("主学科", []):
+        norm = (c.get("normalized") or c.get("term") or "").strip().lower()
+        if norm:
+            existing_norms.add(norm)
+    for clist in base.get("辅学科", {}).values():
+        for c in clist:
+            norm = (c.get("normalized") or c.get("term") or "").strip().lower()
+            if norm:
+                existing_norms.add(norm)
+
+    def _is_duplicate(new_norm: str) -> bool:
+        new_lower = new_norm.lower()
+        if new_lower in existing_norms:
+            return True
+        for existing in existing_norms:
+            if SequenceMatcher(None, new_lower, existing).ratio() >= 0.85:
+                return True
+        return False
+
+    # Merge primary concepts
+    for c in supplement.get("主学科", []):
+        norm = (c.get("normalized") or c.get("term") or "").strip()
+        if norm and not _is_duplicate(norm):
+            base.setdefault("主学科", []).append(c)
+            existing_norms.add(norm.lower())
+
+    # Merge secondary concepts
+    for disc, clist in supplement.get("辅学科", {}).items():
+        for c in clist:
+            norm = (c.get("normalized") or c.get("term") or "").strip()
+            if norm and not _is_duplicate(norm):
+                base.setdefault("辅学科", {}).setdefault(disc, []).append(c)
+                existing_norms.add(norm.lower())
+
+    return base
+
+
+# ---------------------- Direction 4: Concept grounding post-processing ----------------------
+
+# Discipline name patterns to filter out (both Chinese and English)
+_DISCIPLINE_STOPWORDS = {
+    # English discipline names
+    "neurology", "neurophysiology", "neuroanatomy", "biology", "chemistry",
+    "physics", "mathematics", "engineering", "medicine", "pharmacology",
+    "immunology", "genetics", "biochemistry", "biophysics", "ecology",
+    "geology", "astronomy", "psychology", "sociology", "economics",
+    "computer science", "electronic engineering", "mechanical engineering",
+    "civil engineering", "chemical engineering", "materials science",
+    "environmental science", "agricultural science", "veterinary science",
+    "clinical medicine", "preventive medicine", "basic medicine",
+    "neural engineering",
+    # Chinese discipline names
+    "神经学", "神经生理学", "神经解剖学", "生物学", "化学", "物理学",
+    "数学", "工程学", "医学", "药理学", "免疫学", "遗传学", "生物化学",
+    "生物物理学", "生态学", "地质学", "天文学", "心理学", "社会学",
+    "经济学", "计算机科学", "电子工程", "机械工程", "土木工程",
+    "化学工程", "材料科学", "环境科学", "农业科学", "临床医学",
+    "预防医学", "基础医学", "神经工程",
+}
+
+# Generic words that are not domain-specific concepts
+_GENERIC_STOPWORDS = {
+    "analysis", "method", "approach", "treatment", "framework", "model",
+    "system", "process", "technique", "strategy", "mechanism", "study",
+    "research", "result", "conclusion", "finding", "observation",
+    "experiment", "investigation", "evaluation", "assessment",
+    "分析", "方法", "途径", "治疗", "框架", "模型", "系统", "过程",
+    "技术", "策略", "机制", "研究", "结果", "结论", "发现", "实验",
+}
+
+
+def _ground_and_filter_concepts(
+    concepts_obj: Dict[str, Any],
+) -> Dict[str, Any]:
+    """
+    Post-process extracted concepts:
+    1. Filter out discipline names and generic words
+    2. Ground remaining terms against MSC taxonomy (if available)
+    3. Add grounding metadata to each concept
+    """
+    try:
+        from crossdisc_extractor.benchmark.terminology import (
+            TerminologyDict,
+            normalize_term,
+        )
+        terminology = TerminologyDict()
+        has_terminology = True
+    except Exception:
+        has_terminology = False
+
+    concepts = concepts_obj.get("概念", concepts_obj)
+
+    def _should_filter(term: str, normalized: str) -> bool:
+        """Check if a concept should be filtered out."""
+        t_lower = (term or "").strip().lower()
+        n_lower = (normalized or "").strip().lower()
+        # Filter discipline names
+        if t_lower in _DISCIPLINE_STOPWORDS or n_lower in _DISCIPLINE_STOPWORDS:
+            return True
+        # Filter generic words (only if the term is a single word)
+        if len(t_lower.split()) == 1 and t_lower in _GENERIC_STOPWORDS:
+            return True
+        if len(n_lower.split()) == 1 and n_lower in _GENERIC_STOPWORDS:
+            return True
+        return False
+
+    def _clean_normalized(text: str) -> str:
+        """Remove parenthesized English abbreviations from normalized terms in Chinese mode.
+
+        e.g. '嵌合抗原受体（CAR）工程化T细胞疗法' → '嵌合抗原受体工程化细胞疗法'
+        """
+        import re as _re
+        from crossdisc_extractor.config import get_language_mode, LanguageMode
+        if get_language_mode() != LanguageMode.CHINESE:
+            return text
+        # Remove parenthesized content that contains English letters
+        s = _re.sub(r"[（(][^）)]*[A-Za-z]+[^）)]*[）)]", "", text)
+        # Remove standalone Latin tokens
+        s = _re.sub(r"[A-Za-z][A-Za-z0-9_\-\/\.]*", "", s)
+        # Remove brackets whose content has no Chinese characters
+        s = _re.sub(r"[（(][^）)A-Za-z\u4e00-\u9fff]*[）)]", "", s)
+        # Remove orphaned right/left brackets
+        s = _re.sub(r"[）)](?![^（(]*[（(])", "", s)
+        s = _re.sub(r"[（(](?=[^）)]*$)", "", s)
+        # Remove orphaned symbols left after stripping
+        s = _re.sub(r"[@\-/\.]+(?=\s|$)", "", s)
+        s = _re.sub(r"\s{2,}", " ", s).strip()
+        return s if s else text  # fallback to original if cleaning leaves nothing
+
+    def _process_concept_list(clist: list) -> list:
+        filtered = []
+        for c in clist:
+            term = (c.get("term") or "").strip()
+            normalized = (c.get("normalized") or term).strip()
+            # Clean normalized field (remove parenthesized English in Chinese mode)
+            normalized = _clean_normalized(normalized)
+            c["normalized"] = normalized
+            if _should_filter(term, normalized):
+                logger.debug("Filtered concept (discipline/generic): %s", term)
+                continue
+            # Grounding
+            if has_terminology:
+                grounded, disc, conf = terminology.ground_term(
+                    normalized, threshold=0.70
+                )
+                if not grounded and term != normalized:
+                    grounded, disc, conf = terminology.ground_term(
+                        term, threshold=0.70
+                    )
+                c["grounded_to"] = grounded
+                c["grounding_confidence"] = round(conf, 4) if conf else 0.0
+            filtered.append(c)
+        return filtered
+
+    # Process primary concepts
+    if "主学科" in concepts:
+        concepts["主学科"] = _process_concept_list(concepts["主学科"])
+
+    # Process secondary concepts
+    if "辅学科" in concepts:
+        for disc in list(concepts["辅学科"].keys()):
+            concepts["辅学科"][disc] = _process_concept_list(
+                concepts["辅学科"][disc]
+            )
+
+    return concepts_obj
+
+
+# ---------------------- Direction 3: Hypothesis entity alignment ----------------------
+
+def _align_hypothesis_entities(
+    hyp_dict: Dict[str, Any],
+    concepts_obj: Dict[str, Any],
+) -> Dict[str, Any]:
+    """
+    Post-process hypothesis paths: align head/tail entities to the concept list.
+    Adds alignment metadata to each step.
+    """
+    from difflib import SequenceMatcher
+
+    # Build concept set from all extracted concepts
+    concept_set: Dict[str, str] = {}  # normalized_lower -> original_form
+    concepts = concepts_obj.get("概念", concepts_obj)
+    for c in concepts.get("主学科", []):
+        for field in ("term", "normalized"):
+            val = (c.get(field) or "").strip()
+            if val:
+                concept_set[val.lower()] = val
+    for clist in concepts.get("辅学科", {}).values():
+        for c in clist:
+            for field in ("term", "normalized"):
+                val = (c.get(field) or "").strip()
+                if val:
+                    concept_set[val.lower()] = val
+
+    def _find_best_match(entity: str) -> Optional[str]:
+        """Find the best matching concept for an entity."""
+        e_lower = entity.strip().lower()
+        # Exact match
+        if e_lower in concept_set:
+            return concept_set[e_lower]
+        # Substring match (concept is part of entity or vice versa)
+        for c_lower, c_orig in concept_set.items():
+            if c_lower in e_lower or e_lower in c_lower:
+                return c_orig
+        # Fuzzy match
+        best_sim = 0.0
+        best_match = None
+        for c_lower, c_orig in concept_set.items():
+            sim = SequenceMatcher(None, e_lower, c_lower).ratio()
+            if sim > best_sim:
+                best_sim = sim
+                best_match = c_orig
+        if best_sim >= 0.70:
+            return best_match
+        return None
+
+    # Process each level
+    total_entities = 0
+    aligned_entities = 0
+
+    for level in ("一级", "二级", "三级"):
+        paths = hyp_dict.get(level, [])
+        if not isinstance(paths, list):
+            continue
+        for path in paths:
+            if not isinstance(path, list):
+                continue
+            for step in path:
+                if not isinstance(step, dict):
+                    continue
+                for field in ("head", "tail"):
+                    entity = (step.get(field) or "").strip()
+                    if not entity:
+                        continue
+                    total_entities += 1
+                    match = _find_best_match(entity)
+                    if match:
+                        aligned_entities += 1
+                        if match.lower() != entity.lower():
+                            step[f"{field}_original"] = entity
+                            step[field] = match
+                        step[f"{field}_aligned"] = True
+                    else:
+                        step[f"{field}_aligned"] = False
+
+    # Record alignment stats
+    alignment_rate = aligned_entities / max(total_entities, 1)
+    hyp_dict["_entity_alignment_stats"] = {
+        "total_entities": total_entities,
+        "aligned_entities": aligned_entities,
+        "alignment_rate": round(alignment_rate, 4),
+    }
+    logger.info(
+        "Hypothesis entity alignment: %d/%d (%.1f%%)",
+        aligned_entities, total_entities, alignment_rate * 100,
+    )
+
+    return hyp_dict
 
 # ---------------------- 输入解析（与原脚本兼容） ----------------------
 
@@ -65,7 +392,7 @@ def _extract_fields(obj: Dict[str, Any]) -> Optional[Dict[str, Any]]:
         return None
     title = (obj.get("title") or obj.get("题目") or "").strip()
     abstract = (obj.get("abstract") or obj.get("摘要") or "").strip()
-    pdf_url = (obj.get("pdf_url") or obj.get("pdf") or "").strip()
+    pdf_url = (obj.get("pdf_url") or obj.get("pdf") or obj.get("doi") or "").strip()
 
     main_levels = (obj.get("main_levels") or obj.get("主学科层级") or "").strip()
     non_main_levels = (obj.get("non_main_levels") or obj.get("非主学科层级") or "").strip()
@@ -468,9 +795,9 @@ def run_pipeline_for_item(
 ) -> Tuple[Extraction, str, str]:
     """
     核心多阶段 pipeline：
-    1) struct: meta + 概念 + 跨学科关系
+    1) struct: meta + 概念（两轮抽取 + grounding）+ 跨学科关系
     2) query: 按辅助学科分类 + 查询
-    3) hyp:   假设 (知识路径 + 总结)
+    3) hyp:   假设 (知识路径 + 总结 + 实体对齐)
     """
     from crossdisc_extractor.config import set_language_mode
     set_language_mode(language_mode)
@@ -479,7 +806,7 @@ def run_pipeline_for_item(
     if pdf_url:
         introduction = fetch_pdf_and_extract_intro(pdf_url) or ""
 
-    # Stage 1: Concepts
+    # ── Stage 1a: First-round concept extraction ──────────────────────
     messages_concepts = build_concepts_messages(
         title=title,
         abstract=abstract,
@@ -495,7 +822,49 @@ def run_pipeline_for_item(
     )
     concepts_obj = parse_concepts_output(raw_concepts)
 
-    # Stage 2: Relations
+    # ── Stage 1b: Second-round supplementary extraction (Direction 5) ─
+    raw_concepts_supp = ""
+    try:
+        existing_str = _build_existing_concepts_str(concepts_obj)
+        supp_system = SYSTEM_PROMPT_CONCEPTS_SUPPLEMENT.format(
+            existing_concepts=existing_str,
+        )
+        supp_user = USER_TEMPLATE_CONCEPTS_SUPPLEMENT.format(
+            title=title.strip(),
+            abstract=abstract.strip(),
+            introduction=(introduction or "").strip(),
+            primary=primary.strip() or "（未提供）",
+            secondary_list=", ".join(secondary_list) if secondary_list else "（未提供）",
+        )
+        supp_messages = [
+            {"role": "system", "content": supp_system},
+            {"role": "user", "content": supp_user},
+        ]
+        raw_concepts_supp = chat_completion_with_retry(
+            supp_messages,
+            temperature=temperature_struct,
+            seed=(None if seed is None else seed + 10),
+            max_tokens=max_tokens_struct,
+        )
+        from crossdisc_extractor.utils.parsing import coerce_json_object
+        supp_obj = coerce_json_object(raw_concepts_supp)
+        if isinstance(supp_obj, dict):
+            supp_concepts = supp_obj.get("补充概念", supp_obj)
+            if isinstance(supp_concepts, dict):
+                concepts_section = concepts_obj.get("概念", {})
+                _merge_concepts(concepts_section, supp_concepts)
+                logger.info("Supplementary extraction merged successfully")
+    except Exception as e:
+        logger.warning("Supplementary concept extraction failed: %s", e)
+
+    # ── Stage 1c: Grounding post-processing (Direction 4) ─────────────
+    try:
+        _ground_and_filter_concepts(concepts_obj)
+        logger.info("Concept grounding and filtering completed")
+    except Exception as e:
+        logger.warning("Concept grounding failed (non-fatal): %s", e)
+
+    # ── Stage 2: Relations ────────────────────────────────────────────
     messages_relations = build_relations_messages(
         title=title,
         abstract=abstract,
@@ -510,7 +879,10 @@ def run_pipeline_for_item(
         seed=(None if seed is None else seed + 1),
         max_tokens=max_tokens_struct,
     )
-    relations_list = parse_relations_output(raw_relations)
+    relations_list = parse_relations_output(
+        raw_relations,
+        original_text=f"{abstract}\n{introduction}",
+    )
 
     # Assemble StructExtraction
     struct = StructExtraction(
@@ -518,14 +890,15 @@ def run_pipeline_for_item(
         概念=concepts_obj["概念"],
         跨学科关系=relations_list,
     )
-    
+
     # Concatenate raw output for debugging
     raw_struct = (
-        "/* concepts */\n" + raw_concepts + 
-        "\n\n/* relations */\n" + raw_relations
+        "/* concepts round1 */\n" + raw_concepts
+        + "\n\n/* concepts round2 (supplement) */\n" + raw_concepts_supp
+        + "\n\n/* relations */\n" + raw_relations
     )
 
-    # Stage 2
+    # ── Stage 2b: Query generation ────────────────────────────────────
     messages_query = build_query_messages(struct)
     raw_query = chat_completion_with_retry(
         messages_query,
@@ -535,7 +908,7 @@ def run_pipeline_for_item(
     )
     qa = parse_query_output(raw_query)
 
-    # Stage 3: Hypothesis (Split into L1, L2, L3)
+    # ── Stage 3: Hypothesis (Split into L1, L2, L3) ──────────────────
     # L1
     messages_hyp_l1 = build_hypothesis_messages_l1(struct, qa.查询)
     raw_hyp_l1 = chat_completion_with_retry(
@@ -566,11 +939,20 @@ def run_pipeline_for_item(
     )
     hyp_l3_dict = parse_partial_hypothesis(raw_hyp_l3, level=3, struct=struct)
 
-    # Assemble
+    # ── Stage 3b: Entity alignment (Direction 3) ─────────────────────
     hyp_args = {}
     hyp_args.update(hyp_l1_dict)
     hyp_args.update(hyp_l2_dict)
     hyp_args.update(hyp_l3_dict)
+
+    try:
+        hyp_args = _align_hypothesis_entities(hyp_args, concepts_obj)
+    except Exception as e:
+        logger.warning("Hypothesis entity alignment failed (non-fatal): %s", e)
+
+    # Remove internal stats before Pydantic validation
+    alignment_stats = hyp_args.pop("_entity_alignment_stats", None)
+
     hyp = Hypothesis3Levels(**hyp_args)
 
     # 聚合为最终 Extraction
@@ -583,11 +965,16 @@ def run_pipeline_for_item(
         查询=qa.查询,
         假设=hyp,
     )
-    
+
     # Stage 4: Build Graph & Metrics
     final = build_graph_and_metrics(final)
 
-    # 把三个阶段的原始输出拼在一起（方便调试）
+    # Attach alignment stats to the final output (as extra metadata)
+    if alignment_stats:
+        final_dict = final.model_dump()
+        final_dict["_entity_alignment_stats"] = alignment_stats
+
+    # 把各阶段的原始输出拼在一起（方便调试）
     raw_all = (
         "/* stage1: struct */\n"
         + raw_struct
@@ -605,6 +992,16 @@ def run_pipeline_for_item(
 
 
 # ---------------------- 串行/并行调度 ----------------------
+
+
+def _item_id(item: Dict[str, Any]) -> str:
+    """以 title 内容的 MD5 作为唯一 id，用于断点续传去重。"""
+    title = (
+        item.get("title")
+        or (item.get("parsed") or {}).get("meta", {}).get("title", "")
+        or ""
+    )
+    return hashlib.md5(title.encode("utf-8")).hexdigest()
 
 
 def _process_one_item(
@@ -644,6 +1041,7 @@ def _process_one_item(
             max_tokens_struct=max_tokens_struct,
             max_tokens_query=max_tokens_query,
             max_tokens_hyp=max_tokens_hyp,
+            language_mode=language_mode,   # 修复：language_mode 现在正确传递
         )
         rec["introduction"] = introduction
         rec["parsed"] = result.model_dump()
@@ -651,12 +1049,30 @@ def _process_one_item(
         rec["ok"] = True
         rec["error"] = ""
         ok_flag = True
-    except (ModelTransportError, ModelOutputError, Exception) as e:
-        logger.warning(f"[{idx}/{total}] 记录处理失败：{e}")
+    except ModelTransportError as e:
+        # 网络/超时层错误：已由 tenacity 重试耗尽后到达这里
+        logger.warning(f"[{idx}/{total}] API 传输错误（重试已耗尽）: {e}")
         rec["parsed"] = None
         rec["raw"] = ""
         rec["ok"] = False
-        rec["error"] = str(e)
+        rec["error"] = f"transport_error: {e}"
+        rec["retryable"] = True
+    except ModelOutputError as e:
+        # 模型输出格式非法：不应重试
+        logger.warning(f"[{idx}/{total}] 模型输出格式错误: {e}")
+        rec["parsed"] = None
+        rec["raw"] = ""
+        rec["ok"] = False
+        rec["error"] = f"output_error: {e}"
+        rec["retryable"] = False
+    except Exception as e:
+        # 其他未预期异常：记录完整信息
+        logger.exception(f"[{idx}/{total}] 未预期异常: {e}")
+        rec["parsed"] = None
+        rec["raw"] = ""
+        rec["ok"] = False
+        rec["error"] = f"unknown_error: {e}"
+        rec["retryable"] = False
 
     if sleep_s > 0:
         time.sleep(sleep_s)
@@ -674,23 +1090,52 @@ def run_benchmark(
     max_tokens_query: int = 4096,
     max_tokens_hyp: int = 4096,
     language_mode: str = "chinese",
+    resume: bool = True,   # 新增：断点续传，跳过已成功完成的记录
 ):
     items = load_inputs(input_path)
     if max_items is not None:
         items = items[:max_items]
 
-    total = len(items)
-    logger.info(f"开始处理 {total} 条记录... (num_workers={num_workers}, language_mode={language_mode})")
+    # ── 断点续传：加载已完成记录的 id 集合 ──────────────────────
+    completed_ids: set = set()
+    if resume and os.path.exists(output_path) and output_path.lower().endswith(".jsonl"):
+        try:
+            with open(output_path, "r", encoding="utf-8") as f:
+                for line in f:
+                    line = line.strip()
+                    if not line:
+                        continue
+                    try:
+                        rec = json.loads(line)
+                        if rec.get("ok"):
+                            completed_ids.add(_item_id(rec))
+                    except Exception:
+                        pass
+            if completed_ids:
+                logger.info(f"断点续传：检测到 {len(completed_ids)} 条已完成记录，将跳过")
+        except Exception as e:
+            logger.warning(f"读取已有输出文件失败（忽略断点续传）: {e}")
+
+    pending = [it for it in items if _item_id(it) not in completed_ids]
+    skipped = len(items) - len(pending)
+    total = len(pending)
+
+    logger.info(
+        f"开始处理：共 {len(items)} 条，跳过 {skipped} 条，待处理 {total} 条 "
+        f"(num_workers={num_workers}, language_mode={language_mode})"
+    )
 
     if total == 0:
-        write_outputs(output_path, [])
-        logger.info(f"没有记录需要处理，已输出空文件 -> {output_path}")
+        if not completed_ids:
+            write_outputs(output_path, [])
+        logger.info("没有待处理记录。")
         return
 
+    # ── 串行模式 ──────────────────────────────────────────────────
     if num_workers <= 1:
         ok_cnt = 0
         out_records: List[Dict[str, Any]] = []
-        for i, it in enumerate(items, 1):
+        for i, it in enumerate(pending, 1):
             idx, rec, ok_flag = _process_one_item(
                 i,
                 total,
@@ -706,13 +1151,22 @@ def run_benchmark(
                 ok_cnt += 1
             if i % 10 == 0 or i == total:
                 logger.info(f"[{i}/{total}] 当前成功 {ok_cnt}")
-        write_outputs(output_path, out_records)
+
+        # 断点续传：JSONL 追加写入；其他格式覆盖写入
+        if resume and completed_ids and output_path.lower().endswith(".jsonl"):
+            with open(output_path, "a", encoding="utf-8") as wf:
+                for rec in out_records:
+                    wf.write(json.dumps(rec, ensure_ascii=False) + "\n")
+        else:
+            write_outputs(output_path, out_records)
+
         logger.info(
             f"完成：总计 {total}，成功 {ok_cnt}，失败 {total - ok_cnt}。输出 -> {output_path}"
         )
         return
 
-    out_records: List[Optional[Dict[str, Any]]] = [None] * total
+    # ── 并行模式 ──────────────────────────────────────────────────
+    out_records_par: List[Optional[Dict[str, Any]]] = [None] * total
     ok_cnt = 0
     processed = 0
     max_workers = max(1, min(num_workers, total))
@@ -730,8 +1184,9 @@ def run_benchmark(
                 max_tokens_struct,
                 max_tokens_query,
                 max_tokens_hyp,
+                language_mode,      # 修复：language_mode 正确传入并行 worker
             ): i
-            for i, it in enumerate(items, 1)
+            for i, it in enumerate(pending, 1)
         }
 
         for future in as_completed(futures):
@@ -739,23 +1194,25 @@ def run_benchmark(
                 idx, rec, ok_flag = future.result()
             except Exception as e:
                 idx = futures[future]
+                orig = pending[idx - 1]
                 rec = {
-                    "title": items[idx - 1].get("title", ""),
-                    "abstract": items[idx - 1].get("abstract", ""),
-                    "pdf_url": items[idx - 1].get("pdf_url", ""),
-                    "primary": items[idx - 1].get("primary", ""),
-                    "secondary": items[idx - 1].get("secondary", ""),
-                    "secondary_list": items[idx - 1].get("secondary_list", []),
+                    "title": orig.get("title", ""),
+                    "abstract": orig.get("abstract", ""),
+                    "pdf_url": orig.get("pdf_url", ""),
+                    "primary": orig.get("primary", ""),
+                    "secondary": orig.get("secondary", ""),
+                    "secondary_list": orig.get("secondary_list", []),
                     "introduction": "",
                     "parsed": None,
                     "raw": "",
                     "ok": False,
                     "error": f"并行执行异常: {e}",
+                    "retryable": True,
                 }
                 ok_flag = False
                 logger.warning(f"[{idx}/{total}] 并行执行异常：{e}")
 
-            out_records[idx - 1] = rec
+            out_records_par[idx - 1] = rec
             processed += 1
             if ok_flag:
                 ok_cnt += 1
@@ -764,10 +1221,15 @@ def run_benchmark(
 
     final_records = [
         r if r is not None else {"ok": False, "error": "内部错误：记录缺失"}
-        for r in out_records
+        for r in out_records_par
     ]
 
-    write_outputs(output_path, final_records)
+    if resume and completed_ids and output_path.lower().endswith(".jsonl"):
+        with open(output_path, "a", encoding="utf-8") as wf:
+            for rec in final_records:
+                wf.write(json.dumps(rec, ensure_ascii=False) + "\n")
+    else:
+        write_outputs(output_path, final_records)
     logger.info(
         f"完成：总计 {total}，成功 {ok_cnt}，失败 {total - ok_cnt}。输出 -> {output_path}"
     )
@@ -942,6 +1404,10 @@ def build_argparser() -> argparse.ArgumentParser:
         help="并行 worker 数量，默认 1（串行）；建议根据 API 限流设置为 2-4",
     )
     bat.add_argument("--language-mode", choices=["chinese", "original"], default="chinese", help="输出语言模式：chinese=强制中文，original=保留原文")
+    bat.add_argument("--resume", action="store_true", default=True,
+                     help="开启断点续传：跳过输出文件中已成功完成的记录（仅 .jsonl 输出格式有效）")
+    bat.add_argument("--no-resume", dest="resume", action="store_false",
+                     help="关闭断点续传，强制从头重新处理全部记录")
     bat.add_argument("--max-tokens-struct", type=int, default=12000, help="Stage1(struct) 最大生成 token（避免输出截断）")
     bat.add_argument("--max-tokens-query", type=int, default=12000, help="Stage2(query) 最大生成 token")
     bat.add_argument("--max-tokens-hyp", type=int, default=12000, help="Stage3(hypothesis) 最大生成 token")
@@ -954,6 +1420,11 @@ def build_argparser() -> argparse.ArgumentParser:
 
 
 def main():
+    # 只在作为入口点运行时才配置根 logger，避免作为库导入时污染调用方的日志设置
+    logging.basicConfig(
+        level=logging.INFO,
+        format="%(asctime)s | %(levelname)s | %(message)s",
+    )
     parser = build_argparser()
     args = parser.parse_args()
 
@@ -1037,6 +1508,7 @@ def main():
             max_tokens_query=args.max_tokens_query,
             max_tokens_hyp=args.max_tokens_hyp,
             language_mode=args.language_mode,
+            resume=args.resume,
         )
     elif args.cmd == "export":
         handle_export(args.input, args.output)

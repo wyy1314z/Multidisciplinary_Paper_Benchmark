@@ -1,0 +1,341 @@
+[
+  {
+    "paper_id": "c7202044749e",
+    "method": "P1",
+    "elapsed_seconds": 5.4760847091674805,
+    "text_metrics": {
+      "bertscore_f1": 0.0,
+      "rouge1": 0.0,
+      "rouge2": 0.0,
+      "rougeL": 0.0,
+      "bleu": 0.0
+    },
+    "llm_judge": {
+      "novelty": 9.0,
+      "specificity": 8.0,
+      "feasibility": 7.0,
+      "relevance": 10.0,
+      "cross_disciplinary": 8.0
+    },
+    "num_hypotheses": 1,
+    "avg_hypothesis_length": 786.0,
+    "structural_metrics": null
+  },
+  {
+    "paper_id": "c7202044749e",
+    "method": "P2",
+    "elapsed_seconds": 11.927978992462158,
+    "text_metrics": {
+      "bertscore_f1": 0.0,
+      "rouge1": 0.0,
+      "rouge2": 0.0,
+      "rougeL": 0.0,
+      "bleu": 0.0
+    },
+    "llm_judge": {
+      "novelty": 9.0,
+      "specificity": 8.0,
+      "feasibility": 7.0,
+      "relevance": 10.0,
+      "cross_disciplinary": 8.0
+    },
+    "num_hypotheses": 1,
+    "avg_hypothesis_length": 1481.0,
+    "structural_metrics": null
+  },
+  {
+    "paper_id": "c7202044749e",
+    "method": "P3",
+    "elapsed_seconds": 11.486056566238403,
+    "text_metrics": {
+      "bertscore_f1": 0.0,
+      "rouge1": 0.0,
+      "rouge2": 0.0,
+      "rougeL": 0.0,
+      "bleu": 0.0
+    },
+    "llm_judge": {
+      "novelty": 8.0,
+      "specificity": 9.0,
+      "feasibility": 7.0,
+      "relevance": 10.0,
+      "cross_disciplinary": 9.0
+    },
+    "num_hypotheses": 1,
+    "avg_hypothesis_length": 1727.0,
+    "structural_metrics": null
+  },
+  {
+    "paper_id": "c7202044749e",
+    "method": "P4",
+    "elapsed_seconds": 26.20663070678711,
+    "text_metrics": {
+      "bertscore_f1": 0.0,
+      "rouge1": 0.0,
+      "rouge2": 0.0,
+      "rougeL": 0.0,
+      "bleu": 0.0
+    },
+    "llm_judge": {},
+    "num_hypotheses": 1,
+    "avg_hypothesis_length": 4216.0,
+    "structural_metrics": null
+  },
+  {
+    "paper_id": "c7202044749e",
+    "method": "P5",
+    "elapsed_seconds": 4.982948303222656e-05,
+    "text_metrics": {
+      "bertscore_f1": 0.0,
+      "rouge1": 0.0,
+      "rouge2": 0.0,
+      "rougeL": 0.0,
+      "bleu": 0.0
+    },
+    "llm_judge": {
+      "novelty": 7.0,
+      "specificity": 8.0,
+      "feasibility": 9.0,
+      "relevance": 9.0,
+      "cross_disciplinary": 8.0
+    },
+    "num_hypotheses": 6,
+    "avg_hypothesis_length": 44.2,
+    "structural_metrics": {
+      "has_L1": 1.0,
+      "has_L2": 1.0,
+      "has_L3": 1.0,
+      "avg_path_length": 3.0,
+      "relation_diversity": 2.5,
+      "chain_coherence": 1.0,
+      "entity_grounding_rate": 1.0
+    },
+    "L1_path_count": 2,
+    "L2_path_count": 2,
+    "L3_path_count": 2
+  },
+  {
+    "paper_id": "bca0c04aa6e9",
+    "method": "P1",
+    "elapsed_seconds": 9.39485764503479,
+    "text_metrics": {
+      "bertscore_f1": 0.0,
+      "rouge1": 0.0,
+      "rouge2": 0.0,
+      "rougeL": 0.0,
+      "bleu": 0.0
+    },
+    "llm_judge": {
+      "novelty": 9.0,
+      "specificity": 8.0,
+      "feasibility": 7.0,
+      "relevance": 10.0,
+      "cross_disciplinary": 8.0
+    },
+    "num_hypotheses": 1,
+    "avg_hypothesis_length": 1258.0,
+    "structural_metrics": null
+  },
+  {
+    "paper_id": "bca0c04aa6e9",
+    "method": "P2",
+    "elapsed_seconds": 10.728852033615112,
+    "text_metrics": {
+      "bertscore_f1": 0.0,
+      "rouge1": 0.0,
+      "rouge2": 0.0,
+      "rougeL": 0.0,
+      "bleu": 0.0
+    },
+    "llm_judge": {
+      "novelty": 8.0,
+      "specificity": 9.0,
+      "feasibility": 7.0,
+      "relevance": 10.0,
+      "cross_disciplinary": 8.0
+    },
+    "num_hypotheses": 1,
+    "avg_hypothesis_length": 1614.0,
+    "structural_metrics": null
+  },
+  {
+    "paper_id": "bca0c04aa6e9",
+    "method": "P3",
+    "elapsed_seconds": 13.000699281692505,
+    "text_metrics": {
+      "bertscore_f1": 0.0,
+      "rouge1": 0.0,
+      "rouge2": 0.0,
+      "rougeL": 0.0,
+      "bleu": 0.0
+    },
+    "llm_judge": {
+      "novelty": 9.0,
+      "specificity": 8.0,
+      "feasibility": 7.0,
+      "relevance": 10.0,
+      "cross_disciplinary": 8.0
+    },
+    "num_hypotheses": 1,
+    "avg_hypothesis_length": 2010.0,
+    "structural_metrics": null
+  },
+  {
+    "paper_id": "bca0c04aa6e9",
+    "method": "P4",
+    "elapsed_seconds": 22.267066955566406,
+    "text_metrics": {
+      "bertscore_f1": 0.0,
+      "rouge1": 0.0,
+      "rouge2": 0.0,
+      "rougeL": 0.0,
+      "bleu": 0.0
+    },
+    "llm_judge": {},
+    "num_hypotheses": 1,
+    "avg_hypothesis_length": 3305.0,
+    "structural_metrics": null
+  },
+  {
+    "paper_id": "bca0c04aa6e9",
+    "method": "P5",
+    "elapsed_seconds": 6.628036499023438e-05,
+    "text_metrics": {
+      "bertscore_f1": 0.0,
+      "rouge1": 0.0,
+      "rouge2": 0.0,
+      "rougeL": 0.0,
+      "bleu": 0.0
+    },
+    "llm_judge": {
+      "novelty": 7.0,
+      "specificity": 8.0,
+      "feasibility": 6.0,
+      "relevance": 9.0,
+      "cross_disciplinary": 8.0
+    },
+    "num_hypotheses": 6,
+    "avg_hypothesis_length": 47.3,
+    "structural_metrics": {
+      "has_L1": 1.0,
+      "has_L2": 1.0,
+      "has_L3": 1.0,
+      "avg_path_length": 3.0,
+      "relation_diversity": 3.0,
+      "chain_coherence": 1.0,
+      "entity_grounding_rate": 1.0
+    },
+    "L1_path_count": 2,
+    "L2_path_count": 2,
+    "L3_path_count": 2
+  },
+  {
+    "paper_id": "69cf875bdbf7",
+    "method": "P1",
+    "elapsed_seconds": 7.047977447509766,
+    "text_metrics": {
+      "bertscore_f1": 0.0,
+      "rouge1": 0.0,
+      "rouge2": 0.0,
+      "rougeL": 0.0,
+      "bleu": 0.0
+    },
+    "llm_judge": {
+      "novelty": 9.0,
+      "specificity": 8.0,
+      "feasibility": 7.0,
+      "relevance": 9.0,
+      "cross_disciplinary": 8.0
+    },
+    "num_hypotheses": 1,
+    "avg_hypothesis_length": 784.0,
+    "structural_metrics": null
+  },
+  {
+    "paper_id": "69cf875bdbf7",
+    "method": "P2",
+    "elapsed_seconds": 11.440993309020996,
+    "text_metrics": {
+      "bertscore_f1": 0.0,
+      "rouge1": 0.0,
+      "rouge2": 0.0,
+      "rougeL": 0.0,
+      "bleu": 0.0
+    },
+    "llm_judge": {
+      "novelty": 9.0,
+      "specificity": 8.0,
+      "feasibility": 7.0,
+      "relevance": 10.0,
+      "cross_disciplinary": 9.0
+    },
+    "num_hypotheses": 1,
+    "avg_hypothesis_length": 1658.0,
+    "structural_metrics": null
+  },
+  {
+    "paper_id": "69cf875bdbf7",
+    "method": "P3",
+    "elapsed_seconds": 12.479604244232178,
+    "text_metrics": {
+      "bertscore_f1": 0.0,
+      "rouge1": 0.0,
+      "rouge2": 0.0,
+      "rougeL": 0.0,
+      "bleu": 0.0
+    },
+    "llm_judge": {},
+    "num_hypotheses": 1,
+    "avg_hypothesis_length": 1717.0,
+    "structural_metrics": null
+  },
+  {
+    "paper_id": "69cf875bdbf7",
+    "method": "P4",
+    "elapsed_seconds": 28.489221572875977,
+    "text_metrics": {
+      "bertscore_f1": 0.0,
+      "rouge1": 0.0,
+      "rouge2": 0.0,
+      "rougeL": 0.0,
+      "bleu": 0.0
+    },
+    "llm_judge": {},
+    "num_hypotheses": 1,
+    "avg_hypothesis_length": 3838.0,
+    "structural_metrics": null
+  },
+  {
+    "paper_id": "69cf875bdbf7",
+    "method": "P5",
+    "elapsed_seconds": 0.00022339820861816406,
+    "text_metrics": {
+      "bertscore_f1": 0.0,
+      "rouge1": 0.0,
+      "rouge2": 0.0,
+      "rougeL": 0.0,
+      "bleu": 0.0
+    },
+    "llm_judge": {
+      "novelty": 7.0,
+      "specificity": 8.0,
+      "feasibility": 6.0,
+      "relevance": 9.0,
+      "cross_disciplinary": 8.0
+    },
+    "num_hypotheses": 7,
+    "avg_hypothesis_length": 42.1,
+    "structural_metrics": {
+      "has_L1": 1.0,
+      "has_L2": 1.0,
+      "has_L3": 1.0,
+      "avg_path_length": 3.0,
+      "relation_diversity": 3.0,
+      "chain_coherence": 1.0,
+      "entity_grounding_rate": 1.0
+    },
+    "L1_path_count": 3,
+    "L2_path_count": 2,
+    "L3_path_count": 2
+  }
+]

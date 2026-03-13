@@ -1,0 +1,1982 @@
+nohup: ignoring input
+[1;33m[INFO] OPENAI_MODEL = deepseek-v3[0m
+[1;33m[INFO] OPENAI_BASE_URL = http://api.shubiaobiao.cn/v1[0m
+
+[0;34m═══════════════════════════════════════════════════════════[0m
+[0;32m[STEP] Step 1: 确认跨学科论文[0m
+[0;34m═══════════════════════════════════════════════════════════[0m
+
+[1;33m[INFO] 共 92 篇跨学科论文[0m
+[1;33m[INFO] 将使用前 89 篇构建 Ground Truth[0m
+[1;33m[INFO] 后 3 篇作为测试集[0m
+
+[0;34m═══════════════════════════════════════════════════════════[0m
+[0;32m[STEP] Step 2: 三阶段知识抽取 (概念→关系→查询→假设)[0m
+[0;34m═══════════════════════════════════════════════════════════[0m
+
+[1;33m[INFO] 输入: data/paper_1.json[0m
+[1;33m[INFO] 输出: outputs/full_pipeline_run/extraction_results.jsonl[0m
+[1;33m[INFO] 并行度: 2 workers[0m
+[1;33m[INFO] 每篇论文约 9-11 次 LLM 调用，共 92 篇[0m
+2026-03-09 16:08:10,891 | INFO | 开始处理：共 92 条，跳过 0 条，待处理 92 条 (num_workers=2, language_mode=chinese)
+2026-03-09 16:08:10,891 | INFO | 使用 ThreadPoolExecutor 并行处理，max_workers=2
+2026-03-09 16:08:10,891 | INFO | 下载 PDF：https://www.nature.com/articles/s41467-025-58135-4.pdf
+2026-03-09 16:08:10,892 | INFO | 下载 PDF：https://www.nature.com/articles/s41467-025-58744-z.pdf
+2026-03-09 16:08:19,512 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:08:19,733 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:08:49,520 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:08:51,989 | WARNING | Supplementary concept extraction failed: 'str' object has no attribute 'get'
+2026-03-09 16:08:51,990 | WARNING | Taxonomy file not found: /ssd/wangyuyang/git/benchmark/crossdisc_extractor/data/msc_converted.json
+2026-03-09 16:08:51,990 | INFO | Loaded terminology dictionary: 0 terms, 0 disciplines
+2026-03-09 16:08:51,990 | INFO | Concept grounding and filtering completed
+2026-03-09 16:08:53,931 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:08:58,836 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:09:01,009 | WARNING | Supplementary concept extraction failed: 'str' object has no attribute 'get'
+2026-03-09 16:09:01,009 | WARNING | Taxonomy file not found: /ssd/wangyuyang/git/benchmark/crossdisc_extractor/data/msc_converted.json
+2026-03-09 16:09:01,009 | INFO | Loaded terminology dictionary: 0 terms, 0 disciplines
+2026-03-09 16:09:01,010 | INFO | Concept grounding and filtering completed
+2026-03-09 16:09:03,180 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:09:03,990 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:09:13,900 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:09:23,304 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:09:28,015 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:09:32,904 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:09:40,356 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:09:48,251 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:09:48,476 | INFO | Hypothesis entity alignment: 0/0 (0.0%)
+2026-03-09 16:09:48,645 | INFO | 下载 PDF：https://www.nature.com/articles/s41467-025-63538-4.pdf
+2026-03-09 16:09:56,055 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:09:56,618 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:10:04,422 | INFO | Hypothesis entity alignment: 0/0 (0.0%)
+2026-03-09 16:10:04,432 | INFO | 下载 PDF：https://www.nature.com/articles/s41467-025-62443-0.pdf
+2026-03-09 16:10:11,534 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:10:35,652 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:10:40,223 | WARNING | Supplementary concept extraction failed: 'str' object has no attribute 'get'
+2026-03-09 16:10:40,223 | WARNING | Taxonomy file not found: /ssd/wangyuyang/git/benchmark/crossdisc_extractor/data/msc_converted.json
+2026-03-09 16:10:40,223 | INFO | Loaded terminology dictionary: 0 terms, 0 disciplines
+2026-03-09 16:10:40,224 | INFO | Concept grounding and filtering completed
+2026-03-09 16:10:42,319 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:10:51,998 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:10:56,436 | WARNING | Supplementary concept extraction failed: 'str' object has no attribute 'get'
+2026-03-09 16:10:56,436 | WARNING | Taxonomy file not found: /ssd/wangyuyang/git/benchmark/crossdisc_extractor/data/msc_converted.json
+2026-03-09 16:10:56,436 | INFO | Loaded terminology dictionary: 0 terms, 0 disciplines
+2026-03-09 16:10:56,436 | INFO | Concept grounding and filtering completed
+2026-03-09 16:10:58,431 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:11:11,515 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:11:20,328 | WARNING | 检测到查询中含英文，已自动清洗为中文（不再报错）。
+2026-03-09 16:11:23,787 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:11:23,946 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:11:34,963 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:11:37,109 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:11:46,918 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:11:48,452 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:11:55,513 | INFO | Hypothesis entity alignment: 0/0 (0.0%)
+2026-03-09 16:11:55,521 | INFO | 下载 PDF：https://www.nature.com/articles/s41467-025-64086-7.pdf
+2026-03-09 16:11:56,824 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:12:02,173 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:12:03,376 | INFO | Hypothesis entity alignment: 0/0 (0.0%)
+2026-03-09 16:12:03,387 | INFO | 下载 PDF：https://www.nature.com/articles/s41467-025-62529-9.pdf
+2026-03-09 16:12:11,848 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:12:39,031 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:12:45,715 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:12:48,880 | WARNING | Supplementary concept extraction failed: 'str' object has no attribute 'get'
+2026-03-09 16:12:48,881 | WARNING | Taxonomy file not found: /ssd/wangyuyang/git/benchmark/crossdisc_extractor/data/msc_converted.json
+2026-03-09 16:12:48,881 | INFO | Loaded terminology dictionary: 0 terms, 0 disciplines
+2026-03-09 16:12:48,881 | INFO | Concept grounding and filtering completed
+2026-03-09 16:12:51,120 | WARNING | Supplementary concept extraction failed: 'str' object has no attribute 'get'
+2026-03-09 16:12:51,120 | WARNING | Taxonomy file not found: /ssd/wangyuyang/git/benchmark/crossdisc_extractor/data/msc_converted.json
+2026-03-09 16:12:51,120 | INFO | Loaded terminology dictionary: 0 terms, 0 disciplines
+2026-03-09 16:12:51,120 | INFO | Concept grounding and filtering completed
+2026-03-09 16:12:51,507 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:13:04,400 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:13:16,689 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:13:23,530 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:13:24,066 | WARNING | 检测到查询中含英文，已自动清洗为中文（不再报错）。
+2026-03-09 16:13:26,432 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:13:32,957 | WARNING | 检测到查询中含英文，已自动清洗为中文（不再报错）。
+2026-03-09 16:13:35,112 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:13:38,871 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:13:50,786 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:13:54,455 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:14:01,319 | INFO | Hypothesis entity alignment: 0/0 (0.0%)
+2026-03-09 16:14:01,329 | INFO | 下载 PDF：https://www.nature.com/articles/s41467-025-61355-3.pdf
+2026-03-09 16:14:04,539 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:14:08,516 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:14:10,096 | INFO | Hypothesis entity alignment: 0/0 (0.0%)
+2026-03-09 16:14:10,106 | INFO | 下载 PDF：https://www.nature.com/articles/s41467-025-62471-w.pdf
+2026-03-09 16:14:15,795 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:14:33,604 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:14:37,914 | WARNING | Supplementary concept extraction failed: 'str' object has no attribute 'get'
+2026-03-09 16:14:37,914 | WARNING | Taxonomy file not found: /ssd/wangyuyang/git/benchmark/crossdisc_extractor/data/msc_converted.json
+2026-03-09 16:14:37,914 | INFO | Loaded terminology dictionary: 0 terms, 0 disciplines
+2026-03-09 16:14:37,914 | INFO | Concept grounding and filtering completed
+2026-03-09 16:14:40,202 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:14:53,222 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:14:55,608 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:14:58,591 | WARNING | Supplementary concept extraction failed: 'str' object has no attribute 'get'
+2026-03-09 16:14:58,592 | WARNING | Taxonomy file not found: /ssd/wangyuyang/git/benchmark/crossdisc_extractor/data/msc_converted.json
+2026-03-09 16:14:58,592 | INFO | Loaded terminology dictionary: 0 terms, 0 disciplines
+2026-03-09 16:14:58,592 | INFO | Concept grounding and filtering completed
+2026-03-09 16:15:04,314 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:15:04,612 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:15:16,745 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:15:24,147 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:15:25,230 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:15:31,413 | INFO | Hypothesis entity alignment: 0/0 (0.0%)
+2026-03-09 16:15:31,425 | INFO | 下载 PDF：https://www.nature.com/articles/s41467-025-63411-4.pdf
+2026-03-09 16:15:35,091 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:15:41,089 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:15:50,809 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:16:02,578 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:16:04,815 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:16:08,072 | INFO | Hypothesis entity alignment: 0/0 (0.0%)
+2026-03-09 16:16:08,076 | INFO | 下载 PDF：https://www.nature.com/articles/s41467-025-63493-0.pdf
+2026-03-09 16:16:09,998 | WARNING | Supplementary concept extraction failed: 'str' object has no attribute 'get'
+2026-03-09 16:16:09,999 | WARNING | Taxonomy file not found: /ssd/wangyuyang/git/benchmark/crossdisc_extractor/data/msc_converted.json
+2026-03-09 16:16:09,999 | INFO | Loaded terminology dictionary: 0 terms, 0 disciplines
+2026-03-09 16:16:09,999 | INFO | Concept grounding and filtering completed
+2026-03-09 16:16:13,382 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:16:15,497 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:16:30,514 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:16:39,635 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:16:48,102 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:16:51,951 | WARNING | Supplementary concept extraction failed: 'str' object has no attribute 'get'
+2026-03-09 16:16:51,951 | WARNING | Taxonomy file not found: /ssd/wangyuyang/git/benchmark/crossdisc_extractor/data/msc_converted.json
+2026-03-09 16:16:51,951 | INFO | Loaded terminology dictionary: 0 terms, 0 disciplines
+2026-03-09 16:16:51,951 | INFO | Concept grounding and filtering completed
+2026-03-09 16:16:52,065 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:16:54,378 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:17:04,413 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:17:13,155 | INFO | Hypothesis entity alignment: 0/0 (0.0%)
+2026-03-09 16:17:13,164 | INFO | 下载 PDF：https://www.nature.com/articles/s41467-025-58221-7.pdf
+2026-03-09 16:17:18,735 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:17:22,038 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:17:31,650 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:17:47,736 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:17:59,516 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:18:02,338 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:18:10,292 | INFO | Hypothesis entity alignment: 0/0 (0.0%)
+2026-03-09 16:18:10,297 | INFO | 下载 PDF：https://www.nature.com/articles/s41467-025-63545-5.pdf
+2026-03-09 16:18:10,297 | INFO | [10/92] 当前成功 10
+2026-03-09 16:18:20,935 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:18:58,685 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:19:01,507 | WARNING | Supplementary concept extraction failed: 'str' object has no attribute 'get'
+2026-03-09 16:19:01,507 | WARNING | Taxonomy file not found: /ssd/wangyuyang/git/benchmark/crossdisc_extractor/data/msc_converted.json
+2026-03-09 16:19:01,507 | INFO | Loaded terminology dictionary: 0 terms, 0 disciplines
+2026-03-09 16:19:01,507 | INFO | Concept grounding and filtering completed
+2026-03-09 16:19:04,421 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:19:26,338 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:19:34,376 | WARNING | 检测到查询中含英文，已自动清洗为中文（不再报错）。
+2026-03-09 16:19:36,669 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:19:49,456 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:19:58,669 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:20:09,595 | INFO | Hypothesis entity alignment: 0/0 (0.0%)
+2026-03-09 16:20:09,608 | INFO | 下载 PDF：https://www.nature.com/articles/s41467-025-60183-9.pdf
+2026-03-09 16:20:17,782 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:20:56,591 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:21:02,413 | WARNING | Supplementary concept extraction failed: 'str' object has no attribute 'get'
+2026-03-09 16:21:02,413 | WARNING | Taxonomy file not found: /ssd/wangyuyang/git/benchmark/crossdisc_extractor/data/msc_converted.json
+2026-03-09 16:21:02,413 | INFO | Loaded terminology dictionary: 0 terms, 0 disciplines
+2026-03-09 16:21:02,413 | INFO | Concept grounding and filtering completed
+2026-03-09 16:21:06,523 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:21:27,980 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:21:40,697 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:21:56,251 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:22:04,873 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:22:12,606 | INFO | Hypothesis entity alignment: 0/0 (0.0%)
+2026-03-09 16:22:12,614 | INFO | 下载 PDF：https://www.nature.com/articles/s41467-025-64444-5.pdf
+2026-03-09 16:22:18,665 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:22:41,585 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:22:44,677 | WARNING | Supplementary concept extraction failed: 'str' object has no attribute 'get'
+2026-03-09 16:22:44,677 | WARNING | Taxonomy file not found: /ssd/wangyuyang/git/benchmark/crossdisc_extractor/data/msc_converted.json
+2026-03-09 16:22:44,677 | INFO | Loaded terminology dictionary: 0 terms, 0 disciplines
+2026-03-09 16:22:44,678 | INFO | Concept grounding and filtering completed
+2026-03-09 16:22:47,084 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:22:49,839 | ERROR | 无法提取完整 JSON：疑似模型输出被截断（缺少闭合 '}'）。原始前 400 字符: '{\n  "补充概念": {\n    "主学科": [\n      "guanine ribonucleotides",\n      "dNTP levels",\n      "nucleotide salvage efficiency",\n      "telomere synthesis assay",\n      "telomerase reverse transcription",\n      "nucleotide salvage",\n      "dNTP pools",\n      "genome replication",\n      "DNA damage signaling",\n      "stem cell exhaustion",\n      "nucleotide metabolism",\n      "telomerase components",\n      '
+2026-03-09 16:22:49,840 | WARNING | Supplementary concept extraction failed: 无法从模型输出中提取合法 JSON 对象：疑似输出被截断
+2026-03-09 16:22:49,840 | WARNING | Taxonomy file not found: /ssd/wangyuyang/git/benchmark/crossdisc_extractor/data/msc_converted.json
+2026-03-09 16:22:49,840 | INFO | Loaded terminology dictionary: 0 terms, 0 disciplines
+2026-03-09 16:22:49,841 | INFO | Concept grounding and filtering completed
+2026-03-09 16:22:53,679 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:23:05,416 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:23:13,245 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:23:13,575 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:23:26,434 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:23:26,730 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:23:35,822 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:23:44,359 | INFO | Hypothesis entity alignment: 0/0 (0.0%)
+2026-03-09 16:23:44,367 | INFO | 下载 PDF：https://www.nature.com/articles/s41467-025-64061-2.pdf
+2026-03-09 16:23:51,437 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:23:51,491 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:24:04,104 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:24:12,554 | INFO | Hypothesis entity alignment: 0/0 (0.0%)
+2026-03-09 16:24:12,566 | INFO | 下载 PDF：https://www.nature.com/articles/s41467-025-56213-1.pdf
+2026-03-09 16:24:18,366 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:24:36,513 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:24:43,508 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:24:45,092 | WARNING | Supplementary concept extraction failed: 'str' object has no attribute 'get'
+2026-03-09 16:24:45,092 | WARNING | Taxonomy file not found: /ssd/wangyuyang/git/benchmark/crossdisc_extractor/data/msc_converted.json
+2026-03-09 16:24:45,092 | INFO | Loaded terminology dictionary: 0 terms, 0 disciplines
+2026-03-09 16:24:45,093 | INFO | Concept grounding and filtering completed
+2026-03-09 16:24:46,857 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:24:54,946 | WARNING | Supplementary concept extraction failed: 'str' object has no attribute 'get'
+2026-03-09 16:24:54,946 | WARNING | Taxonomy file not found: /ssd/wangyuyang/git/benchmark/crossdisc_extractor/data/msc_converted.json
+2026-03-09 16:24:54,947 | INFO | Loaded terminology dictionary: 0 terms, 0 disciplines
+2026-03-09 16:24:54,947 | INFO | Concept grounding and filtering completed
+2026-03-09 16:24:57,277 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:25:12,795 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:25:13,706 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:25:20,883 | WARNING | 检测到查询中含英文，已自动清洗为中文（不再报错）。
+2026-03-09 16:25:22,377 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:25:24,318 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:25:33,938 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:25:40,586 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:25:48,246 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:25:55,845 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:25:56,986 | INFO | Hypothesis entity alignment: 0/0 (0.0%)
+2026-03-09 16:25:56,997 | INFO | 下载 PDF：https://www.nature.com/articles/s41467-025-62339-z.pdf
+2026-03-09 16:26:03,215 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:26:03,702 | INFO | Hypothesis entity alignment: 0/0 (0.0%)
+2026-03-09 16:26:03,710 | INFO | 下载 PDF：https://www.nature.com/articles/s41467-025-63474-3.pdf
+2026-03-09 16:26:09,398 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:26:37,683 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:26:37,957 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:26:39,939 | WARNING | Supplementary concept extraction failed: 'str' object has no attribute 'get'
+2026-03-09 16:26:39,939 | WARNING | Taxonomy file not found: /ssd/wangyuyang/git/benchmark/crossdisc_extractor/data/msc_converted.json
+2026-03-09 16:26:39,939 | INFO | Loaded terminology dictionary: 0 terms, 0 disciplines
+2026-03-09 16:26:39,939 | INFO | Concept grounding and filtering completed
+2026-03-09 16:26:40,742 | WARNING | Supplementary concept extraction failed: 'str' object has no attribute 'get'
+2026-03-09 16:26:40,742 | WARNING | Taxonomy file not found: /ssd/wangyuyang/git/benchmark/crossdisc_extractor/data/msc_converted.json
+2026-03-09 16:26:40,742 | INFO | Loaded terminology dictionary: 0 terms, 0 disciplines
+2026-03-09 16:26:40,742 | INFO | Concept grounding and filtering completed
+2026-03-09 16:26:42,094 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:26:44,392 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:27:00,409 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:27:03,988 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:27:13,481 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:27:13,527 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:27:27,819 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:27:32,740 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:27:38,395 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:27:45,533 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:27:45,686 | INFO | Hypothesis entity alignment: 0/0 (0.0%)
+2026-03-09 16:27:45,690 | INFO | 下载 PDF：https://www.nature.com/articles/s41467-025-58037-5.pdf
+2026-03-09 16:27:54,364 | INFO | Hypothesis entity alignment: 0/0 (0.0%)
+2026-03-09 16:27:54,372 | INFO | 下载 PDF：https://www.nature.com/articles/s41467-025-62560-w.pdf
+2026-03-09 16:27:55,115 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:28:04,929 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:28:35,953 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:28:41,789 | WARNING | Supplementary concept extraction failed: 'str' object has no attribute 'get'
+2026-03-09 16:28:41,789 | WARNING | Taxonomy file not found: /ssd/wangyuyang/git/benchmark/crossdisc_extractor/data/msc_converted.json
+2026-03-09 16:28:41,790 | INFO | Loaded terminology dictionary: 0 terms, 0 disciplines
+2026-03-09 16:28:41,790 | INFO | Concept grounding and filtering completed
+2026-03-09 16:28:43,507 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:28:55,522 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:28:59,413 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:29:02,866 | WARNING | Supplementary concept extraction failed: 'str' object has no attribute 'get'
+2026-03-09 16:29:02,866 | WARNING | Taxonomy file not found: /ssd/wangyuyang/git/benchmark/crossdisc_extractor/data/msc_converted.json
+2026-03-09 16:29:02,866 | INFO | Loaded terminology dictionary: 0 terms, 0 disciplines
+2026-03-09 16:29:02,867 | INFO | Concept grounding and filtering completed
+2026-03-09 16:29:06,647 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:29:08,103 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:29:20,449 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:29:28,678 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:29:36,712 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:29:36,807 | INFO | Hypothesis entity alignment: 0/0 (0.0%)
+2026-03-09 16:29:36,815 | INFO | 下载 PDF：https://www.nature.com/articles/s41467-025-61820-z.pdf
+2026-03-09 16:29:49,673 | WARNING | 检测到查询中含英文，已自动清洗为中文（不再报错）。
+2026-03-09 16:29:49,901 | WARNING | Cannot set gray non-stroke color because /'P1' is an invalid float value
+2026-03-09 16:29:49,902 | WARNING | Cannot set gray non-stroke color because /'P2' is an invalid float value
+2026-03-09 16:29:49,903 | WARNING | Cannot set gray non-stroke color because /'P2' is an invalid float value
+2026-03-09 16:29:49,921 | WARNING | Cannot set gray non-stroke color because /'P3' is an invalid float value
+2026-03-09 16:29:52,917 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:29:54,496 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:30:13,803 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:30:22,567 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:30:30,923 | INFO | Hypothesis entity alignment: 0/0 (0.0%)
+2026-03-09 16:30:30,937 | INFO | 下载 PDF：https://www.nature.com/articles/s41467-025-62188-w.pdf
+2026-03-09 16:30:30,938 | INFO | [20/92] 当前成功 20
+2026-03-09 16:30:39,521 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:30:46,195 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:30:49,158 | WARNING | Supplementary concept extraction failed: 'str' object has no attribute 'get'
+2026-03-09 16:30:49,158 | WARNING | Taxonomy file not found: /ssd/wangyuyang/git/benchmark/crossdisc_extractor/data/msc_converted.json
+2026-03-09 16:30:49,158 | INFO | Loaded terminology dictionary: 0 terms, 0 disciplines
+2026-03-09 16:30:49,158 | INFO | Concept grounding and filtering completed
+2026-03-09 16:30:51,713 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:31:21,124 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:31:21,926 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:31:30,048 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:31:30,087 | WARNING | Supplementary concept extraction failed: 'str' object has no attribute 'get'
+2026-03-09 16:31:30,087 | WARNING | Taxonomy file not found: /ssd/wangyuyang/git/benchmark/crossdisc_extractor/data/msc_converted.json
+2026-03-09 16:31:30,087 | INFO | Loaded terminology dictionary: 0 terms, 0 disciplines
+2026-03-09 16:31:30,088 | INFO | Concept grounding and filtering completed
+2026-03-09 16:31:32,229 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:31:44,263 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:31:55,678 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:31:55,922 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:32:02,637 | INFO | Hypothesis entity alignment: 0/0 (0.0%)
+2026-03-09 16:32:02,647 | INFO | 下载 PDF：https://www.nature.com/articles/s41467-025-56857-z.pdf
+2026-03-09 16:32:06,206 | WARNING | 检测到查询中含英文，已自动清洗为中文（不再报错）。
+2026-03-09 16:32:07,606 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:32:08,088 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:32:21,371 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:32:33,380 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:32:42,256 | INFO | Hypothesis entity alignment: 0/0 (0.0%)
+2026-03-09 16:32:42,262 | INFO | 下载 PDF：https://www.nature.com/articles/s41467-025-64138-y.pdf
+2026-03-09 16:32:55,788 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:33:09,135 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:33:12,376 | WARNING | Supplementary concept extraction failed: 'str' object has no attribute 'get'
+2026-03-09 16:33:12,376 | WARNING | Taxonomy file not found: /ssd/wangyuyang/git/benchmark/crossdisc_extractor/data/msc_converted.json
+2026-03-09 16:33:12,376 | INFO | Loaded terminology dictionary: 0 terms, 0 disciplines
+2026-03-09 16:33:12,377 | INFO | Concept grounding and filtering completed
+2026-03-09 16:33:15,411 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:33:47,206 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:33:51,438 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:33:55,694 | WARNING | Supplementary concept extraction failed: 'str' object has no attribute 'get'
+2026-03-09 16:33:55,694 | WARNING | Taxonomy file not found: /ssd/wangyuyang/git/benchmark/crossdisc_extractor/data/msc_converted.json
+2026-03-09 16:33:55,694 | INFO | Loaded terminology dictionary: 0 terms, 0 disciplines
+2026-03-09 16:33:55,695 | INFO | Concept grounding and filtering completed
+2026-03-09 16:33:58,342 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:34:07,383 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:34:22,902 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:34:35,279 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:34:40,644 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:34:46,254 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:34:52,735 | INFO | Hypothesis entity alignment: 0/0 (0.0%)
+2026-03-09 16:34:52,745 | INFO | 下载 PDF：https://www.nature.com/articles/s41467-025-63384-4.pdf
+2026-03-09 16:34:57,876 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:34:58,196 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:35:07,449 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:35:15,674 | INFO | Hypothesis entity alignment: 0/0 (0.0%)
+2026-03-09 16:35:15,683 | INFO | 下载 PDF：https://www.nature.com/articles/s41467-025-59408-8.pdf
+2026-03-09 16:35:38,281 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:35:42,522 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:35:44,141 | WARNING | Supplementary concept extraction failed: 'str' object has no attribute 'get'
+2026-03-09 16:35:44,142 | WARNING | Taxonomy file not found: /ssd/wangyuyang/git/benchmark/crossdisc_extractor/data/msc_converted.json
+2026-03-09 16:35:44,142 | INFO | Loaded terminology dictionary: 0 terms, 0 disciplines
+2026-03-09 16:35:44,142 | INFO | Concept grounding and filtering completed
+2026-03-09 16:35:46,917 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:36:03,916 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:36:14,114 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:36:19,295 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:36:21,202 | WARNING | Supplementary concept extraction failed: 'str' object has no attribute 'get'
+2026-03-09 16:36:21,203 | WARNING | Taxonomy file not found: /ssd/wangyuyang/git/benchmark/crossdisc_extractor/data/msc_converted.json
+2026-03-09 16:36:21,203 | INFO | Loaded terminology dictionary: 0 terms, 0 disciplines
+2026-03-09 16:36:21,203 | INFO | Concept grounding and filtering completed
+2026-03-09 16:36:23,304 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:36:27,519 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:36:37,678 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:36:45,015 | INFO | Hypothesis entity alignment: 0/0 (0.0%)
+2026-03-09 16:36:45,020 | INFO | 下载 PDF：https://www.nature.com/articles/s41467-025-63344-y.pdf
+2026-03-09 16:36:46,426 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:36:49,707 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:36:55,190 | WARNING | 检测到查询中含英文，已自动清洗为中文（不再报错）。
+2026-03-09 16:36:56,924 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:37:12,587 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:37:24,766 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:37:32,648 | INFO | Hypothesis entity alignment: 0/0 (0.0%)
+2026-03-09 16:37:32,654 | INFO | 下载 PDF：https://www.nature.com/articles/s41467-025-62774-y.pdf
+2026-03-09 16:37:38,232 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:37:43,245 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:37:48,783 | WARNING | Supplementary concept extraction failed: 'str' object has no attribute 'get'
+2026-03-09 16:37:48,783 | WARNING | Taxonomy file not found: /ssd/wangyuyang/git/benchmark/crossdisc_extractor/data/msc_converted.json
+2026-03-09 16:37:48,783 | INFO | Loaded terminology dictionary: 0 terms, 0 disciplines
+2026-03-09 16:37:48,784 | INFO | Concept grounding and filtering completed
+2026-03-09 16:37:51,967 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:38:14,452 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:38:17,298 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:38:22,545 | WARNING | Supplementary concept extraction failed: 'str' object has no attribute 'get'
+2026-03-09 16:38:22,545 | WARNING | Taxonomy file not found: /ssd/wangyuyang/git/benchmark/crossdisc_extractor/data/msc_converted.json
+2026-03-09 16:38:22,545 | INFO | Loaded terminology dictionary: 0 terms, 0 disciplines
+2026-03-09 16:38:22,545 | INFO | Concept grounding and filtering completed
+2026-03-09 16:38:24,762 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:38:28,172 | WARNING | 检测到查询中含英文，已自动清洗为中文（不再报错）。
+2026-03-09 16:38:29,946 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:38:37,930 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:38:46,621 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:38:51,910 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:38:58,476 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:39:05,750 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:39:11,069 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:39:14,228 | INFO | Hypothesis entity alignment: 0/0 (0.0%)
+2026-03-09 16:39:14,238 | INFO | 下载 PDF：https://www.nature.com/articles/s41467-025-62711-z.pdf
+2026-03-09 16:39:21,301 | INFO | Hypothesis entity alignment: 0/0 (0.0%)
+2026-03-09 16:39:21,310 | INFO | 下载 PDF：https://www.nature.com/articles/s41467-025-57063-7.pdf
+2026-03-09 16:39:21,874 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:39:33,304 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:40:14,985 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:40:16,737 | WARNING | Supplementary concept extraction failed: 'str' object has no attribute 'get'
+2026-03-09 16:40:16,737 | WARNING | Taxonomy file not found: /ssd/wangyuyang/git/benchmark/crossdisc_extractor/data/msc_converted.json
+2026-03-09 16:40:16,737 | INFO | Loaded terminology dictionary: 0 terms, 0 disciplines
+2026-03-09 16:40:16,737 | INFO | Concept grounding and filtering completed
+2026-03-09 16:40:19,195 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:40:22,086 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:40:26,163 | WARNING | Supplementary concept extraction failed: 'str' object has no attribute 'get'
+2026-03-09 16:40:26,164 | WARNING | Taxonomy file not found: /ssd/wangyuyang/git/benchmark/crossdisc_extractor/data/msc_converted.json
+2026-03-09 16:40:26,164 | INFO | Loaded terminology dictionary: 0 terms, 0 disciplines
+2026-03-09 16:40:26,164 | INFO | Concept grounding and filtering completed
+2026-03-09 16:40:28,670 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:40:46,527 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:40:54,212 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:40:55,542 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:41:08,396 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:41:09,931 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:41:21,494 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:41:30,262 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:41:31,605 | INFO | Hypothesis entity alignment: 0/0 (0.0%)
+2026-03-09 16:41:31,610 | INFO | 下载 PDF：https://www.nature.com/articles/s41467-025-57445-x.pdf
+2026-03-09 16:41:39,580 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:41:46,610 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:41:55,716 | INFO | Hypothesis entity alignment: 0/0 (0.0%)
+2026-03-09 16:41:55,724 | INFO | 下载 PDF：https://www.nature.com/articles/s41467-025-56900-z.pdf
+2026-03-09 16:41:55,724 | INFO | [30/92] 当前成功 30
+2026-03-09 16:42:01,300 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:42:32,925 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:42:35,051 | WARNING | Supplementary concept extraction failed: 'str' object has no attribute 'get'
+2026-03-09 16:42:35,051 | WARNING | Taxonomy file not found: /ssd/wangyuyang/git/benchmark/crossdisc_extractor/data/msc_converted.json
+2026-03-09 16:42:35,051 | INFO | Loaded terminology dictionary: 0 terms, 0 disciplines
+2026-03-09 16:42:35,051 | INFO | Concept grounding and filtering completed
+2026-03-09 16:42:38,233 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:42:41,899 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:42:47,719 | WARNING | Supplementary concept extraction failed: 'str' object has no attribute 'get'
+2026-03-09 16:42:47,720 | WARNING | Taxonomy file not found: /ssd/wangyuyang/git/benchmark/crossdisc_extractor/data/msc_converted.json
+2026-03-09 16:42:47,720 | INFO | Loaded terminology dictionary: 0 terms, 0 disciplines
+2026-03-09 16:42:47,720 | INFO | Concept grounding and filtering completed
+2026-03-09 16:42:50,967 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:43:07,101 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:43:15,901 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:43:16,989 | WARNING | 检测到查询中含英文，已自动清洗为中文（不再报错）。
+2026-03-09 16:43:18,748 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:43:27,155 | WARNING | 检测到查询中含英文，已自动清洗为中文（不再报错）。
+2026-03-09 16:43:28,928 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:43:31,007 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:43:43,839 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:43:52,502 | INFO | Hypothesis entity alignment: 0/0 (0.0%)
+2026-03-09 16:43:52,510 | INFO | 下载 PDF：https://www.nature.com/articles/s41467-025-57938-9.pdf
+2026-03-09 16:43:53,875 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:43:58,629 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:44:05,512 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:44:16,610 | INFO | Hypothesis entity alignment: 0/0 (0.0%)
+2026-03-09 16:44:16,618 | INFO | 下载 PDF：https://www.nature.com/articles/s41467-025-62448-9.pdf
+2026-03-09 16:44:25,323 | WARNING | Cannot set gray non-stroke color because /'P1' is an invalid float value
+2026-03-09 16:44:25,344 | WARNING | Cannot set gray non-stroke color because /'P2' is an invalid float value
+2026-03-09 16:44:25,349 | WARNING | Cannot set gray non-stroke color because /'P3' is an invalid float value
+2026-03-09 16:44:25,373 | WARNING | Cannot set gray non-stroke color because /'P4' is an invalid float value
+2026-03-09 16:44:27,982 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:44:36,553 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:44:44,383 | WARNING | Supplementary concept extraction failed: 'str' object has no attribute 'get'
+2026-03-09 16:44:44,383 | WARNING | Taxonomy file not found: /ssd/wangyuyang/git/benchmark/crossdisc_extractor/data/msc_converted.json
+2026-03-09 16:44:44,383 | INFO | Loaded terminology dictionary: 0 terms, 0 disciplines
+2026-03-09 16:44:44,383 | INFO | Concept grounding and filtering completed
+2026-03-09 16:44:46,952 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:45:15,944 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:45:24,657 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:45:26,907 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:45:32,196 | WARNING | Supplementary concept extraction failed: 'str' object has no attribute 'get'
+2026-03-09 16:45:32,196 | WARNING | Taxonomy file not found: /ssd/wangyuyang/git/benchmark/crossdisc_extractor/data/msc_converted.json
+2026-03-09 16:45:32,197 | INFO | Loaded terminology dictionary: 0 terms, 0 disciplines
+2026-03-09 16:45:32,197 | INFO | Concept grounding and filtering completed
+2026-03-09 16:45:35,522 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:45:42,926 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:45:56,843 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:45:57,173 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:46:04,965 | INFO | Hypothesis entity alignment: 0/0 (0.0%)
+2026-03-09 16:46:04,977 | INFO | 下载 PDF：https://www.nature.com/articles/s41467-025-60041-8.pdf
+2026-03-09 16:46:11,042 | WARNING | 检测到查询中含英文，已自动清洗为中文（不再报错）。
+2026-03-09 16:46:13,277 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:46:15,821 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:46:36,513 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:46:45,484 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:46:47,173 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:46:49,808 | WARNING | Supplementary concept extraction failed: 'str' object has no attribute 'get'
+2026-03-09 16:46:49,809 | WARNING | Taxonomy file not found: /ssd/wangyuyang/git/benchmark/crossdisc_extractor/data/msc_converted.json
+2026-03-09 16:46:49,809 | INFO | Loaded terminology dictionary: 0 terms, 0 disciplines
+2026-03-09 16:46:49,809 | INFO | Concept grounding and filtering completed
+2026-03-09 16:46:52,584 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:46:57,183 | INFO | Hypothesis entity alignment: 0/0 (0.0%)
+2026-03-09 16:46:57,195 | INFO | 下载 PDF：https://www.nature.com/articles/s41467-025-64918-6.pdf
+2026-03-09 16:47:01,633 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:47:16,578 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:47:23,474 | WARNING | 检测到查询中含英文，已自动清洗为中文（不再报错）。
+2026-03-09 16:47:25,462 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:47:39,123 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:47:40,954 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:47:43,144 | WARNING | Supplementary concept extraction failed: 'str' object has no attribute 'get'
+2026-03-09 16:47:43,145 | WARNING | Taxonomy file not found: /ssd/wangyuyang/git/benchmark/crossdisc_extractor/data/msc_converted.json
+2026-03-09 16:47:43,145 | INFO | Loaded terminology dictionary: 0 terms, 0 disciplines
+2026-03-09 16:47:43,145 | INFO | Concept grounding and filtering completed
+2026-03-09 16:47:45,863 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:47:54,584 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:48:02,624 | INFO | Hypothesis entity alignment: 0/0 (0.0%)
+2026-03-09 16:48:02,634 | INFO | 下载 PDF：https://www.nature.com/articles/s41467-025-62172-4.pdf
+2026-03-09 16:48:02,740 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:48:10,433 | WARNING | 检测到查询中含英文，已自动清洗为中文（不再报错）。
+2026-03-09 16:48:12,992 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:48:14,584 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:48:23,871 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:48:33,954 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:48:42,162 | INFO | Hypothesis entity alignment: 0/0 (0.0%)
+2026-03-09 16:48:42,172 | INFO | 下载 PDF：https://www.nature.com/articles/s41467-025-58067-z.pdf
+2026-03-09 16:48:52,367 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:48:53,663 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:48:57,821 | WARNING | Supplementary concept extraction failed: 'str' object has no attribute 'get'
+2026-03-09 16:48:57,822 | WARNING | Taxonomy file not found: /ssd/wangyuyang/git/benchmark/crossdisc_extractor/data/msc_converted.json
+2026-03-09 16:48:57,822 | INFO | Loaded terminology dictionary: 0 terms, 0 disciplines
+2026-03-09 16:48:57,822 | INFO | Concept grounding and filtering completed
+2026-03-09 16:49:00,136 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:49:31,539 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:49:32,342 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:49:41,230 | WARNING | Supplementary concept extraction failed: 'str' object has no attribute 'get'
+2026-03-09 16:49:41,230 | WARNING | Taxonomy file not found: /ssd/wangyuyang/git/benchmark/crossdisc_extractor/data/msc_converted.json
+2026-03-09 16:49:41,230 | INFO | Loaded terminology dictionary: 0 terms, 0 disciplines
+2026-03-09 16:49:41,231 | INFO | Concept grounding and filtering completed
+2026-03-09 16:49:43,280 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:49:44,633 | WARNING | 检测到查询中含英文，已自动清洗为中文（不再报错）。
+2026-03-09 16:49:46,662 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:49:59,118 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:50:02,957 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:50:09,828 | WARNING | 检测到查询中含英文，已自动清洗为中文（不再报错）。
+2026-03-09 16:50:12,314 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:50:13,124 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:50:21,282 | INFO | Hypothesis entity alignment: 0/0 (0.0%)
+2026-03-09 16:50:21,294 | INFO | 下载 PDF：https://www.nature.com/articles/s41467-024-54675-3.pdf
+2026-03-09 16:50:28,076 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:50:32,117 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:50:38,388 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:50:45,775 | INFO | Hypothesis entity alignment: 0/0 (0.0%)
+2026-03-09 16:50:45,783 | INFO | 下载 PDF：https://www.nature.com/articles/s41467-025-63439-6.pdf
+2026-03-09 16:51:12,695 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:51:15,617 | WARNING | Supplementary concept extraction failed: 'str' object has no attribute 'get'
+2026-03-09 16:51:15,628 | WARNING | Taxonomy file not found: /ssd/wangyuyang/git/benchmark/crossdisc_extractor/data/msc_converted.json
+2026-03-09 16:51:15,633 | INFO | Loaded terminology dictionary: 0 terms, 0 disciplines
+2026-03-09 16:51:15,638 | INFO | Concept grounding and filtering completed
+2026-03-09 16:51:18,115 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:51:31,661 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:51:42,113 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:51:52,699 | WARNING | 检测到查询中含英文，已自动清洗为中文（不再报错）。
+2026-03-09 16:51:55,238 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:52:17,598 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:52:18,239 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:52:21,601 | WARNING | Supplementary concept extraction failed: 'str' object has no attribute 'get'
+2026-03-09 16:52:21,601 | WARNING | Taxonomy file not found: /ssd/wangyuyang/git/benchmark/crossdisc_extractor/data/msc_converted.json
+2026-03-09 16:52:21,601 | INFO | Loaded terminology dictionary: 0 terms, 0 disciplines
+2026-03-09 16:52:21,601 | INFO | Concept grounding and filtering completed
+2026-03-09 16:52:23,498 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:52:32,230 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:52:40,507 | INFO | Hypothesis entity alignment: 0/0 (0.0%)
+2026-03-09 16:52:40,516 | INFO | 下载 PDF：https://www.nature.com/articles/s41467-025-59724-z.pdf
+2026-03-09 16:52:52,257 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:53:02,459 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:53:10,829 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:53:27,573 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:53:42,280 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:53:48,109 | INFO | Hypothesis entity alignment: 0/0 (0.0%)
+2026-03-09 16:53:48,121 | INFO | 下载 PDF：https://www.nature.com/articles/s41467-025-64453-4.pdf
+2026-03-09 16:53:48,121 | INFO | [40/92] 当前成功 40
+2026-03-09 16:53:55,273 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:53:59,160 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:54:06,448 | WARNING | Supplementary concept extraction failed: 'str' object has no attribute 'get'
+2026-03-09 16:54:06,448 | WARNING | Taxonomy file not found: /ssd/wangyuyang/git/benchmark/crossdisc_extractor/data/msc_converted.json
+2026-03-09 16:54:06,448 | INFO | Loaded terminology dictionary: 0 terms, 0 disciplines
+2026-03-09 16:54:06,448 | INFO | Concept grounding and filtering completed
+2026-03-09 16:54:08,474 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:54:34,837 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:54:34,894 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:54:38,068 | WARNING | Supplementary concept extraction failed: 'str' object has no attribute 'get'
+2026-03-09 16:54:38,069 | WARNING | Taxonomy file not found: /ssd/wangyuyang/git/benchmark/crossdisc_extractor/data/msc_converted.json
+2026-03-09 16:54:38,069 | INFO | Loaded terminology dictionary: 0 terms, 0 disciplines
+2026-03-09 16:54:38,069 | INFO | Concept grounding and filtering completed
+2026-03-09 16:54:39,958 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:54:48,232 | WARNING | 检测到查询中含英文，已自动清洗为中文（不再报错）。
+2026-03-09 16:54:50,874 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:54:55,697 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:55:04,876 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:55:06,447 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:55:18,328 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:55:20,034 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:55:26,952 | INFO | Hypothesis entity alignment: 0/0 (0.0%)
+2026-03-09 16:55:26,963 | INFO | 下载 PDF：https://www.nature.com/articles/s41467-025-63317-1.pdf
+2026-03-09 16:55:30,419 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:55:31,802 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:55:38,584 | INFO | Hypothesis entity alignment: 0/0 (0.0%)
+2026-03-09 16:55:38,593 | INFO | 下载 PDF：https://www.nature.com/articles/s41467-025-62904-6.pdf
+2026-03-09 16:55:42,671 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:56:05,290 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:56:10,166 | WARNING | Supplementary concept extraction failed: 'str' object has no attribute 'get'
+2026-03-09 16:56:10,166 | WARNING | Taxonomy file not found: /ssd/wangyuyang/git/benchmark/crossdisc_extractor/data/msc_converted.json
+2026-03-09 16:56:10,167 | INFO | Loaded terminology dictionary: 0 terms, 0 disciplines
+2026-03-09 16:56:10,167 | INFO | Concept grounding and filtering completed
+2026-03-09 16:56:11,280 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:56:12,760 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:56:14,402 | WARNING | Supplementary concept extraction failed: 'str' object has no attribute 'get'
+2026-03-09 16:56:14,403 | WARNING | Taxonomy file not found: /ssd/wangyuyang/git/benchmark/crossdisc_extractor/data/msc_converted.json
+2026-03-09 16:56:14,403 | INFO | Loaded terminology dictionary: 0 terms, 0 disciplines
+2026-03-09 16:56:14,403 | INFO | Concept grounding and filtering completed
+2026-03-09 16:56:16,268 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:56:30,837 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:56:35,218 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:56:44,125 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:56:44,141 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:56:56,695 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:56:57,318 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:57:05,224 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:57:07,112 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:57:13,306 | INFO | Hypothesis entity alignment: 0/0 (0.0%)
+2026-03-09 16:57:13,311 | INFO | 下载 PDF：https://www.nature.com/articles/s41467-025-59447-1.pdf
+2026-03-09 16:57:13,962 | INFO | Hypothesis entity alignment: 0/0 (0.0%)
+2026-03-09 16:57:13,972 | INFO | 下载 PDF：https://www.nature.com/articles/s41467-025-57725-6.pdf
+2026-03-09 16:57:22,252 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:57:25,776 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:57:57,533 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:58:02,463 | WARNING | Supplementary concept extraction failed: 'str' object has no attribute 'get'
+2026-03-09 16:58:02,463 | WARNING | Taxonomy file not found: /ssd/wangyuyang/git/benchmark/crossdisc_extractor/data/msc_converted.json
+2026-03-09 16:58:02,463 | INFO | Loaded terminology dictionary: 0 terms, 0 disciplines
+2026-03-09 16:58:02,463 | INFO | Concept grounding and filtering completed
+2026-03-09 16:58:04,843 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:58:13,456 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:58:20,543 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:58:24,789 | WARNING | Supplementary concept extraction failed: 'str' object has no attribute 'get'
+2026-03-09 16:58:24,789 | WARNING | Taxonomy file not found: /ssd/wangyuyang/git/benchmark/crossdisc_extractor/data/msc_converted.json
+2026-03-09 16:58:24,789 | INFO | Loaded terminology dictionary: 0 terms, 0 disciplines
+2026-03-09 16:58:24,789 | INFO | Concept grounding and filtering completed
+2026-03-09 16:58:26,885 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:58:30,446 | WARNING | 检测到查询中含英文，已自动清洗为中文（不再报错）。
+2026-03-09 16:58:32,113 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:58:52,315 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:58:57,639 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:59:03,607 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:59:07,696 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:59:14,592 | INFO | Hypothesis entity alignment: 0/0 (0.0%)
+2026-03-09 16:59:14,602 | INFO | 下载 PDF：https://www.nature.com/articles/s41467-025-62925-1.pdf
+2026-03-09 16:59:21,750 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:59:22,203 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:59:31,735 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:59:38,035 | INFO | Hypothesis entity alignment: 0/0 (0.0%)
+2026-03-09 16:59:38,043 | INFO | 下载 PDF：https://www.nature.com/articles/s41467-025-61152-y.pdf
+2026-03-09 16:59:45,921 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 16:59:59,997 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:00:05,684 | WARNING | Supplementary concept extraction failed: 'str' object has no attribute 'get'
+2026-03-09 17:00:05,684 | WARNING | Taxonomy file not found: /ssd/wangyuyang/git/benchmark/crossdisc_extractor/data/msc_converted.json
+2026-03-09 17:00:05,684 | INFO | Loaded terminology dictionary: 0 terms, 0 disciplines
+2026-03-09 17:00:05,684 | INFO | Concept grounding and filtering completed
+2026-03-09 17:00:08,273 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:00:27,587 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:00:32,098 | WARNING | Supplementary concept extraction failed: 'str' object has no attribute 'get'
+2026-03-09 17:00:32,098 | WARNING | Taxonomy file not found: /ssd/wangyuyang/git/benchmark/crossdisc_extractor/data/msc_converted.json
+2026-03-09 17:00:32,098 | INFO | Loaded terminology dictionary: 0 terms, 0 disciplines
+2026-03-09 17:00:32,098 | INFO | Concept grounding and filtering completed
+2026-03-09 17:00:35,423 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:00:37,241 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:00:51,535 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:00:56,168 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:01:04,623 | WARNING | 检测到查询中含英文，已自动清洗为中文（不再报错）。
+2026-03-09 17:01:07,691 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:01:15,190 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:01:25,657 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:01:30,137 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:01:36,864 | INFO | Hypothesis entity alignment: 0/0 (0.0%)
+2026-03-09 17:01:36,873 | INFO | 下载 PDF：https://www.nature.com/articles/s41467-025-64277-2.pdf
+2026-03-09 17:01:41,548 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:01:43,034 | WARNING | Cannot set gray stroke color because /'P1' is an invalid float value
+2026-03-09 17:01:46,308 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:01:54,187 | INFO | Hypothesis entity alignment: 0/0 (0.0%)
+2026-03-09 17:01:54,196 | INFO | 下载 PDF：https://www.nature.com/articles/s41467-025-57413-5.pdf
+2026-03-09 17:02:00,123 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:02:13,846 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:02:19,117 | WARNING | Supplementary concept extraction failed: 'str' object has no attribute 'get'
+2026-03-09 17:02:19,118 | WARNING | Taxonomy file not found: /ssd/wangyuyang/git/benchmark/crossdisc_extractor/data/msc_converted.json
+2026-03-09 17:02:19,118 | INFO | Loaded terminology dictionary: 0 terms, 0 disciplines
+2026-03-09 17:02:19,118 | INFO | Concept grounding and filtering completed
+2026-03-09 17:02:21,291 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:02:41,190 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:02:46,028 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:02:49,469 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:02:50,648 | WARNING | Supplementary concept extraction failed: 'str' object has no attribute 'get'
+2026-03-09 17:02:50,648 | WARNING | Taxonomy file not found: /ssd/wangyuyang/git/benchmark/crossdisc_extractor/data/msc_converted.json
+2026-03-09 17:02:50,648 | INFO | Loaded terminology dictionary: 0 terms, 0 disciplines
+2026-03-09 17:02:50,649 | INFO | Concept grounding and filtering completed
+2026-03-09 17:02:52,843 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:03:00,287 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:03:10,081 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:03:15,422 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:03:17,521 | INFO | Hypothesis entity alignment: 0/0 (0.0%)
+2026-03-09 17:03:17,532 | INFO | 下载 PDF：https://www.nature.com/articles/s41467-025-62690-1.pdf
+2026-03-09 17:03:26,536 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:03:27,176 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:03:45,802 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:03:53,527 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:03:58,527 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:04:00,116 | WARNING | Supplementary concept extraction failed: 'str' object has no attribute 'get'
+2026-03-09 17:04:00,116 | WARNING | Taxonomy file not found: /ssd/wangyuyang/git/benchmark/crossdisc_extractor/data/msc_converted.json
+2026-03-09 17:04:00,116 | INFO | Loaded terminology dictionary: 0 terms, 0 disciplines
+2026-03-09 17:04:00,116 | INFO | Concept grounding and filtering completed
+2026-03-09 17:04:02,472 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:04:07,669 | INFO | Hypothesis entity alignment: 0/0 (0.0%)
+2026-03-09 17:04:07,682 | INFO | 下载 PDF：https://www.nature.com/articles/s41467-025-62917-1.pdf
+2026-03-09 17:04:07,682 | INFO | [50/92] 当前成功 50
+2026-03-09 17:04:12,156 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:04:20,789 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:04:27,646 | WARNING | 检测到查询中含英文，已自动清洗为中文（不再报错）。
+2026-03-09 17:04:29,769 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:04:43,992 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:04:46,635 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:04:53,678 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:05:00,216 | WARNING | Supplementary concept extraction failed: 'str' object has no attribute 'get'
+2026-03-09 17:05:00,216 | WARNING | Taxonomy file not found: /ssd/wangyuyang/git/benchmark/crossdisc_extractor/data/msc_converted.json
+2026-03-09 17:05:00,216 | INFO | Loaded terminology dictionary: 0 terms, 0 disciplines
+2026-03-09 17:05:00,216 | INFO | Concept grounding and filtering completed
+2026-03-09 17:05:02,002 | INFO | Hypothesis entity alignment: 0/0 (0.0%)
+2026-03-09 17:05:02,012 | INFO | 下载 PDF：https://www.nature.com/articles/s41467-025-62775-x.pdf
+2026-03-09 17:05:03,232 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:05:10,675 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:05:19,789 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:05:27,630 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:05:39,400 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:05:39,975 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:05:42,129 | WARNING | Supplementary concept extraction failed: 'str' object has no attribute 'get'
+2026-03-09 17:05:42,129 | WARNING | Taxonomy file not found: /ssd/wangyuyang/git/benchmark/crossdisc_extractor/data/msc_converted.json
+2026-03-09 17:05:42,129 | INFO | Loaded terminology dictionary: 0 terms, 0 disciplines
+2026-03-09 17:05:42,129 | INFO | Concept grounding and filtering completed
+2026-03-09 17:05:44,908 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:05:46,891 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:05:53,074 | INFO | Hypothesis entity alignment: 0/0 (0.0%)
+2026-03-09 17:05:53,083 | INFO | 下载 PDF：https://www.nature.com/articles/s41467-025-64065-y.pdf
+2026-03-09 17:05:56,750 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:06:01,802 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:06:05,402 | WARNING | 检测到查询中含英文，已自动清洗为中文（不再报错）。
+2026-03-09 17:06:07,731 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:06:25,450 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:06:36,877 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:06:40,413 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:06:43,462 | INFO | Hypothesis entity alignment: 0/0 (0.0%)
+2026-03-09 17:06:43,473 | INFO | 下载 PDF：https://www.nature.com/articles/s41467-025-62396-4.pdf
+2026-03-09 17:06:50,144 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:06:50,769 | WARNING | Supplementary concept extraction failed: 'str' object has no attribute 'get'
+2026-03-09 17:06:50,769 | WARNING | Taxonomy file not found: /ssd/wangyuyang/git/benchmark/crossdisc_extractor/data/msc_converted.json
+2026-03-09 17:06:50,769 | INFO | Loaded terminology dictionary: 0 terms, 0 disciplines
+2026-03-09 17:06:50,770 | INFO | Concept grounding and filtering completed
+2026-03-09 17:06:53,055 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:07:08,949 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:07:17,231 | WARNING | 检测到查询中含英文，已自动清洗为中文（不再报错）。
+2026-03-09 17:07:18,938 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:07:24,272 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:07:32,655 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:07:32,902 | WARNING | Supplementary concept extraction failed: 'str' object has no attribute 'get'
+2026-03-09 17:07:32,902 | WARNING | Taxonomy file not found: /ssd/wangyuyang/git/benchmark/crossdisc_extractor/data/msc_converted.json
+2026-03-09 17:07:32,902 | INFO | Loaded terminology dictionary: 0 terms, 0 disciplines
+2026-03-09 17:07:32,903 | INFO | Concept grounding and filtering completed
+2026-03-09 17:07:34,621 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:07:41,643 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:07:47,600 | INFO | Hypothesis entity alignment: 0/0 (0.0%)
+2026-03-09 17:07:47,609 | INFO | 下载 PDF：https://www.nature.com/articles/s41467-025-63023-y.pdf
+2026-03-09 17:07:53,026 | WARNING | Cannot set gray non-stroke color because /'P1' is an invalid float value
+2026-03-09 17:07:53,207 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:07:59,284 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:08:00,314 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:08:13,473 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:08:22,320 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:08:28,624 | INFO | Hypothesis entity alignment: 0/0 (0.0%)
+2026-03-09 17:08:28,631 | INFO | 下载 PDF：https://www.nature.com/articles/s41467-025-64656-9.pdf
+2026-03-09 17:08:33,510 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:08:41,248 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:08:52,294 | WARNING | Supplementary concept extraction failed: 'str' object has no attribute 'get'
+2026-03-09 17:08:52,294 | WARNING | Taxonomy file not found: /ssd/wangyuyang/git/benchmark/crossdisc_extractor/data/msc_converted.json
+2026-03-09 17:08:52,294 | INFO | Loaded terminology dictionary: 0 terms, 0 disciplines
+2026-03-09 17:08:52,294 | INFO | Concept grounding and filtering completed
+2026-03-09 17:08:54,887 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:09:12,885 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:09:18,971 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:09:19,061 | WARNING | Supplementary concept extraction failed: 'str' object has no attribute 'get'
+2026-03-09 17:09:19,061 | WARNING | Taxonomy file not found: /ssd/wangyuyang/git/benchmark/crossdisc_extractor/data/msc_converted.json
+2026-03-09 17:09:19,061 | INFO | Loaded terminology dictionary: 0 terms, 0 disciplines
+2026-03-09 17:09:19,061 | INFO | Concept grounding and filtering completed
+2026-03-09 17:09:22,047 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:09:32,914 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:09:42,563 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:09:52,318 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:09:52,721 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:10:01,609 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:10:08,369 | INFO | Hypothesis entity alignment: 0/0 (0.0%)
+2026-03-09 17:10:08,381 | INFO | 下载 PDF：https://www.nature.com/articles/s41467-025-63122-w.pdf
+2026-03-09 17:10:10,753 | WARNING | Cannot set gray stroke color because /'P1' is an invalid float value
+2026-03-09 17:10:10,753 | WARNING | Cannot set gray stroke color because /'P2' is an invalid float value
+2026-03-09 17:10:10,753 | WARNING | Cannot set gray stroke color because /'P3' is an invalid float value
+2026-03-09 17:10:10,753 | WARNING | Cannot set gray stroke color because /'P4' is an invalid float value
+2026-03-09 17:10:10,753 | WARNING | Cannot set gray stroke color because /'P5' is an invalid float value
+2026-03-09 17:10:10,753 | WARNING | Cannot set gray stroke color because /'P6' is an invalid float value
+2026-03-09 17:10:10,754 | WARNING | Cannot set gray stroke color because /'P7' is an invalid float value
+2026-03-09 17:10:10,754 | WARNING | Cannot set gray stroke color because /'P8' is an invalid float value
+2026-03-09 17:10:10,754 | WARNING | Cannot set gray stroke color because /'P9' is an invalid float value
+2026-03-09 17:10:10,754 | WARNING | Cannot set gray stroke color because /'P10' is an invalid float value
+2026-03-09 17:10:10,754 | WARNING | Cannot set gray stroke color because /'P11' is an invalid float value
+2026-03-09 17:10:10,754 | WARNING | Cannot set gray stroke color because /'P12' is an invalid float value
+2026-03-09 17:10:10,754 | WARNING | Cannot set gray stroke color because /'P13' is an invalid float value
+2026-03-09 17:10:10,754 | WARNING | Cannot set gray stroke color because /'P14' is an invalid float value
+2026-03-09 17:10:10,754 | WARNING | Cannot set gray stroke color because /'P15' is an invalid float value
+2026-03-09 17:10:10,754 | WARNING | Cannot set gray stroke color because /'P16' is an invalid float value
+2026-03-09 17:10:10,754 | WARNING | Cannot set gray stroke color because /'P17' is an invalid float value
+2026-03-09 17:10:11,347 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:10:22,058 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:10:30,138 | INFO | Hypothesis entity alignment: 0/0 (0.0%)
+2026-03-09 17:10:30,146 | INFO | 下载 PDF：https://www.nature.com/articles/s41467-025-62338-0.pdf
+2026-03-09 17:10:32,180 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:10:41,710 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:11:05,466 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:11:07,327 | WARNING | Supplementary concept extraction failed: 'str' object has no attribute 'get'
+2026-03-09 17:11:07,327 | WARNING | Taxonomy file not found: /ssd/wangyuyang/git/benchmark/crossdisc_extractor/data/msc_converted.json
+2026-03-09 17:11:07,327 | INFO | Loaded terminology dictionary: 0 terms, 0 disciplines
+2026-03-09 17:11:07,327 | INFO | Concept grounding and filtering completed
+2026-03-09 17:11:09,407 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:11:37,271 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:11:41,091 | WARNING | Supplementary concept extraction failed: 'str' object has no attribute 'get'
+2026-03-09 17:11:41,091 | WARNING | Taxonomy file not found: /ssd/wangyuyang/git/benchmark/crossdisc_extractor/data/msc_converted.json
+2026-03-09 17:11:41,091 | INFO | Loaded terminology dictionary: 0 terms, 0 disciplines
+2026-03-09 17:11:41,091 | INFO | Concept grounding and filtering completed
+2026-03-09 17:11:42,884 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:12:01,546 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:12:07,901 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:12:14,256 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:12:21,939 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:12:32,772 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:12:40,879 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:12:46,125 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:12:52,781 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:12:53,064 | INFO | Hypothesis entity alignment: 0/0 (0.0%)
+2026-03-09 17:12:53,075 | INFO | 下载 PDF：https://www.nature.com/articles/s41467-025-55911-0.pdf
+2026-03-09 17:12:57,702 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:13:00,370 | INFO | Hypothesis entity alignment: 0/0 (0.0%)
+2026-03-09 17:13:00,377 | INFO | 下载 PDF：https://www.nature.com/articles/s41467-025-58084-y.pdf
+2026-03-09 17:13:06,551 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:13:29,537 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:13:33,693 | WARNING | Supplementary concept extraction failed: 'str' object has no attribute 'get'
+2026-03-09 17:13:33,693 | WARNING | Taxonomy file not found: /ssd/wangyuyang/git/benchmark/crossdisc_extractor/data/msc_converted.json
+2026-03-09 17:13:33,693 | INFO | Loaded terminology dictionary: 0 terms, 0 disciplines
+2026-03-09 17:13:33,694 | INFO | Concept grounding and filtering completed
+2026-03-09 17:13:36,476 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:14:07,775 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:14:08,545 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:14:12,140 | WARNING | Supplementary concept extraction failed: 'str' object has no attribute 'get'
+2026-03-09 17:14:12,140 | WARNING | Taxonomy file not found: /ssd/wangyuyang/git/benchmark/crossdisc_extractor/data/msc_converted.json
+2026-03-09 17:14:12,140 | INFO | Loaded terminology dictionary: 0 terms, 0 disciplines
+2026-03-09 17:14:12,140 | INFO | Concept grounding and filtering completed
+2026-03-09 17:14:14,278 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:14:18,162 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:14:35,727 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:14:37,853 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:14:49,673 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:14:50,360 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:14:58,696 | INFO | Hypothesis entity alignment: 0/0 (0.0%)
+2026-03-09 17:14:58,707 | INFO | 下载 PDF：https://www.nature.com/articles/s41467-025-62463-w.pdf
+2026-03-09 17:14:58,707 | INFO | [60/92] 当前成功 60
+2026-03-09 17:15:08,248 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:15:08,888 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:15:16,600 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:15:25,171 | INFO | Hypothesis entity alignment: 0/0 (0.0%)
+2026-03-09 17:15:25,182 | INFO | 下载 PDF：https://www.nature.com/articles/s41467-025-62481-8.pdf
+2026-03-09 17:15:33,246 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:15:51,289 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:15:55,083 | WARNING | Supplementary concept extraction failed: 'str' object has no attribute 'get'
+2026-03-09 17:15:55,083 | WARNING | Taxonomy file not found: /ssd/wangyuyang/git/benchmark/crossdisc_extractor/data/msc_converted.json
+2026-03-09 17:15:55,083 | INFO | Loaded terminology dictionary: 0 terms, 0 disciplines
+2026-03-09 17:15:55,083 | INFO | Concept grounding and filtering completed
+2026-03-09 17:15:57,272 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:16:12,572 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:16:16,364 | WARNING | Supplementary concept extraction failed: 'str' object has no attribute 'get'
+2026-03-09 17:16:16,364 | WARNING | Taxonomy file not found: /ssd/wangyuyang/git/benchmark/crossdisc_extractor/data/msc_converted.json
+2026-03-09 17:16:16,364 | INFO | Loaded terminology dictionary: 0 terms, 0 disciplines
+2026-03-09 17:16:16,364 | INFO | Concept grounding and filtering completed
+2026-03-09 17:16:17,504 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:16:18,885 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:16:28,307 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:16:44,823 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:16:51,082 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:16:54,126 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:17:02,655 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:17:07,652 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:17:13,273 | INFO | Hypothesis entity alignment: 0/0 (0.0%)
+2026-03-09 17:17:13,284 | INFO | 下载 PDF：https://www.nature.com/articles/s41467-025-62594-0.pdf
+2026-03-09 17:17:16,213 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:17:22,098 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:17:23,732 | INFO | Hypothesis entity alignment: 0/0 (0.0%)
+2026-03-09 17:17:23,738 | INFO | 下载 PDF：https://www.nature.com/articles/s41467-025-60034-7.pdf
+2026-03-09 17:17:28,925 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:18:12,308 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:18:16,924 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:18:19,341 | WARNING | Supplementary concept extraction failed: 'str' object has no attribute 'get'
+2026-03-09 17:18:19,342 | WARNING | Taxonomy file not found: /ssd/wangyuyang/git/benchmark/crossdisc_extractor/data/msc_converted.json
+2026-03-09 17:18:19,342 | INFO | Loaded terminology dictionary: 0 terms, 0 disciplines
+2026-03-09 17:18:19,342 | INFO | Concept grounding and filtering completed
+2026-03-09 17:18:22,142 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:18:32,372 | WARNING | Supplementary concept extraction failed: 'str' object has no attribute 'get'
+2026-03-09 17:18:32,373 | WARNING | Taxonomy file not found: /ssd/wangyuyang/git/benchmark/crossdisc_extractor/data/msc_converted.json
+2026-03-09 17:18:32,373 | INFO | Loaded terminology dictionary: 0 terms, 0 disciplines
+2026-03-09 17:18:32,373 | INFO | Concept grounding and filtering completed
+2026-03-09 17:18:35,973 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:18:55,611 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:19:02,127 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:19:09,019 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:19:11,615 | WARNING | 检测到查询中含英文，已自动清洗为中文（不再报错）。
+2026-03-09 17:19:13,752 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:19:32,371 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:19:39,079 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:19:42,585 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:19:47,664 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:19:50,318 | INFO | Hypothesis entity alignment: 0/0 (0.0%)
+2026-03-09 17:19:50,324 | INFO | 下载 PDF：https://www.nature.com/articles/s41467-025-62394-6.pdf
+2026-03-09 17:19:57,053 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:19:59,157 | INFO | Hypothesis entity alignment: 0/0 (0.0%)
+2026-03-09 17:19:59,170 | INFO | 下载 PDF：https://www.nature.com/articles/s41467-025-64267-4.pdf
+2026-03-09 17:20:40,909 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:20:48,172 | WARNING | Supplementary concept extraction failed: 'str' object has no attribute 'get'
+2026-03-09 17:20:48,182 | WARNING | Taxonomy file not found: /ssd/wangyuyang/git/benchmark/crossdisc_extractor/data/msc_converted.json
+2026-03-09 17:20:48,193 | INFO | Loaded terminology dictionary: 0 terms, 0 disciplines
+2026-03-09 17:20:48,198 | INFO | Concept grounding and filtering completed
+2026-03-09 17:20:49,979 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:20:58,744 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:21:12,297 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:21:22,461 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:21:33,789 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:21:36,397 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:21:37,854 | WARNING | Supplementary concept extraction failed: 'str' object has no attribute 'get'
+2026-03-09 17:21:37,854 | WARNING | Taxonomy file not found: /ssd/wangyuyang/git/benchmark/crossdisc_extractor/data/msc_converted.json
+2026-03-09 17:21:37,854 | INFO | Loaded terminology dictionary: 0 terms, 0 disciplines
+2026-03-09 17:21:37,854 | INFO | Concept grounding and filtering completed
+2026-03-09 17:21:39,910 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:21:48,720 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:21:57,025 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:21:59,999 | INFO | Hypothesis entity alignment: 0/0 (0.0%)
+2026-03-09 17:22:00,009 | INFO | 下载 PDF：https://www.nature.com/articles/s41467-025-62514-2.pdf
+2026-03-09 17:22:07,812 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:22:19,345 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:22:32,492 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:22:39,016 | INFO | Hypothesis entity alignment: 0/0 (0.0%)
+2026-03-09 17:22:39,057 | INFO | 下载 PDF：https://www.nature.com/articles/s41467-025-56285-z.pdf
+2026-03-09 17:22:53,712 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:23:07,111 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:23:41,188 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:23:45,086 | WARNING | Supplementary concept extraction failed: 'str' object has no attribute 'get'
+2026-03-09 17:23:45,086 | WARNING | Taxonomy file not found: /ssd/wangyuyang/git/benchmark/crossdisc_extractor/data/msc_converted.json
+2026-03-09 17:23:45,086 | INFO | Loaded terminology dictionary: 0 terms, 0 disciplines
+2026-03-09 17:23:45,086 | INFO | Concept grounding and filtering completed
+2026-03-09 17:23:46,147 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:23:46,946 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:23:48,004 | WARNING | Supplementary concept extraction failed: 'str' object has no attribute 'get'
+2026-03-09 17:23:48,005 | WARNING | Taxonomy file not found: /ssd/wangyuyang/git/benchmark/crossdisc_extractor/data/msc_converted.json
+2026-03-09 17:23:48,005 | INFO | Loaded terminology dictionary: 0 terms, 0 disciplines
+2026-03-09 17:23:48,005 | INFO | Concept grounding and filtering completed
+2026-03-09 17:23:50,214 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:24:08,820 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:24:16,553 | WARNING | 检测到查询中含英文，已自动清洗为中文（不再报错）。
+2026-03-09 17:24:16,809 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:24:18,182 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:24:28,768 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:24:31,733 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:24:41,652 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:24:45,414 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:24:49,066 | INFO | Hypothesis entity alignment: 0/0 (0.0%)
+2026-03-09 17:24:49,072 | INFO | 下载 PDF：https://www.nature.com/articles/s41467-025-62077-2.pdf
+2026-03-09 17:24:51,260 | WARNING | Cannot set gray non-stroke color because /'P1' is an invalid float value
+2026-03-09 17:24:51,267 | WARNING | Cannot set gray non-stroke color because /'P2' is an invalid float value
+2026-03-09 17:24:51,278 | WARNING | Cannot set gray non-stroke color because /'P3' is an invalid float value
+2026-03-09 17:24:51,362 | WARNING | Cannot set gray non-stroke color because /'P4' is an invalid float value
+2026-03-09 17:24:55,530 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:24:57,811 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:25:04,941 | INFO | Hypothesis entity alignment: 0/0 (0.0%)
+2026-03-09 17:25:04,952 | INFO | 下载 PDF：https://www.nature.com/articles/s41467-025-57947-8.pdf
+2026-03-09 17:25:13,234 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:25:31,915 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:25:33,832 | WARNING | Supplementary concept extraction failed: 'str' object has no attribute 'get'
+2026-03-09 17:25:33,832 | WARNING | Taxonomy file not found: /ssd/wangyuyang/git/benchmark/crossdisc_extractor/data/msc_converted.json
+2026-03-09 17:25:33,833 | INFO | Loaded terminology dictionary: 0 terms, 0 disciplines
+2026-03-09 17:25:33,833 | INFO | Concept grounding and filtering completed
+2026-03-09 17:25:36,015 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:25:42,865 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:25:49,237 | WARNING | Supplementary concept extraction failed: 'str' object has no attribute 'get'
+2026-03-09 17:25:49,238 | WARNING | Taxonomy file not found: /ssd/wangyuyang/git/benchmark/crossdisc_extractor/data/msc_converted.json
+2026-03-09 17:25:49,238 | INFO | Loaded terminology dictionary: 0 terms, 0 disciplines
+2026-03-09 17:25:49,238 | INFO | Concept grounding and filtering completed
+2026-03-09 17:25:51,254 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:25:56,828 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:26:04,364 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:26:06,148 | WARNING | 检测到查询中含英文，已自动清洗为中文（不再报错）。
+2026-03-09 17:26:08,964 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:26:12,839 | WARNING | 检测到查询中含英文，已自动清洗为中文（不再报错）。
+2026-03-09 17:26:14,355 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:26:22,735 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:26:31,185 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:26:33,830 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:26:41,408 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:26:41,593 | INFO | Hypothesis entity alignment: 0/0 (0.0%)
+2026-03-09 17:26:41,602 | INFO | 下载 PDF：https://www.nature.com/articles/s41467-025-58825-z.pdf
+2026-03-09 17:26:41,602 | INFO | [70/92] 当前成功 70
+2026-03-09 17:26:49,118 | INFO | Hypothesis entity alignment: 0/0 (0.0%)
+2026-03-09 17:26:49,151 | INFO | 下载 PDF：https://www.nature.com/articles/s41467-025-63349-7.pdf
+2026-03-09 17:26:52,079 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:27:09,407 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:27:29,229 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:27:32,979 | WARNING | Supplementary concept extraction failed: 'str' object has no attribute 'get'
+2026-03-09 17:27:32,979 | WARNING | Taxonomy file not found: /ssd/wangyuyang/git/benchmark/crossdisc_extractor/data/msc_converted.json
+2026-03-09 17:27:32,979 | INFO | Loaded terminology dictionary: 0 terms, 0 disciplines
+2026-03-09 17:27:32,979 | INFO | Concept grounding and filtering completed
+2026-03-09 17:27:35,061 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:27:43,938 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:27:48,770 | WARNING | Supplementary concept extraction failed: 'str' object has no attribute 'get'
+2026-03-09 17:27:48,770 | WARNING | Taxonomy file not found: /ssd/wangyuyang/git/benchmark/crossdisc_extractor/data/msc_converted.json
+2026-03-09 17:27:48,770 | INFO | Loaded terminology dictionary: 0 terms, 0 disciplines
+2026-03-09 17:27:48,771 | INFO | Concept grounding and filtering completed
+2026-03-09 17:27:51,060 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:28:07,877 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:28:14,049 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:28:18,545 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:28:22,854 | WARNING | 检测到查询中含英文，已自动清洗为中文（不再报错）。
+2026-03-09 17:28:24,589 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:28:35,176 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:28:38,489 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:28:46,223 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:28:47,314 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:28:52,137 | INFO | Hypothesis entity alignment: 0/0 (0.0%)
+2026-03-09 17:28:52,148 | INFO | 下载 PDF：https://www.nature.com/articles/s41467-025-62170-6.pdf
+2026-03-09 17:28:54,625 | INFO | Hypothesis entity alignment: 0/0 (0.0%)
+2026-03-09 17:28:54,630 | INFO | 下载 PDF：https://www.nature.com/articles/s41467-025-59566-9.pdf
+2026-03-09 17:29:07,281 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:29:43,622 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:29:47,352 | WARNING | Supplementary concept extraction failed: 'str' object has no attribute 'get'
+2026-03-09 17:29:47,362 | WARNING | Taxonomy file not found: /ssd/wangyuyang/git/benchmark/crossdisc_extractor/data/msc_converted.json
+2026-03-09 17:29:47,376 | INFO | Loaded terminology dictionary: 0 terms, 0 disciplines
+2026-03-09 17:29:47,381 | INFO | Concept grounding and filtering completed
+2026-03-09 17:29:49,233 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:29:52,817 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:30:16,816 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:30:26,171 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:30:39,452 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:30:52,101 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:30:55,427 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:30:58,763 | WARNING | Supplementary concept extraction failed: 'str' object has no attribute 'get'
+2026-03-09 17:30:58,763 | WARNING | Taxonomy file not found: /ssd/wangyuyang/git/benchmark/crossdisc_extractor/data/msc_converted.json
+2026-03-09 17:30:58,763 | INFO | Loaded terminology dictionary: 0 terms, 0 disciplines
+2026-03-09 17:30:58,763 | INFO | Concept grounding and filtering completed
+2026-03-09 17:31:00,973 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:31:02,236 | INFO | Hypothesis entity alignment: 0/0 (0.0%)
+2026-03-09 17:31:02,244 | INFO | 下载 PDF：https://www.nature.com/articles/s41467-025-55849-3.pdf
+2026-03-09 17:31:07,921 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:31:34,731 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:31:49,467 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:32:07,258 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:32:08,538 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:32:11,640 | WARNING | Supplementary concept extraction failed: 'str' object has no attribute 'get'
+2026-03-09 17:32:11,640 | WARNING | Taxonomy file not found: /ssd/wangyuyang/git/benchmark/crossdisc_extractor/data/msc_converted.json
+2026-03-09 17:32:11,640 | INFO | Loaded terminology dictionary: 0 terms, 0 disciplines
+2026-03-09 17:32:11,641 | INFO | Concept grounding and filtering completed
+2026-03-09 17:32:14,184 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:32:22,498 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:32:30,174 | INFO | Hypothesis entity alignment: 0/0 (0.0%)
+2026-03-09 17:32:30,181 | INFO | 下载 PDF：https://www.nature.com/articles/s41467-025-58225-3.pdf
+2026-03-09 17:32:33,895 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:32:34,807 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:32:52,841 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:33:08,727 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:33:17,045 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:33:18,230 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:33:20,275 | WARNING | Supplementary concept extraction failed: 'str' object has no attribute 'get'
+2026-03-09 17:33:20,275 | WARNING | Taxonomy file not found: /ssd/wangyuyang/git/benchmark/crossdisc_extractor/data/msc_converted.json
+2026-03-09 17:33:20,275 | INFO | Loaded terminology dictionary: 0 terms, 0 disciplines
+2026-03-09 17:33:20,275 | INFO | Concept grounding and filtering completed
+2026-03-09 17:33:21,951 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:33:28,897 | INFO | Hypothesis entity alignment: 0/0 (0.0%)
+2026-03-09 17:33:28,903 | INFO | 下载 PDF：https://www.nature.com/articles/s41467-025-62552-w.pdf
+2026-03-09 17:33:35,627 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:33:36,013 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:33:44,299 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:33:55,754 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:34:06,084 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:34:06,604 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:34:09,972 | WARNING | Supplementary concept extraction failed: 'str' object has no attribute 'get'
+2026-03-09 17:34:09,973 | WARNING | Taxonomy file not found: /ssd/wangyuyang/git/benchmark/crossdisc_extractor/data/msc_converted.json
+2026-03-09 17:34:09,973 | INFO | Loaded terminology dictionary: 0 terms, 0 disciplines
+2026-03-09 17:34:09,973 | INFO | Concept grounding and filtering completed
+2026-03-09 17:34:11,674 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:34:17,069 | INFO | Hypothesis entity alignment: 0/0 (0.0%)
+2026-03-09 17:34:17,080 | INFO | 下载 PDF：https://www.nature.com/articles/s41467-025-60027-6.pdf
+2026-03-09 17:34:23,263 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:34:28,623 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:34:36,903 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:34:50,552 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:34:57,742 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:35:01,303 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:35:03,523 | INFO | Hypothesis entity alignment: 0/0 (0.0%)
+2026-03-09 17:35:03,527 | INFO | 下载 PDF：https://www.nature.com/articles/s41467-025-64146-y.pdf
+2026-03-09 17:35:09,575 | WARNING | Supplementary concept extraction failed: 'str' object has no attribute 'get'
+2026-03-09 17:35:09,580 | WARNING | Taxonomy file not found: /ssd/wangyuyang/git/benchmark/crossdisc_extractor/data/msc_converted.json
+2026-03-09 17:35:09,585 | INFO | Loaded terminology dictionary: 0 terms, 0 disciplines
+2026-03-09 17:35:09,587 | INFO | Concept grounding and filtering completed
+2026-03-09 17:35:11,839 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:35:11,857 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:35:32,605 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:35:40,442 | WARNING | 检测到查询中含英文，已自动清洗为中文（不再报错）。
+2026-03-09 17:35:42,558 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:35:57,812 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:36:01,094 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:36:09,552 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:36:10,205 | WARNING | Supplementary concept extraction failed: 'str' object has no attribute 'get'
+2026-03-09 17:36:10,205 | WARNING | Taxonomy file not found: /ssd/wangyuyang/git/benchmark/crossdisc_extractor/data/msc_converted.json
+2026-03-09 17:36:10,205 | INFO | Loaded terminology dictionary: 0 terms, 0 disciplines
+2026-03-09 17:36:10,205 | INFO | Concept grounding and filtering completed
+2026-03-09 17:36:12,786 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:36:19,615 | INFO | Hypothesis entity alignment: 0/0 (0.0%)
+2026-03-09 17:36:19,626 | INFO | 下载 PDF：https://www.nature.com/articles/s41467-025-63589-7.pdf
+2026-03-09 17:36:27,832 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:36:36,862 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:36:46,156 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:36:59,541 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:37:07,447 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:37:09,461 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:37:14,033 | WARNING | Supplementary concept extraction failed: 'str' object has no attribute 'get'
+2026-03-09 17:37:14,033 | WARNING | Taxonomy file not found: /ssd/wangyuyang/git/benchmark/crossdisc_extractor/data/msc_converted.json
+2026-03-09 17:37:14,033 | INFO | Loaded terminology dictionary: 0 terms, 0 disciplines
+2026-03-09 17:37:14,033 | INFO | Concept grounding and filtering completed
+2026-03-09 17:37:15,968 | INFO | Hypothesis entity alignment: 0/0 (0.0%)
+2026-03-09 17:37:15,973 | INFO | 下载 PDF：https://www.nature.com/articles/s41467-025-58774-7.pdf
+2026-03-09 17:37:15,974 | INFO | [80/92] 当前成功 80
+2026-03-09 17:37:15,978 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:37:27,678 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:37:36,577 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:37:43,458 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:37:53,247 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:38:04,821 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:38:12,314 | INFO | Hypothesis entity alignment: 0/0 (0.0%)
+2026-03-09 17:38:12,319 | INFO | 下载 PDF：https://www.nature.com/articles/s41467-025-62436-z.pdf
+2026-03-09 17:38:17,143 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:38:23,771 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:38:33,567 | WARNING | Supplementary concept extraction failed: 'str' object has no attribute 'get'
+2026-03-09 17:38:33,568 | WARNING | Taxonomy file not found: /ssd/wangyuyang/git/benchmark/crossdisc_extractor/data/msc_converted.json
+2026-03-09 17:38:33,568 | INFO | Loaded terminology dictionary: 0 terms, 0 disciplines
+2026-03-09 17:38:33,568 | INFO | Concept grounding and filtering completed
+2026-03-09 17:38:35,950 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:38:54,990 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:38:55,111 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:39:03,654 | WARNING | Supplementary concept extraction failed: 'str' object has no attribute 'get'
+2026-03-09 17:39:03,654 | WARNING | Taxonomy file not found: /ssd/wangyuyang/git/benchmark/crossdisc_extractor/data/msc_converted.json
+2026-03-09 17:39:03,654 | INFO | Loaded terminology dictionary: 0 terms, 0 disciplines
+2026-03-09 17:39:03,654 | INFO | Concept grounding and filtering completed
+2026-03-09 17:39:05,712 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:39:07,498 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:39:25,259 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:39:34,485 | WARNING | 检测到查询中含英文，已自动清洗为中文（不再报错）。
+2026-03-09 17:39:36,726 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:39:37,289 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:39:46,826 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:39:55,487 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:39:55,493 | INFO | Hypothesis entity alignment: 0/0 (0.0%)
+2026-03-09 17:39:55,506 | INFO | 下载 PDF：https://www.nature.com/articles/s41467-025-63167-x.pdf
+2026-03-09 17:40:02,703 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:40:05,653 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:40:16,289 | INFO | Hypothesis entity alignment: 0/0 (0.0%)
+2026-03-09 17:40:16,296 | INFO | 下载 PDF：https://www.nature.com/articles/s41467-025-58322-3.pdf
+2026-03-09 17:40:24,595 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:40:56,530 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:41:02,614 | WARNING | Supplementary concept extraction failed: 'str' object has no attribute 'get'
+2026-03-09 17:41:02,614 | WARNING | Taxonomy file not found: /ssd/wangyuyang/git/benchmark/crossdisc_extractor/data/msc_converted.json
+2026-03-09 17:41:02,614 | INFO | Loaded terminology dictionary: 0 terms, 0 disciplines
+2026-03-09 17:41:02,615 | INFO | Concept grounding and filtering completed
+2026-03-09 17:41:02,759 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:41:04,600 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:41:07,813 | WARNING | Supplementary concept extraction failed: 'str' object has no attribute 'get'
+2026-03-09 17:41:07,813 | WARNING | Taxonomy file not found: /ssd/wangyuyang/git/benchmark/crossdisc_extractor/data/msc_converted.json
+2026-03-09 17:41:07,813 | INFO | Loaded terminology dictionary: 0 terms, 0 disciplines
+2026-03-09 17:41:07,813 | INFO | Concept grounding and filtering completed
+2026-03-09 17:41:09,716 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:41:21,641 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:41:29,733 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:41:31,098 | WARNING | 检测到查询中含英文，已自动清洗为中文（不再报错）。
+2026-03-09 17:41:33,236 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:41:37,767 | WARNING | 检测到查询中含英文，已自动清洗为中文（不再报错）。
+2026-03-09 17:41:39,857 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:41:51,842 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:41:59,888 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:42:05,173 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:42:10,148 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:42:12,858 | INFO | Hypothesis entity alignment: 0/0 (0.0%)
+2026-03-09 17:42:12,864 | INFO | 下载 PDF：https://www.nature.com/articles/s41467-025-63312-6.pdf
+2026-03-09 17:42:21,249 | INFO | Hypothesis entity alignment: 0/0 (0.0%)
+2026-03-09 17:42:21,298 | INFO | 下载 PDF：https://www.nature.com/articles/s41467-024-55421-5.pdf
+2026-03-09 17:42:34,897 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:43:01,963 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:43:03,309 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:43:07,670 | WARNING | Supplementary concept extraction failed: 'str' object has no attribute 'get'
+2026-03-09 17:43:07,670 | WARNING | Taxonomy file not found: /ssd/wangyuyang/git/benchmark/crossdisc_extractor/data/msc_converted.json
+2026-03-09 17:43:07,670 | INFO | Loaded terminology dictionary: 0 terms, 0 disciplines
+2026-03-09 17:43:07,671 | INFO | Concept grounding and filtering completed
+2026-03-09 17:43:09,442 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:43:29,134 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:43:37,248 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:43:47,970 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:43:59,313 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:44:00,470 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:44:07,081 | INFO | Hypothesis entity alignment: 0/0 (0.0%)
+2026-03-09 17:44:07,090 | INFO | 下载 PDF：https://www.nature.com/articles/s41467-025-57481-7.pdf
+2026-03-09 17:44:07,773 | WARNING | Supplementary concept extraction failed: 'str' object has no attribute 'get'
+2026-03-09 17:44:07,773 | WARNING | Taxonomy file not found: /ssd/wangyuyang/git/benchmark/crossdisc_extractor/data/msc_converted.json
+2026-03-09 17:44:07,773 | INFO | Loaded terminology dictionary: 0 terms, 0 disciplines
+2026-03-09 17:44:07,774 | INFO | Concept grounding and filtering completed
+2026-03-09 17:44:09,618 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:44:13,382 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:44:55,528 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:44:56,962 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:45:14,008 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:45:17,711 | WARNING | Supplementary concept extraction failed: 'str' object has no attribute 'get'
+2026-03-09 17:45:17,711 | WARNING | Taxonomy file not found: /ssd/wangyuyang/git/benchmark/crossdisc_extractor/data/msc_converted.json
+2026-03-09 17:45:17,711 | INFO | Loaded terminology dictionary: 0 terms, 0 disciplines
+2026-03-09 17:45:17,712 | INFO | Concept grounding and filtering completed
+2026-03-09 17:45:19,828 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:45:40,860 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:45:47,634 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:45:52,340 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:46:01,380 | INFO | Hypothesis entity alignment: 0/0 (0.0%)
+2026-03-09 17:46:01,387 | INFO | 下载 PDF：https://www.nature.com/articles/s41467-025-63952-8.pdf
+2026-03-09 17:46:01,408 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:46:10,866 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:46:26,354 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:46:36,012 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:46:42,337 | INFO | Hypothesis entity alignment: 0/0 (0.0%)
+2026-03-09 17:46:42,351 | INFO | 下载 PDF：https://www.nature.com/articles/s41467-025-58099-5.pdf
+2026-03-09 17:46:46,994 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:46:56,258 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:46:58,608 | WARNING | Supplementary concept extraction failed: 'str' object has no attribute 'get'
+2026-03-09 17:46:58,608 | WARNING | Taxonomy file not found: /ssd/wangyuyang/git/benchmark/crossdisc_extractor/data/msc_converted.json
+2026-03-09 17:46:58,608 | INFO | Loaded terminology dictionary: 0 terms, 0 disciplines
+2026-03-09 17:46:58,608 | INFO | Concept grounding and filtering completed
+2026-03-09 17:47:00,627 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:47:27,303 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:47:33,554 | WARNING | Supplementary concept extraction failed: 'str' object has no attribute 'get'
+2026-03-09 17:47:33,554 | WARNING | Taxonomy file not found: /ssd/wangyuyang/git/benchmark/crossdisc_extractor/data/msc_converted.json
+2026-03-09 17:47:33,554 | INFO | Loaded terminology dictionary: 0 terms, 0 disciplines
+2026-03-09 17:47:33,554 | INFO | Concept grounding and filtering completed
+2026-03-09 17:47:35,893 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:47:42,366 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:47:52,652 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:47:56,980 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:48:01,607 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:48:15,195 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:48:17,873 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:48:28,296 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:48:32,014 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:48:37,318 | INFO | Hypothesis entity alignment: 0/0 (0.0%)
+2026-03-09 17:48:37,323 | INFO | 下载 PDF：https://www.nature.com/articles/s41467-025-62168-0.pdf
+2026-03-09 17:48:39,117 | INFO | Hypothesis entity alignment: 0/0 (0.0%)
+2026-03-09 17:48:39,123 | INFO | 下载 PDF：https://www.nature.com/articles/s41467-025-57499-x.pdf
+2026-03-09 17:48:39,123 | INFO | [90/92] 当前成功 90
+2026-03-09 17:48:47,453 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:48:48,296 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:49:33,261 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:49:35,818 | WARNING | Supplementary concept extraction failed: 'str' object has no attribute 'get'
+2026-03-09 17:49:35,818 | WARNING | Taxonomy file not found: /ssd/wangyuyang/git/benchmark/crossdisc_extractor/data/msc_converted.json
+2026-03-09 17:49:35,819 | INFO | Loaded terminology dictionary: 0 terms, 0 disciplines
+2026-03-09 17:49:35,819 | INFO | Concept grounding and filtering completed
+2026-03-09 17:49:37,237 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:49:39,484 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:49:44,186 | WARNING | Supplementary concept extraction failed: 'str' object has no attribute 'get'
+2026-03-09 17:49:44,186 | WARNING | Taxonomy file not found: /ssd/wangyuyang/git/benchmark/crossdisc_extractor/data/msc_converted.json
+2026-03-09 17:49:44,186 | INFO | Loaded terminology dictionary: 0 terms, 0 disciplines
+2026-03-09 17:49:44,186 | INFO | Concept grounding and filtering completed
+2026-03-09 17:49:46,612 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:50:01,942 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:50:06,537 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:50:13,220 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:50:18,068 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:50:27,436 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:50:36,795 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:50:44,197 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:50:44,911 | INFO | Hypothesis entity alignment: 0/0 (0.0%)
+2026-03-09 17:50:58,106 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-09 17:51:05,206 | INFO | Hypothesis entity alignment: 0/0 (0.0%)
+2026-03-09 17:51:05,214 | INFO | [92/92] 当前成功 92
+2026-03-09 17:51:05,259 | INFO | 完成：总计 92，成功 92，失败 0。输出 -> outputs/full_pipeline_run/extraction_results.jsonl
+[1;33m[INFO] 抽取完成！结果: outputs/full_pipeline_run/extraction_results.jsonl[0m
+
+[0;34m═══════════════════════════════════════════════════════════[0m
+[0;32m[STEP] Step 3: 划分数据集 (GT集 + 测试集)[0m
+[0;34m═══════════════════════════════════════════════════════════[0m
+
+总共 92 条记录，成功 92 条
+GT 集: 89 篇
+测试集: 3 篇
+GT 集已保存: outputs/full_pipeline_run/gt_extraction.json
+测试集已保存: outputs/full_pipeline_run/test_extraction.json
+完整结果 JSON: outputs/full_pipeline_run/extraction_results.json
+[1;33m[INFO] 数据集划分完成[0m
+
+[0;34m═══════════════════════════════════════════════════════════[0m
+[0;32m[STEP] Step 4: 构建 Benchmark 数据集 (Evidence-Grounded Ground Truth)[0m
+[0;34m═══════════════════════════════════════════════════════════[0m
+
+[1;33m[INFO] 使用 GT 集 (outputs/full_pipeline_run/gt_extraction.json) 构建知识图谱[0m
+[1;33m[INFO] 模式: evidence (基于证据的 GT 构建)[0m
+2026-03-09 17:51:05,950 | INFO | Loaded terminology dictionary: 2686 terms, 50 disciplines
+2026-03-09 17:51:05,950 | INFO | Stage 1: Extracting terms from paper: Resolving multi-image spatial lipidomic responses to inhaled
+2026-03-09 17:51:07,702 | INFO | Extracted 13 terms (0 grounded)
+2026-03-09 17:51:07,702 | INFO | Stage 2: Building relations from co-occurrence + classification
+2026-03-09 17:51:07,704 | INFO | Built 6 relations
+2026-03-09 17:51:07,704 | INFO | Stage 3: Building GT paths via graph traversal
+2026-03-09 17:51:07,706 | INFO | Built 2 GT paths
+2026-03-09 17:51:07,711 | INFO | Loaded terminology dictionary: 2686 terms, 50 disciplines
+2026-03-09 17:51:07,711 | INFO | Stage 1: Extracting terms from paper: Machine learning center-specific models show improved IVF li
+2026-03-09 17:51:10,125 | INFO | Extracted 15 terms (1 grounded)
+2026-03-09 17:51:10,125 | INFO | Stage 2: Building relations from co-occurrence + classification
+2026-03-09 17:51:10,126 | INFO | Built 5 relations
+2026-03-09 17:51:10,126 | INFO | Stage 3: Building GT paths via graph traversal
+2026-03-09 17:51:10,127 | INFO | Built 1 GT paths
+2026-03-09 17:51:10,133 | INFO | Loaded terminology dictionary: 2686 terms, 50 disciplines
+2026-03-09 17:51:10,133 | INFO | Stage 1: Extracting terms from paper: Longitudinal liquid biopsy identifies an early predictive bi
+2026-03-09 17:51:12,496 | INFO | Extracted 19 terms (0 grounded)
+2026-03-09 17:51:12,497 | INFO | Stage 2: Building relations from co-occurrence + classification
+2026-03-09 17:51:12,498 | INFO | Built 6 relations
+2026-03-09 17:51:12,498 | INFO | Stage 3: Building GT paths via graph traversal
+2026-03-09 17:51:12,499 | INFO | Built 0 GT paths
+2026-03-09 17:51:12,504 | INFO | Loaded terminology dictionary: 2686 terms, 50 disciplines
+2026-03-09 17:51:12,504 | INFO | Stage 1: Extracting terms from paper: A physics-informed Airy beam learning framework for blockage
+2026-03-09 17:51:14,056 | INFO | Extracted 18 terms (2 grounded)
+2026-03-09 17:51:14,056 | INFO | Stage 2: Building relations from co-occurrence + classification
+2026-03-09 17:51:14,058 | INFO | Built 13 relations
+2026-03-09 17:51:14,058 | INFO | Stage 3: Building GT paths via graph traversal
+2026-03-09 17:51:14,060 | INFO | Built 10 GT paths
+2026-03-09 17:51:14,065 | INFO | Loaded terminology dictionary: 2686 terms, 50 disciplines
+2026-03-09 17:51:14,065 | INFO | Stage 1: Extracting terms from paper: RAPDOR: Using Jensen-Shannon Distance for the computational 
+2026-03-09 17:51:16,648 | INFO | Extracted 19 terms (0 grounded)
+2026-03-09 17:51:16,648 | INFO | Stage 2: Building relations from co-occurrence + classification
+2026-03-09 17:51:16,650 | INFO | Built 30 relations
+2026-03-09 17:51:16,650 | INFO | Stage 3: Building GT paths via graph traversal
+2026-03-09 17:51:16,655 | INFO | Built 20 GT paths
+2026-03-09 17:51:16,677 | INFO | Loaded terminology dictionary: 2686 terms, 50 disciplines
+2026-03-09 17:51:16,677 | INFO | Stage 1: Extracting terms from paper: Computational identification of small molecules for increase
+2026-03-09 17:51:18,879 | INFO | Extracted 18 terms (1 grounded)
+2026-03-09 17:51:18,879 | INFO | Stage 2: Building relations from co-occurrence + classification
+2026-03-09 17:51:18,880 | INFO | Built 8 relations
+2026-03-09 17:51:18,880 | INFO | Stage 3: Building GT paths via graph traversal
+2026-03-09 17:51:18,882 | INFO | Built 3 GT paths
+2026-03-09 17:51:18,886 | INFO | Loaded terminology dictionary: 2686 terms, 50 disciplines
+2026-03-09 17:51:18,887 | INFO | Stage 1: Extracting terms from paper: AI-guided patient stratification improves outcomes and effic
+2026-03-09 17:51:20,359 | INFO | Extracted 14 terms (0 grounded)
+2026-03-09 17:51:20,359 | INFO | Stage 2: Building relations from co-occurrence + classification
+2026-03-09 17:51:20,360 | INFO | Built 15 relations
+2026-03-09 17:51:20,360 | INFO | Stage 3: Building GT paths via graph traversal
+2026-03-09 17:51:20,362 | INFO | Built 15 GT paths
+2026-03-09 17:51:20,367 | INFO | Loaded terminology dictionary: 2686 terms, 50 disciplines
+2026-03-09 17:51:20,367 | INFO | Stage 1: Extracting terms from paper: Adaptive-learning physics-assisted light-field microscopy en
+2026-03-09 17:51:23,398 | INFO | Extracted 18 terms (0 grounded)
+2026-03-09 17:51:23,398 | INFO | Stage 2: Building relations from co-occurrence + classification
+2026-03-09 17:51:23,400 | INFO | Built 27 relations
+2026-03-09 17:51:23,400 | INFO | Stage 3: Building GT paths via graph traversal
+2026-03-09 17:51:23,404 | INFO | Built 20 GT paths
+2026-03-09 17:51:23,409 | INFO | Loaded terminology dictionary: 2686 terms, 50 disciplines
+2026-03-09 17:51:23,410 | INFO | Stage 1: Extracting terms from paper: A graph homomorphism approach for unraveling histories of me
+2026-03-09 17:51:25,128 | INFO | Extracted 15 terms (0 grounded)
+2026-03-09 17:51:25,128 | INFO | Stage 2: Building relations from co-occurrence + classification
+2026-03-09 17:51:25,130 | INFO | Built 10 relations
+2026-03-09 17:51:25,130 | INFO | Stage 3: Building GT paths via graph traversal
+2026-03-09 17:51:25,131 | INFO | Built 8 GT paths
+2026-03-09 17:51:25,136 | INFO | Loaded terminology dictionary: 2686 terms, 50 disciplines
+2026-03-09 17:51:25,136 | INFO | Stage 1: Extracting terms from paper: Covariant spatio-temporal receptive fields for spiking neura
+2026-03-09 17:51:26,752 | INFO | Extracted 19 terms (1 grounded)
+2026-03-09 17:51:26,753 | INFO | Stage 2: Building relations from co-occurrence + classification
+2026-03-09 17:51:26,755 | INFO | Built 31 relations
+2026-03-09 17:51:26,755 | INFO | Stage 3: Building GT paths via graph traversal
+2026-03-09 17:51:26,761 | INFO | Built 20 GT paths
+2026-03-09 17:51:26,766 | INFO | Loaded terminology dictionary: 2686 terms, 50 disciplines
+2026-03-09 17:51:26,766 | INFO | Stage 1: Extracting terms from paper: Metabolic constraint of human telomere length by nucleotide 
+2026-03-09 17:51:28,957 | INFO | Extracted 24 terms (0 grounded)
+2026-03-09 17:51:28,957 | INFO | Stage 2: Building relations from co-occurrence + classification
+2026-03-09 17:51:28,960 | INFO | Built 23 relations
+2026-03-09 17:51:28,960 | INFO | Stage 3: Building GT paths via graph traversal
+2026-03-09 17:51:28,964 | INFO | Built 20 GT paths
+2026-03-09 17:51:28,970 | INFO | Loaded terminology dictionary: 2686 terms, 50 disciplines
+2026-03-09 17:51:28,970 | INFO | Stage 1: Extracting terms from paper: CSF total tau as a proxy of synaptic degeneration
+2026-03-09 17:51:30,947 | INFO | Extracted 20 terms (0 grounded)
+2026-03-09 17:51:30,947 | INFO | Stage 2: Building relations from co-occurrence + classification
+2026-03-09 17:51:30,949 | INFO | Built 14 relations
+2026-03-09 17:51:30,949 | INFO | Stage 3: Building GT paths via graph traversal
+2026-03-09 17:51:30,951 | INFO | Built 0 GT paths
+2026-03-09 17:51:30,956 | INFO | Loaded terminology dictionary: 2686 terms, 50 disciplines
+2026-03-09 17:51:30,956 | INFO | Stage 1: Extracting terms from paper: Refining centromedian nucleus stimulation for generalized ep
+2026-03-09 17:51:33,337 | INFO | Extracted 23 terms (0 grounded)
+2026-03-09 17:51:33,337 | INFO | Stage 2: Building relations from co-occurrence + classification
+2026-03-09 17:51:33,339 | INFO | Built 12 relations
+2026-03-09 17:51:33,339 | INFO | Stage 3: Building GT paths via graph traversal
+2026-03-09 17:51:33,342 | INFO | Built 15 GT paths
+2026-03-09 17:51:33,347 | INFO | Loaded terminology dictionary: 2686 terms, 50 disciplines
+2026-03-09 17:51:33,347 | INFO | Stage 1: Extracting terms from paper: Non-equilibrium demixing and dissolution of chiral coacervat
+2026-03-09 17:51:34,763 | INFO | Extracted 16 terms (0 grounded)
+2026-03-09 17:51:34,763 | INFO | Stage 2: Building relations from co-occurrence + classification
+2026-03-09 17:51:34,765 | INFO | Built 15 relations
+2026-03-09 17:51:34,765 | INFO | Stage 3: Building GT paths via graph traversal
+2026-03-09 17:51:34,767 | INFO | Built 20 GT paths
+2026-03-09 17:51:34,772 | INFO | Loaded terminology dictionary: 2686 terms, 50 disciplines
+2026-03-09 17:51:34,772 | INFO | Stage 1: Extracting terms from paper: Cellulose-mediated ionic liquid crystallization enables toug
+2026-03-09 17:51:36,953 | INFO | Extracted 20 terms (0 grounded)
+2026-03-09 17:51:36,953 | INFO | Stage 2: Building relations from co-occurrence + classification
+2026-03-09 17:51:36,955 | INFO | Built 7 relations
+2026-03-09 17:51:36,955 | INFO | Stage 3: Building GT paths via graph traversal
+2026-03-09 17:51:36,957 | INFO | Built 6 GT paths
+2026-03-09 17:51:36,962 | INFO | Loaded terminology dictionary: 2686 terms, 50 disciplines
+2026-03-09 17:51:36,962 | INFO | Stage 1: Extracting terms from paper: Structural insights into human brachyury DNA recognition and
+2026-03-09 17:51:38,831 | INFO | Extracted 17 terms (0 grounded)
+2026-03-09 17:51:38,832 | INFO | Stage 2: Building relations from co-occurrence + classification
+2026-03-09 17:51:38,833 | INFO | Built 13 relations
+2026-03-09 17:51:38,833 | INFO | Stage 3: Building GT paths via graph traversal
+2026-03-09 17:51:38,835 | INFO | Built 17 GT paths
+2026-03-09 17:51:38,840 | INFO | Loaded terminology dictionary: 2686 terms, 50 disciplines
+2026-03-09 17:51:38,840 | INFO | Stage 1: Extracting terms from paper: Structural convergence and water-mediated substrate mimicry 
+2026-03-09 17:51:40,688 | INFO | Extracted 25 terms (0 grounded)
+2026-03-09 17:51:40,688 | INFO | Stage 2: Building relations from co-occurrence + classification
+2026-03-09 17:51:40,691 | INFO | Built 32 relations
+2026-03-09 17:51:40,691 | INFO | Stage 3: Building GT paths via graph traversal
+2026-03-09 17:51:40,699 | INFO | Built 20 GT paths
+2026-03-09 17:51:40,705 | INFO | Loaded terminology dictionary: 2686 terms, 50 disciplines
+2026-03-09 17:51:40,705 | INFO | Stage 1: Extracting terms from paper: A multifaceted hybrid ES-robotic device for gait training in
+2026-03-09 17:51:43,469 | INFO | Extracted 16 terms (1 grounded)
+2026-03-09 17:51:43,469 | INFO | Stage 2: Building relations from co-occurrence + classification
+2026-03-09 17:51:43,470 | INFO | Built 14 relations
+2026-03-09 17:51:43,470 | INFO | Stage 3: Building GT paths via graph traversal
+2026-03-09 17:51:43,472 | INFO | Built 16 GT paths
+2026-03-09 17:51:43,477 | INFO | Loaded terminology dictionary: 2686 terms, 50 disciplines
+2026-03-09 17:51:43,477 | INFO | Stage 1: Extracting terms from paper: Structure of dimerized assimilatory NADPH-dependent sulfite 
+2026-03-09 17:51:46,328 | INFO | Extracted 24 terms (0 grounded)
+2026-03-09 17:51:46,328 | INFO | Stage 2: Building relations from co-occurrence + classification
+2026-03-09 17:51:46,331 | INFO | Built 53 relations
+2026-03-09 17:51:46,331 | INFO | Stage 3: Building GT paths via graph traversal
+2026-03-09 17:51:46,352 | INFO | Built 20 GT paths
+2026-03-09 17:51:46,358 | INFO | Loaded terminology dictionary: 2686 terms, 50 disciplines
+2026-03-09 17:51:46,358 | INFO | Stage 1: Extracting terms from paper: Amorphous polymers separate small organic molecules with swi
+2026-03-09 17:51:47,434 | INFO | Extracted 15 terms (0 grounded)
+2026-03-09 17:51:47,434 | INFO | Stage 2: Building relations from co-occurrence + classification
+2026-03-09 17:51:47,436 | INFO | Built 7 relations
+2026-03-09 17:51:47,436 | INFO | Stage 3: Building GT paths via graph traversal
+2026-03-09 17:51:47,436 | INFO | Built 0 GT paths
+2026-03-09 17:51:47,441 | INFO | Loaded terminology dictionary: 2686 terms, 50 disciplines
+2026-03-09 17:51:47,441 | INFO | Stage 1: Extracting terms from paper: A diverse landscape of FGFR alterations and co-mutations sug
+2026-03-09 17:51:49,951 | INFO | Extracted 20 terms (0 grounded)
+2026-03-09 17:51:49,951 | INFO | Stage 2: Building relations from co-occurrence + classification
+2026-03-09 17:51:49,953 | INFO | Built 23 relations
+2026-03-09 17:51:49,953 | INFO | Stage 3: Building GT paths via graph traversal
+2026-03-09 17:51:49,957 | INFO | Built 20 GT paths
+2026-03-09 17:51:49,962 | INFO | Loaded terminology dictionary: 2686 terms, 50 disciplines
+2026-03-09 17:51:49,963 | INFO | Stage 1: Extracting terms from paper: Distinct role of claustrum and anterior cingulate cortex bid
+2026-03-09 17:51:51,888 | INFO | Extracted 19 terms (0 grounded)
+2026-03-09 17:51:51,888 | INFO | Stage 2: Building relations from co-occurrence + classification
+2026-03-09 17:51:51,890 | INFO | Built 25 relations
+2026-03-09 17:51:51,890 | INFO | Stage 3: Building GT paths via graph traversal
+2026-03-09 17:51:51,893 | INFO | Built 20 GT paths
+2026-03-09 17:51:51,899 | INFO | Loaded terminology dictionary: 2686 terms, 50 disciplines
+2026-03-09 17:51:51,899 | INFO | Stage 1: Extracting terms from paper: The systemic lupus erythematosus-associated NCF190H allele s
+2026-03-09 17:51:54,817 | INFO | Extracted 22 terms (0 grounded)
+2026-03-09 17:51:54,817 | INFO | Stage 2: Building relations from co-occurrence + classification
+2026-03-09 17:51:54,820 | INFO | Built 21 relations
+2026-03-09 17:51:54,820 | INFO | Stage 3: Building GT paths via graph traversal
+2026-03-09 17:51:54,825 | INFO | Built 20 GT paths
+2026-03-09 17:51:54,830 | INFO | Loaded terminology dictionary: 2686 terms, 50 disciplines
+2026-03-09 17:51:54,830 | INFO | Stage 1: Extracting terms from paper: Organic pollutant-induced long-distance ROS signaling drives
+2026-03-09 17:51:57,180 | INFO | Extracted 27 terms (0 grounded)
+2026-03-09 17:51:57,180 | INFO | Stage 2: Building relations from co-occurrence + classification
+2026-03-09 17:51:57,183 | INFO | Built 46 relations
+2026-03-09 17:51:57,183 | INFO | Stage 3: Building GT paths via graph traversal
+2026-03-09 17:51:57,202 | INFO | Built 20 GT paths
+2026-03-09 17:51:57,207 | INFO | Loaded terminology dictionary: 2686 terms, 50 disciplines
+2026-03-09 17:51:57,207 | INFO | Stage 1: Extracting terms from paper: Impacts of urban and cropland expansions on natural habitats
+2026-03-09 17:51:58,267 | INFO | Extracted 19 terms (0 grounded)
+2026-03-09 17:51:58,267 | INFO | Stage 2: Building relations from co-occurrence + classification
+2026-03-09 17:51:58,269 | INFO | Built 19 relations
+2026-03-09 17:51:58,270 | INFO | Stage 3: Building GT paths via graph traversal
+2026-03-09 17:51:58,273 | INFO | Built 20 GT paths
+2026-03-09 17:51:58,278 | INFO | Loaded terminology dictionary: 2686 terms, 50 disciplines
+2026-03-09 17:51:58,278 | INFO | Stage 1: Extracting terms from paper: HIV status alters immune cell infiltration and activation pr
+2026-03-09 17:52:00,664 | INFO | Extracted 17 terms (0 grounded)
+2026-03-09 17:52:00,664 | INFO | Stage 2: Building relations from co-occurrence + classification
+2026-03-09 17:52:00,666 | INFO | Built 10 relations
+2026-03-09 17:52:00,666 | INFO | Stage 3: Building GT paths via graph traversal
+2026-03-09 17:52:00,667 | INFO | Built 3 GT paths
+2026-03-09 17:52:00,672 | INFO | Loaded terminology dictionary: 2686 terms, 50 disciplines
+2026-03-09 17:52:00,672 | INFO | Stage 1: Extracting terms from paper: Evidence for single variant in altermagnetic RuO2(101) thin 
+2026-03-09 17:52:02,453 | INFO | Extracted 24 terms (0 grounded)
+2026-03-09 17:52:02,453 | INFO | Stage 2: Building relations from co-occurrence + classification
+2026-03-09 17:52:02,456 | INFO | Built 22 relations
+2026-03-09 17:52:02,456 | INFO | Stage 3: Building GT paths via graph traversal
+2026-03-09 17:52:02,460 | INFO | Built 15 GT paths
+2026-03-09 17:52:02,466 | INFO | Loaded terminology dictionary: 2686 terms, 50 disciplines
+2026-03-09 17:52:02,466 | INFO | Stage 1: Extracting terms from paper: High-throughput micro-scale bandgap mapping for perovskite-i
+2026-03-09 17:52:05,008 | INFO | Extracted 16 terms (0 grounded)
+2026-03-09 17:52:05,009 | INFO | Stage 2: Building relations from co-occurrence + classification
+2026-03-09 17:52:05,010 | INFO | Built 10 relations
+2026-03-09 17:52:05,010 | INFO | Stage 3: Building GT paths via graph traversal
+2026-03-09 17:52:05,012 | INFO | Built 10 GT paths
+2026-03-09 17:52:05,017 | INFO | Loaded terminology dictionary: 2686 terms, 50 disciplines
+2026-03-09 17:52:05,017 | INFO | Stage 1: Extracting terms from paper: Physical and chemical niche of human growth plate for polari
+2026-03-09 17:52:07,233 | INFO | Extracted 32 terms (1 grounded)
+2026-03-09 17:52:07,233 | INFO | Stage 2: Building relations from co-occurrence + classification
+2026-03-09 17:52:07,238 | INFO | Built 43 relations
+2026-03-09 17:52:07,238 | INFO | Stage 3: Building GT paths via graph traversal
+2026-03-09 17:52:07,255 | INFO | Built 20 GT paths
+2026-03-09 17:52:07,260 | INFO | Loaded terminology dictionary: 2686 terms, 50 disciplines
+2026-03-09 17:52:07,260 | INFO | Stage 1: Extracting terms from paper: Tuning Li occupancy and local structures for advanced Co-fre
+2026-03-09 17:52:09,615 | INFO | Extracted 19 terms (0 grounded)
+2026-03-09 17:52:09,615 | INFO | Stage 2: Building relations from co-occurrence + classification
+2026-03-09 17:52:09,617 | INFO | Built 14 relations
+2026-03-09 17:52:09,617 | INFO | Stage 3: Building GT paths via graph traversal
+2026-03-09 17:52:09,619 | INFO | Built 16 GT paths
+2026-03-09 17:52:09,624 | INFO | Loaded terminology dictionary: 2686 terms, 50 disciplines
+2026-03-09 17:52:09,624 | INFO | Stage 1: Extracting terms from paper: Functional optic tract rewiring via subtype- and target-spec
+2026-03-09 17:52:12,293 | INFO | Extracted 24 terms (1 grounded)
+2026-03-09 17:52:12,293 | INFO | Stage 2: Building relations from co-occurrence + classification
+2026-03-09 17:52:12,295 | INFO | Built 16 relations
+2026-03-09 17:52:12,295 | INFO | Stage 3: Building GT paths via graph traversal
+2026-03-09 17:52:12,298 | INFO | Built 0 GT paths
+2026-03-09 17:52:12,303 | INFO | Loaded terminology dictionary: 2686 terms, 50 disciplines
+2026-03-09 17:52:12,303 | INFO | Stage 1: Extracting terms from paper: Screening the human druggable genome identifies ABHD17B as a
+2026-03-09 17:52:14,629 | INFO | Extracted 21 terms (0 grounded)
+2026-03-09 17:52:14,629 | INFO | Stage 2: Building relations from co-occurrence + classification
+2026-03-09 17:52:14,632 | INFO | Built 45 relations
+2026-03-09 17:52:14,632 | INFO | Stage 3: Building GT paths via graph traversal
+2026-03-09 17:52:14,639 | INFO | Built 20 GT paths
+2026-03-09 17:52:14,644 | INFO | Loaded terminology dictionary: 2686 terms, 50 disciplines
+2026-03-09 17:52:14,645 | INFO | Stage 1: Extracting terms from paper: The impact of a high fat diet and platelet activation on pre
+2026-03-09 17:52:16,643 | INFO | Extracted 20 terms (0 grounded)
+2026-03-09 17:52:16,643 | INFO | Stage 2: Building relations from co-occurrence + classification
+2026-03-09 17:52:16,646 | INFO | Built 26 relations
+2026-03-09 17:52:16,646 | INFO | Stage 3: Building GT paths via graph traversal
+2026-03-09 17:52:16,650 | INFO | Built 20 GT paths
+2026-03-09 17:52:16,655 | INFO | Loaded terminology dictionary: 2686 terms, 50 disciplines
+2026-03-09 17:52:16,655 | INFO | Stage 1: Extracting terms from paper: SC35-mediated bZIP49 splicing regulates K⁺ channel AKT1 for 
+2026-03-09 17:52:19,257 | INFO | Extracted 28 terms (0 grounded)
+2026-03-09 17:52:19,257 | INFO | Stage 2: Building relations from co-occurrence + classification
+2026-03-09 17:52:19,262 | INFO | Built 81 relations
+2026-03-09 17:52:19,262 | INFO | Stage 3: Building GT paths via graph traversal
+2026-03-09 17:52:19,319 | INFO | Built 20 GT paths
+2026-03-09 17:52:19,324 | INFO | Loaded terminology dictionary: 2686 terms, 50 disciplines
+2026-03-09 17:52:19,324 | INFO | Stage 1: Extracting terms from paper: Keratinocyte-specific angiotensin II receptor-associated pro
+2026-03-09 17:52:21,952 | INFO | Extracted 12 terms (0 grounded)
+2026-03-09 17:52:21,952 | INFO | Stage 2: Building relations from co-occurrence + classification
+2026-03-09 17:52:21,954 | INFO | Built 9 relations
+2026-03-09 17:52:21,954 | INFO | Stage 3: Building GT paths via graph traversal
+2026-03-09 17:52:21,955 | INFO | Built 8 GT paths
+2026-03-09 17:52:21,960 | INFO | Loaded terminology dictionary: 2686 terms, 50 disciplines
+2026-03-09 17:52:21,960 | INFO | Stage 1: Extracting terms from paper: Room-temperature X-ray fragment screening with serial crysta
+2026-03-09 17:52:24,668 | INFO | Extracted 19 terms (1 grounded)
+2026-03-09 17:52:24,668 | INFO | Stage 2: Building relations from co-occurrence + classification
+2026-03-09 17:52:24,670 | INFO | Built 10 relations
+2026-03-09 17:52:24,670 | INFO | Stage 3: Building GT paths via graph traversal
+2026-03-09 17:52:24,672 | INFO | Built 12 GT paths
+2026-03-09 17:52:24,687 | INFO | Loaded terminology dictionary: 2686 terms, 50 disciplines
+2026-03-09 17:52:24,687 | INFO | Stage 1: Extracting terms from paper: Tumour initiated purinergic signalling promotes cardiomyocyt
+2026-03-09 17:52:26,611 | INFO | Extracted 25 terms (0 grounded)
+2026-03-09 17:52:26,611 | INFO | Stage 2: Building relations from co-occurrence + classification
+2026-03-09 17:52:26,617 | INFO | Built 101 relations
+2026-03-09 17:52:26,617 | INFO | Stage 3: Building GT paths via graph traversal
+2026-03-09 17:52:26,694 | INFO | Built 20 GT paths
+2026-03-09 17:52:26,699 | INFO | Loaded terminology dictionary: 2686 terms, 50 disciplines
+2026-03-09 17:52:26,700 | INFO | Stage 1: Extracting terms from paper: Reprogramming yeast metabolism for customized starch-rich mi
+2026-03-09 17:52:29,266 | INFO | Extracted 23 terms (0 grounded)
+2026-03-09 17:52:29,266 | INFO | Stage 2: Building relations from co-occurrence + classification
+2026-03-09 17:52:29,270 | INFO | Built 45 relations
+2026-03-09 17:52:29,270 | INFO | Stage 3: Building GT paths via graph traversal
+2026-03-09 17:52:29,290 | INFO | Built 20 GT paths
+2026-03-09 17:52:29,295 | INFO | Loaded terminology dictionary: 2686 terms, 50 disciplines
+2026-03-09 17:52:29,295 | INFO | Stage 1: Extracting terms from paper: ATLAS-seq: a microfluidic single-cell TCR screen for antigen
+2026-03-09 17:52:32,369 | INFO | Extracted 22 terms (0 grounded)
+2026-03-09 17:52:32,369 | INFO | Stage 2: Building relations from co-occurrence + classification
+2026-03-09 17:52:32,371 | INFO | Built 19 relations
+2026-03-09 17:52:32,371 | INFO | Stage 3: Building GT paths via graph traversal
+2026-03-09 17:52:32,375 | INFO | Built 20 GT paths
+2026-03-09 17:52:32,381 | INFO | Loaded terminology dictionary: 2686 terms, 50 disciplines
+2026-03-09 17:52:32,381 | INFO | Stage 1: Extracting terms from paper: Puzzle-like molecular assembly of non-flammable solid-state 
+2026-03-09 17:52:33,970 | INFO | Extracted 20 terms (0 grounded)
+2026-03-09 17:52:33,970 | INFO | Stage 2: Building relations from co-occurrence + classification
+2026-03-09 17:52:33,972 | INFO | Built 20 relations
+2026-03-09 17:52:33,972 | INFO | Stage 3: Building GT paths via graph traversal
+2026-03-09 17:52:33,975 | INFO | Built 19 GT paths
+2026-03-09 17:52:33,981 | INFO | Loaded terminology dictionary: 2686 terms, 50 disciplines
+2026-03-09 17:52:33,981 | INFO | Stage 1: Extracting terms from paper: Vitamin D supplementation ameliorates ductular reaction, liv
+2026-03-09 17:52:36,840 | INFO | Extracted 28 terms (0 grounded)
+2026-03-09 17:52:36,840 | INFO | Stage 2: Building relations from co-occurrence + classification
+2026-03-09 17:52:36,844 | INFO | Built 45 relations
+2026-03-09 17:52:36,844 | INFO | Stage 3: Building GT paths via graph traversal
+2026-03-09 17:52:36,867 | INFO | Built 20 GT paths
+2026-03-09 17:52:36,872 | INFO | Loaded terminology dictionary: 2686 terms, 50 disciplines
+2026-03-09 17:52:36,872 | INFO | Stage 1: Extracting terms from paper: Climate change is predicted to reduce global belowground eco
+2026-03-09 17:52:38,518 | INFO | Extracted 17 terms (0 grounded)
+2026-03-09 17:52:38,519 | INFO | Stage 2: Building relations from co-occurrence + classification
+2026-03-09 17:52:38,520 | INFO | Built 6 relations
+2026-03-09 17:52:38,520 | INFO | Stage 3: Building GT paths via graph traversal
+2026-03-09 17:52:38,521 | INFO | Built 1 GT paths
+2026-03-09 17:52:38,526 | INFO | Loaded terminology dictionary: 2686 terms, 50 disciplines
+2026-03-09 17:52:38,526 | INFO | Stage 1: Extracting terms from paper: Maximized atom utilization in a high-entropy metallene via s
+2026-03-09 17:52:40,269 | INFO | Extracted 17 terms (0 grounded)
+2026-03-09 17:52:40,270 | INFO | Stage 2: Building relations from co-occurrence + classification
+2026-03-09 17:52:40,272 | INFO | Built 18 relations
+2026-03-09 17:52:40,272 | INFO | Stage 3: Building GT paths via graph traversal
+2026-03-09 17:52:40,274 | INFO | Built 20 GT paths
+2026-03-09 17:52:40,280 | INFO | Loaded terminology dictionary: 2686 terms, 50 disciplines
+2026-03-09 17:52:40,280 | INFO | Stage 1: Extracting terms from paper: Decoupling polarization and coercive field in AlScN/AlN/AlSc
+2026-03-09 17:52:42,647 | INFO | Extracted 17 terms (0 grounded)
+2026-03-09 17:52:42,648 | INFO | Stage 2: Building relations from co-occurrence + classification
+2026-03-09 17:52:42,649 | INFO | Built 24 relations
+2026-03-09 17:52:42,649 | INFO | Stage 3: Building GT paths via graph traversal
+2026-03-09 17:52:42,653 | INFO | Built 20 GT paths
+2026-03-09 17:52:42,658 | INFO | Loaded terminology dictionary: 2686 terms, 50 disciplines
+2026-03-09 17:52:42,658 | INFO | Stage 1: Extracting terms from paper: Leveraging neonatal Fc receptor (FcRn) to enhance antibody t
+2026-03-09 17:52:44,898 | INFO | Extracted 22 terms (1 grounded)
+2026-03-09 17:52:44,898 | INFO | Stage 2: Building relations from co-occurrence + classification
+2026-03-09 17:52:44,899 | INFO | Built 15 relations
+2026-03-09 17:52:44,899 | INFO | Stage 3: Building GT paths via graph traversal
+2026-03-09 17:52:44,902 | INFO | Built 14 GT paths
+2026-03-09 17:52:44,907 | INFO | Loaded terminology dictionary: 2686 terms, 50 disciplines
+2026-03-09 17:52:44,907 | INFO | Stage 1: Extracting terms from paper: Surface darkening by abundant and diverse algae on an Antarc
+2026-03-09 17:52:46,804 | INFO | Extracted 24 terms (0 grounded)
+2026-03-09 17:52:46,804 | INFO | Stage 2: Building relations from co-occurrence + classification
+2026-03-09 17:52:46,806 | INFO | Built 18 relations
+2026-03-09 17:52:46,806 | INFO | Stage 3: Building GT paths via graph traversal
+2026-03-09 17:52:46,809 | INFO | Built 10 GT paths
+2026-03-09 17:52:46,814 | INFO | Loaded terminology dictionary: 2686 terms, 50 disciplines
+2026-03-09 17:52:46,814 | INFO | Stage 1: Extracting terms from paper: Randomized phase I trial outcomes show safe and sustainable 
+2026-03-09 17:52:49,352 | INFO | Extracted 22 terms (2 grounded)
+2026-03-09 17:52:49,352 | INFO | Stage 2: Building relations from co-occurrence + classification
+2026-03-09 17:52:49,355 | INFO | Built 43 relations
+2026-03-09 17:52:49,355 | INFO | Stage 3: Building GT paths via graph traversal
+2026-03-09 17:52:49,365 | INFO | Built 20 GT paths
+2026-03-09 17:52:49,370 | INFO | Loaded terminology dictionary: 2686 terms, 50 disciplines
+2026-03-09 17:52:49,370 | INFO | Stage 1: Extracting terms from paper: Global dissemination of npmA mediated pan-aminoglycoside res
+2026-03-09 17:52:51,773 | INFO | Extracted 19 terms (0 grounded)
+2026-03-09 17:52:51,773 | INFO | Stage 2: Building relations from co-occurrence + classification
+2026-03-09 17:52:51,775 | INFO | Built 14 relations
+2026-03-09 17:52:51,775 | INFO | Stage 3: Building GT paths via graph traversal
+2026-03-09 17:52:51,778 | INFO | Built 20 GT paths
+2026-03-09 17:52:51,783 | INFO | Loaded terminology dictionary: 2686 terms, 50 disciplines
+2026-03-09 17:52:51,784 | INFO | Stage 1: Extracting terms from paper: Observation of a guest-free Si46 clathrate-I framework from 
+2026-03-09 17:52:54,123 | INFO | Extracted 16 terms (0 grounded)
+2026-03-09 17:52:54,123 | INFO | Stage 2: Building relations from co-occurrence + classification
+2026-03-09 17:52:54,125 | INFO | Built 13 relations
+2026-03-09 17:52:54,125 | INFO | Stage 3: Building GT paths via graph traversal
+2026-03-09 17:52:54,126 | INFO | Built 5 GT paths
+2026-03-09 17:52:54,132 | INFO | Loaded terminology dictionary: 2686 terms, 50 disciplines
+2026-03-09 17:52:54,132 | INFO | Stage 1: Extracting terms from paper: FLT1 and other candidate fetal haemoglobin modifying loci in
+2026-03-09 17:52:56,663 | INFO | Extracted 22 terms (0 grounded)
+2026-03-09 17:52:56,663 | INFO | Stage 2: Building relations from co-occurrence + classification
+2026-03-09 17:52:56,667 | INFO | Built 23 relations
+2026-03-09 17:52:56,667 | INFO | Stage 3: Building GT paths via graph traversal
+2026-03-09 17:52:56,670 | INFO | Built 20 GT paths
+2026-03-09 17:52:56,676 | INFO | Loaded terminology dictionary: 2686 terms, 50 disciplines
+2026-03-09 17:52:56,676 | INFO | Stage 1: Extracting terms from paper: Obesity-associated macrophages dictate adipose stem cell fer
+2026-03-09 17:52:58,534 | INFO | Extracted 15 terms (0 grounded)
+2026-03-09 17:52:58,534 | INFO | Stage 2: Building relations from co-occurrence + classification
+2026-03-09 17:52:58,536 | INFO | Built 24 relations
+2026-03-09 17:52:58,536 | INFO | Stage 3: Building GT paths via graph traversal
+2026-03-09 17:52:58,538 | INFO | Built 20 GT paths
+2026-03-09 17:52:58,543 | INFO | Loaded terminology dictionary: 2686 terms, 50 disciplines
+2026-03-09 17:52:58,543 | INFO | Stage 1: Extracting terms from paper: Reversible biobased adhesives enable closed-loop engineered 
+2026-03-09 17:53:00,784 | INFO | Extracted 16 terms (1 grounded)
+2026-03-09 17:53:00,784 | INFO | Stage 2: Building relations from co-occurrence + classification
+2026-03-09 17:53:00,785 | INFO | Built 4 relations
+2026-03-09 17:53:00,785 | INFO | Stage 3: Building GT paths via graph traversal
+2026-03-09 17:53:00,786 | INFO | Built 1 GT paths
+2026-03-09 17:53:00,791 | INFO | Loaded terminology dictionary: 2686 terms, 50 disciplines
+2026-03-09 17:53:00,791 | INFO | Stage 1: Extracting terms from paper: Functionally deficient UBOX5 variants and primary angle-clos
+2026-03-09 17:53:02,657 | INFO | Extracted 18 terms (2 grounded)
+2026-03-09 17:53:02,657 | INFO | Stage 2: Building relations from co-occurrence + classification
+2026-03-09 17:53:02,659 | INFO | Built 16 relations
+2026-03-09 17:53:02,659 | INFO | Stage 3: Building GT paths via graph traversal
+2026-03-09 17:53:02,662 | INFO | Built 13 GT paths
+2026-03-09 17:53:02,667 | INFO | Loaded terminology dictionary: 2686 terms, 50 disciplines
+2026-03-09 17:53:02,667 | INFO | Stage 1: Extracting terms from paper: Langmuir-Schaefer deposition of 2D PbS quantum dot superlatt
+2026-03-09 17:53:04,229 | INFO | Extracted 16 terms (0 grounded)
+2026-03-09 17:53:04,229 | INFO | Stage 2: Building relations from co-occurrence + classification
+2026-03-09 17:53:04,231 | INFO | Built 20 relations
+2026-03-09 17:53:04,231 | INFO | Stage 3: Building GT paths via graph traversal
+2026-03-09 17:53:04,233 | INFO | Built 20 GT paths
+2026-03-09 17:53:04,239 | INFO | Loaded terminology dictionary: 2686 terms, 50 disciplines
+2026-03-09 17:53:04,239 | INFO | Stage 1: Extracting terms from paper: Electroreductive amination of carboxylic acids by cobalt cat
+2026-03-09 17:53:05,980 | INFO | Extracted 15 terms (1 grounded)
+2026-03-09 17:53:05,981 | INFO | Stage 2: Building relations from co-occurrence + classification
+2026-03-09 17:53:05,982 | INFO | Built 4 relations
+2026-03-09 17:53:05,982 | INFO | Stage 3: Building GT paths via graph traversal
+2026-03-09 17:53:05,982 | INFO | Built 1 GT paths
+2026-03-09 17:53:05,988 | INFO | Loaded terminology dictionary: 2686 terms, 50 disciplines
+2026-03-09 17:53:05,988 | INFO | Stage 1: Extracting terms from paper: Precision aerosol-jet micropatterning of liquid metal for hi
+2026-03-09 17:53:08,140 | INFO | Extracted 22 terms (0 grounded)
+2026-03-09 17:53:08,140 | INFO | Stage 2: Building relations from co-occurrence + classification
+2026-03-09 17:53:08,142 | INFO | Built 31 relations
+2026-03-09 17:53:08,142 | INFO | Stage 3: Building GT paths via graph traversal
+2026-03-09 17:53:08,149 | INFO | Built 20 GT paths
+2026-03-09 17:53:08,154 | INFO | Loaded terminology dictionary: 2686 terms, 50 disciplines
+2026-03-09 17:53:08,154 | INFO | Stage 1: Extracting terms from paper: In vivo mechano-tissue engineering by hydrogels capable of t
+2026-03-09 17:53:09,922 | INFO | Extracted 22 terms (1 grounded)
+2026-03-09 17:53:09,923 | INFO | Stage 2: Building relations from co-occurrence + classification
+2026-03-09 17:53:09,925 | INFO | Built 14 relations
+2026-03-09 17:53:09,925 | INFO | Stage 3: Building GT paths via graph traversal
+2026-03-09 17:53:09,928 | INFO | Built 20 GT paths
+2026-03-09 17:53:09,933 | INFO | Loaded terminology dictionary: 2686 terms, 50 disciplines
+2026-03-09 17:53:09,933 | INFO | Stage 1: Extracting terms from paper: One Health approach uncovers emergence and dynamics of Usutu
+2026-03-09 17:53:11,500 | INFO | Extracted 21 terms (0 grounded)
+2026-03-09 17:53:11,501 | INFO | Stage 2: Building relations from co-occurrence + classification
+2026-03-09 17:53:11,502 | INFO | Built 5 relations
+2026-03-09 17:53:11,502 | INFO | Stage 3: Building GT paths via graph traversal
+2026-03-09 17:53:11,504 | INFO | Built 2 GT paths
+2026-03-09 17:53:11,510 | INFO | Loaded terminology dictionary: 2686 terms, 50 disciplines
+2026-03-09 17:53:11,510 | INFO | Stage 1: Extracting terms from paper: Health risks and genetic architecture of objectively measure
+2026-03-09 17:53:13,405 | INFO | Extracted 25 terms (0 grounded)
+2026-03-09 17:53:13,405 | INFO | Stage 2: Building relations from co-occurrence + classification
+2026-03-09 17:53:13,407 | INFO | Built 13 relations
+2026-03-09 17:53:13,407 | INFO | Stage 3: Building GT paths via graph traversal
+2026-03-09 17:53:13,410 | INFO | Built 20 GT paths
+2026-03-09 17:53:13,416 | INFO | Loaded terminology dictionary: 2686 terms, 50 disciplines
+2026-03-09 17:53:13,416 | INFO | Stage 1: Extracting terms from paper: Proteomic signature of HIV-associated subclinical left atria
+2026-03-09 17:53:15,788 | INFO | Extracted 18 terms (0 grounded)
+2026-03-09 17:53:15,788 | INFO | Stage 2: Building relations from co-occurrence + classification
+2026-03-09 17:53:15,790 | INFO | Built 23 relations
+2026-03-09 17:53:15,791 | INFO | Stage 3: Building GT paths via graph traversal
+2026-03-09 17:53:15,796 | INFO | Built 20 GT paths
+2026-03-09 17:53:15,802 | INFO | Loaded terminology dictionary: 2686 terms, 50 disciplines
+2026-03-09 17:53:15,802 | INFO | Stage 1: Extracting terms from paper: Enhancing prosthetic vision by upgrade of a subretinal photo
+2026-03-09 17:53:17,701 | INFO | Extracted 25 terms (0 grounded)
+2026-03-09 17:53:17,701 | INFO | Stage 2: Building relations from co-occurrence + classification
+2026-03-09 17:53:17,703 | INFO | Built 11 relations
+2026-03-09 17:53:17,703 | INFO | Stage 3: Building GT paths via graph traversal
+2026-03-09 17:53:17,706 | INFO | Built 3 GT paths
+2026-03-09 17:53:17,712 | INFO | Loaded terminology dictionary: 2686 terms, 50 disciplines
+2026-03-09 17:53:17,712 | INFO | Stage 1: Extracting terms from paper: European and African ancestry-specific plasma protein-QTL an
+2026-03-09 17:53:19,711 | INFO | Extracted 22 terms (1 grounded)
+2026-03-09 17:53:19,711 | INFO | Stage 2: Building relations from co-occurrence + classification
+2026-03-09 17:53:19,716 | INFO | Built 60 relations
+2026-03-09 17:53:19,716 | INFO | Stage 3: Building GT paths via graph traversal
+2026-03-09 17:53:19,733 | INFO | Built 20 GT paths
+2026-03-09 17:53:19,739 | INFO | Loaded terminology dictionary: 2686 terms, 50 disciplines
+2026-03-09 17:53:19,739 | INFO | Stage 1: Extracting terms from paper: Reconfigurable non-Abelian integrated photonics
+2026-03-09 17:53:21,441 | INFO | Extracted 18 terms (0 grounded)
+2026-03-09 17:53:21,441 | INFO | Stage 2: Building relations from co-occurrence + classification
+2026-03-09 17:53:21,443 | INFO | Built 18 relations
+2026-03-09 17:53:21,443 | INFO | Stage 3: Building GT paths via graph traversal
+2026-03-09 17:53:21,445 | INFO | Built 13 GT paths
+2026-03-09 17:53:21,451 | INFO | Loaded terminology dictionary: 2686 terms, 50 disciplines
+2026-03-09 17:53:21,451 | INFO | Stage 1: Extracting terms from paper: Tiantan vaccinia virus-based vaccine with promising safety p
+2026-03-09 17:53:23,161 | INFO | Extracted 21 terms (2 grounded)
+2026-03-09 17:53:23,161 | INFO | Stage 2: Building relations from co-occurrence + classification
+2026-03-09 17:53:23,166 | INFO | Built 46 relations
+2026-03-09 17:53:23,166 | INFO | Stage 3: Building GT paths via graph traversal
+2026-03-09 17:53:23,177 | INFO | Built 20 GT paths
+2026-03-09 17:53:23,182 | INFO | Loaded terminology dictionary: 2686 terms, 50 disciplines
+2026-03-09 17:53:23,182 | INFO | Stage 1: Extracting terms from paper: Single-cell analysis reveals immune cell abnormalities under
+2026-03-09 17:53:26,134 | INFO | Extracted 28 terms (0 grounded)
+2026-03-09 17:53:26,134 | INFO | Stage 2: Building relations from co-occurrence + classification
+2026-03-09 17:53:26,137 | INFO | Built 23 relations
+2026-03-09 17:53:26,137 | INFO | Stage 3: Building GT paths via graph traversal
+2026-03-09 17:53:26,143 | INFO | Built 20 GT paths
+2026-03-09 17:53:26,149 | INFO | Loaded terminology dictionary: 2686 terms, 50 disciplines
+2026-03-09 17:53:26,149 | INFO | Stage 1: Extracting terms from paper: Dual-mode narrowband organic photodetectors for self-aligned
+2026-03-09 17:53:28,515 | INFO | Extracted 20 terms (1 grounded)
+2026-03-09 17:53:28,515 | INFO | Stage 2: Building relations from co-occurrence + classification
+2026-03-09 17:53:28,517 | INFO | Built 17 relations
+2026-03-09 17:53:28,517 | INFO | Stage 3: Building GT paths via graph traversal
+2026-03-09 17:53:28,520 | INFO | Built 17 GT paths
+2026-03-09 17:53:28,525 | INFO | Loaded terminology dictionary: 2686 terms, 50 disciplines
+2026-03-09 17:53:28,525 | INFO | Stage 1: Extracting terms from paper: Long-range moiré tuning effect via inter-layer drag interact
+2026-03-09 17:53:29,986 | INFO | Extracted 16 terms (0 grounded)
+2026-03-09 17:53:29,986 | INFO | Stage 2: Building relations from co-occurrence + classification
+2026-03-09 17:53:29,988 | INFO | Built 21 relations
+2026-03-09 17:53:29,988 | INFO | Stage 3: Building GT paths via graph traversal
+2026-03-09 17:53:29,990 | INFO | Built 20 GT paths
+2026-03-09 17:53:30,006 | INFO | Loaded terminology dictionary: 2686 terms, 50 disciplines
+2026-03-09 17:53:30,006 | INFO | Stage 1: Extracting terms from paper: Plasmodium falciparum egress disrupts endothelial junctions 
+2026-03-09 17:53:32,141 | INFO | Extracted 18 terms (0 grounded)
+2026-03-09 17:53:32,141 | INFO | Stage 2: Building relations from co-occurrence + classification
+2026-03-09 17:53:32,143 | INFO | Built 16 relations
+2026-03-09 17:53:32,143 | INFO | Stage 3: Building GT paths via graph traversal
+2026-03-09 17:53:32,145 | INFO | Built 13 GT paths
+2026-03-09 17:53:32,150 | INFO | Loaded terminology dictionary: 2686 terms, 50 disciplines
+2026-03-09 17:53:32,150 | INFO | Stage 1: Extracting terms from paper: The role of viral interaction in household transmission of s
+2026-03-09 17:53:33,566 | INFO | Extracted 23 terms (0 grounded)
+2026-03-09 17:53:33,566 | INFO | Stage 2: Building relations from co-occurrence + classification
+2026-03-09 17:53:33,569 | INFO | Built 25 relations
+2026-03-09 17:53:33,569 | INFO | Stage 3: Building GT paths via graph traversal
+2026-03-09 17:53:33,576 | INFO | Built 20 GT paths
+2026-03-09 17:53:33,581 | INFO | Loaded terminology dictionary: 2686 terms, 50 disciplines
+2026-03-09 17:53:33,581 | INFO | Stage 1: Extracting terms from paper: Role of the real first interface in regulating ionic signal 
+2026-03-09 17:53:34,997 | INFO | Extracted 20 terms (0 grounded)
+2026-03-09 17:53:34,997 | INFO | Stage 2: Building relations from co-occurrence + classification
+2026-03-09 17:53:34,999 | INFO | Built 25 relations
+2026-03-09 17:53:35,000 | INFO | Stage 3: Building GT paths via graph traversal
+2026-03-09 17:53:35,003 | INFO | Built 20 GT paths
+2026-03-09 17:53:35,009 | INFO | Loaded terminology dictionary: 2686 terms, 50 disciplines
+2026-03-09 17:53:35,009 | INFO | Stage 1: Extracting terms from paper: Complement-mediated enhancement of SARS-CoV-2 antibody neutr
+2026-03-09 17:53:37,320 | INFO | Extracted 17 terms (0 grounded)
+2026-03-09 17:53:37,321 | INFO | Stage 2: Building relations from co-occurrence + classification
+2026-03-09 17:53:37,322 | INFO | Built 7 relations
+2026-03-09 17:53:37,322 | INFO | Stage 3: Building GT paths via graph traversal
+2026-03-09 17:53:37,323 | INFO | Built 5 GT paths
+2026-03-09 17:53:37,329 | INFO | Loaded terminology dictionary: 2686 terms, 50 disciplines
+2026-03-09 17:53:37,329 | INFO | Stage 1: Extracting terms from paper: Shared pathway-specific network mechanisms of dopamine and d
+2026-03-09 17:53:39,533 | INFO | Extracted 20 terms (0 grounded)
+2026-03-09 17:53:39,533 | INFO | Stage 2: Building relations from co-occurrence + classification
+2026-03-09 17:53:39,535 | INFO | Built 11 relations
+2026-03-09 17:53:39,535 | INFO | Stage 3: Building GT paths via graph traversal
+2026-03-09 17:53:39,537 | INFO | Built 15 GT paths
+2026-03-09 17:53:39,542 | INFO | Loaded terminology dictionary: 2686 terms, 50 disciplines
+2026-03-09 17:53:39,542 | INFO | Stage 1: Extracting terms from paper: EXO1 as a therapeutic target for Fanconi Anaemia, ZRSR2 and 
+2026-03-09 17:53:41,861 | INFO | Extracted 21 terms (0 grounded)
+2026-03-09 17:53:41,861 | INFO | Stage 2: Building relations from co-occurrence + classification
+2026-03-09 17:53:41,864 | INFO | Built 43 relations
+2026-03-09 17:53:41,864 | INFO | Stage 3: Building GT paths via graph traversal
+2026-03-09 17:53:41,872 | INFO | Built 20 GT paths
+2026-03-09 17:53:41,877 | INFO | Loaded terminology dictionary: 2686 terms, 50 disciplines
+2026-03-09 17:53:41,877 | INFO | Stage 1: Extracting terms from paper: Brightening self-trapped exciton emission in 2D metal-organi
+2026-03-09 17:53:43,606 | INFO | Extracted 16 terms (1 grounded)
+2026-03-09 17:53:43,606 | INFO | Stage 2: Building relations from co-occurrence + classification
+2026-03-09 17:53:43,608 | INFO | Built 15 relations
+2026-03-09 17:53:43,608 | INFO | Stage 3: Building GT paths via graph traversal
+2026-03-09 17:53:43,609 | INFO | Built 18 GT paths
+2026-03-09 17:53:43,615 | INFO | Loaded terminology dictionary: 2686 terms, 50 disciplines
+2026-03-09 17:53:43,615 | INFO | Stage 1: Extracting terms from paper: Association of distinct microbial and metabolic signatures w
+2026-03-09 17:53:45,857 | INFO | Extracted 31 terms (0 grounded)
+2026-03-09 17:53:45,857 | INFO | Stage 2: Building relations from co-occurrence + classification
+2026-03-09 17:53:45,862 | INFO | Built 51 relations
+2026-03-09 17:53:45,862 | INFO | Stage 3: Building GT paths via graph traversal
+2026-03-09 17:53:45,877 | INFO | Built 20 GT paths
+2026-03-09 17:53:45,883 | INFO | Loaded terminology dictionary: 2686 terms, 50 disciplines
+2026-03-09 17:53:45,883 | INFO | Stage 1: Extracting terms from paper: Lipidic folding pathway of α-Synuclein via a toxic oligomer
+2026-03-09 17:53:48,511 | INFO | Extracted 30 terms (0 grounded)
+2026-03-09 17:53:48,511 | INFO | Stage 2: Building relations from co-occurrence + classification
+2026-03-09 17:53:48,515 | INFO | Built 37 relations
+2026-03-09 17:53:48,515 | INFO | Stage 3: Building GT paths via graph traversal
+2026-03-09 17:53:48,526 | INFO | Built 20 GT paths
+2026-03-09 17:53:48,531 | INFO | Loaded terminology dictionary: 2686 terms, 50 disciplines
+2026-03-09 17:53:48,531 | INFO | Stage 1: Extracting terms from paper: Spin logic enabled by current vector adder
+2026-03-09 17:53:49,998 | INFO | Extracted 18 terms (1 grounded)
+2026-03-09 17:53:49,998 | INFO | Stage 2: Building relations from co-occurrence + classification
+2026-03-09 17:53:50,002 | INFO | Built 52 relations
+2026-03-09 17:53:50,002 | INFO | Stage 3: Building GT paths via graph traversal
+2026-03-09 17:53:50,014 | INFO | Built 20 GT paths
+2026-03-09 17:53:50,019 | INFO | Loaded terminology dictionary: 2686 terms, 50 disciplines
+2026-03-09 17:53:50,019 | INFO | Stage 1: Extracting terms from paper: Apparent charge reduction in multipolarons crafted one-by-on
+2026-03-09 17:53:51,340 | INFO | Extracted 15 terms (0 grounded)
+2026-03-09 17:53:51,340 | INFO | Stage 2: Building relations from co-occurrence + classification
+2026-03-09 17:53:51,342 | INFO | Built 26 relations
+2026-03-09 17:53:51,342 | INFO | Stage 3: Building GT paths via graph traversal
+2026-03-09 17:53:51,344 | INFO | Built 20 GT paths
+2026-03-09 17:53:51,350 | INFO | Loaded terminology dictionary: 2686 terms, 50 disciplines
+2026-03-09 17:53:51,350 | INFO | Stage 1: Extracting terms from paper: Flexible metal-organic framework films for reversible low-pr
+2026-03-09 17:53:53,480 | INFO | Extracted 17 terms (1 grounded)
+2026-03-09 17:53:53,480 | INFO | Stage 2: Building relations from co-occurrence + classification
+2026-03-09 17:53:53,483 | INFO | Built 31 relations
+2026-03-09 17:53:53,483 | INFO | Stage 3: Building GT paths via graph traversal
+2026-03-09 17:53:53,487 | INFO | Built 19 GT paths
+2026-03-09 17:53:53,492 | INFO | Loaded terminology dictionary: 2686 terms, 50 disciplines
+2026-03-09 17:53:53,492 | INFO | Stage 1: Extracting terms from paper: Large-scale serum protein biomarkers discovery associated wi
+2026-03-09 17:53:55,400 | INFO | Extracted 27 terms (0 grounded)
+2026-03-09 17:53:55,400 | INFO | Stage 2: Building relations from co-occurrence + classification
+2026-03-09 17:53:55,402 | INFO | Built 27 relations
+2026-03-09 17:53:55,402 | INFO | Stage 3: Building GT paths via graph traversal
+2026-03-09 17:53:55,409 | INFO | Built 20 GT paths
+2026-03-09 17:53:55,414 | INFO | Loaded terminology dictionary: 2686 terms, 50 disciplines
+2026-03-09 17:53:55,414 | INFO | Stage 1: Extracting terms from paper: Doping with phosphorus reduces anion vacancy disorder in CdS
+2026-03-09 17:53:57,202 | INFO | Extracted 23 terms (0 grounded)
+2026-03-09 17:53:57,202 | INFO | Stage 2: Building relations from co-occurrence + classification
+2026-03-09 17:53:57,206 | INFO | Built 54 relations
+2026-03-09 17:53:57,206 | INFO | Stage 3: Building GT paths via graph traversal
+2026-03-09 17:53:57,219 | INFO | Built 20 GT paths
+2026-03-09 17:53:57,225 | INFO | Loaded terminology dictionary: 2686 terms, 50 disciplines
+2026-03-09 17:53:57,225 | INFO | Stage 1: Extracting terms from paper: Inhibition of polymorphonuclear cells averts cytotoxicity ag
+2026-03-09 17:53:59,769 | INFO | Extracted 22 terms (0 grounded)
+2026-03-09 17:53:59,769 | INFO | Stage 2: Building relations from co-occurrence + classification
+2026-03-09 17:53:59,772 | INFO | Built 30 relations
+2026-03-09 17:53:59,772 | INFO | Stage 3: Building GT paths via graph traversal
+2026-03-09 17:53:59,777 | INFO | Built 20 GT paths
+2026-03-09 17:53:59,782 | INFO | Loaded terminology dictionary: 2686 terms, 50 disciplines
+2026-03-09 17:53:59,782 | INFO | Stage 1: Extracting terms from paper: Time-resolved chemically-selective spectroscopic investigati
+2026-03-09 17:54:01,857 | INFO | Extracted 19 terms (0 grounded)
+2026-03-09 17:54:01,857 | INFO | Stage 2: Building relations from co-occurrence + classification
+2026-03-09 17:54:01,859 | INFO | Built 14 relations
+2026-03-09 17:54:01,859 | INFO | Stage 3: Building GT paths via graph traversal
+2026-03-09 17:54:01,861 | INFO | Built 20 GT paths
+2026-03-09 17:54:01,866 | INFO | Loaded terminology dictionary: 2686 terms, 50 disciplines
+2026-03-09 17:54:01,866 | INFO | Stage 1: Extracting terms from paper: Programmable epigenome editing by transient delivery of CRIS
+2026-03-09 17:54:04,654 | INFO | Extracted 25 terms (1 grounded)
+2026-03-09 17:54:04,654 | INFO | Stage 2: Building relations from co-occurrence + classification
+2026-03-09 17:54:04,659 | INFO | Built 58 relations
+2026-03-09 17:54:04,659 | INFO | Stage 3: Building GT paths via graph traversal
+2026-03-09 17:54:04,675 | INFO | Built 20 GT paths
+2026-03-09 17:54:04,681 | INFO | Loaded terminology dictionary: 2686 terms, 50 disciplines
+2026-03-09 17:54:04,681 | INFO | Stage 1: Extracting terms from paper: ACSS2 mediates an epigenetic pathway to regulate β-cell adap
+2026-03-09 17:54:07,132 | INFO | Extracted 26 terms (0 grounded)
+2026-03-09 17:54:07,132 | INFO | Stage 2: Building relations from co-occurrence + classification
+2026-03-09 17:54:07,136 | INFO | Built 56 relations
+2026-03-09 17:54:07,136 | INFO | Stage 3: Building GT paths via graph traversal
+2026-03-09 17:54:07,152 | INFO | Built 20 GT paths
+2026-03-09 17:54:07,157 | INFO | Loaded terminology dictionary: 2686 terms, 50 disciplines
+2026-03-09 17:54:07,157 | INFO | Stage 1: Extracting terms from paper: Polygenic architecture of brain structure and function, beha
+2026-03-09 17:54:09,611 | INFO | Extracted 34 terms (2 grounded)
+2026-03-09 17:54:09,611 | INFO | Stage 2: Building relations from co-occurrence + classification
+2026-03-09 17:54:09,614 | INFO | Built 36 relations
+2026-03-09 17:54:09,614 | INFO | Stage 3: Building GT paths via graph traversal
+2026-03-09 17:54:09,627 | INFO | Built 20 GT paths
+2026-03-09 17:54:09,633 | INFO | Loaded terminology dictionary: 2686 terms, 50 disciplines
+2026-03-09 17:54:09,633 | INFO | Stage 1: Extracting terms from paper: Development of small molecule non-covalent coronavirus 3CL p
+2026-03-09 17:54:11,381 | INFO | Extracted 14 terms (0 grounded)
+2026-03-09 17:54:11,381 | INFO | Stage 2: Building relations from co-occurrence + classification
+2026-03-09 17:54:11,383 | INFO | Built 23 relations
+2026-03-09 17:54:11,383 | INFO | Stage 3: Building GT paths via graph traversal
+2026-03-09 17:54:11,386 | INFO | Built 20 GT paths
+2026-03-09 17:54:11,391 | INFO | Loaded terminology dictionary: 2686 terms, 50 disciplines
+2026-03-09 17:54:11,391 | INFO | Stage 1: Extracting terms from paper: AAV9-mediated MYBPC3 gene therapy with optimized expression 
+2026-03-09 17:54:14,766 | INFO | Extracted 22 terms (1 grounded)
+2026-03-09 17:54:14,766 | INFO | Stage 2: Building relations from co-occurrence + classification
+2026-03-09 17:54:14,767 | INFO | Built 28 relations
+2026-03-09 17:54:14,767 | INFO | Stage 3: Building GT paths via graph traversal
+2026-03-09 17:54:14,772 | INFO | Built 20 GT paths
+2026-03-09 17:54:14,777 | INFO | Loaded terminology dictionary: 2686 terms, 50 disciplines
+2026-03-09 17:54:14,777 | INFO | Stage 1: Extracting terms from paper: Fate mapping of peripherally-derived macrophages after traum
+2026-03-09 17:54:16,781 | INFO | Extracted 22 terms (0 grounded)
+2026-03-09 17:54:16,781 | INFO | Stage 2: Building relations from co-occurrence + classification
+2026-03-09 17:54:16,783 | INFO | Built 17 relations
+2026-03-09 17:54:16,783 | INFO | Stage 3: Building GT paths via graph traversal
+2026-03-09 17:54:16,786 | INFO | Built 19 GT paths
+Loading data from outputs/full_pipeline_run/gt_extraction.json...
+Found 89 valid items.
+GT construction mode: evidence
+Converted 89 items to benchmark format.
+Saved benchmark dataset to outputs/full_pipeline_run/benchmark_dataset.json
+
+=== Evidence-Grounded GT Summary ===
+  Total terms: 1819 (28 grounded to dictionary)
+  Total relations: 2197
+  Total paths: 1365
+[1;33m[INFO] Benchmark 数据集已构建: outputs/full_pipeline_run/benchmark_dataset.json[0m
+
+[0;34m═══════════════════════════════════════════════════════════[0m
+[0;32m[STEP] Step 5: 运行评测 (Evaluate)[0m
+[0;34m═══════════════════════════════════════════════════════════[0m
+
+[1;33m[INFO] Benchmark (GT): outputs/full_pipeline_run/benchmark_dataset.json[0m
+[1;33m[INFO] Predictions (测试集): outputs/full_pipeline_run/test_extraction.json[0m
+2026-03-09 17:54:17,422 | INFO | 正在加载 Benchmark 数据集构建知识图谱: outputs/full_pipeline_run/benchmark_dataset.json
+2026-03-09 17:54:17,479 | INFO | KG 构建完成。共索引 0 条路径，覆盖 0 个学科。
+Evaluating:   0%|          | 0/3 [00:00<?, ?it/s]2026-03-09 17:54:17,489 | WARNING | ID c7ad65ce9af2: 未找到任何相关 GT 路径 (学科: 材料科学)
+2026-03-09 17:54:17,489 | WARNING | ID 360630035da3: 未找到任何相关 GT 路径 (学科: 生物学)
+2026-03-09 17:54:17,489 | WARNING | ID e07fb8ec341d: 未找到任何相关 GT 路径 (学科: 临床医学)
+Evaluating: 100%|██████████| 3/3 [00:00<00:00, 17848.10it/s]
+
+=== Evaluation Summary (v2) ===
+
+Detailed results saved to outputs/full_pipeline_run/eval_results.json
+[1;33m[INFO] 评测完成！结果: outputs/full_pipeline_run/eval_results.json[0m
+
+[0;34m═══════════════════════════════════════════════════════════[0m
+[0;32m[STEP] 全套流程完成！输出文件汇总[0m
+[0;34m═══════════════════════════════════════════════════════════[0m
+
+  📂 [0;32moutputs/full_pipeline_run/[0m
+  ├── extraction_results.jsonl   — 全部论文的抽取结果 (JSONL, 断点续传用)
+  ├── extraction_results.json    — 全部论文的抽取结果 (JSON)
+  ├── gt_extraction.json         — GT集论文的抽取结果 (前N-3篇)
+  ├── test_extraction.json       — 测试集论文的抽取结果 (后3篇)
+  ├── benchmark_dataset.json     — Evidence-Grounded Benchmark 数据集
+  └── eval_results.json          — 最终评测结果
+
+[1;33m[INFO] 评测结果预览:[0m
+评测论文数: 0
+
+[0;32m全套流程运行完毕！[0m

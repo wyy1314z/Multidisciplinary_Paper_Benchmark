@@ -296,9 +296,16 @@ def fetch_pdf_and_extract_intro(url: str, timeout: int = 40, max_chars: int = 60
     if not url or not isinstance(url, str):
         return None
 
+    # Nature 系列期刊：DOI → 直接 PDF 链接
     if "doi.org" in url:
-        logger.warning(f"检测到 DOI 链接（通常不是直接 PDF）：{url}，跳过 PDF 解析")
-        return None
+        m = re.search(r"doi\.org/10\.1038/(.+)$", url)
+        if m:
+            article_id = m.group(1)
+            url = f"https://www.nature.com/articles/{article_id}.pdf"
+            logger.info(f"Nature DOI 转换为直接 PDF 链接：{url}")
+        else:
+            logger.warning(f"检测到非 Nature DOI 链接（无法转换）：{url}，跳过 PDF 解析")
+            return None
 
     try:
         logger.info(f"下载 PDF：{url}")

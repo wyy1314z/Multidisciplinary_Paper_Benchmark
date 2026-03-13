@@ -1,0 +1,23 @@
+{
+  "c5641167db43": {
+    "paper_id": "c5641167db43",
+    "title": "Tailoring industrial enzymes for thermostability and activity evolution by the machine learning-based iCASE strategy",
+    "abstract": "The pursuit of obtaining enzymes with high activity and stability remains a grail in enzyme evolution due to the stability-activity trade-off. Here, we develop an isothermal compressibility-assisted dynamic squeezing index perturbation engineering (iCASE) strategy to construct hierarchical modular networks for enzymes of varying complexity. Molecular mechanism analysis elucidates that the peak of adaptive evolution is reached through a structural response mechanism among variants. Furthermore, this dynamic response predictive model using structure-based supervised machine learning is established to predict enzyme function and fitness, demonstrating robust performance across different datasets and reliable prediction for epistasis. The universality of the iCASE strategy is validated by four sorts of enzymes with different structures and catalytic types. This machine learning-based iCASE strategy provides guidance for future research on the fitness evolution of enzymes.",
+    "primary_discipline": "生物学",
+    "secondary_disciplines": []
+  },
+  "162ce198405e": {
+    "paper_id": "162ce198405e",
+    "title": "Allogeneic CD33-directed CAR-NKT cells for the treatment of bone marrow-resident myeloid malignancies",
+    "abstract": "Abstract Chimeric antigen receptor (CAR)-engineered T cell therapy holds promise for treating myeloid malignancies, but challenges remain in bone marrow (BM) infiltration and targeting BM-resident malignant cells. Current autologous CAR-T therapies also face manufacturing and patient selection issues, underscoring the need for off-the-shelf products. In this study, we characterize primary patient samples and identify a unique therapeutic opportunity for CAR-engineered invariant natural killer T (CAR-NKT) cells. Using stem cell gene engineering and a clinically guided culture method, we generate allogeneic CD33-directed CAR-NKT cells with high yield, purity, and robustness. In preclinical mouse models, CAR-NKT cells exhibit strong BM homing and effectively target BM-resident malignant blast cells, including CD33-low/negative leukemia stem and progenitor cells. Furthermore, CAR-NKT cells synergize with hypomethylating agents, enhancing tumor-killing efficacy. These cells also show minimal off-tumor toxicity, reduced graft-versus-host disease and cytokine release syndrome risks, and resistance to allorejection, highlighting their substantial therapeutic potential for treating myeloid malignancies.",
+    "primary_discipline": "生物学",
+    "secondary_disciplines": []
+  },
+  "ba896cd30ccf": {
+    "paper_id": "ba896cd30ccf",
+    "title": "A standalone bismuth vanadate-silicon artificial leaf achieving 8.4% efficiency for hydrogen production",
+    "abstract": "Abstract The development of scalable photoelectrochemical water splitting with high solar-to-hydrogen efficiency and long-term stability is essential while challenging for practical application. Here, we design a BiVO 4 photoanode with gradient distributed oxygen vacancies, which induces strong dipole fields to promote charge separation. Growing sea-urchin-like FeOOH cocatalyst on the photoanode leads to a photocurrent density of 7.0 mA cm −2 at 1.23 V versus the reversible hydrogen electrode and is stable for over 520 h under AM 1.5 G illumination. By integrating with a silicon photovoltaic cell, the standalone artificial leaf achieves a solar-to-hydrogen efficiency of 8.4%. The scale-up of these artificial leaves up to 441 cm 2 in size can deliver a solar-to-hydrogen efficiency of 2.7% under natural sunlight. Life cycle assessment analysis shows that solar water splitting has little environmental footprint for hydrogen production. Our study demonstrates the possibility of designing metal oxide-based artificial leaves for scalable solar hydrogen production.",
+    "primary_discipline": "化学",
+    "secondary_disciplines": []
+  }
+}

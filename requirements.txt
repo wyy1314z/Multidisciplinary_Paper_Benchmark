@@ -1,0 +1,32 @@
+# ── 核心依赖 ──────────────────────────────────────────────────
+openai>=1.0.0
+pydantic>=2.0.0
+tenacity>=8.0.0
+tqdm>=4.60.0
+networkx>=3.0
+
+# ── 数据处理 ──────────────────────────────────────────────────
+numpy>=1.24.0
+pandas>=2.0.0
+scipy>=1.10.0        # 用于 Spearman/Kendall 相关性计算（评测模块）
+
+# ── 配置文件解析 ───────────────────────────────────────────────
+pyyaml>=6.0          # experiment_v1.yaml 配置加载
+
+# ── 学科分类器依赖 ───────────────────────────────────────────
+langchain-openai>=0.2.3
+langchain-core>=0.3.5
+typing-extensions>=4.12
+requests>=2.25
+beautifulsoup4>=4.9
+pdfplumber>=0.7
+
+# ── 评测 & 指标（可选）────────────────────────────────────────
+# sentence-transformers>=2.2.0  # 可选：语义桥接分数 SBERT 版本
+#   安装命令: pip install sentence-transformers
+#   若未安装，evaluate_benchmark.py 自动降级为 difflib 版本
+
+# ── 测试 ───────────────────────────────────────────────────────
+pytest>=7.0.0
+pytest-cov>=4.0.0   # 覆盖率报告: pytest --cov=crossdisc_extractor tests/
+pytest-asyncio>=0.21

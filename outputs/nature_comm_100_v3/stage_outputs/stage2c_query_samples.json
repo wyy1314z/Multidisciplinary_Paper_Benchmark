@@ -1,0 +1,44 @@
+[
+  {
+    "title": "Nano-island-encapsulated cobalt single-atom catalysts for breaking activity-stability trade-off in Fenton-like reactions",
+    "查询": {
+      "一级": "如何设计高效稳定的单原子催化剂以突破类芬顿催化中的活性-稳定性权衡问题",
+      "二级": [
+        "结合氧化锌纳米材料的结构特性，如何优化单原子催化剂的载体设计",
+        "针对难降解污染物处理需求，如何评估催化剂的降解效率与环境适应性"
+      ],
+      "三级": [
+        "通过氧化锌纳米颗粒与基底材料的协同作用构建'岛海效应'，如何验证该结构对单钴原子稳定性和催化活性的双重提升机制",
+        "在多轮处理周期和复杂水体基质中，如何建立催化剂性能与污染物降解效率的跨学科评价体系"
+      ]
+    }
+  },
+  {
+    "title": "High-entropy alloy enables multi-path electron synergism and lattice oxygen activation for enhanced oxygen evolution activity",
+    "查询": {
+      "一级": "如何提升电催化氧析出反应的活性与效率？",
+      "二级": [
+        "如何结合高熵合金材料特性与晶格氧活化机制提升催化活性？",
+        "如何通过化学键分析验证催化剂表面反应机制？"
+      ],
+      "三级": [
+        "高熵合金的多组分协同如何通过材料科学设计降低过电位，并结合拉曼光谱化学表征验证镍钴双位点的活化机制？",
+        "四甲基氢氧化铵电解质环境下的化学键变化分析如何与高熵结构特性协同优化μ-过氧中间体形成路径？"
+      ]
+    }
+  },
+  {
+    "title": "MXene-Assisted NiFe sulfides for high-performance anion exchange membrane seawater electrolysis",
+    "查询": {
+      "一级": "如何提升阴离子交换膜海水电解系统的性能与稳定性",
+      "二级": [
+        "如何利用新型复合材料提升阴离子交换膜海水电解系统的催化效率",
+        "如何通过优化电极结构设计提高海水电解的长期稳定性"
+      ],
+      "三级": [
+        "如何通过与硫化物复合材料的协同作用优化晶格氧机制，从而提升氧析出反应的电催化活性",
+        "如何结合气体扩散层孔径设计与阴离子交换膜选择，构建高效耐腐蚀的海水电解系统工作流"
+      ]
+    }
+  }
+]

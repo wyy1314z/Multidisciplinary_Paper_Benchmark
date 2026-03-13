@@ -1,0 +1,3200 @@
+[
+  {
+    "title": "Rapid sintering of high-efficiency phosphor-in-glass films for laser-driven light source",
+    "abstract": "The development of advanced high-power-density laser-driven light source requires durable and color-tunable inorganic phosphor-in-glass film composites as color converter. One challenge remains for the phosphor-in-glass film is the thermal erosion and degradation of phosphor, as harsh condition or long duration time is required to densify the film for conventional sintering. Here we develop a rapid thermal annealing technique that achieves high film densification (porosity < 3%) within seconds utilizing high-power (>10 kW) infrared irradiation. As demonstrated by high-resolution electron microscopy observation, a trivial interfacial reaction occurs, leading to almost intact phosphor particles and thus restrained luminous loss. For instance, the red-emitting Sr0.8Ca0.2AlSiN3:Eu2+ exhibits a record internal quantum efficiency of 91.2% in the processed film and achieves a luminous flux of 2379 lm and efficacy of 140 lm W−1 after fabricating a phosphor wheel. This method reduces energy consumption, enables high-throughput screening, and offers material universality and design flexibility, paving the way for new opto-functional materials and applications. High-power laser lighting requires stable phosphor-in-glass films, but conventional sintering damages phosphors. Here, the authors develop infrared annealing which enables seconds-scale fabrication, minimizes interfacial damage and retains luminescence.",
+    "pdf_url": "https://www.nature.com/articles/s41467-025-58099-5.pdf",
+    "primary": "材料科学",
+    "secondary": "物理学",
+    "secondary_list": [
+      "物理学"
+    ],
+    "introduction": "Article\n\nhttps://doi.org/10.1038/s41467-025-58099-5\n\nRapid sintering of high-efﬁciency phosphor-\nin-glass ﬁlms for laser-driven light source\n\nReceived: 7 November 2024\n\nAccepted: 7 March 2025\n\nCheck for updates\n\n;\n,\n:\n)\n(\n\n0\n9\n8\n7\n6\n5\n4\n3\n2\n1\n\n;\n,\n:\n)\n(\n\n0\n9\n8\n7\n6\n5\n4\n3\n2\n1\n\nPengfei Wang 1,2,3,4, Hang Lin 1,2,3\nYue Xu3,4, Yi Lin3, Ju Xu3, Yao Cheng 1,3 & Yuansheng Wang 3\n\n, Guoxin Chen 5, Weitong Weng3,\n\nThe development of advanced high-power-density laser-driven light source\nrequires durable and color-tunable inorganic phosphor-in-glass ﬁlm compo-\nsites as color converter. One challenge remains for the phosphor-in-glass ﬁlm\nis the thermal erosion and degradation of phosphor, as harsh condition or long\nduration time is required to densify the ﬁlm for conventional sintering. Here\nwe develop a rapid thermal annealing technique that achieves high ﬁlm den-\nsiﬁcation (porosity < 3%) within seconds utilizing high-power (>10 kW) infrared\nirradiation. As demonstrated by high-resolution electron microscopy obser-\nvation, a trivial interfacial reaction occurs, leading to almost intact phosphor\nparticles and thus restrained luminous loss. For instance, the red-emitting\nSr0.8Ca0.2AlSiN3:Eu2+ exhibits a record internal quantum efﬁciency of 91.2% in\nthe processed ﬁlm and achieves a luminous ﬂux of 2379 lm and efﬁcacy of\n140 lm W−1 after fabricating a phosphor wheel. This method reduces energy\nconsumption, enables high-throughput screening, and offers material uni-\nversality and design ﬂexibility, paving the way for new opto-functional mate-\nrials and applications.\n\nAs the domain of\nlighting technology strides towards high\nbrightness and environmental consciousness, laser-driven light\nsource has garnered signiﬁcant attention for its high-power\ndensity and wall-plug efﬁciency1.\nIn the construction of laser\nlighting systems, nitride and oxynitride phosphors play a pivotal\nrole as color converters, with importance equally standing with\nthe classical garnet phosphors2. The dense crystal structure\nconfers enhanced structural rigidity and thus thermal stability\nupon these compounds, while the rich and diverse local coordi-\nnation environment affords greater control over the energy level\npositions of the doped rare earth luminescence centers. These\nmerits are essential for the overall performance of the laser\nlighting systems, beneﬁcial to attaining not only high lumen\noutput, but also high color rendering index (CRI), optimal cor-\nrelated color temperature (CCT) and wide color gamut3.\n\nLaser lighting calls for new phosphor bulk material form with high\nperformance. Traditional phosphor encapsulation, such as those uti-\nlizing organic silicone resins as the encapsulation medium to produce\nphosphor-in-silicone (PiS) composite, has encountered a performance\nbottleneck. PiS materials are prone to aging at high temperatures, so\ntheir thermal stability and durability are often challenged4,5. To address\nthis issue, researchers have begun to explore all-inorganic color con-\nverters, such as ﬂuorescent single crystals6,7, ﬂuorescent ceramics8–11,\n(PiG)4,14–17, and\nphosphor-in-ceramic (PiC)12,13, phosphor-in-glass\nphosphor-in-glass ﬁlms (PiGF)18–26. Unlike garnet oxides, nitrides and\noxynitrides are unable to grow into single crystals due to their aniso-\ntropy; moreover, their low diffusion coefﬁcients make it challenging to\nfully densify them into ceramics with acceptable optical properties\nusing traditional methods3. Compounding and encapsulating them\nwith amorphous glass, which is inherently ﬂowable when softened or\n\n1State Key Laboratory of Structural Chemistry, Fujian Institute of Research on the Structure of Matter, Chinese Academy of Sciences, Fuzhou, Fujian, China.\n2Fujian Science & Technology Innovation Laboratory for Optoelectronic Information of China, Fuzhou, Fujian, China. 3Fujian Key Laboratory of Nanomaterials,\nFujian Institute of Research on the Structure of Matter, Chinese Academy of Sciences, Fuzhou, Fujian, China. 4University of Chinese Academy of Sciences,\nBeijing, China. 5Public Technology Center, Ningbo Institute of Materials Technology and Engineering, Chinese Academy of Sciences, Ningbo, Zhejiang, China.\n\ne-mail: lingh@fjirsm.ac.cn; yswang@fjirsm.ac.cn\n\nNature Communications | \n\n (2025) 16:2807 \n\n1\n\n \n \n \n \n \n \n\fArticle\n\nhttps://doi.org/10.1038/s41467-025-58099-5\n\nmelted, would be an advisable choice. The PiG composite displays\nunparalleled beneﬁts in terms of cost-effectiveness, easy fabrication,\nand design versatility, when compared to other potential alternatives.\nParticularly, the sintering of PiG in the form of thick ﬁlm on a substrate\nwith high thermal conductivity will signiﬁcantly alleviate luminescence\nsaturation phenomenon under high power densities of lasers. To date,\nthere have been great endeavors paid with the aim of developing high-\nperformance PiG and PiGF. Nevertheless, the conventional preparation\nprocess always requires high-temperature and long-duration sintering,\nwhich consumes a considerable amount of energy and inevitably\nbrings about phosphor degradation, chemical erosion, and especially\noxidation in the case of nitride and oxynitride phosphors15,27. In this\nregard, the development of a novel sintering technology to fabricate\nPiG/PiGF in rapid manner is a pressing necessity (Supplementary\nNote 1), yet it remains a formidable challenge due to the difﬁculty of\nmaterial densiﬁcation. In addition, the up-to-date fast sintering tech-\nnologies are usually hard to popularize, since the cost and effective-\nness are compromised8,28–33. Recently, Xia et al. smartly develop a rapid\nsynthesis technique to fabricate phosphor-glass composites in sec-\nonds based on particle self-stabilization, unfortunately just like many\nother fast sintering strategies, the material system is limited to garnet\noxides34.\n\nIn this work, we innovatively introduced rapid thermal annealing\n(RTA), a fast sintering technique previously used in semiconductor\nmanufacturing processes, to prepare PiGF. We demonst",
+    "parsed": {
+      "meta": {
+        "title": "Rapid sintering of high-efficiency phosphor-in-glass films for laser-driven light source",
+        "primary": "材料科学",
+        "secondary_list": [
+          "物理学"
+        ]
+      },
+      "概念": {
+        "主学科": [
+          {
+            "term": "phosphor-in-glass film",
+            "normalized": "玻璃基荧光粉薄膜",
+            "std_label": null,
+            "evidence": "The development of advanced high-power-density laser-driven light source requires durable and color-tunable inorganic phosphor-in-glass film composites as color converter.",
+            "source": "abstract",
+            "confidence": 0.95
+          },
+          {
+            "term": "rapid thermal annealing technique",
+            "normalized": "快速热退火技术",
+            "std_label": null,
+            "evidence": "Here we develop a rapid thermal annealing technique that achieves high film densification (porosity < 3%) within seconds utilizing high-power (>10 kW) infrared irradiation.",
+            "source": "abstract",
+            "confidence": 0.95
+          },
+          {
+            "term": "high film densification",
+            "normalized": "高薄膜致密化",
+            "std_label": null,
+            "evidence": "Here we develop a rapid thermal annealing technique that achieves high film densification (porosity < 3%) within seconds utilizing high-power (>10 kW) infrared irradiation.",
+            "source": "abstract",
+            "confidence": 0.9
+          },
+          {
+            "term": "porosity < 3%",
+            "normalized": "孔隙率 < 3%",
+            "std_label": null,
+            "evidence": "Here we develop a rapid thermal annealing technique that achieves high film densification (porosity < 3%) within seconds utilizing high-power (>10 kW) infrared irradiation.",
+            "source": "abstract",
+            "confidence": 0.9
+          },
+          {
+            "term": "high-power (>10 kW) infrared irradiation",
+            "normalized": "高功率 (>10 kW) 红外辐射",
+            "std_label": null,
+            "evidence": "Here we develop a rapid thermal annealing technique that achieves high film densification (porosity < 3%) within seconds utilizing high-power (>10 kW) infrared irradiation.",
+            "source": "abstract",
+            "confidence": 0.9
+          },
+          {
+            "term": "Sr0.8Ca0.2AlSiN3:Eu2+",
+            "normalized": "Sr0.8Ca0.2AlSiN3:Eu2+",
+            "std_label": null,
+            "evidence": "For instance, the red-emitting Sr0.8Ca0.2AlSiN3:Eu2+ exhibits a record internal quantum efficiency of 91.2% in the processed film and achieves a luminous flux of 2379 lm and efficacy of 140 lm W−1 after fabricating a phosphor wheel.",
+            "source": "abstract",
+            "confidence": 0.95
+          },
+          {
+            "term": "internal quantum efficiency",
+            "normalized": "内量子效率",
+            "std_label": null,
+            "evidence": "For instance, the red-emitting Sr0.8Ca0.2AlSiN3:Eu2+ exhibits a record internal quantum efficiency of 91.2% in the processed film and achieves a luminous flux of 2379 lm and efficacy of 140 lm W−1 after fabricating a phosphor wheel.",
+            "source": "abstract",
+            "confidence": 0.9
+          },
+          {
+            "term": "luminous flux",
+            "normalized": "光通量",
+            "std_label": null,
+            "evidence": "For instance, the red-emitting Sr0.8Ca0.2AlSiN3:Eu2+ exhibits a record internal quantum efficiency of 91.2% in the processed film and achieves a luminous flux of 2379 lm and efficacy of 140 lm W−1 after fabricating a phosphor wheel.",
+            "source": "abstract",
+            "confidence": 0.9
+          },
+          {
+            "term": "phosphor wheel",
+            "normalized": "荧光粉轮",
+            "std_label": null,
+            "evidence": "For instance, the red-emitting Sr0.8Ca0.2AlSiN3:Eu2+ exhibits a record internal quantum efficiency of 91.2% in the processed film and achieves a luminous flux of 2379 lm and efficacy of 140 lm W−1 after fabricating a phosphor wheel.",
+            "source": "abstract",
+            "confidence": 0.9
+          },
+          {
+            "term": "high-throughput screening",
+            "normalized": "高通量筛选",
+            "std_label": null,
+            "evidence": "This method reduces energy consumption, enables high-throughput screening, and offers material universality and design flexibility, paving the way for new opto-functional materials and applications.",
+            "source": "abstract",
+            "confidence": 0.9
+          }
+        ],
+        "辅学科": {
+          "物理学": [
+            {
+              "term": "infrared irradiation",
+              "normalized": "红外辐射",
+              "std_label": null,
+              "evidence": "Here we develop a rapid thermal annealing technique that achieves high film densification (porosity < 3%) within seconds utilizing high-power (>10 kW) infrared irradiation.",
+              "source": "abstract",
+              "confidence": 0.9
+            },
+            {
+              "term": "high-resolution electron microscopy",
+              "normalized": "高分辨率电子显微镜",
+              "std_label": null,
+              "evidence": "As demonstrated by high-resolution electron microscopy observation, a trivial interfacial reaction occurs, leading to almost intact phosphor particles and thus restrained luminous loss.",
+              "source": "abstract",
+              "confidence": 0.9
+            },
+            {
+              "term": "luminous loss",
+              "normalized": "光损失",
+              "std_label": null,
+              "evidence": "As demonstrated by high-resolution electron microscopy observation, a trivial interfacial reaction occurs, leading to almost intact phosphor particles and thus restrained luminous loss.",
+              "source": "abstract",
+              "confidence": 0.9
+            },
+            {
+              "term": "high-power-density",
+              "normalized": "高功率密度",
+              "std_label": null,
+              "evidence": "The development of advanced high-power-density laser-driven light source requires durable and color-tunable inorganic phosphor-in-glass film composites as color converter.",
+              "source": "abstract",
+              "confidence": 0.9
+            },
+            {
+              "term": "wall-plug efficiency",
+              "normalized": "墙插效率",
+              "std_label": null,
+              "evidence": "As the domain of lighting technology strides towards high brightness and environmental consciousness, laser-driven light source has garnered significant attention for its high-power density and wall-plug efficiency.",
+              "source": "introduction",
+              "confidence": 0.9
+            }
+          ]
+        }
+      },
+      "跨学科关系": [
+        {
+          "head": "rapid thermal annealing technique",
+          "relation": "achieves high film densification",
+          "relation_type": "method_applied_to",
+          "relation_type_norm": "method_applied_to",
+          "relation_type_raw": "method_applied_to",
+          "tail": "phosphor-in-glass film",
+          "direction": "->",
+          "quant": {
+            "metric": "porosity",
+            "value": "< 3%"
+          },
+          "assumptions": [],
+          "evidence": "Here we develop a rapid thermal annealing technique that achieves high film densification (porosity < 3%) within seconds utilizing high-power (>10 kW) infrared irradiation.",
+          "source": "abstract",
+          "confidence": 0.95
+        },
+        {
+          "head": "high-power (>10 kW) infrared irradiation",
+          "relation": "utilized in",
+          "relation_type": "driven_by",
+          "relation_type_norm": "driven_by",
+          "relation_type_raw": "driven_by",
+          "tail": "rapid thermal annealing technique",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "Here we develop a rapid thermal annealing technique that achieves high film densification (porosity < 3%) within seconds utilizing high-power (>10 kW) infrared irradiation.",
+          "source": "abstract",
+          "confidence": 0.9
+        },
+        {
+          "head": "high-resolution electron microscopy",
+          "relation": "demonstrates interfacial reaction",
+          "relation_type": "method_applied_to",
+          "relation_type_norm": "method_applied_to",
+          "relation_type_raw": "method_applied_to",
+          "tail": "phosphor-in-glass film",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "As demonstrated by high-resolution electron microscopy observation, a trivial interfacial reaction occurs, leading to almost intact phosphor particles and thus restrained luminous loss.",
+          "source": "abstract",
+          "confidence": 0.9
+        },
+        {
+          "head": "rapid thermal annealing technique",
+          "relation": "restrains",
+          "relation_type": "improves_metric",
+          "relation_type_norm": "improves_metric",
+          "relation_type_raw": "improves_metric",
+          "tail": "luminous loss",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "As demonstrated by high-resolution electron microscopy observation, a trivial interfacial reaction occurs, leading to almost intact phosphor particles and thus restrained luminous loss.",
+          "source": "abstract",
+          "confidence": 0.9
+        },
+        {
+          "head": "phosphor-in-glass film",
+          "relation": "required for",
+          "relation_type": "depends_on",
+          "relation_type_norm": "depends_on",
+          "relation_type_raw": "depends_on",
+          "tail": "high-power-density",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "The development of advanced high-power-density laser-driven light source requires durable and color-tunable inorganic phosphor-in-glass film composites as color converter.",
+          "source": "abstract",
+          "confidence": 0.9
+        }
+      ],
+      "按辅助学科分类": {
+        "物理学": {
+          "概念": [
+            "红外辐射",
+            "高分辨率电子显微镜",
+            "光损失",
+            "高功率密度",
+            "墙插效率"
+          ],
+          "关系": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "rationale": "物理学通过红外辐射驱动快速热退火技术，并利用高分辨率电子显微镜验证界面反应机制，为材料致密化与光损失控制提供理论支撑"
+        }
+      },
+      "查询": {
+        "一级": "如何通过新型材料加工技术实现高性能玻璃基荧光粉薄膜的快速制备",
+        "二级": [
+          "如何结合红外辐射热源与快速热退火技术优化薄膜致密化工艺",
+          "如何利用电子显微分析技术验证荧光粉颗粒界面稳定性"
+        ],
+        "三级": [
+          "如何通过红外辐射功率调控与快速热退火参数协同作用，建立秒级完成高致密化薄膜的物理-材料跨学科制备流程",
+          "如何整合电子显微观测数据与光损失量化指标，形成多尺度界面反应抑制机制验证方案"
+        ]
+      },
+      "假设": {
+        "一级": [
+          [
+            {
+              "step": 1,
+              "head": "玻璃基荧光粉薄膜",
+              "relation": "需要实现",
+              "tail": "高薄膜致密化",
+              "claim": "玻璃基荧光粉薄膜需要实现高薄膜致密化以满足高功率密度激光驱动光源的需求。"
+            },
+            {
+              "step": 2,
+              "head": "高薄膜致密化",
+              "relation": "通过",
+              "tail": "快速热退火技术",
+              "claim": "高薄膜致密化可以通过快速热退火技术在秒级时间内实现。"
+            },
+            {
+              "step": 3,
+              "head": "快速热退火技术",
+              "relation": "需要物理学中的",
+              "tail": "高功率 (>10 ) 红外辐射",
+              "claim": "快速热退火技术需要物理学中的高功率 (>10 ) 红外辐射来提供高效热源，以实现秒级高致密化。"
+            }
+          ],
+          [
+            {
+              "step": 1,
+              "head": "玻璃基荧光粉薄膜",
+              "relation": "需要验证",
+              "tail": "光损失",
+              "claim": "玻璃基荧光粉薄膜需要验证光损失以评估其性能。"
+            },
+            {
+              "step": 2,
+              "head": "光损失",
+              "relation": "通过",
+              "tail": "高分辨率电子显微镜",
+              "claim": "光损失可以通过高分辨率电子显微镜观察界面反应来验证。"
+            },
+            {
+              "step": 3,
+              "head": "高分辨率电子显微镜",
+              "relation": "需要物理学中的",
+              "tail": "高分辨率电子显微镜",
+              "claim": "高分辨率电子显微镜需要物理学中的高分辨率电子显微镜技术来提供微观结构分析，以验证界面稳定性。"
+            }
+          ]
+        ],
+        "二级": [
+          [
+            {
+              "step": 1,
+              "head": "红外辐射",
+              "relation": "提供能量来源",
+              "tail": "快速热退火技术",
+              "claim": "红外辐射作为高功率热源，为快速热退火技术提供瞬时高温能量"
+            },
+            {
+              "step": 2,
+              "head": "快速热退火技术",
+              "relation": "实现",
+              "tail": "高薄膜致密化",
+              "claim": "快速热退火技术通过秒级高温处理实现孔隙率低于3%的薄膜致密化"
+            },
+            {
+              "step": 3,
+              "head": "高薄膜致密化",
+              "relation": "提升性能",
+              "tail": "玻璃基荧光粉薄膜",
+              "claim": "高致密化薄膜结构显著提高荧光粉薄膜的机械强度和光学均匀性"
+            }
+          ],
+          [
+            {
+              "step": 1,
+              "head": "高分辨率电子显微镜",
+              "relation": "观测界面反应",
+              "tail": "荧光粉颗粒",
+              "claim": "电子显微技术直接观测荧光粉颗粒与玻璃基体的界面反应程度"
+            },
+            {
+              "step": 2,
+              "head": "荧光粉颗粒",
+              "relation": "影响",
+              "tail": "光损失",
+              "claim": "完整保存的荧光粉颗粒界面可有效抑制光散射损失"
+            },
+            {
+              "step": 3,
+              "head": "光损失",
+              "relation": "决定效率",
+              "tail": "玻璃基荧光粉薄膜",
+              "claim": "降低光损失直接提升薄膜的内量子效率和光通量输出"
+            }
+          ]
+        ],
+        "三级": [
+          [
+            {
+              "step": 1,
+              "head": "高功率 (>10 ) 红外辐射",
+              "relation": "提供能量输入",
+              "tail": "快速热退火技术",
+              "claim": "高功率 (>10 ) 红外辐射 提供能量输入 快速热退火技术"
+            },
+            {
+              "step": 2,
+              "head": "快速热退火技术",
+              "relation": "实现孔隙率 < 3%",
+              "tail": "玻璃基荧光粉薄膜",
+              "claim": "快速热退火技术 实现孔隙率 < 3% 玻璃基荧光粉薄膜"
+            },
+            {
+              "step": 3,
+              "head": "玻璃基荧光粉薄膜",
+              "relation": "达到秒级完成",
+              "tail": "高薄膜致密化",
+              "claim": "玻璃基荧光粉薄膜 达到秒级完成 高薄膜致密化"
+            }
+          ],
+          [
+            {
+              "step": 1,
+              "head": "高分辨率电子显微镜",
+              "relation": "观测界面反应",
+              "tail": "玻璃基荧光粉薄膜",
+              "claim": "高分辨率电子显微镜 观测界面反应 玻璃基荧光粉薄膜"
+            },
+            {
+              "step": 2,
+              "head": "玻璃基荧光粉薄膜",
+              "relation": "抑制程度验证",
+              "tail": "光损失",
+              "claim": "玻璃基荧光粉薄膜 抑制程度验证 光损失"
+            },
+            {
+              "step": 3,
+              "head": "光损失",
+              "relation": "影响光通量输出",
+              "tail": "荧光粉轮",
+              "claim": "光损失 影响光通量输出 荧光粉轮"
+            }
+          ]
+        ],
+        "一级总结": [
+          "材料科学在实现玻璃基荧光粉薄膜高致密化过程中面临快速热处理的瓶颈，需要物理学提供高功率红外辐射技术以实现秒级高效制备。",
+          "材料科学在评估玻璃基荧光粉薄膜光损失时面临微观结构验证的瓶颈，需要物理学提供高分辨率电子显微镜技术以实现界面稳定性分析。"
+        ],
+        "二级总结": [
+          "物理学通过红外辐射能量传递机制，将热退火过程转化为可控的薄膜致密化工艺参数，为材料科学提供高性能薄膜制备方案",
+          "物理学借助电子显微观测技术建立颗粒界面稳定性评价体系，为材料科学优化荧光粉薄膜的光学性能提供量化依据"
+        ],
+        "三级总结": [
+          "通过高功率红外辐射驱动快速热退火技术，使玻璃基荧光粉薄膜在秒级时间内达到高致密化状态，形成物理-材料协同的快速制备闭环",
+          "基于电子显微镜的界面观测数据与光损失抑制效果验证，建立从微观结构到宏观光通量输出的多尺度性能验证链条"
+        ]
+      },
+      "graph": {
+        "nodes": [
+          {
+            "id": "玻璃基荧光粉薄膜",
+            "term": "phosphor-in-glass film",
+            "normalized": "玻璃基荧光粉薄膜",
+            "discipline": "材料科学",
+            "evidence": "The development of advanced high-power-density laser-driven light source requires durable and color-tunable inorganic phosphor-in-glass film composites as color converter.",
+            "source": "abstract",
+            "confidence": 0.95
+          },
+          {
+            "id": "快速热退火技术",
+            "term": "rapid thermal annealing technique",
+            "normalized": "快速热退火技术",
+            "discipline": "材料科学",
+            "evidence": "Here we develop a rapid thermal annealing technique that achieves high film densification (porosity < 3%) within seconds utilizing high-power (>10 kW) infrared irradiation.",
+            "source": "abstract",
+            "confidence": 0.95
+          },
+          {
+            "id": "高薄膜致密化",
+            "term": "high film densification",
+            "normalized": "高薄膜致密化",
+            "discipline": "材料科学",
+            "evidence": "Here we develop a rapid thermal annealing technique that achieves high film densification (porosity < 3%) within seconds utilizing high-power (>10 kW) infrared irradiation.",
+            "source": "abstract",
+            "confidence": 0.9
+          },
+          {
+            "id": "孔隙率 < 3%",
+            "term": "porosity < 3%",
+            "normalized": "孔隙率 < 3%",
+            "discipline": "材料科学",
+            "evidence": "Here we develop a rapid thermal annealing technique that achieves high film densification (porosity < 3%) within seconds utilizing high-power (>10 kW) infrared irradiation.",
+            "source": "abstract",
+            "confidence": 0.9
+          },
+          {
+            "id": "高功率 (>10 kW) 红外辐射",
+            "term": "high-power (>10 kW) infrared irradiation",
+            "normalized": "高功率 (>10 kW) 红外辐射",
+            "discipline": "材料科学",
+            "evidence": "Here we develop a rapid thermal annealing technique that achieves high film densification (porosity < 3%) within seconds utilizing high-power (>10 kW) infrared irradiation.",
+            "source": "abstract",
+            "confidence": 0.9
+          },
+          {
+            "id": "Sr0.8Ca0.2AlSiN3:Eu2+",
+            "term": "Sr0.8Ca0.2AlSiN3:Eu2+",
+            "normalized": "Sr0.8Ca0.2AlSiN3:Eu2+",
+            "discipline": "材料科学",
+            "evidence": "For instance, the red-emitting Sr0.8Ca0.2AlSiN3:Eu2+ exhibits a record internal quantum efficiency of 91.2% in the processed film and achieves a luminous flux of 2379 lm and efficacy of 140 lm W−1 after fabricating a phosphor wheel.",
+            "source": "abstract",
+            "confidence": 0.95
+          },
+          {
+            "id": "内量子效率",
+            "term": "internal quantum efficiency",
+            "normalized": "内量子效率",
+            "discipline": "材料科学",
+            "evidence": "For instance, the red-emitting Sr0.8Ca0.2AlSiN3:Eu2+ exhibits a record internal quantum efficiency of 91.2% in the processed film and achieves a luminous flux of 2379 lm and efficacy of 140 lm W−1 after fabricating a phosphor wheel.",
+            "source": "abstract",
+            "confidence": 0.9
+          },
+          {
+            "id": "光通量",
+            "term": "luminous flux",
+            "normalized": "光通量",
+            "discipline": "材料科学",
+            "evidence": "For instance, the red-emitting Sr0.8Ca0.2AlSiN3:Eu2+ exhibits a record internal quantum efficiency of 91.2% in the processed film and achieves a luminous flux of 2379 lm and efficacy of 140 lm W−1 after fabricating a phosphor wheel.",
+            "source": "abstract",
+            "confidence": 0.9
+          },
+          {
+            "id": "荧光粉轮",
+            "term": "phosphor wheel",
+            "normalized": "荧光粉轮",
+            "discipline": "材料科学",
+            "evidence": "For instance, the red-emitting Sr0.8Ca0.2AlSiN3:Eu2+ exhibits a record internal quantum efficiency of 91.2% in the processed film and achieves a luminous flux of 2379 lm and efficacy of 140 lm W−1 after fabricating a phosphor wheel.",
+            "source": "abstract",
+            "confidence": 0.9
+          },
+          {
+            "id": "高通量筛选",
+            "term": "high-throughput screening",
+            "normalized": "高通量筛选",
+            "discipline": "材料科学",
+            "evidence": "This method reduces energy consumption, enables high-throughput screening, and offers material universality and design flexibility, paving the way for new opto-functional materials and applications.",
+            "source": "abstract",
+            "confidence": 0.9
+          },
+          {
+            "id": "红外辐射",
+            "term": "infrared irradiation",
+            "normalized": "红外辐射",
+            "discipline": "物理学",
+            "evidence": "Here we develop a rapid thermal annealing technique that achieves high film densification (porosity < 3%) within seconds utilizing high-power (>10 kW) infrared irradiation.",
+            "source": "abstract",
+            "confidence": 0.9
+          },
+          {
+            "id": "高分辨率电子显微镜",
+            "term": "high-resolution electron microscopy",
+            "normalized": "高分辨率电子显微镜",
+            "discipline": "物理学",
+            "evidence": "As demonstrated by high-resolution electron microscopy observation, a trivial interfacial reaction occurs, leading to almost intact phosphor particles and thus restrained luminous loss.",
+            "source": "abstract",
+            "confidence": 0.9
+          },
+          {
+            "id": "光损失",
+            "term": "luminous loss",
+            "normalized": "光损失",
+            "discipline": "物理学",
+            "evidence": "As demonstrated by high-resolution electron microscopy observation, a trivial interfacial reaction occurs, leading to almost intact phosphor particles and thus restrained luminous loss.",
+            "source": "abstract",
+            "confidence": 0.9
+          },
+          {
+            "id": "高功率密度",
+            "term": "high-power-density",
+            "normalized": "高功率密度",
+            "discipline": "物理学",
+            "evidence": "The development of advanced high-power-density laser-driven light source requires durable and color-tunable inorganic phosphor-in-glass film composites as color converter.",
+            "source": "abstract",
+            "confidence": 0.9
+          },
+          {
+            "id": "墙插效率",
+            "term": "wall-plug efficiency",
+            "normalized": "墙插效率",
+            "discipline": "物理学",
+            "evidence": "As the domain of lighting technology strides towards high brightness and environmental consciousness, laser-driven light source has garnered significant attention for its high-power density and wall-plug efficiency.",
+            "source": "introduction",
+            "confidence": 0.9
+          },
+          {
+            "id": "高功率 (>10 ) 红外辐射",
+            "term": "高功率 (>10 ) 红外辐射",
+            "normalized": "高功率 (>10 ) 红外辐射",
+            "discipline": "hypothesis_inferred",
+            "evidence": "",
+            "source": "hypothesis_inferred",
+            "confidence": 0.8
+          },
+          {
+            "id": "荧光粉颗粒",
+            "term": "荧光粉颗粒",
+            "normalized": "荧光粉颗粒",
+            "discipline": "hypothesis_inferred",
+            "evidence": "",
+            "source": "hypothesis_inferred",
+            "confidence": 0.8
+          }
+        ],
+        "edges": [
+          {
+            "source": "快速热退火技术",
+            "target": "玻璃基荧光粉薄膜",
+            "relation": "achieves high film densification",
+            "relation_type": "method_applied_to",
+            "metadata": {
+              "evidence": "Here we develop a rapid thermal annealing technique that achieves high film densification (porosity < 3%) within seconds utilizing high-power (>10 kW) infrared irradiation.",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "高功率 (>10 kW) 红外辐射",
+            "target": "快速热退火技术",
+            "relation": "utilized in",
+            "relation_type": "driven_by",
+            "metadata": {
+              "evidence": "Here we develop a rapid thermal annealing technique that achieves high film densification (porosity < 3%) within seconds utilizing high-power (>10 kW) infrared irradiation.",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "高分辨率电子显微镜",
+            "target": "玻璃基荧光粉薄膜",
+            "relation": "demonstrates interfacial reaction",
+            "relation_type": "method_applied_to",
+            "metadata": {
+              "evidence": "As demonstrated by high-resolution electron microscopy observation, a trivial interfacial reaction occurs, leading to almost intact phosphor particles and thus restrained luminous loss.",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "快速热退火技术",
+            "target": "光损失",
+            "relation": "restrains",
+            "relation_type": "improves_metric",
+            "metadata": {
+              "evidence": "As demonstrated by high-resolution electron microscopy observation, a trivial interfacial reaction occurs, leading to almost intact phosphor particles and thus restrained luminous loss.",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "玻璃基荧光粉薄膜",
+            "target": "高功率密度",
+            "relation": "required for",
+            "relation_type": "depends_on",
+            "metadata": {
+              "evidence": "The development of advanced high-power-density laser-driven light source requires durable and color-tunable inorganic phosphor-in-glass film composites as color converter.",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "玻璃基荧光粉薄膜",
+            "target": "高薄膜致密化",
+            "relation": "需要实现",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "玻璃基荧光粉薄膜需要实现高薄膜致密化以满足高功率密度激光驱动光源的需求。",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "高薄膜致密化",
+            "target": "快速热退火技术",
+            "relation": "通过",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "高薄膜致密化可以通过快速热退火技术在秒级时间内实现。",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "快速热退火技术",
+            "target": "高功率 (>10 ) 红外辐射",
+            "relation": "需要物理学中的",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "快速热退火技术需要物理学中的高功率 (>10 ) 红外辐射来提供高效热源，以实现秒级高致密化。",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "玻璃基荧光粉薄膜",
+            "target": "光损失",
+            "relation": "需要验证",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "玻璃基荧光粉薄膜需要验证光损失以评估其性能。",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "光损失",
+            "target": "高分辨率电子显微镜",
+            "relation": "通过",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "光损失可以通过高分辨率电子显微镜观察界面反应来验证。",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "高分辨率电子显微镜",
+            "target": "高分辨率电子显微镜",
+            "relation": "需要物理学中的",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "高分辨率电子显微镜需要物理学中的高分辨率电子显微镜技术来提供微观结构分析，以验证界面稳定性。",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "红外辐射",
+            "target": "快速热退火技术",
+            "relation": "提供能量来源",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "红外辐射作为高功率热源，为快速热退火技术提供瞬时高温能量",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "快速热退火技术",
+            "target": "高薄膜致密化",
+            "relation": "实现",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "快速热退火技术通过秒级高温处理实现孔隙率低于3%的薄膜致密化",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "高薄膜致密化",
+            "target": "玻璃基荧光粉薄膜",
+            "relation": "提升性能",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "高致密化薄膜结构显著提高荧光粉薄膜的机械强度和光学均匀性",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "高分辨率电子显微镜",
+            "target": "荧光粉颗粒",
+            "relation": "观测界面反应",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "电子显微技术直接观测荧光粉颗粒与玻璃基体的界面反应程度",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "荧光粉颗粒",
+            "target": "光损失",
+            "relation": "影响",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "完整保存的荧光粉颗粒界面可有效抑制光散射损失",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "光损失",
+            "target": "玻璃基荧光粉薄膜",
+            "relation": "决定效率",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "降低光损失直接提升薄膜的内量子效率和光通量输出",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "高功率 (>10 ) 红外辐射",
+            "target": "快速热退火技术",
+            "relation": "提供能量输入",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "高功率 (>10 ) 红外辐射 提供能量输入 快速热退火技术",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "快速热退火技术",
+            "target": "玻璃基荧光粉薄膜",
+            "relation": "实现孔隙率 < 3%",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "快速热退火技术 实现孔隙率 < 3% 玻璃基荧光粉薄膜",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "玻璃基荧光粉薄膜",
+            "target": "高薄膜致密化",
+            "relation": "达到秒级完成",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "玻璃基荧光粉薄膜 达到秒级完成 高薄膜致密化",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "高分辨率电子显微镜",
+            "target": "玻璃基荧光粉薄膜",
+            "relation": "观测界面反应",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "高分辨率电子显微镜 观测界面反应 玻璃基荧光粉薄膜",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "玻璃基荧光粉薄膜",
+            "target": "光损失",
+            "relation": "抑制程度验证",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "玻璃基荧光粉薄膜 抑制程度验证 光损失",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "光损失",
+            "target": "荧光粉轮",
+            "relation": "影响光通量输出",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "光损失 影响光通量输出 荧光粉轮",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          }
+        ]
+      },
+      "metrics": {
+        "path_consistency": 0.1111111111111111,
+        "coverage": 0.4666666666666667,
+        "bridging_score": 0.47368421052631576,
+        "rao_stirling_diversity": 0.1562,
+        "embedding_bridging": 0.9524,
+        "consistency_precision": 0.0,
+        "consistency_recall": 0.0,
+        "consistency_f1": 0.0,
+        "info_novelty": 0.0,
+        "chain_coherence": 0.5538,
+        "atypical_combination": 0.3419,
+        "kg_density": 0.0699,
+        "kg_inverse_modularity": 1.02,
+        "kg_largest_cc_ratio": 0.6471,
+        "kg_avg_betweenness": 0.0279,
+        "kg_clustering_coefficient": 0.2,
+        "concept_recall": 0.0,
+        "concept_precision": 0.0,
+        "concept_f1": 0.0,
+        "relation_precision": 0.0,
+        "relation_type_accuracy": 0.0,
+        "evidence_coverage": 0.0,
+        "path_alignment_best": 0.0,
+        "path_alignment_mean": 0.0
+      }
+    },
+    "raw": "/* stage1: struct */\n/* concepts round1 */\n```json\n{\n  \"meta\": {\n    \"title\": \"Rapid sintering of high-efficiency phosphor-in-glass films for laser-driven light source\",\n    \"primary\": \"材料科学\",\n    \"secondary_list\": [\"物理学\"]\n  },\n  \"概念\": {\n    \"主学科\": [\n      {\n        \"term\": \"phosphor-in-glass film\",\n        \"normalized\": \"玻璃基荧光粉薄膜\",\n        \"std_label\": null,\n        \"evidence\": \"The development of advanced high-power-density laser-driven light source requires durable and color-tunable inorganic phosphor-in-glass film composites as color converter.\",\n        \"source\": \"abstract\",\n        \"confidence\": 0.95\n      },\n      {\n        \"term\": \"rapid thermal annealing technique\",\n        \"normalized\": \"快速热退火技术\",\n        \"std_label\": null,\n        \"evidence\": \"Here we develop a rapid thermal annealing technique that achieves high film densification (porosity < 3%) within seconds utilizing high-power (>10 kW) infrared irradiation.\",\n        \"source\": \"abstract\",\n        \"confidence\": 0.95\n      },\n      {\n        \"term\": \"high film densification\",\n        \"normalized\": \"高薄膜致密化\",\n        \"std_label\": null,\n        \"evidence\": \"Here we develop a rapid thermal annealing technique that achieves high film densification (porosity < 3%) within seconds utilizing high-power (>10 kW) infrared irradiation.\",\n        \"source\": \"abstract\",\n        \"confidence\": 0.9\n      },\n      {\n        \"term\": \"porosity < 3%\",\n        \"normalized\": \"孔隙率 < 3%\",\n        \"std_label\": null,\n        \"evidence\": \"Here we develop a rapid thermal annealing technique that achieves high film densification (porosity < 3%) within seconds utilizing high-power (>10 kW) infrared irradiation.\",\n        \"source\": \"abstract\",\n        \"confidence\": 0.9\n      },\n      {\n        \"term\": \"high-power (>10 kW) infrared irradiation\",\n        \"normalized\": \"高功率 (>10 kW) 红外辐射\",\n        \"std_label\": null,\n        \"evidence\": \"Here we develop a rapid thermal annealing technique that achieves high film densification (porosity < 3%) within seconds utilizing high-power (>10 kW) infrared irradiation.\",\n        \"source\": \"abstract\",\n        \"confidence\": 0.9\n      },\n      {\n        \"term\": \"Sr0.8Ca0.2AlSiN3:Eu2+\",\n        \"normalized\": \"Sr0.8Ca0.2AlSiN3:Eu2+\",\n        \"std_label\": null,\n        \"evidence\": \"For instance, the red-emitting Sr0.8Ca0.2AlSiN3:Eu2+ exhibits a record internal quantum efficiency of 91.2% in the processed film and achieves a luminous flux of 2379 lm and efficacy of 140 lm W−1 after fabricating a phosphor wheel.\",\n        \"source\": \"abstract\",\n        \"confidence\": 0.95\n      },\n      {\n        \"term\": \"internal quantum efficiency\",\n        \"normalized\": \"内量子效率\",\n        \"std_label\": null,\n        \"evidence\": \"For instance, the red-emitting Sr0.8Ca0.2AlSiN3:Eu2+ exhibits a record internal quantum efficiency of 91.2% in the processed film and achieves a luminous flux of 2379 lm and efficacy of 140 lm W−1 after fabricating a phosphor wheel.\",\n        \"source\": \"abstract\",\n        \"confidence\": 0.9\n      },\n      {\n        \"term\": \"luminous flux\",\n        \"normalized\": \"光通量\",\n        \"std_label\": null,\n        \"evidence\": \"For instance, the red-emitting Sr0.8Ca0.2AlSiN3:Eu2+ exhibits a record internal quantum efficiency of 91.2% in the processed film and achieves a luminous flux of 2379 lm and efficacy of 140 lm W−1 after fabricating a phosphor wheel.\",\n        \"source\": \"abstract\",\n        \"confidence\": 0.9\n      },\n      {\n        \"term\": \"phosphor wheel\",\n        \"normalized\": \"荧光粉轮\",\n        \"std_label\": null,\n        \"evidence\": \"For instance, the red-emitting Sr0.8Ca0.2AlSiN3:Eu2+ exhibits a record internal quantum efficiency of 91.2% in the processed film and achieves a luminous flux of 2379 lm and efficacy of 140 lm W−1 after fabricating a phosphor wheel.\",\n        \"source\": \"abstract\",\n        \"confidence\": 0.9\n      },\n      {\n        \"term\": \"high-throughput screening\",\n        \"normalized\": \"高通量筛选\",\n        \"std_label\": null,\n        \"evidence\": \"This method reduces energy consumption, enables high-throughput screening, and offers material universality and design flexibility, paving the way for new opto-functional materials and applications.\",\n        \"source\": \"abstract\",\n        \"confidence\": 0.9\n      }\n    ],\n    \"辅学科\": {\n      \"物理学\": [\n        {\n          \"term\": \"infrared irradiation\",\n          \"normalized\": \"红外辐射\",\n          \"std_label\": null,\n          \"evidence\": \"Here we develop a rapid thermal annealing technique that achieves high film densification (porosity < 3%) within seconds utilizing high-power (>10 kW) infrared irradiation.\",\n          \"source\": \"abstract\",\n          \"confidence\": 0.9\n        },\n        {\n          \"term\": \"high-resolution electron microscopy\",\n          \"normalized\": \"高分辨率电子显微镜\",\n          \"std_label\": null,\n          \"evidence\": \"As demonstrated by high-resolution electron microscopy observation, a trivial interfacial reaction occurs, leading to almost intact phosphor particles and thus restrained luminous loss.\",\n          \"source\": \"abstract\",\n          \"confidence\": 0.9\n        },\n        {\n          \"term\": \"luminous loss\",\n          \"normalized\": \"光损失\",\n          \"std_label\": null,\n          \"evidence\": \"As demonstrated by high-resolution electron microscopy observation, a trivial interfacial reaction occurs, leading to almost intact phosphor particles and thus restrained luminous loss.\",\n          \"source\": \"abstract\",\n          \"confidence\": 0.9\n        },\n        {\n          \"term\": \"high-power-density\",\n          \"normalized\": \"高功率密度\",\n          \"std_label\": null,\n          \"evidence\": \"The development of advanced high-power-density laser-driven light source requires durable and color-tunable inorganic phosphor-in-glass film composites as color converter.\",\n          \"source\": \"abstract\",\n          \"confidence\": 0.9\n        },\n        {\n          \"term\": \"wall-plug efficiency\",\n          \"normalized\": \"墙插效率\",\n          \"std_label\": null,\n          \"evidence\": \"As the domain of lighting technology strides towards high brightness and environmental consciousness, laser-driven light source has garnered significant attention for its high-power density and wall-plug efficiency.\",\n          \"source\": \"introduction\",\n          \"confidence\": 0.9\n        }\n      ]\n    }\n  }\n}\n```\n\n/* concepts round2 (supplement) */\n```json\n{\n  \"补充概念\": {\n    \"主学科\": [\n      \"color converter\",\n      \"thermal erosion\",\n      \"phosphor degradation\",\n      \"infrared irradiation\",\n      \"luminous flux\",\n      \"luminous loss\",\n      \"phosphor wheel\",\n      \"high-throughput screening\",\n      \"opto-functional materials\",\n      \"laser-driven light source\",\n      \"high-power density\",\n      \"wall-plug efficiency\",\n      \"color rendering index (CRI)\",\n      \"correlated color temperature (CCT)\",\n      \"color gamut\",\n      \"phosphor-in-silicone (PiS)\",\n      \"phosphor-in-ceramic (PiC)\",\n      \"phosphor-in-glass (PiG)\",\n      \"phosphor-in-glass films (PiGF)\",\n      \"fluorescent single crystals\",\n      \"fluorescent ceramics\",\n      \"amorphous glass\",\n      \"luminescence saturation phenomenon\",\n      \"phosphor degradation\",\n      \"chemical erosion\",\n      \"oxidation\",\n      \"rapid thermal annealing (RTA)\",\n      \"semiconductor manufacturing processes\"\n    ],\n    \"辅学科\": {\n      \"物理学\": [\n        \"infrared irradiation\",\n        \"luminous flux\",\n        \"luminescence saturation phenomenon\"\n      ]\n    }\n  }\n}\n```\n\n/* relations */\n{\n  \"跨学科关系\": [\n    {\n      \"head\": \"rapid thermal annealing technique\",\n      \"tail\": \"phosphor-in-glass film\",\n      \"relation\": \"achieves high film densification\",\n      \"relation_type\": \"method_applied_to\",\n      \"direction\": \"->\",\n      \"quant\": {\n        \"metric\": \"porosity\",\n        \"value\": \"< 3%\"\n      },\n      \"assumptions\": [],\n      \"evidence\": \"Here we develop a rapid thermal annealing technique that achieves high film densification (porosity < 3%) within seconds utilizing high-power (>10 kW) infrared irradiation.\",\n      \"source\": \"abstract\",\n      \"confidence\": 0.95\n    },\n    {\n      \"head\": \"high-power (>10 kW) infrared irradiation\",\n      \"tail\": \"rapid thermal annealing technique\",\n      \"relation\": \"utilized in\",\n      \"relation_type\": \"driven_by\",\n      \"direction\": \"->\",\n      \"quant\": null,\n      \"assumptions\": [],\n      \"evidence\": \"Here we develop a rapid thermal annealing technique that achieves high film densification (porosity < 3%) within seconds utilizing high-power (>10 kW) infrared irradiation.\",\n      \"source\": \"abstract\",\n      \"confidence\": 0.9\n    },\n    {\n      \"head\": \"high-resolution electron microscopy\",\n      \"tail\": \"phosphor-in-glass film\",\n      \"relation\": \"demonstrates interfacial reaction\",\n      \"relation_type\": \"method_applied_to\",\n      \"direction\": \"->\",\n      \"quant\": null,\n      \"assumptions\": [],\n      \"evidence\": \"As demonstrated by high-resolution electron microscopy observation, a trivial interfacial reaction occurs, leading to almost intact phosphor particles and thus restrained luminous loss.\",\n      \"source\": \"abstract\",\n      \"confidence\": 0.9\n    },\n    {\n      \"head\": \"rapid thermal annealing technique\",\n      \"tail\": \"luminous loss\",\n      \"relation\": \"restrains\",\n      \"relation_type\": \"improves_metric\",\n      \"direction\": \"->\",\n      \"quant\": null,\n      \"assumptions\": [],\n      \"evidence\": \"As demonstrated by high-resolution electron microscopy observation, a trivial interfacial reaction occurs, leading to almost intact phosphor particles and thus restrained luminous loss.\",\n      \"source\": \"abstract\",\n      \"confidence\": 0.9\n    },\n    {\n      \"head\": \"phosphor-in-glass film\",\n      \"tail\": \"high-power-density\",\n      \"relation\": \"required for\",\n      \"relation_type\": \"depends_on\",\n      \"direction\": \"->\",\n      \"quant\": null,\n      \"assumptions\": [],\n      \"evidence\": \"The development of advanced high-power-density laser-driven light source requires durable and color-tunable inorganic phosphor-in-glass film composites as color converter.\",\n      \"source\": \"abstract\",\n      \"confidence\": 0.9\n    }\n  ]\n}\n\n/* stage2: query */\n{\n  \"按辅助学科分类\": {\n    \"物理学\": {\n      \"概念\": [\"红外辐射\", \"高分辨率电子显微镜\", \"光损失\", \"高功率密度\", \"墙插效率\"],\n      \"关系\": [1, 2, 3, 4],\n      \"rationale\": \"物理学通过红外辐射驱动快速热退火技术，并利用高分辨率电子显微镜验证界面反应机制，为材料致密化与光损失控制提供理论支撑\"\n    }\n  },\n  \"查询\": {\n    \"一级\": \"如何通过新型材料加工技术实现高性能玻璃基荧光粉薄膜的快速制备\",\n    \"二级\": [\n      \"如何结合红外辐射热源与快速热退火技术优化薄膜致密化工艺\",\n      \"如何利用电子显微分析技术验证荧光粉颗粒界面稳定性\"\n    ],\n    \"三级\": [\n      \"如何通过红外辐射功率调控与快速热退火参数协同作用，建立秒级完成高致密化薄膜的物理-材料跨学科制备流程\",\n      \"如何整合电子显微观测数据与光损失量化指标，形成多尺度界面反应抑制机制验证方案\"\n    ]\n  }\n}\n\n/* stage3: hypothesis L1 */\n{\n  \"假设\": {\n    \"一级\": [\n      [\n        {\n          \"step\": 1,\n          \"head\": \"玻璃基荧光粉薄膜\",\n          \"relation\": \"需要实现\",\n          \"tail\": \"高薄膜致密化\",\n          \"claim\": \"玻璃基荧光粉薄膜需要实现高薄膜致密化以满足高功率密度激光驱动光源的需求。\"\n        },\n        {\n          \"step\": 2,\n          \"head\": \"高薄膜致密化\",\n          \"relation\": \"通过\",\n          \"tail\": \"快速热退火技术\",\n          \"claim\": \"高薄膜致密化可以通过快速热退火技术在秒级时间内实现。\"\n        },\n        {\n          \"step\": 3,\n          \"head\": \"快速热退火技术\",\n          \"relation\": \"需要物理学中的\",\n          \"tail\": \"高功率 (>10 kW) 红外辐射\",\n          \"claim\": \"快速热退火技术需要物理学中的高功率 (>10 kW) 红外辐射来提供高效热源，以实现秒级高致密化。\"\n        }\n      ],\n      [\n        {\n          \"step\": 1,\n          \"head\": \"玻璃基荧光粉薄膜\",\n          \"relation\": \"需要验证\",\n          \"tail\": \"光损失\",\n          \"claim\": \"玻璃基荧光粉薄膜需要验证光损失以评估其性能。\"\n        },\n        {\n          \"step\": 2,\n          \"head\": \"光损失\",\n          \"relation\": \"通过\",\n          \"tail\": \"高分辨率电子显微镜\",\n          \"claim\": \"光损失可以通过高分辨率电子显微镜观察界面反应来验证。\"\n        },\n        {\n          \"step\": 3,\n          \"head\": \"高分辨率电子显微镜\",\n          \"relation\": \"需要物理学中的\",\n          \"tail\": \"高分辨率电子显微镜\",\n          \"claim\": \"高分辨率电子显微镜需要物理学中的高分辨率电子显微镜技术来提供微观结构分析，以验证界面稳定性。\"\n        }\n      ]\n    ],\n    \"一级总结\": [\n      \"材料科学在实现玻璃基荧光粉薄膜高致密化过程中面临快速热处理的瓶颈，需要物理学提供高功率红外辐射技术以实现秒级高效制备。\",\n      \"材料科学在评估玻璃基荧光粉薄膜光损失时面临微观结构验证的瓶颈，需要物理学提供高分辨率电子显微镜技术以实现界面稳定性分析。\"\n    ]\n  }\n}\n\n/* stage3: hypothesis L2 */\n{\n  \"假设\": {\n    \"二级\": [\n      [\n        {\n          \"head\": \"红外辐射\",\n          \"tail\": \"快速热退火技术\",\n          \"relation\": \"提供能量来源\",\n          \"claim\": \"红外辐射作为高功率热源，为快速热退火技术提供瞬时高温能量\"\n        },\n        {\n          \"head\": \"快速热退火技术\",\n          \"tail\": \"高薄膜致密化\",\n          \"relation\": \"实现\",\n          \"claim\": \"快速热退火技术通过秒级高温处理实现孔隙率低于3%的薄膜致密化\"\n        },\n        {\n          \"head\": \"高薄膜致密化\",\n          \"tail\": \"玻璃基荧光粉薄膜\",\n          \"relation\": \"提升性能\",\n          \"claim\": \"高致密化薄膜结构显著提高荧光粉薄膜的机械强度和光学均匀性\"\n        }\n      ],\n      [\n        {\n          \"head\": \"高分辨率电子显微镜\",\n          \"tail\": \"荧光粉颗粒\",\n          \"relation\": \"观测界面反应\",\n          \"claim\": \"电子显微技术直接观测荧光粉颗粒与玻璃基体的界面反应程度\"\n        },\n        {\n          \"head\": \"荧光粉颗粒\",\n          \"tail\": \"光损失\",\n          \"relation\": \"影响\",\n          \"claim\": \"完整保存的荧光粉颗粒界面可有效抑制光散射损失\"\n        },\n        {\n          \"head\": \"光损失\",\n          \"tail\": \"玻璃基荧光粉薄膜\",\n          \"relation\": \"决定效率\",\n          \"claim\": \"降低光损失直接提升薄膜的内量子效率和光通量输出\"\n        }\n      ]\n    ],\n    \"二级总结\": [\n      \"物理学通过红外辐射能量传递机制，将热退火过程转化为可控的薄膜致密化工艺参数，为材料科学提供高性能薄膜制备方案\",\n      \"物理学借助电子显微观测技术建立颗粒界面稳定性评价体系，为材料科学优化荧光粉薄膜的光学性能提供量化依据\"\n    ]\n  }\n}\n\n/* stage3: hypothesis L3 */\n{\n  \"假设\": {\n    \"三级\": [\n      [\n        {\n          \"head\": \"高功率 (>10 kW) 红外辐射\",\n          \"tail\": \"快速热退火技术\",\n          \"relation\": \"提供能量输入\"\n        },\n        {\n          \"head\": \"快速热退火技术\",\n          \"tail\": \"玻璃基荧光粉薄膜\",\n          \"relation\": \"实现孔隙率 < 3%\"\n        },\n        {\n          \"head\": \"玻璃基荧光粉薄膜\",\n          \"tail\": \"高薄膜致密化\",\n          \"relation\": \"达到秒级完成\"\n        }\n      ],\n      [\n        {\n          \"head\": \"高分辨率电子显微镜\",\n          \"tail\": \"玻璃基荧光粉薄膜\",\n          \"relation\": \"观测界面反应\"\n        },\n        {\n          \"head\": \"玻璃基荧光粉薄膜\",\n          \"tail\": \"光损失\",\n          \"relation\": \"抑制程度验证\"\n        },\n        {\n          \"head\": \"光损失\",\n          \"tail\": \"荧光粉轮\",\n          \"relation\": \"影响光通量输出\"\n        }\n      ]\n    ],\n    \"三级总结\": [\n      \"通过高功率红外辐射驱动快速热退火技术，使玻璃基荧光粉薄膜在秒级时间内达到高致密化状态，形成物理-材料协同的快速制备闭环\",\n      \"基于电子显微镜的界面观测数据与光损失抑制效果验证，建立从微观结构到宏观光通量输出的多尺度性能验证链条\"\n    ]\n  }\n}",
+    "ok": true,
+    "error": ""
+  },
+  {
+    "title": "Ancestral sequence reconstruction as a tool for structural analysis of modular polyketide synthases",
+    "abstract": "Modular polyketide synthases (PKSs) are large multi-domain enzymes critical for the biosynthesis of polyketide antibiotics. However, challenges with structural analysis limits our mechanistic understanding of modular PKSs. In this report, we explore the potential of ancestral sequence reconstruction (ASR) for structure analysis of target proteins. As a model, we focus on the FD-891 PKS loading module composed of ketosynthase-like decarboxylase (KSQ), acyltransferase (AT) and acyl carrier protein (ACP) domains. We construct a KSQAncAT chimeric didomain by replacing the native AT with an ancestral AT (AncAT) using ASR. After confirming that KSQAncAT chimeric didomain retains similar enzymatic function to the native KSQAT didomain, we successfully determine a high-resolution crystal structure of the KSQAncAT chimeric didomain and cryo-EM structures of the KSQ-ACP complex. These cryo-EM structures, which could not be determined for the native protein, exemplify the utility of ASR to enable cryo-EM single-particle analysis. Our findings demonstrate that integrating ASR with structural analysis provides deeper mechanistic insight into modular PKSs. Furthermore, applying ASR to a partial region of the targeted multi-domain proteins could expand the potential of ASR and may serve as a valuable framework for investigating the structure and function of various multi-domain proteins.",
+    "pdf_url": "https://www.nature.com/articles/s41467-025-62168-0.pdf",
+    "primary": "生物学",
+    "secondary": "化学, 分子生物学, 生物物理学, 生物工程",
+    "secondary_list": [
+      "化学",
+      "分子生物学",
+      "生物物理学",
+      "生物工程"
+    ],
+    "introduction": "Article\n\nhttps://doi.org/10.1038/s41467-025-62168-0\n\nAncestral sequence reconstruction as a tool\nfor structural analysis of modular polyketide\nsynthases\n\nReceived: 28 October 2024\n\nAccepted: 14 July 2025\n\nCheck for updates\n\n;\n,\n:\n)\n(\n\n0\n9\n8\n7\n6\n5\n4\n3\n2\n1\n\n;\n,\n:\n)\n(\n\n0\n9\n8\n7\n6\n5\n4\n3\n2\n1\n\nTaichi Chisuga1,2, Shota Takinami1, Zengwei Liao3,4, Masayuki Karasawa 3,\nNaruhiko Adachi\nTohru Terada3,7, Fumitaka Kudo2,8, Tadashi Eguchi\nSohei Ito 1 & Akimasa Miyanaga 2,3,7\n\n5,6, Masato Kawasaki5, Toshio Moriya 5, Toshiya Senda 5,\n\n2, Shogo Nakano 1,9\n\n,\n\nModular polyketide synthases (PKSs) are large multi-domain enzymes critical\nfor the biosynthesis of polyketide antibiotics. However, challenges with\nstructural analysis limits our mechanistic understanding of modular PKSs. In\nthis report, we explore the potential of ancestral sequence reconstruction\n(ASR) for structure analysis of target proteins. As a model, we focus on the FD-\n891 PKS loading module composed of ketosynthase-like decarboxylase (KSQ),\nacyltransferase (AT) and acyl carrier protein (ACP) domains. We construct a\nKSQAncAT chimeric didomain by replacing the native AT with an ancestral AT\n(AncAT) using ASR. After conﬁrming that KSQAncAT chimeric didomain\nretains similar enzymatic function to the native KSQAT didomain, we suc-\ncessfully determine a high-resolution crystal structure of the KSQAncAT chi-\nmeric didomain and cryo-EM structures of the KSQ–ACP complex. These cryo-\nEM structures, which could not be determined for the native protein, exem-\nplify the utility of ASR to enable cryo-EM single-particle analysis. Our ﬁndings\ndemonstrate that integrating ASR with structural analysis provides deeper\nmechanistic insight into modular PKSs. Furthermore, applying ASR to a partial\nregion of the targeted multi-domain proteins could expand the potential of\nASR and may serve as a valuable framework for investigating the structure and\nfunction of various multi-domain proteins.\n\nModular polyketide synthases (PKSs) produce structurally diverse\npolyketide natural products, including the antibiotics erythromycin1\nand rifamycin2 and the anticancer drug epothilone3. Modular PKSs are\nlarge, multifunctional proteins containing several catalytic domains. A\n\nset of catalytic domains involved in one round of polyketide chain\nelongation is called a “module”, which contains three essential\ndomains: ketosynthase (KS) domain, acyltransferase (AT) domain and\nacyl carrier protein (ACP) domain4–6. The AT domain generally\n\n1Graduate School of Integrated Pharmaceutical and Nutritional Science, University of Shizuoka, Shizuoka, Japan. 2Department of Chemistry, Tokyo Institute of\nTechnology (Institute of Science Tokyo), Tokyo, Japan. 3Graduate School of Agricultural and Life Science, The University of Tokyo, Tokyo, Japan. 4California\nInstitute for Quantitative Biosciences/Department of Molecular and Cell Biology/Howard Hughes Medical Institute, University of California at Berkeley,\nBerkeley, CA, USA. 5Structural Biology Research Center, Institute of Materials Structure Science, High Energy Accelerator Research Organization (KEK),\nIbaraki, Japan. 6Life Science Center for Survival Dynamics, Tsukuba Advanced Research Alliance (TARA), University of Tsukuba, Ibaraki, Japan. 7Collaborative\nResearch Institute for Innovative Microbiology, The University of Tokyo, Tokyo, Japan. 8Faculty of Chemistry and Biochemistry, Kanagawa University,\nYokohama, Japan. 9PREST, Japan Science and Technology Agency, Saitama, Japan.\namiyanaga@g.ecc.u-tokyo.ac.jp\n\ne-mail: snakano@u-shizuoka-ken.ac.jp; itosohei@u-shizuoka-ken.ac.jp;\n\nNature Communications | \n\n (2025) 16:6847 \n\n1\n\n \n \n \n \n \n \n\fArticle\n\na\n\nloading module\n\nelongation module 1\n\nb\n\nhttps://doi.org/10.1038/s41467-025-62168-0\n\nGfsA\n\nKSQ\n\nKAL\n\nATL\n\nPL\nC\nA\nPAL\n\nPAL\n\nKS1\n\nKAL\n\nAT1\n\nKR1\n\nP1\nC\nA\n\nKSQ\n\nATL\n\nPAL\n\nKAL\n\nPAL\n\nATL\n\nACPL malonyl-CoA CoA\n\nHS\n\nKSQ\n\nCO2\n\nKSQ\n\nATL\n\nKAL\n\nO\n\nO\n\nO\n\nS\n\nACPL\n\nKSQ\n\nATL\n\nKAL\n\nO\n\nACPL\n\nS\n\nKAL\n\nATL\n\nGfsA KSQ\n\nACPL\n\nFig. 1 | The GfsA loading module reaction. a Domain organization of the GfsA\nloading module. The domain architecture of GfsA is shown in the top panel. The\nbottom panel shows the crystal structure of the GfsA loading module [PDB entry:\n8IN9]29. KSQ ketosynthase-like decarboxylase, ATL acyltransferase domain of\nloading module, KAL KSQ to ATL linker, PAL post-AT linker48, ACPL acyl carrier\n\nprotein domain of loading module, KS1 ketosynthase, KR1 ketoreductase of elon-\ngation module 1. The KSQ, KAL, ATL and PAL regions are colored green, light gray,\ncyan and magenta, respectively. b Construction of a starter unit by the loading\nmodule of GfsA. The ATL domain transfers a malonyl unit onto ACPL. The KSQ\ndomain catalyzes the decarboxylation of malonyl-ACPL.\n\ntransfers the (alkyl-)malonic acid moiety as an extender unit from\n(alkyl-)malonyl-CoA to the pantetheine arm of the ACP domain. The KS\ndomain then catalyzes decarboxylative Claisen-like condensation of\nthe (alkyl-)malonic acid moiety with the polyketide precursor to pro-\nduce an elongated β-ketoacyl thioester. Optionally, the β-position of\nthe β-ketoacyl thioester is modiﬁed by ketoreductase (KR), dehy-\ndratase (DH) and enoyl reductase (ER) domains in the same module.\nThe polyketide chain is elongated by repeating the condensation and\nβ-position modiﬁcation steps, and ﬁnally, the chain is released from\nthe pantetheine arm of the ACP domain by a thioesterase (TE) domain.\nModular PKSs containing modules with embedded AT domains are\nknown as cis-AT PKSs. Each catalytic domain of cis-AT PKSs functions\nonly once in polyketide biosynthesis. Thus, the conﬁguration of its\nmodules is a blueprint that deﬁnes the chemical structure of the\nresulting polyketide compound. Therefore, efforts have been made to\nproduce unnatural polyketides by engineering cis-AT PKSs, such as\ndomain swapping and module swapping7–11. However, in many repor-\nted cases, production of the desired non-native polyketides by engi-\nneered cis-AT PKS is signiﬁcantly reduced relative to the wild-t",
+    "parsed": {
+      "meta": {
+        "title": "Ancestral sequence reconstruction as a tool for structural analysis of modular polyketide synthases",
+        "primary": "生物学",
+        "secondary_list": [
+          "化学",
+          "分子生物学",
+          "生物物理学",
+          "生物工程"
+        ]
+      },
+      "概念": {
+        "主学科": [
+          {
+            "term": "modular polyketide synthases (PKSs)",
+            "normalized": "模块化聚酮合酶",
+            "std_label": null,
+            "evidence": "Modular polyketide synthases (PKSs) are large multi-domain enzymes critical for the biosynthesis of polyketide antibiotics.",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "term": "ancestral sequence reconstruction (ASR)",
+            "normalized": "祖先序列重建",
+            "std_label": null,
+            "evidence": "In this report, we explore the potential of ancestral sequence reconstruction (ASR) for structure analysis of target proteins.",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "term": "ketosynthase-like decarboxylase (KSQ)",
+            "normalized": "酮合酶样脱羧酶",
+            "std_label": null,
+            "evidence": "As a model, we focus on the FD-891 PKS loading module composed of ketosynthase-like decarboxylase (KSQ), acyltransferase (AT) and acyl carrier protein (ACP) domains.",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "term": "acyltransferase (AT)",
+            "normalized": "酰基转移酶",
+            "std_label": null,
+            "evidence": "As a model, we focus on the FD-891 PKS loading module composed of ketosynthase-like decarboxylase (KSQ), acyltransferase (AT) and acyl carrier protein (ACP) domains.",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "term": "acyl carrier protein (ACP)",
+            "normalized": "酰基载体蛋白",
+            "std_label": null,
+            "evidence": "As a model, we focus on the FD-891 PKS loading module composed of ketosynthase-like decarboxylase (KSQ), acyltransferase (AT) and acyl carrier protein (ACP) domains.",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "term": "KSQAncAT chimeric didomain",
+            "normalized": "KSQAncAT嵌合双域",
+            "std_label": null,
+            "evidence": "We construct a KSQAncAT chimeric didomain by replacing the native AT with an ancestral AT (AncAT) using ASR.",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "term": "cryo-EM single-particle analysis",
+            "normalized": "冷冻电镜单颗粒分析",
+            "std_label": null,
+            "evidence": "These cryo-EM structures, which could not be determined for the native protein, exemplify the utility of ASR to enable cryo-EM single-particle analysis.",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "term": "polyketide antibiotics",
+            "normalized": "聚酮抗生素",
+            "std_label": null,
+            "evidence": "Modular polyketide synthases (PKSs) are large multi-domain enzymes critical for the biosynthesis of polyketide antibiotics.",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "term": "high-resolution crystal structure",
+            "normalized": "高分辨率晶体结构",
+            "std_label": null,
+            "evidence": "we successfully determine a high-resolution crystal structure of the KSQAncAT chimeric didomain and cryo-EM structures of the KSQ–ACP complex.",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "term": "cryo-EM structures",
+            "normalized": "冷冻电镜结构",
+            "std_label": null,
+            "evidence": "we successfully determine a high-resolution crystal structure of the KSQAncAT chimeric didomain and cryo-EM structures of the KSQ–ACP complex.",
+            "source": "abstract",
+            "confidence": 1.0
+          }
+        ],
+        "辅学科": {
+          "化学": [
+            {
+              "term": "malonyl-CoA",
+              "normalized": "丙二酰辅酶A",
+              "std_label": null,
+              "evidence": "The ATL domain transfers a malonyl unit onto ACPL.",
+              "source": "abstract",
+              "confidence": 1.0
+            },
+            {
+              "term": "CoA",
+              "normalized": "辅酶A",
+              "std_label": null,
+              "evidence": "The ATL domain transfers a malonyl unit onto ACPL.",
+              "source": "abstract",
+              "confidence": 1.0
+            },
+            {
+              "term": "β-ketoacyl thioester",
+              "normalized": "β-酮酰基硫酯",
+              "std_label": null,
+              "evidence": "The KS domain then catalyzes decarboxylative Claisen-like condensation of the (alkyl-)malonic acid moiety with the polyketide precursor to produce an elongated β-ketoacyl thioester.",
+              "source": "abstract",
+              "confidence": 1.0
+            }
+          ],
+          "分子生物学": [
+            {
+              "term": "ketosynthase (KS) domain",
+              "normalized": "酮合酶域",
+              "std_label": null,
+              "evidence": "A set of catalytic domains involved in one round of polyketide chain elongation is called a “module”, which contains three essential domains: ketosynthase (KS) domain, acyltransferase (AT) domain and acyl carrier protein (ACP) domain.",
+              "source": "abstract",
+              "confidence": 1.0
+            },
+            {
+              "term": "ketoreductase (KR)",
+              "normalized": "酮还原酶",
+              "std_label": null,
+              "evidence": "Optionally, the β-position of the β-ketoacyl thioester is modiﬁed by ketoreductase (KR), dehydratase (DH) and enoyl reductase (ER) domains in the same module.",
+              "source": "abstract",
+              "confidence": 1.0
+            },
+            {
+              "term": "dehydratase (DH)",
+              "normalized": "脱水酶",
+              "std_label": null,
+              "evidence": "Optionally, the β-position of the β-ketoacyl thioester is modiﬁed by ketoreductase (KR), dehydratase (DH) and enoyl reductase (ER) domains in the same module.",
+              "source": "abstract",
+              "confidence": 1.0
+            }
+          ],
+          "生物物理学": [
+            {
+              "term": "crystal structure",
+              "normalized": "晶体结构",
+              "std_label": null,
+              "evidence": "we successfully determine a high-resolution crystal structure of the KSQAncAT chimeric didomain and cryo-EM structures of the KSQ–ACP complex.",
+              "source": "abstract",
+              "confidence": 1.0
+            },
+            {
+              "term": "cryo-EM",
+              "normalized": "冷冻电镜",
+              "std_label": null,
+              "evidence": "we successfully determine a high-resolution crystal structure of the KSQAncAT chimeric didomain and cryo-EM structures of the KSQ–ACP complex.",
+              "source": "abstract",
+              "confidence": 1.0
+            },
+            {
+              "term": "single-particle analysis",
+              "normalized": "单颗粒分析",
+              "std_label": null,
+              "evidence": "These cryo-EM structures, which could not be determined for the native protein, exemplify the utility of ASR to enable cryo-EM single-particle analysis.",
+              "source": "abstract",
+              "confidence": 1.0
+            }
+          ],
+          "生物工程": [
+            {
+              "term": "domain swapping",
+              "normalized": "域交换",
+              "std_label": null,
+              "evidence": "Therefore, efforts have been made to produce unnatural polyketides by engineering cis-AT PKSs, such as domain swapping and module swapping.",
+              "source": "abstract",
+              "confidence": 1.0
+            },
+            {
+              "term": "module swapping",
+              "normalized": "模块交换",
+              "std_label": null,
+              "evidence": "Therefore, efforts have been made to produce unnatural polyketides by engineering cis-AT PKSs, such as domain swapping and module swapping.",
+              "source": "abstract",
+              "confidence": 1.0
+            },
+            {
+              "term": "engineering cis-AT PKSs",
+              "normalized": "工程化顺式AT PKS",
+              "std_label": null,
+              "evidence": "Therefore, efforts have been made to produce unnatural polyketides by engineering cis-AT PKSs, such as domain swapping and module swapping.",
+              "source": "abstract",
+              "confidence": 1.0
+            }
+          ]
+        }
+      },
+      "跨学科关系": [
+        {
+          "head": "ancestral sequence reconstruction (ASR)",
+          "relation": "enables structural analysis of",
+          "relation_type": "method_applied_to",
+          "relation_type_norm": "method_applied_to",
+          "relation_type_raw": "method_applied_to",
+          "tail": "modular polyketide synthases (PKSs)",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "In this report, we explore the potential of ancestral sequence reconstruction (ASR) for structure analysis of target proteins.",
+          "source": "abstract",
+          "confidence": 0.9
+        },
+        {
+          "head": "ancestral sequence reconstruction (ASR)",
+          "relation": "enables",
+          "relation_type": "method_applied_to",
+          "relation_type_norm": "method_applied_to",
+          "relation_type_raw": "method_applied_to",
+          "tail": "cryo-EM single-particle analysis",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "These cryo-EM structures, which could not be determined for the native protein, exemplify the utility of ASR to enable cryo-EM single-particle analysis.",
+          "source": "abstract",
+          "confidence": 0.9
+        },
+        {
+          "head": "KSQAncAT chimeric didomain",
+          "relation": "was determined as",
+          "relation_type": "maps_to",
+          "relation_type_norm": "maps_to",
+          "relation_type_raw": "maps_to",
+          "tail": "high-resolution crystal structure",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "we successfully determine a high-resolution crystal structure of the KSQAncAT chimeric didomain and cryo-EM structures of the KSQ–ACP complex.",
+          "source": "abstract",
+          "confidence": 0.9
+        },
+        {
+          "head": "KSQ–ACP complex",
+          "relation": "was determined as",
+          "relation_type": "maps_to",
+          "relation_type_norm": "maps_to",
+          "relation_type_raw": "maps_to",
+          "tail": "cryo-EM structures",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "we successfully determine a high-resolution crystal structure of the KSQAncAT chimeric didomain and cryo-EM structures of the KSQ–ACP complex.",
+          "source": "abstract",
+          "confidence": 0.9
+        },
+        {
+          "head": "modular polyketide synthases (PKSs)",
+          "relation": "biosynthesizes",
+          "relation_type": "method_applied_to",
+          "relation_type_norm": "method_applied_to",
+          "relation_type_raw": "method_applied_to",
+          "tail": "polyketide antibiotics",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "Modular polyketide synthases (PKSs) are large multi-domain enzymes critical for the biosynthesis of polyketide antibiotics.",
+          "source": "abstract",
+          "confidence": 0.9
+        },
+        {
+          "head": "engineering cis-AT PKSs",
+          "relation": "includes",
+          "relation_type": "depends_on",
+          "relation_type_norm": "depends_on",
+          "relation_type_raw": "depends_on",
+          "tail": "domain swapping",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "Therefore, efforts have been made to produce unnatural polyketides by engineering cis-AT PKSs, such as domain swapping and module swapping.",
+          "source": "abstract",
+          "confidence": 0.9
+        },
+        {
+          "head": "engineering cis-AT PKSs",
+          "relation": "includes",
+          "relation_type": "depends_on",
+          "relation_type_norm": "depends_on",
+          "relation_type_raw": "depends_on",
+          "tail": "module swapping",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "Therefore, efforts have been made to produce unnatural polyketides by engineering cis-AT PKSs, such as domain swapping and module swapping.",
+          "source": "abstract",
+          "confidence": 0.9
+        }
+      ],
+      "按辅助学科分类": {
+        "化学": {
+          "概念": [
+            "丙二酰辅酶A",
+            "辅酶A",
+            "β-酮酰基硫酯"
+          ],
+          "关系": [
+            5
+          ],
+          "rationale": "提供聚酮合酶催化反应所需的底物化学物质与反应机理分析"
+        },
+        "分子生物学": {
+          "概念": [
+            "酮合酶域",
+            "酮还原酶",
+            "脱水酶"
+          ],
+          "关系": [
+            0,
+            1
+          ],
+          "rationale": "解析模块化聚酮合酶的功能域组成与进化保守性特征"
+        },
+        "生物物理学": {
+          "概念": [
+            "晶体结构",
+            "冷冻电镜",
+            "单颗粒分析"
+          ],
+          "关系": [
+            2,
+            3
+          ],
+          "rationale": "通过结构生物学手段揭示嵌合双域与复合体的三维构象"
+        },
+        "生物工程": {
+          "概念": [
+            "域交换",
+            "模块交换",
+            "工程化顺式AT PKS"
+          ],
+          "关系": [
+            5,
+            6
+          ],
+          "rationale": "开发合成生物学改造策略以设计非天然聚酮化合物"
+        }
+      },
+      "查询": {
+        "一级": "如何解析模块化聚酮合酶的结构与功能关系",
+        "二级": [
+          "如何结合祖先序列重建与冷冻电镜技术解析聚酮合酶结构",
+          "如何利用化学底物分析优化聚酮合酶催化效率"
+        ],
+        "三级": [
+          "如何通过分子生物学域进化分析与生物物理学冷冻电镜技术协同确定聚酮合酶功能域的三维构象",
+          "如何整合化学底物设计与生物工程域交换策略构建高效聚酮抗生素合成体系"
+        ]
+      },
+      "假设": {
+        "一级": [
+          [
+            {
+              "step": 1,
+              "head": "模块化聚酮合酶",
+              "relation": "结构解析受阻于",
+              "tail": "高分辨率晶体结构",
+              "claim": "模块化聚酮合酶因其复杂多域特性难以获得高分辨率晶体结构"
+            },
+            {
+              "step": 2,
+              "head": "高分辨率晶体结构",
+              "relation": "需借助",
+              "tail": "冷冻电镜单颗粒分析",
+              "claim": "高分辨率结构解析需要冷冻电镜单颗粒分析技术突破"
+            },
+            {
+              "step": 3,
+              "head": "冷冻电镜单颗粒分析",
+              "relation": "需生物物理学方法补位实现",
+              "tail": "冷冻电镜结构",
+              "claim": "需引入生物物理学的冷冻电镜技术解决聚酮合酶动态结构捕获难题"
+            }
+          ],
+          [
+            {
+              "step": 1,
+              "head": "模块化聚酮合酶",
+              "relation": "功能优化受限于",
+              "tail": "酮合酶样脱羧酶",
+              "claim": "聚酮合酶催化效率受酮合酶样脱羧酶域进化保守性制约"
+            },
+            {
+              "step": 2,
+              "head": "酮合酶样脱羧酶",
+              "relation": "需通过",
+              "tail": "祖先序列重建",
+              "claim": "需通过分子生物学的祖先序列重建技术追溯功能域演化路径"
+            },
+            {
+              "step": 3,
+              "head": "祖先序列重建",
+              "relation": "需分子生物学方法补位解析",
+              "tail": "酮合酶域",
+              "claim": "需结合分子生物学的域进化分析揭示催化域构效关系"
+            }
+          ],
+          [
+            {
+              "step": 1,
+              "head": "模块化聚酮合酶",
+              "relation": "底物适应性受限于",
+              "tail": "丙二酰辅酶",
+              "claim": "聚酮合酶底物特异性受化学分子丙二酰辅酶结合机制限制"
+            },
+            {
+              "step": 2,
+              "head": "丙二酰辅酶",
+              "relation": "需通过",
+              "tail": "β-酮酰基硫酯",
+              "claim": "需化学方法优化β-酮酰基硫酯合成路径提升催化效率"
+            },
+            {
+              "step": 3,
+              "head": "β-酮酰基硫酯",
+              "relation": "需化学方法补位调控",
+              "tail": "酰基转移酶",
+              "claim": "需化学学科介入设计新型底物以改善酰基转移酶域催化活性"
+            }
+          ],
+          [
+            {
+              "step": 1,
+              "head": "模块化聚酮合酶",
+              "relation": "工程化改造受限于",
+              "tail": "域交换",
+              "claim": "聚酮抗生素人工合成受制于域交换技术的精确控制"
+            },
+            {
+              "step": 2,
+              "head": "域交换",
+              "relation": "需整合",
+              "tail": "模块交换",
+              "claim": "需生物工程方法协同优化域交换与模块交换策略"
+            },
+            {
+              "step": 3,
+              "head": "模块交换",
+              "relation": "需生物工程方法补位实现",
+              "tail": "工程化顺式",
+              "claim": "需生物工程学科开发模块化组装技术构建定制化聚酮合成系统"
+            }
+          ]
+        ],
+        "二级": [
+          [
+            {
+              "step": 1,
+              "head": "祖先序列重建",
+              "relation": "提供结构解析基础",
+              "tail": "冷冻电镜",
+              "claim": "祖先序列重建技术为冷冻电镜分析提供进化保守的结构模板"
+            },
+            {
+              "step": 2,
+              "head": "冷冻电镜",
+              "relation": "实现高分辨率成像",
+              "tail": "模块化聚酮合酶",
+              "claim": "冷冻电镜单颗粒分析技术突破天然蛋白质的构象异质性限制"
+            },
+            {
+              "step": 3,
+              "head": "模块化聚酮合酶",
+              "relation": "生成三维构象数据",
+              "tail": "冷冻电镜结构",
+              "claim": "嵌合双域结构的成功解析验证了跨域相互作用模型"
+            }
+          ],
+          [
+            {
+              "step": 1,
+              "head": "丙二酰辅酶",
+              "relation": "作为催化底物",
+              "tail": "酮合酶样脱羧酶",
+              "claim": "化学底物特异性影响硫酯键形成效率"
+            },
+            {
+              "step": 2,
+              "head": "酮合酶样脱羧酶",
+              "relation": "催化缩合反应",
+              "tail": "β-酮酰基硫酯",
+              "claim": "域间协同作用决定碳链延伸速率"
+            },
+            {
+              "step": 3,
+              "head": "β-酮酰基硫酯",
+              "relation": "形成前体化合物",
+              "tail": "聚酮抗生素",
+              "claim": "硫酯中间产物积累量直接关联终产物合成效率"
+            }
+          ]
+        ],
+        "三级": [
+          [
+            {
+              "step": 1,
+              "head": "祖先序列重建",
+              "relation": "用于重构",
+              "tail": "酮合酶样脱羧酶",
+              "claim": "祖先序列重建 用于重构 酮合酶样脱羧酶"
+            },
+            {
+              "step": 2,
+              "head": "酮合酶样脱羧酶",
+              "relation": "通过",
+              "tail": "冷冻电镜单颗粒分析",
+              "claim": "酮合酶样脱羧酶 通过 冷冻电镜单颗粒分析"
+            },
+            {
+              "step": 3,
+              "head": "冷冻电镜单颗粒分析",
+              "relation": "生成",
+              "tail": "冷冻电镜结构",
+              "claim": "冷冻电镜单颗粒分析 生成 冷冻电镜结构"
+            }
+          ],
+          [
+            {
+              "step": 1,
+              "head": "丙二酰辅酶",
+              "relation": "作为底物被",
+              "tail": "酰基转移酶",
+              "claim": "丙二酰辅酶 作为底物被 酰基转移酶"
+            },
+            {
+              "step": 2,
+              "head": "酰基转移酶",
+              "relation": "通过",
+              "tail": "域交换",
+              "claim": "酰基转移酶 通过 域交换"
+            },
+            {
+              "step": 3,
+              "head": "域交换",
+              "relation": "优化合成",
+              "tail": "聚酮抗生素",
+              "claim": "域交换 优化合成 聚酮抗生素"
+            }
+          ]
+        ],
+        "一级总结": [
+          "生物学面临聚酮合酶晶体结构解析瓶颈，需生物物理学冷冻电镜技术补位实现高分辨率结构测定",
+          "生物学受限于聚酮合酶催化域进化保守性，需分子生物学祖先序列重建技术揭示域功能演化",
+          "生物学存在底物适应性局限，需化学学科介入优化硫酯化学转化路径提升催化效率",
+          "生物学面临合成工程化挑战，需生物工程学科开发模块交换技术实现定制化聚酮生产"
+        ],
+        "二级总结": [
+          "通过祖先序列重建技术提供进化保守模板，结合冷冻电镜突破构象解析限制，最终获得模块化聚酮合酶的高分辨率三维结构数据",
+          "利用化学底物特异性调控酮合酶样脱羧酶的催化效率，通过优化硫酯键形成过程提升聚酮抗生素前体合成速率"
+        ],
+        "三级总结": [
+          "通过祖先序列重建获得稳定酮合酶样脱羧酶结构，结合冷冻电镜单颗粒分析技术，最终解析出高分辨率冷冻电镜结构",
+          "以丙二酰辅酶为化学底物，通过酰基转移酶的域交换改造，实现聚酮抗生素合成效率的提升"
+        ]
+      },
+      "graph": {
+        "nodes": [
+          {
+            "id": "模块化聚酮合酶",
+            "term": "modular polyketide synthases (PKSs)",
+            "normalized": "模块化聚酮合酶",
+            "discipline": "生物学",
+            "evidence": "Modular polyketide synthases (PKSs) are large multi-domain enzymes critical for the biosynthesis of polyketide antibiotics.",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "id": "祖先序列重建",
+            "term": "ancestral sequence reconstruction (ASR)",
+            "normalized": "祖先序列重建",
+            "discipline": "生物学",
+            "evidence": "In this report, we explore the potential of ancestral sequence reconstruction (ASR) for structure analysis of target proteins.",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "id": "酮合酶样脱羧酶",
+            "term": "ketosynthase-like decarboxylase (KSQ)",
+            "normalized": "酮合酶样脱羧酶",
+            "discipline": "生物学",
+            "evidence": "As a model, we focus on the FD-891 PKS loading module composed of ketosynthase-like decarboxylase (KSQ), acyltransferase (AT) and acyl carrier protein (ACP) domains.",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "id": "酰基转移酶",
+            "term": "acyltransferase (AT)",
+            "normalized": "酰基转移酶",
+            "discipline": "生物学",
+            "evidence": "As a model, we focus on the FD-891 PKS loading module composed of ketosynthase-like decarboxylase (KSQ), acyltransferase (AT) and acyl carrier protein (ACP) domains.",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "id": "酰基载体蛋白",
+            "term": "acyl carrier protein (ACP)",
+            "normalized": "酰基载体蛋白",
+            "discipline": "生物学",
+            "evidence": "As a model, we focus on the FD-891 PKS loading module composed of ketosynthase-like decarboxylase (KSQ), acyltransferase (AT) and acyl carrier protein (ACP) domains.",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "id": "KSQAncAT嵌合双域",
+            "term": "KSQAncAT chimeric didomain",
+            "normalized": "KSQAncAT嵌合双域",
+            "discipline": "生物学",
+            "evidence": "We construct a KSQAncAT chimeric didomain by replacing the native AT with an ancestral AT (AncAT) using ASR.",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "id": "冷冻电镜单颗粒分析",
+            "term": "cryo-EM single-particle analysis",
+            "normalized": "冷冻电镜单颗粒分析",
+            "discipline": "生物学",
+            "evidence": "These cryo-EM structures, which could not be determined for the native protein, exemplify the utility of ASR to enable cryo-EM single-particle analysis.",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "id": "聚酮抗生素",
+            "term": "polyketide antibiotics",
+            "normalized": "聚酮抗生素",
+            "discipline": "生物学",
+            "evidence": "Modular polyketide synthases (PKSs) are large multi-domain enzymes critical for the biosynthesis of polyketide antibiotics.",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "id": "高分辨率晶体结构",
+            "term": "high-resolution crystal structure",
+            "normalized": "高分辨率晶体结构",
+            "discipline": "生物学",
+            "evidence": "we successfully determine a high-resolution crystal structure of the KSQAncAT chimeric didomain and cryo-EM structures of the KSQ–ACP complex.",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "id": "冷冻电镜结构",
+            "term": "cryo-EM structures",
+            "normalized": "冷冻电镜结构",
+            "discipline": "生物学",
+            "evidence": "we successfully determine a high-resolution crystal structure of the KSQAncAT chimeric didomain and cryo-EM structures of the KSQ–ACP complex.",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "id": "丙二酰辅酶A",
+            "term": "malonyl-CoA",
+            "normalized": "丙二酰辅酶A",
+            "discipline": "化学",
+            "evidence": "The ATL domain transfers a malonyl unit onto ACPL.",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "id": "辅酶A",
+            "term": "CoA",
+            "normalized": "辅酶A",
+            "discipline": "化学",
+            "evidence": "The ATL domain transfers a malonyl unit onto ACPL.",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "id": "β-酮酰基硫酯",
+            "term": "β-ketoacyl thioester",
+            "normalized": "β-酮酰基硫酯",
+            "discipline": "化学",
+            "evidence": "The KS domain then catalyzes decarboxylative Claisen-like condensation of the (alkyl-)malonic acid moiety with the polyketide precursor to produce an elongated β-ketoacyl thioester.",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "id": "酮合酶域",
+            "term": "ketosynthase (KS) domain",
+            "normalized": "酮合酶域",
+            "discipline": "分子生物学",
+            "evidence": "A set of catalytic domains involved in one round of polyketide chain elongation is called a “module”, which contains three essential domains: ketosynthase (KS) domain, acyltransferase (AT) domain and acyl carrier protein (ACP) domain.",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "id": "酮还原酶",
+            "term": "ketoreductase (KR)",
+            "normalized": "酮还原酶",
+            "discipline": "分子生物学",
+            "evidence": "Optionally, the β-position of the β-ketoacyl thioester is modiﬁed by ketoreductase (KR), dehydratase (DH) and enoyl reductase (ER) domains in the same module.",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "id": "脱水酶",
+            "term": "dehydratase (DH)",
+            "normalized": "脱水酶",
+            "discipline": "分子生物学",
+            "evidence": "Optionally, the β-position of the β-ketoacyl thioester is modiﬁed by ketoreductase (KR), dehydratase (DH) and enoyl reductase (ER) domains in the same module.",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "id": "晶体结构",
+            "term": "crystal structure",
+            "normalized": "晶体结构",
+            "discipline": "生物物理学",
+            "evidence": "we successfully determine a high-resolution crystal structure of the KSQAncAT chimeric didomain and cryo-EM structures of the KSQ–ACP complex.",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "id": "冷冻电镜",
+            "term": "cryo-EM",
+            "normalized": "冷冻电镜",
+            "discipline": "生物物理学",
+            "evidence": "we successfully determine a high-resolution crystal structure of the KSQAncAT chimeric didomain and cryo-EM structures of the KSQ–ACP complex.",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "id": "单颗粒分析",
+            "term": "single-particle analysis",
+            "normalized": "单颗粒分析",
+            "discipline": "生物物理学",
+            "evidence": "These cryo-EM structures, which could not be determined for the native protein, exemplify the utility of ASR to enable cryo-EM single-particle analysis.",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "id": "域交换",
+            "term": "domain swapping",
+            "normalized": "域交换",
+            "discipline": "生物工程",
+            "evidence": "Therefore, efforts have been made to produce unnatural polyketides by engineering cis-AT PKSs, such as domain swapping and module swapping.",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "id": "模块交换",
+            "term": "module swapping",
+            "normalized": "模块交换",
+            "discipline": "生物工程",
+            "evidence": "Therefore, efforts have been made to produce unnatural polyketides by engineering cis-AT PKSs, such as domain swapping and module swapping.",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "id": "工程化顺式AT PKS",
+            "term": "engineering cis-AT PKSs",
+            "normalized": "工程化顺式AT PKS",
+            "discipline": "生物工程",
+            "evidence": "Therefore, efforts have been made to produce unnatural polyketides by engineering cis-AT PKSs, such as domain swapping and module swapping.",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "id": "KSQ–ACP complex",
+            "term": "KSQ–ACP complex",
+            "normalized": "KSQ–ACP complex",
+            "discipline": "struct_relation_inferred",
+            "evidence": "",
+            "source": "hypothesis_inferred",
+            "confidence": 0.8
+          },
+          {
+            "id": "丙二酰辅酶",
+            "term": "丙二酰辅酶",
+            "normalized": "丙二酰辅酶",
+            "discipline": "hypothesis_inferred",
+            "evidence": "",
+            "source": "hypothesis_inferred",
+            "confidence": 0.8
+          },
+          {
+            "id": "工程化顺式",
+            "term": "工程化顺式",
+            "normalized": "工程化顺式",
+            "discipline": "hypothesis_inferred",
+            "evidence": "",
+            "source": "hypothesis_inferred",
+            "confidence": 0.8
+          }
+        ],
+        "edges": [
+          {
+            "source": "祖先序列重建",
+            "target": "模块化聚酮合酶",
+            "relation": "enables structural analysis of",
+            "relation_type": "method_applied_to",
+            "metadata": {
+              "evidence": "In this report, we explore the potential of ancestral sequence reconstruction (ASR) for structure analysis of target proteins.",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "祖先序列重建",
+            "target": "冷冻电镜单颗粒分析",
+            "relation": "enables",
+            "relation_type": "method_applied_to",
+            "metadata": {
+              "evidence": "These cryo-EM structures, which could not be determined for the native protein, exemplify the utility of ASR to enable cryo-EM single-particle analysis.",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "KSQAncAT嵌合双域",
+            "target": "高分辨率晶体结构",
+            "relation": "was determined as",
+            "relation_type": "maps_to",
+            "metadata": {
+              "evidence": "we successfully determine a high-resolution crystal structure of the KSQAncAT chimeric didomain and cryo-EM structures of the KSQ–ACP complex.",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "KSQ–ACP complex",
+            "target": "冷冻电镜结构",
+            "relation": "was determined as",
+            "relation_type": "maps_to",
+            "metadata": {
+              "evidence": "we successfully determine a high-resolution crystal structure of the KSQAncAT chimeric didomain and cryo-EM structures of the KSQ–ACP complex.",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "模块化聚酮合酶",
+            "target": "聚酮抗生素",
+            "relation": "biosynthesizes",
+            "relation_type": "method_applied_to",
+            "metadata": {
+              "evidence": "Modular polyketide synthases (PKSs) are large multi-domain enzymes critical for the biosynthesis of polyketide antibiotics.",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "工程化顺式AT PKS",
+            "target": "域交换",
+            "relation": "includes",
+            "relation_type": "depends_on",
+            "metadata": {
+              "evidence": "Therefore, efforts have been made to produce unnatural polyketides by engineering cis-AT PKSs, such as domain swapping and module swapping.",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "工程化顺式AT PKS",
+            "target": "模块交换",
+            "relation": "includes",
+            "relation_type": "depends_on",
+            "metadata": {
+              "evidence": "Therefore, efforts have been made to produce unnatural polyketides by engineering cis-AT PKSs, such as domain swapping and module swapping.",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "模块化聚酮合酶",
+            "target": "高分辨率晶体结构",
+            "relation": "结构解析受阻于",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "模块化聚酮合酶因其复杂多域特性难以获得高分辨率晶体结构",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "高分辨率晶体结构",
+            "target": "冷冻电镜单颗粒分析",
+            "relation": "需借助",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "高分辨率结构解析需要冷冻电镜单颗粒分析技术突破",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "冷冻电镜单颗粒分析",
+            "target": "冷冻电镜结构",
+            "relation": "需生物物理学方法补位实现",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "需引入生物物理学的冷冻电镜技术解决聚酮合酶动态结构捕获难题",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "模块化聚酮合酶",
+            "target": "酮合酶样脱羧酶",
+            "relation": "功能优化受限于",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "聚酮合酶催化效率受酮合酶样脱羧酶域进化保守性制约",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "酮合酶样脱羧酶",
+            "target": "祖先序列重建",
+            "relation": "需通过",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "需通过分子生物学的祖先序列重建技术追溯功能域演化路径",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "祖先序列重建",
+            "target": "酮合酶域",
+            "relation": "需分子生物学方法补位解析",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "需结合分子生物学的域进化分析揭示催化域构效关系",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "模块化聚酮合酶",
+            "target": "丙二酰辅酶",
+            "relation": "底物适应性受限于",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "聚酮合酶底物特异性受化学分子丙二酰辅酶结合机制限制",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 2
+            }
+          },
+          {
+            "source": "丙二酰辅酶",
+            "target": "β-酮酰基硫酯",
+            "relation": "需通过",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "需化学方法优化β-酮酰基硫酯合成路径提升催化效率",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 2
+            }
+          },
+          {
+            "source": "β-酮酰基硫酯",
+            "target": "酰基转移酶",
+            "relation": "需化学方法补位调控",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "需化学学科介入设计新型底物以改善酰基转移酶域催化活性",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 2
+            }
+          },
+          {
+            "source": "模块化聚酮合酶",
+            "target": "域交换",
+            "relation": "工程化改造受限于",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "聚酮抗生素人工合成受制于域交换技术的精确控制",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 3
+            }
+          },
+          {
+            "source": "域交换",
+            "target": "模块交换",
+            "relation": "需整合",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "需生物工程方法协同优化域交换与模块交换策略",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 3
+            }
+          },
+          {
+            "source": "模块交换",
+            "target": "工程化顺式",
+            "relation": "需生物工程方法补位实现",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "需生物工程学科开发模块化组装技术构建定制化聚酮合成系统",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 3
+            }
+          },
+          {
+            "source": "祖先序列重建",
+            "target": "冷冻电镜",
+            "relation": "提供结构解析基础",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "祖先序列重建技术为冷冻电镜分析提供进化保守的结构模板",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "冷冻电镜",
+            "target": "模块化聚酮合酶",
+            "relation": "实现高分辨率成像",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "冷冻电镜单颗粒分析技术突破天然蛋白质的构象异质性限制",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "模块化聚酮合酶",
+            "target": "冷冻电镜结构",
+            "relation": "生成三维构象数据",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "嵌合双域结构的成功解析验证了跨域相互作用模型",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "丙二酰辅酶",
+            "target": "酮合酶样脱羧酶",
+            "relation": "作为催化底物",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "化学底物特异性影响硫酯键形成效率",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "酮合酶样脱羧酶",
+            "target": "β-酮酰基硫酯",
+            "relation": "催化缩合反应",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "域间协同作用决定碳链延伸速率",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "β-酮酰基硫酯",
+            "target": "聚酮抗生素",
+            "relation": "形成前体化合物",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "硫酯中间产物积累量直接关联终产物合成效率",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "祖先序列重建",
+            "target": "酮合酶样脱羧酶",
+            "relation": "用于重构",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "祖先序列重建 用于重构 酮合酶样脱羧酶",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "酮合酶样脱羧酶",
+            "target": "冷冻电镜单颗粒分析",
+            "relation": "通过",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "酮合酶样脱羧酶 通过 冷冻电镜单颗粒分析",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "冷冻电镜单颗粒分析",
+            "target": "冷冻电镜结构",
+            "relation": "生成",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "冷冻电镜单颗粒分析 生成 冷冻电镜结构",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "丙二酰辅酶",
+            "target": "酰基转移酶",
+            "relation": "作为底物被",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "丙二酰辅酶 作为底物被 酰基转移酶",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "酰基转移酶",
+            "target": "域交换",
+            "relation": "通过",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "酰基转移酶 通过 域交换",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "域交换",
+            "target": "聚酮抗生素",
+            "relation": "优化合成",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "域交换 优化合成 聚酮抗生素",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          }
+        ]
+      },
+      "metrics": {
+        "path_consistency": 0.0,
+        "coverage": 0.5909090909090909,
+        "bridging_score": 0.36,
+        "rao_stirling_diversity": 0.1186,
+        "embedding_bridging": 1.0,
+        "consistency_precision": 0.0,
+        "consistency_recall": 0.0,
+        "consistency_f1": 0.0,
+        "info_novelty": 0.0,
+        "chain_coherence": 0.543,
+        "atypical_combination": 0.5784,
+        "kg_density": 0.05,
+        "kg_inverse_modularity": 0.9281,
+        "kg_largest_cc_ratio": 0.72,
+        "kg_avg_betweenness": 0.0332,
+        "kg_clustering_coefficient": 0.2017,
+        "concept_recall": 0.0,
+        "concept_precision": 0.0,
+        "concept_f1": 0.0,
+        "relation_precision": 0.0,
+        "relation_type_accuracy": 0.0,
+        "evidence_coverage": 0.0,
+        "path_alignment_best": 0.0,
+        "path_alignment_mean": 0.0
+      }
+    },
+    "raw": "/* stage1: struct */\n/* concepts round1 */\n```json\n{\n  \"meta\": {\n    \"title\": \"Ancestral sequence reconstruction as a tool for structural analysis of modular polyketide synthases\",\n    \"primary\": \"生物学\",\n    \"secondary_list\": [\"化学\", \"分子生物学\", \"生物物理学\", \"生物工程\"]\n  },\n  \"概念\": {\n    \"主学科\": [\n      {\n        \"term\": \"modular polyketide synthases (PKSs)\",\n        \"normalized\": \"模块化聚酮合酶\",\n        \"std_label\": null,\n        \"evidence\": \"Modular polyketide synthases (PKSs) are large multi-domain enzymes critical for the biosynthesis of polyketide antibiotics.\",\n        \"source\": \"abstract\",\n        \"confidence\": 1\n      },\n      {\n        \"term\": \"ancestral sequence reconstruction (ASR)\",\n        \"normalized\": \"祖先序列重建\",\n        \"std_label\": null,\n        \"evidence\": \"In this report, we explore the potential of ancestral sequence reconstruction (ASR) for structure analysis of target proteins.\",\n        \"source\": \"abstract\",\n        \"confidence\": 1\n      },\n      {\n        \"term\": \"ketosynthase-like decarboxylase (KSQ)\",\n        \"normalized\": \"酮合酶样脱羧酶\",\n        \"std_label\": null,\n        \"evidence\": \"As a model, we focus on the FD-891 PKS loading module composed of ketosynthase-like decarboxylase (KSQ), acyltransferase (AT) and acyl carrier protein (ACP) domains.\",\n        \"source\": \"abstract\",\n        \"confidence\": 1\n      },\n      {\n        \"term\": \"acyltransferase (AT)\",\n        \"normalized\": \"酰基转移酶\",\n        \"std_label\": null,\n        \"evidence\": \"As a model, we focus on the FD-891 PKS loading module composed of ketosynthase-like decarboxylase (KSQ), acyltransferase (AT) and acyl carrier protein (ACP) domains.\",\n        \"source\": \"abstract\",\n        \"confidence\": 1\n      },\n      {\n        \"term\": \"acyl carrier protein (ACP)\",\n        \"normalized\": \"酰基载体蛋白\",\n        \"std_label\": null,\n        \"evidence\": \"As a model, we focus on the FD-891 PKS loading module composed of ketosynthase-like decarboxylase (KSQ), acyltransferase (AT) and acyl carrier protein (ACP) domains.\",\n        \"source\": \"abstract\",\n        \"confidence\": 1\n      },\n      {\n        \"term\": \"KSQAncAT chimeric didomain\",\n        \"normalized\": \"KSQAncAT嵌合双域\",\n        \"std_label\": null,\n        \"evidence\": \"We construct a KSQAncAT chimeric didomain by replacing the native AT with an ancestral AT (AncAT) using ASR.\",\n        \"source\": \"abstract\",\n        \"confidence\": 1\n      },\n      {\n        \"term\": \"cryo-EM single-particle analysis\",\n        \"normalized\": \"冷冻电镜单颗粒分析\",\n        \"std_label\": null,\n        \"evidence\": \"These cryo-EM structures, which could not be determined for the native protein, exemplify the utility of ASR to enable cryo-EM single-particle analysis.\",\n        \"source\": \"abstract\",\n        \"confidence\": 1\n      },\n      {\n        \"term\": \"polyketide antibiotics\",\n        \"normalized\": \"聚酮抗生素\",\n        \"std_label\": null,\n        \"evidence\": \"Modular polyketide synthases (PKSs) are large multi-domain enzymes critical for the biosynthesis of polyketide antibiotics.\",\n        \"source\": \"abstract\",\n        \"confidence\": 1\n      },\n      {\n        \"term\": \"high-resolution crystal structure\",\n        \"normalized\": \"高分辨率晶体结构\",\n        \"std_label\": null,\n        \"evidence\": \"we successfully determine a high-resolution crystal structure of the KSQAncAT chimeric didomain and cryo-EM structures of the KSQ–ACP complex.\",\n        \"source\": \"abstract\",\n        \"confidence\": 1\n      },\n      {\n        \"term\": \"cryo-EM structures\",\n        \"normalized\": \"冷冻电镜结构\",\n        \"std_label\": null,\n        \"evidence\": \"we successfully determine a high-resolution crystal structure of the KSQAncAT chimeric didomain and cryo-EM structures of the KSQ–ACP complex.\",\n        \"source\": \"abstract\",\n        \"confidence\": 1\n      }\n    ],\n    \"辅学科\": {\n      \"化学\": [\n        {\n          \"term\": \"malonyl-CoA\",\n          \"normalized\": \"丙二酰辅酶A\",\n          \"std_label\": null,\n          \"evidence\": \"The ATL domain transfers a malonyl unit onto ACPL.\",\n          \"source\": \"abstract\",\n          \"confidence\": 1\n        },\n        {\n          \"term\": \"CoA\",\n          \"normalized\": \"辅酶A\",\n          \"std_label\": null,\n          \"evidence\": \"The ATL domain transfers a malonyl unit onto ACPL.\",\n          \"source\": \"abstract\",\n          \"confidence\": 1\n        },\n        {\n          \"term\": \"β-ketoacyl thioester\",\n          \"normalized\": \"β-酮酰基硫酯\",\n          \"std_label\": null,\n          \"evidence\": \"The KS domain then catalyzes decarboxylative Claisen-like condensation of the (alkyl-)malonic acid moiety with the polyketide precursor to produce an elongated β-ketoacyl thioester.\",\n          \"source\": \"abstract\",\n          \"confidence\": 1\n        }\n      ],\n      \"分子生物学\": [\n        {\n          \"term\": \"ketosynthase (KS) domain\",\n          \"normalized\": \"酮合酶域\",\n          \"std_label\": null,\n          \"evidence\": \"A set of catalytic domains involved in one round of polyketide chain elongation is called a “module”, which contains three essential domains: ketosynthase (KS) domain, acyltransferase (AT) domain and acyl carrier protein (ACP) domain.\",\n          \"source\": \"abstract\",\n          \"confidence\": 1\n        },\n        {\n          \"term\": \"ketoreductase (KR)\",\n          \"normalized\": \"酮还原酶\",\n          \"std_label\": null,\n          \"evidence\": \"Optionally, the β-position of the β-ketoacyl thioester is modiﬁed by ketoreductase (KR), dehydratase (DH) and enoyl reductase (ER) domains in the same module.\",\n          \"source\": \"abstract\",\n          \"confidence\": 1\n        },\n        {\n          \"term\": \"dehydratase (DH)\",\n          \"normalized\": \"脱水酶\",\n          \"std_label\": null,\n          \"evidence\": \"Optionally, the β-position of the β-ketoacyl thioester is modiﬁed by ketoreductase (KR), dehydratase (DH) and enoyl reductase (ER) domains in the same module.\",\n          \"source\": \"abstract\",\n          \"confidence\": 1\n        }\n      ],\n      \"生物物理学\": [\n        {\n          \"term\": \"crystal structure\",\n          \"normalized\": \"晶体结构\",\n          \"std_label\": null,\n          \"evidence\": \"we successfully determine a high-resolution crystal structure of the KSQAncAT chimeric didomain and cryo-EM structures of the KSQ–ACP complex.\",\n          \"source\": \"abstract\",\n          \"confidence\": 1\n        },\n        {\n          \"term\": \"cryo-EM\",\n          \"normalized\": \"冷冻电镜\",\n          \"std_label\": null,\n          \"evidence\": \"we successfully determine a high-resolution crystal structure of the KSQAncAT chimeric didomain and cryo-EM structures of the KSQ–ACP complex.\",\n          \"source\": \"abstract\",\n          \"confidence\": 1\n        },\n        {\n          \"term\": \"single-particle analysis\",\n          \"normalized\": \"单颗粒分析\",\n          \"std_label\": null,\n          \"evidence\": \"These cryo-EM structures, which could not be determined for the native protein, exemplify the utility of ASR to enable cryo-EM single-particle analysis.\",\n          \"source\": \"abstract\",\n          \"confidence\": 1\n        }\n      ],\n      \"生物工程\": [\n        {\n          \"term\": \"domain swapping\",\n          \"normalized\": \"域交换\",\n          \"std_label\": null,\n          \"evidence\": \"Therefore, efforts have been made to produce unnatural polyketides by engineering cis-AT PKSs, such as domain swapping and module swapping.\",\n          \"source\": \"abstract\",\n          \"confidence\": 1\n        },\n        {\n          \"term\": \"module swapping\",\n          \"normalized\": \"模块交换\",\n          \"std_label\": null,\n          \"evidence\": \"Therefore, efforts have been made to produce unnatural polyketides by engineering cis-AT PKSs, such as domain swapping and module swapping.\",\n          \"source\": \"abstract\",\n          \"confidence\": 1\n        },\n        {\n          \"term\": \"engineering cis-AT PKSs\",\n          \"normalized\": \"工程化顺式AT PKS\",\n          \"std_label\": null,\n          \"evidence\": \"Therefore, efforts have been made to produce unnatural polyketides by engineering cis-AT PKSs, such as domain swapping and module swapping.\",\n          \"source\": \"abstract\",\n          \"confidence\": 1\n        }\n      ]\n    }\n  }\n}\n```\n\n/* concepts round2 (supplement) */\n```json\n{\n  \"补充概念\": {\n    \"主学科\": [\n      \"FD-891 PKS loading module\",\n      \"AncAT\",\n      \"KSQAT didomain\",\n      \"KSQ–ACP complex\",\n      \"GfsA loading module\",\n      \"elongation module 1\",\n      \"GfsA\",\n      \"ATL\",\n      \"KAL\",\n      \"PAL\",\n      \"ACPL\",\n      \"KS1\",\n      \"KR1\",\n      \"P1\",\n      \"PL\",\n      \"C\",\n      \"A\",\n      \"starter unit\",\n      \"pantetheine arm\",\n      \"extender unit\",\n      \"Claisen-like condensation\",\n      \"enoyl reductase (ER)\",\n      \"thioesterase (TE) domain\",\n      \"wild-t\"\n    ],\n    \"辅学科\": {\n      \"化学\": [\n        \"polyketide natural products\",\n        \"erythromycin\",\n        \"rifamycin\",\n        \"epothilone\",\n        \"non-native polyketides\"\n      ],\n      \"分子生物学\": [\n        \"multi-domain enzymes\",\n        \"catalytic domains\",\n        \"module\",\n        \"polyketide chain elongation\",\n        \"polyketide precursor\",\n        \"polyketide chain\",\n        \"unnatural polyketides\"\n      ],\n      \"生物物理学\": [],\n      \"生物工程\": [\n        \"engineering cis-AT PKSs\",\n        \"domain swapping\",\n        \"module swapping\"\n      ]\n    }\n  }\n}\n```\n\n/* relations */\n{\n  \"跨学科关系\": [\n    {\n      \"head\": \"ancestral sequence reconstruction (ASR)\",\n      \"tail\": \"modular polyketide synthases (PKSs)\",\n      \"relation\": \"enables structural analysis of\",\n      \"relation_type\": \"method_applied_to\",\n      \"direction\": \"->\",\n      \"assumptions\": [],\n      \"evidence\": \"In this report, we explore the potential of ancestral sequence reconstruction (ASR) for structure analysis of target proteins.\",\n      \"source\": \"abstract\",\n      \"confidence\": 0.9\n    },\n    {\n      \"head\": \"ancestral sequence reconstruction (ASR)\",\n      \"tail\": \"cryo-EM single-particle analysis\",\n      \"relation\": \"enables\",\n      \"relation_type\": \"method_applied_to\",\n      \"direction\": \"->\",\n      \"assumptions\": [],\n      \"evidence\": \"These cryo-EM structures, which could not be determined for the native protein, exemplify the utility of ASR to enable cryo-EM single-particle analysis.\",\n      \"source\": \"abstract\",\n      \"confidence\": 0.9\n    },\n    {\n      \"head\": \"KSQAncAT chimeric didomain\",\n      \"tail\": \"high-resolution crystal structure\",\n      \"relation\": \"was determined as\",\n      \"relation_type\": \"maps_to\",\n      \"direction\": \"->\",\n      \"assumptions\": [],\n      \"evidence\": \"we successfully determine a high-resolution crystal structure of the KSQAncAT chimeric didomain and cryo-EM structures of the KSQ–ACP complex.\",\n      \"source\": \"abstract\",\n      \"confidence\": 0.9\n    },\n    {\n      \"head\": \"KSQ–ACP complex\",\n      \"tail\": \"cryo-EM structures\",\n      \"relation\": \"was determined as\",\n      \"relation_type\": \"maps_to\",\n      \"direction\": \"->\",\n      \"assumptions\": [],\n      \"evidence\": \"we successfully determine a high-resolution crystal structure of the KSQAncAT chimeric didomain and cryo-EM structures of the KSQ–ACP complex.\",\n      \"source\": \"abstract\",\n      \"confidence\": 0.9\n    },\n    {\n      \"head\": \"modular polyketide synthases (PKSs)\",\n      \"tail\": \"polyketide antibiotics\",\n      \"relation\": \"biosynthesizes\",\n      \"relation_type\": \"method_applied_to\",\n      \"direction\": \"->\",\n      \"assumptions\": [],\n      \"evidence\": \"Modular polyketide synthases (PKSs) are large multi-domain enzymes critical for the biosynthesis of polyketide antibiotics.\",\n      \"source\": \"abstract\",\n      \"confidence\": 0.9\n    },\n    {\n      \"head\": \"engineering cis-AT PKSs\",\n      \"tail\": \"domain swapping\",\n      \"relation\": \"includes\",\n      \"relation_type\": \"depends_on\",\n      \"direction\": \"->\",\n      \"assumptions\": [],\n      \"evidence\": \"Therefore, efforts have been made to produce unnatural polyketides by engineering cis-AT PKSs, such as domain swapping and module swapping.\",\n      \"source\": \"abstract\",\n      \"confidence\": 0.9\n    },\n    {\n      \"head\": \"engineering cis-AT PKSs\",\n      \"tail\": \"module swapping\",\n      \"relation\": \"includes\",\n      \"relation_type\": \"depends_on\",\n      \"direction\": \"->\",\n      \"assumptions\": [],\n      \"evidence\": \"Therefore, efforts have been made to produce unnatural polyketides by engineering cis-AT PKSs, such as domain swapping and module swapping.\",\n      \"source\": \"abstract\",\n      \"confidence\": 0.9\n    }\n  ]\n}\n\n/* stage2: query */\n{\n  \"按辅助学科分类\": {\n    \"化学\": {\n      \"概念\": [\"丙二酰辅酶A\", \"辅酶A\", \"β-酮酰基硫酯\"],\n      \"关系\": [5],\n      \"rationale\": \"提供聚酮合酶催化反应所需的底物化学物质与反应机理分析\"\n    },\n    \"分子生物学\": {\n      \"概念\": [\"酮合酶域\", \"酮还原酶\", \"脱水酶\"],\n      \"关系\": [0, 1],\n      \"rationale\": \"解析模块化聚酮合酶的功能域组成与进化保守性特征\"\n    },\n    \"生物物理学\": {\n      \"概念\": [\"晶体结构\", \"冷冻电镜\", \"单颗粒分析\"],\n      \"关系\": [2, 3],\n      \"rationale\": \"通过结构生物学手段揭示嵌合双域与复合体的三维构象\"\n    },\n    \"生物工程\": {\n      \"概念\": [\"域交换\", \"模块交换\", \"工程化顺式AT PKS\"],\n      \"关系\": [5, 6],\n      \"rationale\": \"开发合成生物学改造策略以设计非天然聚酮化合物\"\n    }\n  },\n  \"查询\": {\n    \"一级\": \"如何解析模块化聚酮合酶的结构与功能关系\",\n    \"二级\": [\n      \"如何结合祖先序列重建与冷冻电镜技术解析聚酮合酶结构\",\n      \"如何利用化学底物分析优化聚酮合酶催化效率\"\n    ],\n    \"三级\": [\n      \"如何通过分子生物学域进化分析与生物物理学冷冻电镜技术协同确定聚酮合酶功能域的三维构象\",\n      \"如何整合化学底物设计与生物工程域交换策略构建高效聚酮抗生素合成体系\"\n    ]\n  }\n}\n\n/* stage3: hypothesis L1 */\n{\n  \"假设\": {\n    \"一级\": [\n      [\n        {\n          \"step\": 1,\n          \"head\": \"模块化聚酮合酶\",\n          \"relation\": \"结构解析受阻于\",\n          \"tail\": \"高分辨率晶体结构\",\n          \"claim\": \"模块化聚酮合酶因其复杂多域特性难以获得高分辨率晶体结构\"\n        },\n        {\n          \"step\": 2,\n          \"head\": \"高分辨率晶体结构\",\n          \"relation\": \"需借助\",\n          \"tail\": \"冷冻电镜单颗粒分析\",\n          \"claim\": \"高分辨率结构解析需要冷冻电镜单颗粒分析技术突破\"\n        },\n        {\n          \"step\": 3,\n          \"head\": \"冷冻电镜单颗粒分析\",\n          \"relation\": \"需生物物理学方法补位实现\",\n          \"tail\": \"冷冻电镜结构\",\n          \"claim\": \"需引入生物物理学的冷冻电镜技术解决聚酮合酶动态结构捕获难题\"\n        }\n      ],\n      [\n        {\n          \"step\": 1,\n          \"head\": \"模块化聚酮合酶\",\n          \"relation\": \"功能优化受限于\",\n          \"tail\": \"酮合酶样脱羧酶\",\n          \"claim\": \"聚酮合酶催化效率受酮合酶样脱羧酶域进化保守性制约\"\n        },\n        {\n          \"step\": 2,\n          \"head\": \"酮合酶样脱羧酶\",\n          \"relation\": \"需通过\",\n          \"tail\": \"祖先序列重建\",\n          \"claim\": \"需通过分子生物学的祖先序列重建技术追溯功能域演化路径\"\n        },\n        {\n          \"step\": 3,\n          \"head\": \"祖先序列重建\",\n          \"relation\": \"需分子生物学方法补位解析\",\n          \"tail\": \"酮合酶域\",\n          \"claim\": \"需结合分子生物学的域进化分析揭示催化域构效关系\"\n        }\n      ],\n      [\n        {\n          \"step\": 1,\n          \"head\": \"模块化聚酮合酶\",\n          \"relation\": \"底物适应性受限于\",\n          \"tail\": \"丙二酰辅酶A\",\n          \"claim\": \"聚酮合酶底物特异性受化学分子丙二酰辅酶A结合机制限制\"\n        },\n        {\n          \"step\": 2,\n          \"head\": \"丙二酰辅酶A\",\n          \"relation\": \"需通过\",\n          \"tail\": \"β-酮酰基硫酯\",\n          \"claim\": \"需化学方法优化β-酮酰基硫酯合成路径提升催化效率\"\n        },\n        {\n          \"step\": 3,\n          \"head\": \"β-酮酰基硫酯\",\n          \"relation\": \"需化学方法补位调控\",\n          \"tail\": \"酰基转移酶\",\n          \"claim\": \"需化学学科介入设计新型底物以改善酰基转移酶域催化活性\"\n        }\n      ],\n      [\n        {\n          \"step\": 1,\n          \"head\": \"模块化聚酮合酶\",\n          \"relation\": \"工程化改造受限于\",\n          \"tail\": \"域交换\",\n          \"claim\": \"聚酮抗生素人工合成受制于域交换技术的精确控制\"\n        },\n        {\n          \"step\": 2,\n          \"head\": \"域交换\",\n          \"relation\": \"需整合\",\n          \"tail\": \"模块交换\",\n          \"claim\": \"需生物工程方法协同优化域交换与模块交换策略\"\n        },\n        {\n          \"step\": 3,\n          \"head\": \"模块交换\",\n          \"relation\": \"需生物工程方法补位实现\",\n          \"tail\": \"工程化顺式AT PKS\",\n          \"claim\": \"需生物工程学科开发模块化组装技术构建定制化聚酮合成系统\"\n        }\n      ]\n    ],\n    \"一级总结\": [\n      \"生物学面临聚酮合酶晶体结构解析瓶颈，需生物物理学冷冻电镜技术补位实现高分辨率结构测定\",\n      \"生物学受限于聚酮合酶催化域进化保守性，需分子生物学祖先序列重建技术揭示域功能演化\",\n      \"生物学存在底物适应性局限，需化学学科介入优化硫酯化学转化路径提升催化效率\",\n      \"生物学面临合成工程化挑战，需生物工程学科开发模块交换技术实现定制化聚酮生产\"\n    ]\n  }\n}\n\n/* stage3: hypothesis L2 */\n{\n  \"假设\": {\n    \"二级\": [\n      [\n        {\n          \"head\": \"祖先序列重建\",\n          \"tail\": \"冷冻电镜\",\n          \"relation\": \"提供结构解析基础\",\n          \"claim\": \"祖先序列重建技术为冷冻电镜分析提供进化保守的结构模板\"\n        },\n        {\n          \"head\": \"冷冻电镜\",\n          \"tail\": \"模块化聚酮合酶\",\n          \"relation\": \"实现高分辨率成像\",\n          \"claim\": \"冷冻电镜单颗粒分析技术突破天然蛋白质的构象异质性限制\"\n        },\n        {\n          \"head\": \"模块化聚酮合酶\",\n          \"tail\": \"冷冻电镜结构\",\n          \"relation\": \"生成三维构象数据\",\n          \"claim\": \"嵌合双域结构的成功解析验证了跨域相互作用模型\"\n        }\n      ],\n      [\n        {\n          \"head\": \"丙二酰辅酶A\",\n          \"tail\": \"酮合酶样脱羧酶\",\n          \"relation\": \"作为催化底物\",\n          \"claim\": \"化学底物特异性影响硫酯键形成效率\"\n        },\n        {\n          \"head\": \"酮合酶样脱羧酶\",\n          \"tail\": \"β-酮酰基硫酯\",\n          \"relation\": \"催化缩合反应\",\n          \"claim\": \"域间协同作用决定碳链延伸速率\"\n        },\n        {\n          \"head\": \"β-酮酰基硫酯\",\n          \"tail\": \"聚酮抗生素\",\n          \"relation\": \"形成前体化合物\",\n          \"claim\": \"硫酯中间产物积累量直接关联终产物合成效率\"\n        }\n      ]\n    ],\n    \"二级总结\": [\n      \"通过祖先序列重建技术提供进化保守模板，结合冷冻电镜突破构象解析限制，最终获得模块化聚酮合酶的高分辨率三维结构数据\",\n      \"利用化学底物特异性调控酮合酶样脱羧酶的催化效率，通过优化硫酯键形成过程提升聚酮抗生素前体合成速率\"\n    ]\n  }\n}\n\n/* stage3: hypothesis L3 */\n{\n  \"假设\": {\n    \"三级\": [\n      [\n        {\n          \"head\": \"祖先序列重建\",\n          \"tail\": \"酮合酶样脱羧酶\",\n          \"relation\": \"用于重构\"\n        },\n        {\n          \"head\": \"酮合酶样脱羧酶\",\n          \"tail\": \"冷冻电镜单颗粒分析\",\n          \"relation\": \"通过\"\n        },\n        {\n          \"head\": \"冷冻电镜单颗粒分析\",\n          \"tail\": \"冷冻电镜结构\",\n          \"relation\": \"生成\"\n        }\n      ],\n      [\n        {\n          \"head\": \"丙二酰辅酶A\",\n          \"tail\": \"酰基转移酶\",\n          \"relation\": \"作为底物被\"\n        },\n        {\n          \"head\": \"酰基转移酶\",\n          \"tail\": \"域交换\",\n          \"relation\": \"通过\"\n        },\n        {\n          \"head\": \"域交换\",\n          \"tail\": \"聚酮抗生素\",\n          \"relation\": \"优化合成\"\n        }\n      ]\n    ],\n    \"三级总结\": [\n      \"通过祖先序列重建获得稳定酮合酶样脱羧酶结构，结合冷冻电镜单颗粒分析技术，最终解析出高分辨率冷冻电镜结构\",\n      \"以丙二酰辅酶A为化学底物，通过酰基转移酶的域交换改造，实现聚酮抗生素合成效率的提升\"\n    ]\n  }\n}",
+    "ok": true,
+    "error": ""
+  },
+  {
+    "title": "Janus hydrogel microrobots with bioactive ions for the regeneration of tendon-bone interface",
+    "abstract": "Regenerating natural gradients of the tendon‒bone interface (TBI) is a major challenge in the reconstruction of rotator cuff tear (RCT). In this study, magnetic Janus hydrogel microrobots to match the TBI orientation during RCT reconstruction surgery are developed via a biofriendly gas-shearing microfluidic platform. Through separate loading of Mg2+ and Zn2+, the microrobots facilitate the immediate restoration and long-term maintenance of the natural mineral gradient in the TBI after implantation and alignment through magnetic manipulation. In vitro studies confirm the spatiotemporal cell phenotype modulation effects of the microrobots. In a rat RCT model, microrobots synchronously promote the bone and tendon regeneration, and the restoration of gradient tendon‒bone transition structures in the TBI. Overall, by rebuilding the Mg2+/Zn2+ mineral gradient, cell phenotype gradient and structural gradient of the TBI, magnetic Janus microrobots loaded with dual bioactive ions represent a promising strategy for promoting TBI healing in RCT reconstruction surgery.",
+    "pdf_url": "https://www.nature.com/articles/s41467-025-57499-x.pdf",
+    "primary": "临床医学",
+    "secondary": "生物学, 材料科学, 生理学",
+    "secondary_list": [
+      "生物学",
+      "材料科学",
+      "生理学"
+    ],
+    "introduction": "Article\n\nhttps://doi.org/10.1038/s41467-025-57499-x\n\nJanus hydrogel microrobots with bioactive\nions for the regeneration of tendon-bone\ninterface\n\nReceived: 25 April 2024\n\nAccepted: 25 February 2025\n\nCheck for updates\n\n;\n,\n:\n)\n(\n\n0\n9\n8\n7\n6\n5\n4\n3\n2\n1\n\n;\n,\n:\n)\n(\n\n0\n9\n8\n7\n6\n5\n4\n3\n2\n1\n\nZichuan Ding1,2,7, Yongrui Cai1,7, Haocheng Sun1, Xiao Rong 2, Sipei Ye3,\nJiaxuan Fan1, Yahao Lai1, Zhimin Liang4, Chao Huang1, Peilin Li\nLiu Wang 3, Guosheng Tang 6\n\n, Zongke Zhou 1 & Zeyu Luo 1\n\n5, Xiaoxue Fu1,\n\nRegenerating natural gradients of the tendon‒bone interface (TBI) is a major\nchallenge in the reconstruction of rotator cuff tear (RCT). In this study, mag-\nnetic Janus hydrogel microrobots to match the TBI orientation during RCT\nreconstruction surgery are developed via a biofriendly gas-shearing micro-\nﬂuidic platform. Through separate loading of Mg2+ and Zn2+, the microrobots\nfacilitate the immediate restoration and long-term maintenance of the natural\nmineral gradient in the TBI after implantation and alignment through magnetic\nmanipulation. In vitro studies conﬁrm the spatiotemporal cell phenotype\nmodulation effects of the microrobots. In a rat RCT model, microrobots syn-\nchronously promote the bone and tendon regeneration, and the restoration of\ngradient tendon‒bone transition structures in the TBI. Overall, by rebuilding\nthe Mg2+/Zn2+ mineral gradient, cell phenotype gradient and structural gra-\ndient of the TBI, magnetic Janus microrobots loaded with dual bioactive ions\nrepresent a promising strategy for promoting TBI healing in RCT reconstruc-\ntion surgery.\n\nRotator cuff tear (RCT) is the predominant cause of shoulder joint\ndisability and are particularly prevalent among the elderly population.\nThe incidence of full-thickness RCT among the general population\nexceeds 20%, with a notable increase in those aged 80 years and above,\nwhere the proportion even surpasses 50%1. Given the limited inherent\ncapacity for intrinsic healing of the rotator cuff, reconstruction surgery\nis often required after RCT to restore the structural integrity of the\nrotator cuff and achieve better clinical outcomes for affected patients2.\nNevertheless, despite concerted endeavors directed toward reﬁning\nsurgical techniques and postoperative rehabilitation, the reported\n\nfailure rates of RCT reconstruction are still as high as 20%-70%3, pri-\nmarily due to the poor healing of the tendon‒bone interface (TBI) after\nsurgical intervention4. The TBI is a hierarchical transition tissue span-\nning the submillimeter dimension characterized by natural gradients\nin composition, cell phenotype, and structure from the tendon to the\nbone5,6. The variations in the composition of the TBI, especially the\ncontents of minerals such as Ca2+, Mg2+, and Zn2+, constitute the natural\ncomposition gradient of the TBI7–9. In addition, bone tissue is char-\nacterized primarily by a high presence of terminally differentiated cells\nderived from bone mesenchymal stem cells (BMSCs), and tendon\n\n1Orthopaedic Research Institute, Department of Orthopaedics, West China Hospital, Sichuan University, Chengdu, China. 2Department of Medical Ultrasound,\nWest China Hospital, Sichuan University, Chengdu, China. 3CAS Key Laboratory of Mechanical Behavior and Design of Materials, Department of Modern\nMechanics, University of Science and Technology of China, Hefei, China. 4West China School of Nursing, Sichuan University, Chengdu, China. 5State Key\nLaboratory of Oral Diseases & National Center for Stomatology & National Clinical Research Center for Oral Diseases & West China Hospital of Stomatology,\nSichuan University, Chengdu, China. 6Guangzhou Municipal and Guangdong Provincial Key Laboratory of Molecular Target & Clinical Pharmacology, the\nNMPA and State Key Laboratory of Respiratory Disease, the Fifth Afﬁliated Hospital and School of Pharmaceutical Sciences, Guangzhou Medical University,\nGuangzhou, China. 7These authors contributed equally: Zichuan Ding, Yongrui Cai.\nluozy@wchscu.edu.cn\n\ne-mail: guoshengtang@gzhmu.edu.cn; zhouzongke@scu.edu.cn;\n\nNature Communications | \n\n (2025) 16:2189 \n\n1\n\n \n \n \n \n \n \n\fArticle\n\nhttps://doi.org/10.1038/s41467-025-57499-x\n\ntissue is rich in active tenocytes (TCs), representing the main mani-\nfestation of the cell phenotype gradient in the TBI6,9. Furthermore, the\ngradual changes in the orientation of collagen ﬁbers from tendon with\nhighly aligned collagen ﬁbers to bone with less organized collagen\nﬁbers are the primary reasons for the formation of the structural\ngradient5,10. The gradient in mineral content plays a key role in the\nformation and maintenance of the cell phenotype gradient, which in\nturn is responsible for the formation and reconstruction of the ten-\ndon‒bone transition structure in the TBI5,6,11,12. To date, the key chal-\nlenge of RCT reconstruction still lies in developing effective strategies\nto rebuild these gradients in the TBI and thus achieve better TBI\nhealing effects.\n\nBioactive metal ions have garnered considerable attention for\ntheir role in facilitating tissue regeneration. Variations in the content of\nvarious bioactive metal ions across different tissues exist, each exhi-\nbiting specialized functions in maintaining the normal physiological\nfunction of tissues and fostering tissue regenerative processes.\nResearchers have reported a signiﬁcantly greater Mg2+/Zn2+ ratio in\nhuman bone tissue than in tendon tissue, indicating a natural gradient\nin their content in the TBI13,14. Magnesium, an essential element for the\nhuman body, primarily resides in the skeletal system and plays a\npivotal role in bone development, metabolism, and regeneration15.\nMg2+ can accelerate bone regeneration by promoting the proliferation,\naccumulation, and osteogenic differentiation of BMSCs16; suppressing\nosteoclast activity17; and regulating the metabolism and functionality\nof parathyroid hormone and vitamin D18. Zinc, which is abundant in\ntendons and muscles, serves as a cofactor for numerous transcription\nfactors and enzyme syst",
+    "parsed": {
+      "meta": {
+        "title": "Janus hydrogel microrobots with bioactive ions for the regeneration of tendon-bone interface",
+        "primary": "临床医学",
+        "secondary_list": [
+          "生物学",
+          "材料科学",
+          "生理学"
+        ]
+      },
+      "概念": {
+        "主学科": [
+          {
+            "term": "tendon‒bone interface (TBI)",
+            "normalized": "肌腱-骨界面",
+            "std_label": null,
+            "evidence": "Regenerating natural gradients of the tendon‒bone interface (TBI) is a major challenge in the reconstruction of rotator cuff tear (RCT).",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "term": "rotator cuff tear (RCT)",
+            "normalized": "肩袖撕裂",
+            "std_label": null,
+            "evidence": "Regenerating natural gradients of the tendon‒bone interface (TBI) is a major challenge in the reconstruction of rotator cuff tear (RCT).",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "term": "RCT reconstruction surgery",
+            "normalized": "肩袖撕裂重建手术",
+            "std_label": null,
+            "evidence": "magnetic Janus hydrogel microrobots to match the TBI orientation during RCT reconstruction surgery are developed via a biofriendly gas-shearing microfluidic platform.",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "term": "Mg2+/Zn2+ mineral gradient",
+            "normalized": "Mg2+/Zn2+矿物质梯度",
+            "std_label": null,
+            "evidence": "by rebuilding the Mg2+/Zn2+ mineral gradient, cell phenotype gradient and structural gradient of the TBI, magnetic Janus microrobots loaded with dual bioactive ions represent a promising strategy for promoting TBI healing in RCT reconstruction surgery.",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "term": "cell phenotype gradient",
+            "normalized": "细胞表型梯度",
+            "std_label": null,
+            "evidence": "by rebuilding the Mg2+/Zn2+ mineral gradient, cell phenotype gradient and structural gradient of the TBI, magnetic Janus microrobots loaded with dual bioactive ions represent a promising strategy for promoting TBI healing in RCT reconstruction surgery.",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "term": "structural gradient",
+            "normalized": "结构梯度",
+            "std_label": null,
+            "evidence": "by rebuilding the Mg2+/Zn2+ mineral gradient, cell phenotype gradient and structural gradient of the TBI, magnetic Janus microrobots loaded with dual bioactive ions represent a promising strategy for promoting TBI healing in RCT reconstruction surgery.",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "term": "TBI healing",
+            "normalized": "肌腱-骨界面愈合",
+            "std_label": null,
+            "evidence": "magnetic Janus microrobots loaded with dual bioactive ions represent a promising strategy for promoting TBI healing in RCT reconstruction surgery.",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "term": "bone and tendon regeneration",
+            "normalized": "骨和肌腱再生",
+            "std_label": null,
+            "evidence": "In a rat RCT model, microrobots synchronously promote the bone and tendon regeneration, and the restoration of gradient tendon‒bone transition structures in the TBI.",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "term": "gradient tendon‒bone transition structures",
+            "normalized": "梯度肌腱-骨过渡结构",
+            "std_label": null,
+            "evidence": "In a rat RCT model, microrobots synchronously promote the bone and tendon regeneration, and the restoration of gradient tendon‒bone transition structures in the TBI.",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "term": "spatiotemporal cell phenotype modulation effects",
+            "normalized": "时空细胞表型调节效应",
+            "std_label": null,
+            "evidence": "In vitro studies confirm the spatiotemporal cell phenotype modulation effects of the microrobots.",
+            "source": "abstract",
+            "confidence": 1.0
+          }
+        ],
+        "辅学科": {
+          "生物学": [
+            {
+              "term": "Mg2+",
+              "normalized": "镁离子",
+              "std_label": null,
+              "evidence": "Through separate loading of Mg2+ and Zn2+, the microrobots facilitate the immediate restoration and long-term maintenance of the natural mineral gradient in the TBI after implantation and alignment through magnetic manipulation.",
+              "source": "abstract",
+              "confidence": 1.0
+            },
+            {
+              "term": "Zn2+",
+              "normalized": "锌离子",
+              "std_label": null,
+              "evidence": "Through separate loading of Mg2+ and Zn2+, the microrobots facilitate the immediate restoration and long-term maintenance of the natural mineral gradient in the TBI after implantation and alignment through magnetic manipulation.",
+              "source": "abstract",
+              "confidence": 1.0
+            },
+            {
+              "term": "bone mesenchymal stem cells (BMSCs)",
+              "normalized": "骨髓间充质干细胞",
+              "std_label": null,
+              "evidence": "bone tissue is characterized primarily by a high presence of terminally differentiated cells derived from bone mesenchymal stem cells (BMSCs), and tendon tissue is rich in active tenocytes (TCs), representing the main manifestation of the cell phenotype gradient in the TBI.",
+              "source": "introduction",
+              "confidence": 1.0
+            },
+            {
+              "term": "tenocytes (TCs)",
+              "normalized": "肌腱细胞",
+              "std_label": null,
+              "evidence": "bone tissue is characterized primarily by a high presence of terminally differentiated cells derived from bone mesenchymal stem cells (BMSCs), and tendon tissue is rich in active tenocytes (TCs), representing the main manifestation of the cell phenotype gradient in the TBI.",
+              "source": "introduction",
+              "confidence": 1.0
+            }
+          ],
+          "材料科学": [
+            {
+              "term": "Janus hydrogel microrobots",
+              "normalized": "Janus水凝胶微型机器人",
+              "std_label": null,
+              "evidence": "In this study, magnetic Janus hydrogel microrobots to match the TBI orientation during RCT reconstruction surgery are developed via a biofriendly gas-shearing microfluidic platform.",
+              "source": "abstract",
+              "confidence": 1.0
+            },
+            {
+              "term": "biofriendly gas-shearing microfluidic platform",
+              "normalized": "生物友好型气体剪切微流控平台",
+              "std_label": null,
+              "evidence": "In this study, magnetic Janus hydrogel microrobots to match the TBI orientation during RCT reconstruction surgery are developed via a biofriendly gas-shearing microfluidic platform.",
+              "source": "abstract",
+              "confidence": 1.0
+            },
+            {
+              "term": "magnetic manipulation",
+              "normalized": "磁操控",
+              "std_label": null,
+              "evidence": "the microrobots facilitate the immediate restoration and long-term maintenance of the natural mineral gradient in the TBI after implantation and alignment through magnetic manipulation.",
+              "source": "abstract",
+              "confidence": 1.0
+            }
+          ],
+          "生理学": [
+            {
+              "term": "natural mineral gradient",
+              "normalized": "天然矿物质梯度",
+              "std_label": null,
+              "evidence": "the microrobots facilitate the immediate restoration and long-term maintenance of the natural mineral gradient in the TBI after implantation and alignment through magnetic manipulation.",
+              "source": "abstract",
+              "confidence": 1.0
+            },
+            {
+              "term": "osteogenic differentiation",
+              "normalized": "成骨分化",
+              "std_label": null,
+              "evidence": "Mg2+ can accelerate bone regeneration by promoting the proliferation, accumulation, and osteogenic differentiation of BMSCs.",
+              "source": "introduction",
+              "confidence": 1.0
+            },
+            {
+              "term": "osteoclast activity",
+              "normalized": "破骨细胞活性",
+              "std_label": null,
+              "evidence": "Mg2+ can accelerate bone regeneration by promoting the proliferation, accumulation, and osteogenic differentiation of BMSCs; suppressing osteoclast activity.",
+              "source": "introduction",
+              "confidence": 1.0
+            }
+          ]
+        }
+      },
+      "跨学科关系": [
+        {
+          "head": "Janus hydrogel microrobots",
+          "relation": "match the TBI orientation during RCT reconstruction surgery",
+          "relation_type": "method_applied_to",
+          "relation_type_norm": "method_applied_to",
+          "relation_type_raw": "method_applied_to",
+          "tail": "tendon‒bone interface (TBI)",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "magnetic Janus hydrogel microrobots to match the TBI orientation during RCT reconstruction surgery are developed via a biofriendly gas-shearing microfluidic platform.",
+          "source": "abstract",
+          "confidence": 1.0
+        },
+        {
+          "head": "Janus hydrogel microrobots",
+          "relation": "facilitate the immediate restoration and long-term maintenance",
+          "relation_type": "improves_metric",
+          "relation_type_norm": "improves_metric",
+          "relation_type_raw": "improves_metric",
+          "tail": "natural mineral gradient",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "the microrobots facilitate the immediate restoration and long-term maintenance of the natural mineral gradient in the TBI after implantation and alignment through magnetic manipulation.",
+          "source": "abstract",
+          "confidence": 1.0
+        },
+        {
+          "head": "Mg2+",
+          "relation": "promoting the proliferation, accumulation, and osteogenic differentiation of BMSCs",
+          "relation_type": "improves_metric",
+          "relation_type_norm": "improves_metric",
+          "relation_type_raw": "improves_metric",
+          "tail": "osteogenic differentiation",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "Mg2+ can accelerate bone regeneration by promoting the proliferation, accumulation, and osteogenic differentiation of BMSCs.",
+          "source": "introduction",
+          "confidence": 1.0
+        },
+        {
+          "head": "Mg2+",
+          "relation": "suppressing osteoclast activity",
+          "relation_type": "constrains",
+          "relation_type_norm": "constrains",
+          "relation_type_raw": "constrains",
+          "tail": "osteoclast activity",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "Mg2+ can accelerate bone regeneration by promoting the proliferation, accumulation, and osteogenic differentiation of BMSCs; suppressing osteoclast activity.",
+          "source": "introduction",
+          "confidence": 1.0
+        },
+        {
+          "head": "Mg2+/Zn2+ mineral gradient",
+          "relation": "plays a key role in the formation and maintenance",
+          "relation_type": "driven_by",
+          "relation_type_norm": "driven_by",
+          "relation_type_raw": "driven_by",
+          "tail": "cell phenotype gradient",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "The gradient in mineral content plays a key role in the formation and maintenance of the cell phenotype gradient, which in turn is responsible for the formation and reconstruction of the tendon‒bone transition structure in the TBI.",
+          "source": "introduction",
+          "confidence": 1.0
+        },
+        {
+          "head": "cell phenotype gradient",
+          "relation": "responsible for the formation and reconstruction",
+          "relation_type": "driven_by",
+          "relation_type_norm": "driven_by",
+          "relation_type_raw": "driven_by",
+          "tail": "structural gradient",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "The gradient in mineral content plays a key role in the formation and maintenance of the cell phenotype gradient, which in turn is responsible for the formation and reconstruction of the tendon‒bone transition structure in the TBI.",
+          "source": "introduction",
+          "confidence": 1.0
+        },
+        {
+          "head": "Janus hydrogel microrobots",
+          "relation": "synchronously promote",
+          "relation_type": "improves_metric",
+          "relation_type_norm": "improves_metric",
+          "relation_type_raw": "improves_metric",
+          "tail": "bone and tendon regeneration",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "In a rat RCT model, microrobots synchronously promote the bone and tendon regeneration, and the restoration of gradient tendon‒bone transition structures in the TBI.",
+          "source": "abstract",
+          "confidence": 1.0
+        },
+        {
+          "head": "Janus hydrogel microrobots",
+          "relation": "restoration of",
+          "relation_type": "improves_metric",
+          "relation_type_norm": "improves_metric",
+          "relation_type_raw": "improves_metric",
+          "tail": "gradient tendon‒bone transition structures",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "In a rat RCT model, microrobots synchronously promote the bone and tendon regeneration, and the restoration of gradient tendon‒bone transition structures in the TBI.",
+          "source": "abstract",
+          "confidence": 1.0
+        }
+      ],
+      "按辅助学科分类": {
+        "生物学": {
+          "概念": [
+            "镁离子",
+            "锌离子",
+            "骨髓间充质干细胞",
+            "肌腱细胞"
+          ],
+          "关系": [
+            2,
+            3,
+            4,
+            5
+          ],
+          "rationale": "通过离子调控和细胞表型研究，为肌腱-骨界面再生提供生物学基础"
+        },
+        "材料科学": {
+          "概念": [
+            "Janus水凝胶微型机器人",
+            "生物友好型气体剪切微流控平台",
+            "磁操控"
+          ],
+          "关系": [
+            0,
+            1,
+            6,
+            7
+          ],
+          "rationale": "开发具有定向操控功能的智能材料系统，实现梯度结构的精准重建"
+        },
+        "生理学": {
+          "概念": [
+            "天然矿物质梯度",
+            "成骨分化",
+            "破骨细胞活性"
+          ],
+          "关系": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "rationale": "解析矿物质梯度与细胞活动的生理学关联，指导再生微环境设计"
+        }
+      },
+      "查询": {
+        "一级": "如何实现肩袖撕裂后肌腱-骨界面的功能性再生",
+        "二级": [
+          "结合智能材料与离子释放技术促进肌腱-骨界面再生",
+          "利用细胞表型调控与矿物质梯度重建界面过渡结构"
+        ],
+        "三级": [
+          "如何通过磁响应水凝胶机器人协同释放镁锌离子，在定向排列的同时重建矿物质梯度与细胞表型梯度",
+          "如何验证骨髓间充质干细胞与肌腱细胞在离子梯度微环境中的时空分化行为对界面再生效果的影响"
+        ]
+      },
+      "假设": {
+        "一级": [
+          [
+            {
+              "step": 1,
+              "head": "肩袖撕裂",
+              "relation": "导致",
+              "tail": "肌腱-骨界面",
+              "claim": "肩袖撕裂导致肌腱-骨界面损伤"
+            },
+            {
+              "step": 2,
+              "head": "肌腱-骨界面",
+              "relation": "需要重建",
+              "tail": "镁离子/锌离子矿物质梯度",
+              "claim": "肌腱-骨界面需要重建镁离子/锌离子矿物质梯度"
+            },
+            {
+              "step": 3,
+              "head": "镁离子/锌离子矿物质梯度",
+              "relation": "依赖材料科学",
+              "tail": "水凝胶微型机器人",
+              "claim": "镁离子/锌离子矿物质梯度的重建需要材料科学提供的水凝胶微型机器人来实现"
+            }
+          ],
+          [
+            {
+              "step": 1,
+              "head": "肌腱-骨界面",
+              "relation": "需要恢复",
+              "tail": "细胞表型梯度",
+              "claim": "肌腱-骨界面需要恢复细胞表型梯度"
+            },
+            {
+              "step": 2,
+              "head": "细胞表型梯度",
+              "relation": "依赖",
+              "tail": "骨髓间充质干细胞",
+              "claim": "细胞表型梯度的恢复依赖于骨髓间充质干细胞"
+            },
+            {
+              "step": 3,
+              "head": "骨髓间充质干细胞",
+              "relation": "需要生物学",
+              "tail": "镁离子",
+              "claim": "骨髓间充质干细胞的分化需要生物学提供的镁离子来调控"
+            }
+          ],
+          [
+            {
+              "step": 1,
+              "head": "肌腱-骨界面",
+              "relation": "需要重建",
+              "tail": "结构梯度",
+              "claim": "肌腱-骨界面需要重建结构梯度"
+            },
+            {
+              "step": 2,
+              "head": "结构梯度",
+              "relation": "依赖",
+              "tail": "成骨分化",
+              "claim": "结构梯度的重建依赖于成骨分化"
+            },
+            {
+              "step": 3,
+              "head": "成骨分化",
+              "relation": "需要生理学",
+              "tail": "破骨细胞活性",
+              "claim": "成骨分化的调控需要生理学提供的破骨细胞活性来平衡"
+            }
+          ]
+        ],
+        "二级": [
+          [
+            {
+              "step": 1,
+              "head": "水凝胶微型机器人",
+              "relation": "通过生物友好型气体剪切微流控平台负载",
+              "tail": "镁离子",
+              "claim": "水凝胶微型机器人 通过生物友好型气体剪切微流控平台负载 镁离子"
+            },
+            {
+              "step": 2,
+              "head": "镁离子",
+              "relation": "促进骨髓间充质干细胞的增殖与定向分化",
+              "tail": "成骨分化",
+              "claim": "镁离子 促进骨髓间充质干细胞的增殖与定向分化 成骨分化"
+            },
+            {
+              "step": 3,
+              "head": "成骨分化",
+              "relation": "通过重建骨组织活性加速界面整合",
+              "tail": "肌腱-骨界面愈合",
+              "claim": "成骨分化 通过重建骨组织活性加速界面整合 肌腱-骨界面愈合"
+            }
+          ],
+          [
+            {
+              "step": 1,
+              "head": "锌离子",
+              "relation": "调控细胞外基质合成活性",
+              "tail": "肌腱细胞",
+              "claim": "锌离子 调控细胞外基质合成活性 肌腱细胞"
+            },
+            {
+              "step": 2,
+              "head": "肌腱细胞",
+              "relation": "形成与天然界面匹配的表型分布",
+              "tail": "细胞表型梯度",
+              "claim": "肌腱细胞 形成与天然界面匹配的表型分布 细胞表型梯度"
+            },
+            {
+              "step": 3,
+              "head": "细胞表型梯度",
+              "relation": "驱动多层次组织结构的再生",
+              "tail": "梯度肌腱-骨过渡结构",
+              "claim": "细胞表型梯度 驱动多层次组织结构的再生 梯度肌腱-骨过渡结构"
+            }
+          ]
+        ],
+        "三级": [
+          [
+            {
+              "step": 1,
+              "head": "水凝胶微型机器人",
+              "relation": "通过磁操控定向排列并释放",
+              "tail": "镁离子",
+              "claim": "磁响应水凝胶机器人通过磁操控定向排列并释放镁离子"
+            },
+            {
+              "step": 2,
+              "head": "镁离子",
+              "relation": "促进重建",
+              "tail": "镁离子/锌离子矿物质梯度",
+              "claim": "镁离子释放促进重建镁离子/锌离子矿物质梯度"
+            },
+            {
+              "step": 3,
+              "head": "镁离子/锌离子矿物质梯度",
+              "relation": "驱动形成",
+              "tail": "细胞表型梯度",
+              "claim": "重建的矿物质梯度驱动形成细胞表型梯度"
+            }
+          ],
+          [
+            {
+              "step": 1,
+              "head": "骨髓间充质干细胞",
+              "relation": "在镁离子梯度微环境中促进",
+              "tail": "成骨分化",
+              "claim": "骨髓间充质干细胞在镁离子梯度微环境中促进成骨分化"
+            },
+            {
+              "step": 2,
+              "head": "成骨分化",
+              "relation": "协同增强",
+              "tail": "骨和肌腱再生",
+              "claim": "增强的成骨分化协同促进骨和肌腱再生"
+            },
+            {
+              "step": 3,
+              "head": "骨和肌腱再生",
+              "relation": "最终恢复",
+              "tail": "梯度肌腱-骨过渡结构",
+              "claim": "骨和肌腱再生最终恢复梯度肌腱-骨过渡结构"
+            }
+          ]
+        ],
+        "一级总结": [
+          "肩袖撕裂导致肌腱-骨界面损伤，需要材料科学提供的水凝胶微型机器人来重建矿物质梯度",
+          "肌腱-骨界面需要生物学提供的镁离子来调控骨髓间充质干细胞的分化，以恢复细胞表型梯度",
+          "肌腱-骨界面需要生理学提供的破骨细胞活性来平衡成骨分化，以重建结构梯度"
+        ],
+        "二级总结": [
+          "材料科学开发的智能水凝胶机器人通过精准释放镁离子，激活成骨分化通路，最终实现临床医学关注的界面愈合效果",
+          "生物学研究的离子-细胞互作机制通过调控肌腱细胞表型，重建生理学关键梯度结构，为临床界面再生提供微观基础"
+        ],
+        "三级总结": [
+          "通过磁响应水凝胶机器人定向释放镁离子→重建矿物质梯度→驱动细胞表型梯度形成的三级递进机制，实现界面再生关键梯度结构的协同重建",
+          "基于离子梯度微环境调控干细胞分化行为→增强组织再生能力→最终恢复界面过渡结构的闭环验证路径"
+        ]
+      },
+      "graph": {
+        "nodes": [
+          {
+            "id": "肌腱-骨界面",
+            "term": "tendon‒bone interface (TBI)",
+            "normalized": "肌腱-骨界面",
+            "discipline": "临床医学",
+            "evidence": "Regenerating natural gradients of the tendon‒bone interface (TBI) is a major challenge in the reconstruction of rotator cuff tear (RCT).",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "id": "肩袖撕裂",
+            "term": "rotator cuff tear (RCT)",
+            "normalized": "肩袖撕裂",
+            "discipline": "临床医学",
+            "evidence": "Regenerating natural gradients of the tendon‒bone interface (TBI) is a major challenge in the reconstruction of rotator cuff tear (RCT).",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "id": "肩袖撕裂重建手术",
+            "term": "RCT reconstruction surgery",
+            "normalized": "肩袖撕裂重建手术",
+            "discipline": "临床医学",
+            "evidence": "magnetic Janus hydrogel microrobots to match the TBI orientation during RCT reconstruction surgery are developed via a biofriendly gas-shearing microfluidic platform.",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "id": "Mg2+/Zn2+矿物质梯度",
+            "term": "Mg2+/Zn2+ mineral gradient",
+            "normalized": "Mg2+/Zn2+矿物质梯度",
+            "discipline": "临床医学",
+            "evidence": "by rebuilding the Mg2+/Zn2+ mineral gradient, cell phenotype gradient and structural gradient of the TBI, magnetic Janus microrobots loaded with dual bioactive ions represent a promising strategy for promoting TBI healing in RCT reconstruction surgery.",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "id": "细胞表型梯度",
+            "term": "cell phenotype gradient",
+            "normalized": "细胞表型梯度",
+            "discipline": "临床医学",
+            "evidence": "by rebuilding the Mg2+/Zn2+ mineral gradient, cell phenotype gradient and structural gradient of the TBI, magnetic Janus microrobots loaded with dual bioactive ions represent a promising strategy for promoting TBI healing in RCT reconstruction surgery.",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "id": "结构梯度",
+            "term": "structural gradient",
+            "normalized": "结构梯度",
+            "discipline": "临床医学",
+            "evidence": "by rebuilding the Mg2+/Zn2+ mineral gradient, cell phenotype gradient and structural gradient of the TBI, magnetic Janus microrobots loaded with dual bioactive ions represent a promising strategy for promoting TBI healing in RCT reconstruction surgery.",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "id": "肌腱-骨界面愈合",
+            "term": "TBI healing",
+            "normalized": "肌腱-骨界面愈合",
+            "discipline": "临床医学",
+            "evidence": "magnetic Janus microrobots loaded with dual bioactive ions represent a promising strategy for promoting TBI healing in RCT reconstruction surgery.",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "id": "骨和肌腱再生",
+            "term": "bone and tendon regeneration",
+            "normalized": "骨和肌腱再生",
+            "discipline": "临床医学",
+            "evidence": "In a rat RCT model, microrobots synchronously promote the bone and tendon regeneration, and the restoration of gradient tendon‒bone transition structures in the TBI.",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "id": "梯度肌腱-骨过渡结构",
+            "term": "gradient tendon‒bone transition structures",
+            "normalized": "梯度肌腱-骨过渡结构",
+            "discipline": "临床医学",
+            "evidence": "In a rat RCT model, microrobots synchronously promote the bone and tendon regeneration, and the restoration of gradient tendon‒bone transition structures in the TBI.",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "id": "时空细胞表型调节效应",
+            "term": "spatiotemporal cell phenotype modulation effects",
+            "normalized": "时空细胞表型调节效应",
+            "discipline": "临床医学",
+            "evidence": "In vitro studies confirm the spatiotemporal cell phenotype modulation effects of the microrobots.",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "id": "镁离子",
+            "term": "Mg2+",
+            "normalized": "镁离子",
+            "discipline": "生物学",
+            "evidence": "Through separate loading of Mg2+ and Zn2+, the microrobots facilitate the immediate restoration and long-term maintenance of the natural mineral gradient in the TBI after implantation and alignment through magnetic manipulation.",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "id": "锌离子",
+            "term": "Zn2+",
+            "normalized": "锌离子",
+            "discipline": "生物学",
+            "evidence": "Through separate loading of Mg2+ and Zn2+, the microrobots facilitate the immediate restoration and long-term maintenance of the natural mineral gradient in the TBI after implantation and alignment through magnetic manipulation.",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "id": "骨髓间充质干细胞",
+            "term": "bone mesenchymal stem cells (BMSCs)",
+            "normalized": "骨髓间充质干细胞",
+            "discipline": "生物学",
+            "evidence": "bone tissue is characterized primarily by a high presence of terminally differentiated cells derived from bone mesenchymal stem cells (BMSCs), and tendon tissue is rich in active tenocytes (TCs), representing the main manifestation of the cell phenotype gradient in the TBI.",
+            "source": "introduction",
+            "confidence": 1.0
+          },
+          {
+            "id": "肌腱细胞",
+            "term": "tenocytes (TCs)",
+            "normalized": "肌腱细胞",
+            "discipline": "生物学",
+            "evidence": "bone tissue is characterized primarily by a high presence of terminally differentiated cells derived from bone mesenchymal stem cells (BMSCs), and tendon tissue is rich in active tenocytes (TCs), representing the main manifestation of the cell phenotype gradient in the TBI.",
+            "source": "introduction",
+            "confidence": 1.0
+          },
+          {
+            "id": "Janus水凝胶微型机器人",
+            "term": "Janus hydrogel microrobots",
+            "normalized": "Janus水凝胶微型机器人",
+            "discipline": "材料科学",
+            "evidence": "In this study, magnetic Janus hydrogel microrobots to match the TBI orientation during RCT reconstruction surgery are developed via a biofriendly gas-shearing microfluidic platform.",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "id": "生物友好型气体剪切微流控平台",
+            "term": "biofriendly gas-shearing microfluidic platform",
+            "normalized": "生物友好型气体剪切微流控平台",
+            "discipline": "材料科学",
+            "evidence": "In this study, magnetic Janus hydrogel microrobots to match the TBI orientation during RCT reconstruction surgery are developed via a biofriendly gas-shearing microfluidic platform.",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "id": "磁操控",
+            "term": "magnetic manipulation",
+            "normalized": "磁操控",
+            "discipline": "材料科学",
+            "evidence": "the microrobots facilitate the immediate restoration and long-term maintenance of the natural mineral gradient in the TBI after implantation and alignment through magnetic manipulation.",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "id": "天然矿物质梯度",
+            "term": "natural mineral gradient",
+            "normalized": "天然矿物质梯度",
+            "discipline": "生理学",
+            "evidence": "the microrobots facilitate the immediate restoration and long-term maintenance of the natural mineral gradient in the TBI after implantation and alignment through magnetic manipulation.",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "id": "成骨分化",
+            "term": "osteogenic differentiation",
+            "normalized": "成骨分化",
+            "discipline": "生理学",
+            "evidence": "Mg2+ can accelerate bone regeneration by promoting the proliferation, accumulation, and osteogenic differentiation of BMSCs.",
+            "source": "introduction",
+            "confidence": 1.0
+          },
+          {
+            "id": "破骨细胞活性",
+            "term": "osteoclast activity",
+            "normalized": "破骨细胞活性",
+            "discipline": "生理学",
+            "evidence": "Mg2+ can accelerate bone regeneration by promoting the proliferation, accumulation, and osteogenic differentiation of BMSCs; suppressing osteoclast activity.",
+            "source": "introduction",
+            "confidence": 1.0
+          },
+          {
+            "id": "镁离子/锌离子矿物质梯度",
+            "term": "镁离子/锌离子矿物质梯度",
+            "normalized": "镁离子/锌离子矿物质梯度",
+            "discipline": "hypothesis_inferred",
+            "evidence": "",
+            "source": "hypothesis_inferred",
+            "confidence": 0.8
+          },
+          {
+            "id": "水凝胶微型机器人",
+            "term": "水凝胶微型机器人",
+            "normalized": "水凝胶微型机器人",
+            "discipline": "hypothesis_inferred",
+            "evidence": "",
+            "source": "hypothesis_inferred",
+            "confidence": 0.8
+          }
+        ],
+        "edges": [
+          {
+            "source": "Janus水凝胶微型机器人",
+            "target": "肌腱-骨界面",
+            "relation": "match the TBI orientation during RCT reconstruction surgery",
+            "relation_type": "method_applied_to",
+            "metadata": {
+              "evidence": "magnetic Janus hydrogel microrobots to match the TBI orientation during RCT reconstruction surgery are developed via a biofriendly gas-shearing microfluidic platform.",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "Janus水凝胶微型机器人",
+            "target": "天然矿物质梯度",
+            "relation": "facilitate the immediate restoration and long-term maintenance",
+            "relation_type": "improves_metric",
+            "metadata": {
+              "evidence": "the microrobots facilitate the immediate restoration and long-term maintenance of the natural mineral gradient in the TBI after implantation and alignment through magnetic manipulation.",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "镁离子",
+            "target": "成骨分化",
+            "relation": "promoting the proliferation, accumulation, and osteogenic differentiation of BMSCs",
+            "relation_type": "improves_metric",
+            "metadata": {
+              "evidence": "Mg2+ can accelerate bone regeneration by promoting the proliferation, accumulation, and osteogenic differentiation of BMSCs.",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "镁离子",
+            "target": "破骨细胞活性",
+            "relation": "suppressing osteoclast activity",
+            "relation_type": "constrains",
+            "metadata": {
+              "evidence": "Mg2+ can accelerate bone regeneration by promoting the proliferation, accumulation, and osteogenic differentiation of BMSCs; suppressing osteoclast activity.",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "Mg2+/Zn2+矿物质梯度",
+            "target": "细胞表型梯度",
+            "relation": "plays a key role in the formation and maintenance",
+            "relation_type": "driven_by",
+            "metadata": {
+              "evidence": "The gradient in mineral content plays a key role in the formation and maintenance of the cell phenotype gradient, which in turn is responsible for the formation and reconstruction of the tendon‒bone transition structure in the TBI.",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "细胞表型梯度",
+            "target": "结构梯度",
+            "relation": "responsible for the formation and reconstruction",
+            "relation_type": "driven_by",
+            "metadata": {
+              "evidence": "The gradient in mineral content plays a key role in the formation and maintenance of the cell phenotype gradient, which in turn is responsible for the formation and reconstruction of the tendon‒bone transition structure in the TBI.",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "Janus水凝胶微型机器人",
+            "target": "骨和肌腱再生",
+            "relation": "synchronously promote",
+            "relation_type": "improves_metric",
+            "metadata": {
+              "evidence": "In a rat RCT model, microrobots synchronously promote the bone and tendon regeneration, and the restoration of gradient tendon‒bone transition structures in the TBI.",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "Janus水凝胶微型机器人",
+            "target": "梯度肌腱-骨过渡结构",
+            "relation": "restoration of",
+            "relation_type": "improves_metric",
+            "metadata": {
+              "evidence": "In a rat RCT model, microrobots synchronously promote the bone and tendon regeneration, and the restoration of gradient tendon‒bone transition structures in the TBI.",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "肩袖撕裂",
+            "target": "肌腱-骨界面",
+            "relation": "导致",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "肩袖撕裂导致肌腱-骨界面损伤",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "肌腱-骨界面",
+            "target": "镁离子/锌离子矿物质梯度",
+            "relation": "需要重建",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "肌腱-骨界面需要重建镁离子/锌离子矿物质梯度",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "镁离子/锌离子矿物质梯度",
+            "target": "水凝胶微型机器人",
+            "relation": "依赖材料科学",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "镁离子/锌离子矿物质梯度的重建需要材料科学提供的水凝胶微型机器人来实现",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "肌腱-骨界面",
+            "target": "细胞表型梯度",
+            "relation": "需要恢复",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "肌腱-骨界面需要恢复细胞表型梯度",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "细胞表型梯度",
+            "target": "骨髓间充质干细胞",
+            "relation": "依赖",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "细胞表型梯度的恢复依赖于骨髓间充质干细胞",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "骨髓间充质干细胞",
+            "target": "镁离子",
+            "relation": "需要生物学",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "骨髓间充质干细胞的分化需要生物学提供的镁离子来调控",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "肌腱-骨界面",
+            "target": "结构梯度",
+            "relation": "需要重建",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "肌腱-骨界面需要重建结构梯度",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 2
+            }
+          },
+          {
+            "source": "结构梯度",
+            "target": "成骨分化",
+            "relation": "依赖",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "结构梯度的重建依赖于成骨分化",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 2
+            }
+          },
+          {
+            "source": "成骨分化",
+            "target": "破骨细胞活性",
+            "relation": "需要生理学",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "成骨分化的调控需要生理学提供的破骨细胞活性来平衡",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 2
+            }
+          },
+          {
+            "source": "水凝胶微型机器人",
+            "target": "镁离子",
+            "relation": "通过生物友好型气体剪切微流控平台负载",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "水凝胶微型机器人 通过生物友好型气体剪切微流控平台负载 镁离子",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "镁离子",
+            "target": "成骨分化",
+            "relation": "促进骨髓间充质干细胞的增殖与定向分化",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "镁离子 促进骨髓间充质干细胞的增殖与定向分化 成骨分化",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "成骨分化",
+            "target": "肌腱-骨界面愈合",
+            "relation": "通过重建骨组织活性加速界面整合",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "成骨分化 通过重建骨组织活性加速界面整合 肌腱-骨界面愈合",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "锌离子",
+            "target": "肌腱细胞",
+            "relation": "调控细胞外基质合成活性",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "锌离子 调控细胞外基质合成活性 肌腱细胞",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "肌腱细胞",
+            "target": "细胞表型梯度",
+            "relation": "形成与天然界面匹配的表型分布",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "肌腱细胞 形成与天然界面匹配的表型分布 细胞表型梯度",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "细胞表型梯度",
+            "target": "梯度肌腱-骨过渡结构",
+            "relation": "驱动多层次组织结构的再生",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "细胞表型梯度 驱动多层次组织结构的再生 梯度肌腱-骨过渡结构",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "水凝胶微型机器人",
+            "target": "镁离子",
+            "relation": "通过磁操控定向排列并释放",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "磁响应水凝胶机器人通过磁操控定向排列并释放镁离子",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "镁离子",
+            "target": "镁离子/锌离子矿物质梯度",
+            "relation": "促进重建",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "镁离子释放促进重建镁离子/锌离子矿物质梯度",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "镁离子/锌离子矿物质梯度",
+            "target": "细胞表型梯度",
+            "relation": "驱动形成",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "重建的矿物质梯度驱动形成细胞表型梯度",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "骨髓间充质干细胞",
+            "target": "成骨分化",
+            "relation": "在镁离子梯度微环境中促进",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "骨髓间充质干细胞在镁离子梯度微环境中促进成骨分化",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "成骨分化",
+            "target": "骨和肌腱再生",
+            "relation": "协同增强",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "增强的成骨分化协同促进骨和肌腱再生",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "骨和肌腱再生",
+            "target": "梯度肌腱-骨过渡结构",
+            "relation": "最终恢复",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "骨和肌腱再生最终恢复梯度肌腱-骨过渡结构",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          }
+        ]
+      },
+      "metrics": {
+        "path_consistency": 0.047619047619047616,
+        "coverage": 0.65,
+        "bridging_score": 0.5652173913043478,
+        "rao_stirling_diversity": 0.2199,
+        "embedding_bridging": 0.873,
+        "consistency_precision": 0.0,
+        "consistency_recall": 0.0,
+        "consistency_f1": 0.0,
+        "info_novelty": 0.0,
+        "chain_coherence": 0.5537,
+        "atypical_combination": 0.5571,
+        "kg_density": 0.0584,
+        "kg_inverse_modularity": 0.8772,
+        "kg_largest_cc_ratio": 0.8182,
+        "kg_avg_betweenness": 0.0476,
+        "kg_clustering_coefficient": 0.2074,
+        "concept_recall": 0.0,
+        "concept_precision": 0.0,
+        "concept_f1": 0.0,
+        "relation_precision": 0.0,
+        "relation_type_accuracy": 0.0,
+        "evidence_coverage": 0.0,
+        "path_alignment_best": 0.0,
+        "path_alignment_mean": 0.0
+      }
+    },
+    "raw": "/* stage1: struct */\n/* concepts round1 */\n```json\n{\n  \"meta\": {\n    \"title\": \"Janus hydrogel microrobots with bioactive ions for the regeneration of tendon-bone interface\",\n    \"primary\": \"临床医学\",\n    \"secondary_list\": [\"生物学\", \"材料科学\", \"生理学\"]\n  },\n  \"概念\": {\n    \"主学科\": [\n      {\n        \"term\": \"tendon‒bone interface (TBI)\",\n        \"normalized\": \"肌腱-骨界面\",\n        \"std_label\": null,\n        \"evidence\": \"Regenerating natural gradients of the tendon‒bone interface (TBI) is a major challenge in the reconstruction of rotator cuff tear (RCT).\",\n        \"source\": \"abstract\",\n        \"confidence\": 1\n      },\n      {\n        \"term\": \"rotator cuff tear (RCT)\",\n        \"normalized\": \"肩袖撕裂\",\n        \"std_label\": null,\n        \"evidence\": \"Regenerating natural gradients of the tendon‒bone interface (TBI) is a major challenge in the reconstruction of rotator cuff tear (RCT).\",\n        \"source\": \"abstract\",\n        \"confidence\": 1\n      },\n      {\n        \"term\": \"RCT reconstruction surgery\",\n        \"normalized\": \"肩袖撕裂重建手术\",\n        \"std_label\": null,\n        \"evidence\": \"magnetic Janus hydrogel microrobots to match the TBI orientation during RCT reconstruction surgery are developed via a biofriendly gas-shearing microfluidic platform.\",\n        \"source\": \"abstract\",\n        \"confidence\": 1\n      },\n      {\n        \"term\": \"Mg2+/Zn2+ mineral gradient\",\n        \"normalized\": \"Mg2+/Zn2+矿物质梯度\",\n        \"std_label\": null,\n        \"evidence\": \"by rebuilding the Mg2+/Zn2+ mineral gradient, cell phenotype gradient and structural gradient of the TBI, magnetic Janus microrobots loaded with dual bioactive ions represent a promising strategy for promoting TBI healing in RCT reconstruction surgery.\",\n        \"source\": \"abstract\",\n        \"confidence\": 1\n      },\n      {\n        \"term\": \"cell phenotype gradient\",\n        \"normalized\": \"细胞表型梯度\",\n        \"std_label\": null,\n        \"evidence\": \"by rebuilding the Mg2+/Zn2+ mineral gradient, cell phenotype gradient and structural gradient of the TBI, magnetic Janus microrobots loaded with dual bioactive ions represent a promising strategy for promoting TBI healing in RCT reconstruction surgery.\",\n        \"source\": \"abstract\",\n        \"confidence\": 1\n      },\n      {\n        \"term\": \"structural gradient\",\n        \"normalized\": \"结构梯度\",\n        \"std_label\": null,\n        \"evidence\": \"by rebuilding the Mg2+/Zn2+ mineral gradient, cell phenotype gradient and structural gradient of the TBI, magnetic Janus microrobots loaded with dual bioactive ions represent a promising strategy for promoting TBI healing in RCT reconstruction surgery.\",\n        \"source\": \"abstract\",\n        \"confidence\": 1\n      },\n      {\n        \"term\": \"TBI healing\",\n        \"normalized\": \"肌腱-骨界面愈合\",\n        \"std_label\": null,\n        \"evidence\": \"magnetic Janus microrobots loaded with dual bioactive ions represent a promising strategy for promoting TBI healing in RCT reconstruction surgery.\",\n        \"source\": \"abstract\",\n        \"confidence\": 1\n      },\n      {\n        \"term\": \"bone and tendon regeneration\",\n        \"normalized\": \"骨和肌腱再生\",\n        \"std_label\": null,\n        \"evidence\": \"In a rat RCT model, microrobots synchronously promote the bone and tendon regeneration, and the restoration of gradient tendon‒bone transition structures in the TBI.\",\n        \"source\": \"abstract\",\n        \"confidence\": 1\n      },\n      {\n        \"term\": \"gradient tendon‒bone transition structures\",\n        \"normalized\": \"梯度肌腱-骨过渡结构\",\n        \"std_label\": null,\n        \"evidence\": \"In a rat RCT model, microrobots synchronously promote the bone and tendon regeneration, and the restoration of gradient tendon‒bone transition structures in the TBI.\",\n        \"source\": \"abstract\",\n        \"confidence\": 1\n      },\n      {\n        \"term\": \"spatiotemporal cell phenotype modulation effects\",\n        \"normalized\": \"时空细胞表型调节效应\",\n        \"std_label\": null,\n        \"evidence\": \"In vitro studies confirm the spatiotemporal cell phenotype modulation effects of the microrobots.\",\n        \"source\": \"abstract\",\n        \"confidence\": 1\n      }\n    ],\n    \"辅学科\": {\n      \"生物学\": [\n        {\n          \"term\": \"Mg2+\",\n          \"normalized\": \"镁离子\",\n          \"std_label\": null,\n          \"evidence\": \"Through separate loading of Mg2+ and Zn2+, the microrobots facilitate the immediate restoration and long-term maintenance of the natural mineral gradient in the TBI after implantation and alignment through magnetic manipulation.\",\n          \"source\": \"abstract\",\n          \"confidence\": 1\n        },\n        {\n          \"term\": \"Zn2+\",\n          \"normalized\": \"锌离子\",\n          \"std_label\": null,\n          \"evidence\": \"Through separate loading of Mg2+ and Zn2+, the microrobots facilitate the immediate restoration and long-term maintenance of the natural mineral gradient in the TBI after implantation and alignment through magnetic manipulation.\",\n          \"source\": \"abstract\",\n          \"confidence\": 1\n        },\n        {\n          \"term\": \"bone mesenchymal stem cells (BMSCs)\",\n          \"normalized\": \"骨髓间充质干细胞\",\n          \"std_label\": null,\n          \"evidence\": \"bone tissue is characterized primarily by a high presence of terminally differentiated cells derived from bone mesenchymal stem cells (BMSCs), and tendon tissue is rich in active tenocytes (TCs), representing the main manifestation of the cell phenotype gradient in the TBI.\",\n          \"source\": \"introduction\",\n          \"confidence\": 1\n        },\n        {\n          \"term\": \"tenocytes (TCs)\",\n          \"normalized\": \"肌腱细胞\",\n          \"std_label\": null,\n          \"evidence\": \"bone tissue is characterized primarily by a high presence of terminally differentiated cells derived from bone mesenchymal stem cells (BMSCs), and tendon tissue is rich in active tenocytes (TCs), representing the main manifestation of the cell phenotype gradient in the TBI.\",\n          \"source\": \"introduction\",\n          \"confidence\": 1\n        }\n      ],\n      \"材料科学\": [\n        {\n          \"term\": \"Janus hydrogel microrobots\",\n          \"normalized\": \"Janus水凝胶微型机器人\",\n          \"std_label\": null,\n          \"evidence\": \"In this study, magnetic Janus hydrogel microrobots to match the TBI orientation during RCT reconstruction surgery are developed via a biofriendly gas-shearing microfluidic platform.\",\n          \"source\": \"abstract\",\n          \"confidence\": 1\n        },\n        {\n          \"term\": \"biofriendly gas-shearing microfluidic platform\",\n          \"normalized\": \"生物友好型气体剪切微流控平台\",\n          \"std_label\": null,\n          \"evidence\": \"In this study, magnetic Janus hydrogel microrobots to match the TBI orientation during RCT reconstruction surgery are developed via a biofriendly gas-shearing microfluidic platform.\",\n          \"source\": \"abstract\",\n          \"confidence\": 1\n        },\n        {\n          \"term\": \"magnetic manipulation\",\n          \"normalized\": \"磁操控\",\n          \"std_label\": null,\n          \"evidence\": \"the microrobots facilitate the immediate restoration and long-term maintenance of the natural mineral gradient in the TBI after implantation and alignment through magnetic manipulation.\",\n          \"source\": \"abstract\",\n          \"confidence\": 1\n        }\n      ],\n      \"生理学\": [\n        {\n          \"term\": \"natural mineral gradient\",\n          \"normalized\": \"天然矿物质梯度\",\n          \"std_label\": null,\n          \"evidence\": \"the microrobots facilitate the immediate restoration and long-term maintenance of the natural mineral gradient in the TBI after implantation and alignment through magnetic manipulation.\",\n          \"source\": \"abstract\",\n          \"confidence\": 1\n        },\n        {\n          \"term\": \"osteogenic differentiation\",\n          \"normalized\": \"成骨分化\",\n          \"std_label\": null,\n          \"evidence\": \"Mg2+ can accelerate bone regeneration by promoting the proliferation, accumulation, and osteogenic differentiation of BMSCs.\",\n          \"source\": \"introduction\",\n          \"confidence\": 1\n        },\n        {\n          \"term\": \"osteoclast activity\",\n          \"normalized\": \"破骨细胞活性\",\n          \"std_label\": null,\n          \"evidence\": \"Mg2+ can accelerate bone regeneration by promoting the proliferation, accumulation, and osteogenic differentiation of BMSCs; suppressing osteoclast activity.\",\n          \"source\": \"introduction\",\n          \"confidence\": 1\n        }\n      ]\n    }\n  }\n}\n```\n\n/* concepts round2 (supplement) */\n{\n  \"补充概念\": {\n    \"主学科\": [\n      \"shoulder joint disability\",\n      \"full-thickness RCT\",\n      \"Ca2+\",\n      \"collagen fibers\",\n      \"bioactive metal ions\",\n      \"human bone tissue\",\n      \"tendon tissue\",\n      \"magnesium\",\n      \"skeletal system\",\n      \"parathyroid hormone\",\n      \"vitamin D\",\n      \"zinc\",\n      \"transcription factors\",\n      \"enzyme syst\"\n    ],\n    \"辅学科\": {\n      \"生物学\": [],\n      \"材料科学\": [],\n      \"生理学\": []\n    }\n  }\n}\n\n/* relations */\n{\n  \"跨学科关系\": [\n    {\n      \"head\": \"Janus hydrogel microrobots\",\n      \"tail\": \"tendon‒bone interface (TBI)\",\n      \"relation\": \"match the TBI orientation during RCT reconstruction surgery\",\n      \"relation_type\": \"method_applied_to\",\n      \"direction\": \"->\",\n      \"assumptions\": [],\n      \"evidence\": \"magnetic Janus hydrogel microrobots to match the TBI orientation during RCT reconstruction surgery are developed via a biofriendly gas-shearing microfluidic platform.\",\n      \"source\": \"abstract\",\n      \"confidence\": 1\n    },\n    {\n      \"head\": \"Janus hydrogel microrobots\",\n      \"tail\": \"natural mineral gradient\",\n      \"relation\": \"facilitate the immediate restoration and long-term maintenance\",\n      \"relation_type\": \"improves_metric\",\n      \"direction\": \"->\",\n      \"assumptions\": [],\n      \"evidence\": \"the microrobots facilitate the immediate restoration and long-term maintenance of the natural mineral gradient in the TBI after implantation and alignment through magnetic manipulation.\",\n      \"source\": \"abstract\",\n      \"confidence\": 1\n    },\n    {\n      \"head\": \"Mg2+\",\n      \"tail\": \"osteogenic differentiation\",\n      \"relation\": \"promoting the proliferation, accumulation, and osteogenic differentiation of BMSCs\",\n      \"relation_type\": \"improves_metric\",\n      \"direction\": \"->\",\n      \"assumptions\": [],\n      \"evidence\": \"Mg2+ can accelerate bone regeneration by promoting the proliferation, accumulation, and osteogenic differentiation of BMSCs.\",\n      \"source\": \"introduction\",\n      \"confidence\": 1\n    },\n    {\n      \"head\": \"Mg2+\",\n      \"tail\": \"osteoclast activity\",\n      \"relation\": \"suppressing osteoclast activity\",\n      \"relation_type\": \"constrains\",\n      \"direction\": \"->\",\n      \"assumptions\": [],\n      \"evidence\": \"Mg2+ can accelerate bone regeneration by promoting the proliferation, accumulation, and osteogenic differentiation of BMSCs; suppressing osteoclast activity.\",\n      \"source\": \"introduction\",\n      \"confidence\": 1\n    },\n    {\n      \"head\": \"Mg2+/Zn2+ mineral gradient\",\n      \"tail\": \"cell phenotype gradient\",\n      \"relation\": \"plays a key role in the formation and maintenance\",\n      \"relation_type\": \"driven_by\",\n      \"direction\": \"->\",\n      \"assumptions\": [],\n      \"evidence\": \"The gradient in mineral content plays a key role in the formation and maintenance of the cell phenotype gradient, which in turn is responsible for the formation and reconstruction of the tendon‒bone transition structure in the TBI.\",\n      \"source\": \"introduction\",\n      \"confidence\": 1\n    },\n    {\n      \"head\": \"cell phenotype gradient\",\n      \"tail\": \"structural gradient\",\n      \"relation\": \"responsible for the formation and reconstruction\",\n      \"relation_type\": \"driven_by\",\n      \"direction\": \"->\",\n      \"assumptions\": [],\n      \"evidence\": \"The gradient in mineral content plays a key role in the formation and maintenance of the cell phenotype gradient, which in turn is responsible for the formation and reconstruction of the tendon‒bone transition structure in the TBI.\",\n      \"source\": \"introduction\",\n      \"confidence\": 1\n    },\n    {\n      \"head\": \"Janus hydrogel microrobots\",\n      \"tail\": \"bone and tendon regeneration\",\n      \"relation\": \"synchronously promote\",\n      \"relation_type\": \"improves_metric\",\n      \"direction\": \"->\",\n      \"assumptions\": [],\n      \"evidence\": \"In a rat RCT model, microrobots synchronously promote the bone and tendon regeneration, and the restoration of gradient tendon‒bone transition structures in the TBI.\",\n      \"source\": \"abstract\",\n      \"confidence\": 1\n    },\n    {\n      \"head\": \"Janus hydrogel microrobots\",\n      \"tail\": \"gradient tendon‒bone transition structures\",\n      \"relation\": \"restoration of\",\n      \"relation_type\": \"improves_metric\",\n      \"direction\": \"->\",\n      \"assumptions\": [],\n      \"evidence\": \"In a rat RCT model, microrobots synchronously promote the bone and tendon regeneration, and the restoration of gradient tendon‒bone transition structures in the TBI.\",\n      \"source\": \"abstract\",\n      \"confidence\": 1\n    }\n  ]\n}\n\n/* stage2: query */\n{\n  \"按辅助学科分类\": {\n    \"生物学\": {\n      \"概念\": [\"镁离子\", \"锌离子\", \"骨髓间充质干细胞\", \"肌腱细胞\"],\n      \"关系\": [2, 3, 4, 5],\n      \"rationale\": \"通过离子调控和细胞表型研究，为肌腱-骨界面再生提供生物学基础\"\n    },\n    \"材料科学\": {\n      \"概念\": [\"Janus水凝胶微型机器人\", \"生物友好型气体剪切微流控平台\", \"磁操控\"],\n      \"关系\": [0, 1, 6, 7],\n      \"rationale\": \"开发具有定向操控功能的智能材料系统，实现梯度结构的精准重建\"\n    },\n    \"生理学\": {\n      \"概念\": [\"天然矿物质梯度\", \"成骨分化\", \"破骨细胞活性\"],\n      \"关系\": [1, 2, 3, 4, 5],\n      \"rationale\": \"解析矿物质梯度与细胞活动的生理学关联，指导再生微环境设计\"\n    }\n  },\n  \"查询\": {\n    \"一级\": \"如何实现肩袖撕裂后肌腱-骨界面的功能性再生\",\n    \"二级\": [\n      \"结合智能材料与离子释放技术促进肌腱-骨界面再生\",\n      \"利用细胞表型调控与矿物质梯度重建界面过渡结构\"\n    ],\n    \"三级\": [\n      \"如何通过磁响应水凝胶机器人协同释放镁锌离子，在定向排列的同时重建矿物质梯度与细胞表型梯度\",\n      \"如何验证骨髓间充质干细胞与肌腱细胞在离子梯度微环境中的时空分化行为对界面再生效果的影响\"\n    ]\n  }\n}\n\n/* stage3: hypothesis L1 */\n{\n  \"假设\": {\n    \"一级\": [\n      [\n        {\n          \"step\": 1,\n          \"head\": \"肩袖撕裂\",\n          \"relation\": \"导致\",\n          \"tail\": \"肌腱-骨界面\",\n          \"claim\": \"肩袖撕裂导致肌腱-骨界面损伤\"\n        },\n        {\n          \"step\": 2,\n          \"head\": \"肌腱-骨界面\",\n          \"relation\": \"需要重建\",\n          \"tail\": \"Mg2+/Zn2+矿物质梯度\",\n          \"claim\": \"肌腱-骨界面需要重建Mg2+/Zn2+矿物质梯度\"\n        },\n        {\n          \"step\": 3,\n          \"head\": \"Mg2+/Zn2+矿物质梯度\",\n          \"relation\": \"依赖材料科学\",\n          \"tail\": \"Janus水凝胶微型机器人\",\n          \"claim\": \"Mg2+/Zn2+矿物质梯度的重建需要材料科学提供的Janus水凝胶微型机器人来实现\"\n        }\n      ],\n      [\n        {\n          \"step\": 1,\n          \"head\": \"肌腱-骨界面\",\n          \"relation\": \"需要恢复\",\n          \"tail\": \"细胞表型梯度\",\n          \"claim\": \"肌腱-骨界面需要恢复细胞表型梯度\"\n        },\n        {\n          \"step\": 2,\n          \"head\": \"细胞表型梯度\",\n          \"relation\": \"依赖\",\n          \"tail\": \"骨髓间充质干细胞\",\n          \"claim\": \"细胞表型梯度的恢复依赖于骨髓间充质干细胞\"\n        },\n        {\n          \"step\": 3,\n          \"head\": \"骨髓间充质干细胞\",\n          \"relation\": \"需要生物学\",\n          \"tail\": \"镁离子\",\n          \"claim\": \"骨髓间充质干细胞的分化需要生物学提供的镁离子来调控\"\n        }\n      ],\n      [\n        {\n          \"step\": 1,\n          \"head\": \"肌腱-骨界面\",\n          \"relation\": \"需要重建\",\n          \"tail\": \"结构梯度\",\n          \"claim\": \"肌腱-骨界面需要重建结构梯度\"\n        },\n        {\n          \"step\": 2,\n          \"head\": \"结构梯度\",\n          \"relation\": \"依赖\",\n          \"tail\": \"成骨分化\",\n          \"claim\": \"结构梯度的重建依赖于成骨分化\"\n        },\n        {\n          \"step\": 3,\n          \"head\": \"成骨分化\",\n          \"relation\": \"需要生理学\",\n          \"tail\": \"破骨细胞活性\",\n          \"claim\": \"成骨分化的调控需要生理学提供的破骨细胞活性来平衡\"\n        }\n      ]\n    ],\n    \"一级总结\": [\n      \"肩袖撕裂导致肌腱-骨界面损伤，需要材料科学提供的Janus水凝胶微型机器人来重建矿物质梯度\",\n      \"肌腱-骨界面需要生物学提供的镁离子来调控骨髓间充质干细胞的分化，以恢复细胞表型梯度\",\n      \"肌腱-骨界面需要生理学提供的破骨细胞活性来平衡成骨分化，以重建结构梯度\"\n    ]\n  }\n}\n\n/* stage3: hypothesis L2 */\n{\n  \"假设\": {\n    \"二级\": [\n      [\n        {\n          \"head\": \"Janus水凝胶微型机器人\",\n          \"tail\": \"镁离子\",\n          \"relation\": \"通过生物友好型气体剪切微流控平台负载\"\n        },\n        {\n          \"head\": \"镁离子\",\n          \"tail\": \"成骨分化\",\n          \"relation\": \"促进骨髓间充质干细胞的增殖与定向分化\"\n        },\n        {\n          \"head\": \"成骨分化\",\n          \"tail\": \"肌腱-骨界面愈合\",\n          \"relation\": \"通过重建骨组织活性加速界面整合\"\n        }\n      ],\n      [\n        {\n          \"head\": \"锌离子\",\n          \"tail\": \"肌腱细胞\",\n          \"relation\": \"调控细胞外基质合成活性\"\n        },\n        {\n          \"head\": \"肌腱细胞\",\n          \"tail\": \"细胞表型梯度\",\n          \"relation\": \"形成与天然界面匹配的表型分布\"\n        },\n        {\n          \"head\": \"细胞表型梯度\",\n          \"tail\": \"梯度肌腱-骨过渡结构\",\n          \"relation\": \"驱动多层次组织结构的再生\"\n        }\n      ]\n    ],\n    \"二级总结\": [\n      \"材料科学开发的智能水凝胶机器人通过精准释放镁离子，激活成骨分化通路，最终实现临床医学关注的界面愈合效果\",\n      \"生物学研究的离子-细胞互作机制通过调控肌腱细胞表型，重建生理学关键梯度结构，为临床界面再生提供微观基础\"\n    ]\n  }\n}\n\n/* stage3: hypothesis L3 */\n{\n  \"假设\": {\n    \"三级\": [\n      [\n        {\n          \"head\": \"Janus水凝胶微型机器人\",\n          \"tail\": \"镁离子\",\n          \"relation\": \"通过磁操控定向排列并释放\",\n          \"claim\": \"磁响应水凝胶机器人通过磁操控定向排列并释放镁离子\"\n        },\n        {\n          \"head\": \"镁离子\",\n          \"tail\": \"Mg2+/Zn2+矿物质梯度\",\n          \"relation\": \"促进重建\",\n          \"claim\": \"镁离子释放促进重建Mg2+/Zn2+矿物质梯度\"\n        },\n        {\n          \"head\": \"Mg2+/Zn2+矿物质梯度\",\n          \"tail\": \"细胞表型梯度\",\n          \"relation\": \"驱动形成\",\n          \"claim\": \"重建的矿物质梯度驱动形成细胞表型梯度\"\n        }\n      ],\n      [\n        {\n          \"head\": \"骨髓间充质干细胞\",\n          \"tail\": \"成骨分化\",\n          \"relation\": \"在镁离子梯度微环境中促进\",\n          \"claim\": \"骨髓间充质干细胞在镁离子梯度微环境中促进成骨分化\"\n        },\n        {\n          \"head\": \"成骨分化\",\n          \"tail\": \"骨和肌腱再生\",\n          \"relation\": \"协同增强\",\n          \"claim\": \"增强的成骨分化协同促进骨和肌腱再生\"\n        },\n        {\n          \"head\": \"骨和肌腱再生\",\n          \"tail\": \"梯度肌腱-骨过渡结构\",\n          \"relation\": \"最终恢复\",\n          \"claim\": \"骨和肌腱再生最终恢复梯度肌腱-骨过渡结构\"\n        }\n      ]\n    ],\n    \"三级总结\": [\n      \"通过磁响应水凝胶机器人定向释放镁离子→重建矿物质梯度→驱动细胞表型梯度形成的三级递进机制，实现界面再生关键梯度结构的协同重建\",\n      \"基于离子梯度微环境调控干细胞分化行为→增强组织再生能力→最终恢复界面过渡结构的闭环验证路径\"\n    ]\n  }\n}",
+    "ok": true,
+    "error": ""
+  }
+]

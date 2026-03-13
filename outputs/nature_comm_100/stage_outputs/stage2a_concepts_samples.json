@@ -1,0 +1,290 @@
+[
+  {
+    "title": "Nano-island-encapsulated cobalt single-atom catalysts for breaking activity-stability trade-off in Fenton-like reactions",
+    "primary": "化学",
+    "secondary_list": [],
+    "概念_主学科": [
+      {
+        "term": "Single-atom catalysts (SACs)",
+        "normalized": "单原子催化剂",
+        "std_label": null,
+        "evidence": "Single-atom catalysts (SACs) have been increasingly acknowledged for their performance in sustainable Fenton-like catalysis.",
+        "source": "abstract",
+        "confidence": 1.0
+      },
+      {
+        "term": "Fenton-like catalysis",
+        "normalized": "类芬顿催化",
+        "std_label": null,
+        "evidence": "Single-atom catalysts (SACs) have been increasingly acknowledged for their performance in sustainable Fenton-like catalysis.",
+        "source": "abstract",
+        "confidence": 1.0
+      },
+      {
+        "term": "peroxymonosulfate (PMS)",
+        "normalized": "过一硫酸盐",
+        "std_label": null,
+        "evidence": "However, SACs face a trade-off between activity and stability in peroxymonosulfate (PMS)-based systems.",
+        "source": "abstract",
+        "confidence": 1.0
+      },
+      {
+        "term": "nano-island encapsulated single cobalt atom (Co<sub>SA/Zn.O</sub>-ZnO)",
+        "normalized": "纳米岛封装单钴原子催化剂",
+        "std_label": null,
+        "evidence": "Herein, we design a nano-island encapsulated single cobalt atom (Co<sub>SA/Zn.O</sub>-ZnO) catalyst to enhance the activity and stability of PMS activation for contaminant degradation via an \"island-sea\" synergistic effect.",
+        "source": "abstract",
+        "confidence": 1.0
+      },
+      {
+        "term": "sulfate radicals (SO<sub>4</sub><sup>•-</sup>)",
+        "normalized": "硫酸根自由基",
+        "std_label": null,
+        "evidence": "The Co<sub>SA/Zn.O</sub>-ZnO/PMS system exhibits a remarkable selectivity in exclusively generating sulfate radicals (SO<sub>4</sub><sup>•-</sup>), leading to a complete removal of various recalcitrant pollutants within a shorter period.",
+        "source": "abstract",
+        "confidence": 1.0
+      },
+      {
+        "term": "recalcitrant pollutants",
+        "normalized": "难降解污染物",
+        "std_label": null,
+        "evidence": "The Co<sub>SA/Zn.O</sub>-ZnO/PMS system exhibits a remarkable selectivity in exclusively generating sulfate radicals (SO<sub>4</sub><sup>•-</sup>), leading to a complete removal of various recalcitrant pollutants within a shorter period.",
+        "source": "abstract",
+        "confidence": 1.0
+      },
+      {
+        "term": "active sites",
+        "normalized": "活性位点",
+        "std_label": null,
+        "evidence": "Characterized by minimal leaching of active sites, robust catalytic performance, and low-toxicity decontamination, this system proves highly efficient in multiple treatment cycles and complex water matrices.",
+        "source": "abstract",
+        "confidence": 1.0
+      },
+      {
+        "term": "catalytic performance",
+        "normalized": "催化性能",
+        "std_label": null,
+        "evidence": "Characterized by minimal leaching of active sites, robust catalytic performance, and low-toxicity decontamination, this system proves highly efficient in multiple treatment cycles and complex water matrices.",
+        "source": "abstract",
+        "confidence": 1.0
+      },
+      {
+        "term": "decontamination",
+        "normalized": "去污",
+        "std_label": null,
+        "evidence": "Characterized by minimal leaching of active sites, robust catalytic performance, and low-toxicity decontamination, this system proves highly efficient in multiple treatment cycles and complex water matrices.",
+        "source": "abstract",
+        "confidence": 1.0
+      },
+      {
+        "term": "water matrices",
+        "normalized": "水体基质",
+        "std_label": null,
+        "evidence": "Characterized by minimal leaching of active sites, robust catalytic performance, and low-toxicity decontamination, this system proves highly efficient in multiple treatment cycles and complex water matrices.",
+        "source": "abstract",
+        "confidence": 1.0
+      }
+    ],
+    "概念_辅学科": {}
+  },
+  {
+    "title": "High-entropy alloy enables multi-path electron synergism and lattice oxygen activation for enhanced oxygen evolution activity",
+    "primary": "化学",
+    "secondary_list": [],
+    "概念_主学科": [
+      {
+        "term": "Electrocatalytic oxygen evolution reaction (OER)",
+        "normalized": "电催化析氧反应",
+        "std_label": null,
+        "evidence": "Electrocatalytic oxygen evolution reaction (OER) is key to several energy technologies but suffers from low activity.",
+        "source": "abstract",
+        "confidence": 1.0
+      },
+      {
+        "term": "lattice oxygen activation mechanism (LOM)",
+        "normalized": "晶格氧活化机制",
+        "std_label": null,
+        "evidence": "Leveraging the lattice oxygen activation mechanism (LOM) is a strategy for boosting its activity.",
+        "source": "abstract",
+        "confidence": 1.0
+      },
+      {
+        "term": "high-entropy alloys (HEAs)",
+        "normalized": "高熵合金",
+        "std_label": null,
+        "evidence": "We reveal that high-entropy alloys (HEAs) can efficiently activate the LOM through synergistic multi-path electron transfer.",
+        "source": "abstract",
+        "confidence": 1.0
+      },
+      {
+        "term": "multi-path electron transfer",
+        "normalized": "多路径电子转移",
+        "std_label": null,
+        "evidence": "We reveal that high-entropy alloys (HEAs) can efficiently activate the LOM through synergistic multi-path electron transfer.",
+        "source": "abstract",
+        "confidence": 1.0
+      },
+      {
+        "term": "Ni-Co dual-site",
+        "normalized": "镍-钴双位点",
+        "std_label": null,
+        "evidence": "Specifically, the oxidation of nickel is enhanced by this electron transfer, aided by the integration of weaker Co-O bonds, enabling effective LOM at the Ni-Co dual-site.",
+        "source": "abstract",
+        "confidence": 1.0
+      },
+      {
+        "term": "NiFeCoCrW<sub>0.2</sub> HEA",
+        "normalized": "NiFeCoCrW<sub>0.2</sub>高熵合金",
+        "std_label": null,
+        "evidence": "These insights allow the design of a NiFeCoCrW<sub>0.2</sub> HEA that exhibits improved activity, achieving an overpotential of 220 mV at a current density of 10 mA cm<sup>-2</sup>.",
+        "source": "abstract",
+        "confidence": 1.0
+      },
+      {
+        "term": "overpotential",
+        "normalized": "过电位",
+        "std_label": null,
+        "evidence": "achieving an overpotential of 220 mV at a current density of 10 mA cm<sup>-2</sup>.",
+        "source": "abstract",
+        "confidence": 1.0
+      },
+      {
+        "term": "current density",
+        "normalized": "电流密度",
+        "std_label": null,
+        "evidence": "achieving an overpotential of 220 mV at a current density of 10 mA cm<sup>-2</sup>.",
+        "source": "abstract",
+        "confidence": 1.0
+      },
+      {
+        "term": "Co-O bonds",
+        "normalized": "钴-氧键",
+        "std_label": null,
+        "evidence": "Specifically, the oxidation of nickel is enhanced by this electron transfer, aided by the integration of weaker Co-O bonds, enabling effective LOM at the Ni-Co dual-site.",
+        "source": "abstract",
+        "confidence": 1.0
+      },
+      {
+        "term": "OER electrocatalysts",
+        "normalized": "OER电催化剂",
+        "std_label": null,
+        "evidence": "This study sheds light on the synergistic effects that confer high activity in HEAs and contribute to the advancement of high-performance OER electrocatalysts.",
+        "source": "abstract",
+        "confidence": 1.0
+      }
+    ],
+    "概念_辅学科": {}
+  },
+  {
+    "title": "MXene-Assisted NiFe sulfides for high-performance anion exchange membrane seawater electrolysis",
+    "primary": "化学",
+    "secondary_list": [],
+    "概念_主学科": [
+      {
+        "term": "anion exchange membrane seawater electrolysis",
+        "normalized": "阴离子交换膜海水电解",
+        "std_label": null,
+        "evidence": "Anion exchange membrane seawater electrolysis is vital for future large-scale green hydrogen production",
+        "source": "abstract",
+        "confidence": 1.0
+      },
+      {
+        "term": "oxygen evolution reaction electrocatalysts",
+        "normalized": "氧析出反应电催化剂",
+        "std_label": null,
+        "evidence": "enduring a huge challenge that lacks high-stable oxygen evolution reaction electrocatalysts",
+        "source": "abstract",
+        "confidence": 1.0
+      },
+      {
+        "term": "MXene (Ti<sub>3</sub>C<sub>2</sub>)",
+        "normalized": "MXene (Ti3C2)",
+        "std_label": null,
+        "evidence": "Herein, we report a robust OER electrocatalyst for AEMSE by integrating MXene (Ti<sub>3</sub>C<sub>2</sub>) with NiFe sulfides",
+        "source": "abstract",
+        "confidence": 1.0
+      },
+      {
+        "term": "NiFe sulfides ((Ni,Fe)S<sub>2</sub>@Ti<sub>3</sub>C<sub>2</sub>)",
+        "normalized": "NiFe硫化物 ((Ni,Fe)S2@Ti3C2)",
+        "std_label": null,
+        "evidence": "Herein, we report a robust OER electrocatalyst for AEMSE by integrating MXene (Ti<sub>3</sub>C<sub>2</sub>) with NiFe sulfides ((Ni,Fe)S<sub>2</sub>@Ti<sub>3</sub>C<sub>2</sub>)",
+        "source": "abstract",
+        "confidence": 1.0
+      },
+      {
+        "term": "lattice oxygen mechanism",
+        "normalized": "晶格氧机制",
+        "std_label": null,
+        "evidence": "The strong interaction between (Ni,Fe)S<sub>2</sub> and Ti<sub>3</sub>C<sub>2</sub> induces electron distribution to trigger lattice oxygen mechanism",
+        "source": "abstract",
+        "confidence": 1.0
+      },
+      {
+        "term": "Ti-O-Fe bonding",
+        "normalized": "Ti-O-Fe键",
+        "std_label": null,
+        "evidence": "particularly prohibits the dissolution of Fe species during OER process via the Ti-O-Fe bonding effectively",
+        "source": "abstract",
+        "confidence": 1.0
+      },
+      {
+        "term": "Cl<sup>-</sup> resistance",
+        "normalized": "Cl-抗性",
+        "std_label": null,
+        "evidence": "the good retention of sulfates and the abundant groups of Ti<sub>3</sub>C<sub>2</sub> provide effective Cl<sup>-</sup> resistance",
+        "source": "abstract",
+        "confidence": 1.0
+      },
+      {
+        "term": "OER activity (1.598 V@2 A cm<sup>-2</sup>)",
+        "normalized": "OER活性 (1.598 V@2 A cm-2)",
+        "std_label": null,
+        "evidence": "(Ni,Fe)S<sub>2</sub>@Ti<sub>3</sub>C<sub>2</sub> achieves high OER activity (1.598 V@2 A cm<sup>-2</sup>)",
+        "source": "abstract",
+        "confidence": 1.0
+      },
+      {
+        "term": "long-term durability (1000 h)",
+        "normalized": "长期耐久性 (1000小时)",
+        "std_label": null,
+        "evidence": "and long-term durability (1000 h) in seawater system",
+        "source": "abstract",
+        "confidence": 1.0
+      },
+      {
+        "term": "industrial current density (0.5 A cm<sup>-2</sup>)",
+        "normalized": "工业电流密度 (0.5 A cm-2)",
+        "std_label": null,
+        "evidence": "AEMSE with industrial current density (0.5 A cm<sup>-2</sup>)",
+        "source": "abstract",
+        "confidence": 1.0
+      },
+      {
+        "term": "Raney Ni cathode",
+        "normalized": "Raney Ni阴极",
+        "std_label": null,
+        "evidence": "is achieved by (Ni,Fe)S<sub>2</sub>@Ti<sub>3</sub>C<sub>2</sub> anode and Raney Ni cathode",
+        "source": "abstract",
+        "confidence": 1.0
+      },
+      {
+        "term": "electrolysis efficiency of 70%",
+        "normalized": "电解效率70%",
+        "std_label": null,
+        "evidence": "with electrolysis efficiency of 70% and energy consumption of 48.4 kWh kg<sup>-1</sup> H<sub>2</sub>",
+        "source": "abstract",
+        "confidence": 1.0
+      },
+      {
+        "term": "energy consumption of 48.4 kWh kg<sup>-1</sup> H<sub>2</sub>",
+        "normalized": "能耗48.4 kWh kg-1 H2",
+        "std_label": null,
+        "evidence": "with electrolysis efficiency of 70% and energy consumption of 48.4 kWh kg<sup>-1</sup> H<sub>2</sub>",
+        "source": "abstract",
+        "confidence": 1.0
+      }
+    ],
+    "概念_辅学科": {}
+  }
+]

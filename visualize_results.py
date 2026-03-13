@@ -77,4 +77,4 @@ def visualize(json_path, output_path):
     print(f"Plot saved to {output_path}")
 
 if __name__ == "__main__":
-    visualize("eval_results_v7.json", "innovation_vs_consistency.png")
+    visualize("outputs/eval_results_v7.json", "outputs/innovation_vs_consistency.png")

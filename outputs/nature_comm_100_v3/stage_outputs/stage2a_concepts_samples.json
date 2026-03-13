@@ -1,0 +1,505 @@
+[
+  {
+    "title": "Nano-island-encapsulated cobalt single-atom catalysts for breaking activity-stability trade-off in Fenton-like reactions",
+    "primary": "化学",
+    "secondary_list": [
+      "化学",
+      "材料科学",
+      "环境科学技术"
+    ],
+    "概念_主学科": [
+      {
+        "term": "Single-atom catalysts (SACs)",
+        "normalized": "单原子催化剂",
+        "std_label": null,
+        "evidence": "Single-atom catalysts (SACs) have been increasingly acknowledged for their performance in sustainable Fenton-like catalysis.",
+        "source": "abstract",
+        "confidence": 1.0
+      },
+      {
+        "term": "Fenton-like catalysis",
+        "normalized": "类芬顿催化",
+        "std_label": null,
+        "evidence": "Single-atom catalysts (SACs) have been increasingly acknowledged for their performance in sustainable Fenton-like catalysis.",
+        "source": "abstract",
+        "confidence": 1.0
+      },
+      {
+        "term": "peroxymonosulfate (PMS)",
+        "normalized": "过硫酸氢盐",
+        "std_label": null,
+        "evidence": "However, SACs face a trade-off between activity and stability in peroxymonosulfate (PMS)-based systems.",
+        "source": "abstract",
+        "confidence": 1.0
+      },
+      {
+        "term": "nano-island encapsulated single cobalt atom (CoSA/Zn.O-ZnO)",
+        "normalized": "纳米岛封装单钴原子催化剂",
+        "std_label": null,
+        "evidence": "Herein, we design a nano-island encapsulated single cobalt atom (CoSA/Zn.O-ZnO) catalyst to enhance the activity and stability of PMS activation for contaminant degradation via an \"island-sea\" synergistic effect.",
+        "source": "abstract",
+        "confidence": 1.0
+      },
+      {
+        "term": "sulfate radicals (SO4•-)",
+        "normalized": "硫酸根自由基",
+        "std_label": null,
+        "evidence": "The CoSA/Zn.O-ZnO/PMS system exhibits a remarkable selectivity in exclusively generating sulfate radicals (SO4•-), leading to a complete removal of various recalcitrant pollutants within a shorter period.",
+        "source": "abstract",
+        "confidence": 1.0
+      },
+      {
+        "term": "activity-stability trade-off",
+        "normalized": "活性-稳定性权衡",
+        "std_label": null,
+        "evidence": "The design effectively breaks the activity-stability trade-off typically associated with SACs.",
+        "source": "abstract",
+        "confidence": 1.0
+      },
+      {
+        "term": "PMS-AOPs",
+        "normalized": "过硫酸氢盐高级氧化过程",
+        "std_label": null,
+        "evidence": "In recent years, the emerged heterogenous peroxymonosulfate-based advanced oxidation processes (PMS-AOPs) have gained recognition as effective means to generate reactive oxygen species (ROS) and eradicate refractory organic pollutants in wastewater.",
+        "source": "introduction",
+        "confidence": 1.0
+      },
+      {
+        "term": "reactive oxygen species (ROS)",
+        "normalized": "活性氧物种",
+        "std_label": null,
+        "evidence": "In recent years, the emerged heterogenous peroxymonosulfate-based advanced oxidation processes (PMS-AOPs) have gained recognition as effective means to generate reactive oxygen species (ROS) and eradicate refractory organic pollutants in wastewater.",
+        "source": "introduction",
+        "confidence": 1.0
+      },
+      {
+        "term": "ZnO nanoparticles",
+        "normalized": "氧化锌纳米颗粒",
+        "std_label": null,
+        "evidence": "In this configuration, small carrier-based ZnO nanoparticles (the \"islands\") are utilized to confine and stabilize Co single atoms.",
+        "source": "abstract",
+        "confidence": 1.0
+      },
+      {
+        "term": "ZnO substrate",
+        "normalized": "氧化锌基底",
+        "std_label": null,
+        "evidence": "The expansive ZnO substrate (the \"sea\") upholds a neutral microenvironment within the reaction system.",
+        "source": "abstract",
+        "confidence": 1.0
+      }
+    ],
+    "概念_辅学科": {
+      "材料科学": [
+        {
+          "term": "nano-island encapsulated single cobalt atom (CoSA/Zn.O-ZnO)",
+          "normalized": "纳米岛封装单钴原子催化剂",
+          "std_label": null,
+          "evidence": "Herein, we design a nano-island encapsulated single cobalt atom (CoSA/Zn.O-ZnO) catalyst to enhance the activity and stability of PMS activation for contaminant degradation via an \"island-sea\" synergistic effect.",
+          "source": "abstract",
+          "confidence": 1.0
+        },
+        {
+          "term": "ZnO nanoparticles",
+          "normalized": "氧化锌纳米颗粒",
+          "std_label": null,
+          "evidence": "In this configuration, small carrier-based ZnO nanoparticles (the \"islands\") are utilized to confine and stabilize Co single atoms.",
+          "source": "abstract",
+          "confidence": 1.0
+        },
+        {
+          "term": "ZnO substrate",
+          "normalized": "氧化锌基底",
+          "std_label": null,
+          "evidence": "The expansive ZnO substrate (the \"sea\") upholds a neutral microenvironment within the reaction system.",
+          "source": "abstract",
+          "confidence": 1.0
+        },
+        {
+          "term": "carbon materials",
+          "normalized": "碳材料",
+          "std_label": null,
+          "evidence": "In the current SAC designs, carbon materials commonly act as supports to anchor single-atom catalytic sites.",
+          "source": "introduction",
+          "confidence": 1.0
+        }
+      ],
+      "环境科学技术": [
+        {
+          "term": "contaminant degradation",
+          "normalized": "污染物降解",
+          "std_label": null,
+          "evidence": "Herein, we design a nano-island encapsulated single cobalt atom (CoSA/Zn.O-ZnO) catalyst to enhance the activity and stability of PMS activation for contaminant degradation via an \"island-sea\" synergistic effect.",
+          "source": "abstract",
+          "confidence": 1.0
+        },
+        {
+          "term": "recalcitrant pollutants",
+          "normalized": "难降解污染物",
+          "std_label": null,
+          "evidence": "The CoSA/Zn.O-ZnO/PMS system exhibits a remarkable selectivity in exclusively generating sulfate radicals (SO4•-), leading to a complete removal of various recalcitrant pollutants within a shorter period.",
+          "source": "abstract",
+          "confidence": 1.0
+        },
+        {
+          "term": "water matrices",
+          "normalized": "水体基质",
+          "std_label": null,
+          "evidence": "Characterized by minimal leaching of active sites, robust catalytic performance, and low-toxicity decontamination, this system proves highly efficient in multiple treatment cycles and complex water matrices.",
+          "source": "abstract",
+          "confidence": 1.0
+        },
+        {
+          "term": "Persistent organic pollutants",
+          "normalized": "持久性有机污染物",
+          "std_label": null,
+          "evidence": "Persistent organic pollutants in wastewater present substantial risks to human health and ecosystems.",
+          "source": "introduction",
+          "confidence": 1.0
+        }
+      ]
+    }
+  },
+  {
+    "title": "High-entropy alloy enables multi-path electron synergism and lattice oxygen activation for enhanced oxygen evolution activity",
+    "primary": "化学",
+    "secondary_list": [
+      "化学",
+      "材料科学"
+    ],
+    "概念_主学科": [
+      {
+        "term": "Electrocatalytic oxygen evolution reaction (OER)",
+        "normalized": "电催化氧析出反应",
+        "std_label": null,
+        "evidence": "Electrocatalytic oxygen evolution reaction (OER) is key to several energy technologies but suffers from low activity.",
+        "source": "abstract",
+        "confidence": 1.0
+      },
+      {
+        "term": "lattice oxygen activation mechanism (LOM)",
+        "normalized": "晶格氧活化机制",
+        "std_label": null,
+        "evidence": "Leveraging the lattice oxygen activation mechanism (LOM) is a strategy for boosting its activity.",
+        "source": "abstract",
+        "confidence": 1.0
+      },
+      {
+        "term": "high-entropy alloys (HEAs)",
+        "normalized": "高熵合金",
+        "std_label": null,
+        "evidence": "We reveal that high-entropy alloys (HEAs) can efficiently activate the LOM through synergistic multi-path electron transfer.",
+        "source": "abstract",
+        "confidence": 1.0
+      },
+      {
+        "term": "Ni-Co dual-site",
+        "normalized": "镍钴双位点",
+        "std_label": null,
+        "evidence": "enabling effective LOM at the Ni-Co dual-site.",
+        "source": "abstract",
+        "confidence": 1.0
+      },
+      {
+        "term": "NiFeCoCrW<sub>0.2</sub> HEA",
+        "normalized": "高熵合金",
+        "std_label": null,
+        "evidence": "These insights allow the design of a NiFeCoCrW<sub>0.2</sub> HEA that exhibits improved activity.",
+        "source": "abstract",
+        "confidence": 1.0
+      },
+      {
+        "term": "overpotential",
+        "normalized": "过电位",
+        "std_label": null,
+        "evidence": "achieving an overpotential of 220 mV at a current density of 10 mA cm<sup>-2</sup>.",
+        "source": "abstract",
+        "confidence": 1.0
+      },
+      {
+        "term": "current density",
+        "normalized": "电流密度",
+        "std_label": null,
+        "evidence": "achieving an overpotential of 220 mV at a current density of 10 mA cm<sup>-2</sup>.",
+        "source": "abstract",
+        "confidence": 1.0
+      },
+      {
+        "term": "Raman spectroscopy",
+        "normalized": "拉曼光谱",
+        "std_label": null,
+        "evidence": "We analyzed the catalyst surface using Raman spectroscopy fol- lowing the i-t tests in both KOH and TMAOH solutions.",
+        "source": "introduction",
+        "confidence": 1.0
+      },
+      {
+        "term": "Ni–O bond",
+        "normalized": "镍氧键",
+        "std_label": null,
+        "evidence": "a peak observed at 506 cm−1 in the Raman spectrum is indicative of the A1g stretching mode of the Ni–O bond within Ni(OH)2.",
+        "source": "introduction",
+        "confidence": 1.0
+      },
+      {
+        "term": "Fe–O bond",
+        "normalized": "铁氧键",
+        "std_label": null,
+        "evidence": "the Raman spectrum identiﬁed a pair of peaks at 560 and 680 cm−1, which correspond to the Fe–O bond.",
+        "source": "introduction",
+        "confidence": 1.0
+      },
+      {
+        "term": "Ni/Co–O bond",
+        "normalized": "镍/钴氧键",
+        "std_label": null,
+        "evidence": "a single peak at 527 cm−1, attributed to the Ni/Co–O bond.",
+        "source": "introduction",
+        "confidence": 1.0
+      },
+      {
+        "term": "TMA+ cations",
+        "normalized": "四甲基铵阳离子",
+        "std_label": null,
+        "evidence": "The appearance of three distinct peaks at 458, 755, and 952 cm−1 is characteristic of the presence of TMA+ cations10.",
+        "source": "introduction",
+        "confidence": 1.0
+      },
+      {
+        "term": "μ-OO",
+        "normalized": "μ-过氧中间体",
+        "std_label": null,
+        "evidence": "the evaluation of the key intermediate μ-OO and the electrochemical OER behavior under speciﬁc test conditions provided direct evidence for distinguishing the reaction mechanisms.",
+        "source": "introduction",
+        "confidence": 1.0
+      }
+    ],
+    "概念_辅学科": {
+      "化学": [
+        {
+          "term": "Co-O bonds",
+          "normalized": "钴氧键",
+          "std_label": null,
+          "evidence": "the oxidation of nickel is enhanced by this electron transfer, aided by the integration of weaker Co-O bonds.",
+          "source": "abstract",
+          "confidence": 1.0
+        },
+        {
+          "term": "Ni(OH)2",
+          "normalized": "氢氧化镍",
+          "std_label": null,
+          "evidence": "a peak observed at 506 cm−1 in the Raman spectrum is indicative of the A1g stretching mode of the Ni–O bond within Ni(OH)2.",
+          "source": "introduction",
+          "confidence": 1.0
+        },
+        {
+          "term": "TMAOH",
+          "normalized": "四甲基氢氧化铵",
+          "std_label": null,
+          "evidence": "We analyzed the catalyst surface using Raman spectroscopy fol- lowing the i-t tests in both KOH and TMAOH solutions.",
+          "source": "introduction",
+          "confidence": 1.0
+        },
+        {
+          "term": "KOH",
+          "normalized": "氢氧化钾",
+          "std_label": null,
+          "evidence": "We analyzed the catalyst surface using Raman spectroscopy fol- lowing the i-t tests in both KOH and TMAOH solutions.",
+          "source": "introduction",
+          "confidence": 1.0
+        }
+      ],
+      "材料科学": [
+        {
+          "term": "high-entropy structure",
+          "normalized": "高熵结构",
+          "std_label": null,
+          "evidence": "These observations reinforce the idea that the OER kinetic mechanism is related to the compositional species and that the high-entropy structure promotes the initiation of an efﬁcient electrocatalytic LOM pathway.",
+          "source": "introduction",
+          "confidence": 1.0
+        },
+        {
+          "term": "NiFeCoCrW0.2",
+          "normalized": "高熵合金",
+          "std_label": null,
+          "evidence": "Notably, the Raman spectrum for the NiFeCoCrW0.2 catalyst dis- plays three prominent peaks associated with TMA+ ions.",
+          "source": "introduction",
+          "confidence": 1.0
+        },
+        {
+          "term": "NiFeCoW0.2",
+          "normalized": "高熵合金",
+          "std_label": null,
+          "evidence": "These peaks were exclusively observed on the surfaces of the NiFeCoCrW0.2, NiFeCoW0.2, and NiFeCoCr electrodes following the i-t tests conducted in the TMAOH electrolyte.",
+          "source": "introduction",
+          "confidence": 1.0
+        },
+        {
+          "term": "NiFeCoCr",
+          "normalized": "高熵合金",
+          "std_label": null,
+          "evidence": "These peaks were exclusively observed on the surfaces of the NiFeCoCrW0.2, NiFeCoW0.2, and NiFeCoCr electrodes following the i-t tests conducted in the TMAOH electrolyte.",
+          "source": "introduction",
+          "confidence": 1.0
+        }
+      ]
+    }
+  },
+  {
+    "title": "MXene-Assisted NiFe sulfides for high-performance anion exchange membrane seawater electrolysis",
+    "primary": "化学",
+    "secondary_list": [
+      "化学",
+      "材料科学"
+    ],
+    "概念_主学科": [
+      {
+        "term": "anion exchange membrane seawater electrolysis",
+        "normalized": "阴离子交换膜海水电解",
+        "std_label": null,
+        "evidence": "Anion exchange membrane seawater electrolysis is vital for future large-scale green hydrogen production",
+        "source": "abstract",
+        "confidence": 1.0
+      },
+      {
+        "term": "oxygen evolution reaction electrocatalysts",
+        "normalized": "氧析出反应电催化剂",
+        "std_label": null,
+        "evidence": "however enduring a huge challenge that lacks high-stable oxygen evolution reaction electrocatalysts",
+        "source": "abstract",
+        "confidence": 1.0
+      },
+      {
+        "term": "MXene (Ti<sub>3</sub>C<sub>2</sub>)",
+        "normalized": "MXene (Ti3C2)",
+        "std_label": null,
+        "evidence": "Herein, we report a robust OER electrocatalyst for AEMSE by integrating MXene (Ti<sub>3</sub>C<sub>2</sub>) with NiFe sulfides",
+        "source": "abstract",
+        "confidence": 1.0
+      },
+      {
+        "term": "NiFe sulfides ((Ni,Fe)S<sub>2</sub>@Ti<sub>3</sub>C<sub>2</sub>)",
+        "normalized": "硫化物",
+        "std_label": null,
+        "evidence": "Herein, we report a robust OER electrocatalyst for AEMSE by integrating MXene (Ti<sub>3</sub>C<sub>2</sub>) with NiFe sulfides ((Ni,Fe)S<sub>2</sub>@Ti<sub>3</sub>C<sub>2</sub>)",
+        "source": "abstract",
+        "confidence": 1.0
+      },
+      {
+        "term": "lattice oxygen mechanism",
+        "normalized": "晶格氧机制",
+        "std_label": null,
+        "evidence": "The strong interaction between (Ni,Fe)S<sub>2</sub> and Ti<sub>3</sub>C<sub>2</sub> induces electron distribution to trigger lattice oxygen mechanism",
+        "source": "abstract",
+        "confidence": 1.0
+      },
+      {
+        "term": "Ti-O-Fe bonding",
+        "normalized": "键",
+        "std_label": null,
+        "evidence": "and particularly prohibits the dissolution of Fe species during OER process via the Ti-O-Fe bonding effectively",
+        "source": "abstract",
+        "confidence": 1.0
+      },
+      {
+        "term": "Cl<sup>-</sup> resistance",
+        "normalized": "抗性",
+        "std_label": null,
+        "evidence": "Furthermore, the good retention of sulfates and the abundant groups of Ti<sub>3</sub>C<sub>2</sub> provide effective Cl<sup>-</sup> resistance",
+        "source": "abstract",
+        "confidence": 1.0
+      },
+      {
+        "term": "OER activity (1.598 V@2 A cm<sup>-2</sup>)",
+        "normalized": "活性",
+        "std_label": null,
+        "evidence": "(Ni,Fe)S<sub>2</sub>@Ti<sub>3</sub>C<sub>2</sub> achieves high OER activity (1.598 V@2 A cm<sup>-2</sup>)",
+        "source": "abstract",
+        "confidence": 1.0
+      },
+      {
+        "term": "long-term durability (1000 h)",
+        "normalized": "长期耐久性 1000小时",
+        "std_label": null,
+        "evidence": "and long-term durability (1000 h) in seawater system",
+        "source": "abstract",
+        "confidence": 1.0
+      },
+      {
+        "term": "industrial current density (0.5 A cm<sup>-2</sup>)",
+        "normalized": "工业电流密度",
+        "std_label": null,
+        "evidence": "Furthermore, AEMSE with industrial current density (0.5 A cm<sup>-2</sup>)",
+        "source": "abstract",
+        "confidence": 1.0
+      },
+      {
+        "term": "electrolysis efficiency of 70%",
+        "normalized": "电解效率70%",
+        "std_label": null,
+        "evidence": "and Raney Ni cathode with electrolysis efficiency of 70%",
+        "source": "abstract",
+        "confidence": 1.0
+      },
+      {
+        "term": "energy consumption of 48.4 kWh kg<sup>-1</sup> H<sub>2</sub>",
+        "normalized": "能耗48.4",
+        "std_label": null,
+        "evidence": "and energy consumption of 48.4 kWh kg<sup>-1</sup> H<sub>2</sub>",
+        "source": "abstract",
+        "confidence": 1.0
+      }
+    ],
+    "概念_辅学科": {
+      "材料科学": [
+        {
+          "term": "MXene (Ti<sub>3</sub>C<sub>2</sub>)",
+          "normalized": "MXene (Ti3C2)",
+          "std_label": null,
+          "evidence": "Herein, we report a robust OER electrocatalyst for AEMSE by integrating MXene (Ti<sub>3</sub>C<sub>2</sub>) with NiFe sulfides",
+          "source": "abstract",
+          "confidence": 1.0
+        },
+        {
+          "term": "NiFe sulfides ((Ni,Fe)S<sub>2</sub>@Ti<sub>3</sub>C<sub>2</sub>)",
+          "normalized": "硫化物",
+          "std_label": null,
+          "evidence": "Herein, we report a robust OER electrocatalyst for AEMSE by integrating MXene (Ti<sub>3</sub>C<sub>2</sub>) with NiFe sulfides ((Ni,Fe)S<sub>2</sub>@Ti<sub>3</sub>C<sub>2</sub>)",
+          "source": "abstract",
+          "confidence": 1.0
+        },
+        {
+          "term": "Ti-O-Fe bonding",
+          "normalized": "键",
+          "std_label": null,
+          "evidence": "and particularly prohibits the dissolution of Fe species during OER process via the Ti-O-Fe bonding effectively",
+          "source": "abstract",
+          "confidence": 1.0
+        },
+        {
+          "term": "Raney Ni cathode",
+          "normalized": "阴极",
+          "std_label": null,
+          "evidence": "and Raney Ni cathode with electrolysis efficiency of 70%",
+          "source": "abstract",
+          "confidence": 1.0
+        },
+        {
+          "term": "gas diffusion layer (GDL)",
+          "normalized": "气体扩散层",
+          "std_label": null,
+          "evidence": "The inﬂuence of pore size of the gas diffusion layer (GDL)",
+          "source": "introduction",
+          "confidence": 1.0
+        },
+        {
+          "term": "anion exchange membranes",
+          "normalized": "阴离子交换膜",
+          "std_label": null,
+          "evidence": "difﬁdent anion exchange membranes on the performance of the electrolyzer were carried out",
+          "source": "introduction",
+          "confidence": 1.0
+        }
+      ]
+    }
+  }
+]

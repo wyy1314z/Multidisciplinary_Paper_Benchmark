@@ -1,0 +1,72 @@
+# ── 统一配置文件 ─────────────────────────────────────────────────────────────
+# 包含 classifier（学科分类）和 extractor（知识抽取）两个子系统的配置。
+#
+# 使用方式:
+#   # 仅分类
+#   crossdisc-pipeline classify -i papers.jsonl -o classified.jsonl --config configs/default.yaml
+#   # 完整流水线
+#   crossdisc-pipeline full -i papers.jsonl -o results.jsonl --config configs/default.yaml
+
+# ── Classifier 配置（学科分类 + 跨学科判定）──────────────────────────────────
+classifier:
+  llm:
+    model_name: "deepseek-v3"
+    api_base: "https://uni-api.cstcloud.cn/v1"
+    # api_key 通过环境变量 OPENAI_API_KEY 读取
+    temperature: 0.0
+    timeout: 300
+    max_retries: 3
+
+  classifier:
+    max_choices_per_level: 3
+    term_max_len: 128
+    concurrency: 10
+
+  taxonomy:
+    path: "data/msc_converted.json"
+
+  extraction:
+    download_workers: 8
+    model_workers: 20
+    max_pdf_pages: 4
+    print_preview_chars: 1000
+
+  models:
+    "qwen27B": "Qwen2.5-7B"
+    "qwen/qwen-2.5-72b-instruct": "Qwen2.5-72B"
+    "qwen/qwen3-max": "Qwen3-Max"
+    "deepseek/deepseek-chat-v3.1": "Deepseek-V3.1"
+    "deepseek/deepseek-r1-0528": "Deepseek-R1-0528"
+    "openai/gpt-4o-mini": "GPT-4o-mini"
+    "openai/gpt-4.1-mini": "GPT-4.1-mini"
+    "deepseek-v3:671b-gw": "Deepseek-V3"
+
+  api_endpoints:
+    openrouter: "https://openrouter.ai/api/v1"
+    cstcloud: "https://uni-api.cstcloud.cn/v1"
+    local: "http://localhost:8864/v1"
+
+# ── Extractor 配置（知识抽取 + 假设生成 + 评估）─────────────────────────────
+extractor:
+  model:
+    generation_model: ""          # 留空时由环境变量 OPENAI_MODEL 决定
+    base_url: ""                  # 留空时由环境变量 OPENAI_BASE_URL 决定
+
+  pipeline:
+    language_mode: "chinese"
+    temperature_struct: 0.2
+    temperature_query: 0.2
+    temperature_hyp: 0.3
+    seed: 42
+    max_tokens_struct: 8192
+    max_tokens_query: 4096
+    max_tokens_hyp: 4096
+
+  batch:
+    num_workers: 1
+    sleep_between_items: 0.0
+    resume: true
+
+  benchmark:
+    n_gt_paths_k: 3
+    eval_temperature: 0.0

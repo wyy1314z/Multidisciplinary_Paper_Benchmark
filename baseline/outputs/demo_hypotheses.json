@@ -1,0 +1,62 @@
+{
+  "paper": {
+    "title": "Resolving multi-image spatial lipidomic responses to inhaled toxicants by machine learning",
+    "abstract": "Abstract Regional responses to inhaled toxicants are essential to understand the pathogenesis of lung disease under exposure to air pollution. We evaluate the effect of combined allergen sensitization and ozone exposure on eliciting spatial differences in lipid distribution in the mouse lung that may contribute to ozone-induced exacerbations in asthma. We demonstrate the ability to normalize and segment high resolution mass spectrometry imaging data by applying established machine learning algorithms. Interestingly, our segmented regions overlap with histologically validated lung regions, enabling regional analysis across biological replicates. Our data reveal differences in the abundance of spatially distinct lipids, support the potential role of lipid saturation in healthy lung function, and highlight sex differences in regional lung lipid distribution following ozone exposure. Our study provides a framework for future mass spectrometry imaging experiments capable of relative quantification across biological replicates and expansion to multiple sample types, including human tissue.",
+    "primary_discipline": "[[生物学]; [生物物理学]; [生物化学]]",
+    "secondary_disciplines": [
+      "Environmental Science",
+      "Environmental Science",
+      "Biochemistry, Genetics and Molecular Biology"
+    ]
+  },
+  "results": [
+    {
+      "method": "IdeaBench",
+      "ref": "IdeaBench, 2024",
+      "desc": "给定 background abstract，以 biomedical researcher 身份生成自由文本假设段落",
+      "hypotheses_text": "{\n            \"innovation_score\": 6.0,\n            \"feasibility_score\": 5.7,\n            \"scientificity_score\": 6.2,\n            \"reason\": \"Mock evaluation with random scores.\"\n        }",
+      "raw_response": "{\n            \"innovation_score\": 6.0,\n            \"feasibility_score\": 5.7,\n            \"scientificity_score\": 6.2,\n            \"reason\": \"Mock evaluation with random scores.\"\n        }",
+      "elapsed": 0.4
+    },
+    {
+      "method": "VanillaLLM",
+      "ref": "Si et al. (Stanford), 2024",
+      "desc": "Zero-shot 直接生成假设列表，要求 specific + testable",
+      "hypotheses_text": "{\n            \"innovation_score\": 5.9,\n            \"feasibility_score\": 4.4,\n            \"scientificity_score\": 7.1,\n            \"reason\": \"Mock evaluation with random scores.\"\n        }",
+      "raw_response": "{\n            \"innovation_score\": 5.9,\n            \"feasibility_score\": 4.4,\n            \"scientificity_score\": 7.1,\n            \"reason\": \"Mock evaluation with random scores.\"\n        }",
+      "elapsed": 0.0
+    },
+    {
+      "method": "AI-Scientist",
+      "ref": "Sakana AI, 2024 (arXiv: 2408.06292)",
+      "desc": "以 AI 研究员身份生成结构化 idea，含 hypothesis + experiment + 自评分",
+      "hypotheses_text": "{\n            \"innovation_score\": 7.9,\n            \"feasibility_score\": 7.6,\n            \"scientificity_score\": 6.4,\n            \"reason\": \"Mock evaluation with random scores.\"\n        }",
+      "raw_response": "{\n            \"innovation_score\": 7.9,\n            \"feasibility_score\": 7.6,\n            \"scientificity_score\": 6.4,\n            \"reason\": \"Mock evaluation with random scores.\"\n        }",
+      "elapsed": 0.0
+    },
+    {
+      "method": "SciMON",
+      "ref": "AI2 / Northwestern, 2024 (arXiv: 2305.14259)",
+      "desc": "Novelty-optimized 假设生成，显式要求与已有工作不同",
+      "hypotheses_text": "{\n            \"innovation_score\": 5.9,\n            \"feasibility_score\": 7.9,\n            \"scientificity_score\": 6.1,\n            \"reason\": \"Mock evaluation with random scores.\"\n        }",
+      "raw_response": "{\n            \"innovation_score\": 5.9,\n            \"feasibility_score\": 7.9,\n            \"scientificity_score\": 6.1,\n            \"reason\": \"Mock evaluation with random scores.\"\n        }",
+      "elapsed": 0.0
+    },
+    {
+      "method": "MOOSE-Chem",
+      "ref": "UIUC, 2024",
+      "desc": "两阶段：先提取灵感片段(inspiration)，再组合生成假设",
+      "hypotheses_text": "{\n            \"innovation_score\": 5.6,\n            \"feasibility_score\": 5.8,\n            \"scientificity_score\": 7.3,\n            \"reason\": \"Mock evaluation with random scores.\"\n        }",
+      "raw_response": "=== Stage 1 (Inspirations) ===\n\n        {\n            \"innovation_score\": 5.9,\n            \"feasibility_score\": 4.0,\n            \"scientificity_score\": 6.1,\n            \"reason\": \"Mock evaluation with random scores.\"\n        }\n        \n\n=== Stage 2 (Hypotheses) ===\n\n        {\n            \"innovation_score\": 5.6,\n            \"feasibility_score\": 5.8,\n            \"scientificity_score\": 7.3,\n            \"reason\": \"Mock evaluation with random scores.\"\n        }",
+      "elapsed": 0.0
+    },
+    {
+      "method": "SciAgents",
+      "ref": "MIT, 2024 (arXiv: 2409.05556)",
+      "desc": "Multi-agent: Ontologist(概念)→Scientist(假设)→Critic(评审精炼)",
+      "hypotheses_text": "{\n            \"innovation_score\": 9.3,\n            \"feasibility_score\": 6.0,\n            \"scientificity_score\": 8.9,\n            \"reason\": \"Mock evaluation with random scores.\"\n        }",
+      "raw_response": "=== Agent 1: Ontologist ===\n\n        {\n            \"innovation_score\": 9.4,\n            \"feasibility_score\": 7.9,\n            \"scientificity_score\": 7.7,\n            \"reason\": \"Mock evaluation with random scores.\"\n        }\n        \n\n=== Agent 2: Scientist ===\n\n        {\n            \"innovation_score\": 7.7,\n            \"feasibility_score\": 4.1,\n            \"scientificity_score\": 7.4,\n            \"reason\": \"Mock evaluation with random scores.\"\n        }\n        \n\n=== Agent 3: Critic ===\n\n        {\n            \"innovation_score\": 9.3,\n            \"feasibility_score\": 6.0,\n            \"scientificity_score\": 8.9,\n            \"reason\": \"Mock evaluation with random scores.\"\n        }",
+      "elapsed": 0.0
+    }
+  ]
+}

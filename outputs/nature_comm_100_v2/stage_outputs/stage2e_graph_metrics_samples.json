@@ -1,0 +1,1416 @@
+[
+  {
+    "title": "MXene-Assisted NiFe sulfides for high-performance anion exchange membrane seawater electrolysis",
+    "graph": {
+      "nodes": [
+        {
+          "id": "阴离子交换膜海水电解",
+          "term": "anion exchange membrane seawater electrolysis",
+          "normalized": "阴离子交换膜海水电解",
+          "discipline": "化学",
+          "evidence": "Anion exchange membrane seawater electrolysis is vital for future large-scale green hydrogen production",
+          "source": "abstract",
+          "confidence": 1.0
+        },
+        {
+          "id": "氧析出反应电催化剂",
+          "term": "oxygen evolution reaction electrocatalysts",
+          "normalized": "氧析出反应电催化剂",
+          "discipline": "化学",
+          "evidence": "however enduring a huge challenge that lacks high-stable oxygen evolution reaction electrocatalysts",
+          "source": "abstract",
+          "confidence": 1.0
+        },
+        {
+          "id": "MXene (Ti3C2)",
+          "term": "MXene (Ti<sub>3</sub>C<sub>2</sub>)",
+          "normalized": "MXene (Ti3C2)",
+          "discipline": "化学",
+          "evidence": "Herein, we report a robust OER electrocatalyst for AEMSE by integrating MXene (Ti<sub>3</sub>C<sub>2</sub>) with NiFe sulfides",
+          "source": "abstract",
+          "confidence": 1.0
+        },
+        {
+          "id": "NiFe硫化物 ((Ni,Fe)S2@Ti3C2)",
+          "term": "NiFe sulfides ((Ni,Fe)S<sub>2</sub>@Ti<sub>3</sub>C<sub>2</sub>)",
+          "normalized": "NiFe硫化物 ((Ni,Fe)S2@Ti3C2)",
+          "discipline": "化学",
+          "evidence": "Herein, we report a robust OER electrocatalyst for AEMSE by integrating MXene (Ti<sub>3</sub>C<sub>2</sub>) with NiFe sulfides ((Ni,Fe)S<sub>2</sub>@Ti<sub>3</sub>C<sub>2</sub>)",
+          "source": "abstract",
+          "confidence": 1.0
+        },
+        {
+          "id": "晶格氧机制",
+          "term": "lattice oxygen mechanism",
+          "normalized": "晶格氧机制",
+          "discipline": "化学",
+          "evidence": "The strong interaction between (Ni,Fe)S<sub>2</sub> and Ti<sub>3</sub>C<sub>2</sub> induces electron distribution to trigger lattice oxygen mechanism",
+          "source": "abstract",
+          "confidence": 1.0
+        },
+        {
+          "id": "Ti-O-Fe键",
+          "term": "Ti-O-Fe bonding",
+          "normalized": "Ti-O-Fe键",
+          "discipline": "化学",
+          "evidence": "particularly prohibits the dissolution of Fe species during OER process via the Ti-O-Fe bonding effectively",
+          "source": "abstract",
+          "confidence": 1.0
+        },
+        {
+          "id": "Cl-抗性",
+          "term": "Cl<sup>-</sup> resistance",
+          "normalized": "Cl-抗性",
+          "discipline": "化学",
+          "evidence": "the good retention of sulfates and the abundant groups of Ti<sub>3</sub>C<sub>2</sub> provide effective Cl<sup>-</sup> resistance",
+          "source": "abstract",
+          "confidence": 1.0
+        },
+        {
+          "id": "OER活性 (1.598 V@2 A cm-2)",
+          "term": "OER activity (1.598 V@2 A cm<sup>-2</sup>)",
+          "normalized": "OER活性 (1.598 V@2 A cm-2)",
+          "discipline": "化学",
+          "evidence": "(Ni,Fe)S<sub>2</sub>@Ti<sub>3</sub>C<sub>2</sub> achieves high OER activity (1.598 V@2 A cm<sup>-2</sup>)",
+          "source": "abstract",
+          "confidence": 1.0
+        },
+        {
+          "id": "长期耐久性 (1000小时)",
+          "term": "long-term durability (1000 h)",
+          "normalized": "长期耐久性 (1000小时)",
+          "discipline": "化学",
+          "evidence": "and long-term durability (1000 h) in seawater system",
+          "source": "abstract",
+          "confidence": 1.0
+        },
+        {
+          "id": "工业电流密度 (0.5 A cm-2)",
+          "term": "industrial current density (0.5 A cm<sup>-2</sup>)",
+          "normalized": "工业电流密度 (0.5 A cm-2)",
+          "discipline": "化学",
+          "evidence": "Furthermore, AEMSE with industrial current density (0.5 A cm<sup>-2</sup>)",
+          "source": "abstract",
+          "confidence": 1.0
+        },
+        {
+          "id": "电解效率70%",
+          "term": "electrolysis efficiency of 70%",
+          "normalized": "电解效率70%",
+          "discipline": "化学",
+          "evidence": "with electrolysis efficiency of 70% and energy consumption of 48.4 kWh kg<sup>-1</sup> H<sub>2</sub>",
+          "source": "abstract",
+          "confidence": 1.0
+        },
+        {
+          "id": "能耗48.4 kWh kg-1 H2",
+          "term": "energy consumption of 48.4 kWh kg<sup>-1</sup> H<sub>2</sub>",
+          "normalized": "能耗48.4 kWh kg-1 H2",
+          "discipline": "化学",
+          "evidence": "and energy consumption of 48.4 kWh kg<sup>-1</sup> H<sub>2</sub>",
+          "source": "abstract",
+          "confidence": 1.0
+        },
+        {
+          "id": "(Ni,Fe)S<sub>2</sub> and Ti<sub>3</sub>C<sub>2</sub>",
+          "term": "(Ni,Fe)S<sub>2</sub> and Ti<sub>3</sub>C<sub>2</sub>",
+          "normalized": "(Ni,Fe)S<sub>2</sub> and Ti<sub>3</sub>C<sub>2</sub>",
+          "discipline": "struct_relation_inferred",
+          "evidence": "",
+          "source": "hypothesis_inferred",
+          "confidence": 0.8
+        },
+        {
+          "id": "dissolution of Fe species during OER process",
+          "term": "dissolution of Fe species during OER process",
+          "normalized": "dissolution of Fe species during OER process",
+          "discipline": "struct_relation_inferred",
+          "evidence": "",
+          "source": "hypothesis_inferred",
+          "confidence": 0.8
+        },
+        {
+          "id": "good retention of sulfates and the abundant groups of Ti<sub>3</sub>C<sub>2</sub>",
+          "term": "good retention of sulfates and the abundant groups of Ti<sub>3</sub>C<sub>2</sub>",
+          "normalized": "good retention of sulfates and the abundant groups of Ti<sub>3</sub>C<sub>2</sub>",
+          "discipline": "struct_relation_inferred",
+          "evidence": "",
+          "source": "hypothesis_inferred",
+          "confidence": 0.8
+        },
+        {
+          "id": "(Ni,Fe)S<sub>2</sub>@Ti<sub>3</sub>C<sub>2</sub>",
+          "term": "(Ni,Fe)S<sub>2</sub>@Ti<sub>3</sub>C<sub>2</sub>",
+          "normalized": "(Ni,Fe)S<sub>2</sub>@Ti<sub>3</sub>C<sub>2</sub>",
+          "discipline": "struct_relation_inferred",
+          "evidence": "",
+          "source": "hypothesis_inferred",
+          "confidence": 0.8
+        },
+        {
+          "id": "）",
+          "term": "）",
+          "normalized": "）",
+          "discipline": "hypothesis_inferred",
+          "evidence": "",
+          "source": "hypothesis_inferred",
+          "confidence": 0.8
+        },
+        {
+          "id": "硫化物 ((,)@)",
+          "term": "硫化物 ((,)@)",
+          "normalized": "硫化物 ((,)@)",
+          "discipline": "hypothesis_inferred",
+          "evidence": "",
+          "source": "hypothesis_inferred",
+          "confidence": 0.8
+        },
+        {
+          "id": "键",
+          "term": "键",
+          "normalized": "键",
+          "discipline": "hypothesis_inferred",
+          "evidence": "",
+          "source": "hypothesis_inferred",
+          "confidence": 0.8
+        },
+        {
+          "id": "铁元素溶出",
+          "term": "铁元素溶出",
+          "normalized": "铁元素溶出",
+          "discipline": "hypothesis_inferred",
+          "evidence": "",
+          "source": "hypothesis_inferred",
+          "confidence": 0.8
+        },
+        {
+          "id": "活性 (1.598 @2 )",
+          "term": "活性 (1.598 @2 )",
+          "normalized": "活性 (1.598 @2 )",
+          "discipline": "hypothesis_inferred",
+          "evidence": "",
+          "source": "hypothesis_inferred",
+          "confidence": 0.8
+        },
+        {
+          "id": "溶解的物种",
+          "term": "溶解的物种",
+          "normalized": "溶解的物种",
+          "discipline": "hypothesis_inferred",
+          "evidence": "",
+          "source": "hypothesis_inferred",
+          "confidence": 0.8
+        },
+        {
+          "id": "硫酸盐保留与官能团",
+          "term": "硫酸盐保留与官能团",
+          "normalized": "硫酸盐保留与官能团",
+          "discipline": "hypothesis_inferred",
+          "evidence": "",
+          "source": "hypothesis_inferred",
+          "confidence": 0.8
+        },
+        {
+          "id": "硫酸盐保留与基团",
+          "term": "硫酸盐保留与基团",
+          "normalized": "硫酸盐保留与基团",
+          "discipline": "hypothesis_inferred",
+          "evidence": "",
+          "source": "hypothesis_inferred",
+          "confidence": 0.8
+        }
+      ],
+      "edges": [
+        {
+          "source": "MXene (Ti3C2)",
+          "target": "NiFe硫化物 ((Ni,Fe)S2@Ti3C2)",
+          "relation": "integrates with",
+          "relation_type": "method_applied_to",
+          "metadata": {
+            "evidence": "Herein, we report a robust OER electrocatalyst for AEMSE by integrating MXene (Ti<sub>3</sub>C<sub>2</sub>) with NiFe sulfides ((Ni,Fe)S<sub>2</sub>@Ti<sub>3</sub>C<sub>2</sub>)",
+            "source": "struct",
+            "direction": "->"
+          }
+        },
+        {
+          "source": "(Ni,Fe)S<sub>2</sub> and Ti<sub>3</sub>C<sub>2</sub>",
+          "target": "晶格氧机制",
+          "relation": "induces electron distribution to trigger",
+          "relation_type": "driven_by",
+          "metadata": {
+            "evidence": "The strong interaction between (Ni,Fe)S<sub>2</sub> and Ti<sub>3</sub>C<sub>2</sub> induces electron distribution to trigger lattice oxygen mechanism",
+            "source": "struct",
+            "direction": "->"
+          }
+        },
+        {
+          "source": "Ti-O-Fe键",
+          "target": "dissolution of Fe species during OER process",
+          "relation": "prohibits",
+          "relation_type": "constrains",
+          "metadata": {
+            "evidence": "particularly prohibits the dissolution of Fe species during OER process via the Ti-O-Fe bonding effectively",
+            "source": "struct",
+            "direction": "->"
+          }
+        },
+        {
+          "source": "good retention of sulfates and the abundant groups of Ti<sub>3</sub>C<sub>2</sub>",
+          "target": "Cl-抗性",
+          "relation": "provides",
+          "relation_type": "improves_metric",
+          "metadata": {
+            "evidence": "the good retention of sulfates and the abundant groups of Ti<sub>3</sub>C<sub>2</sub> provide effective Cl<sup>-</sup> resistance",
+            "source": "struct",
+            "direction": "->"
+          }
+        },
+        {
+          "source": "(Ni,Fe)S<sub>2</sub>@Ti<sub>3</sub>C<sub>2</sub>",
+          "target": "OER活性 (1.598 V@2 A cm-2)",
+          "relation": "achieves",
+          "relation_type": "improves_metric",
+          "metadata": {
+            "evidence": "(Ni,Fe)S<sub>2</sub>@Ti<sub>3</sub>C<sub>2</sub> achieves high OER activity (1.598 V@2 A cm<sup>-2</sup>)",
+            "source": "struct",
+            "direction": "->"
+          }
+        },
+        {
+          "source": "(Ni,Fe)S<sub>2</sub>@Ti<sub>3</sub>C<sub>2</sub>",
+          "target": "长期耐久性 (1000小时)",
+          "relation": "achieves",
+          "relation_type": "improves_metric",
+          "metadata": {
+            "evidence": "and long-term durability (1000 h) in seawater system",
+            "source": "struct",
+            "direction": "->"
+          }
+        },
+        {
+          "source": "阴离子交换膜海水电解",
+          "target": "氧析出反应电催化剂",
+          "relation": "缺乏",
+          "relation_type": "H1",
+          "metadata": {
+            "claim": "阴离子交换膜海水电解系统面临氧析出反应电催化剂不足的问题",
+            "step": 1,
+            "source": "hypothesis",
+            "path_index": 0
+          }
+        },
+        {
+          "source": "氧析出反应电催化剂",
+          "target": "）",
+          "relation": "通过整合",
+          "relation_type": "H1",
+          "metadata": {
+            "claim": "通过整合 ）材料可以改善氧析出反应电催化剂的性能",
+            "step": 2,
+            "source": "hypothesis",
+            "path_index": 0
+          }
+        },
+        {
+          "source": "）",
+          "target": "硫化物 ((,)@)",
+          "relation": "结合",
+          "relation_type": "H1",
+          "metadata": {
+            "claim": "）与硫化物结合形成高效催化剂，可显著提升阴离子交换膜海水电解系统的性能",
+            "step": 3,
+            "source": "hypothesis",
+            "path_index": 0
+          }
+        },
+        {
+          "source": "阴离子交换膜海水电解",
+          "target": "长期耐久性 (1000小时)",
+          "relation": "需要提升",
+          "relation_type": "H1",
+          "metadata": {
+            "claim": "阴离子交换膜海水电解系统需要提升长期耐久性",
+            "step": 1,
+            "source": "hypothesis",
+            "path_index": 1
+          }
+        },
+        {
+          "source": "长期耐久性 (1000小时)",
+          "target": "键",
+          "relation": "依赖于",
+          "relation_type": "H1",
+          "metadata": {
+            "claim": "长期耐久性的提升依赖于键的形成",
+            "step": 2,
+            "source": "hypothesis",
+            "path_index": 1
+          }
+        },
+        {
+          "source": "键",
+          "target": "铁元素溶出",
+          "relation": "抑制",
+          "relation_type": "H1",
+          "metadata": {
+            "claim": "键能有效抑制铁元素溶出，从而增强电解系统的稳定性",
+            "step": 3,
+            "source": "hypothesis",
+            "path_index": 1
+          }
+        },
+        {
+          "source": "）",
+          "target": "硫化物 ((,)@)",
+          "relation": "整合形成复合结构",
+          "relation_type": "H2",
+          "metadata": {
+            "claim": "） 整合形成复合结构 硫化物 ((,)@)",
+            "step": 1,
+            "source": "hypothesis",
+            "path_index": 0
+          }
+        },
+        {
+          "source": "硫化物 ((,)@)",
+          "target": "晶格氧机制",
+          "relation": "电子重分布触发",
+          "relation_type": "H2",
+          "metadata": {
+            "claim": "硫化物 ((,)@) 电子重分布触发 晶格氧机制",
+            "step": 2,
+            "source": "hypothesis",
+            "path_index": 0
+          }
+        },
+        {
+          "source": "晶格氧机制",
+          "target": "活性 (1.598 @2 )",
+          "relation": "提升反应动力学",
+          "relation_type": "H2",
+          "metadata": {
+            "claim": "晶格氧机制 提升反应动力学 活性 (1.598 @2 )",
+            "step": 3,
+            "source": "hypothesis",
+            "path_index": 0
+          }
+        },
+        {
+          "source": "键",
+          "target": "溶解的物种",
+          "relation": "化学键锚定抑制",
+          "relation_type": "H2",
+          "metadata": {
+            "claim": "键 化学键锚定抑制 溶解的物种",
+            "step": 1,
+            "source": "hypothesis",
+            "path_index": 1
+          }
+        },
+        {
+          "source": "溶解的物种",
+          "target": "硫酸盐保留与官能团",
+          "relation": "协同维持活性位点",
+          "relation_type": "H2",
+          "metadata": {
+            "claim": "溶解的物种 协同维持活性位点 硫酸盐保留与官能团",
+            "step": 2,
+            "source": "hypothesis",
+            "path_index": 1
+          }
+        },
+        {
+          "source": "硫酸盐保留与官能团",
+          "target": "长期耐久性 (1000小时)",
+          "relation": "提供抗性保障",
+          "relation_type": "H2",
+          "metadata": {
+            "claim": "硫酸盐保留与官能团 提供抗性保障 长期耐久性 (1000小时)",
+            "step": 3,
+            "source": "hypothesis",
+            "path_index": 1
+          }
+        },
+        {
+          "source": "）",
+          "target": "硫化物 ((,)@)",
+          "relation": "通过电子协同作用整合",
+          "relation_type": "H3",
+          "metadata": {
+            "claim": "） 通过电子协同作用整合 硫化物 ((,)@)",
+            "step": 1,
+            "source": "hypothesis",
+            "path_index": 0
+          }
+        },
+        {
+          "source": "硫化物 ((,)@)",
+          "target": "晶格氧机制",
+          "relation": "诱导电子分布触发",
+          "relation_type": "H3",
+          "metadata": {
+            "claim": "硫化物 ((,)@) 诱导电子分布触发 晶格氧机制",
+            "step": 2,
+            "source": "hypothesis",
+            "path_index": 0
+          }
+        },
+        {
+          "source": "晶格氧机制",
+          "target": "活性 (1.598 @2 )",
+          "relation": "显著提升",
+          "relation_type": "H3",
+          "metadata": {
+            "claim": "晶格氧机制 显著提升 活性 (1.598 @2 )",
+            "step": 3,
+            "source": "hypothesis",
+            "path_index": 0
+          }
+        },
+        {
+          "source": "键",
+          "target": "溶解的物种",
+          "relation": "有效抑制",
+          "relation_type": "H3",
+          "metadata": {
+            "claim": "键 有效抑制 溶解的物种",
+            "step": 1,
+            "source": "hypothesis",
+            "path_index": 1
+          }
+        },
+        {
+          "source": "溶解的物种",
+          "target": "硫酸盐保留与基团",
+          "relation": "协同维持",
+          "relation_type": "H3",
+          "metadata": {
+            "claim": "溶解的物种 协同维持 硫酸盐保留与基团",
+            "step": 2,
+            "source": "hypothesis",
+            "path_index": 1
+          }
+        },
+        {
+          "source": "硫酸盐保留与基团",
+          "target": "长期耐久性 (1000小时)",
+          "relation": "共同保障",
+          "relation_type": "H3",
+          "metadata": {
+            "claim": "硫酸盐保留与基团 共同保障 长期耐久性 (1000小时)",
+            "step": 3,
+            "source": "hypothesis",
+            "path_index": 1
+          }
+        }
+      ]
+    },
+    "metrics": {
+      "path_consistency": 0.0,
+      "coverage": 0.3333333333333333,
+      "bridging_score": 0.0,
+      "rao_stirling_diversity": 0.0,
+      "embedding_bridging": 1.0,
+      "consistency_precision": 0.0,
+      "consistency_recall": 0.0,
+      "consistency_f1": 0.0,
+      "info_novelty": 0.0,
+      "chain_coherence": 0.5726,
+      "atypical_combination": 0.454,
+      "kg_density": 0.0344,
+      "kg_inverse_modularity": 1.0845,
+      "kg_largest_cc_ratio": 0.625,
+      "kg_avg_betweenness": 0.0479,
+      "kg_clustering_coefficient": 0.0,
+      "concept_recall": 0.0,
+      "concept_precision": 0.0,
+      "concept_f1": 0.0,
+      "relation_precision": 0.0,
+      "relation_type_accuracy": 0.0,
+      "evidence_coverage": 0.0,
+      "path_alignment_best": 0.0,
+      "path_alignment_mean": 0.0
+    }
+  },
+  {
+    "title": "Leaf-based energy harvesting and storage utilizing hygroscopic iron hydrogel for continuous power generation",
+    "graph": {
+      "nodes": [
+        {
+          "id": "吸湿性铁水凝胶",
+          "term": "hygroscopic iron hydrogels",
+          "normalized": "吸湿性铁水凝胶",
+          "discipline": "材料科学",
+          "evidence": "asymmetric coating of hygroscopic iron hydrogels",
+          "source": "abstract",
+          "confidence": 1.0
+        },
+        {
+          "id": "水梯度",
+          "term": "water gradient",
+          "normalized": "水梯度",
+          "discipline": "材料科学",
+          "evidence": "a water gradient is established between areas with/without hydrogel coating",
+          "source": "abstract",
+          "confidence": 1.0
+        },
+        {
+          "id": "电双层",
+          "term": "electrical double layers",
+          "normalized": "电双层",
+          "discipline": "材料科学",
+          "evidence": "forming electrical double layers over the leaf surface",
+          "source": "abstract",
+          "confidence": 1.0
+        },
+        {
+          "id": "类电容行为",
+          "term": "capacitance-like behavior",
+          "normalized": "类电容行为",
+          "discipline": "材料科学",
+          "evidence": "showing capacitance-like behavior for energy charging and discharging",
+          "source": "abstract",
+          "confidence": 1.0
+        },
+        {
+          "id": "叶片细胞结构",
+          "term": "leaf cell structures",
+          "normalized": "叶片细胞结构",
+          "discipline": "材料科学",
+          "evidence": "the specific leaf cell structures with small grooves",
+          "source": "abstract",
+          "confidence": 1.0
+        },
+        {
+          "id": "碳涂层",
+          "term": "carbon coatings",
+          "normalized": "碳涂层",
+          "discipline": "材料科学",
+          "evidence": "enabled uniform carbon coatings instead of aggregations",
+          "source": "abstract",
+          "confidence": 1.0
+        },
+        {
+          "id": "电导率",
+          "term": "electrical conductivity",
+          "normalized": "电导率",
+          "discipline": "材料科学",
+          "evidence": "high electrical conductivity",
+          "source": "abstract",
+          "confidence": 1.0
+        },
+        {
+          "id": "49微安/平方厘米",
+          "term": "49 μA/cm 2",
+          "normalized": "49微安/平方厘米",
+          "discipline": "材料科学",
+          "evidence": "resulting in 49 μA/cm 2 and 497 μW/cm 3 electrical output",
+          "source": "abstract",
+          "confidence": 1.0
+        },
+        {
+          "id": "497微瓦/立方厘米",
+          "term": "497 μW/cm 3",
+          "normalized": "497微瓦/立方厘米",
+          "discipline": "材料科学",
+          "evidence": "resulting in 49 μA/cm 2 and 497 μW/cm 3 electrical output",
+          "source": "abstract",
+          "confidence": 1.0
+        }
+      ],
+      "edges": [
+        {
+          "source": "吸湿性铁水凝胶",
+          "target": "水梯度",
+          "relation": "establishes",
+          "relation_type": "method_applied_to",
+          "metadata": {
+            "evidence": "a water gradient is established between areas with/without hydrogel coating",
+            "source": "struct",
+            "direction": "->"
+          }
+        },
+        {
+          "source": "水梯度",
+          "target": "电双层",
+          "relation": "forms",
+          "relation_type": "method_applied_to",
+          "metadata": {
+            "evidence": "forming electrical double layers over the leaf surface",
+            "source": "struct",
+            "direction": "->"
+          }
+        },
+        {
+          "source": "电双层",
+          "target": "类电容行为",
+          "relation": "shows",
+          "relation_type": "method_applied_to",
+          "metadata": {
+            "evidence": "showing capacitance-like behavior for energy charging and discharging",
+            "source": "struct",
+            "direction": "->"
+          }
+        },
+        {
+          "source": "叶片细胞结构",
+          "target": "碳涂层",
+          "relation": "enables",
+          "relation_type": "method_applied_to",
+          "metadata": {
+            "evidence": "enabled uniform carbon coatings instead of aggregations",
+            "source": "struct",
+            "direction": "->"
+          }
+        },
+        {
+          "source": "碳涂层",
+          "target": "电导率",
+          "relation": "results in",
+          "relation_type": "improves_metric",
+          "metadata": {
+            "evidence": "high electrical conductivity",
+            "source": "struct",
+            "direction": "->"
+          }
+        },
+        {
+          "source": "电导率",
+          "target": "49微安/平方厘米",
+          "relation": "results in",
+          "relation_type": "improves_metric",
+          "metadata": {
+            "evidence": "resulting in 49 μA/cm 2 and 497 μW/cm 3 electrical output",
+            "source": "struct",
+            "direction": "->"
+          }
+        },
+        {
+          "source": "电导率",
+          "target": "497微瓦/立方厘米",
+          "relation": "results in",
+          "relation_type": "improves_metric",
+          "metadata": {
+            "evidence": "resulting in 49 μA/cm 2 and 497 μW/cm 3 electrical output",
+            "source": "struct",
+            "direction": "->"
+          }
+        },
+        {
+          "source": "吸湿性铁水凝胶",
+          "target": "水梯度",
+          "relation": "建立",
+          "relation_type": "H1",
+          "metadata": {
+            "claim": "吸湿性铁水凝胶通过不对称涂覆在叶片表面建立水梯度",
+            "step": 1,
+            "source": "hypothesis",
+            "path_index": 0
+          }
+        },
+        {
+          "source": "水梯度",
+          "target": "电双层",
+          "relation": "形成",
+          "relation_type": "H1",
+          "metadata": {
+            "claim": "水梯度在叶片表面形成电双层结构",
+            "step": 2,
+            "source": "hypothesis",
+            "path_index": 0
+          }
+        },
+        {
+          "source": "电双层",
+          "target": "类电容行为",
+          "relation": "表现出",
+          "relation_type": "H1",
+          "metadata": {
+            "claim": "电双层结构表现出类电容行为，实现能量的充放电，需要植物学领域对叶片微观结构进行优化以提升能量转换效率",
+            "step": 3,
+            "source": "hypothesis",
+            "path_index": 0
+          }
+        },
+        {
+          "source": "叶片细胞结构",
+          "target": "碳涂层",
+          "relation": "实现",
+          "relation_type": "H1",
+          "metadata": {
+            "claim": "叶片细胞结构的特殊沟槽结构实现均匀碳涂层而非聚集",
+            "step": 1,
+            "source": "hypothesis",
+            "path_index": 1
+          }
+        },
+        {
+          "source": "碳涂层",
+          "target": "电导率",
+          "relation": "导致",
+          "relation_type": "H1",
+          "metadata": {
+            "claim": "均匀碳涂层导致高电导率",
+            "step": 2,
+            "source": "hypothesis",
+            "path_index": 1
+          }
+        },
+        {
+          "source": "电导率",
+          "target": "49微安/平方厘米",
+          "relation": "产生",
+          "relation_type": "H1",
+          "metadata": {
+            "claim": "高电导率产生49微安/平方厘米的电流输出，需要电化学领域对电极材料进行优化以进一步提升能量存储密度",
+            "step": 3,
+            "source": "hypothesis",
+            "path_index": 1
+          }
+        },
+        {
+          "source": "叶片细胞结构",
+          "target": "碳涂层",
+          "relation": "调控分布",
+          "relation_type": "H2",
+          "metadata": {
+            "claim": "叶片细胞结构的小沟槽特征能够调控碳涂层的均匀分布",
+            "step": 1,
+            "source": "hypothesis",
+            "path_index": 0
+          }
+        },
+        {
+          "source": "碳涂层",
+          "target": "电导率",
+          "relation": "提升",
+          "relation_type": "H2",
+          "metadata": {
+            "claim": "均匀的碳涂层可显著提升材料的电导率性能",
+            "step": 2,
+            "source": "hypothesis",
+            "path_index": 0
+          }
+        },
+        {
+          "source": "电导率",
+          "target": "49微安/平方厘米",
+          "relation": "转化为",
+          "relation_type": "H2",
+          "metadata": {
+            "claim": "高电导率直接转化为49微安/平方厘米的电流输出",
+            "step": 3,
+            "source": "hypothesis",
+            "path_index": 0
+          }
+        },
+        {
+          "source": "吸湿性铁水凝胶",
+          "target": "水梯度",
+          "relation": "建立",
+          "relation_type": "H2",
+          "metadata": {
+            "claim": "不对称涂覆的吸湿性铁水凝胶在叶片表面建立稳定水梯度",
+            "step": 1,
+            "source": "hypothesis",
+            "path_index": 1
+          }
+        },
+        {
+          "source": "水梯度",
+          "target": "电双层",
+          "relation": "形成",
+          "relation_type": "H2",
+          "metadata": {
+            "claim": "水梯度差异驱动电双层在叶片界面的自发形成",
+            "step": 2,
+            "source": "hypothesis",
+            "path_index": 1
+          }
+        },
+        {
+          "source": "电双层",
+          "target": "类电容行为",
+          "relation": "实现",
+          "relation_type": "H2",
+          "metadata": {
+            "claim": "电双层结构实现类电容行为的快速充放电循环",
+            "step": 3,
+            "source": "hypothesis",
+            "path_index": 1
+          }
+        },
+        {
+          "source": "叶片细胞结构",
+          "target": "碳涂层",
+          "relation": "调控分布",
+          "relation_type": "H3",
+          "metadata": {
+            "claim": "叶片细胞结构 调控分布 碳涂层",
+            "step": 1,
+            "source": "hypothesis",
+            "path_index": 0
+          }
+        },
+        {
+          "source": "碳涂层",
+          "target": "吸湿性铁水凝胶",
+          "relation": "协同作用",
+          "relation_type": "H3",
+          "metadata": {
+            "claim": "碳涂层 协同作用 吸湿性铁水凝胶",
+            "step": 2,
+            "source": "hypothesis",
+            "path_index": 0
+          }
+        },
+        {
+          "source": "吸湿性铁水凝胶",
+          "target": "电双层",
+          "relation": "形成",
+          "relation_type": "H3",
+          "metadata": {
+            "claim": "吸湿性铁水凝胶 形成 电双层",
+            "step": 3,
+            "source": "hypothesis",
+            "path_index": 0
+          }
+        },
+        {
+          "source": "吸湿性铁水凝胶",
+          "target": "水梯度",
+          "relation": "建立",
+          "relation_type": "H3",
+          "metadata": {
+            "claim": "吸湿性铁水凝胶 建立 水梯度",
+            "step": 1,
+            "source": "hypothesis",
+            "path_index": 1
+          }
+        },
+        {
+          "source": "水梯度",
+          "target": "电导率",
+          "relation": "提升",
+          "relation_type": "H3",
+          "metadata": {
+            "claim": "水梯度 提升 电导率",
+            "step": 2,
+            "source": "hypothesis",
+            "path_index": 1
+          }
+        },
+        {
+          "source": "电导率",
+          "target": "497微瓦/立方厘米",
+          "relation": "输出",
+          "relation_type": "H3",
+          "metadata": {
+            "claim": "电导率 输出 497微瓦/立方厘米",
+            "step": 3,
+            "source": "hypothesis",
+            "path_index": 1
+          }
+        }
+      ]
+    },
+    "metrics": {
+      "path_consistency": 0.8333333333333334,
+      "coverage": 1.0,
+      "bridging_score": 0.0,
+      "rao_stirling_diversity": 0.0,
+      "embedding_bridging": 1.0,
+      "consistency_precision": 0.0,
+      "consistency_recall": 0.0,
+      "consistency_f1": 0.0,
+      "info_novelty": 0.0,
+      "chain_coherence": 0.5405,
+      "atypical_combination": 0.4336,
+      "kg_density": 0.1389,
+      "kg_inverse_modularity": 1.0,
+      "kg_largest_cc_ratio": 1.0,
+      "kg_avg_betweenness": 0.1667,
+      "kg_clustering_coefficient": 0.1111,
+      "concept_recall": 0.0,
+      "concept_precision": 0.0,
+      "concept_f1": 0.0,
+      "relation_precision": 0.0,
+      "relation_type_accuracy": 0.0,
+      "evidence_coverage": 0.0,
+      "path_alignment_best": 0.0,
+      "path_alignment_mean": 0.0
+    }
+  },
+  {
+    "title": "Precisely designing asymmetrical selenium-based dual-atom sites for efficient oxygen reduction",
+    "graph": {
+      "nodes": [
+        {
+          "id": "双原子催化剂",
+          "term": "dual-atom catalysts (DACs)",
+          "normalized": "双原子催化剂",
+          "discipline": "化学",
+          "evidence": "dual-atom catalysts (DACs) with well-defined active sites are attracting increasing attention",
+          "source": "abstract",
+          "confidence": 1.0
+        },
+        {
+          "id": "异核SeN<sub>2</sub>-MN<sub>2</sub>",
+          "term": "heteronuclear SeN<sub>2</sub>-MN<sub>2</sub>",
+          "normalized": "异核SeN<sub>2</sub>-MN<sub>2</sub>",
+          "discipline": "化学",
+          "evidence": "asymmetric selenium-based dual-atom catalysts that comprise heteronuclear SeN<sub>2</sub>-MN<sub>2</sub> (M = Fe, Mn, Co, Ni, Cu, Mo, etc.) active sites",
+          "source": "abstract",
+          "confidence": 1.0
+        },
+        {
+          "id": "氧还原反应",
+          "term": "oxygen reduction reaction (ORR)",
+          "normalized": "氧还原反应",
+          "discipline": "化学",
+          "evidence": "heteronuclear SeN<sub>2</sub>-MN<sub>2</sub> (M = Fe, Mn, Co, Ni, Cu, Mo, etc.) active sites for the efficient oxygen reduction reaction (ORR)",
+          "source": "abstract",
+          "confidence": 1.0
+        },
+        {
+          "id": "SeFe双原子位点",
+          "term": "SeFe dual-atom sites",
+          "normalized": "SeFe双原子位点",
+          "discipline": "化学",
+          "evidence": "the SeFe dual-atom sites facilitate a reduction in the conversion energy barrier from *O to *OH via the coadsorption of *O intermediates",
+          "source": "abstract",
+          "confidence": 1.0
+        },
+        {
+          "id": "半波电位",
+          "term": "half-wave potential",
+          "normalized": "半波电位",
+          "discipline": "化学",
+          "evidence": "selenium-iron dual-atom catalysts achieves superior alkaline ORR performance, with a half-wave potential of 0.926 V vs. a reversible hydrogen electrode",
+          "source": "abstract",
+          "confidence": 1.0
+        },
+        {
+          "id": "锌空气电池",
+          "term": "Zn-air battery",
+          "normalized": "锌空气电池",
+          "discipline": "化学",
+          "evidence": "the SeN<sub>2</sub>-FeN<sub>2</sub>-based Zn-air battery has a high specific capacity (764.8 mAh g<sup>-1</sup>) and a maximum power density (287.2 mW cm<sup>-2</sup>)",
+          "source": "abstract",
+          "confidence": 1.0
+        },
+        {
+          "id": "比容量",
+          "term": "specific capacity",
+          "normalized": "比容量",
+          "discipline": "化学",
+          "evidence": "the SeN<sub>2</sub>-FeN<sub>2</sub>-based Zn-air battery has a high specific capacity (764.8 mAh g<sup>-1</sup>)",
+          "source": "abstract",
+          "confidence": 1.0
+        },
+        {
+          "id": "功率密度",
+          "term": "power density",
+          "normalized": "功率密度",
+          "discipline": "化学",
+          "evidence": "a maximum power density (287.2 mW cm<sup>-2</sup>)",
+          "source": "abstract",
+          "confidence": 1.0
+        },
+        {
+          "id": "异核双原子催化剂",
+          "term": "heteronuclear DACs",
+          "normalized": "异核双原子催化剂",
+          "discipline": "化学",
+          "evidence": "This work may provide a good perspective for designing heteronuclear DACs to improve ORR efficiency",
+          "source": "abstract",
+          "confidence": 1.0
+        },
+        {
+          "id": "Se或Fe单原子位点",
+          "term": "Se or Fe single-atom sites",
+          "normalized": "Se或Fe单原子位点",
+          "discipline": "化学",
+          "evidence": "compared with the Se or Fe single-atom sites, the SeFe dual-atom sites facilitate a reduction in the conversion energy barrier from *O to *OH",
+          "source": "abstract",
+          "confidence": 1.0
+        },
+        {
+          "id": "selenium-iron dual-atom catalysts",
+          "term": "selenium-iron dual-atom catalysts",
+          "normalized": "selenium-iron dual-atom catalysts",
+          "discipline": "struct_relation_inferred",
+          "evidence": "",
+          "source": "hypothesis_inferred",
+          "confidence": 0.8
+        },
+        {
+          "id": "SeN<sub>2</sub>-FeN<sub>2</sub>-based Zn-air battery",
+          "term": "SeN<sub>2</sub>-FeN<sub>2</sub>-based Zn-air battery",
+          "normalized": "SeN<sub>2</sub>-FeN<sub>2</sub>-based Zn-air battery",
+          "discipline": "struct_relation_inferred",
+          "evidence": "",
+          "source": "hypothesis_inferred",
+          "confidence": 0.8
+        },
+        {
+          "id": "异核<>2</>-<>2</>",
+          "term": "异核<>2</>-<>2</>",
+          "normalized": "异核<>2</>-<>2</>",
+          "discipline": "hypothesis_inferred",
+          "evidence": "",
+          "source": "hypothesis_inferred",
+          "confidence": 0.8
+        },
+        {
+          "id": "双原子位点",
+          "term": "双原子位点",
+          "normalized": "双原子位点",
+          "discipline": "hypothesis_inferred",
+          "evidence": "",
+          "source": "hypothesis_inferred",
+          "confidence": 0.8
+        },
+        {
+          "id": "高比容量",
+          "term": "高比容量",
+          "normalized": "高比容量",
+          "discipline": "hypothesis_inferred",
+          "evidence": "",
+          "source": "hypothesis_inferred",
+          "confidence": 0.8
+        },
+        {
+          "id": "<>2</>-<>2</>",
+          "term": "<>2</>-<>2</>",
+          "normalized": "<>2</>-<>2</>",
+          "discipline": "hypothesis_inferred",
+          "evidence": "",
+          "source": "hypothesis_inferred",
+          "confidence": 0.8
+        }
+      ],
+      "edges": [
+        {
+          "source": "双原子催化剂",
+          "target": "氧还原反应",
+          "relation": "facilitates",
+          "relation_type": "improves_metric",
+          "metadata": {
+            "evidence": "dual-atom catalysts (DACs) with well-defined active sites are attracting increasing attention",
+            "source": "struct",
+            "direction": "->"
+          }
+        },
+        {
+          "source": "异核SeN<sub>2</sub>-MN<sub>2</sub>",
+          "target": "氧还原反应",
+          "relation": "designed for",
+          "relation_type": "method_applied_to",
+          "metadata": {
+            "evidence": "asymmetric selenium-based dual-atom catalysts that comprise heteronuclear SeN<sub>2</sub>-MN<sub>2</sub> (M = Fe, Mn, Co, Ni, Cu, Mo, etc.) active sites for the efficient oxygen reduction reaction (ORR)",
+            "source": "struct",
+            "direction": "->"
+          }
+        },
+        {
+          "source": "SeFe双原子位点",
+          "target": "Se或Fe单原子位点",
+          "relation": "compared with",
+          "relation_type": "improves_metric",
+          "metadata": {
+            "evidence": "compared with the Se or Fe single-atom sites, the SeFe dual-atom sites facilitate a reduction in the conversion energy barrier from *O to *OH via the coadsorption of *O intermediates",
+            "source": "struct",
+            "direction": "->"
+          }
+        },
+        {
+          "source": "selenium-iron dual-atom catalysts",
+          "target": "半波电位",
+          "relation": "achieves",
+          "relation_type": "improves_metric",
+          "metadata": {
+            "evidence": "selenium-iron dual-atom catalysts achieves superior alkaline ORR performance, with a half-wave potential of 0.926 V vs. a reversible hydrogen electrode",
+            "source": "struct",
+            "direction": "->"
+          }
+        },
+        {
+          "source": "SeN<sub>2</sub>-FeN<sub>2</sub>-based Zn-air battery",
+          "target": "比容量",
+          "relation": "has",
+          "relation_type": "improves_metric",
+          "metadata": {
+            "evidence": "the SeN<sub>2</sub>-FeN<sub>2</sub>-based Zn-air battery has a high specific capacity (764.8 mAh g<sup>-1</sup>)",
+            "source": "struct",
+            "direction": "->"
+          }
+        },
+        {
+          "source": "SeN<sub>2</sub>-FeN<sub>2</sub>-based Zn-air battery",
+          "target": "功率密度",
+          "relation": "has",
+          "relation_type": "improves_metric",
+          "metadata": {
+            "evidence": "a maximum power density (287.2 mW cm<sup>-2</sup>)",
+            "source": "struct",
+            "direction": "->"
+          }
+        },
+        {
+          "source": "异核双原子催化剂",
+          "target": "氧还原反应",
+          "relation": "improves",
+          "relation_type": "improves_metric",
+          "metadata": {
+            "evidence": "This work may provide a good perspective for designing heteronuclear DACs to improve ORR efficiency",
+            "source": "struct",
+            "direction": "->"
+          }
+        },
+        {
+          "source": "双原子催化剂",
+          "target": "氧还原反应",
+          "relation": "促进",
+          "relation_type": "H1",
+          "metadata": {
+            "claim": "双原子催化剂通过其明确的活性位点促进氧还原反应的进行",
+            "step": 1,
+            "source": "hypothesis",
+            "path_index": 0
+          }
+        },
+        {
+          "source": "氧还原反应",
+          "target": "异核<>2</>-<>2</>",
+          "relation": "通过",
+          "relation_type": "H1",
+          "metadata": {
+            "claim": "氧还原反应的效率通过异核<>2</>-<>2</>活性位点的设计得到提升",
+            "step": 2,
+            "source": "hypothesis",
+            "path_index": 0
+          }
+        },
+        {
+          "source": "异核<>2</>-<>2</>",
+          "target": "双原子位点",
+          "relation": "优化",
+          "relation_type": "H1",
+          "metadata": {
+            "claim": "异核<>2</>-<>2</>活性位点的优化设计需要进一步研究双原子位点的协同作用，以降低氧中间体转化能垒",
+            "step": 3,
+            "source": "hypothesis",
+            "path_index": 0
+          }
+        },
+        {
+          "source": "双原子催化剂",
+          "target": "锌空气电池",
+          "relation": "应用于",
+          "relation_type": "H1",
+          "metadata": {
+            "claim": "双原子催化剂在锌空气电池中的应用展示了其实际效能",
+            "step": 1,
+            "source": "hypothesis",
+            "path_index": 1
+          }
+        },
+        {
+          "source": "锌空气电池",
+          "target": "高比容量",
+          "relation": "表现出",
+          "relation_type": "H1",
+          "metadata": {
+            "claim": "锌空气电池通过双原子催化剂的应用表现出高比容量",
+            "step": 2,
+            "source": "hypothesis",
+            "path_index": 1
+          }
+        },
+        {
+          "source": "高比容量",
+          "target": "功率密度",
+          "relation": "关联于",
+          "relation_type": "H1",
+          "metadata": {
+            "claim": "高比容量的实现需要进一步优化功率密度，以验证双原子催化剂在实际应用中的潜力",
+            "step": 3,
+            "source": "hypothesis",
+            "path_index": 1
+          }
+        },
+        {
+          "source": "异核<>2</>-<>2</>",
+          "target": "双原子位点",
+          "relation": "通过结构设计形成",
+          "relation_type": "H2",
+          "metadata": {
+            "claim": "异核结构设计可定向生成特定双原子位点",
+            "step": 1,
+            "source": "hypothesis",
+            "path_index": 0
+          }
+        },
+        {
+          "source": "双原子位点",
+          "target": "氧还原反应",
+          "relation": "降低中间体转化能垒",
+          "relation_type": "H2",
+          "metadata": {
+            "claim": "双原子协同效应优化反应路径",
+            "step": 2,
+            "source": "hypothesis",
+            "path_index": 0
+          }
+        },
+        {
+          "source": "氧还原反应",
+          "target": "半波电位",
+          "relation": "通过电化学测试量化",
+          "relation_type": "H2",
+          "metadata": {
+            "claim": "催化效率提升表现为电位正移",
+            "step": 3,
+            "source": "hypothesis",
+            "path_index": 0
+          }
+        },
+        {
+          "source": "锌空气电池",
+          "target": "<>2</>-<>2</>",
+          "relation": "作为载体集成",
+          "relation_type": "H2",
+          "metadata": {
+            "claim": "电池系统提供催化性能验证平台",
+            "step": 1,
+            "source": "hypothesis",
+            "path_index": 1
+          }
+        },
+        {
+          "source": "<>2</>-<>2</>",
+          "target": "比容量",
+          "relation": "通过放电过程反映",
+          "relation_type": "H2",
+          "metadata": {
+            "claim": "催化活性决定储能能力",
+            "step": 2,
+            "source": "hypothesis",
+            "path_index": 1
+          }
+        },
+        {
+          "source": "比容量",
+          "target": "功率密度",
+          "relation": "联合表征输出性能",
+          "relation_type": "H2",
+          "metadata": {
+            "claim": "实际效能需多指标协同验证",
+            "step": 3,
+            "source": "hypothesis",
+            "path_index": 1
+          }
+        },
+        {
+          "source": "异核<>2</>-<>2</>",
+          "target": "双原子位点",
+          "relation": "通过结构设计形成",
+          "relation_type": "H3",
+          "metadata": {
+            "claim": "异核<>2</>-<>2</> 通过结构设计形成 双原子位点",
+            "step": 1,
+            "source": "hypothesis",
+            "path_index": 0
+          }
+        },
+        {
+          "source": "双原子位点",
+          "target": "氧还原反应",
+          "relation": "通过协同吸附降低能垒",
+          "relation_type": "H3",
+          "metadata": {
+            "claim": "双原子位点 通过协同吸附降低能垒 氧还原反应",
+            "step": 2,
+            "source": "hypothesis",
+            "path_index": 0
+          }
+        },
+        {
+          "source": "氧还原反应",
+          "target": "半波电位",
+          "relation": "通过电化学测试量化效率",
+          "relation_type": "H3",
+          "metadata": {
+            "claim": "氧还原反应 通过电化学测试量化效率 半波电位",
+            "step": 3,
+            "source": "hypothesis",
+            "path_index": 0
+          }
+        },
+        {
+          "source": "双原子催化剂",
+          "target": "锌空气电池",
+          "relation": "通过材料集成工艺应用于",
+          "relation_type": "H3",
+          "metadata": {
+            "claim": "双原子催化剂 通过材料集成工艺应用于 锌空气电池",
+            "step": 1,
+            "source": "hypothesis",
+            "path_index": 1
+          }
+        },
+        {
+          "source": "锌空气电池",
+          "target": "比容量",
+          "relation": "通过放电测试测量",
+          "relation_type": "H3",
+          "metadata": {
+            "claim": "锌空气电池 通过放电测试测量 比容量",
+            "step": 2,
+            "source": "hypothesis",
+            "path_index": 1
+          }
+        },
+        {
+          "source": "比容量",
+          "target": "功率密度",
+          "relation": "与功率输出共同验证",
+          "relation_type": "H3",
+          "metadata": {
+            "claim": "比容量 与功率输出共同验证 功率密度",
+            "step": 3,
+            "source": "hypothesis",
+            "path_index": 1
+          }
+        }
+      ]
+    },
+    "metrics": {
+      "path_consistency": 0.05555555555555555,
+      "coverage": 0.6,
+      "bridging_score": 0.0,
+      "rao_stirling_diversity": 0.0,
+      "embedding_bridging": 1.0,
+      "consistency_precision": 0.0,
+      "consistency_recall": 0.0,
+      "consistency_f1": 0.0,
+      "info_novelty": 0.0,
+      "chain_coherence": 0.5428,
+      "atypical_combination": 0.3155,
+      "kg_density": 0.075,
+      "kg_inverse_modularity": 1.0756,
+      "kg_largest_cc_ratio": 0.875,
+      "kg_avg_betweenness": 0.1024,
+      "kg_clustering_coefficient": 0.3063,
+      "concept_recall": 0.0,
+      "concept_precision": 0.0,
+      "concept_f1": 0.0,
+      "relation_precision": 0.0,
+      "relation_type_accuracy": 0.0,
+      "evidence_coverage": 0.0,
+      "path_alignment_best": 0.0,
+      "path_alignment_mean": 0.0
+    }
+  }
+]

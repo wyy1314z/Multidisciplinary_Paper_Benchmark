@@ -1,0 +1,332 @@
+[
+  {
+    "title": "Nano-island-encapsulated cobalt single-atom catalysts for breaking activity-stability trade-off in Fenton-like reactions",
+    "跨学科关系": [
+      {
+        "head": "nano-island encapsulated single cobalt atom (Co<sub>SA/Zn.O</sub>-ZnO)",
+        "relation": "enhances the activity and stability of",
+        "relation_type": "improves_metric",
+        "relation_type_norm": "improves_metric",
+        "relation_type_raw": "improves_metric",
+        "tail": "peroxymonosulfate (PMS)",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [],
+        "evidence": "Herein, we design a nano-island encapsulated single cobalt atom (Co<sub>SA/Zn.O</sub>-ZnO) catalyst to enhance the activity and stability of PMS activation for contaminant degradation via an \"island-sea\" synergistic effect.",
+        "source": "abstract",
+        "confidence": 1.0
+      },
+      {
+        "head": "nano-island encapsulated single cobalt atom (Co<sub>SA/Zn.O</sub>-ZnO)",
+        "relation": "exclusively generates",
+        "relation_type": "method_applied_to",
+        "relation_type_norm": "method_applied_to",
+        "relation_type_raw": "method_applied_to",
+        "tail": "sulfate radicals (SO<sub>4</sub><sup>•-</sup>)",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [],
+        "evidence": "The Co<sub>SA/Zn.O</sub>-ZnO/PMS system exhibits a remarkable selectivity in exclusively generating sulfate radicals (SO<sub>4</sub><sup>•-</sup>), leading to a complete removal of various recalcitrant pollutants within a shorter period.",
+        "source": "abstract",
+        "confidence": 1.0
+      },
+      {
+        "head": "sulfate radicals (SO<sub>4</sub><sup>•-</sup>)",
+        "relation": "leads to complete removal of",
+        "relation_type": "method_applied_to",
+        "relation_type_norm": "method_applied_to",
+        "relation_type_raw": "method_applied_to",
+        "tail": "recalcitrant pollutants",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [],
+        "evidence": "The Co<sub>SA/Zn.O</sub>-ZnO/PMS system exhibits a remarkable selectivity in exclusively generating sulfate radicals (SO<sub>4</sub><sup>•-</sup>), leading to a complete removal of various recalcitrant pollutants within a shorter period.",
+        "source": "abstract",
+        "confidence": 1.0
+      },
+      {
+        "head": "nano-island encapsulated single cobalt atom (Co<sub>SA/Zn.O</sub>-ZnO)",
+        "relation": "characterized by minimal leaching of",
+        "relation_type": "improves_metric",
+        "relation_type_norm": "improves_metric",
+        "relation_type_raw": "improves_metric",
+        "tail": "active sites",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [],
+        "evidence": "Characterized by minimal leaching of active sites, robust catalytic performance, and low-toxicity decontamination, this system proves highly efficient in multiple treatment cycles and complex water matrices.",
+        "source": "abstract",
+        "confidence": 1.0
+      },
+      {
+        "head": "nano-island encapsulated single cobalt atom (Co<sub>SA/Zn.O</sub>-ZnO)",
+        "relation": "characterized by robust",
+        "relation_type": "improves_metric",
+        "relation_type_norm": "improves_metric",
+        "relation_type_raw": "improves_metric",
+        "tail": "catalytic performance",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [],
+        "evidence": "Characterized by minimal leaching of active sites, robust catalytic performance, and low-toxicity decontamination, this system proves highly efficient in multiple treatment cycles and complex water matrices.",
+        "source": "abstract",
+        "confidence": 1.0
+      },
+      {
+        "head": "nano-island encapsulated single cobalt atom (Co<sub>SA/Zn.O</sub>-ZnO)",
+        "relation": "characterized by low-toxicity",
+        "relation_type": "improves_metric",
+        "relation_type_norm": "improves_metric",
+        "relation_type_raw": "improves_metric",
+        "tail": "decontamination",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [],
+        "evidence": "Characterized by minimal leaching of active sites, robust catalytic performance, and low-toxicity decontamination, this system proves highly efficient in multiple treatment cycles and complex water matrices.",
+        "source": "abstract",
+        "confidence": 1.0
+      },
+      {
+        "head": "nano-island encapsulated single cobalt atom (Co<sub>SA/Zn.O</sub>-ZnO)",
+        "relation": "proves highly efficient in",
+        "relation_type": "method_applied_to",
+        "relation_type_norm": "method_applied_to",
+        "relation_type_raw": "method_applied_to",
+        "tail": "water matrices",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [],
+        "evidence": "Characterized by minimal leaching of active sites, robust catalytic performance, and low-toxicity decontamination, this system proves highly efficient in multiple treatment cycles and complex water matrices.",
+        "source": "abstract",
+        "confidence": 1.0
+      }
+    ],
+    "按辅助学科分类": {}
+  },
+  {
+    "title": "High-entropy alloy enables multi-path electron synergism and lattice oxygen activation for enhanced oxygen evolution activity",
+    "跨学科关系": [
+      {
+        "head": "high-entropy alloys (HEAs)",
+        "relation": "activate",
+        "relation_type": "method_applied_to",
+        "relation_type_norm": "method_applied_to",
+        "relation_type_raw": "method_applied_to",
+        "tail": "lattice oxygen activation mechanism (LOM)",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [],
+        "evidence": "We reveal that high-entropy alloys (HEAs) can efficiently activate the LOM through synergistic multi-path electron transfer.",
+        "source": "abstract",
+        "confidence": 1.0
+      },
+      {
+        "head": "multi-path electron transfer",
+        "relation": "synergistic",
+        "relation_type": "driven_by",
+        "relation_type_norm": "driven_by",
+        "relation_type_raw": "driven_by",
+        "tail": "high-entropy alloys (HEAs)",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [],
+        "evidence": "We reveal that high-entropy alloys (HEAs) can efficiently activate the LOM through synergistic multi-path electron transfer.",
+        "source": "abstract",
+        "confidence": 1.0
+      },
+      {
+        "head": "Ni-Co dual-site",
+        "relation": "enable effective",
+        "relation_type": "improves_metric",
+        "relation_type_norm": "improves_metric",
+        "relation_type_raw": "improves_metric",
+        "tail": "lattice oxygen activation mechanism (LOM)",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [],
+        "evidence": "Specifically, the oxidation of nickel is enhanced by this electron transfer, aided by the integration of weaker Co-O bonds, enabling effective LOM at the Ni-Co dual-site.",
+        "source": "abstract",
+        "confidence": 1.0
+      },
+      {
+        "head": "Co-O bonds",
+        "relation": "aided by",
+        "relation_type": "depends_on",
+        "relation_type_norm": "depends_on",
+        "relation_type_raw": "depends_on",
+        "tail": "Ni-Co dual-site",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [],
+        "evidence": "Specifically, the oxidation of nickel is enhanced by this electron transfer, aided by the integration of weaker Co-O bonds, enabling effective LOM at the Ni-Co dual-site.",
+        "source": "abstract",
+        "confidence": 1.0
+      },
+      {
+        "head": "NiFeCoCrW<sub>0.2</sub> HEA",
+        "relation": "achieves",
+        "relation_type": "improves_metric",
+        "relation_type_norm": "improves_metric",
+        "relation_type_raw": "improves_metric",
+        "tail": "overpotential",
+        "direction": "->",
+        "quant": {
+          "metric": "overpotential",
+          "value": "220 mV"
+        },
+        "assumptions": [],
+        "evidence": "These insights allow the design of a NiFeCoCrW<sub>0.2</sub> HEA that exhibits improved activity, achieving an overpotential of 220 mV at a current density of 10 mA cm<sup>-2</sup>.",
+        "source": "abstract",
+        "confidence": 1.0
+      },
+      {
+        "head": "high-entropy alloys (HEAs)",
+        "relation": "contribute to the advancement of",
+        "relation_type": "improves_metric",
+        "relation_type_norm": "improves_metric",
+        "relation_type_raw": "improves_metric",
+        "tail": "OER electrocatalysts",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [],
+        "evidence": "This study sheds light on the synergistic effects that confer high activity in HEAs and contribute to the advancement of high-performance OER electrocatalysts.",
+        "source": "abstract",
+        "confidence": 1.0
+      }
+    ],
+    "按辅助学科分类": {}
+  },
+  {
+    "title": "MXene-Assisted NiFe sulfides for high-performance anion exchange membrane seawater electrolysis",
+    "跨学科关系": [
+      {
+        "head": "MXene (Ti3C2)",
+        "relation": "integrates with",
+        "relation_type": "method_applied_to",
+        "relation_type_norm": "method_applied_to",
+        "relation_type_raw": "method_applied_to",
+        "tail": "NiFe硫化物 ((Ni,Fe)S2@Ti3C2)",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [],
+        "evidence": "Herein, we report a robust OER electrocatalyst for AEMSE by integrating MXene (Ti<sub>3</sub>C<sub>2</sub>) with NiFe sulfides ((Ni,Fe)S<sub>2</sub>@Ti<sub>3</sub>C<sub>2</sub>)",
+        "source": "abstract",
+        "confidence": 1.0
+      },
+      {
+        "head": "NiFe硫化物 ((Ni,Fe)S2@Ti3C2)",
+        "relation": "prohibits the dissolution of Fe species via",
+        "relation_type": "improves_metric",
+        "relation_type_norm": "improves_metric",
+        "relation_type_raw": "improves_metric",
+        "tail": "Ti-O-Fe键",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [],
+        "evidence": "particularly prohibits the dissolution of Fe species during OER process via the Ti-O-Fe bonding effectively",
+        "source": "abstract",
+        "confidence": 1.0
+      },
+      {
+        "head": "MXene (Ti3C2)",
+        "relation": "provides effective",
+        "relation_type": "improves_metric",
+        "relation_type_norm": "improves_metric",
+        "relation_type_raw": "improves_metric",
+        "tail": "Cl-抗性",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [],
+        "evidence": "the good retention of sulfates and the abundant groups of Ti<sub>3</sub>C<sub>2</sub> provide effective Cl<sup>-</sup> resistance",
+        "source": "abstract",
+        "confidence": 1.0
+      },
+      {
+        "head": "NiFe硫化物 ((Ni,Fe)S2@Ti3C2)",
+        "relation": "achieves high",
+        "relation_type": "improves_metric",
+        "relation_type_norm": "improves_metric",
+        "relation_type_raw": "improves_metric",
+        "tail": "OER活性 (1.598 V@2 A cm-2)",
+        "direction": "->",
+        "quant": {
+          "metric": "voltage",
+          "value": "1.598 V@2 A cm<sup>-2</sup>"
+        },
+        "assumptions": [],
+        "evidence": "(Ni,Fe)S<sub>2</sub>@Ti<sub>3</sub>C<sub>2</sub> achieves high OER activity (1.598 V@2 A cm<sup>-2</sup>)",
+        "source": "abstract",
+        "confidence": 1.0
+      },
+      {
+        "head": "NiFe硫化物 ((Ni,Fe)S2@Ti3C2)",
+        "relation": "achieves",
+        "relation_type": "improves_metric",
+        "relation_type_norm": "improves_metric",
+        "relation_type_raw": "improves_metric",
+        "tail": "长期耐久性 (1000小时)",
+        "direction": "->",
+        "quant": {
+          "metric": "time",
+          "value": "1000 h"
+        },
+        "assumptions": [],
+        "evidence": "and long-term durability (1000 h) in seawater system",
+        "source": "abstract",
+        "confidence": 1.0
+      },
+      {
+        "head": "NiFe硫化物 ((Ni,Fe)S2@Ti3C2)",
+        "relation": "achieves",
+        "relation_type": "improves_metric",
+        "relation_type_norm": "improves_metric",
+        "relation_type_raw": "improves_metric",
+        "tail": "工业电流密度 (0.5 A cm-2)",
+        "direction": "->",
+        "quant": {
+          "metric": "current density",
+          "value": "0.5 A cm<sup>-2</sup>"
+        },
+        "assumptions": [],
+        "evidence": "AEMSE with industrial current density (0.5 A cm<sup>-2</sup>)",
+        "source": "abstract",
+        "confidence": 1.0
+      },
+      {
+        "head": "NiFe硫化物 ((Ni,Fe)S2@Ti3C2)",
+        "relation": "achieves",
+        "relation_type": "improves_metric",
+        "relation_type_norm": "improves_metric",
+        "relation_type_raw": "improves_metric",
+        "tail": "电解效率70%",
+        "direction": "->",
+        "quant": {
+          "metric": "efficiency",
+          "value": "70%"
+        },
+        "assumptions": [],
+        "evidence": "with electrolysis efficiency of 70% and energy consumption of 48.4 kWh kg<sup>-1</sup> H<sub>2</sub>",
+        "source": "abstract",
+        "confidence": 1.0
+      },
+      {
+        "head": "NiFe硫化物 ((Ni,Fe)S2@Ti3C2)",
+        "relation": "achieves",
+        "relation_type": "improves_metric",
+        "relation_type_norm": "improves_metric",
+        "relation_type_raw": "improves_metric",
+        "tail": "能耗48.4 kWh kg-1 H2",
+        "direction": "->",
+        "quant": {
+          "metric": "energy consumption",
+          "value": "48.4 kWh kg<sup>-1</sup> H<sub>2</sub>"
+        },
+        "assumptions": [],
+        "evidence": "with electrolysis efficiency of 70% and energy consumption of 48.4 kWh kg<sup>-1</sup> H<sub>2</sub>",
+        "source": "abstract",
+        "confidence": 1.0
+      }
+    ],
+    "按辅助学科分类": {}
+  }
+]

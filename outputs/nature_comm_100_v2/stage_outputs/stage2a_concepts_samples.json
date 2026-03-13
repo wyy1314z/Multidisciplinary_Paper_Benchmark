@@ -1,0 +1,274 @@
+[
+  {
+    "title": "MXene-Assisted NiFe sulfides for high-performance anion exchange membrane seawater electrolysis",
+    "primary": "化学",
+    "secondary_list": [],
+    "概念_主学科": [
+      {
+        "term": "anion exchange membrane seawater electrolysis",
+        "normalized": "阴离子交换膜海水电解",
+        "std_label": null,
+        "evidence": "Anion exchange membrane seawater electrolysis is vital for future large-scale green hydrogen production",
+        "source": "abstract",
+        "confidence": 1.0
+      },
+      {
+        "term": "oxygen evolution reaction electrocatalysts",
+        "normalized": "氧析出反应电催化剂",
+        "std_label": null,
+        "evidence": "however enduring a huge challenge that lacks high-stable oxygen evolution reaction electrocatalysts",
+        "source": "abstract",
+        "confidence": 1.0
+      },
+      {
+        "term": "MXene (Ti<sub>3</sub>C<sub>2</sub>)",
+        "normalized": "MXene (Ti3C2)",
+        "std_label": null,
+        "evidence": "Herein, we report a robust OER electrocatalyst for AEMSE by integrating MXene (Ti<sub>3</sub>C<sub>2</sub>) with NiFe sulfides",
+        "source": "abstract",
+        "confidence": 1.0
+      },
+      {
+        "term": "NiFe sulfides ((Ni,Fe)S<sub>2</sub>@Ti<sub>3</sub>C<sub>2</sub>)",
+        "normalized": "NiFe硫化物 ((Ni,Fe)S2@Ti3C2)",
+        "std_label": null,
+        "evidence": "Herein, we report a robust OER electrocatalyst for AEMSE by integrating MXene (Ti<sub>3</sub>C<sub>2</sub>) with NiFe sulfides ((Ni,Fe)S<sub>2</sub>@Ti<sub>3</sub>C<sub>2</sub>)",
+        "source": "abstract",
+        "confidence": 1.0
+      },
+      {
+        "term": "lattice oxygen mechanism",
+        "normalized": "晶格氧机制",
+        "std_label": null,
+        "evidence": "The strong interaction between (Ni,Fe)S<sub>2</sub> and Ti<sub>3</sub>C<sub>2</sub> induces electron distribution to trigger lattice oxygen mechanism",
+        "source": "abstract",
+        "confidence": 1.0
+      },
+      {
+        "term": "Ti-O-Fe bonding",
+        "normalized": "Ti-O-Fe键",
+        "std_label": null,
+        "evidence": "particularly prohibits the dissolution of Fe species during OER process via the Ti-O-Fe bonding effectively",
+        "source": "abstract",
+        "confidence": 1.0
+      },
+      {
+        "term": "Cl<sup>-</sup> resistance",
+        "normalized": "Cl-抗性",
+        "std_label": null,
+        "evidence": "the good retention of sulfates and the abundant groups of Ti<sub>3</sub>C<sub>2</sub> provide effective Cl<sup>-</sup> resistance",
+        "source": "abstract",
+        "confidence": 1.0
+      },
+      {
+        "term": "OER activity (1.598 V@2 A cm<sup>-2</sup>)",
+        "normalized": "OER活性 (1.598 V@2 A cm-2)",
+        "std_label": null,
+        "evidence": "(Ni,Fe)S<sub>2</sub>@Ti<sub>3</sub>C<sub>2</sub> achieves high OER activity (1.598 V@2 A cm<sup>-2</sup>)",
+        "source": "abstract",
+        "confidence": 1.0
+      },
+      {
+        "term": "long-term durability (1000 h)",
+        "normalized": "长期耐久性 (1000小时)",
+        "std_label": null,
+        "evidence": "and long-term durability (1000 h) in seawater system",
+        "source": "abstract",
+        "confidence": 1.0
+      },
+      {
+        "term": "industrial current density (0.5 A cm<sup>-2</sup>)",
+        "normalized": "工业电流密度 (0.5 A cm-2)",
+        "std_label": null,
+        "evidence": "Furthermore, AEMSE with industrial current density (0.5 A cm<sup>-2</sup>)",
+        "source": "abstract",
+        "confidence": 1.0
+      },
+      {
+        "term": "electrolysis efficiency of 70%",
+        "normalized": "电解效率70%",
+        "std_label": null,
+        "evidence": "with electrolysis efficiency of 70% and energy consumption of 48.4 kWh kg<sup>-1</sup> H<sub>2</sub>",
+        "source": "abstract",
+        "confidence": 1.0
+      },
+      {
+        "term": "energy consumption of 48.4 kWh kg<sup>-1</sup> H<sub>2</sub>",
+        "normalized": "能耗48.4 kWh kg-1 H2",
+        "std_label": null,
+        "evidence": "and energy consumption of 48.4 kWh kg<sup>-1</sup> H<sub>2</sub>",
+        "source": "abstract",
+        "confidence": 1.0
+      }
+    ],
+    "概念_辅学科": {}
+  },
+  {
+    "title": "Leaf-based energy harvesting and storage utilizing hygroscopic iron hydrogel for continuous power generation",
+    "primary": "材料科学",
+    "secondary_list": [],
+    "概念_主学科": [
+      {
+        "term": "hygroscopic iron hydrogels",
+        "normalized": "吸湿性铁水凝胶",
+        "std_label": null,
+        "evidence": "asymmetric coating of hygroscopic iron hydrogels",
+        "source": "abstract",
+        "confidence": 1.0
+      },
+      {
+        "term": "water gradient",
+        "normalized": "水梯度",
+        "std_label": null,
+        "evidence": "a water gradient is established between areas with/without hydrogel coating",
+        "source": "abstract",
+        "confidence": 1.0
+      },
+      {
+        "term": "electrical double layers",
+        "normalized": "电双层",
+        "std_label": null,
+        "evidence": "forming electrical double layers over the leaf surface",
+        "source": "abstract",
+        "confidence": 1.0
+      },
+      {
+        "term": "capacitance-like behavior",
+        "normalized": "类电容行为",
+        "std_label": null,
+        "evidence": "showing capacitance-like behavior for energy charging and discharging",
+        "source": "abstract",
+        "confidence": 1.0
+      },
+      {
+        "term": "leaf cell structures",
+        "normalized": "叶片细胞结构",
+        "std_label": null,
+        "evidence": "the specific leaf cell structures with small grooves",
+        "source": "abstract",
+        "confidence": 1.0
+      },
+      {
+        "term": "carbon coatings",
+        "normalized": "碳涂层",
+        "std_label": null,
+        "evidence": "enabled uniform carbon coatings instead of aggregations",
+        "source": "abstract",
+        "confidence": 1.0
+      },
+      {
+        "term": "electrical conductivity",
+        "normalized": "电导率",
+        "std_label": null,
+        "evidence": "high electrical conductivity",
+        "source": "abstract",
+        "confidence": 1.0
+      },
+      {
+        "term": "49 μA/cm 2",
+        "normalized": "49微安/平方厘米",
+        "std_label": null,
+        "evidence": "resulting in 49 μA/cm 2 and 497 μW/cm 3 electrical output",
+        "source": "abstract",
+        "confidence": 1.0
+      },
+      {
+        "term": "497 μW/cm 3",
+        "normalized": "497微瓦/立方厘米",
+        "std_label": null,
+        "evidence": "resulting in 49 μA/cm 2 and 497 μW/cm 3 electrical output",
+        "source": "abstract",
+        "confidence": 1.0
+      }
+    ],
+    "概念_辅学科": {}
+  },
+  {
+    "title": "Precisely designing asymmetrical selenium-based dual-atom sites for efficient oxygen reduction",
+    "primary": "化学",
+    "secondary_list": [],
+    "概念_主学科": [
+      {
+        "term": "dual-atom catalysts (DACs)",
+        "normalized": "双原子催化剂",
+        "std_label": null,
+        "evidence": "dual-atom catalysts (DACs) with well-defined active sites are attracting increasing attention",
+        "source": "abstract",
+        "confidence": 1.0
+      },
+      {
+        "term": "heteronuclear SeN<sub>2</sub>-MN<sub>2</sub>",
+        "normalized": "异核SeN<sub>2</sub>-MN<sub>2</sub>",
+        "std_label": null,
+        "evidence": "asymmetric selenium-based dual-atom catalysts that comprise heteronuclear SeN<sub>2</sub>-MN<sub>2</sub> (M = Fe, Mn, Co, Ni, Cu, Mo, etc.) active sites",
+        "source": "abstract",
+        "confidence": 1.0
+      },
+      {
+        "term": "oxygen reduction reaction (ORR)",
+        "normalized": "氧还原反应",
+        "std_label": null,
+        "evidence": "heteronuclear SeN<sub>2</sub>-MN<sub>2</sub> (M = Fe, Mn, Co, Ni, Cu, Mo, etc.) active sites for the efficient oxygen reduction reaction (ORR)",
+        "source": "abstract",
+        "confidence": 1.0
+      },
+      {
+        "term": "SeFe dual-atom sites",
+        "normalized": "SeFe双原子位点",
+        "std_label": null,
+        "evidence": "the SeFe dual-atom sites facilitate a reduction in the conversion energy barrier from *O to *OH via the coadsorption of *O intermediates",
+        "source": "abstract",
+        "confidence": 1.0
+      },
+      {
+        "term": "half-wave potential",
+        "normalized": "半波电位",
+        "std_label": null,
+        "evidence": "selenium-iron dual-atom catalysts achieves superior alkaline ORR performance, with a half-wave potential of 0.926 V vs. a reversible hydrogen electrode",
+        "source": "abstract",
+        "confidence": 1.0
+      },
+      {
+        "term": "Zn-air battery",
+        "normalized": "锌空气电池",
+        "std_label": null,
+        "evidence": "the SeN<sub>2</sub>-FeN<sub>2</sub>-based Zn-air battery has a high specific capacity (764.8 mAh g<sup>-1</sup>) and a maximum power density (287.2 mW cm<sup>-2</sup>)",
+        "source": "abstract",
+        "confidence": 1.0
+      },
+      {
+        "term": "specific capacity",
+        "normalized": "比容量",
+        "std_label": null,
+        "evidence": "the SeN<sub>2</sub>-FeN<sub>2</sub>-based Zn-air battery has a high specific capacity (764.8 mAh g<sup>-1</sup>)",
+        "source": "abstract",
+        "confidence": 1.0
+      },
+      {
+        "term": "power density",
+        "normalized": "功率密度",
+        "std_label": null,
+        "evidence": "a maximum power density (287.2 mW cm<sup>-2</sup>)",
+        "source": "abstract",
+        "confidence": 1.0
+      },
+      {
+        "term": "heteronuclear DACs",
+        "normalized": "异核双原子催化剂",
+        "std_label": null,
+        "evidence": "This work may provide a good perspective for designing heteronuclear DACs to improve ORR efficiency",
+        "source": "abstract",
+        "confidence": 1.0
+      },
+      {
+        "term": "Se or Fe single-atom sites",
+        "normalized": "Se或Fe单原子位点",
+        "std_label": null,
+        "evidence": "compared with the Se or Fe single-atom sites, the SeFe dual-atom sites facilitate a reduction in the conversion energy barrier from *O to *OH",
+        "source": "abstract",
+        "confidence": 1.0
+      }
+    ],
+    "概念_辅学科": {}
+  }
+]

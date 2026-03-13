@@ -1,0 +1,2762 @@
+[
+  {
+    "title": "3D-printed aberration-free terahertz metalens for ultra-broadband achromatic super-resolution wide-angle imaging with high numerical aperture",
+    "abstract": "Terahertz (THz) lens constitutes a vital component in the THz system. Metasurfaces-based THz metalenses and classical bulky lenses are severely constrained by chromatic/ spherical aberration and the diffraction limit. Consequently, achromatic super-resolution THz lenses are urgently needed. In this study, through translating the required phase distribution into a refractive index (RI) profile with a specific thickness, an innovative approach to designing THz metalenses is proposed and achieved by dielectric gradient metamaterials. The samples fabricated by 3D printing can realize achromatic super focusing with a numerical aperture (NA) of 0.555 from 0.2 to 0.9 THz. Submillimeter features separated by approximately 0.2 mm can be resolved with high precision, such as glass fabric patterns within FR4 panels and fibrous tissue on leaves, with a field of view (FOV) of 90°. Our approach offers a feasible and cost-effective means to implement THz super-resolution imaging, which holds great potential in non-destructive testing and biomedical imaging.",
+    "pdf_url": "",
+    "primary": "物理学",
+    "secondary": "物理学, 材料科学, 电子、通信与自动控制技术",
+    "secondary_list": [
+      "物理学",
+      "材料科学",
+      "电子、通信与自动控制技术"
+    ],
+    "introduction": "",
+    "parsed": {
+      "meta": {
+        "title": "3D-printed aberration-free terahertz metalens for ultra-broadband achromatic super-resolution wide-angle imaging with high numerical aperture",
+        "primary": "物理学",
+        "secondary_list": [
+          "物理学",
+          "材料科学",
+          "电子、通信与自动控制技术"
+        ]
+      },
+      "概念": {
+        "主学科": [
+          {
+            "term": "Terahertz (THz) lens",
+            "normalized": "太赫兹透镜",
+            "std_label": null,
+            "evidence": "Terahertz (THz) lens constitutes a vital component in the THz system.",
+            "source": "abstract",
+            "confidence": 0.9
+          },
+          {
+            "term": "Metasurfaces-based THz metalenses",
+            "normalized": "基于超表面的太赫兹超透镜",
+            "std_label": null,
+            "evidence": "Metasurfaces-based THz metalenses and classical bulky lenses are severely constrained by chromatic/ spherical aberration and the diffraction limit.",
+            "source": "abstract",
+            "confidence": 0.9
+          },
+          {
+            "term": "achromatic super-resolution THz lenses",
+            "normalized": "消色差超分辨率太赫兹透镜",
+            "std_label": null,
+            "evidence": "Consequently, achromatic super-resolution THz lenses are urgently needed.",
+            "source": "abstract",
+            "confidence": 0.9
+          },
+          {
+            "term": "refractive index (RI) profile",
+            "normalized": "折射率分布",
+            "std_label": null,
+            "evidence": "through translating the required phase distribution into a refractive index (RI) profile with a specific thickness",
+            "source": "abstract",
+            "confidence": 0.9
+          },
+          {
+            "term": "dielectric gradient metamaterials",
+            "normalized": "介电梯度超材料",
+            "std_label": null,
+            "evidence": "an innovative approach to designing THz metalenses is proposed and achieved by dielectric gradient metamaterials.",
+            "source": "abstract",
+            "confidence": 0.9
+          },
+          {
+            "term": "numerical aperture (NA)",
+            "normalized": "数值孔径",
+            "std_label": null,
+            "evidence": "The samples fabricated by 3D printing can realize achromatic super focusing with a numerical aperture (NA) of 0.555 from 0.2 to 0.9 THz.",
+            "source": "abstract",
+            "confidence": 0.9
+          },
+          {
+            "term": "field of view (FOV)",
+            "normalized": "视场",
+            "std_label": null,
+            "evidence": "with a field of view (FOV) of 90°.",
+            "source": "abstract",
+            "confidence": 0.9
+          }
+        ],
+        "辅学科": {
+          "材料科学": [
+            {
+              "term": "3D printing",
+              "normalized": "3D打印",
+              "std_label": null,
+              "evidence": "The samples fabricated by 3D printing can realize achromatic super focusing with a numerical aperture (NA) of 0.555 from 0.2 to 0.9 THz.",
+              "source": "abstract",
+              "confidence": 0.9
+            },
+            {
+              "term": "FR4 panels",
+              "normalized": "FR4面板",
+              "std_label": null,
+              "evidence": "Submillimeter features separated by approximately 0.2 mm can be resolved with high precision, such as glass fabric patterns within FR4 panels and fibrous tissue on leaves",
+              "source": "abstract",
+              "confidence": 0.9
+            }
+          ],
+          "电子、通信与自动控制技术": [
+            {
+              "term": "THz system",
+              "normalized": "太赫兹系统",
+              "std_label": null,
+              "evidence": "Terahertz (THz) lens constitutes a vital component in the THz system.",
+              "source": "abstract",
+              "confidence": 0.9
+            },
+            {
+              "term": "non-destructive testing",
+              "normalized": "无损检测",
+              "std_label": null,
+              "evidence": "Our approach offers a feasible and cost-effective means to implement THz super-resolution imaging, which holds great potential in non-destructive testing and biomedical imaging.",
+              "source": "abstract",
+              "confidence": 0.9
+            },
+            {
+              "term": "biomedical imaging",
+              "normalized": "生物医学成像",
+              "std_label": null,
+              "evidence": "Our approach offers a feasible and cost-effective means to implement THz super-resolution imaging, which holds great potential in non-destructive testing and biomedical imaging.",
+              "source": "abstract",
+              "confidence": 0.9
+            }
+          ]
+        }
+      },
+      "跨学科关系": [
+        {
+          "head": "3D printing",
+          "relation": "fabricates",
+          "relation_type": "method_applied_to",
+          "relation_type_norm": "method_applied_to",
+          "relation_type_raw": "method_applied_to",
+          "tail": "achromatic super-resolution THz lenses",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "The samples fabricated by 3D printing can realize achromatic super focusing with a numerical aperture (NA) of 0.555 from 0.2 to 0.9 THz.",
+          "source": "abstract",
+          "confidence": 0.9
+        },
+        {
+          "head": "dielectric gradient metamaterials",
+          "relation": "enables design of",
+          "relation_type": "method_applied_to",
+          "relation_type_norm": "method_applied_to",
+          "relation_type_raw": "method_applied_to",
+          "tail": "achromatic super-resolution THz lenses",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "an innovative approach to designing THz metalenses is proposed and achieved by dielectric gradient metamaterials.",
+          "source": "abstract",
+          "confidence": 0.9
+        },
+        {
+          "head": "achromatic super-resolution THz lenses",
+          "relation": "enables",
+          "relation_type": "improves_metric",
+          "relation_type_norm": "improves_metric",
+          "relation_type_raw": "improves_metric",
+          "tail": "non-destructive testing",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "Our approach offers a feasible and cost-effective means to implement THz super-resolution imaging, which holds great potential in non-destructive testing and biomedical imaging.",
+          "source": "abstract",
+          "confidence": 0.9
+        },
+        {
+          "head": "achromatic super-resolution THz lenses",
+          "relation": "enables",
+          "relation_type": "improves_metric",
+          "relation_type_norm": "improves_metric",
+          "relation_type_raw": "improves_metric",
+          "tail": "biomedical imaging",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "Our approach offers a feasible and cost-effective means to implement THz super-resolution imaging, which holds great potential in non-destructive testing and biomedical imaging.",
+          "source": "abstract",
+          "confidence": 0.9
+        },
+        {
+          "head": "refractive index (RI) profile",
+          "relation": "translates into",
+          "relation_type": "maps_to",
+          "relation_type_norm": "maps_to",
+          "relation_type_raw": "maps_to",
+          "tail": "achromatic super-resolution THz lenses",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "through translating the required phase distribution into a refractive index (RI) profile with a specific thickness",
+          "source": "abstract",
+          "confidence": 0.9
+        }
+      ],
+      "按辅助学科分类": {
+        "材料科学": {
+          "概念": [
+            "3D打印",
+            "FR4面板"
+          ],
+          "关系": [
+            0
+          ],
+          "rationale": "通过3D打印技术实现太赫兹超透镜的精密制造，并提供特定材料支持。"
+        },
+        "电子、通信与自动控制技术": {
+          "概念": [
+            "太赫兹系统",
+            "无损检测",
+            "生物医学成像"
+          ],
+          "关系": [
+            2,
+            3
+          ],
+          "rationale": "为太赫兹超透镜提供应用场景验证，拓展其在工业检测与医疗成像领域的实际价值。"
+        }
+      },
+      "查询": {
+        "一级": "如何设计具有超高数值孔径与大视场的消色差太赫兹超透镜？",
+        "二级": [
+          "如何结合介电梯度超材料与3打印技术优化太赫兹透镜的折射率分布？",
+          "如何利用太赫兹系统验证超透镜在宽频带下的成像性能？"
+        ],
+        "三级": [
+          "如何通过介电梯度超材料设计相位分布，结合3打印实现高精度折射率剖面，最终在太赫兹成像系统中验证超分辨与消色差效果？",
+          "如何整合超材料设计、增材制造与无损检测技术，建立从透镜设计到生物医学成像应用的完整工作流？"
+        ]
+      },
+      "假设": {
+        "一级": [
+          [
+            {
+              "step": 1,
+              "head": "基于超表面的太赫兹超透镜",
+              "relation": "受限于",
+              "tail": "色差与球差",
+              "claim": "基于超表面的太赫兹超透镜受限于色差与球差，导致成像质量下降。"
+            },
+            {
+              "step": 2,
+              "head": "色差与球差",
+              "relation": "阻碍实现",
+              "tail": "消色差超分辨率太赫兹透镜",
+              "claim": "色差与球差阻碍实现消色差超分辨率太赫兹透镜，影响成像性能。"
+            },
+            {
+              "step": 3,
+              "head": "消色差超分辨率太赫兹透镜",
+              "relation": "需要材料科学介入",
+              "tail": "3打印",
+              "claim": "消色差超分辨率太赫兹透镜需要材料科学介入，通过3打印技术实现高精度制造。"
+            }
+          ],
+          [
+            {
+              "step": 1,
+              "head": "太赫兹透镜",
+              "relation": "需要优化",
+              "tail": "折射率分布",
+              "claim": "太赫兹透镜需要优化折射率分布，以提升成像质量。"
+            },
+            {
+              "step": 2,
+              "head": "折射率分布",
+              "relation": "可通过",
+              "tail": "介电梯度超材料",
+              "claim": "折射率分布可通过介电梯度超材料进行优化设计。"
+            },
+            {
+              "step": 3,
+              "head": "介电梯度超材料",
+              "relation": "需要电子、通信与自动控制技术支持",
+              "tail": "太赫兹系统",
+              "claim": "介电梯度超材料需要电子、通信与自动控制技术支持，通过太赫兹系统验证其性能。"
+            }
+          ]
+        ],
+        "二级": [
+          [
+            {
+              "step": 1,
+              "head": "介电梯度超材料",
+              "relation": "设计相位分布",
+              "tail": "折射率分布",
+              "claim": "介电梯度超材料 设计相位分布 折射率分布"
+            },
+            {
+              "step": 2,
+              "head": "折射率分布",
+              "relation": "转化为制造参数",
+              "tail": "3打印",
+              "claim": "折射率分布 转化为制造参数 3打印"
+            },
+            {
+              "step": 3,
+              "head": "3打印",
+              "relation": "实现高精度制造",
+              "tail": "消色差超分辨率太赫兹透镜",
+              "claim": "3打印 实现高精度制造 消色差超分辨率太赫兹透镜"
+            }
+          ],
+          [
+            {
+              "step": 1,
+              "head": "太赫兹系统",
+              "relation": "集成测试平台",
+              "tail": "消色差超分辨率太赫兹透镜",
+              "claim": "太赫兹系统 集成测试平台 消色差超分辨率太赫兹透镜"
+            },
+            {
+              "step": 2,
+              "head": "消色差超分辨率太赫兹透镜",
+              "relation": "验证光学性能",
+              "tail": "数值孔径",
+              "claim": "消色差超分辨率太赫兹透镜 验证光学性能 数值孔径"
+            },
+            {
+              "step": 3,
+              "head": "数值孔径",
+              "relation": "评估宽频带成像效果",
+              "tail": "视场",
+              "claim": "数值孔径 评估宽频带成像效果 视场"
+            }
+          ]
+        ],
+        "三级": [
+          [
+            {
+              "step": 1,
+              "head": "介电梯度超材料",
+              "relation": "设计相位分布",
+              "tail": "折射率分布",
+              "claim": "介电梯度超材料通过设计相位分布影响折射率分布"
+            },
+            {
+              "step": 2,
+              "head": "折射率分布",
+              "relation": "转化为制造参数",
+              "tail": "3打印",
+              "claim": "折射率分布参数被转化为3打印的制造参数"
+            },
+            {
+              "step": 3,
+              "head": "3打印",
+              "relation": "实现高精度制造",
+              "tail": "消色差超分辨率太赫兹透镜",
+              "claim": "3打印通过高精度制造实现消色差超分辨率太赫兹透镜"
+            }
+          ],
+          [
+            {
+              "step": 1,
+              "head": "基于超表面的太赫兹超透镜",
+              "relation": "应用于",
+              "tail": "无损检测",
+              "claim": "基于超表面的太赫兹超透镜被应用于无损检测技术"
+            },
+            {
+              "step": 2,
+              "head": "无损检测",
+              "relation": "验证成像质量",
+              "tail": "生物医学成像",
+              "claim": "通过无损检测验证生物医学成像质量"
+            },
+            {
+              "step": 3,
+              "head": "生物医学成像",
+              "relation": "反馈优化参数",
+              "tail": "太赫兹系统",
+              "claim": "生物医学成像结果反馈优化太赫兹系统参数"
+            }
+          ]
+        ],
+        "一级总结": [
+          "基于超表面的太赫兹超透镜受限于色差与球差，需要材料科学介入，通过3打印技术实现高精度制造。",
+          "太赫兹透镜需要优化折射率分布，介电梯度超材料需要电子、通信与自动控制技术支持，通过太赫兹系统验证其性能。"
+        ],
+        "二级总结": [
+          "通过介电梯度超材料设计相位分布并转化为3打印制造参数，实现高精度消色差透镜制造",
+          "利用太赫兹系统集成测试平台验证超透镜的数值孔径与视场性能，评估宽频带成像效果"
+        ],
+        "三级总结": [
+          "通过介电梯度超材料设计相位分布控制折射率，经3打印实现透镜制造，最终在太赫兹成像中验证超分辨与消色差效果",
+          "将超透镜应用于无损检测并验证生物医学成像质量，形成从设计到应用的全流程闭环验证"
+        ]
+      },
+      "graph": {
+        "nodes": [
+          {
+            "id": "太赫兹透镜",
+            "term": "Terahertz (THz) lens",
+            "normalized": "太赫兹透镜",
+            "discipline": "物理学",
+            "evidence": "Terahertz (THz) lens constitutes a vital component in the THz system.",
+            "source": "abstract",
+            "confidence": 0.9
+          },
+          {
+            "id": "基于超表面的太赫兹超透镜",
+            "term": "Metasurfaces-based THz metalenses",
+            "normalized": "基于超表面的太赫兹超透镜",
+            "discipline": "物理学",
+            "evidence": "Metasurfaces-based THz metalenses and classical bulky lenses are severely constrained by chromatic/ spherical aberration and the diffraction limit.",
+            "source": "abstract",
+            "confidence": 0.9
+          },
+          {
+            "id": "消色差超分辨率太赫兹透镜",
+            "term": "achromatic super-resolution THz lenses",
+            "normalized": "消色差超分辨率太赫兹透镜",
+            "discipline": "物理学",
+            "evidence": "Consequently, achromatic super-resolution THz lenses are urgently needed.",
+            "source": "abstract",
+            "confidence": 0.9
+          },
+          {
+            "id": "折射率分布",
+            "term": "refractive index (RI) profile",
+            "normalized": "折射率分布",
+            "discipline": "物理学",
+            "evidence": "through translating the required phase distribution into a refractive index (RI) profile with a specific thickness",
+            "source": "abstract",
+            "confidence": 0.9
+          },
+          {
+            "id": "介电梯度超材料",
+            "term": "dielectric gradient metamaterials",
+            "normalized": "介电梯度超材料",
+            "discipline": "物理学",
+            "evidence": "an innovative approach to designing THz metalenses is proposed and achieved by dielectric gradient metamaterials.",
+            "source": "abstract",
+            "confidence": 0.9
+          },
+          {
+            "id": "数值孔径",
+            "term": "numerical aperture (NA)",
+            "normalized": "数值孔径",
+            "discipline": "物理学",
+            "evidence": "The samples fabricated by 3D printing can realize achromatic super focusing with a numerical aperture (NA) of 0.555 from 0.2 to 0.9 THz.",
+            "source": "abstract",
+            "confidence": 0.9
+          },
+          {
+            "id": "视场",
+            "term": "field of view (FOV)",
+            "normalized": "视场",
+            "discipline": "物理学",
+            "evidence": "with a field of view (FOV) of 90°.",
+            "source": "abstract",
+            "confidence": 0.9
+          },
+          {
+            "id": "3D打印",
+            "term": "3D printing",
+            "normalized": "3D打印",
+            "discipline": "材料科学",
+            "evidence": "The samples fabricated by 3D printing can realize achromatic super focusing with a numerical aperture (NA) of 0.555 from 0.2 to 0.9 THz.",
+            "source": "abstract",
+            "confidence": 0.9
+          },
+          {
+            "id": "FR4面板",
+            "term": "FR4 panels",
+            "normalized": "FR4面板",
+            "discipline": "材料科学",
+            "evidence": "Submillimeter features separated by approximately 0.2 mm can be resolved with high precision, such as glass fabric patterns within FR4 panels and fibrous tissue on leaves",
+            "source": "abstract",
+            "confidence": 0.9
+          },
+          {
+            "id": "太赫兹系统",
+            "term": "THz system",
+            "normalized": "太赫兹系统",
+            "discipline": "电子、通信与自动控制技术",
+            "evidence": "Terahertz (THz) lens constitutes a vital component in the THz system.",
+            "source": "abstract",
+            "confidence": 0.9
+          },
+          {
+            "id": "无损检测",
+            "term": "non-destructive testing",
+            "normalized": "无损检测",
+            "discipline": "电子、通信与自动控制技术",
+            "evidence": "Our approach offers a feasible and cost-effective means to implement THz super-resolution imaging, which holds great potential in non-destructive testing and biomedical imaging.",
+            "source": "abstract",
+            "confidence": 0.9
+          },
+          {
+            "id": "生物医学成像",
+            "term": "biomedical imaging",
+            "normalized": "生物医学成像",
+            "discipline": "电子、通信与自动控制技术",
+            "evidence": "Our approach offers a feasible and cost-effective means to implement THz super-resolution imaging, which holds great potential in non-destructive testing and biomedical imaging.",
+            "source": "abstract",
+            "confidence": 0.9
+          },
+          {
+            "id": "色差与球差",
+            "term": "色差与球差",
+            "normalized": "色差与球差",
+            "discipline": "hypothesis_inferred",
+            "evidence": "",
+            "source": "hypothesis_inferred",
+            "confidence": 0.8
+          },
+          {
+            "id": "3打印",
+            "term": "3打印",
+            "normalized": "3打印",
+            "discipline": "hypothesis_inferred",
+            "evidence": "",
+            "source": "hypothesis_inferred",
+            "confidence": 0.8
+          }
+        ],
+        "edges": [
+          {
+            "source": "3D打印",
+            "target": "消色差超分辨率太赫兹透镜",
+            "relation": "fabricates",
+            "relation_type": "method_applied_to",
+            "metadata": {
+              "evidence": "The samples fabricated by 3D printing can realize achromatic super focusing with a numerical aperture (NA) of 0.555 from 0.2 to 0.9 THz.",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "介电梯度超材料",
+            "target": "消色差超分辨率太赫兹透镜",
+            "relation": "enables design of",
+            "relation_type": "method_applied_to",
+            "metadata": {
+              "evidence": "an innovative approach to designing THz metalenses is proposed and achieved by dielectric gradient metamaterials.",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "消色差超分辨率太赫兹透镜",
+            "target": "无损检测",
+            "relation": "enables",
+            "relation_type": "improves_metric",
+            "metadata": {
+              "evidence": "Our approach offers a feasible and cost-effective means to implement THz super-resolution imaging, which holds great potential in non-destructive testing and biomedical imaging.",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "消色差超分辨率太赫兹透镜",
+            "target": "生物医学成像",
+            "relation": "enables",
+            "relation_type": "improves_metric",
+            "metadata": {
+              "evidence": "Our approach offers a feasible and cost-effective means to implement THz super-resolution imaging, which holds great potential in non-destructive testing and biomedical imaging.",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "折射率分布",
+            "target": "消色差超分辨率太赫兹透镜",
+            "relation": "translates into",
+            "relation_type": "maps_to",
+            "metadata": {
+              "evidence": "through translating the required phase distribution into a refractive index (RI) profile with a specific thickness",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "基于超表面的太赫兹超透镜",
+            "target": "色差与球差",
+            "relation": "受限于",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "基于超表面的太赫兹超透镜受限于色差与球差，导致成像质量下降。",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "色差与球差",
+            "target": "消色差超分辨率太赫兹透镜",
+            "relation": "阻碍实现",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "色差与球差阻碍实现消色差超分辨率太赫兹透镜，影响成像性能。",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "消色差超分辨率太赫兹透镜",
+            "target": "3打印",
+            "relation": "需要材料科学介入",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "消色差超分辨率太赫兹透镜需要材料科学介入，通过3打印技术实现高精度制造。",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "太赫兹透镜",
+            "target": "折射率分布",
+            "relation": "需要优化",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "太赫兹透镜需要优化折射率分布，以提升成像质量。",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "折射率分布",
+            "target": "介电梯度超材料",
+            "relation": "可通过",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "折射率分布可通过介电梯度超材料进行优化设计。",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "介电梯度超材料",
+            "target": "太赫兹系统",
+            "relation": "需要电子、通信与自动控制技术支持",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "介电梯度超材料需要电子、通信与自动控制技术支持，通过太赫兹系统验证其性能。",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "介电梯度超材料",
+            "target": "折射率分布",
+            "relation": "设计相位分布",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "介电梯度超材料 设计相位分布 折射率分布",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "折射率分布",
+            "target": "3打印",
+            "relation": "转化为制造参数",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "折射率分布 转化为制造参数 3打印",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "3打印",
+            "target": "消色差超分辨率太赫兹透镜",
+            "relation": "实现高精度制造",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "3打印 实现高精度制造 消色差超分辨率太赫兹透镜",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "太赫兹系统",
+            "target": "消色差超分辨率太赫兹透镜",
+            "relation": "集成测试平台",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "太赫兹系统 集成测试平台 消色差超分辨率太赫兹透镜",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "消色差超分辨率太赫兹透镜",
+            "target": "数值孔径",
+            "relation": "验证光学性能",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "消色差超分辨率太赫兹透镜 验证光学性能 数值孔径",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "数值孔径",
+            "target": "视场",
+            "relation": "评估宽频带成像效果",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "数值孔径 评估宽频带成像效果 视场",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "介电梯度超材料",
+            "target": "折射率分布",
+            "relation": "设计相位分布",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "介电梯度超材料通过设计相位分布影响折射率分布",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "折射率分布",
+            "target": "3打印",
+            "relation": "转化为制造参数",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "折射率分布参数被转化为3打印的制造参数",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "3打印",
+            "target": "消色差超分辨率太赫兹透镜",
+            "relation": "实现高精度制造",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "3打印通过高精度制造实现消色差超分辨率太赫兹透镜",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "基于超表面的太赫兹超透镜",
+            "target": "无损检测",
+            "relation": "应用于",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "基于超表面的太赫兹超透镜被应用于无损检测技术",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "无损检测",
+            "target": "生物医学成像",
+            "relation": "验证成像质量",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "通过无损检测验证生物医学成像质量",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "生物医学成像",
+            "target": "太赫兹系统",
+            "relation": "反馈优化参数",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "生物医学成像结果反馈优化太赫兹系统参数",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          }
+        ]
+      },
+      "metrics": {
+        "path_consistency": 0.0,
+        "coverage": 0.8333333333333334,
+        "bridging_score": 0.375,
+        "rao_stirling_diversity": 0.1221,
+        "embedding_bridging": 0.7709,
+        "consistency_precision": 0.0,
+        "consistency_recall": 0.0,
+        "consistency_f1": 0.0,
+        "info_novelty": 0.0,
+        "chain_coherence": 0.5703,
+        "atypical_combination": 0.6274,
+        "kg_density": 0.1099,
+        "kg_inverse_modularity": 1.0046,
+        "kg_largest_cc_ratio": 0.9286,
+        "kg_avg_betweenness": 0.0788,
+        "kg_clustering_coefficient": 0.2718,
+        "concept_recall": 0.0,
+        "concept_precision": 0.0,
+        "concept_f1": 0.0,
+        "relation_precision": 0.0,
+        "relation_type_accuracy": 0.0,
+        "evidence_coverage": 0.0,
+        "path_alignment_best": 0.0,
+        "path_alignment_mean": 0.0
+      }
+    },
+    "raw": "/* stage1: struct */\n/* concepts round1 */\n```json\n{\n  \"meta\": {\n    \"title\": \"3D-printed aberration-free terahertz metalens for ultra-broadband achromatic super-resolution wide-angle imaging with high numerical aperture\",\n    \"primary\": \"物理学\",\n    \"secondary_list\": [\"物理学\", \"材料科学\", \"电子、通信与自动控制技术\"]\n  },\n  \"概念\": {\n    \"主学科\": [\n      {\n        \"term\": \"Terahertz (THz) lens\",\n        \"normalized\": \"太赫兹透镜\",\n        \"std_label\": null,\n        \"evidence\": \"Terahertz (THz) lens constitutes a vital component in the THz system.\",\n        \"source\": \"abstract\",\n        \"confidence\": 0.9\n      },\n      {\n        \"term\": \"Metasurfaces-based THz metalenses\",\n        \"normalized\": \"基于超表面的太赫兹超透镜\",\n        \"std_label\": null,\n        \"evidence\": \"Metasurfaces-based THz metalenses and classical bulky lenses are severely constrained by chromatic/ spherical aberration and the diffraction limit.\",\n        \"source\": \"abstract\",\n        \"confidence\": 0.9\n      },\n      {\n        \"term\": \"achromatic super-resolution THz lenses\",\n        \"normalized\": \"消色差超分辨率太赫兹透镜\",\n        \"std_label\": null,\n        \"evidence\": \"Consequently, achromatic super-resolution THz lenses are urgently needed.\",\n        \"source\": \"abstract\",\n        \"confidence\": 0.9\n      },\n      {\n        \"term\": \"refractive index (RI) profile\",\n        \"normalized\": \"折射率分布\",\n        \"std_label\": null,\n        \"evidence\": \"through translating the required phase distribution into a refractive index (RI) profile with a specific thickness\",\n        \"source\": \"abstract\",\n        \"confidence\": 0.9\n      },\n      {\n        \"term\": \"dielectric gradient metamaterials\",\n        \"normalized\": \"介电梯度超材料\",\n        \"std_label\": null,\n        \"evidence\": \"an innovative approach to designing THz metalenses is proposed and achieved by dielectric gradient metamaterials.\",\n        \"source\": \"abstract\",\n        \"confidence\": 0.9\n      },\n      {\n        \"term\": \"numerical aperture (NA)\",\n        \"normalized\": \"数值孔径\",\n        \"std_label\": null,\n        \"evidence\": \"The samples fabricated by 3D printing can realize achromatic super focusing with a numerical aperture (NA) of 0.555 from 0.2 to 0.9 THz.\",\n        \"source\": \"abstract\",\n        \"confidence\": 0.9\n      },\n      {\n        \"term\": \"field of view (FOV)\",\n        \"normalized\": \"视场\",\n        \"std_label\": null,\n        \"evidence\": \"with a field of view (FOV) of 90°.\",\n        \"source\": \"abstract\",\n        \"confidence\": 0.9\n      }\n    ],\n    \"辅学科\": {\n      \"材料科学\": [\n        {\n          \"term\": \"3D printing\",\n          \"normalized\": \"3D打印\",\n          \"std_label\": null,\n          \"evidence\": \"The samples fabricated by 3D printing can realize achromatic super focusing with a numerical aperture (NA) of 0.555 from 0.2 to 0.9 THz.\",\n          \"source\": \"abstract\",\n          \"confidence\": 0.9\n        },\n        {\n          \"term\": \"FR4 panels\",\n          \"normalized\": \"FR4面板\",\n          \"std_label\": null,\n          \"evidence\": \"Submillimeter features separated by approximately 0.2 mm can be resolved with high precision, such as glass fabric patterns within FR4 panels and fibrous tissue on leaves\",\n          \"source\": \"abstract\",\n          \"confidence\": 0.9\n        }\n      ],\n      \"电子、通信与自动控制技术\": [\n        {\n          \"term\": \"THz system\",\n          \"normalized\": \"太赫兹系统\",\n          \"std_label\": null,\n          \"evidence\": \"Terahertz (THz) lens constitutes a vital component in the THz system.\",\n          \"source\": \"abstract\",\n          \"confidence\": 0.9\n        },\n        {\n          \"term\": \"non-destructive testing\",\n          \"normalized\": \"无损检测\",\n          \"std_label\": null,\n          \"evidence\": \"Our approach offers a feasible and cost-effective means to implement THz super-resolution imaging, which holds great potential in non-destructive testing and biomedical imaging.\",\n          \"source\": \"abstract\",\n          \"confidence\": 0.9\n        },\n        {\n          \"term\": \"biomedical imaging\",\n          \"normalized\": \"生物医学成像\",\n          \"std_label\": null,\n          \"evidence\": \"Our approach offers a feasible and cost-effective means to implement THz super-resolution imaging, which holds great potential in non-destructive testing and biomedical imaging.\",\n          \"source\": \"abstract\",\n          \"confidence\": 0.9\n        }\n      ]\n    }\n  }\n}\n```\n\n/* concepts round2 (supplement) */\n{\n  \"补充概念\": {\n    \"主学科\": [\n      \"chromatic/ spherical aberration\",\n      \"diffraction limit\",\n      \"phase distribution\",\n      \"achromatic super focusing\",\n      \"Submillimeter features\",\n      \"glass fabric patterns\",\n      \"fibrous tissue\"\n    ],\n    \"辅学科\": {\n      \"材料科学\": [],\n      \"电子、通信与自动控制技术\": []\n    }\n  }\n}\n\n/* relations */\n{\n  \"跨学科关系\": [\n    {\n      \"head\": \"3D printing\",\n      \"tail\": \"achromatic super-resolution THz lenses\",\n      \"relation\": \"fabricates\",\n      \"relation_type\": \"method_applied_to\",\n      \"direction\": \"->\",\n      \"assumptions\": [],\n      \"evidence\": \"The samples fabricated by 3D printing can realize achromatic super focusing with a numerical aperture (NA) of 0.555 from 0.2 to 0.9 THz.\",\n      \"source\": \"abstract\",\n      \"confidence\": 0.9\n    },\n    {\n      \"head\": \"dielectric gradient metamaterials\",\n      \"tail\": \"achromatic super-resolution THz lenses\",\n      \"relation\": \"enables design of\",\n      \"relation_type\": \"method_applied_to\",\n      \"direction\": \"->\",\n      \"assumptions\": [],\n      \"evidence\": \"an innovative approach to designing THz metalenses is proposed and achieved by dielectric gradient metamaterials.\",\n      \"source\": \"abstract\",\n      \"confidence\": 0.9\n    },\n    {\n      \"head\": \"achromatic super-resolution THz lenses\",\n      \"tail\": \"non-destructive testing\",\n      \"relation\": \"enables\",\n      \"relation_type\": \"improves_metric\",\n      \"direction\": \"->\",\n      \"assumptions\": [],\n      \"evidence\": \"Our approach offers a feasible and cost-effective means to implement THz super-resolution imaging, which holds great potential in non-destructive testing and biomedical imaging.\",\n      \"source\": \"abstract\",\n      \"confidence\": 0.9\n    },\n    {\n      \"head\": \"achromatic super-resolution THz lenses\",\n      \"tail\": \"biomedical imaging\",\n      \"relation\": \"enables\",\n      \"relation_type\": \"improves_metric\",\n      \"direction\": \"->\",\n      \"assumptions\": [],\n      \"evidence\": \"Our approach offers a feasible and cost-effective means to implement THz super-resolution imaging, which holds great potential in non-destructive testing and biomedical imaging.\",\n      \"source\": \"abstract\",\n      \"confidence\": 0.9\n    },\n    {\n      \"head\": \"refractive index (RI) profile\",\n      \"tail\": \"achromatic super-resolution THz lenses\",\n      \"relation\": \"translates into\",\n      \"relation_type\": \"maps_to\",\n      \"direction\": \"->\",\n      \"assumptions\": [],\n      \"evidence\": \"through translating the required phase distribution into a refractive index (RI) profile with a specific thickness\",\n      \"source\": \"abstract\",\n      \"confidence\": 0.9\n    }\n  ]\n}\n\n/* stage2: query */\n{\n  \"按辅助学科分类\": {\n    \"材料科学\": {\n      \"概念\": [\"3D打印\", \"FR4面板\"],\n      \"关系\": [0],\n      \"rationale\": \"通过3D打印技术实现太赫兹超透镜的精密制造，并提供特定材料支持。\"\n    },\n    \"电子、通信与自动控制技术\": {\n      \"概念\": [\"太赫兹系统\", \"无损检测\", \"生物医学成像\"],\n      \"关系\": [2, 3],\n      \"rationale\": \"为太赫兹超透镜提供应用场景验证，拓展其在工业检测与医疗成像领域的实际价值。\"\n    }\n  },\n  \"查询\": {\n    \"一级\": \"如何设计具有超高数值孔径与大视场的消色差太赫兹超透镜？\",\n    \"二级\": [\n      \"如何结合介电梯度超材料与3D打印技术优化太赫兹透镜的折射率分布？\",\n      \"如何利用太赫兹系统验证超透镜在宽频带下的成像性能？\"\n    ],\n    \"三级\": [\n      \"如何通过介电梯度超材料设计相位分布，结合3D打印实现高精度折射率剖面，最终在太赫兹成像系统中验证超分辨与消色差效果？\",\n      \"如何整合超材料设计、增材制造与无损检测技术，建立从透镜设计到生物医学成像应用的完整工作流？\"\n    ]\n  }\n}\n\n/* stage3: hypothesis L1 */\n{\n  \"假设\": {\n    \"一级\": [\n      [\n        {\n          \"step\": 1,\n          \"head\": \"基于超表面的太赫兹超透镜\",\n          \"relation\": \"受限于\",\n          \"tail\": \"色差与球差\",\n          \"claim\": \"基于超表面的太赫兹超透镜受限于色差与球差，导致成像质量下降。\"\n        },\n        {\n          \"step\": 2,\n          \"head\": \"色差与球差\",\n          \"relation\": \"阻碍实现\",\n          \"tail\": \"消色差超分辨率太赫兹透镜\",\n          \"claim\": \"色差与球差阻碍实现消色差超分辨率太赫兹透镜，影响成像性能。\"\n        },\n        {\n          \"step\": 3,\n          \"head\": \"消色差超分辨率太赫兹透镜\",\n          \"relation\": \"需要材料科学介入\",\n          \"tail\": \"3D打印\",\n          \"claim\": \"消色差超分辨率太赫兹透镜需要材料科学介入，通过3D打印技术实现高精度制造。\"\n        }\n      ],\n      [\n        {\n          \"step\": 1,\n          \"head\": \"太赫兹透镜\",\n          \"relation\": \"需要优化\",\n          \"tail\": \"折射率分布\",\n          \"claim\": \"太赫兹透镜需要优化折射率分布，以提升成像质量。\"\n        },\n        {\n          \"step\": 2,\n          \"head\": \"折射率分布\",\n          \"relation\": \"可通过\",\n          \"tail\": \"介电梯度超材料\",\n          \"claim\": \"折射率分布可通过介电梯度超材料进行优化设计。\"\n        },\n        {\n          \"step\": 3,\n          \"head\": \"介电梯度超材料\",\n          \"relation\": \"需要电子、通信与自动控制技术支持\",\n          \"tail\": \"太赫兹系统\",\n          \"claim\": \"介电梯度超材料需要电子、通信与自动控制技术支持，通过太赫兹系统验证其性能。\"\n        }\n      ]\n    ],\n    \"一级总结\": [\n      \"基于超表面的太赫兹超透镜受限于色差与球差，需要材料科学介入，通过3D打印技术实现高精度制造。\",\n      \"太赫兹透镜需要优化折射率分布，介电梯度超材料需要电子、通信与自动控制技术支持，通过太赫兹系统验证其性能。\"\n    ]\n  }\n}\n\n/* stage3: hypothesis L2 */\n{\n  \"假设\": {\n    \"二级\": [\n      [\n        {\n          \"head\": \"介电梯度超材料\",\n          \"tail\": \"折射率分布\",\n          \"relation\": \"设计相位分布\"\n        },\n        {\n          \"head\": \"折射率分布\",\n          \"tail\": \"3D打印\",\n          \"relation\": \"转化为制造参数\"\n        },\n        {\n          \"head\": \"3D打印\",\n          \"tail\": \"消色差超分辨率太赫兹透镜\",\n          \"relation\": \"实现高精度制造\"\n        }\n      ],\n      [\n        {\n          \"head\": \"太赫兹系统\",\n          \"tail\": \"消色差超分辨率太赫兹透镜\",\n          \"relation\": \"集成测试平台\"\n        },\n        {\n          \"head\": \"消色差超分辨率太赫兹透镜\",\n          \"tail\": \"数值孔径\",\n          \"relation\": \"验证光学性能\"\n        },\n        {\n          \"head\": \"数值孔径\",\n          \"tail\": \"视场\",\n          \"relation\": \"评估宽频带成像效果\"\n        }\n      ]\n    ],\n    \"二级总结\": [\n      \"通过介电梯度超材料设计相位分布并转化为3打印制造参数，实现高精度消色差透镜制造\",\n      \"利用太赫兹系统集成测试平台验证超透镜的数值孔径与视场性能，评估宽频带成像效果\"\n    ]\n  }\n}\n\n/* stage3: hypothesis L3 */\n{\n  \"假设\": {\n    \"三级\": [\n      [\n        {\n          \"head\": \"介电梯度超材料\",\n          \"tail\": \"折射率分布\",\n          \"relation\": \"设计相位分布\",\n          \"claim\": \"介电梯度超材料通过设计相位分布影响折射率分布\"\n        },\n        {\n          \"head\": \"折射率分布\",\n          \"tail\": \"3D打印\",\n          \"relation\": \"转化为制造参数\",\n          \"claim\": \"折射率分布参数被转化为3D打印的制造参数\"\n        },\n        {\n          \"head\": \"3D打印\",\n          \"tail\": \"消色差超分辨率太赫兹透镜\",\n          \"relation\": \"实现高精度制造\",\n          \"claim\": \"3D打印通过高精度制造实现消色差超分辨率太赫兹透镜\"\n        }\n      ],\n      [\n        {\n          \"head\": \"基于超表面的太赫兹超透镜\",\n          \"tail\": \"无损检测\",\n          \"relation\": \"应用于\",\n          \"claim\": \"基于超表面的太赫兹超透镜被应用于无损检测技术\"\n        },\n        {\n          \"head\": \"无损检测\",\n          \"tail\": \"生物医学成像\",\n          \"relation\": \"验证成像质量\",\n          \"claim\": \"通过无损检测验证生物医学成像质量\"\n        },\n        {\n          \"head\": \"生物医学成像\",\n          \"tail\": \"太赫兹系统\",\n          \"relation\": \"反馈优化参数\",\n          \"claim\": \"生物医学成像结果反馈优化太赫兹系统参数\"\n        }\n      ]\n    ],\n    \"三级总结\": [\n      \"通过介电梯度超材料设计相位分布控制折射率，经3D打印实现透镜制造，最终在太赫兹成像中验证超分辨与消色差效果\",\n      \"将超透镜应用于无损检测并验证生物医学成像质量，形成从设计到应用的全流程闭环验证\"\n    ]\n  }\n}",
+    "ok": true,
+    "error": ""
+  },
+  {
+    "title": "The tetracycline resistome is shaped by selection for specific resistance mechanisms by each antibiotic generation",
+    "abstract": "Abstract The history of clinical resistance to tetracycline antibiotics is characterized by cycles whereby the deployment of a new generation of drug molecules is quickly followed by the discovery of a new mechanism of resistance. This suggests mechanism-specific selection by each tetracycline generation; however, the evolutionary dynamics of this remain unclear. Here, we evaluate 24 recombinant Escherichia coli strains expressing tetracycline resistance genes from each mechanism (efflux pumps, ribosomal protection proteins, and enzymatic inactivation) in the context of each tetracycline generation. We employ a high-throughput barcode sequencing protocol that can discriminate between strains in mixed culture and quantify their relative abundances. We find that each mechanism is preferentially selected for by specific antibiotic generations, leading to their expansion. Remarkably, the minimum inhibitory concentration associated with individual genes is secondary to resistance mechanism for inter-mechanism relative fitness, but it does explain intra-mechanism relative fitness. These patterns match the history of clinical deployment of tetracycline drugs and resistance discovery in pathogens.",
+    "pdf_url": "",
+    "primary": "生物学",
+    "secondary": "生物学, 临床医学",
+    "secondary_list": [
+      "生物学",
+      "临床医学"
+    ],
+    "introduction": "",
+    "parsed": {
+      "meta": {
+        "title": "The tetracycline resistome is shaped by selection for specific resistance mechanisms by each antibiotic generation",
+        "primary": "生物学",
+        "secondary_list": [
+          "生物学",
+          "临床医学"
+        ]
+      },
+      "概念": {
+        "主学科": [
+          {
+            "term": "tetracycline antibiotics",
+            "normalized": "四环素抗生素",
+            "std_label": null,
+            "evidence": "The history of clinical resistance to tetracycline antibiotics is characterized by cycles",
+            "source": "abstract",
+            "confidence": 0.9
+          },
+          {
+            "term": "resistance mechanisms",
+            "normalized": "耐药机制",
+            "std_label": null,
+            "evidence": "the discovery of a new mechanism of resistance",
+            "source": "abstract",
+            "confidence": 0.9
+          },
+          {
+            "term": "efflux pumps",
+            "normalized": "外排泵",
+            "std_label": null,
+            "evidence": "efflux pumps, ribosomal protection proteins, and enzymatic inactivation",
+            "source": "abstract",
+            "confidence": 0.9
+          },
+          {
+            "term": "ribosomal protection proteins",
+            "normalized": "核糖体保护蛋白",
+            "std_label": null,
+            "evidence": "efflux pumps, ribosomal protection proteins, and enzymatic inactivation",
+            "source": "abstract",
+            "confidence": 0.9
+          },
+          {
+            "term": "enzymatic inactivation",
+            "normalized": "酶失活",
+            "std_label": null,
+            "evidence": "efflux pumps, ribosomal protection proteins, and enzymatic inactivation",
+            "source": "abstract",
+            "confidence": 0.9
+          },
+          {
+            "term": "high-throughput barcode sequencing",
+            "normalized": "高通量条形码测序",
+            "std_label": null,
+            "evidence": "We employ a high-throughput barcode sequencing protocol",
+            "source": "abstract",
+            "confidence": 0.9
+          },
+          {
+            "term": "minimum inhibitory concentration",
+            "normalized": "最小抑菌浓度",
+            "std_label": null,
+            "evidence": "the minimum inhibitory concentration associated with individual genes",
+            "source": "abstract",
+            "confidence": 0.9
+          },
+          {
+            "term": "tetracycline resistome",
+            "normalized": "四环素耐药组",
+            "std_label": null,
+            "evidence": "The tetracycline resistome is shaped by selection for specific resistance mechanisms",
+            "source": "abstract",
+            "confidence": 0.9
+          }
+        ],
+        "辅学科": {
+          "生物学": [
+            {
+              "term": "Escherichia coli",
+              "normalized": "大肠杆菌",
+              "std_label": null,
+              "evidence": "24 recombinant Escherichia coli strains expressing tetracycline resistance genes",
+              "source": "abstract",
+              "confidence": 0.9
+            },
+            {
+              "term": "resistance genes",
+              "normalized": "耐药基因",
+              "std_label": null,
+              "evidence": "24 recombinant Escherichia coli strains expressing tetracycline resistance genes",
+              "source": "abstract",
+              "confidence": 0.9
+            },
+            {
+              "term": "relative fitness",
+              "normalized": "相对适应性",
+              "std_label": null,
+              "evidence": "but it does explain intra-mechanism relative fitness",
+              "source": "abstract",
+              "confidence": 0.9
+            }
+          ],
+          "临床医学": [
+            {
+              "term": "clinical resistance",
+              "normalized": "临床耐药性",
+              "std_label": null,
+              "evidence": "The history of clinical resistance to tetracycline antibiotics",
+              "source": "abstract",
+              "confidence": 0.9
+            },
+            {
+              "term": "antibiotic generations",
+              "normalized": "抗生素世代",
+              "std_label": null,
+              "evidence": "the deployment of a new generation of drug molecules",
+              "source": "abstract",
+              "confidence": 0.9
+            },
+            {
+              "term": "pathogens",
+              "normalized": "病原体",
+              "std_label": null,
+              "evidence": "the history of clinical deployment of tetracycline drugs and resistance discovery in pathogens",
+              "source": "abstract",
+              "confidence": 0.9
+            }
+          ]
+        }
+      },
+      "跨学科关系": [
+        {
+          "head": "tetracycline antibiotics",
+          "relation": "is characterized by cycles of resistance",
+          "relation_type": "driven_by",
+          "relation_type_norm": "driven_by",
+          "relation_type_raw": "driven_by",
+          "tail": "resistance mechanisms",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "The history of clinical resistance to tetracycline antibiotics is characterized by cycles whereby the deployment of a new generation of drug molecules is quickly followed by the discovery of a new mechanism of resistance",
+          "source": "abstract",
+          "confidence": 0.9
+        },
+        {
+          "head": "antibiotic generations",
+          "relation": "selects for specific",
+          "relation_type": "driven_by",
+          "relation_type_norm": "driven_by",
+          "relation_type_raw": "driven_by",
+          "tail": "resistance mechanisms",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "This suggests mechanism-specific selection by each tetracycline generation",
+          "source": "abstract",
+          "confidence": 0.9
+        },
+        {
+          "head": "high-throughput barcode sequencing",
+          "relation": "is employed to evaluate",
+          "relation_type": "method_applied_to",
+          "relation_type_norm": "method_applied_to",
+          "relation_type_raw": "method_applied_to",
+          "tail": "Escherichia coli",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "We evaluate 24 recombinant Escherichia coli strains expressing tetracycline resistance genes from each mechanism (efflux pumps, ribosomal protection proteins, and enzymatic inactivation) in the context of each tetracycline generation. We employ a high-throughput barcode sequencing protocol that can discriminate between strains in mixed culture and quantify their relative abundances",
+          "source": "abstract",
+          "confidence": 0.9
+        },
+        {
+          "head": "resistance mechanisms",
+          "relation": "explains intra-mechanism",
+          "relation_type": "inferred_from",
+          "relation_type_norm": "inferred_from",
+          "relation_type_raw": "inferred_from",
+          "tail": "relative fitness",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "but it does explain intra-mechanism relative fitness",
+          "source": "abstract",
+          "confidence": 0.9
+        },
+        {
+          "head": "minimum inhibitory concentration",
+          "relation": "explains intra-mechanism",
+          "relation_type": "inferred_from",
+          "relation_type_norm": "inferred_from",
+          "relation_type_raw": "inferred_from",
+          "tail": "relative fitness",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "the minimum inhibitory concentration associated with individual genes is secondary to resistance mechanism for inter-mechanism relative fitness, but it does explain intra-mechanism relative fitness",
+          "source": "abstract",
+          "confidence": 0.9
+        },
+        {
+          "head": "tetracycline resistome",
+          "relation": "is shaped by selection for specific",
+          "relation_type": "driven_by",
+          "relation_type_norm": "driven_by",
+          "relation_type_raw": "driven_by",
+          "tail": "resistance mechanisms",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "The tetracycline resistome is shaped by selection for specific resistance mechanisms by each antibiotic generation",
+          "source": "abstract",
+          "confidence": 0.9
+        }
+      ],
+      "按辅助学科分类": {
+        "生物学": {
+          "概念": [
+            "大肠杆菌",
+            "耐药基因",
+            "相对适应性",
+            "高通量条形码测序"
+          ],
+          "关系": [
+            2,
+            3,
+            4
+          ],
+          "rationale": "生物学通过模型生物实验和高通量测序技术，为耐药机制研究提供数据支持和验证平台"
+        },
+        "临床医学": {
+          "概念": [
+            "临床耐药性",
+            "抗生素世代",
+            "病原体"
+          ],
+          "关系": [
+            0,
+            1,
+            5
+          ],
+          "rationale": "临床医学从治疗实践角度揭示抗生素世代更替与耐药性演变的动态关系"
+        }
+      },
+      "查询": {
+        "一级": "四环素抗生素的耐药机制如何随药物迭代发生特异性演变",
+        "二级": [
+          "结合高通量测序技术分析不同世代四环素药物的耐药基因表达特征",
+          "从临床治疗史角度考察抗生素迭代与病原体适应性变化的关系"
+        ],
+        "三级": [
+          "如何整合大肠杆菌模型的高通量测序数据与临床耐药性监测数据，建立机制选择压力预测模型",
+          "怎样通过最小抑菌浓度与相对适应性的跨学科指标联用，验证核糖体保护蛋白的世代特异性优势"
+        ]
+      },
+      "假设": {
+        "一级": [
+          [
+            {
+              "step": 1,
+              "head": "四环素抗生素",
+              "relation": "通过药物迭代驱动",
+              "tail": "耐药机制",
+              "claim": "四环素抗生素的临床应用导致耐药机制的周期性演变"
+            },
+            {
+              "step": 2,
+              "head": "耐药机制",
+              "relation": "受特定世代选择",
+              "tail": "抗生素世代",
+              "claim": "不同抗生素世代对耐药机制产生特异性选择压力"
+            },
+            {
+              "step": 3,
+              "head": "抗生素世代",
+              "relation": "需临床医学数据验证",
+              "tail": "临床耐药性",
+              "claim": "需要临床医学提供历史治疗数据以验证世代选择对耐药组演变的驱动模式"
+            }
+          ],
+          [
+            {
+              "step": 1,
+              "head": "四环素耐药组",
+              "relation": "由机制特异性选择形成",
+              "tail": "耐药机制",
+              "claim": "四环素耐药组的组成结构受特定耐药机制的选择影响"
+            },
+            {
+              "step": 2,
+              "head": "耐药机制",
+              "relation": "通过适应性差异体现",
+              "tail": "相对适应性",
+              "claim": "耐药基因的相对适应性差异反映机制选择效应"
+            },
+            {
+              "step": 3,
+              "head": "相对适应性",
+              "relation": "需生物学实验量化",
+              "tail": "高通量条形码测序",
+              "claim": "需要生物学领域开发高通量测序方法以精确量化不同耐药基因的适应性代价"
+            }
+          ]
+        ],
+        "二级": [
+          [
+            {
+              "step": 1,
+              "head": "高通量条形码测序",
+              "relation": "量化表达",
+              "tail": "耐药基因",
+              "claim": "高通量条形码测序技术能够精确量化不同世代四环素药物作用下的耐药基因表达水平"
+            },
+            {
+              "step": 2,
+              "head": "耐药基因",
+              "relation": "决定",
+              "tail": "耐药机制",
+              "claim": "耐药基因的表达特征直接决定外排泵、核糖体保护蛋白和酶失活等耐药机制的表现形式"
+            },
+            {
+              "step": 3,
+              "head": "耐药机制",
+              "relation": "塑造",
+              "tail": "四环素耐药组",
+              "claim": "特定耐药机制的选择压力最终塑造四环素耐药组的组成结构"
+            }
+          ],
+          [
+            {
+              "step": 1,
+              "head": "抗生素世代",
+              "relation": "驱动",
+              "tail": "临床耐药性",
+              "claim": "抗生素世代的更替通过选择压力驱动临床耐药性的演变"
+            },
+            {
+              "step": 2,
+              "head": "临床耐药性",
+              "relation": "影响",
+              "tail": "病原体",
+              "claim": "临床耐药性变化导致病原体群体中相对适应性的重新分布"
+            },
+            {
+              "step": 3,
+              "head": "病原体",
+              "relation": "反馈作用",
+              "tail": "四环素抗生素",
+              "claim": "病原体适应性变化反馈作用于四环素抗生素的临床使用效果"
+            }
+          ]
+        ],
+        "三级": [
+          [
+            {
+              "step": 1,
+              "head": "大肠杆菌",
+              "relation": "通过模型整合",
+              "tail": "高通量条形码测序",
+              "claim": "大肠杆菌 通过模型整合 高通量条形码测序"
+            },
+            {
+              "step": 2,
+              "head": "高通量条形码测序",
+              "relation": "生成数据关联",
+              "tail": "临床耐药性",
+              "claim": "高通量条形码测序 生成数据关联 临床耐药性"
+            },
+            {
+              "step": 3,
+              "head": "临床耐药性",
+              "relation": "预测选择压力",
+              "tail": "耐药机制",
+              "claim": "临床耐药性 预测选择压力 耐药机制"
+            }
+          ],
+          [
+            {
+              "step": 1,
+              "head": "核糖体保护蛋白",
+              "relation": "通过指标联用",
+              "tail": "最小抑菌浓度",
+              "claim": "核糖体保护蛋白 通过指标联用 最小抑菌浓度"
+            },
+            {
+              "step": 2,
+              "head": "最小抑菌浓度",
+              "relation": "测量世代差异",
+              "tail": "相对适应性",
+              "claim": "最小抑菌浓度 测量世代差异 相对适应性"
+            },
+            {
+              "step": 3,
+              "head": "相对适应性",
+              "relation": "验证特异性优势",
+              "tail": "耐药机制",
+              "claim": "相对适应性 验证特异性优势 耐药机制"
+            }
+          ]
+        ],
+        "一级总结": [
+          "四环素耐药演变存在主学科难以解释的世代选择特异性，需临床医学提供历史治疗数据验证选择压力与耐药组演变的关联",
+          "耐药基因适应性差异的精确测量是生物学当前瓶颈，需开发新型高通量测序技术实现跨机制适应性的系统量化"
+        ],
+        "二级总结": [
+          "通过高通量测序技术解析耐药基因表达特征，建立从基因表达到耐药机制选择再到耐药组演变的完整分析链条",
+          "基于抗生素治疗史揭示临床选择压力如何通过耐药性变化影响病原体适应性，进而反馈至药物迭代过程"
+        ],
+        "三级总结": [
+          "通过大肠杆菌模型的高通量测序数据与临床耐药性监测数据的整合，建立耐药机制选择压力的预测模型",
+          "通过最小抑菌浓度与相对适应性的跨学科指标联用，验证核糖体保护蛋白在抗生素世代中的特异性优势"
+        ]
+      },
+      "graph": {
+        "nodes": [
+          {
+            "id": "四环素抗生素",
+            "term": "tetracycline antibiotics",
+            "normalized": "四环素抗生素",
+            "discipline": "生物学",
+            "evidence": "The history of clinical resistance to tetracycline antibiotics is characterized by cycles",
+            "source": "abstract",
+            "confidence": 0.9
+          },
+          {
+            "id": "耐药机制",
+            "term": "resistance mechanisms",
+            "normalized": "耐药机制",
+            "discipline": "生物学",
+            "evidence": "the discovery of a new mechanism of resistance",
+            "source": "abstract",
+            "confidence": 0.9
+          },
+          {
+            "id": "外排泵",
+            "term": "efflux pumps",
+            "normalized": "外排泵",
+            "discipline": "生物学",
+            "evidence": "efflux pumps, ribosomal protection proteins, and enzymatic inactivation",
+            "source": "abstract",
+            "confidence": 0.9
+          },
+          {
+            "id": "核糖体保护蛋白",
+            "term": "ribosomal protection proteins",
+            "normalized": "核糖体保护蛋白",
+            "discipline": "生物学",
+            "evidence": "efflux pumps, ribosomal protection proteins, and enzymatic inactivation",
+            "source": "abstract",
+            "confidence": 0.9
+          },
+          {
+            "id": "酶失活",
+            "term": "enzymatic inactivation",
+            "normalized": "酶失活",
+            "discipline": "生物学",
+            "evidence": "efflux pumps, ribosomal protection proteins, and enzymatic inactivation",
+            "source": "abstract",
+            "confidence": 0.9
+          },
+          {
+            "id": "高通量条形码测序",
+            "term": "high-throughput barcode sequencing",
+            "normalized": "高通量条形码测序",
+            "discipline": "生物学",
+            "evidence": "We employ a high-throughput barcode sequencing protocol",
+            "source": "abstract",
+            "confidence": 0.9
+          },
+          {
+            "id": "最小抑菌浓度",
+            "term": "minimum inhibitory concentration",
+            "normalized": "最小抑菌浓度",
+            "discipline": "生物学",
+            "evidence": "the minimum inhibitory concentration associated with individual genes",
+            "source": "abstract",
+            "confidence": 0.9
+          },
+          {
+            "id": "四环素耐药组",
+            "term": "tetracycline resistome",
+            "normalized": "四环素耐药组",
+            "discipline": "生物学",
+            "evidence": "The tetracycline resistome is shaped by selection for specific resistance mechanisms",
+            "source": "abstract",
+            "confidence": 0.9
+          },
+          {
+            "id": "大肠杆菌",
+            "term": "Escherichia coli",
+            "normalized": "大肠杆菌",
+            "discipline": "生物学",
+            "evidence": "24 recombinant Escherichia coli strains expressing tetracycline resistance genes",
+            "source": "abstract",
+            "confidence": 0.9
+          },
+          {
+            "id": "耐药基因",
+            "term": "resistance genes",
+            "normalized": "耐药基因",
+            "discipline": "生物学",
+            "evidence": "24 recombinant Escherichia coli strains expressing tetracycline resistance genes",
+            "source": "abstract",
+            "confidence": 0.9
+          },
+          {
+            "id": "相对适应性",
+            "term": "relative fitness",
+            "normalized": "相对适应性",
+            "discipline": "生物学",
+            "evidence": "but it does explain intra-mechanism relative fitness",
+            "source": "abstract",
+            "confidence": 0.9
+          },
+          {
+            "id": "临床耐药性",
+            "term": "clinical resistance",
+            "normalized": "临床耐药性",
+            "discipline": "临床医学",
+            "evidence": "The history of clinical resistance to tetracycline antibiotics",
+            "source": "abstract",
+            "confidence": 0.9
+          },
+          {
+            "id": "抗生素世代",
+            "term": "antibiotic generations",
+            "normalized": "抗生素世代",
+            "discipline": "临床医学",
+            "evidence": "the deployment of a new generation of drug molecules",
+            "source": "abstract",
+            "confidence": 0.9
+          },
+          {
+            "id": "病原体",
+            "term": "pathogens",
+            "normalized": "病原体",
+            "discipline": "临床医学",
+            "evidence": "the history of clinical deployment of tetracycline drugs and resistance discovery in pathogens",
+            "source": "abstract",
+            "confidence": 0.9
+          }
+        ],
+        "edges": [
+          {
+            "source": "四环素抗生素",
+            "target": "耐药机制",
+            "relation": "is characterized by cycles of resistance",
+            "relation_type": "driven_by",
+            "metadata": {
+              "evidence": "The history of clinical resistance to tetracycline antibiotics is characterized by cycles whereby the deployment of a new generation of drug molecules is quickly followed by the discovery of a new mechanism of resistance",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "抗生素世代",
+            "target": "耐药机制",
+            "relation": "selects for specific",
+            "relation_type": "driven_by",
+            "metadata": {
+              "evidence": "This suggests mechanism-specific selection by each tetracycline generation",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "高通量条形码测序",
+            "target": "大肠杆菌",
+            "relation": "is employed to evaluate",
+            "relation_type": "method_applied_to",
+            "metadata": {
+              "evidence": "We evaluate 24 recombinant Escherichia coli strains expressing tetracycline resistance genes from each mechanism (efflux pumps, ribosomal protection proteins, and enzymatic inactivation) in the context of each tetracycline generation. We employ a high-throughput barcode sequencing protocol that can discriminate between strains in mixed culture and quantify their relative abundances",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "耐药机制",
+            "target": "相对适应性",
+            "relation": "explains intra-mechanism",
+            "relation_type": "inferred_from",
+            "metadata": {
+              "evidence": "but it does explain intra-mechanism relative fitness",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "最小抑菌浓度",
+            "target": "相对适应性",
+            "relation": "explains intra-mechanism",
+            "relation_type": "inferred_from",
+            "metadata": {
+              "evidence": "the minimum inhibitory concentration associated with individual genes is secondary to resistance mechanism for inter-mechanism relative fitness, but it does explain intra-mechanism relative fitness",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "四环素耐药组",
+            "target": "耐药机制",
+            "relation": "is shaped by selection for specific",
+            "relation_type": "driven_by",
+            "metadata": {
+              "evidence": "The tetracycline resistome is shaped by selection for specific resistance mechanisms by each antibiotic generation",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "四环素抗生素",
+            "target": "耐药机制",
+            "relation": "通过药物迭代驱动",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "四环素抗生素的临床应用导致耐药机制的周期性演变",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "耐药机制",
+            "target": "抗生素世代",
+            "relation": "受特定世代选择",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "不同抗生素世代对耐药机制产生特异性选择压力",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "抗生素世代",
+            "target": "临床耐药性",
+            "relation": "需临床医学数据验证",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "需要临床医学提供历史治疗数据以验证世代选择对耐药组演变的驱动模式",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "四环素耐药组",
+            "target": "耐药机制",
+            "relation": "由机制特异性选择形成",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "四环素耐药组的组成结构受特定耐药机制的选择影响",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "耐药机制",
+            "target": "相对适应性",
+            "relation": "通过适应性差异体现",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "耐药基因的相对适应性差异反映机制选择效应",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "相对适应性",
+            "target": "高通量条形码测序",
+            "relation": "需生物学实验量化",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "需要生物学领域开发高通量测序方法以精确量化不同耐药基因的适应性代价",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "高通量条形码测序",
+            "target": "耐药基因",
+            "relation": "量化表达",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "高通量条形码测序技术能够精确量化不同世代四环素药物作用下的耐药基因表达水平",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "耐药基因",
+            "target": "耐药机制",
+            "relation": "决定",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "耐药基因的表达特征直接决定外排泵、核糖体保护蛋白和酶失活等耐药机制的表现形式",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "耐药机制",
+            "target": "四环素耐药组",
+            "relation": "塑造",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "特定耐药机制的选择压力最终塑造四环素耐药组的组成结构",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "抗生素世代",
+            "target": "临床耐药性",
+            "relation": "驱动",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "抗生素世代的更替通过选择压力驱动临床耐药性的演变",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "临床耐药性",
+            "target": "病原体",
+            "relation": "影响",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "临床耐药性变化导致病原体群体中相对适应性的重新分布",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "病原体",
+            "target": "四环素抗生素",
+            "relation": "反馈作用",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "病原体适应性变化反馈作用于四环素抗生素的临床使用效果",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "大肠杆菌",
+            "target": "高通量条形码测序",
+            "relation": "通过模型整合",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "大肠杆菌 通过模型整合 高通量条形码测序",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "高通量条形码测序",
+            "target": "临床耐药性",
+            "relation": "生成数据关联",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "高通量条形码测序 生成数据关联 临床耐药性",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "临床耐药性",
+            "target": "耐药机制",
+            "relation": "预测选择压力",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "临床耐药性 预测选择压力 耐药机制",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "核糖体保护蛋白",
+            "target": "最小抑菌浓度",
+            "relation": "通过指标联用",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "核糖体保护蛋白 通过指标联用 最小抑菌浓度",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "最小抑菌浓度",
+            "target": "相对适应性",
+            "relation": "测量世代差异",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "最小抑菌浓度 测量世代差异 相对适应性",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "相对适应性",
+            "target": "耐药机制",
+            "relation": "验证特异性优势",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "相对适应性 验证特异性优势 耐药机制",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          }
+        ]
+      },
+      "metrics": {
+        "path_consistency": 0.2222222222222222,
+        "coverage": 0.8571428571428571,
+        "bridging_score": 0.20833333333333334,
+        "rao_stirling_diversity": 0.1337,
+        "embedding_bridging": 1.0,
+        "consistency_precision": 0.0,
+        "consistency_recall": 0.0,
+        "consistency_f1": 0.0,
+        "info_novelty": 0.0,
+        "chain_coherence": 0.5592,
+        "atypical_combination": 0.6225,
+        "kg_density": 0.1044,
+        "kg_inverse_modularity": 0.8756,
+        "kg_largest_cc_ratio": 0.8571,
+        "kg_avg_betweenness": 0.0806,
+        "kg_clustering_coefficient": 0.0881,
+        "concept_recall": 0.0,
+        "concept_precision": 0.0,
+        "concept_f1": 0.0,
+        "relation_precision": 0.0,
+        "relation_type_accuracy": 0.0,
+        "evidence_coverage": 0.0,
+        "path_alignment_best": 0.0,
+        "path_alignment_mean": 0.0
+      }
+    },
+    "raw": "/* stage1: struct */\n/* concepts round1 */\n```json\n{\n  \"meta\": {\n    \"title\": \"The tetracycline resistome is shaped by selection for specific resistance mechanisms by each antibiotic generation\",\n    \"primary\": \"生物学\",\n    \"secondary_list\": [\"生物学\", \"临床医学\"]\n  },\n  \"概念\": {\n    \"主学科\": [\n      {\n        \"term\": \"tetracycline antibiotics\",\n        \"normalized\": \"四环素抗生素\",\n        \"std_label\": null,\n        \"evidence\": \"The history of clinical resistance to tetracycline antibiotics is characterized by cycles\",\n        \"source\": \"abstract\",\n        \"confidence\": 0.9\n      },\n      {\n        \"term\": \"resistance mechanisms\",\n        \"normalized\": \"耐药机制\",\n        \"std_label\": null,\n        \"evidence\": \"the discovery of a new mechanism of resistance\",\n        \"source\": \"abstract\",\n        \"confidence\": 0.9\n      },\n      {\n        \"term\": \"efflux pumps\",\n        \"normalized\": \"外排泵\",\n        \"std_label\": null,\n        \"evidence\": \"efflux pumps, ribosomal protection proteins, and enzymatic inactivation\",\n        \"source\": \"abstract\",\n        \"confidence\": 0.9\n      },\n      {\n        \"term\": \"ribosomal protection proteins\",\n        \"normalized\": \"核糖体保护蛋白\",\n        \"std_label\": null,\n        \"evidence\": \"efflux pumps, ribosomal protection proteins, and enzymatic inactivation\",\n        \"source\": \"abstract\",\n        \"confidence\": 0.9\n      },\n      {\n        \"term\": \"enzymatic inactivation\",\n        \"normalized\": \"酶失活\",\n        \"std_label\": null,\n        \"evidence\": \"efflux pumps, ribosomal protection proteins, and enzymatic inactivation\",\n        \"source\": \"abstract\",\n        \"confidence\": 0.9\n      },\n      {\n        \"term\": \"high-throughput barcode sequencing\",\n        \"normalized\": \"高通量条形码测序\",\n        \"std_label\": null,\n        \"evidence\": \"We employ a high-throughput barcode sequencing protocol\",\n        \"source\": \"abstract\",\n        \"confidence\": 0.9\n      },\n      {\n        \"term\": \"minimum inhibitory concentration\",\n        \"normalized\": \"最小抑菌浓度\",\n        \"std_label\": null,\n        \"evidence\": \"the minimum inhibitory concentration associated with individual genes\",\n        \"source\": \"abstract\",\n        \"confidence\": 0.9\n      },\n      {\n        \"term\": \"tetracycline resistome\",\n        \"normalized\": \"四环素耐药组\",\n        \"std_label\": null,\n        \"evidence\": \"The tetracycline resistome is shaped by selection for specific resistance mechanisms\",\n        \"source\": \"abstract\",\n        \"confidence\": 0.9\n      }\n    ],\n    \"辅学科\": {\n      \"生物学\": [\n        {\n          \"term\": \"Escherichia coli\",\n          \"normalized\": \"大肠杆菌\",\n          \"std_label\": null,\n          \"evidence\": \"24 recombinant Escherichia coli strains expressing tetracycline resistance genes\",\n          \"source\": \"abstract\",\n          \"confidence\": 0.9\n        },\n        {\n          \"term\": \"resistance genes\",\n          \"normalized\": \"耐药基因\",\n          \"std_label\": null,\n          \"evidence\": \"24 recombinant Escherichia coli strains expressing tetracycline resistance genes\",\n          \"source\": \"abstract\",\n          \"confidence\": 0.9\n        },\n        {\n          \"term\": \"relative fitness\",\n          \"normalized\": \"相对适应性\",\n          \"std_label\": null,\n          \"evidence\": \"but it does explain intra-mechanism relative fitness\",\n          \"source\": \"abstract\",\n          \"confidence\": 0.9\n        }\n      ],\n      \"临床医学\": [\n        {\n          \"term\": \"clinical resistance\",\n          \"normalized\": \"临床耐药性\",\n          \"std_label\": null,\n          \"evidence\": \"The history of clinical resistance to tetracycline antibiotics\",\n          \"source\": \"abstract\",\n          \"confidence\": 0.9\n        },\n        {\n          \"term\": \"antibiotic generations\",\n          \"normalized\": \"抗生素世代\",\n          \"std_label\": null,\n          \"evidence\": \"the deployment of a new generation of drug molecules\",\n          \"source\": \"abstract\",\n          \"confidence\": 0.9\n        },\n        {\n          \"term\": \"pathogens\",\n          \"normalized\": \"病原体\",\n          \"std_label\": null,\n          \"evidence\": \"the history of clinical deployment of tetracycline drugs and resistance discovery in pathogens\",\n          \"source\": \"abstract\",\n          \"confidence\": 0.9\n        }\n      ]\n    }\n  }\n}\n```\n\n/* concepts round2 (supplement) */\n{\n  \"补充概念\": {\n    \"主学科\": [\n      \"evolutionary dynamics\",\n      \"mixed culture\",\n      \"relative abundances\",\n      \"clinical deployment\",\n      \"resistance discovery\"\n    ],\n    \"辅学科\": {\n      \"临床医学\": [\n        \"clinical deployment\",\n        \"resistance discovery\"\n      ]\n    }\n  }\n}\n\n/* relations */\n{\n  \"跨学科关系\": [\n    {\n      \"head\": \"tetracycline antibiotics\",\n      \"tail\": \"resistance mechanisms\",\n      \"relation\": \"is characterized by cycles of resistance\",\n      \"relation_type\": \"driven_by\",\n      \"direction\": \"->\",\n      \"assumptions\": [],\n      \"evidence\": \"The history of clinical resistance to tetracycline antibiotics is characterized by cycles whereby the deployment of a new generation of drug molecules is quickly followed by the discovery of a new mechanism of resistance\",\n      \"source\": \"abstract\",\n      \"confidence\": 0.9\n    },\n    {\n      \"head\": \"antibiotic generations\",\n      \"tail\": \"resistance mechanisms\",\n      \"relation\": \"selects for specific\",\n      \"relation_type\": \"driven_by\",\n      \"direction\": \"->\",\n      \"assumptions\": [],\n      \"evidence\": \"This suggests mechanism-specific selection by each tetracycline generation\",\n      \"source\": \"abstract\",\n      \"confidence\": 0.9\n    },\n    {\n      \"head\": \"high-throughput barcode sequencing\",\n      \"tail\": \"Escherichia coli\",\n      \"relation\": \"is employed to evaluate\",\n      \"relation_type\": \"method_applied_to\",\n      \"direction\": \"->\",\n      \"assumptions\": [],\n      \"evidence\": \"We evaluate 24 recombinant Escherichia coli strains expressing tetracycline resistance genes from each mechanism (efflux pumps, ribosomal protection proteins, and enzymatic inactivation) in the context of each tetracycline generation. We employ a high-throughput barcode sequencing protocol that can discriminate between strains in mixed culture and quantify their relative abundances\",\n      \"source\": \"abstract\",\n      \"confidence\": 0.9\n    },\n    {\n      \"head\": \"resistance mechanisms\",\n      \"tail\": \"relative fitness\",\n      \"relation\": \"explains intra-mechanism\",\n      \"relation_type\": \"inferred_from\",\n      \"direction\": \"->\",\n      \"assumptions\": [],\n      \"evidence\": \"but it does explain intra-mechanism relative fitness\",\n      \"source\": \"abstract\",\n      \"confidence\": 0.9\n    },\n    {\n      \"head\": \"minimum inhibitory concentration\",\n      \"tail\": \"relative fitness\",\n      \"relation\": \"explains intra-mechanism\",\n      \"relation_type\": \"inferred_from\",\n      \"direction\": \"->\",\n      \"assumptions\": [],\n      \"evidence\": \"the minimum inhibitory concentration associated with individual genes is secondary to resistance mechanism for inter-mechanism relative fitness, but it does explain intra-mechanism relative fitness\",\n      \"source\": \"abstract\",\n      \"confidence\": 0.9\n    },\n    {\n      \"head\": \"tetracycline resistome\",\n      \"tail\": \"resistance mechanisms\",\n      \"relation\": \"is shaped by selection for specific\",\n      \"relation_type\": \"driven_by\",\n      \"direction\": \"->\",\n      \"assumptions\": [],\n      \"evidence\": \"The tetracycline resistome is shaped by selection for specific resistance mechanisms by each antibiotic generation\",\n      \"source\": \"abstract\",\n      \"confidence\": 0.9\n    }\n  ]\n}\n\n/* stage2: query */\n{\n  \"按辅助学科分类\": {\n    \"生物学\": {\n      \"概念\": [\"大肠杆菌\", \"耐药基因\", \"相对适应性\", \"高通量条形码测序\"],\n      \"关系\": [2, 3, 4],\n      \"rationale\": \"生物学通过模型生物实验和高通量测序技术，为耐药机制研究提供数据支持和验证平台\"\n    },\n    \"临床医学\": {\n      \"概念\": [\"临床耐药性\", \"抗生素世代\", \"病原体\"],\n      \"关系\": [0, 1, 5],\n      \"rationale\": \"临床医学从治疗实践角度揭示抗生素世代更替与耐药性演变的动态关系\"\n    }\n  },\n  \"查询\": {\n    \"一级\": \"四环素抗生素的耐药机制如何随药物迭代发生特异性演变\",\n    \"二级\": [\n      \"结合高通量测序技术分析不同世代四环素药物的耐药基因表达特征\",\n      \"从临床治疗史角度考察抗生素迭代与病原体适应性变化的关系\"\n    ],\n    \"三级\": [\n      \"如何整合大肠杆菌模型的高通量测序数据与临床耐药性监测数据，建立机制选择压力预测模型\",\n      \"怎样通过最小抑菌浓度与相对适应性的跨学科指标联用，验证核糖体保护蛋白的世代特异性优势\"\n    ]\n  }\n}\n\n/* stage3: hypothesis L1 */\n{\n  \"假设\": {\n    \"一级\": [\n      [\n        {\n          \"step\": 1,\n          \"head\": \"四环素抗生素\",\n          \"relation\": \"通过药物迭代驱动\",\n          \"tail\": \"耐药机制\",\n          \"claim\": \"四环素抗生素的临床应用导致耐药机制的周期性演变\"\n        },\n        {\n          \"step\": 2,\n          \"head\": \"耐药机制\",\n          \"relation\": \"受特定世代选择\",\n          \"tail\": \"抗生素世代\",\n          \"claim\": \"不同抗生素世代对耐药机制产生特异性选择压力\"\n        },\n        {\n          \"step\": 3,\n          \"head\": \"抗生素世代\",\n          \"relation\": \"需临床医学数据验证\",\n          \"tail\": \"临床耐药性\",\n          \"claim\": \"需要临床医学提供历史治疗数据以验证世代选择对耐药组演变的驱动模式\"\n        }\n      ],\n      [\n        {\n          \"step\": 1,\n          \"head\": \"四环素耐药组\",\n          \"relation\": \"由机制特异性选择形成\",\n          \"tail\": \"耐药机制\",\n          \"claim\": \"四环素耐药组的组成结构受特定耐药机制的选择影响\"\n        },\n        {\n          \"step\": 2,\n          \"head\": \"耐药机制\",\n          \"relation\": \"通过适应性差异体现\",\n          \"tail\": \"相对适应性\",\n          \"claim\": \"耐药基因的相对适应性差异反映机制选择效应\"\n        },\n        {\n          \"step\": 3,\n          \"head\": \"相对适应性\",\n          \"relation\": \"需生物学实验量化\",\n          \"tail\": \"高通量条形码测序\",\n          \"claim\": \"需要生物学领域开发高通量测序方法以精确量化不同耐药基因的适应性代价\"\n        }\n      ]\n    ],\n    \"一级总结\": [\n      \"四环素耐药演变存在主学科难以解释的世代选择特异性，需临床医学提供历史治疗数据验证选择压力与耐药组演变的关联\",\n      \"耐药基因适应性差异的精确测量是生物学当前瓶颈，需开发新型高通量测序技术实现跨机制适应性的系统量化\"\n    ]\n  }\n}\n\n/* stage3: hypothesis L2 */\n{\n  \"假设\": {\n    \"二级\": [\n      [\n        {\n          \"head\": \"高通量条形码测序\",\n          \"tail\": \"耐药基因\",\n          \"relation\": \"量化表达\",\n          \"claim\": \"高通量条形码测序技术能够精确量化不同世代四环素药物作用下的耐药基因表达水平\"\n        },\n        {\n          \"head\": \"耐药基因\",\n          \"tail\": \"耐药机制\",\n          \"relation\": \"决定\",\n          \"claim\": \"耐药基因的表达特征直接决定外排泵、核糖体保护蛋白和酶失活等耐药机制的表现形式\"\n        },\n        {\n          \"head\": \"耐药机制\",\n          \"tail\": \"四环素耐药组\",\n          \"relation\": \"塑造\",\n          \"claim\": \"特定耐药机制的选择压力最终塑造四环素耐药组的组成结构\"\n        }\n      ],\n      [\n        {\n          \"head\": \"抗生素世代\",\n          \"tail\": \"临床耐药性\",\n          \"relation\": \"驱动\",\n          \"claim\": \"抗生素世代的更替通过选择压力驱动临床耐药性的演变\"\n        },\n        {\n          \"head\": \"临床耐药性\",\n          \"tail\": \"病原体\",\n          \"relation\": \"影响\",\n          \"claim\": \"临床耐药性变化导致病原体群体中相对适应性的重新分布\"\n        },\n        {\n          \"head\": \"病原体\",\n          \"tail\": \"四环素抗生素\",\n          \"relation\": \"反馈作用\",\n          \"claim\": \"病原体适应性变化反馈作用于四环素抗生素的临床使用效果\"\n        }\n      ]\n    ],\n    \"二级总结\": [\n      \"通过高通量测序技术解析耐药基因表达特征，建立从基因表达到耐药机制选择再到耐药组演变的完整分析链条\",\n      \"基于抗生素治疗史揭示临床选择压力如何通过耐药性变化影响病原体适应性，进而反馈至药物迭代过程\"\n    ]\n  }\n}\n\n/* stage3: hypothesis L3 */\n{\n  \"假设\": {\n    \"三级\": [\n      [\n        {\n          \"head\": \"大肠杆菌\",\n          \"tail\": \"高通量条形码测序\",\n          \"relation\": \"通过模型整合\"\n        },\n        {\n          \"head\": \"高通量条形码测序\",\n          \"tail\": \"临床耐药性\",\n          \"relation\": \"生成数据关联\"\n        },\n        {\n          \"head\": \"临床耐药性\",\n          \"tail\": \"耐药机制\",\n          \"relation\": \"预测选择压力\"\n        }\n      ],\n      [\n        {\n          \"head\": \"核糖体保护蛋白\",\n          \"tail\": \"最小抑菌浓度\",\n          \"relation\": \"通过指标联用\"\n        },\n        {\n          \"head\": \"最小抑菌浓度\",\n          \"tail\": \"相对适应性\",\n          \"relation\": \"测量世代差异\"\n        },\n        {\n          \"head\": \"相对适应性\",\n          \"tail\": \"耐药机制\",\n          \"relation\": \"验证特异性优势\"\n        }\n      ]\n    ],\n    \"三级总结\": [\n      \"通过大肠杆菌模型的高通量测序数据与临床耐药性监测数据的整合，建立耐药机制选择压力的预测模型\",\n      \"通过最小抑菌浓度与相对适应性的跨学科指标联用，验证核糖体保护蛋白在抗生素世代中的特异性优势\"\n    ]\n  }\n}",
+    "ok": true,
+    "error": ""
+  },
+  {
+    "title": "Quasi Fe MIL-53 nanozyme inducing ferroptosis and immunogenic cell death for cancer immunotherapy",
+    "abstract": "Nanozymes offer diverse therapeutic potentials for cancer treatment which is dependent on the development of nanomaterials. Quasi-metal-organic framework is a class of metal-organic framework-derived nanomaterials with a transition state from metal-organic frameworks towards metal oxide featuring porous structure and high activity. Herein an iron-based quasi-metal-organic framework nanozyme Q-MIL-53(Fe) is reported via a controlled deligandation strategy, exhibiting enhanced peroxidase-/catalase-mimic activity and glutathione depletion capacity, whose underlying mechanisms are studied via density functional theory calculations. Q-MIL-53(Fe) demonstrates biocompatibility and superior antitumor efficacy compared to pristine MIL-53(Fe). It can activate antitumor immune response by inducing ferroptosis and immunogenic cell death, promoting dendritic cell maturation and T lymphocytes infiltration. Furthermore, a combination of Q-MIL-53(Fe) and programmed cell death protein 1 antibody amplifies cancer immunotherapy. This study validates the antitumor activity of quasi-metal-organic frameworks and its immunotherapy induction potential. It would broaden the application of quasi-metal-organic frameworks and open avenues for developing antitumor nanozymes.",
+    "pdf_url": "",
+    "primary": "化学",
+    "secondary": "化学, 材料科学, 临床医学",
+    "secondary_list": [
+      "化学",
+      "材料科学",
+      "临床医学"
+    ],
+    "introduction": "",
+    "parsed": {
+      "meta": {
+        "title": "Quasi Fe MIL-53 nanozyme inducing ferroptosis and immunogenic cell death for cancer immunotherapy",
+        "primary": "化学",
+        "secondary_list": [
+          "化学",
+          "材料科学",
+          "临床医学"
+        ]
+      },
+      "概念": {
+        "主学科": [
+          {
+            "term": "Nanozymes",
+            "normalized": "纳米酶",
+            "std_label": null,
+            "evidence": "Nanozymes offer diverse therapeutic potentials for cancer treatment",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "term": "Quasi-metal-organic framework",
+            "normalized": "准金属有机框架",
+            "std_label": null,
+            "evidence": "Quasi-metal-organic framework is a class of metal-organic framework-derived nanomaterials",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "term": "Q-MIL-53(Fe)",
+            "normalized": null,
+            "std_label": null,
+            "evidence": "Herein an iron-based quasi-metal-organic framework nanozyme Q-MIL-53(Fe) is reported",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "term": "peroxidase-/catalase-mimic activity",
+            "normalized": "过氧化物酶/过氧化氢酶模拟活性",
+            "std_label": null,
+            "evidence": "exhibiting enhanced peroxidase-/catalase-mimic activity and glutathione depletion capacity",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "term": "glutathione depletion capacity",
+            "normalized": "谷胱甘肽耗竭能力",
+            "std_label": null,
+            "evidence": "exhibiting enhanced peroxidase-/catalase-mimic activity and glutathione depletion capacity",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "term": "density functional theory calculations",
+            "normalized": "密度泛函理论计算",
+            "std_label": null,
+            "evidence": "whose underlying mechanisms are studied via density functional theory calculations",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "term": "MIL-53(Fe)",
+            "normalized": null,
+            "std_label": null,
+            "evidence": "Q-MIL-53(Fe) demonstrates biocompatibility and superior antitumor efficacy compared to pristine MIL-53(Fe)",
+            "source": "abstract",
+            "confidence": 1.0
+          }
+        ],
+        "辅学科": {
+          "材料科学": [
+            {
+              "term": "nanomaterials",
+              "normalized": "纳米材料",
+              "std_label": null,
+              "evidence": "Quasi-metal-organic framework is a class of metal-organic framework-derived nanomaterials",
+              "source": "abstract",
+              "confidence": 1.0
+            },
+            {
+              "term": "porous structure",
+              "normalized": "多孔结构",
+              "std_label": null,
+              "evidence": "with a transition state from metal-organic frameworks towards metal oxide featuring porous structure and high activity",
+              "source": "abstract",
+              "confidence": 1.0
+            },
+            {
+              "term": "controlled deligandation strategy",
+              "normalized": "控制去配体策略",
+              "std_label": null,
+              "evidence": "Herein an iron-based quasi-metal-organic framework nanozyme Q-MIL-53(Fe) is reported via a controlled deligandation strategy",
+              "source": "abstract",
+              "confidence": 1.0
+            }
+          ],
+          "临床医学": [
+            {
+              "term": "ferroptosis",
+              "normalized": "铁死亡",
+              "std_label": null,
+              "evidence": "It can activate antitumor immune response by inducing ferroptosis and immunogenic cell death",
+              "source": "abstract",
+              "confidence": 1.0
+            },
+            {
+              "term": "immunogenic cell death",
+              "normalized": "免疫原性细胞死亡",
+              "std_label": null,
+              "evidence": "It can activate antitumor immune response by inducing ferroptosis and immunogenic cell death",
+              "source": "abstract",
+              "confidence": 1.0
+            },
+            {
+              "term": "dendritic cell maturation",
+              "normalized": "树突状细胞成熟",
+              "std_label": null,
+              "evidence": "promoting dendritic cell maturation and T lymphocytes infiltration",
+              "source": "abstract",
+              "confidence": 1.0
+            },
+            {
+              "term": "T lymphocytes infiltration",
+              "normalized": "T淋巴细胞浸润",
+              "std_label": null,
+              "evidence": "promoting dendritic cell maturation and T lymphocytes infiltration",
+              "source": "abstract",
+              "confidence": 1.0
+            },
+            {
+              "term": "programmed cell death protein 1 antibody",
+              "normalized": "程序性细胞死亡蛋白1抗体",
+              "std_label": null,
+              "evidence": "a combination of Q-MIL-53(Fe) and programmed cell death protein 1 antibody amplifies cancer immunotherapy",
+              "source": "abstract",
+              "confidence": 1.0
+            }
+          ]
+        }
+      },
+      "跨学科关系": [
+        {
+          "head": "Q-MIL-53(Fe)",
+          "relation": "induces",
+          "relation_type": "method_applied_to",
+          "relation_type_norm": "method_applied_to",
+          "relation_type_raw": "method_applied_to",
+          "tail": "ferroptosis",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "It can activate antitumor immune response by inducing ferroptosis and immunogenic cell death",
+          "source": "abstract",
+          "confidence": 1.0
+        },
+        {
+          "head": "Q-MIL-53(Fe)",
+          "relation": "induces",
+          "relation_type": "method_applied_to",
+          "relation_type_norm": "method_applied_to",
+          "relation_type_raw": "method_applied_to",
+          "tail": "immunogenic cell death",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "It can activate antitumor immune response by inducing ferroptosis and immunogenic cell death",
+          "source": "abstract",
+          "confidence": 1.0
+        },
+        {
+          "head": "Q-MIL-53(Fe)",
+          "relation": "promotes",
+          "relation_type": "method_applied_to",
+          "relation_type_norm": "method_applied_to",
+          "relation_type_raw": "method_applied_to",
+          "tail": "dendritic cell maturation",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "promoting dendritic cell maturation and T lymphocytes infiltration",
+          "source": "abstract",
+          "confidence": 1.0
+        },
+        {
+          "head": "Q-MIL-53(Fe)",
+          "relation": "promotes",
+          "relation_type": "method_applied_to",
+          "relation_type_norm": "method_applied_to",
+          "relation_type_raw": "method_applied_to",
+          "tail": "T lymphocytes infiltration",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "promoting dendritic cell maturation and T lymphocytes infiltration",
+          "source": "abstract",
+          "confidence": 1.0
+        },
+        {
+          "head": "Q-MIL-53(Fe)",
+          "relation": "combines with",
+          "relation_type": "method_applied_to",
+          "relation_type_norm": "method_applied_to",
+          "relation_type_raw": "method_applied_to",
+          "tail": "programmed cell death protein 1 antibody",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "a combination of Q-MIL-53(Fe) and programmed cell death protein 1 antibody amplifies cancer immunotherapy",
+          "source": "abstract",
+          "confidence": 1.0
+        },
+        {
+          "head": "Q-MIL-53(Fe)",
+          "relation": "exhibits",
+          "relation_type": "method_applied_to",
+          "relation_type_norm": "method_applied_to",
+          "relation_type_raw": "method_applied_to",
+          "tail": "peroxidase-/catalase-mimic activity",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "exhibiting enhanced peroxidase-/catalase-mimic activity and glutathione depletion capacity",
+          "source": "abstract",
+          "confidence": 1.0
+        },
+        {
+          "head": "Q-MIL-53(Fe)",
+          "relation": "exhibits",
+          "relation_type": "method_applied_to",
+          "relation_type_norm": "method_applied_to",
+          "relation_type_raw": "method_applied_to",
+          "tail": "glutathione depletion capacity",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "exhibiting enhanced peroxidase-/catalase-mimic activity and glutathione depletion capacity",
+          "source": "abstract",
+          "confidence": 1.0
+        },
+        {
+          "head": "density functional theory calculations",
+          "relation": "studies mechanisms of",
+          "relation_type": "method_applied_to",
+          "relation_type_norm": "method_applied_to",
+          "relation_type_raw": "method_applied_to",
+          "tail": "Q-MIL-53(Fe)",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "whose underlying mechanisms are studied via density functional theory calculations",
+          "source": "abstract",
+          "confidence": 1.0
+        },
+        {
+          "head": "controlled deligandation strategy",
+          "relation": "used to synthesize",
+          "relation_type": "method_applied_to",
+          "relation_type_norm": "method_applied_to",
+          "relation_type_raw": "method_applied_to",
+          "tail": "Q-MIL-53(Fe)",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "Herein an iron-based quasi-metal-organic framework nanozyme Q-MIL-53(Fe) is reported via a controlled deligandation strategy",
+          "source": "abstract",
+          "confidence": 1.0
+        }
+      ],
+      "按辅助学科分类": {
+        "材料科学": {
+          "概念": [
+            "纳米材料",
+            "多孔结构",
+            "控制去配体策略"
+          ],
+          "关系": [
+            8
+          ],
+          "rationale": "通过纳米材料设计与合成方法学，构建具有特定功能的准金属有机框架结构"
+        },
+        "临床医学": {
+          "概念": [
+            "铁死亡",
+            "免疫原性细胞死亡",
+            "树突状细胞成熟",
+            "T淋巴细胞浸润",
+            "程序性细胞死亡蛋白1抗体"
+          ],
+          "关系": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "rationale": "验证纳米酶在肿瘤免疫治疗中诱导细胞死亡通路激活及免疫应答增强的生物学效应"
+        }
+      },
+      "查询": {
+        "一级": "如何设计具有高效催化活性的纳米酶用于肿瘤治疗",
+        "二级": [
+          "如何结合纳米材料工程优化纳米酶的催化活性与稳定性",
+          "如何评估纳米酶诱导的细胞死亡机制对肿瘤免疫微环境的影响"
+        ],
+        "三级": [
+          "如何通过控制去配体策略构建多孔纳米酶材料，并联合密度泛函理论计算验证其催化机制",
+          "如何整合铁死亡诱导与免疫检查点阻断疗法，建立协同抗肿瘤免疫应答的评估体系"
+        ]
+      },
+      "假设": {
+        "一级": [
+          [
+            {
+              "step": 1,
+              "head": "准金属有机框架",
+              "relation": "通过",
+              "tail": "控制去配体策略",
+              "claim": "准金属有机框架通过控制去配体策略合成纳米酶"
+            },
+            {
+              "step": 2,
+              "head": "控制去配体策略",
+              "relation": "影响",
+              "tail": "多孔结构",
+              "claim": "控制去配体策略影响纳米酶的多孔结构"
+            },
+            {
+              "step": 3,
+              "head": "多孔结构",
+              "relation": "需要材料科学优化以实现",
+              "tail": "高效催化活性",
+              "claim": "纳米酶的多孔结构需要材料科学优化以实现高效催化活性"
+            }
+          ],
+          [
+            {
+              "step": 1,
+              "head": "纳米酶",
+              "relation": "具有",
+              "tail": "过氧化物酶/过氧化氢酶模拟活性",
+              "claim": "纳米酶具有过氧化物酶/过氧化氢酶模拟活性"
+            },
+            {
+              "step": 2,
+              "head": "过氧化物酶/过氧化氢酶模拟活性",
+              "relation": "导致",
+              "tail": "铁死亡",
+              "claim": "过氧化物酶/过氧化氢酶模拟活性导致铁死亡"
+            },
+            {
+              "step": 3,
+              "head": "铁死亡",
+              "relation": "需要临床医学验证其对",
+              "tail": "肿瘤免疫微环境的影响",
+              "claim": "铁死亡需要临床医学验证其对肿瘤免疫微环境的影响"
+            }
+          ],
+          [
+            {
+              "step": 1,
+              "head": "纳米酶",
+              "relation": "结合",
+              "tail": "程序性细胞死亡蛋白1抗体",
+              "claim": "纳米酶结合程序性细胞死亡蛋白1抗体"
+            },
+            {
+              "step": 2,
+              "head": "程序性细胞死亡蛋白1抗体",
+              "relation": "增强",
+              "tail": "免疫原性细胞死亡",
+              "claim": "程序性细胞死亡蛋白1抗体增强免疫原性细胞死亡"
+            },
+            {
+              "step": 3,
+              "head": "免疫原性细胞死亡",
+              "relation": "需要临床医学评估其与",
+              "tail": "淋巴细胞浸润的协同效应",
+              "claim": "免疫原性细胞死亡需要临床医学评估其与淋巴细胞浸润的协同效应"
+            }
+          ]
+        ],
+        "二级": [
+          [
+            {
+              "step": 1,
+              "head": "纳米材料",
+              "relation": "通过控制去配体策略构建",
+              "tail": "多孔结构",
+              "claim": "纳米材料通过控制去配体策略构建多孔结构"
+            },
+            {
+              "step": 2,
+              "head": "多孔结构",
+              "relation": "增强催化活性与稳定性",
+              "tail": "准金属有机框架",
+              "claim": "多孔结构增强准金属有机框架的催化活性与稳定性"
+            },
+            {
+              "step": 3,
+              "head": "准金属有机框架",
+              "relation": "优化为高效催化体系",
+              "tail": "纳米酶",
+              "claim": "准金属有机框架优化为高效催化体系的纳米酶"
+            }
+          ],
+          [
+            {
+              "step": 1,
+              "head": "铁死亡",
+              "relation": "通过纳米酶诱导",
+              "tail": "免疫原性细胞死亡",
+              "claim": "铁死亡通过纳米酶诱导免疫原性细胞死亡"
+            },
+            {
+              "step": 2,
+              "head": "免疫原性细胞死亡",
+              "relation": "促进免疫微环境激活",
+              "tail": "树突状细胞成熟",
+              "claim": "免疫原性细胞死亡促进树突状细胞成熟以激活免疫微环境"
+            },
+            {
+              "step": 3,
+              "head": "树突状细胞成熟",
+              "relation": "增强抗肿瘤免疫应答",
+              "tail": "淋巴细胞浸润",
+              "claim": "树突状细胞成熟增强淋巴细胞浸润的抗肿瘤免疫应答"
+            }
+          ]
+        ],
+        "三级": [
+          [
+            {
+              "step": 1,
+              "head": "控制去配体策略",
+              "relation": "用于合成",
+              "tail": "准金属有机框架",
+              "claim": "控制去配体策略能够合成具有特定结构的准金属有机框架材料"
+            },
+            {
+              "step": 2,
+              "head": "准金属有机框架",
+              "relation": "形成",
+              "tail": "多孔结构",
+              "claim": "准金属有机框架通过结构调控形成具有催化活性的多孔结构"
+            },
+            {
+              "step": 3,
+              "head": "多孔结构",
+              "relation": "通过验证",
+              "tail": "密度泛函理论计算",
+              "claim": "多孔结构的催化活性机制通过密度泛函理论计算进行验证"
+            }
+          ],
+          [
+            {
+              "step": 1,
+              "head": "铁死亡",
+              "relation": "协同诱导",
+              "tail": "免疫原性细胞死亡",
+              "claim": "铁死亡与免疫原性细胞死亡协同作用激活抗肿瘤免疫应答"
+            },
+            {
+              "step": 2,
+              "head": "免疫原性细胞死亡",
+              "relation": "促进",
+              "tail": "树突状细胞成熟",
+              "claim": "免疫原性细胞死亡促进树突状细胞成熟以增强抗原呈递"
+            },
+            {
+              "step": 3,
+              "head": "树突状细胞成熟",
+              "relation": "联合增强",
+              "tail": "程序性细胞死亡蛋白1抗体",
+              "claim": "树突状细胞成熟与程序性细胞死亡蛋白1抗体联合增强淋巴细胞浸润效果"
+            }
+          ]
+        ],
+        "一级总结": [
+          "化学领域通过控制去配体策略合成纳米酶，其多孔结构需要材料科学优化以实现高效催化活性",
+          "纳米酶的催化活性诱导铁死亡，需要临床医学验证其对肿瘤免疫微环境的影响",
+          "纳米酶结合免疫检查点阻断疗法增强免疫原性细胞死亡，需要临床医学评估其与淋巴细胞浸润的协同效应"
+        ],
+        "二级总结": [
+          "材料科学通过纳米材料的多孔结构设计优化准金属有机框架，进而提升纳米酶的催化性能",
+          "临床医学通过铁死亡与免疫原性细胞死亡的联动机制，将纳米酶效应转化为肿瘤免疫微环境的激活信号"
+        ],
+        "三级总结": [
+          "通过材料合成策略构建多孔纳米酶，结合理论计算验证其催化机制，形成材料设计与机理研究的闭环验证",
+          "整合铁死亡与免疫检查点阻断的协同作用机制，通过免疫细胞激活与细胞浸润建立免疫治疗评估体系"
+        ]
+      },
+      "graph": {
+        "nodes": [
+          {
+            "id": "纳米酶",
+            "term": "Nanozymes",
+            "normalized": "纳米酶",
+            "discipline": "化学",
+            "evidence": "Nanozymes offer diverse therapeutic potentials for cancer treatment",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "id": "准金属有机框架",
+            "term": "Quasi-metal-organic framework",
+            "normalized": "准金属有机框架",
+            "discipline": "化学",
+            "evidence": "Quasi-metal-organic framework is a class of metal-organic framework-derived nanomaterials",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "id": "Q-MIL-53(Fe)",
+            "term": "Q-MIL-53(Fe)",
+            "normalized": "Q-MIL-53(Fe)",
+            "discipline": "化学",
+            "evidence": "Herein an iron-based quasi-metal-organic framework nanozyme Q-MIL-53(Fe) is reported",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "id": "过氧化物酶/过氧化氢酶模拟活性",
+            "term": "peroxidase-/catalase-mimic activity",
+            "normalized": "过氧化物酶/过氧化氢酶模拟活性",
+            "discipline": "化学",
+            "evidence": "exhibiting enhanced peroxidase-/catalase-mimic activity and glutathione depletion capacity",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "id": "谷胱甘肽耗竭能力",
+            "term": "glutathione depletion capacity",
+            "normalized": "谷胱甘肽耗竭能力",
+            "discipline": "化学",
+            "evidence": "exhibiting enhanced peroxidase-/catalase-mimic activity and glutathione depletion capacity",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "id": "密度泛函理论计算",
+            "term": "density functional theory calculations",
+            "normalized": "密度泛函理论计算",
+            "discipline": "化学",
+            "evidence": "whose underlying mechanisms are studied via density functional theory calculations",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "id": "MIL-53(Fe)",
+            "term": "MIL-53(Fe)",
+            "normalized": "MIL-53(Fe)",
+            "discipline": "化学",
+            "evidence": "Q-MIL-53(Fe) demonstrates biocompatibility and superior antitumor efficacy compared to pristine MIL-53(Fe)",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "id": "纳米材料",
+            "term": "nanomaterials",
+            "normalized": "纳米材料",
+            "discipline": "材料科学",
+            "evidence": "Quasi-metal-organic framework is a class of metal-organic framework-derived nanomaterials",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "id": "多孔结构",
+            "term": "porous structure",
+            "normalized": "多孔结构",
+            "discipline": "材料科学",
+            "evidence": "with a transition state from metal-organic frameworks towards metal oxide featuring porous structure and high activity",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "id": "控制去配体策略",
+            "term": "controlled deligandation strategy",
+            "normalized": "控制去配体策略",
+            "discipline": "材料科学",
+            "evidence": "Herein an iron-based quasi-metal-organic framework nanozyme Q-MIL-53(Fe) is reported via a controlled deligandation strategy",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "id": "铁死亡",
+            "term": "ferroptosis",
+            "normalized": "铁死亡",
+            "discipline": "临床医学",
+            "evidence": "It can activate antitumor immune response by inducing ferroptosis and immunogenic cell death",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "id": "免疫原性细胞死亡",
+            "term": "immunogenic cell death",
+            "normalized": "免疫原性细胞死亡",
+            "discipline": "临床医学",
+            "evidence": "It can activate antitumor immune response by inducing ferroptosis and immunogenic cell death",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "id": "树突状细胞成熟",
+            "term": "dendritic cell maturation",
+            "normalized": "树突状细胞成熟",
+            "discipline": "临床医学",
+            "evidence": "promoting dendritic cell maturation and T lymphocytes infiltration",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "id": "T淋巴细胞浸润",
+            "term": "T lymphocytes infiltration",
+            "normalized": "T淋巴细胞浸润",
+            "discipline": "临床医学",
+            "evidence": "promoting dendritic cell maturation and T lymphocytes infiltration",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "id": "程序性细胞死亡蛋白1抗体",
+            "term": "programmed cell death protein 1 antibody",
+            "normalized": "程序性细胞死亡蛋白1抗体",
+            "discipline": "临床医学",
+            "evidence": "a combination of Q-MIL-53(Fe) and programmed cell death protein 1 antibody amplifies cancer immunotherapy",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "id": "高效催化活性",
+            "term": "高效催化活性",
+            "normalized": "高效催化活性",
+            "discipline": "hypothesis_inferred",
+            "evidence": "",
+            "source": "hypothesis_inferred",
+            "confidence": 0.8
+          },
+          {
+            "id": "肿瘤免疫微环境的影响",
+            "term": "肿瘤免疫微环境的影响",
+            "normalized": "肿瘤免疫微环境的影响",
+            "discipline": "hypothesis_inferred",
+            "evidence": "",
+            "source": "hypothesis_inferred",
+            "confidence": 0.8
+          },
+          {
+            "id": "淋巴细胞浸润的协同效应",
+            "term": "淋巴细胞浸润的协同效应",
+            "normalized": "淋巴细胞浸润的协同效应",
+            "discipline": "hypothesis_inferred",
+            "evidence": "",
+            "source": "hypothesis_inferred",
+            "confidence": 0.8
+          },
+          {
+            "id": "淋巴细胞浸润",
+            "term": "淋巴细胞浸润",
+            "normalized": "淋巴细胞浸润",
+            "discipline": "hypothesis_inferred",
+            "evidence": "",
+            "source": "hypothesis_inferred",
+            "confidence": 0.8
+          }
+        ],
+        "edges": [
+          {
+            "source": "Q-MIL-53(Fe)",
+            "target": "铁死亡",
+            "relation": "induces",
+            "relation_type": "method_applied_to",
+            "metadata": {
+              "evidence": "It can activate antitumor immune response by inducing ferroptosis and immunogenic cell death",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "Q-MIL-53(Fe)",
+            "target": "免疫原性细胞死亡",
+            "relation": "induces",
+            "relation_type": "method_applied_to",
+            "metadata": {
+              "evidence": "It can activate antitumor immune response by inducing ferroptosis and immunogenic cell death",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "Q-MIL-53(Fe)",
+            "target": "树突状细胞成熟",
+            "relation": "promotes",
+            "relation_type": "method_applied_to",
+            "metadata": {
+              "evidence": "promoting dendritic cell maturation and T lymphocytes infiltration",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "Q-MIL-53(Fe)",
+            "target": "T淋巴细胞浸润",
+            "relation": "promotes",
+            "relation_type": "method_applied_to",
+            "metadata": {
+              "evidence": "promoting dendritic cell maturation and T lymphocytes infiltration",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "Q-MIL-53(Fe)",
+            "target": "程序性细胞死亡蛋白1抗体",
+            "relation": "combines with",
+            "relation_type": "method_applied_to",
+            "metadata": {
+              "evidence": "a combination of Q-MIL-53(Fe) and programmed cell death protein 1 antibody amplifies cancer immunotherapy",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "Q-MIL-53(Fe)",
+            "target": "过氧化物酶/过氧化氢酶模拟活性",
+            "relation": "exhibits",
+            "relation_type": "method_applied_to",
+            "metadata": {
+              "evidence": "exhibiting enhanced peroxidase-/catalase-mimic activity and glutathione depletion capacity",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "Q-MIL-53(Fe)",
+            "target": "谷胱甘肽耗竭能力",
+            "relation": "exhibits",
+            "relation_type": "method_applied_to",
+            "metadata": {
+              "evidence": "exhibiting enhanced peroxidase-/catalase-mimic activity and glutathione depletion capacity",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "密度泛函理论计算",
+            "target": "Q-MIL-53(Fe)",
+            "relation": "studies mechanisms of",
+            "relation_type": "method_applied_to",
+            "metadata": {
+              "evidence": "whose underlying mechanisms are studied via density functional theory calculations",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "控制去配体策略",
+            "target": "Q-MIL-53(Fe)",
+            "relation": "used to synthesize",
+            "relation_type": "method_applied_to",
+            "metadata": {
+              "evidence": "Herein an iron-based quasi-metal-organic framework nanozyme Q-MIL-53(Fe) is reported via a controlled deligandation strategy",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "准金属有机框架",
+            "target": "控制去配体策略",
+            "relation": "通过",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "准金属有机框架通过控制去配体策略合成纳米酶",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "控制去配体策略",
+            "target": "多孔结构",
+            "relation": "影响",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "控制去配体策略影响纳米酶的多孔结构",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "多孔结构",
+            "target": "高效催化活性",
+            "relation": "需要材料科学优化以实现",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "纳米酶的多孔结构需要材料科学优化以实现高效催化活性",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "纳米酶",
+            "target": "过氧化物酶/过氧化氢酶模拟活性",
+            "relation": "具有",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "纳米酶具有过氧化物酶/过氧化氢酶模拟活性",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "过氧化物酶/过氧化氢酶模拟活性",
+            "target": "铁死亡",
+            "relation": "导致",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "过氧化物酶/过氧化氢酶模拟活性导致铁死亡",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "铁死亡",
+            "target": "肿瘤免疫微环境的影响",
+            "relation": "需要临床医学验证其对",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "铁死亡需要临床医学验证其对肿瘤免疫微环境的影响",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "纳米酶",
+            "target": "程序性细胞死亡蛋白1抗体",
+            "relation": "结合",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "纳米酶结合程序性细胞死亡蛋白1抗体",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 2
+            }
+          },
+          {
+            "source": "程序性细胞死亡蛋白1抗体",
+            "target": "免疫原性细胞死亡",
+            "relation": "增强",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "程序性细胞死亡蛋白1抗体增强免疫原性细胞死亡",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 2
+            }
+          },
+          {
+            "source": "免疫原性细胞死亡",
+            "target": "淋巴细胞浸润的协同效应",
+            "relation": "需要临床医学评估其与",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "免疫原性细胞死亡需要临床医学评估其与淋巴细胞浸润的协同效应",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 2
+            }
+          },
+          {
+            "source": "纳米材料",
+            "target": "多孔结构",
+            "relation": "通过控制去配体策略构建",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "纳米材料通过控制去配体策略构建多孔结构",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "多孔结构",
+            "target": "准金属有机框架",
+            "relation": "增强催化活性与稳定性",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "多孔结构增强准金属有机框架的催化活性与稳定性",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "准金属有机框架",
+            "target": "纳米酶",
+            "relation": "优化为高效催化体系",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "准金属有机框架优化为高效催化体系的纳米酶",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "铁死亡",
+            "target": "免疫原性细胞死亡",
+            "relation": "通过纳米酶诱导",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "铁死亡通过纳米酶诱导免疫原性细胞死亡",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "免疫原性细胞死亡",
+            "target": "树突状细胞成熟",
+            "relation": "促进免疫微环境激活",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "免疫原性细胞死亡促进树突状细胞成熟以激活免疫微环境",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "树突状细胞成熟",
+            "target": "淋巴细胞浸润",
+            "relation": "增强抗肿瘤免疫应答",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "树突状细胞成熟增强淋巴细胞浸润的抗肿瘤免疫应答",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "控制去配体策略",
+            "target": "准金属有机框架",
+            "relation": "用于合成",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "控制去配体策略能够合成具有特定结构的准金属有机框架材料",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "准金属有机框架",
+            "target": "多孔结构",
+            "relation": "形成",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "准金属有机框架通过结构调控形成具有催化活性的多孔结构",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "多孔结构",
+            "target": "密度泛函理论计算",
+            "relation": "通过验证",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "多孔结构的催化活性机制通过密度泛函理论计算进行验证",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "铁死亡",
+            "target": "免疫原性细胞死亡",
+            "relation": "协同诱导",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "铁死亡与免疫原性细胞死亡协同作用激活抗肿瘤免疫应答",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "免疫原性细胞死亡",
+            "target": "树突状细胞成熟",
+            "relation": "促进",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "免疫原性细胞死亡促进树突状细胞成熟以增强抗原呈递",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "树突状细胞成熟",
+            "target": "程序性细胞死亡蛋白1抗体",
+            "relation": "联合增强",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "树突状细胞成熟与程序性细胞死亡蛋白1抗体联合增强淋巴细胞浸润效果",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          }
+        ]
+      },
+      "metrics": {
+        "path_consistency": 0.0,
+        "coverage": 0.7333333333333333,
+        "bridging_score": 0.5,
+        "rao_stirling_diversity": 0.2156,
+        "embedding_bridging": 0.8666,
+        "consistency_precision": 0.0,
+        "consistency_recall": 0.0,
+        "consistency_f1": 0.0,
+        "info_novelty": 0.0,
+        "chain_coherence": 0.6265,
+        "atypical_combination": 0.6352,
+        "kg_density": 0.0819,
+        "kg_inverse_modularity": 0.8957,
+        "kg_largest_cc_ratio": 0.9474,
+        "kg_avg_betweenness": 0.0784,
+        "kg_clustering_coefficient": 0.1564,
+        "concept_recall": 0.0,
+        "concept_precision": 0.0,
+        "concept_f1": 0.0,
+        "relation_precision": 0.0,
+        "relation_type_accuracy": 0.0,
+        "evidence_coverage": 0.0,
+        "path_alignment_best": 0.0,
+        "path_alignment_mean": 0.0
+      }
+    },
+    "raw": "/* stage1: struct */\n/* concepts round1 */\n{\n  \"meta\": {\n    \"title\": \"Quasi Fe MIL-53 nanozyme inducing ferroptosis and immunogenic cell death for cancer immunotherapy\",\n    \"primary\": \"化学\",\n    \"secondary_list\": [\"化学\", \"材料科学\", \"临床医学\"]\n  },\n  \"概念\": {\n    \"主学科\": [\n      {\n        \"term\": \"Nanozymes\",\n        \"normalized\": \"纳米酶\",\n        \"std_label\": null,\n        \"evidence\": \"Nanozymes offer diverse therapeutic potentials for cancer treatment\",\n        \"source\": \"abstract\",\n        \"confidence\": 1\n      },\n      {\n        \"term\": \"Quasi-metal-organic framework\",\n        \"normalized\": \"准金属有机框架\",\n        \"std_label\": null,\n        \"evidence\": \"Quasi-metal-organic framework is a class of metal-organic framework-derived nanomaterials\",\n        \"source\": \"abstract\",\n        \"confidence\": 1\n      },\n      {\n        \"term\": \"Q-MIL-53(Fe)\",\n        \"normalized\": null,\n        \"std_label\": null,\n        \"evidence\": \"Herein an iron-based quasi-metal-organic framework nanozyme Q-MIL-53(Fe) is reported\",\n        \"source\": \"abstract\",\n        \"confidence\": 1\n      },\n      {\n        \"term\": \"peroxidase-/catalase-mimic activity\",\n        \"normalized\": \"过氧化物酶/过氧化氢酶模拟活性\",\n        \"std_label\": null,\n        \"evidence\": \"exhibiting enhanced peroxidase-/catalase-mimic activity and glutathione depletion capacity\",\n        \"source\": \"abstract\",\n        \"confidence\": 1\n      },\n      {\n        \"term\": \"glutathione depletion capacity\",\n        \"normalized\": \"谷胱甘肽耗竭能力\",\n        \"std_label\": null,\n        \"evidence\": \"exhibiting enhanced peroxidase-/catalase-mimic activity and glutathione depletion capacity\",\n        \"source\": \"abstract\",\n        \"confidence\": 1\n      },\n      {\n        \"term\": \"density functional theory calculations\",\n        \"normalized\": \"密度泛函理论计算\",\n        \"std_label\": null,\n        \"evidence\": \"whose underlying mechanisms are studied via density functional theory calculations\",\n        \"source\": \"abstract\",\n        \"confidence\": 1\n      },\n      {\n        \"term\": \"MIL-53(Fe)\",\n        \"normalized\": null,\n        \"std_label\": null,\n        \"evidence\": \"Q-MIL-53(Fe) demonstrates biocompatibility and superior antitumor efficacy compared to pristine MIL-53(Fe)\",\n        \"source\": \"abstract\",\n        \"confidence\": 1\n      }\n    ],\n    \"辅学科\": {\n      \"材料科学\": [\n        {\n          \"term\": \"nanomaterials\",\n          \"normalized\": \"纳米材料\",\n          \"std_label\": null,\n          \"evidence\": \"Quasi-metal-organic framework is a class of metal-organic framework-derived nanomaterials\",\n          \"source\": \"abstract\",\n          \"confidence\": 1\n        },\n        {\n          \"term\": \"porous structure\",\n          \"normalized\": \"多孔结构\",\n          \"std_label\": null,\n          \"evidence\": \"with a transition state from metal-organic frameworks towards metal oxide featuring porous structure and high activity\",\n          \"source\": \"abstract\",\n          \"confidence\": 1\n        },\n        {\n          \"term\": \"controlled deligandation strategy\",\n          \"normalized\": \"控制去配体策略\",\n          \"std_label\": null,\n          \"evidence\": \"Herein an iron-based quasi-metal-organic framework nanozyme Q-MIL-53(Fe) is reported via a controlled deligandation strategy\",\n          \"source\": \"abstract\",\n          \"confidence\": 1\n        }\n      ],\n      \"临床医学\": [\n        {\n          \"term\": \"ferroptosis\",\n          \"normalized\": \"铁死亡\",\n          \"std_label\": null,\n          \"evidence\": \"It can activate antitumor immune response by inducing ferroptosis and immunogenic cell death\",\n          \"source\": \"abstract\",\n          \"confidence\": 1\n        },\n        {\n          \"term\": \"immunogenic cell death\",\n          \"normalized\": \"免疫原性细胞死亡\",\n          \"std_label\": null,\n          \"evidence\": \"It can activate antitumor immune response by inducing ferroptosis and immunogenic cell death\",\n          \"source\": \"abstract\",\n          \"confidence\": 1\n        },\n        {\n          \"term\": \"dendritic cell maturation\",\n          \"normalized\": \"树突状细胞成熟\",\n          \"std_label\": null,\n          \"evidence\": \"promoting dendritic cell maturation and T lymphocytes infiltration\",\n          \"source\": \"abstract\",\n          \"confidence\": 1\n        },\n        {\n          \"term\": \"T lymphocytes infiltration\",\n          \"normalized\": \"T淋巴细胞浸润\",\n          \"std_label\": null,\n          \"evidence\": \"promoting dendritic cell maturation and T lymphocytes infiltration\",\n          \"source\": \"abstract\",\n          \"confidence\": 1\n        },\n        {\n          \"term\": \"programmed cell death protein 1 antibody\",\n          \"normalized\": \"程序性细胞死亡蛋白1抗体\",\n          \"std_label\": null,\n          \"evidence\": \"a combination of Q-MIL-53(Fe) and programmed cell death protein 1 antibody amplifies cancer immunotherapy\",\n          \"source\": \"abstract\",\n          \"confidence\": 1\n        }\n      ]\n    }\n  }\n}\n\n/* concepts round2 (supplement) */\n{\n  \"补充概念\": {\n    \"主学科\": [\n      \"metal-organic framework\",\n      \"metal oxide\",\n      \"antitumor immune response\",\n      \"antitumor efficacy\",\n      \"immunotherapy induction potential\"\n    ],\n    \"辅学科\": {\n      \"材料科学\": [\n        \"iron-based\"\n      ],\n      \"临床医学\": [\n        \"cancer treatment\",\n        \"cancer immunotherapy\"\n      ]\n    }\n  }\n}\n\n/* relations */\n{\n  \"跨学科关系\": [\n    {\n      \"head\": \"Q-MIL-53(Fe)\",\n      \"tail\": \"ferroptosis\",\n      \"relation\": \"induces\",\n      \"relation_type\": \"method_applied_to\",\n      \"direction\": \"->\",\n      \"assumptions\": [],\n      \"evidence\": \"It can activate antitumor immune response by inducing ferroptosis and immunogenic cell death\",\n      \"source\": \"abstract\",\n      \"confidence\": 1\n    },\n    {\n      \"head\": \"Q-MIL-53(Fe)\",\n      \"tail\": \"immunogenic cell death\",\n      \"relation\": \"induces\",\n      \"relation_type\": \"method_applied_to\",\n      \"direction\": \"->\",\n      \"assumptions\": [],\n      \"evidence\": \"It can activate antitumor immune response by inducing ferroptosis and immunogenic cell death\",\n      \"source\": \"abstract\",\n      \"confidence\": 1\n    },\n    {\n      \"head\": \"Q-MIL-53(Fe)\",\n      \"tail\": \"dendritic cell maturation\",\n      \"relation\": \"promotes\",\n      \"relation_type\": \"method_applied_to\",\n      \"direction\": \"->\",\n      \"assumptions\": [],\n      \"evidence\": \"promoting dendritic cell maturation and T lymphocytes infiltration\",\n      \"source\": \"abstract\",\n      \"confidence\": 1\n    },\n    {\n      \"head\": \"Q-MIL-53(Fe)\",\n      \"tail\": \"T lymphocytes infiltration\",\n      \"relation\": \"promotes\",\n      \"relation_type\": \"method_applied_to\",\n      \"direction\": \"->\",\n      \"assumptions\": [],\n      \"evidence\": \"promoting dendritic cell maturation and T lymphocytes infiltration\",\n      \"source\": \"abstract\",\n      \"confidence\": 1\n    },\n    {\n      \"head\": \"Q-MIL-53(Fe)\",\n      \"tail\": \"programmed cell death protein 1 antibody\",\n      \"relation\": \"combines with\",\n      \"relation_type\": \"method_applied_to\",\n      \"direction\": \"->\",\n      \"assumptions\": [],\n      \"evidence\": \"a combination of Q-MIL-53(Fe) and programmed cell death protein 1 antibody amplifies cancer immunotherapy\",\n      \"source\": \"abstract\",\n      \"confidence\": 1\n    },\n    {\n      \"head\": \"Q-MIL-53(Fe)\",\n      \"tail\": \"peroxidase-/catalase-mimic activity\",\n      \"relation\": \"exhibits\",\n      \"relation_type\": \"method_applied_to\",\n      \"direction\": \"->\",\n      \"assumptions\": [],\n      \"evidence\": \"exhibiting enhanced peroxidase-/catalase-mimic activity and glutathione depletion capacity\",\n      \"source\": \"abstract\",\n      \"confidence\": 1\n    },\n    {\n      \"head\": \"Q-MIL-53(Fe)\",\n      \"tail\": \"glutathione depletion capacity\",\n      \"relation\": \"exhibits\",\n      \"relation_type\": \"method_applied_to\",\n      \"direction\": \"->\",\n      \"assumptions\": [],\n      \"evidence\": \"exhibiting enhanced peroxidase-/catalase-mimic activity and glutathione depletion capacity\",\n      \"source\": \"abstract\",\n      \"confidence\": 1\n    },\n    {\n      \"head\": \"density functional theory calculations\",\n      \"tail\": \"Q-MIL-53(Fe)\",\n      \"relation\": \"studies mechanisms of\",\n      \"relation_type\": \"method_applied_to\",\n      \"direction\": \"->\",\n      \"assumptions\": [],\n      \"evidence\": \"whose underlying mechanisms are studied via density functional theory calculations\",\n      \"source\": \"abstract\",\n      \"confidence\": 1\n    },\n    {\n      \"head\": \"controlled deligandation strategy\",\n      \"tail\": \"Q-MIL-53(Fe)\",\n      \"relation\": \"used to synthesize\",\n      \"relation_type\": \"method_applied_to\",\n      \"direction\": \"->\",\n      \"assumptions\": [],\n      \"evidence\": \"Herein an iron-based quasi-metal-organic framework nanozyme Q-MIL-53(Fe) is reported via a controlled deligandation strategy\",\n      \"source\": \"abstract\",\n      \"confidence\": 1\n    }\n  ]\n}\n\n/* stage2: query */\n{\n  \"按辅助学科分类\": {\n    \"材料科学\": {\n      \"概念\": [\"纳米材料\", \"多孔结构\", \"控制去配体策略\"],\n      \"关系\": [8],\n      \"rationale\": \"通过纳米材料设计与合成方法学，构建具有特定功能的准金属有机框架结构\"\n    },\n    \"临床医学\": {\n      \"概念\": [\"铁死亡\", \"免疫原性细胞死亡\", \"树突状细胞成熟\", \"T淋巴细胞浸润\", \"程序性细胞死亡蛋白1抗体\"],\n      \"关系\": [0, 1, 2, 3, 4],\n      \"rationale\": \"验证纳米酶在肿瘤免疫治疗中诱导细胞死亡通路激活及免疫应答增强的生物学效应\"\n    }\n  },\n  \"查询\": {\n    \"一级\": \"如何设计具有高效催化活性的纳米酶用于肿瘤治疗\",\n    \"二级\": [\n      \"如何结合纳米材料工程优化纳米酶的催化活性与稳定性\",\n      \"如何评估纳米酶诱导的细胞死亡机制对肿瘤免疫微环境的影响\"\n    ],\n    \"三级\": [\n      \"如何通过控制去配体策略构建多孔纳米酶材料，并联合密度泛函理论计算验证其催化机制\",\n      \"如何整合铁死亡诱导与免疫检查点阻断疗法，建立协同抗肿瘤免疫应答的评估体系\"\n    ]\n  }\n}\n\n/* stage3: hypothesis L1 */\n{\n  \"假设\": {\n    \"一级\": [\n      [\n        {\n          \"step\": 1,\n          \"head\": \"准金属有机框架\",\n          \"relation\": \"通过\",\n          \"tail\": \"控制去配体策略\",\n          \"claim\": \"准金属有机框架通过控制去配体策略合成纳米酶\"\n        },\n        {\n          \"step\": 2,\n          \"head\": \"控制去配体策略\",\n          \"relation\": \"影响\",\n          \"tail\": \"多孔结构\",\n          \"claim\": \"控制去配体策略影响纳米酶的多孔结构\"\n        },\n        {\n          \"step\": 3,\n          \"head\": \"多孔结构\",\n          \"relation\": \"需要材料科学优化以实现\",\n          \"tail\": \"高效催化活性\",\n          \"claim\": \"纳米酶的多孔结构需要材料科学优化以实现高效催化活性\"\n        }\n      ],\n      [\n        {\n          \"step\": 1,\n          \"head\": \"纳米酶\",\n          \"relation\": \"具有\",\n          \"tail\": \"过氧化物酶/过氧化氢酶模拟活性\",\n          \"claim\": \"纳米酶具有过氧化物酶/过氧化氢酶模拟活性\"\n        },\n        {\n          \"step\": 2,\n          \"head\": \"过氧化物酶/过氧化氢酶模拟活性\",\n          \"relation\": \"导致\",\n          \"tail\": \"铁死亡\",\n          \"claim\": \"过氧化物酶/过氧化氢酶模拟活性导致铁死亡\"\n        },\n        {\n          \"step\": 3,\n          \"head\": \"铁死亡\",\n          \"relation\": \"需要临床医学验证其对\",\n          \"tail\": \"肿瘤免疫微环境的影响\",\n          \"claim\": \"铁死亡需要临床医学验证其对肿瘤免疫微环境的影响\"\n        }\n      ],\n      [\n        {\n          \"step\": 1,\n          \"head\": \"纳米酶\",\n          \"relation\": \"结合\",\n          \"tail\": \"程序性细胞死亡蛋白1抗体\",\n          \"claim\": \"纳米酶结合程序性细胞死亡蛋白1抗体\"\n        },\n        {\n          \"step\": 2,\n          \"head\": \"程序性细胞死亡蛋白1抗体\",\n          \"relation\": \"增强\",\n          \"tail\": \"免疫原性细胞死亡\",\n          \"claim\": \"程序性细胞死亡蛋白1抗体增强免疫原性细胞死亡\"\n        },\n        {\n          \"step\": 3,\n          \"head\": \"免疫原性细胞死亡\",\n          \"relation\": \"需要临床医学评估其与\",\n          \"tail\": \"T淋巴细胞浸润的协同效应\",\n          \"claim\": \"免疫原性细胞死亡需要临床医学评估其与T淋巴细胞浸润的协同效应\"\n        }\n      ]\n    ],\n    \"一级总结\": [\n      \"化学领域通过控制去配体策略合成纳米酶，其多孔结构需要材料科学优化以实现高效催化活性\",\n      \"纳米酶的催化活性诱导铁死亡，需要临床医学验证其对肿瘤免疫微环境的影响\",\n      \"纳米酶结合免疫检查点阻断疗法增强免疫原性细胞死亡，需要临床医学评估其与T淋巴细胞浸润的协同效应\"\n    ]\n  }\n}\n\n/* stage3: hypothesis L2 */\n{\n  \"假设\": {\n    \"二级\": [\n      [\n        {\n          \"head\": \"纳米材料\",\n          \"tail\": \"多孔结构\",\n          \"relation\": \"通过控制去配体策略构建\",\n          \"claim\": \"纳米材料通过控制去配体策略构建多孔结构\"\n        },\n        {\n          \"head\": \"多孔结构\",\n          \"tail\": \"准金属有机框架\",\n          \"relation\": \"增强催化活性与稳定性\",\n          \"claim\": \"多孔结构增强准金属有机框架的催化活性与稳定性\"\n        },\n        {\n          \"head\": \"准金属有机框架\",\n          \"tail\": \"纳米酶\",\n          \"relation\": \"优化为高效催化体系\",\n          \"claim\": \"准金属有机框架优化为高效催化体系的纳米酶\"\n        }\n      ],\n      [\n        {\n          \"head\": \"铁死亡\",\n          \"tail\": \"免疫原性细胞死亡\",\n          \"relation\": \"通过纳米酶诱导\",\n          \"claim\": \"铁死亡通过纳米酶诱导免疫原性细胞死亡\"\n        },\n        {\n          \"head\": \"免疫原性细胞死亡\",\n          \"tail\": \"树突状细胞成熟\",\n          \"relation\": \"促进免疫微环境激活\",\n          \"claim\": \"免疫原性细胞死亡促进树突状细胞成熟以激活免疫微环境\"\n        },\n        {\n          \"head\": \"树突状细胞成熟\",\n          \"tail\": \"T淋巴细胞浸润\",\n          \"relation\": \"增强抗肿瘤免疫应答\",\n          \"claim\": \"树突状细胞成熟增强T淋巴细胞浸润的抗肿瘤免疫应答\"\n        }\n      ]\n    ],\n    \"二级总结\": [\n      \"材料科学通过纳米材料的多孔结构设计优化准金属有机框架，进而提升纳米酶的催化性能\",\n      \"临床医学通过铁死亡与免疫原性细胞死亡的联动机制，将纳米酶效应转化为肿瘤免疫微环境的激活信号\"\n    ]\n  }\n}\n\n/* stage3: hypothesis L3 */\n{\n  \"假设\": {\n    \"三级\": [\n      [\n        {\n          \"head\": \"控制去配体策略\",\n          \"tail\": \"准金属有机框架\",\n          \"relation\": \"用于合成\",\n          \"claim\": \"控制去配体策略能够合成具有特定结构的准金属有机框架材料\"\n        },\n        {\n          \"head\": \"准金属有机框架\",\n          \"tail\": \"多孔结构\",\n          \"relation\": \"形成\",\n          \"claim\": \"准金属有机框架通过结构调控形成具有催化活性的多孔结构\"\n        },\n        {\n          \"head\": \"多孔结构\",\n          \"tail\": \"密度泛函理论计算\",\n          \"relation\": \"通过验证\",\n          \"claim\": \"多孔结构的催化活性机制通过密度泛函理论计算进行验证\"\n        }\n      ],\n      [\n        {\n          \"head\": \"铁死亡\",\n          \"tail\": \"免疫原性细胞死亡\",\n          \"relation\": \"协同诱导\",\n          \"claim\": \"铁死亡与免疫原性细胞死亡协同作用激活抗肿瘤免疫应答\"\n        },\n        {\n          \"head\": \"免疫原性细胞死亡\",\n          \"tail\": \"树突状细胞成熟\",\n          \"relation\": \"促进\",\n          \"claim\": \"免疫原性细胞死亡促进树突状细胞成熟以增强抗原呈递\"\n        },\n        {\n          \"head\": \"树突状细胞成熟\",\n          \"tail\": \"程序性细胞死亡蛋白1抗体\",\n          \"relation\": \"联合增强\",\n          \"claim\": \"树突状细胞成熟与程序性细胞死亡蛋白1抗体联合增强T淋巴细胞浸润效果\"\n        }\n      ]\n    ],\n    \"三级总结\": [\n      \"通过材料合成策略构建多孔纳米酶，结合理论计算验证其催化机制，形成材料设计与机理研究的闭环验证\",\n      \"整合铁死亡与免疫检查点阻断的协同作用机制，通过免疫细胞激活与T细胞浸润建立免疫治疗评估体系\"\n    ]\n  }\n}",
+    "ok": true,
+    "error": ""
+  }
+]

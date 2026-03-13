@@ -1,0 +1,34 @@
+{
+  "c7202044749e": {
+    "paper_id": "c7202044749e",
+    "title": "3D-printed aberration-free terahertz metalens for ultra-broadband achromatic super-resolution wide-angle imaging with high numerical aperture",
+    "abstract": "Terahertz (THz) lens constitutes a vital component in the THz system. Metasurfaces-based THz metalenses and classical bulky lenses are severely constrained by chromatic/ spherical aberration and the diffraction limit. Consequently, achromatic super-resolution THz lenses are urgently needed. In this study, through translating the required phase distribution into a refractive index (RI) profile with a specific thickness, an innovative approach to designing THz metalenses is proposed and achieved by dielectric gradient metamaterials. The samples fabricated by 3D printing can realize achromatic super focusing with a numerical aperture (NA) of 0.555 from 0.2 to 0.9 THz. Submillimeter features separated by approximately 0.2 mm can be resolved with high precision, such as glass fabric patterns within FR4 panels and fibrous tissue on leaves, with a field of view (FOV) of 90°. Our approach offers a feasible and cost-effective means to implement THz super-resolution imaging, which holds great potential in non-destructive testing and biomedical imaging.",
+    "primary_discipline": "物理学",
+    "secondary_disciplines": [
+      "物理学",
+      "材料科学",
+      "电子、通信与自动控制技术"
+    ]
+  },
+  "bca0c04aa6e9": {
+    "paper_id": "bca0c04aa6e9",
+    "title": "The tetracycline resistome is shaped by selection for specific resistance mechanisms by each antibiotic generation",
+    "abstract": "Abstract The history of clinical resistance to tetracycline antibiotics is characterized by cycles whereby the deployment of a new generation of drug molecules is quickly followed by the discovery of a new mechanism of resistance. This suggests mechanism-specific selection by each tetracycline generation; however, the evolutionary dynamics of this remain unclear. Here, we evaluate 24 recombinant Escherichia coli strains expressing tetracycline resistance genes from each mechanism (efflux pumps, ribosomal protection proteins, and enzymatic inactivation) in the context of each tetracycline generation. We employ a high-throughput barcode sequencing protocol that can discriminate between strains in mixed culture and quantify their relative abundances. We find that each mechanism is preferentially selected for by specific antibiotic generations, leading to their expansion. Remarkably, the minimum inhibitory concentration associated with individual genes is secondary to resistance mechanism for inter-mechanism relative fitness, but it does explain intra-mechanism relative fitness. These patterns match the history of clinical deployment of tetracycline drugs and resistance discovery in pathogens.",
+    "primary_discipline": "生物学",
+    "secondary_disciplines": [
+      "生物学",
+      "临床医学"
+    ]
+  },
+  "69cf875bdbf7": {
+    "paper_id": "69cf875bdbf7",
+    "title": "Quasi Fe MIL-53 nanozyme inducing ferroptosis and immunogenic cell death for cancer immunotherapy",
+    "abstract": "Nanozymes offer diverse therapeutic potentials for cancer treatment which is dependent on the development of nanomaterials. Quasi-metal-organic framework is a class of metal-organic framework-derived nanomaterials with a transition state from metal-organic frameworks towards metal oxide featuring porous structure and high activity. Herein an iron-based quasi-metal-organic framework nanozyme Q-MIL-53(Fe) is reported via a controlled deligandation strategy, exhibiting enhanced peroxidase-/catalase-mimic activity and glutathione depletion capacity, whose underlying mechanisms are studied via density functional theory calculations. Q-MIL-53(Fe) demonstrates biocompatibility and superior antitumor efficacy compared to pristine MIL-53(Fe). It can activate antitumor immune response by inducing ferroptosis and immunogenic cell death, promoting dendritic cell maturation and T lymphocytes infiltration. Furthermore, a combination of Q-MIL-53(Fe) and programmed cell death protein 1 antibody amplifies cancer immunotherapy. This study validates the antitumor activity of quasi-metal-organic frameworks and its immunotherapy induction potential. It would broaden the application of quasi-metal-organic frameworks and open avenues for developing antitumor nanozymes.",
+    "primary_discipline": "化学",
+    "secondary_disciplines": [
+      "化学",
+      "材料科学",
+      "临床医学"
+    ]
+  }
+}

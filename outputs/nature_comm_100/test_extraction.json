@@ -1,0 +1,2781 @@
+[
+  {
+    "title": "Tailoring industrial enzymes for thermostability and activity evolution by the machine learning-based iCASE strategy",
+    "abstract": "The pursuit of obtaining enzymes with high activity and stability remains a grail in enzyme evolution due to the stability-activity trade-off. Here, we develop an isothermal compressibility-assisted dynamic squeezing index perturbation engineering (iCASE) strategy to construct hierarchical modular networks for enzymes of varying complexity. Molecular mechanism analysis elucidates that the peak of adaptive evolution is reached through a structural response mechanism among variants. Furthermore, this dynamic response predictive model using structure-based supervised machine learning is established to predict enzyme function and fitness, demonstrating robust performance across different datasets and reliable prediction for epistasis. The universality of the iCASE strategy is validated by four sorts of enzymes with different structures and catalytic types. This machine learning-based iCASE strategy provides guidance for future research on the fitness evolution of enzymes.",
+    "pdf_url": "",
+    "primary": "生物学",
+    "secondary": "",
+    "secondary_list": [],
+    "introduction": "",
+    "parsed": {
+      "meta": {
+        "title": "Tailoring industrial enzymes for thermostability and activity evolution by the machine learning-based iCASE strategy",
+        "primary": "生物学",
+        "secondary_list": []
+      },
+      "概念": {
+        "主学科": [
+          {
+            "term": "enzymes",
+            "normalized": "酶",
+            "std_label": null,
+            "evidence": "The pursuit of obtaining enzymes with high activity and stability remains a grail in enzyme evolution",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "term": "stability-activity trade-off",
+            "normalized": "稳定性-活性权衡",
+            "std_label": null,
+            "evidence": "due to the stability-activity trade-off",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "term": "iCASE",
+            "normalized": "等温压缩性辅助动态挤压指数扰动工程",
+            "std_label": null,
+            "evidence": "isothermal compressibility-assisted dynamic squeezing index perturbation engineering (iCASE)",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "term": "hierarchical modular networks",
+            "normalized": "分层模块化网络",
+            "std_label": null,
+            "evidence": "to construct hierarchical modular networks for enzymes of varying complexity",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "term": "adaptive evolution",
+            "normalized": "适应性进化",
+            "std_label": null,
+            "evidence": "the peak of adaptive evolution is reached through a structural response mechanism among variants",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "term": "structural response mechanism",
+            "normalized": "结构响应机制",
+            "std_label": null,
+            "evidence": "the peak of adaptive evolution is reached through a structural response mechanism among variants",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "term": "dynamic response predictive model",
+            "normalized": "动态响应预测模型",
+            "std_label": null,
+            "evidence": "this dynamic response predictive model using structure-based supervised machine learning is established",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "term": "enzyme function and fitness",
+            "normalized": "酶功能和适应性",
+            "std_label": null,
+            "evidence": "to predict enzyme function and fitness",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "term": "epistasis",
+            "normalized": "上位性",
+            "std_label": null,
+            "evidence": "demonstrating robust performance across different datasets and reliable prediction for epistasis",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "term": "fitness evolution",
+            "normalized": "适应性进化",
+            "std_label": null,
+            "evidence": "This machine learning-based iCASE strategy provides guidance for future research on the fitness evolution of enzymes",
+            "source": "abstract",
+            "confidence": 1.0
+          }
+        ],
+        "辅学科": {}
+      },
+      "跨学科关系": [
+        {
+          "head": "iCASE",
+          "relation": "constructs",
+          "relation_type": "method_applied_to",
+          "relation_type_norm": "method_applied_to",
+          "relation_type_raw": "method_applied_to",
+          "tail": "hierarchical modular networks",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "to construct hierarchical modular networks for enzymes of varying complexity",
+          "source": "abstract",
+          "confidence": 1.0
+        },
+        {
+          "head": "structural response mechanism",
+          "relation": "reaches peak of",
+          "relation_type": "improves_metric",
+          "relation_type_norm": "improves_metric",
+          "relation_type_raw": "improves_metric",
+          "tail": "adaptive evolution",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "the peak of adaptive evolution is reached through a structural response mechanism among variants",
+          "source": "abstract",
+          "confidence": 1.0
+        },
+        {
+          "head": "dynamic response predictive model",
+          "relation": "predicts",
+          "relation_type": "method_applied_to",
+          "relation_type_norm": "method_applied_to",
+          "relation_type_raw": "method_applied_to",
+          "tail": "enzyme function and fitness",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "to predict enzyme function and fitness",
+          "source": "abstract",
+          "confidence": 1.0
+        },
+        {
+          "head": "dynamic response predictive model",
+          "relation": "predicts",
+          "relation_type": "method_applied_to",
+          "relation_type_norm": "method_applied_to",
+          "relation_type_raw": "method_applied_to",
+          "tail": "epistasis",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "demonstrating robust performance across different datasets and reliable prediction for epistasis",
+          "source": "abstract",
+          "confidence": 1.0
+        },
+        {
+          "head": "iCASE",
+          "relation": "provides guidance for",
+          "relation_type": "method_applied_to",
+          "relation_type_norm": "method_applied_to",
+          "relation_type_raw": "method_applied_to",
+          "tail": "fitness evolution",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "This machine learning-based iCASE strategy provides guidance for future research on the fitness evolution of enzymes",
+          "source": "abstract",
+          "confidence": 1.0
+        }
+      ],
+      "按辅助学科分类": {},
+      "查询": {
+        "一级": "如何优化工业酶的热稳定性和活性进化",
+        "二级": [
+          "如何结合机器学习方法优化工业酶的热稳定性和活性进化",
+          "如何利用分层模块化网络提升工业酶的性能"
+        ],
+        "三级": [
+          "如何通过机器学习构建动态响应预测模型，结合分层模块化网络优化工业酶的热稳定性和活性进化",
+          "如何利用结构响应机制和适应性进化策略，通过机器学习方法提升工业酶的性能"
+        ]
+      },
+      "假设": {
+        "一级": [
+          [
+            {
+              "step": 1,
+              "head": "酶",
+              "relation": "存在",
+              "tail": "稳定性-活性权衡",
+              "claim": "酶在进化过程中存在稳定性与活性之间的权衡问题"
+            },
+            {
+              "step": 2,
+              "head": "稳定性-活性权衡",
+              "relation": "限制",
+              "tail": "适应性进化",
+              "claim": "稳定性与活性的权衡限制了酶的适应性进化"
+            },
+            {
+              "step": 3,
+              "head": "适应性进化",
+              "relation": "需要",
+              "tail": "动态响应预测模型",
+              "claim": "酶的适应性进化需要动态响应预测模型来优化热稳定性和活性"
+            }
+          ],
+          [
+            {
+              "step": 1,
+              "head": "酶",
+              "relation": "通过",
+              "tail": "等温压缩性辅助动态挤压指数扰动工程",
+              "claim": "酶通过等温压缩性辅助动态挤压指数扰动工程进行优化"
+            },
+            {
+              "step": 2,
+              "head": "等温压缩性辅助动态挤压指数扰动工程",
+              "relation": "构建",
+              "tail": "分层模块化网络",
+              "claim": "等温压缩性辅助动态挤压指数扰动工程构建了分层模块化网络"
+            },
+            {
+              "step": 3,
+              "head": "分层模块化网络",
+              "relation": "促进",
+              "tail": "结构响应机制",
+              "claim": "分层模块化网络促进结构响应机制以提升酶的性能"
+            }
+          ]
+        ],
+        "二级": [
+          [
+            {
+              "step": 1,
+              "head": "机器学习",
+              "relation": "构建",
+              "tail": "动态响应预测模型",
+              "claim": "机器学习 构建 动态响应预测模型"
+            },
+            {
+              "step": 2,
+              "head": "动态响应预测模型",
+              "relation": "预测",
+              "tail": "酶功能和适应性",
+              "claim": "动态响应预测模型 预测 酶功能和适应性"
+            },
+            {
+              "step": 3,
+              "head": "酶功能和适应性",
+              "relation": "促进",
+              "tail": "适应性进化",
+              "claim": "酶功能和适应性 促进 适应性进化"
+            }
+          ],
+          [
+            {
+              "step": 1,
+              "head": "分层模块化网络",
+              "relation": "形成",
+              "tail": "结构响应机制",
+              "claim": "分层模块化网络 形成 结构响应机制"
+            },
+            {
+              "step": 2,
+              "head": "结构响应机制",
+              "relation": "达到峰值",
+              "tail": "适应性进化",
+              "claim": "结构响应机制 达到峰值 适应性进化"
+            },
+            {
+              "step": 3,
+              "head": "适应性进化",
+              "relation": "优化",
+              "tail": "酶",
+              "claim": "适应性进化 优化 酶"
+            }
+          ]
+        ],
+        "三级": [
+          [
+            {
+              "step": 1,
+              "head": "分层模块化网络",
+              "relation": "优化",
+              "tail": "酶",
+              "claim": "分层模块化网络可以优化酶的结构"
+            },
+            {
+              "step": 2,
+              "head": "酶",
+              "relation": "输入",
+              "tail": "动态响应预测模型",
+              "claim": "优化后的酶结构作为动态响应预测模型的输入"
+            },
+            {
+              "step": 3,
+              "head": "动态响应预测模型",
+              "relation": "预测",
+              "tail": "酶功能和适应性",
+              "claim": "动态响应预测模型预测酶功能和适应性"
+            }
+          ],
+          [
+            {
+              "step": 1,
+              "head": "结构响应机制",
+              "relation": "促进",
+              "tail": "适应性进化",
+              "claim": "结构响应机制促进适应性进化"
+            },
+            {
+              "step": 2,
+              "head": "适应性进化",
+              "relation": "提升",
+              "tail": "酶",
+              "claim": "适应性进化提升酶的性能"
+            },
+            {
+              "step": 3,
+              "head": "酶",
+              "relation": "验证",
+              "tail": "动态响应预测模型",
+              "claim": "酶的性能通过动态响应预测模型进行验证"
+            }
+          ]
+        ],
+        "一级总结": [
+          "酶的稳定性与活性权衡限制了适应性进化，需要动态响应预测模型来优化热稳定性和活性",
+          "通过等温压缩性辅助动态挤压指数扰动工程构建分层模块化网络，促进结构响应机制以提升酶的性能"
+        ],
+        "二级总结": [
+          "通过机器学习构建动态响应预测模型，预测酶功能和适应性，进而促进酶的适应性进化",
+          "利用分层模块化网络形成结构响应机制，达到适应性进化峰值，从而优化酶的性能"
+        ],
+        "三级总结": [
+          "通过分层模块化网络优化酶结构，输入动态响应预测模型预测酶功能和适应性，形成闭环验证",
+          "结构响应机制促进适应性进化提升酶性能，并通过动态响应预测模型验证性能提升效果"
+        ]
+      },
+      "graph": {
+        "nodes": [
+          {
+            "id": "酶",
+            "term": "enzymes",
+            "normalized": "酶",
+            "discipline": "生物学",
+            "evidence": "The pursuit of obtaining enzymes with high activity and stability remains a grail in enzyme evolution",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "id": "稳定性-活性权衡",
+            "term": "stability-activity trade-off",
+            "normalized": "稳定性-活性权衡",
+            "discipline": "生物学",
+            "evidence": "due to the stability-activity trade-off",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "id": "等温压缩性辅助动态挤压指数扰动工程",
+            "term": "iCASE",
+            "normalized": "等温压缩性辅助动态挤压指数扰动工程",
+            "discipline": "生物学",
+            "evidence": "isothermal compressibility-assisted dynamic squeezing index perturbation engineering (iCASE)",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "id": "分层模块化网络",
+            "term": "hierarchical modular networks",
+            "normalized": "分层模块化网络",
+            "discipline": "生物学",
+            "evidence": "to construct hierarchical modular networks for enzymes of varying complexity",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "id": "适应性进化",
+            "term": "adaptive evolution",
+            "normalized": "适应性进化",
+            "discipline": "生物学",
+            "evidence": "the peak of adaptive evolution is reached through a structural response mechanism among variants",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "id": "结构响应机制",
+            "term": "structural response mechanism",
+            "normalized": "结构响应机制",
+            "discipline": "生物学",
+            "evidence": "the peak of adaptive evolution is reached through a structural response mechanism among variants",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "id": "动态响应预测模型",
+            "term": "dynamic response predictive model",
+            "normalized": "动态响应预测模型",
+            "discipline": "生物学",
+            "evidence": "this dynamic response predictive model using structure-based supervised machine learning is established",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "id": "酶功能和适应性",
+            "term": "enzyme function and fitness",
+            "normalized": "酶功能和适应性",
+            "discipline": "生物学",
+            "evidence": "to predict enzyme function and fitness",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "id": "上位性",
+            "term": "epistasis",
+            "normalized": "上位性",
+            "discipline": "生物学",
+            "evidence": "demonstrating robust performance across different datasets and reliable prediction for epistasis",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "id": "fitness evolution",
+            "term": "fitness evolution",
+            "normalized": "fitness evolution",
+            "discipline": "struct_relation_inferred",
+            "evidence": "",
+            "source": "hypothesis_inferred",
+            "confidence": 0.8
+          },
+          {
+            "id": "机器学习",
+            "term": "机器学习",
+            "normalized": "机器学习",
+            "discipline": "hypothesis_inferred",
+            "evidence": "",
+            "source": "hypothesis_inferred",
+            "confidence": 0.8
+          }
+        ],
+        "edges": [
+          {
+            "source": "等温压缩性辅助动态挤压指数扰动工程",
+            "target": "分层模块化网络",
+            "relation": "constructs",
+            "relation_type": "method_applied_to",
+            "metadata": {
+              "evidence": "to construct hierarchical modular networks for enzymes of varying complexity",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "结构响应机制",
+            "target": "适应性进化",
+            "relation": "reaches peak of",
+            "relation_type": "improves_metric",
+            "metadata": {
+              "evidence": "the peak of adaptive evolution is reached through a structural response mechanism among variants",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "动态响应预测模型",
+            "target": "酶功能和适应性",
+            "relation": "predicts",
+            "relation_type": "method_applied_to",
+            "metadata": {
+              "evidence": "to predict enzyme function and fitness",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "动态响应预测模型",
+            "target": "上位性",
+            "relation": "predicts",
+            "relation_type": "method_applied_to",
+            "metadata": {
+              "evidence": "demonstrating robust performance across different datasets and reliable prediction for epistasis",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "等温压缩性辅助动态挤压指数扰动工程",
+            "target": "fitness evolution",
+            "relation": "provides guidance for",
+            "relation_type": "method_applied_to",
+            "metadata": {
+              "evidence": "This machine learning-based iCASE strategy provides guidance for future research on the fitness evolution of enzymes",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "酶",
+            "target": "稳定性-活性权衡",
+            "relation": "存在",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "酶在进化过程中存在稳定性与活性之间的权衡问题",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "稳定性-活性权衡",
+            "target": "适应性进化",
+            "relation": "限制",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "稳定性与活性的权衡限制了酶的适应性进化",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "适应性进化",
+            "target": "动态响应预测模型",
+            "relation": "需要",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "酶的适应性进化需要动态响应预测模型来优化热稳定性和活性",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "酶",
+            "target": "等温压缩性辅助动态挤压指数扰动工程",
+            "relation": "通过",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "酶通过等温压缩性辅助动态挤压指数扰动工程进行优化",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "等温压缩性辅助动态挤压指数扰动工程",
+            "target": "分层模块化网络",
+            "relation": "构建",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "等温压缩性辅助动态挤压指数扰动工程构建了分层模块化网络",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "分层模块化网络",
+            "target": "结构响应机制",
+            "relation": "促进",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "分层模块化网络促进结构响应机制以提升酶的性能",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "机器学习",
+            "target": "动态响应预测模型",
+            "relation": "构建",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "机器学习 构建 动态响应预测模型",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "动态响应预测模型",
+            "target": "酶功能和适应性",
+            "relation": "预测",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "动态响应预测模型 预测 酶功能和适应性",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "酶功能和适应性",
+            "target": "适应性进化",
+            "relation": "促进",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "酶功能和适应性 促进 适应性进化",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "分层模块化网络",
+            "target": "结构响应机制",
+            "relation": "形成",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "分层模块化网络 形成 结构响应机制",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "结构响应机制",
+            "target": "适应性进化",
+            "relation": "达到峰值",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "结构响应机制 达到峰值 适应性进化",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "适应性进化",
+            "target": "酶",
+            "relation": "优化",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "适应性进化 优化 酶",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "分层模块化网络",
+            "target": "酶",
+            "relation": "优化",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "分层模块化网络可以优化酶的结构",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "酶",
+            "target": "动态响应预测模型",
+            "relation": "输入",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "优化后的酶结构作为动态响应预测模型的输入",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "动态响应预测模型",
+            "target": "酶功能和适应性",
+            "relation": "预测",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "动态响应预测模型预测酶功能和适应性",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "结构响应机制",
+            "target": "适应性进化",
+            "relation": "促进",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "结构响应机制促进适应性进化",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "适应性进化",
+            "target": "酶",
+            "relation": "提升",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "适应性进化提升酶的性能",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "酶",
+            "target": "动态响应预测模型",
+            "relation": "验证",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "酶的性能通过动态响应预测模型进行验证",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          }
+        ]
+      },
+      "metrics": {
+        "path_consistency": 0.2777777777777778,
+        "coverage": 0.8888888888888888,
+        "bridging_score": 0.0,
+        "rao_stirling_diversity": 0.0,
+        "embedding_bridging": 0.8572,
+        "consistency_precision": 0.0,
+        "consistency_recall": 0.0,
+        "consistency_f1": 0.0,
+        "info_novelty": 0.0,
+        "chain_coherence": 0.6363,
+        "atypical_combination": 0.2201,
+        "kg_density": 0.1364,
+        "kg_inverse_modularity": 1.0089,
+        "kg_largest_cc_ratio": 1.0,
+        "kg_avg_betweenness": 0.1212,
+        "kg_clustering_coefficient": 0.3152,
+        "concept_recall": 0.0,
+        "concept_precision": 0.0,
+        "concept_f1": 0.0,
+        "relation_precision": 0.0,
+        "relation_type_accuracy": 0.0,
+        "evidence_coverage": 0.0,
+        "path_alignment_best": 0.0,
+        "path_alignment_mean": 0.0
+      }
+    },
+    "raw": "/* stage1: struct */\n/* concepts round1 */\n{\n  \"meta\": {\n    \"title\": \"Tailoring industrial enzymes for thermostability and activity evolution by the machine learning-based iCASE strategy\",\n    \"primary\": \"生物学\",\n    \"secondary_list\": []\n  },\n  \"概念\": {\n    \"主学科\": [\n      {\n        \"term\": \"enzymes\",\n        \"normalized\": \"酶\",\n        \"std_label\": null,\n        \"evidence\": \"The pursuit of obtaining enzymes with high activity and stability remains a grail in enzyme evolution\",\n        \"source\": \"abstract\",\n        \"confidence\": 1\n      },\n      {\n        \"term\": \"stability-activity trade-off\",\n        \"normalized\": \"稳定性-活性权衡\",\n        \"std_label\": null,\n        \"evidence\": \"due to the stability-activity trade-off\",\n        \"source\": \"abstract\",\n        \"confidence\": 1\n      },\n      {\n        \"term\": \"iCASE\",\n        \"normalized\": \"等温压缩性辅助动态挤压指数扰动工程\",\n        \"std_label\": null,\n        \"evidence\": \"isothermal compressibility-assisted dynamic squeezing index perturbation engineering (iCASE)\",\n        \"source\": \"abstract\",\n        \"confidence\": 1\n      },\n      {\n        \"term\": \"hierarchical modular networks\",\n        \"normalized\": \"分层模块化网络\",\n        \"std_label\": null,\n        \"evidence\": \"to construct hierarchical modular networks for enzymes of varying complexity\",\n        \"source\": \"abstract\",\n        \"confidence\": 1\n      },\n      {\n        \"term\": \"adaptive evolution\",\n        \"normalized\": \"适应性进化\",\n        \"std_label\": null,\n        \"evidence\": \"the peak of adaptive evolution is reached through a structural response mechanism among variants\",\n        \"source\": \"abstract\",\n        \"confidence\": 1\n      },\n      {\n        \"term\": \"structural response mechanism\",\n        \"normalized\": \"结构响应机制\",\n        \"std_label\": null,\n        \"evidence\": \"the peak of adaptive evolution is reached through a structural response mechanism among variants\",\n        \"source\": \"abstract\",\n        \"confidence\": 1\n      },\n      {\n        \"term\": \"dynamic response predictive model\",\n        \"normalized\": \"动态响应预测模型\",\n        \"std_label\": null,\n        \"evidence\": \"this dynamic response predictive model using structure-based supervised machine learning is established\",\n        \"source\": \"abstract\",\n        \"confidence\": 1\n      },\n      {\n        \"term\": \"enzyme function and fitness\",\n        \"normalized\": \"酶功能和适应性\",\n        \"std_label\": null,\n        \"evidence\": \"to predict enzyme function and fitness\",\n        \"source\": \"abstract\",\n        \"confidence\": 1\n      },\n      {\n        \"term\": \"epistasis\",\n        \"normalized\": \"上位性\",\n        \"std_label\": null,\n        \"evidence\": \"demonstrating robust performance across different datasets and reliable prediction for epistasis\",\n        \"source\": \"abstract\",\n        \"confidence\": 1\n      },\n      {\n        \"term\": \"fitness evolution\",\n        \"normalized\": \"适应性进化\",\n        \"std_label\": null,\n        \"evidence\": \"This machine learning-based iCASE strategy provides guidance for future research on the fitness evolution of enzymes\",\n        \"source\": \"abstract\",\n        \"confidence\": 1\n      }\n    ],\n    \"辅学科\": {}\n  }\n}\n\n/* concepts round2 (supplement) */\n{\n  \"补充概念\": {\n    \"主学科\": [\n      \"isothermal compressibility\",\n      \"dynamic squeezing index perturbation engineering\",\n      \"hierarchical modular networks\",\n      \"structural response mechanism\",\n      \"dynamic response predictive model\",\n      \"structure-based supervised machine learning\",\n      \"epistasis\",\n      \"catalytic types\"\n    ],\n    \"辅学科\": {}\n  }\n}\n\n/* relations */\n```json\n{\n  \"跨学科关系\": [\n    {\n      \"head\": \"iCASE\",\n      \"tail\": \"hierarchical modular networks\",\n      \"relation\": \"constructs\",\n      \"relation_type\": \"method_applied_to\",\n      \"direction\": \"->\",\n      \"assumptions\": [],\n      \"evidence\": \"to construct hierarchical modular networks for enzymes of varying complexity\",\n      \"source\": \"abstract\",\n      \"confidence\": 1\n    },\n    {\n      \"head\": \"structural response mechanism\",\n      \"tail\": \"adaptive evolution\",\n      \"relation\": \"reaches peak of\",\n      \"relation_type\": \"improves_metric\",\n      \"direction\": \"->\",\n      \"assumptions\": [],\n      \"evidence\": \"the peak of adaptive evolution is reached through a structural response mechanism among variants\",\n      \"source\": \"abstract\",\n      \"confidence\": 1\n    },\n    {\n      \"head\": \"dynamic response predictive model\",\n      \"tail\": \"enzyme function and fitness\",\n      \"relation\": \"predicts\",\n      \"relation_type\": \"method_applied_to\",\n      \"direction\": \"->\",\n      \"assumptions\": [],\n      \"evidence\": \"to predict enzyme function and fitness\",\n      \"source\": \"abstract\",\n      \"confidence\": 1\n    },\n    {\n      \"head\": \"dynamic response predictive model\",\n      \"tail\": \"epistasis\",\n      \"relation\": \"predicts\",\n      \"relation_type\": \"method_applied_to\",\n      \"direction\": \"->\",\n      \"assumptions\": [],\n      \"evidence\": \"demonstrating robust performance across different datasets and reliable prediction for epistasis\",\n      \"source\": \"abstract\",\n      \"confidence\": 1\n    },\n    {\n      \"head\": \"iCASE\",\n      \"tail\": \"fitness evolution\",\n      \"relation\": \"provides guidance for\",\n      \"relation_type\": \"method_applied_to\",\n      \"direction\": \"->\",\n      \"assumptions\": [],\n      \"evidence\": \"This machine learning-based iCASE strategy provides guidance for future research on the fitness evolution of enzymes\",\n      \"source\": \"abstract\",\n      \"confidence\": 1\n    }\n  ]\n}\n```\n\n/* stage2: query */\n{\n  \"按辅助学科分类\": {},\n  \"查询\": {\n    \"一级\": \"如何优化工业酶的热稳定性和活性进化\",\n    \"二级\": [\n      \"如何结合机器学习方法优化工业酶的热稳定性和活性进化\",\n      \"如何利用分层模块化网络提升工业酶的性能\"\n    ],\n    \"三级\": [\n      \"如何通过机器学习构建动态响应预测模型，结合分层模块化网络优化工业酶的热稳定性和活性进化\",\n      \"如何利用结构响应机制和适应性进化策略，通过机器学习方法提升工业酶的性能\"\n    ]\n  }\n}\n\n/* stage3: hypothesis L1 */\n{\n  \"假设\": {\n    \"一级\": [\n      [\n        {\n          \"step\": 1,\n          \"head\": \"酶\",\n          \"relation\": \"存在\",\n          \"tail\": \"稳定性-活性权衡\",\n          \"claim\": \"酶在进化过程中存在稳定性与活性之间的权衡问题\"\n        },\n        {\n          \"step\": 2,\n          \"head\": \"稳定性-活性权衡\",\n          \"relation\": \"限制\",\n          \"tail\": \"适应性进化\",\n          \"claim\": \"稳定性与活性的权衡限制了酶的适应性进化\"\n        },\n        {\n          \"step\": 3,\n          \"head\": \"适应性进化\",\n          \"relation\": \"需要\",\n          \"tail\": \"动态响应预测模型\",\n          \"claim\": \"酶的适应性进化需要动态响应预测模型来优化热稳定性和活性\"\n        }\n      ],\n      [\n        {\n          \"step\": 1,\n          \"head\": \"酶\",\n          \"relation\": \"通过\",\n          \"tail\": \"等温压缩性辅助动态挤压指数扰动工程\",\n          \"claim\": \"酶通过等温压缩性辅助动态挤压指数扰动工程进行优化\"\n        },\n        {\n          \"step\": 2,\n          \"head\": \"等温压缩性辅助动态挤压指数扰动工程\",\n          \"relation\": \"构建\",\n          \"tail\": \"分层模块化网络\",\n          \"claim\": \"等温压缩性辅助动态挤压指数扰动工程构建了分层模块化网络\"\n        },\n        {\n          \"step\": 3,\n          \"head\": \"分层模块化网络\",\n          \"relation\": \"促进\",\n          \"tail\": \"结构响应机制\",\n          \"claim\": \"分层模块化网络促进结构响应机制以提升酶的性能\"\n        }\n      ]\n    ],\n    \"一级总结\": [\n      \"酶的稳定性与活性权衡限制了适应性进化，需要动态响应预测模型来优化热稳定性和活性\",\n      \"通过等温压缩性辅助动态挤压指数扰动工程构建分层模块化网络，促进结构响应机制以提升酶的性能\"\n    ]\n  }\n}\n\n/* stage3: hypothesis L2 */\n{\n  \"假设\": {\n    \"二级\": [\n      [\n        {\n          \"head\": \"机器学习\",\n          \"tail\": \"动态响应预测模型\",\n          \"relation\": \"构建\"\n        },\n        {\n          \"head\": \"动态响应预测模型\",\n          \"tail\": \"酶功能和适应性\",\n          \"relation\": \"预测\"\n        },\n        {\n          \"head\": \"酶功能和适应性\",\n          \"tail\": \"适应性进化\",\n          \"relation\": \"促进\"\n        }\n      ],\n      [\n        {\n          \"head\": \"分层模块化网络\",\n          \"tail\": \"结构响应机制\",\n          \"relation\": \"形成\"\n        },\n        {\n          \"head\": \"结构响应机制\",\n          \"tail\": \"适应性进化\",\n          \"relation\": \"达到峰值\"\n        },\n        {\n          \"head\": \"适应性进化\",\n          \"tail\": \"酶\",\n          \"relation\": \"优化\"\n        }\n      ]\n    ],\n    \"二级总结\": [\n      \"通过机器学习构建动态响应预测模型，预测酶功能和适应性，进而促进酶的适应性进化\",\n      \"利用分层模块化网络形成结构响应机制，达到适应性进化峰值，从而优化酶的性能\"\n    ]\n  }\n}\n\n/* stage3: hypothesis L3 */\n{\n  \"假设\": {\n    \"三级\": [\n      [\n        {\n          \"step\": 1,\n          \"head\": \"分层模块化网络\",\n          \"tail\": \"酶\",\n          \"relation\": \"优化\",\n          \"claim\": \"分层模块化网络可以优化酶的结构\"\n        },\n        {\n          \"step\": 2,\n          \"head\": \"酶\",\n          \"tail\": \"动态响应预测模型\",\n          \"relation\": \"输入\",\n          \"claim\": \"优化后的酶结构作为动态响应预测模型的输入\"\n        },\n        {\n          \"step\": 3,\n          \"head\": \"动态响应预测模型\",\n          \"tail\": \"酶功能和适应性\",\n          \"relation\": \"预测\",\n          \"claim\": \"动态响应预测模型预测酶功能和适应性\"\n        }\n      ],\n      [\n        {\n          \"step\": 1,\n          \"head\": \"结构响应机制\",\n          \"tail\": \"适应性进化\",\n          \"relation\": \"促进\",\n          \"claim\": \"结构响应机制促进适应性进化\"\n        },\n        {\n          \"step\": 2,\n          \"head\": \"适应性进化\",\n          \"tail\": \"酶\",\n          \"relation\": \"提升\",\n          \"claim\": \"适应性进化提升酶的性能\"\n        },\n        {\n          \"step\": 3,\n          \"head\": \"酶\",\n          \"tail\": \"动态响应预测模型\",\n          \"relation\": \"验证\",\n          \"claim\": \"酶的性能通过动态响应预测模型进行验证\"\n        }\n      ]\n    ],\n    \"三级总结\": [\n      \"通过分层模块化网络优化酶结构，输入动态响应预测模型预测酶功能和适应性，形成闭环验证\",\n      \"结构响应机制促进适应性进化提升酶性能，并通过动态响应预测模型验证性能提升效果\"\n    ]\n  }\n}",
+    "ok": true,
+    "error": ""
+  },
+  {
+    "title": "Allogeneic CD33-directed CAR-NKT cells for the treatment of bone marrow-resident myeloid malignancies",
+    "abstract": "Abstract Chimeric antigen receptor (CAR)-engineered T cell therapy holds promise for treating myeloid malignancies, but challenges remain in bone marrow (BM) infiltration and targeting BM-resident malignant cells. Current autologous CAR-T therapies also face manufacturing and patient selection issues, underscoring the need for off-the-shelf products. In this study, we characterize primary patient samples and identify a unique therapeutic opportunity for CAR-engineered invariant natural killer T (CAR-NKT) cells. Using stem cell gene engineering and a clinically guided culture method, we generate allogeneic CD33-directed CAR-NKT cells with high yield, purity, and robustness. In preclinical mouse models, CAR-NKT cells exhibit strong BM homing and effectively target BM-resident malignant blast cells, including CD33-low/negative leukemia stem and progenitor cells. Furthermore, CAR-NKT cells synergize with hypomethylating agents, enhancing tumor-killing efficacy. These cells also show minimal off-tumor toxicity, reduced graft-versus-host disease and cytokine release syndrome risks, and resistance to allorejection, highlighting their substantial therapeutic potential for treating myeloid malignancies.",
+    "pdf_url": "",
+    "primary": "生物学",
+    "secondary": "",
+    "secondary_list": [],
+    "introduction": "",
+    "parsed": {
+      "meta": {
+        "title": "Allogeneic CD33-directed CAR-NKT cells for the treatment of bone marrow-resident myeloid malignancies",
+        "primary": "生物学",
+        "secondary_list": []
+      },
+      "概念": {
+        "主学科": [
+          {
+            "term": "Chimeric antigen receptor",
+            "normalized": "嵌合抗原受体",
+            "std_label": null,
+            "evidence": "Chimeric antigen receptor (CAR)-engineered T cell therapy holds promise for treating myeloid malignancies",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "term": "CAR-engineered T cell therapy",
+            "normalized": "CAR工程化T细胞疗法",
+            "std_label": null,
+            "evidence": "Chimeric antigen receptor (CAR)-engineered T cell therapy holds promise for treating myeloid malignancies",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "term": "myeloid malignancies",
+            "normalized": "髓系恶性肿瘤",
+            "std_label": null,
+            "evidence": "Chimeric antigen receptor (CAR)-engineered T cell therapy holds promise for treating myeloid malignancies",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "term": "bone marrow (BM) infiltration",
+            "normalized": "骨髓浸润",
+            "std_label": null,
+            "evidence": "but challenges remain in bone marrow (BM) infiltration and targeting BM-resident malignant cells",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "term": "BM-resident malignant cells",
+            "normalized": "骨髓驻留恶性细胞",
+            "std_label": null,
+            "evidence": "but challenges remain in bone marrow (BM) infiltration and targeting BM-resident malignant cells",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "term": "autologous CAR-T therapies",
+            "normalized": "自体CAR-T疗法",
+            "std_label": null,
+            "evidence": "Current autologous CAR-T therapies also face manufacturing and patient selection issues",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "term": "off-the-shelf products",
+            "normalized": "现成产品",
+            "std_label": null,
+            "evidence": "underscoring the need for off-the-shelf products",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "term": "CAR-engineered invariant natural killer T (CAR-NKT) cells",
+            "normalized": "CAR工程化不变自然杀伤T细胞",
+            "std_label": null,
+            "evidence": "we characterize primary patient samples and identify a unique therapeutic opportunity for CAR-engineered invariant natural killer T (CAR-NKT) cells",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "term": "stem cell gene engineering",
+            "normalized": "干细胞基因工程",
+            "std_label": null,
+            "evidence": "Using stem cell gene engineering and a clinically guided culture method",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "term": "clinically guided culture method",
+            "normalized": "临床指导的培养方法",
+            "std_label": null,
+            "evidence": "Using stem cell gene engineering and a clinically guided culture method",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "term": "allogeneic CD33-directed CAR-NKT cells",
+            "normalized": "异体CD33导向的CAR-NKT细胞",
+            "std_label": null,
+            "evidence": "we generate allogeneic CD33-directed CAR-NKT cells with high yield, purity, and robustness",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "term": "preclinical mouse models",
+            "normalized": "临床前小鼠模型",
+            "std_label": null,
+            "evidence": "In preclinical mouse models, CAR-NKT cells exhibit strong BM homing and effectively target BM-resident malignant blast cells",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "term": "BM homing",
+            "normalized": "骨髓归巢",
+            "std_label": null,
+            "evidence": "In preclinical mouse models, CAR-NKT cells exhibit strong BM homing and effectively target BM-resident malignant blast cells",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "term": "BM-resident malignant blast cells",
+            "normalized": "骨髓驻留恶性母细胞",
+            "std_label": null,
+            "evidence": "In preclinical mouse models, CAR-NKT cells exhibit strong BM homing and effectively target BM-resident malignant blast cells",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "term": "CD33-low/negative leukemia stem and progenitor cells",
+            "normalized": "CD33低/阴性白血病干细胞和祖细胞",
+            "std_label": null,
+            "evidence": "including CD33-low/negative leukemia stem and progenitor cells",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "term": "hypomethylating agents",
+            "normalized": "低甲基化剂",
+            "std_label": null,
+            "evidence": "CAR-NKT cells synergize with hypomethylating agents, enhancing tumor-killing efficacy",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "term": "tumor-killing efficacy",
+            "normalized": "肿瘤杀伤效力",
+            "std_label": null,
+            "evidence": "CAR-NKT cells synergize with hypomethylating agents, enhancing tumor-killing efficacy",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "term": "off-tumor toxicity",
+            "normalized": "非肿瘤毒性",
+            "std_label": null,
+            "evidence": "These cells also show minimal off-tumor toxicity",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "term": "graft-versus-host disease",
+            "normalized": "移植物抗宿主病",
+            "std_label": null,
+            "evidence": "reduced graft-versus-host disease and cytokine release syndrome risks",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "term": "cytokine release syndrome",
+            "normalized": "细胞因子释放综合征",
+            "std_label": null,
+            "evidence": "reduced graft-versus-host disease and cytokine release syndrome risks",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "term": "allorejection",
+            "normalized": "同种异体排斥",
+            "std_label": null,
+            "evidence": "and resistance to allorejection",
+            "source": "abstract",
+            "confidence": 1.0
+          }
+        ],
+        "辅学科": {}
+      },
+      "跨学科关系": [
+        {
+          "head": "CAR-engineered T cell therapy",
+          "relation": "holds promise for treating",
+          "relation_type": "method_applied_to",
+          "relation_type_norm": "method_applied_to",
+          "relation_type_raw": "method_applied_to",
+          "tail": "myeloid malignancies",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "Chimeric antigen receptor (CAR)-engineered T cell therapy holds promise for treating myeloid malignancies",
+          "source": "abstract",
+          "confidence": 1.0
+        },
+        {
+          "head": "CAR-engineered invariant natural killer T (CAR-NKT) cells",
+          "relation": "therapeutic opportunity for",
+          "relation_type": "method_applied_to",
+          "relation_type_norm": "method_applied_to",
+          "relation_type_raw": "method_applied_to",
+          "tail": "myeloid malignancies",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "we characterize primary patient samples and identify a unique therapeutic opportunity for CAR-engineered invariant natural killer T (CAR-NKT) cells",
+          "source": "abstract",
+          "confidence": 1.0
+        },
+        {
+          "head": "stem cell gene engineering",
+          "relation": "used to generate",
+          "relation_type": "method_applied_to",
+          "relation_type_norm": "method_applied_to",
+          "relation_type_raw": "method_applied_to",
+          "tail": "allogeneic CD33-directed CAR-NKT cells",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "Using stem cell gene engineering and a clinically guided culture method, we generate allogeneic CD33-directed CAR-NKT cells with high yield, purity, and robustness",
+          "source": "abstract",
+          "confidence": 1.0
+        },
+        {
+          "head": "clinically guided culture method",
+          "relation": "used to generate",
+          "relation_type": "method_applied_to",
+          "relation_type_norm": "method_applied_to",
+          "relation_type_raw": "method_applied_to",
+          "tail": "allogeneic CD33-directed CAR-NKT cells",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "Using stem cell gene engineering and a clinically guided culture method, we generate allogeneic CD33-directed CAR-NKT cells with high yield, purity, and robustness",
+          "source": "abstract",
+          "confidence": 1.0
+        },
+        {
+          "head": "CAR-NKT cells",
+          "relation": "exhibit",
+          "relation_type": "improves_metric",
+          "relation_type_norm": "improves_metric",
+          "relation_type_raw": "improves_metric",
+          "tail": "BM homing",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "In preclinical mouse models, CAR-NKT cells exhibit strong BM homing and effectively target BM-resident malignant blast cells",
+          "source": "abstract",
+          "confidence": 1.0
+        },
+        {
+          "head": "CAR-NKT cells",
+          "relation": "effectively target",
+          "relation_type": "method_applied_to",
+          "relation_type_norm": "method_applied_to",
+          "relation_type_raw": "method_applied_to",
+          "tail": "BM-resident malignant blast cells",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "In preclinical mouse models, CAR-NKT cells exhibit strong BM homing and effectively target BM-resident malignant blast cells",
+          "source": "abstract",
+          "confidence": 1.0
+        },
+        {
+          "head": "CAR-NKT cells",
+          "relation": "target",
+          "relation_type": "method_applied_to",
+          "relation_type_norm": "method_applied_to",
+          "relation_type_raw": "method_applied_to",
+          "tail": "CD33-low/negative leukemia stem and progenitor cells",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "including CD33-low/negative leukemia stem and progenitor cells",
+          "source": "abstract",
+          "confidence": 1.0
+        },
+        {
+          "head": "CAR-NKT cells",
+          "relation": "synergize with",
+          "relation_type": "improves_metric",
+          "relation_type_norm": "improves_metric",
+          "relation_type_raw": "improves_metric",
+          "tail": "hypomethylating agents",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "CAR-NKT cells synergize with hypomethylating agents, enhancing tumor-killing efficacy",
+          "source": "abstract",
+          "confidence": 1.0
+        },
+        {
+          "head": "CAR-NKT cells",
+          "relation": "enhancing",
+          "relation_type": "improves_metric",
+          "relation_type_norm": "improves_metric",
+          "relation_type_raw": "improves_metric",
+          "tail": "tumor-killing efficacy",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "CAR-NKT cells synergize with hypomethylating agents, enhancing tumor-killing efficacy",
+          "source": "abstract",
+          "confidence": 1.0
+        },
+        {
+          "head": "CAR-NKT cells",
+          "relation": "show minimal",
+          "relation_type": "improves_metric",
+          "relation_type_norm": "improves_metric",
+          "relation_type_raw": "improves_metric",
+          "tail": "off-tumor toxicity",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "These cells also show minimal off-tumor toxicity",
+          "source": "abstract",
+          "confidence": 1.0
+        },
+        {
+          "head": "CAR-NKT cells",
+          "relation": "reduced",
+          "relation_type": "improves_metric",
+          "relation_type_norm": "improves_metric",
+          "relation_type_raw": "improves_metric",
+          "tail": "graft-versus-host disease",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "reduced graft-versus-host disease and cytokine release syndrome risks",
+          "source": "abstract",
+          "confidence": 1.0
+        },
+        {
+          "head": "CAR-NKT cells",
+          "relation": "reduced",
+          "relation_type": "improves_metric",
+          "relation_type_norm": "improves_metric",
+          "relation_type_raw": "improves_metric",
+          "tail": "cytokine release syndrome",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "reduced graft-versus-host disease and cytokine release syndrome risks",
+          "source": "abstract",
+          "confidence": 1.0
+        },
+        {
+          "head": "CAR-NKT cells",
+          "relation": "resistance to",
+          "relation_type": "improves_metric",
+          "relation_type_norm": "improves_metric",
+          "relation_type_raw": "improves_metric",
+          "tail": "allorejection",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "and resistance to allorejection",
+          "source": "abstract",
+          "confidence": 1.0
+        }
+      ],
+      "按辅助学科分类": {},
+      "查询": {
+        "一级": "如何利用嵌合抗原受体技术改进髓系恶性肿瘤的治疗效果",
+        "二级": [
+          "如何结合干细胞基因工程和临床指导的培养方法开发新型细胞疗法",
+          "如何通过低甲基化剂增强肿瘤杀伤效力"
+        ],
+        "三级": [
+          "如何通过干细胞基因工程构建异体导向的细胞，并结合临床前小鼠模型验证其骨髓归巢能力与治疗效果",
+          "如何整合低甲基化剂与细胞的协同作用机制，建立联合治疗方案以提升髓系恶性肿瘤的清除效率"
+        ]
+      },
+      "假设": {
+        "一级": [
+          [
+            {
+              "step": 1,
+              "head": "嵌合抗原受体",
+              "relation": "应用于",
+              "tail": "髓系恶性肿瘤",
+              "claim": "嵌合抗原受体技术对髓系恶性肿瘤具有潜在治疗价值"
+            },
+            {
+              "step": 2,
+              "head": "髓系恶性肿瘤",
+              "relation": "面临",
+              "tail": "骨髓浸润",
+              "claim": "髓系恶性肿瘤治疗面临骨髓浸润的挑战"
+            },
+            {
+              "step": 3,
+              "head": "骨髓浸润",
+              "relation": "需通过",
+              "tail": "工程化不变自然杀伤细胞",
+              "claim": "需要开发工程化不变自然杀伤细胞以解决骨髓浸润问题"
+            }
+          ],
+          [
+            {
+              "step": 1,
+              "head": "工程化细胞疗法",
+              "relation": "存在",
+              "tail": "自体疗法",
+              "claim": "当前工程化细胞疗法依赖自体疗法"
+            },
+            {
+              "step": 2,
+              "head": "自体疗法",
+              "relation": "面临",
+              "tail": "现成产品",
+              "claim": "自体疗法面临现成产品不足的问题"
+            },
+            {
+              "step": 3,
+              "head": "现成产品",
+              "relation": "需开发",
+              "tail": "异体导向的细胞",
+              "claim": "需要开发异体导向的细胞以解决现成产品不足的问题"
+            }
+          ]
+        ],
+        "二级": [
+          [
+            {
+              "step": 1,
+              "head": "干细胞基因工程",
+              "relation": "用于生成",
+              "tail": "异体导向的细胞",
+              "claim": "干细胞基因工程 用于生成 异体导向的细胞"
+            },
+            {
+              "step": 2,
+              "head": "异体导向的细胞",
+              "relation": "展现",
+              "tail": "骨髓归巢",
+              "claim": "异体导向的细胞 展现 骨髓归巢"
+            },
+            {
+              "step": 3,
+              "head": "骨髓归巢",
+              "relation": "靶向治疗",
+              "tail": "髓系恶性肿瘤",
+              "claim": "骨髓归巢 靶向治疗 髓系恶性肿瘤"
+            }
+          ],
+          [
+            {
+              "step": 1,
+              "head": "低甲基化剂",
+              "relation": "增强",
+              "tail": "肿瘤杀伤效力",
+              "claim": "低甲基化剂 增强 肿瘤杀伤效力"
+            },
+            {
+              "step": 2,
+              "head": "肿瘤杀伤效力",
+              "relation": "协同提升",
+              "tail": "工程化不变自然杀伤细胞",
+              "claim": "肿瘤杀伤效力 协同提升 工程化不变自然杀伤细胞"
+            },
+            {
+              "step": 3,
+              "head": "工程化不变自然杀伤细胞",
+              "relation": "有效清除",
+              "tail": "髓系恶性肿瘤",
+              "claim": "工程化不变自然杀伤细胞 有效清除 髓系恶性肿瘤"
+            }
+          ]
+        ],
+        "三级": [
+          [
+            {
+              "step": 1,
+              "head": "干细胞基因工程",
+              "relation": "用于构建",
+              "tail": "异体导向的细胞",
+              "claim": "干细胞基因工程 用于构建 异体导向的细胞"
+            },
+            {
+              "step": 2,
+              "head": "异体导向的细胞",
+              "relation": "表现出",
+              "tail": "骨髓归巢",
+              "claim": "异体导向的细胞 表现出 骨髓归巢"
+            },
+            {
+              "step": 3,
+              "head": "骨髓归巢",
+              "relation": "有效靶向",
+              "tail": "骨髓驻留恶性母细胞",
+              "claim": "骨髓归巢 有效靶向 骨髓驻留恶性母细胞"
+            }
+          ],
+          [
+            {
+              "step": 1,
+              "head": "低甲基化剂",
+              "relation": "协同作用",
+              "tail": "工程化不变自然杀伤细胞",
+              "claim": "低甲基化剂 协同作用 工程化不变自然杀伤细胞"
+            },
+            {
+              "step": 2,
+              "head": "工程化不变自然杀伤细胞",
+              "relation": "增强",
+              "tail": "肿瘤杀伤效力",
+              "claim": "工程化不变自然杀伤细胞 增强 肿瘤杀伤效力"
+            },
+            {
+              "step": 3,
+              "head": "肿瘤杀伤效力",
+              "relation": "提升清除效率",
+              "tail": "髓系恶性肿瘤",
+              "claim": "肿瘤杀伤效力 提升清除效率 髓系恶性肿瘤"
+            }
+          ]
+        ],
+        "一级总结": [
+          "嵌合抗原受体技术治疗髓系恶性肿瘤面临骨髓浸润挑战，需开发工程化不变自然杀伤细胞以解决",
+          "当前工程化细胞疗法依赖自体疗法且现成产品不足，需开发异体导向的细胞以解决"
+        ],
+        "二级总结": [
+          "通过干细胞基因工程技术生成新型细胞疗法，并验证其骨髓归巢能力，从而实现对髓系恶性肿瘤的靶向治疗",
+          "利用低甲基化剂增强肿瘤杀伤效力，与细胞疗法协同作用，提升对髓系恶性肿瘤的清除效果"
+        ],
+        "三级总结": [
+          "通过干细胞基因工程构建的异体导向细胞在临床前模型中验证了其骨髓归巢能力与对恶性细胞的靶向治疗效果",
+          "低甲基化剂与工程化细胞的协同作用机制通过增强肿瘤杀伤效力提升了髓系恶性肿瘤的清除效率"
+        ]
+      },
+      "graph": {
+        "nodes": [
+          {
+            "id": "嵌合抗原受体",
+            "term": "Chimeric antigen receptor",
+            "normalized": "嵌合抗原受体",
+            "discipline": "生物学",
+            "evidence": "Chimeric antigen receptor (CAR)-engineered T cell therapy holds promise for treating myeloid malignancies",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "id": "CAR工程化T细胞疗法",
+            "term": "CAR-engineered T cell therapy",
+            "normalized": "CAR工程化T细胞疗法",
+            "discipline": "生物学",
+            "evidence": "Chimeric antigen receptor (CAR)-engineered T cell therapy holds promise for treating myeloid malignancies",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "id": "髓系恶性肿瘤",
+            "term": "myeloid malignancies",
+            "normalized": "髓系恶性肿瘤",
+            "discipline": "生物学",
+            "evidence": "Chimeric antigen receptor (CAR)-engineered T cell therapy holds promise for treating myeloid malignancies",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "id": "骨髓浸润",
+            "term": "bone marrow (BM) infiltration",
+            "normalized": "骨髓浸润",
+            "discipline": "生物学",
+            "evidence": "but challenges remain in bone marrow (BM) infiltration and targeting BM-resident malignant cells",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "id": "骨髓驻留恶性细胞",
+            "term": "BM-resident malignant cells",
+            "normalized": "骨髓驻留恶性细胞",
+            "discipline": "生物学",
+            "evidence": "but challenges remain in bone marrow (BM) infiltration and targeting BM-resident malignant cells",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "id": "自体CAR-T疗法",
+            "term": "autologous CAR-T therapies",
+            "normalized": "自体CAR-T疗法",
+            "discipline": "生物学",
+            "evidence": "Current autologous CAR-T therapies also face manufacturing and patient selection issues",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "id": "现成产品",
+            "term": "off-the-shelf products",
+            "normalized": "现成产品",
+            "discipline": "生物学",
+            "evidence": "underscoring the need for off-the-shelf products",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "id": "CAR工程化不变自然杀伤T细胞",
+            "term": "CAR-engineered invariant natural killer T (CAR-NKT) cells",
+            "normalized": "CAR工程化不变自然杀伤T细胞",
+            "discipline": "生物学",
+            "evidence": "we characterize primary patient samples and identify a unique therapeutic opportunity for CAR-engineered invariant natural killer T (CAR-NKT) cells",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "id": "干细胞基因工程",
+            "term": "stem cell gene engineering",
+            "normalized": "干细胞基因工程",
+            "discipline": "生物学",
+            "evidence": "Using stem cell gene engineering and a clinically guided culture method",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "id": "临床指导的培养方法",
+            "term": "clinically guided culture method",
+            "normalized": "临床指导的培养方法",
+            "discipline": "生物学",
+            "evidence": "Using stem cell gene engineering and a clinically guided culture method",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "id": "异体CD33导向的CAR-NKT细胞",
+            "term": "allogeneic CD33-directed CAR-NKT cells",
+            "normalized": "异体CD33导向的CAR-NKT细胞",
+            "discipline": "生物学",
+            "evidence": "we generate allogeneic CD33-directed CAR-NKT cells with high yield, purity, and robustness",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "id": "临床前小鼠模型",
+            "term": "preclinical mouse models",
+            "normalized": "临床前小鼠模型",
+            "discipline": "生物学",
+            "evidence": "In preclinical mouse models, CAR-NKT cells exhibit strong BM homing and effectively target BM-resident malignant blast cells",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "id": "骨髓归巢",
+            "term": "BM homing",
+            "normalized": "骨髓归巢",
+            "discipline": "生物学",
+            "evidence": "In preclinical mouse models, CAR-NKT cells exhibit strong BM homing and effectively target BM-resident malignant blast cells",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "id": "骨髓驻留恶性母细胞",
+            "term": "BM-resident malignant blast cells",
+            "normalized": "骨髓驻留恶性母细胞",
+            "discipline": "生物学",
+            "evidence": "In preclinical mouse models, CAR-NKT cells exhibit strong BM homing and effectively target BM-resident malignant blast cells",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "id": "CD33低/阴性白血病干细胞和祖细胞",
+            "term": "CD33-low/negative leukemia stem and progenitor cells",
+            "normalized": "CD33低/阴性白血病干细胞和祖细胞",
+            "discipline": "生物学",
+            "evidence": "including CD33-low/negative leukemia stem and progenitor cells",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "id": "低甲基化剂",
+            "term": "hypomethylating agents",
+            "normalized": "低甲基化剂",
+            "discipline": "生物学",
+            "evidence": "CAR-NKT cells synergize with hypomethylating agents, enhancing tumor-killing efficacy",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "id": "肿瘤杀伤效力",
+            "term": "tumor-killing efficacy",
+            "normalized": "肿瘤杀伤效力",
+            "discipline": "生物学",
+            "evidence": "CAR-NKT cells synergize with hypomethylating agents, enhancing tumor-killing efficacy",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "id": "非肿瘤毒性",
+            "term": "off-tumor toxicity",
+            "normalized": "非肿瘤毒性",
+            "discipline": "生物学",
+            "evidence": "These cells also show minimal off-tumor toxicity",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "id": "移植物抗宿主病",
+            "term": "graft-versus-host disease",
+            "normalized": "移植物抗宿主病",
+            "discipline": "生物学",
+            "evidence": "reduced graft-versus-host disease and cytokine release syndrome risks",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "id": "细胞因子释放综合征",
+            "term": "cytokine release syndrome",
+            "normalized": "细胞因子释放综合征",
+            "discipline": "生物学",
+            "evidence": "reduced graft-versus-host disease and cytokine release syndrome risks",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "id": "同种异体排斥",
+            "term": "allorejection",
+            "normalized": "同种异体排斥",
+            "discipline": "生物学",
+            "evidence": "and resistance to allorejection",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "id": "CAR-NKT cells",
+            "term": "CAR-NKT cells",
+            "normalized": "CAR-NKT cells",
+            "discipline": "struct_relation_inferred",
+            "evidence": "",
+            "source": "hypothesis_inferred",
+            "confidence": 0.8
+          },
+          {
+            "id": "工程化不变自然杀伤细胞",
+            "term": "工程化不变自然杀伤细胞",
+            "normalized": "工程化不变自然杀伤细胞",
+            "discipline": "hypothesis_inferred",
+            "evidence": "",
+            "source": "hypothesis_inferred",
+            "confidence": 0.8
+          },
+          {
+            "id": "工程化细胞疗法",
+            "term": "工程化细胞疗法",
+            "normalized": "工程化细胞疗法",
+            "discipline": "hypothesis_inferred",
+            "evidence": "",
+            "source": "hypothesis_inferred",
+            "confidence": 0.8
+          },
+          {
+            "id": "自体疗法",
+            "term": "自体疗法",
+            "normalized": "自体疗法",
+            "discipline": "hypothesis_inferred",
+            "evidence": "",
+            "source": "hypothesis_inferred",
+            "confidence": 0.8
+          },
+          {
+            "id": "异体导向的细胞",
+            "term": "异体导向的细胞",
+            "normalized": "异体导向的细胞",
+            "discipline": "hypothesis_inferred",
+            "evidence": "",
+            "source": "hypothesis_inferred",
+            "confidence": 0.8
+          }
+        ],
+        "edges": [
+          {
+            "source": "CAR工程化T细胞疗法",
+            "target": "髓系恶性肿瘤",
+            "relation": "holds promise for treating",
+            "relation_type": "method_applied_to",
+            "metadata": {
+              "evidence": "Chimeric antigen receptor (CAR)-engineered T cell therapy holds promise for treating myeloid malignancies",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "CAR工程化不变自然杀伤T细胞",
+            "target": "髓系恶性肿瘤",
+            "relation": "therapeutic opportunity for",
+            "relation_type": "method_applied_to",
+            "metadata": {
+              "evidence": "we characterize primary patient samples and identify a unique therapeutic opportunity for CAR-engineered invariant natural killer T (CAR-NKT) cells",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "干细胞基因工程",
+            "target": "异体CD33导向的CAR-NKT细胞",
+            "relation": "used to generate",
+            "relation_type": "method_applied_to",
+            "metadata": {
+              "evidence": "Using stem cell gene engineering and a clinically guided culture method, we generate allogeneic CD33-directed CAR-NKT cells with high yield, purity, and robustness",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "临床指导的培养方法",
+            "target": "异体CD33导向的CAR-NKT细胞",
+            "relation": "used to generate",
+            "relation_type": "method_applied_to",
+            "metadata": {
+              "evidence": "Using stem cell gene engineering and a clinically guided culture method, we generate allogeneic CD33-directed CAR-NKT cells with high yield, purity, and robustness",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "CAR-NKT cells",
+            "target": "骨髓归巢",
+            "relation": "exhibit",
+            "relation_type": "improves_metric",
+            "metadata": {
+              "evidence": "In preclinical mouse models, CAR-NKT cells exhibit strong BM homing and effectively target BM-resident malignant blast cells",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "CAR-NKT cells",
+            "target": "骨髓驻留恶性母细胞",
+            "relation": "effectively target",
+            "relation_type": "method_applied_to",
+            "metadata": {
+              "evidence": "In preclinical mouse models, CAR-NKT cells exhibit strong BM homing and effectively target BM-resident malignant blast cells",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "CAR-NKT cells",
+            "target": "CD33低/阴性白血病干细胞和祖细胞",
+            "relation": "target",
+            "relation_type": "method_applied_to",
+            "metadata": {
+              "evidence": "including CD33-low/negative leukemia stem and progenitor cells",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "CAR-NKT cells",
+            "target": "低甲基化剂",
+            "relation": "synergize with",
+            "relation_type": "improves_metric",
+            "metadata": {
+              "evidence": "CAR-NKT cells synergize with hypomethylating agents, enhancing tumor-killing efficacy",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "CAR-NKT cells",
+            "target": "肿瘤杀伤效力",
+            "relation": "enhancing",
+            "relation_type": "improves_metric",
+            "metadata": {
+              "evidence": "CAR-NKT cells synergize with hypomethylating agents, enhancing tumor-killing efficacy",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "CAR-NKT cells",
+            "target": "非肿瘤毒性",
+            "relation": "show minimal",
+            "relation_type": "improves_metric",
+            "metadata": {
+              "evidence": "These cells also show minimal off-tumor toxicity",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "CAR-NKT cells",
+            "target": "移植物抗宿主病",
+            "relation": "reduced",
+            "relation_type": "improves_metric",
+            "metadata": {
+              "evidence": "reduced graft-versus-host disease and cytokine release syndrome risks",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "CAR-NKT cells",
+            "target": "细胞因子释放综合征",
+            "relation": "reduced",
+            "relation_type": "improves_metric",
+            "metadata": {
+              "evidence": "reduced graft-versus-host disease and cytokine release syndrome risks",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "CAR-NKT cells",
+            "target": "同种异体排斥",
+            "relation": "resistance to",
+            "relation_type": "improves_metric",
+            "metadata": {
+              "evidence": "and resistance to allorejection",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "嵌合抗原受体",
+            "target": "髓系恶性肿瘤",
+            "relation": "应用于",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "嵌合抗原受体技术对髓系恶性肿瘤具有潜在治疗价值",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "髓系恶性肿瘤",
+            "target": "骨髓浸润",
+            "relation": "面临",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "髓系恶性肿瘤治疗面临骨髓浸润的挑战",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "骨髓浸润",
+            "target": "工程化不变自然杀伤细胞",
+            "relation": "需通过",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "需要开发工程化不变自然杀伤细胞以解决骨髓浸润问题",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "工程化细胞疗法",
+            "target": "自体疗法",
+            "relation": "存在",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "当前工程化细胞疗法依赖自体疗法",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "自体疗法",
+            "target": "现成产品",
+            "relation": "面临",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "自体疗法面临现成产品不足的问题",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "现成产品",
+            "target": "异体导向的细胞",
+            "relation": "需开发",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "需要开发异体导向的细胞以解决现成产品不足的问题",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "干细胞基因工程",
+            "target": "异体导向的细胞",
+            "relation": "用于生成",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "干细胞基因工程 用于生成 异体导向的细胞",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "异体导向的细胞",
+            "target": "骨髓归巢",
+            "relation": "展现",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "异体导向的细胞 展现 骨髓归巢",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "骨髓归巢",
+            "target": "髓系恶性肿瘤",
+            "relation": "靶向治疗",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "骨髓归巢 靶向治疗 髓系恶性肿瘤",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "低甲基化剂",
+            "target": "肿瘤杀伤效力",
+            "relation": "增强",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "低甲基化剂 增强 肿瘤杀伤效力",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "肿瘤杀伤效力",
+            "target": "工程化不变自然杀伤细胞",
+            "relation": "协同提升",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "肿瘤杀伤效力 协同提升 工程化不变自然杀伤细胞",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "工程化不变自然杀伤细胞",
+            "target": "髓系恶性肿瘤",
+            "relation": "有效清除",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "工程化不变自然杀伤细胞 有效清除 髓系恶性肿瘤",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "干细胞基因工程",
+            "target": "异体导向的细胞",
+            "relation": "用于构建",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "干细胞基因工程 用于构建 异体导向的细胞",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "异体导向的细胞",
+            "target": "骨髓归巢",
+            "relation": "表现出",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "异体导向的细胞 表现出 骨髓归巢",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "骨髓归巢",
+            "target": "骨髓驻留恶性母细胞",
+            "relation": "有效靶向",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "骨髓归巢 有效靶向 骨髓驻留恶性母细胞",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "低甲基化剂",
+            "target": "工程化不变自然杀伤细胞",
+            "relation": "协同作用",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "低甲基化剂 协同作用 工程化不变自然杀伤细胞",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "工程化不变自然杀伤细胞",
+            "target": "肿瘤杀伤效力",
+            "relation": "增强",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "工程化不变自然杀伤细胞 增强 肿瘤杀伤效力",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "肿瘤杀伤效力",
+            "target": "髓系恶性肿瘤",
+            "relation": "提升清除效率",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "肿瘤杀伤效力 提升清除效率 髓系恶性肿瘤",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          }
+        ]
+      },
+      "metrics": {
+        "path_consistency": 0.0,
+        "coverage": 0.42857142857142855,
+        "bridging_score": 0.0,
+        "rao_stirling_diversity": 0.0,
+        "embedding_bridging": 0.875,
+        "consistency_precision": 0.0,
+        "consistency_recall": 0.0,
+        "consistency_f1": 0.0,
+        "info_novelty": 0.0,
+        "chain_coherence": 0.6131,
+        "atypical_combination": 0.6225,
+        "kg_density": 0.0446,
+        "kg_inverse_modularity": 1.1588,
+        "kg_largest_cc_ratio": 0.8846,
+        "kg_avg_betweenness": 0.074,
+        "kg_clustering_coefficient": 0.1532,
+        "concept_recall": 0.0,
+        "concept_precision": 0.0,
+        "concept_f1": 0.0,
+        "relation_precision": 0.0,
+        "relation_type_accuracy": 0.0,
+        "evidence_coverage": 0.0,
+        "path_alignment_best": 0.0,
+        "path_alignment_mean": 0.0
+      }
+    },
+    "raw": "/* stage1: struct */\n/* concepts round1 */\n```json\n{\n  \"meta\": {\n    \"title\": \"Allogeneic CD33-directed CAR-NKT cells for the treatment of bone marrow-resident myeloid malignancies\",\n    \"primary\": \"生物学\",\n    \"secondary_list\": []\n  },\n  \"概念\": {\n    \"主学科\": [\n      {\n        \"term\": \"Chimeric antigen receptor\",\n        \"normalized\": \"嵌合抗原受体\",\n        \"std_label\": null,\n        \"evidence\": \"Chimeric antigen receptor (CAR)-engineered T cell therapy holds promise for treating myeloid malignancies\",\n        \"source\": \"abstract\",\n        \"confidence\": 1\n      },\n      {\n        \"term\": \"CAR-engineered T cell therapy\",\n        \"normalized\": \"CAR工程化T细胞疗法\",\n        \"std_label\": null,\n        \"evidence\": \"Chimeric antigen receptor (CAR)-engineered T cell therapy holds promise for treating myeloid malignancies\",\n        \"source\": \"abstract\",\n        \"confidence\": 1\n      },\n      {\n        \"term\": \"myeloid malignancies\",\n        \"normalized\": \"髓系恶性肿瘤\",\n        \"std_label\": null,\n        \"evidence\": \"Chimeric antigen receptor (CAR)-engineered T cell therapy holds promise for treating myeloid malignancies\",\n        \"source\": \"abstract\",\n        \"confidence\": 1\n      },\n      {\n        \"term\": \"bone marrow (BM) infiltration\",\n        \"normalized\": \"骨髓浸润\",\n        \"std_label\": null,\n        \"evidence\": \"but challenges remain in bone marrow (BM) infiltration and targeting BM-resident malignant cells\",\n        \"source\": \"abstract\",\n        \"confidence\": 1\n      },\n      {\n        \"term\": \"BM-resident malignant cells\",\n        \"normalized\": \"骨髓驻留恶性细胞\",\n        \"std_label\": null,\n        \"evidence\": \"but challenges remain in bone marrow (BM) infiltration and targeting BM-resident malignant cells\",\n        \"source\": \"abstract\",\n        \"confidence\": 1\n      },\n      {\n        \"term\": \"autologous CAR-T therapies\",\n        \"normalized\": \"自体CAR-T疗法\",\n        \"std_label\": null,\n        \"evidence\": \"Current autologous CAR-T therapies also face manufacturing and patient selection issues\",\n        \"source\": \"abstract\",\n        \"confidence\": 1\n      },\n      {\n        \"term\": \"off-the-shelf products\",\n        \"normalized\": \"现成产品\",\n        \"std_label\": null,\n        \"evidence\": \"underscoring the need for off-the-shelf products\",\n        \"source\": \"abstract\",\n        \"confidence\": 1\n      },\n      {\n        \"term\": \"CAR-engineered invariant natural killer T (CAR-NKT) cells\",\n        \"normalized\": \"CAR工程化不变自然杀伤T细胞\",\n        \"std_label\": null,\n        \"evidence\": \"we characterize primary patient samples and identify a unique therapeutic opportunity for CAR-engineered invariant natural killer T (CAR-NKT) cells\",\n        \"source\": \"abstract\",\n        \"confidence\": 1\n      },\n      {\n        \"term\": \"stem cell gene engineering\",\n        \"normalized\": \"干细胞基因工程\",\n        \"std_label\": null,\n        \"evidence\": \"Using stem cell gene engineering and a clinically guided culture method\",\n        \"source\": \"abstract\",\n        \"confidence\": 1\n      },\n      {\n        \"term\": \"clinically guided culture method\",\n        \"normalized\": \"临床指导的培养方法\",\n        \"std_label\": null,\n        \"evidence\": \"Using stem cell gene engineering and a clinically guided culture method\",\n        \"source\": \"abstract\",\n        \"confidence\": 1\n      },\n      {\n        \"term\": \"allogeneic CD33-directed CAR-NKT cells\",\n        \"normalized\": \"异体CD33导向的CAR-NKT细胞\",\n        \"std_label\": null,\n        \"evidence\": \"we generate allogeneic CD33-directed CAR-NKT cells with high yield, purity, and robustness\",\n        \"source\": \"abstract\",\n        \"confidence\": 1\n      },\n      {\n        \"term\": \"preclinical mouse models\",\n        \"normalized\": \"临床前小鼠模型\",\n        \"std_label\": null,\n        \"evidence\": \"In preclinical mouse models, CAR-NKT cells exhibit strong BM homing and effectively target BM-resident malignant blast cells\",\n        \"source\": \"abstract\",\n        \"confidence\": 1\n      },\n      {\n        \"term\": \"BM homing\",\n        \"normalized\": \"骨髓归巢\",\n        \"std_label\": null,\n        \"evidence\": \"In preclinical mouse models, CAR-NKT cells exhibit strong BM homing and effectively target BM-resident malignant blast cells\",\n        \"source\": \"abstract\",\n        \"confidence\": 1\n      },\n      {\n        \"term\": \"BM-resident malignant blast cells\",\n        \"normalized\": \"骨髓驻留恶性母细胞\",\n        \"std_label\": null,\n        \"evidence\": \"In preclinical mouse models, CAR-NKT cells exhibit strong BM homing and effectively target BM-resident malignant blast cells\",\n        \"source\": \"abstract\",\n        \"confidence\": 1\n      },\n      {\n        \"term\": \"CD33-low/negative leukemia stem and progenitor cells\",\n        \"normalized\": \"CD33低/阴性白血病干细胞和祖细胞\",\n        \"std_label\": null,\n        \"evidence\": \"including CD33-low/negative leukemia stem and progenitor cells\",\n        \"source\": \"abstract\",\n        \"confidence\": 1\n      },\n      {\n        \"term\": \"hypomethylating agents\",\n        \"normalized\": \"低甲基化剂\",\n        \"std_label\": null,\n        \"evidence\": \"CAR-NKT cells synergize with hypomethylating agents, enhancing tumor-killing efficacy\",\n        \"source\": \"abstract\",\n        \"confidence\": 1\n      },\n      {\n        \"term\": \"tumor-killing efficacy\",\n        \"normalized\": \"肿瘤杀伤效力\",\n        \"std_label\": null,\n        \"evidence\": \"CAR-NKT cells synergize with hypomethylating agents, enhancing tumor-killing efficacy\",\n        \"source\": \"abstract\",\n        \"confidence\": 1\n      },\n      {\n        \"term\": \"off-tumor toxicity\",\n        \"normalized\": \"非肿瘤毒性\",\n        \"std_label\": null,\n        \"evidence\": \"These cells also show minimal off-tumor toxicity\",\n        \"source\": \"abstract\",\n        \"confidence\": 1\n      },\n      {\n        \"term\": \"graft-versus-host disease\",\n        \"normalized\": \"移植物抗宿主病\",\n        \"std_label\": null,\n        \"evidence\": \"reduced graft-versus-host disease and cytokine release syndrome risks\",\n        \"source\": \"abstract\",\n        \"confidence\": 1\n      },\n      {\n        \"term\": \"cytokine release syndrome\",\n        \"normalized\": \"细胞因子释放综合征\",\n        \"std_label\": null,\n        \"evidence\": \"reduced graft-versus-host disease and cytokine release syndrome risks\",\n        \"source\": \"abstract\",\n        \"confidence\": 1\n      },\n      {\n        \"term\": \"allorejection\",\n        \"normalized\": \"同种异体排斥\",\n        \"std_label\": null,\n        \"evidence\": \"and resistance to allorejection\",\n        \"source\": \"abstract\",\n        \"confidence\": 1\n      }\n    ],\n    \"辅学科\": {}\n  }\n}\n```\n\n/* concepts round2 (supplement) */\n{\n  \"补充概念\": {\n    \"主学科\": [\n      \"primary patient samples\",\n      \"high yield\",\n      \"purity\",\n      \"robustness\"\n    ],\n    \"辅学科\": {}\n  }\n}\n\n/* relations */\n{\n  \"跨学科关系\": [\n    {\n      \"head\": \"CAR-engineered T cell therapy\",\n      \"tail\": \"myeloid malignancies\",\n      \"relation\": \"holds promise for treating\",\n      \"relation_type\": \"method_applied_to\",\n      \"direction\": \"->\",\n      \"assumptions\": [],\n      \"evidence\": \"Chimeric antigen receptor (CAR)-engineered T cell therapy holds promise for treating myeloid malignancies\",\n      \"source\": \"abstract\",\n      \"confidence\": 1\n    },\n    {\n      \"head\": \"CAR-engineered invariant natural killer T (CAR-NKT) cells\",\n      \"tail\": \"myeloid malignancies\",\n      \"relation\": \"therapeutic opportunity for\",\n      \"relation_type\": \"method_applied_to\",\n      \"direction\": \"->\",\n      \"assumptions\": [],\n      \"evidence\": \"we characterize primary patient samples and identify a unique therapeutic opportunity for CAR-engineered invariant natural killer T (CAR-NKT) cells\",\n      \"source\": \"abstract\",\n      \"confidence\": 1\n    },\n    {\n      \"head\": \"stem cell gene engineering\",\n      \"tail\": \"allogeneic CD33-directed CAR-NKT cells\",\n      \"relation\": \"used to generate\",\n      \"relation_type\": \"method_applied_to\",\n      \"direction\": \"->\",\n      \"assumptions\": [],\n      \"evidence\": \"Using stem cell gene engineering and a clinically guided culture method, we generate allogeneic CD33-directed CAR-NKT cells with high yield, purity, and robustness\",\n      \"source\": \"abstract\",\n      \"confidence\": 1\n    },\n    {\n      \"head\": \"clinically guided culture method\",\n      \"tail\": \"allogeneic CD33-directed CAR-NKT cells\",\n      \"relation\": \"used to generate\",\n      \"relation_type\": \"method_applied_to\",\n      \"direction\": \"->\",\n      \"assumptions\": [],\n      \"evidence\": \"Using stem cell gene engineering and a clinically guided culture method, we generate allogeneic CD33-directed CAR-NKT cells with high yield, purity, and robustness\",\n      \"source\": \"abstract\",\n      \"confidence\": 1\n    },\n    {\n      \"head\": \"CAR-NKT cells\",\n      \"tail\": \"BM homing\",\n      \"relation\": \"exhibit\",\n      \"relation_type\": \"improves_metric\",\n      \"direction\": \"->\",\n      \"assumptions\": [],\n      \"evidence\": \"In preclinical mouse models, CAR-NKT cells exhibit strong BM homing and effectively target BM-resident malignant blast cells\",\n      \"source\": \"abstract\",\n      \"confidence\": 1\n    },\n    {\n      \"head\": \"CAR-NKT cells\",\n      \"tail\": \"BM-resident malignant blast cells\",\n      \"relation\": \"effectively target\",\n      \"relation_type\": \"method_applied_to\",\n      \"direction\": \"->\",\n      \"assumptions\": [],\n      \"evidence\": \"In preclinical mouse models, CAR-NKT cells exhibit strong BM homing and effectively target BM-resident malignant blast cells\",\n      \"source\": \"abstract\",\n      \"confidence\": 1\n    },\n    {\n      \"head\": \"CAR-NKT cells\",\n      \"tail\": \"CD33-low/negative leukemia stem and progenitor cells\",\n      \"relation\": \"target\",\n      \"relation_type\": \"method_applied_to\",\n      \"direction\": \"->\",\n      \"assumptions\": [],\n      \"evidence\": \"including CD33-low/negative leukemia stem and progenitor cells\",\n      \"source\": \"abstract\",\n      \"confidence\": 1\n    },\n    {\n      \"head\": \"CAR-NKT cells\",\n      \"tail\": \"hypomethylating agents\",\n      \"relation\": \"synergize with\",\n      \"relation_type\": \"improves_metric\",\n      \"direction\": \"->\",\n      \"assumptions\": [],\n      \"evidence\": \"CAR-NKT cells synergize with hypomethylating agents, enhancing tumor-killing efficacy\",\n      \"source\": \"abstract\",\n      \"confidence\": 1\n    },\n    {\n      \"head\": \"CAR-NKT cells\",\n      \"tail\": \"tumor-killing efficacy\",\n      \"relation\": \"enhancing\",\n      \"relation_type\": \"improves_metric\",\n      \"direction\": \"->\",\n      \"assumptions\": [],\n      \"evidence\": \"CAR-NKT cells synergize with hypomethylating agents, enhancing tumor-killing efficacy\",\n      \"source\": \"abstract\",\n      \"confidence\": 1\n    },\n    {\n      \"head\": \"CAR-NKT cells\",\n      \"tail\": \"off-tumor toxicity\",\n      \"relation\": \"show minimal\",\n      \"relation_type\": \"improves_metric\",\n      \"direction\": \"->\",\n      \"assumptions\": [],\n      \"evidence\": \"These cells also show minimal off-tumor toxicity\",\n      \"source\": \"abstract\",\n      \"confidence\": 1\n    },\n    {\n      \"head\": \"CAR-NKT cells\",\n      \"tail\": \"graft-versus-host disease\",\n      \"relation\": \"reduced\",\n      \"relation_type\": \"improves_metric\",\n      \"direction\": \"->\",\n      \"assumptions\": [],\n      \"evidence\": \"reduced graft-versus-host disease and cytokine release syndrome risks\",\n      \"source\": \"abstract\",\n      \"confidence\": 1\n    },\n    {\n      \"head\": \"CAR-NKT cells\",\n      \"tail\": \"cytokine release syndrome\",\n      \"relation\": \"reduced\",\n      \"relation_type\": \"improves_metric\",\n      \"direction\": \"->\",\n      \"assumptions\": [],\n      \"evidence\": \"reduced graft-versus-host disease and cytokine release syndrome risks\",\n      \"source\": \"abstract\",\n      \"confidence\": 1\n    },\n    {\n      \"head\": \"CAR-NKT cells\",\n      \"tail\": \"allorejection\",\n      \"relation\": \"resistance to\",\n      \"relation_type\": \"improves_metric\",\n      \"direction\": \"->\",\n      \"assumptions\": [],\n      \"evidence\": \"and resistance to allorejection\",\n      \"source\": \"abstract\",\n      \"confidence\": 1\n    }\n  ]\n}\n\n/* stage2: query */\n{\n  \"按辅助学科分类\": {},\n  \"查询\": {\n    \"一级\": \"如何利用嵌合抗原受体技术改进髓系恶性肿瘤的治疗效果\",\n    \"二级\": [\n      \"如何结合干细胞基因工程和临床指导的培养方法开发新型细胞疗法\",\n      \"如何通过低甲基化剂增强肿瘤杀伤效力\"\n    ],\n    \"三级\": [\n      \"如何通过干细胞基因工程构建异体CD33导向的CAR-NKT细胞，并结合临床前小鼠模型验证其骨髓归巢能力与治疗效果\",\n      \"如何整合低甲基化剂与CAR-NKT细胞的协同作用机制，建立联合治疗方案以提升髓系恶性肿瘤的清除效率\"\n    ]\n  }\n}\n\n/* stage3: hypothesis L1 */\n{\n  \"假设\": {\n    \"一级\": [\n      [\n        {\n          \"step\": 1,\n          \"head\": \"嵌合抗原受体\",\n          \"relation\": \"应用于\",\n          \"tail\": \"髓系恶性肿瘤\",\n          \"claim\": \"嵌合抗原受体技术对髓系恶性肿瘤具有潜在治疗价值\"\n        },\n        {\n          \"step\": 2,\n          \"head\": \"髓系恶性肿瘤\",\n          \"relation\": \"面临\",\n          \"tail\": \"骨髓浸润\",\n          \"claim\": \"髓系恶性肿瘤治疗面临骨髓浸润的挑战\"\n        },\n        {\n          \"step\": 3,\n          \"head\": \"骨髓浸润\",\n          \"relation\": \"需通过\",\n          \"tail\": \"CAR工程化不变自然杀伤T细胞\",\n          \"claim\": \"需要开发CAR工程化不变自然杀伤T细胞以解决骨髓浸润问题\"\n        }\n      ],\n      [\n        {\n          \"step\": 1,\n          \"head\": \"CAR工程化T细胞疗法\",\n          \"relation\": \"存在\",\n          \"tail\": \"自体CAR-T疗法\",\n          \"claim\": \"当前CAR工程化T细胞疗法依赖自体CAR-T疗法\"\n        },\n        {\n          \"step\": 2,\n          \"head\": \"自体CAR-T疗法\",\n          \"relation\": \"面临\",\n          \"tail\": \"现成产品\",\n          \"claim\": \"自体CAR-T疗法面临现成产品不足的问题\"\n        },\n        {\n          \"step\": 3,\n          \"head\": \"现成产品\",\n          \"relation\": \"需开发\",\n          \"tail\": \"异体CD33导向的CAR-NKT细胞\",\n          \"claim\": \"需要开发异体CD33导向的CAR-NKT细胞以解决现成产品不足的问题\"\n        }\n      ]\n    ],\n    \"一级总结\": [\n      \"嵌合抗原受体技术治疗髓系恶性肿瘤面临骨髓浸润挑战，需开发CAR工程化不变自然杀伤T细胞以解决\",\n      \"当前CAR工程化T细胞疗法依赖自体CAR-T疗法且现成产品不足，需开发异体CD33导向的CAR-NKT细胞以解决\"\n    ]\n  }\n}\n\n/* stage3: hypothesis L2 */\n{\n  \"假设\": {\n    \"二级\": [\n      [\n        {\n          \"head\": \"干细胞基因工程\",\n          \"tail\": \"异体CD33导向的CAR-NKT细胞\",\n          \"relation\": \"用于生成\"\n        },\n        {\n          \"head\": \"异体CD33导向的CAR-NKT细胞\",\n          \"tail\": \"骨髓归巢\",\n          \"relation\": \"展现\"\n        },\n        {\n          \"head\": \"骨髓归巢\",\n          \"tail\": \"髓系恶性肿瘤\",\n          \"relation\": \"靶向治疗\"\n        }\n      ],\n      [\n        {\n          \"head\": \"低甲基化剂\",\n          \"tail\": \"肿瘤杀伤效力\",\n          \"relation\": \"增强\"\n        },\n        {\n          \"head\": \"肿瘤杀伤效力\",\n          \"tail\": \"CAR工程化不变自然杀伤T细胞\",\n          \"relation\": \"协同提升\"\n        },\n        {\n          \"head\": \"CAR工程化不变自然杀伤T细胞\",\n          \"tail\": \"髓系恶性肿瘤\",\n          \"relation\": \"有效清除\"\n        }\n      ]\n    ],\n    \"二级总结\": [\n      \"通过干细胞基因工程技术生成新型细胞疗法，并验证其骨髓归巢能力，从而实现对髓系恶性肿瘤的靶向治疗\",\n      \"利用低甲基化剂增强肿瘤杀伤效力，与细胞疗法协同作用，提升对髓系恶性肿瘤的清除效果\"\n    ]\n  }\n}\n\n/* stage3: hypothesis L3 */\n{\n  \"假设\": {\n    \"三级\": [\n      [\n        {\n          \"head\": \"干细胞基因工程\",\n          \"tail\": \"异体CD33导向的CAR-NKT细胞\",\n          \"relation\": \"用于构建\"\n        },\n        {\n          \"head\": \"异体CD33导向的CAR-NKT细胞\",\n          \"tail\": \"骨髓归巢\",\n          \"relation\": \"表现出\"\n        },\n        {\n          \"head\": \"骨髓归巢\",\n          \"tail\": \"骨髓驻留恶性母细胞\",\n          \"relation\": \"有效靶向\"\n        }\n      ],\n      [\n        {\n          \"head\": \"低甲基化剂\",\n          \"tail\": \"CAR工程化不变自然杀伤T细胞\",\n          \"relation\": \"协同作用\"\n        },\n        {\n          \"head\": \"CAR工程化不变自然杀伤T细胞\",\n          \"tail\": \"肿瘤杀伤效力\",\n          \"relation\": \"增强\"\n        },\n        {\n          \"head\": \"肿瘤杀伤效力\",\n          \"tail\": \"髓系恶性肿瘤\",\n          \"relation\": \"提升清除效率\"\n        }\n      ]\n    ],\n    \"三级总结\": [\n      \"通过干细胞基因工程构建的异体导向细胞在临床前模型中验证了其骨髓归巢能力与对恶性细胞的靶向治疗效果\",\n      \"低甲基化剂与工程化细胞的协同作用机制通过增强肿瘤杀伤效力提升了髓系恶性肿瘤的清除效率\"\n    ]\n  }\n}",
+    "ok": true,
+    "error": ""
+  },
+  {
+    "title": "A standalone bismuth vanadate-silicon artificial leaf achieving 8.4% efficiency for hydrogen production",
+    "abstract": "Abstract The development of scalable photoelectrochemical water splitting with high solar-to-hydrogen efficiency and long-term stability is essential while challenging for practical application. Here, we design a BiVO 4 photoanode with gradient distributed oxygen vacancies, which induces strong dipole fields to promote charge separation. Growing sea-urchin-like FeOOH cocatalyst on the photoanode leads to a photocurrent density of 7.0 mA cm −2 at 1.23 V versus the reversible hydrogen electrode and is stable for over 520 h under AM 1.5 G illumination. By integrating with a silicon photovoltaic cell, the standalone artificial leaf achieves a solar-to-hydrogen efficiency of 8.4%. The scale-up of these artificial leaves up to 441 cm 2 in size can deliver a solar-to-hydrogen efficiency of 2.7% under natural sunlight. Life cycle assessment analysis shows that solar water splitting has little environmental footprint for hydrogen production. Our study demonstrates the possibility of designing metal oxide-based artificial leaves for scalable solar hydrogen production.",
+    "pdf_url": "",
+    "primary": "化学",
+    "secondary": "",
+    "secondary_list": [],
+    "introduction": "",
+    "parsed": {
+      "meta": {
+        "title": "A standalone bismuth vanadate-silicon artificial leaf achieving 8.4% efficiency for hydrogen production",
+        "primary": "化学",
+        "secondary_list": []
+      },
+      "概念": {
+        "主学科": [
+          {
+            "term": "photoelectrochemical water splitting",
+            "normalized": "光电化学水分解",
+            "std_label": null,
+            "evidence": "The development of scalable photoelectrochemical water splitting with high solar-to-hydrogen efficiency and long-term stability is essential while challenging for practical application.",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "term": "BiVO 4 photoanode",
+            "normalized": "钒酸铋光阳极",
+            "std_label": null,
+            "evidence": "Here, we design a BiVO 4 photoanode with gradient distributed oxygen vacancies, which induces strong dipole fields to promote charge separation.",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "term": "oxygen vacancies",
+            "normalized": "氧空位",
+            "std_label": null,
+            "evidence": "Here, we design a BiVO 4 photoanode with gradient distributed oxygen vacancies, which induces strong dipole fields to promote charge separation.",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "term": "dipole fields",
+            "normalized": "偶极场",
+            "std_label": null,
+            "evidence": "Here, we design a BiVO 4 photoanode with gradient distributed oxygen vacancies, which induces strong dipole fields to promote charge separation.",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "term": "FeOOH cocatalyst",
+            "normalized": "FeOOH助催化剂",
+            "std_label": null,
+            "evidence": "Growing sea-urchin-like FeOOH cocatalyst on the photoanode leads to a photocurrent density of 7.0 mA cm −2 at 1.23 V versus the reversible hydrogen electrode and is stable for over 520 h under AM 1.5 G illumination.",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "term": "photocurrent density",
+            "normalized": "光电流密度",
+            "std_label": null,
+            "evidence": "Growing sea-urchin-like FeOOH cocatalyst on the photoanode leads to a photocurrent density of 7.0 mA cm −2 at 1.23 V versus the reversible hydrogen electrode and is stable for over 520 h under AM 1.5 G illumination.",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "term": "reversible hydrogen electrode",
+            "normalized": "可逆氢电极",
+            "std_label": null,
+            "evidence": "Growing sea-urchin-like FeOOH cocatalyst on the photoanode leads to a photocurrent density of 7.0 mA cm −2 at 1.23 V versus the reversible hydrogen electrode and is stable for over 520 h under AM 1.5 G illumination.",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "term": "AM 1.5 G illumination",
+            "normalized": "AM 1.5 G光照",
+            "std_label": null,
+            "evidence": "Growing sea-urchin-like FeOOH cocatalyst on the photoanode leads to a photocurrent density of 7.0 mA cm −2 at 1.23 V versus the reversible hydrogen electrode and is stable for over 520 h under AM 1.5 G illumination.",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "term": "silicon photovoltaic cell",
+            "normalized": "硅光伏电池",
+            "std_label": null,
+            "evidence": "By integrating with a silicon photovoltaic cell, the standalone artificial leaf achieves a solar-to-hydrogen efficiency of 8.4%.",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "term": "solar-to-hydrogen efficiency",
+            "normalized": "太阳能到氢能转换效率",
+            "std_label": null,
+            "evidence": "By integrating with a silicon photovoltaic cell, the standalone artificial leaf achieves a solar-to-hydrogen efficiency of 8.4%.",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "term": "artificial leaves",
+            "normalized": "人工树叶",
+            "std_label": null,
+            "evidence": "The scale-up of these artificial leaves up to 441 cm 2 in size can deliver a solar-to-hydrogen efficiency of 2.7% under natural sunlight.",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "term": "Life cycle assessment",
+            "normalized": "生命周期评估",
+            "std_label": null,
+            "evidence": "Life cycle assessment analysis shows that solar water splitting has little environmental footprint for hydrogen production.",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "term": "metal oxide-based artificial leaves",
+            "normalized": "金属氧化物基人工树叶",
+            "std_label": null,
+            "evidence": "Our study demonstrates the possibility of designing metal oxide-based artificial leaves for scalable solar hydrogen production.",
+            "source": "abstract",
+            "confidence": 1.0
+          }
+        ],
+        "辅学科": {}
+      },
+      "跨学科关系": [
+        {
+          "head": "BiVO 4 photoanode",
+          "relation": "with gradient distributed",
+          "relation_type": "depends_on",
+          "relation_type_norm": "depends_on",
+          "relation_type_raw": "depends_on",
+          "tail": "oxygen vacancies",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "Here, we design a BiVO 4 photoanode with gradient distributed oxygen vacancies, which induces strong dipole fields to promote charge separation.",
+          "source": "abstract",
+          "confidence": 1.0
+        },
+        {
+          "head": "oxygen vacancies",
+          "relation": "induces",
+          "relation_type": "driven_by",
+          "relation_type_norm": "driven_by",
+          "relation_type_raw": "driven_by",
+          "tail": "dipole fields",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "Here, we design a BiVO 4 photoanode with gradient distributed oxygen vacancies, which induces strong dipole fields to promote charge separation.",
+          "source": "abstract",
+          "confidence": 1.0
+        },
+        {
+          "head": "FeOOH cocatalyst",
+          "relation": "leads to",
+          "relation_type": "improves_metric",
+          "relation_type_norm": "improves_metric",
+          "relation_type_raw": "improves_metric",
+          "tail": "photocurrent density",
+          "direction": "->",
+          "quant": {
+            "metric": "photocurrent density",
+            "value": "7.0 mA cm −2"
+          },
+          "assumptions": [],
+          "evidence": "Growing sea-urchin-like FeOOH cocatalyst on the photoanode leads to a photocurrent density of 7.0 mA cm −2 at 1.23 V versus the reversible hydrogen electrode and is stable for over 520 h under AM 1.5 G illumination.",
+          "source": "abstract",
+          "confidence": 1.0
+        },
+        {
+          "head": "silicon photovoltaic cell",
+          "relation": "achieves",
+          "relation_type": "improves_metric",
+          "relation_type_norm": "improves_metric",
+          "relation_type_raw": "improves_metric",
+          "tail": "solar-to-hydrogen efficiency",
+          "direction": "->",
+          "quant": {
+            "metric": "solar-to-hydrogen efficiency",
+            "value": "8.4%"
+          },
+          "assumptions": [],
+          "evidence": "By integrating with a silicon photovoltaic cell, the standalone artificial leaf achieves a solar-to-hydrogen efficiency of 8.4%.",
+          "source": "abstract",
+          "confidence": 1.0
+        },
+        {
+          "head": "artificial leaves",
+          "relation": "can deliver",
+          "relation_type": "improves_metric",
+          "relation_type_norm": "improves_metric",
+          "relation_type_raw": "improves_metric",
+          "tail": "solar-to-hydrogen efficiency",
+          "direction": "->",
+          "quant": {
+            "metric": "solar-to-hydrogen efficiency",
+            "value": "2.7%"
+          },
+          "assumptions": [],
+          "evidence": "The scale-up of these artificial leaves up to 441 cm 2 in size can deliver a solar-to-hydrogen efficiency of 2.7% under natural sunlight.",
+          "source": "abstract",
+          "confidence": 1.0
+        },
+        {
+          "head": "Life cycle assessment",
+          "relation": "shows that has little environmental footprint",
+          "relation_type": "inferred_from",
+          "relation_type_norm": "inferred_from",
+          "relation_type_raw": "inferred_from",
+          "tail": "solar water splitting",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "Life cycle assessment analysis shows that solar water splitting has little environmental footprint for hydrogen production.",
+          "source": "abstract",
+          "confidence": 1.0
+        }
+      ],
+      "按辅助学科分类": {},
+      "查询": {
+        "一级": "如何通过化学方法提高光电化学水分解的效率和稳定性？",
+        "二级": [
+          "如何结合材料科学中的氧空位调控与化学方法提升光电化学水分解效率？",
+          "如何利用光伏技术增强化学水分解系统的太阳能到氢能转换效率？"
+        ],
+        "三级": [
+          "如何通过材料科学中的梯度氧空位设计产生偶极场促进电荷分离，并与化学助催化剂协同作用，构建高效稳定的光电化学水分解系统？",
+          "如何整合硅光伏电池与化学水分解装置，通过多学科协同优化实现太阳能到氢能转换效率的提升？"
+        ]
+      },
+      "假设": {
+        "一级": [
+          [
+            {
+              "step": 1,
+              "head": "钒酸铋光阳极",
+              "relation": "通过梯度分布",
+              "tail": "氧空位",
+              "claim": "钒酸铋光阳极通过梯度分布的氧空位结构优化电荷分离效率。"
+            },
+            {
+              "step": 2,
+              "head": "氧空位",
+              "relation": "诱导产生",
+              "tail": "偶极场",
+              "claim": "梯度分布的氧空位诱导产生强偶极场以增强电荷分离效果。"
+            },
+            {
+              "step": 3,
+              "head": "偶极场",
+              "relation": "需结合",
+              "tail": "助催化剂",
+              "claim": "偶极场需结合助催化剂形成协同机制，从而提升光电化学水分解的长期稳定性与效率。"
+            }
+          ],
+          [
+            {
+              "step": 1,
+              "head": "硅光伏电池",
+              "relation": "集成至",
+              "tail": "人工树叶",
+              "claim": "硅光伏电池集成至人工树叶系统可提供额外光生电流。"
+            },
+            {
+              "step": 2,
+              "head": "人工树叶",
+              "relation": "通过规模化",
+              "tail": "太阳能到氢能转换效率",
+              "claim": "人工树叶系统通过规模化设计实现自然光照下的稳定氢能输出。"
+            },
+            {
+              "step": 3,
+              "head": "太阳能到氢能转换效率",
+              "relation": "需优化",
+              "tail": "生命周期评估",
+              "claim": "太阳能到氢能转换效率需结合生命周期评估方法，验证其环境友好性以推动实际应用。"
+            }
+          ]
+        ],
+        "二级": [
+          [
+            {
+              "step": 1,
+              "head": "氧空位",
+              "relation": "诱导产生",
+              "tail": "偶极场",
+              "claim": "梯度分布的氧空位能够诱导产生强偶极场"
+            },
+            {
+              "step": 2,
+              "head": "偶极场",
+              "relation": "促进",
+              "tail": "电荷分离",
+              "claim": "强偶极场可有效促进电荷分离过程"
+            },
+            {
+              "step": 3,
+              "head": "电荷分离",
+              "relation": "提升",
+              "tail": "光电化学水分解效率",
+              "claim": "优化的电荷分离机制直接提升水分解效率"
+            }
+          ],
+          [
+            {
+              "step": 1,
+              "head": "硅光伏电池",
+              "relation": "提供",
+              "tail": "光电流密度",
+              "claim": "光伏电池为系统提供稳定光电流输入"
+            },
+            {
+              "step": 2,
+              "head": "光电流密度",
+              "relation": "驱动",
+              "tail": "人工树叶",
+              "claim": "高光电流密度驱动人工树叶持续工作"
+            },
+            {
+              "step": 3,
+              "head": "人工树叶",
+              "relation": "实现",
+              "tail": "太阳能到氢能转换效率",
+              "claim": "集成系统实现太阳能到氢能的高效转换"
+            }
+          ]
+        ],
+        "三级": [
+          [
+            {
+              "step": 1,
+              "head": "钒酸铋光阳极",
+              "relation": "梯度分布",
+              "tail": "氧空位",
+              "claim": "钒酸铋光阳极 梯度分布 氧空位"
+            },
+            {
+              "step": 2,
+              "head": "氧空位",
+              "relation": "诱导产生",
+              "tail": "偶极场",
+              "claim": "氧空位 诱导产生 偶极场"
+            },
+            {
+              "step": 3,
+              "head": "偶极场",
+              "relation": "促进电荷分离以提高",
+              "tail": "光电流密度",
+              "claim": "偶极场 促进电荷分离以提高 光电流密度"
+            }
+          ],
+          [
+            {
+              "step": 1,
+              "head": "硅光伏电池",
+              "relation": "集成形成",
+              "tail": "人工树叶",
+              "claim": "硅光伏电池 集成形成 人工树叶"
+            },
+            {
+              "step": 2,
+              "head": "人工树叶",
+              "relation": "直接提升",
+              "tail": "太阳能到氢能转换效率",
+              "claim": "人工树叶 直接提升 太阳能到氢能转换效率"
+            },
+            {
+              "step": 3,
+              "head": "太阳能到氢能转换效率",
+              "relation": "验证规模化可行性",
+              "tail": "金属氧化物基人工树叶",
+              "claim": "太阳能到氢能转换效率 验证规模化可行性 金属氧化物基人工树叶"
+            }
+          ]
+        ],
+        "一级总结": [
+          "化学领域需通过调控钒酸铋光阳极的氧空位与偶极场，并引入材料科学的助催化剂协同作用，解决光电化学水分解的稳定性瓶颈。",
+          "化学水分解系统需整合光伏技术的硅电池与规模化设计，并通过环境学科的生命周期评估验证其可持续性，实现效率提升。"
+        ],
+        "二级总结": [
+          "通过材料科学中的氧空位梯度设计产生偶极场，促进电荷分离效率，从而提升化学水分解系统的整体性能",
+          "利用光伏技术提供稳定光电流输入，驱动人工树叶系统工作，最终实现化学水分解环节的太阳能转换效率提升"
+        ],
+        "三级总结": [
+          "通过梯度氧空位设计产生偶极场促进电荷分离，最终提升光电流密度，形成材料-物理-化学协同验证闭环",
+          "通过光伏集成提升转换效率并验证规模化可行性，实现器件-能量-环境三层次验证闭环"
+        ]
+      },
+      "graph": {
+        "nodes": [
+          {
+            "id": "光电化学水分解",
+            "term": "photoelectrochemical water splitting",
+            "normalized": "光电化学水分解",
+            "discipline": "化学",
+            "evidence": "The development of scalable photoelectrochemical water splitting with high solar-to-hydrogen efficiency and long-term stability is essential while challenging for practical application.",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "id": "钒酸铋光阳极",
+            "term": "BiVO 4 photoanode",
+            "normalized": "钒酸铋光阳极",
+            "discipline": "化学",
+            "evidence": "Here, we design a BiVO 4 photoanode with gradient distributed oxygen vacancies, which induces strong dipole fields to promote charge separation.",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "id": "氧空位",
+            "term": "oxygen vacancies",
+            "normalized": "氧空位",
+            "discipline": "化学",
+            "evidence": "Here, we design a BiVO 4 photoanode with gradient distributed oxygen vacancies, which induces strong dipole fields to promote charge separation.",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "id": "偶极场",
+            "term": "dipole fields",
+            "normalized": "偶极场",
+            "discipline": "化学",
+            "evidence": "Here, we design a BiVO 4 photoanode with gradient distributed oxygen vacancies, which induces strong dipole fields to promote charge separation.",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "id": "FeOOH助催化剂",
+            "term": "FeOOH cocatalyst",
+            "normalized": "FeOOH助催化剂",
+            "discipline": "化学",
+            "evidence": "Growing sea-urchin-like FeOOH cocatalyst on the photoanode leads to a photocurrent density of 7.0 mA cm −2 at 1.23 V versus the reversible hydrogen electrode and is stable for over 520 h under AM 1.5 G illumination.",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "id": "光电流密度",
+            "term": "photocurrent density",
+            "normalized": "光电流密度",
+            "discipline": "化学",
+            "evidence": "Growing sea-urchin-like FeOOH cocatalyst on the photoanode leads to a photocurrent density of 7.0 mA cm −2 at 1.23 V versus the reversible hydrogen electrode and is stable for over 520 h under AM 1.5 G illumination.",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "id": "可逆氢电极",
+            "term": "reversible hydrogen electrode",
+            "normalized": "可逆氢电极",
+            "discipline": "化学",
+            "evidence": "Growing sea-urchin-like FeOOH cocatalyst on the photoanode leads to a photocurrent density of 7.0 mA cm −2 at 1.23 V versus the reversible hydrogen electrode and is stable for over 520 h under AM 1.5 G illumination.",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "id": "AM 1.5 G光照",
+            "term": "AM 1.5 G illumination",
+            "normalized": "AM 1.5 G光照",
+            "discipline": "化学",
+            "evidence": "Growing sea-urchin-like FeOOH cocatalyst on the photoanode leads to a photocurrent density of 7.0 mA cm −2 at 1.23 V versus the reversible hydrogen electrode and is stable for over 520 h under AM 1.5 G illumination.",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "id": "硅光伏电池",
+            "term": "silicon photovoltaic cell",
+            "normalized": "硅光伏电池",
+            "discipline": "化学",
+            "evidence": "By integrating with a silicon photovoltaic cell, the standalone artificial leaf achieves a solar-to-hydrogen efficiency of 8.4%.",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "id": "太阳能到氢能转换效率",
+            "term": "solar-to-hydrogen efficiency",
+            "normalized": "太阳能到氢能转换效率",
+            "discipline": "化学",
+            "evidence": "By integrating with a silicon photovoltaic cell, the standalone artificial leaf achieves a solar-to-hydrogen efficiency of 8.4%.",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "id": "人工树叶",
+            "term": "artificial leaves",
+            "normalized": "人工树叶",
+            "discipline": "化学",
+            "evidence": "The scale-up of these artificial leaves up to 441 cm 2 in size can deliver a solar-to-hydrogen efficiency of 2.7% under natural sunlight.",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "id": "生命周期评估",
+            "term": "Life cycle assessment",
+            "normalized": "生命周期评估",
+            "discipline": "化学",
+            "evidence": "Life cycle assessment analysis shows that solar water splitting has little environmental footprint for hydrogen production.",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "id": "金属氧化物基人工树叶",
+            "term": "metal oxide-based artificial leaves",
+            "normalized": "金属氧化物基人工树叶",
+            "discipline": "化学",
+            "evidence": "Our study demonstrates the possibility of designing metal oxide-based artificial leaves for scalable solar hydrogen production.",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "id": "solar water splitting",
+            "term": "solar water splitting",
+            "normalized": "solar water splitting",
+            "discipline": "struct_relation_inferred",
+            "evidence": "",
+            "source": "hypothesis_inferred",
+            "confidence": 0.8
+          },
+          {
+            "id": "助催化剂",
+            "term": "助催化剂",
+            "normalized": "助催化剂",
+            "discipline": "hypothesis_inferred",
+            "evidence": "",
+            "source": "hypothesis_inferred",
+            "confidence": 0.8
+          },
+          {
+            "id": "电荷分离",
+            "term": "电荷分离",
+            "normalized": "电荷分离",
+            "discipline": "hypothesis_inferred",
+            "evidence": "",
+            "source": "hypothesis_inferred",
+            "confidence": 0.8
+          },
+          {
+            "id": "光电化学水分解效率",
+            "term": "光电化学水分解效率",
+            "normalized": "光电化学水分解效率",
+            "discipline": "hypothesis_inferred",
+            "evidence": "",
+            "source": "hypothesis_inferred",
+            "confidence": 0.8
+          }
+        ],
+        "edges": [
+          {
+            "source": "钒酸铋光阳极",
+            "target": "氧空位",
+            "relation": "with gradient distributed",
+            "relation_type": "depends_on",
+            "metadata": {
+              "evidence": "Here, we design a BiVO 4 photoanode with gradient distributed oxygen vacancies, which induces strong dipole fields to promote charge separation.",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "氧空位",
+            "target": "偶极场",
+            "relation": "induces",
+            "relation_type": "driven_by",
+            "metadata": {
+              "evidence": "Here, we design a BiVO 4 photoanode with gradient distributed oxygen vacancies, which induces strong dipole fields to promote charge separation.",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "FeOOH助催化剂",
+            "target": "光电流密度",
+            "relation": "leads to",
+            "relation_type": "improves_metric",
+            "metadata": {
+              "evidence": "Growing sea-urchin-like FeOOH cocatalyst on the photoanode leads to a photocurrent density of 7.0 mA cm −2 at 1.23 V versus the reversible hydrogen electrode and is stable for over 520 h under AM 1.5 G illumination.",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "硅光伏电池",
+            "target": "太阳能到氢能转换效率",
+            "relation": "achieves",
+            "relation_type": "improves_metric",
+            "metadata": {
+              "evidence": "By integrating with a silicon photovoltaic cell, the standalone artificial leaf achieves a solar-to-hydrogen efficiency of 8.4%.",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "人工树叶",
+            "target": "太阳能到氢能转换效率",
+            "relation": "can deliver",
+            "relation_type": "improves_metric",
+            "metadata": {
+              "evidence": "The scale-up of these artificial leaves up to 441 cm 2 in size can deliver a solar-to-hydrogen efficiency of 2.7% under natural sunlight.",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "生命周期评估",
+            "target": "solar water splitting",
+            "relation": "shows that has little environmental footprint",
+            "relation_type": "inferred_from",
+            "metadata": {
+              "evidence": "Life cycle assessment analysis shows that solar water splitting has little environmental footprint for hydrogen production.",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "钒酸铋光阳极",
+            "target": "氧空位",
+            "relation": "通过梯度分布",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "钒酸铋光阳极通过梯度分布的氧空位结构优化电荷分离效率。",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "氧空位",
+            "target": "偶极场",
+            "relation": "诱导产生",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "梯度分布的氧空位诱导产生强偶极场以增强电荷分离效果。",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "偶极场",
+            "target": "助催化剂",
+            "relation": "需结合",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "偶极场需结合助催化剂形成协同机制，从而提升光电化学水分解的长期稳定性与效率。",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "硅光伏电池",
+            "target": "人工树叶",
+            "relation": "集成至",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "硅光伏电池集成至人工树叶系统可提供额外光生电流。",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "人工树叶",
+            "target": "太阳能到氢能转换效率",
+            "relation": "通过规模化",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "人工树叶系统通过规模化设计实现自然光照下的稳定氢能输出。",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "太阳能到氢能转换效率",
+            "target": "生命周期评估",
+            "relation": "需优化",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "太阳能到氢能转换效率需结合生命周期评估方法，验证其环境友好性以推动实际应用。",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "氧空位",
+            "target": "偶极场",
+            "relation": "诱导产生",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "梯度分布的氧空位能够诱导产生强偶极场",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "偶极场",
+            "target": "电荷分离",
+            "relation": "促进",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "强偶极场可有效促进电荷分离过程",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "电荷分离",
+            "target": "光电化学水分解效率",
+            "relation": "提升",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "优化的电荷分离机制直接提升水分解效率",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "硅光伏电池",
+            "target": "光电流密度",
+            "relation": "提供",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "光伏电池为系统提供稳定光电流输入",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "光电流密度",
+            "target": "人工树叶",
+            "relation": "驱动",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "高光电流密度驱动人工树叶持续工作",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "人工树叶",
+            "target": "太阳能到氢能转换效率",
+            "relation": "实现",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "集成系统实现太阳能到氢能的高效转换",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "钒酸铋光阳极",
+            "target": "氧空位",
+            "relation": "梯度分布",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "钒酸铋光阳极 梯度分布 氧空位",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "氧空位",
+            "target": "偶极场",
+            "relation": "诱导产生",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "氧空位 诱导产生 偶极场",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "偶极场",
+            "target": "光电流密度",
+            "relation": "促进电荷分离以提高",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "偶极场 促进电荷分离以提高 光电流密度",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "硅光伏电池",
+            "target": "人工树叶",
+            "relation": "集成形成",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "硅光伏电池 集成形成 人工树叶",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "人工树叶",
+            "target": "太阳能到氢能转换效率",
+            "relation": "直接提升",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "人工树叶 直接提升 太阳能到氢能转换效率",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "太阳能到氢能转换效率",
+            "target": "金属氧化物基人工树叶",
+            "relation": "验证规模化可行性",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "太阳能到氢能转换效率 验证规模化可行性 金属氧化物基人工树叶",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          }
+        ]
+      },
+      "metrics": {
+        "path_consistency": 0.4444444444444444,
+        "coverage": 0.6923076923076923,
+        "bridging_score": 0.0,
+        "rao_stirling_diversity": 0.0,
+        "embedding_bridging": 0.9091,
+        "consistency_precision": 0.0,
+        "consistency_recall": 0.0,
+        "consistency_f1": 0.0,
+        "info_novelty": 0.0,
+        "chain_coherence": 0.5461,
+        "atypical_combination": 0.3419,
+        "kg_density": 0.0551,
+        "kg_inverse_modularity": 0.9222,
+        "kg_largest_cc_ratio": 0.8235,
+        "kg_avg_betweenness": 0.0961,
+        "kg_clustering_coefficient": 0.098,
+        "concept_recall": 0.0,
+        "concept_precision": 0.0,
+        "concept_f1": 0.0,
+        "relation_precision": 0.0,
+        "relation_type_accuracy": 0.0,
+        "evidence_coverage": 0.0,
+        "path_alignment_best": 0.0,
+        "path_alignment_mean": 0.0
+      }
+    },
+    "raw": "/* stage1: struct */\n/* concepts round1 */\n```json\n{\n  \"meta\": {\n    \"title\": \"A standalone bismuth vanadate-silicon artificial leaf achieving 8.4% efficiency for hydrogen production\",\n    \"primary\": \"化学\",\n    \"secondary_list\": []\n  },\n  \"概念\": {\n    \"主学科\": [\n      {\n        \"term\": \"photoelectrochemical water splitting\",\n        \"normalized\": \"光电化学水分解\",\n        \"std_label\": null,\n        \"evidence\": \"The development of scalable photoelectrochemical water splitting with high solar-to-hydrogen efficiency and long-term stability is essential while challenging for practical application.\",\n        \"source\": \"abstract\",\n        \"confidence\": 1\n      },\n      {\n        \"term\": \"BiVO 4 photoanode\",\n        \"normalized\": \"钒酸铋光阳极\",\n        \"std_label\": null,\n        \"evidence\": \"Here, we design a BiVO 4 photoanode with gradient distributed oxygen vacancies, which induces strong dipole fields to promote charge separation.\",\n        \"source\": \"abstract\",\n        \"confidence\": 1\n      },\n      {\n        \"term\": \"oxygen vacancies\",\n        \"normalized\": \"氧空位\",\n        \"std_label\": null,\n        \"evidence\": \"Here, we design a BiVO 4 photoanode with gradient distributed oxygen vacancies, which induces strong dipole fields to promote charge separation.\",\n        \"source\": \"abstract\",\n        \"confidence\": 1\n      },\n      {\n        \"term\": \"dipole fields\",\n        \"normalized\": \"偶极场\",\n        \"std_label\": null,\n        \"evidence\": \"Here, we design a BiVO 4 photoanode with gradient distributed oxygen vacancies, which induces strong dipole fields to promote charge separation.\",\n        \"source\": \"abstract\",\n        \"confidence\": 1\n      },\n      {\n        \"term\": \"FeOOH cocatalyst\",\n        \"normalized\": \"FeOOH助催化剂\",\n        \"std_label\": null,\n        \"evidence\": \"Growing sea-urchin-like FeOOH cocatalyst on the photoanode leads to a photocurrent density of 7.0 mA cm −2 at 1.23 V versus the reversible hydrogen electrode and is stable for over 520 h under AM 1.5 G illumination.\",\n        \"source\": \"abstract\",\n        \"confidence\": 1\n      },\n      {\n        \"term\": \"photocurrent density\",\n        \"normalized\": \"光电流密度\",\n        \"std_label\": null,\n        \"evidence\": \"Growing sea-urchin-like FeOOH cocatalyst on the photoanode leads to a photocurrent density of 7.0 mA cm −2 at 1.23 V versus the reversible hydrogen electrode and is stable for over 520 h under AM 1.5 G illumination.\",\n        \"source\": \"abstract\",\n        \"confidence\": 1\n      },\n      {\n        \"term\": \"reversible hydrogen electrode\",\n        \"normalized\": \"可逆氢电极\",\n        \"std_label\": null,\n        \"evidence\": \"Growing sea-urchin-like FeOOH cocatalyst on the photoanode leads to a photocurrent density of 7.0 mA cm −2 at 1.23 V versus the reversible hydrogen electrode and is stable for over 520 h under AM 1.5 G illumination.\",\n        \"source\": \"abstract\",\n        \"confidence\": 1\n      },\n      {\n        \"term\": \"AM 1.5 G illumination\",\n        \"normalized\": \"AM 1.5 G光照\",\n        \"std_label\": null,\n        \"evidence\": \"Growing sea-urchin-like FeOOH cocatalyst on the photoanode leads to a photocurrent density of 7.0 mA cm −2 at 1.23 V versus the reversible hydrogen electrode and is stable for over 520 h under AM 1.5 G illumination.\",\n        \"source\": \"abstract\",\n        \"confidence\": 1\n      },\n      {\n        \"term\": \"silicon photovoltaic cell\",\n        \"normalized\": \"硅光伏电池\",\n        \"std_label\": null,\n        \"evidence\": \"By integrating with a silicon photovoltaic cell, the standalone artificial leaf achieves a solar-to-hydrogen efficiency of 8.4%.\",\n        \"source\": \"abstract\",\n        \"confidence\": 1\n      },\n      {\n        \"term\": \"solar-to-hydrogen efficiency\",\n        \"normalized\": \"太阳能到氢能转换效率\",\n        \"std_label\": null,\n        \"evidence\": \"By integrating with a silicon photovoltaic cell, the standalone artificial leaf achieves a solar-to-hydrogen efficiency of 8.4%.\",\n        \"source\": \"abstract\",\n        \"confidence\": 1\n      },\n      {\n        \"term\": \"artificial leaves\",\n        \"normalized\": \"人工树叶\",\n        \"std_label\": null,\n        \"evidence\": \"The scale-up of these artificial leaves up to 441 cm 2 in size can deliver a solar-to-hydrogen efficiency of 2.7% under natural sunlight.\",\n        \"source\": \"abstract\",\n        \"confidence\": 1\n      },\n      {\n        \"term\": \"Life cycle assessment\",\n        \"normalized\": \"生命周期评估\",\n        \"std_label\": null,\n        \"evidence\": \"Life cycle assessment analysis shows that solar water splitting has little environmental footprint for hydrogen production.\",\n        \"source\": \"abstract\",\n        \"confidence\": 1\n      },\n      {\n        \"term\": \"metal oxide-based artificial leaves\",\n        \"normalized\": \"金属氧化物基人工树叶\",\n        \"std_label\": null,\n        \"evidence\": \"Our study demonstrates the possibility of designing metal oxide-based artificial leaves for scalable solar hydrogen production.\",\n        \"source\": \"abstract\",\n        \"confidence\": 1\n      }\n    ],\n    \"辅学科\": {}\n  }\n}\n```\n\n/* concepts round2 (supplement) */\n{\n  \"补充概念\": {\n    \"主学科\": [\n      \"gradient distributed oxygen vacancies\",\n      \"sea-urchin-like FeOOH cocatalyst\",\n      \"scale-up\",\n      \"natural sunlight\",\n      \"environmental footprint\",\n      \"solar hydrogen production\"\n    ],\n    \"辅学科\": {}\n  }\n}\n\n/* relations */\n{\n  \"跨学科关系\": [\n    {\n      \"head\": \"BiVO 4 photoanode\",\n      \"tail\": \"oxygen vacancies\",\n      \"relation\": \"with gradient distributed\",\n      \"relation_type\": \"depends_on\",\n      \"direction\": \"->\",\n      \"assumptions\": [],\n      \"evidence\": \"Here, we design a BiVO 4 photoanode with gradient distributed oxygen vacancies, which induces strong dipole fields to promote charge separation.\",\n      \"source\": \"abstract\",\n      \"confidence\": 1\n    },\n    {\n      \"head\": \"oxygen vacancies\",\n      \"tail\": \"dipole fields\",\n      \"relation\": \"induces\",\n      \"relation_type\": \"driven_by\",\n      \"direction\": \"->\",\n      \"assumptions\": [],\n      \"evidence\": \"Here, we design a BiVO 4 photoanode with gradient distributed oxygen vacancies, which induces strong dipole fields to promote charge separation.\",\n      \"source\": \"abstract\",\n      \"confidence\": 1\n    },\n    {\n      \"head\": \"FeOOH cocatalyst\",\n      \"tail\": \"photocurrent density\",\n      \"relation\": \"leads to\",\n      \"relation_type\": \"improves_metric\",\n      \"direction\": \"->\",\n      \"quant\": {\n        \"metric\": \"photocurrent density\",\n        \"value\": \"7.0 mA cm −2\"\n      },\n      \"assumptions\": [],\n      \"evidence\": \"Growing sea-urchin-like FeOOH cocatalyst on the photoanode leads to a photocurrent density of 7.0 mA cm −2 at 1.23 V versus the reversible hydrogen electrode and is stable for over 520 h under AM 1.5 G illumination.\",\n      \"source\": \"abstract\",\n      \"confidence\": 1\n    },\n    {\n      \"head\": \"silicon photovoltaic cell\",\n      \"tail\": \"solar-to-hydrogen efficiency\",\n      \"relation\": \"achieves\",\n      \"relation_type\": \"improves_metric\",\n      \"direction\": \"->\",\n      \"quant\": {\n        \"metric\": \"solar-to-hydrogen efficiency\",\n        \"value\": \"8.4%\"\n      },\n      \"assumptions\": [],\n      \"evidence\": \"By integrating with a silicon photovoltaic cell, the standalone artificial leaf achieves a solar-to-hydrogen efficiency of 8.4%.\",\n      \"source\": \"abstract\",\n      \"confidence\": 1\n    },\n    {\n      \"head\": \"artificial leaves\",\n      \"tail\": \"solar-to-hydrogen efficiency\",\n      \"relation\": \"can deliver\",\n      \"relation_type\": \"improves_metric\",\n      \"direction\": \"->\",\n      \"quant\": {\n        \"metric\": \"solar-to-hydrogen efficiency\",\n        \"value\": \"2.7%\"\n      },\n      \"assumptions\": [],\n      \"evidence\": \"The scale-up of these artificial leaves up to 441 cm 2 in size can deliver a solar-to-hydrogen efficiency of 2.7% under natural sunlight.\",\n      \"source\": \"abstract\",\n      \"confidence\": 1\n    },\n    {\n      \"head\": \"Life cycle assessment\",\n      \"tail\": \"solar water splitting\",\n      \"relation\": \"shows that has little environmental footprint\",\n      \"relation_type\": \"inferred_from\",\n      \"direction\": \"->\",\n      \"assumptions\": [],\n      \"evidence\": \"Life cycle assessment analysis shows that solar water splitting has little environmental footprint for hydrogen production.\",\n      \"source\": \"abstract\",\n      \"confidence\": 1\n    }\n  ]\n}\n\n/* stage2: query */\n{\n  \"按辅助学科分类\": {},\n  \"查询\": {\n    \"一级\": \"如何通过化学方法提高光电化学水分解的效率和稳定性？\",\n    \"二级\": [\n      \"如何结合材料科学中的氧空位调控与化学方法提升光电化学水分解效率？\",\n      \"如何利用光伏技术增强化学水分解系统的太阳能到氢能转换效率？\"\n    ],\n    \"三级\": [\n      \"如何通过材料科学中的梯度氧空位设计产生偶极场促进电荷分离，并与化学助催化剂协同作用，构建高效稳定的光电化学水分解系统？\",\n      \"如何整合硅光伏电池与化学水分解装置，通过多学科协同优化实现太阳能到氢能转换效率的提升？\"\n    ]\n  }\n}\n\n/* stage3: hypothesis L1 */\n{\n  \"假设\": {\n    \"一级\": [\n      [\n        {\n          \"step\": 1,\n          \"head\": \"钒酸铋光阳极\",\n          \"relation\": \"通过梯度分布\",\n          \"tail\": \"氧空位\",\n          \"claim\": \"钒酸铋光阳极通过梯度分布的氧空位结构优化电荷分离效率。\"\n        },\n        {\n          \"step\": 2,\n          \"head\": \"氧空位\",\n          \"relation\": \"诱导产生\",\n          \"tail\": \"偶极场\",\n          \"claim\": \"梯度分布的氧空位诱导产生强偶极场以增强电荷分离效果。\"\n        },\n        {\n          \"step\": 3,\n          \"head\": \"偶极场\",\n          \"relation\": \"需结合\",\n          \"tail\": \"FeOOH助催化剂\",\n          \"claim\": \"偶极场需结合FeOOH助催化剂形成协同机制，从而提升光电化学水分解的长期稳定性与效率。\"\n        }\n      ],\n      [\n        {\n          \"step\": 1,\n          \"head\": \"硅光伏电池\",\n          \"relation\": \"集成至\",\n          \"tail\": \"人工树叶\",\n          \"claim\": \"硅光伏电池集成至人工树叶系统可提供额外光生电流。\"\n        },\n        {\n          \"step\": 2,\n          \"head\": \"人工树叶\",\n          \"relation\": \"通过规模化\",\n          \"tail\": \"太阳能到氢能转换效率\",\n          \"claim\": \"人工树叶系统通过规模化设计实现自然光照下的稳定氢能输出。\"\n        },\n        {\n          \"step\": 3,\n          \"head\": \"太阳能到氢能转换效率\",\n          \"relation\": \"需优化\",\n          \"tail\": \"生命周期评估\",\n          \"claim\": \"太阳能到氢能转换效率需结合生命周期评估方法，验证其环境友好性以推动实际应用。\"\n        }\n      ]\n    ],\n    \"一级总结\": [\n      \"化学领域需通过调控钒酸铋光阳极的氧空位与偶极场，并引入材料科学的FeOOH助催化剂协同作用，解决光电化学水分解的稳定性瓶颈。\",\n      \"化学水分解系统需整合光伏技术的硅电池与规模化设计，并通过环境学科的生命周期评估验证其可持续性，实现效率提升。\"\n    ]\n  }\n}\n\n/* stage3: hypothesis L2 */\n{\n  \"假设\": {\n    \"二级\": [\n      [\n        {\n          \"head\": \"氧空位\",\n          \"tail\": \"偶极场\",\n          \"relation\": \"诱导产生\",\n          \"claim\": \"梯度分布的氧空位能够诱导产生强偶极场\"\n        },\n        {\n          \"head\": \"偶极场\",\n          \"tail\": \"电荷分离\",\n          \"relation\": \"促进\",\n          \"claim\": \"强偶极场可有效促进电荷分离过程\"\n        },\n        {\n          \"head\": \"电荷分离\",\n          \"tail\": \"光电化学水分解效率\",\n          \"relation\": \"提升\",\n          \"claim\": \"优化的电荷分离机制直接提升水分解效率\"\n        }\n      ],\n      [\n        {\n          \"head\": \"硅光伏电池\",\n          \"tail\": \"光电流密度\",\n          \"relation\": \"提供\",\n          \"claim\": \"光伏电池为系统提供稳定光电流输入\"\n        },\n        {\n          \"head\": \"光电流密度\",\n          \"tail\": \"人工树叶\",\n          \"relation\": \"驱动\",\n          \"claim\": \"高光电流密度驱动人工树叶持续工作\"\n        },\n        {\n          \"head\": \"人工树叶\",\n          \"tail\": \"太阳能到氢能转换效率\",\n          \"relation\": \"实现\",\n          \"claim\": \"集成系统实现太阳能到氢能的高效转换\"\n        }\n      ]\n    ],\n    \"二级总结\": [\n      \"通过材料科学中的氧空位梯度设计产生偶极场，促进电荷分离效率，从而提升化学水分解系统的整体性能\",\n      \"利用光伏技术提供稳定光电流输入，驱动人工树叶系统工作，最终实现化学水分解环节的太阳能转换效率提升\"\n    ]\n  }\n}\n\n/* stage3: hypothesis L3 */\n{\n  \"假设\": {\n    \"三级\": [\n      [\n        {\n          \"head\": \"钒酸铋光阳极\",\n          \"tail\": \"氧空位\",\n          \"relation\": \"梯度分布\"\n        },\n        {\n          \"head\": \"氧空位\",\n          \"tail\": \"偶极场\",\n          \"relation\": \"诱导产生\"\n        },\n        {\n          \"head\": \"偶极场\",\n          \"tail\": \"光电流密度\",\n          \"relation\": \"促进电荷分离以提高\"\n        }\n      ],\n      [\n        {\n          \"head\": \"硅光伏电池\",\n          \"tail\": \"人工树叶\",\n          \"relation\": \"集成形成\"\n        },\n        {\n          \"head\": \"人工树叶\",\n          \"tail\": \"太阳能到氢能转换效率\",\n          \"relation\": \"直接提升\"\n        },\n        {\n          \"head\": \"太阳能到氢能转换效率\",\n          \"tail\": \"金属氧化物基人工树叶\",\n          \"relation\": \"验证规模化可行性\"\n        }\n      ]\n    ],\n    \"三级总结\": [\n      \"通过梯度氧空位设计产生偶极场促进电荷分离，最终提升光电流密度，形成材料-物理-化学协同验证闭环\",\n      \"通过光伏集成提升转换效率并验证规模化可行性，实现器件-能量-环境三层次验证闭环\"\n    ]\n  }\n}",
+    "ok": true,
+    "error": ""
+  }
+]

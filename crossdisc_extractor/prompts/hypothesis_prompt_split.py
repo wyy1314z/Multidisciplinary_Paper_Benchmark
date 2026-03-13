@@ -59,16 +59,20 @@ SYSTEM_PROMPT_HYP_L1 = """你是一名跨学科科研假设构建助手。
    - 禁止出现“跳链”、禁止多于或少于 3 步。
    - 每条路径的最后一步（step3）的 claim 必须是一句完整、可检验、专业的总结性假设陈述。
 
-5) 【实体对齐硬性约束（至关重要）】：
-   - **Head/Tail 必须原样复用**：路径中的 `head` 和 `tail` 字段必须**严格**从输入的 `primary_concepts` 或 `secondary_concepts` 列表中选取。
-   - **禁止修改实体**：严禁将实体修改为“...的分析”、“识别...”、“...增加”等形式。
-   - **禁止使用通用占位符**：严禁使用如“关键前提”、“关键中介”、“关键结果”、“疗效改进”、“前提”、“结论”等非具体学科概念的词汇。如果概念表中没有合适的词，请重新审视概念表或放弃生成该路径。
-   - **逻辑外移**：如果需要表达动作、状态或变化（如“激活”、“抑制”、“检测”），请将这些词汇放入 `relation` 字段，或在 `claim` 字段的自然语言描述中体现。
-   - **示例**：
-     - 错误：head: "识别耐药性癫痫", relation: "导致", tail: "治疗效果提升"
-     - 正确：head: "耐药性癫痫", relation: "被识别后提升", tail: "治疗效果"（注："治疗效果"需在概念表中存在）
-
-6) 学科/逻辑要求（H1 一级路径）：
+5) 【实体对齐硬性约束（至关重要 — 违反此约束将导致输出无效）】：
+   - **Head/Tail 必须逐字复用概念词表**：路径中的 `head` 和 `tail` 字段必须**严格逐字**从用户消息中”允许使用的概念词表”中选取，不允许做任何修改。
+   - **判断标准**：如果你输出的 head 或 tail 不能在”允许使用的概念词表”中找到完全相同的字符串，则该输出无效。
+   - **禁止的修改形式**（以下全部违规）：
+     * 添加后缀：”催化剂” → “催化剂稳定性” ✗
+     * 添加前缀：”污染物” → “难降解污染物” ✗
+     * 拼接组合：”纳米颗粒” + “氧化锌” → “氧化锌纳米颗粒稳定性” ✗
+     * 概括改写：”硫酸根自由基” → “活性物种” ✗
+     * 自创新词：使用词表中不存在的任何词 ✗
+   - **禁止使用通用占位符**：严禁使用如”关键前提”、”关键中介”、”关键结果”、”疗效改进”、”前提”、”结论”等非具体学科概念的词汇。
+   - **逻辑外移**：如果需要表达动作、状态或变化（如”激活”、”抑制”、”检测”、”提升”），请将这些词汇放入 `relation` 字段，或在 `claim` 字段的自然语言描述中体现。
+   - **示例**（假设词表中有”耐药性癫痫”和”深部脑刺激”）：
+     - 错误：head: “识别耐药性癫痫”, tail: “治疗效果提升”（”识别...”和”...提升”是自创修改）
+     - 正确：head: “耐药性癫痫”, relation: “可通过...改善治疗效果”, tail: “深部脑刺激”
    - 从主学科视角出发，用若干条“粗粒度”3-step 链条刻画当前临床/科学瓶颈；
    - 每条路径的最后一步必须明确指出“需要某个辅学科来补位”的角色（写进 claim）；
    - 若存在多个辅学科，强烈建议一级至少给出与辅学科数量相当的路径。
@@ -114,11 +118,12 @@ SYSTEM_PROMPT_HYP_L2 = """你是一名跨学科科研假设构建助手。
    - 每一条知识路径必须恰好包含 3 个 step，且 step 必须严格为 1, 2, 3。
    - 链式一致性：step2.head 必须等于 step1.tail；step3.head 必须等于 step2.tail。
 
-5) 【实体对齐硬性约束（至关重要）】：
-   - **Head/Tail 必须原样复用**：路径中的 `head` 和 `tail` 字段必须**严格**从输入的 `primary_concepts` 或 `secondary_concepts` 列表中选取。
-   - **禁止修改实体**：严禁将实体修改为“...的分析”、“识别...”、“...增加”等形式。
-   - **禁止使用通用占位符**：严禁使用如“关键前提”、“关键中介”、“关键结果”、“疗效改进”、“前提”、“结论”等非具体学科概念的词汇。如果概念表中没有合适的词，请重新审视概念表或放弃生成该路径。
-   - **逻辑外移**：如果需要表达动作、状态或变化，请将这些词汇放入 `relation` 字段，或在 `claim` 字段中体现。保持节点实体的纯净性，以便于知识图谱对齐。
+5) 【实体对齐硬性约束（至关重要 — 违反此约束将导致输出无效）】：
+   - **Head/Tail 必须逐字复用概念词表**：路径中的 `head` 和 `tail` 字段必须**严格逐字**从用户消息中”允许使用的概念词表”中选取，不允许做任何修改。
+   - **判断标准**：如果你输出的 head 或 tail 不能在”允许使用的概念词表”中找到完全相同的字符串，则该输出无效。
+   - **禁止的修改形式**：添加前缀/后缀、拼接组合、概括改写、自创新词——全部违规。
+   - **禁止使用通用占位符**：严禁使用”关键前提”、”关键中介”、”关键结果”等非具体学科概念的词汇。
+   - **逻辑外移**：动作、状态、变化词（如”激活”、”抑制”、”提升”）放入 `relation` 或 `claim`，不要放入 head/tail。
 
 6) 学科/逻辑要求（H2 二级路径）：
    - 每条路径对应 Query.二级 中的一个具体问题；
@@ -164,11 +169,12 @@ SYSTEM_PROMPT_HYP_L3 = """你是一名跨学科科研假设构建助手。
    - 每一条知识路径必须恰好包含 3 个 step，且 step 必须严格为 1, 2, 3。
    - 链式一致性：step2.head 必须等于 step1.tail；step3.head 必须等于 step2.tail。
 
-5) 【实体对齐硬性约束（至关重要）】：
-   - **Head/Tail 必须原样复用**：路径中的 `head` 和 `tail` 字段必须**严格**从输入的 `primary_concepts` 或 `secondary_concepts` 列表中选取。
-   - **禁止修改实体**：严禁将实体修改为“...的分析”、“识别...”、“...增加”等形式。
-   - **禁止使用通用占位符**：严禁使用如“关键前提”、“关键中介”、“关键结果”、“疗效改进”、“前提”、“结论”等非具体学科概念的词汇。如果概念表中没有合适的词，请重新审视概念表或放弃生成该路径。
-   - **逻辑外移**：如果需要表达动作、状态或变化，请将这些词汇放入 `relation` 字段，或在 `claim` 字段中体现。这是为了确保知识图谱构建时节点能准确对齐。
+5) 【实体对齐硬性约束（至关重要 — 违反此约束将导致输出无效）】：
+   - **Head/Tail 必须逐字复用概念词表**：路径中的 `head` 和 `tail` 字段必须**严格逐字**从用户消息中”允许使用的概念词表”中选取，不允许做任何修改。
+   - **判断标准**：如果你输出的 head 或 tail 不能在”允许使用的概念词表”中找到完全相同的字符串，则该输出无效。
+   - **禁止的修改形式**：添加前缀/后缀、拼接组合、概括改写、自创新词——全部违规。
+   - **禁止使用通用占位符**：严禁使用”关键前提”、”关键中介”、”关键结果”等非具体学科概念的词汇。
+   - **逻辑外移**：动作、状态、变化词放入 `relation` 或 `claim`，不要放入 head/tail。
 
 6) 学科/逻辑要求（H3 三级路径）：
    - 每条路径对应 Query.三级 中的一个更具体、更操作化的问题；
@@ -182,6 +188,27 @@ SYSTEM_PROMPT_HYP_L3 = """你是一名跨学科科研假设构建助手。
 """
 
 
+def _collect_allowed_normalized(struct: StructExtraction) -> List[str]:
+    """从 struct 的概念中收集所有 normalized 值，作为假设 head/tail 的允许词表。"""
+    allowed = []
+    seen = set()
+    concepts = struct.概念
+    if concepts and concepts.主学科:
+        for c in concepts.主学科:
+            n = (c.normalized or c.term or "").strip()
+            if n and n not in seen:
+                allowed.append(n)
+                seen.add(n)
+    if concepts and concepts.辅学科:
+        for disc, lst in concepts.辅学科.items():
+            for c in lst:
+                n = (c.normalized or c.term or "").strip()
+                if n and n not in seen:
+                    allowed.append(n)
+                    seen.add(n)
+    return allowed
+
+
 def _build_user_content(struct: StructExtraction, query: Query3Levels) -> str:
     # 复用原有的 user template 逻辑
     _ensure_chinese_query_inplace(query)
@@ -193,9 +220,10 @@ def _build_user_content(struct: StructExtraction, query: Query3Levels) -> str:
     n_secondary = len(sec_list)
     secondary_list_str = ", ".join(sec_list) if sec_list else "（无辅学科）"
 
-    # 注意：HYP_USER_TEMPLATE 结尾有 "生成完整的..."，这里我们用截断或替换的方式，或者直接构造新的 user content
-    # 为了简单，我们重新 format 一下，不使用 HYP_USER_TEMPLATE 的最后一句指令
-    
+    # 构建允许的 normalized 概念列表
+    allowed_terms = _collect_allowed_normalized(struct)
+    allowed_list_str = "\n".join(f"  - {t}" for t in allowed_terms) if allowed_terms else "  （无）"
+
     base_info = f"""输入：
 - 结构化摘要：
 {summary_json}
@@ -208,7 +236,12 @@ def _build_user_content(struct: StructExtraction, query: Query3Levels) -> str:
   * 辅学科数量: {n_secondary}
   * 辅学科列表: {secondary_list_str}
 
+- 【允许使用的概念词表（head/tail 必须从中选取，严禁自创）】：
+{allowed_list_str}
+
 请严格遵守系统提示中的约束与学科要求。
+特别提醒：每个 step 的 head 和 tail 必须**逐字**从上方"允许使用的概念词表"中选取，
+不得做任何修改、拼接、添加后缀或自行创造新词。
 """
     return base_info
 
@@ -270,6 +303,27 @@ def build_hypothesis_messages_l3(
     ]
 
 
+def _coerce_flat_steps_to_nested(hdict: dict) -> dict:
+    """
+    兼容弱模型（如 qwen-turbo）将 "一级": [{step1}, {step2}, {step3}]
+    输出为扁平列表而非嵌套列表 "一级": [[{step1}, {step2}, {step3}]] 的情况。
+    检测方式：如果列表元素全部是 dict 且含有 "step" 键，则认为是扁平 step 列表。
+    """
+    if not isinstance(hdict, dict):
+        return hdict
+    for lvl in ("一级", "二级", "三级"):
+        paths = hdict.get(lvl)
+        if not isinstance(paths, list) or not paths:
+            continue
+        # 检测是否为扁平 step 列表（所有元素是 dict 且有 "step" 或 "head" 键）
+        if all(isinstance(s, dict) and ("step" in s or "head" in s) for s in paths):
+            # 按每 3 个一组切分为路径
+            grouped = [paths[i:i+3] for i in range(0, len(paths), 3)]
+            hdict[lvl] = [g for g in grouped if len(g) == 3]
+            logger.warning("假设.%s 检测到扁平 step 列表，已自动包装为嵌套路径列表", lvl)
+    return hdict
+
+
 def _deterministic_repair_hypothesis_links(hdict: dict) -> dict:
     """
     在 Pydantic 校验前对 3-step 路径做确定性链路对齐（deterministic repair）。
@@ -277,6 +331,8 @@ def _deterministic_repair_hypothesis_links(hdict: dict) -> dict:
     """
     if not isinstance(hdict, dict):
         return hdict
+    # 先修复扁平 step 列表
+    hdict = _coerce_flat_steps_to_nested(hdict)
     for lvl in ("一级", "二级", "三级"):
         paths = hdict.get(lvl)
         if not isinstance(paths, list):
@@ -321,13 +377,27 @@ def parse_partial_hypothesis(
     """
     解析 partial output，返回字典，例如 {"一级": [...], "一级总结": [...]}
     """
-    obj = coerce_json_object(text, required_top_keys={"假设"})
+    try:
+        obj = coerce_json_object(text, required_top_keys={"假设"})
+    except ValueError:
+        # JSON 解析失败，尝试不带 required_top_keys 再解析一次
+        try:
+            obj = coerce_json_object(text)
+        except ValueError:
+            # 彻底失败，尝试用正则提取 step 结构做降级处理
+            obj = _fallback_extract_steps_from_text(text, level)
+            if obj is None:
+                raise ValueError(f"假设 L{level} 生成输出无法解析为合法 JSON")
+
     if not isinstance(obj, dict) or "假设" not in obj:
         # 宽容处理：如果 LLM 忘了包 "假设"，直接看顶层
         if isinstance(obj, dict) and (f"{level_map[level]}" in obj):
             hyp_dict = obj
         else:
-            raise ValueError(f"假设 L{level} 生成输出缺少 '假设' 字段")
+            # 再尝试把整个 obj 当作假设内容
+            hyp_dict = {"假设": obj} if isinstance(obj, dict) else {}
+            if level_map[level] not in hyp_dict:
+                hyp_dict = obj if isinstance(obj, dict) else {}
     else:
         hyp_dict = obj["假设"]
 
@@ -434,3 +504,46 @@ def parse_partial_hypothesis(
     }
 
 level_map = {1: "一级", 2: "二级", 3: "三级"}
+
+
+def _fallback_extract_steps_from_text(text: str, level: int) -> Optional[Dict]:
+    """
+    降级方案：当 JSON 整体不合法时，用正则逐个提取 step dict，
+    按每 3 个一组组装为路径，构造出最小可用的假设结构。
+    """
+    import re as _re
+    step_pattern = _re.compile(
+        r'\{\s*"step"\s*:\s*\d.*?\}',
+        _re.DOTALL
+    )
+    matches = step_pattern.findall(text)
+    if not matches:
+        return None
+
+    steps = []
+    for m in matches:
+        try:
+            d = json.loads(m)
+            if isinstance(d, dict) and "step" in d:
+                steps.append(d)
+        except Exception:
+            continue
+
+    if not steps:
+        return None
+
+    # 按每 3 个一组切分为路径
+    paths = [steps[i:i+3] for i in range(0, len(steps), 3)]
+    paths = [p for p in paths if len(p) == 3]
+
+    if not paths:
+        return None
+
+    key = level_map[level]
+    logger.warning("假设 L%d JSON 不合法，降级提取到 %d 条路径", level, len(paths))
+    return {
+        "假设": {
+            key: paths,
+            f"{key}总结": []
+        }
+    }

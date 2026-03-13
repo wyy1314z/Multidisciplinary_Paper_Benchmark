@@ -1,0 +1,70 @@
+[
+  {
+    "paper_id": "8fa24fbdda01",
+    "title": "Resolving multi-image spatial lipidomic responses to inhaled toxicants by machine learning",
+    "abstract": "Abstract Regional responses to inhaled toxicants are essential to understand the pathogenesis of lung disease under exposure to air pollution. We evaluate the effect of combined allergen sensitization and ozone exposure on eliciting spatial differences in lipid distribution in the mouse lung that may contribute to ozone-induced exacerbations in asthma. We demonstrate the ability to normalize and segment high resolution mass spectrometry imaging data by applying established machine learning algorithms. Interestingly, our segmented regions overlap with histologically validated lung regions, enabling regional analysis across biological replicates. Our data reveal differences in the abundance of spatially distinct lipids, support the potential role of lipid saturation in healthy lung function, and highlight sex differences in regional lung lipid distribution following ozone exposure. Our study provides a framework for future mass spectrometry imaging experiments capable of relative quantification across biological replicates and expansion to multiple sample types, including human tissue.",
+    "introduction": "",
+    "primary_discipline": "生物学",
+    "secondary_disciplines": [
+      "Environmental Science",
+      "Biochemistry, Genetics and Molecular Biology"
+    ],
+    "concepts": null,
+    "relations": null,
+    "queries": null
+  },
+  {
+    "paper_id": "aa0963751b20",
+    "title": "Machine learning center-specific models show improved IVF live birth predictions over US national registry-based model",
+    "abstract": "Expanding in vitro fertilization (IVF) access requires improved patient counseling and affordability via cost-success transparency. Clinicians ask how two types of live birth prediction (LBP) models perform: machine learning, center-specific (MLCS) models and the multicenter, US national registry-based model produced by Society for Assisted Reproductive Technology (SART). In a retrospective model validation study, we tested whether MLCS performs better than SART using 4635 patients' first-IVF cycle data from 6 centers. MLCS significantly improved minimization of false positives and negatives overall (precision recall area-under-the-curve) and at the 50% LBP threshold (F1 score) compared to SART (p < 0.05). To contextualize, MLCS more appropriately assigned 23% and 11% of all patients to LBP ≥ 50% and LBP ≥ 75% whereas SART gave lower LBPs. Here, we show MLCS improves model metrics relevant for clinical utility - personalizing prognostic counseling and cost-success transparency - and is externally validated. We recommend evaluating MLCS in a larger sample of fertility centers.",
+    "introduction": "",
+    "primary_discipline": "临床医学",
+    "secondary_disciplines": [
+      "Medicine"
+    ],
+    "concepts": null,
+    "relations": null,
+    "queries": null
+  },
+  {
+    "paper_id": "e9deb4f0e41e",
+    "title": "Longitudinal liquid biopsy identifies an early predictive biomarker of immune checkpoint blockade response in head and neck squamous cell carcinoma",
+    "abstract": "Abstract Immune checkpoint blockade (ICB) has improved outcomes for patients with head and neck squamous cell carcinoma (HNSCC), but predictive biomarkers remain limited. Here, we use a time-resolved, multi-omic approach in a murine HNSCC model to characterize peripheral immune responses to ICB. Single-cell transcriptomics and T/B cell receptor analyses reveal early on-treatment expansion of effector memory T and B cell repertoires in responders, preceding tumor regression. These dynamic immune features inform a composite transcriptional signature that accurately predicts ICB response in independent human HNSCC cohorts. LiBIO outperforms existing biomarkers and generalizes to melanoma, non-small cell lung cancer, and breast cancer without retraining. These findings suggest that early treatment-induced changes in circulating immune repertoires reflect the host’s capacity to mount an effective antitumor response. This work provides a framework for leveraging transient peripheral immune dynamics to develop non-invasive, high-fidelity biomarkers for response to immunotherapy across cancer types.",
+    "introduction": "",
+    "primary_discipline": "临床医学",
+    "secondary_disciplines": [
+      "Medicine",
+      "Biochemistry, Genetics and Molecular Biology"
+    ],
+    "concepts": null,
+    "relations": null,
+    "queries": null
+  },
+  {
+    "paper_id": "fd83271e1abf",
+    "title": "A physics-informed Airy beam learning framework for blockage avoidance in sub-terahertz wireless networks",
+    "abstract": "The line-of-sight blockage is one of the main challenges in sub-terahertz wireless networks. Interestingly, the extended near-field range of sub-terahertz nodes gives rise to near-field wavefront shaping as a feasible remedy to tackle this issue. Recently, Airy beams emerged as one promising solution that opens significant opportunities to circumvent blockers with unique self-accelerating properties and curved trajectories. Yet, to unleash the full potential of curved beams in practice, one fundamental challenge remains: How to find the best beam trajectory? In principle, an infinite number of trajectories can be engineered. To find the optimal trajectory, we develop a physics-informed machine-learning framework for Airy beam shaping based on a detailed understanding of near-field electromagnetics, ray optics, and wave optics. The experimental results indicate that Airy beams, when correctly configured, can substantially increase the link budget under high-blockage scenarios even compared to near-field beam focusing, providing insight into coverage expansion and blind-spot reduction.",
+    "introduction": "",
+    "primary_discipline": "物理学",
+    "secondary_disciplines": [
+      "Engineering",
+      "Physics and Astronomy"
+    ],
+    "concepts": null,
+    "relations": null,
+    "queries": null
+  },
+  {
+    "paper_id": "7273cd4fca70",
+    "title": "RAPDOR: Using Jensen-Shannon Distance for the computational analysis of complex proteomics datasets",
+    "abstract": "Abstract The computational analysis of large proteomics datasets from gradient profiling or spatially resolved proteomics is often as crucial as experimental design. We present RAPDOR, a tool for intuitive analyzing and visualizing such datasets, based on the Jensen-Shannon distance and analysis of similarities between replicates, applied to the identification of RNA-binding proteins (RBPs) and spatial proteomics. First, we examine the in-gradient distribution profiles of protein complexes with or without RNase treatment (GradR) to identify RBPs in the cyanobacterium Synechocystis 6803. RBPs play pivotal regulatory and structural roles. Although numerous RBPs are well characterized, the complete set of RBPs remains unknown for any species. RAPDOR identifies 165 potential RBPs, including ribosomal proteins, RNA-modifying enzymes, and proteins not previously associated with RNA binding. High-ranking putative RBPs, such as ribosome hibernation factor LrtA/RaiA, phosphoglucomutase Sll0726, antitoxin Ssl2245, and preQ(1) synthase QueF predicted by RAPDOR but not the TriPepSVM algorithm, are experimentally validated, indicating the existence of uncharacterized RBP domains. These data are available online, providing a resource for RNase-sensitive protein complexes in cyanobacteria. We then show by reanalyzing existing datasets that RAPDOR effectively examines the intracellular redistribution of proteins upon growth factor stimulation. RAPDOR is a generic, non-parametric tool for analyzing highly complex datasets.",
+    "introduction": "",
+    "primary_discipline": "生物学",
+    "secondary_disciplines": [
+      "Biochemistry, Genetics and Molecular Biology"
+    ],
+    "concepts": null,
+    "relations": null,
+    "queries": null
+  }
+]

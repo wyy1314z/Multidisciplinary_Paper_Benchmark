@@ -1,0 +1,761 @@
+[
+  {
+    "paper_id": "c7ad65ce9af2",
+    "method_name": "P1",
+    "free_text_hypotheses": [
+      "**Hypothesis:**  \n通过采用飞秒激光辅助的纳米压印技术，在氮化镓基发光层表面制备亚波长周期光栅结构，可以同时实现光子局域态密度增强和载流子注入效率优化。这种复合结构将打破传统界面散射损耗的限制，使激光照明器件的出光效率提升30%以上，且光谱半峰宽压缩至<15nm，其性能提升源于表面等离激元与量子阱激子的协同共振效应。  \n\n**理论依据与创新点：**  \n1. **双物理机制耦合**：传统方法仅单独优化光提取或电注入，而亚波长光栅可同时调控Purcell效应（通过光子态密度）和载流子输运（通过压印诱导的极化电场）；  \n2. **飞秒激光预处理**：在纳米压印前引入非热熔性激光退火，可消除氮化镓界面缺陷态，使器件阈值电流密度降低至<1 kA/cm²；  \n3. **可验证指标**：通过角分辨阴极发光光谱可直接观测到光栅周期与发光强度的非线性关联（预期在Λ=220nm时出现峰值）。"
+    ],
+    "structured_paths": {},
+    "raw_responses": [
+      "**Hypothesis:**  \n通过采用飞秒激光辅助的纳米压印技术，在氮化镓基发光层表面制备亚波长周期光栅结构，可以同时实现光子局域态密度增强和载流子注入效率优化。这种复合结构将打破传统界面散射损耗的限制，使激光照明器件的出光效率提升30%以上，且光谱半峰宽压缩至<15nm，其性能提升源于表面等离激元与量子阱激子的协同共振效应。  \n\n**理论依据与创新点：**  \n1. **双物理机制耦合**：传统方法仅单独优化光提取或电注入，而亚波长光栅可同时调控Purcell效应（通过光子态密度）和载流子输运（通过压印诱导的极化电场）；  \n2. **飞秒激光预处理**：在纳米压印前引入非热熔性激光退火，可消除氮化镓界面缺陷态，使器件阈值电流密度降低至<1 kA/cm²；  \n3. **可验证指标**：通过角分辨阴极发光光谱可直接观测到光栅周期与发光强度的非线性关联（预期在Λ=220nm时出现峰值）。"
+    ],
+    "elapsed_seconds": 10.775795221328735
+  },
+  {
+    "paper_id": "c7ad65ce9af2",
+    "method_name": "P2",
+    "free_text_hypotheses": [
+      "L1 Hypothesis: The integration of high-power infrared irradiation with rapid thermal annealing will enable the fabrication of highly densified phosphor-in-glass films with minimal interfacial damage, thereby preserving the quantum efficiency of embedded phosphors and significantly enhancing the luminous performance of laser-driven lighting systems. This approach will outperform conventional sintering methods in both processing efficiency and material preservation.\n\nL2 Hypotheses:\n- Q1: By precisely controlling the power density and duration of infrared irradiation, rapid thermal annealing can induce localized heating that promotes glass matrix densification while minimizing heat transfer to phosphor particles, thus achieving near-theoretical density (<3% porosity) with negligible thermal degradation of phosphors.\n- Q2: High-resolution electron microscopy will reveal that the ultra-fast thermal processing creates an atomically sharp interface between phosphor particles and glass matrix, with interfacial reaction layers less than 2 nm thick, which accounts for the preserved luminescent properties observed in the processed composites."
+    ],
+    "structured_paths": {},
+    "raw_responses": [
+      "L1 Hypothesis: The integration of high-power infrared irradiation with rapid thermal annealing will enable the fabrication of highly densified phosphor-in-glass films with minimal interfacial damage, thereby preserving the quantum efficiency of embedded phosphors and significantly enhancing the luminous performance of laser-driven lighting systems. This approach will outperform conventional sintering methods in both processing efficiency and material preservation.\n\nL2 Hypotheses:\n- Q1: By precisely controlling the power density and duration of infrared irradiation, rapid thermal annealing can induce localized heating that promotes glass matrix densification while minimizing heat transfer to phosphor particles, thus achieving near-theoretical density (<3% porosity) with negligible thermal degradation of phosphors.\n- Q2: High-resolution electron microscopy will reveal that the ultra-fast thermal processing creates an atomically sharp interface between phosphor particles and glass matrix, with interfacial reaction layers less than 2 nm thick, which accounts for the preserved luminescent properties observed in the processed composites."
+    ],
+    "elapsed_seconds": 8.19627332687378
+  },
+  {
+    "paper_id": "c7ad65ce9af2",
+    "method_name": "P3",
+    "free_text_hypotheses": [
+      "### Hypotheses Connecting Materials Science and Physics Concepts\n\n#### L1 Hypothesis:  \nThe integration of high-power infrared radiation with rapid thermal annealing creates a non-equilibrium thermal gradient that simultaneously achieves glass film densification (porosity <3%) and preserves phosphor particle integrity (Sr0.8Ca0.2AlSiN3:Eu2+), leading to record internal quantum efficiency (91.2%) by minimizing interfacial reactions observed via high-resolution electron microscopy. This synergy between infrared physics and materials processing enables luminous flux enhancement (2379 lm) through suppressed light loss pathways.\n\n#### L2 Hypotheses:  \n- **Q1**: The wavelength-specific absorption of infrared radiation by the glass matrix generates localized Joule heating at the phosphor-glass interface, where the thermal conductivity mismatch between materials creates transient stress fields that accelerate densification while limiting interfacial diffusion (testable via in-situ X-ray diffraction during annealing).  \n- **Q2**: The correlation between phosphor particle surface roughness (quantified by electron microscopy) and luminous efficacy (140 lm W−1) follows a power-law relationship, where sub-5 nm interfacial amorphous layers (from limited reaction) reduce non-radiative recombination centers by >50% compared to conventional sintering (verifiable through cathodoluminescence mapping).  \n\n#### L3 Hypotheses:  \n- **Q1**: A critical infrared power threshold (>10 kW) exists where the Stefan-Boltzmann radiation flux exceeds the glass transition activation energy in <1 second, creating a metastable liquid phase that seals pores via capillary action before phosphor degradation initiates (falsifiable by varying IR pulse durations and measuring porosity via mercury intrusion).  \n- **Q2**: The angular distribution of emitted light (photometry data) correlates with the phosphor particle sphericity preservation ratio (electron microscopy), where deviations >8% from pre-annealing morphology scatter photons and reduce the color rendering index by ΔCRI >15 points (testable by Mie scattering simulations coupled with CCT measurements).  \n\nThese hypotheses explicitly link:  \n1) Infrared radiation parameters (physics) → film densification/porosity (materials science)  \n2) Electron microscopy observations → quantum efficiency/luminous flux metrics  \n3) Thermal transport physics → phosphor particle preservation → optoelectronic performance"
+    ],
+    "structured_paths": {},
+    "raw_responses": [
+      "### Hypotheses Connecting Materials Science and Physics Concepts\n\n#### L1 Hypothesis:  \nThe integration of high-power infrared radiation with rapid thermal annealing creates a non-equilibrium thermal gradient that simultaneously achieves glass film densification (porosity <3%) and preserves phosphor particle integrity (Sr0.8Ca0.2AlSiN3:Eu2+), leading to record internal quantum efficiency (91.2%) by minimizing interfacial reactions observed via high-resolution electron microscopy. This synergy between infrared physics and materials processing enables luminous flux enhancement (2379 lm) through suppressed light loss pathways.\n\n#### L2 Hypotheses:  \n- **Q1**: The wavelength-specific absorption of infrared radiation by the glass matrix generates localized Joule heating at the phosphor-glass interface, where the thermal conductivity mismatch between materials creates transient stress fields that accelerate densification while limiting interfacial diffusion (testable via in-situ X-ray diffraction during annealing).  \n- **Q2**: The correlation between phosphor particle surface roughness (quantified by electron microscopy) and luminous efficacy (140 lm W−1) follows a power-law relationship, where sub-5 nm interfacial amorphous layers (from limited reaction) reduce non-radiative recombination centers by >50% compared to conventional sintering (verifiable through cathodoluminescence mapping).  \n\n#### L3 Hypotheses:  \n- **Q1**: A critical infrared power threshold (>10 kW) exists where the Stefan-Boltzmann radiation flux exceeds the glass transition activation energy in <1 second, creating a metastable liquid phase that seals pores via capillary action before phosphor degradation initiates (falsifiable by varying IR pulse durations and measuring porosity via mercury intrusion).  \n- **Q2**: The angular distribution of emitted light (photometry data) correlates with the phosphor particle sphericity preservation ratio (electron microscopy), where deviations >8% from pre-annealing morphology scatter photons and reduce the color rendering index by ΔCRI >15 points (testable by Mie scattering simulations coupled with CCT measurements).  \n\nThese hypotheses explicitly link:  \n1) Infrared radiation parameters (physics) → film densification/porosity (materials science)  \n2) Electron microscopy observations → quantum efficiency/luminous flux metrics  \n3) Thermal transport physics → phosphor particle preservation → optoelectronic performance"
+    ],
+    "elapsed_seconds": 13.499366283416748
+  },
+  {
+    "paper_id": "c7ad65ce9af2",
+    "method_name": "P4",
+    "free_text_hypotheses": [
+      "Here are the novel hypotheses structured across three levels:\n\nL1 Hypothesis:\n  hypothesis: The infrared-driven rapid thermal annealing technique induces localized plasmonic heating at phosphor-glass interfaces, creating transient non-equilibrium states that simultaneously enhance film densification while preserving phosphor crystallinity through selective energy absorption mechanisms.\n  reasoning: \n    1. Premise: Infrared radiation can excite surface plasmons in certain materials\n    2. Mechanism: Phosphor particles may develop localized plasmonic hotspots under high-power IR\n    3. Prediction: This would create gradient thermal zones enabling fast sintering while protecting core phosphor structure\n  key_concepts: [plasmonic heating, non-equilibrium states, selective energy absorption]\n  disciplines_bridged: [材料科学, 物理学]\n\nL2 Hypotheses:\n- Q1:\n    hypothesis: The spectral matching between IR source emission and phosphor matrix absorption bands creates resonant thermal coupling, where optimal densification occurs at specific wavelength-power combinations that minimize interfacial reactions.\n    reasoning:\n      1. Premise: Different materials have characteristic IR absorption bands\n      2. Mechanism: Spectral overlap enables efficient energy transfer at interfaces\n      3. Prediction: Tuning IR wavelength to match glass matrix absorption will show improved densification versus phosphor damage ratio\n    key_concepts: [spectral matching, resonant thermal coupling, absorption bands]\n    disciplines_bridged: [材料科学, 物理学]\n- Q2:\n    hypothesis: The interfacial reaction products observed by HRTEM form beneficial optical scattering centers that actually enhance light extraction efficiency when maintained below a critical thickness threshold.\n    reasoning:\n      1. Premise: Minimal interfacial reactions are observed\n      2. Mechanism: Nano-scale reaction products may scatter light beneficially\n      3. Prediction: Controlled interfacial engineering could optimize both durability and light extraction\n    key_concepts: [scattering centers, light extraction, thickness threshold]\n    disciplines_bridged: [材料科学, 物理学]\n\nL3 Hypotheses:\n- Q1:\n    hypothesis: Implementing real-time pyrometry feedback control during IR annealing will reveal non-linear temperature-porosity relationships that enable predictive process optimization through machine learning algorithms.\n    reasoning:\n      1. Premise: Current process achieves <3% porosity\n      2. Mechanism: Dynamic thermal profiles may have hidden optimization spaces\n      3. Prediction: ML models trained on in-situ data will identify non-intuitive parameter combinations\n    key_concepts: [pyrometry feedback, non-linear relationships, machine learning]\n    disciplines_bridged: [材料科学, 物理学]\n- Q2:\n    hypothesis: Correlative electron microscopy and cathodoluminescence mapping will demonstrate that lattice strain fields around intact phosphor particles actually enhance quantum efficiency through strain-induced band structure modification.\n    reasoning:\n      1. Premise: Phosphor particles remain structurally intact\n      2. Mechanism: Residual strain may beneficially modify electronic structure\n      3. Prediction: Strain mapping will correlate with enhanced emission zones\n    key_concepts: [lattice strain, band structure modification, cathodoluminescence]\n    disciplines_bridged: [材料科学, 物理学]\n\nThese hypotheses extend beyond the reported findings by proposing:\n1) New physical mechanisms (plasmonic heating, resonant coupling)\n2) Beneficial side-effects of observed phenomena (strain enhancement, scattering centers)\n3) Advanced characterization and control approaches (ML optimization, correlative microscopy)\n4) Quantitative relationships between process parameters and performance metrics"
+    ],
+    "structured_paths": {},
+    "raw_responses": [
+      "Here are the novel hypotheses structured across three levels:\n\nL1 Hypothesis:\n  hypothesis: The infrared-driven rapid thermal annealing technique induces localized plasmonic heating at phosphor-glass interfaces, creating transient non-equilibrium states that simultaneously enhance film densification while preserving phosphor crystallinity through selective energy absorption mechanisms.\n  reasoning: \n    1. Premise: Infrared radiation can excite surface plasmons in certain materials\n    2. Mechanism: Phosphor particles may develop localized plasmonic hotspots under high-power IR\n    3. Prediction: This would create gradient thermal zones enabling fast sintering while protecting core phosphor structure\n  key_concepts: [plasmonic heating, non-equilibrium states, selective energy absorption]\n  disciplines_bridged: [材料科学, 物理学]\n\nL2 Hypotheses:\n- Q1:\n    hypothesis: The spectral matching between IR source emission and phosphor matrix absorption bands creates resonant thermal coupling, where optimal densification occurs at specific wavelength-power combinations that minimize interfacial reactions.\n    reasoning:\n      1. Premise: Different materials have characteristic IR absorption bands\n      2. Mechanism: Spectral overlap enables efficient energy transfer at interfaces\n      3. Prediction: Tuning IR wavelength to match glass matrix absorption will show improved densification versus phosphor damage ratio\n    key_concepts: [spectral matching, resonant thermal coupling, absorption bands]\n    disciplines_bridged: [材料科学, 物理学]\n- Q2:\n    hypothesis: The interfacial reaction products observed by HRTEM form beneficial optical scattering centers that actually enhance light extraction efficiency when maintained below a critical thickness threshold.\n    reasoning:\n      1. Premise: Minimal interfacial reactions are observed\n      2. Mechanism: Nano-scale reaction products may scatter light beneficially\n      3. Prediction: Controlled interfacial engineering could optimize both durability and light extraction\n    key_concepts: [scattering centers, light extraction, thickness threshold]\n    disciplines_bridged: [材料科学, 物理学]\n\nL3 Hypotheses:\n- Q1:\n    hypothesis: Implementing real-time pyrometry feedback control during IR annealing will reveal non-linear temperature-porosity relationships that enable predictive process optimization through machine learning algorithms.\n    reasoning:\n      1. Premise: Current process achieves <3% porosity\n      2. Mechanism: Dynamic thermal profiles may have hidden optimization spaces\n      3. Prediction: ML models trained on in-situ data will identify non-intuitive parameter combinations\n    key_concepts: [pyrometry feedback, non-linear relationships, machine learning]\n    disciplines_bridged: [材料科学, 物理学]\n- Q2:\n    hypothesis: Correlative electron microscopy and cathodoluminescence mapping will demonstrate that lattice strain fields around intact phosphor particles actually enhance quantum efficiency through strain-induced band structure modification.\n    reasoning:\n      1. Premise: Phosphor particles remain structurally intact\n      2. Mechanism: Residual strain may beneficially modify electronic structure\n      3. Prediction: Strain mapping will correlate with enhanced emission zones\n    key_concepts: [lattice strain, band structure modification, cathodoluminescence]\n    disciplines_bridged: [材料科学, 物理学]\n\nThese hypotheses extend beyond the reported findings by proposing:\n1) New physical mechanisms (plasmonic heating, resonant coupling)\n2) Beneficial side-effects of observed phenomena (strain enhancement, scattering centers)\n3) Advanced characterization and control approaches (ML optimization, correlative microscopy)\n4) Quantitative relationships between process parameters and performance metrics"
+    ],
+    "elapsed_seconds": 25.709228992462158
+  },
+  {
+    "paper_id": "c7ad65ce9af2",
+    "method_name": "P5",
+    "free_text_hypotheses": [
+      "通过红外辐射功率参数调控快速热退火工艺，形成薄膜致密化-量子效率提升的闭环验证链条",
+      "基于电子显微观测建立颗粒完整性-光损失抑制-光通量提升的三步量化评价体系",
+      "通过红外辐射功率参数调控快速热退火工艺，形成薄膜致密化-量子效率提升的闭环验证链条",
+      "基于电子显微观测建立颗粒完整性-光损失抑制-光通量提升的三步量化评价体系",
+      "通过红外辐射功率参数调控快速热退火工艺，形成薄膜致密化-量子效率提升的闭环验证链条",
+      "基于电子显微观测建立颗粒完整性-光损失抑制-光通量提升的三步量化评价体系"
+    ],
+    "structured_paths": {
+      "L1": [
+        {
+          "steps": [
+            {
+              "step": 1,
+              "head": "快速热退火技术",
+              "relation": "应用于",
+              "tail": "玻璃基荧光粉薄膜",
+              "claim": "快速热退火技术通过高功率红外辐射实现玻璃基荧光粉薄膜的高致密化"
+            },
+            {
+              "step": 2,
+              "head": "玻璃基荧光粉薄膜",
+              "relation": "提升",
+              "tail": "内量子效率",
+              "claim": "高致密化的玻璃基荧光粉薄膜显著提升荧光材料的内量子效率"
+            },
+            {
+              "step": 3,
+              "head": "内量子效率",
+              "relation": "需要物理学补位以优化",
+              "tail": "电光转换效率",
+              "claim": "材料科学领域的内量子效率提升需要物理学介入优化激光照明器件的电光转换效率"
+            }
+          ],
+          "summary": "材料科学通过快速热退火技术提升薄膜致密化后，需要物理学介入优化电光转换效率以实现激光照明性能突破"
+        },
+        {
+          "steps": [
+            {
+              "step": 1,
+              "head": "高分辨率电子显微镜",
+              "relation": "观测到",
+              "tail": "荧光粉颗粒",
+              "claim": "高分辨率电子显微镜证实快速退火工艺能保持荧光粉颗粒的完整性"
+            },
+            {
+              "step": 2,
+              "head": "荧光粉颗粒",
+              "relation": "抑制",
+              "tail": "光损失",
+              "claim": "保持完整的荧光粉颗粒可有效抑制器件的光损失现象"
+            },
+            {
+              "step": 3,
+              "head": "光损失",
+              "relation": "需要物理学补位以量化",
+              "tail": "显色指数",
+              "claim": "材料科学对光损失的抑制效果需要物理学方法量化评估其对显色指数的实际影响"
+            }
+          ],
+          "summary": "材料科学借助电子显微技术确认颗粒完整性抑制光损失后，需要物理学方法量化评估其对显色指数的提升效果"
+        }
+      ],
+      "L2": [
+        {
+          "steps": [
+            {
+              "step": 1,
+              "head": "红外辐射",
+              "relation": "提供能量驱动",
+              "tail": "快速热退火技术",
+              "claim": "高功率红外辐射为快速热退火技术提供瞬时高温能量源"
+            },
+            {
+              "step": 2,
+              "head": "快速热退火技术",
+              "relation": "实现致密化控制",
+              "tail": "玻璃基荧光粉薄膜",
+              "claim": "该技术通过精确控温实现薄膜孔隙率低于百分之三的致密化结构"
+            },
+            {
+              "step": 3,
+              "head": "玻璃基荧光粉薄膜",
+              "relation": "提升",
+              "tail": "内量子效率",
+              "claim": "致密化结构减少光散射路径从而提升荧光转换效率"
+            }
+          ],
+          "summary": "物理学中的红外辐射能量传递机制通过驱动快速热退火工艺，优化薄膜致密化结构并最终提升材料内量子效率"
+        },
+        {
+          "steps": [
+            {
+              "step": 1,
+              "head": "高分辨率电子显微镜",
+              "relation": "观测界面反应",
+              "tail": "荧光粉颗粒",
+              "claim": "显微技术可定量分析颗粒与玻璃基体的界面反应程度"
+            },
+            {
+              "step": 2,
+              "head": "荧光粉颗粒",
+              "relation": "抑制",
+              "tail": "光损失",
+              "claim": "完整颗粒结构减少界面光散射损失"
+            },
+            {
+              "step": 3,
+              "head": "光损失",
+              "relation": "影响",
+              "tail": "光通量",
+              "claim": "降低光损失直接提升器件输出光通量"
+            }
+          ],
+          "summary": "物理学表征技术通过电子显微镜量化界面反应程度，建立颗粒完整性-光损失抑制-光通量提升的连锁优化路径"
+        }
+      ],
+      "L3": [
+        {
+          "steps": [
+            {
+              "step": 1,
+              "head": "红外辐射",
+              "relation": "提供能量输入",
+              "tail": "快速热退火技术",
+              "claim": "高功率红外辐射为快速热退火技术提供瞬时高温能量来源"
+            },
+            {
+              "step": 2,
+              "head": "快速热退火技术",
+              "relation": "调控致密化过程",
+              "tail": "玻璃基荧光粉薄膜",
+              "claim": "通过功率参数映射实现薄膜孔隙率精确控制"
+            },
+            {
+              "step": 3,
+              "head": "玻璃基荧光粉薄膜",
+              "relation": "提升",
+              "tail": "内量子效率",
+              "claim": "低孔隙率结构增强光转换效率"
+            }
+          ],
+          "summary": "通过红外辐射功率参数调控快速热退火工艺，形成薄膜致密化-量子效率提升的闭环验证链条"
+        },
+        {
+          "steps": [
+            {
+              "step": 1,
+              "head": "高分辨率电子显微镜",
+              "relation": "观测界面形貌",
+              "tail": "荧光粉颗粒",
+              "claim": "显微图像量化颗粒完整性指标"
+            },
+            {
+              "step": 2,
+              "head": "荧光粉颗粒",
+              "relation": "抑制",
+              "tail": "光损失",
+              "claim": "完整颗粒结构减少光散射损耗"
+            },
+            {
+              "step": 3,
+              "head": "光损失",
+              "relation": "影响",
+              "tail": "光通量",
+              "claim": "损耗降低直接提升输出光通量"
+            }
+          ],
+          "summary": "基于电子显微观测建立颗粒完整性-光损失抑制-光通量提升的三步量化评价体系"
+        }
+      ]
+    },
+    "raw_responses": [],
+    "elapsed_seconds": 9.489059448242188e-05
+  },
+  {
+    "paper_id": "360630035da3",
+    "method_name": "P1",
+    "free_text_hypotheses": [
+      "**Hypothesis:**  \nBy reconstructing ancestral sequences of modular polyketide synthases (PKS) using maximum-likelihood phylogenetic methods, we predict that conserved structural motifs in ancestral PKS domains will reveal evolutionary \"hotspots\" of module recombination. These hotspots will correspond to regions of high structural plasticity in modern PKS systems, enabling rational engineering of chimeric PKS pathways with enhanced substrate specificity or product diversity. Testing this hypothesis involves ancestral sequence resurrection, structural modeling, and experimental validation through heterologous expression of reconstructed ancestral modules in bacterial hosts."
+    ],
+    "structured_paths": {},
+    "raw_responses": [
+      "**Hypothesis:**  \nBy reconstructing ancestral sequences of modular polyketide synthases (PKS) using maximum-likelihood phylogenetic methods, we predict that conserved structural motifs in ancestral PKS domains will reveal evolutionary \"hotspots\" of module recombination. These hotspots will correspond to regions of high structural plasticity in modern PKS systems, enabling rational engineering of chimeric PKS pathways with enhanced substrate specificity or product diversity. Testing this hypothesis involves ancestral sequence resurrection, structural modeling, and experimental validation through heterologous expression of reconstructed ancestral modules in bacterial hosts."
+    ],
+    "elapsed_seconds": 5.237830638885498
+  },
+  {
+    "paper_id": "360630035da3",
+    "method_name": "P2",
+    "free_text_hypotheses": [
+      "L1 Hypothesis: The integration of ancestral sequence reconstruction (ASR) with modern structural biology techniques (cryo-EM and crystallography) can systematically resolve conformational dynamics in modular PKSs by strategically replacing unstable native domains with thermostable ancestral variants, thereby enabling previously inaccessible high-resolution structural analysis of transient domain interactions critical for polyketide biosynthesis.\n\nL2 Hypotheses:\n- Q1: Cryo-EM combined with multivariate statistical analysis of domain motions will reveal that KSQ-ACP interactions occur through a conserved hinge mechanism, where ancestral domain stabilization captures three distinct conformational states (open, intermediate, and closed) that correlate with substrate loading, decarboxylation, and acyl transfer steps in the PKS catalytic cycle.\n\n- Q2: Molecular evolution-guided domain optimization through ASR will demonstrate that ancestral AT domains (AncATs) possess enhanced structural rigidity compared to modern counterparts due to optimized interdomain contact networks, enabling their use as \"crystallization chaperones\" for obtaining high-resolution structures of otherwise flexible multi-domain PKS complexes while maintaining >80% native enzymatic activity."
+    ],
+    "structured_paths": {},
+    "raw_responses": [
+      "L1 Hypothesis: The integration of ancestral sequence reconstruction (ASR) with modern structural biology techniques (cryo-EM and crystallography) can systematically resolve conformational dynamics in modular PKSs by strategically replacing unstable native domains with thermostable ancestral variants, thereby enabling previously inaccessible high-resolution structural analysis of transient domain interactions critical for polyketide biosynthesis.\n\nL2 Hypotheses:\n- Q1: Cryo-EM combined with multivariate statistical analysis of domain motions will reveal that KSQ-ACP interactions occur through a conserved hinge mechanism, where ancestral domain stabilization captures three distinct conformational states (open, intermediate, and closed) that correlate with substrate loading, decarboxylation, and acyl transfer steps in the PKS catalytic cycle.\n\n- Q2: Molecular evolution-guided domain optimization through ASR will demonstrate that ancestral AT domains (AncATs) possess enhanced structural rigidity compared to modern counterparts due to optimized interdomain contact networks, enabling their use as \"crystallization chaperones\" for obtaining high-resolution structures of otherwise flexible multi-domain PKS complexes while maintaining >80% native enzymatic activity."
+    ],
+    "elapsed_seconds": 8.138938426971436
+  },
+  {
+    "paper_id": "360630035da3",
+    "method_name": "P3",
+    "free_text_hypotheses": [
+      "Here are the generated hypotheses across three levels of research questions:\n\nL1 Hypothesis: \nThe integration of ancestral sequence reconstruction (ASR) from evolutionary biology with cryo-EM single-particle analysis from biophysics will reveal conserved structural motifs in modular polyketide synthases (PKSs) that are critical for maintaining enzymatic function during domain swapping. Specifically, we hypothesize that ancestral AT domains (AncAT) reconstructed through ASR will contain stabilizing structural elements that enable successful crystallization of normally recalcitrant PKS domains while preserving native-like interactions with ketosynthase-like decarboxylase (KSQ) domains.\n\nL2 Hypotheses:\n- Q1: Combining cryo-EM structural analysis from biophysics with chemometric methods from chemistry will identify distinct conformational states of the KSQ-ACP complex that correlate with specific stages of polyketide chain elongation, particularly during malonyl-CoA loading and β-ketoacyl thioester formation.\n- Q2: Applying molecular biology techniques for domain characterization with ASR-derived enzyme variants will demonstrate that ancestral ketoreductase (KR) domains from PKS systems exhibit broader substrate promiscuity than their modern counterparts, enabling their use in engineered cis-AT PKS systems for expanded chemical diversity.\n\nL3 Hypotheses:\n- Q1: Domain swapping strategies from bioengineering using ASR-derived AncAT domains will yield chimeric KSQAncAT didomains that not only facilitate high-resolution crystal structure determination but also maintain functional interactions with acyl carrier proteins (ACPs) as evidenced by cryo-EM structural analysis of the complexes.\n- Q2: The combination of chemical substrate labeling techniques from chemistry with molecular dynamics simulations from biophysics, applied to high-resolution structures of ancestral PKS domains, will reveal conserved molecular mechanisms for polyketide chain elongation that can be experimentally validated through systematic module exchanges in engineered PKS systems."
+    ],
+    "structured_paths": {},
+    "raw_responses": [
+      "Here are the generated hypotheses across three levels of research questions:\n\nL1 Hypothesis: \nThe integration of ancestral sequence reconstruction (ASR) from evolutionary biology with cryo-EM single-particle analysis from biophysics will reveal conserved structural motifs in modular polyketide synthases (PKSs) that are critical for maintaining enzymatic function during domain swapping. Specifically, we hypothesize that ancestral AT domains (AncAT) reconstructed through ASR will contain stabilizing structural elements that enable successful crystallization of normally recalcitrant PKS domains while preserving native-like interactions with ketosynthase-like decarboxylase (KSQ) domains.\n\nL2 Hypotheses:\n- Q1: Combining cryo-EM structural analysis from biophysics with chemometric methods from chemistry will identify distinct conformational states of the KSQ-ACP complex that correlate with specific stages of polyketide chain elongation, particularly during malonyl-CoA loading and β-ketoacyl thioester formation.\n- Q2: Applying molecular biology techniques for domain characterization with ASR-derived enzyme variants will demonstrate that ancestral ketoreductase (KR) domains from PKS systems exhibit broader substrate promiscuity than their modern counterparts, enabling their use in engineered cis-AT PKS systems for expanded chemical diversity.\n\nL3 Hypotheses:\n- Q1: Domain swapping strategies from bioengineering using ASR-derived AncAT domains will yield chimeric KSQAncAT didomains that not only facilitate high-resolution crystal structure determination but also maintain functional interactions with acyl carrier proteins (ACPs) as evidenced by cryo-EM structural analysis of the complexes.\n- Q2: The combination of chemical substrate labeling techniques from chemistry with molecular dynamics simulations from biophysics, applied to high-resolution structures of ancestral PKS domains, will reveal conserved molecular mechanisms for polyketide chain elongation that can be experimentally validated through systematic module exchanges in engineered PKS systems."
+    ],
+    "elapsed_seconds": 12.895376682281494
+  },
+  {
+    "paper_id": "360630035da3",
+    "method_name": "P4",
+    "free_text_hypotheses": [
+      "Here are the novel hypotheses structured according to your requested format:\n\nL1 Hypothesis:\nhypothesis: Ancestral sequence reconstruction (ASR) of PKS domains can reveal evolutionary-conserved structural motifs that enable engineering of chimeric PKS systems with enhanced antibiotic production capabilities through strategic domain recombination across phylogenetic lineages.\n\nreasoning:\n1. Premise: ASR reveals functionally conserved structural features in ancestral domains\n2. Mechanism: These conserved motifs likely represent optimal structural solutions maintained through evolution\n3. Prediction: Recombining domains with conserved structural motifs from different phylogenetic lineages will create functional chimeric PKSs with improved catalytic efficiency for antibiotic production\n\nkey_concepts: [ancestral sequence reconstruction, structural motifs, domain recombination, phylogenetic lineages, catalytic efficiency]\ndisciplines_bridged: [生物工程, 分子生物学, 生物物理学]\n\nL2 Hypotheses:\n- Q1:\n    hypothesis: Cryo-EM structural analysis combined with chemometric modeling can identify dynamic conformational states of PKS modules that correlate with specific stages of polyketide chain elongation, enabling temporal mapping of the biosynthesis pathway.\n\nreasoning:\n1. Premise: PKS modules undergo conformational changes during catalysis\n2. Mechanism: Chemometric analysis of cryo-EM data can classify these conformational states\n3. Prediction: Each conformational state will correspond to a specific step in the polyketide elongation cycle\n\nkey_concepts: [cryo-EM, chemometric modeling, conformational states, polyketide chain elongation, temporal mapping]\ndisciplines_bridged: [生物物理学, 化学, 分子生物学]\n\n- Q2:\n    hypothesis: ASR-optimized enzyme domains will exhibit improved compatibility with non-native substrate analogs when incorporated into engineered PKS systems, enabling biosynthesis of novel polyketide derivatives through expanded substrate promiscuity.\n\nreasoning:\n1. Premise: Ancestral domains often have broader substrate specificity\n2. Mechanism: ASR optimization can enhance this promiscuity while maintaining catalytic function\n3. Prediction: Chimeric PKSs containing ASR-optimized domains will accept modified CoA substrates for novel polyketide production\n\nkey_concepts: [ASR optimization, substrate analogs, engineered PKS, substrate promiscuity, polyketide derivatives]\ndisciplines_bridged: [分子生物学, 化学, 生物工程]\n\nL3 Hypotheses:\n- Q1:\n    hypothesis: Domain swapping between KSQAncAT and reduction modules (KR/DH/ER) will create functional hybrid PKS systems where the ancestral AT domain enhances transfer efficiency while maintaining proper inter-domain communication with downstream modification domains.\n\nreasoning:\n1. Premise: Ancestral AT domains show improved structural stability\n2. Mechanism: This stability may facilitate proper domain-domain interactions\n3. Prediction: Hybrid systems will show increased polyketide production yields while maintaining correct reduction patterns\n\nkey_concepts: [domain swapping, KSQAncAT, reduction modules, inter-domain communication, production yields]\ndisciplines_bridged: [生物工程, 分子生物学, 化学]\n\n- Q2:\n    hypothesis: Combining chemical substrate labeling with molecular dynamics simulations of high-resolution PKS structures will reveal previously unrecognized substrate channeling pathways that optimize intermediate transfer between catalytic domains during polyketide synthesis.\n\nreasoning:\n1. Premise: PKS domains must efficiently transfer reactive intermediates\n2. Mechanism: Substrate labeling can track intermediate movement through the structure\n3. Prediction: Simulations will identify conserved channeling pathways that minimize intermediate diffusion and side reactions\n\nkey_concepts: [chemical labeling, molecular dynamics, substrate channeling, intermediate transfer, side reactions]\ndisciplines_bridged: [化学, 生物物理学, 分子生物学]\n\nThese hypotheses extend beyond the known relationships by proposing new mechanistic connections (e.g., between ASR and substrate promiscuity), novel methodological integrations (e.g., cryo-EM with chemometrics), and practical engineering applications (e.g., hybrid PKS systems). Each bridges multiple disciplines while making testable predictions."
+    ],
+    "structured_paths": {},
+    "raw_responses": [
+      "Here are the novel hypotheses structured according to your requested format:\n\nL1 Hypothesis:\nhypothesis: Ancestral sequence reconstruction (ASR) of PKS domains can reveal evolutionary-conserved structural motifs that enable engineering of chimeric PKS systems with enhanced antibiotic production capabilities through strategic domain recombination across phylogenetic lineages.\n\nreasoning:\n1. Premise: ASR reveals functionally conserved structural features in ancestral domains\n2. Mechanism: These conserved motifs likely represent optimal structural solutions maintained through evolution\n3. Prediction: Recombining domains with conserved structural motifs from different phylogenetic lineages will create functional chimeric PKSs with improved catalytic efficiency for antibiotic production\n\nkey_concepts: [ancestral sequence reconstruction, structural motifs, domain recombination, phylogenetic lineages, catalytic efficiency]\ndisciplines_bridged: [生物工程, 分子生物学, 生物物理学]\n\nL2 Hypotheses:\n- Q1:\n    hypothesis: Cryo-EM structural analysis combined with chemometric modeling can identify dynamic conformational states of PKS modules that correlate with specific stages of polyketide chain elongation, enabling temporal mapping of the biosynthesis pathway.\n\nreasoning:\n1. Premise: PKS modules undergo conformational changes during catalysis\n2. Mechanism: Chemometric analysis of cryo-EM data can classify these conformational states\n3. Prediction: Each conformational state will correspond to a specific step in the polyketide elongation cycle\n\nkey_concepts: [cryo-EM, chemometric modeling, conformational states, polyketide chain elongation, temporal mapping]\ndisciplines_bridged: [生物物理学, 化学, 分子生物学]\n\n- Q2:\n    hypothesis: ASR-optimized enzyme domains will exhibit improved compatibility with non-native substrate analogs when incorporated into engineered PKS systems, enabling biosynthesis of novel polyketide derivatives through expanded substrate promiscuity.\n\nreasoning:\n1. Premise: Ancestral domains often have broader substrate specificity\n2. Mechanism: ASR optimization can enhance this promiscuity while maintaining catalytic function\n3. Prediction: Chimeric PKSs containing ASR-optimized domains will accept modified CoA substrates for novel polyketide production\n\nkey_concepts: [ASR optimization, substrate analogs, engineered PKS, substrate promiscuity, polyketide derivatives]\ndisciplines_bridged: [分子生物学, 化学, 生物工程]\n\nL3 Hypotheses:\n- Q1:\n    hypothesis: Domain swapping between KSQAncAT and reduction modules (KR/DH/ER) will create functional hybrid PKS systems where the ancestral AT domain enhances transfer efficiency while maintaining proper inter-domain communication with downstream modification domains.\n\nreasoning:\n1. Premise: Ancestral AT domains show improved structural stability\n2. Mechanism: This stability may facilitate proper domain-domain interactions\n3. Prediction: Hybrid systems will show increased polyketide production yields while maintaining correct reduction patterns\n\nkey_concepts: [domain swapping, KSQAncAT, reduction modules, inter-domain communication, production yields]\ndisciplines_bridged: [生物工程, 分子生物学, 化学]\n\n- Q2:\n    hypothesis: Combining chemical substrate labeling with molecular dynamics simulations of high-resolution PKS structures will reveal previously unrecognized substrate channeling pathways that optimize intermediate transfer between catalytic domains during polyketide synthesis.\n\nreasoning:\n1. Premise: PKS domains must efficiently transfer reactive intermediates\n2. Mechanism: Substrate labeling can track intermediate movement through the structure\n3. Prediction: Simulations will identify conserved channeling pathways that minimize intermediate diffusion and side reactions\n\nkey_concepts: [chemical labeling, molecular dynamics, substrate channeling, intermediate transfer, side reactions]\ndisciplines_bridged: [化学, 生物物理学, 分子生物学]\n\nThese hypotheses extend beyond the known relationships by proposing new mechanistic connections (e.g., between ASR and substrate promiscuity), novel methodological integrations (e.g., cryo-EM with chemometrics), and practical engineering applications (e.g., hybrid PKS systems). Each bridges multiple disciplines while making testable predictions."
+    ],
+    "elapsed_seconds": 27.401712894439697
+  },
+  {
+    "paper_id": "360630035da3",
+    "method_name": "P5",
+    "free_text_hypotheses": [
+      "通过域交换策略构建嵌合蛋白后，采用冷冻电镜单颗粒分析验证其结构特征，形成闭环验证流程",
+      "从化学底物标记出发，经分子动力学模拟分析酶机制，最终通过高分辨率晶体结构测定完成验证",
+      "",
+      "",
+      "通过域交换策略构建嵌合蛋白后，采用冷冻电镜单颗粒分析验证其结构特征，形成闭环验证流程",
+      "从化学底物标记出发，经分子动力学模拟分析酶机制，最终通过高分辨率晶体结构测定完成验证",
+      "通过域交换策略构建嵌合蛋白后，采用冷冻电镜单颗粒分析验证其结构特征，形成闭环验证流程",
+      "从化学底物标记出发，经分子动力学模拟分析酶机制，最终通过高分辨率晶体结构测定完成验证"
+    ],
+    "structured_paths": {
+      "L1": [
+        {
+          "steps": [
+            {
+              "step": 1,
+              "head": "模块化聚酮合酶",
+              "relation": "生物合成",
+              "tail": "聚酮抗生素",
+              "claim": "模块化聚酮合酶负责聚酮抗生素的生物合成。"
+            },
+            {
+              "step": 2,
+              "head": "聚酮抗生素",
+              "relation": "需要解析",
+              "tail": "高分辨率晶体结构",
+              "claim": "聚酮抗生素的生产需要解析其高分辨率晶体结构。"
+            },
+            {
+              "step": 3,
+              "head": "高分辨率晶体结构",
+              "relation": "依赖",
+              "tail": "生物物理学",
+              "claim": "解析高分辨率晶体结构需要生物物理学的冷冻电镜技术补位。"
+            }
+          ],
+          "summary": "模块化聚酮合酶生物合成聚酮抗生素的瓶颈在于高分辨率晶体结构的解析，需要生物物理学的冷冻电镜技术补位以提升结构解析能力。"
+        },
+        {
+          "steps": [
+            {
+              "step": 1,
+              "head": "祖先序列重建",
+              "relation": "应用于",
+              "tail": "酮合酶样脱羧酶",
+              "claim": "祖先序列重建技术应用于酮合酶样脱羧酶的结构分析。"
+            },
+            {
+              "step": 2,
+              "head": "酮合酶样脱羧酶",
+              "relation": "催化生成",
+              "tail": "β-酮酰基硫酯",
+              "claim": "酮合酶样脱羧酶催化生成β-酮酰基硫酯。"
+            },
+            {
+              "step": 3,
+              "head": "β-酮酰基硫酯",
+              "relation": "需要优化",
+              "tail": "分子生物学",
+              "claim": "β-酮酰基硫酯的生成优化需要分子生物学的酶域功能表征补位。"
+            }
+          ],
+          "summary": "祖先序列重建技术应用于酮合酶样脱羧酶的结构分析，其瓶颈在于β-酮酰基硫酯的生成优化，需要分子生物学的酶域功能表征补位。"
+        },
+        {
+          "steps": [
+            {
+              "step": 1,
+              "head": "酰基转移酶",
+              "relation": "转移",
+              "tail": "丙二酰辅酶",
+              "claim": "酰基转移酶负责转移丙二酰辅酶。"
+            },
+            {
+              "step": 2,
+              "head": "丙二酰辅酶",
+              "relation": "参与合成",
+              "tail": "聚酮抗生素",
+              "claim": "丙二酰辅酶参与聚酮抗生素的合成。"
+            },
+            {
+              "step": 3,
+              "head": "聚酮抗生素",
+              "relation": "需要工程化",
+              "tail": "生物工程",
+              "claim": "聚酮抗生素的合成需要生物工程的域交换策略补位。"
+            }
+          ],
+          "summary": "酰基转移酶转移丙二酰辅酶参与聚酮抗生素合成的瓶颈在于合成过程的工程化，需要生物工程的域交换策略补位。"
+        },
+        {
+          "steps": [
+            {
+              "step": 1,
+              "head": "冷冻电镜单颗粒分析",
+              "relation": "解析",
+              "tail": "冷冻电镜结构",
+              "claim": "冷冻电镜单颗粒分析用于解析冷冻电镜结构。"
+            },
+            {
+              "step": 2,
+              "head": "冷冻电镜结构",
+              "relation": "依赖",
+              "tail": "祖先序列重建",
+              "claim": "冷冻电镜结构的解析依赖祖先序列重建技术。"
+            },
+            {
+              "step": 3,
+              "head": "祖先序列重建",
+              "relation": "需要化学",
+              "tail": "化学",
+              "claim": "祖先序列重建技术的应用需要化学的底物标记技术补位。"
+            }
+          ],
+          "summary": "冷冻电镜单颗粒分析解析冷冻电镜结构的瓶颈在于祖先序列重建技术的应用，需要化学的底物标记技术补位以提升分析精度。"
+        }
+      ],
+      "L2": [
+        {
+          "steps": [
+            {
+              "step": 1,
+              "head": "冷冻电镜单颗粒分析",
+              "relation": "生成",
+              "tail": "冷冻电镜结构",
+              "claim": "冷冻电镜单颗粒分析技术能够解析蛋白质的冷冻电镜结构"
+            },
+            {
+              "step": 2,
+              "head": "冷冻电镜结构",
+              "relation": "揭示",
+              "tail": "模块化聚酮合酶",
+              "claim": "冷冻电镜结构可以揭示模块化聚酮合酶的三维构象特征"
+            },
+            {
+              "step": 3,
+              "head": "模块化聚酮合酶",
+              "relation": "生物合成",
+              "tail": "聚酮抗生素",
+              "claim": "模块化聚酮合酶的三维构象特征影响其生物合成聚酮抗生素的功能"
+            }
+          ],
+          "summary": "通过冷冻电镜技术与化学计量学方法的结合，将结构解析问题转化为三维构象特征的可视化分析，进而关联到聚酮抗生素的生物合成功能优化"
+        },
+        {
+          "steps": [
+            {
+              "step": 1,
+              "head": "祖先序列重建",
+              "relation": "优化",
+              "tail": "酮合酶样脱羧酶",
+              "claim": "祖先序列重建技术能够优化酮合酶样脱羧酶的序列特征"
+            },
+            {
+              "step": 2,
+              "head": "酮合酶样脱羧酶",
+              "relation": "催化生成",
+              "tail": "β-酮酰基硫酯",
+              "claim": "优化后的酮合酶样脱羧酶能更高效地催化生成β-酮酰基硫酯"
+            },
+            {
+              "step": 3,
+              "head": "β-酮酰基硫酯",
+              "relation": "作为前体",
+              "tail": "聚酮抗生素",
+              "claim": "β-酮酰基硫酯作为关键前体影响聚酮抗生素的生物合成效率"
+            }
+          ],
+          "summary": "利用分子生物学手段与祖先序列重建技术，将酶功能表征问题转化为催化效率的优化问题，最终指向聚酮抗生素生物合成途径的改进"
+        }
+      ],
+      "L3": [
+        {
+          "steps": [
+            {
+              "step": 1,
+              "head": "模块化聚酮合酶",
+              "relation": "通过生物工程策略优化",
+              "tail": "域交换",
+              "claim": "模块化聚酮合酶 通过生物工程策略优化 域交换"
+            },
+            {
+              "step": 2,
+              "head": "域交换",
+              "relation": "构建",
+              "tail": "嵌合双域",
+              "claim": "域交换 构建 嵌合双域"
+            },
+            {
+              "step": 3,
+              "head": "嵌合双域",
+              "relation": "通过联合技术验证",
+              "tail": "冷冻电镜单颗粒分析",
+              "claim": "嵌合双域 通过联合技术验证 冷冻电镜单颗粒分析"
+            }
+          ],
+          "summary": "通过域交换策略构建嵌合蛋白后，采用冷冻电镜单颗粒分析验证其结构特征，形成闭环验证流程"
+        },
+        {
+          "steps": [
+            {
+              "step": 1,
+              "head": "丙二酰辅酶",
+              "relation": "作为化学底物标记",
+              "tail": "β-酮酰基硫酯",
+              "claim": "丙二酰辅酶 作为化学底物标记 β-酮酰基硫酯"
+            },
+            {
+              "step": 2,
+              "head": "β-酮酰基硫酯",
+              "relation": "通过分子动力学模拟分析",
+              "tail": "酮合酶样脱羧酶",
+              "claim": "β-酮酰基硫酯 通过分子动力学模拟分析 酮合酶样脱羧酶"
+            },
+            {
+              "step": 3,
+              "head": "酮合酶样脱羧酶",
+              "relation": "测定",
+              "tail": "高分辨率晶体结构",
+              "claim": "酮合酶样脱羧酶 测定 高分辨率晶体结构"
+            }
+          ],
+          "summary": "从化学底物标记出发，经分子动力学模拟分析酶机制，最终通过高分辨率晶体结构测定完成验证"
+        }
+      ]
+    },
+    "raw_responses": [],
+    "elapsed_seconds": 4.887580871582031e-05
+  },
+  {
+    "paper_id": "e07fb8ec341d",
+    "method_name": "P1",
+    "free_text_hypotheses": [
+      "**Hypothesis:**  \n通过构建一种仿生梯度支架，其中梯度变化的纳米羟基磷灰石（nHA）浓度与梯度分布的肌腱生长因子（如CTGF）协同作用，可以精确模拟肌腱-骨界面的力学和生物学微环境。这种双重梯度策略将促进细胞定向迁移和分层分化——高nHA区域诱导成骨，低nHA/高CTGF区域促进肌腱形成，而中间过渡带通过力学刺激（如梯度刚度）激活界面特异性纤维软骨分化，从而显著提升再生组织的结构整合和力学性能。这一效果可通过对比单梯度（仅力学或仅生化信号）支架的界面剪切强度和胶原纤维连续性来验证。"
+    ],
+    "structured_paths": {},
+    "raw_responses": [
+      "**Hypothesis:**  \n通过构建一种仿生梯度支架，其中梯度变化的纳米羟基磷灰石（nHA）浓度与梯度分布的肌腱生长因子（如CTGF）协同作用，可以精确模拟肌腱-骨界面的力学和生物学微环境。这种双重梯度策略将促进细胞定向迁移和分层分化——高nHA区域诱导成骨，低nHA/高CTGF区域促进肌腱形成，而中间过渡带通过力学刺激（如梯度刚度）激活界面特异性纤维软骨分化，从而显著提升再生组织的结构整合和力学性能。这一效果可通过对比单梯度（仅力学或仅生化信号）支架的界面剪切强度和胶原纤维连续性来验证。"
+    ],
+    "elapsed_seconds": 7.004895210266113
+  },
+  {
+    "paper_id": "e07fb8ec341d",
+    "method_name": "P2",
+    "free_text_hypotheses": [
+      "L1 Hypothesis: The reconstruction of multi-scale gradients (mineral, cellular, and structural) at the tendon-bone interface using magnetically responsive Janus hydrogel microrobots loaded with spatially organized Mg²⁺/Zn²⁺ ions will synergistically enhance biomechanical and biological healing outcomes in rotator cuff repair by simultaneously recapitulating the native interface's physicochemical microenvironment and enabling precise spatiotemporal control over regenerative processes.\n\nL2 Hypotheses:\n- Q1: The asymmetric incorporation of Mg²⁺ (osteogenic) and Zn²⁺ (tenogenic) ions in Janus microrobots will create a dynamic mineral gradient that differentially modulates stem cell differentiation at the tendon-bone interface, with Mg²⁺ preferentially activating BMP/Smad signaling in bone regions while Zn²⁺ induces SCX/Tnmd expression in tendon areas through ion-channel mediated mechanotransduction.\n\n- Q2: A biomimetic tri-phasic design (bone-mineralized hydrogel/transition zone/tendon-aligned hydrogel) in magnetic microrobots will better replicate the native tendon-bone transition's ECM composition (collagen I/II/X gradients) and stiffness gradient (50-500 MPa), leading to improved fibrocartilage zone regeneration through strain-dependent activation of YAP/TAZ signaling pathways in interface cells."
+    ],
+    "structured_paths": {},
+    "raw_responses": [
+      "L1 Hypothesis: The reconstruction of multi-scale gradients (mineral, cellular, and structural) at the tendon-bone interface using magnetically responsive Janus hydrogel microrobots loaded with spatially organized Mg²⁺/Zn²⁺ ions will synergistically enhance biomechanical and biological healing outcomes in rotator cuff repair by simultaneously recapitulating the native interface's physicochemical microenvironment and enabling precise spatiotemporal control over regenerative processes.\n\nL2 Hypotheses:\n- Q1: The asymmetric incorporation of Mg²⁺ (osteogenic) and Zn²⁺ (tenogenic) ions in Janus microrobots will create a dynamic mineral gradient that differentially modulates stem cell differentiation at the tendon-bone interface, with Mg²⁺ preferentially activating BMP/Smad signaling in bone regions while Zn²⁺ induces SCX/Tnmd expression in tendon areas through ion-channel mediated mechanotransduction.\n\n- Q2: A biomimetic tri-phasic design (bone-mineralized hydrogel/transition zone/tendon-aligned hydrogel) in magnetic microrobots will better replicate the native tendon-bone transition's ECM composition (collagen I/II/X gradients) and stiffness gradient (50-500 MPa), leading to improved fibrocartilage zone regeneration through strain-dependent activation of YAP/TAZ signaling pathways in interface cells."
+    ],
+    "elapsed_seconds": 10.205801010131836
+  },
+  {
+    "paper_id": "e07fb8ec341d",
+    "method_name": "P3",
+    "free_text_hypotheses": [
+      "Here are the generated hypotheses structured by research question levels:\n\nL1 Hypothesis: The simultaneous reconstruction of magnesium/zinc mineral gradients (生物学), cell phenotype gradients (临床医学), and structural gradients (生理学) through magnetically controlled Janus hydrogel microrobots (材料科学) will yield superior tendon-bone interface regeneration compared to single-gradient approaches, as measured by collagen fiber organization (生理学) and biomechanical strength (临床医学) in rotator cuff tear models.\n\nL2 Hypotheses:\n- Q1: The asymmetric loading of Mg2+ (促进成骨分化) and Zn2+ (调节破骨细胞活性) in Janus hydrogel microrobots (材料科学), when spatially arranged via magnetic manipulation, will create a biomimetic mineral gradient (生理学) that differentially regulates bone marrow mesenchymal stem cell differentiation (生物学) along the tendon-bone interface (临床医学).\n- Q2: A bioinspired repair strategy that replicates the native tendon-bone transition structure (生理学) through programmed release of dual bioactive ions (生物学) from spatially patterned microrobots (材料科学) will enhance functional integration at the repair site (临床医学), as evidenced by restored mechanical properties and histological grading.\n\nL3 Hypotheses:\n- Q1: The spatiotemporal control of Mg2+/Zn2+ release (生物学) from magnetically aligned Janus microrobots (材料科学) will induce sequential activation of osteogenic (骨髓间充质干细胞) and tenogenic (肌腱细胞) pathways (临床医学), resulting in hierarchically organized gradient structures (生理学) that correlate with improved load-bearing capacity in rotator cuff reconstruction.\n- Q2: An integrated validation system combining microfluidic fabrication parameters (材料科学), ion diffusion kinetics (生物学), and histological gradient quantification (生理学) will demonstrate dose-dependent effects of dual-ion delivery on multi-scale interface regeneration (临床医学), establishing optimal concentration ratios for mineral-cell-structure gradient coupling.\n\nEach hypothesis:\n1. Combines ≥2 disciplines (noted in parentheses)\n2. Proposes specific mechanistic relationships\n3. Includes measurable outcomes for testing\n4. Maintains falsifiability through defined experimental comparisons"
+    ],
+    "structured_paths": {},
+    "raw_responses": [
+      "Here are the generated hypotheses structured by research question levels:\n\nL1 Hypothesis: The simultaneous reconstruction of magnesium/zinc mineral gradients (生物学), cell phenotype gradients (临床医学), and structural gradients (生理学) through magnetically controlled Janus hydrogel microrobots (材料科学) will yield superior tendon-bone interface regeneration compared to single-gradient approaches, as measured by collagen fiber organization (生理学) and biomechanical strength (临床医学) in rotator cuff tear models.\n\nL2 Hypotheses:\n- Q1: The asymmetric loading of Mg2+ (促进成骨分化) and Zn2+ (调节破骨细胞活性) in Janus hydrogel microrobots (材料科学), when spatially arranged via magnetic manipulation, will create a biomimetic mineral gradient (生理学) that differentially regulates bone marrow mesenchymal stem cell differentiation (生物学) along the tendon-bone interface (临床医学).\n- Q2: A bioinspired repair strategy that replicates the native tendon-bone transition structure (生理学) through programmed release of dual bioactive ions (生物学) from spatially patterned microrobots (材料科学) will enhance functional integration at the repair site (临床医学), as evidenced by restored mechanical properties and histological grading.\n\nL3 Hypotheses:\n- Q1: The spatiotemporal control of Mg2+/Zn2+ release (生物学) from magnetically aligned Janus microrobots (材料科学) will induce sequential activation of osteogenic (骨髓间充质干细胞) and tenogenic (肌腱细胞) pathways (临床医学), resulting in hierarchically organized gradient structures (生理学) that correlate with improved load-bearing capacity in rotator cuff reconstruction.\n- Q2: An integrated validation system combining microfluidic fabrication parameters (材料科学), ion diffusion kinetics (生物学), and histological gradient quantification (生理学) will demonstrate dose-dependent effects of dual-ion delivery on multi-scale interface regeneration (临床医学), establishing optimal concentration ratios for mineral-cell-structure gradient coupling.\n\nEach hypothesis:\n1. Combines ≥2 disciplines (noted in parentheses)\n2. Proposes specific mechanistic relationships\n3. Includes measurable outcomes for testing\n4. Maintains falsifiability through defined experimental comparisons"
+    ],
+    "elapsed_seconds": 16.975273370742798
+  },
+  {
+    "paper_id": "e07fb8ec341d",
+    "method_name": "P4",
+    "free_text_hypotheses": [
+      "Here are the novel hypotheses for each level:\n\nL1 Hypothesis:\n  hypothesis: The spatiotemporal synchronization of Mg2+/Zn2+ mineral gradient reconstruction with parathyroid hormone (PTH) circadian rhythms will enhance tendon-bone interface (TBI) regeneration by coordinating endogenous repair mechanisms with exogenous ion delivery.\n  reasoning: \n    1. PTH exhibits circadian oscillations that regulate bone metabolism (physiology)\n    2. Mg2+ and Zn2+ influence osteogenic differentiation and tendon repair (biology)\n    3. Aligning Janus microrobot ion release with PTH peaks could amplify cellular responses (clinical medicine)\n    4. This temporal coordination may improve gradient formation (material science)\n  key_concepts: [甲状旁腺激素, 镁离子, 锌离子, 矿物质梯度, 昼夜节律]\n  disciplines_bridged: [生理学, 生物学, 临床医学, 材料科学]\n\nL2 Hypotheses:\n- Q1:\n    hypothesis: Incorporating a third bioactive ion (e.g., Sr2+) into the Janus microrobot design will create a tri-ionic gradient system that differentially modulates BMSC differentiation zones across the TBI, enhancing both osteogenic and tenogenic outcomes.\n    reasoning:\n      1. Strontium is known to have dual effects on bone formation and tendon healing (biology)\n      2. Janus microrobots can be engineered with additional compartments (material science)\n      3. Three-ion gradients may better mimic natural tissue transitions (physiology)\n      4. This could lead to more distinct differentiation zones in TBI (clinical medicine)\n    key_concepts: [Janus水凝胶微机器人, 骨髓间充质干细胞, 成骨分化, 肌腱细胞, 梯度重建]\n    disciplines_bridged: [材料科学, 生物学, 临床医学]\n- Q2:\n    hypothesis: Mimicking the native collagen fiber angle gradient through magnetically-aligned Janus microrobots will create biomechanical cues that synergize with ion gradients to guide cell orientation and ECM deposition.\n    reasoning:\n      1. Collagen fiber angles vary across the TBI (physiology)\n      2. Magnetic alignment can pattern hydrogel structures (material science)\n      3. Cell orientation affects ECM organization (biology)\n      4. Combined structural/chemical cues may enhance functional regeneration (clinical medicine)\n    key_concepts: [胶原纤维, 磁力操控, 结构梯度, 细胞表型梯度, 仿生修复]\n    disciplines_bridged: [生理学, 材料科学, 临床医学]\n\nL3 Hypotheses:\n- Q1:\n    hypothesis: Dynamic modulation of magnetic fields post-implantation can create reversible mechanical stimulation that, when combined with timed ion release, induces oscillating gene expression patterns that accelerate gradient maturation.\n    reasoning:\n      1. Mechanical stimulation affects cell differentiation (biology)\n      2. Janus microrobots respond to magnetic fields (material science)\n      3. Oscillating stimuli may mimic developmental signals (physiology)\n      4. This approach could reduce gradient formation time (clinical medicine)\n    key_concepts: [磁力操控, 时空细胞表型调节, 双生物活性离子, 肌腱-骨界面愈合]\n    disciplines_bridged: [材料科学, 生物学, 临床医学]\n- Q2:\n    hypothesis: Integrating microfluidic gradient validation with in silico modeling of ion diffusion and cell response patterns will enable predictive optimization of Janus microrobot designs for patient-specific TBI anatomies.\n    reasoning:\n      1. Microfluidics allow precise gradient testing (material science)\n      2. Computational models can predict tissue responses (biology)\n      3. TBI anatomy varies between patients (clinical medicine)\n      4. Combined approach could personalize reconstruction strategies (physiology)\n    key_concepts: [微流控平台, 矿物质梯度, 多级梯度验证, 肩袖撕裂重建手术]\n    disciplines_bridged: [材料科学, 生物学, 临床医学]"
+    ],
+    "structured_paths": {},
+    "raw_responses": [
+      "Here are the novel hypotheses for each level:\n\nL1 Hypothesis:\n  hypothesis: The spatiotemporal synchronization of Mg2+/Zn2+ mineral gradient reconstruction with parathyroid hormone (PTH) circadian rhythms will enhance tendon-bone interface (TBI) regeneration by coordinating endogenous repair mechanisms with exogenous ion delivery.\n  reasoning: \n    1. PTH exhibits circadian oscillations that regulate bone metabolism (physiology)\n    2. Mg2+ and Zn2+ influence osteogenic differentiation and tendon repair (biology)\n    3. Aligning Janus microrobot ion release with PTH peaks could amplify cellular responses (clinical medicine)\n    4. This temporal coordination may improve gradient formation (material science)\n  key_concepts: [甲状旁腺激素, 镁离子, 锌离子, 矿物质梯度, 昼夜节律]\n  disciplines_bridged: [生理学, 生物学, 临床医学, 材料科学]\n\nL2 Hypotheses:\n- Q1:\n    hypothesis: Incorporating a third bioactive ion (e.g., Sr2+) into the Janus microrobot design will create a tri-ionic gradient system that differentially modulates BMSC differentiation zones across the TBI, enhancing both osteogenic and tenogenic outcomes.\n    reasoning:\n      1. Strontium is known to have dual effects on bone formation and tendon healing (biology)\n      2. Janus microrobots can be engineered with additional compartments (material science)\n      3. Three-ion gradients may better mimic natural tissue transitions (physiology)\n      4. This could lead to more distinct differentiation zones in TBI (clinical medicine)\n    key_concepts: [Janus水凝胶微机器人, 骨髓间充质干细胞, 成骨分化, 肌腱细胞, 梯度重建]\n    disciplines_bridged: [材料科学, 生物学, 临床医学]\n- Q2:\n    hypothesis: Mimicking the native collagen fiber angle gradient through magnetically-aligned Janus microrobots will create biomechanical cues that synergize with ion gradients to guide cell orientation and ECM deposition.\n    reasoning:\n      1. Collagen fiber angles vary across the TBI (physiology)\n      2. Magnetic alignment can pattern hydrogel structures (material science)\n      3. Cell orientation affects ECM organization (biology)\n      4. Combined structural/chemical cues may enhance functional regeneration (clinical medicine)\n    key_concepts: [胶原纤维, 磁力操控, 结构梯度, 细胞表型梯度, 仿生修复]\n    disciplines_bridged: [生理学, 材料科学, 临床医学]\n\nL3 Hypotheses:\n- Q1:\n    hypothesis: Dynamic modulation of magnetic fields post-implantation can create reversible mechanical stimulation that, when combined with timed ion release, induces oscillating gene expression patterns that accelerate gradient maturation.\n    reasoning:\n      1. Mechanical stimulation affects cell differentiation (biology)\n      2. Janus microrobots respond to magnetic fields (material science)\n      3. Oscillating stimuli may mimic developmental signals (physiology)\n      4. This approach could reduce gradient formation time (clinical medicine)\n    key_concepts: [磁力操控, 时空细胞表型调节, 双生物活性离子, 肌腱-骨界面愈合]\n    disciplines_bridged: [材料科学, 生物学, 临床医学]\n- Q2:\n    hypothesis: Integrating microfluidic gradient validation with in silico modeling of ion diffusion and cell response patterns will enable predictive optimization of Janus microrobot designs for patient-specific TBI anatomies.\n    reasoning:\n      1. Microfluidics allow precise gradient testing (material science)\n      2. Computational models can predict tissue responses (biology)\n      3. TBI anatomy varies between patients (clinical medicine)\n      4. Combined approach could personalize reconstruction strategies (physiology)\n    key_concepts: [微流控平台, 矿物质梯度, 多级梯度验证, 肩袖撕裂重建手术]\n    disciplines_bridged: [材料科学, 生物学, 临床医学]"
+    ],
+    "elapsed_seconds": 25.086800813674927
+  },
+  {
+    "paper_id": "e07fb8ec341d",
+    "method_name": "P5",
+    "free_text_hypotheses": [
+      "从离子生物学效应出发，通过成骨分化-矿物质梯度重建-界面愈合的三步链条，验证梯度同步重建机制",
+      "基于材料制备-表型调控-结构重建的技术闭环，证实多学科协同的梯度验证体系可行性",
+      "",
+      "从离子生物学效应出发，通过成骨分化-矿物质梯度重建-界面愈合的三步链条，验证梯度同步重建机制",
+      "基于材料制备-表型调控-结构重建的技术闭环，证实多学科协同的梯度验证体系可行性",
+      "从离子生物学效应出发，通过成骨分化-矿物质梯度重建-界面愈合的三步链条，验证梯度同步重建机制",
+      "基于材料制备-表型调控-结构重建的技术闭环，证实多学科协同的梯度验证体系可行性"
+    ],
+    "structured_paths": {
+      "L1": [
+        {
+          "steps": [
+            {
+              "step": 1,
+              "head": "肩袖撕裂",
+              "relation": "导致",
+              "tail": "肌腱-骨界面",
+              "claim": "肩袖撕裂导致肌腱-骨界面损伤"
+            },
+            {
+              "step": 2,
+              "head": "肌腱-骨界面",
+              "relation": "需要重建",
+              "tail": "镁/锌矿物质梯度",
+              "claim": "肌腱-骨界面需要重建镁/锌矿物质梯度"
+            },
+            {
+              "step": 3,
+              "head": "镁/锌矿物质梯度",
+              "relation": "依赖",
+              "tail": "生物学",
+              "claim": "镁/锌矿物质梯度的重建依赖生物学提供的离子调控机制"
+            }
+          ],
+          "summary": "临床医学面临肩袖撕裂导致的肌腱-骨界面损伤问题，需要生物学提供离子调控机制重建矿物质梯度"
+        },
+        {
+          "steps": [
+            {
+              "step": 1,
+              "head": "肌腱-骨界面",
+              "relation": "需要恢复",
+              "tail": "细胞表型梯度",
+              "claim": "肌腱-骨界面需要恢复细胞表型梯度"
+            },
+            {
+              "step": 2,
+              "head": "细胞表型梯度",
+              "relation": "影响",
+              "tail": "结构梯度",
+              "claim": "细胞表型梯度影响结构梯度的形成"
+            },
+            {
+              "step": 3,
+              "head": "结构梯度",
+              "relation": "需要",
+              "tail": "生理学",
+              "claim": "结构梯度的重建需要生理学提供的组织特征指导"
+            }
+          ],
+          "summary": "临床医学需要恢复肌腱-骨界面的细胞表型梯度，依赖生理学指导结构梯度的重建"
+        },
+        {
+          "steps": [
+            {
+              "step": 1,
+              "head": "肌腱-骨界面愈合",
+              "relation": "需要",
+              "tail": "水凝胶微机器人",
+              "claim": "肌腱-骨界面愈合需要水凝胶微机器人"
+            },
+            {
+              "step": 2,
+              "head": "水凝胶微机器人",
+              "relation": "依赖",
+              "tail": "生物友好型气体剪切微流控平台",
+              "claim": "水凝胶微机器人依赖生物友好型气体剪切微流控平台制备"
+            },
+            {
+              "step": 3,
+              "head": "生物友好型气体剪切微流控平台",
+              "relation": "属于",
+              "tail": "材料科学",
+              "claim": "生物友好型气体剪切微流控平台属于材料科学的技术范畴"
+            }
+          ],
+          "summary": "临床医学依赖材料科学提供的微流控技术制备水凝胶微机器人以促进肌腱-骨界面愈合"
+        }
+      ],
+      "L2": [
+        {
+          "steps": [
+            {
+              "step": 1,
+              "head": "生物活性离子",
+              "relation": "通过递送",
+              "tail": "镁离子",
+              "claim": "镁离子作为生物活性离子，通过递送机制影响细胞行为"
+            },
+            {
+              "step": 2,
+              "head": "镁离子",
+              "relation": "促进",
+              "tail": "成骨分化",
+              "claim": "镁离子促进骨髓间充质干细胞的成骨分化过程"
+            },
+            {
+              "step": 3,
+              "head": "成骨分化",
+              "relation": "增强",
+              "tail": "肌腱-骨界面愈合",
+              "claim": "增强的成骨分化能力直接促进肌腱-骨界面的愈合效果"
+            }
+          ],
+          "summary": "生物学通过镁离子递送调控成骨分化过程，为临床医学提供增强肌腱-骨界面愈合的离子干预路径"
+        },
+        {
+          "steps": [
+            {
+              "step": 1,
+              "head": "梯度肌腱-骨过渡结构",
+              "relation": "依赖",
+              "tail": "胶原纤维",
+              "claim": "天然肌腱-骨过渡结构的形成依赖于胶原纤维的定向排列"
+            },
+            {
+              "step": 2,
+              "head": "胶原纤维",
+              "relation": "形成",
+              "tail": "结构梯度",
+              "claim": "胶原纤维的空间排列模式决定肌腱-骨界面的结构梯度特征"
+            },
+            {
+              "step": 3,
+              "head": "结构梯度",
+              "relation": "改善",
+              "tail": "肩袖撕裂重建手术",
+              "claim": "重建的结构梯度可显著改善肩袖撕裂手术后的生物力学性能"
+            }
+          ],
+          "summary": "生理学从胶原纤维排列特征出发建立结构梯度模型，为临床手术提供仿生修复的生理学设计依据"
+        }
+      ],
+      "L3": [
+        {
+          "steps": [
+            {
+              "step": 1,
+              "head": "镁离子",
+              "relation": "促进",
+              "tail": "成骨分化",
+              "claim": "镁离子通过促进骨髓间充质干细胞的成骨分化加速骨再生"
+            },
+            {
+              "step": 2,
+              "head": "成骨分化",
+              "relation": "形成",
+              "tail": "镁/锌矿物质梯度",
+              "claim": "成骨分化过程参与构建肌腱-骨界面的矿物质梯度"
+            },
+            {
+              "step": 3,
+              "head": "镁/锌矿物质梯度",
+              "relation": "促进",
+              "tail": "肌腱-骨界面愈合",
+              "claim": "重建的矿物质梯度直接促进界面愈合效果"
+            }
+          ],
+          "summary": "从离子生物学效应出发，通过成骨分化-矿物质梯度重建-界面愈合的三步链条，验证梯度同步重建机制"
+        },
+        {
+          "steps": [
+            {
+              "step": 1,
+              "head": "生物友好型气体剪切微流控平台",
+              "relation": "制备",
+              "tail": "水凝胶微机器人",
+              "claim": "微流控技术实现微机器人的定向制备"
+            },
+            {
+              "step": 2,
+              "head": "水凝胶微机器人",
+              "relation": "介导",
+              "tail": "时空细胞表型调节",
+              "claim": "微机器人通过负载离子实现细胞表型的时空调控"
+            },
+            {
+              "step": 3,
+              "head": "时空细胞表型调节",
+              "relation": "重建",
+              "tail": "梯度肌腱-骨过渡结构",
+              "claim": "细胞表型调控最终恢复生理性过渡结构"
+            }
+          ],
+          "summary": "基于材料制备-表型调控-结构重建的技术闭环，证实多学科协同的梯度验证体系可行性"
+        }
+      ]
+    },
+    "raw_responses": [],
+    "elapsed_seconds": 0.00011992454528808594
+  }
+]

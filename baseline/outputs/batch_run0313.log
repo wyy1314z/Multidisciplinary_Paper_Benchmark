@@ -1,0 +1,362 @@
+nohup: ignoring input
+[03:55:30] 共 6 篇论文, 11 种方法
+[03:55:30] 方法列表: ['IdeaBench', 'VanillaLLM', 'AI-Scientist', 'SciMON', 'MOOSE-Chem', 'SciAgents', 'P1', 'P2', 'P3', 'P4', 'P5']
+[03:55:30] 论文列表:
+[03:55:30]   - [paper_1[0]] Resolving multi-image spatial lipidomic responses to inhaled toxicants
+[03:55:30]   - [paper_1[3]] A physics-informed Airy beam learning framework for blockage avoidance
+[03:55:30]   - [paper_1[9]] Covariant spatio-temporal receptive fields for spiking neural networks
+[03:55:30]   - [paper_1[13]] Non-equilibrium demixing and dissolution of chiral coacervates via int
+[03:55:30]   - [paper_1[14]] Cellulose-mediated ionic liquid crystallization enables tough-stiff sw
+[03:55:30]   - [AlphaFold3] Accurate structure prediction of biomolecular interactions with AlphaF
+[03:55:30] 
+[03:55:30] 预计总调用: 6 × 11 = 66 次
+[03:55:30] 
+[03:55:30] ════════════════════════════════════════════════════════════════════════════════
+[03:55:30] [1/6] paper_1[0]: Resolving multi-image spatial lipidomic responses to inhaled...
+[03:55:30] ════════════════════════════════════════════════════════════════════════════════
+[03:55:30]     Running CrossDisc extraction pipeline (for P1-P5)...
+Supplementary concept extraction failed: 'str' object has no attribute 'get'
+[04:00:09]     CrossDisc extraction done (279.3s)
+[04:00:09]       L1 query: 吸入性毒物如何引发肺部疾病的空间脂质组响应机制...
+[04:00:09]       L2 queries: 2, L3 queries: 1
+[04:00:09]     Running IdeaBench...
+[04:00:46]     IdeaBench done (37.1s)
+[04:00:46]     Running VanillaLLM...
+[04:01:24]     VanillaLLM done (37.9s)
+[04:01:24]     Running AI-Scientist...
+[04:02:13]     AI-Scientist done (48.6s)
+[04:02:13]     Running SciMON...
+[04:03:11]     SciMON done (58.4s)
+[04:03:11]     Running MOOSE-Chem...
+[04:04:41]     MOOSE-Chem done (89.5s)
+[04:04:41]     Running SciAgents...
+[04:07:41]     SciAgents done (180.2s)
+[04:07:41]     Running P1...
+[04:08:00]     P1 done (19.0s)
+[04:08:00]     Running P2...
+[04:08:22]     P2 done (22.0s)
+[04:08:22]     Running P3...
+[04:08:50]     P3 done (27.7s)
+[04:08:50]     Running P4...
+[04:09:33]     P4 done (43.1s)
+[04:09:33]     P5 (from extraction) done (279.3s)
+[04:09:33] [1/6] 完成: 11/11 成功
+[04:09:33] 
+[04:09:33] ════════════════════════════════════════════════════════════════════════════════
+[04:09:33] [2/6] paper_1[3]: A physics-informed Airy beam learning framework for blockage...
+[04:09:33] ════════════════════════════════════════════════════════════════════════════════
+[04:09:33]     Running CrossDisc extraction pipeline (for P1-P5)...
+[04:15:30]     CrossDisc extraction done (357.3s)
+[04:15:30]       L1 query: 如何通过物理信息机器学习框架解决太赫兹无线网络中的视距阻塞问题并提升链路预算？...
+[04:15:30]       L2 queries: 2, L3 queries: 2
+[04:15:30]     Running IdeaBench...
+[04:16:53]     IdeaBench done (82.8s)
+[04:16:53]     Running VanillaLLM...
+[04:17:36]     VanillaLLM done (43.0s)
+[04:17:36]     Running AI-Scientist...
+[04:19:45]     AI-Scientist done (129.6s)
+[04:19:45]     Running SciMON...
+[04:20:28]     SciMON done (42.2s)
+[04:20:28]     Running MOOSE-Chem...
+[04:22:20]     MOOSE-Chem done (112.0s)
+[04:22:20]     Running SciAgents...
+[04:24:50]     SciAgents done (150.5s)
+[04:24:50]     Running P1...
+[04:25:13]     P1 done (23.3s)
+[04:25:13]     Running P2...
+[04:25:38]     P2 done (24.5s)
+[04:25:38]     Running P3...
+[04:26:04]     P3 done (26.1s)
+[04:26:04]     Running P4...
+[04:26:39]     P4 done (35.0s)
+[04:26:39]     P5 (from extraction) done (357.3s)
+[04:26:39] [2/6] 完成: 11/11 成功
+[04:26:39] 
+[04:26:39] ════════════════════════════════════════════════════════════════════════════════
+[04:26:39] [3/6] paper_1[9]: Covariant spatio-temporal receptive fields for spiking neura...
+[04:26:39] ════════════════════════════════════════════════════════════════════════════════
+[04:26:39]     Running CrossDisc extraction pipeline (for P1-P5)...
+Supplementary concept extraction failed: 'str' object has no attribute 'get'
+[04:32:21]     CrossDisc extraction done (341.7s)
+[04:32:21]       L1 query: 如何构建具有时空协变性的感受野以提升脉冲神经网络的训练效率？...
+[04:32:21]       L2 queries: 2, L3 queries: 2
+[04:32:21]     Running IdeaBench...
+[04:33:50]     IdeaBench done (89.8s)
+[04:33:50]     Running VanillaLLM...
+[04:34:29]     VanillaLLM done (38.3s)
+[04:34:29]     Running AI-Scientist...
+[04:35:34]     AI-Scientist done (65.2s)
+[04:35:34]     Running SciMON...
+[04:36:48]     SciMON done (73.7s)
+[04:36:48]     Running MOOSE-Chem...
+[04:38:21]     MOOSE-Chem done (93.2s)
+[04:38:21]     Running SciAgents...
+[04:41:18]     SciAgents done (177.2s)
+[04:41:18]     Running P1...
+[04:41:49]     P1 done (30.4s)
+[04:41:49]     Running P2...
+[04:42:05]     P2 done (16.9s)
+[04:42:05]     Running P3...
+[04:42:28]     P3 done (22.5s)
+[04:42:28]     Running P4...
+[04:43:21]     P4 done (53.3s)
+[04:43:21]     P5 (from extraction) done (341.7s)
+[04:43:21] [3/6] 完成: 11/11 成功
+[04:43:21] 
+[04:43:21] ════════════════════════════════════════════════════════════════════════════════
+[04:43:21] [4/6] paper_1[13]: Non-equilibrium demixing and dissolution of chiral coacervat...
+[04:43:21] ════════════════════════════════════════════════════════════════════════════════
+[04:43:21]     Running CrossDisc extraction pipeline (for P1-P5)...
+Supplementary concept extraction failed: 'str' object has no attribute 'get'
+[04:48:41]     CrossDisc extraction done (319.7s)
+[04:48:41]       L1 query: 手性凝聚相的本征催化机制如何调控化学转化过程？...
+[04:48:41]       L2 queries: 2, L3 queries: 2
+[04:48:41]     Running IdeaBench...
+[04:49:24]     IdeaBench done (42.9s)
+[04:49:24]     Running VanillaLLM...
+[04:50:12]     VanillaLLM done (47.7s)
+[04:50:12]     Running AI-Scientist...
+[04:51:33]     AI-Scientist done (81.1s)
+[04:51:33]     Running SciMON...
+[04:52:19]     SciMON done (46.8s)
+[04:52:19]     Running MOOSE-Chem...
+[04:54:00]     MOOSE-Chem done (100.5s)
+[04:54:00]     Running SciAgents...
+[04:56:45]     SciAgents done (165.5s)
+[04:56:45]     Running P1...
+[04:57:02]     P1 done (16.4s)
+[04:57:02]     Running P2...
+[04:57:31]     P2 done (28.7s)
+[04:57:31]     Running P3...
+[04:57:57]     P3 done (26.5s)
+[04:57:57]     Running P4...
+[04:58:41]     P4 done (44.0s)
+[04:58:41]     P5 (from extraction) done (319.7s)
+[04:58:41] [4/6] 完成: 11/11 成功
+[04:58:41] 
+[04:58:41] ════════════════════════════════════════════════════════════════════════════════
+[04:58:41] [5/6] paper_1[14]: Cellulose-mediated ionic liquid crystallization enables toug...
+[04:58:41] ════════════════════════════════════════════════════════════════════════════════
+[04:58:41]     Running CrossDisc extraction pipeline (for P1-P5)...
+Supplementary concept extraction failed: 'str' object has no attribute 'get'
+[05:03:54]     CrossDisc extraction done (312.9s)
+[05:03:54]       L1 query: 材料科学视角下，如何实现离子凝胶的机械性能可切换性？...
+[05:03:54]       L2 queries: 2, L3 queries: 2
+[05:03:54]     Running IdeaBench...
+[05:05:35]     IdeaBench done (100.8s)
+[05:05:35]     Running VanillaLLM...
+[05:06:29]     VanillaLLM done (54.7s)
+[05:06:29]     Running AI-Scientist...
+[05:07:36]     AI-Scientist done (66.9s)
+[05:07:36]     Running SciMON...
+[05:09:02]     SciMON done (85.5s)
+[05:09:02]     Running MOOSE-Chem...
+[05:10:08]     MOOSE-Chem done (66.5s)
+[05:10:08]     Running SciAgents...
+[05:13:18]     SciAgents done (189.3s)
+[05:13:18]     Running P1...
+[05:13:48]     P1 done (29.9s)
+[05:13:48]     Running P2...
+[05:14:19]     P2 done (31.1s)
+[05:14:19]     Running P3...
+[05:14:42]     P3 done (22.8s)
+[05:14:42]     Running P4...
+[05:15:41]     P4 done (59.0s)
+[05:15:41]     P5 (from extraction) done (312.9s)
+[05:15:41] [5/6] 完成: 11/11 成功
+[05:15:41] 
+[05:15:41] ════════════════════════════════════════════════════════════════════════════════
+[05:15:41] [6/6] AlphaFold3: Accurate structure prediction of biomolecular interactions w...
+[05:15:41] ════════════════════════════════════════════════════════════════════════════════
+[05:15:41]     Running CrossDisc extraction pipeline (for P1-P5)...
+检测到查询中含英文，已自动清洗为中文（不再报错）。
+[05:19:09]     CrossDisc extraction done (208.3s)
+[05:19:09]       L1 query: 3在生物分子复合物结构预测中实现了哪些突破性创新...
+[05:19:09]       L2 queries: 2, L3 queries: 2
+[05:19:09]     Running IdeaBench...
+[05:20:14]     IdeaBench done (65.2s)
+[05:20:14]     Running VanillaLLM...
+[05:20:58]     VanillaLLM done (43.9s)
+[05:20:58]     Running AI-Scientist...
+[05:22:07]     AI-Scientist done (68.9s)
+[05:22:07]     Running SciMON...
+[05:23:25]     SciMON done (77.7s)
+[05:23:25]     Running MOOSE-Chem...
+[05:24:38]     MOOSE-Chem done (73.3s)
+[05:24:38]     Running SciAgents...
+[05:26:50]     SciAgents done (131.9s)
+[05:26:50]     Running P1...
+[05:27:04]     P1 done (13.9s)
+[05:27:04]     Running P2...
+[05:27:29]     P2 done (24.7s)
+[05:27:29]     Running P3...
+[05:27:57]     P3 done (28.0s)
+[05:27:57]     Running P4...
+[05:28:37]     P4 done (40.2s)
+[05:28:37]     P5 (from extraction) done (208.3s)
+[05:28:37] [6/6] 完成: 11/11 成功
+[05:28:37] 
+[05:28:37] 全部完成! 总耗时: 5587.1s (93.1min)
+
+================================================================================================
+  全部论文 × 全部方法 — 运行结果汇总
+================================================================================================
+
+  论文: Resolving multi-image spatial lipidomic responses to inhaled toxicants by m
+  学科: 生物学
+
+  ── 外部 Baseline ──
+  ┌────────────────────────────────────────┬──────────┬────────┐
+  │Method                                  │耗时(s)     │状态      │
+  ├────────────────────────────────────────┼──────────┼────────┤
+  │ IdeaBench                              │ 37.1     │ OK     │
+  │ VanillaLLM                             │ 37.9     │ OK     │
+  │ AI-Scientist                           │ 48.6     │ OK     │
+  │ SciMON                                 │ 58.4     │ OK     │
+  │ MOOSE-Chem                             │ 89.5     │ OK     │
+  │ SciAgents                              │ 180.2    │ OK     │
+  └────────────────────────────────────────┴──────────┴────────┘
+  ── P1-P5 Prompt 消融 ──
+  ┌────────────────────────────────────────┬──────────┬────────┐
+  │Method                                  │耗时(s)     │状态      │
+  ├────────────────────────────────────────┼──────────┼────────┤
+  │ P1                                     │ 19.0     │ OK     │
+  │ P2                                     │ 22.0     │ OK     │
+  │ P3                                     │ 27.7     │ OK     │
+  │ P4                                     │ 43.1     │ OK     │
+  │ P5                                     │ 279.3    │ OK     │
+  └────────────────────────────────────────┴──────────┴────────┘
+
+
+  论文: A physics-informed Airy beam learning framework for blockage avoidance in s
+  学科: 物理学
+
+  ── 外部 Baseline ──
+  ┌────────────────────────────────────────┬──────────┬────────┐
+  │Method                                  │耗时(s)     │状态      │
+  ├────────────────────────────────────────┼──────────┼────────┤
+  │ IdeaBench                              │ 82.8     │ OK     │
+  │ VanillaLLM                             │ 43.0     │ OK     │
+  │ AI-Scientist                           │ 129.6    │ OK     │
+  │ SciMON                                 │ 42.2     │ OK     │
+  │ MOOSE-Chem                             │ 112.0    │ OK     │
+  │ SciAgents                              │ 150.5    │ OK     │
+  └────────────────────────────────────────┴──────────┴────────┘
+  ── P1-P5 Prompt 消融 ──
+  ┌────────────────────────────────────────┬──────────┬────────┐
+  │Method                                  │耗时(s)     │状态      │
+  ├────────────────────────────────────────┼──────────┼────────┤
+  │ P1                                     │ 23.3     │ OK     │
+  │ P2                                     │ 24.5     │ OK     │
+  │ P3                                     │ 26.1     │ OK     │
+  │ P4                                     │ 35.0     │ OK     │
+  │ P5                                     │ 357.3    │ OK     │
+  └────────────────────────────────────────┴──────────┴────────┘
+
+
+  论文: Covariant spatio-temporal receptive fields for spiking neural networks
+  学科: 计算机科学技术
+
+  ── 外部 Baseline ──
+  ┌────────────────────────────────────────┬──────────┬────────┐
+  │Method                                  │耗时(s)     │状态      │
+  ├────────────────────────────────────────┼──────────┼────────┤
+  │ IdeaBench                              │ 89.8     │ OK     │
+  │ VanillaLLM                             │ 38.3     │ OK     │
+  │ AI-Scientist                           │ 65.2     │ OK     │
+  │ SciMON                                 │ 73.7     │ OK     │
+  │ MOOSE-Chem                             │ 93.2     │ OK     │
+  │ SciAgents                              │ 177.2    │ OK     │
+  └────────────────────────────────────────┴──────────┴────────┘
+  ── P1-P5 Prompt 消融 ──
+  ┌────────────────────────────────────────┬──────────┬────────┐
+  │Method                                  │耗时(s)     │状态      │
+  ├────────────────────────────────────────┼──────────┼────────┤
+  │ P1                                     │ 30.4     │ OK     │
+  │ P2                                     │ 16.9     │ OK     │
+  │ P3                                     │ 22.5     │ OK     │
+  │ P4                                     │ 53.3     │ OK     │
+  │ P5                                     │ 341.7    │ OK     │
+  └────────────────────────────────────────┴──────────┴────────┘
+
+
+  论文: Non-equilibrium demixing and dissolution of chiral coacervates via intrinsi
+  学科: 化学
+
+  ── 外部 Baseline ──
+  ┌────────────────────────────────────────┬──────────┬────────┐
+  │Method                                  │耗时(s)     │状态      │
+  ├────────────────────────────────────────┼──────────┼────────┤
+  │ IdeaBench                              │ 42.9     │ OK     │
+  │ VanillaLLM                             │ 47.7     │ OK     │
+  │ AI-Scientist                           │ 81.1     │ OK     │
+  │ SciMON                                 │ 46.8     │ OK     │
+  │ MOOSE-Chem                             │ 100.5    │ OK     │
+  │ SciAgents                              │ 165.5    │ OK     │
+  └────────────────────────────────────────┴──────────┴────────┘
+  ── P1-P5 Prompt 消融 ──
+  ┌────────────────────────────────────────┬──────────┬────────┐
+  │Method                                  │耗时(s)     │状态      │
+  ├────────────────────────────────────────┼──────────┼────────┤
+  │ P1                                     │ 16.4     │ OK     │
+  │ P2                                     │ 28.7     │ OK     │
+  │ P3                                     │ 26.5     │ OK     │
+  │ P4                                     │ 44.0     │ OK     │
+  │ P5                                     │ 319.7    │ OK     │
+  └────────────────────────────────────────┴──────────┴────────┘
+
+
+  论文: Cellulose-mediated ionic liquid crystallization enables tough-stiff switcha
+  学科: 材料科学
+
+  ── 外部 Baseline ──
+  ┌────────────────────────────────────────┬──────────┬────────┐
+  │Method                                  │耗时(s)     │状态      │
+  ├────────────────────────────────────────┼──────────┼────────┤
+  │ IdeaBench                              │ 100.8    │ OK     │
+  │ VanillaLLM                             │ 54.7     │ OK     │
+  │ AI-Scientist                           │ 66.9     │ OK     │
+  │ SciMON                                 │ 85.5     │ OK     │
+  │ MOOSE-Chem                             │ 66.5     │ OK     │
+  │ SciAgents                              │ 189.3    │ OK     │
+  └────────────────────────────────────────┴──────────┴────────┘
+  ── P1-P5 Prompt 消融 ──
+  ┌────────────────────────────────────────┬──────────┬────────┐
+  │Method                                  │耗时(s)     │状态      │
+  ├────────────────────────────────────────┼──────────┼────────┤
+  │ P1                                     │ 29.9     │ OK     │
+  │ P2                                     │ 31.1     │ OK     │
+  │ P3                                     │ 22.8     │ OK     │
+  │ P4                                     │ 59.0     │ OK     │
+  │ P5                                     │ 312.9    │ OK     │
+  └────────────────────────────────────────┴──────────┴────────┘
+
+
+  论文: Accurate structure prediction of biomolecular interactions with AlphaFold 3
+  学科: Computational Biology
+
+  ── 外部 Baseline ──
+  ┌────────────────────────────────────────┬──────────┬────────┐
+  │Method                                  │耗时(s)     │状态      │
+  ├────────────────────────────────────────┼──────────┼────────┤
+  │ IdeaBench                              │ 65.2     │ OK     │
+  │ VanillaLLM                             │ 43.9     │ OK     │
+  │ AI-Scientist                           │ 68.9     │ OK     │
+  │ SciMON                                 │ 77.7     │ OK     │
+  │ MOOSE-Chem                             │ 73.3     │ OK     │
+  │ SciAgents                              │ 131.9    │ OK     │
+  └────────────────────────────────────────┴──────────┴────────┘
+  ── P1-P5 Prompt 消融 ──
+  ┌────────────────────────────────────────┬──────────┬────────┐
+  │Method                                  │耗时(s)     │状态      │
+  ├────────────────────────────────────────┼──────────┼────────┤
+  │ P1                                     │ 13.9     │ OK     │
+  │ P2                                     │ 24.7     │ OK     │
+  │ P3                                     │ 28.0     │ OK     │
+  │ P4                                     │ 40.2     │ OK     │
+  │ P5                                     │ 208.3    │ OK     │
+  └────────────────────────────────────────┴──────────┴────────┘
+
+  汇总: 6 篇论文, 66 次方法调用, 66 成功, 0 失败
+
+[05:28:37] 结果已保存到 baseline/outputs/batch_results0313.json

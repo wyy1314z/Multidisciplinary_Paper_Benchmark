@@ -30,3 +30,22 @@ Thumbs.db
 
 # Jupyter
 .ipynb_checkpoints/
+
+# Testing & quality
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+htmlcov/
+coverage.xml
+.coverage
+
+# Outputs (large data files, generated results)
+outputs/*.json
+outputs/*.jsonl
+outputs/*.png
+outputs/*.csv
+outputs/*.xlsx
+!outputs/.gitkeep
+
+# PDF inputs
+*.pdf

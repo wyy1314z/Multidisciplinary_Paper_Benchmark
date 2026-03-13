@@ -1,0 +1,152 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "crossdisc-extractor"
+version = "0.2.0"
+description = "Cross-disciplinary paper classification, knowledge extraction & benchmarking system"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.9"
+authors = [
+    { name = "Wang Yuyang" },
+]
+keywords = ["benchmark", "knowledge-extraction", "cross-disciplinary", "LLM", "knowledge-graph", "multidisciplinary", "classifier"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+
+dependencies = [
+    "openai>=1.0.0",
+    "pydantic>=2.0.0",
+    "tenacity>=8.0.0",
+    "tqdm>=4.60.0",
+    "networkx>=3.0",
+    "numpy>=1.24.0",
+    "pandas>=2.0.0",
+    "scipy>=1.10.0",
+    "pyyaml>=6.0",
+    # Classifier dependencies (from multidisciplinary-classifier)
+    "langchain-openai>=0.2.3",
+    "langchain-core>=0.3.5",
+    "typing-extensions>=4.12",
+    "requests>=2.25",
+    "beautifulsoup4>=4.9",
+    "pdfplumber>=0.7",
+]
+
+[project.optional-dependencies]
+pdf = [
+    "pdfplumber>=0.9.0",
+    "PyPDF2>=3.0.0",
+]
+semantic = [
+    "sentence-transformers>=2.2.0",
+]
+viz = [
+    "matplotlib>=3.7.0",
+    "seaborn>=0.12.0",
+]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-cov>=4.0.0",
+    "pytest-asyncio>=0.21",
+    "ruff>=0.4.0",
+    "mypy>=1.8.0",
+    "pandas-stubs>=2.0.0",
+    "types-PyYAML>=6.0",
+    "types-tqdm>=4.60.0",
+]
+all = [
+    "crossdisc-extractor[pdf,semantic,viz,dev]",
+]
+
+[project.scripts]
+crossdisc = "crossdisc_extractor.extractor_multi_stage:main"
+crossdisc-pipeline = "crossdisc_extractor.pipeline:main"
+mdc-classify = "scripts.classify:main"
+mdc-demo = "scripts.run_demo:main"
+
+[project.urls]
+Repository = "https://github.com/wangyuyang/crossdisc-benchmark"
+
+# ── Ruff ──────────────────────────────────────────────────────────────────────
+[tool.ruff]
+target-version = "py39"
+line-length = 120
+src = ["crossdisc_extractor", "tests", "scripts"]
+
+[tool.ruff.lint]
+select = [
+    "E",    # pycodestyle errors
+    "W",    # pycodestyle warnings
+    "F",    # pyflakes
+    "I",    # isort
+    "N",    # pep8-naming
+    "UP",   # pyupgrade
+    "B",    # flake8-bugbear
+    "SIM",  # flake8-simplify
+    "TCH",  # flake8-type-checking
+    "RUF",  # ruff-specific rules
+]
+ignore = [
+    "E501",   # line too long (handled by formatter)
+    "N815",   # mixedCase variable (中文字段名 like 主学科)
+    "N806",   # non-lowercase variable
+    "B008",   # function call in default argument (Pydantic Field)
+    "RUF001", # ambiguous unicode character (中文)
+    "RUF002", # ambiguous unicode character in docstring
+    "RUF003", # ambiguous unicode character in comment
+]
+
+[tool.ruff.lint.isort]
+known-first-party = ["crossdisc_extractor"]
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+docstring-code-format = true
+
+# ── Mypy ──────────────────────────────────────────────────────────────────────
+[tool.mypy]
+python_version = "3.9"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = false
+check_untyped_defs = true
+ignore_missing_imports = true
+
+[[tool.mypy.overrides]]
+module = "crossdisc_extractor.*"
+disallow_untyped_defs = false
+
+# ── Pytest ────────────────────────────────────────────────────────────────────
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-v --tb=short"
+markers = [
+    "slow: marks tests as slow (deselect with '-m \"not slow\"')",
+]
+
+# ── Coverage ──────────────────────────────────────────────────────────────────
+[tool.coverage.run]
+source = ["crossdisc_extractor"]
+omit = ["tests/*"]
+
+[tool.coverage.report]
+show_missing = true
+skip_empty = true
+exclude_lines = [
+    "pragma: no cover",
+    "if __name__ == .__main__.",
+    "if TYPE_CHECKING:",
+]

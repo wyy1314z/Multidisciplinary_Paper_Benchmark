@@ -1,0 +1,1802 @@
+[
+  {
+    "id": "MXene-Assisted NiFe sulfides for high-performance ",
+    "input": {
+      "title": "MXene-Assisted NiFe sulfides for high-performance anion exchange membrane seawater electrolysis",
+      "primary_discipline": "化学",
+      "secondary_disciplines": [],
+      "abstract": "Anion exchange membrane seawater electrolysis is vital for future large-scale green hydrogen production, however enduring a huge challenge that lacks high-stable oxygen evolution reaction electrocatalysts. Herein, we report a robust OER electrocatalyst for AEMSE by integrating MXene (Ti<sub>3</sub>C<sub>2</sub>) with NiFe sulfides ((Ni,Fe)S<sub>2</sub>@Ti<sub>3</sub>C<sub>2</sub>). The strong interaction between (Ni,Fe)S<sub>2</sub> and Ti<sub>3</sub>C<sub>2</sub> induces electron distribution to trigger lattice oxygen mechanism, improving the intrinsic activity, and particularly prohibits the dissolution of Fe species during OER process via the Ti-O-Fe bonding effectively, achieving notable stability. Furthermore, the good retention of sulfates and the abundant groups of Ti<sub>3</sub>C<sub>2</sub> provide effective Cl<sup>-</sup> resistance. Accordingly, (Ni,Fe)S<sub>2</sub>@Ti<sub>3</sub>C<sub>2</sub> achieves high OER activity (1.598 V@2 A cm<sup>-2</sup>) and long-term durability (1000 h) in seawater system. Furthermore, AEMSE with industrial current density (0.5 A cm<sup>-2</sup>) and durability (500 h) is achieved by (Ni,Fe)S<sub>2</sub>@Ti<sub>3</sub>C<sub>2</sub> anode and Raney Ni cathode with electrolysis efficiency of 70% and energy consumption of 48.4 kWh kg<sup>-1</sup> H<sub>2</sub>."
+    },
+    "ground_truth": {
+      "terms": [
+        {
+          "term": "anion exchange membrane seawater electrolysis",
+          "normalized": "阴离子交换膜海水电解",
+          "discipline": "化学",
+          "evidence": "Anion exchange membrane seawater electrolysis is vital for future large-scale green hydrogen production",
+          "source": "parsed_primary",
+          "confidence": 1.0,
+          "grounded_to": null,
+          "grounding_confidence": 0.0
+        },
+        {
+          "term": "oxygen evolution reaction electrocatalysts",
+          "normalized": "氧析出反应电催化剂",
+          "discipline": "化学",
+          "evidence": "however enduring a huge challenge that lacks high-stable oxygen evolution reaction electrocatalysts",
+          "source": "parsed_primary",
+          "confidence": 1.0,
+          "grounded_to": null,
+          "grounding_confidence": 0.0
+        },
+        {
+          "term": "MXene (Ti<sub>3</sub>C<sub>2</sub>)",
+          "normalized": "MXene (Ti3C2)",
+          "discipline": "化学",
+          "evidence": "Herein, we report a robust OER electrocatalyst for AEMSE by integrating MXene (Ti<sub>3</sub>C<sub>2</sub>) with NiFe sulfides",
+          "source": "parsed_primary",
+          "confidence": 1.0,
+          "grounded_to": null,
+          "grounding_confidence": 0.0
+        },
+        {
+          "term": "NiFe sulfides ((Ni,Fe)S<sub>2</sub>@Ti<sub>3</sub>C<sub>2</sub>)",
+          "normalized": "NiFe硫化物 ((Ni,Fe)S2@Ti3C2)",
+          "discipline": "化学",
+          "evidence": "Herein, we report a robust OER electrocatalyst for AEMSE by integrating MXene (Ti<sub>3</sub>C<sub>2</sub>) with NiFe sulfides ((Ni,Fe)S<sub>2</sub>@Ti<sub>3</sub>C<sub>2</sub>)",
+          "source": "parsed_primary",
+          "confidence": 1.0,
+          "grounded_to": null,
+          "grounding_confidence": 0.0
+        },
+        {
+          "term": "lattice oxygen mechanism",
+          "normalized": "晶格氧机制",
+          "discipline": "化学",
+          "evidence": "The strong interaction between (Ni,Fe)S<sub>2</sub> and Ti<sub>3</sub>C<sub>2</sub> induces electron distribution to trigger lattice oxygen mechanism",
+          "source": "parsed_primary",
+          "confidence": 1.0,
+          "grounded_to": null,
+          "grounding_confidence": 0.0
+        },
+        {
+          "term": "Ti-O-Fe bonding",
+          "normalized": "Ti-O-Fe键",
+          "discipline": "化学",
+          "evidence": "particularly prohibits the dissolution of Fe species during OER process via the Ti-O-Fe bonding effectively",
+          "source": "parsed_primary",
+          "confidence": 1.0,
+          "grounded_to": null,
+          "grounding_confidence": 0.0
+        },
+        {
+          "term": "Cl<sup>-</sup> resistance",
+          "normalized": "Cl-抗性",
+          "discipline": "化学",
+          "evidence": "the good retention of sulfates and the abundant groups of Ti<sub>3</sub>C<sub>2</sub> provide effective Cl<sup>-</sup> resistance",
+          "source": "parsed_primary",
+          "confidence": 1.0,
+          "grounded_to": null,
+          "grounding_confidence": 0.0
+        },
+        {
+          "term": "OER activity (1.598 V@2 A cm<sup>-2</sup>)",
+          "normalized": "OER活性 (1.598 V@2 A cm-2)",
+          "discipline": "化学",
+          "evidence": "(Ni,Fe)S<sub>2</sub>@Ti<sub>3</sub>C<sub>2</sub> achieves high OER activity (1.598 V@2 A cm<sup>-2</sup>)",
+          "source": "parsed_primary",
+          "confidence": 1.0,
+          "grounded_to": null,
+          "grounding_confidence": 0.0
+        },
+        {
+          "term": "long-term durability (1000 h)",
+          "normalized": "长期耐久性 (1000小时)",
+          "discipline": "化学",
+          "evidence": "and long-term durability (1000 h) in seawater system",
+          "source": "parsed_primary",
+          "confidence": 1.0,
+          "grounded_to": null,
+          "grounding_confidence": 0.0
+        },
+        {
+          "term": "industrial current density (0.5 A cm<sup>-2</sup>)",
+          "normalized": "工业电流密度 (0.5 A cm-2)",
+          "discipline": "化学",
+          "evidence": "Furthermore, AEMSE with industrial current density (0.5 A cm<sup>-2</sup>)",
+          "source": "parsed_primary",
+          "confidence": 1.0,
+          "grounded_to": null,
+          "grounding_confidence": 0.0
+        },
+        {
+          "term": "electrolysis efficiency of 70%",
+          "normalized": "电解效率70%",
+          "discipline": "化学",
+          "evidence": "with electrolysis efficiency of 70% and energy consumption of 48.4 kWh kg<sup>-1</sup> H<sub>2</sub>",
+          "source": "parsed_primary",
+          "confidence": 1.0,
+          "grounded_to": null,
+          "grounding_confidence": 0.0
+        },
+        {
+          "term": "energy consumption of 48.4 kWh kg<sup>-1</sup> H<sub>2</sub>",
+          "normalized": "能耗48.4 kWh kg-1 H2",
+          "discipline": "化学",
+          "evidence": "and energy consumption of 48.4 kWh kg<sup>-1</sup> H<sub>2</sub>",
+          "source": "parsed_primary",
+          "confidence": 1.0,
+          "grounded_to": null,
+          "grounding_confidence": 0.0
+        }
+      ],
+      "relations": [
+        {
+          "head": "氧析出反应电催化剂",
+          "tail": "阴离子交换膜海水电解",
+          "relation_type": "corresponds_to",
+          "relation_detail": "氧析出反应电催化剂 corresponds_to 阴离子交换膜海水电解",
+          "evidence_sentence": "Anion exchange membrane seawater electrolysis is vital for future large-scale green hydrogen production, however enduring a huge challenge that lacks high-stable oxygen evolution reaction electrocatalysts.",
+          "confidence": 0.5,
+          "source_method": "heuristic"
+        },
+        {
+          "head": "Ti-O-Fe键",
+          "tail": "晶格氧机制",
+          "relation_type": "corresponds_to",
+          "relation_detail": "Ti-O-Fe键 corresponds_to 晶格氧机制",
+          "evidence_sentence": "The strong interaction between (Ni,Fe)S<sub>2</sub> and Ti<sub>3</sub>C<sub>2</sub> induces electron distribution to trigger lattice oxygen mechanism, improving the intrinsic activity, and particularly prohibits the dissolution of Fe species during OER process via the Ti-O-Fe bonding effectively, achieving notable stability.",
+          "confidence": 0.5,
+          "source_method": "heuristic"
+        }
+      ],
+      "paths": [],
+      "concept_graph": {
+        "nodes": [
+          {
+            "id": "阴离子交换膜海水电解",
+            "term": "阴离子交换膜海水电解",
+            "discipline": "化学",
+            "grounded_to": null
+          },
+          {
+            "id": "氧析出反应电催化剂",
+            "term": "氧析出反应电催化剂",
+            "discipline": "化学",
+            "grounded_to": null
+          },
+          {
+            "id": "mxene",
+            "term": "MXene (Ti3C2)",
+            "discipline": "化学",
+            "grounded_to": null
+          },
+          {
+            "id": "nife硫化物 s2@ti3c2)",
+            "term": "NiFe硫化物 ((Ni,Fe)S2@Ti3C2)",
+            "discipline": "化学",
+            "grounded_to": null
+          },
+          {
+            "id": "晶格氧机制",
+            "term": "晶格氧机制",
+            "discipline": "化学",
+            "grounded_to": null
+          },
+          {
+            "id": "ti-o-fe键",
+            "term": "Ti-O-Fe键",
+            "discipline": "化学",
+            "grounded_to": null
+          },
+          {
+            "id": "cl-抗性",
+            "term": "Cl-抗性",
+            "discipline": "化学",
+            "grounded_to": null
+          },
+          {
+            "id": "oer活性",
+            "term": "OER活性 (1.598 V@2 A cm-2)",
+            "discipline": "化学",
+            "grounded_to": null
+          },
+          {
+            "id": "长期耐久性",
+            "term": "长期耐久性 (1000小时)",
+            "discipline": "化学",
+            "grounded_to": null
+          },
+          {
+            "id": "工业电流密度",
+            "term": "工业电流密度 (0.5 A cm-2)",
+            "discipline": "化学",
+            "grounded_to": null
+          },
+          {
+            "id": "电解效率70%",
+            "term": "电解效率70%",
+            "discipline": "化学",
+            "grounded_to": null
+          },
+          {
+            "id": "能耗48.4 kwh kg-1 h2",
+            "term": "能耗48.4 kWh kg-1 H2",
+            "discipline": "化学",
+            "grounded_to": null
+          }
+        ],
+        "edges": [
+          {
+            "source": "氧析出反应电催化剂",
+            "target": "阴离子交换膜海水电解",
+            "relation_type": "corresponds_to",
+            "relation_detail": "氧析出反应电催化剂 corresponds_to 阴离子交换膜海水电解",
+            "evidence": "Anion exchange membrane seawater electrolysis is vital for future large-scale green hydrogen production, however enduring a huge challenge that lacks high-stable oxygen evolution reaction electrocatalysts.",
+            "confidence": 0.5
+          },
+          {
+            "source": "ti-o-fe键",
+            "target": "晶格氧机制",
+            "relation_type": "corresponds_to",
+            "relation_detail": "Ti-O-Fe键 corresponds_to 晶格氧机制",
+            "evidence": "The strong interaction between (Ni,Fe)S<sub>2</sub> and Ti<sub>3</sub>C<sub>2</sub> induces electron distribution to trigger lattice oxygen mechanism, improving the intrinsic activity, and particularly prohibits the dissolution of Fe species during OER process via the Ti-O-Fe bonding effectively, achieving notable stability.",
+            "confidence": 0.5
+          }
+        ]
+      },
+      "hypothesis_paths_legacy": {
+        "L1": [
+          [
+            {
+              "step": 1,
+              "head": "阴离子交换膜海水电解",
+              "relation": "缺乏",
+              "tail": "氧析出反应电催化剂",
+              "claim": "阴离子交换膜海水电解系统面临氧析出反应电催化剂不足的问题"
+            },
+            {
+              "step": 2,
+              "head": "氧析出反应电催化剂",
+              "relation": "通过整合",
+              "tail": "）",
+              "claim": "通过整合 ）材料可以改善氧析出反应电催化剂的性能"
+            },
+            {
+              "step": 3,
+              "head": "）",
+              "relation": "结合",
+              "tail": "硫化物 ((,)@)",
+              "claim": "）与硫化物结合形成高效催化剂，可显著提升阴离子交换膜海水电解系统的性能"
+            }
+          ],
+          [
+            {
+              "step": 1,
+              "head": "阴离子交换膜海水电解",
+              "relation": "需要提升",
+              "tail": "长期耐久性 (1000小时)",
+              "claim": "阴离子交换膜海水电解系统需要提升长期耐久性"
+            },
+            {
+              "step": 2,
+              "head": "长期耐久性 (1000小时)",
+              "relation": "依赖于",
+              "tail": "键",
+              "claim": "长期耐久性的提升依赖于键的形成"
+            },
+            {
+              "step": 3,
+              "head": "键",
+              "relation": "抑制",
+              "tail": "铁元素溶出",
+              "claim": "键能有效抑制铁元素溶出，从而增强电解系统的稳定性"
+            }
+          ]
+        ],
+        "L2": [
+          [
+            {
+              "step": 1,
+              "head": "）",
+              "relation": "整合形成复合结构",
+              "tail": "硫化物 ((,)@)",
+              "claim": "） 整合形成复合结构 硫化物 ((,)@)"
+            },
+            {
+              "step": 2,
+              "head": "硫化物 ((,)@)",
+              "relation": "电子重分布触发",
+              "tail": "晶格氧机制",
+              "claim": "硫化物 ((,)@) 电子重分布触发 晶格氧机制"
+            },
+            {
+              "step": 3,
+              "head": "晶格氧机制",
+              "relation": "提升反应动力学",
+              "tail": "活性 (1.598 @2 )",
+              "claim": "晶格氧机制 提升反应动力学 活性 (1.598 @2 )"
+            }
+          ],
+          [
+            {
+              "step": 1,
+              "head": "键",
+              "relation": "化学键锚定抑制",
+              "tail": "溶解的物种",
+              "claim": "键 化学键锚定抑制 溶解的物种"
+            },
+            {
+              "step": 2,
+              "head": "溶解的物种",
+              "relation": "协同维持活性位点",
+              "tail": "硫酸盐保留与官能团",
+              "claim": "溶解的物种 协同维持活性位点 硫酸盐保留与官能团"
+            },
+            {
+              "step": 3,
+              "head": "硫酸盐保留与官能团",
+              "relation": "提供抗性保障",
+              "tail": "长期耐久性 (1000小时)",
+              "claim": "硫酸盐保留与官能团 提供抗性保障 长期耐久性 (1000小时)"
+            }
+          ]
+        ],
+        "L3": [
+          [
+            {
+              "step": 1,
+              "head": "）",
+              "relation": "通过电子协同作用整合",
+              "tail": "硫化物 ((,)@)",
+              "claim": "） 通过电子协同作用整合 硫化物 ((,)@)"
+            },
+            {
+              "step": 2,
+              "head": "硫化物 ((,)@)",
+              "relation": "诱导电子分布触发",
+              "tail": "晶格氧机制",
+              "claim": "硫化物 ((,)@) 诱导电子分布触发 晶格氧机制"
+            },
+            {
+              "step": 3,
+              "head": "晶格氧机制",
+              "relation": "显著提升",
+              "tail": "活性 (1.598 @2 )",
+              "claim": "晶格氧机制 显著提升 活性 (1.598 @2 )"
+            }
+          ],
+          [
+            {
+              "step": 1,
+              "head": "键",
+              "relation": "有效抑制",
+              "tail": "溶解的物种",
+              "claim": "键 有效抑制 溶解的物种"
+            },
+            {
+              "step": 2,
+              "head": "溶解的物种",
+              "relation": "协同维持",
+              "tail": "硫酸盐保留与基团",
+              "claim": "溶解的物种 协同维持 硫酸盐保留与基团"
+            },
+            {
+              "step": 3,
+              "head": "硫酸盐保留与基团",
+              "relation": "共同保障",
+              "tail": "长期耐久性 (1000小时)",
+              "claim": "硫酸盐保留与基团 共同保障 长期耐久性 (1000小时)"
+            }
+          ]
+        ]
+      },
+      "hypothesis_paths": {
+        "L1": [
+          [
+            {
+              "step": 1,
+              "head": "阴离子交换膜海水电解",
+              "relation": "缺乏",
+              "tail": "氧析出反应电催化剂",
+              "claim": "阴离子交换膜海水电解系统面临氧析出反应电催化剂不足的问题"
+            },
+            {
+              "step": 2,
+              "head": "氧析出反应电催化剂",
+              "relation": "通过整合",
+              "tail": "）",
+              "claim": "通过整合 ）材料可以改善氧析出反应电催化剂的性能"
+            },
+            {
+              "step": 3,
+              "head": "）",
+              "relation": "结合",
+              "tail": "硫化物 ((,)@)",
+              "claim": "）与硫化物结合形成高效催化剂，可显著提升阴离子交换膜海水电解系统的性能"
+            }
+          ],
+          [
+            {
+              "step": 1,
+              "head": "阴离子交换膜海水电解",
+              "relation": "需要提升",
+              "tail": "长期耐久性 (1000小时)",
+              "claim": "阴离子交换膜海水电解系统需要提升长期耐久性"
+            },
+            {
+              "step": 2,
+              "head": "长期耐久性 (1000小时)",
+              "relation": "依赖于",
+              "tail": "键",
+              "claim": "长期耐久性的提升依赖于键的形成"
+            },
+            {
+              "step": 3,
+              "head": "键",
+              "relation": "抑制",
+              "tail": "铁元素溶出",
+              "claim": "键能有效抑制铁元素溶出，从而增强电解系统的稳定性"
+            }
+          ]
+        ],
+        "L2": [
+          [
+            {
+              "step": 1,
+              "head": "）",
+              "relation": "整合形成复合结构",
+              "tail": "硫化物 ((,)@)",
+              "claim": "） 整合形成复合结构 硫化物 ((,)@)"
+            },
+            {
+              "step": 2,
+              "head": "硫化物 ((,)@)",
+              "relation": "电子重分布触发",
+              "tail": "晶格氧机制",
+              "claim": "硫化物 ((,)@) 电子重分布触发 晶格氧机制"
+            },
+            {
+              "step": 3,
+              "head": "晶格氧机制",
+              "relation": "提升反应动力学",
+              "tail": "活性 (1.598 @2 )",
+              "claim": "晶格氧机制 提升反应动力学 活性 (1.598 @2 )"
+            }
+          ],
+          [
+            {
+              "step": 1,
+              "head": "键",
+              "relation": "化学键锚定抑制",
+              "tail": "溶解的物种",
+              "claim": "键 化学键锚定抑制 溶解的物种"
+            },
+            {
+              "step": 2,
+              "head": "溶解的物种",
+              "relation": "协同维持活性位点",
+              "tail": "硫酸盐保留与官能团",
+              "claim": "溶解的物种 协同维持活性位点 硫酸盐保留与官能团"
+            },
+            {
+              "step": 3,
+              "head": "硫酸盐保留与官能团",
+              "relation": "提供抗性保障",
+              "tail": "长期耐久性 (1000小时)",
+              "claim": "硫酸盐保留与官能团 提供抗性保障 长期耐久性 (1000小时)"
+            }
+          ]
+        ],
+        "L3": [
+          [
+            {
+              "step": 1,
+              "head": "）",
+              "relation": "通过电子协同作用整合",
+              "tail": "硫化物 ((,)@)",
+              "claim": "） 通过电子协同作用整合 硫化物 ((,)@)"
+            },
+            {
+              "step": 2,
+              "head": "硫化物 ((,)@)",
+              "relation": "诱导电子分布触发",
+              "tail": "晶格氧机制",
+              "claim": "硫化物 ((,)@) 诱导电子分布触发 晶格氧机制"
+            },
+            {
+              "step": 3,
+              "head": "晶格氧机制",
+              "relation": "显著提升",
+              "tail": "活性 (1.598 @2 )",
+              "claim": "晶格氧机制 显著提升 活性 (1.598 @2 )"
+            }
+          ],
+          [
+            {
+              "step": 1,
+              "head": "键",
+              "relation": "有效抑制",
+              "tail": "溶解的物种",
+              "claim": "键 有效抑制 溶解的物种"
+            },
+            {
+              "step": 2,
+              "head": "溶解的物种",
+              "relation": "协同维持",
+              "tail": "硫酸盐保留与基团",
+              "claim": "溶解的物种 协同维持 硫酸盐保留与基团"
+            },
+            {
+              "step": 3,
+              "head": "硫酸盐保留与基团",
+              "relation": "共同保障",
+              "tail": "长期耐久性 (1000小时)",
+              "claim": "硫酸盐保留与基团 共同保障 长期耐久性 (1000小时)"
+            }
+          ]
+        ]
+      }
+    },
+    "gt_stats": {
+      "n_terms": 12,
+      "n_grounded": 0,
+      "grounding_rate": 0.0,
+      "n_relations": 2,
+      "n_paths": 0,
+      "n_cross_disciplinary_paths": 0,
+      "n_disciplines": 1,
+      "disciplines": [
+        "化学"
+      ],
+      "avg_path_length": 0.0
+    }
+  },
+  {
+    "id": "Leaf-based energy harvesting and storage utilizing",
+    "input": {
+      "title": "Leaf-based energy harvesting and storage utilizing hygroscopic iron hydrogel for continuous power generation",
+      "primary_discipline": "材料科学",
+      "secondary_disciplines": [],
+      "abstract": "Abstract In the era of big data, developing next-generation self-powered continuous energy harvesting systems is of great importance. Taking advantage of fallen leaves’ specific structural advantage gifted by nature, we propose a facile approach to convert fallen leaves into energy harvesters from ubiquitous moisture, based on surface treatments and asymmetric coating of hygroscopic iron hydrogels. Upon moisture absorption, a water gradient is established between areas with/without hydrogel coating, and maintained due to gel-like behaviors and leaf veins for water retention and diffusion restriction, thus forming electrical double layers over the leaf surface and showing capacitance-like behavior for energy charging and discharging. Besides, the specific leaf cell structures with small grooves enabled uniform carbon coatings instead of aggregations, and high electrical conductivity, resulting in 49 μA/cm 2 and 497 μW/cm 3 electrical output, achieving competitive performance with the state-of-art and potential for lower environmental impact compared to other types of energy harvesters."
+    },
+    "ground_truth": {
+      "terms": [
+        {
+          "term": "hygroscopic iron hydrogels",
+          "normalized": "吸湿性铁水凝胶",
+          "discipline": "材料科学",
+          "evidence": "asymmetric coating of hygroscopic iron hydrogels",
+          "source": "parsed_primary",
+          "confidence": 1.0,
+          "grounded_to": null,
+          "grounding_confidence": 0.0
+        },
+        {
+          "term": "water gradient",
+          "normalized": "水梯度",
+          "discipline": "材料科学",
+          "evidence": "a water gradient is established between areas with/without hydrogel coating",
+          "source": "parsed_primary",
+          "confidence": 1.0,
+          "grounded_to": null,
+          "grounding_confidence": 0.0
+        },
+        {
+          "term": "electrical double layers",
+          "normalized": "电双层",
+          "discipline": "材料科学",
+          "evidence": "forming electrical double layers over the leaf surface",
+          "source": "parsed_primary",
+          "confidence": 1.0,
+          "grounded_to": null,
+          "grounding_confidence": 0.0
+        },
+        {
+          "term": "capacitance-like behavior",
+          "normalized": "类电容行为",
+          "discipline": "材料科学",
+          "evidence": "showing capacitance-like behavior for energy charging and discharging",
+          "source": "parsed_primary",
+          "confidence": 1.0,
+          "grounded_to": null,
+          "grounding_confidence": 0.0
+        },
+        {
+          "term": "leaf cell structures",
+          "normalized": "叶片细胞结构",
+          "discipline": "材料科学",
+          "evidence": "the specific leaf cell structures with small grooves",
+          "source": "parsed_primary",
+          "confidence": 1.0,
+          "grounded_to": null,
+          "grounding_confidence": 0.0
+        },
+        {
+          "term": "carbon coatings",
+          "normalized": "碳涂层",
+          "discipline": "材料科学",
+          "evidence": "enabled uniform carbon coatings instead of aggregations",
+          "source": "parsed_primary",
+          "confidence": 1.0,
+          "grounded_to": null,
+          "grounding_confidence": 0.0
+        },
+        {
+          "term": "electrical conductivity",
+          "normalized": "电导率",
+          "discipline": "材料科学",
+          "evidence": "high electrical conductivity",
+          "source": "parsed_primary",
+          "confidence": 1.0,
+          "grounded_to": null,
+          "grounding_confidence": 0.0
+        },
+        {
+          "term": "49 μA/cm 2",
+          "normalized": "49微安/平方厘米",
+          "discipline": "材料科学",
+          "evidence": "resulting in 49 μA/cm 2 and 497 μW/cm 3 electrical output",
+          "source": "parsed_primary",
+          "confidence": 1.0,
+          "grounded_to": null,
+          "grounding_confidence": 0.0
+        },
+        {
+          "term": "497 μW/cm 3",
+          "normalized": "497微瓦/立方厘米",
+          "discipline": "材料科学",
+          "evidence": "resulting in 49 μA/cm 2 and 497 μW/cm 3 electrical output",
+          "source": "parsed_primary",
+          "confidence": 1.0,
+          "grounded_to": null,
+          "grounding_confidence": 0.0
+        }
+      ],
+      "relations": [
+        {
+          "head": "水梯度",
+          "tail": "电双层",
+          "relation_type": "constrains",
+          "relation_detail": "水梯度 constrains 电双层",
+          "evidence_sentence": "Upon moisture absorption, a water gradient is established between areas with/without hydrogel coating, and maintained due to gel-like behaviors and leaf veins for water retention and diffusion restriction, thus forming electrical double layers over the leaf surface and showing capacitance-like behavior for energy charging and discharging.",
+          "confidence": 0.6,
+          "source_method": "heuristic"
+        },
+        {
+          "head": "水梯度",
+          "tail": "类电容行为",
+          "relation_type": "constrains",
+          "relation_detail": "水梯度 constrains 类电容行为",
+          "evidence_sentence": "Upon moisture absorption, a water gradient is established between areas with/without hydrogel coating, and maintained due to gel-like behaviors and leaf veins for water retention and diffusion restriction, thus forming electrical double layers over the leaf surface and showing capacitance-like behavior for energy charging and discharging.",
+          "confidence": 0.6,
+          "source_method": "heuristic"
+        },
+        {
+          "head": "电双层",
+          "tail": "类电容行为",
+          "relation_type": "constrains",
+          "relation_detail": "电双层 constrains 类电容行为",
+          "evidence_sentence": "Upon moisture absorption, a water gradient is established between areas with/without hydrogel coating, and maintained due to gel-like behaviors and leaf veins for water retention and diffusion restriction, thus forming electrical double layers over the leaf surface and showing capacitance-like behavior for energy charging and discharging.",
+          "confidence": 0.6,
+          "source_method": "heuristic"
+        },
+        {
+          "head": "叶片细胞结构",
+          "tail": "碳涂层",
+          "relation_type": "corresponds_to",
+          "relation_detail": "叶片细胞结构 corresponds_to 碳涂层",
+          "evidence_sentence": "Besides, the specific leaf cell structures with small grooves enabled uniform carbon coatings instead of aggregations, and high electrical conductivity, resulting in 49 μA/cm 2 and 497 μW/cm 3 electrical output, achieving competitive performance with the state-of-art and potential for lower environmental impact compared to other types of energy harvesters.",
+          "confidence": 0.5,
+          "source_method": "heuristic"
+        },
+        {
+          "head": "叶片细胞结构",
+          "tail": "电导率",
+          "relation_type": "corresponds_to",
+          "relation_detail": "叶片细胞结构 corresponds_to 电导率",
+          "evidence_sentence": "Besides, the specific leaf cell structures with small grooves enabled uniform carbon coatings instead of aggregations, and high electrical conductivity, resulting in 49 μA/cm 2 and 497 μW/cm 3 electrical output, achieving competitive performance with the state-of-art and potential for lower environmental impact compared to other types of energy harvesters.",
+          "confidence": 0.5,
+          "source_method": "heuristic"
+        },
+        {
+          "head": "49微安/平方厘米",
+          "tail": "叶片细胞结构",
+          "relation_type": "corresponds_to",
+          "relation_detail": "49微安/平方厘米 corresponds_to 叶片细胞结构",
+          "evidence_sentence": "Besides, the specific leaf cell structures with small grooves enabled uniform carbon coatings instead of aggregations, and high electrical conductivity, resulting in 49 μA/cm 2 and 497 μW/cm 3 electrical output, achieving competitive performance with the state-of-art and potential for lower environmental impact compared to other types of energy harvesters.",
+          "confidence": 0.5,
+          "source_method": "heuristic"
+        },
+        {
+          "head": "497微瓦/立方厘米",
+          "tail": "叶片细胞结构",
+          "relation_type": "corresponds_to",
+          "relation_detail": "497微瓦/立方厘米 corresponds_to 叶片细胞结构",
+          "evidence_sentence": "Besides, the specific leaf cell structures with small grooves enabled uniform carbon coatings instead of aggregations, and high electrical conductivity, resulting in 49 μA/cm 2 and 497 μW/cm 3 electrical output, achieving competitive performance with the state-of-art and potential for lower environmental impact compared to other types of energy harvesters.",
+          "confidence": 0.5,
+          "source_method": "heuristic"
+        },
+        {
+          "head": "电导率",
+          "tail": "碳涂层",
+          "relation_type": "corresponds_to",
+          "relation_detail": "电导率 corresponds_to 碳涂层",
+          "evidence_sentence": "Besides, the specific leaf cell structures with small grooves enabled uniform carbon coatings instead of aggregations, and high electrical conductivity, resulting in 49 μA/cm 2 and 497 μW/cm 3 electrical output, achieving competitive performance with the state-of-art and potential for lower environmental impact compared to other types of energy harvesters.",
+          "confidence": 0.5,
+          "source_method": "heuristic"
+        },
+        {
+          "head": "49微安/平方厘米",
+          "tail": "碳涂层",
+          "relation_type": "corresponds_to",
+          "relation_detail": "49微安/平方厘米 corresponds_to 碳涂层",
+          "evidence_sentence": "Besides, the specific leaf cell structures with small grooves enabled uniform carbon coatings instead of aggregations, and high electrical conductivity, resulting in 49 μA/cm 2 and 497 μW/cm 3 electrical output, achieving competitive performance with the state-of-art and potential for lower environmental impact compared to other types of energy harvesters.",
+          "confidence": 0.5,
+          "source_method": "heuristic"
+        },
+        {
+          "head": "497微瓦/立方厘米",
+          "tail": "碳涂层",
+          "relation_type": "corresponds_to",
+          "relation_detail": "497微瓦/立方厘米 corresponds_to 碳涂层",
+          "evidence_sentence": "Besides, the specific leaf cell structures with small grooves enabled uniform carbon coatings instead of aggregations, and high electrical conductivity, resulting in 49 μA/cm 2 and 497 μW/cm 3 electrical output, achieving competitive performance with the state-of-art and potential for lower environmental impact compared to other types of energy harvesters.",
+          "confidence": 0.5,
+          "source_method": "heuristic"
+        },
+        {
+          "head": "49微安/平方厘米",
+          "tail": "电导率",
+          "relation_type": "corresponds_to",
+          "relation_detail": "49微安/平方厘米 corresponds_to 电导率",
+          "evidence_sentence": "Besides, the specific leaf cell structures with small grooves enabled uniform carbon coatings instead of aggregations, and high electrical conductivity, resulting in 49 μA/cm 2 and 497 μW/cm 3 electrical output, achieving competitive performance with the state-of-art and potential for lower environmental impact compared to other types of energy harvesters.",
+          "confidence": 0.5,
+          "source_method": "heuristic"
+        },
+        {
+          "head": "497微瓦/立方厘米",
+          "tail": "电导率",
+          "relation_type": "corresponds_to",
+          "relation_detail": "497微瓦/立方厘米 corresponds_to 电导率",
+          "evidence_sentence": "Besides, the specific leaf cell structures with small grooves enabled uniform carbon coatings instead of aggregations, and high electrical conductivity, resulting in 49 μA/cm 2 and 497 μW/cm 3 electrical output, achieving competitive performance with the state-of-art and potential for lower environmental impact compared to other types of energy harvesters.",
+          "confidence": 0.5,
+          "source_method": "heuristic"
+        },
+        {
+          "head": "497微瓦/立方厘米",
+          "tail": "49微安/平方厘米",
+          "relation_type": "corresponds_to",
+          "relation_detail": "497微瓦/立方厘米 corresponds_to 49微安/平方厘米",
+          "evidence_sentence": "Besides, the specific leaf cell structures with small grooves enabled uniform carbon coatings instead of aggregations, and high electrical conductivity, resulting in 49 μA/cm 2 and 497 μW/cm 3 electrical output, achieving competitive performance with the state-of-art and potential for lower environmental impact compared to other types of energy harvesters.",
+          "confidence": 0.5,
+          "source_method": "heuristic"
+        }
+      ],
+      "paths": [],
+      "concept_graph": {
+        "nodes": [
+          {
+            "id": "吸湿性铁水凝胶",
+            "term": "吸湿性铁水凝胶",
+            "discipline": "材料科学",
+            "grounded_to": null
+          },
+          {
+            "id": "水梯度",
+            "term": "水梯度",
+            "discipline": "材料科学",
+            "grounded_to": null
+          },
+          {
+            "id": "电双层",
+            "term": "电双层",
+            "discipline": "材料科学",
+            "grounded_to": null
+          },
+          {
+            "id": "类电容行为",
+            "term": "类电容行为",
+            "discipline": "材料科学",
+            "grounded_to": null
+          },
+          {
+            "id": "叶片细胞结构",
+            "term": "叶片细胞结构",
+            "discipline": "材料科学",
+            "grounded_to": null
+          },
+          {
+            "id": "碳涂层",
+            "term": "碳涂层",
+            "discipline": "材料科学",
+            "grounded_to": null
+          },
+          {
+            "id": "电导率",
+            "term": "电导率",
+            "discipline": "材料科学",
+            "grounded_to": null
+          },
+          {
+            "id": "49微安/平方厘米",
+            "term": "49微安/平方厘米",
+            "discipline": "材料科学",
+            "grounded_to": null
+          },
+          {
+            "id": "497微瓦/立方厘米",
+            "term": "497微瓦/立方厘米",
+            "discipline": "材料科学",
+            "grounded_to": null
+          }
+        ],
+        "edges": [
+          {
+            "source": "水梯度",
+            "target": "电双层",
+            "relation_type": "constrains",
+            "relation_detail": "水梯度 constrains 电双层",
+            "evidence": "Upon moisture absorption, a water gradient is established between areas with/without hydrogel coating, and maintained due to gel-like behaviors and leaf veins for water retention and diffusion restriction, thus forming electrical double layers over the leaf surface and showing capacitance-like behavior for energy charging and discharging.",
+            "confidence": 0.6
+          },
+          {
+            "source": "水梯度",
+            "target": "类电容行为",
+            "relation_type": "constrains",
+            "relation_detail": "水梯度 constrains 类电容行为",
+            "evidence": "Upon moisture absorption, a water gradient is established between areas with/without hydrogel coating, and maintained due to gel-like behaviors and leaf veins for water retention and diffusion restriction, thus forming electrical double layers over the leaf surface and showing capacitance-like behavior for energy charging and discharging.",
+            "confidence": 0.6
+          },
+          {
+            "source": "电双层",
+            "target": "类电容行为",
+            "relation_type": "constrains",
+            "relation_detail": "电双层 constrains 类电容行为",
+            "evidence": "Upon moisture absorption, a water gradient is established between areas with/without hydrogel coating, and maintained due to gel-like behaviors and leaf veins for water retention and diffusion restriction, thus forming electrical double layers over the leaf surface and showing capacitance-like behavior for energy charging and discharging.",
+            "confidence": 0.6
+          },
+          {
+            "source": "叶片细胞结构",
+            "target": "碳涂层",
+            "relation_type": "corresponds_to",
+            "relation_detail": "叶片细胞结构 corresponds_to 碳涂层",
+            "evidence": "Besides, the specific leaf cell structures with small grooves enabled uniform carbon coatings instead of aggregations, and high electrical conductivity, resulting in 49 μA/cm 2 and 497 μW/cm 3 electrical output, achieving competitive performance with the state-of-art and potential for lower environmental impact compared to other types of energy harvesters.",
+            "confidence": 0.5
+          },
+          {
+            "source": "叶片细胞结构",
+            "target": "电导率",
+            "relation_type": "corresponds_to",
+            "relation_detail": "叶片细胞结构 corresponds_to 电导率",
+            "evidence": "Besides, the specific leaf cell structures with small grooves enabled uniform carbon coatings instead of aggregations, and high electrical conductivity, resulting in 49 μA/cm 2 and 497 μW/cm 3 electrical output, achieving competitive performance with the state-of-art and potential for lower environmental impact compared to other types of energy harvesters.",
+            "confidence": 0.5
+          },
+          {
+            "source": "49微安/平方厘米",
+            "target": "叶片细胞结构",
+            "relation_type": "corresponds_to",
+            "relation_detail": "49微安/平方厘米 corresponds_to 叶片细胞结构",
+            "evidence": "Besides, the specific leaf cell structures with small grooves enabled uniform carbon coatings instead of aggregations, and high electrical conductivity, resulting in 49 μA/cm 2 and 497 μW/cm 3 electrical output, achieving competitive performance with the state-of-art and potential for lower environmental impact compared to other types of energy harvesters.",
+            "confidence": 0.5
+          },
+          {
+            "source": "497微瓦/立方厘米",
+            "target": "叶片细胞结构",
+            "relation_type": "corresponds_to",
+            "relation_detail": "497微瓦/立方厘米 corresponds_to 叶片细胞结构",
+            "evidence": "Besides, the specific leaf cell structures with small grooves enabled uniform carbon coatings instead of aggregations, and high electrical conductivity, resulting in 49 μA/cm 2 and 497 μW/cm 3 electrical output, achieving competitive performance with the state-of-art and potential for lower environmental impact compared to other types of energy harvesters.",
+            "confidence": 0.5
+          },
+          {
+            "source": "电导率",
+            "target": "碳涂层",
+            "relation_type": "corresponds_to",
+            "relation_detail": "电导率 corresponds_to 碳涂层",
+            "evidence": "Besides, the specific leaf cell structures with small grooves enabled uniform carbon coatings instead of aggregations, and high electrical conductivity, resulting in 49 μA/cm 2 and 497 μW/cm 3 electrical output, achieving competitive performance with the state-of-art and potential for lower environmental impact compared to other types of energy harvesters.",
+            "confidence": 0.5
+          },
+          {
+            "source": "49微安/平方厘米",
+            "target": "碳涂层",
+            "relation_type": "corresponds_to",
+            "relation_detail": "49微安/平方厘米 corresponds_to 碳涂层",
+            "evidence": "Besides, the specific leaf cell structures with small grooves enabled uniform carbon coatings instead of aggregations, and high electrical conductivity, resulting in 49 μA/cm 2 and 497 μW/cm 3 electrical output, achieving competitive performance with the state-of-art and potential for lower environmental impact compared to other types of energy harvesters.",
+            "confidence": 0.5
+          },
+          {
+            "source": "497微瓦/立方厘米",
+            "target": "碳涂层",
+            "relation_type": "corresponds_to",
+            "relation_detail": "497微瓦/立方厘米 corresponds_to 碳涂层",
+            "evidence": "Besides, the specific leaf cell structures with small grooves enabled uniform carbon coatings instead of aggregations, and high electrical conductivity, resulting in 49 μA/cm 2 and 497 μW/cm 3 electrical output, achieving competitive performance with the state-of-art and potential for lower environmental impact compared to other types of energy harvesters.",
+            "confidence": 0.5
+          },
+          {
+            "source": "49微安/平方厘米",
+            "target": "电导率",
+            "relation_type": "corresponds_to",
+            "relation_detail": "49微安/平方厘米 corresponds_to 电导率",
+            "evidence": "Besides, the specific leaf cell structures with small grooves enabled uniform carbon coatings instead of aggregations, and high electrical conductivity, resulting in 49 μA/cm 2 and 497 μW/cm 3 electrical output, achieving competitive performance with the state-of-art and potential for lower environmental impact compared to other types of energy harvesters.",
+            "confidence": 0.5
+          },
+          {
+            "source": "497微瓦/立方厘米",
+            "target": "电导率",
+            "relation_type": "corresponds_to",
+            "relation_detail": "497微瓦/立方厘米 corresponds_to 电导率",
+            "evidence": "Besides, the specific leaf cell structures with small grooves enabled uniform carbon coatings instead of aggregations, and high electrical conductivity, resulting in 49 μA/cm 2 and 497 μW/cm 3 electrical output, achieving competitive performance with the state-of-art and potential for lower environmental impact compared to other types of energy harvesters.",
+            "confidence": 0.5
+          },
+          {
+            "source": "497微瓦/立方厘米",
+            "target": "49微安/平方厘米",
+            "relation_type": "corresponds_to",
+            "relation_detail": "497微瓦/立方厘米 corresponds_to 49微安/平方厘米",
+            "evidence": "Besides, the specific leaf cell structures with small grooves enabled uniform carbon coatings instead of aggregations, and high electrical conductivity, resulting in 49 μA/cm 2 and 497 μW/cm 3 electrical output, achieving competitive performance with the state-of-art and potential for lower environmental impact compared to other types of energy harvesters.",
+            "confidence": 0.5
+          }
+        ]
+      },
+      "hypothesis_paths_legacy": {
+        "L1": [
+          [
+            {
+              "step": 1,
+              "head": "吸湿性铁水凝胶",
+              "relation": "建立",
+              "tail": "水梯度",
+              "claim": "吸湿性铁水凝胶通过不对称涂覆在叶片表面建立水梯度"
+            },
+            {
+              "step": 2,
+              "head": "水梯度",
+              "relation": "形成",
+              "tail": "电双层",
+              "claim": "水梯度在叶片表面形成电双层结构"
+            },
+            {
+              "step": 3,
+              "head": "电双层",
+              "relation": "表现出",
+              "tail": "类电容行为",
+              "claim": "电双层结构表现出类电容行为，实现能量的充放电，需要植物学领域对叶片微观结构进行优化以提升能量转换效率"
+            }
+          ],
+          [
+            {
+              "step": 1,
+              "head": "叶片细胞结构",
+              "relation": "实现",
+              "tail": "碳涂层",
+              "claim": "叶片细胞结构的特殊沟槽结构实现均匀碳涂层而非聚集"
+            },
+            {
+              "step": 2,
+              "head": "碳涂层",
+              "relation": "导致",
+              "tail": "电导率",
+              "claim": "均匀碳涂层导致高电导率"
+            },
+            {
+              "step": 3,
+              "head": "电导率",
+              "relation": "产生",
+              "tail": "49微安/平方厘米",
+              "claim": "高电导率产生49微安/平方厘米的电流输出，需要电化学领域对电极材料进行优化以进一步提升能量存储密度"
+            }
+          ]
+        ],
+        "L2": [
+          [
+            {
+              "step": 1,
+              "head": "叶片细胞结构",
+              "relation": "调控分布",
+              "tail": "碳涂层",
+              "claim": "叶片细胞结构的小沟槽特征能够调控碳涂层的均匀分布"
+            },
+            {
+              "step": 2,
+              "head": "碳涂层",
+              "relation": "提升",
+              "tail": "电导率",
+              "claim": "均匀的碳涂层可显著提升材料的电导率性能"
+            },
+            {
+              "step": 3,
+              "head": "电导率",
+              "relation": "转化为",
+              "tail": "49微安/平方厘米",
+              "claim": "高电导率直接转化为49微安/平方厘米的电流输出"
+            }
+          ],
+          [
+            {
+              "step": 1,
+              "head": "吸湿性铁水凝胶",
+              "relation": "建立",
+              "tail": "水梯度",
+              "claim": "不对称涂覆的吸湿性铁水凝胶在叶片表面建立稳定水梯度"
+            },
+            {
+              "step": 2,
+              "head": "水梯度",
+              "relation": "形成",
+              "tail": "电双层",
+              "claim": "水梯度差异驱动电双层在叶片界面的自发形成"
+            },
+            {
+              "step": 3,
+              "head": "电双层",
+              "relation": "实现",
+              "tail": "类电容行为",
+              "claim": "电双层结构实现类电容行为的快速充放电循环"
+            }
+          ]
+        ],
+        "L3": [
+          [
+            {
+              "step": 1,
+              "head": "叶片细胞结构",
+              "relation": "调控分布",
+              "tail": "碳涂层",
+              "claim": "叶片细胞结构 调控分布 碳涂层"
+            },
+            {
+              "step": 2,
+              "head": "碳涂层",
+              "relation": "协同作用",
+              "tail": "吸湿性铁水凝胶",
+              "claim": "碳涂层 协同作用 吸湿性铁水凝胶"
+            },
+            {
+              "step": 3,
+              "head": "吸湿性铁水凝胶",
+              "relation": "形成",
+              "tail": "电双层",
+              "claim": "吸湿性铁水凝胶 形成 电双层"
+            }
+          ],
+          [
+            {
+              "step": 1,
+              "head": "吸湿性铁水凝胶",
+              "relation": "建立",
+              "tail": "水梯度",
+              "claim": "吸湿性铁水凝胶 建立 水梯度"
+            },
+            {
+              "step": 2,
+              "head": "水梯度",
+              "relation": "提升",
+              "tail": "电导率",
+              "claim": "水梯度 提升 电导率"
+            },
+            {
+              "step": 3,
+              "head": "电导率",
+              "relation": "输出",
+              "tail": "497微瓦/立方厘米",
+              "claim": "电导率 输出 497微瓦/立方厘米"
+            }
+          ]
+        ]
+      },
+      "hypothesis_paths": {
+        "L1": [
+          [
+            {
+              "step": 1,
+              "head": "吸湿性铁水凝胶",
+              "relation": "建立",
+              "tail": "水梯度",
+              "claim": "吸湿性铁水凝胶通过不对称涂覆在叶片表面建立水梯度"
+            },
+            {
+              "step": 2,
+              "head": "水梯度",
+              "relation": "形成",
+              "tail": "电双层",
+              "claim": "水梯度在叶片表面形成电双层结构"
+            },
+            {
+              "step": 3,
+              "head": "电双层",
+              "relation": "表现出",
+              "tail": "类电容行为",
+              "claim": "电双层结构表现出类电容行为，实现能量的充放电，需要植物学领域对叶片微观结构进行优化以提升能量转换效率"
+            }
+          ],
+          [
+            {
+              "step": 1,
+              "head": "叶片细胞结构",
+              "relation": "实现",
+              "tail": "碳涂层",
+              "claim": "叶片细胞结构的特殊沟槽结构实现均匀碳涂层而非聚集"
+            },
+            {
+              "step": 2,
+              "head": "碳涂层",
+              "relation": "导致",
+              "tail": "电导率",
+              "claim": "均匀碳涂层导致高电导率"
+            },
+            {
+              "step": 3,
+              "head": "电导率",
+              "relation": "产生",
+              "tail": "49微安/平方厘米",
+              "claim": "高电导率产生49微安/平方厘米的电流输出，需要电化学领域对电极材料进行优化以进一步提升能量存储密度"
+            }
+          ]
+        ],
+        "L2": [
+          [
+            {
+              "step": 1,
+              "head": "叶片细胞结构",
+              "relation": "调控分布",
+              "tail": "碳涂层",
+              "claim": "叶片细胞结构的小沟槽特征能够调控碳涂层的均匀分布"
+            },
+            {
+              "step": 2,
+              "head": "碳涂层",
+              "relation": "提升",
+              "tail": "电导率",
+              "claim": "均匀的碳涂层可显著提升材料的电导率性能"
+            },
+            {
+              "step": 3,
+              "head": "电导率",
+              "relation": "转化为",
+              "tail": "49微安/平方厘米",
+              "claim": "高电导率直接转化为49微安/平方厘米的电流输出"
+            }
+          ],
+          [
+            {
+              "step": 1,
+              "head": "吸湿性铁水凝胶",
+              "relation": "建立",
+              "tail": "水梯度",
+              "claim": "不对称涂覆的吸湿性铁水凝胶在叶片表面建立稳定水梯度"
+            },
+            {
+              "step": 2,
+              "head": "水梯度",
+              "relation": "形成",
+              "tail": "电双层",
+              "claim": "水梯度差异驱动电双层在叶片界面的自发形成"
+            },
+            {
+              "step": 3,
+              "head": "电双层",
+              "relation": "实现",
+              "tail": "类电容行为",
+              "claim": "电双层结构实现类电容行为的快速充放电循环"
+            }
+          ]
+        ],
+        "L3": [
+          [
+            {
+              "step": 1,
+              "head": "叶片细胞结构",
+              "relation": "调控分布",
+              "tail": "碳涂层",
+              "claim": "叶片细胞结构 调控分布 碳涂层"
+            },
+            {
+              "step": 2,
+              "head": "碳涂层",
+              "relation": "协同作用",
+              "tail": "吸湿性铁水凝胶",
+              "claim": "碳涂层 协同作用 吸湿性铁水凝胶"
+            },
+            {
+              "step": 3,
+              "head": "吸湿性铁水凝胶",
+              "relation": "形成",
+              "tail": "电双层",
+              "claim": "吸湿性铁水凝胶 形成 电双层"
+            }
+          ],
+          [
+            {
+              "step": 1,
+              "head": "吸湿性铁水凝胶",
+              "relation": "建立",
+              "tail": "水梯度",
+              "claim": "吸湿性铁水凝胶 建立 水梯度"
+            },
+            {
+              "step": 2,
+              "head": "水梯度",
+              "relation": "提升",
+              "tail": "电导率",
+              "claim": "水梯度 提升 电导率"
+            },
+            {
+              "step": 3,
+              "head": "电导率",
+              "relation": "输出",
+              "tail": "497微瓦/立方厘米",
+              "claim": "电导率 输出 497微瓦/立方厘米"
+            }
+          ]
+        ]
+      }
+    },
+    "gt_stats": {
+      "n_terms": 9,
+      "n_grounded": 0,
+      "grounding_rate": 0.0,
+      "n_relations": 13,
+      "n_paths": 0,
+      "n_cross_disciplinary_paths": 0,
+      "n_disciplines": 1,
+      "disciplines": [
+        "材料科学"
+      ],
+      "avg_path_length": 0.0
+    }
+  },
+  {
+    "id": "Precisely designing asymmetrical selenium-based du",
+    "input": {
+      "title": "Precisely designing asymmetrical selenium-based dual-atom sites for efficient oxygen reduction",
+      "primary_discipline": "化学",
+      "secondary_disciplines": [],
+      "abstract": "Owing to their synergistic interactions, dual-atom catalysts (DACs) with well-defined active sites are attracting increasing attention. However, more experimental research and theoretical investigations are needed to further construct explicit dual-atom sites and understand the synergy that facilitates multistep catalytic reactions. Herein, we precisely design a series of asymmetric selenium-based dual-atom catalysts that comprise heteronuclear SeN<sub>2</sub>-MN<sub>2</sub> (M = Fe, Mn, Co, Ni, Cu, Mo, etc.) active sites for the efficient oxygen reduction reaction (ORR). Spectroscopic characterisation and theoretical calculations revealed that heteronuclear selenium atoms can efficiently polarise the charge distribution of other metal atoms through short-range regulation. In addition, compared with the Se or Fe single-atom sites, the SeFe dual-atom sites facilitate a reduction in the conversion energy barrier from *O to *OH via the coadsorption of *O intermediates. Among these designed selenium-based dual-atom catalysts, selenium-iron dual-atom catalysts achieves superior alkaline ORR performance, with a half-wave potential of 0.926 V vs. a reversible hydrogen electrode. In addition, the SeN<sub>2</sub>-FeN<sub>2</sub>-based Zn-air battery has a high specific capacity (764.8 mAh g<sup>-1</sup>) and a maximum power density (287.2 mW cm<sup>-2</sup>). This work may provide a good perspective for designing heteronuclear DACs to improve ORR efficiency."
+    },
+    "ground_truth": {
+      "terms": [
+        {
+          "term": "dual-atom catalysts (DACs)",
+          "normalized": "双原子催化剂",
+          "discipline": "化学",
+          "evidence": "dual-atom catalysts (DACs) with well-defined active sites are attracting increasing attention",
+          "source": "parsed_primary",
+          "confidence": 1.0,
+          "grounded_to": null,
+          "grounding_confidence": 0.0
+        },
+        {
+          "term": "heteronuclear SeN<sub>2</sub>-MN<sub>2</sub>",
+          "normalized": "异核SeN<sub>2</sub>-MN<sub>2</sub>",
+          "discipline": "化学",
+          "evidence": "asymmetric selenium-based dual-atom catalysts that comprise heteronuclear SeN<sub>2</sub>-MN<sub>2</sub> (M = Fe, Mn, Co, Ni, Cu, Mo, etc.) active sites",
+          "source": "parsed_primary",
+          "confidence": 1.0,
+          "grounded_to": null,
+          "grounding_confidence": 0.0
+        },
+        {
+          "term": "oxygen reduction reaction (ORR)",
+          "normalized": "氧还原反应",
+          "discipline": "化学",
+          "evidence": "heteronuclear SeN<sub>2</sub>-MN<sub>2</sub> (M = Fe, Mn, Co, Ni, Cu, Mo, etc.) active sites for the efficient oxygen reduction reaction (ORR)",
+          "source": "parsed_primary",
+          "confidence": 1.0,
+          "grounded_to": null,
+          "grounding_confidence": 0.0
+        },
+        {
+          "term": "SeFe dual-atom sites",
+          "normalized": "SeFe双原子位点",
+          "discipline": "化学",
+          "evidence": "the SeFe dual-atom sites facilitate a reduction in the conversion energy barrier from *O to *OH via the coadsorption of *O intermediates",
+          "source": "parsed_primary",
+          "confidence": 1.0,
+          "grounded_to": null,
+          "grounding_confidence": 0.0
+        },
+        {
+          "term": "half-wave potential",
+          "normalized": "半波电位",
+          "discipline": "化学",
+          "evidence": "selenium-iron dual-atom catalysts achieves superior alkaline ORR performance, with a half-wave potential of 0.926 V vs. a reversible hydrogen electrode",
+          "source": "parsed_primary",
+          "confidence": 1.0,
+          "grounded_to": null,
+          "grounding_confidence": 0.0
+        },
+        {
+          "term": "Zn-air battery",
+          "normalized": "锌空气电池",
+          "discipline": "化学",
+          "evidence": "the SeN<sub>2</sub>-FeN<sub>2</sub>-based Zn-air battery has a high specific capacity (764.8 mAh g<sup>-1</sup>) and a maximum power density (287.2 mW cm<sup>-2</sup>)",
+          "source": "parsed_primary",
+          "confidence": 1.0,
+          "grounded_to": null,
+          "grounding_confidence": 0.0
+        },
+        {
+          "term": "specific capacity",
+          "normalized": "比容量",
+          "discipline": "化学",
+          "evidence": "the SeN<sub>2</sub>-FeN<sub>2</sub>-based Zn-air battery has a high specific capacity (764.8 mAh g<sup>-1</sup>)",
+          "source": "parsed_primary",
+          "confidence": 1.0,
+          "grounded_to": null,
+          "grounding_confidence": 0.0
+        },
+        {
+          "term": "power density",
+          "normalized": "功率密度",
+          "discipline": "化学",
+          "evidence": "a maximum power density (287.2 mW cm<sup>-2</sup>)",
+          "source": "parsed_primary",
+          "confidence": 1.0,
+          "grounded_to": null,
+          "grounding_confidence": 0.0
+        },
+        {
+          "term": "heteronuclear DACs",
+          "normalized": "异核双原子催化剂",
+          "discipline": "化学",
+          "evidence": "This work may provide a good perspective for designing heteronuclear DACs to improve ORR efficiency",
+          "source": "parsed_primary",
+          "confidence": 1.0,
+          "grounded_to": null,
+          "grounding_confidence": 0.0
+        },
+        {
+          "term": "Se or Fe single-atom sites",
+          "normalized": "Se或Fe单原子位点",
+          "discipline": "化学",
+          "evidence": "compared with the Se or Fe single-atom sites, the SeFe dual-atom sites facilitate a reduction in the conversion energy barrier from *O to *OH",
+          "source": "parsed_primary",
+          "confidence": 1.0,
+          "grounded_to": null,
+          "grounding_confidence": 0.0
+        }
+      ],
+      "relations": [
+        {
+          "head": "双原子催化剂",
+          "tail": "异核SeN<sub>2</sub>-MN<sub>2</sub>",
+          "relation_type": "corresponds_to",
+          "relation_detail": "双原子催化剂 corresponds_to 异核SeN<sub>2</sub>-MN<sub>2</sub>",
+          "evidence_sentence": "Herein, we precisely design a series of asymmetric selenium-based dual-atom catalysts that comprise heteronuclear SeN<sub>2</sub>-MN<sub>2</sub> (M = Fe, Mn, Co, Ni, Cu, Mo, etc.",
+          "confidence": 0.5,
+          "source_method": "heuristic"
+        },
+        {
+          "head": "SeFe双原子位点",
+          "tail": "Se或Fe单原子位点",
+          "relation_type": "corresponds_to",
+          "relation_detail": "SeFe双原子位点 corresponds_to Se或Fe单原子位点",
+          "evidence_sentence": "In addition, compared with the Se or Fe single-atom sites, the SeFe dual-atom sites facilitate a reduction in the conversion energy barrier from *O to *OH via the coadsorption of *O intermediates.",
+          "confidence": 0.5,
+          "source_method": "heuristic"
+        },
+        {
+          "head": "半波电位",
+          "tail": "双原子催化剂",
+          "relation_type": "corresponds_to",
+          "relation_detail": "半波电位 corresponds_to 双原子催化剂",
+          "evidence_sentence": "Among these designed selenium-based dual-atom catalysts, selenium-iron dual-atom catalysts achieves superior alkaline ORR performance, with a half-wave potential of 0.",
+          "confidence": 0.5,
+          "source_method": "heuristic"
+        },
+        {
+          "head": "比容量",
+          "tail": "锌空气电池",
+          "relation_type": "corresponds_to",
+          "relation_detail": "比容量 corresponds_to 锌空气电池",
+          "evidence_sentence": "In addition, the SeN<sub>2</sub>-FeN<sub>2</sub>-based Zn-air battery has a high specific capacity (764.",
+          "confidence": 0.5,
+          "source_method": "heuristic"
+        }
+      ],
+      "paths": [],
+      "concept_graph": {
+        "nodes": [
+          {
+            "id": "双原子催化剂",
+            "term": "双原子催化剂",
+            "discipline": "化学",
+            "grounded_to": null
+          },
+          {
+            "id": "异核sen<sub>2</sub>-mn<sub>2</sub>",
+            "term": "异核SeN<sub>2</sub>-MN<sub>2</sub>",
+            "discipline": "化学",
+            "grounded_to": null
+          },
+          {
+            "id": "氧还原反应",
+            "term": "氧还原反应",
+            "discipline": "化学",
+            "grounded_to": null
+          },
+          {
+            "id": "sefe双原子位点",
+            "term": "SeFe双原子位点",
+            "discipline": "化学",
+            "grounded_to": null
+          },
+          {
+            "id": "半波电位",
+            "term": "半波电位",
+            "discipline": "化学",
+            "grounded_to": null
+          },
+          {
+            "id": "锌空气电池",
+            "term": "锌空气电池",
+            "discipline": "化学",
+            "grounded_to": null
+          },
+          {
+            "id": "比容量",
+            "term": "比容量",
+            "discipline": "化学",
+            "grounded_to": null
+          },
+          {
+            "id": "功率密度",
+            "term": "功率密度",
+            "discipline": "化学",
+            "grounded_to": null
+          },
+          {
+            "id": "异核双原子催化剂",
+            "term": "异核双原子催化剂",
+            "discipline": "化学",
+            "grounded_to": null
+          },
+          {
+            "id": "se或fe单原子位点",
+            "term": "Se或Fe单原子位点",
+            "discipline": "化学",
+            "grounded_to": null
+          }
+        ],
+        "edges": [
+          {
+            "source": "双原子催化剂",
+            "target": "异核sen<sub>2</sub>-mn<sub>2</sub>",
+            "relation_type": "corresponds_to",
+            "relation_detail": "双原子催化剂 corresponds_to 异核SeN<sub>2</sub>-MN<sub>2</sub>",
+            "evidence": "Herein, we precisely design a series of asymmetric selenium-based dual-atom catalysts that comprise heteronuclear SeN<sub>2</sub>-MN<sub>2</sub> (M = Fe, Mn, Co, Ni, Cu, Mo, etc.",
+            "confidence": 0.5
+          },
+          {
+            "source": "sefe双原子位点",
+            "target": "se或fe单原子位点",
+            "relation_type": "corresponds_to",
+            "relation_detail": "SeFe双原子位点 corresponds_to Se或Fe单原子位点",
+            "evidence": "In addition, compared with the Se or Fe single-atom sites, the SeFe dual-atom sites facilitate a reduction in the conversion energy barrier from *O to *OH via the coadsorption of *O intermediates.",
+            "confidence": 0.5
+          },
+          {
+            "source": "半波电位",
+            "target": "双原子催化剂",
+            "relation_type": "corresponds_to",
+            "relation_detail": "半波电位 corresponds_to 双原子催化剂",
+            "evidence": "Among these designed selenium-based dual-atom catalysts, selenium-iron dual-atom catalysts achieves superior alkaline ORR performance, with a half-wave potential of 0.",
+            "confidence": 0.5
+          },
+          {
+            "source": "比容量",
+            "target": "锌空气电池",
+            "relation_type": "corresponds_to",
+            "relation_detail": "比容量 corresponds_to 锌空气电池",
+            "evidence": "In addition, the SeN<sub>2</sub>-FeN<sub>2</sub>-based Zn-air battery has a high specific capacity (764.",
+            "confidence": 0.5
+          }
+        ]
+      },
+      "hypothesis_paths_legacy": {
+        "L1": [
+          [
+            {
+              "step": 1,
+              "head": "双原子催化剂",
+              "relation": "促进",
+              "tail": "氧还原反应",
+              "claim": "双原子催化剂通过其明确的活性位点促进氧还原反应的进行"
+            },
+            {
+              "step": 2,
+              "head": "氧还原反应",
+              "relation": "通过",
+              "tail": "异核<>2</>-<>2</>",
+              "claim": "氧还原反应的效率通过异核<>2</>-<>2</>活性位点的设计得到提升"
+            },
+            {
+              "step": 3,
+              "head": "异核<>2</>-<>2</>",
+              "relation": "优化",
+              "tail": "双原子位点",
+              "claim": "异核<>2</>-<>2</>活性位点的优化设计需要进一步研究双原子位点的协同作用，以降低氧中间体转化能垒"
+            }
+          ],
+          [
+            {
+              "step": 1,
+              "head": "双原子催化剂",
+              "relation": "应用于",
+              "tail": "锌空气电池",
+              "claim": "双原子催化剂在锌空气电池中的应用展示了其实际效能"
+            },
+            {
+              "step": 2,
+              "head": "锌空气电池",
+              "relation": "表现出",
+              "tail": "高比容量",
+              "claim": "锌空气电池通过双原子催化剂的应用表现出高比容量"
+            },
+            {
+              "step": 3,
+              "head": "高比容量",
+              "relation": "关联于",
+              "tail": "功率密度",
+              "claim": "高比容量的实现需要进一步优化功率密度，以验证双原子催化剂在实际应用中的潜力"
+            }
+          ]
+        ],
+        "L2": [
+          [
+            {
+              "step": 1,
+              "head": "异核<>2</>-<>2</>",
+              "relation": "通过结构设计形成",
+              "tail": "双原子位点",
+              "claim": "异核结构设计可定向生成特定双原子位点"
+            },
+            {
+              "step": 2,
+              "head": "双原子位点",
+              "relation": "降低中间体转化能垒",
+              "tail": "氧还原反应",
+              "claim": "双原子协同效应优化反应路径"
+            },
+            {
+              "step": 3,
+              "head": "氧还原反应",
+              "relation": "通过电化学测试量化",
+              "tail": "半波电位",
+              "claim": "催化效率提升表现为电位正移"
+            }
+          ],
+          [
+            {
+              "step": 1,
+              "head": "锌空气电池",
+              "relation": "作为载体集成",
+              "tail": "<>2</>-<>2</>",
+              "claim": "电池系统提供催化性能验证平台"
+            },
+            {
+              "step": 2,
+              "head": "<>2</>-<>2</>",
+              "relation": "通过放电过程反映",
+              "tail": "比容量",
+              "claim": "催化活性决定储能能力"
+            },
+            {
+              "step": 3,
+              "head": "比容量",
+              "relation": "联合表征输出性能",
+              "tail": "功率密度",
+              "claim": "实际效能需多指标协同验证"
+            }
+          ]
+        ],
+        "L3": [
+          [
+            {
+              "step": 1,
+              "head": "异核<>2</>-<>2</>",
+              "relation": "通过结构设计形成",
+              "tail": "双原子位点",
+              "claim": "异核<>2</>-<>2</> 通过结构设计形成 双原子位点"
+            },
+            {
+              "step": 2,
+              "head": "双原子位点",
+              "relation": "通过协同吸附降低能垒",
+              "tail": "氧还原反应",
+              "claim": "双原子位点 通过协同吸附降低能垒 氧还原反应"
+            },
+            {
+              "step": 3,
+              "head": "氧还原反应",
+              "relation": "通过电化学测试量化效率",
+              "tail": "半波电位",
+              "claim": "氧还原反应 通过电化学测试量化效率 半波电位"
+            }
+          ],
+          [
+            {
+              "step": 1,
+              "head": "双原子催化剂",
+              "relation": "通过材料集成工艺应用于",
+              "tail": "锌空气电池",
+              "claim": "双原子催化剂 通过材料集成工艺应用于 锌空气电池"
+            },
+            {
+              "step": 2,
+              "head": "锌空气电池",
+              "relation": "通过放电测试测量",
+              "tail": "比容量",
+              "claim": "锌空气电池 通过放电测试测量 比容量"
+            },
+            {
+              "step": 3,
+              "head": "比容量",
+              "relation": "与功率输出共同验证",
+              "tail": "功率密度",
+              "claim": "比容量 与功率输出共同验证 功率密度"
+            }
+          ]
+        ]
+      },
+      "hypothesis_paths": {
+        "L1": [
+          [
+            {
+              "step": 1,
+              "head": "双原子催化剂",
+              "relation": "促进",
+              "tail": "氧还原反应",
+              "claim": "双原子催化剂通过其明确的活性位点促进氧还原反应的进行"
+            },
+            {
+              "step": 2,
+              "head": "氧还原反应",
+              "relation": "通过",
+              "tail": "异核<>2</>-<>2</>",
+              "claim": "氧还原反应的效率通过异核<>2</>-<>2</>活性位点的设计得到提升"
+            },
+            {
+              "step": 3,
+              "head": "异核<>2</>-<>2</>",
+              "relation": "优化",
+              "tail": "双原子位点",
+              "claim": "异核<>2</>-<>2</>活性位点的优化设计需要进一步研究双原子位点的协同作用，以降低氧中间体转化能垒"
+            }
+          ],
+          [
+            {
+              "step": 1,
+              "head": "双原子催化剂",
+              "relation": "应用于",
+              "tail": "锌空气电池",
+              "claim": "双原子催化剂在锌空气电池中的应用展示了其实际效能"
+            },
+            {
+              "step": 2,
+              "head": "锌空气电池",
+              "relation": "表现出",
+              "tail": "高比容量",
+              "claim": "锌空气电池通过双原子催化剂的应用表现出高比容量"
+            },
+            {
+              "step": 3,
+              "head": "高比容量",
+              "relation": "关联于",
+              "tail": "功率密度",
+              "claim": "高比容量的实现需要进一步优化功率密度，以验证双原子催化剂在实际应用中的潜力"
+            }
+          ]
+        ],
+        "L2": [
+          [
+            {
+              "step": 1,
+              "head": "异核<>2</>-<>2</>",
+              "relation": "通过结构设计形成",
+              "tail": "双原子位点",
+              "claim": "异核结构设计可定向生成特定双原子位点"
+            },
+            {
+              "step": 2,
+              "head": "双原子位点",
+              "relation": "降低中间体转化能垒",
+              "tail": "氧还原反应",
+              "claim": "双原子协同效应优化反应路径"
+            },
+            {
+              "step": 3,
+              "head": "氧还原反应",
+              "relation": "通过电化学测试量化",
+              "tail": "半波电位",
+              "claim": "催化效率提升表现为电位正移"
+            }
+          ],
+          [
+            {
+              "step": 1,
+              "head": "锌空气电池",
+              "relation": "作为载体集成",
+              "tail": "<>2</>-<>2</>",
+              "claim": "电池系统提供催化性能验证平台"
+            },
+            {
+              "step": 2,
+              "head": "<>2</>-<>2</>",
+              "relation": "通过放电过程反映",
+              "tail": "比容量",
+              "claim": "催化活性决定储能能力"
+            },
+            {
+              "step": 3,
+              "head": "比容量",
+              "relation": "联合表征输出性能",
+              "tail": "功率密度",
+              "claim": "实际效能需多指标协同验证"
+            }
+          ]
+        ],
+        "L3": [
+          [
+            {
+              "step": 1,
+              "head": "异核<>2</>-<>2</>",
+              "relation": "通过结构设计形成",
+              "tail": "双原子位点",
+              "claim": "异核<>2</>-<>2</> 通过结构设计形成 双原子位点"
+            },
+            {
+              "step": 2,
+              "head": "双原子位点",
+              "relation": "通过协同吸附降低能垒",
+              "tail": "氧还原反应",
+              "claim": "双原子位点 通过协同吸附降低能垒 氧还原反应"
+            },
+            {
+              "step": 3,
+              "head": "氧还原反应",
+              "relation": "通过电化学测试量化效率",
+              "tail": "半波电位",
+              "claim": "氧还原反应 通过电化学测试量化效率 半波电位"
+            }
+          ],
+          [
+            {
+              "step": 1,
+              "head": "双原子催化剂",
+              "relation": "通过材料集成工艺应用于",
+              "tail": "锌空气电池",
+              "claim": "双原子催化剂 通过材料集成工艺应用于 锌空气电池"
+            },
+            {
+              "step": 2,
+              "head": "锌空气电池",
+              "relation": "通过放电测试测量",
+              "tail": "比容量",
+              "claim": "锌空气电池 通过放电测试测量 比容量"
+            },
+            {
+              "step": 3,
+              "head": "比容量",
+              "relation": "与功率输出共同验证",
+              "tail": "功率密度",
+              "claim": "比容量 与功率输出共同验证 功率密度"
+            }
+          ]
+        ]
+      }
+    },
+    "gt_stats": {
+      "n_terms": 10,
+      "n_grounded": 0,
+      "grounding_rate": 0.0,
+      "n_relations": 4,
+      "n_paths": 0,
+      "n_cross_disciplinary_paths": 0,
+      "n_disciplines": 1,
+      "disciplines": [
+        "化学"
+      ],
+      "avg_path_length": 0.0
+    }
+  }
+]

@@ -2,9 +2,39 @@
 from __future__ import annotations
 
 import re
-
+import logging
+from difflib import SequenceMatcher
 from typing import List, Dict, Any, Optional, Literal, Union
 from pydantic import BaseModel, Field, field_validator, model_validator, ValidationError
+
+logger = logging.getLogger("crossdisc.schemas")
+
+# 链式一致性：语义相似度阈值（0-1）
+# 精确相等直接通过；相似度 >= 阈值时通过并记录警告；低于阈值时报错
+_CHAIN_SIMILARITY_THRESHOLD = 0.75
+
+
+def _semantic_chain_match(a: str, b: str) -> tuple:
+    """
+    判断两个实体标签是否满足链式一致性。
+    返回 (is_match: bool, similarity: float)。
+
+    策略（优先级递减）：
+    1. 精确相等 → True
+    2. 大小写/空格归一化后相等 → True
+    3. SequenceMatcher ratio >= 阈值 → True（附警告，处理别名/近义词）
+    4. 其他 → False
+    """
+    a = (a or "").strip()
+    b = (b or "").strip()
+    if a == b:
+        return True, 1.0
+    a_norm = a.lower().replace(" ", "").replace("_", "")
+    b_norm = b.lower().replace(" ", "").replace("_", "")
+    if a_norm == b_norm:
+        return True, 1.0
+    ratio = SequenceMatcher(None, a_norm, b_norm).ratio()
+    return ratio >= _CHAIN_SIMILARITY_THRESHOLD, ratio
 
 
 # relation_type 的枚举空间（本体标签）
@@ -225,12 +255,17 @@ class Query3Levels(BaseModel):
             raise ValueError("查询.一级 不得为空")
         return v
 
-    @field_validator("二级", "三级")
+    @field_validator("二级", "三级", mode="before")
     @classmethod
-    def _strip_list(cls, v: List[str]) -> List[str]:
+    def _coerce_to_list(cls, v):
+        """兼容模型返回单个字符串而非列表的情况"""
+        if isinstance(v, str):
+            v = [v]
+        if not isinstance(v, list):
+            return []
         out = []
-        for s in v or []:
-            s = (s or "").strip()
+        for s in v:
+            s = (str(s) if s is not None else "").strip()
             if s:
                 out.append(s)
         return out
@@ -305,14 +340,22 @@ class Hypothesis3Levels(BaseModel):
                     f"假设.{level_name}[{pi}] step 必须依次为 [1,2,3]，当前为 {steps}"
                 )
 
-            # 3) 链式一致性：下一步 head == 上一步 tail
+            # 3) 链式一致性：下一步 head 与上一步 tail 语义匹配
+            #    使用 SequenceMatcher，允许近义词/别名（阈值 0.75）
             for j in range(1, 3):
                 prev_tail = (path[j - 1].tail or "").strip()
                 curr_head = (path[j].head or "").strip()
-                if prev_tail != curr_head:
+                match, sim = _semantic_chain_match(prev_tail, curr_head)
+                if not match:
                     raise ValueError(
                         f"假设.{level_name}[{pi}] 链路不一致："
-                        f"step{j} 的 tail='{prev_tail}' 必须等于 step{j+1} 的 head='{curr_head}'"
+                        f"step{j}.tail='{prev_tail}' 与 step{j+1}.head='{curr_head}' "
+                        f"相似度 {sim:.2f} 低于阈值 {_CHAIN_SIMILARITY_THRESHOLD}"
+                    )
+                if sim < 1.0:
+                    logger.warning(
+                        "假设.%s[%d] step%d tail≈step%d head（相似度%.2f）：'%s'≈'%s'",
+                        level_name, pi, j, j + 1, sim, prev_tail, curr_head
                     )
 
             # 4) 最后一步 claim 必须非空（用于总结）
@@ -351,6 +394,41 @@ class GraphMetrics(BaseModel):
     path_consistency: float = 0.0
     coverage: float = 0.0
     bridging_score: float = 0.0
+
+    # ── Enhanced metrics (v2) ─────────────────────────────────────
+    # Rao-Stirling diversity index (Stirling 2007)
+    rao_stirling_diversity: float = 0.0
+    # Embedding-based bridging distance
+    embedding_bridging: float = 0.0
+    # Relation-aware path consistency F1
+    consistency_precision: float = 0.0
+    consistency_recall: float = 0.0
+    consistency_f1: float = 0.0
+    # Information-theoretic novelty
+    info_novelty: float = 0.0
+    # Reasoning chain coherence
+    chain_coherence: float = 0.0
+    # Atypical combination index (Uzzi et al. 2013)
+    atypical_combination: float = 0.0
+    # KG topology
+    kg_density: float = 0.0
+    kg_inverse_modularity: float = 0.0
+    kg_largest_cc_ratio: float = 0.0
+    kg_avg_betweenness: float = 0.0
+    kg_clustering_coefficient: float = 0.0
+
+    # ── Evidence-grounded GT metrics (v3) ─────────────────────────
+    # Concept coverage: how many GT terms appear in generated paths
+    concept_recall: float = 0.0
+    concept_precision: float = 0.0
+    concept_f1: float = 0.0
+    # Relation precision: generated relations supported by GT evidence
+    relation_precision: float = 0.0
+    relation_type_accuracy: float = 0.0
+    evidence_coverage: float = 0.0
+    # Path semantic alignment: soft similarity to best GT path
+    path_alignment_best: float = 0.0
+    path_alignment_mean: float = 0.0
 
 
 class ConceptNode(BaseModel):

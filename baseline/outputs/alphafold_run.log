@@ -1,0 +1,280 @@
+nohup: ignoring input
+  Running IdeaBench... done (6.6s)
+  Running VanillaLLM... done (13.0s)
+  Running AI-Scientist... done (22.9s)
+  Running SciMON... done (19.3s)
+  Running MOOSE-Chem... done (25.1s)
+  Running SciAgents... done (50.7s)
+  Running CrossDisc (full pipeline)...Supplementary concept extraction failed: 'str' object has no attribute 'get'
+Taxonomy file not found: /ssd/wangyuyang/git/benchmark/crossdisc_extractor/data/msc_converted.json
+ done (102.8s)
+
+==============================================================================================
+  同一篇论文 → 7 种方法生成的假设内容对比
+==============================================================================================
+
+  论文标题: Accurate structure prediction of biomolecular interactions with AlphaFold 3
+  主学科:   Computational Biology
+  摘要:
+    The introduction of AlphaFold 2 has spurred a revolution in modelling the structure of
+    proteins and their interactions, enabling a huge range of applications in protein
+    modelling and design. Here we describe our AlphaFold 3 model with a substantially
+    updated diffusion-based architecture that is capable of predicting the joint structure
+    of complexes including proteins, nucleic acids, small molecules, ions and modified
+    residues. The new AlphaFold model demonstrates substantially improved accuracy over many
+    previous specialized tools: far greater accuracy for protein-ligand interactions
+    compared with state-of-the-art docking tools, much higher accuracy for protein-nucleic
+    acid interactions compared with nucleic-acid-specific predictors and substantially
+    higher antibody-antigen prediction accuracy compared with AlphaFold-Multimer v.2.3.
+    Together, these results show that high-accuracy modelling across biomolecular space is
+    possible within a single unified deep-learning framework. AlphaFold 3 has a
+    substantially updated architecture that is capable of predicting the joint structure of
+    complexes including proteins, nucleic acids, small molecules, ions and modified residues
+    with greatly improved accuracy over many previous specialized tools.
+
+──────────────────────────────────────────────────────────────────────────────────────────────
+
+  ┌─ IdeaBench  (IdeaBench, 2024)
+  │  给定 background abstract，以 biomedical researcher 身份生成自由文本假设段落
+  │  耗时: 6.6s
+  │
+  │  **Hypothesis:** *The unified deep-learning framework of AlphaFold 3 can be leveraged to predict the structural mechanisms of allosteric regulation in multi-component biomolecular complexes (e.g., protein-small molecule-RNA interactions), revealing previously unknown binding pockets or conformational switches that could be targeted for drug discovery or synthetic biology applications. Unlike traditional methods that study allostery in isolated proteins, this approach would uncover how small molecules or nucleic acids dynamically modulate protein function in the context of larger, biologically relevant assemblies.*
+  │  **Rationale:** AlphaFold 3's ability to model diverse biomolecules (proteins, nucleic acids, ligands) in a single complex with high accuracy suggests it could capture subtle, cooperative structural changes—such as allostery—that arise from interactions between different molecular components. This could open new avenues for designing multi-target therapeutics or engineering synthetic regulatory circuits.
+  └──────────────────────────────────────────────────────────────────────────────────────────
+
+  ┌─ VanillaLLM  (Si et al. (Stanford), 2024)
+  │  Zero-shot 直接生成假设列表，要求 specific + testable
+  │  耗时: 13.0s
+  │
+  │  Here are three novel, specific, and testable research hypotheses that extend the work described in the paper:
+  │  ### **Hypothesis 1: AlphaFold 3’s diffusion-based architecture improves conformational sampling of disordered protein regions compared to previous versions.**
+  │  **Rationale:** While AlphaFold 3 excels at predicting structured biomolecular complexes, intrinsically disordered regions (IDRs) remain challenging. The diffusion-based architecture may better capture the dynamic nature of IDRs by modeling probabilistic conformational ensembles.
+  │  **Test:** Compare the predicted conformational diversity of IDRs in AlphaFold 3 versus AlphaFold 2 using molecular dynamics simulations and experimental NMR data.
+  │  ### **Hypothesis 2: AlphaFold 3’s unified framework enables discovery of novel protein-small molecule interactions beyond known binding sites.**
+  │  **Rationale:** Since AlphaFold 3 integrates small-molecule prediction, it may identify cryptic binding pockets or allosteric sites that traditional docking methods miss due to reliance on rigid receptor structures.
+  │  **Test:** Use AlphaFold 3 to screen a diverse small-molecule library against proteins with no known ligands and validate top predictions via biochemical assays and X-ray crystallography.
+  │  ### **Hypothesis 3: AlphaFold 3’s multi-component predictions improve the design of synthetic ribonucleoprotein complexes (RNPs) for gene editing applications.**
+  │  **Rationale:** The model’s ability to jointly predict protein-nucleic acid interactions could enhance the engineering of CRISPR-Cas systems or artificial RNPs by optimizing binding geometry and stability.
+  │  **Test:** Generate AlphaFold 3-predicted RNP designs, synthesize them, and compare editing efficiency and off-target effects to empirically optimized variants.
+  │  These hypotheses explore new applications in disordered proteins, drug discovery, and synthetic biology while remaining falsifiable through experimental or computational validation.
+  └──────────────────────────────────────────────────────────────────────────────────────────
+
+  ┌─ AI-Scientist  (Sakana AI, 2024 (arXiv: 2408.06292))
+  │  以 AI 研究员身份生成结构化 idea，含 hypothesis + experiment + 自评分
+  │  耗时: 22.9s
+  │
+  │  Here are three novel research ideas building upon AlphaFold 3:
+  │  ---
+  │  ### **Idea 1: "Dynamics-AF3"**
+  │  **Title:** *"Predicting Conformational Ensembles of Biomolecular Complexes Using AlphaFold 3 with Adaptive Diffusion Sampling"*
+  │  **Hypothesis:** AlphaFold 3's diffusion-based architecture can be extended to predict not just a single structure but an ensemble of biologically relevant conformations by modulating the diffusion noise schedule.
+  │  **Experiment Design:**
+  │  1. Modify AlphaFold 3’s diffusion process to generate multiple plausible conformations by varying noise levels.
+  │  2. Benchmark against MD simulations and cryo-EM data for protein-ligand complexes with known flexibility (e.g., GPCRs).
+  │  3. Evaluate whether predicted ensembles better match experimental B-factors and conformational diversity.
+  │  **Scores:**
+  │  - Interestingness: 9 (Dynamic structural prediction is crucial for drug discovery)
+  │  - Feasibility: 7 (Requires modifying AF3’s sampling but leverages existing architecture)
+  │  - Novelty: 8 (No prior work applies diffusion models for ensembles in this context)
+  │  ---
+  │  ### **Idea 2: "DrugOpt-AF3"**
+  │  **Title:** *"De Novo Small-Molecule Drug Design Guided by AlphaFold 3’s Binding Site Prediction"*
+  │  **Hypothesis:** AlphaFold 3’s high-accuracy protein-ligand predictions can be inverted to generate novel small-molecule binders by gradient-based optimization in latent chemical space.
+  │  **Experiment Design:**
+  │  1. Train a generative model (e.g., diffusion-based) on small molecules, conditioned on AF3-predicted binding sites.
+  │  2. Use AF3’s energy landscape (via predicted confidence scores) to guide molecule generation toward high-affinity designs.
+  │  3. Validate top candidates with docking (as a proxy) and wet-lab binding assays for known targets (e.g., kinase inhibitors).
+  │  **Scores:**
+  │  - Interestingness: 10 (Direct bridge between structure prediction and drug design)
+  │  - Feasibility: 6 (Requires integration with generative chemistry tools)
+  │  - Novelty: 9 (Inverting AF3 for design is unexplored)
+  │  ---
+  │  ### **Idea 3: "AF3-MultiScale"**
+  │  **Title:** *"Integrating AlphaFold 3 with Coarse-Grained Simulations for Multi-Scale Modeling of Large Biomolecular Assemblies"*
+  │  **Hypothesis:** Combining AlphaFold 3’s atomic accuracy with coarse-grained force fields will enable accurate modeling of large complexes (e.g., ribosomes, viral capsids) beyond current size limits.
+  │  **Experiment Design:**
+  │  1. Use AF3 to predict local structures (e.g., individual ribosomal proteins), then stitch them into a CG representation (MARTINI or AWSEM).
+  │  2. Refine global assembly via CG MD, using AF3’s interface predictions as restraints.
+  │  3. Benchmark against cryo-EM maps of megadalton complexes.
+  │  **Scores:**
+  │  - Interestingness: 8 (Critical for studying supramolecular biology)
+  │  - Feasibility: 8 (Leverages existing CG tools and AF3’s outputs)
+  │  - Novelty: 7 (Multi-scale integration is emerging but underexplored with AF3)
+  │  ---
+  │  **Best Balance of Scores:** *DrugOpt-AF3* (10/6/9) has the highest potential impact by bridging structure prediction and generative chemistry, though it requires careful integration. *Dynamics-AF3* is the most feasible with high novelty.
+  └──────────────────────────────────────────────────────────────────────────────────────────
+
+  ┌─ SciMON  (AI2 / Northwestern, 2024 (arXiv: 2305.14259))
+  │  Novelty-optimized 假设生成，显式要求与已有工作不同
+  │  耗时: 19.3s
+  │
+  │  Here are three novel scientific hypotheses inspired by, but distinct from, the AlphaFold 3 paper:
+  │  ---
+  │  ### **Hypothesis 1: Protein-Ligand Interaction Landscapes Can Predict Drug Side Effects via Off-Target Binding**
+  │  **Concept:** While AlphaFold 3 improves protein-ligand binding predictions, we hypothesize that the structural landscape of *weak, transient interactions* between drugs and off-target proteins (beyond their primary targets) can predict adverse drug reactions (ADRs).
+  │  **Novelty:** Unlike AlphaFold’s focus on high-affinity binding, this shifts to *low-affinity but biologically relevant* interactions, bridging computational biology and pharmacology.
+  │  **Testable Prediction:**
+  │  - Train a modified AlphaFold 3 to predict weak binding (KD > 10 μM) between FDA-approved drugs and human proteome off-targets.
+  │  - Show that predicted off-targets correlate with known ADRs (e.g., QT prolongation from hERG channel binding).
+  │  ---
+  │  ### **Hypothesis 2: RNA-Protein Co-Evolution Drives Phase Separation Boundaries in Biomolecular Condensates**
+  │  **Concept:** AlphaFold 3 predicts RNA-protein complexes, but we hypothesize that *evolutionary conservation of binding motifs* between RNA and disordered protein regions determines the material properties (e.g., viscosity, solubility) of biomolecular condensates (like stress granules).
+  │  **Novelty:** Links structural prediction (AlphaFold’s domain) with biophysics (phase separation) and evolutionary biology.
+  │  **Testable Prediction:**
+  │  - Use AlphaFold 3 to predict RNA-binding regions in intrinsically disordered proteins (IDPs) across species.
+  │  - Show that species with conserved RNA-IDP interactions form condensates with distinct phase boundaries in vitro.
+  │  ---
+  │  ### **Hypothesis 3: Cross-Kingdom Structural Mimicry in Host-Pathogen Interactions Can Be Predicted via Multi-Domain Folding**
+  │  **Concept:** AlphaFold 3 excels at multi-molecule complexes, but we hypothesize that *pathogens (e.g., viruses, bacteria) exploit structural mimicry not just of single proteins, but of entire host protein-nucleic acid interaction networks* to evade immunity.
+  │  **Novelty:** Extends structural prediction to *network-level mimicry* and immune evasion, integrating virology and immunology.
+  │  **Testable Prediction:**
+  │  - Use AlphaFold 3 to predict pathogen-derived complexes (e.g., viral RNA + host proteins) and compare them to endogenous host complexes.
+  │  - Validate that mimicked structures (e.g., ribonucleoprotein pseudo-spliceosomes) reduce immune detection in cell assays.
+  │  ---
+  │  Each hypothesis takes AlphaFold 3’s core advance (multi-molecule structure prediction) but redirects it toward a *fundamentally different question*—ADR prediction, phase separation physics, or immune evasion—while remaining testable and interdisciplinary. Would you like refinements or additional hypotheses in a specific direction?
+  └──────────────────────────────────────────────────────────────────────────────────────────
+
+  ┌─ MOOSE-Chem  (UIUC, 2024)
+  │  两阶段：先提取灵感片段(inspiration)，再组合生成假设
+  │  耗时: 25.1s
+  │
+  │  Here are three novel, testable hypotheses generated by combining the inspiration fragments in unexpected ways:
+  │  ---
+  │  ### **Hypothesis 1: A Diffusion-Based Deep Learning Framework Can Predict Epigenetic Modifications by Modeling Protein-DNA-Ion Ternary Complexes**
+  │  **Combined Inspirations:**
+  │  - *1 (AlphaFold 3’s diffusion architecture for multi-component complexes)*
+  │  - *3 (Protein-nucleic acid interaction modeling for gene regulation)*
+  │  - *5 (Unified deep learning for diverse biomolecular interactions)*
+  │  **Why Non-Obvious?**
+  │  Epigenetic modifications (e.g., DNA methylation) are typically studied via biochemical assays or sequence-based ML models, not structural prediction. By treating ions (e.g., Mg²⁺ in methyltransferases) as explicit components in a protein-DNA-ion ternary complex, we could predict how ion coordination influences epigenetic marks—a structural angle rarely explored in epigenomics.
+  │  **Testable Prediction:**
+  │  Train AlphaFold 3 on crystallized protein-DNA-ion complexes (e.g., DNA methyltransferases) and assess whether it predicts methylation sites better than sequence-only models.
+  │  ---
+  │  ### **Hypothesis 2: Joint Prediction of Protein-Ligand-Nucleic Acid Structures Reveals Hidden Allosteric Inhibitors of Riboswitches**
+  │  **Combined Inspirations:**
+  │  - *2 (Protein-ligand predictions surpassing docking tools)*
+  │  - *3 (Protein-nucleic acid accuracy for gene regulation)*
+  │  - *4 (Antibody-antigen improvements for therapeutics)*
+  │  **Why Non-Obvious?**
+  │  Riboswitches are RNA structures regulated by small molecules, but their allosteric coupling to proteins is poorly understood. Combining protein-ligand and protein-RNA predictions could uncover *dual-binding* inhibitors that simultaneously target a riboswitch and its interacting protein (e.g., a transcription factor), a strategy ignored by traditional drug discovery.
+  │  **Testable Prediction:**
+  │  Use AlphaFold 3 to model riboswitch-protein-ligand tri-complexes and screen for ligands that stabilize conformations disrupting riboswitch activity.
+  │  ---
+  │  ### **Hypothesis 3: Diffusion-Based Antibody Design Mimics Viral Capsid Assembly for Multi-Epitope Vaccines**
+  │  **Combined Inspirations:**
+  │  - *1 (Diffusion for multi-component complexes)*
+  │  - *4 (Antibody-antigen accuracy for therapeutics)*
+  │  - *5 (Unified framework for diverse interactions)*
+  │  **Why Non-Obvious?**
+  │  Vaccine design typically focuses on single epitopes, but viruses assemble via multi-protein interactions (e.g., capsid symmetry). By treating antibodies as "components" in a diffusion process, we could generate *synthetic antibody polyhedra* that mimic viral quaternary structure, enabling multi-epitope targeting—inspired more by virology than immunology.
+  │  **Testable Prediction:**
+  │  Design antibody complexes with icosahedral symmetry (like viruses) and test if they elicit broader immune responses than monoclonal antibodies in vivo.
+  │  ---
+  │  **Key Themes:**
+  │  - Leveraging *multi-component* predictions for systems beyond the original scope (epigenetics, allostery, virology).
+  │  - Using *unified frameworks* to replace not just specialized tools, but entire experimental paradigms (e.g., replacing methylation assays with structural predictions).
+  │  - Cross-pollinating concepts from *drug discovery, gene regulation, and vaccine design* via structural deep learning.
+  │  Each hypothesis takes a technical advance (e.g., diffusion models) and applies it to a fundamentally different problem space.
+  └──────────────────────────────────────────────────────────────────────────────────────────
+
+  ┌─ SciAgents  (MIT, 2024 (arXiv: 2409.05556))
+  │  Multi-agent: Ontologist(概念)→Scientist(假设)→Critic(评审精炼)
+  │  耗时: 50.7s
+  │
+  │  Here are refined versions of each hypothesis, improved for scientific rigor, specificity, and testability:
+  │  ---
+  │  ### **Refined Hypothesis 1: AlphaFold 3’s predicted protein-ligand structures, when combined with Markov state model (MSM)-enhanced molecular dynamics simulations, can estimate binding kinetics (kon/koff) within 2-fold of experimental values for small-molecule drug targets.**
+  │  **Connection:** *Structural Biology (static predictions) + Biophysics (dynamic properties) + Machine Learning (diffusion model outputs)*
+  │  **Testability:**
+  │  - Use AlphaFold 3 to predict 50 high-confidence protein-ligand complexes (pLDDT > 80) from the PDBbind benchmark set.
+  │  - Perform adaptive sampling MD simulations (≥10 μs aggregate per system) to construct MSMs for kinetic rate estimation.
+  │  - Validate against SPR/stopped-flow data for the same complexes, using Pearson correlation and fold-error metrics.
+  │  **Implications:** Successful validation would enable structure-based kinetic profiling without experimental structures, accelerating lead optimization in drug discovery.
+  │  ---
+  │  ### **Refined Hypothesis 2: AlphaFold 3’s interface RMSD for nucleic acid-protein complexes increases linearly with complex size beyond 200 kDa due to attention layer limitations in modeling long-range interactions.**
+  │  **Connection:** *Computational Limits (model architecture) + Molecular Biology (large complexes) + Biophysics (size-dependent errors)*
+  │  **Testability:**
+  │  - Curate a size-stratified test set (50–500 kDa) of cryo-EM resolved complexes (e.g., from EMDB).
+  │  - Quantify interface RMSD and per-residue pLDDT versus size/number of chains.
+  │  - Compare attention map patterns between small (<100 kDa) and large (>300 kDa) complexes.
+  │  **Implications:** A confirmed linear scaling relationship would inform the use of domain decomposition strategies for megadalton-scale complexes like nuclear pore assemblies.
+  │  ---
+  │  ### **Refined Hypothesis 3: AlphaFold 3’s local confidence (pLDDT) at rare PTM sites (prevalence <1% in training data) shows false negatives (low confidence despite accurate backbone geometry), with error rates scaling inversely with PTM frequency in training.**
+  │  **Connection:** *Machine Learning (data bias) + Biochemistry (PTM diversity) + Structural Biology (local vs. global accuracy)*
+  │  **Testability:**
+  │  - Construct a benchmark of 30 PTM-containing structures, stratified by training data frequency (common phosphorylations vs. rare sulfations/citrullinations).
+  │  - Calculate ΔpLDDT (PTM site vs. flanking residues) and compare to experimental B-factors.
+  │  - Fit a logistic regression between PTM frequency in training and false-negative confidence rates.
+  │  **Implications:** Quantifying this bias would enable data augmentation strategies prioritizing underrepresented PTMs, improving models for signaling and epigenetic applications.
+  │  ---
+  │  ### Key Improvements:
+  │  1. **Quantification:** Added specific metrics (2-fold error, linear scaling, ΔpLDDT) and thresholds (pLDDT > 80, 200 kDa threshold).
+  │  2. **Methodological Precision:** Specified advanced techniques (MSM-enhanced MD, attention map analysis, logistic regression).
+  │  3. **Stratification:** Explicitly defined test sets (PDBbind, size-stratified EMDB entries, PTM frequency bins).
+  │  4. **Mechanistic Insight:** Linked observations to underlying causes (attention layer limits, training data frequency).
+  │  Each refinement maintains cross-domain novelty while enabling more definitive experimental validation.
+  └──────────────────────────────────────────────────────────────────────────────────────────
+
+  ┌─ CrossDisc  (Our method (multi-stage structured pipeline))
+  │  概念抽取→关系抽取→查询生成→L1/L2/L3 结构化假设路径
+  │  耗时: 102.8s
+  │
+  │  ── L1 假设路径 1 ──
+  │  3 --[基于]--> 深度学习框架
+  │  claim: 3 依赖于深度学习框架进行生物分子相互作用预测
+  │  深度学习框架 --[需要整合]--> 蛋白质-配体相互作用
+  │  claim: 深度学习框架需要整合蛋白质-配体相互作用数据以提高预测精度
+  │  蛋白质-配体相互作用 --[需生物化学补位]--> 小分子
+  │  claim: 生物化学领域的小分子数据可以补位深度学习框架，提升蛋白质-配体相互作用的预测精度与泛化能力
+  │  Summary: 计算生物学依赖深度学习框架预测蛋白质-配体相互作用，但需要生物化学的小分子数据补位以提升精度与泛化能力
+  │  ── L1 假设路径 2 ──
+  │  3 --[采用]--> 基于扩散的架构
+  │  claim: 3 采用基于扩散的架构进行生物分子结构预测
+  │  基于扩散的架构 --[需要优化]--> 蛋白质-核酸相互作用
+  │  claim: 基于扩散的架构需要优化蛋白质-核酸相互作用的建模过程
+  │  蛋白质-核酸相互作用 --[需结构生物学补位]--> 复合物的联合结构
+  │  claim: 结构生物学领域的复合物联合结构数据可以补位扩散架构，提升蛋白质-核酸相互作用的预测精度与泛化能力
+  │  Summary: 计算生物学采用基于扩散的架构预测蛋白质-核酸相互作用，但需要结构生物学的复合物联合结构数据补位以提升精度与泛化能力
+  │  ── L1 假设路径 3 ──
+  │  3 --[提升]--> 抗体-抗原预测
+  │  claim: 3 提升了抗体-抗原预测的准确性
+  │  抗体-抗原预测 --[需要验证]--> 修饰残基
+  │  claim: 抗体-抗原预测需要验证修饰残基的影响
+  │  修饰残基 --[需机器学习补位]--> 准确性
+  │  claim: 机器学习领域的准确性评估可以补位修饰残基的验证过程，提升抗体-抗原预测的精度与泛化能力
+  │  Summary: 计算生物学提升了抗体-抗原预测的准确性，但需要机器学习的准确性评估补位修饰残基验证以提升精度与泛化能力
+  │  ── L2 假设路径 1 ──
+  │  深度学习框架 --[通过]--> 建模
+  │  claim: 深度学习框架通过建模生物化学数据
+  │  建模 --[提升]--> 准确性
+  │  claim: 建模生物化学数据提升预测准确性
+  │  准确性 --[优化]--> 蛋白质-配体相互作用
+  │  claim: 预测准确性优化蛋白质-配体相互作用
+  │  Summary: 深度学习框架通过建模生物化学数据提升预测准确性，进而优化蛋白质-配体相互作用的精度
+  │  ── L2 假设路径 2 ──
+  │  复合物的联合结构 --[通过]--> 结构预测
+  │  claim: 复合物的联合结构通过结构预测
+  │  结构预测 --[评估]--> 生物分子相互作用
+  │  claim: 结构预测评估生物分子相互作用
+  │  生物分子相互作用 --[改进]--> 抗体-抗原预测
+  │  claim: 生物分子相互作用改进抗体-抗原预测
+  │  Summary: 复合物的联合结构通过结构预测评估生物分子相互作用，从而改进抗体-抗原预测的建模效果
+  │  ── L3 假设路径 1 ──
+  │  蛋白质-核酸相互作用 --[通过预测]--> 复合物的联合结构
+  │  claim: 蛋白质-核酸相互作用 通过预测 复合物的联合结构
+  │  复合物的联合结构 --[基于]--> 深度学习框架
+  │  claim: 复合物的联合结构 基于 深度学习框架
+  │  深度学习框架 --[整合]--> 基于扩散的架构
+  │  claim: 深度学习框架 整合 基于扩散的架构
+  │  Summary: 通过蛋白质-核酸相互作用预测复合物结构，并基于深度学习框架整合扩散架构，实现跨分子类型的统一预测
+  │  ── L3 假设路径 2 ──
+  │  蛋白质-配体相互作用 --[通过验证]--> 结构预测
+  │  claim: 蛋白质-配体相互作用 通过验证 结构预测
+  │  结构预测 --[基于]--> 生物分子相互作用
+  │  claim: 结构预测 基于 生物分子相互作用
+  │  生物分子相互作用 --[联合评估]--> 修饰残基
+  │  claim: 生物分子相互作用 联合评估 修饰残基
+  │  Summary: 通过蛋白质-配体相互作用验证结构预测，并基于生物分子相互作用联合评估修饰残基，构建端到端的验证方案
+  └──────────────────────────────────────────────────────────────────────────────────────────
+
+  结果已保存到 baseline/outputs/alphafold_hypotheses.json

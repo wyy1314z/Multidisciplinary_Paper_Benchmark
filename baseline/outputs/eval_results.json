@@ -1,0 +1,1292 @@
+{
+  "per_paper": [
+    {
+      "tag": "paper_1[0]",
+      "paper": {
+        "title": "Resolving multi-image spatial lipidomic responses to inhaled toxicants by machine learning",
+        "primary_discipline": "生物学"
+      },
+      "evaluations": [
+        {
+          "method": "IdeaBench",
+          "elapsed": 5.4,
+          "hypothesis_length": 885,
+          "error": false,
+          "rouge": {
+            "rouge1": 0.3498,
+            "rouge2": 0.1073,
+            "rougeL": 0.1901
+          },
+          "llm_judge": {
+            "novelty": 8.0,
+            "specificity": 7.0,
+            "feasibility": 6.0,
+            "relevance": 9.0,
+            "cross_disciplinary": 7.0
+          }
+        },
+        {
+          "method": "VanillaLLM",
+          "elapsed": 10.9,
+          "hypothesis_length": 1762,
+          "error": false,
+          "rouge": {
+            "rouge1": 0.3526,
+            "rouge2": 0.0635,
+            "rougeL": 0.1368
+          },
+          "llm_judge": {
+            "novelty": 9.0,
+            "specificity": 8.0,
+            "feasibility": 7.0,
+            "relevance": 10.0,
+            "cross_disciplinary": 6.0
+          }
+        },
+        {
+          "method": "AI-Scientist",
+          "elapsed": 28.3,
+          "hypothesis_length": 3801,
+          "error": false,
+          "rouge": {
+            "rouge1": 0.3002,
+            "rouge2": 0.0571,
+            "rougeL": 0.1169
+          },
+          "llm_judge": {}
+        },
+        {
+          "method": "SciMON",
+          "elapsed": 17.3,
+          "hypothesis_length": 2332,
+          "error": false,
+          "rouge": {
+            "rouge1": 0.2326,
+            "rouge2": 0.028,
+            "rougeL": 0.1023
+          },
+          "llm_judge": {
+            "novelty": 0.0,
+            "specificity": 0.0,
+            "feasibility": 0.0,
+            "relevance": 0.0,
+            "cross_disciplinary": 0.0
+          }
+        },
+        {
+          "method": "MOOSE-Chem",
+          "elapsed": 31.2,
+          "hypothesis_length": 3207,
+          "error": false,
+          "rouge": {
+            "rouge1": 0.2934,
+            "rouge2": 0.0539,
+            "rougeL": 0.1216
+          },
+          "llm_judge": {}
+        },
+        {
+          "method": "SciAgents",
+          "elapsed": 76.0,
+          "hypothesis_length": 4183,
+          "error": false,
+          "rouge": {
+            "rouge1": 0.1853,
+            "rouge2": 0.0206,
+            "rougeL": 0.0941
+          },
+          "llm_judge": {
+            "novelty": 9.0,
+            "specificity": 10.0,
+            "feasibility": 8.0,
+            "relevance": 10.0,
+            "cross_disciplinary": 9.0
+          }
+        },
+        {
+          "method": "P1",
+          "elapsed": 10.1,
+          "hypothesis_length": 399,
+          "error": false,
+          "rouge": {
+            "rouge1": 0.0,
+            "rouge2": 0.0,
+            "rougeL": 0.0
+          },
+          "llm_judge": {
+            "novelty": 9.0,
+            "specificity": 8.0,
+            "feasibility": 7.0,
+            "relevance": 9.0,
+            "cross_disciplinary": 6.0
+          }
+        },
+        {
+          "method": "P2",
+          "elapsed": 13.3,
+          "hypothesis_length": 1951,
+          "error": false,
+          "rouge": {
+            "rouge1": 0.3333,
+            "rouge2": 0.1047,
+            "rougeL": 0.1979
+          },
+          "llm_judge": {
+            "novelty": 9.0,
+            "specificity": 8.0,
+            "feasibility": 7.0,
+            "relevance": 10.0,
+            "cross_disciplinary": 8.0
+          }
+        },
+        {
+          "method": "P3",
+          "elapsed": 9.7,
+          "hypothesis_length": 1718,
+          "error": false,
+          "rouge": {
+            "rouge1": 0.4012,
+            "rouge2": 0.1404,
+            "rougeL": 0.1977
+          },
+          "llm_judge": {}
+        },
+        {
+          "method": "P4",
+          "elapsed": 21.7,
+          "hypothesis_length": 3745,
+          "error": false,
+          "rouge": {
+            "rouge1": 0.2337,
+            "rouge2": 0.0517,
+            "rougeL": 0.1134
+          },
+          "llm_judge": {}
+        },
+        {
+          "method": "P5",
+          "elapsed": 97.1,
+          "hypothesis_length": 1588,
+          "error": false,
+          "rouge": {
+            "rouge1": 0.0,
+            "rouge2": 0.0,
+            "rougeL": 0.0
+          },
+          "llm_judge": {},
+          "structural": {
+            "has_L1": 1.0,
+            "has_L2": 1.0,
+            "has_L3": 1.0,
+            "level_coverage": 1.0,
+            "total_paths": 6.0,
+            "avg_path_length": 3.0,
+            "chain_coherence": 1.0,
+            "relation_diversity": 2.8333,
+            "entity_grounding_rate": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "tag": "paper_1[3]",
+      "paper": {
+        "title": "A physics-informed Airy beam learning framework for blockage avoidance in sub-terahertz wireless networks",
+        "primary_discipline": "物理学"
+      },
+      "evaluations": [
+        {
+          "method": "IdeaBench",
+          "elapsed": 8.7,
+          "hypothesis_length": 1046,
+          "error": false,
+          "rouge": {
+            "rouge1": 0.3245,
+            "rouge2": 0.06,
+            "rougeL": 0.1391
+          },
+          "llm_judge": {
+            "novelty": 8.0,
+            "specificity": 7.0,
+            "feasibility": 6.0,
+            "relevance": 9.0,
+            "cross_disciplinary": 8.0
+          }
+        },
+        {
+          "method": "VanillaLLM",
+          "elapsed": 13.5,
+          "hypothesis_length": 1857,
+          "error": false,
+          "rouge": {
+            "rouge1": 0.3772,
+            "rouge2": 0.0898,
+            "rougeL": 0.1588
+          },
+          "llm_judge": {}
+        },
+        {
+          "method": "AI-Scientist",
+          "elapsed": 25.3,
+          "hypothesis_length": 3299,
+          "error": false,
+          "rouge": {
+            "rouge1": 0.2516,
+            "rouge2": 0.0656,
+            "rougeL": 0.1111
+          },
+          "llm_judge": {}
+        },
+        {
+          "method": "SciMON",
+          "elapsed": 20.3,
+          "hypothesis_length": 2815,
+          "error": false,
+          "rouge": {
+            "rouge1": 0.2602,
+            "rouge2": 0.0429,
+            "rougeL": 0.1087
+          },
+          "llm_judge": {}
+        },
+        {
+          "method": "MOOSE-Chem",
+          "elapsed": 23.6,
+          "hypothesis_length": 3069,
+          "error": false,
+          "rouge": {
+            "rouge1": 0.2509,
+            "rouge2": 0.0584,
+            "rougeL": 0.1236
+          },
+          "llm_judge": {}
+        },
+        {
+          "method": "SciAgents",
+          "elapsed": 66.4,
+          "hypothesis_length": 3847,
+          "error": false,
+          "rouge": {
+            "rouge1": 0.1933,
+            "rouge2": 0.0585,
+            "rougeL": 0.1043
+          },
+          "llm_judge": {
+            "novelty": 8.0,
+            "specificity": 9.0,
+            "feasibility": 7.0,
+            "relevance": 10.0,
+            "cross_disciplinary": 8.0
+          }
+        },
+        {
+          "method": "P1",
+          "elapsed": 8.5,
+          "hypothesis_length": 1306,
+          "error": false,
+          "rouge": {
+            "rouge1": 0.2515,
+            "rouge2": 0.012,
+            "rougeL": 0.1198
+          },
+          "llm_judge": {
+            "novelty": 8.0,
+            "specificity": 9.0,
+            "feasibility": 7.0,
+            "relevance": 9.0,
+            "cross_disciplinary": 8.0
+          }
+        },
+        {
+          "method": "P2",
+          "elapsed": 7.9,
+          "hypothesis_length": 1218,
+          "error": false,
+          "rouge": {
+            "rouge1": 0.4765,
+            "rouge2": 0.164,
+            "rougeL": 0.2006
+          },
+          "llm_judge": {}
+        },
+        {
+          "method": "P3",
+          "elapsed": 10.2,
+          "hypothesis_length": 1775,
+          "error": false,
+          "rouge": {
+            "rouge1": 0.4394,
+            "rouge2": 0.1878,
+            "rougeL": 0.1919
+          },
+          "llm_judge": {
+            "novelty": 9.0,
+            "specificity": 8.0,
+            "feasibility": 7.0,
+            "relevance": 10.0,
+            "cross_disciplinary": 9.0
+          }
+        },
+        {
+          "method": "P4",
+          "elapsed": 25.8,
+          "hypothesis_length": 3410,
+          "error": false,
+          "rouge": {
+            "rouge1": 0.3011,
+            "rouge2": 0.0791,
+            "rougeL": 0.1326
+          },
+          "llm_judge": {}
+        },
+        {
+          "method": "P5",
+          "elapsed": 111.9,
+          "hypothesis_length": 1620,
+          "error": false,
+          "rouge": {
+            "rouge1": 0.0,
+            "rouge2": 0.0,
+            "rougeL": 0.0
+          },
+          "llm_judge": {
+            "novelty": 7.0,
+            "specificity": 8.0,
+            "feasibility": 7.0,
+            "relevance": 9.0,
+            "cross_disciplinary": 8.0
+          },
+          "structural": {
+            "has_L1": 1.0,
+            "has_L2": 1.0,
+            "has_L3": 1.0,
+            "level_coverage": 1.0,
+            "total_paths": 6.0,
+            "avg_path_length": 3.0,
+            "chain_coherence": 1.0,
+            "relation_diversity": 3.0,
+            "entity_grounding_rate": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "tag": "paper_1[9]",
+      "paper": {
+        "title": "Covariant spatio-temporal receptive fields for spiking neural networks",
+        "primary_discipline": "计算机科学技术"
+      },
+      "evaluations": [
+        {
+          "method": "IdeaBench",
+          "elapsed": 8.6,
+          "hypothesis_length": 1099,
+          "error": false,
+          "rouge": {
+            "rouge1": 0.4045,
+            "rouge2": 0.1017,
+            "rougeL": 0.1629
+          },
+          "llm_judge": {
+            "novelty": 8.0,
+            "specificity": 7.0,
+            "feasibility": 6.0,
+            "relevance": 9.0,
+            "cross_disciplinary": 8.0
+          }
+        },
+        {
+          "method": "VanillaLLM",
+          "elapsed": 15.6,
+          "hypothesis_length": 2078,
+          "error": false,
+          "rouge": {
+            "rouge1": 0.3546,
+            "rouge2": 0.087,
+            "rougeL": 0.1485
+          },
+          "llm_judge": {}
+        },
+        {
+          "method": "AI-Scientist",
+          "elapsed": 28.6,
+          "hypothesis_length": 4096,
+          "error": false,
+          "rouge": {
+            "rouge1": 0.2949,
+            "rouge2": 0.0726,
+            "rougeL": 0.1153
+          },
+          "llm_judge": {
+            "novelty": 8.0,
+            "specificity": 9.0,
+            "feasibility": 7.0,
+            "relevance": 10.0,
+            "cross_disciplinary": 8.0
+          }
+        },
+        {
+          "method": "SciMON",
+          "elapsed": 24.7,
+          "hypothesis_length": 3538,
+          "error": false,
+          "rouge": {
+            "rouge1": 0.3658,
+            "rouge2": 0.0962,
+            "rougeL": 0.1409
+          },
+          "llm_judge": {
+            "novelty": 0.0,
+            "specificity": 0.0,
+            "feasibility": 0.0,
+            "relevance": 0.0,
+            "cross_disciplinary": 0.0
+          }
+        },
+        {
+          "method": "MOOSE-Chem",
+          "elapsed": 28.2,
+          "hypothesis_length": 2967,
+          "error": false,
+          "rouge": {
+            "rouge1": 0.3716,
+            "rouge2": 0.0712,
+            "rougeL": 0.1284
+          },
+          "llm_judge": {
+            "novelty": 9.0,
+            "specificity": 8.0,
+            "feasibility": 7.0,
+            "relevance": 9.0,
+            "cross_disciplinary": 8.0
+          }
+        },
+        {
+          "method": "SciAgents",
+          "elapsed": 72.1,
+          "hypothesis_length": 3749,
+          "error": false,
+          "rouge": {
+            "rouge1": 0.2428,
+            "rouge2": 0.0377,
+            "rougeL": 0.0867
+          },
+          "llm_judge": {
+            "novelty": 8.0,
+            "specificity": 9.0,
+            "feasibility": 7.0,
+            "relevance": 9.0,
+            "cross_disciplinary": 8.0
+          }
+        },
+        {
+          "method": "P1",
+          "elapsed": 8.0,
+          "hypothesis_length": 828,
+          "error": false,
+          "rouge": {
+            "rouge1": 0.2293,
+            "rouge2": 0.0192,
+            "rougeL": 0.121
+          },
+          "llm_judge": {
+            "novelty": 8.0,
+            "specificity": 9.0,
+            "feasibility": 7.0,
+            "relevance": 9.0,
+            "cross_disciplinary": 8.0
+          }
+        },
+        {
+          "method": "P2",
+          "elapsed": 6.9,
+          "hypothesis_length": 1218,
+          "error": false,
+          "rouge": {
+            "rouge1": 0.482,
+            "rouge2": 0.195,
+            "rougeL": 0.2105
+          },
+          "llm_judge": {}
+        },
+        {
+          "method": "P3",
+          "elapsed": 12.7,
+          "hypothesis_length": 2149,
+          "error": false,
+          "rouge": {
+            "rouge1": 0.48,
+            "rouge2": 0.1734,
+            "rougeL": 0.1979
+          },
+          "llm_judge": {}
+        },
+        {
+          "method": "P4",
+          "elapsed": 23.9,
+          "hypothesis_length": 4047,
+          "error": false,
+          "rouge": {
+            "rouge1": 0.3709,
+            "rouge2": 0.125,
+            "rougeL": 0.1751
+          },
+          "llm_judge": {
+            "novelty": 8.0,
+            "specificity": 9.0,
+            "feasibility": 7.0,
+            "relevance": 10.0,
+            "cross_disciplinary": 9.0
+          }
+        },
+        {
+          "method": "P5",
+          "elapsed": 93.0,
+          "hypothesis_length": 1525,
+          "error": false,
+          "rouge": {
+            "rouge1": 0.0,
+            "rouge2": 0.0,
+            "rougeL": 0.0
+          },
+          "llm_judge": {},
+          "structural": {
+            "has_L1": 1.0,
+            "has_L2": 1.0,
+            "has_L3": 1.0,
+            "level_coverage": 1.0,
+            "total_paths": 6.0,
+            "avg_path_length": 3.0,
+            "chain_coherence": 1.0,
+            "relation_diversity": 2.3333,
+            "entity_grounding_rate": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "tag": "paper_1[13]",
+      "paper": {
+        "title": "Non-equilibrium demixing and dissolution of chiral coacervates via intrinsic catalysis",
+        "primary_discipline": "化学"
+      },
+      "evaluations": [
+        {
+          "method": "IdeaBench",
+          "elapsed": 7.3,
+          "hypothesis_length": 1081,
+          "error": false,
+          "rouge": {
+            "rouge1": 0.2601,
+            "rouge2": 0.0407,
+            "rougeL": 0.1445
+          },
+          "llm_judge": {
+            "novelty": 9.0,
+            "specificity": 8.0,
+            "feasibility": 7.0,
+            "relevance": 9.0,
+            "cross_disciplinary": 8.0
+          }
+        },
+        {
+          "method": "VanillaLLM",
+          "elapsed": 12.7,
+          "hypothesis_length": 2552,
+          "error": false,
+          "rouge": {
+            "rouge1": 0.3124,
+            "rouge2": 0.0793,
+            "rougeL": 0.1616
+          },
+          "llm_judge": {
+            "novelty": 8.0,
+            "specificity": 9.0,
+            "feasibility": 8.0,
+            "relevance": 9.0,
+            "cross_disciplinary": 7.0
+          }
+        },
+        {
+          "method": "AI-Scientist",
+          "elapsed": 23.1,
+          "hypothesis_length": 3248,
+          "error": false,
+          "rouge": {
+            "rouge1": 0.3052,
+            "rouge2": 0.0554,
+            "rougeL": 0.1364
+          },
+          "llm_judge": {
+            "novelty": 9.0,
+            "specificity": 8.0,
+            "feasibility": 7.0,
+            "relevance": 10.0,
+            "cross_disciplinary": 8.0
+          }
+        },
+        {
+          "method": "SciMON",
+          "elapsed": 18.8,
+          "hypothesis_length": 2660,
+          "error": false,
+          "rouge": {
+            "rouge1": 0.1907,
+            "rouge2": 0.0075,
+            "rougeL": 0.086
+          },
+          "llm_judge": {}
+        },
+        {
+          "method": "MOOSE-Chem",
+          "elapsed": 26.5,
+          "hypothesis_length": 3539,
+          "error": false,
+          "rouge": {
+            "rouge1": 0.2538,
+            "rouge2": 0.0485,
+            "rougeL": 0.1329
+          },
+          "llm_judge": {
+            "novelty": 9.0,
+            "specificity": 8.0,
+            "feasibility": 7.0,
+            "relevance": 9.0,
+            "cross_disciplinary": 8.0
+          }
+        },
+        {
+          "method": "SciAgents",
+          "elapsed": 53.1,
+          "hypothesis_length": 3470,
+          "error": false,
+          "rouge": {
+            "rouge1": 0.2439,
+            "rouge2": 0.0261,
+            "rougeL": 0.1138
+          },
+          "llm_judge": {
+            "novelty": 9.0,
+            "specificity": 8.0,
+            "feasibility": 7.0,
+            "relevance": 9.0,
+            "cross_disciplinary": 8.0
+          }
+        },
+        {
+          "method": "P1",
+          "elapsed": 6.0,
+          "hypothesis_length": 864,
+          "error": false,
+          "rouge": {
+            "rouge1": 0.2013,
+            "rouge2": 0.0253,
+            "rougeL": 0.1258
+          },
+          "llm_judge": {
+            "novelty": 9.0,
+            "specificity": 8.0,
+            "feasibility": 7.0,
+            "relevance": 9.0,
+            "cross_disciplinary": 8.0
+          }
+        },
+        {
+          "method": "P2",
+          "elapsed": 7.8,
+          "hypothesis_length": 1185,
+          "error": false,
+          "rouge": {
+            "rouge1": 0.3636,
+            "rouge2": 0.1053,
+            "rougeL": 0.1818
+          },
+          "llm_judge": {}
+        },
+        {
+          "method": "P3",
+          "elapsed": 10.0,
+          "hypothesis_length": 1771,
+          "error": false,
+          "rouge": {
+            "rouge1": 0.4133,
+            "rouge2": 0.1146,
+            "rougeL": 0.19
+          },
+          "llm_judge": {}
+        },
+        {
+          "method": "P4",
+          "elapsed": 18.8,
+          "hypothesis_length": 4085,
+          "error": false,
+          "rouge": {
+            "rouge1": 0.2814,
+            "rouge2": 0.0691,
+            "rougeL": 0.1228
+          },
+          "llm_judge": {
+            "novelty": 8.0,
+            "specificity": 7.0,
+            "feasibility": 6.0,
+            "relevance": 9.0,
+            "cross_disciplinary": 7.0
+          }
+        },
+        {
+          "method": "P5",
+          "elapsed": 132.2,
+          "hypothesis_length": 1544,
+          "error": false,
+          "rouge": {
+            "rouge1": 0.0,
+            "rouge2": 0.0,
+            "rougeL": 0.0
+          },
+          "llm_judge": {
+            "novelty": 8.0,
+            "specificity": 7.0,
+            "feasibility": 6.0,
+            "relevance": 9.0,
+            "cross_disciplinary": 7.0
+          },
+          "structural": {
+            "has_L1": 1.0,
+            "has_L2": 1.0,
+            "has_L3": 1.0,
+            "level_coverage": 1.0,
+            "total_paths": 6.0,
+            "avg_path_length": 3.0,
+            "chain_coherence": 1.0,
+            "relation_diversity": 2.3333,
+            "entity_grounding_rate": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "tag": "paper_1[14]",
+      "paper": {
+        "title": "Cellulose-mediated ionic liquid crystallization enables tough-stiff switchable ionogels",
+        "primary_discipline": "材料科学"
+      },
+      "evaluations": [
+        {
+          "method": "IdeaBench",
+          "elapsed": 7.9,
+          "hypothesis_length": 1205,
+          "error": false,
+          "rouge": {
+            "rouge1": 0.3288,
+            "rouge2": 0.0441,
+            "rougeL": 0.1315
+          },
+          "llm_judge": {
+            "novelty": 8.0,
+            "specificity": 7.0,
+            "feasibility": 6.0,
+            "relevance": 9.0,
+            "cross_disciplinary": 7.0
+          }
+        },
+        {
+          "method": "VanillaLLM",
+          "elapsed": 11.0,
+          "hypothesis_length": 2017,
+          "error": false,
+          "rouge": {
+            "rouge1": 0.3497,
+            "rouge2": 0.0514,
+            "rougeL": 0.1493
+          },
+          "llm_judge": {}
+        },
+        {
+          "method": "AI-Scientist",
+          "elapsed": 17.2,
+          "hypothesis_length": 3216,
+          "error": false,
+          "rouge": {
+            "rouge1": 0.3467,
+            "rouge2": 0.0736,
+            "rougeL": 0.1333
+          },
+          "llm_judge": {
+            "novelty": 8.0,
+            "specificity": 9.0,
+            "feasibility": 7.0,
+            "relevance": 10.0,
+            "cross_disciplinary": 8.0
+          }
+        },
+        {
+          "method": "SciMON",
+          "elapsed": 16.2,
+          "hypothesis_length": 2687,
+          "error": false,
+          "rouge": {
+            "rouge1": 0.3303,
+            "rouge2": 0.0437,
+            "rougeL": 0.1379
+          },
+          "llm_judge": {}
+        },
+        {
+          "method": "MOOSE-Chem",
+          "elapsed": 19.8,
+          "hypothesis_length": 2674,
+          "error": false,
+          "rouge": {
+            "rouge1": 0.347,
+            "rouge2": 0.0412,
+            "rougeL": 0.1306
+          },
+          "llm_judge": {}
+        },
+        {
+          "method": "SciAgents",
+          "elapsed": 61.8,
+          "hypothesis_length": 3948,
+          "error": false,
+          "rouge": {
+            "rouge1": 0.2264,
+            "rouge2": 0.0144,
+            "rougeL": 0.0831
+          },
+          "llm_judge": {
+            "novelty": 9.0,
+            "specificity": 8.0,
+            "feasibility": 7.0,
+            "relevance": 9.0,
+            "cross_disciplinary": 8.0
+          }
+        },
+        {
+          "method": "P1",
+          "elapsed": 5.4,
+          "hypothesis_length": 648,
+          "error": false,
+          "rouge": {
+            "rouge1": 0.231,
+            "rouge2": 0.0399,
+            "rougeL": 0.1056
+          },
+          "llm_judge": {
+            "novelty": 8.0,
+            "specificity": 9.0,
+            "feasibility": 7.0,
+            "relevance": 8.0,
+            "cross_disciplinary": 7.0
+          }
+        },
+        {
+          "method": "P2",
+          "elapsed": 7.8,
+          "hypothesis_length": 1111,
+          "error": false,
+          "rouge": {
+            "rouge1": 0.4155,
+            "rouge2": 0.117,
+            "rougeL": 0.1828
+          },
+          "llm_judge": {}
+        },
+        {
+          "method": "P3",
+          "elapsed": 13.7,
+          "hypothesis_length": 2209,
+          "error": false,
+          "rouge": {
+            "rouge1": 0.4562,
+            "rouge2": 0.1881,
+            "rougeL": 0.2077
+          },
+          "llm_judge": {}
+        },
+        {
+          "method": "P4",
+          "elapsed": 27.2,
+          "hypothesis_length": 4127,
+          "error": false,
+          "rouge": {
+            "rouge1": 0.3088,
+            "rouge2": 0.0782,
+            "rougeL": 0.1379
+          },
+          "llm_judge": {}
+        },
+        {
+          "method": "P5",
+          "elapsed": 94.9,
+          "hypothesis_length": 1678,
+          "error": false,
+          "rouge": {
+            "rouge1": 0.0159,
+            "rouge2": 0.0,
+            "rougeL": 0.0159
+          },
+          "llm_judge": {
+            "novelty": 8.0,
+            "specificity": 9.0,
+            "feasibility": 8.0,
+            "relevance": 10.0,
+            "cross_disciplinary": 7.0
+          },
+          "structural": {
+            "has_L1": 1.0,
+            "has_L2": 1.0,
+            "has_L3": 1.0,
+            "level_coverage": 1.0,
+            "total_paths": 6.0,
+            "avg_path_length": 3.0,
+            "chain_coherence": 1.0,
+            "relation_diversity": 2.8333,
+            "entity_grounding_rate": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "tag": "AlphaFold3",
+      "paper": {
+        "title": "Accurate structure prediction of biomolecular interactions with AlphaFold 3",
+        "primary_discipline": "Computational Biology"
+      },
+      "evaluations": [
+        {
+          "method": "IdeaBench",
+          "elapsed": 8.2,
+          "hypothesis_length": 1038,
+          "error": false,
+          "rouge": {
+            "rouge1": 0.3223,
+            "rouge2": 0.0664,
+            "rougeL": 0.1465
+          },
+          "llm_judge": {
+            "novelty": 8.0,
+            "specificity": 7.0,
+            "feasibility": 8.0,
+            "relevance": 9.0,
+            "cross_disciplinary": 9.0
+          }
+        },
+        {
+          "method": "VanillaLLM",
+          "elapsed": 13.1,
+          "hypothesis_length": 2285,
+          "error": false,
+          "rouge": {
+            "rouge1": 0.2953,
+            "rouge2": 0.0809,
+            "rougeL": 0.1387
+          },
+          "llm_judge": {}
+        },
+        {
+          "method": "AI-Scientist",
+          "elapsed": 28.5,
+          "hypothesis_length": 3618,
+          "error": false,
+          "rouge": {
+            "rouge1": 0.2353,
+            "rouge2": 0.0459,
+            "rougeL": 0.1111
+          },
+          "llm_judge": {}
+        },
+        {
+          "method": "SciMON",
+          "elapsed": 17.6,
+          "hypothesis_length": 2381,
+          "error": false,
+          "rouge": {
+            "rouge1": 0.2438,
+            "rouge2": 0.0181,
+            "rougeL": 0.1129
+          },
+          "llm_judge": {}
+        },
+        {
+          "method": "MOOSE-Chem",
+          "elapsed": 25.2,
+          "hypothesis_length": 2990,
+          "error": false,
+          "rouge": {
+            "rouge1": 0.3092,
+            "rouge2": 0.0943,
+            "rougeL": 0.1448
+          },
+          "llm_judge": {}
+        },
+        {
+          "method": "SciAgents",
+          "elapsed": 65.7,
+          "hypothesis_length": 3491,
+          "error": false,
+          "rouge": {
+            "rouge1": 0.171,
+            "rouge2": 0.0245,
+            "rougeL": 0.0803
+          },
+          "llm_judge": {
+            "novelty": 8.0,
+            "specificity": 9.0,
+            "feasibility": 7.0,
+            "relevance": 10.0,
+            "cross_disciplinary": 8.0
+          }
+        },
+        {
+          "method": "P1",
+          "elapsed": 4.9,
+          "hypothesis_length": 667,
+          "error": false,
+          "rouge": {
+            "rouge1": 0.2489,
+            "rouge2": 0.009,
+            "rougeL": 0.1156
+          },
+          "llm_judge": {
+            "novelty": 8.0,
+            "specificity": 7.0,
+            "feasibility": 6.0,
+            "relevance": 9.0,
+            "cross_disciplinary": 8.0
+          }
+        },
+        {
+          "method": "P2",
+          "elapsed": 7.6,
+          "hypothesis_length": 1061,
+          "error": false,
+          "rouge": {
+            "rouge1": 0.3835,
+            "rouge2": 0.0985,
+            "rougeL": 0.1955
+          },
+          "llm_judge": {}
+        },
+        {
+          "method": "P3",
+          "elapsed": 16.6,
+          "hypothesis_length": 2359,
+          "error": false,
+          "rouge": {
+            "rouge1": 0.3443,
+            "rouge2": 0.109,
+            "rougeL": 0.1415
+          },
+          "llm_judge": {
+            "novelty": 9.0,
+            "specificity": 8.0,
+            "feasibility": 7.0,
+            "relevance": 10.0,
+            "cross_disciplinary": 9.0
+          }
+        },
+        {
+          "method": "P4",
+          "elapsed": 25.2,
+          "hypothesis_length": 3482,
+          "error": false,
+          "rouge": {
+            "rouge1": 0.2495,
+            "rouge2": 0.0342,
+            "rougeL": 0.1248
+          },
+          "llm_judge": {
+            "novelty": 9.0,
+            "specificity": 8.0,
+            "feasibility": 7.0,
+            "relevance": 9.0,
+            "cross_disciplinary": 9.0
+          }
+        },
+        {
+          "method": "P5",
+          "elapsed": 107.4,
+          "hypothesis_length": 1855,
+          "error": false,
+          "rouge": {
+            "rouge1": 0.0415,
+            "rouge2": 0.0105,
+            "rougeL": 0.0415
+          },
+          "llm_judge": {
+            "novelty": 7.0,
+            "specificity": 8.0,
+            "feasibility": 9.0,
+            "relevance": 9.0,
+            "cross_disciplinary": 8.0
+          },
+          "structural": {
+            "has_L1": 1.0,
+            "has_L2": 1.0,
+            "has_L3": 1.0,
+            "level_coverage": 1.0,
+            "total_paths": 7.0,
+            "avg_path_length": 3.0,
+            "chain_coherence": 1.0,
+            "relation_diversity": 2.4286,
+            "entity_grounding_rate": 1.0
+          }
+        }
+      ]
+    }
+  ],
+  "aggregated": {
+    "IdeaBench": {
+      "rouge_rouge1": 0.3317,
+      "rouge_rouge2": 0.07,
+      "rouge_rougeL": 0.1524,
+      "judge_novelty": 8.1667,
+      "judge_specificity": 7.1667,
+      "judge_feasibility": 6.5,
+      "judge_relevance": 9.0,
+      "judge_cross_disciplinary": 7.8333,
+      "hypothesis_length": 1059.0,
+      "elapsed": 7.6833,
+      "n_papers": 6
+    },
+    "VanillaLLM": {
+      "rouge_rouge1": 0.3403,
+      "rouge_rouge2": 0.0753,
+      "rouge_rougeL": 0.1489,
+      "judge_novelty": 8.5,
+      "judge_specificity": 8.5,
+      "judge_feasibility": 7.5,
+      "judge_relevance": 9.5,
+      "judge_cross_disciplinary": 6.5,
+      "hypothesis_length": 2091.8333,
+      "elapsed": 12.8,
+      "n_papers": 6
+    },
+    "AI-Scientist": {
+      "rouge_rouge1": 0.289,
+      "rouge_rouge2": 0.0617,
+      "rouge_rougeL": 0.1207,
+      "hypothesis_length": 3546.3333,
+      "elapsed": 25.1667,
+      "judge_novelty": 8.3333,
+      "judge_specificity": 8.6667,
+      "judge_feasibility": 7.0,
+      "judge_relevance": 10.0,
+      "judge_cross_disciplinary": 8.0,
+      "n_papers": 6
+    },
+    "SciMON": {
+      "rouge_rouge1": 0.2706,
+      "rouge_rouge2": 0.0394,
+      "rouge_rougeL": 0.1148,
+      "judge_novelty": 0.0,
+      "judge_specificity": 0.0,
+      "judge_feasibility": 0.0,
+      "judge_relevance": 0.0,
+      "judge_cross_disciplinary": 0.0,
+      "hypothesis_length": 2735.5,
+      "elapsed": 19.15,
+      "n_papers": 6
+    },
+    "MOOSE-Chem": {
+      "rouge_rouge1": 0.3043,
+      "rouge_rouge2": 0.0612,
+      "rouge_rougeL": 0.1303,
+      "hypothesis_length": 3074.3333,
+      "elapsed": 25.75,
+      "judge_novelty": 9.0,
+      "judge_specificity": 8.0,
+      "judge_feasibility": 7.0,
+      "judge_relevance": 9.0,
+      "judge_cross_disciplinary": 8.0,
+      "n_papers": 6
+    },
+    "SciAgents": {
+      "rouge_rouge1": 0.2104,
+      "rouge_rouge2": 0.0303,
+      "rouge_rougeL": 0.0937,
+      "judge_novelty": 8.5,
+      "judge_specificity": 8.8333,
+      "judge_feasibility": 7.1667,
+      "judge_relevance": 9.5,
+      "judge_cross_disciplinary": 8.1667,
+      "hypothesis_length": 3781.3333,
+      "elapsed": 65.85,
+      "n_papers": 6
+    },
+    "P1": {
+      "rouge_rouge1": 0.1937,
+      "rouge_rouge2": 0.0176,
+      "rouge_rougeL": 0.098,
+      "judge_novelty": 8.3333,
+      "judge_specificity": 8.3333,
+      "judge_feasibility": 6.8333,
+      "judge_relevance": 8.8333,
+      "judge_cross_disciplinary": 7.5,
+      "hypothesis_length": 785.3333,
+      "elapsed": 7.15,
+      "n_papers": 6
+    },
+    "P2": {
+      "rouge_rouge1": 0.4091,
+      "rouge_rouge2": 0.1308,
+      "rouge_rougeL": 0.1948,
+      "judge_novelty": 9.0,
+      "judge_specificity": 8.0,
+      "judge_feasibility": 7.0,
+      "judge_relevance": 10.0,
+      "judge_cross_disciplinary": 8.0,
+      "hypothesis_length": 1290.6667,
+      "elapsed": 8.55,
+      "n_papers": 6
+    },
+    "P3": {
+      "rouge_rouge1": 0.4224,
+      "rouge_rouge2": 0.1522,
+      "rouge_rougeL": 0.1878,
+      "hypothesis_length": 1996.8333,
+      "elapsed": 12.15,
+      "judge_novelty": 9.0,
+      "judge_specificity": 8.0,
+      "judge_feasibility": 7.0,
+      "judge_relevance": 10.0,
+      "judge_cross_disciplinary": 9.0,
+      "n_papers": 6
+    },
+    "P4": {
+      "rouge_rouge1": 0.2909,
+      "rouge_rouge2": 0.0729,
+      "rouge_rougeL": 0.1344,
+      "hypothesis_length": 3816.0,
+      "elapsed": 23.7667,
+      "judge_novelty": 8.3333,
+      "judge_specificity": 8.0,
+      "judge_feasibility": 6.6667,
+      "judge_relevance": 9.3333,
+      "judge_cross_disciplinary": 8.3333,
+      "n_papers": 6
+    },
+    "P5": {
+      "rouge_rouge1": 0.0096,
+      "rouge_rouge2": 0.0018,
+      "rouge_rougeL": 0.0096,
+      "struct_has_L1": 1.0,
+      "struct_has_L2": 1.0,
+      "struct_has_L3": 1.0,
+      "struct_level_coverage": 1.0,
+      "struct_total_paths": 6.1667,
+      "struct_avg_path_length": 3.0,
+      "struct_chain_coherence": 1.0,
+      "struct_relation_diversity": 2.627,
+      "struct_entity_grounding_rate": 1.0,
+      "hypothesis_length": 1635.0,
+      "elapsed": 106.0833,
+      "judge_novelty": 7.5,
+      "judge_specificity": 8.0,
+      "judge_feasibility": 7.5,
+      "judge_relevance": 9.25,
+      "judge_cross_disciplinary": 7.5,
+      "n_papers": 6
+    }
+  }
+}

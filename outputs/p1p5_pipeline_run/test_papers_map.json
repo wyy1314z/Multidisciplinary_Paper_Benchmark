@@ -1,0 +1,34 @@
+{
+  "c7ad65ce9af2": {
+    "paper_id": "c7ad65ce9af2",
+    "title": "Rapid sintering of high-efficiency phosphor-in-glass films for laser-driven light source",
+    "abstract": "The development of advanced high-power-density laser-driven light source requires durable and color-tunable inorganic phosphor-in-glass film composites as color converter. One challenge remains for the phosphor-in-glass film is the thermal erosion and degradation of phosphor, as harsh condition or long duration time is required to densify the film for conventional sintering. Here we develop a rapid thermal annealing technique that achieves high film densification (porosity < 3%) within seconds utilizing high-power (>10 kW) infrared irradiation. As demonstrated by high-resolution electron microscopy observation, a trivial interfacial reaction occurs, leading to almost intact phosphor particles and thus restrained luminous loss. For instance, the red-emitting Sr0.8Ca0.2AlSiN3:Eu2+ exhibits a record internal quantum efficiency of 91.2% in the processed film and achieves a luminous flux of 2379 lm and efficacy of 140 lm W−1 after fabricating a phosphor wheel. This method reduces energy consumption, enables high-throughput screening, and offers material universality and design flexibility, paving the way for new opto-functional materials and applications. High-power laser lighting requires stable phosphor-in-glass films, but conventional sintering damages phosphors. Here, the authors develop infrared annealing which enables seconds-scale fabrication, minimizes interfacial damage and retains luminescence.",
+    "primary_discipline": "材料科学",
+    "secondary_disciplines": [
+      "物理学"
+    ]
+  },
+  "360630035da3": {
+    "paper_id": "360630035da3",
+    "title": "Ancestral sequence reconstruction as a tool for structural analysis of modular polyketide synthases",
+    "abstract": "Modular polyketide synthases (PKSs) are large multi-domain enzymes critical for the biosynthesis of polyketide antibiotics. However, challenges with structural analysis limits our mechanistic understanding of modular PKSs. In this report, we explore the potential of ancestral sequence reconstruction (ASR) for structure analysis of target proteins. As a model, we focus on the FD-891 PKS loading module composed of ketosynthase-like decarboxylase (KSQ), acyltransferase (AT) and acyl carrier protein (ACP) domains. We construct a KSQAncAT chimeric didomain by replacing the native AT with an ancestral AT (AncAT) using ASR. After confirming that KSQAncAT chimeric didomain retains similar enzymatic function to the native KSQAT didomain, we successfully determine a high-resolution crystal structure of the KSQAncAT chimeric didomain and cryo-EM structures of the KSQ-ACP complex. These cryo-EM structures, which could not be determined for the native protein, exemplify the utility of ASR to enable cryo-EM single-particle analysis. Our findings demonstrate that integrating ASR with structural analysis provides deeper mechanistic insight into modular PKSs. Furthermore, applying ASR to a partial region of the targeted multi-domain proteins could expand the potential of ASR and may serve as a valuable framework for investigating the structure and function of various multi-domain proteins.",
+    "primary_discipline": "生物学",
+    "secondary_disciplines": [
+      "化学",
+      "分子生物学",
+      "生物物理学",
+      "生物工程"
+    ]
+  },
+  "e07fb8ec341d": {
+    "paper_id": "e07fb8ec341d",
+    "title": "Janus hydrogel microrobots with bioactive ions for the regeneration of tendon-bone interface",
+    "abstract": "Regenerating natural gradients of the tendon‒bone interface (TBI) is a major challenge in the reconstruction of rotator cuff tear (RCT). In this study, magnetic Janus hydrogel microrobots to match the TBI orientation during RCT reconstruction surgery are developed via a biofriendly gas-shearing microfluidic platform. Through separate loading of Mg2+ and Zn2+, the microrobots facilitate the immediate restoration and long-term maintenance of the natural mineral gradient in the TBI after implantation and alignment through magnetic manipulation. In vitro studies confirm the spatiotemporal cell phenotype modulation effects of the microrobots. In a rat RCT model, microrobots synchronously promote the bone and tendon regeneration, and the restoration of gradient tendon‒bone transition structures in the TBI. Overall, by rebuilding the Mg2+/Zn2+ mineral gradient, cell phenotype gradient and structural gradient of the TBI, magnetic Janus microrobots loaded with dual bioactive ions represent a promising strategy for promoting TBI healing in RCT reconstruction surgery.",
+    "primary_discipline": "临床医学",
+    "secondary_disciplines": [
+      "生物学",
+      "材料科学",
+      "生理学"
+    ]
+  }
+}

@@ -1,0 +1,36 @@
+# ── 实验配置 v1 ────────────────────────────────────────────────────────────────
+# 论文中所有实验均通过此文件运行，以保证可复现性。
+# 通过 crossdisc_extractor/config.py 的 PipelineConfig 加载。
+#
+# 使用方式:
+#   python run.py batch --input data.jsonl --output out.jsonl
+#   （PipelineConfig 默认值与此文件对齐）
+
+model:
+  # 明确锁定模型版本，保证不同时间运行的实验结果可比较
+  generation_model: ""          # 留空时由环境变量 OPENAI_MODEL 决定（如 deepseek-v3）
+  base_url: ""                  # 留空时由环境变量 OPENAI_BASE_URL 决定
+
+pipeline:
+  language_mode: "chinese"      # chinese | original
+  temperature_struct: 0.2       # 结构抽取（概念+关系）：低温度保证准确性
+  temperature_query: 0.2        # 查询生成：低温度
+  temperature_hyp: 0.3          # 假设生成：略高以增加多样性
+  seed: 42                      # LLM 采样 seed（可复现性）
+  max_tokens_struct: 8192       # Stage1 最大 token
+  max_tokens_query: 4096        # Stage2 最大 token
+  max_tokens_hyp: 4096          # Stage3 每个子阶段最大 token
+
+batch:
+  num_workers: 1                # 并行 worker 数（1=串行；建议根据 API 限流设置 2-4）
+  sleep_between_items: 0.0      # 每条记录间隔秒数（API 限速时使用）
+  resume: true                  # 断点续传（仅 .jsonl 输出有效）
+
+benchmark:
+  n_gt_paths_k: 3               # GlobalKG 每次检索的 GT 路径数
+  eval_temperature: 0.0         # LLM 评判温度（确定性输出）
+
+dataset:
+  random_seed: 42               # 数据集划分随机种子
+  train_split: 0.8
+  test_split: 0.2
