@@ -1,0 +1,707 @@
+[
+  {
+    "paper_id": "bca0c04aa6e9",
+    "method_name": "P1",
+    "free_text_hypotheses": [
+      "**Hypothesis:** 四环素抗性组的动态演化受环境中亚抑制浓度重金属（如锌、铜）与抗生素的协同选择压力驱动，其机制涉及重金属诱导的氧化应激激活细菌自然转化系统（如 competence regulon），促进游离四环素抗性基因（如*tetA*、*tetG*）的摄取与整合，同时通过移动遗传元件（如ISCR2转座子）的复制选择性扩增抗性基因簇，形成环境-基因水平转移-宿主适应的正反馈回路。可通过定量比较不同金属浓度下霍乱弧菌等模式菌的转化效率、抗性基因整合频率及生物膜中基因水平转移速率，并结合宏基因组时序分析验证该假设。"
+    ],
+    "structured_paths": {},
+    "raw_responses": [
+      "**Hypothesis:** 四环素抗性组的动态演化受环境中亚抑制浓度重金属（如锌、铜）与抗生素的协同选择压力驱动，其机制涉及重金属诱导的氧化应激激活细菌自然转化系统（如 competence regulon），促进游离四环素抗性基因（如*tetA*、*tetG*）的摄取与整合，同时通过移动遗传元件（如ISCR2转座子）的复制选择性扩增抗性基因簇，形成环境-基因水平转移-宿主适应的正反馈回路。可通过定量比较不同金属浓度下霍乱弧菌等模式菌的转化效率、抗性基因整合频率及生物膜中基因水平转移速率，并结合宏基因组时序分析验证该假设。"
+    ],
+    "elapsed_seconds": 29.629182815551758
+  },
+  {
+    "paper_id": "bca0c04aa6e9",
+    "method_name": "P2",
+    "free_text_hypotheses": [
+      "L1 Hypothesis: 四环素抗性组的形成遵循\"代次-机制适配\"动态模型，即不同抗生素代次通过分子结构与作用靶点的协同进化，驱动特定抗性机制（外排泵/核糖体保护/酶促失活）的适应性扩张，形成具有代次特征的抗性基因网络。这种动态平衡由临床用药选择压力与细菌适应性代价的相互作用维持，导致抗性基因库呈现代次特异性的时空分布格局。\n\nL2 Hypotheses:\n- Q1: 抗生素代次的化学结构差异通过改变细胞内药物浓度梯度和靶点结合效率，形成机制选择压力梯度。早期四环素类（如四环素）主要通过核糖体结合位点竞争选择核糖体保护蛋白（TetM）机制，而新型甘氨酰环素类（如替加环素）由于C9位取代基团的空间位阻效应，优先选择具有底物特异性外排泵（TetA）和新型酶促修饰机制（TetX7）。这种选择压力差异导致不同机制在抗生素代次交替时呈现非对称性进化速率变化。\n\n- Q2: 替加环素临床应用与tet(X)基因家族的时空关联存在\"选择窗口滞后效应\"，即药物大规模使用后3-5年出现基因频率爆发式增长，且医院感染源比社区感染源提前1.8±0.3年检测到tet(X)变异体。这种时空关联源于替加环素对生物膜形成的双重调控作用：低浓度时诱导外排泵基因表达，高浓度时筛选tet(X)介导的核糖体修饰机制，导致医院环境中耐药基因通过水平基因转移形成传播热点。"
+    ],
+    "structured_paths": {},
+    "raw_responses": [
+      "L1 Hypothesis: 四环素抗性组的形成遵循\"代次-机制适配\"动态模型，即不同抗生素代次通过分子结构与作用靶点的协同进化，驱动特定抗性机制（外排泵/核糖体保护/酶促失活）的适应性扩张，形成具有代次特征的抗性基因网络。这种动态平衡由临床用药选择压力与细菌适应性代价的相互作用维持，导致抗性基因库呈现代次特异性的时空分布格局。\n\nL2 Hypotheses:\n- Q1: 抗生素代次的化学结构差异通过改变细胞内药物浓度梯度和靶点结合效率，形成机制选择压力梯度。早期四环素类（如四环素）主要通过核糖体结合位点竞争选择核糖体保护蛋白（TetM）机制，而新型甘氨酰环素类（如替加环素）由于C9位取代基团的空间位阻效应，优先选择具有底物特异性外排泵（TetA）和新型酶促修饰机制（TetX7）。这种选择压力差异导致不同机制在抗生素代次交替时呈现非对称性进化速率变化。\n\n- Q2: 替加环素临床应用与tet(X)基因家族的时空关联存在\"选择窗口滞后效应\"，即药物大规模使用后3-5年出现基因频率爆发式增长，且医院感染源比社区感染源提前1.8±0.3年检测到tet(X)变异体。这种时空关联源于替加环素对生物膜形成的双重调控作用：低浓度时诱导外排泵基因表达，高浓度时筛选tet(X)介导的核糖体修饰机制，导致医院环境中耐药基因通过水平基因转移形成传播热点。"
+    ],
+    "elapsed_seconds": 40.29275417327881
+  },
+  {
+    "paper_id": "bca0c04aa6e9",
+    "method_name": "P3",
+    "free_text_hypotheses": [
+      "L1 Hypothesis: 四环素抗性组的动态演化由抗生素代次与抗性机制类型的协同作用驱动，其中临床引入的第三代替加环素通过增强tet(X12)等新型酶促失活基因的适应度优势，形成机制特异性菌株混合模式，而第二代多西环素则通过外排泵基因（如tet(A)）的高表达维持其临床持久性。这种跨尺度演化规律可通过整合生长动力学参数与临床抗生素部署时序数据建模揭示。\n\nL2 Hypotheses:  \n- Q1: 不同代次四环素类抗生素的分子结构差异导致机制特异性选择阈值变化，例如替加环素临床应用会显著提高核糖体保护蛋白（Tet(M)）与酶促失活机制（Tet(X12)）的相对丰度比值，而米诺环素选择压力下外排泵机制菌株（tet(G)）将呈现指数级扩张优势。  \n- Q2: tet(X3)基因在病原体中被临床发现的时间滞后于其在环境微生物中的进化起源，这种时空错位由替加环素临床引入时间点与携带tet(X3)质粒的医院污水微生物群落混杂效应共同决定，可通过比较不同地理区域抗生素使用强度与基因检出率建立剂量效应关系。\n\nL3 Hypotheses:  \n- Q1: 通过高通量条形码测序量化混合培养中tet(X12)-表达菌株与tet(M)-表达菌株的相对丰度变化轨迹，结合临床替加环素应用率数据构建Logistic回归模型，可预测当替加环素使用量增加10%时，tet(X12)基因频率将上升1.8-2.3倍（p<0.01）。  \n- Q2: 机制内相对适应度差异可通过MIC梯度验证：在相同抗生素浓度下，tet(A)同源基因簇内不同等位基因（如tet(A1) vs tet(A2)）的丰度变化率与MIC差值呈线性正相关（R²>0.75），而机制间比较（如tet(A) vs tet(X12)）的丰度差异将突破MIC解释框架，需要引入能量代价模型进行修正。"
+    ],
+    "structured_paths": {},
+    "raw_responses": [
+      "L1 Hypothesis: 四环素抗性组的动态演化由抗生素代次与抗性机制类型的协同作用驱动，其中临床引入的第三代替加环素通过增强tet(X12)等新型酶促失活基因的适应度优势，形成机制特异性菌株混合模式，而第二代多西环素则通过外排泵基因（如tet(A)）的高表达维持其临床持久性。这种跨尺度演化规律可通过整合生长动力学参数与临床抗生素部署时序数据建模揭示。\n\nL2 Hypotheses:  \n- Q1: 不同代次四环素类抗生素的分子结构差异导致机制特异性选择阈值变化，例如替加环素临床应用会显著提高核糖体保护蛋白（Tet(M)）与酶促失活机制（Tet(X12)）的相对丰度比值，而米诺环素选择压力下外排泵机制菌株（tet(G)）将呈现指数级扩张优势。  \n- Q2: tet(X3)基因在病原体中被临床发现的时间滞后于其在环境微生物中的进化起源，这种时空错位由替加环素临床引入时间点与携带tet(X3)质粒的医院污水微生物群落混杂效应共同决定，可通过比较不同地理区域抗生素使用强度与基因检出率建立剂量效应关系。\n\nL3 Hypotheses:  \n- Q1: 通过高通量条形码测序量化混合培养中tet(X12)-表达菌株与tet(M)-表达菌株的相对丰度变化轨迹，结合临床替加环素应用率数据构建Logistic回归模型，可预测当替加环素使用量增加10%时，tet(X12)基因频率将上升1.8-2.3倍（p<0.01）。  \n- Q2: 机制内相对适应度差异可通过MIC梯度验证：在相同抗生素浓度下，tet(A)同源基因簇内不同等位基因（如tet(A1) vs tet(A2)）的丰度变化率与MIC差值呈线性正相关（R²>0.75），而机制间比较（如tet(A) vs tet(X12)）的丰度差异将突破MIC解释框架，需要引入能量代价模型进行修正。"
+    ],
+    "elapsed_seconds": 37.280792474746704
+  },
+  {
+    "paper_id": "bca0c04aa6e9",
+    "method_name": "P4",
+    "free_text_hypotheses": [
+      "L1 Hypothesis:\nhypothesis: 四环素抗性组的动态演化不仅受抗生素代次选择压力驱动，还受宿主药物代谢动力学调控，其核心机制是肝脏代谢酶产生的药物活性代谢物对不同抗性机制的差异化选择压力，导致核糖体保护蛋白类基因在高代谢区患者中呈现适应度优势\nreasoning: 1. 已知抗生素代次通过机制特异性选择塑造抗性组(关系1)；2. 临床发现肝功能异常患者更易出现替加环素耐药(临床医学现象)；3. 药物代谢动力学差异可能产生浓度梯度选择压力(新机制)；4. 结合宿主代谢特征与微生物组互作，可预测抗性组空间分布模式(跨学科连接)\nkey_concepts: 药物代谢动力学, 核糖体保护蛋白, 肝脏代谢酶, 活性代谢物, 空间适应度梯度\ndisciplines_bridged: 生物学, 临床医学\n\nL2 Hypotheses:\n- Q1:\n    hypothesis: 宿主免疫应答强度与抗生素浓度协同作用形成复合选择压力，导致外排泵基因在低剂量预防性用药场景中具有更高的适应度优势\n    reasoning: 1. 已知外排泵被特定代次抗生素选择(关系1)；2. 临床观察显示免疫抑制患者更易发生多西环素耐药；3. 推测免疫细胞产生的活性氧可增强外排泵底物特异性；4. 建立免疫-抗生素双压力模型可解释医院环境耐药基因流行病学\n    key_concepts: 免疫应答强度, 外排泵, 活性氧, 预防性用药, 双压力选择模型\n    disciplines_bridged: 生物学, 临床医学\n    \n- Q2:\n    hypothesis: 临床环境中的共生菌群通过水平基因转移促进替加环素抗性基因(TetX)的扩散，其转移效率与病原体在医院环境中的宿主切换频率呈正相关\n    reasoning: 1. 替加环素引入与DES1基因发现存在时空关联(关系6)；2. 环境微生物组研究显示接合转移效率受宿主适应性限制；3. 医院环境中频繁的宿主切换促进基因重组；4. 病原体移动性决定抗性基因进化速率\n    key_concepts: 水平基因转移, 共生菌群, 宿主切换频率, TetX基因, 医院环境微生物组\n    disciplines_bridged: 生物学, 临床医学\n\nL3 Hypotheses:\n- Q1:\n    hypothesis: 患者用药史形成的药物浓度梯度可通过机制内适应度差异预测抗性组演变轨迹，结合条形码测序数据与电子病历机器学习可实现耐药预警\n    reasoning: 1. 高通量测序可量化混合培养相对丰度(关系3)；2. 临床用药记录包含浓度-时间动态信息；3. 最小抑菌浓度决定机制内竞争优势(关系4)；4. 构建基于微流控芯片的体外进化模拟系统验证模型\n    key_concepts: 药物浓度梯度, 微流控芯片, 电子病历机器学习, 体外进化模拟, 耐药预警模型\n    disciplines_bridged: 生物学, 临床医学\n    \n- Q2:\n    hypothesis: 生物膜形成能力通过改变抗生素渗透性重塑机制间适应度关系，在米诺环素治疗场景中使酶促失活基因获得跨机制竞争优势\n    reasoning: 1. 已知机制间适应度差异受MIN次要影响(关系4)；2. 生物膜是临床重要耐药协同因素；3. 推测生物膜基质可富集酶促失活产物形成保护屏障；4. 建立生物膜-浮游双态培养系统验证适应度转换\n    key_concepts: 生物膜, 酶促失活, 渗透性屏障, 双态培养系统, 抗生素渗透动力学\n    disciplines_bridged: 生物学, 临床医学"
+    ],
+    "structured_paths": {},
+    "raw_responses": [
+      "L1 Hypothesis:\nhypothesis: 四环素抗性组的动态演化不仅受抗生素代次选择压力驱动，还受宿主药物代谢动力学调控，其核心机制是肝脏代谢酶产生的药物活性代谢物对不同抗性机制的差异化选择压力，导致核糖体保护蛋白类基因在高代谢区患者中呈现适应度优势\nreasoning: 1. 已知抗生素代次通过机制特异性选择塑造抗性组(关系1)；2. 临床发现肝功能异常患者更易出现替加环素耐药(临床医学现象)；3. 药物代谢动力学差异可能产生浓度梯度选择压力(新机制)；4. 结合宿主代谢特征与微生物组互作，可预测抗性组空间分布模式(跨学科连接)\nkey_concepts: 药物代谢动力学, 核糖体保护蛋白, 肝脏代谢酶, 活性代谢物, 空间适应度梯度\ndisciplines_bridged: 生物学, 临床医学\n\nL2 Hypotheses:\n- Q1:\n    hypothesis: 宿主免疫应答强度与抗生素浓度协同作用形成复合选择压力，导致外排泵基因在低剂量预防性用药场景中具有更高的适应度优势\n    reasoning: 1. 已知外排泵被特定代次抗生素选择(关系1)；2. 临床观察显示免疫抑制患者更易发生多西环素耐药；3. 推测免疫细胞产生的活性氧可增强外排泵底物特异性；4. 建立免疫-抗生素双压力模型可解释医院环境耐药基因流行病学\n    key_concepts: 免疫应答强度, 外排泵, 活性氧, 预防性用药, 双压力选择模型\n    disciplines_bridged: 生物学, 临床医学\n    \n- Q2:\n    hypothesis: 临床环境中的共生菌群通过水平基因转移促进替加环素抗性基因(TetX)的扩散，其转移效率与病原体在医院环境中的宿主切换频率呈正相关\n    reasoning: 1. 替加环素引入与DES1基因发现存在时空关联(关系6)；2. 环境微生物组研究显示接合转移效率受宿主适应性限制；3. 医院环境中频繁的宿主切换促进基因重组；4. 病原体移动性决定抗性基因进化速率\n    key_concepts: 水平基因转移, 共生菌群, 宿主切换频率, TetX基因, 医院环境微生物组\n    disciplines_bridged: 生物学, 临床医学\n\nL3 Hypotheses:\n- Q1:\n    hypothesis: 患者用药史形成的药物浓度梯度可通过机制内适应度差异预测抗性组演变轨迹，结合条形码测序数据与电子病历机器学习可实现耐药预警\n    reasoning: 1. 高通量测序可量化混合培养相对丰度(关系3)；2. 临床用药记录包含浓度-时间动态信息；3. 最小抑菌浓度决定机制内竞争优势(关系4)；4. 构建基于微流控芯片的体外进化模拟系统验证模型\n    key_concepts: 药物浓度梯度, 微流控芯片, 电子病历机器学习, 体外进化模拟, 耐药预警模型\n    disciplines_bridged: 生物学, 临床医学\n    \n- Q2:\n    hypothesis: 生物膜形成能力通过改变抗生素渗透性重塑机制间适应度关系，在米诺环素治疗场景中使酶促失活基因获得跨机制竞争优势\n    reasoning: 1. 已知机制间适应度差异受MIN次要影响(关系4)；2. 生物膜是临床重要耐药协同因素；3. 推测生物膜基质可富集酶促失活产物形成保护屏障；4. 建立生物膜-浮游双态培养系统验证适应度转换\n    key_concepts: 生物膜, 酶促失活, 渗透性屏障, 双态培养系统, 抗生素渗透动力学\n    disciplines_bridged: 生物学, 临床医学"
+    ],
+    "elapsed_seconds": 48.689204931259155
+  },
+  {
+    "paper_id": "bca0c04aa6e9",
+    "method_name": "P5",
+    "free_text_hypotheses": [
+      "四环素抗性组的形成机制由抗生素代次驱动选择外排泵等特定抗性机制，其动态演化需结合临床应用数据验证模型",
+      "四环素抗性组的动态演化通过机制特异性菌株混合复现生长动力学特征，需结合临床抗生素引入历史验证抗性基因竞争规律",
+      "通过抗生素代次对特定抗性机制的选择压力，建立机制间适应度差异模型，解释四环素抗性组的动态演化规律",
+      "揭示替加环素临床应用与抗性基因发现的时空耦合关系，阐明临床选择压力驱动抗性基因整合至抗性组的过程",
+      "通过高通量测序量化混合培养中菌株丰度，结合抗生素代次选择压力数据，闭环验证四环素抗性组形成机制",
+      "利用机制特异性混合实验复现群落动态，结合最小抑菌浓度测定揭示适应度差异，最终验证抗性组进化动力学模型"
+    ],
+    "structured_paths": {
+      "L1": [
+        {
+          "steps": [
+            {
+              "step": 1,
+              "head": "四环素抗性组",
+              "relation": "影响",
+              "tail": "抗生素代次",
+              "claim": "四环素抗性组 抗生素代次"
+            },
+            {
+              "step": 2,
+              "head": "抗生素代次",
+              "relation": "导致",
+              "tail": "外排泵",
+              "claim": "抗生素代次 外排泵"
+            },
+            {
+              "step": 3,
+              "head": "外排泵",
+              "relation": "其适应度差异需临床应用数据验证",
+              "tail": "临床应用",
+              "claim": "外排泵 其适应度差异需临床应用数据验证 临床应用"
+            }
+          ],
+          "summary": "四环素抗性组的形成机制由抗生素代次驱动选择外排泵等特定抗性机制，其动态演化需结合临床应用数据验证模型"
+        },
+        {
+          "steps": [
+            {
+              "step": 1,
+              "head": "四环素抗性组",
+              "relation": "机制特异性菌株混合",
+              "tail": "机制特异性菌株混合",
+              "claim": "四环素抗性组 机制特异性菌株混合 机制特异性菌株混合"
+            },
+            {
+              "step": 2,
+              "head": "机制特异性菌株混合",
+              "relation": "导致",
+              "tail": "生长动力学",
+              "claim": "机制特异性菌株混合 生长动力学"
+            },
+            {
+              "step": 3,
+              "head": "生长动力学",
+              "relation": "需结合临床抗生素部署历史验证",
+              "tail": "临床引入",
+              "claim": "生长动力学 需结合临床抗生素部署历史验证 临床引入"
+            }
+          ],
+          "summary": "四环素抗性组的动态演化通过机制特异性菌株混合复现生长动力学特征，需结合临床抗生素引入历史验证抗性基因竞争规律"
+        }
+      ],
+      "L2": [
+        {
+          "steps": [
+            {
+              "step": 1,
+              "head": "抗生素代次",
+              "relation": "选择特定抗性机制",
+              "tail": "外排泵",
+              "claim": "抗生素代次通过选择外排泵机制影响抗性组形成"
+            },
+            {
+              "step": 2,
+              "head": "外排泵",
+              "relation": "决定跨机制适应度差异",
+              "tail": "机制间相对适应度",
+              "claim": "外排泵机制提升在混合培养中的相对适应度"
+            },
+            {
+              "step": 3,
+              "head": "机制间相对适应度",
+              "relation": "塑造抗性组动态演化",
+              "tail": "四环素抗性组",
+              "claim": "跨机制适应度差异驱动四环素抗性组的结构形成"
+            }
+          ],
+          "summary": "通过抗生素代次对特定抗性机制的选择压力，建立机制间适应度差异模型，解释四环素抗性组的动态演化规律"
+        },
+        {
+          "steps": [
+            {
+              "step": 1,
+              "head": "替加环素",
+              "relation": "触发基因发现时序关联",
+              "tail": "临床引入",
+              "claim": "替加环素临床引入与新型抗性基因发现存在时空关联"
+            },
+            {
+              "step": 2,
+              "head": "临床引入",
+              "relation": "促进抗性基因传播",
+              "tail": "基因",
+              "claim": "临床应用压力加速抗性基因在病原体中的扩散"
+            },
+            {
+              "step": 3,
+              "head": "基因",
+              "relation": "构成抗性组核心元件",
+              "tail": "四环素抗性组",
+              "claim": "临床选择压力下抗性基因整合至四环素抗性组"
+            }
+          ],
+          "summary": "揭示替加环素临床应用与抗性基因发现的时空耦合关系，阐明临床选择压力驱动抗性基因整合至抗性组的过程"
+        }
+      ],
+      "L3": [
+        {
+          "steps": [
+            {
+              "step": 1,
+              "head": "高通量条形码测序协议",
+              "relation": "量化混合培养中机制特异性菌株的相对丰度",
+              "tail": "相对丰度",
+              "claim": "高通量条形码测序协议 量化混合培养中机制特异性菌株的相对丰度 相对丰度"
+            },
+            {
+              "step": 2,
+              "head": "相对丰度",
+              "relation": "反映抗生素代次对特定抗性机制的选择压力",
+              "tail": "抗生素代次",
+              "claim": "相对丰度 反映抗生素代次对特定抗性机制的选择压力 抗生素代次"
+            },
+            {
+              "step": 3,
+              "head": "抗生素代次",
+              "relation": "驱动四环素抗性组的形成与演化",
+              "tail": "四环素抗性组",
+              "claim": "抗生素代次 驱动四环素抗性组的形成与演化 四环素抗性组"
+            }
+          ],
+          "summary": "通过高通量测序量化混合培养中菌株丰度，结合抗生素代次选择压力数据，闭环验证四环素抗性组形成机制"
+        },
+        {
+          "steps": [
+            {
+              "step": 1,
+              "head": "机制特异性菌株混合",
+              "relation": "通过生长动力学复现全菌株群落动态",
+              "tail": "生长动力学",
+              "claim": "机制特异性菌株混合 通过生长动力学复现全菌株群落动态 生长动力学"
+            },
+            {
+              "step": 2,
+              "head": "生长动力学",
+              "relation": "关联最低抑菌浓度差异揭示机制间相对适应度",
+              "tail": "最低抑菌浓度",
+              "claim": "生长动力学 关联最低抑菌浓度差异揭示机制间相对适应度 最低抑菌浓度"
+            },
+            {
+              "step": 3,
+              "head": "最低抑菌浓度",
+              "relation": "验证进化动力学与临床抗生素部署历史的映射关系",
+              "tail": "进化动力学",
+              "claim": "最低抑菌浓度 验证进化动力学与临床抗生素部署历史的映射关系 进化动力学"
+            }
+          ],
+          "summary": "利用机制特异性混合实验复现群落动态，结合最小抑菌浓度测定揭示适应度差异，最终验证抗性组进化动力学模型"
+        }
+      ]
+    },
+    "raw_responses": [],
+    "elapsed_seconds": 8.916854858398438e-05
+  },
+  {
+    "paper_id": "69cf875bdbf7",
+    "method_name": "P1",
+    "free_text_hypotheses": [
+      "本研究提出一种假设：准金属有机框架纳米酶（例如基于钴-咪唑骨架的MOF）可通过双重机制诱导癌症免疫治疗：首先，其类过氧化氢酶活性在肿瘤微环境中特异性催化过氧化氢生成羟基自由基（·OH），触发ACSL4依赖的脂质过氧化级联反应，导致癌细胞铁死亡；其次，纳米酶表面锚定的免疫激动剂（如TLR7/8配体）通过铁死亡释放的损伤相关分子模式（DAMPs）协同激活树突状细胞，促进CD8+ T细胞的肿瘤浸润。该假说可通过构建靶向叶酸受体的MOF纳米体系，在小鼠结肠癌模型中结合铁死亡抑制剂（如ferrostatin-1）和免疫检查点阻断实验进行验证，预期将揭示纳米酶催化活性与免疫原性死亡的分子耦联机制。"
+    ],
+    "structured_paths": {},
+    "raw_responses": [
+      "本研究提出一种假设：准金属有机框架纳米酶（例如基于钴-咪唑骨架的MOF）可通过双重机制诱导癌症免疫治疗：首先，其类过氧化氢酶活性在肿瘤微环境中特异性催化过氧化氢生成羟基自由基（·OH），触发ACSL4依赖的脂质过氧化级联反应，导致癌细胞铁死亡；其次，纳米酶表面锚定的免疫激动剂（如TLR7/8配体）通过铁死亡释放的损伤相关分子模式（DAMPs）协同激活树突状细胞，促进CD8+ T细胞的肿瘤浸润。该假说可通过构建靶向叶酸受体的MOF纳米体系，在小鼠结肠癌模型中结合铁死亡抑制剂（如ferrostatin-1）和免疫检查点阻断实验进行验证，预期将揭示纳米酶催化活性与免疫原性死亡的分子耦联机制。"
+    ],
+    "elapsed_seconds": 18.469563484191895
+  },
+  {
+    "paper_id": "69cf875bdbf7",
+    "method_name": "P2",
+    "free_text_hypotheses": [
+      "L1 Hypothesis:  \nThe quasi-metal-organic framework nanozyme Q-MIL-53(Fe) achieves enhanced cancer immunotherapy through a synergistic mechanism where its porous structure and deligandation-induced active sites amplify peroxidase/catalase-mimic activities, triggering iron-dependent ferroptosis in tumor cells. This ferroptotic cell death releases immunogenic signals (e.g., DAMPs) that activate dendritic cell maturation and T-cell infiltration, while the nanozyme's glutathione depletion capacity further disrupts redox homeostasis to sustain immune activation. The combination with PD-1 blockade synergistically enhances antitumor immunity by overcoming checkpoint inhibition.  \n\nL2 Hypotheses:  \n- Q1: The hierarchical porous structure of Q-MIL-53(Fe) enhances peroxidase-mimic activity by increasing accessible Fe³⁺/Fe²⁺ active sites for H₂O₂ decomposition, while its defective coordination framework accelerates electron transfer between metal nodes and substrates, lowering the activation energy barrier for catalytic reactions.  \n- Q2: Ferroptosis induced by Q-MIL-53(Fe) triggers the release of lipid peroxidation products and mitochondrial DAMPs (e.g., mtDNA, cytochrome c), which are recognized by dendritic cells via TLR4 signaling, promoting pro-inflammatory cytokine secretion (e.g., IL-12) and cross-priming of CD8⁺ T cells, thereby overcoming immunosuppressive tumor microenvironment.  \n\n...  \n**Cross-Disciplinary Innovation**:  \nThe integration of quasi-MOF design principles (materials science) with redox chemistry (chemistry) and immunogenic cell death mechanisms (clinical medicine) suggests that tuning nanomaterial defects and porosity could decouple catalytic activity from immunomodulatory signaling, enabling precision nanozyme therapies that combine direct tumor cytotoxicity with adaptive immune activation."
+    ],
+    "structured_paths": {},
+    "raw_responses": [
+      "L1 Hypothesis:  \nThe quasi-metal-organic framework nanozyme Q-MIL-53(Fe) achieves enhanced cancer immunotherapy through a synergistic mechanism where its porous structure and deligandation-induced active sites amplify peroxidase/catalase-mimic activities, triggering iron-dependent ferroptosis in tumor cells. This ferroptotic cell death releases immunogenic signals (e.g., DAMPs) that activate dendritic cell maturation and T-cell infiltration, while the nanozyme's glutathione depletion capacity further disrupts redox homeostasis to sustain immune activation. The combination with PD-1 blockade synergistically enhances antitumor immunity by overcoming checkpoint inhibition.  \n\nL2 Hypotheses:  \n- Q1: The hierarchical porous structure of Q-MIL-53(Fe) enhances peroxidase-mimic activity by increasing accessible Fe³⁺/Fe²⁺ active sites for H₂O₂ decomposition, while its defective coordination framework accelerates electron transfer between metal nodes and substrates, lowering the activation energy barrier for catalytic reactions.  \n- Q2: Ferroptosis induced by Q-MIL-53(Fe) triggers the release of lipid peroxidation products and mitochondrial DAMPs (e.g., mtDNA, cytochrome c), which are recognized by dendritic cells via TLR4 signaling, promoting pro-inflammatory cytokine secretion (e.g., IL-12) and cross-priming of CD8⁺ T cells, thereby overcoming immunosuppressive tumor microenvironment.  \n\n...  \n**Cross-Disciplinary Innovation**:  \nThe integration of quasi-MOF design principles (materials science) with redox chemistry (chemistry) and immunogenic cell death mechanisms (clinical medicine) suggests that tuning nanomaterial defects and porosity could decouple catalytic activity from immunomodulatory signaling, enabling precision nanozyme therapies that combine direct tumor cytotoxicity with adaptive immune activation."
+    ],
+    "elapsed_seconds": 31.85606575012207
+  },
+  {
+    "paper_id": "69cf875bdbf7",
+    "method_name": "P3",
+    "free_text_hypotheses": [
+      "L1 Hypothesis:  \n铁基准金属有机框架纳米酶(Q-MIL-53(Fe))通过其多孔结构（材料科学）增强芬顿反应介导的活性氧生成（化学），诱导肿瘤细胞铁死亡（化学），同时释放损伤相关分子模式（临床医学）。该过程激活树突状细胞成熟（临床医学），促进T淋巴细胞浸润（临床医学），并通过程序性细胞死亡蛋白1抗体阻断免疫检查点（临床医学），形成化学-材料-医学跨尺度协同的抗肿瘤免疫治疗机制。\n\nL2 Hypotheses:  \n- Q1: 材料科学中的多孔结构通过扩大比表面积并暴露更多铁活性中心（化学），使H₂O₂更易接近纳米酶催化位点，从而增强过氧化物酶模拟活性（化学）。可通过对比不同孔径准金属有机框架的底物扩散速率和Km值验证。  \n- Q2: 铁死亡过程中脂质过氧化物积累（化学）触发免疫原性细胞死亡（临床医学），释放ATP和HMGB1等损伤相关分子模式（临床医学），通过TLR4受体激活树突状细胞成熟（临床医学）。可通过阻断P2X7受体或TLR4信号通路观察抗肿瘤T细胞反应减弱来验证。\n\nL3 Hypotheses:  \n- Q1: 可控脱配体策略（材料科学）通过部分破坏MIL-53(Fe)的配位键，使铁离子配位不饱和度提高（化学），增强芬顿反应（化学）产生羟基自由基（活性氧），同时谷胱甘肽耗竭（化学）抑制抗氧化防御。该氧化应激环境与程序性细胞死亡蛋白1抗体（临床医学）联用时，可解除PD-1/PD-L1介导的T细胞耗竭，增强肿瘤微环境中的CD8+ T细胞浸润（临床医学）。可通过检测肿瘤组织ROS水平、GSH/GSSG比值和流式细胞术分析T细胞表型验证。  \n- Q2: 准金属有机框架的过渡态结构（材料科学：从金属有机框架向金属氧化物转化）通过密度泛函理论计算（化学）显示其d带中心更接近费米能级，增强类金属氧化还原活性（化学）。这种结构特性使Q-MIL-53(Fe)在肿瘤微环境（临床医学）中表现出pH响应的过氧化物酶/催化酶双模活性（化学），在酸性条件下优先产生活性氧并诱导铁死亡（化学），同时保留正常组织的生物相容性（材料科学）。可通过原位XPS分析不同pH下Fe²+/Fe³+价态变化和ROS特异性探针成像验证。"
+    ],
+    "structured_paths": {},
+    "raw_responses": [
+      "L1 Hypothesis:  \n铁基准金属有机框架纳米酶(Q-MIL-53(Fe))通过其多孔结构（材料科学）增强芬顿反应介导的活性氧生成（化学），诱导肿瘤细胞铁死亡（化学），同时释放损伤相关分子模式（临床医学）。该过程激活树突状细胞成熟（临床医学），促进T淋巴细胞浸润（临床医学），并通过程序性细胞死亡蛋白1抗体阻断免疫检查点（临床医学），形成化学-材料-医学跨尺度协同的抗肿瘤免疫治疗机制。\n\nL2 Hypotheses:  \n- Q1: 材料科学中的多孔结构通过扩大比表面积并暴露更多铁活性中心（化学），使H₂O₂更易接近纳米酶催化位点，从而增强过氧化物酶模拟活性（化学）。可通过对比不同孔径准金属有机框架的底物扩散速率和Km值验证。  \n- Q2: 铁死亡过程中脂质过氧化物积累（化学）触发免疫原性细胞死亡（临床医学），释放ATP和HMGB1等损伤相关分子模式（临床医学），通过TLR4受体激活树突状细胞成熟（临床医学）。可通过阻断P2X7受体或TLR4信号通路观察抗肿瘤T细胞反应减弱来验证。\n\nL3 Hypotheses:  \n- Q1: 可控脱配体策略（材料科学）通过部分破坏MIL-53(Fe)的配位键，使铁离子配位不饱和度提高（化学），增强芬顿反应（化学）产生羟基自由基（活性氧），同时谷胱甘肽耗竭（化学）抑制抗氧化防御。该氧化应激环境与程序性细胞死亡蛋白1抗体（临床医学）联用时，可解除PD-1/PD-L1介导的T细胞耗竭，增强肿瘤微环境中的CD8+ T细胞浸润（临床医学）。可通过检测肿瘤组织ROS水平、GSH/GSSG比值和流式细胞术分析T细胞表型验证。  \n- Q2: 准金属有机框架的过渡态结构（材料科学：从金属有机框架向金属氧化物转化）通过密度泛函理论计算（化学）显示其d带中心更接近费米能级，增强类金属氧化还原活性（化学）。这种结构特性使Q-MIL-53(Fe)在肿瘤微环境（临床医学）中表现出pH响应的过氧化物酶/催化酶双模活性（化学），在酸性条件下优先产生活性氧并诱导铁死亡（化学），同时保留正常组织的生物相容性（材料科学）。可通过原位XPS分析不同pH下Fe²+/Fe³+价态变化和ROS特异性探针成像验证。"
+    ],
+    "elapsed_seconds": 38.52609920501709
+  },
+  {
+    "paper_id": "69cf875bdbf7",
+    "method_name": "P4",
+    "free_text_hypotheses": [
+      "L1 Hypothesis:\nhypothesis: Quasi-metal-organic frameworks like Q-MIL-53(Fe) may synergistically modulate tumor microenvironment pH through their porous structure, enhancing Fenton reaction efficiency and immunogenic cell death signals. This dual physicochemical-biological regulation could create a self-amplifying loop where reactive oxygen species generation preferentially occurs in acidic tumor regions, promoting damage-associated molecular pattern release while preserving normal tissue.\nreasoning: \n1. Porous structure (materials science) enables localized pH buffering → \n2. Acidic tumor microenvironment stabilization (clinical medicine) enhances Fe²⁺/Fe³⁺ redox cycling → \n3. Increased Fenton reaction efficiency (chemistry) leads to concentrated ROS production → \n4. Spatially controlled immunogenic cell death (clinical medicine) with preserved antigen presentation → \n5. Enhanced dendritic cell maturation through optimized damage-associated molecular pattern gradients\nkey_concepts: porous structure, tumor microenvironment, Fenton reaction, immunogenic cell death, damage-associated molecular patterns\ndisciplines_bridged: 材料科学, 临床医学, 化学\n\nL2 Hypotheses:\n- Q1:\n    hypothesis: Hierarchically porous quasi-metal-organic frameworks may exhibit differential enzyme-mimic activity across pore size regimes, where mesopores (>2nm) facilitate substrate diffusion while micropores (<1nm) concentrate hydrogen peroxide through confinement effects.\n    reasoning:\n    1. Pore size distribution (materials science) governs molecular transport kinetics → \n    2. Substrate partitioning between micropores and mesopores (chemistry) creates reaction gradients → \n    3. Confinement-enhanced hydrogen peroxide concentration (chemistry) amplifies catalase/peroxidase activity → \n    4. Bimodal porosity optimizes both substrate access and reaction efficiency\n    key_concepts: porous structure, peroxidase-mimic activity, catalase-mimic activity, substrate diffusion, pore size distribution\n    disciplines_bridged: 材料科学, 化学\n\n- Q2:\n    hypothesis: Ferroptosis induction by quasi-metal-organic framework nanozymes may selectively activate STING pathway in dendritic cells through mitochondrial DNA release, rather than traditional ER stress pathways associated with immunogenic cell death.\n    reasoning:\n    1. Iron-mediated lipid peroxidation (chemistry) causes mitochondrial membrane rupture → \n    2. Mitochondrial DNA (mtDNA) release (clinical medicine) preferentially engages cGAS-STING sensing → \n    3. mtDNA-STING signaling (clinical medicine) drives Type I interferon production without requiring calreticulin exposure → \n    4. Distinct cytokine profile compared to classical immunogenic cell death pathways\n    key_concepts: ferroptosis, mitochondrial DNA, STING pathway, dendritic cell maturation, lipid peroxidation\n    disciplines_bridged: 化学, 临床医学\n\nL3 Hypotheses:\n- Q1:\n    hypothesis: Controlled deligandation strategy may create interfacial Fe-O-Mn species at quasi-metal-organic framework/metal oxide heterojunctions, enabling dual redox catalysis where Fe sites drive Fenton reaction and Mn sites catalyze glutathione depletion synergistically.\n    reasoning:\n    1. Partial ligand removal (materials science) exposes metal nodes for oxide phase transition → \n    2. Interfacial charge transfer (chemistry) between Fe and Mn creates mixed valency → \n    3. Spatially separated redox active sites (chemistry) enable concurrent H2O2 decomposition and GSH oxidation → \n    4. ROS-GSH axis modulation (clinical medicine) amplifies ferroptotic signaling when combined with PD-1 blockade\n    key_concepts: controlled deligandation strategy, Fenton reaction, glutathione depletion, Fe-O-Mn heterojunction, programmed cell death protein 1 antibody\n    disciplines_bridged: 材料科学, 化学, 临床医学\n\n- Q2:\n    hypothesis: The coordination polymer nature of quasi-metal-organic frameworks may enable dynamic adaptation to tumor microenvironment redox states through reversible ligand-metal bonding, functioning as a \"chemical stress valve\" that enhances treatment persistence.\n    reasoning:\n    1. Redox-responsive ligand-metal bonds (chemistry) undergo reversible cleavage under oxidative stress → \n    2. Structural breathing (materials science) modulates pore accessibility for H2O2 and GSH → \n    3. Time-dependent exposure of active sites creates sustained ROS generation profile → \n    4. Prolonged oxidative stress (clinical medicine) maintains T cell infiltration through sustained CXCL9/10 secretion\n    key_concepts: coordination polymer, redox state, tumor microenvironment, structural breathing, lymphocyte infiltration\n    disciplines_bridged: 材料科学, 化学, 临床医学"
+    ],
+    "structured_paths": {},
+    "raw_responses": [
+      "L1 Hypothesis:\nhypothesis: Quasi-metal-organic frameworks like Q-MIL-53(Fe) may synergistically modulate tumor microenvironment pH through their porous structure, enhancing Fenton reaction efficiency and immunogenic cell death signals. This dual physicochemical-biological regulation could create a self-amplifying loop where reactive oxygen species generation preferentially occurs in acidic tumor regions, promoting damage-associated molecular pattern release while preserving normal tissue.\nreasoning: \n1. Porous structure (materials science) enables localized pH buffering → \n2. Acidic tumor microenvironment stabilization (clinical medicine) enhances Fe²⁺/Fe³⁺ redox cycling → \n3. Increased Fenton reaction efficiency (chemistry) leads to concentrated ROS production → \n4. Spatially controlled immunogenic cell death (clinical medicine) with preserved antigen presentation → \n5. Enhanced dendritic cell maturation through optimized damage-associated molecular pattern gradients\nkey_concepts: porous structure, tumor microenvironment, Fenton reaction, immunogenic cell death, damage-associated molecular patterns\ndisciplines_bridged: 材料科学, 临床医学, 化学\n\nL2 Hypotheses:\n- Q1:\n    hypothesis: Hierarchically porous quasi-metal-organic frameworks may exhibit differential enzyme-mimic activity across pore size regimes, where mesopores (>2nm) facilitate substrate diffusion while micropores (<1nm) concentrate hydrogen peroxide through confinement effects.\n    reasoning:\n    1. Pore size distribution (materials science) governs molecular transport kinetics → \n    2. Substrate partitioning between micropores and mesopores (chemistry) creates reaction gradients → \n    3. Confinement-enhanced hydrogen peroxide concentration (chemistry) amplifies catalase/peroxidase activity → \n    4. Bimodal porosity optimizes both substrate access and reaction efficiency\n    key_concepts: porous structure, peroxidase-mimic activity, catalase-mimic activity, substrate diffusion, pore size distribution\n    disciplines_bridged: 材料科学, 化学\n\n- Q2:\n    hypothesis: Ferroptosis induction by quasi-metal-organic framework nanozymes may selectively activate STING pathway in dendritic cells through mitochondrial DNA release, rather than traditional ER stress pathways associated with immunogenic cell death.\n    reasoning:\n    1. Iron-mediated lipid peroxidation (chemistry) causes mitochondrial membrane rupture → \n    2. Mitochondrial DNA (mtDNA) release (clinical medicine) preferentially engages cGAS-STING sensing → \n    3. mtDNA-STING signaling (clinical medicine) drives Type I interferon production without requiring calreticulin exposure → \n    4. Distinct cytokine profile compared to classical immunogenic cell death pathways\n    key_concepts: ferroptosis, mitochondrial DNA, STING pathway, dendritic cell maturation, lipid peroxidation\n    disciplines_bridged: 化学, 临床医学\n\nL3 Hypotheses:\n- Q1:\n    hypothesis: Controlled deligandation strategy may create interfacial Fe-O-Mn species at quasi-metal-organic framework/metal oxide heterojunctions, enabling dual redox catalysis where Fe sites drive Fenton reaction and Mn sites catalyze glutathione depletion synergistically.\n    reasoning:\n    1. Partial ligand removal (materials science) exposes metal nodes for oxide phase transition → \n    2. Interfacial charge transfer (chemistry) between Fe and Mn creates mixed valency → \n    3. Spatially separated redox active sites (chemistry) enable concurrent H2O2 decomposition and GSH oxidation → \n    4. ROS-GSH axis modulation (clinical medicine) amplifies ferroptotic signaling when combined with PD-1 blockade\n    key_concepts: controlled deligandation strategy, Fenton reaction, glutathione depletion, Fe-O-Mn heterojunction, programmed cell death protein 1 antibody\n    disciplines_bridged: 材料科学, 化学, 临床医学\n\n- Q2:\n    hypothesis: The coordination polymer nature of quasi-metal-organic frameworks may enable dynamic adaptation to tumor microenvironment redox states through reversible ligand-metal bonding, functioning as a \"chemical stress valve\" that enhances treatment persistence.\n    reasoning:\n    1. Redox-responsive ligand-metal bonds (chemistry) undergo reversible cleavage under oxidative stress → \n    2. Structural breathing (materials science) modulates pore accessibility for H2O2 and GSH → \n    3. Time-dependent exposure of active sites creates sustained ROS generation profile → \n    4. Prolonged oxidative stress (clinical medicine) maintains T cell infiltration through sustained CXCL9/10 secretion\n    key_concepts: coordination polymer, redox state, tumor microenvironment, structural breathing, lymphocyte infiltration\n    disciplines_bridged: 材料科学, 化学, 临床医学"
+    ],
+    "elapsed_seconds": 64.05088233947754
+  },
+  {
+    "paper_id": "69cf875bdbf7",
+    "method_name": "P5",
+    "free_text_hypotheses": [
+      "主学科化学的准金属有机框架纳米酶通过诱导铁死亡触发免疫原性细胞死亡，临床医学补位实现抗肿瘤免疫激活",
+      "材料科学的多孔结构增强过氧化物酶模拟活性机制，通过谷胱甘肽耗竭驱动铁死亡，化学学科补位优化治疗效能",
+      "临床医学的程序性细胞死亡蛋白1抗体联合治疗通过阻断免疫检查点，化学学科补位增强抗肿瘤免疫反应强度",
+      "多孔结构通过构成准金属有机框架纳米酶增强其过氧化物酶模拟活性，进而催化芬顿反应促进铁死亡",
+      "铁死亡导致免疫原性细胞死亡并释放损伤相关分子模式，进而激活抗肿瘤免疫反应",
+      "通过可控脱配体策略制备的准金属有机框架纳米酶催化芬顿反应产生活性氧，结合程序性细胞死亡蛋白1抗体增强癌症免疫治疗效果的跨学科验证闭环"
+    ],
+    "structured_paths": {
+      "L1": [
+        {
+          "steps": [
+            {
+              "step": 1,
+              "head": "准金属有机框架纳米酶",
+              "relation": "诱导",
+              "tail": "铁死亡",
+              "claim": "准金属有机框架纳米酶 诱导 铁死亡"
+            },
+            {
+              "step": 2,
+              "head": "铁死亡",
+              "relation": "导致",
+              "tail": "免疫原性细胞死亡",
+              "claim": "铁死亡 导致 免疫原性细胞死亡"
+            },
+            {
+              "step": 3,
+              "head": "免疫原性细胞死亡",
+              "relation": "激活抗肿瘤免疫反应",
+              "tail": "癌症免疫治疗",
+              "claim": "免疫原性细胞死亡 激活抗肿瘤免疫反应 癌症免疫治疗"
+            }
+          ],
+          "summary": "主学科化学的准金属有机框架纳米酶通过诱导铁死亡触发免疫原性细胞死亡，临床医学补位实现抗肿瘤免疫激活"
+        },
+        {
+          "steps": [
+            {
+              "step": 1,
+              "head": "准金属有机框架纳米酶",
+              "relation": "通过多孔结构增强",
+              "tail": "过氧化物酶模拟活性",
+              "claim": "准金属有机框架纳米酶 通过多孔结构增强 过氧化物酶模拟活性"
+            },
+            {
+              "step": 2,
+              "head": "过氧化物酶模拟活性",
+              "relation": "引发谷胱甘肽耗竭",
+              "tail": "谷胱甘肽耗竭",
+              "claim": "过氧化物酶模拟活性 引发谷胱甘肽耗竭 谷胱甘肽耗竭"
+            },
+            {
+              "step": 3,
+              "head": "谷胱甘肽耗竭",
+              "relation": "驱动铁死亡进程",
+              "tail": "癌症免疫治疗",
+              "claim": "谷胱甘肽耗竭 驱动铁死亡进程 癌症免疫治疗"
+            }
+          ],
+          "summary": "材料科学的多孔结构增强过氧化物酶模拟活性机制，通过谷胱甘肽耗竭驱动铁死亡，化学学科补位优化治疗效能"
+        },
+        {
+          "steps": [
+            {
+              "step": 1,
+              "head": "准金属有机框架纳米酶",
+              "relation": "联合程序性细胞死亡蛋白1抗体",
+              "tail": "程序性细胞死亡蛋白1抗体",
+              "claim": "准金属有机框架纳米酶 联合程序性细胞死亡蛋白1抗体 程序性细胞死亡蛋白1抗体"
+            },
+            {
+              "step": 2,
+              "head": "程序性细胞死亡蛋白1抗体",
+              "relation": "阻断免疫检查点",
+              "tail": "抗肿瘤免疫反应",
+              "claim": "程序性细胞死亡蛋白1抗体 阻断免疫检查点 抗肿瘤免疫反应"
+            },
+            {
+              "step": 3,
+              "head": "抗肿瘤免疫反应",
+              "relation": "增强淋巴细胞浸润",
+              "tail": "癌症免疫治疗",
+              "claim": "抗肿瘤免疫反应 增强淋巴细胞浸润 癌症免疫治疗"
+            }
+          ],
+          "summary": "临床医学的程序性细胞死亡蛋白1抗体联合治疗通过阻断免疫检查点，化学学科补位增强抗肿瘤免疫反应强度"
+        }
+      ],
+      "L2": [
+        {
+          "steps": [
+            {
+              "step": 1,
+              "head": "多孔结构",
+              "relation": "构成",
+              "tail": "准金属有机框架纳米酶",
+              "claim": "多孔结构 构成 准金属有机框架纳米酶"
+            },
+            {
+              "step": 2,
+              "head": "准金属有机框架纳米酶",
+              "relation": "具有",
+              "tail": "过氧化物酶模拟活性",
+              "claim": "准金属有机框架纳米酶 具有 过氧化物酶模拟活性"
+            },
+            {
+              "step": 3,
+              "head": "过氧化物酶模拟活性",
+              "relation": "催化",
+              "tail": "芬顿反应",
+              "claim": "过氧化物酶模拟活性 催化 芬顿反应"
+            }
+          ],
+          "summary": "多孔结构通过构成准金属有机框架纳米酶增强其过氧化物酶模拟活性，进而催化芬顿反应促进铁死亡"
+        },
+        {
+          "steps": [
+            {
+              "step": 1,
+              "head": "铁死亡",
+              "relation": "导致",
+              "tail": "免疫原性细胞死亡",
+              "claim": "铁死亡 导致 免疫原性细胞死亡"
+            },
+            {
+              "step": 2,
+              "head": "免疫原性细胞死亡",
+              "relation": "释放触发",
+              "tail": "损伤相关分子模式",
+              "claim": "免疫原性细胞死亡 释放触发 损伤相关分子模式"
+            },
+            {
+              "step": 3,
+              "head": "损伤相关分子模式",
+              "relation": "激活",
+              "tail": "抗肿瘤免疫反应",
+              "claim": "损伤相关分子模式 激活 抗肿瘤免疫反应"
+            }
+          ],
+          "summary": "铁死亡导致免疫原性细胞死亡并释放损伤相关分子模式，进而激活抗肿瘤免疫反应"
+        }
+      ],
+      "L3": [
+        {
+          "steps": [
+            {
+              "step": 1,
+              "head": "可控脱配体策略",
+              "relation": "通过",
+              "tail": "准金属有机框架纳米酶",
+              "claim": "可控脱配体策略 通过 准金属有机框架纳米酶"
+            },
+            {
+              "step": 2,
+              "head": "准金属有机框架纳米酶",
+              "relation": "催化",
+              "tail": "芬顿反应",
+              "claim": "准金属有机框架纳米酶 催化 芬顿反应"
+            },
+            {
+              "step": 3,
+              "head": "芬顿反应",
+              "relation": "产生",
+              "tail": "活性氧",
+              "claim": "芬顿反应 产生 活性氧"
+            }
+          ],
+          "summary": "通过可控脱配体策略制备的准金属有机框架纳米酶催化芬顿反应产生活性氧，结合程序性细胞死亡蛋白1抗体增强癌症免疫治疗效果的跨学科验证闭环"
+        }
+      ]
+    },
+    "raw_responses": [],
+    "elapsed_seconds": 3.814697265625e-05
+  },
+  {
+    "paper_id": "ba896cd30ccf",
+    "method_name": "P1",
+    "free_text_hypotheses": [
+      "Hypothesis:  \n通过构建三维分级多孔BiVO₄/石墨烯异质结构，并在晶格中引入定向硫掺杂诱导的局域电场，可同步优化载流子分离与表面水氧化动力学。该假设基于硫原子在BiVO₄晶格中替代氧位点时产生的不对称电荷分布，结合三维多孔结构暴露的高指数晶面与石墨烯界面形成的梯度费米能级，将形成跨尺度的电子-空穴对定向迁移通道，从而突破传统掺杂策略对电荷复合率的抑制极限，使光电流密度在AM1.5G标准光照下提升至理论值的85%以上。可通过原位XPS、开尔文探针力显微镜（KPFM）及瞬态吸收光谱验证电荷分离效率，并结合密度泛函理论计算缺陷态密度与载流子迁移路径的相关性。"
+    ],
+    "structured_paths": {},
+    "raw_responses": [
+      "Hypothesis:  \n通过构建三维分级多孔BiVO₄/石墨烯异质结构，并在晶格中引入定向硫掺杂诱导的局域电场，可同步优化载流子分离与表面水氧化动力学。该假设基于硫原子在BiVO₄晶格中替代氧位点时产生的不对称电荷分布，结合三维多孔结构暴露的高指数晶面与石墨烯界面形成的梯度费米能级，将形成跨尺度的电子-空穴对定向迁移通道，从而突破传统掺杂策略对电荷复合率的抑制极限，使光电流密度在AM1.5G标准光照下提升至理论值的85%以上。可通过原位XPS、开尔文探针力显微镜（KPFM）及瞬态吸收光谱验证电荷分离效率，并结合密度泛函理论计算缺陷态密度与载流子迁移路径的相关性。"
+    ],
+    "elapsed_seconds": 20.380040168762207
+  },
+  {
+    "paper_id": "ba896cd30ccf",
+    "method_name": "P2",
+    "free_text_hypotheses": [
+      "L1 Hypothesis:  \nThe integration of gradient oxygen vacancy distribution in BiVO₄ photoanodes with sea-urchin-like FeOOH cocatalysts enhances charge separation efficiency and surface reaction kinetics through synergistic effects of dipole field-induced carrier migration and nanostructured catalytic active sites, thereby achieving high solar-to-hydrogen efficiency and long-term stability in scalable photoelectrochemical systems.\n\nL2 Hypotheses:  \n- Q1: Silicon photovoltaic integration compensates for the photoanode's voltage deficit by providing an external bias, enabling efficient charge extraction and reducing interfacial recombination losses in large-scale artificial leaf systems. This integration optimizes the overall system's power conversion efficiency by aligning the photovoltaic spectral response with the BiVO₄ bandgap while maintaining mechanical robustness for outdoor durability.  \n- Q2: The gradient oxygen vacancies in BiVO₄ create a spatially graded dipole field that directionally drives hole transport toward the surface, while the sea-urchin-like FeOOH nanostructure provides abundant active sites with optimized adsorption geometry for water oxidation intermediates. Their combination reduces charge transfer resistance and suppresses non-radiative recombination, leading to enhanced photocurrent density under AM 1.5 G illumination."
+    ],
+    "structured_paths": {},
+    "raw_responses": [
+      "L1 Hypothesis:  \nThe integration of gradient oxygen vacancy distribution in BiVO₄ photoanodes with sea-urchin-like FeOOH cocatalysts enhances charge separation efficiency and surface reaction kinetics through synergistic effects of dipole field-induced carrier migration and nanostructured catalytic active sites, thereby achieving high solar-to-hydrogen efficiency and long-term stability in scalable photoelectrochemical systems.\n\nL2 Hypotheses:  \n- Q1: Silicon photovoltaic integration compensates for the photoanode's voltage deficit by providing an external bias, enabling efficient charge extraction and reducing interfacial recombination losses in large-scale artificial leaf systems. This integration optimizes the overall system's power conversion efficiency by aligning the photovoltaic spectral response with the BiVO₄ bandgap while maintaining mechanical robustness for outdoor durability.  \n- Q2: The gradient oxygen vacancies in BiVO₄ create a spatially graded dipole field that directionally drives hole transport toward the surface, while the sea-urchin-like FeOOH nanostructure provides abundant active sites with optimized adsorption geometry for water oxidation intermediates. Their combination reduces charge transfer resistance and suppresses non-radiative recombination, leading to enhanced photocurrent density under AM 1.5 G illumination."
+    ],
+    "elapsed_seconds": 23.647063493728638
+  },
+  {
+    "paper_id": "ba896cd30ccf",
+    "method_name": "P3",
+    "free_text_hypotheses": [
+      "L1 Hypothesis: 钒酸铋光阳极的梯度氧空位分布通过构建定向偶极子场（化学-缺陷工程），与材料科学中的导带边位置调控形成协同效应，可同步提升光生载流子的迁移速率（材料科学-电子迁移率）和空穴扩散长度（化学-电荷分离），从而突破金属氧化物半导体固有的光电转换效率瓶颈。该机制可通过原位X射线光电子能谱结合瞬态吸收光谱进行验证。\n\nL2 Hypotheses:\n- Q1: 硅基光伏集成通过提供外置偏压补偿（材料科学-硅光伏电池）与建立局域电场（化学-电解质配方优化），可同时抑制钒酸铋光阳极的光电腐蚀（化学-光电阳极腐蚀）并增强乙酰丙酮氧化钒（化学-硫化物氧化）的界面电荷转移，使得规模化人工树叶装置在自然阳光下（材料科学-自然阳光）保持2.7%太阳能-氢能转换效率。可通过对比有无光伏集成装置的电化学阻抗谱进行验证。\n- Q2: 梯度氧空位诱导的强偶极子场（化学-偶极子场）与海胆状羟基氧化铁助催化剂的三维界面（材料科学-纳米结构调控）通过形成协同界面电场，可实现光生空穴的定向迁移（化学-电荷分离）和析氧反应过电位降低（化学-助催化剂活性），从而突破BiVO4光阳极的理论光电流密度极限。该假设可通过空间分辨的开尔文探针力显微镜结合密度泛函理论计算进行验证。\n\nL3 Hypotheses:\n- Q1: 硅光伏电池与梯度氧空位BiVO4光阳极的异质集成通过构建双极性电荷传输通道（材料科学-族半导体）与梯度缺陷态调控（化学-氧空位工程），可使电子迁移率（材料科学-电子迁移率）与空穴扩散长度（化学-载流子寿命）形成最优匹配，从而在AM 1.5G标准光照下实现8.4%太阳能-氢能转换效率。该机制可通过温度依赖的光电响应测试与第一性原理计算耦合验证。\n- Q2: 在441 cm2规模化人工树叶装置中，梯度氧空位的自修复特性（化学-缺陷动力学）与钙钛矿光电化学电池结构（材料科学-钙钛矿结构）的应力缓冲效应形成协同作用，可抑制蠕虫状钒酸铋结构（化学-材料形貌）在长期运行中的相分离，通过原位X射线衍射追踪材料结构演变与电化学性能衰减的关联性即可验证该耦合效应。"
+    ],
+    "structured_paths": {},
+    "raw_responses": [
+      "L1 Hypothesis: 钒酸铋光阳极的梯度氧空位分布通过构建定向偶极子场（化学-缺陷工程），与材料科学中的导带边位置调控形成协同效应，可同步提升光生载流子的迁移速率（材料科学-电子迁移率）和空穴扩散长度（化学-电荷分离），从而突破金属氧化物半导体固有的光电转换效率瓶颈。该机制可通过原位X射线光电子能谱结合瞬态吸收光谱进行验证。\n\nL2 Hypotheses:\n- Q1: 硅基光伏集成通过提供外置偏压补偿（材料科学-硅光伏电池）与建立局域电场（化学-电解质配方优化），可同时抑制钒酸铋光阳极的光电腐蚀（化学-光电阳极腐蚀）并增强乙酰丙酮氧化钒（化学-硫化物氧化）的界面电荷转移，使得规模化人工树叶装置在自然阳光下（材料科学-自然阳光）保持2.7%太阳能-氢能转换效率。可通过对比有无光伏集成装置的电化学阻抗谱进行验证。\n- Q2: 梯度氧空位诱导的强偶极子场（化学-偶极子场）与海胆状羟基氧化铁助催化剂的三维界面（材料科学-纳米结构调控）通过形成协同界面电场，可实现光生空穴的定向迁移（化学-电荷分离）和析氧反应过电位降低（化学-助催化剂活性），从而突破BiVO4光阳极的理论光电流密度极限。该假设可通过空间分辨的开尔文探针力显微镜结合密度泛函理论计算进行验证。\n\nL3 Hypotheses:\n- Q1: 硅光伏电池与梯度氧空位BiVO4光阳极的异质集成通过构建双极性电荷传输通道（材料科学-族半导体）与梯度缺陷态调控（化学-氧空位工程），可使电子迁移率（材料科学-电子迁移率）与空穴扩散长度（化学-载流子寿命）形成最优匹配，从而在AM 1.5G标准光照下实现8.4%太阳能-氢能转换效率。该机制可通过温度依赖的光电响应测试与第一性原理计算耦合验证。\n- Q2: 在441 cm2规模化人工树叶装置中，梯度氧空位的自修复特性（化学-缺陷动力学）与钙钛矿光电化学电池结构（材料科学-钙钛矿结构）的应力缓冲效应形成协同作用，可抑制蠕虫状钒酸铋结构（化学-材料形貌）在长期运行中的相分离，通过原位X射线衍射追踪材料结构演变与电化学性能衰减的关联性即可验证该耦合效应。"
+    ],
+    "elapsed_seconds": 25.25948667526245
+  },
+  {
+    "paper_id": "ba896cd30ccf",
+    "method_name": "P4",
+    "free_text_hypotheses": [
+      "L1 Hypothesis:\n  hypothesis: 梯度氧空位钒酸铋的偶极子场调控与硅光伏电池的导带边位置协同作用，通过跨界面载流子定向迁移增强人工树叶的整体电荷转移效率。\n  reasoning: \n    1. 梯度氧空位在BiVO4体相形成内建电场(已知关系2) → 2. 硅光伏电池的导带边位置(材料科学概念)决定电子注入势垒 → 3. 二者在固态电解质界面形成阶梯式能带结构 → 4. 预测光生载流子在双重电场驱动下实现超长空穴扩散长度(化学概念)的维持\n  key_concepts: 梯度氧空位钒酸铋, 偶极子场, 硅光伏电池, 导带边位置, 空穴扩散长度\n  disciplines_bridged: 化学, 材料科学\n\nL2 Hypotheses:\n- Q1:\n    hypothesis: 硅基光伏集成通过调控电解质局部pH环境，抑制光电阳极腐蚀动力学，从而实现规模化人工树叶的长期稳定性\n    reasoning:\n      1. 硅光伏的光生电子注入(材料科学) → 2. 改变界面处电解质水分子活度 → 3. 通过化学动力学抑制BiVO4的硫化物氧化反应(化学概念) → 4. 预测在441cm²装置中观察到腐蚀电流密度降低50%以上\n    key_concepts: 硅光伏电池, 光电阳极腐蚀, 硫化物氧化, 电解质配方, 规模化\n    disciplines_bridged: 材料科学, 化学\n- Q2:\n    hypothesis: 氧空位梯度分布产生的非对称缺陷态与FeOOH助催化剂的晶面选择性生长存在电子耦合效应，通过调控载流子复合路径提升光电流密度\n    reasoning:\n      1. 梯度氧空位形成缺陷态密度梯度(化学) → 2. 诱导FeOOH沿特定晶向(如β-FeOOH[130]面)择优生长(材料科学) → 3. 形成梯度异质结界面态密度 → 4. 预测在1.23V下观察到载流子寿命延长与乙酰丙酮氧化钒副反应抑制\n    key_concepts: 氧空位, 羟基氧化铁助催化剂, 载流子寿命, 乙酰丙酮氧化钒, 晶面择优生长\n    disciplines_bridged: 化学, 材料科学\n\nL3 Hypotheses:\n- Q1:\n    hypothesis: 硅光伏电池与BiVO4梯度氧空位的协同作用通过光子-声子耦合增强界面电荷收集效率，在8.4%太阳能-氢能转换效率中占比超过30%\n    reasoning:\n      1. 硅基板的声子振动模式(材料科学) → 2. 调制BiVO4的氧空位局域振动模 → 3. 形成共振增强的电-声子耦合 → 4. 预测在AM 1.5G光照下界面复合损失率低于0.15eV⁻¹cm⁻³\n    key_concepts: 硅光伏电池, 梯度氧空位, 电-声子耦合, 界面复合损失, 太阳能-氢能转换效率\n    disciplines_bridged: 材料科学, 化学\n- Q2:\n    hypothesis: 规模化人工树叶中的蠕虫状钒酸铋结构与氧空位迁移能垒存在跨尺度相互作用，通过缺陷动力学调控实现器件尺寸与电荷分离效率的正相关性\n    reasoning:\n      1. 大尺寸器件中光子分布非均匀性(材料科学) → 2. 引发氧空位迁移能垒的空间梯度(化学概念) → 3. 通过蠕虫状结构的各向异性应力释放 → 4. 预测在441cm²装置中观察到缺陷聚集团簇尺寸与光电流密度呈非线性正相关\n    key_concepts: 规模化, 蠕虫状钒酸铋, 氧空位迁移能垒, 缺陷聚集团簇, 光电流密度\n    disciplines_bridged: 材料科学, 化学"
+    ],
+    "structured_paths": {},
+    "raw_responses": [
+      "L1 Hypothesis:\n  hypothesis: 梯度氧空位钒酸铋的偶极子场调控与硅光伏电池的导带边位置协同作用，通过跨界面载流子定向迁移增强人工树叶的整体电荷转移效率。\n  reasoning: \n    1. 梯度氧空位在BiVO4体相形成内建电场(已知关系2) → 2. 硅光伏电池的导带边位置(材料科学概念)决定电子注入势垒 → 3. 二者在固态电解质界面形成阶梯式能带结构 → 4. 预测光生载流子在双重电场驱动下实现超长空穴扩散长度(化学概念)的维持\n  key_concepts: 梯度氧空位钒酸铋, 偶极子场, 硅光伏电池, 导带边位置, 空穴扩散长度\n  disciplines_bridged: 化学, 材料科学\n\nL2 Hypotheses:\n- Q1:\n    hypothesis: 硅基光伏集成通过调控电解质局部pH环境，抑制光电阳极腐蚀动力学，从而实现规模化人工树叶的长期稳定性\n    reasoning:\n      1. 硅光伏的光生电子注入(材料科学) → 2. 改变界面处电解质水分子活度 → 3. 通过化学动力学抑制BiVO4的硫化物氧化反应(化学概念) → 4. 预测在441cm²装置中观察到腐蚀电流密度降低50%以上\n    key_concepts: 硅光伏电池, 光电阳极腐蚀, 硫化物氧化, 电解质配方, 规模化\n    disciplines_bridged: 材料科学, 化学\n- Q2:\n    hypothesis: 氧空位梯度分布产生的非对称缺陷态与FeOOH助催化剂的晶面选择性生长存在电子耦合效应，通过调控载流子复合路径提升光电流密度\n    reasoning:\n      1. 梯度氧空位形成缺陷态密度梯度(化学) → 2. 诱导FeOOH沿特定晶向(如β-FeOOH[130]面)择优生长(材料科学) → 3. 形成梯度异质结界面态密度 → 4. 预测在1.23V下观察到载流子寿命延长与乙酰丙酮氧化钒副反应抑制\n    key_concepts: 氧空位, 羟基氧化铁助催化剂, 载流子寿命, 乙酰丙酮氧化钒, 晶面择优生长\n    disciplines_bridged: 化学, 材料科学\n\nL3 Hypotheses:\n- Q1:\n    hypothesis: 硅光伏电池与BiVO4梯度氧空位的协同作用通过光子-声子耦合增强界面电荷收集效率，在8.4%太阳能-氢能转换效率中占比超过30%\n    reasoning:\n      1. 硅基板的声子振动模式(材料科学) → 2. 调制BiVO4的氧空位局域振动模 → 3. 形成共振增强的电-声子耦合 → 4. 预测在AM 1.5G光照下界面复合损失率低于0.15eV⁻¹cm⁻³\n    key_concepts: 硅光伏电池, 梯度氧空位, 电-声子耦合, 界面复合损失, 太阳能-氢能转换效率\n    disciplines_bridged: 材料科学, 化学\n- Q2:\n    hypothesis: 规模化人工树叶中的蠕虫状钒酸铋结构与氧空位迁移能垒存在跨尺度相互作用，通过缺陷动力学调控实现器件尺寸与电荷分离效率的正相关性\n    reasoning:\n      1. 大尺寸器件中光子分布非均匀性(材料科学) → 2. 引发氧空位迁移能垒的空间梯度(化学概念) → 3. 通过蠕虫状结构的各向异性应力释放 → 4. 预测在441cm²装置中观察到缺陷聚集团簇尺寸与光电流密度呈非线性正相关\n    key_concepts: 规模化, 蠕虫状钒酸铋, 氧空位迁移能垒, 缺陷聚集团簇, 光电流密度\n    disciplines_bridged: 材料科学, 化学"
+    ],
+    "elapsed_seconds": 42.956809520721436
+  },
+  {
+    "paper_id": "ba896cd30ccf",
+    "method_name": "P5",
+    "free_text_hypotheses": [
+      "通过调控氧空位分布优化偶极子场，材料科学需设计梯度缺陷结构以提升电荷分离效率",
+      "化学需改进助催化剂界面工程，材料科学应协同优化载流子传输通道以提高反应速率",
+      "材料科学解决规模化稳定性问题，化学需优化缺陷-界面耦合机制以实现高效能量转换",
+      "硅基光伏集成通过人工树叶规模化装置突破材料成本限制，验证太阳能-氢能转换效率的工程可行性",
+      "梯度氧空位设计通过偶极子场强化电荷分离，协同助催化剂提升载流子迁移效率指向光电流密度优化",
+      "硅基集成装置通过梯度氧空位设计增强体相电荷分离，实现高效太阳能制氢",
+      "规模化人工树叶验证材料缺陷调控与器件结构间的协同效应及效率约束关系"
+    ],
+    "structured_paths": {
+      "L1": [
+        {
+          "steps": [
+            {
+              "step": 1,
+              "head": "钒酸铋光阳极",
+              "relation": "设计为具有梯度分布的氧空位",
+              "tail": "梯度氧空位钒酸铋",
+              "claim": "调控钒酸铋材料的氧空位分布可优化体相电荷分离能力"
+            },
+            {
+              "step": 2,
+              "head": "梯度氧空位钒酸铋",
+              "relation": "诱导产生强偶极子场",
+              "tail": "偶极子场",
+              "claim": "梯度氧空位引发的强偶极子场能有效驱动载流子定向迁移"
+            },
+            {
+              "step": 3,
+              "head": "偶极子场",
+              "relation": "促进体相电荷分离",
+              "tail": "电荷分离",
+              "claim": "增强的偶极子场通过材料科学手段优化可突破电荷分离效率瓶颈"
+            }
+          ],
+          "summary": "通过调控氧空位分布优化偶极子场，材料科学需设计梯度缺陷结构以提升电荷分离效率"
+        },
+        {
+          "steps": [
+            {
+              "step": 1,
+              "head": "羟基氧化铁助催化剂",
+              "relation": "提升光电流密度性能",
+              "tail": "光电流密度",
+              "claim": "助催化剂的界面工程能显著提升载流子传输效率"
+            },
+            {
+              "step": 2,
+              "head": "光电流密度",
+              "relation": "正相关于光电化学水分解效率",
+              "tail": "光电化学水分解",
+              "claim": "光电流密度的提升直接决定整体水分解反应速率"
+            },
+            {
+              "step": 3,
+              "head": "光电化学水分解",
+              "relation": "受材料缺陷调控影响",
+              "tail": "氧空位",
+              "claim": "化学缺陷调控与材料科学协同可突破载流子复合限制"
+            }
+          ],
+          "summary": "化学需改进助催化剂界面工程，材料科学应协同优化载流子传输通道以提高反应速率"
+        },
+        {
+          "steps": [
+            {
+              "step": 1,
+              "head": "硅光伏电池",
+              "relation": "集成形成独立人工树叶装置",
+              "tail": "人工树叶",
+              "claim": "光伏集成系统能通过器件工程优化能量转换路径"
+            },
+            {
+              "step": 2,
+              "head": "人工树叶",
+              "relation": "影响效率的规模化表现",
+              "tail": "规模化",
+              "claim": "规模化制备需材料科学解决界面稳定性与电荷传输矛盾"
+            },
+            {
+              "step": 3,
+              "head": "规模化",
+              "relation": "制约太阳能-氢能转换效率",
+              "tail": "太阳能-氢能转换效率",
+              "claim": "材料缺陷调控与器件集成技术的协同创新可突破效率-规模平衡难题"
+            }
+          ],
+          "summary": "材料科学解决规模化稳定性问题，化学需优化缺陷-界面耦合机制以实现高效能量转换"
+        }
+      ],
+      "L2": [
+        {
+          "steps": [
+            {
+              "step": 1,
+              "head": "硅光伏电池",
+              "relation": "集成形成独立人工树叶装置",
+              "tail": "人工树叶",
+              "claim": "硅光伏电池 集成形成独立人工树叶装置 人工树叶"
+            },
+            {
+              "step": 2,
+              "head": "人工树叶",
+              "relation": "实现规模化制氢性能验证",
+              "tail": "规模化",
+              "claim": "人工树叶 实现规模化制氢性能验证 规模化"
+            },
+            {
+              "step": 3,
+              "head": "规模化",
+              "relation": "突破传统材料成本限制",
+              "tail": "太阳能-氢能转换效率",
+              "claim": "规模化 突破传统材料成本限制 太阳能-氢能转换效率"
+            }
+          ],
+          "summary": "硅基光伏集成通过人工树叶规模化装置突破材料成本限制，验证太阳能-氢能转换效率的工程可行性"
+        },
+        {
+          "steps": [
+            {
+              "step": 1,
+              "head": "梯度氧空位钒酸铋",
+              "relation": "诱导产生强偶极子场",
+              "tail": "偶极子场",
+              "claim": "梯度氧空位钒酸铋 诱导产生强偶极子场 偶极子场"
+            },
+            {
+              "step": 2,
+              "head": "偶极子场",
+              "relation": "促进体相电荷分离",
+              "tail": "电荷分离",
+              "claim": "偶极子场 促进体相电荷分离 电荷分离"
+            },
+            {
+              "step": 3,
+              "head": "电荷分离",
+              "relation": "协同羟基氧化铁助催化剂提升载流子利用率",
+              "tail": "光电流密度",
+              "claim": "电荷分离 协同羟基氧化铁助催化剂提升载流子利用率 光电流密度"
+            }
+          ],
+          "summary": "梯度氧空位设计通过偶极子场强化电荷分离，协同助催化剂提升载流子迁移效率指向光电流密度优化"
+        }
+      ],
+      "L3": [
+        {
+          "steps": [
+            {
+              "step": 1,
+              "head": "硅光伏电池",
+              "relation": "集成形成独立人工树叶装置",
+              "tail": "人工树叶",
+              "claim": "硅光伏电池 集成形成独立人工树叶装置 人工树叶"
+            },
+            {
+              "step": 2,
+              "head": "人工树叶",
+              "relation": "包含梯度分布氧空位的钒酸铋光阳极",
+              "tail": "梯度氧空位钒酸铋",
+              "claim": "人工树叶 包含梯度分布氧空位的钒酸铋光阳极 梯度氧空位钒酸铋"
+            },
+            {
+              "step": 3,
+              "head": "梯度氧空位钒酸铋",
+              "relation": "通过偶极子场促进电荷分离提升转换效率",
+              "tail": "太阳能-氢能转换效率",
+              "claim": "梯度氧空位钒酸铋 通过偶极子场促进电荷分离提升转换效率 太阳能-氢能转换效率"
+            }
+          ],
+          "summary": "硅基集成装置通过梯度氧空位设计增强体相电荷分离，实现高效太阳能制氢"
+        },
+        {
+          "steps": [
+            {
+              "step": 1,
+              "head": "规模化",
+              "relation": "影响人工树叶的材料缺陷调控",
+              "tail": "人工树叶",
+              "claim": "规模化 影响人工树叶的材料缺陷调控 人工树叶"
+            },
+            {
+              "step": 2,
+              "head": "人工树叶",
+              "relation": "依赖氧空位分布调控电荷分离性能",
+              "tail": "氧空位",
+              "claim": "人工树叶 依赖氧空位分布调控电荷分离性能 氧空位"
+            },
+            {
+              "step": 3,
+              "head": "氧空位",
+              "relation": "通过缺陷工程优化与结构设计协同提升效率",
+              "tail": "太阳能-氢能转换效率",
+              "claim": "氧空位 通过缺陷工程优化与结构设计协同提升效率 太阳能-氢能转换效率"
+            }
+          ],
+          "summary": "规模化人工树叶验证材料缺陷调控与器件结构间的协同效应及效率约束关系"
+        }
+      ]
+    },
+    "raw_responses": [],
+    "elapsed_seconds": 4.124641418457031e-05
+  }
+]

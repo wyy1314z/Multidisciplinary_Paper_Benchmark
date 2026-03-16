@@ -1,0 +1,41 @@
+[
+  {
+    "title": "Nano-island-encapsulated cobalt single-atom catalysts for breaking activity-stability trade-off in Fenton-like reactions",
+    "查询": {
+      "一级": "单原子催化剂在类芬顿反应中如何突破活性-稳定性平衡限制？",
+      "二级": [
+        "纳米岛封装结构如何通过材料界面调控实现单原子催化剂的活性位点稳定？",
+        "催化反应微环境调控对难降解有机污染物的降解路径有何影响？"
+      ],
+      "三级": [
+        "结合纳米岛限域效应与氧化还原电位调控，如何构建抗金属聚集的单原子催化体系并实现复杂水体中持久性污染物的低毒性去除？",
+        "基于纳米载体与₂氧空位协同作用的岛-海结构，怎样通过多尺度限域效应同时提升单原子催化剂的稳定性与对难降解污染物的选择性降解效率？"
+      ]
+    }
+  },
+  {
+    "title": "High-entropy alloy enables multi-path electron synergism and lattice oxygen activation for enhanced oxygen evolution activity",
+    "查询": {
+      "一级": "晶格氧活化机制如何突破传统电催化氧析出反应的理论极限？",
+      "二级": [
+        "高熵合金如何通过多路径电子转移协同调控晶格氧活化能垒？",
+        "拉曼光谱表征与电化学性能测试如何共同验证氧中间体的动态演变？"
+      ],
+      "三级": [
+        "材料科学的高熵结构设计与化学界面分析技术如何构建多尺度协同模型，阐明电子传递-物质转化-结构稳定的耦合机制？"
+      ]
+    }
+  },
+  {
+    "title": "MXene-Assisted NiFe sulfides for high-performance anion exchange membrane seawater electrolysis",
+    "查询": {
+      "一级": "如何通过调控电子分布与晶格氧机制提升析氧反应催化活性及抗氯离子腐蚀能力？",
+      "二级": [
+        "结合材料科学中的气体扩散层孔径调控，如何协同优化海水电解槽的稳定性和能量效率？"
+      ],
+      "三级": [
+        "如何通过化学诱导电子分布触发晶格氧机制，并结合材料科学的多级催化剂组成优化与气体扩散层结构设计，实现工业电流密度下的长效海水电解？"
+      ]
+    }
+  }
+]

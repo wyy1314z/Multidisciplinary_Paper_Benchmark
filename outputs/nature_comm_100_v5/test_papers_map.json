@@ -1,0 +1,33 @@
+{
+  "bca0c04aa6e9": {
+    "paper_id": "bca0c04aa6e9",
+    "title": "The tetracycline resistome is shaped by selection for specific resistance mechanisms by each antibiotic generation",
+    "abstract": "Abstract The history of clinical resistance to tetracycline antibiotics is characterized by cycles whereby the deployment of a new generation of drug molecules is quickly followed by the discovery of a new mechanism of resistance. This suggests mechanism-specific selection by each tetracycline generation; however, the evolutionary dynamics of this remain unclear. Here, we evaluate 24 recombinant Escherichia coli strains expressing tetracycline resistance genes from each mechanism (efflux pumps, ribosomal protection proteins, and enzymatic inactivation) in the context of each tetracycline generation. We employ a high-throughput barcode sequencing protocol that can discriminate between strains in mixed culture and quantify their relative abundances. We find that each mechanism is preferentially selected for by specific antibiotic generations, leading to their expansion. Remarkably, the minimum inhibitory concentration associated with individual genes is secondary to resistance mechanism for inter-mechanism relative fitness, but it does explain intra-mechanism relative fitness. These patterns match the history of clinical deployment of tetracycline drugs and resistance discovery in pathogens.",
+    "primary_discipline": "生物学",
+    "secondary_disciplines": [
+      "生物学",
+      "临床医学"
+    ]
+  },
+  "69cf875bdbf7": {
+    "paper_id": "69cf875bdbf7",
+    "title": "Quasi Fe MIL-53 nanozyme inducing ferroptosis and immunogenic cell death for cancer immunotherapy",
+    "abstract": "Nanozymes offer diverse therapeutic potentials for cancer treatment which is dependent on the development of nanomaterials. Quasi-metal-organic framework is a class of metal-organic framework-derived nanomaterials with a transition state from metal-organic frameworks towards metal oxide featuring porous structure and high activity. Herein an iron-based quasi-metal-organic framework nanozyme Q-MIL-53(Fe) is reported via a controlled deligandation strategy, exhibiting enhanced peroxidase-/catalase-mimic activity and glutathione depletion capacity, whose underlying mechanisms are studied via density functional theory calculations. Q-MIL-53(Fe) demonstrates biocompatibility and superior antitumor efficacy compared to pristine MIL-53(Fe). It can activate antitumor immune response by inducing ferroptosis and immunogenic cell death, promoting dendritic cell maturation and T lymphocytes infiltration. Furthermore, a combination of Q-MIL-53(Fe) and programmed cell death protein 1 antibody amplifies cancer immunotherapy. This study validates the antitumor activity of quasi-metal-organic frameworks and its immunotherapy induction potential. It would broaden the application of quasi-metal-organic frameworks and open avenues for developing antitumor nanozymes.",
+    "primary_discipline": "化学",
+    "secondary_disciplines": [
+      "化学",
+      "材料科学",
+      "临床医学"
+    ]
+  },
+  "ba896cd30ccf": {
+    "paper_id": "ba896cd30ccf",
+    "title": "A standalone bismuth vanadate-silicon artificial leaf achieving 8.4% efficiency for hydrogen production",
+    "abstract": "Abstract The development of scalable photoelectrochemical water splitting with high solar-to-hydrogen efficiency and long-term stability is essential while challenging for practical application. Here, we design a BiVO 4 photoanode with gradient distributed oxygen vacancies, which induces strong dipole fields to promote charge separation. Growing sea-urchin-like FeOOH cocatalyst on the photoanode leads to a photocurrent density of 7.0 mA cm −2 at 1.23 V versus the reversible hydrogen electrode and is stable for over 520 h under AM 1.5 G illumination. By integrating with a silicon photovoltaic cell, the standalone artificial leaf achieves a solar-to-hydrogen efficiency of 8.4%. The scale-up of these artificial leaves up to 441 cm 2 in size can deliver a solar-to-hydrogen efficiency of 2.7% under natural sunlight. Life cycle assessment analysis shows that solar water splitting has little environmental footprint for hydrogen production. Our study demonstrates the possibility of designing metal oxide-based artificial leaves for scalable solar hydrogen production.",
+    "primary_discipline": "化学",
+    "secondary_disciplines": [
+      "化学",
+      "材料科学"
+    ]
+  }
+}

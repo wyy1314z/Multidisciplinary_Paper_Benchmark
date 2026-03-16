@@ -5,6 +5,7 @@ import os
 import json
 import logging
 import random
+import time
 from typing import Any, Dict, List, Optional
 
 from tenacity import retry, stop_after_attempt, wait_exponential, retry_if_exception_type
@@ -126,8 +127,11 @@ def _get_content_from_resp(resp: Any) -> str:
 @retry(
     reraise=True,
     stop=stop_after_attempt(5),
-    wait=wait_exponential(multiplier=1, min=4, max=60),
+    wait=wait_exponential(multiplier=2, min=5, max=120),
     retry=retry_if_exception_type(ModelTransportError),
+    before_sleep=lambda rs: logger.info(
+        "LLM 重试 #%d，等待 %.0fs…", rs.attempt_number, rs.next_action.sleep
+    ),
 )
 def chat_completion_with_retry(
     messages: List[Dict[str, str]],
@@ -174,16 +178,26 @@ def chat_completion_with_retry(
 
     try:
         resp = client.chat.completions.create(**kwargs)
-        
+
         # 处理流式响应
         collected_content = []
+        finish_reason = None
         for chunk in resp:
             if not chunk.choices:
                 continue
-            delta = chunk.choices[0].delta
-            if delta.content:
-                collected_content.append(delta.content)
-        
+            choice = chunk.choices[0]
+            if choice.delta.content:
+                collected_content.append(choice.delta.content)
+            if choice.finish_reason:
+                finish_reason = choice.finish_reason
+
+        if finish_reason == "length":
+            logger.warning(
+                "模型输出因 max_tokens 限制被截断 (finish_reason='length')，"
+                "当前 max_tokens=%s，建议增大该值",
+                kwargs.get("max_tokens", "未设置"),
+            )
+
         return "".join(collected_content)
 
     except Exception as e:
@@ -192,6 +206,17 @@ def chat_completion_with_retry(
             raise ModelTransportError(f"LLM 调用超时 (Client Timeout): {e}")
         if isinstance(e, APIStatusError) and e.status_code == 524:
             raise ModelTransportError(f"LLM 调用超时 (Server 524): {e}")
+        # 429 Rate Limit: 读取 Retry-After 并等待后重试
+        if isinstance(e, APIStatusError) and e.status_code == 429:
+            retry_after = 30
+            if hasattr(e, "response") and e.response is not None:
+                retry_after = int(e.response.headers.get("Retry-After", 30))
+            logger.warning("Rate limited (429), 等待 %ds 后重试…", retry_after)
+            time.sleep(retry_after)
+            raise ModelTransportError(f"Rate limited, retry after {retry_after}s")
+        # 522/554 等其他网关超时，也直接重试
+        if isinstance(e, APIStatusError) and e.status_code in (502, 503, 522, 554):
+            raise ModelTransportError(f"LLM 网关错误 (HTTP {e.status_code}): {e}")
 
         # 一些 OpenAI-compatible 服务端可能不支持 max_tokens/seed 等参数。
         # 做一次确定性回退：移除可疑参数再试一次。

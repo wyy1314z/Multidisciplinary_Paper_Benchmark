@@ -1,0 +1,454 @@
+[
+  {
+    "title": "Nano-island-encapsulated cobalt single-atom catalysts for breaking activity-stability trade-off in Fenton-like reactions",
+    "跨学科关系": [
+      {
+        "head": "纳米岛封装",
+        "relation": "通过纳米岛结构限制并稳定",
+        "relation_type": "method_applied_to",
+        "relation_type_norm": "method_applied_to",
+        "relation_type_raw": "method_applied_to",
+        "tail": "Co单原子",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [],
+        "evidence": "small carrier-based ZnO nanoparticles (the 'islands') are utilized to confine and stabilize Co single atoms",
+        "source": "abstract",
+        "confidence": 0.97
+      },
+      {
+        "head": "活性-稳定性权衡",
+        "relation": "制约其性能表现",
+        "relation_type": "constrains",
+        "relation_type_norm": "constrains",
+        "relation_type_raw": "constrains",
+        "tail": "单原子催化剂",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [],
+        "evidence": "SACs face a trade-off between activity and stability in PMS-based systems",
+        "source": "abstract",
+        "confidence": 0.96
+      },
+      {
+        "head": "PMS激活",
+        "relation": "通过活化产生",
+        "relation_type": "corresponds_to",
+        "relation_type_norm": "corresponds_to",
+        "relation_type_raw": "corresponds_to",
+        "tail": "硫酸根自由基",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [],
+        "evidence": "exclusively generating sulfate radicals (SO₄•⁻) via PMS activation",
+        "source": "abstract",
+        "confidence": 0.98
+      },
+      {
+        "head": "酸性条件",
+        "relation": "加剧金属中心浸出",
+        "relation_type": "constrains",
+        "relation_type_norm": "constrains",
+        "relation_type_raw": "constrains",
+        "tail": "活性位点浸出",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [],
+        "evidence": "Under such acidic conditions, active metal centers are prone to leaching",
+        "source": "introduction",
+        "confidence": 0.94
+      },
+      {
+        "head": "ZnO纳米颗粒",
+        "relation": "作为纳米岛载体实现封装",
+        "relation_type": "method_applied_to",
+        "relation_type_norm": "method_applied_to",
+        "relation_type_raw": "method_applied_to",
+        "tail": "纳米岛封装",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [],
+        "evidence": "small carrier-based ZnO nanoparticles (the 'islands') are utilized to confine Co atoms",
+        "source": "abstract",
+        "confidence": 0.95
+      },
+      {
+        "head": "不饱和配位环境",
+        "relation": "赋予高反应性的结构特征",
+        "relation_type": "improves_metric",
+        "relation_type_norm": "improves_metric",
+        "relation_type_raw": "improves_metric",
+        "tail": "单原子催化剂",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [],
+        "evidence": "The high reactivity of SACs stems from their unsaturated coordination environments",
+        "source": "introduction",
+        "confidence": 0.92
+      },
+      {
+        "head": "复杂水矩阵",
+        "relation": "影响降解效率的环境因素",
+        "relation_type": "constrains",
+        "relation_type_norm": "constrains",
+        "relation_type_raw": "constrains",
+        "tail": "污染物降解",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [],
+        "evidence": "efficient in multiple treatment cycles and complex water matrices",
+        "source": "abstract",
+        "confidence": 0.93
+      },
+      {
+        "head": "析氢反应",
+        "relation": "通过纳米岛设计增强催化活性",
+        "relation_type": "improves_metric",
+        "relation_type_norm": "improves_metric",
+        "relation_type_raw": "improves_metric",
+        "tail": "纳米岛系统",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [],
+        "evidence": "CeO₂₋ₓ nano-islands boosting hydrogen evolution reactions",
+        "source": "introduction",
+        "confidence": 0.91
+      }
+    ],
+    "按辅助学科分类": {
+      "化学": {
+        "概念": [
+          "单原子催化剂",
+          "活性-稳定性权衡",
+          "污染物降解",
+          "活性位点浸出",
+          "复杂水矩阵"
+        ],
+        "关系": [
+          1,
+          3,
+          5
+        ],
+        "rationale": "提供催化反应机理与活性评估框架"
+      },
+      "材料科学": {
+        "概念": [
+          "纳米岛封装",
+          "ZnO纳米颗粒",
+          "Co单原子",
+          "阴离子交换膜",
+          "气体扩散层"
+        ],
+        "关系": [
+          0,
+          4,
+          7
+        ],
+        "rationale": "构建催化剂空间限域结构与电子调控方案"
+      },
+      "环境科学技术": {
+        "概念": [
+          "难降解污染物",
+          "低毒性去污",
+          "持久性有机污染物",
+          "污水处理",
+          "共存离子"
+        ],
+        "关系": [
+          2,
+          6
+        ],
+        "rationale": "定义污染物处理效能的环境适用性边界"
+      }
+    }
+  },
+  {
+    "title": "High-entropy alloy enables multi-path electron synergism and lattice oxygen activation for enhanced oxygen evolution activity",
+    "跨学科关系": [
+      {
+        "head": "high-entropy alloys (HEAs)",
+        "relation": "通过多路径电子协同作用激活",
+        "relation_type": "method_applied_to",
+        "relation_type_norm": "method_applied_to",
+        "relation_type_raw": "method_applied_to",
+        "tail": "lattice oxygen activation mechanism (LOM)",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [],
+        "evidence": "high-entropy alloys (HEAs) can efficiently activate the LOM through synergistic multi-path electron transfer",
+        "source": "abstract",
+        "confidence": 0.98
+      },
+      {
+        "head": "multi-path electron transfer",
+        "relation": "增强金属离子的高氧化态",
+        "relation_type": "improves_metric",
+        "relation_type_norm": "improves_metric",
+        "relation_type_raw": "improves_metric",
+        "tail": "high-valent oxidation",
+        "direction": "->",
+        "quant": {
+          "metric": "oxidation state",
+          "value": "enhanced"
+        },
+        "assumptions": [],
+        "evidence": "the oxidation of nickel is enhanced by this electron transfer",
+        "source": "abstract",
+        "confidence": 0.97
+      },
+      {
+        "head": "NiFeCoCrW₀.₂ HEA",
+        "relation": "在10 mA cm⁻²电流密度下实现220 mV过电位",
+        "relation_type": "improves_metric",
+        "relation_type_norm": "improves_metric",
+        "relation_type_raw": "improves_metric",
+        "tail": "overpotential",
+        "direction": "->",
+        "quant": {
+          "metric": "overpotential",
+          "value": "220 mV"
+        },
+        "assumptions": [],
+        "evidence": "design of a NiFeCoCrW₀.₂ HEA that exhibits improved activity, achieving an overpotential of 220 mV at a current density of 10 mA cm⁻²",
+        "source": "abstract",
+        "confidence": 0.97
+      },
+      {
+        "head": "Raman spectroscopy",
+        "relation": "检测到506 cm⁻¹处的Ni–O键A1g伸缩振动模式",
+        "relation_type": "method_applied_to",
+        "relation_type_norm": "method_applied_to",
+        "relation_type_raw": "method_applied_to",
+        "tail": "Ni–O bond",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [],
+        "evidence": "peak observed at 506 cm⁻¹ in the Raman spectrum is indicative of the A1g stretching mode of the Ni–O bond",
+        "source": "introduction",
+        "confidence": 0.95
+      },
+      {
+        "head": "TMA⁺ cations",
+        "relation": "与含氧中间体存在强相互作用",
+        "relation_type": "interacts_with",
+        "relation_type_norm": null,
+        "relation_type_raw": "interacts_with",
+        "tail": "oxygen-containing intermediates (O₂⁻)",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [],
+        "evidence": "robust interaction between TMA⁺ ions and the negatively charged oxygen-containing intermediates (O₂⁻)",
+        "source": "introduction",
+        "confidence": 0.96
+      },
+      {
+        "head": "multi-path electronic modulation",
+        "relation": "调控电催化OER机制转变",
+        "relation_type": "method_applied_to",
+        "relation_type_norm": "method_applied_to",
+        "relation_type_raw": "method_applied_to",
+        "tail": "electrocatalytic OER behavior",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [],
+        "evidence": "multi-path electronic modulation in manipulating electrocatalytic mechanistic shifts",
+        "source": "introduction",
+        "confidence": 0.94
+      },
+      {
+        "head": "high-entropy structure",
+        "relation": "促进高效电催化LOM路径启动",
+        "relation_type": "extends",
+        "relation_type_norm": "extends",
+        "relation_type_raw": "extends",
+        "tail": "electrocatalytic LOM pathway",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [],
+        "evidence": "high-entropy structure promotes the initiation of an efficient electrocatalytic LOM pathway",
+        "source": "introduction",
+        "confidence": 0.95
+      }
+    ],
+    "按辅助学科分类": {
+      "化学": {
+        "概念": [
+          "氢氧化钾",
+          "四甲基氢氧化铵",
+          "四甲基铵阳离子",
+          "含氧中间体"
+        ],
+        "关系": [
+          4
+        ],
+        "rationale": "提供电解质环境与中间体相互作用分析，支撑电催化反应机理验证"
+      },
+      "材料科学": {
+        "概念": [
+          "高熵合金",
+          "₀.₂高熵合金",
+          "键",
+          "电催化路径"
+        ],
+        "关系": [
+          0,
+          2,
+          6
+        ],
+        "rationale": "通过高熵合金设计与晶格调控实现催化剂结构优化和电子传递增强"
+      }
+    }
+  },
+  {
+    "title": "MXene-Assisted NiFe sulfides for high-performance anion exchange membrane seawater electrolysis",
+    "跨学科关系": [
+      {
+        "head": "MXene (Ti₃C₂)",
+        "relation": "integrating MXene with NiFe sulfides forms a composite electrocatalyst",
+        "relation_type": "method_applied_to",
+        "relation_type_norm": "method_applied_to",
+        "relation_type_raw": "method_applied_to",
+        "tail": "(Ni,Fe)S₂@Ti₃C₂",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [],
+        "evidence": "integrating MXene (Ti₃C₂) with NiFe sulfides ((Ni,Fe)S₂@Ti₃C₂)",
+        "source": "abstract",
+        "confidence": 0.99
+      },
+      {
+        "head": "(Ni,Fe)S₂@Ti₃C₂",
+        "relation": "triggers lattice oxygen mechanism through electron distribution",
+        "relation_type": "extends",
+        "relation_type_norm": "extends",
+        "relation_type_raw": "extends",
+        "tail": "lattice oxygen mechanism",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [],
+        "evidence": "strong interaction induces electron distribution to trigger lattice oxygen mechanism",
+        "source": "abstract",
+        "confidence": 0.92
+      },
+      {
+        "head": "Ti-O-Fe bonding",
+        "relation": "prohibits dissolution of Fe species during OER process",
+        "relation_type": "constrains",
+        "relation_type_norm": "constrains",
+        "relation_type_raw": "constrains",
+        "tail": "Fe species dissolution",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [],
+        "evidence": "Ti-O-Fe bonding effectively prohibits the dissolution of Fe species",
+        "source": "abstract",
+        "confidence": 0.93
+      },
+      {
+        "head": "Cl⁻ resistance",
+        "relation": "good retention of sulfates provides effective Cl⁻ resistance",
+        "relation_type": "improves_metric",
+        "relation_type_norm": "improves_metric",
+        "relation_type_raw": "improves_metric",
+        "tail": "sulfate radicals",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [],
+        "evidence": "good retention of sulfates and abundant groups of Ti₃C₂ provide effective Cl⁻ resistance",
+        "source": "abstract",
+        "confidence": 0.94
+      },
+      {
+        "head": "electrochemical impedance spectroscopy",
+        "relation": "analyzes ohmic overvoltage through electrochemical impedance spectroscopy",
+        "relation_type": "method_applied_to",
+        "relation_type_norm": "method_applied_to",
+        "relation_type_raw": "method_applied_to",
+        "tail": "ohmic overvoltage",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [],
+        "evidence": "ohmic overvoltage analyzed via electrochemical impedance spectroscopy",
+        "source": "introduction",
+        "confidence": 0.88
+      },
+      {
+        "head": "anion exchange membrane seawater electrolysis",
+        "relation": "specific application of anion exchange membrane in seawater systems",
+        "relation_type": "maps_to",
+        "relation_type_norm": "maps_to",
+        "relation_type_raw": "maps_to",
+        "tail": "anion exchange membrane",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [],
+        "evidence": "AEMSE with industrial current density (0.5 A cm⁻²)",
+        "source": "abstract",
+        "confidence": 0.97
+      },
+      {
+        "head": "electron transfer",
+        "relation": "projected density of states shows charge separation through electron transfer",
+        "relation_type": "corresponds_to",
+        "relation_type_norm": "corresponds_to",
+        "relation_type_raw": "corresponds_to",
+        "tail": "charge separation",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [],
+        "evidence": "projected density of states and band diagrams show charge separation",
+        "source": "introduction",
+        "confidence": 0.85
+      },
+      {
+        "head": "Raney Ni cathode",
+        "relation": "achieves industrial current density with electrolysis efficiency of 70%",
+        "relation_type": "generalizes",
+        "relation_type_norm": "generalizes",
+        "relation_type_raw": "generalizes",
+        "tail": "industrial current density",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [],
+        "evidence": "Raney Ni cathode with electrolysis efficiency of 70% and energy consumption of 48.4 kWh kg⁻¹ H₂",
+        "source": "abstract",
+        "confidence": 0.96
+      }
+    ],
+    "按辅助学科分类": {
+      "化学": {
+        "概念": [
+          "离子液体",
+          "硫酸根自由基",
+          "活性氧物种",
+          "相变",
+          "催化选择性"
+        ],
+        "关系": [
+          1,
+          2,
+          3,
+          6
+        ],
+        "rationale": "提供反应机制解析与稳定性调控策略，支撑电催化剂性能优化"
+      },
+      "材料科学": {
+        "概念": [
+          "阴离子交换膜",
+          "气体扩散层",
+          "多级优化",
+          "拉曼光谱",
+          "态密度投影",
+          "费米能级"
+        ],
+        "关系": [
+          0,
+          4,
+          5,
+          7
+        ],
+        "rationale": "主导功能材料设计与表征技术开发，实现催化剂结构调控与性能验证"
+      }
+    }
+  }
+]

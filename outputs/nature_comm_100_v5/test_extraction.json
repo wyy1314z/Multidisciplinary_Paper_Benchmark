@@ -1,0 +1,3546 @@
+[
+  {
+    "title": "The tetracycline resistome is shaped by selection for specific resistance mechanisms by each antibiotic generation",
+    "abstract": "Abstract The history of clinical resistance to tetracycline antibiotics is characterized by cycles whereby the deployment of a new generation of drug molecules is quickly followed by the discovery of a new mechanism of resistance. This suggests mechanism-specific selection by each tetracycline generation; however, the evolutionary dynamics of this remain unclear. Here, we evaluate 24 recombinant Escherichia coli strains expressing tetracycline resistance genes from each mechanism (efflux pumps, ribosomal protection proteins, and enzymatic inactivation) in the context of each tetracycline generation. We employ a high-throughput barcode sequencing protocol that can discriminate between strains in mixed culture and quantify their relative abundances. We find that each mechanism is preferentially selected for by specific antibiotic generations, leading to their expansion. Remarkably, the minimum inhibitory concentration associated with individual genes is secondary to resistance mechanism for inter-mechanism relative fitness, but it does explain intra-mechanism relative fitness. These patterns match the history of clinical deployment of tetracycline drugs and resistance discovery in pathogens.",
+    "pdf_url": "https://doi.org/10.1038/s41467-025-56425-5",
+    "primary": "生物学",
+    "secondary": "生物学, 临床医学",
+    "secondary_list": [
+      "生物学",
+      "临床医学"
+    ],
+    "introduction": "When the ALL mixture was grown in tigecycline (third-genera-\ntion), we instead observed that DES1 strains increased in relative\nabundance (Fig. 4c). At 4x MIC, the DES1s expanded +333.7% their\nstarting relative abundance, comprising an average 94.9% of the ﬁnal\nmixture. The most abundant strains of the 4x MIC post-competition\nmixture were tet(X12) (56.2%) and tet(X3) (37.6%), while the other\nDES1 strains decreased in relative abundance. This preferential selec-\ntion for E. coli expressing DES1 genes by third-generation tetracyclines\nmatches the discovery of DES1s shortly after the clinical introduction\nof third-generation drugs43,44.\n\nMechanism-speciﬁc strain mixes recapitulate the dynamics\nobserved in the ALL-strains mixture\nTo further investigate intra-mechanism growth dynamics, we prepared\nmechanism-speciﬁc strain mixtures that contained only strains from a\ngiven mechanism, plus the empty vector control. Additionally, to\ncontrol for any confounding effects from having two tetracycline-\ninactivating resistance mechanisms in the same population, we also\nprepared a mixture that contained every strain used in the ALL mix\nexcept DES2 strains (-DES2 mix). These mixtures were inoculated in\nmedia containing tetracycline (ﬁrst-generation), doxycycline (second-\ngeneration), minocycline (second-generation), or tigecycline (third-\ngeneration) at 0.5x, 1x, or 4x the MIC of the empty vector strain, and\ngrown at 37 °C for 20–48 h (Supplementary Fig. 6).\n\nWe observed near-identical dynamics in the mechanism-speciﬁc\nmixtures as in the ALL mixture. For example, the dynamics of the EFF-\nspeciﬁc mix when grown in tetracycline (Fig. 4d) are highly similar to\nthe EFF dynamics in the ALL mixture (Fig. 4a), including speciﬁc\nchanges such as tet(G) being the most abundant strain at 1x and 2x MIC\nbut then being the third most abundant at 4x MIC. The dynamics of the\nRPP-speciﬁc mix with doxycycline (Fig. 4e) and the DES1-speciﬁc mix\nwith tigecycline (Fig. 4f ) were also highly similar to those of the ALL\nmixture, as was the -DES2 mix with all drugs (Supplementary Fig. 7).\nTogether, these results show that the same strain dynamics that occur\nin the ALL mixture also occur in the mechanism-speciﬁc mixtures. This\n\nNature Communications | \n\n (2025) 16:1452 \n\n5\n\n \n \n \n \n \n \n \n \n\fhttps://doi.org/10.1038/s41467-025-56425-5\n\ntetM\ntetO\ntetS\ntetW\ntet32\ntet36\n\ntet47\ntet50\ntet51\ntet54\ntet55\ntet56\n\nstrain\n\ntetX2\ntetX3\ntetX6\ntetX7\ntetX8\ntetX12\n\ntetA\ntetB\ntetE\ntetG\ntetL\ntet39\n\nempty\n\nmechanism\nDES1\nRPP\nEFF\nDES2\nnone\n\nArticle\n\na\n\n1.00\n\ne\nc\nn\na\nd\nn\nu\nb\na\n.\nl\ne\nr\n\n0.75\n\n0.50\n\n0.25\n\n0.00\n\n300\n\n200\n\n100\n\n0\n\ne\ng\nn\na\nh\nc\n%\n\n-100\n\n1000\n\ne\ng\nn\na\nh\nc\n%\n\n750\n\n500\n\n250\n\n0\n\nd\n\n1.00\n\ne\nc\nn\na\nd\nn\nu\nb\na\n.\nl\ne\nr\n\n0.75\n\n0.50\n\n0.25\n\n200\n\n100\n\n0\n\ne\ng\nn\na\nh\nc\n%\n\n0.00\n\n-100\n\n ALL mix\nTET-1-20\nTET-0.5-20\n\nTET-4-20\n\n ALL mix\nTET-0.5-20\nTET-1-20\n\nTET-4-20\n\n ALL mix\nTET-4-20\nTET-1-20\nTET-0.5-20\n\n EFF mix\nTET-1-20\nTET-0.5-20\n\nTET-4-20\n\n EFF mix\nTET-1-20\nTET-0.5-20\n\nTET-4-20\n\n1.00\n\nb\n\ne\nc\nn\na\nd\nn\nu\nb\na\n.\nl\ne\nr\n\n0.75\n\n0.50\n\n0.25\n\n0.00\n\n300\n\n200\n\n100\n\n0\n\ne\ng\nn\na\nh\nc\n%\n\n-100\n\n1000\n\ne\ng\nn\na\nh\nc\n%\n\n750\n\n500\n\n250\n\n0\n\n1.00\n\ne\n\ne\nc\nn\na\nd\nn\nu\nb\na\n.\nl\ne\nr\n\n0.75\n\n0.50\n\n0.25\n\n200\n\n100\n\n0\n\ne\ng\nn\na\nh\nc\n%\n\n0.00\n\n-100\n\n ALL mix\nDOX-4-20\nDOX-0.5-20\nDOX-1-20\n\n ALL mix\nDOX-4-20\nDOX-1-20\nDOX-0.5-20\n\n ALL mix\nDOX-0.5-20\nDOX-4-20\nDOX-1-20\n\n RPP mix\nDOX-4-20\nDOX-0.5-20\nDOX-1-20\n\n RPP mix\nDOX-4-20\nDOX-1-20\nDOX-0.5-20\n\n1500\n\n1.00\n\nf\n\n1.00\n\nc\n\ne\nc\nn\na\nd\nn\nu\nb\na\n.\nl\ne\nr\n\n0.75\n\n0.50\n\n0.25\n\n0.00\n\n300\n\n200\n\n100\n\n0\n\ne\ng\nn\na\nh\nc\n%\n\n-100\n\n1000\n\ne\ng\nn\na\nh\nc\n%\n\n500\n\n0\n\ne\nc\nn\na\nd\nn\nu\nb\na\n.\nl\ne\nr\n\n0.75\n\n0.50\n\n0.25\n\n300\n\n200\n\n100\n\n0\n\ne\ng\nn\na\nh\nc\n%\n\n0.00\n\n-100\n\n ALL mix\nTIG-0.25-20\nTIG-0.5-20\nTIG-2-48\n\n ALL mix\nTIG-0.5-20\nTIG-0.25-20\nTIG-2-48\n\n ALL mix\nTIG-0.5-20\nTIG-0.25-20\nTIG-2-48\n\n DES1 mix\nTIG-0.5-48\nTIG-0.25-20\nTIG-2-48\n\n DES1 mix\nTIG-0.5-48\nTIG-0.25-20\nTIG-2-48\n\nFig. 4 | Each generation of tetracycline antibiotics selects for different resis-\ntance mechanisms from the same starting mixture. Comparisons of strain\nrelative abundance between the starting strain mixture and the post-competition\nculture after 20–48 h growth at 0.5x, 1x, and 4x empty strain MIC for each anti-\nbiotic. Results for the mix containing all 25 strains (ALL mix) grown with\na tetracycline (1st gen), b doxycycline (2nd gen), and c tigecycline (3rd gen). Results\nfor the mechanism-speciﬁc mixes d EFF with tetracycline, e RPP with doxycycline,\nand f DES1 with tigecycline. X-axis labels denote antibiotic-concentration-timepoint\n(hours). Left panel: barplots of the relative abundance of each strain in the starting\n\nmix, then after growth in the antibiotic selective conditions at 0.5x, 1x, and 4x the\nMIC of the empty vector strain. Bar height represents the average of three repli-\ncates. Middle panel: the percent change in the summed relative abundances of each\nstrain belonging to a given mechanism relative to the starting mixture. Right panel:\nthe percent change in the relative abundance of speciﬁc strains from a given\nmechanism. Points represent the average of three replicates, and error bars\nrepresent the standard deviation. TET tetracycline, DOX doxycycline, TIG tigecy-\ncline, EFF efﬂux pump, RPP ribosomal protection protein, DES1 type 1 tetracycline\ndestructase, DES2 type 2 tetracycline destructase.\n\nsuggests that the preferential selection of different mechanisms in the\nALL mixture is not due to direct interactions between mechanisms or\ntheir byproducts. Instead, the selection for a mechanism within the\nALL mixture is due to the suppression of strains from other mechan-\nisms, evidenced by the strains of the most advantageous mechanism\ngrowing as if there were no other mechanisms there.\n\nStrains are selected in a mechanism-ﬁrst, MIC-second manner\nWe next evaluated features that might contribute to the selection of\nspeciﬁc E. coli strains by each antibiotic. In particular, we were\n\ninterested in differences between strains within the same mechanism\nwhich could explain why some increase in abundance while others\ndecreas",
+    "parsed": {
+      "meta": {
+        "title": "The tetracycline resistome is shaped by selection for specific resistance mechanisms by each antibiotic generation",
+        "primary": "生物学",
+        "secondary_list": [
+          "生物学",
+          "临床医学"
+        ]
+      },
+      "概念": {
+        "主学科": [
+          {
+            "term": "tetracycline resistome",
+            "normalized": "四环素抗性组",
+            "std_label": null,
+            "evidence": "The tetracycline resistome is shaped by selection for specific resistance mechanisms",
+            "source": "title",
+            "confidence": 0.95
+          },
+          {
+            "term": "efflux pumps",
+            "normalized": "外排泵",
+            "std_label": null,
+            "evidence": "mechanism (efflux pumps, ribosomal protection proteins, and enzymatic inactivation)",
+            "source": "abstract",
+            "confidence": 0.9
+          },
+          {
+            "term": "ribosomal protection proteins",
+            "normalized": "核糖体保护蛋白",
+            "std_label": null,
+            "evidence": "mechanism (efflux pumps, ribosomal protection proteins, and enzymatic inactivation)",
+            "source": "abstract",
+            "confidence": 0.9
+          },
+          {
+            "term": "enzymatic inactivation",
+            "normalized": "酶促失活",
+            "std_label": null,
+            "evidence": "mechanism (efflux pumps, ribosomal protection proteins, and enzymatic inactivation)",
+            "source": "abstract",
+            "confidence": 0.9
+          },
+          {
+            "term": "high-throughput barcode sequencing protocol",
+            "normalized": "高通量条形码测序协议",
+            "std_label": null,
+            "evidence": "employ a high-throughput barcode sequencing protocol that can discriminate between strains",
+            "source": "abstract",
+            "confidence": 0.85
+          },
+          {
+            "term": "mixed culture",
+            "normalized": "混合培养",
+            "std_label": null,
+            "evidence": "quantify their relative abundances in mixed culture",
+            "source": "abstract",
+            "confidence": 0.8
+          },
+          {
+            "term": "minimum inhibitory concentration",
+            "normalized": "最低抑菌浓度",
+            "std_label": null,
+            "evidence": "minimum inhibitory concentration associated with individual genes",
+            "source": "abstract",
+            "confidence": 0.9
+          },
+          {
+            "term": "inter-mechanism relative fitness",
+            "normalized": "机制间相对适应度",
+            "std_label": null,
+            "evidence": "resistance mechanism for inter-mechanism relative fitness",
+            "source": "abstract",
+            "confidence": 0.85
+          },
+          {
+            "term": "intra-mechanism relative fitness",
+            "normalized": "机制内相对适应度",
+            "std_label": null,
+            "evidence": "explains intra-mechanism relative fitness",
+            "source": "abstract",
+            "confidence": 0.85
+          },
+          {
+            "term": "recombinant Escherichia coli strains",
+            "normalized": "重组大肠杆菌菌株",
+            "std_label": null,
+            "evidence": "evaluate 24 recombinant Escherichia coli strains expressing tetracycline resistance genes",
+            "source": "abstract",
+            "confidence": 0.9
+          },
+          {
+            "term": "tetracycline resistance genes",
+            "normalized": "四环素抗性基因",
+            "std_label": null,
+            "evidence": "expressing tetracycline resistance genes from each mechanism",
+            "source": "abstract",
+            "confidence": 0.9
+          },
+          {
+            "term": "mechanism-specific strain mixes",
+            "normalized": "机制特异性菌株混合",
+            "std_label": null,
+            "evidence": "mechanism-specific strain mixes recapitulate the dynamics",
+            "source": "introduction",
+            "confidence": 0.85
+          },
+          {
+            "term": "empty vector control",
+            "normalized": "空载体对照",
+            "std_label": null,
+            "evidence": "plus the empty vector control",
+            "source": "introduction",
+            "confidence": 0.8
+          },
+          {
+            "term": "confounding effects",
+            "normalized": "混杂效应",
+            "std_label": null,
+            "evidence": "control for any confounding effects",
+            "source": "introduction",
+            "confidence": 0.8
+          },
+          {
+            "term": "tetracycline-inactivating resistance mechanisms",
+            "normalized": "四环素失活抗性机制",
+            "std_label": null,
+            "evidence": "two tetracycline-inactivating resistance mechanisms",
+            "source": "introduction",
+            "confidence": 0.85
+          }
+        ],
+        "辅学科": {
+          "生物学": [
+            {
+              "term": "tetracycline antibiotics",
+              "normalized": "四环素类抗生素",
+              "std_label": null,
+              "evidence": "clinical resistance to tetracycline antibiotics",
+              "source": "abstract",
+              "confidence": 0.9
+            },
+            {
+              "term": "antibiotic generations",
+              "normalized": "抗生素代次",
+              "std_label": null,
+              "evidence": "selection by each antibiotic generation",
+              "source": "abstract",
+              "confidence": 0.9
+            },
+            {
+              "term": "evolutionary dynamics",
+              "normalized": "进化动力学",
+              "std_label": null,
+              "evidence": "evolutionary dynamics of this remain unclear",
+              "source": "abstract",
+              "confidence": 0.85
+            },
+            {
+              "term": "relative abundances",
+              "normalized": "相对丰度",
+              "std_label": null,
+              "evidence": "quantify their relative abundances",
+              "source": "abstract",
+              "confidence": 0.8
+            },
+            {
+              "term": "DES1 strains",
+              "normalized": "菌株",
+              "std_label": null,
+              "evidence": "DES1 strains increased in relative abundance",
+              "source": "introduction",
+              "confidence": 0.85
+            },
+            {
+              "term": "tet(X12)",
+              "normalized": "tet(X12)",
+              "std_label": null,
+              "evidence": "tet(X12) (56.2%) and tet(X3) (37.6%)",
+              "source": "introduction",
+              "confidence": 0.9
+            },
+            {
+              "term": "tet(X3)",
+              "normalized": "tet(X3)",
+              "std_label": null,
+              "evidence": "tet(X12) (56.2%) and tet(X3) (37.6%)",
+              "source": "introduction",
+              "confidence": 0.9
+            },
+            {
+              "term": "E. coli",
+              "normalized": "大肠杆菌",
+              "std_label": null,
+              "evidence": "preferential selection for E. coli expressing DES1 genes",
+              "source": "introduction",
+              "confidence": 0.9
+            },
+            {
+              "term": "DES1 genes",
+              "normalized": "基因",
+              "std_label": null,
+              "evidence": "preferential selection for E. coli expressing DES1 genes",
+              "source": "introduction",
+              "confidence": 0.85
+            },
+            {
+              "term": "growth dynamics",
+              "normalized": "生长动力学",
+              "std_label": null,
+              "evidence": "investigate intra-mechanism growth dynamics",
+              "source": "introduction",
+              "confidence": 0.8
+            }
+          ],
+          "临床医学": [
+            {
+              "term": "clinical deployment",
+              "normalized": "临床应用",
+              "std_label": null,
+              "evidence": "history of clinical deployment of tetracycline drugs",
+              "source": "abstract",
+              "confidence": 0.85
+            },
+            {
+              "term": "clinical introduction",
+              "normalized": "临床引入",
+              "std_label": null,
+              "evidence": "clinical introduction of third-generation drugs",
+              "source": "introduction",
+              "confidence": 0.85
+            },
+            {
+              "term": "pathogens",
+              "normalized": "病原体",
+              "std_label": null,
+              "evidence": "resistance discovery in pathogens",
+              "source": "abstract",
+              "confidence": 0.8
+            },
+            {
+              "term": "tigecycline",
+              "normalized": "替加环素",
+              "std_label": null,
+              "evidence": "grown in tigecycline (third-generation)",
+              "source": "introduction",
+              "confidence": 0.9
+            },
+            {
+              "term": "doxycycline",
+              "normalized": "多西环素",
+              "std_label": null,
+              "evidence": "doxycycline (second-generation)",
+              "source": "introduction",
+              "confidence": 0.9
+            },
+            {
+              "term": "minocycline",
+              "normalized": "米诺环素",
+              "std_label": null,
+              "evidence": "minocycline (second-generation)",
+              "source": "introduction",
+              "confidence": 0.9
+            }
+          ]
+        }
+      },
+      "跨学科关系": [
+        {
+          "head": "antibiotic generations",
+          "relation": "selects for specific resistance mechanisms",
+          "relation_type": "method_applied_to",
+          "relation_type_norm": "method_applied_to",
+          "relation_type_raw": "method_applied_to",
+          "tail": "efflux pumps",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "each mechanism is preferentially selected for by specific antibiotic generations",
+          "source": "abstract",
+          "confidence": 0.9
+        },
+        {
+          "head": "tetracycline resistome",
+          "relation": "is shaped by selection for specific resistance mechanisms",
+          "relation_type": "driven_by",
+          "relation_type_norm": "driven_by",
+          "relation_type_raw": "driven_by",
+          "tail": "mechanism-specific selection",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "The tetracycline resistome is shaped by selection for specific resistance mechanisms by each antibiotic generation",
+          "source": "title",
+          "confidence": 0.95
+        },
+        {
+          "head": "high-throughput barcode sequencing protocol",
+          "relation": "quantifies relative abundances in mixed culture",
+          "relation_type": "improves_metric",
+          "relation_type_norm": "improves_metric",
+          "relation_type_raw": "improves_metric",
+          "tail": "relative abundances",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "employ a high-throughput barcode sequencing protocol that can discriminate between strains in mixed culture and quantify their relative abundances",
+          "source": "abstract",
+          "confidence": 0.85
+        },
+        {
+          "head": "minimum inhibitory concentration",
+          "relation": "is secondary to resistance mechanism for determining inter-mechanism relative fitness",
+          "relation_type": "constrains",
+          "relation_type_norm": "constrains",
+          "relation_type_raw": "constrains",
+          "tail": "inter-mechanism relative fitness",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "the minimum inhibitory concentration associated with individual genes is secondary to resistance mechanism for inter-mechanism relative fitness",
+          "source": "abstract",
+          "confidence": 0.8
+        },
+        {
+          "head": "mechanism-specific strain mixes",
+          "relation": "recapitulate the dynamics observed in the ALL-strains mixture",
+          "relation_type": "generalizes",
+          "relation_type_norm": "generalizes",
+          "relation_type_raw": "generalizes",
+          "tail": "growth dynamics",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "mechanism-specific strain mixes recapitulate the dynamics observed in the ALL-strains mixture",
+          "source": "introduction",
+          "confidence": 0.85
+        },
+        {
+          "head": "tigecycline",
+          "relation": "clinical introduction matches discovery of DES1 genes",
+          "relation_type": "corresponds_to",
+          "relation_type_norm": "corresponds_to",
+          "relation_type_raw": "corresponds_to",
+          "tail": "DES1 genes",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "matches the discovery of DES1s shortly after the clinical introduction of third-generation drugs",
+          "source": "introduction",
+          "confidence": 0.85
+        },
+        {
+          "head": "evolutionary dynamics",
+          "relation": "patterns match the history of clinical deployment of tetracycline drugs",
+          "relation_type": "maps_to",
+          "relation_type_norm": "maps_to",
+          "relation_type_raw": "maps_to",
+          "tail": "antibiotic deployment history",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "These patterns match the history of clinical deployment of tetracycline drugs and resistance discovery in pathogens",
+          "source": "abstract",
+          "confidence": 0.8
+        }
+      ],
+      "按辅助学科分类": {
+        "生物学": {
+          "概念": [
+            "四环素类抗生素",
+            "抗生素代次",
+            "进化动力学",
+            "相对丰度",
+            "菌株",
+            "tet(X12)",
+            "tet(X3)",
+            "大肠杆菌",
+            "基因",
+            "生长动力学"
+          ],
+          "关系": [
+            0,
+            2,
+            6
+          ],
+          "rationale": "解析抗生素代次驱动抗性机制选择的进化动力学规律"
+        },
+        "临床医学": {
+          "概念": [
+            "临床应用",
+            "临床引入",
+            "病原体",
+            "替加环素",
+            "多西环素",
+            "米诺环素"
+          ],
+          "关系": [
+            5,
+            6
+          ],
+          "rationale": "关联抗生素临床部署历史与病原体抗性基因发现的时间序列"
+        }
+      },
+      "查询": {
+        "一级": "四环素抗性组的形成机制及其动态演化规律",
+        "二级": [
+          "抗生素代次如何影响抗性机制的选择压力",
+          "替加环素临床应用与基因发现的时空关联"
+        ],
+        "三级": [
+          "整合高通量条形码测序量化混合培养中的机制特异性菌株丰度，并结合临床抗生素部署数据验证抗性组演化模型",
+          "通过机制特异性菌株混合实验复现全菌株群落动态，结合最小抑菌浓度测定揭示跨机制适应度差异"
+        ]
+      },
+      "假设": {
+        "一级": [
+          [
+            {
+              "step": 1,
+              "head": "四环素抗性组",
+              "relation": "影响",
+              "tail": "抗生素代次",
+              "claim": "四环素抗性组 抗生素代次"
+            },
+            {
+              "step": 2,
+              "head": "抗生素代次",
+              "relation": "导致",
+              "tail": "外排泵",
+              "claim": "抗生素代次 外排泵"
+            },
+            {
+              "step": 3,
+              "head": "外排泵",
+              "relation": "其适应度差异需临床应用数据验证",
+              "tail": "临床应用",
+              "claim": "外排泵 其适应度差异需临床应用数据验证 临床应用"
+            }
+          ],
+          [
+            {
+              "step": 1,
+              "head": "四环素抗性组",
+              "relation": "机制特异性菌株混合",
+              "tail": "机制特异性菌株混合",
+              "claim": "四环素抗性组 机制特异性菌株混合 机制特异性菌株混合"
+            },
+            {
+              "step": 2,
+              "head": "机制特异性菌株混合",
+              "relation": "导致",
+              "tail": "生长动力学",
+              "claim": "机制特异性菌株混合 生长动力学"
+            },
+            {
+              "step": 3,
+              "head": "生长动力学",
+              "relation": "需结合临床抗生素部署历史验证",
+              "tail": "临床引入",
+              "claim": "生长动力学 需结合临床抗生素部署历史验证 临床引入"
+            }
+          ]
+        ],
+        "二级": [
+          [
+            {
+              "step": 1,
+              "head": "抗生素代次",
+              "relation": "选择特定抗性机制",
+              "tail": "外排泵",
+              "claim": "抗生素代次通过选择外排泵机制影响抗性组形成"
+            },
+            {
+              "step": 2,
+              "head": "外排泵",
+              "relation": "决定跨机制适应度差异",
+              "tail": "机制间相对适应度",
+              "claim": "外排泵机制提升在混合培养中的相对适应度"
+            },
+            {
+              "step": 3,
+              "head": "机制间相对适应度",
+              "relation": "塑造抗性组动态演化",
+              "tail": "四环素抗性组",
+              "claim": "跨机制适应度差异驱动四环素抗性组的结构形成"
+            }
+          ],
+          [
+            {
+              "step": 1,
+              "head": "替加环素",
+              "relation": "触发基因发现时序关联",
+              "tail": "临床引入",
+              "claim": "替加环素临床引入与新型抗性基因发现存在时空关联"
+            },
+            {
+              "step": 2,
+              "head": "临床引入",
+              "relation": "促进抗性基因传播",
+              "tail": "基因",
+              "claim": "临床应用压力加速抗性基因在病原体中的扩散"
+            },
+            {
+              "step": 3,
+              "head": "基因",
+              "relation": "构成抗性组核心元件",
+              "tail": "四环素抗性组",
+              "claim": "临床选择压力下抗性基因整合至四环素抗性组"
+            }
+          ]
+        ],
+        "三级": [
+          [
+            {
+              "step": 1,
+              "head": "高通量条形码测序协议",
+              "relation": "量化混合培养中机制特异性菌株的相对丰度",
+              "tail": "相对丰度",
+              "claim": "高通量条形码测序协议 量化混合培养中机制特异性菌株的相对丰度 相对丰度"
+            },
+            {
+              "step": 2,
+              "head": "相对丰度",
+              "relation": "反映抗生素代次对特定抗性机制的选择压力",
+              "tail": "抗生素代次",
+              "claim": "相对丰度 反映抗生素代次对特定抗性机制的选择压力 抗生素代次"
+            },
+            {
+              "step": 3,
+              "head": "抗生素代次",
+              "relation": "驱动四环素抗性组的形成与演化",
+              "tail": "四环素抗性组",
+              "claim": "抗生素代次 驱动四环素抗性组的形成与演化 四环素抗性组"
+            }
+          ],
+          [
+            {
+              "step": 1,
+              "head": "机制特异性菌株混合",
+              "relation": "通过生长动力学复现全菌株群落动态",
+              "tail": "生长动力学",
+              "claim": "机制特异性菌株混合 通过生长动力学复现全菌株群落动态 生长动力学"
+            },
+            {
+              "step": 2,
+              "head": "生长动力学",
+              "relation": "关联最低抑菌浓度差异揭示机制间相对适应度",
+              "tail": "最低抑菌浓度",
+              "claim": "生长动力学 关联最低抑菌浓度差异揭示机制间相对适应度 最低抑菌浓度"
+            },
+            {
+              "step": 3,
+              "head": "最低抑菌浓度",
+              "relation": "验证进化动力学与临床抗生素部署历史的映射关系",
+              "tail": "进化动力学",
+              "claim": "最低抑菌浓度 验证进化动力学与临床抗生素部署历史的映射关系 进化动力学"
+            }
+          ]
+        ],
+        "一级总结": [
+          "四环素抗性组的形成机制由抗生素代次驱动选择外排泵等特定抗性机制，其动态演化需结合临床应用数据验证模型",
+          "四环素抗性组的动态演化通过机制特异性菌株混合复现生长动力学特征，需结合临床抗生素引入历史验证抗性基因竞争规律"
+        ],
+        "二级总结": [
+          "通过抗生素代次对特定抗性机制的选择压力，建立机制间适应度差异模型，解释四环素抗性组的动态演化规律",
+          "揭示替加环素临床应用与抗性基因发现的时空耦合关系，阐明临床选择压力驱动抗性基因整合至抗性组的过程"
+        ],
+        "三级总结": [
+          "通过高通量测序量化混合培养中菌株丰度，结合抗生素代次选择压力数据，闭环验证四环素抗性组形成机制",
+          "利用机制特异性混合实验复现群落动态，结合最小抑菌浓度测定揭示适应度差异，最终验证抗性组进化动力学模型"
+        ]
+      },
+      "graph": {
+        "nodes": [
+          {
+            "id": "四环素抗性组",
+            "term": "tetracycline resistome",
+            "normalized": "四环素抗性组",
+            "discipline": "生物学",
+            "evidence": "The tetracycline resistome is shaped by selection for specific resistance mechanisms",
+            "source": "title",
+            "confidence": 0.95
+          },
+          {
+            "id": "外排泵",
+            "term": "efflux pumps",
+            "normalized": "外排泵",
+            "discipline": "生物学",
+            "evidence": "mechanism (efflux pumps, ribosomal protection proteins, and enzymatic inactivation)",
+            "source": "abstract",
+            "confidence": 0.9
+          },
+          {
+            "id": "核糖体保护蛋白",
+            "term": "ribosomal protection proteins",
+            "normalized": "核糖体保护蛋白",
+            "discipline": "生物学",
+            "evidence": "mechanism (efflux pumps, ribosomal protection proteins, and enzymatic inactivation)",
+            "source": "abstract",
+            "confidence": 0.9
+          },
+          {
+            "id": "酶促失活",
+            "term": "enzymatic inactivation",
+            "normalized": "酶促失活",
+            "discipline": "生物学",
+            "evidence": "mechanism (efflux pumps, ribosomal protection proteins, and enzymatic inactivation)",
+            "source": "abstract",
+            "confidence": 0.9
+          },
+          {
+            "id": "高通量条形码测序协议",
+            "term": "high-throughput barcode sequencing protocol",
+            "normalized": "高通量条形码测序协议",
+            "discipline": "生物学",
+            "evidence": "employ a high-throughput barcode sequencing protocol that can discriminate between strains",
+            "source": "abstract",
+            "confidence": 0.85
+          },
+          {
+            "id": "混合培养",
+            "term": "mixed culture",
+            "normalized": "混合培养",
+            "discipline": "生物学",
+            "evidence": "quantify their relative abundances in mixed culture",
+            "source": "abstract",
+            "confidence": 0.8
+          },
+          {
+            "id": "最低抑菌浓度",
+            "term": "minimum inhibitory concentration",
+            "normalized": "最低抑菌浓度",
+            "discipline": "生物学",
+            "evidence": "minimum inhibitory concentration associated with individual genes",
+            "source": "abstract",
+            "confidence": 0.9
+          },
+          {
+            "id": "机制间相对适应度",
+            "term": "inter-mechanism relative fitness",
+            "normalized": "机制间相对适应度",
+            "discipline": "生物学",
+            "evidence": "resistance mechanism for inter-mechanism relative fitness",
+            "source": "abstract",
+            "confidence": 0.85
+          },
+          {
+            "id": "机制内相对适应度",
+            "term": "intra-mechanism relative fitness",
+            "normalized": "机制内相对适应度",
+            "discipline": "生物学",
+            "evidence": "explains intra-mechanism relative fitness",
+            "source": "abstract",
+            "confidence": 0.85
+          },
+          {
+            "id": "重组大肠杆菌菌株",
+            "term": "recombinant Escherichia coli strains",
+            "normalized": "重组大肠杆菌菌株",
+            "discipline": "生物学",
+            "evidence": "evaluate 24 recombinant Escherichia coli strains expressing tetracycline resistance genes",
+            "source": "abstract",
+            "confidence": 0.9
+          },
+          {
+            "id": "四环素抗性基因",
+            "term": "tetracycline resistance genes",
+            "normalized": "四环素抗性基因",
+            "discipline": "生物学",
+            "evidence": "expressing tetracycline resistance genes from each mechanism",
+            "source": "abstract",
+            "confidence": 0.9
+          },
+          {
+            "id": "机制特异性菌株混合",
+            "term": "mechanism-specific strain mixes",
+            "normalized": "机制特异性菌株混合",
+            "discipline": "生物学",
+            "evidence": "mechanism-specific strain mixes recapitulate the dynamics",
+            "source": "introduction",
+            "confidence": 0.85
+          },
+          {
+            "id": "空载体对照",
+            "term": "empty vector control",
+            "normalized": "空载体对照",
+            "discipline": "生物学",
+            "evidence": "plus the empty vector control",
+            "source": "introduction",
+            "confidence": 0.8
+          },
+          {
+            "id": "混杂效应",
+            "term": "confounding effects",
+            "normalized": "混杂效应",
+            "discipline": "生物学",
+            "evidence": "control for any confounding effects",
+            "source": "introduction",
+            "confidence": 0.8
+          },
+          {
+            "id": "四环素失活抗性机制",
+            "term": "tetracycline-inactivating resistance mechanisms",
+            "normalized": "四环素失活抗性机制",
+            "discipline": "生物学",
+            "evidence": "two tetracycline-inactivating resistance mechanisms",
+            "source": "introduction",
+            "confidence": 0.85
+          },
+          {
+            "id": "四环素类抗生素",
+            "term": "tetracycline antibiotics",
+            "normalized": "四环素类抗生素",
+            "discipline": "生物学",
+            "evidence": "clinical resistance to tetracycline antibiotics",
+            "source": "abstract",
+            "confidence": 0.9
+          },
+          {
+            "id": "抗生素代次",
+            "term": "antibiotic generations",
+            "normalized": "抗生素代次",
+            "discipline": "生物学",
+            "evidence": "selection by each antibiotic generation",
+            "source": "abstract",
+            "confidence": 0.9
+          },
+          {
+            "id": "进化动力学",
+            "term": "evolutionary dynamics",
+            "normalized": "进化动力学",
+            "discipline": "生物学",
+            "evidence": "evolutionary dynamics of this remain unclear",
+            "source": "abstract",
+            "confidence": 0.85
+          },
+          {
+            "id": "相对丰度",
+            "term": "relative abundances",
+            "normalized": "相对丰度",
+            "discipline": "生物学",
+            "evidence": "quantify their relative abundances",
+            "source": "abstract",
+            "confidence": 0.8
+          },
+          {
+            "id": "菌株",
+            "term": "DES1 strains",
+            "normalized": "菌株",
+            "discipline": "生物学",
+            "evidence": "DES1 strains increased in relative abundance",
+            "source": "introduction",
+            "confidence": 0.85
+          },
+          {
+            "id": "tet(X12)",
+            "term": "tet(X12)",
+            "normalized": "tet(X12)",
+            "discipline": "生物学",
+            "evidence": "tet(X12) (56.2%) and tet(X3) (37.6%)",
+            "source": "introduction",
+            "confidence": 0.9
+          },
+          {
+            "id": "tet(X3)",
+            "term": "tet(X3)",
+            "normalized": "tet(X3)",
+            "discipline": "生物学",
+            "evidence": "tet(X12) (56.2%) and tet(X3) (37.6%)",
+            "source": "introduction",
+            "confidence": 0.9
+          },
+          {
+            "id": "大肠杆菌",
+            "term": "E. coli",
+            "normalized": "大肠杆菌",
+            "discipline": "生物学",
+            "evidence": "preferential selection for E. coli expressing DES1 genes",
+            "source": "introduction",
+            "confidence": 0.9
+          },
+          {
+            "id": "基因",
+            "term": "DES1 genes",
+            "normalized": "基因",
+            "discipline": "生物学",
+            "evidence": "preferential selection for E. coli expressing DES1 genes",
+            "source": "introduction",
+            "confidence": 0.85
+          },
+          {
+            "id": "生长动力学",
+            "term": "growth dynamics",
+            "normalized": "生长动力学",
+            "discipline": "生物学",
+            "evidence": "investigate intra-mechanism growth dynamics",
+            "source": "introduction",
+            "confidence": 0.8
+          },
+          {
+            "id": "临床应用",
+            "term": "clinical deployment",
+            "normalized": "临床应用",
+            "discipline": "临床医学",
+            "evidence": "history of clinical deployment of tetracycline drugs",
+            "source": "abstract",
+            "confidence": 0.85
+          },
+          {
+            "id": "临床引入",
+            "term": "clinical introduction",
+            "normalized": "临床引入",
+            "discipline": "临床医学",
+            "evidence": "clinical introduction of third-generation drugs",
+            "source": "introduction",
+            "confidence": 0.85
+          },
+          {
+            "id": "病原体",
+            "term": "pathogens",
+            "normalized": "病原体",
+            "discipline": "临床医学",
+            "evidence": "resistance discovery in pathogens",
+            "source": "abstract",
+            "confidence": 0.8
+          },
+          {
+            "id": "替加环素",
+            "term": "tigecycline",
+            "normalized": "替加环素",
+            "discipline": "临床医学",
+            "evidence": "grown in tigecycline (third-generation)",
+            "source": "introduction",
+            "confidence": 0.9
+          },
+          {
+            "id": "多西环素",
+            "term": "doxycycline",
+            "normalized": "多西环素",
+            "discipline": "临床医学",
+            "evidence": "doxycycline (second-generation)",
+            "source": "introduction",
+            "confidence": 0.9
+          },
+          {
+            "id": "米诺环素",
+            "term": "minocycline",
+            "normalized": "米诺环素",
+            "discipline": "临床医学",
+            "evidence": "minocycline (second-generation)",
+            "source": "introduction",
+            "confidence": 0.9
+          },
+          {
+            "id": "mechanism-specific selection",
+            "term": "mechanism-specific selection",
+            "normalized": "mechanism-specific selection",
+            "discipline": "struct_relation_inferred",
+            "evidence": "",
+            "source": "struct_relation_inferred",
+            "confidence": 0.8
+          },
+          {
+            "id": "antibiotic deployment history",
+            "term": "antibiotic deployment history",
+            "normalized": "antibiotic deployment history",
+            "discipline": "struct_relation_inferred",
+            "evidence": "",
+            "source": "struct_relation_inferred",
+            "confidence": 0.8
+          }
+        ],
+        "edges": [
+          {
+            "source": "抗生素代次",
+            "target": "外排泵",
+            "relation": "selects for specific resistance mechanisms",
+            "relation_type": "method_applied_to",
+            "metadata": {
+              "evidence": "each mechanism is preferentially selected for by specific antibiotic generations",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "四环素抗性组",
+            "target": "mechanism-specific selection",
+            "relation": "is shaped by selection for specific resistance mechanisms",
+            "relation_type": "driven_by",
+            "metadata": {
+              "evidence": "The tetracycline resistome is shaped by selection for specific resistance mechanisms by each antibiotic generation",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "高通量条形码测序协议",
+            "target": "相对丰度",
+            "relation": "quantifies relative abundances in mixed culture",
+            "relation_type": "improves_metric",
+            "metadata": {
+              "evidence": "employ a high-throughput barcode sequencing protocol that can discriminate between strains in mixed culture and quantify their relative abundances",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "最低抑菌浓度",
+            "target": "机制间相对适应度",
+            "relation": "is secondary to resistance mechanism for determining inter-mechanism relative fitness",
+            "relation_type": "constrains",
+            "metadata": {
+              "evidence": "the minimum inhibitory concentration associated with individual genes is secondary to resistance mechanism for inter-mechanism relative fitness",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "机制特异性菌株混合",
+            "target": "生长动力学",
+            "relation": "recapitulate the dynamics observed in the ALL-strains mixture",
+            "relation_type": "generalizes",
+            "metadata": {
+              "evidence": "mechanism-specific strain mixes recapitulate the dynamics observed in the ALL-strains mixture",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "替加环素",
+            "target": "基因",
+            "relation": "clinical introduction matches discovery of DES1 genes",
+            "relation_type": "corresponds_to",
+            "metadata": {
+              "evidence": "matches the discovery of DES1s shortly after the clinical introduction of third-generation drugs",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "进化动力学",
+            "target": "antibiotic deployment history",
+            "relation": "patterns match the history of clinical deployment of tetracycline drugs",
+            "relation_type": "maps_to",
+            "metadata": {
+              "evidence": "These patterns match the history of clinical deployment of tetracycline drugs and resistance discovery in pathogens",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "四环素抗性组",
+            "target": "抗生素代次",
+            "relation": "影响",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "四环素抗性组 抗生素代次",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "抗生素代次",
+            "target": "外排泵",
+            "relation": "导致",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "抗生素代次 外排泵",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "外排泵",
+            "target": "临床应用",
+            "relation": "其适应度差异需临床应用数据验证",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "外排泵 其适应度差异需临床应用数据验证 临床应用",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "四环素抗性组",
+            "target": "机制特异性菌株混合",
+            "relation": "机制特异性菌株混合",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "四环素抗性组 机制特异性菌株混合 机制特异性菌株混合",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "机制特异性菌株混合",
+            "target": "生长动力学",
+            "relation": "导致",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "机制特异性菌株混合 生长动力学",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "生长动力学",
+            "target": "临床引入",
+            "relation": "需结合临床抗生素部署历史验证",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "生长动力学 需结合临床抗生素部署历史验证 临床引入",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "抗生素代次",
+            "target": "外排泵",
+            "relation": "选择特定抗性机制",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "抗生素代次通过选择外排泵机制影响抗性组形成",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "外排泵",
+            "target": "机制间相对适应度",
+            "relation": "决定跨机制适应度差异",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "外排泵机制提升在混合培养中的相对适应度",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "机制间相对适应度",
+            "target": "四环素抗性组",
+            "relation": "塑造抗性组动态演化",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "跨机制适应度差异驱动四环素抗性组的结构形成",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "替加环素",
+            "target": "临床引入",
+            "relation": "触发基因发现时序关联",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "替加环素临床引入与新型抗性基因发现存在时空关联",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "临床引入",
+            "target": "基因",
+            "relation": "促进抗性基因传播",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "临床应用压力加速抗性基因在病原体中的扩散",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "基因",
+            "target": "四环素抗性组",
+            "relation": "构成抗性组核心元件",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "临床选择压力下抗性基因整合至四环素抗性组",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "高通量条形码测序协议",
+            "target": "相对丰度",
+            "relation": "量化混合培养中机制特异性菌株的相对丰度",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "高通量条形码测序协议 量化混合培养中机制特异性菌株的相对丰度 相对丰度",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "相对丰度",
+            "target": "抗生素代次",
+            "relation": "反映抗生素代次对特定抗性机制的选择压力",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "相对丰度 反映抗生素代次对特定抗性机制的选择压力 抗生素代次",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "抗生素代次",
+            "target": "四环素抗性组",
+            "relation": "驱动四环素抗性组的形成与演化",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "抗生素代次 驱动四环素抗性组的形成与演化 四环素抗性组",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "机制特异性菌株混合",
+            "target": "生长动力学",
+            "relation": "通过生长动力学复现全菌株群落动态",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "机制特异性菌株混合 通过生长动力学复现全菌株群落动态 生长动力学",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "生长动力学",
+            "target": "最低抑菌浓度",
+            "relation": "关联最低抑菌浓度差异揭示机制间相对适应度",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "生长动力学 关联最低抑菌浓度差异揭示机制间相对适应度 最低抑菌浓度",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "最低抑菌浓度",
+            "target": "进化动力学",
+            "relation": "验证进化动力学与临床抗生素部署历史的映射关系",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "最低抑菌浓度 验证进化动力学与临床抗生素部署历史的映射关系 进化动力学",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          }
+        ]
+      },
+      "metrics": {
+        "path_consistency": 0.2777777777777778,
+        "coverage": 0.42424242424242425,
+        "bridging_score": 0.17391304347826086,
+        "rao_stirling_diversity": 0.0797,
+        "embedding_bridging": 1.0,
+        "consistency_precision": 0.0,
+        "consistency_recall": 0.0,
+        "consistency_f1": 0.0,
+        "info_novelty": 0.0,
+        "chain_coherence": 0.5789,
+        "atypical_combination": 0.6225,
+        "kg_density": 0.0189,
+        "kg_inverse_modularity": 0.9668,
+        "kg_largest_cc_ratio": 0.4848,
+        "kg_avg_betweenness": 0.0141,
+        "kg_clustering_coefficient": 0.0505,
+        "concept_recall": 0.0,
+        "concept_precision": 0.0,
+        "concept_f1": 0.0,
+        "relation_precision": 0.0,
+        "relation_type_accuracy": 0.0,
+        "evidence_coverage": 0.0,
+        "path_alignment_best": 0.0,
+        "path_alignment_mean": 0.0
+      }
+    },
+    "raw": "/* stage1: struct */\n/* concepts round1 */\n{\n  \"meta\": {\n    \"title\": \"The tetracycline resistome is shaped by selection for specific resistance mechanisms by each antibiotic generation\",\n    \"primary\": \"生物学\",\n    \"secondary_list\": [\"生物学\", \"临床医学\"]\n  },\n  \"概念\": {\n    \"主学科\": [\n      {\n        \"term\": \"tetracycline resistome\",\n        \"normalized\": \"四环素抗性组\",\n        \"std_label\": null,\n        \"evidence\": \"The tetracycline resistome is shaped by selection for specific resistance mechanisms\",\n        \"source\": \"title\",\n        \"confidence\": 0.95\n      },\n      {\n        \"term\": \"efflux pumps\",\n        \"normalized\": \"外排泵\",\n        \"std_label\": null,\n        \"evidence\": \"mechanism (efflux pumps, ribosomal protection proteins, and enzymatic inactivation)\",\n        \"source\": \"abstract\",\n        \"confidence\": 0.9\n      },\n      {\n        \"term\": \"ribosomal protection proteins\",\n        \"normalized\": \"核糖体保护蛋白\",\n        \"std_label\": null,\n        \"evidence\": \"mechanism (efflux pumps, ribosomal protection proteins, and enzymatic inactivation)\",\n        \"source\": \"abstract\",\n        \"confidence\": 0.9\n      },\n      {\n        \"term\": \"enzymatic inactivation\",\n        \"normalized\": \"酶促失活\",\n        \"std_label\": null,\n        \"evidence\": \"mechanism (efflux pumps, ribosomal protection proteins, and enzymatic inactivation)\",\n        \"source\": \"abstract\",\n        \"confidence\": 0.9\n      },\n      {\n        \"term\": \"high-throughput barcode sequencing protocol\",\n        \"normalized\": \"高通量条形码测序协议\",\n        \"std_label\": null,\n        \"evidence\": \"employ a high-throughput barcode sequencing protocol that can discriminate between strains\",\n        \"source\": \"abstract\",\n        \"confidence\": 0.85\n      },\n      {\n        \"term\": \"mixed culture\",\n        \"normalized\": \"混合培养\",\n        \"std_label\": null,\n        \"evidence\": \"quantify their relative abundances in mixed culture\",\n        \"source\": \"abstract\",\n        \"confidence\": 0.8\n      },\n      {\n        \"term\": \"minimum inhibitory concentration\",\n        \"normalized\": \"最低抑菌浓度\",\n        \"std_label\": null,\n        \"evidence\": \"minimum inhibitory concentration associated with individual genes\",\n        \"source\": \"abstract\",\n        \"confidence\": 0.9\n      },\n      {\n        \"term\": \"inter-mechanism relative fitness\",\n        \"normalized\": \"机制间相对适应度\",\n        \"std_label\": null,\n        \"evidence\": \"resistance mechanism for inter-mechanism relative fitness\",\n        \"source\": \"abstract\",\n        \"confidence\": 0.85\n      },\n      {\n        \"term\": \"intra-mechanism relative fitness\",\n        \"normalized\": \"机制内相对适应度\",\n        \"std_label\": null,\n        \"evidence\": \"explains intra-mechanism relative fitness\",\n        \"source\": \"abstract\",\n        \"confidence\": 0.85\n      },\n      {\n        \"term\": \"recombinant Escherichia coli strains\",\n        \"normalized\": \"重组大肠杆菌菌株\",\n        \"std_label\": null,\n        \"evidence\": \"evaluate 24 recombinant Escherichia coli strains expressing tetracycline resistance genes\",\n        \"source\": \"abstract\",\n        \"confidence\": 0.9\n      },\n      {\n        \"term\": \"tetracycline resistance genes\",\n        \"normalized\": \"四环素抗性基因\",\n        \"std_label\": null,\n        \"evidence\": \"expressing tetracycline resistance genes from each mechanism\",\n        \"source\": \"abstract\",\n        \"confidence\": 0.9\n      },\n      {\n        \"term\": \"mechanism-specific strain mixes\",\n        \"normalized\": \"机制特异性菌株混合\",\n        \"std_label\": null,\n        \"evidence\": \"mechanism-specific strain mixes recapitulate the dynamics\",\n        \"source\": \"introduction\",\n        \"confidence\": 0.85\n      },\n      {\n        \"term\": \"empty vector control\",\n        \"normalized\": \"空载体对照\",\n        \"std_label\": null,\n        \"evidence\": \"plus the empty vector control\",\n        \"source\": \"introduction\",\n        \"confidence\": 0.8\n      },\n      {\n        \"term\": \"confounding effects\",\n        \"normalized\": \"混杂效应\",\n        \"std_label\": null,\n        \"evidence\": \"control for any confounding effects\",\n        \"source\": \"introduction\",\n        \"confidence\": 0.8\n      },\n      {\n        \"term\": \"tetracycline-inactivating resistance mechanisms\",\n        \"normalized\": \"四环素失活抗性机制\",\n        \"std_label\": null,\n        \"evidence\": \"two tetracycline-inactivating resistance mechanisms\",\n        \"source\": \"introduction\",\n        \"confidence\": 0.85\n      }\n    ],\n    \"辅学科\": {\n      \"生物学\": [\n        {\n          \"term\": \"tetracycline antibiotics\",\n          \"normalized\": \"四环素类抗生素\",\n          \"std_label\": null,\n          \"evidence\": \"clinical resistance to tetracycline antibiotics\",\n          \"source\": \"abstract\",\n          \"confidence\": 0.9\n        },\n        {\n          \"term\": \"antibiotic generations\",\n          \"normalized\": \"抗生素代次\",\n          \"std_label\": null,\n          \"evidence\": \"selection by each antibiotic generation\",\n          \"source\": \"abstract\",\n          \"confidence\": 0.9\n        },\n        {\n          \"term\": \"evolutionary dynamics\",\n          \"normalized\": \"进化动力学\",\n          \"std_label\": null,\n          \"evidence\": \"evolutionary dynamics of this remain unclear\",\n          \"source\": \"abstract\",\n          \"confidence\": 0.85\n        },\n        {\n          \"term\": \"relative abundances\",\n          \"normalized\": \"相对丰度\",\n          \"std_label\": null,\n          \"evidence\": \"quantify their relative abundances\",\n          \"source\": \"abstract\",\n          \"confidence\": 0.8\n        },\n        {\n          \"term\": \"DES1 strains\",\n          \"normalized\": \"DES1菌株\",\n          \"std_label\": null,\n          \"evidence\": \"DES1 strains increased in relative abundance\",\n          \"source\": \"introduction\",\n          \"confidence\": 0.85\n        },\n        {\n          \"term\": \"tet(X12)\",\n          \"normalized\": \"tet(X12)\",\n          \"std_label\": null,\n          \"evidence\": \"tet(X12) (56.2%) and tet(X3) (37.6%)\",\n          \"source\": \"introduction\",\n          \"confidence\": 0.9\n        },\n        {\n          \"term\": \"tet(X3)\",\n          \"normalized\": \"tet(X3)\",\n          \"std_label\": null,\n          \"evidence\": \"tet(X12) (56.2%) and tet(X3) (37.6%)\",\n          \"source\": \"introduction\",\n          \"confidence\": 0.9\n        },\n        {\n          \"term\": \"E. coli\",\n          \"normalized\": \"大肠杆菌\",\n          \"std_label\": null,\n          \"evidence\": \"preferential selection for E. coli expressing DES1 genes\",\n          \"source\": \"introduction\",\n          \"confidence\": 0.9\n        },\n        {\n          \"term\": \"DES1 genes\",\n          \"normalized\": \"DES1基因\",\n          \"std_label\": null,\n          \"evidence\": \"preferential selection for E. coli expressing DES1 genes\",\n          \"source\": \"introduction\",\n          \"confidence\": 0.85\n        },\n        {\n          \"term\": \"growth dynamics\",\n          \"normalized\": \"生长动力学\",\n          \"std_label\": null,\n          \"evidence\": \"investigate intra-mechanism growth dynamics\",\n          \"source\": \"introduction\",\n          \"confidence\": 0.8\n        }\n      ],\n      \"临床医学\": [\n        {\n          \"term\": \"clinical deployment\",\n          \"normalized\": \"临床应用\",\n          \"std_label\": null,\n          \"evidence\": \"history of clinical deployment of tetracycline drugs\",\n          \"source\": \"abstract\",\n          \"confidence\": 0.85\n        },\n        {\n          \"term\": \"clinical introduction\",\n          \"normalized\": \"临床引入\",\n          \"std_label\": null,\n          \"evidence\": \"clinical introduction of third-generation drugs\",\n          \"source\": \"introduction\",\n          \"confidence\": 0.85\n        },\n        {\n          \"term\": \"pathogens\",\n          \"normalized\": \"病原体\",\n          \"std_label\": null,\n          \"evidence\": \"resistance discovery in pathogens\",\n          \"source\": \"abstract\",\n          \"confidence\": 0.8\n        },\n        {\n          \"term\": \"tigecycline\",\n          \"normalized\": \"替加环素\",\n          \"std_label\": null,\n          \"evidence\": \"grown in tigecycline (third-generation)\",\n          \"source\": \"introduction\",\n          \"confidence\": 0.9\n        },\n        {\n          \"term\": \"doxycycline\",\n          \"normalized\": \"多西环素\",\n          \"std_label\": null,\n          \"evidence\": \"doxycycline (second-generation)\",\n          \"source\": \"introduction\",\n          \"confidence\": 0.9\n        },\n        {\n          \"term\": \"minocycline\",\n          \"normalized\": \"米诺环素\",\n          \"std_label\": null,\n          \"evidence\": \"minocycline (second-generation)\",\n          \"source\": \"introduction\",\n          \"confidence\": 0.9\n        }\n      ]\n    }\n  }\n}\n\n/* concepts round2 (supplement) */\n{\"补充概念\": {\"主学科\": [\"生物学\"], \"辅学科\": {\"临床医学\": [\"ALL mixture\", \"-DES2 mix\", \"EFF mix\", \"RPP mix\", \"DES1 mix\", \"TIG\", \"DOX\", \"TET\"]}}}\n\n/* relations */\n{\n  \"跨学科关系\": [\n    {\n      \"head\": \"antibiotic generations\",\n      \"tail\": \"efflux pumps\",\n      \"relation\": \"selects for specific resistance mechanisms\",\n      \"relation_type\": \"method_applied_to\",\n      \"direction\": \"->\",\n      \"evidence\": \"each mechanism is preferentially selected for by specific antibiotic generations\",\n      \"source\": \"abstract\",\n      \"confidence\": 0.9\n    },\n    {\n      \"head\": \"tetracycline resistome\",\n      \"tail\": \"mechanism-specific selection\",\n      \"relation\": \"is shaped by selection for specific resistance mechanisms\",\n      \"relation_type\": \"driven_by\",\n      \"direction\": \"->\",\n      \"evidence\": \"The tetracycline resistome is shaped by selection for specific resistance mechanisms by each antibiotic generation\",\n      \"source\": \"title\",\n      \"confidence\": 0.95\n    },\n    {\n      \"head\": \"high-throughput barcode sequencing protocol\",\n      \"tail\": \"relative abundances\",\n      \"relation\": \"quantifies relative abundances in mixed culture\",\n      \"relation_type\": \"improves_metric\",\n      \"direction\": \"->\",\n      \"evidence\": \"employ a high-throughput barcode sequencing protocol that can discriminate between strains in mixed culture and quantify their relative abundances\",\n      \"source\": \"abstract\",\n      \"confidence\": 0.85\n    },\n    {\n      \"head\": \"minimum inhibitory concentration\",\n      \"tail\": \"inter-mechanism relative fitness\",\n      \"relation\": \"is secondary to resistance mechanism for determining inter-mechanism relative fitness\",\n      \"relation_type\": \"constrains\",\n      \"direction\": \"->\",\n      \"evidence\": \"the minimum inhibitory concentration associated with individual genes is secondary to resistance mechanism for inter-mechanism relative fitness\",\n      \"source\": \"abstract\",\n      \"confidence\": 0.8\n    },\n    {\n      \"head\": \"mechanism-specific strain mixes\",\n      \"tail\": \"growth dynamics\",\n      \"relation\": \"recapitulate the dynamics observed in the ALL-strains mixture\",\n      \"relation_type\": \"generalizes\",\n      \"direction\": \"->\",\n      \"evidence\": \"mechanism-specific strain mixes recapitulate the dynamics observed in the ALL-strains mixture\",\n      \"source\": \"introduction\",\n      \"confidence\": 0.85\n    },\n    {\n      \"head\": \"tigecycline\",\n      \"tail\": \"DES1 genes\",\n      \"relation\": \"clinical introduction matches discovery of DES1 genes\",\n      \"relation_type\": \"corresponds_to\",\n      \"direction\": \"->\",\n      \"evidence\": \"matches the discovery of DES1s shortly after the clinical introduction of third-generation drugs\",\n      \"source\": \"introduction\",\n      \"confidence\": 0.85\n    },\n    {\n      \"head\": \"evolutionary dynamics\",\n      \"tail\": \"antibiotic deployment history\",\n      \"relation\": \"patterns match the history of clinical deployment of tetracycline drugs\",\n      \"relation_type\": \"maps_to\",\n      \"direction\": \"->\",\n      \"evidence\": \"These patterns match the history of clinical deployment of tetracycline drugs and resistance discovery in pathogens\",\n      \"source\": \"abstract\",\n      \"confidence\": 0.8\n    }\n  ]\n}\n\n/* stage2: query */\n{\n  \"按辅助学科分类\": {\n    \"生物学\": {\n      \"概念\": [\n        \"四环素类抗生素\",\n        \"抗生素代次\",\n        \"进化动力学\",\n        \"相对丰度\",\n        \"菌株\",\n        \"tet(X12)\",\n        \"tet(X3)\",\n        \"大肠杆菌\",\n        \"基因\",\n        \"生长动力学\"\n      ],\n      \"关系\": [0, 2, 6],\n      \"rationale\": \"解析抗生素代次驱动抗性机制选择的进化动力学规律\"\n    },\n    \"临床医学\": {\n      \"概念\": [\n        \"临床应用\",\n        \"临床引入\",\n        \"病原体\",\n        \"替加环素\",\n        \"多西环素\",\n        \"米诺环素\"\n      ],\n      \"关系\": [5, 6],\n      \"rationale\": \"关联抗生素临床部署历史与病原体抗性基因发现的时间序列\"\n    }\n  },\n  \"查询\": {\n    \"一级\": \"四环素抗性组的形成机制及其动态演化规律\",\n    \"二级\": [\n      \"抗生素代次如何影响抗性机制的选择压力\",\n      \"替加环素临床应用与DES1基因发现的时空关联\"\n    ],\n    \"三级\": [\n      \"整合高通量条形码测序量化混合培养中的机制特异性菌株丰度，并结合临床抗生素部署数据验证抗性组演化模型\",\n      \"通过机制特异性菌株混合实验复现全菌株群落动态，结合最小抑菌浓度测定揭示跨机制适应度差异\"\n    ]\n  }\n}\n\n/* stage3: hypothesis L1 */\n{\n  \"假设\": {\n    \"一级\": [\n      [\n        {\n          \"step\": 1,\n          \"head\": \"四环素抗性组\",\n          \"relation\": \"is shaped by selection for specific resistance mechanisms\",\n          \"tail\": \"抗生素代次\"\n        },\n        {\n          \"step\": 2,\n          \"head\": \"抗生素代次\",\n          \"relation\": \"selects for specific resistance mechanisms\",\n          \"tail\": \"外排泵\"\n        },\n        {\n          \"step\": 3,\n          \"head\": \"外排泵\",\n          \"relation\": \"其适应度差异需临床应用数据验证\",\n          \"tail\": \"临床应用\"\n        }\n      ],\n      [\n        {\n          \"step\": 1,\n          \"head\": \"四环素抗性组\",\n          \"relation\": \"recapitulate dynamics through mechanism-specific strain mixes\",\n          \"tail\": \"机制特异性菌株混合\"\n        },\n        {\n          \"step\": 2,\n          \"head\": \"机制特异性菌株混合\",\n          \"relation\": \"recapitulate the dynamics observed in growth kinetics\",\n          \"tail\": \"生长动力学\"\n        },\n        {\n          \"step\": 3,\n          \"head\": \"生长动力学\",\n          \"relation\": \"需结合临床抗生素部署历史验证\",\n          \"tail\": \"临床引入\"\n        }\n      ]\n    ],\n    \"一级总结\": [\n      \"四环素抗性组的形成机制由抗生素代次驱动选择外排泵等特定抗性机制，其动态演化需结合临床应用数据验证模型\",\n      \"四环素抗性组的动态演化通过机制特异性菌株混合复现生长动力学特征，需结合临床抗生素引入历史验证抗性基因竞争规律\"\n    ]\n  }\n}\n\n/* stage3: hypothesis L2 */\n{\n  \"假设\": {\n    \"二级\": [\n      [\n        {\n          \"step\": 1,\n          \"head\": \"抗生素代次\",\n          \"tail\": \"外排泵\",\n          \"relation\": \"选择特定抗性机制\",\n          \"claim\": \"抗生素代次通过选择外排泵机制影响抗性组形成\"\n        },\n        {\n          \"step\": 2,\n          \"head\": \"外排泵\",\n          \"tail\": \"机制间相对适应度\",\n          \"relation\": \"决定跨机制适应度差异\",\n          \"claim\": \"外排泵机制提升在混合培养中的相对适应度\"\n        },\n        {\n          \"step\": 3,\n          \"head\": \"机制间相对适应度\",\n          \"tail\": \"四环素抗性组\",\n          \"relation\": \"塑造抗性组动态演化\",\n          \"claim\": \"跨机制适应度差异驱动四环素抗性组的结构形成\"\n        }\n      ],\n      [\n        {\n          \"step\": 1,\n          \"head\": \"替加环素\",\n          \"tail\": \"临床引入\",\n          \"relation\": \"触发基因发现时序关联\",\n          \"claim\": \"替加环素临床引入与新型抗性基因发现存在时空关联\"\n        },\n        {\n          \"step\": 2,\n          \"head\": \"临床引入\",\n          \"tail\": \"基因\",\n          \"relation\": \"促进抗性基因传播\",\n          \"claim\": \"临床应用压力加速抗性基因在病原体中的扩散\"\n        },\n        {\n          \"step\": 3,\n          \"head\": \"基因\",\n          \"tail\": \"四环素抗性组\",\n          \"relation\": \"构成抗性组核心元件\",\n          \"claim\": \"临床选择压力下抗性基因整合至四环素抗性组\"\n        }\n      ]\n    ],\n    \"二级总结\": [\n      \"通过抗生素代次对特定抗性机制的选择压力，建立机制间适应度差异模型，解释四环素抗性组的动态演化规律\",\n      \"揭示替加环素临床应用与抗性基因发现的时空耦合关系，阐明临床选择压力驱动抗性基因整合至抗性组的过程\"\n    ]\n  }\n}\n\n/* stage3: hypothesis L3 */\n{\n  \"假设\": {\n    \"三级\": [\n      [\n        {\n          \"head\": \"高通量条形码测序协议\",\n          \"relation\": \"量化混合培养中机制特异性菌株的相对丰度\",\n          \"tail\": \"相对丰度\"\n        },\n        {\n          \"head\": \"相对丰度\",\n          \"relation\": \"反映抗生素代次对特定抗性机制的选择压力\",\n          \"tail\": \"抗生素代次\"\n        },\n        {\n          \"head\": \"抗生素代次\",\n          \"relation\": \"驱动四环素抗性组的形成与演化\",\n          \"tail\": \"四环素抗性组\"\n        }\n      ],\n      [\n        {\n          \"head\": \"机制特异性菌株混合\",\n          \"relation\": \"通过生长动力学复现全菌株群落动态\",\n          \"tail\": \"生长动力学\"\n        },\n        {\n          \"head\": \"生长动力学\",\n          \"relation\": \"关联最低抑菌浓度差异揭示机制间相对适应度\",\n          \"tail\": \"最低抑菌浓度\"\n        },\n        {\n          \"head\": \"最低抑菌浓度\",\n          \"relation\": \"验证进化动力学与临床抗生素部署历史的映射关系\",\n          \"tail\": \"进化动力学\"\n        }\n      ]\n    ],\n    \"三级总结\": [\n      \"通过高通量测序量化混合培养中菌株丰度，结合抗生素代次选择压力数据，闭环验证四环素抗性组形成机制\",\n      \"利用机制特异性混合实验复现群落动态，结合最小抑菌浓度测定揭示适应度差异，最终验证抗性组进化动力学模型\"\n    ]\n  }\n}",
+    "ok": true,
+    "error": ""
+  },
+  {
+    "title": "Quasi Fe MIL-53 nanozyme inducing ferroptosis and immunogenic cell death for cancer immunotherapy",
+    "abstract": "Nanozymes offer diverse therapeutic potentials for cancer treatment which is dependent on the development of nanomaterials. Quasi-metal-organic framework is a class of metal-organic framework-derived nanomaterials with a transition state from metal-organic frameworks towards metal oxide featuring porous structure and high activity. Herein an iron-based quasi-metal-organic framework nanozyme Q-MIL-53(Fe) is reported via a controlled deligandation strategy, exhibiting enhanced peroxidase-/catalase-mimic activity and glutathione depletion capacity, whose underlying mechanisms are studied via density functional theory calculations. Q-MIL-53(Fe) demonstrates biocompatibility and superior antitumor efficacy compared to pristine MIL-53(Fe). It can activate antitumor immune response by inducing ferroptosis and immunogenic cell death, promoting dendritic cell maturation and T lymphocytes infiltration. Furthermore, a combination of Q-MIL-53(Fe) and programmed cell death protein 1 antibody amplifies cancer immunotherapy. This study validates the antitumor activity of quasi-metal-organic frameworks and its immunotherapy induction potential. It would broaden the application of quasi-metal-organic frameworks and open avenues for developing antitumor nanozymes.",
+    "pdf_url": "https://doi.org/10.1038/s41467-025-57542-x",
+    "primary": "化学",
+    "secondary": "化学, 材料科学, 临床医学",
+    "secondary_list": [
+      "化学",
+      "材料科学",
+      "临床医学"
+    ],
+    "introduction": "Article\n\nhttps://doi.org/10.1038/s41467-025-57542-x\n\nQuasi Fe MIL-53 nanozyme inducing\nferroptosis and immunogenic cell death for\ncancer immunotherapy\n\nReceived: 6 March 2024\n\nAccepted: 26 February 2025\n\nCheck for updates\n\n;\n,\n:\n)\n(\n\n0\n9\n8\n7\n6\n5\n4\n3\n2\n1\n\n;\n,\n:\n)\n(\n\n0\n9\n8\n7\n6\n5\n4\n3\n2\n1\n\nZihui Yan1, Yang Bai\nHuilin Sun1, Yi Li1, Lin Qiu1, Ruijie Zhang1, Pengju Jiang1, Donghui Zhao1,\n, Huan Pang 2 & Jianhao Wang 1,5\nZhongyan Chen4, Yafei Li\n\n, Songtao Zhang2, Lingyi Kong 3, Yu Wang 3,\n\n1,3\n\n1\n\nNanozymes offer diverse therapeutic potentials for cancer treatment which is\ndependent on the development of nanomaterials. Quasi-metal-organic fra-\nmework is a class of metal-organic framework-derived nanomaterials with a\ntransition state from metal-organic frameworks towards metal oxide featuring\nporous structure and high activity. Herein an iron-based quasi-metal-organic\nframework nanozyme Q-MIL-53(Fe) is reported via a controlled deligandation\nstrategy, exhibiting enhanced peroxidase-/catalase-mimic activity and glu-\ntathione depletion capacity, whose underlying mechanisms are studied via\ndensity functional theory calculations. Q-MIL-53(Fe) demonstrates bio-\ncompatibility and superior antitumor efﬁcacy compared to pristine MIL-\n53(Fe). It can activate antitumor immune response by inducing ferroptosis and\nimmunogenic cell death, promoting dendritic cell maturation and T lympho-\ncytes inﬁltration. Furthermore, a combination of Q-MIL-53(Fe) and pro-\ngrammed cell death protein 1 antibody ampliﬁes cancer immunotherapy. This\nstudy validates the antitumor activity of quasi-metal-organic frameworks and\nits immunotherapy induction potential. It would broaden the application of\nquasi-metal-organic frameworks and open avenues for developing antitumor\nnanozymes.\n\nCancer remains a prominent factor in causing fatalities of death uni-\nversally in spite of great progress in treatment over recent decades1,2.\nConventional cancer therapies such as chemotherapy, radiotherapy\nand surgery are often limited by severe side effects and the develop-\nment of drug resistance in tumors3,4. There is an urgent need to\ndevelop more effective and safer therapeutic strategies for cancer5.\nFerroptosis has attracted tremendous attention in cancer therapy as an\nemerging regulated cell death combined with iron-mediated lipid\nperoxidation6,7. In the process of ferroptosis, the downregulation of\n\nglutathione (GSH) leads to glutathione peroxidase 4 (GPX4) deactiva-\ntion and imbalance in cellular antioxidant capacity, causing lipid per-\noxides (LPO) dysfunction with excessive reactive oxygen species\n(ROS)8,9. The unique characteristics evade resistance to apoptosis/\nnecroptosis and induce ferroptosis. More importantly, during the\nprocess of ferroptosis, there is typically the release of damage-\nassociated molecular patterns (DAMPs), which possess the capacity to\ninduce immunogenic cell death (ICD). It plays a vital role in triggering\nimmune responses against tumor growth10,11. These signals contribute\n\n1School of Pharmacy, Changzhou University, Changzhou 213164, P. R. China. 2School of Chemistry and Chemical Engineering, Yangzhou University, Yangzhou\n225002, P. R. China. 3Jiangsu Collaborative Innovation Centre of Biomedical Functional Materials, School of Chemistry and Materials Science, Nanjing Normal\nUniversity, Nanjing 210023, P. R. China. 4College of Chemistry and Materials Engineering, Wenzhou University, Wenzhou 325035, P. R. China. 5School of\nMedical and Health Engineering, Changzhou University, Changzhou 213164, P. R. China.\nhuanpangchem@hotmail.com; minuswan@cczu.edu.cn\n\ne-mail: baiy@cczu.edu.cn; liyafei@njnu.edu.cn;\n\nNature Communications | \n\n (2025) 16:2290 \n\n1\n\n \n \n \n \n \n \n\fArticle\n\nhttps://doi.org/10.1038/s41467-025-57542-x\n\nto improving tumor immunogenicity on dendritic cells (DCs), resulting\nin the activation of tumor-speciﬁc T lymphocytes and the initiation of\nantitumor immune responses12. Therefore, ferroptosis and ICD are\nbelieved as promising strategies to enhance the therapeutic effect by\nevoking a speciﬁc antitumor immunity13.\n\nNanozymes are nanomaterials with intrinsic enzyme-like activities\nthat catalyze biochemical reactions under physiological conditions14,15.\nNanozymes possess advantages over natural enzymes including high\nstability and low cost. More importantly, the composition, structure,\nand morphology of nanozymes could be designed to exhibit multiple\nredox reactive enzyme-like activities, including peroxidase (POD),\ncatalase (CAT), superoxide dismutase (SOD), oxidase (OXD), etc. Thus,\nthe regulation of ROS levels endows nanozymes potent for multimodal\nantitumor therapeutics16.\n\nSince Fe3O4 nanoparticles (NPs) were reported to have intrinsic\nhorseradish peroxidase (HRP)-like biocatalytic activity, they have been\ntreatment17. The\nuniversally utilized as nanozymes for\nmechanism of Fe3O4 as nanozyme in tumor inhibition can be under-\nstood mainly as a Fenton reaction, which catalyzes excessive H2O2 in\nthe tumor microenvironment (TME) via Fe3+/Fe2+ ions to generate\nexcessive toxic ·OH or other radicals. Tremendous interests have been\nattracted to the morphological, structural, or compositional designing\nof iron based nanozyme for approaching more efﬁcient tumor\ninhibition.\n\ntumor\n\nAs one of the most popular classes of nanomaterials designed for\nnanozymes, metal-organic frameworks (MOF), also known as coordi-\nnation polymers (CP), offer multitudinous platforms for the design of\nmetal-based nanozymes18,19. MOF assembles metal ions/nodes and\norganic ligands into coordination networks20,21. The abundant enzyme-\nmimicking catalytic sites together with tunable pore structure make\nMOF an ideal candidate as an antitumor nanozyme. However, pristine\nMOF suffers from low stability in the physiological environment, suf-\nﬁcient activity, or ﬁnite enzyme-like varieties, which hinders its direct\nuse. Further functionalizations such as structure exploration22,\ncomposition23–25 and derivation26,27 have been proven to be efﬁcient",
+    "parsed": {
+      "meta": {
+        "title": "Quasi Fe MIL-53 nanozyme inducing ferroptosis and immunogenic cell death for cancer immunotherapy",
+        "primary": "化学",
+        "secondary_list": [
+          "化学",
+          "材料科学",
+          "临床医学"
+        ]
+      },
+      "概念": {
+        "主学科": [
+          {
+            "term": "Q-MIL-53(Fe)",
+            "normalized": "准金属有机框架纳米酶",
+            "std_label": "Quasi-metal-organic framework nanozyme",
+            "evidence": "Herein an iron-based quasi-metal-organic framework nanozyme Q-MIL-53(Fe) is reported",
+            "source": "abstract",
+            "confidence": 0.98
+          },
+          {
+            "term": "peroxidase-mimic activity",
+            "normalized": "过氧化物酶模拟活性",
+            "std_label": "Peroxidase-mimicking activity",
+            "evidence": "exhibiting enhanced peroxidase-/catalase-mimic activity",
+            "source": "abstract",
+            "confidence": 0.95
+          },
+          {
+            "term": "density functional theory calculations",
+            "normalized": "密度泛函理论计算",
+            "std_label": "Density functional theory calculations",
+            "evidence": "whose underlying mechanisms are studied via density functional theory calculations",
+            "source": "abstract",
+            "confidence": 0.97
+          },
+          {
+            "term": "glutathione depletion",
+            "normalized": "谷胱甘肽耗竭",
+            "std_label": "Glutathione depletion",
+            "evidence": "glutathione depletion capacity",
+            "source": "abstract",
+            "confidence": 0.96
+          },
+          {
+            "term": "ferroptosis",
+            "normalized": "铁死亡",
+            "std_label": "Ferroptosis",
+            "evidence": "inducing ferroptosis and immunogenic cell death",
+            "source": "abstract",
+            "confidence": 0.99
+          },
+          {
+            "term": "immunogenic cell death",
+            "normalized": "免疫原性细胞死亡",
+            "std_label": "Immunogenic cell death",
+            "evidence": "inducing ferroptosis and immunogenic cell death",
+            "source": "abstract",
+            "confidence": 0.98
+          },
+          {
+            "term": "reactive oxygen species",
+            "normalized": "活性氧",
+            "std_label": "Reactive oxygen species",
+            "evidence": "excessive reactive oxygen species (ROS)",
+            "source": "introduction",
+            "confidence": 0.97
+          },
+          {
+            "term": "Fenton reaction",
+            "normalized": "芬顿反应",
+            "std_label": "Fenton reaction",
+            "evidence": "the mechanism of Fe3O4 as nanozyme in tumor inhibition can be understood mainly as a Fenton reaction",
+            "source": "introduction",
+            "confidence": 0.96
+          },
+          {
+            "term": "tumor microenvironment",
+            "normalized": "肿瘤微环境",
+            "std_label": "Tumor microenvironment",
+            "evidence": "catalyzes excessive H2O2 in the tumor microenvironment (TME)",
+            "source": "introduction",
+            "confidence": 0.95
+          },
+          {
+            "term": "metal-organic frameworks",
+            "normalized": "金属有机框架",
+            "std_label": "Metal-organic frameworks",
+            "evidence": "metal-organic frameworks (MOF), also known as coordination polymers (CP)",
+            "source": "introduction",
+            "confidence": 0.98
+          }
+        ],
+        "辅学科": {
+          "材料科学": [
+            {
+              "term": "quasi-metal-organic framework",
+              "normalized": "准金属有机框架",
+              "std_label": "Quasi-metal-organic framework",
+              "evidence": "Quasi-metal-organic framework is a class of metal-organic framework-derived nanomaterials",
+              "source": "abstract",
+              "confidence": 0.97
+            },
+            {
+              "term": "metal oxide",
+              "normalized": "金属氧化物",
+              "std_label": "Metal oxide",
+              "evidence": "transition state from metal-organic frameworks towards metal oxide",
+              "source": "abstract",
+              "confidence": 0.95
+            },
+            {
+              "term": "porous structure",
+              "normalized": "多孔结构",
+              "std_label": "Porous structure",
+              "evidence": "featuring porous structure and high activity",
+              "source": "abstract",
+              "confidence": 0.94
+            },
+            {
+              "term": "controlled deligandation strategy",
+              "normalized": "可控脱配体策略",
+              "std_label": "Controlled deligandation strategy",
+              "evidence": "Q-MIL-53(Fe) is reported via a controlled deligandation strategy",
+              "source": "abstract",
+              "confidence": 0.96
+            },
+            {
+              "term": "biocompatibility",
+              "normalized": "生物相容性",
+              "std_label": "Biocompatibility",
+              "evidence": "Q-MIL-53(Fe) demonstrates biocompatibility",
+              "source": "abstract",
+              "confidence": 0.95
+            },
+            {
+              "term": "coordination polymers",
+              "normalized": "配位聚合物",
+              "std_label": "Coordination polymers",
+              "evidence": "metal-organic frameworks (MOF), also known as coordination polymers (CP)",
+              "source": "introduction",
+              "confidence": 0.97
+            }
+          ],
+          "临床医学": [
+            {
+              "term": "cancer immunotherapy",
+              "normalized": "癌症免疫治疗",
+              "std_label": "Cancer immunotherapy",
+              "evidence": "for cancer immunotherapy",
+              "source": "title",
+              "confidence": 0.99
+            },
+            {
+              "term": "antitumor immune response",
+              "normalized": "抗肿瘤免疫反应",
+              "std_label": "Antitumor immune response",
+              "evidence": "activate antitumor immune response by inducing ferroptosis",
+              "source": "abstract",
+              "confidence": 0.97
+            },
+            {
+              "term": "dendritic cell maturation",
+              "normalized": "树突状细胞成熟",
+              "std_label": "Dendritic cell maturation",
+              "evidence": "promoting dendritic cell maturation",
+              "source": "abstract",
+              "confidence": 0.96
+            },
+            {
+              "term": "T lymphocytes infiltration",
+              "normalized": "淋巴细胞浸润",
+              "std_label": "T lymphocytes infiltration",
+              "evidence": "promoting T lymphocytes infiltration",
+              "source": "abstract",
+              "confidence": 0.95
+            },
+            {
+              "term": "programmed cell death protein 1 antibody",
+              "normalized": "程序性细胞死亡蛋白1抗体",
+              "std_label": "Programmed cell death protein 1 antibody",
+              "evidence": "combination of Q-MIL-53(Fe) and programmed cell death protein 1 antibody",
+              "source": "abstract",
+              "confidence": 0.98
+            },
+            {
+              "term": "damage-associated molecular patterns",
+              "normalized": "损伤相关分子模式",
+              "std_label": "Damage-associated molecular patterns",
+              "evidence": "release of damage-associated molecular patterns (DAMPs)",
+              "source": "introduction",
+              "confidence": 0.97
+            }
+          ]
+        }
+      },
+      "跨学科关系": [
+        {
+          "head": "Q-MIL-53(Fe)",
+          "relation": "用于",
+          "relation_type": "method_applied_to",
+          "relation_type_norm": "method_applied_to",
+          "relation_type_raw": "method_applied_to",
+          "tail": "cancer immunotherapy",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "for cancer immunotherapy",
+          "source": "abstract",
+          "confidence": 0.99
+        },
+        {
+          "head": "Q-MIL-53(Fe)",
+          "relation": "通过",
+          "relation_type": "method_applied_to",
+          "relation_type_norm": "method_applied_to",
+          "relation_type_raw": "method_applied_to",
+          "tail": "controlled deligandation strategy",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "Q-MIL-53(Fe) is reported via a controlled deligandation strategy",
+          "source": "abstract",
+          "confidence": 0.96
+        },
+        {
+          "head": "Q-MIL-53(Fe)",
+          "relation": "诱导",
+          "relation_type": "driven_by",
+          "relation_type_norm": "driven_by",
+          "relation_type_raw": "driven_by",
+          "tail": "ferroptosis",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "It can activate antitumor immune response by inducing ferroptosis",
+          "source": "abstract",
+          "confidence": 0.98
+        },
+        {
+          "head": "ferroptosis",
+          "relation": "导致",
+          "relation_type": "generalizes",
+          "relation_type_norm": "generalizes",
+          "relation_type_raw": "generalizes",
+          "tail": "immunogenic cell death",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "inducing ferroptosis and immunogenic cell death",
+          "source": "abstract",
+          "confidence": 0.97
+        },
+        {
+          "head": "density functional theory calculations",
+          "relation": "研究机制揭示",
+          "relation_type": "inferred_from",
+          "relation_type_norm": "inferred_from",
+          "relation_type_raw": "inferred_from",
+          "tail": "peroxidase-mimic activity",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "whose underlying mechanisms are studied via density functional theory calculations",
+          "source": "abstract",
+          "confidence": 0.97
+        },
+        {
+          "head": "quasi-metal-organic framework",
+          "relation": "过渡状态形成",
+          "relation_type": "maps_to",
+          "relation_type_norm": "maps_to",
+          "relation_type_raw": "maps_to",
+          "tail": "metal oxide",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "transition state from metal-organic frameworks towards metal oxide",
+          "source": "abstract",
+          "confidence": 0.95
+        },
+        {
+          "head": "porous structure",
+          "relation": "通过多孔结构增强",
+          "relation_type": "improves_metric",
+          "relation_type_norm": "improves_metric",
+          "relation_type_raw": "improves_metric",
+          "tail": "peroxidase-mimic activity",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "featuring porous structure and high activity",
+          "source": "abstract",
+          "confidence": 0.94
+        },
+        {
+          "head": "programmed cell death protein 1 antibody",
+          "relation": "联合治疗增强",
+          "relation_type": "extends",
+          "relation_type_norm": "extends",
+          "relation_type_raw": "extends",
+          "tail": "cancer immunotherapy",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "combination of Q-MIL-53(Fe) and programmed cell death protein 1 antibody amplifies cancer immunotherapy",
+          "source": "abstract",
+          "confidence": 0.98
+        },
+        {
+          "head": "damage-associated molecular patterns",
+          "relation": "释放触发",
+          "relation_type": "corresponds_to",
+          "relation_type_norm": "corresponds_to",
+          "relation_type_raw": "corresponds_to",
+          "tail": "immunogenic cell death",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "release of damage-associated molecular patterns (DAMPs), which possess the capacity to induce immunogenic cell death",
+          "source": "introduction",
+          "confidence": 0.97
+        },
+        {
+          "head": "Fenton reaction",
+          "relation": "产生",
+          "relation_type": "driven_by",
+          "relation_type_norm": "driven_by",
+          "relation_type_raw": "driven_by",
+          "tail": "reactive oxygen species",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "Fenton reaction catalyzes excessive H2O2 in the tumor microenvironment to generate excessive toxic ·OH or other radicals",
+          "source": "introduction",
+          "confidence": 0.96
+        }
+      ],
+      "按辅助学科分类": {
+        "材料科学": {
+          "概念": [
+            "准金属有机框架",
+            "金属氧化物",
+            "多孔结构",
+            "可控脱配体策略",
+            "生物相容性",
+            "配位聚合物"
+          ],
+          "关系": [
+            1,
+            5,
+            6
+          ],
+          "rationale": "提供纳米酶材料的结构设计与制备方法，通过多孔特性增强催化活性"
+        },
+        "临床医学": {
+          "概念": [
+            "癌症免疫治疗",
+            "抗肿瘤免疫反应",
+            "树突状细胞成熟",
+            "淋巴细胞浸润",
+            "程序性细胞死亡蛋白1抗体",
+            "损伤相关分子模式"
+          ],
+          "关系": [
+            0,
+            2,
+            3,
+            7,
+            8
+          ],
+          "rationale": "验证纳米酶在肿瘤免疫治疗中的生物学效应及联合治疗效果"
+        }
+      },
+      "查询": {
+        "一级": "准金属有机框架纳米酶如何通过铁死亡机制实现癌症免疫治疗效果？",
+        "二级": [
+          "多孔结构如何增强纳米酶的过氧化物酶模拟活性？",
+          "铁死亡诱导如何激活抗肿瘤免疫反应？"
+        ],
+        "三级": [
+          "可控脱配体策略制备的准金属有机框架纳米酶，如何通过芬顿反应产生活性氧并结合程序性细胞死亡蛋白1抗体实现协同免疫治疗？"
+        ]
+      },
+      "假设": {
+        "一级": [
+          [
+            {
+              "step": 1,
+              "head": "准金属有机框架纳米酶",
+              "relation": "诱导",
+              "tail": "铁死亡",
+              "claim": "准金属有机框架纳米酶 诱导 铁死亡"
+            },
+            {
+              "step": 2,
+              "head": "铁死亡",
+              "relation": "导致",
+              "tail": "免疫原性细胞死亡",
+              "claim": "铁死亡 导致 免疫原性细胞死亡"
+            },
+            {
+              "step": 3,
+              "head": "免疫原性细胞死亡",
+              "relation": "激活抗肿瘤免疫反应",
+              "tail": "癌症免疫治疗",
+              "claim": "免疫原性细胞死亡 激活抗肿瘤免疫反应 癌症免疫治疗"
+            }
+          ],
+          [
+            {
+              "step": 1,
+              "head": "准金属有机框架纳米酶",
+              "relation": "通过多孔结构增强",
+              "tail": "过氧化物酶模拟活性",
+              "claim": "准金属有机框架纳米酶 通过多孔结构增强 过氧化物酶模拟活性"
+            },
+            {
+              "step": 2,
+              "head": "过氧化物酶模拟活性",
+              "relation": "引发谷胱甘肽耗竭",
+              "tail": "谷胱甘肽耗竭",
+              "claim": "过氧化物酶模拟活性 引发谷胱甘肽耗竭 谷胱甘肽耗竭"
+            },
+            {
+              "step": 3,
+              "head": "谷胱甘肽耗竭",
+              "relation": "驱动铁死亡进程",
+              "tail": "癌症免疫治疗",
+              "claim": "谷胱甘肽耗竭 驱动铁死亡进程 癌症免疫治疗"
+            }
+          ],
+          [
+            {
+              "step": 1,
+              "head": "准金属有机框架纳米酶",
+              "relation": "联合程序性细胞死亡蛋白1抗体",
+              "tail": "程序性细胞死亡蛋白1抗体",
+              "claim": "准金属有机框架纳米酶 联合程序性细胞死亡蛋白1抗体 程序性细胞死亡蛋白1抗体"
+            },
+            {
+              "step": 2,
+              "head": "程序性细胞死亡蛋白1抗体",
+              "relation": "阻断免疫检查点",
+              "tail": "抗肿瘤免疫反应",
+              "claim": "程序性细胞死亡蛋白1抗体 阻断免疫检查点 抗肿瘤免疫反应"
+            },
+            {
+              "step": 3,
+              "head": "抗肿瘤免疫反应",
+              "relation": "增强淋巴细胞浸润",
+              "tail": "癌症免疫治疗",
+              "claim": "抗肿瘤免疫反应 增强淋巴细胞浸润 癌症免疫治疗"
+            }
+          ]
+        ],
+        "二级": [
+          [
+            {
+              "step": 1,
+              "head": "多孔结构",
+              "relation": "构成",
+              "tail": "准金属有机框架纳米酶",
+              "claim": "多孔结构 构成 准金属有机框架纳米酶"
+            },
+            {
+              "step": 2,
+              "head": "准金属有机框架纳米酶",
+              "relation": "具有",
+              "tail": "过氧化物酶模拟活性",
+              "claim": "准金属有机框架纳米酶 具有 过氧化物酶模拟活性"
+            },
+            {
+              "step": 3,
+              "head": "过氧化物酶模拟活性",
+              "relation": "催化",
+              "tail": "芬顿反应",
+              "claim": "过氧化物酶模拟活性 催化 芬顿反应"
+            }
+          ],
+          [
+            {
+              "step": 1,
+              "head": "铁死亡",
+              "relation": "导致",
+              "tail": "免疫原性细胞死亡",
+              "claim": "铁死亡 导致 免疫原性细胞死亡"
+            },
+            {
+              "step": 2,
+              "head": "免疫原性细胞死亡",
+              "relation": "释放触发",
+              "tail": "损伤相关分子模式",
+              "claim": "免疫原性细胞死亡 释放触发 损伤相关分子模式"
+            },
+            {
+              "step": 3,
+              "head": "损伤相关分子模式",
+              "relation": "激活",
+              "tail": "抗肿瘤免疫反应",
+              "claim": "损伤相关分子模式 激活 抗肿瘤免疫反应"
+            }
+          ]
+        ],
+        "三级": [
+          [
+            {
+              "step": 1,
+              "head": "可控脱配体策略",
+              "relation": "通过",
+              "tail": "准金属有机框架纳米酶",
+              "claim": "可控脱配体策略 通过 准金属有机框架纳米酶"
+            },
+            {
+              "step": 2,
+              "head": "准金属有机框架纳米酶",
+              "relation": "催化",
+              "tail": "芬顿反应",
+              "claim": "准金属有机框架纳米酶 催化 芬顿反应"
+            },
+            {
+              "step": 3,
+              "head": "芬顿反应",
+              "relation": "产生",
+              "tail": "活性氧",
+              "claim": "芬顿反应 产生 活性氧"
+            }
+          ]
+        ],
+        "一级总结": [
+          "主学科化学的准金属有机框架纳米酶通过诱导铁死亡触发免疫原性细胞死亡，临床医学补位实现抗肿瘤免疫激活",
+          "材料科学的多孔结构增强过氧化物酶模拟活性机制，通过谷胱甘肽耗竭驱动铁死亡，化学学科补位优化治疗效能",
+          "临床医学的程序性细胞死亡蛋白1抗体联合治疗通过阻断免疫检查点，化学学科补位增强抗肿瘤免疫反应强度"
+        ],
+        "二级总结": [
+          "多孔结构通过构成准金属有机框架纳米酶增强其过氧化物酶模拟活性，进而催化芬顿反应促进铁死亡",
+          "铁死亡导致免疫原性细胞死亡并释放损伤相关分子模式，进而激活抗肿瘤免疫反应"
+        ],
+        "三级总结": [
+          "通过可控脱配体策略制备的准金属有机框架纳米酶催化芬顿反应产生活性氧，结合程序性细胞死亡蛋白1抗体增强癌症免疫治疗效果的跨学科验证闭环"
+        ]
+      },
+      "graph": {
+        "nodes": [
+          {
+            "id": "准金属有机框架纳米酶",
+            "term": "Q-MIL-53(Fe)",
+            "normalized": "准金属有机框架纳米酶",
+            "discipline": "化学",
+            "evidence": "Herein an iron-based quasi-metal-organic framework nanozyme Q-MIL-53(Fe) is reported",
+            "source": "abstract",
+            "confidence": 0.98
+          },
+          {
+            "id": "过氧化物酶模拟活性",
+            "term": "peroxidase-mimic activity",
+            "normalized": "过氧化物酶模拟活性",
+            "discipline": "化学",
+            "evidence": "exhibiting enhanced peroxidase-/catalase-mimic activity",
+            "source": "abstract",
+            "confidence": 0.95
+          },
+          {
+            "id": "密度泛函理论计算",
+            "term": "density functional theory calculations",
+            "normalized": "密度泛函理论计算",
+            "discipline": "化学",
+            "evidence": "whose underlying mechanisms are studied via density functional theory calculations",
+            "source": "abstract",
+            "confidence": 0.97
+          },
+          {
+            "id": "谷胱甘肽耗竭",
+            "term": "glutathione depletion",
+            "normalized": "谷胱甘肽耗竭",
+            "discipline": "化学",
+            "evidence": "glutathione depletion capacity",
+            "source": "abstract",
+            "confidence": 0.96
+          },
+          {
+            "id": "铁死亡",
+            "term": "ferroptosis",
+            "normalized": "铁死亡",
+            "discipline": "化学",
+            "evidence": "inducing ferroptosis and immunogenic cell death",
+            "source": "abstract",
+            "confidence": 0.99
+          },
+          {
+            "id": "免疫原性细胞死亡",
+            "term": "immunogenic cell death",
+            "normalized": "免疫原性细胞死亡",
+            "discipline": "化学",
+            "evidence": "inducing ferroptosis and immunogenic cell death",
+            "source": "abstract",
+            "confidence": 0.98
+          },
+          {
+            "id": "活性氧",
+            "term": "reactive oxygen species",
+            "normalized": "活性氧",
+            "discipline": "化学",
+            "evidence": "excessive reactive oxygen species (ROS)",
+            "source": "introduction",
+            "confidence": 0.97
+          },
+          {
+            "id": "芬顿反应",
+            "term": "Fenton reaction",
+            "normalized": "芬顿反应",
+            "discipline": "化学",
+            "evidence": "the mechanism of Fe3O4 as nanozyme in tumor inhibition can be understood mainly as a Fenton reaction",
+            "source": "introduction",
+            "confidence": 0.96
+          },
+          {
+            "id": "肿瘤微环境",
+            "term": "tumor microenvironment",
+            "normalized": "肿瘤微环境",
+            "discipline": "化学",
+            "evidence": "catalyzes excessive H2O2 in the tumor microenvironment (TME)",
+            "source": "introduction",
+            "confidence": 0.95
+          },
+          {
+            "id": "金属有机框架",
+            "term": "metal-organic frameworks",
+            "normalized": "金属有机框架",
+            "discipline": "化学",
+            "evidence": "metal-organic frameworks (MOF), also known as coordination polymers (CP)",
+            "source": "introduction",
+            "confidence": 0.98
+          },
+          {
+            "id": "准金属有机框架",
+            "term": "quasi-metal-organic framework",
+            "normalized": "准金属有机框架",
+            "discipline": "材料科学",
+            "evidence": "Quasi-metal-organic framework is a class of metal-organic framework-derived nanomaterials",
+            "source": "abstract",
+            "confidence": 0.97
+          },
+          {
+            "id": "金属氧化物",
+            "term": "metal oxide",
+            "normalized": "金属氧化物",
+            "discipline": "材料科学",
+            "evidence": "transition state from metal-organic frameworks towards metal oxide",
+            "source": "abstract",
+            "confidence": 0.95
+          },
+          {
+            "id": "多孔结构",
+            "term": "porous structure",
+            "normalized": "多孔结构",
+            "discipline": "材料科学",
+            "evidence": "featuring porous structure and high activity",
+            "source": "abstract",
+            "confidence": 0.94
+          },
+          {
+            "id": "可控脱配体策略",
+            "term": "controlled deligandation strategy",
+            "normalized": "可控脱配体策略",
+            "discipline": "材料科学",
+            "evidence": "Q-MIL-53(Fe) is reported via a controlled deligandation strategy",
+            "source": "abstract",
+            "confidence": 0.96
+          },
+          {
+            "id": "生物相容性",
+            "term": "biocompatibility",
+            "normalized": "生物相容性",
+            "discipline": "材料科学",
+            "evidence": "Q-MIL-53(Fe) demonstrates biocompatibility",
+            "source": "abstract",
+            "confidence": 0.95
+          },
+          {
+            "id": "配位聚合物",
+            "term": "coordination polymers",
+            "normalized": "配位聚合物",
+            "discipline": "材料科学",
+            "evidence": "metal-organic frameworks (MOF), also known as coordination polymers (CP)",
+            "source": "introduction",
+            "confidence": 0.97
+          },
+          {
+            "id": "癌症免疫治疗",
+            "term": "cancer immunotherapy",
+            "normalized": "癌症免疫治疗",
+            "discipline": "临床医学",
+            "evidence": "for cancer immunotherapy",
+            "source": "title",
+            "confidence": 0.99
+          },
+          {
+            "id": "抗肿瘤免疫反应",
+            "term": "antitumor immune response",
+            "normalized": "抗肿瘤免疫反应",
+            "discipline": "临床医学",
+            "evidence": "activate antitumor immune response by inducing ferroptosis",
+            "source": "abstract",
+            "confidence": 0.97
+          },
+          {
+            "id": "树突状细胞成熟",
+            "term": "dendritic cell maturation",
+            "normalized": "树突状细胞成熟",
+            "discipline": "临床医学",
+            "evidence": "promoting dendritic cell maturation",
+            "source": "abstract",
+            "confidence": 0.96
+          },
+          {
+            "id": "淋巴细胞浸润",
+            "term": "T lymphocytes infiltration",
+            "normalized": "淋巴细胞浸润",
+            "discipline": "临床医学",
+            "evidence": "promoting T lymphocytes infiltration",
+            "source": "abstract",
+            "confidence": 0.95
+          },
+          {
+            "id": "程序性细胞死亡蛋白1抗体",
+            "term": "programmed cell death protein 1 antibody",
+            "normalized": "程序性细胞死亡蛋白1抗体",
+            "discipline": "临床医学",
+            "evidence": "combination of Q-MIL-53(Fe) and programmed cell death protein 1 antibody",
+            "source": "abstract",
+            "confidence": 0.98
+          },
+          {
+            "id": "损伤相关分子模式",
+            "term": "damage-associated molecular patterns",
+            "normalized": "损伤相关分子模式",
+            "discipline": "临床医学",
+            "evidence": "release of damage-associated molecular patterns (DAMPs)",
+            "source": "introduction",
+            "confidence": 0.97
+          }
+        ],
+        "edges": [
+          {
+            "source": "准金属有机框架纳米酶",
+            "target": "癌症免疫治疗",
+            "relation": "用于",
+            "relation_type": "method_applied_to",
+            "metadata": {
+              "evidence": "for cancer immunotherapy",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "准金属有机框架纳米酶",
+            "target": "可控脱配体策略",
+            "relation": "通过",
+            "relation_type": "method_applied_to",
+            "metadata": {
+              "evidence": "Q-MIL-53(Fe) is reported via a controlled deligandation strategy",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "准金属有机框架纳米酶",
+            "target": "铁死亡",
+            "relation": "诱导",
+            "relation_type": "driven_by",
+            "metadata": {
+              "evidence": "It can activate antitumor immune response by inducing ferroptosis",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "铁死亡",
+            "target": "免疫原性细胞死亡",
+            "relation": "导致",
+            "relation_type": "generalizes",
+            "metadata": {
+              "evidence": "inducing ferroptosis and immunogenic cell death",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "密度泛函理论计算",
+            "target": "过氧化物酶模拟活性",
+            "relation": "研究机制揭示",
+            "relation_type": "inferred_from",
+            "metadata": {
+              "evidence": "whose underlying mechanisms are studied via density functional theory calculations",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "准金属有机框架",
+            "target": "金属氧化物",
+            "relation": "过渡状态形成",
+            "relation_type": "maps_to",
+            "metadata": {
+              "evidence": "transition state from metal-organic frameworks towards metal oxide",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "多孔结构",
+            "target": "过氧化物酶模拟活性",
+            "relation": "通过多孔结构增强",
+            "relation_type": "improves_metric",
+            "metadata": {
+              "evidence": "featuring porous structure and high activity",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "程序性细胞死亡蛋白1抗体",
+            "target": "癌症免疫治疗",
+            "relation": "联合治疗增强",
+            "relation_type": "extends",
+            "metadata": {
+              "evidence": "combination of Q-MIL-53(Fe) and programmed cell death protein 1 antibody amplifies cancer immunotherapy",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "损伤相关分子模式",
+            "target": "免疫原性细胞死亡",
+            "relation": "释放触发",
+            "relation_type": "corresponds_to",
+            "metadata": {
+              "evidence": "release of damage-associated molecular patterns (DAMPs), which possess the capacity to induce immunogenic cell death",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "芬顿反应",
+            "target": "活性氧",
+            "relation": "产生",
+            "relation_type": "driven_by",
+            "metadata": {
+              "evidence": "Fenton reaction catalyzes excessive H2O2 in the tumor microenvironment to generate excessive toxic ·OH or other radicals",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "准金属有机框架纳米酶",
+            "target": "铁死亡",
+            "relation": "诱导",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "准金属有机框架纳米酶 诱导 铁死亡",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "铁死亡",
+            "target": "免疫原性细胞死亡",
+            "relation": "导致",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "铁死亡 导致 免疫原性细胞死亡",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "免疫原性细胞死亡",
+            "target": "癌症免疫治疗",
+            "relation": "激活抗肿瘤免疫反应",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "免疫原性细胞死亡 激活抗肿瘤免疫反应 癌症免疫治疗",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "准金属有机框架纳米酶",
+            "target": "过氧化物酶模拟活性",
+            "relation": "通过多孔结构增强",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "准金属有机框架纳米酶 通过多孔结构增强 过氧化物酶模拟活性",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "过氧化物酶模拟活性",
+            "target": "谷胱甘肽耗竭",
+            "relation": "引发谷胱甘肽耗竭",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "过氧化物酶模拟活性 引发谷胱甘肽耗竭 谷胱甘肽耗竭",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "谷胱甘肽耗竭",
+            "target": "癌症免疫治疗",
+            "relation": "驱动铁死亡进程",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "谷胱甘肽耗竭 驱动铁死亡进程 癌症免疫治疗",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "准金属有机框架纳米酶",
+            "target": "程序性细胞死亡蛋白1抗体",
+            "relation": "联合程序性细胞死亡蛋白1抗体",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "准金属有机框架纳米酶 联合程序性细胞死亡蛋白1抗体 程序性细胞死亡蛋白1抗体",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 2
+            }
+          },
+          {
+            "source": "程序性细胞死亡蛋白1抗体",
+            "target": "抗肿瘤免疫反应",
+            "relation": "阻断免疫检查点",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "程序性细胞死亡蛋白1抗体 阻断免疫检查点 抗肿瘤免疫反应",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 2
+            }
+          },
+          {
+            "source": "抗肿瘤免疫反应",
+            "target": "癌症免疫治疗",
+            "relation": "增强淋巴细胞浸润",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "抗肿瘤免疫反应 增强淋巴细胞浸润 癌症免疫治疗",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 2
+            }
+          },
+          {
+            "source": "多孔结构",
+            "target": "准金属有机框架纳米酶",
+            "relation": "构成",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "多孔结构 构成 准金属有机框架纳米酶",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "准金属有机框架纳米酶",
+            "target": "过氧化物酶模拟活性",
+            "relation": "具有",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "准金属有机框架纳米酶 具有 过氧化物酶模拟活性",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "过氧化物酶模拟活性",
+            "target": "芬顿反应",
+            "relation": "催化",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "过氧化物酶模拟活性 催化 芬顿反应",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "铁死亡",
+            "target": "免疫原性细胞死亡",
+            "relation": "导致",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "铁死亡 导致 免疫原性细胞死亡",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "免疫原性细胞死亡",
+            "target": "损伤相关分子模式",
+            "relation": "释放触发",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "免疫原性细胞死亡 释放触发 损伤相关分子模式",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "损伤相关分子模式",
+            "target": "抗肿瘤免疫反应",
+            "relation": "激活",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "损伤相关分子模式 激活 抗肿瘤免疫反应",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "可控脱配体策略",
+            "target": "准金属有机框架纳米酶",
+            "relation": "通过",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "可控脱配体策略 通过 准金属有机框架纳米酶",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "准金属有机框架纳米酶",
+            "target": "芬顿反应",
+            "relation": "催化",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "准金属有机框架纳米酶 催化 芬顿反应",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "芬顿反应",
+            "target": "活性氧",
+            "relation": "产生",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "芬顿反应 产生 活性氧",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          }
+        ]
+      },
+      "metrics": {
+        "path_consistency": 0.2222222222222222,
+        "coverage": 0.5909090909090909,
+        "bridging_score": 0.35714285714285715,
+        "rao_stirling_diversity": 0.1584,
+        "embedding_bridging": 1.0,
+        "consistency_precision": 0.0,
+        "consistency_recall": 0.0,
+        "consistency_f1": 0.0,
+        "info_novelty": 0.0,
+        "chain_coherence": 0.6237,
+        "atypical_combination": 0.5934,
+        "kg_density": 0.0498,
+        "kg_inverse_modularity": 0.8175,
+        "kg_largest_cc_ratio": 0.6364,
+        "kg_avg_betweenness": 0.0253,
+        "kg_clustering_coefficient": 0.1307,
+        "concept_recall": 0.0,
+        "concept_precision": 0.0,
+        "concept_f1": 0.0,
+        "relation_precision": 0.0,
+        "relation_type_accuracy": 0.0,
+        "evidence_coverage": 0.0,
+        "path_alignment_best": 0.0,
+        "path_alignment_mean": 0.0
+      }
+    },
+    "raw": "/* stage1: struct */\n/* concepts round1 */\n{\n  \"meta\": {\n    \"title\": \"Quasi Fe MIL-53 nanozyme inducing ferroptosis and immunogenic cell death for cancer immunotherapy\",\n    \"primary\": \"化学\",\n    \"secondary_list\": [\"化学\", \"材料科学\", \"临床医学\"]\n  },\n  \"概念\": {\n    \"主学科\": [\n      {\n        \"term\": \"Q-MIL-53(Fe)\",\n        \"normalized\": \"准金属有机框架纳米酶\",\n        \"std_label\": \"Quasi-metal-organic framework nanozyme\",\n        \"evidence\": \"Herein an iron-based quasi-metal-organic framework nanozyme Q-MIL-53(Fe) is reported\",\n        \"source\": \"abstract\",\n        \"confidence\": 0.98\n      },\n      {\n        \"term\": \"peroxidase-mimic activity\",\n        \"normalized\": \"过氧化物酶模拟活性\",\n        \"std_label\": \"Peroxidase-mimicking activity\",\n        \"evidence\": \"exhibiting enhanced peroxidase-/catalase-mimic activity\",\n        \"source\": \"abstract\",\n        \"confidence\": 0.95\n      },\n      {\n        \"term\": \"density functional theory calculations\",\n        \"normalized\": \"密度泛函理论计算\",\n        \"std_label\": \"Density functional theory calculations\",\n        \"evidence\": \"whose underlying mechanisms are studied via density functional theory calculations\",\n        \"source\": \"abstract\",\n        \"confidence\": 0.97\n      },\n      {\n        \"term\": \"glutathione depletion\",\n        \"normalized\": \"谷胱甘肽耗竭\",\n        \"std_label\": \"Glutathione depletion\",\n        \"evidence\": \"glutathione depletion capacity\",\n        \"source\": \"abstract\",\n        \"confidence\": 0.96\n      },\n      {\n        \"term\": \"ferroptosis\",\n        \"normalized\": \"铁死亡\",\n        \"std_label\": \"Ferroptosis\",\n        \"evidence\": \"inducing ferroptosis and immunogenic cell death\",\n        \"source\": \"abstract\",\n        \"confidence\": 0.99\n      },\n      {\n        \"term\": \"immunogenic cell death\",\n        \"normalized\": \"免疫原性细胞死亡\",\n        \"std_label\": \"Immunogenic cell death\",\n        \"evidence\": \"inducing ferroptosis and immunogenic cell death\",\n        \"source\": \"abstract\",\n        \"confidence\": 0.98\n      },\n      {\n        \"term\": \"reactive oxygen species\",\n        \"normalized\": \"活性氧\",\n        \"std_label\": \"Reactive oxygen species\",\n        \"evidence\": \"excessive reactive oxygen species (ROS)\",\n        \"source\": \"introduction\",\n        \"confidence\": 0.97\n      },\n      {\n        \"term\": \"Fenton reaction\",\n        \"normalized\": \"芬顿反应\",\n        \"std_label\": \"Fenton reaction\",\n        \"evidence\": \"the mechanism of Fe3O4 as nanozyme in tumor inhibition can be understood mainly as a Fenton reaction\",\n        \"source\": \"introduction\",\n        \"confidence\": 0.96\n      },\n      {\n        \"term\": \"tumor microenvironment\",\n        \"normalized\": \"肿瘤微环境\",\n        \"std_label\": \"Tumor microenvironment\",\n        \"evidence\": \"catalyzes excessive H2O2 in the tumor microenvironment (TME)\",\n        \"source\": \"introduction\",\n        \"confidence\": 0.95\n      },\n      {\n        \"term\": \"metal-organic frameworks\",\n        \"normalized\": \"金属有机框架\",\n        \"std_label\": \"Metal-organic frameworks\",\n        \"evidence\": \"metal-organic frameworks (MOF), also known as coordination polymers (CP)\",\n        \"source\": \"introduction\",\n        \"confidence\": 0.98\n      }\n    ],\n    \"辅学科\": {\n      \"材料科学\": [\n        {\n          \"term\": \"quasi-metal-organic framework\",\n          \"normalized\": \"准金属有机框架\",\n          \"std_label\": \"Quasi-metal-organic framework\",\n          \"evidence\": \"Quasi-metal-organic framework is a class of metal-organic framework-derived nanomaterials\",\n          \"source\": \"abstract\",\n          \"confidence\": 0.97\n        },\n        {\n          \"term\": \"metal oxide\",\n          \"normalized\": \"金属氧化物\",\n          \"std_label\": \"Metal oxide\",\n          \"evidence\": \"transition state from metal-organic frameworks towards metal oxide\",\n          \"source\": \"abstract\",\n          \"confidence\": 0.95\n        },\n        {\n          \"term\": \"porous structure\",\n          \"normalized\": \"多孔结构\",\n          \"std_label\": \"Porous structure\",\n          \"evidence\": \"featuring porous structure and high activity\",\n          \"source\": \"abstract\",\n          \"confidence\": 0.94\n        },\n        {\n          \"term\": \"controlled deligandation strategy\",\n          \"normalized\": \"可控脱配体策略\",\n          \"std_label\": \"Controlled deligandation strategy\",\n          \"evidence\": \"Q-MIL-53(Fe) is reported via a controlled deligandation strategy\",\n          \"source\": \"abstract\",\n          \"confidence\": 0.96\n        },\n        {\n          \"term\": \"biocompatibility\",\n          \"normalized\": \"生物相容性\",\n          \"std_label\": \"Biocompatibility\",\n          \"evidence\": \"Q-MIL-53(Fe) demonstrates biocompatibility\",\n          \"source\": \"abstract\",\n          \"confidence\": 0.95\n        },\n        {\n          \"term\": \"coordination polymers\",\n          \"normalized\": \"配位聚合物\",\n          \"std_label\": \"Coordination polymers\",\n          \"evidence\": \"metal-organic frameworks (MOF), also known as coordination polymers (CP)\",\n          \"source\": \"introduction\",\n          \"confidence\": 0.97\n        }\n      ],\n      \"临床医学\": [\n        {\n          \"term\": \"cancer immunotherapy\",\n          \"normalized\": \"癌症免疫治疗\",\n          \"std_label\": \"Cancer immunotherapy\",\n          \"evidence\": \"for cancer immunotherapy\",\n          \"source\": \"title\",\n          \"confidence\": 0.99\n        },\n        {\n          \"term\": \"antitumor immune response\",\n          \"normalized\": \"抗肿瘤免疫反应\",\n          \"std_label\": \"Antitumor immune response\",\n          \"evidence\": \"activate antitumor immune response by inducing ferroptosis\",\n          \"source\": \"abstract\",\n          \"confidence\": 0.97\n        },\n        {\n          \"term\": \"dendritic cell maturation\",\n          \"normalized\": \"树突状细胞成熟\",\n          \"std_label\": \"Dendritic cell maturation\",\n          \"evidence\": \"promoting dendritic cell maturation\",\n          \"source\": \"abstract\",\n          \"confidence\": 0.96\n        },\n        {\n          \"term\": \"T lymphocytes infiltration\",\n          \"normalized\": \"T淋巴细胞浸润\",\n          \"std_label\": \"T lymphocytes infiltration\",\n          \"evidence\": \"promoting T lymphocytes infiltration\",\n          \"source\": \"abstract\",\n          \"confidence\": 0.95\n        },\n        {\n          \"term\": \"programmed cell death protein 1 antibody\",\n          \"normalized\": \"程序性细胞死亡蛋白1抗体\",\n          \"std_label\": \"Programmed cell death protein 1 antibody\",\n          \"evidence\": \"combination of Q-MIL-53(Fe) and programmed cell death protein 1 antibody\",\n          \"source\": \"abstract\",\n          \"confidence\": 0.98\n        },\n        {\n          \"term\": \"damage-associated molecular patterns\",\n          \"normalized\": \"损伤相关分子模式\",\n          \"std_label\": \"Damage-associated molecular patterns\",\n          \"evidence\": \"release of damage-associated molecular patterns (DAMPs)\",\n          \"source\": \"introduction\",\n          \"confidence\": 0.97\n        }\n      ]\n    }\n  }\n}\n\n/* concepts round2 (supplement) */\n{\"补充概念\": {\"主学科\": [\"化学\", \"材料科学\", \"临床医学\"], \"辅学科\": {\"化学\": [\"catalase-mimic activity\", \"glutathione peroxidase 4 (GPX4)\", \"lipid peroxides (LPO)\"], \"材料科学\": [\"Fe3O4 nanoparticles (NPs)\", \"horseradish peroxidase (HRP)\"], \"临床医学\": [\"superoxide dismutase (SOD)\", \"oxidase (OXD)\"]}}}\n\n/* relations */\n{\n  \"跨学科关系\": [\n    {\n      \"head\": \"Q-MIL-53(Fe)\",\n      \"tail\": \"cancer immunotherapy\",\n      \"relation\": \"用于\",\n      \"relation_type\": \"method_applied_to\",\n      \"direction\": \"->\",\n      \"evidence\": \"for cancer immunotherapy\",\n      \"source\": \"abstract\",\n      \"confidence\": 0.99\n    },\n    {\n      \"head\": \"Q-MIL-53(Fe)\",\n      \"tail\": \"controlled deligandation strategy\",\n      \"relation\": \"通过\",\n      \"relation_type\": \"method_applied_to\",\n      \"direction\": \"->\",\n      \"evidence\": \"Q-MIL-53(Fe) is reported via a controlled deligandation strategy\",\n      \"source\": \"abstract\",\n      \"confidence\": 0.96\n    },\n    {\n      \"head\": \"Q-MIL-53(Fe)\",\n      \"tail\": \"ferroptosis\",\n      \"relation\": \"诱导\",\n      \"relation_type\": \"driven_by\",\n      \"direction\": \"->\",\n      \"evidence\": \"It can activate antitumor immune response by inducing ferroptosis\",\n      \"source\": \"abstract\",\n      \"confidence\": 0.98\n    },\n    {\n      \"head\": \"ferroptosis\",\n      \"tail\": \"immunogenic cell death\",\n      \"relation\": \"导致\",\n      \"relation_type\": \"generalizes\",\n      \"direction\": \"->\",\n      \"evidence\": \"inducing ferroptosis and immunogenic cell death\",\n      \"source\": \"abstract\",\n      \"confidence\": 0.97\n    },\n    {\n      \"head\": \"density functional theory calculations\",\n      \"tail\": \"peroxidase-mimic activity\",\n      \"relation\": \"研究机制揭示\",\n      \"relation_type\": \"inferred_from\",\n      \"direction\": \"->\",\n      \"evidence\": \"whose underlying mechanisms are studied via density functional theory calculations\",\n      \"source\": \"abstract\",\n      \"confidence\": 0.97\n    },\n    {\n      \"head\": \"quasi-metal-organic framework\",\n      \"tail\": \"metal oxide\",\n      \"relation\": \"过渡状态形成\",\n      \"relation_type\": \"maps_to\",\n      \"direction\": \"->\",\n      \"evidence\": \"transition state from metal-organic frameworks towards metal oxide\",\n      \"source\": \"abstract\",\n      \"confidence\": 0.95\n    },\n    {\n      \"head\": \"porous structure\",\n      \"tail\": \"peroxidase-mimic activity\",\n      \"relation\": \"通过多孔结构增强\",\n      \"relation_type\": \"improves_metric\",\n      \"direction\": \"->\",\n      \"evidence\": \"featuring porous structure and high activity\",\n      \"source\": \"abstract\",\n      \"confidence\": 0.94\n    },\n    {\n      \"head\": \"programmed cell death protein 1 antibody\",\n      \"tail\": \"cancer immunotherapy\",\n      \"relation\": \"联合治疗增强\",\n      \"relation_type\": \"extends\",\n      \"direction\": \"->\",\n      \"evidence\": \"combination of Q-MIL-53(Fe) and programmed cell death protein 1 antibody amplifies cancer immunotherapy\",\n      \"source\": \"abstract\",\n      \"confidence\": 0.98\n    },\n    {\n      \"head\": \"damage-associated molecular patterns\",\n      \"tail\": \"immunogenic cell death\",\n      \"relation\": \"释放触发\",\n      \"relation_type\": \"corresponds_to\",\n      \"direction\": \"->\",\n      \"evidence\": \"release of damage-associated molecular patterns (DAMPs), which possess the capacity to induce immunogenic cell death\",\n      \"source\": \"introduction\",\n      \"confidence\": 0.97\n    },\n    {\n      \"head\": \"Fenton reaction\",\n      \"tail\": \"reactive oxygen species\",\n      \"relation\": \"产生\",\n      \"relation_type\": \"driven_by\",\n      \"direction\": \"->\",\n      \"evidence\": \"Fenton reaction catalyzes excessive H2O2 in the tumor microenvironment to generate excessive toxic ·OH or other radicals\",\n      \"source\": \"introduction\",\n      \"confidence\": 0.96\n    }\n  ]\n}\n\n/* stage2: query */\n{\n  \"按辅助学科分类\": {\n    \"材料科学\": {\n      \"概念\": [\n        \"准金属有机框架\",\n        \"金属氧化物\",\n        \"多孔结构\",\n        \"可控脱配体策略\",\n        \"生物相容性\",\n        \"配位聚合物\"\n      ],\n      \"关系\": [1, 5, 6],\n      \"rationale\": \"提供纳米酶材料的结构设计与制备方法，通过多孔特性增强催化活性\"\n    },\n    \"临床医学\": {\n      \"概念\": [\n        \"癌症免疫治疗\",\n        \"抗肿瘤免疫反应\",\n        \"树突状细胞成熟\",\n        \"淋巴细胞浸润\",\n        \"程序性细胞死亡蛋白1抗体\",\n        \"损伤相关分子模式\"\n      ],\n      \"关系\": [0, 2, 3, 7, 8],\n      \"rationale\": \"验证纳米酶在肿瘤免疫治疗中的生物学效应及联合治疗效果\"\n    }\n  },\n  \"查询\": {\n    \"一级\": \"准金属有机框架纳米酶如何通过铁死亡机制实现癌症免疫治疗效果？\",\n    \"二级\": [\n      \"多孔结构如何增强纳米酶的过氧化物酶模拟活性？\",\n      \"铁死亡诱导如何激活抗肿瘤免疫反应？\"\n    ],\n    \"三级\": [\n      \"可控脱配体策略制备的准金属有机框架纳米酶，如何通过芬顿反应产生活性氧并结合程序性细胞死亡蛋白1抗体实现协同免疫治疗？\"\n    ]\n  }\n}\n\n/* stage3: hypothesis L1 */\n{\n  \"假设\": {\n    \"一级\": [\n      [\n        {\n          \"step\": 1,\n          \"head\": \"准金属有机框架纳米酶\",\n          \"relation\": \"诱导\",\n          \"tail\": \"铁死亡\"\n        },\n        {\n          \"step\": 2,\n          \"head\": \"铁死亡\",\n          \"relation\": \"导致\",\n          \"tail\": \"免疫原性细胞死亡\"\n        },\n        {\n          \"step\": 3,\n          \"head\": \"免疫原性细胞死亡\",\n          \"relation\": \"激活抗肿瘤免疫反应\",\n          \"tail\": \"癌症免疫治疗\"\n        }\n      ],\n      [\n        {\n          \"step\": 1,\n          \"head\": \"准金属有机框架纳米酶\",\n          \"relation\": \"通过多孔结构增强\",\n          \"tail\": \"过氧化物酶模拟活性\"\n        },\n        {\n          \"step\": 2,\n          \"head\": \"过氧化物酶模拟活性\",\n          \"relation\": \"引发谷胱甘肽耗竭\",\n          \"tail\": \"谷胱甘肽耗竭\"\n        },\n        {\n          \"step\": 3,\n          \"head\": \"谷胱甘肽耗竭\",\n          \"relation\": \"驱动铁死亡进程\",\n          \"tail\": \"癌症免疫治疗\"\n        }\n      ],\n      [\n        {\n          \"step\": 1,\n          \"head\": \"准金属有机框架纳米酶\",\n          \"relation\": \"联合程序性细胞死亡蛋白1抗体\",\n          \"tail\": \"程序性细胞死亡蛋白1抗体\"\n        },\n        {\n          \"step\": 2,\n          \"head\": \"程序性细胞死亡蛋白1抗体\",\n          \"relation\": \"阻断免疫检查点\",\n          \"tail\": \"抗肿瘤免疫反应\"\n        },\n        {\n          \"step\": 3,\n          \"head\": \"抗肿瘤免疫反应\",\n          \"relation\": \"增强T淋巴细胞浸润\",\n          \"tail\": \"癌症免疫治疗\"\n        }\n      ]\n    ],\n    \"一级总结\": [\n      \"主学科化学的准金属有机框架纳米酶通过诱导铁死亡触发免疫原性细胞死亡，临床医学补位实现抗肿瘤免疫激活\",\n      \"材料科学的多孔结构增强过氧化物酶模拟活性机制，通过谷胱甘肽耗竭驱动铁死亡，化学学科补位优化治疗效能\",\n      \"临床医学的程序性细胞死亡蛋白1抗体联合治疗通过阻断免疫检查点，化学学科补位增强抗肿瘤免疫反应强度\"\n    ]\n  }\n}\n\n/* stage3: hypothesis L2 */\n{\n  \"假设\": {\n    \"二级\": [\n      [\n        {\n          \"step\": 1,\n          \"head\": \"多孔结构\",\n          \"relation\": \"构成\",\n          \"tail\": \"准金属有机框架纳米酶\"\n        },\n        {\n          \"step\": 2,\n          \"head\": \"准金属有机框架纳米酶\",\n          \"relation\": \"具有\",\n          \"tail\": \"过氧化物酶模拟活性\"\n        },\n        {\n          \"step\": 3,\n          \"head\": \"过氧化物酶模拟活性\",\n          \"relation\": \"催化\",\n          \"tail\": \"芬顿反应\"\n        }\n      ],\n      [\n        {\n          \"step\": 1,\n          \"head\": \"铁死亡\",\n          \"relation\": \"导致\",\n          \"tail\": \"免疫原性细胞死亡\"\n        },\n        {\n          \"step\": 2,\n          \"head\": \"免疫原性细胞死亡\",\n          \"relation\": \"释放触发\",\n          \"tail\": \"损伤相关分子模式\"\n        },\n        {\n          \"step\": 3,\n          \"head\": \"损伤相关分子模式\",\n          \"relation\": \"激活\",\n          \"tail\": \"抗肿瘤免疫反应\"\n        }\n      ]\n    ],\n    \"二级总结\": [\n      \"多孔结构通过构成准金属有机框架纳米酶增强其过氧化物酶模拟活性，进而催化芬顿反应促进铁死亡\",\n      \"铁死亡导致免疫原性细胞死亡并释放损伤相关分子模式，进而激活抗肿瘤免疫反应\"\n    ]\n  }\n}\n\n/* stage3: hypothesis L3 */\n{\n  \"假设\": {\n    \"三级\": [\n      [\n        {\n          \"step\": 1,\n          \"head\": \"可控脱配体策略\",\n          \"relation\": \"通过\",\n          \"tail\": \"准金属有机框架纳米酶\"\n        },\n        {\n          \"step\": 2,\n          \"head\": \"准金属有机框架纳米酶\",\n          \"relation\": \"催化\",\n          \"tail\": \"芬顿反应\"\n        },\n        {\n          \"step\": 3,\n          \"head\": \"芬顿反应\",\n          \"relation\": \"产生\",\n          \"tail\": \"活性氧\"\n        }\n      ]\n    ],\n    \"三级总结\": [\n      \"通过可控脱配体策略制备的准金属有机框架纳米酶催化芬顿反应产生活性氧，结合程序性细胞死亡蛋白1抗体增强癌症免疫治疗效果的跨学科验证闭环\"\n    ]\n  }\n}",
+    "ok": true,
+    "error": ""
+  },
+  {
+    "title": "A standalone bismuth vanadate-silicon artificial leaf achieving 8.4% efficiency for hydrogen production",
+    "abstract": "Abstract The development of scalable photoelectrochemical water splitting with high solar-to-hydrogen efficiency and long-term stability is essential while challenging for practical application. Here, we design a BiVO 4 photoanode with gradient distributed oxygen vacancies, which induces strong dipole fields to promote charge separation. Growing sea-urchin-like FeOOH cocatalyst on the photoanode leads to a photocurrent density of 7.0 mA cm −2 at 1.23 V versus the reversible hydrogen electrode and is stable for over 520 h under AM 1.5 G illumination. By integrating with a silicon photovoltaic cell, the standalone artificial leaf achieves a solar-to-hydrogen efficiency of 8.4%. The scale-up of these artificial leaves up to 441 cm 2 in size can deliver a solar-to-hydrogen efficiency of 2.7% under natural sunlight. Life cycle assessment analysis shows that solar water splitting has little environmental footprint for hydrogen production. Our study demonstrates the possibility of designing metal oxide-based artificial leaves for scalable solar hydrogen production.",
+    "pdf_url": "https://doi.org/10.1038/s41467-025-58102-z",
+    "primary": "化学",
+    "secondary": "化学, 材料科学",
+    "secondary_list": [
+      "化学",
+      "材料科学"
+    ],
+    "introduction": "Article\n\nhttps://doi.org/10.1038/s41467-025-58102-z\n\nA standalone bismuth vanadate-silicon\nartiﬁcial leaf achieving 8.4% efﬁciency for\nhydrogen production\n\nReceived: 28 October 2024\n\nAccepted: 12 March 2025\n\nCheck for updates\n\n;\n,\n:\n)\n(\n\n0\n9\n8\n7\n6\n5\n4\n3\n2\n1\n\n;\n,\n:\n)\n(\n\n0\n9\n8\n7\n6\n5\n4\n3\n2\n1\n\nBoyan Liu1, Xin Wang1, Yingjuan Zhang1, Mingshan Zhu 2\nShaobin Li\n\n3, Yanhang Ma 4, Wei Huang 1 & Songcan Wang 1,5\n\n, Chenxin Zhang3,\n\nThe development of scalable photoelectrochemical water splitting with high\nsolar-to-hydrogen efﬁciency and long-term stability is essential while challen-\nging for practical application. Here, we design a BiVO4 photoanode with gra-\ndient distributed oxygen vacancies, which induces strong dipole ﬁelds to\npromote charge separation. Growing sea-urchin-like FeOOH cocatalyst on the\nphotoanode leads to a photocurrent density of 7.0 mA cm−2 at 1.23 V versus the\nreversible hydrogen electrode and is stable for over 520 h under AM 1.5 G\nillumination. By integrating with a silicon photovoltaic cell, the standalone\nartiﬁcial leaf achieves a solar-to-hydrogen efﬁciency of 8.4%. The scale-up of\nthese artiﬁcial leaves up to 441 cm2 in size can deliver a solar-to-hydrogen\nefﬁciency of 2.7% under natural sunlight. Life cycle assessment analysis shows\nthat solar water splitting has little environmental footprint for hydrogen\nproduction. Our study demonstrates the possibility of designing metal oxide-\nbased artiﬁcial leaves for scalable solar hydrogen production.\n\nThe widespread utilization of hydrogen as a clean alternative to fossil\nfuels provides a feasible approach to address sustainability challenges\ndue to the massive carbon emissions resulted from the increasing\ndemand of energy. Currently, over 95% of global hydrogen production\nis derived from fossil fuels, which unfortunately contributes to non-\nnegligible carbon emissions1,2. Therefore, it is highly desirable to\ndevelop a green hydrogen production technology to maintain the\nsustainable development of the human society3,4. The conversion of\nsolar energy into hydrogen via a photoelectrochemical (PEC) water\nsplitting process provides a promising approach for hydrogen pro-\nduction with zero emissions. Although worldwide efforts have been\ndevoted for over half a century, high-performance and low-cost PEC\nwater splitting devices with great long-term stability are still lacking5,6.\nSome high-performance PEC water splitting devices generally involve\nexpensive III-V semiconductors as the photoelectrodes7,8, which is\n\nunfavorable for scale-up application. Recently, perovskite PEC cells\nhave shown great potential for scalable solar water splitting. For\nexample, a monolithic stacked silicon-perovskite tandem exhibited a\nsolar-to-hydrogen (STH) efﬁciency of 20.8%9. However, the photo-\ncurrent of the device degraded to 60% after 102 h of continuous\noperation. A Ni-encapsulated FAPbI3 photoanode could stably split\nwater for 72 h, and the assembled unbiased device with a size of\n123 cm2 achieved an STH efﬁciency of 8.5%10. How to develop an Earth-\nabundant photoelectrode with both high PEC activity and ultra-long\nstability is essential to drive the PEC water splitting technology\ntowards practical application while challenging.\n\nOwing to the relatively good stability in aqueous solutions under\noxidative environment during PEC water splitting, metal oxide pho-\ntoanodes have been intensively investigated in the past decades11,12.\nBismuth vanadate (BiVO4) has been recognized as one of the most\n\n1State Key Laboratory of Flexible Electronics & Institute of Flexible Electronics, Northwestern Polytechnical University, 127 West Youyi Road, Xi’an 710072,\nChina. 2Guangdong Key Laboratory of Environmental Pollution and Health, School of Environment, Jinan University, Guangzhou 511443, China. 3College of\nthe Environment and Ecology, Xiamen University, Xiamen 361102, China. 4School of Physical Science and Technology & Shanghai Key Laboratory of High-\nresolution Electron Microscopy, ShanghaiTech University, Shanghai 201210, China. 5Research & Development Institute of Northwestern Polytechnical\nUniversity in Shenzhen, Sanhang Science & Technology Building, No. 45th, Gaoxin South 9th Road, Nanshan District, Shenzhen 518063, China.\n\ne-mail: zhumingshan@jnu.edu.cn; iamwhuang@nwpu.edu.cn; iamscwang@nwpu.edu.cn\n\nNature Communications | \n\n (2025) 16:2792 \n\n1\n\n \n \n \n \n \n \n\fArticle\n\nhttps://doi.org/10.1038/s41467-025-58102-z\n\npromising oxide-based photoanodes for PEC water splitting due to the\nrelatively narrow bandgap for visible light absorption13. In addition, the\nconduction band edge position of BiVO4 is very close to the thermo-\ndynamic H2 evolution potential, thus requiring a very low onset\npotential for PEC water oxidation14. However, the intrinsic drawbacks\nof low electron mobility (0.044 cm2 V−1 s−1) and short hole diffusion\nlength (~70 nm) lead to severe charge recombination within the BiVO4\nﬁlm15. Consequently, the photocurrent densities of pristine BiVO4\nphotoanodes for PEC water splitting are much lower than the theore-\ntical value of 7.5 mA cm–2 under AM 1.5 G illumination16. On the other\nhand, the long-term stability of pristine BiVO4 during PEC water\nsplitting is very poor because of the photoanodic corrosion issue17.\nTherefore, the design of active and stable BiVO4 photoanode is\nessential to meet the demand for practical applications.\n\nHere, we develop an electrolyte recipe for the preparation of\nBi34.7O36(SO4)16 precursor ﬁlms, followed by solid thermal reaction\nwith vanadyl acetylacetonate (VO(acac)2) to construct wormlike BiVO4\nphotoanodes with a gradient distribution of oxygen vacancies (deno-\nted as BVO-ΔOv). Systematical studies found that the BVO-ΔOv pho-\ntoanode can generate strong dipole ﬁelds within the ﬁlm, thus\nsigniﬁcantly promotes bulk charge separation, achieving a photo-\ncurrent density of 7.2 mA cm–2 at 1.23 V vs. the reversible hydrogen\nelectrode (RHE) under AM 1.5 G illumination for sulﬁde oxidation.\nUpon the deposition of an ultrat",
+    "parsed": {
+      "meta": {
+        "title": "A standalone bismuth vanadate-silicon artificial leaf achieving 8.4% efficiency for hydrogen production",
+        "primary": "化学",
+        "secondary_list": [
+          "化学",
+          "材料科学"
+        ]
+      },
+      "概念": {
+        "主学科": [
+          {
+            "term": "photoelectrochemical water splitting",
+            "normalized": "光电化学水分解",
+            "std_label": "光电化学水分解",
+            "evidence": "scalable photoelectrochemical water splitting with high solar-to-hydrogen efficiency",
+            "source": "abstract",
+            "confidence": 0.95
+          },
+          {
+            "term": "oxygen vacancies",
+            "normalized": "氧空位",
+            "std_label": "氧空位",
+            "evidence": "gradient distributed oxygen vacancies, which induces strong dipole fields",
+            "source": "abstract",
+            "confidence": 0.9
+          },
+          {
+            "term": "charge separation",
+            "normalized": "电荷分离",
+            "std_label": "电荷分离",
+            "evidence": "promote charge separation",
+            "source": "abstract",
+            "confidence": 0.9
+          },
+          {
+            "term": "FeOOH cocatalyst",
+            "normalized": "羟基氧化铁助催化剂",
+            "std_label": "羟基氧化铁助催化剂",
+            "evidence": "sea-urchin-like FeOOH cocatalyst",
+            "source": "abstract",
+            "confidence": 0.85
+          },
+          {
+            "term": "photocurrent density",
+            "normalized": "光电流密度",
+            "std_label": "光电流密度",
+            "evidence": "photocurrent density of 7.0 mA cm−2",
+            "source": "abstract",
+            "confidence": 0.9
+          },
+          {
+            "term": "reversible hydrogen electrode",
+            "normalized": "可逆氢电极",
+            "std_label": "可逆氢电极",
+            "evidence": "versus the reversible hydrogen electrode",
+            "source": "abstract",
+            "confidence": 0.85
+          },
+          {
+            "term": "solar-to-hydrogen efficiency",
+            "normalized": "太阳能-氢能转换效率",
+            "std_label": "太阳能-氢能转换效率",
+            "evidence": "solar-to-hydrogen efficiency of 8.4%",
+            "source": "abstract",
+            "confidence": 0.95
+          },
+          {
+            "term": "life cycle assessment",
+            "normalized": "生命周期评估",
+            "std_label": "生命周期评估",
+            "evidence": "Life cycle assessment analysis shows",
+            "source": "abstract",
+            "confidence": 0.85
+          },
+          {
+            "term": "metal oxide-based artificial leaves",
+            "normalized": "金属氧化物基人工树叶",
+            "std_label": "金属氧化物基人工树叶",
+            "evidence": "metal oxide-based artificial leaves",
+            "source": "abstract",
+            "confidence": 0.85
+          },
+          {
+            "term": "sulfide oxidation",
+            "normalized": "硫化物氧化",
+            "std_label": "硫化物氧化",
+            "evidence": "for sulfide oxidation",
+            "source": "abstract",
+            "confidence": 0.8
+          },
+          {
+            "term": "electrolyte recipe",
+            "normalized": "电解质配方",
+            "std_label": "电解质配方",
+            "evidence": "develop an electrolyte recipe for the preparation of Bi34.7O36(SO4)16 precursor films",
+            "source": "introduction",
+            "confidence": 0.85
+          },
+          {
+            "term": "vanadyl acetylacetonate",
+            "normalized": "乙酰丙酮氧化钒",
+            "std_label": "乙酰丙酮氧化钒",
+            "evidence": "solid thermal reaction with vanadyl acetylacetonate (VO(acac)2)",
+            "source": "introduction",
+            "confidence": 0.8
+          },
+          {
+            "term": "wormlike BiVO4",
+            "normalized": "蠕虫状钒酸铋",
+            "std_label": "蠕虫状钒酸铋",
+            "evidence": "construct wormlike BiVO4 photoanodes",
+            "source": "introduction",
+            "confidence": 0.85
+          },
+          {
+            "term": "BVO-ΔOv",
+            "normalized": "梯度氧空位钒酸铋",
+            "std_label": "梯度氧空位钒酸铋",
+            "evidence": "denoted as BVO-ΔOv",
+            "source": "introduction",
+            "confidence": 0.8
+          },
+          {
+            "term": "dipole fields",
+            "normalized": "偶极子场",
+            "std_label": "偶极子场",
+            "evidence": "generate strong dipole fields within the film",
+            "source": "introduction",
+            "confidence": 0.85
+          }
+        ],
+        "辅学科": {
+          "化学": [
+            {
+              "term": "BiVO4 photoanode",
+              "normalized": "钒酸铋光阳极",
+              "std_label": "钒酸铋光阳极",
+              "evidence": "design a BiVO4 photoanode with gradient distributed oxygen vacancies",
+              "source": "abstract",
+              "confidence": 0.95
+            },
+            {
+              "term": "AM 1.5 G illumination",
+              "normalized": "1.5 光照",
+              "std_label": "AM 1.5 G光照",
+              "evidence": "stable for over 520 h under AM 1.5 G illumination",
+              "source": "abstract",
+              "confidence": 0.85
+            },
+            {
+              "term": "natural sunlight",
+              "normalized": "自然阳光",
+              "std_label": "自然阳光",
+              "evidence": "under natural sunlight",
+              "source": "abstract",
+              "confidence": 0.8
+            },
+            {
+              "term": "electron mobility",
+              "normalized": "电子迁移率",
+              "std_label": "电子迁移率",
+              "evidence": "low electron mobility (0.044 cm2 V−1 s−1)",
+              "source": "introduction",
+              "confidence": 0.85
+            },
+            {
+              "term": "hole diffusion length",
+              "normalized": "空穴扩散长度",
+              "std_label": "空穴扩散长度",
+              "evidence": "short hole diffusion length (~70 nm)",
+              "source": "introduction",
+              "confidence": 0.85
+            },
+            {
+              "term": "photoanodic corrosion",
+              "normalized": "光电阳极腐蚀",
+              "std_label": "光电阳极腐蚀",
+              "evidence": "poor long-term stability due to photoanodic corrosion issue",
+              "source": "introduction",
+              "confidence": 0.8
+            }
+          ],
+          "材料科学": [
+            {
+              "term": "silicon photovoltaic cell",
+              "normalized": "硅光伏电池",
+              "std_label": "硅光伏电池",
+              "evidence": "integrating with a silicon photovoltaic cell",
+              "source": "abstract",
+              "confidence": 0.9
+            },
+            {
+              "term": "artificial leaf",
+              "normalized": "人工树叶",
+              "std_label": "人工树叶",
+              "evidence": "standalone artificial leaf",
+              "source": "abstract",
+              "confidence": 0.9
+            },
+            {
+              "term": "scale-up",
+              "normalized": "规模化",
+              "std_label": "规模化",
+              "evidence": "scale-up of these artificial leaves up to 441 cm2",
+              "source": "abstract",
+              "confidence": 0.85
+            },
+            {
+              "term": "III-V semiconductors",
+              "normalized": "族半导体",
+              "std_label": "III-V族半导体",
+              "evidence": "expensive III-V semiconductors as the photoelectrodes",
+              "source": "introduction",
+              "confidence": 0.8
+            },
+            {
+              "term": "perovskite PEC cells",
+              "normalized": "钙钛矿光电化学电池",
+              "std_label": "钙钛矿光电化学电池",
+              "evidence": "perovskite PEC cells have shown great potential",
+              "source": "introduction",
+              "confidence": 0.85
+            },
+            {
+              "term": "conduction band edge position",
+              "normalized": "导带边位置",
+              "std_label": "导带边位置",
+              "evidence": "conduction band edge position of BiVO4",
+              "source": "introduction",
+              "confidence": 0.8
+            }
+          ]
+        }
+      },
+      "跨学科关系": [
+        {
+          "head": "钒酸铋光阳极",
+          "relation": "设计为具有梯度分布的氧空位",
+          "relation_type": "method_applied_to",
+          "relation_type_norm": "method_applied_to",
+          "relation_type_raw": "method_applied_to",
+          "tail": "梯度氧空位钒酸铋",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "design a BiVO4 photoanode with gradient distributed oxygen vacancies",
+          "source": "abstract",
+          "confidence": 0.95
+        },
+        {
+          "head": "梯度氧空位钒酸铋",
+          "relation": "诱导产生强偶极子场",
+          "relation_type": "improves_metric",
+          "relation_type_norm": "improves_metric",
+          "relation_type_raw": "improves_metric",
+          "tail": "偶极子场",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "gradient distributed oxygen vacancies, which induces strong dipole fields to promote charge separation",
+          "source": "abstract",
+          "confidence": 0.9
+        },
+        {
+          "head": "偶极子场",
+          "relation": "促进体相电荷分离",
+          "relation_type": "method_applied_to",
+          "relation_type_norm": "method_applied_to",
+          "relation_type_raw": "method_applied_to",
+          "tail": "电荷分离",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "generate strong dipole fields within the film, thus significantly promotes bulk charge separation",
+          "source": "introduction",
+          "confidence": 0.85
+        },
+        {
+          "head": "硅光伏电池",
+          "relation": "集成形成独立人工树叶装置",
+          "relation_type": "extends",
+          "relation_type_norm": "extends",
+          "relation_type_raw": "extends",
+          "tail": "人工树叶",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "integrating with a silicon photovoltaic cell, the standalone artificial leaf achieves a solar-to-hydrogen efficiency of 8.4%",
+          "source": "abstract",
+          "confidence": 0.9
+        },
+        {
+          "head": "羟基氧化铁助催化剂",
+          "relation": "提升光电流密度性能",
+          "relation_type": "improves_metric",
+          "relation_type_norm": "improves_metric",
+          "relation_type_raw": "improves_metric",
+          "tail": "光电流密度",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "Growing sea-urchin-like FeOOH cocatalyst on the photoanode leads to a photocurrent density of 7.0 mA cm−2",
+          "source": "abstract",
+          "confidence": 0.85
+        },
+        {
+          "head": "规模化",
+          "relation": "影响效率的规模化表现",
+          "relation_type": "constrains",
+          "relation_type_norm": "constrains",
+          "relation_type_raw": "constrains",
+          "tail": "太阳能-氢能转换效率",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "scale-up of these artificial leaves up to 441 cm2 in size can deliver a solar-to-hydrogen efficiency of 2.7%",
+          "source": "abstract",
+          "confidence": 0.85
+        },
+        {
+          "head": "III-V族半导体",
+          "relation": "作为传统高性能但昂贵的光阳极材料",
+          "relation_type": "maps_to",
+          "relation_type_norm": "maps_to",
+          "relation_type_raw": "maps_to",
+          "tail": "光电化学水分解",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "Some high-performance PEC water splitting devices generally involve expensive III-V semiconductors as the photoelectrodes",
+          "source": "introduction",
+          "confidence": 0.8
+        },
+        {
+          "head": "金属氧化物基人工树叶",
+          "relation": "作为替代性可扩展方案竞争",
+          "relation_type": "generalizes",
+          "relation_type_norm": "generalizes",
+          "relation_type_raw": "generalizes",
+          "tail": "钙钛矿光电化学电池",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "perovskite PEC cells have shown great potential for scalable solar water splitting... Our study demonstrates metal oxide-based artificial leaves",
+          "source": "introduction",
+          "confidence": 0.85
+        }
+      ],
+      "按辅助学科分类": {
+        "化学": {
+          "概念": [
+            "钒酸铋光阳极",
+            "AM 1.5 G光照",
+            "自然阳光",
+            "电子迁移率",
+            "空穴扩散长度",
+            "光电阳极腐蚀"
+          ],
+          "关系": [
+            0,
+            1,
+            2,
+            4
+          ],
+          "rationale": "提供光阳极材料设计与载流子动力学分析方法"
+        },
+        "材料科学": {
+          "概念": [
+            "硅光伏电池",
+            "人工树叶",
+            "规模化",
+            "III-V族半导体",
+            "钙钛矿光电化学电池",
+            "导带边位置"
+          ],
+          "关系": [
+            3,
+            5,
+            6,
+            7
+          ],
+          "rationale": "支撑器件结构设计与规模化应用验证"
+        }
+      },
+      "查询": {
+        "一级": "如何通过调控钒酸铋材料的结构与缺陷提升光电化学水分解效率？",
+        "二级": [
+          "硅基光伏集成对人工树叶的规模化制氢性能有何增强作用？",
+          "梯度氧空位设计如何协同羟基氧化铁助催化剂提升光电流密度？"
+        ],
+        "三级": [
+          "硅光伏电池与梯度氧空位钒酸铋光阳极的协同集成如何实现8.4%太阳能-氢能转换效率？",
+          "规模化人工树叶装置中材料缺陷调控与器件结构设计的耦合效应如何验证？"
+        ]
+      },
+      "假设": {
+        "一级": [
+          [
+            {
+              "step": 1,
+              "head": "钒酸铋光阳极",
+              "relation": "设计为具有梯度分布的氧空位",
+              "tail": "梯度氧空位钒酸铋",
+              "claim": "调控钒酸铋材料的氧空位分布可优化体相电荷分离能力"
+            },
+            {
+              "step": 2,
+              "head": "梯度氧空位钒酸铋",
+              "relation": "诱导产生强偶极子场",
+              "tail": "偶极子场",
+              "claim": "梯度氧空位引发的强偶极子场能有效驱动载流子定向迁移"
+            },
+            {
+              "step": 3,
+              "head": "偶极子场",
+              "relation": "促进体相电荷分离",
+              "tail": "电荷分离",
+              "claim": "增强的偶极子场通过材料科学手段优化可突破电荷分离效率瓶颈"
+            }
+          ],
+          [
+            {
+              "step": 1,
+              "head": "羟基氧化铁助催化剂",
+              "relation": "提升光电流密度性能",
+              "tail": "光电流密度",
+              "claim": "助催化剂的界面工程能显著提升载流子传输效率"
+            },
+            {
+              "step": 2,
+              "head": "光电流密度",
+              "relation": "正相关于光电化学水分解效率",
+              "tail": "光电化学水分解",
+              "claim": "光电流密度的提升直接决定整体水分解反应速率"
+            },
+            {
+              "step": 3,
+              "head": "光电化学水分解",
+              "relation": "受材料缺陷调控影响",
+              "tail": "氧空位",
+              "claim": "化学缺陷调控与材料科学协同可突破载流子复合限制"
+            }
+          ],
+          [
+            {
+              "step": 1,
+              "head": "硅光伏电池",
+              "relation": "集成形成独立人工树叶装置",
+              "tail": "人工树叶",
+              "claim": "光伏集成系统能通过器件工程优化能量转换路径"
+            },
+            {
+              "step": 2,
+              "head": "人工树叶",
+              "relation": "影响效率的规模化表现",
+              "tail": "规模化",
+              "claim": "规模化制备需材料科学解决界面稳定性与电荷传输矛盾"
+            },
+            {
+              "step": 3,
+              "head": "规模化",
+              "relation": "制约太阳能-氢能转换效率",
+              "tail": "太阳能-氢能转换效率",
+              "claim": "材料缺陷调控与器件集成技术的协同创新可突破效率-规模平衡难题"
+            }
+          ]
+        ],
+        "二级": [
+          [
+            {
+              "step": 1,
+              "head": "硅光伏电池",
+              "relation": "集成形成独立人工树叶装置",
+              "tail": "人工树叶",
+              "claim": "硅光伏电池 集成形成独立人工树叶装置 人工树叶"
+            },
+            {
+              "step": 2,
+              "head": "人工树叶",
+              "relation": "实现规模化制氢性能验证",
+              "tail": "规模化",
+              "claim": "人工树叶 实现规模化制氢性能验证 规模化"
+            },
+            {
+              "step": 3,
+              "head": "规模化",
+              "relation": "突破传统材料成本限制",
+              "tail": "太阳能-氢能转换效率",
+              "claim": "规模化 突破传统材料成本限制 太阳能-氢能转换效率"
+            }
+          ],
+          [
+            {
+              "step": 1,
+              "head": "梯度氧空位钒酸铋",
+              "relation": "诱导产生强偶极子场",
+              "tail": "偶极子场",
+              "claim": "梯度氧空位钒酸铋 诱导产生强偶极子场 偶极子场"
+            },
+            {
+              "step": 2,
+              "head": "偶极子场",
+              "relation": "促进体相电荷分离",
+              "tail": "电荷分离",
+              "claim": "偶极子场 促进体相电荷分离 电荷分离"
+            },
+            {
+              "step": 3,
+              "head": "电荷分离",
+              "relation": "协同羟基氧化铁助催化剂提升载流子利用率",
+              "tail": "光电流密度",
+              "claim": "电荷分离 协同羟基氧化铁助催化剂提升载流子利用率 光电流密度"
+            }
+          ]
+        ],
+        "三级": [
+          [
+            {
+              "step": 1,
+              "head": "硅光伏电池",
+              "relation": "集成形成独立人工树叶装置",
+              "tail": "人工树叶",
+              "claim": "硅光伏电池 集成形成独立人工树叶装置 人工树叶"
+            },
+            {
+              "step": 2,
+              "head": "人工树叶",
+              "relation": "包含梯度分布氧空位的钒酸铋光阳极",
+              "tail": "梯度氧空位钒酸铋",
+              "claim": "人工树叶 包含梯度分布氧空位的钒酸铋光阳极 梯度氧空位钒酸铋"
+            },
+            {
+              "step": 3,
+              "head": "梯度氧空位钒酸铋",
+              "relation": "通过偶极子场促进电荷分离提升转换效率",
+              "tail": "太阳能-氢能转换效率",
+              "claim": "梯度氧空位钒酸铋 通过偶极子场促进电荷分离提升转换效率 太阳能-氢能转换效率"
+            }
+          ],
+          [
+            {
+              "step": 1,
+              "head": "规模化",
+              "relation": "影响人工树叶的材料缺陷调控",
+              "tail": "人工树叶",
+              "claim": "规模化 影响人工树叶的材料缺陷调控 人工树叶"
+            },
+            {
+              "step": 2,
+              "head": "人工树叶",
+              "relation": "依赖氧空位分布调控电荷分离性能",
+              "tail": "氧空位",
+              "claim": "人工树叶 依赖氧空位分布调控电荷分离性能 氧空位"
+            },
+            {
+              "step": 3,
+              "head": "氧空位",
+              "relation": "通过缺陷工程优化与结构设计协同提升效率",
+              "tail": "太阳能-氢能转换效率",
+              "claim": "氧空位 通过缺陷工程优化与结构设计协同提升效率 太阳能-氢能转换效率"
+            }
+          ]
+        ],
+        "一级总结": [
+          "通过调控氧空位分布优化偶极子场，材料科学需设计梯度缺陷结构以提升电荷分离效率",
+          "化学需改进助催化剂界面工程，材料科学应协同优化载流子传输通道以提高反应速率",
+          "材料科学解决规模化稳定性问题，化学需优化缺陷-界面耦合机制以实现高效能量转换"
+        ],
+        "二级总结": [
+          "硅基光伏集成通过人工树叶规模化装置突破材料成本限制，验证太阳能-氢能转换效率的工程可行性",
+          "梯度氧空位设计通过偶极子场强化电荷分离，协同助催化剂提升载流子迁移效率指向光电流密度优化"
+        ],
+        "三级总结": [
+          "硅基集成装置通过梯度氧空位设计增强体相电荷分离，实现高效太阳能制氢",
+          "规模化人工树叶验证材料缺陷调控与器件结构间的协同效应及效率约束关系"
+        ]
+      },
+      "graph": {
+        "nodes": [
+          {
+            "id": "光电化学水分解",
+            "term": "photoelectrochemical water splitting",
+            "normalized": "光电化学水分解",
+            "discipline": "化学",
+            "evidence": "scalable photoelectrochemical water splitting with high solar-to-hydrogen efficiency",
+            "source": "abstract",
+            "confidence": 0.95
+          },
+          {
+            "id": "氧空位",
+            "term": "oxygen vacancies",
+            "normalized": "氧空位",
+            "discipline": "化学",
+            "evidence": "gradient distributed oxygen vacancies, which induces strong dipole fields",
+            "source": "abstract",
+            "confidence": 0.9
+          },
+          {
+            "id": "电荷分离",
+            "term": "charge separation",
+            "normalized": "电荷分离",
+            "discipline": "化学",
+            "evidence": "promote charge separation",
+            "source": "abstract",
+            "confidence": 0.9
+          },
+          {
+            "id": "羟基氧化铁助催化剂",
+            "term": "FeOOH cocatalyst",
+            "normalized": "羟基氧化铁助催化剂",
+            "discipline": "化学",
+            "evidence": "sea-urchin-like FeOOH cocatalyst",
+            "source": "abstract",
+            "confidence": 0.85
+          },
+          {
+            "id": "光电流密度",
+            "term": "photocurrent density",
+            "normalized": "光电流密度",
+            "discipline": "化学",
+            "evidence": "photocurrent density of 7.0 mA cm−2",
+            "source": "abstract",
+            "confidence": 0.9
+          },
+          {
+            "id": "可逆氢电极",
+            "term": "reversible hydrogen electrode",
+            "normalized": "可逆氢电极",
+            "discipline": "化学",
+            "evidence": "versus the reversible hydrogen electrode",
+            "source": "abstract",
+            "confidence": 0.85
+          },
+          {
+            "id": "太阳能-氢能转换效率",
+            "term": "solar-to-hydrogen efficiency",
+            "normalized": "太阳能-氢能转换效率",
+            "discipline": "化学",
+            "evidence": "solar-to-hydrogen efficiency of 8.4%",
+            "source": "abstract",
+            "confidence": 0.95
+          },
+          {
+            "id": "生命周期评估",
+            "term": "life cycle assessment",
+            "normalized": "生命周期评估",
+            "discipline": "化学",
+            "evidence": "Life cycle assessment analysis shows",
+            "source": "abstract",
+            "confidence": 0.85
+          },
+          {
+            "id": "金属氧化物基人工树叶",
+            "term": "metal oxide-based artificial leaves",
+            "normalized": "金属氧化物基人工树叶",
+            "discipline": "化学",
+            "evidence": "metal oxide-based artificial leaves",
+            "source": "abstract",
+            "confidence": 0.85
+          },
+          {
+            "id": "硫化物氧化",
+            "term": "sulfide oxidation",
+            "normalized": "硫化物氧化",
+            "discipline": "化学",
+            "evidence": "for sulfide oxidation",
+            "source": "abstract",
+            "confidence": 0.8
+          },
+          {
+            "id": "电解质配方",
+            "term": "electrolyte recipe",
+            "normalized": "电解质配方",
+            "discipline": "化学",
+            "evidence": "develop an electrolyte recipe for the preparation of Bi34.7O36(SO4)16 precursor films",
+            "source": "introduction",
+            "confidence": 0.85
+          },
+          {
+            "id": "乙酰丙酮氧化钒",
+            "term": "vanadyl acetylacetonate",
+            "normalized": "乙酰丙酮氧化钒",
+            "discipline": "化学",
+            "evidence": "solid thermal reaction with vanadyl acetylacetonate (VO(acac)2)",
+            "source": "introduction",
+            "confidence": 0.8
+          },
+          {
+            "id": "蠕虫状钒酸铋",
+            "term": "wormlike BiVO4",
+            "normalized": "蠕虫状钒酸铋",
+            "discipline": "化学",
+            "evidence": "construct wormlike BiVO4 photoanodes",
+            "source": "introduction",
+            "confidence": 0.85
+          },
+          {
+            "id": "梯度氧空位钒酸铋",
+            "term": "BVO-ΔOv",
+            "normalized": "梯度氧空位钒酸铋",
+            "discipline": "化学",
+            "evidence": "denoted as BVO-ΔOv",
+            "source": "introduction",
+            "confidence": 0.8
+          },
+          {
+            "id": "偶极子场",
+            "term": "dipole fields",
+            "normalized": "偶极子场",
+            "discipline": "化学",
+            "evidence": "generate strong dipole fields within the film",
+            "source": "introduction",
+            "confidence": 0.85
+          },
+          {
+            "id": "钒酸铋光阳极",
+            "term": "BiVO4 photoanode",
+            "normalized": "钒酸铋光阳极",
+            "discipline": "化学",
+            "evidence": "design a BiVO4 photoanode with gradient distributed oxygen vacancies",
+            "source": "abstract",
+            "confidence": 0.95
+          },
+          {
+            "id": "1.5 光照",
+            "term": "AM 1.5 G illumination",
+            "normalized": "1.5 光照",
+            "discipline": "化学",
+            "evidence": "stable for over 520 h under AM 1.5 G illumination",
+            "source": "abstract",
+            "confidence": 0.85
+          },
+          {
+            "id": "自然阳光",
+            "term": "natural sunlight",
+            "normalized": "自然阳光",
+            "discipline": "化学",
+            "evidence": "under natural sunlight",
+            "source": "abstract",
+            "confidence": 0.8
+          },
+          {
+            "id": "电子迁移率",
+            "term": "electron mobility",
+            "normalized": "电子迁移率",
+            "discipline": "化学",
+            "evidence": "low electron mobility (0.044 cm2 V−1 s−1)",
+            "source": "introduction",
+            "confidence": 0.85
+          },
+          {
+            "id": "空穴扩散长度",
+            "term": "hole diffusion length",
+            "normalized": "空穴扩散长度",
+            "discipline": "化学",
+            "evidence": "short hole diffusion length (~70 nm)",
+            "source": "introduction",
+            "confidence": 0.85
+          },
+          {
+            "id": "光电阳极腐蚀",
+            "term": "photoanodic corrosion",
+            "normalized": "光电阳极腐蚀",
+            "discipline": "化学",
+            "evidence": "poor long-term stability due to photoanodic corrosion issue",
+            "source": "introduction",
+            "confidence": 0.8
+          },
+          {
+            "id": "硅光伏电池",
+            "term": "silicon photovoltaic cell",
+            "normalized": "硅光伏电池",
+            "discipline": "材料科学",
+            "evidence": "integrating with a silicon photovoltaic cell",
+            "source": "abstract",
+            "confidence": 0.9
+          },
+          {
+            "id": "人工树叶",
+            "term": "artificial leaf",
+            "normalized": "人工树叶",
+            "discipline": "材料科学",
+            "evidence": "standalone artificial leaf",
+            "source": "abstract",
+            "confidence": 0.9
+          },
+          {
+            "id": "规模化",
+            "term": "scale-up",
+            "normalized": "规模化",
+            "discipline": "材料科学",
+            "evidence": "scale-up of these artificial leaves up to 441 cm2",
+            "source": "abstract",
+            "confidence": 0.85
+          },
+          {
+            "id": "族半导体",
+            "term": "III-V semiconductors",
+            "normalized": "族半导体",
+            "discipline": "材料科学",
+            "evidence": "expensive III-V semiconductors as the photoelectrodes",
+            "source": "introduction",
+            "confidence": 0.8
+          },
+          {
+            "id": "钙钛矿光电化学电池",
+            "term": "perovskite PEC cells",
+            "normalized": "钙钛矿光电化学电池",
+            "discipline": "材料科学",
+            "evidence": "perovskite PEC cells have shown great potential",
+            "source": "introduction",
+            "confidence": 0.85
+          },
+          {
+            "id": "导带边位置",
+            "term": "conduction band edge position",
+            "normalized": "导带边位置",
+            "discipline": "材料科学",
+            "evidence": "conduction band edge position of BiVO4",
+            "source": "introduction",
+            "confidence": 0.8
+          },
+          {
+            "id": "III-V族半导体",
+            "term": "III-V族半导体",
+            "normalized": "III-V族半导体",
+            "discipline": "struct_relation_inferred",
+            "evidence": "",
+            "source": "struct_relation_inferred",
+            "confidence": 0.8
+          }
+        ],
+        "edges": [
+          {
+            "source": "钒酸铋光阳极",
+            "target": "梯度氧空位钒酸铋",
+            "relation": "设计为具有梯度分布的氧空位",
+            "relation_type": "method_applied_to",
+            "metadata": {
+              "evidence": "design a BiVO4 photoanode with gradient distributed oxygen vacancies",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "梯度氧空位钒酸铋",
+            "target": "偶极子场",
+            "relation": "诱导产生强偶极子场",
+            "relation_type": "improves_metric",
+            "metadata": {
+              "evidence": "gradient distributed oxygen vacancies, which induces strong dipole fields to promote charge separation",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "偶极子场",
+            "target": "电荷分离",
+            "relation": "促进体相电荷分离",
+            "relation_type": "method_applied_to",
+            "metadata": {
+              "evidence": "generate strong dipole fields within the film, thus significantly promotes bulk charge separation",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "硅光伏电池",
+            "target": "人工树叶",
+            "relation": "集成形成独立人工树叶装置",
+            "relation_type": "extends",
+            "metadata": {
+              "evidence": "integrating with a silicon photovoltaic cell, the standalone artificial leaf achieves a solar-to-hydrogen efficiency of 8.4%",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "羟基氧化铁助催化剂",
+            "target": "光电流密度",
+            "relation": "提升光电流密度性能",
+            "relation_type": "improves_metric",
+            "metadata": {
+              "evidence": "Growing sea-urchin-like FeOOH cocatalyst on the photoanode leads to a photocurrent density of 7.0 mA cm−2",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "规模化",
+            "target": "太阳能-氢能转换效率",
+            "relation": "影响效率的规模化表现",
+            "relation_type": "constrains",
+            "metadata": {
+              "evidence": "scale-up of these artificial leaves up to 441 cm2 in size can deliver a solar-to-hydrogen efficiency of 2.7%",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "III-V族半导体",
+            "target": "光电化学水分解",
+            "relation": "作为传统高性能但昂贵的光阳极材料",
+            "relation_type": "maps_to",
+            "metadata": {
+              "evidence": "Some high-performance PEC water splitting devices generally involve expensive III-V semiconductors as the photoelectrodes",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "金属氧化物基人工树叶",
+            "target": "钙钛矿光电化学电池",
+            "relation": "作为替代性可扩展方案竞争",
+            "relation_type": "generalizes",
+            "metadata": {
+              "evidence": "perovskite PEC cells have shown great potential for scalable solar water splitting... Our study demonstrates metal oxide-based artificial leaves",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "钒酸铋光阳极",
+            "target": "梯度氧空位钒酸铋",
+            "relation": "设计为具有梯度分布的氧空位",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "调控钒酸铋材料的氧空位分布可优化体相电荷分离能力",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "梯度氧空位钒酸铋",
+            "target": "偶极子场",
+            "relation": "诱导产生强偶极子场",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "梯度氧空位引发的强偶极子场能有效驱动载流子定向迁移",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "偶极子场",
+            "target": "电荷分离",
+            "relation": "促进体相电荷分离",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "增强的偶极子场通过材料科学手段优化可突破电荷分离效率瓶颈",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "羟基氧化铁助催化剂",
+            "target": "光电流密度",
+            "relation": "提升光电流密度性能",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "助催化剂的界面工程能显著提升载流子传输效率",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "光电流密度",
+            "target": "光电化学水分解",
+            "relation": "正相关于光电化学水分解效率",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "光电流密度的提升直接决定整体水分解反应速率",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "光电化学水分解",
+            "target": "氧空位",
+            "relation": "受材料缺陷调控影响",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "化学缺陷调控与材料科学协同可突破载流子复合限制",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "硅光伏电池",
+            "target": "人工树叶",
+            "relation": "集成形成独立人工树叶装置",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "光伏集成系统能通过器件工程优化能量转换路径",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 2
+            }
+          },
+          {
+            "source": "人工树叶",
+            "target": "规模化",
+            "relation": "影响效率的规模化表现",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "规模化制备需材料科学解决界面稳定性与电荷传输矛盾",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 2
+            }
+          },
+          {
+            "source": "规模化",
+            "target": "太阳能-氢能转换效率",
+            "relation": "制约太阳能-氢能转换效率",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "材料缺陷调控与器件集成技术的协同创新可突破效率-规模平衡难题",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 2
+            }
+          },
+          {
+            "source": "硅光伏电池",
+            "target": "人工树叶",
+            "relation": "集成形成独立人工树叶装置",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "硅光伏电池 集成形成独立人工树叶装置 人工树叶",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "人工树叶",
+            "target": "规模化",
+            "relation": "实现规模化制氢性能验证",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "人工树叶 实现规模化制氢性能验证 规模化",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "规模化",
+            "target": "太阳能-氢能转换效率",
+            "relation": "突破传统材料成本限制",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "规模化 突破传统材料成本限制 太阳能-氢能转换效率",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "梯度氧空位钒酸铋",
+            "target": "偶极子场",
+            "relation": "诱导产生强偶极子场",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "梯度氧空位钒酸铋 诱导产生强偶极子场 偶极子场",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "偶极子场",
+            "target": "电荷分离",
+            "relation": "促进体相电荷分离",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "偶极子场 促进体相电荷分离 电荷分离",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "电荷分离",
+            "target": "光电流密度",
+            "relation": "协同羟基氧化铁助催化剂提升载流子利用率",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "电荷分离 协同羟基氧化铁助催化剂提升载流子利用率 光电流密度",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "硅光伏电池",
+            "target": "人工树叶",
+            "relation": "集成形成独立人工树叶装置",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "硅光伏电池 集成形成独立人工树叶装置 人工树叶",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "人工树叶",
+            "target": "梯度氧空位钒酸铋",
+            "relation": "包含梯度分布氧空位的钒酸铋光阳极",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "人工树叶 包含梯度分布氧空位的钒酸铋光阳极 梯度氧空位钒酸铋",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "梯度氧空位钒酸铋",
+            "target": "太阳能-氢能转换效率",
+            "relation": "通过偶极子场促进电荷分离提升转换效率",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "梯度氧空位钒酸铋 通过偶极子场促进电荷分离提升转换效率 太阳能-氢能转换效率",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "规模化",
+            "target": "人工树叶",
+            "relation": "影响人工树叶的材料缺陷调控",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "规模化 影响人工树叶的材料缺陷调控 人工树叶",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "人工树叶",
+            "target": "氧空位",
+            "relation": "依赖氧空位分布调控电荷分离性能",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "人工树叶 依赖氧空位分布调控电荷分离性能 氧空位",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "氧空位",
+            "target": "太阳能-氢能转换效率",
+            "relation": "通过缺陷工程优化与结构设计协同提升效率",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "氧空位 通过缺陷工程优化与结构设计协同提升效率 太阳能-氢能转换效率",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          }
+        ]
+      },
+      "metrics": {
+        "path_consistency": 0.5238095238095238,
+        "coverage": 0.42857142857142855,
+        "bridging_score": 0.21428571428571427,
+        "rao_stirling_diversity": 0.1572,
+        "embedding_bridging": 1.0,
+        "consistency_precision": 0.0,
+        "consistency_recall": 0.0,
+        "consistency_f1": 0.0,
+        "info_novelty": 0.0,
+        "chain_coherence": 0.5116,
+        "atypical_combination": 0.3356,
+        "kg_density": 0.0225,
+        "kg_inverse_modularity": 0.8926,
+        "kg_largest_cc_ratio": 0.4643,
+        "kg_avg_betweenness": 0.0127,
+        "kg_clustering_coefficient": 0.0,
+        "concept_recall": 0.0,
+        "concept_precision": 0.0,
+        "concept_f1": 0.0,
+        "relation_precision": 0.0,
+        "relation_type_accuracy": 0.0,
+        "evidence_coverage": 0.0,
+        "path_alignment_best": 0.0,
+        "path_alignment_mean": 0.0
+      }
+    },
+    "raw": "/* stage1: struct */\n/* concepts round1 */\n{\n  \"meta\": {\n    \"title\": \"A standalone bismuth vanadate-silicon artificial leaf achieving 8.4% efficiency for hydrogen production\",\n    \"primary\": \"化学\",\n    \"secondary_list\": [\"化学\", \"材料科学\"]\n  },\n  \"概念\": {\n    \"主学科\": [\n      {\n        \"term\": \"photoelectrochemical water splitting\",\n        \"normalized\": \"光电化学水分解\",\n        \"std_label\": \"光电化学水分解\",\n        \"evidence\": \"scalable photoelectrochemical water splitting with high solar-to-hydrogen efficiency\",\n        \"source\": \"abstract\",\n        \"confidence\": 0.95\n      },\n      {\n        \"term\": \"oxygen vacancies\",\n        \"normalized\": \"氧空位\",\n        \"std_label\": \"氧空位\",\n        \"evidence\": \"gradient distributed oxygen vacancies, which induces strong dipole fields\",\n        \"source\": \"abstract\",\n        \"confidence\": 0.9\n      },\n      {\n        \"term\": \"charge separation\",\n        \"normalized\": \"电荷分离\",\n        \"std_label\": \"电荷分离\",\n        \"evidence\": \"promote charge separation\",\n        \"source\": \"abstract\",\n        \"confidence\": 0.9\n      },\n      {\n        \"term\": \"FeOOH cocatalyst\",\n        \"normalized\": \"羟基氧化铁助催化剂\",\n        \"std_label\": \"羟基氧化铁助催化剂\",\n        \"evidence\": \"sea-urchin-like FeOOH cocatalyst\",\n        \"source\": \"abstract\",\n        \"confidence\": 0.85\n      },\n      {\n        \"term\": \"photocurrent density\",\n        \"normalized\": \"光电流密度\",\n        \"std_label\": \"光电流密度\",\n        \"evidence\": \"photocurrent density of 7.0 mA cm−2\",\n        \"source\": \"abstract\",\n        \"confidence\": 0.9\n      },\n      {\n        \"term\": \"reversible hydrogen electrode\",\n        \"normalized\": \"可逆氢电极\",\n        \"std_label\": \"可逆氢电极\",\n        \"evidence\": \"versus the reversible hydrogen electrode\",\n        \"source\": \"abstract\",\n        \"confidence\": 0.85\n      },\n      {\n        \"term\": \"solar-to-hydrogen efficiency\",\n        \"normalized\": \"太阳能-氢能转换效率\",\n        \"std_label\": \"太阳能-氢能转换效率\",\n        \"evidence\": \"solar-to-hydrogen efficiency of 8.4%\",\n        \"source\": \"abstract\",\n        \"confidence\": 0.95\n      },\n      {\n        \"term\": \"life cycle assessment\",\n        \"normalized\": \"生命周期评估\",\n        \"std_label\": \"生命周期评估\",\n        \"evidence\": \"Life cycle assessment analysis shows\",\n        \"source\": \"abstract\",\n        \"confidence\": 0.85\n      },\n      {\n        \"term\": \"metal oxide-based artificial leaves\",\n        \"normalized\": \"金属氧化物基人工树叶\",\n        \"std_label\": \"金属氧化物基人工树叶\",\n        \"evidence\": \"metal oxide-based artificial leaves\",\n        \"source\": \"abstract\",\n        \"confidence\": 0.85\n      },\n      {\n        \"term\": \"sulfide oxidation\",\n        \"normalized\": \"硫化物氧化\",\n        \"std_label\": \"硫化物氧化\",\n        \"evidence\": \"for sulfide oxidation\",\n        \"source\": \"abstract\",\n        \"confidence\": 0.8\n      },\n      {\n        \"term\": \"electrolyte recipe\",\n        \"normalized\": \"电解质配方\",\n        \"std_label\": \"电解质配方\",\n        \"evidence\": \"develop an electrolyte recipe for the preparation of Bi34.7O36(SO4)16 precursor films\",\n        \"source\": \"introduction\",\n        \"confidence\": 0.85\n      },\n      {\n        \"term\": \"vanadyl acetylacetonate\",\n        \"normalized\": \"乙酰丙酮氧化钒\",\n        \"std_label\": \"乙酰丙酮氧化钒\",\n        \"evidence\": \"solid thermal reaction with vanadyl acetylacetonate (VO(acac)2)\",\n        \"source\": \"introduction\",\n        \"confidence\": 0.8\n      },\n      {\n        \"term\": \"wormlike BiVO4\",\n        \"normalized\": \"蠕虫状钒酸铋\",\n        \"std_label\": \"蠕虫状钒酸铋\",\n        \"evidence\": \"construct wormlike BiVO4 photoanodes\",\n        \"source\": \"introduction\",\n        \"confidence\": 0.85\n      },\n      {\n        \"term\": \"BVO-ΔOv\",\n        \"normalized\": \"梯度氧空位钒酸铋\",\n        \"std_label\": \"梯度氧空位钒酸铋\",\n        \"evidence\": \"denoted as BVO-ΔOv\",\n        \"source\": \"introduction\",\n        \"confidence\": 0.8\n      },\n      {\n        \"term\": \"dipole fields\",\n        \"normalized\": \"偶极子场\",\n        \"std_label\": \"偶极子场\",\n        \"evidence\": \"generate strong dipole fields within the film\",\n        \"source\": \"introduction\",\n        \"confidence\": 0.85\n      }\n    ],\n    \"辅学科\": {\n      \"化学\": [\n        {\n          \"term\": \"BiVO4 photoanode\",\n          \"normalized\": \"钒酸铋光阳极\",\n          \"std_label\": \"钒酸铋光阳极\",\n          \"evidence\": \"design a BiVO4 photoanode with gradient distributed oxygen vacancies\",\n          \"source\": \"abstract\",\n          \"confidence\": 0.95\n        },\n        {\n          \"term\": \"AM 1.5 G illumination\",\n          \"normalized\": \"AM 1.5 G光照\",\n          \"std_label\": \"AM 1.5 G光照\",\n          \"evidence\": \"stable for over 520 h under AM 1.5 G illumination\",\n          \"source\": \"abstract\",\n          \"confidence\": 0.85\n        },\n        {\n          \"term\": \"natural sunlight\",\n          \"normalized\": \"自然阳光\",\n          \"std_label\": \"自然阳光\",\n          \"evidence\": \"under natural sunlight\",\n          \"source\": \"abstract\",\n          \"confidence\": 0.8\n        },\n        {\n          \"term\": \"electron mobility\",\n          \"normalized\": \"电子迁移率\",\n          \"std_label\": \"电子迁移率\",\n          \"evidence\": \"low electron mobility (0.044 cm2 V−1 s−1)\",\n          \"source\": \"introduction\",\n          \"confidence\": 0.85\n        },\n        {\n          \"term\": \"hole diffusion length\",\n          \"normalized\": \"空穴扩散长度\",\n          \"std_label\": \"空穴扩散长度\",\n          \"evidence\": \"short hole diffusion length (~70 nm)\",\n          \"source\": \"introduction\",\n          \"confidence\": 0.85\n        },\n        {\n          \"term\": \"photoanodic corrosion\",\n          \"normalized\": \"光电阳极腐蚀\",\n          \"std_label\": \"光电阳极腐蚀\",\n          \"evidence\": \"poor long-term stability due to photoanodic corrosion issue\",\n          \"source\": \"introduction\",\n          \"confidence\": 0.8\n        }\n      ],\n      \"材料科学\": [\n        {\n          \"term\": \"silicon photovoltaic cell\",\n          \"normalized\": \"硅光伏电池\",\n          \"std_label\": \"硅光伏电池\",\n          \"evidence\": \"integrating with a silicon photovoltaic cell\",\n          \"source\": \"abstract\",\n          \"confidence\": 0.9\n        },\n        {\n          \"term\": \"artificial leaf\",\n          \"normalized\": \"人工树叶\",\n          \"std_label\": \"人工树叶\",\n          \"evidence\": \"standalone artificial leaf\",\n          \"source\": \"abstract\",\n          \"confidence\": 0.9\n        },\n        {\n          \"term\": \"scale-up\",\n          \"normalized\": \"规模化\",\n          \"std_label\": \"规模化\",\n          \"evidence\": \"scale-up of these artificial leaves up to 441 cm2\",\n          \"source\": \"abstract\",\n          \"confidence\": 0.85\n        },\n        {\n          \"term\": \"III-V semiconductors\",\n          \"normalized\": \"III-V族半导体\",\n          \"std_label\": \"III-V族半导体\",\n          \"evidence\": \"expensive III-V semiconductors as the photoelectrodes\",\n          \"source\": \"introduction\",\n          \"confidence\": 0.8\n        },\n        {\n          \"term\": \"perovskite PEC cells\",\n          \"normalized\": \"钙钛矿光电化学电池\",\n          \"std_label\": \"钙钛矿光电化学电池\",\n          \"evidence\": \"perovskite PEC cells have shown great potential\",\n          \"source\": \"introduction\",\n          \"confidence\": 0.85\n        },\n        {\n          \"term\": \"conduction band edge position\",\n          \"normalized\": \"导带边位置\",\n          \"std_label\": \"导带边位置\",\n          \"evidence\": \"conduction band edge position of BiVO4\",\n          \"source\": \"introduction\",\n          \"confidence\": 0.8\n        }\n      ]\n    }\n  }\n}\n\n/* concepts round2 (supplement) */\n{\"补充概念\": {\"主学科\": [\"Bi34.7O36(SO4)16\", \"solid thermal reaction\", \"RHE\", \"monolithic stacked silicon-perovskite tandem\", \"FAPbI3\"], \"辅学科\": {\"化学\": [\"Bi34.7O36(SO4)16\", \"FAPbI3\"], \"材料科学\": [\"solid thermal reaction\", \"monolithic stacked silicon-perovskite tandem\"], \"电化学\": [\"RHE\"]}}}\n\n/* relations */\n{\n  \"跨学科关系\": [\n    {\n      \"head\": \"钒酸铋光阳极\",\n      \"tail\": \"梯度氧空位钒酸铋\",\n      \"relation\": \"设计为具有梯度分布的氧空位\",\n      \"relation_type\": \"method_applied_to\",\n      \"direction\": \"->\",\n      \"evidence\": \"design a BiVO4 photoanode with gradient distributed oxygen vacancies\",\n      \"source\": \"abstract\",\n      \"confidence\": 0.95\n    },\n    {\n      \"head\": \"梯度氧空位钒酸铋\",\n      \"tail\": \"偶极子场\",\n      \"relation\": \"诱导产生强偶极子场\",\n      \"relation_type\": \"improves_metric\",\n      \"direction\": \"->\",\n      \"evidence\": \"gradient distributed oxygen vacancies, which induces strong dipole fields to promote charge separation\",\n      \"source\": \"abstract\",\n      \"confidence\": 0.9\n    },\n    {\n      \"head\": \"偶极子场\",\n      \"tail\": \"电荷分离\",\n      \"relation\": \"促进体相电荷分离\",\n      \"relation_type\": \"method_applied_to\",\n      \"direction\": \"->\",\n      \"evidence\": \"generate strong dipole fields within the film, thus significantly promotes bulk charge separation\",\n      \"source\": \"introduction\",\n      \"confidence\": 0.85\n    },\n    {\n      \"head\": \"硅光伏电池\",\n      \"tail\": \"人工树叶\",\n      \"relation\": \"集成形成独立人工树叶装置\",\n      \"relation_type\": \"extends\",\n      \"direction\": \"->\",\n      \"evidence\": \"integrating with a silicon photovoltaic cell, the standalone artificial leaf achieves a solar-to-hydrogen efficiency of 8.4%\",\n      \"source\": \"abstract\",\n      \"confidence\": 0.9\n    },\n    {\n      \"head\": \"羟基氧化铁助催化剂\",\n      \"tail\": \"光电流密度\",\n      \"relation\": \"提升光电流密度性能\",\n      \"relation_type\": \"improves_metric\",\n      \"direction\": \"->\",\n      \"evidence\": \"Growing sea-urchin-like FeOOH cocatalyst on the photoanode leads to a photocurrent density of 7.0 mA cm−2\",\n      \"source\": \"abstract\",\n      \"confidence\": 0.85\n    },\n    {\n      \"head\": \"规模化\",\n      \"tail\": \"太阳能-氢能转换效率\",\n      \"relation\": \"影响效率的规模化表现\",\n      \"relation_type\": \"constrains\",\n      \"direction\": \"->\",\n      \"evidence\": \"scale-up of these artificial leaves up to 441 cm2 in size can deliver a solar-to-hydrogen efficiency of 2.7%\",\n      \"source\": \"abstract\",\n      \"confidence\": 0.85\n    },\n    {\n      \"head\": \"III-V族半导体\",\n      \"tail\": \"光电化学水分解\",\n      \"relation\": \"作为传统高性能但昂贵的光阳极材料\",\n      \"relation_type\": \"maps_to\",\n      \"direction\": \"->\",\n      \"evidence\": \"Some high-performance PEC water splitting devices generally involve expensive III-V semiconductors as the photoelectrodes\",\n      \"source\": \"introduction\",\n      \"confidence\": 0.8\n    },\n    {\n      \"head\": \"金属氧化物基人工树叶\",\n      \"tail\": \"钙钛矿光电化学电池\",\n      \"relation\": \"作为替代性可扩展方案竞争\",\n      \"relation_type\": \"generalizes\",\n      \"direction\": \"->\",\n      \"evidence\": \"perovskite PEC cells have shown great potential for scalable solar water splitting... Our study demonstrates metal oxide-based artificial leaves\",\n      \"source\": \"introduction\",\n      \"confidence\": 0.85\n    }\n  ]\n}\n\n/* stage2: query */\n{\n  \"按辅助学科分类\": {\n    \"化学\": {\n      \"概念\": [\n        \"钒酸铋光阳极\",\n        \"AM 1.5 G光照\",\n        \"自然阳光\",\n        \"电子迁移率\",\n        \"空穴扩散长度\",\n        \"光电阳极腐蚀\"\n      ],\n      \"关系\": [0, 1, 2, 4],\n      \"rationale\": \"提供光阳极材料设计与载流子动力学分析方法\"\n    },\n    \"材料科学\": {\n      \"概念\": [\n        \"硅光伏电池\",\n        \"人工树叶\",\n        \"规模化\",\n        \"III-V族半导体\",\n        \"钙钛矿光电化学电池\",\n        \"导带边位置\"\n      ],\n      \"关系\": [3, 5, 6, 7],\n      \"rationale\": \"支撑器件结构设计与规模化应用验证\"\n    }\n  },\n  \"查询\": {\n    \"一级\": \"如何通过调控钒酸铋材料的结构与缺陷提升光电化学水分解效率？\",\n    \"二级\": [\n      \"硅基光伏集成对人工树叶的规模化制氢性能有何增强作用？\",\n      \"梯度氧空位设计如何协同羟基氧化铁助催化剂提升光电流密度？\"\n    ],\n    \"三级\": [\n      \"硅光伏电池与梯度氧空位钒酸铋光阳极的协同集成如何实现8.4%太阳能-氢能转换效率？\",\n      \"规模化人工树叶装置中材料缺陷调控与器件结构设计的耦合效应如何验证？\"\n    ]\n  }\n}\n\n/* stage3: hypothesis L1 */\n{\n  \"假设\": {\n    \"一级\": [\n      [\n        {\n          \"step\": 1,\n          \"head\": \"钒酸铋光阳极\",\n          \"relation\": \"设计为具有梯度分布的氧空位\",\n          \"tail\": \"梯度氧空位钒酸铋\",\n          \"claim\": \"调控钒酸铋材料的氧空位分布可优化体相电荷分离能力\"\n        },\n        {\n          \"step\": 2,\n          \"head\": \"梯度氧空位钒酸铋\",\n          \"relation\": \"诱导产生强偶极子场\",\n          \"tail\": \"偶极子场\",\n          \"claim\": \"梯度氧空位引发的强偶极子场能有效驱动载流子定向迁移\"\n        },\n        {\n          \"step\": 3,\n          \"head\": \"偶极子场\",\n          \"relation\": \"促进体相电荷分离\",\n          \"tail\": \"电荷分离\",\n          \"claim\": \"增强的偶极子场通过材料科学手段优化可突破电荷分离效率瓶颈\"\n        }\n      ],\n      [\n        {\n          \"step\": 1,\n          \"head\": \"羟基氧化铁助催化剂\",\n          \"relation\": \"提升光电流密度性能\",\n          \"tail\": \"光电流密度\",\n          \"claim\": \"助催化剂的界面工程能显著提升载流子传输效率\"\n        },\n        {\n          \"step\": 2,\n          \"head\": \"光电流密度\",\n          \"relation\": \"正相关于光电化学水分解效率\",\n          \"tail\": \"光电化学水分解\",\n          \"claim\": \"光电流密度的提升直接决定整体水分解反应速率\"\n        },\n        {\n          \"step\": 3,\n          \"head\": \"光电化学水分解\",\n          \"relation\": \"受材料缺陷调控影响\",\n          \"tail\": \"氧空位\",\n          \"claim\": \"化学缺陷调控与材料科学协同可突破载流子复合限制\"\n        }\n      ],\n      [\n        {\n          \"step\": 1,\n          \"head\": \"硅光伏电池\",\n          \"relation\": \"集成形成独立人工树叶装置\",\n          \"tail\": \"人工树叶\",\n          \"claim\": \"光伏集成系统能通过器件工程优化能量转换路径\"\n        },\n        {\n          \"step\": 2,\n          \"head\": \"人工树叶\",\n          \"relation\": \"影响效率的规模化表现\",\n          \"tail\": \"规模化\",\n          \"claim\": \"规模化制备需材料科学解决界面稳定性与电荷传输矛盾\"\n        },\n        {\n          \"step\": 3,\n          \"head\": \"规模化\",\n          \"relation\": \"制约太阳能-氢能转换效率\",\n          \"tail\": \"太阳能-氢能转换效率\",\n          \"claim\": \"材料缺陷调控与器件集成技术的协同创新可突破效率-规模平衡难题\"\n        }\n      ]\n    ],\n    \"一级总结\": [\n      \"通过调控氧空位分布优化偶极子场，材料科学需设计梯度缺陷结构以提升电荷分离效率\",\n      \"化学需改进助催化剂界面工程，材料科学应协同优化载流子传输通道以提高反应速率\",\n      \"材料科学解决规模化稳定性问题，化学需优化缺陷-界面耦合机制以实现高效能量转换\"\n    ]\n  }\n}\n\n/* stage3: hypothesis L2 */\n{\n  \"假设\": {\n    \"二级\": [\n      [\n        {\n          \"step\": 1,\n          \"head\": \"硅光伏电池\",\n          \"relation\": \"集成形成独立人工树叶装置\",\n          \"tail\": \"人工树叶\"\n        },\n        {\n          \"step\": 2,\n          \"head\": \"人工树叶\",\n          \"relation\": \"实现规模化制氢性能验证\",\n          \"tail\": \"规模化\"\n        },\n        {\n          \"step\": 3,\n          \"head\": \"规模化\",\n          \"relation\": \"突破传统材料成本限制\",\n          \"tail\": \"太阳能-氢能转换效率\"\n        }\n      ],\n      [\n        {\n          \"step\": 1,\n          \"head\": \"梯度氧空位钒酸铋\",\n          \"relation\": \"诱导产生强偶极子场\",\n          \"tail\": \"偶极子场\"\n        },\n        {\n          \"step\": 2,\n          \"head\": \"偶极子场\",\n          \"relation\": \"促进体相电荷分离\",\n          \"tail\": \"电荷分离\"\n        },\n        {\n          \"step\": 3,\n          \"head\": \"电荷分离\",\n          \"relation\": \"协同羟基氧化铁助催化剂提升载流子利用率\",\n          \"tail\": \"光电流密度\"\n        }\n      ]\n    ],\n    \"二级总结\": [\n      \"硅基光伏集成通过人工树叶规模化装置突破材料成本限制，验证太阳能-氢能转换效率的工程可行性\",\n      \"梯度氧空位设计通过偶极子场强化电荷分离，协同助催化剂提升载流子迁移效率指向光电流密度优化\"\n    ]\n  }\n}\n\n/* stage3: hypothesis L3 */\n{\n  \"假设\": {\n    \"三级\": [\n      [\n        {\n          \"step\": 1,\n          \"head\": \"硅光伏电池\",\n          \"relation\": \"集成形成独立人工树叶装置\",\n          \"tail\": \"人工树叶\"\n        },\n        {\n          \"step\": 2,\n          \"head\": \"人工树叶\",\n          \"relation\": \"包含梯度分布氧空位的钒酸铋光阳极\",\n          \"tail\": \"梯度氧空位钒酸铋\"\n        },\n        {\n          \"step\": 3,\n          \"head\": \"梯度氧空位钒酸铋\",\n          \"relation\": \"通过偶极子场促进电荷分离提升转换效率\",\n          \"tail\": \"太阳能-氢能转换效率\"\n        }\n      ],\n      [\n        {\n          \"step\": 1,\n          \"head\": \"规模化\",\n          \"relation\": \"影响人工树叶的材料缺陷调控\",\n          \"tail\": \"人工树叶\"\n        },\n        {\n          \"step\": 2,\n          \"head\": \"人工树叶\",\n          \"relation\": \"依赖氧空位分布调控电荷分离性能\",\n          \"tail\": \"氧空位\"\n        },\n        {\n          \"step\": 3,\n          \"head\": \"氧空位\",\n          \"relation\": \"通过缺陷工程优化与结构设计协同提升效率\",\n          \"tail\": \"太阳能-氢能转换效率\"\n        }\n      ]\n    ],\n    \"三级总结\": [\n      \"硅基集成装置通过梯度氧空位设计增强体相电荷分离，实现高效太阳能制氢\",\n      \"规模化人工树叶验证材料缺陷调控与器件结构间的协同效应及效率约束关系\"\n    ]\n  }\n}",
+    "ok": true,
+    "error": ""
+  }
+]

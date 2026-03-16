@@ -1,0 +1,1909 @@
+[
+  {
+    "title": "Nano-island-encapsulated cobalt single-atom catalysts for breaking activity-stability trade-off in Fenton-like reactions",
+    "graph": {
+      "nodes": [
+        {
+          "id": "单原子催化剂",
+          "term": "Single-atom catalysts (SACs)",
+          "normalized": "单原子催化剂",
+          "discipline": "化学",
+          "evidence": "Single-atom catalysts (SACs) have been increasingly acknowledged",
+          "source": "abstract",
+          "confidence": 0.95
+        },
+        {
+          "id": "过一硫酸盐",
+          "term": "peroxymonosulfate (PMS)",
+          "normalized": "过一硫酸盐",
+          "discipline": "化学",
+          "evidence": "SACs face a trade-off between activity and stability in peroxymonosulfate (PMS)-based systems",
+          "source": "abstract",
+          "confidence": 0.98
+        },
+        {
+          "id": "岛-海协同效应",
+          "term": "island-sea synergistic effect",
+          "normalized": "岛-海协同效应",
+          "discipline": "化学",
+          "evidence": "enhance the activity and stability of PMS activation via an 'island-sea' synergistic effect",
+          "source": "abstract",
+          "confidence": 0.92
+        },
+        {
+          "id": "硫酸根自由基",
+          "term": "sulfate radicals (SO₄•⁻)",
+          "normalized": "硫酸根自由基",
+          "discipline": "化学",
+          "evidence": "exclusively generating sulfate radicals (SO₄•⁻)",
+          "source": "abstract",
+          "confidence": 0.97
+        },
+        {
+          "id": "污染物降解",
+          "term": "contaminant degradation",
+          "normalized": "污染物降解",
+          "discipline": "化学",
+          "evidence": "activation for contaminant degradation",
+          "source": "abstract",
+          "confidence": 0.93
+        },
+        {
+          "id": "活性位点浸出",
+          "term": "active sites leaching",
+          "normalized": "活性位点浸出",
+          "discipline": "化学",
+          "evidence": "Characterized by minimal leaching of active sites",
+          "source": "abstract",
+          "confidence": 0.91
+        },
+        {
+          "id": "活性氧物种",
+          "term": "reactive oxygen species (ROS)",
+          "normalized": "活性氧物种",
+          "discipline": "化学",
+          "evidence": "generate reactive oxygen species (ROS)",
+          "source": "introduction",
+          "confidence": 0.96
+        },
+        {
+          "id": "单线态氧",
+          "term": "singlet oxygen (¹O₂)",
+          "normalized": "单线态氧",
+          "discipline": "化学",
+          "evidence": "achieve near-complete PMS conversion to ¹O₂",
+          "source": "introduction",
+          "confidence": 0.89
+        },
+        {
+          "id": "不饱和配位环境",
+          "term": "unsaturated coordination environments",
+          "normalized": "不饱和配位环境",
+          "discipline": "化学",
+          "evidence": "high reactivity stems from unsaturated coordination environments",
+          "source": "introduction",
+          "confidence": 0.88
+        },
+        {
+          "id": "酸化",
+          "term": "acidification",
+          "normalized": "酸化",
+          "discipline": "化学",
+          "evidence": "further acidified the pH",
+          "source": "introduction",
+          "confidence": 0.87
+        },
+        {
+          "id": "金属聚集",
+          "term": "metal aggregation",
+          "normalized": "金属聚集",
+          "discipline": "化学",
+          "evidence": "migration and aggregation of metal atoms",
+          "source": "introduction",
+          "confidence": 0.89
+        },
+        {
+          "id": "类芬顿反应",
+          "term": "Fenton-like reactions",
+          "normalized": "类芬顿反应",
+          "discipline": "化学",
+          "evidence": "trade-off in Fenton-like reactions",
+          "source": "title",
+          "confidence": 0.95
+        },
+        {
+          "id": "纳米岛封装",
+          "term": "nano-island encapsulated",
+          "normalized": "纳米岛封装",
+          "discipline": "化学",
+          "evidence": "nano-island encapsulated single cobalt atom",
+          "source": "abstract",
+          "confidence": 0.92
+        },
+        {
+          "id": "钴单原子催化剂",
+          "term": "CoSA/Zn.O-ZnO",
+          "normalized": "钴单原子催化剂",
+          "discipline": "化学",
+          "evidence": "CoSA/Zn.O-ZnO catalyst",
+          "source": "abstract",
+          "confidence": 0.94
+        },
+        {
+          "id": "微环境",
+          "term": "microenvironment",
+          "normalized": "微环境",
+          "discipline": "化学",
+          "evidence": "neutral microenvironment within the reaction system",
+          "source": "abstract",
+          "confidence": 0.88
+        },
+        {
+          "id": "选择性",
+          "term": "selectivity",
+          "normalized": "选择性",
+          "discipline": "化学",
+          "evidence": "remarkable selectivity in exclusively generating sulfate radicals",
+          "source": "abstract",
+          "confidence": 0.91
+        },
+        {
+          "id": "氧化还原电位",
+          "term": "redox potential",
+          "normalized": "氧化还原电位",
+          "discipline": "化学",
+          "evidence": "standard reduction potential ranging from 2.5 to 3.1 V",
+          "source": "introduction",
+          "confidence": 0.87
+        },
+        {
+          "id": "氧化锌纳米颗粒",
+          "term": "ZnO nanoparticles",
+          "normalized": "氧化锌纳米颗粒",
+          "discipline": "材料科学",
+          "evidence": "small carrier-based ZnO nanoparticles",
+          "source": "abstract",
+          "confidence": 0.96
+        },
+        {
+          "id": "氧化铈氧空位",
+          "term": "CeO₂₋ₓ",
+          "normalized": "氧化铈氧空位",
+          "discipline": "材料科学",
+          "evidence": "cerium oxide nano-islands containing oxygen vacancies (CeO₂₋ₓ)",
+          "source": "introduction",
+          "confidence": 0.93
+        },
+        {
+          "id": "纳米岛限域",
+          "term": "nanoscale island confinement",
+          "normalized": "纳米岛限域",
+          "discipline": "材料科学",
+          "evidence": "nanoscale island confinement approach",
+          "source": "introduction",
+          "confidence": 0.91
+        },
+        {
+          "id": "高比表面积载体",
+          "term": "high-surface-area supports",
+          "normalized": "高比表面积载体",
+          "discipline": "材料科学",
+          "evidence": "high-surface-area supports",
+          "source": "introduction",
+          "confidence": 0.89
+        },
+        {
+          "id": "碳材料",
+          "term": "carbon materials",
+          "normalized": "碳材料",
+          "discipline": "材料科学",
+          "evidence": "carbon materials commonly act as supports",
+          "source": "introduction",
+          "confidence": 0.92
+        },
+        {
+          "id": "难降解污染物",
+          "term": "recalcitrant pollutants",
+          "normalized": "难降解污染物",
+          "discipline": "环境科学技术",
+          "evidence": "complete removal of various recalcitrant pollutants",
+          "source": "abstract",
+          "confidence": 0.95
+        },
+        {
+          "id": "复杂水体基质",
+          "term": "complex water matrices",
+          "normalized": "复杂水体基质",
+          "discipline": "环境科学技术",
+          "evidence": "efficient in complex water matrices",
+          "source": "abstract",
+          "confidence": 0.93
+        },
+        {
+          "id": "持久性有机污染物",
+          "term": "Persistent organic pollutants",
+          "normalized": "持久性有机污染物",
+          "discipline": "环境科学技术",
+          "evidence": "Persistent organic pollutants in wastewater present substantial risks",
+          "source": "introduction",
+          "confidence": 0.97
+        },
+        {
+          "id": "难降解有机污染物",
+          "term": "refractory organic pollutants",
+          "normalized": "难降解有机污染物",
+          "discipline": "环境科学技术",
+          "evidence": "eradicate refractory organic pollutants",
+          "source": "introduction",
+          "confidence": 0.94
+        },
+        {
+          "id": "低毒性去污",
+          "term": "low-toxicity decontamination",
+          "normalized": "低毒性去污",
+          "discipline": "环境科学技术",
+          "evidence": "low-toxicity decontamination",
+          "source": "abstract",
+          "confidence": 0.89
+        },
+        {
+          "id": "Co single atoms",
+          "term": "Co single atoms",
+          "normalized": "Co single atoms",
+          "discipline": "struct_relation_inferred",
+          "evidence": "",
+          "source": "struct_relation_inferred",
+          "confidence": 0.8
+        },
+        {
+          "id": "ZnO substrate",
+          "term": "ZnO substrate",
+          "normalized": "ZnO substrate",
+          "discipline": "struct_relation_inferred",
+          "evidence": "",
+          "source": "struct_relation_inferred",
+          "confidence": 0.8
+        },
+        {
+          "id": "CoSA/Zn.O-ZnO/PMS system",
+          "term": "CoSA/Zn.O-ZnO/PMS system",
+          "normalized": "CoSA/Zn.O-ZnO/PMS system",
+          "discipline": "struct_relation_inferred",
+          "evidence": "",
+          "source": "struct_relation_inferred",
+          "confidence": 0.8
+        },
+        {
+          "id": "activity-stability trade-off",
+          "term": "activity-stability trade-off",
+          "normalized": "activity-stability trade-off",
+          "discipline": "struct_relation_inferred",
+          "evidence": "",
+          "source": "struct_relation_inferred",
+          "confidence": 0.8
+        },
+        {
+          "id": "single-atom catalytic sites",
+          "term": "single-atom catalytic sites",
+          "normalized": "single-atom catalytic sites",
+          "discipline": "struct_relation_inferred",
+          "evidence": "",
+          "source": "struct_relation_inferred",
+          "confidence": 0.8
+        },
+        {
+          "id": "CeO₂₋ₓ nano-islands",
+          "term": "CeO₂₋ₓ nano-islands",
+          "normalized": "CeO₂₋ₓ nano-islands",
+          "discipline": "struct_relation_inferred",
+          "evidence": "",
+          "source": "struct_relation_inferred",
+          "confidence": 0.8
+        },
+        {
+          "id": "platinum single atoms",
+          "term": "platinum single atoms",
+          "normalized": "platinum single atoms",
+          "discipline": "struct_relation_inferred",
+          "evidence": "",
+          "source": "struct_relation_inferred",
+          "confidence": 0.8
+        },
+        {
+          "id": "metal atoms",
+          "term": "metal atoms",
+          "normalized": "metal atoms",
+          "discipline": "struct_relation_inferred",
+          "evidence": "",
+          "source": "struct_relation_inferred",
+          "confidence": 0.8
+        }
+      ],
+      "edges": [
+        {
+          "source": "单原子催化剂",
+          "target": "过一硫酸盐",
+          "relation": "faces a trade-off between activity and stability in",
+          "relation_type": "constrains",
+          "metadata": {
+            "evidence": "SACs face a trade-off between activity and stability in peroxymonosulfate (PMS)-based systems",
+            "source": "struct",
+            "direction": "->"
+          }
+        },
+        {
+          "source": "钴单原子催化剂",
+          "target": "岛-海协同效应",
+          "relation": "enhances activity and stability via",
+          "relation_type": "method_applied_to",
+          "metadata": {
+            "evidence": "enhance the activity and stability of PMS activation via an 'island-sea' synergistic effect",
+            "source": "struct",
+            "direction": "->"
+          }
+        },
+        {
+          "source": "氧化锌纳米颗粒",
+          "target": "Co single atoms",
+          "relation": "confines and stabilizes",
+          "relation_type": "method_applied_to",
+          "metadata": {
+            "evidence": "small carrier-based ZnO nanoparticles [...] are utilized to confine and stabilize Co single atoms",
+            "source": "struct",
+            "direction": "->"
+          }
+        },
+        {
+          "source": "ZnO substrate",
+          "target": "微环境",
+          "relation": "upholds a neutral",
+          "relation_type": "maps_to",
+          "metadata": {
+            "evidence": "The expansive ZnO substrate [...] upholds a neutral microenvironment",
+            "source": "struct",
+            "direction": "->"
+          }
+        },
+        {
+          "source": "CoSA/Zn.O-ZnO/PMS system",
+          "target": "硫酸根自由基",
+          "relation": "exclusively generates",
+          "relation_type": "improves_metric",
+          "metadata": {
+            "evidence": "remarkable selectivity in exclusively generating sulfate radicals",
+            "source": "struct",
+            "direction": "->"
+          }
+        },
+        {
+          "source": "硫酸根自由基",
+          "target": "难降解污染物",
+          "relation": "leads to complete removal of",
+          "relation_type": "corresponds_to",
+          "metadata": {
+            "evidence": "complete removal of various recalcitrant pollutants",
+            "source": "struct",
+            "direction": "->"
+          }
+        },
+        {
+          "source": "类芬顿反应",
+          "target": "activity-stability trade-off",
+          "relation": "faces a typical",
+          "relation_type": "constrains",
+          "metadata": {
+            "evidence": "breaks the activity-stability trade-off typically associated with SACs",
+            "source": "struct",
+            "direction": "->"
+          }
+        },
+        {
+          "source": "碳材料",
+          "target": "single-atom catalytic sites",
+          "relation": "act as supports to anchor",
+          "relation_type": "method_applied_to",
+          "metadata": {
+            "evidence": "carbon materials commonly act as supports to anchor single-atom catalytic sites",
+            "source": "struct",
+            "direction": "->"
+          }
+        },
+        {
+          "source": "CeO₂₋ₓ nano-islands",
+          "target": "platinum single atoms",
+          "relation": "served as scaffold to guide deposition of",
+          "relation_type": "extends",
+          "metadata": {
+            "evidence": "cerium oxide nano-islands [...] served as a scaffold to guide the deposition of platinum single atoms",
+            "source": "struct",
+            "direction": "->"
+          }
+        },
+        {
+          "source": "纳米岛限域",
+          "target": "metal atoms",
+          "relation": "restricts active",
+          "relation_type": "method_applied_to",
+          "metadata": {
+            "evidence": "nanoscale island confinement approach [...] restricting active metal atoms",
+            "source": "struct",
+            "direction": "->"
+          }
+        },
+        {
+          "source": "单原子催化剂",
+          "target": "过一硫酸盐",
+          "relation": "面临活性与稳定性权衡在",
+          "relation_type": "H1",
+          "metadata": {
+            "claim": "化学学科需解决单原子催化剂在过一硫酸盐体系中的活性-稳定性矛盾",
+            "step": 1,
+            "source": "hypothesis",
+            "path_index": 0
+          }
+        },
+        {
+          "source": "过一硫酸盐",
+          "target": "钴单原子催化剂",
+          "relation": "通过纳米岛封装结构调控",
+          "relation_type": "H1",
+          "metadata": {
+            "claim": "材料科学通过纳米岛封装实现钴单原子催化剂的活性位点稳定",
+            "step": 2,
+            "source": "hypothesis",
+            "path_index": 0
+          }
+        },
+        {
+          "source": "钴单原子催化剂",
+          "target": "污染物降解",
+          "relation": "经岛-海协同效应提升",
+          "relation_type": "H1",
+          "metadata": {
+            "claim": "环境科学技术利用岛-海协同效应突破污染物降解效率瓶颈",
+            "step": 3,
+            "source": "hypothesis",
+            "path_index": 0
+          }
+        },
+        {
+          "source": "类芬顿反应",
+          "target": "活性位点浸出",
+          "relation": "受制于典型",
+          "relation_type": "H1",
+          "metadata": {
+            "claim": "化学学科需突破类芬顿反应中活性位点浸出导致的稳定性限制",
+            "step": 1,
+            "source": "hypothesis",
+            "path_index": 1
+          }
+        },
+        {
+          "source": "活性位点浸出",
+          "target": "氧化锌纳米颗粒",
+          "relation": "被纳米岛限域效应抑制",
+          "relation_type": "H1",
+          "metadata": {
+            "claim": "材料科学通过氧化锌纳米颗粒的纳米岛限域效应抑制金属聚集",
+            "step": 2,
+            "source": "hypothesis",
+            "path_index": 1
+          }
+        },
+        {
+          "source": "氧化锌纳米颗粒",
+          "target": "难降解有机污染物",
+          "relation": "维持中性微环境促进",
+          "relation_type": "H1",
+          "metadata": {
+            "claim": "环境科学技术通过微环境调控提升难降解有机污染物去除效率",
+            "step": 3,
+            "source": "hypothesis",
+            "path_index": 1
+          }
+        },
+        {
+          "source": "金属聚集",
+          "target": "选择性",
+          "relation": "阻碍单原子催化剂",
+          "relation_type": "H1",
+          "metadata": {
+            "claim": "化学学科需解决金属聚集导致的选择性下降问题",
+            "step": 1,
+            "source": "hypothesis",
+            "path_index": 2
+          }
+        },
+        {
+          "source": "选择性",
+          "target": "碳材料",
+          "relation": "由氧化铈氧空位调控",
+          "relation_type": "H1",
+          "metadata": {
+            "claim": "材料科学通过氧化铈氧空位与碳材料协同实现高选择性催化",
+            "step": 2,
+            "source": "hypothesis",
+            "path_index": 2
+          }
+        },
+        {
+          "source": "碳材料",
+          "target": "低毒性去污",
+          "relation": "适应复杂水体基质实现",
+          "relation_type": "H1",
+          "metadata": {
+            "claim": "环境科学技术利用碳材料适配复杂水体基质完成低毒性去污",
+            "step": 3,
+            "source": "hypothesis",
+            "path_index": 2
+          }
+        },
+        {
+          "source": "纳米岛封装",
+          "target": "纳米岛限域",
+          "relation": "实现纳米尺度限域",
+          "relation_type": "H2",
+          "metadata": {
+            "claim": "纳米岛封装 实现纳米尺度限域 纳米岛限域",
+            "step": 1,
+            "source": "hypothesis",
+            "path_index": 0
+          }
+        },
+        {
+          "source": "纳米岛限域",
+          "target": "金属聚集",
+          "relation": "限制金属原子迁移",
+          "relation_type": "H2",
+          "metadata": {
+            "claim": "纳米岛限域 限制金属原子迁移 金属聚集",
+            "step": 2,
+            "source": "hypothesis",
+            "path_index": 0
+          }
+        },
+        {
+          "source": "金属聚集",
+          "target": "活性位点浸出",
+          "relation": "减少活性位点浸出",
+          "relation_type": "H2",
+          "metadata": {
+            "claim": "金属聚集 减少活性位点浸出 活性位点浸出",
+            "step": 3,
+            "source": "hypothesis",
+            "path_index": 0
+          }
+        },
+        {
+          "source": "微环境",
+          "target": "氧化还原电位",
+          "relation": "调控氧化还原电位",
+          "relation_type": "H2",
+          "metadata": {
+            "claim": "微环境 调控氧化还原电位 氧化还原电位",
+            "step": 1,
+            "source": "hypothesis",
+            "path_index": 1
+          }
+        },
+        {
+          "source": "氧化还原电位",
+          "target": "选择性",
+          "relation": "决定自由基选择性",
+          "relation_type": "H2",
+          "metadata": {
+            "claim": "氧化还原电位 决定自由基选择性 选择性",
+            "step": 2,
+            "source": "hypothesis",
+            "path_index": 1
+          }
+        },
+        {
+          "source": "选择性",
+          "target": "硫酸根自由基",
+          "relation": "定向生成硫酸根自由基",
+          "relation_type": "H2",
+          "metadata": {
+            "claim": "选择性 定向生成硫酸根自由基 硫酸根自由基",
+            "step": 3,
+            "source": "hypothesis",
+            "path_index": 1
+          }
+        },
+        {
+          "source": "纳米岛限域",
+          "target": "钴单原子催化剂",
+          "relation": "构建抗金属聚集体系",
+          "relation_type": "H3",
+          "metadata": {
+            "claim": "纳米岛限域 构建抗金属聚集体系 钴单原子催化剂",
+            "step": 1,
+            "source": "hypothesis",
+            "path_index": 0
+          }
+        },
+        {
+          "source": "钴单原子催化剂",
+          "target": "过一硫酸盐",
+          "relation": "调控氧化还原电位",
+          "relation_type": "H3",
+          "metadata": {
+            "claim": "钴单原子催化剂 调控氧化还原电位 过一硫酸盐",
+            "step": 2,
+            "source": "hypothesis",
+            "path_index": 0
+          }
+        },
+        {
+          "source": "过一硫酸盐",
+          "target": "持久性有机污染物",
+          "relation": "激活低毒性去污",
+          "relation_type": "H3",
+          "metadata": {
+            "claim": "过一硫酸盐 激活低毒性去污 持久性有机污染物",
+            "step": 3,
+            "source": "hypothesis",
+            "path_index": 0
+          }
+        },
+        {
+          "source": "氧化铈氧空位",
+          "target": "岛-海协同效应",
+          "relation": "协同纳米载体作用",
+          "relation_type": "H3",
+          "metadata": {
+            "claim": "氧化铈氧空位 协同纳米载体作用 岛-海协同效应",
+            "step": 1,
+            "source": "hypothesis",
+            "path_index": 1
+          }
+        }
+      ]
+    },
+    "metrics": {
+      "path_consistency": 0.05263157894736842,
+      "coverage": 0.5714285714285714,
+      "bridging_score": 0.45454545454545453,
+      "rao_stirling_diversity": 0.1533,
+      "embedding_bridging": 1.0,
+      "consistency_precision": 0.0,
+      "consistency_recall": 0.0,
+      "consistency_f1": 0.0,
+      "info_novelty": 0.0,
+      "chain_coherence": 0.5406,
+      "atypical_combination": 0.5571,
+      "kg_density": 0.0235,
+      "kg_inverse_modularity": 0.9911,
+      "kg_largest_cc_ratio": 0.7714,
+      "kg_avg_betweenness": 0.0575,
+      "kg_clustering_coefficient": 0.0,
+      "concept_recall": 0.0,
+      "concept_precision": 0.0,
+      "concept_f1": 0.0,
+      "relation_precision": 0.0,
+      "relation_type_accuracy": 0.0,
+      "evidence_coverage": 0.0,
+      "path_alignment_best": 0.0,
+      "path_alignment_mean": 0.0
+    }
+  },
+  {
+    "title": "High-entropy alloy enables multi-path electron synergism and lattice oxygen activation for enhanced oxygen evolution activity",
+    "graph": {
+      "nodes": [
+        {
+          "id": "电催化氧析出反应",
+          "term": "electrocatalytic oxygen evolution reaction (OER)",
+          "normalized": "电催化氧析出反应",
+          "discipline": "化学",
+          "evidence": "Electrocatalytic oxygen evolution reaction (OER) is key to several energy technologies",
+          "source": "abstract",
+          "confidence": 0.98
+        },
+        {
+          "id": "晶格氧活化机制",
+          "term": "lattice oxygen activation mechanism (LOM)",
+          "normalized": "晶格氧活化机制",
+          "discipline": "化学",
+          "evidence": "Leveraging the lattice oxygen activation mechanism (LOM) is a strategy for boosting its activity",
+          "source": "abstract",
+          "confidence": 0.97
+        },
+        {
+          "id": "高熵合金",
+          "term": "high-entropy alloys (HEAs)",
+          "normalized": "高熵合金",
+          "discipline": "化学",
+          "evidence": "We reveal that high-entropy alloys (HEAs) can efficiently activate the LOM",
+          "source": "abstract",
+          "confidence": 0.99
+        },
+        {
+          "id": "多路径电子转移",
+          "term": "multi-path electron transfer",
+          "normalized": "多路径电子转移",
+          "discipline": "化学",
+          "evidence": "through synergistic multi-path electron transfer",
+          "source": "abstract",
+          "confidence": 0.95
+        },
+        {
+          "id": "过电位",
+          "term": "overpotential",
+          "normalized": "过电位",
+          "discipline": "化学",
+          "evidence": "achieving an overpotential of 220 mV",
+          "source": "abstract",
+          "confidence": 0.96
+        },
+        {
+          "id": "电流密度",
+          "term": "current density",
+          "normalized": "电流密度",
+          "discipline": "化学",
+          "evidence": "at a current density of 10 mA cm⁻²",
+          "source": "abstract",
+          "confidence": 0.96
+        },
+        {
+          "id": "拉曼光谱",
+          "term": "Raman spectroscopy",
+          "normalized": "拉曼光谱",
+          "discipline": "化学",
+          "evidence": "We analyzed the catalyst surface using Raman spectroscopy",
+          "source": "introduction",
+          "confidence": 0.94
+        },
+        {
+          "id": "四甲基氢氧化铵",
+          "term": "TMAOH",
+          "normalized": "四甲基氢氧化铵",
+          "discipline": "化学",
+          "evidence": "in both KOH and TMAOH solutions",
+          "source": "introduction",
+          "confidence": 0.93
+        },
+        {
+          "id": "伸缩振动模式",
+          "term": "A1g stretching mode",
+          "normalized": "伸缩振动模式",
+          "discipline": "化学",
+          "evidence": "peak observed at 506 cm⁻¹ in the Raman spectrum is indicative of the A1g stretching mode",
+          "source": "introduction",
+          "confidence": 0.92
+        },
+        {
+          "id": "含氧中间体",
+          "term": "oxygen-containing intermediates (O₂⁻)",
+          "normalized": "含氧中间体",
+          "discipline": "化学",
+          "evidence": "interaction between TMA⁺ ions and the negatively charged oxygen-containing intermediates (O₂⁻)",
+          "source": "introduction",
+          "confidence": 0.95
+        },
+        {
+          "id": "μ-过氧物种",
+          "term": "μ-OO",
+          "normalized": "μ-过氧物种",
+          "discipline": "化学",
+          "evidence": "evaluation of the key intermediate μ-OO",
+          "source": "introduction",
+          "confidence": 0.91
+        },
+        {
+          "id": "电催化路径",
+          "term": "electrocatalytic LOM pathway",
+          "normalized": "电催化路径",
+          "discipline": "化学",
+          "evidence": "electrocatalytic LOM pathway",
+          "source": "introduction",
+          "confidence": 0.93
+        },
+        {
+          "id": "氢氧化钾",
+          "term": "KOH",
+          "normalized": "氢氧化钾",
+          "discipline": "化学",
+          "evidence": "in both KOH and TMAOH solutions",
+          "source": "introduction",
+          "confidence": 0.94
+        },
+        {
+          "id": "氢氧化镍",
+          "term": "Ni(OH)₂",
+          "normalized": "氢氧化镍",
+          "discipline": "化学",
+          "evidence": "transformation from hydrated nickel hydroxide to a structure resembling nickel oxide",
+          "source": "introduction",
+          "confidence": 0.95
+        },
+        {
+          "id": "铁-氧键",
+          "term": "Fe–O bond",
+          "normalized": "铁-氧键",
+          "discipline": "化学",
+          "evidence": "a pair of peaks at 560 and 680 cm⁻¹, which correspond to the Fe–O bond",
+          "source": "introduction",
+          "confidence": 0.96
+        },
+        {
+          "id": "四甲基铵阳离子",
+          "term": "TMA⁺ cations",
+          "normalized": "四甲基铵阳离子",
+          "discipline": "化学",
+          "evidence": "three distinct peaks at 458, 755, and 952 cm⁻¹ is characteristic of TMA⁺ cations",
+          "source": "introduction",
+          "confidence": 0.93
+        },
+        {
+          "id": "结合位点",
+          "term": "binding sites",
+          "normalized": "结合位点",
+          "discipline": "化学",
+          "evidence": "higher availability of binding sites for TMA⁺",
+          "source": "introduction",
+          "confidence": 0.92
+        },
+        {
+          "id": "镍铁钴铬钨高熵合金",
+          "term": "NiFeCoCrW₀.₂ HEA",
+          "normalized": "镍铁钴铬钨高熵合金",
+          "discipline": "材料科学",
+          "evidence": "design of a NiFeCoCrW₀.₂ HEA",
+          "source": "abstract",
+          "confidence": 0.98
+        },
+        {
+          "id": "高熵结构",
+          "term": "high-entropy structure",
+          "normalized": "高熵结构",
+          "discipline": "材料科学",
+          "evidence": "high-entropy structure promotes the initiation of an efficient electrocatalytic LOM pathway",
+          "source": "introduction",
+          "confidence": 0.97
+        },
+        {
+          "id": "活性镍位点",
+          "term": "active Ni sites",
+          "normalized": "活性镍位点",
+          "discipline": "材料科学",
+          "evidence": "deep oxidation of the active Ni sites",
+          "source": "introduction",
+          "confidence": 0.95
+        },
+        {
+          "id": "弱钴-氧键",
+          "term": "weak Co–O bonds",
+          "normalized": "弱钴-氧键",
+          "discipline": "材料科学",
+          "evidence": "incorporation of weak Co–O bonds",
+          "source": "introduction",
+          "confidence": 0.94
+        },
+        {
+          "id": "电催化剂",
+          "term": "electrocatalysts",
+          "normalized": "电催化剂",
+          "discipline": "材料科学",
+          "evidence": "advancement of high-performance OER electrocatalysts",
+          "source": "abstract",
+          "confidence": 0.96
+        },
+        {
+          "id": "A1g伸缩振动模式",
+          "term": "A1g伸缩振动模式",
+          "normalized": "A1g伸缩振动模式",
+          "discipline": "struct_relation_inferred",
+          "evidence": "",
+          "source": "struct_relation_inferred",
+          "confidence": 0.8
+        }
+      ],
+      "edges": [
+        {
+          "source": "高熵合金",
+          "target": "晶格氧活化机制",
+          "relation": "通过多路径电子转移激活",
+          "relation_type": "method_applied_to",
+          "metadata": {
+            "evidence": "high-entropy alloys (HEAs) can efficiently activate the LOM through synergistic multi-path electron transfer",
+            "source": "struct",
+            "direction": "->"
+          }
+        },
+        {
+          "source": "多路径电子转移",
+          "target": "晶格氧活化机制",
+          "relation": "增强活化效果",
+          "relation_type": "improves_metric",
+          "metadata": {
+            "evidence": "synergistic multi-path electron transfer enhances lattice oxygen activation",
+            "source": "struct",
+            "direction": "->"
+          }
+        },
+        {
+          "source": "高熵结构",
+          "target": "电催化剂",
+          "relation": "促进高效电催化路径",
+          "relation_type": "generalizes",
+          "metadata": {
+            "evidence": "high-entropy structure promotes efficient electrocatalytic LOM pathway",
+            "source": "struct",
+            "direction": "->"
+          }
+        },
+        {
+          "source": "弱钴-氧键",
+          "target": "活性镍位点",
+          "relation": "协同增强氧化",
+          "relation_type": "constrains",
+          "metadata": {
+            "evidence": "integration of weaker Co-O bonds enables effective LOM at Ni-Co dual-site",
+            "source": "struct",
+            "direction": "->"
+          }
+        },
+        {
+          "source": "电催化氧析出反应",
+          "target": "过电位",
+          "relation": "性能指标改善",
+          "relation_type": "improves_metric",
+          "metadata": {
+            "evidence": "achieves overpotential of 220 mV at 10 mA cm⁻²",
+            "source": "struct",
+            "direction": "->"
+          }
+        },
+        {
+          "source": "拉曼光谱",
+          "target": "含氧中间体",
+          "relation": "检测分析",
+          "relation_type": "method_applied_to",
+          "metadata": {
+            "evidence": "Raman spectroscopy identifies oxygen-containing intermediates (O₂⁻)",
+            "source": "struct",
+            "direction": "->"
+          }
+        },
+        {
+          "source": "四甲基铵阳离子",
+          "target": "结合位点",
+          "relation": "占据特征峰",
+          "relation_type": "corresponds_to",
+          "metadata": {
+            "evidence": "three distinct peaks at 458,755,952 cm⁻¹ characteristic of TMA⁺ cations",
+            "source": "struct",
+            "direction": "->"
+          }
+        },
+        {
+          "source": "氢氧化镍",
+          "target": "A1g伸缩振动模式",
+          "relation": "结构特征表征",
+          "relation_type": "maps_to",
+          "metadata": {
+            "evidence": "peak at 506 cm⁻¹ indicative of A1g stretching mode in Ni(OH)₂",
+            "source": "struct",
+            "direction": "->"
+          }
+        },
+        {
+          "source": "高熵合金",
+          "target": "多路径电子转移",
+          "relation": "通过多路径电子转移激活",
+          "relation_type": "H1",
+          "metadata": {
+            "claim": "高熵合金 通过多路径电子转移激活 多路径电子转移",
+            "step": 1,
+            "source": "hypothesis",
+            "path_index": 0
+          }
+        },
+        {
+          "source": "多路径电子转移",
+          "target": "晶格氧活化机制",
+          "relation": "增强活化效果",
+          "relation_type": "H1",
+          "metadata": {
+            "claim": "多路径电子转移 增强活化效果 晶格氧活化机制",
+            "step": 2,
+            "source": "hypothesis",
+            "path_index": 0
+          }
+        },
+        {
+          "source": "晶格氧活化机制",
+          "target": "电催化氧析出反应",
+          "relation": "性能指标改善",
+          "relation_type": "H1",
+          "metadata": {
+            "claim": "晶格氧活化机制 性能指标改善 电催化氧析出反应",
+            "step": 3,
+            "source": "hypothesis",
+            "path_index": 0
+          }
+        },
+        {
+          "source": "高熵结构",
+          "target": "电催化剂",
+          "relation": "促进高效电催化路径",
+          "relation_type": "H1",
+          "metadata": {
+            "claim": "高熵结构 促进高效电催化路径 电催化剂",
+            "step": 1,
+            "source": "hypothesis",
+            "path_index": 1
+          }
+        },
+        {
+          "source": "电催化剂",
+          "target": "活性镍位点",
+          "relation": "协同增强氧化",
+          "relation_type": "H1",
+          "metadata": {
+            "claim": "电催化剂 协同增强氧化 活性镍位点",
+            "step": 2,
+            "source": "hypothesis",
+            "path_index": 1
+          }
+        },
+        {
+          "source": "活性镍位点",
+          "target": "晶格氧活化机制",
+          "relation": "调控晶格氧活化能垒",
+          "relation_type": "H1",
+          "metadata": {
+            "claim": "活性镍位点 调控晶格氧活化能垒 晶格氧活化机制",
+            "step": 3,
+            "source": "hypothesis",
+            "path_index": 1
+          }
+        },
+        {
+          "source": "弱钴-氧键",
+          "target": "高熵结构",
+          "relation": "结构稳定作用",
+          "relation_type": "H1",
+          "metadata": {
+            "claim": "弱钴-氧键 结构稳定作用 高熵结构",
+            "step": 1,
+            "source": "hypothesis",
+            "path_index": 2
+          }
+        },
+        {
+          "source": "高熵结构",
+          "target": "多路径电子转移",
+          "relation": "促进电子传递",
+          "relation_type": "H1",
+          "metadata": {
+            "claim": "高熵结构 促进电子传递 多路径电子转移",
+            "step": 2,
+            "source": "hypothesis",
+            "path_index": 2
+          }
+        },
+        {
+          "source": "多路径电子转移",
+          "target": "电催化氧析出反应",
+          "relation": "突破理论极限",
+          "relation_type": "H1",
+          "metadata": {
+            "claim": "多路径电子转移 突破理论极限 电催化氧析出反应",
+            "step": 3,
+            "source": "hypothesis",
+            "path_index": 2
+          }
+        },
+        {
+          "source": "高熵合金",
+          "target": "多路径电子转移",
+          "relation": "通过多路径电子转移激活",
+          "relation_type": "H2",
+          "metadata": {
+            "claim": "高熵合金 通过多路径电子转移激活 多路径电子转移",
+            "step": 1,
+            "source": "hypothesis",
+            "path_index": 0
+          }
+        },
+        {
+          "source": "多路径电子转移",
+          "target": "晶格氧活化机制",
+          "relation": "增强活化效果",
+          "relation_type": "H2",
+          "metadata": {
+            "claim": "多路径电子转移 增强活化效果 晶格氧活化机制",
+            "step": 2,
+            "source": "hypothesis",
+            "path_index": 0
+          }
+        },
+        {
+          "source": "晶格氧活化机制",
+          "target": "电催化路径",
+          "relation": "促进高效电催化路径",
+          "relation_type": "H2",
+          "metadata": {
+            "claim": "晶格氧活化机制 促进高效电催化路径 电催化路径",
+            "step": 3,
+            "source": "hypothesis",
+            "path_index": 0
+          }
+        },
+        {
+          "source": "拉曼光谱",
+          "target": "含氧中间体",
+          "relation": "检测分析",
+          "relation_type": "H2",
+          "metadata": {
+            "claim": "拉曼光谱 检测分析 含氧中间体",
+            "step": 1,
+            "source": "hypothesis",
+            "path_index": 1
+          }
+        },
+        {
+          "source": "含氧中间体",
+          "target": "四甲基铵阳离子",
+          "relation": "与阳离子相互作用",
+          "relation_type": "H2",
+          "metadata": {
+            "claim": "含氧中间体 与阳离子相互作用 四甲基铵阳离子",
+            "step": 2,
+            "source": "hypothesis",
+            "path_index": 1
+          }
+        },
+        {
+          "source": "四甲基铵阳离子",
+          "target": "结合位点",
+          "relation": "占据特征峰",
+          "relation_type": "H2",
+          "metadata": {
+            "claim": "四甲基铵阳离子 占据特征峰 结合位点",
+            "step": 3,
+            "source": "hypothesis",
+            "path_index": 1
+          }
+        },
+        {
+          "source": "高熵结构",
+          "target": "电催化剂",
+          "relation": "促进高效电催化路径",
+          "relation_type": "H3",
+          "metadata": {
+            "claim": "高熵结构 促进高效电催化路径 电催化剂",
+            "step": 1,
+            "source": "hypothesis",
+            "path_index": 0
+          }
+        },
+        {
+          "source": "电催化剂",
+          "target": "晶格氧活化机制",
+          "relation": "通过多路径电子转移激活",
+          "relation_type": "H3",
+          "metadata": {
+            "claim": "电催化剂 通过多路径电子转移激活 晶格氧活化机制",
+            "step": 2,
+            "source": "hypothesis",
+            "path_index": 0
+          }
+        },
+        {
+          "source": "晶格氧活化机制",
+          "target": "多路径电子转移",
+          "relation": "增强活化效果",
+          "relation_type": "H3",
+          "metadata": {
+            "claim": "晶格氧活化机制 增强活化效果 多路径电子转移",
+            "step": 3,
+            "source": "hypothesis",
+            "path_index": 0
+          }
+        }
+      ]
+    },
+    "metrics": {
+      "path_consistency": 0.3333333333333333,
+      "coverage": 0.5652173913043478,
+      "bridging_score": 0.12,
+      "rao_stirling_diversity": 0.1415,
+      "embedding_bridging": 1.0,
+      "consistency_precision": 0.0,
+      "consistency_recall": 0.0,
+      "consistency_f1": 0.0,
+      "info_novelty": 0.0,
+      "chain_coherence": 0.5815,
+      "atypical_combination": 0.6189,
+      "kg_density": 0.0375,
+      "kg_inverse_modularity": 0.7608,
+      "kg_largest_cc_ratio": 0.4348,
+      "kg_avg_betweenness": 0.0087,
+      "kg_clustering_coefficient": 0.1101,
+      "concept_recall": 0.0,
+      "concept_precision": 0.0,
+      "concept_f1": 0.0,
+      "relation_precision": 0.0,
+      "relation_type_accuracy": 0.0,
+      "evidence_coverage": 0.0,
+      "path_alignment_best": 0.0,
+      "path_alignment_mean": 0.0
+    }
+  },
+  {
+    "title": "MXene-Assisted NiFe sulfides for high-performance anion exchange membrane seawater electrolysis",
+    "graph": {
+      "nodes": [
+        {
+          "id": "Ti3C2",
+          "term": "MXene",
+          "normalized": "Ti3C2",
+          "discipline": "化学",
+          "evidence": "MXene (Ti3C2)",
+          "source": "abstract",
+          "confidence": 0.95
+        },
+        {
+          "id": "(Ni,Fe)S2",
+          "term": "NiFe sulfides",
+          "normalized": "(Ni,Fe)S2",
+          "discipline": "化学",
+          "evidence": "NiFe sulfides ((Ni,Fe)S2)",
+          "source": "abstract",
+          "confidence": 0.95
+        },
+        {
+          "id": "OER",
+          "term": "oxygen evolution reaction",
+          "normalized": "OER",
+          "discipline": "化学",
+          "evidence": "oxygen evolution reaction electrocatalysts",
+          "source": "abstract",
+          "confidence": 0.98
+        },
+        {
+          "id": "electron distribution",
+          "term": "electron distribution",
+          "normalized": "electron distribution",
+          "discipline": "化学",
+          "evidence": "electron distribution to trigger lattice oxygen mechanism",
+          "source": "abstract",
+          "confidence": 0.92
+        },
+        {
+          "id": "lattice oxygen mechanism",
+          "term": "lattice oxygen mechanism",
+          "normalized": "lattice oxygen mechanism",
+          "discipline": "化学",
+          "evidence": "trigger lattice oxygen mechanism",
+          "source": "abstract",
+          "confidence": 0.93
+        },
+        {
+          "id": "Ti-O-Fe bonding",
+          "term": "Ti-O-Fe bonding",
+          "normalized": "Ti-O-Fe bonding",
+          "discipline": "化学",
+          "evidence": "Ti-O-Fe bonding",
+          "source": "abstract",
+          "confidence": 0.94
+        },
+        {
+          "id": "sulfates",
+          "term": "sulfates",
+          "normalized": "sulfates",
+          "discipline": "化学",
+          "evidence": "good retention of sulfates",
+          "source": "abstract",
+          "confidence": 0.91
+        },
+        {
+          "id": "Cl- resistance",
+          "term": "Cl- resistance",
+          "normalized": "Cl- resistance",
+          "discipline": "化学",
+          "evidence": "effective Cl- resistance",
+          "source": "abstract",
+          "confidence": 0.95
+        },
+        {
+          "id": "OER activity",
+          "term": "OER activity",
+          "normalized": "OER activity",
+          "discipline": "化学",
+          "evidence": "high OER activity (1.598 V@2 A cm-2)",
+          "source": "abstract",
+          "confidence": 0.96
+        },
+        {
+          "id": "long-term durability",
+          "term": "long-term durability",
+          "normalized": "long-term durability",
+          "discipline": "化学",
+          "evidence": "long-term durability (1000 h)",
+          "source": "abstract",
+          "confidence": 0.94
+        },
+        {
+          "id": "industrial current density",
+          "term": "industrial current density",
+          "normalized": "industrial current density",
+          "discipline": "化学",
+          "evidence": "industrial current density (0.5 A cm-2)",
+          "source": "abstract",
+          "confidence": 0.93
+        },
+        {
+          "id": "Raney Ni cathode",
+          "term": "Raney Ni cathode",
+          "normalized": "Raney Ni cathode",
+          "discipline": "化学",
+          "evidence": "Raney Ni cathode",
+          "source": "abstract",
+          "confidence": 0.95
+        },
+        {
+          "id": "electrolysis efficiency",
+          "term": "electrolysis efficiency",
+          "normalized": "electrolysis efficiency",
+          "discipline": "化学",
+          "evidence": "electrolysis efficiency of 70%",
+          "source": "abstract",
+          "confidence": 0.92
+        },
+        {
+          "id": "energy consumption",
+          "term": "energy consumption",
+          "normalized": "energy consumption",
+          "discipline": "化学",
+          "evidence": "energy consumption of 48.4 kWh kg-1 H2",
+          "source": "abstract",
+          "confidence": 0.93
+        },
+        {
+          "id": "Δ",
+          "term": "ΔECl",
+          "normalized": "Δ",
+          "discipline": "化学",
+          "evidence": "lower ΔECl",
+          "source": "introduction",
+          "confidence": 0.91
+        },
+        {
+          "id": "CER",
+          "term": "chlorine evolution reaction",
+          "normalized": "CER",
+          "discipline": "化学",
+          "evidence": "chlorine evolution reaction",
+          "source": "introduction",
+          "confidence": 0.94
+        },
+        {
+          "id": "electrochemical impedance spectroscopy",
+          "term": "electrochemical impedance spectroscopy",
+          "normalized": "electrochemical impedance spectroscopy",
+          "discipline": "化学",
+          "evidence": "electrochemical impedance spectroscopy",
+          "source": "introduction",
+          "confidence": 0.92
+        },
+        {
+          "id": "AEM",
+          "term": "anion exchange membrane",
+          "normalized": "AEM",
+          "discipline": "化学",
+          "evidence": "anion exchange membrane seawater electrolysis",
+          "source": "abstract",
+          "confidence": 0.96
+        },
+        {
+          "id": "seawater electrolysis",
+          "term": "seawater electrolysis",
+          "normalized": "seawater electrolysis",
+          "discipline": "化学",
+          "evidence": "seawater electrolysis",
+          "source": "abstract",
+          "confidence": 0.95
+        },
+        {
+          "id": "electrocatalyst",
+          "term": "electrocatalyst",
+          "normalized": "electrocatalyst",
+          "discipline": "化学",
+          "evidence": "OER electrocatalyst",
+          "source": "abstract",
+          "confidence": 0.94
+        },
+        {
+          "id": "intraoperative recording",
+          "term": "intraoperative recording",
+          "normalized": "intraoperative recording",
+          "discipline": "化学",
+          "evidence": "intraoperative recording",
+          "source": "introduction",
+          "confidence": 0.85
+        },
+        {
+          "id": "catalytic selectivity",
+          "term": "catalytic selectivity",
+          "normalized": "catalytic selectivity",
+          "discipline": "化学",
+          "evidence": "catalytic selectivity",
+          "source": "introduction",
+          "confidence": 0.88
+        },
+        {
+          "id": "GDL",
+          "term": "gas diffusion layer",
+          "normalized": "GDL",
+          "discipline": "材料科学",
+          "evidence": "gas diffusion layer",
+          "source": "introduction",
+          "confidence": 0.93
+        },
+        {
+          "id": "binder/catalyst composition",
+          "term": "binder/catalyst composition",
+          "normalized": "binder/catalyst composition",
+          "discipline": "材料科学",
+          "evidence": "composition of binder/catalyst",
+          "source": "introduction",
+          "confidence": 0.91
+        },
+        {
+          "id": "anion exchange membranes",
+          "term": "anion exchange membranes",
+          "normalized": "anion exchange membranes",
+          "discipline": "材料科学",
+          "evidence": "anion exchange membranes",
+          "source": "introduction",
+          "confidence": 0.92
+        },
+        {
+          "id": "electrocatalytic efficiencies",
+          "term": "electrocatalytic efficiencies",
+          "normalized": "electrocatalytic efficiencies",
+          "discipline": "材料科学",
+          "evidence": "electrocatalytic efficiencies",
+          "source": "introduction",
+          "confidence": 0.9
+        },
+        {
+          "id": "multilevel optimization",
+          "term": "multilevel optimization",
+          "normalized": "multilevel optimization",
+          "discipline": "材料科学",
+          "evidence": "multilevel optimization of anodic",
+          "source": "introduction",
+          "confidence": 0.89
+        },
+        {
+          "id": "Fe species dissolution",
+          "term": "Fe species dissolution",
+          "normalized": "Fe species dissolution",
+          "discipline": "struct_relation_inferred",
+          "evidence": "",
+          "source": "struct_relation_inferred",
+          "confidence": 0.8
+        },
+        {
+          "id": "Cl- absorption",
+          "term": "Cl- absorption",
+          "normalized": "Cl- absorption",
+          "discipline": "struct_relation_inferred",
+          "evidence": "",
+          "source": "struct_relation_inferred",
+          "confidence": 0.8
+        },
+        {
+          "id": "ηohm",
+          "term": "ηohm",
+          "normalized": "ηohm",
+          "discipline": "struct_relation_inferred",
+          "evidence": "",
+          "source": "struct_relation_inferred",
+          "confidence": 0.8
+        },
+        {
+          "id": "anodic catalyst",
+          "term": "anodic catalyst",
+          "normalized": "anodic catalyst",
+          "discipline": "struct_relation_inferred",
+          "evidence": "",
+          "source": "struct_relation_inferred",
+          "confidence": 0.8
+        },
+        {
+          "id": "electrolyzer performance",
+          "term": "electrolyzer performance",
+          "normalized": "electrolyzer performance",
+          "discipline": "struct_relation_inferred",
+          "evidence": "",
+          "source": "struct_relation_inferred",
+          "confidence": 0.8
+        }
+      ],
+      "edges": [
+        {
+          "source": "Ti3C2",
+          "target": "(Ni,Fe)S2",
+          "relation": "combines with",
+          "relation_type": "method_applied_to",
+          "metadata": {
+            "evidence": "integrating MXene (Ti3C2) with NiFe sulfides ((Ni,Fe)S2@Ti3C2)",
+            "source": "struct",
+            "direction": "->"
+          }
+        },
+        {
+          "source": "(Ni,Fe)S2",
+          "target": "Ti3C2",
+          "relation": "interacts with",
+          "relation_type": "method_applied_to",
+          "metadata": {
+            "evidence": "strong interaction between (Ni,Fe)S2 and Ti3C2",
+            "source": "struct",
+            "direction": "->"
+          }
+        },
+        {
+          "source": "electron distribution",
+          "target": "lattice oxygen mechanism",
+          "relation": "triggers",
+          "relation_type": "improves_metric",
+          "metadata": {
+            "evidence": "induces electron distribution to trigger lattice oxygen mechanism",
+            "source": "struct",
+            "direction": "->"
+          }
+        },
+        {
+          "source": "Ti-O-Fe bonding",
+          "target": "Fe species dissolution",
+          "relation": "inhibits",
+          "relation_type": "constrains",
+          "metadata": {
+            "evidence": "prohibits the dissolution of Fe species via Ti-O-Fe bonding",
+            "source": "struct",
+            "direction": "->"
+          }
+        },
+        {
+          "source": "Ti3C2",
+          "target": "Cl- resistance",
+          "relation": "enhances",
+          "relation_type": "improves_metric",
+          "metadata": {
+            "evidence": "abundant groups of Ti3C2 provide effective Cl- resistance",
+            "source": "struct",
+            "direction": "->"
+          }
+        },
+        {
+          "source": "lattice oxygen mechanism",
+          "target": "OER activity",
+          "relation": "improves",
+          "relation_type": "improves_metric",
+          "metadata": {
+            "evidence": "trigger lattice oxygen mechanism improving intrinsic activity",
+            "source": "struct",
+            "direction": "->"
+          }
+        },
+        {
+          "source": "Δ",
+          "target": "Cl- absorption",
+          "relation": "reduces",
+          "relation_type": "constrains",
+          "metadata": {
+            "evidence": "lower ΔECl indicates weaker Cl- interaction",
+            "source": "struct",
+            "direction": "->"
+          }
+        },
+        {
+          "source": "electrochemical impedance spectroscopy",
+          "target": "ηohm",
+          "relation": "analyzes",
+          "relation_type": "method_applied_to",
+          "metadata": {
+            "evidence": "analyzed via electrochemical impedance spectroscopy",
+            "source": "struct",
+            "direction": "->"
+          }
+        },
+        {
+          "source": "multilevel optimization",
+          "target": "anodic catalyst",
+          "relation": "applies to",
+          "relation_type": "method_applied_to",
+          "metadata": {
+            "evidence": "multilevel optimization of anodic catalyst",
+            "source": "struct",
+            "direction": "->"
+          }
+        },
+        {
+          "source": "GDL",
+          "target": "electrolyzer performance",
+          "relation": "influences",
+          "relation_type": "constrains",
+          "metadata": {
+            "evidence": "influence of pore size of gas diffusion layer on electrolyzer performance",
+            "source": "struct",
+            "direction": "->"
+          }
+        },
+        {
+          "source": "Ti3C2",
+          "target": "(Ni,Fe)S2",
+          "relation": "影响",
+          "relation_type": "H1",
+          "metadata": {
+            "claim": "化学学科中电子分布调控可触发晶格氧机制，但需材料科学的多级催化剂优化实现稳定活性",
+            "step": 1,
+            "source": "hypothesis",
+            "path_index": 0
+          }
+        },
+        {
+          "source": "(Ni,Fe)S2",
+          "target": "OER",
+          "relation": "导致",
+          "relation_type": "H1",
+          "metadata": {
+            "claim": "晶格氧机制提升析氧反应活性需协同材料科学的气体扩散层结构设计",
+            "step": 2,
+            "source": "hypothesis",
+            "path_index": 0
+          }
+        },
+        {
+          "source": "OER",
+          "target": "electron distribution",
+          "relation": "促进",
+          "relation_type": "H1",
+          "metadata": {
+            "claim": "高活性下维持抗氯离子腐蚀能力需材料科学的多尺度界面调控",
+            "step": 3,
+            "source": "hypothesis",
+            "path_index": 0
+          }
+        },
+        {
+          "source": "Ti3C2",
+          "target": "(Ni,Fe)S2",
+          "relation": "影响",
+          "relation_type": "H1",
+          "metadata": {
+            "claim": "化学学科中与硫化物复合可增强电子传递，但需材料科学优化异质界面稳定性",
+            "step": 1,
+            "source": "hypothesis",
+            "path_index": 1
+          }
+        },
+        {
+          "source": "(Ni,Fe)S2",
+          "target": "OER",
+          "relation": "导致",
+          "relation_type": "H1",
+          "metadata": {
+            "claim": "硫化物-电子分布协同作用需材料科学的原位表征技术验证动态过程",
+            "step": 2,
+            "source": "hypothesis",
+            "path_index": 1
+          }
+        },
+        {
+          "source": "OER",
+          "target": "electron distribution",
+          "relation": "促进",
+          "relation_type": "H1",
+          "metadata": {
+            "claim": "电子分布触发晶格氧机制的瓶颈需材料科学的理论模拟辅助机制解析",
+            "step": 3,
+            "source": "hypothesis",
+            "path_index": 1
+          }
+        },
+        {
+          "source": "Ti3C2",
+          "target": "(Ni,Fe)S2",
+          "relation": "影响",
+          "relation_type": "H1",
+          "metadata": {
+            "claim": "化学学科中金属氧键抑制溶解的稳定性机制需材料科学的多孔结构设计强化",
+            "step": 1,
+            "source": "hypothesis",
+            "path_index": 2
+          }
+        },
+        {
+          "source": "(Ni,Fe)S2",
+          "target": "OER",
+          "relation": "导致",
+          "relation_type": "H1",
+          "metadata": {
+            "claim": "长期稳定性提升需材料科学的气体扩散层孔径调控协同界面保护",
+            "step": 2,
+            "source": "hypothesis",
+            "path_index": 2
+          }
+        },
+        {
+          "source": "OER",
+          "target": "electron distribution",
+          "relation": "促进",
+          "relation_type": "H1",
+          "metadata": {
+            "claim": "工业电流密度下的稳定性瓶颈需材料科学的梯度电极结构突破",
+            "step": 3,
+            "source": "hypothesis",
+            "path_index": 2
+          }
+        },
+        {
+          "source": "Ti3C2",
+          "target": "(Ni,Fe)S2",
+          "relation": "影响",
+          "relation_type": "H2",
+          "metadata": {
+            "claim": "Ti3C2影响(Ni,Fe)S2，构成该路径的起始环节。",
+            "step": 1,
+            "source": "hypothesis",
+            "path_index": 0
+          }
+        },
+        {
+          "source": "(Ni,Fe)S2",
+          "target": "OER",
+          "relation": "导致",
+          "relation_type": "H2",
+          "metadata": {
+            "claim": "(Ni,Fe)S2导致OER，形成可操作的中介环节。",
+            "step": 2,
+            "source": "hypothesis",
+            "path_index": 0
+          }
+        },
+        {
+          "source": "OER",
+          "target": "electron distribution",
+          "relation": "促进",
+          "relation_type": "H2",
+          "metadata": {
+            "claim": "如果OER促进electron distribution，则该路径的假设得到可检验的支持。",
+            "step": 3,
+            "source": "hypothesis",
+            "path_index": 0
+          }
+        },
+        {
+          "source": "Ti3C2",
+          "target": "(Ni,Fe)S2",
+          "relation": "影响",
+          "relation_type": "H3",
+          "metadata": {
+            "claim": "Ti3C2影响(Ni,Fe)S2，构成该路径的起始环节。",
+            "step": 1,
+            "source": "hypothesis",
+            "path_index": 0
+          }
+        },
+        {
+          "source": "(Ni,Fe)S2",
+          "target": "OER",
+          "relation": "导致",
+          "relation_type": "H3",
+          "metadata": {
+            "claim": "(Ni,Fe)S2导致OER，形成可操作的中介环节。",
+            "step": 2,
+            "source": "hypothesis",
+            "path_index": 0
+          }
+        },
+        {
+          "source": "OER",
+          "target": "electron distribution",
+          "relation": "促进",
+          "relation_type": "H3",
+          "metadata": {
+            "claim": "如果OER促进electron distribution，则该路径的假设得到可检验的支持。",
+            "step": 3,
+            "source": "hypothesis",
+            "path_index": 0
+          }
+        },
+        {
+          "source": "Ti3C2",
+          "target": "(Ni,Fe)S2",
+          "relation": "影响",
+          "relation_type": "H3",
+          "metadata": {
+            "claim": "Ti3C2影响(Ni,Fe)S2，构成该路径的起始环节。",
+            "step": 1,
+            "source": "hypothesis",
+            "path_index": 1
+          }
+        },
+        {
+          "source": "(Ni,Fe)S2",
+          "target": "OER",
+          "relation": "导致",
+          "relation_type": "H3",
+          "metadata": {
+            "claim": "(Ni,Fe)S2导致OER，形成可操作的中介环节。",
+            "step": 2,
+            "source": "hypothesis",
+            "path_index": 1
+          }
+        },
+        {
+          "source": "OER",
+          "target": "electron distribution",
+          "relation": "促进",
+          "relation_type": "H3",
+          "metadata": {
+            "claim": "如果OER促进electron distribution，则该路径的假设得到可检验的支持。",
+            "step": 3,
+            "source": "hypothesis",
+            "path_index": 1
+          }
+        },
+        {
+          "source": "Ti3C2",
+          "target": "(Ni,Fe)S2",
+          "relation": "影响",
+          "relation_type": "H3",
+          "metadata": {
+            "claim": "Ti3C2影响(Ni,Fe)S2，构成该路径的起始环节。",
+            "step": 1,
+            "source": "hypothesis",
+            "path_index": 2
+          }
+        },
+        {
+          "source": "(Ni,Fe)S2",
+          "target": "OER",
+          "relation": "导致",
+          "relation_type": "H3",
+          "metadata": {
+            "claim": "(Ni,Fe)S2导致OER，形成可操作的中介环节。",
+            "step": 2,
+            "source": "hypothesis",
+            "path_index": 2
+          }
+        }
+      ]
+    },
+    "metrics": {
+      "path_consistency": 0.35,
+      "coverage": 0.125,
+      "bridging_score": 0.0,
+      "rao_stirling_diversity": 0.0,
+      "embedding_bridging": 0.8975,
+      "consistency_precision": 0.0,
+      "consistency_recall": 0.0,
+      "consistency_f1": 0.0,
+      "info_novelty": 0.0,
+      "chain_coherence": 0.6018,
+      "atypical_combination": 0.331,
+      "kg_density": 0.0121,
+      "kg_inverse_modularity": 0.9793,
+      "kg_largest_cc_ratio": 0.2188,
+      "kg_avg_betweenness": 0.0024,
+      "kg_clustering_coefficient": 0.0,
+      "concept_recall": 0.0,
+      "concept_precision": 0.0,
+      "concept_f1": 0.0,
+      "relation_precision": 0.0,
+      "relation_type_accuracy": 0.0,
+      "evidence_coverage": 0.0,
+      "path_alignment_best": 0.0,
+      "path_alignment_mean": 0.0
+    }
+  }
+]

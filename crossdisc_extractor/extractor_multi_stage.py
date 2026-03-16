@@ -84,6 +84,8 @@ def _build_existing_concepts_str(concepts_obj: Dict[str, Any]) -> str:
         return "(none)"
     lines = []
     concepts = concepts_obj.get("概念", concepts_obj)
+    if not isinstance(concepts, dict):
+        return "（无）"
     for c in concepts.get("主学科", []):
         term = c.get("term", "")
         norm = c.get("normalized", "")
@@ -198,6 +200,9 @@ def _ground_and_filter_concepts(
         has_terminology = False
 
     concepts = concepts_obj.get("概念", concepts_obj)
+    if not isinstance(concepts, dict):
+        logger.warning("Concept grounding skipped: concepts_obj['概念'] is not a dict")
+        return
 
     def _should_filter(term: str, normalized: str) -> bool:
         """Check if a concept should be filtered out."""
@@ -290,6 +295,9 @@ def _align_hypothesis_entities(
     # Build concept set from all extracted concepts
     concept_set: Dict[str, str] = {}  # normalized_lower -> original_form
     concepts = concepts_obj.get("概念", concepts_obj)
+    if not isinstance(concepts, dict):
+        logger.warning("Entity alignment skipped: concepts is not a dict")
+        return hyp_args
     for c in concepts.get("主学科", []):
         for field in ("term", "normalized"):
             val = (c.get(field) or "").strip()
@@ -908,36 +916,27 @@ def run_pipeline_for_item(
     )
     qa = parse_query_output(raw_query)
 
-    # ── Stage 3: Hypothesis (Split into L1, L2, L3) ──────────────────
-    # L1
+    # ── Stage 3: Hypothesis (Split into L1, L2, L3) — 并行调用 ──────
     messages_hyp_l1 = build_hypothesis_messages_l1(struct, qa.查询)
-    raw_hyp_l1 = chat_completion_with_retry(
-        messages_hyp_l1,
-        temperature=temperature_hyp,
-        seed=(None if seed is None else seed + 2),
-        max_tokens=max_tokens_hyp,
-    )
-    hyp_l1_dict = parse_partial_hypothesis(raw_hyp_l1, level=1, struct=struct)
-
-    # L2
     messages_hyp_l2 = build_hypothesis_messages_l2(struct, qa.查询)
-    raw_hyp_l2 = chat_completion_with_retry(
-        messages_hyp_l2,
-        temperature=temperature_hyp,
-        seed=(None if seed is None else seed + 3),
-        max_tokens=max_tokens_hyp,
-    )
-    hyp_l2_dict = parse_partial_hypothesis(raw_hyp_l2, level=2, struct=struct)
-
-    # L3
     messages_hyp_l3 = build_hypothesis_messages_l3(struct, qa.查询)
-    raw_hyp_l3 = chat_completion_with_retry(
-        messages_hyp_l3,
-        temperature=temperature_hyp,
-        seed=(None if seed is None else seed + 4),
-        max_tokens=max_tokens_hyp,
-    )
-    hyp_l3_dict = parse_partial_hypothesis(raw_hyp_l3, level=3, struct=struct)
+
+    def _call_hyp(messages, seed_offset, level):
+        raw = chat_completion_with_retry(
+            messages,
+            temperature=temperature_hyp,
+            seed=(None if seed is None else seed + seed_offset),
+            max_tokens=max_tokens_hyp,
+        )
+        return raw, parse_partial_hypothesis(raw, level=level, struct=struct)
+
+    with ThreadPoolExecutor(max_workers=3) as hyp_executor:
+        f1 = hyp_executor.submit(_call_hyp, messages_hyp_l1, 2, 1)
+        f2 = hyp_executor.submit(_call_hyp, messages_hyp_l2, 3, 2)
+        f3 = hyp_executor.submit(_call_hyp, messages_hyp_l3, 4, 3)
+        raw_hyp_l1, hyp_l1_dict = f1.result()
+        raw_hyp_l2, hyp_l2_dict = f2.result()
+        raw_hyp_l3, hyp_l3_dict = f3.result()
 
     # ── Stage 3b: Entity alignment (Direction 3) ─────────────────────
     hyp_args = {}

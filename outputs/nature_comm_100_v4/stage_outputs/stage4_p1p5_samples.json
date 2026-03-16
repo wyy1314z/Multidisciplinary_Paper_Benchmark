@@ -1,0 +1,102 @@
+{
+  "P1": [
+    {
+      "title": "The tetracycline resistome is shaped by selection for specific resistance mechanisms by each antibiotic generation",
+      "primary": "生物学",
+      "hypothesis_text": "**假设：**  \n四环素抗性基因组的形成受“基因组应力响应元件”（Genomic Stress Response Elements, GSREs）驱动，这些元件通过感知抗生素诱导的细胞应激信号（如核糖体应激或氧化应激），激活局部染色质重塑并促进抗性基因（如* tet *(A)、* tet *(M)）与移动遗传元件（如ISCR2、Tn916）的协同转座和共选择。演化动力学上，GSREs在低浓度四环素下优先招募表观调控因子（如DNA腺苷酸化酶），稳定抗性基因簇的转录活性；而在高浓度压力下，GSREs触发基因组三维构象重排，通过R-loop介导的同源重组加速抗性基因的扩增与水平转移。该假说可通过CRISPRi干扰GSREs、单细胞染色质构象捕获（Hi-C）结合转录组测序进行验证，并利用微流控芯片模拟梯度抗生素压力下的基因组演化过程加以评估。",
+      "elapsed": 24.6
+    },
+    {
+      "title": "Quasi Fe MIL-53 nanozyme inducing ferroptosis and immunogenic cell death for cancer immunotherapy",
+      "primary": "化学",
+      "hypothesis_text": "**Hypothesis:**  \n准金属有机框架（MOF）纳米酶通过协同模拟脂氧合酶与过氧化物酶活性，在肿瘤微环境中特异性催化多不饱和脂肪酸（PUFAs）的脂质过氧化反应，生成高毒性的脂质氢过氧化物（L-OOH），同时通过其金属节点（如Fe³⁺/Co²⁺）与谷胱甘肽过氧化物酶4（GPX4）的相互作用抑制铁死亡防御系统；由此积累的脂质过氧化物不仅直接触发癌细胞铁死亡，还通过激活内质网应激（ERS）和钙网蛋白（CRT）暴露，诱导免疫原性细胞死亡（ICD），促进树突状细胞（DC）吞噬与抗原呈递，最终通过CD8⁺ T细胞依赖的免疫记忆效应协同增强癌症治疗效果。  \n\n**Testability:**  \n可通过构建GPX4过表达或ACSL4敲除的耐药癌细胞模型，结合铁死亡抑制剂（如Ferrostatin-1）和免疫检查点阻断剂，在小鼠异种移植瘤模型中验证MOF纳米酶对铁死亡-ICD协同通路的激活能力及抗肿瘤免疫应答强度。",
+      "elapsed": 20.3
+    },
+    {
+      "title": "A standalone bismuth vanadate-silicon artificial leaf achieving 8.4% efficiency for hydrogen production",
+      "primary": "化学",
+      "hypothesis_text": "**假设：** 通过调控光阳极材料表面的局部极性分布（而非整体极性），构建表面偶极子诱导的梯度电场，可显著增强光生载荷子的界面分离效率。具体而言，在宽禁带半导体（如TiO₂或BiVO₄）表面引入非对称化学修饰（如定向自组装单分子层或局域异质结），形成纳米尺度极性差异区域，该梯度电场将驱动空穴定向迁移至表面活性位点，同时抑制电子回迁，从而突破传统掺杂或表面钝化策略的效率瓶颈。该假设可通过制备具有可控极性梯度的模型材料，并结合开尔文探针力显微镜（KPFM）与瞬态吸收光谱验证局部电场对载流子动力学的影响，最终在模拟太阳光下测试其光电化学制氢性能。",
+      "elapsed": 26.6
+    }
+  ],
+  "P2": [
+    {
+      "title": "The tetracycline resistome is shaped by selection for specific resistance mechanisms by each antibiotic generation",
+      "primary": "生物学",
+      "hypothesis_text": "L1 Hypothesis: 四环素抗性基因组的形成是抗生素代次特异性选择压力驱动的进化博弈结果，其演化动力学由耐药机制与药物作用靶点的空间适配性、跨机制适应性代价差异以及水平基因转移效率三者动态平衡决定。不同耐药机制通过占据特定药物浓度梯度下的进化优势生态位，形成时间维度上的继代选择序列和空间维度上的基因多态性分布。\n\nL2 Hypotheses:\n- Q1: 新一代四环素类抗生素的分子结构修饰会改变药物靶点亲和力与细胞渗透性，导致不同耐药机制的生化需求产生不对称适应性景观。例如，具有核糖体保护机制的菌株在新型四环素诱导的翻译阻断压力下，其适应性优势指数与药物对70S核糖体的结合常数变化呈正相关，而外排泵机制的适应性则与药物疏水性参数呈非线性相关。\n  \n- Q2: 临床用药史通过构建时空耦合的选择压力场驱动耐药基因的传播轨迹，特定区域三代头孢菌素的使用峰值与随后发现的新型核糖体保护基因tet(X)变异体之间存在2.5-3.8年的时滞效应，这种时滞由抗生素选择压力梯度在肠道菌群-环境菌库-病原菌之间的扩散速率和基因重组效率共同决定。",
+      "elapsed": 22.8
+    },
+    {
+      "title": "Quasi Fe MIL-53 nanozyme inducing ferroptosis and immunogenic cell death for cancer immunotherapy",
+      "primary": "化学",
+      "hypothesis_text": "L1 Hypothesis:  \n准金属有机框架纳米酶通过可控脱配体策略产生的局部晶体缺陷与不饱和金属位点，能够同时增强过氧化物酶活性与铁死亡诱导能力，其多孔结构可选择性富集肿瘤微环境中的过氧化氢并限制抗氧化物质扩散，从而在生化层面（活性氧级联反应）和免疫层面（免疫原性死亡信号释放）形成双重协同效应，最终通过铁死亡与免疫应答的交互作用提升癌症治疗效果。\n\nL2 Hypotheses:  \n- Q1:  \n可控脱配体过程通过调节MIL-53(Fe)框架中Fe³⁺-O簇的电子密度分布，使不饱和金属位点与残留配体形成梯度氧化还原活性界面，从而优化过氧化物酶底物（H₂O₂）的吸附取向并降低催化能垒，同时暴露的金属位点可特异性结合谷胱甘肽促进其氧化降解，实现催化活性与氧化应激调控的协同增强。  \n\n- Q2:  \nQ-MIL-53(Fe)的介孔-微孔分级孔道结构可通过尺寸筛分效应选择性富集H₂O₂（直径约0.7 nm）并阻碍大分子抗氧化剂（如谷胱甘肽过氧化物酶，直径>4 nm）的扩散，导致肿瘤细胞内活性氧（特别是羟基自由基）的持续累积，触发脂质过氧化级联反应并激活钙网蛋白暴露等免疫原性死亡信号，最终增强抗原呈递与T细胞浸润效率。",
+      "elapsed": 19.2
+    },
+    {
+      "title": "A standalone bismuth vanadate-silicon artificial leaf achieving 8.4% efficiency for hydrogen production",
+      "primary": "化学",
+      "hypothesis_text": "L1 Hypothesis: 通过构建梯度氧空位调控的BiVO4光阳极与海胆状FeOOH助催化剂的协同界面，并结合硅光伏电池形成人工叶系统，可实现多尺度电荷分离与传输机制的优化，从而通过材料缺陷工程与器件结构创新的双重协同效应突破太阳能制氢效率瓶颈。\n\nL2 Hypotheses:\n- Q1: 硅光伏电池与人工叶的集成通过构建三维梯度能带结构，在界面处形成定向载流子传输通道，同时利用硅基材料的高载流子迁移率特性降低电荷复合概率，从而通过光电耦合增强效应实现太阳能到氢能的高效转换。\n- Q2: 氧空位梯度分布会在BiVO4晶格中引发非对称电子云重构，形成具有空间梯度的内建偶极场，该动态电场不仅能驱动光生载流子的长程分离，还可调控表面态密度与电解质界面的电荷转移动力学，从而突破传统半导体材料载流子扩散长度的限制。",
+      "elapsed": 25.4
+    }
+  ],
+  "P3": [
+    {
+      "title": "The tetracycline resistome is shaped by selection for specific resistance mechanisms by each antibiotic generation",
+      "primary": "生物学",
+      "hypothesis_text": "L1 Hypothesis: 四环素抗性基因组的形成机制由抗生素代次驱动的机制特异性选择与临床用药历史的空间异质性共同塑造。生物学中的机制间相对适应性（如外排泵对早期四环素代次的优先选择）与基础医学中临床应用的时间梯度（如不同地区抗生素部署时序）存在协同作用，导致抗性基因组呈现时空层级结构。该假设可通过比较不同地理区域临床用药史与对应病原体抗性基因组的进化分支图进行验证，预期发现抗性基因排列顺序与抗生素代次部署时间存在统计学关联。\n\nL2 Hypotheses:\n- Q1: 四环素类抗生素的代次化学修饰差异（如6-位甲基化）通过改变药物-靶点结合能，选择性抑制特定耐药机制的表达效率。例如第二代半合成四环素（如多西环素）的疏水性增强可能通过促进核糖体保护蛋白（TetM）与70S核糖体的结合稳定性，而抑制外排泵（TetA）依赖的主动清除机制。该假设可通过分子动力学模拟不同代次抗生素与耐药蛋白复合物的结合自由能进行验证。\n- Q2: 临床用药历史中抗生素浓度波动周期（如治疗剂量的脉冲式暴露）与耐药基因发现的时空关联性，由活性氧物质（ROS）介导的基因组不稳定性所驱动。基础医学中发现的污染物降解途径（如ROS清除系统）与生物学中的进化动力学存在交叉调控，周期性低浓度抗生素暴露通过诱导氧化应激，促进耐药基因的水平转移和染色体整合。可通过构建包含氧化应激报告基因的大肠杆菌感染小鼠模型，追踪用药周期与耐药基因突变率的相关性进行验证。\n\nL3 Hypotheses:\n- Q1: 基于进化动力学模型的适应度景观分析可揭示机制内相对适应性（如不同tetA等位基因的MIC梯度）与抗生素浓度时间点的非线性响应关系。将生物学中的高通量条形码测序数据与基础医学中的电荷分离参数（如阴离子交换膜对药物代谢产物的吸附效率）整合，建立微流控芯片模拟体内药物浓度波动，可预测混合培养中特定耐药基因型的百分比变化拐点。\n- Q2: 抗生素压力下的基因组演化路径可通过机制特异性菌株混合物的相位分离现象进行表征。利用生物学中的标准差指标量化混合培养中不同耐药机制菌株的相对丰度波动，并结合基础医学中的术中记录数据（如感染部位的局部药物浓度梯度），建立基于扩散反应方程的数学模型，可预测临床环境中耐药基因扩散的空间优先方向。该假设可通过构建包含临床微环境参数的体外生物膜模型进行验证。",
+      "elapsed": 37.3
+    },
+    {
+      "title": "Quasi Fe MIL-53 nanozyme inducing ferroptosis and immunogenic cell death for cancer immunotherapy",
+      "primary": "化学",
+      "hypothesis_text": "L1 Hypothesis: \n准金属有机框架纳米酶的多孔结构与氧化还原活性可通过协同调控肿瘤微环境中的活性氧积累与谷胱甘肽耗竭，触发铁死亡并释放损伤相关分子模式（DAMPs），从而通过化学-免疫耦合机制增强抗肿瘤疗效。具体而言，Q-MIL-53(Fe)的孔隙结构促进过氧化氢选择性富集，与芬顿反应活性位点协同产生羟基自由基，而同步发生的谷胱甘肽耗竭削弱了肿瘤细胞的抗氧化防御，二者共同诱导铁死亡。死亡肿瘤细胞释放的DAMPs（如HMGB1）激活树突状细胞成熟，促进肿瘤特异性T淋巴细胞浸润，形成化学催化与免疫应答的正反馈循环。\n\nL2 Hypotheses:\n- Q1: 可控脱配体策略通过调节MIL-53(Fe)中Fe-O配位不饱和度，优化酶模拟催化位点的空间构型与电子密度，从而增强过氧化物酶/催化酶双模活性。密度泛函理论计算可揭示脱配体程度与Fe中心d轨道分裂能之间的非线性关系，为建立\"结构-配位-活性\"三元模型提供理论依据。\n- Q2: 纳米酶的孔径分布（10-50 nm）决定肿瘤微环境中过氧化氢的扩散动力学，通过构建不同孔隙结构的准金属有机框架系列材料，可验证孔径≥20 nm时过氧化氢有效渗透率提升40%，导致胞内羟基自由基浓度梯度增强，从而选择性诱导癌细胞而非正常细胞的氧化损伤。\n\nL3 Hypotheses:\n- Q1: 通过整合化学合成参数（脱配体温度/时间）、材料表征数据（BET比表面积、XPS价态分析）与免疫应答指标（CD80+/CD86+树突状细胞比例），可建立多变量响应面模型优化纳米酶制备工艺。验证当脱配体温度控制在250℃/2h时，材料同时实现过氧化物酶活性（≥3.5 μmol/min/mg）与生物相容性（IC50>200 μg/mL），并在小鼠模型中达到最佳肿瘤抑制率（＞75%）。\n- Q2: 基于芬顿反应动力学方程与谷胱甘肽耗竭速率常数（k=0.15±0.02 min⁻¹），可构建微分方程模型描述活性氧积累与免疫激活强度的关系：d[DAMPs]/dt = α·[ROS]^n - β·[GSH]，其中α=0.82（拟合系数），n=1.3（协同指数）。通过流式细胞术量化树突状细胞成熟标志物（CD83+）表达水平，验证当ROS浓度超过15 μM时可触发显著免疫激活（p<0.01）。",
+      "elapsed": 34.4
+    },
+    {
+      "title": "A standalone bismuth vanadate-silicon artificial leaf achieving 8.4% efficiency for hydrogen production",
+      "primary": "化学",
+      "hypothesis_text": "L1 Hypothesis: 梯度分布氧空位调控BiVO4光阳极导带边缘位置与电子迁移率（化学）协同优化海胆状FeOOH助催化剂界面电荷传输动力学（材料科学），通过增强空穴扩散长度与抑制光电阳极腐蚀（化学）实现太阳能制氢效率提升。该机制可通过原位X射线光电子能谱与瞬态吸收光谱验证。\n\nL2 Hypotheses:\n- Q1: 人工叶集成硅光伏电池（材料科学）通过固态热反应调控界面能带结构（化学），使BiVO4光阳极导带边缘与硅电池价带偏移量匹配（能源科学），从而提升整体系统太阳能-氢能转换法拉第效率（能源科学）。可通过构建异质结界面能级模型进行理论验证。\n- Q2: 氧空位梯度分布（材料科学）在BiVO4晶格中形成定向电势差（化学），通过乙酰丙酮氧化钒前驱体薄膜（化学）调控的偶极场强度与方向，导致空穴扩散长度增加30%以上（物理测量）。该效应可通过低温电子顺磁共振与开尔文探针力显微镜联用技术进行表征。\n\nL3 Hypotheses:\n- Q1: 蠕虫状BiVO4光阳极（材料科学）与阴离子交换膜（材料科学）形成的三相界面，通过气体扩散层（能源科学）优化氧气泡脱离动力学，使规模化人工叶（化学）在AM 1.5G标准光照下的太阳能制氢效率维持8.4%超过1000小时（能源科学）。可通过微流控反应器模拟界面气泡行为进行验证。\n- Q2: 通过原子层沉积构建的梯度氧空位分布（化学）与硅光伏电池（材料科学）形成的p-n异质结，可使人工叶系统（能源科学）在自然阳光下（标准光照）的生命周期评估（化学）显示单位氢气生产碳足迹低于2.0 kg CO2-eq。该假设可通过全生命周期物质流分析模型结合器件加速老化实验进行验证。",
+      "elapsed": 22.0
+    }
+  ],
+  "P4": [
+    {
+      "title": "The tetracycline resistome is shaped by selection for specific resistance mechanisms by each antibiotic generation",
+      "primary": "生物学",
+      "hypothesis_text": "L1 Hypothesis:\nhypothesis: 四环素抗性基因组的层级化结构由临床用药模式与机制间进化约束的协同作用形成，其中抗生素代次通过选择压力梯度驱动抗性机制的空间分布，而最小抑菌浓度（MIC）阈值通过代谢代价约束机制间竞争。这种双重调控导致抗性基因在病原体中呈现时空特异性扩散。\nreasoning: \n1. 临床用药历史与病原体抗性发现存在时空匹配（基础医学临床应用→病原体）\n2. MIC对机制间适应性具有约束作用（生物学最小抑菌浓度→机制间相对适应性）\n3. 抗生素代次通过机制特异性选择压力驱动抗性基因扩张（生物学抗生素代次→耐药机制）\n4. 推理：临床用药的时间序列（基础医学）与MIC代价（生物学）形成进化适应性景观，决定抗性基因组的拓扑结构\nkey_concepts: 四环素抗性基因组, 临床应用, 最小抑菌浓度, 抗生素代次, 病原体\ndisciplines_bridged: 生物学, 基础医学\n\nL2 Hypotheses:\n- Q1:\nhypothesis: 第三代糖基化修饰型四环素药物通过改变核糖体结合动力学，选择性压力将导致新型双功能抗性蛋白（兼具核糖体保护与RNA结合能力）的进化出现\nreasoning:\n1. 抗生素代次与耐药机制存在对应关系（生物学抗生素代次→耐药机制）\n2. 核糖体保护蛋白是主要抗性机制之一（生物学核糖体保护蛋白）\n3. 糖基化修饰可能改变药物-靶标作用动力学（基础医学第三代表达药物化学特性）\n4. 推理：新型化学修饰将诱导靶标相互作用模式改变，驱动抗性蛋白进化出新功能域\nkey_concepts: 抗生素代次, 核糖体保护蛋白, 糖基化修饰, 双功能抗性蛋白\ndisciplines_bridged: 生物学, 基础医学\n\n- Q2:\nhypothesis: 医院污水处理系统中的活性氧物质（ROS）浓度波动通过诱导氧化应激反应，增强耐药基因水平转移效率，形成临床用药与环境抗性基因库的耦合振荡\nreasoning:\n1. 临床应用导致环境抗生素残留（基础医学临床应用→污染物降解）\n2. ROS参与细菌应激反应调控（基础医学活性氧物质）\n3. 氧化应激可促进水平基因转移（生物学耐药机制→基因转移）\n4. 推理：医疗废水中的药物与ROS形成复合选择压力，驱动抗性基因的环境持久性进化\nkey_concepts: 临床应用, 活性氧物质, 耐药基因水平转移, 污染物降解\ndisciplines_bridged: 基础医学, 生物学\n\nL3 Hypotheses:\n- Q1:\nhypothesis: 通过整合进化动力学模型与临床用药时间序列数据，可预测特定抗性基因在混合培养中的丰度变化轨迹，其中抗生素浓度波动幅度将决定适应性景观的粗糙度参数\nreasoning:\n1. 高通量测序可量化混合培养相对丰度（生物学混合培养→高通量条形码测序）\n2. 临床用药历史具有时间维度特征（基础医学临床应用）\n3. 浓度波动影响适应性景观拓扑（生物学抗生素浓度时间点→机制特异性选择）\n4. 推理：数学模型可将临床用药曲线转化为适应性景观参数，预测基因频率动态\nkey_concepts: 高通量条形码测序, 临床用药数据, 适应性景观, 抗生素浓度时间点\ndisciplines_bridged: 生物学, 基础医学\n\n- Q2:\nhypothesis: 在电荷分离界面（如阴离子交换膜）形成的微环境梯度中，抗生素与金属离子的络合效应将改变细菌生物膜结构，导致耐药基因组在空间维度呈现分层演化模式\nreasoning:\n1. 电子转移影响细菌膜电位（基础医学电子转移→电荷分离）\n2. 生物膜结构影响药物渗透（生物学耐药机制）\n3. 金属离子与四环素形成复合物（基础医学阴离子交换膜特性）\n4. 推理：界面微环境通过物理化学梯度调控药物有效性，驱动空间异质性抗性进化\nkey_concepts: 阴离子交换膜, 抗生素络合, 生物膜结构, 空间异质性抗性进化\ndisciplines_bridged: 基础医学, 生物学",
+      "elapsed": 48.4
+    },
+    {
+      "title": "Quasi Fe MIL-53 nanozyme inducing ferroptosis and immunogenic cell death for cancer immunotherapy",
+      "primary": "化学",
+      "hypothesis_text": "L1 Hypothesis:\nhypothesis: Quasi-metal-organic framework nanozymes with hierarchical porosity can synergistically enhance cancer therapy by simultaneously inducing ferroptosis-mediated lipid peroxidation and immunogenic cell death through damage-associated molecular pattern release, where pore architecture regulates reactive oxygen species (ROS) localization and immune recognition.  \nreasoning:  \n1. Premise: Q-MIL-53(Fe) exhibits both peroxidase-mimic activity (Chemistry) and induces immunogenic cell death (Clinical Medicine)  \n2. Mechanism: Porous structure (Materials Science) enables differential ROS generation gradients that selectively target tumor cell membranes (ferroptosis) while preserving intracellular damage-associated molecular patterns (Clinical Medicine)  \n3. Prediction: Optimizing pore size distribution will enhance calreticulin exposure (Clinical Medicine) and HMGB1 release (Clinical Medicine) through controlled ROS compartmentalization  \nkey_concepts: hierarchical porosity, lipid peroxidation, damage-associated molecular patterns, reactive oxygen species compartmentalization, calreticulin exposure  \ndisciplines_bridged: 化学, 材料科学, 临床医学  \n\nL2 Hypotheses:\n- Q1:  \nhypothesis: The controlled deligandation strategy in Q-MIL-53(Fe) synthesis creates sub-surface iron active sites with reversible redox states that allosterically regulate peroxidase activity through ligand field modulation, where residual organic linkers act as electron transfer mediators.  \nreasoning:  \n1. Premise: Q-MIL-53(Fe) shows enhanced peroxidase-mimic activity (Chemistry) via controlled deligandation (Chemistry)  \n2. Mechanism: Partial ligand removal generates iron coordination defects (Materials Science) that stabilize Fe(IV)=O species (Chemistry) through microenvironment polarization  \n3. Prediction: Tuning deligandation degree will produce a sigmoidal activity curve correlated with iron oxidation state fluctuations  \nkey_concepts: deligandation degree, iron redox oscillation, ligan",
+      "elapsed": 53.0
+    },
+    {
+      "title": "A standalone bismuth vanadate-silicon artificial leaf achieving 8.4% efficiency for hydrogen production",
+      "primary": "化学",
+      "hypothesis_text": "L1 Hypothesis:  \nhypothesis: 蠕虫状钒酸铋光阳极的梯度氧空位分布与硅光伏电池导带边缘的协同调控可通过增强界面电荷传输动力学，实现太阳能制氢效率的突破性提升  \nreasoning:  \n1. 已知氧空位梯度分布能诱导偶极场促进电荷分离（化学）  \n2. 硅光伏电池的导带边缘位置影响电荷注入效率（材料科学）  \n3. 推测两者存在协同效应：梯度氧空位可优化光阳极/光伏电池界面能带结构  \n4. 新机制：界面处形成定向电场梯度，抑制载流子复合  \n5. 预测：通过XPS深度剖析与瞬态吸收光谱可验证界面电荷传输速率提升  \nkey_concepts: [蠕虫状钒酸铋光阳极, 梯度分布, 导带边缘, 电荷传输动力学, 太阳能制氢效率]  \ndisciplines_bridged: [化学, 材料科学]  \n\nL2 Hypotheses:  \n- Q1:  \n    hypothesis: 人工叶中硅光伏电池的晶面取向调控会通过界面应力调制影响羟基氧化铁助催化剂的活性位点暴露  \n    reasoning:  \n    1. 硅光伏电池集成提升效率（已知关系）  \n    2. 材料科学中晶面取向影响表面能与催化活性  \n    3. 新机制：特定晶面（如111）诱导FeOOH晶格畸变，增强OER中间体吸附  \n    4. 预测：通过EBSD与原位拉曼光谱可验证不同晶面对TOF值的调控效应  \n    key_concepts: [硅光伏电池晶面取向, 羟基氧化铁助催化剂, 界面应力, 活性位点暴露, 法拉第效率]  \n    disciplines_bridged: [材料科学, 化学]  \n- Q2:  \n    hypothesis: 氧空位梯度分布会通过介电常数梯度效应影响光阳极/电解质界面双电层结构，进而调控空穴扩散长度  \n    reasoning:  \n    1. 氧空位诱导偶极场促进电荷分离（已知）  \n    2. 物理化学中介电常数影响双电层厚度  \n    3. 新机制：梯度氧空位形成介电梯度，定向驱动空穴迁移  \n    4. 预测：通过开尔文探针力显微镜可验证双电层重构现象  \n    key_concepts: [氧空位梯度分布, 介电常数梯度, 双电层结构, 空穴扩散长度, 光电化学水分解]  \n    disciplines_bridged: [化学, 物理学]  \n\nL3 Hypotheses:  \n- Q1:  \n    hypothesis: 阴离子交换膜的离子选择性与气体扩散层孔隙率的协同设计可通过调控界面pH梯度提升规模化制氢的稳定性  \n    reasoning:  \n    1. 阴离子交换膜影响离子传输（材料科学）  \n    2. 气体扩散层决定气泡动力学（能源科学）  \n    3. 新机制：构建pH缓冲梯度抑制光阳极腐蚀（化学）  \n    4. 预测：通过原位pH传感验证界面微环境调控效果  \n    key_concepts: [阴离子交换膜, 气体扩散层孔隙率, pH梯度, 光电阳极腐蚀, 规模化太阳能制氢]  \n    disciplines_bridged: [材料科学, 能源科学技术]  \n- Q2:  \n    hypothesis: 乙酰丙酮氧化钒前驱体薄膜的热解速率梯度可通过自组装效应调控蠕虫状光阳极的尺度分布  \n    reasoning:  \n    1. 固态热反应构建蠕虫结构（已知）  \n    2. 化学动力学中热解速率影响自组装过程  \n    3. 新机制：梯度热解诱导应变场调控晶畴生长取向  \n    4. 预测：通过原位XRD验证不同升温速率对微结构演化的影响  \n    key_concepts: [乙酰丙酮氧化钒, 热解速率梯度, 自组装效应, 蠕虫状结构, 空穴扩散长度]  \n    disciplines_bridged: [化学, 材料科学]",
+      "elapsed": 45.7
+    }
+  ],
+  "P5": [
+    {
+      "title": "The tetracycline resistome is shaped by selection for specific resistance mechanisms by each antibiotic generation",
+      "primary": "生物学",
+      "hypothesis_text": "[L1] 四环素抗性基因组 --[形成机制由特定耐药机制驱动]--> 耐药机制\n[L1] 耐药机制 --[耐药机制的多样性影响进化动力学]--> 进化动力学\n[L1] 进化动力学 --[进化动力学模型需要临床应用数据验证]--> 临床应用\n[L1] 四环素抗性基因组 --[不同抗生素代次驱动抗性基因组选择]--> 抗生素代次\n[L1] 抗生素代次 --[临床应用历史影响抗生素代次发展]--> 临床应用\n[L1] 临床应用 --[临床应用数据需与进化动力学模型整合]--> 进化动力学\n[L1] 四环素抗性基因组 --[测序技术解析抗性基因组动态]--> 高通量条形码测序\n[L1] 高通量条形码测序 --[技术应用于混合培养分析]--> 混合培养\n[L1] 混合培养 --[培养条件影响污染物降解效率]--> 污染物降解\n[L2] 临床应用 --[驱动]--> 抗生素代次\n[L2] 抗生素代次 --[选择]--> 耐药机制\n[L2] 耐药机制 --[决定]--> 四环素抗性基因组\n[L2] 临床应用 --[关联]--> 病原体\n[L2] 病原体 --[携带]--> 四环素抗性基因\n[L2] 四环素抗性基因 --[构成]--> 四环素抗性基因组\n[L3] 临床应用 --[历史关联]--> 抗生素代次\n[L3] 抗生素代次 --[驱动选择]--> 耐药机制\n[L3] 耐药机制 --[塑造形成]--> 四环素抗性基因组\n[L3] 高通量条形码测序 --[方法应用]--> 混合培养\n[L3] 混合培养 --[量化分析]--> 相对丰度\n[L3] 相对丰度 --[动态关联]--> 抗生素浓度时间点",
+      "elapsed": 0.0
+    },
+    {
+      "title": "Quasi Fe MIL-53 nanozyme inducing ferroptosis and immunogenic cell death for cancer immunotherapy",
+      "primary": "化学",
+      "hypothesis_text": "[L1] 准金属有机框架纳米酶 --[诱导]--> 铁死亡\n[L1] 铁死亡 --[触发]--> 免疫原性细胞死亡\n[L1] 免疫原性细胞死亡 --[激活]--> 抗肿瘤免疫应答\n[L1] 准金属有机框架纳米酶 --[具有]--> 多孔结构\n[L1] 多孔结构 --[增强]--> 芬顿反应\n[L1] 芬顿反应 --[导致]--> 铁死亡\n[L1] 准金属有机框架纳米酶 --[抑制]--> 谷胱甘肽耗竭能力\n[L1] 谷胱甘肽耗竭能力 --[破坏]--> 氧化还原反应性\n[L1] 氧化还原反应性 --[协同]--> 程序性细胞死亡蛋白1抗体\n[L2] 多孔结构 --[调控]--> 可控脱配体策略\n[L2] 可控脱配体策略 --[增强]--> 过氧化物酶模拟活性\n[L2] 过氧化物酶模拟活性 --[诱导]--> 铁死亡\n[L2] 纳米酶 --[依赖]--> 多孔结构\n[L2] 多孔结构 --[促进]--> 肿瘤微环境\n[L2] 肿瘤微环境 --[积累]--> 活性氧\n[L3] 可控脱配体策略 --[合成]--> 准金属有机框架纳米酶\n[L3] 准金属有机框架纳米酶 --[具有]--> 过氧化物酶模拟活性\n[L3] 过氧化物酶模拟活性 --[触发]--> 铁死亡\n[L3] 芬顿反应 --[驱动]--> 活性氧\n[L3] 活性氧 --[消耗]--> 谷胱甘肽耗竭能力\n[L3] 谷胱甘肽耗竭能力 --[激活]--> 树突状细胞成熟",
+      "elapsed": 0.0
+    },
+    {
+      "title": "A standalone bismuth vanadate-silicon artificial leaf achieving 8.4% efficiency for hydrogen production",
+      "primary": "化学",
+      "hypothesis_text": "[L1] 氧空位梯度分布 --[氧空位梯度分布诱导偶极场]--> 偶极场\n[L1] 偶极场 --[偶极场促进电荷分离]--> 电荷分离\n[L1] 电荷分离 --[电荷分离效率提升太阳能制氢效率]--> 太阳能制氢效率\n[L1] 人工叶 --[人工叶集成硅光伏电池]--> 硅光伏电池\n[L1] 硅光伏电池 --[硅光伏电池提升光电流密度]--> 光电流密度\n[L1] 光电流密度 --[光电流密度增加提升太阳能制氢效率]--> 太阳能制氢效率\n[L2] 人工叶 --[集成硅光伏电池]--> 硅光伏电池\n[L2] 硅光伏电池 --[提升太阳能制氢效率]--> 太阳能制氢效率\n[L2] 太阳能制氢效率 --[优化规模化太阳能制氢]--> 规模化太阳能制氢\n[L2] 氧空位梯度分布 --[诱导偶极场]--> 偶极场\n[L2] 偶极场 --[促进电荷分离]--> 电荷分离\n[L2] 电荷分离 --[增强光电流密度]--> 光电流密度\n[L3] 人工叶 --[集成硅光伏电池]--> 硅光伏电池\n[L3] 硅光伏电池 --[提升太阳能制氢效率]--> 太阳能制氢效率\n[L3] 太阳能制氢效率 --[验证规模化太阳能制氢]--> 规模化太阳能制氢\n[L3] 阴离子交换膜 --[构建光电化学水分解界面]--> 光电化学水分解\n[L3] 光电化学水分解 --[依赖气体扩散层]--> 气体扩散层\n[L3] 气体扩散层 --[支撑规模化太阳能制氢]--> 规模化太阳能制氢",
+      "elapsed": 0.0
+    }
+  ]
+}

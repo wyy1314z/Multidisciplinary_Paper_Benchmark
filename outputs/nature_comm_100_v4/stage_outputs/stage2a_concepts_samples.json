@@ -1,0 +1,661 @@
+[
+  {
+    "title": "Nano-island-encapsulated cobalt single-atom catalysts for breaking activity-stability trade-off in Fenton-like reactions",
+    "primary": "化学",
+    "secondary_list": [
+      "化学",
+      "材料科学",
+      "环境科学技术"
+    ],
+    "概念_主学科": [
+      {
+        "term": "Single-atom catalysts (SACs)",
+        "normalized": "单原子催化剂",
+        "std_label": "single-atom catalysts",
+        "evidence": "Single-atom catalysts (SACs) have been increasingly acknowledged",
+        "source": "abstract",
+        "confidence": 0.95
+      },
+      {
+        "term": "peroxymonosulfate (PMS)",
+        "normalized": "过一硫酸盐",
+        "std_label": "peroxymonosulfate",
+        "evidence": "SACs face a trade-off between activity and stability in peroxymonosulfate (PMS)-based systems",
+        "source": "abstract",
+        "confidence": 0.98
+      },
+      {
+        "term": "island-sea synergistic effect",
+        "normalized": "岛-海协同效应",
+        "std_label": "island-sea synergistic effect",
+        "evidence": "enhance the activity and stability of PMS activation via an 'island-sea' synergistic effect",
+        "source": "abstract",
+        "confidence": 0.92
+      },
+      {
+        "term": "sulfate radicals (SO₄•⁻)",
+        "normalized": "硫酸根自由基",
+        "std_label": "sulfate radicals",
+        "evidence": "exclusively generating sulfate radicals (SO₄•⁻)",
+        "source": "abstract",
+        "confidence": 0.97
+      },
+      {
+        "term": "contaminant degradation",
+        "normalized": "污染物降解",
+        "std_label": "contaminant degradation",
+        "evidence": "activation for contaminant degradation",
+        "source": "abstract",
+        "confidence": 0.93
+      },
+      {
+        "term": "active sites leaching",
+        "normalized": "活性位点浸出",
+        "std_label": "active sites leaching",
+        "evidence": "Characterized by minimal leaching of active sites",
+        "source": "abstract",
+        "confidence": 0.91
+      },
+      {
+        "term": "reactive oxygen species (ROS)",
+        "normalized": "活性氧物种",
+        "std_label": "reactive oxygen species",
+        "evidence": "generate reactive oxygen species (ROS)",
+        "source": "introduction",
+        "confidence": 0.96
+      },
+      {
+        "term": "singlet oxygen (¹O₂)",
+        "normalized": "单线态氧",
+        "std_label": "singlet oxygen",
+        "evidence": "achieve near-complete PMS conversion to ¹O₂",
+        "source": "introduction",
+        "confidence": 0.89
+      },
+      {
+        "term": "unsaturated coordination environments",
+        "normalized": "不饱和配位环境",
+        "std_label": "unsaturated coordination environments",
+        "evidence": "high reactivity stems from unsaturated coordination environments",
+        "source": "introduction",
+        "confidence": 0.88
+      },
+      {
+        "term": "acidification",
+        "normalized": "酸化",
+        "std_label": "acidification",
+        "evidence": "further acidified the pH",
+        "source": "introduction",
+        "confidence": 0.87
+      },
+      {
+        "term": "metal aggregation",
+        "normalized": "金属聚集",
+        "std_label": "metal aggregation",
+        "evidence": "migration and aggregation of metal atoms",
+        "source": "introduction",
+        "confidence": 0.89
+      },
+      {
+        "term": "Fenton-like reactions",
+        "normalized": "类芬顿反应",
+        "std_label": "Fenton-like reactions",
+        "evidence": "trade-off in Fenton-like reactions",
+        "source": "title",
+        "confidence": 0.95
+      }
+    ],
+    "概念_辅学科": {
+      "化学": [
+        {
+          "term": "nano-island encapsulated",
+          "normalized": "纳米岛封装",
+          "std_label": "nano-island encapsulation",
+          "evidence": "nano-island encapsulated single cobalt atom",
+          "source": "abstract",
+          "confidence": 0.92
+        },
+        {
+          "term": "CoSA/Zn.O-ZnO",
+          "normalized": "钴单原子催化剂",
+          "std_label": "cobalt single-atom catalyst",
+          "evidence": "CoSA/Zn.O-ZnO catalyst",
+          "source": "abstract",
+          "confidence": 0.94
+        },
+        {
+          "term": "microenvironment",
+          "normalized": "微环境",
+          "std_label": "microenvironment",
+          "evidence": "neutral microenvironment within the reaction system",
+          "source": "abstract",
+          "confidence": 0.88
+        },
+        {
+          "term": "selectivity",
+          "normalized": "选择性",
+          "std_label": "selectivity",
+          "evidence": "remarkable selectivity in exclusively generating sulfate radicals",
+          "source": "abstract",
+          "confidence": 0.91
+        },
+        {
+          "term": "redox potential",
+          "normalized": "氧化还原电位",
+          "std_label": "redox potential",
+          "evidence": "standard reduction potential ranging from 2.5 to 3.1 V",
+          "source": "introduction",
+          "confidence": 0.87
+        }
+      ],
+      "材料科学": [
+        {
+          "term": "ZnO nanoparticles",
+          "normalized": "氧化锌纳米颗粒",
+          "std_label": "ZnO nanoparticles",
+          "evidence": "small carrier-based ZnO nanoparticles",
+          "source": "abstract",
+          "confidence": 0.96
+        },
+        {
+          "term": "CeO₂₋ₓ",
+          "normalized": "氧化铈氧空位",
+          "std_label": "cerium oxide oxygen vacancies",
+          "evidence": "cerium oxide nano-islands containing oxygen vacancies (CeO₂₋ₓ)",
+          "source": "introduction",
+          "confidence": 0.93
+        },
+        {
+          "term": "nanoscale island confinement",
+          "normalized": "纳米岛限域",
+          "std_label": "nanoscale island confinement",
+          "evidence": "nanoscale island confinement approach",
+          "source": "introduction",
+          "confidence": 0.91
+        },
+        {
+          "term": "high-surface-area supports",
+          "normalized": "高比表面积载体",
+          "std_label": "high-surface-area supports",
+          "evidence": "high-surface-area supports",
+          "source": "introduction",
+          "confidence": 0.89
+        },
+        {
+          "term": "carbon materials",
+          "normalized": "碳材料",
+          "std_label": "carbon materials",
+          "evidence": "carbon materials commonly act as supports",
+          "source": "introduction",
+          "confidence": 0.92
+        }
+      ],
+      "环境科学技术": [
+        {
+          "term": "recalcitrant pollutants",
+          "normalized": "难降解污染物",
+          "std_label": "recalcitrant pollutants",
+          "evidence": "complete removal of various recalcitrant pollutants",
+          "source": "abstract",
+          "confidence": 0.95
+        },
+        {
+          "term": "complex water matrices",
+          "normalized": "复杂水体基质",
+          "std_label": "complex water matrices",
+          "evidence": "efficient in complex water matrices",
+          "source": "abstract",
+          "confidence": 0.93
+        },
+        {
+          "term": "Persistent organic pollutants",
+          "normalized": "持久性有机污染物",
+          "std_label": "persistent organic pollutants",
+          "evidence": "Persistent organic pollutants in wastewater present substantial risks",
+          "source": "introduction",
+          "confidence": 0.97
+        },
+        {
+          "term": "refractory organic pollutants",
+          "normalized": "难降解有机污染物",
+          "std_label": "refractory organic pollutants",
+          "evidence": "eradicate refractory organic pollutants",
+          "source": "introduction",
+          "confidence": 0.94
+        },
+        {
+          "term": "low-toxicity decontamination",
+          "normalized": "低毒性去污",
+          "std_label": "low-toxicity decontamination",
+          "evidence": "low-toxicity decontamination",
+          "source": "abstract",
+          "confidence": 0.89
+        }
+      ]
+    }
+  },
+  {
+    "title": "High-entropy alloy enables multi-path electron synergism and lattice oxygen activation for enhanced oxygen evolution activity",
+    "primary": "化学",
+    "secondary_list": [
+      "化学",
+      "材料科学"
+    ],
+    "概念_主学科": [
+      {
+        "term": "electrocatalytic oxygen evolution reaction (OER)",
+        "normalized": "电催化氧析出反应",
+        "std_label": "OER",
+        "evidence": "Electrocatalytic oxygen evolution reaction (OER) is key to several energy technologies",
+        "source": "abstract",
+        "confidence": 0.98
+      },
+      {
+        "term": "lattice oxygen activation mechanism (LOM)",
+        "normalized": "晶格氧活化机制",
+        "std_label": "LOM",
+        "evidence": "Leveraging the lattice oxygen activation mechanism (LOM) is a strategy for boosting its activity",
+        "source": "abstract",
+        "confidence": 0.97
+      },
+      {
+        "term": "high-entropy alloys (HEAs)",
+        "normalized": "高熵合金",
+        "std_label": "HEAs",
+        "evidence": "We reveal that high-entropy alloys (HEAs) can efficiently activate the LOM",
+        "source": "abstract",
+        "confidence": 0.99
+      },
+      {
+        "term": "multi-path electron transfer",
+        "normalized": "多路径电子转移",
+        "std_label": null,
+        "evidence": "through synergistic multi-path electron transfer",
+        "source": "abstract",
+        "confidence": 0.95
+      },
+      {
+        "term": "overpotential",
+        "normalized": "过电位",
+        "std_label": null,
+        "evidence": "achieving an overpotential of 220 mV",
+        "source": "abstract",
+        "confidence": 0.96
+      },
+      {
+        "term": "current density",
+        "normalized": "电流密度",
+        "std_label": null,
+        "evidence": "at a current density of 10 mA cm⁻²",
+        "source": "abstract",
+        "confidence": 0.96
+      },
+      {
+        "term": "Raman spectroscopy",
+        "normalized": "拉曼光谱",
+        "std_label": null,
+        "evidence": "We analyzed the catalyst surface using Raman spectroscopy",
+        "source": "introduction",
+        "confidence": 0.94
+      },
+      {
+        "term": "TMAOH",
+        "normalized": "四甲基氢氧化铵",
+        "std_label": null,
+        "evidence": "in both KOH and TMAOH solutions",
+        "source": "introduction",
+        "confidence": 0.93
+      },
+      {
+        "term": "A1g stretching mode",
+        "normalized": "伸缩振动模式",
+        "std_label": null,
+        "evidence": "peak observed at 506 cm⁻¹ in the Raman spectrum is indicative of the A1g stretching mode",
+        "source": "introduction",
+        "confidence": 0.92
+      },
+      {
+        "term": "oxygen-containing intermediates (O₂⁻)",
+        "normalized": "含氧中间体",
+        "std_label": null,
+        "evidence": "interaction between TMA⁺ ions and the negatively charged oxygen-containing intermediates (O₂⁻)",
+        "source": "introduction",
+        "confidence": 0.95
+      },
+      {
+        "term": "μ-OO",
+        "normalized": "μ-过氧物种",
+        "std_label": null,
+        "evidence": "evaluation of the key intermediate μ-OO",
+        "source": "introduction",
+        "confidence": 0.91
+      },
+      {
+        "term": "electrocatalytic LOM pathway",
+        "normalized": "电催化路径",
+        "std_label": null,
+        "evidence": "electrocatalytic LOM pathway",
+        "source": "introduction",
+        "confidence": 0.93
+      }
+    ],
+    "概念_辅学科": {
+      "化学": [
+        {
+          "term": "KOH",
+          "normalized": "氢氧化钾",
+          "std_label": null,
+          "evidence": "in both KOH and TMAOH solutions",
+          "source": "introduction",
+          "confidence": 0.94
+        },
+        {
+          "term": "Ni(OH)₂",
+          "normalized": "氢氧化镍",
+          "std_label": null,
+          "evidence": "transformation from hydrated nickel hydroxide to a structure resembling nickel oxide",
+          "source": "introduction",
+          "confidence": 0.95
+        },
+        {
+          "term": "Fe–O bond",
+          "normalized": "铁-氧键",
+          "std_label": null,
+          "evidence": "a pair of peaks at 560 and 680 cm⁻¹, which correspond to the Fe–O bond",
+          "source": "introduction",
+          "confidence": 0.96
+        },
+        {
+          "term": "TMA⁺ cations",
+          "normalized": "四甲基铵阳离子",
+          "std_label": null,
+          "evidence": "three distinct peaks at 458, 755, and 952 cm⁻¹ is characteristic of TMA⁺ cations",
+          "source": "introduction",
+          "confidence": 0.93
+        },
+        {
+          "term": "binding sites",
+          "normalized": "结合位点",
+          "std_label": null,
+          "evidence": "higher availability of binding sites for TMA⁺",
+          "source": "introduction",
+          "confidence": 0.92
+        }
+      ],
+      "材料科学": [
+        {
+          "term": "NiFeCoCrW₀.₂ HEA",
+          "normalized": "镍铁钴铬钨高熵合金",
+          "std_label": null,
+          "evidence": "design of a NiFeCoCrW₀.₂ HEA",
+          "source": "abstract",
+          "confidence": 0.98
+        },
+        {
+          "term": "high-entropy structure",
+          "normalized": "高熵结构",
+          "std_label": null,
+          "evidence": "high-entropy structure promotes the initiation of an efficient electrocatalytic LOM pathway",
+          "source": "introduction",
+          "confidence": 0.97
+        },
+        {
+          "term": "active Ni sites",
+          "normalized": "活性镍位点",
+          "std_label": null,
+          "evidence": "deep oxidation of the active Ni sites",
+          "source": "introduction",
+          "confidence": 0.95
+        },
+        {
+          "term": "weak Co–O bonds",
+          "normalized": "弱钴-氧键",
+          "std_label": null,
+          "evidence": "incorporation of weak Co–O bonds",
+          "source": "introduction",
+          "confidence": 0.94
+        },
+        {
+          "term": "electrocatalysts",
+          "normalized": "电催化剂",
+          "std_label": null,
+          "evidence": "advancement of high-performance OER electrocatalysts",
+          "source": "abstract",
+          "confidence": 0.96
+        }
+      ]
+    }
+  },
+  {
+    "title": "MXene-Assisted NiFe sulfides for high-performance anion exchange membrane seawater electrolysis",
+    "primary": "化学",
+    "secondary_list": [
+      "化学",
+      "材料科学"
+    ],
+    "概念_主学科": [
+      {
+        "term": "MXene",
+        "normalized": "Ti3C2",
+        "std_label": null,
+        "evidence": "MXene (Ti3C2)",
+        "source": "abstract",
+        "confidence": 0.95
+      },
+      {
+        "term": "NiFe sulfides",
+        "normalized": "(Ni,Fe)S2",
+        "std_label": null,
+        "evidence": "NiFe sulfides ((Ni,Fe)S2)",
+        "source": "abstract",
+        "confidence": 0.95
+      },
+      {
+        "term": "oxygen evolution reaction",
+        "normalized": "OER",
+        "std_label": null,
+        "evidence": "oxygen evolution reaction electrocatalysts",
+        "source": "abstract",
+        "confidence": 0.98
+      },
+      {
+        "term": "electron distribution",
+        "normalized": "electron distribution",
+        "std_label": null,
+        "evidence": "electron distribution to trigger lattice oxygen mechanism",
+        "source": "abstract",
+        "confidence": 0.92
+      },
+      {
+        "term": "lattice oxygen mechanism",
+        "normalized": "lattice oxygen mechanism",
+        "std_label": null,
+        "evidence": "trigger lattice oxygen mechanism",
+        "source": "abstract",
+        "confidence": 0.93
+      },
+      {
+        "term": "Ti-O-Fe bonding",
+        "normalized": "Ti-O-Fe bonding",
+        "std_label": null,
+        "evidence": "Ti-O-Fe bonding",
+        "source": "abstract",
+        "confidence": 0.94
+      },
+      {
+        "term": "sulfates",
+        "normalized": "sulfates",
+        "std_label": null,
+        "evidence": "good retention of sulfates",
+        "source": "abstract",
+        "confidence": 0.91
+      },
+      {
+        "term": "Cl- resistance",
+        "normalized": "Cl- resistance",
+        "std_label": null,
+        "evidence": "effective Cl- resistance",
+        "source": "abstract",
+        "confidence": 0.95
+      },
+      {
+        "term": "OER activity",
+        "normalized": "OER activity",
+        "std_label": null,
+        "evidence": "high OER activity (1.598 V@2 A cm-2)",
+        "source": "abstract",
+        "confidence": 0.96
+      },
+      {
+        "term": "long-term durability",
+        "normalized": "long-term durability",
+        "std_label": null,
+        "evidence": "long-term durability (1000 h)",
+        "source": "abstract",
+        "confidence": 0.94
+      },
+      {
+        "term": "industrial current density",
+        "normalized": "industrial current density",
+        "std_label": null,
+        "evidence": "industrial current density (0.5 A cm-2)",
+        "source": "abstract",
+        "confidence": 0.93
+      },
+      {
+        "term": "Raney Ni cathode",
+        "normalized": "Raney Ni cathode",
+        "std_label": null,
+        "evidence": "Raney Ni cathode",
+        "source": "abstract",
+        "confidence": 0.95
+      },
+      {
+        "term": "electrolysis efficiency",
+        "normalized": "electrolysis efficiency",
+        "std_label": null,
+        "evidence": "electrolysis efficiency of 70%",
+        "source": "abstract",
+        "confidence": 0.92
+      },
+      {
+        "term": "energy consumption",
+        "normalized": "energy consumption",
+        "std_label": null,
+        "evidence": "energy consumption of 48.4 kWh kg-1 H2",
+        "source": "abstract",
+        "confidence": 0.93
+      },
+      {
+        "term": "ΔECl",
+        "normalized": "Δ",
+        "std_label": null,
+        "evidence": "lower ΔECl",
+        "source": "introduction",
+        "confidence": 0.91
+      },
+      {
+        "term": "chlorine evolution reaction",
+        "normalized": "CER",
+        "std_label": null,
+        "evidence": "chlorine evolution reaction",
+        "source": "introduction",
+        "confidence": 0.94
+      },
+      {
+        "term": "electrochemical impedance spectroscopy",
+        "normalized": "electrochemical impedance spectroscopy",
+        "std_label": null,
+        "evidence": "electrochemical impedance spectroscopy",
+        "source": "introduction",
+        "confidence": 0.92
+      }
+    ],
+    "概念_辅学科": {
+      "化学": [
+        {
+          "term": "anion exchange membrane",
+          "normalized": "AEM",
+          "std_label": null,
+          "evidence": "anion exchange membrane seawater electrolysis",
+          "source": "abstract",
+          "confidence": 0.96
+        },
+        {
+          "term": "seawater electrolysis",
+          "normalized": "seawater electrolysis",
+          "std_label": null,
+          "evidence": "seawater electrolysis",
+          "source": "abstract",
+          "confidence": 0.95
+        },
+        {
+          "term": "electrocatalyst",
+          "normalized": "electrocatalyst",
+          "std_label": null,
+          "evidence": "OER electrocatalyst",
+          "source": "abstract",
+          "confidence": 0.94
+        },
+        {
+          "term": "intraoperative recording",
+          "normalized": "intraoperative recording",
+          "std_label": null,
+          "evidence": "intraoperative recording",
+          "source": "introduction",
+          "confidence": 0.85
+        },
+        {
+          "term": "catalytic selectivity",
+          "normalized": "catalytic selectivity",
+          "std_label": null,
+          "evidence": "catalytic selectivity",
+          "source": "introduction",
+          "confidence": 0.88
+        }
+      ],
+      "材料科学": [
+        {
+          "term": "gas diffusion layer",
+          "normalized": "GDL",
+          "std_label": null,
+          "evidence": "gas diffusion layer",
+          "source": "introduction",
+          "confidence": 0.93
+        },
+        {
+          "term": "binder/catalyst composition",
+          "normalized": "binder/catalyst composition",
+          "std_label": null,
+          "evidence": "composition of binder/catalyst",
+          "source": "introduction",
+          "confidence": 0.91
+        },
+        {
+          "term": "anion exchange membranes",
+          "normalized": "anion exchange membranes",
+          "std_label": null,
+          "evidence": "anion exchange membranes",
+          "source": "introduction",
+          "confidence": 0.92
+        },
+        {
+          "term": "electrocatalytic efficiencies",
+          "normalized": "electrocatalytic efficiencies",
+          "std_label": null,
+          "evidence": "electrocatalytic efficiencies",
+          "source": "introduction",
+          "confidence": 0.9
+        },
+        {
+          "term": "multilevel optimization",
+          "normalized": "multilevel optimization",
+          "std_label": null,
+          "evidence": "multilevel optimization of anodic",
+          "source": "introduction",
+          "confidence": 0.89
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,39 @@
+[
+  {
+    "title": "Nano-island-encapsulated cobalt single-atom catalysts for breaking activity-stability trade-off in Fenton-like reactions",
+    "abstract": "Single-atom catalysts (SACs) have been increasingly acknowledged for their performance in sustainable Fenton-like catalysis. However, SACs face a trade-off between activity and stability in peroxymonosulfate (PMS)-based systems. Herein, we design a nano-island encapsulated single cobalt atom (Co<sub>SA/Zn.O</sub>-ZnO) catalyst to enhance the activity and stability of PMS activation for contaminant degradation via an \"island-sea\" synergistic effect. In this configuration, small carrier-based ZnO nanoparticles (the \"islands\") are utilized to confine and stabilize Co single atoms. The expansive ZnO substrate (the \"sea\") upholds a neutral microenvironment within the reaction system. The Co<sub>SA/Zn.O</sub>-ZnO/PMS system exhibits a remarkable selectivity in exclusively generating sulfate radicals (SO<sub>4</sub><sup>•-</sup>), leading to a complete removal of various recalcitrant pollutants within a shorter period. Characterized by minimal leaching of active sites, robust catalytic performance, and low-toxicity decontamination, this system proves highly efficient in multiple treatment cycles and complex water matrices. The design effectively breaks the activity-stability trade-off typically associated with SACs.",
+    "pdf_url": "https://doi.org/10.1038/s41467-024-55622-y",
+    "primary": "化学",
+    "secondary": "材料科学, 环境科学技术",
+    "secondary_list": [
+      "材料科学",
+      "环境科学技术"
+    ],
+    "main_levels": "L1:化学; L2:无机化学; L3:配位化学",
+    "non_main_levels": "L1:化学; L2:无机化学; L3:无机固体化学; L1:化学; L2:无机化学; L3:无机合成化学; L1:化学; L2:无机化学; L3:物理无机化学; L1:化学; L2:无机化学; L3:生物无机化学; L1:化学; L2:物理化学; L3:催化化学; L1:化学; L2:物理化学; L3:结构化学(包括表面化学、结构分析等); L1:化学; L2:物理化学; L3:胶体化学与界面化学; L1:化学; L2:物理化学; L3:电化学; L1:化学; L2:物理化学; L3:光化学(包括超分子光化学、光电化学、激光化学、感光化学等); L1:化学; L2:高分子化学; L3:功能高分子(包括液晶高分子化学); L1:化学; L2:高分子化学; L3:高分子物理化学; L1:化学; L2:高分子化学; L3:高分子合成化学; L1:材料科学; L2:金属材料; L3:非晶、微晶金属材料(包括准晶和纳米晶材料等); L1:材料科学; L2:金属材料; L3:低维金属材料(包括薄膜、纤维和零维金属材料等); L1:材料科学; L2:金属材料; L3:特种功能金属材料; L1:材料科学; L2:无机非金属材料; L3:低维无机非金属材料(包括薄膜、纤维和零维非金属材料等); L1:材料科学; L2:无机非金属材料; L3:特种功能无机非金属材料; L1:环境科学技术; L2:环境工程学; L3:水污染防治工程; L1:环境科学技术; L2:环境工程学; L3:环境保护工程; L1:环境科学技术; L2:环境工程学; L3:三废处理与综合利用"
+  },
+  {
+    "title": "High-entropy alloy enables multi-path electron synergism and lattice oxygen activation for enhanced oxygen evolution activity",
+    "abstract": "Electrocatalytic oxygen evolution reaction (OER) is key to several energy technologies but suffers from low activity. Leveraging the lattice oxygen activation mechanism (LOM) is a strategy for boosting its activity. However, this approach faces significant thermodynamic challenges, requiring high-valent oxidation of metal ions without compromising their stability. We reveal that high-entropy alloys (HEAs) can efficiently activate the LOM through synergistic multi-path electron transfer. Specifically, the oxidation of nickel is enhanced by this electron transfer, aided by the integration of weaker Co-O bonds, enabling effective LOM at the Ni-Co dual-site. These insights allow the design of a NiFeCoCrW<sub>0.2</sub> HEA that exhibits improved activity, achieving an overpotential of 220 mV at a current density of 10 mA cm<sup>-2</sup>. It also demonstrates good stability, maintaining the potential with less than 5% variation over 90 days at 100 mA cm<sup>-2</sup> current density. This study sheds light on the synergistic effects that confer high activity in HEAs and contribute to the advancement of high-performance OER electrocatalysts.",
+    "pdf_url": "https://doi.org/10.1038/s41467-025-58648-y",
+    "primary": "化学",
+    "secondary": "材料科学",
+    "secondary_list": [
+      "材料科学"
+    ],
+    "main_levels": "L1:化学; L2:物理化学; L3:电化学",
+    "non_main_levels": "L1:化学; L2:物理化学; L3:催化化学; L1:化学; L2:物理化学; L3:结构化学(包括表面化学、结构分析等); L1:化学; L2:物理化学; L3:化学动力学(包括分子反应动力学等); L1:化学; L2:物理化学; L3:物理化学其他学科; L1:化学; L2:无机化学; L3:无机固体化学; L1:化学; L2:无机化学; L3:物理无机化学; L1:化学; L2:无机化学; L3:元素化学; L1:化学; L2:无机化学; L3:配位化学; L1:材料科学; L2:金属材料; L3:有色金属及其合金; L1:材料科学; L2:金属材料; L3:非晶、微晶金属材料(包括准晶和纳米晶材料等); L1:材料科学; L2:金属材料; L3:特种功能金属材料"
+  },
+  {
+    "title": "MXene-Assisted NiFe sulfides for high-performance anion exchange membrane seawater electrolysis",
+    "abstract": "Anion exchange membrane seawater electrolysis is vital for future large-scale green hydrogen production, however enduring a huge challenge that lacks high-stable oxygen evolution reaction electrocatalysts. Herein, we report a robust OER electrocatalyst for AEMSE by integrating MXene (Ti<sub>3</sub>C<sub>2</sub>) with NiFe sulfides ((Ni,Fe)S<sub>2</sub>@Ti<sub>3</sub>C<sub>2</sub>). The strong interaction between (Ni,Fe)S<sub>2</sub> and Ti<sub>3</sub>C<sub>2</sub> induces electron distribution to trigger lattice oxygen mechanism, improving the intrinsic activity, and particularly prohibits the dissolution of Fe species during OER process via the Ti-O-Fe bonding effectively, achieving notable stability. Furthermore, the good retention of sulfates and the abundant groups of Ti<sub>3</sub>C<sub>2</sub> provide effective Cl<sup>-</sup> resistance. Accordingly, (Ni,Fe)S<sub>2</sub>@Ti<sub>3</sub>C<sub>2</sub> achieves high OER activity (1.598 V@2 A cm<sup>-2</sup>) and long-term durability (1000 h) in seawater system. Furthermore, AEMSE with industrial current density (0.5 A cm<sup>-2</sup>) and durability (500 h) is achieved by (Ni,Fe)S<sub>2</sub>@Ti<sub>3</sub>C<sub>2</sub> anode and Raney Ni cathode with electrolysis efficiency of 70% and energy consumption of 48.4 kWh kg<sup>-1</sup> H<sub>2</sub>.",
+    "pdf_url": "https://doi.org/10.1038/s41467-025-56639-7",
+    "primary": "化学",
+    "secondary": "材料科学",
+    "secondary_list": [
+      "材料科学"
+    ],
+    "main_levels": "L1:化学; L2:物理化学; L3:电化学",
+    "non_main_levels": "L1:化学; L2:物理化学; L3:催化化学; L1:化学; L2:物理化学; L3:结构化学(包括表面化学、结构分析等); L1:化学; L2:物理化学; L3:胶体化学与界面化学; L1:化学; L2:物理化学; L3:光化学(包括超分子光化学、光电化学、激光化学、感光化学等); L1:化学; L2:无机化学; L3:无机固体化学; L1:化学; L2:无机化学; L3:无机合成化学; L1:化学; L2:无机化学; L3:物理无机化学; L1:化学; L2:高分子化学; L3:功能高分子(包括液晶高分子化学); L1:化学; L2:高分子化学; L3:高分子物理化学; L1:材料科学; L2:无机非金属材料; L3:低维无机非金属材料(包括薄膜、纤维和零维非金属材料等); L1:材料科学; L2:无机非金属材料; L3:特种功能无机非金属材料; L1:材料科学; L2:金属材料; L3:有色金属及其合金; L1:材料科学; L2:金属材料; L3:低维金属材料(包括薄膜、纤维和零维金属材料等); L1:材料科学; L2:金属材料; L3:特种功能金属材料; L1:材料科学; L2:复合材料; L3:金属基复合材料(包括多相复合材料等); L1:材料科学; L2:复合材料; L3:无机非金属基复合材料(包括无机多相复合材料等)"
+  }
+]

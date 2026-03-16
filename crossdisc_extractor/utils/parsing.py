@@ -124,7 +124,21 @@ def coerce_json_object(text: str, required_top_keys: Optional[Set[str]] = None) 
         if parsed is not None:
             return parsed
 
-    # 5) 仍失败：输出很可能被截断或包含未转义引号等导致 JSON 非法
+    # 5) 尝试修复被截断的 JSON（补全缺失的闭合括号）
+    first = candidate.find("{")
+    if first >= 0:
+        truncated = candidate[first:]
+        open_braces = truncated.count("{") - truncated.count("}")
+        open_brackets = truncated.count("[") - truncated.count("]")
+        if open_braces > 0 or open_brackets > 0:
+            repaired = truncated + "]" * max(open_brackets, 0) + "}" * max(open_braces, 0)
+            parsed = try_parse(repaired)
+            if parsed is not None:
+                logger.warning("JSON 被截断，已通过补全闭合括号修复（补了 %d 个 ']' + %d 个 '}'）",
+                               max(open_brackets, 0), max(open_braces, 0))
+                return parsed
+
+    # 6) 仍失败：输出很可能被截断或包含未转义引号等导致 JSON 非法
     snippet = candidate[:400]
     if "{" in candidate and "}" not in candidate:
         logger.error("无法提取完整 JSON：疑似模型输出被截断（缺少闭合 '}'）。原始前 400 字符: %r", snippet)
