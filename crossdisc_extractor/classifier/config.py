@@ -22,6 +22,7 @@ class LLMConfig:
     max_retries: int = 3
     max_choices_per_level: int = 3
     term_max_len: int = 128
+    crossdisc_confidence_threshold: float = 0.5
 
     # Output parsing patterns
     strict_list_regex: str = r"^\[(?:[^\[\]\n,]{1,128})(?:,(?:[^\[\]\n,]{1,128}))*\]$"
@@ -123,6 +124,9 @@ def load_config(
         max_retries=int(llm_raw.get("max_retries", 3)),
         max_choices_per_level=int(raw.get("classifier", {}).get("max_choices_per_level", 3)),
         term_max_len=int(raw.get("classifier", {}).get("term_max_len", 128)),
+        crossdisc_confidence_threshold=float(
+            raw.get("classifier", {}).get("crossdisc_confidence_threshold", 0.5)
+        ),
     )
 
     ext_cfg = ExtractionConfig(

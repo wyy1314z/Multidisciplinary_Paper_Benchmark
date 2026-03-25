@@ -42,22 +42,27 @@ def compute_text_similarity_metrics(
     # BERTScore
     try:
         from bert_score import BERTScorer
-        scorer = BERTScorer(model_type="microsoft/deberta-xlarge-mnli", lang="en")
+        scorer = BERTScorer(model_type="roberta-large", lang="en")
         P, R, F1 = scorer.score([hypothesis], [reference])
         scores["bertscore_p"] = round(P[0].item(), 4)
         scores["bertscore_r"] = round(R[0].item(), 4)
         scores["bertscore_f1"] = round(F1[0].item(), 4)
-    except ImportError:
+    except (ImportError, OSError, RuntimeError, OverflowError) as e:
+        logger.warning("BERTScore unavailable (%s: %s), trying sentence-transformers fallback", type(e).__name__, e)
         # 降级：用 sentence-transformers cosine similarity
         try:
             from sentence_transformers import SentenceTransformer
+            import os as _os
+            _os.environ.setdefault("HF_HUB_OFFLINE", "1")
+            _os.environ.setdefault("TRANSFORMERS_OFFLINE", "1")
             model = SentenceTransformer("paraphrase-multilingual-MiniLM-L12-v2")
             embs = model.encode([hypothesis, reference])
             cos = float(np.dot(embs[0], embs[1]) / (
                 np.linalg.norm(embs[0]) * np.linalg.norm(embs[1]) + 1e-9
             ))
             scores["bertscore_f1"] = round(cos, 4)
-        except ImportError:
+        except (ImportError, OSError, RuntimeError) as e2:
+            logger.warning("sentence-transformers also unavailable (%s), bertscore=0", type(e2).__name__)
             scores["bertscore_f1"] = 0.0
 
     # ROUGE

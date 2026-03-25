@@ -1,0 +1,1914 @@
+[
+  {
+    "title": "Using machine learning to simultaneously quantify multiple cognitive components of episodic memory",
+    "graph": {
+      "nodes": [
+        {
+          "id": "机器学习算法",
+          "term": "machine learning algorithm",
+          "normalized": "机器学习算法",
+          "discipline": "计算机科学技术",
+          "evidence": "Using a machine learning algorithm known as \"transfer learning\"",
+          "source": "abstract",
+          "confidence": 0.95
+        },
+        {
+          "id": "迁移学习",
+          "term": "transfer learning",
+          "normalized": "迁移学习",
+          "discipline": "计算机科学技术",
+          "evidence": "machine learning algorithm known as \"transfer learning\"",
+          "source": "abstract",
+          "confidence": 0.98
+        },
+        {
+          "id": "交叉验证",
+          "term": "cross-validation",
+          "normalized": "交叉验证",
+          "discipline": "计算机科学技术",
+          "evidence": "when training their memory decoders using cross-validation",
+          "source": "introduction",
+          "confidence": 0.92
+        },
+        {
+          "id": "记忆解码器",
+          "term": "memory decoders",
+          "normalized": "记忆解码器",
+          "discipline": "计算机科学技术",
+          "evidence": "when training their memory decoders using cross-validation",
+          "source": "introduction",
+          "confidence": 0.93
+        },
+        {
+          "id": "高低感知性能分类器",
+          "term": "high vs. low perception performance classifier",
+          "normalized": "高低感知性能分类器",
+          "discipline": "计算机科学技术",
+          "evidence": "train a high vs. low perception performance classifier",
+          "source": "introduction",
+          "confidence": 0.91
+        },
+        {
+          "id": "神经活动预测",
+          "term": "neural activity prediction",
+          "normalized": "神经活动预测",
+          "discipline": "计算机科学技术",
+          "evidence": "predict how high or low the subject's perception was for each to-be-encoded event",
+          "source": "introduction",
+          "confidence": 0.89
+        },
+        {
+          "id": "多源迁移学习",
+          "term": "multi-source transfer learning",
+          "normalized": "多源迁移学习",
+          "discipline": "计算机科学技术",
+          "evidence": "transfer learning with multiple sources",
+          "source": "introduction",
+          "confidence": 0.94
+        },
+        {
+          "id": "脑电活动分类",
+          "term": "EEG activity classification",
+          "normalized": "脑电活动分类",
+          "discipline": "计算机科学技术",
+          "evidence": "record neural activity as participants perform a perception task",
+          "source": "introduction",
+          "confidence": 0.9
+        },
+        {
+          "id": "编码相关脑活动预测",
+          "term": "encoding-related brain activity prediction",
+          "normalized": "编码相关脑活动预测",
+          "discipline": "计算机科学技术",
+          "evidence": "predict episodic memory performance from trial-to-trial encoding EEG activity",
+          "source": "abstract",
+          "confidence": 0.93
+        },
+        {
+          "id": "方差解释",
+          "term": "variance explanation",
+          "normalized": "方差解释",
+          "discipline": "计算机科学技术",
+          "evidence": "each cognitive domain explaining unique variance in decoding",
+          "source": "abstract",
+          "confidence": 0.88
+        },
+        {
+          "id": "情景记忆编码",
+          "term": "episodic memory encoding",
+          "normalized": "情景记忆编码",
+          "discipline": "生物学",
+          "evidence": "multiple domains contribute to episodic encoding",
+          "source": "abstract",
+          "confidence": 0.97
+        },
+        {
+          "id": "视觉感知",
+          "term": "visual perception",
+          "normalized": "视觉感知",
+          "discipline": "生物学",
+          "evidence": "visual perception, sustained attention, and selective attention brain states",
+          "source": "abstract",
+          "confidence": 0.96
+        },
+        {
+          "id": "持续注意",
+          "term": "sustained attention",
+          "normalized": "持续注意",
+          "discipline": "生物学",
+          "evidence": "sustained attention brain states",
+          "source": "abstract",
+          "confidence": 0.95
+        },
+        {
+          "id": "选择性注意",
+          "term": "selective attention",
+          "normalized": "选择性注意",
+          "discipline": "生物学",
+          "evidence": "selective attention brain states",
+          "source": "abstract",
+          "confidence": 0.95
+        },
+        {
+          "id": "脑电图",
+          "term": "electroencephalography (EEG)",
+          "normalized": "脑电图",
+          "discipline": "生物学",
+          "evidence": "trial-to-trial encoding electroencephalography (EEG) activity",
+          "source": "abstract",
+          "confidence": 0.98
+        },
+        {
+          "id": "神经活动",
+          "term": "neural activity",
+          "normalized": "神经活动",
+          "discipline": "生物学",
+          "evidence": "decoding of successful encoding-related neural activity",
+          "source": "abstract",
+          "confidence": 0.94
+        },
+        {
+          "id": "认知领域",
+          "term": "cognitive domains",
+          "normalized": "认知领域",
+          "discipline": "生物学",
+          "evidence": "cognitive domains outside of memory",
+          "source": "abstract",
+          "confidence": 0.92
+        },
+        {
+          "id": "感知",
+          "term": "perception",
+          "normalized": "感知",
+          "discipline": "生物学",
+          "evidence": "perception5,6, sustained attention7,8, selective attention9,10",
+          "source": "introduction",
+          "confidence": 0.93
+        },
+        {
+          "id": "脑区",
+          "term": "brain areas",
+          "normalized": "脑区",
+          "discipline": "生物学",
+          "evidence": "direct current stimulation of brain areas in the selective attention network",
+          "source": "introduction",
+          "confidence": 0.91
+        },
+        {
+          "id": "编码失败",
+          "term": "encoding failure",
+          "normalized": "编码失败",
+          "discipline": "生物学",
+          "evidence": "why any specific event was not successfully encoded",
+          "source": "introduction",
+          "confidence": 0.89
+        },
+        {
+          "id": "干扰信息",
+          "term": "distracting information",
+          "normalized": "干扰信息",
+          "discipline": "生物学",
+          "evidence": "effectively ignoring distracting information",
+          "source": "introduction",
+          "confidence": 0.88
+        },
+        {
+          "id": "High-Low Perception Classifier",
+          "term": "High-Low Perception Classifier",
+          "normalized": "High-Low Perception Classifier",
+          "discipline": "struct_relation_inferred",
+          "evidence": "",
+          "source": "struct_relation_inferred",
+          "confidence": 0.8
+        }
+      ],
+      "edges": [
+        {
+          "source": "迁移学习",
+          "target": "情景记忆编码",
+          "relation": "leveraged to predict neural activity related to",
+          "relation_type": "method_applied_to",
+          "metadata": {
+            "evidence": "Using a machine learning algorithm known as \"transfer learning\", we leveraged visual perception, sustained attention, and selective attention brain states to better predict episodic memory performance",
+            "source": "struct",
+            "direction": "->"
+          }
+        },
+        {
+          "source": "迁移学习",
+          "target": "视觉感知",
+          "relation": "applied to decode cognitive components of",
+          "relation_type": "method_applied_to",
+          "metadata": {
+            "evidence": "leveraged visual perception, sustained attention, and selective attention brain states to better predict episodic memory performance",
+            "source": "struct",
+            "direction": "->"
+          }
+        },
+        {
+          "source": "迁移学习",
+          "target": "持续注意",
+          "relation": "utilized to analyze brain states for memory prediction",
+          "relation_type": "method_applied_to",
+          "metadata": {
+            "evidence": "leveraged visual perception, sustained attention, and selective attention brain states to better predict episodic memory performance",
+            "source": "struct",
+            "direction": "->"
+          }
+        },
+        {
+          "source": "迁移学习",
+          "target": "选择性注意",
+          "relation": "employed to assess contribution of attentional states to encoding",
+          "relation_type": "method_applied_to",
+          "metadata": {
+            "evidence": "leveraged visual perception, sustained attention, and selective attention brain states to better predict episodic memory performance",
+            "source": "struct",
+            "direction": "->"
+          }
+        },
+        {
+          "source": "认知领域",
+          "target": "编码相关脑活动预测",
+          "relation": "improve prediction performance when jointly considered",
+          "relation_type": "improves_metric",
+          "metadata": {
+            "evidence": "this multidimensional treatment of memory decoding improved prediction performance compared to traditional, unidimensional methods",
+            "source": "struct",
+            "direction": "->"
+          }
+        },
+        {
+          "source": "多源迁移学习",
+          "target": "脑电活动分类",
+          "relation": "enables decoding of neural activity across multiple cognitive tasks",
+          "relation_type": "method_applied_to",
+          "metadata": {
+            "evidence": "transfer learning with multiple sources typically being EEG activity associated with the same cognitive task",
+            "source": "struct",
+            "direction": "->"
+          }
+        },
+        {
+          "source": "High-Low Perception Classifier",
+          "target": "神经活动预测",
+          "relation": "provides features to predict perception levels during encoding",
+          "relation_type": "corresponds_to",
+          "metadata": {
+            "evidence": "train a high vs. low perception performance classifier... transfer the gained knowledge to encoding-related brain activity",
+            "source": "struct",
+            "direction": "->"
+          }
+        },
+        {
+          "source": "视觉感知",
+          "target": "情景记忆编码",
+          "relation": "constitutes a multidimensional component of memory formation",
+          "relation_type": "constrains",
+          "metadata": {
+            "evidence": "episodic memory is believed to be a multidimensional process in which various cognitive functions including perception contribute to memory formation",
+            "source": "struct",
+            "direction": "->"
+          }
+        },
+        {
+          "source": "持续注意",
+          "target": "情景记忆编码",
+          "relation": "modulates memory performance through brain state interactions",
+          "relation_type": "constrains",
+          "metadata": {
+            "evidence": "presenting to-be-encoded stimuli during high vs. low sustained attention brain states enhances episodic memory performance",
+            "source": "struct",
+            "direction": "->"
+          }
+        },
+        {
+          "source": "选择性注意",
+          "target": "编码失败",
+          "relation": "failure to engage leads to ineffective memory consolidation",
+          "relation_type": "driven_by",
+          "metadata": {
+            "evidence": "Did they fail to maintain their attention? Were they not selectively attending to that event and effectively ignoring distracting information?",
+            "source": "struct",
+            "direction": "->"
+          }
+        },
+        {
+          "source": "迁移学习",
+          "target": "视觉感知",
+          "relation": "应用于解码认知组件",
+          "relation_type": "H1",
+          "metadata": {
+            "claim": "迁移学习通过解码视觉感知特征提取多维认知表征",
+            "step": 1,
+            "source": "hypothesis",
+            "path_index": 0
+          }
+        },
+        {
+          "source": "视觉感知",
+          "target": "情景记忆编码",
+          "relation": "构成情景记忆编码的多维基础",
+          "relation_type": "H1",
+          "metadata": {
+            "claim": "视觉感知作为情景记忆编码的关键生物学基础组件",
+            "step": 2,
+            "source": "hypothesis",
+            "path_index": 0
+          }
+        },
+        {
+          "source": "情景记忆编码",
+          "target": "编码相关脑活动预测",
+          "relation": "驱动编码相关脑活动预测性能提升",
+          "relation_type": "H1",
+          "metadata": {
+            "claim": "整合生物学记忆编码机制可优化机器学习预测模型精度",
+            "step": 3,
+            "source": "hypothesis",
+            "path_index": 0
+          }
+        },
+        {
+          "source": "多源迁移学习",
+          "target": "脑电活动分类",
+          "relation": "启用跨认知任务的神经解码",
+          "relation_type": "H1",
+          "metadata": {
+            "claim": "多源迁移学习实现跨任务脑电活动模式识别",
+            "step": 1,
+            "source": "hypothesis",
+            "path_index": 1
+          }
+        },
+        {
+          "source": "脑电活动分类",
+          "target": "神经活动",
+          "relation": "反映神经活动状态特征",
+          "relation_type": "H1",
+          "metadata": {
+            "claim": "脑电分类技术可量化生物学神经活动动态特征",
+            "step": 2,
+            "source": "hypothesis",
+            "path_index": 1
+          }
+        },
+        {
+          "source": "神经活动",
+          "target": "编码相关脑活动预测",
+          "relation": "决定记忆编码效能的生物学基础",
+          "relation_type": "H1",
+          "metadata": {
+            "claim": "基于神经生物学机制的建模可提升记忆解码方差解释率",
+            "step": 3,
+            "source": "hypothesis",
+            "path_index": 1
+          }
+        },
+        {
+          "source": "迁移学习",
+          "target": "视觉感知",
+          "relation": "影响",
+          "relation_type": "H2",
+          "metadata": {
+            "claim": "迁移学习通过解码视觉感知特征提取编码状态",
+            "step": 1,
+            "source": "hypothesis",
+            "path_index": 0
+          }
+        },
+        {
+          "source": "视觉感知",
+          "target": "编码相关脑活动预测",
+          "relation": "导致",
+          "relation_type": "H2",
+          "metadata": {
+            "claim": "视觉感知特征作为情景记忆编码的多维构成要素",
+            "step": 2,
+            "source": "hypothesis",
+            "path_index": 0
+          }
+        },
+        {
+          "source": "编码相关脑活动预测",
+          "target": "记忆解码器",
+          "relation": "促进",
+          "relation_type": "H2",
+          "metadata": {
+            "claim": "编码预测与记忆解码器形成性能优化闭环",
+            "step": 3,
+            "source": "hypothesis",
+            "path_index": 0
+          }
+        },
+        {
+          "source": "多源迁移学习",
+          "target": "脑电活动分类",
+          "relation": "神经活动",
+          "relation_type": "H2",
+          "metadata": {
+            "claim": "多源迁移学习实现跨任务脑电特征迁移",
+            "step": 1,
+            "source": "hypothesis",
+            "path_index": 1
+          }
+        },
+        {
+          "source": "脑电活动分类",
+          "target": "认知领域",
+          "relation": "脑区 选择性注意",
+          "relation_type": "H2",
+          "metadata": {
+            "claim": "脑电分类映射认知领域的神经表征",
+            "step": 2,
+            "source": "hypothesis",
+            "path_index": 1
+          }
+        },
+        {
+          "source": "认知领域",
+          "target": "方差解释",
+          "relation": "促进",
+          "relation_type": "H2",
+          "metadata": {
+            "claim": "认知领域差异解释记忆解码方差分布",
+            "step": 3,
+            "source": "hypothesis",
+            "path_index": 1
+          }
+        },
+        {
+          "source": "迁移学习",
+          "target": "视觉感知",
+          "relation": "整合视觉感知与持续注意脑状态特征",
+          "relation_type": "H3",
+          "metadata": {
+            "claim": "迁移学习 整合视觉感知与持续注意脑状态特征 视觉感知",
+            "step": 1,
+            "source": "hypothesis",
+            "path_index": 0
+          }
+        },
+        {
+          "source": "视觉感知",
+          "target": "持续注意",
+          "relation": "与持续注意协同调制编码相关脑活动",
+          "relation_type": "H3",
+          "metadata": {
+            "claim": "视觉感知 与持续注意协同调制编码相关脑活动 持续注意",
+            "step": 2,
+            "source": "hypothesis",
+            "path_index": 0
+          }
+        },
+        {
+          "source": "持续注意",
+          "target": "编码相关脑活动预测",
+          "relation": "联合选择性注意特征构建预测模型",
+          "relation_type": "H3",
+          "metadata": {
+            "claim": "持续注意 联合选择性注意特征构建预测模型 编码相关脑活动预测",
+            "step": 3,
+            "source": "hypothesis",
+            "path_index": 0
+          }
+        },
+        {
+          "source": "认知领域",
+          "target": "神经活动预测",
+          "relation": "与神经活动预测建立联合建模框架",
+          "relation_type": "H3",
+          "metadata": {
+            "claim": "认知领域 与神经活动预测建立联合建模框架 神经活动预测",
+            "step": 1,
+            "source": "hypothesis",
+            "path_index": 1
+          }
+        },
+        {
+          "source": "神经活动预测",
+          "target": "方差解释",
+          "relation": "量化记忆解码中的可解释方差成分",
+          "relation_type": "H3",
+          "metadata": {
+            "claim": "神经活动预测 量化记忆解码中的可解释方差成分 方差解释",
+            "step": 2,
+            "source": "hypothesis",
+            "path_index": 1
+          }
+        },
+        {
+          "source": "方差解释",
+          "target": "记忆解码器",
+          "relation": "通过跨学科验证确认认知域特异性贡献",
+          "relation_type": "H3",
+          "metadata": {
+            "claim": "方差解释 通过跨学科验证确认认知域特异性贡献 记忆解码器",
+            "step": 3,
+            "source": "hypothesis",
+            "path_index": 1
+          }
+        }
+      ]
+    },
+    "metrics": {
+      "path_consistency": 0.3333333333333333,
+      "coverage": 0.5454545454545454,
+      "bridging_score": 0.5925925925925926,
+      "rao_stirling_diversity": 0.162,
+      "embedding_bridging": 0.6106,
+      "consistency_precision": 0.0,
+      "consistency_recall": 0.0,
+      "consistency_f1": 0.0,
+      "info_novelty": 0.0,
+      "chain_coherence": 0.8165,
+      "atypical_combination": 0.5913,
+      "kg_density": 0.0476,
+      "kg_inverse_modularity": 1.1147,
+      "kg_largest_cc_ratio": 0.6818,
+      "kg_avg_betweenness": 0.042,
+      "kg_clustering_coefficient": 0.1833,
+      "concept_recall": 0.0,
+      "concept_precision": 0.0,
+      "concept_f1": 0.0,
+      "relation_precision": 0.0,
+      "relation_type_accuracy": 0.0,
+      "evidence_coverage": 0.0,
+      "path_alignment_best": 0.0,
+      "path_alignment_mean": 0.0
+    }
+  },
+  {
+    "title": "Structural visualization of small molecule recognition by CXCR3 uncovers dual-agonism in the CXCR3-CXCR7 system",
+    "graph": {
+      "nodes": [
+        {
+          "id": "CXCR3",
+          "term": "CXCR3",
+          "normalized": "CXCR3",
+          "discipline": "基础医学",
+          "evidence": "CXCR3 and CXCR7 constitute a pair wherein the former is a prototypical GPCR",
+          "source": "abstract",
+          "confidence": 0.98
+        },
+        {
+          "id": "CXCR7",
+          "term": "CXCR7",
+          "normalized": "CXCR7",
+          "discipline": "基础医学",
+          "evidence": "CXCR3 and CXCR7 constitute a pair wherein the latter exhibits selective coupling to βarrs",
+          "source": "abstract",
+          "confidence": 0.98
+        },
+        {
+          "id": "CXCL11",
+          "term": "CXCL11",
+          "normalized": "CXCL11",
+          "discipline": "基础医学",
+          "evidence": "sharing a common natural agonist: CXCL11",
+          "source": "abstract",
+          "confidence": 0.95
+        },
+        {
+          "id": "cryo-EM structures",
+          "term": "cryo-EM structures",
+          "normalized": "cryo-EM structures",
+          "discipline": "基础医学",
+          "evidence": "we determine cryo-EM structures of CXCR3",
+          "source": "abstract",
+          "confidence": 0.92
+        },
+        {
+          "id": "Apo-state",
+          "term": "Apo-state",
+          "normalized": "Apo-state",
+          "discipline": "基础医学",
+          "evidence": "CXCR3 in an Apo-state",
+          "source": "abstract",
+          "confidence": 0.9
+        },
+        {
+          "id": "allosteric network",
+          "term": "allosteric network",
+          "normalized": "allosteric network",
+          "discipline": "基础医学",
+          "evidence": "uncover an allosteric network bridging the ligand-binding pocket",
+          "source": "abstract",
+          "confidence": 0.93
+        },
+        {
+          "id": "transducer-coupling bias",
+          "term": "transducer-coupling bias",
+          "normalized": "transducer-coupling bias",
+          "discipline": "基础医学",
+          "evidence": "driving the transducer-coupling bias at this receptor",
+          "source": "abstract",
+          "confidence": 0.91
+        },
+        {
+          "id": "signaling-bias",
+          "term": "signaling-bias",
+          "normalized": "signaling-bias",
+          "discipline": "基础医学",
+          "evidence": "molecular insights into signaling-bias",
+          "source": "abstract",
+          "confidence": 0.94
+        },
+        {
+          "id": "dual agonism",
+          "term": "dual agonism",
+          "normalized": "dual agonism",
+          "discipline": "基础医学",
+          "evidence": "dual-agonism in the CXCR3-CXCR7 system",
+          "source": "title",
+          "confidence": 0.97
+        },
+        {
+          "id": "orthosteric binding pocket",
+          "term": "orthosteric binding pocket",
+          "normalized": "orthosteric binding pocket",
+          "discipline": "基础医学",
+          "evidence": "structural topology of the orthosteric binding pocket",
+          "source": "abstract",
+          "confidence": 0.92
+        },
+        {
+          "id": "β",
+          "term": "β-arrestins (βarrs)",
+          "normalized": "β",
+          "discipline": "基础医学",
+          "evidence": "signaling-bias toward β-arrestins (βarrs)",
+          "source": "abstract",
+          "confidence": 0.96
+        },
+        {
+          "id": "G-proteins",
+          "term": "G-proteins",
+          "normalized": "G-proteins",
+          "discipline": "基础医学",
+          "evidence": "biased toward G-proteins",
+          "source": "abstract",
+          "confidence": 0.95
+        },
+        {
+          "id": "chemokine receptors",
+          "term": "chemokine receptors",
+          "normalized": "chemokine receptors",
+          "discipline": "基础医学",
+          "evidence": "Chemokine receptors are critically involved in multiple physiological processes",
+          "source": "abstract",
+          "confidence": 0.94
+        },
+        {
+          "id": "GPCRs",
+          "term": "GPCRs",
+          "normalized": "GPCRs",
+          "discipline": "基础医学",
+          "evidence": "prototypical GPCRs",
+          "source": "abstract",
+          "confidence": 0.93
+        },
+        {
+          "id": "inflammatory responses",
+          "term": "inflammatory responses",
+          "normalized": "inflammatory responses",
+          "discipline": "基础医学",
+          "evidence": "critical roles in... inflammatory responses",
+          "source": "introduction",
+          "confidence": 0.91
+        },
+        {
+          "id": "autoimmune disorders",
+          "term": "autoimmune disorders",
+          "normalized": "autoimmune disorders",
+          "discipline": "基础医学",
+          "evidence": "implicated in... autoimmune disorders",
+          "source": "introduction",
+          "confidence": 0.92
+        },
+        {
+          "id": "tumor microenvironment",
+          "term": "tumor microenvironment",
+          "normalized": "tumor microenvironment",
+          "discipline": "基础医学",
+          "evidence": "expressed on... tumor microenvironment",
+          "source": "introduction",
+          "confidence": 0.93
+        },
+        {
+          "id": "seven-transmembrane architecture",
+          "term": "seven-transmembrane architecture",
+          "normalized": "seven-transmembrane architecture",
+          "discipline": "生物学",
+          "evidence": "seven-transmembrane architecture characteristic of prototypical GPCRs",
+          "source": "introduction",
+          "confidence": 0.92
+        },
+        {
+          "id": "splice variant",
+          "term": "splice variant",
+          "normalized": "splice variant",
+          "discipline": "生物学",
+          "evidence": "splice variant of CXCR3, referred to as CXCR3-B",
+          "source": "introduction",
+          "confidence": 0.91
+        },
+        {
+          "id": "N-terminal domain",
+          "term": "N-terminal domain",
+          "normalized": "N-terminal domain",
+          "discipline": "生物学",
+          "evidence": "contains an extended N-terminal domain",
+          "source": "introduction",
+          "confidence": 0.93
+        },
+        {
+          "id": "non-canonical complexes",
+          "term": "non-canonical complexes",
+          "normalized": "non-canonical complexes",
+          "discipline": "生物学",
+          "evidence": "non-canonical CXCR3-Gαi-βarr complexes",
+          "source": "introduction",
+          "confidence": 0.94
+        },
+        {
+          "id": "ligand-directed signaling bias",
+          "term": "ligand-directed signaling bias",
+          "normalized": "ligand-directed signaling bias",
+          "discipline": "生物学",
+          "evidence": "principles of ligand-directed signaling bias",
+          "source": "introduction",
+          "confidence": 0.92
+        },
+        {
+          "id": "VUF11418",
+          "term": "VUF11418",
+          "normalized": "VUF11418",
+          "discipline": "化学",
+          "evidence": "VUF11418... developed as G-protein-biased agonist",
+          "source": "introduction",
+          "confidence": 0.95
+        },
+        {
+          "id": "VUF10661",
+          "term": "VUF10661",
+          "normalized": "VUF10661",
+          "discipline": "化学",
+          "evidence": "VUF10661... βarr-biased agonist",
+          "source": "introduction",
+          "confidence": 0.95
+        },
+        {
+          "id": "VUF11207",
+          "term": "VUF11207",
+          "normalized": "VUF11207",
+          "discipline": "化学",
+          "evidence": "VUF11207 is characterized as a CXCR7 selective agonist",
+          "source": "introduction",
+          "confidence": 0.94
+        },
+        {
+          "id": "small molecule agonists",
+          "term": "small molecule agonists",
+          "normalized": "small molecule agonists",
+          "discipline": "化学",
+          "evidence": "CXCR3 and CXCR7 also recognize small molecule agonists",
+          "source": "abstract",
+          "confidence": 0.96
+        },
+        {
+          "id": "chemical promiscuity",
+          "term": "chemical promiscuity",
+          "normalized": "chemical promiscuity",
+          "discipline": "化学",
+          "evidence": "significant promiscuity amongst chemokines for the chemokine receptors",
+          "source": "introduction",
+          "confidence": 0.91
+        }
+      ],
+      "edges": [
+        {
+          "source": "CXCR3",
+          "target": "CXCR7",
+          "relation": "shares common natural agonist CXCL11 while exhibiting prototypical GPCR signaling",
+          "relation_type": "maps_to",
+          "metadata": {
+            "evidence": "CXCR3 and CXCR7 constitute a pair wherein the former is a prototypical GPCR while the latter exhibits selective coupling to βarrs despite sharing a common natural agonist: CXCL11",
+            "source": "struct",
+            "direction": "->"
+          }
+        },
+        {
+          "source": "cryo-EM structures",
+          "target": "allosteric network",
+          "relation": "reveal structural snapshots uncovering",
+          "relation_type": "method_applied_to",
+          "metadata": {
+            "evidence": "we determine cryo-EM structures of CXCR3... These structural snapshots uncover an allosteric network bridging the ligand-binding pocket",
+            "source": "struct",
+            "direction": "->"
+          }
+        },
+        {
+          "source": "orthosteric binding pocket",
+          "target": "dual agonism",
+          "relation": "structural topology allows discovery and validation of",
+          "relation_type": "improves_metric",
+          "metadata": {
+            "evidence": "structural topology of the orthosteric binding pocket also allows us to discover and validate that selected small molecule agonists of CXCR3 display robust agonism at CXCR7",
+            "source": "struct",
+            "direction": "->"
+          }
+        },
+        {
+          "source": "signaling-bias",
+          "target": "transducer-coupling bias",
+          "relation": "provides molecular insights into",
+          "relation_type": "generalizes",
+          "metadata": {
+            "evidence": "study offers molecular insights into signaling-bias and dual agonism in the CXCR3-CXCR7 system",
+            "source": "struct",
+            "direction": "->"
+          }
+        },
+        {
+          "source": "small molecule agonists",
+          "target": "CXCR3",
+          "relation": "recognize through modular orthosteric ligand binding pocket",
+          "relation_type": "constrains",
+          "metadata": {
+            "evidence": "CXCR3 and CXCR7 also recognize small molecule agonists suggesting a modular orthosteric ligand binding pocket",
+            "source": "struct",
+            "direction": "->"
+          }
+        },
+        {
+          "source": "VUF11418",
+          "target": "G-proteins",
+          "relation": "acts as G-protein-biased agonist at",
+          "relation_type": "driven_by",
+          "metadata": {
+            "evidence": "VUF11418... developed as G-protein-biased agonist of CXCR3",
+            "source": "struct",
+            "direction": "->"
+          }
+        },
+        {
+          "source": "chemokine receptors",
+          "target": "seven-transmembrane architecture",
+          "relation": "exhibit conserved",
+          "relation_type": "maps_to",
+          "metadata": {
+            "evidence": "chemokine receptors exhibit a conserved seven-transmembrane architecture characteristic of prototypical GPCRs",
+            "source": "struct",
+            "direction": "->"
+          }
+        },
+        {
+          "source": "ligand-directed signaling bias",
+          "target": "chemical promiscuity",
+          "relation": "principles explored through",
+          "relation_type": "depends_on",
+          "metadata": {
+            "evidence": "significant promiscuity amongst chemokines for the chemokine receptors makes them an interesting system to explore the principles of ligand-directed signaling bias",
+            "source": "struct",
+            "direction": "->"
+          }
+        },
+        {
+          "source": "non-canonical complexes",
+          "target": "CXCL11",
+          "relation": "formation promoted by",
+          "relation_type": "improves_metric",
+          "metadata": {
+            "evidence": "CXCL11... promotes the formation of non-canonical CXCR3-Gαi-βarr complexes",
+            "source": "struct",
+            "direction": "->"
+          }
+        },
+        {
+          "source": "CXCR3",
+          "target": "CXCR7",
+          "relation": "影响",
+          "relation_type": "H1",
+          "metadata": {
+            "claim": "正构结合口袋的结构拓扑特性是解析双激动现象的关键结构基础",
+            "step": 1,
+            "source": "hypothesis",
+            "path_index": 0
+          }
+        },
+        {
+          "source": "CXCR7",
+          "target": "CXCL11",
+          "relation": "导致",
+          "relation_type": "H1",
+          "metadata": {
+            "claim": "双激动现象通过调控信号偏倚特性揭示受体功能分化的分子机制",
+            "step": 2,
+            "source": "hypothesis",
+            "path_index": 0
+          }
+        },
+        {
+          "source": "CXCL11",
+          "target": "cryo-EM structures",
+          "relation": "促进",
+          "relation_type": "H1",
+          "metadata": {
+            "claim": "需要化学学科开发偏向性小分子探针来定量表征转导蛋白偶联偏倚",
+            "step": 3,
+            "source": "hypothesis",
+            "path_index": 0
+          }
+        },
+        {
+          "source": "CXCR3",
+          "target": "CXCR7",
+          "relation": "影响",
+          "relation_type": "H1",
+          "metadata": {
+            "claim": "趋化因子受体保守的七次跨膜架构是研究双激动现象的结构框架",
+            "step": 1,
+            "source": "hypothesis",
+            "path_index": 1
+          }
+        },
+        {
+          "source": "CXCR7",
+          "target": "CXCL11",
+          "relation": "导致",
+          "relation_type": "H1",
+          "metadata": {
+            "claim": "跨膜结构域排列模式通过配体导向信号偏倚调控受体功能多样性",
+            "step": 2,
+            "source": "hypothesis",
+            "path_index": 1
+          }
+        },
+        {
+          "source": "CXCL11",
+          "target": "cryo-EM structures",
+          "relation": "β",
+          "relation_type": "H1",
+          "metadata": {
+            "claim": "需要生物学方法解析β抑制蛋白偶联复合物的动态组装机制",
+            "step": 3,
+            "source": "hypothesis",
+            "path_index": 1
+          }
+        },
+        {
+          "source": "CXCR3",
+          "target": "CXCR7",
+          "relation": "影响",
+          "relation_type": "H1",
+          "metadata": {
+            "claim": "冷冻电镜结构解析揭示变构网络是连接配体结合与信号转导的关键桥梁",
+            "step": 1,
+            "source": "hypothesis",
+            "path_index": 2
+          }
+        },
+        {
+          "source": "CXCR7",
+          "target": "CXCL11",
+          "relation": "导致",
+          "relation_type": "H1",
+          "metadata": {
+            "claim": "变构网络通过稳定不同构象态调控受体激活的动态平衡",
+            "step": 2,
+            "source": "hypothesis",
+            "path_index": 2
+          }
+        },
+        {
+          "source": "CXCL11",
+          "target": "cryo-EM structures",
+          "relation": "促进",
+          "relation_type": "H1",
+          "metadata": {
+            "claim": "需要基础医学建立非经典复合物与炎症反应的病理关联模型",
+            "step": 3,
+            "source": "hypothesis",
+            "path_index": 2
+          }
+        },
+        {
+          "source": "CXCR3",
+          "target": "CXCR7",
+          "relation": "影响",
+          "relation_type": "H2",
+          "metadata": {
+            "claim": "CXCR3影响CXCR7，构成该路径的起始环节。",
+            "step": 1,
+            "source": "hypothesis",
+            "path_index": 0
+          }
+        },
+        {
+          "source": "CXCR7",
+          "target": "CXCL11",
+          "relation": "导致",
+          "relation_type": "H2",
+          "metadata": {
+            "claim": "CXCR7导致CXCL11，形成可操作的中介环节。",
+            "step": 2,
+            "source": "hypothesis",
+            "path_index": 0
+          }
+        },
+        {
+          "source": "CXCL11",
+          "target": "cryo-EM structures",
+          "relation": "促进",
+          "relation_type": "H2",
+          "metadata": {
+            "claim": "如果CXCL11促进cryo-EM structures，则该路径的假设得到可检验的支持。",
+            "step": 3,
+            "source": "hypothesis",
+            "path_index": 0
+          }
+        },
+        {
+          "source": "CXCR3",
+          "target": "CXCR7",
+          "relation": "影响",
+          "relation_type": "H2",
+          "metadata": {
+            "claim": "CXCR3影响CXCR7，构成该路径的起始环节。",
+            "step": 1,
+            "source": "hypothesis",
+            "path_index": 1
+          }
+        },
+        {
+          "source": "CXCR7",
+          "target": "CXCL11",
+          "relation": "导致",
+          "relation_type": "H2",
+          "metadata": {
+            "claim": "CXCR7导致CXCL11，形成可操作的中介环节。",
+            "step": 2,
+            "source": "hypothesis",
+            "path_index": 1
+          }
+        },
+        {
+          "source": "CXCL11",
+          "target": "cryo-EM structures",
+          "relation": "促进",
+          "relation_type": "H2",
+          "metadata": {
+            "claim": "如果CXCL11促进cryo-EM structures，则该路径的假设得到可检验的支持。",
+            "step": 3,
+            "source": "hypothesis",
+            "path_index": 1
+          }
+        },
+        {
+          "source": "CXCR3",
+          "target": "CXCR7",
+          "relation": "揭示结构快照以解析",
+          "relation_type": "H3",
+          "metadata": {
+            "claim": "揭示结构快照以解析",
+            "step": 1,
+            "source": "hypothesis",
+            "path_index": 0
+          }
+        },
+        {
+          "source": "CXCR7",
+          "target": "CXCL11",
+          "relation": "桥接配体结合口袋验证",
+          "relation_type": "H3",
+          "metadata": {
+            "claim": "桥接配体结合口袋验证",
+            "step": 2,
+            "source": "hypothesis",
+            "path_index": 0
+          }
+        },
+        {
+          "source": "CXCL11",
+          "target": "cryo-EM structures",
+          "relation": "允许发现并验证",
+          "relation_type": "H3",
+          "metadata": {
+            "claim": "允许发现并验证",
+            "step": 3,
+            "source": "hypothesis",
+            "path_index": 0
+          }
+        },
+        {
+          "source": "CXCR3",
+          "target": "CXCR7",
+          "relation": "保守特征支撑",
+          "relation_type": "H3",
+          "metadata": {
+            "claim": "保守特征支撑",
+            "step": 1,
+            "source": "hypothesis",
+            "path_index": 1
+          }
+        },
+        {
+          "source": "CXCR7",
+          "target": "CXCL11",
+          "relation": "开发偏倚激动剂依赖",
+          "relation_type": "H3",
+          "metadata": {
+            "claim": "开发偏倚激动剂依赖",
+            "step": 2,
+            "source": "hypothesis",
+            "path_index": 1
+          }
+        },
+        {
+          "source": "CXCL11",
+          "target": "cryo-EM structures",
+          "relation": "作为蛋白偏倚工具验证",
+          "relation_type": "H3",
+          "metadata": {
+            "claim": "作为蛋白偏倚工具验证",
+            "step": 3,
+            "source": "hypothesis",
+            "path_index": 1
+          }
+        }
+      ]
+    },
+    "metrics": {
+      "path_consistency": 0.3333333333333333,
+      "coverage": 0.14814814814814814,
+      "bridging_score": 0.16666666666666666,
+      "rao_stirling_diversity": 0.0,
+      "embedding_bridging": 0.7536,
+      "consistency_precision": 0.0,
+      "consistency_recall": 0.0,
+      "consistency_f1": 0.0,
+      "info_novelty": 0.0,
+      "chain_coherence": 0.7209,
+      "atypical_combination": 0.0,
+      "kg_density": 0.0157,
+      "kg_inverse_modularity": 1.0207,
+      "kg_largest_cc_ratio": 0.2593,
+      "kg_avg_betweenness": 0.0033,
+      "kg_clustering_coefficient": 0.0,
+      "concept_recall": 0.0,
+      "concept_precision": 0.0,
+      "concept_f1": 0.0,
+      "relation_precision": 0.0,
+      "relation_type_accuracy": 0.0,
+      "evidence_coverage": 0.0,
+      "path_alignment_best": 0.0,
+      "path_alignment_mean": 0.0
+    }
+  },
+  {
+    "title": "Pt nanocluster-Fe single atom pairs dual-regulate charge extraction and interfacial reaction for enhanced photoelectric response",
+    "graph": {
+      "nodes": [
+        {
+          "id": "铂纳米簇-铁单原子对",
+          "term": "Pt nanocluster-Fe single atom pairs",
+          "normalized": "铂纳米簇-铁单原子对",
+          "discipline": "化学",
+          "evidence": "integrate Pt nanocluster-Fe single-atom pairs with CuO",
+          "source": "abstract",
+          "confidence": 0.98
+        },
+        {
+          "id": "能级失配",
+          "term": "energy level mismatches",
+          "normalized": "能级失配",
+          "discipline": "化学",
+          "evidence": "Energy level mismatches between semiconductors and cocatalysts",
+          "source": "abstract",
+          "confidence": 0.95
+        },
+        {
+          "id": "载流子复合",
+          "term": "carrier recombination",
+          "normalized": "载流子复合",
+          "discipline": "化学",
+          "evidence": "energy level mismatches often induce carrier recombination",
+          "source": "abstract",
+          "confidence": 0.97
+        },
+        {
+          "id": "欧姆接触",
+          "term": "Ohmic contact",
+          "normalized": "欧姆接触",
+          "discipline": "化学",
+          "evidence": "an Ohmic contact at the CuO/Pt interface",
+          "source": "abstract",
+          "confidence": 0.96
+        },
+        {
+          "id": "铂到铁电荷转移",
+          "term": "Pt-to-Fe charge transfer",
+          "normalized": "铂到铁电荷转移",
+          "discipline": "化学",
+          "evidence": "Pt-to-Fe charge transfer enhances oxygen reduction",
+          "source": "abstract",
+          "confidence": 0.94
+        },
+        {
+          "id": "螯合效应",
+          "term": "chelating effect",
+          "normalized": "螯合效应",
+          "discipline": "化学",
+          "evidence": "exploiting chelating effect of glyphosate on CuO",
+          "source": "abstract",
+          "confidence": 0.93
+        },
+        {
+          "id": "检测限",
+          "term": "detection limit",
+          "normalized": "检测限",
+          "discipline": "化学",
+          "evidence": "achieving a detection limit of 0.41 ng/mL",
+          "source": "abstract",
+          "confidence": 0.92
+        },
+        {
+          "id": "界面反应势垒",
+          "term": "interfacial reaction barriers",
+          "normalized": "界面反应势垒",
+          "discipline": "化学",
+          "evidence": "addressing carrier dynamics and interfacial reaction barriers",
+          "source": "abstract",
+          "confidence": 0.95
+        },
+        {
+          "id": "密度泛函理论计算",
+          "term": "density functional theory (DFT) calculations",
+          "normalized": "密度泛函理论计算",
+          "discipline": "化学",
+          "evidence": "through experimental investigations and DFT calculations",
+          "source": "introduction",
+          "confidence": 0.97
+        },
+        {
+          "id": "氧还原反应",
+          "term": "oxygen reduction reaction (ORR)",
+          "normalized": "氧还原反应",
+          "discipline": "化学",
+          "evidence": "accelerate the interfacial oxygen reduction reaction",
+          "source": "introduction",
+          "confidence": 0.96
+        },
+        {
+          "id": "草甘膦农药",
+          "term": "glyphosate pesticide",
+          "normalized": "草甘膦农药",
+          "discipline": "化学",
+          "evidence": "development of a sensing system for glyphosate pesticide",
+          "source": "introduction",
+          "confidence": 0.94
+        },
+        {
+          "id": "电子转移通道",
+          "term": "electron transfer highway",
+          "normalized": "电子转移通道",
+          "discipline": "化学",
+          "evidence": "construct an electron transfer highway",
+          "source": "introduction",
+          "confidence": 0.93
+        },
+        {
+          "id": "氧化铜",
+          "term": "CuO",
+          "normalized": "氧化铜",
+          "discipline": "化学",
+          "evidence": "integrate Pt nanocluster-Fe single-atom pairs with CuO",
+          "source": "abstract",
+          "confidence": 0.99
+        },
+        {
+          "id": "光催化",
+          "term": "photocatalytic",
+          "normalized": "光催化",
+          "discipline": "化学",
+          "evidence": "limiting photocatalytic and photoelectrochemical efficiency",
+          "source": "abstract",
+          "confidence": 0.95
+        },
+        {
+          "id": "固液界面",
+          "term": "solid-liquid interfaces",
+          "normalized": "固液界面",
+          "discipline": "化学",
+          "evidence": "regulate both solid-solid and solid-liquid interfaces",
+          "source": "abstract",
+          "confidence": 0.94
+        },
+        {
+          "id": "反应动力学",
+          "term": "reaction kinetics",
+          "normalized": "反应动力学",
+          "discipline": "化学",
+          "evidence": "collectively boosting reaction kinetics",
+          "source": "abstract",
+          "confidence": 0.93
+        },
+        {
+          "id": "界面氧还原",
+          "term": "interfacial oxygen reduction",
+          "normalized": "界面氧还原",
+          "discipline": "化学",
+          "evidence": "enhances oxygen reduction at Fe sites",
+          "source": "abstract",
+          "confidence": 0.92
+        },
+        {
+          "id": "铂纳米簇-铁氮碳催化剂",
+          "term": "PtNC/Fe-N-C",
+          "normalized": "铂纳米簇-铁氮碳催化剂",
+          "discipline": "化学",
+          "evidence": "iron single-atom catalysts (PtNC/Fe-N-C)",
+          "source": "introduction",
+          "confidence": 0.96
+        },
+        {
+          "id": "核壳结构催化剂",
+          "term": "CuO@PtNC/Fe-N-C",
+          "normalized": "核壳结构催化剂",
+          "discipline": "化学",
+          "evidence": "CuO@PtNC/Fe-N-C achieves dual interfacial regulation",
+          "source": "introduction",
+          "confidence": 0.95
+        },
+        {
+          "id": "纳米簇耦合单原子对",
+          "term": "nanocluster-coupled single-atom pairs",
+          "normalized": "纳米簇耦合单原子对",
+          "discipline": "材料科学",
+          "evidence": "Pt nanocluster-Fe single atom pairs",
+          "source": "title",
+          "confidence": 0.97
+        },
+        {
+          "id": "光电极",
+          "term": "photoelectrodes",
+          "normalized": "光电极",
+          "discipline": "材料科学",
+          "evidence": "photoelectrodes composed of semiconductors and cocatalysts",
+          "source": "introduction",
+          "confidence": 0.96
+        },
+        {
+          "id": "碳载体",
+          "term": "carbon supports",
+          "normalized": "碳载体",
+          "discipline": "材料科学",
+          "evidence": "Fe single-atom sites in the carbon supports",
+          "source": "introduction",
+          "confidence": 0.95
+        },
+        {
+          "id": "强相互作用",
+          "term": "strong interactions",
+          "normalized": "强相互作用",
+          "discipline": "材料科学",
+          "evidence": "strong interactions between PtNC and Fe sites",
+          "source": "introduction",
+          "confidence": 0.94
+        },
+        {
+          "id": "阴离子交换膜",
+          "term": "anion exchange membrane",
+          "normalized": "阴离子交换膜",
+          "discipline": "材料科学",
+          "evidence": "application scenarios in anion exchange membrane",
+          "source": "introduction",
+          "confidence": 0.92
+        },
+        {
+          "id": "气体扩散层",
+          "term": "gas diffusion layer",
+          "normalized": "气体扩散层",
+          "discipline": "材料科学",
+          "evidence": "optimization of gas diffusion layer materials",
+          "source": "introduction",
+          "confidence": 0.91
+        },
+        {
+          "id": "光电化学系统",
+          "term": "photoelectrochemical (PEC) systems",
+          "normalized": "光电化学系统",
+          "discipline": "物理学",
+          "evidence": "regulate interfaces in PEC systems",
+          "source": "abstract",
+          "confidence": 0.98
+        },
+        {
+          "id": "电子提取",
+          "term": "electron extraction",
+          "normalized": "电子提取",
+          "discipline": "物理学",
+          "evidence": "accelerates electron extraction",
+          "source": "abstract",
+          "confidence": 0.97
+        },
+        {
+          "id": "电荷分离",
+          "term": "charge separation",
+          "normalized": "电荷分离",
+          "discipline": "物理学",
+          "evidence": "facilitate photogenerated charge separation",
+          "source": "introduction",
+          "confidence": 0.96
+        },
+        {
+          "id": "能量转换",
+          "term": "energy conversion",
+          "normalized": "能量转换",
+          "discipline": "物理学",
+          "evidence": "enhanced energy conversion applications",
+          "source": "abstract",
+          "confidence": 0.95
+        },
+        {
+          "id": "界面电子转移",
+          "term": "interfacial electron transfer",
+          "normalized": "界面电子转移",
+          "discipline": "物理学",
+          "evidence": "impede electron transfer from semiconductor to cocatalyst",
+          "source": "introduction",
+          "confidence": 0.94
+        },
+        {
+          "id": "密度泛函理论",
+          "term": "density functional theory",
+          "normalized": "密度泛函理论",
+          "discipline": "物理学",
+          "evidence": "density functional theory calculations",
+          "source": "introduction",
+          "confidence": 0.93
+        },
+        {
+          "id": "Pt-Fe双金属催化剂",
+          "term": "Pt-Fe双金属催化剂",
+          "normalized": "Pt-Fe双金属催化剂",
+          "discipline": "struct_relation_inferred",
+          "evidence": "",
+          "source": "struct_relation_inferred",
+          "confidence": 0.8
+        },
+        {
+          "id": "电荷转移机制",
+          "term": "电荷转移机制",
+          "normalized": "电荷转移机制",
+          "discipline": "struct_relation_inferred",
+          "evidence": "",
+          "source": "struct_relation_inferred",
+          "confidence": 0.8
+        },
+        {
+          "id": "ORR",
+          "term": "ORR",
+          "normalized": "ORR",
+          "discipline": "struct_relation_inferred",
+          "evidence": "",
+          "source": "struct_relation_inferred",
+          "confidence": 0.8
+        },
+        {
+          "id": "DFT计算",
+          "term": "DFT计算",
+          "normalized": "DFT计算",
+          "discipline": "struct_relation_inferred",
+          "evidence": "",
+          "source": "struct_relation_inferred",
+          "confidence": 0.8
+        },
+        {
+          "id": "纳米簇-单原子对",
+          "term": "纳米簇-单原子对",
+          "normalized": "纳米簇-单原子对",
+          "discipline": "struct_relation_inferred",
+          "evidence": "",
+          "source": "struct_relation_inferred",
+          "confidence": 0.8
+        }
+      ],
+      "edges": [
+        {
+          "source": "Pt-Fe双金属催化剂",
+          "target": "固液界面",
+          "relation": "通过Pt纳米簇-Fe单原子对调节固液界面性质",
+          "relation_type": "method_applied_to",
+          "metadata": {
+            "evidence": "integrate Pt nanocluster-Fe single-atom pairs with CuO to regulate both solid-solid and solid-liquid interfaces",
+            "source": "struct",
+            "direction": "->"
+          }
+        },
+        {
+          "source": "欧姆接触",
+          "target": "电子提取",
+          "relation": "在CuO/Pt界面形成的欧姆接触加速电子提取",
+          "relation_type": "improves_metric",
+          "metadata": {
+            "evidence": "an Ohmic contact at the CuO/Pt interface accelerates electron extraction",
+            "source": "struct",
+            "direction": "->"
+          }
+        },
+        {
+          "source": "电荷转移机制",
+          "target": "ORR",
+          "relation": "Pt到Fe的电荷转移增强氧还原反应动力学",
+          "relation_type": "improves_metric",
+          "metadata": {
+            "evidence": "Pt-to-Fe charge transfer enhances oxygen reduction at Fe sites",
+            "source": "struct",
+            "direction": "->"
+          }
+        },
+        {
+          "source": "螯合效应",
+          "target": "检测限",
+          "relation": "草甘膦的螯合效应通过阻断电子转移实现超低检测限",
+          "relation_type": "constrains",
+          "metadata": {
+            "evidence": "exploiting chelating effect of glyphosate on CuO to impede electron transfer, achieving a detection limit of 0.41 ng/mL",
+            "source": "struct",
+            "direction": "->"
+          }
+        },
+        {
+          "source": "DFT计算",
+          "target": "界面反应势垒",
+          "relation": "密度泛函理论计算揭示界面反应势垒的协同调控机制",
+          "relation_type": "inferred_from",
+          "metadata": {
+            "evidence": "through experimental investigations and DFT calculations",
+            "source": "struct",
+            "direction": "->"
+          }
+        },
+        {
+          "source": "纳米簇-单原子对",
+          "target": "能量转换",
+          "relation": "纳米簇-单原子对设计提升能量转换效率",
+          "relation_type": "generalizes",
+          "metadata": {
+            "evidence": "advances cocatalyst design for enhanced energy conversion",
+            "source": "struct",
+            "direction": "->"
+          }
+        },
+        {
+          "source": "电子转移通道",
+          "target": "载流子复合",
+          "relation": "构建电子转移通道抑制载流子复合",
+          "relation_type": "constrains",
+          "metadata": {
+            "evidence": "construct an electron transfer highway to mitigate charge recombination",
+            "source": "struct",
+            "direction": "->"
+          }
+        },
+        {
+          "source": "铂纳米簇-铁单原子对",
+          "target": "固液界面",
+          "relation": "通过纳米簇-单原子对调节固液界面性质",
+          "relation_type": "H1",
+          "metadata": {
+            "claim": "化学学科的铂铁双金属催化剂通过调控固液界面性质实现界面反应增强",
+            "step": 1,
+            "source": "hypothesis",
+            "path_index": 0
+          }
+        },
+        {
+          "source": "固液界面",
+          "target": "界面氧还原",
+          "relation": "调控固液界面性质可提升界面氧还原效率",
+          "relation_type": "H1",
+          "metadata": {
+            "claim": "材料科学的纳米簇-单原子对设计通过优化固液界面结构促进界面氧还原",
+            "step": 2,
+            "source": "hypothesis",
+            "path_index": 0
+          }
+        },
+        {
+          "source": "界面氧还原",
+          "target": "反应动力学",
+          "relation": "界面氧还原效率提升可协同增强反应动力学",
+          "relation_type": "H1",
+          "metadata": {
+            "claim": "物理学的界面电子转移机制通过加速氧还原反应动力学实现电荷提取与反应协同增强",
+            "step": 3,
+            "source": "hypothesis",
+            "path_index": 0
+          }
+        },
+        {
+          "source": "铂纳米簇-铁单原子对",
+          "target": "铂到铁电荷转移",
+          "relation": "到的电荷转移增强氧还原反应动力学",
+          "relation_type": "H1",
+          "metadata": {
+            "claim": "化学学科的铂铁双金属催化剂通过电荷转移机制调控电子分布",
+            "step": 1,
+            "source": "hypothesis",
+            "path_index": 1
+          }
+        },
+        {
+          "source": "铂到铁电荷转移",
+          "target": "电子转移通道",
+          "relation": "电荷转移形成的电子转移通道可抑制载流子复合",
+          "relation_type": "H1",
+          "metadata": {
+            "claim": "物理学的电子转移通道构建通过抑制载流子复合提升电荷分离效率",
+            "step": 2,
+            "source": "hypothesis",
+            "path_index": 1
+          }
+        },
+        {
+          "source": "电子转移通道",
+          "target": "能量转换",
+          "relation": "电子转移通道优化可增强光电化学系统的能量转换效率",
+          "relation_type": "H1",
+          "metadata": {
+            "claim": "材料科学的核壳结构催化剂设计通过优化电子转移通道实现能量转换效率提升",
+            "step": 3,
+            "source": "hypothesis",
+            "path_index": 1
+          }
+        },
+        {
+          "source": "铂纳米簇-铁单原子对",
+          "target": "界面反应势垒",
+          "relation": "纳米簇-单原子对设计可调控界面反应势垒",
+          "relation_type": "H1",
+          "metadata": {
+            "claim": "化学学科的铂铁双金属催化剂通过调控界面反应势垒改善反应环境",
+            "step": 1,
+            "source": "hypothesis",
+            "path_index": 2
+          }
+        },
+        {
+          "source": "界面反应势垒",
+          "target": "密度泛函理论计算",
+          "relation": "界面反应势垒的协同调控机制需通过密度泛函理论计算解析",
+          "relation_type": "H1",
+          "metadata": {
+            "claim": "物理学的计算通过解析界面反应势垒的协同调控机制提供理论支撑",
+            "step": 2,
+            "source": "hypothesis",
+            "path_index": 2
+          }
+        },
+        {
+          "source": "密度泛函理论计算",
+          "target": "光电极",
+          "relation": "理论计算指导的催化剂设计可优化光电极的电荷分离性能",
+          "relation_type": "H1",
+          "metadata": {
+            "claim": "材料科学的光电极结构优化通过理论计算指导实现电荷提取与反应协同增强",
+            "step": 3,
+            "source": "hypothesis",
+            "path_index": 2
+          }
+        },
+        {
+          "source": "纳米簇耦合单原子对",
+          "target": "固液界面",
+          "relation": "材料科学的纳米簇-单原子对设计优化固液界面结构",
+          "relation_type": "H2",
+          "metadata": {
+            "claim": "固液界面调控影响电子传输效率",
+            "step": 1,
+            "source": "hypothesis",
+            "path_index": 0
+          }
+        },
+        {
+          "source": "固液界面",
+          "target": "电子提取",
+          "relation": "固液界面性质调节决定电子提取速率",
+          "relation_type": "H2",
+          "metadata": {
+            "claim": "界面优化加速物理电子传输过程",
+            "step": 2,
+            "source": "hypothesis",
+            "path_index": 0
+          }
+        },
+        {
+          "source": "电子提取",
+          "target": "能量转换",
+          "relation": "电子提取效率提升促进能量转换",
+          "relation_type": "H2",
+          "metadata": {
+            "claim": "物理电子传输增强主学科能量转换效率",
+            "step": 3,
+            "source": "hypothesis",
+            "path_index": 0
+          }
+        },
+        {
+          "source": "密度泛函理论计算",
+          "target": "界面反应势垒",
+          "relation": "计算解析界面反应势垒分布特征",
+          "relation_type": "H2",
+          "metadata": {
+            "claim": "势垒分布揭示协同调控机制",
+            "step": 1,
+            "source": "hypothesis",
+            "path_index": 1
+          }
+        },
+        {
+          "source": "界面反应势垒",
+          "target": "反应动力学",
+          "relation": "势垒高度调控影响反应动力学速率",
+          "relation_type": "H2",
+          "metadata": {
+            "claim": "势垒降低提升化学反应动力学",
+            "step": 2,
+            "source": "hypothesis",
+            "path_index": 1
+          }
+        },
+        {
+          "source": "反应动力学",
+          "target": "欧姆接触",
+          "relation": "反应动力学优化促进氧还原反应",
+          "relation_type": "H2",
+          "metadata": {
+            "claim": "协同机制增强主学科催化性能",
+            "step": 3,
+            "source": "hypothesis",
+            "path_index": 1
+          }
+        },
+        {
+          "source": "铂纳米簇-铁单原子对",
+          "target": "电子转移通道",
+          "relation": "通过调节固液界面性质协同调控电子转移通道构建",
+          "relation_type": "H3",
+          "metadata": {
+            "claim": "铂纳米簇-铁单原子对 通过调节固液界面性质协同调控电子转移通道构建 电子转移通道",
+            "step": 1,
+            "source": "hypothesis",
+            "path_index": 0
+          }
+        },
+        {
+          "source": "电子转移通道",
+          "target": "电荷分离",
+          "relation": "抑制载流子复合提升电荷分离效率",
+          "relation_type": "H3",
+          "metadata": {
+            "claim": "电子转移通道 抑制载流子复合提升电荷分离效率 电荷分离",
+            "step": 2,
+            "source": "hypothesis",
+            "path_index": 0
+          }
+        },
+        {
+          "source": "电荷分离",
+          "target": "能量转换",
+          "relation": "促进光电化学系统能量转换效率提升",
+          "relation_type": "H3",
+          "metadata": {
+            "claim": "电荷分离 促进光电化学系统能量转换效率提升 能量转换",
+            "step": 3,
+            "source": "hypothesis",
+            "path_index": 0
+          }
+        },
+        {
+          "source": "螯合效应",
+          "target": "检测限",
+          "relation": "通过草甘膦与氧化铜的相互作用构建检测限降低机制",
+          "relation_type": "H3",
+          "metadata": {
+            "claim": "螯合效应 通过草甘膦与氧化铜的相互作用构建检测限降低机制 检测限",
+            "step": 1,
+            "source": "hypothesis",
+            "path_index": 1
+          }
+        },
+        {
+          "source": "检测限",
+          "target": "氧还原反应",
+          "relation": "依赖界面氧还原反应动力学优化实现信号放大",
+          "relation_type": "H3",
+          "metadata": {
+            "claim": "检测限 依赖界面氧还原反应动力学优化实现信号放大 氧还原反应",
+            "step": 2,
+            "source": "hypothesis",
+            "path_index": 1
+          }
+        },
+        {
+          "source": "氧还原反应",
+          "target": "能量转换",
+          "relation": "通过铂到铁电荷转移增强协同提升能量转换效率",
+          "relation_type": "H3",
+          "metadata": {
+            "claim": "氧还原反应 通过铂到铁电荷转移增强协同提升能量转换效率 能量转换",
+            "step": 3,
+            "source": "hypothesis",
+            "path_index": 1
+          }
+        },
+        {
+          "source": "核壳结构催化剂",
+          "target": "光电极",
+          "relation": "利用纳米簇耦合单原子对优化光电极结构",
+          "relation_type": "H3",
+          "metadata": {
+            "claim": "核壳结构催化剂 利用纳米簇耦合单原子对优化光电极结构 光电极",
+            "step": 1,
+            "source": "hypothesis",
+            "path_index": 2
+          }
+        },
+        {
+          "source": "光电极",
+          "target": "电子提取",
+          "relation": "通过界面电子转移加速实现载流子高效提取",
+          "relation_type": "H3",
+          "metadata": {
+            "claim": "光电极 通过界面电子转移加速实现载流子高效提取 电子提取",
+            "step": 2,
+            "source": "hypothesis",
+            "path_index": 2
+          }
+        },
+        {
+          "source": "电子提取",
+          "target": "光电化学系统",
+          "relation": "降低界面反应势垒提升光电化学系统响应",
+          "relation_type": "H3",
+          "metadata": {
+            "claim": "电子提取 降低界面反应势垒提升光电化学系统响应 光电化学系统",
+            "step": 3,
+            "source": "hypothesis",
+            "path_index": 2
+          }
+        }
+      ]
+    },
+    "metrics": {
+      "path_consistency": 0.041666666666666664,
+      "coverage": 0.5277777777777778,
+      "bridging_score": 0.3333333333333333,
+      "rao_stirling_diversity": 0.156,
+      "embedding_bridging": 0.6135,
+      "consistency_precision": 0.0,
+      "consistency_recall": 0.0,
+      "consistency_f1": 0.0,
+      "info_novelty": 0.0,
+      "chain_coherence": 0.7757,
+      "atypical_combination": 0.5531,
+      "kg_density": 0.0238,
+      "kg_inverse_modularity": 0.8615,
+      "kg_largest_cc_ratio": 0.6389,
+      "kg_avg_betweenness": 0.024,
+      "kg_clustering_coefficient": 0.0685,
+      "concept_recall": 0.0,
+      "concept_precision": 0.0,
+      "concept_f1": 0.0,
+      "relation_precision": 0.0,
+      "relation_type_accuracy": 0.0,
+      "evidence_coverage": 0.0,
+      "path_alignment_best": 0.0,
+      "path_alignment_mean": 0.0
+    }
+  }
+]

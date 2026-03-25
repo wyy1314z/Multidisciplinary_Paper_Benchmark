@@ -1,0 +1,621 @@
+[
+  {
+    "paper_id": "781a73f25e93",
+    "method": "P1",
+    "elapsed_seconds": 22.56127166748047,
+    "text_metrics": {
+      "bertscore_p": 0.6778,
+      "bertscore_r": 0.7659,
+      "bertscore_f1": 0.7192,
+      "rouge1": 0.0465,
+      "rouge2": 0.0,
+      "rougeL": 0.0465,
+      "bleu": 0.0
+    },
+    "llm_judge": {
+      "novelty": 9.0,
+      "specificity": 9.0,
+      "feasibility": 8.0,
+      "relevance": 8.0,
+      "cross_disciplinary": 9.0
+    },
+    "num_hypotheses": 1,
+    "avg_hypothesis_length": 279.0,
+    "structural_metrics": null
+  },
+  {
+    "paper_id": "781a73f25e93",
+    "method": "P2",
+    "elapsed_seconds": 34.131072998046875,
+    "text_metrics": {
+      "bertscore_p": 0.669,
+      "bertscore_r": 0.7469,
+      "bertscore_f1": 0.7058,
+      "rouge1": 0.153,
+      "rouge2": 0.0331,
+      "rougeL": 0.0984,
+      "bleu": 0.0
+    },
+    "llm_judge": {
+      "novelty": 8.0,
+      "specificity": 8.0,
+      "feasibility": 8.0,
+      "relevance": 10.0,
+      "cross_disciplinary": 9.0
+    },
+    "num_hypotheses": 1,
+    "avg_hypothesis_length": 653.0,
+    "structural_metrics": null
+  },
+  {
+    "paper_id": "781a73f25e93",
+    "method": "P3",
+    "elapsed_seconds": 39.83563232421875,
+    "text_metrics": {
+      "bertscore_p": 0.682,
+      "bertscore_r": 0.7585,
+      "bertscore_f1": 0.7182,
+      "rouge1": 0.1654,
+      "rouge2": 0.0303,
+      "rougeL": 0.1278,
+      "bleu": 0.0
+    },
+    "llm_judge": {
+      "novelty": 8.0,
+      "specificity": 9.0,
+      "feasibility": 7.0,
+      "relevance": 10.0,
+      "cross_disciplinary": 9.0
+    },
+    "num_hypotheses": 1,
+    "avg_hypothesis_length": 1260.0,
+    "structural_metrics": null
+  },
+  {
+    "paper_id": "781a73f25e93",
+    "method": "P4",
+    "elapsed_seconds": 62.04558348655701,
+    "text_metrics": {
+      "bertscore_p": 0.767,
+      "bertscore_r": 0.8444,
+      "bertscore_f1": 0.8039,
+      "rouge1": 0.2045,
+      "rouge2": 0.0449,
+      "rougeL": 0.0863,
+      "bleu": 0.0124
+    },
+    "llm_judge": {},
+    "num_hypotheses": 1,
+    "avg_hypothesis_length": 3964.0,
+    "structural_metrics": null
+  },
+  {
+    "paper_id": "781a73f25e93",
+    "method": "P5",
+    "elapsed_seconds": 0.00015234947204589844,
+    "text_metrics": {
+      "bertscore_p": 0.6747,
+      "bertscore_r": 0.7456,
+      "bertscore_f1": 0.7084,
+      "rouge1": 0.0,
+      "rouge2": 0.0,
+      "rougeL": 0.0,
+      "bleu": 0.0
+    },
+    "llm_judge": {
+      "novelty": 9.0,
+      "specificity": 9.0,
+      "feasibility": 8.0,
+      "relevance": 10.0,
+      "cross_disciplinary": 8.0
+    },
+    "num_hypotheses": 7,
+    "avg_hypothesis_length": 53.1,
+    "structural_metrics": {
+      "has_L1": 1.0,
+      "has_L2": 1.0,
+      "has_L3": 1.0,
+      "avg_path_length": 3.0,
+      "relation_diversity": 2.7143,
+      "chain_coherence": 1.0,
+      "entity_grounding_rate": 1.0
+    },
+    "L1_path_count": 3,
+    "L2_path_count": 2,
+    "L3_path_count": 2
+  },
+  {
+    "paper_id": "55d763a6e8df",
+    "method": "P1",
+    "elapsed_seconds": 22.425830602645874,
+    "text_metrics": {
+      "bertscore_p": 0.6595,
+      "bertscore_r": 0.7547,
+      "bertscore_f1": 0.7038,
+      "rouge1": 0.0,
+      "rouge2": 0.0,
+      "rougeL": 0.0,
+      "bleu": 0.0
+    },
+    "llm_judge": {
+      "novelty": 9.0,
+      "specificity": 9.0,
+      "feasibility": 7.0,
+      "relevance": 9.0,
+      "cross_disciplinary": 8.0
+    },
+    "num_hypotheses": 1,
+    "avg_hypothesis_length": 311.0,
+    "structural_metrics": null
+  },
+  {
+    "paper_id": "55d763a6e8df",
+    "method": "P2",
+    "elapsed_seconds": 31.703439235687256,
+    "text_metrics": {
+      "bertscore_p": 0.6589,
+      "bertscore_r": 0.7486,
+      "bertscore_f1": 0.7009,
+      "rouge1": 0.0195,
+      "rouge2": 0.0,
+      "rougeL": 0.0195,
+      "bleu": 0.0
+    },
+    "llm_judge": {
+      "novelty": 8.0,
+      "specificity": 9.0,
+      "feasibility": 8.0,
+      "relevance": 9.0,
+      "cross_disciplinary": 9.0
+    },
+    "num_hypotheses": 1,
+    "avg_hypothesis_length": 551.0,
+    "structural_metrics": null
+  },
+  {
+    "paper_id": "55d763a6e8df",
+    "method": "P3",
+    "elapsed_seconds": 37.5244574546814,
+    "text_metrics": {
+      "bertscore_p": 0.6644,
+      "bertscore_r": 0.7647,
+      "bertscore_f1": 0.711,
+      "rouge1": 0.0286,
+      "rouge2": 0.0,
+      "rougeL": 0.0286,
+      "bleu": 0.0
+    },
+    "llm_judge": {
+      "novelty": 8.0,
+      "specificity": 9.0,
+      "feasibility": 8.0,
+      "relevance": 10.0,
+      "cross_disciplinary": 9.0
+    },
+    "num_hypotheses": 1,
+    "avg_hypothesis_length": 678.0,
+    "structural_metrics": null
+  },
+  {
+    "paper_id": "55d763a6e8df",
+    "method": "P4",
+    "elapsed_seconds": 66.91579031944275,
+    "text_metrics": {
+      "bertscore_p": 0.6624,
+      "bertscore_r": 0.757,
+      "bertscore_f1": 0.7065,
+      "rouge1": 0.0391,
+      "rouge2": 0.0,
+      "rougeL": 0.0312,
+      "bleu": 0.0
+    },
+    "llm_judge": {},
+    "num_hypotheses": 1,
+    "avg_hypothesis_length": 1962.0,
+    "structural_metrics": null
+  },
+  {
+    "paper_id": "55d763a6e8df",
+    "method": "P5",
+    "elapsed_seconds": 8.416175842285156e-05,
+    "text_metrics": {
+      "bertscore_p": 0.6697,
+      "bertscore_r": 0.7572,
+      "bertscore_f1": 0.7108,
+      "rouge1": 0.0,
+      "rouge2": 0.0,
+      "rougeL": 0.0,
+      "bleu": 0.0
+    },
+    "llm_judge": {
+      "novelty": 7.0,
+      "specificity": 6.0,
+      "feasibility": 8.0,
+      "relevance": 10.0,
+      "cross_disciplinary": 7.0
+    },
+    "num_hypotheses": 7,
+    "avg_hypothesis_length": 41.7,
+    "structural_metrics": {
+      "has_L1": 1.0,
+      "has_L2": 1.0,
+      "has_L3": 1.0,
+      "avg_path_length": 3.0,
+      "relation_diversity": 2.4286,
+      "chain_coherence": 1.0,
+      "entity_grounding_rate": 1.0
+    },
+    "L1_path_count": 3,
+    "L2_path_count": 2,
+    "L3_path_count": 2
+  },
+  {
+    "paper_id": "4fba7fb15a7e",
+    "method": "P1",
+    "elapsed_seconds": 42.164759397506714,
+    "text_metrics": {
+      "bertscore_p": 0.6656,
+      "bertscore_r": 0.7594,
+      "bertscore_f1": 0.7094,
+      "rouge1": 0.0092,
+      "rouge2": 0.0,
+      "rougeL": 0.0092,
+      "bleu": 0.0
+    },
+    "llm_judge": {
+      "novelty": 9.0,
+      "specificity": 9.0,
+      "feasibility": 8.0,
+      "relevance": 9.0,
+      "cross_disciplinary": 9.0
+    },
+    "num_hypotheses": 1,
+    "avg_hypothesis_length": 337.0,
+    "structural_metrics": null
+  },
+  {
+    "paper_id": "4fba7fb15a7e",
+    "method": "P2",
+    "elapsed_seconds": 33.74469709396362,
+    "text_metrics": {
+      "bertscore_p": 0.6619,
+      "bertscore_r": 0.7448,
+      "bertscore_f1": 0.7009,
+      "rouge1": 0.0364,
+      "rouge2": 0.0,
+      "rougeL": 0.0273,
+      "bleu": 0.0
+    },
+    "llm_judge": {
+      "novelty": 8.0,
+      "specificity": 8.0,
+      "feasibility": 8.0,
+      "relevance": 9.0,
+      "cross_disciplinary": 9.0
+    },
+    "num_hypotheses": 1,
+    "avg_hypothesis_length": 640.0,
+    "structural_metrics": null
+  },
+  {
+    "paper_id": "4fba7fb15a7e",
+    "method": "P3",
+    "elapsed_seconds": 37.2719304561615,
+    "text_metrics": {
+      "bertscore_p": 0.6648,
+      "bertscore_r": 0.7466,
+      "bertscore_f1": 0.7033,
+      "rouge1": 0.1092,
+      "rouge2": 0.0424,
+      "rougeL": 0.084,
+      "bleu": 0.0013
+    },
+    "llm_judge": {
+      "novelty": 8.0,
+      "specificity": 8.0,
+      "feasibility": 7.0,
+      "relevance": 9.0,
+      "cross_disciplinary": 8.0
+    },
+    "num_hypotheses": 1,
+    "avg_hypothesis_length": 1131.0,
+    "structural_metrics": null
+  },
+  {
+    "paper_id": "4fba7fb15a7e",
+    "method": "P4",
+    "elapsed_seconds": 56.33796000480652,
+    "text_metrics": {
+      "bertscore_p": 0.6651,
+      "bertscore_r": 0.7495,
+      "bertscore_f1": 0.7048,
+      "rouge1": 0.0557,
+      "rouge2": 0.0,
+      "rougeL": 0.0488,
+      "bleu": 0.0
+    },
+    "llm_judge": {},
+    "num_hypotheses": 1,
+    "avg_hypothesis_length": 1750.0,
+    "structural_metrics": null
+  },
+  {
+    "paper_id": "4fba7fb15a7e",
+    "method": "P5",
+    "elapsed_seconds": 8.58306884765625e-05,
+    "text_metrics": {
+      "bertscore_p": 0.6696,
+      "bertscore_r": 0.7463,
+      "bertscore_f1": 0.7059,
+      "rouge1": 0.0,
+      "rouge2": 0.0,
+      "rougeL": 0.0,
+      "bleu": 0.0
+    },
+    "llm_judge": {
+      "novelty": 8.0,
+      "specificity": 9.0,
+      "feasibility": 9.0,
+      "relevance": 10.0,
+      "cross_disciplinary": 7.0
+    },
+    "num_hypotheses": 6,
+    "avg_hypothesis_length": 55.7,
+    "structural_metrics": {
+      "has_L1": 1.0,
+      "has_L2": 1.0,
+      "has_L3": 1.0,
+      "avg_path_length": 3.0,
+      "relation_diversity": 3.0,
+      "chain_coherence": 1.0,
+      "entity_grounding_rate": 1.0
+    },
+    "L1_path_count": 2,
+    "L2_path_count": 2,
+    "L3_path_count": 2
+  },
+  {
+    "paper_id": "a051e9c5ec6c",
+    "method": "P1",
+    "elapsed_seconds": 21.819950580596924,
+    "text_metrics": {
+      "bertscore_p": 0.6623,
+      "bertscore_r": 0.7351,
+      "bertscore_f1": 0.6968,
+      "rouge1": 0.0,
+      "rouge2": 0.0,
+      "rougeL": 0.0,
+      "bleu": 0.0
+    },
+    "llm_judge": {
+      "novelty": 9.0,
+      "specificity": 9.0,
+      "feasibility": 8.0,
+      "relevance": 9.0,
+      "cross_disciplinary": 9.0
+    },
+    "num_hypotheses": 1,
+    "avg_hypothesis_length": 298.0,
+    "structural_metrics": null
+  },
+  {
+    "paper_id": "a051e9c5ec6c",
+    "method": "P2",
+    "elapsed_seconds": 27.98877716064453,
+    "text_metrics": {
+      "bertscore_p": 0.6642,
+      "bertscore_r": 0.7372,
+      "bertscore_f1": 0.6988,
+      "rouge1": 0.0299,
+      "rouge2": 0.0,
+      "rougeL": 0.0299,
+      "bleu": 0.0
+    },
+    "llm_judge": {
+      "novelty": 9.0,
+      "specificity": 8.0,
+      "feasibility": 7.0,
+      "relevance": 9.0,
+      "cross_disciplinary": 9.0
+    },
+    "num_hypotheses": 1,
+    "avg_hypothesis_length": 451.0,
+    "structural_metrics": null
+  },
+  {
+    "paper_id": "a051e9c5ec6c",
+    "method": "P3",
+    "elapsed_seconds": 47.31114649772644,
+    "text_metrics": {
+      "bertscore_p": 0.8322,
+      "bertscore_r": 0.8662,
+      "bertscore_f1": 0.8488,
+      "rouge1": 0.3347,
+      "rouge2": 0.1245,
+      "rougeL": 0.1405,
+      "bleu": 0.1274
+    },
+    "llm_judge": {
+      "novelty": 9.0,
+      "specificity": 8.0,
+      "feasibility": 7.0,
+      "relevance": 10.0,
+      "cross_disciplinary": 9.0
+    },
+    "num_hypotheses": 1,
+    "avg_hypothesis_length": 2407.0,
+    "structural_metrics": null
+  },
+  {
+    "paper_id": "a051e9c5ec6c",
+    "method": "P4",
+    "elapsed_seconds": 59.0744411945343,
+    "text_metrics": {
+      "bertscore_p": 0.7828,
+      "bertscore_r": 0.8318,
+      "bertscore_f1": 0.8066,
+      "rouge1": 0.2238,
+      "rouge2": 0.0449,
+      "rougeL": 0.0951,
+      "bleu": 0.0196
+    },
+    "llm_judge": {},
+    "num_hypotheses": 1,
+    "avg_hypothesis_length": 4686.0,
+    "structural_metrics": null
+  },
+  {
+    "paper_id": "a051e9c5ec6c",
+    "method": "P5",
+    "elapsed_seconds": 0.0001895427703857422,
+    "text_metrics": {
+      "bertscore_p": 0.6758,
+      "bertscore_r": 0.7387,
+      "bertscore_f1": 0.7058,
+      "rouge1": 0.0,
+      "rouge2": 0.0,
+      "rougeL": 0.0,
+      "bleu": 0.0
+    },
+    "llm_judge": {
+      "novelty": 8.0,
+      "specificity": 9.0,
+      "feasibility": 9.0,
+      "relevance": 10.0,
+      "cross_disciplinary": 7.0
+    },
+    "num_hypotheses": 6,
+    "avg_hypothesis_length": 39.5,
+    "structural_metrics": {
+      "has_L1": 1.0,
+      "has_L2": 1.0,
+      "has_L3": 1.0,
+      "avg_path_length": 3.0,
+      "relation_diversity": 0.6667,
+      "chain_coherence": 1.0,
+      "entity_grounding_rate": 1.0
+    },
+    "L1_path_count": 2,
+    "L2_path_count": 2,
+    "L3_path_count": 2
+  },
+  {
+    "paper_id": "eb2b59f7476b",
+    "method": "P1",
+    "elapsed_seconds": 64.68587636947632,
+    "text_metrics": {
+      "bertscore_p": 0.6737,
+      "bertscore_r": 0.7315,
+      "bertscore_f1": 0.7015,
+      "rouge1": 0.0202,
+      "rouge2": 0.0,
+      "rougeL": 0.0202,
+      "bleu": 0.0
+    },
+    "llm_judge": {
+      "novelty": 9.0,
+      "specificity": 9.0,
+      "feasibility": 7.0,
+      "relevance": 9.0,
+      "cross_disciplinary": 9.0
+    },
+    "num_hypotheses": 1,
+    "avg_hypothesis_length": 409.0,
+    "structural_metrics": null
+  },
+  {
+    "paper_id": "eb2b59f7476b",
+    "method": "P2",
+    "elapsed_seconds": 21.551106691360474,
+    "text_metrics": {
+      "bertscore_p": 0.8312,
+      "bertscore_r": 0.8307,
+      "bertscore_f1": 0.8309,
+      "rouge1": 0.3499,
+      "rouge2": 0.0523,
+      "rougeL": 0.1418,
+      "bleu": 0.0369
+    },
+    "llm_judge": {
+      "novelty": 9.0,
+      "specificity": 9.0,
+      "feasibility": 8.0,
+      "relevance": 10.0,
+      "cross_disciplinary": 9.0
+    },
+    "num_hypotheses": 1,
+    "avg_hypothesis_length": 1700.0,
+    "structural_metrics": null
+  },
+  {
+    "paper_id": "eb2b59f7476b",
+    "method": "P3",
+    "elapsed_seconds": 28.811801433563232,
+    "text_metrics": {
+      "bertscore_p": 0.6803,
+      "bertscore_r": 0.7436,
+      "bertscore_f1": 0.7105,
+      "rouge1": 0.1143,
+      "rouge2": 0.0385,
+      "rougeL": 0.0952,
+      "bleu": 0.0
+    },
+    "llm_judge": {},
+    "num_hypotheses": 1,
+    "avg_hypothesis_length": 744.0,
+    "structural_metrics": null
+  },
+  {
+    "paper_id": "eb2b59f7476b",
+    "method": "P4",
+    "elapsed_seconds": 49.29847812652588,
+    "text_metrics": {
+      "bertscore_p": 0.6907,
+      "bertscore_r": 0.7393,
+      "bertscore_f1": 0.7141,
+      "rouge1": 0.0684,
+      "rouge2": 0.0,
+      "rougeL": 0.0684,
+      "bleu": 0.0
+    },
+    "llm_judge": {},
+    "num_hypotheses": 1,
+    "avg_hypothesis_length": 1727.0,
+    "structural_metrics": null
+  },
+  {
+    "paper_id": "eb2b59f7476b",
+    "method": "P5",
+    "elapsed_seconds": 9.34600830078125e-05,
+    "text_metrics": {
+      "bertscore_p": 0.6729,
+      "bertscore_r": 0.7319,
+      "bertscore_f1": 0.7011,
+      "rouge1": 0.0,
+      "rouge2": 0.0,
+      "rougeL": 0.0,
+      "bleu": 0.0
+    },
+    "llm_judge": {
+      "novelty": 7.0,
+      "specificity": 9.0,
+      "feasibility": 9.0,
+      "relevance": 10.0,
+      "cross_disciplinary": 8.0
+    },
+    "num_hypotheses": 5,
+    "avg_hypothesis_length": 57.2,
+    "structural_metrics": {
+      "has_L1": 1.0,
+      "has_L2": 1.0,
+      "has_L3": 1.0,
+      "avg_path_length": 3.0,
+      "relation_diversity": 3.0,
+      "chain_coherence": 1.0,
+      "entity_grounding_rate": 1.0
+    },
+    "L1_path_count": 2,
+    "L2_path_count": 2,
+    "L3_path_count": 1
+  }
+]

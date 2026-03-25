@@ -1,0 +1,685 @@
+[
+  {
+    "title": "Using machine learning to simultaneously quantify multiple cognitive components of episodic memory",
+    "primary": "计算机科学技术",
+    "secondary_list": [
+      "生物学"
+    ],
+    "概念_主学科": [
+      {
+        "term": "machine learning algorithm",
+        "normalized": "机器学习算法",
+        "std_label": "Machine Learning Algorithm",
+        "evidence": "Using a machine learning algorithm known as \"transfer learning\"",
+        "source": "abstract",
+        "confidence": 0.95
+      },
+      {
+        "term": "transfer learning",
+        "normalized": "迁移学习",
+        "std_label": "Transfer Learning",
+        "evidence": "machine learning algorithm known as \"transfer learning\"",
+        "source": "abstract",
+        "confidence": 0.98
+      },
+      {
+        "term": "cross-validation",
+        "normalized": "交叉验证",
+        "std_label": "Cross-Validation",
+        "evidence": "when training their memory decoders using cross-validation",
+        "source": "introduction",
+        "confidence": 0.92
+      },
+      {
+        "term": "memory decoders",
+        "normalized": "记忆解码器",
+        "std_label": "Memory Decoders",
+        "evidence": "when training their memory decoders using cross-validation",
+        "source": "introduction",
+        "confidence": 0.93
+      },
+      {
+        "term": "high vs. low perception performance classifier",
+        "normalized": "高低感知性能分类器",
+        "std_label": "High-Low Perception Classifier",
+        "evidence": "train a high vs. low perception performance classifier",
+        "source": "introduction",
+        "confidence": 0.91
+      },
+      {
+        "term": "neural activity prediction",
+        "normalized": "神经活动预测",
+        "std_label": "Neural Activity Prediction",
+        "evidence": "predict how high or low the subject's perception was for each to-be-encoded event",
+        "source": "introduction",
+        "confidence": 0.89
+      },
+      {
+        "term": "multi-source transfer learning",
+        "normalized": "多源迁移学习",
+        "std_label": "Multi-Source Transfer Learning",
+        "evidence": "transfer learning with multiple sources",
+        "source": "introduction",
+        "confidence": 0.94
+      },
+      {
+        "term": "EEG activity classification",
+        "normalized": "脑电活动分类",
+        "std_label": "EEG Activity Classification",
+        "evidence": "record neural activity as participants perform a perception task",
+        "source": "introduction",
+        "confidence": 0.9
+      },
+      {
+        "term": "encoding-related brain activity prediction",
+        "normalized": "编码相关脑活动预测",
+        "std_label": "Encoding-Related Brain Activity Prediction",
+        "evidence": "predict episodic memory performance from trial-to-trial encoding EEG activity",
+        "source": "abstract",
+        "confidence": 0.93
+      },
+      {
+        "term": "variance explanation",
+        "normalized": "方差解释",
+        "std_label": "Variance Explanation",
+        "evidence": "each cognitive domain explaining unique variance in decoding",
+        "source": "abstract",
+        "confidence": 0.88
+      }
+    ],
+    "概念_辅学科": {
+      "生物学": [
+        {
+          "term": "episodic memory encoding",
+          "normalized": "情景记忆编码",
+          "std_label": "Episodic Memory Encoding",
+          "evidence": "multiple domains contribute to episodic encoding",
+          "source": "abstract",
+          "confidence": 0.97
+        },
+        {
+          "term": "visual perception",
+          "normalized": "视觉感知",
+          "std_label": "Visual Perception",
+          "evidence": "visual perception, sustained attention, and selective attention brain states",
+          "source": "abstract",
+          "confidence": 0.96
+        },
+        {
+          "term": "sustained attention",
+          "normalized": "持续注意",
+          "std_label": "Sustained Attention",
+          "evidence": "sustained attention brain states",
+          "source": "abstract",
+          "confidence": 0.95
+        },
+        {
+          "term": "selective attention",
+          "normalized": "选择性注意",
+          "std_label": "Selective Attention",
+          "evidence": "selective attention brain states",
+          "source": "abstract",
+          "confidence": 0.95
+        },
+        {
+          "term": "electroencephalography (EEG)",
+          "normalized": "脑电图",
+          "std_label": "Electroencephalography",
+          "evidence": "trial-to-trial encoding electroencephalography (EEG) activity",
+          "source": "abstract",
+          "confidence": 0.98
+        },
+        {
+          "term": "neural activity",
+          "normalized": "神经活动",
+          "std_label": "Neural Activity",
+          "evidence": "decoding of successful encoding-related neural activity",
+          "source": "abstract",
+          "confidence": 0.94
+        },
+        {
+          "term": "cognitive domains",
+          "normalized": "认知领域",
+          "std_label": "Cognitive Domains",
+          "evidence": "cognitive domains outside of memory",
+          "source": "abstract",
+          "confidence": 0.92
+        },
+        {
+          "term": "perception",
+          "normalized": "感知",
+          "std_label": "Perception",
+          "evidence": "perception5,6, sustained attention7,8, selective attention9,10",
+          "source": "introduction",
+          "confidence": 0.93
+        },
+        {
+          "term": "brain areas",
+          "normalized": "脑区",
+          "std_label": "Brain Areas",
+          "evidence": "direct current stimulation of brain areas in the selective attention network",
+          "source": "introduction",
+          "confidence": 0.91
+        },
+        {
+          "term": "encoding failure",
+          "normalized": "编码失败",
+          "std_label": "Encoding Failure",
+          "evidence": "why any specific event was not successfully encoded",
+          "source": "introduction",
+          "confidence": 0.89
+        },
+        {
+          "term": "distracting information",
+          "normalized": "干扰信息",
+          "std_label": "Distracting Information",
+          "evidence": "effectively ignoring distracting information",
+          "source": "introduction",
+          "confidence": 0.88
+        }
+      ]
+    }
+  },
+  {
+    "title": "Structural visualization of small molecule recognition by CXCR3 uncovers dual-agonism in the CXCR3-CXCR7 system",
+    "primary": "基础医学",
+    "secondary_list": [
+      "基础医学",
+      "生物学",
+      "化学"
+    ],
+    "概念_主学科": [
+      {
+        "term": "CXCR3",
+        "normalized": "CXCR3",
+        "std_label": null,
+        "evidence": "CXCR3 and CXCR7 constitute a pair wherein the former is a prototypical GPCR",
+        "source": "abstract",
+        "confidence": 0.98
+      },
+      {
+        "term": "CXCR7",
+        "normalized": "CXCR7",
+        "std_label": null,
+        "evidence": "CXCR3 and CXCR7 constitute a pair wherein the latter exhibits selective coupling to βarrs",
+        "source": "abstract",
+        "confidence": 0.98
+      },
+      {
+        "term": "CXCL11",
+        "normalized": "CXCL11",
+        "std_label": null,
+        "evidence": "sharing a common natural agonist: CXCL11",
+        "source": "abstract",
+        "confidence": 0.95
+      },
+      {
+        "term": "cryo-EM structures",
+        "normalized": "cryo-EM structures",
+        "std_label": null,
+        "evidence": "we determine cryo-EM structures of CXCR3",
+        "source": "abstract",
+        "confidence": 0.92
+      },
+      {
+        "term": "Apo-state",
+        "normalized": "Apo-state",
+        "std_label": null,
+        "evidence": "CXCR3 in an Apo-state",
+        "source": "abstract",
+        "confidence": 0.9
+      },
+      {
+        "term": "allosteric network",
+        "normalized": "allosteric network",
+        "std_label": null,
+        "evidence": "uncover an allosteric network bridging the ligand-binding pocket",
+        "source": "abstract",
+        "confidence": 0.93
+      },
+      {
+        "term": "transducer-coupling bias",
+        "normalized": "transducer-coupling bias",
+        "std_label": null,
+        "evidence": "driving the transducer-coupling bias at this receptor",
+        "source": "abstract",
+        "confidence": 0.91
+      },
+      {
+        "term": "signaling-bias",
+        "normalized": "signaling-bias",
+        "std_label": null,
+        "evidence": "molecular insights into signaling-bias",
+        "source": "abstract",
+        "confidence": 0.94
+      },
+      {
+        "term": "dual agonism",
+        "normalized": "dual agonism",
+        "std_label": null,
+        "evidence": "dual-agonism in the CXCR3-CXCR7 system",
+        "source": "title",
+        "confidence": 0.97
+      },
+      {
+        "term": "orthosteric binding pocket",
+        "normalized": "orthosteric binding pocket",
+        "std_label": null,
+        "evidence": "structural topology of the orthosteric binding pocket",
+        "source": "abstract",
+        "confidence": 0.92
+      },
+      {
+        "term": "β-arrestins (βarrs)",
+        "normalized": "β",
+        "std_label": null,
+        "evidence": "signaling-bias toward β-arrestins (βarrs)",
+        "source": "abstract",
+        "confidence": 0.96
+      },
+      {
+        "term": "G-proteins",
+        "normalized": "G-proteins",
+        "std_label": null,
+        "evidence": "biased toward G-proteins",
+        "source": "abstract",
+        "confidence": 0.95
+      }
+    ],
+    "概念_辅学科": {
+      "基础医学": [
+        {
+          "term": "chemokine receptors",
+          "normalized": "chemokine receptors",
+          "std_label": null,
+          "evidence": "Chemokine receptors are critically involved in multiple physiological processes",
+          "source": "abstract",
+          "confidence": 0.94
+        },
+        {
+          "term": "GPCRs",
+          "normalized": "GPCRs",
+          "std_label": null,
+          "evidence": "prototypical GPCRs",
+          "source": "abstract",
+          "confidence": 0.93
+        },
+        {
+          "term": "inflammatory responses",
+          "normalized": "inflammatory responses",
+          "std_label": null,
+          "evidence": "critical roles in... inflammatory responses",
+          "source": "introduction",
+          "confidence": 0.91
+        },
+        {
+          "term": "autoimmune disorders",
+          "normalized": "autoimmune disorders",
+          "std_label": null,
+          "evidence": "implicated in... autoimmune disorders",
+          "source": "introduction",
+          "confidence": 0.92
+        },
+        {
+          "term": "tumor microenvironment",
+          "normalized": "tumor microenvironment",
+          "std_label": null,
+          "evidence": "expressed on... tumor microenvironment",
+          "source": "introduction",
+          "confidence": 0.93
+        }
+      ],
+      "生物学": [
+        {
+          "term": "seven-transmembrane architecture",
+          "normalized": "seven-transmembrane architecture",
+          "std_label": null,
+          "evidence": "seven-transmembrane architecture characteristic of prototypical GPCRs",
+          "source": "introduction",
+          "confidence": 0.92
+        },
+        {
+          "term": "splice variant",
+          "normalized": "splice variant",
+          "std_label": "splicing isoform",
+          "evidence": "splice variant of CXCR3, referred to as CXCR3-B",
+          "source": "introduction",
+          "confidence": 0.91
+        },
+        {
+          "term": "N-terminal domain",
+          "normalized": "N-terminal domain",
+          "std_label": null,
+          "evidence": "contains an extended N-terminal domain",
+          "source": "introduction",
+          "confidence": 0.93
+        },
+        {
+          "term": "non-canonical complexes",
+          "normalized": "non-canonical complexes",
+          "std_label": null,
+          "evidence": "non-canonical CXCR3-Gαi-βarr complexes",
+          "source": "introduction",
+          "confidence": 0.94
+        },
+        {
+          "term": "ligand-directed signaling bias",
+          "normalized": "ligand-directed signaling bias",
+          "std_label": null,
+          "evidence": "principles of ligand-directed signaling bias",
+          "source": "introduction",
+          "confidence": 0.92
+        }
+      ],
+      "化学": [
+        {
+          "term": "VUF11418",
+          "normalized": "VUF11418",
+          "std_label": null,
+          "evidence": "VUF11418... developed as G-protein-biased agonist",
+          "source": "introduction",
+          "confidence": 0.95
+        },
+        {
+          "term": "VUF10661",
+          "normalized": "VUF10661",
+          "std_label": null,
+          "evidence": "VUF10661... βarr-biased agonist",
+          "source": "introduction",
+          "confidence": 0.95
+        },
+        {
+          "term": "VUF11207",
+          "normalized": "VUF11207",
+          "std_label": null,
+          "evidence": "VUF11207 is characterized as a CXCR7 selective agonist",
+          "source": "introduction",
+          "confidence": 0.94
+        },
+        {
+          "term": "small molecule agonists",
+          "normalized": "small molecule agonists",
+          "std_label": null,
+          "evidence": "CXCR3 and CXCR7 also recognize small molecule agonists",
+          "source": "abstract",
+          "confidence": 0.96
+        },
+        {
+          "term": "chemical promiscuity",
+          "normalized": "chemical promiscuity",
+          "std_label": null,
+          "evidence": "significant promiscuity amongst chemokines for the chemokine receptors",
+          "source": "introduction",
+          "confidence": 0.91
+        }
+      ]
+    }
+  },
+  {
+    "title": "Pt nanocluster-Fe single atom pairs dual-regulate charge extraction and interfacial reaction for enhanced photoelectric response",
+    "primary": "化学",
+    "secondary_list": [
+      "化学",
+      "材料科学",
+      "物理学"
+    ],
+    "概念_主学科": [
+      {
+        "term": "Pt nanocluster-Fe single atom pairs",
+        "normalized": "铂纳米簇-铁单原子对",
+        "std_label": "Pt-Fe双金属催化剂",
+        "evidence": "integrate Pt nanocluster-Fe single-atom pairs with CuO",
+        "source": "abstract",
+        "confidence": 0.98
+      },
+      {
+        "term": "energy level mismatches",
+        "normalized": "能级失配",
+        "std_label": "能级失配",
+        "evidence": "Energy level mismatches between semiconductors and cocatalysts",
+        "source": "abstract",
+        "confidence": 0.95
+      },
+      {
+        "term": "carrier recombination",
+        "normalized": "载流子复合",
+        "std_label": "载流子复合",
+        "evidence": "energy level mismatches often induce carrier recombination",
+        "source": "abstract",
+        "confidence": 0.97
+      },
+      {
+        "term": "Ohmic contact",
+        "normalized": "欧姆接触",
+        "std_label": "欧姆接触",
+        "evidence": "an Ohmic contact at the CuO/Pt interface",
+        "source": "abstract",
+        "confidence": 0.96
+      },
+      {
+        "term": "Pt-to-Fe charge transfer",
+        "normalized": "铂到铁电荷转移",
+        "std_label": "电荷转移机制",
+        "evidence": "Pt-to-Fe charge transfer enhances oxygen reduction",
+        "source": "abstract",
+        "confidence": 0.94
+      },
+      {
+        "term": "chelating effect",
+        "normalized": "螯合效应",
+        "std_label": "螯合效应",
+        "evidence": "exploiting chelating effect of glyphosate on CuO",
+        "source": "abstract",
+        "confidence": 0.93
+      },
+      {
+        "term": "detection limit",
+        "normalized": "检测限",
+        "std_label": "检测限",
+        "evidence": "achieving a detection limit of 0.41 ng/mL",
+        "source": "abstract",
+        "confidence": 0.92
+      },
+      {
+        "term": "interfacial reaction barriers",
+        "normalized": "界面反应势垒",
+        "std_label": "界面反应势垒",
+        "evidence": "addressing carrier dynamics and interfacial reaction barriers",
+        "source": "abstract",
+        "confidence": 0.95
+      },
+      {
+        "term": "density functional theory (DFT) calculations",
+        "normalized": "密度泛函理论计算",
+        "std_label": "DFT计算",
+        "evidence": "through experimental investigations and DFT calculations",
+        "source": "introduction",
+        "confidence": 0.97
+      },
+      {
+        "term": "oxygen reduction reaction (ORR)",
+        "normalized": "氧还原反应",
+        "std_label": "ORR",
+        "evidence": "accelerate the interfacial oxygen reduction reaction",
+        "source": "introduction",
+        "confidence": 0.96
+      },
+      {
+        "term": "glyphosate pesticide",
+        "normalized": "草甘膦农药",
+        "std_label": "草甘膦",
+        "evidence": "development of a sensing system for glyphosate pesticide",
+        "source": "introduction",
+        "confidence": 0.94
+      },
+      {
+        "term": "electron transfer highway",
+        "normalized": "电子转移通道",
+        "std_label": "电子转移通道",
+        "evidence": "construct an electron transfer highway",
+        "source": "introduction",
+        "confidence": 0.93
+      }
+    ],
+    "概念_辅学科": {
+      "化学": [
+        {
+          "term": "CuO",
+          "normalized": "氧化铜",
+          "std_label": "CuO",
+          "evidence": "integrate Pt nanocluster-Fe single-atom pairs with CuO",
+          "source": "abstract",
+          "confidence": 0.99
+        },
+        {
+          "term": "photocatalytic",
+          "normalized": "光催化",
+          "std_label": "光催化",
+          "evidence": "limiting photocatalytic and photoelectrochemical efficiency",
+          "source": "abstract",
+          "confidence": 0.95
+        },
+        {
+          "term": "solid-liquid interfaces",
+          "normalized": "固液界面",
+          "std_label": "固液界面",
+          "evidence": "regulate both solid-solid and solid-liquid interfaces",
+          "source": "abstract",
+          "confidence": 0.94
+        },
+        {
+          "term": "reaction kinetics",
+          "normalized": "反应动力学",
+          "std_label": "反应动力学",
+          "evidence": "collectively boosting reaction kinetics",
+          "source": "abstract",
+          "confidence": 0.93
+        },
+        {
+          "term": "interfacial oxygen reduction",
+          "normalized": "界面氧还原",
+          "std_label": "界面氧还原",
+          "evidence": "enhances oxygen reduction at Fe sites",
+          "source": "abstract",
+          "confidence": 0.92
+        },
+        {
+          "term": "PtNC/Fe-N-C",
+          "normalized": "铂纳米簇-铁氮碳催化剂",
+          "std_label": "PtNC/Fe-N-C",
+          "evidence": "iron single-atom catalysts (PtNC/Fe-N-C)",
+          "source": "introduction",
+          "confidence": 0.96
+        },
+        {
+          "term": "CuO@PtNC/Fe-N-C",
+          "normalized": "核壳结构催化剂",
+          "std_label": "CuO@PtNC/Fe-N-C",
+          "evidence": "CuO@PtNC/Fe-N-C achieves dual interfacial regulation",
+          "source": "introduction",
+          "confidence": 0.95
+        }
+      ],
+      "材料科学": [
+        {
+          "term": "nanocluster-coupled single-atom pairs",
+          "normalized": "纳米簇耦合单原子对",
+          "std_label": "纳米簇-单原子对",
+          "evidence": "Pt nanocluster-Fe single atom pairs",
+          "source": "title",
+          "confidence": 0.97
+        },
+        {
+          "term": "photoelectrodes",
+          "normalized": "光电极",
+          "std_label": "光电极",
+          "evidence": "photoelectrodes composed of semiconductors and cocatalysts",
+          "source": "introduction",
+          "confidence": 0.96
+        },
+        {
+          "term": "carbon supports",
+          "normalized": "碳载体",
+          "std_label": "碳载体",
+          "evidence": "Fe single-atom sites in the carbon supports",
+          "source": "introduction",
+          "confidence": 0.95
+        },
+        {
+          "term": "strong interactions",
+          "normalized": "强相互作用",
+          "std_label": "强相互作用",
+          "evidence": "strong interactions between PtNC and Fe sites",
+          "source": "introduction",
+          "confidence": 0.94
+        },
+        {
+          "term": "anion exchange membrane",
+          "normalized": "阴离子交换膜",
+          "std_label": "阴离子交换膜",
+          "evidence": "application scenarios in anion exchange membrane",
+          "source": "introduction",
+          "confidence": 0.92
+        },
+        {
+          "term": "gas diffusion layer",
+          "normalized": "气体扩散层",
+          "std_label": "气体扩散层",
+          "evidence": "optimization of gas diffusion layer materials",
+          "source": "introduction",
+          "confidence": 0.91
+        }
+      ],
+      "物理学": [
+        {
+          "term": "photoelectrochemical (PEC) systems",
+          "normalized": "光电化学系统",
+          "std_label": "PEC系统",
+          "evidence": "regulate interfaces in PEC systems",
+          "source": "abstract",
+          "confidence": 0.98
+        },
+        {
+          "term": "electron extraction",
+          "normalized": "电子提取",
+          "std_label": "电子提取",
+          "evidence": "accelerates electron extraction",
+          "source": "abstract",
+          "confidence": 0.97
+        },
+        {
+          "term": "charge separation",
+          "normalized": "电荷分离",
+          "std_label": "电荷分离",
+          "evidence": "facilitate photogenerated charge separation",
+          "source": "introduction",
+          "confidence": 0.96
+        },
+        {
+          "term": "energy conversion",
+          "normalized": "能量转换",
+          "std_label": "能量转换",
+          "evidence": "enhanced energy conversion applications",
+          "source": "abstract",
+          "confidence": 0.95
+        },
+        {
+          "term": "interfacial electron transfer",
+          "normalized": "界面电子转移",
+          "std_label": "界面电子转移",
+          "evidence": "impede electron transfer from semiconductor to cocatalyst",
+          "source": "introduction",
+          "confidence": 0.94
+        },
+        {
+          "term": "density functional theory",
+          "normalized": "密度泛函理论",
+          "std_label": "DFT",
+          "evidence": "density functional theory calculations",
+          "source": "introduction",
+          "confidence": 0.93
+        }
+      ]
+    }
+  }
+]

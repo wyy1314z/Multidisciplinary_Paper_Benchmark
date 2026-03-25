@@ -1,0 +1,44 @@
+[
+  {
+    "title": "High-entropy alloy enables multi-path electron synergism and lattice oxygen activation for enhanced oxygen evolution activity",
+    "查询": {
+      "一级": "电催化氧析出反应中晶格氧活化机制的提升路径",
+      "二级": [
+        "高熵合金如何通过多路径电子转移优化晶格氧活化",
+        "电化学性能指标如何验证催化剂稳定性"
+      ],
+      "三级": [
+        "材料科学的高熵合金结构设计与化学键调控如何协同作用于晶格氧活化机制",
+        "多路径电子调制方案如何通过电化学测试验证其对反应中间体的调控效果"
+      ]
+    }
+  },
+  {
+    "title": "Leaf-based energy harvesting and storage utilizing hygroscopic iron hydrogel for continuous power generation",
+    "查询": {
+      "一级": "材料科学如何利用落叶的结构特性实现能量收集？",
+      "二级": [
+        "如何结合能量收集技术与吸湿性材料提升发电效率？",
+        "如何通过材料表面改性优化自供电系统的机械强度？"
+      ],
+      "三级": [
+        "材料科学的叶脉分级结构设计如何与化学吸湿材料协同工作，实现持续的能量收集？",
+        "如何将铁基水凝胶的吸湿特性与摩擦纳米发电机的能量转换机制整合到自供电系统中？"
+      ]
+    }
+  },
+  {
+    "title": "Multi-modal framework for battery state of health evaluation using open-source electric vehicle data",
+    "查询": {
+      "一级": "如何构建有效的电池健康状态评估框架",
+      "二级": [
+        "多模态框架如何整合车辆运行数据与实验测试数据进行健康评估",
+        "电池管理系统如何通过电化学阻抗谱分析实现退化模式识别"
+      ],
+      "三级": [
+        "多模态框架如何协同电池管理系统与材料退化模型实现健康状态联合估计",
+        "历史车辆数据分析如何结合电化学机理与单体间差异建模优化健康评估"
+      ]
+    }
+  }
+]

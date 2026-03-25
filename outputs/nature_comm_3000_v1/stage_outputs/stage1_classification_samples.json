@@ -1,0 +1,46 @@
+[
+  {
+    "title": "Using machine learning to simultaneously quantify multiple cognitive components of episodic memory",
+    "abstract": "Abstract Why do we remember some events but forget others? Previous studies attempting to decode successful vs. unsuccessful brain states to investigate this question have met with limited success, potentially due, in part, to assessing episodic memory as a unidimensional process, despite evidence that multiple domains contribute to episodic encoding. Using a machine learning algorithm known as “transfer learning”, we leveraged visual perception, sustained attention, and selective attention brain states to better predict episodic memory performance from trial-to-trial encoding electroencephalography (EEG) activity. We found that this multidimensional treatment of memory decoding improved prediction performance compared to traditional, unidimensional, methods, with each cognitive domain explaining unique variance in decoding of successful encoding-related neural activity. Importantly, this approach could be applied to cognitive domains outside of memory. Overall, this study provides critical insight into the underlying reasons why some events are remembered while others are not.",
+    "pdf_url": "https://doi.org/10.1038/s41467-025-58265-9",
+    "primary": "计算机科学技术",
+    "secondary": "生物学",
+    "secondary_list": [
+      "生物学"
+    ],
+    "main_levels": "L1:计算机科学技术; L2:人工智能; L3:人工智能理论",
+    "non_main_levels": "L1:计算机科学技术; L2:人工智能; L3:模式识别; L1:计算机科学技术; L2:人工智能; L3:计算机感知; L1:计算机科学技术; L2:人工智能; L3:计算机神经网络; L1:计算机科学技术; L2:人工智能; L3:知识工程(包括专家系统); L1:计算机科学技术; L2:计算机应用; L3:计算机图象处理; L1:计算机科学技术; L2:计算机应用; L3:计算机仿真; L1:计算机科学技术; L2:计算机应用; L3:计算机信息管理系统; L1:计算机科学技术; L2:计算机应用; L3:计算机决策支持系统; L1:计算机科学技术; L2:计算机应用; L3:计算机应用其他学科; L1:计算机科学技术; L2:计算机软件; L3:软件工程; L1:计算机科学技术; L2:计算机软件; L3:程序设计及其语言; L1:计算机科学技术; L2:计算机软件; L3:软件开发环境与开发技术; L1:计算机科学技术; L2:计算机软件; L3:软件理论; L1:计算机科学技术; L2:计算机软件; L3:计算机软件其他学科; L1:计算机科学技术; L2:计算机科学技术基础学科; L3:算法理论; L1:计算机科学技术; L2:计算机科学技术基础学科; L3:数据结构; L1:计算机科学技术; L2:计算机科学技术基础学科; L3:计算机科学技术基础学科其他学科; L1:生物学; L2:神经生物学; L3:神经生理学; L1:生物学; L2:神经生物学; L3:系统神经生物学; L1:生物学; L2:神经生物学; L3:神经生物物理学; L1:生物学; L2:神经生物学; L3:细胞神经生物学; L1:生物学; L2:神经生物学; L3:神经生物学其他学科; L1:生物学; L2:生理学; L3:感官生理学; L1:生物学; L2:心理学; L3:认知心理学; L1:生物学; L2:心理学; L3:生理心理学; L1:生物学; L2:心理学; L3:实验心理学; L1:生物学; L2:生物物理学; L3:生物信息论与生物控制论; L1:生物学; L2:生物物理学; L3:分子生物物理学; L1:生物学; L2:生物物理学; L3:系统生物物理学",
+    "crossdisc_score": 0.7,
+    "crossdisc_reason": "The paper integrates machine learning (computer science) with cognitive neuroscience (biology) to address episodic memory, requiring synthesis of methods and theories from both fields. However, the connection is primarily methodological, limiting the score."
+  },
+  {
+    "title": "Structural visualization of small molecule recognition by CXCR3 uncovers dual-agonism in the CXCR3-CXCR7 system",
+    "abstract": "Abstract Chemokine receptors are critically involved in multiple physiological and pathophysiological processes related to immune response mechanisms. Most chemokine receptors are prototypical GPCRs although some also exhibit naturally-encoded signaling-bias toward β-arrestins (βarrs). C-X-C type chemokine receptors, namely CXCR3 and CXCR7, constitute a pair wherein the former is a prototypical GPCR while the latter exhibits selective coupling to βarrs despite sharing a common natural agonist: CXCL11. Moreover, CXCR3 and CXCR7 also recognize small molecule agonists suggesting a modular orthosteric ligand binding pocket. Here, we determine cryo-EM structures of CXCR3 in an Apo-state and in complex with small molecule agonists biased toward G-proteins or βarrs. These structural snapshots uncover an allosteric network bridging the ligand-binding pocket to intracellular side, driving the transducer-coupling bias at this receptor. Furthermore, structural topology of the orthosteric binding pocket also allows us to discover and validate that selected small molecule agonists of CXCR3 display robust agonism at CXCR7. Collectively, our study offers molecular insights into signaling-bias and dual agonism in the CXCR3-CXCR7 system with therapeutic implications.",
+    "pdf_url": "https://doi.org/10.1038/s41467-025-58264-w",
+    "primary": "基础医学",
+    "secondary": "生物学, 化学",
+    "secondary_list": [
+      "生物学",
+      "化学"
+    ],
+    "main_levels": "L1:基础医学; L2:药理学; L3:分子药理学",
+    "non_main_levels": "L1:基础医学; L2:药理学; L3:免疫药理学; L1:基础医学; L2:药理学; L3:生化药理学; L1:基础医学; L2:药理学; L3:基础药理学; L1:基础医学; L2:病理学; L3:病理生理学; L1:基础医学; L2:病理学; L3:免疫病理学; L1:基础医学; L2:病理学; L3:实验病理学; L1:基础医学; L2:病理学; L3:病理生物学; L1:基础医学; L2:病理学; L3:病理解剖学; L1:生物学; L2:生物化学; L3:多肽与蛋白质生物化学; L1:生物学; L2:生物化学; L3:膜生物化学; L1:生物学; L2:生物化学; L3:免疫生物化学; L1:生物学; L2:生物化学; L3:激素生物化学; L1:生物学; L2:生物化学; L3:生物化学其他学科; L1:生物学; L2:神经生物学; L3:分子神经生物学; L1:生物学; L2:神经生物学; L3:细胞神经生物学; L1:生物学; L2:神经生物学; L3:神经生物化学; L1:生物学; L2:神经生物学; L3:神经生理学; L1:生物学; L2:神经生物学; L3:神经生物物理学; L1:生物学; L2:细胞生物学; L3:细胞生物物理学; L1:生物学; L2:细胞生物学; L3:细胞生理学; L1:生物学; L2:细胞生物学; L3:细胞免疫学; L1:生物学; L2:细胞生物学; L3:细胞结构与形态学; L1:生物学; L2:细胞生物学; L3:细胞病理学; L1:化学; L2:有机化学; L3:生物有机化学; L1:化学; L2:有机化学; L3:物理有机化学(包括理论有机化学、立体化学等); L1:化学; L2:物理化学; L3:结构化学(包括表面化学、结构分析等); L1:化学; L2:物理化学; L3:量子化学; L1:化学; L2:物理化学; L3:计算化学; L1:化学; L2:物理化学; L3:光化学(包括超分子光化学、光电化学、激光化学、感光化学等); L1:化学; L2:物理化学; L3:物理化学其他学科",
+    "crossdisc_score": 0.7,
+    "crossdisc_reason": "Moderately cross-disciplinary due to meaningful integration of chemistry, basic medicine, and biology, with insights into molecular mechanisms and therapeutic implications."
+  },
+  {
+    "title": "Pt nanocluster-Fe single atom pairs dual-regulate charge extraction and interfacial reaction for enhanced photoelectric response",
+    "abstract": "Energy level mismatches between semiconductors and cocatalysts often induce carrier recombination, limiting photocatalytic and photoelectrochemical (PEC) efficiency. Here, we integrate Pt nanocluster-Fe single-atom pairs with CuO to regulate both solid-solid and solid-liquid interfaces in PEC systems. Experimental and theoretical analyses reveal that an Ohmic contact at the CuO/Pt interface accelerates electron extraction, while Pt-to-Fe charge transfer enhances oxygen reduction at Fe sites, collectively boosting reaction kinetics. Leveraging this, we construct a PEC biosensor exploiting chelating effect of glyphosate on CuO to impede electron transfer, achieving a detection limit of 0.41 ng/mL. This interface engineering strategy advances cocatalyst design for enhanced energy conversion and sensing applications by simultaneously addressing carrier dynamics and interfacial reaction barriers.",
+    "pdf_url": "https://doi.org/10.1038/s41467-025-58174-x",
+    "primary": "化学",
+    "secondary": "材料科学, 物理学",
+    "secondary_list": [
+      "材料科学",
+      "物理学"
+    ],
+    "main_levels": "L1:化学; L2:物理化学; L3:光化学(包括超分子光化学、光电化学、激光化学、感光化学等)",
+    "non_main_levels": "L1:化学; L2:物理化学; L3:电化学; L1:化学; L2:物理化学; L3:催化化学; L1:化学; L2:物理化学; L3:结构化学(包括表面化学、结构分析等); L1:化学; L2:物理化学; L3:胶体化学与界面化学; L1:化学; L2:无机化学; L3:配位化学; L1:化学; L2:无机化学; L3:无机固体化学; L1:化学; L2:无机化学; L3:物理无机化学; L1:化学; L2:无机化学; L3:生物无机化学; L1:化学; L2:分析化学; L3:电化学分析; L1:化学; L2:分析化学; L3:光谱分析; L1:化学; L2:分析化学; L3:化学分析(包括定性分析、定量分析等); L1:化学; L2:有机化学; L3:元素有机化学(包括金属有机化学等); L1:化学; L2:有机化学; L3:有机光化学; L1:化学; L2:有机化学; L3:物理有机化学(包括理论有机化学、立体化学等); L1:化学; L2:有机化学; L3:生物有机化学; L1:化学; L2:有机化学; L3:有机固体化学; L1:材料科学; L2:金属材料; L3:低维金属材料(包括薄膜、纤维和零维金属材料等); L1:材料科学; L2:金属材料; L3:特种功能金属材料; L1:材料科学; L2:无机非金属材料; L3:特种功能无机非金属材料; L1:物理学; L2:凝聚态物理学; L3:表面与界面物理学; L1:物理学; L2:凝聚态物理学; L3:半导体物理学; L1:物理学; L2:凝聚态物理学; L3:低维物理; L1:物理学; L2:凝聚态物理学; L3:金属物理学; L1:物理学; L2:光学; L3:物理光学; L1:物理学; L2:光学; L3:光谱学; L1:物理学; L2:光学; L3:应用光学; L1:物理学; L2:电子物理学; L3:电子物理学其他学科; L1:物理学; L2:电磁学; L3:电动力学",
+    "crossdisc_score": 0.7,
+    "crossdisc_reason": "The paper integrates theories and methods from chemistry, materials science, and physics to address photocatalytic and photoelectrochemical efficiency, demonstrating meaningful integration of multiple fields to solve a complex problem."
+  }
+]

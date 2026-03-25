@@ -1,0 +1,43 @@
+[
+  {
+    "title": "Using machine learning to simultaneously quantify multiple cognitive components of episodic memory",
+    "查询": {
+      "一级": "如何通过机器学习方法量化情景记忆的多维度认知过程",
+      "二级": [
+        "迁移学习算法如何整合视觉感知与持续注意特征提升记忆解码精度",
+        "多源迁移学习在脑电活动分类中如何关联认知领域的神经表征"
+      ],
+      "三级": [
+        "迁移学习框架如何协同视觉感知、持续注意和选择性注意的脑状态特征，构建编码相关脑活动预测的工作流",
+        "跨学科验证中，如何通过认知领域与神经活动预测的联合建模解释记忆解码的方差差异"
+      ]
+    }
+  },
+  {
+    "title": "Structural visualization of small molecule recognition by CXCR3 uncovers dual-agonism in the CXCR3-CXCR7 system",
+    "查询": {
+      "一级": "揭示与受体双激动现象的结构基础与信号转导机制核心问题是什么？",
+      "二级": [
+        "结合低温电子显微镜结构分析与信号偏倚评估，如何解析的激活机制？",
+        "基于七次跨膜结构域特征和小分子激动剂干预，如何阐明受体功能调控？"
+      ],
+      "三级": [
+        "如何通过低温电子显微镜结构解析、小分子激动剂功能筛选及β抑制蛋白偶联检测的多学科方法，系统揭示系统的双重激动机制？",
+        "综合结构生物学的构象分析、化学小分子探针设计及炎症反应模型验证，如何建立受体信号偏倚的协同工作流？"
+      ]
+    }
+  },
+  {
+    "title": "Pt nanocluster-Fe single atom pairs dual-regulate charge extraction and interfacial reaction for enhanced photoelectric response",
+    "查询": {
+      "一级": "铂铁双金属催化剂如何实现光电化学系统界面反应与电荷提取的协同增强",
+      "二级": [
+        "材料科学的纳米簇-单原子对设计如何优化物理电子提取效率",
+        "密度泛函理论计算如何解析界面反应势垒的协同调控机制"
+      ],
+      "三级": [
+        "化学催化剂界面调控、材料科学结构优化与物理电子转移机制的协同作用如何实现检测限降低与能量转换效率提升"
+      ]
+    }
+  }
+]

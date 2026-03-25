@@ -94,6 +94,7 @@ async def classify_and_filter(
     api_key: Optional[str] = None,
     taxonomy_path: Optional[str] = None,
     concurrency: Optional[int] = None,
+    crossdisc_threshold: Optional[float] = None,
 ) -> str:
     """Classify papers, filter multidisciplinary ones, write to JSONL.
 
@@ -112,6 +113,9 @@ async def classify_and_filter(
     )
 
     cfg = load_config(config_path, model_name=model_name, api_base=api_base, api_key=api_key)
+    # CLI threshold override takes priority over config
+    if crossdisc_threshold is not None:
+        cfg.llm.crossdisc_confidence_threshold = crossdisc_threshold
     taxo_path = taxonomy_path or cfg.taxonomy_path
     taxonomy = Taxonomy.from_json_file(taxo_path)
     prompt_builder = DisciplinePromptBuilder()
@@ -162,12 +166,26 @@ async def classify_and_filter(
                             idx, total, distinct_l1, title[:60])
                 return None
 
+            # Check cross-disciplinary confidence score
+            threshold = cfg.llm.crossdisc_confidence_threshold
+            if result.crossdisc_score is not None and result.crossdisc_score < threshold:
+                logger.info(
+                    "[%d/%d] Below cross-disc confidence threshold "
+                    "(score=%.2f < threshold=%.2f, reason=%s): %s",
+                    idx, total, result.crossdisc_score, threshold,
+                    result.crossdisc_reason, title[:60],
+                )
+                return None
+
             multi_count += 1
             main_levels, non_main_levels = levels_from_paths(result.paths, result.raw_outputs)
             record = _classifier_output_to_extractor_input(paper, main_levels, non_main_levels)
             if record:
-                logger.info("[%d/%d] Multidisciplinary: %s → primary=%s, secondary=%s",
-                            idx, total, title[:60], record["primary"], record["secondary"])
+                record["crossdisc_score"] = result.crossdisc_score
+                record["crossdisc_reason"] = result.crossdisc_reason
+                logger.info("[%d/%d] Multidisciplinary (score=%.2f): %s → primary=%s, secondary=%s",
+                            idx, total, result.crossdisc_score or 0.0,
+                            title[:60], record["primary"], record["secondary"])
             return record
 
     tasks = [process_one(i + 1, p) for i, p in enumerate(papers)]
@@ -204,6 +222,7 @@ def cmd_classify(args: argparse.Namespace) -> None:
         api_key=args.api_key,
         taxonomy_path=args.taxonomy,
         concurrency=args.concurrency,
+        crossdisc_threshold=getattr(args, "crossdisc_threshold", None),
     ))
 
 
@@ -244,6 +263,7 @@ def cmd_full(args: argparse.Namespace) -> None:
         api_key=args.api_key,
         taxonomy_path=args.taxonomy,
         concurrency=args.concurrency,
+        crossdisc_threshold=getattr(args, "crossdisc_threshold", None),
     ))
 
     # Check if any multidisciplinary papers were found
@@ -288,6 +308,9 @@ def _add_classifier_args(parser: argparse.ArgumentParser) -> None:
     parser.add_argument("--api-key", default=None, help="LLM API key (overrides config/env)")
     parser.add_argument("--taxonomy", default=None, help="Taxonomy JSON file path")
     parser.add_argument("--concurrency", type=int, default=None, help="Async classification concurrency")
+    parser.add_argument("--crossdisc-threshold", type=float, default=None,
+                        help="Cross-disciplinary confidence threshold (0.0-1.0, default=0.5). "
+                             "Papers with confidence below this are filtered as non-cross-disciplinary.")
 
 
 def _add_extractor_args(parser: argparse.ArgumentParser) -> None:

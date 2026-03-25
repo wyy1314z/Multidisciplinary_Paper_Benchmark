@@ -1,0 +1,325 @@
+Task,Method,FDR,RC,HDR
+admission_level_1_base,Zero-shot Generation,1.0,0.5,0.5
+admission_level_1_base,\ioprompt,1.0,0.75,0.75
+admission_level_1_base,\iorefine,1.0,0.75,0.75
+admission_level_1_base,\hypogenic,1.0,1.0,1.0
+admission_level_2_size_5,Zero-shot Generation,0.0,0.0,0.0
+admission_level_2_size_5,\ioprompt,1.0,0.4,0.4
+admission_level_2_size_5,\iorefine,1.0,0.1,0.1
+admission_level_2_size_5,\hypogenic,1.0,0.65,0.65
+admission_level_2_distractor_3,Zero-shot Generation,1.0,1.0,1.0
+admission_level_2_distractor_3,\ioprompt,1.0,0.75,0.75
+admission_level_2_distractor_3,\iorefine,1.0,0.75,0.75
+admission_level_2_distractor_3,\hypogenic,1.0,0.75,0.75
+admission_level_2_depth_2,Zero-shot Generation,1.0,0.75,0.75
+admission_level_2_depth_2,\ioprompt,1.0,0.5,0.5
+admission_level_2_depth_2,\iorefine,1.0,0.75,0.75
+admission_level_2_depth_2,\hypogenic,1.0,0.75,0.75
+admission_level_2_noise_10,Zero-shot Generation,1.0,0.75,0.75
+admission_level_2_noise_10,\ioprompt,1.0,1.0,1.0
+admission_level_2_noise_10,\iorefine,1.0,0.0,0.0
+admission_level_2_noise_10,\hypogenic,1.0,1.0,1.0
+admission_level_3_depth_3,Zero-shot Generation,1.0,0.45,0.45
+admission_level_3_depth_3,\ioprompt,1.0,0.2,0.2
+admission_level_3_depth_3,\iorefine,1.0,0.05,0.05
+admission_level_3_depth_3,\hypogenic,1.0,0.3,0.3
+admission_level_3_distractor_6,Zero-shot Generation,1.0,0.5,0.5
+admission_level_3_distractor_6,\ioprompt,1.0,0.75,0.75
+admission_level_3_distractor_6,\iorefine,1.0,0.75,0.75
+admission_level_3_distractor_6,\hypogenic,1.0,0.5,0.5
+admission_level_3_noise_20,Zero-shot Generation,1.0,0.5,0.5
+admission_level_3_noise_20,\ioprompt,1.0,0.5,0.5
+admission_level_3_noise_20,\iorefine,0.0,0.0,0.0
+admission_level_3_noise_20,\hypogenic,1.0,1.0,1.0
+admission_level_3_size_10,Zero-shot Generation,0.9,0.2222,0.2
+admission_level_3_size_10,\ioprompt,0.9,0.4167,0.375
+admission_level_3_size_10,\iorefine,0.7,0.0357,0.025
+admission_level_3_size_10,\hypogenic,1.0,0.325,0.325
+admission_level_4_depth_4,Zero-shot Generation,1.0,0.3,0.3
+admission_level_4_depth_4,\ioprompt,1.0,0.35,0.35
+admission_level_4_depth_4,\iorefine,1.0,0.0,0.0
+admission_level_4_depth_4,\hypogenic,1.0,0.4,0.4
+admission_level_4_distractor_10,Zero-shot Generation,0.0,0.0,0.0
+admission_level_4_distractor_10,\ioprompt,1.0,0.5,0.5
+admission_level_4_distractor_10,\iorefine,1.0,0.0,0.0
+admission_level_4_distractor_10,\hypogenic,1.0,0.75,0.75
+admission_level_4_noise_30,Zero-shot Generation,1.0,0.5,0.5
+admission_level_4_noise_30,\ioprompt,1.0,0.5,0.5
+admission_level_4_noise_30,\iorefine,1.0,0.5,0.5
+admission_level_4_noise_30,\hypogenic,1.0,0.75,0.75
+admission_level_4_size_15,Zero-shot Generation,0.9333,0.3036,0.2833
+admission_level_4_size_15,\ioprompt,0.8,0.2708,0.2167
+admission_level_4_size_15,\iorefine,0.7333,0.0,0.0
+admission_level_4_size_15,\hypogenic,1.0,0.3333,0.3333
+shoe,Zero-shot Generation,1.0,0.75,0.75
+shoe,\ioprompt,1.0,0.75,0.75
+shoe,\iorefine,1.0,0.75,0.75
+shoe,\hypogenic,1.0,1.0,1.0
+shoe_two_level_simple,Zero-shot Generation,1.0,0.625,0.625
+shoe_two_level_simple,\ioprompt,1.0,0.875,0.875
+shoe_two_level_simple,\iorefine,1.0,1.0,1.0
+shoe_two_level_simple,\hypogenic,1.0,1.0,1.0
+shoe_two_level_hard,Zero-shot Generation,1.0,0.25,0.25
+shoe_two_level_hard,\ioprompt,1.0,0.5,0.5
+shoe_two_level_hard,\iorefine,1.0,0.125,0.125
+shoe_two_level_hard,\hypogenic,1.0,0.375,0.375
+election_level0,Zero-shot Generation,1.0,0.0,0.0
+election_level0,\ioprompt,1.0,0.5,0.5
+election_level0,\iorefine,0.0,0.0,0.0
+election_level0,\hypogenic,1.0,0.5,0.5
+election_level1,Zero-shot Generation,0.4,0.0,0.0
+election_level1,\ioprompt,1.0,0.05,0.05
+election_level1,\iorefine,1.0,0.0,0.0
+election_level1,\hypogenic,1.0,0.35,0.35
+election_level2,Zero-shot Generation,0.4286,0.125,0.0536
+election_level2,\ioprompt,0.7857,0.4091,0.3214
+election_level2,\iorefine,0.5714,0.0938,0.0536
+election_level2,\hypogenic,0.9286,0.2692,0.25
+election_level3,Zero-shot Generation,0.6,0.0,0.0
+election_level3,\ioprompt,1.0,0.1,0.1
+election_level3,\iorefine,0.4,0.0,0.0
+election_level3,\hypogenic,1.0,0.2,0.2
+election_level4,Zero-shot Generation,0.8667,0.0,0.0
+election_level4,\ioprompt,0.4667,0.2857,0.1333
+election_level4,\iorefine,0.4,0.0833,0.0333
+election_level4,\hypogenic,0.9333,0.2679,0.25
+election_level5,Zero-shot Generation,0.4667,0.0,0.0
+election_level5,\ioprompt,0.4,0.2917,0.1167
+election_level5,\iorefine,0.6667,0.075,0.05
+election_level5,\hypogenic,0.9333,0.2857,0.2667
+preference_level0,Zero-shot Generation,0.0,0.0,0.0
+preference_level0,\ioprompt,1.0,0.0,0.0
+preference_level0,\iorefine,0.0,0.0,0.0
+preference_level0,\hypogenic,1.0,0.5,0.5
+preference_level1,Zero-shot Generation,0.6,0.0,0.0
+preference_level1,\ioprompt,0.6,0.1667,0.1
+preference_level1,\iorefine,1.0,0.0,0.0
+preference_level1,\hypogenic,0.8,0.125,0.1
+preference_level2,Zero-shot Generation,0.0,0.0,0.0
+preference_level2,\ioprompt,0.8,0.1667,0.1333
+preference_level2,\iorefine,0.5333,0.125,0.0667
+preference_level2,\hypogenic,0.8667,0.3269,0.2833
+preference_level3,Zero-shot Generation,0.2,0.0,0.0
+preference_level3,\ioprompt,0.4,0.375,0.15
+preference_level3,\iorefine,0.2,0.5,0.1
+preference_level3,\hypogenic,1.0,0.2,0.2
+preference_level4,Zero-shot Generation,0.1667,0.0,0.0
+preference_level4,\ioprompt,0.9167,0.0455,0.0417
+preference_level4,\iorefine,0.5,0.1667,0.0833
+preference_level4,\hypogenic,1.0,0.2083,0.2083
+preference_level5,Zero-shot Generation,0.1429,0.25,0.0357
+preference_level5,\ioprompt,0.6429,0.2222,0.1429
+preference_level5,\iorefine,0.3571,0.2,0.0714
+preference_level5,\hypogenic,1.0,0.4286,0.4286
+election_level0_nosubtlety,Zero-shot Generation,0.0,0.0,0.0
+election_level0_nosubtlety,\ioprompt,1.0,0.75,0.75
+election_level0_nosubtlety,\iorefine,1.0,0.75,0.75
+election_level0_nosubtlety,\hypogenic,1.0,1.0,1.0
+election_level1_nosubtlety,Zero-shot Generation,0.4,0.125,0.05
+election_level1_nosubtlety,\ioprompt,1.0,0.0,0.0
+election_level1_nosubtlety,\iorefine,1.0,0.1,0.1
+election_level1_nosubtlety,\hypogenic,1.0,0.5,0.5
+election_level2_nosubtlety,Zero-shot Generation,0.2667,0.0625,0.0167
+election_level2_nosubtlety,\ioprompt,0.8,0.2708,0.2167
+election_level2_nosubtlety,\iorefine,0.9333,0.1786,0.1667
+election_level2_nosubtlety,\hypogenic,0.9333,0.3929,0.3667
+election_level3_nosubtlety,Zero-shot Generation,0.8,0.125,0.1
+election_level3_nosubtlety,\ioprompt,0.6,0.25,0.15
+election_level3_nosubtlety,\iorefine,0.0,0.0,0.0
+election_level3_nosubtlety,\hypogenic,1.0,0.55,0.55
+election_level4_nosubtlety,Zero-shot Generation,0.3846,0.0,0.0
+election_level4_nosubtlety,\ioprompt,0.9231,0.25,0.2308
+election_level4_nosubtlety,\iorefine,0.8462,0.1136,0.0962
+election_level4_nosubtlety,\hypogenic,1.0,0.2308,0.2308
+election_level5_nosubtlety,Zero-shot Generation,0.4,0.0,0.0
+election_level5_nosubtlety,\ioprompt,0.8667,0.1731,0.15
+election_level5_nosubtlety,\iorefine,1.0,0.1833,0.1833
+election_level5_nosubtlety,\hypogenic,1.0,0.3333,0.3333
+preference_level0_nosubtlety,Zero-shot Generation,0.0,0.0,0.0
+preference_level0_nosubtlety,\ioprompt,1.0,0.0,0.0
+preference_level0_nosubtlety,\iorefine,1.0,0.0,0.0
+preference_level0_nosubtlety,\hypogenic,1.0,0.75,0.75
+preference_level1_nosubtlety,Zero-shot Generation,0.2,0.0,0.0
+preference_level1_nosubtlety,\ioprompt,0.4,0.25,0.1
+preference_level1_nosubtlety,\iorefine,1.0,0.0,0.0
+preference_level1_nosubtlety,\hypogenic,1.0,0.4,0.4
+preference_level2_nosubtlety,Zero-shot Generation,0.0667,0.0,0.0
+preference_level2_nosubtlety,\ioprompt,0.8,0.2917,0.2333
+preference_level2_nosubtlety,\iorefine,0.8667,0.1538,0.1333
+preference_level2_nosubtlety,\hypogenic,0.9333,0.4107,0.3833
+preference_level3_nosubtlety,Zero-shot Generation,0.0,0.0,0.0
+preference_level3_nosubtlety,\ioprompt,0.4,0.25,0.1
+preference_level3_nosubtlety,\iorefine,1.0,0.0,0.0
+preference_level3_nosubtlety,\hypogenic,1.0,0.1,0.1
+preference_level4_nosubtlety,Zero-shot Generation,0.1333,0.0,0.0
+preference_level4_nosubtlety,\ioprompt,0.8667,0.2115,0.1833
+preference_level4_nosubtlety,\iorefine,0.9333,0.1786,0.1667
+preference_level4_nosubtlety,\hypogenic,1.0,0.2333,0.2333
+preference_level5_nosubtlety,Zero-shot Generation,0.1333,0.25,0.0333
+preference_level5_nosubtlety,\ioprompt,0.8,0.3958,0.3167
+preference_level5_nosubtlety,\iorefine,0.9333,0.25,0.2333
+preference_level5_nosubtlety,\hypogenic,1.0,0.3833,0.3833
+election_controlled_5_0_0,Zero-shot Generation,1.0,0.1875,0.1875
+election_controlled_5_0_0,\ioprompt,1.0,0.5625,0.5625
+election_controlled_5_0_0,\iorefine,0.75,0.3333,0.25
+election_controlled_5_0_0,\hypogenic,1.0,0.4375,0.4375
+election_controlled_10_0_0,Zero-shot Generation,0.6,0.125,0.075
+election_controlled_10_0_0,\ioprompt,0.9,0.3889,0.35
+election_controlled_10_0_0,\iorefine,0.5,0.35,0.175
+election_controlled_10_0_0,\hypogenic,1.0,0.45,0.45
+election_controlled_15_0_0,Zero-shot Generation,0.4286,0.0,0.0
+election_controlled_15_0_0,\ioprompt,0.6429,0.25,0.1607
+election_controlled_15_0_0,\iorefine,0.5714,0.3125,0.1786
+election_controlled_15_0_0,\hypogenic,0.8571,0.3542,0.3036
+election_controlled_20_0_0,Zero-shot Generation,0.6842,0.2115,0.1447
+election_controlled_20_0_0,\ioprompt,0.7368,0.3393,0.25
+election_controlled_20_0_0,\iorefine,0.2632,0.05,0.0132
+election_controlled_20_0_0,\hypogenic,0.9474,0.4028,0.3816
+election_controlled_20_0.1_0,Zero-shot Generation,0.5789,0.1364,0.0789
+election_controlled_20_0.1_0,\ioprompt,0.5789,0.3864,0.2237
+election_controlled_20_0.1_0,\iorefine,0.4211,0.1562,0.0658
+election_controlled_20_0.1_0,\hypogenic,0.8947,0.2941,0.2632
+election_controlled_20_0.2_0,Zero-shot Generation,0.7895,0.05,0.0395
+election_controlled_20_0.2_0,\ioprompt,0.5789,0.2273,0.1316
+election_controlled_20_0.2_0,\iorefine,0.5263,0.125,0.0658
+election_controlled_20_0.2_0,\hypogenic,0.9474,0.2778,0.2632
+election_controlled_20_0.3_0,Zero-shot Generation,0.35,0.1786,0.0625
+election_controlled_20_0.3_0,\ioprompt,0.6,0.2292,0.1375
+election_controlled_20_0.3_0,\iorefine,0.15,0.25,0.0375
+election_controlled_20_0.3_0,\hypogenic,0.85,0.25,0.2125
+election_controlled_20_0_0.1,Zero-shot Generation,0.5,0.15,0.075
+election_controlled_20_0_0.1,\ioprompt,0.7,0.3214,0.225
+election_controlled_20_0_0.1,\iorefine,0.0,0.0,0.0
+election_controlled_20_0_0.1,\hypogenic,0.9,0.4028,0.3625
+election_controlled_20_0_0.2,Zero-shot Generation,0.7895,0.1667,0.1316
+election_controlled_20_0_0.2,\ioprompt,0.8421,0.2969,0.25
+election_controlled_20_0_0.2,\iorefine,0.5789,0.3182,0.1842
+election_controlled_20_0_0.2,\hypogenic,0.9474,0.3056,0.2895
+election_controlled_20_0_0.3,Zero-shot Generation,0.5263,0.1,0.0526
+election_controlled_20_0_0.3,\ioprompt,0.8947,0.3529,0.3158
+election_controlled_20_0_0.3,\iorefine,0.3158,0.2083,0.0658
+election_controlled_20_0_0.3,\hypogenic,0.8947,0.3529,0.3158
+election_controlled_20_0.1_0.1,Zero-shot Generation,0.5789,0.1136,0.0658
+election_controlled_20_0.1_0.1,\ioprompt,0.6316,0.2708,0.1711
+election_controlled_20_0.1_0.1,\iorefine,0.4211,0.3125,0.1316
+election_controlled_20_0.1_0.1,\hypogenic,0.9474,0.3472,0.3289
+election_controlled_20_0.2_0.2,Zero-shot Generation,0.4737,0.1944,0.0921
+election_controlled_20_0.2_0.2,\ioprompt,0.5789,0.2273,0.1316
+election_controlled_20_0.2_0.2,\iorefine,0.6316,0.2917,0.1842
+election_controlled_20_0.2_0.2,\hypogenic,0.8421,0.3438,0.2895
+election_controlled_20_0.3_0.3,Zero-shot Generation,0.5294,0.1944,0.1029
+election_controlled_20_0.3_0.3,\ioprompt,0.8824,0.3333,0.2941
+election_controlled_20_0.3_0.3,\iorefine,0.6471,0.3182,0.2059
+election_controlled_20_0.3_0.3,\hypogenic,0.7059,0.3542,0.25
+preference_controlled_5_0_0,Zero-shot Generation,0.0,0.0,0.0
+preference_controlled_5_0_0,\ioprompt,1.0,0.15,0.15
+preference_controlled_5_0_0,\iorefine,0.8,0.0625,0.05
+preference_controlled_5_0_0,\hypogenic,1.0,0.2,0.2
+preference_controlled_10_0_0,Zero-shot Generation,0.1111,0.0,0.0
+preference_controlled_10_0_0,\ioprompt,0.7778,0.3214,0.25
+preference_controlled_10_0_0,\iorefine,0.0,0.0,0.0
+preference_controlled_10_0_0,\hypogenic,1.0,0.3056,0.3056
+preference_controlled_15_0_0,Zero-shot Generation,0.2857,0.25,0.0714
+preference_controlled_15_0_0,\ioprompt,0.8571,0.2292,0.1964
+preference_controlled_15_0_0,\iorefine,0.7143,0.15,0.1071
+preference_controlled_15_0_0,\hypogenic,1.0,0.3393,0.3393
+preference_controlled_20_0_0,Zero-shot Generation,0.0,0.0,0.0
+preference_controlled_20_0_0,\ioprompt,0.7895,0.2167,0.1711
+preference_controlled_20_0_0,\iorefine,0.8421,0.2188,0.1842
+preference_controlled_20_0_0,\hypogenic,0.8947,0.3824,0.3421
+preference_controlled_20_0.1_0,Zero-shot Generation,0.0526,0.0,0.0
+preference_controlled_20_0.1_0,\ioprompt,1.0,0.3158,0.3158
+preference_controlled_20_0.1_0,\iorefine,0.4211,0.1875,0.0789
+preference_controlled_20_0.1_0,\hypogenic,1.0,0.2632,0.2632
+preference_controlled_20_0.2_0,Zero-shot Generation,0.0,0.0,0.0
+preference_controlled_20_0.2_0,\ioprompt,1.0,0.2895,0.2895
+preference_controlled_20_0.2_0,\iorefine,0.7368,0.1964,0.1447
+preference_controlled_20_0.2_0,\hypogenic,0.9474,0.3611,0.3421
+preference_controlled_20_0.3_0,Zero-shot Generation,0.1053,0.25,0.0263
+preference_controlled_20_0.3_0,\ioprompt,0.8421,0.3594,0.3026
+preference_controlled_20_0.3_0,\iorefine,0.3158,0.0,0.0
+preference_controlled_20_0.3_0,\hypogenic,1.0,0.3684,0.3684
+preference_controlled_20_0_0.1,Zero-shot Generation,0.0526,0.25,0.0132
+preference_controlled_20_0_0.1,\ioprompt,0.8421,0.25,0.2105
+preference_controlled_20_0_0.1,\iorefine,0.1053,0.0,0.0
+preference_controlled_20_0_0.1,\hypogenic,1.0,0.3421,0.3421
+preference_controlled_20_0_0.2,Zero-shot Generation,0.0526,0.0,0.0
+preference_controlled_20_0_0.2,\ioprompt,0.9474,0.3333,0.3158
+preference_controlled_20_0_0.2,\iorefine,0.5263,0.075,0.0395
+preference_controlled_20_0_0.2,\hypogenic,1.0,0.3289,0.3289
+preference_controlled_20_0_0.3,Zero-shot Generation,0.1579,0.25,0.0395
+preference_controlled_20_0_0.3,\ioprompt,0.9474,0.2778,0.2632
+preference_controlled_20_0_0.3,\iorefine,0.6842,0.1346,0.0921
+preference_controlled_20_0_0.3,\hypogenic,1.0,0.25,0.25
+preference_controlled_20_0.1_0.1,Zero-shot Generation,0.0526,0.0,0.0
+preference_controlled_20_0.1_0.1,\ioprompt,1.0,0.3289,0.3289
+preference_controlled_20_0.1_0.1,\iorefine,0.8421,0.3438,0.2895
+preference_controlled_20_0.1_0.1,\hypogenic,1.0,0.4211,0.4211
+preference_controlled_20_0.2_0.2,Zero-shot Generation,0.0526,0.25,0.0132
+preference_controlled_20_0.2_0.2,\ioprompt,0.9474,0.3611,0.3421
+preference_controlled_20_0.2_0.2,\iorefine,0.5263,0.0,0.0
+preference_controlled_20_0.2_0.2,\hypogenic,1.0,0.4079,0.4079
+preference_controlled_20_0.3_0.3,Zero-shot Generation,0.1111,0.125,0.0139
+preference_controlled_20_0.3_0.3,\ioprompt,0.8889,0.2031,0.1806
+preference_controlled_20_0.3_0.3,\iorefine,0.3889,0.1786,0.0694
+preference_controlled_20_0.3_0.3,\hypogenic,1.0,0.3056,0.3056
+admission_adv_level_1_base,Zero-shot Generation,1.0,0.0,0.0
+admission_adv_level_1_base,\ioprompt,1.0,1.0,1.0
+admission_adv_level_1_base,\iorefine,1.0,1.0,1.0
+admission_adv_level_1_base,\hypogenic,1.0,1.0,1.0
+admission_adv_level_2_depth_2,Zero-shot Generation,1.0,0.0,0.0
+admission_adv_level_2_depth_2,\ioprompt,1.0,1.0,1.0
+admission_adv_level_2_depth_2,\iorefine,1.0,1.0,1.0
+admission_adv_level_2_depth_2,\hypogenic,1.0,1.0,1.0
+admission_adv_level_2_distractor_3,Zero-shot Generation,1.0,0.0,0.0
+admission_adv_level_2_distractor_3,\ioprompt,1.0,0.0,0.0
+admission_adv_level_2_distractor_3,\iorefine,1.0,0.5,0.5
+admission_adv_level_2_distractor_3,\hypogenic,1.0,1.0,1.0
+admission_adv_level_2_noise_10,Zero-shot Generation,1.0,0.0,0.0
+admission_adv_level_2_noise_10,\ioprompt,1.0,0.0,0.0
+admission_adv_level_2_noise_10,\iorefine,1.0,0.0,0.0
+admission_adv_level_2_noise_10,\hypogenic,1.0,1.0,1.0
+admission_adv_level_2_size_5,Zero-shot Generation,0.0,0.0,0.0
+admission_adv_level_2_size_5,\ioprompt,0.6,0.0,0.0
+admission_adv_level_2_size_5,\iorefine,0.6,0.0,0.0
+admission_adv_level_2_size_5,\hypogenic,1.0,0.35,0.35
+admission_adv_level_3_depth_3,Zero-shot Generation,1.0,0.0,0.0
+admission_adv_level_3_depth_3,\ioprompt,1.0,0.2,0.2
+admission_adv_level_3_depth_3,\iorefine,1.0,0.0,0.0
+admission_adv_level_3_depth_3,\hypogenic,1.0,0.15,0.15
+admission_adv_level_3_distractor_6,Zero-shot Generation,1.0,0.0,0.0
+admission_adv_level_3_distractor_6,\ioprompt,1.0,0.0,0.0
+admission_adv_level_3_distractor_6,\iorefine,1.0,0.0,0.0
+admission_adv_level_3_distractor_6,\hypogenic,1.0,0.5,0.5
+admission_adv_level_3_noise_20,Zero-shot Generation,1.0,0.0,0.0
+admission_adv_level_3_noise_20,\ioprompt,1.0,1.0,1.0
+admission_adv_level_3_noise_20,\iorefine,1.0,0.75,0.75
+admission_adv_level_3_noise_20,\hypogenic,1.0,1.0,1.0
+admission_adv_level_3_size_10,Zero-shot Generation,1.0,0.0,0.0
+admission_adv_level_3_size_10,\ioprompt,1.0,0.0,0.0
+admission_adv_level_3_size_10,\iorefine,0.8,0.0,0.0
+admission_adv_level_3_size_10,\hypogenic,1.0,0.15,0.15
+admission_adv_level_4_depth_4,Zero-shot Generation,1.0,0.0,0.0
+admission_adv_level_4_depth_4,\ioprompt,1.0,0.05,0.05
+admission_adv_level_4_depth_4,\iorefine,1.0,0.0,0.0
+admission_adv_level_4_depth_4,\hypogenic,1.0,0.45,0.45
+admission_adv_level_4_distractor_10,Zero-shot Generation,1.0,0.0,0.0
+admission_adv_level_4_distractor_10,\ioprompt,1.0,0.0,0.0
+admission_adv_level_4_distractor_10,\iorefine,1.0,0.0,0.0
+admission_adv_level_4_distractor_10,\hypogenic,1.0,0.75,0.75
+admission_adv_level_4_noise_30,Zero-shot Generation,1.0,0.0,0.0
+admission_adv_level_4_noise_30,\ioprompt,1.0,0.0,0.0
+admission_adv_level_4_noise_30,\iorefine,1.0,0.5,0.5
+admission_adv_level_4_noise_30,\hypogenic,1.0,0.75,0.75
+admission_adv_level_4_size_15,Zero-shot Generation,0.9333,0.0357,0.0333
+admission_adv_level_4_size_15,\ioprompt,0.8,0.0,0.0
+admission_adv_level_4_size_15,\iorefine,0.6,0.0,0.0
+admission_adv_level_4_size_15,\hypogenic,1.0,0.0667,0.0667
+election_counterfactual_normal,Zero-shot Generation,0.55,0.25,0.1375
+election_counterfactual_normal,\ioprompt,0.55,0.4545,0.25
+election_counterfactual_normal,\iorefine,0.3,0.1667,0.05
+election_counterfactual_normal,\hypogenic,0.95,0.5,0.475
+election_counterfactual_counterfactual,Zero-shot Generation,0.35,0.1786,0.0625
+election_counterfactual_counterfactual,\ioprompt,0.75,0.2667,0.2
+election_counterfactual_counterfactual,\iorefine,0.5,0.15,0.075
+election_counterfactual_counterfactual,\hypogenic,0.85,0.2353,0.2

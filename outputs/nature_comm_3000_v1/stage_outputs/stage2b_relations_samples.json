@@ -1,0 +1,502 @@
+[
+  {
+    "title": "Using machine learning to simultaneously quantify multiple cognitive components of episodic memory",
+    "跨学科关系": [
+      {
+        "head": "Transfer Learning",
+        "relation": "leveraged to predict neural activity related to",
+        "relation_type": "method_applied_to",
+        "relation_type_norm": "method_applied_to",
+        "relation_type_raw": "method_applied_to",
+        "tail": "Episodic Memory Encoding",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [],
+        "evidence": "Using a machine learning algorithm known as \"transfer learning\", we leveraged visual perception, sustained attention, and selective attention brain states to better predict episodic memory performance",
+        "source": "abstract",
+        "confidence": 0.96
+      },
+      {
+        "head": "Transfer Learning",
+        "relation": "applied to decode cognitive components of",
+        "relation_type": "method_applied_to",
+        "relation_type_norm": "method_applied_to",
+        "relation_type_raw": "method_applied_to",
+        "tail": "Visual Perception",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [],
+        "evidence": "leveraged visual perception, sustained attention, and selective attention brain states to better predict episodic memory performance",
+        "source": "abstract",
+        "confidence": 0.94
+      },
+      {
+        "head": "Transfer Learning",
+        "relation": "utilized to analyze brain states for memory prediction",
+        "relation_type": "method_applied_to",
+        "relation_type_norm": "method_applied_to",
+        "relation_type_raw": "method_applied_to",
+        "tail": "Sustained Attention",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [],
+        "evidence": "leveraged visual perception, sustained attention, and selective attention brain states to better predict episodic memory performance",
+        "source": "abstract",
+        "confidence": 0.94
+      },
+      {
+        "head": "Transfer Learning",
+        "relation": "employed to assess contribution of attentional states to encoding",
+        "relation_type": "method_applied_to",
+        "relation_type_norm": "method_applied_to",
+        "relation_type_raw": "method_applied_to",
+        "tail": "Selective Attention",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [],
+        "evidence": "leveraged visual perception, sustained attention, and selective attention brain states to better predict episodic memory performance",
+        "source": "abstract",
+        "confidence": 0.94
+      },
+      {
+        "head": "Cognitive Domains",
+        "relation": "improve prediction performance when jointly considered",
+        "relation_type": "improves_metric",
+        "relation_type_norm": "improves_metric",
+        "relation_type_raw": "improves_metric",
+        "tail": "Encoding-Related Brain Activity Prediction",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [],
+        "evidence": "this multidimensional treatment of memory decoding improved prediction performance compared to traditional, unidimensional methods",
+        "source": "abstract",
+        "confidence": 0.93
+      },
+      {
+        "head": "Multi-Source Transfer Learning",
+        "relation": "enables decoding of neural activity across multiple cognitive tasks",
+        "relation_type": "method_applied_to",
+        "relation_type_norm": "method_applied_to",
+        "relation_type_raw": "method_applied_to",
+        "tail": "EEG Activity Classification",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [],
+        "evidence": "transfer learning with multiple sources typically being EEG activity associated with the same cognitive task",
+        "source": "introduction",
+        "confidence": 0.91
+      },
+      {
+        "head": "High-Low Perception Classifier",
+        "relation": "provides features to predict perception levels during encoding",
+        "relation_type": "corresponds_to",
+        "relation_type_norm": "corresponds_to",
+        "relation_type_raw": "corresponds_to",
+        "tail": "Neural Activity Prediction",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [],
+        "evidence": "train a high vs. low perception performance classifier... transfer the gained knowledge to encoding-related brain activity",
+        "source": "introduction",
+        "confidence": 0.92
+      },
+      {
+        "head": "Visual Perception",
+        "relation": "constitutes a multidimensional component of memory formation",
+        "relation_type": "constrains",
+        "relation_type_norm": "constrains",
+        "relation_type_raw": "constrains",
+        "tail": "Episodic Memory Encoding",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [],
+        "evidence": "episodic memory is believed to be a multidimensional process in which various cognitive functions including perception contribute to memory formation",
+        "source": "introduction",
+        "confidence": 0.95
+      },
+      {
+        "head": "Sustained Attention",
+        "relation": "modulates memory performance through brain state interactions",
+        "relation_type": "constrains",
+        "relation_type_norm": "constrains",
+        "relation_type_raw": "constrains",
+        "tail": "Episodic Memory Encoding",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [],
+        "evidence": "presenting to-be-encoded stimuli during high vs. low sustained attention brain states enhances episodic memory performance",
+        "source": "introduction",
+        "confidence": 0.96
+      },
+      {
+        "head": "Selective Attention",
+        "relation": "failure to engage leads to ineffective memory consolidation",
+        "relation_type": "driven_by",
+        "relation_type_norm": "driven_by",
+        "relation_type_raw": "driven_by",
+        "tail": "Encoding Failure",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [],
+        "evidence": "Did they fail to maintain their attention? Were they not selectively attending to that event and effectively ignoring distracting information?",
+        "source": "introduction",
+        "confidence": 0.92
+      }
+    ],
+    "按辅助学科分类": {
+      "生物学": {
+        "概念": [
+          "情景记忆编码",
+          "视觉感知",
+          "持续注意",
+          "选择性注意",
+          "脑电图",
+          "神经活动",
+          "认知领域",
+          "感知",
+          "脑区",
+          "编码失败",
+          "干扰信息"
+        ],
+        "关系": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          6,
+          7,
+          8,
+          9
+        ],
+        "rationale": "提供认知组件的神经基础和脑状态分析，支持记忆形成机制的多维度建模"
+      }
+    }
+  },
+  {
+    "title": "Structural visualization of small molecule recognition by CXCR3 uncovers dual-agonism in the CXCR3-CXCR7 system",
+    "跨学科关系": [
+      {
+        "head": "CXCR3",
+        "relation": "shares common natural agonist CXCL11 while exhibiting prototypical GPCR signaling",
+        "relation_type": "maps_to",
+        "relation_type_norm": "maps_to",
+        "relation_type_raw": "maps_to",
+        "tail": "CXCR7",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [],
+        "evidence": "CXCR3 and CXCR7 constitute a pair wherein the former is a prototypical GPCR while the latter exhibits selective coupling to βarrs despite sharing a common natural agonist: CXCL11",
+        "source": "abstract",
+        "confidence": 0.98
+      },
+      {
+        "head": "cryo-EM structures",
+        "relation": "reveal structural snapshots uncovering",
+        "relation_type": "method_applied_to",
+        "relation_type_norm": "method_applied_to",
+        "relation_type_raw": "method_applied_to",
+        "tail": "allosteric network",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [],
+        "evidence": "we determine cryo-EM structures of CXCR3... These structural snapshots uncover an allosteric network bridging the ligand-binding pocket",
+        "source": "abstract",
+        "confidence": 0.95
+      },
+      {
+        "head": "orthosteric binding pocket",
+        "relation": "structural topology allows discovery and validation of",
+        "relation_type": "improves_metric",
+        "relation_type_norm": "improves_metric",
+        "relation_type_raw": "improves_metric",
+        "tail": "dual agonism",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [],
+        "evidence": "structural topology of the orthosteric binding pocket also allows us to discover and validate that selected small molecule agonists of CXCR3 display robust agonism at CXCR7",
+        "source": "abstract",
+        "confidence": 0.96
+      },
+      {
+        "head": "signaling-bias",
+        "relation": "provides molecular insights into",
+        "relation_type": "generalizes",
+        "relation_type_norm": "generalizes",
+        "relation_type_raw": "generalizes",
+        "tail": "transducer-coupling bias",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [],
+        "evidence": "study offers molecular insights into signaling-bias and dual agonism in the CXCR3-CXCR7 system",
+        "source": "abstract",
+        "confidence": 0.94
+      },
+      {
+        "head": "small molecule agonists",
+        "relation": "recognize through modular orthosteric ligand binding pocket",
+        "relation_type": "constrains",
+        "relation_type_norm": "constrains",
+        "relation_type_raw": "constrains",
+        "tail": "CXCR3",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [],
+        "evidence": "CXCR3 and CXCR7 also recognize small molecule agonists suggesting a modular orthosteric ligand binding pocket",
+        "source": "abstract",
+        "confidence": 0.93
+      },
+      {
+        "head": "VUF11418",
+        "relation": "acts as G-protein-biased agonist at",
+        "relation_type": "driven_by",
+        "relation_type_norm": "driven_by",
+        "relation_type_raw": "driven_by",
+        "tail": "G-proteins",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [],
+        "evidence": "VUF11418... developed as G-protein-biased agonist of CXCR3",
+        "source": "introduction",
+        "confidence": 0.95
+      },
+      {
+        "head": "VUF10661",
+        "relation": "exhibits βarr-biased agonism at",
+        "relation_type": "extends",
+        "relation_type_norm": "extends",
+        "relation_type_raw": "extends",
+        "tail": "β",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [],
+        "evidence": "VUF10661 is characterized as βarr-biased agonist of CXCR3",
+        "source": "introduction",
+        "confidence": 0.94
+      },
+      {
+        "head": "chemokine receptors",
+        "relation": "exhibit conserved",
+        "relation_type": "maps_to",
+        "relation_type_norm": "maps_to",
+        "relation_type_raw": "maps_to",
+        "tail": "seven-transmembrane architecture",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [],
+        "evidence": "chemokine receptors exhibit a conserved seven-transmembrane architecture characteristic of prototypical GPCRs",
+        "source": "introduction",
+        "confidence": 0.92
+      },
+      {
+        "head": "ligand-directed signaling bias",
+        "relation": "principles explored through",
+        "relation_type": "depends_on",
+        "relation_type_norm": "depends_on",
+        "relation_type_raw": "depends_on",
+        "tail": "chemical promiscuity",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [],
+        "evidence": "significant promiscuity amongst chemokines for the chemokine receptors makes them an interesting system to explore the principles of ligand-directed signaling bias",
+        "source": "introduction",
+        "confidence": 0.91
+      },
+      {
+        "head": "non-canonical complexes",
+        "relation": "formation promoted by",
+        "relation_type": "improves_metric",
+        "relation_type_norm": "improves_metric",
+        "relation_type_raw": "improves_metric",
+        "tail": "CXCL11",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [],
+        "evidence": "CXCL11... promotes the formation of non-canonical CXCR3-Gαi-βarr complexes",
+        "source": "introduction",
+        "confidence": 0.93
+      }
+    ],
+    "按辅助学科分类": {
+      "基础医学": {
+        "概念": [
+          "chemokine receptors",
+          "GPCRs",
+          "inflammatory responses",
+          "autoimmune disorders",
+          "tumor microenvironment"
+        ],
+        "关系": [
+          0,
+          7,
+          9
+        ],
+        "rationale": "解析趋化因子受体家族的结构与免疫调节功能"
+      },
+      "生物学": {
+        "概念": [
+          "seven-transmembrane architecture",
+          "splice variant",
+          "N-terminal domain",
+          "non-canonical complexes",
+          "ligand-directed signaling bias"
+        ],
+        "关系": [
+          1,
+          2,
+          8
+        ],
+        "rationale": "阐释G蛋白偶联受体的结构特征与信号转导机制"
+      },
+      "化学": {
+        "概念": [
+          "small molecule agonists",
+          "chemical promiscuity",
+          "VUF11418",
+          "VUF10661",
+          "VUF11207"
+        ],
+        "关系": [
+          4,
+          5,
+          6
+        ],
+        "rationale": "提供小分子激动剂库及受体选择性调控方案"
+      }
+    }
+  },
+  {
+    "title": "Pt nanocluster-Fe single atom pairs dual-regulate charge extraction and interfacial reaction for enhanced photoelectric response",
+    "跨学科关系": [
+      {
+        "head": "Pt-Fe双金属催化剂",
+        "relation": "通过Pt纳米簇-Fe单原子对调节固液界面性质",
+        "relation_type": "method_applied_to",
+        "relation_type_norm": "method_applied_to",
+        "relation_type_raw": "method_applied_to",
+        "tail": "固液界面",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [],
+        "evidence": "integrate Pt nanocluster-Fe single-atom pairs with CuO to regulate both solid-solid and solid-liquid interfaces",
+        "source": "abstract",
+        "confidence": 0.96
+      },
+      {
+        "head": "欧姆接触",
+        "relation": "在CuO/Pt界面形成的欧姆接触加速电子提取",
+        "relation_type": "improves_metric",
+        "relation_type_norm": "improves_metric",
+        "relation_type_raw": "improves_metric",
+        "tail": "电子提取",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [],
+        "evidence": "an Ohmic contact at the CuO/Pt interface accelerates electron extraction",
+        "source": "abstract",
+        "confidence": 0.95
+      },
+      {
+        "head": "电荷转移机制",
+        "relation": "Pt到Fe的电荷转移增强氧还原反应动力学",
+        "relation_type": "improves_metric",
+        "relation_type_norm": "improves_metric",
+        "relation_type_raw": "improves_metric",
+        "tail": "ORR",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [],
+        "evidence": "Pt-to-Fe charge transfer enhances oxygen reduction at Fe sites",
+        "source": "abstract",
+        "confidence": 0.94
+      },
+      {
+        "head": "螯合效应",
+        "relation": "草甘膦的螯合效应通过阻断电子转移实现超低检测限",
+        "relation_type": "constrains",
+        "relation_type_norm": "constrains",
+        "relation_type_raw": "constrains",
+        "tail": "检测限",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [],
+        "evidence": "exploiting chelating effect of glyphosate on CuO to impede electron transfer, achieving a detection limit of 0.41 ng/mL",
+        "source": "abstract",
+        "confidence": 0.93
+      },
+      {
+        "head": "DFT计算",
+        "relation": "密度泛函理论计算揭示界面反应势垒的协同调控机制",
+        "relation_type": "inferred_from",
+        "relation_type_norm": "inferred_from",
+        "relation_type_raw": "inferred_from",
+        "tail": "界面反应势垒",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [],
+        "evidence": "through experimental investigations and DFT calculations",
+        "source": "introduction",
+        "confidence": 0.92
+      },
+      {
+        "head": "纳米簇-单原子对",
+        "relation": "纳米簇-单原子对设计提升能量转换效率",
+        "relation_type": "generalizes",
+        "relation_type_norm": "generalizes",
+        "relation_type_raw": "generalizes",
+        "tail": "能量转换",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [],
+        "evidence": "advances cocatalyst design for enhanced energy conversion",
+        "source": "abstract",
+        "confidence": 0.91
+      },
+      {
+        "head": "电子转移通道",
+        "relation": "构建电子转移通道抑制载流子复合",
+        "relation_type": "constrains",
+        "relation_type_norm": "constrains",
+        "relation_type_raw": "constrains",
+        "tail": "载流子复合",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [],
+        "evidence": "construct an electron transfer highway to mitigate charge recombination",
+        "source": "introduction",
+        "confidence": 0.9
+      }
+    ],
+    "按辅助学科分类": {
+      "材料科学": {
+        "概念": [
+          "纳米簇-单原子对",
+          "光电极",
+          "碳载体",
+          "强相互作用",
+          "阴离子交换膜",
+          "气体扩散层"
+        ],
+        "关系": [
+          5
+        ],
+        "rationale": "通过纳米结构设计与载体优化实现电荷传输性能提升"
+      },
+      "物理学": {
+        "概念": [
+          "PEC系统",
+          "电子提取",
+          "电荷分离",
+          "能量转换",
+          "界面电子转移",
+          "DFT"
+        ],
+        "关系": [
+          1,
+          4
+        ],
+        "rationale": "揭示电子转移机制与界面势垒调控的物理本质规律"
+      }
+    }
+  }
+]

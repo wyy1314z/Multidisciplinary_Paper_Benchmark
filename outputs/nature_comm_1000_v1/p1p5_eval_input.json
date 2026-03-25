@@ -1,0 +1,2289 @@
+[
+  {
+    "paper_id": "ba3a41c583c9",
+    "method_name": "P1",
+    "free_text_hypotheses": [
+      "假设：通过构建具有局域晶格畸变的二氧化钌纳米晶/氧化石墨烯异质界面，可实现d带中心下移与表面氧空位动态重构的协同调控。具体而言，氧化石墨烯二维褶皱基底的限域作用将诱导钌原子配位环境的不对称畸变，导致t2g-eg轨道分裂能隙扩大，同时界面处的强电子耦合作用可形成可逆的Ru-O-C桥联结构。这种电子结构调制将优化含氧中间体（*OH, *O, *OOH）的吸附构型，降低反应能垒，而动态氧空位在循环过程中通过可逆的C-O-Ru键重组实现自修复，从而同时提升催化活性（过电位<280 mV at 10 mA/cm²)和酸性稳定性（10000次循环后活性衰减<5%）。可通过原位XPS、operando XAS和DFT计算验证轨道能级变化及氧空位迁移机制。"
+    ],
+    "structured_paths": {},
+    "raw_responses": [
+      "假设：通过构建具有局域晶格畸变的二氧化钌纳米晶/氧化石墨烯异质界面，可实现d带中心下移与表面氧空位动态重构的协同调控。具体而言，氧化石墨烯二维褶皱基底的限域作用将诱导钌原子配位环境的不对称畸变，导致t2g-eg轨道分裂能隙扩大，同时界面处的强电子耦合作用可形成可逆的Ru-O-C桥联结构。这种电子结构调制将优化含氧中间体（*OH, *O, *OOH）的吸附构型，降低反应能垒，而动态氧空位在循环过程中通过可逆的C-O-Ru键重组实现自修复，从而同时提升催化活性（过电位<280 mV at 10 mA/cm²)和酸性稳定性（10000次循环后活性衰减<5%）。可通过原位XPS、operando XAS和DFT计算验证轨道能级变化及氧空位迁移机制。"
+    ],
+    "elapsed_seconds": 14.416721820831299
+  },
+  {
+    "paper_id": "ba3a41c583c9",
+    "method_name": "P2",
+    "free_text_hypotheses": [
+      "L1 Hypothesis: 在RuO₂催化剂中引入单原子铂可通过电子结构的定向调控实现拉伸应变与压缩应变的异质分布，其中拉伸应变通过增强晶格稳定性抑制Ru溶解，而压缩应变通过调制d带中心降低含氧中间体吸附能，从而同步提升氧析出反应的活性与稳定性。\n\nL2 Hypotheses:\n- Q1: 单原子Pt修饰会通过局域电荷转移效应诱导RuO₂晶格产生非对称应变场，其中Pt-Ru原子间距的拉伸导致基底区域产生拉伸应变，而Pt-O配位环境的压缩将引发表层原子的压缩应变，形成具有梯度分布的应变异质界面。\n- Q2: 离子交换工艺通过选择性刻蚀RuO₂表面的氧空位缺陷，促使Pt原子在特定晶面优先迁移并稳定，从而在催化剂表层重构出具有压缩应变的二维Pt-O-Ru活性层，同时保留体相的拉伸应变结构。"
+    ],
+    "structured_paths": {},
+    "raw_responses": [
+      "L1 Hypothesis: 在RuO₂催化剂中引入单原子铂可通过电子结构的定向调控实现拉伸应变与压缩应变的异质分布，其中拉伸应变通过增强晶格稳定性抑制Ru溶解，而压缩应变通过调制d带中心降低含氧中间体吸附能，从而同步提升氧析出反应的活性与稳定性。\n\nL2 Hypotheses:\n- Q1: 单原子Pt修饰会通过局域电荷转移效应诱导RuO₂晶格产生非对称应变场，其中Pt-Ru原子间距的拉伸导致基底区域产生拉伸应变，而Pt-O配位环境的压缩将引发表层原子的压缩应变，形成具有梯度分布的应变异质界面。\n- Q2: 离子交换工艺通过选择性刻蚀RuO₂表面的氧空位缺陷，促使Pt原子在特定晶面优先迁移并稳定，从而在催化剂表层重构出具有压缩应变的二维Pt-O-Ru活性层，同时保留体相的拉伸应变结构。"
+    ],
+    "elapsed_seconds": 15.170931577682495
+  },
+  {
+    "paper_id": "ba3a41c583c9",
+    "method_name": "P3",
+    "free_text_hypotheses": [
+      "L1 Hypothesis:  \n通过材料科学中的异质应变结构设计与化学带理论的协同作用，可构建具有梯度电子密度分布的RuO₂基催化剂。这种跨学科策略能够实现体相拉伸应变（材料科学）稳定晶格氧（化学）的同时，通过表面压缩应变（材料科学）调控氧中间体（化学）的吸附构型，从而突破酸性析氧火山图（化学）的理论极限，在保持高法拉第效率（化学）的前提下降低过电位（化学）。\n\nL2 Hypotheses:  \n- Q1: 单原子铂（化学）在RuO₂晶格中的异原子取代工程（化学）会引发材料科学中的异质应变结构重构。具体而言，Pt原子的高电负性（化学）将诱导局域电子重分布，导致近邻Ru位点发生d轨道分裂（化学），同时通过键共价性（材料科学）调控形成纳米级压缩应变区与体相拉伸应变场的交替分布。  \n- Q2: 离子交换工艺（材料科学）通过控制大猩猩玻璃（材料科学）载体表面的氧空位浓度，可定向调控Pt-RuO₂界面处的应变传递效率。这一过程会显著影响化学中的晶格氧释放动力学，通过表面压缩应变层的厚度与密度调节（材料科学），实现氧中间体脱附能（化学）的阶梯式优化。\n\nL3 Hypotheses:  \n- Q1: 基于材料科学中的异质应变结构设计，在RuO₂晶格中构建三维梯度应变场（体相拉伸/表面压缩）可通过化学键共价性（材料科学）调节能带结构（化学）。这种跨尺度调控将导致d带中心负移（化学）与氧空位形成能升高（化学）的协同效应，既能优化氧中间体吸附能（化学）接近热中性状态，又能抑制钌溶解（化学）过程中晶格氧的迁移速率。  \n- Q2: 体相拉伸应变（化学）与局域压缩应变（材料科学）的耦合可通过非对称应力场（材料科学）实现晶格氧释放（化学）的动力学选择性。具体机制为：体相拉伸应变增强Ru-O键共价性（材料科学）以抑制非催化活性氧释放，同时表面压缩应变通过局域电荷聚集（化学）降低OER决速步的能垒，从而在提升质量活性（化学）的同时延长催化剂寿命（材料科学）。"
+    ],
+    "structured_paths": {},
+    "raw_responses": [
+      "L1 Hypothesis:  \n通过材料科学中的异质应变结构设计与化学带理论的协同作用，可构建具有梯度电子密度分布的RuO₂基催化剂。这种跨学科策略能够实现体相拉伸应变（材料科学）稳定晶格氧（化学）的同时，通过表面压缩应变（材料科学）调控氧中间体（化学）的吸附构型，从而突破酸性析氧火山图（化学）的理论极限，在保持高法拉第效率（化学）的前提下降低过电位（化学）。\n\nL2 Hypotheses:  \n- Q1: 单原子铂（化学）在RuO₂晶格中的异原子取代工程（化学）会引发材料科学中的异质应变结构重构。具体而言，Pt原子的高电负性（化学）将诱导局域电子重分布，导致近邻Ru位点发生d轨道分裂（化学），同时通过键共价性（材料科学）调控形成纳米级压缩应变区与体相拉伸应变场的交替分布。  \n- Q2: 离子交换工艺（材料科学）通过控制大猩猩玻璃（材料科学）载体表面的氧空位浓度，可定向调控Pt-RuO₂界面处的应变传递效率。这一过程会显著影响化学中的晶格氧释放动力学，通过表面压缩应变层的厚度与密度调节（材料科学），实现氧中间体脱附能（化学）的阶梯式优化。\n\nL3 Hypotheses:  \n- Q1: 基于材料科学中的异质应变结构设计，在RuO₂晶格中构建三维梯度应变场（体相拉伸/表面压缩）可通过化学键共价性（材料科学）调节能带结构（化学）。这种跨尺度调控将导致d带中心负移（化学）与氧空位形成能升高（化学）的协同效应，既能优化氧中间体吸附能（化学）接近热中性状态，又能抑制钌溶解（化学）过程中晶格氧的迁移速率。  \n- Q2: 体相拉伸应变（化学）与局域压缩应变（材料科学）的耦合可通过非对称应力场（材料科学）实现晶格氧释放（化学）的动力学选择性。具体机制为：体相拉伸应变增强Ru-O键共价性（材料科学）以抑制非催化活性氧释放，同时表面压缩应变通过局域电荷聚集（化学）降低OER决速步的能垒，从而在提升质量活性（化学）的同时延长催化剂寿命（材料科学）。"
+    ],
+    "elapsed_seconds": 26.02489733695984
+  },
+  {
+    "paper_id": "ba3a41c583c9",
+    "method_name": "P4",
+    "free_text_hypotheses": [
+      "L1 Hypothesis:\n  hypothesis: Integrating d-band theory with heterogeneous strain engineering through a gradient heteroatom substitution approach can create a spatially resolved electronic structure in RuO₂, where surface compressive strain optimizes oxo-intermediate adsorption while bulk tensile strain suppresses Ru dissolution via orbital symmetry mismatch.\n  reasoning: \n    1. Heteroatom substitution engineering (materials science) induces atomic radius mismatches that generate strain gradients.\n    2. D-band center shifts (chemistry) from tensile strain alter Ru 4d–O 2p orbital hybridization symmetry.\n    3. Compressive strain on surface facets enhances π-backbonding with oxo-intermediates while bulk strain disrupts Ru–O antibonding states.\n    4. Predicted outcome: Dual-strain system enables position-specific catalytic activity and structural stability.\n  key_concepts: d-band theory, heteroatom substitution engineering, orbital symmetry mismatch, oxo-intermediates, heterogeneous strain engineering\n  disciplines_bridged: 化学, 材料科学\n\nL2 Hypotheses:\n- Q1:\n    hypothesis: Single-atom platinum modifies RuO₂ lattice dynamics through a synergistic mechano-electrochemical coupling mechanism where Pt-induced tensile strain enhances charge localization while interfacial Pt–Ru charge transfer modulates local compressive strain regions.\n    reasoning:\n      1. Single-atom Pt (chemistry) creates lattice distortions via atomic radius mismatch (materials science).\n      2. Strain heterogeneity alters phonon dispersion relations in RuO₂ lattice.\n      3. Charge redistribution from Pt–Ru orbital hybridization stabilizes compressive strain domains.\n      4. Predicted outcome: Atomic-scale strain gradients with embedded Pt atoms create hierarchical active sites.\n    key_concepts: single-atom platinum, phonon dispersion, mechano-electrochemical coupling, orbital hybridization\n    disciplines_bridged: 化学, 材料科学\n- Q2:\n    hypothesis: Ion exchange processes form a depth-dependent compressive strain profile through a cation–anion co-doping mechanism that generates surface lattice contraction while maintaining bulk tensile strain through substrate-mediated stress transfer.\n    reasoning:\n      1. Ion exchange (chemistry) introduces foreign cations/anions with size mismatches.\n      2. Differential contraction during cooling creates gradient compressive stress (materials science).\n      3. Substrate interaction mediates tensile strain preservation in deeper layers.\n      4. Predicted outcome: Strain gradient architecture enhances mechanical robustness without sacrificing catalytic activity.\n    key_concepts: ion exchange, cation-anion co-doping, gradient compressive stress, substrate-mediated stress transfer\n    disciplines_bridged: 化学, 材料科学\n\nL3 Hypotheses:\n- Q1:\n    hypothesis: Combining asymmetric d-band center engineering with heterogeneous strain structures can create orbital-selective active sites where tensile strain broadens the d-band width for charge transfer while compressive strain narrows it to optimize oxygen adsorption geometry.\n    reasoning:\n      1. D-band theory (chemistry) predicts that tensile strain increases d-band width.\n      2. Strain heterogeneity (materials science) creates localized electronic density modulation.\n      3. Compressive strain regions develop directional d-orbital splitting that favors end-on oxygen adsorption.\n      4. Predicted outcome: Spatially segregated charge transfer pathways enable volcano plot deviation with enhanced activity-stability synergy.\n    key_concepts: asymmetric d-band center, orbital-selective active sites, directional d-orbital splitting, volcano plot deviation\n    disciplines_bridged: 化学, 材料科学\n- Q2:\n    hypothesis: The synergistic effect of bulk tensile strain and localized compressive strain creates a strain-mediated oxygen vacancy migration barrier, where tensile strain stabilizes lattice oxygen through bond length elongation while compressive strain accelerates surface reaction kinetics via enhanced charge density overlap.\n    reasoning:\n      1. Tensile strain (materials science) increases Ru–O bond length, reducing oxygen vacancy formation energy.\n      2. Compressive strain (chemistry) enhances O 2p–Ru 4d orbital overlap at active sites.\n      3. Strain gradient forms energy landscape for oxygen vacancy diffusion control.\n      4. Predicted outcome: Dynamic strain regulation of oxygen evolution pathway and dissolution resistance.\n    key_concepts: oxygen vacancy migration barrier, orbital overlap enhancement, strain-mediated energy landscape, dynamic strain regulation\n    disciplines_bridged: 化学, 材料科学"
+    ],
+    "structured_paths": {},
+    "raw_responses": [
+      "L1 Hypothesis:\n  hypothesis: Integrating d-band theory with heterogeneous strain engineering through a gradient heteroatom substitution approach can create a spatially resolved electronic structure in RuO₂, where surface compressive strain optimizes oxo-intermediate adsorption while bulk tensile strain suppresses Ru dissolution via orbital symmetry mismatch.\n  reasoning: \n    1. Heteroatom substitution engineering (materials science) induces atomic radius mismatches that generate strain gradients.\n    2. D-band center shifts (chemistry) from tensile strain alter Ru 4d–O 2p orbital hybridization symmetry.\n    3. Compressive strain on surface facets enhances π-backbonding with oxo-intermediates while bulk strain disrupts Ru–O antibonding states.\n    4. Predicted outcome: Dual-strain system enables position-specific catalytic activity and structural stability.\n  key_concepts: d-band theory, heteroatom substitution engineering, orbital symmetry mismatch, oxo-intermediates, heterogeneous strain engineering\n  disciplines_bridged: 化学, 材料科学\n\nL2 Hypotheses:\n- Q1:\n    hypothesis: Single-atom platinum modifies RuO₂ lattice dynamics through a synergistic mechano-electrochemical coupling mechanism where Pt-induced tensile strain enhances charge localization while interfacial Pt–Ru charge transfer modulates local compressive strain regions.\n    reasoning:\n      1. Single-atom Pt (chemistry) creates lattice distortions via atomic radius mismatch (materials science).\n      2. Strain heterogeneity alters phonon dispersion relations in RuO₂ lattice.\n      3. Charge redistribution from Pt–Ru orbital hybridization stabilizes compressive strain domains.\n      4. Predicted outcome: Atomic-scale strain gradients with embedded Pt atoms create hierarchical active sites.\n    key_concepts: single-atom platinum, phonon dispersion, mechano-electrochemical coupling, orbital hybridization\n    disciplines_bridged: 化学, 材料科学\n- Q2:\n    hypothesis: Ion exchange processes form a depth-dependent compressive strain profile through a cation–anion co-doping mechanism that generates surface lattice contraction while maintaining bulk tensile strain through substrate-mediated stress transfer.\n    reasoning:\n      1. Ion exchange (chemistry) introduces foreign cations/anions with size mismatches.\n      2. Differential contraction during cooling creates gradient compressive stress (materials science).\n      3. Substrate interaction mediates tensile strain preservation in deeper layers.\n      4. Predicted outcome: Strain gradient architecture enhances mechanical robustness without sacrificing catalytic activity.\n    key_concepts: ion exchange, cation-anion co-doping, gradient compressive stress, substrate-mediated stress transfer\n    disciplines_bridged: 化学, 材料科学\n\nL3 Hypotheses:\n- Q1:\n    hypothesis: Combining asymmetric d-band center engineering with heterogeneous strain structures can create orbital-selective active sites where tensile strain broadens the d-band width for charge transfer while compressive strain narrows it to optimize oxygen adsorption geometry.\n    reasoning:\n      1. D-band theory (chemistry) predicts that tensile strain increases d-band width.\n      2. Strain heterogeneity (materials science) creates localized electronic density modulation.\n      3. Compressive strain regions develop directional d-orbital splitting that favors end-on oxygen adsorption.\n      4. Predicted outcome: Spatially segregated charge transfer pathways enable volcano plot deviation with enhanced activity-stability synergy.\n    key_concepts: asymmetric d-band center, orbital-selective active sites, directional d-orbital splitting, volcano plot deviation\n    disciplines_bridged: 化学, 材料科学\n- Q2:\n    hypothesis: The synergistic effect of bulk tensile strain and localized compressive strain creates a strain-mediated oxygen vacancy migration barrier, where tensile strain stabilizes lattice oxygen through bond length elongation while compressive strain accelerates surface reaction kinetics via enhanced charge density overlap.\n    reasoning:\n      1. Tensile strain (materials science) increases Ru–O bond length, reducing oxygen vacancy formation energy.\n      2. Compressive strain (chemistry) enhances O 2p–Ru 4d orbital overlap at active sites.\n      3. Strain gradient forms energy landscape for oxygen vacancy diffusion control.\n      4. Predicted outcome: Dynamic strain regulation of oxygen evolution pathway and dissolution resistance.\n    key_concepts: oxygen vacancy migration barrier, orbital overlap enhancement, strain-mediated energy landscape, dynamic strain regulation\n    disciplines_bridged: 化学, 材料科学"
+    ],
+    "elapsed_seconds": 33.94500780105591
+  },
+  {
+    "paper_id": "ba3a41c583c9",
+    "method_name": "P5",
+    "free_text_hypotheses": [
+      "主学科瓶颈：二氧化钌的稳定性不足；材料科学补位：异质应变结构设计；预期改进：提升析氧反应稳定性",
+      "主学科瓶颈：氧中间体吸附能调控困难；化学补位：异原子取代工程；预期改进：增强析氧反应活性",
+      "主学科瓶颈：表面与体相电子结构失配；材料科学补位：离子交换工艺；预期改进：协同提升活性与稳定性",
+      "材料科学的异原子取代工程通过单原子铂修饰构建异质应变结构，调控体相拉伸应变以抑制钌溶解",
+      "材料科学的离子交换工艺通过压缩应力层形成局部压缩应变，优化氧中间体吸附能提升析氧反应活性",
+      "通过带理论指导异质应变工程，实现电子结构调控与氧中间体吸附能优化",
+      "利用体相拉伸与局域压缩应变的协同作用，同时抑制晶格氧释放和钌溶解"
+    ],
+    "structured_paths": {
+      "L1": [
+        {
+          "steps": [
+            {
+              "step": 1,
+              "head": "单原子铂",
+              "relation": "通过异质应变结构设计增强二氧化钌的稳定性",
+              "tail": "异质应变结构",
+              "claim": "材料科学中的异质应变结构设计可通过单原子铂修饰调控二氧化钌电子结构，从而提升析氧反应稳定性"
+            },
+            {
+              "step": 2,
+              "head": "异质应变结构",
+              "relation": "协同体相拉伸应变与局域压缩应变实现结构稳定化",
+              "tail": "体相拉伸应变",
+              "claim": "异质应变结构 协同体相拉伸应变与局域压缩应变实现结构稳定化 体相拉伸应变"
+            },
+            {
+              "step": 3,
+              "head": "体相拉伸应变",
+              "relation": "通过抑制晶格氧释放与钌溶解提升催化耐久性",
+              "tail": "析氧反应",
+              "claim": "体相拉伸应变 通过抑制晶格氧释放与钌溶解提升催化耐久性 析氧反应"
+            }
+          ],
+          "summary": "主学科瓶颈：二氧化钌的稳定性不足；材料科学补位：异质应变结构设计；预期改进：提升析氧反应稳定性"
+        },
+        {
+          "steps": [
+            {
+              "step": 1,
+              "head": "压缩应变",
+              "relation": "通过调控氧中间体吸附能优化催化活性",
+              "tail": "氧中间体",
+              "claim": "化学中的异原子取代工程可通过压缩应变调控氧中间体电子结构，从而增强析氧反应活性"
+            },
+            {
+              "step": 2,
+              "head": "氧中间体",
+              "relation": "吸附能弱化与带中心上移的电子结构关联",
+              "tail": "带理论",
+              "claim": "氧中间体 吸附能弱化与带中心上移的电子结构关联 带理论"
+            },
+            {
+              "step": 3,
+              "head": "带理论",
+              "relation": "指导异原子取代工程实现电子结构定向调控",
+              "tail": "异原子取代工程",
+              "claim": "带理论 指导异原子取代工程实现电子结构定向调控 异原子取代工程"
+            }
+          ],
+          "summary": "主学科瓶颈：氧中间体吸附能调控困难；化学补位：异原子取代工程；预期改进：增强析氧反应活性"
+        },
+        {
+          "steps": [
+            {
+              "step": 1,
+              "head": "离子交换",
+              "relation": "诱导表面压缩应力层改变化学环境",
+              "tail": "压缩应变",
+              "claim": "材料科学的离子交换工艺可通过表面压缩应变调控二氧化钌电子分布，协同提升析氧反应活性与稳定性"
+            },
+            {
+              "step": 2,
+              "head": "压缩应变",
+              "relation": "与体相拉伸应变形成梯度电子结构",
+              "tail": "体相拉伸应变",
+              "claim": "压缩应变 与体相拉伸应变形成梯度电子结构 体相拉伸应变"
+            },
+            {
+              "step": 3,
+              "head": "体相拉伸应变",
+              "relation": "通过键共价性调控实现电荷重分布",
+              "tail": "键共价性",
+              "claim": "体相拉伸应变 通过键共价性调控实现电荷重分布 键共价性"
+            }
+          ],
+          "summary": "主学科瓶颈：表面与体相电子结构失配；材料科学补位：离子交换工艺；预期改进：协同提升活性与稳定性"
+        }
+      ],
+      "L2": [
+        {
+          "steps": [
+            {
+              "step": 1,
+              "head": "单原子铂",
+              "relation": "通过异原子取代工程诱导应变异质结构",
+              "tail": "异原子取代工程",
+              "claim": "单原子铂 通过异原子取代工程诱导应变异质结构 异原子取代工程"
+            },
+            {
+              "step": 2,
+              "head": "异原子取代工程",
+              "relation": "构建异质应变结构的特征",
+              "tail": "异质应变结构",
+              "claim": "异原子取代工程 构建异质应变结构的特征 异质应变结构"
+            },
+            {
+              "step": 3,
+              "head": "异质应变结构",
+              "relation": "产生体相拉伸应变以稳定催化剂",
+              "tail": "体相拉伸应变",
+              "claim": "异质应变结构 产生体相拉伸应变以稳定催化剂 体相拉伸应变"
+            }
+          ],
+          "summary": "材料科学的异原子取代工程通过单原子铂修饰构建异质应变结构，调控体相拉伸应变以抑制钌溶解"
+        },
+        {
+          "steps": [
+            {
+              "step": 1,
+              "head": "离子交换",
+              "relation": "在材料表面创建压缩应力层",
+              "tail": "压缩应力层",
+              "claim": "离子交换 在材料表面创建压缩应力层 压缩应力层"
+            },
+            {
+              "step": 2,
+              "head": "压缩应力层",
+              "relation": "形成局部压缩应变区域",
+              "tail": "压缩应变",
+              "claim": "压缩应力层 形成局部压缩应变区域 压缩应变"
+            },
+            {
+              "step": 3,
+              "head": "压缩应变",
+              "relation": "削弱氧中间体结合能提升催化活性",
+              "tail": "氧中间体",
+              "claim": "压缩应变 削弱氧中间体结合能提升催化活性 氧中间体"
+            }
+          ],
+          "summary": "材料科学的离子交换工艺通过压缩应力层形成局部压缩应变，优化氧中间体吸附能提升析氧反应活性"
+        }
+      ],
+      "L3": [
+        {
+          "steps": [
+            {
+              "step": 1,
+              "head": "带理论",
+              "relation": "解释张力诱导的电子结构调控",
+              "tail": "体相拉伸应变",
+              "claim": "基于带理论分析应变对电子态的影响"
+            },
+            {
+              "step": 2,
+              "head": "体相拉伸应变",
+              "relation": "构建包含多尺度应变的异质界面",
+              "tail": "异质应变结构",
+              "claim": "通过体相张力驱动形成复合应变微环境"
+            },
+            {
+              "step": 3,
+              "head": "异质应变结构",
+              "relation": "调控局部配位环境优化吸附能",
+              "tail": "氧中间体",
+              "claim": "异质界面应力分布影响氧中间体结合强度"
+            }
+          ],
+          "summary": "通过带理论指导异质应变工程，实现电子结构调控与氧中间体吸附能优化"
+        },
+        {
+          "steps": [
+            {
+              "step": 1,
+              "head": "体相拉伸应变",
+              "relation": "通过结构稳定化抑制晶格氧流失",
+              "tail": "晶格氧释放",
+              "claim": "拉伸应变增强金属-氧键稳定性"
+            },
+            {
+              "step": 2,
+              "head": "晶格氧释放",
+              "relation": "降低活性氧物种溶出风险",
+              "tail": "钌溶解",
+              "claim": "抑制晶格氧释放从而减少钌流失"
+            },
+            {
+              "step": 3,
+              "head": "钌溶解",
+              "relation": "应变耦合增强动态稳定性",
+              "tail": "压缩应变",
+              "claim": "局域压缩应变补偿张力维持结构完整"
+            }
+          ],
+          "summary": "利用体相拉伸与局域压缩应变的协同作用，同时抑制晶格氧释放和钌溶解"
+        }
+      ]
+    },
+    "raw_responses": [],
+    "elapsed_seconds": 9.918212890625e-05
+  },
+  {
+    "paper_id": "6a011836f49c",
+    "method_name": "P1",
+    "free_text_hypotheses": [
+      "**Hypothesis:**  \nIn CrCoNi medium-entropy alloys, the evolution of slip banding during deformation arises from a synergistic interaction between stress-driven reorientation of nanoscale L1₂-Co₃(Al,W)-type ordered precipitates and dynamic recovery processes at grain boundary triple junctions. We propose that these ordered precipitates, initially coherent with the FCC matrix, undergo shear-induced lattice distortion that locally modulates dislocation mobility, creating alternating high/low dislocation density regions. Simultaneously, stress concentrations at triple junctions activate grain boundary-mediated dynamic recovery, which spatially confines slip band propagation by enabling localized lattice rotation and subgrain formation. This multiscale coupling between precipitate-driven dislocation patterning and triple junction-regulated recovery governs the transition from homogeneous deformation to critical slip band localization, with the precipitate volume fraction and triple junction density serving as key tunable parameters to delay fracture initiation.  \n\nThis hypothesis is testable through in-situ TEM straining experiments combined with high-resolution EBSD mapping to correlate precipitate evolution with slip band dynamics, and computational modeling of stress fields at triple junctions during deformation."
+    ],
+    "structured_paths": {},
+    "raw_responses": [
+      "**Hypothesis:**  \nIn CrCoNi medium-entropy alloys, the evolution of slip banding during deformation arises from a synergistic interaction between stress-driven reorientation of nanoscale L1₂-Co₃(Al,W)-type ordered precipitates and dynamic recovery processes at grain boundary triple junctions. We propose that these ordered precipitates, initially coherent with the FCC matrix, undergo shear-induced lattice distortion that locally modulates dislocation mobility, creating alternating high/low dislocation density regions. Simultaneously, stress concentrations at triple junctions activate grain boundary-mediated dynamic recovery, which spatially confines slip band propagation by enabling localized lattice rotation and subgrain formation. This multiscale coupling between precipitate-driven dislocation patterning and triple junction-regulated recovery governs the transition from homogeneous deformation to critical slip band localization, with the precipitate volume fraction and triple junction density serving as key tunable parameters to delay fracture initiation.  \n\nThis hypothesis is testable through in-situ TEM straining experiments combined with high-resolution EBSD mapping to correlate precipitate evolution with slip band dynamics, and computational modeling of stress fields at triple junctions during deformation."
+    ],
+    "elapsed_seconds": 16.93942165374756
+  },
+  {
+    "paper_id": "6a011836f49c",
+    "method_name": "P2",
+    "free_text_hypotheses": [
+      "L1 Hypothesis: The evolution of slip banding in CrCoNi alloys arises from a multiscale synergy between atomic-scale dislocation dynamics and collective instability mechanisms, where conventional Frank-Read sources govern confined slip bands, while stress-mediated interplanar interactions and source rejuvenation drive extended band formation, creating a hierarchical deformation pattern that bridges lattice-level plasticity and macroscopic mechanical failure.\n\nL2 Hypotheses:\n- Q1: The coexistence of confined and extended slip bands originates from competitive activation/deactivation of dislocation sources governed by stress concentration gradients and cross-slip interactions, where high-resolution electron microscopy will reveal orientation-dependent dislocation core structures that mechanically regulate source efficiency and slip transmission across grain boundaries.\n- Q2: Atomic-scale collective dislocation motion during extended band formation induces localized lattice rotations and stacking fault accumulation, which synergistically with microscale strain rate sensitivity governs void nucleation and crack propagation paths, with in-situ nanomechanical testing directly correlating atomic shuffling events with macroscopic energy dissipation signatures."
+    ],
+    "structured_paths": {},
+    "raw_responses": [
+      "L1 Hypothesis: The evolution of slip banding in CrCoNi alloys arises from a multiscale synergy between atomic-scale dislocation dynamics and collective instability mechanisms, where conventional Frank-Read sources govern confined slip bands, while stress-mediated interplanar interactions and source rejuvenation drive extended band formation, creating a hierarchical deformation pattern that bridges lattice-level plasticity and macroscopic mechanical failure.\n\nL2 Hypotheses:\n- Q1: The coexistence of confined and extended slip bands originates from competitive activation/deactivation of dislocation sources governed by stress concentration gradients and cross-slip interactions, where high-resolution electron microscopy will reveal orientation-dependent dislocation core structures that mechanically regulate source efficiency and slip transmission across grain boundaries.\n- Q2: Atomic-scale collective dislocation motion during extended band formation induces localized lattice rotations and stacking fault accumulation, which synergistically with microscale strain rate sensitivity governs void nucleation and crack propagation paths, with in-situ nanomechanical testing directly correlating atomic shuffling events with macroscopic energy dissipation signatures."
+    ],
+    "elapsed_seconds": 15.257920980453491
+  },
+  {
+    "paper_id": "6a011836f49c",
+    "method_name": "P3",
+    "free_text_hypotheses": [
+      "L1 Hypothesis: \n铬钴镍合金中扩展滑移带的形成机制与受限滑移带存在根本差异，其本质是力学驱动的位错源动态重构过程。在微观尺度上，当局部分解剪切应力（力学）超过汤普森四面体符号（物理学）描述的临界位错反应能垒时，平面缺陷（材料科学）附近的位错源发生自催化失稳，引发相邻滑移面的协同激活。这种跨尺度演化可通过四维扫描透射电子显微术（材料科学）观测的原子尺度位错动力学（物理学）与施密德因子（力学）的空间映射建立定量关联，揭示多尺度测试中观测到的锯齿状塑性流动（力学）与位错雪崩（力学）的内在联系。\n\nL2 Hypotheses:\n- Q1: 基于弗兰克-里德源（材料科学）的位错发射模式与分解剪切应力（力学）的空间梯度存在动态耦合效应。在扫描透射电子显微术（材料科学）观测的受限滑移带中，位错密度演化（物理学）将导致应力集中系数（力学）的周期性震荡，这种震荡幅度与汤普森四面体符号（物理学）对应的交滑移（物理学）概率呈负相关，可通过电子显微镜（物理学）原位拉伸实验与位错动力学模拟进行定量验证\n- Q2: 扩展滑移带的快速增厚（材料科学）源于位错源集体湮灭（物理学）引发的应力场重构，这种重构使新生滑移带间距（材料科学）与位错雪崩（力学）能量释放存在幂律关系。通过原子尺度集体位错运动（材料科学）观测与应力-应变曲线（力学）同步分析，可建立位错网络拓扑演化与宏观锯齿流变（力学）的定量映射模型\n\nL3 Hypotheses:\n- Q1: 位错源的级联激活机制（材料科学）与力学分解剪切应力（力学）的空间分布存在非平衡自组织过程。通过整合微柱（物理学）压缩测试的应力-应变数据（力学）与原子尺度位错动力学（物理学）模拟，可建立扩展滑移带增厚速率与位错源密度（材料科学）的非线性关系模型，该模型预测的临界失稳条件可通过四维扫描透射电子显微术（材料科学）的原位观测进行验证\n- Q2: 平面缺陷（材料科学）与汤普森四面体符号（物理学）定义的位错反应路径（物理学）共同决定滑移带演化模式。提出通过单晶微柱（材料科学）的定向压缩实验结合电子显微镜（物理学）的原子级应变场分析，可量化不同滑移带类型对应的位错核心结构演变激活能（物理学），该能量参数与施密德因子（力学）的关联性将揭示微观变形不稳定性（材料科学）的本质物理机制"
+    ],
+    "structured_paths": {},
+    "raw_responses": [
+      "L1 Hypothesis: \n铬钴镍合金中扩展滑移带的形成机制与受限滑移带存在根本差异，其本质是力学驱动的位错源动态重构过程。在微观尺度上，当局部分解剪切应力（力学）超过汤普森四面体符号（物理学）描述的临界位错反应能垒时，平面缺陷（材料科学）附近的位错源发生自催化失稳，引发相邻滑移面的协同激活。这种跨尺度演化可通过四维扫描透射电子显微术（材料科学）观测的原子尺度位错动力学（物理学）与施密德因子（力学）的空间映射建立定量关联，揭示多尺度测试中观测到的锯齿状塑性流动（力学）与位错雪崩（力学）的内在联系。\n\nL2 Hypotheses:\n- Q1: 基于弗兰克-里德源（材料科学）的位错发射模式与分解剪切应力（力学）的空间梯度存在动态耦合效应。在扫描透射电子显微术（材料科学）观测的受限滑移带中，位错密度演化（物理学）将导致应力集中系数（力学）的周期性震荡，这种震荡幅度与汤普森四面体符号（物理学）对应的交滑移（物理学）概率呈负相关，可通过电子显微镜（物理学）原位拉伸实验与位错动力学模拟进行定量验证\n- Q2: 扩展滑移带的快速增厚（材料科学）源于位错源集体湮灭（物理学）引发的应力场重构，这种重构使新生滑移带间距（材料科学）与位错雪崩（力学）能量释放存在幂律关系。通过原子尺度集体位错运动（材料科学）观测与应力-应变曲线（力学）同步分析，可建立位错网络拓扑演化与宏观锯齿流变（力学）的定量映射模型\n\nL3 Hypotheses:\n- Q1: 位错源的级联激活机制（材料科学）与力学分解剪切应力（力学）的空间分布存在非平衡自组织过程。通过整合微柱（物理学）压缩测试的应力-应变数据（力学）与原子尺度位错动力学（物理学）模拟，可建立扩展滑移带增厚速率与位错源密度（材料科学）的非线性关系模型，该模型预测的临界失稳条件可通过四维扫描透射电子显微术（材料科学）的原位观测进行验证\n- Q2: 平面缺陷（材料科学）与汤普森四面体符号（物理学）定义的位错反应路径（物理学）共同决定滑移带演化模式。提出通过单晶微柱（材料科学）的定向压缩实验结合电子显微镜（物理学）的原子级应变场分析，可量化不同滑移带类型对应的位错核心结构演变激活能（物理学），该能量参数与施密德因子（力学）的关联性将揭示微观变形不稳定性（材料科学）的本质物理机制"
+    ],
+    "elapsed_seconds": 26.919126272201538
+  },
+  {
+    "paper_id": "6a011836f49c",
+    "method_name": "P4",
+    "free_text_hypotheses": [
+      "L1 Hypothesis:\nhypothesis: 在铬钴镍合金中，滑移带类型的转化（受限→扩展）由局部分解剪切应力梯度驱动，这种梯度通过力学-物理耦合机制调控Frank-Read源活性与位错攀移动力学的竞争关系。\nreasoning: \n1. 已知Frank-Read源活性受分解剪切应力调控（材料科学→力学） \n2. 扩展滑移带伴随平面缺陷密度增加（材料科学→物理学） \n3. 原子尺度位错动力学可产生应力场重构（物理学→力学） \n4. 因此，当局部应力梯度超过临界值时，位错攀移导致源失活，同时触发相邻平面缺陷处新源形成，形成扩展滑移带\nkey_concepts: 分解剪切应力梯度, Frank-Read源活性, 平面缺陷密度, 位错攀移动力学\ndisciplines_bridged: 材料科学, 力学, 物理学\n\nL2 Hypotheses:\n- Q1:\n    hypothesis: 滑移带类型的空间分布与Schmid因子梯度存在非线性关联，这种关联通过位错塞积群的动态重组实现力学-材料耦合调控\n    reasoning: \n    1. Schmid因子决定滑移系开动顺序（力学→材料科学）\n    2. 位错雪崩对应应力-应变曲线锯齿（力学→材料科学）\n    3. 塞积群重组需要原子尺度交滑移（物理学→材料科学）\n    4. 因此，Schmid因子梯度诱导位错塞积动态演变，导致受限/扩展滑移带共存的斑图形成\n    key_concepts: Schmid因子梯度, 位错塞积, 滑移带斑图, 交滑移动力学\n    disciplines_bridged: 力学, 材料科学, 物理学\n    \n- Q2:\n    hypothesis: 微观变形不稳定性源于汤普森四面体符号约束下的位错网络重构，这种重构通过平面缺陷演化路径决定材料失效模式\n    reasoning: \n    1. 微观变形不稳定性关联原子尺度位错动力学（材料科学→物理学）\n    2. 汤普森符号决定全位错分解路径（物理学→材料科学）\n    3. 平面缺陷积累改变位错反应路径（材料科学→物理学）\n    4. 因此，特定汤普森构型下，平面缺陷诱导的位错反应失控将导致脆性解理或韧性空洞化失效\n    key_concepts: 汤普森四面体符号, 位错网络重构, 平面缺陷演化, 断裂失效模式\n    disciplines_bridged: 材料科学, 物理学\n\nL3 Hypotheses:\n- Q1:\n    hypothesis: 多尺度协同机制中，微柱压缩的尺寸效应通过表面应力场调制位错源密度，该过程由四维扫描透射电镜观测的平面缺陷演化路径定量表征\n    reasoning: \n    1. 单晶微柱显示锯齿状流动（材料科学→力学）\n    2. 表面应力影响Frank-Read源密度（力学→材料科学）\n    3. 四维STEM可追踪平面缺陷演变（材料科学→物理学）\n    4. 因此，微柱尺寸减小将增强表面应力主导的位错源动态湮灭，导致受限滑移带比例异常升高\n    key_concepts: 微柱尺寸效应, 表面应力场, 位错源密度, 四维扫描透射显微术\n    disciplines_bridged: 材料科学, 力学, 物理学\n    \n- Q2:\n    hypothesis: 原子尺度位错动力学模拟揭示的交滑移临界应力，与力学压缩实验测得的流变应力骤降存在指数关系，该关系反映扩展滑移带增厚速率\n    reasoning: \n    1. 交滑移影响位错运动模式（物理学→材料科学）\n    2. 流变应力骤降表征滑移带不稳定扩展（力学→材料科学）\n    3. 增厚速率取决于新位错源激活频率（材料科学→物理学）\n    4. 因此，当模拟交滑移临界应力低于实验应力骤降阈值时，扩展滑移带增厚速率将随应力振荡呈非线性增长\n    key_concepts: 交滑移临界应力, 流变应力骤降, 增厚速率, 应力振荡\n    disciplines_bridged: 材料科学, 物理学, 力学"
+    ],
+    "structured_paths": {},
+    "raw_responses": [
+      "L1 Hypothesis:\nhypothesis: 在铬钴镍合金中，滑移带类型的转化（受限→扩展）由局部分解剪切应力梯度驱动，这种梯度通过力学-物理耦合机制调控Frank-Read源活性与位错攀移动力学的竞争关系。\nreasoning: \n1. 已知Frank-Read源活性受分解剪切应力调控（材料科学→力学） \n2. 扩展滑移带伴随平面缺陷密度增加（材料科学→物理学） \n3. 原子尺度位错动力学可产生应力场重构（物理学→力学） \n4. 因此，当局部应力梯度超过临界值时，位错攀移导致源失活，同时触发相邻平面缺陷处新源形成，形成扩展滑移带\nkey_concepts: 分解剪切应力梯度, Frank-Read源活性, 平面缺陷密度, 位错攀移动力学\ndisciplines_bridged: 材料科学, 力学, 物理学\n\nL2 Hypotheses:\n- Q1:\n    hypothesis: 滑移带类型的空间分布与Schmid因子梯度存在非线性关联，这种关联通过位错塞积群的动态重组实现力学-材料耦合调控\n    reasoning: \n    1. Schmid因子决定滑移系开动顺序（力学→材料科学）\n    2. 位错雪崩对应应力-应变曲线锯齿（力学→材料科学）\n    3. 塞积群重组需要原子尺度交滑移（物理学→材料科学）\n    4. 因此，Schmid因子梯度诱导位错塞积动态演变，导致受限/扩展滑移带共存的斑图形成\n    key_concepts: Schmid因子梯度, 位错塞积, 滑移带斑图, 交滑移动力学\n    disciplines_bridged: 力学, 材料科学, 物理学\n    \n- Q2:\n    hypothesis: 微观变形不稳定性源于汤普森四面体符号约束下的位错网络重构，这种重构通过平面缺陷演化路径决定材料失效模式\n    reasoning: \n    1. 微观变形不稳定性关联原子尺度位错动力学（材料科学→物理学）\n    2. 汤普森符号决定全位错分解路径（物理学→材料科学）\n    3. 平面缺陷积累改变位错反应路径（材料科学→物理学）\n    4. 因此，特定汤普森构型下，平面缺陷诱导的位错反应失控将导致脆性解理或韧性空洞化失效\n    key_concepts: 汤普森四面体符号, 位错网络重构, 平面缺陷演化, 断裂失效模式\n    disciplines_bridged: 材料科学, 物理学\n\nL3 Hypotheses:\n- Q1:\n    hypothesis: 多尺度协同机制中，微柱压缩的尺寸效应通过表面应力场调制位错源密度，该过程由四维扫描透射电镜观测的平面缺陷演化路径定量表征\n    reasoning: \n    1. 单晶微柱显示锯齿状流动（材料科学→力学）\n    2. 表面应力影响Frank-Read源密度（力学→材料科学）\n    3. 四维STEM可追踪平面缺陷演变（材料科学→物理学）\n    4. 因此，微柱尺寸减小将增强表面应力主导的位错源动态湮灭，导致受限滑移带比例异常升高\n    key_concepts: 微柱尺寸效应, 表面应力场, 位错源密度, 四维扫描透射显微术\n    disciplines_bridged: 材料科学, 力学, 物理学\n    \n- Q2:\n    hypothesis: 原子尺度位错动力学模拟揭示的交滑移临界应力，与力学压缩实验测得的流变应力骤降存在指数关系，该关系反映扩展滑移带增厚速率\n    reasoning: \n    1. 交滑移影响位错运动模式（物理学→材料科学）\n    2. 流变应力骤降表征滑移带不稳定扩展（力学→材料科学）\n    3. 增厚速率取决于新位错源激活频率（材料科学→物理学）\n    4. 因此，当模拟交滑移临界应力低于实验应力骤降阈值时，扩展滑移带增厚速率将随应力振荡呈非线性增长\n    key_concepts: 交滑移临界应力, 流变应力骤降, 增厚速率, 应力振荡\n    disciplines_bridged: 材料科学, 物理学, 力学"
+    ],
+    "elapsed_seconds": 44.97106075286865
+  },
+  {
+    "paper_id": "6a011836f49c",
+    "method_name": "P5",
+    "free_text_hypotheses": [
+      "针对铬钴镍合金滑移带演化中受限滑移带的形成机制，需结合力学理论建立多尺度稳定性模型以解释其局部能量耗散特性",
+      "基于原子尺度位错运动与显微观测技术的关联，需应用物理学方法构建位错源激活模型来阐明滑移带化的微观动力学机制",
+      "力学中的分解剪切应力通过调控弗兰克-里德源位错增殖，揭示滑移带化的位错发射机制",
+      "通过应力-应变曲线分析位错雪崩现象，结合原子尺度位错动力学模拟，揭示微观变形不稳定性机理",
+      "通过力学应力分析调控位错源活动，结合原子尺度动力学模拟与多尺度显微表征，验证滑移带演化协同机制的跨尺度闭环"
+    ],
+    "structured_paths": {
+      "L1": [
+        {
+          "steps": [
+            {
+              "step": 1,
+              "head": "铬钴镍合金",
+              "relation": "在应力作用下产生变形局域化",
+              "tail": "变形局域化",
+              "claim": "铬钴镍合金在机械应力下优先发生微观变形局域化现象"
+            },
+            {
+              "step": 2,
+              "head": "变形局域化",
+              "relation": "演化为受限滑移带结构",
+              "tail": "受限滑移带",
+              "claim": "变形局域化过程会通过受限滑移带的形成进行局部能量耗散"
+            },
+            {
+              "step": 3,
+              "head": "受限滑移带",
+              "relation": "需要力学建模解析其稳定性机制",
+              "tail": "力学",
+              "claim": "受限滑移带的演化机制需通过力学理论建立多尺度稳定性模型"
+            }
+          ],
+          "summary": "针对铬钴镍合金滑移带演化中受限滑移带的形成机制，需结合力学理论建立多尺度稳定性模型以解释其局部能量耗散特性"
+        },
+        {
+          "steps": [
+            {
+              "step": 1,
+              "head": "滑移带化",
+              "relation": "与原子尺度位错动力学相关联",
+              "tail": "原子尺度集体位错运动",
+              "claim": "滑移带化过程本质上由原子尺度集体位错运动主导"
+            },
+            {
+              "step": 2,
+              "head": "原子尺度集体位错运动",
+              "relation": "可通过四维扫描透射电子显微术观测",
+              "tail": "四维扫描透射电子显微术",
+              "claim": "原子尺度位错行为需要借助物理学的高精度显微观测技术解析"
+            },
+            {
+              "step": 3,
+              "head": "四维扫描透射电子显微术",
+              "relation": "推动建立位错源激活模型",
+              "tail": "物理学",
+              "claim": "通过物理学表征技术可建立滑移带演化中的位错源激活机制模型"
+            }
+          ],
+          "summary": "基于原子尺度位错运动与显微观测技术的关联，需应用物理学方法构建位错源激活模型来阐明滑移带化的微观动力学机制"
+        }
+      ],
+      "L2": [
+        {
+          "steps": [
+            {
+              "step": 1,
+              "head": "分解剪切应力",
+              "relation": "其活动受分解剪切应力调控",
+              "tail": "弗兰克-里德源",
+              "claim": "分解剪切应力 其活动受分解剪切应力调控 弗兰克-里德源"
+            },
+            {
+              "step": 2,
+              "head": "弗兰克-里德源",
+              "relation": "受限滑移带源于弗兰克-里德源的位错增殖",
+              "tail": "位错发射",
+              "claim": "弗兰克-里德源 受限滑移带源于弗兰克-里德源的位错增殖 位错发射"
+            },
+            {
+              "step": 3,
+              "head": "位错发射",
+              "relation": "滑移带化与位错发射的动态关联",
+              "tail": "滑移带化",
+              "claim": "位错发射 滑移带化与位错发射的动态关联 滑移带化"
+            }
+          ],
+          "summary": "力学中的分解剪切应力通过调控弗兰克-里德源位错增殖，揭示滑移带化的位错发射机制"
+        },
+        {
+          "steps": [
+            {
+              "step": 1,
+              "head": "应力-应变曲线",
+              "relation": "位错雪崩现象在应力-应变曲线中体现",
+              "tail": "位错雪崩",
+              "claim": "应力-应变曲线 位错雪崩现象在应力-应变曲线中体现 位错雪崩"
+            },
+            {
+              "step": 2,
+              "head": "位错雪崩",
+              "relation": "原子尺度位错动力学模拟位错雪崩机制",
+              "tail": "原子尺度位错动力学",
+              "claim": "位错雪崩 原子尺度位错动力学模拟位错雪崩机制 原子尺度位错动力学"
+            },
+            {
+              "step": 3,
+              "head": "原子尺度位错动力学",
+              "relation": "微观变形不稳定性与原子尺度位错动力学相关联",
+              "tail": "微观变形不稳定性",
+              "claim": "原子尺度位错动力学 微观变形不稳定性与原子尺度位错动力学相关联 微观变形不稳定性"
+            }
+          ],
+          "summary": "通过应力-应变曲线分析位错雪崩现象，结合原子尺度位错动力学模拟，揭示微观变形不稳定性机理"
+        }
+      ],
+      "L3": [
+        {
+          "steps": [
+            {
+              "step": 1,
+              "head": "分解剪切应力",
+              "relation": "调控其活动",
+              "tail": "弗兰克-里德源",
+              "claim": "分解剪切应力 调控其活动 弗兰克-里德源"
+            },
+            {
+              "step": 2,
+              "head": "弗兰克-里德源",
+              "relation": "产生位错发射",
+              "tail": "位错发射",
+              "claim": "弗兰克-里德源 产生位错发射 位错发射"
+            },
+            {
+              "step": 3,
+              "head": "位错发射",
+              "relation": "驱动原子尺度集体运动",
+              "tail": "原子尺度集体位错运动",
+              "claim": "位错发射 驱动原子尺度集体运动 原子尺度集体位错运动"
+            }
+          ],
+          "summary": "通过力学应力分析调控位错源活动，结合原子尺度动力学模拟与多尺度显微表征，验证滑移带演化协同机制的跨尺度闭环"
+        }
+      ]
+    },
+    "raw_responses": [],
+    "elapsed_seconds": 3.337860107421875e-05
+  },
+  {
+    "paper_id": "76b9c27b6e9c",
+    "method_name": "P1",
+    "free_text_hypotheses": [
+      "我们提出假设：通过构建具有梯度三重态能级结构的有机磷光材料，可在白光激发下实现高效能量捕获与延迟发光。具体而言，设计分子内含多个共轭单元（如苯并噻唑与咔唑基团）的有机小分子，使其在不同波长光激发下选择性填充阶梯状三重态能级，并通过分子间π-π堆积形成的能量传递通道，将高能级三重态激子定向迁移至低能级发射中心。同时，引入氟原子调控分子间氢键网络，增强三重态稳定性并抑制非辐射跃迁。该假设可通过合成梯度能级分子库、结合时间分辨光谱及理论计算验证能量传递机制，最终实现白光宽谱激发下磷光量子产率＞80%且寿命＞100 ms的突破。"
+    ],
+    "structured_paths": {},
+    "raw_responses": [
+      "我们提出假设：通过构建具有梯度三重态能级结构的有机磷光材料，可在白光激发下实现高效能量捕获与延迟发光。具体而言，设计分子内含多个共轭单元（如苯并噻唑与咔唑基团）的有机小分子，使其在不同波长光激发下选择性填充阶梯状三重态能级，并通过分子间π-π堆积形成的能量传递通道，将高能级三重态激子定向迁移至低能级发射中心。同时，引入氟原子调控分子间氢键网络，增强三重态稳定性并抑制非辐射跃迁。该假设可通过合成梯度能级分子库、结合时间分辨光谱及理论计算验证能量传递机制，最终实现白光宽谱激发下磷光量子产率＞80%且寿命＞100 ms的突破。"
+    ],
+    "elapsed_seconds": 46.42492604255676
+  },
+  {
+    "paper_id": "76b9c27b6e9c",
+    "method_name": "P2",
+    "free_text_hypotheses": [
+      "L1 Hypothesis:  \n通过协同优化供体-受体型分子结构中的三嗪基团与掺杂系统主体材料的能级匹配关系，结合白光激发光源的宽谱段能量分布特性，可构建具有梯度化激子捕获能力的三维磷光网络结构。这种设计策略不仅能通过分子间氢键/π-π相互作用调控激发态寿命，还可利用生物组织对白光的深层穿透优势，建立激发-富集同步的动态成像模式，从而突破传统紫外激发材料的时空分辨率限制。\n\nL2 Hypotheses:  \n- Q1:  \n在掺杂系统中，三嗪基团与主体材料形成的多重氢键网络可通过动态能量传递通道调控激子复合速率，而供体-受体的扭转角调控可实现自旋-轨道耦合强度的梯度分布。这种双重作用机制将产生分层的磷光余辉特性：表面层快速释放能量实现即时成像，内层则通过受限振动模式延长余辉时间，最终形成时空分辨的双模信号输出。  \n\n- Q2:  \n通过在磷光材料表面构建仿生脂质双分子层，同时整合白光响应的余辉发射特性与疾病特异性配体（如针对动脉粥样硬化斑块的氧化低密度脂蛋白受体拮抗肽），可实现光学特性与靶向功能的协同增强。在活体应用中，该体系将利用白光穿透优势进行深层组织预激发，结合配体-受体动态识别过程触发余辉信号放大，从而建立\"光控开关\"式的靶向诊断模式。"
+    ],
+    "structured_paths": {},
+    "raw_responses": [
+      "L1 Hypothesis:  \n通过协同优化供体-受体型分子结构中的三嗪基团与掺杂系统主体材料的能级匹配关系，结合白光激发光源的宽谱段能量分布特性，可构建具有梯度化激子捕获能力的三维磷光网络结构。这种设计策略不仅能通过分子间氢键/π-π相互作用调控激发态寿命，还可利用生物组织对白光的深层穿透优势，建立激发-富集同步的动态成像模式，从而突破传统紫外激发材料的时空分辨率限制。\n\nL2 Hypotheses:  \n- Q1:  \n在掺杂系统中，三嗪基团与主体材料形成的多重氢键网络可通过动态能量传递通道调控激子复合速率，而供体-受体的扭转角调控可实现自旋-轨道耦合强度的梯度分布。这种双重作用机制将产生分层的磷光余辉特性：表面层快速释放能量实现即时成像，内层则通过受限振动模式延长余辉时间，最终形成时空分辨的双模信号输出。  \n\n- Q2:  \n通过在磷光材料表面构建仿生脂质双分子层，同时整合白光响应的余辉发射特性与疾病特异性配体（如针对动脉粥样硬化斑块的氧化低密度脂蛋白受体拮抗肽），可实现光学特性与靶向功能的协同增强。在活体应用中，该体系将利用白光穿透优势进行深层组织预激发，结合配体-受体动态识别过程触发余辉信号放大，从而建立\"光控开关\"式的靶向诊断模式。"
+    ],
+    "elapsed_seconds": 21.422130823135376
+  },
+  {
+    "paper_id": "76b9c27b6e9c",
+    "method_name": "P3",
+    "free_text_hypotheses": [
+      "L1 Hypothesis: 通过化学合成的给体-受体型三嗪基化合物与材料科学的主客体掺杂系统相结合，构建具有分级能级结构的有机磷光体系，白光激发时可通过能量迁移共振机制实现高效室温磷光，同时利用晶体工程策略调控分子间π-π堆积作用增强余辉稳定性和生物相容性。\n\nL2 Hypotheses:\n- Q1: 在掺杂系统中，主客体间的氢键网络与电子给体-受体配位作用会通过超分子大环组装策略形成梯度三重态激发态通道，导致余辉寿命与量子产率随掺杂浓度呈现非线性增强效应，可通过变温磷光光谱和瞬态吸收实验验证。\n- Q2: 白光激发磷光材料表面修饰靶向配体（如ApoE蛋白模拟肽）后，可通过临床医学的主动靶向机制特异性识别动脉粥样硬化斑块中的氧化低密度脂蛋白受体，在深红余辉发射窗口（>650nm）实现高信噪比成像，通过小动物活体成像系统与组织切片共定位实验验证。\n\nL3 Hypotheses:\n- Q1: 将化学合成的三嗪基团功能化分子与材料科学的自组装有机纳米粒子技术结合，通过晶体工程构建具有核-壳结构的磷光纳米探针，其表面亲水性聚乙二醇链段与内层刚性三嗪环协同增强生物相容性，同时通过限制分子内振动提升余辉效率（>30%），可采用MTT实验和时间分辨光谱进行双重验证。\n- Q2: 整合深红余辉材料的白光激发特性与临床手术导航的近红外二区成像技术，建立\"先定位后激发\"的诊疗工作流：在原位肝肿瘤手术中，通过材料聚集诱导的余辉强度变化实时映射肿瘤边界，结合机器学习算法开发多模态影像融合系统，可在BALB/c-nude小鼠模型中实现亚毫米级精度导航，通过术中病理切片与影像数据对比验证。"
+    ],
+    "structured_paths": {},
+    "raw_responses": [
+      "L1 Hypothesis: 通过化学合成的给体-受体型三嗪基化合物与材料科学的主客体掺杂系统相结合，构建具有分级能级结构的有机磷光体系，白光激发时可通过能量迁移共振机制实现高效室温磷光，同时利用晶体工程策略调控分子间π-π堆积作用增强余辉稳定性和生物相容性。\n\nL2 Hypotheses:\n- Q1: 在掺杂系统中，主客体间的氢键网络与电子给体-受体配位作用会通过超分子大环组装策略形成梯度三重态激发态通道，导致余辉寿命与量子产率随掺杂浓度呈现非线性增强效应，可通过变温磷光光谱和瞬态吸收实验验证。\n- Q2: 白光激发磷光材料表面修饰靶向配体（如ApoE蛋白模拟肽）后，可通过临床医学的主动靶向机制特异性识别动脉粥样硬化斑块中的氧化低密度脂蛋白受体，在深红余辉发射窗口（>650nm）实现高信噪比成像，通过小动物活体成像系统与组织切片共定位实验验证。\n\nL3 Hypotheses:\n- Q1: 将化学合成的三嗪基团功能化分子与材料科学的自组装有机纳米粒子技术结合，通过晶体工程构建具有核-壳结构的磷光纳米探针，其表面亲水性聚乙二醇链段与内层刚性三嗪环协同增强生物相容性，同时通过限制分子内振动提升余辉效率（>30%），可采用MTT实验和时间分辨光谱进行双重验证。\n- Q2: 整合深红余辉材料的白光激发特性与临床手术导航的近红外二区成像技术，建立\"先定位后激发\"的诊疗工作流：在原位肝肿瘤手术中，通过材料聚集诱导的余辉强度变化实时映射肿瘤边界，结合机器学习算法开发多模态影像融合系统，可在BALB/c-nude小鼠模型中实现亚毫米级精度导航，通过术中病理切片与影像数据对比验证。"
+    ],
+    "elapsed_seconds": 22.133747816085815
+  },
+  {
+    "paper_id": "76b9c27b6e9c",
+    "method_name": "P4",
+    "free_text_hypotheses": [
+      "L1 Hypothesis:  \nhypothesis: Integrating supramolecular macrocyclic assembly strategies with crystal engineering can enable precise control over triplet exciton stabilization in donor-acceptor-type compounds, thereby expanding their white-light absorption range while maintaining deep-red afterglow efficiency through non-covalent intermolecular interactions.  \nreasoning:  \n1. Premise: Donor-acceptor compounds with triazine groups form stable doped systems (化学→材料科学)  \n2. Mechanism: Supramolecular macrocyclic hosts (化学) could spatially confine triplet excitons (材料科学) via C-H···π interactions, reducing non-radiative decay pathways  \n3. Prediction: Triazine-based macrocycles with tunable cavities will show wavelength-shiftable phosphorescence correlated with host-guest binding constants  \nkey_concepts: 超分子大环组装策略, 三重态激发态, 晶体工程, 非共价相互作用  \ndisciplines_bridged: 化学, 材料科学  \n\nL2 Hypotheses:  \n- Q1:  \nhypothesis: Hydrogen-bonded host-guest complexes between electron-deficient triazine acceptors and proton-rich matrix polymers will prolong afterglow duration by creating polarization-induced energy traps that stabilize long-lived triplet states.  \nreasoning:  \n1. Premise: Host-guest doping controls exciton behavior (材料科学→化学)  \n2. Mechanism: Matrix hydrogen bonding networks (材料科学) will create localized electric fields (化学) that modulate charge-transfer states  \n3. Prediction: Afterglow decay kinetics will correlate with H-bond density measured by solid-state NMR  \nkey_concepts: 主客体掺杂, 氢键网络, 三重态稳定, 电荷转移态  \ndisciplines_bridged: 材料科学, 化学  \n\n- Q2:  \nhypothesis: Surface functionalization of phosphorescent nanoparticles with disease-specific ligands (e.g., VCAM-1 antibodies for atherosclerosis) will enable dual-modal imaging through white-light triggered afterglow combined with magnetic resonance contrast enhancement from intracellular iron accumulation.  \nreasoning:  \n1. Premise: White-light excitation enables tissue-penetrating bioimaging (化学→临床医学)  \n2. Mechanism: Ligand-targeted endocytosis (临床医学) will concentrate nanoparticles (材料科学) in pathological macrophages expressing surface biomarkers  \n3. Prediction: Co-registered optical/MRI signals will show higher plaque-to-background ratios than single-modality imaging  \nkey_concepts: 表面功能化, 靶向配体, 多模态成像, 病理巨噬细胞  \ndisciplines_bridged: 材料科学, 临床医学  \n\nL3 Hypotheses:  \n- Q1:  \nhypothesis: Combining triazine-based crystal engineering with biodegradable PEG-PCL matrix encapsulation will produce implants that exhibit pH-responsive afterglow activation in inflammatory disease microenvironments through acid-catalyzed hydrolysis of acetal linkages.  \nreasoning:  \n1. Premise: Crystal engineering optimizes phosphorescence (化学→材料科学)  \n2. Mechanism: Inflammatory zone acidity (临床医学) will trigger controlled release (材料科学) of pre-excited triplet states trapped in metastable crystallites  \n3. Prediction: In vivo imaging will show spatially correlated luminescence bursts matching histological inflammation scores  \nkey_concepts: 三嗪基晶体工程, 可降解聚合物封装, 炎症微环境响应, 三重态捕获  \ndisciplines_bridged: 化学, 临床医学  \n\n- Q2:  \nhypothesis: Real-time surgical navigation using persistent phosphorescence can be achieved by integrating afterglow materials with augmented reality headsets that overlay decay kinetics onto anatomical structures, enabling differentiation between tumor margins and healthy tissue based on differential triplet lifetime mapping.  \nreasoning:  \n1. Premise: White-light excitation enables surgical navigation (材料科学→临床医学)  \n2. Mechanism: Time-gated spectral analysis (材料科学) will resolve lifetime differences (化学) from heterogeneous microenvironments (临床医学)  \n3. Prediction: Surgeons using lifetime-mapped AR guidance will achieve 20% smaller positive margin rates in liver resections  \nkey_concepts: 余辉动力学映射, 增强现实导航, 三重态寿命差异, 肿瘤边界分化  \ndisciplines_bridged: 材料科学, 临床医学"
+    ],
+    "structured_paths": {},
+    "raw_responses": [
+      "L1 Hypothesis:  \nhypothesis: Integrating supramolecular macrocyclic assembly strategies with crystal engineering can enable precise control over triplet exciton stabilization in donor-acceptor-type compounds, thereby expanding their white-light absorption range while maintaining deep-red afterglow efficiency through non-covalent intermolecular interactions.  \nreasoning:  \n1. Premise: Donor-acceptor compounds with triazine groups form stable doped systems (化学→材料科学)  \n2. Mechanism: Supramolecular macrocyclic hosts (化学) could spatially confine triplet excitons (材料科学) via C-H···π interactions, reducing non-radiative decay pathways  \n3. Prediction: Triazine-based macrocycles with tunable cavities will show wavelength-shiftable phosphorescence correlated with host-guest binding constants  \nkey_concepts: 超分子大环组装策略, 三重态激发态, 晶体工程, 非共价相互作用  \ndisciplines_bridged: 化学, 材料科学  \n\nL2 Hypotheses:  \n- Q1:  \nhypothesis: Hydrogen-bonded host-guest complexes between electron-deficient triazine acceptors and proton-rich matrix polymers will prolong afterglow duration by creating polarization-induced energy traps that stabilize long-lived triplet states.  \nreasoning:  \n1. Premise: Host-guest doping controls exciton behavior (材料科学→化学)  \n2. Mechanism: Matrix hydrogen bonding networks (材料科学) will create localized electric fields (化学) that modulate charge-transfer states  \n3. Prediction: Afterglow decay kinetics will correlate with H-bond density measured by solid-state NMR  \nkey_concepts: 主客体掺杂, 氢键网络, 三重态稳定, 电荷转移态  \ndisciplines_bridged: 材料科学, 化学  \n\n- Q2:  \nhypothesis: Surface functionalization of phosphorescent nanoparticles with disease-specific ligands (e.g., VCAM-1 antibodies for atherosclerosis) will enable dual-modal imaging through white-light triggered afterglow combined with magnetic resonance contrast enhancement from intracellular iron accumulation.  \nreasoning:  \n1. Premise: White-light excitation enables tissue-penetrating bioimaging (化学→临床医学)  \n2. Mechanism: Ligand-targeted endocytosis (临床医学) will concentrate nanoparticles (材料科学) in pathological macrophages expressing surface biomarkers  \n3. Prediction: Co-registered optical/MRI signals will show higher plaque-to-background ratios than single-modality imaging  \nkey_concepts: 表面功能化, 靶向配体, 多模态成像, 病理巨噬细胞  \ndisciplines_bridged: 材料科学, 临床医学  \n\nL3 Hypotheses:  \n- Q1:  \nhypothesis: Combining triazine-based crystal engineering with biodegradable PEG-PCL matrix encapsulation will produce implants that exhibit pH-responsive afterglow activation in inflammatory disease microenvironments through acid-catalyzed hydrolysis of acetal linkages.  \nreasoning:  \n1. Premise: Crystal engineering optimizes phosphorescence (化学→材料科学)  \n2. Mechanism: Inflammatory zone acidity (临床医学) will trigger controlled release (材料科学) of pre-excited triplet states trapped in metastable crystallites  \n3. Prediction: In vivo imaging will show spatially correlated luminescence bursts matching histological inflammation scores  \nkey_concepts: 三嗪基晶体工程, 可降解聚合物封装, 炎症微环境响应, 三重态捕获  \ndisciplines_bridged: 化学, 临床医学  \n\n- Q2:  \nhypothesis: Real-time surgical navigation using persistent phosphorescence can be achieved by integrating afterglow materials with augmented reality headsets that overlay decay kinetics onto anatomical structures, enabling differentiation between tumor margins and healthy tissue based on differential triplet lifetime mapping.  \nreasoning:  \n1. Premise: White-light excitation enables surgical navigation (材料科学→临床医学)  \n2. Mechanism: Time-gated spectral analysis (材料科学) will resolve lifetime differences (化学) from heterogeneous microenvironments (临床医学)  \n3. Prediction: Surgeons using lifetime-mapped AR guidance will achieve 20% smaller positive margin rates in liver resections  \nkey_concepts: 余辉动力学映射, 增强现实导航, 三重态寿命差异, 肿瘤边界分化  \ndisciplines_bridged: 材料科学, 临床医学"
+    ],
+    "elapsed_seconds": 39.287774324417114
+  },
+  {
+    "paper_id": "76b9c27b6e9c",
+    "method_name": "P5",
+    "free_text_hypotheses": [
+      "有机磷光材料受紫外线限制→白光激发替代→材料科学优化掺杂系统提升余辉效率",
+      "主客体掺杂策略→构建给体-受体型掺杂系统→临床医学指导生物成像靶向应用",
+      "室温磷光依赖三重态调控→超分子组装稳定激子→临床验证手术导航应用价值",
+      "材料科学通过主客体掺杂策略优化掺杂系统，提升余辉效率并开发深红余辉材料",
+      "临床医学利用白光激发材料的生物成像特性，通过临床成像转化实现手术导航应用",
+      "通过给体-受体型化合物在掺杂系统中的主客体作用，结合晶体工程策略调控激子跃迁，最终提升余辉效率验证生物相容性增强",
+      "白光激发深红余辉材料产生穿透性生物成像信号，通过临床成像与手术导航系统整合实现诊疗闭环验证"
+    ],
+    "structured_paths": {
+      "L1": [
+        {
+          "steps": [
+            {
+              "step": 1,
+              "head": "有机磷光材料",
+              "relation": "受制于紫外线激发限制",
+              "tail": "紫外线",
+              "claim": "传统有机磷光材料依赖紫外线激发存在生物安全性问题"
+            },
+            {
+              "step": 2,
+              "head": "紫外线",
+              "relation": "通过白光激发替代方案突破",
+              "tail": "白光激发",
+              "claim": "白光激发策略可解除传统紫外线对生物组织的损伤风险"
+            },
+            {
+              "step": 3,
+              "head": "白光激发",
+              "relation": "需材料科学优化掺杂系统实现高效余辉",
+              "tail": "掺杂系统",
+              "claim": "通过材料科学的主客体掺杂系统设计可实现白光激发下的高效余辉发射"
+            }
+          ],
+          "summary": "有机磷光材料受紫外线限制→白光激发替代→材料科学优化掺杂系统提升余辉效率"
+        },
+        {
+          "steps": [
+            {
+              "step": 1,
+              "head": "主客体掺杂",
+              "relation": "作为核心策略调控材料性能",
+              "tail": "掺杂系统",
+              "claim": "主客体掺杂策略是调控磷光材料光学性质的关键方法"
+            },
+            {
+              "step": 2,
+              "head": "掺杂系统",
+              "relation": "通过给体-受体型化合物构建",
+              "tail": "给体-受体型化合物",
+              "claim": "基于给体-受体型化合物的掺杂系统可优化激子辐射跃迁"
+            },
+            {
+              "step": 3,
+              "head": "给体-受体型化合物",
+              "relation": "需临床医学指导靶向生物成像应用",
+              "tail": "生物成像",
+              "claim": "临床医学的靶向需求驱动给体-受体型化合物在生物成像中的功能化设计"
+            }
+          ],
+          "summary": "主客体掺杂策略→构建给体-受体型掺杂系统→临床医学指导生物成像靶向应用"
+        },
+        {
+          "steps": [
+            {
+              "step": 1,
+              "head": "室温磷光",
+              "relation": "依赖三重态激发态调控",
+              "tail": "三重态激发态",
+              "claim": "室温磷光材料的发光效率与三重态激发态稳定性直接相关"
+            },
+            {
+              "step": 2,
+              "head": "三重态激发态",
+              "relation": "通过超分子大环组装策略稳定",
+              "tail": "超分子大环组装策略",
+              "claim": "超分子大环组装策略可有效延长三重态激子寿命"
+            },
+            {
+              "step": 3,
+              "head": "超分子大环组装策略",
+              "relation": "需临床医学验证手术导航应用价值",
+              "tail": "手术导航",
+              "claim": "临床医学的手术导航需求推动超分子组装策略在体内成像中的转化应用"
+            }
+          ],
+          "summary": "室温磷光依赖三重态调控→超分子组装稳定激子→临床验证手术导航应用价值"
+        }
+      ],
+      "L2": [
+        {
+          "steps": [
+            {
+              "step": 1,
+              "head": "主客体掺杂",
+              "relation": "影响",
+              "tail": "掺杂系统",
+              "claim": "主客体掺杂 掺杂系统"
+            },
+            {
+              "step": 2,
+              "head": "掺杂系统",
+              "relation": "导致",
+              "tail": "余辉",
+              "claim": "掺杂系统 余辉"
+            },
+            {
+              "step": 3,
+              "head": "余辉",
+              "relation": "促进",
+              "tail": "深红余辉材料",
+              "claim": "余辉 深红余辉材料"
+            }
+          ],
+          "summary": "材料科学通过主客体掺杂策略优化掺杂系统，提升余辉效率并开发深红余辉材料"
+        },
+        {
+          "steps": [
+            {
+              "step": 1,
+              "head": "白光激发",
+              "relation": "影响",
+              "tail": "生物成像",
+              "claim": "白光激发 生物成像"
+            },
+            {
+              "step": 2,
+              "head": "生物成像",
+              "relation": "导致",
+              "tail": "临床成像",
+              "claim": "生物成像 临床成像"
+            },
+            {
+              "step": 3,
+              "head": "临床成像",
+              "relation": "促进",
+              "tail": "原位肝肿瘤手术",
+              "claim": "临床成像 原位肝肿瘤手术"
+            }
+          ],
+          "summary": "临床医学利用白光激发材料的生物成像特性，通过临床成像转化实现手术导航应用"
+        }
+      ],
+      "L3": [
+        {
+          "steps": [
+            {
+              "step": 1,
+              "head": "给体-受体型化合物",
+              "relation": "设计为客体",
+              "tail": "掺杂系统",
+              "claim": "给体-受体型化合物作为客体分子嵌入掺杂系统"
+            },
+            {
+              "step": 2,
+              "head": "掺杂系统",
+              "relation": "协同调控",
+              "tail": "晶体工程",
+              "claim": "掺杂系统的主客体相互作用与晶体工程策略协同优化"
+            },
+            {
+              "step": 3,
+              "head": "晶体工程",
+              "relation": "提升效率",
+              "tail": "余辉",
+              "claim": "晶体工程策略增强三重态激子辐射跃迁效率"
+            }
+          ],
+          "summary": "通过给体-受体型化合物在掺杂系统中的主客体作用，结合晶体工程策略调控激子跃迁，最终提升余辉效率验证生物相容性增强"
+        },
+        {
+          "steps": [
+            {
+              "step": 1,
+              "head": "白光激发",
+              "relation": "激活特性",
+              "tail": "深红余辉材料",
+              "claim": "白光激发触发深红余辉材料的能级跃迁"
+            },
+            {
+              "step": 2,
+              "head": "深红余辉材料",
+              "relation": "应用于",
+              "tail": "临床成像",
+              "claim": "深红余辉材料在临床成像中实现深层组织穿透"
+            },
+            {
+              "step": 3,
+              "head": "临床成像",
+              "relation": "整合",
+              "tail": "手术导航",
+              "claim": "临床成像数据与手术导航系统实时融合"
+            }
+          ],
+          "summary": "白光激发深红余辉材料产生穿透性生物成像信号，通过临床成像与手术导航系统整合实现诊疗闭环验证"
+        }
+      ]
+    },
+    "raw_responses": [],
+    "elapsed_seconds": 5.817413330078125e-05
+  },
+  {
+    "paper_id": "a5b105f61dd1",
+    "method_name": "P1",
+    "free_text_hypotheses": [
+      "**假设：**  \n反馈机制通过双重神经动态实现运动学习中的行为适应与扰动补偿——即时扰动补偿依赖小脑-运动皮层（M1）的高频振荡同步化，而长期行为适应则由前扣带回（ACC）-基底节回路通过多巴胺依赖的突触可塑性编码。具体而言，当扰动引发的预测误差超过阈值时，小脑-皮层回路在β频段（15-30Hz）的相位同步迅速增强，触发在线运动轨迹修正；而ACC通过整合误差信号的统计显著性，动态调节纹状体多巴胺释放速率，从而决定误差是否转化为长期适应性策略调整。该假设可通过结合脑电-肌电相干性分析、经颅磁刺激（TMS）干预及多巴胺受体阻断实验，在动态扰动任务中验证双通路的时空调制作用。"
+    ],
+    "structured_paths": {},
+    "raw_responses": [
+      "**假设：**  \n反馈机制通过双重神经动态实现运动学习中的行为适应与扰动补偿——即时扰动补偿依赖小脑-运动皮层（M1）的高频振荡同步化，而长期行为适应则由前扣带回（ACC）-基底节回路通过多巴胺依赖的突触可塑性编码。具体而言，当扰动引发的预测误差超过阈值时，小脑-皮层回路在β频段（15-30Hz）的相位同步迅速增强，触发在线运动轨迹修正；而ACC通过整合误差信号的统计显著性，动态调节纹状体多巴胺释放速率，从而决定误差是否转化为长期适应性策略调整。该假设可通过结合脑电-肌电相干性分析、经颅磁刺激（TMS）干预及多巴胺受体阻断实验，在动态扰动任务中验证双通路的时空调制作用。"
+    ],
+    "elapsed_seconds": 25.860543966293335
+  },
+  {
+    "paper_id": "a5b105f61dd1",
+    "method_name": "P2",
+    "free_text_hypotheses": [
+      "L1 Hypothesis: 生物体通过反馈机制的层级整合实现运动控制系统的双模态适应——快速动态校正依赖闭环控制回路的实时误差信号，而长期行为适应则源于递归神经网络通过误差驱动的突触可塑性形成的预测模型。这种双重机制对应计算模型中前馈控制器与反馈控制器的协同作用，其神经基础可能体现为初级运动皮层与小脑环路的功能耦合。\n\nL2 Hypotheses:\n- Q1: 递归神经网络的误差反馈信号通过构建动态吸引子景观（attractor landscape）调控初级运动皮层的群体神经元活动轨迹，其梯度下降优化过程对应生物体在扰动空间中形成的补偿性神经状态流形（manifold）。该机制可通过引入门控循环单元模拟皮层-基底节环路的选通功能，实现对扰动特征的特征选择性抑制。\n  \n- Q2: 生物可塑性规则通过突触权重矩阵的特征模态分解实现感觉运动通路的协同优化，其中误差信号驱动的STDP（spike-timing-dependent plasticity）规则与突触权重的Hessian矩阵曲率信息相结合，形成二阶梯度优化的生物实现路径。这种机制可解释运动学习中观察到的突触连接稀疏化与信息瓶颈优化的协同现象。"
+    ],
+    "structured_paths": {},
+    "raw_responses": [
+      "L1 Hypothesis: 生物体通过反馈机制的层级整合实现运动控制系统的双模态适应——快速动态校正依赖闭环控制回路的实时误差信号，而长期行为适应则源于递归神经网络通过误差驱动的突触可塑性形成的预测模型。这种双重机制对应计算模型中前馈控制器与反馈控制器的协同作用，其神经基础可能体现为初级运动皮层与小脑环路的功能耦合。\n\nL2 Hypotheses:\n- Q1: 递归神经网络的误差反馈信号通过构建动态吸引子景观（attractor landscape）调控初级运动皮层的群体神经元活动轨迹，其梯度下降优化过程对应生物体在扰动空间中形成的补偿性神经状态流形（manifold）。该机制可通过引入门控循环单元模拟皮层-基底节环路的选通功能，实现对扰动特征的特征选择性抑制。\n  \n- Q2: 生物可塑性规则通过突触权重矩阵的特征模态分解实现感觉运动通路的协同优化，其中误差信号驱动的STDP（spike-timing-dependent plasticity）规则与突触权重的Hessian矩阵曲率信息相结合，形成二阶梯度优化的生物实现路径。这种机制可解释运动学习中观察到的突触连接稀疏化与信息瓶颈优化的协同现象。"
+    ],
+    "elapsed_seconds": 23.898760080337524
+  },
+  {
+    "paper_id": "a5b105f61dd1",
+    "method_name": "P3",
+    "free_text_hypotheses": [
+      "L1 Hypothesis:  \n生物体通过感觉运动通路中递归神经网络的误差反馈信号与突触可塑性规则的协同作用，形成动态内部模型。该模型在初级运动皮层中编码扰动特征，通过在线控制框架实现反馈驱动的试次间学习。当外部扰动（如力场或视觉运动旋转）出现时，误差反馈信号驱动突触权重的实时调整，使控制策略更新速度与生物可塑性规则介导的长期行为适应形成跨尺度耦合，最终在运动校正（快速反馈响应）与行为适应（慢速策略重构）之间建立双向因果关系。\n\nL2 Hypotheses:  \n- Q1: **递归神经网络的误差反馈信号通过动态调节初级运动皮层神经元群体的同步性放电模式，补偿扰动引起的感知错误**。具体机制为：误差信号激活生物可塑性规则（如STDP），导致皮层内兴奋-抑制回路的突触权重重排，使神经群体表征方向场（direction field）重构，从而在单试次中快速校正运动轨迹偏差。  \n- Q2: **生物可塑性规则通过突触变化实现前馈模型与反馈控制器的协同优化**。在试次间学习过程中，突触权重的调整遵循误差反馈信号的二阶导数规则（如Hebbian-like更新），导致感觉运动通路中的前馈预测模型（用于运动计划）与反馈控制器（用于误差校正）通过共轭梯度下降实现联合收敛，使控制策略更新既满足在线运动校正需求，又保持对扰动的长期适应性。  \n\nL3 Hypotheses:  \n- Q1: **递归神经网络与前馈模型的协同验证依赖误差反馈信号的相位分离机制**。在运动校正阶段（试次内），高频误差信号主导突触可塑性诱导的快速权重调整；在策略更新阶段（试次间），低频误差信号驱动表观遗传修饰（如DNA甲基化）调控的长期突触稳态，从而使感觉运动通路在单神经元（突触强度）与群体（神经编解码）尺度上实现反馈驱动的运动校正机制验证。  \n- Q2: **在线控制框架下，试次间学习通过误差反馈信号与突触可塑性的跨时空调制实现跨尺度整合**。初级运动皮层中特定神经元（如PMd-PV+中间神经元）通过短时程可塑性（STP）存储试次内误差历史，而长期可塑性（LTP/LTD）将累积误差信息编码为突触权重变化，最终在控制策略更新中形成“时间积分-空间分化”双重表征：短期误差通过膜电位动态调整，长期适应通过树突棘重塑完成。  \n\n**可检验性设计**  \n- L1: 在力场扰动任务中，同时记录初级运动皮层神经元群体活动与递归网络内部表征，通过解码误差信号与突触权重变化的时序相关性验证动态内部模型假设。  \n- L2-Q1: 药理阻断初级运动皮层抑制性中间神经元功能，观察运动校正速度与误差反馈信号增益的关系是否偏离递归网络预测的同步性依赖曲线。  \n- L3-Q2: 在突触可塑性缺陷小鼠（如PSD-95 KO）中实施视觉运动旋转任务，比较其试次间学习曲线与野生型小鼠的误差反馈信号积分差异。"
+    ],
+    "structured_paths": {},
+    "raw_responses": [
+      "L1 Hypothesis:  \n生物体通过感觉运动通路中递归神经网络的误差反馈信号与突触可塑性规则的协同作用，形成动态内部模型。该模型在初级运动皮层中编码扰动特征，通过在线控制框架实现反馈驱动的试次间学习。当外部扰动（如力场或视觉运动旋转）出现时，误差反馈信号驱动突触权重的实时调整，使控制策略更新速度与生物可塑性规则介导的长期行为适应形成跨尺度耦合，最终在运动校正（快速反馈响应）与行为适应（慢速策略重构）之间建立双向因果关系。\n\nL2 Hypotheses:  \n- Q1: **递归神经网络的误差反馈信号通过动态调节初级运动皮层神经元群体的同步性放电模式，补偿扰动引起的感知错误**。具体机制为：误差信号激活生物可塑性规则（如STDP），导致皮层内兴奋-抑制回路的突触权重重排，使神经群体表征方向场（direction field）重构，从而在单试次中快速校正运动轨迹偏差。  \n- Q2: **生物可塑性规则通过突触变化实现前馈模型与反馈控制器的协同优化**。在试次间学习过程中，突触权重的调整遵循误差反馈信号的二阶导数规则（如Hebbian-like更新），导致感觉运动通路中的前馈预测模型（用于运动计划）与反馈控制器（用于误差校正）通过共轭梯度下降实现联合收敛，使控制策略更新既满足在线运动校正需求，又保持对扰动的长期适应性。  \n\nL3 Hypotheses:  \n- Q1: **递归神经网络与前馈模型的协同验证依赖误差反馈信号的相位分离机制**。在运动校正阶段（试次内），高频误差信号主导突触可塑性诱导的快速权重调整；在策略更新阶段（试次间），低频误差信号驱动表观遗传修饰（如DNA甲基化）调控的长期突触稳态，从而使感觉运动通路在单神经元（突触强度）与群体（神经编解码）尺度上实现反馈驱动的运动校正机制验证。  \n- Q2: **在线控制框架下，试次间学习通过误差反馈信号与突触可塑性的跨时空调制实现跨尺度整合**。初级运动皮层中特定神经元（如PMd-PV+中间神经元）通过短时程可塑性（STP）存储试次内误差历史，而长期可塑性（LTP/LTD）将累积误差信息编码为突触权重变化，最终在控制策略更新中形成“时间积分-空间分化”双重表征：短期误差通过膜电位动态调整，长期适应通过树突棘重塑完成。  \n\n**可检验性设计**  \n- L1: 在力场扰动任务中，同时记录初级运动皮层神经元群体活动与递归网络内部表征，通过解码误差信号与突触权重变化的时序相关性验证动态内部模型假设。  \n- L2-Q1: 药理阻断初级运动皮层抑制性中间神经元功能，观察运动校正速度与误差反馈信号增益的关系是否偏离递归网络预测的同步性依赖曲线。  \n- L3-Q2: 在突触可塑性缺陷小鼠（如PSD-95 KO）中实施视觉运动旋转任务，比较其试次间学习曲线与野生型小鼠的误差反馈信号积分差异。"
+    ],
+    "elapsed_seconds": 26.280848741531372
+  },
+  {
+    "paper_id": "a5b105f61dd1",
+    "method_name": "P4",
+    "free_text_hypotheses": [
+      "L1 Hypothesis:\n  hypothesis: 反馈驱动的突触可塑性梯度可同时支持运动系统的即时校正与长期适应，通过误差信号在局部神经环路（如小脑-皮层通路）与全局脑网络间的多尺度传播形成动态补偿机制\n  reasoning: \n    1. 前提：误差反馈信号在RNN中既能快速对抗扰动又能驱动长期学习（已知关系1,8）\n    2. 机制：生物系统可能通过突触可塑性梯度（如不同STDP时间常数）实现误差信号的时空解构，短时程可塑性支持运动校正，长时程可塑性重构内部模型\n    3. 预测：阻断皮层层内抑制性连接将破坏运动校正能力，但保留适应后效；而破坏小脑-丘脑-皮层通路将削弱长期适应\n  key_concepts: [误差反馈信号, 突触可塑性梯度, 局部神经环路, 内部模型, 运动校正, 长期适应]\n  disciplines_bridged: [生物学, 计算机科学技术]\n\nL2 Hypotheses:\n- Q1:\n    hypothesis: 初级运动皮层群体神经元的瞬时频率调制通过误差反馈信号的相位编码实现对递归神经网络控制策略的在线优化\n    reasoning:\n      1. 前提：RNN活动变化与M1神经元群体匹配（关系4），且误差反馈驱动控制策略更新（关系6）\n      2. 机制：M1神经元集群的振荡相位可能对误差信号进行时域复用，高频振荡（β波段）承载即时运动校正指令，低频波动（θ波段）累积适应性信息\n      3. 预测：光遗传干扰M1的β振荡将降低扰动应对速度而不影响适应曲线斜率\n    key_concepts: [递归神经网络, 误差反馈信号, 初级运动皮层, 群体神经元振荡, 相位编码, 控制策略优化]\n    disciplines_bridged: [生物学, 计算机科学技术]\n- Q2:\n    hypothesis: 生物可塑性规则通过突触权重矩阵的奇异值分解动态平衡前馈预测与反馈校正通道的增益\n    reasoning:\n      1. 前提：生物可塑性规则补偿扰动（关系3），且内部模型对应前馈模型（关系7）\n      2. 机制：突触可塑性可能通过SVD分解使权重矩阵的主奇异值对应前馈预测通道，次奇异值对应反馈校正通道，两者的比值决定控制策略的预测-校正平衡\n      3. 预测：在随机扰动环境中，突触权重矩阵的奇异值谱将呈现更均匀分布\n    key_concepts: [生物可塑性规则, 突触权重矩阵, 奇异值分解, 前馈预测, 反馈校正, 控制策略平衡]\n    disciplines_bridged: [计算机科学技术, 生物学]\n\nL3 Hypotheses:\n- Q1:\n    hypothesis: 递归神经网络的误差反馈信号通过调节前馈模型的隐藏层拓扑重组实现感觉运动通路的层级校准\n    reasoning:\n      1. 前提：RNN快速对抗扰动（关系8），前馈模型对应内部模型（关系7）\n      2. 机制：误差反馈信号可能触发前馈网络的拓扑重组算法（如模块化聚类），使感觉输入到运动输出的映射在不同扰动条件下保持层级可分性\n      3. 预测：干扰反馈信号的层级特征提取将导致前馈模型过度拟合当前扰动状态\n    key_concepts: [递归神经网络, 误差反馈信号, 前馈模型, 隐藏层拓扑重组, 感觉运动通路, 层级校准]\n    disciplines_bridged: [计算机科学技术, 生物学]\n- Q2:\n    hypothesis: 在线控制框架中，试次间学习通过误差信号的滑动时间窗积分在突触可塑性中建立马尔可夫链，实现跨试次的控制策略梯度下降\n    reasoning:\n      1. 前提：试次间学习通过控制策略更新实现（关系6），误差信号驱动突触变化（关系3）\n      2. 机制：突触可塑性可能以滑动时间窗整合多个试次误差信号，形成带有遗忘因子的梯度估计，其时间常数决定适应速率与稳态误差的权衡\n      3. 预测：改变时间窗宽度将改变适应曲线的双相特性（初始快速学习与后续慢速收敛）\n    key_concepts: [在线控制, 试次间学习, 滑动时间窗积分, 突触可塑性马尔可夫链, 控制策略梯度下降, 适应曲线双相性]\n    disciplines_bridged: [计算机科学技术, 生物学]"
+    ],
+    "structured_paths": {},
+    "raw_responses": [
+      "L1 Hypothesis:\n  hypothesis: 反馈驱动的突触可塑性梯度可同时支持运动系统的即时校正与长期适应，通过误差信号在局部神经环路（如小脑-皮层通路）与全局脑网络间的多尺度传播形成动态补偿机制\n  reasoning: \n    1. 前提：误差反馈信号在RNN中既能快速对抗扰动又能驱动长期学习（已知关系1,8）\n    2. 机制：生物系统可能通过突触可塑性梯度（如不同STDP时间常数）实现误差信号的时空解构，短时程可塑性支持运动校正，长时程可塑性重构内部模型\n    3. 预测：阻断皮层层内抑制性连接将破坏运动校正能力，但保留适应后效；而破坏小脑-丘脑-皮层通路将削弱长期适应\n  key_concepts: [误差反馈信号, 突触可塑性梯度, 局部神经环路, 内部模型, 运动校正, 长期适应]\n  disciplines_bridged: [生物学, 计算机科学技术]\n\nL2 Hypotheses:\n- Q1:\n    hypothesis: 初级运动皮层群体神经元的瞬时频率调制通过误差反馈信号的相位编码实现对递归神经网络控制策略的在线优化\n    reasoning:\n      1. 前提：RNN活动变化与M1神经元群体匹配（关系4），且误差反馈驱动控制策略更新（关系6）\n      2. 机制：M1神经元集群的振荡相位可能对误差信号进行时域复用，高频振荡（β波段）承载即时运动校正指令，低频波动（θ波段）累积适应性信息\n      3. 预测：光遗传干扰M1的β振荡将降低扰动应对速度而不影响适应曲线斜率\n    key_concepts: [递归神经网络, 误差反馈信号, 初级运动皮层, 群体神经元振荡, 相位编码, 控制策略优化]\n    disciplines_bridged: [生物学, 计算机科学技术]\n- Q2:\n    hypothesis: 生物可塑性规则通过突触权重矩阵的奇异值分解动态平衡前馈预测与反馈校正通道的增益\n    reasoning:\n      1. 前提：生物可塑性规则补偿扰动（关系3），且内部模型对应前馈模型（关系7）\n      2. 机制：突触可塑性可能通过SVD分解使权重矩阵的主奇异值对应前馈预测通道，次奇异值对应反馈校正通道，两者的比值决定控制策略的预测-校正平衡\n      3. 预测：在随机扰动环境中，突触权重矩阵的奇异值谱将呈现更均匀分布\n    key_concepts: [生物可塑性规则, 突触权重矩阵, 奇异值分解, 前馈预测, 反馈校正, 控制策略平衡]\n    disciplines_bridged: [计算机科学技术, 生物学]\n\nL3 Hypotheses:\n- Q1:\n    hypothesis: 递归神经网络的误差反馈信号通过调节前馈模型的隐藏层拓扑重组实现感觉运动通路的层级校准\n    reasoning:\n      1. 前提：RNN快速对抗扰动（关系8），前馈模型对应内部模型（关系7）\n      2. 机制：误差反馈信号可能触发前馈网络的拓扑重组算法（如模块化聚类），使感觉输入到运动输出的映射在不同扰动条件下保持层级可分性\n      3. 预测：干扰反馈信号的层级特征提取将导致前馈模型过度拟合当前扰动状态\n    key_concepts: [递归神经网络, 误差反馈信号, 前馈模型, 隐藏层拓扑重组, 感觉运动通路, 层级校准]\n    disciplines_bridged: [计算机科学技术, 生物学]\n- Q2:\n    hypothesis: 在线控制框架中，试次间学习通过误差信号的滑动时间窗积分在突触可塑性中建立马尔可夫链，实现跨试次的控制策略梯度下降\n    reasoning:\n      1. 前提：试次间学习通过控制策略更新实现（关系6），误差信号驱动突触变化（关系3）\n      2. 机制：突触可塑性可能以滑动时间窗整合多个试次误差信号，形成带有遗忘因子的梯度估计，其时间常数决定适应速率与稳态误差的权衡\n      3. 预测：改变时间窗宽度将改变适应曲线的双相特性（初始快速学习与后续慢速收敛）\n    key_concepts: [在线控制, 试次间学习, 滑动时间窗积分, 突触可塑性马尔可夫链, 控制策略梯度下降, 适应曲线双相性]\n    disciplines_bridged: [计算机科学技术, 生物学]"
+    ],
+    "elapsed_seconds": 46.81414031982422
+  },
+  {
+    "paper_id": "a5b105f61dd1",
+    "method_name": "P5",
+    "free_text_hypotheses": [
+      "反馈机制通过计算机科学技术的误差反馈信号调控递归神经网络，解决扰动补偿的实时性瓶颈",
+      "生物可塑性规则结合计算机科学技术的控制策略更新，突破感觉运动通路突触可塑性的适应性瓶颈",
+      "内部模型通过计算机科学技术的前馈模型与试次间学习整合，克服感知错误到运动校正的跨尺度整合瓶颈",
+      "通过递归神经网络的误差反馈信号调控初级运动皮层活动，将扰动补偿转化为可操作的神经动力学问题",
+      "利用生物可塑性规则引发的突触变化调节感觉运动通路，实现控制策略的参数优化与稳定性提升",
+      "递归神经网络通过误差反馈信号激活生物可塑性规则，引发突触变化以验证感觉运动通路的反馈校正机制",
+      "试次间学习利用误差反馈信号驱动生物可塑性规则，整合初级运动皮层活动与控制策略更新的跨尺度突触机制"
+    ],
+    "structured_paths": {
+      "L1": [
+        {
+          "steps": [
+            {
+              "step": 1,
+              "head": "反馈",
+              "relation": "通过误差反馈信号进行控制",
+              "tail": "误差反馈信号",
+              "claim": "反馈机制通过误差反馈信号调控递归神经网络活动，从而快速对抗外部扰动"
+            },
+            {
+              "step": 2,
+              "head": "误差反馈信号",
+              "relation": "误差反馈信号调控递归神经网络活动",
+              "tail": "递归神经网络",
+              "claim": "反馈机制通过误差反馈信号调控递归神经网络活动，从而快速对抗外部扰动"
+            },
+            {
+              "step": 3,
+              "head": "递归神经网络",
+              "relation": "递归神经网络快速对抗外部扰动",
+              "tail": "扰动",
+              "claim": "反馈机制通过误差反馈信号调控递归神经网络活动，从而快速对抗外部扰动"
+            }
+          ],
+          "summary": "反馈机制通过计算机科学技术的误差反馈信号调控递归神经网络，解决扰动补偿的实时性瓶颈"
+        },
+        {
+          "steps": [
+            {
+              "step": 1,
+              "head": "生物可塑性规则",
+              "relation": "生物可塑性规则驱动突触变化",
+              "tail": "突触变化",
+              "claim": "生物可塑性规则通过突触变化优化感觉运动通路的控制策略，实现对扰动的持续补偿"
+            },
+            {
+              "step": 2,
+              "head": "突触变化",
+              "relation": "突触变化调节感觉运动通路功能",
+              "tail": "感觉运动通路",
+              "claim": "生物可塑性规则通过突触变化优化感觉运动通路的控制策略，实现对扰动的持续补偿"
+            },
+            {
+              "step": 3,
+              "head": "感觉运动通路",
+              "relation": "感觉运动通路执行控制策略更新",
+              "tail": "控制策略更新",
+              "claim": "生物可塑性规则通过突触变化优化感觉运动通路的控制策略，实现对扰动的持续补偿"
+            }
+          ],
+          "summary": "生物可塑性规则结合计算机科学技术的控制策略更新，突破感觉运动通路突触可塑性的适应性瓶颈"
+        },
+        {
+          "steps": [
+            {
+              "step": 1,
+              "head": "内部模型",
+              "relation": "内部模型与前馈模型协同工作",
+              "tail": "前馈模型",
+              "claim": "内部模型通过前馈模型与试次间学习机制整合，提升感知错误驱动的运动校正效率"
+            },
+            {
+              "step": 2,
+              "head": "前馈模型",
+              "relation": "前馈模型支持试次间学习过程",
+              "tail": "试次间学习",
+              "claim": "内部模型通过前馈模型与试次间学习机制整合，提升感知错误驱动的运动校正效率"
+            },
+            {
+              "step": 3,
+              "head": "试次间学习",
+              "relation": "试次间学习优化在线控制框架",
+              "tail": "在线控制",
+              "claim": "内部模型通过前馈模型与试次间学习机制整合，提升感知错误驱动的运动校正效率"
+            }
+          ],
+          "summary": "内部模型通过计算机科学技术的前馈模型与试次间学习整合，克服感知错误到运动校正的跨尺度整合瓶颈"
+        }
+      ],
+      "L2": [
+        {
+          "steps": [
+            {
+              "step": 1,
+              "head": "递归神经网络",
+              "relation": "通过误差反馈信号进行控制",
+              "tail": "误差反馈信号",
+              "claim": "递归神经网络 通过误差反馈信号进行控制 误差反馈信号"
+            },
+            {
+              "step": 2,
+              "head": "误差反馈信号",
+              "relation": "调控初级运动皮层的活动变化",
+              "tail": "初级运动皮层",
+              "claim": "误差反馈信号 调控初级运动皮层的活动变化 初级运动皮层"
+            },
+            {
+              "step": 3,
+              "head": "初级运动皮层",
+              "relation": "通过活动变化应对扰动",
+              "tail": "扰动",
+              "claim": "初级运动皮层 通过活动变化应对扰动 扰动"
+            }
+          ],
+          "summary": "通过递归神经网络的误差反馈信号调控初级运动皮层活动，将扰动补偿转化为可操作的神经动力学问题"
+        },
+        {
+          "steps": [
+            {
+              "step": 1,
+              "head": "生物可塑性规则",
+              "relation": "导致突触变化",
+              "tail": "突触变化",
+              "claim": "生物可塑性规则 导致突触变化 突触变化"
+            },
+            {
+              "step": 2,
+              "head": "突触变化",
+              "relation": "调节感觉运动通路的可塑性",
+              "tail": "感觉运动通路",
+              "claim": "突触变化 调节感觉运动通路的可塑性 感觉运动通路"
+            },
+            {
+              "step": 3,
+              "head": "感觉运动通路",
+              "relation": "优化控制策略",
+              "tail": "控制策略",
+              "claim": "感觉运动通路 优化控制策略 控制策略"
+            }
+          ],
+          "summary": "利用生物可塑性规则引发的突触变化调节感觉运动通路，实现控制策略的参数优化与稳定性提升"
+        }
+      ],
+      "L3": [
+        {
+          "steps": [
+            {
+              "step": 1,
+              "head": "递归神经网络",
+              "relation": "通过误差反馈信号进行控制",
+              "tail": "误差反馈信号",
+              "claim": "递归神经网络 通过误差反馈信号进行控制 误差反馈信号"
+            },
+            {
+              "step": 2,
+              "head": "误差反馈信号",
+              "relation": "触发生物可塑性规则的适应性调整",
+              "tail": "生物可塑性规则",
+              "claim": "误差反馈信号 触发生物可塑性规则的适应性调整 生物可塑性规则"
+            },
+            {
+              "step": 3,
+              "head": "生物可塑性规则",
+              "relation": "驱动突触变化以优化感觉运动通路",
+              "tail": "突触变化",
+              "claim": "生物可塑性规则 驱动突触变化以优化感觉运动通路 突触变化"
+            }
+          ],
+          "summary": "递归神经网络通过误差反馈信号激活生物可塑性规则，引发突触变化以验证感觉运动通路的反馈校正机制"
+        },
+        {
+          "steps": [
+            {
+              "step": 1,
+              "head": "试次间学习",
+              "relation": "依赖误差反馈信号的动态更新机制",
+              "tail": "误差反馈信号",
+              "claim": "试次间学习 依赖误差反馈信号的动态更新机制 误差反馈信号"
+            },
+            {
+              "step": 2,
+              "head": "误差反馈信号",
+              "relation": "诱导生物可塑性规则介导的突触可塑性",
+              "tail": "生物可塑性规则",
+              "claim": "误差反馈信号 诱导生物可塑性规则介导的突触可塑性 生物可塑性规则"
+            },
+            {
+              "step": 3,
+              "head": "生物可塑性规则",
+              "relation": "协同初级运动皮层活动与控制策略更新",
+              "tail": "初级运动皮层",
+              "claim": "生物可塑性规则 协同初级运动皮层活动与控制策略更新 初级运动皮层"
+            }
+          ],
+          "summary": "试次间学习利用误差反馈信号驱动生物可塑性规则，整合初级运动皮层活动与控制策略更新的跨尺度突触机制"
+        }
+      ]
+    },
+    "raw_responses": [],
+    "elapsed_seconds": 4.38690185546875e-05
+  },
+  {
+    "paper_id": "17bb04bcd111",
+    "method_name": "P1",
+    "free_text_hypotheses": [
+      "**假设：** 在气候变暖背景下，北极圈内永久冻土加速融化释放的地下有机碳沉积物与夏季雷击频率的增加将形成协同效应，导致21世纪中叶（2040-2060年）北极苔原-北方森林交错带极端火灾年发生概率较20世纪末提升300%以上，且火灾峰值区域将从欧亚大陆中纬度森林向北推移至北纬65°以北的高纬度泥炭地，这一变化可通过耦合冻土碳释放模型与雷暴活动预测模型进行定量验证。"
+    ],
+    "structured_paths": {},
+    "raw_responses": [
+      "**假设：** 在气候变暖背景下，北极圈内永久冻土加速融化释放的地下有机碳沉积物与夏季雷击频率的增加将形成协同效应，导致21世纪中叶（2040-2060年）北极苔原-北方森林交错带极端火灾年发生概率较20世纪末提升300%以上，且火灾峰值区域将从欧亚大陆中纬度森林向北推移至北纬65°以北的高纬度泥炭地，这一变化可通过耦合冻土碳释放模型与雷暴活动预测模型进行定量验证。"
+    ],
+    "elapsed_seconds": 17.910082578659058
+  },
+  {
+    "paper_id": "17bb04bcd111",
+    "method_name": "P2",
+    "free_text_hypotheses": [
+      "L1 Hypothesis:  \n气候变化通过双重机制重塑全球极端火灾年分布格局：在气候驱动层面，增温加剧大气干旱和极端火险天气指数（FWI）的时空连贯性，导致温带和热带森林的火灾季节延长；在生态系统反馈层面，气候变暖与降水变异的协同作用改变植被动态，形成区域异质性的可燃物积累-干燥耦合效应，最终导致极端火灾年在亚马逊、地中海和北方林带呈现空间集聚特征，且其概率梯度与人类活动干扰强度呈正相关。  \n\nL2 Hypotheses:  \n- Q1:  \n气候变暖通过两个相互增强的途径驱动极端火灾年发生：一方面，升温加速春季积雪消融和土壤水分亏缺，延长植被易燃期并增强FWI的极端值强度；另一方面，降水模式变异导致干旱胁迫下的树木死亡率上升，形成大量死可燃物连续分布带。这种\"气候预干燥-生物量脉冲\"假说认为，森林生态系统的碳汇功能与火灾风险存在非线性阈值关系——当气候压力超过植被适应阈值时，原本的碳汇林将转化为可燃物载量超载的\"火势放大器\"。  \n\n- Q2:  \n土地利用变化通过植被覆盖类型转换改变地表能量平衡，进而调控FWI的敏感性阈值：森林向草原或农田转化时，地表反照率升高导致显热通量增加，局地气温上升0.5-2.3℃；同时，植被粗糙度降低使近地面风速增强15-30%。这种地表-大气反馈机制使FWI中的温度和风速参数权重放大，导致火险天气指数在混合景观区呈现\"双峰分布\"特征——既保留森林区的湿度敏感性，又叠加开放景观的干燥风效应，最终形成土地利用交错带的火灾概率异常高值区。"
+    ],
+    "structured_paths": {},
+    "raw_responses": [
+      "L1 Hypothesis:  \n气候变化通过双重机制重塑全球极端火灾年分布格局：在气候驱动层面，增温加剧大气干旱和极端火险天气指数（FWI）的时空连贯性，导致温带和热带森林的火灾季节延长；在生态系统反馈层面，气候变暖与降水变异的协同作用改变植被动态，形成区域异质性的可燃物积累-干燥耦合效应，最终导致极端火灾年在亚马逊、地中海和北方林带呈现空间集聚特征，且其概率梯度与人类活动干扰强度呈正相关。  \n\nL2 Hypotheses:  \n- Q1:  \n气候变暖通过两个相互增强的途径驱动极端火灾年发生：一方面，升温加速春季积雪消融和土壤水分亏缺，延长植被易燃期并增强FWI的极端值强度；另一方面，降水模式变异导致干旱胁迫下的树木死亡率上升，形成大量死可燃物连续分布带。这种\"气候预干燥-生物量脉冲\"假说认为，森林生态系统的碳汇功能与火灾风险存在非线性阈值关系——当气候压力超过植被适应阈值时，原本的碳汇林将转化为可燃物载量超载的\"火势放大器\"。  \n\n- Q2:  \n土地利用变化通过植被覆盖类型转换改变地表能量平衡，进而调控FWI的敏感性阈值：森林向草原或农田转化时，地表反照率升高导致显热通量增加，局地气温上升0.5-2.3℃；同时，植被粗糙度降低使近地面风速增强15-30%。这种地表-大气反馈机制使FWI中的温度和风速参数权重放大，导致火险天气指数在混合景观区呈现\"双峰分布\"特征——既保留森林区的湿度敏感性，又叠加开放景观的干燥风效应，最终形成土地利用交错带的火灾概率异常高值区。"
+    ],
+    "elapsed_seconds": 23.126771926879883
+  },
+  {
+    "paper_id": "17bb04bcd111",
+    "method_name": "P3",
+    "free_text_hypotheses": [
+      "L1 Hypothesis: Human-induced climate change (地球科学) has increased the synchronicity of extreme fire weather indices (FWI) (地球科学) across forest biomes (林学), particularly in temperate forests (林学) and Amazonian forests (林学), by enhancing atmospheric aridity and prolonging fire seasons (地球科学). This mechanism can be tested by comparing spatial correlation patterns of FWI anomalies between preindustrial and contemporary climate periods using paleoclimate reconstructions and satellite-derived fire data.\n\nL2 Hypotheses:\n- Q1: The interaction between warming-induced drought years (环境科学技术) and fuel accumulation in human-modified tropical forests (林学) creates nonlinear increases in fire carbon emissions (地球科学). Specifically, reduced moisture availability (环境科学技术) enhances fuel continuity (林学) in fragmented landscapes (环境科学技术), enabling large fires (地球科学) to propagate through previously fire-resistant humid forests. This could be validated through controlled combustion experiments with varying fuel moisture and connectivity metrics derived from LiDAR data.\n- Q2: Industrial agriculture-driven land use change (环境科学技术) in Amazonian regions (林学) alters surface albedo and evapotranspiration rates (地球科学), amplifying fire weather indices (FWI) (地球科学) by creating positive feedback loops between deforestation (环境科学技术) and atmospheric dryness. This hypothesis can be tested using regional climate models that incorporate satellite-based vegetation cover transitions and surface energy balance measurements.\n\nL3 Hypotheses:\n- Q1: A multi-scalar early warning system integrating CMIP6 climate projections (地球科学), MODIS fuel moisture dynamics (林学), and social infrastructure indices (环境科学技术) will improve extreme fire year predictions by 40% compared to conventional FWI-based frameworks alone. This can be validated through hindcasting experiments where predictive accuracy of fire seasons (地球科学) exceeding 95th percentile burned area (林学) is compared between models with/without socio-environmental covariates.\n- Q2: The combined effect of tropical deforestation (环境科学技术) and methane emissions (环境科学技术) from fire suppression activities (林学) amplifies regional warming (地球科学) by 0.3°C per decade, which in turn increases fire weather index (FWI) (地球科学) severity through enhanced convective instability. This feedback mechanism could be quantified using coupled atmospheric chemistry-transport models that track deforestation-induced albedo changes and methane oxidation pathways influencing boundary layer fire weather conditions."
+    ],
+    "structured_paths": {},
+    "raw_responses": [
+      "L1 Hypothesis: Human-induced climate change (地球科学) has increased the synchronicity of extreme fire weather indices (FWI) (地球科学) across forest biomes (林学), particularly in temperate forests (林学) and Amazonian forests (林学), by enhancing atmospheric aridity and prolonging fire seasons (地球科学). This mechanism can be tested by comparing spatial correlation patterns of FWI anomalies between preindustrial and contemporary climate periods using paleoclimate reconstructions and satellite-derived fire data.\n\nL2 Hypotheses:\n- Q1: The interaction between warming-induced drought years (环境科学技术) and fuel accumulation in human-modified tropical forests (林学) creates nonlinear increases in fire carbon emissions (地球科学). Specifically, reduced moisture availability (环境科学技术) enhances fuel continuity (林学) in fragmented landscapes (环境科学技术), enabling large fires (地球科学) to propagate through previously fire-resistant humid forests. This could be validated through controlled combustion experiments with varying fuel moisture and connectivity metrics derived from LiDAR data.\n- Q2: Industrial agriculture-driven land use change (环境科学技术) in Amazonian regions (林学) alters surface albedo and evapotranspiration rates (地球科学), amplifying fire weather indices (FWI) (地球科学) by creating positive feedback loops between deforestation (环境科学技术) and atmospheric dryness. This hypothesis can be tested using regional climate models that incorporate satellite-based vegetation cover transitions and surface energy balance measurements.\n\nL3 Hypotheses:\n- Q1: A multi-scalar early warning system integrating CMIP6 climate projections (地球科学), MODIS fuel moisture dynamics (林学), and social infrastructure indices (环境科学技术) will improve extreme fire year predictions by 40% compared to conventional FWI-based frameworks alone. This can be validated through hindcasting experiments where predictive accuracy of fire seasons (地球科学) exceeding 95th percentile burned area (林学) is compared between models with/without socio-environmental covariates.\n- Q2: The combined effect of tropical deforestation (环境科学技术) and methane emissions (环境科学技术) from fire suppression activities (林学) amplifies regional warming (地球科学) by 0.3°C per decade, which in turn increases fire weather index (FWI) (地球科学) severity through enhanced convective instability. This feedback mechanism could be quantified using coupled atmospheric chemistry-transport models that track deforestation-induced albedo changes and methane oxidation pathways influencing boundary layer fire weather conditions."
+    ],
+    "elapsed_seconds": 21.373552322387695
+  },
+  {
+    "paper_id": "17bb04bcd111",
+    "method_name": "P4",
+    "free_text_hypotheses": [
+      "L1 Hypothesis:\n  hypothesis: 人为气候变化通过增强火险天气地理同步性与亚马逊森林砍伐的协同效应，导致极端火灾年呈现跨区域集群分布特征\n  reasoning: 气候变暖加剧极端火险天气的时空同步性(地球科学)→同步干旱与高温降低森林抗火性(林学)→叠加亚马逊地区工业农业扩张导致的森林破碎化(环境科技)→形成跨区域火灾传播走廊→预测热带森林极端火灾年空间自相关性提高30%以上\n  key_concepts: 人为气候变化, 火险天气地理同步性, 森林砍伐, 工业农业, 极端火灾年空间自相关性\n  disciplines_bridged: 地球科学, 林学, 环境科学技术\n\nL2 Hypotheses:\n- Q1:\n    hypothesis: 温带森林生态系统中气候变暖通过延长生长季促进可燃物连续性积累，其增效作用在高纬度地区将使极端火灾年发生频率呈指数增长\n    reasoning: 气候变暖使生长季延长2-3周(地球科学)→促进乔木与地表可燃物垂直连续性发展(林学)→形成\"火烟囱\"效应→增强火势垂直蔓延能力→预测高纬森林极端火灾年频率增幅达150-200%\n    key_concepts: 气候变暖, 生长季延长, 可燃物连续性, 火势垂直蔓延, 极端火灾年频率\n    disciplines_bridged: 地球科学, 林学\n- Q2:\n    hypothesis: 热带草原化地区的土地利用变化通过植被覆盖阈值效应改变火险天气指数敏感性，当农业扩张导致林冠覆盖低于40%时将触发FWI非线性增长\n    reasoning: 林地转为农业用地减少蒸散发(林学)→改变近地表温湿度微气候(地球科学)→突破植被覆盖临界阈值→激活土壤-大气反馈环→预测林冠覆盖35-45%区间FWI增幅达200%\n    key_concepts: 土地利用变化, 林冠覆盖阈值, 蒸散发, 土壤-大气反馈, 火险天气指数\n    disciplines_bridged: 林学, 地球科学\n\nL3 Hypotheses:\n- Q1:\n    hypothesis: 融合星载LiDAR可燃物垂直结构监测与区域气候模型的多尺度预警系统，可将温带森林极端火灾预测提前期从7天延长至21天\n    reasoning: 星载LiDAR获取3D可燃物载量数据(林学)→输入区域气候模型改进火行为模拟(地球科学)→结合政策评估优化预警阈值(环境科技)→提升中尺度火险预测能力→预测提前期延长3倍且误报率降低40%\n    key_concepts: LiDAR监测, 可燃物垂直结构, 区域气候模型, 极端火灾预警, 政策评估\n    disciplines_bridged: 林学, 地球科学, 环境科学技术\n- Q2:\n    hypothesis: 建立热带森林砍伐-火险天气-甲烷排放耦合模型可揭示正反馈机制，预测2030年前亚马逊退化林的火灾甲烷排放强度将增加180%\n    reasoning: 砍伐导致边缘效应扩大(林学)→增强微气候干旱效应(地球科学)→延长火险季节→促进深层有机质分解→预测退化林甲烷排放因子提升2.5倍\n    key_concepts: 森林砍伐边缘效应, 微气候干旱, 火险季节延长, 有机质分解, 甲烷排放因子\n    disciplines_bridged: 林学, 地球科学, 环境科学技术"
+    ],
+    "structured_paths": {},
+    "raw_responses": [
+      "L1 Hypothesis:\n  hypothesis: 人为气候变化通过增强火险天气地理同步性与亚马逊森林砍伐的协同效应，导致极端火灾年呈现跨区域集群分布特征\n  reasoning: 气候变暖加剧极端火险天气的时空同步性(地球科学)→同步干旱与高温降低森林抗火性(林学)→叠加亚马逊地区工业农业扩张导致的森林破碎化(环境科技)→形成跨区域火灾传播走廊→预测热带森林极端火灾年空间自相关性提高30%以上\n  key_concepts: 人为气候变化, 火险天气地理同步性, 森林砍伐, 工业农业, 极端火灾年空间自相关性\n  disciplines_bridged: 地球科学, 林学, 环境科学技术\n\nL2 Hypotheses:\n- Q1:\n    hypothesis: 温带森林生态系统中气候变暖通过延长生长季促进可燃物连续性积累，其增效作用在高纬度地区将使极端火灾年发生频率呈指数增长\n    reasoning: 气候变暖使生长季延长2-3周(地球科学)→促进乔木与地表可燃物垂直连续性发展(林学)→形成\"火烟囱\"效应→增强火势垂直蔓延能力→预测高纬森林极端火灾年频率增幅达150-200%\n    key_concepts: 气候变暖, 生长季延长, 可燃物连续性, 火势垂直蔓延, 极端火灾年频率\n    disciplines_bridged: 地球科学, 林学\n- Q2:\n    hypothesis: 热带草原化地区的土地利用变化通过植被覆盖阈值效应改变火险天气指数敏感性，当农业扩张导致林冠覆盖低于40%时将触发FWI非线性增长\n    reasoning: 林地转为农业用地减少蒸散发(林学)→改变近地表温湿度微气候(地球科学)→突破植被覆盖临界阈值→激活土壤-大气反馈环→预测林冠覆盖35-45%区间FWI增幅达200%\n    key_concepts: 土地利用变化, 林冠覆盖阈值, 蒸散发, 土壤-大气反馈, 火险天气指数\n    disciplines_bridged: 林学, 地球科学\n\nL3 Hypotheses:\n- Q1:\n    hypothesis: 融合星载LiDAR可燃物垂直结构监测与区域气候模型的多尺度预警系统，可将温带森林极端火灾预测提前期从7天延长至21天\n    reasoning: 星载LiDAR获取3D可燃物载量数据(林学)→输入区域气候模型改进火行为模拟(地球科学)→结合政策评估优化预警阈值(环境科技)→提升中尺度火险预测能力→预测提前期延长3倍且误报率降低40%\n    key_concepts: LiDAR监测, 可燃物垂直结构, 区域气候模型, 极端火灾预警, 政策评估\n    disciplines_bridged: 林学, 地球科学, 环境科学技术\n- Q2:\n    hypothesis: 建立热带森林砍伐-火险天气-甲烷排放耦合模型可揭示正反馈机制，预测2030年前亚马逊退化林的火灾甲烷排放强度将增加180%\n    reasoning: 砍伐导致边缘效应扩大(林学)→增强微气候干旱效应(地球科学)→延长火险季节→促进深层有机质分解→预测退化林甲烷排放因子提升2.5倍\n    key_concepts: 森林砍伐边缘效应, 微气候干旱, 火险季节延长, 有机质分解, 甲烷排放因子\n    disciplines_bridged: 林学, 地球科学, 环境科学技术"
+    ],
+    "elapsed_seconds": 34.81445622444153
+  },
+  {
+    "paper_id": "17bb04bcd111",
+    "method_name": "P5",
+    "free_text_hypotheses": [
+      "人为气候变化通过极端火险天气指数增加极端火灾年概率，需环境科学技术优化预警模型并强化国际合作机制",
+      "当代气候延长火险季节导致可燃物积累，需林学发展人工林管理策略并监测热带森林碳排放反馈",
+      "人为气候变化通过促进可燃物载量积累并增强其空间连续性，从而加剧极端火灾年的发生风险",
+      "土地利用变化引发的热带森林砍伐通过改变地表植被覆盖，间接影响区域火险天气指数",
+      "通过人为气候变化→极端火灾年→火险同步性→灭火能力超载的闭环链条，验证气候驱动与灭火响应的时空匹配性",
+      "以土地利用变化→热带森林退化→火险季节延长→甲烷排放反馈的因果路径，量化人类活动对火灾-气候互馈的放大效应"
+    ],
+    "structured_paths": {
+      "L1": [
+        {
+          "steps": [
+            {
+              "step": 1,
+              "head": "人为气候变化",
+              "relation": "增加极端火险天气指数的可能性",
+              "tail": "火险天气指数",
+              "claim": "人为气候变化通过提升火险天气指数显著增加极端火灾年发生概率，需环境科学技术优化区域气候模型预测"
+            },
+            {
+              "step": 2,
+              "head": "火险天气指数",
+              "relation": "与极端火灾年共同发生",
+              "tail": "极端火灾年",
+              "claim": "火险天气指数极端值与极端火灾年存在强相关性，需林学建立可燃物动态监测体系"
+            },
+            {
+              "step": 3,
+              "head": "极端火灾年",
+              "relation": "改变地理同步性模式",
+              "tail": "火险天气地理同步性",
+              "claim": "极端火灾年通过地理同步性增强导致区域灭火能力超载，需国际合作建立跨区域响应机制"
+            }
+          ],
+          "summary": "人为气候变化通过极端火险天气指数增加极端火灾年概率，需环境科学技术优化预警模型并强化国际合作机制"
+        },
+        {
+          "steps": [
+            {
+              "step": 1,
+              "head": "当代气候",
+              "relation": "延长火险季节",
+              "tail": "火险季节",
+              "claim": "当代气候延长火险季节导致火灾窗口期扩大，需环境科学技术改进土地利用规划"
+            },
+            {
+              "step": 2,
+              "head": "火险季节",
+              "relation": "促进可燃物积累",
+              "tail": "可燃物丰富",
+              "claim": "延长的火险季节加剧可燃物积累，需林学发展人工林火灾适应性管理策略"
+            },
+            {
+              "step": 3,
+              "head": "可燃物丰富",
+              "relation": "加剧热带森林火灾强度",
+              "tail": "热带森林",
+              "claim": "可燃物积累与热带森林火灾强度正相关，需监测森林砍伐引发的碳排放反馈"
+            }
+          ],
+          "summary": "当代气候延长火险季节导致可燃物积累，需林学发展人工林管理策略并监测热带森林碳排放反馈"
+        }
+      ],
+      "L2": [
+        {
+          "steps": [
+            {
+              "step": 1,
+              "head": "人为气候变化",
+              "relation": "驱动可燃物积累",
+              "tail": "可燃物载量",
+              "claim": "人为气候变化 驱动可燃物积累 可燃物载量"
+            },
+            {
+              "step": 2,
+              "head": "可燃物载量",
+              "relation": "增强连续性",
+              "tail": "可燃物连续性",
+              "claim": "可燃物载量 增强连续性 可燃物连续性"
+            },
+            {
+              "step": 3,
+              "head": "可燃物连续性",
+              "relation": "加剧火灾蔓延",
+              "tail": "极端火灾年",
+              "claim": "可燃物连续性 加剧火灾蔓延 极端火灾年"
+            }
+          ],
+          "summary": "人为气候变化通过促进可燃物载量积累并增强其空间连续性，从而加剧极端火灾年的发生风险"
+        },
+        {
+          "steps": [
+            {
+              "step": 1,
+              "head": "土地利用变化",
+              "relation": "导致森林覆盖减少",
+              "tail": "森林砍伐",
+              "claim": "土地利用变化 导致森林覆盖减少 森林砍伐"
+            },
+            {
+              "step": 2,
+              "head": "森林砍伐",
+              "relation": "改变地表植被类型",
+              "tail": "热带森林",
+              "claim": "森林砍伐 改变地表植被类型 热带森林"
+            },
+            {
+              "step": 3,
+              "head": "热带森林",
+              "relation": "影响微气候调节",
+              "tail": "火险天气指数",
+              "claim": "热带森林 影响微气候调节 火险天气指数"
+            }
+          ],
+          "summary": "土地利用变化引发的热带森林砍伐通过改变地表植被覆盖，间接影响区域火险天气指数"
+        }
+      ],
+      "L3": [
+        {
+          "steps": [
+            {
+              "step": 1,
+              "head": "人为气候变化",
+              "relation": "增加极端气候驱动火灾年的概率",
+              "tail": "极端气候驱动火灾年",
+              "claim": "人为气候变化 增加极端气候驱动火灾年的概率 极端气候驱动火灾年"
+            },
+            {
+              "step": 2,
+              "head": "极端气候驱动火灾年",
+              "relation": "与火险天气地理同步性关联",
+              "tail": "火险天气地理同步性",
+              "claim": "极端气候驱动火灾年 与火险天气地理同步性关联 火险天气地理同步性"
+            },
+            {
+              "step": 3,
+              "head": "火险天气地理同步性",
+              "relation": "超过灭火能力阈值",
+              "tail": "灭火能力",
+              "claim": "火险天气地理同步性 超过灭火能力阈值 灭火能力"
+            }
+          ],
+          "summary": "通过人为气候变化→极端火灾年→火险同步性→灭火能力超载的闭环链条，验证气候驱动与灭火响应的时空匹配性"
+        },
+        {
+          "steps": [
+            {
+              "step": 1,
+              "head": "土地利用变化",
+              "relation": "导致热带森林向工业农业转化",
+              "tail": "热带森林",
+              "claim": "土地利用变化 导致热带森林向工业农业转化 热带森林"
+            },
+            {
+              "step": 2,
+              "head": "热带森林",
+              "relation": "通过干旱年份加剧火险季节延长",
+              "tail": "火险季节",
+              "claim": "热带森林 通过干旱年份加剧火险季节延长 火险季节"
+            },
+            {
+              "step": 3,
+              "head": "火险季节",
+              "relation": "促进甲烷排放量级提升",
+              "tail": "甲烷排放",
+              "claim": "火险季节 促进甲烷排放量级提升 甲烷排放"
+            }
+          ],
+          "summary": "以土地利用变化→热带森林退化→火险季节延长→甲烷排放反馈的因果路径，量化人类活动对火灾-气候互馈的放大效应"
+        }
+      ]
+    },
+    "raw_responses": [],
+    "elapsed_seconds": 7.081031799316406e-05
+  },
+  {
+    "paper_id": "1190f088c693",
+    "method_name": "P1",
+    "free_text_hypotheses": [
+      "Hypothesis: Integrating residue-specific torsion angle potentials derived from deep learning-based secondary structure prediction with adaptive solvation free energy corrections in a hybrid explicit/implicit solvent force field will significantly enhance the accuracy of intrinsically disordered protein conformational sampling by dynamically balancing local flexibility and global compaction during molecular dynamics simulations. This can be tested by benchmarking against experimental NMR order parameters and SAXS profiles of benchmark IDPs using cross-validation with independent holdout datasets."
+    ],
+    "structured_paths": {},
+    "raw_responses": [
+      "Hypothesis: Integrating residue-specific torsion angle potentials derived from deep learning-based secondary structure prediction with adaptive solvation free energy corrections in a hybrid explicit/implicit solvent force field will significantly enhance the accuracy of intrinsically disordered protein conformational sampling by dynamically balancing local flexibility and global compaction during molecular dynamics simulations. This can be tested by benchmarking against experimental NMR order parameters and SAXS profiles of benchmark IDPs using cross-validation with independent holdout datasets."
+    ],
+    "elapsed_seconds": 17.36567234992981
+  },
+  {
+    "paper_id": "1190f088c693",
+    "method_name": "P2",
+    "free_text_hypotheses": [
+      "L1 Hypothesis: 通过整合原子级分辨率模拟的统计力学特征与粗粒化力场参数优化框架，结合多尺度验证策略（如实验回转半径与相分离行为校准），可系统性重构无序蛋白的扩展构象空间及多价相互作用网络，从而在化学表征精度与计算效率间建立新的平衡范式。  \n\nL2 Hypotheses:  \n- Q1: 基于原子级模拟数据训练的非均匀键长-键角耦合参数集，可精确编码蛋白质界面水化层动态重构与疏水塌缩的竞争机制，使Martini3-IDP模型在保持全局结构无序性的同时，特异性捕获蛋白质-蛋白质相互作用中瞬时结合位点的熵变特征。  \n- Q2: 通过引入基于机器学习的自适应力场参数压缩算法，Martini3-IDP模型可在维持相分离临界行为统计等价性的前提下实现计算效率提升2-3个数量级，使生物分子凝聚体从成核到稳态的完整相变轨迹（包括非平衡中间态）得以在分钟级实验时程内完成全原子分辨率重构。"
+    ],
+    "structured_paths": {},
+    "raw_responses": [
+      "L1 Hypothesis: 通过整合原子级分辨率模拟的统计力学特征与粗粒化力场参数优化框架，结合多尺度验证策略（如实验回转半径与相分离行为校准），可系统性重构无序蛋白的扩展构象空间及多价相互作用网络，从而在化学表征精度与计算效率间建立新的平衡范式。  \n\nL2 Hypotheses:  \n- Q1: 基于原子级模拟数据训练的非均匀键长-键角耦合参数集，可精确编码蛋白质界面水化层动态重构与疏水塌缩的竞争机制，使Martini3-IDP模型在保持全局结构无序性的同时，特异性捕获蛋白质-蛋白质相互作用中瞬时结合位点的熵变特征。  \n- Q2: 通过引入基于机器学习的自适应力场参数压缩算法，Martini3-IDP模型可在维持相分离临界行为统计等价性的前提下实现计算效率提升2-3个数量级，使生物分子凝聚体从成核到稳态的完整相变轨迹（包括非平衡中间态）得以在分钟级实验时程内完成全原子分辨率重构。"
+    ],
+    "elapsed_seconds": 22.5262770652771
+  },
+  {
+    "paper_id": "1190f088c693",
+    "method_name": "P3",
+    "free_text_hypotheses": [
+      "L1 Hypothesis:  \n通过化学学科的力场模型优化（键参数校正）结合生物学的原子级分辨率数据约束，可建立固有无序蛋白构象可塑性的跨尺度表征机制。具体而言，Martini3-IDP模型中基于原子级模拟数据优化的二面角参数与非键相互作用平衡，将直接调控IDP无序区域的回转半径分布，使其更接近实验观测值，同时维持多价相互作用驱动的生物分子凝聚体形成能力。该机制可通过比较突变IDP（破坏特定多价相互作用位点）的模拟构象与冷冻电镜观测结果进行验证。\n\nL2 Hypotheses:  \n- Q1: 化学学科的原子级分辨率参考数据驱动的力场参数优化，可通过增强蛋白质-蛋白质接触界面的溶剂可及性，促进生物学相关的多价相互作用网络形成。例如，在FUS蛋白低复杂性结构域模拟中，优化后的Martini3-IDP模型应能再现原子力显微镜测量的分层聚集行为，且其β-sheet核心形成速率与实验观测的光漂白恢复时间呈正相关。  \n- Q2: 计算机科学技术的分块分析算法与粗粒化模型计算效率提升相结合，可实现生物分子凝聚体液-液相分离临界点的动态捕捉。通过引入基于图神经网络的相界面识别模块，模拟系统在10^8粒子规模下应能解析IDP-RNA共凝聚体的成核-生长动力学，且其分形维度与超分辨显微成像结果的偏差小于15%。\n\nL3 Hypotheses:  \n- Q1: 基于粗粒化模型的参数优化可通过化学学科的键参数敏感性分析与生物学的原子级残差耦合网络建立映射关系，具体表现为：通过分块分析识别IDP无序区域的刚性片段（如脯氨酸富集区），并将其散度评估指标（如构象熵变化率）与全原子模拟的次级结构概率矩阵关联，从而构建从Ångström到纳米尺度的跨尺度验证体系。该方法在p53蛋白N端无序区测试中应能预测磷酸化修饰导致的相分离阈值偏移。  \n- Q2: 力场模型改进需同时整合构象可塑性化学描述符（如二面角势能阱深度）与多价相互作用生物学参数（如芳香族残基介导的π-π堆积能），通过计算机科学技术的异构计算架构实现同型/异型系统相分离行为的定量预测。例如，在TDP-43蛋白病理学突变体模拟中，优化后的Martini3-IDP模型应能复现实验观测的相分离液滴粘弹性转变，且其临界浓度预测误差低于0.5 mM，同时保持GPU加速下的纳秒级时间步长计算效率。"
+    ],
+    "structured_paths": {},
+    "raw_responses": [
+      "L1 Hypothesis:  \n通过化学学科的力场模型优化（键参数校正）结合生物学的原子级分辨率数据约束，可建立固有无序蛋白构象可塑性的跨尺度表征机制。具体而言，Martini3-IDP模型中基于原子级模拟数据优化的二面角参数与非键相互作用平衡，将直接调控IDP无序区域的回转半径分布，使其更接近实验观测值，同时维持多价相互作用驱动的生物分子凝聚体形成能力。该机制可通过比较突变IDP（破坏特定多价相互作用位点）的模拟构象与冷冻电镜观测结果进行验证。\n\nL2 Hypotheses:  \n- Q1: 化学学科的原子级分辨率参考数据驱动的力场参数优化，可通过增强蛋白质-蛋白质接触界面的溶剂可及性，促进生物学相关的多价相互作用网络形成。例如，在FUS蛋白低复杂性结构域模拟中，优化后的Martini3-IDP模型应能再现原子力显微镜测量的分层聚集行为，且其β-sheet核心形成速率与实验观测的光漂白恢复时间呈正相关。  \n- Q2: 计算机科学技术的分块分析算法与粗粒化模型计算效率提升相结合，可实现生物分子凝聚体液-液相分离临界点的动态捕捉。通过引入基于图神经网络的相界面识别模块，模拟系统在10^8粒子规模下应能解析IDP-RNA共凝聚体的成核-生长动力学，且其分形维度与超分辨显微成像结果的偏差小于15%。\n\nL3 Hypotheses:  \n- Q1: 基于粗粒化模型的参数优化可通过化学学科的键参数敏感性分析与生物学的原子级残差耦合网络建立映射关系，具体表现为：通过分块分析识别IDP无序区域的刚性片段（如脯氨酸富集区），并将其散度评估指标（如构象熵变化率）与全原子模拟的次级结构概率矩阵关联，从而构建从Ångström到纳米尺度的跨尺度验证体系。该方法在p53蛋白N端无序区测试中应能预测磷酸化修饰导致的相分离阈值偏移。  \n- Q2: 力场模型改进需同时整合构象可塑性化学描述符（如二面角势能阱深度）与多价相互作用生物学参数（如芳香族残基介导的π-π堆积能），通过计算机科学技术的异构计算架构实现同型/异型系统相分离行为的定量预测。例如，在TDP-43蛋白病理学突变体模拟中，优化后的Martini3-IDP模型应能复现实验观测的相分离液滴粘弹性转变，且其临界浓度预测误差低于0.5 mM，同时保持GPU加速下的纳秒级时间步长计算效率。"
+    ],
+    "elapsed_seconds": 44.25735068321228
+  },
+  {
+    "paper_id": "1190f088c693",
+    "method_name": "P4",
+    "free_text_hypotheses": [
+      "L1 Hypothesis:  \n**hypothesis:** 整合固有无序蛋白的多价相互作用动态特征与机器学习驱动的参数优化框架，可建立自适应力场模型，使模拟既能精确再现原子级分辨率的局部构象偏好，又能通过动态调整非键相互作用强度捕捉长程协同效应，从而突破传统CG模型对IDP相分离行为的预测局限性。  \n**reasoning:**  \n1. 原子级分辨率数据揭示IDP的局部构象偏好（化学）与多价相互作用（生物学）存在动态耦合  \n2. 机器学习（计算机科学技术）可通过强化学习策略优化力场参数，使键参数与非键相互作用形成反馈回路  \n3. 引入动态非键强度调整机制，可模拟LLPS中价态依赖的相变阈值（生物分子凝聚体）  \n**key_concepts:** 多价相互作用, 动态力场优化, 机器学习参数拟合, 非键相互作用强度反馈  \n**disciplines_bridged:** 生物学, 计算机科学技术, 化学  \n\n---\n\nL2 Hypotheses:  \n- Q1:  \n**hypothesis:** 通过将原子级蛋白质复合物结合自由能分解与粗粒化模型的分块势能面映射结合，可建立跨尺度验证框架，揭示传统CG模型在双分子结合路径中丢失的熵变贡献，并指导非键参数修正以更准确再现多价IDP聚集特性。  \n**reasoning:**  \n1. 原子级模拟可分解多价结合的焓熵贡献（化学）  \n2. 分块分析（计算机科学技术）能定位CG模型中失真的局部势能项  \n3. 修正非键相互作用参数（力场模型）可恢复实验观测的相分离临界浓度（生物学）  \n**key_concepts:** 结合自由能分解, 分块势能分析, 熵变补偿效应, 多价结合路径  \n**disciplines_bridged:** 化学, 计算机科学技术, 生物学  \n\n- Q2:  \n**hypothesis:** 开发基于GPU加速的粗粒化引擎与时间尺度压缩算法的协同框架，可实现单分子追踪级别的生物分子凝聚体成核过程模拟，揭示IDP低复杂度区域相分离的临界成核尺寸与细胞内浓度梯度的定量关联。  \n**reasoning:**  \n1. 计算效率提升（计算机科学技术）允许统计学显著的成核事件采样  \n2. 结合生物学中IDP核转运浓度梯度数据，可建立相分离动力学方程  \n3. 预测细胞器微环境中LLPS受限于分子价态与几何约束的竞争  \n**key_concepts:** 时间尺度压缩算法, 单分子追踪模拟, 临界成核尺寸, 浓度梯度驱动  \n**disciplines_bridged:** 计算机科学技术, 生物学  \n\n---\n\nL3 Hypotheses:  \n- Q1:  \n**hypothesis:** 将原子级残基接触频率矩阵与粗粒化分块拓扑网络进行谱图匹配，可构建跨尺度验证指标，通过最小化图拉普拉斯散度优化CG参数，使模型既能保持局部构象可塑性（化学），又能再现全局相分离的分形特征（生物学）。  \n**reasoning:**  \n1. 原子级接触图（化学）包含IDP构象系综的拓扑信息  \n2. 分块分析（计算机科学技术）提取CG模型的粗化网络特征  \n3. 图散度最小化优化（计算机科学技术）可同步提升Rg与LLPS界面张力预测精度  \n**key_concepts:** 残基接触频率矩阵, 分块拓扑网络, 图拉普拉斯散度, 分形相界面  \n**disciplines_bridged:** 化学, 计算机科学技术, 生物学  \n\n- Q2:  \n**hypothesis:** 引入构象依赖的价态感知势函数（生物学），通过实时监测IDP无序区域的二级结构倾向（化学）动态调整粗粒化珠子相互作用类型（计算机科学技术），可实现同型系统相分离阈值浓度与异型系统共缩聚行为的差异化预测。  \n**reasoning:**  \n1. 构象可塑性（生物学）决定IDP价态暴露概率  \n2. 动态势函数（计算机科学技术）需耦合局部结构传感器与全局相互作用切换  \n3. 预测异型系统中价态互补导致的共缩聚滞后现象  \n**key_concepts:** 价态感知势函数, 二级结构倾向监测, 相互作用类型切换, 共缩聚滞后  \n**disciplines_bridged:** 生物学, 化学, 计算机科学技术"
+    ],
+    "structured_paths": {},
+    "raw_responses": [
+      "L1 Hypothesis:  \n**hypothesis:** 整合固有无序蛋白的多价相互作用动态特征与机器学习驱动的参数优化框架，可建立自适应力场模型，使模拟既能精确再现原子级分辨率的局部构象偏好，又能通过动态调整非键相互作用强度捕捉长程协同效应，从而突破传统CG模型对IDP相分离行为的预测局限性。  \n**reasoning:**  \n1. 原子级分辨率数据揭示IDP的局部构象偏好（化学）与多价相互作用（生物学）存在动态耦合  \n2. 机器学习（计算机科学技术）可通过强化学习策略优化力场参数，使键参数与非键相互作用形成反馈回路  \n3. 引入动态非键强度调整机制，可模拟LLPS中价态依赖的相变阈值（生物分子凝聚体）  \n**key_concepts:** 多价相互作用, 动态力场优化, 机器学习参数拟合, 非键相互作用强度反馈  \n**disciplines_bridged:** 生物学, 计算机科学技术, 化学  \n\n---\n\nL2 Hypotheses:  \n- Q1:  \n**hypothesis:** 通过将原子级蛋白质复合物结合自由能分解与粗粒化模型的分块势能面映射结合，可建立跨尺度验证框架，揭示传统CG模型在双分子结合路径中丢失的熵变贡献，并指导非键参数修正以更准确再现多价IDP聚集特性。  \n**reasoning:**  \n1. 原子级模拟可分解多价结合的焓熵贡献（化学）  \n2. 分块分析（计算机科学技术）能定位CG模型中失真的局部势能项  \n3. 修正非键相互作用参数（力场模型）可恢复实验观测的相分离临界浓度（生物学）  \n**key_concepts:** 结合自由能分解, 分块势能分析, 熵变补偿效应, 多价结合路径  \n**disciplines_bridged:** 化学, 计算机科学技术, 生物学  \n\n- Q2:  \n**hypothesis:** 开发基于GPU加速的粗粒化引擎与时间尺度压缩算法的协同框架，可实现单分子追踪级别的生物分子凝聚体成核过程模拟，揭示IDP低复杂度区域相分离的临界成核尺寸与细胞内浓度梯度的定量关联。  \n**reasoning:**  \n1. 计算效率提升（计算机科学技术）允许统计学显著的成核事件采样  \n2. 结合生物学中IDP核转运浓度梯度数据，可建立相分离动力学方程  \n3. 预测细胞器微环境中LLPS受限于分子价态与几何约束的竞争  \n**key_concepts:** 时间尺度压缩算法, 单分子追踪模拟, 临界成核尺寸, 浓度梯度驱动  \n**disciplines_bridged:** 计算机科学技术, 生物学  \n\n---\n\nL3 Hypotheses:  \n- Q1:  \n**hypothesis:** 将原子级残基接触频率矩阵与粗粒化分块拓扑网络进行谱图匹配，可构建跨尺度验证指标，通过最小化图拉普拉斯散度优化CG参数，使模型既能保持局部构象可塑性（化学），又能再现全局相分离的分形特征（生物学）。  \n**reasoning:**  \n1. 原子级接触图（化学）包含IDP构象系综的拓扑信息  \n2. 分块分析（计算机科学技术）提取CG模型的粗化网络特征  \n3. 图散度最小化优化（计算机科学技术）可同步提升Rg与LLPS界面张力预测精度  \n**key_concepts:** 残基接触频率矩阵, 分块拓扑网络, 图拉普拉斯散度, 分形相界面  \n**disciplines_bridged:** 化学, 计算机科学技术, 生物学  \n\n- Q2:  \n**hypothesis:** 引入构象依赖的价态感知势函数（生物学），通过实时监测IDP无序区域的二级结构倾向（化学）动态调整粗粒化珠子相互作用类型（计算机科学技术），可实现同型系统相分离阈值浓度与异型系统共缩聚行为的差异化预测。  \n**reasoning:**  \n1. 构象可塑性（生物学）决定IDP价态暴露概率  \n2. 动态势函数（计算机科学技术）需耦合局部结构传感器与全局相互作用切换  \n3. 预测异型系统中价态互补导致的共缩聚滞后现象  \n**key_concepts:** 价态感知势函数, 二级结构倾向监测, 相互作用类型切换, 共缩聚滞后  \n**disciplines_bridged:** 生物学, 化学, 计算机科学技术"
+    ],
+    "elapsed_seconds": 46.82272911071777
+  },
+  {
+    "paper_id": "1190f088c693",
+    "method_name": "P5",
+    "free_text_hypotheses": [
+      "力场模型 优化键参数基于原子级分辨率数据验证 键参数；键参数 拟合到原子级分辨率参考模拟 原子级分辨率；因此，原子级分辨率 提供固有无序蛋白构象特征的实验基准 固有无序蛋白",
+      "力场模型 维持蛋白质-蛋白质相互作用平衡 蛋白质-蛋白质相互作用；蛋白质-蛋白质相互作用 依赖粗粒化分子动力学实现高效采样 粗粒化分子动力学；因此，粗粒化分子动力学 通过计算效率提升扩展模拟时空尺度 计算效率",
+      "力场模型 重现生物分子凝聚体液-液相分离现象 液-液相分离；液-液相分离 依赖生物分子凝聚体的相变特性验证 生物分子凝聚体；因此，生物分子凝聚体 反映固有无序蛋白的多价相互作用网络 固有无序蛋白",
+      "通过原子级分辨率数据验证参数优化对蛋白质相互作用特征的还原能力，建立力场模型改进与生物特性验证的闭环",
+      "利用粗粒化模型降低分子动力学计算复杂度，在效率提升框架下实现生物分子凝聚体相分离过程的时空追踪",
+      "参数优化通过分块分析与散度评估建立固有无序蛋白到液-液相分离的跨尺度验证，最终由粗粒化分子动力学实现模拟闭环",
+      "力场模型整合构象可塑性与多价相互作用参数，通过计算效率提升实现同型/异型系统相分离行为的定量预测"
+    ],
+    "structured_paths": {
+      "L1": [
+        {
+          "steps": [
+            {
+              "step": 1,
+              "head": "力场模型",
+              "relation": "优化键参数基于原子级分辨率数据验证",
+              "tail": "键参数",
+              "claim": "力场模型 优化键参数基于原子级分辨率数据验证 键参数"
+            },
+            {
+              "step": 2,
+              "head": "键参数",
+              "relation": "拟合到原子级分辨率参考模拟",
+              "tail": "原子级分辨率",
+              "claim": "键参数 拟合到原子级分辨率参考模拟 原子级分辨率"
+            },
+            {
+              "step": 3,
+              "head": "原子级分辨率",
+              "relation": "提供固有无序蛋白构象特征的实验基准",
+              "tail": "固有无序蛋白",
+              "claim": "原子级分辨率 提供固有无序蛋白构象特征的实验基准 固有无序蛋白"
+            }
+          ],
+          "summary": "力场模型 优化键参数基于原子级分辨率数据验证 键参数；键参数 拟合到原子级分辨率参考模拟 原子级分辨率；因此，原子级分辨率 提供固有无序蛋白构象特征的实验基准 固有无序蛋白"
+        },
+        {
+          "steps": [
+            {
+              "step": 1,
+              "head": "力场模型",
+              "relation": "维持蛋白质-蛋白质相互作用平衡",
+              "tail": "蛋白质-蛋白质相互作用",
+              "claim": "力场模型 维持蛋白质-蛋白质相互作用平衡 蛋白质-蛋白质相互作用"
+            },
+            {
+              "step": 2,
+              "head": "蛋白质-蛋白质相互作用",
+              "relation": "依赖粗粒化分子动力学实现高效采样",
+              "tail": "粗粒化分子动力学",
+              "claim": "蛋白质-蛋白质相互作用 依赖粗粒化分子动力学实现高效采样 粗粒化分子动力学"
+            },
+            {
+              "step": 3,
+              "head": "粗粒化分子动力学",
+              "relation": "通过计算效率提升扩展模拟时空尺度",
+              "tail": "计算效率",
+              "claim": "粗粒化分子动力学 通过计算效率提升扩展模拟时空尺度 计算效率"
+            }
+          ],
+          "summary": "力场模型 维持蛋白质-蛋白质相互作用平衡 蛋白质-蛋白质相互作用；蛋白质-蛋白质相互作用 依赖粗粒化分子动力学实现高效采样 粗粒化分子动力学；因此，粗粒化分子动力学 通过计算效率提升扩展模拟时空尺度 计算效率"
+        },
+        {
+          "steps": [
+            {
+              "step": 1,
+              "head": "力场模型",
+              "relation": "重现生物分子凝聚体液-液相分离现象",
+              "tail": "液-液相分离",
+              "claim": "力场模型 重现生物分子凝聚体液-液相分离现象 液-液相分离"
+            },
+            {
+              "step": 2,
+              "head": "液-液相分离",
+              "relation": "依赖生物分子凝聚体的相变特性验证",
+              "tail": "生物分子凝聚体",
+              "claim": "液-液相分离 依赖生物分子凝聚体的相变特性验证 生物分子凝聚体"
+            },
+            {
+              "step": 3,
+              "head": "生物分子凝聚体",
+              "relation": "反映固有无序蛋白的多价相互作用网络",
+              "tail": "固有无序蛋白",
+              "claim": "生物分子凝聚体 反映固有无序蛋白的多价相互作用网络 固有无序蛋白"
+            }
+          ],
+          "summary": "力场模型 重现生物分子凝聚体液-液相分离现象 液-液相分离；液-液相分离 依赖生物分子凝聚体的相变特性验证 生物分子凝聚体；因此，生物分子凝聚体 反映固有无序蛋白的多价相互作用网络 固有无序蛋白"
+        }
+      ],
+      "L2": [
+        {
+          "steps": [
+            {
+              "step": 1,
+              "head": "参数优化",
+              "relation": "基于原子级分辨率数据验证参数可靠性",
+              "tail": "原子级分辨率",
+              "claim": "参数优化过程依赖原子级分辨率数据作为基准"
+            },
+            {
+              "step": 2,
+              "head": "原子级分辨率",
+              "relation": "提供相互作用特征的高精度观测",
+              "tail": "蛋白质-蛋白质相互作用",
+              "claim": "原子级数据可解析蛋白质间作用细节"
+            },
+            {
+              "step": 3,
+              "head": "蛋白质-蛋白质相互作用",
+              "relation": "通过相互作用特性反推模型参数适配性",
+              "tail": "力场模型",
+              "claim": "蛋白质作用特征是验证力场模型的关键指标"
+            }
+          ],
+          "summary": "通过原子级分辨率数据验证参数优化对蛋白质相互作用特征的还原能力，建立力场模型改进与生物特性验证的闭环"
+        },
+        {
+          "steps": [
+            {
+              "step": 1,
+              "head": "分子动力学",
+              "relation": "采用粗粒化建模降低计算复杂度",
+              "tail": "粗粒化模型",
+              "claim": "分子动力学方法通过简化模型提升效率"
+            },
+            {
+              "step": 2,
+              "head": "粗粒化模型",
+              "relation": "减少粒子数量提升运算速度",
+              "tail": "计算效率",
+              "claim": "粗粒化处理显著增强计算资源利用率"
+            },
+            {
+              "step": 3,
+              "head": "计算效率",
+              "relation": "延长模拟时域以捕捉相变过程",
+              "tail": "生物分子凝聚体液-液相分离",
+              "claim": "效率提升使生物分子凝聚体动态可视化成为可能"
+            }
+          ],
+          "summary": "利用粗粒化模型降低分子动力学计算复杂度，在效率提升框架下实现生物分子凝聚体相分离过程的时空追踪"
+        }
+      ],
+      "L3": [
+        {
+          "steps": [
+            {
+              "step": 1,
+              "head": "参数优化",
+              "relation": "协同分块分析与散度评估",
+              "tail": "固有无序蛋白",
+              "claim": "参数优化 协同分块分析与散度评估 固有无序蛋白"
+            },
+            {
+              "step": 2,
+              "head": "固有无序蛋白",
+              "relation": "从原子级分辨率数据建立跨尺度关联",
+              "tail": "液-液相分离",
+              "claim": "固有无序蛋白 从原子级分辨率数据建立跨尺度关联 液-液相分离"
+            },
+            {
+              "step": 3,
+              "head": "液-液相分离",
+              "relation": "通过粗粒化模型验证模拟体系有效性",
+              "tail": "粗粒化分子动力学",
+              "claim": "液-液相分离 通过粗粒化模型验证模拟体系有效性 粗粒化分子动力学"
+            }
+          ],
+          "summary": "参数优化通过分块分析与散度评估建立固有无序蛋白到液-液相分离的跨尺度验证，最终由粗粒化分子动力学实现模拟闭环"
+        },
+        {
+          "steps": [
+            {
+              "step": 1,
+              "head": "力场模型",
+              "relation": "整合构象可塑性特征与多价相互作用参数",
+              "tail": "计算效率",
+              "claim": "力场模型 整合构象可塑性特征与多价相互作用参数 计算效率"
+            },
+            {
+              "step": 2,
+              "head": "计算效率",
+              "relation": "通过参数优化提升模拟速度",
+              "tail": "同型系统",
+              "claim": "计算效率 通过参数优化提升模拟速度 同型系统"
+            },
+            {
+              "step": 3,
+              "head": "同型系统",
+              "relation": "实现异型系统相分离行为的定量预测",
+              "tail": "异型系统",
+              "claim": "同型系统 实现异型系统相分离行为的定量预测 异型系统"
+            }
+          ],
+          "summary": "力场模型整合构象可塑性与多价相互作用参数，通过计算效率提升实现同型/异型系统相分离行为的定量预测"
+        }
+      ]
+    },
+    "raw_responses": [],
+    "elapsed_seconds": 8.463859558105469e-05
+  },
+  {
+    "paper_id": "8a3457bdd7ad",
+    "method_name": "P1",
+    "free_text_hypotheses": [
+      "**假设：**  \n抗体的分子构象动态性（如铰链区灵活性）通过调节其与病毒表面抗原表位的三维空间匹配效率，决定中和效能的差异。具体而言，当抗体的动态构象允许其在生理环境中通过“构象搜索”缩短与病毒抗原簇的等效结合距离（<5 nm）时，可显著提升中和效率，尤其在抗原表位呈低密度或空间位阻复杂的病毒株中。这一效应可通过单分子荧光共振能量转移（smFRET）结合中和动力学模型验证：设计具有不同铰链区柔性的同源抗体变体，在模拟病毒表面抗原梯度分布的微流控芯片中，测量其结合速率与中和效能的相关性，预期发现柔性增强的抗体在异质性抗原分布下表现出更高的中和阈值。"
+    ],
+    "structured_paths": {},
+    "raw_responses": [
+      "**假设：**  \n抗体的分子构象动态性（如铰链区灵活性）通过调节其与病毒表面抗原表位的三维空间匹配效率，决定中和效能的差异。具体而言，当抗体的动态构象允许其在生理环境中通过“构象搜索”缩短与病毒抗原簇的等效结合距离（<5 nm）时，可显著提升中和效率，尤其在抗原表位呈低密度或空间位阻复杂的病毒株中。这一效应可通过单分子荧光共振能量转移（smFRET）结合中和动力学模型验证：设计具有不同铰链区柔性的同源抗体变体，在模拟病毒表面抗原梯度分布的微流控芯片中，测量其结合速率与中和效能的相关性，预期发现柔性增强的抗体在异质性抗原分布下表现出更高的中和阈值。"
+    ],
+    "elapsed_seconds": 21.476451873779297
+  },
+  {
+    "paper_id": "8a3457bdd7ad",
+    "method_name": "P2",
+    "free_text_hypotheses": [
+      "L1 Hypothesis: 抗体分子可达距离通过调控抗原表位的空间交联效率和结合几何构型，显著影响病毒中和效能。在低抗原密度条件下，具有超长分子可达距离的抗体（>15nm）可通过桥接相邻抗原表位形成空间网络，其效能差异源于抗体尺寸与抗原排列间距的动态适配性，而非单纯依赖单次结合的亲和力强度。  \nL2 Hypotheses:  \n- Q1: 基于化学动力学的反应-扩散模型，抗体的流体动力学半径与抗原间距的比值将决定双价结合的有效浓度（[Ab]eff）。当抗体尺寸（L）与抗原密度（d）满足L/d ≥ 0.7时，分子可达距离（R）可通过公式R = √(L² - d²) 进行预测，此时双价结合速率常数（k_on_bivalent）将呈现抗原密度依赖性增强，从而在低配体密度下维持中和效能。  \n- Q2: 通过表面等离子体共振（SPR）的多循环进样实验，可捕获双价抗体与抗原的非对称结合动力学特征：当抗原固定密度低于抗体分子可达距离对应的临界值时，第二个结合事件的表观解离速率（k_off_2）将比单价结合快3倍以上，且此差异可通过抗原尺寸梯度实验进行验证，从而直接证明分子可达距离对双价结合机制的调控作用。"
+    ],
+    "structured_paths": {},
+    "raw_responses": [
+      "L1 Hypothesis: 抗体分子可达距离通过调控抗原表位的空间交联效率和结合几何构型，显著影响病毒中和效能。在低抗原密度条件下，具有超长分子可达距离的抗体（>15nm）可通过桥接相邻抗原表位形成空间网络，其效能差异源于抗体尺寸与抗原排列间距的动态适配性，而非单纯依赖单次结合的亲和力强度。  \nL2 Hypotheses:  \n- Q1: 基于化学动力学的反应-扩散模型，抗体的流体动力学半径与抗原间距的比值将决定双价结合的有效浓度（[Ab]eff）。当抗体尺寸（L）与抗原密度（d）满足L/d ≥ 0.7时，分子可达距离（R）可通过公式R = √(L² - d²) 进行预测，此时双价结合速率常数（k_on_bivalent）将呈现抗原密度依赖性增强，从而在低配体密度下维持中和效能。  \n- Q2: 通过表面等离子体共振（SPR）的多循环进样实验，可捕获双价抗体与抗原的非对称结合动力学特征：当抗原固定密度低于抗体分子可达距离对应的临界值时，第二个结合事件的表观解离速率（k_off_2）将比单价结合快3倍以上，且此差异可通过抗原尺寸梯度实验进行验证，从而直接证明分子可达距离对双价结合机制的调控作用。"
+    ],
+    "elapsed_seconds": 21.578724145889282
+  },
+  {
+    "paper_id": "8a3457bdd7ad",
+    "method_name": "P3",
+    "free_text_hypotheses": [
+      "L1 Hypothesis: 分子可达距离与抗原密度通过协同作用影响病毒中和效能，其机制涉及抗体/抗原复合物的化学动力学特性（如反应速率）与生物学功能（如表位结合特异性）的耦合。具体而言，当抗体尺寸与抗原间距形成适配性构象时，可优化双价结合的分子相互作用能垒，从而增强病毒中和能力，而这一效应与单用解离常数描述的单价亲和力无关。\n\nL2 Hypotheses:\n- Q1: 抗体尺寸通过调控抗原间距的适应性范围（如原子力显微镜测量的抗原结合片段-恒定片段动态距离），与化学动力学中的有效浓度理论相关联，从而影响双价结合的分子可达距离。具体假设：当抗体尺寸/抗原间距比值处于0.7-1.3区间时，反应速率（k_on）因抗原表位空间定位优化而达到峰值。\n- Q2: 表面等离子体共振检测的结合动力学参数（如协同结合率=双价解离常数/KD_mono^2）可作为验证双价结合模型的化学-生物学交叉指标。预测：中和能力强的抗体其协同结合率与分子可达距离呈正相关（R²>0.6），且该相关性可被可溶性单价抗原竞争实验破坏。\n\nL3 Hypotheses:\n- Q1: 通过原子力显微镜测定的抗体尺寸参数（如IgG1的Fab-Fc摆动角度），结合化学动力学模拟的抗原结合有效浓度，可构建分子可达距离的预测模型（误差<5nm）。该模型在不同表位（如受体结合域表位A/B/C）中的适用性可通过SPR验证的双价结合能垒变化进行量化评估。\n- Q2: 抗原密度与分子可达距离的互作效应可通过\"中和阈值假说\"进行检验：当中和抗体浓度与抗原密度的乘积超过临界值（IC50×抗原密度≥分子可达距离^3）时，病毒中和率出现陡升。此假说整合了基础医学中的中和病原体定量分析与化学中的三维扩散-反应动力学理论。"
+    ],
+    "structured_paths": {},
+    "raw_responses": [
+      "L1 Hypothesis: 分子可达距离与抗原密度通过协同作用影响病毒中和效能，其机制涉及抗体/抗原复合物的化学动力学特性（如反应速率）与生物学功能（如表位结合特异性）的耦合。具体而言，当抗体尺寸与抗原间距形成适配性构象时，可优化双价结合的分子相互作用能垒，从而增强病毒中和能力，而这一效应与单用解离常数描述的单价亲和力无关。\n\nL2 Hypotheses:\n- Q1: 抗体尺寸通过调控抗原间距的适应性范围（如原子力显微镜测量的抗原结合片段-恒定片段动态距离），与化学动力学中的有效浓度理论相关联，从而影响双价结合的分子可达距离。具体假设：当抗体尺寸/抗原间距比值处于0.7-1.3区间时，反应速率（k_on）因抗原表位空间定位优化而达到峰值。\n- Q2: 表面等离子体共振检测的结合动力学参数（如协同结合率=双价解离常数/KD_mono^2）可作为验证双价结合模型的化学-生物学交叉指标。预测：中和能力强的抗体其协同结合率与分子可达距离呈正相关（R²>0.6），且该相关性可被可溶性单价抗原竞争实验破坏。\n\nL3 Hypotheses:\n- Q1: 通过原子力显微镜测定的抗体尺寸参数（如IgG1的Fab-Fc摆动角度），结合化学动力学模拟的抗原结合有效浓度，可构建分子可达距离的预测模型（误差<5nm）。该模型在不同表位（如受体结合域表位A/B/C）中的适用性可通过SPR验证的双价结合能垒变化进行量化评估。\n- Q2: 抗原密度与分子可达距离的互作效应可通过\"中和阈值假说\"进行检验：当中和抗体浓度与抗原密度的乘积超过临界值（IC50×抗原密度≥分子可达距离^3）时，病毒中和率出现陡升。此假说整合了基础医学中的中和病原体定量分析与化学中的三维扩散-反应动力学理论。"
+    ],
+    "elapsed_seconds": 19.93423056602478
+  },
+  {
+    "paper_id": "8a3457bdd7ad",
+    "method_name": "P4",
+    "free_text_hypotheses": [
+      "L1 Hypothesis:\n  hypothesis: Molecular reach modulates viral neutralization efficacy through a synergy of antigen density-dependent bivalent binding efficiency and antibody size-constrained spatial flexibility, creating a mechanistic bridge between nanoscale molecular interactions and population-level viral inhibition kinetics.\n  reasoning: \n    1. Antigen density (chemistry) influences reaction rates (chemistry) which determine bivalent binding opportunities \n    2. Antibody size (biology) sets physical constraints on molecular reach (biology) that interact with antigen size (biology)\n    3. The interplay between these factors creates a threshold effect where only antibodies with optimal molecular reach (22-46nm) can bridge antigen spacing variations while maintaining neutralization efficacy\n    4. This predicts that antibodies with identical monovalent affinity but different molecular reach will show differential neutralization in high-antigen-density environments (viral surfaces) vs low-density environments (soluble antigens)\n  key_concepts: [molecular reach, antigen density, antibody size, bivalent binding, viral neutralisation]\n  disciplines_bridged: [生物学, 化学]\n\nL2 Hypotheses:\n- Q1:\n    hypothesis: Antibody size contributes to molecular reach through a non-linear antigen density-dependent mechanism where larger antibodies demonstrate enhanced reach optimization in high-density antigen environments via entropy-driven conformational adaptation.\n    reasoning: \n      1. Antibody size (biology) affects conformational flexibility (chemistry) which determines spatial sampling capacity\n      2. High antigen density (chemistry) creates entropic pressure favoring extended conformations\n      3. This predicts that larger antibodies (biology) will show greater molecular reach increases with antigen density compared to smaller antibodies\n      4. Testable through AFM (biology) measurements of antibody extension under varying antigen surface densities\n    key_concepts: [antibody size, antigen density, molecular reach, conformational entropy, atomic force microscopy]\n    disciplines_bridged: [生物学, 化学]\n- Q2:\n    hypothesis: Surface plasmon resonance (chemistry) can detect bivalent binding signatures through anomalous dissociation kinetics that correlate with molecular reach, where antibodies with longer reaches exhibit slower off-rates in multi-cycle assays due to rebinding events.\n    reasoning: \n      1. SPR (chemistry) measures binding kinetics (chemistry) that reflect complex formation dynamics\n      2. Bivalent antibodies (biology) with longer molecular reach enable spatially separated rebinding events during dissociation phase\n      3. This predicts that reach-optimized antibodies will show biphasic dissociation curves in SPR with secondary rebinding components\n      4. Validation through correlation with viral neutralization data (biology) will establish SPR as a proxy for reach assessment\n    key_concepts: [surface plasmon resonance, bivalent binding, molecular reach, dissociation kinetics, viral neutralisation]\n    disciplines_bridged: [生物学, 化学]\n\nL3 Hypotheses:\n- Q1:\n    hypothesis: Integrating antibody size measurement (biology), antigen density-modulated reaction kinetics (chemistry), and SPR-derived binding parameters (chemistry) will reveal a hierarchical regulatory mechanism where molecular reach acts as a transducer converting nanoscale structural features into functional neutralization outcomes through three-stage processing: spatial sampling (physics), kinetic proofreading (chemistry), and avidity amplification (biology).\n    reasoning:\n      1. Antibody size (biology) determines initial spatial sampling capacity through molecular reach (biology)\n      2. Antigen density (chemistry) modulates reaction rates (chemistry) creating kinetic thresholds for bivalent engagement\n      3. SPR (chemistry) parameters quantify these interactions through dissociation rate modifications from rebinding effects\n      4. Predicts that therapeutic antibodies can be rationally engineered by optimizing reach for specific antigen densities to maximize neutralization (medicine)\n      5. Validation through comparative neutralization assays across engineered antibody variants with controlled reach parameters\n    key_concepts: [antibody size, antigen density, surface plasmon resonance, molecular reach, viral neutralisation]\n    disciplines_bridged: [生物学, 化学, 基础医学]"
+    ],
+    "structured_paths": {},
+    "raw_responses": [
+      "L1 Hypothesis:\n  hypothesis: Molecular reach modulates viral neutralization efficacy through a synergy of antigen density-dependent bivalent binding efficiency and antibody size-constrained spatial flexibility, creating a mechanistic bridge between nanoscale molecular interactions and population-level viral inhibition kinetics.\n  reasoning: \n    1. Antigen density (chemistry) influences reaction rates (chemistry) which determine bivalent binding opportunities \n    2. Antibody size (biology) sets physical constraints on molecular reach (biology) that interact with antigen size (biology)\n    3. The interplay between these factors creates a threshold effect where only antibodies with optimal molecular reach (22-46nm) can bridge antigen spacing variations while maintaining neutralization efficacy\n    4. This predicts that antibodies with identical monovalent affinity but different molecular reach will show differential neutralization in high-antigen-density environments (viral surfaces) vs low-density environments (soluble antigens)\n  key_concepts: [molecular reach, antigen density, antibody size, bivalent binding, viral neutralisation]\n  disciplines_bridged: [生物学, 化学]\n\nL2 Hypotheses:\n- Q1:\n    hypothesis: Antibody size contributes to molecular reach through a non-linear antigen density-dependent mechanism where larger antibodies demonstrate enhanced reach optimization in high-density antigen environments via entropy-driven conformational adaptation.\n    reasoning: \n      1. Antibody size (biology) affects conformational flexibility (chemistry) which determines spatial sampling capacity\n      2. High antigen density (chemistry) creates entropic pressure favoring extended conformations\n      3. This predicts that larger antibodies (biology) will show greater molecular reach increases with antigen density compared to smaller antibodies\n      4. Testable through AFM (biology) measurements of antibody extension under varying antigen surface densities\n    key_concepts: [antibody size, antigen density, molecular reach, conformational entropy, atomic force microscopy]\n    disciplines_bridged: [生物学, 化学]\n- Q2:\n    hypothesis: Surface plasmon resonance (chemistry) can detect bivalent binding signatures through anomalous dissociation kinetics that correlate with molecular reach, where antibodies with longer reaches exhibit slower off-rates in multi-cycle assays due to rebinding events.\n    reasoning: \n      1. SPR (chemistry) measures binding kinetics (chemistry) that reflect complex formation dynamics\n      2. Bivalent antibodies (biology) with longer molecular reach enable spatially separated rebinding events during dissociation phase\n      3. This predicts that reach-optimized antibodies will show biphasic dissociation curves in SPR with secondary rebinding components\n      4. Validation through correlation with viral neutralization data (biology) will establish SPR as a proxy for reach assessment\n    key_concepts: [surface plasmon resonance, bivalent binding, molecular reach, dissociation kinetics, viral neutralisation]\n    disciplines_bridged: [生物学, 化学]\n\nL3 Hypotheses:\n- Q1:\n    hypothesis: Integrating antibody size measurement (biology), antigen density-modulated reaction kinetics (chemistry), and SPR-derived binding parameters (chemistry) will reveal a hierarchical regulatory mechanism where molecular reach acts as a transducer converting nanoscale structural features into functional neutralization outcomes through three-stage processing: spatial sampling (physics), kinetic proofreading (chemistry), and avidity amplification (biology).\n    reasoning:\n      1. Antibody size (biology) determines initial spatial sampling capacity through molecular reach (biology)\n      2. Antigen density (chemistry) modulates reaction rates (chemistry) creating kinetic thresholds for bivalent engagement\n      3. SPR (chemistry) parameters quantify these interactions through dissociation rate modifications from rebinding effects\n      4. Predicts that therapeutic antibodies can be rationally engineered by optimizing reach for specific antigen densities to maximize neutralization (medicine)\n      5. Validation through comparative neutralization assays across engineered antibody variants with controlled reach parameters\n    key_concepts: [antibody size, antigen density, surface plasmon resonance, molecular reach, viral neutralisation]\n    disciplines_bridged: [生物学, 化学, 基础医学]"
+    ],
+    "elapsed_seconds": 40.372809171676636
+  },
+  {
+    "paper_id": "8a3457bdd7ad",
+    "method_name": "P5",
+    "free_text_hypotheses": [
+      "主学科瓶颈：分子可达距离的物理特性难以直接关联中和效能差异；补位学科：化学；预期改进：通过化学模型解析双价结合参数与抗原间距的定量关系",
+      "通过抗原密度与反应速率的化学动力学分析，化学参数的测定可支撑化学模型构建，从而揭示抗体尺寸对分子可达距离的贡献机制",
+      "表面等离子体共振测定的结合动力学参数通过映射化学参数，实现对双价结合模型分子相互作用机制的验证",
+      "基于抗体尺寸测量确定分子可达距离，通过双价结合模型参数整合，最终验证其对病毒中和作用的促进效应"
+    ],
+    "structured_paths": {
+      "L1": [
+        {
+          "steps": [
+            {
+              "step": 1,
+              "head": "分子可达距离",
+              "relation": "解释差异",
+              "tail": "病毒中和作用",
+              "claim": "分子可达距离通过调控抗原间距与抗体尺寸的适配性，显著影响病毒中和效能，需结合化学模型解析其双价结合参数"
+            },
+            {
+              "step": 2,
+              "head": "病毒中和作用",
+              "relation": "关联机制",
+              "tail": "双价结合",
+              "claim": "双价结合通过分子可达距离与抗原密度的协同作用影响中和效能，需借助化学动力学验证反应速率的限速效应"
+            },
+            {
+              "step": 3,
+              "head": "双价结合",
+              "relation": "依赖技术",
+              "tail": "表面等离子体共振",
+              "claim": "表面等离子体共振测定的结合动力学参数可量化分子可达距离对病毒中和能力的贡献，需基础医学提供病原体中和验证体系"
+            }
+          ],
+          "summary": "主学科瓶颈：分子可达距离的物理特性难以直接关联中和效能差异；补位学科：化学；预期改进：通过化学模型解析双价结合参数与抗原间距的定量关系"
+        }
+      ],
+      "L2": [
+        {
+          "steps": [
+            {
+              "step": 1,
+              "head": "抗原密度",
+              "relation": "影响",
+              "tail": "反应速率",
+              "claim": "抗原密度通过影响反应速率调控化学动力学过程"
+            },
+            {
+              "step": 2,
+              "head": "反应速率",
+              "relation": "属于",
+              "tail": "化学参数",
+              "claim": "反应速率作为化学参数的重要组成部分"
+            },
+            {
+              "step": 3,
+              "head": "化学参数",
+              "relation": "支撑",
+              "tail": "化学模型",
+              "claim": "化学参数为双价结合模型的建立提供量化基础"
+            }
+          ],
+          "summary": "通过抗原密度与反应速率的化学动力学分析，化学参数的测定可支撑化学模型构建，从而揭示抗体尺寸对分子可达距离的贡献机制"
+        },
+        {
+          "steps": [
+            {
+              "step": 1,
+              "head": "表面等离子体共振",
+              "relation": "影响",
+              "tail": "结合动力学",
+              "claim": "表面等离子体共振技术精确测定结合动力学特征"
+            },
+            {
+              "step": 2,
+              "head": "结合动力学",
+              "relation": "映射",
+              "tail": "化学参数",
+              "claim": "结合动力学参数与化学模型的核心变量形成对应关系"
+            },
+            {
+              "step": 3,
+              "head": "化学参数",
+              "relation": "验证",
+              "tail": "化学模型",
+              "claim": "化学参数验证双价结合模型的分子相互作用机制"
+            }
+          ],
+          "summary": "表面等离子体共振测定的结合动力学参数通过映射化学参数，实现对双价结合模型分子相互作用机制的验证"
+        }
+      ],
+      "L3": [
+        {
+          "steps": [
+            {
+              "step": 1,
+              "head": "抗体尺寸",
+              "relation": "影响",
+              "tail": "分子可达距离",
+              "claim": "抗体尺寸是分子可达距离的关键物理基础"
+            },
+            {
+              "step": 2,
+              "head": "分子可达距离",
+              "relation": "导致",
+              "tail": "双价结合",
+              "claim": "分子可达距离作为双价结合模型的核心参数"
+            },
+            {
+              "step": 3,
+              "head": "双价结合",
+              "relation": "促进",
+              "tail": "病毒中和作用",
+              "claim": "双价结合增强抗体病毒中和效能"
+            }
+          ],
+          "summary": "基于抗体尺寸测量确定分子可达距离，通过双价结合模型参数整合，最终验证其对病毒中和作用的促进效应"
+        }
+      ]
+    },
+    "raw_responses": [],
+    "elapsed_seconds": 5.1975250244140625e-05
+  },
+  {
+    "paper_id": "46b6635cfb54",
+    "method_name": "P1",
+    "free_text_hypotheses": [
+      "**Hypothesis:** 周期性电位脉冲诱导的催化剂表面晶格动态应变可通过非平衡态氧空位重构打破析氧反应（OER）中间体的线性标度关系。具体而言，在RuO₂基催化剂上施加高频方波电位（1-100 Hz, ±0.5 V vs RHE），其表面Ti掺杂剂将触发可逆的Jahn-Teller晶格畸变，导致配位不饱和Ru⁴+位点的动态暴露与钝化。这种时间分辨的结构振荡将产生非稳态吸附位点，使*OH和*O中间体的结合能在反应路径上呈现相位差响应——即当晶格压缩时增强*OH脱质子化动力学（降低过电位0.2 eV），而晶格扩张时抑制*O的过强吸附（降低能垒0.3 eV），从而突破传统线性关系限制，实现质量活性提升200%以上。该假设可通过原位X射线吸收谱（XAS）、时间分辨表面增强拉曼（SERS）和微分电化学质谱（DEMS）进行验证。"
+    ],
+    "structured_paths": {},
+    "raw_responses": [
+      "**Hypothesis:** 周期性电位脉冲诱导的催化剂表面晶格动态应变可通过非平衡态氧空位重构打破析氧反应（OER）中间体的线性标度关系。具体而言，在RuO₂基催化剂上施加高频方波电位（1-100 Hz, ±0.5 V vs RHE），其表面Ti掺杂剂将触发可逆的Jahn-Teller晶格畸变，导致配位不饱和Ru⁴+位点的动态暴露与钝化。这种时间分辨的结构振荡将产生非稳态吸附位点，使*OH和*O中间体的结合能在反应路径上呈现相位差响应——即当晶格压缩时增强*OH脱质子化动力学（降低过电位0.2 eV），而晶格扩张时抑制*O的过强吸附（降低能垒0.3 eV），从而突破传统线性关系限制，实现质量活性提升200%以上。该假设可通过原位X射线吸收谱（XAS）、时间分辨表面增强拉曼（SERS）和微分电化学质谱（DEMS）进行验证。"
+    ],
+    "elapsed_seconds": 16.3057119846344
+  },
+  {
+    "paper_id": "46b6635cfb54",
+    "method_name": "P2",
+    "free_text_hypotheses": [
+      "L1 Hypothesis:  \n通过多尺度动态结构调控（如分子内质子转移驱动的活性位点配位重构与异质界面应力响应），催化剂可实现电子结构的实时自适应优化，破坏传统线性标度关系中反应中间体吸附能的刚性关联。这种动态电子耦合机制将重构催化活性位点的空间-电子协同网络，使O-H键解离能垒与O-O键形成自由能增量实现非对称解耦，从而突破热力学平衡限制并提升多步骤析氧反应的整体动力学效率。\n\nL2 Hypotheses:  \n- Q1: 原位动态结构调控与多参考态理论计算的耦合将揭示非平衡态催化过程中活性位点的瞬态配位重构规律。通过时间分辨同步辐射X射线吸收谱与机器学习分子动力学模拟，可量化Ni中心配位数振荡与Fe活性位点d带中心位移的时空关联，证明动态质子-电子耦合触发的非线性电子结构演化是打破中间体吸附能线性关联的关键机制。  \n- Q2: 异质结构催化剂中Ni-Fe双金属位点的空间分离与纳米通道限域效应将形成梯度质子传递网络。该协同体系通过界面应力调控Fe活性中心的晶格畸变度，同时利用纳米通道壁的定向氢键作用稳定反应中间体，使O-H解离产生的质子优先通过纳米限域通道实现高速转移，从而解耦O-O键形成步骤与前序质子-电子转移步骤的自由能关联。"
+    ],
+    "structured_paths": {},
+    "raw_responses": [
+      "L1 Hypothesis:  \n通过多尺度动态结构调控（如分子内质子转移驱动的活性位点配位重构与异质界面应力响应），催化剂可实现电子结构的实时自适应优化，破坏传统线性标度关系中反应中间体吸附能的刚性关联。这种动态电子耦合机制将重构催化活性位点的空间-电子协同网络，使O-H键解离能垒与O-O键形成自由能增量实现非对称解耦，从而突破热力学平衡限制并提升多步骤析氧反应的整体动力学效率。\n\nL2 Hypotheses:  \n- Q1: 原位动态结构调控与多参考态理论计算的耦合将揭示非平衡态催化过程中活性位点的瞬态配位重构规律。通过时间分辨同步辐射X射线吸收谱与机器学习分子动力学模拟，可量化Ni中心配位数振荡与Fe活性位点d带中心位移的时空关联，证明动态质子-电子耦合触发的非线性电子结构演化是打破中间体吸附能线性关联的关键机制。  \n- Q2: 异质结构催化剂中Ni-Fe双金属位点的空间分离与纳米通道限域效应将形成梯度质子传递网络。该协同体系通过界面应力调控Fe活性中心的晶格畸变度，同时利用纳米通道壁的定向氢键作用稳定反应中间体，使O-H解离产生的质子优先通过纳米限域通道实现高速转移，从而解耦O-O键形成步骤与前序质子-电子转移步骤的自由能关联。"
+    ],
+    "elapsed_seconds": 20.611391067504883
+  },
+  {
+    "paper_id": "46b6635cfb54",
+    "method_name": "P3",
+    "free_text_hypotheses": [
+      "L1 Hypothesis: \n通过化学学科的动态结构调控与材料科学的异质结构催化剂协同作用，可在析氧反应中实现活性位点的自适应演化。镍-铁分子催化剂的原位电化学活化引发金属-载体配位重构，结合纳米通道的限域效应调控分子内质子转移速率，从而打破线性标度关系中O-H键解离与O-O键形成的能级耦合，使双活性位点自由能变化呈现非对称响应。这种跨尺度设计策略可通过同步优化化学键活化能垒与电荷传输动力学，实现催化效率的突破性提升。\n\nL2 Hypotheses:\n- Q1: 理论计算揭示的动态双位点合作机制（化学）与电动力学研究观测的吸附物演化机制（化学）可通过异质结构催化剂（材料科学）的界面位点工程实现定量关联。具体而言，密度泛函计算预测的Fe活性中心d轨道分裂能与实验测得的纳米通道限域效应下的质子受体密度呈负相关，这种电子结构-几何构型的耦合效应可通过原位X射线吸收谱验证。\n- Q2: 异质结构催化剂（材料科学）的金属-载体配位（材料科学）与纳米通道（材料科学）的协同作用可通过调控质子转移路径（化学）改变线性标度关系的破缺方向。当纳米通道的孔径接近过渡态尺寸时，其限域效应将选择性稳定O-O键形成中间体（化学），同时异质界面的梯度电荷分布（材料科学）通过长程效应调控Ni位点的配体效应（化学），从而实现双反应坐标的独立优化。\n\nL3 Hypotheses:\n- Q1: 动态结构调控（化学）诱导的Ni-Fe分子催化剂配位演化（化学）与异质结构催化剂（材料科学）的界面位点（材料科学）存在电子密度的定向转移机制。当Fe活性中心（化学）经历羟基化过程时，其d电子通过金属-载体配位键（材料科学）向氧化物载体转移的速率决定了Ni位点（化学）的氧化态变化斜率，这种动态电荷振荡可通过时间分辨X射线光电子能谱与微动力学模型的联合分析进行量化。\n- Q2: 理论计算（化学）预测的分子内质子转移（化学）驱动的自由能变化（化学）与纳米通道（材料科学）的传质效应可通过构建梯度异质界面（材料科学）实现协同强化。在具有梯度孔径分布的双金属催化剂中，小孔区（<5nm）主导O-H解离步骤的质子转移（化学），而大孔区（>20nm）通过增强OH-扩散（材料科学）促进O-O耦合，这种空间分区催化效应可由微流控反应器内的空间分辨原位表征技术验证。"
+    ],
+    "structured_paths": {},
+    "raw_responses": [
+      "L1 Hypothesis: \n通过化学学科的动态结构调控与材料科学的异质结构催化剂协同作用，可在析氧反应中实现活性位点的自适应演化。镍-铁分子催化剂的原位电化学活化引发金属-载体配位重构，结合纳米通道的限域效应调控分子内质子转移速率，从而打破线性标度关系中O-H键解离与O-O键形成的能级耦合，使双活性位点自由能变化呈现非对称响应。这种跨尺度设计策略可通过同步优化化学键活化能垒与电荷传输动力学，实现催化效率的突破性提升。\n\nL2 Hypotheses:\n- Q1: 理论计算揭示的动态双位点合作机制（化学）与电动力学研究观测的吸附物演化机制（化学）可通过异质结构催化剂（材料科学）的界面位点工程实现定量关联。具体而言，密度泛函计算预测的Fe活性中心d轨道分裂能与实验测得的纳米通道限域效应下的质子受体密度呈负相关，这种电子结构-几何构型的耦合效应可通过原位X射线吸收谱验证。\n- Q2: 异质结构催化剂（材料科学）的金属-载体配位（材料科学）与纳米通道（材料科学）的协同作用可通过调控质子转移路径（化学）改变线性标度关系的破缺方向。当纳米通道的孔径接近过渡态尺寸时，其限域效应将选择性稳定O-O键形成中间体（化学），同时异质界面的梯度电荷分布（材料科学）通过长程效应调控Ni位点的配体效应（化学），从而实现双反应坐标的独立优化。\n\nL3 Hypotheses:\n- Q1: 动态结构调控（化学）诱导的Ni-Fe分子催化剂配位演化（化学）与异质结构催化剂（材料科学）的界面位点（材料科学）存在电子密度的定向转移机制。当Fe活性中心（化学）经历羟基化过程时，其d电子通过金属-载体配位键（材料科学）向氧化物载体转移的速率决定了Ni位点（化学）的氧化态变化斜率，这种动态电荷振荡可通过时间分辨X射线光电子能谱与微动力学模型的联合分析进行量化。\n- Q2: 理论计算（化学）预测的分子内质子转移（化学）驱动的自由能变化（化学）与纳米通道（材料科学）的传质效应可通过构建梯度异质界面（材料科学）实现协同强化。在具有梯度孔径分布的双金属催化剂中，小孔区（<5nm）主导O-H解离步骤的质子转移（化学），而大孔区（>20nm）通过增强OH-扩散（材料科学）促进O-O耦合，这种空间分区催化效应可由微流控反应器内的空间分辨原位表征技术验证。"
+    ],
+    "elapsed_seconds": 25.299113750457764
+  },
+  {
+    "paper_id": "46b6635cfb54",
+    "method_name": "P4",
+    "free_text_hypotheses": [
+      "L1 Hypothesis:  \nhypothesis: 动态结构调控与异质结构催化剂的界面工程协同作用可通过时空耦合的电子-质子传递机制打破OER线性标度关系。  \nreasoning:  \n1. 前提：动态结构调控（化学）通过分子内质子转移改变金属活性中心电子结构（已知关系3、4），而异质结构催化剂（材料科学）的界面位点具有独特的电子分布（材料科学概念）  \n2. 机制：在异质界面引入动态响应单元（如Ni-Fe₂分子催化剂与纳米通道载体耦合），可形成空间受限的质子转移通道（整合关系6与关系7），使吸附中间体的电子占据态与界面电荷分布产生动态协同振荡  \n3. 预测：通过原位表征（如电化学SERS）可观察到异质界面处Fe-Ni氧化态周期性振荡与OER中间体吸附能的非线性响应  \nkey_concepts: 动态结构调控, 异质结构催化剂, 纳米通道, 界面位点, 分子内质子转移, 电子-质子耦合传递  \ndisciplines_bridged: 化学, 材料科学  \n\nL2 Hypotheses:  \n- Q1:  \n    hypothesis: 基于机器学习的理论计算框架可预测动态结构调控下异质催化剂界面的非平衡态电子分布，揭示标度关系破缺的微观路径  \n    reasoning:  \n    1. 前提：理论计算（化学）已揭示动态调控对Fe活性中心电子结构的调制作用（关系4），而异质结构催化剂（材料科学）存在界面电荷重分布  \n    2. 机制：开发融合分子动力学与密度泛函理论的机器学习模型，模拟动态Ni-Fe₂单元与异质界面（如金属-氧化物载体）间的电荷转移振荡  \n    3. 预测：计算预测的界面偶极矩周期性变化将导致OER四电子步骤的自由能面出现相位差，突破传统标度关系约束  \n    key_concepts: 理论计算, 异质结构催化剂, 动态结构调控, 非平衡态电子分布, 机器学习分子动力学  \n    disciplines_bridged: 化学, 材料科学  \n  \n- Q2:  \n    hypothesis: 纳米通道限域效应与异质结构催化剂的协同可通过\"质子海绵\"机制增强动态结构调控效率，实现OER中间体吸附能的独立调控  \n    reasoning:  \n    1. 前提：纳米通道（材料科学）可限域中间体（关系6），而动态结构调控（化学）依赖质子转移驱动（关系3）  \n    2. 机制：在异质催化剂界面构建梯度纳米通道，形成局部高质子浓度微环境（\"质子海绵\"效应），选择性加速特定OER中间体的质子化动力学  \n    3. 预测：具有梯度孔径分布的Ni-Fe₂@纳米通道复合催化剂将表现出OER过电位与中间体吸附能偏离传统线性关系的\"双拐点\"曲线  \n    key_concepts: 纳米通道, 异质结构催化剂, 动态结构调控, 质子海绵机制, 吸附物演化机制  \n    disciplines_bridged: 化学, 材料科学  \n\nL3 Hypotheses:  \n- Q1:  \n    hypothesis: 通过金属-载体动态配位构建\"分子弹簧\"效应，可实现OER反应路径中电子转移与晶格应变的能量耦合调控  \n    reasoning:  \n    1. 前提：金属-载体配位（材料科学）影响催化活性（关系7），动态结构调控（化学）改变电子结构（关系4）  \n    2. 机制：设计具有柔性配体的Ni-Fe₂分子催化剂与弹性纳米载体耦合，在OER循环中通过吸附物诱导的载体晶格应变反向调制金属-配体键长  \n    3. 预测：原位XAFS将观测到Fe-Ni键长随电位呈非对称振荡，对应O-O键形成能垒降低而O-H解离能垒升高，打破传统标度关系斜率  \n    key_concepts: 金属-载体配位, 动态结构调控, 分子弹簧效应, 电子-晶格耦合, 原位XAFS  \n    disciplines_bridged: 化学, 材料科学"
+    ],
+    "structured_paths": {},
+    "raw_responses": [
+      "L1 Hypothesis:  \nhypothesis: 动态结构调控与异质结构催化剂的界面工程协同作用可通过时空耦合的电子-质子传递机制打破OER线性标度关系。  \nreasoning:  \n1. 前提：动态结构调控（化学）通过分子内质子转移改变金属活性中心电子结构（已知关系3、4），而异质结构催化剂（材料科学）的界面位点具有独特的电子分布（材料科学概念）  \n2. 机制：在异质界面引入动态响应单元（如Ni-Fe₂分子催化剂与纳米通道载体耦合），可形成空间受限的质子转移通道（整合关系6与关系7），使吸附中间体的电子占据态与界面电荷分布产生动态协同振荡  \n3. 预测：通过原位表征（如电化学SERS）可观察到异质界面处Fe-Ni氧化态周期性振荡与OER中间体吸附能的非线性响应  \nkey_concepts: 动态结构调控, 异质结构催化剂, 纳米通道, 界面位点, 分子内质子转移, 电子-质子耦合传递  \ndisciplines_bridged: 化学, 材料科学  \n\nL2 Hypotheses:  \n- Q1:  \n    hypothesis: 基于机器学习的理论计算框架可预测动态结构调控下异质催化剂界面的非平衡态电子分布，揭示标度关系破缺的微观路径  \n    reasoning:  \n    1. 前提：理论计算（化学）已揭示动态调控对Fe活性中心电子结构的调制作用（关系4），而异质结构催化剂（材料科学）存在界面电荷重分布  \n    2. 机制：开发融合分子动力学与密度泛函理论的机器学习模型，模拟动态Ni-Fe₂单元与异质界面（如金属-氧化物载体）间的电荷转移振荡  \n    3. 预测：计算预测的界面偶极矩周期性变化将导致OER四电子步骤的自由能面出现相位差，突破传统标度关系约束  \n    key_concepts: 理论计算, 异质结构催化剂, 动态结构调控, 非平衡态电子分布, 机器学习分子动力学  \n    disciplines_bridged: 化学, 材料科学  \n  \n- Q2:  \n    hypothesis: 纳米通道限域效应与异质结构催化剂的协同可通过\"质子海绵\"机制增强动态结构调控效率，实现OER中间体吸附能的独立调控  \n    reasoning:  \n    1. 前提：纳米通道（材料科学）可限域中间体（关系6），而动态结构调控（化学）依赖质子转移驱动（关系3）  \n    2. 机制：在异质催化剂界面构建梯度纳米通道，形成局部高质子浓度微环境（\"质子海绵\"效应），选择性加速特定OER中间体的质子化动力学  \n    3. 预测：具有梯度孔径分布的Ni-Fe₂@纳米通道复合催化剂将表现出OER过电位与中间体吸附能偏离传统线性关系的\"双拐点\"曲线  \n    key_concepts: 纳米通道, 异质结构催化剂, 动态结构调控, 质子海绵机制, 吸附物演化机制  \n    disciplines_bridged: 化学, 材料科学  \n\nL3 Hypotheses:  \n- Q1:  \n    hypothesis: 通过金属-载体动态配位构建\"分子弹簧\"效应，可实现OER反应路径中电子转移与晶格应变的能量耦合调控  \n    reasoning:  \n    1. 前提：金属-载体配位（材料科学）影响催化活性（关系7），动态结构调控（化学）改变电子结构（关系4）  \n    2. 机制：设计具有柔性配体的Ni-Fe₂分子催化剂与弹性纳米载体耦合，在OER循环中通过吸附物诱导的载体晶格应变反向调制金属-配体键长  \n    3. 预测：原位XAFS将观测到Fe-Ni键长随电位呈非对称振荡，对应O-O键形成能垒降低而O-H解离能垒升高，打破传统标度关系斜率  \n    key_concepts: 金属-载体配位, 动态结构调控, 分子弹簧效应, 电子-晶格耦合, 原位XAFS  \n    disciplines_bridged: 化学, 材料科学"
+    ],
+    "elapsed_seconds": 27.874154806137085
+  },
+  {
+    "paper_id": "46b6635cfb54",
+    "method_name": "P5",
+    "free_text_hypotheses": [
+      "化学学科的动态结构调控瓶颈需材料科学的异质结构催化剂设计补位，预期通过跨学科整合显著提升电催化活性",
+      "质子转移驱动的动态调控机制需材料科学纳米通道结构补位，预期通过限域效应与配位作用协同优化催化性能",
+      "通过理论计算解析动态结构调控机制，揭示分子内质子转移驱动的活性位点重构如何突破线性标度关系",
+      "异质结构催化剂构建的界面位点与纳米通道形成协同限域环境，通过中间体稳定性调控实现标度关系突破",
+      "通过动态结构调控破坏线性标度关系，结合异质结构催化剂设计，并利用原位电化学活化实现理论计算与实验验证的协同突破"
+    ],
+    "structured_paths": {
+      "L1": [
+        {
+          "steps": [
+            {
+              "step": 1,
+              "head": "动态结构调控",
+              "relation": "影响",
+              "tail": "线性标度关系",
+              "claim": "化学学科通过动态结构调控直接破坏析氧反应中的线性标度关系"
+            },
+            {
+              "step": 2,
+              "head": "线性标度关系",
+              "relation": "导致",
+              "tail": "异质结构催化剂",
+              "claim": "材料科学的异质结构催化剂设计可协同突破线性标度关系限制"
+            },
+            {
+              "step": 3,
+              "head": "异质结构催化剂",
+              "relation": "促进",
+              "tail": "高性能析氧反应电催化剂",
+              "claim": "跨学科整合动态结构调控与异质结构设计可显著提升电催化剂本征活性"
+            }
+          ],
+          "summary": "化学学科的动态结构调控瓶颈需材料科学的异质结构催化剂设计补位，预期通过跨学科整合显著提升电催化活性"
+        },
+        {
+          "steps": [
+            {
+              "step": 1,
+              "head": "动态结构调控",
+              "relation": "影响",
+              "tail": "分子内质子转移",
+              "claim": "化学机制通过分子内质子转移驱动活性位点动态演变"
+            },
+            {
+              "step": 2,
+              "head": "分子内质子转移",
+              "relation": "导致",
+              "tail": "纳米通道",
+              "claim": "材料科学的纳米通道结构可限制中间体扩散以优化反应路径"
+            },
+            {
+              "step": 3,
+              "head": "纳米通道",
+              "relation": "促进",
+              "tail": "金属-载体配位",
+              "claim": "跨学科融合动态调控机制与金属-载体配位作用可实现催化性能协同提升"
+            }
+          ],
+          "summary": "质子转移驱动的动态调控机制需材料科学纳米通道结构补位，预期通过限域效应与配位作用协同优化催化性能"
+        }
+      ],
+      "L2": [
+        {
+          "steps": [
+            {
+              "step": 1,
+              "head": "理论计算",
+              "relation": "影响",
+              "tail": "动态结构调控",
+              "claim": "理论计算揭示动态结构调控的机制"
+            },
+            {
+              "step": 2,
+              "head": "动态结构调控",
+              "relation": "导致",
+              "tail": "分子内质子转移",
+              "claim": "动态结构调控由分子内质子转移驱动"
+            },
+            {
+              "step": 3,
+              "head": "分子内质子转移",
+              "relation": "促进",
+              "tail": "线性标度关系",
+              "claim": "分子内质子转移打破线性标度关系"
+            }
+          ],
+          "summary": "通过理论计算解析动态结构调控机制，揭示分子内质子转移驱动的活性位点重构如何突破线性标度关系"
+        },
+        {
+          "steps": [
+            {
+              "step": 1,
+              "head": "异质结构催化剂",
+              "relation": "影响",
+              "tail": "界面位点",
+              "claim": "异质结构催化剂构建多功能界面位点"
+            },
+            {
+              "step": 2,
+              "head": "界面位点",
+              "relation": "导致",
+              "tail": "纳米通道",
+              "claim": "界面位点与纳米通道协同限中间体"
+            },
+            {
+              "step": 3,
+              "head": "纳米通道",
+              "relation": "促进",
+              "tail": "线性标度关系",
+              "claim": "纳米通道通过限中间体打破线性标度关系"
+            }
+          ],
+          "summary": "异质结构催化剂构建的界面位点与纳米通道形成协同限域环境，通过中间体稳定性调控实现标度关系突破"
+        }
+      ],
+      "L3": [
+        {
+          "steps": [
+            {
+              "step": 1,
+              "head": "动态结构调控",
+              "relation": "影响",
+              "tail": "线性标度关系",
+              "claim": "动态结构调控 线性标度关系"
+            },
+            {
+              "step": 2,
+              "head": "线性标度关系",
+              "relation": "导致",
+              "tail": "异质结构催化剂",
+              "claim": "线性标度关系 异质结构催化剂"
+            },
+            {
+              "step": 3,
+              "head": "异质结构催化剂",
+              "relation": "促进",
+              "tail": "原位电化学活化",
+              "claim": "异质结构催化剂 原位电化学活化"
+            }
+          ],
+          "summary": "通过动态结构调控破坏线性标度关系，结合异质结构催化剂设计，并利用原位电化学活化实现理论计算与实验验证的协同突破"
+        }
+      ]
+    },
+    "raw_responses": [],
+    "elapsed_seconds": 6.318092346191406e-05
+  },
+  {
+    "paper_id": "d051d6c5e192",
+    "method_name": "P1",
+    "free_text_hypotheses": [
+      "Hypothesis: 双歧杆菌来源的细胞外囊泡（Bifidobacterium-derived extracellular vesicles, BEVs）通过递送特定的环状RNA（circRNA）靶向肺腺癌细胞中的YAP/TAZ信号轴，诱导肿瘤微环境中PD-L1+成纤维细胞向MHC II+抗原呈递细胞转化，同时通过BEVs表面的鞘磷脂类似物激活肺驻留γδ T细胞的STING-TFEB自噬通路，从而增强PD-1/PD-L1抑制剂对KrasG12D突变型肺癌的治疗效果。该假设可通过构建BEVs circRNA缺失突变体、YAP磷酸化阻断小鼠模型以及γδ T细胞STING特异性敲除肺癌类器官共培养体系进行验证。"
+    ],
+    "structured_paths": {},
+    "raw_responses": [
+      "Hypothesis: 双歧杆菌来源的细胞外囊泡（Bifidobacterium-derived extracellular vesicles, BEVs）通过递送特定的环状RNA（circRNA）靶向肺腺癌细胞中的YAP/TAZ信号轴，诱导肿瘤微环境中PD-L1+成纤维细胞向MHC II+抗原呈递细胞转化，同时通过BEVs表面的鞘磷脂类似物激活肺驻留γδ T细胞的STING-TFEB自噬通路，从而增强PD-1/PD-L1抑制剂对KrasG12D突变型肺癌的治疗效果。该假设可通过构建BEVs circRNA缺失突变体、YAP磷酸化阻断小鼠模型以及γδ T细胞STING特异性敲除肺癌类器官共培养体系进行验证。"
+    ],
+    "elapsed_seconds": 20.48227596282959
+  },
+  {
+    "paper_id": "d051d6c5e192",
+    "method_name": "P2",
+    "free_text_hypotheses": [
+      "L1 Hypothesis:  \nBifidobacterium-derived extracellular vesicles (Bif.BEVs) enhance anti-PD-1 immunotherapy efficacy in NSCLC by modulating tumor microenvironment through systemic immune activation and direct tumor cell signaling. These vesicles, upon oral administration, translocate from the gut to the tumor site, where they induce PD-L1 expression via TLR4-NF-κB signaling in lung cancer cells while simultaneously promoting CD8<sup>+</sup> T cell infiltration. This dual mechanism reprograms the immunosuppressive tumor microenvironment into an inflamed state, synergizing with checkpoint blockade to overcome resistance.\n\nL2 Hypotheses:  \n- Q1: **TLR4-NF-κB通路介导的PD-L1表达与CD8<sup>+</sup> T细胞浸润的协同调控**  \nBif.BEVs activate TLR4 on lung cancer cells, triggering NF-κB nuclear translocation and PD-L1 transcriptional upregulation. However, this PD-L1 induction is counterbalanced by Bif.BEVs-induced secretion of CXCL9/10 chemokines via NF-κB-dependent pathways, which recruit CD8<sup>+</sup> T cells to the tumor. The vesicles may also modulate tumor antigen presentation or reduce immunosuppressive myeloid cells, creating a permissive environment where PD-L1 upregulation does not impede but instead synergizes with anti-PD-1 therapy through enhanced T cell priming.\n\n- Q2: **口服Bif.BEVs通过肠-肺轴重塑肿瘤微环境代谢与免疫景观**  \nOral gavage of Bif.BEVs alters gut microbiota composition and bile acid metabolism, increasing systemic levels of secondary bile acids (e.g., deoxycholic acid) that activate intestinal type 3 innate lymphoid cells (ILC3s). These ILC3s produce IL-22, which enhances intestinal barrier integrity while promoting hepatic production of retinoic acid. Retinoic acid and bile acid metabolites synergize to drive CCR9<sup>+</sup> CD8<sup>+</sup> T cell trafficking to lung tumors via CCL25-CCR9 axis. Additionally, Bif.BEVs directly target tumor-associated macrophages to secrete IL-12, shifting the tumor microenvironment toward Th1 polarization and overcoming PD-1/PD-L1-mediated exhaustion."
+    ],
+    "structured_paths": {},
+    "raw_responses": [
+      "L1 Hypothesis:  \nBifidobacterium-derived extracellular vesicles (Bif.BEVs) enhance anti-PD-1 immunotherapy efficacy in NSCLC by modulating tumor microenvironment through systemic immune activation and direct tumor cell signaling. These vesicles, upon oral administration, translocate from the gut to the tumor site, where they induce PD-L1 expression via TLR4-NF-κB signaling in lung cancer cells while simultaneously promoting CD8<sup>+</sup> T cell infiltration. This dual mechanism reprograms the immunosuppressive tumor microenvironment into an inflamed state, synergizing with checkpoint blockade to overcome resistance.\n\nL2 Hypotheses:  \n- Q1: **TLR4-NF-κB通路介导的PD-L1表达与CD8<sup>+</sup> T细胞浸润的协同调控**  \nBif.BEVs activate TLR4 on lung cancer cells, triggering NF-κB nuclear translocation and PD-L1 transcriptional upregulation. However, this PD-L1 induction is counterbalanced by Bif.BEVs-induced secretion of CXCL9/10 chemokines via NF-κB-dependent pathways, which recruit CD8<sup>+</sup> T cells to the tumor. The vesicles may also modulate tumor antigen presentation or reduce immunosuppressive myeloid cells, creating a permissive environment where PD-L1 upregulation does not impede but instead synergizes with anti-PD-1 therapy through enhanced T cell priming.\n\n- Q2: **口服Bif.BEVs通过肠-肺轴重塑肿瘤微环境代谢与免疫景观**  \nOral gavage of Bif.BEVs alters gut microbiota composition and bile acid metabolism, increasing systemic levels of secondary bile acids (e.g., deoxycholic acid) that activate intestinal type 3 innate lymphoid cells (ILC3s). These ILC3s produce IL-22, which enhances intestinal barrier integrity while promoting hepatic production of retinoic acid. Retinoic acid and bile acid metabolites synergize to drive CCR9<sup>+</sup> CD8<sup>+</sup> T cell trafficking to lung tumors via CCL25-CCR9 axis. Additionally, Bif.BEVs directly target tumor-associated macrophages to secrete IL-12, shifting the tumor microenvironment toward Th1 polarization and overcoming PD-1/PD-L1-mediated exhaustion."
+    ],
+    "elapsed_seconds": 31.55286192893982
+  },
+  {
+    "paper_id": "d051d6c5e192",
+    "method_name": "P3",
+    "free_text_hypotheses": [
+      "L1 Hypothesis:  \n双歧杆菌衍生的细胞外囊泡通过激活TLR4-NF-κB信号通路上调非小细胞肺癌细胞的PD-L1表达，并通过调控肠道菌群代谢产物（如短链脂肪酸）增强抗PD-1免疫治疗的效果，同时改变肿瘤免疫微环境中肿瘤浸润性CD8<sup>+</sup> T细胞的数量和功能，从而改善免疫检查点抑制剂的临床响应率。  \n\nL2 Hypotheses:  \n- Q1: **双歧杆菌囊泡通过TLR4-NF-κB通路诱导PD-L1表达，并促进CD8<sup>+</sup> T细胞浸润**  \nBif.BEVs通过动力蛋白依赖性内吞作用进入肺癌细胞后，激活TLR4-NF-κB通路，导致PD-L1表达上调，进而通过免疫检查点抑制剂阻断PD-1/PD-L1相互作用，增强CD8<sup>+</sup> T细胞的肿瘤浸润能力；此过程可能与临床观察到的免疫相关不良事件（如炎症反应）相关，可通过TLR4拮抗剂或NF-κB抑制剂验证通路特异性。  \n\n- Q2: **口服灌胃双歧杆菌囊泡重塑肺癌肿瘤微环境的代谢-免疫轴**  \n口服Bif.BEVs通过肠-肺轴调控肠道菌群代谢产物（如短链脂肪酸）的系统性分布，改变肿瘤微环境的代谢谱，进而通过短链脂肪酸介导的表观遗传调控（如组蛋白去乙酰化酶抑制）激活抗癌免疫应答，并抑制致癌通路（如PI3K/AKT）活性，最终提高抗PD-1治疗的疗效。  \n\nL3 Hypotheses:  \n- Q1: **肠道菌群代谢产物（短链脂肪酸）与抗PD-1协同调控肿瘤微环境中的促炎/抑炎细胞因子平衡**  \nBif.BEVs来源的短链脂肪酸通过抑制组蛋白去乙酰化酶（HDAC）上调肺肿瘤细胞中IL-12等促炎细胞因子的表达，同时降低Treg细胞分化相关因子（如TGF-β）的分泌，从而增强CD8<sup>+</sup> T细胞活性；此机制可通过类器官与小鼠模型中细胞因子阻断实验验证。  \n\n- Q2: **双歧杆菌囊泡通过类器官-小鼠模型揭示免疫治疗耐药性的逆转效应**  \n患者来源的肺癌类器官与同基因小鼠模型联用可揭示：Bif.BEVs通过TLR4-NF-κB通路恢复PD-L1高表达并激活IFN-γ信号，同时抑制耐药相关致癌通路（如Wnt/β-catenin），从而克服抗PD-1耐药性；此效应可通过类器官中基因编辑（如TLR4敲除）和体内肿瘤生长抑制实验验证。"
+    ],
+    "structured_paths": {},
+    "raw_responses": [
+      "L1 Hypothesis:  \n双歧杆菌衍生的细胞外囊泡通过激活TLR4-NF-κB信号通路上调非小细胞肺癌细胞的PD-L1表达，并通过调控肠道菌群代谢产物（如短链脂肪酸）增强抗PD-1免疫治疗的效果，同时改变肿瘤免疫微环境中肿瘤浸润性CD8<sup>+</sup> T细胞的数量和功能，从而改善免疫检查点抑制剂的临床响应率。  \n\nL2 Hypotheses:  \n- Q1: **双歧杆菌囊泡通过TLR4-NF-κB通路诱导PD-L1表达，并促进CD8<sup>+</sup> T细胞浸润**  \nBif.BEVs通过动力蛋白依赖性内吞作用进入肺癌细胞后，激活TLR4-NF-κB通路，导致PD-L1表达上调，进而通过免疫检查点抑制剂阻断PD-1/PD-L1相互作用，增强CD8<sup>+</sup> T细胞的肿瘤浸润能力；此过程可能与临床观察到的免疫相关不良事件（如炎症反应）相关，可通过TLR4拮抗剂或NF-κB抑制剂验证通路特异性。  \n\n- Q2: **口服灌胃双歧杆菌囊泡重塑肺癌肿瘤微环境的代谢-免疫轴**  \n口服Bif.BEVs通过肠-肺轴调控肠道菌群代谢产物（如短链脂肪酸）的系统性分布，改变肿瘤微环境的代谢谱，进而通过短链脂肪酸介导的表观遗传调控（如组蛋白去乙酰化酶抑制）激活抗癌免疫应答，并抑制致癌通路（如PI3K/AKT）活性，最终提高抗PD-1治疗的疗效。  \n\nL3 Hypotheses:  \n- Q1: **肠道菌群代谢产物（短链脂肪酸）与抗PD-1协同调控肿瘤微环境中的促炎/抑炎细胞因子平衡**  \nBif.BEVs来源的短链脂肪酸通过抑制组蛋白去乙酰化酶（HDAC）上调肺肿瘤细胞中IL-12等促炎细胞因子的表达，同时降低Treg细胞分化相关因子（如TGF-β）的分泌，从而增强CD8<sup>+</sup> T细胞活性；此机制可通过类器官与小鼠模型中细胞因子阻断实验验证。  \n\n- Q2: **双歧杆菌囊泡通过类器官-小鼠模型揭示免疫治疗耐药性的逆转效应**  \n患者来源的肺癌类器官与同基因小鼠模型联用可揭示：Bif.BEVs通过TLR4-NF-κB通路恢复PD-L1高表达并激活IFN-γ信号，同时抑制耐药相关致癌通路（如Wnt/β-catenin），从而克服抗PD-1耐药性；此效应可通过类器官中基因编辑（如TLR4敲除）和体内肿瘤生长抑制实验验证。"
+    ],
+    "elapsed_seconds": 23.49948287010193
+  },
+  {
+    "paper_id": "d051d6c5e192",
+    "method_name": "P4",
+    "free_text_hypotheses": [
+      "L1 Hypothesis:  \n**hypothesis**: 肠道菌群代谢产物（如短链脂肪酸）通过表观遗传调控增强肺部肿瘤微环境中记忆T细胞持久性，从而协同免疫检查点抑制剂的长期疗效。  \n**reasoning**:  \n1. 前提：Bif.BEVs调节肠道菌群代谢产生短链脂肪酸（生物学）  \n2. 机制：短链脂肪酸抑制组蛋白去乙酰化酶（HDAC），上调记忆T细胞相关基因（如Bcl-6）表达（生物学→临床医学）  \n3. 预测：补充短链脂肪酸可延长抗PD-1治疗后CD8+ T细胞在肿瘤部位的存活时间，减少免疫相关不良事件（临床医学）  \n**key_concepts**: 短链脂肪酸, 组蛋白去乙酰化酶, 记忆T细胞, 免疫检查点抑制剂, 免疫相关不良事件  \n**disciplines_bridged**: 生物学, 临床医学  \n\nL2 Hypotheses:  \n- Q1:  \n**hypothesis**: NF-κB通路激活诱导的PD-L1表达伴随肿瘤细胞焦亡，通过释放IL-18增强CD8+ T细胞功能。  \n**reasoning**:  \n1. 前提：TLR4-NF-κB通路上调PD-L1（生物学）  \n2. 机制：NF-κB同时激活NLRP3炎症小体，触发肿瘤细胞焦亡并释放IL-18（生物学）  \n3. 预测：阻断IL-18会削弱Bif.BEVs增强的抗肿瘤免疫应答（临床医学）  \n**key_concepts**: TLR4-NF-κB pathway, NLRP3 inflammasome, IL-18, 肿瘤细胞焦亡, CD8+ T cells  \n**disciplines_bridged**: 生物学, 临床医学  \n\n- Q2:  \n**hypothesis**: 口服Bif.BEVs通过调节肠道屏障通透性，增加循环中CXCL11水平，促进CD8+ T细胞向肿瘤部位迁移。  \n**reasoning**:  \n1. 前提：口服灌胃改变肠道菌群（生物学）  \n2. 机制：肠道屏障通透性增加导致细菌成分（如LPS）进入循环，刺激肝脏分泌CXCL11（临床医学→生物学）  \n3. 预测：检测患者血清CXCL11水平可预测Bif.BEVs辅助治疗的响应性（临床医学）  \n**key_concepts**: 口服灌胃, 肠道屏障, CXCL11, 肿瘤微环境, CD8+ T细胞迁移  \n**disciplines_bridged**: 生物学, 临床医学  \n\nL3 Hypotheses:  \n- Q1:  \n**hypothesis**: 双歧杆菌来源的外泌体miRNA通过靶向肿瘤相关成纤维细胞中的PD-L1 mRNA，协同抗PD-1逆转免疫排斥型肿瘤微环境。  \n**reasoning**:  \n1. 前提：Bif.BEVs渗透肺癌类器官（生物学）  \n2. 机制：外泌体携带的miR-149-5p直接降解肿瘤相关成纤维细胞PD-L1 mRNA（生物学）  \n3. 预测：类器官-小鼠模型中，miR-149-5p缺失的Bif.BEVs无法恢复抗PD-1疗效（跨学科验证）  \n**key_concepts**: 细胞外囊泡miRNA, 肿瘤相关成纤维细胞, PD-L1 mRNA靶向, 肿瘤免疫排斥, 同基因小鼠模型  \n**disciplines_bridged**: 生物学, 临床医学  \n\n- Q2:  \n**hypothesis**: 长期口服Bif.BEVs通过Wnt/β-catenin通路抑制肿瘤干细胞，减少免疫抑制性髓系细胞浸润，从而克服耐药性。  \n**reasoning**:  \n1. 前提：Bif.BEVs改变致癌通路（生物学）  \n2. 机制：β-catenin下调减少IL-6分泌，抑制MDSC扩增（生物学→临床医学）  \n3. 预测：联合Wnt激动剂可逆转Bif.BEVs介导的免疫微环境重塑（实验验证）  \n**key_concepts**: Wnt/β-catenin pathway, 肿瘤干细胞, 髓系抑制细胞, 免疫抑制, 抗PD-1耐药性  \n**disciplines_bridged**: 生物学, 临床医学"
+    ],
+    "structured_paths": {},
+    "raw_responses": [
+      "L1 Hypothesis:  \n**hypothesis**: 肠道菌群代谢产物（如短链脂肪酸）通过表观遗传调控增强肺部肿瘤微环境中记忆T细胞持久性，从而协同免疫检查点抑制剂的长期疗效。  \n**reasoning**:  \n1. 前提：Bif.BEVs调节肠道菌群代谢产生短链脂肪酸（生物学）  \n2. 机制：短链脂肪酸抑制组蛋白去乙酰化酶（HDAC），上调记忆T细胞相关基因（如Bcl-6）表达（生物学→临床医学）  \n3. 预测：补充短链脂肪酸可延长抗PD-1治疗后CD8+ T细胞在肿瘤部位的存活时间，减少免疫相关不良事件（临床医学）  \n**key_concepts**: 短链脂肪酸, 组蛋白去乙酰化酶, 记忆T细胞, 免疫检查点抑制剂, 免疫相关不良事件  \n**disciplines_bridged**: 生物学, 临床医学  \n\nL2 Hypotheses:  \n- Q1:  \n**hypothesis**: NF-κB通路激活诱导的PD-L1表达伴随肿瘤细胞焦亡，通过释放IL-18增强CD8+ T细胞功能。  \n**reasoning**:  \n1. 前提：TLR4-NF-κB通路上调PD-L1（生物学）  \n2. 机制：NF-κB同时激活NLRP3炎症小体，触发肿瘤细胞焦亡并释放IL-18（生物学）  \n3. 预测：阻断IL-18会削弱Bif.BEVs增强的抗肿瘤免疫应答（临床医学）  \n**key_concepts**: TLR4-NF-κB pathway, NLRP3 inflammasome, IL-18, 肿瘤细胞焦亡, CD8+ T cells  \n**disciplines_bridged**: 生物学, 临床医学  \n\n- Q2:  \n**hypothesis**: 口服Bif.BEVs通过调节肠道屏障通透性，增加循环中CXCL11水平，促进CD8+ T细胞向肿瘤部位迁移。  \n**reasoning**:  \n1. 前提：口服灌胃改变肠道菌群（生物学）  \n2. 机制：肠道屏障通透性增加导致细菌成分（如LPS）进入循环，刺激肝脏分泌CXCL11（临床医学→生物学）  \n3. 预测：检测患者血清CXCL11水平可预测Bif.BEVs辅助治疗的响应性（临床医学）  \n**key_concepts**: 口服灌胃, 肠道屏障, CXCL11, 肿瘤微环境, CD8+ T细胞迁移  \n**disciplines_bridged**: 生物学, 临床医学  \n\nL3 Hypotheses:  \n- Q1:  \n**hypothesis**: 双歧杆菌来源的外泌体miRNA通过靶向肿瘤相关成纤维细胞中的PD-L1 mRNA，协同抗PD-1逆转免疫排斥型肿瘤微环境。  \n**reasoning**:  \n1. 前提：Bif.BEVs渗透肺癌类器官（生物学）  \n2. 机制：外泌体携带的miR-149-5p直接降解肿瘤相关成纤维细胞PD-L1 mRNA（生物学）  \n3. 预测：类器官-小鼠模型中，miR-149-5p缺失的Bif.BEVs无法恢复抗PD-1疗效（跨学科验证）  \n**key_concepts**: 细胞外囊泡miRNA, 肿瘤相关成纤维细胞, PD-L1 mRNA靶向, 肿瘤免疫排斥, 同基因小鼠模型  \n**disciplines_bridged**: 生物学, 临床医学  \n\n- Q2:  \n**hypothesis**: 长期口服Bif.BEVs通过Wnt/β-catenin通路抑制肿瘤干细胞，减少免疫抑制性髓系细胞浸润，从而克服耐药性。  \n**reasoning**:  \n1. 前提：Bif.BEVs改变致癌通路（生物学）  \n2. 机制：β-catenin下调减少IL-6分泌，抑制MDSC扩增（生物学→临床医学）  \n3. 预测：联合Wnt激动剂可逆转Bif.BEVs介导的免疫微环境重塑（实验验证）  \n**key_concepts**: Wnt/β-catenin pathway, 肿瘤干细胞, 髓系抑制细胞, 免疫抑制, 抗PD-1耐药性  \n**disciplines_bridged**: 生物学, 临床医学"
+    ],
+    "elapsed_seconds": 44.71486186981201
+  },
+  {
+    "paper_id": "d051d6c5e192",
+    "method_name": "P5",
+    "free_text_hypotheses": [
+      "生物学中双歧杆菌囊泡通过κ通路调控表达，需临床医学指导的免疫检查点干预来优化治疗效果",
+      "生物学中口服给药的双歧杆菌囊泡靶向肺癌肿瘤微环境，需临床医学指导的给药方案优化治疗响应",
+      "通过κ通路解析双歧杆菌囊泡对免疫检查点分子表达及细胞浸润的调控机制",
+      "基于口服递送方式探讨囊泡对肿瘤生态位的免疫调节作用路径",
+      "通过短链脂肪酸与免疫检查点抑制剂的协同作用调控肿瘤免疫微环境，最终增强抗肿瘤免疫应答",
+      "利用肺癌类器官与同基因小鼠模型验证双歧杆菌囊泡通过逆转抗治疗耐药性改善免疫治疗效果"
+    ],
+    "structured_paths": {
+      "L1": [
+        {
+          "steps": [
+            {
+              "step": 1,
+              "head": "双歧杆菌衍生的细胞外囊泡",
+              "relation": "通过κ通路调控",
+              "tail": "κ通路",
+              "claim": "双歧杆菌衍生的细胞外囊泡通过激活κ通路调控肺癌免疫治疗效果"
+            },
+            {
+              "step": 2,
+              "head": "κ通路",
+              "relation": "介导上调表达",
+              "tail": "表达",
+              "claim": "κ通路介导表达上调从而增强抗-治疗响应"
+            },
+            {
+              "step": 3,
+              "head": "表达",
+              "relation": "与临床医学协同作用",
+              "tail": "抗治疗",
+              "claim": "表达水平需临床医学指导的免疫检查点干预来优化治疗效果"
+            }
+          ],
+          "summary": "生物学中双歧杆菌囊泡通过κ通路调控表达，需临床医学指导的免疫检查点干预来优化治疗效果"
+        },
+        {
+          "steps": [
+            {
+              "step": 1,
+              "head": "双歧杆菌衍生的细胞外囊泡",
+              "relation": "经口服灌胃给药",
+              "tail": "口服灌胃",
+              "claim": "双歧杆菌衍生的细胞外囊泡通过口服给药途径调控肺癌免疫治疗"
+            },
+            {
+              "step": 2,
+              "head": "口服灌胃",
+              "relation": "作用于非小细胞肺癌",
+              "tail": "非小细胞肺癌",
+              "claim": "口服给药后囊泡靶向非小细胞肺癌肿瘤微环境"
+            },
+            {
+              "step": 3,
+              "head": "非小细胞肺癌",
+              "relation": "需临床医学协同调控",
+              "tail": "肿瘤微环境",
+              "claim": "肿瘤微环境重塑需要临床医学指导的给药方案优化"
+            }
+          ],
+          "summary": "生物学中口服给药的双歧杆菌囊泡靶向肺癌肿瘤微环境，需临床医学指导的给药方案优化治疗响应"
+        }
+      ],
+      "L2": [
+        {
+          "steps": [
+            {
+              "step": 1,
+              "head": "双歧杆菌衍生的细胞外囊泡",
+              "relation": "影响",
+              "tail": "κ通路",
+              "claim": "双歧杆菌衍生的细胞外囊泡 κ通路"
+            },
+            {
+              "step": 2,
+              "head": "κ通路",
+              "relation": "导致",
+              "tail": "表达",
+              "claim": "κ通路 表达"
+            },
+            {
+              "step": 3,
+              "head": "表达",
+              "relation": "促进",
+              "tail": "肿瘤浸润性+细胞",
+              "claim": "表达 肿瘤浸润性+细胞"
+            }
+          ],
+          "summary": "通过κ通路解析双歧杆菌囊泡对免疫检查点分子表达及细胞浸润的调控机制"
+        },
+        {
+          "steps": [
+            {
+              "step": 1,
+              "head": "口服灌胃",
+              "relation": "影响",
+              "tail": "双歧杆菌衍生的细胞外囊泡",
+              "claim": "口服灌胃 双歧杆菌衍生的细胞外囊泡"
+            },
+            {
+              "step": 2,
+              "head": "双歧杆菌衍生的细胞外囊泡",
+              "relation": "导致",
+              "tail": "肿瘤微环境",
+              "claim": "双歧杆菌衍生的细胞外囊泡 肿瘤微环境"
+            },
+            {
+              "step": 3,
+              "head": "肿瘤微环境",
+              "relation": "促进",
+              "tail": "免疫应答",
+              "claim": "肿瘤微环境 免疫应答"
+            }
+          ],
+          "summary": "基于口服递送方式探讨囊泡对肿瘤生态位的免疫调节作用路径"
+        }
+      ],
+      "L3": [
+        {
+          "steps": [
+            {
+              "step": 1,
+              "head": "短链脂肪酸",
+              "relation": "协同调节",
+              "tail": "免疫检查点抑制剂",
+              "claim": "短链脂肪酸 协同调节 免疫检查点抑制剂"
+            },
+            {
+              "step": 2,
+              "head": "免疫检查点抑制剂",
+              "relation": "重塑",
+              "tail": "肿瘤免疫微环境",
+              "claim": "免疫检查点抑制剂 重塑 肿瘤免疫微环境"
+            },
+            {
+              "step": 3,
+              "head": "肿瘤免疫微环境",
+              "relation": "增强",
+              "tail": "免疫应答",
+              "claim": "肿瘤免疫微环境 增强 免疫应答"
+            }
+          ],
+          "summary": "通过短链脂肪酸与免疫检查点抑制剂的协同作用调控肿瘤免疫微环境，最终增强抗肿瘤免疫应答"
+        },
+        {
+          "steps": [
+            {
+              "step": 1,
+              "head": "患者来源的肺癌类器官",
+              "relation": "移植构建",
+              "tail": "同基因小鼠模型",
+              "claim": "患者来源的肺癌类器官 移植构建 同基因小鼠模型"
+            },
+            {
+              "step": 2,
+              "head": "同基因小鼠模型",
+              "relation": "施用",
+              "tail": "双歧杆菌衍生的细胞外囊泡",
+              "claim": "同基因小鼠模型 施用 双歧杆菌衍生的细胞外囊泡"
+            },
+            {
+              "step": 3,
+              "head": "双歧杆菌衍生的细胞外囊泡",
+              "relation": "逆转",
+              "tail": "抗治疗",
+              "claim": "双歧杆菌衍生的细胞外囊泡 逆转 抗治疗"
+            }
+          ],
+          "summary": "利用肺癌类器官与同基因小鼠模型验证双歧杆菌囊泡通过逆转抗治疗耐药性改善免疫治疗效果"
+        }
+      ]
+    },
+    "raw_responses": [],
+    "elapsed_seconds": 3.933906555175781e-05
+  },
+  {
+    "paper_id": "dc41ec7fcac5",
+    "method_name": "P1",
+    "free_text_hypotheses": [
+      "**Hypothesis:** 红光金属光催化通过激发金属中心的低能级d-d跃迁，形成具有独特配位不饱和性的亚稳态催化剂，该状态可选择性活化碳-杂原子键的极性反转型过渡态，从而在室温下实现非贵金属（如钴或铁）催化的Suzuki-Miyaura型偶联反应，其机制通过光诱导的配体-金属电荷转移（LMCT）直接调控反应路径，避免传统高温和强碱性条件下的副产物生成。可通过原位光谱追踪催化剂氧化态变化，并比较红光与蓝光驱动下的反应动力学差异验证该机制。"
+    ],
+    "structured_paths": {},
+    "raw_responses": [
+      "**Hypothesis:** 红光金属光催化通过激发金属中心的低能级d-d跃迁，形成具有独特配位不饱和性的亚稳态催化剂，该状态可选择性活化碳-杂原子键的极性反转型过渡态，从而在室温下实现非贵金属（如钴或铁）催化的Suzuki-Miyaura型偶联反应，其机制通过光诱导的配体-金属电荷转移（LMCT）直接调控反应路径，避免传统高温和强碱性条件下的副产物生成。可通过原位光谱追踪催化剂氧化态变化，并比较红光与蓝光驱动下的反应动力学差异验证该机制。"
+    ],
+    "elapsed_seconds": 14.676782608032227
+  },
+  {
+    "paper_id": "dc41ec7fcac5",
+    "method_name": "P2",
+    "free_text_hypotheses": [
+      "L1 Hypothesis: 红光金属光催化通过协同优化光催化剂的能带结构与镍催化中心的氧化还原特性，可突破传统蓝光体系的局限性。其核心机制在于利用红光（λ>600 nm）的深层穿透能力提升反应体系的光子利用率，同时通过半异相催化界面的空间限域效应增强催化剂-底物相互作用，从而降低反应活化能并提高化学选择性，最终实现高效碳-杂原子键构建与催化剂循环利用的双重突破。\n\nL2 Hypotheses:\n- Q1: CN-OA-m聚合物光催化剂的二维层状结构与镍活性中心的定向锚定效应，可通过增强界面电荷转移效率和抑制金属团聚实现催化剂回收效率提升。其多孔网络结构可形成光生载流子快速迁移通道，在红光激发下产生稳定的单线态氧物种（¹O₂），通过可逆氧化还原循环维持催化剂活性位点再生，从而在循环实验中保持95%以上的催化活性（>10次循环）。\n\n- Q2: 镍催化与CN-OA-m异相光催化的协同增强机制源于双金属协同界面的梯度能级匹配：镍配合物的d-d跃迁能级（~1.8 eV）与CN-OA-m的红光响应带隙（~1.9 eV）形成阶梯式电子传递路径，通过光致空穴转移（PHT）机制降低单电子氧化还原势垒。这种异相界面可构建微反应器效应，使芳基卤化物与亲核试剂在催化剂表面形成预组织构象，使反应动力学从二级过程转变为准一级过程，理论计算显示可提升表观反应速率常数k_app达3-5倍。"
+    ],
+    "structured_paths": {},
+    "raw_responses": [
+      "L1 Hypothesis: 红光金属光催化通过协同优化光催化剂的能带结构与镍催化中心的氧化还原特性，可突破传统蓝光体系的局限性。其核心机制在于利用红光（λ>600 nm）的深层穿透能力提升反应体系的光子利用率，同时通过半异相催化界面的空间限域效应增强催化剂-底物相互作用，从而降低反应活化能并提高化学选择性，最终实现高效碳-杂原子键构建与催化剂循环利用的双重突破。\n\nL2 Hypotheses:\n- Q1: CN-OA-m聚合物光催化剂的二维层状结构与镍活性中心的定向锚定效应，可通过增强界面电荷转移效率和抑制金属团聚实现催化剂回收效率提升。其多孔网络结构可形成光生载流子快速迁移通道，在红光激发下产生稳定的单线态氧物种（¹O₂），通过可逆氧化还原循环维持催化剂活性位点再生，从而在循环实验中保持95%以上的催化活性（>10次循环）。\n\n- Q2: 镍催化与CN-OA-m异相光催化的协同增强机制源于双金属协同界面的梯度能级匹配：镍配合物的d-d跃迁能级（~1.8 eV）与CN-OA-m的红光响应带隙（~1.9 eV）形成阶梯式电子传递路径，通过光致空穴转移（PHT）机制降低单电子氧化还原势垒。这种异相界面可构建微反应器效应，使芳基卤化物与亲核试剂在催化剂表面形成预组织构象，使反应动力学从二级过程转变为准一级过程，理论计算显示可提升表观反应速率常数k_app达3-5倍。"
+    ],
+    "elapsed_seconds": 16.52103590965271
+  },
+  {
+    "paper_id": "dc41ec7fcac5",
+    "method_name": "P3",
+    "free_text_hypotheses": [
+      "L1 Hypothesis: 红光金属光催化通过聚合氮化碳的能带结构优化（材料科学）与镍配合物的氧化还原循环（化学）协同作用，降低光催化剂失活速率并增强光子穿透深度，从而突破传统蓝光体系在反应可扩展性和化学选择性上的局限。该机制可通过红光激发下金属-配体电荷转移（MLCT）与光氧化还原催化循环的耦合效率验证。\n\nL2 Hypotheses:\n- Q1: 红光驱动的半异相催化体系通过聚合氮化碳的π-共轭结构（材料科学）与镍预催化剂的界面电子传递（化学）形成稳定光生载流子，结合分批处理中的磁性回收设计（化学工程），可实现光催化剂回收效率>90%且循环10次后活性下降<5%。该假设可通过XPS表征循环前后Ni物种价态变化和光降解途径分析验证。\n- Q2: 镍催化体系的配体屏蔽效应（化学）与异相光催化剂的限域催化环境（材料科学）通过空间位阻匹配和氧化还原梯度调控，使芳基卤化物与大位阻亲核试剂的偶联效率提升300%，并通过在线ATR-FTIR监测反应动力学验证协同作用机制。\n\nL3 Hypotheses:\n- Q1: 红光金属光催化结合半异相体系与反应工程优化通过三重机制：1）红光（620nm）增强底物适用范围（材料科学）；2）半异相体系中有机半导体与镍配合物的电荷分离效率（化学）；3）连续流动反应器的传质强化（化学工程），可实现C–Se键构建的时空产率提升8倍（>200 mmol·h⁻¹·g⁻¹）。可通过微反应器内可视化流动实验证伪。\n- Q2: 氮化碳的表面氰基官能团密度（材料科学）与工艺参数中的光强梯度控制（化学工程）通过竞争吸附机制调控光生空穴寿命，在100 L规模反应中维持光催化剂稳定性>1000小时。可通过原位XANES表征不同光强下Niδ+物种演变路径进行验证。\n\n每个假设均建立在跨学科概念交叉基础上，且包含可量化验证的物理化学参数（如电荷转移速率、循环次数、时空产率等），同时明确了关键表征技术与实验方法，符合可测试性和可证伪性要求。"
+    ],
+    "structured_paths": {},
+    "raw_responses": [
+      "L1 Hypothesis: 红光金属光催化通过聚合氮化碳的能带结构优化（材料科学）与镍配合物的氧化还原循环（化学）协同作用，降低光催化剂失活速率并增强光子穿透深度，从而突破传统蓝光体系在反应可扩展性和化学选择性上的局限。该机制可通过红光激发下金属-配体电荷转移（MLCT）与光氧化还原催化循环的耦合效率验证。\n\nL2 Hypotheses:\n- Q1: 红光驱动的半异相催化体系通过聚合氮化碳的π-共轭结构（材料科学）与镍预催化剂的界面电子传递（化学）形成稳定光生载流子，结合分批处理中的磁性回收设计（化学工程），可实现光催化剂回收效率>90%且循环10次后活性下降<5%。该假设可通过XPS表征循环前后Ni物种价态变化和光降解途径分析验证。\n- Q2: 镍催化体系的配体屏蔽效应（化学）与异相光催化剂的限域催化环境（材料科学）通过空间位阻匹配和氧化还原梯度调控，使芳基卤化物与大位阻亲核试剂的偶联效率提升300%，并通过在线ATR-FTIR监测反应动力学验证协同作用机制。\n\nL3 Hypotheses:\n- Q1: 红光金属光催化结合半异相体系与反应工程优化通过三重机制：1）红光（620nm）增强底物适用范围（材料科学）；2）半异相体系中有机半导体与镍配合物的电荷分离效率（化学）；3）连续流动反应器的传质强化（化学工程），可实现C–Se键构建的时空产率提升8倍（>200 mmol·h⁻¹·g⁻¹）。可通过微反应器内可视化流动实验证伪。\n- Q2: 氮化碳的表面氰基官能团密度（材料科学）与工艺参数中的光强梯度控制（化学工程）通过竞争吸附机制调控光生空穴寿命，在100 L规模反应中维持光催化剂稳定性>1000小时。可通过原位XANES表征不同光强下Niδ+物种演变路径进行验证。\n\n每个假设均建立在跨学科概念交叉基础上，且包含可量化验证的物理化学参数（如电荷转移速率、循环次数、时空产率等），同时明确了关键表征技术与实验方法，符合可测试性和可证伪性要求。"
+    ],
+    "elapsed_seconds": 27.341620922088623
+  },
+  {
+    "paper_id": "dc41ec7fcac5",
+    "method_name": "P4",
+    "free_text_hypotheses": [
+      "L1 Hypothesis:\n  hypothesis: 红光驱动的半异相金属光催化体系通过材料界面工程与反应动力学优化的协同作用，突破传统碳-杂原子偶联反应的能级限制和传质瓶颈。聚合氮化碳的能带结构调控与镍催化中心的空间限域效应，可实现可见光子的高效捕获与载流子定向迁移，同时通过化学工程中的微环境调控增强底物活化效率。\n  reasoning: \n    1. 材料科学中的异相光催化剂设计（聚合氮化碳的π共轭结构）→ 调节光响应范围（红光吸收）\n    2. 化学中的金属配位催化（镍中心与光生载流子的协同）→ 降低反应活化能\n    3. 化学工程的微环境调控（多孔结构传质优化）→ 提升底物/产物扩散速率\n    4. 三者协同→ 突破传统紫外光驱动限制，实现高产率与官能团兼容性\n  key_concepts: [red-light metallaphotocatalysis, 聚合氮化碳, 镍催化交叉偶联反应, 多孔材料传质, 反应动力学优化]\n  disciplines_bridged: [化学, 材料科学, 化学工程]\n\nL2 Hypotheses:\n- Q1:\n    hypothesis: 半异相催化体系的分级多孔结构通过空间位阻效应与表面疏水相互作用，实现光催化剂的定向回收。其三维网络结构可形成物理屏障防止镍物种浸出，同时通过材料表面能调控优化催化剂-反应介质界面张力，提升循环稳定性。\n    reasoning: \n      1. 材料科学的多孔结构设计（CN-OA-m的分级孔道）→ 物理截留金属物种\n      2. 表面化学修饰（疏水基团接枝）→ 调节固-液界面相互作用\n      3. 化学工程的流体力学优化（分批处理中的沉降动力学）→ 强化固相回收效率\n      4. 三者协同→ 实现10次循环>90%活性保持\n    key_concepts: [半异相催化体系, 分级多孔结构, 催化剂回收机制, 界面张力调控]\n    disciplines_bridged: [材料科学, 化学工程]\n- Q2:\n    hypothesis: 镍催化中心与异相光催化剂的能级匹配通过界面电荷转移复合物（CTC）形成，增强光生载流子利用效率。同时通过化学工程中的浓度梯度控制，实现催化剂/底物/产物的动态平衡，从而扩大反应适用范围。\n    reasoning: \n      1. 化学中的配位催化（Ni(dppf)Cl₂的氧化还原特性）→ 与光催化剂CB/VB能级匹配\n      2. 材料科学的异相界面工程（催化剂表面缺陷位点调控）→ 稳定CTC中间体\n      3. 化学工程的连续流动优化（微反应器中的质量传递强化）→ 减少副反应竞争\n      4. 协同效应→ 芳基卤化物转化率提升30%以上\n    key_concepts: [镍催化体系, 异相光催化剂能级匹配, 电荷转移复合物, 连续流动工艺]\n    disciplines_bridged: [化学, 材料科学, 化学工程]\n\nL3 Hypotheses:\n- Q1:\n    hypothesis: 红光金属光催化体系中光催化剂的激发态寿命与镍催化循环的动力学时序可通过脉冲光调控实现精准匹配。结合反应工程中的非均相传质模型优化，可使C–N键形成速率提升50%以上。\n    reasoning: \n      1. 材料科学的光物理特性（CN-OA-m的纳秒级载流子寿命）→ 时间分辨光催化过程\n      2. 化学中的反应时序控制（脉冲LED调控激发/淬灭周期）→ 同步镍催化的氧化加成步骤\n      3. 化学工程的多相流建模（计算流体动力学优化气-液-固传质）→ 减少扩散限制\n      4. 三者耦合→ 实现时间-空间协同催化\n    key_concepts: [脉冲光驱动, 激发态动力学匹配, 非稳态反应工程, 多相流传质优化]\n    disciplines_bridged: [化学, 材料科学, 化学工程]\n- Q2:\n    hypothesis: 氮化碳光催化剂的表面羧酸基团密度与工艺参数中的剪切力强度存在临界匹配关系，该关系决定了规模化生产中催化剂失活能垒的高度。通过材料表面拓扑重构与反应器剪切场优化，可使催化剂寿命延长至200小时以上。\n    reasoning: \n      1. 材料科学的表面化学（羧酸基团钝化表面缺陷）→ 抑制光腐蚀\n      2. 化学工程的机械化学效应（搅拌速率与催化剂磨损的定量关系）→ 控制表面更新速率\n      3. 跨尺度耦合（表面钝化速率 vs 机械磨损速率）→ 确定工艺窗口\n      4. 最终实现→ 连续生产稳定性提升2个数量级\n    key_concepts: [氮化碳表面钝化, 剪切力诱导失活, 机械化学耦合, 工艺-材料协同优化]\n    disciplines_bridged: [材料科学, 化学工程]"
+    ],
+    "structured_paths": {},
+    "raw_responses": [
+      "L1 Hypothesis:\n  hypothesis: 红光驱动的半异相金属光催化体系通过材料界面工程与反应动力学优化的协同作用，突破传统碳-杂原子偶联反应的能级限制和传质瓶颈。聚合氮化碳的能带结构调控与镍催化中心的空间限域效应，可实现可见光子的高效捕获与载流子定向迁移，同时通过化学工程中的微环境调控增强底物活化效率。\n  reasoning: \n    1. 材料科学中的异相光催化剂设计（聚合氮化碳的π共轭结构）→ 调节光响应范围（红光吸收）\n    2. 化学中的金属配位催化（镍中心与光生载流子的协同）→ 降低反应活化能\n    3. 化学工程的微环境调控（多孔结构传质优化）→ 提升底物/产物扩散速率\n    4. 三者协同→ 突破传统紫外光驱动限制，实现高产率与官能团兼容性\n  key_concepts: [red-light metallaphotocatalysis, 聚合氮化碳, 镍催化交叉偶联反应, 多孔材料传质, 反应动力学优化]\n  disciplines_bridged: [化学, 材料科学, 化学工程]\n\nL2 Hypotheses:\n- Q1:\n    hypothesis: 半异相催化体系的分级多孔结构通过空间位阻效应与表面疏水相互作用，实现光催化剂的定向回收。其三维网络结构可形成物理屏障防止镍物种浸出，同时通过材料表面能调控优化催化剂-反应介质界面张力，提升循环稳定性。\n    reasoning: \n      1. 材料科学的多孔结构设计（CN-OA-m的分级孔道）→ 物理截留金属物种\n      2. 表面化学修饰（疏水基团接枝）→ 调节固-液界面相互作用\n      3. 化学工程的流体力学优化（分批处理中的沉降动力学）→ 强化固相回收效率\n      4. 三者协同→ 实现10次循环>90%活性保持\n    key_concepts: [半异相催化体系, 分级多孔结构, 催化剂回收机制, 界面张力调控]\n    disciplines_bridged: [材料科学, 化学工程]\n- Q2:\n    hypothesis: 镍催化中心与异相光催化剂的能级匹配通过界面电荷转移复合物（CTC）形成，增强光生载流子利用效率。同时通过化学工程中的浓度梯度控制，实现催化剂/底物/产物的动态平衡，从而扩大反应适用范围。\n    reasoning: \n      1. 化学中的配位催化（Ni(dppf)Cl₂的氧化还原特性）→ 与光催化剂CB/VB能级匹配\n      2. 材料科学的异相界面工程（催化剂表面缺陷位点调控）→ 稳定CTC中间体\n      3. 化学工程的连续流动优化（微反应器中的质量传递强化）→ 减少副反应竞争\n      4. 协同效应→ 芳基卤化物转化率提升30%以上\n    key_concepts: [镍催化体系, 异相光催化剂能级匹配, 电荷转移复合物, 连续流动工艺]\n    disciplines_bridged: [化学, 材料科学, 化学工程]\n\nL3 Hypotheses:\n- Q1:\n    hypothesis: 红光金属光催化体系中光催化剂的激发态寿命与镍催化循环的动力学时序可通过脉冲光调控实现精准匹配。结合反应工程中的非均相传质模型优化，可使C–N键形成速率提升50%以上。\n    reasoning: \n      1. 材料科学的光物理特性（CN-OA-m的纳秒级载流子寿命）→ 时间分辨光催化过程\n      2. 化学中的反应时序控制（脉冲LED调控激发/淬灭周期）→ 同步镍催化的氧化加成步骤\n      3. 化学工程的多相流建模（计算流体动力学优化气-液-固传质）→ 减少扩散限制\n      4. 三者耦合→ 实现时间-空间协同催化\n    key_concepts: [脉冲光驱动, 激发态动力学匹配, 非稳态反应工程, 多相流传质优化]\n    disciplines_bridged: [化学, 材料科学, 化学工程]\n- Q2:\n    hypothesis: 氮化碳光催化剂的表面羧酸基团密度与工艺参数中的剪切力强度存在临界匹配关系，该关系决定了规模化生产中催化剂失活能垒的高度。通过材料表面拓扑重构与反应器剪切场优化，可使催化剂寿命延长至200小时以上。\n    reasoning: \n      1. 材料科学的表面化学（羧酸基团钝化表面缺陷）→ 抑制光腐蚀\n      2. 化学工程的机械化学效应（搅拌速率与催化剂磨损的定量关系）→ 控制表面更新速率\n      3. 跨尺度耦合（表面钝化速率 vs 机械磨损速率）→ 确定工艺窗口\n      4. 最终实现→ 连续生产稳定性提升2个数量级\n    key_concepts: [氮化碳表面钝化, 剪切力诱导失活, 机械化学耦合, 工艺-材料协同优化]\n    disciplines_bridged: [材料科学, 化学工程]"
+    ],
+    "elapsed_seconds": 36.66938090324402
+  },
+  {
+    "paper_id": "dc41ec7fcac5",
+    "method_name": "P5",
+    "free_text_hypotheses": [
+      "材料科学通过开发聚合氮化碳基梯度异质结，可解决红光金属光催化中的光催化剂失活问题，从而提升碳-杂原子偶联反应的化学选择性",
+      "化学工程借助分批处理工艺优化，可将红光金属光催化的反应可扩展性转化为规模化生产优势，突破传统光反应器的放大瓶颈",
+      "化学工程通过构建连续流动催化体系，可实现异相光催化剂与镍催化体系的协同循环，保障碳-杂原子偶联反应的工业级连续化运行",
+      "半异相催化体系通过物理分离机制提升光催化剂回收效率，进而实现催化剂循环利用的工业化应用",
+      "镍催化体系与异相光催化剂通过协同作用降低对特定反应条件的依赖，从而突破批次处理规模限制",
+      "红光金属光催化通过半异相体系优化反应条件，促进碳-杂原子键高效构建",
+      "聚合氮化碳材料设计与工艺参数优化协同保障规模化生产的稳定性"
+    ],
+    "structured_paths": {
+      "L1": [
+        {
+          "steps": [
+            {
+              "step": 1,
+              "head": "红光金属光催化",
+              "relation": "使用作为光催化剂",
+              "tail": "聚合氮化碳",
+              "claim": "聚合氮化碳作为红光金属光催化体系的核心材料，其能带结构可调性为碳-杂原子键构建提供稳定电子传递通道"
+            },
+            {
+              "step": 2,
+              "head": "聚合氮化碳",
+              "relation": "实现半异相体系",
+              "tail": "半异相催化体系",
+              "claim": "半异相催化体系通过界面电荷定向迁移机制降低光生载流子复合率"
+            },
+            {
+              "step": 3,
+              "head": "半异相催化体系",
+              "relation": "抑制光催化剂失活",
+              "tail": "光催化剂失活",
+              "claim": "材料科学通过开发梯度异质结结构可突破传统均相光催化剂的稳定性瓶颈"
+            }
+          ],
+          "summary": "材料科学通过开发聚合氮化碳基梯度异质结，可解决红光金属光催化中的光催化剂失活问题，从而提升碳-杂原子偶联反应的化学选择性"
+        },
+        {
+          "steps": [
+            {
+              "step": 1,
+              "head": "红光金属光催化",
+              "relation": "增强反应可扩展性",
+              "tail": "反应可扩展性",
+              "claim": "反应可扩展性提升源于红光驱动下催化剂再生动力学的优化"
+            },
+            {
+              "step": 2,
+              "head": "反应可扩展性",
+              "relation": "支持分批处理",
+              "tail": "分批处理",
+              "claim": "分批处理模式通过光强梯度控制实现反应热力学平衡调控"
+            },
+            {
+              "step": 3,
+              "head": "分批处理",
+              "relation": "保障规模化生产",
+              "tail": "反应条件优化",
+              "claim": "化学工程通过过程强化技术可解决光催化反应器放大中的传质限制问题"
+            }
+          ],
+          "summary": "化学工程借助分批处理工艺优化，可将红光金属光催化的反应可扩展性转化为规模化生产优势，突破传统光反应器的放大瓶颈"
+        },
+        {
+          "steps": [
+            {
+              "step": 1,
+              "head": "红光金属光催化",
+              "relation": "协同镍催化体系",
+              "tail": "镍催化交叉偶联反应",
+              "claim": "镍催化体系与红光驱动的协同效应源于金属-配体电荷转移态的能级匹配"
+            },
+            {
+              "step": 2,
+              "head": "镍催化交叉偶联反应",
+              "relation": "利用异相光催化剂",
+              "tail": "异相光催化剂",
+              "claim": "异相光催化剂通过表面等离子体共振效应增强可见光捕获效率"
+            },
+            {
+              "step": 3,
+              "head": "异相光催化剂",
+              "relation": "促进催化剂循环",
+              "tail": "催化剂循环",
+              "claim": "化学工程通过微反应器设计可实现异相光催化剂在连续流动体系中的高效分离回收"
+            }
+          ],
+          "summary": "化学工程通过构建连续流动催化体系，可实现异相光催化剂与镍催化体系的协同循环，保障碳-杂原子偶联反应的工业级连续化运行"
+        }
+      ],
+      "L2": [
+        {
+          "steps": [
+            {
+              "step": 1,
+              "head": "红光金属光催化",
+              "relation": "影响",
+              "tail": "半异相催化体系",
+              "claim": "红光金属光催化 半异相催化体系"
+            },
+            {
+              "step": 2,
+              "head": "半异相催化体系",
+              "relation": "导致",
+              "tail": "光催化剂回收",
+              "claim": "半异相催化体系 光催化剂回收"
+            },
+            {
+              "step": 3,
+              "head": "光催化剂回收",
+              "relation": "促进",
+              "tail": "催化剂循环",
+              "claim": "光催化剂回收 催化剂循环"
+            }
+          ],
+          "summary": "半异相催化体系通过物理分离机制提升光催化剂回收效率，进而实现催化剂循环利用的工业化应用"
+        },
+        {
+          "steps": [
+            {
+              "step": 1,
+              "head": "镍催化交叉偶联反应",
+              "relation": "影响",
+              "tail": "异相光催化剂",
+              "claim": "镍催化交叉偶联反应 异相光催化剂"
+            },
+            {
+              "step": 2,
+              "head": "异相光催化剂",
+              "relation": "导致",
+              "tail": "反应条件优化",
+              "claim": "异相光催化剂 反应条件优化"
+            },
+            {
+              "step": 3,
+              "head": "反应条件优化",
+              "relation": "促进",
+              "tail": "反应可扩展性",
+              "claim": "反应条件优化 反应可扩展性"
+            }
+          ],
+          "summary": "镍催化体系与异相光催化剂通过协同作用降低对特定反应条件的依赖，从而突破批次处理规模限制"
+        }
+      ],
+      "L3": [
+        {
+          "steps": [
+            {
+              "step": 1,
+              "head": "红光金属光催化",
+              "relation": "通过半异相体系实现",
+              "tail": "半异相催化体系",
+              "claim": "红光金属光催化 通过半异相体系实现 半异相催化体系"
+            },
+            {
+              "step": 2,
+              "head": "半异相催化体系",
+              "relation": "依赖反应条件优化",
+              "tail": "反应条件优化",
+              "claim": "半异相催化体系 依赖反应条件优化 反应条件优化"
+            },
+            {
+              "step": 3,
+              "head": "反应条件优化",
+              "relation": "促进碳-杂原子键形成",
+              "tail": "碳-杂原子交叉偶联反应",
+              "claim": "反应条件优化 促进碳-杂原子键形成 碳-杂原子交叉偶联反应"
+            }
+          ],
+          "summary": "红光金属光催化通过半异相体系优化反应条件，促进碳-杂原子键高效构建"
+        },
+        {
+          "steps": [
+            {
+              "step": 1,
+              "head": "红光金属光催化",
+              "relation": "使用聚合氮化碳材料",
+              "tail": "聚合氮化碳",
+              "claim": "红光金属光催化 使用聚合氮化碳材料 聚合氮化碳"
+            },
+            {
+              "step": 2,
+              "head": "聚合氮化碳",
+              "relation": "支持工艺参数优化",
+              "tail": "反应条件优化",
+              "claim": "聚合氮化碳 支持工艺参数优化 反应条件优化"
+            },
+            {
+              "step": 3,
+              "head": "反应条件优化",
+              "relation": "增强反应可扩展性",
+              "tail": "反应可扩展性",
+              "claim": "反应条件优化 增强反应可扩展性 反应可扩展性"
+            }
+          ],
+          "summary": "聚合氮化碳材料设计与工艺参数优化协同保障规模化生产的稳定性"
+        }
+      ]
+    },
+    "raw_responses": [],
+    "elapsed_seconds": 9.512901306152344e-05
+  }
+]

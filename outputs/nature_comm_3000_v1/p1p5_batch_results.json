@@ -1,0 +1,612 @@
+[
+  {
+    "tag": "test_0",
+    "paper": {
+      "paper_id": "678e7a221e82",
+      "title": "Phospho-seq: integrated, multi-modal profiling of intracellular protein dynamics in single cells",
+      "abstract": "Abstract Cell signaling plays a critical role in neurodevelopment, regulating cellular behavior and fate. While multimodal single-cell sequencing technologies are rapidly advancing, scalable and flexi...",
+      "primary_discipline": "生物学",
+      "secondary_disciplines": [
+        "计算机科学技术",
+        "基础医学"
+      ]
+    },
+    "results": [
+      {
+        "method": "P1",
+        "hypotheses_text": "**假设：**  \n在单细胞水平上，磷酸化修饰的时空动态可通过\"动态磷酸化条形码\"（dynamic phospho-barcode）与信号传导通路的激活状态实现整合解析。具体而言，不同刺激下磷酸化修饰的时序性（如早期/晚期修饰位点）与亚细胞空间分布（如膜受体邻近或核内特异性磷酸化）可形成高维度分子特征，通过微流控芯片耦合单细胞质谱流式（CyTOF）与时间分辨磷酸化测序技术，结合深度学习模型（如循环神经网络）解析磷酸化动力学与信号转导通路活性的因果关联。进一步引入\"磷酸化轨迹熵\"（phospho-trajectory entropy）作为量化指标，可揭示细胞命运决策中信号-修饰协同网络的临界点，例如在T细胞激活早期，CD3ζ链特定酪氨酸磷酸化与ERK通路双磷酸化事件的时空调控阈值决定增殖或耐受状态的分岔。该假设可通过构建光遗传学可控的磷酸化报告系统，在单细胞中验证动态磷酸化模式与信号通路输出的因果关系。",
+        "elapsed": 71.5
+      },
+      {
+        "method": "P2",
+        "hypotheses_text": "L1 Hypothesis: Phospho-seq通过整合单细胞蛋白质磷酸化状态、表观基因组可及性（scATAC-seq）及转录组的多模态数据，结合深度学习驱动的动态信号网络建模，能够揭示神经发育过程中细胞信号传导与翻译后修饰的时空耦合机制，从而建立从信号分子激活到基因表达调控的全链条解析框架。\n\nL2 Hypotheses:\n- Q1: 基于图神经网络（GNN）构建的磷酸化-调控网络模型，可通过关联激酶底物磷酸化位点与cis-调控元件的染色质交互图谱，系统解码信号转导通路与转录因子活性的级联调控关系，揭示蛋白质翻译后修饰对基因表达的直接调控路径与间接表观遗传中介效应。\n  \n- Q2: Wnt/β-catenin、Notch等神经发育关键信号通路的磷酸化动态梯度，通过时空调控组蛋白修饰酶复合物招募与染色质重塑，形成谱系特异的基因表达程序；利用伪时间轨迹推断算法可识别信号通路切换阈值与细胞命运决定临界点的因果关联。",
+        "elapsed": 47.2
+      },
+      {
+        "method": "P3",
+        "hypotheses_text": "L1 Hypothesis: Phospho-seq通过整合单细胞测序与多模态数据分析技术，能够系统解析神经发育过程中磷酸化蛋白动态修饰与染色质可及性变化的时空耦合机制。该方法利用三模态核分析算法同步解析磷酸化位点活性、顺式调控元件开放状态及转录组特征，揭示信号通路激活与基因调控网络重构的分子时钟匹配效应。\n\nL2 Hypotheses:\n- Q1: 基于数据整合的Phospho-seq技术可通过计算策略建立磷酸化蛋白活性与基因调控网络的动态映射模型。假设特定信号通路（如MAPK/ERK）的磷酸化状态与顺式调控元件（如增强子H3K27ac修饰）存在非线性协同关系，这种关系可通过多模态数据分析量化为基因表达预测的参数化模型。\n- Q2: 神经发育谱系分化过程中，Wnt/β-catenin信号通路的磷酸化梯度通过调控间脑谱系关键转录因子（如PAX6）的染色质可及性，形成发育时间窗的表观遗传记忆。该机制可被高通量单细胞测序与轨迹推断算法捕获为分化潜能的动态分界点。\n\nL3 Hypotheses:\n- Q1: 三模态核分析整合Phospho-seq数据可揭示CDK5磷酸化激酶与ATAC-seq峰强度在端脑发育中的协同作用网络。假设该网络通过计算建模可预测神经前体细胞向视网膜类器官分化的关键节点，其预测准确性可通过CRISPR-Cas9介导的磷酸化位点突变实验验证。\n- Q2: 基于诱导多能干细胞的神经发育模型中，EGFR信号通路磷酸化动态与基因调控网络（GRN）的重构存在模态特异性时序关联。假设通过开发新型数据整合算法（如深度矩阵分解模型）可解耦磷酸化蛋白（如AKT1）、染色质可及性（如SOX2增强子区域）与转录因子（如NEUROG2）的协同调控模块，并通过时序单细胞测序数据验证其预测的分化轨迹重编程效率。",
+        "elapsed": 58.0
+      },
+      {
+        "method": "P4",
+        "hypotheses_text": "L1 Hypothesis:\n  hypothesis: Phospho-seq的三模态核分析框架可通过整合单细胞磷酸化蛋白动态、染色质可及性图谱与转录组数据，建立神经发育中信号转导与基因调控的时空耦合模型，揭示磷酸化修饰驱动染色质状态转换的分子机制。\n  reasoning: \n    1. 已知Phospho-seq可同时捕获磷酸化蛋白和染色质可及性（生物学基础）\n    2. 三模态核分析技术能实现多组学数据降维与关联挖掘（计算机科学技术支撑）\n    3. 磷酸化修饰可动态调控转录因子活性及染色质重塑复合体功能（潜在分子机制）\n    4. 因此，开发基于深度学习的跨模态关联算法，可发现磷酸化节点蛋白与开放染色质区域的协同变化规律，预测信号通路激活对基因表达时序的控制作用\n  key_concepts: [三模态核分析, 磷酸化蛋白, 染色质可及性, 基因调控网络, 神经发育]\n  disciplines_bridged: [生物学, 计算机科学技术]\n\nL2 Hypotheses:\n- Q1:\n    hypothesis: 基于图神经网络的数据整合方法可识别磷酸化蛋白与增强子元件的动态相互作用，揭示信号依赖性基因表达的拓扑调控机制。\n    reasoning: \n      1. 数据整合需连接蛋白修饰状态与顺式调控元件（生物学需求）\n      2. 图神经网络擅长建模分子间复杂相互作用（计算机方法优势）\n      3. 推测磷酸化修饰可能通过调控转录因子-DNA结合影响增强子-启动子环形成\n      4. 构建磷酸化位点与ATAC-seq峰的关联图谱，可预测信号通路扰动对基因表达的影响\n    key_concepts: [数据整合, 图神经网络, 磷酸化蛋白, 增强子元件, 信号依赖性基因表达]\n    disciplines_bridged: [生物学, 计算机科学技术]\n- Q2:\n    hypothesis: MAPK/ERK信号通路通过级联磷酸化调控染色质重塑复合体定位，建立间脑谱系特异性染色质可及性景观。\n    reasoning:\n      1. MAPK/ERK信号约束间脑谱系（已知生物学关系）\n      2. 染色质可及性决定细胞命运特化（生物学基础）\n      3. 信号通路可能通过磷酸化修饰调控BAF复合体亚基核定位\n      4. 因此，阻断ERK磷酸化将导致谱系决定基因增强子区域的可及性丧失\n    key_concepts: [MAPK/ERK信号通路, 磷酸化修饰, 染色质重塑复合体, 染色质可及性, 间脑谱系]\n    disciplines_bridged: [基础医学, 生物学]\n\nL3 Hypotheses:\n- Q1:\n    hypothesis: 融合动态磷酸化蛋白互作网络与染色质空间构象数据的物理建模，可揭示神经发育中信号梯度转化为基因表达边界的相变机制。\n    reasoning:\n      1. 需解析信号-染色质-转录协同作用（操作层面需求）\n      2. 物理建模可模拟生物大分子相分离现象（计算机科学技术工具）\n      3. 推测磷酸化修饰通过改变蛋白质凝聚物特性调控染色质区室化\n      4. 建立微流控芯片模拟信号梯度环境，结合超分辨率成像验证相变临界点\n    key_concepts: [磷酸化蛋白互作网络, 染色质空间构象, 相变模型, 信号梯度, 基因表达边界]\n    disciplines_bridged: [生物学, 计算机科学技术]\n- Q2:\n    hypothesis: 基于迁移学习的跨物种数据整合框架可识别保守性磷酸化调控模块，用于人类视网膜类器官发育缺陷的机制性诊断。\n    reasoning:\n      1. 视网膜类器官是重要研究模型（生物学应用）\n      2. 迁移学习可跨物种提取共有特征（计算机方法优势）\n      3. 推测关键信号节点在物种间呈现保守性磷酸化动态\n      4. 因此，小鼠模型中定义的磷酸化特征可预测人类类器官的发育障碍\n    key_concepts: [迁移学习, 磷酸化调控模块, 视网膜类器官, 跨物种整合, 发育缺陷]\n    disciplines_bridged: [基础医学, 计算机科学技术]",
+        "elapsed": 55.3
+      },
+      {
+        "method": "P5",
+        "hypotheses_text": "[L1] 磷酸化测序 --[应用计算策略整合转录组测量]--> 计算策略\n[L1] 计算策略 --[多模态数据分析被整合到磷酸化测序工作流程]--> 多模态数据分析\n[L1] 多模态数据分析 --[数据整合方法连接磷酸化蛋白活性与基因调控]--> 翻译后修饰\n[L1] 磷酸化测序 --[数据整合方法连接磷酸化蛋白活性与基因调控]--> 磷酸化蛋白\n[L1] 磷酸化蛋白 --[细胞信号传导驱动神经发育过程]--> 信号通路\n[L1] 信号通路 --[高通量发现技术揭示基因调控网络关联]--> 基因调控网络\n[L2] 数据整合 --[数据整合方法连接磷酸化蛋白活性与基因调控]--> 磷酸化蛋白\n[L2] 磷酸化蛋白 --[磷酸化蛋白活性与顺式调控元件动态关联]--> 顺式调控元件\n[L2] 顺式调控元件 --[顺式调控元件与转录因子共同构建基因调控网络]--> 基因调控网络\n[L2] 信号通路 --[信号通路调控间脑谱系特异性关系]--> 间脑谱系\n[L2] 间脑谱系 --[间脑谱系分化过程依赖神经发育调控机制]--> 神经发育\n[L2] 神经发育 --[神经发育过程由动态基因调控网络驱动]--> 基因调控网络\n[L3] 数据整合 --[整合磷酸化蛋白活性数据]--> 磷酸化蛋白\n[L3] 磷酸化蛋白 --[介导信号通路调控]--> 信号通路\n[L3] 信号通路 --[调控驱动基因调控网络重构]--> 基因调控网络",
+        "elapsed": 0.0
+      }
+    ]
+  },
+  {
+    "tag": "test_1",
+    "paper": {
+      "paper_id": "4604d96e1a92",
+      "title": "Washable heat-resistant and inkjet-printed devices on cotton fabric for wearable applications",
+      "abstract": "Electronic textiles (e-textiles) face challenges in maintaining fabric properties and achieving high electrical conductivity with screen printing and particle-based inkjet printing. While particle-fre...",
+      "primary_discipline": "材料科学",
+      "secondary_disciplines": [
+        "材料科学",
+        "纺织科学技术",
+        "计算机科学技术"
+      ]
+    },
+    "results": [
+      {
+        "method": "P1",
+        "hypotheses_text": "**Hypothesis:** 将耐高温的二维过渡金属碳化物（如Ti₃C₂Tx MXene）纳米片与温响应型离子液体凝胶复合，并通过界面交联形成仿生分层结构，可构建具有动态自适应热管理与抗水渗透能力的柔性电子材料体系。具体而言，MXene纳米片提供耐热性（>300°C）与电磁屏蔽性能，离子液体凝胶在高温下通过可逆氢键重组维持机械完整性，而仿生表面微结构（如荷叶状乳突）通过调控液滴接触角实现水洗时的超疏水保护与快速干燥，同时保留材料的拉伸导电性（>100%应变下电阻变化<15%）。该体系可通过原位聚合与模板诱导自组装技术实现规模化制备，并通过跨尺度界面优化（如引入硅烷偶联剂调控有机-无机相容性）突破传统材料在热-湿耦合环境下的性能退化瓶颈。",
+        "elapsed": 21.4
+      },
+      {
+        "method": "P2",
+        "hypotheses_text": "L1 Hypothesis: Integrating hierarchical cellulose fiber architectures with digitally printed reactive nanomaterial inks through bio-inspired surface functionalization will create a synergistic material system that simultaneously achieves thermal resilience, water-wash durability, and mechanical flexibility in wearable electronics by leveraging multiscale interfacial interactions between organic and inorganic components.\n\nL2 Hypotheses:  \n- Q1: The thermal stability of cellulose-based e-textiles can be enhanced through electrostatic layer-by-layer assembly of poly-L-lysine coatings that form cationic bridges between negatively charged cellulose hydroxyl groups and silver/carbon nanotube networks, creating a thermally dissipative matrix that prevents fiber degradation while maintaining conductive nanoparticle adhesion during high-temperature exposure.  \n- Q2: High-resolution conductive patterns can be achieved through computational fluid dynamics-optimized inkjet printing parameters that control reactive ink diffusion kinetics on fibrous substrates, combined with machine learning algorithms for real-time pattern compensation based on textile surface topography scans, enabling sub-100μm feature size retention and conductivity uniformity across complex 3D fabric geometries.",
+        "elapsed": 22.1
+      },
+      {
+        "method": "P3",
+        "hypotheses_text": "L1 Hypothesis:  \nThe integration of cellulose-based fibers with hierarchical architecture and reactive silver/carbon nanotube inks will create a synergistic effect where the cotton's inherent thermal resistance (>300°C) stabilizes the conductive network during high-temperature exposure, while the carbon nanotube-mediated silver nanoparticle packing (density >1.25×10⁵ S m⁻¹) forms a percolation pathway that maintains electrical continuity under mechanical deformation from washing cycles (>50 cycles at 40°C). This dual-phase system, combining textile science's fiber hierarchy with materials science's nanostructuring, will achieve washable e-textiles with <10% resistance change after 100 bending cycles (radius 5mm).\n\nL2 Hypotheses:  \n- Q1:  \nThe polycationic poly-L-lysine coating on cellulose fibers will electrostatically anchor negatively charged carbon nanotubes (zeta potential -40mV), creating a template for定向 assembly of silver ions (Ag⁺) that reduces activation energy for nanoparticle formation by 30% (vs. uncoated fibers). This interfacial engineering between textile chemistry and materials science will produce thermally stable interfaces where the cellulose's hydrogen bonding network (>10⁹ bonds/m²) cooperates with carbon nanotube thermal conductivity (3500 W/m·K) to dissipate localized heat, achieving >85% conductivity retention after 1-hour annealing at 250°C.  \n\n- Q2:  \nA machine learning-optimized inkjet printing system using finite element modeling of nozzle fluid dynamics (viscosity 8-12 cP) will enable sub-50μm pattern resolution on cotton's hierarchical surfaces by predicting fiber-scale capillary action. By integrating textile science's fabric porosity parameters (>60% void space) with computer science's topology optimization algorithms, the printed silver/carbon nanotube composite tracks will achieve 95% pattern fidelity with <5% nozzle clogging rate, enabling customizable sensor arrays for gesture recognition with 0.1ms response time.\n\nL3 Hypotheses:  \n- Q1:  \nThe in-situ reduction of silver ions (10-50μM) by carbon nanotube networks (sheet resistance <100Ω/□) during thermal curing will follow a diffusion-limited aggregation mechanism where nanotube alignment along cotton microfibers (aspect ratio >100:1) directs nanoparticle coalescence into 3D conductive bridges. This materials-textile synergy will produce temperature coefficient of resistance (TCR) values <0.01%/°C between 25-150°C by balancing silver's positive TCR (+0.38%/°C) with cotton's negative TCR (-0.12%/°C).  \n\n- Q2:  \nA genetic algorithm optimizing serpentine sensor patterns based on cotton's hierarchical pore distribution (pore size 10-200μm) will maintain piezoresistive sensitivity (6.02 kPa⁻¹) under 2000 cyclic bends by aligning conductive pathways with fiber micro-motion trajectories. Computer science's Voronoi diagram-based design combined with textile mechanics' bending strain mapping (>15% surface strain at fold lines) will reduce resistance drift to <2% through stress-distributing geometries that preserve carbon nanotube network connectivity during ironing (180°C, 3kg pressure).",
+        "elapsed": 44.8
+      },
+      {
+        "method": "P4",
+        "hypotheses_text": "L1 Hypothesis:  \nhypothesis: Integrating poly-L-lysine surface modification with algorithm-driven inkjet printing path optimization will create hierarchical conductive networks that self-reinforce during thermal stress, enabling e-textiles to maintain conductivity above 1×10⁵ S m⁻¹ even after 50 washing cycles.  \nreasoning: 1. Poly-L-lysine coating (material science) provides positively charged anchor points for carbon nanotubes (material science)  \n2. Computer-generated fractal printing patterns (computer science) maximize nanotube network connectivity within cotton's microfibril structure (textile tech)  \n3. Heat-induced hydrogen bonding between lysine residues and cellulose (material-textile interaction) strengthens nanotube-metal nanoparticle adhesion during ironing  \n4. This multiscale reinforcement mechanism preserves conductive pathways despite mechanical deformation from washing  \nkey_concepts: poly-L-lysine coating, fractal printing patterns, hydrogen bonding, microfibril structure, thermal stress self-reinforcement  \ndisciplines_bridged: 材料科学, 纺织科学技术, 计算机科学技术  \n\nL2 Hypotheses:  \n- Q1:  \n    hypothesis: The carboxylate groups on oxidized cotton fibers will form coordination complexes with silver ions, creating a charge-gradient interface that accelerates ion migration and nanoparticle coalescence at 150°C.  \n    reasoning: 1. Controlled plasma oxidation (textile tech) generates uniform surface carboxyl groups on cellulose (material science)  \n    2. These groups coordinate with Ag+ ions (material chemistry) to form localized electron transfer highways  \n    3. Thermal energy enhances ion mobility (physics) through the cellulose matrix while lysine bridges (material science) prevent nanoparticle detachment  \n    4. Resulting gradient conductive layers will show 30% higher thermal stability versus conventional coatings  \n    key_concepts: plasma oxidation, carboxylate-silver coordination, charge-gradient interface, cellulose matrix, thermal-enhanced ion mobility  \n    disciplines_bridged: 材料科学, 纺织科学技术  \n\n- Q2:  \n    hypothesis: A genetic algorithm optimizing nozzle firing sequences will produce 3D conductive architectures by exploiting cotton's natural helical fiber arrangement, achieving 20μm resolution without nanoparticle aggregation.  \n    reasoning: 1. Algorithm (computer science) modulates ink droplet deposition timing to synchronize with cotton's twisted fiber packing (textile microstructure)  \n    2. This creates capillary-driven self-assembly of silver nanowires (material science) along fiber junctions  \n    3. The resulting spiral conductive pathways enhance bending resilience through topological reinforcement  \n    4. Predicted 90% yield improvement in sub-50μm feature printing versus conventional raster scanning  \n    key_concepts: genetic algorithm, capillary self-assembly, helical fiber packing, spiral conductive pathways, topological reinforcement  \n    disciplines_bridged: 计算机科学技术, 纺织科学技术, 材料科学  \n\nL3 Hypotheses:  \n- Q1:  \n    hypothesis: The π-π interactions between carbon nanotubes and aromatic amino acids in lysine coating will create electron tunneling bridges that reduce silver nanoparticle nucleation energy by 40% under printing-induced shear stress.  \n    reasoning: 1. Shear forces during inkjet ejection (textile engineering) align nanotubes along flow field gradients (fluid dynamics)  \n    2. This orientation enhances π-π stacking with lysine aromatic rings (material chemistry)  \n    3. The molecular bridges form percolation networks that lower redox potential for Ag+ reduction (electrochemistry)  \n    4. Shear-optimized printing will produce nanoparticles with 50% narrower size distribution  \n    key_concepts: shear-induced alignment, π-π stacking, electron tunneling bridges, redox potential reduction, percolation networks  \n    disciplines_bridged: 材料科学, 纺织科学技术  \n\n- Q2:  \n    hypothesis: Convolutional neural networks trained on cotton micromorphology will generate stress-mitigating conductive patterns that exploit fabric's hierarchical porosity to maintain 95% signal integrity after 1000 bending cycles.  \n    reasoning: 1. Micro-CT scans (material characterization) map cotton's pore size distribution (textile structure)  \n    2. CNN algorithm (computer science) identifies stress concentration hotspots in traditional grid patterns  \n    3. Bioinspired labyrinth patterns are generated to align conductive traces with natural stress-dissipation pathways  \n    4. These patterns will show 3× lower resistance change versus straight-line configurations under cyclic bending  \n    key_concepts: micro-CT morphological analysis, stress-hotspot CNN prediction, bioinspired labyrinth patterns, hierarchical porosity alignment, natural stress-dissipation pathways  \n    disciplines_bridged: 计算机科学技术, 纺织科学技术, 材料科学",
+        "elapsed": 45.5
+      },
+      {
+        "method": "P5",
+        "hypotheses_text": "[L1] 反应性银墨水 --[通过喷墨打印形成导电网络]--> 喷墨打印\n[L1] 喷墨打印 --[促进银离子还原]--> 银离子还原\n[L1] 银离子还原 --[增强高温电阻稳定性]--> 高温电阻\n[L1] 碳纳米管墨水 --[构建层次结构导电通路]--> 层次结构\n[L1] 层次结构 --[提升紧密堆积纳米颗粒附着率]--> 紧密堆积纳米颗粒\n[L1] 紧密堆积纳米颗粒 --[实现可水洗的耐热性增强]--> 耐热性\n[L1] 无颗粒反应性墨水 --[避免喷嘴堵塞实现高分辨率图案化]--> 喷嘴堵塞\n[L1] 喷嘴堵塞 --[限制金属网络形成均匀性]--> 金属网络\n[L1] 金属网络 --[协同聚-赖氨酸涂层棉织物提升弯曲稳定性]--> 聚-赖氨酸涂层棉织物\n[L2] 纤维素基纤维 --[涂覆形成]--> 聚-赖氨酸涂层棉织物\n[L2] 聚-赖氨酸涂层棉织物 --[构建导电网络]--> 导电网络\n[L2] 导电网络 --[促进银离子还原]--> 银离子还原\n[L2] 喷墨打印 --[应用墨水]--> 反应性银墨水\n[L2] 反应性银墨水 --[形成纳米颗粒]--> 紧密堆积纳米颗粒\n[L2] 紧密堆积纳米颗粒 --[增强高温电阻]--> 高温电阻\n[L3] 碳纳米管墨水 --[促进]--> 银离子还原\n[L3] 银离子还原 --[诱导形成]--> 紧密堆积纳米颗粒\n[L3] 紧密堆积纳米颗粒 --[增强]--> 高温电阻\n[L3] 可定制图案化 --[依赖]--> 喷墨打印\n[L3] 喷墨打印 --[构建]--> 电子纺织品\n[L3] 电子纺织品 --[维持]--> 弯曲",
+        "elapsed": 0.0
+      }
+    ]
+  },
+  {
+    "tag": "test_2",
+    "paper": {
+      "paper_id": "e00e5d5a42eb",
+      "title": "Conformational landscapes of rigid and flexible molecules explored with variable temperature ion mobility-mass spectrometry",
+      "abstract": "Abstract Understanding the effect of temperature to the structural integrity of proteins is relevant to diverse areas such as biotechnology and climate change. Variable temperature ion mobility-mass s...",
+      "primary_discipline": "化学",
+      "secondary_disciplines": [
+        "化学",
+        "物理学",
+        "生物学"
+      ]
+    },
+    "results": [
+      {
+        "method": "P1",
+        "hypotheses_text": "**假设：**  \n在变温离子迁移谱-质谱（IMS-MS）中，温度梯度引发的分子构象变化将导致离子碰撞截面积（CCS）与质荷比（m/z）的协同非线性响应，这种响应可通过温度分辨的迁移峰分裂、峰宽展宽或异常电荷态分布量化表征。具体而言，当温度跨越特定构象转变的能垒时，分子会经历从基态构象到高能激发态的协同跃迁，表现为IMS迁移时间离散峰的强度反转（如紧凑构象峰强度降低，扩展构象峰增强），同时质谱中因构象依赖的离子化效率差异而出现非整数电荷态分布。通过构建温度-CCS-m/z三维关联模型，并结合分子动力学模拟的构象自由能曲线，可解析构象转变的焓变（ΔH）、熵变（ΔS）及动力学速率常数，从而揭示分子构象景观的温度响应机制中热力学驱动与动力学限制的耦合作用。  \n\n**可验证性：**  \n1. 实验：在可控温度梯度（如-50°C至200°C）下，对目标分子（如肽或小蛋白）进行IMS-MS分析，记录CCS和m/z随温度的变化；  \n2. 数据分析：识别迁移峰分裂/强度反转的临界温度，并与差示扫描量热法（DSC）测得的相变温度对比；  \n3. 模型拟合：将实验数据输入基于过渡态理论的热力学模型，验证ΔH、ΔS与构象跃迁的关联性；  \n4. 独立验证：通过温度骤变实验（如快速升/降温循环）测试构象响应的动力学可逆性。",
+        "elapsed": 34.5
+      },
+      {
+        "method": "P2",
+        "hypotheses_text": "L1 Hypothesis: VT-IM-MS技术通过多维度温度梯度下的离子碰撞截面积（CCS）动态响应，可解耦分子-环境相互作用与构象变化的物理边界，揭示生物大分子在热力学非平衡态下的能量景观重构规律，建立从纳米尺度结构柔性到宏观热稳定性的跨尺度理论框架。\n\nL2 Hypotheses:\n- Q1: <paragraph>\n对于聚-赖氨酸树状大分子，VT-IM-MS的温度响应曲线将呈现分段式动力学特征——在190-270 K区间因离子动能与碰撞频率的正相关性符合Arrhenius方程，而在270-350 K区间因末端胺基团热致去质子化引发局部构象收缩，导致CCS偏离理想气体模型预测值，这种化学键能驱动的结构刚性变化可通过碰撞诱导解离实验与动力学蒙特卡洛模拟交叉验证。\n\n- Q2: <paragraph>\n蛋白质的温度依赖性CCS拐点（如α-突触核蛋白在210 K的中间态捕获）将对应其折叠自由能曲面的拓扑转变：低温下熵驱动的无序结构冻结符合Kauzmann理论临界温度，而高温（350 K）的结构重构则反映协同熔融的焓-熵补偿效应，通过Van't Hoff方程与Eyring图的联合分析可提取不同折叠中间体的活化能垒（ΔG‡），揭示分子伴侣作用缺失下自发折叠的非平衡动力学路径。",
+        "elapsed": 26.6
+      },
+      {
+        "method": "P3",
+        "hypotheses_text": "L1 Hypothesis:  \n温度梯度诱导的动能变化通过玻尔兹曼分布调控离子在漂移池中的碰撞频率，导致构象异构体（如α-突触核蛋白的13+离子）的碰撞截面积（CCS）呈现非线性响应，这种跨尺度效应可结合梅森-尚普方程的流体力学模型与蛋白质体外稳定性曲线的热力学参数，建立温度-构象动态平衡的数学框架。例如，在210 K下观测到的动力学捕获中间体可能对应于富勒烯类缓冲气体与大分子离子间非弹性碰撞引发的局部熵阱效应。\n\nL2 Hypotheses:  \n- Q1:  \n聚-赖氨酸树状大分子（PLL）的刚性结构在温度梯度下遵循硬球碰撞模型，其CCS温度依赖性与约化质量成反比关系，可通过动量转移积分公式定量描述离子-中性对相互作用截面的变化。实验中观测到的190-350 K区间CCS线性收缩可能反映树状大分子内部原子间相互作用势能面的刚性增强，与弹性碰撞假设下的温度系数（dCCS/dT）理论预测值存在统计显著差异（p<0.05）。  \n\n- Q2:  \n泛素蛋白的CCS在350 K时突增与体外稳定性曲线的热变性温度（Tm=348 K）存在协同效应，其过渡态活化能（ΔG‡=15±2 kcal/mol）可通过阿伦尼乌斯方程与离子迁移时间-温度曲线的拐点进行交叉验证。β-酪蛋白在250 K的重构行为则可能源于长程吸引力主导的折叠路径，表现为玻尔兹曼常数标度下的非平衡态熵变（ΔS≠=-30±5 cal/mol·K）。\n\nL3 Hypotheses:  \n- Q1:  \n在氦气缓冲气体环境中，通过调控漂移池电场强度（0-200 V/cm）改变α-突触核蛋白构象异构体的碰撞能量阈值，可验证非弹性碰撞模型预测的结构重构路径：低能碰撞（<0.1 eV）优先稳定致病相关的β-折叠中间体，而高能碰撞（>0.5 eV）促进无规卷曲态向天然态的回折叠。此过程的速率常数（k=10³-10⁵ s⁻¹）应与分子动力学模拟的二面角旋转能垒呈正相关（R²>0.9）。  \n\n- Q2:  \n基于梅森-尚普方程的修正形式（引入温度依赖的气体粘度项），泛素离子的漂移速度温度系数（dvd/dT=-0.2±0.05 %/K）与体外热稳定性曲线的斜率（dR/dT，R为折叠率）存在线性响应关系。当缓冲气体换用六氟化硫（SF6）时，由于质量匹配效应导致的动量转移效率下降，该关系的截距将产生±15%的系统偏移，此预测可通过同位素标记实验验证。",
+        "elapsed": 43.2
+      },
+      {
+        "method": "P4",
+        "hypotheses_text": "L1 Hypothesis:  \nhypothesis: 跨尺度耦合变温离子迁移谱-质谱的碰撞能量传递模型与蛋白质折叠热力学参数，可揭示非平衡温度梯度下构象重构的临界相变特征。通过整合物理学的硬球碰撞理论与生物学的体外稳定性曲线，建立离子漂移速度与构象自由能变的非线性关联方程。  \nreasoning: 前提：VT-IM-MS可同步捕获温度诱导的结构变化与碰撞截面积响应（化学）；泛素的体外稳定性曲线显示热力学折叠中间态（生物学）。机制：梅森-尚普方程中漂移速度与电场的线性关系（物理学）可能隐含构象转变的活化能垒信息。预测：在250-350 K区间，泛素离子的漂移速度拐点将对应其热力学稳定性阈值，且该拐点位置随缓冲气体压力呈非线性偏移。  \nkey_concepts: 变温离子迁移谱-质谱, 梅森-尚普方程, 体外稳定性曲线, 漂移速度, 活化能  \ndisciplines_bridged: 化学, 物理学, 生物学  \n\nL2 Hypotheses:  \n- Q1:  \n    hypothesis: 聚-赖氨酸树状大分子的碰撞截面积-温度响应曲线存在滞后效应，该效应源于离子-中性对相互作用能垒与库伦斥力的动态平衡，可通过富勒烯缓冲气体调控实现构象弛豫时间的精确测定  \n    reasoning: 前提：PLL的CCS变化符合碰撞理论但未考虑离子-中性对（化学）。机制：缓冲气体的约化质量（物理学）影响动量转移积分，进而调制离子构象弛豫过程。预测：在氦气与富勒烯缓冲体系中，PLL树状大分子13+电荷态的CCS温度梯度曲线将呈现0.5 nm²量级的滞后环宽度差异  \n    key_concepts: 聚-赖氨酸树状大分子, 碰撞截面积, 离子-中性对, 缓冲气体, 动量转移积分  \n    disciplines_bridged: 化学, 物理学  \n- Q2:  \n    hypothesis: 蛋白质结构完整性的热力学特征可通过温度依赖的碰撞截面积熵变进行量化，其与体外稳定性曲线的Gibbs自由能变存在指数补偿关系，反映生物大分子折叠的疏水效应与熵驱动机制  \n    reasoning: 前提：温度依赖的CCS变化反映结构重构（化学）。机制：长程吸引力（物理学）主导的疏水效应与玻尔兹曼常数关联的熵变（生物学）共同决定稳定性曲线形状。预测：β-酪蛋白在210 K捕获的展开中间体将呈现CCS熵变ΔS＞200 J/mol·K，且该值与体外热变性数据的Tm呈负相关指数关系  \n    key_concepts: 碰撞截面积, 结构完整性, 体外稳定性曲线, 熵变, 长程吸引力  \n    disciplines_bridged: 化学, 生物学  \n\nL3 Hypotheses:  \n- Q1:  \n    hypothesis: 基于梅森-尚普方程的漂移速度-电场线性模型，在泛素折叠中间态温度区间（250-310 K）将偏离理想硬球碰撞预测，该偏离度与体外稳定性曲线的焓变ΔH存在量子隧穿效应类似的温度指数关系  \n    reasoning: 前提：梅森-尚普方程假设弹性碰撞（物理学），但泛素结构变化包含非弹性重构（生物学）。机制：电场加速的离子在漂移池中经历的非弹性碰撞导致动量转移积分异常。预测：当电场强度＞200 V/cm时，泛素13+离子的漂移速度温度系数在280 K附近出现＞15%的负偏离，且偏离幅值与ΔH呈exp(-T/50)函数关系  \n    key_concepts: 梅森-尚普方程, 漂移速度, 体外稳定性曲线, 动量转移积分, 非弹性碰撞  \n    disciplines_bridged: 物理学, 生物学  \n- Q2:  \n    hypothesis: α-突触核蛋白构象异构体的转换速率可通过缓冲气体调控的硬球碰撞模型进行非阿伦尼乌斯拟合，其有效活化能与210 K动力学捕获的中间体自由能垒存在约化质量依赖的线性自由能关系  \n    reasoning: 前提：缓冲气体的约化质量决定碰撞效率（物理学），而α-突触核蛋白构象转换需克服能垒（生物学）。机制：非弹性碰撞诱导的结构重构遵循Marcus理论的曲率关系。预测：当使用Ne/Xe混合缓冲气体时，α-突触核蛋白13+离子的异构体转换活化能Ea将与中间体自由能ΔG‡呈现斜率0.78的线性相关（R²＞0.9），且该关系在约化质量μ＞20 amu时发生偏转  \n    key_concepts: 缓冲气体, 约化质量, 构象异构体, 动力学捕获, 非弹性碰撞  \n    disciplines_bridged: 化学, 物理学",
+        "elapsed": 46.2
+      },
+      {
+        "method": "P5",
+        "hypotheses_text": "[L1] 变温离子迁移谱-质谱 --[影响]--> 构象景观\n[L1] 构象景观 --[导致]--> 温度依赖\n[L1] 温度依赖 --[促进]--> 梅森-尚普方程\n[L1] 结构变化 --[影响]--> 体外稳定性曲线\n[L1] 体外稳定性曲线 --[导致]--> 泛素\n[L1] 泛素 --[促进]--> 电场\n[L1] 动力学捕获展开中间体 --[210 190]--> 温度\n[L1] 温度 --[导致]--> 活化能\n[L1] 活化能 --[促进]--> 碰撞理论\n[L2] 变温离子迁移谱-质谱 --[测量温度对碰撞截面积的影响]--> 碰撞截面积\n[L2] 碰撞截面积 --[随温度依赖变化]--> 温度依赖\n[L2] 温度依赖 --[决定聚-赖氨酸树状大分子构象变化]--> 聚-赖氨酸树状大分子\n[L2] 温度依赖 --[调控碰撞截面积变化]--> 碰撞截面积\n[L2] 碰撞截面积 --[反映结构变化特征]--> 结构变化\n[L2] 结构变化 --[遵循体外稳定性曲线预测]--> 体外稳定性曲线\n[L3] 梅森-尚普方程 --[影响]--> 碰撞截面积\n[L3] 碰撞截面积 --[导致]--> 温度依赖\n[L3] 温度依赖 --[促进]--> 体外稳定性曲线\n[L3] 缓冲气体 --[ﬂ]--> 硬球状\n[L3] 硬球状 --[导致]--> 构象异构体\n[L3] 构象异构体 --[促进]--> 结构完整性",
+        "elapsed": 0.0
+      }
+    ]
+  },
+  {
+    "tag": "test_3",
+    "paper": {
+      "paper_id": "ab6c0cb038a0",
+      "title": "Second coordination sphere regulates nanozyme inhibition to assist early drug discovery",
+      "abstract": "Early drug discovery is a time- and cost-consuming task requiring enzymes. Although nanozymes with metal sites akin to metallocofactors display similar activities, the lack of proximal amino acids hin...",
+      "primary_discipline": "化学",
+      "secondary_disciplines": [
+        "化学",
+        "材料科学"
+      ]
+    },
+    "results": [
+      {
+        "method": "P1",
+        "hypotheses_text": "我们假设第二配位层通过动态氢键网络与金属活性中心形成协同偶极极化效应，调控纳米酶的轨道相互作用能级。具体而言，第二配位层中的弱键合极性基团（如磺酸基/酰胺基）在界面电场作用下产生定向偶极矩，通过介电屏蔽效应选择性增强金属-d轨道与底物分子轨道的杂化效率，从而降低氧转移反应的过渡态能垒（ΔG‡≤20 kcal/mol）。当抑制剂存在时，其与第二配位层的疏水簇（如苯基/长链烷基）发生π-σ协同作用，触发配位层构象锁定效应，使金属中心配位数降低1-2个单位，导致催化活性（kcat/Km）下降3-5倍且抑制解离常数（Ki）呈现底物依赖性双指数衰减。该假设可通过原位同步辐射XANES结合分子动力学模拟进行验证。",
+        "elapsed": 22.7
+      },
+      {
+        "method": "P2",
+        "hypotheses_text": "L1 Hypothesis: The second coordination sphere in CuNC-OH nanozymes, composed of atomically dispersed Cu-N<sub>4</sub> sites and proximal hydroxyl groups, mimics the dual-site catalytic mechanism of thyroid peroxidases by synergistically regulating substrate adsorption (H<sub>2</sub>O<sub>2</sub>) and electron transfer processes, thereby enabling tunable enzymatic activity and specific inhibition through competitive binding of antithyroid drugs.\n\nL2 Hypotheses:\n- Q1: The chemical structure of the second coordination layer (e.g., hydroxyl group density/orientation) governs H<sub>2</sub>O<sub>2</sub> adsorption geometry and proton-coupled electron transfer kinetics by modulating local electrostatic environments and hydrogen-bonding networks, where optimal hydroxyl spacing enhances peroxide activation through dual-site polarization.\n- Q2: The salt-templating synthesis of CuNC-OH relies critically on the anion/cation pair ratio and calcination temperature gradient, where precise stoichiometric control of Cu/N/C precursors and directional pore formation during pyrolysis determine the exposure of Cu-N<sub>4</sub> active sites and surface hydroxyl accessibility, with chloride ions serving as structure-directing agents for hierarchical porosity.",
+        "elapsed": 17.7
+      },
+      {
+        "method": "P3",
+        "hypotheses_text": "L1 Hypothesis: \nThe integration of chemically engineered secondary coordination spheres (e.g., proximal hydroxyl groups in CuNC-OH) with materials science-driven structural control (e.g., salt-templated nanoporosity) enables synergistic modulation of nanozyme catalytic activity and inhibition characteristics. This dual-regulation mechanism operates through hydroxyl group-mediated proton transfer pathways (chemistry) interacting with nanozyme surface charge distribution governed by template-directed pore architecture (materials science), thereby optimizing peroxidase-like activity while enabling specific inhibitor recognition akin to thyroid peroxidase.\n\nL2 Hypotheses:\n- Q1: The spatial orientation and hydrogen-bonding capability of hydroxyl groups in the second coordination sphere (chemistry) directly determine the adsorption geometry of hydrogen peroxide at Cu-N₄ active sites (metal site chemistry) by stabilizing transition states through cooperative electrostatic interactions with nitrogen-doped carbon matrix (materials science). This can be tested by comparing H₂O₂ binding energies in CuNC-OH variants with controlled hydroxyl density using in-situ spectroscopic analysis.\n  \n- Q2: The critical process parameters for salt-templated nanozyme synthesis involve synchronized control of NaCl crystal growth kinetics (materials science) and Cu-N coordination polymerization rate (chemistry) during nitrogen flow annealing, where optimal molar ratios of metal precursor to template salt (1:3.5) and ramping rates (5°C/min) produce atomically dispersed Cu-N₄ sites with maximized surface area (800 m²/g) for catalytic applications.\n\nL3 Hypotheses:\n- Q1: The catalytic selectivity of nanozymes for peroxidase substrates can be systematically optimized by coupling hydroxyl group density in the secondary coordination sphere (chemistry) with template-induced pore size distribution (materials science), where 35% hydroxyl coverage combined with 5-8 nm mesopores enhances steric accessibility while maintaining transition-state stabilization through dual-site interactions.\n\n- Q2: The Faradaic efficiency of peroxidase-like activity correlates with the co-alignment of Cu-N₄ site electron transfer capability (metal site chemistry) and gas diffusion layer porosity (materials science), such that nanozymes with 4.2 eV work function Cu centers and bimodal pore structures (peak at 2 nm and 50 nm) achieve 92% efficiency through balanced reactant transport and charge transfer kinetics.",
+        "elapsed": 23.9
+      },
+      {
+        "method": "P4",
+        "hypotheses_text": "L1 Hypothesis:  \n**hypothesis:** 第二配位层的动态柔性通过协同调节金属位点的电子分布与吸附物空间取向，实现对纳米酶催化活性的双重调控，这种机制在材料科学中可通过精确调控多孔结构的应力分布来实现。  \n**reasoning:** 已知第二配位层通过羟基调控过氧化氢吸附构象（化学），而材料科学中气体扩散层的孔隙结构可影响反应物传质效率（材料科学）。提出动态柔性概念：第二配位层的柔性→金属d轨道电子密度波动→吸附物取向动态平衡→催化活性梯度。  \n**key_concepts:** [第二配位层动态柔性] [金属位点电子分布] [气体扩散层应力分布] [催化活性梯度]  \n**disciplines_bridged:** 化学, 材料科学  \n\nL2 Hypotheses:  \n- Q1:  \n  **hypothesis:** 第二配位层中极性基团的空间排布密度决定过氧化氢的吸附能级，当与材料科学中的分级孔道结构匹配时可产生协同增强效应。  \n  **reasoning:** 已知羟基优化过氧化氢吸附构象（化学），材料科学中气体扩散层结构影响反应物分布（材料科学）。新机制：极性基团密度→双电层界面水分子取向→过氧化氢扩散能垒→分级孔道梯度浓度效应。  \n  **key_concepts:** [极性基团排布密度] [分级孔道结构] [双电层界面] [吸附能级梯度]  \n  **disciplines_bridged:** 化学, 材料科学  \n\n- Q2:  \n  **hypothesis:** 盐模板策略中的阴离子交换膜界面反应动力学，通过调控铜物种的配位结晶速率，主导纳米酶第二配位层的原子级缺陷分布。  \n  **reasoning:** 已知盐模板策略用于合成铜-氮碳材料（材料科学），化学中金属位点需特定配位环境（化学）。新机制：阴离子交换膜电势梯度→铜离子迁移速率→氮配体局部结晶过冷度→原子级缺陷密度。  \n  **key_concepts:** [阴离子交换膜电势梯度] [配位结晶过冷度] [原子级缺陷分布] [迁移速率调控]  \n  **disciplines_bridged:** 化学, 材料科学  \n\nL3 Hypotheses:  \n- Q1:  \n  **hypothesis:** 第二配位层的亲疏水梯度设计与盐模板合成的多尺度孔隙结构，通过协同调控吸附物传质与反应中间体稳定性，实现催化选择性指数级提升。  \n  **reasoning:** 化学调控第二配位层（化学）与材料孔隙率优化（材料科学）已知各自作用。新机制：亲水性羟基分布→三相界面动态平衡→疏水性中间体富集区→多尺度孔隙的扩散选择性。  \n  **key_concepts:** [亲疏水梯度] [三相界面动态] [多尺度孔隙] [中间体富集]  \n  **disciplines_bridged:** 化学, 材料科学  \n\n- Q2:  \n  **hypothesis:** 金属位点的d带中心偏移与气体扩散层的介孔弯曲度存在协同效应，当满足特定匹配关系时可使过氧化物酶样活性的法拉第效率突破热力学极限。  \n  **reasoning:** 已知金属位点化学特性（化学）与材料结构（材料科学）分别影响催化性能。新机制：d带中心调控→过氧化氢解离能垒→介孔弯曲度诱导的传质-反应耦合→非平衡态热力学突破。  \n  **key_concepts:** [d带中心偏移] [介孔弯曲度] [传质-反应耦合] [非平衡态热力学]  \n  **disciplines_bridged:** 化学, 材料科学",
+        "elapsed": 34.1
+      },
+      {
+        "method": "P5",
+        "hypotheses_text": "[L1] 第二配位层 --[调控活性与抑制]--> 纳米酶\n[L1] 纳米酶 --[表达过氧化物酶样活性]--> 过氧化物酶样活性\n[L1] 过氧化物酶样活性 --[受材料合成工艺影响]--> 盐模板策略\n[L1] 第二配位层 --[协同金属位点构建催化环境]--> 金属位点\n[L1] 金属位点 --[与吸附物发生电子转移]--> 吸附物\n[L1] 吸附物 --[需材料表界面工程优化]--> 气体扩散层\n[L1] 第二配位层 --[模拟天然酶抑制机制]--> 甲状腺过氧化物酶\n[L1] 甲状腺过氧化物酶 --[被抗甲状腺药物抑制]--> 抗甲状腺药物\n[L1] 抗甲状腺药物 --[需化学合成优化抑制效能]--> 巯基抑制剂\n[L2] 第二配位层 --[调控活性与抑制]--> 纳米酶\n[L2] 纳米酶 --[协同作为辅因子与氨基酸残基]--> 羟基\n[L2] 羟基 --[优化吸附构象增强活性]--> 过氧化氢\n[L2] 盐模板策略 --[合成方法]--> 铜-氮碳-羟基材料\n[L2] 铜-氮碳-羟基材料 --[包含金属位点]--> 金属位点\n[L2] 金属位点 --[影响催化特异性]--> 催化选择性\n[L3] 第二配位层 --[调控活性与抑制]--> 纳米酶\n[L3] 纳米酶 --[协同作为辅因子与氨基酸残基]--> 羟基\n[L3] 羟基 --[优化吸附构象增强活性]--> 催化选择性\n[L3] 盐模板策略 --[合成方法]--> 铜-氮碳-羟基材料\n[L3] 铜-氮碳-羟基材料 --[机制相似性]--> 甲状腺过氧化物酶\n[L3] 甲状腺过氧化物酶 --[特异性抑制]--> 抗甲状腺药物\n[L3] 金属位点 --[调控活性与抑制]--> 纳米酶\n[L3] 纳米酶 --[表达]--> 过氧化物酶样活性\n[L3] 过氧化物酶样活性 --[影响]--> 法拉第效率\n[L3] 气体扩散层 --[相关结构]--> 阴离子交换膜\n[L3] 阴离子交换膜 --[影响]--> 法拉第效率\n[L3] 法拉第效率 --[关联指标]--> 催化选择性",
+        "elapsed": 0.0
+      }
+    ]
+  },
+  {
+    "tag": "test_4",
+    "paper": {
+      "paper_id": "def6075552a6",
+      "title": "Comprehensive interaction modeling with machine learning improves prediction of disease risk in the UK Biobank",
+      "abstract": "Understanding how risk factors interact to jointly influence disease risk can provide insights into disease development and improve risk prediction. Here we introduce survivalFM, a machine learning ex...",
+      "primary_discipline": "计算机科学技术",
+      "secondary_disciplines": [
+        "计算机科学技术",
+        "基础医学",
+        "统计学"
+      ]
+    },
+    "results": [
+      {
+        "method": "P1",
+        "hypotheses_text": "Hypothesis: Integrating multi-omics data with hierarchical biological network priors through a hybrid graph attention-autoencoder framework will improve disease risk prediction by explicitly modeling feature interactions guided by domain knowledge while adaptively learning low-dimensional representations that preserve pathophysiological relationships. This approach will outperform conventional ML models in AUC-ROC (≥0.85 vs ≤0.78) and feature selection stability (≥75% cross-validation consistency) when tested on independent cohorts from the UK Biobank with matched genetic, proteomic, and EHR data, as it leverages both known biological pathways to constrain the feature space and data-driven attention mechanisms to identify novel epistatic interactions critical for complex disease risk.",
+        "elapsed": 15.1
+      },
+      {
+        "method": "P2",
+        "hypotheses_text": "L1 Hypothesis: Integrating low-rank factorization-based interaction modeling into survival analysis frameworks can significantly enhance disease risk prediction performance by systematically capturing high-dimensional epistatic effects between clinical, omics, and demographic risk factors that traditional Cox models fail to identify, particularly in large-scale biomedical datasets with complex correlation structures.\n\nL2 Hypotheses:\n- Q1: A machine learning architecture combining tensor decomposition techniques with domain-specific biomedical knowledge graphs can enable systematic identification of synergistic risk factor interactions across heterogeneous data modalities (e.g., genetic variants, protein biomarkers, lifestyle metrics) by enforcing biologically plausible interaction constraints during model training.\n  \n- Q2: Time-dependent area under the ROC curve (AUC(t)) combined with integrated discrimination improvement (IDI) metrics can more effectively quantify interaction modeling benefits in survival analysis than traditional C-index, particularly for capturing dynamic interaction effects that manifest differently across disease progression stages.",
+        "elapsed": 20.0
+      },
+      {
+        "method": "P3",
+        "hypotheses_text": "L1 Hypothesis: 通过将低秩分解技术（计算机科学技术）与英国生物样本库的多维度临床及组学风险因素（基础医学）相结合，可构建高维交互建模的生存预测框架（计算机科学技术），从而突破传统比例风险模型（统计学）在交互效应检测中的计算和统计限制（计算机科学技术），最终实现疾病发展机制解析（基础医学）与心血管风险预测（基础医学）的双重提升。\n\nL2 Hypotheses:\n- Q1: SurvivalFM（计算机科学技术）通过分解机架构（计算机科学技术）整合UK Biobank（基础医学）的基因组学、代谢组学和电子健康记录数据，利用低秩矩阵（计算机科学技术）捕捉组学特征（基础医学）与临床变量（基础医学）间的潜在交互模式，实现比传统Cox模型（统计学）更优的多维度风险分层能力\n- Q2: 在生存分析中引入交互效应后的模型改进可通过统计学指标的三重验证：以C-index（统计学）量化区分度提升，以R²度量解释变异增加量，并通过净重分类指数（统计学）证明94.4%场景下的临床实用性改善（数据来自论文结论），从而建立机器学习模型（计算机科学技术）与统计评估体系（统计学）的协同验证框架\n\nL3 Hypotheses:\n- Q1: 在UK Biobank（基础医学）的10万级样本规模下，SurvivalFM（计算机科学技术）通过交替最小二乘算法（计算机科学技术）完成临床特征（基础医学）与SNP位点（基础医学）的百万级交互建模，其低秩分解（计算机科学技术）产生的20维隐向量空间能显著提升心血管事件预测的AUC值（统计学）比传统比例风险模型提高30.6%以上（数据来自论文结论）\n- Q2: 针对QRISK3模型（基础医学）的年龄交互改进场景，低秩分解（计算机科学技术）可将年龄与200个临床变量的二阶交互参数估计复杂度从O(n²)降至O(kn)（k<<n），通过似然比检验（统计学）发现新增的年龄×脂蛋白(a)交互项（基础医学）可使10%心血管高危人群的重分类准确率提升19.3%（数据来自论文结论）",
+        "elapsed": 24.2
+      },
+      {
+        "method": "P4",
+        "hypotheses_text": "L1 Hypothesis:  \nhypothesis: 将低秩分解技术与多组学数据整合可揭示疾病风险预测的潜在生物医学机制，通过机器学习模型捕捉跨层次风险因子（如基因-环境交互）的协同效应，从而突破传统统计模型在高维交互建模中的方法限制。  \nreasoning: 前提：高维交互建模存在计算与统计限制（计算机科学）。机制：低秩分解通过压缩表示学习（计算机科学）可提取组学数据（基础医学）中的潜在生物协同模式。预测：整合多组学数据的低秩分解模型将显著提升疾病风险预测的解释变异（统计学），并揭示新的临床干预靶点。  \nkey_concepts: [低秩分解, 多组学风险因素, 解释变异, 高维交互建模, 潜在生物协同模式]  \ndisciplines_bridged: [计算机科学技术, 基础医学, 统计学]  \n\nL2 Hypotheses:  \n- Q1:  \nhypothesis: 临床决策系统中引入组学数据与行为学特征的动态交互建模（基础医学），通过分解机架构（计算机科学）可实现个性化风险预测，其预测性能提升幅度与多模态数据融合的非线性复杂度呈正相关。  \nreasoning: 前提：机器学习需整合生物医学多维度风险因子（学科交叉需求）。机制：分解机通过特征嵌入学习（计算机科学）能量化组学标记物与生活方式的时变交互效应（基础医学）。预测：包含动态交互项的模型将显著提高心血管事件的重新分类指标（统计学）。  \nkey_concepts: [分解机, 组学数据, 动态交互效应, 重新分类, 多模态数据融合]  \ndisciplines_bridged: [计算机科学技术, 基础医学]  \n\n- Q2:  \nhypothesis: 基于贝叶斯优化的交互效应筛选框架（计算机科学）将增强统计学评估指标的敏感性，使生存分析模型对稀有基因变异与环境暴露的协同效应检测效能提升30%以上。  \nreasoning: 前提：现有指标难以检测微效交互效应（统计学挑战）。机制：贝叶斯优化（计算机科学）可自适应调整特征选择阈值，强化弱信号捕获能力。预测：优化后模型将使区分度（AUC）在肺癌风险预测中显著优于传统Cox模型（基础医学）。  \nkey_concepts: [贝叶斯优化, 协同效应检测, 区分度, 稀有基因变异, 环境暴露]  \ndisciplines_bridged: [计算机科学技术, 统计学, 基础医学]  \n\nL3 Hypotheses:  \n- Q1:  \nhypothesis: 在survivalFM模型中整合蛋白质组学与电子健康记录（基础医学），通过二阶特征交叉（计算机科学）可发现炎症通路与药物暴露的非线性交互，使心血管事件预测的NRI指标（统计学）提升15%以上。  \nreasoning: 前提：现有模型未充分建模生物过程与临床干预的交互（已知局限）。机制：二阶交叉自动构建蛋白质表达水平与用药史的联合特征（计算机科学）。预测：新增交互特征将显著改善高风险人群的再分类精度（统计学验证）。  \nkey_concepts: [二阶特征交叉, 炎症通路, NRI指标, 蛋白质组学, 电子健康记录]  \ndisciplines_bridged: [计算机科学技术, 基础医学, 统计学]  \n\n- Q2:  \nhypothesis: 采用张量分解替代矩阵分解（计算机科学）可突破现有低秩约束，在维持计算效率的同时检测三阶交互效应（如基因-代谢物-年龄），其发现的新型交互模式将使QRISK3模型（基础医学）的IDI指标（统计学）提高0.08以上。  \nreasoning: 前提：低秩分解（现有方法）仅支持成对交互建模（技术限制）。机制：张量分解扩展到三维空间捕捉高阶协同效应（计算机科学创新）。预测：三阶交互将揭示心血管风险的分子年龄依赖机制（基础医学），通过交叉验证统计学显著性。  \nkey_concepts: [张量分解, 三阶交互效应, IDI指标, QRISK3模型, 分子年龄依赖机制]  \ndisciplines_bridged: [计算机科学技术, 基础医学, 统计学]",
+        "elapsed": 59.7
+      },
+      {
+        "method": "P5",
+        "hypotheses_text": "[L1] 机器学习 --[结合]--> 低秩分解\n[L1] 低秩分解 --[克服了]--> 高维交互建模\n[L1] 高维交互建模 --[提升]--> 预测性能\n[L1] 机器学习 --[应用于]--> 英国生物样本库\n[L1] 英国生物样本库 --[整合]--> 临床风险因素\n[L1] 临床风险因素 --[关联分析]--> 疾病发展\n[L1] 生存分析机器学习模型 --[扩展了]--> 比例风险模型\n[L1] 比例风险模型 --[验证]--> 区分度\n[L1] 区分度 --[量化评估]--> 预测性能\n[L2] 机器学习 --[应用于]--> 英国生物样本库\n[L2] 英国生物样本库 --[整合了]--> 临床风险因素\n[L2] 临床风险因素 --[联合分析]--> 组学风险因素\n[L2] 预测性能 --[改进了]--> 统计限制\n[L2] 统计限制 --[关联到]--> 区分度\n[L2] 区分度 --[验证了]--> 解释变异\n[L3] Survival Factorization Machine --[应用于]--> 英国生物样本库\n[L3] 英国生物样本库 --[整合]--> 临床风险因素\n[L3] 临床风险因素 --[验证通过]--> 区分度\n[L3] 低秩分解 --[克服了]--> 高维交互建模\n[L3] 高维交互建模 --[扩展了]--> 心血管风险预测\n[L3] 心血管风险预测 --[评估]--> 年龄交互效应",
+        "elapsed": 0.0
+      }
+    ]
+  },
+  {
+    "tag": "test_5",
+    "paper": {
+      "paper_id": "b6a59176da4f",
+      "title": "Engineering nanozyme immunomodulator with magnetic targeting effect for cascade-enzyodynamic and ultrasound-reinforced metallo-immunotherapy in prostate carcinoma",
+      "abstract": "Conventional immunotherapy exhibits low response rates due to the immunosuppressive tumor microenvironment (TME). To overcome this limitation, this study introduces ZFPG nanoparticles (ZFPG NPs) with ...",
+      "primary_discipline": "材料科学",
+      "secondary_disciplines": [
+        "材料科学",
+        "基础医学",
+        "化学工程"
+      ]
+    },
+    "results": [
+      {
+        "method": "P1",
+        "hypotheses_text": "**假设**：通过构建具有梯度磁响应性和分区酶负载的仿生纳米花结构（Fe3O4@SiO2@HRP/GOx），可实现磁场驱动的肿瘤靶向与多酶级联催化（葡萄糖氧化酶/辣根过氧化物酶）的协同增强效应。具体设计：以超顺磁Fe3O4纳米颗粒为核，通过微乳液法包裹介孔二氧化硅层形成磁响应骨架；在骨架外层通过电荷定向吸附葡萄糖氧化酶（GOx），内层通过金属配位固定辣根过氧化物酶（HRP），形成pH响应型级联催化界面。在交变磁场作用下，纳米花通过磁热效应触发局部温度升高（42-45℃），促进GOx催化葡萄糖生成H2O2，同时HRP在酸性肿瘤微环境中被激活，将H2O2转化为高毒性的羟基自由基（•OH），从而实现磁靶向-酶催化-氧化应激的三重协同治疗。该假设可通过构建荷瘤小鼠模型，结合EPR成像跟踪纳米花分布、检测肿瘤组织氧化应激标志物（如8-OHdG）及磁热疗实时效应来验证。",
+        "elapsed": 26.9
+      },
+      {
+        "method": "P2",
+        "hypotheses_text": "L1 Hypothesis: 通过整合材料科学中的核壳纳米结构设计原理、化学工程的多酶级联催化动力学优化及基础医学的铁死亡免疫原性机制，构建具有磁性靶向驱动的时空可控型纳米催化平台，可同步实现肿瘤代谢重塑与免疫微环境重编程。该系统可通过磁引导的三维空间定位增强瘤内生物利用度，利用声波触发多级氧化还原酶反应网络产生级联放大ROS，并通过HMOX1-Fenton效应轴激活铁死亡-免疫信号轴，最终形成\"物理-化学-生物\"多维度协同的精准肿瘤治疗范式。\n\nL2 Hypotheses:\n- Q1: 声波辐射压力可调控纳米材料表面酶活性构象转变，结合磁性靶向产生的局部高浓度梯度，通过\"声流体动力学-磁泳协同效应\"增强肿瘤部位的酶-底物碰撞效率。这种物理场耦合策略将突破传统被动靶向的EPR效应限制，通过机械力-磁场双驱动模式实现肿瘤特异性微环境的定向催化干预，同时通过声敏介导的机械信号转导激活树突状细胞成熟通路。\n- Q2: 基于化学动力学的葡萄糖氧化酶/过氧化氢酶级联设计，可构建\"代谢饥饿-氧化应激\"双锁链反应体系：首阶段GOx催化葡萄糖耗竭导致ATP合成抑制，次阶段Pt纳米酶介导H2O2分解产生羟基自由基，最终通过ZnFe2O4晶格的Fenton-like反应放大ROS爆发。这种氧化还原酶-金属酶的时空耦合将特异性破坏肿瘤谷胱甘肽防御系统，通过铁硫簇蛋白失稳和ACSL4过氧化级联放大脂质ROS积累，最终触发钙网蛋白暴露和ATP释放的免疫原性细胞死亡。",
+        "elapsed": 26.3
+      },
+      {
+        "method": "P3",
+        "hypotheses_text": "L1 Hypothesis:  \n基于锌铁氧体@铂核的磁性靶向特性与葡萄糖氧化酶介导的多酶级联催化系统可通过协同作用重构免疫抑制性肿瘤微环境。具体而言，磁性靶向特性可提升纳米颗粒在肿瘤部位的富集效率，同时葡萄糖氧化酶与过氧化物酶样活性的级联反应将消耗葡萄糖并促进H₂O₂积累，触发芬顿反应生成羟基自由基，从而诱导肿瘤细胞铁死亡并释放损伤相关分子模式(DAMPs)，最终通过激活树突状细胞成熟逆转TME中髓源性抑制细胞(MDSC)的免疫抑制功能。\n\nL2 Hypotheses:  \n- Q1: 声敏响应特性可通过超声波触发纳米颗粒表面电荷反转，增强阴离子交换膜介导的H₂O₂跨膜传输效率，同时调控M1/M2型巨噬细胞极化平衡。当超声刺激激活双金属纳米酶的电荷分离效应时，可诱导局部电场重构，促进ROS定向扩散至肿瘤细胞线粒体，同时通过调控TLR4信号通路抑制MDSC扩增，形成正向免疫反馈循环。  \n- Q2: 氧化还原酶催化体系可通过葡萄糖氧化酶-过氧化氢酶样协同作用建立局部葡萄糖饥饿与H₂O₂富集的双重压力，同时通过锌铁氧体核的Fe²⁺释放增强脂氧合酶(LOX)底物可及性。这种代谢干预将激活ACSL4-GPX4轴失衡并积累脂质过氧化物，最终触发免疫原性铁死亡，其释放的HMGB1可激活STING通路促进CD8⁺T细胞浸润。  \n\nL3 Hypotheses:  \n- Q1: 多酶级联催化-声敏响应协同机制可通过超声增强的芬顿反应动力学实现时空可控的ROS爆发。在8 MHz超声作用下，铂核与葡萄糖氧化酶壳层的界面压电效应将诱导局部电势震荡，加速葡萄糖底物通过气体扩散层的传质速率，同时激活过氧化物酶样活性将H₂O₂转化为单线态氧，这种动态氧化应激梯度可选择性破坏肿瘤细胞线粒体膜电位并诱导免疫原性凋亡。  \n- Q2: 磁性靶向输送系统可通过外加磁场引导纳米颗粒特异性富集于肿瘤血管周围，通过葡萄糖氧化酶介导的饥饿疗法与锌铁氧体核的磁热效应协同作用，形成\"代谢-热-免疫\"三重打击。当局部温度升至42℃时，热稳定性受损的MDSC将发生HMOX1依赖的铁死亡，同时肿瘤细胞葡萄糖转运蛋白GLUT1内化导致代谢应激，最终通过CXCR4/CXCL12轴抑制肺转移灶的播散。",
+        "elapsed": 34.4
+      },
+      {
+        "method": "P4",
+        "hypotheses_text": "L1 Hypothesis:\n  hypothesis: 结合锌铁氧体@铂核的磁性靶向特性与HMOX1调控的铁代谢通路，通过构建磁场引导的代谢-免疫耦合系统，可实现肿瘤微环境中髓源性抑制细胞的极化重编程。该设计利用磁场梯度诱导纳米颗粒在肿瘤血管周围形成催化屏障，通过局部Fe²⁺释放同步激活巨噬细胞向M1型转化并抑制糖酵解通路，从而建立代谢干预与免疫激活的协同闭环。\n  reasoning: 锌铁氧体材料的磁性靶向特性(材料科学)可实现纳米颗粒在肿瘤血管周边的定向聚集→聚集区域的Fe²⁺释放(材料科学)激活HMOX1介导的铁死亡通路(基础医学)→铁死亡诱导的脂质过氧化物积累(基础医学)抑制髓源性抑制细胞的糖酵解代谢(化学工程)→代谢受抑的髓系细胞向促炎性巨噬细胞极化(基础医学)→重塑的免疫微环境增强CD8+T细胞浸润(基础医学) \n  key_concepts: 磁性靶向特性, HMOX1, 髓源性抑制细胞, 糖酵解通路, 促炎性巨噬细胞\n  disciplines_bridged: 材料科学, 基础医学, 化学工程\n\nL2 Hypotheses:\n- Q1:\n    hypothesis: 将超声响应型纳米颗粒的声敏特性与肿瘤相关巨噬细胞的机械敏感离子通道耦合，通过声波触发Ca²⁺内流增强纳米酶的过氧化物酶活性，形成力学-化学双重放大环路。该机制可使低剂量超声照射下，纳米颗粒选择性激活肿瘤部位的巨噬细胞释放炎症因子。\n    reasoning: 声敏纳米颗粒(材料科学)在超声作用下产生局部机械应力(材料科学)→应力激活巨噬细胞膜上的TRPV4通道(基础医学)→Ca²⁺内流(基础医学)促进纳米酶的POD-like活性(材料科学)→增强的酶活性催化H2O2转化为·OH(化学工程)→活性氧信号触发巨噬细胞NF-κB通路(基础医学)\n    key_concepts: 声敏特性, TRPV4通道, 过氧化物酶样活性, 钙离子信号, NF-κB通路\n    disciplines_bridged: 材料科学, 基础医学\n\n- Q2:\n    hypothesis: 构建具有梯度氧化还原电位的双金属纳米酶界面，通过调控Fe/Cu比例建立分层催化位点，使葡萄糖氧化与谷胱甘肽氧化在空间上分离进行。这种设计可同步实现肿瘤细胞的饥饿治疗和铁死亡诱导，同时通过Cu²⁺/Fe²⁺循环增强芬顿反应持续性。\n    reasoning: 双金属纳米酶的电子转移机制(材料科学)形成空间分隔的催化区域(化学工程)→外层Cu位点特异性催化葡萄糖氧化(化学工程)→内层Fe位点维持GSH氧化酶活性(材料科学)→葡萄糖耗竭触发肿瘤细胞线粒体应激(基础医学)→累积的ROS激活GPX4降解通路(基础医学)\n    key_concepts: 双金属纳米酶, 梯度氧化还原电位, 葡萄糖氧化酶, 谷胱甘肽氧化, GPX4\n    disciplines_bridged: 材料科学, 化学工程, 基础医学\n\nL3 Hypotheses:\n- Q1:\n    hypothesis: 开发具有声-磁双响应特性的各向异性纳米载体，通过超声波与交变磁场的时空同步控制，实现多酶级联反应的按需启动与免疫检查点分子的空间隔离。该系统可使葡萄糖氧化酶在肿瘤核心区工作，而过氧化氢酶在侵袭前沿发挥作用，形成代谢梯度引导的免疫细胞定向迁移。\n    reasoning: 各向异性结构设计(材料科学)赋予不同区域响应特性(材料科学)→超声触发声敏脂质体破裂(材料科学)释放GOx→交变磁场诱导纳米颗粒旋转(材料科学)暴露CAT活性位点→代谢物梯度形成(化学工程)→招募树突状细胞向肿瘤中心浸润(基础医学)→增强肿瘤抗原呈递效率(基础医学)\n    key_concepts: 各向异性纳米载体, 声-磁双响应, 代谢梯度, 树突状细胞迁移, 抗原呈递\n    disciplines_bridged: 材料科学, 化学工程, 基础医学\n\n- Q2:\n    hypothesis: 将磁性靶向纳米颗粒与肝脏特异性清道夫受体结合，构建\"肝-肿瘤\"双靶向代谢调节轴。通过在肝脏中消耗过量葡萄糖并促进糖原分解，在肿瘤部位同步抑制葡萄糖转运蛋白，利用系统性代谢重构延长纳米颗粒的抗肿瘤效应并抑制转移灶的能量供应。\n    reasoning: 纳米颗粒的磁性靶向特性(材料科学)结合肝脏受体配体修饰(材料科学)→在肝脏窦状隙富集并催化糖原分解(化学工程)→系统性血糖水平下降(基础医学)→肿瘤细胞GLUT1表达上调(基础医学)→纳米颗粒表面的葡萄糖氧化酶(化学工程)与GLUT1结合增强→转移灶能量饥饿加剧(基础医学)\n    key_concepts: 肝-肿瘤双靶向, 糖原分解, 葡萄糖转运蛋白, 系统性代谢重构, 能量饥饿\n    disciplines_bridged: 材料科学, 化学工程, 基础医学",
+        "elapsed": 51.5
+      },
+      {
+        "method": "P5",
+        "hypotheses_text": "[L1] ₂₄@葡萄糖氧化酶纳米颗粒 --[通过磁性靶向特性改善]--> 免疫抑制性肿瘤微环境\n[L1] 免疫抑制性肿瘤微环境 --[通过铁死亡上调]--> 型巨噬细胞\n[L1] 型巨噬细胞 --[与免疫原性铁死亡协同增强]--> 肺转移进展\n[L1] 多酶级联催化 --[通过级联催化有效消耗]--> 葡萄糖氧化酶\n[L1] 葡萄糖氧化酶 --[通过催化作用增强]--> 芬顿反应\n[L1] 芬顿反应 --[与活性协同增强]--> 活性氧爆发\n[L1] 双金属纳米酶 --[通过电子相互作用调控]--> 电荷分离\n[L1] 电荷分离 --[与活性协同增强]--> 过氧化氢酶样活性\n[L1] 过氧化氢酶样活性 --[通过爆发诱导]--> 免疫原性铁死亡\n[L2] 声敏特性 --[通过超声响应触发]--> 活性氧爆发\n[L2] 活性氧爆发 --[诱导细胞死亡机制]--> 免疫原性铁死亡\n[L2] 免疫原性铁死亡 --[调控肿瘤免疫环境]--> 肿瘤免疫微环境\n[L2] 葡萄糖氧化酶 --[催化代谢物转化]--> 芬顿反应\n[L2] 芬顿反应 --[增强氧化应激效应]--> 活性氧爆发\n[L2] 活性氧爆发 --[协同铁死亡诱导]--> 免疫原性铁死亡\n[L3] 多酶级联催化 --[通过芬顿反应增强生成]--> 芬顿反应\n[L3] 芬顿反应 --[协同过氧化氢酶样活性]--> 活性氧爆发\n[L3] 活性氧爆发 --[诱导免疫原性铁死亡]--> 免疫原性铁死亡\n[L3] 磁性靶向特性 --[调控双金属纳米酶分布]--> 双金属纳米酶\n[L3] 双金属纳米酶 --[通过电荷分离增强催化]--> 电荷分离\n[L3] 电荷分离 --[抑制髓源性抑制细胞]--> 髓源性抑制细胞",
+        "elapsed": 0.0
+      }
+    ]
+  },
+  {
+    "tag": "test_6",
+    "paper": {
+      "paper_id": "b0b65007f623",
+      "title": "Uncertainty estimation with prediction-error circuits",
+      "abstract": "Abstract Neural circuits continuously integrate noisy sensory stimuli with predictions that often do not perfectly match, requiring the brain to combine these conflicting feedforward and feedback inpu...",
+      "primary_discipline": "生物学",
+      "secondary_disciplines": [
+        "生物学",
+        "计算机科学技术"
+      ]
+    },
+    "results": [
+      {
+        "method": "P1",
+        "hypotheses_text": "**Hypothesis:**  \n预测误差神经元通过动态调整丘脑-基底核环路中的方差估计来调控收缩偏差与情境依赖行为：在前扣带皮层（ACC）编码预测误差幅度的同时，丘脑网状核（TRN）以θ振荡同步化方式调节丘脑皮层输入的信噪比，通过抑制性中间神经元动态调整方差估计的置信区间；当环境不确定性升高时，TRN增强对丘脑特异性感觉输入的抑制，导致预测误差信号的方差估计扩大，促使背外侧前额叶（DLPFC）降低收缩偏差权重并增强情境模型更新；而基底核直接通路中多巴胺D1受体表达神经元通过相位编码误差信号的方差梯度，驱动纹状体-苍白球外侧部（GPe）环路产生行为探索的双向门控。该机制可通过光遗传学操控TRN-DLPFC投射、局部场电位记录θ振荡相干性，以及D1受体阻断剂结合情境依赖决策任务进行验证。  \n\n**Novelty & Testability:**  \n本假设首次提出丘脑网状核通过θ振荡介导方差估计的动态信噪比调节，并揭示D1受体神经元的相位编码在预测误差方差梯度与行为探索门控间的直接联系，突破传统预测误差模型仅关注均值偏差的框架。可通过多尺度实验验证：①在体电生理记录TRN与ACC的θ振荡耦合强度随环境方差变化；②光遗传学沉默TRN→DLPFC轴突导致收缩偏差增强与情境更新延迟；③D1受体药理学阻断后，基底核输出的探索信号与方差估计梯度的相位同步性消失。",
+        "elapsed": 21.9
+      },
+      {
+        "method": "P2",
+        "hypotheses_text": "L1 Hypothesis:  \nThe hierarchical prediction-error network dynamically balances positive and negative prediction-error neurons to encode sensory and prediction uncertainty through variance-dependent gain modulation. This dual-channel uncertainty estimation mechanism enables context-dependent behavioral adaptation by modulating the effective connectivity between sensory layers and higher-order predictive regions. The interaction between inhibitory interneuron-mediated gain control and top-down prediction stability forms a Bayesian inference engine that governs contraction bias through history-dependent prior weighting in perceptual decision-making circuits.\n\nL2 Hypotheses:  \n- Q1:  \nThe stratified prediction-error architecture implements a neural analog of probabilistic graphical modeling, where layer-specific inhibitory circuits perform divisive normalization across sensory modalities. We hypothesize that pyramidal neuron ensembles in higher cortical layers compute modality-invariant uncertainty metrics through nonlinear dendritic integration of bottom-up prediction errors and top-down gain signals. This computational framework enables optimal cue combination by dynamically adjusting synaptic weights according to the Fisher information of each sensory channel, revealed through cross-modal decorrelation experiments in multisensory integration zones.\n\n- Q2:  \nFeedback-dominant processing engages metaplasticity mechanisms at layer 5 corticothalamic synapses, where NMDA receptor subunit composition shifts in response to environmental stability metrics. We propose that parvalbumin-positive interneurons gate the temporal integration window of prediction errors through gamma oscillation phase alignment, creating a synaptic eligibility trace that selectively strengthens recurrent connections carrying reliable predictive information. This forms a computational substrate where environment volatility directly modulates the balance between Hebbian plasticity and homeostatic scaling in feedback circuits, demonstrable through closed-loop optogenetic perturbation during learning transitions.",
+        "elapsed": 21.7
+      },
+      {
+        "method": "P3",
+        "hypotheses_text": "L1 Hypothesis: 预测误差神经元通过分层预测误差网络的正负活动差异编码方差估计，其中表达血管活性肠肽的抑制性中间神经元对兴奋性神经元的抑制性调控构成收缩偏差的生物物理基础，而环境稳定性通过调节反馈主导处理模式的神经可塑性实现对情境依赖行为的双向调制。该机制可被光遗传学扰动抑制性中间神经元后收缩偏差幅度的变化所验证。\n\nL2 Hypotheses:\n- Q1: 分层预测误差网络通过线性组合不同层级预测误差神经元的输出，在表达生长抑素的中间神经元介导的跨层抑制作用下，将贝叶斯多感官整合的不确定性权重转化为神经元发放率的空间编码。该假说可通过构建含跨层抑制连接的脉冲神经网络模型并验证其与猕猴多脑区LFP信号的相干性进行检验。\n- Q2: 反馈主导处理模式通过调节表达小白蛋白的快速抑制性中间神经元与锥体细胞的振荡耦合强度，在环境稳定性降低时增强预测误差信号的时相同步性，这种θ波段(4-8Hz)的神经可塑性表征由突触前NMDA受体介导的长时程增强机制实现。该机制可通过在虚拟现实环境中改变场景稳定性并记录内侧前额叶皮层的场电位震荡特征进行验证。\n\nL3 Hypotheses:\n- Q1: 抑制性中间神经元的化学遗传学抑制会破坏分层预测误差网络中表征预测不确定性的上层神经元与表征感觉不确定性的下层神经元间的动态平衡，导致偏差校正过程中出现跨模态的信息泄露，表现为听觉刺激噪声增强时视觉收缩偏差的异常放大。该现象可通过在清醒小鼠执行双模态辨别任务时采用光纤光度记录结合药理学操控进行量化分析。\n- Q2: 基于贝叶斯多感官整合的不确定性加权模型中，预测误差神经元与生长抑素阳性中间神经元构成的微环路通过动态调节抑制性突触传递效率实现感知决策优化，其中预测误差神经元的树突钙信号梯度编码似然函数斜率，而中间神经元的轴突末梢递质释放概率反映先验概率的方差估计。该机制可通过双光子显微镜监测清醒动物执行不确定性加权任务时的微环路钙动力学进行验证。",
+        "elapsed": 23.0
+      },
+      {
+        "method": "P4",
+        "hypotheses_text": "L1 Hypothesis:\nhypothesis: 表达生长抑素(SST)和血管活性肠肽(VIP)的抑制性中间神经元通过动态调节预测误差神经元的增益控制，与表达小白蛋白(PV)的快速-spiking神经元形成拮抗式方差估计回路，该跨神经元类型的交互计算机制决定了收缩偏差的强度，并通过环境稳定性依赖的神经可塑性形成情境依赖行为\nreasoning: \n1. 已知SST/VIP神经元调控输入加权(关系4)且预测误差神经元参与方差估计(关系3)\n2. 计算机科学中的线性组合机制需要动态权重分配来实现不确定性加权(关系5)\n3. 推理：不同抑制性神经元亚型可能通过特定连接模式形成计算单元，SST/VIP调节预测误差信号的增益，PV神经元编码残留不确定性\n4. 机制：预测误差神经元集群的方差估计通过抑制性中间神经元的相互作用实现贝叶斯最优加权\n5. 预测：光遗传学抑制VIP神经元将导致收缩偏差减弱但预测不确定性估计误差增加\nkey_concepts: 预测误差神经元, 表达生长抑素的, 表达血管活性肠肽的, 方差估计, 环境稳定性, 线性组合\ndisciplines_bridged: 生物学, 计算机科学技术\n\nL2 Hypotheses:\n- Q1:\n    hypothesis: 分层预测误差网络中表达PV的神经元集群通过竞争性抑制环路实现跨模态预测误差信号的归一化处理，该机制使得贝叶斯多感官整合中的不确定性权重能够自适应调节至最优范围\n    reasoning:\n    1. 已知分层网络估计不确定性(关系1,2)且贝叶斯整合使用不确定性加权(关系5)\n    2. 计算神经科学表明竞争性网络可实现动态范围压缩(计算机概念)\n    3. 推理：PV神经元的强抑制特性适合构建跨模态比较的归一化机制\n    4. 机制：模态特异性预测误差在深层网络通过PV神经元侧抑制进行跨模态标准化\n    5. 预测：破坏PV神经元将导致多感官整合权重偏离贝叶斯最优解\n    key_concepts: 分层预测误差网络, 表达小白蛋白的, 贝叶斯多感官整合, 不确定性加权, 竞争性抑制\n    disciplines_bridged: 生物学, 计算机科学技术\n\n- Q2:\n    hypothesis: 反馈主导处理模式通过调节表达SST的神经元可塑性来动态重构预测误差传递的拓扑结构，该机制使神经网络在稳定环境中形成预测权重的长期增强，而在动态环境中产生输入权重的快速适应\n    reasoning:\n    1. 反馈处理依赖环境稳定性(关系6)且抑制性神经元参与输入加权(关系4)\n    2. 神经网络模型显示拓扑重构可优化预测编码效率(计算机概念)\n    3. 推理：SST神经元的树突抑制特性适合调节反馈信号的时空整合\n    4. 机制：环境稳定性信号驱动SST神经元突触可塑性，调节深层到浅层皮层的反馈增益\n    5. 预测：在动态环境任务中，SST神经元树突钙信号将呈现模式化波动\n    key_concepts: 反馈主导处理模式, 环境稳定性, 表达生长抑素的, 神经可塑性, 拓扑重构\n    disciplines_bridged: 生物学, 计算机科学技术\n\nL3 Hypotheses:\n- Q1:\n    hypothesis: VIP神经元介导的去抑制回路与分层预测误差网络的深层反馈连接形成双重动态控制：前者快速调节当前感觉输入的增益，后者缓慢调整预测误差的时间衰减常数，这种双时间尺度机制实现不确定性的在线估计和偏差校正\n    reasoning:\n    1. 已知VIP神经元参与输入加权(关系4)且网络需要动态不确定性估计(关系1,2)\n    2. 计算机科学中的在线学习需要双时间尺度参数更新(算法概念)\n    3. 推理：VIP的快速去抑制效应(生物学)可对应瞬时不确定性估计，而深层网络反馈(计算机)存储长期统计规律\n    4. 机制：当前感觉输入通过VIP介导的快速通道与预测信号比较，同时更新网络的长期不确定性表征\n    5. 预测：同时扰动VIP神经元和深层反馈将导致偏差校正的累积误差\n    key_concepts: 分层预测误差网络, 表达血管活性肠肽的, 输入加权, 不确定性估计, 双时间尺度\n    disciplines_bridged: 生物学, 计算机科学技术\n\n- Q2:\n    hypothesis: 预测误差神经元与兴奋性神经元形成模体式连接：预测误差神经元选择性抑制低不确定性通道的兴奋性神经元，而兴奋性神经元通过NMDA受体介导的整合增强高不确定性条件下的预测更新，这种双向交互实现感知决策的阈值自适应调节\n    reasoning:\n    1. 已知预测误差影响收缩偏差(关系7)且贝叶斯整合需要动态阈值(计算机概念)\n    2. 兴奋性神经元的NMDA特性支持时间积分(生物学特性)\n    3. 推理：不同神经元类型分工处理不确定性维度，预测误差神经元执行门控，兴奋性神经元执行积分\n    4. 机制：抑制性预测误差信号设置决策阈值下限，兴奋性预测更新信号决定阈值上限\n    5. 预测：阻断预测误差神经元到兴奋性神经元的抑制将导致决策阈值固定化\n    key_concepts: 预测误差神经元, 兴奋性神经元, 贝叶斯多感官整合, 不确定性加权, NMDA受体\n    disciplines_bridged: 生物学, 计算机科学技术",
+        "elapsed": 51.5
+      },
+      {
+        "method": "P5",
+        "hypotheses_text": "[L1] 预测误差神经元 --[提供神经计算基础]--> 方差估计\n[L1] 方差估计 --[关联于]--> 收缩偏差\n[L1] 收缩偏差 --[需计算机科学技术建模]--> 情境依赖行为\n[L1] 预测误差神经元 --[构成分层网络核心]--> 分层预测误差网络\n[L1] 分层预测误差网络 --[协同估计]--> 感觉不确定性\n[L1] 感觉不确定性 --[驱动算法优化]--> 情境依赖行为\n[L2] 分层预测误差网络 --[估计]--> 感觉不确定性\n[L2] 感觉不确定性 --[提供基础用于]--> 不确定性加权\n[L2] 不确定性加权 --[实现]--> 贝叶斯多感官整合\n[L2] 反馈主导处理模式 --[依赖于]--> 环境稳定性\n[L2] 环境稳定性 --[调节]--> 预测误差神经元\n[L2] 预测误差神经元 --[关联于]--> 情境依赖行为\n[L3] 分层预测误差网络 --[估计]--> 感觉不确定性\n[L3] 感觉不确定性 --[调节]--> 抑制性中间神经元\n[L3] 抑制性中间神经元 --[校正]--> 收缩偏差\n[L3] 贝叶斯多感官整合 --[采用]--> 不确定性加权\n[L3] 不确定性加权 --[依赖]--> 预测误差神经元\n[L3] 预测误差神经元 --[优化]--> 偏差感知",
+        "elapsed": 0.0
+      }
+    ]
+  },
+  {
+    "tag": "test_7",
+    "paper": {
+      "paper_id": "8d82ea82ec7c",
+      "title": "Spatiotemporal development of expanding bacterial colonies driven by emergent mechanical constraints and nutrient gradients",
+      "abstract": "Abstract Bacterial colonies growing on solid surfaces can exhibit robust expansion kinetics, with constant radial growth and saturating vertical expansion, suggesting a common developmental program. H...",
+      "primary_discipline": "生物学",
+      "secondary_disciplines": [
+        "生物学",
+        "物理学",
+        "化学"
+      ]
+    },
+    "results": [
+      {
+        "method": "P1",
+        "hypotheses_text": "Hypothesis:  \n细菌菌落扩展的时空动力学由群体感应调控的机械应力反馈网络驱动，其中局部细胞密度梯度触发胞外多糖（EPS）合成基因的异质性表达，形成动态的粘弹性梯度，通过物理相互作用引导菌落前沿的定向扩展，而这一过程受T6SS（VI型分泌系统）介导的接触依赖性细胞裂解机制调控，以维持扩展前沿的单层细胞拓扑结构。  \n\nTestable predictions:  \n1) 通过微流控芯片构建可控密度梯度环境，可观察到EPS合成基因启动子活性与局部剪切应力呈正相关；  \n2) 缺失T6SS效应蛋白的突变株在软琼脂平板上形成不规则分支菌落，原子力显微镜可检测到前沿区域细胞堆积和多层结构；  \n3) 在扩展前沿注射纳米磁珠标记的EPS，可追踪到应力松弛方向与菌落扩展矢量高度一致。",
+        "elapsed": 20.6
+      },
+      {
+        "method": "P2",
+        "hypotheses_text": "L1 Hypothesis: 细菌菌落的时空扩展动力学由机械约束与代谢驱动的营养-氧气耦合梯度的协同作用决定。菌落内部细胞通过物理应力诱导的垂直化重构实现径向能量耗散，同时代谢产物的垂直积累形成化学势壁垒，导致菌落呈现\"外扩内缩\"的分层生长模式。这种自组织行为本质上是生物系统通过力学重排与化学扩散的非线性耦合实现的物质-能量最优分配策略。\n\nL2 Hypotheses:\n- Q1: 机械约束通过细胞长轴取向重定向调控径向生长速率。当局部细胞密度超过临界值时，增殖压力促使细胞从二维平铺向三维堆叠转变，这种拓扑相变通过接触抑制解除机制触发周边细胞极化运动，形成定向的周界推进波。该过程可用活性物质力学模型与细胞骨架重排的生化反应网络耦合方程描述。\n- Q2: 垂直扩展受双重限制机制调控：在毫米尺度上，营养物消耗与代谢废物积累形成非对称双梯度场，导致上层细胞经历周期性饥饿-复苏的振荡生长模式；在微米尺度，氧气扩散限制触发细胞色素c氧化酶介导的呼吸链重构，诱导形成代谢异质性分层。这种跨尺度调控可通过构建包含Fickian扩散、Monod方程和氧化应激响应的耦合偏微分方程进行定量预测。",
+        "elapsed": 26.8
+      },
+      {
+        "method": "P3",
+        "hypotheses_text": "L1 Hypothesis:  \n细菌菌落在三维扩展过程中呈现时空分异的力学-代谢耦合机制：内部细胞在琼脂基质的机械约束下发生垂直化排列（物理学-机械相互作用），导致菌落表面产生定向的物理应力梯度，这种梯度与葡萄糖等碳源（化学-可扩散营养物）的消耗速率形成协同作用，通过调控群体感应（生物学-细胞间相互作用）的阈值效应，最终塑造出径向生长恒定而垂直扩展减速的时空动力学特征。该机制可通过调节琼脂硬度与初始营养浓度的正交实验进行验证。\n\nL2 Hypotheses:  \n- Q1: 机械约束通过诱导细胞-琼脂界面的非对称摩擦力促进内部细胞垂直化（物理学-机械约束），这种物理重排导致径向生长驱动力从群体运动模式向单层细胞推进模式转换（生物学-细胞生长），因此降低琼脂基质刚度会打破该转换，表现为径向扩展速度的波动增加。  \n- Q2: 垂直扩展的减速源于活性氧（化学-代谢物）在菌落深度方向的累积梯度与氧气耗尽速率的非线性关系（生物学-代谢过程），该关系通过抑制细胞周期关键蛋白表达（生物学-细胞间相互作用）来限制生长，添加外源抗氧化剂可逆转此效应并恢复垂直扩展的线性阶段。  \n\nL3 Hypotheses:  \n- Q1: 物理学的径向扩展速度与化学的营养扩散通量存在阈值依赖关系：当基于皮特模型（生物学-数学模型）的模拟中引入非均匀琼脂基质（物理学-机械约束）时，菌落前缘的细胞-细胞接触抑制（生物学-细胞间相互作用）会与葡萄糖消耗波（化学-碳源梯度）形成相位锁定，导致三维形态出现周期性波纹结构，其波长可通过调节营养扩散系数进行调控。  \n- Q2: 基于智能体的计算模型（生物学-计算模型）整合细胞-基质粘附能（物理学-机械相互作用）与代谢物交叉喂养（化学-代谢相互作用）参数后，可预测死亡区域（生物学-死亡区）的时空演变：当模型中代谢废物的局部累积速率超过细胞耐受阈值（化学-活性氧）时，会触发群体感应（生物学-细胞通讯）介导的程序性死亡级联反应，其空间分布模式与实验观测的SYTOX Green染色区具有拓扑同构性。",
+        "elapsed": 28.3
+      },
+      {
+        "method": "P4",
+        "hypotheses_text": "L1 Hypothesis:\n  hypothesis: 细菌菌落的三维时空动力学由代谢物扩散梯度与机械应力场的动态耦合主导，这种耦合通过活性氧积累引发程序性细胞死亡，形成分层的死亡区域。\n  reasoning: \n    1. premise: 代谢过程产生可扩散营养物(化学)和活性氧(化学)，其梯度分布受机械约束(物理学)影响\n    2. mechanism: 垂直扩展中，氧气耗尽(生物学)与机械应力(物理学)共同导致代谢物再分配，局部活性氧浓度超阈值时触发细胞凋亡(生物学)\n    3. testable_prediction: 在菌落中部会出现活性氧浓度梯度与死亡区域重叠的\"代谢波\"现象，且该现象在抗氧化剂处理后消失\n  key_concepts: 代谢物交叉喂养, 活性氧, 机械应力, 程序性细胞死亡, 时空动力学\n  disciplines_bridged: 生物学, 化学, 物理学\n\nL2 Hypotheses:\n- Q1:\n    hypothesis: 细胞-琼脂相互作用通过调节细胞形态变化，将机械约束转化为各向异性生长应力，主导径向扩展模式形成\n    reasoning:\n      1. premise: 大肠杆菌在琼脂表面生长时会经历形态素(生物学)调控的细胞伸长(物理学)\n      2. mechanism: 垂直化的内部细胞(生物学)通过侧向压力激活机械敏感通道(物理学)，促进周质空间扩展(生物学)\n      3. testable_prediction: 敲除机械敏感通道基因(mscL)的菌株将表现出径向扩展速度降低和异常的细胞排列模式\n    key_concepts: 细胞-琼脂相互作用, 机械敏感通道, 细胞形态素, 径向扩展速度\n    disciplines_bridged: 生物学, 物理学\n- Q2:\n    hypothesis: 垂直扩展速率由葡萄糖(化学)与氧气(化学)的双限制动力学决定，形成代谢分层的\"活性壳\"结构\n    reasoning:\n      1. premise: Monod生长动力学(物理学)需同时考虑碳源(化学)和氧气(化学)的协同限制\n      2. mechanism: 上层细胞通过产胞外多糖(生物学)形成扩散屏障，加剧下层细胞的氧限制(化学)，触发代谢转换(生物学)\n      3. testable_prediction: 在菌落垂直剖面将检测到葡萄糖消耗速率与氧气渗透速率的乘积关系，且该关系在产胞外多糖突变体中被破坏\n    key_concepts: 双底物Monod方程, 产胞外多糖, 氧渗透速率, 代谢分层\n    disciplines_bridged: 生物学, 化学, 物理学\n\nL3 Hypotheses:\n- Q1:\n    hypothesis: 机械相互作用(物理学)与代谢相互作用(化学)的竞争决定菌落从二维到三维过渡的临界厚度\n    reasoning:\n      1. premise: 细胞增殖产生膨胀压力(物理学)，而营养物扩散(化学)受限导致生长速率下降\n      2. mechanism: 当局部细胞密度达到临界值时，机械应力(物理学)引发细胞重排形成垂直簇，其代谢需求(生物学)又加速营养物消耗\n      3. testable_prediction: 在临界厚度处会出现机械应力各向异性与营养梯度方向的90度偏转\n    key_concepts: 扩胀压力, 代谢需求, 机械各向异性, 临界相变\n    disciplines_bridged: 物理学, 化学\n- Q2:\n    hypothesis: 基于智能体的模型整合群体感应(生物学)与机械约束(物理学)，可预测菌落扩展模式从规则生长到分支生长的转变\n    reasoning:\n      1. premise: 群体感应信号(生物学)的扩散长度与机械应力松弛时间(物理学)存在特征尺度竞争\n      2. mechanism: 高细胞密度下，局部群体感应信号积累(生物学)触发运动行为切换(物理学)，导致机械应力重分布(物理学)\n      3. testable_prediction: 在群体感应缺陷菌株中，菌落边缘分形维数将降低，且这种降低可通过外源添加信号分子恢复\n    key_concepts: 群体感应, 机械应力松弛, 分形生长, 行为切换, 智能体模型\n    disciplines_bridged: 生物学, 物理学",
+        "elapsed": 45.1
+      },
+      {
+        "method": "P5",
+        "hypotheses_text": "[L1] 时空动力学 --[细菌菌落]--> 菌落扩展\n[L1] 菌落扩展 --[扩散限制生长]--> 扩散限制生长\n[L1] 扩散限制生长 --[生长动力学 碳源]--> 碳源\n[L1] 时空动力学 --[机械约束 营养梯度]--> 机械约束\n[L1] 机械约束 --[机械相互作用]--> 机械相互作用\n[L1] 机械相互作用 --[内部细胞垂直化 机械约束]--> 内部细胞垂直化\n[L1] 时空动力学 --[垂直扩展 氧气耗尽]--> 垂直扩展\n[L1] 垂直扩展 --[细胞生长 营养梯度]--> 营养梯度\n[L1] 营养梯度 --[氧气耗尽 离子梯度]--> 活性氧\n[L2] 机械相互作用 --[细胞间和细胞-琼脂的机械相互作用引发机械约束]--> 机械约束\n[L2] 机械约束 --[机械约束驱动内部细胞垂直排列]--> 内部细胞垂直化\n[L2] 内部细胞垂直化 --[垂直化细胞排列决定径向扩展模式]--> 径向生长\n[L2] 垂直营养梯度 --[营养梯度导致扩散受限的生长抑制]--> 扩散限制生长\n[L2] 扩散限制生长 --[扩散限制直接抑制细胞增殖速率]--> 细胞生长\n[L2] 细胞生长 --[细胞增殖速率决定垂直扩展能力]--> 垂直扩展\n[L3] 机械相互作用 --[物理学中的机械相互作用通过细胞间物理接触形成空间限制]--> 机械约束\n[L3] 机械约束 --[机械约束通过限制细胞排列方向调控生长模式]--> 径向生长\n[L3] 径向生长 --[径向生长模式决定菌落三维形态的基底扩展维度]--> 菌落扩展\n[L3] 基于智能体的计算模型 --[模型通过模拟细胞-琼脂相互作用量化机械阻力]--> 细胞-琼脂相互作用\n[L3] 细胞-琼脂相互作用 --[机械阻力影响细胞代谢活性的空间分布]--> 代谢过程\n[L3] 代谢过程 --[代谢活性梯度驱动菌落扩展的时空动态]--> 菌落扩展",
+        "elapsed": 0.0
+      }
+    ]
+  },
+  {
+    "tag": "test_8",
+    "paper": {
+      "paper_id": "8ab7ce06342f",
+      "title": "Transmembrane voltage-gated nanopores controlled by electrically tunable in-pore chemistry",
+      "abstract": "Gating is a fundamental process in ion channels configured to open and close in response to specific stimuli such as voltage across cell membranes thereby enabling the excitability of neurons. Here we...",
+      "primary_discipline": "化学",
+      "secondary_disciplines": [
+        "化学",
+        "材料科学",
+        "物理学"
+      ]
+    },
+    "results": [
+      {
+        "method": "P1",
+        "hypotheses_text": "**Hypothesis:** 在纳米孔内壁修饰具有电压依赖性构象变化的两亲性分子（如电压敏感型磷脂-肽缀合物），通过跨膜电压调控其疏水/亲水状态转换，可逆地改变纳米孔内微环境极性与反应物局部浓度，从而动态控制氧化还原反应（如亚铁/高铁血红素辅基的可逆电子转移）。具体而言，正向电压（+150 mV）将诱导分子层坍塌形成疏水腔，浓缩疏水性反应物并降低局部介电常数，促进电子转移；反向电压（-150 mV）则驱动分子层伸展为亲水状态，稀释反应物并升高介电常数，抑制反应进行。该机制可通过荧光共振能量转移（FRET）监测纳米孔内微极性变化，并结合循环伏安法验证反应可逆性。",
+        "elapsed": 24.4
+      },
+      {
+        "method": "P2",
+        "hypotheses_text": "L1 Hypothesis: 通过跨膜电压调控固态纳米孔内金属磷酸盐的可逆沉淀-溶解反应，可构建具有超高压控比（>40,000）和亚纳瓦功耗的纳米流体二极管与忆阻器，其核心机制源于电场驱动的离子迁移动力学与界面化学反应的协同耦合。\n\nL2 Hypotheses:\n- Q1: 化学合成与材料科学的协同调控可通过构建梯度孔径异质结纳米孔结构实现，其表面官能团梯度分布可定向调控金属离子迁移能垒，而多孔碳化硅/氧化物界面则通过局域介电增强效应加速磷酸盐沉淀动力学，使反应速率常数提升2个数量级。\n  \n- Q2: 电压门控机制通过双电层静电约束效应调控阳离子流密度，当跨膜电压超过临界阈值（±1.2V）时，Nernst层内离子迁移数突变引发非平衡相变，导致磷酸根与高价金属离子的局域过饱和度在100μs内达到成核条件，其沉淀速率与电场强度呈指数正相关（J ∝ exp(αE)）。",
+        "elapsed": 24.1
+      },
+      {
+        "method": "P3",
+        "hypotheses_text": "L1 Hypothesis: 通过跨膜电压调控阳离子流在纳米受限空间内的电迁移速率，结合金属磷酸盐沉淀/溶解反应的化学动力学窗口，可实现固态纳米孔的电压门控特性。当负电压驱动阳离子向氮化硅膜纳米孔富集时，局部过饱和度触发磷酸盐缓冲液中的沉淀反应，形成动态可逆的纳米沉淀物阻断离子电流；反转电压极性则通过电迁移剥离金属离子，使沉淀物溶解恢复孔道导通性。这种化学自由度与介电膜纳米结构的协同作用，可通过麦克斯韦-霍尔模型描述电场-浓度梯度耦合机制。\n\nL2 Hypotheses:\n- Q1: 锥形纳米通道的几何约束效应与化学合成参数（如金属前驱体浓度、pH梯度）存在非线性协同作用，通过调节纳米孔壁表面电荷密度与反应物扩散通量的匹配度，可实现反应动力学窗口的精确调控。例如在小孔径端（<50 nm）引入表面官能团修饰，将增强限域空间内离子电迁移的聚焦效应，使沉淀反应速率提高2-3个数量级。\n- Q2: 电压门控产生的非对称电场分布会导致阳离子流在纳米孔内的空间电荷层形成，当跨膜电压超过临界阈值（±1.2 V）时，金属磷酸盐的成核速率呈现指数增强，其沉淀效率与麦克斯韦-霍尔模型预测的离子迁移数偏差量呈负相关。通过改变溶液离子强度可动态调节该阈值电压，实现类似神经元动作电位的\"全或无\"响应特性。\n\nL3 Hypotheses:\n- Q1: 磷酸盐缓冲液的化学自由度（如NaH2PO4/K2HPO4比例）与纳米受限空间的曲率半径（r < 100 nm）存在协同增强效应，二者共同决定电压响应型离子通道的开关阈值。当缓冲液中HPO4^2-浓度超过临界值（>50 mM）时，锥形纳米孔的小孔径端将优先发生电压诱导的局部沉淀，导致整流比（IR=4×10^4）与几何不对称度呈现正相关性。\n- Q2: 跨膜电压-离子电流-化学沉淀的三元耦合可通过时间分辨电阻脉冲检测与有限元模拟联合验证：在±2 V方波电压激励下，纳米孔电阻的瞬态响应（τ<10 ms）应包含三个特征阶段——双电层充电（RC时间常数）、沉淀成核诱导期（与过饱和度相关）以及扩散控制的生长/溶解过程。当施加频率>1 kHz的交变电压时，忆阻器行为的滞后回线面积与金属磷酸盐反应级数呈非线性依赖关系。",
+        "elapsed": 34.7
+      },
+      {
+        "method": "P4",
+        "hypotheses_text": "L1 Hypothesis:\n  hypothesis: 调控跨膜电压通过介电膜材料的电子特性与金属磷酸盐化学自由度的协同作用，可实现纳米孔内化学反应的多稳态控制，从而在亚稳态之间切换形成动态离子通道门控机制。\n  reasoning: \n    1. 前提：固态纳米孔的介电膜具有可调谐的表面电荷特性（材料科学）→ 电压门控改变膜表面电势分布（物理学）→ 影响阳离子流的时空分布（化学）\n    2. 机制：金属磷酸盐的沉淀/溶解反应存在多个中间态（化学反应动力学）→ 介电膜的电子迁移率调制反应活化能（材料科学-化学耦合）→ 形成阶梯式反应路径\n    3. 预测：通过脉冲电压序列可诱导磷酸盐沉淀物在纳米孔不同区域周期性析出，产生多级离子电流阻断状态（可用电阻脉冲检测验证）\n  key_concepts: 介电膜, 金属磷酸盐, 化学自由度, 反应动力学, 电子迁移率\n  disciplines_bridged: 材料科学, 化学\n\nL2 Hypotheses:\n- Q1:\n    hypothesis: 纳米受限空间的锥形几何结构通过增强离子浓度极化效应，可降低化学反应的能垒，使固态纳米孔的几何参数与化学合成条件协同决定反应速率常数。\n    reasoning:\n      1. 前提：锥形纳米通道产生非均匀电场（物理学）→ 增强阳离子流的聚焦效应（材料科学）\n      2. 机制：局部离子浓度梯度导致磷酸盐缓冲液的pH微环境变化（化学）→ 调节金属磷酸盐的成核速率（材料化学）\n      3. 预测：通过改变锥形孔尖端曲率半径（材料参数）可指数级调制沉淀反应的诱导时间（化学动力学参数）\n    key_concepts: 锥形纳米通道, 磷酸盐缓冲液, 离子浓度极化, 反应速率常数\n    disciplines_bridged: 材料科学, 化学\n- Q2:\n    hypothesis: 电压门控产生的非平衡电场梯度会引发阳离子流的旋涡状分布，通过流体力学-化学耦合效应增强金属磷酸盐的界面反应速率。\n    reasoning:\n      1. 前提：跨膜电压在纳米尺度产生强电场梯度（物理学）→ 引发电渗流旋涡（流体力学）\n      2. 机制：旋涡运动增强阳离子与磷酸根的传质效率（化学工程）→ 改变沉淀反应的界面动力学\n      3. 预测：特定电压频率下会出现电涡流-化学沉淀的共振现象，表现为离子电流噪声谱的特征峰\n    key_concepts: 电压梯度, 电渗流旋涡, 界面反应动力学, 离子电流噪声\n    disciplines_bridged: 物理学, 化学\n\nL3 Hypotheses:\n- Q1:\n    hypothesis: 纳米受限空间的量子隧穿效应与化学自由度的配位组合可形成协同门控机制，在亚阈值电压下实现离子通道的非线性导电响应。\n    reasoning:\n      1. 前提：亚纳米级孔径引发量子隧穿效应（物理学）→ 调制阳离子的传输概率（材料科学）\n      2. 机制：配位化学自由度改变金属离子的d轨道能级（化学）→ 与隧穿电子发生轨道耦合\n      3. 预测：通过金属离子种类（如Zn²⁺/Mg²⁺）替换可调制阈值电压的滞后回线宽度（忆阻器特性）\n    key_concepts: 量子隧穿, 配位化学, 轨道耦合, 阈值电压滞后\n    disciplines_bridged: 物理学, 化学\n- Q2:\n    hypothesis: 跨膜电压-离子电流-化学沉淀的三元耦合系统存在拓扑相变特征，其临界现象可通过纳米流体二极管的整流比突变来表征。\n    reasoning:\n      1. 前提：沉淀物在纳米孔内形成非均匀介电分布（材料科学）→ 改变局部电场强度（物理学）\n      2. 机制：电场-化学势耦合导致相变临界点（化学）→ 系统在超流态与阻塞态间发生一级相变\n      3. 预测：当电压扫描速率超过特定阈值时，整流比曲线会出现滞后回线，对应相变迟豫现象\n    key_concepts: 拓扑相变, 介电分布, 临界现象, 滞后回线, 超流态\n    disciplines_bridged: 物理学, 材料科学",
+        "elapsed": 58.2
+      },
+      {
+        "method": "P5",
+        "hypotheses_text": "[L1] 跨膜电压 --[驱动阳离子流以触发化学反应]--> 阳离子流\n[L1] 阳离子流 --[引发金属磷酸盐的可逆沉淀/溶解]--> 沉淀/溶解反应\n[L1] 沉淀/溶解反应 --[通过纳米沉淀物调控孔内化学环境]--> 孔内化学反应\n[L1] 固态纳米孔 --[通过介电膜结构约束反应空间]--> 介电膜\n[L1] 介电膜 --[在纳米受限空间中增强电场效应]--> 纳米受限空间\n[L1] 纳米受限空间 --[通过锥形纳米通道优化离子输运特性]--> 反应动力学\n[L1] 电压门控 --[通过离子电流整流效应调控反应阈值]--> 离子电流\n[L1] 离子电流 --[依赖麦克斯韦-霍尔模型描述的电导行为]--> 麦克斯韦-霍尔模型\n[L1] 麦克斯韦-霍尔模型 --[通过忆阻器特性验证动态反应过程]--> 忆阻器\n[L2] 化学合成 --[构建]--> 固态纳米孔\n[L2] 固态纳米孔 --[限域]--> 纳米受限空间\n[L2] 纳米受限空间 --[调控]--> 反应动力学\n[L2] 电压门控 --[驱动]--> 阳离子流\n[L2] 阳离子流 --[引发]--> 沉淀/溶解反应\n[L2] 沉淀/溶解反应 --[改变]--> 孔内化学反应\n[L3] 化学自由度 --[通过调控化学合成路径实现纳米空间限域效应]--> 纳米受限空间\n[L3] 纳米受限空间 --[构建跨膜电压响应的限域反应腔体]--> 电压门控\n[L3] 电压门控 --[诱导离子电流整流实现通道开关控制]--> 固态纳米孔\n[L3] 跨膜电压 --[驱动阳离子电迁移形成定向电流]--> 离子电流\n[L3] 离子电流 --[引发金属磷酸盐的动态沉积与溶解]--> 沉淀/溶解反应\n[L3] 沉淀/溶解反应 --[动态调制孔径尺寸实现电流整流]--> 整流比",
+        "elapsed": 0.0
+      }
+    ]
+  },
+  {
+    "tag": "test_9",
+    "paper": {
+      "paper_id": "e8167ae37c34",
+      "title": "Terahertz asynchronous twin-comb for prefiguring hypersensitivity beyond spectrum domain",
+      "abstract": "Lower-frequency characteristics of the terahertz regime confer advantageous low photon energy for biochemical sensing while imposing inherent sensitivity constraints. Here, we demonstrate a terahertz ...",
+      "primary_discipline": "物理学",
+      "secondary_disciplines": [
+        "物理学",
+        "电子、通信与自动控制技术",
+        "材料科学"
+      ]
+    },
+    "results": [
+      {
+        "method": "P1",
+        "hypotheses_text": "假设：基于拓扑光子结构的太赫兹表面等离激元增强效应，通过构建具有反演对称性破缺的二维拓扑绝缘体异质结，可实现太赫兹波与生物分子振动偶极子的拓扑增强型耦合。具体而言，在室温下利用单层Bi2Te3/石墨烯异质界面激发的拓扑表面等离激元模式，其局域场增强因子可达10^4量级且传播损耗低于λ/100，当靶向结合的生物分子（如外泌体膜蛋白）引发拓扑相变时，将产生可探测的非对称法诺共振光谱特征，从而实现单分子级灵敏度的无标记检测。该机制可通过太赫兹时域光谱系统与微流控芯片集成进行实验验证，通过对比拓扑保护态与常规表面等离激元结构的分子检测限（LOD<1 aM）来证实其突破传统光谱选择定则的能力。",
+        "elapsed": 23.5
+      },
+      {
+        "method": "P2",
+        "hypotheses_text": "L1 Hypothesis: 基于异步双光梳时域干涉与功能材料光致重构的协同效应，通过构建级联微通道中电磁场-分子耦合的非线性动力学模型，可突破传统光谱域检测极限，在相位域和空间域实现太赫兹生物分子的超灵敏痕量检测。\n\nL2 Hypotheses:\n- Q1: 异步双光梳在级联微通道波导中产生的动态太赫兹瞬态场，通过微通道几何参数与梳齿间距的协同匹配，可诱导分子偶极子阵列的非平衡跃迁，其弛豫过程调制的瞬态吸收信号与光梳拍频信号形成四维耦合（时域-频域-空间域-分子动力学），从而在非光谱域实现分子指纹识别。该机制可能涉及拓扑光子结构对电磁场局域态的调控作用，以及非线性薛定谔方程描述的场-物质强耦合效应。\n\n- Q2: 光致异构化材料（如偶氮苯）在太赫兹场下的反常光导响应源于分子构型转变引发的等离激元共振频率漂移，其光子-声子耦合通道与分子吸附诱导的费米面重构形成双重增强效应。当材料微纳结构尺寸与太赫兹波长（λ/100量级）及光致形变特征尺度匹配时，可产生巨各向异性电导率变化，该效应通过微通道流体定位与电磁场热点重叠可实现光控太赫兹传感的增敏放大。",
+        "elapsed": 21.1
+      },
+      {
+        "method": "P3",
+        "hypotheses_text": "L1 Hypothesis: \n基于异步双光梳技术的非光谱域传感机制与功能微纳米材料的协同作用，可通过级联微通道架构在金属波导中激发拓扑保护的集体振动模式，同时利用偶氮染料的光致异构化效应实现动态光子晶格重构，从而突破传统光谱域限制。该机制结合物理学领域的特征共振频率调控与材料科学的生物功能化策略，通过制造诱导缺陷在亚波长尺度增强太赫兹场-物质相互作用，最终实现四阶灵敏度提升的痕量生物分子检测。\n\nL2 Hypotheses:\n- Q1: 异步双光梳技术通过级联微通道架构在金属平板波导干涉仪中产生非对称电磁场分布，形成具有高Q值的级联谐振腔。当两束光梳的重复频率差值与微通道内流体的特征共振频率匹配时，将触发超光谱感知机制，其产生的时域波形相位偏移与分子振动谱直接相关（物理学：异步双光梳+电子：级联微通道架构）\n  \n- Q2: 功能微/纳米材料的光活性表面等离激元共振效应可增强太赫兹波与偶氮染料分子的耦合效率。当材料表面引入制造诱导缺陷形成局域场增强区时，光致异构化过程的顺反异构转换率将与入射光功率密度呈非线性正相关，这种非线性响应通过金属-介质界面传递至波导模式，实现光响应灵敏度的指数级提升（材料科学：光活性材料辅助+电子：金属平板波导干涉仪）\n\nL3 Hypotheses:\n- Q1: 基于拓扑保护波导的单模特性构建自参考传感器系统，将偶氮染料分子固定于波导表面微流控通道内。当特定波长光刺激引发分子光致异构化时，其折射率变化通过干涉仪的相位调制转化为可检测的频率偏移，同时利用异步双光梳的高精度频率标尺实现原位校准，消除环境温度漂移干扰（物理学：拓扑保护波导+材料科学：偶氮染料光致异构化）\n\n- Q2: 异步双光梳系统的嵌套梳状频率序列经人工智能光子学算法实时优化后，可动态调整双光梳的载波包络偏移频率，使其与高值谐振超材料的品质因子极值点保持共振匹配。拓扑保护波导通过单向传输特性抑制模式畸变，使系统在四阶灵敏度提升下的分子振动谱分析精度达到0.01 GHz量级（物理学：高值谐振超材料+人工智能光子学+电子：强驱动嵌套梳状系统）",
+        "elapsed": 30.0
+      },
+      {
+        "method": "P4",
+        "hypotheses_text": "L1 Hypothesis:\nhypothesis: 通过融合拓扑保护波导的鲁棒性与人工智能光子学的动态优化能力，可突破传统光谱域限制实现太赫兹波段的量子相干增强型生物分子检测。这种跨尺度协同机制将利用拓扑材料的缺陷免疫特性稳定特征共振频率，同时通过神经网络实时解构分子振动模式与光梳参数的高维关联。\nreasoning: \n1. 拓扑保护波导已证实可抑制制造缺陷导致的模式畸变（关系7）\n2. 人工智能光子学具备动态参数优化潜力（原文提及方向）\n3. 量子相干效应可通过集体振动模式增强光-物质相互作用\n4. 两者的协同将产生超越现有超光谱机制的量子增强检测范式\nkey_concepts: [topologically protected waveguide, artificial intelligence photonics, quantum coherence effect, collective vibrational mode]\ndisciplines_bridged: [物理学, 材料科学, 电子、通信与自动控制技术]\n\nL2 Hypotheses:\n- Q1:\nhypothesis: 异步双光梳的时域波形整形能力与级联微通道的流体动力学特性相结合，可在非光谱域构建四维时空编码传感框架。这种机制通过微流控调制实现特征共振频率的拓扑转换，产生超越传统相干检测的超灵敏相位解调能力。\nreasoning: \n1. 异步双光梳具有时域波形整形功能（相关概念）\n2. 级联微通道可实现精确流体控制（关系1）\n3. 微流体诱导的频率梳重构将产生时空编码的超灵敏检测\n4. 金属波导干涉仪的相干检测极限将被突破\nkey_concepts: [asynchronous twin-comb, cascading microchannel architecture, temporal waveform shaping, topological frequency conversion]\ndisciplines_bridged: [物理学, 电子、通信与自动控制技术]\n\n- Q2: \nhypothesis: 功能微纳米材料的制造诱导缺陷与偶氮染料的光致异构化效应存在协同增强机制，通过构建缺陷态调控的光活性异质结，可在太赫兹波段实现光驱动的灵敏度开关效应。这种效应使传感器具备动态可调的检测阈值控制能力。\nreasoning: \n1. 制造缺陷可调控材料电子态结构（材料科学概念）\n2. 偶氮染料具有光致异构化诱导的折射率变化（关系2）\n3. 缺陷-光异构耦合将产生新型光驱动灵敏度调控机制\n4. 光响应灵敏度将获得动态可编程特性\nkey_concepts: [fabrication-induced defects, photoisomerization, defect-engineered heterojunction, optically driven sensitivity switching]\ndisciplines_bridged: [材料科学, 物理学]\n\nL3 Hypotheses:\n- Q1:\nhypothesis: 将金属平板波导干涉仪的相干检测方案与偶氮染料的光致异构化特性集成，可构建基于光化学反馈的自校准太赫兹生物传感器。该系统通过共振频率漂移与异构化动力学的耦合实现检测信号的在线补偿，消除环境波动干扰。\nreasoning: \n1. 相干检测方案已应用于金属波导干涉仪（关系4）\n2. 偶氮染料的光异构化具有可逆动力学特性（关系2）\n3. 将异构化引起的折射率变化反馈至干涉仪参考臂\n4. 构建闭环自校准系统实现ppb级稳定性\nkey_concepts: [coherent detection schemes, azo dye, photochemical feedback loop, self-calibrating sensor]\ndisciplines_bridged: [物理学, 材料科学]\n\n- Q2:\nhypothesis: 在拓扑保护波导约束下，异步双光梳系统可通过自旋轨道耦合效应与人工智能协同实现四阶灵敏度提升。拓扑边界态引导的光梳梳齿重构将产生非对称Fano共振，结合深度学习解卷积可实时解析单分子振动谱特征。\nreasoning: \n1. 拓扑波导具有边界态导模特性（关系7）\n2. 异步光梳具备多外差检测潜力（关系3）\n3. 自旋轨道相互作用将增强非对称共振效应\n4. 神经网络可解构四阶灵敏度对应的超复杂谱图\nkey_concepts: [topologically protected waveguide, spin-orbit coupling, Fano resonance, deep learning spectral deconvolution]\ndisciplines_bridged: [物理学, 电子、通信与自动控制技术]",
+        "elapsed": 51.1
+      },
+      {
+        "method": "P5",
+        "hypotheses_text": "[L1] 异步双光梳 --[异步双光梳技术扩展光频梳精密测量应用]--> 光频梳\n[L1] 光频梳 --[光频梳精密测量需结合级联微通道架构实现非光谱域传感]--> 级联微通道架构\n[L1] 级联微通道架构 --[级联微通道架构通过金属波导实现特征共振频率检测]--> 金属波导\n[L1] 超光谱感知机制 --[超光谱感知机制需依赖功能微/纳米材料突破灵敏度限制]--> 功能微/纳米材料\n[L1] 功能微/纳米材料 --[功能微/纳米材料通过光活性材料辅助提升光响应灵敏度]--> 光活性材料辅助\n[L1] 光活性材料辅助 --[光活性材料辅助技术结合拓扑保护波导实现鲁棒性检测]--> 拓扑保护波导\n[L1] 相干检测方案 --[相干检测方案通过金属平板波导干涉仪实现高灵敏度检测]--> 金属平板波导干涉仪\n[L1] 金属平板波导干涉仪 --[金属平板波导干涉仪需结合自参考传感器消除环境干扰]--> 自参考传感器\n[L1] 自参考传感器 --[自参考传感器通过多通道波导耦合实现生物分子振动谱分析]--> 多通道波导耦合\n[L2] 级联微通道架构 --[实现超光谱感知机制]--> 超光谱感知机制\n[L2] 超光谱感知机制 --[定位特征共振频率]--> 特征共振频率\n[L2] 特征共振频率 --[突破灵敏度限制]--> 灵敏度限制\n[L2] 功能微/纳米材料 --[结合光活性材料辅助]--> 光活性材料辅助\n[L2] 光活性材料辅助 --[实现高光响应灵敏度]--> 光响应灵敏度\n[L2] 光响应灵敏度 --[突破灵敏度限制]--> 灵敏度限制\n[L3] 相干检测方案 --[应用于金属平板波导干涉仪实现高灵敏度]--> 金属平板波导干涉仪\n[L3] 金属平板波导干涉仪 --[与偶氮染料结合实现光致异构化检测]--> 偶氮染料\n[L3] 偶氮染料 --[通过光致异构化效应触发自参考传感器校准]--> 自参考传感器\n[L3] 拓扑保护波导 --[与异步双光梳系统协同优化结构稳定性]--> 异步双光梳\n[L3] 异步双光梳 --[在人工智能光子学支持下增强光谱解析能力]--> 人工智能光子学\n[L3] 人工智能光子学 --[通过分析集体振动模式实现四阶灵敏度提升]--> 集体振动模式",
+        "elapsed": 0.0
+      }
+    ]
+  },
+  {
+    "tag": "test_10",
+    "paper": {
+      "paper_id": "a06c3d7464a2",
+      "title": "Thermomagnetic liquid metal switches with fast bidirectional response",
+      "abstract": "Traditional thermal switches usually suffer from long-time and unidirectional response. Herein, we combined liquid metals with magnetic Ni<sub>2</sub>Mn<sub>1.4</sub>In<sub>0.6</sub> particles and dev...",
+      "primary_discipline": "材料科学",
+      "secondary_disciplines": [
+        "机械工程",
+        "动力与电气工程"
+      ]
+    },
+    "results": [
+      {
+        "method": "P1",
+        "hypotheses_text": "**Hypothesis:** 热磁液态金属可通过磁场诱导的拓扑重构实现非接触式热界面动态调控，其基于磁流体动力学效应的液态金属桥接/断开机制可突破传统热开关的导热率-响应时间耦合限制，在10^4 A/m磁场梯度下预期热导率调制比达500%且响应时间低于10 ms，显著优于现有机械/相变型热开关的性能指标。该机制可通过构建微尺度磁控腔体结构实现亚稳态液态金属形态的可逆调控，其理论可行性可通过原位磁热耦合实验结合COMSOL多物理场仿真验证，循环寿命将超10^6次而无显著性能衰减。",
+        "elapsed": 20.7
+      },
+      {
+        "method": "P2",
+        "hypotheses_text": "L1 Hypothesis: 热磁液态金属通过磁性Ni<sub>2</sub>Mn<sub>1.4</sub>In<sub>0.6</sub>颗粒与液态金属基体的协同作用，构建温度-磁场-电导率动态耦合系统，在微通道中形成可逆的液滴位移驱动机制，从而突破传统热开关单向响应和延迟瓶颈。其性能提升源于多物理场跨尺度调控：磁性颗粒相变温度的可调性提供触发阈值设计自由度，液态金属的低粘度特性保证微通道内快速流动，而双向位移模式通过机械-电气双回路联动实现电路切断与灭火启动的同步响应。\n\nL2 Hypotheses:  \n- Q1: 通过非对称双腔体微通道设计与梯度表面能调控，可诱导热磁液态金属在相变时产生定向毛细流压差，使液滴在磁场梯度驱动下实现亚秒级往复运动。基于流-固耦合计算的微通道拓扑优化（如收缩-扩张单元周期性排列），可将粘性耗散降低至传统结构的30%，从而在75°C热源下达到660ms极限响应速度。  \n- Q2: 通过构建磁热-电导通双稳态电路，利用热磁颗粒居里温度附近的陡峭磁化率变化特性，设计磁通门控型场效应晶体管。当温度阈值触发时，颗粒磁序突变导致磁通量快速衰减，通过电感耦合在次级线圈中产生瞬态电动势，同步驱动主电路断路与灭火电路导通，形成响应时间<1s的双向触发反馈回路。",
+        "elapsed": 34.2
+      },
+      {
+        "method": "P3",
+        "hypotheses_text": "L1 Hypothesis: 热磁液态金属通过镍锰铟合金的热致磁转变特性与微通道结构的协同作用，可实现双向快速响应。其机制在于：当温度超过居里温度时，铁磁状态向顺磁状态转变导致磁化-温度曲线突变，触发液滴位移的磁驱动效应；同时微通道的几何约束增强对流加热效率，使磁化状态变化与液滴运动形成动态耦合，从而突破传统单向响应和长响应时间的性能瓶颈。\n\nL2 Hypotheses:\n- Q1: 机械工程的微通道几何参数（如直径梯度和表面粗糙度）通过影响液滴位移的惯性阻力，决定热磁液态金属的响应时间。具体而言，锥形微通道设计可利用马兰戈尼效应加速液滴迁移，而玻璃管表面的微纳结构可降低接触角滞后，使响应时间随通道收缩率呈指数衰减关系。\n- Q2: 动力与电气工程通过构建热-电双稳态电路，利用镍锰铟合金的居里温度特性实现阈值控制。当热触发导通开关检测到发光二极管电路温度超过临界值时，热磁液态金属的磁化强度骤降将引发电路拓扑结构重构，同步切断主电路并激活灭火装置的电容放电回路。\n\nL3 Hypotheses:\n- Q1: 热磁液态金属在微通道中的双向响应源于磁驱动与热应力的矢量叠加效应。具体机制为：当外部磁场反向时，液滴内部的磁化方向反转产生洛伦兹力，同时热致磁转变导致的表面张力梯度驱动液滴向低温区迁移，二者通过斯托克斯流动方程的非线性耦合实现位移方向可控。\n- Q2: 镍锰铟合金的居里温度与LED电路的热-电协同控制可通过构建磁滞回线反馈机制实现。假设当温度达到75°C时，合金的铁磁-顺磁相变导致磁通量密度变化率ΔB/Δt超过阈值，触发比较器电路输出脉冲信号，该信号既用于切断工作电路，又通过压电效应驱动微流控灭火模块的机械位移。",
+        "elapsed": 24.1
+      },
+      {
+        "method": "P4",
+        "hypotheses_text": "L1 Hypothesis:  \n**hypothesis**: 热磁液态金属的性能瓶颈突破可通过引入光热协同效应实现，即利用激光加热诱导局部居里温度梯度，触发非对称磁化状态，从而在微通道中形成定向液滴位移，同时结合磁-热-光三场耦合调控响应速度与恢复时间。  \n**reasoning**:  \n1. 前提：赫斯勒合金的居里温度可通过激光加热精确调控（[laser heating]→[glass tube]关系）  \n2. 机制：局部光热效应在微通道内建立温度梯度，导致铁磁-顺磁状态的空间分离，产生磁力非对称驱动  \n3. 预测：通过控制激光功率与扫描速率，可使响应时间突破660 ms极限，且恢复时间随光场撤除速率呈指数衰减  \n**key_concepts**: 光热协同效应, 居里温度梯度, 磁-热-光耦合, 非对称液滴位移  \n**disciplines_bridged**: 材料科学（热磁特性） × 机械工程（光控微通道设计） × 动力与电气工程（激光能量调控）  \n\n---\n\nL2 Hypotheses:  \n**Q1 (机械工程)**:  \n**hypothesis**: 微通道的分形树状结构设计可通过增强对流换热效率，使热传导路径与液滴运动轨迹形成拓扑匹配，在相同热源下将响应时间降低至400 ms以下。  \n**reasoning**:  \n1. 前提：微通道几何结构影响对流加热效率（[micro-channel thermal switch]←[convection heating]）  \n2. 机制：分形结构增大热交换面积并引导液滴沿主通道分支定向运动，减少流体阻力  \n3. 预测：分形维度D>1.8时，液滴位移速度与热扩散系数呈正相关，且恢复时间与通道分形对称性成反比  \n**key_concepts**: 分形微通道, 对流换热增强, 拓扑液滴驱动  \n**disciplines_bridged**: 机械工程（微通道流体动力学） × 材料科学（液滴表面张力调控）  \n\n**Q2 (动力与电气工程)**:  \n**hypothesis**: 通过构建磁控谐振电路，将热磁液态金属的导电性变化转化为电磁感应脉冲信号，可实现非接触式电路切断与灭火触发的同步控制。  \n**reasoning**:  \n1. 前提：液态金属导电性随磁化状态变化（[thermomagnetic liquid metal]→[electrical conductivity]）  \n2. 机制：液滴位移引起谐振电路LC参数突变，产生瞬态涡流驱动电磁继电器动作  \n3. 预测：当热触发使磁化率下降50%时，感应脉冲幅值超过5V，可在100ms内触发MOSFET开关关断  \n**key_concepts**: 磁控谐振电路, 涡流驱动, 电磁-热耦合  \n**disciplines_bridged**: 动力与电气工程（电路设计） × 材料科学（磁致导电性变化）  \n\n---\n\nL3 Hypotheses:  \n**Q1 (热磁液态金属双向响应机制)**:  \n**hypothesis**: 在微通道交叉节点处集成永磁微阵列，通过热致磁转变与磁场梯度竞争效应，可实现液滴的\"磁钉扎-释放\"双向切换，使电路切断与重启延迟差<0.5s。  \n**reasoning**:  \n1. 前提：液滴位移受磁驱动控制（[droplet displacement]→[magnetic actuation]）  \n2. 机制：永磁阵列在常温提供钉扎力，居里温度附近磁场梯度反转释放液滴，形成阈值依赖的双向响应  \n3. 预测：当热源温度超过Tc±2℃时，钉扎力与驱动磁力比值突变至0.1以下，触发瞬时位移  \n**key_concepts**: 永磁微阵列, 磁钉扎效应, 磁场梯度反转  \n**disciplines_bridged**: 机械工程（微通道磁控结构） × 材料科学（热致磁转变）  \n\n**Q2 (居里温度-LED协同控制)**:  \n**hypothesis**: 通过梯度掺杂赫斯勒合金构建多级相变材料，在LED电路中串联多个居里温度阈值，可实现分级过热保护：第一级Tc1=60℃触发电流限制，第二级Tc2=75℃完全切断电路并启动灭火。  \n**reasoning**:  \n1. 前提：赫斯勒合金居里温度决定开关阈值（[Heusler alloy]→[Curie temperature]）  \n2. 机制：多级磁相变产生阶跃式磁化衰减，对应不同温度阈值下的继电器驱动信号  \n3. 预测：双Tc结构使电路在60-75℃区间输出PWM调制信号，75℃后完全关断  \n**key_concepts**: 多级相变材料, 分级过热保护, 磁化阶跃衰减  \n**disciplines_bridged**: 材料科学（合金梯度设计） × 动力与电气工程（分级电路控制）",
+        "elapsed": 51.7
+      },
+      {
+        "method": "P5",
+        "hypotheses_text": "[L1] 热磁液态金属 --[应用热磁液态金属开发微通道热开关]--> 微通道热开关\n[L1] 微通道热开关 --[居里温度决定热开关工作温度阈值]--> 居里温度\n[L1] 居里温度 --[赫斯勒合金决定居里温度特性]--> 赫斯勒合金\n[L1] 热磁液态金属 --[热磁液态金属具备优异导电性]--> 导电性\n[L1] 导电性 --[液滴位移实现电路切断功能]--> 液滴位移\n[L1] 液滴位移 --[磁驱动]--> 磁驱动\n[L1] 热磁液态金属 --[热致磁转变驱动磁控功能]--> 热致磁转变\n[L1] 热致磁转变 --[铁磁状态维持电路导通]--> 铁磁状态\n[L1] 铁磁状态 --[顺磁状态触发灭火机制]--> 顺磁状态\n[L2] 镍锰铟合金 --[缩短响应时间]--> 响应时间\n[L2] 响应时间 --[优化设计参数]--> 微通道热开关\n[L2] 微通道热开关 --[依赖材料特性]--> 热磁液态金属\n[L2] 热致磁转变 --[驱动磁控功能]--> 磁驱动\n[L2] 磁驱动 --[引发位移运动]--> 液滴位移\n[L2] 液滴位移 --[实现电路切断]--> 工作电路\n[L3] 热磁液态金属 --[通过热致磁转变驱动磁控功能]--> 磁驱动\n[L3] 磁驱动 --[引发液滴位移实现双向响应]--> 液滴位移\n[L3] 液滴位移 --[通过切断工作电路完成快速响应]--> 工作电路\n[L3] 镍锰铟合金 --[作为赫斯勒合金决定居里温度特性]--> 赫斯勒合金\n[L3] 赫斯勒合金 --[通过居里温度阈值控制相变状态]--> 居里温度\n[L3] 居里温度 --[通过铁磁-顺磁状态切换控制电路]--> 发光二极管电路",
+        "elapsed": 0.0
+      }
+    ]
+  },
+  {
+    "tag": "test_11",
+    "paper": {
+      "paper_id": "010030317962",
+      "title": "Systematic benchmarking of high-throughput subcellular spatial transcriptomics platforms across human tumors",
+      "abstract": "Abstract Recent advancements in spatial transcriptomics technologies have significantly enhanced resolution and throughput, underscoring an urgent need for systematic benchmarking. Here, we generate s...",
+      "primary_discipline": "生物学",
+      "secondary_disciplines": [
+        "生物学",
+        "计算机科学技术",
+        "基础医学"
+      ]
+    },
+    "results": [
+      {
+        "method": "P1",
+        "hypotheses_text": "我们假设空间转录组技术的效能评估需建立多维评价体系，其核心参数（如空间分辨率、基因检出灵敏度、区域异质性捕获能力）与肿瘤组织的结构复杂度（如细胞密度梯度、基质-上皮比例、血管网络连通性）存在非线性关联，且这种关联可通过引入基于物理建模的虚拟组织仿真系统进行量化解析。具体而言，构建包含可控细胞空间分布、梯度基因表达特征和可调基质成分的3D虚拟肿瘤模型，结合10x Genomics Visium、NanoString GeoMx DSP等平台的实际检测数据，可建立\"技术效能指数\"(TEI)与组织形态学参数（如Hausdorff分形维度、邻域细胞类型熵）的数学映射关系。该假设可通过比较不同分辨率下技术对虚拟模型中预设细胞间通讯网络（如T细胞-肿瘤细胞接触依赖性IFN-γ信号传导）的重构准确度来验证，最终形成基于贝叶斯优化的技术-样本匹配决策框架，指导临床样本分析中空间转录组平台的动态选择。",
+        "elapsed": 18.9
+      },
+      {
+        "method": "P2",
+        "hypotheses_text": "L1 Hypothesis: Integrating multi-platform spatial transcriptomics data with matched single-cell RNA-seq and CODEX protein profiling through computational frameworks that harmonize subcellular resolution and molecular specificity will enable systematic quantification of tumor microenvironment heterogeneity, revealing spatially resolved biomarker networks that correlate with clinical outcomes in colon adenocarcinoma, hepatocellular carcinoma, and ovarian cancer.\n\nL2 Hypotheses:\n- Q1: Deep learning-based fusion of Stereo-seq v1.3's nanoscale spatial resolution with Xenium 5K's high-throughput transcript detection and CosMx 6K's multiplexed imaging capabilities will overcome individual platform limitations in RNA capture sensitivity versus spatial precision, enabling accurate deconvolution of tumor-stroma interactions at the subcellular level through cross-modal data imputation algorithms.\n  \n- Q2: Spatially aligned CODEX protein signatures combined with Visium HD FFPE's spatial clustering patterns will identify tumor-immune crosstalk hotspots characterized by specific CXCL9+ macrophage-T cell synapses, which computational topology analysis can validate as prognostic spatial biomarkers distinct from bulk molecular subtypes in hepatocellular carcinoma.",
+        "elapsed": 17.6
+      },
+      {
+        "method": "P3",
+        "hypotheses_text": "L1 Hypothesis: 整合基于测序的高通量空间转录组平台（如Stereo-seq v1.3）与基于成像的亚细胞分辨率技术（如CosMx 6K），结合多组学数据集与计算方法开发，将通过捕获灵敏度-特异性平衡优化和免疫景观动态建模，显著提升肿瘤微环境中癌-基质-免疫细胞互作网络的解析效能，其机制可通过聚寡核苷酸扩散控制参数与病理诊断数据的多尺度验证来阐明。\n\nL2 Hypotheses:\n- Q1: 迭代杂交技术（计算机科学技术）通过优化聚寡核苷酸探针设计，可将基于测序的高通量平台（如Xenium 5K）亚细胞分辨率提升至100nm级，同时维持单细胞测序（生物学）的转录组覆盖率，其效能可通过与Visium HD FFPE平台的组织形态发生相关基因空间分布差异进行量化验证。\n- Q2: 分子病理学（基础医学）中的肿瘤特异性蛋白标志物（如CA-125在卵巢癌）与单细胞测序（生物学）定义的免疫细胞亚群空间聚类（计算机科学技术）的多模态融合，可通过捕获免疫检查点分子与T细胞耗竭的空间邻域关联，揭示传统免疫组化难以检测的三级淋巴结构动态变化。\n\nL3 Hypotheses:\n- Q1: 基于图卷积网络的空间聚类算法（计算机科学技术）整合手动核分割（生物学）的精确细胞边界信息与病理医师标注的肿瘤-间质比例（基础医学），将构建具有拓扑保持特性的肿瘤微环境动态模型，其预测能力可通过CODEX蛋白组数据（生物学）的细胞邻域共定位分析进行严格验证。\n- Q2: 面向卵巢癌样本（基础医学）的多组学数据整合方案，通过计算方法开发中的对抗生成网络（计算机科学技术）模拟不同平台（Stereo-seq与CosMx）的技术噪声特征，可实现单细胞分辨率跨平台数据校正，其有效性可通过校正前后疾病生物标志物（如BRCA1表达空间异质性）的检测一致性进行评估。",
+        "elapsed": 27.5
+      },
+      {
+        "method": "P4",
+        "hypotheses_text": "L1 Hypothesis:\n  hypothesis: 基于迭代优化的空间聚类算法与多模态数据融合技术，可突破亚细胞分辨率空间转录组数据的免疫景观解析瓶颈。通过整合CODEX提供的蛋白空间分布先验知识与单细胞转录组分子特征，构建具有病理学约束的深度学习模型，可实现肿瘤微环境中浸润淋巴细胞空间排布与血管生成模式的耦合分析，从而揭示免疫逃逸微环境的拓扑特征。\n  reasoning: \n    1. CODEX提供的空间蛋白数据已作为空间聚类的约束条件(关系4)\n    2. 空间聚类可揭示免疫景观(关系7)，但现有算法未考虑病理组织的拓扑约束\n    3. 病理诊断数据包含血管生成等组织形态特征(基础医学概念)\n    4. 计算机科学的迭代杂交算法可融合多模态数据\n    5. 推测：将病理拓扑特征作为正则化项引入聚类算法 → 建立空间位置与分子特征的联合概率模型 → 发现免疫细胞空间分布与血管生成的协同模式\n  key_concepts: [\"Spatial Clustering\", \"CODEX\", \"Immune Landscape\", \"Tumor Microenvironments\", \"Iterative Hybridization\", \"Tissue Morphogenesis\"]\n  disciplines_bridged: [\"计算机科学技术\", \"基础医学\"]\n\nL2 Hypotheses:\n- Q1:\n    hypothesis: 基于聚寡核苷酸编码的高通量空间捕获技术与自监督图像分割算法的协同优化，可突破亚细胞分辨率的空间转录组数据获取通量瓶颈。通过将Stereo-seq的DNA纳米球阵列定位信息转换为弱监督信号，指导Visium HD的组织病理图像分割，可在无需人工标注的情况下实现核分辨级别的转录本空间定位。\n    reasoning:\n      1. 高通量平台需要亚细胞分辨率(关系1)\n      2. 手动核分割是捕获灵敏度的前提(关系6)\n      3. 聚寡核苷酸是平台通用技术要素(生物学概念)\n      4. 计算机科学的自监督算法可减少人工依赖\n      5. 推测：利用Stereo-seq的分子坐标作为伪标签 → 训练分割模型识别Visium图像的核特征 → 实现自动化亚细胞级空间映射\n    key_concepts: [\"high-throughput platforms\", \"subcellular resolution\", \"Oligonucleotide\", \"manual nuclear segmentation\", \"self-supervised image segmentation\"]\n    disciplines_bridged: [\"生物学\", \"计算机科学技术\"]\n- Q2:\n    hypothesis: 肿瘤微环境中的代谢重编程特征可作为分子病理标志物，通过空间转录组与蛋白组数据的非对称整合，可建立免疫细胞浸润模式与糖酵解通路活性的空间耦合模型。该模型可解释传统HE染色无法识别的免疫冷肿瘤亚型，为病理诊断提供分子空间组学新维度。\n    reasoning:\n      1. 单细胞测序用于卵巢癌分析(关系5)\n      2. 空间转录组与CODEX蛋白数据需整合(关系4)\n      3. 疾病生物标志物是基础医学核心需求\n      4. 计算机科学的多模态整合方法尚未考虑分子通路特征\n      5. 推测：构建代谢基因表达与蛋白空间分布的联合矩阵 → 发现糖酵解热点区域 → 关联HE图像无法检测的免疫排斥现象\n    key_concepts: [\"single-cell RNA sequencing\", \"CODEX\", \"Immune Landscape\", \"Molecular Biomarkers\", \"metabolic reprogramming\", \"Pathological Diagnosis\"]\n    disciplines_bridged: [\"基础医学\", \"生物学\"]\n\nL3 Hypotheses:\n- Q1:\n    hypothesis: 基于图神经网络的空间聚类算法引入病理组织的空间约束后，可重构肿瘤微环境的动态细胞通讯网络。通过将HE染色图像的组织架构作为图结构先验，结合空间转录组的配体-受体表达数据，能够推演免疫细胞迁移路径与癌相关成纤维细胞的空间互作时序。\n    reasoning:\n      1. 空间聚类需要病理数据支持(关系7)\n      2. 病理诊断包含组织架构信息\n      3. 计算方法开发需结合生物学问题\n      4. 图神经网络适合建模空间关系\n      5. 推测：用HE图像构建组织拓扑图 → 节点嵌入空间转录组数据 → 预测细胞间通讯热点区域\n    key_concepts: [\"Spatial Clustering\", \"Pathological Diagnosis\", \"graph neural network\", \"Tumor Microenvironments\", \"Cell-cell Communication\"]\n    disciplines_bridged: [\"计算机科学技术\", \"基础医学\"]\n- Q2:\n    hypothesis: 基于卵巢癌单细胞测序数据训练的跨模态注意力网络，可通过知识蒸馏技术提升多组学数据整合的可解释性。将scRNA-seq的基因共表达模块作为\"教师网络\"，指导空间转录组与蛋白组数据融合模型的特征选择，可识别驱动肿瘤异质性的关键转录因子及其空间调控域。\n    reasoning:\n      1. 计算方法需优化多组学整合(操作问题)\n      2. 单细胞测序提供分子特征基准(关系5)\n      3. 转录因子调控属生物学核心问题\n      4. 注意力网络适合建模跨模态关联\n      5. 推测：建立单细胞数据与空间数据的特征映射 → 提取关键调控因子的空间表达模式 → 揭示肿瘤异质性空间驱动机制\n    key_concepts: [\"single-cell RNA sequencing\", \"multi-omics dataset\", \"attention network\", \"Transcription Factors\", \"Ovarian Cancer\"]\n    disciplines_bridged: [\"生物学\", \"计算机科学技术\"]",
+        "elapsed": 60.5
+      },
+      {
+        "method": "P5",
+        "hypotheses_text": "[L1] 空间转录组技术 --[应用于高通量平台性能评估]--> 高通量平台\n[L1] 高通量平台 --[依赖计算方法开发优化数据解析]--> 计算方法开发\n[L1] 计算方法开发 --[促进肿瘤微环境多维度解析]--> 肿瘤微环境\n[L1] 空间解析转录组学 --[整合多组学数据集提升解析深度]--> 多组学数据集\n[L1] 多组学数据集 --[驱动分子病理学方法创新]--> 分子病理学\n[L1] 分子病理学 --[完善肿瘤微环境动态建模]--> 肿瘤微环境\n[L1] 基于测序的平台 --[通过聚寡核苷酸实现空间定位]--> 聚寡核苷酸\n[L1] 聚寡核苷酸 --[影响空间聚类分析可靠性]--> 空间聚类\n[L1] 空间聚类 --[揭示免疫景观空间组织特征]--> 免疫景观\n[L2] 高通量平台 --[提供亚细胞分辨率数据生成基础]--> 空间转录组技术\n[L2] 空间转录组技术 --[通过手动核分割优化捕获灵敏度]--> 捕获灵敏度\n[L2] 捕获灵敏度 --[决定多组学数据集整合效能]--> 多组学数据集\n[L2] 免疫景观 --[基于空间聚类揭示组织空间特征]--> 空间聚类\n[L2] 空间聚类 --[映射肿瘤微环境空间异质性]--> 肿瘤微环境\n[L2] 肿瘤微环境 --[通过分子病理学验证疾病生物标志物]--> 疾病生物标志物\n[L3] 空间聚类 --[揭示免疫景观的空间组织模式]--> 免疫景观\n[L3] 免疫景观 --[反映肿瘤微环境病理状态]--> 肿瘤微环境\n[L3] 肿瘤微环境 --[通过多尺度建模实现动态表征]--> 病理诊断\n[L3] 计算方法开发 --[驱动多组学数据深度挖掘]--> 多组学数据集\n[L3] 多组学数据集 --[包含卵巢癌特异性分子特征]--> 卵巢癌\n[L3] 卵巢癌 --[指导计算模型迭代优化]--> 计算方法开发",
+        "elapsed": 0.0
+      }
+    ]
+  },
+  {
+    "tag": "test_12",
+    "paper": {
+      "paper_id": "1590533b808f",
+      "title": "Electrochemical upcycling of uranyl from radioactive organic wastewater with a self-standing covalent-organic framework electrode",
+      "abstract": "Efficient upcycling of uranyl from uranyl-containing radioactive organic wastewater is of utmost importance for the sustainable development of nuclear energy. In this work, an indirect electrochemical...",
+      "primary_discipline": "化学",
+      "secondary_disciplines": [
+        "化学",
+        "材料科学",
+        "核科学技术"
+      ]
+    },
+    "results": [
+      {
+        "method": "P1",
+        "hypotheses_text": "Hypothesis: 在电化学升级回收铀酰离子（UO₂²⁺）过程中，采用三维多孔钛基二氧化铅（Ti/PbO₂）复合电极与脉冲电源协同策略，通过动态调控电极表面氧化还原微环境，可实现铀的高效选择性还原及同步形态转化。具体机制为：阳极氧化产生的高活性硫酸根自由基（SO₄^−·）优先降解有机配体，释放游离UO₂²⁺；阴极脉冲电位（−1.2 V vs. SCE）诱导局域碱性环境，促进UO₂²⁺还原为U⁴⁺，并与电解液中CO₃²⁻定向生成超细UO₂CO₃晶体，该过程受电极表面氧空位缺陷位点与铀配位的协同强化作用调控。该假设可通过原位表征（如SEIRAS、XPS）验证界面反应路径，并结合DFT计算氧空位形成能与铀物种吸附能级匹配关系进行验证。",
+        "elapsed": 30.5
+      },
+      {
+        "method": "P2",
+        "hypotheses_text": "L1 Hypothesis:  \nThe integration of redox-active covalent organic framework (COF) architectures with electrochemical systems enables synergistic uranium(VI) recovery through spatially confined hydrogen peroxide generation and chelation-driven mineralization, where the hierarchical porosity and chemical tunability of PAE-COF-AO@CC electrodes create a dual-function interface that simultaneously optimizes oxygen reduction kinetics and uranium speciation pathways, leading to unprecedented stability and capacity in complex radioactive organic matrices.\n\nL2 Hypotheses:  \n- Q1:  \nThe self-standing PAE-COF-AO@CC electrode enhances uranium recovery efficiency through three-dimensional electron transport networks that accelerate ORR kinetics while maintaining sub-nanometer accessibility for uranyl ions, where the aromatic ether linkages and azole chelation sites in the COF framework create cooperative binding motifs that stabilize uranium-peroxo complexes and direct anisotropic studtite crystal growth via template-mediated nucleation.  \n\n- Q2:  \nThe demand for closed-loop nuclear fuel cycles drives the development of electrochemical uranium recovery technologies by necessitating materials that couple radiation resistance with electrocatalytic selectivity, where COF-based electrodes emerge as transformative solutions by integrating molecular-scale recognition with scalable electrochemical manufacturing, thereby reducing the energy and chemical inputs required for uranium reclamation compared to conventional solvent extraction or ion exchange processes.",
+        "elapsed": 23.0
+      },
+      {
+        "method": "P3",
+        "hypotheses_text": "L1 Hypothesis: \nThe synergistic interplay between the hierarchical pore architecture of polyarylether-based covalent organic framework electrodes (材料科学) and the redox-active amideoxime groups (化学) enables selective uranyl chelation and catalytic H2O2 generation through oxygen reduction reaction, which collectively establish a dynamic mineralization gradient that drives uranium speciation transformation from aqueous complexes to studtite crystals, ultimately facilitating phase-selective calcination to U3O8 via thermally activated structural rearrangement (化学-核科学技术).\n\nL2 Hypotheses:\n- Q1: The three-dimensional network of PAE-COF-AO@CC electrodes (材料科学) provides spatially separated functional domains where the conjugated aromatic ether units (化学) enhance electron transport for ORR catalysis while the ordered amideoxime chelating sites (化学) create localized high-uranium concentration microenvironments, thereby accelerating heterogeneous nucleation kinetics of studtite through a dual-mechanism of electrochemical concentration polarization and ligand-induced mineralization (化学-材料科学).\n- Q2: The demand for radiation protection in nuclear waste management (核科学技术) will catalyze the development of self-powered electrochemical systems integrating redox-flow battery architectures (化学) with radiation-resistant COF materials (材料科学), where the intrinsic porosity and functional group density of electrodes can be dynamically optimized through real-time pH monitoring (化学) to maintain uranium speciation control under fluctuating radiation fields (核科学技术).\n\nL3 Hypotheses:\n- Q1: The fractal dimension of electrode surface morphology quantified by SEM image analysis (材料科学) correlates with the Tafel slope values from cyclic voltammetry (化学) through a power-law relationship, where higher surface roughness enhances charge transfer kinetics but reduces uranium diffusion layer thickness, creating an optimal microstructural regime for coupled deposition-mineralization processes governed by uranium concentration polarization (化学-材料科学).\n- Q2: The binding energy shifts in U 4f XPS spectra (化学) during electrochemical operation will show a negative correlation with the intensity of Raman bands assigned to U-O2 vibrations (化学), where simultaneous tracking of these spectral features (化学) with operando XRD peak evolution (材料科学) will reveal a transient uranium peroxo-complex intermediate that bridges the molecular-scale chelation mechanism and the long-range ordered studtite crystal growth (化学-核科学技术).",
+        "elapsed": 24.3
+      },
+      {
+        "method": "P4",
+        "hypotheses_text": "L1 Hypothesis:  \n**hypothesis:** 通过构建具有梯度孔道结构的自支撑共价有机框架电极（PAE-COF-AO@CC），可同步实现铀酰离子的分级富集与H<sub>2</sub>O<sub>2</sub>介导的矿物转化动力学增强，最终形成核能可持续发展所需的高纯度U<sub>3</sub>O<sub>8</sub>  \n**reasoning:**  \n1. **Premise:** 材料科学中梯度孔道结构可调控物质传输（宏观-介观-分子级传质协同）  \n2. **Mechanism:** 化学梯度孔道与酰胺肟基团的协同作用可形成铀酰浓度梯度场，加速H<sub>2</sub>O<sub>2</sub>与铀酰的界面反应动力学  \n3. **Prediction:** 电极内部微区pH梯度与孔道限域效应将使studtite矿物选择性沉积在特定孔径区域，提升煅烧产物U<sub>3</sub>O<sub>8</sub>晶体取向一致性  \n**key_concepts:** 梯度孔道结构, 限域效应, 铀酰浓度梯度场, 微区pH调控, 晶体取向  \n**disciplines_bridged:** 材料科学（多孔结构设计）+ 化学（界面反应动力学）  \n\nL2 Hypotheses:  \n- Q1:  \n  **hypothesis:** 自支撑电极的芳香醚基团将通过π-π堆积作用稳定ORR中间体，同时酰胺肟螯合位点产生的局域电场可定向驱动铀酰离子迁移，形成催化-螯合协同效应  \n  **reasoning:**  \n  1. **Premise:** 材料科学中芳香醚基团具有共轭电子云（已知其ORR催化活性）  \n  2. **Mechanism:** 化学局域电场调控与铀酰离子-酰胺肟配位能级匹配，可降低离子迁移活化能  \n  3. **Prediction:** 电极表面将出现铀酰浓度极化现象，在ORR产生的H<sub>2</sub>O<sub>2</sub>区形成高反应活性的铀酰-过氧络合物中间体  \n  **key_concepts:** π-π堆积作用, 局域电场, 活化能垒, 铀酰-过氧络合物, 浓度极化  \n  **disciplines_bridged:** 材料科学（分子间作用）+ 化学（电化学反应机理）  \n\n- Q2:  \n  **hypothesis:** 核能产业中放射性污染物的辐射防护阈值标准将倒逼电极材料开发新型抗辐射损伤机制，通过构建辐射诱导自修复的酰胺肟基团实现铀酰回收效率稳定  \n  **reasoning:**  \n  1. **Premise:** 核科学技术中辐射剂量限值要求材料具有抗辐射稳定性  \n  2. **Mechanism:** 材料科学中的动态共价键设计可使受辐射损伤的酰胺肟基团通过邻位官能团重排再生  \n  3. **Prediction:** 在辐射场中运行的PAE-COF-AO@CC电极将保持90%以上初始铀酰吸附容量，且studtite晶体缺陷密度低于常规电极  \n  **key_concepts:** 抗辐射损伤, 动态共价键, 基团重排, 缺陷密度, 辐射诱导自修复  \n  **disciplines_bridged:** 核科学技术（辐射防护）+ 材料科学（智能材料设计）  \n\nL3 Hypotheses:  \n- Q1:  \n  **hypothesis:** 扫描电镜显示的电极三维多孔骨架与XRD解析的晶体择优取向共同决定铀酰扩散能垒，高铀酰浓度将诱导形成[100]取向优势的studtite晶体  \n  **reasoning:**  \n  1. **Premise:** 材料科学中电极微观结构决定传质效率（SEM/EDR表征）  \n  2. **Mechanism:** 化学溶液铀酰浓度梯度与晶体生长动力学相互作用，特定晶面生长速率受表面能控制  \n  3. **Prediction:** 当铀酰浓度>500 mg/L时，电极表面将优先形成[100]晶面暴露的studtite，其(002)晶面与酰胺肟基团配位强度提升40%  \n  **key_concepts:** 三维多孔骨架, 择优取向, 扩散能垒, 表面能控制, 晶面特异性配位  \n  **disciplines_bridged:** 材料科学（晶体生长）+ 化学（溶液化学）  \n\n- Q2:  \n  **hypothesis:** XPS解析的U(VI)价态稳定性与in situ Raman检测的ν(U-O<sub>2</sub>)振动峰位移存在线性相关性，可用于定量预测studtite向U<sub>3</sub>O<sub>8</sub>转化的临界温度  \n  **reasoning:**  \n  1. **Premise:** 化学中光谱技术联用可揭示价态-结构关联（XPS/Raman互补）  \n  2. **Mechanism:** 核科学技术中铀的5f电子态受配位环境调控，影响热转化能垒  \n  3. **Prediction:** 当ν(U-O<sub>2</sub>)峰位红移超过15 cm<sup>-1</sup>时，studtite在450℃煅烧后将获得单相γ-U<sub>3</sub>O<sub>8</sub>  \n  **key_concepts:** 价态-结构关联, 振动峰位移, 5f电子态调控, 热转化能垒, 单相晶体  \n  **disciplines_bridged:** 化学（光谱分析）+ 核科学技术（核素热化学）",
+        "elapsed": 63.0
+      },
+      {
+        "method": "P5",
+        "hypotheses_text": "[L1] 电化学升级回收 --[利用自支撑共价有机框架电极进行电化学升级回收]--> 自支撑共价有机框架电极\n[L1] 自支撑共价有机框架电极 --[提供螯合位点]--> 螯合位点\n[L1] 螯合位点 --[煅烧将矿物转化为三氧化铀]--> 煅烧\n[L1] 氧还原反应 --[作为氧还原反应催化剂]--> 自支撑共价有机框架电极\n[L1] 自支撑共价有机框架电极 --[参与形成矿物]--> 过氧化氢\n[L1] 过氧化氢 --[通过原位拉曼光谱检测矿物特征峰]--> 矿物\n[L1] 核能 --[核能可持续发展驱动电化学回收技术]--> 电化学升级回收\n[L1] 电化学升级回收 --[影响电化学提取效率]--> 铀酰浓度\n[L1] 铀酰浓度 --[通过射线光电子能谱分析确定铀价态]--> 射线光电子能谱分析\n[L2] 自支撑共价有机框架电极 --[作为氧还原反应催化剂]--> 氧还原反应\n[L2] 氧还原反应 --[催化生成过氧化氢]--> 过氧化氢\n[L2] 过氧化氢 --[参与矿物形成以固定铀酰]--> 矿物\n[L2] 核能 --[驱动电化学回收技术创新]--> 电化学升级回收\n[L2] 电化学升级回收 --[优化铀酰浓度处理效率]--> 铀酰浓度\n[L2] 铀酰浓度 --[决定铀酰提取纯度与容量]--> 铀酰\n[L3] 扫描电镜图像 --[表征自支撑电极微观结构]--> 自支撑共价有机框架电极\n[L3] 自支撑共价有机框架电极 --[提供螯合位点]--> 螯合位点\n[L3] 螯合位点 --[结合铀酰离子形成矿物前驱体]--> 矿物\n[L3] 射线光电子能谱分析 --[检测铀价态稳定性]--> 六价铀\n[L3] 六价铀 --[在螯合位点形成配位结构]--> 螯合位点\n[L3] 螯合位点 --[诱导矿物特征峰生成]--> 原位拉曼",
+        "elapsed": 0.0
+      }
+    ]
+  },
+  {
+    "tag": "test_13",
+    "paper": {
+      "paper_id": "872ef6d6da86",
+      "title": "The geometric-electronic coupled design of diatomic catalyst towards oxygen reduction reaction",
+      "abstract": "Diatomic catalysts are promising candidates for heterogeneous catalysis, whereas the rational design meets the challenges of numerous optional elements and the correlated alternation of parameters tha...",
+      "primary_discipline": "化学",
+      "secondary_disciplines": [
+        "材料科学",
+        "计算机科学技术"
+      ]
+    },
+    "results": [
+      {
+        "method": "P1",
+        "hypotheses_text": "Hypothesis: 通过构建具有异核双金属位点（如Fe-Co）且金属-金属间距精确调控在2.5-3.2 Å范围的二维材料负载催化剂，结合硫族元素（如S, Se）桥联配位，可实现几何结构与电子态的协同优化。该策略将通过以下机制增强ORR性能：（1）不等价金属原子间电荷震荡（Δd-electron density）降低氧分子活化能垒；（2）桥联配体引发的反铁磁耦合效应抑制过强的OH*中间体吸附；（3）量子干涉效应调控d带中心至理想区间（-0.1~0.2 eV）。可通过原位XAFS、同步辐射XPS结合微动力学建模验证该假设。",
+        "elapsed": 22.4
+      },
+      {
+        "method": "P2",
+        "hypotheses_text": "L1 Hypothesis: 几何-电子耦合策略通过协同优化双原子催化剂的原子间距与电子磁矩，可有效调控氧还原反应(ORR)中间体的吸附构型与电子传递动力学。该耦合机制打破传统单一参数优化范式，通过构建几何距离-磁矩二维活性空间，实现催化剂表面活性位点的空间构型与电子态密度的同步精准调控，从而突破锌空气电池中ORR动力学瓶颈并提升能量转换效率。\n\nL2 Hypotheses:\n- Q1: 几何距离参数通过调制双原子位点的d轨道耦合强度，决定氧分子的侧向吸附构型与限速步骤能垒；电子磁矩则通过自旋极化效应调控中间体(*OOH/*OH)的电子填充态密度。二者的非线性协同作用在热点图中形成特定相区，其最优组合可使锌空气电池的峰值功率密度突破现有催化剂的理论极限。\n  \n- Q2: 基于机器学习的热点图通过高通量筛选几何-电子参数组合，可建立原子尺度结构特征与宏观电催化性能的映射关系。该模型通过识别活性位点的几何约束条件(如N桥联原子配位数)与磁矩阈值(如3d轨道未成对电子数)，能预测非贵金属双原子体系的最优活性窗口，从而指导实验合成具有特定原子排列和电子自旋状态的催化剂。",
+        "elapsed": 19.6
+      },
+      {
+        "method": "P3",
+        "hypotheses_text": "L1 Hypothesis:  \n几何-电子耦合设计通过协同调节双原子催化剂的键长（化学）与电子自旋状态（化学），在活性位点形成优化的含氧中间体吸附构型（化学），从而增强氧还原反应动力学（材料科学）。这种协同效应可通过机器学习（计算机科学技术）对几何距离（化学）与磁矩（化学）的多参数空间进行高精度建模，最终在锌空气电池（材料科学）中表现为半波电位（化学）与峰值功率密度（材料科学）的同步提升。  \n\nL2 Hypotheses:  \n- Q1: 几何距离在2.0-2.5 Å范围内（化学，键长）的双原子催化剂可形成不对称氮硫配位环境（化学），通过调制d带中心（化学）与电荷分布（材料科学），使电子磁矩（化学）稳定在1.5-2.0 μB区间，从而优化氧中间体吸附强度（化学），在锌空气电池（材料科学）中实现超过250 mW cm⁻²的峰值功率密度（材料科学）和0.85 V以上半波电位（化学）。  \n- Q2: 机器学习（计算机科学技术）基于火山型曲线相关性（化学）构建的热点图（化学），可通过识别几何距离（化学）与磁矩（化学）的非线性关联区域（计算机科学技术），优先筛选出具有Co-N-Mn桥式结构（化学）的活性位点，其预测的催化活性（计算机科学技术）与实验测得的动力学电流密度（材料科学）相关性系数应高于0.90。  \n\nL3 Hypotheses:  \n- Q1: 基于机器学习热点图（计算机科学技术）预测的Co-N-Mn/NC催化剂（化学），其几何距离（化学）与磁矩（化学）参数组合若落在火山型曲线顶点区域（化学），则在锌空气电池（材料科学）中将同时实现0.90 V半波电位（化学）与800 mAh g⁻¹比容量（材料科学），且实验值与预测模型（计算机科学技术）的误差不超过5%。  \n- Q2: 通过机器学习（计算机科学技术）解耦几何距离（化学）与磁矩（化学）的独立贡献，可建立几何参数（化学）主导含氧中间体结合能（化学）与电子参数（计算机科学技术）调控电荷转移速率（材料科学）的二元模型，其指导的催化剂设计在碱性电解质（材料科学）中的氧还原性能（化学）应呈现显著的梯度变化规律（p<0.01）。",
+        "elapsed": 26.2
+      },
+      {
+        "method": "P4",
+        "hypotheses_text": "L1 Hypothesis:  \nhypothesis: Integrating geometric-electronic coupling with anion exchange membrane engineering will create synergistic effects in diatomic catalyst design, where the magnetic moment of transition metal pairs modulates charge transfer kinetics while the membrane's hydroxide conductivity compensates for geometric distance limitations in oxygen adsorption.  \nreasoning:  \n1. Premise: Hot spot maps show geometric distance and magnetic moment co-regulate ORR activity (Chemistry)  \n2. Mechanism: Anion exchange membranes (Materials Science) alter interfacial charge distribution, which may decouple geometric constraints through enhanced ionic conductivity  \n3. Prediction: Catalysts with suboptimal geometric parameters but high magnetic moment synergy could achieve >0.92V half-wave potential in membrane-integrated systems  \nkey_concepts: geometric-electronic coupling, anion exchange membrane, magnetic moment modulation, charge transfer kinetics  \ndisciplines_bridged: 化学, 材料科学  \n\nL2 Hypotheses:  \n- Q1:  \n    hypothesis: The interplay between diatomic bond length and magnetic moment asymmetry creates non-linear scaling relationships in zinc-air battery performance, where machine learning-optimized nitrogen coordination angles maximize peak power density above 300 mW cm⁻²  \n    reasoning:  \n    1. Premise: Geometric distance affects adsorption strength (Chemistry) while magnetic moments influence electron transfer (Materials Science)  \n    2. Mechanism: Machine learning (Computer Science) can identify critical angle thresholds in N-coordination that balance OOH* binding energy and conductivity  \n    3. Prediction: Catalysts with 105-110° N-Metal-Metal angles will show 15% higher power density than linear configurations  \n    key_concepts: bond length asymmetry, magnetic moment asymmetry, scaling relationships, coordination angles  \n    disciplines_bridged: 材料科学, 计算机科学技术  \n\n- Q2:  \n    hypothesis: Combining geometric-electronic hot spot maps with generative adversarial networks will enable inverse design of diatomic catalysts, where predicted magnetic moment trajectories guide synthetic routes through nitrogen vacancy-controlled assembly pathways  \n    reasoning:  \n    1. Premise: Current hot spot maps (Chemistry) use static descriptors but lack synthetic guidance  \n    2. Mechanism: GANs (Computer Science) can model atomic diffusion barriers during pyrolysis as functions of magnetic moment evolution  \n    3. Prediction: Magnetic moment thresholds (>2.8 μB) will correspond to kinetically trapped diatomic configurations with enhanced stability  \n    key_concepts: inverse design, generative adversarial networks, nitrogen vacancy control, atomic diffusion barriers  \n    disciplines_bridged: 计算机科学技术, 材料科学  \n\nL3 Hypotheses:  \n- Q1:  \n    hypothesis: A closed-loop workflow integrating Bayesian-optimized hot spot mapping with in-situ electrochemical characterization will accelerate catalyst development, where machine learning-predicted overpotential thresholds trigger autonomous adjustment of Mn/Co precursor ratios in combinatorial synthesis  \n    reasoning:  \n    1. Premise: Data-driven design (Computer Science) needs experimental feedback for validity  \n    2. Mechanism: Linking ML predictions to robotic synthesis (Materials Science) creates adaptive optimization cycles  \n    3. Prediction: This loop will reduce development time by 40% while discovering catalysts with 850 mAh g⁻¹ capacity retention  \n    key_concepts: Bayesian optimization, autonomous synthesis, in-situ characterization, combinatorial scaling  \n    disciplines_bridged: 计算机科学技术, 材料科学  \n\n- Q2:  \n    hypothesis: Geometric strain engineering through substrate lattice mismatch can decouple the volcano plot correlation between magnetic moment and ORR activity, enabling diatomic catalysts with simultaneous high current density (>10 mA cm⁻²) and low Tafel slopes (<60 mV/dec)  \n    reasoning:  \n    1. Premise: Volcano plots (Chemistry) show trade-offs in activity descriptors  \n    2. Mechanism: Substrate strain (Materials Science) alters d-band center positions independently of magnetic moments through lattice parameter modulation  \n    3. Prediction: 5% compressive strain on Co-Mn catalysts will break scaling relationships, achieving 0.88 V kinetic current density above 8 mA cm⁻²  \n    key_concepts: strain engineering, d-band center modulation, scaling relationship breaking, lattice mismatch  \n    disciplines_bridged: 材料科学, 化学",
+        "elapsed": 36.2
+      },
+      {
+        "method": "P5",
+        "hypotheses_text": "[L1] 机器学习 --[导出催化热点图]--> 热点图\n[L1] 热点图 --[映射几何距离与电子磁矩到催化性能]--> 双原子催化剂\n[L1] 双原子催化剂 --[通过几何-电子耦合设计提升氧还原性能]--> 氧还原反应\n[L1] 几何-电子耦合设计 --[优化双原子催化剂结构参数]--> 双原子催化剂\n[L1] 双原子催化剂 --[在锌空气电池中体现性能优势]--> 几何-电子耦合设计\n[L1] 几何-电子耦合设计 --[提升锌空气电池功率密度]--> 锌空气电池\n[L1] 机器学习 --[构建火山型曲线预测模型]--> 火山型曲线\n[L1] 火山型曲线 --[关联几何参数与催化活性]--> 几何距离\n[L1] 几何距离 --[通过电子磁矩调制催化性能]--> 电子磁矩\n[L2] 几何距离 --[作为催化热点图的构建维度]--> 描述符\n[L2] 描述符 --[通过双参数轴构建性能预测模型]--> 热点图\n[L2] 热点图 --[指导催化剂在器件中的性能优化]--> 锌空气电池\n[L2] 机器学习 --[推导催化性能预测模型]--> 热点图\n[L2] 热点图 --[提供参数优化路径]--> 几何-电子耦合设计\n[L2] 几何-电子耦合设计 --[增强催化位点活性]--> 氧还原反应\n[L3] 机器学习 --[生成催化热点图用于参数映射]--> 热点图\n[L3] 热点图 --[基于几何距离与电子磁矩参数映射]--> 几何-电子耦合设计\n[L3] 几何-电子耦合设计 --[提升锌空气电池峰值功率密度与比容量]--> 锌空气电池",
+        "elapsed": 0.0
+      }
+    ]
+  },
+  {
+    "tag": "test_14",
+    "paper": {
+      "paper_id": "6392d9b0ddec",
+      "title": "Overcoming the reactivity-stability challenge in water treatment catalyst through spatial confinement",
+      "abstract": "Current catalytic materials and processes designed for water treatment face a significant challenge in balancing reactivity and stability. Catalysts with initially high reactivity often lack long-term...",
+      "primary_discipline": "化学",
+      "secondary_disciplines": [
+        "化学",
+        "材料科学",
+        "环境科学技术"
+      ]
+    },
+    "results": [
+      {
+        "method": "P1",
+        "hypotheses_text": "**假设：**  \n通过构建具有\"应力响应型动态界面\"的核壳纳米催化剂（如Fe-Co合金核@ZrO₂可调壳层），在水处理反应过程中触发局部应力反馈机制，实现活性与稳定性的协同调控——当反应活性位点因氧化/溶解面临失稳时，壳层晶格应力随反应物浓度梯度发生定向弛豫，动态释放补偿性配位位点以稳定活性中心；同时，反应热诱导壳层微孔结构可逆坍缩，形成限域环境增强目标污染物的局部富集与活化，从而在分子氧存在下维持类芬顿反应的持续高效运行（如H₂O₂分解速率达初始值的90%且金属浸出<0.5 mg/L），且循环实验证实100次后结构完整性保持>95%。该假设可通过原位XRD、分子动力学模拟及微流控芯片反应器进行多尺度验证。",
+        "elapsed": 53.7
+      },
+      {
+        "method": "P2",
+        "hypotheses_text": "L1 Hypothesis:  \n通过整合材料科学的空间限域设计与环境化学中污染物降解动力学规律，构建具有原子级限域结构的催化膜，可在分子尺度上协同调控催化剂-反应物相互作用与稳定性阈值。该策略通过石墨烯氧化物层间限域形成的刚性微环境，既增强FeOF活性中心的局域电子传递效率，又通过氟离子自修复效应抑制催化剂溶解流失，从而突破传统催化剂在环境水处理中因自由基淬灭和结构崩塌导致的活性-稳定性平衡限制。\n\nL2 Hypotheses:  \n- Q1:  \n石墨烯氧化物层间限域FeOF形成的二维/一维复合结构，可通过三重机制提升催化剂稳定性：(1) 层间π-π堆叠作用抑制FeOF晶格畸变，(2) 含氧官能团与氟离子的配位稳定效应，(3) 限域通道内形成的双电层微环境增强抗pH波动能力。这种跨尺度稳定性来源于材料界面应力分布的调控与动态离子迁移的定向约束。  \n\n- Q2:  \n基于污染物降解路径的化学计量学分析，可建立自由基利用效率(•OH/污染物摩尔比)与膜结构参数(层间距离/活性位点密度)的数学模型。新烟碱类农药的C-N键断裂速率与膜表面电荷密度呈现非线性正相关，而自然有机物竞争性吸附可通过调控膜孔径分布(4-8 Å)实现选择性排斥，这种环境-材料交互作用的量化关系可指导催化膜的定向结构优化。",
+        "elapsed": 27.8
+      },
+      {
+        "method": "P3",
+        "hypotheses_text": "L1 Hypothesis: 埃级限域空间设计通过材料科学的有序层状结构（如氧化石墨烯层间限域）与化学自由基调控机制（如氟离子迁移抑制与活性氧物种定向生成）的协同作用，可同步增强催化剂稳定性与水处理效率，在环境相关条件下实现污染物降解活性的长期保持。\n\nL2 Hypotheses:\n- Q1: 铁氧氟化物的氟离子流失失活机制可通过材料科学的埃级限域空间约束（如石墨烯层间范德华力场）实现化学势调控，通过限制氟离子的配位迁移路径，维持铁氧活性位点的配位平衡，从而在过氧化氢氧化环境中保持催化剂晶体结构完整性\n- Q2: 天然有机质对高级氧化工艺的自由基淬灭效应可通过环境科学的尺寸筛分评估模型与材料科学的催化膜孔径梯度设计建立定量关联，其中<1 nm通道对腐植酸的排除率与羟基自由基利用效率呈正相关（R²>0.8），可指导催化剂微环境优化\n\nL3 Hypotheses:\n- Q1: 埃级限域通道（0.3-1.2 nm）通过材料科学的筛分效应（氧化石墨烯层间距调控）与化学的自由基动力学（单线态氧生成速率k>10³ M⁻¹s⁻¹）耦合，可选择性阻断天然有机质大分子（>1 kDa）而允许过氧化氢扩散，在流动体系中维持85%以上的自由基可用性（EPR定量验证）\n- Q2: 催化膜的有序层状结构（层间距0.7 nm±0.1）通过材料科学的拓扑约束（石墨烯褶皱度控制）与环境科学的污染物尺寸效应（新烟碱类杀虫剂分子动力学直径0.5-0.7 nm）协同作用，实现微污染物（<1 nm）与共存基质（>2 nm）的选择性降解（选择性系数α>5），可通过AFM纳米压痕与LC-MS联用技术验证",
+        "elapsed": 28.2
+      },
+      {
+        "method": "P4",
+        "hypotheses_text": "L1 Hypothesis:\n  hypothesis: Integrating multi-scale confinement architectures (angstrom-level intercalation with mesoporous metal-organic frameworks) can achieve simultaneous optimization of reactivity-stability balance by creating hierarchical protection zones that preserve active sites while allowing selective permeability for target pollutants.\n  reasoning: \n    1. Premise: Angstrom-scale confinement stabilizes FeOF (materials science) while MOFs provide secondary mesoporous scaffolding (chemistry)\n    2. Mechanism: Dual confinement creates: \n       a) atomic-level fluoride ion traps via graphene oxide interlayers\n       b) secondary size-selective MOF pores that prevent bulk organic fouling\n    3. Prediction: This architecture will maintain >90% catalytic activity after 1000h continuous operation while sustaining 10% higher pollutant removal rates compared to single-confinement systems\n  key_concepts: [埃级限域空间, 金属有机框架, 尺寸排阻, 催化剂稳定性, 污染物降解]\n  disciplines_bridged: [材料科学, 化学]\n\nL2 Hypotheses:\n- Q1:\n    hypothesis: Constructing Janus-structured catalysts with spatially separated fluoride-stabilizing domains and radical-generation active zones can enhance stability by compartmentalizing antagonistic reaction requirements.\n    reasoning: \n      1. Premise: Fluoride ion leaching (chemistry) destabilizes FeOF while radical generation (chemistry) requires accessible active sites\n      2. Mechanism: Using covalent organic frameworks (materials science) to create asymmetric domains:\n         a) hydrophobic inner layers to retain fluoride ions \n         b) hydrophilic outer layers to concentrate H2O2\n      3. Prediction: This separation should reduce fluoride loss by 60% while maintaining 85%+ hydroxyl radical yield efficiency\n    key_concepts: [共价有机框架, 氟离子, 自由基可用性, 催化剂失活]\n    disciplines_bridged: [材料科学, 化学]\n- Q2:\n    hypothesis: Developing pollutant-specific degradation metrics that quantify radical vs non-radical pathway contributions can enable adaptive catalyst design optimized for different environmental conditions.\n    reasoning:\n      1. Premise: Natural organic matter (environmental science) differentially impacts radical pathways (chemistry)\n      2. Mechanism: Establishing degradation fingerprints for:\n         a) phenolic contaminants (non-radical polymerization dominated)\n         b) neonicotinoids (radical oxidation dominated)\n      3. Prediction: Catalysts with tunable singlet oxygen/free radical ratios will show 30% higher TOC removal in mixed-pollutant systems\n    key_concepts: [非自由基途径, 羟基自由基, 天然有机质, 污染物降解]\n    disciplines_bridged: [环境科学技术, 化学]\n\nL3 Hypotheses:\n- Q1:\n    hypothesis: Engineering electrostatic microenvironments within angstrom channels can selectively enhance radical lifespan by modulating electric double layer effects at reaction interfaces.\n    reasoning:\n      1. Premise: Size exclusion (materials science) and radical availability (chemistry) are both influenced by pore wall interactions\n      2. Mechanism: Graphene oxide interlayer functionalization:\n         a) introducing cationic groups to attract anionic radicals\n         b) creating localized electric fields that slow radical recombination\n      3. Prediction: Optimized electrostatic confinement will extend •OH half-life from 0.8s to >2.5s in flow-through systems\n    key_concepts: [单层氧化石墨烯, 自由基可用性, 埃级尺度, 电荷调控]\n    disciplines_bridged: [材料科学, 化学]\n- Q2:\n    hypothesis: Implementing programmable layer spacing in catalytic membranes via dynamic supramolecular assembly can enable real-time adaptation to varying organic loadings through reversible structural transitions.\n    reasoning:\n      1. Premise: Size exclusion (environmental science) and catalytic efficiency (chemistry) depend on fixed channel dimensions\n      2. Mechanism: Using host-guest interactions to create:\n         a) baseline 2-4Å spacing for neonicotinoid removal\n         b) stimuli-responsive expansion to 8-10Å when large NOM molecules detected\n      3. Prediction: Such membranes will maintain >95% pollutant removal efficiency even when NOM concentrations vary by 300%\n    key_concepts: [有序层状结构, 尺寸排阻, 天然有机质, 动态响应材料]\n    disciplines_bridged: [材料科学, 环境科学技术]",
+        "elapsed": 71.7
+      },
+      {
+        "method": "P5",
+        "hypotheses_text": "[L1] 铁氧氟化物 --[通过层间插层形成]--> 催化膜\n[L1] 催化膜 --[维持...的可持续性]--> 污染物降解\n[L1] 污染物降解 --[受...限制]--> 水处理\n[L1] 埃级尺度 --[通过空间限域增强]--> 催化剂稳定性\n[L1] 催化剂稳定性 --[通过限域抑制浸出导致的]--> 催化剂失活\n[L1] 催化剂失活 --[受...限制]--> 水处理\n[L1] 高级氧化工艺 --[以...为主要氧化剂]--> 羟基自由基\n[L1] 羟基自由基 --[维持...的可持续性]--> 自由基可用性\n[L1] 自由基可用性 --[受...限制]--> 水处理\n[L2] 埃级限域空间 --[通过空间限域捕获]--> 氟离子\n[L2] 氟离子 --[抑制浸出导致的]--> 催化剂失活\n[L2] 催化剂失活 --[负相关于]--> 催化剂稳定性\n[L2] 污染物降解 --[依赖于维持]--> 自由基可用性\n[L2] 自由基可用性 --[正向影响]--> 催化效率\n[L2] 催化效率 --[通过结构优化实现]--> 催化膜\n[L3] 埃级限域空间 --[通过空间限域增强]--> 催化剂稳定性\n[L3] 催化剂稳定性 --[维持]--> 自由基可用性\n[L3] 自由基可用性 --[维持]--> 污染物降解\n[L3] 有序层状结构 --[通过尺寸筛分去除]--> 尺寸排阻\n[L3] 尺寸排阻 --[去除]--> 天然有机质\n[L3] 天然有机质 --[减少干扰]--> 污染物降解",
+        "elapsed": 0.0
+      }
+    ]
+  }
+]

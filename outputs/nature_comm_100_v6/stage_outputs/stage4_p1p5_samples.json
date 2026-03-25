@@ -1,0 +1,162 @@
+{
+  "P1": [
+    {
+      "title": "Engineered PW12-polyoxometalate docked Fe sites on CoFe hydroxide anode for durable seawater electrolysis",
+      "primary": "化学",
+      "hypothesis_text": "Hypothesis: 采用梯度多孔结构的过渡金属碳化物（如Mo₂C）与石墨烯复合催化剂，通过精确调控孔径分布（5-50 nm）和表面官能团（引入-COOH和-OH基团），可在模拟海水电解环境中实现氢氧化反应（HER）活性位点的分级暴露与氯氧化副反应的定向抑制。该催化剂设计可通过原位X射线吸收谱（XAS）验证孔结构动态演变，利用微流控电解池定量表征氯气泡在不同孔径区域的成核行为，最终在1.5 M NaCl溶液中（pH=8.2，25℃）实现超过800小时的电流密度衰减低于10%（10 mA/cm²基准），其析氢过电位较传统Pt/C催化剂降低200 mV。",
+      "elapsed": 22.6
+    },
+    {
+      "title": "Electricity- and hydrogen-driven energy system sector-coupling in net-zero CO2 emission pathways",
+      "primary": "能源科学技术",
+      "hypothesis_text": "Hypothesis:  \n电力与氢能耦合系统通过动态协同优化电解制氢效率与电网灵活性资源（如需求响应、电池储能），能够在保持电网频率稳定的同时，将可再生能源弃电率降低至5%以下，并通过氢储能的跨季节调节能力，在区域电力市场中实现比单一电力系统低18%的平准化减排成本（LCOE-reduction），从而成为净零路径中解决能源时空错配问题的关键枢纽。  \n\nTestable Prediction:  \n在含70%风电+光伏的区域电网中，当耦合系统采用基于AI的实时电价-氢价联动调度算法时，氢能储能的日调度精度误差将小于3%，且系统全生命周期碳强度可降至0.08 kgCO2eq/kWh，较传统抽水蓄能方案降低27%。",
+      "elapsed": 22.4
+    },
+    {
+      "title": "A global atlas and drivers of antimicrobial resistance in Salmonella during 1900-2023",
+      "primary": "生物学",
+      "hypothesis_text": "我们提出假设：沙门氏菌的抗菌素耐药性在热带农业流域呈现周期性时空聚集，其演化动力学由**质粒-整合子系统与环境温度波动的协同选择效应**驱动。具体而言，当雨季水体温度升至28-32℃时，耐热型IncA/C质粒的接合转移效率提高3-5倍，同时高温诱导沙门氏菌中磺胺类耐药基因（sul1）启动子区域的表观遗传去甲基化，导致耐药表型快速表达。这一过程与当地雨季抗生素使用峰值叠加，形成\"环境温度-基因表达-药物压力\"的正反馈循环，使耐药菌株在水生生物膜中占据适应性优势，并通过跨境水鸟迁徙形成跨纬度传播梯度。该假说可通过比较不同气候带沙门氏菌基因组中IncA/C质粒与sul1基因的共现频率、体外模拟温度梯度对质粒转移速率的影响，以及追踪候鸟肠道菌群耐药基因组的时空变异进行验证。",
+      "elapsed": 42.2
+    },
+    {
+      "title": "Ultrahigh-power-density flexible piezoelectric energy harvester based on freestanding ferroelectric oxide thin films",
+      "primary": "材料科学",
+      "hypothesis_text": "假设：通过构建具有三维互穿网络结构的柔性压电复合材料，结合界面应力缓冲层与局部极化增强效应，可实现功率密度与机械稳定性的协同提升。具体而言，在柔性基体中嵌入梯度分布的刚性压电微晶阵列，并在微晶/基体界面引入具有分子链交联梯度的有机-无机杂化层，使应力集中区域的压电活性相在机械形变时产生局域强极化场，同时通过界面梯度交联网络分散应力并抑制裂纹扩展。该结构可通过微尺度应力重构效应将外部机械能高效定向传导至压电微晶，产生多级应变放大效应，从而提升能量转换效率，而梯度界面层则通过可逆氢键重组实现微损伤自修复，维持长期机械稳定性。可通过原位力学加载-电学表征、分子动力学模拟及加速疲劳测试验证该假设。",
+      "elapsed": 21.8
+    },
+    {
+      "title": "Far-field femtosecond laser-driven λ/73 super-resolution fabrication of 2D van der Waals NbOI2 nanostructures in ambient air",
+      "primary": "材料科学",
+      "hypothesis_text": "**假设：**  \n利用二维范德华材料与等离激元超表面（plasmonic metasurface）的协同作用，通过近场电磁耦合与光化学反应的协同调控，实现亚衍射极限的超精细刻蚀。具体而言，在材料表面集成亚波长尺度的金属-介质异质结超表面，通过共振激发定向等离激元模式，在特定位置（如异质结界面）产生高度局域的电磁场增强（>10³）和热电子注入，驱动选择性化学键断裂；同时，利用超表面的非对称结构设计（如手性超原子）调控光化学反应的空间对称性，将反应区域压缩至亚波长尺度（<λ/10）。通过调控超表面单元的几何参数（如螺旋结构的螺距、环缝宽度）与入射光的偏振态和波长，可动态调控刻蚀图案的拓扑结构（如螺旋凹槽、量子点阵列）与分辨率（<20 nm）。该假设可通过低温光化学刻蚀实验结合近场光学表征（如TERS、s-SNOM）验证局域反应活性位点，并通过第一性原理计算模拟等离激元诱导的电子跃迁与化学键断裂能垒降低的关系。",
+      "elapsed": 64.7
+    }
+  ],
+  "P2": [
+    {
+      "title": "Engineered PW12-polyoxometalate docked Fe sites on CoFe hydroxide anode for durable seawater electrolysis",
+      "primary": "化学",
+      "hypothesis_text": "L1 Hypothesis: 通过跨学科融合材料表面工程与电化学动力学调控，设计具有多级功能化的CoFe基阳极催化剂（如PW12-POM配位修饰），可协同实现钴活性中心电子结构优化、OH⁻/Cl⁻吸附选择性调控及金属位点腐蚀抑制，从而突破高电流密度下海水电解效率与稳定性的平衡瓶颈。该策略将材料科学中的原子尺度缺陷工程、化学工程中的多相界面传质优化及量子化学计算的反应路径预测相结合，为开发耐腐蚀、高活性的阳极体系提供普适性框架。\n\nL2 Hypotheses:  \n- Q1: 基于层状双氢氧化物（LDH）的拓扑缺陷调控与动态电位窗口优化，可构建具有梯度活性位点分布的三维多孔阳极结构。通过引入POM-金属配位桥联效应，结合电解液流速/温度等操作参数的智能调控，有望在高电流密度（>1 A cm⁻²）下同步实现OH⁻扩散动力学增强（TOF>5.0 s⁻¹）与局部Cl⁻富集抑制（腐蚀电流密度<10 μA cm⁻²），从而突破传统LDH阳极的性能衰减极限。  \n\n- Q2: 通过融合第一性原理分子动力学（AIMD）模拟与原位X射线吸收谱（XAS）技术，可揭示Fe位点配位环境对多尺度腐蚀机制的调控规律。假设建立包含界面电荷转移、Cl⁻配位溶解能垒及POM屏蔽效应的三维理论模型，结合加速老化实验中金属溶解速率（ICP-MS定量）与表面重构行为（原位Raman/XPS）的关联性分析，将证实配位不饱和Fe位点的电子局域化程度与阳极寿命（>1000 h）存在非线性依赖关系，为抗腐蚀材料设计提供关键理论参数。",
+      "elapsed": 34.1
+    },
+    {
+      "title": "Electricity- and hydrogen-driven energy system sector-coupling in net-zero CO2 emission pathways",
+      "primary": "能源科学技术",
+      "hypothesis_text": "L1 Hypothesis: 电力-氢能耦合系统的核心作用体现在通过电气化主导的能源转型与氢能补充的深度脱碳协同效应，形成\"电优先、氢补充\"的技术-经济系统优化结构。电气化通过高效能转换实现主要用能场景的快速减排，而氢能通过其可储存性、工业原料属性和长周期调节能力弥补电力系统灵活性缺口，在钢铁冶金、化工合成、长途交通等硬脱碳领域发挥不可替代作用，二者共同构建起能源系统韧性与气候目标的双重保障机制。  \n\nL2 Hypotheses:  \n- Q1: 环境科学技术的情景模拟将揭示氢能对硬脱碳领域的边际减排贡献存在\"临界阈值效应\"——当可再生能源渗透率超过70%时，氢能应用可使工业高温热源、国际航运等场景的碳排放强度下降40-60%，且通过构建\"绿电制氢-碳捕集\"负排放协同路径，可使区域大气污染物与温室气体的协同减排效率提升25%以上。  \n- Q2: 基于全生命周期成本模型，氢能系统在2035年后将呈现\"成本拐点\"特征：当电解槽规模化生产使制氢成本降至2.5美元/kg以下时，氢能冶金、氨燃料航运等技术的平准化能源成本将低于碳捕集电气化方案，且氢能基础设施的\"多能枢纽\"属性可通过降低电网扩容投资（约12-18%）和提升风光消纳能力（约8-13%），在系统层面创造超越单一能源形式的经济价值。",
+      "elapsed": 31.7
+    },
+    {
+      "title": "A global atlas and drivers of antimicrobial resistance in Salmonella during 1900-2023",
+      "primary": "生物学",
+      "hypothesis_text": "L1 Hypothesis:  \n沙门氏菌抗菌素耐药性（AMR）的全球时空分布受地理隔离、宿主适应性进化和环境驱动因素的协同作用，其演化规律表现为血清型特异性的适应性权衡（如家畜源血清型耐药性下降与环境源血清型耐药性上升）及跨区域传播中耐药基因的渐进式累积，这一过程与抗生素选择压力、宿主生态位转换及气候变化引发的微环境重构密切相关。\n\nL2 Hypotheses:  \n- Q1: **生态学-流行病学耦合假设**  \n  食源性沙门氏菌传播网络中，耐药性扩散效率由宿主生态位重叠度（如家畜-野生动物-人类接触频率）和环境介质（水体、土壤、食品链）的联通性决定。农业集约化区域通过增强宿主密度依赖性传播阈值和抗生素选择压力，形成“耐药热点”，而气候变化（如极端降水）通过改变水文连通性加速耐药菌株的生态位扩展，导致AMR在食物链与自然环境间的双向渗透。  \n\n- Q2: **基因组适应性权衡假说**  \n  耐药基因的水平转移（HGT）与沙门氏菌宿主适应性进化存在功能协同与拮抗的双重关系：在短期内，插入序列（ISCRs）或质粒介导的耐药基因簇通过劫持宿主的适应性相关调控网络（如毒力基因表达），促进耐药菌在特定宿主（如禽类）中增殖；长期演化中，基因组岛（如GIs）的结构可塑性导致耐药性状与宿主特异性（如血清型抗原变异）共进化，形成“耐药-宿主适应性”协同丢失或增强的表型分异（例如猪源Schwarzengrund耐药性下降与禽源Muenchen耐药性上升的分子机制差异）。",
+      "elapsed": 33.7
+    },
+    {
+      "title": "Ultrahigh-power-density flexible piezoelectric energy harvester based on freestanding ferroelectric oxide thin films",
+      "primary": "材料科学",
+      "hypothesis_text": "L1 Hypothesis: 通过多尺度异质结构设计（纳米级晶格畸变调控-介观尺度界面应力释放-宏观柔性基底适配）与跨维度能带耦合（d电子轨道极化与π电子云共轭协同），可构建具有非对称性电荷重分布效应的柔性铁电氧化物体系，从而在动态力学形变下实现拓扑保护的极化涡旋畴结构稳定再生，达成功率密度与机械可靠性的协同强化。\n\nL2 Hypotheses:\n- Q1: (111)晶面诱导的单斜相变动力学将产生非共线铁电畴壁，在外延应力释放后形成亚稳态纳米级涡旋畴结构，其拓扑保护特性可使压电系数在弯曲形变下保持量子相干增强效应（d33系数随曲率半径减小呈非线性指数增长），从而突破传统压电材料的机电转换效率极限。\n- Q2: 在PZT-ZnO异质界面构建梯度化学键合层（通过界面处Zr-O-Zn桥键与Ti-O配位的协同作用），可形成双极性电荷捕获势阱，该势阱能动态调控载流子迁移路径（在压缩/拉伸形变下实现空穴与电子的交替主导输运），使材料在保持钙钛矿晶体结构柔韧性的同时实现类半导体的载流子浓度自适应调节。",
+      "elapsed": 28.0
+    },
+    {
+      "title": "Far-field femtosecond laser-driven λ/73 super-resolution fabrication of 2D van der Waals NbOI2 nanostructures in ambient air",
+      "primary": "材料科学",
+      "hypothesis_text": "L1 Hypothesis: The integration of surface plasmon polariton (SPP) periodic field modulation and laser-induced near-field enhancement in 2D NbOI₂ can synergistically enable sub-diffraction-limited nanostructure fabrication. This combined optical-field engineering approach, governed by physics principles of light-matter interaction at the nanoscale, will create atomically precise heterojunctions that optimize charge transport dynamics for gas sensing applications through electronic structure modulation at the materials science-interfaces.\n\nL2 Hypotheses:\n- Q1: The femtosecond laser-induced SPP periodic field generates a spatially modulated energy deposition pattern on NbOI₂ surfaces, where the interference of SPP waves and the material's nonlinear optical response create sub-wavelength thermal gradients. This physical process, enhanced by the ultrafast carrier dynamics in 2D systems, drives localized phase separation and anisotropic etching through a non-thermal ablation mechanism, enabling the formation of ~λ/73 resolution nano-grooves governed by the interplay of plasmonic field confinement and electron-phonon coupling.\n\n- Q2: The NbOI₂-Nb₂O₅ heterojunctions form type-II band alignments with interfacial oxygen vacancies that act as charge transfer channels and active sites for NO₂ adsorption. This electronic-structure engineering at the atomic interface, combined with the strain-induced modulation of d-orbital splitting in the 2D lattice, enhances the chemisorption kinetics and reduces the activation energy barrier for gas molecule diffusion, leading to the observed sub-10-second response times through a synergistic effect of interface engineering and quantum confinement.",
+      "elapsed": 21.6
+    }
+  ],
+  "P3": [
+    {
+      "title": "Engineered PW12-polyoxometalate docked Fe sites on CoFe hydroxide anode for durable seawater electrolysis",
+      "primary": "化学",
+      "hypothesis_text": "L1 Hypothesis:  \n化学 (磷钨酸盐电子结构调制) 与 材料科学 (层状双氢氧化物结构稳定性) 的协同作用可通过构建\"动态双功能界面\"实现海水电解效率与稳定性的同步提升。具体机制为：磷钨酸盐(PW₁₂-POM)通过静电相互作用选择性锚定在CoFe氢氧化物阳极表面缺陷位点，形成具有梯度电荷分布的阴离子富集层，该结构既增强Co活性中心对OH⁻的吸附能(ΔE_ads < -0.5 eV)，又通过Fe-POM配位键的定向极化效应抑制Cl⁻在次表面的聚集，从而在化学工程层面实现安培级电流密度(>1 A/cm²)下析氧反应(OER)选择性>95%且金属浸出速率<0.1 μg/cm²·h的突破。\n\nL2 Hypotheses:  \n- Q1:  \n化学 (表面氯固定层) 与 化学工程 (电解质流动动力学) 的耦合可通过\"界面传质-反应\"协同模型优化阳极性能。假设在层状双氢氧化物基体中构筑三维分级孔道结构(孔径分布：微孔<2nm/介孔2-50nm)，结合电解液流速调控(Reynolds数>4000)，可使Cl⁻在催化剂表面的扩散活化能降低0.3-0.5 eV，同时促进OH⁻在Co活性位点的周转速率(k_OH > 1.2 eV⁻¹s⁻¹)，从而在1.8 A/cm²电流密度下保持>80%的氯氧化反应抑制效率。  \n\n- Q2:  \n材料科学 (物理屏障层厚度) 与 理论计算 (d带中心位移) 的关联可通过\"原子层沉积-原位XPS\"联用技术验证。提出当PW₁₂-POM修饰层厚度控制在1.5-2.0 nm时，Fe 3d轨道与W 5d轨道的杂化将导致Co位点d带中心负移0.25 eV，这种电子结构变化可通过同步辐射XANES谱(ΔE > 0.5 eV)检测，并与加速腐蚀实验(5000 h模拟工况)中的金属流失量(Fe<5%, Co<2%)呈线性相关。\n\nL3 Hypotheses:  \n- Q1:  \n化学 (磷钨酸盐表面重构) 与 化学工程 (气泡管理效率) 的协同增强机制存在于三相边界动态调控过程。假设在阳极表面构建具有梯度亲疏水性的阴离子富集层(接触角梯度>15°)，结合膜电极组件(MEA)的流场板拓扑优化，可使电解过程中产生的ClO⁻离子通过马兰戈尼效应定向迁移至催化剂/气泡界面，从而在2 A/cm²工况下实现>99%的氯腐蚀抑制效率和内阻降低15%(<0.15 Ω·cm²)。  \n\n- Q2:  \n理论计算 (Co酸性调制能垒) 与 材料合成 (原子层沉积精度) 的集成可通过\"计算引导的原子尺度工程\"实现。基于DFT计算预测Co-O键共价指数需控制在0.65-0.72范围以获得最优OH⁻吸附/脱附平衡，采用脉冲激光沉积(PLD)制备CoFeOxHy/PW₁₂-POM异质结，通过球差电镜(EELS)验证Co配位数变化(ΔCN≥0.5)与碱性海水氧化过电位(η@10 mA/cm² < 320 mV)的定量关系，并建立与化学工程中气体选择性(氢氧分离效率>99.9%)的系统集成方案。",
+      "elapsed": 39.8
+    },
+    {
+      "title": "Electricity- and hydrogen-driven energy system sector-coupling in net-zero CO2 emission pathways",
+      "primary": "能源科学技术",
+      "hypothesis_text": "L1 Hypothesis: 电力与氢能耦合系统的动态优化能力（通过能源系统模型与综合评估模型协同）将决定深度脱碳路径的可行性边界，其核心作用体现在平衡可再生电力波动性（风电/光伏产能）与氢能储能的跨季节调节功能，从而在满足欧洲气候法净零目标时，使终端能源消费的电气化率与氢能渗透率（60%+6%）形成互补性技术经济最优解。\n\nL2 Hypotheses:\n- Q1: 基于环境科学技术的巴黎协定温控目标约束情景（如1.5℃路径），通过耦合能源系统模型的氢能直接渗透率参数化，可验证氢能对工业/交通领域减排边际成本的降低效应，且该效应在考虑碳泄漏风险的欧盟边境调节机制下将显著增强。\n- Q2: 经济学模型中的成本效益脱碳路径分析表明，当风电/光伏产能增速超过8%年复合增长率时，电力-氢能系统的边际减排成本曲线将出现拐点，此时氢能储能的边际成本将低于电气化直接应用的边际成本，形成多模型一致性最优解。\n\nL3 Hypotheses:\n- Q1: 将环境科学技术的减排措施矩阵（如欧盟减排55%一揽子计划）与经济学模型比较方法结合，可识别氢能储运基础设施投资规模与碳定价机制之间的协同效应——当氢能在终端能源消费占比突破临界值（如8%）时，将触发电力系统灵活性溢价的指数级下降。\n- Q2: 基于巴黎协定目标的多学科诊断框架表明，电力-氢能耦合系统的规模化应用可行性取决于技术学习曲线与政策学习曲线的交叉弹性：当可再生电力LCOE低于30€/MWh且氢能储运成本下降至2€/kg时，深度脱碳情景中的模型输出结果方差将收窄至15%以内，验证规模化经济性阈值。",
+      "elapsed": 37.5
+    },
+    {
+      "title": "A global atlas and drivers of antimicrobial resistance in Salmonella during 1900-2023",
+      "primary": "生物学",
+      "hypothesis_text": "L1 Hypothesis: 全球沙门氏菌抗菌素耐药性（AMR）的时空分布呈现血清型特异性演化轨迹，其驱动机制源于抗生素消耗强度与宿主环境适应性之间的协同作用。具体而言，农业抗生素使用（生物学）通过选择压力促进耐药基因（基础医学）在特定血清型（如Agona、I 1,4,[5],12:i:-）的富集，而气候因子（生物学）通过调节宿主迁移路径（如候鸟传播）重构AMR基因组的空间扩散网络，导致不同大陆的进化速率差异。这一假设可通过整合抗生素消耗数据、全基因组耐药基因图谱（生物学）与系统发育分析（基础医学）进行地理加权建模验证。\n\nL2 Hypotheses:\n- Q1: 食源性沙门氏菌传播（生物学）与AMR扩散的耦合机制源于环境介质（如水体、土壤）中的耐药基因库（基础医学）通过质粒介导的水平转移（生物学）动态平衡。当食品供应链中的温度波动（环境因子）突破特定阈值时，会激活沙门氏菌的应激响应调控网络（基础医学），增强其生物膜形成能力（生物学表型），从而在食物链节点（如屠宰场、冷链运输）形成AMR传播热点。可通过构建食物链节点的微生物组时空模型（生物学）与耐药基因转录组（基础医学）的耦合分析进行验证。\n- Q2: 耐药基因（基础医学）的水平转移效率与宿主适应性进化存在非线性关系：当沙门氏菌（生物学）发生宿主转换（如从野生动物到家畜）时，其毒力基因簇（基础医学）的重组热点与AMR基因（生物学）的插入位点在基因组三维结构上形成空间共定位，这种物理约束导致特定抗生素（如氟喹诺酮类）耐药基因（基础医学）在宿主适应性进化过程中被优先固定。可通过比较不同宿主来源菌株的Hi-C染色体构象数据（基础医学）与耐药表型（生物学）进行验证。\n\nL3 Hypotheses:\n- Q1: 基于生态监测的气候数据（生物学）与沙门氏菌基因组系统发育（基础医学）的耦合模型可解析AMR传播尺度：当温度-降水异常指数超过阈值时，会通过改变家畜（生物学）迁徙模式，导致携带AMR基因（基础医学）的鼠伤寒沙门氏菌在跨境河流系统形成\"生态夹点\"，此时基于机器学习的传播子模型可预测AMR基因流强度与宿主转换事件的正相关性。可通过构建包含气候变量、宿主分布和基因组距离矩阵的随机森林模型进行检验。\n- Q2: 抗生素消耗（生物学）驱动AMR进化的分子生态机制表现为：在高使用强度区域，沙门氏菌（生物学）的gyrA基因（基础医学）突变率与生物膜相关基因（如bapA）表达水平存在正反馈调节，这种协同进化压力导致耐药表型（生物学）通过表观遗传修饰（基础医学）加速适应性进化。可通过构建抗生素梯度暴露实验（生物学）结合单细胞甲基化测序（基础医学）验证基因表达噪声与耐药稳定性之间的U型关系曲线。",
+      "elapsed": 37.3
+    },
+    {
+      "title": "Ultrahigh-power-density flexible piezoelectric energy harvester based on freestanding ferroelectric oxide thin films",
+      "primary": "材料科学",
+      "hypothesis_text": "L1 Hypothesis: Freestanding (111)-oriented ferroelectric oxide thin films with morphotropic phase boundary compositions (e.g., PbZr<sub>0.52</sub>Ti<sub>0.48</sub>O<sub>3</sub>) can achieve simultaneous enhancement of power density and mechanical stability through synergistic optimization of polarization rotation dynamics (physics) and stress-relieved architectures (materials science). The decoupling of substrate clamping via water-soluble sacrificial layers enables unrestricted domain wall motion, while the perovskite oxide lattice symmetry near the morphotropic phase boundary maximizes electromechanical coupling efficiency.\n\nL2 Hypotheses:\n- Q1: Crystallographic alignment along the (111) direction in PbZr<sub>0.52</sub>Ti<sub>0.48</sub>O<sub>3</sub> membranes enhances converse piezoelectric coefficient by enabling non-180° domain switching pathways (materials science), which when integrated into nanogenerators (physics), will produce nonlinear amplification of output power density under mechanical strain due to cooperative polarization rotation mechanisms.\n- Q2: Incorporating organic-inorganic halide perovskite interlayers into ferroelectric oxide-polymer composites (chemistry/materials science) will create gradient stiffness networks that accommodate strain through polymer matrix deformation (materials science) while maintaining high piezoelectric response (physics) via perovskite domain confinement effects.\n\nL3 Hypotheses:\n- Q1: A solvent-assisted crystallization process for Zr/Ti composition-graded PbZr<sub>0.52</sub>Ti<sub>0.48</sub>O<sub>3</sub> thin films (chemistry) will produce nanoscale domains with enhanced polarization rotation capability (physics), enabling self-powered flexible systems (materials science) that maintain >500 pm/V piezoelectric coefficients under 5% tensile strain through adaptive domain wall engineering.\n- Q2: Combining ionic liquid-mediated crystal orientation control (chemistry) with bio-inspired sinusoidal energy trapping structures",
+      "elapsed": 47.3
+    },
+    {
+      "title": "Far-field femtosecond laser-driven λ/73 super-resolution fabrication of 2D van der Waals NbOI2 nanostructures in ambient air",
+      "primary": "材料科学",
+      "hypothesis_text": "L1 Hypothesis: 在二维范德华材料中，表面等离激元极化子（物理学）的周期性场与飞秒激光诱导的局域近场（物理学）协同作用，通过光场调制（物理学）突破光衍射极限，驱动非晶氧化铌边缘（材料科学）的定向重构与能量输运，形成超分辨纳米沟槽阵列（材料科学）。该机制可通过材料体系的面内各向异性铁电性（材料科学）与压电传感特性（电子、通信与自动控制技术）实现动态调控。\n\nL2 Hypotheses:\n- Q1: 飞秒激光辐照（物理学）激发NbOI₂表面等离激元极化子（物理学）产生亚波长周期性电磁场，其与材料的激光诱导周期性表面结构（材料科学）形成共振耦合，通过电子束光刻（材料科学）无法实现的非线性能量沉积模式，在非晶氧化铌边缘（材料科学）形成3.2 nm级超精细结构。该过程可通过光衍射（物理学）极限理论与实验表征进行定量验证。\n- Q2: NbOI₂-Nb₂O₅异质结（材料科学）界面处的梯度能带结构（电子、通信与自动控制技术）通过界面态密度调控（物理学）增强载流子迁移率，在NO₂分子吸附时形成跨界面双电层（电子、通信与自动控制技术），其动态响应速度与异质结界面面积（材料科学）呈指数关系。可通过变温电导率测试与密度泛函理论计算验证该机制。\n\nL3 Hypotheses:\n- Q1: 飞秒激光辐照（物理学）参数（脉宽/偏振）与表面等离激元极化周期场（物理学）的空间相位匹配度共同决定纳米沟槽阵列（材料科学）的深宽比，当激光能量密度调控至非晶氧化铌边缘（材料科学）的临界重构阈值时，异质结界面（电子、通信与自动控制技术）的肖特基势垒高度将产生非线性响应，从而实现沟槽宽度（λ/73）与气体传感器响应时间（5.1 s）的同步优化。可通过原位光电流谱与有限元模拟验证参数空间的关联性。",
+      "elapsed": 28.8
+    }
+  ],
+  "P4": [
+    {
+      "title": "Engineered PW12-polyoxometalate docked Fe sites on CoFe hydroxide anode for durable seawater electrolysis",
+      "primary": "化学",
+      "hypothesis_text": "L1 Hypothesis:  \nhypothesis: Integrating transition metal-doped polyoxometalates with nanostructured anion-rich interfacial layers will synergistically enhance Cl⁻/OH⁻ selectivity and corrosion resistance in seawater electrolysis by simultaneously engineering surface electronic states and electrostatic repulsion mechanisms.  \nreasoning:  \n1. Premise: PW12-POM modifies Co electronic structure (Chemistry) while anion-rich surfaces repel Cl⁻ via electrostatics (Materials Science)  \n2. Novel connection: Introducing heterometal-doped POM analogs (e.g., Mo/W mixed) could create gradient charge distributions  \n3. Synergistic mechanism: POM-induced interfacial electric fields + anion layer repulsion would form dual-barrier system  \n4. Testable prediction: Dual-modified anodes will exhibit >30% higher Cl⁻ rejection ratios at 2 A cm⁻² compared to single-modification systems  \nkey_concepts: 聚多金属氧酸盐掺杂, 电子梯度调控, 静电双屏障, 离子选择性排斥, 纳米界面工程  \ndisciplines_bridged: 化学, 材料科学  \n\nL2 Hypotheses:  \n- Q1:  \nhypothesis: Combining Fe/Co compositional grading in layered double hydroxides with localized current density optimization will create spatially resolved catalytic zones that minimize ohmic losses while maintaining high activity.  \nreasoning:  \n1. Premise: Layered double hydroxides allow cation distribution control (Materials Science) and current density affects ion transport (Chemical Engineering)  \n2. Novel mechanism: Radial Fe/Co gradients in nanosheets could form activity/stability domains matched to local current flux  \n3. Testable prediction: Core-shell electrodes with Fe-rich interior and Co-rich surface, operated at 1.5 A cm⁻² pulsed conditions, will show 25% lower voltage degradation  \nkey_concepts: 组分梯度设计, 局域电流调控, 空间分辨催化, 核壳结构, 脉冲电解  \ndisciplines_bridged: 材料科学, 化学工程  \n- Q2:  \nhypothesis: Machine learning-assisted DFT calculations incorporating explicit Cl⁻ adsorption dynamics will predict optimal POM binding geometries that maximize Co d-band charge modulation.  \nreasoning:  \n1. P",
+      "elapsed": 62.0
+    },
+    {
+      "title": "Electricity- and hydrogen-driven energy system sector-coupling in net-zero CO2 emission pathways",
+      "primary": "能源科学技术",
+      "hypothesis_text": "L1 Hypothesis:  \n**hypothesis**: 电力与氢能耦合系统在净零排放路径中的核心作用体现为氢能的间接调节功能，通过优化能源系统模型中的电网灵活性指标，可在维持成本效益优势的同时填补电气化无法覆盖的工业高温热源需求缺口。  \n**reasoning**:  \n1. 前提：电气化是成本效益最优路径（能源科技），但工业高温热源存在技术脱碳瓶颈（环境科技）  \n2. 机制：氢能作为储能介质通过参数化调节（经济学）平衡电力系统波动性，其渗透率与电网灵活性指标呈非线性正相关  \n3. 预测：当综合评估模型中引入氢能储能弹性系数后，终端能源消费中氢能占比将突破当前模型预测的6%上限  \n**key_concepts**: [电网灵活性指标, 工业高温热源脱碳, 氢能储能弹性系数, 综合评估模型]  \n**disciplines_bridged**: [能源科学技术, 经济学]  \n\nL2 Hypotheses:  \n- Q1:  \n    **hypothesis**: 环境科技的情景分析可通过构建氢电耦合排放因子数据库，揭示氢能直接渗透率与碳泄漏效应的负相关性，从而优化减排措施的空间异质性配置。  \n    **reasoning**:  \n    1. 前提：当前模型未量化氢能供应链中的隐性碳泄漏（环境科技）  \n    2. 机制：通过建立区域电力-氢能转化效率与土地利用变化的耦合矩阵（参数化方法，经济学）  \n    3. 预测：采用动态LCA（生命周期评估）的情景相比静态情景，氢能减排贡献度将提高12-18%  \n    **key_concepts**: [碳泄漏效应, 氢电耦合排放因子, 动态生命周期评估, 区域电力-氢能转化效率矩阵]  \n    **disciplines_bridged**: [环境科学技术, 经济学]  \n\n- Q2:  \n    **hypothesis**: 经济学模型通过引入氢能基础设施沉没成本阈值函数，可证明氢能直接利用的经济性拐点存在于重载交通领域，而非当前模型认定的工业燃料替代场景。  \n    **reasoning**:  \n    1. 前提：现有模型低估氢燃料电池技术迭代的规模效应（能源科技）  \n    2. 机制：构建包含技术学习曲线与基建沉没成本的混合成本模型（经济学）  \n    3. 预测：当货运电动化率达到40%时，氢能重卡的全生命周期成本将低于电气化铁路运输方案  \n    **key_concepts**: [技术学习曲线, 基建沉没成本阈值, 氢燃料电池规模效应, 全生命周期成本模型]  \n    **disciplines_bridged**: [能源科学技术, 经济学]  \n\nL3 Hypotheses:  \n- Q1:  \n    **hypothesis**: 结合诊断指标体系与气候政策不确定性矩阵，模型比较方法可识别氢能供应链减排的帕累托最优前沿，该前沿在交通领域表现为\"电解槽效率-储运损耗率\"的黄金分割比例。  \n    **reasoning**:  \n    1. 前提：减排措施的实施成本与技术不确定性存在权衡关系（环境科技）  \n    2. 机制：通过诊断指标量化储运损耗率对TCO（总拥有成本）的敏感度（经济学）  \n    3. 预测：当电解槽效率突破80%且储运损耗率<4.5%时，氢能公交系统的碳减排边际成本将低于充电基础设施扩建方案  \n    **key_concepts**: [气候政策不确定性矩阵, 电解槽效率-储运损耗率黄金分割, 碳减排边际成本, 诊断指标体系]  \n    **disciplines_bridged**: [环境科学技术, 经济学]  \n\n- Q2:  \n    **hypothesis**: 基于巴黎协定温控目标的约束，多学科方法通过构建风光发电容量因子与氢能需求弹性耦合方程，可证明政策驱动的风光氢一体化项目存在\"学习率-补贴强度\"的纳什均衡点。  \n    **reasoning**:  \n    1. 前提：当前模型未充分考虑政策工具对技术学习曲线的扭曲效应（经济学）  \n    2. 机制：将欧洲绿色协议减排目标转化为风光容量因子动态约束条件（环境科技）  \n    3. 预测：当风光氢项目内部收益率达到7.2%时，单位制氢成本将突破与天然气的竞争临界点（2.8美元/kg）  \n    **key_concepts**: [风光容量因子动态约束, 氢能需求弹性耦合方程, 学习率-补贴强度纳什均衡, 政策工具扭曲效应]  \n    **disciplines_bridged**: [能源科学技术, 经济学]",
+      "elapsed": 66.9
+    },
+    {
+      "title": "A global atlas and drivers of antimicrobial resistance in Salmonella during 1900-2023",
+      "primary": "生物学",
+      "hypothesis_text": "L1 Hypothesis:  \nhypothesis: 全球气候变化通过改变农业集约化模式和野生动物迁徙路径，间接驱动沙门氏菌抗菌素耐药性（AMR）的时空演化轨迹，形成\"气候-宿主-基因流动\"三元交互网络。  \nreasoning: 1. 气候变化已知影响农业地理分布（气候→农业）；2. 宿主迁移模式改变会促进耐药基因水平转移（野生动物→基因流动）；3. 气候-宿主-基因的叠加效应可能形成新型AMR传播链。预测：在气候变暖加速区域（如非洲萨赫勒地带），沙门氏菌AMR基因组岛的重组频率将与当地畜牧业扩张指数呈正相关。  \nkey_concepts: [\"气候\", \"沙门氏菌基因组\", \"环境\", \"进化轨迹\", \"抗生素消耗\"]  \ndisciplines_bridged: [\"生物学\", \"基础医学\"]  \n\nL2 Hypotheses:  \n- Q1:  \n    hypothesis: 食源性沙门氏菌暴发事件中，环境温度每升高1°C将导致耐药基因水平转移效率提升15%-20%，这种热力学效应在禽类养殖系统中尤为显著。  \n    reasoning: 1. 温度调控细菌代谢速率（气候→基因转移）；2. 家禽肠道菌群作为AMR基因库具有温度敏感性；3. 高温加剧畜牧抗生素使用（农业→医疗）。预测：建立包含温度系数的生态动力学模型可解释>60%的氟喹诺酮类耐药变异。  \n    key_concepts: [\"食源性疾病\", \"氟喹诺酮类\", \"环境\", \"爆发\", \"系统发育分析\"]  \n    disciplines_bridged: [\"生物学\", \"基础医学\"]  \n- Q2:  \n    hypothesis: 移动遗传元件（如质粒）的宿主适应性代价可通过染色体基因突变补偿，这种共进化模式在畜牧业抗生素选择压力下呈现宿主特异性特征。  \n    reasoning: 1. 抗生素耐药基因常与宿主适应性基因共定位（基因组方法→抗菌素耐药基因）；2. 突变积累速率受宿主生理环境调控（染色体基因突变→菌株分型）；3. 不同宿主肠道微环境差异导致进化路径分化。预测：猪源沙门氏菌将展现更多转座子介导的耐药基因扩增，而禽源菌株呈现CRISPR系统介导的适应性优化。  \n    key_concepts: [\"基因组方法\", \"抗菌素耐药基因\", \"染色体基因突变\", \"菌株分型\", \"广谱β-内酰胺抗菌剂\"]  \n    disciplines_bridged: [\"生物学\", \"基础医学\"]  \n\nL3 Hypotheses:  \n- Q1:  \n    hypothesis: 结合环境水文数据与核心基因组SNP分型可构建四维传播模型，揭示候鸟迁徙在沙门氏菌AMR跨境扩散中起\"生态桥梁\"作用。  \n    reasoning: 1. 环境水体是AMR基因库（环境→AMR水平）；2. 候鸟肠道菌群携带耐药菌株（野生动物→传播）；3. 水文网络与鸟类迁徙路线空间耦合。预测：在欧亚迁飞区重叠带，鼠伤寒沙门氏菌耐药基因簇将呈现与湿地分布高度相关的空间自相关性。  \n    key_concepts: [\"环境\", \"沙门氏菌基因组\", \"系统发育分析\", \"食源性疾病\", \"基因图谱\"]  \n    disciplines_bridged: [\"生物学\", \"基础医学\"]  \n- Q2:  \n    hypothesis: 土壤pH值通过调节抗生素降解酶活性改变选择压力梯度，导致耐药基因进化速率在中性（pH 6.5-7.5）环境中达到峰值，形成\"环境化学-分子生态\"耦合机制。  \n    reasoning: 1. 环境因子调控抗生素稳定性（环境→抗生素消耗）；2. pH影响细菌膜通透性及基因转移效率；3. 中性环境可能优化质粒接合转移。预测：在pH 7.0土壤区域，检测到整合子介导的多药耐药基因盒的概率较酸性/碱性区域高3倍。  \n    key_concepts: [\"环境\", \"抗菌素耐药基因\", \"抗生素消耗\", \"染色体基因突变\", \"进化轨迹\"]  \n    disciplines_bridged: [\"生物学\", \"基础医学\"]",
+      "elapsed": 56.3
+    },
+    {
+      "title": "Ultrahigh-power-density flexible piezoelectric energy harvester based on freestanding ferroelectric oxide thin films",
+      "primary": "材料科学",
+      "hypothesis_text": "L1 Hypothesis:\n  hypothesis: Incorporating 2D perovskite quantum wells into flexible polymer matrices could enable synergistic enhancement of both piezoelectric coefficient (>600 pm/V) and mechanical durability (>100,000 cycles) through interfacial strain engineering at the organic-inorganic heterojunctions.\n  reasoning: \n    1. Premise: Freestanding PZT films demonstrate high piezoelectricity but require mechanical reinforcement (Materials Science) \n    2. Mechanism: Introducing 2D perovskite layers with organic spacers (Chemistry) creates flexible interfacial regions that accommodate strain while maintaining polarization continuity \n    3. Prediction: The hybrid architecture will exhibit superior flexibility-strain tolerance while preserving high piezoelectric response through quantum confinement effects in the inorganic layers\n  key_concepts: 2D perovskite quantum wells, interfacial strain engineering, organic-inorganic heterojunctions, polarization continuity, quantum confinement effects\n  disciplines_bridged: 材料科学, 化学\n\nL2 Hypotheses:\n- Q1:\n    hypothesis: Applying epitaxial strain engineering to (111)-oriented PZT thin films could induce reversible nanoscale domain switching dynamics that amplify the effective piezoelectric coefficient beyond theoretical bulk limits (>700 pm/V) under cyclic mechanical loading.\n    reasoning:\n      1. Premise: Crystal orientation control enhances piezoelectric response (Materials Science)\n      2. Mechanism: Substrate-induced epitaxial strain creates metastable nanodomains that exhibit enhanced domain wall mobility (Physics)\n      3. Prediction: The strain-engineered films will demonstrate field-enhanced piezoelectricity with hysteretic strain response under cyclic actuation\n    key_concepts: epitaxial strain engineering, nanoscale domain switching, domain wall mobility, field-enhanced piezoelectricity, hysteretic strain response\n    disciplines_bridged: 材料科学, 物理学\n- Q2:\n    hypothesis: Designing gradient composition profiles acr",
+      "elapsed": 59.1
+    },
+    {
+      "title": "Far-field femtosecond laser-driven λ/73 super-resolution fabrication of 2D van der Waals NbOI2 nanostructures in ambient air",
+      "primary": "材料科学",
+      "hypothesis_text": "L1 Hypothesis:\n  hypothesis: 通过引入拓扑光子结构调控表面等离激元极化子的非线性增强效应，可实现超越衍射极限的亚纳米级光场约束，从而在二维范德华材料中构建三维梯度异质结阵列\n  reasoning: \n    1. 拓扑光子结构可通过光子带隙效应实现亚波长光场局域化（物理学基础）\n    2. 表面等离激元极化子的非线性吸收效应在纳米尺度产生热电子注入（材料科学-物理学耦合）\n    3. 梯度异质结的能带梯度可定向驱动载流子迁移（电子工程应用延伸）\n    4. 预测在MoS2/hBN异质结中可实现0.5λ分辨率的三维纳米结构加工\n  key_concepts: [拓扑光子结构, 非线性光学效应, 三维梯度异质结, 热电子注入, 光子带隙效应]\n  disciplines_bridged: [物理学, 材料科学, 电子、通信与自动控制技术]\n\nL2 Hypotheses:\n- Q1:\n    hypothesis: 飞秒激光辐照通过激发NbOI2的层间剪切模振动，诱导晶格畸变与等离激元场的共振耦合，实现原子层精度的各向异性刻蚀\n    reasoning:\n      1. 飞秒激光的瞬时光子压力可选择性激发特定晶格振动模式（物理学-材料科学界面）\n      2. 等离激元热点与晶格振动的弗兰克-康登效应增强化学键断裂效率（量子力学-材料加工耦合）\n      3. 预测通过拉曼光谱监测声子模可实时调控刻蚀深度至单原子层精度\n    key_concepts: [层间剪切模振动, 弗兰克-康登效应, 瞬时光子压力, 声子模监测, 各向异性刻蚀]\n    disciplines_bridged: [物理学, 材料科学]\n- Q2:\n    hypothesis: 异质结界面的氧空位梯度分布通过介电泳效应调控NO2分子的定向吸附动力学，形成亚单层化学吸附通道\n    reasoning:\n      1. NbOI2/Nb2O5异质结的氧空位浓度梯度产生界面介电势阱（材料科学-物理化学交叉）\n      2. 介电泳力与NO2分子偶极矩的取向耦合增强吸附速率（电磁学-气体传感关联）\n      3. 预测构建梯度异质结可使响应时间缩短至亚秒级（<1s）\n    key_concepts: [氧空位梯度分布, 介电泳效应, 偶极矩取向耦合, 亚单层化学吸附, 动力学增强]\n    disciplines_bridged: [材料科学, 物理学, 电子、通信与自动控制技术]\n\nL3 Hypotheses:\n- Q1:\n    hypothesis: 基于时空聚焦的脉冲整形技术调控等离激元近场时空干涉，结合界面缺陷工程实现N个晶格周期精度的纳米沟槽阵列直写\n    reasoning:\n      1. 时空聚焦压缩飞秒脉冲的焦点体积至亚细胞尺度（光学工程创新）\n      2. 等离激元纳米天线阵列的相位调制产生周期性干涉图案（物理学机制）\n      3. 界面硫族空位作为活性位点引导选择性刻蚀（材料科学应用）\n      4. 预测可在WSe2中实现5原子层周期的超晶格结构加工\n    key_concepts: [时空聚焦, 脉冲整形, 时空干涉, 纳米天线相位调制, 硫族空位引导]\n    disciplines_bridged: [物理学, 材料科学, 电子、通信与自动控制技术]\n- Q2:\n    hypothesis: 利用异质结界面的拓扑保护态形成单向电荷传输通道，在室温下实现NO2分子的自旋选择性检测\n    reasoning:\n      1. NbOI2/Nb2O5界面的自旋轨道耦合产生拓扑保护的边缘态（凝聚态物理机制）\n      2. NO2分子吸附引起的交换劈裂调制自旋极化率（磁电子学关联）\n      3. 预测构建自旋阀结构可使检测极限突破单分子水平\n    key_concepts: [拓扑保护态, 自旋轨道耦合, 交换劈裂, 单向电荷传输, 自旋选择性检测]\n    disciplines_bridged: [物理学, 材料科学]",
+      "elapsed": 49.3
+    }
+  ],
+  "P5": [
+    {
+      "title": "Engineered PW12-polyoxometalate docked Fe sites on CoFe hydroxide anode for durable seawater electrolysis",
+      "primary": "化学",
+      "hypothesis_text": "[L1] 磷钨酸盐 --[影响]--> 钴铁氢氧化物阳极\n[L1] 钴铁氢氧化物阳极 --[碱性海水氧化]--> 碱性海水氧化\n[L1] 碱性海水氧化 --[氯离子/氢氧根吸附]--> 氯离子/氢氧根吸附\n[L1] 理论计算 --[影响]--> 离位/原位分析\n[L1] 离位/原位分析 --[静电相互作用 ⁻]--> 静电相互作用\n[L1] 静电相互作用 --[金属位点 氯离子腐蚀]--> 氯离子腐蚀\n[L1] 磷钨酸盐 --[影响]--> 金属浸出\n[L1] 金属浸出 --[, 阴离子富集表面]--> 阴离子富集表面\n[L1] 阴离子富集表面 --[气体选择性]--> 气体选择性\n[L2] 层状双氢氧化物 --[构成钴铁氢氧化物阳极的结构基础]--> 钴铁氢氧化物阳极\n[L2] 钴铁氢氧化物阳极 --[通过电子结构调控增强氢氧根吸附能力]--> 氯离子/氢氧根吸附\n[L2] 氯离子/氢氧根吸附 --[决定碱性海水氧化反应的催化选择性]--> 催化选择性\n[L2] 理论计算 --[与实验分析协同揭示金属位点稳定机制]--> 离位/原位分析\n[L2] 离位/原位分析 --[验证磷钨酸盐对金属浸出的抑制作用]--> 金属浸出\n[L2] 金属浸出 --[调控抗氯离子腐蚀能力提升阳极寿命]--> 氯离子腐蚀\n[L3] 磷钨酸盐 --[选择性锚定铁位点以调控钴活性中心电子结构]--> 钴铁氢氧化物阳极\n[L3] 钴铁氢氧化物阳极 --[通过阴离子富集表面增强氢氧根吸附动力学]--> 阴离子富集表面\n[L3] 阴离子富集表面 --[协同电流密度调控实现低过电位海水氧化]--> 电流密度\n[L3] 理论计算 --[揭示钴酸性调制对金属浸出抑制的电子机制]--> 钴酸性\n[L3] 钴酸性 --[通过金属浸出抑制效应降低氯离子腐蚀速率]--> 金属浸出\n[L3] 金属浸出 --[与电化学系统集成实现高气体选择性海水电解]--> 电化学系统",
+      "elapsed": 0.0
+    },
+    {
+      "title": "Electricity- and hydrogen-driven energy system sector-coupling in net-zero CO2 emission pathways",
+      "primary": "能源科学技术",
+      "hypothesis_text": "[L1] 情景分析 --[作为关键方法探索]--> 净零温室气体排放\n[L1] 净零温室气体排放 --[差异源于]--> 参数化\n[L1] 参数化 --[用于系统分析]--> 模型比较\n[L1] 电气化 --[证明是最具]--> 成本效益脱碳路径\n[L1] 成本效益脱碳路径 --[差异源于]--> 气候变化控制情景\n[L1] 气候变化控制情景 --[用于实现向]--> 温室气体中和\n[L1] 电力与氢能耦合系统 --[被应用于研究]--> 能源系统模型\n[L1] 能源系统模型 --[基于共同采用的]--> 深度脱碳情景假设\n[L1] 深度脱碳情景假设 --[通过扩展实现]--> 风电与光伏产能\n[L2] 情景分析 --[作为关键方法探索]--> 净零温室气体排放\n[L2] 净零温室气体排放 --[需要生成]--> 可再生电力\n[L2] 可再生电力 --[通过扩展实现]--> 风电与光伏产能\n[L2] 模型比较 --[用于系统分析]--> 诊断指标\n[L2] 诊断指标 --[识别差异源于]--> 参数化\n[L2] 参数化 --[影响]--> 成本效益脱碳路径\n[L3] 减排措施 --[协同优化]--> 深度脱碳情景假设\n[L3] 深度脱碳情景假设 --[作为基础]--> 模型比较\n[L3] 模型比较 --[验证优化]--> 电力与氢能耦合系统\n[L3] 巴黎协定 --[驱动设定]--> 净零温室气体排放\n[L3] 净零温室气体排放 --[关联分析]--> 成本效益脱碳路径\n[L3] 成本效益脱碳路径 --[支撑验证]--> 风电与光伏产能",
+      "elapsed": 0.0
+    },
+    {
+      "title": "A global atlas and drivers of antimicrobial resistance in Salmonella during 1900-2023",
+      "primary": "生物学",
+      "hypothesis_text": "[L1] 时空分布 --[反映沙门氏菌抗菌素耐药性的地理聚集特征]--> 抗菌素耐药性\n[L1] 抗菌素耐药性 --[受抗生素消耗驱动呈现动态演化]--> 抗生素消耗\n[L1] 抗生素消耗 --[通过染色体基因突变加速沙门氏菌进化轨迹]--> 进化轨迹\n[L1] 时空分布 --[与沙门氏菌基因组多样性存在地理关联]--> 沙门氏菌基因组\n[L1] 沙门氏菌基因组 --[通过基因组方法揭示抗菌素耐药基因的水平转移]--> 抗菌素耐药基因\n[L1] 抗菌素耐药基因 --[在系统发育分析中呈现宿主适应性进化特征]--> 系统发育分析\n[L2] 环境 --[作为生态学模型中食源性疾病传播的主要来源]--> 食源性疾病\n[L2] 食源性疾病 --[由沙门氏菌引起的疾病传播链核心环节]--> 沙门氏菌\n[L2] 沙门氏菌 --[通过基因水平转移获得抗菌素耐药性]--> 抗菌素耐药性\n[L2] 基因组方法 --[解析抗菌素耐药基因的水平转移机制]--> 抗菌素耐药基因\n[L2] 抗菌素耐药基因 --[整合到沙门氏菌基因组中形成遗传稳定性]--> 沙门氏菌基因组\n[L2] 沙门氏菌基因组 --[记录宿主适应性进化轨迹的关键载体]--> 进化轨迹\n[L3] 基因组方法 --[解析沙门氏菌基因组的遗传变异特征]--> 沙门氏菌基因组\n[L3] 沙门氏菌基因组 --[构建高分辨率基因图谱揭示传播路径]--> 基因图谱\n[L3] 基因图谱 --[结合系统发育分析推演跨宿主传播机制]--> 系统发育分析\n[L3] 抗生素消耗 --[驱动抗菌素耐药基因的选择性富集]--> 抗菌素耐药基因\n[L3] 抗菌素耐药基因 --[通过菌株分型追踪特定基因型的流行特征]--> 菌株分型\n[L3] 菌株分型 --[关联环境因子解析耐药进化压力梯度]--> 环境",
+      "elapsed": 0.0
+    },
+    {
+      "title": "Ultrahigh-power-density flexible piezoelectric energy harvester based on freestanding ferroelectric oxide thin films",
+      "primary": "材料科学",
+      "hypothesis_text": "[L1] flexible piezoelectric nanogenerators --[影响]--> freestanding ferroelectric oxide thin films\n[L1] freestanding ferroelectric oxide thin films --[导致]--> <>0.52</><>0.48</><>3</>\n[L1] <>0.52</><>0.48</><>3</> --[促进]--> water-soluble sacrificial layer\n[L1] flexible piezoelectric nanogenerators --[影响]--> freestanding ferroelectric oxide thin films\n[L1] freestanding ferroelectric oxide thin films --[导致]--> <>0.52</><>0.48</><>3</>\n[L1] <>0.52</><>0.48</><>3</> --[>3.4%]--> water-soluble sacrificial layer\n[L2] flexible piezoelectric nanogenerators --[影响]--> freestanding ferroelectric oxide thin films\n[L2] freestanding ferroelectric oxide thin films --[导致]--> <>0.52</><>0.48</><>3</>\n[L2] <>0.52</><>0.48</><>3</> --[促进]--> water-soluble sacrificial layer\n[L2] flexible piezoelectric nanogenerators --[影响]--> freestanding ferroelectric oxide thin films\n[L2] freestanding ferroelectric oxide thin films --[导致]--> <>0.52</><>0.48</><>3</>\n[L2] <>0.52</><>0.48</><>3</> --[促进]--> water-soluble sacrificial layer\n[L3] flexible piezoelectric nanogenerators --[影响]--> freestanding ferroelectric oxide thin films\n[L3] freestanding ferroelectric oxide thin films --[导致]--> <>0.52</><>0.48</><>3</>\n[L3] <>0.52</><>0.48</><>3</> --[促进]--> water-soluble sacrificial layer\n[L3] flexible piezoelectric nanogenerators --[影响]--> <>0.52</><>0.48</><>3</>\n[L3] <>0.52</><>0.48</><>3</> --[导致]--> <>0.52</><>0.48</><>3</>\n[L3] <>0.52</><>0.48</><>3</> --[促进]--> water-soluble sacrificial layer",
+      "elapsed": 0.0
+    },
+    {
+      "title": "Far-field femtosecond laser-driven λ/73 super-resolution fabrication of 2D van der Waals NbOI2 nanostructures in ambient air",
+      "primary": "材料科学",
+      "hypothesis_text": "[L1] 超精细纳米结构刻蚀 --[克服了光衍射的限制]--> 光衍射\n[L1] 光衍射 --[通过表面等离激元极化周期场调控]--> 表面等离激元极化周期场\n[L1] 表面等离激元极化周期场 --[由远场飞秒激光刻蚀生成]--> 远场飞秒激光刻蚀\n[L1] 二维范德华材料 --[通过异质结界面工程实现]--> 异质结\n[L1] 异质结 --[需要纳米光刻技术优化]--> 纳米光刻技术\n[L1] 纳米光刻技术 --[扩展功能器件应用]--> 器件应用\n[L2] 飞秒激光辐照 --[生成耦合场调控]--> 表面等离激元极化周期场\n[L2] 表面等离激元极化周期场 --[诱导局域增强的]--> 近场\n[L2] 近场 --[驱动超分辨加工]--> 超分辨纳米沟槽阵列\n[L2] 异质结 --[构建界面工程提升]--> 气体传感器\n[L2] 气体传感器 --[决定动态响应特性]--> 响应时间\n[L2] 响应时间 --[表征检测效率的]--> 二氧化氮传感性能\n[L3] 飞秒激光辐照 --[生成表面等离激元极化周期场耦合近场调控]--> 表面等离激元极化周期场\n[L3] 表面等离激元极化周期场 --[调控局部近场分布实现能量聚焦]--> 近场\n[L3] 近场 --[驱动超分辨纳米沟槽阵列加工并诱导异质结界面工程]--> 超分辨纳米沟槽阵列",
+      "elapsed": 0.0
+    }
+  ]
+}

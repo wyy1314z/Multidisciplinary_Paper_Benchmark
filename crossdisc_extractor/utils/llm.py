@@ -15,7 +15,7 @@ from openai import OpenAI, APIStatusError, APITimeoutError
 logger = logging.getLogger("crossdisc.llm")
 
 # MODEL_NAME = os.environ.get("OPENAI_MODEL", "deepseek-v3")
-MODEL_NAME = os.environ.get("OPENAI_MODEL", "qwen3-235b-a22b")
+MODEL_NAME = os.environ.get("OPENAI_MODEL") or "qwen3-235b-a22b"
 BASE_URL = os.environ.get("OPENAI_BASE_URL", "http://api.shubiaobiao.cn/v1")
 API_KEY = os.environ.get("OPENAI_API_KEY")
 

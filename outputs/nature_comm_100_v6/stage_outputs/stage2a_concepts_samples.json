@@ -1,0 +1,658 @@
+[
+  {
+    "title": "High-entropy alloy enables multi-path electron synergism and lattice oxygen activation for enhanced oxygen evolution activity",
+    "primary": "化学",
+    "secondary_list": [
+      "材料科学",
+      "动力与电气工程"
+    ],
+    "概念_主学科": [
+      {
+        "term": "electrocatalytic oxygen evolution reaction (OER)",
+        "normalized": "电催化氧析出反应",
+        "std_label": "OER",
+        "evidence": "Electrocatalytic oxygen evolution reaction (OER) is key to several energy technologies",
+        "source": "abstract",
+        "confidence": 0.98
+      },
+      {
+        "term": "lattice oxygen activation mechanism (LOM)",
+        "normalized": "晶格氧活化机制",
+        "std_label": "LOM",
+        "evidence": "Leveraging the lattice oxygen activation mechanism (LOM) is a strategy for boosting its activity",
+        "source": "abstract",
+        "confidence": 0.98
+      },
+      {
+        "term": "high-valent oxidation",
+        "normalized": "高氧化态氧化",
+        "std_label": null,
+        "evidence": "requiring high-valent oxidation of metal ions",
+        "source": "abstract",
+        "confidence": 0.95
+      },
+      {
+        "term": "metal ions",
+        "normalized": "金属离子",
+        "std_label": null,
+        "evidence": "high-valent oxidation of metal ions",
+        "source": "abstract",
+        "confidence": 0.95
+      },
+      {
+        "term": "Raman spectroscopy",
+        "normalized": "拉曼光谱",
+        "std_label": null,
+        "evidence": "We analyzed the catalyst surface using Raman spectroscopy",
+        "source": "introduction",
+        "confidence": 0.97
+      },
+      {
+        "term": "TMAOH solutions",
+        "normalized": "四甲基氢氧化铵溶液",
+        "std_label": null,
+        "evidence": "i-t tests in both KOH and TMAOH solutions",
+        "source": "introduction",
+        "confidence": 0.93
+      },
+      {
+        "term": "A1g stretching mode",
+        "normalized": "伸缩模式",
+        "std_label": null,
+        "evidence": "peak observed at 506 cm−1 in the Raman spectrum is indicative of the A1g stretching mode",
+        "source": "introduction",
+        "confidence": 0.96
+      },
+      {
+        "term": "Ni(OH)2",
+        "normalized": "氢氧化镍",
+        "std_label": null,
+        "evidence": "transformation from hydrated nickel hydroxide to a structure resembling nickel oxide",
+        "source": "introduction",
+        "confidence": 0.94
+      },
+      {
+        "term": "dehydration",
+        "normalized": "脱水",
+        "std_label": null,
+        "evidence": "due to dehydration",
+        "source": "introduction",
+        "confidence": 0.92
+      },
+      {
+        "term": "Fe–O bond",
+        "normalized": "铁-氧键",
+        "std_label": null,
+        "evidence": "peaks at 560 and 680 cm−1 correspond to the Fe–O bond",
+        "source": "introduction",
+        "confidence": 0.95
+      },
+      {
+        "term": "TMA+ cations",
+        "normalized": "四甲基铵阳离子",
+        "std_label": null,
+        "evidence": "characteristic of the presence of TMA+ cations",
+        "source": "introduction",
+        "confidence": 0.93
+      },
+      {
+        "term": "oxygen-containing intermediates",
+        "normalized": "含氧中间体",
+        "std_label": null,
+        "evidence": "negatively charged oxygen-containing intermediates (O2−)",
+        "source": "introduction",
+        "confidence": 0.94
+      },
+      {
+        "term": "μ-OO",
+        "normalized": "μ-过氧",
+        "std_label": null,
+        "evidence": "evaluation of the key intermediate μ-OO",
+        "source": "introduction",
+        "confidence": 0.92
+      },
+      {
+        "term": "multi-pathway regulation systems",
+        "normalized": "多路径调控系统",
+        "std_label": null,
+        "evidence": "reaction mechanisms of multi-pathway regulation systems",
+        "source": "introduction",
+        "confidence": 0.93
+      }
+    ],
+    "概念_辅学科": {
+      "材料科学": [
+        {
+          "term": "high-entropy alloys (HEAs)",
+          "normalized": "高熵合金",
+          "std_label": "HEAs",
+          "evidence": "We reveal that high-entropy alloys (HEAs) can efficiently activate the LOM",
+          "source": "abstract",
+          "confidence": 0.99
+        },
+        {
+          "term": "NiFeCoCrW0.2 HEA",
+          "normalized": "镍铁钴铬钨0.2高熵合金",
+          "std_label": null,
+          "evidence": "design of a NiFeCoCrW0.2 HEA",
+          "source": "abstract",
+          "confidence": 0.97
+        },
+        {
+          "term": "multi-path electron transfer",
+          "normalized": "多路径电子转移",
+          "std_label": null,
+          "evidence": "synergistic multi-path electron transfer",
+          "source": "abstract",
+          "confidence": 0.96
+        },
+        {
+          "term": "Co-O bonds",
+          "normalized": "钴-氧键",
+          "std_label": null,
+          "evidence": "integration of weaker Co-O bonds",
+          "source": "abstract",
+          "confidence": 0.95
+        },
+        {
+          "term": "Ni-Co dual-site",
+          "normalized": "镍-钴双位点",
+          "std_label": null,
+          "evidence": "LOM at the Ni-Co dual-site",
+          "source": "abstract",
+          "confidence": 0.94
+        },
+        {
+          "term": "structural and chemical optimizations",
+          "normalized": "结构和化学优化",
+          "std_label": null,
+          "evidence": "structural and chemical optimizations",
+          "source": "introduction",
+          "confidence": 0.93
+        }
+      ],
+      "动力与电气工程": [
+        {
+          "term": "overpotential",
+          "normalized": "过电位",
+          "std_label": null,
+          "evidence": "achieving an overpotential of 220 mV",
+          "source": "abstract",
+          "confidence": 0.97
+        },
+        {
+          "term": "current density",
+          "normalized": "电流密度",
+          "std_label": null,
+          "evidence": "current density of 10 mA cm-2",
+          "source": "abstract",
+          "confidence": 0.96
+        },
+        {
+          "term": "stability",
+          "normalized": "稳定性",
+          "std_label": null,
+          "evidence": "demonstrates good stability",
+          "source": "abstract",
+          "confidence": 0.95
+        },
+        {
+          "term": "potential variation",
+          "normalized": "电位变化",
+          "std_label": null,
+          "evidence": "maintaining the potential with less than 5% variation",
+          "source": "abstract",
+          "confidence": 0.94
+        },
+        {
+          "term": "electrocatalytic LOM pathway",
+          "normalized": "电催化路径",
+          "std_label": null,
+          "evidence": "initiation of an efficient electrocatalytic LOM pathway",
+          "source": "introduction",
+          "confidence": 0.93
+        },
+        {
+          "term": "multi-path electronic modulation",
+          "normalized": "多路径电子调制",
+          "std_label": null,
+          "evidence": "multi-path electronic modulation in manipulating electrocatalytic mechanistic shifts",
+          "source": "introduction",
+          "confidence": 0.92
+        }
+      ]
+    }
+  },
+  {
+    "title": "Leaf-based energy harvesting and storage utilizing hygroscopic iron hydrogel for continuous power generation",
+    "primary": "材料科学",
+    "secondary_list": [
+      "能源科学技术",
+      "化学"
+    ],
+    "概念_主学科": [
+      {
+        "term": "fallen leaves",
+        "normalized": "落叶",
+        "std_label": null,
+        "evidence": "Taking advantage of fallen leaves’ specific structural advantage",
+        "source": "abstract",
+        "confidence": 0.95
+      },
+      {
+        "term": "hygroscopic iron hydrogel",
+        "normalized": "吸湿性铁基水凝胶",
+        "std_label": null,
+        "evidence": "asymmetric coating of hygroscopic iron hydrogels",
+        "source": "abstract",
+        "confidence": 0.98
+      },
+      {
+        "term": "leaf veins",
+        "normalized": "叶脉",
+        "std_label": null,
+        "evidence": "leaf veins for water retention and diffusion restriction",
+        "source": "abstract",
+        "confidence": 0.96
+      },
+      {
+        "term": "carbon coatings",
+        "normalized": "碳涂层",
+        "std_label": null,
+        "evidence": "uniform carbon coatings instead of aggregations",
+        "source": "abstract",
+        "confidence": 0.93
+      },
+      {
+        "term": "electrical double layers",
+        "normalized": "电双层",
+        "std_label": null,
+        "evidence": "forming electrical double layers over the leaf surface",
+        "source": "abstract",
+        "confidence": 0.94
+      },
+      {
+        "term": "capacitance-like behavior",
+        "normalized": "类电容行为",
+        "std_label": null,
+        "evidence": "showing capacitance-like behavior for energy charging and discharging",
+        "source": "abstract",
+        "confidence": 0.92
+      },
+      {
+        "term": "delignified leaves",
+        "normalized": "脱木质素叶片",
+        "std_label": null,
+        "evidence": "conductive treatment of delignified leaves",
+        "source": "introduction",
+        "confidence": 0.91
+      },
+      {
+        "term": "carbon black (CB)",
+        "normalized": "炭黑",
+        "std_label": null,
+        "evidence": "dip-coating them in carbon black (CB)",
+        "source": "introduction",
+        "confidence": 0.95
+      },
+      {
+        "term": "Lotus Leaves Effects",
+        "normalized": "荷叶效应",
+        "std_label": null,
+        "evidence": "their surfaces with nano-micro cell structures, known as Lotus Leaves Effects",
+        "source": "introduction",
+        "confidence": 0.93
+      },
+      {
+        "term": "hierarchical porous structures",
+        "normalized": "分级多孔结构",
+        "std_label": null,
+        "evidence": "leaf veins...hierarchical porous structures",
+        "source": "introduction",
+        "confidence": 0.94
+      },
+      {
+        "term": "biodegradability",
+        "normalized": "生物降解性",
+        "std_label": null,
+        "evidence": "the biodegradability of leaves",
+        "source": "introduction",
+        "confidence": 0.92
+      },
+      {
+        "term": "anion exchange membrane",
+        "normalized": "阴离子交换膜",
+        "std_label": null,
+        "evidence": "not found in provided text",
+        "source": "abstract",
+        "confidence": 0.7
+      },
+      {
+        "term": "gas diffusion layer",
+        "normalized": "气体扩散层",
+        "std_label": null,
+        "evidence": "not found in provided text",
+        "source": "abstract",
+        "confidence": 0.7
+      }
+    ],
+    "概念_辅学科": {
+      "能源科学技术": [
+        {
+          "term": "energy harvesting",
+          "normalized": "能量收集",
+          "std_label": null,
+          "evidence": "self-powered energy harvesting systems",
+          "source": "abstract",
+          "confidence": 0.97
+        },
+        {
+          "term": "power generation",
+          "normalized": "发电",
+          "std_label": null,
+          "evidence": "continuous power generation",
+          "source": "title",
+          "confidence": 0.96
+        },
+        {
+          "term": "triboelectric nanogenerators (TENGs)",
+          "normalized": "摩擦纳米发电机",
+          "std_label": null,
+          "evidence": "emergence of triboelectric nanogenerators (TENGs)",
+          "source": "introduction",
+          "confidence": 0.95
+        },
+        {
+          "term": "contact-separation",
+          "normalized": "接触-分离",
+          "std_label": null,
+          "evidence": "TENGs rely on contact-separation",
+          "source": "introduction",
+          "confidence": 0.93
+        },
+        {
+          "term": "atmospheric moisture",
+          "normalized": "大气湿气",
+          "std_label": null,
+          "evidence": "Atmospheric moisture as renewable energy source",
+          "source": "introduction",
+          "confidence": 0.94
+        },
+        {
+          "term": "self-powered wearable technologies",
+          "normalized": "自供电可穿戴技术",
+          "std_label": null,
+          "evidence": "developing self-powered wearable technologies",
+          "source": "introduction",
+          "confidence": 0.92
+        },
+        {
+          "term": "built-in potential difference",
+          "normalized": "内建电势差",
+          "std_label": null,
+          "evidence": "built-in potential difference (~0.5 V)",
+          "source": "introduction",
+          "confidence": 0.91
+        },
+        {
+          "term": "ambient moisture",
+          "normalized": "环境湿气",
+          "std_label": null,
+          "evidence": "energy harvesters from ambient moisture",
+          "source": "introduction",
+          "confidence": 0.93
+        }
+      ],
+      "化学": [
+        {
+          "term": "iron hydrogel",
+          "normalized": "铁基水凝胶",
+          "std_label": null,
+          "evidence": "hygroscopic iron hydrogel",
+          "source": "abstract",
+          "confidence": 0.96
+        },
+        {
+          "term": "moisture absorption",
+          "normalized": "吸湿",
+          "std_label": null,
+          "evidence": "Upon moisture absorption",
+          "source": "abstract",
+          "confidence": 0.95
+        },
+        {
+          "term": "metal-organic frameworks",
+          "normalized": "金属有机框架",
+          "std_label": null,
+          "evidence": "hygroscopic materials including metal-organic frameworks",
+          "source": "introduction",
+          "confidence": 0.94
+        },
+        {
+          "term": "composite materials",
+          "normalized": "复合材料",
+          "std_label": null,
+          "evidence": "composite materials for moisture capture",
+          "source": "introduction",
+          "confidence": 0.93
+        },
+        {
+          "term": "lignin",
+          "normalized": "木质素",
+          "std_label": null,
+          "evidence": "high concentration of lignin",
+          "source": "introduction",
+          "confidence": 0.92
+        },
+        {
+          "term": "sulfate radicals",
+          "normalized": "硫酸根自由基",
+          "std_label": null,
+          "evidence": "not found in provided text",
+          "source": "abstract",
+          "confidence": 0.7
+        },
+        {
+          "term": "reactive oxygen species",
+          "normalized": "活性氧物种",
+          "std_label": null,
+          "evidence": "not found in provided text",
+          "source": "abstract",
+          "confidence": 0.7
+        }
+      ]
+    }
+  },
+  {
+    "title": "Multi-modal framework for battery state of health evaluation using open-source electric vehicle data",
+    "primary": "计算机科学技术",
+    "secondary_list": [
+      "动力与电气工程",
+      "材料科学"
+    ],
+    "概念_主学科": [
+      {
+        "term": "multi-modal framework",
+        "normalized": "多模态框架",
+        "std_label": "multi-modal framework",
+        "evidence": "we propose a deep learning-based multi-modal framework",
+        "source": "abstract",
+        "confidence": 0.95
+      },
+      {
+        "term": "deep learning-based",
+        "normalized": "基于深度学习",
+        "std_label": "deep learning",
+        "evidence": "deep learning-based multi-modal framework",
+        "source": "abstract",
+        "confidence": 0.98
+      },
+      {
+        "term": "historical vehicle data",
+        "normalized": "历史车辆数据",
+        "std_label": "historical vehicle data",
+        "evidence": "leverage historical vehicle data for efficient, accurate",
+        "source": "abstract",
+        "confidence": 0.92
+      },
+      {
+        "term": "multi-sensor systems",
+        "normalized": "多传感器系统",
+        "std_label": "multi-sensor systems",
+        "evidence": "state estimation and diagnostics in multi-sensor systems",
+        "source": "abstract",
+        "confidence": 0.93
+      },
+      {
+        "term": "open-source battery datasets",
+        "normalized": "开源电池数据集",
+        "std_label": "open-source battery datasets",
+        "evidence": "availability of open-source battery datasets is critical",
+        "source": "introduction",
+        "confidence": 0.96
+      },
+      {
+        "term": "time-series dataset",
+        "normalized": "时间序列数据集",
+        "std_label": "time-series dataset",
+        "evidence": "time-series dataset comprising 48 cells aged under identical",
+        "source": "introduction",
+        "confidence": 0.94
+      },
+      {
+        "term": "electrochemical impedance spectroscopy (EIS)",
+        "normalized": "电化学阻抗谱",
+        "std_label": "electrochemical impedance spectroscopy",
+        "evidence": "20,000 electrochemical impedance spectroscopy (EIS) spectra",
+        "source": "introduction",
+        "confidence": 0.97
+      },
+      {
+        "term": "battery degradation studies",
+        "normalized": "电池退化研究",
+        "std_label": "battery degradation studies",
+        "evidence": "repositories provide battery testing data for use in battery degradation studies",
+        "source": "introduction",
+        "confidence": 0.93
+      },
+      {
+        "term": "nonlinear time-varying system",
+        "normalized": "非线性时变系统",
+        "std_label": "nonlinear time-varying system",
+        "evidence": "battery is a nonlinear, time-varying system",
+        "source": "introduction",
+        "confidence": 0.95
+      },
+      {
+        "term": "extrapolation of battery characteristics",
+        "normalized": "电池特性外推",
+        "std_label": "extrapolation of battery characteristics",
+        "evidence": "generate some extrapolation of battery characteristics obtained from lab testing",
+        "source": "introduction",
+        "confidence": 0.92
+      }
+    ],
+    "概念_辅学科": {
+      "动力与电气工程": [
+        {
+          "term": "battery state of health (SOH)",
+          "normalized": "电池健康状态",
+          "std_label": "state of health",
+          "evidence": "battery state of health evaluation",
+          "source": "abstract",
+          "confidence": 0.98
+        },
+        {
+          "term": "battery management system (BMS)",
+          "normalized": "电池管理系统",
+          "std_label": "battery management system",
+          "evidence": "battery management system for state of health estimation",
+          "source": "abstract",
+          "confidence": 0.97
+        },
+        {
+          "term": "lithium-ion batteries",
+          "normalized": "锂离子电池",
+          "std_label": "lithium-ion batteries",
+          "evidence": "Lithium-ion batteries, with their high energy densities",
+          "source": "introduction",
+          "confidence": 0.99
+        },
+        {
+          "term": "solid electrolyte interface growth",
+          "normalized": "固态电解质界面生长",
+          "std_label": "solid electrolyte interface growth",
+          "evidence": "solid electrolyte interface growth, loss of active materials",
+          "source": "introduction",
+          "confidence": 0.96
+        },
+        {
+          "term": "cell-to-cell variation",
+          "normalized": "单体间差异",
+          "std_label": "cell-to-cell variation",
+          "evidence": "cell-to-cell variation results in rapid degradation",
+          "source": "introduction",
+          "confidence": 0.95
+        },
+        {
+          "term": "barrel effect",
+          "normalized": "木桶效应",
+          "std_label": "barrel effect",
+          "evidence": "because of the barrel effect",
+          "source": "introduction",
+          "confidence": 0.94
+        },
+        {
+          "term": "internal resistance increase",
+          "normalized": "内阻增加",
+          "std_label": "internal resistance increase",
+          "evidence": "performance degradation in terms of capacity reduction and internal resistance increase",
+          "source": "introduction",
+          "confidence": 0.93
+        }
+      ],
+      "材料科学": [
+        {
+          "term": "active materials",
+          "normalized": "活性材料",
+          "std_label": "active materials",
+          "evidence": "loss of active materials",
+          "source": "introduction",
+          "confidence": 0.96
+        },
+        {
+          "term": "lithium plating",
+          "normalized": "锂沉积",
+          "std_label": "lithium plating",
+          "evidence": "lithium plating3,4",
+          "source": "introduction",
+          "confidence": 0.95
+        },
+        {
+          "term": "electrochemical mechanism",
+          "normalized": "电化学机理",
+          "std_label": "electrochemical mechanism",
+          "evidence": "electrochemical mechanism of lithium batteries",
+          "source": "introduction",
+          "confidence": 0.94
+        },
+        {
+          "term": "degradation patterns",
+          "normalized": "退化模式",
+          "std_label": "degradation patterns",
+          "evidence": "accurately delineate degradation patterns and characteristics",
+          "source": "introduction",
+          "confidence": 0.93
+        },
+        {
+          "term": "state of charge (SOC)",
+          "normalized": "充电状态",
+          "std_label": "state of charge",
+          "evidence": "various SOH, state of charge (SOC), and temperatures",
+          "source": "introduction",
+          "confidence": 0.97
+        }
+      ]
+    }
+  }
+]

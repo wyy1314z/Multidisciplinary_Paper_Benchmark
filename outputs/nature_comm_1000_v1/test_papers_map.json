@@ -1,0 +1,103 @@
+{
+  "ba3a41c583c9": {
+    "paper_id": "ba3a41c583c9",
+    "title": "Strain heterogeneity in RuO2 for efficient acidic oxygen evolution reaction in proton exchange membrane water electrolysis",
+    "abstract": "Developing acid-stable and active ruthenium dioxide (RuO<sub>2</sub>) catalysts for the oxygen evolution reaction (OER) is crucial for facilitating the large-scale applications of proton exchange membrane water electrolysis (PEMWE) for hydrogen production. Here, we propose a strain heterogeneity engineering strategy to simultaneously enhance the OER stability and activity of RuO<sub>2</sub> electrocatalysts by introducing single-atom platinum (Pt). In a PEM water electrolyzer, the resultant Pt-RuO<sub>2</sub> catalyst archives 3 A cm<sup>-2</sup> at a low voltage of 1.791 V and maintains a stable performance for over 500 h at 500 mA cm<sup>-2</sup>. These performance metrics highlight its potential for practical applications. Experiments and calculations analyses confirm that the bulk tensile strain effectively stabilizes the entire structure of electrocatalysts, while the regions of compressive strain are identified as highly active catalytic sites, where the weakened binding energy of oxo-intermediates improves the catalytic activity.",
+    "primary_discipline": "化学",
+    "secondary_disciplines": [
+      "化学",
+      "材料科学"
+    ]
+  },
+  "6a011836f49c": {
+    "paper_id": "6a011836f49c",
+    "title": "Divergent evolution of slip banding in CrCoNi alloys",
+    "abstract": "Abstract Metallic materials under high stress often exhibit deformation localization, manifesting as slip banding. Over seven decades ago, Frank and Read introduced the well-known model of dislocation multiplication at a source, explaining slip band formation. Here, we reveal two distinct types of slip bands (confined and extended) in compressed CrCoNi alloys through multi-scale testing and modeling from microscopic to atomic scales. The confined slip band, characterized by a thin glide zone, arises from the conventional process of repetitive full dislocation emissions at Frank–Read source. Contrary to the classical model, the extended band stems from slip-induced deactivation of dislocation sources, followed by consequent generation of new sources on adjacent planes, leading to rapid band thickening. Our findings provide insights into atomic-scale collective dislocation motion and microscopic deformation instability in advanced structural materials.",
+    "primary_discipline": "材料科学",
+    "secondary_disciplines": [
+      "力学",
+      "物理学"
+    ]
+  },
+  "76b9c27b6e9c": {
+    "paper_id": "76b9c27b6e9c",
+    "title": "White light-excited organic room-temperature phosphorescence for improved in vivo bioimaging",
+    "abstract": "Organic phosphorescence materials offer significant advantages for bioimaging applications. However, most of these materials are excited exclusively by ultraviolet (UV) light, which poses risks to living organisms. Herein, six donor-acceptor-type compounds incorporating triazine groups are designed as guests within doped systems. White-light excitable phosphorescent guests enable doped materials to show efficient afterglow under white-light excitation. By leveraging the ability of white-light to penetrate biological tissues, a bioimaging mode in which the materials are first concentrated within the organism and then excited was developed, yielding superior imaging effects compared with the traditional method in which materials are first excited and then concentrated. Furthermore, these materials are applied in imaging diagnosis of atherosclerosis plaques (male Apoe<sup>-</sup><sup>/</sup><sup>-</sup> mice) and intestinal diseases (female BALB/c-nude mice), as well as in navigation for in situ liver tumor surgery (female BALB/c-nude mice), achieving excellent imaging outcomes. This work addresses the limitations of phosphorescent materials that rely on UV-light, significantly enhancing their potential for practical applications in clinical imaging.",
+    "primary_discipline": "化学",
+    "secondary_disciplines": [
+      "材料科学",
+      "临床医学"
+    ]
+  },
+  "a5b105f61dd1": {
+    "paper_id": "a5b105f61dd1",
+    "title": "A neural implementation model of feedback-based motor learning",
+    "abstract": "Abstract Animals use feedback to rapidly correct ongoing movements in the presence of a perturbation. Repeated exposure to a predictable perturbation leads to behavioural adaptation that compensates for its effects. Here, we tested the hypothesis that all the processes necessary for motor adaptation may emerge as properties of a controller that adaptively updates its policy. We trained a recurrent neural network to control its own output through an error-based feedback signal, which allowed it to rapidly counteract external perturbations. Implementing a biologically plausible plasticity rule based on this same feedback signal enabled the network to learn to compensate for persistent perturbations through a trial-by-trial process. The network activity changes during learning matched those from populations of neurons from monkey primary motor cortex — known to mediate both movement correction and motor adaptation — during the same task. Furthermore, our model natively reproduced several key aspects of behavioural studies in humans and monkeys. Thus, key features of trial-by-trial motor adaptation can arise from the internal properties of a recurrent neural circuit that adaptively controls its output based on ongoing feedback.",
+    "primary_discipline": "生物学",
+    "secondary_disciplines": [
+      "生物学",
+      "计算机科学技术"
+    ]
+  },
+  "17bb04bcd111": {
+    "paper_id": "17bb04bcd111",
+    "title": "Climate change has increased the odds of extreme regional forest fire years globally",
+    "abstract": "Abstract Regions across the globe have experienced devastating fire years in the past decade with far-reaching impacts. Here, we examine the role of antecedent and concurrent climate variability in enabling extreme regional fire years across global forests. These extreme years commonly coincided with extreme (1-in-15-year) fire weather indices (FWI) and featured a four and five-fold increase in the number of large fires and fire carbon emissions, respectively, compared with non-extreme years. Years with such extreme FWI metrics are 88-152% more likely across global forested lands under a contemporary (2011–2040) climate compared to a quasi-preindustrial (1851–1900) climate, with the most pronounced increased risk in temperate and Amazonian forests. Our results show that human-caused climate change is raising the odds of extreme climate-driven fire years across forested regions of the globe, necessitating proactive measures to mitigate risks and adapt to extreme fire years.",
+    "primary_discipline": "地球科学",
+    "secondary_disciplines": [
+      "林学",
+      "环境科学技术"
+    ]
+  },
+  "1190f088c693": {
+    "paper_id": "1190f088c693",
+    "title": "Martini3-IDP: improved Martini 3 force field for disordered proteins",
+    "abstract": "Coarse-grained (CG) molecular dynamics (MD) is widely used for the efficient simulation of intrinsically disordered proteins (IDPs). The Martini model, one of the most popular CG force fields in biomolecular simulation, was reported to yield too compact IDP conformations, limiting its applications. Addressing this, we optimized the bonded parameters based on fitting to reference simulations of a diverse set of IDPs at atomistic resolution, resulting in a Martini3-based disordered protein model coined Martini3-IDP. This model leads to expanded IDP conformations, greatly improving the reproduction of the experimentally measured radii of gyration. Moreover, contrary to ad-hoc fixes based on scaling of protein-protein or protein-water interactions, Martini3-IDP keeps the overall interaction balance underlying Martini 3. To validate that, we perform a comprehensive testing including full-length multidomain proteins, IDP-lipid membrane binding and IDP-small molecule binding, confirming its ability to successfully capture the complex interplay between disordered proteins and diverse biomolecular components. Finally, the recently emerging concept of biomolecular condensate, through liquid-liquid phase separation, was also reproduced by Martini3-IDP for a number of both homotypic and heterotypic systems. With the improved Martini3-IDP model, we expand the ability to simulate processes involving IDPs in complex environments, at spatio-temporal scales inaccessible with all-atom models.",
+    "primary_discipline": "化学",
+    "secondary_disciplines": [
+      "生物学",
+      "计算机科学技术"
+    ]
+  },
+  "8a3457bdd7ad": {
+    "paper_id": "8a3457bdd7ad",
+    "title": "The molecular reach of antibodies crucially underpins their viral neutralisation capacity",
+    "abstract": "Abstract Key functions of antibodies, such as viral neutralisation, depend on high-affinity binding. However, viral neutralisation poorly correlates with antigen affinity for reasons that have been unclear. Here, we use a new mechanistic model of bivalent binding to study &gt;45 patient-isolated IgG1 antibodies interacting with SARS-CoV-2 RBD surfaces. The model provides the standard monovalent affinity/kinetics and new bivalent parameters, including the molecular reach: the maximum antigen separation enabling bivalent binding. We find large variations in these parameters across antibodies, including reach variations (22–46 nm) that exceed the physical antibody size (~15 nm). By using antigens of different physical sizes, we show that these large molecular reaches are the result of both the antibody and antigen sizes. Although viral neutralisation correlates poorly with affinity, a striking correlation is observed with molecular reach. Indeed, the molecular reach explains differences in neutralisation for antibodies binding with the same affinity to the same RBD-epitope. Thus, antibodies within an isotype class binding the same antigen can display differences in molecular reach, substantially modulating their binding and functional properties.",
+    "primary_discipline": "生物学",
+    "secondary_disciplines": [
+      "生物学",
+      "基础医学",
+      "化学"
+    ]
+  },
+  "46b6635cfb54": {
+    "paper_id": "46b6635cfb54",
+    "title": "Breaking linear scaling relationships in oxygen evolution via dynamic structural regulation of active sites",
+    "abstract": "The universal linear scaling relationships between the adsorption energies of reactive intermediates limit the performance of catalysts in multi-step catalytic reactions. Here, we show how these scaling relationships can be circumvented in electrochemical oxygen evolution reaction by dynamic structural regulation of active sites. We construct a model Ni-Fe<sub>2</sub> molecular catalyst via in situ electrochemical activation, which is able to deliver a notable intrinsic oxygen evolution reaction activity. Theoretical calculations and electrokinetic studies reveal that the dynamic evolution of Ni-adsorbate coordination driven by intramolecular proton transfer can effectively alter the electronic structure of the adjacent Fe active centre during the catalytic cycle. This dynamic dual-site cooperation simultaneously lowers the free energy change associated with O-H bond cleavage and O-O bond formation, thereby disrupting the inherent scaling relationship in oxygen evolution reaction. The present study not only advances the development of molecular water oxidation catalysts, but also provides an unconventional paradigm for breaking the linear scaling relationships in multi-intermediates involved catalysis.",
+    "primary_discipline": "化学",
+    "secondary_disciplines": [
+      "材料科学"
+    ]
+  },
+  "d051d6c5e192": {
+    "paper_id": "d051d6c5e192",
+    "title": "Gut commensal Bifidobacterium-derived extracellular vesicles modulate the therapeutic effects of anti-PD-1 in lung cancer",
+    "abstract": "Lung cancer is the leading cause of cancer-related deaths worldwide. Although immunotherapy such as anti-programmed death-1 and its ligand 1 (PD-1/L1) is a standard treatment for advanced non-small cell lung cancer (NSCLC), many patients do not derive benefit directly. Several studies have elucidated new strategies to improve the antitumor immune response through gut microbiota modulation. However, it remains largely debatable regarding how gut microbiota remotely affect lung cancer microenvironment and subsequently modulate immunotherapy response. Here we show that commensal Bifidobacterium-derived extracellular vesicles (Bif.BEVs) can modulate the therapeutic effect of anti-PD-1 therapy in NSCLC. These Bif.BEVs are up-taken by lung cancer cells predominantly via dynamin-dependent endocytosis and upregulate PD-L1 expression through TLR4-NF-κB pathway. They also efficiently penetrate murine intestinal and patient-derived lung cancer organoids. Oral gavage of these Bif.BEVs result in their accumulation in tumors in mice. Using a syngeneic mouse model, Bif.BEVs are found to synergize the anti-tumor effect of anti-PD-1 via modulation of key cytokines, immune response and oncogenic pathways, and increase in tumor-infiltrating CD8<sup>+</sup> T cells. Our study therefore identifies a link between Bif.BEVs and the tumor microenvironment, providing an alternative mechanism to explain how gut microbiota can influence immunotherapy response, particularly in tumors located anatomically distant from the gut.",
+    "primary_discipline": "生物学",
+    "secondary_disciplines": [
+      "生物学",
+      "临床医学"
+    ]
+  },
+  "dc41ec7fcac5": {
+    "paper_id": "dc41ec7fcac5",
+    "title": "General method for carbon–heteroatom cross-coupling reactions via semiheterogeneous red-light metallaphotocatalysis",
+    "abstract": "Abstract Combining transition-metal catalysis with photocatalysis has emerged as a valuable, complementary approach for achieving carbon–heteroatom cross-coupling reactions. However, the need to use blue or high-energy near-UV light leads to problems with scalability, chemoselectivity, and catalyst deactivation, which have limited the synthetic applications of this combination. Herein, we report a method for red-light-driven nickel-catalyzed cross-coupling reactions of aryl halides with 11 different types of nucleophiles using a polymeric carbon nitride (CN-OA-m) as a photocatalyst. This semiheterogeneous catalyst system enabled the formation of four different types of carbon–heteroatom bonds (C–N, C–O, C–S, and C–Se) with a wide range of substrates (more than 200 examples) with yields up to 94%. Moreover, the photocatalyst is easily recovered and recycled, which makes it a promising new tool for the development of other reactions involving red-light metallaphotoredox catalysis.",
+    "primary_discipline": "化学",
+    "secondary_disciplines": [
+      "化学",
+      "材料科学",
+      "化学工程"
+    ]
+  }
+}

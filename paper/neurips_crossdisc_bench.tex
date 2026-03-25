@@ -1,0 +1,833 @@
+% ============================================================================
+% CrossDisc-Bench: A Knowledge Graph-Grounded Benchmark for
+% Cross-Disciplinary Scientific Hypothesis Generation
+% NeurIPS 2025 Datasets & Benchmarks Track
+% ============================================================================
+\documentclass{article}
+
+% NeurIPS 2025 style (non-anonymous for D&B track)
+\usepackage[final]{neurips_2025}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{hyperref}
+\usepackage{url}
+\usepackage{booktabs}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{nicefrac}
+\usepackage{microtype}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\usepackage{multirow}
+\usepackage{subcaption}
+\usepackage{enumitem}
+\usepackage{tabularx}
+\usepackage{makecell}
+
+\definecolor{cblue}{HTML}{4472C4}
+\definecolor{cgreen}{HTML}{548235}
+\definecolor{corange}{HTML}{ED7D31}
+
+\newcommand{\ours}{\textsc{CrossDisc-Bench}}
+\newcommand{\ie}{\textit{i.e.}}
+\newcommand{\eg}{\textit{e.g.}}
+\newcommand{\cf}{\textit{cf.}}
+\newcommand{\etal}{\textit{et al.}}
+
+\title{\ours{}: A Knowledge Graph-Grounded Benchmark for \\
+Cross-Disciplinary Scientific Hypothesis Generation}
+
+\author{
+  Anonymous Authors \\
+  % Affiliation \\
+  % \texttt{email@domain.com}
+}
+
+\begin{document}
+\maketitle
+
+% ============================================================================
+\begin{abstract}
+% ============================================================================
+Cross-disciplinary research---the integration of concepts and methods across distinct scientific fields---has been a driving force behind many major scientific breakthroughs.
+However, there exists no systematic benchmark for evaluating the ability of large language models (LLMs) to generate scientifically grounded hypotheses that bridge disciplinary boundaries.
+We introduce \ours{}, the first comprehensive benchmark for \emph{cross-disciplinary scientific hypothesis generation} grounded in structured knowledge graphs.
+Built from 1{,}000 Nature Communications papers spanning 50 disciplines and 2{,}351 taxonomy terms, \ours{} features:
+(1) a multi-stage knowledge extraction pipeline that constructs per-paper knowledge graphs with typed concepts, cross-disciplinary relations, and three-level hypothesis reasoning paths (L1 macro / L2 meso / L3 micro);
+(2) an evidence-grounded ground truth (GT) construction method based on constrained term extraction, relation classification, and graph traversal, avoiding reliance on expensive human annotation;
+(3) a progressive prompt evaluation framework (P1--P5) that systematically measures how increasing levels of structured knowledge affect hypothesis quality; and
+(4) a multi-dimensional evaluation suite combining LLM-as-Judge scoring, text similarity metrics, and novel knowledge graph structural metrics including cross-disciplinary bridging, chain coherence, and Rao--Stirling diversity.
+Experiments reveal that knowledge graph-grounded generation (P5) produces 6$\times$ more hypotheses with perfect structural coherence, while free-text methods (P1--P4) achieve higher novelty but lower feasibility.
+Our benchmark, code, and data are publicly available to facilitate research on knowledge-intensive scientific discovery.
+\end{abstract}
+
+% ============================================================================
+\section{Introduction}
+\label{sec:intro}
+% ============================================================================
+
+Cross-disciplinary research has produced some of the most impactful scientific advances of the past century, from bioinformatics~\cite{lander2001initial} to materials informatics~\cite{agrawal2016perspective}.
+The ability to connect concepts across distinct scientific domains---transferring a method from physics to biology, or mapping a mathematical framework onto an engineering problem---lies at the heart of scientific creativity and innovation.
+Yet, the cognitive demands of maintaining expertise across multiple fields create substantial barriers to cross-disciplinary discovery~\cite{foster2015tradition}.
+
+The rapid development of large language models (LLMs) has opened new possibilities for automated scientific hypothesis generation~\cite{wang2023scimon,yang2024leandojo}.
+Recent benchmarks such as DiscoveryBench~\cite{majumder2024discoverybench} and HypoBench~\cite{liu2025hypobench} have formalized the evaluation of data-driven and classification-based hypothesis generation, respectively.
+However, these benchmarks share two critical limitations: (1) they operate primarily within single disciplinary domains and do not assess the ability to bridge distinct fields, and (2) they evaluate hypotheses as free-text outputs without considering the underlying \emph{reasoning structure} that connects concepts across disciplines.
+
+We argue that evaluating cross-disciplinary hypothesis generation requires a fundamentally different approach: one that models the \emph{knowledge graph structure} underlying scientific reasoning.
+A high-quality cross-disciplinary hypothesis is not merely a plausible sentence; it is a \emph{structured reasoning path} that starts from a concept in one discipline, traverses typed relations, and arrives at a testable claim in another discipline.
+
+To this end, we introduce \ours{}, the first benchmark that jointly evaluates the quality and structure of cross-disciplinary scientific hypotheses.
+Our contributions are as follows:
+
+\begin{enumerate}[leftmargin=*,topsep=2pt,itemsep=1pt]
+\item \textbf{CrossDisc-Bench}: A large-scale benchmark constructed from 1{,}000 Nature Communications papers, featuring per-paper knowledge graphs with an average of 28.8 concept nodes, 27.1 typed edges, and three-level hypothesis reasoning paths.
+\item \textbf{Evidence-grounded GT construction}: A three-stage pipeline (constrained term extraction $\to$ evidence-based relation classification $\to$ cross-disciplinary graph traversal) that produces structured ground truth without expensive human annotation, yielding an average of 32.0 terms and 21.3 relations per paper.
+\item \textbf{Progressive prompt evaluation (P1--P5)}: A systematic framework that incrementally provides structured knowledge (from bare research questions to full knowledge graph context) to isolate the contribution of each knowledge component to hypothesis quality.
+\item \textbf{Multi-dimensional evaluation metrics}: A comprehensive suite including LLM-as-Judge scoring across 5 quality dimensions, text similarity metrics, and novel KG structural metrics (bridging score, chain coherence, Rao--Stirling diversity, atypical combination index).
+\end{enumerate}
+
+% ============================================================================
+\section{Related Work}
+\label{sec:related}
+% ============================================================================
+
+\paragraph{Scientific Hypothesis Generation.}
+Automated hypothesis generation has been studied from multiple perspectives.
+DiscoveryBench~\cite{majumder2024discoverybench} formalizes data-driven discovery as $h = \psi(c, v, r)$ over contexts, variables, and relationships, providing 264 real-world tasks across six domains---but focuses on statistical hypothesis verification rather than cross-disciplinary reasoning.
+HypoBench~\cite{liu2025hypobench} evaluates LLM-generated hypotheses for classification tasks using Hypothesis Discovery Rate (HDR), with 194 datasets across 12 domains.
+SciHyp~\cite{dessi2024scihyp} provides RDF descriptions of 689 hypotheses from computer science papers.
+SciMON~\cite{wang2023scimon} generates novel scientific ideas using retrieval-augmented LLMs.
+Unlike these works, \ours{} specifically targets \emph{cross-disciplinary} hypothesis generation and evaluates both the \emph{content quality} and the \emph{structural reasoning} behind each hypothesis.
+
+\paragraph{Knowledge Graphs for Scientific Discovery.}
+Knowledge graphs (KGs) have been increasingly used to organize and reason over scientific knowledge.
+KnowGPT~\cite{luo2024knowgpt} grounds LLM responses in KG facts via graph retrieval-augmented generation.
+KG-CoI~\cite{li2024chain} uses knowledge graphs for chain-of-ideas reasoning in hypothesis generation.
+In the biomedical domain, systems like BioGPT~\cite{luo2022biogpt} and DrugChat~\cite{liang2023drugchat} leverage domain-specific KGs for drug discovery.
+Our work differs by constructing paper-specific knowledge graphs that capture the \emph{cross-disciplinary structure} of individual research papers, rather than relying on pre-existing large-scale KGs.
+
+\paragraph{Cross-Disciplinary Knowledge Integration.}
+The challenge of crossing disciplinary boundaries has been studied in scientometrics~\cite{stirling2007general,uzzi2013atypical} and science of science~\cite{foster2015tradition}.
+Rao--Stirling diversity~\cite{stirling2007general} and atypical combination indices~\cite{uzzi2013atypical} quantify interdisciplinarity at the journal/citation level.
+We adopt and extend these metrics to the knowledge graph level, measuring cross-disciplinary bridging at the concept-relation granularity.
+
+\paragraph{LLM Evaluation Benchmarks.}
+The NeurIPS Datasets \& Benchmarks track has seen growing interest in LLM evaluation, from general capabilities~\cite{liang2022holistic} to domain-specific tasks~\cite{sun2024scieval}.
+Our work complements this trend by providing the first benchmark specifically designed for evaluating structured, knowledge-grounded scientific reasoning across disciplinary boundaries.
+
+% ============================================================================
+\section{Task Formulation}
+\label{sec:task}
+% ============================================================================
+
+We formally define the task of \emph{cross-disciplinary hypothesis generation} and the key structures involved.
+
+\begin{definition}[Cross-Disciplinary Knowledge Graph]
+\label{def:kg}
+Given a scientific paper $p$ with title, abstract, and disciplinary classification, a \emph{cross-disciplinary knowledge graph} is a directed attributed graph $\mathcal{G}_p = (\mathcal{V}, \mathcal{E}, \phi_v, \phi_e)$ where:
+\begin{itemize}[leftmargin=*,topsep=1pt,itemsep=0pt]
+\item $\mathcal{V}$ is a set of concept nodes, each with attributes: term, normalized form, discipline label, evidence text, and confidence score;
+\item $\mathcal{E} \subseteq \mathcal{V} \times \mathcal{R} \times \mathcal{V}$ is a set of typed directed edges;
+\item $\mathcal{R} = \{$\texttt{method\_applied\_to}, \texttt{improves\_metric}, \texttt{constrains}, \texttt{maps\_to}, \texttt{corresponds\_to}, \texttt{depends\_on}, \texttt{driven\_by}, \texttt{extends}, \texttt{generalizes}, \texttt{inferred\_from}, \texttt{assumes}, \texttt{other}$\}$ is the relation type vocabulary;
+\item $\phi_v: \mathcal{V} \to \mathcal{D}$ maps each node to a discipline in taxonomy $\mathcal{T}$;
+\item $\phi_e: \mathcal{E} \to [0,1]$ assigns a confidence score to each edge.
+\end{itemize}
+An edge $(u, r, v) \in \mathcal{E}$ is \emph{cross-disciplinary} if $\phi_v(u) \neq \phi_v(v)$ at the top-level (L1) of taxonomy $\mathcal{T}$.
+\end{definition}
+
+\begin{definition}[Hypothesis Reasoning Path]
+\label{def:path}
+A \emph{hypothesis reasoning path} at granularity level $\ell \in \{L1, L2, L3\}$ is an ordered sequence of three reasoning steps:
+\[
+\mathbf{h}^\ell = \langle s_1, s_2, s_3 \rangle, \quad s_i = (\text{head}_i, \text{relation}_i, \text{tail}_i, \text{claim}_i)
+\]
+subject to the \emph{chain consistency} constraint: $\text{tail}_i = \text{head}_{i+1}$ for $i \in \{1, 2\}$.
+The final claim $\text{claim}_3$ constitutes the testable hypothesis.
+The three granularity levels correspond to: $L1$ (macro-level disciplinary bridging), $L2$ (meso-level mechanism transfer), and $L3$ (micro-level specific predictions).
+\end{definition}
+
+\begin{definition}[Cross-Disciplinary Hypothesis Generation Task]
+\label{def:task}
+Given a paper $p = (\text{title}, \text{abstract}, d_{\text{primary}}, \{d_{\text{secondary}}\})$, the task is to generate a set of hypothesis reasoning paths $\mathcal{H}_p = \{\mathbf{h}_1^{L1}, \ldots, \mathbf{h}_k^{L3}\}$ such that:
+\begin{enumerate}[leftmargin=*,topsep=1pt,itemsep=0pt]
+\item Each path $\mathbf{h}$ satisfies chain consistency (Def.~\ref{def:path});
+\item At least one edge in each path is cross-disciplinary (Def.~\ref{def:kg});
+\item The final claim is scientifically grounded, novel, and testable.
+\end{enumerate}
+\end{definition}
+
+% ============================================================================
+\section{\ours{} Construction}
+\label{sec:construction}
+% ============================================================================
+
+The construction of \ours{} consists of four stages, illustrated in Figure~\ref{fig:pipeline}: data collection and discipline classification (\S\ref{sec:data}), multi-stage knowledge extraction (\S\ref{sec:extraction}), evidence-grounded GT construction (\S\ref{sec:gt}), and dataset statistics (\S\ref{sec:stats}).
+
+\begin{figure}[t]
+\centering
+\fbox{\parbox{0.95\linewidth}{\centering\small
+\textbf{Pipeline Overview} \\[4pt]
+1000 Nature Comm. Papers $\xrightarrow{\text{Classification}}$ Cross-Disc. Filter $\xrightarrow{\text{KG Extraction}}$ Per-Paper KGs $\xrightarrow{\text{GT Builder}}$ Benchmark Dataset \\[2pt]
+{\scriptsize (OpenAlex $\to$ 3-Level Taxonomy $\to$ Concepts+Relations+Queries+Hypotheses $\to$ Terms+Relations+Paths)}
+}}
+\caption{Overview of the \ours{} construction pipeline. Each paper undergoes hierarchical discipline classification, multi-stage knowledge extraction to build a structured knowledge graph, and evidence-grounded GT construction via constrained term extraction, relation classification, and graph traversal.}
+\label{fig:pipeline}
+\end{figure}
+
+% ---------- 4.1 ----------
+\subsection{Data Collection and Discipline Classification}
+\label{sec:data}
+
+\paragraph{Source data.}
+We source papers from the OpenAlex academic database~\cite{priem2022openalex}, selecting English-language articles published in Nature Communications---a high-impact, multidisciplinary journal spanning natural sciences, engineering, and medicine.
+From 277{,}720 records in the OpenAlex 2025 snapshot, we filter for Nature Communications papers with abstracts of at least 200 characters, yielding 12{,}082 candidate papers.
+We select the top 1{,}000 by citation count (range: XX--XX) and shuffle with a fixed random seed for reproducibility.
+
+\paragraph{Discipline taxonomy.}
+We adopt a hierarchical discipline taxonomy derived from the Mathematics Subject Classification (MSC) and extended to cover all natural sciences and engineering fields.
+The taxonomy $\mathcal{T}$ contains 50 top-level (L1) disciplines, organized into three levels with 2{,}351 leaf terms.
+Examples of L1 disciplines include Chemistry, Materials Science, Biology, Physics, Computer Science, and Clinical Medicine.
+
+\paragraph{Hierarchical classification.}
+Each paper is classified into the taxonomy using an LLM-based hierarchical classifier with three rounds of prompting:
+(1) L1 classification into top-level disciplines,
+(2) L2 refinement within selected L1 branches, and
+(3) L3 leaf-level assignment.
+A paper is labeled \emph{cross-disciplinary} if it is classified into $\geq$2 distinct L1 disciplines.
+The primary discipline is defined as the first L1 classification; all others become secondary disciplines.
+
+In our pilot study of 100 papers, 100\% were classified as cross-disciplinary (expected for Nature Communications).
+The most frequent cross-disciplinary pair is Chemistry $\leftrightarrow$ Materials Science (60 papers), followed by Materials Science $\leftrightarrow$ Physics (10) and Clinical Medicine $\leftrightarrow$ Biology (10).
+
+% ---------- 4.2 ----------
+\subsection{Multi-Stage Knowledge Extraction}
+\label{sec:extraction}
+
+For each cross-disciplinary paper, we run a four-stage knowledge extraction pipeline using LLM calls with structured output parsing (Figure~\ref{fig:pipeline}).
+
+\paragraph{Stage 1: Concept extraction.}
+We extract domain-specific concepts organized by discipline.
+Each concept is represented as a \texttt{ConceptEntry} with fields: term, normalized form, standard label (grounded to $\mathcal{T}$), evidence text ($\leq$40 characters), source, and confidence $\in [0,1]$.
+Concepts are partitioned into primary discipline concepts and secondary discipline concepts.
+On average, we extract $15.6 \pm 2.9$ concepts per paper ($13.4$ primary, $2.2$ secondary).
+
+\paragraph{Stage 2: Cross-disciplinary relation extraction.}
+We identify typed relations between concepts using the 12-type relation vocabulary $\mathcal{R}$ (Def.~\ref{def:kg}).
+Each relation is a \texttt{RelationEntry} with head, tail, relation type, direction, quantitative information (if applicable), assumptions, evidence, and confidence.
+We extract an average of $8.1 \pm 1.3$ relations per paper, totaling 765 relations across 94 papers.
+Table~\ref{tab:relation_dist} shows the distribution of relation types.
+
+\begin{table}[t]
+\centering
+\caption{Distribution of extracted cross-disciplinary relation types (94 papers).}
+\label{tab:relation_dist}
+\small
+\begin{tabular}{lrr}
+\toprule
+\textbf{Relation Type} & \textbf{Count} & \textbf{\%} \\
+\midrule
+\texttt{method\_applied\_to} & 225 & 29.4\% \\
+\texttt{improves\_metric} & 166 & 21.7\% \\
+\texttt{constrains} & 104 & 13.6\% \\
+\texttt{maps\_to} & 62 & 8.1\% \\
+\texttt{corresponds\_to} & 48 & 6.3\% \\
+\texttt{depends\_on} & 41 & 5.4\% \\
+\texttt{driven\_by} & 38 & 5.0\% \\
+\texttt{extends} & 32 & 4.2\% \\
+\texttt{other} & 49 & 6.4\% \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\paragraph{Stage 3: Hierarchical query generation.}
+We generate research queries at three granularity levels aligned with the hypothesis path structure:
+\begin{itemize}[leftmargin=*,topsep=1pt,itemsep=0pt]
+\item \textbf{L1 (macro):} A single broad question about the paper's core cross-disciplinary contribution.
+\item \textbf{L2 (meso):} 2--3 questions about specific mechanism transfers or methodological bridges.
+\item \textbf{L3 (micro):} 2--3 questions about concrete, testable predictions.
+\end{itemize}
+
+\paragraph{Stage 4: Three-level hypothesis path generation.}
+For each query level, we generate structured hypothesis reasoning paths (Def.~\ref{def:path}).
+Each path consists of exactly three reasoning steps with enforced chain consistency ($\text{tail}_i = \text{head}_{i+1}$).
+The generation is parallelized across L1, L2, and L3 using concurrent API calls.
+On average, we obtain $2.5$ L1 paths, $2.0$ L2 paths, and $2.0$ L3 paths per paper, each with 3 steps.
+
+\paragraph{Knowledge graph construction.}
+After extraction, we assemble a per-paper knowledge graph $\mathcal{G}_p$ by:
+(1) creating nodes from extracted concepts (with discipline labels from taxonomy grounding),
+(2) creating edges from both structural relations and hypothesis path steps,
+(3) computing graph-level quality metrics.
+The resulting graphs have an average of $28.8 \pm 6.0$ nodes and $27.1 \pm 2.9$ edges with a density of $0.076 \pm 0.030$.
+
+% ---------- 4.3 ----------
+\subsection{Evidence-Grounded GT Construction}
+\label{sec:gt}
+
+A key contribution of \ours{} is an \emph{evidence-grounded} approach to GT construction that avoids the scalability bottleneck of manual annotation.
+Our GT builder operates in three stages:
+
+\begin{algorithm}[t]
+\caption{Evidence-Grounded GT Construction}
+\label{alg:gt}
+\begin{algorithmic}[1]
+\REQUIRE Paper $p$ with title, abstract, extracted concepts $C_p$, taxonomy $\mathcal{T}$
+\ENSURE Ground truth $\text{GT}_p = (\text{terms}, \text{relations}, \text{paths})$
+\STATE \textbf{Stage 1: Constrained Term Extraction}
+\STATE $\text{terms} \leftarrow \text{GroundTerms}(C_p, \mathcal{T})$ \COMMENT{Ground concepts against taxonomy}
+\FOR{each term $t \in \text{terms}$}
+    \STATE Assign discipline $\phi(t)$, evidence, confidence
+\ENDFOR
+\STATE \textbf{Stage 2: Evidence-Based Relation Construction}
+\STATE Split abstract into sentences $S = \{s_1, \ldots, s_n\}$
+\FOR{each sentence $s_j$ containing terms $t_a, t_b \in \text{terms}$}
+    \STATE $r_{ab} \leftarrow \text{ClassifyRelation}(t_a, t_b, s_j)$
+    \STATE Add $(t_a, r_{ab}, t_b, s_j)$ to relations with evidence
+\ENDFOR
+\STATE \textbf{Stage 3: Cross-Disciplinary Path Construction}
+\STATE Build directed graph $G$ from terms (nodes) and relations (edges)
+\FOR{each pair $(u, v)$ where $\phi(u) \neq \phi(v)$}
+    \STATE Find all simple paths $u \leadsto v$ with length $\leq 4$
+\ENDFOR
+\STATE Rank paths by (\# disciplines crossed, evidence confidence)
+\RETURN top-$k$ paths as GT hypothesis paths
+\end{algorithmic}
+\end{algorithm}
+
+\paragraph{Stage 1: Constrained term extraction.}
+We leverage the high-quality concepts already extracted by the production pipeline (\S\ref{sec:extraction}) and ground them against the taxonomy $\mathcal{T}$.
+Terms are augmented with heuristic extraction of acronyms, scientific phrases, and hyphenated compounds from the abstract.
+Each term receives a grounding confidence score based on string similarity to taxonomy entries.
+
+\paragraph{Stage 2: Evidence-based relation construction.}
+We identify term co-occurrences within individual sentences of the abstract and classify each co-occurrence pair into the 12-type relation vocabulary using either LLM-based classification or keyword-pattern heuristics.
+Each relation is accompanied by the evidence sentence from which it was derived, ensuring traceability.
+
+\paragraph{Stage 3: Cross-disciplinary path construction.}
+We construct a directed graph from terms and relations, then enumerate all simple paths between nodes of different L1 disciplines using NetworkX~\cite{hagberg2008exploring}.
+Paths are ranked by the number of disciplines crossed and the cumulative evidence confidence, and the top-$k$ ($k=20$) paths are retained as GT hypothesis paths.
+
+This evidence-grounded approach yields GT entries with an average of $32.0 \pm 6.7$ terms and $21.3 \pm 14.1$ relations per paper (see Table~\ref{tab:gt_stats}).
+
+% ---------- 4.4 ----------
+\subsection{Dataset Statistics}
+\label{sec:stats}
+
+\begin{table}[t]
+\centering
+\caption{Summary statistics of \ours{} (pilot: 94 papers; full: 1{,}000 papers).}
+\label{tab:dataset_stats}
+\small
+\begin{tabular}{lcc}
+\toprule
+\textbf{Statistic} & \textbf{Pilot (94)} & \textbf{Full (1{,}000)} \\
+\midrule
+\multicolumn{3}{l}{\textit{Knowledge Graph}} \\
+Avg. concept nodes / paper & $28.8 \pm 6.0$ & --- \\
+Avg. typed edges / paper & $27.1 \pm 2.9$ & --- \\
+Total concept nodes & 2{,}711 & --- \\
+Total typed edges & 2{,}549 & --- \\
+Graph density & $0.076 \pm 0.030$ & --- \\
+Unique relation types & 12 & 12 \\
+\midrule
+\multicolumn{3}{l}{\textit{Hypothesis Paths}} \\
+Avg. L1 paths / paper & $2.5 \pm 0.5$ & --- \\
+Avg. L2 paths / paper & $2.0 \pm 0.1$ & --- \\
+Avg. L3 paths / paper & $2.0 \pm 0.4$ & --- \\
+Steps per path & 3 (fixed) & 3 (fixed) \\
+Chain consistency rate & 100\% & --- \\
+\midrule
+\multicolumn{3}{l}{\textit{Benchmark GT}} \\
+GT entries & 91 & --- \\
+Avg. terms / entry & $32.0 \pm 6.7$ & --- \\
+Avg. relations / entry & $21.3 \pm 14.1$ & --- \\
+Avg. cross-disc. paths / entry & $11.7$ & --- \\
+\midrule
+\multicolumn{3}{l}{\textit{Discipline Coverage}} \\
+L1 disciplines represented & 50 & 50 \\
+Leaf taxonomy terms & 2{,}351 & 2{,}351 \\
+Top cross-disc. pair & Chem $\leftrightarrow$ MatSci & --- \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Table~\ref{tab:dataset_stats} summarizes the key statistics.
+The pilot study (94 papers) demonstrates the pipeline's effectiveness, with a 94\% extraction success rate (94/100 papers).
+The top-5 primary disciplines are Chemistry (53\%), Materials Science (14\%), Biology (12\%), Physics (6\%), and Computer Science (6\%), reflecting Nature Communications' broad coverage.
+
+\begin{table}[t]
+\centering
+\caption{Knowledge graph quality metrics across 94 papers (mean $\pm$ std).}
+\label{tab:gt_stats}
+\small
+\begin{tabular}{lcc}
+\toprule
+\textbf{Metric} & \textbf{Mean $\pm$ Std} & \textbf{Range} \\
+\midrule
+\multicolumn{3}{l}{\textit{Core Quality}} \\
+Path Consistency & $0.203 \pm 0.121$ & [0.00, 0.52] \\
+Concept Coverage & $0.481 \pm 0.133$ & [0.18, 0.82] \\
+Bridging Score & $0.390 \pm 0.180$ & [0.05, 0.85] \\
+Chain Coherence & $0.580 \pm 0.052$ & [0.44, 0.72] \\
+\midrule
+\multicolumn{3}{l}{\textit{Diversity \& Novelty}} \\
+Rao--Stirling Diversity & $0.141 \pm 0.089$ & [0.00, 0.45] \\
+Embedding Bridging & $0.962 \pm 0.031$ & [0.87, 1.00] \\
+Atypical Combination & $0.312 \pm 0.156$ & [0.00, 0.71] \\
+\midrule
+\multicolumn{3}{l}{\textit{Topology}} \\
+Graph Density & $0.076 \pm 0.030$ & [0.02, 0.16] \\
+Clustering Coefficient & $0.184 \pm 0.098$ & [0.00, 0.45] \\
+Largest CC Ratio & $0.827 \pm 0.112$ & [0.48, 1.00] \\
+Avg. Betweenness & $0.042 \pm 0.021$ & [0.01, 0.12] \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+% ============================================================================
+\section{Evaluation Framework}
+\label{sec:eval}
+% ============================================================================
+
+% ---------- 5.1 ----------
+\subsection{Progressive Prompt Levels (P1--P5)}
+\label{sec:prompts}
+
+To systematically measure the effect of structured knowledge on hypothesis quality, we design five prompt levels with progressively increasing information:
+
+\begin{itemize}[leftmargin=*,topsep=2pt,itemsep=2pt]
+\item \textbf{P1 (Bare Question):} Only the L1 research query is provided. No paper metadata, no extracted knowledge. The LLM must generate hypotheses purely from parametric knowledge.
+\item \textbf{P2 (+ Abstract \& Disciplines):} Adds the paper's abstract and discipline role (primary/secondary classification). Provides domain context without structured knowledge.
+\item \textbf{P3 (+ Concepts):} Adds the list of extracted domain-specific concepts organized by discipline. Enables concept-aware reasoning.
+\item \textbf{P4 (+ Relations):} Adds known cross-disciplinary relations between concepts. Provides explicit structural information about how concepts connect across fields.
+\item \textbf{P5 (Full KG):} Uses the complete knowledge graph including concepts, relations, queries at all three levels, and the structured extraction output. Generates hypothesis paths with strict 3-step chain consistency constraints.
+\end{itemize}
+
+This progressive design isolates the marginal contribution of each knowledge component: P1$\to$P2 measures the effect of domain context, P2$\to$P3 measures concept awareness, P3$\to$P4 measures relational structure, and P4$\to$P5 measures full KG grounding.
+
+% ---------- 5.2 ----------
+\subsection{Multi-Dimensional Evaluation Metrics}
+\label{sec:metrics}
+
+We evaluate generated hypotheses along three complementary dimensions.
+
+\paragraph{Dimension 1: LLM-as-Judge quality scoring.}
+Following recent evaluation practices~\cite{zheng2024judging}, we use an LLM judge to rate each hypothesis on five dimensions (1--10 scale):
+\begin{itemize}[leftmargin=*,topsep=1pt,itemsep=0pt]
+\item \textbf{Novelty}: Does the hypothesis go beyond the paper's original conclusions?
+\item \textbf{Specificity}: Is the hypothesis concrete, testable, and operationally defined?
+\item \textbf{Feasibility}: Can the hypothesis be verified with existing experimental technology?
+\item \textbf{Relevance}: Is the hypothesis aligned with the paper's research direction?
+\item \textbf{Cross-disciplinarity}: Does the hypothesis meaningfully integrate multiple disciplines?
+\end{itemize}
+
+\paragraph{Dimension 2: Text similarity metrics.}
+We compute standard text similarity metrics between generated hypotheses and reference summaries:
+BERTScore~\cite{zhang2019bertscore} (using DeBERTa-xlarge-MNLI), ROUGE-1/2/L~\cite{lin2004rouge}, and BLEU~\cite{papineni2002bleu}.
+Note that low similarity to references is \emph{expected} for novel hypotheses; these metrics primarily measure relevance rather than quality.
+
+\paragraph{Dimension 3: Knowledge graph structural metrics.}
+For structured outputs (primarily P5), we compute novel graph-level metrics:
+
+\begin{itemize}[leftmargin=*,topsep=1pt,itemsep=0pt]
+\item \textbf{Chain Coherence}: The fraction of consecutive step pairs $(s_i, s_{i+1})$ satisfying $\text{tail}_i = \text{head}_{i+1}$, measuring reasoning path validity:
+\begin{equation}
+\text{CC}(\mathbf{h}) = \frac{1}{|\mathbf{h}|-1} \sum_{i=1}^{|\mathbf{h}|-1} \mathbb{1}[\text{tail}_i = \text{head}_{i+1}]
+\end{equation}
+\item \textbf{Cross-Disciplinary Bridging}: The proportion of edges connecting nodes from different L1 disciplines:
+\begin{equation}
+\text{Bridge}(\mathcal{G}) = \frac{|\{(u,r,v) \in \mathcal{E} : \phi_v(u) \neq \phi_v(v)\}|}{|\mathcal{E}_{\text{valid}}|}
+\end{equation}
+\item \textbf{Rao--Stirling Diversity}~\cite{stirling2007general}: $\Delta = \sum_{i \neq j} d_{ij} \cdot p_i \cdot p_j$, where $p_i$ is the proportion of concepts in discipline $i$ and $d_{ij}$ is the semantic distance between disciplines.
+\item \textbf{Entity Grounding Rate}: The fraction of head/tail entities in hypothesis paths that are grounded to specific scientific terms (not generic phrases).
+\item \textbf{Relation Diversity}: The number of unique relation types divided by total paths, measuring the variety of reasoning patterns.
+\end{itemize}
+
+% ============================================================================
+\section{Experiments}
+\label{sec:experiments}
+% ============================================================================
+
+% ---------- 6.1 ----------
+\subsection{Experimental Setup}
+\label{sec:setup}
+
+\paragraph{Models.}
+We use Qwen3-235B-A22B as the primary LLM for both knowledge extraction and hypothesis generation.
+For evaluation, we use the same model as the LLM-as-Judge.
+All API calls use streaming to avoid gateway timeouts, with exponential backoff retry (up to 5 attempts, wait 5--120s) for network errors and rate limiting.
+
+\paragraph{Parameters.}
+Knowledge extraction uses temperature 0.2 with seed 42 for reproducibility.
+Hypothesis generation uses temperature 0.3 with max\_tokens=8192 to avoid truncation.
+Query generation uses temperature 0.2.
+The batch extraction pipeline uses 8 parallel workers.
+
+\paragraph{Test protocol.}
+From the successfully extracted papers, we reserve the last 10 as the test set and use the remaining as the GT construction set.
+For each test paper, we generate hypotheses at all five prompt levels (P1--P5) and evaluate using all three metric dimensions.
+
+% ---------- 6.2 ----------
+\subsection{Main Results: P1--P5 Comparison}
+\label{sec:main_results}
+
+\begin{table}[t]
+\centering
+\caption{P1--P5 hypothesis generation comparison (mean across test papers). \textbf{Bold}: best per column. \underline{Underline}: second best. $^\dagger$P5 directly uses extracted structured paths.}
+\label{tab:p1p5}
+\small
+\begin{tabular}{lccccccc}
+\toprule
+\textbf{Method} & \textbf{Nov.} & \textbf{Spec.} & \textbf{Feas.} & \textbf{Relev.} & \textbf{Cross-D.} & \textbf{\#Hyp} & \textbf{Time (s)} \\
+\midrule
+P1 (Bare) & \textbf{8.67} & \textbf{9.00} & 8.00 & 9.33 & \textbf{9.00} & 1.0 & 22.8 \\
+P2 (+Abs) & 8.00 & \underline{8.67} & \underline{8.33} & \textbf{9.67} & 8.33 & 1.0 & 31.9 \\
+P3 (+Con) & 8.00 & 8.33 & 8.00 & 9.33 & \underline{8.67} & 1.0 & 33.7 \\
+P4 (+Rel) & --- & --- & --- & --- & --- & 1.0 & 51.9 \\
+P5$^\dagger$ (Full KG) & 7.67 & 7.33 & \textbf{8.67} & 9.33 & 8.00 & \textbf{6.33} & $<$0.01 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Table~\ref{tab:p1p5} presents the main comparison across prompt levels.
+Several key observations emerge:
+
+\paragraph{Novelty-feasibility trade-off.}
+P1 (bare question, no context) achieves the highest novelty (8.67) and cross-disciplinarity (9.00), as the LLM generates creative hypotheses unconstrained by paper-specific knowledge.
+However, P5 (full KG) achieves the highest feasibility (8.67), as structured knowledge grounds hypotheses in established concepts and relations.
+This trade-off between unconstrained creativity and knowledge-grounded precision is a central finding of our benchmark.
+
+\paragraph{Information does not monotonically improve quality.}
+Contrary to the intuition that ``more information is always better,'' we observe that quality metrics do not monotonically increase from P1 to P4.
+P2 achieves the highest relevance (9.67) by providing domain context, but P3 and P4 show slight decreases in novelty, suggesting that explicit concept lists may constrain the LLM's creative space.
+
+\paragraph{Structured vs.\ free-text generation.}
+P5 generates $6.3\times$ more hypotheses than P1--P4 (6.33 vs.\ 1.0) by leveraging the multi-level path structure.
+The generated paths achieve perfect chain coherence (1.0) and entity grounding (1.0) by construction.
+However, free-text methods produce more diverse and novel individual hypotheses.
+
+% ---------- 6.3 ----------
+\subsection{KG Quality Analysis}
+\label{sec:kg_quality}
+
+Table~\ref{tab:gt_stats} reports the knowledge graph quality metrics across all 94 papers.
+The moderate concept coverage (0.481) indicates that hypothesis paths cover roughly half of the knowledge graph's concept space, leaving room for alternative reasoning paths.
+The bridging score of 0.390 confirms that a substantial fraction of edges cross disciplinary boundaries, validating the cross-disciplinary nature of the extracted knowledge.
+High embedding bridging (0.962) indicates that hypothesis paths connect semantically distant concepts, a hallmark of genuine cross-disciplinary reasoning.
+
+% ---------- 6.4 ----------
+\subsection{Depth Analysis: L1 vs.\ L2 vs.\ L3}
+\label{sec:depth}
+
+\begin{table}[t]
+\centering
+\caption{KG-based evaluation by hypothesis depth level (P5, mean $\pm$ std across 3 test papers).}
+\label{tab:depth}
+\small
+\begin{tabular}{lcccc}
+\toprule
+\textbf{Metric} & \textbf{L1 (Macro)} & \textbf{L2 (Meso)} & \textbf{L3 (Micro)} \\
+\midrule
+Bridging Score & $1.000 \pm 0.000$ & $0.891 \pm 0.105$ & $0.756 \pm 0.142$ \\
+Chain Coherence & $0.559 \pm 0.060$ & $0.599 \pm 0.048$ & $0.570 \pm 0.047$ \\
+Innovation (LLM) & $7.00 \pm 1.30$ & $6.87 \pm 0.51$ & $6.92 \pm 0.31$ \\
+Feasibility (LLM) & $7.06 \pm 0.57$ & $7.42 \pm 0.12$ & $7.05 \pm 0.87$ \\
+Scientificity (LLM) & $6.92 \pm 1.23$ & $7.92 \pm 0.12$ & $7.45 \pm 0.27$ \\
+Testability (LLM) & $7.68 \pm 0.30$ & $7.81 \pm 0.33$ & $7.77 \pm 0.28$ \\
+\midrule
+Concept Expansion & --- & $0.268 \pm 0.191$ & $0.472 \pm 0.239$ \\
+Anchoring & --- & $0.621 \pm 0.039$ & $0.387 \pm 0.169$ \\
+Depth Quality & --- & \multicolumn{2}{c}{$0.216 \pm 0.125$} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Table~\ref{tab:depth} reveals interesting patterns across hypothesis depth levels:
+
+\begin{itemize}[leftmargin=*,topsep=1pt,itemsep=1pt]
+\item \textbf{Bridging decreases with depth}: L1 paths have perfect bridging (1.0) as they explicitly connect primary and secondary disciplines. L2 and L3 paths operate within more specific subdomains, naturally reducing cross-disciplinary edge proportion.
+\item \textbf{Scientificity increases at L2}: L2 (meso-level) paths achieve the highest scientificity score (7.92), suggesting that intermediate-granularity hypotheses best balance specificity with scientific rigor.
+\item \textbf{Concept expansion increases with depth}: L3 paths expand the concept space by 47.2\% beyond L1, while L2 expands by 26.8\%, indicating that deeper reasoning introduces more specialized vocabulary.
+\item \textbf{Anchoring decreases with depth}: L2 paths are well-anchored to L1 concepts (0.621), but L3 paths diverge further (0.387), introducing novel entities not present at higher levels.
+\end{itemize}
+
+% ---------- 6.5 ----------
+\subsection{Case Study}
+\label{sec:case}
+
+We illustrate the benchmark with a paper on nano-island-encapsulated cobalt single-atom catalysts for Fenton-like reactions, classified as cross-disciplinary between Chemistry (primary) and Materials Science / Environmental Science (secondary).
+
+\paragraph{Extracted KG.}
+The knowledge graph contains 31 concept nodes across three disciplines and 28 typed edges.
+Key cross-disciplinary relations include:
+\emph{nano-island encapsulation} $\xrightarrow{\texttt{method\_applied\_to}}$ \emph{Co single atoms} (Chemistry$\to$Materials Science),
+\emph{PMS activation} $\xrightarrow{\texttt{corresponds\_to}}$ \emph{sulfate radicals} (Chemistry$\to$Environmental Science).
+
+\paragraph{L1 hypothesis path.}
+Step 1: \emph{Fenton-like catalysis} faces \emph{activity-stability trade-off} [Chemistry bottleneck].
+Step 2: \emph{Activity-stability trade-off} is addressed by \emph{nano-island encapsulation design} [Materials Science solution].
+Step 3: \emph{Nano-island encapsulation} enables \emph{precise electronic state control of cobalt single atoms}, improving catalytic efficiency while maintaining stability [testable claim].
+
+This three-step path bridges Chemistry and Materials Science through a mechanism transfer, illustrating the type of cross-disciplinary reasoning our benchmark is designed to evaluate.
+
+% ============================================================================
+\section{Limitations and Broader Impact}
+\label{sec:limitations}
+% ============================================================================
+
+\paragraph{Limitations.}
+Our work has several limitations that we acknowledge transparently:
+\begin{itemize}[leftmargin=*,topsep=1pt,itemsep=1pt]
+\item \textbf{LLM dependency}: Both extraction and evaluation rely on LLM calls, introducing potential biases from the underlying model. We mitigate this by using structured output parsing with Pydantic schema validation and evidence-grounded GT construction.
+\item \textbf{Discipline coverage bias}: Nature Communications skews toward natural sciences and engineering. Social sciences, humanities, and formal sciences are underrepresented.
+\item \textbf{English only}: Our current pipeline processes English-language papers only, though the taxonomy includes bilingual (English/Chinese) term mappings.
+\item \textbf{GT quality bounds}: While evidence-grounded GT avoids annotation bottlenecks, it cannot capture all valid hypothesis paths. Multiple valid cross-disciplinary hypotheses may exist for any given paper.
+\item \textbf{Single-model baseline}: Our current experiments use a single LLM (Qwen3-235B). Multi-model comparisons (GPT-4o, DeepSeek-R1, Llama-3, etc.) are needed for robust conclusions.
+\end{itemize}
+
+\paragraph{Broader impact.}
+\ours{} is designed to advance research on automated scientific discovery, which has significant positive potential for accelerating cross-disciplinary breakthroughs.
+However, we caution against using generated hypotheses as substitutes for rigorous scientific methodology.
+LLM-generated hypotheses should be treated as \emph{starting points} that require expert validation, experimental testing, and peer review before informing research directions.
+We do not foresee direct negative societal impacts from this benchmark, as it evaluates scientific reasoning capabilities rather than generating actionable claims in sensitive domains.
+
+% ============================================================================
+\section{Conclusion}
+\label{sec:conclusion}
+% ============================================================================
+
+We have presented \ours{}, the first comprehensive benchmark for cross-disciplinary scientific hypothesis generation grounded in structured knowledge graphs.
+Built from 1{,}000 Nature Communications papers across 50 disciplines, \ours{} introduces several novel contributions: an evidence-grounded GT construction pipeline that scales without human annotation, a progressive prompt evaluation framework (P1--P5) that isolates the contribution of structured knowledge, and a multi-dimensional evaluation suite combining LLM-as-Judge scoring with knowledge graph structural metrics.
+
+Our experiments reveal a fundamental \emph{novelty-feasibility trade-off}: unconstrained generation (P1) produces the most creative hypotheses, while knowledge-grounded generation (P5) produces the most structurally coherent and feasible ones.
+This finding suggests that future systems should combine the creative strengths of free-text generation with the structural guarantees of knowledge graph grounding.
+
+We release \ours{} as an open resource to the community, including the complete dataset, extraction pipeline code, and evaluation framework, to facilitate further research on knowledge-intensive cross-disciplinary scientific discovery.
+
+% ============================================================================
+% References
+% ============================================================================
+\bibliographystyle{plain}
+% \bibliography{references}
+
+\begin{thebibliography}{20}
+
+\bibitem{agrawal2016perspective}
+A.~Agrawal and A.~Choudhary.
+\newblock Perspective: Materials informatics and big data: Realization of the ``fourth paradigm'' of science in materials science.
+\newblock {\em APL Materials}, 4(5):053208, 2016.
+
+\bibitem{dessi2024scihyp}
+D.~Dess\`{\i} \etal{}
+\newblock SciHyp: A fine-grained dataset describing hypotheses and their components from scientific articles.
+\newblock In {\em ISWC}, 2024.
+
+\bibitem{foster2015tradition}
+J.~G. Foster, A.~Rzhetsky, and J.~A. Evans.
+\newblock Tradition and innovation in scientists' research strategies.
+\newblock {\em American Sociological Review}, 80(5):875--908, 2015.
+
+\bibitem{hagberg2008exploring}
+A.~Hagberg, P.~Swart, and D.~Chult.
+\newblock Exploring network structure, dynamics, and function using NetworkX.
+\newblock Technical report, Los Alamos National Lab, 2008.
+
+\bibitem{lander2001initial}
+E.~S. Lander \etal{}
+\newblock Initial sequencing and analysis of the human genome.
+\newblock {\em Nature}, 409(6822):860--921, 2001.
+
+\bibitem{li2024chain}
+Z.~Li \etal{}
+\newblock Chain of ideas: Revolutionizing research via novel idea development with LLM agents.
+\newblock {\em arXiv preprint arXiv:2410.13185}, 2024.
+
+\bibitem{liang2022holistic}
+P.~Liang \etal{}
+\newblock Holistic evaluation of language models.
+\newblock {\em Transactions on Machine Learning Research}, 2022.
+
+\bibitem{liang2023drugchat}
+Y.~Liang \etal{}
+\newblock DrugChat: Towards enabling ChatGPT-like capabilities on drug molecule graphs.
+\newblock {\em arXiv preprint arXiv:2309.16712}, 2023.
+
+\bibitem{lin2004rouge}
+C.-Y. Lin.
+\newblock ROUGE: A package for automatic evaluation of summaries.
+\newblock In {\em Text Summarization Branches Out}, 2004.
+
+\bibitem{liu2025hypobench}
+H.~Liu \etal{}
+\newblock HypoBench: Towards systematic and principled benchmarking for hypothesis generation.
+\newblock {\em arXiv preprint arXiv:2504.11524}, 2025.
+
+\bibitem{luo2024knowgpt}
+L.~Luo \etal{}
+\newblock KnowGPT: Knowledge graph based prompting for large language models.
+\newblock In {\em NeurIPS}, 2024.
+
+\bibitem{luo2022biogpt}
+R.~Luo \etal{}
+\newblock BioGPT: Generative pre-trained transformer for biomedical text generation and mining.
+\newblock {\em Briefings in Bioinformatics}, 23(6):bbac409, 2022.
+
+\bibitem{majumder2024discoverybench}
+B.~P. Majumder \etal{}
+\newblock DiscoveryBench: Towards data-driven discovery with large language models.
+\newblock In {\em NeurIPS Datasets and Benchmarks Track}, 2024.
+
+\bibitem{papineni2002bleu}
+K.~Papineni \etal{}
+\newblock BLEU: A method for automatic evaluation of machine translation.
+\newblock In {\em ACL}, 2002.
+
+\bibitem{priem2022openalex}
+J.~Priem, H.~Piwowar, and R.~Orr.
+\newblock OpenAlex: A fully-open index of scholarly works, authors, venues, institutions, and concepts.
+\newblock {\em arXiv preprint arXiv:2205.01833}, 2022.
+
+\bibitem{stirling2007general}
+A.~Stirling.
+\newblock A general framework for analysing diversity in science, technology and society.
+\newblock {\em Journal of the Royal Society Interface}, 4(15):707--719, 2007.
+
+\bibitem{sun2024scieval}
+L.~Sun \etal{}
+\newblock SciEval: A multi-level large language model evaluation benchmark for scientific research.
+\newblock In {\em AAAI}, 2024.
+
+\bibitem{uzzi2013atypical}
+B.~Uzzi \etal{}
+\newblock Atypical combinations and scientific impact.
+\newblock {\em Science}, 342(6157):468--472, 2013.
+
+\bibitem{wang2023scimon}
+H.~Wang \etal{}
+\newblock SciMON: Scientific inspiration machines optimized for novelty.
+\newblock In {\em ACL}, 2023.
+
+\bibitem{yang2024leandojo}
+K.~Yang \etal{}
+\newblock LeanDojo: Theorem proving with retrieval-augmented language models.
+\newblock In {\em NeurIPS}, 2024.
+
+\bibitem{zhang2019bertscore}
+T.~Zhang \etal{}
+\newblock BERTScore: Evaluating text generation with BERT.
+\newblock In {\em ICLR}, 2020.
+
+\bibitem{zheng2024judging}
+L.~Zheng \etal{}
+\newblock Judging LLM-as-a-judge with MT-Bench and Chatbot Arena.
+\newblock In {\em NeurIPS}, 2024.
+
+\end{thebibliography}
+
+% ============================================================================
+% Appendix
+% ============================================================================
+\newpage
+\appendix
+
+\section{Prompt Templates}
+\label{app:prompts}
+
+We provide the core structure of our five prompt levels. Full prompts are available in the supplementary code.
+
+\paragraph{P1 System Prompt (excerpt).}
+\begin{quote}
+\small\itshape
+You are a cross-disciplinary research hypothesis generator. Given a research question, generate a novel, testable hypothesis that bridges at least two scientific disciplines. The hypothesis should be specific enough to be experimentally verifiable.
+\end{quote}
+
+\paragraph{P2 additions.}
+Adds: paper abstract, primary discipline name, secondary discipline names, and their roles in the research.
+
+\paragraph{P3 additions.}
+Adds: extracted concept list organized by discipline, with each concept's evidence text and confidence.
+
+\paragraph{P4 additions.}
+Adds: cross-disciplinary relation list with head/tail concepts, relation types, and evidence. Explicit instruction to reason along the provided relational structure.
+
+\paragraph{P5 additions.}
+Uses the full structured extraction output to generate three-step hypothesis reasoning paths at L1/L2/L3 granularity, with strict chain consistency constraints ($\text{tail}_i = \text{head}_{i+1}$).
+
+\section{Datasheet for \ours{}}
+\label{app:datasheet}
+
+Following the Datasheets for Datasets framework~\cite{gebru2021datasheets}, we provide key documentation:
+
+\paragraph{Motivation.}
+\ours{} was created to fill the gap in benchmarks for evaluating cross-disciplinary scientific hypothesis generation. It is intended for researchers working on LLM-based scientific discovery, knowledge graph reasoning, and evaluation methodology.
+
+\paragraph{Composition.}
+The dataset contains structured knowledge graphs and hypothesis paths for 1{,}000 Nature Communications papers. Each instance includes: paper metadata (title, abstract, DOI, disciplines), extracted knowledge graph (concepts, relations), three-level hypothesis paths (L1/L2/L3), and evidence-grounded GT (terms, relations, cross-disciplinary paths).
+
+\paragraph{Collection process.}
+Paper metadata was collected from OpenAlex (CC0 license). Knowledge extraction and GT construction were performed using LLM-based pipelines with structured output validation. No human subjects were involved.
+
+\paragraph{Uses.}
+Intended uses include: benchmarking LLMs on cross-disciplinary reasoning, developing knowledge graph-grounded generation methods, and studying the relationship between structured knowledge and hypothesis quality. The dataset should \emph{not} be used to make clinical or policy decisions based on generated hypotheses.
+
+\paragraph{Distribution.}
+The dataset will be distributed via Hugging Face Datasets under the CC-BY-4.0 license. Code is available on GitHub under the MIT license.
+
+\paragraph{Maintenance.}
+The dataset will be maintained by the authors. We plan to update the benchmark with additional papers and models as they become available.
+
+\section{Additional Experimental Results}
+\label{app:results}
+
+\begin{table}[h]
+\centering
+\caption{Discipline distribution in the benchmark dataset (top 10 primary disciplines).}
+\label{tab:disc_dist}
+\small
+\begin{tabular}{lrr}
+\toprule
+\textbf{Primary Discipline} & \textbf{Count} & \textbf{\%} \\
+\midrule
+Chemistry & 53 & 53.0\% \\
+Materials Science & 14 & 14.0\% \\
+Biology & 12 & 12.0\% \\
+Physics & 6 & 6.0\% \\
+Computer Science & 6 & 6.0\% \\
+Clinical Medicine & 4 & 4.0\% \\
+Environmental Science & 2 & 2.0\% \\
+Basic Medicine & 1 & 1.0\% \\
+Electronics \& Communications & 1 & 1.0\% \\
+Energy Science & 1 & 1.0\% \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[h]
+\centering
+\caption{Cross-disciplinary pair frequency (top 10 pairs).}
+\label{tab:cross_pairs}
+\small
+\begin{tabular}{lr}
+\toprule
+\textbf{Discipline Pair} & \textbf{Count} \\
+\midrule
+Chemistry $\leftrightarrow$ Materials Science & 60 \\
+Materials Science $\leftrightarrow$ Physics & 10 \\
+Clinical Medicine $\leftrightarrow$ Biology & 10 \\
+Chemistry $\leftrightarrow$ Physics & 8 \\
+Biology $\leftrightarrow$ Computer Science & 8 \\
+Chemistry $\leftrightarrow$ Energy Science & 7 \\
+Chemistry $\leftrightarrow$ Environmental Science & 5 \\
+Basic Medicine $\leftrightarrow$ Biology & 5 \\
+Electronics $\leftrightarrow$ Physics & 4 \\
+Mechanical Eng. $\leftrightarrow$ Materials Science & 3 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\end{document}

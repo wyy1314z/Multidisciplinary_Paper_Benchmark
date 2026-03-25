@@ -1,0 +1,1442 @@
+{
+  "per_paper": [
+    {
+      "tag": "paper_0",
+      "paper": {
+        "title": "AlphaFold prediction of structural ensembles of disordered proteins",
+        "primary_discipline": "生物学"
+      },
+      "evaluations": [
+        {
+          "method": "IdeaBench",
+          "elapsed": 29.2,
+          "hypothesis_length": 727,
+          "error": false,
+          "rouge": {
+            "rouge1": 0.3091,
+            "rouge2": 0.0734,
+            "rougeL": 0.1364
+          },
+          "llm_judge": {
+            "novelty": 8.0,
+            "specificity": 9.0,
+            "feasibility": 8.0,
+            "relevance": 10.0,
+            "cross_disciplinary": 8.0
+          }
+        },
+        {
+          "method": "VanillaLLM",
+          "elapsed": 36.2,
+          "hypothesis_length": 3536,
+          "error": false,
+          "rouge": {
+            "rouge1": 0.281,
+            "rouge2": 0.0623,
+            "rougeL": 0.1387
+          },
+          "llm_judge": {
+            "novelty": 8.0,
+            "specificity": 8.0,
+            "feasibility": 7.0,
+            "relevance": 9.0,
+            "cross_disciplinary": 8.0
+          }
+        },
+        {
+          "method": "AI-Scientist",
+          "elapsed": 61.6,
+          "hypothesis_length": 3238,
+          "error": false,
+          "rouge": {
+            "rouge1": 0.2556,
+            "rouge2": 0.0642,
+            "rougeL": 0.1241
+          },
+          "llm_judge": {}
+        },
+        {
+          "method": "SciMON",
+          "elapsed": 108.2,
+          "hypothesis_length": 2834,
+          "error": false,
+          "rouge": {
+            "rouge1": 0.2888,
+            "rouge2": 0.0476,
+            "rougeL": 0.1293
+          },
+          "llm_judge": {
+            "novelty": 9.0,
+            "specificity": 8.0,
+            "feasibility": 7.0,
+            "relevance": 8.0,
+            "cross_disciplinary": 9.0
+          }
+        },
+        {
+          "method": "MOOSE-Chem",
+          "elapsed": 118.4,
+          "hypothesis_length": 3583,
+          "error": false,
+          "rouge": {
+            "rouge1": 0.2643,
+            "rouge2": 0.0489,
+            "rougeL": 0.1148
+          },
+          "llm_judge": {
+            "novelty": 9.0,
+            "specificity": 8.0,
+            "feasibility": 7.0,
+            "relevance": 8.0,
+            "cross_disciplinary": 9.0
+          }
+        },
+        {
+          "method": "SciAgents",
+          "elapsed": 158.1,
+          "hypothesis_length": 4483,
+          "error": false,
+          "rouge": {
+            "rouge1": 0.1883,
+            "rouge2": 0.0217,
+            "rougeL": 0.0926
+          },
+          "llm_judge": {
+            "novelty": 8.0,
+            "specificity": 9.0,
+            "feasibility": 8.0,
+            "relevance": 10.0,
+            "cross_disciplinary": 8.0
+          }
+        },
+        {
+          "method": "P1",
+          "elapsed": 30.1,
+          "hypothesis_length": 1733,
+          "error": false,
+          "rouge": {
+            "rouge1": 0.2663,
+            "rouge2": 0.0342,
+            "rougeL": 0.119
+          },
+          "llm_judge": {
+            "novelty": 8.0,
+            "specificity": 9.0,
+            "feasibility": 8.0,
+            "relevance": 9.0,
+            "cross_disciplinary": 9.0
+          }
+        },
+        {
+          "method": "P2",
+          "elapsed": 16.6,
+          "hypothesis_length": 323,
+          "error": false,
+          "rouge": {
+            "rouge1": 0.029,
+            "rouge2": 0.0,
+            "rougeL": 0.029
+          },
+          "llm_judge": {
+            "novelty": 7.0,
+            "specificity": 8.0,
+            "feasibility": 7.0,
+            "relevance": 9.0,
+            "cross_disciplinary": 8.0
+          }
+        },
+        {
+          "method": "P3",
+          "elapsed": 41.3,
+          "hypothesis_length": 899,
+          "error": false,
+          "rouge": {
+            "rouge1": 0.0255,
+            "rouge2": 0.0129,
+            "rougeL": 0.0255
+          },
+          "llm_judge": {
+            "novelty": 9.0,
+            "specificity": 9.0,
+            "feasibility": 8.0,
+            "relevance": 9.0,
+            "cross_disciplinary": 10.0
+          }
+        },
+        {
+          "method": "P4",
+          "elapsed": 48.8,
+          "hypothesis_length": 1749,
+          "error": false,
+          "rouge": {
+            "rouge1": 0.0631,
+            "rouge2": 0.0182,
+            "rougeL": 0.0541
+          },
+          "llm_judge": {
+            "novelty": 9.0,
+            "specificity": 9.0,
+            "feasibility": 8.0,
+            "relevance": 10.0,
+            "cross_disciplinary": 9.0
+          }
+        },
+        {
+          "method": "P5",
+          "elapsed": 498.2,
+          "hypothesis_length": 1190,
+          "error": false,
+          "rouge": {
+            "rouge1": 0.0,
+            "rouge2": 0.0,
+            "rougeL": 0.0
+          },
+          "llm_judge": {
+            "novelty": 8.0,
+            "specificity": 9.0,
+            "feasibility": 8.0,
+            "relevance": 9.0,
+            "cross_disciplinary": 9.0
+          },
+          "structural": {
+            "has_L1": 1.0,
+            "has_L2": 1.0,
+            "has_L3": 1.0,
+            "level_coverage": 1.0,
+            "total_paths": 5.0,
+            "avg_path_length": 3.0,
+            "chain_coherence": 1.0,
+            "relation_diversity": 2.8,
+            "entity_grounding_rate": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "tag": "paper_1",
+      "paper": {
+        "title": "Self-driving lab for the photochemical synthesis of plasmonic nanoparticles with targeted structural and optical properties",
+        "primary_discipline": "化学"
+      },
+      "evaluations": [
+        {
+          "method": "IdeaBench",
+          "elapsed": 107.0,
+          "hypothesis_length": 778,
+          "error": false,
+          "rouge": {
+            "rouge1": 0.317,
+            "rouge2": 0.1065,
+            "rougeL": 0.1736
+          },
+          "llm_judge": {
+            "novelty": 8.0,
+            "specificity": 9.0,
+            "feasibility": 7.0,
+            "relevance": 10.0,
+            "cross_disciplinary": 8.0
+          }
+        },
+        {
+          "method": "VanillaLLM",
+          "elapsed": 73.0,
+          "hypothesis_length": 3444,
+          "error": false,
+          "rouge": {
+            "rouge1": 0.2801,
+            "rouge2": 0.0562,
+            "rougeL": 0.1384
+          },
+          "llm_judge": {
+            "novelty": 9.0,
+            "specificity": 9.0,
+            "feasibility": 7.0,
+            "relevance": 9.0,
+            "cross_disciplinary": 9.0
+          }
+        },
+        {
+          "method": "AI-Scientist",
+          "elapsed": 86.2,
+          "hypothesis_length": 4461,
+          "error": false,
+          "rouge": {
+            "rouge1": 0.281,
+            "rouge2": 0.0739,
+            "rougeL": 0.1119
+          },
+          "llm_judge": {
+            "novelty": 8.0,
+            "specificity": 8.0,
+            "feasibility": 7.0,
+            "relevance": 9.0,
+            "cross_disciplinary": 7.0
+          }
+        },
+        {
+          "method": "SciMON",
+          "elapsed": 65.1,
+          "hypothesis_length": 2952,
+          "error": false,
+          "rouge": {
+            "rouge1": 0.3498,
+            "rouge2": 0.0802,
+            "rougeL": 0.1483
+          },
+          "llm_judge": {
+            "novelty": 9.0,
+            "specificity": 8.0,
+            "feasibility": 7.0,
+            "relevance": 7.0,
+            "cross_disciplinary": 9.0
+          }
+        },
+        {
+          "method": "MOOSE-Chem",
+          "elapsed": 72.6,
+          "hypothesis_length": 3001,
+          "error": false,
+          "rouge": {
+            "rouge1": 0.2974,
+            "rouge2": 0.0522,
+            "rougeL": 0.1301
+          },
+          "llm_judge": {
+            "novelty": 9.0,
+            "specificity": 8.0,
+            "feasibility": 7.0,
+            "relevance": 9.0,
+            "cross_disciplinary": 9.0
+          }
+        },
+        {
+          "method": "SciAgents",
+          "elapsed": 154.8,
+          "hypothesis_length": 4525,
+          "error": false,
+          "rouge": {
+            "rouge1": 0.2126,
+            "rouge2": 0.0316,
+            "rougeL": 0.0866
+          },
+          "llm_judge": {
+            "novelty": 8.0,
+            "specificity": 9.0,
+            "feasibility": 7.0,
+            "relevance": 9.0,
+            "cross_disciplinary": 8.0
+          }
+        },
+        {
+          "method": "P1",
+          "elapsed": 36.1,
+          "hypothesis_length": 1306,
+          "error": false,
+          "rouge": {
+            "rouge1": 0.2875,
+            "rouge2": 0.0554,
+            "rougeL": 0.1346
+          },
+          "llm_judge": {
+            "novelty": 8.0,
+            "specificity": 9.0,
+            "feasibility": 7.0,
+            "relevance": 9.0,
+            "cross_disciplinary": 9.0
+          }
+        },
+        {
+          "method": "P2",
+          "elapsed": 16.5,
+          "hypothesis_length": 373,
+          "error": false,
+          "rouge": {
+            "rouge1": 0.0,
+            "rouge2": 0.0,
+            "rougeL": 0.0
+          },
+          "llm_judge": {
+            "novelty": 8.0,
+            "specificity": 9.0,
+            "feasibility": 8.0,
+            "relevance": 9.0,
+            "cross_disciplinary": 9.0
+          }
+        },
+        {
+          "method": "P3",
+          "elapsed": 26.5,
+          "hypothesis_length": 739,
+          "error": false,
+          "rouge": {
+            "rouge1": 0.0,
+            "rouge2": 0.0,
+            "rougeL": 0.0
+          },
+          "llm_judge": {
+            "novelty": 6.0,
+            "specificity": 8.0,
+            "feasibility": 8.0,
+            "relevance": 9.0,
+            "cross_disciplinary": 9.0
+          }
+        },
+        {
+          "method": "P4",
+          "elapsed": 35.6,
+          "hypothesis_length": 4496,
+          "error": false,
+          "rouge": {
+            "rouge1": 0.2135,
+            "rouge2": 0.0362,
+            "rougeL": 0.0902
+          },
+          "llm_judge": {
+            "novelty": 9.0,
+            "specificity": 9.0,
+            "feasibility": 8.0,
+            "relevance": 10.0,
+            "cross_disciplinary": 9.0
+          }
+        },
+        {
+          "method": "P5",
+          "elapsed": 254.7,
+          "hypothesis_length": 1569,
+          "error": false,
+          "rouge": {
+            "rouge1": 0.0,
+            "rouge2": 0.0,
+            "rougeL": 0.0
+          },
+          "llm_judge": {
+            "novelty": 6.0,
+            "specificity": 8.0,
+            "feasibility": 9.0,
+            "relevance": 9.0,
+            "cross_disciplinary": 9.0
+          },
+          "structural": {
+            "has_L1": 1.0,
+            "has_L2": 1.0,
+            "has_L3": 1.0,
+            "level_coverage": 1.0,
+            "total_paths": 6.0,
+            "avg_path_length": 3.0,
+            "chain_coherence": 1.0,
+            "relation_diversity": 2.6667,
+            "entity_grounding_rate": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "tag": "paper_2",
+      "paper": {
+        "title": "Multi-modal framework for battery state of health evaluation using open-source electric vehicle data",
+        "primary_discipline": "计算机科学技术"
+      },
+      "evaluations": [
+        {
+          "method": "IdeaBench",
+          "elapsed": 38.9,
+          "hypothesis_length": 782,
+          "error": false,
+          "rouge": {
+            "rouge1": 0.2238,
+            "rouge2": 0.0436,
+            "rougeL": 0.1155
+          },
+          "llm_judge": {
+            "novelty": 8.0,
+            "specificity": 9.0,
+            "feasibility": 8.0,
+            "relevance": 10.0,
+            "cross_disciplinary": 8.0
+          }
+        },
+        {
+          "method": "VanillaLLM",
+          "elapsed": 56.2,
+          "hypothesis_length": 2106,
+          "error": false,
+          "rouge": {
+            "rouge1": 0.2444,
+            "rouge2": 0.0223,
+            "rougeL": 0.1156
+          },
+          "llm_judge": {
+            "novelty": 8.0,
+            "specificity": 9.0,
+            "feasibility": 7.0,
+            "relevance": 9.0,
+            "cross_disciplinary": 8.0
+          }
+        },
+        {
+          "method": "AI-Scientist",
+          "elapsed": 36.5,
+          "hypothesis_length": 3884,
+          "error": false,
+          "rouge": {
+            "rouge1": 0.2653,
+            "rouge2": 0.0372,
+            "rougeL": 0.1141
+          },
+          "llm_judge": {}
+        },
+        {
+          "method": "SciMON",
+          "elapsed": 82.8,
+          "hypothesis_length": 2702,
+          "error": false,
+          "rouge": {
+            "rouge1": 0.1808,
+            "rouge2": 0.0116,
+            "rougeL": 0.0885
+          },
+          "llm_judge": {
+            "novelty": 10.0,
+            "specificity": 9.0,
+            "feasibility": 7.0,
+            "relevance": 7.0,
+            "cross_disciplinary": 10.0
+          }
+        },
+        {
+          "method": "MOOSE-Chem",
+          "elapsed": 78.7,
+          "hypothesis_length": 4102,
+          "error": false,
+          "rouge": {
+            "rouge1": 0.2403,
+            "rouge2": 0.0332,
+            "rougeL": 0.1077
+          },
+          "llm_judge": {
+            "novelty": 8.0,
+            "specificity": 8.0,
+            "feasibility": 7.0,
+            "relevance": 9.0,
+            "cross_disciplinary": 9.0
+          }
+        },
+        {
+          "method": "SciAgents",
+          "elapsed": 177.5,
+          "hypothesis_length": 4064,
+          "error": false,
+          "rouge": {
+            "rouge1": 0.1826,
+            "rouge2": 0.0174,
+            "rougeL": 0.0899
+          },
+          "llm_judge": {
+            "novelty": 8.0,
+            "specificity": 9.0,
+            "feasibility": 7.0,
+            "relevance": 9.0,
+            "cross_disciplinary": 8.0
+          }
+        },
+        {
+          "method": "P1",
+          "elapsed": 29.6,
+          "hypothesis_length": 384,
+          "error": false,
+          "rouge": {
+            "rouge1": 0.0,
+            "rouge2": 0.0,
+            "rougeL": 0.0
+          },
+          "llm_judge": {
+            "novelty": 8.0,
+            "specificity": 9.0,
+            "feasibility": 7.0,
+            "relevance": 10.0,
+            "cross_disciplinary": 9.0
+          }
+        },
+        {
+          "method": "P2",
+          "elapsed": 15.4,
+          "hypothesis_length": 1355,
+          "error": false,
+          "rouge": {
+            "rouge1": 0.2486,
+            "rouge2": 0.0511,
+            "rougeL": 0.1299
+          },
+          "llm_judge": {
+            "novelty": 8.0,
+            "specificity": 9.0,
+            "feasibility": 7.0,
+            "relevance": 9.0,
+            "cross_disciplinary": 9.0
+          }
+        },
+        {
+          "method": "P3",
+          "elapsed": 28.6,
+          "hypothesis_length": 838,
+          "error": false,
+          "rouge": {
+            "rouge1": 0.0,
+            "rouge2": 0.0,
+            "rougeL": 0.0
+          },
+          "llm_judge": {
+            "novelty": 9.0,
+            "specificity": 9.0,
+            "feasibility": 7.0,
+            "relevance": 9.0,
+            "cross_disciplinary": 9.0
+          }
+        },
+        {
+          "method": "P4",
+          "elapsed": 56.0,
+          "hypothesis_length": 4330,
+          "error": false,
+          "rouge": {
+            "rouge1": 0.2181,
+            "rouge2": 0.0518,
+            "rougeL": 0.1004
+          },
+          "llm_judge": {
+            "novelty": 8.0,
+            "specificity": 9.0,
+            "feasibility": 7.0,
+            "relevance": 9.0,
+            "cross_disciplinary": 10.0
+          }
+        },
+        {
+          "method": "P5",
+          "elapsed": 508.1,
+          "hypothesis_length": 1713,
+          "error": false,
+          "rouge": {
+            "rouge1": 0.0,
+            "rouge2": 0.0,
+            "rougeL": 0.0
+          },
+          "llm_judge": {
+            "novelty": 8.0,
+            "specificity": 9.0,
+            "feasibility": 9.0,
+            "relevance": 10.0,
+            "cross_disciplinary": 9.0
+          },
+          "structural": {
+            "has_L1": 1.0,
+            "has_L2": 1.0,
+            "has_L3": 1.0,
+            "level_coverage": 1.0,
+            "total_paths": 6.0,
+            "avg_path_length": 3.0,
+            "chain_coherence": 1.0,
+            "relation_diversity": 3.0,
+            "entity_grounding_rate": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "tag": "paper_3",
+      "paper": {
+        "title": "Soil organic carbon thresholds control fertilizer effects on carbon accrual in croplands worldwide",
+        "primary_discipline": "农学"
+      },
+      "evaluations": [
+        {
+          "method": "IdeaBench",
+          "elapsed": 51.2,
+          "hypothesis_length": 896,
+          "error": false,
+          "rouge": {
+            "rouge1": 0.4714,
+            "rouge2": 0.2305,
+            "rougeL": 0.2626
+          },
+          "llm_judge": {
+            "novelty": 8.0,
+            "specificity": 9.0,
+            "feasibility": 7.0,
+            "relevance": 9.0,
+            "cross_disciplinary": 8.0
+          }
+        },
+        {
+          "method": "VanillaLLM",
+          "elapsed": 72.2,
+          "hypothesis_length": 2941,
+          "error": false,
+          "rouge": {
+            "rouge1": 0.3811,
+            "rouge2": 0.0984,
+            "rougeL": 0.1597
+          },
+          "llm_judge": {
+            "novelty": 9.0,
+            "specificity": 9.0,
+            "feasibility": 8.0,
+            "relevance": 9.0,
+            "cross_disciplinary": 8.0
+          }
+        },
+        {
+          "method": "AI-Scientist",
+          "elapsed": 78.0,
+          "hypothesis_length": 3626,
+          "error": false,
+          "rouge": {
+            "rouge1": 0.3192,
+            "rouge2": 0.1145,
+            "rougeL": 0.1523
+          },
+          "llm_judge": {
+            "novelty": 0.0,
+            "specificity": 0.0,
+            "feasibility": 0.0,
+            "relevance": 0.0,
+            "cross_disciplinary": 0.0
+          }
+        },
+        {
+          "method": "SciMON",
+          "elapsed": 97.9,
+          "hypothesis_length": 2440,
+          "error": false,
+          "rouge": {
+            "rouge1": 0.3817,
+            "rouge2": 0.1038,
+            "rougeL": 0.1829
+          },
+          "llm_judge": {
+            "novelty": 9.0,
+            "specificity": 9.0,
+            "feasibility": 8.0,
+            "relevance": 9.0,
+            "cross_disciplinary": 9.0
+          }
+        },
+        {
+          "method": "MOOSE-Chem",
+          "elapsed": 105.8,
+          "hypothesis_length": 3245,
+          "error": false,
+          "rouge": {
+            "rouge1": 0.3372,
+            "rouge2": 0.1206,
+            "rougeL": 0.1536
+          },
+          "llm_judge": {
+            "novelty": 8.0,
+            "specificity": 8.0,
+            "feasibility": 7.0,
+            "relevance": 8.0,
+            "cross_disciplinary": 8.0
+          }
+        },
+        {
+          "method": "SciAgents",
+          "elapsed": 155.5,
+          "hypothesis_length": 4366,
+          "error": false,
+          "rouge": {
+            "rouge1": 0.249,
+            "rouge2": 0.051,
+            "rougeL": 0.1178
+          },
+          "llm_judge": {
+            "novelty": 9.0,
+            "specificity": 9.0,
+            "feasibility": 7.0,
+            "relevance": 10.0,
+            "cross_disciplinary": 8.0
+          }
+        },
+        {
+          "method": "P1",
+          "elapsed": 26.9,
+          "hypothesis_length": 263,
+          "error": false,
+          "rouge": {
+            "rouge1": 0.0343,
+            "rouge2": 0.0,
+            "rougeL": 0.0343
+          },
+          "llm_judge": {
+            "novelty": 8.0,
+            "specificity": 9.0,
+            "feasibility": 8.0,
+            "relevance": 9.0,
+            "cross_disciplinary": 9.0
+          }
+        },
+        {
+          "method": "P2",
+          "elapsed": 23.7,
+          "hypothesis_length": 584,
+          "error": false,
+          "rouge": {
+            "rouge1": 0.1836,
+            "rouge2": 0.0195,
+            "rougeL": 0.1449
+          },
+          "llm_judge": {
+            "novelty": 8.0,
+            "specificity": 9.0,
+            "feasibility": 8.0,
+            "relevance": 10.0,
+            "cross_disciplinary": 8.0
+          }
+        },
+        {
+          "method": "P3",
+          "elapsed": 33.4,
+          "hypothesis_length": 1031,
+          "error": false,
+          "rouge": {
+            "rouge1": 0.2315,
+            "rouge2": 0.0467,
+            "rougeL": 0.1481
+          },
+          "llm_judge": {
+            "novelty": 7.0,
+            "specificity": 9.0,
+            "feasibility": 8.0,
+            "relevance": 9.0,
+            "cross_disciplinary": 9.0
+          }
+        },
+        {
+          "method": "P4",
+          "elapsed": 56.7,
+          "hypothesis_length": 1755,
+          "error": false,
+          "rouge": {
+            "rouge1": 0.1533,
+            "rouge2": 0.0077,
+            "rougeL": 0.1149
+          },
+          "llm_judge": {
+            "novelty": 9.0,
+            "specificity": 8.0,
+            "feasibility": 8.0,
+            "relevance": 9.0,
+            "cross_disciplinary": 8.0
+          }
+        },
+        {
+          "method": "P5",
+          "elapsed": 532.6,
+          "hypothesis_length": 1982,
+          "error": false,
+          "rouge": {
+            "rouge1": 0.0198,
+            "rouge2": 0.0,
+            "rougeL": 0.0198
+          },
+          "llm_judge": {
+            "novelty": 7.0,
+            "specificity": 8.0,
+            "feasibility": 9.0,
+            "relevance": 9.0,
+            "cross_disciplinary": 8.0
+          },
+          "structural": {
+            "has_L1": 1.0,
+            "has_L2": 1.0,
+            "has_L3": 1.0,
+            "level_coverage": 1.0,
+            "total_paths": 6.0,
+            "avg_path_length": 3.0,
+            "chain_coherence": 1.0,
+            "relation_diversity": 2.6667,
+            "entity_grounding_rate": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "tag": "paper_4",
+      "paper": {
+        "title": "Bioactive nanomotor enabling efficient intestinal barrier penetration for colorectal cancer therapy",
+        "primary_discipline": "材料科学"
+      },
+      "evaluations": [
+        {
+          "method": "IdeaBench",
+          "elapsed": 68.4,
+          "hypothesis_length": 1251,
+          "error": false,
+          "rouge": {
+            "rouge1": 0.3378,
+            "rouge2": 0.0816,
+            "rougeL": 0.1757
+          },
+          "llm_judge": {
+            "novelty": 8.0,
+            "specificity": 7.0,
+            "feasibility": 7.0,
+            "relevance": 9.0,
+            "cross_disciplinary": 8.0
+          }
+        },
+        {
+          "method": "VanillaLLM",
+          "elapsed": 62.5,
+          "hypothesis_length": 2669,
+          "error": false,
+          "rouge": {
+            "rouge1": 0.2875,
+            "rouge2": 0.0544,
+            "rougeL": 0.125
+          },
+          "llm_judge": {
+            "novelty": 9.0,
+            "specificity": 8.0,
+            "feasibility": 7.0,
+            "relevance": 8.0,
+            "cross_disciplinary": 9.0
+          }
+        },
+        {
+          "method": "AI-Scientist",
+          "elapsed": 39.0,
+          "hypothesis_length": 3259,
+          "error": false,
+          "rouge": {
+            "rouge1": 0.2404,
+            "rouge2": 0.049,
+            "rougeL": 0.1359
+          },
+          "llm_judge": {}
+        },
+        {
+          "method": "SciMON",
+          "elapsed": 68.0,
+          "hypothesis_length": 2640,
+          "error": false,
+          "rouge": {
+            "rouge1": 0.2255,
+            "rouge2": 0.0256,
+            "rougeL": 0.1149
+          },
+          "llm_judge": {
+            "novelty": 9.0,
+            "specificity": 7.0,
+            "feasibility": 7.0,
+            "relevance": 9.0,
+            "cross_disciplinary": 9.0
+          }
+        },
+        {
+          "method": "MOOSE-Chem",
+          "elapsed": 142.2,
+          "hypothesis_length": 2841,
+          "error": false,
+          "rouge": {
+            "rouge1": 0.2822,
+            "rouge2": 0.05,
+            "rougeL": 0.112
+          },
+          "llm_judge": {
+            "novelty": 9.0,
+            "specificity": 8.0,
+            "feasibility": 7.0,
+            "relevance": 8.0,
+            "cross_disciplinary": 9.0
+          }
+        },
+        {
+          "method": "SciAgents",
+          "elapsed": 151.2,
+          "hypothesis_length": 4411,
+          "error": false,
+          "rouge": {
+            "rouge1": 0.1585,
+            "rouge2": 0.0145,
+            "rougeL": 0.0692
+          },
+          "llm_judge": {
+            "novelty": 8.0,
+            "specificity": 9.0,
+            "feasibility": 8.0,
+            "relevance": 10.0,
+            "cross_disciplinary": 7.0
+          }
+        },
+        {
+          "method": "P1",
+          "elapsed": 40.1,
+          "hypothesis_length": 458,
+          "error": false,
+          "rouge": {
+            "rouge1": 0.0364,
+            "rouge2": 0.0123,
+            "rougeL": 0.0242
+          },
+          "llm_judge": {
+            "novelty": 9.0,
+            "specificity": 9.0,
+            "feasibility": 8.0,
+            "relevance": 9.0,
+            "cross_disciplinary": 9.0
+          }
+        },
+        {
+          "method": "P2",
+          "elapsed": 26.5,
+          "hypothesis_length": 594,
+          "error": false,
+          "rouge": {
+            "rouge1": 0.0,
+            "rouge2": 0.0,
+            "rougeL": 0.0
+          },
+          "llm_judge": {
+            "novelty": 9.0,
+            "specificity": 9.0,
+            "feasibility": 8.0,
+            "relevance": 10.0,
+            "cross_disciplinary": 8.0
+          }
+        },
+        {
+          "method": "P3",
+          "elapsed": 47.2,
+          "hypothesis_length": 1183,
+          "error": false,
+          "rouge": {
+            "rouge1": 0.0268,
+            "rouge2": 0.009,
+            "rougeL": 0.0268
+          },
+          "llm_judge": {
+            "novelty": 9.0,
+            "specificity": 9.0,
+            "feasibility": 8.0,
+            "relevance": 10.0,
+            "cross_disciplinary": 9.0
+          }
+        },
+        {
+          "method": "P4",
+          "elapsed": 56.0,
+          "hypothesis_length": 2011,
+          "error": false,
+          "rouge": {
+            "rouge1": 0.0183,
+            "rouge2": 0.0092,
+            "rougeL": 0.0183
+          },
+          "llm_judge": {
+            "novelty": 9.0,
+            "specificity": 9.0,
+            "feasibility": 7.0,
+            "relevance": 10.0,
+            "cross_disciplinary": 8.0
+          }
+        },
+        {
+          "method": "P5",
+          "elapsed": 524.2,
+          "hypothesis_length": 1646,
+          "error": false,
+          "rouge": {
+            "rouge1": 0.0221,
+            "rouge2": 0.0112,
+            "rougeL": 0.0221
+          },
+          "llm_judge": {
+            "novelty": 7.0,
+            "specificity": 8.0,
+            "feasibility": 8.0,
+            "relevance": 9.0,
+            "cross_disciplinary": 8.0
+          },
+          "structural": {
+            "has_L1": 1.0,
+            "has_L2": 1.0,
+            "has_L3": 1.0,
+            "level_coverage": 1.0,
+            "total_paths": 6.0,
+            "avg_path_length": 3.0,
+            "chain_coherence": 1.0,
+            "relation_diversity": 3.0,
+            "entity_grounding_rate": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "tag": "paper_5",
+      "paper": {
+        "title": "RiNALMo: general-purpose RNA language models can generalize well on structure prediction tasks",
+        "primary_discipline": "计算机科学技术"
+      },
+      "evaluations": [
+        {
+          "method": "IdeaBench",
+          "elapsed": 34.0,
+          "hypothesis_length": 959,
+          "error": false,
+          "rouge": {
+            "rouge1": 0.3333,
+            "rouge2": 0.0786,
+            "rougeL": 0.156
+          },
+          "llm_judge": {
+            "novelty": 8.0,
+            "specificity": 8.0,
+            "feasibility": 7.0,
+            "relevance": 9.0,
+            "cross_disciplinary": 7.0
+          }
+        },
+        {
+          "method": "VanillaLLM",
+          "elapsed": 41.6,
+          "hypothesis_length": 1640,
+          "error": false,
+          "rouge": {
+            "rouge1": 0.2779,
+            "rouge2": 0.0493,
+            "rougeL": 0.0981
+          },
+          "llm_judge": {
+            "novelty": 8.0,
+            "specificity": 8.0,
+            "feasibility": 7.0,
+            "relevance": 9.0,
+            "cross_disciplinary": 9.0
+          }
+        },
+        {
+          "method": "AI-Scientist",
+          "elapsed": 52.0,
+          "hypothesis_length": 3639,
+          "error": false,
+          "rouge": {
+            "rouge1": 0.2105,
+            "rouge2": 0.0352,
+            "rougeL": 0.0893
+          },
+          "llm_judge": {}
+        },
+        {
+          "method": "SciMON",
+          "elapsed": 82.0,
+          "hypothesis_length": 2210,
+          "error": false,
+          "rouge": {
+            "rouge1": 0.2483,
+            "rouge2": 0.0499,
+            "rougeL": 0.1219
+          },
+          "llm_judge": {
+            "novelty": 9.0,
+            "specificity": 8.0,
+            "feasibility": 7.0,
+            "relevance": 7.0,
+            "cross_disciplinary": 9.0
+          }
+        },
+        {
+          "method": "MOOSE-Chem",
+          "elapsed": 90.9,
+          "hypothesis_length": 3140,
+          "error": false,
+          "rouge": {
+            "rouge1": 0.2671,
+            "rouge2": 0.0507,
+            "rougeL": 0.1155
+          },
+          "llm_judge": {
+            "novelty": 8.0,
+            "specificity": 6.0,
+            "feasibility": 7.0,
+            "relevance": 8.0,
+            "cross_disciplinary": 7.0
+          }
+        },
+        {
+          "method": "SciAgents",
+          "elapsed": 156.3,
+          "hypothesis_length": 3922,
+          "error": false,
+          "rouge": {
+            "rouge1": 0.1976,
+            "rouge2": 0.0325,
+            "rougeL": 0.0885
+          },
+          "llm_judge": {
+            "novelty": 8.0,
+            "specificity": 9.0,
+            "feasibility": 7.0,
+            "relevance": 9.0,
+            "cross_disciplinary": 8.0
+          }
+        },
+        {
+          "method": "P1",
+          "elapsed": 28.2,
+          "hypothesis_length": 366,
+          "error": false,
+          "rouge": {
+            "rouge1": 0.0125,
+            "rouge2": 0.0,
+            "rougeL": 0.0125
+          },
+          "llm_judge": {
+            "novelty": 8.0,
+            "specificity": 9.0,
+            "feasibility": 8.0,
+            "relevance": 9.0,
+            "cross_disciplinary": 6.0
+          }
+        },
+        {
+          "method": "P2",
+          "elapsed": 20.2,
+          "hypothesis_length": 540,
+          "error": false,
+          "rouge": {
+            "rouge1": 0.1034,
+            "rouge2": 0.0,
+            "rougeL": 0.0805
+          },
+          "llm_judge": {
+            "novelty": 8.0,
+            "specificity": 6.0,
+            "feasibility": 8.0,
+            "relevance": 10.0,
+            "cross_disciplinary": 8.0
+          }
+        },
+        {
+          "method": "P3",
+          "elapsed": 31.7,
+          "hypothesis_length": 769,
+          "error": false,
+          "rouge": {
+            "rouge1": 0.0874,
+            "rouge2": 0.0,
+            "rougeL": 0.0765
+          },
+          "llm_judge": {
+            "novelty": 8.0,
+            "specificity": 8.0,
+            "feasibility": 7.0,
+            "relevance": 9.0,
+            "cross_disciplinary": 7.0
+          }
+        },
+        {
+          "method": "P4",
+          "elapsed": 52.1,
+          "hypothesis_length": 1971,
+          "error": false,
+          "rouge": {
+            "rouge1": 0.0569,
+            "rouge2": 0.0,
+            "rougeL": 0.0569
+          },
+          "llm_judge": {
+            "novelty": 8.0,
+            "specificity": 9.0,
+            "feasibility": 7.0,
+            "relevance": 10.0,
+            "cross_disciplinary": 9.0
+          }
+        },
+        {
+          "method": "P5",
+          "elapsed": 522.1,
+          "hypothesis_length": 1515,
+          "error": false,
+          "rouge": {
+            "rouge1": 0.0,
+            "rouge2": 0.0,
+            "rougeL": 0.0
+          },
+          "llm_judge": {
+            "novelty": 6.0,
+            "specificity": 5.0,
+            "feasibility": 8.0,
+            "relevance": 9.0,
+            "cross_disciplinary": 6.0
+          },
+          "structural": {
+            "has_L1": 1.0,
+            "has_L2": 1.0,
+            "has_L3": 1.0,
+            "level_coverage": 1.0,
+            "total_paths": 6.0,
+            "avg_path_length": 3.0,
+            "chain_coherence": 1.0,
+            "relation_diversity": 2.8333,
+            "entity_grounding_rate": 1.0
+          }
+        }
+      ]
+    }
+  ],
+  "aggregated": {
+    "IdeaBench": {
+      "rouge_rouge1": 0.3321,
+      "rouge_rouge2": 0.1024,
+      "rouge_rougeL": 0.17,
+      "judge_novelty": 8.0,
+      "judge_specificity": 8.5,
+      "judge_feasibility": 7.3333,
+      "judge_relevance": 9.5,
+      "judge_cross_disciplinary": 7.8333,
+      "hypothesis_length": 898.8333,
+      "elapsed": 54.7833,
+      "n_papers": 6
+    },
+    "VanillaLLM": {
+      "rouge_rouge1": 0.292,
+      "rouge_rouge2": 0.0571,
+      "rouge_rougeL": 0.1293,
+      "judge_novelty": 8.5,
+      "judge_specificity": 8.5,
+      "judge_feasibility": 7.1667,
+      "judge_relevance": 8.8333,
+      "judge_cross_disciplinary": 8.5,
+      "hypothesis_length": 2722.6667,
+      "elapsed": 56.95,
+      "n_papers": 6
+    },
+    "AI-Scientist": {
+      "rouge_rouge1": 0.262,
+      "rouge_rouge2": 0.0623,
+      "rouge_rougeL": 0.1213,
+      "hypothesis_length": 3684.5,
+      "elapsed": 58.8833,
+      "judge_novelty": 4.0,
+      "judge_specificity": 4.0,
+      "judge_feasibility": 3.5,
+      "judge_relevance": 4.5,
+      "judge_cross_disciplinary": 3.5,
+      "n_papers": 6
+    },
+    "SciMON": {
+      "rouge_rouge1": 0.2792,
+      "rouge_rouge2": 0.0531,
+      "rouge_rougeL": 0.131,
+      "judge_novelty": 9.1667,
+      "judge_specificity": 8.1667,
+      "judge_feasibility": 7.1667,
+      "judge_relevance": 7.8333,
+      "judge_cross_disciplinary": 9.1667,
+      "hypothesis_length": 2629.6667,
+      "elapsed": 84.0,
+      "n_papers": 6
+    },
+    "MOOSE-Chem": {
+      "rouge_rouge1": 0.2814,
+      "rouge_rouge2": 0.0593,
+      "rouge_rougeL": 0.1223,
+      "judge_novelty": 8.5,
+      "judge_specificity": 7.6667,
+      "judge_feasibility": 7.0,
+      "judge_relevance": 8.3333,
+      "judge_cross_disciplinary": 8.5,
+      "hypothesis_length": 3318.6667,
+      "elapsed": 101.4333,
+      "n_papers": 6
+    },
+    "SciAgents": {
+      "rouge_rouge1": 0.1981,
+      "rouge_rouge2": 0.0281,
+      "rouge_rougeL": 0.0908,
+      "judge_novelty": 8.1667,
+      "judge_specificity": 9.0,
+      "judge_feasibility": 7.3333,
+      "judge_relevance": 9.5,
+      "judge_cross_disciplinary": 7.8333,
+      "hypothesis_length": 4295.1667,
+      "elapsed": 158.9,
+      "n_papers": 6
+    },
+    "P1": {
+      "rouge_rouge1": 0.1062,
+      "rouge_rouge2": 0.017,
+      "rouge_rougeL": 0.0541,
+      "judge_novelty": 8.1667,
+      "judge_specificity": 9.0,
+      "judge_feasibility": 7.6667,
+      "judge_relevance": 9.1667,
+      "judge_cross_disciplinary": 8.5,
+      "hypothesis_length": 751.6667,
+      "elapsed": 31.8333,
+      "n_papers": 6
+    },
+    "P2": {
+      "rouge_rouge1": 0.0941,
+      "rouge_rouge2": 0.0118,
+      "rouge_rougeL": 0.064,
+      "judge_novelty": 8.0,
+      "judge_specificity": 8.3333,
+      "judge_feasibility": 7.6667,
+      "judge_relevance": 9.5,
+      "judge_cross_disciplinary": 8.3333,
+      "hypothesis_length": 628.1667,
+      "elapsed": 19.8167,
+      "n_papers": 6
+    },
+    "P3": {
+      "rouge_rouge1": 0.0619,
+      "rouge_rouge2": 0.0114,
+      "rouge_rougeL": 0.0461,
+      "judge_novelty": 8.0,
+      "judge_specificity": 8.6667,
+      "judge_feasibility": 7.6667,
+      "judge_relevance": 9.1667,
+      "judge_cross_disciplinary": 8.8333,
+      "hypothesis_length": 909.8333,
+      "elapsed": 34.7833,
+      "n_papers": 6
+    },
+    "P4": {
+      "rouge_rouge1": 0.1205,
+      "rouge_rouge2": 0.0205,
+      "rouge_rougeL": 0.0725,
+      "judge_novelty": 8.6667,
+      "judge_specificity": 8.8333,
+      "judge_feasibility": 7.5,
+      "judge_relevance": 9.6667,
+      "judge_cross_disciplinary": 8.8333,
+      "hypothesis_length": 2718.6667,
+      "elapsed": 50.8667,
+      "n_papers": 6
+    },
+    "P5": {
+      "rouge_rouge1": 0.007,
+      "rouge_rouge2": 0.0019,
+      "rouge_rougeL": 0.007,
+      "judge_novelty": 7.0,
+      "judge_specificity": 7.8333,
+      "judge_feasibility": 8.5,
+      "judge_relevance": 9.1667,
+      "judge_cross_disciplinary": 8.1667,
+      "struct_has_L1": 1.0,
+      "struct_has_L2": 1.0,
+      "struct_has_L3": 1.0,
+      "struct_level_coverage": 1.0,
+      "struct_total_paths": 5.8333,
+      "struct_avg_path_length": 3.0,
+      "struct_chain_coherence": 1.0,
+      "struct_relation_diversity": 2.8278,
+      "struct_entity_grounding_rate": 1.0,
+      "hypothesis_length": 1602.5,
+      "elapsed": 473.3167,
+      "n_papers": 6
+    }
+  }
+}

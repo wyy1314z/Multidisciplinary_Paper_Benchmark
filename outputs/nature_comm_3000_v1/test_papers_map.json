@@ -1,0 +1,162 @@
+{
+  "678e7a221e82": {
+    "paper_id": "678e7a221e82",
+    "title": "Phospho-seq: integrated, multi-modal profiling of intracellular protein dynamics in single cells",
+    "abstract": "Abstract Cell signaling plays a critical role in neurodevelopment, regulating cellular behavior and fate. While multimodal single-cell sequencing technologies are rapidly advancing, scalable and flexible profiling of cell signaling states alongside other molecular modalities remains challenging. Here we present Phospho-seq, an integrated approach that aims to quantify cytoplasmic and nuclear proteins, including those with post-translational modifications, and to connect their activity with cis-regulatory elements and transcriptional targets. We utilize a simplified benchtop antibody conjugation method to create large custom neuro-focused antibody panels for simultaneous protein and scATAC-seq profiling on whole cells, alongside both experimental and computational strategies to incorporate transcriptomic measurements. We apply our workflow to cell lines, induced pluripotent stem cells, and months-old retinal and brain organoids to demonstrate its broad applicability. We show that Phospho-seq can provide insights into cellular states and trajectories, shed light on gene regulatory relationships, and help explore the causes and effects of diverse cell signaling in neurodevelopment.",
+    "primary_discipline": "生物学",
+    "secondary_disciplines": [
+      "计算机科学技术",
+      "基础医学"
+    ]
+  },
+  "4604d96e1a92": {
+    "paper_id": "4604d96e1a92",
+    "title": "Washable heat-resistant and inkjet-printed devices on cotton fabric for wearable applications",
+    "abstract": "Electronic textiles (e-textiles) face challenges in maintaining fabric properties and achieving high electrical conductivity with screen printing and particle-based inkjet printing. While particle-free reactive inks enable high-resolution patterning with sufficient electrical conductivity, their application on cellulose-based fibers is hindered by negatively charged surfaces. This study introduces inkjet-printed e-textiles using reactive silver ink and carbon nanotube ink on poly-L-lysine-coated cotton fabric. Carbon nanotubes establish a conductive network that promotes silver ion reduction, yielding densely packed nanoparticles with enhanced conductivity (1.25 × 10⁵ S m⁻¹). The resulting composite functions as a resistive tactile sensor with high sensitivity (6.02 kPa⁻¹) due to the hierarchical structure of cotton fabric. In addition, the inherent heat resistance of cotton facilitates its high-temperature resistance during heating. In this work, the fabricated e-textiles maintain performance through bending, ironing, and washing, inferring our printing technique as a promising strategy for wearable devices.",
+    "primary_discipline": "材料科学",
+    "secondary_disciplines": [
+      "材料科学",
+      "纺织科学技术",
+      "计算机科学技术"
+    ]
+  },
+  "e00e5d5a42eb": {
+    "paper_id": "e00e5d5a42eb",
+    "title": "Conformational landscapes of rigid and flexible molecules explored with variable temperature ion mobility-mass spectrometry",
+    "abstract": "Abstract Understanding the effect of temperature to the structural integrity of proteins is relevant to diverse areas such as biotechnology and climate change. Variable temperature ion mobility-mass spectrometry (VT-IM-MS) can measure the effect of temperature on conformational landscapes. To delineate collision effects from structural change we report measurements using molecules with different degrees of rigidity namely: poly (L-lysine) (PLL) dendrimer, ubiquitin, β-casein and α-synuclein from 190-350 K. The CCS of PLL dendrimer varies with temperature consistent with collision theory, by contrast, the structure of each protein alters with notable restructuring at 350 K and 250 K, following predicted in vitro stability curves. At 210 K and 190 K we kinetically trap unfolding intermediates. For alpha-synuclein, the 13+ ions present two distinct conformers and VT-IM-MS measurements allow us to calculate the transition rate and activation energies of their conversion. These data exemplify the capacity of VT-IM-MS to provide insights on the thermodynamics of conformational restructuring.",
+    "primary_discipline": "化学",
+    "secondary_disciplines": [
+      "化学",
+      "物理学",
+      "生物学"
+    ]
+  },
+  "ab6c0cb038a0": {
+    "paper_id": "ab6c0cb038a0",
+    "title": "Second coordination sphere regulates nanozyme inhibition to assist early drug discovery",
+    "abstract": "Early drug discovery is a time- and cost-consuming task requiring enzymes. Although nanozymes with metal sites akin to metallocofactors display similar activities, the lack of proximal amino acids hinders them from more adequately mimicking enzymes for drug discovery purposes. Hence, the rational design of the nanozyme second coordination sphere is desirable yet remains challenging. Herein, we report a nanozyme featuring atomically dispersed Cu-N<sub>4</sub> sites with proximal hydroxyl groups (CuNC-OH). Experimental and theoretical results reveal that Cu-N<sub>4</sub> site and hydroxyl respectively behave as cofactor and amino acid of the enzymatic pocket to interact with adsorbates, regulating nanozyme activity and inhibition. This mechanism involving dual sites is similar to that of thyroid peroxidases, which enables specific inhibition of CuNC-OH by antithyroid drugs. Based on these findings, a nanozyme-assisted drug discovery kit is established to analyze inhibition features of thyroid peroxidase inhibitors and screen out promising antithyroid drugs with a significant cost reduction compared with traditional enzyme kits.",
+    "primary_discipline": "化学",
+    "secondary_disciplines": [
+      "化学",
+      "材料科学"
+    ]
+  },
+  "def6075552a6": {
+    "paper_id": "def6075552a6",
+    "title": "Comprehensive interaction modeling with machine learning improves prediction of disease risk in the UK Biobank",
+    "abstract": "Understanding how risk factors interact to jointly influence disease risk can provide insights into disease development and improve risk prediction. Here we introduce survivalFM, a machine learning extension to the widely used Cox proportional hazards model that enables scalable estimation of all potential pairwise interaction effects on time-to-event outcomes. The method approximates interaction effects using a low-rank factorization, allowing it to overcome the computational and statistical limitations typically associated with high-dimensional interaction modeling. Applied to the UK Biobank dataset across nine disease examples and diverse clinical and omics risk factors, survivalFM improves prediction performance in terms of discrimination, explained variation, and reclassification in 30.6%, 41.7%, and 94.4% of the scenarios tested, respectively. In a clinical cardiovascular risk prediction scenario using the established QRISK3 model, the method adds predictive value by identifying interactions beyond the age interaction effects currently included. These results demonstrate that comprehensive modeling of interactions can facilitate advanced insights into disease development and improve risk predictions.",
+    "primary_discipline": "计算机科学技术",
+    "secondary_disciplines": [
+      "计算机科学技术",
+      "基础医学",
+      "统计学"
+    ]
+  },
+  "b6a59176da4f": {
+    "paper_id": "b6a59176da4f",
+    "title": "Engineering nanozyme immunomodulator with magnetic targeting effect for cascade-enzyodynamic and ultrasound-reinforced metallo-immunotherapy in prostate carcinoma",
+    "abstract": "Conventional immunotherapy exhibits low response rates due to the immunosuppressive tumor microenvironment (TME). To overcome this limitation, this study introduces ZFPG nanoparticles (ZFPG NPs) with ZnFe<sub>2</sub>O<sub>4</sub>@Pt cores and glucose oxidase (GOx) shells. The ZFPG NPs possess five-enzyme activities, good sonosensitivity, and remarkable magnetic targeting properties, which facilitate sono-metallo-immunotherapy for prostate cancer treatment in male mice. Specifically, the magnetic targeting ability effectively improves their accumulation in tumors while still showing enrichment in the liver and kidneys. The multienzyme cascade catalysis and sonosensitivity of these NPs effectively deplete glutathione and glucose, and enhance the generation and utilization of H<sub>2</sub>O<sub>2</sub>, thereby inducing multiple ROS bursts. Furthermore, these comprehensive effects up-regulate the HMOX1 to promote the Fe<sup>2+</sup> and lipid peroxides accumulation, thereby inducing immunogenic ferroptosis. This strategy facilitates anti-tumor immunity by ameliorating the immunosuppressive TME and inhibiting lung metastatic progression. This joint warfare strategy offers a powerful solution to address conventional immunotherapy limitations.",
+    "primary_discipline": "材料科学",
+    "secondary_disciplines": [
+      "材料科学",
+      "基础医学",
+      "化学工程"
+    ]
+  },
+  "b0b65007f623": {
+    "paper_id": "b0b65007f623",
+    "title": "Uncertainty estimation with prediction-error circuits",
+    "abstract": "Abstract Neural circuits continuously integrate noisy sensory stimuli with predictions that often do not perfectly match, requiring the brain to combine these conflicting feedforward and feedback inputs according to their uncertainties. However, how the brain tracks both stimulus and prediction uncertainty remains unclear. Here, we show that a hierarchical prediction-error network can estimate both the sensory and prediction uncertainty with positive and negative prediction-error neurons. Consistent with prior hypotheses, we demonstrate that neural circuits rely more on predictions when sensory inputs are noisy and the environment is stable. By perturbing inhibitory interneurons within the prediction-error circuit, we reveal their role in uncertainty estimation and input weighting. Finally, we link our model to biased perception, showing how stimulus and prediction uncertainty contribute to the contraction bias.",
+    "primary_discipline": "生物学",
+    "secondary_disciplines": [
+      "生物学",
+      "计算机科学技术"
+    ]
+  },
+  "8d82ea82ec7c": {
+    "paper_id": "8d82ea82ec7c",
+    "title": "Spatiotemporal development of expanding bacterial colonies driven by emergent mechanical constraints and nutrient gradients",
+    "abstract": "Abstract Bacterial colonies growing on solid surfaces can exhibit robust expansion kinetics, with constant radial growth and saturating vertical expansion, suggesting a common developmental program. Here, we study this process for Escherichia coli cells using a combination of modeling and experiments. We show that linear radial colony expansion is set by the verticalization of interior cells due to mechanical constraints rather than radial nutrient gradients as commonly assumed. In contrast, vertical expansion slows down from an initial linear regime even while radial expansion continues linearly. This vertical slowdown is due to limitation of cell growth caused by vertical nutrient gradients, exacerbated by concurrent oxygen depletion. Starvation in the colony interior results in a distinct death zone which sets in as vertical expansion slows down, with the death zone increasing in size along with the expanding colony. Thus, our study reveals complex heterogeneity within simple monoclonal bacterial colonies, especially along the vertical dimension. The intricate dynamics of such emergent behavior can be understood quantitatively from an interplay of mechanical constraints and nutrient gradients arising from obligatory metabolic processes.",
+    "primary_discipline": "生物学",
+    "secondary_disciplines": [
+      "生物学",
+      "物理学",
+      "化学"
+    ]
+  },
+  "8ab7ce06342f": {
+    "paper_id": "8ab7ce06342f",
+    "title": "Transmembrane voltage-gated nanopores controlled by electrically tunable in-pore chemistry",
+    "abstract": "Gating is a fundamental process in ion channels configured to open and close in response to specific stimuli such as voltage across cell membranes thereby enabling the excitability of neurons. Here we report on voltage-gated solid-state nanopores by electrically tunable chemical reactions. We demonstrate repetitive precipitation and dissolution of metal phosphates in a pore through manipulations of cation flow by transmembrane voltage. Under negative voltages, precipitates grow to reduce ionic current by occluding the nanopore, while inverting the voltage polarity dissolves the phosphate compounds reopening the pore to ionic flux. Reversible actuation of these physicochemical processes creates a nanofluidic diode of rectification ratio exceeding 40000. The dynamic nature of the in-pore reactions also facilitates a memristor of sub-nanowatt power consumption. Leveraging chemical degrees of freedom, the present method may be useful for creating iontronic circuits of tunable characteristics toward neuromorphic systems.",
+    "primary_discipline": "化学",
+    "secondary_disciplines": [
+      "化学",
+      "材料科学",
+      "物理学"
+    ]
+  },
+  "e8167ae37c34": {
+    "paper_id": "e8167ae37c34",
+    "title": "Terahertz asynchronous twin-comb for prefiguring hypersensitivity beyond spectrum domain",
+    "abstract": "Lower-frequency characteristics of the terahertz regime confer advantageous low photon energy for biochemical sensing while imposing inherent sensitivity constraints. Here, we demonstrate a terahertz asynchronous twin-comb sensor and an extra-spectrum sensing mechanism through cascading microchannel architecture within a metallic waveguide. The extra-spectrum sensing prefigures an enhanced sensitivity of 4 orders of magnitude compared to existing terahertz biosensing and surpasses its counterpart in the optical band. Hypersensitivities of 0.398 GHz mm<sup>2</sup> pg<sup>-1</sup> in trace detection manifest through the located characteristic resonance frequency beyond the spectrum domain. Additionally, we observed the photoisomerization of azo dye in the terahertz band with a photoresponse sensitivity of 0.91 GHz cm<sup>2</sup> mW<sup>-1</sup>, opening possibilities for photoactive material-assisted terahertz sensors. In summary, we instantiate an asynchronous twin-comb sensing beyond the spectrum domain, offering a perspective for ultrasensitive sensing, and promising applications in optical frequency comb precision metrology, artificial intelligence photonics, and integrated sensing and communications.",
+    "primary_discipline": "物理学",
+    "secondary_disciplines": [
+      "物理学",
+      "电子、通信与自动控制技术",
+      "材料科学"
+    ]
+  },
+  "a06c3d7464a2": {
+    "paper_id": "a06c3d7464a2",
+    "title": "Thermomagnetic liquid metal switches with fast bidirectional response",
+    "abstract": "Traditional thermal switches usually suffer from long-time and unidirectional response. Herein, we combined liquid metals with magnetic Ni<sub>2</sub>Mn<sub>1.4</sub>In<sub>0.6</sub> particles and developed a thermomagnetic liquid metal. These materials not only show excellent fluidity and electrical conductivity, but also exhibit fast response at a tuneable temperature that traditional magnetic liquid metals do not have. The ultimate application is designed as micro-channel thermal switch. Particularly, our thermal switch features bidirectional response through the droplet displacement, thus simultaneously cutting off the working circuit while turning on the fire extinguishing. Its response time of 1.2 s is 3.3 - 5.6 times faster than typical commercial thermal switches under the same hot source temperature of 75 °C, and it can be further reduced to 660 ms under the optimal environment. Moreover, this fast-response thermal switch offers the fastest recovery time, low cost, and long-cycle stability, showing a huge potential as a generation of thermal switches for diverse applications.",
+    "primary_discipline": "材料科学",
+    "secondary_disciplines": [
+      "机械工程",
+      "动力与电气工程"
+    ]
+  },
+  "010030317962": {
+    "paper_id": "010030317962",
+    "title": "Systematic benchmarking of high-throughput subcellular spatial transcriptomics platforms across human tumors",
+    "abstract": "Abstract Recent advancements in spatial transcriptomics technologies have significantly enhanced resolution and throughput, underscoring an urgent need for systematic benchmarking. Here, we generate serial tissue sections from colon adenocarcinoma, hepatocellular carcinoma, and ovarian cancer samples for systematic evaluation. Using these uniformly processed samples, we generate spatial transcriptomics data across four high-throughput platforms with subcellular resolution: Stereo-seq v1.3, Visium HD FFPE, CosMx 6K, and Xenium 5K. To establish ground truth datasets, we profile proteins on tissue sections adjacent to all platforms using CODEX and perform single-cell RNA sequencing on the same samples. Leveraging manual nuclear segmentation and detailed annotations, we systematically assess each platform’s performance across capture sensitivity, specificity, diffusion control, cell segmentation, cell annotation, spatial clustering, and concordance with adjacent CODEX. The uniformly generated and processed multi-omics dataset could advance computational method development and biological discoveries. The dataset is accessible via SPATCH, a user-friendly web server for visualization and download.",
+    "primary_discipline": "生物学",
+    "secondary_disciplines": [
+      "生物学",
+      "计算机科学技术",
+      "基础医学"
+    ]
+  },
+  "1590533b808f": {
+    "paper_id": "1590533b808f",
+    "title": "Electrochemical upcycling of uranyl from radioactive organic wastewater with a self-standing covalent-organic framework electrode",
+    "abstract": "Efficient upcycling of uranyl from uranyl-containing radioactive organic wastewater is of utmost importance for the sustainable development of nuclear energy. In this work, an indirect electrochemical method to upcycle uranyl from radioactive organic wastewater is proposed. A cost-efficient self-standing polyarylether-based covalent organic framework electrode (PAE-COF-AO@CC) not only acts as an oxygen reduction reaction (ORR) catalyst for hydrogen peroxide (H<sub>2</sub>O<sub>2</sub>) production, but also provides chelating sites for uranyl ions and nucleation center for the following growth of studtite originating from the reaction between H<sub>2</sub>O<sub>2</sub> and chelated uranyl. It's clarified that the up-take studtite on PAE-COF-AO@CC electrode could transform to high-pure U<sub>3</sub>O<sub>8</sub> after calcinating the permanently used PAE-COF-AO@CC electrode. The ultra-long lifespan of longer than 450 h and the excellent uranyl capacity of 9238.9 mg/g from the continuous accumulation of studtite make the self-standing PAE-COF-AO@CC electrode as promising materials for the uranyl resource upcycling from the complicated organic waste water matrix.",
+    "primary_discipline": "化学",
+    "secondary_disciplines": [
+      "化学",
+      "材料科学",
+      "核科学技术"
+    ]
+  },
+  "872ef6d6da86": {
+    "paper_id": "872ef6d6da86",
+    "title": "The geometric-electronic coupled design of diatomic catalyst towards oxygen reduction reaction",
+    "abstract": "Diatomic catalysts are promising candidates for heterogeneous catalysis, whereas the rational design meets the challenges of numerous optional elements and the correlated alternation of parameters that affect the performance. Herein, we demonstrate a geometric-electronic coupled design of diatomic catalysts towards oxygen reduction reaction through machine learning derived catalytic \"hot spot map\". The hot spot map is constructed with two descriptors as axes, including the geometric distance of the diatom and electronic magnetic moment. The narrow hot region in the map indicates the necessary collaborative regulation of the geometric and electronic effects for catalyst design. As a predicted ideal catalyst for oxygen reduction reaction, the N-bridged Co, Mn diatomic catalyst (Co-N-Mn/NC) is experimentally synthesized with a half-wave potential of 0.90 V, together with the embodied zinc air battery displaying high peak power density of 271 mW cm<sup>-2</sup> and specific capacity of 806 mAh g <sup>- </sup><sup>1</sup><sub>Zn</sub>. This work presents an advanced prototype for the comprehensive design of catalysts.",
+    "primary_discipline": "化学",
+    "secondary_disciplines": [
+      "材料科学",
+      "计算机科学技术"
+    ]
+  },
+  "6392d9b0ddec": {
+    "paper_id": "6392d9b0ddec",
+    "title": "Overcoming the reactivity-stability challenge in water treatment catalyst through spatial confinement",
+    "abstract": "Current catalytic materials and processes designed for water treatment face a significant challenge in balancing reactivity and stability. Catalysts with initially high reactivity often lack long-term stability under environmentally relevant conditions, limiting their advancement toward practical application. In this study, we demonstrate that spatial confinement of catalysts at angstrom scale can significantly enhance the stability of iron oxyfluoride (FeOF), a highly efficient catalyst for advanced oxidation. We fabricate a catalytic membrane by intercalating FeOF catalysts between layers of graphene oxides. In flow-through operation, the catalytic membrane maintains near-complete removal of model pollutants, neonicotinoids, for over two weeks by effectively activating H<sub>2</sub>O<sub>2</sub> to generate <sup>•</sup>OH. Catalyst deactivation is significantly mitigated by spatially confining fluoride ions leached from the catalyst, which is identified as the primary cause of catalytic activity loss. The angstrom-scale membrane channels effectively reject the majority of natural organic matter via size exclusion, thereby preserving radical availability and sustaining pollutant degradation under practical conditions. This innovative strategy for enhancing catalyst stability can be potentially applied to other existing catalysts developed for water treatment applications.",
+    "primary_discipline": "化学",
+    "secondary_disciplines": [
+      "化学",
+      "材料科学",
+      "环境科学技术"
+    ]
+  }
+}

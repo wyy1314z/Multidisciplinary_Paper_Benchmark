@@ -1,0 +1,129 @@
+Task,Method,OOD Accuracy,OOD F1,IND Accuracy,IND F1
+deceptive_reviews,Zero-shot Inference,59,53.28,55.33,44.61
+deceptive_reviews,Few-shot Inference,66.33,63.69,56.67,49.05
+deceptive_reviews,Zero-shot Generation,58,50.91,56,46.93
+deceptive_reviews,\paperonly,55,45.91,51.33,36.76
+deceptive_reviews,\ioprompt,69.67,68.27,64.67,64.61
+deceptive_reviews,\iorefine,68,65.55,66.33,66.02
+deceptive_reviews,\hypogenic,75.67,75.33,71.67,71.63
+deceptive_reviews,\litplusdata,79,78.95,66.33,64.88
+llamagc_detect,Zero-shot Inference,47.33,34.21,55.33,47.16
+llamagc_detect,Few-shot Inference,47.33,36.05,56.33,51.91
+llamagc_detect,Zero-shot Generation,50.67,36.93,57,48.65
+llamagc_detect,\paperonly,48.33,33.68,51.33,39.65
+llamagc_detect,\ioprompt,60,59.12,68.67,68.64
+llamagc_detect,\iorefine,65.33,62.07,62.67,62.5
+llamagc_detect,\hypogenic,60,58.86,67.33,67.24
+llamagc_detect,\litplusdata,64,61.93,74,73.37
+gptgc_detect,Zero-shot Inference,55.33,47.16,47.33,34.21
+gptgc_detect,Few-shot Inference,63.67,63.41,45,42.29
+gptgc_detect,Zero-shot Generation,54,43.37,47.67,32.83
+gptgc_detect,\paperonly,50.33,42.12,48.33,33.68
+gptgc_detect,\ioprompt,61,57.24,60.33,56.51
+gptgc_detect,\iorefine,75,74.9,78,77.86
+gptgc_detect,\hypogenic,61.67,58.49,53,46.44
+gptgc_detect,\litplusdata,79.33,79.27,83.33,83.33
+persuasive_pairs,Zero-shot Inference,87.67,87.63,87,87
+persuasive_pairs,Few-shot Inference,88,87.89,88.67,88.58
+persuasive_pairs,Zero-shot Generation,87.33,87.31,88.33,88.32
+persuasive_pairs,\paperonly,82,81.86,86.33,86.33
+persuasive_pairs,\ioprompt,74.33,74.33,75.33,75.28
+persuasive_pairs,\iorefine,74.33,74.33,75.33,75.28
+persuasive_pairs,\hypogenic,90.67,90.65,90.33,90.32
+persuasive_pairs,\litplusdata,90.33,90.32,94,94
+dreaddit,Zero-shot Inference,63.67,58.14,63.33,58.32
+dreaddit,Few-shot Inference,78.67,78.11,71.33,69.14
+dreaddit,Zero-shot Generation,68.67,65.57,67.33,63.94
+dreaddit,\paperonly,62.67,56.87,64,58.86
+dreaddit,\ioprompt,72,71.44,69.33,69.3
+dreaddit,\iorefine,72,71.44,69.33,69.3
+dreaddit,\hypogenic,80.67,80.28,72.33,70.69
+dreaddit,\litplusdata,79,78.52,73,71.49
+headline_binary,Zero-shot Inference,64,63.41,60,59.12
+headline_binary,Few-shot Inference,60,56.6,55.67,52.18
+headline_binary,Zero-shot Generation,58,57.39,57,54.74
+headline_binary,\paperonly,57.67,56.78,56.33,55.03
+headline_binary,\ioprompt,52.33,52.21,51,50.97
+headline_binary,\iorefine,52.33,52.27,48,47.98
+headline_binary,\hypogenic,53.33,50.13,53.67,51.38
+headline_binary,\litplusdata,63.33,63.29,59,57.88
+retweet,Zero-shot Inference,63,61.9,63.67,62.83
+retweet,Few-shot Inference,64.33,62.8,62,60.07
+retweet,Zero-shot Generation,63.67,62.9,58,57.08
+retweet,\paperonly,59,58.98,51,50.99
+retweet,\ioprompt,42,36.26,39,35.16
+retweet,\iorefine,38.33,38.32,19,19
+retweet,\hypogenic,68,66.92,58.67,57.28
+retweet,\litplusdata,69,68.94,63,62.6
+journal_same_same_journal_health,Zero-shot Inference,49.4737,34.8571,56.2500,36.0000
+journal_same_same_journal_health,Few-shot Inference,51.0526,42.0180,59.3750,47.9349
+journal_same_same_journal_health,Zero-shot Generation,49.4737,33.9991,56.2500,36.0000
+journal_same_same_journal_health,\paperonly,55.7895,48.3762,62.5000,53.6232
+journal_same_same_journal_health,\ioprompt,51.5789,43.7308,50.0000,35.2727
+journal_same_same_journal_health,\iorefine,48.5965,40.2403,53.1250,36.6893
+journal_same_same_journal_health,\hypogenic,51.5789,39.1026,53.1250,34.6939
+journal_same_same_journal_health,\litplusdata,54.2105,46.2806,59.3750,47.9349
+journal_same_same_journal_nips,Zero-shot Inference,51.6667,34.0659,50.0000,33.3333
+journal_same_same_journal_nips,Few-shot Inference,51.6667,34.0659,50.0000,33.3333
+journal_same_same_journal_nips,Zero-shot Generation,51.6667,34.0659,50.0000,33.3333
+journal_same_same_journal_nips,\paperonly,51.6667,34.0659,47.5000,32.2034
+journal_same_same_journal_nips,\ioprompt,58.0000,48.6525,57.5000,48.1312
+journal_same_same_journal_nips,\iorefine,58.6667,49.8138,65.0000,61.5385
+journal_same_same_journal_nips,\hypogenic,57.6667,47.6929,55.0000,43.5737
+journal_same_same_journal_nips,\litplusdata,63.3333,57.6380,67.5000,64.8411
+journal_same_same_journal_radiology,Zero-shot Inference,75.5725,73.5771,61.2245,46.0290
+journal_same_same_journal_radiology,Few-shot Inference,77.4809,75.9052,61.2245,46.0290
+journal_same_same_journal_radiology,Zero-shot Generation,73.2824,70.6841,59.1837,41.3876
+journal_same_same_journal_radiology,\paperonly,74.8092,72.8727,61.2245,46.0290
+journal_same_same_journal_radiology,\ioprompt,74.8092,73.5110,61.2245,51.4345
+journal_same_same_journal_radiology,\iorefine,74.8092,73.5110,61.2245,51.4345
+journal_same_same_journal_radiology,\hypogenic,78.2443,76.9092,61.2245,46.0290
+journal_same_same_journal_radiology,\litplusdata,79.0076,77.8862,63.2653,52.8846
+journal_cross_cross_journal_health_nips,Zero-shot Inference,51.6667,34.0659,56.2500,36.0000
+journal_cross_cross_journal_health_nips,Few-shot Inference,52.6667,37.4413,59.3750,47.9349
+journal_cross_cross_journal_health_nips,Zero-shot Generation,51.6667,34.0659,56.2500,36.0000
+journal_cross_cross_journal_health_nips,\paperonly,52.0000,35.4221,62.5000,53.6232
+journal_cross_cross_journal_health_nips,\ioprompt,55.0000,46.9280,50.0000,35.2727
+journal_cross_cross_journal_health_nips,\iorefine,55.4444,45.7836,53.1250,36.6893
+journal_cross_cross_journal_health_nips,\hypogenic,52.0000,36.0000,53.1250,34.6939
+journal_cross_cross_journal_health_nips,\litplusdata,52.0000,34.8259,59.3750,47.9349
+journal_cross_cross_journal_health_radiology,Zero-shot Inference,55.3333,45.3923,56.2500,36.0000
+journal_cross_cross_journal_health_radiology,Few-shot Inference,60.3333,54.5518,59.3750,47.9349
+journal_cross_cross_journal_health_radiology,Zero-shot Generation,54.3333,43.1622,56.2500,36.0000
+journal_cross_cross_journal_health_radiology,\paperonly,55.0000,44.7921,62.5000,53.6232
+journal_cross_cross_journal_health_radiology,\ioprompt,60.1667,58.2384,50.0000,35.2727
+journal_cross_cross_journal_health_radiology,\iorefine,55.2222,46.0839,53.1250,36.6893
+journal_cross_cross_journal_health_radiology,\hypogenic,56.3333,47.1597,53.1250,34.6939
+journal_cross_cross_journal_health_radiology,\litplusdata,56.0000,46.5760,59.3750,47.9349
+journal_cross_cross_journal_nips_health,Zero-shot Inference,50.8197,35.8064,50.0000,33.3333
+journal_cross_cross_journal_nips_health,Few-shot Inference,56.1475,48.3122,50.0000,33.3333
+journal_cross_cross_journal_nips_health,Zero-shot Generation,50.4098,33.5150,50.0000,33.3333
+journal_cross_cross_journal_nips_health,\paperonly,52.4590,40.8757,47.5000,32.2034
+journal_cross_cross_journal_nips_health,\ioprompt,50.4098,33.5150,57.5000,48.1312
+journal_cross_cross_journal_nips_health,\iorefine,51.2295,36.0088,65.0000,61.5385
+journal_cross_cross_journal_nips_health,\hypogenic,52.4590,39.7685,55.0000,43.5737
+journal_cross_cross_journal_nips_health,\litplusdata,52.0492,37.7320,67.5000,64.8411
+journal_cross_cross_journal_nips_radiology,Zero-shot Inference,55.3333,45.3923,50.0000,33.3333
+journal_cross_cross_journal_nips_radiology,Few-shot Inference,60.6667,54.5571,50.0000,33.3333
+journal_cross_cross_journal_nips_radiology,Zero-shot Generation,52.3333,39.3030,50.0000,33.3333
+journal_cross_cross_journal_nips_radiology,\paperonly,54.0000,42.9563,47.5000,32.2034
+journal_cross_cross_journal_nips_radiology,\ioprompt,50.0000,34.4826,57.5000,48.1312
+journal_cross_cross_journal_nips_radiology,\iorefine,65.6667,65.5561,65.0000,61.5385
+journal_cross_cross_journal_nips_radiology,\hypogenic,56.6667,47.7380,55.0000,43.5737
+journal_cross_cross_journal_nips_radiology,\litplusdata,55.3333,45.7666,67.5000,64.8411
+journal_cross_cross_journal_radiology_health,Zero-shot Inference,50.8197,35.8064,61.2245,46.0290
+journal_cross_cross_journal_radiology_health,Few-shot Inference,53.6885,41.6033,61.2245,46.0290
+journal_cross_cross_journal_radiology_health,Zero-shot Generation,50.4098,33.5150,59.1837,41.3876
+journal_cross_cross_journal_radiology_health,\paperonly,54.0984,43.4203,61.2245,46.0290
+journal_cross_cross_journal_radiology_health,\ioprompt,53.2787,45.5357,61.2245,51.4345
+journal_cross_cross_journal_radiology_health,\iorefine,53.2787,45.5357,61.2245,51.4345
+journal_cross_cross_journal_radiology_health,\hypogenic,54.0984,42.3897,61.2245,46.0290
+journal_cross_cross_journal_radiology_health,\litplusdata,53.2787,46.9970,63.2653,52.8846
+journal_cross_cross_journal_radiology_nips,Zero-shot Inference,51.6667,34.0659,61.2245,46.0290
+journal_cross_cross_journal_radiology_nips,Few-shot Inference,51.6667,34.0659,61.2245,46.0290
+journal_cross_cross_journal_radiology_nips,Zero-shot Generation,51.6667,34.0659,59.1837,41.3876
+journal_cross_cross_journal_radiology_nips,\paperonly,52.6667,37.4413,61.2245,46.0290
+journal_cross_cross_journal_radiology_nips,\ioprompt,61.3333,60.5603,61.2245,51.4345
+journal_cross_cross_journal_radiology_nips,\iorefine,61.3333,60.5603,61.2245,51.4345
+journal_cross_cross_journal_radiology_nips,\hypogenic,55.3333,42.4366,61.2245,46.0290
+journal_cross_cross_journal_radiology_nips,\litplusdata,54.3333,40.9067,63.2653,52.8846

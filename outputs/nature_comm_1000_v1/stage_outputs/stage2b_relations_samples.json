@@ -1,0 +1,542 @@
+[
+  {
+    "title": "Seasonal recurrence and modular assembly of an Arctic pelagic marine microbiome",
+    "跨学科关系": [
+      {
+        "head": "autonomous samplers",
+        "relation": "used to study seasonal structuring of",
+        "relation_type": "method_applied_to",
+        "relation_type_norm": "method_applied_to",
+        "relation_type_raw": "method_applied_to",
+        "tail": "microbial communities",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [],
+        "evidence": "combining autonomous samplers and in situ sensors with long-read metagenomics and SSU ribosomal metabarcoding",
+        "source": "abstract",
+        "confidence": 0.95
+      },
+      {
+        "head": "climate warming",
+        "relation": "drives changes in",
+        "relation_type": "driven_by",
+        "relation_type_norm": "driven_by",
+        "relation_type_raw": "driven_by",
+        "tail": "Arctic Ocean microbiome",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [],
+        "evidence": "unprecedented changes are taking place because of climate warming",
+        "source": "introduction",
+        "confidence": 0.96
+      },
+      {
+        "head": "Tara Oceans",
+        "relation": "provides data for analyzing",
+        "relation_type": "corresponds_to",
+        "relation_type_norm": "corresponds_to",
+        "relation_type_raw": "corresponds_to",
+        "tail": "metatranscriptomes",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [],
+        "evidence": "Leveraging metatranscriptomes from Tara Oceans",
+        "source": "abstract",
+        "confidence": 0.97
+      },
+      {
+        "head": "polar night",
+        "relation": "selects for signature taxa during",
+        "relation_type": "constrains",
+        "relation_type_norm": "constrains",
+        "relation_type_raw": "constrains",
+        "tail": "Cand. Nitrosopumilus",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [],
+        "evidence": "Cand. Nitrosopumilus... are signatures of early polar night",
+        "source": "abstract",
+        "confidence": 0.97
+      },
+      {
+        "head": "mixed layer depth",
+        "relation": "influences through environmental gradients",
+        "relation_type": "improves_metric",
+        "relation_type_norm": "improves_metric",
+        "relation_type_raw": "improves_metric",
+        "tail": "microbial community assembly",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [],
+        "evidence": "seasonal environmental gradients structure microbiomes",
+        "source": "abstract",
+        "confidence": 0.92
+      },
+      {
+        "head": "long-read metagenomics",
+        "relation": "enables functional analysis of",
+        "relation_type": "method_applied_to",
+        "relation_type_norm": "method_applied_to",
+        "relation_type_raw": "method_applied_to",
+        "tail": "biogeochemical cycling",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [],
+        "evidence": "long-read metagenomics... identified functional dynamics",
+        "source": "abstract",
+        "confidence": 0.95
+      },
+      {
+        "head": "environmental selection pressure",
+        "relation": "shapes structuring of",
+        "relation_type": "generalizes",
+        "relation_type_norm": "generalizes",
+        "relation_type_raw": "generalizes",
+        "tail": "genetic diversity",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [],
+        "evidence": "environmental selection pressure acts heterogeneously on microbiomes",
+        "source": "abstract",
+        "confidence": 0.93
+      },
+      {
+        "head": "Amylibacter",
+        "relation": "performs key metabolic function in",
+        "relation_type": "maps_to",
+        "relation_type_norm": "maps_to",
+        "relation_type_raw": "maps_to",
+        "tail": "sulfur compound metabolism",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [],
+        "evidence": "late summer characterized by Amylibacter and sulfur compound metabolism",
+        "source": "abstract",
+        "confidence": 0.94
+      },
+      {
+        "head": "bathymetric map",
+        "relation": "shows location of oceanographic feature",
+        "relation_type": "corresponds_to",
+        "relation_type_norm": "corresponds_to",
+        "relation_type_raw": "corresponds_to",
+        "tail": "West Spitsbergen Current",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [],
+        "evidence": "Bathymetric map of the Fram Strait with the mooring location within the West Spitsbergen Current",
+        "source": "introduction",
+        "confidence": 0.93
+      },
+      {
+        "head": "in situ sensors",
+        "relation": "supports real-time",
+        "relation_type": "extends",
+        "relation_type_norm": "extends",
+        "relation_type_raw": "extends",
+        "tail": "environmental monitoring",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [],
+        "evidence": "autonomous samplers and in situ sensors",
+        "source": "abstract",
+        "confidence": 0.95
+      }
+    ],
+    "按辅助学科分类": {
+      "地球科学": {
+        "概念": [
+          "极夜现象",
+          "海洋混合层",
+          "海底地形测绘"
+        ],
+        "关系": [
+          3,
+          4,
+          8
+        ],
+        "rationale": "提供海洋环境参数与地理特征框架"
+      },
+      "环境科学技术": {
+        "概念": [
+          "环境采样设备",
+          "气候变化",
+          "海洋观测计划"
+        ],
+        "关系": [
+          0,
+          1,
+          2,
+          6,
+          9
+        ],
+        "rationale": "支撑环境监测与气候变化关联分析"
+      }
+    }
+  },
+  {
+    "title": "Lysosomes finely control macrophage inflammatory function via regulating the release of lysosomal Fe2+ through TRPML1 channel",
+    "跨学科关系": [
+      {
+        "head": "TRPML1",
+        "relation": "modulates",
+        "relation_type": "method_applied_to",
+        "relation_type_norm": "method_applied_to",
+        "relation_type_raw": "method_applied_to",
+        "tail": "lysosomal Fe²⁺ release",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [],
+        "evidence": "modulation on the release of lysosomal Fe²⁺",
+        "source": "abstract",
+        "confidence": 0.95
+      },
+      {
+        "head": "lysosomal Fe²⁺",
+        "relation": "activates",
+        "relation_type": "method_applied_to",
+        "relation_type_norm": "method_applied_to",
+        "relation_type_raw": "method_applied_to",
+        "tail": "PHDs",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [],
+        "evidence": "subsequently activates PHDs",
+        "source": "abstract",
+        "confidence": 0.94
+      },
+      {
+        "head": "PHDs",
+        "relation": "represses transcriptional activity",
+        "relation_type": "constrains",
+        "relation_type_norm": "constrains",
+        "relation_type_raw": "constrains",
+        "tail": "NF-κB",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [],
+        "evidence": "activated PHDs then represses transcriptional activity of NF-κB",
+        "source": "abstract",
+        "confidence": 0.93
+      },
+      {
+        "head": "NF-κB",
+        "relation": "promotes transcription",
+        "relation_type": "driven_by",
+        "relation_type_norm": "driven_by",
+        "relation_type_raw": "driven_by",
+        "tail": "IL1B",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [],
+        "evidence": "NF-κB-interleukin 1 beta (IL1B) transcription pathway",
+        "source": "abstract",
+        "confidence": 0.92
+      },
+      {
+        "head": "TRPML1",
+        "relation": "suppresses transcription",
+        "relation_type": "improves_metric",
+        "relation_type_norm": "improves_metric",
+        "relation_type_raw": "improves_metric",
+        "tail": "IL1B",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [],
+        "evidence": "TRPML1 activation suppresses IL1B transcription",
+        "source": "abstract",
+        "confidence": 0.96
+      },
+      {
+        "head": "TRPML1",
+        "relation": "ameliorates clinical signs",
+        "relation_type": "improves_metric",
+        "relation_type_norm": "improves_metric",
+        "relation_type_raw": "improves_metric",
+        "tail": "Dextran sulfate sodium-induced colitis",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [],
+        "evidence": "in vivo stimulation of TRPML1 ameliorates clinical signs of Dextran sulfate sodium-induced colitis",
+        "source": "abstract",
+        "confidence": 0.95
+      },
+      {
+        "head": "ROS",
+        "relation": "activates",
+        "relation_type": "driven_by",
+        "relation_type_norm": "driven_by",
+        "relation_type_raw": "driven_by",
+        "tail": "TRPML1",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [],
+        "evidence": "reactive oxygen species (ROS) serve as endogenous activator of the TRPML1 channel",
+        "source": "introduction",
+        "confidence": 0.94
+      },
+      {
+        "head": "lysosomes",
+        "relation": "links with inflammatory responses",
+        "relation_type": "maps_to",
+        "relation_type_norm": "maps_to",
+        "relation_type_raw": "maps_to",
+        "tail": "inflammatory bowel disease",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [],
+        "evidence": "directly links lysosomes with inflammatory responses... treating inflammatory bowel disease",
+        "source": "abstract",
+        "confidence": 0.93
+      },
+      {
+        "head": "autophagy",
+        "relation": "engages in removing",
+        "relation_type": "method_applied_to",
+        "relation_type_norm": "method_applied_to",
+        "relation_type_raw": "method_applied_to",
+        "tail": "inflammasomes",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [],
+        "evidence": "lysosomes engage in autophagy to remove inflammasomes",
+        "source": "abstract",
+        "confidence": 0.92
+      },
+      {
+        "head": "lysosomal Ca²⁺",
+        "relation": "mediates",
+        "relation_type": "method_applied_to",
+        "relation_type_norm": "method_applied_to",
+        "relation_type_raw": "method_applied_to",
+        "tail": "lysosomal function",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [],
+        "evidence": "TRPML1 mediates release of lysosomal Ca²⁺... exerts lysosomal function",
+        "source": "introduction",
+        "confidence": 0.91
+      }
+    ],
+    "按辅助学科分类": {
+      "生物学": {
+        "概念": [
+          "炎性小体",
+          "基因敲除小鼠",
+          "脂多糖",
+          "克罗恩病",
+          "α-半乳糖苷酶",
+          "通路",
+          "促炎细胞因子",
+          "趋化因子"
+        ],
+        "关系": [
+          8,
+          5,
+          7,
+          6,
+          4,
+          3,
+          2,
+          1
+        ],
+        "rationale": "解析炎症反应中分子机制与免疫调控通路"
+      },
+      "基础医学": {
+        "概念": [
+          "恒定自然杀伤细胞",
+          "溶酶体生成",
+          "抗菌宿主防御",
+          "氧化应激基因",
+          "溶酶体锌离子",
+          "溶酶体功能"
+        ],
+        "关系": [
+          9,
+          10,
+          7,
+          6,
+          5,
+          4
+        ],
+        "rationale": "阐明溶酶体离子稳态与免疫应答的分子关联"
+      },
+      "临床医学": {
+        "概念": [
+          "炎症性肠病",
+          "葡聚糖硫酸钠诱导的结肠炎",
+          "克罗恩病",
+          "自身免疫性疾病",
+          "临床症状",
+          "炎症刺激"
+        ],
+        "关系": [
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "rationale": "验证溶酶体调控机制在炎症性疾病中的治疗潜力"
+      }
+    }
+  },
+  {
+    "title": "Transmembrane voltage-gated nanopores controlled by electrically tunable in-pore chemistry",
+    "跨学科关系": [
+      {
+        "head": "solid-state nanopores",
+        "relation": "通过电可调化学反应实现电压门控",
+        "relation_type": "method_applied_to",
+        "relation_type_norm": "method_applied_to",
+        "relation_type_raw": "method_applied_to",
+        "tail": "chemical reactions",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [],
+        "evidence": "Here we report on voltage-gated solid-state nanopores by electrically tunable chemical reactions",
+        "source": "abstract",
+        "confidence": 0.98
+      },
+      {
+        "head": "transmembrane voltage",
+        "relation": "通过跨膜电压操控沉淀/溶解反应",
+        "relation_type": "driven_by",
+        "relation_type_norm": "driven_by",
+        "relation_type_raw": "driven_by",
+        "tail": "precipitation/dissolution reactions",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [],
+        "evidence": "manipulations of cation flow by transmembrane voltage",
+        "source": "abstract",
+        "confidence": 0.97
+      },
+      {
+        "head": "in-pore chemistry",
+        "relation": "孔内化学反应创建纳米流体二极管",
+        "relation_type": "improves_metric",
+        "relation_type_norm": "improves_metric",
+        "relation_type_raw": "improves_metric",
+        "tail": "nanofluidic diode",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [],
+        "evidence": "Reversible actuation of these physicochemical processes creates a nanofluidic diode",
+        "source": "abstract",
+        "confidence": 0.96
+      },
+      {
+        "head": "chemical degrees of freedom",
+        "relation": "利用化学自由度实现忆阻器",
+        "relation_type": "extends",
+        "relation_type_norm": "extends",
+        "relation_type_raw": "extends",
+        "tail": "memristor",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [],
+        "evidence": "Leveraging chemical degrees of freedom... facilitates a memristor",
+        "source": "abstract",
+        "confidence": 0.95
+      },
+      {
+        "head": "metal phosphates",
+        "relation": "磷酸盐沉淀物通过阻塞纳米孔调节离子电流",
+        "relation_type": "constrains",
+        "relation_type_norm": "constrains",
+        "relation_type_raw": "constrains",
+        "tail": "ionic current",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [],
+        "evidence": "precipitates grow to reduce ionic current by occluding the nanopore",
+        "source": "abstract",
+        "confidence": 0.97
+      },
+      {
+        "head": "dielectric membrane",
+        "relation": "介电膜实现离子电迁移的精确操控",
+        "relation_type": "method_applied_to",
+        "relation_type_norm": "method_applied_to",
+        "relation_type_raw": "method_applied_to",
+        "tail": "ion electromigration",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [],
+        "evidence": "40 nm-thick dielectric membrane... enable precise manipulations of ion electromigration",
+        "source": "introduction",
+        "confidence": 0.94
+      },
+      {
+        "head": "Maxwell-Hall's model",
+        "relation": "麦克斯韦-霍尔模型解释盐度差异下的离子导电行为",
+        "relation_type": "maps_to",
+        "relation_type_norm": "maps_to",
+        "relation_type_raw": "maps_to",
+        "tail": "salinity difference",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [],
+        "evidence": "consistent with Maxwell-Hall’s model for dpore of 300 nm",
+        "source": "introduction",
+        "confidence": 0.93
+      },
+      {
+        "head": "conical nanochannels",
+        "relation": "锥形纳米通道实现纳米沉淀物的运动控制",
+        "relation_type": "improves_metric",
+        "relation_type_norm": "improves_metric",
+        "relation_type_raw": "improves_metric",
+        "tail": "nanoprecipitates",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [],
+        "evidence": "Motion control of in-situ formed nanoprecipitates... with conical nanochannels",
+        "source": "introduction",
+        "confidence": 0.95
+      }
+    ],
+    "按辅助学科分类": {
+      "材料科学": {
+        "概念": [
+          "固态纳米孔",
+          "纳米流体二极管",
+          "介电膜",
+          "锥形纳米通道",
+          "氮化硅膜",
+          "电子束光刻",
+          "纳米受限空间",
+          "纳米沉淀物"
+        ],
+        "关系": [
+          0,
+          2,
+          5,
+          7
+        ],
+        "rationale": "提供纳米结构设计与调控机制，实现离子传输的定向控制"
+      },
+      "物理学": {
+        "概念": [
+          "跨膜电压",
+          "离子电流",
+          "整流比",
+          "忆阻器",
+          "离子输运",
+          "麦克斯韦-霍尔模型",
+          "杜欣长度",
+          "电迁移"
+        ],
+        "关系": [
+          1,
+          3,
+          4,
+          6
+        ],
+        "rationale": "揭示电压驱动下的离子传输动力学与量子效应"
+      }
+    }
+  }
+]

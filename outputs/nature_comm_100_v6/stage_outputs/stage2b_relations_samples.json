@@ -1,0 +1,448 @@
+[
+  {
+    "title": "High-entropy alloy enables multi-path electron synergism and lattice oxygen activation for enhanced oxygen evolution activity",
+    "跨学科关系": [
+      {
+        "head": "high-entropy alloys (HEAs)",
+        "relation": "activates through synergistic multi-path electron transfer",
+        "relation_type": "method_applied_to",
+        "relation_type_norm": "method_applied_to",
+        "relation_type_raw": "method_applied_to",
+        "tail": "lattice oxygen activation mechanism (LOM)",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [],
+        "evidence": "We reveal that high-entropy alloys (HEAs) can efficiently activate the LOM through synergistic multi-path electron transfer",
+        "source": "abstract",
+        "confidence": 0.98
+      },
+      {
+        "head": "multi-path electron transfer",
+        "relation": "facilitates effective activation at Ni-Co dual-site",
+        "relation_type": "method_applied_to",
+        "relation_type_norm": "method_applied_to",
+        "relation_type_raw": "method_applied_to",
+        "tail": "lattice oxygen activation mechanism (LOM)",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [],
+        "evidence": "the integration of weaker Co-O bonds enabling effective LOM at the Ni-Co dual-site through synergistic multi-path electron transfer",
+        "source": "abstract",
+        "confidence": 0.96
+      },
+      {
+        "head": "NiFeCoCrW0.2 HEA",
+        "relation": "achieves reduced overpotential value",
+        "relation_type": "improves_metric",
+        "relation_type_norm": "improves_metric",
+        "relation_type_raw": "improves_metric",
+        "tail": "overpotential",
+        "direction": "->",
+        "quant": {
+          "metric": "overpotential",
+          "value": "220 mV"
+        },
+        "assumptions": [],
+        "evidence": "design of a NiFeCoCrW0.2 HEA that exhibits improved activity, achieving an overpotential of 220 mV at 10 mA cm-2",
+        "source": "abstract",
+        "confidence": 0.97
+      },
+      {
+        "head": "structural and chemical optimizations",
+        "relation": "enables deep oxidation of active Ni sites",
+        "relation_type": "generalizes",
+        "relation_type_norm": "generalizes",
+        "relation_type_raw": "generalizes",
+        "tail": "high-valent oxidation",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [],
+        "evidence": "structural and chemical optimizations including the deep oxidation of active Ni sites",
+        "source": "introduction",
+        "confidence": 0.93
+      },
+      {
+        "head": "TMA+ cations",
+        "relation": "interacts with negatively charged intermediates",
+        "relation_type": "maps_to",
+        "relation_type_norm": "maps_to",
+        "relation_type_raw": "maps_to",
+        "tail": "oxygen-containing intermediates",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [],
+        "evidence": "robust interaction between TMA+ ions and negatively charged oxygen-containing intermediates (O2−)",
+        "source": "introduction",
+        "confidence": 0.94
+      },
+      {
+        "head": "multi-pathway regulation systems",
+        "relation": "demonstrates superiority in manipulating reaction mechanisms",
+        "relation_type": "extends",
+        "relation_type_norm": "extends",
+        "relation_type_raw": "extends",
+        "tail": "electrocatalytic mechanistic shifts",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [],
+        "evidence": "multi-path electronic modulation in manipulating electrocatalytic mechanistic shifts",
+        "source": "introduction",
+        "confidence": 0.92
+      }
+    ],
+    "按辅助学科分类": {
+      "材料科学": {
+        "概念": [
+          "高熵合金",
+          "镍铁钴铬钨0.2高熵合金",
+          "多路径电子转移",
+          "钴-氧键",
+          "镍-钴双位点",
+          "结构和化学优化"
+        ],
+        "关系": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "rationale": "通过高熵合金设计与多路径电子转移机制优化晶格氧活化过程"
+      },
+      "动力与电气工程": {
+        "概念": [
+          "过电位",
+          "电流密度",
+          "稳定性",
+          "电位变化",
+          "电催化路径",
+          "多路径电子调制"
+        ],
+        "关系": [
+          2,
+          5
+        ],
+        "rationale": "通过电化学性能评估验证多路径电子调制对反应机制的调控效果"
+      }
+    }
+  },
+  {
+    "title": "Leaf-based energy harvesting and storage utilizing hygroscopic iron hydrogel for continuous power generation",
+    "跨学科关系": [
+      {
+        "head": "hygroscopic iron hydrogel",
+        "relation": "asymmetric coating of hygroscopic iron hydrogels enables moisture-driven energy harvesting",
+        "relation_type": "method_applied_to",
+        "relation_type_norm": "method_applied_to",
+        "relation_type_raw": "method_applied_to",
+        "tail": "energy harvesting",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [],
+        "evidence": "asymmetric coating of hygroscopic iron hydrogels...showing capacitance-like behavior for energy charging and discharging",
+        "source": "abstract",
+        "confidence": 0.96
+      },
+      {
+        "head": "leaf veins",
+        "relation": "leaf veins maintain water gradient through diffusion restriction",
+        "relation_type": "constrains",
+        "relation_type_norm": "constrains",
+        "relation_type_raw": "constrains",
+        "tail": "water retention",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [],
+        "evidence": "leaf veins for water retention and diffusion restriction...forming electrical double layers",
+        "source": "abstract",
+        "confidence": 0.95
+      },
+      {
+        "head": "carbon coatings",
+        "relation": "uniform carbon coatings enhance electrical conductivity",
+        "relation_type": "improves_metric",
+        "relation_type_norm": "improves_metric",
+        "relation_type_raw": "improves_metric",
+        "tail": "electrical conductivity",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [],
+        "evidence": "uniform carbon coatings instead of aggregations, and high electrical conductivity",
+        "source": "abstract",
+        "confidence": 0.94
+      },
+      {
+        "head": "atmospheric moisture",
+        "relation": "atmospheric moisture serves as renewable energy source",
+        "relation_type": "driven_by",
+        "relation_type_norm": "driven_by",
+        "relation_type_raw": "driven_by",
+        "tail": "energy harvesting",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [],
+        "evidence": "Atmospheric moisture is emerging as a promising alternative renewable energy source",
+        "source": "introduction",
+        "confidence": 0.93
+      },
+      {
+        "head": "biodegradability",
+        "relation": "biodegradability reduces environmental impact",
+        "relation_type": "constrains",
+        "relation_type_norm": "constrains",
+        "relation_type_raw": "constrains",
+        "tail": "environmental impact",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [],
+        "evidence": "potential for lower environmental impact compared to other types of energy harvesters",
+        "source": "abstract",
+        "confidence": 0.92
+      },
+      {
+        "head": "Lotus Leaves Effects",
+        "relation": "nano-micro cell structures provide hydrophobic self-cleaning surface",
+        "relation_type": "corresponds_to",
+        "relation_type_norm": "corresponds_to",
+        "relation_type_raw": "corresponds_to",
+        "tail": "self-cleaning surface",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [],
+        "evidence": "surfaces with nano-micro cell structures, known as Lotus Leaves Effects...droplet-repellent water and energy harvesters",
+        "source": "introduction",
+        "confidence": 0.91
+      },
+      {
+        "head": "hierarchical porous structures",
+        "relation": "hierarchical porous structures enhance mechanical strength",
+        "relation_type": "improves_metric",
+        "relation_type_norm": "improves_metric",
+        "relation_type_raw": "improves_metric",
+        "tail": "mechanical strength",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [],
+        "evidence": "leaf veins...hierarchical porous structures...improving mechanical strength",
+        "source": "introduction",
+        "confidence": 0.9
+      }
+    ],
+    "按辅助学科分类": {
+      "能源科学技术": {
+        "概念": [
+          "能量收集",
+          "发电",
+          "摩擦纳米发电机",
+          "接触-分离",
+          "大气湿气",
+          "自供电可穿戴技术",
+          "内建电势差",
+          "环境湿气"
+        ],
+        "关系": [
+          0,
+          3,
+          4
+        ],
+        "rationale": "提供能量转换机制与可持续能源解决方案"
+      },
+      "化学": {
+        "概念": [
+          "铁基水凝胶",
+          "吸湿",
+          "金属有机框架",
+          "复合材料",
+          "木质素",
+          "硫酸根自由基",
+          "活性氧物种"
+        ],
+        "关系": [
+          0,
+          5
+        ],
+        "rationale": "开发吸湿性材料并优化分子结构以增强能量转换效率"
+      }
+    }
+  },
+  {
+    "title": "Multi-modal framework for battery state of health evaluation using open-source electric vehicle data",
+    "跨学科关系": [
+      {
+        "head": "multi-modal framework",
+        "relation": "proposed to enable efficient and accurate evaluation of",
+        "relation_type": "method_applied_to",
+        "relation_type_norm": "method_applied_to",
+        "relation_type_raw": "method_applied_to",
+        "tail": "battery state of health (SOH)",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [],
+        "evidence": "we propose a deep learning-based multi-modal framework... for efficient, accurate, and cost-effective state of health estimation",
+        "source": "abstract",
+        "confidence": 0.95
+      },
+      {
+        "head": "deep learning-based",
+        "relation": "applied to develop effective and reliable",
+        "relation_type": "method_applied_to",
+        "relation_type_norm": "method_applied_to",
+        "relation_type_raw": "method_applied_to",
+        "tail": "battery management system (BMS)",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [],
+        "evidence": "deep learning-based multi-modal framework... promote further research on BMS development",
+        "source": "abstract",
+        "confidence": 0.94
+      },
+      {
+        "head": "open-source battery datasets",
+        "relation": "critical for advancing",
+        "relation_type": "maps_to",
+        "relation_type_norm": "maps_to",
+        "relation_type_raw": "maps_to",
+        "tail": "battery degradation studies",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [],
+        "evidence": "availability of open-source battery datasets is critical for advancing battery research",
+        "source": "introduction",
+        "confidence": 0.96
+      },
+      {
+        "head": "nonlinear time-varying system",
+        "relation": "characterized by the electrochemical mechanisms of lithium batteries",
+        "relation_type": "constrains",
+        "relation_type_norm": "constrains",
+        "relation_type_raw": "constrains",
+        "tail": "electrochemical mechanism",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [],
+        "evidence": "battery is a nonlinear, time-varying system due to electrochemical mechanisms leading to irreversible aging",
+        "source": "introduction",
+        "confidence": 0.93
+      },
+      {
+        "head": "electrochemical impedance spectroscopy (EIS)",
+        "relation": "used to delineate degradation patterns through spectral analysis",
+        "relation_type": "method_applied_to",
+        "relation_type_norm": "method_applied_to",
+        "relation_type_raw": "method_applied_to",
+        "tail": "degradation patterns",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [],
+        "evidence": "20,000 EIS spectra from commercial batteries across various SOH... accurately delineate degradation patterns",
+        "source": "introduction",
+        "confidence": 0.97
+      },
+      {
+        "head": "cell-to-cell variation",
+        "relation": "results in rapid degradation because of the",
+        "relation_type": "constrains",
+        "relation_type_norm": "constrains",
+        "relation_type_raw": "constrains",
+        "tail": "barrel effect",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [],
+        "evidence": "cell-to-cell variation results in rapid degradation because of the barrel effect",
+        "source": "introduction",
+        "confidence": 0.95
+      },
+      {
+        "head": "historical vehicle data",
+        "relation": "analyzed to understand aging mechanisms in",
+        "relation_type": "inferred_from",
+        "relation_type_norm": "inferred_from",
+        "relation_type_raw": "inferred_from",
+        "tail": "lithium-ion batteries",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [],
+        "evidence": "operational data analysis reveals disparities between field data and laboratory battery test data",
+        "source": "abstract",
+        "confidence": 0.92
+      },
+      {
+        "head": "multi-sensor systems",
+        "relation": "enable joint estimation of SOH and",
+        "relation_type": "extends",
+        "relation_type_norm": "extends",
+        "relation_type_raw": "extends",
+        "tail": "state of charge (SOC)",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [],
+        "evidence": "proposed paradigm exhibits potential for state estimation in multi-sensor systems",
+        "source": "abstract",
+        "confidence": 0.91
+      },
+      {
+        "head": "active materials",
+        "relation": "loss contributes to performance degradation including",
+        "relation_type": "constrains",
+        "relation_type_norm": "constrains",
+        "relation_type_raw": "constrains",
+        "tail": "internal resistance increase",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [],
+        "evidence": "loss of active materials... results in performance degradation in terms of internal resistance increase",
+        "source": "introduction",
+        "confidence": 0.94
+      },
+      {
+        "head": "extrapolation of battery characteristics",
+        "relation": "generated from limited lab testing leading to significant errors",
+        "relation_type": "depends_on",
+        "relation_type_norm": "depends_on",
+        "relation_type_raw": "depends_on",
+        "tail": "laboratory battery test data",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [],
+        "evidence": "generate some extrapolation of battery characteristics obtained from lab testing",
+        "source": "introduction",
+        "confidence": 0.9
+      }
+    ],
+    "按辅助学科分类": {
+      "动力与电气工程": {
+        "概念": [
+          "电池健康状态",
+          "电池管理系统",
+          "锂离子电池",
+          "固态电解质界面生长",
+          "单体间差异",
+          "木桶效应",
+          "内阻增加"
+        ],
+        "关系": [
+          0,
+          1,
+          5,
+          6
+        ],
+        "rationale": "提供电池系统特性描述与健康状态评估的工程框架"
+      },
+      "材料科学": {
+        "概念": [
+          "活性材料",
+          "锂沉积",
+          "电化学机理",
+          "退化模式",
+          "充电状态"
+        ],
+        "关系": [
+          3,
+          4,
+          8,
+          9
+        ],
+        "rationale": "揭示电池材料特性与化学机制对性能退化的影响规律"
+      }
+    }
+  }
+]

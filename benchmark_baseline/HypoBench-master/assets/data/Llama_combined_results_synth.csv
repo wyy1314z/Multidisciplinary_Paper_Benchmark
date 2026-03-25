@@ -1,0 +1,487 @@
+Task,Method,Accuracy,F1
+admission_level_1_base,Zero-shot Inference,84.5000,84.4685
+admission_level_1_base,Few-shot Inference,100.0000,100.0000
+admission_level_1_base,Zero-shot Generation,84.5000,84.4685
+admission_level_1_base,\ioprompt,92.2500,92.2343
+admission_level_1_base,\iorefine,92.2500,92.2343
+admission_level_1_base,\hypogenic,91.0000,90.9964
+admission_level_2_size_5,Zero-shot Inference,50.5000,42.8918
+admission_level_2_size_5,Few-shot Inference,59.0000,58.4978
+admission_level_2_size_5,Zero-shot Generation,68.5000,68.2708
+admission_level_2_size_5,\ioprompt,56.1667,54.9522
+admission_level_2_size_5,\iorefine,61.5000,61.2189
+admission_level_2_size_5,\hypogenic,65.0000,60.7227
+admission_level_2_distractor_3,Zero-shot Inference,87.0000,86.9883
+admission_level_2_distractor_3,Few-shot Inference,92.0000,91.9606
+admission_level_2_distractor_3,Zero-shot Generation,54.0000,42.3197
+admission_level_2_distractor_3,\ioprompt,93.5000,93.4803
+admission_level_2_distractor_3,\iorefine,93.5000,93.4803
+admission_level_2_distractor_3,\hypogenic,95.5000,95.4972
+admission_level_2_depth_2,Zero-shot Inference,86.0000,85.7593
+admission_level_2_depth_2,Few-shot Inference,92.5000,92.4682
+admission_level_2_depth_2,Zero-shot Generation,71.0000,68.5330
+admission_level_2_depth_2,\ioprompt,99.5000,99.5000
+admission_level_2_depth_2,\iorefine,99.5000,99.5000
+admission_level_2_depth_2,\hypogenic,99.5000,99.5000
+admission_level_2_noise_10,Zero-shot Inference,78.5000,78.4348
+admission_level_2_noise_10,Few-shot Inference,83.5000,83.3161
+admission_level_2_noise_10,Zero-shot Generation,78.5000,78.4348
+admission_level_2_noise_10,\ioprompt,83.5000,83.3161
+admission_level_2_noise_10,\iorefine,64.7500,63.5350
+admission_level_2_noise_10,\hypogenic,77.0000,76.9977
+admission_level_3_depth_3,Zero-shot Inference,57.0000,56.8922
+admission_level_3_depth_3,Few-shot Inference,58.5000,58.0374
+admission_level_3_depth_3,Zero-shot Generation,58.5000,58.0374
+admission_level_3_depth_3,\ioprompt,54.5000,47.9390
+admission_level_3_depth_3,\iorefine,57.5000,57.1907
+admission_level_3_depth_3,\hypogenic,62.0000,61.8627
+admission_level_3_distractor_6,Zero-shot Inference,62.5000,61.1711
+admission_level_3_distractor_6,Few-shot Inference,78.0000,76.5333
+admission_level_3_distractor_6,Zero-shot Generation,67.0000,65.8950
+admission_level_3_distractor_6,\ioprompt,62.5000,57.5034
+admission_level_3_distractor_6,\iorefine,99.5000,99.4994
+admission_level_3_distractor_6,\hypogenic,82.5000,81.7323
+admission_level_3_noise_20,Zero-shot Inference,64.5000,64.3923
+admission_level_3_noise_20,Few-shot Inference,64.5000,64.3923
+admission_level_3_noise_20,Zero-shot Generation,64.5000,64.3923
+admission_level_3_noise_20,\ioprompt,63.5000,61.7310
+admission_level_3_noise_20,\iorefine,53.4000,34.8108
+admission_level_3_noise_20,\hypogenic,54.5000,37.1872
+admission_level_3_size_10,Zero-shot Inference,57.5000,51.3716
+admission_level_3_size_10,Few-shot Inference,58.0000,52.5102
+admission_level_3_size_10,Zero-shot Generation,58.5000,53.2539
+admission_level_3_size_10,\ioprompt,65.5000,65.2880
+admission_level_3_size_10,\iorefine,55.0000,46.4286
+admission_level_3_size_10,\hypogenic,66.0000,65.9966
+admission_level_4_depth_4,Zero-shot Inference,60.0000,59.0793
+admission_level_4_depth_4,Few-shot Inference,67.0000,66.9471
+admission_level_4_depth_4,Zero-shot Generation,65.0000,64.3003
+admission_level_4_depth_4,\ioprompt,61.5000,60.4225
+admission_level_4_depth_4,\iorefine,66.5000,66.2276
+admission_level_4_depth_4,\hypogenic,76.0000,75.9398
+admission_level_4_distractor_10,Zero-shot Inference,63.0000,61.1181
+admission_level_4_distractor_10,Few-shot Inference,82.0000,81.9549
+admission_level_4_distractor_10,Zero-shot Generation,66.0000,65.3203
+admission_level_4_distractor_10,\ioprompt,70.5000,69.4546
+admission_level_4_distractor_10,\iorefine,57.7500,57.2885
+admission_level_4_distractor_10,\hypogenic,82.0000,81.2500
+admission_level_4_noise_30,Zero-shot Inference,58.5000,57.4784
+admission_level_4_noise_30,Few-shot Inference,44.0000,43.0373
+admission_level_4_noise_30,Zero-shot Generation,58.5000,57.4784
+admission_level_4_noise_30,\ioprompt,46.5000,46.3565
+admission_level_4_noise_30,\iorefine,51.0000,49.6431
+admission_level_4_noise_30,\hypogenic,52.0000,49.5586
+admission_level_4_size_15,Zero-shot Inference,69.0000,64.0830
+admission_level_4_size_15,Few-shot Inference,71.0000,69.0667
+admission_level_4_size_15,Zero-shot Generation,70.5000,67.4743
+admission_level_4_size_15,\ioprompt,62.5000,60.2970
+admission_level_4_size_15,\iorefine,61.0000,56.4450
+admission_level_4_size_15,\hypogenic,56.0000,55.2436
+shoe,Zero-shot Inference,40.0000,41.0267
+shoe,Few-shot Inference,68.0000,69.8566
+shoe,Zero-shot Generation,31.0000,30.0728
+shoe,\ioprompt,60.0000,59.7540
+shoe,\iorefine,100.0000,100.0000
+shoe,\hypogenic,31.0000,25.8640
+shoe_two_level_simple,Zero-shot Inference,38.0000,38.3514
+shoe_two_level_simple,Few-shot Inference,50.0000,46.2315
+shoe_two_level_simple,Zero-shot Generation,31.0000,27.6906
+shoe_two_level_simple,\ioprompt,53.0000,51.8819
+shoe_two_level_simple,\iorefine,55.0000,51.6395
+shoe_two_level_simple,\hypogenic,36.0000,35.2076
+shoe_two_level_hard,Zero-shot Inference,38.0000,33.2662
+shoe_two_level_hard,Few-shot Inference,36.0000,36.8257
+shoe_two_level_hard,Zero-shot Generation,28.0000,21.2144
+shoe_two_level_hard,\ioprompt,35.0000,26.6769
+shoe_two_level_hard,\iorefine,57.0000,56.9532
+shoe_two_level_hard,\hypogenic,41.0000,40.1963
+election_level0,Zero-shot Inference,26.6667,29.3661
+election_level0,Few-shot Inference,38.0000,40.0310
+election_level0,Zero-shot Generation,43.3333,40.3543
+election_level0,\ioprompt,48.8000,43.1010
+election_level0,\iorefine,40.3333,37.4390
+election_level0,\hypogenic,69.3333,49.1859
+election_level1,Zero-shot Inference,35.0000,33.1089
+election_level1,Few-shot Inference,36.6667,33.5884
+election_level1,Zero-shot Generation,31.3333,31.5358
+election_level1,\ioprompt,33.1667,32.3520
+election_level1,\iorefine,33.6667,33.1804
+election_level1,\hypogenic,34.3333,34.1655
+election_level2,Zero-shot Inference,35.6667,33.7571
+election_level2,Few-shot Inference,37.3333,36.6194
+election_level2,Zero-shot Generation,33.3333,33.3606
+election_level2,\ioprompt,38.6667,33.7948
+election_level2,\iorefine,38.3333,33.2501
+election_level2,\hypogenic,29.6667,29.7573
+election_level3,Zero-shot Inference,29.3333,27.6032
+election_level3,Few-shot Inference,28.6667,27.7935
+election_level3,Zero-shot Generation,28.3333,28.1458
+election_level3,\ioprompt,26.7778,25.4543
+election_level3,\iorefine,26.5000,26.4182
+election_level3,\hypogenic,25.3333,24.4009
+election_level4,Zero-shot Inference,34.6667,32.5895
+election_level4,Few-shot Inference,38.3333,35.8283
+election_level4,Zero-shot Generation,33.6667,32.6880
+election_level4,\ioprompt,33.7333,31.3575
+election_level4,\iorefine,36.3333,35.6582
+election_level4,\hypogenic,30.0000,29.3049
+election_level5,Zero-shot Inference,31.0000,29.1152
+election_level5,Few-shot Inference,29.6667,25.4878
+election_level5,Zero-shot Generation,29.3333,29.3640
+election_level5,\ioprompt,30.3333,28.5703
+election_level5,\iorefine,31.0000,27.6745
+election_level5,\hypogenic,32.6667,30.7224
+preference_level0,Zero-shot Inference,36.0000,38.1408
+preference_level0,Few-shot Inference,37.3333,41.6386
+preference_level0,Zero-shot Generation,32.3333,31.6103
+preference_level0,\ioprompt,53.0667,45.8810
+preference_level0,\iorefine,49.6000,42.6152
+preference_level0,\hypogenic,63.0000,46.4490
+preference_level1,Zero-shot Inference,27.0000,21.3950
+preference_level1,Few-shot Inference,21.3333,20.7608
+preference_level1,Zero-shot Generation,37.0000,27.2071
+preference_level1,\ioprompt,48.9333,28.7813
+preference_level1,\iorefine,59.0000,30.5838
+preference_level1,\hypogenic,51.3333,32.2762
+preference_level2,Zero-shot Inference,29.0000,22.6407
+preference_level2,Few-shot Inference,17.3333,15.5659
+preference_level2,Zero-shot Generation,43.6667,26.8824
+preference_level2,\ioprompt,48.7333,23.1600
+preference_level2,\iorefine,46.2000,25.6184
+preference_level2,\hypogenic,53.6667,31.0179
+preference_level3,Zero-shot Inference,33.3333,26.3259
+preference_level3,Few-shot Inference,20.3333,19.9901
+preference_level3,Zero-shot Generation,44.0000,32.1183
+preference_level3,\ioprompt,47.2667,30.0636
+preference_level3,\iorefine,47.0000,27.5397
+preference_level3,\hypogenic,70.0000,32.0967
+preference_level4,Zero-shot Inference,29.3333,23.5066
+preference_level4,Few-shot Inference,18.3333,17.6413
+preference_level4,Zero-shot Generation,38.3333,27.7082
+preference_level4,\ioprompt,54.4667,29.0673
+preference_level4,\iorefine,62.8000,30.6533
+preference_level4,\hypogenic,57.3333,32.4264
+preference_level5,Zero-shot Inference,33.3333,26.9907
+preference_level5,Few-shot Inference,24.3333,24.1151
+preference_level5,Zero-shot Generation,43.3333,28.7137
+preference_level5,\ioprompt,54.0000,28.1328
+preference_level5,\iorefine,50.8667,29.7853
+preference_level5,\hypogenic,60.3333,36.0859
+election_level0_nosubtlety,Zero-shot Inference,46.6667,46.7391
+election_level0_nosubtlety,Few-shot Inference,22.3333,19.8312
+election_level0_nosubtlety,Zero-shot Generation,61.0000,58.2029
+election_level0_nosubtlety,\ioprompt,53.0000,51.0366
+election_level0_nosubtlety,\iorefine,66.3333,63.9063
+election_level0_nosubtlety,\hypogenic,52.0000,51.1312
+election_level1_nosubtlety,Zero-shot Inference,12.6667,11.4739
+election_level1_nosubtlety,Few-shot Inference,16.6667,15.4405
+election_level1_nosubtlety,Zero-shot Generation,17.6667,13.5108
+election_level1_nosubtlety,\ioprompt,14.0000,10.8643
+election_level1_nosubtlety,\iorefine,25.6667,16.5897
+election_level1_nosubtlety,\hypogenic,41.3333,41.1905
+election_level2_nosubtlety,Zero-shot Inference,54.0000,37.6889
+election_level2_nosubtlety,Few-shot Inference,55.0000,39.9412
+election_level2_nosubtlety,Zero-shot Generation,48.0000,35.2143
+election_level2_nosubtlety,\ioprompt,52.8333,36.8538
+election_level2_nosubtlety,\iorefine,64.6667,42.6222
+election_level2_nosubtlety,\hypogenic,58.0000,39.2976
+election_level3_nosubtlety,Zero-shot Inference,35.6667,28.1235
+election_level3_nosubtlety,Few-shot Inference,38.3333,27.3379
+election_level3_nosubtlety,Zero-shot Generation,37.6667,31.4084
+election_level3_nosubtlety,\ioprompt,55.6667,42.3960
+election_level3_nosubtlety,\iorefine,34.5556,24.7008
+election_level3_nosubtlety,\hypogenic,45.6667,38.5492
+election_level4_nosubtlety,Zero-shot Inference,23.3333,23.1040
+election_level4_nosubtlety,Few-shot Inference,29.6667,27.1954
+election_level4_nosubtlety,Zero-shot Generation,32.0000,26.4823
+election_level4_nosubtlety,\ioprompt,26.3333,24.8634
+election_level4_nosubtlety,\iorefine,28.5000,24.0954
+election_level4_nosubtlety,\hypogenic,48.6667,44.9717
+election_level5_nosubtlety,Zero-shot Inference,47.6667,42.4975
+election_level5_nosubtlety,Few-shot Inference,40.0000,33.6990
+election_level5_nosubtlety,Zero-shot Generation,47.6667,39.4879
+election_level5_nosubtlety,\ioprompt,34.0000,28.6368
+election_level5_nosubtlety,\iorefine,41.1667,34.1486
+election_level5_nosubtlety,\hypogenic,46.3333,36.3117
+preference_level0_nosubtlety,Zero-shot Inference,38.6667,37.0682
+preference_level0_nosubtlety,Few-shot Inference,39.0000,39.6499
+preference_level0_nosubtlety,Zero-shot Generation,38.0000,37.9988
+preference_level0_nosubtlety,\ioprompt,52.6667,47.9568
+preference_level0_nosubtlety,\iorefine,52.6667,38.9798
+preference_level0_nosubtlety,\hypogenic,69.0000,59.2052
+preference_level1_nosubtlety,Zero-shot Inference,6.6667,7.1270
+preference_level1_nosubtlety,Few-shot Inference,5.3333,6.2044
+preference_level1_nosubtlety,Zero-shot Generation,14.6667,14.6713
+preference_level1_nosubtlety,\ioprompt,27.4667,26.2243
+preference_level1_nosubtlety,\iorefine,34.7333,29.0208
+preference_level1_nosubtlety,\hypogenic,26.6667,26.3393
+preference_level2_nosubtlety,Zero-shot Inference,35.6667,35.0359
+preference_level2_nosubtlety,Few-shot Inference,40.0000,38.6442
+preference_level2_nosubtlety,Zero-shot Generation,35.0000,34.4786
+preference_level2_nosubtlety,\ioprompt,39.9333,33.0663
+preference_level2_nosubtlety,\iorefine,39.2000,33.3412
+preference_level2_nosubtlety,\hypogenic,46.0000,42.2494
+preference_level3_nosubtlety,Zero-shot Inference,9.3333,10.5623
+preference_level3_nosubtlety,Few-shot Inference,11.0000,11.3721
+preference_level3_nosubtlety,Zero-shot Generation,11.0000,11.7317
+preference_level3_nosubtlety,\ioprompt,20.0000,16.3331
+preference_level3_nosubtlety,\iorefine,15.0000,14.9009
+preference_level3_nosubtlety,\hypogenic,18.6667,14.8426
+preference_level4_nosubtlety,Zero-shot Inference,26.0000,21.2596
+preference_level4_nosubtlety,Few-shot Inference,28.3333,21.8879
+preference_level4_nosubtlety,Zero-shot Generation,31.3333,24.8038
+preference_level4_nosubtlety,\ioprompt,47.4000,30.8385
+preference_level4_nosubtlety,\iorefine,49.8667,33.1531
+preference_level4_nosubtlety,\hypogenic,54.3333,35.2977
+preference_level5_nosubtlety,Zero-shot Inference,29.6667,31.7294
+preference_level5_nosubtlety,Few-shot Inference,30.0000,31.4166
+preference_level5_nosubtlety,Zero-shot Generation,36.6667,36.1863
+preference_level5_nosubtlety,\ioprompt,42.1333,31.2107
+preference_level5_nosubtlety,\iorefine,37.6667,32.4767
+preference_level5_nosubtlety,\hypogenic,42.0000,40.6656
+election_controlled_5_0_0,Zero-shot Inference,25.6667,20.6631
+election_controlled_5_0_0,Few-shot Inference,31.6667,24.8714
+election_controlled_5_0_0,Zero-shot Generation,24.3333,20.0381
+election_controlled_5_0_0,\ioprompt,45.3333,35.4407
+election_controlled_5_0_0,\iorefine,21.2222,17.5946
+election_controlled_5_0_0,\hypogenic,46.0000,32.3806
+election_controlled_10_0_0,Zero-shot Inference,33.0000,26.3566
+election_controlled_10_0_0,Few-shot Inference,26.6667,21.6396
+election_controlled_10_0_0,Zero-shot Generation,26.3333,24.3906
+election_controlled_10_0_0,\ioprompt,29.7778,24.0847
+election_controlled_10_0_0,\iorefine,33.0833,25.8695
+election_controlled_10_0_0,\hypogenic,33.0000,29.5861
+election_controlled_15_0_0,Zero-shot Inference,13.3333,15.8367
+election_controlled_15_0_0,Few-shot Inference,15.6667,19.1866
+election_controlled_15_0_0,Zero-shot Generation,14.6667,17.6238
+election_controlled_15_0_0,\ioprompt,17.3333,19.3662
+election_controlled_15_0_0,\iorefine,16.2000,19.5852
+election_controlled_15_0_0,\hypogenic,16.3333,20.8664
+election_controlled_20_0_0,Zero-shot Inference,33.6667,27.2028
+election_controlled_20_0_0,Few-shot Inference,25.6667,20.4655
+election_controlled_20_0_0,Zero-shot Generation,34.6667,31.0826
+election_controlled_20_0_0,\ioprompt,31.3333,26.2468
+election_controlled_20_0_0,\iorefine,45.6667,35.1597
+election_controlled_20_0_0,\hypogenic,48.0000,34.6197
+election_controlled_20_0.1_0,Zero-shot Inference,41.3333,33.2147
+election_controlled_20_0.1_0,Few-shot Inference,33.6667,30.1769
+election_controlled_20_0.1_0,Zero-shot Generation,42.3333,37.7803
+election_controlled_20_0.1_0,\ioprompt,41.0000,36.2935
+election_controlled_20_0.1_0,\iorefine,39.0000,29.5885
+election_controlled_20_0.1_0,\hypogenic,39.6667,34.3615
+election_controlled_20_0.2_0,Zero-shot Inference,30.6667,28.6946
+election_controlled_20_0.2_0,Few-shot Inference,30.3333,28.2486
+election_controlled_20_0.2_0,Zero-shot Generation,33.3333,32.3563
+election_controlled_20_0.2_0,\ioprompt,30.6667,29.6231
+election_controlled_20_0.2_0,\iorefine,28.0000,25.7341
+election_controlled_20_0.2_0,\hypogenic,39.3333,33.9153
+election_controlled_20_0.3_0,Zero-shot Inference,23.6667,21.9442
+election_controlled_20_0.3_0,Few-shot Inference,21.6667,19.2387
+election_controlled_20_0.3_0,Zero-shot Generation,27.3333,26.9870
+election_controlled_20_0.3_0,\ioprompt,30.5000,27.4006
+election_controlled_20_0.3_0,\iorefine,25.2667,24.5107
+election_controlled_20_0.3_0,\hypogenic,28.0000,26.5776
+election_controlled_20_0_0.1,Zero-shot Inference,61.6667,38.0466
+election_controlled_20_0_0.1,Few-shot Inference,39.0000,29.2638
+election_controlled_20_0_0.1,Zero-shot Generation,56.6667,39.3425
+election_controlled_20_0_0.1,\ioprompt,64.6667,42.9641
+election_controlled_20_0_0.1,\iorefine,68.3333,43.0710
+election_controlled_20_0_0.1,\hypogenic,63.0000,39.4421
+election_controlled_20_0_0.2,Zero-shot Inference,18.3333,19.3595
+election_controlled_20_0_0.2,Few-shot Inference,32.6667,31.1222
+election_controlled_20_0_0.2,Zero-shot Generation,27.6667,26.9364
+election_controlled_20_0_0.2,\ioprompt,24.0833,23.0078
+election_controlled_20_0_0.2,\iorefine,28.2222,26.8462
+election_controlled_20_0_0.2,\hypogenic,32.6667,30.0896
+election_controlled_20_0_0.3,Zero-shot Inference,29.6667,26.3389
+election_controlled_20_0_0.3,Few-shot Inference,33.0000,32.0674
+election_controlled_20_0_0.3,Zero-shot Generation,32.6667,31.8737
+election_controlled_20_0_0.3,\ioprompt,27.0000,26.0835
+election_controlled_20_0_0.3,\iorefine,31.0000,30.8835
+election_controlled_20_0_0.3,\hypogenic,33.6667,32.8074
+election_controlled_20_0.1_0.1,Zero-shot Inference,21.0000,21.2881
+election_controlled_20_0.1_0.1,Few-shot Inference,19.3333,17.8661
+election_controlled_20_0.1_0.1,Zero-shot Generation,21.3333,22.0133
+election_controlled_20_0.1_0.1,\ioprompt,19.5000,18.9697
+election_controlled_20_0.1_0.1,\iorefine,19.3333,19.3438
+election_controlled_20_0.1_0.1,\hypogenic,24.0000,23.5165
+election_controlled_20_0.2_0.2,Zero-shot Inference,31.3333,25.3204
+election_controlled_20_0.2_0.2,Few-shot Inference,30.0000,29.5249
+election_controlled_20_0.2_0.2,Zero-shot Generation,36.6667,33.9360
+election_controlled_20_0.2_0.2,\ioprompt,39.3333,37.4371
+election_controlled_20_0.2_0.2,\iorefine,32.6667,29.8829
+election_controlled_20_0.2_0.2,\hypogenic,35.6667,30.9800
+election_controlled_20_0.3_0.3,Zero-shot Inference,27.0000,24.0921
+election_controlled_20_0.3_0.3,Few-shot Inference,28.3333,26.7953
+election_controlled_20_0.3_0.3,Zero-shot Generation,25.0000,23.9979
+election_controlled_20_0.3_0.3,\ioprompt,26.4444,23.4909
+election_controlled_20_0.3_0.3,\iorefine,26.6667,24.6851
+election_controlled_20_0.3_0.3,\hypogenic,28.3333,27.7441
+preference_controlled_5_0_0,Zero-shot Inference,23.0000,20.6173
+preference_controlled_5_0_0,Few-shot Inference,27.6667,27.3736
+preference_controlled_5_0_0,Zero-shot Generation,29.6667,22.5451
+preference_controlled_5_0_0,\ioprompt,36.4667,21.2433
+preference_controlled_5_0_0,\iorefine,32.6667,21.0353
+preference_controlled_5_0_0,\hypogenic,40.6667,22.6188
+preference_controlled_10_0_0,Zero-shot Inference,25.6667,24.4129
+preference_controlled_10_0_0,Few-shot Inference,33.3333,29.4965
+preference_controlled_10_0_0,Zero-shot Generation,16.6667,17.2165
+preference_controlled_10_0_0,\ioprompt,29.3333,23.9165
+preference_controlled_10_0_0,\iorefine,22.8000,21.4602
+preference_controlled_10_0_0,\hypogenic,36.3333,32.2970
+preference_controlled_15_0_0,Zero-shot Inference,34.3333,28.0454
+preference_controlled_15_0_0,Few-shot Inference,36.6667,28.4204
+preference_controlled_15_0_0,Zero-shot Generation,30.6667,23.9756
+preference_controlled_15_0_0,\ioprompt,40.3333,26.4938
+preference_controlled_15_0_0,\iorefine,57.6667,34.6103
+preference_controlled_15_0_0,\hypogenic,39.3333,31.0482
+preference_controlled_20_0_0,Zero-shot Inference,32.0000,31.7761
+preference_controlled_20_0_0,Few-shot Inference,36.3333,30.8594
+preference_controlled_20_0_0,Zero-shot Generation,35.0000,33.1273
+preference_controlled_20_0_0,\ioprompt,31.2000,29.1086
+preference_controlled_20_0_0,\iorefine,39.8000,33.7176
+preference_controlled_20_0_0,\hypogenic,30.0000,30.8674
+preference_controlled_20_0.1_0,Zero-shot Inference,28.0000,21.2050
+preference_controlled_20_0.1_0,Few-shot Inference,16.3333,15.6421
+preference_controlled_20_0.1_0,Zero-shot Generation,37.3333,23.3573
+preference_controlled_20_0.1_0,\ioprompt,37.6667,22.8523
+preference_controlled_20_0.1_0,\iorefine,40.1333,26.4403
+preference_controlled_20_0.1_0,\hypogenic,48.6667,27.8975
+preference_controlled_20_0.2_0,Zero-shot Inference,46.3333,46.1823
+preference_controlled_20_0.2_0,Few-shot Inference,47.0000,45.9094
+preference_controlled_20_0.2_0,Zero-shot Generation,43.3333,40.8231
+preference_controlled_20_0.2_0,\ioprompt,37.0000,33.3491
+preference_controlled_20_0.2_0,\iorefine,41.7333,40.7716
+preference_controlled_20_0.2_0,\hypogenic,41.6667,37.1026
+preference_controlled_20_0.3_0,Zero-shot Inference,42.3333,40.7562
+preference_controlled_20_0.3_0,Few-shot Inference,40.3333,40.2112
+preference_controlled_20_0.3_0,Zero-shot Generation,41.0000,33.6486
+preference_controlled_20_0.3_0,\ioprompt,39.8000,27.9691
+preference_controlled_20_0.3_0,\iorefine,35.6000,31.3755
+preference_controlled_20_0.3_0,\hypogenic,41.6667,30.9950
+preference_controlled_20_0_0.1,Zero-shot Inference,28.3333,25.5735
+preference_controlled_20_0_0.1,Few-shot Inference,31.6667,27.1886
+preference_controlled_20_0_0.1,Zero-shot Generation,24.0000,23.0417
+preference_controlled_20_0_0.1,\ioprompt,30.7333,21.7519
+preference_controlled_20_0_0.1,\iorefine,35.8667,26.8604
+preference_controlled_20_0_0.1,\hypogenic,33.3333,27.9225
+preference_controlled_20_0_0.2,Zero-shot Inference,26.0000,19.5165
+preference_controlled_20_0_0.2,Few-shot Inference,22.6667,21.3513
+preference_controlled_20_0_0.2,Zero-shot Generation,30.6667,22.4526
+preference_controlled_20_0_0.2,\ioprompt,39.9333,22.3669
+preference_controlled_20_0_0.2,\iorefine,43.6667,26.5486
+preference_controlled_20_0_0.2,\hypogenic,55.3333,27.8122
+preference_controlled_20_0_0.3,Zero-shot Inference,45.6667,43.1034
+preference_controlled_20_0_0.3,Few-shot Inference,50.3333,47.3983
+preference_controlled_20_0_0.3,Zero-shot Generation,35.0000,36.2280
+preference_controlled_20_0_0.3,\ioprompt,48.2667,37.7668
+preference_controlled_20_0_0.3,\iorefine,45.7333,38.0068
+preference_controlled_20_0_0.3,\hypogenic,65.6667,35.4154
+preference_controlled_20_0.1_0.1,Zero-shot Inference,39.0000,36.9423
+preference_controlled_20_0.1_0.1,Few-shot Inference,27.0000,27.9252
+preference_controlled_20_0.1_0.1,Zero-shot Generation,45.3333,38.3792
+preference_controlled_20_0.1_0.1,\ioprompt,42.2667,26.0744
+preference_controlled_20_0.1_0.1,\iorefine,39.8000,28.0422
+preference_controlled_20_0.1_0.1,\hypogenic,41.0000,33.3613
+preference_controlled_20_0.2_0.2,Zero-shot Inference,40.6667,37.4820
+preference_controlled_20_0.2_0.2,Few-shot Inference,46.6667,39.3854
+preference_controlled_20_0.2_0.2,Zero-shot Generation,38.6667,34.5112
+preference_controlled_20_0.2_0.2,\ioprompt,39.5333,31.3130
+preference_controlled_20_0.2_0.2,\iorefine,37.9333,31.6824
+preference_controlled_20_0.2_0.2,\hypogenic,34.3333,31.8257
+preference_controlled_20_0.3_0.3,Zero-shot Inference,30.3333,30.1123
+preference_controlled_20_0.3_0.3,Few-shot Inference,28.6667,27.4775
+preference_controlled_20_0.3_0.3,Zero-shot Generation,29.3333,27.6695
+preference_controlled_20_0.3_0.3,\ioprompt,36.8667,27.4075
+preference_controlled_20_0.3_0.3,\iorefine,28.4667,23.0340
+preference_controlled_20_0.3_0.3,\hypogenic,33.0000,30.6060
+admission_adv_level_1_base,Zero-shot Inference,22.5000,18.3673
+admission_adv_level_1_base,Few-shot Inference,89.5000,89.2745
+admission_adv_level_1_base,Zero-shot Generation,22.0000,18.0328
+admission_adv_level_1_base,\ioprompt,89.2500,88.6365
+admission_adv_level_1_base,\iorefine,89.2500,88.6365
+admission_adv_level_1_base,\hypogenic,94.0000,93.9394
+admission_adv_level_2_depth_2,Zero-shot Inference,36.0000,26.4706
+admission_adv_level_2_depth_2,Few-shot Inference,72.5000,71.4130
+admission_adv_level_2_depth_2,Zero-shot Generation,24.5000,19.6787
+admission_adv_level_2_depth_2,\ioprompt,79.5000,79.1746
+admission_adv_level_2_depth_2,\iorefine,79.5000,79.1746
+admission_adv_level_2_depth_2,\hypogenic,60.0000,59.0793
+admission_adv_level_2_distractor_3,Zero-shot Inference,23.0000,18.6992
+admission_adv_level_2_distractor_3,Few-shot Inference,55.5000,47.2733
+admission_adv_level_2_distractor_3,Zero-shot Generation,21.0000,17.3554
+admission_adv_level_2_distractor_3,\ioprompt,53.8333,49.2565
+admission_adv_level_2_distractor_3,\iorefine,99.0000,98.9878
+admission_adv_level_2_distractor_3,\hypogenic,68.0000,63.8173
+admission_adv_level_2_noise_10,Zero-shot Inference,34.5000,31.6266
+admission_adv_level_2_noise_10,Few-shot Inference,50.0000,33.3333
+admission_adv_level_2_noise_10,Zero-shot Generation,34.0000,31.2500
+admission_adv_level_2_noise_10,\ioprompt,71.0000,70.8132
+admission_adv_level_2_noise_10,\iorefine,46.5000,33.4410
+admission_adv_level_2_noise_10,\hypogenic,48.5000,48.0310
+admission_adv_level_2_size_5,Zero-shot Inference,33.5000,32.0718
+admission_adv_level_2_size_5,Few-shot Inference,31.5000,31.4983
+admission_adv_level_2_size_5,Zero-shot Generation,22.5000,22.4049
+admission_adv_level_2_size_5,\ioprompt,54.5000,51.5945
+admission_adv_level_2_size_5,\iorefine,54.5000,51.5945
+admission_adv_level_2_size_5,\hypogenic,46.5000,33.2897
+admission_adv_level_3_depth_3,Zero-shot Inference,39.0000,29.9173
+admission_adv_level_3_depth_3,Few-shot Inference,56.0000,47.1090
+admission_adv_level_3_depth_3,Zero-shot Generation,37.5000,31.9746
+admission_adv_level_3_depth_3,\ioprompt,43.0000,42.9943
+admission_adv_level_3_depth_3,\iorefine,57.0000,56.7883
+admission_adv_level_3_depth_3,\hypogenic,39.0000,37.5959
+admission_adv_level_3_distractor_6,Zero-shot Inference,35.0000,25.9259
+admission_adv_level_3_distractor_6,Few-shot Inference,64.0000,62.7945
+admission_adv_level_3_distractor_6,Zero-shot Generation,35.0000,25.9259
+admission_adv_level_3_distractor_6,\ioprompt,46.0000,43.7500
+admission_adv_level_3_distractor_6,\iorefine,50.5000,49.3905
+admission_adv_level_3_distractor_6,\hypogenic,53.5000,49.0676
+admission_adv_level_3_noise_20,Zero-shot Inference,43.0000,41.5025
+admission_adv_level_3_noise_20,Few-shot Inference,47.0000,38.5934
+admission_adv_level_3_noise_20,Zero-shot Generation,44.0000,42.7110
+admission_adv_level_3_noise_20,\ioprompt,64.5000,63.9365
+admission_adv_level_3_noise_20,\iorefine,53.0000,49.0017
+admission_adv_level_3_noise_20,\hypogenic,51.5000,43.5636
+admission_adv_level_3_size_10,Zero-shot Inference,44.0000,32.6842
+admission_adv_level_3_size_10,Few-shot Inference,44.5000,34.8419
+admission_adv_level_3_size_10,Zero-shot Generation,42.0000,33.9031
+admission_adv_level_3_size_10,\ioprompt,47.5000,47.0219
+admission_adv_level_3_size_10,\iorefine,33.0000,29.2577
+admission_adv_level_3_size_10,\hypogenic,36.0000,35.8396
+admission_adv_level_4_depth_4,Zero-shot Inference,46.0000,35.7143
+admission_adv_level_4_depth_4,Few-shot Inference,41.5000,36.7140
+admission_adv_level_4_depth_4,Zero-shot Generation,48.5000,34.2924
+admission_adv_level_4_depth_4,\ioprompt,37.1667,37.1385
+admission_adv_level_4_depth_4,\iorefine,44.5000,44.3874
+admission_adv_level_4_depth_4,\hypogenic,37.5000,37.0452
+admission_adv_level_4_distractor_10,Zero-shot Inference,33.0000,24.8120
+admission_adv_level_4_distractor_10,Few-shot Inference,66.0000,63.9219
+admission_adv_level_4_distractor_10,Zero-shot Generation,41.0000,40.4040
+admission_adv_level_4_distractor_10,\ioprompt,53.0000,48.5615
+admission_adv_level_4_distractor_10,\iorefine,51.5000,47.8368
+admission_adv_level_4_distractor_10,\hypogenic,60.5000,54.8042
+admission_adv_level_4_noise_30,Zero-shot Inference,46.5000,45.0027
+admission_adv_level_4_noise_30,Few-shot Inference,46.5000,45.0027
+admission_adv_level_4_noise_30,Zero-shot Generation,46.5000,45.0027
+admission_adv_level_4_noise_30,\ioprompt,47.0000,38.0552
+admission_adv_level_4_noise_30,\iorefine,49.5000,47.2846
+admission_adv_level_4_noise_30,\hypogenic,54.0000,50.0868
+admission_adv_level_4_size_15,Zero-shot Inference,43.5000,33.0549
+admission_adv_level_4_size_15,Few-shot Inference,31.0000,28.4158
+admission_adv_level_4_size_15,Zero-shot Generation,40.0000,30.4831
+admission_adv_level_4_size_15,\ioprompt,49.0000,42.5539
+admission_adv_level_4_size_15,\iorefine,50.0000,44.4372
+admission_adv_level_4_size_15,\hypogenic,40.0000,40.0060
+election_counterfactual_normal,Zero-shot Inference,49.3333,47.9153
+election_counterfactual_normal,Few-shot Inference,51.0000,46.3981
+election_counterfactual_normal,Zero-shot Generation,46.3333,45.9462
+election_counterfactual_normal,\ioprompt,44.6667,41.4930
+election_counterfactual_normal,\iorefine,45.8333,42.7465
+election_counterfactual_normal,\hypogenic,43.3333,43.4030
+election_counterfactual_counterfactual,Zero-shot Inference,30.6667,20.8475
+election_counterfactual_counterfactual,Few-shot Inference,37.0000,20.1732
+election_counterfactual_counterfactual,Zero-shot Generation,15.6667,14.0651
+election_counterfactual_counterfactual,\ioprompt,33.6667,22.7587
+election_counterfactual_counterfactual,\iorefine,30.1111,20.9735
+election_counterfactual_counterfactual,\hypogenic,30.0000,23.6730

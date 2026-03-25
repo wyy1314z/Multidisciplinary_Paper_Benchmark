@@ -1,7 +1,9 @@
 """Asynchronous hierarchical classifier."""
 
 import asyncio
+import json
 import logging
+import re
 from typing import List, Optional, Tuple, Union
 
 from crossdisc_extractor.classifier.config import LLMConfig
@@ -38,6 +40,51 @@ class AsyncHierarchicalClassifier:
     ) -> ClassificationResult:
         """Synchronous wrapper around ``classify_async``."""
         return asyncio.run(self.classify_async(question, target_depth))
+
+    async def _assess_crossdisc_confidence(
+        self,
+        question: PaperInput,
+        distinct_l1: List[str],
+    ) -> Tuple[float, str]:
+        """Call LLM to assess cross-disciplinary confidence score.
+
+        Returns:
+            (score, reason) tuple. score in [0.0, 1.0].
+        """
+        if not hasattr(self.prompt_builder, "build_crossdisc_confidence_prompt"):
+            return 1.0, "prompt_builder does not support confidence assessment"
+
+        introduction = question[2] if len(question) > 2 else None
+        prompt = self.prompt_builder.build_crossdisc_confidence_prompt(
+            title=question[0],
+            abstract=question[1],
+            disciplines=distinct_l1,
+            introduction=introduction,
+        )
+
+        for attempt in range(self.cfg.max_retries + 1):
+            raw = await self.llm.ainvoke(prompt)
+            try:
+                # Extract JSON from response
+                m = re.search(r"\{[^{}]*\}", raw)
+                if m:
+                    obj = json.loads(m.group(0))
+                    score = float(obj.get("score", 0.0))
+                    reason = str(obj.get("reason", ""))
+                    if 0.0 <= score <= 1.0:
+                        return score, reason
+                logger.warning(
+                    "Cross-disc confidence attempt %d/%d: invalid output: %.200s",
+                    attempt + 1, self.cfg.max_retries + 1, raw,
+                )
+            except (json.JSONDecodeError, ValueError, TypeError) as e:
+                logger.warning(
+                    "Cross-disc confidence attempt %d/%d: parse error: %s, raw: %.200s",
+                    attempt + 1, self.cfg.max_retries + 1, e, raw,
+                )
+
+        logger.warning("Cross-disc confidence: all retries exhausted, defaulting to 0.5")
+        return 0.5, "confidence assessment failed"
 
     async def classify_async(
         self,
@@ -126,8 +173,27 @@ class AsyncHierarchicalClassifier:
         multidisciplinary = "Yes" if len(distinct_l1) > 1 else "No"
         raw_outputs.append(f"Multidisciplinary: {multidisciplinary}")
 
+        # Assess cross-disciplinary confidence if multiple L1 disciplines found
+        crossdisc_score = None
+        crossdisc_reason = ""
+        if len(distinct_l1) > 1:
+            crossdisc_score, crossdisc_reason = await self._assess_crossdisc_confidence(
+                question, sorted(distinct_l1),
+            )
+            threshold = self.cfg.crossdisc_confidence_threshold
+            raw_outputs.append(
+                f"CrossDisc confidence: {crossdisc_score:.2f} "
+                f"(threshold={threshold:.2f}, reason={crossdisc_reason})"
+            )
+            logger.info(
+                "Cross-disc confidence=%.2f (threshold=%.2f): %s",
+                crossdisc_score, threshold, crossdisc_reason,
+            )
+
         return ClassificationResult(
             paths=partial_paths,
             raw_outputs=raw_outputs,
             valid=len(partial_paths) > 0,
+            crossdisc_score=crossdisc_score,
+            crossdisc_reason=crossdisc_reason,
         )

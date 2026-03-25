@@ -160,9 +160,9 @@ class ConceptEntry(BaseModel):
     term: str = Field(..., description="原始术语")
     normalized: Optional[str] = Field(default=None, description="归一化术语；同义合并")
     std_label: Optional[str] = Field(default=None, description="标准体系标签，如 MeSH/MSC/ACM CCS")
-    evidence: str = Field(..., description="原文证据片段（≤40中文字/≤30英文词）")
-    source: str = Field(..., description="抽取来源：abstract | refs[i]")
-    confidence: float = Field(..., ge=0.0, le=1.0)
+    evidence: str = Field(default="", description="原文证据片段（≤40中文字/≤30英文词）")
+    source: str = Field(default="abstract", description="抽取来源：abstract | refs[i]")
+    confidence: float = Field(default=0.5, ge=0.0, le=1.0)
 
     @model_validator(mode="after")
     def _trim(self):

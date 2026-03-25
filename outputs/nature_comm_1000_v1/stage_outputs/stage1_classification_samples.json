@@ -1,0 +1,41 @@
+[
+  {
+    "title": "Seasonal recurrence and modular assembly of an Arctic pelagic marine microbiome",
+    "abstract": "Abstract Deciphering how microbial communities are shaped by environmental variability is fundamental for understanding the structure and function of ocean ecosystems. While seasonal environmental gradients have been shown to structure the taxonomic dynamics of microbiomes over time, little is known about their impact on functional dynamics and the coupling between taxonomy and function. Here, we demonstrate annually recurrent, seasonal structuring of taxonomic and functional dynamics in a pelagic Arctic Ocean microbiome by combining autonomous samplers and in situ sensors with long-read metagenomics and SSU ribosomal metabarcoding. Specifically, we identified five temporal microbiome modules whose succession within each annual cycle represents a transition across different ecological states. For instance, Cand . Nitrosopumilus, Syndiniales, and the machinery to oxidise ammonia and reduce nitrite are signatures of early polar night, while late summer is characterised by Amylibacter and sulfur compound metabolism. Leveraging metatranscriptomes from Tara Oceans , we also demonstrate the consistency in functional dynamics across the wider Arctic Ocean during similar temporal periods. Furthermore, the structuring of genetic diversity within functions over time indicates that environmental selection pressure acts heterogeneously on microbiomes across seasons. By integrating taxonomic, functional and environmental information, our study provides fundamental insights into how microbiomes are structured under pronounced seasonal changes in understudied, yet rapidly changing polar marine ecosystems.",
+    "pdf_url": "https://doi.org/10.1038/s41467-025-56203-3",
+    "primary": "生物学",
+    "secondary": "地球科学, 环境科学技术",
+    "secondary_list": [
+      "地球科学",
+      "环境科学技术"
+    ],
+    "main_levels": "L1:生物学; L2:生态学; L3:群落生态学",
+    "non_main_levels": "L1:生物学; L2:生态学; L3:生态系统生态学; L1:生物学; L2:生态学; L3:生理生态学; L1:生物学; L2:生态学; L3:区域生态学; L1:生物学; L2:生态学; L3:生态学其他学科; L1:生物学; L2:微生物学; L3:微生物生态学; L1:生物学; L2:微生物学; L3:微生物生理学; L1:生物学; L2:微生物学; L3:微生物分类学; L1:生物学; L2:微生物学; L3:微生物遗传学; L1:生物学; L2:微生物学; L3:细菌学; L1:生物学; L2:生物化学; L3:酶学; L1:生物学; L2:生物化学; L3:膜生物化学; L1:生物学; L2:生物化学; L3:免疫生物化学; L1:生物学; L2:生物化学; L3:比较生物化学; L1:生物学; L2:生物化学; L3:应用生物化学; L1:地球科学; L2:海洋科学; L3:海洋生物学; L1:地球科学; L2:海洋科学; L3:海洋化学; L1:地球科学; L2:海洋科学; L3:物理海洋学; L1:地球科学; L2:海洋科学; L3:海洋调查与监测; L1:地球科学; L2:海洋科学; L3:海洋科学其他学科; L1:环境科学技术; L2:环境学; L3:水体环境学(包括海洋环境学)"
+  },
+  {
+    "title": "Lysosomes finely control macrophage inflammatory function via regulating the release of lysosomal Fe2+ through TRPML1 channel",
+    "abstract": "Lysosomes are best known for their roles in inflammatory responses by engaging in autophagy to remove inflammasomes. Here, we describe an unrecognized role for the lysosome, showing that it finely controls macrophage inflammatory function by manipulating the lysosomal Fe<sup>2+</sup>-prolyl hydroxylase domain enzymes (PHDs)-NF-κB-interleukin 1 beta (IL1B) transcription pathway that directly links lysosomes with inflammatory responses. TRPML1, a lysosomal cationic channel, is activated secondarily to ROS elevation upon inflammatory stimuli, which in turn suppresses IL1B transcription, thus limiting the excessive production of IL-1β in macrophages. Mechanistically, the suppression of IL1B transcription caused by TRPML1 activation results from its modulation on the release of lysosomal Fe<sup>2+</sup>, which subsequently activates PHDs. The activated PHDs then represses transcriptional activity of NF-κB, ultimately resulting in suppressed IL1B transcription. More importantly, in vivo stimulation of TRPML1 ameliorates multiple clinical signs of Dextran sulfate sodium-induced colitis in mice, suggesting TRPML1 has potential in treating inflammatory bowel disease.",
+    "pdf_url": "https://doi.org/10.1038/s41467-025-56403-x",
+    "primary": "生物学",
+    "secondary": "基础医学, 临床医学",
+    "secondary_list": [
+      "基础医学",
+      "临床医学"
+    ],
+    "main_levels": "L1:生物学; L2:细胞生物学; L3:细胞生理学",
+    "non_main_levels": "L1:生物学; L2:细胞生物学; L3:细胞免疫学; L1:生物学; L2:细胞生物学; L3:细胞病理学; L1:生物学; L2:生理学; L3:新陈代谢与营养生理学; L1:生物学; L2:生理学; L3:消化生理学; L1:生物学; L2:生理学; L3:血液生理学; L1:生物学; L2:生理学; L3:内分泌生理学; L1:生物学; L2:生理学; L3:生理学其他学科; L1:生物学; L2:神经生物学; L3:细胞神经生物学; L1:生物学; L2:神经生物学; L3:分子神经生物学; L1:生物学; L2:神经生物学; L3:神经生物化学; L1:生物学; L2:神经生物学; L3:神经生理学; L1:基础医学; L2:病理学; L3:病理生物学; L1:基础医学; L2:病理学; L3:病理生理学; L1:基础医学; L2:病理学; L3:免疫病理学; L1:基础医学; L2:病理学; L3:实验病理学; L1:临床医学; L2:内科学; L3:胃肠病学; L1:临床医学; L2:内科学; L3:风湿病学与自体免疫病学; L1:临床医学; L2:肿瘤学; L3:肿瘤免疫学; L1:临床医学; L2:肿瘤学; L3:肿瘤治疗学; L1:临床医学; L2:肿瘤学; L3:实验肿瘤学; L1:临床医学; L2:保健医学; L3:保健医学其他学科"
+  },
+  {
+    "title": "Transmembrane voltage-gated nanopores controlled by electrically tunable in-pore chemistry",
+    "abstract": "Gating is a fundamental process in ion channels configured to open and close in response to specific stimuli such as voltage across cell membranes thereby enabling the excitability of neurons. Here we report on voltage-gated solid-state nanopores by electrically tunable chemical reactions. We demonstrate repetitive precipitation and dissolution of metal phosphates in a pore through manipulations of cation flow by transmembrane voltage. Under negative voltages, precipitates grow to reduce ionic current by occluding the nanopore, while inverting the voltage polarity dissolves the phosphate compounds reopening the pore to ionic flux. Reversible actuation of these physicochemical processes creates a nanofluidic diode of rectification ratio exceeding 40000. The dynamic nature of the in-pore reactions also facilitates a memristor of sub-nanowatt power consumption. Leveraging chemical degrees of freedom, the present method may be useful for creating iontronic circuits of tunable characteristics toward neuromorphic systems.",
+    "pdf_url": "https://doi.org/10.1038/s41467-025-56052-0",
+    "primary": "化学",
+    "secondary": "材料科学, 物理学",
+    "secondary_list": [
+      "材料科学",
+      "物理学"
+    ],
+    "main_levels": "L1:化学; L2:物理化学; L3:电化学",
+    "non_main_levels": "L1:化学; L2:物理化学; L3:胶体化学与界面化学; L1:化学; L2:物理化学; L3:化学动力学(包括分子反应动力学等); L1:化学; L2:物理化学; L3:结构化学(包括表面化学、结构分析等); L1:化学; L2:无机化学; L3:物理无机化学; L1:化学; L2:无机化学; L3:无机固体化学; L1:化学; L2:无机化学; L3:无机合成化学; L1:化学; L2:分析化学; L3:电化学分析; L1:化学; L2:高分子化学; L3:功能高分子(包括液晶高分子化学); L1:化学; L2:高分子化学; L3:高分子物理化学; L1:材料科学; L2:无机非金属材料; L3:特种功能无机非金属材料; L1:材料科学; L2:无机非金属材料; L3:低维无机非金属材料(包括薄膜、纤维和零维非金属材料等); L1:材料科学; L2:有机高分子材料; L3:功能高分子材料; L1:材料科学; L2:复合材料; L3:无机非金属基复合材料(包括无机多相复合材料等); L1:物理学; L2:凝聚态物理学; L3:电介质物理学; L1:物理学; L2:凝聚态物理学; L3:凝聚态理论; L1:物理学; L2:凝聚态物理学; L3:低维物理; L1:物理学; L2:凝聚态物理学; L3:表面与界面物理学; L1:物理学; L2:凝聚态物理学; L3:凝聚态物理学其他学科; L1:物理学; L2:电磁学; L3:电学; L1:物理学; L2:电磁学; L3:电动力学; L1:物理学; L2:电子物理学; L3:电子离子与真空物理"
+  }
+]

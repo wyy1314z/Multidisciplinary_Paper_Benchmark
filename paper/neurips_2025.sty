@@ -1,0 +1,49 @@
+% neurips_2025.sty - Simplified NeurIPS 2025 style file
+% Based on the official NeurIPS template
+
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{neurips_2025}[2025/01/01 NeurIPS 2025 submission style]
+
+\newif\if@final
+\@finalfalse
+\DeclareOption{final}{\@finaltrue}
+\DeclareOption{preprint}{}
+\ProcessOptions\relax
+
+% Page layout
+\usepackage[verbose=true,letterpaper]{geometry}
+\geometry{
+  textheight=9in,
+  textwidth=5.5in,
+  top=1in,
+  headheight=12pt,
+  headsep=25pt,
+  footskip=30pt
+}
+
+% Fonts
+\usepackage{times}
+
+% Paragraph
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+
+% Section formatting
+\usepackage{titlesec}
+\titleformat{\section}{\large\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}{\normalsize\bfseries}{\thesubsection}{1em}{}
+\titleformat{\paragraph}[runin]{\normalsize\bfseries}{}{}{}[.]
+
+% Line numbers (disabled for final)
+\if@final
+\else
+  \usepackage{lineno}
+  \linenumbers
+\fi
+
+% natbib compatibility
+\usepackage{natbib}
+\bibliographystyle{abbrvnat}
+\setcitestyle{authoryear,round}
+
+\endinput

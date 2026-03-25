@@ -1,0 +1,202 @@
+[2026-03-19 09:29:53] API 配置: BASE_URL=http://api.shubiaobiao.cn/v1
+[2026-03-19 09:29:53] API 配置: MODEL=default from config
+[2026-03-19 09:29:53] ══════════════════════════════════════════════════════════
+[2026-03-19 09:29:53] Phase 1: 小规模测试 (前2篇论文 × 11种方法)
+[2026-03-19 09:29:53] ══════════════════════════════════════════════════════════
+[09:29:53] 共 2 篇论文, 11 种方法
+[09:29:53] 方法: ['IdeaBench', 'VanillaLLM', 'AI-Scientist', 'SciMON', 'MOOSE-Chem', 'SciAgents', 'P1', 'P2', 'P3', 'P4', 'P5']
+[09:29:53] 论文:
+[09:29:53]   [1] AlphaFold prediction of structural ensembles of disordered protei  (生物学)
+[09:29:53]   [2] Self-driving lab for the photochemical synthesis of plasmonic nan  (化学)
+[09:29:53] 预计总调用: 2 × 11 = 22 次
+[09:29:53] 
+[09:29:53] ════════════════════════════════════════════════════════════════════════════════
+[09:29:53] [1/2] AlphaFold prediction of structural ensembles of disordered p...
+[09:29:53]   主学科: 生物学
+[09:29:53]   辅学科: ['计算机科学技术', '化学']
+[09:29:53] ════════════════════════════════════════════════════════════════════════════════
+[09:29:53]     Running CrossDisc extraction pipeline (for P1-P5)...
+'[Errno 101] Network is unreachable' thrown while requesting HEAD https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/adapter_config.json
+Retrying in 1s [Retry 1/5].
+Failed to compute chain coherence: Cannot send a request, as the client has been closed.
+[09:31:24]     CrossDisc extraction done (536.0s)
+[09:31:24]       L1 query: 如何实现等离激元纳米粒子光学特性的精准调控...
+[09:31:24]       L2 queries: 2, L3 queries: 1
+[09:31:24]     Running IdeaBench...
+[09:32:57]     IdeaBench done (92.8s)
+[09:32:57]     Running VanillaLLM...
+[09:33:50]     VanillaLLM done (53.5s)
+[09:33:50]     Running AI-Scientist...
+[09:34:31]     AI-Scientist done (41.1s)
+[09:34:31]     Running SciMON...
+[09:35:47]     SciMON done (76.1s)
+[09:35:47]     Running MOOSE-Chem...
+[09:36:56]     MOOSE-Chem done (69.1s)
+[09:36:56]     Running SciAgents...
+[09:39:43]     SciAgents done (167.1s)
+[09:39:43]     Running P1...
+[09:40:28]     P1 done (44.4s)
+[09:40:28]     Running P2...
+'[Errno 101] Network is unreachable' thrown while requesting HEAD https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/adapter_config.json
+Retrying in 1s [Retry 1/5].
+Failed to compute embedding bridging: Cannot send a request, as the client has been closed.
+[09:40:50]     P2 done (21.9s)
+[09:40:50]     Running P3...
+[09:41:20]     P3 done (30.4s)
+[09:41:20]     Running P4...
+[09:42:11]     P4 done (50.4s)
+[09:42:11]     P5 (from extraction) done (536.0s)
+[09:42:11] [2/2] 完成: 11/11 成功
+[09:42:11] 
+[09:42:11] 全部完成! 总耗时: 2363.0s (39.4min)
+[09:42:11] 结果已保存到 baseline/outputs/comparison_2025/phase1_results.json
+
+================================================================================================
+  对比实验汇总
+================================================================================================
+
+  论文: AlphaFold prediction of structural ensembles of disordered proteins
+  学科: 生物学
+    IdeaBench              64.7s  OK
+    VanillaLLM             34.0s  OK
+    AI-Scientist           55.9s  OK
+    SciMON                 73.2s  OK
+    MOOSE-Chem            104.1s  OK
+    SciAgents             188.3s  OK
+    P1                     25.5s  OK
+    P2                     21.6s  OK
+    P3                     25.4s  OK
+    P4                     40.9s  OK
+    P5                    546.6s  OK
+
+  论文: Self-driving lab for the photochemical synthesis of plasmonic nanoparticles
+  学科: 化学
+    IdeaBench              92.8s  OK
+    VanillaLLM             53.5s  OK
+    AI-Scientist           41.1s  OK
+    SciMON                 76.1s  OK
+    MOOSE-Chem             69.1s  OK
+    SciAgents             167.1s  OK
+    P1                     44.4s  OK
+    P2                     21.9s  OK
+    P3                     30.4s  OK
+    P4                     50.4s  OK
+    P5                    536.0s  OK
+
+  总计: 2 篇 × 11 方法 = 22 次调用, 22 成功, 0 失败
+Exception ignored in: <function ResourceTracker.__del__ at 0x7769ae3525c0>
+Traceback (most recent call last):
+  File "/ssd/wangyuyang/miniconda3/envs/wyy/lib/python3.12/site-packages/multiprocess/resource_tracker.py", line 80, in __del__
+  File "/ssd/wangyuyang/miniconda3/envs/wyy/lib/python3.12/site-packages/multiprocess/resource_tracker.py", line 89, in _stop
+  File "/ssd/wangyuyang/miniconda3/envs/wyy/lib/python3.12/site-packages/multiprocess/resource_tracker.py", line 102, in _stop_locked
+AttributeError: '_thread.RLock' object has no attribute '_recursion_count'
+'[Errno 101] Network is unreachable' thrown while requesting HEAD https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/adapter_config.json
+Retrying in 1s [Retry 1/5].
+Failed to compute chain coherence: Cannot send a request, as the client has been closed.
+[09:42:56]     CrossDisc extraction done (783.2s)
+[09:42:56]       L1 query: 如何实现无序蛋白结构集合的高精度预测...
+[09:42:56]       L2 queries: 2, L3 queries: 2
+[09:42:56]     Running IdeaBench...
+[09:44:14]     IdeaBench done (78.0s)
+[09:44:14]     Running VanillaLLM...
+[09:45:00]     VanillaLLM done (45.4s)
+[09:45:00]     Running AI-Scientist...
+[09:46:06]     AI-Scientist done (66.3s)
+[09:46:06]     Running SciMON...
+[09:47:02]     SciMON done (55.7s)
+[09:47:02]     Running MOOSE-Chem...
+[09:48:28]     MOOSE-Chem done (86.8s)
+[09:48:28]     Running SciAgents...
+[09:51:26]     SciAgents done (177.6s)
+[09:51:26]     Running P1...
+[09:51:51]     P1 done (25.3s)
+[09:51:51]     Running P2...
+[09:52:11]     P2 done (19.8s)
+[09:52:11]     Running P3...
+[09:52:41]     P3 done (30.1s)
+[09:52:41]     Running P4...
+[09:53:29]     P4 done (47.8s)
+[09:53:29]     P5 (from extraction) done (783.2s)
+[09:53:29] [1/2] 完成: 11/11 成功
+[09:53:29] 
+[09:53:29] ════════════════════════════════════════════════════════════════════════════════
+[09:53:29] [2/2] Self-driving lab for the photochemical synthesis of plasmoni...
+[09:53:29]   主学科: 化学
+[09:53:29]   辅学科: ['材料科学', '计算机科学技术']
+[09:53:29] ════════════════════════════════════════════════════════════════════════════════
+[09:53:29]     Running CrossDisc extraction pipeline (for P1-P5)...
+'[Errno 101] Network is unreachable' thrown while requesting HEAD https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/adapter_config.json
+Retrying in 1s [Retry 1/5].
+Failed to compute embedding bridging: Cannot send a request, as the client has been closed.
+'[Errno 101] Network is unreachable' thrown while requesting HEAD https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/adapter_config.json
+Retrying in 1s [Retry 1/5].
+Failed to compute chain coherence: Cannot send a request, as the client has been closed.
+[10:02:33]     CrossDisc extraction done (543.7s)
+[10:02:33]       L1 query: 如何实现等离激元纳米粒子的结构与光学特性精准调控...
+[10:02:33]       L2 queries: 2, L3 queries: 2
+[10:02:33]     Running IdeaBench...
+[10:03:30]     IdeaBench done (57.5s)
+[10:03:30]     Running VanillaLLM...
+[10:04:34]     VanillaLLM done (64.3s)
+[10:04:34]     Running AI-Scientist...
+[10:05:47]     AI-Scientist done (72.3s)
+[10:05:47]     Running SciMON...
+[10:07:27]     SciMON done (100.2s)
+[10:07:27]     Running MOOSE-Chem...
+[10:08:49]     MOOSE-Chem done (82.1s)
+[10:08:49]     Running SciAgents...
+[10:12:03]     SciAgents done (194.3s)
+[10:12:03]     Running P1...
+[10:12:30]     P1 done (26.3s)
+[10:12:30]     Running P2...
+[10:12:57]     P2 done (26.8s)
+[10:12:57]     Running P3...
+[10:13:22]     P3 done (25.6s)
+[10:13:22]     Running P4...
+[10:14:19]     P4 done (57.2s)
+[10:14:19]     P5 (from extraction) done (543.7s)
+[10:14:19] [2/2] 完成: 11/11 成功
+[10:14:19] 
+[10:14:19] 全部完成! 总耗时: 2666.4s (44.4min)
+[10:14:19] 结果已保存到 baseline/outputs/comparison_2025/phase1_results.json
+
+================================================================================================
+  对比实验汇总
+================================================================================================
+
+  论文: AlphaFold prediction of structural ensembles of disordered proteins
+  学科: 生物学
+    IdeaBench              78.0s  OK
+    VanillaLLM             45.4s  OK
+    AI-Scientist           66.3s  OK
+    SciMON                 55.7s  OK
+    MOOSE-Chem             86.8s  OK
+    SciAgents             177.6s  OK
+    P1                     25.3s  OK
+    P2                     19.8s  OK
+    P3                     30.1s  OK
+    P4                     47.8s  OK
+    P5                    783.2s  OK
+
+  论文: Self-driving lab for the photochemical synthesis of plasmonic nanoparticles
+  学科: 化学
+    IdeaBench              57.5s  OK
+    VanillaLLM             64.3s  OK
+    AI-Scientist           72.3s  OK
+    SciMON                100.2s  OK
+    MOOSE-Chem             82.1s  OK
+    SciAgents             194.3s  OK
+    P1                     26.3s  OK
+    P2                     26.8s  OK
+    P3                     25.6s  OK
+    P4                     57.2s  OK
+    P5                    543.7s  OK
+
+  总计: 2 篇 × 11 方法 = 22 次调用, 22 成功, 0 失败
+Exception ignored in: <function ResourceTracker.__del__ at 0x79b597c22de0>
+Traceback (most recent call last):
+  File "/ssd/wangyuyang/miniconda3/envs/wyy/lib/python3.12/site-packages/multiprocess/resource_tracker.py", line 80, in __del__
+  File "/ssd/wangyuyang/miniconda3/envs/wyy/lib/python3.12/site-packages/multiprocess/resource_tracker.py", line 89, in _stop
+  File "/ssd/wangyuyang/miniconda3/envs/wyy/lib/python3.12/site-packages/multiprocess/resource_tracker.py", line 102, in _stop_locked
+AttributeError: '_thread.RLock' object has no attribute '_recursion_count'
+[2026-03-19 10:14:20] Phase 1 生成完成: baseline/outputs/comparison_2025/phase1_results.json

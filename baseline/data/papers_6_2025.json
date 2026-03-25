@@ -1,0 +1,65 @@
+[
+  {
+    "paper_id": "c0d7ac5714b1",
+    "title": "AlphaFold prediction of structural ensembles of disordered proteins",
+    "abstract": "Abstract Deep learning methods of predicting protein structures have reached an accuracy comparable to that of high-resolution experimental methods. It is thus possible to generate accurate models of the native states of hundreds of millions of proteins. An open question, however, concerns whether these advances can be translated to disordered proteins, which should be represented as structural ensembles because of their heterogeneous and dynamical nature. To address this problem, we introduce the AlphaFold-Metainference method to use AlphaFold-derived distances as structural restraints in molecular dynamics simulations to construct structural ensembles of ordered and disordered proteins. The results obtained using AlphaFold-Metainference illustrate the possibility of making predictions of the conformational properties of disordered proteins using deep learning methods trained on the large structural databases available for folded proteins.",
+    "introduction": "",
+    "primary_discipline": "生物学",
+    "secondary_disciplines": [
+      "计算机科学技术",
+      "化学"
+    ]
+  },
+  {
+    "paper_id": "a6f866ca73d0",
+    "title": "Self-driving lab for the photochemical synthesis of plasmonic nanoparticles with targeted structural and optical properties",
+    "abstract": "Many applications of plasmonic nanoparticles require precise control of their optical properties that are governed by nanoparticle dimensions, shape, morphology and composition. Finding reaction conditions for the synthesis of nanoparticles with targeted characteristics is a time-consuming and resource-intensive trial-and-error process, however closed-loop nanoparticle synthesis enables the accelerated exploration of large chemical spaces without human intervention. Here, we introduce the Autonomous Fluidic Identification and Optimization Nanochemistry (AFION) self-driving lab that integrates a microfluidic reactor, in-flow spectroscopic nanoparticle characterization, and machine learning for the exploration and optimization of the multidimensional chemical space for the photochemical synthesis of plasmonic nanoparticles. By targeting spectroscopic nanoparticle properties, the AFION lab identifies reaction conditions for the synthesis of different types of nanoparticles with designated shapes, morphologies, and compositions. Data analysis provides insight into the role of reaction conditions for the synthesis of the targeted nanoparticle type. This work shows that the AFION lab is an effective exploration platform for on-demand synthesis of plasmonic nanoparticles.",
+    "introduction": "",
+    "primary_discipline": "化学",
+    "secondary_disciplines": [
+      "材料科学",
+      "计算机科学技术"
+    ]
+  },
+  {
+    "paper_id": "3e2570ebbc22",
+    "title": "Multi-modal framework for battery state of health evaluation using open-source electric vehicle data",
+    "abstract": "Accurate, practical, and robust evaluation of the battery state of health is crucial to the efficient and reliable operation of electric vehicles. However, the limited availability of large-scale, high-quality field data hinders the development of the battery management system for state of health estimation, lifetime prediction, and fault detection in various applications. In this work, to gain insights into underlying factors limiting battery management system performance in real-world vehicles, we analyze the operational data of 300 diverse electric vehicles over three years to understand the disparities between field data and laboratory battery test data and their effect on state of health estimation. Furthermore, we propose a deep learning-based multi-modal framework to effectively leverage historical vehicle data for efficient, accurate, and cost-effective state of health estimation. The proposed paradigm exhibits considerable potential for numerous applications in state estimation and diagnostics in multi-sensor systems. Furthermore, we make the field data of these electric vehicles publicly available aiming to promote further research on the development of effective and reliable battery management systems for real-world vehicles.",
+    "introduction": "",
+    "primary_discipline": "计算机科学技术",
+    "secondary_disciplines": [
+      "材料科学"
+    ]
+  },
+  {
+    "paper_id": "56c26049f3ce",
+    "title": "Soil organic carbon thresholds control fertilizer effects on carbon accrual in croplands worldwide",
+    "abstract": "Abstract Initiatives to restore soil fertility and mitigate global warming rely on rebuilding soil organic carbon (SOC). Nitrogen (N) fertilization is crucial for crop yields but affects SOC unpredictably due to varying responses of particulate organic carbon (POC) and mineral-associated organic carbon (MAOC) pools to initial SOC levels. To clarify these effects, here, by combining a global meta-analysis with continental-scale field experiments, we determine that an initial SOC threshold of 15 g C kg −1 controls the effect of N fertilization on POC and MAOC. In SOC-poor soils (&lt; 15 g C kg −1 ), N fertilizer increases plant-derived C inputs and promotes soil aggregation, favouring POC accumulation. Conversely, in SOC-rich soils, N fertilizer stimulates microbial metabolic efficiency, leading to larger necromass production and stabilization by mineral protection, observed as more pronounced MAOC accrual. Our findings reveal how SOC thresholds shape the response of active and stable carbon pools to N fertilization, with consequences for SOC accrual in cropland soils globally.",
+    "introduction": "",
+    "primary_discipline": "农学",
+    "secondary_disciplines": [
+      "地球科学",
+      "环境科学技术"
+    ]
+  },
+  {
+    "paper_id": "8b821c0f32b4",
+    "title": "Bioactive nanomotor enabling efficient intestinal barrier penetration for colorectal cancer therapy",
+    "abstract": "Oral drug delivery systems had natural potential for colorectal cancer drug therapy. While the drug delivery efficiency is severely hindered by the complex intestinal barriers, especially mucus and epithelium barriers, resulting in unsatisfactory therapeutic effects and limited clinical translation. In this work, a bioactive self-thermophoretic and gas dual-driven nanomotor is developed for colorectal cancer therapy through efficient intestinal mucus and epithelial barrier penetration. The nanomotor shows intestinal mucus barrier penetration and the paracellular pathway reversibly opening properties of intestinal epithelium barrier, increasing the delivery efficiency of cisplatin by 3.5 folds. Owing to the targeted delivery of cisplatin and the reduced side effects on normal intestinal tissues, the therapeutic efficiency of the nanomotor for colorectal cancer in vivo is as high as 98.6%. With autonomous and reversible intestinal barriers penetration property, the nanoplatform may innovate the current oral drug delivery.",
+    "introduction": "",
+    "primary_discipline": "材料科学",
+    "secondary_disciplines": [
+      "基础医学"
+    ]
+  },
+  {
+    "paper_id": "334ed23f12c1",
+    "title": "RiNALMo: general-purpose RNA language models can generalize well on structure prediction tasks",
+    "abstract": "While RNA has recently been recognized as an interesting small-molecule drug target, many challenges remain to be addressed before we take full advantage of it. This emphasizes the necessity to improve our understanding of its structures and functions. Over the years, sequencing technologies have produced an enormous amount of unlabeled RNA data, which hides a huge potential. Motivated by the successes of protein language models, we introduce RiboNucleic Acid Language Model (RiNALMo) to unveil the hidden code of RNA. RiNALMo is the largest RNA language model to date, with 650M parameters pre-trained on 36M non-coding RNA sequences from several databases. It can extract hidden knowledge and capture the underlying structure information implicitly embedded within the RNA sequences. RiNALMo achieves state-of-the-art results on several downstream tasks. Notably, we show that its generalization capabilities overcome the inability of other deep learning methods for secondary structure prediction to generalize on unseen RNA families.",
+    "introduction": "",
+    "primary_discipline": "计算机科学技术",
+    "secondary_disciplines": [
+      "生物学"
+    ]
+  }
+]

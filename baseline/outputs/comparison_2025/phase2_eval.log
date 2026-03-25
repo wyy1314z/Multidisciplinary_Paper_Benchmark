@@ -1,0 +1,294 @@
+[2026-03-19 15:06:44] API 配置: BASE_URL=http://api.shubiaobiao.cn/v1
+[2026-03-19 15:06:44] API 配置: MODEL=default from config
+[2026-03-19 15:06:44] ══════════════════════════════════════════════════════════
+[2026-03-19 15:06:44] 评估 phase2 结果 (ROUGE + LLM-as-Judge)
+[2026-03-19 15:06:44] ══════════════════════════════════════════════════════════
+[15:06:44] 加载 baseline/outputs/comparison_2025/phase2_results.json
+[15:06:44] 共 6 篇论文, 66 个假设待评估
+[15:06:44] ROUGE: ON
+[15:06:44] LLM-as-Judge: ON
+[15:06:44] 
+[15:06:44] ════════════════════════════════════════════════════════════════════════════════
+[15:06:44] [1/6] paper_0: AlphaFold prediction of structural ensembles of disorde...
+[15:06:44] ════════════════════════════════════════════════════════════════════════════════
+[15:06:44]   [1/66] Evaluating IdeaBench...
+[15:07:04]     LLM Judge: nov=8 spe=9 fea=8 rel=10 cro=8
+[15:07:04]     ROUGE: R1=0.309 R2=0.073 RL=0.136
+[15:07:04]   [2/66] Evaluating VanillaLLM...
+[15:07:21]     LLM Judge: nov=8 spe=8 fea=7 rel=9 cro=8
+[15:07:21]     ROUGE: R1=0.281 R2=0.062 RL=0.139
+[15:07:21]   [3/66] Evaluating AI-Scientist...
+[15:07:44]     ROUGE: R1=0.256 R2=0.064 RL=0.124
+[15:07:44]   [4/66] Evaluating SciMON...
+[15:08:24]     LLM Judge: nov=9 spe=8 fea=7 rel=8 cro=9
+[15:08:24]     ROUGE: R1=0.289 R2=0.048 RL=0.129
+[15:08:24]   [5/66] Evaluating MOOSE-Chem...
+[15:08:38]     LLM Judge: nov=9 spe=8 fea=7 rel=8 cro=9
+[15:08:38]     ROUGE: R1=0.264 R2=0.049 RL=0.115
+[15:08:38]   [6/66] Evaluating SciAgents...
+[15:09:04]     LLM Judge: nov=8 spe=9 fea=8 rel=10 cro=8
+[15:09:04]     ROUGE: R1=0.188 R2=0.022 RL=0.093
+[15:09:04]   [7/66] Evaluating P1...
+[15:09:16]     LLM Judge: nov=8 spe=9 fea=8 rel=9 cro=9
+[15:09:16]     ROUGE: R1=0.266 R2=0.034 RL=0.119
+[15:09:16]   [8/66] Evaluating P2...
+[15:09:34]     LLM Judge: nov=7 spe=8 fea=7 rel=9 cro=8
+[15:09:34]     ROUGE: R1=0.029 R2=0.000 RL=0.029
+[15:09:34]   [9/66] Evaluating P3...
+[15:09:45]     LLM Judge: nov=9 spe=9 fea=8 rel=9 cro=10
+[15:09:45]     ROUGE: R1=0.025 R2=0.013 RL=0.025
+[15:09:45]   [10/66] Evaluating P4...
+[15:10:06]     LLM Judge: nov=9 spe=9 fea=8 rel=10 cro=9
+[15:10:06]     ROUGE: R1=0.063 R2=0.018 RL=0.054
+[15:10:06]   [11/66] Evaluating P5...
+[15:10:28]     LLM Judge: nov=8 spe=9 fea=8 rel=9 cro=9
+[15:10:28]     ROUGE: R1=0.000 R2=0.000 RL=0.000
+[15:10:28] [1/6] 完成
+[15:10:28] 
+[15:10:28] ════════════════════════════════════════════════════════════════════════════════
+[15:10:28] [2/6] paper_1: Self-driving lab for the photochemical synthesis of pla...
+[15:10:28] ════════════════════════════════════════════════════════════════════════════════
+[15:10:28]   [12/66] Evaluating IdeaBench...
+[15:10:46]     LLM Judge: nov=8 spe=9 fea=7 rel=10 cro=8
+[15:10:46]     ROUGE: R1=0.317 R2=0.106 RL=0.174
+[15:10:46]   [13/66] Evaluating VanillaLLM...
+[15:11:05]     LLM Judge: nov=9 spe=9 fea=7 rel=9 cro=9
+[15:11:05]     ROUGE: R1=0.280 R2=0.056 RL=0.138
+[15:11:05]   [14/66] Evaluating AI-Scientist...
+[15:11:17]     LLM Judge: nov=8 spe=8 fea=7 rel=9 cro=7
+[15:11:17]     ROUGE: R1=0.281 R2=0.074 RL=0.112
+[15:11:17]   [15/66] Evaluating SciMON...
+[15:12:01]     LLM Judge: nov=9 spe=8 fea=7 rel=7 cro=9
+[15:12:01]     ROUGE: R1=0.350 R2=0.080 RL=0.148
+[15:12:01]   [16/66] Evaluating MOOSE-Chem...
+[15:12:26]     LLM Judge: nov=9 spe=8 fea=7 rel=9 cro=9
+[15:12:26]     ROUGE: R1=0.297 R2=0.052 RL=0.130
+[15:12:26]   [17/66] Evaluating SciAgents...
+[15:12:41]     LLM Judge: nov=8 spe=9 fea=7 rel=9 cro=8
+[15:12:41]     ROUGE: R1=0.213 R2=0.032 RL=0.087
+[15:12:41]   [18/66] Evaluating P1...
+[15:13:00]     LLM Judge: nov=8 spe=9 fea=7 rel=9 cro=9
+[15:13:00]     ROUGE: R1=0.287 R2=0.055 RL=0.135
+[15:13:00]   [19/66] Evaluating P2...
+[15:13:14]     LLM Judge: nov=8 spe=9 fea=8 rel=9 cro=9
+[15:13:14]     ROUGE: R1=0.000 R2=0.000 RL=0.000
+[15:13:14]   [20/66] Evaluating P3...
+[15:13:27]     LLM Judge: nov=6 spe=8 fea=8 rel=9 cro=9
+[15:13:27]     ROUGE: R1=0.000 R2=0.000 RL=0.000
+[15:13:27]   [21/66] Evaluating P4...
+[15:13:45]     LLM Judge: nov=9 spe=9 fea=8 rel=10 cro=9
+[15:13:45]     ROUGE: R1=0.213 R2=0.036 RL=0.090
+[15:13:45]   [22/66] Evaluating P5...
+[15:14:03]     LLM Judge: nov=6 spe=8 fea=9 rel=9 cro=9
+[15:14:03]     ROUGE: R1=0.000 R2=0.000 RL=0.000
+[15:14:03] [2/6] 完成
+[15:14:03] 
+[15:14:03] ════════════════════════════════════════════════════════════════════════════════
+[15:14:03] [3/6] paper_2: Multi-modal framework for battery state of health evalu...
+[15:14:03] ════════════════════════════════════════════════════════════════════════════════
+[15:14:03]   [23/66] Evaluating IdeaBench...
+[15:14:16]     LLM Judge: nov=8 spe=9 fea=8 rel=10 cro=8
+[15:14:16]     ROUGE: R1=0.224 R2=0.044 RL=0.116
+[15:14:16]   [24/66] Evaluating VanillaLLM...
+[15:14:30]     LLM Judge: nov=8 spe=9 fea=7 rel=9 cro=8
+[15:14:30]     ROUGE: R1=0.244 R2=0.022 RL=0.116
+[15:14:30]   [25/66] Evaluating AI-Scientist...
+[15:14:54]     ROUGE: R1=0.265 R2=0.037 RL=0.114
+[15:14:54]   [26/66] Evaluating SciMON...
+[15:15:44]     LLM Judge: nov=10 spe=9 fea=7 rel=7 cro=10
+[15:15:44]     ROUGE: R1=0.181 R2=0.012 RL=0.088
+[15:15:44]   [27/66] Evaluating MOOSE-Chem...
+[15:16:21]     LLM Judge: nov=8 spe=8 fea=7 rel=9 cro=9
+[15:16:21]     ROUGE: R1=0.240 R2=0.033 RL=0.108
+[15:16:21]   [28/66] Evaluating SciAgents...
+[15:16:53]     LLM Judge: nov=8 spe=9 fea=7 rel=9 cro=8
+[15:16:53]     ROUGE: R1=0.183 R2=0.017 RL=0.090
+[15:16:53]   [29/66] Evaluating P1...
+[15:17:08]     LLM Judge: nov=8 spe=9 fea=7 rel=10 cro=9
+[15:17:08]     ROUGE: R1=0.000 R2=0.000 RL=0.000
+[15:17:08]   [30/66] Evaluating P2...
+[15:17:24]     LLM Judge: nov=8 spe=9 fea=7 rel=9 cro=9
+[15:17:24]     ROUGE: R1=0.249 R2=0.051 RL=0.130
+[15:17:24]   [31/66] Evaluating P3...
+[15:17:34]     LLM Judge: nov=9 spe=9 fea=7 rel=9 cro=9
+[15:17:34]     ROUGE: R1=0.000 R2=0.000 RL=0.000
+[15:17:34]   [32/66] Evaluating P4...
+[15:17:55]     LLM Judge: nov=8 spe=9 fea=7 rel=9 cro=10
+[15:17:55]     ROUGE: R1=0.218 R2=0.052 RL=0.100
+[15:17:55]   [33/66] Evaluating P5...
+[15:18:08]     LLM Judge: nov=8 spe=9 fea=9 rel=10 cro=9
+[15:18:08]     ROUGE: R1=0.000 R2=0.000 RL=0.000
+[15:18:08] [3/6] 完成
+[15:18:08] 
+[15:18:08] ════════════════════════════════════════════════════════════════════════════════
+[15:18:08] [4/6] paper_3: Soil organic carbon thresholds control fertilizer effec...
+[15:18:08] ════════════════════════════════════════════════════════════════════════════════
+[15:18:08]   [34/66] Evaluating IdeaBench...
+[15:18:20]     LLM Judge: nov=8 spe=9 fea=7 rel=9 cro=8
+[15:18:20]     ROUGE: R1=0.471 R2=0.231 RL=0.263
+[15:18:20]   [35/66] Evaluating VanillaLLM...
+[15:18:39]     LLM Judge: nov=9 spe=9 fea=8 rel=9 cro=8
+[15:18:39]     ROUGE: R1=0.381 R2=0.098 RL=0.160
+[15:18:39]   [36/66] Evaluating AI-Scientist...
+[15:21:12]     [WARN] LLM judge failed: Expecting value: line 1 column 1 (char 0)
+[15:21:12]     LLM Judge: nov=0 spe=0 fea=0 rel=0 cro=0
+[15:21:12]     ROUGE: R1=0.319 R2=0.115 RL=0.152
+[15:21:12]   [37/66] Evaluating SciMON...
+[15:21:30]     LLM Judge: nov=9 spe=9 fea=8 rel=9 cro=9
+[15:21:30]     ROUGE: R1=0.382 R2=0.104 RL=0.183
+[15:21:30]   [38/66] Evaluating MOOSE-Chem...
+[15:21:45]     LLM Judge: nov=8 spe=8 fea=7 rel=8 cro=8
+[15:21:45]     ROUGE: R1=0.337 R2=0.121 RL=0.154
+[15:21:45]   [39/66] Evaluating SciAgents...
+[15:21:57]     LLM Judge: nov=9 spe=9 fea=7 rel=10 cro=8
+[15:21:57]     ROUGE: R1=0.249 R2=0.051 RL=0.118
+[15:21:57]   [40/66] Evaluating P1...
+[15:22:15]     LLM Judge: nov=8 spe=9 fea=8 rel=9 cro=9
+[15:22:15]     ROUGE: R1=0.034 R2=0.000 RL=0.034
+[15:22:15]   [41/66] Evaluating P2...
+[15:22:28]     LLM Judge: nov=8 spe=9 fea=8 rel=10 cro=8
+[15:22:28]     ROUGE: R1=0.184 R2=0.019 RL=0.145
+[15:22:28]   [42/66] Evaluating P3...
+[15:22:43]     LLM Judge: nov=7 spe=9 fea=8 rel=9 cro=9
+[15:22:43]     ROUGE: R1=0.232 R2=0.047 RL=0.148
+[15:22:43]   [43/66] Evaluating P4...
+[15:23:04]     LLM Judge: nov=9 spe=8 fea=8 rel=9 cro=8
+[15:23:04]     ROUGE: R1=0.153 R2=0.008 RL=0.115
+[15:23:04]   [44/66] Evaluating P5...
+[15:23:22]     LLM Judge: nov=7 spe=8 fea=9 rel=9 cro=8
+[15:23:22]     ROUGE: R1=0.020 R2=0.000 RL=0.020
+[15:23:22] [4/6] 完成
+[15:23:22] 
+[15:23:22] ════════════════════════════════════════════════════════════════════════════════
+[15:23:22] [5/6] paper_4: Bioactive nanomotor enabling efficient intestinal barri...
+[15:23:22] ════════════════════════════════════════════════════════════════════════════════
+[15:23:22]   [45/66] Evaluating IdeaBench...
+[15:23:41]     LLM Judge: nov=8 spe=7 fea=7 rel=9 cro=8
+[15:23:41]     ROUGE: R1=0.338 R2=0.082 RL=0.176
+[15:23:41]   [46/66] Evaluating VanillaLLM...
+[15:23:59]     LLM Judge: nov=9 spe=8 fea=7 rel=8 cro=9
+[15:23:59]     ROUGE: R1=0.287 R2=0.054 RL=0.125
+[15:23:59]   [47/66] Evaluating AI-Scientist...
+[15:24:24]     ROUGE: R1=0.240 R2=0.049 RL=0.136
+[15:24:24]   [48/66] Evaluating SciMON...
+[15:24:46]     LLM Judge: nov=9 spe=7 fea=7 rel=9 cro=9
+[15:24:46]     ROUGE: R1=0.226 R2=0.026 RL=0.115
+[15:24:46]   [49/66] Evaluating MOOSE-Chem...
+[15:25:02]     LLM Judge: nov=9 spe=8 fea=7 rel=8 cro=9
+[15:25:02]     ROUGE: R1=0.282 R2=0.050 RL=0.112
+[15:25:02]   [50/66] Evaluating SciAgents...
+[15:25:19]     LLM Judge: nov=8 spe=9 fea=8 rel=10 cro=7
+[15:25:19]     ROUGE: R1=0.159 R2=0.015 RL=0.069
+[15:25:19]   [51/66] Evaluating P1...
+[15:25:43]     LLM Judge: nov=9 spe=9 fea=8 rel=9 cro=9
+[15:25:43]     ROUGE: R1=0.036 R2=0.012 RL=0.024
+[15:25:43]   [52/66] Evaluating P2...
+[15:26:00]     LLM Judge: nov=9 spe=9 fea=8 rel=10 cro=8
+[15:26:00]     ROUGE: R1=0.000 R2=0.000 RL=0.000
+[15:26:00]   [53/66] Evaluating P3...
+[15:26:12]     LLM Judge: nov=9 spe=9 fea=8 rel=10 cro=9
+[15:26:12]     ROUGE: R1=0.027 R2=0.009 RL=0.027
+[15:26:12]   [54/66] Evaluating P4...
+[15:26:34]     LLM Judge: nov=9 spe=9 fea=7 rel=10 cro=8
+[15:26:34]     ROUGE: R1=0.018 R2=0.009 RL=0.018
+[15:26:34]   [55/66] Evaluating P5...
+[15:26:48]     LLM Judge: nov=7 spe=8 fea=8 rel=9 cro=8
+[15:26:48]     ROUGE: R1=0.022 R2=0.011 RL=0.022
+[15:26:48] [5/6] 完成
+[15:26:48] 
+[15:26:48] ════════════════════════════════════════════════════════════════════════════════
+[15:26:48] [6/6] paper_5: RiNALMo: general-purpose RNA language models can genera...
+[15:26:48] ════════════════════════════════════════════════════════════════════════════════
+[15:26:48]   [56/66] Evaluating IdeaBench...
+[15:26:58]     LLM Judge: nov=8 spe=8 fea=7 rel=9 cro=7
+[15:26:58]     ROUGE: R1=0.333 R2=0.079 RL=0.156
+[15:26:58]   [57/66] Evaluating VanillaLLM...
+[15:27:13]     LLM Judge: nov=8 spe=8 fea=7 rel=9 cro=9
+[15:27:13]     ROUGE: R1=0.278 R2=0.049 RL=0.098
+[15:27:13]   [58/66] Evaluating AI-Scientist...
+[15:27:29]     ROUGE: R1=0.210 R2=0.035 RL=0.089
+[15:27:29]   [59/66] Evaluating SciMON...
+[15:29:02]     LLM Judge: nov=9 spe=8 fea=7 rel=7 cro=9
+[15:29:02]     ROUGE: R1=0.248 R2=0.050 RL=0.122
+[15:29:02]   [60/66] Evaluating MOOSE-Chem...
+[15:29:18]     LLM Judge: nov=8 spe=6 fea=7 rel=8 cro=7
+[15:29:18]     ROUGE: R1=0.267 R2=0.051 RL=0.116
+[15:29:18]   [61/66] Evaluating SciAgents...
+[15:29:33]     LLM Judge: nov=8 spe=9 fea=7 rel=9 cro=8
+[15:29:33]     ROUGE: R1=0.198 R2=0.033 RL=0.088
+[15:29:33]   [62/66] Evaluating P1...
+[15:29:48]     LLM Judge: nov=8 spe=9 fea=8 rel=9 cro=6
+[15:29:48]     ROUGE: R1=0.013 R2=0.000 RL=0.013
+[15:29:48]   [63/66] Evaluating P2...
+[15:30:16]     LLM Judge: nov=8 spe=6 fea=8 rel=10 cro=8
+[15:30:16]     ROUGE: R1=0.103 R2=0.000 RL=0.081
+[15:30:16]   [64/66] Evaluating P3...
+[15:30:40]     LLM Judge: nov=8 spe=8 fea=7 rel=9 cro=7
+[15:30:40]     ROUGE: R1=0.087 R2=0.000 RL=0.076
+[15:30:40]   [65/66] Evaluating P4...
+[15:30:57]     LLM Judge: nov=8 spe=9 fea=7 rel=10 cro=9
+[15:30:57]     ROUGE: R1=0.057 R2=0.000 RL=0.057
+[15:30:57]   [66/66] Evaluating P5...
+[15:31:13]     LLM Judge: nov=6 spe=5 fea=8 rel=9 cro=6
+[15:31:13]     ROUGE: R1=0.000 R2=0.000 RL=0.000
+[15:31:13] [6/6] 完成
+[15:31:13] 
+[15:31:13] 全部评估完成! 总耗时: 1469.6s (24.5min)
+
+==============================================================================================================
+  假设生成评估结果汇总 (6 篇论文 × 11 种方法)
+==============================================================================================================
+
+  ┌─ LLM-as-Judge 多维度评分 (1-10, 越高越好)
+  │ Method            Novel     Specif    Feasib    Relev     Cross     AVG       
+  │ ────────────────  ────────  ────────  ────────  ────────  ────────  ────────
+  │ IdeaBench         8.00      8.50      7.33      9.50      7.83      8.23      
+  │ VanillaLLM        8.50      8.50      7.17      8.83      8.50      8.30      
+  │ AI-Scientist      4.00      4.00      3.50      4.50      3.50      3.90      
+  │ SciMON            9.17      8.17      7.17      7.83      9.17      8.30      
+  │ MOOSE-Chem        8.50      7.67      7.00      8.33      8.50      8.00      
+  │ SciAgents         8.17      9.00      7.33      9.50      7.83      8.37      
+  │ P1                8.17      9.00      7.67      9.17      8.50      8.50      
+  │ P2                8.00      8.33      7.67      9.50      8.33      8.37      
+  │ P3                8.00      8.67      7.67      9.17      8.83      8.47      
+  │ P4                8.67      8.83      7.50      9.67      8.83      8.70      
+  │ P5                7.00      7.83      8.50      9.17      8.17      8.13      
+  └─
+
+  ┌─ ROUGE (文本相似度, 假设 vs 原文 abstract)
+  │ Method            rouge1      rouge2      rougeL      
+  │ IdeaBench         0.3321      0.1024      0.1700      
+  │ VanillaLLM        0.2920      0.0571      0.1293      
+  │ AI-Scientist      0.2620      0.0623      0.1213      
+  │ SciMON            0.2792      0.0531      0.1310      
+  │ MOOSE-Chem        0.2814      0.0593      0.1223      
+  │ SciAgents         0.1981      0.0281      0.0908      
+  │ P1                0.1062      0.0170      0.0541      
+  │ P2                0.0941      0.0118      0.0640      
+  │ P3                0.0619      0.0114      0.0461      
+  │ P4                0.1205      0.0205      0.0725      
+  │ P5                0.0070      0.0019      0.0070      
+  └─
+
+  ┌─ 结构化指标 (仅 P5)
+  │ Method            LvlCov      Chain       Grounding   RelDiv      #Paths      AvgLen      
+  │ P5                1.0000      1.0000      1.0000      2.8278      5.8333      3.0000      
+  └─
+
+  ┌─ 通用指标
+  │ Method            AvgLen(chars)   AvgTime(s)    #Papers   
+  │ IdeaBench         899             54.8          6         
+  │ VanillaLLM        2723            57.0          6         
+  │ AI-Scientist      3684            58.9          6         
+  │ SciMON            2630            84.0          6         
+  │ MOOSE-Chem        3319            101.4         6         
+  │ SciAgents         4295            158.9         6         
+  │ P1                752             31.8          6         
+  │ P2                628             19.8          6         
+  │ P3                910             34.8          6         
+  │ P4                2719            50.9          6         
+  │ P5                1602            473.3         6         
+  └─
+
+[15:31:13] 结果已保存到 baseline/outputs/comparison_2025/phase2_eval.json
+[2026-03-19 15:31:14] 评估完成: baseline/outputs/comparison_2025/phase2_eval.json

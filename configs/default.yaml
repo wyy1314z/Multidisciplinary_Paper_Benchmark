@@ -21,6 +21,7 @@ classifier:
     max_choices_per_level: 3
     term_max_len: 128
     concurrency: 10
+    crossdisc_confidence_threshold: 0.5
 
   taxonomy:
     path: "data/msc_converted.json"

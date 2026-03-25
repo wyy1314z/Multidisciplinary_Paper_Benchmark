@@ -1,0 +1,347 @@
+[2026-03-19 11:55:21] API 配置: BASE_URL=http://api.shubiaobiao.cn/v1
+[2026-03-19 11:55:21] API 配置: MODEL=default from config
+[2026-03-19 11:55:21] ══════════════════════════════════════════════════════════
+[2026-03-19 11:55:21] Phase 2: 完整实验 (6篇论文 × 11种方法)
+[2026-03-19 11:55:21] ══════════════════════════════════════════════════════════
+[11:55:21] 共 6 篇论文, 11 种方法
+[11:55:21] 方法: ['IdeaBench', 'VanillaLLM', 'AI-Scientist', 'SciMON', 'MOOSE-Chem', 'SciAgents', 'P1', 'P2', 'P3', 'P4', 'P5']
+[11:55:21] 论文:
+[11:55:21]   [1] AlphaFold prediction of structural ensembles of disordered protei  (生物学)
+[11:55:21]   [2] Self-driving lab for the photochemical synthesis of plasmonic nan  (化学)
+[11:55:21]   [3] Multi-modal framework for battery state of health evaluation usin  (计算机科学技术)
+[11:55:21]   [4] Soil organic carbon thresholds control fertilizer effects on carb  (农学)
+[11:55:21]   [5] Bioactive nanomotor enabling efficient intestinal barrier penetra  (材料科学)
+[11:55:21]   [6] RiNALMo: general-purpose RNA language models can generalize well   (计算机科学技术)
+[11:55:21] 预计总调用: 6 × 11 = 66 次
+[11:55:21] 
+[11:55:21] ════════════════════════════════════════════════════════════════════════════════
+[11:55:21] [1/6] AlphaFold prediction of structural ensembles of disordered p...
+[11:55:21]   主学科: 生物学
+[11:55:21]   辅学科: ['计算机科学技术', '化学']
+[11:55:21] ════════════════════════════════════════════════════════════════════════════════
+[11:55:21]     Running CrossDisc extraction pipeline (for P1-P5)...
+'[Errno 101] Network is unreachable' thrown while requesting HEAD https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/adapter_config.json
+Retrying in 1s [Retry 1/5].
+Failed to compute embedding bridging: Cannot send a request, as the client has been closed.
+'[Errno 101] Network is unreachable' thrown while requesting HEAD https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/adapter_config.json
+Retrying in 1s [Retry 1/5].
+Failed to compute chain coherence: Cannot send a request, as the client has been closed.
+[12:03:40]     CrossDisc extraction done (498.2s)
+[12:03:40]       L1 query: 如何准确预测无序蛋白质的结构集合及其构象性质...
+[12:03:40]       L2 queries: 2, L3 queries: 1
+[12:03:40]     Running IdeaBench...
+[12:04:09]     IdeaBench done (29.2s)
+[12:04:09]     Running VanillaLLM...
+[12:04:45]     VanillaLLM done (36.2s)
+[12:04:45]     Running AI-Scientist...
+[12:05:47]     AI-Scientist done (61.6s)
+[12:05:47]     Running SciMON...
+[12:07:35]     SciMON done (108.2s)
+[12:07:35]     Running MOOSE-Chem...
+[12:09:33]     MOOSE-Chem done (118.4s)
+[12:09:33]     Running SciAgents...
+[12:12:11]     SciAgents done (158.1s)
+[12:12:11]     Running P1...
+[12:12:42]     P1 done (30.1s)
+[12:12:42]     Running P2...
+[12:12:58]     P2 done (16.6s)
+[12:12:58]     Running P3...
+[12:13:39]     P3 done (41.3s)
+[12:13:39]     Running P4...
+[12:14:28]     P4 done (48.8s)
+[12:14:28]     P5 (from extraction) done (498.2s)
+[12:14:28] [1/6] 完成: 11/11 成功
+[12:14:28] 
+[12:14:28] ════════════════════════════════════════════════════════════════════════════════
+[12:14:28] [2/6] Self-driving lab for the photochemical synthesis of plasmoni...
+[12:14:28]   主学科: 化学
+[12:14:28]   辅学科: ['材料科学', '计算机科学技术']
+[12:14:28] ════════════════════════════════════════════════════════════════════════════════
+[12:14:28]     Running CrossDisc extraction pipeline (for P1-P5)...
+'[Errno 101] Network is unreachable' thrown while requesting HEAD https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/adapter_config.json
+Retrying in 1s [Retry 1/5].
+Failed to compute embedding bridging: Cannot send a request, as the client has been closed.
+'[Errno 101] Network is unreachable' thrown while requesting HEAD https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/adapter_config.json
+Retrying in 1s [Retry 1/5].
+Failed to compute chain coherence: Cannot send a request, as the client has been closed.
+[12:18:43]     CrossDisc extraction done (254.7s)
+[12:18:43]       L1 query: 如何实现光化学合成中多维化学空间的优化与反应条件精准控制...
+[12:18:43]       L2 queries: 2, L3 queries: 2
+[12:18:43]     Running IdeaBench...
+[12:20:30]     IdeaBench done (107.0s)
+[12:20:30]     Running VanillaLLM...
+[12:21:43]     VanillaLLM done (73.0s)
+[12:21:43]     Running AI-Scientist...
+[12:23:09]     AI-Scientist done (86.2s)
+[12:23:09]     Running SciMON...
+[12:24:14]     SciMON done (65.1s)
+[12:24:14]     Running MOOSE-Chem...
+[12:25:27]     MOOSE-Chem done (72.6s)
+[12:25:27]     Running SciAgents...
+[12:28:02]     SciAgents done (154.8s)
+[12:28:02]     Running P1...
+[12:28:38]     P1 done (36.1s)
+[12:28:38]     Running P2...
+[12:28:54]     P2 done (16.5s)
+[12:28:54]     Running P3...
+[12:29:21]     P3 done (26.5s)
+[12:29:21]     Running P4...
+[12:29:56]     P4 done (35.6s)
+[12:29:56]     P5 (from extraction) done (254.7s)
+[12:29:56] [2/6] 完成: 11/11 成功
+[12:29:56] 
+[12:29:56] ════════════════════════════════════════════════════════════════════════════════
+[12:29:56] [3/6] Multi-modal framework for battery state of health evaluation...
+[12:29:56]   主学科: 计算机科学技术
+[12:29:56]   辅学科: ['材料科学']
+[12:29:56] ════════════════════════════════════════════════════════════════════════════════
+[12:29:56]     Running CrossDisc extraction pipeline (for P1-P5)...
+'[Errno 101] Network is unreachable' thrown while requesting HEAD https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/adapter_config.json
+Retrying in 1s [Retry 1/5].
+Failed to compute embedding bridging: Cannot send a request, as the client has been closed.
+'[Errno 101] Network is unreachable' thrown while requesting HEAD https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/adapter_config.json
+Retrying in 1s [Retry 1/5].
+Failed to compute chain coherence: Cannot send a request, as the client has been closed.
+[12:38:24]     CrossDisc extraction done (508.1s)
+[12:38:24]       L1 query: 多模态框架如何提升电池健康状态评估的准确性与效率...
+[12:38:24]       L2 queries: 2, L3 queries: 2
+[12:38:24]     Running IdeaBench...
+[12:39:03]     IdeaBench done (38.9s)
+[12:39:03]     Running VanillaLLM...
+[12:40:00]     VanillaLLM done (56.2s)
+[12:40:00]     Running AI-Scientist...
+[12:40:36]     AI-Scientist done (36.5s)
+[12:40:36]     Running SciMON...
+[12:41:59]     SciMON done (82.8s)
+[12:41:59]     Running MOOSE-Chem...
+[12:43:17]     MOOSE-Chem done (78.7s)
+[12:43:17]     Running SciAgents...
+[12:46:15]     SciAgents done (177.5s)
+[12:46:15]     Running P1...
+[12:46:45]     P1 done (29.6s)
+[12:46:45]     Running P2...
+[12:47:00]     P2 done (15.4s)
+[12:47:00]     Running P3...
+[12:47:29]     P3 done (28.6s)
+[12:47:29]     Running P4...
+[12:48:25]     P4 done (56.0s)
+[12:48:25]     P5 (from extraction) done (508.1s)
+[12:48:25] [3/6] 完成: 11/11 成功
+[12:48:25] 
+[12:48:25] ════════════════════════════════════════════════════════════════════════════════
+[12:48:25] [4/6] Soil organic carbon thresholds control fertilizer effects on...
+[12:48:25]   主学科: 农学
+[12:48:25]   辅学科: ['地球科学', '环境科学技术']
+[12:48:25] ════════════════════════════════════════════════════════════════════════════════
+[12:48:25]     Running CrossDisc extraction pipeline (for P1-P5)...
+Supplementary concept extraction failed: 'str' object has no attribute 'get'
+检测到查询中含英文，已自动清洗为中文（不再报错）。
+'[Errno 101] Network is unreachable' thrown while requesting HEAD https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/adapter_config.json
+Retrying in 1s [Retry 1/5].
+Failed to compute embedding bridging: Cannot send a request, as the client has been closed.
+'[Errno 101] Network is unreachable' thrown while requesting HEAD https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/adapter_config.json
+Retrying in 1s [Retry 1/5].
+Failed to compute chain coherence: Cannot send a request, as the client has been closed.
+[12:57:17]     CrossDisc extraction done (532.6s)
+[12:57:17]       L1 query: 氮肥施用如何影响农田土壤碳库动态变化...
+[12:57:17]       L2 queries: 2, L3 queries: 1
+[12:57:17]     Running IdeaBench...
+[12:58:08]     IdeaBench done (51.2s)
+[12:58:08]     Running VanillaLLM...
+[12:59:21]     VanillaLLM done (72.2s)
+[12:59:21]     Running AI-Scientist...
+[13:00:39]     AI-Scientist done (78.0s)
+[13:00:39]     Running SciMON...
+[13:02:17]     SciMON done (97.9s)
+[13:02:17]     Running MOOSE-Chem...
+[13:04:02]     MOOSE-Chem done (105.8s)
+[13:04:02]     Running SciAgents...
+[13:06:38]     SciAgents done (155.5s)
+[13:06:38]     Running P1...
+[13:07:05]     P1 done (26.9s)
+[13:07:05]     Running P2...
+[13:07:28]     P2 done (23.7s)
+[13:07:28]     Running P3...
+[13:08:02]     P3 done (33.4s)
+[13:08:02]     Running P4...
+[13:08:59]     P4 done (56.7s)
+[13:08:59]     P5 (from extraction) done (532.6s)
+[13:08:59] [4/6] 完成: 11/11 成功
+[13:08:59] 
+[13:08:59] ════════════════════════════════════════════════════════════════════════════════
+[13:08:59] [5/6] Bioactive nanomotor enabling efficient intestinal barrier pe...
+[13:08:59]   主学科: 材料科学
+[13:08:59]   辅学科: ['基础医学']
+[13:08:59] ════════════════════════════════════════════════════════════════════════════════
+[13:08:59]     Running CrossDisc extraction pipeline (for P1-P5)...
+Supplementary concept extraction failed: 'str' object has no attribute 'get'
+'[Errno 101] Network is unreachable' thrown while requesting HEAD https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/adapter_config.json
+Retrying in 1s [Retry 1/5].
+Failed to compute embedding bridging: Cannot send a request, as the client has been closed.
+'[Errno 101] Network is unreachable' thrown while requesting HEAD https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/adapter_config.json
+Retrying in 1s [Retry 1/5].
+Failed to compute chain coherence: Cannot send a request, as the client has been closed.
+[13:17:43]     CrossDisc extraction done (524.2s)
+[13:17:43]       L1 query: 如何设计具有自主可逆肠道屏障穿透能力的纳米马达以提升药物递送效率？...
+[13:17:43]       L2 queries: 2, L3 queries: 2
+[13:17:43]     Running IdeaBench...
+[13:18:51]     IdeaBench done (68.4s)
+[13:18:51]     Running VanillaLLM...
+[13:19:54]     VanillaLLM done (62.5s)
+[13:19:54]     Running AI-Scientist...
+[13:20:33]     AI-Scientist done (39.0s)
+[13:20:33]     Running SciMON...
+[13:21:41]     SciMON done (68.0s)
+[13:21:41]     Running MOOSE-Chem...
+[13:24:03]     MOOSE-Chem done (142.2s)
+[13:24:03]     Running SciAgents...
+[13:26:34]     SciAgents done (151.2s)
+[13:26:34]     Running P1...
+[13:27:14]     P1 done (40.1s)
+[13:27:14]     Running P2...
+[13:27:41]     P2 done (26.5s)
+[13:27:41]     Running P3...
+[13:28:28]     P3 done (47.2s)
+[13:28:28]     Running P4...
+[13:29:24]     P4 done (56.0s)
+[13:29:24]     P5 (from extraction) done (524.2s)
+[13:29:24] [5/6] 完成: 11/11 成功
+[13:29:24] 
+[13:29:24] ════════════════════════════════════════════════════════════════════════════════
+[13:29:24] [6/6] RiNALMo: general-purpose RNA language models can generalize ...
+[13:29:24]   主学科: 计算机科学技术
+[13:29:24]   辅学科: ['生物学']
+[13:29:24] ════════════════════════════════════════════════════════════════════════════════
+[13:29:24]     Running CrossDisc extraction pipeline (for P1-P5)...
+检测到查询中含英文，已自动清洗为中文（不再报错）。
+'[Errno 101] Network is unreachable' thrown while requesting HEAD https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/adapter_config.json
+Retrying in 1s [Retry 1/5].
+Failed to compute embedding bridging: Cannot send a request, as the client has been closed.
+'[Errno 101] Network is unreachable' thrown while requesting HEAD https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/resolve/main/adapter_config.json
+Retrying in 1s [Retry 1/5].
+Failed to compute chain coherence: Cannot send a request, as the client has been closed.
+[13:38:06]     CrossDisc extraction done (522.1s)
+[13:38:06]       L1 query: 语言模型如何提升结构预测任务的泛化能力...
+[13:38:06]       L2 queries: 2, L3 queries: 2
+[13:38:06]     Running IdeaBench...
+[13:38:40]     IdeaBench done (34.0s)
+[13:38:40]     Running VanillaLLM...
+[13:39:22]     VanillaLLM done (41.6s)
+[13:39:22]     Running AI-Scientist...
+[13:40:14]     AI-Scientist done (52.0s)
+[13:40:14]     Running SciMON...
+[13:41:36]     SciMON done (82.0s)
+[13:41:36]     Running MOOSE-Chem...
+[13:43:07]     MOOSE-Chem done (90.9s)
+[13:43:07]     Running SciAgents...
+[13:45:43]     SciAgents done (156.3s)
+[13:45:43]     Running P1...
+[13:46:11]     P1 done (28.2s)
+[13:46:11]     Running P2...
+[13:46:31]     P2 done (20.2s)
+[13:46:31]     Running P3...
+[13:47:03]     P3 done (31.7s)
+[13:47:03]     Running P4...
+[13:47:55]     P4 done (52.1s)
+[13:47:55]     P5 (from extraction) done (522.1s)
+[13:47:55] [6/6] 完成: 11/11 成功
+[13:47:55] 
+[13:47:55] 全部完成! 总耗时: 6753.7s (112.6min)
+[13:47:55] 结果已保存到 baseline/outputs/comparison_2025/phase2_results.json
+
+================================================================================================
+  对比实验汇总
+================================================================================================
+
+  论文: AlphaFold prediction of structural ensembles of disordered proteins
+  学科: 生物学
+    IdeaBench              29.2s  OK
+    VanillaLLM             36.2s  OK
+    AI-Scientist           61.6s  OK
+    SciMON                108.2s  OK
+    MOOSE-Chem            118.4s  OK
+    SciAgents             158.1s  OK
+    P1                     30.1s  OK
+    P2                     16.6s  OK
+    P3                     41.3s  OK
+    P4                     48.8s  OK
+    P5                    498.2s  OK
+
+  论文: Self-driving lab for the photochemical synthesis of plasmonic nanoparticles
+  学科: 化学
+    IdeaBench             107.0s  OK
+    VanillaLLM             73.0s  OK
+    AI-Scientist           86.2s  OK
+    SciMON                 65.1s  OK
+    MOOSE-Chem             72.6s  OK
+    SciAgents             154.8s  OK
+    P1                     36.1s  OK
+    P2                     16.5s  OK
+    P3                     26.5s  OK
+    P4                     35.6s  OK
+    P5                    254.7s  OK
+
+  论文: Multi-modal framework for battery state of health evaluation using open-sou
+  学科: 计算机科学技术
+    IdeaBench              38.9s  OK
+    VanillaLLM             56.2s  OK
+    AI-Scientist           36.5s  OK
+    SciMON                 82.8s  OK
+    MOOSE-Chem             78.7s  OK
+    SciAgents             177.5s  OK
+    P1                     29.6s  OK
+    P2                     15.4s  OK
+    P3                     28.6s  OK
+    P4                     56.0s  OK
+    P5                    508.1s  OK
+
+  论文: Soil organic carbon thresholds control fertilizer effects on carbon accrual
+  学科: 农学
+    IdeaBench              51.2s  OK
+    VanillaLLM             72.2s  OK
+    AI-Scientist           78.0s  OK
+    SciMON                 97.9s  OK
+    MOOSE-Chem            105.8s  OK
+    SciAgents             155.5s  OK
+    P1                     26.9s  OK
+    P2                     23.7s  OK
+    P3                     33.4s  OK
+    P4                     56.7s  OK
+    P5                    532.6s  OK
+
+  论文: Bioactive nanomotor enabling efficient intestinal barrier penetration for c
+  学科: 材料科学
+    IdeaBench              68.4s  OK
+    VanillaLLM             62.5s  OK
+    AI-Scientist           39.0s  OK
+    SciMON                 68.0s  OK
+    MOOSE-Chem            142.2s  OK
+    SciAgents             151.2s  OK
+    P1                     40.1s  OK
+    P2                     26.5s  OK
+    P3                     47.2s  OK
+    P4                     56.0s  OK
+    P5                    524.2s  OK
+
+  论文: RiNALMo: general-purpose RNA language models can generalize well on structu
+  学科: 计算机科学技术
+    IdeaBench              34.0s  OK
+    VanillaLLM             41.6s  OK
+    AI-Scientist           52.0s  OK
+    SciMON                 82.0s  OK
+    MOOSE-Chem             90.9s  OK
+    SciAgents             156.3s  OK
+    P1                     28.2s  OK
+    P2                     20.2s  OK
+    P3                     31.7s  OK
+    P4                     52.1s  OK
+    P5                    522.1s  OK
+
+  总计: 6 篇 × 11 方法 = 66 次调用, 66 成功, 0 失败
+Exception ignored in: <function ResourceTracker.__del__ at 0x715ad8b1e520>
+Traceback (most recent call last):
+  File "/ssd/wangyuyang/miniconda3/envs/wyy/lib/python3.12/site-packages/multiprocess/resource_tracker.py", line 80, in __del__
+  File "/ssd/wangyuyang/miniconda3/envs/wyy/lib/python3.12/site-packages/multiprocess/resource_tracker.py", line 89, in _stop
+  File "/ssd/wangyuyang/miniconda3/envs/wyy/lib/python3.12/site-packages/multiprocess/resource_tracker.py", line 102, in _stop_locked
+AttributeError: '_thread.RLock' object has no attribute '_recursion_count'
+[2026-03-19 13:48:00] Phase 2 生成完成: baseline/outputs/comparison_2025/phase2_results.json

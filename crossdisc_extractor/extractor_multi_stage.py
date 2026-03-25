@@ -336,6 +336,14 @@ def _align_hypothesis_entities(
     total_entities = 0
     aligned_entities = 0
 
+    has_any_path = any(
+        isinstance(hyp_dict.get(level), list) and len(hyp_dict.get(level)) > 0
+        for level in ("一级", "二级", "三级")
+    )
+    if not has_any_path:
+        logger.debug("假设路径为空，跳过实体对齐")
+        return hyp_dict
+
     for level in ("一级", "二级", "三级"):
         paths = hyp_dict.get(level, [])
         if not isinstance(paths, list):
@@ -860,8 +868,11 @@ def run_pipeline_for_item(
             supp_concepts = supp_obj.get("补充概念", supp_obj)
             if isinstance(supp_concepts, dict):
                 concepts_section = concepts_obj.get("概念", {})
-                _merge_concepts(concepts_section, supp_concepts)
-                logger.info("Supplementary extraction merged successfully")
+                if isinstance(concepts_section, dict):
+                    _merge_concepts(concepts_section, supp_concepts)
+                    logger.info("Supplementary extraction merged successfully")
+                else:
+                    logger.warning("概念字段类型异常 (%s)，跳过补充合并", type(concepts_section).__name__)
     except Exception as e:
         logger.warning("Supplementary concept extraction failed: %s", e)
 

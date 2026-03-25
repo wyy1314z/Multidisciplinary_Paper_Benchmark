@@ -1,0 +1,8 @@
+Checkpoints/*
+logs/*
+__pycache__/*
+*.pyc
+Inference_Corpus/*
+logs/*
+Logs/*
+*.zip

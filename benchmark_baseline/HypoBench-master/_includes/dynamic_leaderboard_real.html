@@ -1,0 +1,492 @@
+<!-- DataTables + PapaParse + jQuery from CDN -->
+<script src="https://cdn.jsdelivr.net/npm/papaparse@5.3.2/papaparse.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdn.datatables.net/1.13.1/css/jquery.dataTables.min.css">
+<script src="https://cdn.datatables.net/1.13.1/js/jquery.dataTables.min.js"></script>
+
+<style>
+  .category-block { border: 1px solid #ccc; padding: 8px; margin-bottom: 8px; }
+  .sub-block { border-left: 2px dashed #ccc; margin-left: 1em; padding-left: 1em; margin-top: 4px; }
+  table { width: 100%; }
+  .details { margin-top: 1em; }
+  .sub-level-header { display: flex; align-items: center; gap: 0.5em; }
+  .toggle-btn { background: none; border: none; cursor: pointer; font-size: 1em; font-weight: bold; }
+  
+  /* Toggle switch styles */
+  .metrics-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0 20px;
+    gap: 10px;
+  }
+  .metrics-toggle button {
+    padding: 8px 15px;
+    border: 1px solid #ccc;
+    background: #f8f8f8;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: bold;
+  }
+  .metrics-toggle button.active {
+    background: #007bff;
+    color: white;
+    border-color: #007bff;
+  }
+</style>
+
+<!-- Load constants (categories, rename maps, csv paths) -->
+<script src="{{ '/assets/js/leaderboard_constants_real.js' | relative_url }}"></script>
+
+<button id="toggleTaskSelectorBtn" style="margin-bottom: 1em;">Show Task Selection</button>
+<p>Select tasks below to filter the aggregated results in real time:</p>
+<div id="task-selector" style="margin-bottom: 1em; display: none;"></div>
+
+<div class="metrics-toggle">
+  <button id="accMetricsBtn" class="active">Accuracy Metrics</button>
+  <button id="npcMetricsBtn">NPC Metrics</button>
+</div>
+
+<table id="leaderboard" class="display"></table>
+
+<script>
+function createArrowBtn(open = false) {
+  const b = document.createElement('button');
+  b.type = 'button';
+  b.className = 'toggle-btn';
+  b.textContent = open ? 'v' : '>';
+  return b;
+}
+
+function buildNestedUI() {
+  const container = document.getElementById('task-selector');
+  container.innerHTML = '';
+  for (const top in categories) {
+    if (top === 'All') continue;
+    const sub = categories[top];
+    const block = document.createElement('div');
+    block.className = 'category-block';
+
+    const header = document.createElement('div');
+    header.className = 'sub-level-header';
+    const arrow = createArrowBtn(false);
+    const subWrap = document.createElement('div');
+    subWrap.style.marginLeft = '1em';
+    subWrap.style.display = 'none';
+    arrow.addEventListener('click', () => {
+      const hidden = subWrap.style.display === 'none';
+      subWrap.style.display = hidden ? 'block' : 'none';
+      arrow.textContent = hidden ? 'v' : '>';
+    });
+
+    const topCheckbox = document.createElement('input');
+    topCheckbox.type = 'checkbox';
+    topCheckbox.checked = true;
+    topCheckbox.value = top;
+    const topLabel = document.createElement('label');
+    topLabel.appendChild(topCheckbox);
+    topLabel.appendChild(document.createTextNode(' ' + (renameCategory[top] || top)));
+
+    header.appendChild(arrow);
+    header.appendChild(topLabel);
+    block.appendChild(header);
+    block.appendChild(subWrap);
+
+    if (sub && typeof sub === 'object') {
+      for (const level in sub) {
+        const tasks = sub[level];
+        const levelDiv = document.createElement('div');
+        levelDiv.className = 'sub-block';
+        const levelHeader = document.createElement('div');
+        levelHeader.className = 'sub-level-header';
+
+        const levelArrow = createArrowBtn(false);
+        const tasksDiv = document.createElement('div');
+        tasksDiv.style.marginLeft = '1em';
+        tasksDiv.style.display = 'none';
+        levelArrow.addEventListener('click', () => {
+          const hidden = tasksDiv.style.display === 'none';
+          tasksDiv.style.display = hidden ? 'block' : 'none';
+          levelArrow.textContent = hidden ? 'v' : '>';
+        });
+
+        const levelCheckbox = document.createElement('input');
+        levelCheckbox.type = 'checkbox';
+        levelCheckbox.checked = true;
+        levelCheckbox.value = level;
+        const levelLabel = document.createElement('label');
+        levelLabel.appendChild(levelCheckbox);
+        levelLabel.appendChild(document.createTextNode(' ' + level));
+
+        levelHeader.appendChild(levelArrow);
+        levelHeader.appendChild(levelLabel);
+        levelDiv.appendChild(levelHeader);
+        levelDiv.appendChild(tasksDiv);
+
+        if (Array.isArray(tasks)) {
+          tasks.forEach(task => {
+            const taskLabel = document.createElement('label');
+            taskLabel.style.display = 'block';
+            const taskCheckbox = document.createElement('input');
+            taskCheckbox.type = 'checkbox';
+            taskCheckbox.checked = true;
+            taskCheckbox.value = task;
+            taskLabel.appendChild(taskCheckbox);
+            taskLabel.appendChild(document.createTextNode(' ' + (renameTask[task] || task)));
+            tasksDiv.appendChild(taskLabel);
+
+            taskCheckbox.addEventListener('change', () => {
+              syncCheckbox(levelCheckbox, tasksDiv);
+              syncCheckbox(topCheckbox, subWrap);
+              updateLeaderboard();
+            });
+          });
+        } else if (typeof tasks === 'string') {
+          // This is for categories that have just one task with the same name
+          const task = top; // The category name is also the task name
+          const taskLabel = document.createElement('label');
+          taskLabel.style.display = 'block';
+          const taskCheckbox = document.createElement('input');
+          taskCheckbox.type = 'checkbox';
+          taskCheckbox.checked = true;
+          taskCheckbox.value = task;
+          taskLabel.appendChild(taskCheckbox);
+          taskLabel.appendChild(document.createTextNode(' ' + (renameTask[task] || task)));
+          tasksDiv.appendChild(taskLabel);
+
+          taskCheckbox.addEventListener('change', () => {
+            syncCheckbox(levelCheckbox, tasksDiv);
+            syncCheckbox(topCheckbox, subWrap);
+            updateLeaderboard();
+          });
+        }
+
+        levelCheckbox.addEventListener('change', e => {
+          const checked = e.target.checked;
+          tasksDiv.querySelectorAll('input[type=checkbox]').forEach(cb => cb.checked = checked);
+          syncCheckbox(topCheckbox, subWrap);
+          updateLeaderboard();
+        });
+
+        subWrap.appendChild(levelDiv);
+      }
+    }
+
+    topCheckbox.addEventListener('change', e => {
+      const checked = e.target.checked;
+      subWrap.querySelectorAll('input[type=checkbox]').forEach(cb => cb.checked = checked);
+      updateLeaderboard();
+    });
+
+    container.appendChild(block);
+  }
+}
+
+function syncCheckbox(parent, container) {
+  const boxes = container.querySelectorAll('input[type=checkbox]');
+  const allChecked = [...boxes].every(b => b.checked);
+  const noneChecked = [...boxes].every(b => !b.checked);
+  parent.checked = allChecked;
+  parent.indeterminate = !allChecked && !noneChecked;
+}
+
+function getSelectedTasks() {
+  const taskCheckboxes = document.querySelectorAll('.sub-block div label input[type=checkbox]');
+  return [...taskCheckboxes]
+    .filter(b => b.checked)
+    .map(b => b.value);
+}
+
+let allAccData = [], allNpcData = [], table = null, currentMode = 'acc';
+
+function loadCSV(path, callback) {
+  Papa.parse(path, {
+    download: true,
+    header: true,
+    skipEmptyLines: true,
+    complete: function(results) {
+      // Convert string values to numbers where appropriate
+      results.data.forEach(row => {
+        const parts = path.split('/');
+        row.Model = parts[parts.length - 1].split('_')[0];
+        
+        // Convert accuracy and F1 values to numbers
+        if (row.OOD_Accuracy || row['OOD Accuracy']) 
+          row.OOD_Accuracy = parseFloat(row.OOD_Accuracy || row['OOD Accuracy']);
+        if (row.OOD_F1 || row['OOD F1']) 
+          row.OOD_F1 = parseFloat(row.OOD_F1 || row['OOD F1']);
+        if (row.IND_Accuracy || row['IND Accuracy']) 
+          row.IND_Accuracy = parseFloat(row.IND_Accuracy || row['IND Accuracy']);
+        if (row.IND_F1 || row['IND F1']) 
+          row.IND_F1 = parseFloat(row.IND_F1 || row['IND F1']);
+      });
+      callback(results.data);
+    }
+  });
+}
+
+function filterData(data, selectedTasks) {
+  if (!selectedTasks.length) return [];
+  const allowed = new Set(selectedTasks);
+  return data.filter(row => allowed.has(row.Task));
+}
+
+function aggregateAccData(rows) {
+  const map = new Map();
+  rows.forEach(r => {
+    const key = r.Model + '||' + r.Method;
+    if (!map.has(key)) {
+      map.set(key, { 
+        Model: r.Model, 
+        Method: r.Method, 
+        OODAccuracy: [], 
+        OODF1: [], 
+        INDAccuracy: [], 
+        INDF1: [], 
+        Details: [] 
+      });
+    }
+    const entry = map.get(key);
+    
+    // Handle both underscore and space notation in column names
+    const oodAcc = r.OOD_Accuracy !== undefined ? r.OOD_Accuracy : r['OOD Accuracy'];
+    const oodF1 = r.OOD_F1 !== undefined ? r.OOD_F1 : r['OOD F1'];
+    const indAcc = r.IND_Accuracy !== undefined ? r.IND_Accuracy : r['IND Accuracy'];
+    const indF1 = r.IND_F1 !== undefined ? r.IND_F1 : r['IND F1'];
+    
+    if (oodAcc !== undefined && oodAcc !== null && !isNaN(parseFloat(oodAcc))) 
+      entry.OODAccuracy.push(parseFloat(oodAcc));
+    if (oodF1 !== undefined && oodF1 !== null && !isNaN(parseFloat(oodF1))) 
+      entry.OODF1.push(parseFloat(oodF1));
+    if (indAcc !== undefined && indAcc !== null && !isNaN(parseFloat(indAcc))) 
+      entry.INDAccuracy.push(parseFloat(indAcc));
+    if (indF1 !== undefined && indF1 !== null && !isNaN(parseFloat(indF1))) 
+      entry.INDF1.push(parseFloat(indF1));
+    
+    entry.Details.push({ 
+      Task: r.Task, 
+      OOD_Accuracy: oodAcc,
+      OOD_F1: oodF1,
+      IND_Accuracy: indAcc,
+      IND_F1: indF1
+    });
+  });
+  
+  return Array.from(map.values()).map(e => ({
+    Model: e.Model,
+    Method: e.Method,
+    AvgOODAccuracy: e.OODAccuracy.length > 0 ? (e.OODAccuracy.reduce((a, b) => a + b, 0) / e.OODAccuracy.length).toFixed(2) : 'N/A',
+    AvgOODF1: e.OODF1.length > 0 ? (e.OODF1.reduce((a, b) => a + b, 0) / e.OODF1.length).toFixed(2) : 'N/A',
+    AvgINDAccuracy: e.INDAccuracy.length > 0 ? (e.INDAccuracy.reduce((a, b) => a + b, 0) / e.INDAccuracy.length).toFixed(2) : 'N/A',
+    AvgINDF1: e.INDF1.length > 0 ? (e.INDF1.reduce((a, b) => a + b, 0) / e.INDF1.length).toFixed(2) : 'N/A',
+    Details: e.Details
+  }));
+}
+
+function aggregateNpcData(rows) {
+  const map = new Map();
+  rows.forEach(r => {
+    const key = r.Model + '||' + r.Method;
+    if (!map.has(key)) {
+      map.set(key, { 
+        Model: r.Model, 
+        Method: r.Method, 
+        Novelty: [], 
+        Plausibility: [], 
+        Clarity: [], 
+        Details: [] 
+      });
+    }
+    const entry = map.get(key);
+    
+    if (r.Novelty !== undefined && r.Novelty !== null && !isNaN(parseFloat(r.Novelty))) 
+      entry.Novelty.push(parseFloat(r.Novelty));
+    if (r.Plausibility !== undefined && r.Plausibility !== null && !isNaN(parseFloat(r.Plausibility)))
+      entry.Plausibility.push(parseFloat(r.Plausibility));
+    if (r.Clarity !== undefined && r.Clarity !== null && !isNaN(parseFloat(r.Clarity)))
+      entry.Clarity.push(parseFloat(r.Clarity));
+      
+    entry.Details.push({ 
+      Task: r.Task, 
+      Novelty: r.Novelty,
+      Plausibility: r.Plausibility,
+      Clarity: r.Clarity
+    });
+  });
+  
+  return Array.from(map.values()).map(e => ({
+    Model: e.Model,
+    Method: e.Method,
+    AvgNovelty: e.Novelty.length > 0 ? (e.Novelty.reduce((a, b) => a + b, 0) / e.Novelty.length).toFixed(2) : 'N/A',
+    AvgPlausibility: e.Plausibility.length > 0 ? (e.Plausibility.reduce((a, b) => a + b, 0) / e.Plausibility.length).toFixed(2) : 'N/A',
+    AvgClarity: e.Clarity.length > 0 ? (e.Clarity.reduce((a, b) => a + b, 0) / e.Clarity.length).toFixed(2) : 'N/A',
+    Details: e.Details
+  }));
+}
+
+function renderAccTable(data) {
+  if (table) {
+    table.destroy();
+    $('#leaderboard').empty();
+  }
+  const tableData = data.map(row => [
+    renameModel[row.Model] || row.Model,
+    renameMethod[row.Method] || row.Method,
+    row.AvgOODAccuracy,
+    row.AvgOODF1,
+    row.AvgINDAccuracy,
+    row.AvgINDF1,
+    '<button class="details-btn" data-expanded="false">View</button>',
+    JSON.stringify(row.Details)
+  ]);
+  table = $('#leaderboard').DataTable({
+    data: tableData,
+    columns: [
+      { title: 'Model' },
+      { title: 'Method' },
+      { title: 'OOD Accuracy (%)' },
+      { title: 'OOD F1 (%)' },
+      { title: 'IND Accuracy (%)' },
+      { title: 'IND F1 (%)' },
+      { title: 'Details' },
+      { title: 'HiddenDetails', visible: false }
+    ],
+    order: [[2, 'desc']]  // Sort by OOD Accuracy instead of OOD F1
+  });
+
+  $('#leaderboard tbody').off('click').on('click', 'button.details-btn', function () {
+    const row = table.row($(this).parents('tr'));
+    const details = JSON.parse(row.data()[7]);
+    const expanded = $(this).attr('data-expanded') === 'true';
+    if (!expanded) {
+      let html = '<div class="details"><ul>';
+      details.forEach(d => {
+        html += `<li><strong>${renameTask[d.Task] || d.Task}</strong>: `;
+        html += `OOD Accuracy=${d.OOD_Accuracy || 'N/A'}, OOD F1=${d.OOD_F1 || 'N/A'}, `;
+        html += `IND Accuracy=${d.IND_Accuracy || 'N/A'}, IND F1=${d.IND_F1 || 'N/A'}`;
+        html += `</li>`;
+      });
+      html += '</ul></div>';
+      $(this).parent().append(html);
+      $(this).attr('data-expanded', 'true').text('Hide');
+    } else {
+      $(this).parent().find('.details').remove();
+      $(this).attr('data-expanded', 'false').text('View');
+    }
+  });
+}
+
+function renderNpcTable(data) {
+  if (table) {
+    table.destroy();
+    $('#leaderboard').empty();
+  }
+  const tableData = data.map(row => [
+    renameModel[row.Model] || row.Model,
+    renameMethod[row.Method] || row.Method,
+    row.AvgNovelty,
+    row.AvgPlausibility,
+    row.AvgClarity,
+    '<button class="details-btn" data-expanded="false">View</button>',
+    JSON.stringify(row.Details)
+  ]);
+  table = $('#leaderboard').DataTable({
+    data: tableData,
+    columns: [
+      { title: 'Model' },
+      { title: 'Method' },
+      { title: 'Novelty' },
+      { title: 'Plausibility' },
+      { title: 'Clarity' },
+      { title: 'Details' },
+      { title: 'HiddenDetails', visible: false }
+    ],
+    order: [[2, 'desc']]  // Sort by Novelty instead of Plausibility
+  });
+
+  $('#leaderboard tbody').off('click').on('click', 'button.details-btn', function () {
+    const row = table.row($(this).parents('tr'));
+    const details = JSON.parse(row.data()[6]);
+    const expanded = $(this).attr('data-expanded') === 'true';
+    if (!expanded) {
+      let html = '<div class="details"><ul>';
+      details.forEach(d => {
+        html += `<li><strong>${renameTask[d.Task] || d.Task}</strong>: `;
+        html += `Novelty=${d.Novelty || 'N/A'}, Plausibility=${d.Plausibility || 'N/A'}, Clarity=${d.Clarity || 'N/A'}`;
+        html += `</li>`;
+      });
+      html += '</ul></div>';
+      $(this).parent().append(html);
+      $(this).attr('data-expanded', 'true').text('Hide');
+    } else {
+      $(this).parent().find('.details').remove();
+      $(this).attr('data-expanded', 'false').text('View');
+    }
+  });
+}
+
+function updateLeaderboard() {
+  const selectedTasks = getSelectedTasks();
+  if (currentMode === 'acc') {
+    renderAccTable(aggregateAccData(filterData(allAccData, selectedTasks)));
+  } else {
+    renderNpcTable(aggregateNpcData(filterData(allNpcData, selectedTasks)));
+  }
+}
+
+let visible = false;
+document.getElementById('toggleTaskSelectorBtn').addEventListener('click', () => {
+  visible = !visible;
+  document.getElementById('task-selector').style.display = visible ? 'block' : 'none';
+  document.getElementById('toggleTaskSelectorBtn').textContent = visible ? 'Hide Task Selection' : 'Show Task Selection';
+});
+
+// Add event listeners for metric toggle buttons
+document.getElementById('accMetricsBtn').addEventListener('click', function() {
+  if (currentMode !== 'acc') {
+    currentMode = 'acc';
+    document.getElementById('accMetricsBtn').classList.add('active');
+    document.getElementById('npcMetricsBtn').classList.remove('active');
+    updateLeaderboard();
+  }
+});
+
+document.getElementById('npcMetricsBtn').addEventListener('click', function() {
+  if (currentMode !== 'npc') {
+    currentMode = 'npc';
+    document.getElementById('npcMetricsBtn').classList.add('active');
+    document.getElementById('accMetricsBtn').classList.remove('active');
+    updateLeaderboard();
+  }
+});
+
+function initLeaderboard() {
+  buildNestedUI();
+  let accLoadedCount = 0;
+  let npcLoadedCount = 0;
+  
+  // Load accuracy data
+  csvFiles_acc.forEach(file => {
+    loadCSV(file, data => {
+      allAccData.push(...data);
+      accLoadedCount++;
+      if (accLoadedCount === csvFiles_acc.length && npcLoadedCount === csvFiles_npc.length) {
+        updateLeaderboard();
+      }
+    });
+  });
+  
+  // Load NPC data
+  csvFiles_npc.forEach(file => {
+    loadCSV(file, data => {
+      allNpcData.push(...data);
+      npcLoadedCount++;
+      if (accLoadedCount === csvFiles_acc.length && npcLoadedCount === csvFiles_npc.length) {
+        updateLeaderboard();
+      }
+    });
+  });
+}
+
+initLeaderboard();
+</script>

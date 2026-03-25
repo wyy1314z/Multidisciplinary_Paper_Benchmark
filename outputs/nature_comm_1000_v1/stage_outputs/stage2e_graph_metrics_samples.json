@@ -1,0 +1,1933 @@
+[
+  {
+    "title": "Seasonal recurrence and modular assembly of an Arctic pelagic marine microbiome",
+    "graph": {
+      "nodes": [
+        {
+          "id": "微生物群落",
+          "term": "microbial communities",
+          "normalized": "微生物群落",
+          "discipline": "生物学",
+          "evidence": "how microbial communities are shaped by environmental variability",
+          "source": "abstract",
+          "confidence": 0.98
+        },
+        {
+          "id": "长读长宏基因组学",
+          "term": "long-read metagenomics",
+          "normalized": "长读长宏基因组学",
+          "discipline": "生物学",
+          "evidence": "long-read metagenomics and SSU ribosomal metabarcoding",
+          "source": "abstract",
+          "confidence": 0.95
+        },
+        {
+          "id": "核糖体元条形码",
+          "term": "SSU ribosomal metabarcoding",
+          "normalized": "核糖体元条形码",
+          "discipline": "生物学",
+          "evidence": "long-read metagenomics and SSU ribosomal metabarcoding",
+          "source": "abstract",
+          "confidence": 0.93
+        },
+        {
+          "id": "候选属硝化泉古菌",
+          "term": "Cand. Nitrosopumilus",
+          "normalized": "候选属硝化泉古菌",
+          "discipline": "生物学",
+          "evidence": "Cand. Nitrosopumilus, Syndiniales, and the machinery to oxidise ammonia",
+          "source": "abstract",
+          "confidence": 0.97
+        },
+        {
+          "id": "新月藻目",
+          "term": "Syndiniales",
+          "normalized": "新月藻目",
+          "discipline": "生物学",
+          "evidence": "Cand. Nitrosopumilus, Syndiniales, and the machinery to oxidise ammonia",
+          "source": "abstract",
+          "confidence": 0.92
+        },
+        {
+          "id": "宏转录组",
+          "term": "metatranscriptomes",
+          "normalized": "宏转录组",
+          "discipline": "生物学",
+          "evidence": "Leveraging metatranscriptomes from Tara Oceans",
+          "source": "abstract",
+          "confidence": 0.96
+        },
+        {
+          "id": "海洋螺菌属",
+          "term": "Amylibacter",
+          "normalized": "海洋螺菌属",
+          "discipline": "生物学",
+          "evidence": "late summer is characterised by Amylibacter and sulfur compound metabolism",
+          "source": "abstract",
+          "confidence": 0.94
+        },
+        {
+          "id": "硫化合物代谢",
+          "term": "sulfur compound metabolism",
+          "normalized": "硫化合物代谢",
+          "discipline": "生物学",
+          "evidence": "late summer is characterised by Amylibacter and sulfur compound metabolism",
+          "source": "abstract",
+          "confidence": 0.91
+        },
+        {
+          "id": "细菌",
+          "term": "Bacteria",
+          "normalized": "细菌",
+          "discipline": "生物学",
+          "evidence": "Bacteria, archaea and microeukaryotes are the dominant life forms",
+          "source": "introduction",
+          "confidence": 0.99
+        },
+        {
+          "id": "古菌",
+          "term": "archaea",
+          "normalized": "古菌",
+          "discipline": "生物学",
+          "evidence": "Bacteria, archaea and microeukaryotes are the dominant life forms",
+          "source": "introduction",
+          "confidence": 0.99
+        },
+        {
+          "id": "微型真核生物",
+          "term": "microeukaryotes",
+          "normalized": "微型真核生物",
+          "discipline": "生物学",
+          "evidence": "Bacteria, archaea and microeukaryotes are the dominant life forms",
+          "source": "introduction",
+          "confidence": 0.98
+        },
+        {
+          "id": "生物地球化学循环",
+          "term": "biogeochemical cycling",
+          "normalized": "生物地球化学循环",
+          "discipline": "生物学",
+          "evidence": "mediating the biogeochemical cycling of biologically important elements",
+          "source": "introduction",
+          "confidence": 0.95
+        },
+        {
+          "id": "北冰洋",
+          "term": "Arctic Ocean",
+          "normalized": "北冰洋",
+          "discipline": "地球科学",
+          "evidence": "pelagic Arctic Ocean microbiome",
+          "source": "abstract",
+          "confidence": 0.99
+        },
+        {
+          "id": "极夜",
+          "term": "polar night",
+          "normalized": "极夜",
+          "discipline": "地球科学",
+          "evidence": "signatures of early polar night",
+          "source": "abstract",
+          "confidence": 0.96
+        },
+        {
+          "id": "海底地形图",
+          "term": "bathymetric map",
+          "normalized": "海底地形图",
+          "discipline": "地球科学",
+          "evidence": "Bathymetric map of the Fram Strait",
+          "source": "introduction",
+          "confidence": 0.93
+        },
+        {
+          "id": "斯匹次卑尔根西岸流",
+          "term": "West Spitsbergen Current",
+          "normalized": "斯匹次卑尔根西岸流",
+          "discipline": "地球科学",
+          "evidence": "mooring location within the West Spitsbergen Current",
+          "source": "introduction",
+          "confidence": 0.94
+        },
+        {
+          "id": "混合层深度",
+          "term": "mixed layer depth",
+          "normalized": "混合层深度",
+          "discipline": "地球科学",
+          "evidence": "mixed layer depth, chlorophyll concentrations",
+          "source": "abstract",
+          "confidence": 0.92
+        },
+        {
+          "id": "自主采样器",
+          "term": "autonomous samplers",
+          "normalized": "自主采样器",
+          "discipline": "环境科学技术",
+          "evidence": "autonomous samplers and in situ sensors",
+          "source": "abstract",
+          "confidence": 0.95
+        },
+        {
+          "id": "原位传感器",
+          "term": "in situ sensors",
+          "normalized": "原位传感器",
+          "discipline": "环境科学技术",
+          "evidence": "autonomous samplers and in situ sensors",
+          "source": "abstract",
+          "confidence": 0.95
+        },
+        {
+          "id": "环境选择压力",
+          "term": "environmental selection pressure",
+          "normalized": "环境选择压力",
+          "discipline": "环境科学技术",
+          "evidence": "environmental selection pressure acts heterogeneously",
+          "source": "abstract",
+          "confidence": 0.93
+        },
+        {
+          "id": "塔拉海洋观测项目",
+          "term": "Tara Oceans",
+          "normalized": "塔拉海洋观测项目",
+          "discipline": "环境科学技术",
+          "evidence": "metatranscriptomes from Tara Oceans",
+          "source": "abstract",
+          "confidence": 0.97
+        },
+        {
+          "id": "气候变暖",
+          "term": "climate warming",
+          "normalized": "气候变暖",
+          "discipline": "环境科学技术",
+          "evidence": "unprecedented changes are taking place because of climate warming",
+          "source": "introduction",
+          "confidence": 0.96
+        },
+        {
+          "id": "Arctic Ocean microbiome",
+          "term": "Arctic Ocean microbiome",
+          "normalized": "Arctic Ocean microbiome",
+          "discipline": "struct_relation_inferred",
+          "evidence": "",
+          "source": "struct_relation_inferred",
+          "confidence": 0.8
+        },
+        {
+          "id": "microbial community assembly",
+          "term": "microbial community assembly",
+          "normalized": "microbial community assembly",
+          "discipline": "struct_relation_inferred",
+          "evidence": "",
+          "source": "struct_relation_inferred",
+          "confidence": 0.8
+        },
+        {
+          "id": "genetic diversity",
+          "term": "genetic diversity",
+          "normalized": "genetic diversity",
+          "discipline": "struct_relation_inferred",
+          "evidence": "",
+          "source": "struct_relation_inferred",
+          "confidence": 0.8
+        },
+        {
+          "id": "environmental monitoring",
+          "term": "environmental monitoring",
+          "normalized": "environmental monitoring",
+          "discipline": "struct_relation_inferred",
+          "evidence": "",
+          "source": "struct_relation_inferred",
+          "confidence": 0.8
+        }
+      ],
+      "edges": [
+        {
+          "source": "自主采样器",
+          "target": "微生物群落",
+          "relation": "used to study seasonal structuring of",
+          "relation_type": "method_applied_to",
+          "metadata": {
+            "evidence": "combining autonomous samplers and in situ sensors with long-read metagenomics and SSU ribosomal metabarcoding",
+            "source": "struct",
+            "direction": "->"
+          }
+        },
+        {
+          "source": "气候变暖",
+          "target": "Arctic Ocean microbiome",
+          "relation": "drives changes in",
+          "relation_type": "driven_by",
+          "metadata": {
+            "evidence": "unprecedented changes are taking place because of climate warming",
+            "source": "struct",
+            "direction": "->"
+          }
+        },
+        {
+          "source": "塔拉海洋观测项目",
+          "target": "宏转录组",
+          "relation": "provides data for analyzing",
+          "relation_type": "corresponds_to",
+          "metadata": {
+            "evidence": "Leveraging metatranscriptomes from Tara Oceans",
+            "source": "struct",
+            "direction": "->"
+          }
+        },
+        {
+          "source": "极夜",
+          "target": "候选属硝化泉古菌",
+          "relation": "selects for signature taxa during",
+          "relation_type": "constrains",
+          "metadata": {
+            "evidence": "Cand. Nitrosopumilus... are signatures of early polar night",
+            "source": "struct",
+            "direction": "->"
+          }
+        },
+        {
+          "source": "混合层深度",
+          "target": "microbial community assembly",
+          "relation": "influences through environmental gradients",
+          "relation_type": "improves_metric",
+          "metadata": {
+            "evidence": "seasonal environmental gradients structure microbiomes",
+            "source": "struct",
+            "direction": "->"
+          }
+        },
+        {
+          "source": "长读长宏基因组学",
+          "target": "生物地球化学循环",
+          "relation": "enables functional analysis of",
+          "relation_type": "method_applied_to",
+          "metadata": {
+            "evidence": "long-read metagenomics... identified functional dynamics",
+            "source": "struct",
+            "direction": "->"
+          }
+        },
+        {
+          "source": "环境选择压力",
+          "target": "genetic diversity",
+          "relation": "shapes structuring of",
+          "relation_type": "generalizes",
+          "metadata": {
+            "evidence": "environmental selection pressure acts heterogeneously on microbiomes",
+            "source": "struct",
+            "direction": "->"
+          }
+        },
+        {
+          "source": "海洋螺菌属",
+          "target": "硫化合物代谢",
+          "relation": "performs key metabolic function in",
+          "relation_type": "maps_to",
+          "metadata": {
+            "evidence": "late summer characterized by Amylibacter and sulfur compound metabolism",
+            "source": "struct",
+            "direction": "->"
+          }
+        },
+        {
+          "source": "海底地形图",
+          "target": "斯匹次卑尔根西岸流",
+          "relation": "shows location of oceanographic feature",
+          "relation_type": "corresponds_to",
+          "metadata": {
+            "evidence": "Bathymetric map of the Fram Strait with the mooring location within the West Spitsbergen Current",
+            "source": "struct",
+            "direction": "->"
+          }
+        },
+        {
+          "source": "原位传感器",
+          "target": "environmental monitoring",
+          "relation": "supports real-time",
+          "relation_type": "extends",
+          "metadata": {
+            "evidence": "autonomous samplers and in situ sensors",
+            "source": "struct",
+            "direction": "->"
+          }
+        },
+        {
+          "source": "自主采样器",
+          "target": "微生物群落",
+          "relation": "影响",
+          "relation_type": "H1",
+          "metadata": {
+            "claim": "基于自主采样器的长期监测揭示微生物群落季节性重组的动态特征",
+            "step": 1,
+            "source": "hypothesis",
+            "path_index": 0
+          }
+        },
+        {
+          "source": "微生物群落",
+          "target": "环境选择压力",
+          "relation": "环境选择压力",
+          "relation_type": "H1",
+          "metadata": {
+            "claim": "环境选择压力通过非均质作用驱动微生物群落功能模块的季节性分化",
+            "step": 2,
+            "source": "hypothesis",
+            "path_index": 0
+          }
+        },
+        {
+          "source": "环境选择压力",
+          "target": "气候变暖",
+          "relation": "气候变暖 北冰洋",
+          "relation_type": "H1",
+          "metadata": {
+            "claim": "气候变暖通过改变北极海洋环境压力因子重构微生物功能网络，需环境科学技术提供多维压力监测体系",
+            "step": 3,
+            "source": "hypothesis",
+            "path_index": 0
+          }
+        },
+        {
+          "source": "极夜",
+          "target": "候选属硝化泉古菌",
+          "relation": "影响",
+          "relation_type": "H1",
+          "metadata": {
+            "claim": "极夜环境筛选出硝化泉古菌等关键功能类群",
+            "step": 1,
+            "source": "hypothesis",
+            "path_index": 1
+          }
+        },
+        {
+          "source": "候选属硝化泉古菌",
+          "target": "生物地球化学循环",
+          "relation": "生物地球化学循环",
+          "relation_type": "H1",
+          "metadata": {
+            "claim": "关键古菌类群通过氨氧化作用维系极端环境下的物质循环",
+            "step": 2,
+            "source": "hypothesis",
+            "path_index": 1
+          }
+        },
+        {
+          "source": "生物地球化学循环",
+          "target": "北冰洋",
+          "relation": "北冰洋",
+          "relation_type": "H1",
+          "metadata": {
+            "claim": "北极海洋地形特征通过调控物质循环驱动微生物群落模块化组装，需地球科学提供海洋物理结构解析",
+            "step": 3,
+            "source": "hypothesis",
+            "path_index": 1
+          }
+        },
+        {
+          "source": "环境选择压力",
+          "target": "微生物群落",
+          "relation": "通过季节性监测影响",
+          "relation_type": "H2",
+          "metadata": {
+            "claim": "环境选择压力 通过季节性监测影响 微生物群落",
+            "step": 1,
+            "source": "hypothesis",
+            "path_index": 0
+          }
+        },
+        {
+          "source": "微生物群落",
+          "target": "长读长宏基因组学",
+          "relation": "由长读长宏基因组学解析",
+          "relation_type": "H2",
+          "metadata": {
+            "claim": "微生物群落 由长读长宏基因组学解析 长读长宏基因组学",
+            "step": 2,
+            "source": "hypothesis",
+            "path_index": 0
+          }
+        },
+        {
+          "source": "长读长宏基因组学",
+          "target": "生物地球化学循环",
+          "relation": "揭示遗传多样性动态",
+          "relation_type": "H2",
+          "metadata": {
+            "claim": "长读长宏基因组学 揭示遗传多样性动态 生物地球化学循环",
+            "step": 3,
+            "source": "hypothesis",
+            "path_index": 0
+          }
+        },
+        {
+          "source": "微生物群落",
+          "target": "生物地球化学循环",
+          "relation": "调控生物地球化学功能模块",
+          "relation_type": "H2",
+          "metadata": {
+            "claim": "微生物群落 调控生物地球化学功能模块 生物地球化学循环",
+            "step": 3,
+            "source": "hypothesis",
+            "path_index": 1
+          }
+        },
+        {
+          "source": "自主采样器",
+          "target": "微生物群落",
+          "relation": "用于解析微生物群落季节性结构",
+          "relation_type": "H3",
+          "metadata": {
+            "claim": "自主采样器 用于解析微生物群落季节性结构 微生物群落",
+            "step": 1,
+            "source": "hypothesis",
+            "path_index": 0
+          }
+        },
+        {
+          "source": "微生物群落",
+          "target": "核糖体元条形码",
+          "relation": "通过核糖体元条形码分析功能组成",
+          "relation_type": "H3",
+          "metadata": {
+            "claim": "微生物群落 通过核糖体元条形码分析功能组成 核糖体元条形码",
+            "step": 2,
+            "source": "hypothesis",
+            "path_index": 0
+          }
+        },
+        {
+          "source": "核糖体元条形码",
+          "target": "候选属硝化泉古菌",
+          "relation": "揭示极夜期间候选属硝化泉古菌丰度变化",
+          "relation_type": "H3",
+          "metadata": {
+            "claim": "核糖体元条形码 揭示极夜期间候选属硝化泉古菌丰度变化 候选属硝化泉古菌",
+            "step": 3,
+            "source": "hypothesis",
+            "path_index": 0
+          }
+        },
+        {
+          "source": "塔拉海洋观测项目",
+          "target": "宏转录组",
+          "relation": "提供跨季节宏转录组数据",
+          "relation_type": "H3",
+          "metadata": {
+            "claim": "塔拉海洋观测项目 提供跨季节宏转录组数据 宏转录组",
+            "step": 1,
+            "source": "hypothesis",
+            "path_index": 1
+          }
+        },
+        {
+          "source": "宏转录组",
+          "target": "气候变暖",
+          "relation": "关联气候变暖驱动的环境梯度",
+          "relation_type": "H3",
+          "metadata": {
+            "claim": "宏转录组 关联气候变暖驱动的环境梯度 气候变暖",
+            "step": 2,
+            "source": "hypothesis",
+            "path_index": 1
+          }
+        },
+        {
+          "source": "气候变暖",
+          "target": "微生物群落",
+          "relation": "通过环境选择压力改变微生物群落组装",
+          "relation_type": "H3",
+          "metadata": {
+            "claim": "气候变暖 通过环境选择压力改变微生物群落组装 微生物群落",
+            "step": 3,
+            "source": "hypothesis",
+            "path_index": 1
+          }
+        }
+      ]
+    },
+    "metrics": {
+      "path_consistency": 0.3125,
+      "coverage": 0.46153846153846156,
+      "bridging_score": 0.5454545454545454,
+      "rao_stirling_diversity": 0.1678,
+      "embedding_bridging": 1.0,
+      "consistency_precision": 0.0,
+      "consistency_recall": 0.0,
+      "consistency_f1": 0.0,
+      "info_novelty": 0.0,
+      "chain_coherence": 0.5482,
+      "atypical_combination": 0.5934,
+      "kg_density": 0.0323,
+      "kg_inverse_modularity": 0.9138,
+      "kg_largest_cc_ratio": 0.5385,
+      "kg_avg_betweenness": 0.0191,
+      "kg_clustering_coefficient": 0.0692,
+      "concept_recall": 0.0,
+      "concept_precision": 0.0,
+      "concept_f1": 0.0,
+      "relation_precision": 0.0,
+      "relation_type_accuracy": 0.0,
+      "evidence_coverage": 0.0,
+      "path_alignment_best": 0.0,
+      "path_alignment_mean": 0.0
+    }
+  },
+  {
+    "title": "Lysosomes finely control macrophage inflammatory function via regulating the release of lysosomal Fe2+ through TRPML1 channel",
+    "graph": {
+      "nodes": [
+        {
+          "id": "溶酶体",
+          "term": "lysosomes",
+          "normalized": "溶酶体",
+          "discipline": "生物学",
+          "evidence": "Lysosomes are best known for their roles in inflammatory responses",
+          "source": "abstract",
+          "confidence": 0.98
+        },
+        {
+          "id": "瞬时受体电位粘脂蛋白1",
+          "term": "TRPML1",
+          "normalized": "瞬时受体电位粘脂蛋白1",
+          "discipline": "生物学",
+          "evidence": "TRPML1, a lysosomal cationic channel",
+          "source": "abstract",
+          "confidence": 0.99
+        },
+        {
+          "id": "亚铁离子",
+          "term": "Fe²⁺",
+          "normalized": "亚铁离子",
+          "discipline": "生物学",
+          "evidence": "lysosomal Fe²⁺-prolyl hydroxylase domain enzymes",
+          "source": "abstract",
+          "confidence": 0.97
+        },
+        {
+          "id": "脯氨酰羟化酶结构域酶",
+          "term": "PHDs",
+          "normalized": "脯氨酰羟化酶结构域酶",
+          "discipline": "生物学",
+          "evidence": "Fe²⁺-prolyl hydroxylase domain enzymes (PHDs)",
+          "source": "abstract",
+          "confidence": 0.96
+        },
+        {
+          "id": "核因子κ",
+          "term": "NF-κB",
+          "normalized": "核因子κ",
+          "discipline": "生物学",
+          "evidence": "NF-κB-interleukin 1 beta (IL1B) transcription pathway",
+          "source": "abstract",
+          "confidence": 0.98
+        },
+        {
+          "id": "活性氧",
+          "term": "ROS",
+          "normalized": "活性氧",
+          "discipline": "生物学",
+          "evidence": "activated secondarily to ROS elevation",
+          "source": "abstract",
+          "confidence": 0.97
+        },
+        {
+          "id": "自噬",
+          "term": "autophagy",
+          "normalized": "自噬",
+          "discipline": "生物学",
+          "evidence": "engaging in autophagy to remove inflammasomes",
+          "source": "abstract",
+          "confidence": 0.95
+        },
+        {
+          "id": "炎性小体",
+          "term": "inflammasomes",
+          "normalized": "炎性小体",
+          "discipline": "生物学",
+          "evidence": "remove inflammasomes",
+          "source": "abstract",
+          "confidence": 0.96
+        },
+        {
+          "id": "白细胞介素1β",
+          "term": "IL1B",
+          "normalized": "白细胞介素1β",
+          "discipline": "生物学",
+          "evidence": "IL1B transcription",
+          "source": "abstract",
+          "confidence": 0.97
+        },
+        {
+          "id": "溶酶体阳离子通道",
+          "term": "lysosomal cationic channel",
+          "normalized": "溶酶体阳离子通道",
+          "discipline": "生物学",
+          "evidence": "TRPML1, a lysosomal cationic channel",
+          "source": "abstract",
+          "confidence": 0.95
+        },
+        {
+          "id": "转录活性",
+          "term": "transcriptional activity",
+          "normalized": "转录活性",
+          "discipline": "生物学",
+          "evidence": "represses transcriptional activity of NF-κB",
+          "source": "abstract",
+          "confidence": 0.93
+        },
+        {
+          "id": "葡聚糖硫酸钠诱导的结肠炎",
+          "term": "Dextran sulfate sodium-induced colitis",
+          "normalized": "葡聚糖硫酸钠诱导的结肠炎",
+          "discipline": "生物学",
+          "evidence": "Dextran sulfate sodium-induced colitis in mice",
+          "source": "abstract",
+          "confidence": 0.92
+        },
+        {
+          "id": "炎症性肠病",
+          "term": "inflammatory bowel disease",
+          "normalized": "炎症性肠病",
+          "discipline": "生物学",
+          "evidence": "treating inflammatory bowel disease",
+          "source": "abstract",
+          "confidence": 0.95
+        },
+        {
+          "id": "粘脂蛋白1基因",
+          "term": "MCOLN1 gene",
+          "normalized": "粘脂蛋白1基因",
+          "discipline": "生物学",
+          "evidence": "TRPML1, encoded by MCOLN1 gene",
+          "source": "introduction",
+          "confidence": 0.96
+        },
+        {
+          "id": "溶酶体亚铁释放",
+          "term": "lysosomal Fe²⁺ release",
+          "normalized": "溶酶体亚铁释放",
+          "discipline": "生物学",
+          "evidence": "modulation on the release of lysosomal Fe²⁺",
+          "source": "abstract",
+          "confidence": 0.94
+        },
+        {
+          "id": "离子稳态",
+          "term": "ionic homeostasis",
+          "normalized": "离子稳态",
+          "discipline": "生物学",
+          "evidence": "maintaining ionic homeostasis",
+          "source": "introduction",
+          "confidence": 0.93
+        },
+        {
+          "id": "内吞作用",
+          "term": "endocytosis",
+          "normalized": "内吞作用",
+          "discipline": "生物学",
+          "evidence": "endocytosis, exocytosis and autophagy",
+          "source": "introduction",
+          "confidence": 0.92
+        },
+        {
+          "id": "外泌作用",
+          "term": "exocytosis",
+          "normalized": "外泌作用",
+          "discipline": "生物学",
+          "evidence": "endocytosis, exocytosis and autophagy",
+          "source": "introduction",
+          "confidence": 0.92
+        },
+        {
+          "id": "溶酶体钙离子",
+          "term": "lysosomal Ca²⁺",
+          "normalized": "溶酶体钙离子",
+          "discipline": "生物学",
+          "evidence": "release of lysosomal Ca²⁺, Zn²+ and Fe²⁺",
+          "source": "introduction",
+          "confidence": 0.95
+        },
+        {
+          "id": "基因敲除小鼠",
+          "term": "Atg16L1 knockout mice",
+          "normalized": "基因敲除小鼠",
+          "discipline": "生物学",
+          "evidence": "macrophages derived from Atg16L1 knockout mice",
+          "source": "introduction",
+          "confidence": 0.96
+        },
+        {
+          "id": "脂多糖",
+          "term": "Lipopolysaccharides (LPS)",
+          "normalized": "脂多糖",
+          "discipline": "生物学",
+          "evidence": "LPS-induced IL-1β production",
+          "source": "introduction",
+          "confidence": 0.95
+        },
+        {
+          "id": "克罗恩病",
+          "term": "Crohn’s disease",
+          "normalized": "克罗恩病",
+          "discipline": "生物学",
+          "evidence": "associated with the incidence of Crohn’s disease",
+          "source": "introduction",
+          "confidence": 0.94
+        },
+        {
+          "id": "α-半乳糖苷酶",
+          "term": "α-galactosidase",
+          "normalized": "α-半乳糖苷酶",
+          "discipline": "生物学",
+          "evidence": "defects in α-galactosidase",
+          "source": "introduction",
+          "confidence": 0.93
+        },
+        {
+          "id": "通路",
+          "term": "TFEB pathway",
+          "normalized": "通路",
+          "discipline": "生物学",
+          "evidence": "regulate innate immune response via the TFEB pathway",
+          "source": "introduction",
+          "confidence": 0.92
+        },
+        {
+          "id": "促炎细胞因子",
+          "term": "pro-inflammatory cytokines",
+          "normalized": "促炎细胞因子",
+          "discipline": "生物学",
+          "evidence": "transcriptional expression of pro-inflammatory cytokines",
+          "source": "introduction",
+          "confidence": 0.91
+        },
+        {
+          "id": "趋化因子",
+          "term": "chemokines",
+          "normalized": "趋化因子",
+          "discipline": "生物学",
+          "evidence": "pro-inflammatory cytokines/chemokines",
+          "source": "introduction",
+          "confidence": 0.9
+        },
+        {
+          "id": "恒定自然杀伤细胞",
+          "term": "invariant natural killer T cells",
+          "normalized": "恒定自然杀伤细胞",
+          "discipline": "基础医学",
+          "evidence": "activation of invariant natural killer T cells",
+          "source": "introduction",
+          "confidence": 0.93
+        },
+        {
+          "id": "溶酶体生成",
+          "term": "lysosome biogenesis",
+          "normalized": "溶酶体生成",
+          "discipline": "基础医学",
+          "evidence": "master regulator of lysosome biogenesis",
+          "source": "introduction",
+          "confidence": 0.92
+        },
+        {
+          "id": "抗菌宿主防御",
+          "term": "antimicrobial host defense",
+          "normalized": "抗菌宿主防御",
+          "discipline": "基础医学",
+          "evidence": "involved in antimicrobial host defense",
+          "source": "introduction",
+          "confidence": 0.91
+        },
+        {
+          "id": "氧化应激基因",
+          "term": "oxidant genes",
+          "normalized": "氧化应激基因",
+          "discipline": "基础医学",
+          "evidence": "oxidant genes",
+          "source": "introduction",
+          "confidence": 0.9
+        },
+        {
+          "id": "溶酶体锌离子",
+          "term": "lysosomal Zn²⁺",
+          "normalized": "溶酶体锌离子",
+          "discipline": "基础医学",
+          "evidence": "release of lysosomal Ca²⁺, Zn²+ and Fe²⁺",
+          "source": "introduction",
+          "confidence": 0.94
+        },
+        {
+          "id": "溶酶体功能",
+          "term": "lysosomal function",
+          "normalized": "溶酶体功能",
+          "discipline": "基础医学",
+          "evidence": "exerts lysosomal function",
+          "source": "introduction",
+          "confidence": 0.93
+        },
+        {
+          "id": "自身免疫性疾病",
+          "term": "autoimmune diseases",
+          "normalized": "自身免疫性疾病",
+          "discipline": "临床医学",
+          "evidence": "play a role in autoimmune diseases",
+          "source": "introduction",
+          "confidence": 0.92
+        },
+        {
+          "id": "临床症状",
+          "term": "clinical signs",
+          "normalized": "临床症状",
+          "discipline": "临床医学",
+          "evidence": "ameliorates multiple clinical signs",
+          "source": "abstract",
+          "confidence": 0.93
+        },
+        {
+          "id": "炎症刺激",
+          "term": "inflammatory stimuli",
+          "normalized": "炎症刺激",
+          "discipline": "临床医学",
+          "evidence": "activated secondarily to ROS elevation upon inflammatory stimuli",
+          "source": "abstract",
+          "confidence": 0.91
+        },
+        {
+          "id": "lysosomal Fe²⁺",
+          "term": "lysosomal Fe²⁺",
+          "normalized": "lysosomal Fe²⁺",
+          "discipline": "struct_relation_inferred",
+          "evidence": "",
+          "source": "struct_relation_inferred",
+          "confidence": 0.8
+        }
+      ],
+      "edges": [
+        {
+          "source": "瞬时受体电位粘脂蛋白1",
+          "target": "溶酶体亚铁释放",
+          "relation": "modulates",
+          "relation_type": "method_applied_to",
+          "metadata": {
+            "evidence": "modulation on the release of lysosomal Fe²⁺",
+            "source": "struct",
+            "direction": "->"
+          }
+        },
+        {
+          "source": "lysosomal Fe²⁺",
+          "target": "脯氨酰羟化酶结构域酶",
+          "relation": "activates",
+          "relation_type": "method_applied_to",
+          "metadata": {
+            "evidence": "subsequently activates PHDs",
+            "source": "struct",
+            "direction": "->"
+          }
+        },
+        {
+          "source": "脯氨酰羟化酶结构域酶",
+          "target": "核因子κ",
+          "relation": "represses transcriptional activity",
+          "relation_type": "constrains",
+          "metadata": {
+            "evidence": "activated PHDs then represses transcriptional activity of NF-κB",
+            "source": "struct",
+            "direction": "->"
+          }
+        },
+        {
+          "source": "核因子κ",
+          "target": "白细胞介素1β",
+          "relation": "promotes transcription",
+          "relation_type": "driven_by",
+          "metadata": {
+            "evidence": "NF-κB-interleukin 1 beta (IL1B) transcription pathway",
+            "source": "struct",
+            "direction": "->"
+          }
+        },
+        {
+          "source": "瞬时受体电位粘脂蛋白1",
+          "target": "白细胞介素1β",
+          "relation": "suppresses transcription",
+          "relation_type": "improves_metric",
+          "metadata": {
+            "evidence": "TRPML1 activation suppresses IL1B transcription",
+            "source": "struct",
+            "direction": "->"
+          }
+        },
+        {
+          "source": "瞬时受体电位粘脂蛋白1",
+          "target": "葡聚糖硫酸钠诱导的结肠炎",
+          "relation": "ameliorates clinical signs",
+          "relation_type": "improves_metric",
+          "metadata": {
+            "evidence": "in vivo stimulation of TRPML1 ameliorates clinical signs of Dextran sulfate sodium-induced colitis",
+            "source": "struct",
+            "direction": "->"
+          }
+        },
+        {
+          "source": "活性氧",
+          "target": "瞬时受体电位粘脂蛋白1",
+          "relation": "activates",
+          "relation_type": "driven_by",
+          "metadata": {
+            "evidence": "reactive oxygen species (ROS) serve as endogenous activator of the TRPML1 channel",
+            "source": "struct",
+            "direction": "->"
+          }
+        },
+        {
+          "source": "溶酶体",
+          "target": "炎症性肠病",
+          "relation": "links with inflammatory responses",
+          "relation_type": "maps_to",
+          "metadata": {
+            "evidence": "directly links lysosomes with inflammatory responses... treating inflammatory bowel disease",
+            "source": "struct",
+            "direction": "->"
+          }
+        },
+        {
+          "source": "自噬",
+          "target": "炎性小体",
+          "relation": "engages in removing",
+          "relation_type": "method_applied_to",
+          "metadata": {
+            "evidence": "lysosomes engage in autophagy to remove inflammasomes",
+            "source": "struct",
+            "direction": "->"
+          }
+        },
+        {
+          "source": "溶酶体钙离子",
+          "target": "溶酶体功能",
+          "relation": "mediates",
+          "relation_type": "method_applied_to",
+          "metadata": {
+            "evidence": "TRPML1 mediates release of lysosomal Ca²⁺... exerts lysosomal function",
+            "source": "struct",
+            "direction": "->"
+          }
+        },
+        {
+          "source": "瞬时受体电位粘脂蛋白1",
+          "target": "溶酶体亚铁释放",
+          "relation": "调控溶酶体亚铁释放",
+          "relation_type": "H1",
+          "metadata": {
+            "claim": "溶酶体通过瞬时受体电位粘脂蛋白1调控亚铁释放激活脯氨酰羟化酶结构域酶，抑制核因子κ转录活性从而调控炎症因子，需基础医学解析分子机制",
+            "step": 1,
+            "source": "hypothesis",
+            "path_index": 0
+          }
+        },
+        {
+          "source": "溶酶体亚铁释放",
+          "target": "脯氨酰羟化酶结构域酶",
+          "relation": "激活脯氨酰羟化酶结构域酶",
+          "relation_type": "H1",
+          "metadata": {
+            "claim": "溶酶体亚铁释放 激活脯氨酰羟化酶结构域酶 脯氨酰羟化酶结构域酶",
+            "step": 2,
+            "source": "hypothesis",
+            "path_index": 0
+          }
+        },
+        {
+          "source": "脯氨酰羟化酶结构域酶",
+          "target": "转录活性",
+          "relation": "抑制核因子κ的转录活性",
+          "relation_type": "H1",
+          "metadata": {
+            "claim": "脯氨酰羟化酶结构域酶 抑制核因子κ的转录活性 转录活性",
+            "step": 3,
+            "source": "hypothesis",
+            "path_index": 0
+          }
+        },
+        {
+          "source": "活性氧",
+          "target": "瞬时受体电位粘脂蛋白1",
+          "relation": "激活瞬时受体电位粘脂蛋白1",
+          "relation_type": "H1",
+          "metadata": {
+            "claim": "氧化应激通过瞬时受体电位粘脂蛋白1调控溶酶体钙离子稳态维持抗菌宿主防御功能，需基础医学阐明离子协同机制",
+            "step": 1,
+            "source": "hypothesis",
+            "path_index": 1
+          }
+        },
+        {
+          "source": "瞬时受体电位粘脂蛋白1",
+          "target": "溶酶体钙离子",
+          "relation": "介导溶酶体钙离子释放",
+          "relation_type": "H1",
+          "metadata": {
+            "claim": "瞬时受体电位粘脂蛋白1 介导溶酶体钙离子释放 溶酶体钙离子",
+            "step": 2,
+            "source": "hypothesis",
+            "path_index": 1
+          }
+        },
+        {
+          "source": "溶酶体钙离子",
+          "target": "溶酶体功能",
+          "relation": "维持溶酶体功能",
+          "relation_type": "H1",
+          "metadata": {
+            "claim": "溶酶体钙离子 维持溶酶体功能 溶酶体功能",
+            "step": 3,
+            "source": "hypothesis",
+            "path_index": 1
+          }
+        },
+        {
+          "source": "瞬时受体电位粘脂蛋白1",
+          "target": "白细胞介素1β",
+          "relation": "抑制白细胞介素1β转录",
+          "relation_type": "H1",
+          "metadata": {
+            "claim": "靶向瞬时受体电位粘脂蛋白1改善溶酶体功能异常可缓解炎症性肠病临床症状，需临床医学验证治疗策略",
+            "step": 1,
+            "source": "hypothesis",
+            "path_index": 2
+          }
+        },
+        {
+          "source": "白细胞介素1β",
+          "target": "促炎细胞因子",
+          "relation": "驱动促炎细胞因子级联",
+          "relation_type": "H1",
+          "metadata": {
+            "claim": "白细胞介素1β 驱动促炎细胞因子级联 促炎细胞因子",
+            "step": 2,
+            "source": "hypothesis",
+            "path_index": 2
+          }
+        },
+        {
+          "source": "促炎细胞因子",
+          "target": "炎症性肠病",
+          "relation": "加剧炎症性肠病进展",
+          "relation_type": "H1",
+          "metadata": {
+            "claim": "促炎细胞因子 加剧炎症性肠病进展 炎症性肠病",
+            "step": 3,
+            "source": "hypothesis",
+            "path_index": 2
+          }
+        },
+        {
+          "source": "溶酶体阳离子通道",
+          "target": "溶酶体亚铁释放",
+          "relation": "调控释放",
+          "relation_type": "H2",
+          "metadata": {
+            "claim": "溶酶体阳离子通道 调控释放 溶酶体亚铁释放",
+            "step": 1,
+            "source": "hypothesis",
+            "path_index": 0
+          }
+        },
+        {
+          "source": "溶酶体亚铁释放",
+          "target": "脯氨酰羟化酶结构域酶",
+          "relation": "激活",
+          "relation_type": "H2",
+          "metadata": {
+            "claim": "溶酶体亚铁释放 激活 脯氨酰羟化酶结构域酶",
+            "step": 2,
+            "source": "hypothesis",
+            "path_index": 0
+          }
+        },
+        {
+          "source": "脯氨酰羟化酶结构域酶",
+          "target": "核因子κ",
+          "relation": "抑制转录活性",
+          "relation_type": "H2",
+          "metadata": {
+            "claim": "脯氨酰羟化酶结构域酶 抑制转录活性 核因子κ",
+            "step": 3,
+            "source": "hypothesis",
+            "path_index": 0
+          }
+        },
+        {
+          "source": "自噬",
+          "target": "溶酶体功能",
+          "relation": "参与融合",
+          "relation_type": "H2",
+          "metadata": {
+            "claim": "自噬 参与融合 溶酶体功能",
+            "step": 1,
+            "source": "hypothesis",
+            "path_index": 1
+          }
+        },
+        {
+          "source": "溶酶体功能",
+          "target": "溶酶体钙离子",
+          "relation": "执行清除",
+          "relation_type": "H2",
+          "metadata": {
+            "claim": "溶酶体功能 执行清除 溶酶体钙离子",
+            "step": 2,
+            "source": "hypothesis",
+            "path_index": 1
+          }
+        },
+        {
+          "source": "溶酶体钙离子",
+          "target": "抗菌宿主防御",
+          "relation": "协同防御",
+          "relation_type": "H2",
+          "metadata": {
+            "claim": "溶酶体钙离子 协同防御 抗菌宿主防御",
+            "step": 3,
+            "source": "hypothesis",
+            "path_index": 1
+          }
+        },
+        {
+          "source": "溶酶体功能",
+          "target": "离子稳态",
+          "relation": "维持平衡",
+          "relation_type": "H2",
+          "metadata": {
+            "claim": "溶酶体功能 维持平衡 离子稳态",
+            "step": 1,
+            "source": "hypothesis",
+            "path_index": 2
+          }
+        },
+        {
+          "source": "离子稳态",
+          "target": "炎症刺激",
+          "relation": "触发反应",
+          "relation_type": "H2",
+          "metadata": {
+            "claim": "离子稳态 触发反应 炎症刺激",
+            "step": 2,
+            "source": "hypothesis",
+            "path_index": 2
+          }
+        },
+        {
+          "source": "炎症刺激",
+          "target": "炎症性肠病",
+          "relation": "促进病变",
+          "relation_type": "H2",
+          "metadata": {
+            "claim": "炎症刺激 促进病变 炎症性肠病",
+            "step": 3,
+            "source": "hypothesis",
+            "path_index": 2
+          }
+        },
+        {
+          "source": "瞬时受体电位粘脂蛋白1",
+          "target": "溶酶体亚铁释放",
+          "relation": "调控",
+          "relation_type": "H3",
+          "metadata": {
+            "claim": "瞬时受体电位粘脂蛋白1 调控 溶酶体亚铁释放",
+            "step": 1,
+            "source": "hypothesis",
+            "path_index": 0
+          }
+        },
+        {
+          "source": "溶酶体亚铁释放",
+          "target": "脯氨酰羟化酶结构域酶",
+          "relation": "激活",
+          "relation_type": "H3",
+          "metadata": {
+            "claim": "溶酶体亚铁释放 激活 脯氨酰羟化酶结构域酶",
+            "step": 2,
+            "source": "hypothesis",
+            "path_index": 0
+          }
+        },
+        {
+          "source": "自噬",
+          "target": "炎性小体",
+          "relation": "清除",
+          "relation_type": "H3",
+          "metadata": {
+            "claim": "自噬 清除 炎性小体",
+            "step": 1,
+            "source": "hypothesis",
+            "path_index": 1
+          }
+        },
+        {
+          "source": "炎性小体",
+          "target": "溶酶体钙离子",
+          "relation": "协同",
+          "relation_type": "H3",
+          "metadata": {
+            "claim": "炎性小体 协同 溶酶体钙离子",
+            "step": 2,
+            "source": "hypothesis",
+            "path_index": 1
+          }
+        },
+        {
+          "source": "溶酶体钙离子",
+          "target": "抗菌宿主防御",
+          "relation": "促进",
+          "relation_type": "H3",
+          "metadata": {
+            "claim": "溶酶体钙离子 促进 抗菌宿主防御",
+            "step": 3,
+            "source": "hypothesis",
+            "path_index": 1
+          }
+        },
+        {
+          "source": "溶酶体亚铁释放",
+          "target": "葡聚糖硫酸钠诱导的结肠炎",
+          "relation": "改善",
+          "relation_type": "H3",
+          "metadata": {
+            "claim": "溶酶体亚铁释放 改善 葡聚糖硫酸钠诱导的结肠炎",
+            "step": 1,
+            "source": "hypothesis",
+            "path_index": 2
+          }
+        },
+        {
+          "source": "葡聚糖硫酸钠诱导的结肠炎",
+          "target": "临床症状",
+          "relation": "缓解",
+          "relation_type": "H3",
+          "metadata": {
+            "claim": "葡聚糖硫酸钠诱导的结肠炎 缓解 临床症状",
+            "step": 2,
+            "source": "hypothesis",
+            "path_index": 2
+          }
+        }
+      ]
+    },
+    "metrics": {
+      "path_consistency": 0.28,
+      "coverage": 0.5277777777777778,
+      "bridging_score": 0.29411764705882354,
+      "rao_stirling_diversity": 0.1095,
+      "embedding_bridging": 1.0,
+      "consistency_precision": 0.0,
+      "consistency_recall": 0.0,
+      "consistency_f1": 0.0,
+      "info_novelty": 0.0,
+      "chain_coherence": 0.6144,
+      "atypical_combination": 0.6083,
+      "kg_density": 0.0198,
+      "kg_inverse_modularity": 1.0391,
+      "kg_largest_cc_ratio": 0.5833,
+      "kg_avg_betweenness": 0.0225,
+      "kg_clustering_coefficient": 0.0167,
+      "concept_recall": 0.0,
+      "concept_precision": 0.0,
+      "concept_f1": 0.0,
+      "relation_precision": 0.0,
+      "relation_type_accuracy": 0.0,
+      "evidence_coverage": 0.0,
+      "path_alignment_best": 0.0,
+      "path_alignment_mean": 0.0
+    }
+  },
+  {
+    "title": "Transmembrane voltage-gated nanopores controlled by electrically tunable in-pore chemistry",
+    "graph": {
+      "nodes": [
+        {
+          "id": "金属磷酸盐",
+          "term": "metal phosphates",
+          "normalized": "金属磷酸盐",
+          "discipline": "化学",
+          "evidence": "repetitive precipitation and dissolution of metal phosphates",
+          "source": "abstract",
+          "confidence": 0.98
+        },
+        {
+          "id": "化学反应",
+          "term": "chemical reactions",
+          "normalized": "化学反应",
+          "discipline": "化学",
+          "evidence": "electrically tunable chemical reactions",
+          "source": "abstract",
+          "confidence": 0.95
+        },
+        {
+          "id": "沉淀/溶解反应",
+          "term": "precipitation/dissolution reactions",
+          "normalized": "沉淀/溶解反应",
+          "discipline": "化学",
+          "evidence": "reversible precipitation/dissolution reactions of a metal compound layer",
+          "source": "introduction",
+          "confidence": 0.97
+        },
+        {
+          "id": "磷酸盐化合物",
+          "term": "phosphate compounds",
+          "normalized": "磷酸盐化合物",
+          "discipline": "化学",
+          "evidence": "dissolves the phosphate compounds reopening the pore",
+          "source": "abstract",
+          "confidence": 0.96
+        },
+        {
+          "id": "孔内化学反应",
+          "term": "in-pore chemistry",
+          "normalized": "孔内化学反应",
+          "discipline": "化学",
+          "evidence": "electrically tunable in-pore chemistry",
+          "source": "title",
+          "confidence": 0.99
+        },
+        {
+          "id": "化学自由度",
+          "term": "chemical degrees of freedom",
+          "normalized": "化学自由度",
+          "discipline": "化学",
+          "evidence": "Leveraging chemical degrees of freedom",
+          "source": "abstract",
+          "confidence": 0.93
+        },
+        {
+          "id": "金属化合物层",
+          "term": "metal compound layer",
+          "normalized": "金属化合物层",
+          "discipline": "化学",
+          "evidence": "precipitation/dissolution reactions of a metal compound layer",
+          "source": "introduction",
+          "confidence": 0.95
+        },
+        {
+          "id": "离子电迁移",
+          "term": "ion electromigration",
+          "normalized": "离子电迁移",
+          "discipline": "化学",
+          "evidence": "precise manipulations of the ion electromigration",
+          "source": "introduction",
+          "confidence": 0.94
+        },
+        {
+          "id": "盐度差异",
+          "term": "salinity difference",
+          "normalized": "盐度差异",
+          "discipline": "化学",
+          "evidence": "Strong ionic rectifications under salinity difference",
+          "source": "introduction",
+          "confidence": 0.92
+        },
+        {
+          "id": "反应离子刻蚀",
+          "term": "reactive ion etching",
+          "normalized": "反应离子刻蚀",
+          "discipline": "化学",
+          "evidence": "fabricated by... reactive ion etching",
+          "source": "introduction",
+          "confidence": 0.96
+        },
+        {
+          "id": "磷酸盐缓冲盐水",
+          "term": "phosphate-buffered saline",
+          "normalized": "磷酸盐缓冲盐水",
+          "discipline": "化学",
+          "evidence": "phosphate-buffered saline containing 1.37 M NaCl",
+          "source": "introduction",
+          "confidence": 0.97
+        },
+        {
+          "id": "阳离子流",
+          "term": "cation flow",
+          "normalized": "阳离子流",
+          "discipline": "化学",
+          "evidence": "manipulations of cation flow by transmembrane voltage",
+          "source": "abstract",
+          "confidence": 0.98
+        },
+        {
+          "id": "固态纳米孔",
+          "term": "solid-state nanopores",
+          "normalized": "固态纳米孔",
+          "discipline": "材料科学",
+          "evidence": "voltage-gated solid-state nanopores",
+          "source": "abstract",
+          "confidence": 0.99
+        },
+        {
+          "id": "纳米流体二极管",
+          "term": "nanofluidic diode",
+          "normalized": "纳米流体二极管",
+          "discipline": "材料科学",
+          "evidence": "creates a nanofluidic diode of rectification ratio exceeding 40000",
+          "source": "abstract",
+          "confidence": 0.98
+        },
+        {
+          "id": "介电膜",
+          "term": "dielectric membrane",
+          "normalized": "介电膜",
+          "discipline": "材料科学",
+          "evidence": "40 nm-thick dielectric membrane",
+          "source": "introduction",
+          "confidence": 0.97
+        },
+        {
+          "id": "锥形纳米通道",
+          "term": "conical nanochannels",
+          "normalized": "锥形纳米通道",
+          "discipline": "材料科学",
+          "evidence": "high length-to-diameter aspect ratio conical nanochannels",
+          "source": "introduction",
+          "confidence": 0.96
+        },
+        {
+          "id": "氮化硅膜",
+          "term": "SiNx membrane",
+          "normalized": "氮化硅膜",
+          "discipline": "材料科学",
+          "evidence": "40 nm-thick SiNx membrane",
+          "source": "introduction",
+          "confidence": 0.95
+        },
+        {
+          "id": "电子束光刻",
+          "term": "electron beam lithography",
+          "normalized": "电子束光刻",
+          "discipline": "材料科学",
+          "evidence": "fabricated by sculpting holes... using electron beam lithography",
+          "source": "introduction",
+          "confidence": 0.97
+        },
+        {
+          "id": "纳米受限空间",
+          "term": "nanoconfined space",
+          "normalized": "纳米受限空间",
+          "discipline": "材料科学",
+          "evidence": "reaction kinetics within a nanoconfined space",
+          "source": "introduction",
+          "confidence": 0.94
+        },
+        {
+          "id": "纳米沉淀物",
+          "term": "nanoprecipitates",
+          "normalized": "纳米沉淀物",
+          "discipline": "材料科学",
+          "evidence": "in-situ formed nanoprecipitates",
+          "source": "introduction",
+          "confidence": 0.96
+        },
+        {
+          "id": "跨膜电压",
+          "term": "transmembrane voltage",
+          "normalized": "跨膜电压",
+          "discipline": "物理学",
+          "evidence": "manipulations of cation flow by transmembrane voltage",
+          "source": "abstract",
+          "confidence": 0.99
+        },
+        {
+          "id": "离子电流",
+          "term": "ionic current",
+          "normalized": "离子电流",
+          "discipline": "物理学",
+          "evidence": "reduce ionic current by occluding the nanopore",
+          "source": "abstract",
+          "confidence": 0.98
+        },
+        {
+          "id": "整流比",
+          "term": "rectification ratio",
+          "normalized": "整流比",
+          "discipline": "物理学",
+          "evidence": "rectification ratio exceeding 40000",
+          "source": "abstract",
+          "confidence": 0.97
+        },
+        {
+          "id": "忆阻器",
+          "term": "memristor",
+          "normalized": "忆阻器",
+          "discipline": "物理学",
+          "evidence": "facilitates a memristor of sub-nanowatt power consumption",
+          "source": "abstract",
+          "confidence": 0.99
+        },
+        {
+          "id": "离子输运",
+          "term": "ion transport",
+          "normalized": "离子输运",
+          "discipline": "物理学",
+          "evidence": "precise manipulations of the ion electromigration",
+          "source": "introduction",
+          "confidence": 0.96
+        },
+        {
+          "id": "麦克斯韦-霍尔模型",
+          "term": "Maxwell-Hall's model",
+          "normalized": "麦克斯韦-霍尔模型",
+          "discipline": "物理学",
+          "evidence": "consistent with Maxwell-Hall’s model",
+          "source": "introduction",
+          "confidence": 0.95
+        },
+        {
+          "id": "杜欣长度",
+          "term": "Dukhin length",
+          "normalized": "杜欣长度",
+          "discipline": "物理学",
+          "evidence": "sub-nanometer scale Dukhin length",
+          "source": "introduction",
+          "confidence": 0.94
+        },
+        {
+          "id": "电迁移",
+          "term": "electromigration",
+          "normalized": "电迁移",
+          "discipline": "物理学",
+          "evidence": "ion electromigration",
+          "source": "introduction",
+          "confidence": 0.93
+        }
+      ],
+      "edges": [
+        {
+          "source": "固态纳米孔",
+          "target": "化学反应",
+          "relation": "通过电可调化学反应实现电压门控",
+          "relation_type": "method_applied_to",
+          "metadata": {
+            "evidence": "Here we report on voltage-gated solid-state nanopores by electrically tunable chemical reactions",
+            "source": "struct",
+            "direction": "->"
+          }
+        },
+        {
+          "source": "跨膜电压",
+          "target": "沉淀/溶解反应",
+          "relation": "通过跨膜电压操控沉淀/溶解反应",
+          "relation_type": "driven_by",
+          "metadata": {
+            "evidence": "manipulations of cation flow by transmembrane voltage",
+            "source": "struct",
+            "direction": "->"
+          }
+        },
+        {
+          "source": "孔内化学反应",
+          "target": "纳米流体二极管",
+          "relation": "孔内化学反应创建纳米流体二极管",
+          "relation_type": "improves_metric",
+          "metadata": {
+            "evidence": "Reversible actuation of these physicochemical processes creates a nanofluidic diode",
+            "source": "struct",
+            "direction": "->"
+          }
+        },
+        {
+          "source": "化学自由度",
+          "target": "忆阻器",
+          "relation": "利用化学自由度实现忆阻器",
+          "relation_type": "extends",
+          "metadata": {
+            "evidence": "Leveraging chemical degrees of freedom... facilitates a memristor",
+            "source": "struct",
+            "direction": "->"
+          }
+        },
+        {
+          "source": "金属磷酸盐",
+          "target": "离子电流",
+          "relation": "磷酸盐沉淀物通过阻塞纳米孔调节离子电流",
+          "relation_type": "constrains",
+          "metadata": {
+            "evidence": "precipitates grow to reduce ionic current by occluding the nanopore",
+            "source": "struct",
+            "direction": "->"
+          }
+        },
+        {
+          "source": "介电膜",
+          "target": "离子电迁移",
+          "relation": "介电膜实现离子电迁移的精确操控",
+          "relation_type": "method_applied_to",
+          "metadata": {
+            "evidence": "40 nm-thick dielectric membrane... enable precise manipulations of ion electromigration",
+            "source": "struct",
+            "direction": "->"
+          }
+        },
+        {
+          "source": "麦克斯韦-霍尔模型",
+          "target": "盐度差异",
+          "relation": "麦克斯韦-霍尔模型解释盐度差异下的离子导电行为",
+          "relation_type": "maps_to",
+          "metadata": {
+            "evidence": "consistent with Maxwell-Hall’s model for dpore of 300 nm",
+            "source": "struct",
+            "direction": "->"
+          }
+        },
+        {
+          "source": "锥形纳米通道",
+          "target": "纳米沉淀物",
+          "relation": "锥形纳米通道实现纳米沉淀物的运动控制",
+          "relation_type": "improves_metric",
+          "metadata": {
+            "evidence": "Motion control of in-situ formed nanoprecipitates... with conical nanochannels",
+            "source": "struct",
+            "direction": "->"
+          }
+        },
+        {
+          "source": "孔内化学反应",
+          "target": "固态纳米孔",
+          "relation": "通过电可调化学反应实现电压门控",
+          "relation_type": "H1",
+          "metadata": {
+            "claim": "化学反应调控需材料科学构建纳米限域结构",
+            "step": 1,
+            "source": "hypothesis",
+            "path_index": 0
+          }
+        },
+        {
+          "source": "固态纳米孔",
+          "target": "介电膜",
+          "relation": "介电膜实现离子电迁移的精确操控",
+          "relation_type": "H1",
+          "metadata": {
+            "claim": "材料科学提供亚稳态反应腔设计",
+            "step": 2,
+            "source": "hypothesis",
+            "path_index": 0
+          }
+        },
+        {
+          "source": "介电膜",
+          "target": "麦克斯韦-霍尔模型",
+          "relation": "麦克斯韦-霍尔模型解释盐度差异下的离子导电行为",
+          "relation_type": "H1",
+          "metadata": {
+            "claim": "物理学模型需补位非平衡离子输运机制",
+            "step": 3,
+            "source": "hypothesis",
+            "path_index": 0
+          }
+        },
+        {
+          "source": "化学自由度",
+          "target": "忆阻器",
+          "relation": "利用化学自由度实现忆阻器",
+          "relation_type": "H1",
+          "metadata": {
+            "claim": "化学调控机制需物理学器件模型支撑",
+            "step": 1,
+            "source": "hypothesis",
+            "path_index": 1
+          }
+        },
+        {
+          "source": "忆阻器",
+          "target": "跨膜电压",
+          "relation": "通过跨膜电压操控沉淀/溶解反应",
+          "relation_type": "H1",
+          "metadata": {
+            "claim": "物理电场调控需协同化学反应动力学",
+            "step": 2,
+            "source": "hypothesis",
+            "path_index": 1
+          }
+        },
+        {
+          "source": "跨膜电压",
+          "target": "锥形纳米通道",
+          "relation": "锥形纳米通道实现纳米沉淀物的运动控制",
+          "relation_type": "H1",
+          "metadata": {
+            "claim": "材料科学结构设计保障电压调控有效性",
+            "step": 3,
+            "source": "hypothesis",
+            "path_index": 1
+          }
+        },
+        {
+          "source": "金属磷酸盐",
+          "target": "离子电流",
+          "relation": "磷酸盐沉淀物通过阻塞纳米孔调节离子电流",
+          "relation_type": "H1",
+          "metadata": {
+            "claim": "化学沉淀过程需材料学纳米结构支撑",
+            "step": 1,
+            "source": "hypothesis",
+            "path_index": 2
+          }
+        },
+        {
+          "source": "离子电流",
+          "target": "固态纳米孔",
+          "relation": "通过电可调化学反应实现电压门控",
+          "relation_type": "H1",
+          "metadata": {
+            "claim": "材料科学提供离子流精确调控平台",
+            "step": 2,
+            "source": "hypothesis",
+            "path_index": 2
+          }
+        },
+        {
+          "source": "固态纳米孔",
+          "target": "纳米受限空间",
+          "relation": "纳米受限空间影响反应动力学",
+          "relation_type": "H1",
+          "metadata": {
+            "claim": "物理学需解析受限空间非平衡反应机制",
+            "step": 3,
+            "source": "hypothesis",
+            "path_index": 2
+          }
+        },
+        {
+          "source": "固态纳米孔",
+          "target": "锥形纳米通道",
+          "relation": "结构设计实现纳米通道的几何控制",
+          "relation_type": "H2",
+          "metadata": {
+            "claim": "固态纳米孔通过锥形几何结构构建可控离子输运路径",
+            "step": 1,
+            "source": "hypothesis",
+            "path_index": 0
+          }
+        },
+        {
+          "source": "锥形纳米通道",
+          "target": "纳米受限空间",
+          "relation": "几何特性构建纳米级受限环境",
+          "relation_type": "H2",
+          "metadata": {
+            "claim": "锥形通道的高长径比形成亚稳态反应腔体",
+            "step": 2,
+            "source": "hypothesis",
+            "path_index": 0
+          }
+        },
+        {
+          "source": "纳米受限空间",
+          "target": "化学反应",
+          "relation": "空间限域增强反应选择性",
+          "relation_type": "H2",
+          "metadata": {
+            "claim": "纳米受限空间通过界面效应调控化学反应位点分布",
+            "step": 3,
+            "source": "hypothesis",
+            "path_index": 0
+          }
+        },
+        {
+          "source": "跨膜电压",
+          "target": "离子电迁移",
+          "relation": "电压梯度驱动离子定向运动",
+          "relation_type": "H2",
+          "metadata": {
+            "claim": "跨膜电压通过电场调控离子输运动力学",
+            "step": 1,
+            "source": "hypothesis",
+            "path_index": 1
+          }
+        },
+        {
+          "source": "离子电迁移",
+          "target": "沉淀/溶解反应",
+          "relation": "电迁移速率决定反应平衡阈值",
+          "relation_type": "H2",
+          "metadata": {
+            "claim": "离子电迁移通量调控金属化合物层的相变动力学",
+            "step": 2,
+            "source": "hypothesis",
+            "path_index": 1
+          }
+        },
+        {
+          "source": "沉淀/溶解反应",
+          "target": "离子电流",
+          "relation": "反应动态改变孔道导电特性",
+          "relation_type": "H2",
+          "metadata": {
+            "claim": "沉淀/溶解循环通过孔径调制实现离子电流开关控制",
+            "step": 3,
+            "source": "hypothesis",
+            "path_index": 1
+          }
+        },
+        {
+          "source": "锥形纳米通道",
+          "target": "纳米沉淀物",
+          "relation": "锥形纳米通道实现纳米沉淀物的运动控制",
+          "relation_type": "H3",
+          "metadata": {
+            "claim": "通过锥形纳米通道的几何约束调控纳米沉淀物的空间分布",
+            "step": 1,
+            "source": "hypothesis",
+            "path_index": 0
+          }
+        },
+        {
+          "source": "纳米沉淀物",
+          "target": "介电膜",
+          "relation": "纳米沉淀物在介电膜表面形成亚稳态反应腔",
+          "relation_type": "H3",
+          "metadata": {
+            "claim": "介电膜的表面特性稳定纳米沉淀物的界面重构过程",
+            "step": 2,
+            "source": "hypothesis",
+            "path_index": 0
+          }
+        },
+        {
+          "source": "介电膜",
+          "target": "沉淀/溶解反应",
+          "relation": "介电膜通过电压极性切换驱动沉淀/溶解反应逆转",
+          "relation_type": "H3",
+          "metadata": {
+            "claim": "跨膜电压调控金属磷酸盐的定向迁移与相变动力学",
+            "step": 3,
+            "source": "hypothesis",
+            "path_index": 0
+          }
+        }
+      ]
+    },
+    "metrics": {
+      "path_consistency": 0.16666666666666666,
+      "coverage": 0.5357142857142857,
+      "bridging_score": 0.6538461538461539,
+      "rao_stirling_diversity": 0.2083,
+      "embedding_bridging": 1.0,
+      "consistency_precision": 0.0,
+      "consistency_recall": 0.0,
+      "consistency_f1": 0.0,
+      "info_novelty": 0.0,
+      "chain_coherence": 0.5138,
+      "atypical_combination": 0.0,
+      "kg_density": 0.0304,
+      "kg_inverse_modularity": 1.0104,
+      "kg_largest_cc_ratio": 0.6071,
+      "kg_avg_betweenness": 0.0236,
+      "kg_clustering_coefficient": 0.1155,
+      "concept_recall": 0.0,
+      "concept_precision": 0.0,
+      "concept_f1": 0.0,
+      "relation_precision": 0.0,
+      "relation_type_accuracy": 0.0,
+      "evidence_coverage": 0.0,
+      "path_alignment_best": 0.0,
+      "path_alignment_mean": 0.0
+    }
+  }
+]

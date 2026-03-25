@@ -38,6 +38,10 @@ try:
     def _get_sbert():
         global _SBERT_MODEL
         if _SBERT_MODEL is None:
+            # 优先使用本地缓存，避免网络不可达时失败
+            import os
+            os.environ.setdefault("HF_HUB_OFFLINE", "1")
+            os.environ.setdefault("TRANSFORMERS_OFFLINE", "1")
             _SBERT_MODEL = SentenceTransformer("paraphrase-multilingual-MiniLM-L12-v2")
         return _SBERT_MODEL
 

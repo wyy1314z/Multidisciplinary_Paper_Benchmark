@@ -1,0 +1,47 @@
+[
+  {
+    "title": "Nano-island-encapsulated cobalt single-atom catalysts for breaking activity-stability trade-off in Fenton-like reactions",
+    "abstract": "Single-atom catalysts (SACs) have been increasingly acknowledged for their performance in sustainable Fenton-like catalysis. However, SACs face a trade-off between activity and stability in peroxymonosulfate (PMS)-based systems. Herein, we design a nano-island encapsulated single cobalt atom (Co<sub>SA/Zn.O</sub>-ZnO) catalyst to enhance the activity and stability of PMS activation for contaminant degradation via an \"island-sea\" synergistic effect. In this configuration, small carrier-based ZnO nanoparticles (the \"islands\") are utilized to confine and stabilize Co single atoms. The expansive ZnO substrate (the \"sea\") upholds a neutral microenvironment within the reaction system. The Co<sub>SA/Zn.O</sub>-ZnO/PMS system exhibits a remarkable selectivity in exclusively generating sulfate radicals (SO<sub>4</sub><sup>•-</sup>), leading to a complete removal of various recalcitrant pollutants within a shorter period. Characterized by minimal leaching of active sites, robust catalytic performance, and low-toxicity decontamination, this system proves highly efficient in multiple treatment cycles and complex water matrices. The design effectively breaks the activity-stability trade-off typically associated with SACs.",
+    "pdf_url": "https://doi.org/10.1038/s41467-024-55622-y",
+    "primary": "化学",
+    "secondary": "材料科学, 环境科学技术",
+    "secondary_list": [
+      "材料科学",
+      "环境科学技术"
+    ],
+    "main_levels": "L1:化学; L2:无机化学; L3:无机固体化学",
+    "non_main_levels": "L1:化学; L2:无机化学; L3:无机合成化学; L1:化学; L2:无机化学; L3:配位化学; L1:化学; L2:无机化学; L3:物理无机化学; L1:化学; L2:无机化学; L3:生物无机化学; L1:化学; L2:物理化学; L3:催化化学; L1:化学; L2:物理化学; L3:结构化学(包括表面化学、结构分析等); L1:化学; L2:物理化学; L3:胶体化学与界面化学; L1:化学; L2:物理化学; L3:电化学; L1:化学; L2:物理化学; L3:光化学(包括超分子光化学、光电化学、激光化学、感光化学等); L1:化学; L2:高分子化学; L3:功能高分子(包括液晶高分子化学); L1:化学; L2:高分子化学; L3:高分子物理化学; L1:化学; L2:分析化学; L3:化学分析(包括定性分析、定量分析等); L1:化学; L2:分析化学; L3:电化学分析; L1:化学; L2:分析化学; L3:光谱分析; L1:化学; L2:分析化学; L3:状态分析与物相分析; L1:材料科学; L2:无机非金属材料; L3:低维无机非金属材料(包括薄膜、纤维和零维非金属材料等); L1:材料科学; L2:无机非金属材料; L3:特种功能无机非金属材料; L1:材料科学; L2:金属材料; L3:非晶、微晶金属材料(包括准晶和纳米晶材料等); L1:材料科学; L2:金属材料; L3:低维金属材料(包括薄膜、纤维和零维金属材料等); L1:材料科学; L2:金属材料; L3:特种功能金属材料; L1:环境科学技术; L2:环境工程学; L3:水污染防治工程; L1:环境科学技术; L2:环境工程学; L3:环境保护工程; L1:环境科学技术; L2:环境工程学; L3:三废处理与综合利用",
+    "crossdisc_score": 0.5,
+    "crossdisc_reason": "The paper integrates concepts from chemistry, materials science, and environmental science, but the synthesis appears more focused on methodological advancements within these closely related fields rather than deep intellectual synthesis across distinct disciplines."
+  },
+  {
+    "title": "High-sensitivity, high-speed, broadband mid-infrared photodetector enabled by a van der Waals heterostructure with a vertical transport channel",
+    "abstract": "The realization of room-temperature-operated, high-performance, miniaturized, low-power-consumption and Complementary Metal-Oxide-Semiconductor (CMOS)-compatible mid-infrared photodetectors is highly desirable for next-generation optoelectronic applications, but has thus far remained an outstanding challenge using conventional materials. Two-dimensional (2D) heterostructures provide an alternative path toward this goal, yet despite continued efforts, their performance has not matched that of low-temperature HgCdTe photodetectors. Here, we push the detectivity and response speed of a 2D heterostructure-based mid-infrared photodetector to be comparable to, and even superior to, commercial cooled HgCdTe photodetectors by utilizing a vertical transport channel (graphene/black phosphorus/molybdenum disulfide/graphene). The minimized carrier transit path of tens of nanometers facilitates efficient and fast carrier transport, leading to significantly improved performance, with a mid-infrared detectivity reaching 2.38 × 10<sup>11</sup> cmHz<sup>1/2</sup>W<sup>-1</sup> (approaching the theoretical limit), a fast response time of 10.4 ns at 1550 nm, and an ultrabroadband detection range spanning from the ultraviolet to mid-infrared wavelengths. Our study provides design guidelines for next-generation high-performance room-temperature-operated mid-infrared photodetectors.",
+    "pdf_url": "https://doi.org/10.1038/s41467-025-55887-x",
+    "primary": "材料科学",
+    "secondary": "电子、通信与自动控制技术, 物理学",
+    "secondary_list": [
+      "电子、通信与自动控制技术",
+      "物理学"
+    ],
+    "main_levels": "L1:材料科学; L2:无机非金属材料; L3:低维无机非金属材料(包括薄膜、纤维和零维非金属材料等)",
+    "non_main_levels": "L1:材料科学; L2:无机非金属材料; L3:特种功能无机非金属材料; L1:材料科学; L2:有机高分子材料; L3:功能高分子材料; L1:材料科学; L2:复合材料; L3:无机非金属基复合材料(包括无机多相复合材料等); L1:电子、通信与自动控制技术; L2:半导体技术; L3:半导体材料; L1:电子、通信与自动控制技术; L2:半导体技术; L3:半导体器件与技术; L1:电子、通信与自动控制技术; L2:电子技术; L3:敏感电子学; L1:电子、通信与自动控制技术; L2:电子技术; L3:微电子学; L1:电子、通信与自动控制技术; L2:电子技术; L3:电子元件与器件技术; L1:电子、通信与自动控制技术; L2:电子技术; L3:红外与夜视技术; L1:电子、通信与自动控制技术; L2:自动控制技术; L3:自动化仪器仪表与装置; L1:电子、通信与自动控制技术; L2:自动控制技术; L3:自动化技术应用; L1:物理学; L2:光学; L3:红外物理; L1:物理学; L2:光学; L3:物理光学; L1:物理学; L2:光学; L3:信息光学; L1:物理学; L2:光学; L3:应用光学; L1:物理学; L2:光学; L3:导波光学; L1:物理学; L2:凝聚态物理学; L3:半导体物理学; L1:物理学; L2:凝聚态物理学; L3:低维物理; L1:物理学; L2:凝聚态物理学; L3:表面与界面物理学; L1:物理学; L2:凝聚态物理学; L3:薄膜物理学; L1:物理学; L2:电子物理学; L3:量子电子学",
+    "crossdisc_score": 0.5,
+    "crossdisc_reason": "The paper integrates concepts from materials science, physics, and electronic/communication technologies, but the synthesis is primarily within the broader field of optoelectronics, with no deep theoretical or methodological integration from distinct fields."
+  },
+  {
+    "title": "Biomimetic and biodegradable separator with high modulus and large ionic conductivity enables dendrite-free zinc-ion batteries",
+    "abstract": "The advancement of aqueous zinc-based batteries is greatly restricted by zinc dendrites. One potential solution to this challenge lies in the employment of high-modulus separators. However, achieving both high modulus and large ionic conductivity in a single separator remains a formidable task. Inspired by the wood architecture, this study breaks this trade-off by designing an anisotropic and biodegradable separator. This design significantly improves the modulus along the oriented direction while simultaneously facilitating fast Zn<sup>2+</sup> ion transport through aligned vertical channels. Additionally, this configuration resolves the contradiction between low separator thickness and good dendrite-inhibition capability. These benefits are supported by finite element simulations and comprehensive experimental validation, which also underscore the critical role of modulus enhancement for separators. By employing the anisotropic separator, a prolonged life span is realized for Zn||Zn cells, along with improved cyclability in full batteries. This work presents a strategy for separator modification towards dendrite-free metal batteries.",
+    "pdf_url": "https://doi.org/10.1038/s41467-025-56325-8",
+    "primary": "材料科学",
+    "secondary": "化学, 动力与电气工程",
+    "secondary_list": [
+      "化学",
+      "动力与电气工程"
+    ],
+    "main_levels": "L1:材料科学; L2:有机高分子材料; L3:功能高分子材料",
+    "non_main_levels": "L1:材料科学; L2:有机高分子材料; L3:高性能高分子材料; L1:材料科学; L2:复合材料; L3:聚合物基复合材料(包括有机多相复合材料等); L1:化学; L2:物理化学; L3:电化学; L1:化学; L2:物理化学; L3:结构化学(包括表面化学、结构分析等); L1:化学; L2:物理化学; L3:胶体化学与界面化学; L1:化学; L2:物理化学; L3:光化学(包括超分子光化学、光电化学、激光化学、感光化学等); L1:化学; L2:物理化学; L3:物理化学其他学科; L1:化学; L2:无机化学; L3:无机固体化学; L1:化学; L2:无机化学; L3:生物无机化学; L1:化学; L2:高分子化学; L3:功能高分子(包括液晶高分子化学); L1:化学; L2:高分子化学; L3:高分子物理化学; L1:动力与电气工程; L2:电气工程; L3:电工材料; L1:动力与电气工程; L2:电气工程; L3:电力电子技术; L1:动力与电气工程; L2:电气工程; L3:高电压工程; L1:动力与电气工程; L2:电气工程; L3:绝缘技术; L1:动力与电气工程; L2:电气工程; L3:电气工程其他学科",
+    "crossdisc_score": 0.7,
+    "crossdisc_reason": "The paper integrates theories and methods from materials science, chemistry, and electrical engineering to address a specific problem in battery technology. The design of the separator is inspired by wood architecture, indicating a meaningful synthesis of biological principles with materials science and engineering. However, the integration, while substantial, is primarily focused on solving a technical problem in battery technology, which limits the depth of cross-disciplinary synthesis."
+  }
+]

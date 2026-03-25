@@ -1,0 +1,61 @@
+Task,Method,Novelty,Plausibility,Clarity
+deceptive_reviews,Zero-shot Generation,3.7,2.6,3.9
+deceptive_reviews,\paperonly,3.8,2.1,4
+deceptive_reviews,\ioprompt,4,2.6,4
+deceptive_reviews,\iorefine,3.8,2.8,4.2
+deceptive_reviews,\hypogenic,3.95,2.75,4.05
+deceptive_reviews,\litplusdata,4,3,4
+llamagc_detect,Zero-shot Generation,3.3,2.3,4.3
+llamagc_detect,\paperonly,3.6,2,4.4
+llamagc_detect,\ioprompt,2.8,3.2,3.2
+llamagc_detect,\iorefine,2.4,2.8,2.6
+llamagc_detect,\hypogenic,3.2,2.55,3.75
+llamagc_detect,\litplusdata,3.8,2.6,4.1
+gptgc_detect,Zero-shot Generation,3.2,2.1,4.3
+gptgc_detect,\paperonly,3.5,2,4.4
+gptgc_detect,\ioprompt,3,3.2,2.6
+gptgc_detect,\iorefine,2.6,3.4,3
+gptgc_detect,\hypogenic,3.25,2.65,3.55
+gptgc_detect,\litplusdata,3.2,2.4,3.85
+persuasive_pairs,Zero-shot Generation,2.8,2.2,4.4
+persuasive_pairs,\paperonly,3,2.4,4.5
+persuasive_pairs,\ioprompt,3.2,3.2,4
+persuasive_pairs,\iorefine,3.2,3.2,4
+persuasive_pairs,\hypogenic,3.1,2.65,4.1
+persuasive_pairs,\litplusdata,3.15,2.55,4.3
+dreaddit,Zero-shot Generation,4,1.9,4
+dreaddit,\paperonly,3.8,2.1,4
+dreaddit,\ioprompt,3.6,2,4
+dreaddit,\iorefine,3,3.2,2.6
+dreaddit,\hypogenic,3.65,2.25,4.05
+dreaddit,\litplusdata,4,2.1,4.25
+headline_binary,Zero-shot Generation,3,2,4.1
+headline_binary,\paperonly,3.5,1.7,4.3
+headline_binary,\ioprompt,3.4,2.2,4.2
+headline_binary,\iorefine,3.2,2.4,3.6
+headline_binary,\hypogenic,3.5,2.25,3.95
+headline_binary,\litplusdata,3.5,2.05,4
+retweet,Zero-shot Generation,3.2,1.7,4.5
+retweet,\paperonly,4,1.7,3.8
+retweet,\ioprompt,3.4,2,4.4
+retweet,\iorefine,3.6,2.2,4.4
+retweet,\hypogenic,3.35,2.1,4.1
+retweet,\litplusdata,4,2.15,4.45
+journal_same_same_journal_health,Zero-shot Generation,1.9000,4.0000,2.9000
+journal_same_same_journal_health,\paperonly,2.2000,3.9000,3.6000
+journal_same_same_journal_health,\ioprompt,2.0000,4.0000,3.0000
+journal_same_same_journal_health,\iorefine,2.8000,4.0000,3.4000
+journal_same_same_journal_health,\hypogenic,2.1000,4.1000,3.2000
+journal_same_same_journal_health,\litplusdata,2.1000,4.2500,3.7000
+journal_same_same_journal_nips,Zero-shot Generation,1.9000,4.1500,2.9000
+journal_same_same_journal_nips,\paperonly,2.1000,4.1000,3.6000
+journal_same_same_journal_nips,\ioprompt,2.2000,4.6000,3.4000
+journal_same_same_journal_nips,\iorefine,2.0000,4.0000,3.6000
+journal_same_same_journal_nips,\hypogenic,2.2500,4.3500,3.4500
+journal_same_same_journal_nips,\litplusdata,2.4500,4.3500,3.8500
+journal_same_same_journal_radiology,Zero-shot Generation,1.8500,4.1500,2.9000
+journal_same_same_journal_radiology,\paperonly,2.3000,4.1000,4.0000
+journal_same_same_journal_radiology,\ioprompt,2.2000,4.0000,3.0000
+journal_same_same_journal_radiology,\iorefine,2.2000,4.0000,3.0000
+journal_same_same_journal_radiology,\hypogenic,2.3000,4.1000,3.2500
+journal_same_same_journal_radiology,\litplusdata,2.3500,4.1000,3.6000

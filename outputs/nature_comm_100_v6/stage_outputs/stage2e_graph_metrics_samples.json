@@ -1,0 +1,1767 @@
+[
+  {
+    "title": "High-entropy alloy enables multi-path electron synergism and lattice oxygen activation for enhanced oxygen evolution activity",
+    "graph": {
+      "nodes": [
+        {
+          "id": "电催化氧析出反应",
+          "term": "electrocatalytic oxygen evolution reaction (OER)",
+          "normalized": "电催化氧析出反应",
+          "discipline": "化学",
+          "evidence": "Electrocatalytic oxygen evolution reaction (OER) is key to several energy technologies",
+          "source": "abstract",
+          "confidence": 0.98
+        },
+        {
+          "id": "晶格氧活化机制",
+          "term": "lattice oxygen activation mechanism (LOM)",
+          "normalized": "晶格氧活化机制",
+          "discipline": "化学",
+          "evidence": "Leveraging the lattice oxygen activation mechanism (LOM) is a strategy for boosting its activity",
+          "source": "abstract",
+          "confidence": 0.98
+        },
+        {
+          "id": "高氧化态氧化",
+          "term": "high-valent oxidation",
+          "normalized": "高氧化态氧化",
+          "discipline": "化学",
+          "evidence": "requiring high-valent oxidation of metal ions",
+          "source": "abstract",
+          "confidence": 0.95
+        },
+        {
+          "id": "金属离子",
+          "term": "metal ions",
+          "normalized": "金属离子",
+          "discipline": "化学",
+          "evidence": "high-valent oxidation of metal ions",
+          "source": "abstract",
+          "confidence": 0.95
+        },
+        {
+          "id": "拉曼光谱",
+          "term": "Raman spectroscopy",
+          "normalized": "拉曼光谱",
+          "discipline": "化学",
+          "evidence": "We analyzed the catalyst surface using Raman spectroscopy",
+          "source": "introduction",
+          "confidence": 0.97
+        },
+        {
+          "id": "四甲基氢氧化铵溶液",
+          "term": "TMAOH solutions",
+          "normalized": "四甲基氢氧化铵溶液",
+          "discipline": "化学",
+          "evidence": "i-t tests in both KOH and TMAOH solutions",
+          "source": "introduction",
+          "confidence": 0.93
+        },
+        {
+          "id": "伸缩模式",
+          "term": "A1g stretching mode",
+          "normalized": "伸缩模式",
+          "discipline": "化学",
+          "evidence": "peak observed at 506 cm−1 in the Raman spectrum is indicative of the A1g stretching mode",
+          "source": "introduction",
+          "confidence": 0.96
+        },
+        {
+          "id": "氢氧化镍",
+          "term": "Ni(OH)2",
+          "normalized": "氢氧化镍",
+          "discipline": "化学",
+          "evidence": "transformation from hydrated nickel hydroxide to a structure resembling nickel oxide",
+          "source": "introduction",
+          "confidence": 0.94
+        },
+        {
+          "id": "脱水",
+          "term": "dehydration",
+          "normalized": "脱水",
+          "discipline": "化学",
+          "evidence": "due to dehydration",
+          "source": "introduction",
+          "confidence": 0.92
+        },
+        {
+          "id": "铁-氧键",
+          "term": "Fe–O bond",
+          "normalized": "铁-氧键",
+          "discipline": "化学",
+          "evidence": "peaks at 560 and 680 cm−1 correspond to the Fe–O bond",
+          "source": "introduction",
+          "confidence": 0.95
+        },
+        {
+          "id": "四甲基铵阳离子",
+          "term": "TMA+ cations",
+          "normalized": "四甲基铵阳离子",
+          "discipline": "化学",
+          "evidence": "characteristic of the presence of TMA+ cations",
+          "source": "introduction",
+          "confidence": 0.93
+        },
+        {
+          "id": "含氧中间体",
+          "term": "oxygen-containing intermediates",
+          "normalized": "含氧中间体",
+          "discipline": "化学",
+          "evidence": "negatively charged oxygen-containing intermediates (O2−)",
+          "source": "introduction",
+          "confidence": 0.94
+        },
+        {
+          "id": "μ-过氧",
+          "term": "μ-OO",
+          "normalized": "μ-过氧",
+          "discipline": "化学",
+          "evidence": "evaluation of the key intermediate μ-OO",
+          "source": "introduction",
+          "confidence": 0.92
+        },
+        {
+          "id": "多路径调控系统",
+          "term": "multi-pathway regulation systems",
+          "normalized": "多路径调控系统",
+          "discipline": "化学",
+          "evidence": "reaction mechanisms of multi-pathway regulation systems",
+          "source": "introduction",
+          "confidence": 0.93
+        },
+        {
+          "id": "高熵合金",
+          "term": "high-entropy alloys (HEAs)",
+          "normalized": "高熵合金",
+          "discipline": "材料科学",
+          "evidence": "We reveal that high-entropy alloys (HEAs) can efficiently activate the LOM",
+          "source": "abstract",
+          "confidence": 0.99
+        },
+        {
+          "id": "镍铁钴铬钨0.2高熵合金",
+          "term": "NiFeCoCrW0.2 HEA",
+          "normalized": "镍铁钴铬钨0.2高熵合金",
+          "discipline": "材料科学",
+          "evidence": "design of a NiFeCoCrW0.2 HEA",
+          "source": "abstract",
+          "confidence": 0.97
+        },
+        {
+          "id": "多路径电子转移",
+          "term": "multi-path electron transfer",
+          "normalized": "多路径电子转移",
+          "discipline": "材料科学",
+          "evidence": "synergistic multi-path electron transfer",
+          "source": "abstract",
+          "confidence": 0.96
+        },
+        {
+          "id": "钴-氧键",
+          "term": "Co-O bonds",
+          "normalized": "钴-氧键",
+          "discipline": "材料科学",
+          "evidence": "integration of weaker Co-O bonds",
+          "source": "abstract",
+          "confidence": 0.95
+        },
+        {
+          "id": "镍-钴双位点",
+          "term": "Ni-Co dual-site",
+          "normalized": "镍-钴双位点",
+          "discipline": "材料科学",
+          "evidence": "LOM at the Ni-Co dual-site",
+          "source": "abstract",
+          "confidence": 0.94
+        },
+        {
+          "id": "结构和化学优化",
+          "term": "structural and chemical optimizations",
+          "normalized": "结构和化学优化",
+          "discipline": "材料科学",
+          "evidence": "structural and chemical optimizations",
+          "source": "introduction",
+          "confidence": 0.93
+        },
+        {
+          "id": "过电位",
+          "term": "overpotential",
+          "normalized": "过电位",
+          "discipline": "动力与电气工程",
+          "evidence": "achieving an overpotential of 220 mV",
+          "source": "abstract",
+          "confidence": 0.97
+        },
+        {
+          "id": "电流密度",
+          "term": "current density",
+          "normalized": "电流密度",
+          "discipline": "动力与电气工程",
+          "evidence": "current density of 10 mA cm-2",
+          "source": "abstract",
+          "confidence": 0.96
+        },
+        {
+          "id": "稳定性",
+          "term": "stability",
+          "normalized": "稳定性",
+          "discipline": "动力与电气工程",
+          "evidence": "demonstrates good stability",
+          "source": "abstract",
+          "confidence": 0.95
+        },
+        {
+          "id": "电位变化",
+          "term": "potential variation",
+          "normalized": "电位变化",
+          "discipline": "动力与电气工程",
+          "evidence": "maintaining the potential with less than 5% variation",
+          "source": "abstract",
+          "confidence": 0.94
+        },
+        {
+          "id": "电催化路径",
+          "term": "electrocatalytic LOM pathway",
+          "normalized": "电催化路径",
+          "discipline": "动力与电气工程",
+          "evidence": "initiation of an efficient electrocatalytic LOM pathway",
+          "source": "introduction",
+          "confidence": 0.93
+        },
+        {
+          "id": "多路径电子调制",
+          "term": "multi-path electronic modulation",
+          "normalized": "多路径电子调制",
+          "discipline": "动力与电气工程",
+          "evidence": "multi-path electronic modulation in manipulating electrocatalytic mechanistic shifts",
+          "source": "introduction",
+          "confidence": 0.92
+        },
+        {
+          "id": "electrocatalytic mechanistic shifts",
+          "term": "electrocatalytic mechanistic shifts",
+          "normalized": "electrocatalytic mechanistic shifts",
+          "discipline": "struct_relation_inferred",
+          "evidence": "",
+          "source": "struct_relation_inferred",
+          "confidence": 0.8
+        }
+      ],
+      "edges": [
+        {
+          "source": "高熵合金",
+          "target": "晶格氧活化机制",
+          "relation": "activates through synergistic multi-path electron transfer",
+          "relation_type": "method_applied_to",
+          "metadata": {
+            "evidence": "We reveal that high-entropy alloys (HEAs) can efficiently activate the LOM through synergistic multi-path electron transfer",
+            "source": "struct",
+            "direction": "->"
+          }
+        },
+        {
+          "source": "多路径电子转移",
+          "target": "晶格氧活化机制",
+          "relation": "facilitates effective activation at Ni-Co dual-site",
+          "relation_type": "method_applied_to",
+          "metadata": {
+            "evidence": "the integration of weaker Co-O bonds enabling effective LOM at the Ni-Co dual-site through synergistic multi-path electron transfer",
+            "source": "struct",
+            "direction": "->"
+          }
+        },
+        {
+          "source": "镍铁钴铬钨0.2高熵合金",
+          "target": "过电位",
+          "relation": "achieves reduced overpotential value",
+          "relation_type": "improves_metric",
+          "metadata": {
+            "evidence": "design of a NiFeCoCrW0.2 HEA that exhibits improved activity, achieving an overpotential of 220 mV at 10 mA cm-2",
+            "source": "struct",
+            "direction": "->"
+          }
+        },
+        {
+          "source": "结构和化学优化",
+          "target": "高氧化态氧化",
+          "relation": "enables deep oxidation of active Ni sites",
+          "relation_type": "generalizes",
+          "metadata": {
+            "evidence": "structural and chemical optimizations including the deep oxidation of active Ni sites",
+            "source": "struct",
+            "direction": "->"
+          }
+        },
+        {
+          "source": "四甲基铵阳离子",
+          "target": "含氧中间体",
+          "relation": "interacts with negatively charged intermediates",
+          "relation_type": "maps_to",
+          "metadata": {
+            "evidence": "robust interaction between TMA+ ions and negatively charged oxygen-containing intermediates (O2−)",
+            "source": "struct",
+            "direction": "->"
+          }
+        },
+        {
+          "source": "多路径调控系统",
+          "target": "electrocatalytic mechanistic shifts",
+          "relation": "demonstrates superiority in manipulating reaction mechanisms",
+          "relation_type": "extends",
+          "metadata": {
+            "evidence": "multi-path electronic modulation in manipulating electrocatalytic mechanistic shifts",
+            "source": "struct",
+            "direction": "->"
+          }
+        },
+        {
+          "source": "高熵合金",
+          "target": "晶格氧活化机制",
+          "relation": "通过协同多路径电子转移激活",
+          "relation_type": "H1",
+          "metadata": {
+            "claim": "高熵合金的设计能够通过协同的多路径电子转移机制激活晶格氧活化过程，这是材料科学中多路径电子转移策略的直接应用",
+            "step": 1,
+            "source": "hypothesis",
+            "path_index": 0
+          }
+        },
+        {
+          "source": "晶格氧活化机制",
+          "target": "多路径电子转移",
+          "relation": "依赖镍-钴双位点的电子分布调控",
+          "relation_type": "H1",
+          "metadata": {
+            "claim": "晶格氧活化机制的效率提升依赖于镍-钴双位点对电子分布的精确调控，这需要材料科学在原子尺度上优化钴-氧键强度",
+            "step": 2,
+            "source": "hypothesis",
+            "path_index": 0
+          }
+        },
+        {
+          "source": "多路径电子转移",
+          "target": "过电位",
+          "relation": "通过动力学工程优化电荷传输",
+          "relation_type": "H1",
+          "metadata": {
+            "claim": "多路径电子转移通道的构建可显著降低电催化氧析出反应的过电位，这需要动力与电气工程通过原位电化学测试验证其效能",
+            "step": 3,
+            "source": "hypothesis",
+            "path_index": 0
+          }
+        },
+        {
+          "source": "结构和化学优化",
+          "target": "高氧化态氧化",
+          "relation": "促进金属离子的高氧化态稳定化",
+          "relation_type": "H1",
+          "metadata": {
+            "claim": "通过材料科学的晶格应变设计可实现金属离子的高氧化态稳定化，这是激活晶格氧活化机制的关键化学前提",
+            "step": 1,
+            "source": "hypothesis",
+            "path_index": 1
+          }
+        },
+        {
+          "source": "高氧化态氧化",
+          "target": "含氧中间体",
+          "relation": "诱导晶格氧缺陷态形成",
+          "relation_type": "H1",
+          "metadata": {
+            "claim": "金属离子的高氧化态会引发晶格氧空位的形成，从而调控含氧中间体的吸附构型和反应活性",
+            "step": 2,
+            "source": "hypothesis",
+            "path_index": 1
+          }
+        },
+        {
+          "source": "含氧中间体",
+          "target": "稳定性",
+          "relation": "通过电位循环稳定性测试验证",
+          "relation_type": "H1",
+          "metadata": {
+            "claim": "含氧中间体与催化剂表面的相互作用强度需通过动力与电气工程的加速老化实验验证其对长期稳定性的贡献",
+            "step": 3,
+            "source": "hypothesis",
+            "path_index": 1
+          }
+        },
+        {
+          "source": "高熵合金",
+          "target": "多路径电子转移",
+          "relation": "通过多路径电子转移激活双位点",
+          "relation_type": "H2",
+          "metadata": {
+            "claim": "高熵合金 通过多路径电子转移激活双位点 多路径电子转移",
+            "step": 1,
+            "source": "hypothesis",
+            "path_index": 0
+          }
+        },
+        {
+          "source": "多路径电子转移",
+          "target": "镍-钴双位点",
+          "relation": "在镍-钴双位点促进电子协同",
+          "relation_type": "H2",
+          "metadata": {
+            "claim": "多路径电子转移 在镍-钴双位点促进电子协同 镍-钴双位点",
+            "step": 2,
+            "source": "hypothesis",
+            "path_index": 0
+          }
+        },
+        {
+          "source": "镍-钴双位点",
+          "target": "晶格氧活化机制",
+          "relation": "调控晶格氧活化机制",
+          "relation_type": "H2",
+          "metadata": {
+            "claim": "镍-钴双位点 调控晶格氧活化机制 晶格氧活化机制",
+            "step": 3,
+            "source": "hypothesis",
+            "path_index": 0
+          }
+        },
+        {
+          "source": "过电位",
+          "target": "电位变化",
+          "relation": "与电位变化动态关联",
+          "relation_type": "H2",
+          "metadata": {
+            "claim": "过电位 与电位变化动态关联 电位变化",
+            "step": 1,
+            "source": "hypothesis",
+            "path_index": 1
+          }
+        },
+        {
+          "source": "电位变化",
+          "target": "稳定性",
+          "relation": "反映催化剂稳定性",
+          "relation_type": "H2",
+          "metadata": {
+            "claim": "电位变化 反映催化剂稳定性 稳定性",
+            "step": 2,
+            "source": "hypothesis",
+            "path_index": 1
+          }
+        },
+        {
+          "source": "稳定性",
+          "target": "电催化路径",
+          "relation": "通过电化学测试验证",
+          "relation_type": "H2",
+          "metadata": {
+            "claim": "稳定性 通过电化学测试验证 电催化路径",
+            "step": 3,
+            "source": "hypothesis",
+            "path_index": 1
+          }
+        },
+        {
+          "source": "高熵合金",
+          "target": "结构和化学优化",
+          "relation": "通过多路径电子转移激活结构和化学优化",
+          "relation_type": "H3",
+          "metadata": {
+            "claim": "高熵合金 通过多路径电子转移激活结构和化学优化 结构和化学优化",
+            "step": 1,
+            "source": "hypothesis",
+            "path_index": 0
+          }
+        },
+        {
+          "source": "结构和化学优化",
+          "target": "高氧化态氧化",
+          "relation": "促进金属离子的高氧化态氧化",
+          "relation_type": "H3",
+          "metadata": {
+            "claim": "结构和化学优化 促进金属离子的高氧化态氧化 高氧化态氧化",
+            "step": 2,
+            "source": "hypothesis",
+            "path_index": 0
+          }
+        },
+        {
+          "source": "高氧化态氧化",
+          "target": "晶格氧活化机制",
+          "relation": "在镍-钴双位点驱动晶格氧活化机制",
+          "relation_type": "H3",
+          "metadata": {
+            "claim": "高氧化态氧化 在镍-钴双位点驱动晶格氧活化机制 晶格氧活化机制",
+            "step": 3,
+            "source": "hypothesis",
+            "path_index": 0
+          }
+        },
+        {
+          "source": "多路径电子调制",
+          "target": "电催化路径",
+          "relation": "调控电催化路径的反应中间体",
+          "relation_type": "H3",
+          "metadata": {
+            "claim": "多路径电子调制 调控电催化路径的反应中间体 电催化路径",
+            "step": 1,
+            "source": "hypothesis",
+            "path_index": 1
+          }
+        },
+        {
+          "source": "电催化路径",
+          "target": "四甲基氢氧化铵溶液",
+          "relation": "在四甲基氢氧化铵溶液中稳定含氧中间体",
+          "relation_type": "H3",
+          "metadata": {
+            "claim": "电催化路径 在四甲基氢氧化铵溶液中稳定含氧中间体 四甲基氢氧化铵溶液",
+            "step": 2,
+            "source": "hypothesis",
+            "path_index": 1
+          }
+        },
+        {
+          "source": "四甲基氢氧化铵溶液",
+          "target": "含氧中间体",
+          "relation": "通过四甲基铵阳离子调控μ-过氧中间体",
+          "relation_type": "H3",
+          "metadata": {
+            "claim": "四甲基氢氧化铵溶液 通过四甲基铵阳离子调控μ-过氧中间体 含氧中间体",
+            "step": 3,
+            "source": "hypothesis",
+            "path_index": 1
+          }
+        }
+      ]
+    },
+    "metrics": {
+      "path_consistency": 0.16666666666666666,
+      "coverage": 0.48148148148148145,
+      "bridging_score": 0.5217391304347826,
+      "rao_stirling_diversity": 0.2217,
+      "embedding_bridging": 0.0,
+      "consistency_precision": 0.0,
+      "consistency_recall": 0.0,
+      "consistency_f1": 0.0,
+      "info_novelty": 0.0,
+      "chain_coherence": 0.0,
+      "atypical_combination": 0.5622,
+      "kg_density": 0.0299,
+      "kg_inverse_modularity": 0.7712,
+      "kg_largest_cc_ratio": 0.5556,
+      "kg_avg_betweenness": 0.0215,
+      "kg_clustering_coefficient": 0.0741,
+      "concept_recall": 0.0,
+      "concept_precision": 0.0,
+      "concept_f1": 0.0,
+      "relation_precision": 0.0,
+      "relation_type_accuracy": 0.0,
+      "evidence_coverage": 0.0,
+      "path_alignment_best": 0.0,
+      "path_alignment_mean": 0.0
+    }
+  },
+  {
+    "title": "Leaf-based energy harvesting and storage utilizing hygroscopic iron hydrogel for continuous power generation",
+    "graph": {
+      "nodes": [
+        {
+          "id": "落叶",
+          "term": "fallen leaves",
+          "normalized": "落叶",
+          "discipline": "材料科学",
+          "evidence": "Taking advantage of fallen leaves’ specific structural advantage",
+          "source": "abstract",
+          "confidence": 0.95
+        },
+        {
+          "id": "吸湿性铁基水凝胶",
+          "term": "hygroscopic iron hydrogel",
+          "normalized": "吸湿性铁基水凝胶",
+          "discipline": "材料科学",
+          "evidence": "asymmetric coating of hygroscopic iron hydrogels",
+          "source": "abstract",
+          "confidence": 0.98
+        },
+        {
+          "id": "叶脉",
+          "term": "leaf veins",
+          "normalized": "叶脉",
+          "discipline": "材料科学",
+          "evidence": "leaf veins for water retention and diffusion restriction",
+          "source": "abstract",
+          "confidence": 0.96
+        },
+        {
+          "id": "碳涂层",
+          "term": "carbon coatings",
+          "normalized": "碳涂层",
+          "discipline": "材料科学",
+          "evidence": "uniform carbon coatings instead of aggregations",
+          "source": "abstract",
+          "confidence": 0.93
+        },
+        {
+          "id": "电双层",
+          "term": "electrical double layers",
+          "normalized": "电双层",
+          "discipline": "材料科学",
+          "evidence": "forming electrical double layers over the leaf surface",
+          "source": "abstract",
+          "confidence": 0.94
+        },
+        {
+          "id": "类电容行为",
+          "term": "capacitance-like behavior",
+          "normalized": "类电容行为",
+          "discipline": "材料科学",
+          "evidence": "showing capacitance-like behavior for energy charging and discharging",
+          "source": "abstract",
+          "confidence": 0.92
+        },
+        {
+          "id": "脱木质素叶片",
+          "term": "delignified leaves",
+          "normalized": "脱木质素叶片",
+          "discipline": "材料科学",
+          "evidence": "conductive treatment of delignified leaves",
+          "source": "introduction",
+          "confidence": 0.91
+        },
+        {
+          "id": "炭黑",
+          "term": "carbon black (CB)",
+          "normalized": "炭黑",
+          "discipline": "材料科学",
+          "evidence": "dip-coating them in carbon black (CB)",
+          "source": "introduction",
+          "confidence": 0.95
+        },
+        {
+          "id": "荷叶效应",
+          "term": "Lotus Leaves Effects",
+          "normalized": "荷叶效应",
+          "discipline": "材料科学",
+          "evidence": "their surfaces with nano-micro cell structures, known as Lotus Leaves Effects",
+          "source": "introduction",
+          "confidence": 0.93
+        },
+        {
+          "id": "分级多孔结构",
+          "term": "hierarchical porous structures",
+          "normalized": "分级多孔结构",
+          "discipline": "材料科学",
+          "evidence": "leaf veins...hierarchical porous structures",
+          "source": "introduction",
+          "confidence": 0.94
+        },
+        {
+          "id": "生物降解性",
+          "term": "biodegradability",
+          "normalized": "生物降解性",
+          "discipline": "材料科学",
+          "evidence": "the biodegradability of leaves",
+          "source": "introduction",
+          "confidence": 0.92
+        },
+        {
+          "id": "阴离子交换膜",
+          "term": "anion exchange membrane",
+          "normalized": "阴离子交换膜",
+          "discipline": "材料科学",
+          "evidence": "not found in provided text",
+          "source": "abstract",
+          "confidence": 0.7
+        },
+        {
+          "id": "气体扩散层",
+          "term": "gas diffusion layer",
+          "normalized": "气体扩散层",
+          "discipline": "材料科学",
+          "evidence": "not found in provided text",
+          "source": "abstract",
+          "confidence": 0.7
+        },
+        {
+          "id": "能量收集",
+          "term": "energy harvesting",
+          "normalized": "能量收集",
+          "discipline": "能源科学技术",
+          "evidence": "self-powered energy harvesting systems",
+          "source": "abstract",
+          "confidence": 0.97
+        },
+        {
+          "id": "发电",
+          "term": "power generation",
+          "normalized": "发电",
+          "discipline": "能源科学技术",
+          "evidence": "continuous power generation",
+          "source": "title",
+          "confidence": 0.96
+        },
+        {
+          "id": "摩擦纳米发电机",
+          "term": "triboelectric nanogenerators (TENGs)",
+          "normalized": "摩擦纳米发电机",
+          "discipline": "能源科学技术",
+          "evidence": "emergence of triboelectric nanogenerators (TENGs)",
+          "source": "introduction",
+          "confidence": 0.95
+        },
+        {
+          "id": "接触-分离",
+          "term": "contact-separation",
+          "normalized": "接触-分离",
+          "discipline": "能源科学技术",
+          "evidence": "TENGs rely on contact-separation",
+          "source": "introduction",
+          "confidence": 0.93
+        },
+        {
+          "id": "大气湿气",
+          "term": "atmospheric moisture",
+          "normalized": "大气湿气",
+          "discipline": "能源科学技术",
+          "evidence": "Atmospheric moisture as renewable energy source",
+          "source": "introduction",
+          "confidence": 0.94
+        },
+        {
+          "id": "自供电可穿戴技术",
+          "term": "self-powered wearable technologies",
+          "normalized": "自供电可穿戴技术",
+          "discipline": "能源科学技术",
+          "evidence": "developing self-powered wearable technologies",
+          "source": "introduction",
+          "confidence": 0.92
+        },
+        {
+          "id": "内建电势差",
+          "term": "built-in potential difference",
+          "normalized": "内建电势差",
+          "discipline": "能源科学技术",
+          "evidence": "built-in potential difference (~0.5 V)",
+          "source": "introduction",
+          "confidence": 0.91
+        },
+        {
+          "id": "环境湿气",
+          "term": "ambient moisture",
+          "normalized": "环境湿气",
+          "discipline": "能源科学技术",
+          "evidence": "energy harvesters from ambient moisture",
+          "source": "introduction",
+          "confidence": 0.93
+        },
+        {
+          "id": "铁基水凝胶",
+          "term": "iron hydrogel",
+          "normalized": "铁基水凝胶",
+          "discipline": "化学",
+          "evidence": "hygroscopic iron hydrogel",
+          "source": "abstract",
+          "confidence": 0.96
+        },
+        {
+          "id": "吸湿",
+          "term": "moisture absorption",
+          "normalized": "吸湿",
+          "discipline": "化学",
+          "evidence": "Upon moisture absorption",
+          "source": "abstract",
+          "confidence": 0.95
+        },
+        {
+          "id": "金属有机框架",
+          "term": "metal-organic frameworks",
+          "normalized": "金属有机框架",
+          "discipline": "化学",
+          "evidence": "hygroscopic materials including metal-organic frameworks",
+          "source": "introduction",
+          "confidence": 0.94
+        },
+        {
+          "id": "复合材料",
+          "term": "composite materials",
+          "normalized": "复合材料",
+          "discipline": "化学",
+          "evidence": "composite materials for moisture capture",
+          "source": "introduction",
+          "confidence": 0.93
+        },
+        {
+          "id": "木质素",
+          "term": "lignin",
+          "normalized": "木质素",
+          "discipline": "化学",
+          "evidence": "high concentration of lignin",
+          "source": "introduction",
+          "confidence": 0.92
+        },
+        {
+          "id": "硫酸根自由基",
+          "term": "sulfate radicals",
+          "normalized": "硫酸根自由基",
+          "discipline": "化学",
+          "evidence": "not found in provided text",
+          "source": "abstract",
+          "confidence": 0.7
+        },
+        {
+          "id": "活性氧物种",
+          "term": "reactive oxygen species",
+          "normalized": "活性氧物种",
+          "discipline": "化学",
+          "evidence": "not found in provided text",
+          "source": "abstract",
+          "confidence": 0.7
+        },
+        {
+          "id": "water retention",
+          "term": "water retention",
+          "normalized": "water retention",
+          "discipline": "struct_relation_inferred",
+          "evidence": "",
+          "source": "struct_relation_inferred",
+          "confidence": 0.8
+        },
+        {
+          "id": "electrical conductivity",
+          "term": "electrical conductivity",
+          "normalized": "electrical conductivity",
+          "discipline": "struct_relation_inferred",
+          "evidence": "",
+          "source": "struct_relation_inferred",
+          "confidence": 0.8
+        },
+        {
+          "id": "environmental impact",
+          "term": "environmental impact",
+          "normalized": "environmental impact",
+          "discipline": "struct_relation_inferred",
+          "evidence": "",
+          "source": "struct_relation_inferred",
+          "confidence": 0.8
+        },
+        {
+          "id": "self-cleaning surface",
+          "term": "self-cleaning surface",
+          "normalized": "self-cleaning surface",
+          "discipline": "struct_relation_inferred",
+          "evidence": "",
+          "source": "struct_relation_inferred",
+          "confidence": 0.8
+        },
+        {
+          "id": "mechanical strength",
+          "term": "mechanical strength",
+          "normalized": "mechanical strength",
+          "discipline": "struct_relation_inferred",
+          "evidence": "",
+          "source": "struct_relation_inferred",
+          "confidence": 0.8
+        }
+      ],
+      "edges": [
+        {
+          "source": "吸湿性铁基水凝胶",
+          "target": "能量收集",
+          "relation": "asymmetric coating of hygroscopic iron hydrogels enables moisture-driven energy harvesting",
+          "relation_type": "method_applied_to",
+          "metadata": {
+            "evidence": "asymmetric coating of hygroscopic iron hydrogels...showing capacitance-like behavior for energy charging and discharging",
+            "source": "struct",
+            "direction": "->"
+          }
+        },
+        {
+          "source": "叶脉",
+          "target": "water retention",
+          "relation": "leaf veins maintain water gradient through diffusion restriction",
+          "relation_type": "constrains",
+          "metadata": {
+            "evidence": "leaf veins for water retention and diffusion restriction...forming electrical double layers",
+            "source": "struct",
+            "direction": "->"
+          }
+        },
+        {
+          "source": "碳涂层",
+          "target": "electrical conductivity",
+          "relation": "uniform carbon coatings enhance electrical conductivity",
+          "relation_type": "improves_metric",
+          "metadata": {
+            "evidence": "uniform carbon coatings instead of aggregations, and high electrical conductivity",
+            "source": "struct",
+            "direction": "->"
+          }
+        },
+        {
+          "source": "大气湿气",
+          "target": "能量收集",
+          "relation": "atmospheric moisture serves as renewable energy source",
+          "relation_type": "driven_by",
+          "metadata": {
+            "evidence": "Atmospheric moisture is emerging as a promising alternative renewable energy source",
+            "source": "struct",
+            "direction": "->"
+          }
+        },
+        {
+          "source": "生物降解性",
+          "target": "environmental impact",
+          "relation": "biodegradability reduces environmental impact",
+          "relation_type": "constrains",
+          "metadata": {
+            "evidence": "potential for lower environmental impact compared to other types of energy harvesters",
+            "source": "struct",
+            "direction": "->"
+          }
+        },
+        {
+          "source": "荷叶效应",
+          "target": "self-cleaning surface",
+          "relation": "nano-micro cell structures provide hydrophobic self-cleaning surface",
+          "relation_type": "corresponds_to",
+          "metadata": {
+            "evidence": "surfaces with nano-micro cell structures, known as Lotus Leaves Effects...droplet-repellent water and energy harvesters",
+            "source": "struct",
+            "direction": "->"
+          }
+        },
+        {
+          "source": "分级多孔结构",
+          "target": "mechanical strength",
+          "relation": "hierarchical porous structures enhance mechanical strength",
+          "relation_type": "improves_metric",
+          "metadata": {
+            "evidence": "leaf veins...hierarchical porous structures...improving mechanical strength",
+            "source": "struct",
+            "direction": "->"
+          }
+        },
+        {
+          "source": "叶脉",
+          "target": "分级多孔结构",
+          "relation": "构成分级多孔结构",
+          "relation_type": "H1",
+          "metadata": {
+            "claim": "叶脉的物理结构特性可通过形成分级多孔结构实现功能扩展",
+            "step": 1,
+            "source": "hypothesis",
+            "path_index": 0
+          }
+        },
+        {
+          "source": "分级多孔结构",
+          "target": "吸湿性铁基水凝胶",
+          "relation": "协同吸湿性铁基水凝胶",
+          "relation_type": "H1",
+          "metadata": {
+            "claim": "分级多孔结构可增强吸湿性铁基水凝胶的湿度梯度维持能力",
+            "step": 2,
+            "source": "hypothesis",
+            "path_index": 0
+          }
+        },
+        {
+          "source": "吸湿性铁基水凝胶",
+          "target": "能量收集",
+          "relation": "驱动能量收集",
+          "relation_type": "H1",
+          "metadata": {
+            "claim": "吸湿性铁基水凝胶的湿度响应特性需要能源科学技术实现能量转换",
+            "step": 3,
+            "source": "hypothesis",
+            "path_index": 0
+          }
+        },
+        {
+          "source": "落叶",
+          "target": "炭黑",
+          "relation": "经炭黑涂层改性",
+          "relation_type": "H1",
+          "metadata": {
+            "claim": "落叶基底可通过炭黑涂层获得基础导电性能",
+            "step": 1,
+            "source": "hypothesis",
+            "path_index": 1
+          }
+        },
+        {
+          "source": "炭黑",
+          "target": "电双层",
+          "relation": "促进电双层形成",
+          "relation_type": "H1",
+          "metadata": {
+            "claim": "炭黑涂层可诱导叶表面电双层的稳定构建",
+            "step": 2,
+            "source": "hypothesis",
+            "path_index": 1
+          }
+        },
+        {
+          "source": "电双层",
+          "target": "类电容行为",
+          "relation": "产生类电容行为",
+          "relation_type": "H1",
+          "metadata": {
+            "claim": "电双层的动态响应特性需要化学学科优化界面稳定性",
+            "step": 3,
+            "source": "hypothesis",
+            "path_index": 1
+          }
+        },
+        {
+          "source": "吸湿性铁基水凝胶",
+          "target": "吸湿",
+          "relation": "吸湿性铁基水凝胶具备吸湿特性",
+          "relation_type": "H2",
+          "metadata": {
+            "claim": "吸湿过程驱动材料内部离子迁移",
+            "step": 1,
+            "source": "hypothesis",
+            "path_index": 0
+          }
+        },
+        {
+          "source": "吸湿",
+          "target": "环境湿气",
+          "relation": "吸湿特性与环境湿气动态平衡",
+          "relation_type": "H2",
+          "metadata": {
+            "claim": "建立湿度梯度以维持持续能量转换",
+            "step": 2,
+            "source": "hypothesis",
+            "path_index": 0
+          }
+        },
+        {
+          "source": "环境湿气",
+          "target": "发电",
+          "relation": "环境湿气作为可再生能量源",
+          "relation_type": "H2",
+          "metadata": {
+            "claim": "通过电化学过程将湿气能转化为电能",
+            "step": 3,
+            "source": "hypothesis",
+            "path_index": 0
+          }
+        },
+        {
+          "source": "分级多孔结构",
+          "target": "自供电可穿戴技术",
+          "relation": "多孔结构提升材料柔韧性",
+          "relation_type": "H2",
+          "metadata": {
+            "claim": "适应可穿戴设备动态形变需求",
+            "step": 3,
+            "source": "hypothesis",
+            "path_index": 1
+          }
+        },
+        {
+          "source": "叶脉",
+          "target": "分级多孔结构",
+          "relation": "维持水分梯度",
+          "relation_type": "H3",
+          "metadata": {
+            "claim": "叶脉 维持水分梯度 分级多孔结构",
+            "step": 1,
+            "source": "hypothesis",
+            "path_index": 0
+          }
+        },
+        {
+          "source": "分级多孔结构",
+          "target": "生物降解性",
+          "relation": "增强机械强度",
+          "relation_type": "H3",
+          "metadata": {
+            "claim": "分级多孔结构 增强机械强度 生物降解性",
+            "step": 2,
+            "source": "hypothesis",
+            "path_index": 0
+          }
+        },
+        {
+          "source": "生物降解性",
+          "target": "能量收集",
+          "relation": "支撑能量收集",
+          "relation_type": "H3",
+          "metadata": {
+            "claim": "生物降解性 支撑能量收集 能量收集",
+            "step": 3,
+            "source": "hypothesis",
+            "path_index": 0
+          }
+        },
+        {
+          "source": "铁基水凝胶",
+          "target": "吸湿",
+          "relation": "通过吸湿产生电势差",
+          "relation_type": "H3",
+          "metadata": {
+            "claim": "铁基水凝胶 通过吸湿产生电势差 吸湿",
+            "step": 1,
+            "source": "hypothesis",
+            "path_index": 1
+          }
+        },
+        {
+          "source": "吸湿",
+          "target": "摩擦纳米发电机",
+          "relation": "驱动接触-分离机制",
+          "relation_type": "H3",
+          "metadata": {
+            "claim": "吸湿 驱动接触-分离机制 摩擦纳米发电机",
+            "step": 2,
+            "source": "hypothesis",
+            "path_index": 1
+          }
+        },
+        {
+          "source": "摩擦纳米发电机",
+          "target": "发电",
+          "relation": "实现持续发电",
+          "relation_type": "H3",
+          "metadata": {
+            "claim": "摩擦纳米发电机 实现持续发电 发电",
+            "step": 3,
+            "source": "hypothesis",
+            "path_index": 1
+          }
+        }
+      ]
+    },
+    "metrics": {
+      "path_consistency": 0.0625,
+      "coverage": 0.45454545454545453,
+      "bridging_score": 0.3888888888888889,
+      "rao_stirling_diversity": 0.1874,
+      "embedding_bridging": 0.0,
+      "consistency_precision": 0.0,
+      "consistency_recall": 0.0,
+      "consistency_f1": 0.0,
+      "info_novelty": 0.0,
+      "chain_coherence": 0.0,
+      "atypical_combination": 0.5622,
+      "kg_density": 0.0199,
+      "kg_inverse_modularity": 0.8707,
+      "kg_largest_cc_ratio": 0.4545,
+      "kg_avg_betweenness": 0.0129,
+      "kg_clustering_coefficient": 0.0,
+      "concept_recall": 0.0,
+      "concept_precision": 0.0,
+      "concept_f1": 0.0,
+      "relation_precision": 0.0,
+      "relation_type_accuracy": 0.0,
+      "evidence_coverage": 0.0,
+      "path_alignment_best": 0.0,
+      "path_alignment_mean": 0.0
+    }
+  },
+  {
+    "title": "Multi-modal framework for battery state of health evaluation using open-source electric vehicle data",
+    "graph": {
+      "nodes": [
+        {
+          "id": "多模态框架",
+          "term": "multi-modal framework",
+          "normalized": "多模态框架",
+          "discipline": "计算机科学技术",
+          "evidence": "we propose a deep learning-based multi-modal framework",
+          "source": "abstract",
+          "confidence": 0.95
+        },
+        {
+          "id": "基于深度学习",
+          "term": "deep learning-based",
+          "normalized": "基于深度学习",
+          "discipline": "计算机科学技术",
+          "evidence": "deep learning-based multi-modal framework",
+          "source": "abstract",
+          "confidence": 0.98
+        },
+        {
+          "id": "历史车辆数据",
+          "term": "historical vehicle data",
+          "normalized": "历史车辆数据",
+          "discipline": "计算机科学技术",
+          "evidence": "leverage historical vehicle data for efficient, accurate",
+          "source": "abstract",
+          "confidence": 0.92
+        },
+        {
+          "id": "多传感器系统",
+          "term": "multi-sensor systems",
+          "normalized": "多传感器系统",
+          "discipline": "计算机科学技术",
+          "evidence": "state estimation and diagnostics in multi-sensor systems",
+          "source": "abstract",
+          "confidence": 0.93
+        },
+        {
+          "id": "开源电池数据集",
+          "term": "open-source battery datasets",
+          "normalized": "开源电池数据集",
+          "discipline": "计算机科学技术",
+          "evidence": "availability of open-source battery datasets is critical",
+          "source": "introduction",
+          "confidence": 0.96
+        },
+        {
+          "id": "时间序列数据集",
+          "term": "time-series dataset",
+          "normalized": "时间序列数据集",
+          "discipline": "计算机科学技术",
+          "evidence": "time-series dataset comprising 48 cells aged under identical",
+          "source": "introduction",
+          "confidence": 0.94
+        },
+        {
+          "id": "电化学阻抗谱",
+          "term": "electrochemical impedance spectroscopy (EIS)",
+          "normalized": "电化学阻抗谱",
+          "discipline": "计算机科学技术",
+          "evidence": "20,000 electrochemical impedance spectroscopy (EIS) spectra",
+          "source": "introduction",
+          "confidence": 0.97
+        },
+        {
+          "id": "电池退化研究",
+          "term": "battery degradation studies",
+          "normalized": "电池退化研究",
+          "discipline": "计算机科学技术",
+          "evidence": "repositories provide battery testing data for use in battery degradation studies",
+          "source": "introduction",
+          "confidence": 0.93
+        },
+        {
+          "id": "非线性时变系统",
+          "term": "nonlinear time-varying system",
+          "normalized": "非线性时变系统",
+          "discipline": "计算机科学技术",
+          "evidence": "battery is a nonlinear, time-varying system",
+          "source": "introduction",
+          "confidence": 0.95
+        },
+        {
+          "id": "电池特性外推",
+          "term": "extrapolation of battery characteristics",
+          "normalized": "电池特性外推",
+          "discipline": "计算机科学技术",
+          "evidence": "generate some extrapolation of battery characteristics obtained from lab testing",
+          "source": "introduction",
+          "confidence": 0.92
+        },
+        {
+          "id": "电池健康状态",
+          "term": "battery state of health (SOH)",
+          "normalized": "电池健康状态",
+          "discipline": "动力与电气工程",
+          "evidence": "battery state of health evaluation",
+          "source": "abstract",
+          "confidence": 0.98
+        },
+        {
+          "id": "电池管理系统",
+          "term": "battery management system (BMS)",
+          "normalized": "电池管理系统",
+          "discipline": "动力与电气工程",
+          "evidence": "battery management system for state of health estimation",
+          "source": "abstract",
+          "confidence": 0.97
+        },
+        {
+          "id": "锂离子电池",
+          "term": "lithium-ion batteries",
+          "normalized": "锂离子电池",
+          "discipline": "动力与电气工程",
+          "evidence": "Lithium-ion batteries, with their high energy densities",
+          "source": "introduction",
+          "confidence": 0.99
+        },
+        {
+          "id": "固态电解质界面生长",
+          "term": "solid electrolyte interface growth",
+          "normalized": "固态电解质界面生长",
+          "discipline": "动力与电气工程",
+          "evidence": "solid electrolyte interface growth, loss of active materials",
+          "source": "introduction",
+          "confidence": 0.96
+        },
+        {
+          "id": "单体间差异",
+          "term": "cell-to-cell variation",
+          "normalized": "单体间差异",
+          "discipline": "动力与电气工程",
+          "evidence": "cell-to-cell variation results in rapid degradation",
+          "source": "introduction",
+          "confidence": 0.95
+        },
+        {
+          "id": "木桶效应",
+          "term": "barrel effect",
+          "normalized": "木桶效应",
+          "discipline": "动力与电气工程",
+          "evidence": "because of the barrel effect",
+          "source": "introduction",
+          "confidence": 0.94
+        },
+        {
+          "id": "内阻增加",
+          "term": "internal resistance increase",
+          "normalized": "内阻增加",
+          "discipline": "动力与电气工程",
+          "evidence": "performance degradation in terms of capacity reduction and internal resistance increase",
+          "source": "introduction",
+          "confidence": 0.93
+        },
+        {
+          "id": "活性材料",
+          "term": "active materials",
+          "normalized": "活性材料",
+          "discipline": "材料科学",
+          "evidence": "loss of active materials",
+          "source": "introduction",
+          "confidence": 0.96
+        },
+        {
+          "id": "锂沉积",
+          "term": "lithium plating",
+          "normalized": "锂沉积",
+          "discipline": "材料科学",
+          "evidence": "lithium plating3,4",
+          "source": "introduction",
+          "confidence": 0.95
+        },
+        {
+          "id": "电化学机理",
+          "term": "electrochemical mechanism",
+          "normalized": "电化学机理",
+          "discipline": "材料科学",
+          "evidence": "electrochemical mechanism of lithium batteries",
+          "source": "introduction",
+          "confidence": 0.94
+        },
+        {
+          "id": "退化模式",
+          "term": "degradation patterns",
+          "normalized": "退化模式",
+          "discipline": "材料科学",
+          "evidence": "accurately delineate degradation patterns and characteristics",
+          "source": "introduction",
+          "confidence": 0.93
+        },
+        {
+          "id": "充电状态",
+          "term": "state of charge (SOC)",
+          "normalized": "充电状态",
+          "discipline": "材料科学",
+          "evidence": "various SOH, state of charge (SOC), and temperatures",
+          "source": "introduction",
+          "confidence": 0.97
+        },
+        {
+          "id": "laboratory battery test data",
+          "term": "laboratory battery test data",
+          "normalized": "laboratory battery test data",
+          "discipline": "struct_relation_inferred",
+          "evidence": "",
+          "source": "struct_relation_inferred",
+          "confidence": 0.8
+        }
+      ],
+      "edges": [
+        {
+          "source": "多模态框架",
+          "target": "电池健康状态",
+          "relation": "proposed to enable efficient and accurate evaluation of",
+          "relation_type": "method_applied_to",
+          "metadata": {
+            "evidence": "we propose a deep learning-based multi-modal framework... for efficient, accurate, and cost-effective state of health estimation",
+            "source": "struct",
+            "direction": "->"
+          }
+        },
+        {
+          "source": "基于深度学习",
+          "target": "电池管理系统",
+          "relation": "applied to develop effective and reliable",
+          "relation_type": "method_applied_to",
+          "metadata": {
+            "evidence": "deep learning-based multi-modal framework... promote further research on BMS development",
+            "source": "struct",
+            "direction": "->"
+          }
+        },
+        {
+          "source": "开源电池数据集",
+          "target": "电池退化研究",
+          "relation": "critical for advancing",
+          "relation_type": "maps_to",
+          "metadata": {
+            "evidence": "availability of open-source battery datasets is critical for advancing battery research",
+            "source": "struct",
+            "direction": "->"
+          }
+        },
+        {
+          "source": "非线性时变系统",
+          "target": "电化学机理",
+          "relation": "characterized by the electrochemical mechanisms of lithium batteries",
+          "relation_type": "constrains",
+          "metadata": {
+            "evidence": "battery is a nonlinear, time-varying system due to electrochemical mechanisms leading to irreversible aging",
+            "source": "struct",
+            "direction": "->"
+          }
+        },
+        {
+          "source": "电化学阻抗谱",
+          "target": "退化模式",
+          "relation": "used to delineate degradation patterns through spectral analysis",
+          "relation_type": "method_applied_to",
+          "metadata": {
+            "evidence": "20,000 EIS spectra from commercial batteries across various SOH... accurately delineate degradation patterns",
+            "source": "struct",
+            "direction": "->"
+          }
+        },
+        {
+          "source": "单体间差异",
+          "target": "木桶效应",
+          "relation": "results in rapid degradation because of the",
+          "relation_type": "constrains",
+          "metadata": {
+            "evidence": "cell-to-cell variation results in rapid degradation because of the barrel effect",
+            "source": "struct",
+            "direction": "->"
+          }
+        },
+        {
+          "source": "历史车辆数据",
+          "target": "锂离子电池",
+          "relation": "analyzed to understand aging mechanisms in",
+          "relation_type": "inferred_from",
+          "metadata": {
+            "evidence": "operational data analysis reveals disparities between field data and laboratory battery test data",
+            "source": "struct",
+            "direction": "->"
+          }
+        },
+        {
+          "source": "多传感器系统",
+          "target": "充电状态",
+          "relation": "enable joint estimation of SOH and",
+          "relation_type": "extends",
+          "metadata": {
+            "evidence": "proposed paradigm exhibits potential for state estimation in multi-sensor systems",
+            "source": "struct",
+            "direction": "->"
+          }
+        },
+        {
+          "source": "活性材料",
+          "target": "内阻增加",
+          "relation": "loss contributes to performance degradation including",
+          "relation_type": "constrains",
+          "metadata": {
+            "evidence": "loss of active materials... results in performance degradation in terms of internal resistance increase",
+            "source": "struct",
+            "direction": "->"
+          }
+        },
+        {
+          "source": "电池特性外推",
+          "target": "laboratory battery test data",
+          "relation": "generated from limited lab testing leading to significant errors",
+          "relation_type": "depends_on",
+          "metadata": {
+            "evidence": "generate some extrapolation of battery characteristics obtained from lab testing",
+            "source": "struct",
+            "direction": "->"
+          }
+        },
+        {
+          "source": "多模态框架",
+          "target": "电池健康状态",
+          "relation": "影响",
+          "relation_type": "H1",
+          "metadata": {
+            "claim": "多模态框架 电池健康状态",
+            "step": 1,
+            "source": "hypothesis",
+            "path_index": 0
+          }
+        },
+        {
+          "source": "电池健康状态",
+          "target": "电池管理系统",
+          "relation": "导致",
+          "relation_type": "H1",
+          "metadata": {
+            "claim": "电池健康状态 电池管理系统",
+            "step": 2,
+            "source": "hypothesis",
+            "path_index": 0
+          }
+        },
+        {
+          "source": "电池管理系统",
+          "target": "电化学机理",
+          "relation": "电化学机理",
+          "relation_type": "H1",
+          "metadata": {
+            "claim": "电池管理系统 电化学机理 电化学机理",
+            "step": 3,
+            "source": "hypothesis",
+            "path_index": 0
+          }
+        },
+        {
+          "source": "历史车辆数据",
+          "target": "锂离子电池",
+          "relation": "影响",
+          "relation_type": "H1",
+          "metadata": {
+            "claim": "历史车辆数据 锂离子电池",
+            "step": 1,
+            "source": "hypothesis",
+            "path_index": 1
+          }
+        },
+        {
+          "source": "锂离子电池",
+          "target": "退化模式",
+          "relation": "退化模式",
+          "relation_type": "H1",
+          "metadata": {
+            "claim": "锂离子电池 退化模式 退化模式",
+            "step": 2,
+            "source": "hypothesis",
+            "path_index": 1
+          }
+        },
+        {
+          "source": "退化模式",
+          "target": "活性材料",
+          "relation": "活性材料",
+          "relation_type": "H1",
+          "metadata": {
+            "claim": "退化模式 活性材料 活性材料",
+            "step": 3,
+            "source": "hypothesis",
+            "path_index": 1
+          }
+        },
+        {
+          "source": "开源电池数据集",
+          "target": "电池退化研究",
+          "relation": "影响",
+          "relation_type": "H1",
+          "metadata": {
+            "claim": "开源电池数据集 电池退化研究",
+            "step": 1,
+            "source": "hypothesis",
+            "path_index": 2
+          }
+        },
+        {
+          "source": "电池退化研究",
+          "target": "电化学阻抗谱",
+          "relation": "导致",
+          "relation_type": "H1",
+          "metadata": {
+            "claim": "电池退化研究 电化学阻抗谱",
+            "step": 2,
+            "source": "hypothesis",
+            "path_index": 2
+          }
+        },
+        {
+          "source": "电化学阻抗谱",
+          "target": "锂沉积",
+          "relation": "锂沉积",
+          "relation_type": "H1",
+          "metadata": {
+            "claim": "电化学阻抗谱 锂沉积 锂沉积",
+            "step": 3,
+            "source": "hypothesis",
+            "path_index": 2
+          }
+        },
+        {
+          "source": "多模态框架",
+          "target": "历史车辆数据",
+          "relation": "整合",
+          "relation_type": "H2",
+          "metadata": {
+            "claim": "多模态框架通过整合历史车辆数据作为输入源",
+            "step": 1,
+            "source": "hypothesis",
+            "path_index": 0
+          }
+        },
+        {
+          "source": "历史车辆数据",
+          "target": "多传感器系统",
+          "relation": "驱动",
+          "relation_type": "H2",
+          "metadata": {
+            "claim": "历史车辆数据驱动多传感器系统的协同分析",
+            "step": 2,
+            "source": "hypothesis",
+            "path_index": 0
+          }
+        },
+        {
+          "source": "多传感器系统",
+          "target": "电池健康状态",
+          "relation": "联合估计",
+          "relation_type": "H2",
+          "metadata": {
+            "claim": "多传感器系统实现电池健康状态与充电状态的联合估计",
+            "step": 3,
+            "source": "hypothesis",
+            "path_index": 0
+          }
+        },
+        {
+          "source": "电池管理系统",
+          "target": "电化学阻抗谱",
+          "relation": "集成",
+          "relation_type": "H2",
+          "metadata": {
+            "claim": "电池管理系统集成电化学阻抗谱分析模块",
+            "step": 1,
+            "source": "hypothesis",
+            "path_index": 1
+          }
+        },
+        {
+          "source": "电化学阻抗谱",
+          "target": "退化模式",
+          "relation": "解析",
+          "relation_type": "H2",
+          "metadata": {
+            "claim": "电化学阻抗谱通过频谱分析解析退化模式特征",
+            "step": 2,
+            "source": "hypothesis",
+            "path_index": 1
+          }
+        },
+        {
+          "source": "退化模式",
+          "target": "电池健康状态",
+          "relation": "映射",
+          "relation_type": "H2",
+          "metadata": {
+            "claim": "退化模式特征与电池健康状态退化程度建立映射关系",
+            "step": 3,
+            "source": "hypothesis",
+            "path_index": 1
+          }
+        },
+        {
+          "source": "多模态框架",
+          "target": "电池健康状态",
+          "relation": "影响",
+          "relation_type": "H3",
+          "metadata": {
+            "claim": "多模态框架 电池健康状态",
+            "step": 1,
+            "source": "hypothesis",
+            "path_index": 0
+          }
+        },
+        {
+          "source": "电池健康状态",
+          "target": "多传感器系统",
+          "relation": "导致",
+          "relation_type": "H3",
+          "metadata": {
+            "claim": "电池健康状态 多传感器系统",
+            "step": 2,
+            "source": "hypothesis",
+            "path_index": 0
+          }
+        },
+        {
+          "source": "多传感器系统",
+          "target": "电池管理系统",
+          "relation": "促进",
+          "relation_type": "H3",
+          "metadata": {
+            "claim": "多传感器系统 电池管理系统",
+            "step": 3,
+            "source": "hypothesis",
+            "path_index": 0
+          }
+        },
+        {
+          "source": "历史车辆数据",
+          "target": "锂离子电池",
+          "relation": "影响",
+          "relation_type": "H3",
+          "metadata": {
+            "claim": "历史车辆数据 锂离子电池",
+            "step": 1,
+            "source": "hypothesis",
+            "path_index": 1
+          }
+        },
+        {
+          "source": "锂离子电池",
+          "target": "非线性时变系统",
+          "relation": "电化学机理",
+          "relation_type": "H3",
+          "metadata": {
+            "claim": "锂离子电池 电化学机理 非线性时变系统",
+            "step": 2,
+            "source": "hypothesis",
+            "path_index": 1
+          }
+        },
+        {
+          "source": "非线性时变系统",
+          "target": "单体间差异",
+          "relation": "促进",
+          "relation_type": "H3",
+          "metadata": {
+            "claim": "非线性时变系统 单体间差异",
+            "step": 3,
+            "source": "hypothesis",
+            "path_index": 1
+          }
+        }
+      ]
+    },
+    "metrics": {
+      "path_consistency": 0.2857142857142857,
+      "coverage": 0.6521739130434783,
+      "bridging_score": 0.7333333333333333,
+      "rao_stirling_diversity": 0.206,
+      "embedding_bridging": 0.0,
+      "consistency_precision": 0.0,
+      "consistency_recall": 0.0,
+      "consistency_f1": 0.0,
+      "info_novelty": 0.0,
+      "chain_coherence": 0.0,
+      "atypical_combination": 0.61,
+      "kg_density": 0.0494,
+      "kg_inverse_modularity": 1.0547,
+      "kg_largest_cc_ratio": 0.8261,
+      "kg_avg_betweenness": 0.0649,
+      "kg_clustering_coefficient": 0.0188,
+      "concept_recall": 0.0,
+      "concept_precision": 0.0,
+      "concept_f1": 0.0,
+      "relation_precision": 0.0,
+      "relation_type_accuracy": 0.0,
+      "evidence_coverage": 0.0,
+      "path_alignment_best": 0.0,
+      "path_alignment_mean": 0.0
+    }
+  }
+]

@@ -1,0 +1,773 @@
+[
+  {
+    "title": "Seasonal recurrence and modular assembly of an Arctic pelagic marine microbiome",
+    "primary": "生物学",
+    "secondary_list": [
+      "地球科学",
+      "环境科学技术"
+    ],
+    "概念_主学科": [
+      {
+        "term": "microbial communities",
+        "normalized": "微生物群落",
+        "std_label": "微生物群落",
+        "evidence": "how microbial communities are shaped by environmental variability",
+        "source": "abstract",
+        "confidence": 0.98
+      },
+      {
+        "term": "long-read metagenomics",
+        "normalized": "长读长宏基因组学",
+        "std_label": "宏基因组学",
+        "evidence": "long-read metagenomics and SSU ribosomal metabarcoding",
+        "source": "abstract",
+        "confidence": 0.95
+      },
+      {
+        "term": "SSU ribosomal metabarcoding",
+        "normalized": "核糖体元条形码",
+        "std_label": "核糖体RNA测序",
+        "evidence": "long-read metagenomics and SSU ribosomal metabarcoding",
+        "source": "abstract",
+        "confidence": 0.93
+      },
+      {
+        "term": "Cand. Nitrosopumilus",
+        "normalized": "候选属硝化泉古菌",
+        "std_label": "Nitrosopumilus",
+        "evidence": "Cand. Nitrosopumilus, Syndiniales, and the machinery to oxidise ammonia",
+        "source": "abstract",
+        "confidence": 0.97
+      },
+      {
+        "term": "Syndiniales",
+        "normalized": "新月藻目",
+        "std_label": "Syndiniales",
+        "evidence": "Cand. Nitrosopumilus, Syndiniales, and the machinery to oxidise ammonia",
+        "source": "abstract",
+        "confidence": 0.92
+      },
+      {
+        "term": "metatranscriptomes",
+        "normalized": "宏转录组",
+        "std_label": "宏转录组学",
+        "evidence": "Leveraging metatranscriptomes from Tara Oceans",
+        "source": "abstract",
+        "confidence": 0.96
+      },
+      {
+        "term": "Amylibacter",
+        "normalized": "海洋螺菌属",
+        "std_label": "Amylibacter",
+        "evidence": "late summer is characterised by Amylibacter and sulfur compound metabolism",
+        "source": "abstract",
+        "confidence": 0.94
+      },
+      {
+        "term": "sulfur compound metabolism",
+        "normalized": "硫化合物代谢",
+        "std_label": "硫代谢",
+        "evidence": "late summer is characterised by Amylibacter and sulfur compound metabolism",
+        "source": "abstract",
+        "confidence": 0.91
+      },
+      {
+        "term": "Bacteria",
+        "normalized": "细菌",
+        "std_label": "细菌",
+        "evidence": "Bacteria, archaea and microeukaryotes are the dominant life forms",
+        "source": "introduction",
+        "confidence": 0.99
+      },
+      {
+        "term": "archaea",
+        "normalized": "古菌",
+        "std_label": "古菌",
+        "evidence": "Bacteria, archaea and microeukaryotes are the dominant life forms",
+        "source": "introduction",
+        "confidence": 0.99
+      },
+      {
+        "term": "microeukaryotes",
+        "normalized": "微型真核生物",
+        "std_label": "微型真核生物",
+        "evidence": "Bacteria, archaea and microeukaryotes are the dominant life forms",
+        "source": "introduction",
+        "confidence": 0.98
+      },
+      {
+        "term": "biogeochemical cycling",
+        "normalized": "生物地球化学循环",
+        "std_label": "生物地球化学循环",
+        "evidence": "mediating the biogeochemical cycling of biologically important elements",
+        "source": "introduction",
+        "confidence": 0.95
+      }
+    ],
+    "概念_辅学科": {
+      "地球科学": [
+        {
+          "term": "Arctic Ocean",
+          "normalized": "北冰洋",
+          "std_label": "北极海洋",
+          "evidence": "pelagic Arctic Ocean microbiome",
+          "source": "abstract",
+          "confidence": 0.99
+        },
+        {
+          "term": "polar night",
+          "normalized": "极夜",
+          "std_label": "极夜现象",
+          "evidence": "signatures of early polar night",
+          "source": "abstract",
+          "confidence": 0.96
+        },
+        {
+          "term": "bathymetric map",
+          "normalized": "海底地形图",
+          "std_label": "海底地形测绘",
+          "evidence": "Bathymetric map of the Fram Strait",
+          "source": "introduction",
+          "confidence": 0.93
+        },
+        {
+          "term": "West Spitsbergen Current",
+          "normalized": "斯匹次卑尔根西岸流",
+          "std_label": "海洋洋流",
+          "evidence": "mooring location within the West Spitsbergen Current",
+          "source": "introduction",
+          "confidence": 0.94
+        },
+        {
+          "term": "mixed layer depth",
+          "normalized": "混合层深度",
+          "std_label": "海洋混合层",
+          "evidence": "mixed layer depth, chlorophyll concentrations",
+          "source": "abstract",
+          "confidence": 0.92
+        }
+      ],
+      "环境科学技术": [
+        {
+          "term": "autonomous samplers",
+          "normalized": "自主采样器",
+          "std_label": "环境采样设备",
+          "evidence": "autonomous samplers and in situ sensors",
+          "source": "abstract",
+          "confidence": 0.95
+        },
+        {
+          "term": "in situ sensors",
+          "normalized": "原位传感器",
+          "std_label": "环境监测传感器",
+          "evidence": "autonomous samplers and in situ sensors",
+          "source": "abstract",
+          "confidence": 0.95
+        },
+        {
+          "term": "environmental selection pressure",
+          "normalized": "环境选择压力",
+          "std_label": "环境压力因子",
+          "evidence": "environmental selection pressure acts heterogeneously",
+          "source": "abstract",
+          "confidence": 0.93
+        },
+        {
+          "term": "Tara Oceans",
+          "normalized": "塔拉海洋观测项目",
+          "std_label": "海洋观测计划",
+          "evidence": "metatranscriptomes from Tara Oceans",
+          "source": "abstract",
+          "confidence": 0.97
+        },
+        {
+          "term": "climate warming",
+          "normalized": "气候变暖",
+          "std_label": "气候变化",
+          "evidence": "unprecedented changes are taking place because of climate warming",
+          "source": "introduction",
+          "confidence": 0.96
+        }
+      ]
+    }
+  },
+  {
+    "title": "Lysosomes finely control macrophage inflammatory function via regulating the release of lysosomal Fe2+ through TRPML1 channel",
+    "primary": "生物学",
+    "secondary_list": [
+      "生物学",
+      "基础医学",
+      "临床医学"
+    ],
+    "概念_主学科": [
+      {
+        "term": "lysosomes",
+        "normalized": "溶酶体",
+        "std_label": "lysosome",
+        "evidence": "Lysosomes are best known for their roles in inflammatory responses",
+        "source": "abstract",
+        "confidence": 0.98
+      },
+      {
+        "term": "TRPML1",
+        "normalized": "瞬时受体电位粘脂蛋白1",
+        "std_label": "TRPML1",
+        "evidence": "TRPML1, a lysosomal cationic channel",
+        "source": "abstract",
+        "confidence": 0.99
+      },
+      {
+        "term": "Fe²⁺",
+        "normalized": "亚铁离子",
+        "std_label": "ferrous ion",
+        "evidence": "lysosomal Fe²⁺-prolyl hydroxylase domain enzymes",
+        "source": "abstract",
+        "confidence": 0.97
+      },
+      {
+        "term": "PHDs",
+        "normalized": "脯氨酰羟化酶结构域酶",
+        "std_label": "prolyl hydroxylase domain enzymes",
+        "evidence": "Fe²⁺-prolyl hydroxylase domain enzymes (PHDs)",
+        "source": "abstract",
+        "confidence": 0.96
+      },
+      {
+        "term": "NF-κB",
+        "normalized": "核因子κ",
+        "std_label": "nuclear factor kappa B",
+        "evidence": "NF-κB-interleukin 1 beta (IL1B) transcription pathway",
+        "source": "abstract",
+        "confidence": 0.98
+      },
+      {
+        "term": "ROS",
+        "normalized": "活性氧",
+        "std_label": "reactive oxygen species",
+        "evidence": "activated secondarily to ROS elevation",
+        "source": "abstract",
+        "confidence": 0.97
+      },
+      {
+        "term": "autophagy",
+        "normalized": "自噬",
+        "std_label": "autophagy",
+        "evidence": "engaging in autophagy to remove inflammasomes",
+        "source": "abstract",
+        "confidence": 0.95
+      },
+      {
+        "term": "inflammasomes",
+        "normalized": "炎性小体",
+        "std_label": "inflammasomes",
+        "evidence": "remove inflammasomes",
+        "source": "abstract",
+        "confidence": 0.96
+      },
+      {
+        "term": "IL1B",
+        "normalized": "白细胞介素1β",
+        "std_label": "interleukin 1 beta",
+        "evidence": "IL1B transcription",
+        "source": "abstract",
+        "confidence": 0.97
+      },
+      {
+        "term": "lysosomal cationic channel",
+        "normalized": "溶酶体阳离子通道",
+        "std_label": "lysosomal cationic channel",
+        "evidence": "TRPML1, a lysosomal cationic channel",
+        "source": "abstract",
+        "confidence": 0.95
+      },
+      {
+        "term": "prolyl hydroxylase domain enzymes",
+        "normalized": "脯氨酰羟化酶结构域酶",
+        "std_label": "prolyl hydroxylase domain enzymes",
+        "evidence": "prolyl hydroxylase domain enzymes (PHDs)",
+        "source": "abstract",
+        "confidence": 0.94
+      },
+      {
+        "term": "transcriptional activity",
+        "normalized": "转录活性",
+        "std_label": "transcriptional activity",
+        "evidence": "represses transcriptional activity of NF-κB",
+        "source": "abstract",
+        "confidence": 0.93
+      },
+      {
+        "term": "Dextran sulfate sodium-induced colitis",
+        "normalized": "葡聚糖硫酸钠诱导的结肠炎",
+        "std_label": "Dextran sulfate sodium-induced colitis",
+        "evidence": "Dextran sulfate sodium-induced colitis in mice",
+        "source": "abstract",
+        "confidence": 0.92
+      },
+      {
+        "term": "inflammatory bowel disease",
+        "normalized": "炎症性肠病",
+        "std_label": "inflammatory bowel disease",
+        "evidence": "treating inflammatory bowel disease",
+        "source": "abstract",
+        "confidence": 0.95
+      },
+      {
+        "term": "MCOLN1 gene",
+        "normalized": "粘脂蛋白1基因",
+        "std_label": "MCOLN1 gene",
+        "evidence": "TRPML1, encoded by MCOLN1 gene",
+        "source": "introduction",
+        "confidence": 0.96
+      },
+      {
+        "term": "lysosomal Fe²⁺ release",
+        "normalized": "溶酶体亚铁释放",
+        "std_label": "lysosomal Fe²⁺ release",
+        "evidence": "modulation on the release of lysosomal Fe²⁺",
+        "source": "abstract",
+        "confidence": 0.94
+      },
+      {
+        "term": "ionic homeostasis",
+        "normalized": "离子稳态",
+        "std_label": "ionic homeostasis",
+        "evidence": "maintaining ionic homeostasis",
+        "source": "introduction",
+        "confidence": 0.93
+      },
+      {
+        "term": "endocytosis",
+        "normalized": "内吞作用",
+        "std_label": "endocytosis",
+        "evidence": "endocytosis, exocytosis and autophagy",
+        "source": "introduction",
+        "confidence": 0.92
+      },
+      {
+        "term": "exocytosis",
+        "normalized": "外泌作用",
+        "std_label": "exocytosis",
+        "evidence": "endocytosis, exocytosis and autophagy",
+        "source": "introduction",
+        "confidence": 0.92
+      },
+      {
+        "term": "lysosomal Ca²⁺",
+        "normalized": "溶酶体钙离子",
+        "std_label": "lysosomal Ca²⁺",
+        "evidence": "release of lysosomal Ca²⁺, Zn²+ and Fe²⁺",
+        "source": "introduction",
+        "confidence": 0.95
+      }
+    ],
+    "概念_辅学科": {
+      "生物学": [
+        {
+          "term": "NLRP3 inflammasome",
+          "normalized": "炎性小体",
+          "std_label": "NLRP3 inflammasome",
+          "evidence": "NLRP3 (NOD-, LRR- and pyrin domain-containing protein 3) inflammasome activation",
+          "source": "introduction",
+          "confidence": 0.97
+        },
+        {
+          "term": "Atg16L1 knockout mice",
+          "normalized": "基因敲除小鼠",
+          "std_label": "Atg16L1 knockout mice",
+          "evidence": "macrophages derived from Atg16L1 knockout mice",
+          "source": "introduction",
+          "confidence": 0.96
+        },
+        {
+          "term": "Lipopolysaccharides (LPS)",
+          "normalized": "脂多糖",
+          "std_label": "lipopolysaccharides",
+          "evidence": "LPS-induced IL-1β production",
+          "source": "introduction",
+          "confidence": 0.95
+        },
+        {
+          "term": "Crohn’s disease",
+          "normalized": "克罗恩病",
+          "std_label": "Crohn’s disease",
+          "evidence": "associated with the incidence of Crohn’s disease",
+          "source": "introduction",
+          "confidence": 0.94
+        },
+        {
+          "term": "α-galactosidase",
+          "normalized": "α-半乳糖苷酶",
+          "std_label": "α-galactosidase",
+          "evidence": "defects in α-galactosidase",
+          "source": "introduction",
+          "confidence": 0.93
+        },
+        {
+          "term": "TFEB pathway",
+          "normalized": "通路",
+          "std_label": "TFEB pathway",
+          "evidence": "regulate innate immune response via the TFEB pathway",
+          "source": "introduction",
+          "confidence": 0.92
+        },
+        {
+          "term": "pro-inflammatory cytokines",
+          "normalized": "促炎细胞因子",
+          "std_label": "pro-inflammatory cytokines",
+          "evidence": "transcriptional expression of pro-inflammatory cytokines",
+          "source": "introduction",
+          "confidence": 0.91
+        },
+        {
+          "term": "chemokines",
+          "normalized": "趋化因子",
+          "std_label": "chemokines",
+          "evidence": "pro-inflammatory cytokines/chemokines",
+          "source": "introduction",
+          "confidence": 0.9
+        }
+      ],
+      "基础医学": [
+        {
+          "term": "invariant natural killer T cells",
+          "normalized": "恒定自然杀伤细胞",
+          "std_label": "invariant natural killer T cells",
+          "evidence": "activation of invariant natural killer T cells",
+          "source": "introduction",
+          "confidence": 0.93
+        },
+        {
+          "term": "lysosome biogenesis",
+          "normalized": "溶酶体生成",
+          "std_label": "lysosome biogenesis",
+          "evidence": "master regulator of lysosome biogenesis",
+          "source": "introduction",
+          "confidence": 0.92
+        },
+        {
+          "term": "antimicrobial host defense",
+          "normalized": "抗菌宿主防御",
+          "std_label": "antimicrobial host defense",
+          "evidence": "involved in antimicrobial host defense",
+          "source": "introduction",
+          "confidence": 0.91
+        },
+        {
+          "term": "oxidant genes",
+          "normalized": "氧化应激基因",
+          "std_label": "oxidant genes",
+          "evidence": "oxidant genes",
+          "source": "introduction",
+          "confidence": 0.9
+        },
+        {
+          "term": "lysosomal Zn²⁺",
+          "normalized": "溶酶体锌离子",
+          "std_label": "lysosomal Zn²⁺",
+          "evidence": "release of lysosomal Ca²⁺, Zn²+ and Fe²⁺",
+          "source": "introduction",
+          "confidence": 0.94
+        },
+        {
+          "term": "lysosomal function",
+          "normalized": "溶酶体功能",
+          "std_label": "lysosomal function",
+          "evidence": "exerts lysosomal function",
+          "source": "introduction",
+          "confidence": 0.93
+        }
+      ],
+      "临床医学": [
+        {
+          "term": "inflammatory bowel disease (IBD)",
+          "normalized": "炎症性肠病",
+          "std_label": "inflammatory bowel disease",
+          "evidence": "a type of inflammatory bowel disease (IBD)",
+          "source": "introduction",
+          "confidence": 0.96
+        },
+        {
+          "term": "Dextran sulfate sodium-induced colitis",
+          "normalized": "葡聚糖硫酸钠诱导的结肠炎",
+          "std_label": "Dextran sulfate sodium-induced colitis",
+          "evidence": "clinical signs of Dextran sulfate sodium-induced colitis",
+          "source": "abstract",
+          "confidence": 0.95
+        },
+        {
+          "term": "Crohn’s disease",
+          "normalized": "克罗恩病",
+          "std_label": "Crohn’s disease",
+          "evidence": "associated with the incidence of Crohn’s disease",
+          "source": "introduction",
+          "confidence": 0.94
+        },
+        {
+          "term": "autoimmune diseases",
+          "normalized": "自身免疫性疾病",
+          "std_label": "autoimmune diseases",
+          "evidence": "play a role in autoimmune diseases",
+          "source": "introduction",
+          "confidence": 0.92
+        },
+        {
+          "term": "clinical signs",
+          "normalized": "临床症状",
+          "std_label": "clinical signs",
+          "evidence": "ameliorates multiple clinical signs",
+          "source": "abstract",
+          "confidence": 0.93
+        },
+        {
+          "term": "inflammatory stimuli",
+          "normalized": "炎症刺激",
+          "std_label": "inflammatory stimuli",
+          "evidence": "activated secondarily to ROS elevation upon inflammatory stimuli",
+          "source": "abstract",
+          "confidence": 0.91
+        }
+      ]
+    }
+  },
+  {
+    "title": "Transmembrane voltage-gated nanopores controlled by electrically tunable in-pore chemistry",
+    "primary": "化学",
+    "secondary_list": [
+      "材料科学",
+      "物理学"
+    ],
+    "概念_主学科": [
+      {
+        "term": "metal phosphates",
+        "normalized": "金属磷酸盐",
+        "std_label": "metal phosphates",
+        "evidence": "repetitive precipitation and dissolution of metal phosphates",
+        "source": "abstract",
+        "confidence": 0.98
+      },
+      {
+        "term": "chemical reactions",
+        "normalized": "化学反应",
+        "std_label": "chemical reactions",
+        "evidence": "electrically tunable chemical reactions",
+        "source": "abstract",
+        "confidence": 0.95
+      },
+      {
+        "term": "precipitation/dissolution reactions",
+        "normalized": "沉淀/溶解反应",
+        "std_label": "precipitation/dissolution reactions",
+        "evidence": "reversible precipitation/dissolution reactions of a metal compound layer",
+        "source": "introduction",
+        "confidence": 0.97
+      },
+      {
+        "term": "phosphate compounds",
+        "normalized": "磷酸盐化合物",
+        "std_label": "phosphate compounds",
+        "evidence": "dissolves the phosphate compounds reopening the pore",
+        "source": "abstract",
+        "confidence": 0.96
+      },
+      {
+        "term": "in-pore chemistry",
+        "normalized": "孔内化学反应",
+        "std_label": "in-pore chemistry",
+        "evidence": "electrically tunable in-pore chemistry",
+        "source": "title",
+        "confidence": 0.99
+      },
+      {
+        "term": "chemical degrees of freedom",
+        "normalized": "化学自由度",
+        "std_label": "chemical degrees of freedom",
+        "evidence": "Leveraging chemical degrees of freedom",
+        "source": "abstract",
+        "confidence": 0.93
+      },
+      {
+        "term": "metal compound layer",
+        "normalized": "金属化合物层",
+        "std_label": "metal compound layer",
+        "evidence": "precipitation/dissolution reactions of a metal compound layer",
+        "source": "introduction",
+        "confidence": 0.95
+      },
+      {
+        "term": "ion electromigration",
+        "normalized": "离子电迁移",
+        "std_label": "ion electromigration",
+        "evidence": "precise manipulations of the ion electromigration",
+        "source": "introduction",
+        "confidence": 0.94
+      },
+      {
+        "term": "salinity difference",
+        "normalized": "盐度差异",
+        "std_label": "salinity difference",
+        "evidence": "Strong ionic rectifications under salinity difference",
+        "source": "introduction",
+        "confidence": 0.92
+      },
+      {
+        "term": "reactive ion etching",
+        "normalized": "反应离子刻蚀",
+        "std_label": "reactive ion etching",
+        "evidence": "fabricated by... reactive ion etching",
+        "source": "introduction",
+        "confidence": 0.96
+      },
+      {
+        "term": "phosphate-buffered saline",
+        "normalized": "磷酸盐缓冲盐水",
+        "std_label": "phosphate-buffered saline",
+        "evidence": "phosphate-buffered saline containing 1.37 M NaCl",
+        "source": "introduction",
+        "confidence": 0.97
+      },
+      {
+        "term": "cation flow",
+        "normalized": "阳离子流",
+        "std_label": "cation flow",
+        "evidence": "manipulations of cation flow by transmembrane voltage",
+        "source": "abstract",
+        "confidence": 0.98
+      }
+    ],
+    "概念_辅学科": {
+      "材料科学": [
+        {
+          "term": "solid-state nanopores",
+          "normalized": "固态纳米孔",
+          "std_label": "solid-state nanopores",
+          "evidence": "voltage-gated solid-state nanopores",
+          "source": "abstract",
+          "confidence": 0.99
+        },
+        {
+          "term": "nanofluidic diode",
+          "normalized": "纳米流体二极管",
+          "std_label": "nanofluidic diode",
+          "evidence": "creates a nanofluidic diode of rectification ratio exceeding 40000",
+          "source": "abstract",
+          "confidence": 0.98
+        },
+        {
+          "term": "dielectric membrane",
+          "normalized": "介电膜",
+          "std_label": "dielectric membrane",
+          "evidence": "40 nm-thick dielectric membrane",
+          "source": "introduction",
+          "confidence": 0.97
+        },
+        {
+          "term": "conical nanochannels",
+          "normalized": "锥形纳米通道",
+          "std_label": "conical nanochannels",
+          "evidence": "high length-to-diameter aspect ratio conical nanochannels",
+          "source": "introduction",
+          "confidence": 0.96
+        },
+        {
+          "term": "SiNx membrane",
+          "normalized": "氮化硅膜",
+          "std_label": "silicon nitride membrane",
+          "evidence": "40 nm-thick SiNx membrane",
+          "source": "introduction",
+          "confidence": 0.95
+        },
+        {
+          "term": "electron beam lithography",
+          "normalized": "电子束光刻",
+          "std_label": "electron beam lithography",
+          "evidence": "fabricated by sculpting holes... using electron beam lithography",
+          "source": "introduction",
+          "confidence": 0.97
+        },
+        {
+          "term": "nanoconfined space",
+          "normalized": "纳米受限空间",
+          "std_label": "nanoconfined space",
+          "evidence": "reaction kinetics within a nanoconfined space",
+          "source": "introduction",
+          "confidence": 0.94
+        },
+        {
+          "term": "nanoprecipitates",
+          "normalized": "纳米沉淀物",
+          "std_label": "nanoprecipitates",
+          "evidence": "in-situ formed nanoprecipitates",
+          "source": "introduction",
+          "confidence": 0.96
+        }
+      ],
+      "物理学": [
+        {
+          "term": "transmembrane voltage",
+          "normalized": "跨膜电压",
+          "std_label": "transmembrane voltage",
+          "evidence": "manipulations of cation flow by transmembrane voltage",
+          "source": "abstract",
+          "confidence": 0.99
+        },
+        {
+          "term": "ionic current",
+          "normalized": "离子电流",
+          "std_label": "ionic current",
+          "evidence": "reduce ionic current by occluding the nanopore",
+          "source": "abstract",
+          "confidence": 0.98
+        },
+        {
+          "term": "rectification ratio",
+          "normalized": "整流比",
+          "std_label": "rectification ratio",
+          "evidence": "rectification ratio exceeding 40000",
+          "source": "abstract",
+          "confidence": 0.97
+        },
+        {
+          "term": "memristor",
+          "normalized": "忆阻器",
+          "std_label": "memristor",
+          "evidence": "facilitates a memristor of sub-nanowatt power consumption",
+          "source": "abstract",
+          "confidence": 0.99
+        },
+        {
+          "term": "ion transport",
+          "normalized": "离子输运",
+          "std_label": "ion transport",
+          "evidence": "precise manipulations of the ion electromigration",
+          "source": "introduction",
+          "confidence": 0.96
+        },
+        {
+          "term": "Maxwell-Hall's model",
+          "normalized": "麦克斯韦-霍尔模型",
+          "std_label": "Maxwell-Hall's model",
+          "evidence": "consistent with Maxwell-Hall’s model",
+          "source": "introduction",
+          "confidence": 0.95
+        },
+        {
+          "term": "Dukhin length",
+          "normalized": "杜欣长度",
+          "std_label": "Dukhin length",
+          "evidence": "sub-nanometer scale Dukhin length",
+          "source": "introduction",
+          "confidence": 0.94
+        },
+        {
+          "term": "electromigration",
+          "normalized": "电迁移",
+          "std_label": "electromigration",
+          "evidence": "ion electromigration",
+          "source": "introduction",
+          "confidence": 0.93
+        }
+      ]
+    }
+  }
+]
