@@ -1,0 +1,123 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "microfluidic reactors",
+        "relation": "enables",
+        "tail": "machine learning algorithms",
+        "claim": "材料科学与计算机科学技术的整合使光学特性控制更精确高效"
+      },
+      {
+        "step": 2,
+        "head": "dynamic adjustment of flow rates",
+        "relation": "causes",
+        "tail": "rapid identification of optimal reaction conditions",
+        "claim": "实时参数调整加速了最佳反应条件的发现"
+      },
+      {
+        "step": 3,
+        "head": "optimal reaction conditions",
+        "relation": "transforms",
+        "tail": "plasmonic nanoparticles with specific optical characteristics",
+        "claim": "优化条件直接决定纳米粒子光学特性"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "microfluidic reactors",
+        "relation": "combines",
+        "tail": "Bayesian optimization",
+        "claim": "材料科学与统计方法的结合加速化学空间探索"
+      },
+      {
+        "step": 2,
+        "head": "Bayesian optimization",
+        "relation": "predicts",
+        "tail": "promising regions of chemical space",
+        "claim": "模型预测减少实验次数"
+      },
+      {
+        "step": 3,
+        "head": "chemical space exploration",
+        "relation": "achieves",
+        "tail": "specific optical properties",
+        "claim": "化学空间优化实现目标光学特性"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "deep neural networks",
+        "relation": "requires",
+        "tail": "input parameters (concentration, temperature, pH)",
+        "claim": "计算机模型依赖化学参数输入"
+      },
+      {
+        "step": 2,
+        "head": "input parameters",
+        "relation": "determines",
+        "tail": "nanoparticle size, shape, composition",
+        "claim": "参数输入决定材料属性"
+      },
+      {
+        "step": 3,
+        "head": "nanoparticle properties",
+        "relation": "optimizes",
+        "tail": "machine learning algorithms",
+        "claim": "材料特性反馈优化算法"
+      }
+    ]
+  ],
+  "L3": [
+    [
+      {
+        "step": 1,
+        "head": "closed-loop system",
+        "relation": "integrates",
+        "tail": "online spectroscopic characterization",
+        "claim": "闭环系统整合材料表征技术"
+      },
+      {
+        "step": 2,
+        "head": "spectroscopic data",
+        "relation": "guides",
+        "tail": "real-time parameter adjustment",
+        "claim": "光谱数据驱动参数动态调整"
+      },
+      {
+        "step": 3,
+        "head": "parameter adjustment",
+        "relation": "ensures",
+        "tail": "consistent optical properties",
+        "claim": "实时调控保证特性一致性"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "spectroscopic signatures",
+        "relation": "trains",
+        "tail": "deep neural networks",
+        "claim": "光谱数据训练机器学习模型"
+      },
+      {
+        "step": 2,
+        "head": "neural network predictions",
+        "relation": "controls",
+        "tail": "nanoparticle morphology",
+        "claim": "模型预测实现形貌控制"
+      },
+      {
+        "step": 3,
+        "head": "morphology control",
+        "relation": "achieves",
+        "tail": "uniform nanoparticle properties",
+        "claim": "形貌控制确保特性均一性"
+      }
+    ]
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "介电梯度超材料设计",
+        "relation": "enables",
+        "tail": "精确控制折射率分布",
+        "claim": "超材料设计使得折射率分布的精确控制成为可能"
+      },
+      {
+        "step": 2,
+        "head": "精确控制折射率分布",
+        "relation": "eliminates",
+        "tail": "色差和衍射极限",
+        "claim": "折射率分布控制消除了传统光学系统的色差和衍射极限"
+      },
+      {
+        "step": 3,
+        "head": "消除色差和衍射极限",
+        "relation": "achieves",
+        "tail": "超分辨成像",
+        "claim": "消除光学限制实现了超分辨成像"
+      },
+      {
+        "step": 4,
+        "head": "超分辨成像",
+        "relation": "provides",
+        "tail": "高精度特征分辨/宽视场角/低成本优势",
+        "claim": "超分辨成像同时实现亚毫米级分辨、宽视场角和低成本制造"
+      },
+      {
+        "step": 5,
+        "head": "高精度特征分辨/宽视场角/低成本优势",
+        "relation": "enables",
+        "tail": "非破坏检测和生物医学成像应用",
+        "claim": "综合优势为检测和成像领域提供新可能性"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "介电梯级超材料设计",
+        "relation": "enables",
+        "tail": "色差校正",
+        "claim": "特定参数设计可有效校正太赫兹波段色差"
+      },
+      {
+        "step": 2,
+        "head": "介电梯级超材料",
+        "relation": "exploits",
+        "tail": "亚波长结构特性",
+        "claim": "材料的亚波长结构特性可突破衍射极限"
+      },
+      {
+        "step": 3,
+        "head": "亚波长结构特性",
+        "relation": "transforms",
+        "tail": "相位分布到折射率分布",
+        "claim": "结构特性实现相位-折射率分布转换"
+      },
+      {
+        "step": 4,
+        "head": "折射率分布一致性",
+        "relation": "maintains",
+        "tail": "宽频带聚焦性能",
+        "claim": "折射率分布一致性保障宽频带聚焦"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "高精度3D打印技术",
+        "relation": "enables",
+        "tail": "复杂几何结构控制",
+        "claim": "3D打印实现超材料几何结构精确控制"
+      },
+      {
+        "step": 2,
+        "head": "3D打印参数优化",
+        "relation": "enhances",
+        "tail": "透镜分辨率",
+        "claim": "参数优化提升透镜分辨率"
+      },
+      {
+        "step": 3,
+        "head": "3D打印参数优化",
+        "relation": "reduces",
+        "tail": "制造成本",
+        "claim": "参数优化降低透镜制造成本"
+      },
+      {
+        "step": 4,
+        "head": "分辨率提升/成本降低",
+        "relation": "promotes",
+        "tail": "实际应用",
+        "claim": "性能提升和成本降低促进实际应用"
+      }
+    ]
+  ],
+  "L3": []
+}

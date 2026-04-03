@@ -1,0 +1,165 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "GPCRs动态呼吸运动",
+        "relation": "synergistically interacts with",
+        "tail": "膜脂环境",
+        "claim": "动态运动与膜脂环境协同作用"
+      },
+      {
+        "step": 2,
+        "head": "协同作用",
+        "relation": "modulates",
+        "tail": "变构药物结合位点可及性与形状",
+        "claim": "协同作用调节变构药物结合位点的可及性和形状"
+      },
+      {
+        "step": 3,
+        "head": "结构生物学技术",
+        "relation": "links",
+        "tail": "基础医学与化学",
+        "claim": "跨学科方法整合结构生物学、基础医学和化学"
+      },
+      {
+        "step": 4,
+        "head": "脂质组成调控",
+        "relation": "controls",
+        "tail": "GPCR构象状态",
+        "claim": "调节脂质组成可控制GPCR构象状态"
+      },
+      {
+        "step": 5,
+        "head": "GPCR构象状态",
+        "relation": "modulates",
+        "tail": "下游信号传导与治疗结果",
+        "claim": "构象状态变化影响下游信号和治疗效果"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "高分辨率结构生物学技术",
+        "relation": "integrates",
+        "tail": "分子动力学模拟",
+        "claim": "整合结构生物学技术与MD模拟"
+      },
+      {
+        "step": 2,
+        "head": "GPCR构象状态",
+        "relation": "correlates with",
+        "tail": "信号传导输出",
+        "claim": "不同构象状态对应特定信号输出"
+      },
+      {
+        "step": 3,
+        "head": "开放变构结合口袋",
+        "relation": "enhances",
+        "tail": "G蛋白信号耦合",
+        "claim": "开放构象增强G蛋白信号耦合"
+      },
+      {
+        "step": 4,
+        "head": "G蛋白信号增强",
+        "relation": "validates",
+        "tail": "功能实验",
+        "claim": "通过功能实验验证信号增强"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "膜脂质动力学",
+        "relation": "modulates",
+        "tail": "GPCR构象柔性",
+        "claim": "脂质动力学调节受体构象柔性"
+      },
+      {
+        "step": 2,
+        "head": "GPCR构象柔性",
+        "relation": "alters",
+        "tail": "侧向配体通道可及性",
+        "claim": "构象柔性变化改变配体通道可及性"
+      },
+      {
+        "step": 3,
+        "head": "MD轨迹",
+        "relation": "shows",
+        "tail": "变构位点开放度变化",
+        "claim": "模拟轨迹显示位点开放度变化"
+      },
+      {
+        "step": 4,
+        "head": "变构位点开放度",
+        "relation": "affects",
+        "tail": "药物靶向策略",
+        "claim": "开放度变化影响药物策略"
+      }
+    ]
+  ],
+  "L3": [
+    [
+      {
+        "step": 1,
+        "head": "射线晶体学与冷冻电镜",
+        "relation": "integrates with",
+        "tail": "分子动力学模拟",
+        "claim": "整合结构解析与模拟技术"
+      },
+      {
+        "step": 2,
+        "head": "GPCR构象动态",
+        "relation": "quantitatively links to",
+        "tail": "变构药物结合位点动态",
+        "claim": "构象动态与位点动态定量关联"
+      },
+      {
+        "step": 3,
+        "head": "MD模拟呼吸幅度",
+        "relation": "matches",
+        "tail": "冷冻电镜密度变化",
+        "claim": "模拟幅度与实验密度变化匹配"
+      },
+      {
+        "step": 4,
+        "head": "分子调节剂",
+        "relation": "influences",
+        "tail": "信号传导效率",
+        "claim": "调节剂通过机制影响信号效率"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "膜脂质组成调控",
+        "relation": "alters",
+        "tail": "侧向配体通道",
+        "claim": "脂质调控改变配体通道结构"
+      },
+      {
+        "step": 2,
+        "head": "侧向配体通道",
+        "relation": "shifts",
+        "tail": "构象状态平衡",
+        "claim": "通道变化驱动构象平衡转移"
+      },
+      {
+        "step": 3,
+        "head": "胆固醇浓度增加",
+        "relation": "favors",
+        "tail": "可及通道受体状态",
+        "claim": "特定脂质稳定开放通道构象"
+      },
+      {
+        "step": 4,
+        "head": "脂质调控实验",
+        "relation": "tests",
+        "tail": "分子动力学与结合实验",
+        "claim": "实验验证脂质对通道的影响"
+      }
+    ]
+  ]
+}

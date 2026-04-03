@@ -1,0 +1,102 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "topology optimization",
+        "relation": "enables",
+        "tail": "anisotropic dispersion",
+        "claim": "AI驱动的拓扑优化生成空间各向异性色散超表面"
+      },
+      {
+        "step": 2,
+        "head": "anisotropic dispersion",
+        "relation": "causes",
+        "tail": "chromatic aberration compensation",
+        "claim": "各向异性色散动态补偿超宽带频率色差"
+      },
+      {
+        "step": 3,
+        "head": "piezoelectric tunability",
+        "relation": "enables",
+        "tail": "adaptive lens",
+        "claim": "压电调谐实现透镜实时参数调整"
+      },
+      {
+        "step": 4,
+        "head": "adaptive lens",
+        "relation": "achieves",
+        "tail": "diffraction-unlimited resolution",
+        "claim": "动态补偿使透镜达到衍射极限分辨率"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "Mie resonance",
+        "relation": "generates",
+        "tail": "multipolar interference",
+        "claim": "米氏共振激发高阶电/磁偶极子干涉"
+      },
+      {
+        "step": 2,
+        "head": "multipolar interference",
+        "relation": "inhibits",
+        "tail": "chromatic aberration",
+        "claim": "多极干涉破坏性抵消色差相位延迟"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "plasmonic nano-inks",
+        "relation": "enhances",
+        "tail": "two-photon polymerization",
+        "claim": "等离子体纳米墨水通过LSPR增强双光子聚合"
+      },
+      {
+        "step": 2,
+        "head": "two-photon polymerization",
+        "relation": "creates",
+        "tail": "multiscale metamaterials",
+        "claim": "非线性聚合形成高纵横比多尺度结构"
+      }
+    ]
+  ],
+  "L3": [
+    [
+      {
+        "step": 1,
+        "head": "neural-network optimization",
+        "relation": "designs",
+        "tail": "RI gradients",
+        "claim": "神经网络优化生成折射率梯度分布"
+      },
+      {
+        "step": 2,
+        "head": "RI gradients",
+        "relation": "transforms",
+        "tail": "evanescent waves",
+        "claim": "梯度折射区将传播波转换为倏逝波分量"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "chirped rotational symmetry",
+        "relation": "generates",
+        "tail": "Pancharatnam–Berry phase",
+        "claim": "手性旋转对称性产生几何相位梯度"
+      },
+      {
+        "step": 2,
+        "head": "Pancharatnam–Berry phase",
+        "relation": "compensates",
+        "tail": "wavefront distortion",
+        "claim": "几何相位预补偿大角度波前畸变"
+      }
+    ]
+  ]
+}

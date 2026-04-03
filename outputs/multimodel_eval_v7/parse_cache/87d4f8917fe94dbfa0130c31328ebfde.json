@@ -1,0 +1,118 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "dielectric gradient metamaterials integration",
+        "relation": "enables",
+        "tail": "achromatic terahertz metalenses",
+        "claim": "集成介电梯度超材料与制造技术使得消色差太赫兹金属透镜成为可能"
+      },
+      {
+        "step": 2,
+        "head": "achromatic terahertz metalenses",
+        "relation": "overcomes",
+        "tail": "chromatic aberration",
+        "claim": "金属透镜通过补偿色散克服色差限制"
+      },
+      {
+        "step": 3,
+        "head": "achromatic terahertz metalenses",
+        "relation": "breaks",
+        "tail": "diffraction limit",
+        "claim": "亚波长结构设计突破衍射极限"
+      },
+      {
+        "step": 4,
+        "head": "super-resolution imaging",
+        "relation": "achieves",
+        "tail": "broad frequency range (0.2-0.9 THz)",
+        "claim": "突破性设计实现0.2-0.9 THz宽频段超分辨成像"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "spatially varying refractive index profile",
+        "relation": "compensates",
+        "tail": "chromatic dispersion",
+        "claim": "梯度折射率分布设计补偿色散效应"
+      },
+      {
+        "step": 2,
+        "head": "subwavelength structures",
+        "relation": "produces",
+        "tail": "negative refraction",
+        "claim": "亚波长结构产生负折射效应打破衍射极限"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "multi-material 3D printing",
+        "relation": "controls",
+        "tail": "dielectric material distribution",
+        "claim": "多材料3D打印实现亚波长尺度介电材料分布控制"
+      },
+      {
+        "step": 2,
+        "head": "printing resolution",
+        "relation": "determines",
+        "tail": "numerical aperture",
+        "claim": "打印精度决定数值孔径和像差校正性能"
+      }
+    ]
+  ],
+  "L3": [
+    [
+      {
+        "step": 1,
+        "head": "transformation optics principles",
+        "relation": "combines",
+        "tail": "polymer composite materials",
+        "claim": "变换光学原理与材料科学结合创建梯度折射率超材料"
+      },
+      {
+        "step": 2,
+        "head": "gradient-index metamaterials",
+        "relation": "tunes",
+        "tail": "dielectric properties",
+        "claim": "跨学科材料实现THz波段介电性能精确调控"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "automated optimization algorithms",
+        "relation": "applies",
+        "tail": "meta-atom geometries",
+        "claim": "自动控制算法实现元原子几何逆向设计"
+      },
+      {
+        "step": 2,
+        "head": "algorithm-optimized design",
+        "relation": "reduces",
+        "tail": "design complexity",
+        "claim": "智能设计显著降低梯度折射率金属透镜设计复杂度"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "metalenses integration",
+        "relation": "combines",
+        "tail": "THz detector arrays",
+        "claim": "电子学集成实现金属透镜与探测器阵列的系统整合"
+      },
+      {
+        "step": 2,
+        "head": "wide bandwidth lenses",
+        "relation": "compensates",
+        "tail": "detector resolution limits",
+        "claim": "宽频带大视场特性补偿现有探测器分辨率不足"
+      }
+    ]
+  ]
+}

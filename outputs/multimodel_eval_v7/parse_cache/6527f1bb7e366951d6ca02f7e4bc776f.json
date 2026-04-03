@@ -1,0 +1,59 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "isothermal compression",
+        "relation": "enables",
+        "tail": "initial structural changes",
+        "claim": "等温压缩诱导分子层面的初始结构变化"
+      },
+      {
+        "step": 2,
+        "head": "initial structural changes",
+        "relation": "transforms",
+        "tail": "dynamic extrusion with exponential perturbation",
+        "claim": "初始结构变化为动态挤压的指数扰动模式提供基础"
+      },
+      {
+        "step": 3,
+        "head": "dynamic extrusion with exponential perturbation",
+        "relation": "causes",
+        "tail": "improved thermal stability",
+        "claim": "动态挤压的非线性参数导致热稳定性提升"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "isothermal compression",
+        "relation": "enables",
+        "tail": "initial structural changes",
+        "claim": "等温压缩诱导分子层面的初始结构变化"
+      },
+      {
+        "step": 2,
+        "head": "initial structural changes",
+        "relation": "transforms",
+        "tail": "dynamic extrusion with exponential perturbation",
+        "claim": "初始结构变化为动态挤压的指数扰动模式提供基础"
+      },
+      {
+        "step": 3,
+        "head": "dynamic extrusion with exponential perturbation",
+        "relation": "transforms",
+        "tail": "optimized active site geometry",
+        "claim": "动态挤压优化活性位点的几何形态和柔性"
+      },
+      {
+        "step": 4,
+        "head": "optimized active site geometry",
+        "relation": "enhances",
+        "tail": "catalytic activity",
+        "claim": "活性位点优化显著增强催化活性"
+      }
+    ]
+  ],
+  "L2": [],
+  "L3": []
+}

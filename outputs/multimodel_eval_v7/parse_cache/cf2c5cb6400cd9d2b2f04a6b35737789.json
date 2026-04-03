@@ -1,0 +1,137 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "environmental data",
+        "relation": "enables",
+        "tail": "AFION",
+        "claim": "实时环境数据采集为AFION系统提供动态调整基础"
+      },
+      {
+        "step": 2,
+        "head": "AFION",
+        "relation": "adjusts",
+        "tail": "reaction conditions",
+        "claim": "AFION系统动态调整反应参数"
+      },
+      {
+        "step": 3,
+        "head": "reaction conditions",
+        "relation": "affects",
+        "tail": "nanoparticle growth",
+        "claim": "反应条件变化影响纳米粒子生长与稳定性"
+      },
+      {
+        "step": 4,
+        "head": "nanoparticle growth",
+        "relation": "determines",
+        "tail": "optical properties",
+        "claim": "纳米粒子生长过程决定其光学特性"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "microfluidic reactor",
+        "relation": "facilitates",
+        "tail": "simultaneous testing",
+        "claim": "多通道微流体系统支持多参数并行测试"
+      },
+      {
+        "step": 2,
+        "head": "simultaneous testing",
+        "relation": "expands",
+        "tail": "multidimensional chemical space",
+        "claim": "并行测试扩展化学空间探索维度"
+      },
+      {
+        "step": 3,
+        "head": "multidimensional chemical space",
+        "relation": "identifies",
+        "tail": "optimal synthesis pathways",
+        "claim": "多维空间分析可定位最佳合成路径"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "reinforcement learning",
+        "relation": "enhances",
+        "tail": "machine learning",
+        "claim": "强化学习提升机器学习实时适应能力"
+      },
+      {
+        "step": 2,
+        "head": "machine learning",
+        "relation": "optimizes",
+        "tail": "nanoparticle synthesis",
+        "claim": "机器学习优化纳米粒子合成参数"
+      },
+      {
+        "step": 3,
+        "head": "nanoparticle synthesis",
+        "relation": "achieves",
+        "tail": "adaptive learning",
+        "claim": "合成过程实现自适应学习闭环"
+      }
+    ]
+  ],
+  "L3": [
+    [
+      {
+        "step": 1,
+        "head": "microfluidic reactor",
+        "relation": "integrates",
+        "tail": "spectroscopic imaging",
+        "claim": "微流体系统集成光谱成像模块"
+      },
+      {
+        "step": 2,
+        "head": "spectroscopic imaging",
+        "relation": "provides",
+        "tail": "real-time visualization",
+        "claim": "光谱成像提供纳米粒子形态实时数据"
+      },
+      {
+        "step": 3,
+        "head": "real-time visualization",
+        "relation": "feeds into",
+        "tail": "closed-loop control",
+        "claim": "实时数据反馈优化闭环控制系统"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "Bayesian optimization",
+        "relation": "explores",
+        "tail": "chemical space",
+        "claim": "贝叶斯优化探索化学空间分布"
+      },
+      {
+        "step": 2,
+        "head": "deep learning",
+        "relation": "predicts",
+        "tail": "multivariate interactions",
+        "claim": "深度学习预测多变量交互效应"
+      },
+      {
+        "step": 3,
+        "head": "Bayesian optimization",
+        "relation": "combines",
+        "tail": "deep learning",
+        "claim": "混合模型提升反应条件预测精度"
+      },
+      {
+        "step": 4,
+        "head": "hybrid model",
+        "relation": "refines",
+        "tail": "plasmonic nanoparticles",
+        "claim": "综合模型优化等离激元纳米粒子合成"
+      }
+    ]
+  ]
+}

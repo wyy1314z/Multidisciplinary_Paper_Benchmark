@@ -1,0 +1,56 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "design of MOF with quasi-metallic properties",
+        "relation": "enables",
+        "tail": "mimicking active sites of natural enzymes",
+        "claim": "准金属MOF的设计能够模拟天然酶的活性位点"
+      },
+      {
+        "step": 2,
+        "head": "mimicking active sites of natural enzymes",
+        "relation": "enhances",
+        "tail": "catalytic activity of MOFs",
+        "claim": "模拟酶活性位点增强了MOF的催化活性"
+      },
+      {
+        "step": 3,
+        "head": "enhanced catalytic activity",
+        "relation": "causes",
+        "tail": "conversion of endogenous tumor microenvironment components into cytotoxic species",
+        "claim": "增强的催化活性导致内源性肿瘤微环境成分转化为细胞毒性物质"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "incorporating transition metals with redox-active centers into the MOF structure",
+        "relation": "enables",
+        "tail": "efficient generation of reactive oxygen species (ROS) from molecular oxygen and hydrogen peroxide",
+        "claim": "将氧化还原活性过渡金属引入MOF结构使其能够从分子氧和过氧化氢中高效生成活性氧"
+      }
+    ]
+  ],
+  "L3": [
+    [
+      {
+        "step": 1,
+        "head": "optimization for stability and biocompatibility",
+        "relation": "enables",
+        "tail": "selective induction of oxidative stress in cancer cells",
+        "claim": "优化稳定性和生物相容性使MOF能够选择性诱导癌细胞的氧化应激"
+      },
+      {
+        "step": 2,
+        "head": "selective induction of oxidative stress",
+        "relation": "leads to",
+        "tail": "apoptosis and tumor regression without significant toxicity",
+        "claim": "选择性氧化应激的诱导导致癌细胞凋亡和肿瘤消退，且无显著毒性"
+      }
+    ]
+  ]
+}

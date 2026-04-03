@@ -1,0 +1,204 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "controlled deligandation strategy",
+        "relation": "transforms",
+        "tail": "porous structure",
+        "claim": "控制去配体策略改变了MOF的多孔结构"
+      },
+      {
+        "step": 2,
+        "head": "porous structure",
+        "relation": "enables",
+        "tail": "peroxidase-mimic activity",
+        "claim": "多孔结构增强了过氧化物酶模拟活性"
+      },
+      {
+        "step": 3,
+        "head": "peroxidase-mimic activity",
+        "relation": "causes",
+        "tail": "reactive oxygen species",
+        "claim": "酶活性导致肿瘤微环境ROS升高"
+      },
+      {
+        "step": 4,
+        "head": "reactive oxygen species",
+        "relation": "triggers",
+        "tail": "ferroptosis",
+        "claim": "ROS积累引发脂质过氧化和铁死亡"
+      },
+      {
+        "step": 5,
+        "head": "ferroptosis",
+        "relation": "induces",
+        "tail": "immunogenic cell death",
+        "claim": "铁死亡触发免疫原性细胞死亡"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "immunogenic cell death",
+        "relation": "releases",
+        "tail": "damage-associated molecular patterns",
+        "claim": "ICD释放损伤相关分子模式"
+      },
+      {
+        "step": 2,
+        "head": "damage-associated molecular patterns",
+        "relation": "promotes",
+        "tail": "dendritic cell maturation",
+        "claim": "DAMPs促进树突状细胞成熟"
+      },
+      {
+        "step": 3,
+        "head": "dendritic cell maturation",
+        "relation": "enables",
+        "tail": "T lymphocyte infiltration",
+        "claim": "成熟树突状细胞启动T细胞浸润"
+      },
+      {
+        "step": 4,
+        "head": "T lymphocyte infiltration",
+        "relation": "establishes",
+        "tail": "anti-tumor immune response",
+        "claim": "T细胞浸润建立抗肿瘤免疫"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "quasi-MOF nanozyme",
+        "relation": "combines_with",
+        "tail": "programmed cell death protein 1 antibody",
+        "claim": "纳米酶与PD-1抗体协同作用"
+      },
+      {
+        "step": 2,
+        "head": "programmed cell death protein 1 antibody",
+        "relation": "amplifies",
+        "tail": "cancer immunotherapy",
+        "claim": "PD-1阻断增强免疫治疗效果"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "controlled deligandation strategy",
+        "relation": "alters",
+        "tail": "electronic structure",
+        "claim": "去配体策略改变金属节点电子结构"
+      },
+      {
+        "step": 2,
+        "head": "electronic structure",
+        "relation": "lowers",
+        "tail": "activation energy",
+        "claim": "结构改变降低底物活化能"
+      },
+      {
+        "step": 3,
+        "head": "activation energy",
+        "relation": "optimizes",
+        "tail": "peroxidase-mimic activity",
+        "claim": "活化能降低优化酶活性"
+      },
+      {
+        "step": 4,
+        "head": "peroxidase-mimic activity",
+        "relation": "enhances",
+        "tail": "reactive oxygen species",
+        "claim": "酶活性增强ROS生成"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "porous structure",
+        "relation": "facilitates",
+        "tail": "reactant diffusion",
+        "claim": "多孔结构促进反应物扩散"
+      },
+      {
+        "step": 2,
+        "head": "reactant diffusion",
+        "relation": "increases",
+        "tail": "glutathione depletion",
+        "claim": "扩散增强谷胱甘肽耗竭"
+      },
+      {
+        "step": 3,
+        "head": "glutathione depletion",
+        "relation": "inhibits",
+        "tail": "glutathione peroxidase 4",
+        "claim": "谷胱甘肽耗竭抑制GPX4活性"
+      },
+      {
+        "step": 4,
+        "head": "glutathione peroxidase 4",
+        "relation": "prevents",
+        "tail": "ferroptosis",
+        "claim": "GPX4失活导致铁死亡"
+      }
+    ]
+  ],
+  "L3": [
+    [
+      {
+        "step": 1,
+        "head": "peroxidase-mimic activity",
+        "relation": "catalyzes",
+        "tail": "Fenton reaction",
+        "claim": "过氧化物酶活性催化Fenton反应"
+      },
+      {
+        "step": 2,
+        "head": "Fenton reaction",
+        "relation": "generates",
+        "tail": "hydroxyl radicals",
+        "claim": "芬顿反应产生羟基自由基"
+      },
+      {
+        "step": 3,
+        "head": "hydroxyl radicals",
+        "relation": "induces",
+        "tail": "ferroptosis",
+        "claim": "自由基引发脂质过氧化"
+      },
+      {
+        "step": 4,
+        "head": "ferroptosis",
+        "relation": "triggers",
+        "tail": "immunogenic cell death",
+        "claim": "铁死亡触发免疫原性死亡"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "porous structure",
+        "relation": "allows",
+        "tail": "antibody conjugation",
+        "claim": "多孔结构允许抗体偶联"
+      },
+      {
+        "step": 2,
+        "head": "antibody conjugation",
+        "relation": "colocalizes",
+        "tail": "immune checkpoint blockade",
+        "claim": "抗体共定位增强检查点阻断"
+      },
+      {
+        "step": 3,
+        "head": "immune checkpoint blockade",
+        "relation": "amplifies",
+        "tail": "anti-tumor response",
+        "claim": "检查点阻断放大抗肿瘤效应"
+      }
+    ]
+  ]
+}

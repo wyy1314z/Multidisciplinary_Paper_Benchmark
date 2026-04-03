@@ -1,0 +1,70 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "Electrochemically-Controlled Surface Ligand Switching",
+        "relation": "enables",
+        "tail": "Dynamic Plasmonic Tuning",
+        "claim": "电化学控制的表面配体切换使得动态等离子体调谐成为可能"
+      },
+      {
+        "step": 2,
+        "head": "Dynamic Plasmonic Tuning",
+        "relation": "achieves",
+        "tail": "Precise Control of Optical Properties",
+        "claim": "动态等离子体调谐实现了光学性质的精确控制"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "Voltage Potentials",
+        "relation": "modulates",
+        "tail": "Surface Charge Density",
+        "claim": "电压势调节表面电荷密度"
+      },
+      {
+        "step": 2,
+        "head": "Surface Charge Density",
+        "relation": "alters",
+        "tail": "Local Dielectric Environment",
+        "claim": "表面电荷密度改变局部介电环境"
+      },
+      {
+        "step": 3,
+        "head": "Local Dielectric Environment",
+        "relation": "shifts",
+        "tail": "LSPR Wavelength",
+        "claim": "局部介电环境变化导致局域表面等离子体共振波长偏移"
+      }
+    ]
+  ],
+  "L3": [
+    [
+      {
+        "step": 1,
+        "head": "Electrochemical Switching",
+        "relation": "affects",
+        "tail": "Organic Ligand Shell",
+        "claim": "电化学切换仅作用于有机配体壳层"
+      },
+      {
+        "step": 2,
+        "head": "Organic Ligand Shell",
+        "relation": "preserves",
+        "tail": "Metallic Core Integrity",
+        "claim": "有机配体壳层变化保持金属核心完整性"
+      },
+      {
+        "step": 3,
+        "head": "Metallic Core Integrity",
+        "relation": "prevents",
+        "tail": "Particle Aggregation",
+        "claim": "金属核心完整性避免粒子聚集"
+      }
+    ]
+  ]
+}

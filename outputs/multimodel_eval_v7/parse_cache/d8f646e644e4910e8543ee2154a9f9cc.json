@@ -1,0 +1,102 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "conformational breathing motions of GPCRs (生物学)",
+        "relation": "causes",
+        "tail": "transient lipid-accessible cavities (化学)",
+        "claim": "构象运动导致产生动态脂质可接触腔"
+      },
+      {
+        "step": 2,
+        "head": "transient lipid-accessible cavities (化学)",
+        "relation": "serves as",
+        "tail": "lateral entry gates for neuroactive drugs (基础医学)",
+        "claim": "腔体作为神经活性药物侧向入口"
+      },
+      {
+        "step": 3,
+        "head": "membrane lipid composition (化学)",
+        "relation": "modulates",
+        "tail": "drug efficacy (基础医学)",
+        "claim": "膜脂质组成通过调控动态门户影响药效"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "Specific conformational states of GPCRs (生物学)",
+        "relation": "exhibits",
+        "tail": "differential binding affinities (化学)",
+        "claim": "受体构象状态展示差异性结合亲和力"
+      },
+      {
+        "step": 2,
+        "head": "differential binding affinities (化学)",
+        "relation": "indicates",
+        "tail": "stepwise conformational selection (生物学)",
+        "claim": "差异性亲和力表明逐步构象选择机制"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "Local membrane lipid dynamics (化学)",
+        "relation": "causes",
+        "tail": "transient allosteric networks (生物学)",
+        "claim": "局部脂质动态引发变构网络"
+      },
+      {
+        "step": 2,
+        "head": "transient allosteric networks (生物学)",
+        "relation": "enables",
+        "tail": "pharmacologically targeted treatment (基础医学)",
+        "claim": "变构网络可被药理学靶向治疗"
+      }
+    ]
+  ],
+  "L3": [
+    [
+      {
+        "step": 1,
+        "head": "crystallographic B-factors (生物学)",
+        "relation": "combines",
+        "tail": "molecular dynamics trajectories (化学)",
+        "claim": "晶体B因子与动力学轨迹整合"
+      },
+      {
+        "step": 2,
+        "head": "combined analysis (化学)",
+        "relation": "reveals",
+        "tail": "conserved hinge points (生物学)",
+        "claim": "揭示变构通讯保守铰链点"
+      },
+      {
+        "step": 3,
+        "head": "conserved hinge points (生物学)",
+        "relation": "correlates with",
+        "tail": "therapeutic drug binding kinetics (基础医学)",
+        "claim": "铰链点与药物结合动力学相关"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "lipid insertion sites mapping (生物学)",
+        "relation": "uses",
+        "tail": "coarse-grained simulations (化学)",
+        "claim": "通过粗粒度模拟定位脂质插入位点"
+      },
+      {
+        "step": 2,
+        "head": "simulation results (化学)",
+        "relation": "predicts",
+        "tail": "optimal drug formulations (基础医学)",
+        "claim": "模拟结果预测协同药物配方"
+      }
+    ]
+  ]
+}

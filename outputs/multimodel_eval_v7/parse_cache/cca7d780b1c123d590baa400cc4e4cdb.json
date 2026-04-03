@@ -1,0 +1,111 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "准金属有机框架材料的设计",
+        "relation": "transforms",
+        "tail": "特定结构",
+        "claim": "准金属有机框架材料的设计通过可控配体去除策略构建特定结构"
+      },
+      {
+        "step": 2,
+        "head": "特定结构",
+        "relation": "enables",
+        "tail": "类酶催化机制",
+        "claim": "材料的结构与电子特性赋予其类酶催化机制"
+      },
+      {
+        "step": 3,
+        "head": "类酶催化机制",
+        "relation": "induces",
+        "tail": "铁死亡和免疫原性细胞死亡",
+        "claim": "催化机制诱导肿瘤细胞的铁死亡和免疫原性细胞死亡"
+      },
+      {
+        "step": 4,
+        "head": "铁死亡和免疫原性细胞死亡",
+        "relation": "achieves",
+        "tail": "肿瘤治疗",
+        "claim": "双重细胞死亡效应最终实现肿瘤治疗"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "可控配体去除策略",
+        "relation": "alters",
+        "tail": "电子结构和表面性质",
+        "claim": "配体去除策略改变材料的电子结构和表面性质"
+      },
+      {
+        "step": 2,
+        "head": "电子结构和表面性质",
+        "relation": "enhances",
+        "tail": "活性中心-底物相互作用",
+        "claim": "电子结构优化增强活性中心与底物的相互作用"
+      },
+      {
+        "step": 3,
+        "head": "活性中心-底物相互作用",
+        "relation": "increases",
+        "tail": "纳米酶催化活性",
+        "claim": "增强的相互作用显著提高纳米酶催化活性"
+      },
+      {
+        "step": 4,
+        "head": "可控配体去除策略",
+        "relation": "modulates",
+        "tail": "配体去除程度/方式",
+        "claim": "催化活性提升与配体去除的程度和方式直接相关"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "多孔结构纳米材料",
+        "relation": "enables",
+        "tail": "铁离子富集",
+        "claim": "多孔结构实现铁离子和其他物质的高效富集"
+      },
+      {
+        "step": 2,
+        "head": "铁离子富集",
+        "relation": "promotes",
+        "tail": "活性氧产生",
+        "claim": "铁离子富集促进活性氧物种的生成"
+      },
+      {
+        "step": 3,
+        "head": "活性氧产生",
+        "relation": "modulates",
+        "tail": "细胞内铁代谢平衡",
+        "claim": "活性氧调控细胞内铁代谢稳态"
+      },
+      {
+        "step": 4,
+        "head": "铁代谢平衡调控",
+        "relation": "triggers",
+        "tail": "铁死亡",
+        "claim": "铁代谢失衡触发铁死亡机制"
+      },
+      {
+        "step": 5,
+        "head": "铁死亡",
+        "relation": "inhibits",
+        "tail": "肿瘤细胞增殖",
+        "claim": "铁死亡效应显著抑制肿瘤细胞生长"
+      },
+      {
+        "step": 6,
+        "head": "多孔结构参数",
+        "relation": "affects",
+        "tail": "铁死亡诱导效率",
+        "claim": "孔径和孔隙率调控铁死亡的诱导效率"
+      }
+    ]
+  ],
+  "L3": []
+}

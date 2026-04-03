@@ -1,0 +1,123 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "hierarchical modular networks",
+        "relation": "transforms",
+        "tail": "energy dissipation patterns",
+        "claim": "网络结构通过等温压缩性扰动产生可量化的能量耗散特征"
+      },
+      {
+        "step": 2,
+        "head": "energy dissipation patterns",
+        "relation": "correlates",
+        "tail": "epistatic interactions",
+        "claim": "耗散模式与适合度景观中的上位性相互作用存在定量关联"
+      },
+      {
+        "step": 3,
+        "head": "epistatic interactions",
+        "relation": "enables",
+        "tail": "co-evolution patterns",
+        "claim": "整合耗散指标与适合度模型可揭示结构灵活性补偿催化位点刚性的共同进化机制"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "dynamic squeezing indices",
+        "relation": "enables",
+        "tail": "compressibility variation analysis",
+        "claim": "动态挤压指数捕捉底物结合过程中的蛋白质压缩性变化"
+      },
+      {
+        "step": 2,
+        "head": "compressibility variation analysis",
+        "relation": "identifies",
+        "tail": "sign epistasis hotspots",
+        "claim": "机器学习检测压缩模式与符号上位性热点的非加性关系"
+      },
+      {
+        "step": 3,
+        "head": "sign epistasis hotspots",
+        "relation": "predicts",
+        "tail": "cooperative binding mutations",
+        "claim": "模型识别远端残基突变诱导聚合物压缩波改变的位点"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "adaptive evolution peaks",
+        "relation": "emerges from",
+        "tail": "structural response mechanisms",
+        "claim": "适应性进化峰源于结构对iCASE扰动的响应机制"
+      },
+      {
+        "step": 2,
+        "head": "structural response mechanisms",
+        "relation": "functions as",
+        "tail": "recursive estimators",
+        "claim": "动态响应模型作为递归估计器优化盐桥/疏水网络"
+      },
+      {
+        "step": 3,
+        "head": "recursive estimators",
+        "relation": "optimizes",
+        "tail": "enzyme fitness",
+        "claim": "模拟退火产生盐桥重连降低构象熵罚的热稳定变体"
+      }
+    ]
+  ],
+  "L3": [
+    [
+      {
+        "step": 1,
+        "head": "dynamic squeezing networks",
+        "relation": "generates",
+        "tail": "compressibility gradients",
+        "claim": "动态挤压网络产生空间异质的压缩性梯度场"
+      },
+      {
+        "step": 2,
+        "head": "compressibility gradients",
+        "relation": "reveals",
+        "tail": "optimal control vectors",
+        "claim": "CNN分析压缩性张量梯度揭示催化机制优化路径"
+      },
+      {
+        "step": 3,
+        "head": "optimal control vectors",
+        "relation": "predicts",
+        "tail": "non-Arrhenius kinetics",
+        "claim": "ML设计的压缩性控制向量导致重组能降低的非阿伦尼乌斯动力学"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "protein surface charges",
+        "relation": "modulates",
+        "tail": "electrostatic potential",
+        "claim": "表面电荷调节结合界面的静电势分布"
+      },
+      {
+        "step": 2,
+        "head": "electrostatic potential",
+        "relation": "updates",
+        "tail": "epistasis prediction models",
+        "claim": "实时ζ电位监测动态重训练上位性预测模型"
+      },
+      {
+        "step": 3,
+        "head": "epistasis prediction models",
+        "relation": "optimizes",
+        "tail": "hydrophobic/hydrophilic balance",
+        "claim": "反馈系统驱动突变优化产生异常稳定性-活性协同的脂酶变体"
+      }
+    ]
+  ]
+}

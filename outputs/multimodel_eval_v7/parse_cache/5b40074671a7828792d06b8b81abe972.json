@@ -1,0 +1,170 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "可控配体去除策略",
+        "relation": "transforms",
+        "tail": "金属有机框架结构",
+        "claim": "化学领域的配体去除策略改变MOF的配体-金属结合状态"
+      },
+      {
+        "step": 2,
+        "head": "金属有机框架结构变化",
+        "relation": "causes",
+        "tail": "Q-MIL-53(Fe)纳米酶形成",
+        "claim": "结构变化导致具有可调孔结构的准金属有机框架材料生成"
+      },
+      {
+        "step": 3,
+        "head": "Q-MIL-53(Fe)多孔结构",
+        "relation": "enables",
+        "tail": "生物相容性与抗肿瘤效果",
+        "claim": "材料科学层面的多孔结构赋予生物相容性并产生抗肿瘤作用"
+      },
+      {
+        "step": 4,
+        "head": "过氧化物酶模拟活性",
+        "relation": "causes",
+        "tail": "铁死亡与免疫原性死亡",
+        "claim": "基础医学角度的酶活性和谷胱甘肽耗竭引发肿瘤细胞死亡机制"
+      },
+      {
+        "step": 5,
+        "head": "铁死亡与免疫原性死亡",
+        "relation": "triggers",
+        "tail": "抗肿瘤免疫反应",
+        "claim": "细胞死亡模式激活适应性抗肿瘤免疫应答"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "可控配体去除策略",
+        "relation": "transforms",
+        "tail": "金属离子暴露程度",
+        "claim": "化学领域的策略改变金属节点暴露状态及电子云分布"
+      },
+      {
+        "step": 2,
+        "head": "金属离子暴露变化",
+        "relation": "affects",
+        "tail": "纳米酶催化活性",
+        "claim": "材料科学中的结构变化调控催化性能"
+      },
+      {
+        "step": 3,
+        "head": "可控配体去除",
+        "relation": "optimizes",
+        "tail": "多孔结构",
+        "claim": "化学操作优化材料孔道结构"
+      },
+      {
+        "step": 4,
+        "head": "多孔结构优化",
+        "relation": "increases",
+        "tail": "底物-活性位点接触面积",
+        "claim": "结构优化增强纳米酶与反应底物的相互作用"
+      },
+      {
+        "step": 5,
+        "head": "接触面积增加",
+        "relation": "enhances",
+        "tail": "过氧化物酶活性",
+        "claim": "表面积提升强化酶模拟功能和谷胱甘肽耗竭能力"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "Q-MIL-53(Fe)多孔结构",
+        "relation": "enables",
+        "tail": "肿瘤微环境富集",
+        "claim": "材料科学的结构特性促进纳米材料在肿瘤部位聚集"
+      },
+      {
+        "step": 2,
+        "head": "肿瘤微环境富集",
+        "relation": "initiates",
+        "tail": "芬顿反应",
+        "claim": "材料富集触发基于铁节点的芬顿化学反应"
+      },
+      {
+        "step": 3,
+        "head": "芬顿反应",
+        "relation": "produces",
+        "tail": "活性氧",
+        "claim": "化学反应生成大量活性氧物种"
+      },
+      {
+        "step": 4,
+        "head": "活性氧积累",
+        "relation": "inhibits",
+        "tail": "GPX4活性",
+        "claim": "氧化应激抑制关键抗氧化酶功能"
+      },
+      {
+        "step": 5,
+        "head": "GPX4抑制",
+        "relation": "causes",
+        "tail": "谷胱甘肽耗竭",
+        "claim": "酶活性丧失导致细胞抗氧化防御崩溃"
+      },
+      {
+        "step": 6,
+        "head": "谷胱甘肽耗竭",
+        "relation": "induces",
+        "tail": "铁死亡",
+        "claim": "氧化还原失衡引发铁依赖性细胞死亡"
+      }
+    ]
+  ],
+  "L3": [
+    [
+      {
+        "step": 1,
+        "head": "准MOF孔结构优化",
+        "relation": "promotes",
+        "tail": "芬顿反应效率",
+        "claim": "化学层面的结构优化增强肿瘤微环境调控能力"
+      },
+      {
+        "step": 2,
+        "head": "芬顿反应增强",
+        "relation": "generates",
+        "tail": "活性氧爆发",
+        "claim": "材料-化学耦合效应产生大量自由基"
+      },
+      {
+        "step": 3,
+        "head": "活性氧积累",
+        "relation": "triggers",
+        "tail": "铁死亡",
+        "claim": "氧化损伤引发程序性细胞死亡"
+      },
+      {
+        "step": 4,
+        "head": "铁死亡",
+        "relation": "releases",
+        "tail": "DAMPs",
+        "claim": "细胞死亡释放免疫激活信号分子"
+      },
+      {
+        "step": 5,
+        "head": "DAMPs释放",
+        "relation": "activates",
+        "tail": "树突状细胞成熟",
+        "claim": "免疫原性信号启动抗肿瘤免疫级联"
+      },
+      {
+        "step": 6,
+        "head": "PD-1抗体",
+        "relation": "synergizes",
+        "tail": "免疫反应",
+        "claim": "材料科学的免疫检查点阻断增强T细胞应答"
+      }
+    ]
+  ]
+}

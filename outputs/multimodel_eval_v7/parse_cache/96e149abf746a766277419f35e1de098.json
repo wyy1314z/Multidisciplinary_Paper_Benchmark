@@ -1,0 +1,130 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "microfluidic reactors (材料科学)",
+        "relation": "enables",
+        "tail": "closed-loop synthesis platform (化学)",
+        "claim": "微流控反应器为闭环合成平台提供基础"
+      },
+      {
+        "step": 2,
+        "head": "closed-loop synthesis platform (化学)",
+        "relation": "transforms",
+        "tail": "reagent addition and light intensity (化学)",
+        "claim": "闭环平台实现试剂添加和光强的动态调整"
+      },
+      {
+        "step": 3,
+        "head": "reagent addition and light intensity (化学)",
+        "relation": "causes",
+        "tail": "nanoparticle dimensions/morphologies/compositions (材料科学)",
+        "claim": "参数调整导致纳米粒子特性变化"
+      },
+      {
+        "step": 4,
+        "head": "nanoparticle dimensions/morphologies/compositions (材料科学)",
+        "relation": "correlates",
+        "tail": "plasmonic responses (化学)",
+        "claim": "纳米粒子特性与等离子体响应存在直接关联"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "microfluidic reactors (材料科学)",
+        "relation": "accelerates",
+        "tail": "multidimensional chemical spaces exploration (化学)",
+        "claim": "微流控技术加速多维化学空间探索"
+      },
+      {
+        "step": 2,
+        "head": "high-throughput in-line spectral characterization",
+        "relation": "reveals",
+        "tail": "flow microenvironment-nanoparticle correlations",
+        "claim": "高通量表征揭示流动环境与粒子特性关联"
+      },
+      {
+        "step": 3,
+        "head": "flow microenvironment-nanoparticle correlations",
+        "relation": "reduces",
+        "tail": "synthesis time (化学)",
+        "claim": "参数关联性显著缩短合成时间"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "machine learning models (计算机科学技术)",
+        "relation": "enables",
+        "tail": "closed-loop synthesis platform (化学)",
+        "claim": "机器学习赋能闭环平台参数控制"
+      },
+      {
+        "step": 2,
+        "head": "real-time optical spectra (材料科学)",
+        "relation": "informs",
+        "tail": "machine learning algorithms (计算机科学技术)",
+        "claim": "实时光谱数据驱动算法优化"
+      },
+      {
+        "step": 3,
+        "head": "machine learning algorithms (计算机科学技术)",
+        "relation": "optimizes",
+        "tail": "reagent concentrations/photochemical conditions (化学)",
+        "claim": "算法优化实现目标等离子体特性"
+      }
+    ]
+  ],
+  "L3": [
+    [
+      {
+        "step": 1,
+        "head": "microfluidic reactor (材料科学)",
+        "relation": "integrates",
+        "tail": "Bayesian optimization (计算机科学技术)",
+        "claim": "微流控系统集成贝叶斯优化算法"
+      },
+      {
+        "step": 2,
+        "head": "closed-loop system",
+        "relation": "adjusts",
+        "tail": "reaction conditions (化学)",
+        "claim": "闭环系统实现实时反应条件调整"
+      },
+      {
+        "step": 3,
+        "head": "reaction conditions (化学)",
+        "relation": "correlates",
+        "tail": "predetermined benchmarks (材料科学)",
+        "claim": "参数调整与预设基准直接对应"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "online spectral characterization (材料科学)",
+        "relation": "combines",
+        "tail": "deep neural network analysis (计算机科学技术)",
+        "claim": "光谱表征与深度学习结合"
+      },
+      {
+        "step": 2,
+        "head": "spectral shifts (化学)",
+        "relation": "triggers",
+        "tail": "synthesis parameter modifications",
+        "claim": "光谱变化触发合成参数动态调整"
+      },
+      {
+        "step": 3,
+        "head": "real-time optical data",
+        "relation": "establishes",
+        "tail": "nanoparticle quality causality",
+        "claim": "建立实时数据与粒子质量的因果关系"
+      }
+    ]
+  ]
+}

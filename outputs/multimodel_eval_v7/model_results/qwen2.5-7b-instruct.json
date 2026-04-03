@@ -1,0 +1,242 @@
+[
+  {
+    "paper_id": "a6f866ca73d0",
+    "title": "Self-driving lab for the photochemical synthesis of plasmonic nanoparticles with targeted structural and optical properties",
+    "model": "qwen2.5-7b-instruct",
+    "method_name": "P1",
+    "free_text_hypotheses": [
+      "假设通过精确控制等离激元纳米粒子的形状、大小和排列方式，可以实现对其光学性质的精准调控。具体而言，利用自组装技术在二维平面上构建不同几何形状（如三角形、矩形和环形）的金纳米粒子阵列，并通过改变纳米粒子之间的距离和排列密度，可以调节其表面等离子体共振（SPR）峰的位置和强度，进而实现对特定波长光的吸收、散射和透射的精准控制。该研究将探索不同纳米粒子形状和排列方式对SPR峰的影响机制，以及如何通过调整这些参数来实现对纳米粒子光学性质的定制化设计。此假设可以通过实验验证，例如使用扫描电子显微镜（SEM）和透射电子显微镜（TEM）观察纳米粒子的形状和排列，使用紫外-可见吸收光谱和拉曼光谱测量其光学响应，从而测试不同纳米粒子结构对光学性质的具体影响。"
+    ],
+    "structured_paths": {},
+    "elapsed_seconds": 34.51,
+    "error": null
+  },
+  {
+    "paper_id": "a6f866ca73d0",
+    "title": "Self-driving lab for the photochemical synthesis of plasmonic nanoparticles with targeted structural and optical properties",
+    "model": "qwen2.5-7b-instruct",
+    "method_name": "P2",
+    "free_text_hypotheses": [
+      "L1 Hypothesis: The Autonomous Fluidic Identification and Optimization Nanochemistry (AFION) lab can significantly accelerate the discovery of optimal reaction conditions for the synthesis of plasmonic nanoparticles with specific optical properties, thereby enabling the precise and rapid tuning of these properties to meet various application demands.\n\nL2 Hypotheses:\n- Q1: The integration of a microfluidic reactor in the AFION lab allows for the rapid and continuous exploration of a vast multidimensional chemical space, as the system can simultaneously vary multiple parameters such as temperature, pH, and reactant concentrations, leading to a more efficient identification of reaction conditions that produce nanoparticles with desired optical properties.\n  \n- Q2: Machine learning algorithms employed in the AFION lab can effectively optimize the synthesis parameters of plasmonic nanoparticles by analyzing real-time spectroscopic data and predicting the outcomes of different reaction conditions, thus reducing the need for extensive manual trials and improving the precision and reliability of the synthesis process."
+    ],
+    "structured_paths": {},
+    "elapsed_seconds": 6.11,
+    "error": null
+  },
+  {
+    "paper_id": "a6f866ca73d0",
+    "title": "Self-driving lab for the photochemical synthesis of plasmonic nanoparticles with targeted structural and optical properties",
+    "model": "qwen2.5-7b-instruct",
+    "method_name": "P3",
+    "free_text_hypotheses": [
+      "L1 Hypothesis: 自主流体识别与优化纳米化学（AFION）平台通过集成微流体反应器、在线光谱纳米粒子表征以及机器学习，能够高效地在多维化学空间中探索并优化反应条件以合成具有特定光学性质的等离激元纳米粒子。该平台利用高通量自驱动实验室的优势，结合贝叶斯优化和遗传算法，实现了无监督的纳米粒子合成过程。\n\nL2 Hypotheses:\n- Q1: 微流体反应器通过精确控制反应介质的流动性和反应物浓度，能够在短时间内生成大量不同反应条件下的纳米粒子样品，从而加速多维化学空间的探索。\n- Q2: 机器学习算法通过分析光谱纳米粒子性质的数据，可以快速识别出最优的反应条件组合，并指导后续的纳米粒子合成实验，从而优化合成参数。\n\nL3 Hypotheses:\n- Q1: AFION平台中的贝叶斯优化算法能够根据每次合成实验的结果动态调整反应条件，通过迭代过程逐步逼近最佳反应条件，实现闭环调控。\n- Q2: 在线光谱表征结合深度神经网络可以实时监测纳米粒子的生长过程，并通过深度学习模型预测纳米粒子的最终形貌和尺寸，从而指导实时调整反应条件以优化纳米粒子的尺寸形貌。"
+    ],
+    "structured_paths": {},
+    "elapsed_seconds": 7.05,
+    "error": null
+  },
+  {
+    "paper_id": "a6f866ca73d0",
+    "title": "Self-driving lab for the photochemical synthesis of plasmonic nanoparticles with targeted structural and optical properties",
+    "model": "qwen2.5-7b-instruct",
+    "method_name": "P4",
+    "free_text_hypotheses": [
+      "L1 Hypothesis:\n  hypothesis: 利用AFION平台，通过集成微流体反应器和在线光谱表征技术，可以实现对等离激元纳米粒子合成过程中反应条件的动态调整，从而精确控制其光学性质。\n  reasoning: 首先，AFION平台能够实时监测纳米粒子的光学性质（如银三角纳米棱镜的等离激元共振峰波长）。其次，微流体反应器能够快速、连续地进行多种反应条件下的纳米粒子合成。通过机器学习算法分析这些数据，可以找到最优的反应条件组合，以满足特定的光学性能需求。最后，这种动态调整机制能够在合成过程中不断优化反应条件，确保最终产物符合预期的光学性质。\n  key_concepts: 自主流体识别与优化纳米化学, 微流体反应器, 在线光谱纳米粒子表征, 机器学习, 等离激元共振峰波长\n  disciplines_bridged: 化学, 材料科学, 计算机科学技术\n\nL2 Hypotheses:\n- Q1:\n    hypothesis: AFION平台结合微流体反应器和在线光谱表征技术，能够通过实时反馈调节反应条件，实现对等离激元纳米粒子尺寸和形貌的精确控制。\n    reasoning: AFION平台能够实时获取纳米粒子的尺寸和形貌信息（通过在线光谱表征），并利用微流体反应器进行快速调整。通过机器学习算法，可以将这些反馈信息转化为对反应条件的优化建议，从而实现对纳米粒子尺寸和形貌的精确控制。\n    key_concepts: 微流体反应器, 在线光谱纳米粒子表征, 机器学习, 纳米粒子尺寸, 形貌\n    disciplines_bridged: 化学, 材料科学, 计算机科学技术\n\n- Q2:\n    hypothesis: 利用遗传算法和协方差矩阵适应进化策略，AFION平台能够更高效地优化反应条件，以实现按需合成具有特定光学性质的等离激元纳米粒子。\n    reasoning: 遗传算法和协方差矩阵适应进化策略是两种强大的优化方法，它们能够处理复杂的多维化学空间。AFION平台通过集成这两种算法，可以更高效地搜索反应条件空间，找到最优的合成参数组合，从而实现按需合成具有特定光学性质的等离激元纳米粒子。\n    key_concepts: 遗传算法, 协方差矩阵适应进化策略, 闭环纳米粒子合成, 多维化学空间, 按需合成\n    disciplines_bridged: 化学, 材料科学, 计算机科学技术\n\nL3 Hypotheses:\n- Q1:\n    hypothesis: AFION平台通过实时反馈调节反应条件，结合深度神经网络和损失函数优化，能够实现对等离激元纳米粒子合成过程中的化学和生物传感应用的精确控制。\n    reasoning: AFION平台能够实时获取纳米粒子的光学性质，并利用深度神经网络进行预测和优化。同时，通过损失函数优化，可以进一步提高纳米粒子在化学和生物传感应用中的性能。这种机制能够在合成过程中不断调整反应条件，以确保最终产物符合特定的应用需求。\n    key_concepts: 自主流体识别与优化纳米化学, 在线光谱纳米粒子表征, 深度神经网络, 损失函数, 化学和生物传感\n    disciplines_bridged: 化学, 材料科学, 计算机科学技术\n\n- Q2:\n    hypothesis: AFION平台通过引入光伏效应，能够利用光化学合成过程中产生的能量，进一步优化反应条件，提高纳米粒子的合成效率和光学性能。\n    reasoning: AFION平台能够实时监测光化学合成过程中的光谱特性，并利用光伏效应将光能转化为电能。这种机制可以在合成过程中为反应提供额外的能量，从而优化反应条件，提高合成效率和纳米粒子的光学性能。\n    key_concepts: 光化学合成, 光伏, 自主流体识别与优化纳米化学, 在线光谱纳米粒子表征\n    disciplines_bridged: 化学, 材料科学, 计算机科学技术"
+    ],
+    "structured_paths": {},
+    "elapsed_seconds": 22.79,
+    "error": null
+  },
+  {
+    "paper_id": "0aafd9a38c81",
+    "title": "Large scale investigation of GPCR molecular dynamics data uncovers allosteric sites and lateral gateways",
+    "model": "qwen2.5-7b-instruct",
+    "method_name": "P1",
+    "free_text_hypotheses": [
+      "基于现有的知识，我们提出以下假设：蛋白偶联受体（G蛋白偶联受体，GPCR）的构象动态不仅通过其活性位点的可变性来调控其功能机制，而且通过特定的构象变化模式与配体结合时的微环境变化来影响药物识别和激活。具体而言，当GPCR处于不同构象状态时，其跨膜结构域周围的脂质环境会发生相应的变化，这些变化会影响配体的亲和力和选择性，进而影响下游信号传导途径的激活或抑制。因此，我们推测，通过精确调控GPCR构象动态及其与脂质环境的相互作用，可以开发出具有更高特异性和效力的新一代药物靶点，从而实现更精准的治疗效果。这一假设可以通过使用单分子荧光共振能量转移（FRET）、冷冻电镜、以及分子动力学模拟等技术手段进行验证，以观察GPCR在不同构象状态下与脂质环境的相互作用，并研究这些相互作用如何影响药物识别和信号传导。"
+    ],
+    "structured_paths": {},
+    "elapsed_seconds": 5.46,
+    "error": null
+  },
+  {
+    "paper_id": "0aafd9a38c81",
+    "title": "Large scale investigation of GPCR molecular dynamics data uncovers allosteric sites and lateral gateways",
+    "model": "qwen2.5-7b-instruct",
+    "method_name": "P2",
+    "free_text_hypotheses": [
+      "L1 Hypothesis: 蛋白偶联受体（GPCRs）的构象动态不仅影响其正常的生理功能，还可能通过改变药物结合位点的形状和可接近性来调控药物识别和信号传导过程，从而为开发新型药物提供新的靶点。\n\nL2 Hypotheses:\n- Q1: 结构生物学技术的进步能够揭示GPCRs在不同信号传导状态下的构象变化，这些变化对于理解GPCRs的功能机制至关重要。具体而言，GPCRs的不同构象状态可能对应着不同的信号传导途径，而这些途径可以通过X射线晶体学和低温电子显微镜等技术进行详细解析。\n- Q2: 膜脂质环境的动态变化可以显著影响GPCRs的构象稳定性及其药物结合位点的开放程度。通过分子动力学模拟，我们可以预测和验证特定类型的膜脂质如何诱导GPCRs进入更开放或更封闭的状态，进而影响药物的结合和信号传导效率。这种动态相互作用可能揭示出新的药物靶点，特别是那些在常规结构研究中未被充分探索的隐藏的allosteric位点和侧向入口通道。"
+    ],
+    "structured_paths": {},
+    "elapsed_seconds": 6.97,
+    "error": null
+  },
+  {
+    "paper_id": "0aafd9a38c81",
+    "title": "Large scale investigation of GPCR molecular dynamics data uncovers allosteric sites and lateral gateways",
+    "model": "qwen2.5-7b-instruct",
+    "method_name": "P3",
+    "free_text_hypotheses": [
+      "### L1 Hypothesis\nThe conformational dynamics of G protein-coupled receptors (GPCRs) observed through molecular dynamics simulations and analyzed using cryogenic electron microscopy (cryo-EM) and X-ray crystallography provide a rich dataset that can be used to uncover the impact of membrane lipid dynamics on the functional diversity of GPCRs. This understanding can lead to the identification of novel allosteric sites and lateral ligand entrance gateways, which can be exploited for developing more effective and selective drugs targeting these receptors.\n\n### L2 Hypotheses\n- **Q1:** By integrating data from cryo-EM and X-ray crystallography with molecular dynamics simulations, it is possible to create a comprehensive model that elucidates how the conformational states of GPCRs influence the binding affinity and specificity of both conventional and allosteric drugs. This model could help predict the efficacy of drugs based on their interaction with the dynamic conformational landscape of GPCRs.\n  \n- **Q2:** The flexibility of GPCRs, as revealed by molecular dynamics simulations, plays a crucial role in the formation and regulation of side-specific binding sites, which can be modulated by membrane lipids. Understanding this relationship can provide insights into how membrane lipid composition affects drug targeting strategies, particularly for those aiming to target allosteric sites.\n\n### L3 Hypotheses\n- **Q1:** A synergistic approach combining cryo-EM, X-ray crystallography, and molecular dynamics simulations can validate the existence of hidden allosteric sites in GPCRs that are not accessible in static structural models but become exposed due to conformational changes induced by membrane lipids. This validation would require experimental verification using techniques like site-directed mutagenesis and biochemical assays to confirm the presence and function of these sites.\n\n- **Q2:** Membrane lipid dynamics, specifically the presence of cholesterol and other sterols, can act as a molecular regulator that modulates the shape and accessibility of allosteric binding sites in GPCRs. By studying the interactions between GPCRs and various membrane lipids, it may be possible to design drugs that exploit these lipid-mediated changes to enhance their binding affinity and selectivity. This hypothesis can be tested by performing in vitro experiments where the membrane lipid environment is manipulated and the effect on drug binding is measured."
+    ],
+    "structured_paths": {},
+    "elapsed_seconds": 11.51,
+    "error": null
+  },
+  {
+    "paper_id": "0aafd9a38c81",
+    "title": "Large scale investigation of GPCR molecular dynamics data uncovers allosteric sites and lateral gateways",
+    "model": "qwen2.5-7b-instruct",
+    "method_name": "P4",
+    "free_text_hypotheses": [
+      "L1 Hypothesis:\n  hypothesis: 蛋白偶联受体的构象柔性不仅影响其变构药物结合位点的形状，还可能通过改变侧向配体进入通道的开放程度来调控信号传导过程。\n  reasoning: 首先，构象柔性是G蛋白偶联受体动态行为的一个重要特征。其次，膜脂质动力学研究表明，膜脂质的插入可以作为变构通讯网络的标志。因此，我们推测构象柔性可能通过影响侧向配体进入通道的开放程度，进而调控变构药物的结合和信号传导。这一机制可以通过分子动力学模拟来验证。\n  key_concepts: 构象柔性, 变构药物结合位点, 侧向配体进入通道, 膜脂质插入, 变构通讯网络\n  disciplines_bridged: 生物学, 化学, 基础医学\n\nL2 Hypotheses:\n- Q1:\n    hypothesis: 利用冷冻电镜技术和分子动力学模拟，可以揭示不同受体亚型在变构药物存在下的构象柔性差异及其对药物结合位点的影响。\n    reasoning: 冷冻电镜技术能够提供高分辨率的G蛋白偶联受体结构信息，而分子动力学模拟则能深入理解其构象动态。通过比较不同受体亚型在变构药物作用下的构象柔性，我们可以预测这些差异如何影响药物结合位点的形状和可接近性。\n    key_concepts: 冷冻电镜技术, 分子动力学模拟, 受体亚型, 变构药物, 构象柔性, 药物结合位点\n    disciplines_bridged: 生物学, 化学, 基础医学\n\n- Q2:\n    hypothesis: 膜脂质的动态变化可能通过脂质插入的方式影响G蛋白偶联受体的变构通讯网络，从而间接调控药物结合位点的开放程度。\n    reasoning: 膜脂质的动态变化会影响G蛋白偶联受体周围的微环境，进而可能通过脂质插入的方式改变变构通讯网络的结构。这种变化可能会导致药物结合位点的开放或关闭，从而影响药物的结合效率和信号传导路径。\n    key_concepts: 膜脂质动力学, 脂质插入, 变构通讯网络, 药物结合位点\n    disciplines_bridged: 生物学, 化学, 基础医学\n\nL3 Hypotheses:\n- Q1:\n    hypothesis: 不同类型的变构药物可能通过诱导不同的构象柔性模式来调控G蛋白偶联受体的功能，这为开发针对特定受体亚型的药物提供了新的策略。\n    reasoning: 已知变构药物可以通过改变G蛋白偶联受体的构象状态来影响其功能。通过分子动力学模拟，我们可以探索不同类型变构药物如何诱导不同的构象柔性模式，并进一步研究这些模式如何影响特定受体亚型的功能。这将有助于开发更有效的药物靶向策略。\n    key_concepts: 变构药物, 构象柔性, G蛋白偶联受体, 受体亚型, 药物靶向策略\n    disciplines_bridged: 生物学, 化学, 基础医学\n\n- Q2:\n    hypothesis: 膜脂质的组成和比例可能通过改变G蛋白偶联受体的侧向配体进入通道的开放程度，从而影响药物结合位点的可接近性和药物的效力。\n    reasoning: 膜脂质的组成和比例会影响G蛋白偶联受体周围的微环境。通过改变侧向配体进入通道的开放程度，膜脂质的动态变化可能影响药物结合位点的可接近性和药物的效力。这一假设可以通过实验验证不同膜脂质条件下药物结合位点的变化。\n    key_concepts: 膜脂质组成, 膜脂质比例, 侧向配体进入通道, 药物结合位点, 药物效力\n    disciplines_bridged: 生物学, 化学, 基础医学"
+    ],
+    "structured_paths": {},
+    "elapsed_seconds": 21.41,
+    "error": null
+  },
+  {
+    "paper_id": "c7202044749e",
+    "title": "3D-printed aberration-free terahertz metalens for ultra-broadband achromatic super-resolution wide-angle imaging with high numerical aperture",
+    "model": "qwen2.5-7b-instruct",
+    "method_name": "P1",
+    "free_text_hypotheses": [
+      "假设通过设计一种基于超材料的太赫兹波段纳米结构透镜，可以实现太赫兹超分辨成像。该透镜利用超材料的负折射特性以及亚波长结构，能够有效克服传统光学系统的色散和衍射极限，从而在太赫兹波段实现分辨率提升至λ/100以下的目标。具体而言，该透镜将由一系列具有特定几何形状和周期性的超材料单元组成，这些单元能够在太赫兹波段产生相位调制，使得入射的太赫兹波能够聚焦到比其波长更小的点上，进而实现超分辨成像。实验验证可以通过模拟计算和实验测试来完成，首先使用有限元方法（FEM）模拟不同设计参数下的透镜性能，然后通过实验制造并测试该透镜在太赫兹波段的成像效果，比较其分辨率与传统透镜的差异。"
+    ],
+    "structured_paths": {},
+    "elapsed_seconds": 5.36,
+    "error": null
+  },
+  {
+    "paper_id": "c7202044749e",
+    "title": "3D-printed aberration-free terahertz metalens for ultra-broadband achromatic super-resolution wide-angle imaging with high numerical aperture",
+    "model": "qwen2.5-7b-instruct",
+    "method_name": "P2",
+    "free_text_hypotheses": [
+      "L1 Hypothesis: By utilizing dielectric gradient metamaterials to translate the necessary phase distributions into specific refractive index profiles, it is possible to design THz metalenses that overcome chromatic and spherical aberrations, and achieve super-resolution imaging beyond the diffraction limit, thereby enabling high-precision THz imaging applications.\n\nL2 Hypotheses:\n- Q1: Dielectric gradient metamaterials with tailored refractive index profiles can effectively compensate for chromatic aberrations across a wide THz frequency range, leading to achromatic super-resolution THz lenses that maintain consistent performance regardless of the incident THz wavelength.\n\n- Q2: The use of 3D printing technology allows for the precise fabrication of complex dielectric gradient metamaterial structures, enabling the realization of THz metalenses with high resolution and numerical aperture, and facilitating the mass production of these lenses at a lower cost compared to traditional methods."
+    ],
+    "structured_paths": {},
+    "elapsed_seconds": 5.21,
+    "error": null
+  },
+  {
+    "paper_id": "c7202044749e",
+    "title": "3D-printed aberration-free terahertz metalens for ultra-broadband achromatic super-resolution wide-angle imaging with high numerical aperture",
+    "model": "qwen2.5-7b-instruct",
+    "method_name": "P3",
+    "free_text_hypotheses": [
+      "### L1 Hypothesis\n通过结合介电梯度超材料的设计和三维打印技术的应用，可以实现太赫兹超分辨成像系统的突破性进展。介电梯度超材料能够通过精确调控折射率分布来实现消色差特性，而三维打印技术则能够确保高纵横比纳米柱结构的精确制造，从而有效克服传统光学系统的色差和衍射极限问题。\n\n### L2 Hypotheses\n- **Q1**: 介电梯度超材料中的高纵横比纳米柱结构能够通过其独特的几何形状和折射率梯度分布，有效地抵消不同频率太赫兹波的色散效应，从而实现消色差超分辨成像。\n- **Q2**: 三维打印技术能够精确控制超构透镜的厚度和折射率分布，确保在不同工作频率范围内保持一致的相位延迟，进而实现高精度的超分辨成像。\n\n### L3 Hypotheses\n- **Q1**: 在介电梯度超材料中，通过采用同心纳米环结构和高纵横比纳米柱结构相结合的方式，可以进一步优化相位分布，提高系统的消色差性能，并且通过调整这些结构的尺寸和排列方式，可以将数值孔径提升至0.555。\n- **Q2**: 利用三维打印技术制造的超构透镜，可以通过精确调整高纵横比纳米柱结构的高度和宽度，以及面板上的亚波长纳米散射体的排列，来扩展视场角至90°，同时保持高分辨率和高精度的成像能力。\n- **Q3**: 通过介电梯度超材料中的特定折射率分布和三维打印技术制造的高纵横比纳米柱结构，可以实现对太赫兹波的高效操控，从而在宽频范围内达到阿贝衍射极限的突破。\n- **Q4**: 采用介电梯度超材料和三维打印技术，可以设计出具有超构透镜双合透镜特性的新型太赫兹金属镜头，该特性有助于进一步减少离轴像差，提高成像质量。"
+    ],
+    "structured_paths": {},
+    "elapsed_seconds": 11.44,
+    "error": null
+  },
+  {
+    "paper_id": "c7202044749e",
+    "title": "3D-printed aberration-free terahertz metalens for ultra-broadband achromatic super-resolution wide-angle imaging with high numerical aperture",
+    "model": "qwen2.5-7b-instruct",
+    "method_name": "P4",
+    "free_text_hypotheses": [
+      "L1 Hypothesis:\n  hypothesis: 利用介电梯度超材料和高纵横比纳米柱结构结合的新型设计，可以进一步突破太赫兹系统的阿贝衍射极限，实现更宽的视场角。\n  reasoning: 基于已知的高纵横比纳米柱结构能够提升数值孔径至0.555，并且介电梯度超材料能够实现消色差超分辨成像。如果将这两种材料和技术结合，理论上可以同时优化相位分布和折射率分布，从而在保持高分辨率的同时扩大视场角。这种新型设计有望通过减少离轴像差的影响来实现更宽的视场角。\n  key_concepts: 介电梯度超材料, 高纵横比纳米柱结构, 数值孔径, 视场角, 离轴像差\n  disciplines_bridged: 材料科学, 物理学\n\nL2 Hypotheses:\n- Q1:\n    hypothesis: 通过调整介电梯度超材料中的纳米柱排列方式，可以在不同频率下实现更均匀的相位分布，从而进一步降低色差。\n    reasoning: 在已有的介电梯度超材料中，通过改变纳米柱的排列方式，可以更好地控制材料的折射率分布，进而实现更均匀的相位分布。均匀的相位分布有助于减少不同频率下的色差，提高成像质量。通过实验验证不同排列方式对相位分布的影响，可以进一步优化材料设计。\n    key_concepts: 纳米柱排列方式, 折射率分布, 相位分布, 色差\n    disciplines_bridged: 材料科学, 物理学\n\n- Q2:\n    hypothesis: 利用三维打印技术制造的介电梯度超材料，可以通过精确控制纳米柱的高度和宽度，实现对特定区域的聚焦增强。\n    reasoning: 三维打印技术能够实现对材料结构的高度和宽度进行精确控制，这对于设计具有特定功能的超材料至关重要。通过调整纳米柱的高度和宽度，可以优化折射率分布，进而改善特定区域的聚焦效果。通过对比不同高度和宽度的纳米柱对聚焦效果的影响，可以验证这一假设。\n    key_concepts: 三维打印, 纳米柱高度和宽度, 折射率分布, 聚焦增强\n    disciplines_bridged: 电子、通信与自动控制技术, 材料科学\n\nL3 Hypotheses:\n- Q1:\n    hypothesis: 采用同心纳米环结构的介电梯度超材料，可以进一步优化相位分布，从而在更宽的视场角范围内实现超分辨成像。\n    reasoning: 同心纳米环结构具有独特的相位调控能力，能够在不同半径处产生不同的相位延迟。通过引入这种结构，可以进一步优化相位分布，减少离轴像差的影响，从而实现更宽的视场角范围内的超分辨成像。通过模拟计算不同同心纳米环结构对相位分布的影响，可以验证这一假设。\n    key_concepts: 同心纳米环结构, 相位分布, 离轴像差, 超分辨成像\n    disciplines_bridged: 材料科学, 物理学\n\n- Q2:\n    hypothesis: 高纵横比纳米柱结构与超表面技术相结合，可以实现太赫兹超分辨成像中对复杂背景的抑制，提高图像质量。\n    reasoning: 高纵横比纳米柱结构能够有效提升数值孔径，而超表面技术则可以通过设计特定的超表面结构来抑制背景噪声。通过将这两种技术结合起来，可以在保持高分辨率的同时，进一步提高成像质量。通过实验测试不同超表面结构对背景噪声抑制的效果，可以验证这一假设。\n    key_concepts: 高纵横比纳米柱结构, 超表面技术, 背景噪声抑制, 图像质量\n    disciplines_bridged: 材料科学, 物理学"
+    ],
+    "structured_paths": {},
+    "elapsed_seconds": 19.56,
+    "error": null
+  },
+  {
+    "paper_id": "c5641167db43",
+    "title": "Tailoring industrial enzymes for thermostability and activity evolution by the machine learning-based iCASE strategy",
+    "model": "qwen2.5-7b-instruct",
+    "method_name": "P1",
+    "free_text_hypotheses": [
+      "假设通过结合等温压缩和动态挤压指数扰动工程策略，可以显著提升工业酶的热稳定性和催化活性。具体而言，本研究将探索在温和条件下对目标工业酶进行等温压缩处理，随后在不同温度梯度下实施动态挤压指数扰动，以诱导酶分子结构的有序重排和优化，从而增强其热稳定性和催化效率。实验设计中，我们将选择几种具有代表性的工业酶作为模型对象，首先通过等温压缩处理改变其三维结构，然后在一系列预设的温度变化条件下施加动态挤压指数扰动，观察并记录酶的热稳定性（如熔点、变性时间）和催化活性（如底物转化率、产物生成速率）的变化情况。预期结果是，经过这种联合处理的酶，在高温条件下的稳定性将得到显著提高，并且在特定反应条件下的催化活性也将有所增强。此假设可以通过对比未经处理的酶和经过等温压缩及动态挤压指数扰动处理后的酶的热稳定性和催化活性来验证。"
+    ],
+    "structured_paths": {},
+    "elapsed_seconds": 6.32,
+    "error": null
+  },
+  {
+    "paper_id": "c5641167db43",
+    "title": "Tailoring industrial enzymes for thermostability and activity evolution by the machine learning-based iCASE strategy",
+    "model": "qwen2.5-7b-instruct",
+    "method_name": "P2",
+    "free_text_hypotheses": [
+      "L1 Hypothesis: 等温压缩辅助动态挤压指数扰动工程（iCASE）策略能够通过优化酶的结构模块网络，显著提高工业酶的热稳定性和催化活性，从而克服传统酶进化中的稳定性-活性权衡问题。\n\nL2 Hypotheses:\n- Q1: 结合结构基础的监督式机器学习模型可以准确预测聚对苯二甲酸乙二醇酯水解酶与不同聚合物之间的结合模式，进而为酶的定向进化提供精确的结构设计指导。\n- Q2: 基于适应性进化机制的分子响应模型能够揭示酶在变异过程中结构变化与功能增强之间的关系，从而指导高效的酶工程改造，实现酶性能的优化。"
+    ],
+    "structured_paths": {},
+    "elapsed_seconds": 4.24,
+    "error": null
+  },
+  {
+    "paper_id": "c5641167db43",
+    "title": "Tailoring industrial enzymes for thermostability and activity evolution by the machine learning-based iCASE strategy",
+    "model": "qwen2.5-7b-instruct",
+    "method_name": "P3",
+    "free_text_hypotheses": [
+      "### L1 Hypothesis\n通过等温压缩辅助动态挤压指数扰动工程（iCASE）策略和结构基础的监督式机器学习模型的结合，可以显著提升工业酶的热稳定性和催化活性。具体来说，iCASE策略能够通过动态挤压指数网络优化酶的三维结构，而机器学习模型则可以根据优化后的结构预测其与特定底物的结合模式和催化效率，从而实现酶功能和性能的双重提升。\n\n### L2 Hypotheses\n- **Q1**: 结合iCASE策略和结构基础的监督式机器学习模型，可以准确预测聚对苯二甲酸乙二醇酯水解酶与不同聚合物的结合模式。具体机制是：iCASE策略通过动态挤压指数网络调整酶的结构，使其更紧密地与目标底物相互作用；而机器学习模型则利用这些结构变化的数据来训练模型，从而预测最佳的底物结合模式。\n  \n- **Q2**: 基于适应性进化机制的分子响应模型能够指导酶工程改造，通过整合蛋白质表面电荷分析和表型适应性景观建模，可以有效提高酶的催化活性和稳定性。具体机制是：分子响应模型揭示了不同变异体之间的结构响应关系，而蛋白质表面电荷分析则提供了关于蛋白质表面性质的信息，两者结合可以识别出有助于提高酶性能的关键氨基酸位点，从而进行针对性的工程改造。\n\n### L3 Hypotheses\n- **Q1**: 化学驱动的动态挤压指数网络与机器学习预测的协同效应可以通过以下方式共同优化酶催化机制：首先，动态挤压指数网络通过改变酶的构象来增强其与底物的亲和力和催化效率；其次，机器学习模型根据这些构象变化预测酶的活性和稳定性，从而指导进一步的优化步骤。这种协同效应可以在多个酶结构中得到验证，并且可以通过实验测定酶的活性和稳定性来进行测试和验证。\n\n- **Q2**: 整合蛋白质表面电荷分析、表型适应性景观建模及动态响应预测的工作流验证方案可以显著提高酶工程改造的成功率。具体机制是：蛋白质表面电荷分析提供关于蛋白质表面性质的信息，帮助确定哪些区域可能需要进行修饰以提高酶的热稳定性和催化活性；表型适应性景观建模则用于模拟酶在不同环境条件下的表现，从而预测哪些突变最有可能改善酶的功能；动态响应预测模型则通过分析酶在不同条件下的结构变化，进一步验证这些突变的有效性。这种工作流可以通过一系列实验来验证其有效性，例如通过酶活力测试和热稳定性测试来评估改造后的酶性能。"
+    ],
+    "structured_paths": {},
+    "elapsed_seconds": 13.29,
+    "error": null
+  },
+  {
+    "paper_id": "c5641167db43",
+    "title": "Tailoring industrial enzymes for thermostability and activity evolution by the machine learning-based iCASE strategy",
+    "model": "qwen2.5-7b-instruct",
+    "method_name": "P4",
+    "free_text_hypotheses": [
+      "L1 Hypothesis:\n  hypothesis: 通过iCASE策略和结构基础的监督式机器学习模型的结合，可以构建出具有更高催化活性和热稳定性的新型酶，并且这种组合能够揭示新的酶功能优化路径。\n  reasoning: 首先，iCASE策略能够通过动态挤压指数扰动工程来优化酶的结构，从而提高其催化活性和热稳定性。其次，结构基础的监督式机器学习模型能够预测酶与底物的结合模式以及潜在的催化机制改进。结合这两种方法，不仅可以实现酶的功能优化，还可以发现新的优化路径，这些路径可能在单一方法中难以被识别。\n  key_concepts: isothermal compressibility-assisted dynamic squeezing index perturbation engineering, hierarchical modular networks, structure-based supervised machine learning, enzyme function, fitness landscape\n  disciplines_bridged: 化学, 计算机科学技术, 生物学\n\nL2 Hypotheses:\n- Q1:\n    hypothesis: 结合iCASE策略和机器学习模型，可以预测金属离子或特定的疏水相互作用对PET水解酶与PET聚合物结合模式的影响。\n    reasoning: iCASE策略可以通过改变酶的结构来影响其与PET聚合物的结合模式，而机器学习模型则可以根据已知数据预测这些变化对酶活性和稳定性的影响。通过分析这些影响，可以进一步优化酶的结构以增强其与PET聚合物的结合能力。\n    key_concepts: isothermal compressibility-assisted dynamic squeezing index perturbation engineering, structure-based supervised machine learning, polyethylene terephthalate hydrolase, polyethylene terephthalate polymers, metal ions, hydrophobic interactions\n    disciplines_bridged: 化学, 计算机科学技术, 生物学\n\n- Q2:\n    hypothesis: 通过整合蛋白质表面电荷分析和iCASE策略，可以设计出具有更高催化活性和热稳定性的新型酶。\n    reasoning: 蛋白质表面电荷分析可以帮助识别影响酶稳定性和活性的关键氨基酸残基。iCASE策略可以通过动态挤压指数扰动工程来调整这些关键残基的位置和性质，从而优化酶的结构。这种整合方法可以提供更全面的视角来理解酶的结构-功能关系。\n    key_concepts: isothermal compressibility-assisted dynamic squeezing index perturbation engineering, protein surface charges, enzyme function, enzyme stability\n    disciplines_bridged: 化学, 计算机科学技术, 生物学\n\nL3 Hypotheses:\n- Q1:\n    hypothesis: 利用iCASE策略和机器学习模型，可以预测不同金属离子的存在对PET水解酶的催化活性和稳定性的影响，并据此设计出具有最佳性能的酶。\n    reasoning: iCASE策略可以模拟不同金属离子对酶结构的影响，而机器学习模型则可以根据这些模拟结果预测酶的活性和稳定性。通过这种方法，可以找到最适合PET水解酶的金属离子，从而提高其催化效率和热稳定性。\n    key_concepts: isothermal compressibility-assisted dynamic squeezing index perturbation engineering, structure-based supervised machine learning, polyethylene terephthalate hydrolase, metal ions, enzyme function, enzyme stability\n    disciplines_bridged: 化学, 计算机科学技术, 生物学\n\n- Q2:\n    hypothesis: 通过iCASE策略和动态响应预测模型，可以揭示并利用酶的非线性相互作用（如sign epistasis）来设计具有更高催化活性和热稳定性的新型酶。\n    reasoning: 动态响应预测模型可以捕捉到酶之间的非线性相互作用，包括sign epistasis。iCASE策略可以通过扰动工程来改变酶的结构，从而影响这些相互作用。通过这种方法，可以设计出具有更好性能的酶，因为它们能够更好地适应复杂的分子环境。\n    key_concepts: isothermal compressibility-assisted dynamic squeezing index perturbation engineering, dynamic response predictive model, sign epistasis, enzyme function, enzyme fitness\n    disciplines_bridged: 化学, 计算机科学技术, 生物学"
+    ],
+    "structured_paths": {},
+    "elapsed_seconds": 20.16,
+    "error": null
+  },
+  {
+    "paper_id": "69cf875bdbf7",
+    "title": "Quasi Fe MIL-53 nanozyme inducing ferroptosis and immunogenic cell death for cancer immunotherapy",
+    "model": "qwen2.5-7b-instruct",
+    "method_name": "P1",
+    "free_text_hypotheses": [
+      "Hypothesis:\n准金属有机框架材料（MOFs）通过设计特定的金属节点和有机配体，能够模拟天然酶的活性位点，从而实现对肿瘤微环境的高度选择性响应。具体而言，MOFs可以被修饰以携带具有类酶催化功能的金属中心和配体，这些金属中心和配体能够在肿瘤酸性环境中激活前药或直接催化产生抗癌活性物质，如自由基，进而实现高效的肿瘤细胞杀伤作用。此外，MOFs独特的多孔结构和可调的表面性质使其能够有效负载多种抗癌药物，并通过控制药物释放速率和增强肿瘤部位的药物积累来提高治疗效果。该MOFs体系还具备良好的生物相容性和较低的毒副作用，能够在不显著影响正常组织的情况下实现精准的肿瘤治疗。通过体外酶模拟实验、体内肿瘤模型实验以及分子动力学模拟等方法，可以验证MOFs在肿瘤治疗中的类酶催化机制及其靶向性与有效性。"
+    ],
+    "structured_paths": {},
+    "elapsed_seconds": 5.1,
+    "error": null
+  },
+  {
+    "paper_id": "69cf875bdbf7",
+    "title": "Quasi Fe MIL-53 nanozyme inducing ferroptosis and immunogenic cell death for cancer immunotherapy",
+    "model": "qwen2.5-7b-instruct",
+    "method_name": "P2",
+    "free_text_hypotheses": [
+      "L1 Hypothesis: 准金属有机框架材料的设计原理及其类酶催化机制能够有效实现肿瘤治疗，通过增强纳米酶的过氧化物酶和过氧化氢酶模拟活性，以及提高其诱导肿瘤细胞发生铁死亡和免疫细胞浸润的能力。\n\nL2 Hypotheses:\n- Q1: 通过控制配体去除策略，可以优化准金属有机框架材料Q-MIL-53(Fe)的表面性质和内部结构，从而显著提升其类酶催化活性，包括过氧化物酶和过氧化氢酶模拟活性。\n- Q2: 多孔结构的准金属有机框架材料Q-MIL-53(Fe)能够通过诱导肿瘤细胞内谷胱甘肽（GSH）耗竭，促进铁死亡的发生，进而抑制肿瘤生长；同时，这种材料还能激活抗肿瘤免疫反应，通过促进树突状细胞成熟和T淋巴细胞浸润来增强免疫细胞对肿瘤细胞的识别和杀伤能力。"
+    ],
+    "structured_paths": {},
+    "elapsed_seconds": 7.95,
+    "error": null
+  },
+  {
+    "paper_id": "69cf875bdbf7",
+    "title": "Quasi Fe MIL-53 nanozyme inducing ferroptosis and immunogenic cell death for cancer immunotherapy",
+    "model": "qwen2.5-7b-instruct",
+    "method_name": "P3",
+    "free_text_hypotheses": [
+      "L1 Hypothesis: 准金属有机框架材料Q-MIL-53(Fe)通过其独特的可调孔结构和金属离子/节点的特性，在纳米酶催化机制中实现了对肿瘤微环境的有效调控，从而增强了抗肿瘤免疫反应并促进了淋巴细胞的浸润。\n\nL2 Hypotheses:\n- Q1: 准金属有机框架的可控配体去除策略通过调整金属离子/节点的比例和分布，优化了纳米酶的催化活性。具体来说，这种策略可以改变材料表面的电子密度，进而影响其对过氧化氢的吸附能力和催化效率。\n- Q2: 多孔结构纳米材料通过诱导铁死亡机制抑制肿瘤生长，其多孔结构能够提供更多的表面积与肿瘤细胞接触，促进活性氧（ROS）的生成，从而加速铁死亡过程。此外，多孔结构还能够促进免疫原性细胞死亡的发生，释放损伤相关分子模式（DAMPs），激活树突状细胞的成熟，增强T淋巴细胞的浸润和活化。\n\nL3 Hypotheses:\n- Q1: 在可控配体去除策略下，Q-MIL-53(Fe)中的四氧化三铁纳米颗粒能够通过芬顿反应产生更多的羟基自由基（·OH），这不仅增强了其过氧化物酶模拟活性，还提高了谷胱甘肽耗竭能力，从而在肿瘤微环境中创造一个更有利于抗肿瘤免疫反应的条件。\n- Q2: Q-MIL-53(Fe)的多孔结构不仅提供了更大的比表面积，还允许更多的程序性细胞死亡蛋白1抗体（PD-1抗体）结合到肿瘤细胞表面，从而增强抗肿瘤免疫反应的效果。这种结构还可以促进免疫细胞向肿瘤部位的迁移，进一步提高免疫治疗的效率。"
+    ],
+    "structured_paths": {},
+    "elapsed_seconds": 9.19,
+    "error": null
+  },
+  {
+    "paper_id": "69cf875bdbf7",
+    "title": "Quasi Fe MIL-53 nanozyme inducing ferroptosis and immunogenic cell death for cancer immunotherapy",
+    "model": "qwen2.5-7b-instruct",
+    "method_name": "P4",
+    "free_text_hypotheses": [
+      "L1 Hypothesis:\n  hypothesis: 准金属有机框架材料通过其独特的多孔结构和可调孔径，能够有效调节肿瘤微环境中活性氧（ROS）的水平，从而增强纳米酶的过氧化物酶模拟活性和谷胱甘肽耗竭能力，进而提高抗肿瘤免疫反应。\n  reasoning: 前提是准金属有机框架材料具有可调孔结构。机制上，这种材料可以通过调节孔径大小来控制纳米酶与肿瘤微环境中的分子相互作用，从而优化其在肿瘤微环境中的催化效率。进一步地，通过密度泛函理论计算可以验证这种材料对ROS水平的影响。最终，这种材料能够增强过氧化物酶模拟活性和谷胱甘肽耗竭能力，促进铁死亡和免疫原性细胞死亡，从而提高抗肿瘤免疫反应。\n  key_concepts: 准金属有机框架, 可调孔结构, 过氧化物酶模拟活性, 谷胱甘肽耗竭能力, 铁死亡, 免疫原性细胞死亡, 活性氧, 密度泛函理论计算\n  disciplines_bridged: 化学, 材料科学, 基础医学\n\nL2 Hypotheses:\n- Q1:\n    hypothesis: 控制的配体去除策略可以显著提升Q-MIL-53(Fe)纳米酶的芬顿反应效率，从而增强其在肿瘤微环境中的氧化还原调节能力。\n    reasoning: 前提是Q-MIL-53(Fe)纳米酶具有过氧化物酶模拟活性和谷胱甘肽耗竭能力。机制上，通过配体去除策略可以改变纳米酶表面的金属离子/节点配位环境，进而优化其芬顿反应效率。进一步地，密度泛函理论计算可以揭示这种策略如何影响纳米酶的电子结构和催化活性。最终，这种优化后的纳米酶能够在肿瘤微环境中更有效地调节氧化还原状态，促进铁死亡和免疫原性细胞死亡。\n    key_concepts: Q-MIL-53(Fe), 可控配体去除策略, 芬顿反应, 过氧化物酶模拟活性, 谷胱甘肽耗竭能力, 金属离子/节点, 密度泛函理论计算, 铁死亡, 免疫原性细胞死亡\n    disciplines_bridged: 化学, 材料科学, 基础医学\n\n- Q2:\n    hypothesis: Q-MIL-53(Fe)纳米酶通过诱导免疫原性细胞死亡和激活抗肿瘤免疫反应，能够增强程序性细胞死亡蛋白1抗体（PD-1抗体）的疗效。\n    reasoning: 前提是Q-MIL-53(Fe)纳米酶能够激活抗肿瘤免疫反应。机制上，纳米酶通过诱导免疫原性细胞死亡释放损伤相关分子模式（DAMPs），这些分子能够激活树突状细胞并促进T淋巴细胞的浸润。进一步地，这种免疫原性的增强能够使PD-1抗体更好地发挥作用，因为PD-1抗体通常需要一个激活的免疫微环境才能有效抑制肿瘤逃逸。最终，Q-MIL-53(Fe)纳米酶与PD-1抗体的联合使用将显示出更强的抗肿瘤效果。\n    key_concepts: Q-MIL-53(Fe), 免疫原性细胞死亡, 树突状细胞成熟, 淋巴细胞浸润, PD-1抗体, 损伤相关分子模式\n    disciplines_bridged: 化学, 材料科学, 基础医学\n\nL3 Hypotheses:\n- Q1:\n    hypothesis: Q-MIL-53(Fe)纳米酶的多孔结构不仅能够提供足够的空间来容纳更多的肿瘤细胞，还能通过调节肿瘤微环境中的活性氧（ROS）水平，促进铁死亡的发生，从而增强其抗肿瘤效果。\n    reasoning: 前提是Q-MIL-53(Fe)纳米酶具有多孔结构和过氧化物酶模拟活性。机制上，多孔结构提供了更大的表面积，使得纳米酶能够更广泛地接触肿瘤细胞，并通过芬顿反应产生更多的羟基自由基（·OH），从而增加ROS水平。进一步地，高ROS水平会触发铁死亡，这是一种依赖于ROS的细胞死亡方式。最终，这种纳米酶的多孔结构和过氧化物酶模拟活性共同作用，增强了其在肿瘤微环境中的抗肿瘤效果。\n    key_concepts: Q-MIL-53(Fe), 多孔结构, 过氧化物酶模拟活性, 芬顿反应, 活性氧, 铁死亡\n    disciplines_bridged: 化学, 材料科学, 基础医学\n\n- Q2:\n    hypothesis: Q-MIL-53(Fe)纳米酶通过诱导免疫原性细胞死亡和激活抗肿瘤免疫反应，能够改变肿瘤微环境中的免疫抑制状态，从而提高免疫检查点抑制剂（如PD-1抗体）的疗效。\n    reasoning: 前提是Q-MIL-53(Fe)纳米酶能够诱导免疫原性细胞死亡。机制上，免疫原性细胞死亡会释放多种DAMPs，这些分子能够激活树突状细胞并促进T淋巴细胞的浸润。进一步地，这种免疫原性的增强能够打破肿瘤微环境中的免疫抑制状态，使得免疫检查点抑制剂（如PD-1抗体）能够更好地识别和攻击肿瘤细胞。最终，Q-MIL-53(Fe)纳米酶与免疫检查点抑制剂的联合使用将显示出更强的抗肿瘤效果。\n    key_concepts: Q-MIL-53(Fe), 免疫原性细胞死亡, 树突状细胞成熟, 淋巴细胞浸润, 免疫检查点抑制剂, 损伤相关分子模式\n    disciplines_bridged: 化学, 材料科学, 基础医学"
+    ],
+    "structured_paths": {},
+    "elapsed_seconds": 31.68,
+    "error": null
+  }
+]

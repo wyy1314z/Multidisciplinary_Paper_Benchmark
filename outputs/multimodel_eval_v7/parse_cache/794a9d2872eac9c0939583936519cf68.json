@@ -1,0 +1,165 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "准金属有机框架Q-MIL-53(Fe)的可控配体去除策略",
+        "relation": "transforms",
+        "tail": "金属离子/节点与有机配体的动态平衡",
+        "claim": "配体去除策略调控金属-配体动态平衡"
+      },
+      {
+        "step": 2,
+        "head": "金属离子/节点与有机配体的动态平衡",
+        "relation": "causes",
+        "tail": "可调孔结构与不饱和金属位点",
+        "claim": "动态平衡调控形成可调孔结构和不饱和位点"
+      },
+      {
+        "step": 3,
+        "head": "可调孔结构与不饱和金属位点",
+        "relation": "enables",
+        "tail": "类酶活性协同谷胱甘肽过氧化物酶4抑制效应",
+        "claim": "结构特性赋予类酶活性并抑制GPX4"
+      },
+      {
+        "step": 4,
+        "head": "类酶活性协同谷胱甘肽过氧化物酶4抑制效应",
+        "relation": "causes",
+        "tail": "铁死亡",
+        "claim": "类酶活性与GPX4抑制共同引发铁死亡"
+      },
+      {
+        "step": 5,
+        "head": "铁死亡",
+        "relation": "triggers",
+        "tail": "损伤相关分子模式释放",
+        "claim": "铁死亡诱导损伤相关分子模式释放"
+      },
+      {
+        "step": 6,
+        "head": "损伤相关分子模式释放",
+        "relation": "activates",
+        "tail": "树突状细胞成熟通路",
+        "claim": "分子模式释放激活树突状细胞成熟"
+      },
+      {
+        "step": 7,
+        "head": "树突状细胞成熟通路",
+        "relation": "mediates",
+        "tail": "化学催化治疗与免疫原性细胞死亡的协同机制",
+        "claim": "树突状细胞成熟介导治疗协同机制"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "可控配体去除策略",
+        "relation": "causes",
+        "tail": "MIL-53(Fe)有机配体网络部分破坏",
+        "claim": "配体去除导致有机配体网络部分破坏"
+      },
+      {
+        "step": 2,
+        "head": "MIL-53(Fe)有机配体网络部分破坏",
+        "relation": "enables",
+        "tail": "Fe²⁺/Fe³⁺活性位点暴露与孔径扩大",
+        "claim": "配体破坏暴露金属位点并扩大孔径"
+      },
+      {
+        "step": 3,
+        "head": "Fe²⁺/Fe³⁺活性位点暴露与孔径扩大",
+        "relation": "enhances",
+        "tail": "四氧化三铁纳米颗粒芬顿反应催化效率",
+        "claim": "金属位点暴露提升芬顿反应效率"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "Q-MIL-53(Fe)孔道尺寸",
+        "relation": "selectively_retains",
+        "tail": "谷胱甘肽分子",
+        "claim": "孔道尺寸选择性富集谷胱甘肽"
+      },
+      {
+        "step": 2,
+        "head": "谷胱甘肽富集",
+        "relation": "induces",
+        "tail": "谷胱甘肽/谷胱甘肽二硫键比例失衡",
+        "claim": "富集效应导致氧化还原失衡"
+      },
+      {
+        "step": 3,
+        "head": "谷胱甘肽比例失衡",
+        "relation": "causes",
+        "tail": "铁死亡相关的线粒体膜电位紊乱",
+        "claim": "氧化还原失衡引发线粒体损伤"
+      }
+    ]
+  ],
+  "L3": [
+    [
+      {
+        "step": 1,
+        "head": "Q-MIL-53(Fe)类芬顿反应",
+        "relation": "produces",
+        "tail": "羟基自由基（·OH）",
+        "claim": "类芬顿反应产生活性氧物种"
+      },
+      {
+        "step": 2,
+        "head": "Q-MIL-53(Fe)孔结构",
+        "relation": "modulates",
+        "tail": "H2O2浓度梯度",
+        "claim": "孔结构调控过氧化氢分布"
+      },
+      {
+        "step": 3,
+        "head": "H2O2浓度梯度",
+        "relation": "inactivates",
+        "tail": "谷胱甘肽过氧化物酶4",
+        "claim": "浓度梯度导致酶失活"
+      },
+      {
+        "step": 4,
+        "head": "谷胱甘肽过氧化物酶4失活",
+        "relation": "accumulates",
+        "tail": "氧化型谷胱甘肽（GSSG）",
+        "claim": "酶失活导致氧化型谷胱甘肽积累"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "Q-MIL-53(Fe)诱导的铁死亡",
+        "relation": "activates",
+        "tail": "ACSL4-PLOD2信号轴",
+        "claim": "铁死亡激活特定信号通路"
+      },
+      {
+        "step": 2,
+        "head": "ACSL4-PLOD2信号轴",
+        "relation": "enhances",
+        "tail": "肿瘤细胞免疫原性",
+        "claim": "信号轴增强免疫原性特征"
+      },
+      {
+        "step": 3,
+        "head": "损伤相关分子模式",
+        "relation": "synergizes",
+        "tail": "程序性细胞死亡蛋白1抗体",
+        "claim": "分子模式与抗体产生协同效应"
+      },
+      {
+        "step": 4,
+        "head": "程序性细胞死亡蛋白1抗体协同",
+        "relation": "increases",
+        "tail": "CD8+ T淋巴细胞浸润",
+        "claim": "协同作用促进T细胞浸润"
+      }
+    ]
+  ]
+}

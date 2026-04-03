@@ -1,0 +1,174 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "Integrating dielectric gradient metamaterials (材料科学) with advanced phase distribution engineering (物理学)",
+        "relation": "enables",
+        "tail": "design of achromatic THz metalenses",
+        "claim": "整合使消色差THz金属透镜的设计成为可能"
+      },
+      {
+        "step": 2,
+        "head": "design of achromatic THz metalenses",
+        "relation": "overcomes",
+        "tail": "conventional chromatic and spherical aberrations as well as the diffraction limit",
+        "claim": "金属透镜设计克服了传统像差和衍射极限"
+      },
+      {
+        "step": 3,
+        "head": "overcoming aberrations and diffraction limit",
+        "relation": "enables",
+        "tail": "realizing super-resolution imaging in the terahertz frequency range",
+        "claim": "突破限制从而实现太赫兹超分辨成像"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "synergy between metamaterials and phase engineering",
+        "relation": "enables",
+        "tail": "tailored refractive index profiles (物理学)",
+        "claim": "协同效应允许定制折射率分布"
+      },
+      {
+        "step": 2,
+        "head": "tailored refractive index profiles",
+        "relation": "maintains",
+        "tail": "consistent focusing performance across 0.2–0.9 THz bandwidth",
+        "claim": "定制分布保持宽频带聚焦稳定性"
+      },
+      {
+        "step": 3,
+        "head": "maintaining focusing performance",
+        "relation": "enables",
+        "tail": "practical implementations in biomedical imaging and non-destructive testing (电子、通信与自动控制技术)",
+        "claim": "稳定性能推动实际应用落地"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "dielectric gradient metamaterials (材料科学)",
+        "relation": "produce",
+        "tail": "graded refractive index profiles (物理学)",
+        "claim": "梯度材料生成分级折射率分布"
+      },
+      {
+        "step": 2,
+        "head": "graded refractive index profiles",
+        "relation": "create",
+        "tail": "spatially varying phase delay",
+        "claim": "分布产生空间相位延迟"
+      },
+      {
+        "step": 3,
+        "head": "spatial phase delay",
+        "relation": "compensates",
+        "tail": "frequency-dependent phase errors",
+        "claim": "延迟补偿频率相关误差"
+      },
+      {
+        "step": 4,
+        "head": "compensating errors",
+        "relation": "achieves",
+        "tail": "achromatic super-resolution imaging",
+        "claim": "误差补偿实现消色差成像"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "high-precision 3D printing (电子、通信与自动控制技术)",
+        "relation": "enables",
+        "tail": "fabrication of dielectric gradient metamaterials with controlled thickness and refractive index",
+        "claim": "3D打印实现材料结构精确制造"
+      },
+      {
+        "step": 2,
+        "head": "precise fabrication",
+        "relation": "realizes",
+        "tail": "target phase profiles (物理学)",
+        "claim": "精确制造匹配目标相位分布"
+      },
+      {
+        "step": 3,
+        "head": "realized phase profiles",
+        "relation": "reduces",
+        "tail": "fabrication-induced aberrations",
+        "claim": "优化分布降低制造误差影响"
+      },
+      {
+        "step": 4,
+        "head": "reduced aberrations",
+        "relation": "supports",
+        "tail": "scalable production and rapid prototyping",
+        "claim": "低误差支持规模化生产和快速迭代"
+      }
+    ]
+  ],
+  "L3": [
+    [
+      {
+        "step": 1,
+        "head": "joint optimization of metamaterial design (材料科学) and 3D printing parameters (电子、通信与自动控制技术)",
+        "relation": "achieves",
+        "tail": "continuous refractive index gradient",
+        "claim": "协同优化实现折射率连续梯度"
+      },
+      {
+        "step": 2,
+        "head": "continuous refractive index gradient",
+        "relation": "matches",
+        "tail": "target phase distribution (物理学)",
+        "claim": "梯度匹配目标相位分布"
+      },
+      {
+        "step": 3,
+        "head": "matching phase distribution",
+        "relation": "breaks",
+        "tail": "Abbe diffraction limit",
+        "claim": "分布匹配突破衍射极限"
+      },
+      {
+        "step": 4,
+        "head": "breaking diffraction limit",
+        "relation": "enables",
+        "tail": "subwavelength focusing in THz regime",
+        "claim": "极限突破实现亚波长聚焦"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "integration of nanopillar structures (材料科学) with nanoring arrangements (物理学)",
+        "relation": "enhances",
+        "tail": "effective numerical aperture",
+        "claim": "结构集成提升数值孔径"
+      },
+      {
+        "step": 2,
+        "head": "enhanced numerical aperture",
+        "relation": "increases",
+        "tail": "light confinement and reduces off-axis aberrations",
+        "claim": "孔径提升增强光约束并减少像差"
+      },
+      {
+        "step": 3,
+        "head": "3D printing-enabled nanostructure fabrication (电子、通信与自动控制技术)",
+        "relation": "extends",
+        "tail": "field of view to 90°",
+        "claim": "制造技术扩展视场至90度"
+      },
+      {
+        "step": 4,
+        "head": "extended field of view",
+        "relation": "maintains",
+        "tail": "NA = 0.555",
+        "claim": "视场扩展同时保持数值孔径"
+      }
+    ]
+  ]
+}

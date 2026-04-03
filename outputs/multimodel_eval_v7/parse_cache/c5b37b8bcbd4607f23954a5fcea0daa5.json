@@ -1,0 +1,172 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "介电梯度超材料",
+        "relation": "integrates with",
+        "tail": "超振荡透镜原理",
+        "claim": "材料科学与物理原理结合形成新系统基础"
+      },
+      {
+        "step": 2,
+        "head": "集成系统",
+        "relation": "achieves",
+        "tail": "消色差超分辨THz成像",
+        "claim": "系统实现超越阿贝衍射极限的成像性能"
+      },
+      {
+        "step": 3,
+        "head": "空间折射率分布",
+        "relation": "compensates for",
+        "tail": "色差和球差",
+        "claim": "梯度折射率设计消除主要光学像差"
+      },
+      {
+        "step": 4,
+        "head": "三维打印技术",
+        "relation": "enables",
+        "tail": "亚波长纳米散射体调制",
+        "claim": "制造精度支持电磁场动态调控"
+      },
+      {
+        "step": 5,
+        "head": "纳米散射体结构",
+        "relation": "enables",
+        "tail": "超分辨成像",
+        "claim": "亚波长结构突破传统超构透镜限制"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "介电梯度超材料",
+        "relation": "creates",
+        "tail": "连续折射率分布",
+        "claim": "材料设计形成梯度折射率剖面"
+      },
+      {
+        "step": 2,
+        "head": "折射率分布",
+        "relation": "compensates for",
+        "tail": "波长相位延迟",
+        "claim": "补偿不同波长的相位色散"
+      },
+      {
+        "step": 3,
+        "head": "同心纳米环结构",
+        "relation": "acts as",
+        "tail": "局部相位调制器",
+        "claim": "环形结构实现空间相位控制"
+      },
+      {
+        "step": 4,
+        "head": "高纵横比纳米柱",
+        "relation": "reduces",
+        "tail": "离轴像差",
+        "claim": "结构各向异性降低非轴向像差"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "三维打印技术",
+        "relation": "enables",
+        "tail": "纳米散射体空间分布控制",
+        "claim": "制造技术实现精确结构排布"
+      },
+      {
+        "step": 2,
+        "head": "逐层沉积",
+        "relation": "creates",
+        "tail": "高纵横比纳米柱",
+        "claim": "打印工艺形成亚波长结构"
+      },
+      {
+        "step": 3,
+        "head": "纳米柱结构",
+        "relation": "maintains",
+        "tail": "结构完整性",
+        "claim": "保持材料机械稳定性"
+      },
+      {
+        "step": 4,
+        "head": "结构完整性",
+        "relation": "achieves",
+        "tail": "消色差折射率分布",
+        "claim": "完整结构实现多频段性能"
+      }
+    ]
+  ],
+  "L3": [
+    [
+      {
+        "step": 1,
+        "head": "相位-折射率协同优化",
+        "relation": "enables",
+        "tail": "超越阿贝极限",
+        "claim": "联合优化突破衍射限制"
+      },
+      {
+        "step": 2,
+        "head": "亚波长散射体阵列",
+        "relation": "generates",
+        "tail": "超振荡干涉图样",
+        "claim": "构造性干涉扩展成像带宽"
+      },
+      {
+        "step": 3,
+        "head": "同心纳米环",
+        "relation": "contributes to",
+        "tail": "全局超振荡行为",
+        "claim": "局部结构贡献整体透镜效应"
+      },
+      {
+        "step": 4,
+        "head": "高纵横比结构",
+        "relation": "provides",
+        "tail": "相位梯度控制",
+        "claim": "结构实现梯度相位调控"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "高纵横比纳米柱",
+        "relation": "combines with",
+        "tail": "超表面技术",
+        "claim": "混合结构实现高数值孔径"
+      },
+      {
+        "step": 2,
+        "head": "垂直纳米散射体",
+        "relation": "exploits",
+        "tail": "横向环形结构耦合",
+        "claim": "三维耦合增强光场控制"
+      },
+      {
+        "step": 3,
+        "head": "三维打印",
+        "relation": "enables",
+        "tail": "混合元结构制造",
+        "claim": "打印精度实现复杂结构集成"
+      },
+      {
+        "step": 4,
+        "head": "混合结构",
+        "relation": "controls",
+        "tail": "径向-方位相位分布",
+        "claim": "多维相位调控扩展视场角"
+      },
+      {
+        "step": 5,
+        "head": "相位工程",
+        "relation": "reduces",
+        "tail": "离轴像差",
+        "claim": "设计降低宽视场光学畸变"
+      }
+    ]
+  ]
+}

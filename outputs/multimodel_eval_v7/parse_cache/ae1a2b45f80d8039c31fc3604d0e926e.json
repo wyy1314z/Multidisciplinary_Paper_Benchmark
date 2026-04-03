@@ -1,0 +1,165 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "isothermal compressibility-assisted dynamic squeezing index perturbation engineering",
+        "relation": "synergizes_with",
+        "tail": "structure-based supervised machine learning models",
+        "claim": "化学扰动工程与机器学习模型协同作用"
+      },
+      {
+        "step": 2,
+        "head": "synergized chemical-ML approach",
+        "relation": "optimizes",
+        "tail": "hierarchical modular networks",
+        "claim": "协同方法优化层级化模块网络"
+      },
+      {
+        "step": 3,
+        "head": "optimized modular networks",
+        "relation": "enhances",
+        "tail": "adaptive evolution of industrial enzymes",
+        "claim": "优化网络增强工业酶适应性进化"
+      },
+      {
+        "step": 4,
+        "head": "dynamic squeezing index",
+        "relation": "modulates",
+        "tail": "intramolecular interactions",
+        "claim": "动态挤压指数调节分子内相互作用"
+      },
+      {
+        "step": 5,
+        "head": "machine learning",
+        "relation": "predicts",
+        "tail": "enzyme fitness landscapes",
+        "claim": "机器学习预测酶适应度景观"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "structure-based supervised machine learning",
+        "relation": "trained_on",
+        "tail": "substrate binding modes datasets",
+        "claim": "机器学习模型训练于底物结合模式数据集"
+      },
+      {
+        "step": 2,
+        "head": "machine learning model",
+        "relation": "predicts",
+        "tail": "binding affinity and specificity",
+        "claim": "模型预测PET水解酶结合亲和力"
+      },
+      {
+        "step": 3,
+        "head": "predicted key residues",
+        "relation": "govern",
+        "tail": "substrate recognition",
+        "claim": "关键残基决定底物识别机制"
+      },
+      {
+        "step": 4,
+        "head": "rational enzyme engineering",
+        "relation": "improves",
+        "tail": "plastic degradation efficiency",
+        "claim": "理性设计提升塑料降解效率"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "dynamic response predictive model",
+        "relation": "integrates",
+        "tail": "chemical perturbations",
+        "claim": "动态模型整合化学扰动数据"
+      },
+      {
+        "step": 2,
+        "head": "integrated model",
+        "relation": "elucidates",
+        "tail": "fitness landscapes",
+        "claim": "模型阐明适应度景观形成机制"
+      },
+      {
+        "step": 3,
+        "head": "targeted mutations",
+        "relation": "exploit",
+        "tail": "epistasis patterns",
+        "claim": "靶向突变利用上位性效应"
+      },
+      {
+        "step": 4,
+        "head": "epistasis-guided mutations",
+        "relation": "enhance",
+        "tail": "enzyme robustness",
+        "claim": "上位性指导提升酶鲁棒性"
+      }
+    ]
+  ],
+  "L3": [
+    [
+      {
+        "step": 1,
+        "head": "dynamic squeezing index networks",
+        "relation": "modulates",
+        "tail": "local protein flexibility",
+        "claim": "动态网络调节局部蛋白柔性"
+      },
+      {
+        "step": 2,
+        "head": "machine learning predictions",
+        "relation": "identifies",
+        "tail": "epistatic interactions",
+        "claim": "机器学习识别上位相互作用"
+      },
+      {
+        "step": 3,
+        "head": "cooperative effect",
+        "relation": "optimizes",
+        "tail": "catalytic mechanisms",
+        "claim": "协同效应优化催化机制"
+      },
+      {
+        "step": 4,
+        "head": "balanced structural responses",
+        "relation": "enhances",
+        "tail": "catalytic rates",
+        "claim": "平衡结构响应提升催化速率"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "protein surface charge analysis",
+        "relation": "integrates_with",
+        "tail": "disulfide bond engineering",
+        "claim": "表面电荷分析整合二硫键工程"
+      },
+      {
+        "step": 2,
+        "head": "integrated workflow",
+        "relation": "validates",
+        "tail": "enzyme design strategies",
+        "claim": "综合流程验证酶设计策略"
+      },
+      {
+        "step": 3,
+        "head": "surface electrostatics modulation",
+        "relation": "alters",
+        "tail": "enzyme fitness",
+        "claim": "表面静电调控改变酶适应度"
+      },
+      {
+        "step": 4,
+        "head": "dynamic response prediction",
+        "relation": "improves",
+        "tail": "catalytic efficiency",
+        "claim": "动态预测提升催化效率"
+      }
+    ]
+  ]
+}

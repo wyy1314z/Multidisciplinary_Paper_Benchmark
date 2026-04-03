@@ -1,0 +1,242 @@
+[
+  {
+    "paper_id": "a6f866ca73d0",
+    "title": "Self-driving lab for the photochemical synthesis of plasmonic nanoparticles with targeted structural and optical properties",
+    "model": "qwen3-235b-a22b",
+    "method_name": "P1",
+    "free_text_hypotheses": [
+      "**假设：** 利用相变材料（如二氧化钒VO₂）作为等离激元纳米粒子的动态基底，通过温度或光脉冲触发VO₂在绝缘态与金属态间的可逆相变，调控其介电函数实部的符号反转特性，从而实现等离激元共振频率的宽范围动态调谐（>200 nm波长位移）及模式局域性的增强/抑制切换。该机制依赖于VO₂相变时对纳米粒子局域电磁场的非线性反馈效应，并可通过集成微流控热控系统与飞秒激光激发实现亚毫秒级响应与空间选择性调控，突破传统几何形貌固定的静态调控限制。  \n\n**验证方法：** 制备金纳米棒阵列与VO₂薄膜的异质结构，通过变温紫外-可见光谱监测共振峰位移，结合有限元模拟分析相变前后电磁场分布变化；利用超快泵浦-探测光谱表征相变诱导的等离激元衰减率变化，验证非线性耦合机制。"
+    ],
+    "structured_paths": {},
+    "elapsed_seconds": 37.96,
+    "error": null
+  },
+  {
+    "paper_id": "a6f866ca73d0",
+    "title": "Self-driving lab for the photochemical synthesis of plasmonic nanoparticles with targeted structural and optical properties",
+    "model": "qwen3-235b-a22b",
+    "method_name": "P2",
+    "free_text_hypotheses": [
+      "L1 Hypothesis: 等离激元纳米粒子的光学性质可通过构建微流体-机器学习协同系统实现精准调控，该系统通过集成高通量合成、原位表征与智能优化算法形成闭环反馈，将化学空间探索效率提升至传统方法的10-100倍，最终建立反应条件与局域表面等离激元共振波长/线宽的定量映射模型。\n\nL2 Hypotheses:\n- Q1: 微流体反应器通过三维流动场精确控制成核生长动力学，在微尺度下实现反应物混合度（<5μm层流厚度）、温度梯度（>100°C/s热传导速率）及停留时间（10ms-10s可调）的独立调控，使得单次实验可同步探索5个以上变量维度，其产生的高维数据集通过主成分分析可揭示传统烧杯合成中被掩盖的中间态产物演化规律。\n\n- Q2: 基于贝叶斯优化的强化学习框架可通过动态调整实验策略实现合成参数优化，其构建的高斯过程代理模型不仅能预测纳米粒子纵横比（径向误差<2nm）与缺陷密度（R²>0.93），还可通过SHAP值分析量化抗坏血酸浓度梯度（ΔC=0.5-5mM）对银种子生长模式转变的临界影响阈值，从而指导合成路径的理性设计。"
+    ],
+    "structured_paths": {},
+    "elapsed_seconds": 16.97,
+    "error": null
+  },
+  {
+    "paper_id": "a6f866ca73d0",
+    "title": "Self-driving lab for the photochemical synthesis of plasmonic nanoparticles with targeted structural and optical properties",
+    "model": "qwen3-235b-a22b",
+    "method_name": "P3",
+    "free_text_hypotheses": [
+      "L1 Hypothesis:  \nThe integration of plasmonic nanoparticle synthesis (化学) with real-time spectral characterization (材料科学) and adaptive machine learning control (计算机科学技术) enables precise tuning of localized surface plasmon resonance wavelength and full width at half maximum (FWHM) by dynamically adjusting reagent flow rates (化学) and light exposure intensity (材料科学) in a microfluidic reactor (材料科学). This closed-loop system will achieve targeted optical properties through iterative feedback between spectral output (材料科学) and Bayesian optimization (计算机科学技术), establishing a direct mapping between multi-dimensional chemical parameters (化学) and plasmonic resonance characteristics (材料科学).\n\nL2 Hypotheses:  \n- Q1:  \nMicrofluidic reactors (材料科学) accelerate exploration of multi-dimensional chemical spaces (化学) by enabling high-throughput screening of reaction conditions (化学) through rapid gradient diffusion of reagents (化学) in laminar flow, which can be further optimized by covariance matrix adaptation evolution strategy (CMA-ES) (计算机科学技术) to identify synthesis pathways for nanoparticles with specific aspect ratios (材料科学) and compositional gradients (化学).  \n- Q2:  \nDeep neural networks (计算机科学技术) trained on spectral nanoparticle characterization data (材料科学) can predict the influence of seed-mediated growth parameters (化学) on nanoparticle morphology (材料科学), while stable noise optimization branch and bound algorithms (计算机科学技术) systematically explore reagent concentration-time profiles (化学) to achieve targeted plasmonic resonance shifts (材料科学) in silver triangular nanoprism synthesis (材料科学).  \n\nL3 Hypotheses:  \n- Q1:  \nThe combination of microfluidic reactor's precise fluid dynamics control (材料科学) with Bayesian optimization (计算机科学技术) will enable closed-loop regulation of nucleation and growth kinetics (化学) by modulating syringe pump flow rates (材料科学) in response to in-flow UV-Vis spectra (材料科学), achieving consistent nanoparticle size distributions (化学) with <5% polydispersity through active feedback adjustment of citrate reduction rates (化学).  \n- Q2:  \nA convolutional neural network (计算机科学技术) processing streaming dark-field scattering spectra (材料科学) can decode real-time nanoparticle shape evolution (材料科学) during photochemical synthesis (化学), and couple with genetic algorithm (计算机科学技术) parameter optimization to dynamically adjust laser intensity (材料科学) and precursor ratios (化学), enabling autonomous synthesis of gold nanostars with 10±1 branches (材料科学) and controlled tip sharpness (材料科学)."
+    ],
+    "structured_paths": {},
+    "elapsed_seconds": 39.47,
+    "error": null
+  },
+  {
+    "paper_id": "a6f866ca73d0",
+    "title": "Self-driving lab for the photochemical synthesis of plasmonic nanoparticles with targeted structural and optical properties",
+    "model": "qwen3-235b-a22b",
+    "method_name": "P4",
+    "free_text_hypotheses": [
+      "L1 Hypothesis:\n  hypothesis: 将微流体反应器的动态流体控制能力与深度神经网络的实时多目标优化相结合，可通过构建反应条件-纳米粒子形态-光学性质的三维映射模型，在线动态调整合成参数以实现等离激元共振峰波长的亚纳米级精度调控。\n  reasoning: \n    1. 微流体反应器能够精确控制试剂混合梯度和反应时间（材料科学）\n    2. 深度神经网络可通过损失函数量化光学性质与形态参数的非线性关系（计算机科学）\n    3. 三维映射模型可建立流体剪切力-成核生长动力学-等离激元共振的跨尺度关联（跨学科机制）\n    4. 预测：在银三角纳米棱镜合成中，该系统可将半高全宽控制在±5nm范围内\n  key_concepts: 微流体反应器, 深度神经网络, 等离激元共振峰波长, 三维映射模型, 半高全宽\n  disciplines_bridged: 材料科学, 计算机科学技术\n\nL2 Hypotheses:\n- Q1:\n    hypothesis: 微流体反应器通过生成梯度试剂浓度场形成的高维数据云，配合协方差矩阵适应进化策略的并行优化能力，可实现多维化学空间的指数级加速探索。\n    reasoning: \n      1. 微流体系统可产生连续可调的二维浓度梯度（材料科学）\n      2. CMA-ES算法擅长处理高维非凸优化问题（计算机科学）\n      3. 浓度梯度数据云可训练反应动力学代理模型（跨学科机制）\n      4. 预测：在同等算力下，该方法探索10维化学空间的速度比传统DOE快100倍\n    key_concepts: 微流体反应器, 协方差矩阵适应进化策略, 高维数据云, 代理模型, 多维化学空间\n    disciplines_bridged: 材料科学, 计算机科学技术\n- Q2:\n    hypothesis: 贝叶斯优化框架通过整合遗传算法的全局搜索能力和深度神经网络的局部精调特性，可建立反应条件到纳米粒子尺寸分布的层次化响应面模型。\n    reasoning: \n      1. 遗传算法适合处理离散型反应参数优化（计算机科学）\n      2. 深度学习可建模连续型工艺参数（计算机科学）\n      3. 层次化建模可解决尺度效应导致的参数耦合问题（跨学科机制）\n      4. 预测：该方法可将银纳米粒子尺寸标准差从传统方法的±8nm降低至±2nm\n    key_concepts: 贝叶斯优化, 遗传算法, 深度神经网络, 响应面模型, 纳米粒子尺寸分布\n    disciplines_bridged: 计算机科学技术, 材料科学\n\nL3 Hypotheses:\n- Q1:\n    hypothesis: 在闭环调控系统中，微流体反应器的实时流变学数据与贝叶斯优化的获取函数相结合，可通过在线更新先验分布实现反应动力学参数的在线校正。\n    reasoning: \n      1. 微流体系统可获取毫秒级反应进程数据（材料科学）\n      2. 贝叶斯优化通过概率模型融合先验知识（计算机科学）\n      3. 流变学特征峰可作为动力学模型校正的隐变量（跨学科机制）\n      4. 预测：在光照强度波动±15%时，系统仍能维持等离激元峰位漂移<2nm\n    key_concepts: 微流体反应器, 贝叶斯优化, 获取函数, 流变学数据, 反应动力学参数\n    disciplines_bridged: 材料科学, 计算机科学技术\n- Q2:\n    hypothesis: 基于卷积神经网络的在线光谱分析系统，通过迁移学习融合离线合成数据库与实时流体动力学模型，可实现纳米粒子形貌的原位预测与反馈控制。\n    reasoning: \n      1. 在线光谱提供实时消光谱图数据（材料科学）\n      2. 迁移学习可跨平台迁移实验室先验知识（计算机科学）\n      3. 流体模型约束提升小样本条件下的预测可靠性（跨学科机制）\n      4. 预测：在进料速度变化5倍的情况下，三角纳米棱镜产率保持>85%\n    key_concepts: 在线光谱, 卷积神经网络, 迁移学习, 流体动力学模型, 纳米粒子形貌\n    disciplines_bridged: 材料科学, 计算机科学技术"
+    ],
+    "structured_paths": {},
+    "elapsed_seconds": 39.95,
+    "error": null
+  },
+  {
+    "paper_id": "0aafd9a38c81",
+    "title": "Large scale investigation of GPCR molecular dynamics data uncovers allosteric sites and lateral gateways",
+    "model": "qwen3-235b-a22b",
+    "method_name": "P1",
+    "free_text_hypotheses": [
+      "**Hypothesis:**  \nWe propose that G protein-coupled receptors (GPCRs) utilize distinct **conformational transition pathways** (而非单一静态激活态) to encode functional specificity, where the **dynamic interconversion rates** between intermediate states (而非终态稳定性) determine downstream signaling bias. Specifically, ligands modulate the energy barriers between these intermediates, creating unique \"dynamic fingerprints\" that selectively engage effector proteins (e.g., G proteins vs. arrestins) based on their temporal occupancy thresholds. For instance, a transient intermediate with a sub-second lifetime may preferentially couple to G proteins, while prolonged stabilization of a distinct intermediate enhances arrestin recruitment. This hypothesis posits that druggable targets reside not only in canonical binding pockets but also in **dynamic allosteric nodes** that govern transition kinetics, which can be identified through time-resolved structural analyses combined with machine learning-driven dynamic network modeling. Testing this framework could reveal novel therapeutic strategies by targeting GPCR \"dynamic signatures\" to fine-tune signaling outcomes with unprecedented precision."
+    ],
+    "structured_paths": {},
+    "elapsed_seconds": 24.84,
+    "error": null
+  },
+  {
+    "paper_id": "0aafd9a38c81",
+    "title": "Large scale investigation of GPCR molecular dynamics data uncovers allosteric sites and lateral gateways",
+    "model": "qwen3-235b-a22b",
+    "method_name": "P2",
+    "free_text_hypotheses": [
+      "L1 Hypothesis:  \nGPCR构象动态的时空异质性通过协同调控受体\"呼吸\"运动与膜脂质微环境重塑，形成多维功能调控网络，其中局部构象熵变驱动信号转导通路选择性，而脂质介导的隐匿变构位点动态暴露为开发时空特异性靶向药物提供关键分子基础。  \n\nL2 Hypotheses:  \n- Q1: 基于多尺度结构生物学技术（冷冻电镜+晶体学+原子力显微镜）揭示GPCR跨膜螺旋束在不同配体刺激下的非对称性摆动轨迹，结合氢氘交换质谱将识别出决定G蛋白偶联效率的动态\"热点\"区域（如TM6-Cyto近膜区），其构象转换速率与下游信号通路偏向性呈正相关。  \n- Q2: 膜脂质组分（如胆固醇/鞘磷脂/磷脂酰胆碱比例）通过调控双分子层曲率应力，特异性稳定GPCR侧向入口门控区域的开放构象，其中带负电荷磷脂（如PS）通过静电相互作用诱导变构口袋Lys/Arg残基重排，从而改变别构调节剂的结合能垒，为开发基于脂质纳米盘的定向药物递送系统提供新靶点。  \n\n（注：假设设计融合了结构生物学技术解析动态构象的前沿方法，同时将脂质组学与药物化学交叉，提出了分子层面的作用机制和转化应用方向，符合跨学科创新要求。）"
+    ],
+    "structured_paths": {},
+    "elapsed_seconds": 25.59,
+    "error": null
+  },
+  {
+    "paper_id": "0aafd9a38c81",
+    "title": "Large scale investigation of GPCR molecular dynamics data uncovers allosteric sites and lateral gateways",
+    "model": "qwen3-235b-a22b",
+    "method_name": "P3",
+    "free_text_hypotheses": [
+      "L1 Hypothesis:  \nThe conformational dynamics of G protein-coupled receptors (GPCRs), characterized by local \"breathing\" motions on nano- to microsecond timescales (生物学: 构象动力学), are directly modulated by membrane lipid interactions (化学: 膜脂质动力学), which in turn regulate the accessibility of allosteric drug binding sites (生物学: 变构药物结合位点). This interplay between structural flexibility and lipid environment (基础医学: 药物靶向策略) creates a mechanistic framework where disease-specific mutations (基础医学: 神经系统疾病) could alter the equilibrium between open/closed conformational states, offering novel therapeutic targets through lipid composition modulation.\n\nL2 Hypotheses:  \n- Q1:  \nStructural biology techniques (生物学: 射线晶体学, 冷冻电子显微镜) combined with molecular dynamics simulations (生物学: 分子动力学模拟) will reveal that specific lipid insertion patterns (化学: 脂质插入) at transmembrane helix interfaces directly stabilize active/inactive GPCR conformations (生物学: 构象状态). This mechanism would explain how lipid bilayer asymmetry (化学: 膜脂质) differentially regulates G protein coupling efficiency across receptor subtypes (生物学: 受体亚型), providing a structural basis for biased signaling in drug development (基础医学: 治疗策略).  \n\n- Q2:  \nMembrane lipid dynamics (化学: 膜脂质动力学) modulate the opening/closing kinetics of lateral ligand entry gates (生物学: 侧向配体进入通道) through transient hydrophobic mismatches, which can be quantitatively predicted by molecular dynamics simulations (化学: 分子动力学). This lipid-dependent permeability control (化学: 渗透) mechanism would allow cell-type-specific drug targeting (基础医学: 药物靶向策略) by exploiting differential lipid compositions in disease states (基础医学: 神经系统疾病).  \n\nL3 Hypotheses:  \n- Q1:  \nIntegration of X-ray crystallography (生物学: 射线晶体学), cryo-EM (生物学: 冷冻电子显微镜), and enhanced-sampling molecular dynamics (生物学: 分子动力学模拟) will enable quantitative correlation between experimentally observed \"micro-switch\" residue fluctuations (生物学: 构象柔性) and predicted allosteric communication networks (生物学: 变构通讯网络). This synergy would validate computational predictions of hidden binding sites (生物学: 变构药物结合位点) through experimental structures resolved in lipidic cubic phases (化学: 膜脂质).  \n\n- Q2:  \nA machine learning model trained on molecular dynamics datasets (生物学: 分子动力学数据库) incorporating lipid density fluctuations (化学: 膜脂质动力学) will predict lateral ligand entry gate (生物学: 侧向配体进入通道) opening probabilities with >85% accuracy, which can be experimentally tested through site-directed spin labeling and lipid composition modulation (基础医学: 分子调节剂). This approach would establish lipid occupancy as a druggable parameter for controlling allosteric site accessibility (基础医学: 治疗策略)."
+    ],
+    "structured_paths": {},
+    "elapsed_seconds": 31.26,
+    "error": null
+  },
+  {
+    "paper_id": "0aafd9a38c81",
+    "title": "Large scale investigation of GPCR molecular dynamics data uncovers allosteric sites and lateral gateways",
+    "model": "qwen3-235b-a22b",
+    "method_name": "P4",
+    "free_text_hypotheses": [
+      "L1 Hypothesis:  \nhypothesis: 膜脂质动态通过调控蛋白偶联受体构象柔性与脂质插入特征，形成时空调制的变构通讯网络，进而影响药物靶向策略的时空特异性。  \nreasoning:  \n1. 前提：膜脂质动力学可暴露隐藏变构位点（已知关系4），脂质插入标记变构通讯网络（已知关系6）  \n2. 机制：膜脂质组成动态变化可能通过局部物理化学效应（如脂质双分子层曲率张力）诱导受体跨膜区构象柔性梯度变化，这种梯度柔性通过脂质插入热点位点形成动态变构信号传递路径  \n3. 预测：特定膜脂质亚型（如胆固醇衍生物）的时空分布可编程调控Gαs与Gαi亚型受体的信号偏向性，通过设计膜脂质微环境可实现时空特异性变构药物开发  \nkey_concepts: [膜脂质动力学, 构象柔性, 变构通讯网络, 药物靶向策略, 脂质插入]  \ndisciplines_bridged: [生物学, 基础医学, 化学]  \n\nL2 Hypotheses:  \n- Q1:  \nhypothesis: X射线晶体学与冷冻电镜技术捕获的离散构象状态可通过分子动力学模拟构建连续信号传导能量图谱，揭示受体活化的协同构象转换阈值  \nreasoning:  \n1. 前提：晶体学和电镜技术可解析不同构象状态（关系1,2），动力学模拟揭示构象动态（关系3）  \n2. 机制：将高分辨率静态结构作为初始坐标输入，结合温度梯度模拟可重构激活能垒跃迁路径，发现跨膜螺旋间盐桥网络的时序断裂模式  \n3. 预测：β2-肾上腺素受体Gs蛋白偶联过程中存在中间态构象的能垒协同降低效应，靶向该中间态可开发新型信号偏向配体  \nkey_concepts: [X射线晶体学, 冷冻电子显微镜, 分子动力学模拟, 信号传导, 构象状态]  \ndisciplines_bridged: [生物学, 化学]  \n\n- Q2:  \nhypothesis: 膜脂质环境中带电磷脂酰肌醇异构体的不对称分布通过电场效应调控侧向配体进入通道的开放概率，影响非经典药物结合动力学  \nreasoning:  \n1. 前提：膜脂质动力学暴露侧向通道（关系5），配体结合影响信号传导（关系8）  \n2. 机制：磷脂酰肌醇4,5-二磷酸（PIP2）的负电荷密度梯度可能通过长程电势扰动受体跨膜区精氨酸指纹残基的质子化状态，引发螺旋间氢键网络重构  \n3. 预测：调控膜片中PIP2浓度可逆向操控CB1大麻素受体侧向通道开闭，该机制可用于设计具有膜定位依赖性的靶向药物缓释系统  \nkey_concepts: [膜脂质动力学, 侧向配体进入通道, 分子动力学, 药物靶向策略, 化学信号]  \ndisciplines_bridged: [基础医学, 化学]  \n\nL3 Hypotheses:  \n- Q1:  \nhypothesis: 整合晶体学、电镜结构与动力学模拟数据可建立\"结构动态权重模型\"，通过构象柔性参数优化变构位点预测灵敏度  \nreasoning:  \n1. 前提：多模态结构技术需协同验证（操作级问题Q1）  \n2. 机制：将晶体结构的刚性区域与电镜捕捉的柔性区域进行弹性网络建模，结合模拟得到的微秒级运动轨迹，定义变构位点的动态可及性评分函数  \n3. 预测：对A2A腺苷受体构建的动态模型可提前100ns预测ZM241385拮抗剂向D口袋迁移的结合路径，指导光交联探针设计  \nkey_concepts: [射线晶体学, 冷冻电子显微镜, 分子动力学模拟, 构象动态, 变构结合位点]  \ndisciplines_bridged: [生物学, 基础医学]  \n\n- Q2:  \nhypothesis: 开发基于脂质动力学特征的虚拟筛选平台，通过监测侧向通道开闭频率识别具有膜渗透梯度响应性的新型变构调节剂  \nreasoning:  \n1. 前提：膜脂质影响药物策略（学科Q2）  \n2. 机制：构建包含双层磷脂混合体系的全原子模型，量化不同化学骨架小分子通过侧向通道时与膜脂质酰基链的范德华能波动特征  \n3. 预测：筛选得到的化合物库中将包含具有\"膜门控\"特性的PDK1变构抑制剂，其结合亲和力随膜电位变化呈现阶跃响应曲线  \nkey_concepts: [膜脂质动力学, 侧向通道, 分子动力学, 药物筛选, 渗透]  \ndisciplines_bridged: [基础医学, 化学]"
+    ],
+    "structured_paths": {},
+    "elapsed_seconds": 48.36,
+    "error": null
+  },
+  {
+    "paper_id": "c7202044749e",
+    "title": "3D-printed aberration-free terahertz metalens for ultra-broadband achromatic super-resolution wide-angle imaging with high numerical aperture",
+    "model": "qwen3-235b-a22b",
+    "method_name": "P1",
+    "free_text_hypotheses": [
+      "**Hypothesis:** Integrating non-Hermitian topological photonics with dynamic symmetry-breaking control can overcome chromatic aberration and diffraction limits in terahertz imaging. Specifically, a hybrid metasurface combining topological edge states (supporting robust unidirectional propagation) and parity-time (PT) symmetric gain-loss domains will enable subwavelength focusing through exceptional point (EP) engineering. By actively tuning the EP degeneracy via optoelectric feedback, the system will simultaneously compress the point spread function (PSF) below λ/5 and compensate chromatic dispersion across a 0.1–3 THz bandwidth, achieving real-time super-resolution imaging without cryogenic cooling. This hypothesis will be tested by fabricating a reconfigurable InSb-based topological photonic crystal with integrated graphene-dielectric heterostructures, measuring PSF narrowing under terahertz quantum cascade laser illumination, and quantifying color aberration correction through hyperspectral imaging of sub-λ/3 resolution targets."
+    ],
+    "structured_paths": {},
+    "elapsed_seconds": 20.9,
+    "error": null
+  },
+  {
+    "paper_id": "c7202044749e",
+    "title": "3D-printed aberration-free terahertz metalens for ultra-broadband achromatic super-resolution wide-angle imaging with high numerical aperture",
+    "model": "qwen3-235b-a22b",
+    "method_name": "P2",
+    "free_text_hypotheses": [
+      "L1 Hypothesis: 通过结合介电梯度超材料的亚波长尺度电磁调控能力与三维打印技术的复杂几何成型优势，构建具有空间连续可调折射率分布的THz金属enses，可同步实现宽频消色差与超衍射极限聚焦，为THz波段突破传统光学系统物理约束提供全新技术范式。\n\nL2 Hypotheses:\n- Q1: 介电梯度超材料通过周期性亚波长单元结构的几何参数调控，构建具有非均匀等效折射率分布的相位梯度场，利用传播相位与几何相位的协同效应实现色散补偿，在0.2-0.9 THz宽频范围内保持恒定的聚焦效率和衍射受限的焦斑尺寸（<λ/2），其相位控制精度达到±5°量级。\n- Q2: 高精度多材料3D打印技术通过逐层光固化聚合物基复合材料，实现介电常数在0.1-15 THz频段连续可调的梯度折射率分布（Δn>0.8），其空间分辨率（50μm层厚）和界面粗糙度（Ra<2μm）满足超材料色散补偿相位分布的制造公差要求，通过工艺参数闭环反馈控制可将折射率分布误差控制在±3%以内。"
+    ],
+    "structured_paths": {},
+    "elapsed_seconds": 24.28,
+    "error": null
+  },
+  {
+    "paper_id": "c7202044749e",
+    "title": "3D-printed aberration-free terahertz metalens for ultra-broadband achromatic super-resolution wide-angle imaging with high numerical aperture",
+    "model": "qwen3-235b-a22b",
+    "method_name": "P3",
+    "free_text_hypotheses": [
+      "L1 Hypothesis: 通过物理学中的超振荡透镜原理与材料科学中介电梯度超材料的折射率分布调控相结合，可构建突破阿贝衍射极限的THz成像系统。具体机制是利用梯度超材料的亚波长纳米散射体实现连续折射率分布（Δn>0.8），同时通过超表面离轴像差补偿算法优化相位分布，在0.2-0.9 THz宽带范围内产生等效负色散效应，从而在保持0.2λ超分辨能力的同时消除传统光学系统的色差约束。\n\nL2 Hypotheses:\n- Q1: 介电梯度超材料通过同心纳米环结构的周期性排列实现宽带相位补偿，其折射率分布(n(r)=n₀+kr²)与THz波长(λ)的耦合关系可表示为：Δφ=2π(kλ)⁻¹∫₀^R r dr。当结构单元的几何相位梯度(∇Φ=2π/Λ)与材料色散(dn/dλ)满足∂(kλ)/∂λ=0时，可实现0.555NA下的消色差超分辨成像，实验验证可通过测量不同频率点的点扩散函数半高宽是否保持<λ/3实现。\n- Q2: 三维打印技术采用高纵横比纳米柱结构（H/D>5:1）的逐层堆叠工艺，通过控制光固化树脂的收缩率（<2%）和层间对准精度（±1μm），可精确复现亚波长纳米散射体的周期性排列。其制造误差与超构透镜相位畸变的关系可建模为：ΔOPD=2π(n_print-n_design)h/λ，当打印层厚h<λ/10时，系统波前畸变(RMS<λ/14)可满足超分辨成像需求。\n\nL3 Hypotheses:\n- Q1: 在梯度超材料-超表面复合结构中，当介电纳米柱的纵横比(AR=5:1)与同心环周期(Λ=λ/2)满足λ/Λ=2AR关系时，其等效介质理论预测的折射率分布(n_eff=√(ε_r))与电磁波传播的相位累积(φ=2πn_eff h/λ)将形成正反馈机制。通过三维打印实现的折射率分布标准差σ(n)<0.05时，可在0.9 THz处获得0.18λ的超分辨聚焦，突破传统衍射极限的0.61λ限制。\n- Q2: 高纵横比纳米柱与离轴超表面的协同设计通过两种机制扩展视场：1) 纳米柱阵列的倏逝波耦合增强(β=1.2k₀)使有效数值孔径从0.555提升至0.8；2) 超表面引入的离轴相位梯度(∇Φ=0.3k₀)在±45°视场范围内补偿场曲，其波前校正能力可通过测量视场边缘的调制传递函数(MTF>0.3 at 200 lp/mm)进行量化验证。"
+    ],
+    "structured_paths": {},
+    "elapsed_seconds": 29.25,
+    "error": null
+  },
+  {
+    "paper_id": "c7202044749e",
+    "title": "3D-printed aberration-free terahertz metalens for ultra-broadband achromatic super-resolution wide-angle imaging with high numerical aperture",
+    "model": "qwen3-235b-a22b",
+    "method_name": "P4",
+    "free_text_hypotheses": [
+      "L1 Hypothesis:\nhypothesis: 通过将介电梯度超材料的连续折射率分布与超表面亚波长纳米散射体的离散相位调控相结合，可构建具有双重相位调制机制的混合型太赫兹金属ens，同时克服色差与衍射极限约束，实现宽谱段超分辨成像。\nreasoning: \n1. 前提：介电梯度超材料可实现连续折射率分布（材料科学），超表面技术可通过亚波长结构提供离散相位补偿（电子与自动控制）。\n2. 新机制：两种相位调控机制在电磁波传播路径上形成协同作用，梯度折射率负责宽带消色差，亚波长结构校正高阶球差。\n3. 预测：混合透镜在0.2-0.9 THz范围内可将点扩散函数半高宽压缩至λ/5以下，且视场角扩展至100°时畸变小于5%。\nkey_concepts: dielectric gradient metamaterials, metasurfaces, super-resolution, chromatic aberration, subwavelength structures\ndisciplines_bridged: 物理学, 材料科学, 电子、通信与自动控制技术\n\nL2 Hypotheses:\n- Q1:\n    hypothesis: 利用介电梯度超材料的厚度-折射率耦合关系，通过三维空间折射率梯度矢量场设计，可实现相位分布与色散特性的独立调控，从而获得消色差超分辨所需的宽频段共焦特性。\n    reasoning: \n    1. 前提：介电超材料可通过结构参数调整有效折射率（材料科学），THz消色差需多波长相位同步校正（物理学）。\n    2. 新机制：在z轴构建非对称折射率梯度，使不同波长聚焦路径产生等光程差，同时径向梯度优化点扩散函数。\n    3. 预测：在0.5 THz处实现±0.2 THz带宽内焦距波动＜5 μm，分辨率达到0.15λ。\n    key_concepts: refractive index profile, achromatic super-resolution, gradient metamaterials, phase distribution\n    disciplines_bridged: 物理学, 材料科学\n    \n- Q2:\n    hypothesis: 基于高纵横比纳米柱结构的3D打印工艺误差容限模型，建立层间对准误差与相位畸变的傅里叶域映射关系，可实现超构透镜亚波长结构的公差优化设计。\n    reasoning: \n    1. 前提：3D打印受限于层间对准精度（电子工程），高纵横比结构对制造误差敏感（材料科学）。\n    2. 新机制：将制造误差转换为相位调制噪声谱，通过空间频率域滤波设计抗误差元结构。\n    3. 预测：当层间偏移＜2 μm时，透镜聚焦效率保持＞85%，点扩散函数对比度下降＜10%。\n    key_concepts: 3D printing, high aspect ratio nanopillars, error tolerance, phase distortion\n    disciplines_bridged: 材料科学, 电子、通信与自动控制技术\n\nL3 Hypotheses:\n- Q1:\n    hypothesis: 通过将介电梯度超材料的连续折射率分布作为基底，上层集成同心纳米环超表面结构，可构建具有级联相位调制的双层金属ens，实现折射率分布与亚波长散射的协同优化，突破阿贝极限。\n    reasoning: \n    1. 前提：梯度折射率提供基础聚焦（材料科学），同心纳米环调控倏逝波（物理学）。\n    2. 新机制：梯度折射率层压缩传播相位，超表面层增强倏逝波耦合，形成复合型超振荡场。\n    3. 预测：在0.3 THz处可分辨0.15λ间距的双点目标，且工作距离扩展至传统超构透镜的2倍。\n    key_concepts: dielectric gradient metamaterials, concentric nanoring structures, super-oscillatory lens, Abbe diffraction limit\n    disciplines_bridged: 物理学, 材料科学\n    \n- Q2:\n    hypothesis: 采用高纵横比纳米柱与离轴同心环结构的混合设计，通过几何相位与传播相位的联合调控，可在保持0.555 NA的同时将视场角扩展至95°，通过非对称结构补偿离轴像差。\n    reasoning: \n    1. 前提：高纵横比结构提升NA（材料科学），离轴像差限制视场（物理学）。\n    2. 新机制：纳米柱提供高折射率对比度增强收集效率，同心环产生空间可变几何相位抵消离轴光程差。\n    3. 预测：在85°视场角处调制传递函数值＞0.4，且能量集中度较传统金属ens提升30%。\n    key_concepts: high aspect ratio nanopillars, off-axis aberration, concentric structures, field of view\n    disciplines_bridged: 材料科学, 电子、通信与自动控制技术"
+    ],
+    "structured_paths": {},
+    "elapsed_seconds": 53.04,
+    "error": null
+  },
+  {
+    "paper_id": "c5641167db43",
+    "title": "Tailoring industrial enzymes for thermostability and activity evolution by the machine learning-based iCASE strategy",
+    "model": "qwen3-235b-a22b",
+    "method_name": "P1",
+    "free_text_hypotheses": [
+      "**假设：**  \n等温压缩（200–400 MPa，30–60分钟）通过诱导酶分子内部疏水效应增强与α-螺旋结构重排，提高其热稳定性（Tm值）；同时，动态挤压指数扰动（频率5–20 Hz，剪切速率1000–3000 s⁻¹）通过周期性机械应力激活酶活性位点的局部柔性，促进底物结合动力学（降低Km），两者协同作用可通过压力-机械力双信号通路调控酶的构象动态平衡，最终在亚致死温度（如60–70°C）下实现热稳定性（ΔTm ≥ 5°C）与催化效率（kcat/Km提升2–5倍）的同步突破。  \n\n**验证路径：**  \n1. 通过差示扫描量热法（DSC）与圆二色光谱（CD）分析结构变化；  \n2. 测定不同处理组的Tm值、残余活性（60°C保温1小时）及动力学参数；  \n3. 分子动力学模拟压力与剪切力对活性位点氢键网络与水化层的影响。"
+    ],
+    "structured_paths": {},
+    "elapsed_seconds": 19.32,
+    "error": null
+  },
+  {
+    "paper_id": "c5641167db43",
+    "title": "Tailoring industrial enzymes for thermostability and activity evolution by the machine learning-based iCASE strategy",
+    "model": "qwen3-235b-a22b",
+    "method_name": "P2",
+    "free_text_hypotheses": [
+      "L1 Hypothesis: 通过iCASE策略构建的分层模块化动态网络能协同优化酶的热稳定性和催化活性，其核心机制在于利用等温压缩诱导的动态挤压指数扰动，通过结构响应机制在变体间形成适应性进化通路，而基于结构特征的监督式机器学习模型可精确预测这种动态响应模式并指导定向进化。\n\nL2 Hypotheses:\n- Q1: 基于PET水解酶三维结构的动态挤压指数特征构建的图卷积神经网络模型，可通过识别催化界面的柔性区域与刚性核心的耦合模式，实现对聚合物底物结合构象的高精度预测（R²>0.85），且关键氢键网络的预测准确率可突破传统分子对接方法15%以上。\n- Q2: 分子响应模型揭示的动态挤压指数临界阈值（ΔE≤0.3 kcal/mol·Å²）可作为酶工程改造的\"进化开关\"，指导在柔性区域引入二硫键或π-π堆积时优先选择ΔE值接近临界点的残基位点，从而在保持催化活性的同时提升热稳定性（ΔTm≥8℃）并突破稳定性-活性权衡陷阱。"
+    ],
+    "structured_paths": {},
+    "elapsed_seconds": 22.34,
+    "error": null
+  },
+  {
+    "paper_id": "c5641167db43",
+    "title": "Tailoring industrial enzymes for thermostability and activity evolution by the machine learning-based iCASE strategy",
+    "model": "qwen3-235b-a22b",
+    "method_name": "P3",
+    "free_text_hypotheses": [
+      "L1 Hypothesis:  \nThe iCASE strategy enhances industrial enzyme thermostability and catalytic activity by synergistically optimizing hierarchical modular networks through isothermal compressibility-induced dynamic squeezing index perturbations (化学) and structure-based supervised machine learning models (计算机科学技术). Specifically, dynamic squeezing index fluctuations modulate hydrophobic interactions and hydrogen bond networks near catalytic pockets, while machine learning algorithms predict optimal epistatic mutation combinations that balance sign epistasis and magnitude epistasis in fitness landscapes, leading to adaptive evolution peaks with minimal stability-activity trade-offs.\n\nL2 Hypotheses:  \n- Q1:  \nThe structure-based supervised machine learning model (计算机科学技术) can quantitatively correlate PET hydrolase's dynamic squeezing index (化学) with substrate binding modes (化学) by training on hydrogen bond patterns and salt bridge dynamics at enzyme-polymer interfaces. This enables prediction of PET polymer binding conformations with ≥85% accuracy, which could be experimentally validated by comparing computationally designed variants with enhanced hydrophobic interaction scores to their measured catalytic efficiency (k_cat/K_M).  \n\n- Q2:  \nThe molecular response mechanism of adaptive evolution (生物学) in enzyme variants is mediated by dynamic squeezing index-triggered allosteric communication between catalytic residues and surface charged residues (化学). Machine learning-predicted key residues (计算机科学技术) involved in this structural response will show conserved salt bridge formation patterns across homologous enzymes, and targeted mutagenesis of these sites will shift the fitness landscape towards higher thermal stability without compromising catalytic turnover rates.\n\nL3 Hypotheses:  \n- Q1:  \nThe synergy between chemical-driven dynamic squeezing index networks (化学) and machine learning epistasis prediction (计算机科学技术) arises from their complementary sensitivity to different stabilization mechanisms: dynamic index perturbations primarily optimize backbone rigidity through hydrogen bond network rewiring, while ML models preferentially identify synergistic disulfide bond-metall ion coordination pairs that enhance catalytic cavity plasticity. Combined analysis of these effects will reveal a Pareto frontier of mutations that maximize both structural compressibility and catalytic efficiency.  \n\n- Q2:  \nA workflow integrating protein surface charge analysis (化学), phenotypic fitness landscape modeling (生物学), and dynamic response prediction (计算机科学技术) can quantitatively link electrostatic potential gradients to epistasis patterns. Specifically, enzyme variants with surface charge distributions that match machine learning-predicted optimal electrostatic potentials will exhibit enhanced adaptive evolution trajectories, as evidenced by higher fitness gains per mutation in laboratory evolution experiments and improved correlation (R² > 0.7) between computed dynamic response indices and experimentally measured melting temperatures (T_m)."
+    ],
+    "structured_paths": {},
+    "elapsed_seconds": 26.23,
+    "error": null
+  },
+  {
+    "paper_id": "c5641167db43",
+    "title": "Tailoring industrial enzymes for thermostability and activity evolution by the machine learning-based iCASE strategy",
+    "model": "qwen3-235b-a22b",
+    "method_name": "P4",
+    "free_text_hypotheses": [
+      "L1 Hypothesis:\n  hypothesis: Integrating metal ion coordination chemistry with dynamic response predictive models will enhance thermal stability in industrial enzymes by creating synergistic interactions between protein surface charges and epistatic networks.\n  reasoning: \n    1. Premise: Metal ions stabilize proteins through surface charge interactions (化学) while epistasis shapes fitness landscapes (生物学)\n    2. Mechanism: Machine learning models (计算机科学技术) could identify optimal metal ion binding sites that amplify beneficial epistatic interactions\n    3. Prediction: Enzymes engineered with coordinated metal ion-epistasis modules will show 20% higher thermostability than wild-type counterparts\n  key_concepts: metal ions, protein surface charges, epistasis, dynamic response predictive model, fitness landscape\n  disciplines_bridged: 化学, 生物学, 计算机科学技术\n\nL2 Hypotheses:\n- Q1:\n    hypothesis: Combining molecular dynamics simulations of hydrogen bond networks with supervised machine learning will enable quantitative prediction of PET polymer binding modes through solvent accessibility patterns\n    reasoning: \n      1. Premise: Hydrogen bonds determine substrate binding (化学) and machine learning excels at pattern recognition (计算机科学技术)\n      2. Mechanism: Dynamic hydrogen bond occupancy metrics from simulations train ML models to predict binding orientation\n      3. Prediction: PET hydrolase variants with enhanced H-bond network stability will show 3-fold higher catalytic efficiency\n    key_concepts: hydrogen bonds, molecular dynamics simulations, structure-based supervised machine learning, solvent accessibility, catalytic efficiency\n    disciplines_bridged: 化学, 计算机科学技术\n- Q2:\n    hypothesis: Adaptive evolution mechanisms can be harnessed for enzyme engineering through integrating sign epistasis analysis with hierarchical modular network perturbations\n    reasoning:\n      1. Premise: Sign epistasis shapes evolutionary trajectories (生物学) and iCASE constructs modular networks (化学)\n      2. Mechanism: Perturbing module connectivity alters epistatic interactions mapped by fitness landscapes\n      3. Prediction: Modular network rearrangements that convert antagonistic to synergistic epistasis will increase enzyme fitness by 40%\n    key_concepts: sign epistasis, hierarchical modular networks, adaptive evolution, fitness landscape, network perturbation\n    disciplines_bridged: 化学, 生物学\n\nL3 Hypotheses:\n- Q1:\n    hypothesis: Dynamic squeezing index networks optimized through magnitude epistasis prediction will achieve superior catalytic performance by synchronizing mechanical stress transmission with allosteric regulation\n    reasoning:\n      1. Premise: Dynamic squeezing indices measure structural flexibility (化学) while ML predicts epistasis (计算机科学技术)\n      2. Mechanism: Epistasis-aware optimization of squeezing indices aligns mechanical stress with active site dynamics\n      3. Prediction: Enzymes with co-evolved squeezing-epistasis parameters will exhibit higher turnover rates under industrial conditions\n    key_concepts: dynamic squeezing index, magnitude epistasis, mechanical stress transmission, allosteric regulation, catalytic turnover\n    disciplines_bridged: 化学, 计算机科学技术\n- Q2:\n    hypothesis: A multi-omics workflow integrating charge hydration analysis with adaptive landscape modeling will predict enzyme stability-activity trade-offs with 90% accuracy\n    reasoning:\n      1. Premise: Protein surface charges affect solubility (化学) and fitness landscapes describe adaptive trade-offs (生物学)\n      2. Mechanism: Charge distribution metrics inform landscape models through hydration shell dynamics\n      3. Prediction: Charge-hydrated landscape models will correctly classify 90% of stability-activity variants in validation datasets\n    key_concepts: protein surface charges, fitness landscape, charge hydration, stability-activity trade-off, multi-omics integration\n    disciplines_bridged: 化学, 生物学, 计算机科学技术"
+    ],
+    "structured_paths": {},
+    "elapsed_seconds": 44.85,
+    "error": null
+  },
+  {
+    "paper_id": "69cf875bdbf7",
+    "title": "Quasi Fe MIL-53 nanozyme inducing ferroptosis and immunogenic cell death for cancer immunotherapy",
+    "model": "qwen3-235b-a22b",
+    "method_name": "P1",
+    "free_text_hypotheses": [
+      "本研究提出一种创新假设：通过理性设计具有可逆氧化还原活性的准金属（如Bi/Sb基）有机框架材料，其配位不饱和金属节点可协同有机配体的共轭π体系形成\"双活性位点\"，在肿瘤微环境（pH 6.5-6.8）中特异性触发类芬顿反应与NADH氧化酶双重催化机制。该假设认为，通过调控金属-配体电荷转移（MLCT）效应和框架限域效应，可实现H2O2歧化反应的能垒降低（<0.3 eV）与单线态氧（¹O₂）量子产率提升（>40%），同时利用准金属元素的s/p轨道特性增强与谷胱甘肽（GSH）的特异性结合，从而通过氧化应激放大效应选择性破坏肿瘤细胞线粒体膜电位。验证该假设需构建具有梯度孔径（2-5 nm）和表面硫醇基团定向修饰的MOF-808衍生物，并采用原位电子顺磁共振（EPR）结合同步辐射X射线吸收谱（XAS）追踪催化反应路径。"
+    ],
+    "structured_paths": {},
+    "elapsed_seconds": 21.09,
+    "error": null
+  },
+  {
+    "paper_id": "69cf875bdbf7",
+    "title": "Quasi Fe MIL-53 nanozyme inducing ferroptosis and immunogenic cell death for cancer immunotherapy",
+    "model": "qwen3-235b-a22b",
+    "method_name": "P2",
+    "free_text_hypotheses": [
+      "L1 Hypothesis:  \n准金属有机框架材料的过渡态结构设计可通过调控金属-配体配位环境与孔隙率的协同效应，优化纳米酶类过氧化物酶/过氧化氢酶双模催化活性位点的空间分布与电子传递效率，从而同时增强肿瘤微环境中活性氧的级联生成能力与谷胱甘肽耗竭效应。这种结构特性将触发铁死亡相关的脂质过氧化物积累与钙网蛋白暴露，通过双重机制诱导肿瘤细胞免疫原性死亡并激活树突状细胞-T细胞轴的抗肿瘤免疫应答，为化学-材料-医学交叉的肿瘤治疗范式提供新路径。\n\nL2 Hypotheses:  \n- Q1:  \n可控配体去除策略可通过部分破坏MIL-53(Fe)的羧酸配体网络，在保留母体框架拓扑结构的同时诱导Fe³⁺活性位点的配位不饱和度升高与局部电子云密度重分布。这种过渡态结构将降低类酶催化反应中自由基中间体生成的活化能垒（理论计算验证），同时暴露更多可与H₂O₂/H₂O分子作用的开放金属位点，从而显著提升催化效率（Kcat值）与底物选择性，最终通过放大氧化应激效应增强抗肿瘤活性。  \n\n- Q2:  \n多孔结构纳米材料可通过三维分级孔道网络（微孔-介孔耦合）实现铁离子的梯度释放与脂质代谢关键酶（如ACSL4）的靶向富集。这种时空可控的铁递送系统将特异性催化多不饱和脂肪酸的脂质过氧化反应，同时阻断谷胱甘肽-硫氧还蛋白双重抗氧化通路，导致线粒体膜电位崩溃与钙离子超载介导的铁死亡信号级联激活，最终通过损伤相关分子模式（DAMPs）释放触发肿瘤局部免疫微环境重塑。"
+    ],
+    "structured_paths": {},
+    "elapsed_seconds": 18.71,
+    "error": null
+  },
+  {
+    "paper_id": "69cf875bdbf7",
+    "title": "Quasi Fe MIL-53 nanozyme inducing ferroptosis and immunogenic cell death for cancer immunotherapy",
+    "model": "qwen3-235b-a22b",
+    "method_name": "P3",
+    "free_text_hypotheses": [
+      "L1 Hypothesis: 准金属有机框架Q-MIL-53(Fe)的可控配体去除策略通过调控金属离子/节点与有机配体的动态平衡，形成可调孔结构与不饱和金属位点，其类酶活性（过氧化物酶/催化酶模拟活性）协同谷胱甘肽过氧化物酶4抑制效应引发铁死亡，同时通过损伤相关分子模式释放激活树突状细胞成熟通路，从而在肿瘤微环境中实现化学催化治疗与免疫原性细胞死亡的协同机制。该假设可通过密度泛函理论计算验证金属位点暴露程度与类酶活性的关系，并结合动物模型验证抗肿瘤效果与程序性细胞死亡蛋白1抗体的协同作用。\n\nL2 Hypotheses:\n- Q1: 可控配体去除策略通过部分破坏MIL-53(Fe)的有机配体网络，暴露出更多Fe²⁺/Fe³⁺活性位点并扩大孔径（10-20nm），使得四氧化三铁纳米颗粒的芬顿反应催化效率提升2倍以上，该过程可通过X射线吸收谱与电化学检测进行定量验证。预期发现配体去除度（如50%-70%）与过氧化物酶模拟活性呈正相关，但过度去除会破坏晶体结构导致活性下降。\n- Q2: 多孔结构纳米材料Q-MIL-53(Fe)通过其孔道尺寸（>15nm）选择性富集谷胱甘肽（分子量307 Da）并催化其氧化，导致肿瘤细胞内谷胱甘肽/谷胱甘肽二硫键比例失衡，继而引发铁死亡相关的线粒体膜电位紊乱。该机制可通过透射电镜观察线粒体嵴结构破坏，并用流式细胞术检测脂质活性氧与铁离子浓度变化来证实。\n\nL3 Hypotheses:\n- Q1: 金属有机框架衍生的Q-MIL-53(Fe)在肿瘤微环境中通过类芬顿反应产生羟基自由基（·OH），同时其孔结构（BET比表面积>500 m²/g）通过物理吸附调控H2O2浓度梯度，导致谷胱甘肽过氧化物酶4失活并积累氧化型谷胱甘肽（GSSG），该过程与免疫原性细胞死亡标志物（如钙网蛋白膜转位、HMGB1释放）存在剂量依赖关系。可通过构建负载荧光探针的纳米载体在活体成像中验证活性氧与损伤相关分子模式的空间分布相关性。\n- Q2: Q-MIL-53(Fe)诱导的铁死亡通过激活ACSL4-PLOD2信号轴增强肿瘤细胞免疫原性，其释放的损伤相关分子模式（如ATP、HSP70）与程序性细胞死亡蛋白1抗体协同促进CD8+ T淋巴细胞浸润（预期提高3倍以上），该假设可通过CRISPR-Cas9敲除ACSL4基因后比较小鼠肿瘤模型的免疫细胞浸润密度进行验证。"
+    ],
+    "structured_paths": {},
+    "elapsed_seconds": 26.98,
+    "error": null
+  },
+  {
+    "paper_id": "69cf875bdbf7",
+    "title": "Quasi Fe MIL-53 nanozyme inducing ferroptosis and immunogenic cell death for cancer immunotherapy",
+    "model": "qwen3-235b-a22b",
+    "method_name": "P4",
+    "free_text_hypotheses": [
+      "L1 Hypothesis:  \n**hypothesis**: The quasi-metal-organic framework Q-MIL-53(Fe) achieves synergistic antitumor effects by combining its intrinsic peroxidase-mimic activity to disrupt tumor redox homeostasis (chemistry) with its ability to modulate the tumor microenvironment (materials science) and activate dendritic cell-mediated T-cell responses (basic medicine) through damage-associated molecular pattern release.  \n**reasoning**:  \n1. Q-MIL-53(Fe)’s catalytic activity generates reactive oxygen species (ROS) via peroxidase-like activity (chemistry).  \n2. ROS accumulation induces ferroptosis (basic medicine) and immunogenic cell death (basic medicine), releasing damage-associated molecular patterns (DAMPs).  \n3. The porous structure of Q-MIL-53(Fe) (materials science) enhances DAMP retention and localized immune activation, promoting dendritic cell maturation and T-cell infiltration.  \n**key_concepts**: quasi-metal-organic framework, peroxidase-mimic activity, immunogenic cell death, tumor microenvironment, dendritic cell maturation  \n**disciplines_bridged**: 化学, 材料科学, 基础医学  \n\n---  \n\nL2 Hypotheses:  \n**Q1**:  \n**hypothesis**: The controlled deligandation strategy in Q-MIL-53(Fe) enhances nanozyme activity by exposing iron-based active sites (chemistry) and creating structural defects that lower the energy barrier for electron transfer (materials science), thereby amplifying catalytic efficiency.  \n**reasoning**:  \n1. Deligandation removes organic ligands (chemistry), increasing exposure of iron ions critical for catalytic activity (chemistry).  \n2. Structural defects (materials science) introduced during deligandation may create oxygen vacancies or unsaturated coordination sites, accelerating electron transfer kinetics (density functional theory-predicted mechanism).  \n3. These changes improve peroxidase-mimic activity and glutathione depletion, both essential for ROS generation and tumor cell death.  \n**key_concepts**: controlled deligandation strategy, catalytic active sites, structural defects, electron transfer kinetics  \n**disciplines_bridged**: 化学, 材料科学  \n\n**Q2**:  \n**hypothesis**: The porous structure of Q-MIL-53(Fe) (materials science) selectively targets tumor cell mitochondria (basic medicine) by facilitating iron ion release and glutathione peroxidase 4 inhibition (chemistry), driving mitochondrial lipid peroxidation and ferroptosis.  \n**reasoning**:  \n1. The tunable pore size (materials science) enables selective accumulation of Q-MIL-53(Fe) in tumor cells with high metabolic activity.  \n2. Pores allow controlled release of iron ions (chemistry) into mitochondria, where they catalyze lipid ROS formation via Fenton-like reactions.  \n3. Concurrent glutathione depletion (chemistry) inhibits glutathione peroxidase 4 (basic medicine), preventing lipid ROS detoxification, leading to mitochondrial membrane damage and ferroptosis.  \n**key_concepts**: porous structure, mitochondrial targeting, ferroptosis, glutathione peroxidase 4  \n**disciplines_bridged**: 材料科学, 基础医学  \n\n---  \n\nL3 Hypotheses:  \n**Q1**:  \n**hypothesis**: The combination of Q-MIL-53(Fe)’s optimized pore structure (materials science) and programmed cell death protein 1 antibody (basic medicine) enhances immunotherapy by creating a ROS-rich tumor microenvironment (chemistry) that upregulates major histocompatibility complex (MHC) molecule expression on dendritic cells.  \n**reasoning**:  \n1. Q-MIL-53(Fe)’s pores (materials science) enhance H2O2 diffusion, amplifying Fenton reaction-driven ROS generation (chemistry) in acidic tumor microenvironment (chemistry).  \n2. ROS-induced immunogenic cell death (basic medicine) releases tumor antigens, which are presented by dendritic cells with ROS-activated MHC expression.  \n3. PD-1 blockade (basic medicine) prevents T-cell exhaustion, enabling sustained antitumor immunity.  \n**key_concepts**: tunable pore structure, Fenton reaction, tumor antigens, PD-1 blockade  \n**disciplines_bridged**: 化学, 材料科学, 基础医学  \n\n**Q2**:  \n**hypothesis**: Quasi-metal-organic frameworks (materials science) with hierarchical porosity (chemistry) can co-deliver nanozymes and immunostimulatory adjuvants (basic medicine), enabling synchronized ferroptosis induction and dendritic cell activation for enhanced cancer immunotherapy.  \n**reasoning**:  \n1. Hierarchical pores (materials science) accommodate both catalytic iron sites (chemistry) and adjuvant molecules (basic medicine) within a single platform.  \n2. ROS generated by the nanozyme (chemistry) induces ferroptosis (basic medicine), releasing DAMPs that activate dendritic cells.  \n3. Co-delivered adjuvants synergistically enhance dendritic cell maturation, amplifying T-cell-mediated tumor clearance.  \n**key_concepts**: hierarchical porosity, co-delivery, damage-associated molecular patterns, dendritic cell activation  \n**disciplines_bridged**: 化学, 材料科学, 基础医学"
+    ],
+    "structured_paths": {},
+    "elapsed_seconds": 40.3,
+    "error": null
+  }
+]

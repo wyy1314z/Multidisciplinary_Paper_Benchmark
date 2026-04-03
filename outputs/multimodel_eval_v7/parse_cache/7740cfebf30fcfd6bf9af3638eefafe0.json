@@ -1,0 +1,111 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "构建微流体-机器学习协同系统",
+        "relation": "enables",
+        "tail": "等离激元纳米粒子光学性质精准调控",
+        "claim": "协同系统的构建使得光学性质调控成为可能"
+      },
+      {
+        "step": 2,
+        "head": "集成高通量合成/原位表征/智能优化算法",
+        "relation": "transforms",
+        "tail": "形成闭环反馈系统",
+        "claim": "三要素集成实现闭环反馈机制"
+      },
+      {
+        "step": 3,
+        "head": "闭环反馈系统",
+        "relation": "causes",
+        "tail": "化学空间探索效率提升10-100倍",
+        "claim": "闭环反馈显著提升探索效率"
+      },
+      {
+        "step": 4,
+        "head": "化学空间高效探索",
+        "relation": "enables",
+        "tail": "建立定量映射模型",
+        "claim": "高效探索最终建立反应条件与性能参数的定量模型"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "微流体反应器三维流动场",
+        "relation": "controls",
+        "tail": "成核生长动力学",
+        "claim": "三维流动场实现动力学精确控制"
+      },
+      {
+        "step": 2,
+        "head": "微尺度调控参数",
+        "relation": "includes",
+        "tail": "混合度<5μm/温度梯度>100°C/s/停留时间10ms-10s",
+        "claim": "实现三个关键参数的独立调控"
+      },
+      {
+        "step": 3,
+        "head": "多参数独立调控",
+        "relation": "enables",
+        "tail": "单次实验探索5+变量维度",
+        "claim": "多维调控能力突破传统限制"
+      },
+      {
+        "step": 4,
+        "head": "高维数据集",
+        "relation": "requires",
+        "tail": "主成分分析",
+        "claim": "高维数据需要降维分析处理"
+      },
+      {
+        "step": 5,
+        "head": "主成分分析",
+        "relation": "reveals",
+        "tail": "中间态产物演化规律",
+        "claim": "揭示传统方法无法观测的反应机制"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "贝叶斯优化框架",
+        "relation": "enables",
+        "tail": "动态调整实验策略",
+        "claim": "智能框架实现策略动态优化"
+      },
+      {
+        "step": 2,
+        "head": "高斯过程代理模型",
+        "relation": "predicts",
+        "tail": "纵横比(误差<2nm)/缺陷密度(R²>0.93)",
+        "claim": "模型实现高精度参数预测"
+      },
+      {
+        "step": 3,
+        "head": "SHAP值分析",
+        "relation": "quantifies",
+        "tail": "抗坏血酸浓度梯度ΔC=0.5-5mM",
+        "claim": "量化关键化学参数的影响阈值"
+      },
+      {
+        "step": 4,
+        "head": "浓度梯度影响阈值",
+        "relation": "determines",
+        "tail": "银种子生长模式转变",
+        "claim": "确定生长模式转变的关键控制点"
+      },
+      {
+        "step": 5,
+        "head": "生长模式控制点",
+        "relation": "guides",
+        "tail": "合成路径理性设计",
+        "claim": "指导纳米结构合成的定向设计"
+      }
+    ]
+  ],
+  "L3": []
+}

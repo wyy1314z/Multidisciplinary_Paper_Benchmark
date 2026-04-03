@@ -1,0 +1,55 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "integration of metasurface-based phase modulation layer and time-domain spectral encoding",
+        "relation": "enables",
+        "tail": "compensation of chromatic aberration",
+        "claim": "Integration enables chromatic aberration compensation"
+      },
+      {
+        "step": 2,
+        "head": "integration of metasurface-based phase modulation layer and time-domain spectral encoding",
+        "relation": "enables",
+        "tail": "bypassing diffraction limit",
+        "claim": "Integration enables bypassing diffraction limit"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "metasurface-based phase modulation layer",
+        "relation": "enables",
+        "tail": "dynamic wavefront tailoring of broadband terahertz pulses",
+        "claim": "Metasurface enables wavefront tailoring"
+      },
+      {
+        "step": 2,
+        "head": "dynamic wavefront tailoring of broadband terahertz pulses",
+        "relation": "achieves",
+        "tail": "correction of wavelength-dependent phase distortions",
+        "claim": "Wavefront tailoring corrects phase distortions"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "time-domain spectral encoding via femtosecond pulse shaping",
+        "relation": "enables",
+        "tail": "exploitation of time-gated nonlinear interactions with subwavelength structures",
+        "claim": "Spectral encoding enables time-gated nonlinear interactions"
+      },
+      {
+        "step": 2,
+        "head": "exploitation of time-gated nonlinear interactions with subwavelength structures",
+        "relation": "achieves",
+        "tail": "recovery of spatial frequencies beyond diffraction limit",
+        "claim": "Time-gated interactions recover beyond-limit spatial frequencies"
+      }
+    ]
+  ],
+  "L3": []
+}

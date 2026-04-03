@@ -1,0 +1,139 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "准金属有机框架材料的过渡态结构设计",
+        "relation": "enables",
+        "tail": "金属-配体配位环境与孔隙率协同效应调控",
+        "claim": "过渡态结构设计通过调控配位环境与孔隙率协同效应"
+      },
+      {
+        "step": 2,
+        "head": "金属-配体配位环境与孔隙率协同效应调控",
+        "relation": "transforms",
+        "tail": "纳米酶双模催化活性位点优化",
+        "claim": "协同效应调控优化过氧化物酶/过氧化氢酶活性位点分布与电子传递效率"
+      },
+      {
+        "step": 3,
+        "head": "纳米酶双模催化活性位点优化",
+        "relation": "causes",
+        "tail": "活性氧级联生成增强",
+        "claim": "活性位点优化增强肿瘤微环境活性氧生成能力"
+      },
+      {
+        "step": 4,
+        "head": "活性氧级联生成增强",
+        "relation": "inhibits",
+        "tail": "谷胱甘肽抗氧化系统",
+        "claim": "活性氧增强导致谷胱甘肽耗竭效应"
+      },
+      {
+        "step": 5,
+        "head": "谷胱甘肽耗竭效应",
+        "relation": "triggers",
+        "tail": "铁死亡脂质过氧化物积累",
+        "claim": "谷胱甘肽耗竭触发铁死亡相关脂质过氧化物积累"
+      },
+      {
+        "step": 6,
+        "head": "铁死亡脂质过氧化物积累",
+        "relation": "induces",
+        "tail": "肿瘤细胞免疫原性死亡",
+        "claim": "脂质过氧化物积累通过双重机制诱导免疫原性死亡"
+      },
+      {
+        "step": 7,
+        "head": "肿瘤细胞免疫原性死亡",
+        "relation": "activates",
+        "tail": "树突状细胞-T细胞轴",
+        "claim": "免疫原性死亡激活抗肿瘤免疫应答"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "可控配体去除策略",
+        "relation": "causes",
+        "tail": "MIL-53(Fe)羧酸配体网络部分破坏",
+        "claim": "配体去除策略破坏MIL-53(Fe)配体网络"
+      },
+      {
+        "step": 2,
+        "head": "MIL-53(Fe)羧酸配体网络部分破坏",
+        "relation": "transforms",
+        "tail": "Fe³⁺活性位点配位不饱和度升高",
+        "claim": "配体破坏诱导Fe³⁺位点配位不饱和度升高"
+      },
+      {
+        "step": 3,
+        "head": "Fe³⁺活性位点配位不饱和度升高",
+        "relation": "lowers",
+        "tail": "自由基中间体生成活化能垒",
+        "claim": "配位不饱和度升高降低催化反应活化能垒"
+      },
+      {
+        "step": 4,
+        "head": "自由基中间体生成活化能垒降低",
+        "relation": "enhances",
+        "tail": "开放金属位点与底物作用",
+        "claim": "活化能垒降低暴露更多开放金属位点"
+      },
+      {
+        "step": 5,
+        "head": "开放金属位点与底物作用增强",
+        "relation": "improves",
+        "tail": "催化效率(Kcat)与选择性",
+        "claim": "开放位点增强提升催化效率与底物选择性"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "三维分级孔道网络",
+        "relation": "enables",
+        "tail": "铁离子梯度释放",
+        "claim": "微孔-介孔耦合实现铁离子梯度释放"
+      },
+      {
+        "step": 2,
+        "head": "铁离子梯度释放",
+        "relation": "facilitates",
+        "tail": "ACSL4酶靶向富集",
+        "claim": "铁释放系统促进脂质代谢关键酶富集"
+      },
+      {
+        "step": 3,
+        "head": "ACSL4酶靶向富集",
+        "relation": "catalyzes",
+        "tail": "多不饱和脂肪酸脂质过氧化",
+        "claim": "酶富集特异性催化脂质过氧化反应"
+      },
+      {
+        "step": 4,
+        "head": "脂质过氧化反应增强",
+        "relation": "blocks",
+        "tail": "谷胱甘肽-硫氧还蛋白通路",
+        "claim": "过氧化反应阻断双重抗氧化通路"
+      },
+      {
+        "step": 5,
+        "head": "抗氧化通路阻断",
+        "relation": "triggers",
+        "tail": "线粒体膜电位崩溃",
+        "claim": "通路阻断导致线粒体功能异常"
+      },
+      {
+        "step": 6,
+        "head": "线粒体膜电位崩溃",
+        "relation": "induces",
+        "tail": "铁死亡信号级联激活",
+        "claim": "线粒体损伤激活铁死亡信号通路"
+      }
+    ]
+  ],
+  "L3": []
+}

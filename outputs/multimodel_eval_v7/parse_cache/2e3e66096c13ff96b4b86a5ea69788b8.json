@@ -1,0 +1,76 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "iCASE策略",
+        "relation": "optimizes",
+        "tail": "酶的结构模块网络",
+        "claim": "iCASE策略优化酶的结构模块网络"
+      },
+      {
+        "step": 2,
+        "head": "酶的结构模块网络优化",
+        "relation": "enhances",
+        "tail": "工业酶的热稳定性",
+        "claim": "结构模块网络优化增强工业酶热稳定性"
+      },
+      {
+        "step": 3,
+        "head": "酶的结构模块网络优化",
+        "relation": "enhances",
+        "tail": "催化活性",
+        "claim": "结构模块网络优化增强催化活性"
+      },
+      {
+        "step": 4,
+        "head": "热稳定性增强 & 催化活性增强",
+        "relation": "overcomes",
+        "tail": "稳定性-活性权衡问题",
+        "claim": "热稳定性与催化活性的协同增强克服传统权衡问题"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "监督式机器学习模型",
+        "relation": "predicts",
+        "tail": "PET水解酶与聚合物的结合模式",
+        "claim": "机器学习模型预测PET水解酶与聚合物的结合模式"
+      },
+      {
+        "step": 2,
+        "head": "结合模式预测",
+        "relation": "guides",
+        "tail": "酶的定向进化",
+        "claim": "结合模式预测为定向进化提供结构设计指导"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "分子响应模型",
+        "relation": "reveals",
+        "tail": "结构变化与功能增强的关系",
+        "claim": "分子响应模型揭示酶变异过程中的结构-功能关系"
+      },
+      {
+        "step": 2,
+        "head": "结构-功能关系揭示",
+        "relation": "directs",
+        "tail": "高效酶工程改造",
+        "claim": "结构-功能关系指导高效酶工程改造"
+      },
+      {
+        "step": 3,
+        "head": "高效酶工程改造",
+        "relation": "achieves",
+        "tail": "酶性能优化",
+        "claim": "工程改造实现酶性能优化"
+      }
+    ]
+  ],
+  "L3": []
+}

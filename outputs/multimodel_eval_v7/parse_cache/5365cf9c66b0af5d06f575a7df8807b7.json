@@ -1,0 +1,76 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "iCASE strategy implementation",
+        "relation": "facilitates",
+        "tail": "adaptive structural responses",
+        "claim": "iCASE strategy implementation facilitates adaptive structural responses"
+      },
+      {
+        "step": 2,
+        "head": "adaptive structural responses",
+        "relation": "optimize",
+        "tail": "enzyme interactions with substrates and reaction environments",
+        "claim": "Adaptive structural responses optimize enzyme interactions with substrates and reaction environments"
+      },
+      {
+        "step": 3,
+        "head": "optimized enzyme interactions",
+        "relation": "enhance",
+        "tail": "thermal stability and catalytic activity",
+        "claim": "Optimized enzyme interactions enhance thermal stability and catalytic activity"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "Integration of structure-based supervised machine learning models with molecular dynamics simulations",
+        "relation": "enables",
+        "tail": "accurate prediction of binding modes of polyethylene terephthalate hydrolases with polymers",
+        "claim": "Integration of ML models and MD simulations enables accurate prediction of PET hydrolases' binding modes"
+      },
+      {
+        "step": 2,
+        "head": "accurate prediction of binding modes",
+        "relation": "enables",
+        "tail": "design of enzymes with enhanced specificity and activity towards PET degradation",
+        "claim": "Accurate binding mode prediction enables design of PET-degrading enzymes with enhanced specificity"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "molecular response mechanism derived from adaptive evolution models",
+        "relation": "informs",
+        "tail": "targeted enzyme engineering strategies",
+        "claim": "Adaptive evolution-derived mechanisms inform targeted enzyme engineering"
+      },
+      {
+        "step": 2,
+        "head": "targeted enzyme engineering strategies",
+        "relation": "exploit",
+        "tail": "epistatic interactions",
+        "claim": "Targeted engineering strategies exploit epistatic interactions"
+      },
+      {
+        "step": 3,
+        "head": "epistatic interactions",
+        "relation": "enhance",
+        "tail": "structural resilience",
+        "claim": "Epistatic interactions enhance structural resilience"
+      },
+      {
+        "step": 4,
+        "head": "structural resilience",
+        "relation": "leads to",
+        "tail": "improved thermal stability and catalytic efficiency",
+        "claim": "Enhanced structural resilience improves thermal stability and catalytic efficiency"
+      }
+    ]
+  ],
+  "L3": []
+}

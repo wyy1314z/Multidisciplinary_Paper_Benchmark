@@ -1,0 +1,66 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "等温压缩辅助动态挤压工艺",
+        "relation": "generates",
+        "tail": "高压和剪切力",
+        "claim": "工艺产生高压和剪切力"
+      },
+      {
+        "step": 2,
+        "head": "高压和剪切力",
+        "relation": "induces",
+        "tail": "酶三维结构有利重排",
+        "claim": "高压剪切力促使酶结构重排"
+      },
+      {
+        "step": 3,
+        "head": "酶三维结构有利重排",
+        "relation": "enhances",
+        "tail": "疏水性区域相互作用",
+        "claim": "结构重排增强疏水作用"
+      },
+      {
+        "step": 4,
+        "head": "疏水性区域相互作用",
+        "relation": "improves",
+        "tail": "热稳定性",
+        "claim": "疏水作用增强提高热稳定性"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "动态挤压过程",
+        "relation": "applies",
+        "tail": "压力和温度波动",
+        "claim": "动态挤压施加压力和温度波动"
+      },
+      {
+        "step": 2,
+        "head": "压力和温度波动",
+        "relation": "activates",
+        "tail": "酶的催化位点",
+        "claim": "压力波动激活催化位点"
+      },
+      {
+        "step": 3,
+        "head": "酶的催化位点",
+        "relation": "enhances",
+        "tail": "底物结合能力",
+        "claim": "催化位点激活提升底物结合"
+      },
+      {
+        "step": 4,
+        "head": "底物结合能力",
+        "relation": "increases",
+        "tail": "催化效率",
+        "claim": "底物结合能力提高催化效率"
+      }
+    ]
+  ],
+  "L2": [],
+  "L3": []
+}

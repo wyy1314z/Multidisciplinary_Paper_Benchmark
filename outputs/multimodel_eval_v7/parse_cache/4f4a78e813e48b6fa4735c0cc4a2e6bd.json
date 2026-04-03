@@ -1,0 +1,62 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "GPCR构象动态",
+        "relation": "enables",
+        "tail": "功能机制调控",
+        "claim": "GPCR构象动态通过活性位点可变性实现功能机制调控"
+      },
+      {
+        "step": 2,
+        "head": "GPCR构象动态",
+        "relation": "causes",
+        "tail": "药物识别影响",
+        "claim": "特定构象变化模式与配体微环境变化共同影响药物识别"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "调控GPCR构象动态",
+        "relation": "transforms",
+        "tail": "新一代药物靶点",
+        "claim": "精确调控构象动态可开发高特异性药物靶点"
+      },
+      {
+        "step": 2,
+        "head": "新一代药物靶点",
+        "relation": "enables",
+        "tail": "精准治疗效果",
+        "claim": "高特异性药物靶点提升治疗精准度"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "GPCR构象状态变化",
+        "relation": "causes",
+        "tail": "脂质环境变化",
+        "claim": "不同构象状态引发跨膜结构域脂质环境改变"
+      },
+      {
+        "step": 2,
+        "head": "脂质环境变化",
+        "relation": "affects",
+        "tail": "配体亲和力",
+        "claim": "脂质环境变化调节配体结合亲和力和选择性"
+      },
+      {
+        "step": 3,
+        "head": "配体亲和力变化",
+        "relation": "influences",
+        "tail": "信号传导激活/抑制",
+        "claim": "配体结合特性改变影响下游信号通路激活"
+      }
+    ]
+  ],
+  "L3": []
+}

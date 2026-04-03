@@ -1,0 +1,116 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "dielectric gradient metamaterials (材料科学)",
+        "relation": "combined with",
+        "tail": "precisely engineered metasurface phase profiles (物理学)",
+        "claim": "集成材料科学与物理学技术使得抵消色差和球差成为可能"
+      },
+      {
+        "step": 2,
+        "head": "counteraction of chromatic and spherical aberrations",
+        "relation": "causes",
+        "tail": "surpassing classical diffraction limit",
+        "claim": "抵消像差导致超越衍射极限"
+      },
+      {
+        "step": 3,
+        "head": "surpassing diffraction limit",
+        "relation": "enables",
+        "tail": "super-resolution THz imaging",
+        "claim": "超越极限使得超分辨率成像成为可能"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "sub-wavelength-scale structuring of dielectric gradient metamaterials (材料科学)",
+        "relation": "enables",
+        "tail": "compensation for frequency-dependent phase shifts (物理学)",
+        "claim": "亚波长结构设计使得补偿相位偏移成为可能"
+      },
+      {
+        "step": 2,
+        "head": "compensation for phase shifts",
+        "relation": "causes",
+        "tail": "near-constant focal length maintenance",
+        "claim": "相位补偿导致焦距恒定"
+      },
+      {
+        "step": 3,
+        "head": "near-constant focal length maintenance",
+        "relation": "eliminates",
+        "tail": "chromatic aberrations",
+        "claim": "焦距恒定消除色差"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "high-resolution 3D printing (电子、通信与自动控制技术)",
+        "relation": "enables",
+        "tail": "replication of gradient metamaterial unit cells (材料科学)",
+        "claim": "3D打印技术实现单元结构复制"
+      },
+      {
+        "step": 2,
+        "head": "replication of unit cells",
+        "relation": "causes",
+        "tail": "accurate refractive index distribution (物理学)",
+        "claim": "单元结构复制导致准确折射率分布"
+      },
+      {
+        "step": 3,
+        "head": "accurate refractive index distribution",
+        "relation": "enables",
+        "tail": "meta-lens performance matching design",
+        "claim": "折射率分布准确使性能匹配设计"
+      }
+    ]
+  ],
+  "L3": [
+    [
+      {
+        "step": 1,
+        "head": "multi-layer dielectric gradient metamaterials (材料科学)",
+        "relation": "combined with",
+        "tail": "adaptive 3D printing parameters (电子、通信与自动控制技术)",
+        "claim": "多层材料与打印参数协同优化相位分布"
+      },
+      {
+        "step": 2,
+        "head": "adaptive phase retardation tuning",
+        "relation": "causes",
+        "tail": "energy redistribution in focal region (物理学)",
+        "claim": "相位延迟调整导致能量重新分布"
+      },
+      {
+        "step": 3,
+        "head": "energy redistribution",
+        "relation": "enables",
+        "tail": "localized field intensification beyond Abbe limit",
+        "claim": "能量分布优化实现超衍射极限场强"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "high-aspect-ratio nanopillar arrays (材料科学)",
+        "relation": "arranged in",
+        "tail": "metasurface configuration (电子、通信与自动控制技术)",
+        "claim": "纳米柱结构与超表面配置协同工作"
+      },
+      {
+        "step": 2,
+        "head": "metasurface phase shift engineering",
+        "relation": "causes",
+        "tail": "NA=0.555 and FOV=90° metalens performance",
+        "claim": "相位偏移设计实现大数值孔径与宽视场角"
+      }
+    ]
+  ]
+}

@@ -1,0 +1,165 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "微流体反应器",
+        "relation": "enables",
+        "tail": "精细反应控制",
+        "claim": "微流体反应器提供反应条件的精确调控"
+      },
+      {
+        "step": 2,
+        "head": "在线光谱表征",
+        "relation": "provides_feedback_to",
+        "tail": "机器学习模型",
+        "claim": "实时光谱数据反馈用于动态参数调整"
+      },
+      {
+        "step": 3,
+        "head": "机器学习模型",
+        "relation": "dynamically_adjusts",
+        "tail": "微流体参数",
+        "claim": "模型实时优化反应器流速/温度等参数"
+      },
+      {
+        "step": 4,
+        "head": "微流体参数调整",
+        "relation": "causes",
+        "tail": "纳米粒子形态调控",
+        "claim": "参数变化驱动合成过程中的形貌动态调节"
+      },
+      {
+        "step": 5,
+        "head": "纳米粒子形态调控",
+        "relation": "achieves",
+        "tail": "光学性质精准控制",
+        "claim": "形态演化最终实现等离激元峰宽/波长精确调控"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "传感器集成",
+        "relation": "monitors",
+        "tail": "中间体浓度",
+        "claim": "原位传感器实时追踪反应中间产物"
+      },
+      {
+        "step": 2,
+        "head": "中间体数据",
+        "relation": "trains",
+        "tail": "机器学习模型",
+        "claim": "动力学数据训练预测反应轨迹的算法"
+      },
+      {
+        "step": 3,
+        "head": "机器学习模型",
+        "relation": "predicts",
+        "tail": "反应路径",
+        "claim": "模型预测不同条件下的纳米粒子生长方向"
+      },
+      {
+        "step": 4,
+        "head": "反应路径预测",
+        "relation": "guides",
+        "tail": "化学空间探索",
+        "claim": "预测结果引导系统优先探索高维参数空间的有利区域"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "强化学习框架",
+        "relation": "models",
+        "tail": "序列决策",
+        "claim": "将合成过程建模为时序决策问题"
+      },
+      {
+        "step": 2,
+        "head": "序列决策模型",
+        "relation": "learns",
+        "tail": "参数调整策略",
+        "claim": "算法学习反应参数与产物特性的动态映射"
+      },
+      {
+        "step": 3,
+        "head": "调整策略",
+        "relation": "optimizes",
+        "tail": "合成参数",
+        "claim": "策略优化实现反应条件的自适应调节"
+      },
+      {
+        "step": 4,
+        "head": "参数优化",
+        "relation": "reduces",
+        "tail": "迭代次数",
+        "claim": "强化学习显著降低达到目标特性所需的实验轮次"
+      }
+    ]
+  ],
+  "L3": [
+    [
+      {
+        "step": 1,
+        "head": "反应动力学模型",
+        "relation": "augments",
+        "tail": "贝叶斯优化",
+        "claim": "动力学先验知识增强优化算法的预测能力"
+      },
+      {
+        "step": 2,
+        "head": "增强优化算法",
+        "relation": "predicts",
+        "tail": "反应延迟",
+        "claim": "集成模型可预测中间态波动引起的系统延迟"
+      },
+      {
+        "step": 3,
+        "head": "延迟预测",
+        "relation": "compensates",
+        "tail": "参数调整",
+        "claim": "预测结果用于提前补偿反应条件波动"
+      },
+      {
+        "step": 4,
+        "head": "补偿机制",
+        "relation": "stabilizes",
+        "tail": "合成结果",
+        "claim": "动态补偿确保不同批次纳米粒子特性的一致性"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "在线光谱数据",
+        "relation": "feeds",
+        "tail": "深度神经网络",
+        "claim": "实时光谱输入多模态特征提取模型"
+      },
+      {
+        "step": 2,
+        "head": "深度网络",
+        "relation": "infers",
+        "tail": "纳米粒子形貌",
+        "claim": "模型从光谱特征反推尺寸/形状参数"
+      },
+      {
+        "step": 3,
+        "head": "形貌预测",
+        "relation": "triggers",
+        "tail": "参数调整",
+        "claim": "预测结果驱动反应器参数即时修正"
+      },
+      {
+        "step": 4,
+        "head": "动态调整",
+        "relation": "achieves",
+        "tail": "连续合成控制",
+        "claim": "闭环反馈实现光化学合成过程的在线形貌调控"
+      }
+    ]
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "manipulation of ligand composition and structural characteristics",
+        "relation": "enables",
+        "tail": "optimized design principles of quasi-metal-organic frameworks (QMOFs)",
+        "claim": "调整配体组成和结构特性使得QMOFs设计原则的优化成为可能"
+      },
+      {
+        "step": 2,
+        "head": "optimized design principles of quasi-metal-organic frameworks (QMOFs)",
+        "relation": "enhance",
+        "tail": "enzyme-like catalytic activities",
+        "claim": "优化的设计原则增强了类酶催化活性"
+      },
+      {
+        "step": 3,
+        "head": "enhanced enzyme-like catalytic activities",
+        "relation": "facilitate",
+        "tail": "targeted tumor treatment",
+        "claim": "增强的催化活性促进了靶向肿瘤治疗"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "understanding interplay between porosity, metal centers, and ligand interactions",
+        "relation": "enables",
+        "tail": "creation of QMOFs with superior catalytic properties",
+        "claim": "理解各因素相互作用使得创建具有优越催化性能的QMOFs成为可能"
+      },
+      {
+        "step": 2,
+        "head": "creation of QMOFs with superior catalytic properties",
+        "relation": "promotes",
+        "tail": "immune responses through ferroptosis and immunogenic cell death",
+        "claim": "具有优越催化性能的QMOFs通过铁死亡和免疫原性细胞死亡机制促进免疫反应"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "controlled deligandation strategy",
+        "relation": "alters",
+        "tail": "electronic environment and coordination geometry of metal centers",
+        "claim": "控制的去配体化策略显著改变了金属中心的电子环境和配位几何"
+      },
+      {
+        "step": 2,
+        "head": "altered electronic environment and coordination geometry",
+        "relation": "enhances",
+        "tail": "catalytic efficiency",
+        "claim": "这些改变增强了催化效率"
+      },
+      {
+        "step": 3,
+        "head": "tuning the degree of ligand removal",
+        "relation": "modulates",
+        "tail": "active sites of the nanozyme",
+        "claim": "调节配体去除程度可调制纳米酶的活性位点"
+      },
+      {
+        "step": 4,
+        "head": "modulated active sites",
+        "relation": "lead to",
+        "tail": "optimized peroxidase and catalase-like activities",
+        "claim": "活性位点的调制导致过氧化物酶和过氧化氢酶样活性的优化"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "porous structure of iron-based quasi-metal-organic frameworks",
+        "relation": "facilitates",
+        "tail": "selective release of reactive oxygen species (ROS) upon interaction with tumor cells",
+        "claim": "铁基QMOFs的多孔结构促进了与肿瘤细胞相互作用时ROS的选择性释放"
+      },
+      {
+        "step": 2,
+        "head": "selective release of reactive oxygen species (ROS)",
+        "relation": "triggers",
+        "tail": "ferroptosis",
+        "claim": "ROS的选择性释放触发了铁死亡"
+      },
+      {
+        "step": 3,
+        "head": "tailored modifications",
+        "relation": "promote",
+        "tail": "accumulation of the nanozyme at the tumor site",
+        "claim": "定制的修饰促进了纳米酶在肿瘤部位的积累"
+      },
+      {
+        "step": 4,
+        "head": "accumulated nanozyme",
+        "relation": "enhances",
+        "tail": "anti-cancer effect by inhibiting tumor growth and promoting dendritic cell maturation and T lymphocyte infiltration",
+        "claim": "积累的纳米酶通过抑制肿瘤生长并促进树突状细胞成熟和T细胞浸润增强了抗癌效果"
+      }
+    ]
+  ],
+  "L3": []
+}

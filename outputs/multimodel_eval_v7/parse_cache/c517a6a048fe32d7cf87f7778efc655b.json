@@ -1,0 +1,151 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "亚波长纳米散射体",
+        "relation": "enables",
+        "tail": "太赫兹波精确调控",
+        "claim": "亚波长纳米散射体的独特光学特性使得太赫兹波的精确调控成为可能"
+      },
+      {
+        "step": 2,
+        "head": "太赫兹波精确调控",
+        "relation": "combined_with",
+        "tail": "超振荡原理",
+        "claim": "太赫兹波的精确调控与超振荡原理的结合共同作用"
+      },
+      {
+        "step": 3,
+        "head": "超振荡原理",
+        "relation": "causes",
+        "tail": "光斑尺寸压缩",
+        "claim": "超振荡原理导致光斑尺寸的进一步压缩"
+      },
+      {
+        "step": 4,
+        "head": "光斑尺寸压缩",
+        "relation": "transforms",
+        "tail": "超分辨成像",
+        "claim": "光斑尺寸压缩转化为超分辨成像的实现"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "同心纳米环结构",
+        "relation": "interacts_with",
+        "tail": "太赫兹波",
+        "claim": "同心纳米环结构与太赫兹波的相互作用改变电场分布"
+      },
+      {
+        "step": 2,
+        "head": "电场分布改变",
+        "relation": "causes",
+        "tail": "传播路径调整",
+        "claim": "电场分布的改变导致不同频率太赫兹波传播路径的调整"
+      },
+      {
+        "step": 3,
+        "head": "传播路径调整",
+        "relation": "enables",
+        "tail": "消色差超分辨成像",
+        "claim": "传播路径调整实现消色差超分辨成像"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "三维打印技术",
+        "relation": "enables",
+        "tail": "材料分布控制",
+        "claim": "三维打印技术实现打印材料分布的精确控制"
+      },
+      {
+        "step": 2,
+        "head": "材料分布控制",
+        "relation": "transforms",
+        "tail": "相位分布调控",
+        "claim": "材料分布控制转化为相位分布的精确调控"
+      },
+      {
+        "step": 3,
+        "head": "相位分布调控",
+        "relation": "causes",
+        "tail": "折射率分布优化",
+        "claim": "相位分布调控进一步引起折射率分布的优化"
+      },
+      {
+        "step": 4,
+        "head": "折射率分布优化",
+        "relation": "enables",
+        "tail": "超构透镜精确制造",
+        "claim": "折射率分布优化实现超构透镜的精确制造"
+      }
+    ]
+  ],
+  "L3": [
+    [
+      {
+        "step": 1,
+        "head": "三维打印技术",
+        "relation": "enables",
+        "tail": "实时监测",
+        "claim": "三维打印技术实现太赫兹波传播的实时监测"
+      },
+      {
+        "step": 2,
+        "head": "实时监测",
+        "relation": "triggers",
+        "tail": "折射率分布调整",
+        "claim": "实时监测触发介电梯度超材料折射率分布的动态调整"
+      },
+      {
+        "step": 3,
+        "head": "折射率分布调整",
+        "relation": "optimizes",
+        "tail": "相位分布",
+        "claim": "折射率分布调整协同优化相位分布"
+      },
+      {
+        "step": 4,
+        "head": "相位分布优化",
+        "relation": "breaks",
+        "tail": "阿贝衍射极限",
+        "claim": "相位分布优化突破阿贝衍射极限限制"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "超表面技术",
+        "relation": "modulates",
+        "tail": "表面电场",
+        "claim": "超表面技术对高纵横比纳米柱结构的表面电场进行调控"
+      },
+      {
+        "step": 2,
+        "head": "表面电场调控",
+        "relation": "alters",
+        "tail": "太赫兹波传播",
+        "claim": "表面电场调控改变太赫兹波的传播和聚焦特性"
+      },
+      {
+        "step": 3,
+        "head": "太赫兹波传播改变",
+        "relation": "enhances",
+        "tail": "数值孔径",
+        "claim": "太赫兹波传播特性的改变将数值孔径提升至0.555"
+      },
+      {
+        "step": 4,
+        "head": "数值孔径提升",
+        "relation": "expands",
+        "tail": "视场角",
+        "claim": "数值孔径的提升使视场角扩展至90°"
+      }
+    ]
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "ultrafast laser-induced quantum tunneling effects",
+        "relation": "enables",
+        "tail": "synergistic modulation of plasmonic coupling strength and local dielectric environment",
+        "claim": "量子隧穿效应使等离激元耦合强度与介电环境的协同调制成为可能"
+      },
+      {
+        "step": 2,
+        "head": "synergistic modulation",
+        "relation": "enables",
+        "tail": "dual-band spectral tuning with sub-5 nm precision",
+        "claim": "协同调制实现了亚5纳米精度的双波段光谱调谐"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "photoexcitation-triggered charge transfer",
+        "relation": "causes",
+        "tail": "alteration of effective dielectric constant",
+        "claim": "光激发电荷转移导致有效介电常数改变"
+      },
+      {
+        "step": 2,
+        "head": "photoexcitation-triggered charge transfer",
+        "relation": "activates",
+        "tail": "quantum plasmonic shifts",
+        "claim": "光激发电荷转移激活量子等离激元位移"
+      }
+    ]
+  ],
+  "L3": []
+}

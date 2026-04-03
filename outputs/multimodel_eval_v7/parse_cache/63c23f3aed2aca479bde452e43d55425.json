@@ -1,0 +1,63 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "Integrating non-Hermitian topological photonics with dynamic symmetry-breaking control",
+        "relation": "enables",
+        "tail": "overcoming chromatic aberration and diffraction limits in terahertz imaging",
+        "claim": "集成非厄米特拓扑光子学与动态对称破缺控制使得克服色差和衍射极限成为可能"
+      },
+      {
+        "step": 2,
+        "head": "overcoming chromatic aberration and diffraction limits",
+        "relation": "enables",
+        "tail": "achieving real-time super-resolution imaging without cryogenic cooling",
+        "claim": "克服色差和衍射极限使得无需低温冷却的实时超分辨率成像成为可能"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "hybrid metasurface combining topological edge states and PT-symmetric gain-loss domains",
+        "relation": "enables",
+        "tail": "subwavelength focusing",
+        "claim": "混合超表面设计支持亚波长聚焦"
+      },
+      {
+        "step": 2,
+        "head": "subwavelength focusing",
+        "relation": "requires",
+        "tail": "exceptional point (EP) engineering",
+        "claim": "亚波长聚焦依赖于异常点工程"
+      }
+    ]
+  ],
+  "L3": [
+    [
+      {
+        "step": 1,
+        "head": "actively tuning the EP degeneracy via optoelectric feedback",
+        "relation": "causes",
+        "tail": "compression of the point spread function (PSF) below λ/5",
+        "claim": "主动调谐EP简并度导致点扩散函数压缩至λ/5以下"
+      },
+      {
+        "step": 2,
+        "head": "actively tuning the EP degeneracy via optoelectric feedback",
+        "relation": "enables",
+        "tail": "compensation of chromatic dispersion across a 0.1–3 THz bandwidth",
+        "claim": "主动调谐EP简并度实现0.1–3 THz带宽内的色散补偿"
+      },
+      {
+        "step": 3,
+        "head": "compression of PSF below λ/5 and compensation of chromatic dispersion",
+        "relation": "leads to",
+        "tail": "real-time super-resolution imaging",
+        "claim": "PSF压缩与色散补偿共同促成实时超分辨率成像"
+      }
+    ]
+  ]
+}

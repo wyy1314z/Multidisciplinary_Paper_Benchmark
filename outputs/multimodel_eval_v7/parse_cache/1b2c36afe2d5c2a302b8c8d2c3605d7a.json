@@ -1,0 +1,177 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "Q-MOF材料设计",
+        "relation": "modulates",
+        "tail": "多孔纳米结构和金属离子配位环境",
+        "claim": "材料设计调控结构和配位环境"
+      },
+      {
+        "step": 2,
+        "head": "多孔纳米结构和金属离子配位环境",
+        "relation": "enhances",
+        "tail": "纳米酶催化活性",
+        "claim": "结构优化增强过氧化物酶/过氧化氢酶模拟活性"
+      },
+      {
+        "step": 3,
+        "head": "纳米酶催化活性",
+        "relation": "promotes",
+        "tail": "ROS生成和谷胱甘肽耗尽",
+        "claim": "催化活性促进肿瘤微环境氧化应激"
+      },
+      {
+        "step": 4,
+        "head": "ROS生成和谷胱甘肽耗尽",
+        "relation": "synergistically induces",
+        "tail": "铁死亡和免疫原性细胞死亡",
+        "claim": "氧化应激协同诱导细胞死亡机制"
+      },
+      {
+        "step": 5,
+        "head": "铁死亡和免疫原性细胞死亡",
+        "relation": "activates",
+        "tail": "抗肿瘤免疫反应",
+        "claim": "细胞死亡模式激活免疫应答"
+      },
+      {
+        "step": 6,
+        "head": "抗肿瘤免疫反应",
+        "relation": "translates into",
+        "tail": "治疗效果提升",
+        "claim": "免疫激活转化为治疗效果增强"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "有机配体受控去除",
+        "relation": "alters",
+        "tail": "配位聚合物结构",
+        "claim": "脱配体改变材料结构"
+      },
+      {
+        "step": 2,
+        "head": "配位聚合物结构改变",
+        "relation": "increases",
+        "tail": "铁活性位点可及性",
+        "claim": "结构变化增加活性位点暴露"
+      },
+      {
+        "step": 3,
+        "head": "铁活性位点可及性",
+        "relation": "optimizes",
+        "tail": "孔径分布",
+        "claim": "活性位点优化促进孔结构调控"
+      },
+      {
+        "step": 4,
+        "head": "孔径分布优化",
+        "relation": "enhances",
+        "tail": "催化效率",
+        "claim": "结构优化提升催化性能"
+      },
+      {
+        "step": 5,
+        "head": "催化效率",
+        "relation": "correlates with",
+        "tail": "催化周转率和底物亲和力",
+        "claim": "催化性能与动力学参数正相关"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "金属氧化物基多孔结构",
+        "relation": "facilitates",
+        "tail": "芬顿样反应",
+        "claim": "结构促进类芬顿反应发生"
+      },
+      {
+        "step": 2,
+        "head": "芬顿样反应",
+        "relation": "leads to",
+        "tail": "羟基自由基生成",
+        "claim": "反应产生强氧化性自由基"
+      },
+      {
+        "step": 3,
+        "head": "羟基自由基",
+        "relation": "depletes",
+        "tail": "谷胱甘肽",
+        "claim": "自由基消耗细胞内抗氧化剂"
+      },
+      {
+        "step": 4,
+        "head": "谷胱甘肽耗尽",
+        "relation": "triggers",
+        "tail": "铁死亡通路",
+        "claim": "抗氧化失衡激活铁死亡机制"
+      },
+      {
+        "step": 5,
+        "head": "铁死亡通路",
+        "relation": "inhibits",
+        "tail": "肿瘤生长",
+        "claim": "细胞死亡机制抑制肿瘤进展"
+      }
+    ]
+  ],
+  "L3": [
+    [
+      {
+        "step": 1,
+        "head": "受控脱配体方法",
+        "relation": "produces",
+        "tail": "优化多孔结构",
+        "claim": "合成策略获得结构优化材料"
+      },
+      {
+        "step": 2,
+        "head": "优化多孔结构",
+        "relation": "enhances",
+        "tail": "底物扩散和接触",
+        "claim": "结构改善促进物质传输"
+      },
+      {
+        "step": 3,
+        "head": "底物扩散增强",
+        "relation": "amplifies",
+        "tail": "过氧化物酶样活性",
+        "claim": "传质优化提升催化活性"
+      },
+      {
+        "step": 4,
+        "head": "过氧化物酶样活性",
+        "relation": "converts",
+        "tail": "过氧化氢至羟基自由基",
+        "claim": "催化反应转化内源性物质"
+      },
+      {
+        "step": 5,
+        "head": "羟基自由基",
+        "relation": "disrupts",
+        "tail": "氧化还原稳态",
+        "claim": "自由基破坏细胞氧化平衡"
+      },
+      {
+        "step": 6,
+        "head": "氧化还原失衡",
+        "relation": "induces",
+        "tail": "铁死亡和免疫原性死亡",
+        "claim": "氧化应激触发双重死亡机制"
+      },
+      {
+        "step": 7,
+        "head": "双重死亡机制",
+        "relation": "potentiates",
+        "tail": "树突状细胞成熟和T细胞浸润",
+        "claim": "死亡模式增强抗肿瘤免疫"
+      }
+    ]
+  ]
+}

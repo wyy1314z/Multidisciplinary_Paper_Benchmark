@@ -1,0 +1,102 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "integration of machine learning-driven closed-loop synthesis with microfluidic reactors",
+        "relation": "enables",
+        "tail": "precise control over plasmonic nanoparticle optical properties",
+        "claim": "集成机器学习和微流体反应器使得精确控制纳米粒子光学特性成为可能"
+      },
+      {
+        "step": 2,
+        "head": "algorithmic optimization of chemical parameters",
+        "relation": "correlates",
+        "tail": "targeted plasmon resonance peak wavelengths",
+        "claim": "化学参数算法优化与目标等离子体共振波长存在直接关联"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "microfluidic reactors",
+        "relation": "accelerate",
+        "tail": "multidimensional chemical space exploration",
+        "claim": "微流体反应器通过高通量组合测试加速化学空间探索"
+      },
+      {
+        "step": 2,
+        "head": "covariance matrix adaptation evolution strategies",
+        "relation": "reduces",
+        "tail": "parameter optimization cycles",
+        "claim": "协方差矩阵进化策略比批次反应器减少参数优化周期"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "machine learning algorithms",
+        "relation": "establishes",
+        "tail": "non-linear relationships between precursor injection rates and nanoparticle morphology",
+        "claim": "机器学习算法建立前驱体注入速率与纳米粒子形态的非线性关系"
+      },
+      {
+        "step": 2,
+        "head": "genetic algorithms",
+        "relation": "outperforms",
+        "tail": "Bayesian optimization for high-dimensional parameter spaces",
+        "claim": "遗传算法在高维参数空间优化中优于贝叶斯优化"
+      }
+    ]
+  ],
+  "L3": [
+    [
+      {
+        "step": 1,
+        "head": "synergy between microfluidic flow dynamics and Bayesian optimization",
+        "relation": "enables",
+        "tail": "closed-loop control of reaction conditions",
+        "claim": "微流体动力学与贝叶斯优化的协同作用实现反应条件闭环控制"
+      },
+      {
+        "step": 2,
+        "head": "residence time distributions",
+        "relation": "correlates",
+        "tail": "localized surface plasmon resonance peak shifts",
+        "claim": "停留时间分布与局域表面等离子体共振峰移存在关联"
+      },
+      {
+        "step": 3,
+        "head": "real-time FWHM modulation of spectral outputs",
+        "relation": "demonstrates",
+        "tail": "closed-loop control effectiveness",
+        "claim": "实时光谱半峰宽调制验证闭环控制有效性"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "in-flow UV-Vis spectroscopy coupled with deep neural networks",
+        "relation": "achieves",
+        "tail": "real-time optimization of nanoparticle dimensions",
+        "claim": "在线紫外-可见光谱结合深度神经网络实现实时纳米粒子尺寸优化"
+      },
+      {
+        "step": 2,
+        "head": "silver precursor reduction kinetics",
+        "relation": "feedback",
+        "tail": "plasmon resonance peak broadening",
+        "claim": "银前驱体还原动力学与等离子体共振峰展宽形成反馈回路"
+      },
+      {
+        "step": 3,
+        "head": "stopped-flow experiments",
+        "relation": "verifies",
+        "tail": "neural network architecture performance",
+        "claim": "停流实验通过不同神经网络架构验证系统性能"
+      }
+    ]
+  ]
+}

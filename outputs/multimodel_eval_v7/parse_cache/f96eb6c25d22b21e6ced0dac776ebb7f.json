@@ -1,0 +1,90 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "integration of dielectric gradient metamaterials with tailored refractive index profile",
+        "relation": "enables",
+        "tail": "fundamental redefinition of wavefront manipulation in THz optics",
+        "claim": "集成介电梯度超材料与定制折射率剖面重新定义THz光学波前操控"
+      },
+      {
+        "step": 2,
+        "head": "spatially variant dispersion compensation",
+        "relation": "causes",
+        "tail": "simultaneous suppression of chromatic aberration and diffraction-limited resolution",
+        "claim": "空间变化的色散补偿同时抑制色差并实现衍射极限分辨率"
+      },
+      {
+        "step": 3,
+        "head": "multi-frequency phase coherence",
+        "relation": "achieves",
+        "tail": "achromatic super-resolution across 0.2–0.9 THz bandwidth",
+        "claim": "多频相位相干性在0.2–0.9 THz带宽实现消色差超分辨率"
+      },
+      {
+        "step": 4,
+        "head": "radial symmetry of refractive index gradient",
+        "relation": "expands",
+        "tail": "field of view through phase consistency at oblique angles",
+        "claim": "折射率梯度径向对称性通过倾斜角相位一致性扩展视场"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "dielectric gradient metamaterial",
+        "relation": "generates",
+        "tail": "compensatory group delay dispersion at distinct radial positions",
+        "claim": "介电梯度超材料在不同径向位置产生补偿性群延迟色散"
+      },
+      {
+        "step": 2,
+        "head": "spatially varying dispersion",
+        "relation": "induces",
+        "tail": "constructive interference at single focal point across frequencies",
+        "claim": "空间变化色散诱导多频下单焦点相长干涉"
+      },
+      {
+        "step": 3,
+        "head": "subwavelength meta-atom heterogeneity",
+        "relation": "enhances",
+        "tail": "evanescent wave coupling for super-resolution",
+        "claim": "亚波长元原子异质性增强倏逝波耦合实现超分辨率"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "multi-material 3D printing",
+        "relation": "enables",
+        "tail": "precise spatial control of dielectric meta-atoms",
+        "claim": "多材料3D打印实现介电元原子精确空间控制"
+      },
+      {
+        "step": 2,
+        "head": "tuning polymer composition and infill density",
+        "relation": "creates",
+        "tail": "smooth refractive index gradients (Δn > 0.5)",
+        "claim": "调控聚合物成分和填充密度创建平滑折射率梯度"
+      },
+      {
+        "step": 3,
+        "head": "layer-wise fabrication",
+        "relation": "minimizes",
+        "tail": "interfacial scattering through monolithic integration",
+        "claim": "层状制造通过整体集成减少界面散射"
+      },
+      {
+        "step": 4,
+        "head": "anisotropic print parameters",
+        "relation": "optimize",
+        "tail": "electromagnetic response for polarization-insensitive imaging",
+        "claim": "各向异性打印参数优化电磁响应实现偏振无关成像"
+      }
+    ]
+  ],
+  "L3": []
+}

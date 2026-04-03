@@ -1,0 +1,144 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "Metal ions",
+        "relation": "influence",
+        "tail": "enzyme structure",
+        "claim": "Metal ions influence enzyme structure through coordination geometries"
+      },
+      {
+        "step": 2,
+        "head": "Disulfide bonds",
+        "relation": "stabilize",
+        "tail": "enzyme stability",
+        "claim": "Disulfide bonds stabilize enzyme structure"
+      },
+      {
+        "step": 3,
+        "head": "Disulfide bonds",
+        "relation": "reduce",
+        "tail": "enzyme activity",
+        "claim": "Disulfide bonds typically reduce enzyme activity"
+      },
+      {
+        "step": 4,
+        "head": "Quantum chemical calculations",
+        "relation": "enable",
+        "tail": "prediction of optimal metal-disulfide configurations",
+        "claim": "Quantum calculations can predict optimal metal-disulfide configurations"
+      },
+      {
+        "step": 5,
+        "head": "Supervised machine learning",
+        "relation": "integrates",
+        "tail": "hierarchical modular networks",
+        "claim": "ML integrates predictions into hierarchical networks"
+      },
+      {
+        "step": 6,
+        "head": "hierarchical modular networks",
+        "relation": "enhance",
+        "tail": "enzyme stability and activity",
+        "claim": "Optimized networks lead to 20%+ improvement in stability and activity"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "Molecular dynamics simulations",
+        "relation": "capture",
+        "tail": "PET polymer conformations",
+        "claim": "MD simulations capture dynamic PET polymer conformations"
+      },
+      {
+        "step": 2,
+        "head": "Graph neural networks",
+        "relation": "learn",
+        "tail": "transient binding pocket patterns",
+        "claim": "GNNs learn temporal patterns from MD simulations"
+      },
+      {
+        "step": 3,
+        "head": "transient binding pockets",
+        "relation": "improve",
+        "tail": "PET hydrolase degradation efficiency",
+        "claim": "Targeting predicted pockets enables 10x activity improvement"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "Protein surface charge evolution",
+        "relation": "correlates with",
+        "tail": "fitness landscape constraints",
+        "claim": "Surface charges evolve non-randomly under fitness landscapes"
+      },
+      {
+        "step": 2,
+        "head": "Salt bridges",
+        "relation": "mediate",
+        "tail": "stability-activity balance",
+        "claim": "Salt bridges affect both stability and catalytic activity"
+      },
+      {
+        "step": 3,
+        "head": "Co-evolution mapping",
+        "relation": "enables",
+        "tail": "predictive salt bridge design",
+        "claim": "Charge co-evolution mapping buffers destabilizing mutations"
+      }
+    ]
+  ],
+  "L3": [
+    [
+      {
+        "step": 1,
+        "head": "Dynamic squeezing index",
+        "relation": "perturbs",
+        "tail": "enzyme conformations",
+        "claim": "Squeezing index perturbs enzyme conformations under pressure"
+      },
+      {
+        "step": 2,
+        "head": "QM/MM simulations",
+        "relation": "identifies",
+        "tail": "pressure-sensitive residues",
+        "claim": "QM/MM identifies mechanistically important residues"
+      },
+      {
+        "step": 3,
+        "head": "residue optimization",
+        "relation": "confers",
+        "tail": "pressure-tolerant activity",
+        "claim": "Optimized variants maintain activity under 500+ bar"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "Epistasis patterns",
+        "relation": "vary across",
+        "tail": "enzyme classes",
+        "claim": "Epistasis patterns differ between enzyme families"
+      },
+      {
+        "step": 2,
+        "head": "Federated learning",
+        "relation": "overcomes",
+        "tail": "data privacy limitations",
+        "claim": "Federated framework preserves data privacy"
+      },
+      {
+        "step": 3,
+        "head": "universal design principles",
+        "relation": "enable",
+        "tail": "epistasis prediction",
+        "claim": "Framework predicts epistatic interactions in novel folds"
+      }
+    ]
+  ]
+}

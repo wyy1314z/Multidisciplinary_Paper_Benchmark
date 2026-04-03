@@ -1,0 +1,165 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "iCASE策略构建的分级模块化网络",
+        "relation": "enables",
+        "tail": "结构基础的监督式机器学习模型",
+        "claim": "iCASE策略为机器学习模型提供结构基础"
+      },
+      {
+        "step": 2,
+        "head": "结构基础的监督式机器学习模型",
+        "relation": "regulates",
+        "tail": "疏水相互作用/氢键/盐桥",
+        "claim": "机器学习模型调节酶的化学相互作用"
+      },
+      {
+        "step": 3,
+        "head": "化学相互作用调节",
+        "relation": "alters",
+        "tail": "底物结合模式/催化机制",
+        "claim": "化学相互作用改变导致催化特性变化"
+      },
+      {
+        "step": 4,
+        "head": "催化机制改变",
+        "relation": "enhances",
+        "tail": "热稳定性/催化活性",
+        "claim": "催化机制优化提升酶性能"
+      },
+      {
+        "step": 5,
+        "head": "机器学习模型",
+        "relation": "predicts",
+        "tail": "适应性进化上位性",
+        "claim": "模型可预测酶进化过程中的协同效应"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "结构基础的监督式机器学习模型",
+        "relation": "learns",
+        "tail": "结构信息/化学特性",
+        "claim": "模型学习酶与聚合物的基础特征"
+      },
+      {
+        "step": 2,
+        "head": "结构信息学习",
+        "relation": "identifies",
+        "tail": "氢键/盐桥/疏水位点",
+        "claim": "模型可识别关键化学作用位点"
+      },
+      {
+        "step": 3,
+        "head": "化学位点识别",
+        "relation": "predicts",
+        "tail": "结合模式预测",
+        "claim": "模型预测酶-聚合物结合模式"
+      },
+      {
+        "step": 4,
+        "head": "模型参数调整",
+        "relation": "simulates",
+        "tail": "适应性进化变化",
+        "claim": "参数调整模拟进化过程提升预测"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "分子响应模型",
+        "relation": "analyzes",
+        "tail": "结构/功能变化",
+        "claim": "模型分析酶进化过程的结构功能关联"
+      },
+      {
+        "step": 2,
+        "head": "结构分析",
+        "relation": "identifies",
+        "tail": "金属离子结合/二硫键/电荷变化",
+        "claim": "识别关键化学变化位点"
+      },
+      {
+        "step": 3,
+        "head": "化学变化识别",
+        "relation": "links",
+        "tail": "适应性进化",
+        "claim": "建立化学变化与进化适应性的关联"
+      },
+      {
+        "step": 4,
+        "head": "机器学习",
+        "relation": "predicts",
+        "tail": "性能提升位点",
+        "claim": "预测可优化酶性能的改造位点"
+      }
+    ]
+  ],
+  "L3": [
+    [
+      {
+        "step": 1,
+        "head": "动态挤压指数网络",
+        "relation": "modulates",
+        "tail": "氢键/盐桥/疏水作用",
+        "claim": "化学驱动网络调节关键化学作用"
+      },
+      {
+        "step": 2,
+        "head": "化学作用调节",
+        "relation": "affects",
+        "tail": "催化机制",
+        "claim": "化学相互作用改变影响催化机制"
+      },
+      {
+        "step": 3,
+        "head": "机器学习预测",
+        "relation": "analyzes",
+        "tail": "结构/进化信息",
+        "claim": "预测化学变化对催化机制的影响"
+      },
+      {
+        "step": 4,
+        "head": "化学驱动与机器学习",
+        "relation": "synergizes",
+        "tail": "催化机制优化",
+        "claim": "协同效应共同优化催化性能"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "蛋白质表面电荷分析",
+        "relation": "reveals",
+        "tail": "化学环境",
+        "claim": "解析酶表面化学特性"
+      },
+      {
+        "step": 2,
+        "head": "表型适应性景观建模",
+        "relation": "describes",
+        "tail": "环境适应性变化",
+        "claim": "描述不同环境下的适应性特征"
+      },
+      {
+        "step": 3,
+        "head": "动态响应预测",
+        "relation": "integrates",
+        "tail": "结构信息",
+        "claim": "结合结构数据预测功能适应性"
+      },
+      {
+        "step": 4,
+        "head": "三模块整合",
+        "relation": "constructs",
+        "tail": "全面预测模型",
+        "claim": "多维度整合提升预测准确性"
+      }
+    ]
+  ]
+}

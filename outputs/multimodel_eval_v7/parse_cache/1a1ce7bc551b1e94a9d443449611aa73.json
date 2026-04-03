@@ -1,0 +1,179 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "膜脂质动力学",
+        "relation": "exposes",
+        "tail": "隐藏变构位点",
+        "claim": "膜脂质动力学暴露隐藏变构位点"
+      },
+      {
+        "step": 2,
+        "head": "膜脂质组成动态变化",
+        "relation": "causes",
+        "tail": "受体跨膜区构象柔性梯度变化",
+        "claim": "膜脂质组成动态变化通过局部物理化学效应诱导构象柔性梯度变化"
+      },
+      {
+        "step": 3,
+        "head": "构象柔性梯度变化",
+        "relation": "transforms",
+        "tail": "动态变构信号传递路径",
+        "claim": "构象柔性梯度通过脂质插入热点位点形成动态变构信号传递路径"
+      },
+      {
+        "step": 4,
+        "head": "动态变构信号传递路径",
+        "relation": "affects",
+        "tail": "药物靶向策略的时空特异性",
+        "claim": "动态变构通讯网络影响药物靶向策略的时空特异性"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "X射线晶体学",
+        "relation": "enables",
+        "tail": "解析离散构象状态",
+        "claim": "X射线晶体学解析高分辨率静态构象"
+      },
+      {
+        "step": 2,
+        "head": "冷冻电子显微镜",
+        "relation": "enables",
+        "tail": "解析离散构象状态",
+        "claim": "冷冻电镜捕捉不同功能态构象"
+      },
+      {
+        "step": 3,
+        "head": "分子动力学模拟",
+        "relation": "transforms",
+        "tail": "构建连续信号传导能量图谱",
+        "claim": "分子动力学模拟重构构象动态能量图谱"
+      },
+      {
+        "step": 4,
+        "head": "温度梯度模拟",
+        "relation": "reveals",
+        "tail": "跨膜螺旋间盐桥网络时序断裂模式",
+        "claim": "温度梯度模拟揭示受体活化协同转换阈值"
+      },
+      {
+        "step": 5,
+        "head": "中间态构象能垒协同降低",
+        "relation": "enables",
+        "tail": "开发新型信号偏向配体",
+        "claim": "靶向中间态构象开发新型信号偏向配体"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "膜脂质动力学",
+        "relation": "exposes",
+        "tail": "侧向配体进入通道",
+        "claim": "膜脂质动力学暴露侧向通道"
+      },
+      {
+        "step": 2,
+        "head": "带电磷脂酰肌醇不对称分布",
+        "relation": "modulates",
+        "tail": "侧向通道开放概率",
+        "claim": "PIP2负电荷密度梯度调控通道开放概率"
+      },
+      {
+        "step": 3,
+        "head": "PIP2电场效应",
+        "relation": "causes",
+        "tail": "精氨酸指纹残基质子化状态扰动",
+        "claim": "长程电势扰动引发质子化状态变化"
+      },
+      {
+        "step": 4,
+        "head": "质子化状态扰动",
+        "relation": "transforms",
+        "tail": "螺旋间氢键网络重构",
+        "claim": "氢键网络重构影响非经典药物结合动力学"
+      },
+      {
+        "step": 5,
+        "head": "PIP2浓度调控",
+        "relation": "enables",
+        "tail": "膜定位依赖性药物缓释系统",
+        "claim": "调控PIP2浓度操控通道开闭设计缓释系统"
+      }
+    ]
+  ],
+  "L3": [
+    [
+      {
+        "step": 1,
+        "head": "X射线晶体学",
+        "relation": "provides",
+        "tail": "刚性区域结构数据",
+        "claim": "晶体学解析刚性区域结构特征"
+      },
+      {
+        "step": 2,
+        "head": "冷冻电子显微镜",
+        "relation": "provides",
+        "tail": "柔性区域结构数据",
+        "claim": "电镜捕捉柔性区域动态构象"
+      },
+      {
+        "step": 3,
+        "head": "分子动力学模拟",
+        "relation": "quantifies",
+        "tail": "微秒级运动轨迹参数",
+        "claim": "模拟提供构象动态量化参数"
+      },
+      {
+        "step": 4,
+        "head": "弹性网络建模",
+        "relation": "transforms",
+        "tail": "动态可及性评分函数",
+        "claim": "多模态数据整合定义变构位点评分体系"
+      },
+      {
+        "step": 5,
+        "head": "动态权重模型",
+        "relation": "predicts",
+        "tail": "ZM241385拮抗剂结合路径",
+        "claim": "动态模型提前预测配体迁移路径指导探针设计"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "膜脂质动力学特征",
+        "relation": "informs",
+        "tail": "虚拟筛选平台设计",
+        "claim": "脂质动力学特征驱动筛选平台开发"
+      },
+      {
+        "step": 2,
+        "head": "全原子双层磷脂模型",
+        "relation": "quantifies",
+        "tail": "范德华能波动特征",
+        "claim": "全原子模型量化小分子-脂质相互作用"
+      },
+      {
+        "step": 3,
+        "head": "侧向通道开闭频率监测",
+        "relation": "identifies",
+        "tail": "膜渗透梯度响应性化合物",
+        "claim": "通道动态识别新型变构调节剂"
+      },
+      {
+        "step": 4,
+        "head": "PDK1变构抑制剂",
+        "relation": "exhibits",
+        "tail": "膜电位阶跃响应曲线",
+        "claim": "筛选化合物呈现膜门控结合特性"
+      }
+    ]
+  ]
+}

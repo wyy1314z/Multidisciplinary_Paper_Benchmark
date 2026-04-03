@@ -1,0 +1,46 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "特定GPCR激活过程中的微小构象变化",
+        "relation": "transforms into",
+        "tail": "独特的指纹模式",
+        "claim": "构象变化形成独特的指纹模式"
+      },
+      {
+        "step": 2,
+        "head": "独特的指纹模式",
+        "relation": "determines",
+        "tail": "受体对不同配体的选择性响应",
+        "claim": "指纹模式决定配体选择性响应"
+      },
+      {
+        "step": 3,
+        "head": "独特的指纹模式",
+        "relation": "affects",
+        "tail": "下游信号通路的特异性激活",
+        "claim": "指纹模式影响下游信号通路激活"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "高分辨率结构分析和计算模拟",
+        "relation": "enables",
+        "tail": "识别并验证关键构象变化",
+        "claim": "结构分析和模拟可识别关键构象变化"
+      },
+      {
+        "step": 2,
+        "head": "识别并验证关键构象变化",
+        "relation": "provides",
+        "tail": "针对特定GPCR亚型的高效能药物靶点",
+        "claim": "识别构象变化为药物设计提供新靶点"
+      }
+    ]
+  ],
+  "L3": []
+}

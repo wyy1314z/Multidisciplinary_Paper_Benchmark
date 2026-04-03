@@ -1,0 +1,156 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "可控配体去除策略与多孔结构设计结合",
+        "relation": "enables",
+        "tail": "Q-MIL-53(Fe)优化类酶催化活性和结构特性",
+        "claim": "结合策略使准金属框架同时优化催化活性与结构特性"
+      },
+      {
+        "step": 2,
+        "head": "优化后的孔结构",
+        "relation": "enhances",
+        "tail": "Fe离子暴露率",
+        "claim": "孔结构优化显著提升Fe离子暴露水平"
+      },
+      {
+        "step": 3,
+        "head": "Fe离子暴露率提升",
+        "relation": "causes",
+        "tail": "过氧化物酶样/芬顿反应活性增强",
+        "claim": "Fe暴露增加直接增强催化反应活性"
+      },
+      {
+        "step": 4,
+        "head": "增强的催化活性",
+        "relation": "causes",
+        "tail": "活性氧(ROS)产生",
+        "claim": "催化活性增强导致ROS大量生成"
+      },
+      {
+        "step": 5,
+        "head": "活性氧(ROS)产生",
+        "relation": "causes",
+        "tail": "铁死亡和免疫原性细胞死亡",
+        "claim": "ROS积累引发肿瘤细胞铁死亡及免疫原性死亡"
+      },
+      {
+        "step": 6,
+        "head": "铁死亡和免疫原性死亡",
+        "relation": "enhances",
+        "tail": "树突状细胞成熟和T细胞浸润",
+        "claim": "细胞死亡模式促进抗肿瘤免疫细胞激活"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "可控配体去除策略",
+        "relation": "causes",
+        "tail": "有机配体覆盖减少",
+        "claim": "配体去除策略直接降低配体覆盖度"
+      },
+      {
+        "step": 2,
+        "head": "有机配体覆盖减少",
+        "relation": "enhances",
+        "tail": "金属离子/节点暴露程度",
+        "claim": "配体减少显著提升金属活性位点暴露"
+      },
+      {
+        "step": 3,
+        "head": "金属暴露程度提升",
+        "relation": "enables",
+        "tail": "可调孔结构拓宽",
+        "claim": "金属暴露促进孔结构可调性优化"
+      },
+      {
+        "step": 4,
+        "head": "孔结构拓宽",
+        "relation": "enhances",
+        "tail": "过氧化物酶及芬顿反应活性",
+        "claim": "孔结构优化直接增强催化反应效率"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "多孔结构纳米材料",
+        "relation": "enables",
+        "tail": "表面积增强",
+        "claim": "多孔结构显著提升材料比表面积"
+      },
+      {
+        "step": 2,
+        "head": "表面积增强",
+        "relation": "causes",
+        "tail": "Fe离子与过氧化氢反应增强",
+        "claim": "表面积提升促进ROS生成反应"
+      },
+      {
+        "step": 3,
+        "head": "Fe-过氧化氢反应增强",
+        "relation": "causes",
+        "tail": "活性氧(ROS)产生",
+        "claim": "反应增强导致ROS过量积累"
+      },
+      {
+        "step": 4,
+        "head": "多孔结构优化",
+        "relation": "enhances",
+        "tail": "谷胱甘肽耗竭能力",
+        "claim": "结构优化提升氧化还原调控能力"
+      },
+      {
+        "step": 5,
+        "head": "谷胱甘肽耗竭能力增强",
+        "relation": "inhibits",
+        "tail": "肿瘤细胞抗氧化防御",
+        "claim": "抗氧化系统抑制加剧肿瘤细胞氧化应激"
+      }
+    ]
+  ],
+  "L3": [
+    [
+      {
+        "step": 1,
+        "head": "可控配体去除策略",
+        "relation": "transforms",
+        "tail": "孔结构精细调控",
+        "claim": "配体工程实现孔道结构精确调控"
+      },
+      {
+        "step": 2,
+        "head": "孔结构调控",
+        "relation": "enhances",
+        "tail": "Fe节点利用效率",
+        "claim": "结构优化最大化金属活性位点利用率"
+      },
+      {
+        "step": 3,
+        "head": "Fe利用效率提升",
+        "relation": "enables",
+        "tail": "ROS催化能力增强",
+        "claim": "金属效率提升强化ROS生成能力"
+      },
+      {
+        "step": 4,
+        "head": "ROS催化增强",
+        "relation": "causes",
+        "tail": "肿瘤微环境ROS累积",
+        "claim": "催化增强导致肿瘤区域氧化应激爆发"
+      },
+      {
+        "step": 5,
+        "head": "ROS累积",
+        "relation": "causes",
+        "tail": "铁死亡与免疫原性死亡协同",
+        "claim": "ROS过量同时触发细胞死亡双重机制"
+      }
+    ]
+  ]
+}

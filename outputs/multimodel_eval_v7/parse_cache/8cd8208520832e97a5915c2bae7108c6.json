@@ -1,0 +1,158 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "quasi-metal-organic frameworks",
+        "relation": "enables",
+        "tail": "tunable pore structure",
+        "claim": "Q-MOFs的结构特性使其具备可调孔道结构"
+      },
+      {
+        "step": 2,
+        "head": "tunable pore structure",
+        "relation": "enhances",
+        "tail": "catalytic activities",
+        "claim": "可调孔道结构增强催化活性"
+      },
+      {
+        "step": 3,
+        "head": "pH-responsive ligands",
+        "relation": "causes",
+        "tail": "targeted drug release",
+        "claim": "pH响应配体触发酸性环境特异性释药"
+      },
+      {
+        "step": 4,
+        "head": "targeted drug release",
+        "relation": "improves",
+        "tail": "therapeutic efficacy",
+        "claim": "靶向释药提升治疗效果并降低毒性"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "controlled deligandation",
+        "relation": "enhances",
+        "tail": "peroxidase-like activity",
+        "claim": "脱配体策略增强过氧化物酶样活性"
+      },
+      {
+        "step": 2,
+        "head": "redox-active ligands",
+        "relation": "promotes",
+        "tail": "reactive oxygen species generation",
+        "claim": "氧化还原配体促进ROS生成"
+      },
+      {
+        "step": 3,
+        "head": "reactive oxygen species",
+        "relation": "induces",
+        "tail": "ferroptosis",
+        "claim": "ROS积累引发铁死亡"
+      },
+      {
+        "step": 4,
+        "head": "ferroptosis",
+        "relation": "enhances",
+        "tail": "antitumor efficacy",
+        "claim": "铁死亡增强抗肿瘤效果"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "porous structure",
+        "relation": "allows",
+        "tail": "encapsulation of inhibitors",
+        "claim": "多孔结构可封装抑制剂"
+      },
+      {
+        "step": 2,
+        "head": "encapsulation of inhibitors",
+        "relation": "enables",
+        "tail": "controlled release",
+        "claim": "封装实现抑制剂控释"
+      },
+      {
+        "step": 3,
+        "head": "controlled release",
+        "relation": "modulates",
+        "tail": "ferroptosis timing",
+        "claim": "控释调节铁死亡时序"
+      },
+      {
+        "step": 4,
+        "head": "ferroptosis timing",
+        "relation": "optimizes",
+        "tail": "therapeutic window",
+        "claim": "时序调控优化治疗窗口"
+      }
+    ]
+  ],
+  "L3": [
+    [
+      {
+        "step": 1,
+        "head": "Q-MIL-53(Fe)",
+        "relation": "combines with",
+        "tail": "photosensitizer",
+        "claim": "Q-MIL-53(Fe)可与光敏剂结合"
+      },
+      {
+        "step": 2,
+        "head": "photosensitizer",
+        "relation": "generates",
+        "tail": "light-induced ROS",
+        "claim": "光敏剂在光照下产生ROS"
+      },
+      {
+        "step": 3,
+        "head": "light-induced ROS",
+        "relation": "enhances",
+        "tail": "oxidative stress",
+        "claim": "光诱导ROS增强氧化应激"
+      },
+      {
+        "step": 4,
+        "head": "oxidative stress",
+        "relation": "synergizes with",
+        "tail": "ferroptosis",
+        "claim": "氧化应激与铁死亡产生协同效应"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "tunable pore structure",
+        "relation": "permits",
+        "tail": "siRNA encapsulation",
+        "claim": "可调孔道允许siRNA封装"
+      },
+      {
+        "step": 2,
+        "head": "siRNA encapsulation",
+        "relation": "delivers",
+        "tail": "gene regulation",
+        "claim": "siRNA递送实现基因调控"
+      },
+      {
+        "step": 3,
+        "head": "gene regulation",
+        "relation": "suppresses",
+        "tail": "off-target effects",
+        "claim": "基因调控抑制脱靶效应"
+      },
+      {
+        "step": 4,
+        "head": "off-target effects",
+        "relation": "improves",
+        "tail": "therapeutic outcomes",
+        "claim": "减少脱靶效应改善治疗结果"
+      }
+    ]
+  ]
+}

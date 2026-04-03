@@ -1,0 +1,158 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "微流体反应器",
+        "relation": "enables",
+        "tail": "三维映射模型",
+        "claim": "微流体反应器的动态流体控制能力为构建三维映射模型提供实验基础"
+      },
+      {
+        "step": 2,
+        "head": "深度神经网络",
+        "relation": "enables",
+        "tail": "三维映射模型",
+        "claim": "深度神经网络的非线性关系量化能力支持三维映射模型构建"
+      },
+      {
+        "step": 3,
+        "head": "三维映射模型",
+        "relation": "establishes",
+        "tail": "跨尺度关联",
+        "claim": "三维映射模型建立流体剪切力-成核生长动力学-等离激元共振的跨尺度关联"
+      },
+      {
+        "step": 4,
+        "head": "跨尺度关联",
+        "relation": "enables",
+        "tail": "在线调整合成参数",
+        "claim": "跨尺度关联使得在线动态调整合成参数以实现光学性质调控成为可能"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "微流体反应器",
+        "relation": "generates",
+        "tail": "高维数据云",
+        "claim": "微流体反应器生成连续可调的二维浓度梯度形成高维数据云"
+      },
+      {
+        "step": 2,
+        "head": "高维数据云",
+        "relation": "trains",
+        "tail": "代理模型",
+        "claim": "浓度梯度数据云可训练反应动力学代理模型"
+      },
+      {
+        "step": 3,
+        "head": "协方差矩阵适应进化策略",
+        "relation": "optimizes",
+        "tail": "代理模型",
+        "claim": "CMA-ES算法通过并行优化能力处理高维非凸代理模型"
+      },
+      {
+        "step": 4,
+        "head": "代理模型",
+        "relation": "accelerates",
+        "tail": "多维化学空间探索",
+        "claim": "优化后的代理模型实现10维化学空间指数级加速探索"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "遗传算法",
+        "relation": "optimizes",
+        "tail": "离散型反应参数",
+        "claim": "遗传算法通过全局搜索能力处理离散型反应参数优化"
+      },
+      {
+        "step": 2,
+        "head": "深度神经网络",
+        "relation": "models",
+        "tail": "连续型工艺参数",
+        "claim": "深度学习通过局部精调特性建模连续型工艺参数"
+      },
+      {
+        "step": 3,
+        "head": "层次化响应面模型",
+        "relation": "resolves",
+        "tail": "参数耦合问题",
+        "claim": "层次化建模解决尺度效应导致的反应参数耦合问题"
+      },
+      {
+        "step": 4,
+        "head": "参数耦合问题",
+        "relation": "reduces",
+        "tail": "纳米粒子尺寸标准差",
+        "claim": "解耦后银纳米粒子尺寸标准差从±8nm降低至±2nm"
+      }
+    ]
+  ],
+  "L3": [
+    [
+      {
+        "step": 1,
+        "head": "微流体反应器",
+        "relation": "acquires",
+        "tail": "流变学数据",
+        "claim": "微流体系统获取毫秒级反应进程流变学数据"
+      },
+      {
+        "step": 2,
+        "head": "流变学数据",
+        "relation": "informs",
+        "tail": "贝叶斯优化",
+        "claim": "流变学特征峰作为动力学模型校正的隐变量输入贝叶斯框架"
+      },
+      {
+        "step": 3,
+        "head": "贝叶斯优化",
+        "relation": "updates",
+        "tail": "先验分布",
+        "claim": "贝叶斯优化通过获取函数在线更新反应动力学参数先验分布"
+      },
+      {
+        "step": 4,
+        "head": "先验分布",
+        "relation": "stabilizes",
+        "tail": "等离激元峰位",
+        "claim": "参数校正使光照波动±15%时等离激元峰位漂移<2nm"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "在线光谱",
+        "relation": "captures",
+        "tail": "消光谱图数据",
+        "claim": "在线光谱分析系统实时捕获纳米粒子消光谱图数据"
+      },
+      {
+        "step": 2,
+        "head": "消光谱图数据",
+        "relation": "trains",
+        "tail": "卷积神经网络",
+        "claim": "实时数据通过迁移学习微调预训练的纳米粒子形貌预测模型"
+      },
+      {
+        "step": 3,
+        "head": "卷积神经网络",
+        "relation": "integrates",
+        "tail": "流体动力学模型",
+        "claim": "流体模型约束提升小样本条件下的形貌预测可靠性"
+      },
+      {
+        "step": 4,
+        "head": "流体动力学模型",
+        "relation": "maintains",
+        "tail": "三角纳米棱镜产率",
+        "claim": "反馈控制使进料速度变化5倍时产率保持>85%"
+      }
+    ]
+  ]
+}

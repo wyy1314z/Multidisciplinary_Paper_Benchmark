@@ -1,0 +1,137 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "membrane lipid dynamics",
+        "relation": "exposes",
+        "tail": "lateral ligand entrance gates",
+        "claim": "膜脂质动力学暴露侧向配体入口门"
+      },
+      {
+        "step": 2,
+        "head": "lateral ligand entrance gates",
+        "relation": "modulates",
+        "tail": "GPCR signaling specificity",
+        "claim": "侧向入口门调控不同受体亚型的GPCR信号特异性"
+      },
+      {
+        "step": 3,
+        "head": "lipid-dependent conformational breathing motions",
+        "relation": "alters",
+        "tail": "accessibility of lateral pathways",
+        "claim": "脂质依赖的构象呼吸运动改变侧向通路的可及性"
+      },
+      {
+        "step": 4,
+        "head": "spatiotemporal control of ligand permeation",
+        "relation": "creates",
+        "tail": "tissue-specific drug targeting opportunities",
+        "claim": "配体渗透时空控制创造组织特异性药物靶向机会"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "nano- to microsecond breathing motions",
+        "relation": "represents",
+        "tail": "conserved allosteric communication networks",
+        "claim": "纳米到微秒呼吸运动代表保守的变构通讯网络"
+      },
+      {
+        "step": 2,
+        "head": "allosteric communication networks",
+        "relation": "coordinates",
+        "tail": "signal transduction pathways",
+        "claim": "变构通讯网络空间协调信号转导路径"
+      },
+      {
+        "step": 3,
+        "head": "cryo-EM resolved intermediate states",
+        "relation": "validates",
+        "tail": "conformational transitions gating signaling",
+        "claim": "冷冻电镜中间态提供构象转变控制信号的拓扑验证"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "pathological lipid composition alterations",
+        "relation": "induces",
+        "tail": "long-timescale conformational rearrangements",
+        "claim": "病理脂质组成改变诱导长时程构象重排"
+      },
+      {
+        "step": 2,
+        "head": "conformational rearrangements",
+        "relation": "occludes",
+        "tail": "lateral entrance gates",
+        "claim": "构象重排通过空间位阻阻塞侧向入口门"
+      },
+      {
+        "step": 3,
+        "head": "sterically occluded lateral gates",
+        "relation": "explains",
+        "tail": "disease-specific drug resistance",
+        "claim": "空间阻塞的侧向门提供疾病特异性耐药的生物物理解释"
+      },
+      {
+        "step": 4,
+        "head": "biophysical rationale",
+        "relation": "informs",
+        "tail": "lipid-mimetic therapeutic strategies",
+        "claim": "生物物理机制指导脂质模拟治疗策略开发"
+      }
+    ]
+  ],
+  "L3": [
+    [
+      {
+        "step": 1,
+        "head": "integration of lipid-embedded MD datasets",
+        "relation": "reveals",
+        "tail": "lipid insertion hotspots as conformational switches",
+        "claim": "整合脂质嵌入MD数据揭示脂质热点作为构象开关"
+      },
+      {
+        "step": 2,
+        "head": "conformational switches",
+        "relation": "regulates",
+        "tail": "allosteric site accessibility",
+        "claim": "构象开关调控变构位点可及性"
+      },
+      {
+        "step": 3,
+        "head": "analysis of breathing motion patterns",
+        "relation": "enables",
+        "tail": "ML prediction of cryptic binding pockets",
+        "claim": "呼吸运动模式分析使机器学习预测隐秘结合口袋成为可能"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "free energy calculations",
+        "relation": "demonstrates",
+        "tail": "cholesterol gradients modulate lateral gate permeability",
+        "claim": "自由能计算显示胆固醇梯度调节侧向门渗透性"
+      },
+      {
+        "step": 2,
+        "head": "cholesterol-induced permeability modulation",
+        "relation": "establishes",
+        "tail": "quantitative design principles",
+        "claim": "胆固醇诱导的渗透性调节建立定量设计原则"
+      },
+      {
+        "step": 3,
+        "head": "design principles",
+        "relation": "guides",
+        "tail": "amphiphilic drug carrier development",
+        "claim": "设计原则指导两亲药物载体开发"
+      }
+    ]
+  ]
+}

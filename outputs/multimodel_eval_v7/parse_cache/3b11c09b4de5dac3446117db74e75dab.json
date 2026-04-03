@@ -1,0 +1,172 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "metal ions",
+        "relation": "stabilize",
+        "tail": "protein surface charges",
+        "claim": "Metal ions stabilize proteins through surface charge interactions"
+      },
+      {
+        "step": 2,
+        "head": "epistasis",
+        "relation": "shapes",
+        "tail": "fitness landscapes",
+        "claim": "Epistasis shapes fitness landscapes"
+      },
+      {
+        "step": 3,
+        "head": "machine learning models",
+        "relation": "identify",
+        "tail": "optimal metal ion binding sites",
+        "claim": "Machine learning models identify optimal metal ion binding sites"
+      },
+      {
+        "step": 4,
+        "head": "optimal metal ion binding sites",
+        "relation": "amplify",
+        "tail": "beneficial epistatic interactions",
+        "claim": "Optimal binding sites amplify beneficial epistatic interactions"
+      },
+      {
+        "step": 5,
+        "head": "engineered enzymes with coordinated modules",
+        "relation": "show",
+        "tail": "higher thermostability",
+        "claim": "Enzymes engineered with coordinated modules show 20% higher thermostability"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "hydrogen bonds",
+        "relation": "determine",
+        "tail": "substrate binding",
+        "claim": "Hydrogen bonds determine substrate binding"
+      },
+      {
+        "step": 2,
+        "head": "machine learning",
+        "relation": "excels at",
+        "tail": "pattern recognition",
+        "claim": "Machine learning excels at pattern recognition"
+      },
+      {
+        "step": 3,
+        "head": "dynamic hydrogen bond occupancy metrics",
+        "relation": "train",
+        "tail": "ML models",
+        "claim": "Dynamic metrics train ML models to predict binding orientation"
+      },
+      {
+        "step": 4,
+        "head": "enhanced H-bond network stability",
+        "relation": "leads to",
+        "tail": "higher catalytic efficiency",
+        "claim": "PET hydrolase variants with enhanced H-bond stability show 3-fold higher catalytic efficiency"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "sign epistasis",
+        "relation": "shapes",
+        "tail": "evolutionary trajectories",
+        "claim": "Sign epistasis shapes evolutionary trajectories"
+      },
+      {
+        "step": 2,
+        "head": "iCASE",
+        "relation": "constructs",
+        "tail": "modular networks",
+        "claim": "iCASE constructs hierarchical modular networks"
+      },
+      {
+        "step": 3,
+        "head": "module connectivity perturbations",
+        "relation": "alter",
+        "tail": "epistatic interactions",
+        "claim": "Perturbing module connectivity alters epistatic interactions"
+      },
+      {
+        "step": 4,
+        "head": "modular network rearrangements",
+        "relation": "convert",
+        "tail": "antagonistic to synergistic epistasis",
+        "claim": "Network rearrangements convert antagonistic to synergistic epistasis"
+      },
+      {
+        "step": 5,
+        "head": "converted epistasis",
+        "relation": "increases",
+        "tail": "enzyme fitness",
+        "claim": "Converted epistasis increases enzyme fitness by 40%"
+      }
+    ]
+  ],
+  "L3": [
+    [
+      {
+        "step": 1,
+        "head": "dynamic squeezing indices",
+        "relation": "measure",
+        "tail": "structural flexibility",
+        "claim": "Dynamic squeezing indices measure structural flexibility"
+      },
+      {
+        "step": 2,
+        "head": "machine learning",
+        "relation": "predicts",
+        "tail": "magnitude epistasis",
+        "claim": "ML predicts magnitude epistasis"
+      },
+      {
+        "step": 3,
+        "head": "epistasis-aware optimization",
+        "relation": "aligns",
+        "tail": "mechanical stress with active site dynamics",
+        "claim": "Epistasis-aware optimization aligns mechanical stress with active site dynamics"
+      },
+      {
+        "step": 4,
+        "head": "co-evolved squeezing-epistasis parameters",
+        "relation": "exhibit",
+        "tail": "higher turnover rates",
+        "claim": "Co-evolved parameters exhibit higher turnover rates under industrial conditions"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "protein surface charges",
+        "relation": "affect",
+        "tail": "solubility",
+        "claim": "Protein surface charges affect solubility"
+      },
+      {
+        "step": 2,
+        "head": "fitness landscapes",
+        "relation": "describe",
+        "tail": "adaptive trade-offs",
+        "claim": "Fitness landscapes describe adaptive trade-offs"
+      },
+      {
+        "step": 3,
+        "head": "charge distribution metrics",
+        "relation": "inform",
+        "tail": "landscape models",
+        "claim": "Charge metrics inform landscape models through hydration dynamics"
+      },
+      {
+        "step": 4,
+        "head": "charge-hydrated landscape models",
+        "relation": "classify",
+        "tail": "stability-activity variants",
+        "claim": "Charge-hydrated models classify 90% of variants correctly"
+      }
+    ]
+  ]
+}

@@ -1,0 +1,242 @@
+[
+  {
+    "paper_id": "a6f866ca73d0",
+    "title": "Self-driving lab for the photochemical synthesis of plasmonic nanoparticles with targeted structural and optical properties",
+    "model": "gemini-2.0-flash",
+    "method_name": "P1",
+    "free_text_hypotheses": [
+      "[ERROR] LLM 网关错误 (HTTP 503): Error code: 503 - {'error': {'message': '当前分组 *** 下对于模型 gemini-2.0-flash 无可用渠道  (request id: 2026032701591831292187835579720)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': None}}"
+    ],
+    "structured_paths": {},
+    "elapsed_seconds": 41.02,
+    "error": "LLM 网关错误 (HTTP 503): Error code: 503 - {'error': {'message': '当前分组 *** 下对于模型 gemini-2.0-flash 无可用渠道  (request id: 2026032701591831292187835579720)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': None}}"
+  },
+  {
+    "paper_id": "a6f866ca73d0",
+    "title": "Self-driving lab for the photochemical synthesis of plasmonic nanoparticles with targeted structural and optical properties",
+    "model": "gemini-2.0-flash",
+    "method_name": "P2",
+    "free_text_hypotheses": [
+      "[ERROR] LLM 网关错误 (HTTP 503): Error code: 503 - {'error': {'message': '当前分组 *** 下对于模型 gemini-2.0-flash 无可用渠道  (request id: 2026032701595792339079503060458)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': None}}"
+    ],
+    "structured_paths": {},
+    "elapsed_seconds": 40.19,
+    "error": "LLM 网关错误 (HTTP 503): Error code: 503 - {'error': {'message': '当前分组 *** 下对于模型 gemini-2.0-flash 无可用渠道  (request id: 2026032701595792339079503060458)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': None}}"
+  },
+  {
+    "paper_id": "a6f866ca73d0",
+    "title": "Self-driving lab for the photochemical synthesis of plasmonic nanoparticles with targeted structural and optical properties",
+    "model": "gemini-2.0-flash",
+    "method_name": "P3",
+    "free_text_hypotheses": [
+      "[ERROR] LLM 网关错误 (HTTP 503): Error code: 503 - {'error': {'message': '当前分组 *** 下对于模型 gemini-2.0-flash 无可用渠道  (request id: 2026032702005270517847372225396)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': None}}"
+    ],
+    "structured_paths": {},
+    "elapsed_seconds": 54.35,
+    "error": "LLM 网关错误 (HTTP 503): Error code: 503 - {'error': {'message': '当前分组 *** 下对于模型 gemini-2.0-flash 无可用渠道  (request id: 2026032702005270517847372225396)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': None}}"
+  },
+  {
+    "paper_id": "a6f866ca73d0",
+    "title": "Self-driving lab for the photochemical synthesis of plasmonic nanoparticles with targeted structural and optical properties",
+    "model": "gemini-2.0-flash",
+    "method_name": "P4",
+    "free_text_hypotheses": [
+      "[ERROR] LLM 网关错误 (HTTP 503): Error code: 503 - {'error': {'message': '当前分组 *** 下对于模型 gemini-2.0-flash 无可用渠道  (request id: 2026032702013085950929604257641)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': None}}"
+    ],
+    "structured_paths": {},
+    "elapsed_seconds": 37.6,
+    "error": "LLM 网关错误 (HTTP 503): Error code: 503 - {'error': {'message': '当前分组 *** 下对于模型 gemini-2.0-flash 无可用渠道  (request id: 2026032702013085950929604257641)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': None}}"
+  },
+  {
+    "paper_id": "0aafd9a38c81",
+    "title": "Large scale investigation of GPCR molecular dynamics data uncovers allosteric sites and lateral gateways",
+    "model": "gemini-2.0-flash",
+    "method_name": "P1",
+    "free_text_hypotheses": [
+      "[ERROR] LLM 网关错误 (HTTP 503): Error code: 503 - {'error': {'message': '当前分组 *** 下对于模型 gemini-2.0-flash 无可用渠道  (request id: 2026032702021667473645759526296)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': None}}"
+    ],
+    "structured_paths": {},
+    "elapsed_seconds": 45.98,
+    "error": "LLM 网关错误 (HTTP 503): Error code: 503 - {'error': {'message': '当前分组 *** 下对于模型 gemini-2.0-flash 无可用渠道  (request id: 2026032702021667473645759526296)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': None}}"
+  },
+  {
+    "paper_id": "0aafd9a38c81",
+    "title": "Large scale investigation of GPCR molecular dynamics data uncovers allosteric sites and lateral gateways",
+    "model": "gemini-2.0-flash",
+    "method_name": "P2",
+    "free_text_hypotheses": [
+      "[ERROR] LLM 网关错误 (HTTP 503): Error code: 503 - {'error': {'message': '当前分组 *** 下对于模型 gemini-2.0-flash 无可用渠道  (request id: 2026032702025415863939254265909)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': None}}"
+    ],
+    "structured_paths": {},
+    "elapsed_seconds": 37.77,
+    "error": "LLM 网关错误 (HTTP 503): Error code: 503 - {'error': {'message': '当前分组 *** 下对于模型 gemini-2.0-flash 无可用渠道  (request id: 2026032702025415863939254265909)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': None}}"
+  },
+  {
+    "paper_id": "0aafd9a38c81",
+    "title": "Large scale investigation of GPCR molecular dynamics data uncovers allosteric sites and lateral gateways",
+    "model": "gemini-2.0-flash",
+    "method_name": "P3",
+    "free_text_hypotheses": [
+      "[ERROR] LLM 网关错误 (HTTP 503): Error code: 503 - {'error': {'message': '当前分组 *** 下对于模型 gemini-2.0-flash 无可用渠道  (request id: 2026032702033847710322703724249)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': None}}"
+    ],
+    "structured_paths": {},
+    "elapsed_seconds": 43.91,
+    "error": "LLM 网关错误 (HTTP 503): Error code: 503 - {'error': {'message': '当前分组 *** 下对于模型 gemini-2.0-flash 无可用渠道  (request id: 2026032702033847710322703724249)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': None}}"
+  },
+  {
+    "paper_id": "0aafd9a38c81",
+    "title": "Large scale investigation of GPCR molecular dynamics data uncovers allosteric sites and lateral gateways",
+    "model": "gemini-2.0-flash",
+    "method_name": "P4",
+    "free_text_hypotheses": [
+      "[ERROR] LLM 网关错误 (HTTP 503): Error code: 503 - {'error': {'message': '当前分组 *** 下对于模型 gemini-2.0-flash 无可用渠道  (request id: 2026032702041663488909690941695)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': None}}"
+    ],
+    "structured_paths": {},
+    "elapsed_seconds": 44.19,
+    "error": "LLM 网关错误 (HTTP 503): Error code: 503 - {'error': {'message': '当前分组 *** 下对于模型 gemini-2.0-flash 无可用渠道  (request id: 2026032702041663488909690941695)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': None}}"
+  },
+  {
+    "paper_id": "c7202044749e",
+    "title": "3D-printed aberration-free terahertz metalens for ultra-broadband achromatic super-resolution wide-angle imaging with high numerical aperture",
+    "model": "gemini-2.0-flash",
+    "method_name": "P1",
+    "free_text_hypotheses": [
+      "[ERROR] LLM 网关错误 (HTTP 503): Error code: 503 - {'error': {'message': '当前分组 *** 下对于模型 gemini-2.0-flash 无可用渠道  (request id: 2026032702050052149648477262424)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': None}}"
+    ],
+    "structured_paths": {},
+    "elapsed_seconds": 37.81,
+    "error": "LLM 网关错误 (HTTP 503): Error code: 503 - {'error': {'message': '当前分组 *** 下对于模型 gemini-2.0-flash 无可用渠道  (request id: 2026032702050052149648477262424)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': None}}"
+  },
+  {
+    "paper_id": "c7202044749e",
+    "title": "3D-printed aberration-free terahertz metalens for ultra-broadband achromatic super-resolution wide-angle imaging with high numerical aperture",
+    "model": "gemini-2.0-flash",
+    "method_name": "P2",
+    "free_text_hypotheses": [
+      "[ERROR] LLM 网关错误 (HTTP 503): Error code: 503 - {'error': {'message': '当前分组 *** 下对于模型 gemini-2.0-flash 无可用渠道  (request id: 2026032702053863593353596809763)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': None}}"
+    ],
+    "structured_paths": {},
+    "elapsed_seconds": 38.13,
+    "error": "LLM 网关错误 (HTTP 503): Error code: 503 - {'error': {'message': '当前分组 *** 下对于模型 gemini-2.0-flash 无可用渠道  (request id: 2026032702053863593353596809763)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': None}}"
+  },
+  {
+    "paper_id": "c7202044749e",
+    "title": "3D-printed aberration-free terahertz metalens for ultra-broadband achromatic super-resolution wide-angle imaging with high numerical aperture",
+    "model": "gemini-2.0-flash",
+    "method_name": "P3",
+    "free_text_hypotheses": [
+      "[ERROR] LLM 网关错误 (HTTP 503): Error code: 503 - {'error': {'message': '当前分组 *** 下对于模型 gemini-2.0-flash 无可用渠道  (request id: 2026032702061775039518152739315)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': None}}"
+    ],
+    "structured_paths": {},
+    "elapsed_seconds": 39.92,
+    "error": "LLM 网关错误 (HTTP 503): Error code: 503 - {'error': {'message': '当前分组 *** 下对于模型 gemini-2.0-flash 无可用渠道  (request id: 2026032702061775039518152739315)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': None}}"
+  },
+  {
+    "paper_id": "c7202044749e",
+    "title": "3D-printed aberration-free terahertz metalens for ultra-broadband achromatic super-resolution wide-angle imaging with high numerical aperture",
+    "model": "gemini-2.0-flash",
+    "method_name": "P4",
+    "free_text_hypotheses": [
+      "[ERROR] LLM 网关错误 (HTTP 503): Error code: 503 - {'error': {'message': '当前分组 *** 下对于模型 gemini-2.0-flash 无可用渠道  (request id: 2026032702065832699395974485444)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': None}}"
+    ],
+    "structured_paths": {},
+    "elapsed_seconds": 39.79,
+    "error": "LLM 网关错误 (HTTP 503): Error code: 503 - {'error': {'message': '当前分组 *** 下对于模型 gemini-2.0-flash 无可用渠道  (request id: 2026032702065832699395974485444)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': None}}"
+  },
+  {
+    "paper_id": "c5641167db43",
+    "title": "Tailoring industrial enzymes for thermostability and activity evolution by the machine learning-based iCASE strategy",
+    "model": "gemini-2.0-flash",
+    "method_name": "P1",
+    "free_text_hypotheses": [
+      "[ERROR] LLM 网关错误 (HTTP 503): Error code: 503 - {'error': {'message': '当前分组 *** 下对于模型 gemini-2.0-flash 无可用渠道  (request id: 2026032702073615787799803494989)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': None}}"
+    ],
+    "structured_paths": {},
+    "elapsed_seconds": 38.37,
+    "error": "LLM 网关错误 (HTTP 503): Error code: 503 - {'error': {'message': '当前分组 *** 下对于模型 gemini-2.0-flash 无可用渠道  (request id: 2026032702073615787799803494989)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': None}}"
+  },
+  {
+    "paper_id": "c5641167db43",
+    "title": "Tailoring industrial enzymes for thermostability and activity evolution by the machine learning-based iCASE strategy",
+    "model": "gemini-2.0-flash",
+    "method_name": "P2",
+    "free_text_hypotheses": [
+      "[ERROR] LLM 网关错误 (HTTP 503): Error code: 503 - {'error': {'message': '当前分组 *** 下对于模型 gemini-2.0-flash 无可用渠道  (request id: 2026032702081635009667298707326)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': None}}"
+    ],
+    "structured_paths": {},
+    "elapsed_seconds": 40.09,
+    "error": "LLM 网关错误 (HTTP 503): Error code: 503 - {'error': {'message': '当前分组 *** 下对于模型 gemini-2.0-flash 无可用渠道  (request id: 2026032702081635009667298707326)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': None}}"
+  },
+  {
+    "paper_id": "c5641167db43",
+    "title": "Tailoring industrial enzymes for thermostability and activity evolution by the machine learning-based iCASE strategy",
+    "model": "gemini-2.0-flash",
+    "method_name": "P3",
+    "free_text_hypotheses": [
+      "[ERROR] LLM 网关错误 (HTTP 503): Error code: 503 - {'error': {'message': '当前分组 *** 下对于模型 gemini-2.0-flash 无可用渠道  (request id: 2026032702092898189857606752104)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': None}}"
+    ],
+    "structured_paths": {},
+    "elapsed_seconds": 72.25,
+    "error": "LLM 网关错误 (HTTP 503): Error code: 503 - {'error': {'message': '当前分组 *** 下对于模型 gemini-2.0-flash 无可用渠道  (request id: 2026032702092898189857606752104)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': None}}"
+  },
+  {
+    "paper_id": "c5641167db43",
+    "title": "Tailoring industrial enzymes for thermostability and activity evolution by the machine learning-based iCASE strategy",
+    "model": "gemini-2.0-flash",
+    "method_name": "P4",
+    "free_text_hypotheses": [
+      "[ERROR] LLM 网关错误 (HTTP 503): Error code: 503 - {'error': {'message': '当前分组 *** 下对于模型 gemini-2.0-flash 无可用渠道  (request id: 2026032702100788201322196417336)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': None}}"
+    ],
+    "structured_paths": {},
+    "elapsed_seconds": 38.8,
+    "error": "LLM 网关错误 (HTTP 503): Error code: 503 - {'error': {'message': '当前分组 *** 下对于模型 gemini-2.0-flash 无可用渠道  (request id: 2026032702100788201322196417336)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': None}}"
+  },
+  {
+    "paper_id": "69cf875bdbf7",
+    "title": "Quasi Fe MIL-53 nanozyme inducing ferroptosis and immunogenic cell death for cancer immunotherapy",
+    "model": "gemini-2.0-flash",
+    "method_name": "P1",
+    "free_text_hypotheses": [
+      "[ERROR] LLM 网关错误 (HTTP 503): Error code: 503 - {'error': {'message': '当前分组 *** 下对于模型 gemini-2.0-flash 无可用渠道  (request id: 2026032702104722810326220798603)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': None}}"
+    ],
+    "structured_paths": {},
+    "elapsed_seconds": 39.32,
+    "error": "LLM 网关错误 (HTTP 503): Error code: 503 - {'error': {'message': '当前分组 *** 下对于模型 gemini-2.0-flash 无可用渠道  (request id: 2026032702104722810326220798603)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': None}}"
+  },
+  {
+    "paper_id": "69cf875bdbf7",
+    "title": "Quasi Fe MIL-53 nanozyme inducing ferroptosis and immunogenic cell death for cancer immunotherapy",
+    "model": "gemini-2.0-flash",
+    "method_name": "P2",
+    "free_text_hypotheses": [
+      "[ERROR] LLM 网关错误 (HTTP 503): Error code: 503 - {'error': {'message': '当前分组 *** 下对于模型 gemini-2.0-flash 无可用渠道  (request id: 2026032702112642070952186308508)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': None}}"
+    ],
+    "structured_paths": {},
+    "elapsed_seconds": 40.05,
+    "error": "LLM 网关错误 (HTTP 503): Error code: 503 - {'error': {'message': '当前分组 *** 下对于模型 gemini-2.0-flash 无可用渠道  (request id: 2026032702112642070952186308508)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': None}}"
+  },
+  {
+    "paper_id": "69cf875bdbf7",
+    "title": "Quasi Fe MIL-53 nanozyme inducing ferroptosis and immunogenic cell death for cancer immunotherapy",
+    "model": "gemini-2.0-flash",
+    "method_name": "P3",
+    "free_text_hypotheses": [
+      "[ERROR] LLM 网关错误 (HTTP 503): Error code: 503 - {'error': {'message': '当前分组 *** 下对于模型 gemini-2.0-flash 无可用渠道  (request id: 2026032702120864288102722258304)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': None}}"
+    ],
+    "structured_paths": {},
+    "elapsed_seconds": 48.52,
+    "error": "LLM 网关错误 (HTTP 503): Error code: 503 - {'error': {'message': '当前分组 *** 下对于模型 gemini-2.0-flash 无可用渠道  (request id: 2026032702120864288102722258304)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': None}}"
+  },
+  {
+    "paper_id": "69cf875bdbf7",
+    "title": "Quasi Fe MIL-53 nanozyme inducing ferroptosis and immunogenic cell death for cancer immunotherapy",
+    "model": "gemini-2.0-flash",
+    "method_name": "P4",
+    "free_text_hypotheses": [
+      "[ERROR] LLM 网关错误 (HTTP 503): Error code: 503 - {'error': {'message': '当前分组 *** 下对于模型 gemini-2.0-flash 无可用渠道  (request id: 2026032702125725837876777701478)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': None}}"
+    ],
+    "structured_paths": {},
+    "elapsed_seconds": 41.91,
+    "error": "LLM 网关错误 (HTTP 503): Error code: 503 - {'error': {'message': '当前分组 *** 下对于模型 gemini-2.0-flash 无可用渠道  (request id: 2026032702125725837876777701478)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': None}}"
+  }
+]

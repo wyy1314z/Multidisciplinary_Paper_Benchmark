@@ -1,0 +1,130 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "dynamic conformational states of GPCRs",
+        "relation": "modulates",
+        "tail": "accessibility of allosteric drug binding sites",
+        "claim": "动态构象状态调节别构药物结合位点的可及性"
+      },
+      {
+        "step": 2,
+        "head": "lipid environment surrounding the receptor",
+        "relation": "influences",
+        "tail": "accessibility of allosteric drug binding sites",
+        "claim": "脂质环境影响别构药物结合位点的可及性"
+      },
+      {
+        "step": 3,
+        "head": "accessibility of allosteric drug binding sites",
+        "relation": "impacts",
+        "tail": "drug-targeting strategies",
+        "claim": "别构药物结合位点的可及性影响药物靶向策略"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "integration of X-ray crystallography and cryogenic electron microscopy with molecular dynamics simulations",
+        "relation": "reveals",
+        "tail": "specific conformational changes in GPCRs",
+        "claim": "多技术整合揭示GPCR的特异性构象变化"
+      },
+      {
+        "step": 2,
+        "head": "specific conformational changes in GPCRs",
+        "relation": "correlates with",
+        "tail": "distinct signaling pathways",
+        "claim": "特异性构象变化与不同信号通路相关联"
+      },
+      {
+        "step": 3,
+        "head": "distinct signaling pathways",
+        "relation": "establishes",
+        "tail": "mechanistic link between receptor structure and functional outcomes",
+        "claim": "不同信号通路建立受体结构与功能结果的机制联系"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "molecular dynamics simulations of GPCRs in various membrane lipid environments",
+        "relation": "uncovers",
+        "tail": "effect of lipid composition on conformational flexibility",
+        "claim": "不同脂质环境的模拟揭示脂质组成对构象灵活性的影响"
+      },
+      {
+        "step": 2,
+        "head": "effect of lipid composition on conformational flexibility",
+        "relation": "alters",
+        "tail": "binding affinity and orientation of allosteric modulators",
+        "claim": "脂质组成影响导致别构调节剂结合亲和力和方向改变"
+      },
+      {
+        "step": 3,
+        "head": "binding affinity and orientation of allosteric modulators",
+        "relation": "provides insights",
+        "tail": "tailored drug-targeting strategies",
+        "claim": "结合特性变化为定制药物策略提供见解"
+      }
+    ]
+  ],
+  "L3": [
+    [
+      {
+        "step": 1,
+        "head": "combined approach of cryogenic electron microscopy and molecular dynamics simulations",
+        "relation": "delineates",
+        "tail": "structural basis of conformational dynamics",
+        "claim": "联合方法阐明构象动态的结构基础"
+      },
+      {
+        "step": 2,
+        "head": "structural basis of conformational dynamics",
+        "relation": "facilitates",
+        "tail": "identification of hidden allosteric sites",
+        "claim": "结构基础促进隐藏别构位点的识别"
+      },
+      {
+        "step": 3,
+        "head": "identification of hidden allosteric sites",
+        "relation": "exploits",
+        "tail": "novel drug design",
+        "claim": "隐藏别构位点的识别用于新药设计"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "varying lipid compositions",
+        "relation": "investigates",
+        "tail": "impact on lateral entrance channels",
+        "claim": "不同脂质组成影响侧向通道特性"
+      },
+      {
+        "step": 2,
+        "head": "specific lipid interactions",
+        "relation": "stabilizes",
+        "tail": "certain receptor conformations",
+        "claim": "特定脂质相互作用稳定受体构象"
+      },
+      {
+        "step": 3,
+        "head": "stabilized receptor conformations",
+        "relation": "enhances/hinders",
+        "tail": "ligand access to allosteric sites",
+        "claim": "稳定构象增强/阻碍配体进入别构位点"
+      },
+      {
+        "step": 4,
+        "head": "ligand access to allosteric sites",
+        "relation": "informs",
+        "tail": "drug design strategies for neuromodulation",
+        "claim": "配体访问特性指导神经调节药物设计"
+      }
+    ]
+  ]
+}

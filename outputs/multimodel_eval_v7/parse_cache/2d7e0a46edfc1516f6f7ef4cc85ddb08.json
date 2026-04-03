@@ -1,0 +1,193 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "controlled ligand removal gradients",
+        "relation": "enables",
+        "tail": "spatial heterogeneity in active sites",
+        "claim": "配体去除梯度产生空间异质活性位点"
+      },
+      {
+        "step": 2,
+        "head": "spatial heterogeneity in active sites",
+        "relation": "causes",
+        "tail": "varied peroxidase/catalase-mimic activities",
+        "claim": "活性位点异质性导致催化活性差异"
+      },
+      {
+        "step": 3,
+        "head": "varied peroxidase/catalase-mimic activities",
+        "relation": "transforms",
+        "tail": "dynamic ROS generation and scavenging",
+        "claim": "差异催化活性实现ROS动态平衡"
+      },
+      {
+        "step": 4,
+        "head": "dynamic ROS generation and scavenging",
+        "relation": "enhances",
+        "tail": "ferroptosis induction",
+        "claim": "ROS动态调控增强铁死亡效应"
+      },
+      {
+        "step": 5,
+        "head": "ferroptosis induction",
+        "relation": "promotes",
+        "tail": "immunogenic cell death",
+        "claim": "铁死亡诱导免疫原性细胞死亡"
+      },
+      {
+        "step": 6,
+        "head": "immunogenic cell death",
+        "relation": "amplifies",
+        "tail": "antitumor immune responses",
+        "claim": "免疫原性死亡增强抗肿瘤免疫"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "controlled ligand removal",
+        "relation": "alters",
+        "tail": "metal coordination environment",
+        "claim": "配体去除改变金属配位环境"
+      },
+      {
+        "step": 2,
+        "head": "metal coordination environment",
+        "relation": "enhances",
+        "tail": "glutathione oxidation",
+        "claim": "配位环境优化谷胱甘肽氧化"
+      },
+      {
+        "step": 3,
+        "head": "glutathione oxidation",
+        "relation": "causes",
+        "tail": "glutathione depletion",
+        "claim": "氧化反应导致谷胱甘肽耗竭"
+      },
+      {
+        "step": 4,
+        "head": "glutathione depletion",
+        "relation": "induces",
+        "tail": "ferroptosis",
+        "claim": "耗竭效应触发铁死亡"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "tunable pore structure",
+        "relation": "controls",
+        "tail": "iron ion release kinetics",
+        "claim": "孔结构调控铁离子释放"
+      },
+      {
+        "step": 2,
+        "head": "iron ion release",
+        "relation": "activates",
+        "tail": "Fenton reaction",
+        "claim": "铁释放激活芬顿反应"
+      },
+      {
+        "step": 3,
+        "head": "Fenton reaction",
+        "relation": "generates",
+        "tail": "ROS",
+        "claim": "芬顿反应产生活性氧"
+      },
+      {
+        "step": 4,
+        "head": "ROS",
+        "relation": "triggers",
+        "tail": "ferroptosis",
+        "claim": "活性氧诱导铁死亡"
+      },
+      {
+        "step": 5,
+        "head": "ferroptosis",
+        "relation": "promotes",
+        "tail": "dendritic cell maturation",
+        "claim": "铁死亡促进树突状细胞成熟"
+      }
+    ]
+  ],
+  "L3": [
+    [
+      {
+        "step": 1,
+        "head": "ligand removal",
+        "relation": "optimizes",
+        "tail": "pore structure",
+        "claim": "配体去除优化孔结构"
+      },
+      {
+        "step": 2,
+        "head": "pore structure",
+        "relation": "enables",
+        "tail": "Fenton substrates encapsulation",
+        "claim": "孔结构实现芬顿底物封装"
+      },
+      {
+        "step": 3,
+        "head": "Fenton substrates",
+        "relation": "provide",
+        "tail": "dual catalytic function",
+        "claim": "底物提供双重催化功能"
+      },
+      {
+        "step": 4,
+        "head": "dual catalytic function",
+        "relation": "induces",
+        "tail": "ferroptosis",
+        "claim": "双重催化诱导铁死亡"
+      },
+      {
+        "step": 5,
+        "head": "ferroptosis",
+        "relation": "potentiates",
+        "tail": "anti-PD-1 immunotherapy",
+        "claim": "铁死亡增强免疫检查点治疗"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "programmable pore structure",
+        "relation": "combines",
+        "tail": "stimuli-responsive linkers",
+        "claim": "孔结构整合响应性连接子"
+      },
+      {
+        "step": 2,
+        "head": "stimuli-responsive linkers",
+        "relation": "trigger",
+        "tail": "iron release",
+        "claim": "响应元件触发铁释放"
+      },
+      {
+        "step": 3,
+        "head": "iron release",
+        "relation": "enhances",
+        "tail": "ROS generation",
+        "claim": "铁释放增强活性氧生成"
+      },
+      {
+        "step": 4,
+        "head": "ROS generation",
+        "relation": "induces",
+        "tail": "ferroptosis",
+        "claim": "活性氧诱导铁死亡"
+      },
+      {
+        "step": 5,
+        "head": "ferroptosis",
+        "relation": "promotes",
+        "tail": "lymphocyte infiltration",
+        "claim": "铁死亡促进淋巴细胞浸润"
+      }
+    ]
+  ]
+}

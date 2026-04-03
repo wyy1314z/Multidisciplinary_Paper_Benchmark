@@ -1,0 +1,113 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "GPCR conformational dynamics",
+        "relation": "enables",
+        "tail": "hierarchical regulatory network",
+        "claim": "GPCR构象动力学形成分层调控网络的基础"
+      },
+      {
+        "step": 2,
+        "head": "local breathing motions",
+        "relation": "creates",
+        "tail": "transient allosteric communication pathways",
+        "claim": "纳米-微秒级局部呼吸运动产生瞬态变构通讯通路"
+      },
+      {
+        "step": 3,
+        "head": "membrane lipid composition",
+        "relation": "modulates",
+        "tail": "allosteric communication pathways",
+        "claim": "膜脂组成动态调节变构通讯通路特性"
+      },
+      {
+        "step": 4,
+        "head": "hierarchical flexibility",
+        "relation": "enables",
+        "tail": "sampling multiple functional states",
+        "claim": "分层灵活性允许GPCR采样多种功能状态"
+      },
+      {
+        "step": 5,
+        "head": "membrane lipids",
+        "relation": "transforms",
+        "tail": "cryptic allosteric sites",
+        "claim": "膜脂作为动态辅因子暴露隐秘变构位点"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "multi-scale conformational changes",
+        "relation": "enables",
+        "tail": "signaling specificity fine-tuning",
+        "claim": "多尺度构象变化使信号特异性微调成为可能"
+      },
+      {
+        "step": 2,
+        "head": "lipid-mediated allosteric modulation",
+        "relation": "provides",
+        "tail": "mechanistic basis for therapeutics",
+        "claim": "脂质介导的变构调节为新一代治疗提供机制基础"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "ligand binding",
+        "relation": "initiates",
+        "tail": "conformational wave cascade",
+        "claim": "配体结合触发构象波级联反应"
+      },
+      {
+        "step": 2,
+        "head": "conformational wave",
+        "relation": "propagates",
+        "tail": "G-protein activation",
+        "claim": "构象波从胞外到胞内逐级传播激活G蛋白"
+      },
+      {
+        "step": 3,
+        "head": "temporal phases",
+        "relation": "represents",
+        "tail": "therapeutic checkpoints",
+        "claim": "不同时间相位构成可靶向的信号调控检查点"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "membrane lipid composition",
+        "relation": "creates",
+        "tail": "lipid-encoded allosteric landscape",
+        "claim": "膜脂组成构建脂质编码的变构景观"
+      },
+      {
+        "step": 2,
+        "head": "specific lipid species",
+        "relation": "stabilizes",
+        "tail": "distinct conformational ensembles",
+        "claim": "特定脂质亚型稳定不同构象集合"
+      },
+      {
+        "step": 3,
+        "head": "lipid-protein dynamics",
+        "relation": "generates",
+        "tail": "temporal binding windows",
+        "claim": "动态脂质-蛋白相互作用产生时间依赖的药物结合窗口"
+      },
+      {
+        "step": 4,
+        "head": "lipid-targeting strategies",
+        "relation": "combines",
+        "tail": "synergistic therapeutics",
+        "claim": "脂质靶向策略与传统方法协同增强治疗特异性"
+      }
+    ]
+  ],
+  "L3": []
+}

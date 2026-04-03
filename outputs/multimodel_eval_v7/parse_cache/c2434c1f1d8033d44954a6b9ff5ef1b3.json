@@ -1,0 +1,151 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "microfluidic reactor continuous synthesis",
+        "relation": "synergizes_with",
+        "tail": "machine learning-driven real-time optimization",
+        "claim": "微流控合成与机器学习协同整合"
+      },
+      {
+        "step": 2,
+        "head": "in-flow spectroscopic characterization",
+        "relation": "provides_feedback_to",
+        "tail": "Bayesian optimization algorithms",
+        "claim": "光谱表征提供反馈给贝叶斯算法"
+      },
+      {
+        "step": 3,
+        "head": "Bayesian optimization algorithms",
+        "relation": "dynamically_adjusts",
+        "tail": "reaction conditions",
+        "claim": "贝叶斯算法动态调整反应条件"
+      },
+      {
+        "step": 4,
+        "head": "reaction conditions",
+        "relation": "enable_navigation_of",
+        "tail": "multidimensional chemical space",
+        "claim": "反应条件导航多维化学空间"
+      },
+      {
+        "step": 5,
+        "head": "closed-loop system",
+        "relation": "transforms",
+        "tail": "trial-and-error approach",
+        "claim": "闭环系统转变传统试错法"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "Microfluidic reactors",
+        "relation": "enable",
+        "tail": "exponential acceleration of chemical space exploration",
+        "claim": "微流控加速化学空间探索"
+      },
+      {
+        "step": 2,
+        "head": "genetic algorithms",
+        "relation": "optimize",
+        "tail": "flow rate gradients and mixing patterns",
+        "claim": "遗传算法优化流速与混合模式"
+      },
+      {
+        "step": 3,
+        "head": "continuous flow",
+        "relation": "allows_real-time_variation_of",
+        "tail": "synthesis conditions",
+        "claim": "连续流允许实时调整条件"
+      },
+      {
+        "step": 4,
+        "head": "reactor",
+        "relation": "transforms_into",
+        "tail": "dynamic chemical library generator",
+        "claim": "反应器转化为动态化学库生成器"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "Deep neural networks",
+        "relation": "establish_predictive_relationships_between",
+        "tail": "reaction conditions and nanoparticle attributes",
+        "claim": "神经网络建立条件与属性预测关系"
+      },
+      {
+        "step": 2,
+        "head": "covariance matrix adaptation algorithms",
+        "relation": "optimize",
+        "tail": "multi-objective fitness functions",
+        "claim": "协方差矩阵算法优化多目标函数"
+      },
+      {
+        "step": 3,
+        "head": "multi-objective optimization",
+        "relation": "guides_selection_of",
+        "tail": "optimal photochemical conditions",
+        "claim": "多目标优化指导光化学条件选择"
+      }
+    ]
+  ],
+  "L3": [
+    [
+      {
+        "step": 1,
+        "head": "microfluidic reactors",
+        "relation": "integrated_with",
+        "tail": "Bayesian optimization",
+        "claim": "微流控与贝叶斯整合"
+      },
+      {
+        "step": 2,
+        "head": "microfluidic parameter gradients",
+        "relation": "synergizes_with",
+        "tail": "Bayesian acquisition functions",
+        "claim": "参数梯度与贝叶斯函数协同"
+      },
+      {
+        "step": 3,
+        "head": "Bayesian acquisition functions",
+        "relation": "intelligently_samples",
+        "tail": "informative reaction condition regions",
+        "claim": "贝叶斯函数智能采样条件区域"
+      },
+      {
+        "step": 4,
+        "head": "stable noisy optimization algorithms",
+        "relation": "handles",
+        "tail": "experimental noise in spectroscopic characterization",
+        "claim": "噪声处理算法维持收敛"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "in-flow spectroscopic characterization",
+        "relation": "combined_with",
+        "tail": "deep neural networks",
+        "claim": "光谱表征与神经网络结合"
+      },
+      {
+        "step": 2,
+        "head": "neural network loss function",
+        "relation": "designed_to",
+        "tail": "minimize error and maximize sensitivity",
+        "claim": "损失函数最小化误差并最大化灵敏度"
+      },
+      {
+        "step": 3,
+        "head": "sub-second optimization cycles",
+        "relation": "adjust",
+        "tail": "reagent addition rates and temperatures",
+        "claim": "亚秒优化周期调整参数实现控制"
+      }
+    ]
+  ]
+}

@@ -1,0 +1,130 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "dynamic metalens",
+        "relation": "integrates",
+        "tail": "thermally-responsive metamaterials",
+        "claim": "动态金属透镜集成热响应超材料实现环境适应性"
+      },
+      {
+        "step": 2,
+        "head": "thermally-responsive metamaterials",
+        "relation": "enables",
+        "tail": "machine learning optimization",
+        "claim": "热响应特性使机器学习实时相位补偿成为可能"
+      },
+      {
+        "step": 3,
+        "head": "machine learning optimization",
+        "relation": "transforms",
+        "tail": "adaptive phase compensation",
+        "claim": "机器学习算法将静态相位补偿转化为自适应调节"
+      },
+      {
+        "step": 4,
+        "head": "adaptive phase compensation",
+        "relation": "achieves",
+        "tail": "environmental responsivity",
+        "claim": "自适应相位补偿实现跨环境条件的色差校正"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "hierarchical metamaterials",
+        "relation": "incorporates",
+        "tail": "fractal geometries",
+        "claim": "分层超材料引入分形几何产生多共振模式"
+      },
+      {
+        "step": 2,
+        "head": "fractal geometries",
+        "relation": "creates",
+        "tail": "multi-resonance dispersion engineering",
+        "claim": "分形结构通过多共振实现色散调控"
+      },
+      {
+        "step": 3,
+        "head": "multi-resonance dispersion engineering",
+        "relation": "achieves",
+        "tail": "broadband achromatic response",
+        "claim": "多共振色散工程实现宽带消色差性能"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "multi-material 3D printing",
+        "relation": "integrates",
+        "tail": "in-situ THz spectroscopy",
+        "claim": "多材料打印结合原位THz监控实现闭环反馈"
+      },
+      {
+        "step": 2,
+        "head": "in-situ THz spectroscopy",
+        "relation": "enables",
+        "tail": "closed-loop fabrication control",
+        "claim": "原位监控使动态调整打印参数成为可能"
+      },
+      {
+        "step": 3,
+        "head": "closed-loop fabrication control",
+        "relation": "reduces",
+        "tail": "phase errors",
+        "claim": "闭环控制显著降低相位误差"
+      }
+    ]
+  ],
+  "L3": [
+    [
+      {
+        "step": 1,
+        "head": "quantum-inspired optimization",
+        "relation": "explores",
+        "tail": "design-fabrication parameter space",
+        "claim": "量子算法协同探索设计与制造参数空间"
+      },
+      {
+        "step": 2,
+        "head": "design-fabrication parameter space",
+        "relation": "co-optimizes",
+        "tail": "numerical aperture",
+        "claim": "协同优化同时提升数值孔径与制造可行性"
+      },
+      {
+        "step": 3,
+        "head": "co-optimization",
+        "relation": "achieves",
+        "tail": "manufacturing-aware optimization",
+        "claim": "联合优化实现高制造成功率的超大数值孔径"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "bio-inspired compound eye",
+        "relation": "mimics",
+        "tail": "ommatidia structure",
+        "claim": "仿生复眼结构模仿昆虫小眼单元分布"
+      },
+      {
+        "step": 2,
+        "head": "ommatidia structure",
+        "relation": "distributes",
+        "tail": "distributed angular coverage",
+        "claim": "小眼单元分布实现角度覆盖的优化分割"
+      },
+      {
+        "step": 3,
+        "head": "distributed angular coverage",
+        "relation": "eliminates",
+        "tail": "aberration-free wide-angle",
+        "claim": "分布式覆盖消除宽视场像差"
+      }
+    ]
+  ]
+}

@@ -1,0 +1,158 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "isothermal compressibility-assisted dynamic squeezing index perturbation engineering (iCASE)",
+        "relation": "optimizes",
+        "tail": "structural dynamics of enzyme-substrate interactions",
+        "claim": "iCASE optimizes enzyme-substrate structural dynamics"
+      },
+      {
+        "step": 2,
+        "head": "structural dynamics optimization",
+        "relation": "modulates",
+        "tail": "hydrophobic interactions and hydrogen bonds",
+        "claim": "Structural dynamics changes affect molecular interactions"
+      },
+      {
+        "step": 3,
+        "head": "hydrophobic interactions and hydrogen bonds",
+        "relation": "determine",
+        "tail": "enzyme performance",
+        "claim": "Molecular interactions fundamentally determine enzyme performance"
+      },
+      {
+        "step": 4,
+        "head": "enzyme performance",
+        "relation": "validated_by",
+        "tail": "structure-based supervised machine learning models",
+        "claim": "Machine learning models quantitatively validate performance changes"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "structure-based supervised machine learning",
+        "relation": "integrates_with",
+        "tail": "dynamic squeezing index perturbation",
+        "claim": "Machine learning integration enables binding mode prediction"
+      },
+      {
+        "step": 2,
+        "head": "dynamic squeezing index perturbation",
+        "relation": "analyzes",
+        "tail": "structural features vs binding affinities",
+        "claim": "Perturbation analysis connects structural features to binding data"
+      },
+      {
+        "step": 3,
+        "head": "structural feature-binding correlations",
+        "relation": "predicts",
+        "tail": "optimal substrate binding mode",
+        "claim": "Correlations predict PET hydrolase binding modes"
+      },
+      {
+        "step": 4,
+        "head": "predicted binding modes",
+        "relation": "validated_by",
+        "tail": "experimental binding data",
+        "claim": "Predictions validated through experimental comparison"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "molecular response model",
+        "relation": "based_on",
+        "tail": "adaptive evolution",
+        "claim": "Evolutionary model guides enzyme engineering"
+      },
+      {
+        "step": 2,
+        "head": "adaptive evolution model",
+        "relation": "identifies",
+        "tail": "critical fitness landscape points",
+        "claim": "Model identifies key structural modification points"
+      },
+      {
+        "step": 3,
+        "head": "critical fitness points",
+        "relation": "modified_by",
+        "tail": "disulfide bond formations/surface charges",
+        "claim": "Structural modifications target identified points"
+      },
+      {
+        "step": 4,
+        "head": "structural modifications",
+        "relation": "validated_by",
+        "tail": "enzyme activity experiments",
+        "claim": "Activity changes validate evolutionary predictions"
+      }
+    ]
+  ],
+  "L3": [
+    [
+      {
+        "step": 1,
+        "head": "dynamic squeezing index network",
+        "relation": "synergizes_with",
+        "tail": "supervised machine learning predictions",
+        "claim": "Chemical and computational methods synergistically interact"
+      },
+      {
+        "step": 2,
+        "head": "synergistic interaction",
+        "relation": "optimizes",
+        "tail": "catalytic mechanism",
+        "claim": "Combined approach enables catalytic optimization"
+      },
+      {
+        "step": 3,
+        "head": "dynamic squeezing index alterations",
+        "relation": "observed_in",
+        "tail": "enzyme variants",
+        "claim": "Experimental variants test catalytic changes"
+      },
+      {
+        "step": 4,
+        "head": "catalytic activity changes",
+        "relation": "correlated_with",
+        "tail": "machine learning predictions",
+        "claim": "Experimental results correlate with computational predictions"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "protein surface charge analysis",
+        "relation": "integrated_with",
+        "tail": "phenotypic adaptive landscape modeling",
+        "claim": "Multi-method workflow combines structural and phenotypic analyses"
+      },
+      {
+        "step": 2,
+        "head": "integrated workflow",
+        "relation": "predicts",
+        "tail": "enzyme performance",
+        "claim": "Workflow generates performance predictions"
+      },
+      {
+        "step": 3,
+        "head": "workflow predictions",
+        "relation": "compared_to",
+        "tail": "experimental results",
+        "claim": "Predictions validated against experimental data"
+      },
+      {
+        "step": 4,
+        "head": "prediction-experiment comparison",
+        "relation": "demonstrates",
+        "tail": "superior predictive capability",
+        "claim": "Validation confirms workflow superiority over traditional methods"
+      }
+    ]
+  ]
+}

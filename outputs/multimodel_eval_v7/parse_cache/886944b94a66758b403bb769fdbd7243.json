@@ -1,0 +1,158 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "介电梯度超材料与三维打印技术结合",
+        "relation": "enables",
+        "tail": "精确控制折射率分布",
+        "claim": "材料科学与电子技术结合为折射率分布控制提供可能"
+      },
+      {
+        "step": 2,
+        "head": "精确控制折射率分布",
+        "relation": "enables",
+        "tail": "超构透镜精确制造",
+        "claim": "折射率分布控制是超构透镜制造的基础条件"
+      },
+      {
+        "step": 3,
+        "head": "超构透镜精确制造",
+        "relation": "causes",
+        "tail": "突破传统光学系统约束",
+        "claim": "精确制造技术打破传统光学系统物理限制"
+      },
+      {
+        "step": 4,
+        "head": "突破传统光学系统约束",
+        "relation": "causes",
+        "tail": "太赫兹超分辨成像",
+        "claim": "光学约束突破直接导致超分辨成像能力实现"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "介电梯度超材料折射率分布",
+        "relation": "matches",
+        "tail": "太赫兹波相位分布",
+        "claim": "材料折射率特性与太赫兹波相位特性匹配"
+      },
+      {
+        "step": 2,
+        "head": "高纵横比纳米柱结构调整",
+        "relation": "alters",
+        "tail": "太赫兹波传播特性",
+        "claim": "微观结构调控改变电磁波传播特性"
+      },
+      {
+        "step": 3,
+        "head": "太赫兹波传播特性改变",
+        "relation": "compensates",
+        "tail": "色差和球差",
+        "claim": "传播特性优化可抵消主要像差影响"
+      },
+      {
+        "step": 4,
+        "head": "色差球差补偿",
+        "relation": "causes",
+        "tail": "消色差超分辨成像",
+        "claim": "像差补偿实现宽谱段高分辨率成像"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "三维打印技术",
+        "relation": "enables",
+        "tail": "材料精确堆积控制",
+        "claim": "三维打印实现微米级材料定位控制"
+      },
+      {
+        "step": 2,
+        "head": "材料精确堆积控制",
+        "relation": "achieves",
+        "tail": "折射率分布精确控制",
+        "claim": "空间定位精度转化为折射率分布精度"
+      },
+      {
+        "step": 3,
+        "head": "折射率分布精确控制",
+        "relation": "determines",
+        "tail": "相位分布精确控制",
+        "claim": "折射率分布决定电磁波相位调制能力"
+      },
+      {
+        "step": 4,
+        "head": "相位分布精确控制",
+        "relation": "achieves",
+        "tail": "超构透镜精确制造",
+        "claim": "相位控制是超构透镜功能实现的关键"
+      }
+    ]
+  ],
+  "L3": [
+    [
+      {
+        "step": 1,
+        "head": "同心纳米环结构调整",
+        "relation": "alters",
+        "tail": "折射率分布",
+        "claim": "微观结构参数改变决定宏观光学特性"
+      },
+      {
+        "step": 2,
+        "head": "三维打印技术",
+        "relation": "enables",
+        "tail": "协同优化分布",
+        "claim": "制造技术保障设计参数的物理实现"
+      },
+      {
+        "step": 3,
+        "head": "协同优化分布",
+        "relation": "overcomes",
+        "tail": "阿贝衍射极限",
+        "claim": "多参数协同优化突破经典物理极限"
+      },
+      {
+        "step": 4,
+        "head": "突破衍射极限",
+        "relation": "causes",
+        "tail": "超分辨成像",
+        "claim": "物理极限突破直接提升成像分辨率"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "高纵横比纳米柱结构",
+        "relation": "enhances",
+        "tail": "太赫兹散射耦合",
+        "claim": "特殊结构增强电磁波物质相互作用"
+      },
+      {
+        "step": 2,
+        "head": "超表面技术",
+        "relation": "controls",
+        "tail": "波前调控",
+        "claim": "二维材料实现三维波前精确塑形"
+      },
+      {
+        "step": 3,
+        "head": "散射耦合增强与波前调控",
+        "relation": "combines",
+        "tail": "纳米柱分布设计",
+        "claim": "两种技术协同优化电磁波传播路径"
+      },
+      {
+        "step": 4,
+        "head": "纳米柱分布设计",
+        "relation": "achieves",
+        "tail": "数值孔径0.555与视场角90°",
+        "claim": "结构参数优化实现关键光学参数突破"
+      }
+    ]
+  ]
+}

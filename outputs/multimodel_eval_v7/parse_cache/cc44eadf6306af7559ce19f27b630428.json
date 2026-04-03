@@ -1,0 +1,139 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "PMOFs设计",
+        "relation": "enables",
+        "tail": "类酶活性位点构筑",
+        "claim": "PMOFs材料设计使得类酶活性位点的精确构筑成为可能"
+      },
+      {
+        "step": 2,
+        "head": "类酶活性位点构筑",
+        "relation": "causes",
+        "tail": "过氧化氢催化分解",
+        "claim": "活性位点的构筑直接导致肿瘤微环境中过氧化氢的催化分解"
+      },
+      {
+        "step": 3,
+        "head": "过氧化氢催化分解",
+        "relation": "transforms",
+        "tail": "活性氧生成",
+        "claim": "催化分解过程将过氧化氢转化为具有细胞毒性的活性氧物种"
+      },
+      {
+        "step": 4,
+        "head": "活性氧生成",
+        "relation": "inhibits",
+        "tail": "肿瘤细胞活性",
+        "claim": "活性氧的积累选择性抑制肿瘤细胞存活"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "PMOFs设计",
+        "relation": "requires",
+        "tail": "智能释放机制",
+        "claim": "材料设计需要集成环境响应元件以实现功能调控"
+      },
+      {
+        "step": 2,
+        "head": "智能释放机制",
+        "relation": "responds_to",
+        "tail": "肿瘤微环境刺激",
+        "claim": "机制响应pH和还原性条件变化触发结构重构"
+      },
+      {
+        "step": 3,
+        "head": "肿瘤微环境刺激",
+        "relation": "enhances",
+        "tail": "类酶催化效率",
+        "claim": "环境刺激响应显著提升材料的催化活性"
+      },
+      {
+        "step": 4,
+        "head": "类酶催化效率",
+        "relation": "improves",
+        "tail": "肿瘤靶向治疗",
+        "claim": "催化效率提升直接增强肿瘤特异性治疗效果"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "多价金属中心",
+        "relation": "determines",
+        "tail": "配位环境",
+        "claim": "金属活性中心的价态特性决定配体结合模式"
+      },
+      {
+        "step": 2,
+        "head": "配位环境",
+        "relation": "stabilizes",
+        "tail": "类酶位点结构",
+        "claim": "特定配位构型稳定模拟酶催化中心的空间构象"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "响应元件",
+        "relation": "detects",
+        "tail": "pH变化",
+        "claim": "智能释放机制中的质子感应单元识别酸性环境"
+      },
+      {
+        "step": 2,
+        "head": "pH变化",
+        "relation": "triggers",
+        "tail": "结构解离",
+        "claim": "微酸性条件诱导材料网络结构的可逆解组装"
+      }
+    ]
+  ],
+  "L3": [
+    [
+      {
+        "step": 1,
+        "head": "过氧化物酶模拟位点",
+        "relation": "binds",
+        "tail": "H2O2底物",
+        "claim": "铁-卟啉活性中心特异性捕获过氧化氢分子"
+      },
+      {
+        "step": 2,
+        "head": "H2O2底物",
+        "relation": "oxidizes",
+        "tail": "金属中心",
+        "claim": "底物氧化引发金属离子的价态循环变化"
+      },
+      {
+        "step": 3,
+        "head": "金属中心氧化",
+        "relation": "generates",
+        "tail": "自由基中间体",
+        "claim": "电子转移过程产生高活性的金属-氧自由基"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "还原性条件",
+        "relation": "reduces",
+        "tail": "二硫键连接体",
+        "claim": "谷胱甘肽选择性断裂纳米载体中的二硫键结构"
+      },
+      {
+        "step": 2,
+        "head": "二硫键断裂",
+        "relation": "releases",
+        "tail": "活性位点",
+        "claim": "化学键断裂导致催化中心的暴露和活性恢复"
+      }
+    ]
+  ]
+}

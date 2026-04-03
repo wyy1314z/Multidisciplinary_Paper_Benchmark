@@ -1,0 +1,130 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "isothermal compressibility-assisted dynamic squeezing index perturbation engineering",
+        "relation": "enables",
+        "tail": "enzyme structure optimization",
+        "claim": "iCASE策略通过动态挤压指数扰动工程优化酶结构"
+      },
+      {
+        "step": 2,
+        "head": "enzyme structure optimization",
+        "relation": "causes",
+        "tail": "enhanced catalytic activity and thermal stability",
+        "claim": "结构优化直接提升催化活性和热稳定性"
+      },
+      {
+        "step": 3,
+        "head": "structure-based supervised machine learning",
+        "relation": "predicts",
+        "tail": "substrate binding patterns and catalytic mechanism improvements",
+        "claim": "机器学习模型预测酶与底物的结合模式及催化机制改进"
+      },
+      {
+        "step": 4,
+        "head": "combined iCASE and machine learning",
+        "relation": "reveals",
+        "tail": "novel enzyme function optimization pathways",
+        "claim": "方法整合揭示单一技术无法发现的优化路径"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "isothermal compressibility-assisted dynamic squeezing index perturbation engineering",
+        "relation": "alters",
+        "tail": "PET hydrolase structure",
+        "claim": "iCASE策略通过结构改变影响PET水解酶特性"
+      },
+      {
+        "step": 2,
+        "head": "altered PET hydrolase structure",
+        "relation": "affects",
+        "tail": "polyethylene terephthalate polymer binding modes",
+        "claim": "结构变化决定PET聚合物结合模式"
+      },
+      {
+        "step": 3,
+        "head": "structure-based supervised machine learning",
+        "relation": "predicts",
+        "tail": "metal ion and hydrophobic interaction effects",
+        "claim": "机器学习模型预测金属离子/疏水作用对结合模式的影响"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "protein surface charges analysis",
+        "relation": "identifies",
+        "tail": "critical amino acid residues",
+        "claim": "表面电荷分析定位关键氨基酸残基"
+      },
+      {
+        "step": 2,
+        "head": "critical amino acid residues",
+        "relation": "modifies",
+        "tail": "isothermal compressibility-assisted dynamic squeezing index perturbation engineering",
+        "claim": "iCASE策略调整关键残基位置和性质"
+      },
+      {
+        "step": 3,
+        "head": "modified enzyme structure",
+        "relation": "enhances",
+        "tail": "catalytic activity and thermal stability",
+        "claim": "结构优化实现催化活性和热稳定性同步提升"
+      }
+    ]
+  ],
+  "L3": [
+    [
+      {
+        "step": 1,
+        "head": "isothermal compressibility-assisted dynamic squeezing index perturbation engineering",
+        "relation": "models",
+        "tail": "metal ion effects on enzyme structure",
+        "claim": "iCASE策略模拟金属离子对结构的影响"
+      },
+      {
+        "step": 2,
+        "head": "metal ion-modified structures",
+        "relation": "predicts",
+        "tail": "structure-based supervised machine learning",
+        "claim": "机器学习模型预测结构变化对应的活性/稳定性"
+      },
+      {
+        "step": 3,
+        "head": "predicted performance metrics",
+        "relation": "guides",
+        "tail": "optimal enzyme design",
+        "claim": "预测结果指导最佳金属离子选择和酶设计"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "dynamic response predictive model",
+        "relation": "captures",
+        "tail": "nonlinear interactions (sign epistasis)",
+        "claim": "动态响应模型捕捉酶的非线性相互作用"
+      },
+      {
+        "step": 2,
+        "head": "nonlinear interactions",
+        "relation": "alters",
+        "tail": "isothermal compressibility-assisted dynamic squeezing index perturbation engineering",
+        "claim": "iCASE策略通过扰动工程改变非线性作用"
+      },
+      {
+        "step": 3,
+        "head": "engineered nonlinear interactions",
+        "relation": "improves",
+        "tail": "enzyme adaptability in complex environments",
+        "claim": "优化的非线性作用增强酶在复杂分子环境中的适应性"
+      }
+    ]
+  ]
+}

@@ -33,15 +33,22 @@ from crossdisc_extractor.benchmark.metrics import (
     _load_taxonomy,
     atypical_combination_index,
     build_cooccurrence_from_kg,
+    causal_direction_accuracy,
     concept_coverage,
+    discipline_balance,
+    disciplinary_leap_index,
     embedding_bridging_score,
     enhanced_path_consistency,
+    factual_precision,
+    hallucination_rate,
     hierarchical_depth_progression,
     information_theoretic_novelty,
+    novelty_convention_balance,
     path_semantic_alignment,
     rao_stirling_diversity,
     reasoning_chain_coherence,
     relation_precision,
+    remote_association_index,
     structural_diversity,
 )
 from crossdisc_extractor.utils.llm import chat_completion_with_retry
@@ -395,6 +402,14 @@ def parse_llm_score(response: str, fields: Optional[List[str]] = None) -> Dict[s
 #  Single-path evaluation
 # ===========================================================================
 
+def _fmt_path_short(path: List[Dict[str, Any]]) -> str:
+    """Return a compact one-line preview of a hypothesis path."""
+    return " -> ".join(
+        f"{s.get('head', '?')}--[{s.get('relation', '?')}]-->{s.get('tail', '?')}"
+        for s in path
+    )
+
+
 def evaluate_single_path(
     path: List[Dict[str, Any]],
     gt_paths: List[Dict[str, Any]],
@@ -406,12 +421,31 @@ def evaluate_single_path(
     gt_terms: Optional[List[str]] = None,
     gt_relations: Optional[List[Dict[str, Any]]] = None,
     gt_evidence_paths: Optional[List[Dict[str, Any]]] = None,
+    abstract: str = "",
+    _item_id: str = "",
+    _path_idx: int = 0,
 ) -> Dict[str, float]:
     """Evaluate a single hypothesis path with graph + LLM + GT-aware metrics."""
+
+    tag = f"ID {_item_id} {level}[{_path_idx}]" if _item_id else f"{level}[{_path_idx}]"
+
+    # ── Log inputs ─────────────────────────────────────────────────────
+    logger.info("─" * 60)
+    logger.info("[Eval] %s 开始评估", tag)
+    logger.info("[Eval] %s 生成路径: %s", tag, _fmt_path_short(path)[:200])
+    logger.info("[Eval] %s 参考路径数: %d (GT: %d, web: %d)",
+                tag, len(gt_paths),
+                sum(1 for g in gt_paths if g.get("source") != "web_search"),
+                sum(1 for g in gt_paths if g.get("source") == "web_search"))
+    logger.info("[Eval] %s query='%s'  discipline='%s'  abstract_len=%d",
+                tag, query[:60], discipline, len(abstract))
+    if gt_terms:
+        logger.info("[Eval] %s gt_terms(%d): %s", tag, len(gt_terms), ", ".join(gt_terms[:8]))
 
     scores: Dict[str, float] = {}
 
     # ── Graph metrics (objective) ──────────────────────────────────────
+    logger.info("[Eval] %s ── 计算客观图指标 ──", tag)
 
     # Legacy consistency (backward compat)
     scores["consistency"] = GraphMetricEvaluator.calculate_path_consistency(path, gt_paths)
@@ -421,49 +455,111 @@ def evaluate_single_path(
     scores["consistency_precision"] = enhanced["consistency_precision"]
     scores["consistency_recall"] = enhanced["consistency_recall"]
     scores["consistency_f1"] = enhanced["consistency_f1"]
+    logger.info("[Eval] %s consistency_f1=%.4f (P=%.4f R=%.4f) — 生成路径与参考路径的实体/关系重叠度",
+                tag, scores["consistency_f1"], scores["consistency_precision"], scores["consistency_recall"])
 
     # Bridging — legacy + embedding-based
     scores["bridging"] = GraphMetricEvaluator.calculate_bridging_score(path)
     scores["embedding_bridging"] = GraphMetricEvaluator.calculate_embedding_bridging(path)
+    logger.info("[Eval] %s embedding_bridging=%.4f — 路径中相邻步骤的语义跨越程度",
+                tag, scores["embedding_bridging"])
 
     # Chain coherence
     scores["chain_coherence"] = GraphMetricEvaluator.calculate_chain_coherence(path)
+    logger.info("[Eval] %s chain_coherence=%.4f — 相邻步骤间的语义连贯性",
+                tag, scores["chain_coherence"])
 
     # Information-theoretic novelty
     if kg is not None:
         scores["info_novelty"] = GraphMetricEvaluator.calculate_info_novelty(
             path, kg.all_triples, kg.total_triples
         )
-        # Atypical combination
         scores["atypical_combination"] = atypical_combination_index(
             path, kg.cooccurrence, kg.cooc_mu, kg.cooc_sigma
         )
-        # Rao-Stirling diversity
         scores["rao_stirling"] = rao_stirling_diversity(
             path, kg.node_disciplines, kg.disc_paths, kg.max_depth
         )
+        scores["disciplinary_leap_index"] = disciplinary_leap_index(
+            path, kg.node_disciplines, kg.disc_paths, kg.max_depth
+        )
+        scores["discipline_balance"] = discipline_balance(
+            path, kg.node_disciplines
+        )
+        logger.info("[Eval] %s rao_stirling=%.4f — Rao-Stirling 学科多样性指数",
+                    tag, scores["rao_stirling"])
+        logger.info("[Eval] %s atypical_combination=%.4f — 非典型概念组合度 (z-score)",
+                    tag, scores["atypical_combination"])
+        logger.info("[Eval] %s disciplinary_leap_index=%.4f — 最大学科跨越距离",
+                    tag, scores["disciplinary_leap_index"])
+        logger.info("[Eval] %s discipline_balance=%.4f — 学科分布均衡度 (1-Gini)",
+                    tag, scores["discipline_balance"])
+        logger.info("[Eval] %s info_novelty=%.4f — 信息论新颖度 (surprisal)",
+                    tag, scores["info_novelty"])
     else:
         scores["info_novelty"] = 0.0
         scores["atypical_combination"] = 0.0
         scores["rao_stirling"] = 0.0
+        scores["disciplinary_leap_index"] = 0.0
+        scores["discipline_balance"] = 0.0
+        logger.info("[Eval] %s KG 不可用，跳过 KG 相关指标", tag)
+
+    # ── New objective metrics (no KG dependency) ──────────────────────
+    logger.info("[Eval] %s ── 计算比较型指标 (vs GT) ──", tag)
+
+    scores["remote_association_index"] = remote_association_index(path)
+    logger.info("[Eval] %s remote_association_index=%.4f — 路径步骤间平均语义距离",
+                tag, scores["remote_association_index"])
+
+    scores["causal_direction_accuracy"] = causal_direction_accuracy(path, gt_paths)
+    logger.info("[Eval] %s causal_direction_accuracy=%.4f — 因果方向与参考路径的吻合度",
+                tag, scores["causal_direction_accuracy"])
+
+    scores["novelty_convention_balance"] = novelty_convention_balance(path, gt_paths)
+    logger.info("[Eval] %s novelty_convention_balance=%.4f — 新颖性与传统性的平衡度",
+                tag, scores["novelty_convention_balance"])
+
+    # Factual Precision (NLI-based, needs abstract)
+    if abstract:
+        scores["factual_precision"] = factual_precision(path, abstract)
+    else:
+        scores["factual_precision"] = 0.0
+    logger.info("[Eval] %s factual_precision=%.4f — NLI 检测路径中 claim 与摘要的一致性",
+                tag, scores["factual_precision"])
+
+    # Hallucination Rate (needs gt_terms + abstract)
+    if gt_terms or abstract:
+        scores["hallucination_rate"] = hallucination_rate(
+            path, gt_terms or [], abstract
+        )
+    else:
+        scores["hallucination_rate"] = 0.0
+    logger.info("[Eval] %s hallucination_rate=%.4f — 路径中未被参考支持的实体比例",
+                tag, scores["hallucination_rate"])
 
     # ── Evidence-grounded GT metrics (v3) ──────────────────────────────
+    logger.info("[Eval] %s ── 计算 GT 证据指标 ──", tag)
 
     if gt_terms:
         cc = concept_coverage(path, gt_terms)
         scores["concept_recall"] = cc["concept_recall"]
         scores["concept_precision"] = cc["concept_precision"]
         scores["concept_f1"] = cc["concept_f1"]
+        logger.info("[Eval] %s concept_f1=%.4f (P=%.4f R=%.4f) — 概念覆盖度",
+                    tag, scores["concept_f1"], scores["concept_precision"], scores["concept_recall"])
     else:
         scores["concept_recall"] = 0.0
         scores["concept_precision"] = 0.0
         scores["concept_f1"] = 0.0
+        logger.info("[Eval] %s concept_f1=N/A (无 gt_terms)", tag)
 
     if gt_relations:
         rp = relation_precision(path, gt_relations)
         scores["relation_precision"] = rp["relation_precision"]
         scores["relation_type_accuracy"] = rp["relation_type_accuracy"]
         scores["evidence_coverage"] = rp["evidence_coverage"]
+        logger.info("[Eval] %s evidence_coverage=%.4f — GT 证据路径覆盖度",
+                    tag, scores["evidence_coverage"])
     else:
         scores["relation_precision"] = 0.0
         scores["relation_type_accuracy"] = 0.0
@@ -473,11 +569,14 @@ def evaluate_single_path(
         pa = path_semantic_alignment(path, gt_evidence_paths)
         scores["path_alignment_best"] = pa["best_alignment"]
         scores["path_alignment_mean"] = pa["mean_alignment"]
+        logger.info("[Eval] %s path_alignment_best=%.4f — 与最相似 GT 路径的语义对齐度",
+                    tag, scores["path_alignment_best"])
     else:
         scores["path_alignment_best"] = 0.0
         scores["path_alignment_mean"] = 0.0
 
     # ── LLM evaluation (subjective) ───────────────────────────────────
+    logger.info("[Eval] %s ── LLM 主观评估 ──", tag)
 
     path_str = format_path_for_prompt(path)
     gt_str = format_gt_set(gt_paths)
@@ -496,12 +595,19 @@ def evaluate_single_path(
             gen_path=path_str,
         )
 
+    logger.info("[Eval] %s LLM prompt 长度: %d 字符 (含 %d 条参考路径)",
+                tag, len(sys_prompt), len(gt_paths))
+
     messages = [{"role": "user", "content": sys_prompt}]
     try:
         resp = chat_completion_with_retry(messages, temperature=0.0)
         llm_scores = parse_llm_score(resp)
+        logger.info("[Eval] %s LLM 原始响应: %s", tag, resp[:300])
+        logger.info("[Eval] %s LLM 评分: innovation=%.2f feasibility=%.2f scientificity=%.2f",
+                    tag, llm_scores.get("innovation", 0), llm_scores.get("feasibility", 0),
+                    llm_scores.get("scientificity", 0))
     except Exception as e:
-        logger.error("LLM 评估请求失败: %s", e)
+        logger.error("[Eval] %s LLM 评估请求失败: %s", tag, e)
         llm_scores = {"innovation": 0.0, "feasibility": 0.0, "scientificity": 0.0}
 
     scores.update(llm_scores)
@@ -517,9 +623,20 @@ def evaluate_single_path(
             fields=["specificity", "measurability", "falsifiability", "resource_feasibility"],
         )
         scores["testability"] = float(np.mean(list(test_scores.values())))
+        logger.info("[Eval] %s LLM 可验证性: testability=%.4f (specificity=%.2f measurability=%.2f "
+                    "falsifiability=%.2f resource_feasibility=%.2f)",
+                    tag, scores["testability"],
+                    test_scores.get("specificity", 0), test_scores.get("measurability", 0),
+                    test_scores.get("falsifiability", 0), test_scores.get("resource_feasibility", 0))
     except Exception as e:
-        logger.warning("Testability 评估失败: %s", e)
+        logger.warning("[Eval] %s Testability 评估失败: %s", tag, e)
         scores["testability"] = 0.0
+
+    # ── Summary ────────────────────────────────────────────────────────
+    logger.info("[Eval] %s ── 评分汇总 ──", tag)
+    for k in sorted(scores.keys()):
+        logger.info("[Eval] %s   %-30s = %.4f", tag, k, scores[k])
+    logger.info("─" * 60)
 
     return scores
 
@@ -536,6 +653,9 @@ def main():
     parser.add_argument("--output", default="eval_results.json", help="评估结果输出路径")
     parser.add_argument("--max-items", type=int, default=None, help="仅评估前 N 条")
     parser.add_argument("--taxonomy", default=None, help="学科分类树 JSON 路径")
+    parser.add_argument("--web-search", action="store_true", help="启用 Web Search 增强参考路径")
+    parser.add_argument("--web-search-limit", type=int, default=10, help="搜索相似论文数量")
+    parser.add_argument("--web-cache-dir", default=None, help="Web Search 缓存目录")
     args = parser.parse_args()
 
     # 1. 构建全局知识图谱
@@ -549,9 +669,10 @@ def main():
         predictions = predictions[: args.max_items]
 
     results = []
+    eval_trace: List[Dict[str, Any]] = []  # full trace for JSON output
 
     # 3. 逐条评估
-    for item in tqdm(predictions, desc="Evaluating"):
+    for item_idx, item in enumerate(tqdm(predictions, desc="Evaluating")):
         if "parsed" in item:
             parsed = item["parsed"]
             meta = parsed.get("meta", {})
@@ -568,6 +689,7 @@ def main():
             l1_query_from_data = query_data.get("一级", "")
             l2_queries_from_data = query_data.get("二级", [])
             l3_queries_from_data = query_data.get("三级", [])
+            abstract = item.get("abstract", "")
         else:
             item_id = item.get("id", "unknown")
             input_info = item.get("input", {})
@@ -577,13 +699,78 @@ def main():
             l1_query_from_data = ""
             l2_queries_from_data = []
             l3_queries_from_data = []
+            abstract = input_info.get("abstract", "")
+
+        # ── Per-item header ──────────────────────────────────────────
+        logger.info("=" * 70)
+        logger.info("[Item %d/%d] ID=%s", item_idx + 1, len(predictions), item_id)
+        logger.info("[Item] title    = '%s'", title[:100])
+        logger.info("[Item] discipline= '%s'", primary_disc)
+        logger.info("[Item] abstract  = '%s'", (abstract or "")[:150])
+        logger.info("[Item] 生成假设路径数: L1=%d  L2=%d  L3=%d",
+                    len(pred_paths_dict.get("L1", [])),
+                    len(pred_paths_dict.get("L2", [])),
+                    len(pred_paths_dict.get("L3", [])))
+
+        # Per-item trace record
+        item_trace: Dict[str, Any] = {
+            "item_idx": item_idx,
+            "item_id": item_id,
+            "title": title,
+            "discipline": primary_disc,
+            "abstract_len": len(abstract or ""),
+            "pred_path_counts": {
+                "L1": len(pred_paths_dict.get("L1", [])),
+                "L2": len(pred_paths_dict.get("L2", [])),
+                "L3": len(pred_paths_dict.get("L3", [])),
+            },
+        }
 
         l1_query = l1_query_from_data or f"关于 {primary_disc} 的 {title} 的跨学科研究假设"
+        logger.info("[Item] 检索 query = '%s'", l1_query[:80])
+
         gt_set = kg.retrieve_relevant_paths(primary_disc, l1_query, k=3)
+        logger.info("[Item] KG 检索到 %d 条 GT 参考路径", len(gt_set))
 
         if not gt_set:
             logger.warning("ID %s: 未找到任何相关 GT 路径 (学科: %s)", item_id, primary_disc)
             continue
+
+        # ── Web Search augmented reference paths ──────────────────────
+        combined_gt_set = list(gt_set)
+        if args.web_search:
+            logger.info("ID %s: [WebSearch-Integration] KG 原始参考路径: %d 条", item_id, len(gt_set))
+            for gi, gp in enumerate(gt_set):
+                gp_steps = gp.get("path", []) if isinstance(gp, dict) else []
+                preview = " -> ".join(
+                    f"{s.get('head', '?')}-->{s.get('tail', '?')}" for s in gp_steps
+                )
+                logger.info("ID %s: [WebSearch-Integration]   GT[%d] %s", item_id, gi, preview[:120])
+
+            try:
+                from crossdisc_extractor.benchmark.web_search import search_and_extract_reference_paths
+                web_cache = args.web_cache_dir or os.path.join(
+                    os.path.dirname(args.output), "web_search_cache"
+                )
+                web_ref_paths = search_and_extract_reference_paths(
+                    title=title,
+                    abstract=abstract,
+                    limit=args.web_search_limit,
+                    cache_dir=web_cache,
+                )
+                combined_gt_set.extend(web_ref_paths)
+                logger.info("ID %s: [WebSearch-Integration] +%d web search 路径, 合并后 combined_gt_set: %d 条",
+                            item_id, len(web_ref_paths), len(combined_gt_set))
+                # Log each web path that was added
+                for wi, wp in enumerate(web_ref_paths):
+                    wp_steps = wp.get("path", []) if isinstance(wp, dict) else []
+                    preview = " -> ".join(
+                        f"{s.get('head', '?')}-->{s.get('tail', '?')}" for s in wp_steps
+                    )
+                    logger.info("ID %s: [WebSearch-Integration]   WEB[%d] [%s] from='%s' | %s",
+                                item_id, wi, wp.get("level", "?"), wp.get("source_paper", "?")[:40], preview[:100])
+            except Exception as e:
+                logger.warning("ID %s: [WebSearch-Integration] web search 失败 (non-fatal): %s", item_id, e)
 
         # Extract evidence-grounded GT if available (v3 format)
         gt_data = item.get("ground_truth", {})
@@ -602,45 +789,80 @@ def main():
         if gt_data.get("paths"):
             gt_evidence_paths = gt_data["paths"]
 
+        # Enrich gt_terms from web search paths
+        if args.web_search and combined_gt_set:
+            gt_terms_before = len(gt_terms_list) if gt_terms_list else 0
+            web_entities: set = set()
+            for ref_path in combined_gt_set:
+                for step in ref_path.get("path", []):
+                    h = (step.get("head") or "").strip()
+                    t = (step.get("tail") or "").strip()
+                    if h:
+                        web_entities.add(h)
+                    if t:
+                        web_entities.add(t)
+            if gt_terms_list is None:
+                gt_terms_list = list(web_entities)
+            else:
+                gt_terms_list = list(set(gt_terms_list) | web_entities)
+            logger.info("ID %s: [WebSearch-Integration] gt_terms 扩充: %d -> %d (新增 %d 个实体)",
+                        item_id, gt_terms_before, len(gt_terms_list), len(gt_terms_list) - gt_terms_before)
+            if web_entities:
+                logger.info("ID %s: [WebSearch-Integration] web 实体样例: %s",
+                            item_id, ", ".join(list(web_entities)[:10]))
+
         item_scores: Dict[str, list] = defaultdict(list)
+        item_trace["evaluations"] = []
 
         # --- L1 ---
         l1_paths = normalize_paths_structure(pred_paths_dict.get("L1", []))
-        for path in l1_paths:
+        logger.info("[Item] ── L1 评估: %d 条生成路径 ──", len(l1_paths))
+        for pi, path in enumerate(l1_paths):
             s = evaluate_single_path(
-                path, gt_set, l1_query, primary_disc, "L1", kg=kg,
+                path, combined_gt_set, l1_query, primary_disc, "L1", kg=kg,
                 gt_terms=gt_terms_list,
                 gt_relations=gt_relations_list,
                 gt_evidence_paths=gt_evidence_paths,
+                abstract=abstract,
+                _item_id=item_id, _path_idx=pi,
             )
             for k, v in s.items():
                 item_scores[f"L1_{k}"].append(v)
+            item_trace["evaluations"].append({"level": "L1", "path_idx": pi, "path": _fmt_path_short(path)[:200], "scores": {k: round(v, 4) for k, v in s.items()}})
 
         # --- L2 ---
         l2_paths = normalize_paths_structure(pred_paths_dict.get("L2", []))
+        logger.info("[Item] ── L2 评估: %d 条生成路径 ──", len(l2_paths))
         for i, path in enumerate(l2_paths):
             gen_query = l2_queries_from_data[i] if i < len(l2_queries_from_data) else l1_query
             s = evaluate_single_path(
-                path, gt_set, l1_query, primary_disc, "L2", gen_query=gen_query, kg=kg,
+                path, combined_gt_set, l1_query, primary_disc, "L2", gen_query=gen_query, kg=kg,
                 gt_terms=gt_terms_list,
                 gt_relations=gt_relations_list,
                 gt_evidence_paths=gt_evidence_paths,
+                abstract=abstract,
+                _item_id=item_id, _path_idx=i,
             )
             for k, v in s.items():
                 item_scores[f"L2_{k}"].append(v)
+            item_trace["evaluations"].append({"level": "L2", "path_idx": i, "path": _fmt_path_short(path)[:200], "scores": {k: round(v, 4) for k, v in s.items()}})
 
         # --- L3 ---
         l3_paths = normalize_paths_structure(pred_paths_dict.get("L3", []))
+        logger.info("[Item] ── L3 评估: %d 条生成路径 ──", len(l3_paths))
         for i, path in enumerate(l3_paths):
             gen_query = l3_queries_from_data[i] if i < len(l3_queries_from_data) else l1_query
             s = evaluate_single_path(
-                path, gt_set, l1_query, primary_disc, "L3", gen_query=gen_query, kg=kg,
+                path, combined_gt_set, l1_query, primary_disc, "L3", gen_query=gen_query, kg=kg,
                 gt_terms=gt_terms_list,
                 gt_relations=gt_relations_list,
                 gt_evidence_paths=gt_evidence_paths,
+                abstract=abstract,
+                _item_id=item_id, _path_idx=i,
             )
             for k, v in s.items():
                 item_scores[f"L3_{k}"].append(v)
+            item_trace["evaluations"].append({"level": "L3", "path_idx": i, "path": _fmt_path_short(path)[:200], "scores": {k: round(v, 4) for k, v in s.items()}})
 
         # --- Structural Diversity (per-level) ---
         for lvl_key, lvl_paths in [("L1", l1_paths), ("L2", l2_paths), ("L3", l3_paths)]:
@@ -659,6 +881,28 @@ def main():
         avg_scores = {k: float(np.mean(v)) if v else 0.0 for k, v in item_scores.items()}
         results.append({"id": item_id, "scores": avg_scores})
 
+        # ── Per-item summary log ─────────────────────────────────────
+        logger.info("[Item] ── ID %s 评估完成，各级别平均分 ──", item_id)
+        # Group by L1/L2/L3 and show key metrics
+        for lvl in ["L1", "L2", "L3"]:
+            key_metrics = ["consistency_f1", "innovation", "testability", "rao_stirling",
+                           "factual_precision", "hallucination_rate", "chain_coherence"]
+            parts = []
+            for m in key_metrics:
+                k = f"{lvl}_{m}"
+                if k in avg_scores:
+                    parts.append(f"{m}={avg_scores[k]:.3f}")
+            if parts:
+                logger.info("[Item]   %s: %s", lvl, "  ".join(parts))
+        logger.info("=" * 70)
+
+        # Save trace for this item
+        item_trace["avg_scores"] = {k: round(v, 4) for k, v in avg_scores.items()}
+        item_trace["gt_paths_count"] = len(gt_set)
+        item_trace["web_paths_count"] = len(combined_gt_set) - len(gt_set)
+        item_trace["combined_gt_count"] = len(combined_gt_set)
+        eval_trace.append(item_trace)
+
     # 4. 汇总输出
     print("\n=== Evaluation Summary (v2) ===")
     final_metrics: Dict[str, list] = defaultdict(list)
@@ -676,6 +920,15 @@ def main():
     with open(args.output, "w", encoding="utf-8") as f:
         json.dump(results, f, ensure_ascii=False, indent=2)
     print(f"\nDetailed results saved to {args.output}")
+
+    # Save full evaluation trace
+    trace_path = args.output.replace(".json", "_trace.json")
+    try:
+        with open(trace_path, "w", encoding="utf-8") as f:
+            json.dump(eval_trace, f, ensure_ascii=False, indent=2)
+        print(f"Evaluation trace saved to {trace_path}")
+    except Exception as e:
+        logger.warning("Trace 保存失败: %s", e)
 
 
 if __name__ == "__main__":

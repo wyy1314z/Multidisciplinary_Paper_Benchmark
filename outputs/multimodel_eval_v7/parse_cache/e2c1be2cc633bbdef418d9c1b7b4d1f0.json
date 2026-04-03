@@ -1,0 +1,109 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "machine learning",
+        "relation": "enables",
+        "tail": "refractive index profiles optimization",
+        "claim": "Machine learning enables the optimization of refractive index profiles by analyzing THz imaging datasets"
+      },
+      {
+        "step": 2,
+        "head": "refractive index profiles optimization",
+        "relation": "enhances",
+        "tail": "super-resolution",
+        "claim": "Optimized refractive index profiles enhance super-resolution capabilities"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "bio-inspired design",
+        "relation": "reduces",
+        "tail": "chromatic aberration",
+        "claim": "Bio-inspired design reduces chromatic aberration by mimicking natural optical systems"
+      },
+      {
+        "step": 2,
+        "head": "chromatic aberration reduction",
+        "relation": "improves",
+        "tail": "imaging performance",
+        "claim": "Reduced chromatic aberration improves imaging performance in THz systems"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "multi-material deposition",
+        "relation": "creates",
+        "tail": "optical property gradients",
+        "claim": "Multi-material deposition creates optical property gradients in metalenses"
+      },
+      {
+        "step": 2,
+        "head": "optical property gradients",
+        "relation": "enhances",
+        "tail": "phase control",
+        "claim": "Optical property gradients enhance phase control capabilities"
+      },
+      {
+        "step": 3,
+        "head": "phase control enhancement",
+        "relation": "increases",
+        "tail": "numerical aperture",
+        "claim": "Improved phase control increases numerical aperture and resolution"
+      }
+    ]
+  ],
+  "L3": [
+    [
+      {
+        "step": 1,
+        "head": "adaptive optics",
+        "relation": "integrates",
+        "tail": "dielectric gradient metamaterials",
+        "claim": "Adaptive optics integration enables real-time refractive index adjustment"
+      },
+      {
+        "step": 2,
+        "head": "real-time refractive index adjustment",
+        "relation": "optimizes",
+        "tail": "phase distribution",
+        "claim": "Dynamic refractive index adjustment optimizes phase distribution during imaging"
+      },
+      {
+        "step": 3,
+        "head": "phase distribution optimization",
+        "relation": "enhances",
+        "tail": "imaging fidelity",
+        "claim": "Optimized phase distribution enhances imaging fidelity and resolution"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "programmable metasurfaces",
+        "relation": "combines",
+        "tail": "high aspect ratio nanopillar structures",
+        "claim": "Combining programmable metasurfaces with nanopillars enables tunable focusing properties"
+      },
+      {
+        "step": 2,
+        "head": "tunable focusing properties",
+        "relation": "improves",
+        "tail": "adaptability",
+        "claim": "Tunable focusing properties improve adaptability to specific imaging tasks"
+      },
+      {
+        "step": 3,
+        "head": "adaptability improvement",
+        "relation": "enhances",
+        "tail": "resolution",
+        "claim": "Enhanced adaptability results in superior resolution across imaging scenarios"
+      }
+    ]
+  ]
+}

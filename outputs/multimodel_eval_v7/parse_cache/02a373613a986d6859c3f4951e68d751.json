@@ -1,0 +1,118 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "GPCR conformational dynamics",
+        "relation": "regulated by",
+        "tail": "ligand-induced intermediate states",
+        "claim": "配体诱导的中间状态调控GPCR构象动力学"
+      },
+      {
+        "step": 2,
+        "head": "ligand-induced intermediate states",
+        "relation": "recruit via",
+        "tail": "distinct allosteric networks",
+        "claim": "不同别构网络介导中间状态选择性招募效应物"
+      },
+      {
+        "step": 3,
+        "head": "distinct allosteric networks",
+        "relation": "determine",
+        "tail": "G protein/β-arrestin recruitment",
+        "claim": "特定别构网络决定效应蛋白招募特异性"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "dynamic state mapping",
+        "relation": "enables",
+        "tail": "pathway-selective drug design",
+        "claim": "动态状态图谱指导通路选择性药物设计"
+      },
+      {
+        "step": 2,
+        "head": "pathway-selective drugs",
+        "relation": "stabilize",
+        "tail": "functionally distinct conformations",
+        "claim": "通路选择性药物稳定特定功能构象"
+      },
+      {
+        "step": 3,
+        "head": "functionally distinct conformations",
+        "relation": "achieve",
+        "tail": "precise therapeutic modulation",
+        "claim": "功能构象稳定实现精准治疗调控"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "intermediate states",
+        "relation": "detectable by",
+        "tail": "time-resolved spectroscopy",
+        "claim": "时间分辨光谱可检测中间状态"
+      },
+      {
+        "step": 2,
+        "head": "intermediate states",
+        "relation": "identifiable via",
+        "tail": "MD simulations",
+        "claim": "分子动力学模拟可识别中间状态特征"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "hydrogen bond rearrangements",
+        "relation": "targeted by",
+        "tail": "biased ligands",
+        "claim": "氢键重排模式可被偏向配体靶向"
+      },
+      {
+        "step": 2,
+        "head": "water-mediated interactions",
+        "relation": "pharmacologically modulated",
+        "tail": "allosteric hotspots",
+        "claim": "水介导相互作用构成药理学别构热点"
+      }
+    ]
+  ],
+  "L3": [
+    [
+      {
+        "step": 1,
+        "head": "μs-scale MD simulations",
+        "relation": "reveal",
+        "tail": "water-allosteric hotspots",
+        "claim": "微秒级模拟揭示水介导别构位点"
+      },
+      {
+        "step": 2,
+        "head": "water-allosteric hotspots",
+        "relation": "mediate",
+        "tail": "signal transduction",
+        "claim": "水介导别构位点调控信号转导"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "conformation-locking nanobodies",
+        "relation": "validate",
+        "tail": "state-specific signaling",
+        "claim": "构象锁定纳米抗体验证状态特异性信号"
+      },
+      {
+        "step": 2,
+        "head": "state-specific signaling",
+        "relation": "confirm",
+        "tail": "intermediate state functionality",
+        "claim": "状态特异性信号验证中间态功能"
+      }
+    ]
+  ]
+}

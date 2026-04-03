@@ -1,0 +1,186 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "Current AFION systems",
+        "relation": "enables",
+        "tail": "Machine learning algorithms networked across multiple reactors",
+        "claim": "当前系统的个体优化为机器学习网络化提供基础"
+      },
+      {
+        "step": 2,
+        "head": "Machine learning algorithms networked",
+        "relation": "causes",
+        "tail": "Distributed optimization",
+        "claim": "跨反应器的算法网络化驱动分布式优化"
+      },
+      {
+        "step": 3,
+        "head": "Distributed optimization",
+        "relation": "enables",
+        "tail": "Exploration of particle-particle interactions",
+        "claim": "分布式优化使粒子间相互作用探索成为可能"
+      },
+      {
+        "step": 4,
+        "head": "Exploration of interactions",
+        "relation": "causes",
+        "tail": "Collective synthesis patterns",
+        "claim": "相互作用探索触发集体合成模式涌现"
+      },
+      {
+        "step": 5,
+        "head": "Collective synthesis patterns",
+        "relation": "causes",
+        "tail": "Novel metamaterial behaviors",
+        "claim": "集体模式导致超材料行为创新"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "Uniform reaction conditions",
+        "relation": "requires",
+        "tail": "Bio-inspired gradient design",
+        "claim": "均质条件需要梯度设计突破限制"
+      },
+      {
+        "step": 2,
+        "head": "Bio-inspired gradient design",
+        "relation": "causes",
+        "tail": "Spatially varying selection pressures",
+        "claim": "仿生设计构建空间压力梯度"
+      },
+      {
+        "step": 3,
+        "head": "Selection pressures",
+        "relation": "induces",
+        "tail": "Nanoparticle evolutionary adaptation",
+        "claim": "压力梯度诱导粒子进化适应"
+      },
+      {
+        "step": 4,
+        "head": "Evolutionary adaptation",
+        "relation": "optimizes",
+        "tail": "Genetic algorithm parameter tuning",
+        "claim": "适应过程优化算法参数调节"
+      },
+      {
+        "step": 5,
+        "head": "Parameter tuning",
+        "relation": "generates",
+        "tail": "Thermodynamically unfavorable pathways",
+        "claim": "参数优化生成非常规合成路径"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "Individual particle optimization",
+        "relation": "limits",
+        "tail": "Interaction pattern recognition",
+        "claim": "个体优化限制相互作用模式识别"
+      },
+      {
+        "step": 2,
+        "head": "Interaction pattern recognition",
+        "relation": "enables",
+        "tail": "Chemical personality modeling",
+        "claim": "模式识别支撑化学人格建模"
+      },
+      {
+        "step": 3,
+        "head": "Chemical personality modeling",
+        "relation": "determines",
+        "tail": "Synthesis condition programming",
+        "claim": "人格模型决定合成条件编程"
+      },
+      {
+        "step": 4,
+        "head": "Synthesis condition programming",
+        "relation": "creates",
+        "tail": "Programmable particle communities",
+        "claim": "条件编程构建可编程粒子群落"
+      },
+      {
+        "step": 5,
+        "head": "Programmable communities",
+        "relation": "exhibits",
+        "tail": "Adaptive collective behaviors",
+        "claim": "可编程群落展现适应性集体行为"
+      }
+    ]
+  ],
+  "L3": [
+    [
+      {
+        "step": 1,
+        "head": "Fixed microfluidic geometries",
+        "relation": "constrains",
+        "tail": "Flow pattern optimization",
+        "claim": "固定结构限制流型优化"
+      },
+      {
+        "step": 2,
+        "head": "Flow pattern optimization",
+        "relation": "triggers",
+        "tail": "Bayesian-driven reconfiguration",
+        "claim": "流型优化触发贝叶斯重构"
+      },
+      {
+        "step": 3,
+        "head": "Bayesian-driven reconfiguration",
+        "relation": "activates",
+        "tail": "Shape-memory material response",
+        "claim": "贝叶斯重构激活材料响应"
+      },
+      {
+        "step": 4,
+        "head": "Material response",
+        "relation": "achieves",
+        "tail": "Hardware-software co-evolution",
+        "claim": "材料响应实现软硬件共进化"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "Instantaneous spectroscopy",
+        "relation": "limits",
+        "tail": "Temporal history capture",
+        "claim": "瞬时光谱限制时间历史捕获"
+      },
+      {
+        "step": 2,
+        "head": "Time-resolved training data",
+        "relation": "enables",
+        "tail": "Network synaptic weighting",
+        "claim": "时序数据支撑网络加权训练"
+      },
+      {
+        "step": 3,
+        "head": "Synaptic weighting",
+        "relation": "decodes",
+        "tail": "Spectroscopic fingerprint origins",
+        "claim": "权重训练解码光谱指纹起源"
+      },
+      {
+        "step": 4,
+        "head": "Fingerprint origins",
+        "relation": "reveals",
+        "tail": "Full transformation pathways",
+        "claim": "指纹溯源揭示完整转化路径"
+      },
+      {
+        "step": 5,
+        "head": "Transformation pathways",
+        "relation": "optimizes",
+        "tail": "Target-driven synthesis design",
+        "claim": "路径解析支撑目标导向合成"
+      }
+    ]
+  ]
+}

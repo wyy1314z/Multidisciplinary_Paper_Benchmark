@@ -1,0 +1,90 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "iCASE strategy",
+        "relation": "enables",
+        "tail": "multi-scale predictive framework",
+        "claim": "iCASE策略通过多尺度预测框架整合等温压缩性测量与结构动力学监测"
+      },
+      {
+        "step": 2,
+        "head": "multi-scale predictive framework",
+        "relation": "combines",
+        "tail": "molecular dynamics simulations",
+        "claim": "多尺度框架结合分子动力学模拟与机器学习算法"
+      },
+      {
+        "step": 3,
+        "head": "molecular dynamics simulations",
+        "relation": "trains",
+        "tail": "feedback-controlled enzyme evolution system",
+        "claim": "机器学习算法训练反馈控制进化系统优化稳定性与催化效率"
+      },
+      {
+        "step": 4,
+        "head": "feedback-controlled enzyme evolution system",
+        "relation": "breaks",
+        "tail": "stability-activity trade-off",
+        "claim": "分层优化算法通过模块化网络重构打破传统稳定性-活性权衡"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "hybrid machine learning model",
+        "relation": "combines",
+        "tail": "graph neural networks",
+        "claim": "混合模型结合图神经网络与Transformer架构进行结构表征"
+      },
+      {
+        "step": 2,
+        "head": "graph neural networks",
+        "relation": "uses",
+        "tail": "isothermal compressibility gradients",
+        "claim": "模型利用活性位点压缩性梯度预测聚合物结合时的构象变化"
+      },
+      {
+        "step": 3,
+        "head": "isothermal compressibility gradients",
+        "relation": "guides",
+        "tail": "PET hydrolase design",
+        "claim": "压缩性数据指导识别关键残基并优化底物特异性"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "adaptive evolution mechanism",
+        "relation": "triggers",
+        "tail": "conformational switches",
+        "claim": "结构响应网络级联通过压缩性变化触发构象开关"
+      },
+      {
+        "step": 2,
+        "head": "conformational switches",
+        "relation": "propagates",
+        "tail": "modular architecture",
+        "claim": "构象变化在酶模块化架构中传播形成全局响应"
+      },
+      {
+        "step": 3,
+        "head": "modular architecture",
+        "relation": "optimizes",
+        "tail": "enzyme fitness",
+        "claim": "工程化压缩热点通过局部扰动产生全局协同效应"
+      },
+      {
+        "step": 4,
+        "head": "enzyme fitness",
+        "relation": "navigates",
+        "tail": "fitness landscape",
+        "claim": "关键残基突变设计实现比传统定向进化更高效的适应性景观探索"
+      }
+    ]
+  ],
+  "L3": []
+}

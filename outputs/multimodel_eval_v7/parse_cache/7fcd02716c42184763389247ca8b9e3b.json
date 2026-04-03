@@ -1,0 +1,144 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "构象柔性",
+        "relation": "enables",
+        "tail": "G蛋白偶联受体动态行为",
+        "claim": "构象柔性是G蛋白偶联受体动态行为的基础特征"
+      },
+      {
+        "step": 2,
+        "head": "膜脂质插入",
+        "relation": "indicates",
+        "tail": "变构通讯网络",
+        "claim": "膜脂质插入作为变构通讯网络的标志"
+      },
+      {
+        "step": 3,
+        "head": "构象柔性",
+        "relation": "affects",
+        "tail": "侧向配体进入通道开放程度",
+        "claim": "构象柔性通过影响侧向通道开放程度调控信号传导"
+      },
+      {
+        "step": 4,
+        "head": "侧向配体进入通道开放程度",
+        "relation": "regulates",
+        "tail": "变构药物结合位点",
+        "claim": "通道开放程度变化调控变构药物结合位点的可接近性"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "冷冻电镜技术",
+        "relation": "provides",
+        "tail": "G蛋白偶联受体结构信息",
+        "claim": "冷冻电镜技术提供高分辨率受体结构信息"
+      },
+      {
+        "step": 2,
+        "head": "分子动力学模拟",
+        "relation": "reveals",
+        "tail": "构象动态特征",
+        "claim": "分子动力学模拟揭示受体构象动态特性"
+      },
+      {
+        "step": 3,
+        "head": "受体亚型",
+        "relation": "exhibits",
+        "tail": "构象柔性差异",
+        "claim": "不同受体亚型呈现构象柔性差异"
+      },
+      {
+        "step": 4,
+        "head": "构象柔性差异",
+        "relation": "determines",
+        "tail": "药物结合位点形状",
+        "claim": "构象差异决定药物结合位点的形状和可接近性"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "膜脂质动态变化",
+        "relation": "alters",
+        "tail": "受体微环境",
+        "claim": "膜脂质动态变化改变受体周围微环境"
+      },
+      {
+        "step": 2,
+        "head": "脂质插入",
+        "relation": "modifies",
+        "tail": "变构通讯网络",
+        "claim": "脂质插入改变变构通讯网络结构"
+      },
+      {
+        "step": 3,
+        "head": "变构通讯网络",
+        "relation": "controls",
+        "tail": "药物结合位点开放程度",
+        "claim": "通讯网络变化调控药物结合位点的开放状态"
+      }
+    ]
+  ],
+  "L3": [
+    [
+      {
+        "step": 1,
+        "head": "变构药物",
+        "relation": "induces",
+        "tail": "构象柔性模式",
+        "claim": "不同变构药物诱导特定构象柔性模式"
+      },
+      {
+        "step": 2,
+        "head": "构象柔性模式",
+        "relation": "modulates",
+        "tail": "受体亚型功能",
+        "claim": "构象模式差异调控特定受体亚型功能"
+      },
+      {
+        "step": 3,
+        "head": "受体功能调控",
+        "relation": "enables",
+        "tail": "药物靶向策略",
+        "claim": "功能调控机制为药物开发提供新策略"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "膜脂质组成",
+        "relation": "determines",
+        "tail": "微环境特性",
+        "claim": "膜脂质组成影响受体微环境"
+      },
+      {
+        "step": 2,
+        "head": "微环境特性",
+        "relation": "regulates",
+        "tail": "侧向通道开放程度",
+        "claim": "微环境变化调控侧向通道开放状态"
+      },
+      {
+        "step": 3,
+        "head": "侧向通道开放程度",
+        "relation": "affects",
+        "tail": "药物结合位点可接近性",
+        "claim": "通道开放程度决定药物位点可接近性"
+      },
+      {
+        "step": 4,
+        "head": "药物位点可接近性",
+        "relation": "influences",
+        "tail": "药物效力",
+        "claim": "位点可接近性影响药物结合效率和效力"
+      }
+    ]
+  ]
+}

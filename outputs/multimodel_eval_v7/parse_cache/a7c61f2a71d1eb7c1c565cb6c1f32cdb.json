@@ -1,0 +1,90 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "integration of autonomous microfluidic systems with advanced machine learning algorithms",
+        "relation": "enables",
+        "tail": "real-time adjustments in reaction conditions",
+        "claim": "集成系统允许基于原位监测进行实时调整"
+      },
+      {
+        "step": 2,
+        "head": "real-time adjustments in reaction conditions",
+        "relation": "causes",
+        "tail": "enhanced precision and efficiency of synthesizing plasmonic nanoparticles",
+        "claim": "实时调整提升纳米粒子合成的精确性和效率"
+      },
+      {
+        "step": 3,
+        "head": "enhanced precision and efficiency",
+        "relation": "achieves",
+        "tail": "targeted optical characteristics with minimal resource expenditure",
+        "claim": "效率提升实现目标光学特性且资源消耗最小"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "microfluidic reactor's ability to manipulate small volumes of reactants and control flow dynamics",
+        "relation": "enables",
+        "tail": "rapid screening of reaction conditions across multidimensional chemical space",
+        "claim": "微流控操控能力允许多维化学空间快速筛选"
+      },
+      {
+        "step": 2,
+        "head": "rapid screening of reaction conditions",
+        "relation": "facilitates",
+        "tail": "synthesis of plasmonic nanoparticles with tailored dimensions and morphologies",
+        "claim": "快速筛选促进定制尺寸/形态纳米粒子合成"
+      },
+      {
+        "step": 3,
+        "head": "synthesis of tailored nanoparticles",
+        "relation": "reduces",
+        "tail": "time required for optimization",
+        "claim": "定制合成显著缩短优化周期"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "machine learning algorithms",
+        "relation": "analyzes",
+        "tail": "complex datasets from AFION lab",
+        "claim": "机器学习分析AFION实验室复杂数据"
+      },
+      {
+        "step": 2,
+        "head": "analysis of datasets",
+        "relation": "identifies",
+        "tail": "latent patterns between reaction parameters and optical properties",
+        "claim": "数据分析识别参数与光学特性的潜在关联"
+      },
+      {
+        "step": 3,
+        "head": "reinforcement learning techniques",
+        "relation": "refines",
+        "tail": "synthesis parameters iteratively",
+        "claim": "强化学习迭代优化合成参数"
+      },
+      {
+        "step": 4,
+        "head": "iterative parameter refinement",
+        "relation": "accelerates",
+        "tail": "development cycle",
+        "claim": "参数优化加速开发周期"
+      },
+      {
+        "step": 5,
+        "head": "accelerated development cycle",
+        "relation": "reduces",
+        "tail": "reliance on empirical trial-and-error methods",
+        "claim": "开发周期缩短减少对试错法的依赖"
+      }
+    ]
+  ],
+  "L3": []
+}

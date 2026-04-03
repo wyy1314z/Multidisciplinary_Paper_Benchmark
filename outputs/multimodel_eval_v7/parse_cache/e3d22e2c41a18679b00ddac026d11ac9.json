@@ -1,0 +1,104 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "GPCRs构象动态",
+        "relation": "affects",
+        "tail": "正常生理功能",
+        "claim": "构象动态影响GPCRs的正常生理功能"
+      },
+      {
+        "step": 2,
+        "head": "GPCRs构象动态",
+        "relation": "transforms",
+        "tail": "药物结合位点形状和可接近性",
+        "claim": "构象动态改变药物结合位点的形态特征"
+      },
+      {
+        "step": 3,
+        "head": "药物结合位点变化",
+        "relation": "regulates",
+        "tail": "药物识别和信号传导过程",
+        "claim": "位点变化调控药物作用过程"
+      },
+      {
+        "step": 4,
+        "head": "药物识别和信号传导",
+        "relation": "enables",
+        "tail": "新型药物开发",
+        "claim": "药物作用机制研究为开发提供新靶点"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "结构生物学技术进步",
+        "relation": "enables",
+        "tail": "揭示GPCRs构象变化",
+        "claim": "技术进步使构象变化可视化"
+      },
+      {
+        "step": 2,
+        "head": "GPCRs构象变化",
+        "relation": "is crucial for",
+        "tail": "理解功能机制",
+        "claim": "构象变化是解析功能的基础"
+      },
+      {
+        "step": 3,
+        "head": "不同构象状态",
+        "relation": "corresponds to",
+        "tail": "不同信号传导途径",
+        "claim": "特定构象对应特定信号通路"
+      },
+      {
+        "step": 4,
+        "head": "信号传导途径",
+        "relation": "can be analyzed by",
+        "tail": "X射线晶体学/低温电镜",
+        "claim": "技术手段可解析信号通路特征"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "膜脂质环境动态变化",
+        "relation": "affects",
+        "tail": "GPCRs构象稳定性",
+        "claim": "脂质环境影响受体结构稳定性"
+      },
+      {
+        "step": 2,
+        "head": "膜脂质环境动态变化",
+        "relation": "modulates",
+        "tail": "药物结合位点开放程度",
+        "claim": "脂质环境调控位点可及性"
+      },
+      {
+        "step": 3,
+        "head": "分子动力学模拟",
+        "relation": "enables",
+        "tail": "预测脂质-构象关系",
+        "claim": "模拟技术可验证脂质作用机制"
+      },
+      {
+        "step": 4,
+        "head": "特定膜脂质类型",
+        "relation": "induces",
+        "tail": "开放/封闭构象状态",
+        "claim": "特定脂质诱导受体状态转换"
+      },
+      {
+        "step": 5,
+        "head": "构象状态变化",
+        "relation": "impacts",
+        "tail": "药物结合和信号效率",
+        "claim": "构象变化影响药物作用效果"
+      }
+    ]
+  ],
+  "L3": []
+}

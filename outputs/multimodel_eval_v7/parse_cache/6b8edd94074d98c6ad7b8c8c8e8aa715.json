@@ -1,0 +1,186 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "构象柔性",
+        "relation": "modulates",
+        "tail": "变构药物结合位点可及性",
+        "claim": "构象柔性调节变构药物结合位点的可及性"
+      },
+      {
+        "step": 2,
+        "head": "膜脂质动力学",
+        "relation": "influences",
+        "tail": "构象柔性",
+        "claim": "膜脂质动力学动态影响构象柔性"
+      },
+      {
+        "step": 3,
+        "head": "受体亚型",
+        "relation": "interacts with",
+        "tail": "特定脂质物种",
+        "claim": "受体亚型与特定脂质物种发生偏好性相互作用"
+      },
+      {
+        "step": 4,
+        "head": "特定脂质物种",
+        "relation": "stabilizes",
+        "tail": "特定构象",
+        "claim": "特定脂质物种稳定特定构象"
+      },
+      {
+        "step": 5,
+        "head": "特定构象",
+        "relation": "biases",
+        "tail": "信号传导",
+        "claim": "特定构象导致下游信号传导路径偏向"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "X射线晶体学",
+        "relation": "provides",
+        "tail": "静态结构",
+        "claim": "X射线晶体学提供静态结构快照"
+      },
+      {
+        "step": 2,
+        "head": "冷冻电子显微镜",
+        "relation": "provides",
+        "tail": "静态结构",
+        "claim": "冷冻电子显微镜提供静态结构快照"
+      },
+      {
+        "step": 3,
+        "head": "分子动力学模拟",
+        "relation": "captures",
+        "tail": "时间分辨构象变化",
+        "claim": "分子动力学模拟捕捉时间分辨构象变化"
+      },
+      {
+        "step": 4,
+        "head": "静态结构和时间分辨构象变化",
+        "relation": "reveal",
+        "tail": "瞬态构象状态",
+        "claim": "整合结构数据和MD揭示瞬态构象状态"
+      },
+      {
+        "step": 5,
+        "head": "瞬态构象状态",
+        "relation": "are critical intermediates in",
+        "tail": "信号传导",
+        "claim": "瞬态构象状态是信号传导的关键中间体"
+      },
+      {
+        "step": 6,
+        "head": "瞬态构象状态",
+        "relation": "can be targeted by",
+        "tail": "变构调节剂",
+        "claim": "瞬态状态可被变构调节剂靶向以调节受体活性"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "膜脂质动力学",
+        "relation": "regulates",
+        "tail": "侧向配体进入通道",
+        "claim": "膜脂质动力学调节侧向配体进入通道的形成"
+      },
+      {
+        "step": 2,
+        "head": "侧向配体进入通道",
+        "relation": "modulates",
+        "tail": "配体结合动力学",
+        "claim": "侧向通道开放程度影响配体结合速率"
+      },
+      {
+        "step": 3,
+        "head": "配体结合动力学",
+        "relation": "affects",
+        "tail": "药理特征",
+        "claim": "配体结合动力学决定药理特征"
+      },
+      {
+        "step": 4,
+        "head": "药理特征",
+        "relation": "enables",
+        "tail": "药物靶向策略",
+        "claim": "药理特征差异提供脂质组学导向的药物设计"
+      }
+    ]
+  ],
+  "L3": [
+    [
+      {
+        "step": 1,
+        "head": "X射线晶体学",
+        "relation": "identifies",
+        "tail": "结构数据",
+        "claim": "X射线晶体学识别受体结构特征"
+      },
+      {
+        "step": 2,
+        "head": "冷冻电子显微镜",
+        "relation": "identifies",
+        "tail": "结构数据",
+        "claim": "冷冻电子显微镜识别受体结构特征"
+      },
+      {
+        "step": 3,
+        "head": "增强采样分子动力学模拟",
+        "relation": "captures",
+        "tail": "脂质插入事件",
+        "claim": "增强采样MD捕捉脂质插入动态过程"
+      },
+      {
+        "step": 4,
+        "head": "脂质插入事件",
+        "relation": "modulates",
+        "tail": "变构通讯网络",
+        "claim": "脂质插入事件调节变构通讯网络"
+      },
+      {
+        "step": 5,
+        "head": "变构通讯网络",
+        "relation": "enables",
+        "tail": "预测模型",
+        "claim": "变构网络建立预测受体激活状态的模型"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "膜脂质动力学",
+        "relation": "modulates",
+        "tail": "变构结合位点",
+        "claim": "膜脂质动力学调控隐性变构位点暴露"
+      },
+      {
+        "step": 2,
+        "head": "膜脂质动力学",
+        "relation": "exposes",
+        "tail": "侧向配体进入通道",
+        "claim": "膜脂质动力学调控侧向通道开放"
+      },
+      {
+        "step": 3,
+        "head": "变构结合位点和侧向通道",
+        "relation": "enhance",
+        "tail": "药物疗效",
+        "claim": "新暴露位点和通道增强药物结合效率"
+      },
+      {
+        "step": 4,
+        "head": "药物疗效",
+        "relation": "offers",
+        "tail": "治疗策略",
+        "claim": "疗效提升为神经退行疾病提供新疗法"
+      }
+    ]
+  ]
+}

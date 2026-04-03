@@ -1,0 +1,158 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "design principles of QMOFs",
+        "relation": "enhances",
+        "tail": "enzyme-mimicking catalytic mechanisms",
+        "claim": "优化设计原则增强酶模拟催化机制"
+      },
+      {
+        "step": 2,
+        "head": "enzyme-mimicking catalytic mechanisms",
+        "relation": "targets",
+        "tail": "iron-dependent ferroptosis pathway",
+        "claim": "酶模拟机制靶向铁依赖的铁死亡通路"
+      },
+      {
+        "step": 3,
+        "head": "controlled deligandation strategy",
+        "relation": "increases",
+        "tail": "reactive iron species availability",
+        "claim": "控制脱配体策略增加反应性铁物种可用性"
+      },
+      {
+        "step": 4,
+        "head": "reactive iron species",
+        "relation": "elevates",
+        "tail": "reactive oxygen species (ROS)",
+        "claim": "反应性铁物种通过Fenton反应提高ROS水平"
+      },
+      {
+        "step": 5,
+        "head": "reactive oxygen species",
+        "relation": "leads to",
+        "tail": "amplified antitumor effects",
+        "claim": "ROS积累增强抗肿瘤效果"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "controlled deligandation strategy",
+        "relation": "optimizes",
+        "tail": "coordination environment of metal ions",
+        "claim": "脱配体策略优化金属离子配位环境"
+      },
+      {
+        "step": 2,
+        "head": "coordination environment optimization",
+        "relation": "alters",
+        "tail": "geometry and electronic properties",
+        "claim": "配位环境改变影响活性位点几何与电子特性"
+      },
+      {
+        "step": 3,
+        "head": "altered active sites",
+        "relation": "facilitates",
+        "tail": "substrate binding and catalysis",
+        "claim": "活性位点变化促进底物结合与催化反应"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "porous structure of Q-MIL-53(Fe)",
+        "relation": "enables",
+        "tail": "sustained release of iron ions",
+        "claim": "多孔结构实现铁离子持续释放"
+      },
+      {
+        "step": 2,
+        "head": "iron ions",
+        "relation": "catalyzes",
+        "tail": "Fenton reaction",
+        "claim": "铁离子催化Fenton反应"
+      },
+      {
+        "step": 3,
+        "head": "Fenton reaction",
+        "relation": "induces",
+        "tail": "ferroptosis in tumor cells",
+        "claim": "Fenton反应诱导肿瘤细胞铁死亡"
+      }
+    ]
+  ],
+  "L3": [
+    [
+      {
+        "step": 1,
+        "head": "pore structure optimization",
+        "relation": "modulates",
+        "tail": "tumor microenvironment",
+        "claim": "孔结构优化改变肿瘤微环境"
+      },
+      {
+        "step": 2,
+        "head": "modulated microenvironment",
+        "relation": "enhances",
+        "tail": "hydroxyl radical production",
+        "claim": "微环境改变增强羟基自由基生成"
+      },
+      {
+        "step": 3,
+        "head": "hydroxyl radicals",
+        "relation": "induces",
+        "tail": "ferroptosis and immunogenic cell death",
+        "claim": "羟基自由基协同诱导铁死亡与免疫原性死亡"
+      },
+      {
+        "step": 4,
+        "head": "immunogenic cell death",
+        "relation": "increases",
+        "tail": "DAMPs expression and DC maturation",
+        "claim": "免疫原性死亡提升DAMPs表达与树突状细胞成熟"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "Q-MIL-53(Fe) and PD-1 antibodies",
+        "relation": "amplifies",
+        "tail": "antitumor immune responses",
+        "claim": "纳米酶与PD-1抗体协同增强抗肿瘤免疫"
+      },
+      {
+        "step": 2,
+        "head": "antitumor immune responses",
+        "relation": "promotes",
+        "tail": "lymphocyte infiltration",
+        "claim": "免疫增强促进淋巴细胞浸润"
+      },
+      {
+        "step": 3,
+        "head": "lymphocyte infiltration",
+        "relation": "enhances",
+        "tail": "T cell cytotoxic effects",
+        "claim": "淋巴细胞浸润增强T细胞毒性作用"
+      },
+      {
+        "step": 4,
+        "head": "Q-MIL-53(Fe)",
+        "relation": "depletes",
+        "tail": "glutathione",
+        "claim": "纳米酶消耗谷胱甘肽"
+      },
+      {
+        "step": 5,
+        "head": "oxidative stress",
+        "relation": "renders",
+        "tail": "tumor cells susceptible to immune destruction",
+        "claim": "氧化应激使肿瘤细胞易受免疫攻击"
+      }
+    ]
+  ]
+}

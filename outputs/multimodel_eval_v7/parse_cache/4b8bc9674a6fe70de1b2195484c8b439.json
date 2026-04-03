@@ -1,0 +1,129 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "相位分布转换",
+        "relation": "transforms",
+        "tail": "折射率梯度",
+        "claim": "将相位分布转化为特定厚度的折射率梯度"
+      },
+      {
+        "step": 2,
+        "head": "折射率梯度",
+        "relation": "enables",
+        "tail": "可控光学路径调制",
+        "claim": "折射率梯度实现介电梯度超材料的光学路径调控"
+      },
+      {
+        "step": 3,
+        "head": "可控光学路径调制",
+        "relation": "causes",
+        "tail": "消除色差球差",
+        "claim": "光学路径调制在宽频带范围消除色差和球差"
+      },
+      {
+        "step": 4,
+        "head": "消除色差球差",
+        "relation": "achieves",
+        "tail": "突破衍射极限",
+        "claim": "消除像差突破传统透镜的衍射极限限制"
+      },
+      {
+        "step": 5,
+        "head": "突破衍射极限",
+        "relation": "results in",
+        "tail": "超分辨成像",
+        "claim": "衍射极限突破实现太赫兹波段超分辨成像"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "局部折射率调控",
+        "relation": "enables",
+        "tail": "空间相位连续调节",
+        "claim": "微观结构折射率调控实现空间相位连续调节"
+      },
+      {
+        "step": 2,
+        "head": "空间相位连续调节",
+        "relation": "causes",
+        "tail": "相同聚焦位置",
+        "claim": "相位调节使不同频率太赫兹波获得相同聚焦位置"
+      },
+      {
+        "step": 3,
+        "head": "相同聚焦位置",
+        "relation": "achieves",
+        "tail": "消色差效果",
+        "claim": "统一聚焦位置达成消色差效果"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "高梯度折射率变化",
+        "relation": "enables",
+        "tail": "压缩光斑尺寸",
+        "claim": "高梯度折射率有效压缩聚焦光斑尺寸"
+      },
+      {
+        "step": 2,
+        "head": "压缩光斑尺寸",
+        "relation": "achieves",
+        "tail": "突破衍射极限",
+        "claim": "光斑压缩突破衍射极限限制"
+      },
+      {
+        "step": 3,
+        "head": "突破衍射极限",
+        "relation": "results in",
+        "tail": "超分辨成像",
+        "claim": "衍射极限突破实现超分辨成像"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "三维打印技术",
+        "relation": "enables",
+        "tail": "纳米级精度制造",
+        "claim": "高分辨率打印实现纳米至亚毫米级制造精度"
+      },
+      {
+        "step": 2,
+        "head": "纳米级精度制造",
+        "relation": "ensures",
+        "tail": "折射率连续均匀",
+        "claim": "制造精度保证折射率分布的连续性和均匀性"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "数字化设计",
+        "relation": "couples",
+        "tail": "打印参数",
+        "claim": "数字化设计与打印参数紧密耦合"
+      },
+      {
+        "step": 2,
+        "head": "参数耦合",
+        "relation": "enables",
+        "tail": "复现折射率剖面",
+        "claim": "参数优化精准复现梯度折射率剖面"
+      },
+      {
+        "step": 3,
+        "head": "复现折射率剖面",
+        "relation": "ensures",
+        "tail": "设计性能实现",
+        "claim": "精确剖面复现确保太赫兹波段性能达成"
+      }
+    ]
+  ],
+  "L3": []
+}

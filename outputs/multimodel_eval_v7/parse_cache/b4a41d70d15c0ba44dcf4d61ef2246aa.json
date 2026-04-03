@@ -1,0 +1,188 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "准金属有机框架",
+        "relation": "integrates",
+        "tail": "生物相容性配体",
+        "claim": "QMOFs整合生物相容性配体促进结构优化"
+      },
+      {
+        "step": 2,
+        "head": "生物相容性配体",
+        "relation": "enhances",
+        "tail": "催化活性",
+        "claim": "生物相容性配体增强QMOFs的催化性能"
+      },
+      {
+        "step": 3,
+        "head": "催化活性",
+        "relation": "enables",
+        "tail": "选择性靶向",
+        "claim": "增强的催化活性实现肿瘤细胞特异性识别"
+      },
+      {
+        "step": 4,
+        "head": "选择性靶向",
+        "relation": "promotes",
+        "tail": "抗肿瘤效果",
+        "claim": "靶向性提升导致肿瘤杀伤效应增强"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "催化活性",
+        "relation": "induces",
+        "tail": "铁死亡",
+        "claim": "催化反应触发肿瘤细胞铁死亡机制"
+      },
+      {
+        "step": 2,
+        "head": "铁死亡",
+        "relation": "synergizes",
+        "tail": "免疫原性细胞死亡",
+        "claim": "铁死亡与免疫原性死亡产生协同效应"
+      },
+      {
+        "step": 3,
+        "head": "免疫原性细胞死亡",
+        "relation": "amplifies",
+        "tail": "抗肿瘤效果",
+        "claim": "双重死亡机制显著增强治疗效果"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "可控配体去除策略",
+        "relation": "modifies",
+        "tail": "酶-mimicking功能",
+        "claim": "配体去除策略引入酶模拟特性"
+      },
+      {
+        "step": 2,
+        "head": "酶-mimicking功能",
+        "relation": "enhances",
+        "tail": "过氧化物酶-mimic活性",
+        "claim": "酶模拟功能提升催化反应效率"
+      },
+      {
+        "step": 3,
+        "head": "过氧化物酶-mimic活性",
+        "relation": "promotes",
+        "tail": "反应性氧物种",
+        "claim": "催化活性增强导致ROS大量生成"
+      },
+      {
+        "step": 4,
+        "head": "反应性氧物种",
+        "relation": "induces",
+        "tail": "铁死亡",
+        "claim": "ROS积累在低氧环境诱导铁死亡"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "多孔结构纳米材料",
+        "relation": "modifies",
+        "tail": "表面性质",
+        "claim": "纳米材料表面工程化改造"
+      },
+      {
+        "step": 2,
+        "head": "表面性质",
+        "relation": "facilitates",
+        "tail": "损伤相关分子模式",
+        "claim": "表面修饰促进DAMPs释放"
+      },
+      {
+        "step": 3,
+        "head": "损伤相关分子模式",
+        "relation": "activates",
+        "tail": "免疫反应",
+        "claim": "DAMPs触发抗肿瘤免疫应答"
+      },
+      {
+        "step": 4,
+        "head": "免疫反应",
+        "relation": "synergizes",
+        "tail": "铁死亡",
+        "claim": "免疫激活与铁死亡协同增强疗效"
+      }
+    ]
+  ],
+  "L3": [
+    [
+      {
+        "step": 1,
+        "head": "金属有机框架",
+        "relation": "undergoes",
+        "tail": "优化孔结构",
+        "claim": "MOF结构经孔道工程优化"
+      },
+      {
+        "step": 2,
+        "head": "优化孔结构",
+        "relation": "facilitates",
+        "tail": "化疗药物",
+        "claim": "孔结构调控实现药物高效负载"
+      },
+      {
+        "step": 3,
+        "head": "化疗药物",
+        "relation": "targets",
+        "tail": "肿瘤微环境",
+        "claim": "药物靶向释放于肿瘤区域"
+      },
+      {
+        "step": 4,
+        "head": "肿瘤微环境",
+        "relation": "synergizes",
+        "tail": "铁死亡",
+        "claim": "局部药物浓度增强铁死亡效应"
+      },
+      {
+        "step": 5,
+        "head": "铁死亡",
+        "relation": "combines",
+        "tail": "免疫原性细胞死亡",
+        "claim": "双重死亡机制产生叠加治疗效果"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "可控配体去除策略",
+        "relation": "alters",
+        "tail": "电子特性",
+        "claim": "配体去除调控材料电子结构"
+      },
+      {
+        "step": 2,
+        "head": "电子特性",
+        "relation": "enhances",
+        "tail": "氧化应激",
+        "claim": "电子特性优化提升ROS生成能力"
+      },
+      {
+        "step": 3,
+        "head": "氧化应激",
+        "relation": "activates",
+        "tail": "铁死亡",
+        "claim": "氧化应激失衡触发铁死亡程序"
+      },
+      {
+        "step": 4,
+        "head": "铁死亡",
+        "relation": "triggers",
+        "tail": "免疫原性细胞死亡",
+        "claim": "铁死亡级联放大免疫原性死亡信号"
+      }
+    ]
+  ]
+}

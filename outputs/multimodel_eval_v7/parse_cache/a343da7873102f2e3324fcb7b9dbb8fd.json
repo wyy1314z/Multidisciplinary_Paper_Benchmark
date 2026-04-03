@@ -1,0 +1,132 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "介电梯度超材料+三维打印",
+        "relation": "enables",
+        "tail": "THz metalenses设计",
+        "claim": "材料与制造技术结合使THz金属透镜设计成为可能"
+      },
+      {
+        "step": 2,
+        "head": "THz metalenses设计",
+        "relation": "transforms",
+        "tail": "折射率分布工程",
+        "claim": "通过设计折射率分布实现相位分布生成"
+      },
+      {
+        "step": 3,
+        "head": "折射率分布工程",
+        "relation": "causes",
+        "tail": "相位分布生成",
+        "claim": "工程化折射率分布产生宽带相位分布"
+      },
+      {
+        "step": 4,
+        "head": "相位分布生成",
+        "relation": "enables",
+        "tail": "消色差超分辨",
+        "claim": "相位分布补偿波长依赖误差实现超分辨成像"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "介电梯度超材料",
+        "relation": "requires",
+        "tail": "高纵横比纳米柱结构",
+        "claim": "纳米柱结构通过Mie共振实现波长无关相位延迟"
+      },
+      {
+        "step": 2,
+        "head": "高纵横比纳米柱结构",
+        "relation": "causes",
+        "tail": "消色差超分辨",
+        "claim": "相位延迟均质化焦距实现消色差成像"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "三维打印技术",
+        "relation": "enables",
+        "tail": "同心纳米环结构",
+        "claim": "3D打印实现亚波长结构制造"
+      },
+      {
+        "step": 2,
+        "head": "同心纳米环结构",
+        "relation": "transforms",
+        "tail": "相位分布→折射率分布",
+        "claim": "计算相位分布转化为物理折射率分布"
+      },
+      {
+        "step": 3,
+        "head": "相位分布→折射率分布",
+        "relation": "requires",
+        "tail": "超振荡透镜",
+        "claim": "亚波长控制确保超振荡透镜功能实现"
+      }
+    ]
+  ],
+  "L3": [
+    [
+      {
+        "step": 1,
+        "head": "超表面相位调制",
+        "relation": "co-optimizes",
+        "tail": "介电梯度折射率分布",
+        "claim": "相位-折射率协同优化产生亚衍射干涉"
+      },
+      {
+        "step": 2,
+        "head": "亚衍射干涉",
+        "relation": "causes",
+        "tail": "超振荡波前叠加",
+        "claim": "波前叠加打破阿贝衍射极限"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "高纵横比纳米柱",
+        "relation": "enhances",
+        "tail": "光-物质相互作用深度",
+        "claim": "纳米结构增强波前控制能力"
+      },
+      {
+        "step": 2,
+        "head": "光-物质相互作用深度",
+        "relation": "causes",
+        "tail": "视场角扩展",
+        "claim": "减少畸变实现90°视场角"
+      },
+      {
+        "step": 3,
+        "head": "视场角扩展",
+        "relation": "enables",
+        "tail": "数值孔径提升",
+        "claim": "各向异性散射实现0.555 NA"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "协同系统",
+        "relation": "requires",
+        "tail": "玻璃纤维图案解析",
+        "claim": "组合系统需实现0.2mm无损检测分辨率"
+      },
+      {
+        "step": 2,
+        "head": "玻璃纤维图案解析",
+        "relation": "validates",
+        "tail": "叶片纤维组织成像",
+        "claim": "生物成像验证跨尺度超分辨能力"
+      }
+    ]
+  ]
+}

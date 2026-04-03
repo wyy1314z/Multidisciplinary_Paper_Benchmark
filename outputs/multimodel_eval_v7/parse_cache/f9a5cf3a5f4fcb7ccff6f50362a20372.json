@@ -1,0 +1,83 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "等温压缩辅助动态挤压指数扰动工程策略",
+        "relation": "enables",
+        "tail": "酶的三级及四级结构柔性调控",
+        "claim": "工程策略系统调控酶结构柔性"
+      },
+      {
+        "step": 2,
+        "head": "酶的三级及四级结构柔性调控",
+        "relation": "causes",
+        "tail": "酶分子内部动态网络优化",
+        "claim": "结构柔性调控优化分子动态网络"
+      },
+      {
+        "step": 3,
+        "head": "酶分子内部动态网络优化",
+        "relation": "breaks",
+        "tail": "热稳定性与催化活性权衡",
+        "claim": "动态网络优化突破传统性能权衡"
+      },
+      {
+        "step": 4,
+        "head": "热稳定性与催化活性权衡突破",
+        "relation": "enhances",
+        "tail": "工业酶整体性能表现",
+        "claim": "性能权衡突破提升高温适应性"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "监督式机器学习模型",
+        "relation": "predicts",
+        "tail": "PET水解酶关键结合位点",
+        "claim": "模型输入结构特征预测结合位点"
+      },
+      {
+        "step": 2,
+        "head": "PET水解酶关键结合位点预测",
+        "relation": "guides",
+        "tail": "靶向突变设计",
+        "claim": "结合位点预测指导突变设计"
+      },
+      {
+        "step": 3,
+        "head": "靶向突变设计",
+        "relation": "enhances",
+        "tail": "酶-底物结合亲和力",
+        "claim": "突变设计增强底物特异性"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "适应性进化分子响应模型",
+        "relation": "identifies",
+        "tail": "关键调控模块",
+        "claim": "模型识别结构重排位点"
+      },
+      {
+        "step": 2,
+        "head": "关键调控模块识别",
+        "relation": "promotes",
+        "tail": "协同效应发挥",
+        "claim": "模块设计促进构象协同"
+      },
+      {
+        "step": 3,
+        "head": "协同效应发挥",
+        "relation": "improves",
+        "tail": "热稳定性及催化效率",
+        "claim": "协同效应突破单点突变限制"
+      }
+    ]
+  ],
+  "L3": []
+}

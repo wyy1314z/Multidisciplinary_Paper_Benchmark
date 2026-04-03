@@ -1,0 +1,60 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "Metalloid-based MOFs",
+        "relation": "causes",
+        "tail": "•OH generation",
+        "claim": "MOFs的过氧化物酶样活性将H₂O₂转化为•OH"
+      },
+      {
+        "step": 2,
+        "head": "Metalloid-based MOFs",
+        "relation": "causes",
+        "tail": "O₂ generation",
+        "claim": "MOFs的过氧化氢酶样活性分解H₂O₂生成O₂"
+      },
+      {
+        "step": 3,
+        "head": "O₂ generation",
+        "relation": "enables",
+        "tail": "sustained Fenton-like reactions",
+        "claim": "原位生成的O₂维持缺氧环境中的Fenton样反应"
+      },
+      {
+        "step": 4,
+        "head": "sustained Fenton-like reactions",
+        "relation": "causes",
+        "tail": "oxidative storm",
+        "claim": "持续的Fenton反应与O₂循环引发局部氧化风暴"
+      },
+      {
+        "step": 5,
+        "head": "oxidative storm",
+        "relation": "causes",
+        "tail": "therapeutic resistance overcoming",
+        "claim": "氧化风暴通过协同ROS生成克服缺氧相关的治疗抵抗"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "Metalloid nodes' tunable Lewis acidity",
+        "relation": "enhances",
+        "tail": "catalytic turnover",
+        "claim": "可调路易斯酸性提升催化转化效率"
+      },
+      {
+        "step": 2,
+        "head": "Metalloid nodes' redox-active defects",
+        "relation": "enhances",
+        "tail": "substrate specificity",
+        "claim": "氧化还原活性缺陷增强底物特异性"
+      }
+    ]
+  ],
+  "L3": []
+}

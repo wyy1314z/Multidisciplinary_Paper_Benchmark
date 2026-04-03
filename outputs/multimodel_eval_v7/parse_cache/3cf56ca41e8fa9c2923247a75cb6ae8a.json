@@ -1,0 +1,91 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "配体结合-解离循环",
+        "relation": "causes",
+        "tail": "跨膜域构象印记",
+        "claim": "配体循环导致受体跨膜域产生构象印记"
+      },
+      {
+        "step": 2,
+        "head": "跨膜域构象印记",
+        "relation": "enables",
+        "tail": "氢键网络重新排列",
+        "claim": "构象印记通过氢键网络重组维持"
+      },
+      {
+        "step": 3,
+        "head": "氢键网络重新排列",
+        "relation": "transforms",
+        "tail": "疏水相互作用微调",
+        "claim": "氢键重组引发疏水作用协同调整"
+      },
+      {
+        "step": 4,
+        "head": "疏水相互作用微调",
+        "relation": "affects",
+        "tail": "配体结合选择性",
+        "claim": "疏水作用调整影响后续配体选择性"
+      },
+      {
+        "step": 5,
+        "head": "配体结合选择性",
+        "relation": "inhibits",
+        "tail": "信号转导效率",
+        "claim": "选择性变化调控信号转导效率"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "TM6/TM7动态氢键簇",
+        "relation": "causes",
+        "tail": "亚稳态构象形成",
+        "claim": "氢键簇动态特性导致亚稳态形成"
+      },
+      {
+        "step": 2,
+        "head": "亚稳态构象",
+        "relation": "detected via",
+        "tail": "分子动力学模拟",
+        "claim": "亚稳态可通过模拟检测皮秒级振荡"
+      },
+      {
+        "step": 3,
+        "head": "分子动力学模拟",
+        "relation": "validates",
+        "tail": "构象记忆效应",
+        "claim": "模拟验证构象记忆效应存在"
+      }
+    ]
+  ],
+  "L3": [
+    [
+      {
+        "step": 1,
+        "head": "亚稳态构象",
+        "relation": "enables",
+        "tail": "变构调节剂设计",
+        "claim": "亚稳态为药物设计提供结构基础"
+      },
+      {
+        "step": 2,
+        "head": "变构调节剂",
+        "relation": "modulates",
+        "tail": "记忆状态稳定性",
+        "claim": "调节剂可选择性调控记忆状态"
+      },
+      {
+        "step": 3,
+        "head": "记忆状态调控",
+        "relation": "provides basis",
+        "tail": "时间依赖性药物开发",
+        "claim": "记忆调控机制指导新型药物开发"
+      }
+    ]
+  ]
+}

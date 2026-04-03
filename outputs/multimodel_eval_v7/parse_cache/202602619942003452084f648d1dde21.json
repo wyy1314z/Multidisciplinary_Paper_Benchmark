@@ -1,0 +1,123 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "Integration of microfluidic reactors and machine learning algorithms",
+        "relation": "enables",
+        "tail": "real-time adjustments to reaction conditions",
+        "claim": "整合使得基于在线光谱表征的实时反应条件调整成为可能"
+      },
+      {
+        "step": 2,
+        "head": "real-time adjustments to reaction conditions",
+        "relation": "leads to",
+        "tail": "rapid synthesis and optimization of plasmonic nanoparticles",
+        "claim": "实时调整加速了等离激元纳米粒子的合成与优化"
+      },
+      {
+        "step": 3,
+        "head": "rapid synthesis and optimization of plasmonic nanoparticles",
+        "relation": "results in",
+        "tail": "enhanced control over optical properties",
+        "claim": "快速合成与优化增强了对纳米粒子光学性质的控制"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "Use of microfluidic reactors",
+        "relation": "enables",
+        "tail": "continuous flow and automated mixing of reagents",
+        "claim": "微流体反应器的使用实现了试剂的连续流动和自动混合"
+      },
+      {
+        "step": 2,
+        "head": "continuous flow and automated mixing of reagents",
+        "relation": "accelerates",
+        "tail": "exploration of multidimensional chemical space",
+        "claim": "连续流动和自动混合加速了多维化学空间的探索"
+      },
+      {
+        "step": 3,
+        "head": "exploration of multidimensional chemical space",
+        "relation": "leads to",
+        "tail": "generation of diverse nanoparticle shapes and compositions",
+        "claim": "多维化学空间探索产生了更多样的纳米粒子形貌和组成"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "Machine learning techniques (Bayesian optimization)",
+        "relation": "analyzes",
+        "tail": "historical data from previous experiments",
+        "claim": "机器学习技术通过分析历史实验数据识别最佳反应条件"
+      },
+      {
+        "step": 2,
+        "head": "analysis of historical data",
+        "relation": "identifies",
+        "tail": "optimal reaction conditions",
+        "claim": "数据分析识别出最优反应条件以获得目标光学性质"
+      },
+      {
+        "step": 3,
+        "head": "optimal reaction conditions",
+        "relation": "reduces",
+        "tail": "trial-and-error process in synthesis",
+        "claim": "最优条件减少了纳米粒子合成中的试错过程"
+      }
+    ]
+  ],
+  "L3": [
+    [
+      {
+        "step": 1,
+        "head": "Combination of microfluidic reactors and Bayesian optimization",
+        "relation": "creates",
+        "tail": "closed-loop system",
+        "claim": "整合构建了闭环系统以实现合成参数的动态调整"
+      },
+      {
+        "step": 2,
+        "head": "closed-loop system",
+        "relation": "utilizes",
+        "tail": "real-time spectroscopic feedback",
+        "claim": "闭环系统利用实时光谱反馈指导参数调整"
+      },
+      {
+        "step": 3,
+        "head": "real-time spectroscopic feedback",
+        "relation": "adjusts",
+        "tail": "reagent flow rates and concentrations",
+        "claim": "光谱反馈直接调整试剂流速和浓度以精确控制合成条件"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "Online spectral characterization with deep neural networks",
+        "relation": "trains",
+        "tail": "model on spectroscopic data",
+        "claim": "在线光谱表征与深度学习结合通过数据训练模型"
+      },
+      {
+        "step": 2,
+        "head": "trained model",
+        "relation": "predicts",
+        "tail": "outcomes of varying synthesis parameters",
+        "claim": "训练后的模型可预测不同合成参数的实验结果"
+      },
+      {
+        "step": 3,
+        "head": "model predictions",
+        "relation": "refines",
+        "tail": "iterative optimization process",
+        "claim": "模型预测通过迭代优化实现目标纳米粒子特性"
+      }
+    ]
+  ]
+}

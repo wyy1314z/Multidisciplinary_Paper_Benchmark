@@ -1,0 +1,83 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "自主驱动实验室（AFION）",
+        "relation": "enables",
+        "tail": "微流体反应器与机器学习结合",
+        "claim": "AFION实验室结合微流体反应器和机器学习技术"
+      },
+      {
+        "step": 2,
+        "head": "微流体反应器",
+        "relation": "accelerates",
+        "tail": "多维化学空间探索",
+        "claim": "微流体反应器加速多维化学空间的探索"
+      },
+      {
+        "step": 3,
+        "head": "机器学习",
+        "relation": "optimizes",
+        "tail": "纳米粒子合成参数",
+        "claim": "机器学习优化纳米粒子的合成参数"
+      },
+      {
+        "step": 4,
+        "head": "多维化学空间探索与参数优化",
+        "relation": "synergizes",
+        "tail": "精准调控光学性质",
+        "claim": "微流体反应器与机器学习的协同作用实现光学性质精准调控"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "微流体反应器",
+        "relation": "enables",
+        "tail": "精确控制反应条件",
+        "claim": "微流体反应器可精确控制流速、温度、压力等参数"
+      },
+      {
+        "step": 2,
+        "head": "精确控制反应条件",
+        "relation": "facilitates",
+        "tail": "微小空间快速反应",
+        "claim": "精确控制使反应在微小空间内快速进行"
+      },
+      {
+        "step": 3,
+        "head": "微小空间快速反应",
+        "relation": "accelerates",
+        "tail": "多维化学空间探索",
+        "claim": "快速反应加速多维化学空间的探索"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "机器学习",
+        "relation": "analyzes",
+        "tail": "实验数据",
+        "claim": "机器学习算法分析大量实验数据"
+      },
+      {
+        "step": 2,
+        "head": "实验数据分析",
+        "relation": "identifies",
+        "tail": "反应条件与性质关系",
+        "claim": "分析结果挖掘出反应条件与纳米粒子性质的关系"
+      },
+      {
+        "step": 3,
+        "head": "关系挖掘",
+        "relation": "guides",
+        "tail": "优化合成参数",
+        "claim": "关系挖掘指导合成参数调整以找到最优条件"
+      }
+    ]
+  ],
+  "L3": []
+}

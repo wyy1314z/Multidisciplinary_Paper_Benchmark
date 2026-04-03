@@ -1,0 +1,109 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "金属离子",
+        "relation": "enables",
+        "tail": "氢键和盐桥网络",
+        "claim": "金属离子调控促进蛋白质表面氢键和盐桥网络的形成"
+      },
+      {
+        "step": 2,
+        "head": "氢键和盐桥网络",
+        "relation": "transforms",
+        "tail": "层级模块网络",
+        "claim": "强化的氢键和盐桥网络重构层级模块网络的结构特性"
+      },
+      {
+        "step": 3,
+        "head": "层级模块网络",
+        "relation": "causes",
+        "tail": "热稳定性",
+        "claim": "层级模块网络的结构特性增强蛋白质热稳定性"
+      },
+      {
+        "step": 4,
+        "head": "层级模块网络",
+        "relation": "causes",
+        "tail": "催化活性",
+        "claim": "层级模块网络的结构特性提升催化活性"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "动态构象",
+        "relation": "requires",
+        "tail": "结构基础监督学习模型",
+        "claim": "蛋白质动态构象变化需要改进监督学习模型以提升预测精度"
+      },
+      {
+        "step": 2,
+        "head": "结构基础监督学习模型",
+        "relation": "enhances",
+        "tail": "PET水解酶结合模式预测",
+        "claim": "整合动态特征的模型能更准确预测PET水解酶与聚合物的结合模式"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "适应性进化",
+        "relation": "identifies",
+        "tail": "远程调控",
+        "claim": "适应性进化理论揭示酶的远程调控位点网络"
+      },
+      {
+        "step": 2,
+        "head": "远程调控",
+        "relation": "enhances",
+        "tail": "酶活性",
+        "claim": "远程位点调控通过非直接机制提升整体酶活性"
+      }
+    ]
+  ],
+  "L3": [
+    [
+      {
+        "step": 1,
+        "head": "动态挤压指数网络",
+        "relation": "feeds",
+        "tail": "结构基础机器学习",
+        "claim": "实时动态数据输入机器学习模型进行构象分析"
+      },
+      {
+        "step": 2,
+        "head": "结构基础机器学习",
+        "relation": "optimizes",
+        "tail": "催化构象",
+        "claim": "机器学习模型输出最佳催化构象建议"
+      },
+      {
+        "step": 3,
+        "head": "催化构象",
+        "relation": "improves",
+        "tail": "酶催化机制",
+        "claim": "优化的催化构象显著提升催化效率和稳定性"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "蛋白质表面电荷",
+        "relation": "integrates",
+        "tail": "表型适应性景观",
+        "claim": "多维数据整合消除符号表型互作的不利影响"
+      },
+      {
+        "step": 2,
+        "head": "表型适应性景观",
+        "relation": "guides",
+        "tail": "定向进化",
+        "claim": "整合分析结果为定向进化提供精确改造方向"
+      }
+    ]
+  ]
+}

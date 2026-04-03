@@ -1,0 +1,194 @@
+[
+  {
+    "model": "deepseek-v3",
+    "endpoint": "shubiaobiao",
+    "success": true,
+    "latency_ms": 1524,
+    "response": "2",
+    "error": ""
+  },
+  {
+    "model": "deepseek/deepseek-chat-v3.1",
+    "endpoint": "shubiaobiao",
+    "success": false,
+    "latency_ms": 251,
+    "response": "",
+    "error": "Error code: 503 - {'error': {'message': '当前分组 企业用户 下对于模型 deepseek/deepseek-chat-v3.1 计费模式 [按量计费] 无可用渠道 (request id: 2026"
+  },
+  {
+    "model": "deepseek/deepseek-chat-v3.1",
+    "endpoint": "cstcloud",
+    "success": false,
+    "latency_ms": 293,
+    "response": "",
+    "error": "Error code: 401 - {'code': 401, 'message': 'Unauthorized'}"
+  },
+  {
+    "model": "deepseek/deepseek-r1-0528",
+    "endpoint": "shubiaobiao",
+    "success": false,
+    "latency_ms": 296,
+    "response": "",
+    "error": "Error code: 503 - {'error': {'message': '当前分组 企业用户 下对于模型 deepseek/deepseek-r1-0528 计费模式 [按量计费] 无可用渠道 (request id: 202603"
+  },
+  {
+    "model": "deepseek/deepseek-r1-0528",
+    "endpoint": "cstcloud",
+    "success": false,
+    "latency_ms": 435,
+    "response": "",
+    "error": "Error code: 401 - {'code': 401, 'message': 'Unauthorized'}"
+  },
+  {
+    "model": "qwen3-235b-a22b",
+    "endpoint": "shubiaobiao",
+    "success": true,
+    "latency_ms": 8311,
+    "response": "2",
+    "error": ""
+  },
+  {
+    "model": "qwen/qwen-2.5-72b-instruct",
+    "endpoint": "shubiaobiao",
+    "success": false,
+    "latency_ms": 253,
+    "response": "",
+    "error": "Error code: 503 - {'error': {'message': '当前分组 企业用户 下对于模型 qwen/qwen-2.5-72b-instruct 计费模式 [按量计费] 无可用渠道 (request id: 20260"
+  },
+  {
+    "model": "qwen/qwen-2.5-72b-instruct",
+    "endpoint": "cstcloud",
+    "success": false,
+    "latency_ms": 380,
+    "response": "",
+    "error": "Error code: 401 - {'code': 401, 'message': 'Unauthorized'}"
+  },
+  {
+    "model": "qwen/qwen3-max",
+    "endpoint": "shubiaobiao",
+    "success": false,
+    "latency_ms": 252,
+    "response": "",
+    "error": "Error code: 503 - {'error': {'message': '当前分组 企业用户 下对于模型 qwen/qwen3-max 计费模式 [按量计费] 无可用渠道 (request id: 20260327003352798"
+  },
+  {
+    "model": "qwen/qwen3-max",
+    "endpoint": "cstcloud",
+    "success": false,
+    "latency_ms": 305,
+    "response": "",
+    "error": "Error code: 401 - {'code': 401, 'message': 'Unauthorized'}"
+  },
+  {
+    "model": "openai/gpt-4o-mini",
+    "endpoint": "shubiaobiao",
+    "success": false,
+    "latency_ms": 247,
+    "response": "",
+    "error": "Error code: 503 - {'error': {'message': '当前分组 企业用户 下对于模型 openai/gpt-4o-mini 计费模式 [按量计费] 无可用渠道 (request id: 2026032700335"
+  },
+  {
+    "model": "openai/gpt-4o-mini",
+    "endpoint": "cstcloud",
+    "success": false,
+    "latency_ms": 475,
+    "response": "",
+    "error": "Error code: 401 - {'code': 401, 'message': 'Unauthorized'}"
+  },
+  {
+    "model": "openai/gpt-4.1-mini",
+    "endpoint": "shubiaobiao",
+    "success": false,
+    "latency_ms": 248,
+    "response": "",
+    "error": "Error code: 503 - {'error': {'message': '当前分组 企业用户 下对于模型 openai/gpt-4.1-mini 计费模式 [按量计费] 无可用渠道 (request id: 202603270033"
+  },
+  {
+    "model": "openai/gpt-4.1-mini",
+    "endpoint": "cstcloud",
+    "success": false,
+    "latency_ms": 282,
+    "response": "",
+    "error": "Error code: 401 - {'code': 401, 'message': 'Unauthorized'}"
+  },
+  {
+    "model": "deepseek-v3:671b-gw",
+    "endpoint": "cstcloud",
+    "success": false,
+    "latency_ms": 315,
+    "response": "",
+    "error": "Error code: 401 - {'code': 401, 'message': 'Unauthorized'}"
+  },
+  {
+    "model": "anthropic/claude-3.5-sonnet",
+    "endpoint": "N/A",
+    "success": false,
+    "latency_ms": 0,
+    "response": "",
+    "error": "No API key for required endpoint"
+  },
+  {
+    "model": "anthropic/claude-3-haiku",
+    "endpoint": "N/A",
+    "success": false,
+    "latency_ms": 0,
+    "response": "",
+    "error": "No API key for required endpoint"
+  },
+  {
+    "model": "meta-llama/llama-3.3-70b-instruct",
+    "endpoint": "N/A",
+    "success": false,
+    "latency_ms": 0,
+    "response": "",
+    "error": "No API key for required endpoint"
+  },
+  {
+    "model": "mistralai/mistral-large-2411",
+    "endpoint": "N/A",
+    "success": false,
+    "latency_ms": 0,
+    "response": "",
+    "error": "No API key for required endpoint"
+  },
+  {
+    "model": "google/gemini-2.0-flash-exp:free",
+    "endpoint": "N/A",
+    "success": false,
+    "latency_ms": 0,
+    "response": "",
+    "error": "No API key for required endpoint"
+  },
+  {
+    "model": "google/gemini-2.0-flash-lite-001",
+    "endpoint": "N/A",
+    "success": false,
+    "latency_ms": 0,
+    "response": "",
+    "error": "No API key for required endpoint"
+  },
+  {
+    "model": "google/gemini-pro-1.5",
+    "endpoint": "N/A",
+    "success": false,
+    "latency_ms": 0,
+    "response": "",
+    "error": "No API key for required endpoint"
+  },
+  {
+    "model": "x-ai/grok-2-1212",
+    "endpoint": "N/A",
+    "success": false,
+    "latency_ms": 0,
+    "response": "",
+    "error": "No API key for required endpoint"
+  },
+  {
+    "model": "amazon/nova-pro-v1",
+    "endpoint": "N/A",
+    "success": false,
+    "latency_ms": 0,
+    "response": "",
+    "error": "No API key for required endpoint"
+  }
+]

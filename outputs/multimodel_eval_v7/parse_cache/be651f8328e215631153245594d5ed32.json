@@ -1,0 +1,130 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "蛋白偶联受体",
+        "relation": "influences",
+        "tail": "受体灵活性",
+        "claim": "GPCR构象动力学影响受体灵活性"
+      },
+      {
+        "step": 2,
+        "head": "膜脂质",
+        "relation": "stabilizes",
+        "tail": "蛋白偶联受体构象",
+        "claim": "特定脂质组成稳定GPCR构象"
+      },
+      {
+        "step": 3,
+        "head": "蛋白偶联受体构象",
+        "relation": "affects",
+        "tail": "变构药物结合位点",
+        "claim": "GPCR构象变化影响变构位点可及性"
+      },
+      {
+        "step": 4,
+        "head": "变构药物结合位点",
+        "relation": "enhances",
+        "tail": "药物靶向策略",
+        "claim": "变构位点暴露提升药物靶向效果"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "X射线晶体学",
+        "relation": "provides",
+        "tail": "GPCR静态结构",
+        "claim": "结构生物学技术提供GPCR静态结构信息"
+      },
+      {
+        "step": 2,
+        "head": "分子动力学模拟",
+        "relation": "reveals",
+        "tail": "脂质-GPCR相互作用",
+        "claim": "计算方法揭示脂质与GPCR的动态相互作用"
+      },
+      {
+        "step": 3,
+        "head": "脂质-GPCR相互作用",
+        "relation": "modulates",
+        "tail": "信号传导",
+        "claim": "脂质相互作用调节GPCR信号转导"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "分子动力学模拟",
+        "relation": "predicts",
+        "tail": "脂质环境影响",
+        "claim": "模拟预测脂质环境对GPCR的影响"
+      },
+      {
+        "step": 2,
+        "head": "实验验证",
+        "relation": "confirms",
+        "tail": "变构位点暴露",
+        "claim": "实验验证确认变构位点暴露预测"
+      },
+      {
+        "step": 3,
+        "head": "脂质环境优化",
+        "relation": "maximizes",
+        "tail": "变构调节剂疗效",
+        "claim": "优化脂质环境提升变构调节剂疗效"
+      }
+    ]
+  ],
+  "L3": [
+    [
+      {
+        "step": 1,
+        "head": "X射线晶体学",
+        "relation": "identifies",
+        "tail": "关键氨基酸残基",
+        "claim": "结构数据识别脂质结合关键残基"
+      },
+      {
+        "step": 2,
+        "head": "分子动力学模拟",
+        "relation": "simulates",
+        "tail": "残基突变效应",
+        "claim": "模拟预测残基突变对信号的影响"
+      },
+      {
+        "step": 3,
+        "head": "功能实验",
+        "relation": "validates",
+        "tail": "受体激活机制",
+        "claim": "功能验证确认残基对激活的作用"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "分子动力学模拟",
+        "relation": "generates",
+        "tail": "模拟数据集",
+        "claim": "模拟生成脂质环境数据集"
+      },
+      {
+        "step": 2,
+        "head": "机器学习",
+        "relation": "predicts",
+        "tail": "有效脂质环境",
+        "claim": "算法预测最佳脂质组合"
+      },
+      {
+        "step": 3,
+        "head": "实验测试",
+        "relation": "validates",
+        "tail": "药物发现效率",
+        "claim": "实验验证加速药物开发流程"
+      }
+    ]
+  ]
+}

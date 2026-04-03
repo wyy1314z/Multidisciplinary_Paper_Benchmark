@@ -1,0 +1,88 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "Metamaterial-Enhanced Nonlinear Terahertz Imaging System",
+        "relation": "enables",
+        "tail": "Super-Resolution Imaging",
+        "claim": "集成超材料与非线性晶体可突破传统成像极限"
+      },
+      {
+        "step": 2,
+        "head": "Super-Resolution Imaging",
+        "relation": "achieves",
+        "tail": "Resolution Improvements (3-5×)",
+        "claim": "超分辨率成像可实现3-5倍分辨率提升"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "Metamaterial Lens with Subwavelength Unit Cells",
+        "relation": "enables",
+        "tail": "Terahertz Beam Pre-Compression",
+        "claim": "亚波长单元超材料透镜可预压缩太赫兹光束"
+      },
+      {
+        "step": 2,
+        "head": "Terahertz Beam Pre-Compression",
+        "relation": "induces",
+        "tail": "Controlled Phase Delays",
+        "claim": "光束预压缩过程引入可控相位延迟"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "Nonlinear Crystal Stage (DSTMS/Organic Crystals)",
+        "relation": "performs",
+        "tail": "Frequency Upconversion",
+        "claim": "非线性晶体阶段实现频率上转换"
+      },
+      {
+        "step": 2,
+        "head": "Frequency Upconversion",
+        "relation": "reduces",
+        "tail": "Operational Wavelength",
+        "claim": "频率上转换有效降低工作波长"
+      }
+    ]
+  ],
+  "L3": [
+    [
+      {
+        "step": 1,
+        "head": "Negative Refractive Index Properties",
+        "relation": "compensates",
+        "tail": "Chromatic Aberrations",
+        "claim": "负折射率特性补偿太赫兹光谱色差"
+      },
+      {
+        "step": 2,
+        "head": "Chromatic Aberrations Compensation",
+        "relation": "eliminates",
+        "tail": "Chromatic Aberration Limit",
+        "claim": "色差补偿消除色差限制"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "Reduced Operational Wavelength",
+        "relation": "shrinks",
+        "tail": "Diffraction-Limited Spot Size",
+        "claim": "工作波长降低缩小衍射极限斑点"
+      },
+      {
+        "step": 2,
+        "head": "Diffraction-Limited Spot Size Reduction",
+        "relation": "achieves",
+        "tail": "Super-Resolution Beyond Diffraction Limit",
+        "claim": "斑点尺寸缩小实现超越衍射极限的分辨率"
+      }
+    ]
+  ]
+}

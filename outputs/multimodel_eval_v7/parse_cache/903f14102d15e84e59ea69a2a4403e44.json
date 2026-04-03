@@ -1,0 +1,109 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "Designing QMOF materials",
+        "relation": "enables",
+        "tail": "enhanced catalytic activity",
+        "claim": "材料设计增强类过氧化物酶活性"
+      },
+      {
+        "step": 2,
+        "head": "enhanced catalytic activity",
+        "relation": "causes",
+        "tail": "H2O2 decomposition",
+        "claim": "催化活性增强导致过氧化氢分解"
+      },
+      {
+        "step": 3,
+        "head": "H2O2 decomposition",
+        "relation": "produces",
+        "tail": "hydroxyl radicals",
+        "claim": "分解反应产生高活性羟基自由基"
+      },
+      {
+        "step": 4,
+        "head": "hydroxyl radicals",
+        "relation": "damages",
+        "tail": "tumor cells",
+        "claim": "自由基通过氧化应激损伤肿瘤细胞"
+      },
+      {
+        "step": 5,
+        "head": "tumor cells damage",
+        "relation": "improves",
+        "tail": "tumor treatment efficacy",
+        "claim": "细胞损伤提高肿瘤治疗效果"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "dual-effect mechanism",
+        "relation": "validates",
+        "tail": "hypothesis testing",
+        "claim": "双重机制验证假设有效性"
+      },
+      {
+        "step": 2,
+        "head": "hypothesis testing",
+        "relation": "requires",
+        "tail": "in vitro/vivo experiments",
+        "claim": "体外/体内实验验证假设"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "hierarchical pore structure",
+        "relation": "enhances",
+        "tail": "catalytic activity",
+        "claim": "分层孔结构提升催化效率"
+      },
+      {
+        "step": 2,
+        "head": "high-valence metal ions",
+        "relation": "optimizes",
+        "tail": "electron transfer",
+        "claim": "高氧化态金属离子优化电子传递"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "surface functional groups",
+        "relation": "modifies",
+        "tail": "targeting ability",
+        "claim": "表面基团修饰增强靶向性"
+      },
+      {
+        "step": 2,
+        "head": "targeting ability",
+        "relation": "reduces",
+        "tail": "off-target effects",
+        "claim": "靶向性降低脱靶效应"
+      }
+    ]
+  ],
+  "L3": [
+    [
+      {
+        "step": 1,
+        "head": "metal-ligand coordination",
+        "relation": "determines",
+        "tail": "active site geometry",
+        "claim": "金属-配体配位决定活性位点构型"
+      },
+      {
+        "step": 2,
+        "head": "active site geometry",
+        "relation": "controls",
+        "tail": "substrate specificity",
+        "claim": "活性位点构型控制底物特异性"
+      }
+    ]
+  ]
+}

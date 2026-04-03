@@ -1,0 +1,172 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "介电梯度超材料",
+        "relation": "enables",
+        "tail": "连续折射率分布",
+        "claim": "介电梯度超材料提供连续折射率分布"
+      },
+      {
+        "step": 2,
+        "head": "超表面亚波长纳米散射体",
+        "relation": "enables",
+        "tail": "离散相位调控",
+        "claim": "超表面结构实现离散相位调控"
+      },
+      {
+        "step": 3,
+        "head": "连续折射率分布",
+        "relation": "synergizes with",
+        "tail": "离散相位调控",
+        "claim": "两种调控机制形成协同作用"
+      },
+      {
+        "step": 4,
+        "head": "协同作用",
+        "relation": "causes",
+        "tail": "宽带消色差和高阶球差校正",
+        "claim": "协同作用导致宽带消色差和校正高阶球差"
+      },
+      {
+        "step": 5,
+        "head": "宽带消色差和高阶球差校正",
+        "relation": "enables",
+        "tail": "宽谱段超分辨成像",
+        "claim": "克服约束实现宽谱段超分辨成像"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "介电超材料结构参数",
+        "relation": "adjusts",
+        "tail": "有效折射率",
+        "claim": "结构参数调整有效折射率"
+      },
+      {
+        "step": 2,
+        "head": "有效折射率",
+        "relation": "enables",
+        "tail": "多波长相位同步校正",
+        "claim": "有效折射率支持多波长相位校正"
+      },
+      {
+        "step": 3,
+        "head": "三维非对称折射率梯度",
+        "relation": "causes",
+        "tail": "等光程差",
+        "claim": "非对称梯度导致等光程差"
+      },
+      {
+        "step": 4,
+        "head": "等光程差",
+        "relation": "enables",
+        "tail": "宽频段共焦特性",
+        "claim": "等光程差实现宽频段共焦"
+      },
+      {
+        "step": 5,
+        "head": "宽频段共焦特性",
+        "relation": "enables",
+        "tail": "消色差超分辨",
+        "claim": "共焦特性实现消色差超分辨"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "3D打印层间对准误差",
+        "relation": "transforms into",
+        "tail": "相位调制噪声谱",
+        "claim": "制造误差转换为相位噪声谱"
+      },
+      {
+        "step": 2,
+        "head": "相位调制噪声谱",
+        "relation": "requires",
+        "tail": "空间频率域滤波设计",
+        "claim": "噪声谱需要频域滤波设计"
+      },
+      {
+        "step": 3,
+        "head": "抗误差元结构设计",
+        "relation": "enables",
+        "tail": "聚焦效率保持＞85%",
+        "claim": "抗误差设计维持高聚焦效率"
+      }
+    ]
+  ],
+  "L3": [
+    [
+      {
+        "step": 1,
+        "head": "梯度折射率层",
+        "relation": "provides",
+        "tail": "基础聚焦",
+        "claim": "梯度层提供基础聚焦"
+      },
+      {
+        "step": 2,
+        "head": "同心纳米环结构",
+        "relation": "enables",
+        "tail": "倏逝波调控",
+        "claim": "超表面调控倏逝波"
+      },
+      {
+        "step": 3,
+        "head": "梯度层和超表面",
+        "relation": "combines to create",
+        "tail": "级联相位调制",
+        "claim": "双层结构形成级联调制"
+      },
+      {
+        "step": 4,
+        "head": "级联相位调制",
+        "relation": "causes",
+        "tail": "超振荡场形成",
+        "claim": "级联机制生成超振荡场"
+      },
+      {
+        "step": 5,
+        "head": "超振荡场",
+        "relation": "enables",
+        "tail": "突破阿贝极限",
+        "claim": "超振荡场突破衍射极限"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "高纵横比纳米柱",
+        "relation": "enhances",
+        "tail": "数值孔径",
+        "claim": "纳米柱提升数值孔径"
+      },
+      {
+        "step": 2,
+        "head": "离轴像差",
+        "relation": "limits",
+        "tail": "视场角扩展",
+        "claim": "像差限制视场角"
+      },
+      {
+        "step": 3,
+        "head": "同心环几何相位",
+        "relation": "compensates",
+        "tail": "离轴光程差",
+        "claim": "几何相位抵消离轴误差"
+      },
+      {
+        "step": 4,
+        "head": "非对称结构补偿",
+        "relation": "enables",
+        "tail": "视场角扩展至95°",
+        "claim": "补偿设计扩展视场角"
+      }
+    ]
+  ]
+}

@@ -1,0 +1,151 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "dielectric gradient metamaterials",
+        "relation": "enables",
+        "tail": "phase distribution engineering integration",
+        "claim": "材料科学与物理学的整合使得THz系统突破光学限制成为可能"
+      },
+      {
+        "step": 2,
+        "head": "phase distribution engineering integration",
+        "relation": "transforms",
+        "tail": "spatially varying refractive index profiles",
+        "claim": "跨学科整合转化为可变折射率分布设计"
+      },
+      {
+        "step": 3,
+        "head": "spatially varying refractive index profiles",
+        "relation": "compensates",
+        "tail": "wavelength-dependent phase errors",
+        "claim": "折射率分布梯度补偿波长依赖性相位误差"
+      },
+      {
+        "step": 4,
+        "head": "wavelength-dependent phase errors compensation",
+        "relation": "overcomes",
+        "tail": "chromatic/spherical aberration and diffraction limit",
+        "claim": "相位误差补偿机制突破传统光学限制"
+      },
+      {
+        "step": 5,
+        "head": "aberration and diffraction limit overcoming",
+        "relation": "enables",
+        "tail": "achromatic super-resolution imaging",
+        "claim": "光学限制突破实现太赫兹波段消色差超分辨成像"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "dielectric gradient metamaterials",
+        "relation": "maps",
+        "tail": "broadband phase distribution",
+        "claim": "材料科学实现宽带相位分布映射"
+      },
+      {
+        "step": 2,
+        "head": "broadband phase distribution mapping",
+        "relation": "cancels",
+        "tail": "dispersion effects",
+        "claim": "相位映射消除色散效应"
+      },
+      {
+        "step": 3,
+        "head": "dispersion effects cancellation",
+        "relation": "achieves",
+        "tail": "achromatic super-resolution",
+        "claim": "色散消除实现消色差超分辨成像"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "3D printing",
+        "relation": "enables",
+        "tail": "high-aspect-ratio nano-pillars fabrication",
+        "claim": "增材制造技术实现高精度纳米结构加工"
+      },
+      {
+        "step": 2,
+        "head": "nano-pillars fabrication",
+        "relation": "translates",
+        "tail": "phase profiles design",
+        "claim": "纳米结构制造将设计相位分布实体化"
+      },
+      {
+        "step": 3,
+        "head": "phase profiles translation",
+        "relation": "achieves",
+        "tail": "physical structures implementation",
+        "claim": "相位分布转化实现物理结构精确复现"
+      }
+    ]
+  ],
+  "L3": [
+    [
+      {
+        "step": 1,
+        "head": "concentric nanoring structures",
+        "relation": "co-optimizes",
+        "tail": "off-axis aberration correction",
+        "claim": "同心环结构与像差校正协同优化设计"
+      },
+      {
+        "step": 2,
+        "head": "co-optimization",
+        "relation": "creates",
+        "tail": "non-periodic phase discontinuities",
+        "claim": "协同优化产生非周期相位突变"
+      },
+      {
+        "step": 3,
+        "head": "phase discontinuities",
+        "relation": "suppresses",
+        "tail": "higher-order diffraction",
+        "claim": "相位突变抑制高阶衍射效应"
+      },
+      {
+        "step": 4,
+        "head": "diffraction suppression",
+        "relation": "achieves",
+        "tail": "Abbe limit breaking and FOV maintenance",
+        "claim": "衍射抑制同时突破衍射极限并保持视场角"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "high-aspect-ratio nanopillars",
+        "relation": "hybridizes",
+        "tail": "doublet metalens configurations",
+        "claim": "纳米柱与双金属镜结构混合设计"
+      },
+      {
+        "step": 2,
+        "head": "metalens hybridization",
+        "relation": "enhances",
+        "tail": "numerical aperture",
+        "claim": "结构混合增强数值孔径"
+      },
+      {
+        "step": 3,
+        "head": "numerical aperture enhancement",
+        "relation": "constructive",
+        "tail": "Mie resonances interference",
+        "claim": "米氏共振干涉提升数值孔径至0.555"
+      },
+      {
+        "step": 4,
+        "head": "complementary phase compensation",
+        "relation": "suppresses",
+        "tail": "spherical aberration",
+        "claim": "层间相位补偿抑制球差效应"
+      }
+    ]
+  ]
+}

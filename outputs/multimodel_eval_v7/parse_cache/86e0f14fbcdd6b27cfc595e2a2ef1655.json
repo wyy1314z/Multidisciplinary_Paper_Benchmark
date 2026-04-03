@@ -1,0 +1,170 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "controlled deligandation strategy",
+        "relation": "enhances",
+        "tail": "enzymatic activity",
+        "claim": "Controlled deligandation enhances enzymatic activity"
+      },
+      {
+        "step": 2,
+        "head": "enzymatic activity",
+        "relation": "creates",
+        "tail": "responsive sites",
+        "claim": "Enhanced enzymatic activity creates responsive sites"
+      },
+      {
+        "step": 3,
+        "head": "responsive sites",
+        "relation": "interact_with",
+        "tail": "tumor biomarkers",
+        "claim": "Responsive sites interact with tumor biomarkers"
+      },
+      {
+        "step": 4,
+        "head": "tumor biomarkers",
+        "relation": "trigger",
+        "tail": "structural transformations",
+        "claim": "Biomarker binding triggers structural changes"
+      },
+      {
+        "step": 5,
+        "head": "structural transformations",
+        "relation": "modulate",
+        "tail": "therapeutic-diagnostic output",
+        "claim": "Structural changes modulate therapeutic and diagnostic outputs"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "controlled deligandation strategy",
+        "relation": "creates",
+        "tail": "hierarchical defect sites",
+        "claim": "Deligandation creates hierarchical defect sites"
+      },
+      {
+        "step": 2,
+        "head": "hierarchical defect sites",
+        "relation": "expose",
+        "tail": "iron centers",
+        "claim": "Defect sites expose iron centers with distinct coordination"
+      },
+      {
+        "step": 3,
+        "head": "iron centers",
+        "relation": "favor",
+        "tail": "enzymatic pathways",
+        "claim": "Different coordination environments favor distinct enzymatic pathways"
+      },
+      {
+        "step": 4,
+        "head": "external stimuli",
+        "relation": "trigger",
+        "tail": "further deligandation",
+        "claim": "Environmental stimuli trigger additional structural changes"
+      },
+      {
+        "step": 5,
+        "head": "deligandation kinetics",
+        "relation": "modulate",
+        "tail": "sequential enzymatic activities",
+        "claim": "Kinetics modulation enables programmable enzymatic behavior"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "porous nanomaterials",
+        "relation": "control",
+        "tail": "iron release kinetics",
+        "claim": "Porous structure controls iron release kinetics"
+      },
+      {
+        "step": 2,
+        "head": "iron release kinetics",
+        "relation": "induce",
+        "tail": "ferroptosis",
+        "claim": "Initial iron burst induces ferroptosis in cancer cells"
+      },
+      {
+        "step": 3,
+        "head": "ferroptosis",
+        "relation": "triggers",
+        "tail": "DAMPs release",
+        "claim": "Ferroptosis triggers DAMPs release from dying cells"
+      },
+      {
+        "step": 4,
+        "head": "sustained iron release",
+        "relation": "enhances",
+        "tail": "dendritic cell function",
+        "claim": "Sustained iron enhances dendritic cell antigen processing"
+      },
+      {
+        "step": 5,
+        "head": "enhanced antigen processing",
+        "relation": "activates",
+        "tail": "T-cells",
+        "claim": "Improved antigen presentation activates T-cells"
+      }
+    ]
+  ],
+  "L3": [
+    [
+      {
+        "step": 1,
+        "head": "quasi-MOFs",
+        "relation": "exhibit",
+        "tail": "structural breathing",
+        "claim": "Quasi-MOFs undergo redox-responsive structural breathing"
+      },
+      {
+        "step": 2,
+        "head": "structural breathing",
+        "relation": "switches",
+        "tail": "pro-oxidant/antioxidant states",
+        "claim": "Breathing mechanism enables state switching"
+      },
+      {
+        "step": 3,
+        "head": "contracted state",
+        "relation": "minimizes",
+        "tail": "toxicity",
+        "claim": "Contracted state minimizes toxicity in normal tissue"
+      },
+      {
+        "step": 4,
+        "head": "expanded state",
+        "relation": "exposes",
+        "tail": "iron sites",
+        "claim": "Expanded state exposes iron for Fenton chemistry"
+      },
+      {
+        "step": 5,
+        "head": "structural changes",
+        "relation": "create",
+        "tail": "glutathione pathways",
+        "claim": "Structural changes create glutathione infiltration channels"
+      },
+      {
+        "step": 6,
+        "head": "iron release",
+        "relation": "generates",
+        "tail": "lipid peroxidation products",
+        "claim": "Iron release generates immunogenic lipid peroxidation"
+      },
+      {
+        "step": 7,
+        "head": "lipid peroxidation products",
+        "relation": "activate",
+        "tail": "dendritic cells",
+        "claim": "Lipid products activate dendritic cells for immune response"
+      }
+    ]
+  ]
+}

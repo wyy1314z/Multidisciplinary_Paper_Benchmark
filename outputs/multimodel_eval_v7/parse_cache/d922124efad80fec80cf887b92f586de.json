@@ -1,0 +1,172 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "Quasi-metal-organic frameworks",
+        "relation": "transforms",
+        "tail": "gradient transition state",
+        "claim": "准金属有机框架通过控制脱配体策略转化为梯度过渡态"
+      },
+      {
+        "step": 2,
+        "head": "gradient transition state",
+        "relation": "enables",
+        "tail": "hierarchical active sites",
+        "claim": "梯度过渡态生成分层活性位点以优化催化和靶向"
+      },
+      {
+        "step": 3,
+        "head": "exposed iron nodes",
+        "relation": "causes",
+        "tail": "Fenton reactions",
+        "claim": "暴露的铁节点促进芬顿反应"
+      },
+      {
+        "step": 4,
+        "head": "retained porous structure",
+        "relation": "enables",
+        "tail": "tumor microenvironment accumulation",
+        "claim": "保留的多孔结构实现肿瘤微环境选择性积累"
+      },
+      {
+        "step": 5,
+        "head": "glutathione depletion",
+        "relation": "contributes to",
+        "tail": "synergistic mechanism",
+        "claim": "谷胱甘肽消耗与芬顿反应协同增强铁死亡和免疫原性细胞死亡"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "controlled deligandation strategy",
+        "relation": "creates",
+        "tail": "iron node gradient",
+        "claim": "控制脱配体策略创建铁节点与配体浓度梯度"
+      },
+      {
+        "step": 2,
+        "head": "iron node gradient",
+        "relation": "enables",
+        "tail": "catalytic microenvironments",
+        "claim": "浓度梯度形成多个催化微环境"
+      },
+      {
+        "step": 3,
+        "head": "catalytic microenvironments",
+        "relation": "facilitates",
+        "tail": "substrate channeling",
+        "claim": "微环境通过底物通道效应实现空间选择性催化"
+      },
+      {
+        "step": 4,
+        "head": "substrate channeling",
+        "relation": "maximizes",
+        "tail": "reactive oxygen species control",
+        "claim": "底物通道效应最大化活性氧空间控制"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "hierarchical porous structure",
+        "relation": "creates",
+        "tail": "molecular sieve",
+        "claim": "分层多孔结构形成尺寸选择性分子筛"
+      },
+      {
+        "step": 2,
+        "head": "molecular sieve",
+        "relation": "induces",
+        "tail": "iron overload",
+        "claim": "分子筛选择积累铁离子并排除抗氧化剂"
+      },
+      {
+        "step": 3,
+        "head": "iron overload",
+        "relation": "overwhelms",
+        "tail": "glutathione peroxidase 4",
+        "claim": "铁超载超过GPX4抗氧化能力"
+      },
+      {
+        "step": 4,
+        "head": "catalase-mimic activity",
+        "relation": "generates",
+        "tail": "hydrogen peroxide",
+        "claim": "过氧化氢酶活性生成局部过氧化氢"
+      },
+      {
+        "step": 5,
+        "head": "hydrogen peroxide",
+        "relation": "amplifies",
+        "tail": "ferroptosis",
+        "claim": "过氧化氢与铁超载形成正反馈增强铁死亡"
+      }
+    ]
+  ],
+  "L3": [
+    [
+      {
+        "step": 1,
+        "head": "controlled deligandation",
+        "relation": "exposes",
+        "tail": "iron nodes",
+        "claim": "脱配体过程暴露铁活性位点"
+      },
+      {
+        "step": 2,
+        "head": "retained coordination framework",
+        "relation": "preserves",
+        "tail": "molecular shuttles",
+        "claim": "保留的框架提供有机配体分子穿梭"
+      },
+      {
+        "step": 3,
+        "head": "molecular shuttles",
+        "relation": "facilitates",
+        "tail": "electron transfer",
+        "claim": "分子穿梭促进铁中心与过氧化氢的电子传递"
+      },
+      {
+        "step": 4,
+        "head": "electron transfer",
+        "relation": "maintains",
+        "tail": "self-regulating ROS",
+        "claim": "电子传递与铁螯合共同维持自调节ROS水平"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "programmable porous architecture",
+        "relation": "enables",
+        "tail": "sequential release",
+        "claim": "可编程多孔结构允许顺序释放动力学"
+      },
+      {
+        "step": 2,
+        "head": "glutathione depletion",
+        "relation": "triggers",
+        "tail": "structural changes",
+        "claim": "谷胱甘肽消耗触发框架构象变化"
+      },
+      {
+        "step": 3,
+        "head": "structural changes",
+        "relation": "exposes",
+        "tail": "additional catalytic sites",
+        "claim": "结构变化暴露更多催化位点增强过氧化物酶活性"
+      },
+      {
+        "step": 4,
+        "head": "damage-associated molecular patterns",
+        "relation": "establishes",
+        "tail": "chemotactic gradients",
+        "claim": "损伤相关分子模式促进树突状细胞成熟和T细胞浸润"
+      }
+    ]
+  ]
+}

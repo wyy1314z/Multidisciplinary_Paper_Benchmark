@@ -1,0 +1,122 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "controlled deligandation strategy",
+        "relation": "creates",
+        "tail": "unique electronic structure",
+        "claim": "控制去配体策略形成独特电子结构"
+      },
+      {
+        "step": 2,
+        "head": "unique electronic structure",
+        "relation": "synergistically enhances",
+        "tail": "peroxidase/catalase activities",
+        "claim": "电子结构协同增强过氧化物酶/过氧化氢酶活性"
+      },
+      {
+        "step": 3,
+        "head": "peroxidase/catalase activities",
+        "relation": "enables",
+        "tail": "multimodal tumor therapy",
+        "claim": "酶活性使多模式肿瘤治疗成为可能"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "transition state",
+        "relation": "optimizes",
+        "tail": "reactive oxygen species generation",
+        "claim": "过渡态优化活性氧生成"
+      },
+      {
+        "step": 2,
+        "head": "transition state",
+        "relation": "maintains",
+        "tail": "structural stability",
+        "claim": "过渡态维持生物应用结构稳定性"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "iron-based center",
+        "relation": "activates",
+        "tail": "antitumor immune responses",
+        "claim": "铁中心激活抗肿瘤免疫反应"
+      },
+      {
+        "step": 2,
+        "head": "antitumor immune responses",
+        "relation": "induces",
+        "tail": "dendritic cell maturation",
+        "claim": "免疫反应通过树突状细胞成熟实现"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "partial ligand removal",
+        "relation": "creates",
+        "tail": "unsaturated metal sites",
+        "claim": "部分配体移除产生不饱和金属位点"
+      },
+      {
+        "step": 2,
+        "head": "unsaturated metal sites",
+        "relation": "modulates",
+        "tail": "electron transfer pathways",
+        "claim": "金属位点调节电子转移路径"
+      },
+      {
+        "step": 3,
+        "head": "electron transfer pathways",
+        "relation": "lowers",
+        "tail": "activation energy",
+        "claim": "电子路径降低反应活化能"
+      },
+      {
+        "step": 4,
+        "head": "activation energy",
+        "relation": "exposes",
+        "tail": "active iron centers",
+        "claim": "低活化能使铁活性中心暴露"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "hierarchical porous structure",
+        "relation": "facilitates",
+        "tail": "intracellular accumulation",
+        "claim": "分级孔结构促进铁离子胞内积累"
+      },
+      {
+        "step": 2,
+        "head": "intracellular accumulation",
+        "relation": "disrupts",
+        "tail": "redox homeostasis",
+        "claim": "铁积累通过芬顿反应破坏氧化还原平衡"
+      },
+      {
+        "step": 3,
+        "head": "redox homeostasis disruption",
+        "relation": "depletes",
+        "tail": "glutathione reserves",
+        "claim": "氧化还原失衡耗竭谷胱甘肽储备"
+      },
+      {
+        "step": 4,
+        "head": "glutathione depletion",
+        "relation": "amplifies",
+        "tail": "lipid peroxidation",
+        "claim": "谷胱甘肽耗竭放大脂质过氧化"
+      }
+    ]
+  ],
+  "L3": []
+}

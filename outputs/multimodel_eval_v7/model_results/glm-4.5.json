@@ -1,0 +1,242 @@
+[
+  {
+    "paper_id": "a6f866ca73d0",
+    "title": "Self-driving lab for the photochemical synthesis of plasmonic nanoparticles with targeted structural and optical properties",
+    "model": "glm-4.5",
+    "method_name": "P1",
+    "free_text_hypotheses": [
+      "[ERROR] LLM 调用失败: Error code: 403 - {'error': {'message': '用户额度不足, 剩余额度: ＄-2.266460  (request id: 2026032702303613126467466416240)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}"
+    ],
+    "structured_paths": {},
+    "elapsed_seconds": 37.67,
+    "error": "LLM 调用失败: Error code: 403 - {'error': {'message': '用户额度不足, 剩余额度: ＄-2.266460  (request id: 2026032702303613126467466416240)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}"
+  },
+  {
+    "paper_id": "a6f866ca73d0",
+    "title": "Self-driving lab for the photochemical synthesis of plasmonic nanoparticles with targeted structural and optical properties",
+    "model": "glm-4.5",
+    "method_name": "P2",
+    "free_text_hypotheses": [
+      "[ERROR] LLM 调用失败: Error code: 403 - {'error': {'message': '用户额度不足, 剩余额度: ＄-2.266460  (request id: 2026032702311245749214473679346)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}"
+    ],
+    "structured_paths": {},
+    "elapsed_seconds": 36.32,
+    "error": "LLM 调用失败: Error code: 403 - {'error': {'message': '用户额度不足, 剩余额度: ＄-2.266460  (request id: 2026032702311245749214473679346)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}"
+  },
+  {
+    "paper_id": "a6f866ca73d0",
+    "title": "Self-driving lab for the photochemical synthesis of plasmonic nanoparticles with targeted structural and optical properties",
+    "model": "glm-4.5",
+    "method_name": "P3",
+    "free_text_hypotheses": [
+      "[ERROR] LLM 调用失败: Error code: 403 - {'error': {'message': '用户额度不足, 剩余额度: ＄-2.266460  (request id: 2026032702314897753173697458008)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}"
+    ],
+    "structured_paths": {},
+    "elapsed_seconds": 36.52,
+    "error": "LLM 调用失败: Error code: 403 - {'error': {'message': '用户额度不足, 剩余额度: ＄-2.266460  (request id: 2026032702314897753173697458008)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}"
+  },
+  {
+    "paper_id": "a6f866ca73d0",
+    "title": "Self-driving lab for the photochemical synthesis of plasmonic nanoparticles with targeted structural and optical properties",
+    "model": "glm-4.5",
+    "method_name": "P4",
+    "free_text_hypotheses": [
+      "[ERROR] LLM 调用失败: Error code: 403 - {'error': {'message': '用户额度不足, 剩余额度: ＄-2.266460  (request id: 2026032702322539934303043860918)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}"
+    ],
+    "structured_paths": {},
+    "elapsed_seconds": 36.42,
+    "error": "LLM 调用失败: Error code: 403 - {'error': {'message': '用户额度不足, 剩余额度: ＄-2.266460  (request id: 2026032702322539934303043860918)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}"
+  },
+  {
+    "paper_id": "0aafd9a38c81",
+    "title": "Large scale investigation of GPCR molecular dynamics data uncovers allosteric sites and lateral gateways",
+    "model": "glm-4.5",
+    "method_name": "P1",
+    "free_text_hypotheses": [
+      "[ERROR] LLM 调用失败: Error code: 403 - {'error': {'message': '用户额度不足, 剩余额度: ＄-2.266460  (request id: 2026032702330185611965276718603)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}"
+    ],
+    "structured_paths": {},
+    "elapsed_seconds": 36.47,
+    "error": "LLM 调用失败: Error code: 403 - {'error': {'message': '用户额度不足, 剩余额度: ＄-2.266460  (request id: 2026032702330185611965276718603)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}"
+  },
+  {
+    "paper_id": "0aafd9a38c81",
+    "title": "Large scale investigation of GPCR molecular dynamics data uncovers allosteric sites and lateral gateways",
+    "model": "glm-4.5",
+    "method_name": "P2",
+    "free_text_hypotheses": [
+      "[ERROR] LLM 调用失败: Error code: 403 - {'error': {'message': '用户额度不足, 剩余额度: ＄-2.266460  (request id: 2026032702333838654550122492388)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}"
+    ],
+    "structured_paths": {},
+    "elapsed_seconds": 36.52,
+    "error": "LLM 调用失败: Error code: 403 - {'error': {'message': '用户额度不足, 剩余额度: ＄-2.266460  (request id: 2026032702333838654550122492388)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}"
+  },
+  {
+    "paper_id": "0aafd9a38c81",
+    "title": "Large scale investigation of GPCR molecular dynamics data uncovers allosteric sites and lateral gateways",
+    "model": "glm-4.5",
+    "method_name": "P3",
+    "free_text_hypotheses": [
+      "[ERROR] LLM 调用失败: Error code: 403 - {'error': {'message': '用户额度不足, 剩余额度: ＄-2.266460  (request id: 2026032702341471410306074798754)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}"
+    ],
+    "structured_paths": {},
+    "elapsed_seconds": 36.35,
+    "error": "LLM 调用失败: Error code: 403 - {'error': {'message': '用户额度不足, 剩余额度: ＄-2.266460  (request id: 2026032702341471410306074798754)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}"
+  },
+  {
+    "paper_id": "0aafd9a38c81",
+    "title": "Large scale investigation of GPCR molecular dynamics data uncovers allosteric sites and lateral gateways",
+    "model": "glm-4.5",
+    "method_name": "P4",
+    "free_text_hypotheses": [
+      "[ERROR] LLM 调用失败: Error code: 403 - {'error': {'message': '用户额度不足, 剩余额度: ＄-2.266460  (request id: 2026032702345132717433833550964)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}"
+    ],
+    "structured_paths": {},
+    "elapsed_seconds": 36.61,
+    "error": "LLM 调用失败: Error code: 403 - {'error': {'message': '用户额度不足, 剩余额度: ＄-2.266460  (request id: 2026032702345132717433833550964)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}"
+  },
+  {
+    "paper_id": "c7202044749e",
+    "title": "3D-printed aberration-free terahertz metalens for ultra-broadband achromatic super-resolution wide-angle imaging with high numerical aperture",
+    "model": "glm-4.5",
+    "method_name": "P1",
+    "free_text_hypotheses": [
+      "[ERROR] LLM 调用失败: Error code: 403 - {'error': {'message': '用户额度不足, 剩余额度: ＄-2.266460  (request id: 2026032702352754301383381109805)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}"
+    ],
+    "structured_paths": {},
+    "elapsed_seconds": 36.21,
+    "error": "LLM 调用失败: Error code: 403 - {'error': {'message': '用户额度不足, 剩余额度: ＄-2.266460  (request id: 2026032702352754301383381109805)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}"
+  },
+  {
+    "paper_id": "c7202044749e",
+    "title": "3D-printed aberration-free terahertz metalens for ultra-broadband achromatic super-resolution wide-angle imaging with high numerical aperture",
+    "model": "glm-4.5",
+    "method_name": "P2",
+    "free_text_hypotheses": [
+      "[ERROR] LLM 调用失败: Error code: 403 - {'error': {'message': '用户额度不足, 剩余额度: ＄-2.266460  (request id: 2026032702360392735728954669256)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}"
+    ],
+    "structured_paths": {},
+    "elapsed_seconds": 36.41,
+    "error": "LLM 调用失败: Error code: 403 - {'error': {'message': '用户额度不足, 剩余额度: ＄-2.266460  (request id: 2026032702360392735728954669256)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}"
+  },
+  {
+    "paper_id": "c7202044749e",
+    "title": "3D-printed aberration-free terahertz metalens for ultra-broadband achromatic super-resolution wide-angle imaging with high numerical aperture",
+    "model": "glm-4.5",
+    "method_name": "P3",
+    "free_text_hypotheses": [
+      "[ERROR] LLM 调用失败: Error code: 403 - {'error': {'message': '用户额度不足, 剩余额度: ＄-2.266460  (request id: 2026032702364033650790699920448)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}"
+    ],
+    "structured_paths": {},
+    "elapsed_seconds": 36.39,
+    "error": "LLM 调用失败: Error code: 403 - {'error': {'message': '用户额度不足, 剩余额度: ＄-2.266460  (request id: 2026032702364033650790699920448)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}"
+  },
+  {
+    "paper_id": "c7202044749e",
+    "title": "3D-printed aberration-free terahertz metalens for ultra-broadband achromatic super-resolution wide-angle imaging with high numerical aperture",
+    "model": "glm-4.5",
+    "method_name": "P4",
+    "free_text_hypotheses": [
+      "[ERROR] LLM 调用失败: Error code: 403 - {'error': {'message': '用户额度不足, 剩余额度: ＄-2.266460  (request id: 2026032702371690869400391737345)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}"
+    ],
+    "structured_paths": {},
+    "elapsed_seconds": 36.58,
+    "error": "LLM 调用失败: Error code: 403 - {'error': {'message': '用户额度不足, 剩余额度: ＄-2.266460  (request id: 2026032702371690869400391737345)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}"
+  },
+  {
+    "paper_id": "c5641167db43",
+    "title": "Tailoring industrial enzymes for thermostability and activity evolution by the machine learning-based iCASE strategy",
+    "model": "glm-4.5",
+    "method_name": "P1",
+    "free_text_hypotheses": [
+      "[ERROR] LLM 调用失败: Error code: 403 - {'error': {'message': '用户额度不足, 剩余额度: ＄-2.266460  (request id: 202603270237539010530415005746)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}"
+    ],
+    "structured_paths": {},
+    "elapsed_seconds": 36.15,
+    "error": "LLM 调用失败: Error code: 403 - {'error': {'message': '用户额度不足, 剩余额度: ＄-2.266460  (request id: 202603270237539010530415005746)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}"
+  },
+  {
+    "paper_id": "c5641167db43",
+    "title": "Tailoring industrial enzymes for thermostability and activity evolution by the machine learning-based iCASE strategy",
+    "model": "glm-4.5",
+    "method_name": "P2",
+    "free_text_hypotheses": [
+      "[ERROR] LLM 调用失败: Error code: 403 - {'error': {'message': '用户额度不足, 剩余额度: ＄-2.266460  (request id: 2026032702382910868916159319456)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}"
+    ],
+    "structured_paths": {},
+    "elapsed_seconds": 36.03,
+    "error": "LLM 调用失败: Error code: 403 - {'error': {'message': '用户额度不足, 剩余额度: ＄-2.266460  (request id: 2026032702382910868916159319456)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}"
+  },
+  {
+    "paper_id": "c5641167db43",
+    "title": "Tailoring industrial enzymes for thermostability and activity evolution by the machine learning-based iCASE strategy",
+    "model": "glm-4.5",
+    "method_name": "P3",
+    "free_text_hypotheses": [
+      "[ERROR] LLM 调用失败: Error code: 403 - {'error': {'message': '用户额度不足, 剩余额度: ＄-2.266460  (request id: 2026032702390524100357356571882)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}"
+    ],
+    "structured_paths": {},
+    "elapsed_seconds": 36.12,
+    "error": "LLM 调用失败: Error code: 403 - {'error': {'message': '用户额度不足, 剩余额度: ＄-2.266460  (request id: 2026032702390524100357356571882)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}"
+  },
+  {
+    "paper_id": "c5641167db43",
+    "title": "Tailoring industrial enzymes for thermostability and activity evolution by the machine learning-based iCASE strategy",
+    "model": "glm-4.5",
+    "method_name": "P4",
+    "free_text_hypotheses": [
+      "[ERROR] LLM 调用失败: Error code: 403 - {'error': {'message': '用户额度不足, 剩余额度: ＄-2.266460  (request id: 2026032702394157534407334567577)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}"
+    ],
+    "structured_paths": {},
+    "elapsed_seconds": 36.37,
+    "error": "LLM 调用失败: Error code: 403 - {'error': {'message': '用户额度不足, 剩余额度: ＄-2.266460  (request id: 2026032702394157534407334567577)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}"
+  },
+  {
+    "paper_id": "69cf875bdbf7",
+    "title": "Quasi Fe MIL-53 nanozyme inducing ferroptosis and immunogenic cell death for cancer immunotherapy",
+    "model": "glm-4.5",
+    "method_name": "P1",
+    "free_text_hypotheses": [
+      "[ERROR] LLM 调用失败: Error code: 403 - {'error': {'message': '用户额度不足, 剩余额度: ＄-2.266460  (request id: 2026032702401797220921042982792)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}"
+    ],
+    "structured_paths": {},
+    "elapsed_seconds": 36.39,
+    "error": "LLM 调用失败: Error code: 403 - {'error': {'message': '用户额度不足, 剩余额度: ＄-2.266460  (request id: 2026032702401797220921042982792)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}"
+  },
+  {
+    "paper_id": "69cf875bdbf7",
+    "title": "Quasi Fe MIL-53 nanozyme inducing ferroptosis and immunogenic cell death for cancer immunotherapy",
+    "model": "glm-4.5",
+    "method_name": "P2",
+    "free_text_hypotheses": [
+      "[ERROR] LLM 调用失败: Error code: 403 - {'error': {'message': '用户额度不足, 剩余额度: ＄-2.266460  (request id: 2026032702405432333982870293940)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}"
+    ],
+    "structured_paths": {},
+    "elapsed_seconds": 36.34,
+    "error": "LLM 调用失败: Error code: 403 - {'error': {'message': '用户额度不足, 剩余额度: ＄-2.266460  (request id: 2026032702405432333982870293940)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}"
+  },
+  {
+    "paper_id": "69cf875bdbf7",
+    "title": "Quasi Fe MIL-53 nanozyme inducing ferroptosis and immunogenic cell death for cancer immunotherapy",
+    "model": "glm-4.5",
+    "method_name": "P3",
+    "free_text_hypotheses": [
+      "[ERROR] LLM 调用失败: Error code: 403 - {'error': {'message': '用户额度不足, 剩余额度: ＄-2.266460  (request id: 2026032702413060944512704132554)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}"
+    ],
+    "structured_paths": {},
+    "elapsed_seconds": 36.29,
+    "error": "LLM 调用失败: Error code: 403 - {'error': {'message': '用户额度不足, 剩余额度: ＄-2.266460  (request id: 2026032702413060944512704132554)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}"
+  },
+  {
+    "paper_id": "69cf875bdbf7",
+    "title": "Quasi Fe MIL-53 nanozyme inducing ferroptosis and immunogenic cell death for cancer immunotherapy",
+    "model": "glm-4.5",
+    "method_name": "P4",
+    "free_text_hypotheses": [
+      "[ERROR] LLM 调用失败: Error code: 403 - {'error': {'message': '用户额度不足, 剩余额度: ＄-2.266460  (request id: 2026032702420694967413119956012)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}"
+    ],
+    "structured_paths": {},
+    "elapsed_seconds": 36.34,
+    "error": "LLM 调用失败: Error code: 403 - {'error': {'message': '用户额度不足, 剩余额度: ＄-2.266460  (request id: 2026032702420694967413119956012)', 'localized_message': 'Unknown error', 'type': 'shell_api_error', 'param': '', 'code': 'upstream_insufficient_user_quota'}}"
+  }
+]

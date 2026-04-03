@@ -1,0 +1,120 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "iCASE strategy's dynamic squeezing index perturbation",
+        "relation": "causes",
+        "tail": "localized structural strain",
+        "claim": "Dynamic perturbation induces localized structural strain"
+      },
+      {
+        "step": 2,
+        "head": "localized structural strain",
+        "relation": "selectively compresses",
+        "tail": "flexible regions",
+        "claim": "Structural strain selectively compresses flexible regions"
+      },
+      {
+        "step": 3,
+        "head": "selective compression of flexible regions",
+        "relation": "enhances",
+        "tail": "stability",
+        "claim": "Compression of flexible regions enhances enzyme stability"
+      },
+      {
+        "step": 4,
+        "head": "localized structural strain",
+        "relation": "preserves",
+        "tail": "catalytic residue geometry",
+        "claim": "Structural strain maintains catalytic residue geometry"
+      },
+      {
+        "step": 5,
+        "head": "preserved catalytic residue geometry",
+        "relation": "maintains",
+        "tail": "activity",
+        "claim": "Preserved geometry maintains catalytic activity"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "simultaneous stability enhancement and activity maintenance",
+        "relation": "overcomes",
+        "tail": "stability-activity trade-off",
+        "claim": "Combined stability/activity optimization breaks traditional trade-off"
+      },
+      {
+        "step": 2,
+        "head": "overcome trade-off",
+        "relation": "mediated by",
+        "tail": "mechanical allostery mechanism",
+        "claim": "Trade-off resolution occurs via mechanical allostery"
+      },
+      {
+        "step": 3,
+        "head": "mechanical allostery mechanism",
+        "relation": "propagates through",
+        "tail": "hierarchical modular networks",
+        "claim": "Allosteric effects propagate through modular network architecture"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "Integration of graph neural networks with compressibility fingerprints",
+        "relation": "enables",
+        "tail": "accurate prediction of PET hydrolase-polymer binding modes",
+        "claim": "Multimodal integration enables binding mode prediction"
+      },
+      {
+        "step": 2,
+        "head": "iCASE-induced perturbations",
+        "relation": "alters",
+        "tail": "surface electrostatics and conformational dynamics",
+        "claim": "Perturbations modify enzyme surface properties"
+      },
+      {
+        "step": 3,
+        "head": "altered surface properties",
+        "relation": "affects",
+        "tail": "substrate interfaces proximal to catalytic triad",
+        "claim": "Surface changes concentrate near catalytic regions"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "iCASE perturbations",
+        "relation": "triggers",
+        "tail": "coordinated changes in residue-residue coupling",
+        "claim": "Perturbations initiate coupling network reorganization"
+      },
+      {
+        "step": 2,
+        "head": "dynamic response network",
+        "relation": "allows",
+        "tail": "identification of evolutionary hotspots",
+        "claim": "Network modeling reveals mutation-sensitive hotspots"
+      },
+      {
+        "step": 3,
+        "head": "single mutations",
+        "relation": "induces",
+        "tail": "global stability-activity rebalancing",
+        "claim": "Key mutations trigger systemic property rebalancing"
+      },
+      {
+        "step": 4,
+        "head": "rebalancing effects",
+        "relation": "propagate through",
+        "tail": "allosteric propagation pathways",
+        "claim": "Rebalancing occurs via allosteric signal transmission"
+      }
+    ]
+  ],
+  "L3": []
+}

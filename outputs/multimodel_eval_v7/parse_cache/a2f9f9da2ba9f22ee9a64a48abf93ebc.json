@@ -1,0 +1,114 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "Q-MIL-53(Fe)",
+        "relation": "induces",
+        "tail": "铁死亡",
+        "claim": "Q-MIL-53(Fe)可诱导铁死亡"
+      },
+      {
+        "step": 2,
+        "head": "Q-MIL-53(Fe)",
+        "relation": "induces",
+        "tail": "免疫原性细胞死亡",
+        "claim": "Q-MIL-53(Fe)可诱导免疫原性细胞死亡"
+      },
+      {
+        "step": 3,
+        "head": "免疫激活剂",
+        "relation": "enhances",
+        "tail": "树突状细胞成熟",
+        "claim": "免疫激活剂促进树突状细胞成熟"
+      },
+      {
+        "step": 4,
+        "head": "树突状细胞成熟",
+        "relation": "activates",
+        "tail": "T细胞活化",
+        "claim": "树突状细胞成熟导致T细胞活化"
+      },
+      {
+        "step": 5,
+        "head": "铁死亡与免疫活化",
+        "relation": "synergizes",
+        "tail": "肿瘤治疗效果",
+        "claim": "铁死亡与免疫活化协同增强肿瘤治疗效果"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "配体去除策略",
+        "relation": "enhances",
+        "tail": "纳米酶催化活性",
+        "claim": "配体去除策略提升纳米酶催化活性"
+      },
+      {
+        "step": 2,
+        "head": "双金属活性中心",
+        "relation": "enhances",
+        "tail": "过氧化物酶模拟",
+        "claim": "双金属活性中心增强过氧化物酶模拟活性"
+      },
+      {
+        "step": 3,
+        "head": "过氧化物酶模拟",
+        "relation": "causes",
+        "tail": "铁死亡",
+        "claim": "过氧化物酶模拟活性增强导致铁死亡加剧"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "多孔结构",
+        "relation": "enables",
+        "tail": "脂质过氧化陷阱",
+        "claim": "多孔结构实现脂质过氧化陷阱分子负载"
+      },
+      {
+        "step": 2,
+        "head": "脂质过氧化陷阱",
+        "relation": "synergizes",
+        "tail": "铁(Fe²⁺/Fe³⁺)",
+        "claim": "陷阱分子与铁离子协同促进脂质过氧化"
+      },
+      {
+        "step": 3,
+        "head": "脂质过氧化增强",
+        "relation": "causes",
+        "tail": "铁死亡",
+        "claim": "脂质过氧化加剧导致铁死亡增强"
+      }
+    ]
+  ],
+  "L3": [
+    [
+      {
+        "step": 1,
+        "head": "可控配体去除",
+        "relation": "creates",
+        "tail": "开放孔道",
+        "claim": "可控配体去除形成开放孔道结构"
+      },
+      {
+        "step": 2,
+        "head": "pH响应性免疫辅助剂",
+        "relation": "triggers",
+        "tail": "精准释放",
+        "claim": "肿瘤酸性环境触发免疫辅助剂释放"
+      },
+      {
+        "step": 3,
+        "head": "Fenton反应与免疫刺激",
+        "relation": "synergizes",
+        "tail": "铁死亡与免疫原性死亡",
+        "claim": "ROS生成与免疫活化协同增强双重死亡机制"
+      }
+    ]
+  ]
+}

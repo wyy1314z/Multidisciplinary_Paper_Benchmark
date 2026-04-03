@@ -1,0 +1,143 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "准金属有机框架（Q-MOFs）的结构和催化特性",
+        "relation": "enables",
+        "tail": "模拟天然酶功能",
+        "claim": "Q-MOFs的结构和催化特性使模拟天然酶功能成为可能"
+      },
+      {
+        "step": 2,
+        "head": "模拟天然酶功能",
+        "relation": "causes",
+        "tail": "抗肿瘤作用",
+        "claim": "模拟天然酶功能导致抗肿瘤作用"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "控制配体去除过程",
+        "relation": "transforms",
+        "tail": "金属有机框架向金属氧化物的过渡状态",
+        "claim": "配体去除过程调控MOF向金属氧化物的结构转变"
+      },
+      {
+        "step": 2,
+        "head": "金属氧化物过渡状态",
+        "relation": "transforms",
+        "tail": "高比表面积和多孔结构的纳米材料",
+        "claim": "过渡状态形成高比表面积多孔结构"
+      },
+      {
+        "step": 3,
+        "head": "高比表面积和多孔结构",
+        "relation": "enables",
+        "tail": "催化活性增强",
+        "claim": "多孔结构增强材料的催化活性"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "催化活性增强",
+        "relation": "causes",
+        "tail": "细胞内谷胱甘肽耗竭",
+        "claim": "催化活性增强导致谷胱甘肽耗竭"
+      },
+      {
+        "step": 2,
+        "head": "谷胱甘肽耗竭",
+        "relation": "causes",
+        "tail": "铁死亡和免疫原性细胞死亡",
+        "claim": "谷胱甘肽耗竭诱导铁死亡和免疫原性死亡"
+      },
+      {
+        "step": 3,
+        "head": "铁死亡和免疫原性死亡",
+        "relation": "causes",
+        "tail": "抗肿瘤免疫反应激活",
+        "claim": "铁死亡激活抗肿瘤免疫反应"
+      },
+      {
+        "step": 4,
+        "head": "抗肿瘤免疫反应激活",
+        "relation": "causes",
+        "tail": "肿瘤治疗效果提高",
+        "claim": "免疫反应激活提升治疗效果"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "配体去除策略",
+        "relation": "transforms",
+        "tail": "Q-MIL-53(Fe)的结构和组成调节",
+        "claim": "配体去除策略调控材料结构和组成"
+      },
+      {
+        "step": 2,
+        "head": "结构和组成调节",
+        "relation": "enables",
+        "tail": "活性位点暴露增加",
+        "claim": "结构调节使更多活性位点暴露"
+      },
+      {
+        "step": 3,
+        "head": "活性位点暴露增加",
+        "relation": "enhances",
+        "tail": "底物吸附能力和催化效率",
+        "claim": "活性位点暴露提升吸附和催化效率"
+      },
+      {
+        "step": 4,
+        "head": "催化效率提升",
+        "relation": "ensures",
+        "tail": "催化反应选择性和高效性",
+        "claim": "效率提升确保催化反应的选择性和高效性"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "多孔结构Q-MIL-53(Fe)",
+        "relation": "causes",
+        "tail": "还原型谷胱甘肽（GSH）消耗",
+        "claim": "多孔结构促进GSH消耗"
+      },
+      {
+        "step": 2,
+        "head": "GSH消耗",
+        "relation": "reduces",
+        "tail": "细胞抗氧化能力",
+        "claim": "GSH消耗降低细胞抗氧化能力"
+      },
+      {
+        "step": 3,
+        "head": "抗氧化能力降低",
+        "relation": "leads to",
+        "tail": "脂质过氧化物积累",
+        "claim": "抗氧化能力下降导致脂质过氧化物积累"
+      },
+      {
+        "step": 4,
+        "head": "脂质过氧化物积累",
+        "relation": "causes",
+        "tail": "铁死亡",
+        "claim": "脂质过氧化物积累引发铁死亡"
+      },
+      {
+        "step": 5,
+        "head": "铁死亡",
+        "relation": "promotes",
+        "tail": "免疫细胞活化",
+        "claim": "铁死亡促进免疫细胞活化"
+      }
+    ]
+  ],
+  "L3": []
+}

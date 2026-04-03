@@ -1,0 +1,249 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "isothermal compressibility-assisted dynamic squeezing index perturbation engineering",
+        "relation": "modulates",
+        "tail": "hydrogen bonds",
+        "claim": "动态挤压指数扰动工程调制氢键"
+      },
+      {
+        "step": 2,
+        "head": "dynamic squeezing index perturbation engineering",
+        "relation": "modulates",
+        "tail": "salt bridges",
+        "claim": "动态挤压指数扰动工程调制盐桥"
+      },
+      {
+        "step": 3,
+        "head": "dynamic squeezing index perturbation engineering",
+        "relation": "modulates",
+        "tail": "metal ion coordination",
+        "claim": "动态挤压指数扰动工程调制金属离子配位"
+      },
+      {
+        "step": 4,
+        "head": "dynamic squeezing index perturbation engineering + machine learning models",
+        "relation": "enables",
+        "tail": "predict and steer enzyme adaptive evolution",
+        "claim": "扰动工程与机器学习协同预测和引导酶适应性进化"
+      },
+      {
+        "step": 5,
+        "head": "synergy between chemistry and computer science",
+        "relation": "transforms",
+        "tail": "hierarchical modular networks",
+        "claim": "跨学科协同塑造分层模块化网络"
+      },
+      {
+        "step": 6,
+        "head": "hierarchical modular networks",
+        "relation": "optimizes",
+        "tail": "substrate binding modes",
+        "claim": "模块化网络优化底物结合模式"
+      },
+      {
+        "step": 7,
+        "head": "hierarchical modular networks",
+        "relation": "optimizes",
+        "tail": "catalytic mechanisms",
+        "claim": "模块化网络优化催化机制"
+      },
+      {
+        "step": 8,
+        "head": "optimized substrate binding and catalytic mechanisms",
+        "relation": "enhances",
+        "tail": "thermal stability",
+        "claim": "优化的结合与催化机制增强热稳定性"
+      },
+      {
+        "step": 9,
+        "head": "optimized substrate binding and catalytic mechanisms",
+        "relation": "enhances",
+        "tail": "catalytic activity",
+        "claim": "优化的结合与催化机制增强催化活性"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "structural descriptors (hydrophobic interactions, disulfide bonds, surface charges)",
+        "relation": "provides",
+        "tail": "dynamic response predictive models",
+        "claim": "结构描述符为动态响应模型提供输入"
+      },
+      {
+        "step": 2,
+        "head": "dynamic response predictive models",
+        "relation": "enables",
+        "tail": "predict substrate binding mode",
+        "claim": "动态响应模型预测PET水解酶结合模式"
+      },
+      {
+        "step": 3,
+        "head": "machine learning algorithm",
+        "relation": "identifies",
+        "tail": "key residue interactions",
+        "claim": "机器学习识别关键残基相互作用"
+      },
+      {
+        "step": 4,
+        "head": "key residue interactions",
+        "relation": "correlates",
+        "tail": "dynamic squeezing index perturbations",
+        "claim": "关键残基相互作用关联动态挤压扰动"
+      },
+      {
+        "step": 5,
+        "head": "mutational studies",
+        "relation": "validates",
+        "tail": "predicted binding changes",
+        "claim": "突变实验验证预测的结合模式变化"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "structure-based supervised machine learning",
+        "relation": "enables",
+        "tail": "epistasis prediction",
+        "claim": "结构机器学习实现上位性预测"
+      },
+      {
+        "step": 2,
+        "head": "epistasis prediction",
+        "relation": "guides",
+        "tail": "enzyme engineering",
+        "claim": "上位性预测指导酶工程改造"
+      },
+      {
+        "step": 3,
+        "head": "machine learning predictions",
+        "relation": "pinpoints",
+        "tail": "metal ion coordination sites",
+        "claim": "机器学习定位金属离子配位位点"
+      },
+      {
+        "step": 4,
+        "head": "machine learning predictions",
+        "relation": "refines",
+        "tail": "disulfide bond arrangements",
+        "claim": "机器学习优化二硫键排布"
+      },
+      {
+        "step": 5,
+        "head": "controlled molecular perturbations",
+        "relation": "shifts",
+        "tail": "fitness landscape",
+        "claim": "分子扰动改变适应度景观"
+      },
+      {
+        "step": 6,
+        "head": "fitness landscape shifts",
+        "relation": "improves",
+        "tail": "enzyme stability and activity",
+        "claim": "适应度景观改变提升酶性能"
+      },
+      {
+        "step": 7,
+        "head": "iterative mutagenesis",
+        "relation": "validates",
+        "tail": "activity assays",
+        "claim": "迭代突变验证活性变化"
+      }
+    ]
+  ],
+  "L3": [
+    [
+      {
+        "step": 1,
+        "head": "dynamic squeezing index network",
+        "relation": "reflects",
+        "tail": "hydrogen bond modulation",
+        "claim": "动态挤压网络反映氢键调制"
+      },
+      {
+        "step": 2,
+        "head": "dynamic squeezing index network",
+        "relation": "reflects",
+        "tail": "protein surface charge modulation",
+        "claim": "动态挤压网络反映表面电荷调制"
+      },
+      {
+        "step": 3,
+        "head": "machine learning algorithms",
+        "relation": "detects",
+        "tail": "subtle structural changes",
+        "claim": "机器学习检测细微结构变化"
+      },
+      {
+        "step": 4,
+        "head": "machine learning detection",
+        "relation": "targets",
+        "tail": "chemical perturbations",
+        "claim": "机器学习指导化学扰动靶向"
+      },
+      {
+        "step": 5,
+        "head": "chemical perturbations",
+        "relation": "improves",
+        "tail": "enzyme kinetics",
+        "claim": "化学扰动提升酶动力学"
+      },
+      {
+        "step": 6,
+        "head": "catalytic turnover rate comparison",
+        "relation": "falsifies",
+        "tail": "kinetics improvement prediction",
+        "claim": "催化速率比较验证预测有效性"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "protein surface charge analysis",
+        "relation": "combines",
+        "tail": "adaptive landscape modeling",
+        "claim": "表面电荷分析结合适应度建模"
+      },
+      {
+        "step": 2,
+        "head": "adaptive landscape modeling",
+        "relation": "combines",
+        "tail": "dynamic response modeling",
+        "claim": "适应度建模结合动态响应建模"
+      },
+      {
+        "step": 3,
+        "head": "integrated workflow",
+        "relation": "reveals",
+        "tail": "surface charge alterations",
+        "claim": "整合工作流揭示表面电荷改变"
+      },
+      {
+        "step": 4,
+        "head": "surface charge alterations",
+        "relation": "drive",
+        "tail": "adaptive responses",
+        "claim": "表面电荷改变驱动适应性响应"
+      },
+      {
+        "step": 5,
+        "head": "adaptive responses",
+        "relation": "reshapes",
+        "tail": "fitness landscape",
+        "claim": "适应性响应重塑适应度景观"
+      },
+      {
+        "step": 6,
+        "head": "cross-validation with experiments",
+        "relation": "validates",
+        "tail": "enzyme stability predictions",
+        "claim": "交叉验证验证酶稳定性预测"
+      }
+    ]
+  ]
+}

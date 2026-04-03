@@ -1,0 +1,106 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "蛋白偶联受体的构象动态",
+        "relation": "modulates",
+        "tail": "与配体、信号分子的相互作用",
+        "claim": "构象动态通过调节与配体、信号分子的相互作用来调控功能机制"
+      },
+      {
+        "step": 2,
+        "head": "与配体、信号分子的相互作用",
+        "relation": "governs",
+        "tail": "功能机制",
+        "claim": "相互作用的改变最终决定受体功能机制"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "构象动态特征",
+        "relation": "provides",
+        "tail": "药物靶点发现关键线索",
+        "claim": "构象动态特征为药物靶点发现提供关键线索"
+      },
+      {
+        "step": 2,
+        "head": "不同构象状态",
+        "relation": "corresponds",
+        "tail": "不同功能和药物结合位点",
+        "claim": "不同构象状态对应特定功能和潜在药物结合位点"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "结构生物学技术",
+        "relation": "reveals",
+        "tail": "高分辨率受体结构",
+        "claim": "结构生物学技术获取高分辨率受体结构"
+      },
+      {
+        "step": 2,
+        "head": "高分辨率受体结构",
+        "relation": "elucidates",
+        "tail": "构象变化细节",
+        "claim": "高分辨率结构揭示构象变化细节"
+      },
+      {
+        "step": 3,
+        "head": "构象变化",
+        "relation": "corresponds",
+        "tail": "信号传导通路关键步骤",
+        "claim": "构象变化与信号传导通路关键步骤存在对应关系"
+      },
+      {
+        "step": 4,
+        "head": "特定构象变化",
+        "relation": "activates/inhibits",
+        "tail": "特定信号分子",
+        "claim": "特定构象变化激活或抑制信号分子"
+      },
+      {
+        "step": 5,
+        "head": "信号分子活性变化",
+        "relation": "alters",
+        "tail": "细胞生理反应",
+        "claim": "信号分子活性变化影响细胞内生理反应"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "膜脂质环境动态变化",
+        "relation": "affects",
+        "tail": "蛋白偶联受体构象",
+        "claim": "膜脂质环境变化显著影响受体构象"
+      },
+      {
+        "step": 2,
+        "head": "受体构象改变",
+        "relation": "modifies",
+        "tail": "药物-受体结合特性",
+        "claim": "受体构象改变导致药物结合特性变化"
+      },
+      {
+        "step": 3,
+        "head": "分子动力学模拟",
+        "relation": "predicts",
+        "tail": "隐藏药物结合位点暴露",
+        "claim": "分子动力学模拟预测隐藏药物结合位点暴露"
+      },
+      {
+        "step": 4,
+        "head": "膜脂质成分/流动性变化",
+        "relation": "opens/closes",
+        "tail": "药物侧向入口通道",
+        "claim": "特定膜脂质变化调控药物侧向入口通道开闭"
+      }
+    ]
+  ],
+  "L3": []
+}

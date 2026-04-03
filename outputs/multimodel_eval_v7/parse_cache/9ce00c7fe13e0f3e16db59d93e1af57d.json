@@ -1,0 +1,111 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "GPCRs dynamic conformational landscape",
+        "relation": "serves as",
+        "tail": "functional state fingerprints",
+        "claim": "动态构象景观的呼吸运动作为功能状态指纹"
+      },
+      {
+        "step": 2,
+        "head": "temporal patterns and spatial extent of breathing motions",
+        "relation": "encode",
+        "tail": "signaling efficacy and allosteric site accessibility",
+        "claim": "呼吸运动时空模式直接编码信号传导效果和别构位点可及性"
+      },
+      {
+        "step": 3,
+        "head": "multi-scale modeling integration",
+        "relation": "enables",
+        "tail": "predictive mapping of functional states",
+        "claim": "多尺度建模整合动态特征与静态结构实现功能状态预测映射"
+      },
+      {
+        "step": 4,
+        "head": "predictive mapping of functional states",
+        "relation": "reveals",
+        "tail": "latent allosteric networks",
+        "claim": "功能状态预测映射揭示潜在别构网络"
+      },
+      {
+        "step": 5,
+        "head": "latent allosteric networks",
+        "relation": "amenable to",
+        "tail": "pharmacological modulation",
+        "claim": "别构网络为药理学调节提供靶点"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "TM6 transient asymmetric rearrangements",
+        "relation": "create",
+        "tail": "micro-conformational switches",
+        "claim": "TM6重排形成微构象开关"
+      },
+      {
+        "step": 2,
+        "head": "micro-conformational switches",
+        "relation": "govern",
+        "tail": "G protein coupling selectivity",
+        "claim": "微构象开关调控G蛋白偶联选择性"
+      },
+      {
+        "step": 3,
+        "head": "high-resolution time-resolved structural data with mutagenesis",
+        "relation": "demonstrates",
+        "tail": "breathing modes reposition intracellular residues",
+        "claim": "结构数据与诱变实验证明呼吸模式重定位胞内残基"
+      },
+      {
+        "step": 4,
+        "head": "repositioned intracellular residues",
+        "relation": "filter",
+        "tail": "G protein subtype engagement",
+        "claim": "残基重定位通过动态互补性筛选G蛋白亚型"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "membrane cholesterol gradients",
+        "relation": "establish",
+        "tail": "dynamic phase boundaries",
+        "claim": "胆固醇梯度形成动态相界"
+      },
+      {
+        "step": 2,
+        "head": "dynamic phase boundaries",
+        "relation": "modulate",
+        "tail": "GPCR breathing amplitude",
+        "claim": "相界通过疏水失配调节呼吸幅度"
+      },
+      {
+        "step": 3,
+        "head": "cholesterol depletion",
+        "relation": "induces",
+        "tail": "hyper-breathing states",
+        "claim": "胆固醇耗竭引发过度呼吸状态"
+      },
+      {
+        "step": 4,
+        "head": "hyper-breathing states",
+        "relation": "expose",
+        "tail": "cryptic ligand entry portals",
+        "claim": "过度呼吸持久暴露隐秘配体入口"
+      },
+      {
+        "step": 5,
+        "head": "cryptic ligand entry portals",
+        "relation": "enable",
+        "tail": "environment-sensing prodrug design",
+        "claim": "配体入口暴露促进病理响应前药设计"
+      }
+    ]
+  ],
+  "L3": []
+}

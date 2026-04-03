@@ -1,0 +1,111 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "温度或光脉冲触发VO₂相变",
+        "relation": "transforms",
+        "tail": "VO₂介电函数实部符号反转",
+        "claim": "相变触发介电函数实部符号反转"
+      },
+      {
+        "step": 2,
+        "head": "VO₂介电函数实部符号反转",
+        "relation": "enables",
+        "tail": "等离激元共振频率宽范围动态调谐",
+        "claim": "介电特性变化实现共振频率调谐"
+      },
+      {
+        "step": 3,
+        "head": "等离激元共振频率宽范围动态调谐",
+        "relation": "causes",
+        "tail": "波长位移>200 nm",
+        "claim": "频率调谐导致显著波长位移"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "VO₂相变",
+        "relation": "induces",
+        "tail": "局域电磁场非线性反馈效应",
+        "claim": "相变产生非线性电磁反馈"
+      },
+      {
+        "step": 2,
+        "head": "非线性反馈效应",
+        "relation": "modulates",
+        "tail": "等离激元模式局域性增强/抑制",
+        "claim": "非线性效应调控电磁场局域性"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "微流控热控系统集成",
+        "relation": "enables",
+        "tail": "亚毫秒级温度响应",
+        "claim": "热控系统实现快速相变触发"
+      },
+      {
+        "step": 2,
+        "head": "飞秒激光激发",
+        "relation": "enables",
+        "tail": "空间选择性相变调控",
+        "claim": "激光实现微区动态控制"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "VO₂相变",
+        "relation": "alters",
+        "tail": "纳米粒子局域电磁场分布",
+        "claim": "相变重构电磁场空间分布"
+      },
+      {
+        "step": 2,
+        "head": "电磁场分布变化",
+        "relation": "affects",
+        "tail": "等离激元共振增强/抑制",
+        "claim": "场分布调控共振强度"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "异质结构制备",
+        "relation": "enables",
+        "tail": "变温光谱监测可行性",
+        "claim": "金纳米棒/VO₂结构适配光谱表征"
+      },
+      {
+        "step": 2,
+        "head": "有限元模拟",
+        "relation": "validates",
+        "tail": "相变前后电磁场演化",
+        "claim": "模拟验证场分布动态变化"
+      }
+    ]
+  ],
+  "L3": [
+    [
+      {
+        "step": 1,
+        "head": "超快泵浦-探测光谱",
+        "relation": "measures",
+        "tail": "等离激元衰减率变化",
+        "claim": "实验捕获相变诱导的衰减动力学"
+      },
+      {
+        "step": 2,
+        "head": "衰减率变化数据",
+        "relation": "confirms",
+        "tail": "非线性耦合机制",
+        "claim": "衰减调控验证非线性相互作用"
+      }
+    ]
+  ]
+}

@@ -1,0 +1,121 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "蛋白偶联受体",
+        "relation": "exhibits",
+        "tail": "构象柔性",
+        "claim": "蛋白偶联受体具有高度构象柔性"
+      },
+      {
+        "step": 2,
+        "head": "构象柔性",
+        "relation": "influences",
+        "tail": "膜脂质动力学",
+        "claim": "构象柔性影响膜脂质动力学对变构位点的调控"
+      },
+      {
+        "step": 3,
+        "head": "膜脂质动力学",
+        "relation": "triggers",
+        "tail": "新构象状态",
+        "claim": "特定脂质结合触发受体新构象状态的形成"
+      },
+      {
+        "step": 4,
+        "head": "新构象状态",
+        "relation": "transforms",
+        "tail": "常规配体口袋",
+        "claim": "新构象状态改变常规配体口袋空间构象"
+      },
+      {
+        "step": 5,
+        "head": "常规配体口袋",
+        "relation": "forms",
+        "tail": "新型调控节点",
+        "claim": "构象耦联形成新型药物干预调控节点"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "受体亚型",
+        "relation": "activates",
+        "tail": "跨膜螺旋空腔",
+        "claim": "受体亚型活化诱导跨膜螺旋空腔形成"
+      },
+      {
+        "step": 2,
+        "head": "跨膜螺旋空腔",
+        "relation": "creates",
+        "tail": "信号转运通道",
+        "claim": "脂质插入空腔形成信号转运通道结构"
+      },
+      {
+        "step": 3,
+        "head": "信号转运通道",
+        "relation": "modulates",
+        "tail": "下游信号传导",
+        "claim": "通道结构调控G蛋白结合效率和特异性"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "负电性脂质",
+        "relation": "accumulates",
+        "tail": "GPCR近膜区域",
+        "claim": "特定脂质在受体周围形成高密度堆积"
+      },
+      {
+        "step": 2,
+        "head": "高密度堆积",
+        "relation": "generates",
+        "tail": "带电微环境",
+        "claim": "脂质堆积产生局部电势和结构障碍"
+      },
+      {
+        "step": 3,
+        "head": "带电微环境",
+        "relation": "enhances",
+        "tail": "药物筛选性",
+        "claim": "微环境增强带电药物分子的结合选择性"
+      }
+    ]
+  ],
+  "L3": [
+    [
+      {
+        "step": 1,
+        "head": "结构表征技术",
+        "relation": "complements",
+        "tail": "分子动力学",
+        "claim": "晶体学与电镜技术补充动力学模拟的构象捕捉"
+      },
+      {
+        "step": 2,
+        "head": "分子动力学",
+        "relation": "reveals",
+        "tail": "构象连续谱",
+        "claim": "多方法联合揭示受体从闭合到开放的动态谱系"
+      },
+      {
+        "step": 3,
+        "head": "构象连续谱",
+        "relation": "correlates",
+        "tail": "变构位点暴露",
+        "claim": "连续谱分析显示不同信号通路的特异位点暴露"
+      },
+      {
+        "step": 4,
+        "head": "变构位点暴露",
+        "relation": "predicts",
+        "tail": "药物靶向模型",
+        "claim": "位点特征预测特异性调节剂的结合倾向"
+      }
+    ]
+  ]
+}

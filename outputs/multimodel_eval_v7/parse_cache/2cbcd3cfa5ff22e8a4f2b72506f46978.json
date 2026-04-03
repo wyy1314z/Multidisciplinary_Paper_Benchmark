@@ -1,0 +1,144 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "准金属有机框架材料Q-MIL-53(Fe)",
+        "relation": "enables",
+        "tail": "纳米酶催化机制调控肿瘤微环境",
+        "claim": "Q-MIL-53(Fe)的可调孔结构和金属离子特性使纳米酶催化调控肿瘤微环境成为可能"
+      },
+      {
+        "step": 2,
+        "head": "纳米酶催化机制调控肿瘤微环境",
+        "relation": "causes",
+        "tail": "增强抗肿瘤免疫反应",
+        "claim": "肿瘤微环境调控导致抗肿瘤免疫反应增强"
+      },
+      {
+        "step": 3,
+        "head": "增强抗肿瘤免疫反应",
+        "relation": "transforms",
+        "tail": "淋巴细胞浸润",
+        "claim": "免疫反应增强转化为淋巴细胞浸润的促进"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "可控配体去除策略",
+        "relation": "transforms",
+        "tail": "金属离子/节点比例和分布",
+        "claim": "配体去除策略改变金属离子分布优化催化活性"
+      },
+      {
+        "step": 2,
+        "head": "金属离子/节点比例和分布",
+        "relation": "causes",
+        "tail": "材料表面电子密度变化",
+        "claim": "金属离子分布变化导致表面电子密度改变"
+      },
+      {
+        "step": 3,
+        "head": "材料表面电子密度变化",
+        "relation": "enables",
+        "tail": "过氧化氢吸附和催化效率",
+        "claim": "电子密度变化增强过氧化氢吸附与催化能力"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "多孔结构纳米材料",
+        "relation": "enables",
+        "tail": "更大表面积与肿瘤细胞接触",
+        "claim": "多孔结构提供更大接触表面积促进ROS生成"
+      },
+      {
+        "step": 2,
+        "head": "更大表面积与肿瘤细胞接触",
+        "relation": "causes",
+        "tail": "活性氧(ROS)生成",
+        "claim": "接触面积增加导致ROS生成加速铁死亡"
+      },
+      {
+        "step": 3,
+        "head": "活性氧(ROS)生成",
+        "relation": "transforms",
+        "tail": "免疫原性细胞死亡",
+        "claim": "ROS促进免疫原性死亡释放DAMPs"
+      },
+      {
+        "step": 4,
+        "head": "免疫原性细胞死亡",
+        "relation": "causes",
+        "tail": "树突状细胞成熟",
+        "claim": "DAMPs释放激活树突状细胞成熟"
+      },
+      {
+        "step": 5,
+        "head": "树突状细胞成熟",
+        "relation": "transforms",
+        "tail": "T淋巴细胞浸润和活化",
+        "claim": "树突状细胞成熟增强T细胞浸润与活化"
+      }
+    ]
+  ],
+  "L3": [
+    [
+      {
+        "step": 1,
+        "head": "Q-MIL-53(Fe)中的四氧化三铁纳米颗粒",
+        "relation": "causes",
+        "tail": "芬顿反应生成羟基自由基",
+        "claim": "纳米颗粒通过芬顿反应产生·OH"
+      },
+      {
+        "step": 2,
+        "head": "芬顿反应生成羟基自由基",
+        "relation": "enables",
+        "tail": "过氧化物酶模拟活性增强",
+        "claim": "羟基自由基增强酶活性和谷胱甘肽耗竭"
+      },
+      {
+        "step": 3,
+        "head": "过氧化物酶模拟活性增强",
+        "relation": "transforms",
+        "tail": "抗肿瘤免疫反应条件优化",
+        "claim": "酶活性提升创造有利免疫反应环境"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "Q-MIL-53(Fe)多孔结构",
+        "relation": "enables",
+        "tail": "更大比表面积",
+        "claim": "多孔结构提供更大比表面积促进抗体结合"
+      },
+      {
+        "step": 2,
+        "head": "更大比表面积",
+        "relation": "transforms",
+        "tail": "PD-1抗体结合",
+        "claim": "表面积增加促进PD-1抗体结合肿瘤细胞"
+      },
+      {
+        "step": 3,
+        "head": "PD-1抗体结合",
+        "relation": "causes",
+        "tail": "免疫细胞迁移",
+        "claim": "抗体结合促进免疫细胞向肿瘤部位迁移"
+      },
+      {
+        "step": 4,
+        "head": "免疫细胞迁移",
+        "relation": "transforms",
+        "tail": "免疫治疗效率提高",
+        "claim": "细胞迁移增强最终提高治疗效率"
+      }
+    ]
+  ]
+}

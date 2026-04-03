@@ -1,0 +1,144 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "isothermal compressibility-assisted dynamic squeezing index perturbation engineering",
+        "relation": "enables",
+        "tail": "hierarchical modular network construction",
+        "claim": "iCASE策略构建层次模块化网络"
+      },
+      {
+        "step": 2,
+        "head": "hierarchical modular network construction",
+        "relation": "transforms",
+        "tail": "enzyme structure optimization",
+        "claim": "层次模块化网络优化酶的结构"
+      },
+      {
+        "step": 3,
+        "head": "enzyme structure optimization",
+        "relation": "alters",
+        "tail": "hydrophobic interactions, hydrogen bonds, salt bridges",
+        "claim": "结构优化改变内部化学相互作用"
+      },
+      {
+        "step": 4,
+        "head": "hydrophobic interactions, hydrogen bonds, salt bridges",
+        "relation": "influences",
+        "tail": "thermal stability and catalytic activity",
+        "claim": "化学相互作用影响热稳定性和催化活性"
+      },
+      {
+        "step": 5,
+        "head": "structure-based supervised machine learning",
+        "relation": "guides",
+        "tail": "industrial enzyme performance improvement",
+        "claim": "机器学习模型指导工业酶性能提升"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "structure-based supervised machine learning",
+        "relation": "analyzes",
+        "tail": "PET hydrolase structural features",
+        "claim": "机器学习模型分析PET水解酶结构特征"
+      },
+      {
+        "step": 2,
+        "head": "PET hydrolase structural features",
+        "relation": "identifies",
+        "tail": "hydrophobic interactions, hydrogen bonds, salt bridges",
+        "claim": "识别酶与聚合物间的化学相互作用"
+      },
+      {
+        "step": 3,
+        "head": "hydrophobic interactions, hydrogen bonds, salt bridges",
+        "relation": "predicts",
+        "tail": "substrate binding mode",
+        "claim": "化学相互作用预测底物结合模式"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "molecular response model",
+        "relation": "analyzes",
+        "tail": "structural changes during adaptive evolution",
+        "claim": "分子响应模型分析适应性进化中的结构变化"
+      },
+      {
+        "step": 2,
+        "head": "structural changes during adaptive evolution",
+        "relation": "identifies",
+        "tail": "key structural factors (metal ions, disulfide bonds)",
+        "claim": "识别影响适应性的关键结构因素"
+      },
+      {
+        "step": 3,
+        "head": "key structural factors (metal ions, disulfide bonds)",
+        "relation": "guides",
+        "tail": "enzyme engineering modification",
+        "claim": "关键结构因素指导酶工程改造"
+      }
+    ]
+  ],
+  "L3": [
+    [
+      {
+        "step": 1,
+        "head": "dynamic squeezing index network",
+        "relation": "alters",
+        "tail": "catalytic active site chemical environment",
+        "claim": "动态挤压指数网络改变催化活性中心化学环境"
+      },
+      {
+        "step": 2,
+        "head": "machine learning prediction",
+        "relation": "predicts",
+        "tail": "catalytic performance",
+        "claim": "机器学习预测催化性能"
+      },
+      {
+        "step": 3,
+        "head": "catalytic performance prediction",
+        "relation": "optimizes",
+        "tail": "enzyme catalytic mechanism",
+        "claim": "催化性能预测优化酶催化机制"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "protein surface charges analysis",
+        "relation": "reveals",
+        "tail": "electrostatic interactions",
+        "claim": "蛋白质表面电荷分析揭示静电相互作用"
+      },
+      {
+        "step": 2,
+        "head": "phenotypic fitness landscape modeling",
+        "relation": "describes",
+        "tail": "adaptability under different environments",
+        "claim": "适应性景观建模描述不同环境下的适应性"
+      },
+      {
+        "step": 3,
+        "head": "dynamic response prediction",
+        "relation": "predicts",
+        "tail": "functional changes",
+        "claim": "动态响应预测功能变化"
+      },
+      {
+        "step": 4,
+        "head": "electrostatic interactions, adaptability, functional changes",
+        "relation": "integrates",
+        "tail": "comprehensive enzyme performance evaluation",
+        "claim": "三者整合形成全面评估工作流"
+      }
+    ]
+  ]
+}

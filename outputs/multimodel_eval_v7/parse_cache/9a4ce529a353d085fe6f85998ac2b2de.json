@@ -1,0 +1,144 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "高纵横比纳米柱结构",
+        "relation": "enables",
+        "tail": "数值孔径",
+        "claim": "高纵横比纳米柱结构能够提升数值孔径至0.555"
+      },
+      {
+        "step": 2,
+        "head": "介电梯度超材料",
+        "relation": "enables",
+        "tail": "消色差超分辨成像",
+        "claim": "介电梯度超材料能够实现消色差超分辨成像"
+      },
+      {
+        "step": 3,
+        "head": "介电梯度超材料和高纵横比纳米柱结构结合",
+        "relation": "optimizes",
+        "tail": "相位分布和折射率分布",
+        "claim": "结合两种材料和技术可以同时优化相位分布和折射率分布"
+      },
+      {
+        "step": 4,
+        "head": "优化的相位分布和折射率分布",
+        "relation": "reduces",
+        "tail": "离轴像差",
+        "claim": "优化分布有助于减少离轴像差的影响"
+      },
+      {
+        "step": 5,
+        "head": "减少的离轴像差",
+        "relation": "enables",
+        "tail": "更宽的视场角",
+        "claim": "减少离轴像差可以实现更宽的视场角"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "纳米柱排列方式",
+        "relation": "controls",
+        "tail": "折射率分布",
+        "claim": "改变纳米柱排列方式可以控制材料的折射率分布"
+      },
+      {
+        "step": 2,
+        "head": "折射率分布",
+        "relation": "enables",
+        "tail": "相位分布均匀",
+        "claim": "控制折射率分布有助于实现更均匀的相位分布"
+      },
+      {
+        "step": 3,
+        "head": "相位分布均匀",
+        "relation": "reduces",
+        "tail": "色差",
+        "claim": "更均匀的相位分布能够减少不同频率下的色差"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "三维打印",
+        "relation": "enables",
+        "tail": "纳米柱高度和宽度精确控制",
+        "claim": "三维打印技术能够实现对纳米柱高度和宽度的精确控制"
+      },
+      {
+        "step": 2,
+        "head": "纳米柱高度和宽度精确控制",
+        "relation": "optimizes",
+        "tail": "折射率分布",
+        "claim": "精确控制高度和宽度可优化折射率分布"
+      },
+      {
+        "step": 3,
+        "head": "优化的折射率分布",
+        "relation": "enhances",
+        "tail": "聚焦增强",
+        "claim": "优化的折射率分布可改善特定区域的聚焦效果"
+      }
+    ]
+  ],
+  "L3": [
+    [
+      {
+        "step": 1,
+        "head": "同心纳米环结构",
+        "relation": "generates",
+        "tail": "不同半径相位延迟",
+        "claim": "同心纳米环结构在不同半径处产生相位延迟"
+      },
+      {
+        "step": 2,
+        "head": "不同半径相位延迟",
+        "relation": "optimizes",
+        "tail": "相位分布",
+        "claim": "相位延迟差异可进一步优化相位分布"
+      },
+      {
+        "step": 3,
+        "head": "优化的相位分布",
+        "relation": "reduces",
+        "tail": "离轴像差",
+        "claim": "优化的相位分布减少离轴像差影响"
+      },
+      {
+        "step": 4,
+        "head": "减少的离轴像差",
+        "relation": "enables",
+        "tail": "超分辨成像",
+        "claim": "减少的离轴像差实现宽视场角超分辨成像"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "高纵横比纳米柱结构",
+        "relation": "enhances",
+        "tail": "数值孔径",
+        "claim": "高纵横比纳米柱结构有效提升数值孔径"
+      },
+      {
+        "step": 2,
+        "head": "超表面技术",
+        "relation": "inhibits",
+        "tail": "背景噪声",
+        "claim": "超表面技术通过结构设计抑制背景噪声"
+      },
+      {
+        "step": 3,
+        "head": "数值孔径提升和背景噪声抑制",
+        "relation": "enhances",
+        "tail": "图像质量",
+        "claim": "结合高数值孔径和背景抑制可提高成像质量"
+      }
+    ]
+  ]
+}

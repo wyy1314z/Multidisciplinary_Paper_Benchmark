@@ -1,0 +1,115 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "iCASE策略构建的分层模块化动态网络",
+        "relation": "enables",
+        "tail": "等温压缩诱导的动态挤压指数扰动",
+        "claim": "iCASE策略使得动态挤压指数扰动成为可能"
+      },
+      {
+        "step": 2,
+        "head": "动态挤压指数扰动",
+        "relation": "transforms",
+        "tail": "结构响应机制激活",
+        "claim": "动态扰动触发结构响应机制"
+      },
+      {
+        "step": 3,
+        "head": "结构响应机制激活",
+        "relation": "causes",
+        "tail": "适应性进化通路形成",
+        "claim": "结构响应导致进化通路形成"
+      },
+      {
+        "step": 4,
+        "head": "适应性进化通路",
+        "relation": "enables",
+        "tail": "协同优化酶的热稳定性和催化活性",
+        "claim": "进化通路实现协同优化"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "基于结构特征的监督式机器学习模型",
+        "relation": "predicts",
+        "tail": "动态响应模式",
+        "claim": "模型可预测动态响应模式"
+      },
+      {
+        "step": 2,
+        "head": "动态响应模式预测",
+        "relation": "guides",
+        "tail": "定向进化",
+        "claim": "预测结果指导定向进化"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "图卷积神经网络模型",
+        "relation": "identifies",
+        "tail": "催化界面柔性区域与刚性核心的耦合模式",
+        "claim": "模型识别催化界面耦合模式"
+      },
+      {
+        "step": 2,
+        "head": "柔性-刚性耦合模式识别",
+        "relation": "enables",
+        "tail": "聚合物底物结合构象高精度预测",
+        "claim": "耦合模式识别实现构象预测(R²>0.85)"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "图卷积神经网络模型",
+        "relation": "predicts",
+        "tail": "关键氢键网络",
+        "claim": "模型预测氢键网络"
+      },
+      {
+        "step": 2,
+        "head": "氢键网络预测",
+        "relation": "exceeds",
+        "tail": "传统分子对接方法",
+        "claim": "预测准确率超传统方法15%"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "动态挤压指数临界阈值(ΔE≤0.3)",
+        "relation": "acts as",
+        "tail": "酶工程进化开关",
+        "claim": "临界阈值作为进化开关"
+      },
+      {
+        "step": 2,
+        "head": "进化开关",
+        "relation": "guides",
+        "tail": "ΔE临界点残基优先修饰",
+        "claim": "开关机制指导残基选择引入二硫键/π-π堆积"
+      },
+      {
+        "step": 3,
+        "head": "柔性区域残基修饰",
+        "relation": "enhances",
+        "tail": "热稳定性(ΔTm≥8℃)",
+        "claim": "残基修饰提升热稳定性"
+      },
+      {
+        "step": 4,
+        "head": "热稳定性提升",
+        "relation": "overcomes",
+        "tail": "稳定性-活性权衡陷阱",
+        "claim": "突破稳定性-活性权衡限制"
+      }
+    ]
+  ],
+  "L3": []
+}

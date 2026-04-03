@@ -1,0 +1,99 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "GPCRs",
+        "relation": "exhibit",
+        "tail": "intrinsic dynamic breathing motions",
+        "claim": "GPCRs具有内在动态呼吸运动"
+      },
+      {
+        "step": 2,
+        "head": "membrane lipid environment",
+        "relation": "modulates",
+        "tail": "spatiotemporal fluctuations of breathing motions",
+        "claim": "膜脂环境调控动态呼吸运动的时空波动"
+      },
+      {
+        "step": 3,
+        "head": "spatiotemporal fluctuations",
+        "relation": "dictate",
+        "tail": "transient exposure of allosteric sites and lateral ligand entrance pathways",
+        "claim": "时空波动决定了变构位点和侧向配体通路的瞬时暴露"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "dynamic states",
+        "relation": "serve as",
+        "tail": "regulatory checkpoints for receptor activation and signal transduction",
+        "claim": "这些动态状态作为受体激活和信号转导的调控检查点"
+      },
+      {
+        "step": 2,
+        "head": "regulatory checkpoints",
+        "relation": "reveal",
+        "tail": "new opportunities for targeted drug design",
+        "claim": "揭示了通过同步脂质相互作用和构象变化的药物设计新机会"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "specific transient breathing motions in GPCRs",
+        "relation": "align with",
+        "tail": "key steps in the receptor's signaling cycle",
+        "claim": "特定的瞬时呼吸运动与信号周期的关键步骤一致"
+      },
+      {
+        "step": 2,
+        "head": "distinct conformational intermediates",
+        "relation": "act as",
+        "tail": "pivotal switches",
+        "claim": "不同的构象中间体作为促进或抑制下游信号的关键开关"
+      },
+      {
+        "step": 3,
+        "head": "targeted stabilization or disruption of these states",
+        "relation": "modulates",
+        "tail": "receptor function",
+        "claim": "靶向稳定或破坏这些状态可以调节受体功能"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "local lipid milieu",
+        "relation": "orchestrates",
+        "tail": "conformation of GPCR allosteric binding sites",
+        "claim": "局部脂质环境协调变构结合位点的构象变化"
+      },
+      {
+        "step": 2,
+        "head": "lipid-mediated modulation",
+        "relation": "influences",
+        "tail": "receptor signaling",
+        "claim": "脂质介导的调控影响受体信号传导"
+      },
+      {
+        "step": 3,
+        "head": "lipid-mediated modulation",
+        "relation": "provides",
+        "tail": "lateral ligand entrance gateways",
+        "claim": "该调控提供了侧向配体进入的门控通道"
+      },
+      {
+        "step": 4,
+        "head": "natural interplay between membrane lipids and receptor dynamics",
+        "relation": "offers",
+        "tail": "innovative avenues for designing allosteric drugs",
+        "claim": "膜脂与受体动态的自然相互作用为设计变构药物提供了新途径"
+      }
+    ]
+  ],
+  "L3": []
+}

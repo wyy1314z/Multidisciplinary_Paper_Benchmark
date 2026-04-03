@@ -1,0 +1,97 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "autonomous microfluidic synthesis",
+        "relation": "enables",
+        "tail": "real-time spectroscopic characterization",
+        "claim": "自主微流控合成技术为实时光谱表征提供基础"
+      },
+      {
+        "step": 2,
+        "head": "real-time spectroscopic characterization",
+        "relation": "transforms",
+        "tail": "machine learning optimization",
+        "claim": "实时光谱表征数据驱动机器学习优化模型的构建"
+      },
+      {
+        "step": 3,
+        "head": "machine learning optimization",
+        "relation": "causes",
+        "tail": "quantitative structure-property relationships",
+        "claim": "机器学习优化算法在多维参数空间中建立定量构效关系"
+      },
+      {
+        "step": 4,
+        "head": "quantitative structure-property relationships",
+        "relation": "enables",
+        "tail": "predictive framework",
+        "claim": "定量构效关系支撑预测性框架的形成"
+      },
+      {
+        "step": 5,
+        "head": "predictive framework",
+        "relation": "achieves",
+        "tail": "on-demand synthesis",
+        "claim": "预测框架实现按需合成定制化等离激元响应的纳米粒子"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "segmented flow regimes",
+        "relation": "enables",
+        "tail": "parallelized screening",
+        "claim": "分段流模式实现离散反应条件的并行筛选"
+      },
+      {
+        "step": 2,
+        "head": "parallelized screening",
+        "relation": "inhibits",
+        "tail": "cross-contamination",
+        "claim": "并行筛选过程中交叉污染被有效抑制"
+      },
+      {
+        "step": 3,
+        "head": "cross-contamination",
+        "relation": "facilitates",
+        "tail": "multidimensional chemical spaces",
+        "claim": "低交叉污染特性加速多维化学空间的探索"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "Bayesian optimization algorithms",
+        "relation": "couples",
+        "tail": "in-situ UV-vis-NIR spectroscopy",
+        "claim": "贝叶斯优化算法与原位光谱技术形成闭环优化系统"
+      },
+      {
+        "step": 2,
+        "head": "in-situ UV-vis-NIR spectroscopy",
+        "relation": "models",
+        "tail": "multiple interacting variables",
+        "claim": "原位光谱实时捕捉光化学合成中的多变量相互作用"
+      },
+      {
+        "step": 3,
+        "head": "multiple interacting variables",
+        "relation": "identifies",
+        "tail": "non-intuitive parameter combinations",
+        "claim": "多变量建模揭示非单调参数关系等非直观组合"
+      },
+      {
+        "step": 4,
+        "head": "non-intuitive parameter combinations",
+        "relation": "optimizes",
+        "tail": "targeted optical properties",
+        "claim": "非直观参数组合实现目标光学性质的最优调控"
+      }
+    ]
+  ],
+  "L3": []
+}

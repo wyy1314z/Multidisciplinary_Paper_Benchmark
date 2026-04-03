@@ -1,0 +1,186 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "准金属有机框架",
+        "relation": "enables",
+        "tail": "可调孔结构",
+        "claim": "准金属有机框架的可调孔结构允许调节孔径大小"
+      },
+      {
+        "step": 2,
+        "head": "可调孔结构",
+        "relation": "optimizes",
+        "tail": "纳米酶催化效率",
+        "claim": "孔径调节优化纳米酶与肿瘤微环境的分子相互作用"
+      },
+      {
+        "step": 3,
+        "head": "纳米酶催化效率",
+        "relation": "affects",
+        "tail": "活性氧水平",
+        "claim": "催化效率优化通过密度泛函理论验证影响ROS水平"
+      },
+      {
+        "step": 4,
+        "head": "活性氧水平",
+        "relation": "enhances",
+        "tail": "过氧化物酶模拟活性",
+        "claim": "ROS水平调节增强纳米酶的过氧化物酶模拟活性和谷胱甘肽耗竭能力"
+      },
+      {
+        "step": 5,
+        "head": "过氧化物酶模拟活性",
+        "relation": "promotes",
+        "tail": "铁死亡",
+        "claim": "活性增强促进铁死亡和免疫原性细胞死亡，提高抗肿瘤免疫反应"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "可控配体去除策略",
+        "relation": "alters",
+        "tail": "金属离子/节点配位环境",
+        "claim": "配体去除策略改变纳米酶表面金属离子配位环境"
+      },
+      {
+        "step": 2,
+        "head": "金属离子/节点配位环境",
+        "relation": "enhances",
+        "tail": "芬顿反应效率",
+        "claim": "配位环境优化提升Q-MIL-53(Fe)的芬顿反应效率"
+      },
+      {
+        "step": 3,
+        "head": "芬顿反应效率",
+        "relation": "modifies",
+        "tail": "电子结构",
+        "claim": "反应效率提升通过密度泛函理论计算验证电子结构变化"
+      },
+      {
+        "step": 4,
+        "head": "电子结构",
+        "relation": "enhances",
+        "tail": "氧化还原调节能力",
+        "claim": "电子结构优化增强肿瘤微环境氧化还原调节能力"
+      },
+      {
+        "step": 5,
+        "head": "氧化还原调节能力",
+        "relation": "promotes",
+        "tail": "铁死亡",
+        "claim": "调节能力增强最终促进铁死亡和免疫原性细胞死亡"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "Q-MIL-53(Fe)",
+        "relation": "induces",
+        "tail": "免疫原性细胞死亡",
+        "claim": "纳米酶通过诱导免疫原性细胞死亡释放DAMPs"
+      },
+      {
+        "step": 2,
+        "head": "免疫原性细胞死亡",
+        "relation": "releases",
+        "tail": "损伤相关分子模式",
+        "claim": "死亡细胞释放DAMPs激活树突状细胞"
+      },
+      {
+        "step": 3,
+        "head": "损伤相关分子模式",
+        "relation": "activates",
+        "tail": "树突状细胞成熟",
+        "claim": "DAMPs激活树突状细胞并促进T淋巴细胞浸润"
+      },
+      {
+        "step": 4,
+        "head": "树突状细胞成熟",
+        "relation": "enhances",
+        "tail": "PD-1抗体疗效",
+        "claim": "免疫激活状态使PD-1抗体更有效抑制肿瘤逃逸"
+      }
+    ]
+  ],
+  "L3": [
+    [
+      {
+        "step": 1,
+        "head": "Q-MIL-53(Fe)",
+        "relation": "provides",
+        "tail": "多孔结构",
+        "claim": "纳米酶的多孔结构提供更大比表面积"
+      },
+      {
+        "step": 2,
+        "head": "多孔结构",
+        "relation": "enhances",
+        "tail": "肿瘤细胞接触",
+        "claim": "结构特性增强纳米酶与肿瘤细胞的接触范围"
+      },
+      {
+        "step": 3,
+        "head": "肿瘤细胞接触",
+        "relation": "generates",
+        "tail": "羟基自由基",
+        "claim": "接触促进芬顿反应产生·OH增加ROS水平"
+      },
+      {
+        "step": 4,
+        "head": "羟基自由基",
+        "relation": "induces",
+        "tail": "铁死亡",
+        "claim": "ROS积累触发铁死亡这一细胞死亡方式"
+      },
+      {
+        "step": 5,
+        "head": "铁死亡",
+        "relation": "enhances",
+        "tail": "抗肿瘤效果",
+        "claim": "铁死亡增强纳米酶在肿瘤微环境中的治疗效果"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "Q-MIL-53(Fe)",
+        "relation": "induces",
+        "tail": "免疫原性细胞死亡",
+        "claim": "纳米酶诱导免疫原性细胞死亡释放DAMPs"
+      },
+      {
+        "step": 2,
+        "head": "免疫原性细胞死亡",
+        "relation": "releases",
+        "tail": "损伤相关分子模式",
+        "claim": "死亡释放的DAMPs激活树突状细胞"
+      },
+      {
+        "step": 3,
+        "head": "损伤相关分子模式",
+        "relation": "activates",
+        "tail": "树突状细胞成熟",
+        "claim": "DAMPs激活促进树突状细胞成熟和T细胞浸润"
+      },
+      {
+        "step": 4,
+        "head": "树突状细胞成熟",
+        "relation": "reverses",
+        "tail": "免疫抑制状态",
+        "claim": "免疫激活打破肿瘤微环境免疫抑制状态"
+      },
+      {
+        "step": 5,
+        "head": "免疫抑制状态",
+        "relation": "enhances",
+        "tail": "免疫检查点抑制剂疗效",
+        "claim": "免疫检查点抑制剂在激活微环境中疗效提升"
+      }
+    ]
+  ]
+}

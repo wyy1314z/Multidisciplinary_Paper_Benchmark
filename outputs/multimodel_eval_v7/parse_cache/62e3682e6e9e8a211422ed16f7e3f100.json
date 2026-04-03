@@ -1,0 +1,214 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "Q-MIL-53(Fe)",
+        "relation": "generates",
+        "tail": "reactive oxygen species (ROS)",
+        "claim": "Q-MIL-53(Fe)的催化活性生成ROS"
+      },
+      {
+        "step": 2,
+        "head": "ROS accumulation",
+        "relation": "induces",
+        "tail": "ferroptosis",
+        "claim": "ROS积累导致铁死亡"
+      },
+      {
+        "step": 3,
+        "head": "ROS accumulation",
+        "relation": "induces",
+        "tail": "immunogenic cell death",
+        "claim": "ROS积累导致免疫原性细胞死亡"
+      },
+      {
+        "step": 4,
+        "head": "immunogenic cell death",
+        "relation": "releases",
+        "tail": "damage-associated molecular patterns (DAMPs)",
+        "claim": "免疫原性细胞死亡释放DAMPs"
+      },
+      {
+        "step": 5,
+        "head": "porous structure of Q-MIL-53(Fe)",
+        "relation": "enhances",
+        "tail": "DAMP retention",
+        "claim": "多孔结构增强DAMP保留"
+      },
+      {
+        "step": 6,
+        "head": "DAMP retention",
+        "relation": "promotes",
+        "tail": "dendritic cell maturation",
+        "claim": "DAMP保留促进树突状细胞成熟"
+      },
+      {
+        "step": 7,
+        "head": "dendritic cell maturation",
+        "relation": "activates",
+        "tail": "T-cell infiltration",
+        "claim": "树突状细胞成熟激活T细胞浸润"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "controlled deligandation strategy",
+        "relation": "removes",
+        "tail": "organic ligands",
+        "claim": "脱配体策略移除有机配体"
+      },
+      {
+        "step": 2,
+        "head": "removal of organic ligands",
+        "relation": "exposes",
+        "tail": "iron-based catalytic active sites",
+        "claim": "有机配体移除暴露铁基活性位点"
+      },
+      {
+        "step": 3,
+        "head": "structural defects",
+        "relation": "lowers",
+        "tail": "energy barrier for electron transfer",
+        "claim": "结构缺陷降低电子转移能垒"
+      },
+      {
+        "step": 4,
+        "head": "lowered energy barrier",
+        "relation": "accelerates",
+        "tail": "electron transfer kinetics",
+        "claim": "能垒降低加速电子转移动力学"
+      },
+      {
+        "step": 5,
+        "head": "accelerated electron transfer",
+        "relation": "enhances",
+        "tail": "peroxidase-mimic activity",
+        "claim": "电子转移加速增强过氧化物酶活性"
+      },
+      {
+        "step": 6,
+        "head": "enhanced peroxidase-mimic activity",
+        "relation": "generates",
+        "tail": "ROS",
+        "claim": "过氧化物酶活性增强导致ROS生成"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "porous structure of Q-MIL-53(Fe)",
+        "relation": "enables",
+        "tail": "selective accumulation in tumor cells",
+        "claim": "多孔结构实现肿瘤细胞选择性积累"
+      },
+      {
+        "step": 2,
+        "head": "selective accumulation",
+        "relation": "facilitates",
+        "tail": "iron ion release",
+        "claim": "选择性积累促进铁离子释放"
+      },
+      {
+        "step": 3,
+        "head": "iron ion release",
+        "relation": "catalyzes",
+        "tail": "lipid ROS formation",
+        "claim": "铁离子释放催化脂质ROS形成"
+      },
+      {
+        "step": 4,
+        "head": "glutathione depletion",
+        "relation": "inhibits",
+        "tail": "glutathione peroxidase 4",
+        "claim": "谷胱甘肽耗竭抑制GPX4活性"
+      },
+      {
+        "step": 5,
+        "head": "GPX4 inhibition",
+        "relation": "causes",
+        "tail": "mitochondrial membrane damage",
+        "claim": "GPX4抑制导致线粒体膜损伤"
+      },
+      {
+        "step": 6,
+        "head": "mitochondrial membrane damage",
+        "relation": "induces",
+        "tail": "ferroptosis",
+        "claim": "线粒体膜损伤引发铁死亡"
+      }
+    ]
+  ],
+  "L3": [
+    [
+      {
+        "step": 1,
+        "head": "tunable pore structure",
+        "relation": "enhances",
+        "tail": "H2O2 diffusion",
+        "claim": "可调孔结构增强H2O2扩散"
+      },
+      {
+        "step": 2,
+        "head": "H2O2 diffusion",
+        "relation": "amplifies",
+        "tail": "Fenton reaction-driven ROS generation",
+        "claim": "H2O2扩散放大芬顿反应ROS生成"
+      },
+      {
+        "step": 3,
+        "head": "ROS generation",
+        "relation": "upregulates",
+        "tail": "MHC molecule expression",
+        "claim": "ROS生成上调树突状细胞MHC表达"
+      },
+      {
+        "step": 4,
+        "head": "PD-1 blockade",
+        "relation": "prevents",
+        "tail": "T-cell exhaustion",
+        "claim": "PD-1阻断防止T细胞耗竭"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "hierarchical porosity",
+        "relation": "accommodates",
+        "tail": "nanozymes and adjuvants",
+        "claim": "分层孔隙共装载纳米酶和佐剂"
+      },
+      {
+        "step": 2,
+        "head": "nanozyme-catalyzed ROS",
+        "relation": "induces",
+        "tail": "ferroptosis",
+        "claim": "纳米酶ROS诱导铁死亡"
+      },
+      {
+        "step": 3,
+        "head": "ferroptosis",
+        "relation": "releases",
+        "tail": "DAMPs",
+        "claim": "铁死亡释放DAMPs"
+      },
+      {
+        "step": 4,
+        "head": "DAMPs",
+        "relation": "activates",
+        "tail": "dendritic cells",
+        "claim": "DAMPs激活树突状细胞"
+      },
+      {
+        "step": 5,
+        "head": "co-delivered adjuvants",
+        "relation": "enhance",
+        "tail": "T-cell-mediated tumor clearance",
+        "claim": "共递送佐剂增强T细胞肿瘤清除"
+      }
+    ]
+  ]
+}

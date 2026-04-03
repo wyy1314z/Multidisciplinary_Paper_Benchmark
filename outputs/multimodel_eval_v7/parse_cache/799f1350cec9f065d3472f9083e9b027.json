@@ -1,0 +1,130 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "compound eye architecture",
+        "relation": "exhibits",
+        "tail": "graded refractive index",
+        "claim": "生物复眼通过梯度折射率展示宽视场和像差校正"
+      },
+      {
+        "step": 2,
+        "head": "graded refractive index",
+        "relation": "emulates",
+        "tail": "dielectric gradient metamaterials",
+        "claim": "介电梯度超材料通过3D打印纳米结构模拟梯度折射率特性"
+      },
+      {
+        "step": 3,
+        "head": "shape-memory polymers",
+        "relation": "enables",
+        "tail": "adaptive focusing",
+        "claim": "形状记忆聚合物实现可调聚焦功能"
+      },
+      {
+        "step": 4,
+        "head": "hybrid approach",
+        "relation": "surpasses",
+        "tail": "NA/FOV tradeoffs",
+        "claim": "混合方法可能突破传统数值孔径与视场角的权衡限制"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "anisotropic permittivity",
+        "relation": "allows",
+        "tail": "independent control",
+        "claim": "各向异性介电常数允许独立控制相位和群速度"
+      },
+      {
+        "step": 2,
+        "head": "3D gradient structures",
+        "relation": "introduces",
+        "tail": "path-length compensation",
+        "claim": "三维梯度结构引入光程差补偿机制"
+      },
+      {
+        "step": 3,
+        "head": "dual compensation",
+        "relation": "explains",
+        "tail": "broadband performance",
+        "claim": "双重补偿机制可解释宽带性能实现"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "phase matching",
+        "relation": "requires",
+        "tail": "refractive index gradients",
+        "claim": "相位匹配需要精确的折射率梯度控制"
+      },
+      {
+        "step": 2,
+        "head": "mechanical stability",
+        "relation": "requires",
+        "tail": "continuous material interfaces",
+        "claim": "机械稳定性需要连续材料界面"
+      },
+      {
+        "step": 3,
+        "head": "multi-material printing",
+        "relation": "achieves",
+        "tail": "voxel-level control",
+        "claim": "多材料打印通过体素级控制实现双重目标"
+      }
+    ]
+  ],
+  "L3": [
+    [
+      {
+        "step": 1,
+        "head": "machine learning",
+        "relation": "discovers",
+        "tail": "non-intuitive nanostructures",
+        "claim": "机器学习可发现非直觉的纳米结构排列"
+      },
+      {
+        "step": 2,
+        "head": "nanostructures",
+        "relation": "creates",
+        "tail": "scattering signatures",
+        "claim": "纳米结构生成特定空间频率的散射特征"
+      },
+      {
+        "step": 3,
+        "head": "computational reconstruction",
+        "relation": "decouples",
+        "tail": "resolution limits",
+        "claim": "计算重建解耦分辨率与物理衍射极限"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "aspect ratio",
+        "relation": "controls",
+        "tail": "effective refractive index",
+        "claim": "纵横比控制有效折射率特性"
+      },
+      {
+        "step": 2,
+        "head": "gradient profiles",
+        "relation": "satisfies",
+        "tail": "Abbe condition",
+        "claim": "梯度剖面满足多频阿贝正弦条件"
+      },
+      {
+        "step": 3,
+        "head": "apodization",
+        "relation": "reduces",
+        "tail": "side lobes",
+        "claim": "渐晕技术减少焦点旁瓣干扰"
+      }
+    ]
+  ]
+}

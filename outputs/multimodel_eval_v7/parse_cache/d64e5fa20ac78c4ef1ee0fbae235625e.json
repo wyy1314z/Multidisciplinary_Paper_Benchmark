@@ -1,0 +1,144 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "dynamic squeezing index",
+        "relation": "enables",
+        "tail": "modular networks",
+        "claim": "动态挤压指数扰动帮助构建酶的模块化网络"
+      },
+      {
+        "step": 2,
+        "head": "machine learning",
+        "relation": "provides",
+        "tail": "real-time feedback",
+        "claim": "机器学习提供结构变化与活性关联的实时预测"
+      },
+      {
+        "step": 3,
+        "head": "real-time feedback",
+        "relation": "facilitates",
+        "tail": "adaptive modification",
+        "claim": "实时反馈促进实验条件或酶设计的动态调整"
+      },
+      {
+        "step": 4,
+        "head": "adaptive modification",
+        "relation": "leads to",
+        "tail": "enzyme optimization",
+        "claim": "动态调整实现酶结构的持续迭代优化"
+      },
+      {
+        "step": 5,
+        "head": "enzyme optimization",
+        "relation": "enhances",
+        "tail": "thermal stability",
+        "claim": "酶优化最终提升热稳定性与催化活性"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "molecular dynamics",
+        "relation": "provides",
+        "tail": "time-resolved insights",
+        "claim": "分子动力学提供底物结合过程的时间分辨数据"
+      },
+      {
+        "step": 2,
+        "head": "structure-based ML",
+        "relation": "predicts",
+        "tail": "binding modes",
+        "claim": "结构机器学习预测底物结合模式"
+      },
+      {
+        "step": 3,
+        "head": "method integration",
+        "relation": "identifies",
+        "tail": "novel interactions",
+        "claim": "方法整合识别静态模型未捕获的新相互作用"
+      },
+      {
+        "step": 4,
+        "head": "novel interactions",
+        "relation": "improve",
+        "tail": "catalytic performance",
+        "claim": "新相互作用通过提升特异性降低反应能垒"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "adaptive radiation",
+        "relation": "inspires",
+        "tail": "multi-enzyme platform",
+        "claim": "适应性辐射启发多酶平台模仿自然生态系统"
+      },
+      {
+        "step": 2,
+        "head": "multi-enzyme platform",
+        "relation": "creates",
+        "tail": "shared fitness landscape",
+        "claim": "多酶平台构建共享适应度景观促进协同进化"
+      },
+      {
+        "step": 3,
+        "head": "shared fitness landscape",
+        "relation": "enhances",
+        "tail": "catalytic efficiency",
+        "claim": "共享景观通过多路径协作提升整体催化效率"
+      }
+    ]
+  ],
+  "L3": [
+    [
+      {
+        "step": 1,
+        "head": "protein surface charges",
+        "relation": "determines",
+        "tail": "enzyme stability",
+        "claim": "表面电荷影响酶在离子条件下的稳定性"
+      },
+      {
+        "step": 2,
+        "head": "hierarchical modular networks",
+        "relation": "analyzes",
+        "tail": "charge interactions",
+        "claim": "分层网络分析电荷相互作用预测行为"
+      },
+      {
+        "step": 3,
+        "head": "charge analysis",
+        "relation": "guides",
+        "tail": "tailored designs",
+        "claim": "电荷分析指导特定工业场景的酶定制"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "fitness landscape analysis",
+        "relation": "reveals",
+        "tail": "epistatic interactions",
+        "claim": "适应度景观分析揭示突变协同效应"
+      },
+      {
+        "step": 2,
+        "head": "dynamic response models",
+        "relation": "predicts",
+        "tail": "mutation impacts",
+        "claim": "动态模型预测突变对酶功能的影响"
+      },
+      {
+        "step": 3,
+        "head": "model integration",
+        "relation": "guides",
+        "tail": "enzyme engineering",
+        "claim": "整合模型指导靶向有益相互作用的工程策略"
+      }
+    ]
+  ]
+}

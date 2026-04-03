@@ -1,0 +1,130 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "构象动力学",
+        "relation": "modulates",
+        "tail": "膜脂质动力学",
+        "claim": "膜脂质相互作用直接调节GPCR的构象动力学"
+      },
+      {
+        "step": 2,
+        "head": "膜脂质动力学",
+        "relation": "regulates",
+        "tail": "变构药物结合位点",
+        "claim": "膜脂质动力学调控变构药物结合位点的可及性"
+      },
+      {
+        "step": 3,
+        "head": "药物靶向策略",
+        "relation": "creates",
+        "tail": "神经系统疾病",
+        "claim": "结构灵活性与脂质环境互作形成疾病突变调控框架"
+      },
+      {
+        "step": 4,
+        "head": "神经系统疾病",
+        "relation": "could alter",
+        "tail": "开放/关闭构象平衡",
+        "claim": "疾病特异性突变改变GPCR构象状态平衡"
+      },
+      {
+        "step": 5,
+        "head": "开放/关闭构象平衡",
+        "relation": "offering",
+        "tail": "治疗策略",
+        "claim": "构象平衡调控通过脂质组成 modulation 提供新治疗靶点"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "结构生物学技术",
+        "relation": "reveal",
+        "tail": "脂质插入",
+        "claim": "结构生物学结合模拟揭示脂质插入稳定GPCR构象"
+      },
+      {
+        "step": 2,
+        "head": "脂质插入",
+        "relation": "stabilizes",
+        "tail": "构象状态",
+        "claim": "特定脂质插入模式稳定活性/非活性GPCR状态"
+      },
+      {
+        "step": 3,
+        "head": "膜脂质",
+        "relation": "regulates",
+        "tail": "受体亚型",
+        "claim": "膜脂双层不对称性调控不同受体亚型偶联效率"
+      },
+      {
+        "step": 4,
+        "head": "受体亚型",
+        "relation": "provides",
+        "tail": "治疗策略",
+        "claim": "受体亚型差异为偏向信号药物开发提供结构基础"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "膜脂质动力学",
+        "relation": "modulates",
+        "tail": "侧向配体进入通道",
+        "claim": "膜脂动力学通过疏水不匹配调节通道开闭动力学"
+      },
+      {
+        "step": 2,
+        "head": "侧向配体进入通道",
+        "relation": "quantitatively predicts",
+        "tail": "分子动力学",
+        "claim": "通道动力学可通过分子动力学模拟定量预测"
+      },
+      {
+        "step": 3,
+        "head": "分子动力学",
+        "relation": "allows",
+        "tail": "药物靶向策略",
+        "claim": "脂质依赖的渗透控制实现疾病特异性药物靶向"
+      }
+    ]
+  ],
+  "L3": [
+    [
+      {
+        "step": 1,
+        "head": "射线晶体学",
+        "relation": "enables",
+        "tail": "构象柔性",
+        "claim": "整合结构技术实现微开关残基波动与网络关联"
+      },
+      {
+        "step": 2,
+        "head": "构象柔性",
+        "relation": "validates",
+        "tail": "变构通讯网络",
+        "claim": "实验结构验证计算预测的隐藏结合位点"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "分子动力学数据库",
+        "relation": "predicts",
+        "tail": "侧向配体进入通道",
+        "claim": "机器学习模型预测通道开放概率"
+      },
+      {
+        "step": 2,
+        "head": "侧向配体进入通道",
+        "relation": "establishes",
+        "tail": "治疗策略",
+        "claim": "实验验证确立脂质占据为可药物参数"
+      }
+    ]
+  ]
+}

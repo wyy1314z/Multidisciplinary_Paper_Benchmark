@@ -1,0 +1,144 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "GPCR",
+        "relation": "exhibits",
+        "tail": "构象柔性",
+        "claim": "GPCR具有构象柔性特征"
+      },
+      {
+        "step": 2,
+        "head": "构象柔性",
+        "relation": "affects",
+        "tail": "变构药物结合位点",
+        "claim": "构象柔性影响变构位点可及性"
+      },
+      {
+        "step": 3,
+        "head": "膜脂质动力学",
+        "relation": "modulates",
+        "tail": "GPCR",
+        "claim": "膜脂质动力学调控GPCR构象状态"
+      },
+      {
+        "step": 4,
+        "head": "特定脂质组成",
+        "relation": "stabilizes",
+        "tail": "受体构象",
+        "claim": "特定脂质组成稳定特定受体构象"
+      },
+      {
+        "step": 5,
+        "head": "受体构象",
+        "relation": "modulates",
+        "tail": "变构药物结合位点",
+        "claim": "受体构象调节变构药物结合特性"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "X射线晶体学",
+        "relation": "provides",
+        "tail": "结构快照",
+        "claim": "X射线晶体学提供静态结构信息"
+      },
+      {
+        "step": 2,
+        "head": "冷冻电子显微镜",
+        "relation": "provides",
+        "tail": "结构快照",
+        "claim": "冷冻电镜捕捉不同构象状态"
+      },
+      {
+        "step": 3,
+        "head": "分子动力学模拟",
+        "relation": "captures",
+        "tail": "动态行为",
+        "claim": "分子动力学模拟揭示动态变化"
+      },
+      {
+        "step": 4,
+        "head": "整合技术",
+        "relation": "identifies",
+        "tail": "信号特异性构象",
+        "claim": "技术整合识别信号相关构象"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "膜脂质动力学",
+        "relation": "modulates",
+        "tail": "GPCR构象状态",
+        "claim": "脂质环境调控受体构象动态"
+      },
+      {
+        "step": 2,
+        "head": "特定脂质",
+        "relation": "promotes",
+        "tail": "新变构位点",
+        "claim": "特定脂质促进新变构位点开放"
+      },
+      {
+        "step": 3,
+        "head": "新变构位点",
+        "relation": "enhances",
+        "tail": "药物靶向策略",
+        "claim": "新位点提升药物设计选择性"
+      }
+    ]
+  ],
+  "L3": [
+    [
+      {
+        "step": 1,
+        "head": "膜脂质动力学",
+        "relation": "modulates",
+        "tail": "GPCR构象状态",
+        "claim": "脂质环境调控受体构象状态"
+      },
+      {
+        "step": 2,
+        "head": "GPCR构象状态",
+        "relation": "mediates",
+        "tail": "信号传导",
+        "claim": "构象状态介导信号传导路径"
+      },
+      {
+        "step": 3,
+        "head": "特定脂质环境",
+        "relation": "promotes",
+        "tail": "特定信号传导",
+        "claim": "特定脂质环境偏好特定信号"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "膜脂质动力学",
+        "relation": "alters",
+        "tail": "GPCR构象动态",
+        "claim": "脂质环境改变受体动态特性"
+      },
+      {
+        "step": 2,
+        "head": "改变的构象动态",
+        "relation": "creates",
+        "tail": "新变构药物结合位点",
+        "claim": "动态变化产生新型结合位点"
+      },
+      {
+        "step": 3,
+        "head": "新变构位点",
+        "relation": "expands",
+        "tail": "药物靶向策略",
+        "claim": "新位点拓展治疗开发空间"
+      }
+    ]
+  ]
+}

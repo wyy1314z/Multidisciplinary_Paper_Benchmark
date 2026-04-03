@@ -1,0 +1,130 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "isothermal compressibility-assisted dynamic squeezing index perturbation engineering",
+        "relation": "enables",
+        "tail": "structure-based supervised machine learning",
+        "claim": "iCASE提供结构洞察力以支持机器学习模型构建"
+      },
+      {
+        "step": 2,
+        "head": "structure-based supervised machine learning",
+        "relation": "causes",
+        "tail": "enzyme stability",
+        "claim": "机器学习模型通过结构特征学习提升酶稳定性预测"
+      },
+      {
+        "step": 3,
+        "head": "structure-based supervised machine learning",
+        "relation": "causes",
+        "tail": "catalytic activity",
+        "claim": "机器学习模型通过结构特征学习提升催化活性预测"
+      },
+      {
+        "step": 4,
+        "head": "machine learning predictions",
+        "relation": "transforms",
+        "tail": "novel enzyme variants",
+        "claim": "算法预测指导设计具有工业应用潜力的新型酶变体"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "structure-based supervised machine learning",
+        "relation": "enables",
+        "tail": "molecular dynamics simulations",
+        "claim": "机器学习模型与分子动力学模拟整合分析PET水解酶结合模式"
+      },
+      {
+        "step": 2,
+        "head": "molecular dynamics simulations",
+        "relation": "causes",
+        "tail": "substrate binding mode",
+        "claim": "动态模拟揭示PET多聚体与关键残基的相互作用机制"
+      },
+      {
+        "step": 3,
+        "head": "substrate binding mode",
+        "relation": "transforms",
+        "tail": "catalytic mechanism",
+        "claim": "结合模式分析优化催化效率预测"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "iCASE",
+        "relation": "enables",
+        "tail": "molecular response model",
+        "claim": "iCASE策略建立分子响应模型以解析适应性进化"
+      },
+      {
+        "step": 2,
+        "head": "molecular response model",
+        "relation": "causes",
+        "tail": "fitness landscape",
+        "claim": "模型预测并优化包含上位效应的适应度景观"
+      },
+      {
+        "step": 3,
+        "head": "fitness landscape",
+        "relation": "transforms",
+        "tail": "enzyme design",
+        "claim": "适应度景观优化指导抗上位效应酶设计"
+      }
+    ]
+  ],
+  "L3": [
+    [
+      {
+        "step": 1,
+        "head": "protein surface charges",
+        "relation": "enables",
+        "tail": "phenotypic adaptive landscape",
+        "claim": "表面电荷分析识别影响稳定性与活性的关键残基"
+      },
+      {
+        "step": 2,
+        "head": "phenotypic adaptive landscape",
+        "relation": "causes",
+        "tail": "dynamic response predictive model",
+        "claim": "适应景观建模映射进化路径并预测突变效应"
+      },
+      {
+        "step": 3,
+        "head": "dynamic response predictive model",
+        "relation": "transforms",
+        "tail": "enzyme optimization",
+        "claim": "动态预测模型系统性优化酶稳定性与活性"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "iCASE",
+        "relation": "enables",
+        "tail": "high-throughput screening",
+        "claim": "iCASE结构洞察指导高通量筛选候选变体预选"
+      },
+      {
+        "step": 2,
+        "head": "high-throughput screening",
+        "relation": "causes",
+        "tail": "novel functionalities",
+        "claim": "靶向筛选加速降解顽固底物等新功能发现"
+      },
+      {
+        "step": 3,
+        "head": "novel functionalities",
+        "relation": "transforms",
+        "tail": "substrate degradation",
+        "claim": "功能筛选验证新酶变体的工业应用潜力"
+      }
+    ]
+  ]
+}

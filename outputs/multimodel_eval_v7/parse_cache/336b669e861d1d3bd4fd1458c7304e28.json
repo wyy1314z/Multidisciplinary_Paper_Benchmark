@@ -1,0 +1,116 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "Integrating machine learning algorithms",
+        "relation": "enables",
+        "tail": "dynamic adjustment of synthesis parameters",
+        "claim": "整合机器学习算法使得实时动态调整合成参数成为可能"
+      },
+      {
+        "step": 2,
+        "head": "dynamic adjustment of synthesis parameters",
+        "relation": "transforms",
+        "tail": "plasmonic nanoparticle optical properties",
+        "claim": "动态调整参数直接改变纳米粒子的等离子体光学特性"
+      },
+      {
+        "step": 3,
+        "head": "plasmonic nanoparticle optical properties",
+        "relation": "dictates",
+        "tail": "nanoparticle dimensions/shape/composition",
+        "claim": "光学特性决定纳米粒子的尺寸/形状/组成"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "microfluidic reactors",
+        "relation": "accelerates",
+        "tail": "exploration of multidimensional chemical space",
+        "claim": "微流体反应器加速多维化学空间探索"
+      },
+      {
+        "step": 2,
+        "head": "automated variation of reagents",
+        "relation": "requires",
+        "tail": "tightly controlled reaction conditions",
+        "claim": "自动化试剂变化需要严格控制反应条件"
+      },
+      {
+        "step": 3,
+        "head": "high-throughput spectroscopic feedback",
+        "relation": "enables",
+        "tail": "efficient mapping of synthesis outcomes",
+        "claim": "高通量光谱反馈实现合成结果的高效映射"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "Bayesian optimization",
+        "relation": "optimizes",
+        "tail": "nanoparticle synthesis parameters",
+        "claim": "贝叶斯优化方法优化合成参数"
+      },
+      {
+        "step": 2,
+        "head": "learning nonlinear relationships",
+        "relation": "refines",
+        "tail": "experimental designs",
+        "claim": "学习非线性关系可优化实验设计"
+      },
+      {
+        "step": 3,
+        "head": "iterative refinement",
+        "relation": "causes",
+        "tail": "faster convergence on desired features",
+        "claim": "迭代优化加速获得目标纳米特性"
+      }
+    ]
+  ],
+  "L3": [
+    [
+      {
+        "step": 1,
+        "head": "closed-loop system",
+        "relation": "autonomously regulates",
+        "tail": "reaction conditions",
+        "claim": "闭环系统自主调节反应条件"
+      },
+      {
+        "step": 2,
+        "head": "real-time spectroscopic data",
+        "relation": "improves",
+        "tail": "synthesis outcomes",
+        "claim": "实时光谱数据持续优化合成结果"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "online spectroscopic characterization",
+        "relation": "enables",
+        "tail": "real-time prediction of nanoparticle morphology",
+        "claim": "在线光谱表征实现实时形态预测"
+      },
+      {
+        "step": 2,
+        "head": "deep neural networks",
+        "relation": "analyzes",
+        "tail": "plasmon resonance spectral features",
+        "claim": "深度神经网络分析等离子体共振光谱特征"
+      },
+      {
+        "step": 3,
+        "head": "adaptive control of parameters",
+        "relation": "achieves",
+        "tail": "precise nanoparticle morphologies",
+        "claim": "参数自适应控制实现精确形态调控"
+      }
+    ]
+  ]
+}

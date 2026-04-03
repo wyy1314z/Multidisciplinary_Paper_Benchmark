@@ -1,0 +1,76 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "Engineering coordination geometry/electronic structure of metalloid nodes in MOFs",
+        "relation": "enables",
+        "tail": "mimicking peroxidase active sites (Fe-porphyrin)",
+        "claim": "设计类金属节点结构模拟酶活性位点"
+      },
+      {
+        "step": 2,
+        "head": "mimicking peroxidase active sites",
+        "relation": "transforms",
+        "tail": "tunable redox-active centers",
+        "claim": "模拟酶活性位点产生可调氧化还原中心"
+      },
+      {
+        "step": 3,
+        "head": "tunable redox-active centers",
+        "relation": "causes",
+        "tail": "selective ROS generation in TME",
+        "claim": "氧化还原中心驱动肿瘤微环境特异性产生活性氧"
+      },
+      {
+        "step": 4,
+        "head": "selective ROS generation",
+        "relation": "inhibits",
+        "tail": "tumor progression",
+        "claim": "活性氧爆发抑制肿瘤发展"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "Mixed metallic/covalent bonding in metalloid nodes",
+        "relation": "enables",
+        "tail": "heterolytic O–O bond cleavage in H₂O₂",
+        "claim": "混合键合模式实现过氧化氢异裂分解"
+      },
+      {
+        "step": 2,
+        "head": "heterolytic O–O bond cleavage",
+        "relation": "transforms",
+        "tail": "cytotoxic ROS",
+        "claim": "化学键断裂产生细胞毒性活性氧"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "MOF nanopores",
+        "relation": "requires",
+        "tail": "H₂O₂ concentration gradient",
+        "claim": "纳米孔结构依赖过氧化氢梯度富集"
+      },
+      {
+        "step": 2,
+        "head": "H₂O₂ concentration gradient",
+        "relation": "causes",
+        "tail": "localized ROS bursts",
+        "claim": "过氧化氢梯度引发局部活性氧爆发"
+      },
+      {
+        "step": 3,
+        "head": "localized ROS bursts",
+        "relation": "inhibits",
+        "tail": "off-target effects",
+        "claim": "局部活性氧降低脱靶效应"
+      }
+    ]
+  ],
+  "L3": []
+}

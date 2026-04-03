@@ -1,0 +1,97 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "conformational breathing dynamics of GPCRs",
+        "relation": "transforms",
+        "tail": "transient allosteric pockets",
+        "claim": "GPCR构象呼吸动力学产瞬时变构口袋"
+      },
+      {
+        "step": 2,
+        "head": "transient allosteric pockets",
+        "relation": "stabilizes",
+        "tail": "membrane lipid interactions",
+        "claim": "膜脂相互作用稳定瞬时变构口袋"
+      },
+      {
+        "step": 3,
+        "head": "membrane lipid interactions",
+        "relation": "enables",
+        "tail": "functional regulation",
+        "claim": "脂质相互作用通过构象状态调节实现功能调控"
+      },
+      {
+        "step": 4,
+        "head": "transient allosteric pockets",
+        "relation": "exposes",
+        "tail": "cryptic binding sites",
+        "claim": "瞬时变构口袋暴露隐秘结合位点"
+      },
+      {
+        "step": 5,
+        "head": "cryptic binding sites",
+        "relation": "enables",
+        "tail": "drug targeting",
+        "claim": "隐秘结合位点暴露为药物靶向提供机会"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "GPCR activation states",
+        "relation": "correlates",
+        "tail": "ECL2 fluctuation amplitude",
+        "claim": "特定激活状态与ECL2波动幅度相关联"
+      },
+      {
+        "step": 2,
+        "head": "ECL2 fluctuation amplitude",
+        "relation": "determines",
+        "tail": "ligand-binding pocket accessibility",
+        "claim": "ECL2波动幅度决定配体结合口袋可及性"
+      },
+      {
+        "step": 3,
+        "head": "ligand-binding pocket accessibility",
+        "relation": "enhances",
+        "tail": "G-protein coupling efficiency",
+        "claim": "配体口袋开放性增强G蛋白偶联效率"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "polyunsaturated fatty acids",
+        "relation": "occupies",
+        "tail": "conserved lipid interaction site",
+        "claim": "多不饱和脂肪酸占据TM6/7保守脂质位点"
+      },
+      {
+        "step": 2,
+        "head": "conserved lipid interaction site",
+        "relation": "stabilizes",
+        "tail": "open conformations",
+        "claim": "保守位点结合稳定开放构象"
+      },
+      {
+        "step": 3,
+        "head": "open conformations",
+        "relation": "increases",
+        "tail": "lateral drug access",
+        "claim": "开放构象增加侧向药物通道概率"
+      },
+      {
+        "step": 4,
+        "head": "lateral drug access",
+        "relation": "enhances",
+        "tail": "allosteric modulator binding",
+        "claim": "侧向通道促进变构调节剂在胞内界面结合"
+      }
+    ]
+  ],
+  "L3": []
+}

@@ -1,0 +1,144 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "integration of dielectric gradient metamaterials with advanced 3D printing techniques",
+        "relation": "enables",
+        "tail": "design and fabrication of THz metalenses",
+        "claim": "整合使THz金属透镜的设计制造成为可能"
+      },
+      {
+        "step": 2,
+        "head": "design and fabrication of THz metalenses",
+        "relation": "overcomes",
+        "tail": "traditional limitations (chromatic aberrations, spherical aberrations, diffraction limit)",
+        "claim": "THz金属透镜克服了传统限制"
+      },
+      {
+        "step": 3,
+        "head": "precise control of refractive index profile through 3D printing of high-aspect-ratio nano-pillar structures",
+        "relation": "achieves",
+        "tail": "super-resolution imaging (NA 0.555, FOV 90°)",
+        "claim": "控制折射率分布实现了超分辨率参数"
+      },
+      {
+        "step": 4,
+        "head": "super-resolution imaging",
+        "relation": "enhances",
+        "tail": "capabilities of THz imaging systems for applications",
+        "claim": "超分辨率提升了THz系统的应用能力"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "use of dielectric gradient metamaterials in THz metalens design",
+        "relation": "mitigates",
+        "tail": "chromatic aberration",
+        "claim": "介电梯度超材料缓解了色差"
+      },
+      {
+        "step": 2,
+        "head": "use of dielectric gradient metamaterials",
+        "relation": "achieves",
+        "tail": "super-resolution imaging",
+        "claim": "介电梯度超材料实现了超分辨率成像"
+      },
+      {
+        "step": 3,
+        "head": "precise control of subwavelength nano-scatterers",
+        "relation": "manipulates",
+        "tail": "phase of THz wavefront",
+        "claim": "控制散射体操纵THz波前相位"
+      },
+      {
+        "step": 4,
+        "head": "manipulation of THz wavefront phase",
+        "relation": "corrects",
+        "tail": "chromatic dispersion across a broad frequency range",
+        "claim": "操纵相位纠正了宽频色散"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "advanced 3D printing technology",
+        "relation": "enables",
+        "tail": "precise fabrication of complex nanostructures for THz metalenses",
+        "claim": "3D打印技术使复杂纳米结构制造成为可能"
+      },
+      {
+        "step": 2,
+        "head": "optimization of 3D printing parameters (layer thickness, material composition)",
+        "relation": "improves",
+        "tail": "structural integrity and optical properties of metalenses",
+        "claim": "参数优化改善了结构完整性和光学性质"
+      },
+      {
+        "step": 3,
+        "head": "improved structural and optical properties",
+        "relation": "enhances",
+        "tail": "imaging resolution and reduces manufacturing costs",
+        "claim": "改善的性质提升了分辨率并降低成本"
+      }
+    ]
+  ],
+  "L3": [
+    [
+      {
+        "step": 1,
+        "head": "combination of dielectric gradient metamaterial design with 3D printing",
+        "relation": "leads to",
+        "tail": "THz metalenses with super-resolution and wide bandwidth efficiency",
+        "claim": "整合设计实现了超分辨率和宽带效率"
+      },
+      {
+        "step": 2,
+        "head": "alignment of phase distribution and refractive index profile during 3D printing",
+        "relation": "surpasses",
+        "tail": "Abbe diffraction limit",
+        "claim": "对齐参数使超越阿贝衍射极限成为可能"
+      },
+      {
+        "step": 3,
+        "head": "surpassing diffraction limit",
+        "relation": "enables",
+        "tail": "visualization of submillimeter features with high precision",
+        "claim": "超越极限实现了亚毫米特征的高精度可视化"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "incorporation of high-aspect-ratio nano-pillar structures",
+        "relation": "enhances",
+        "tail": "numerical aperture (NA) and field of view (FOV)",
+        "claim": "纳米柱结构提升了NA和FOV"
+      },
+      {
+        "step": 2,
+        "head": "combination with super-surface technology",
+        "relation": "enables",
+        "tail": "concentric nano-ring structures",
+        "claim": "超表面技术实现了同心纳米环结构"
+      },
+      {
+        "step": 3,
+        "head": "concentric nano-ring structures",
+        "relation": "improves",
+        "tail": "NA to 0.555 and FOV to 90°",
+        "claim": "同心环结构达到具体NA和FOV参数"
+      },
+      {
+        "step": 4,
+        "head": "enhanced NA and FOV",
+        "relation": "provides",
+        "tail": "broader and more detailed imaging capability",
+        "claim": "提升的参数提供了更广的成像能力"
+      }
+    ]
+  ]
+}

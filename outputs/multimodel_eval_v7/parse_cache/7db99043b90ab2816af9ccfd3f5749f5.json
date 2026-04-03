@@ -1,0 +1,43 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "precise control of surface coating with organic molecules",
+        "relation": "enables",
+        "tail": "interaction between functional groups/chain lengths and surface plasmon resonance",
+        "claim": "有机分子的官能团和链长与表面等离子共振相互作用"
+      },
+      {
+        "step": 2,
+        "head": "external electromagnetic field",
+        "relation": "modulates",
+        "tail": "electron distribution on nanoparticle surface",
+        "claim": "外部电磁场调整纳米粒子表面的电子分布"
+      },
+      {
+        "step": 3,
+        "head": "altered electron distribution",
+        "relation": "leads to",
+        "tail": "precise tuning of absorption and scattering spectra",
+        "claim": "电子分布的改变导致吸收和散射光谱的精确调节"
+      },
+      {
+        "step": 4,
+        "head": "precise tuning of absorption and scattering spectra",
+        "relation": "allows for",
+        "tail": "targeted optical properties (peak wavelength, bandwidth, intensity)",
+        "claim": "光谱的精确调节允许实现特定的光学性质"
+      },
+      {
+        "step": 5,
+        "head": "spectroscopic measurements and electron microscopy",
+        "relation": "verify",
+        "tail": "targeted optical properties",
+        "claim": "实验测量验证特定的光学性质"
+      }
+    ]
+  ],
+  "L2": [],
+  "L3": []
+}

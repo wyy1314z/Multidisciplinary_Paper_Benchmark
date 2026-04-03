@@ -1,0 +1,139 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "Conformational dynamics of GPCRs",
+        "relation": "regulates",
+        "tail": "conformational flexibility of allosteric drug-binding sites",
+        "claim": "构象动态调节变构药物结合位点的构象柔性"
+      },
+      {
+        "step": 2,
+        "head": "conformational flexibility of allosteric drug-binding sites",
+        "relation": "affects",
+        "tail": "signaling efficiency",
+        "claim": "构象柔性影响信号传导效率"
+      },
+      {
+        "step": 3,
+        "head": "conformational flexibility of allosteric drug-binding sites",
+        "relation": "affects",
+        "tail": "drug targeting efficacy",
+        "claim": "构象柔性影响药物靶向效果"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "Local \"breathing\" motions in different conformations",
+        "relation": "alters",
+        "tail": "interactions with membrane lipids",
+        "claim": "局部呼吸运动改变受体与膜脂质的相互作用"
+      },
+      {
+        "step": 2,
+        "head": "interactions with membrane lipids",
+        "relation": "modulates",
+        "tail": "activity of allosteric communication networks",
+        "claim": "相互作用的改变调控变构通讯网络的活性"
+      },
+      {
+        "step": 3,
+        "head": "activity of allosteric communication networks",
+        "relation": "provides",
+        "tail": "new targets and strategies for precision drug design",
+        "claim": "通讯网络活性的调控为精准药物设计提供新靶点和策略"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "Conformational changes in different states",
+        "relation": "regulate",
+        "tail": "allosteric communication networks in receptors",
+        "claim": "构象变化调节受体内的变构通讯网络"
+      },
+      {
+        "step": 2,
+        "head": "allosteric communication networks in receptors",
+        "relation": "affect",
+        "tail": "signaling efficiency and specificity",
+        "claim": "变构通讯网络的调控影响信号传导效率和特异性"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "Membrane lipid dynamics",
+        "relation": "regulates",
+        "tail": "open state of lateral ligand entry channels",
+        "claim": "膜脂质动力学调节侧向配体进入通道的开放状态"
+      },
+      {
+        "step": 2,
+        "head": "open state of lateral ligand entry channels",
+        "relation": "affects",
+        "tail": "conformation and accessibility of allosteric drug-binding sites",
+        "claim": "通道开放状态影响变构药物结合位点的构象及其可及性"
+      },
+      {
+        "step": 3,
+        "head": "conformation and accessibility of allosteric drug-binding sites",
+        "relation": "changes",
+        "tail": "drug binding affinity and selectivity",
+        "claim": "构象和可及性的改变影响药物结合亲和力和选择性"
+      }
+    ]
+  ],
+  "L3": [
+    [
+      {
+        "step": 1,
+        "head": "Static structural data from crystallography and cryo-EM combined with MD simulations",
+        "relation": "integrates",
+        "tail": "cooperative model encompassing conformational dynamics, allosteric site changes, and drug binding patterns",
+        "claim": "整合静态结构数据与分子动力学模拟建立协同模型"
+      },
+      {
+        "step": 2,
+        "head": "cooperative model encompassing conformational dynamics, allosteric site changes, and drug binding patterns",
+        "relation": "predicts",
+        "tail": "open or closed states of allosteric drug-binding sites in specific conformations",
+        "claim": "协同模型预测特定构象状态下变构药物结合位点的状态"
+      },
+      {
+        "step": 3,
+        "head": "open or closed states of allosteric drug-binding sites in specific conformations",
+        "relation": "correlates with",
+        "tail": "pharmacological effects",
+        "claim": "位点状态与药效相关性得到实验验证"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "Different lipid components",
+        "relation": "affect",
+        "tail": "dynamics of lateral ligand entry channels",
+        "claim": "不同脂质成分影响侧向配体进入通道的动态"
+      },
+      {
+        "step": 2,
+        "head": "dynamics of lateral ligand entry channels",
+        "relation": "modulate",
+        "tail": "conformational states of allosteric sites",
+        "claim": "通道动态的改变调控变构位点的构象状态"
+      },
+      {
+        "step": 3,
+        "head": "conformational states of allosteric sites",
+        "relation": "influence",
+        "tail": "drug permeability and targeting efficacy",
+        "claim": "变构位点构象状态影响药物渗透和靶向效果"
+      }
+    ]
+  ]
+}

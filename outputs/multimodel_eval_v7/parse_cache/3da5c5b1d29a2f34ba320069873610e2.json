@@ -1,0 +1,114 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "构象动态",
+        "relation": "transforms",
+        "tail": "膜脂质动力学",
+        "claim": "构象动态的变化会引起周围膜脂质环境的改变"
+      },
+      {
+        "step": 2,
+        "head": "膜脂质动力学",
+        "relation": "affects",
+        "tail": "变构药物结合位点",
+        "claim": "膜脂质动力学的变化会改变变构药物结合位点的形状和可用性"
+      },
+      {
+        "step": 3,
+        "head": "变构药物结合位点",
+        "relation": "impacts",
+        "tail": "药物靶向策略",
+        "claim": "变构药物结合位点的变化直接影响药物靶向策略的实施效果"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "构象变化",
+        "relation": "causes",
+        "tail": "化学信号传导",
+        "claim": "构象变化会改变配体结合的化学信号传导过程"
+      },
+      {
+        "step": 2,
+        "head": "化学信号传导",
+        "relation": "modulates",
+        "tail": "信号传导通路",
+        "claim": "不同的化学信号传导会调控不同的信号传导通路"
+      },
+      {
+        "step": 3,
+        "head": "受体亚型",
+        "relation": "modulates",
+        "tail": "信号传导通路",
+        "claim": "受体亚型的不同会导致信号传导通路调控存在差异"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "膜脂质动力学",
+        "relation": "transforms",
+        "tail": "脂质插入",
+        "claim": "膜脂质动力学的变化会导致脂质插入的改变"
+      },
+      {
+        "step": 2,
+        "head": "脂质插入",
+        "relation": "causes",
+        "tail": "变构通讯网络",
+        "claim": "脂质插入的改变会引起变构通讯网络的变化"
+      },
+      {
+        "step": 3,
+        "head": "变构通讯网络",
+        "relation": "affects",
+        "tail": "变构药物结合位点",
+        "claim": "变构通讯网络的变化会影响变构药物结合位点的性质"
+      },
+      {
+        "step": 4,
+        "head": "变构药物结合位点",
+        "relation": "impacts",
+        "tail": "药物靶向策略",
+        "claim": "变构药物结合位点性质的改变会影响药物与该位点的结合"
+      }
+    ]
+  ],
+  "L3": [
+    [
+      {
+        "step": 1,
+        "head": "协同验证模型",
+        "relation": "enables",
+        "tail": "构象动态",
+        "claim": "协同验证模型可以准确分析蛋白偶联受体的构象动态"
+      },
+      {
+        "step": 2,
+        "head": "构象动态",
+        "relation": "affects",
+        "tail": "膜脂质渗透",
+        "claim": "构象动态的变化会影响膜脂质的渗透过程"
+      },
+      {
+        "step": 3,
+        "head": "膜脂质渗透",
+        "relation": "transforms",
+        "tail": "变构药物结合位点",
+        "claim": "膜脂质渗透的改变会导致变构药物结合位点的状态变化"
+      },
+      {
+        "step": 4,
+        "head": "变构药物结合位点",
+        "relation": "optimizes",
+        "tail": "药物靶向策略",
+        "claim": "变构药物结合位点状态的变化可用于优化药物靶向策略"
+      }
+    ]
+  ]
+}

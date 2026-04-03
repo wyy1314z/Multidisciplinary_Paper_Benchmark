@@ -1,0 +1,107 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "tunable pore structure",
+        "relation": "modulates",
+        "tail": "damage-associated molecular patterns",
+        "claim": "动态重构的孔结构通过选择性吸附DAMPs调节其分布"
+      },
+      {
+        "step": 2,
+        "head": "damage-associated molecular patterns",
+        "relation": "enhances",
+        "tail": "dendritic cell maturation",
+        "claim": "DAMPs浓度梯度增强树突状细胞成熟效率"
+      },
+      {
+        "step": 3,
+        "head": "dendritic cell maturation",
+        "relation": "creates",
+        "tail": "self-amplifying loop",
+        "claim": "树突状细胞成熟与结构演变形成正反馈循环"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "可控配体去除策略",
+        "relation": "exposes",
+        "tail": "electron-deficient metal nodes",
+        "claim": "配体去除暴露缺电子铁位点"
+      },
+      {
+        "step": 2,
+        "head": "electron-deficient metal nodes",
+        "relation": "catalyzes",
+        "tail": "glutathione oxidation",
+        "claim": "缺电子位点催化谷胱甘肽氧化生成GSSG"
+      },
+      {
+        "step": 3,
+        "head": "glutathione oxidation",
+        "relation": "induces",
+        "tail": "ferroptosis sensitivity",
+        "claim": "GSSG富集通过系统xc−抑制引发铁死亡敏感性"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "多孔结构",
+        "relation": "generates",
+        "tail": "ROS propagation gradients",
+        "claim": "分形孔隙结构驱动活性氧空间梯度分布"
+      },
+      {
+        "step": 2,
+        "head": "ROS propagation gradients",
+        "relation": "initiates",
+        "tail": "lipid peroxidation",
+        "claim": "微孔高通量•OH启动脂质过氧化反应"
+      },
+      {
+        "step": 3,
+        "head": "lipid peroxidation",
+        "relation": "overcomes",
+        "tail": "tumor heterogeneity",
+        "claim": "空间铁死亡梯度克服肿瘤异质性屏障"
+      }
+    ]
+  ],
+  "L3": [
+    [
+      {
+        "step": 1,
+        "head": "可控配体去除策略",
+        "relation": "induces",
+        "tail": "crystallographic anisotropy",
+        "claim": "配体去除导致晶体各向异性暴露活性面"
+      },
+      {
+        "step": 2,
+        "head": "crystallographic anisotropy",
+        "relation": "modulates",
+        "tail": "Fenton reaction kinetics",
+        "claim": "各向异性调控H2O2分解时空动力学"
+      },
+      {
+        "step": 3,
+        "head": "Fenton reaction kinetics",
+        "relation": "synchronizes",
+        "tail": "ferroptotic membrane rupture",
+        "claim": "ROS爆发同步铁死亡与免疫原性破裂事件"
+      },
+      {
+        "step": 4,
+        "head": "ferroptotic membrane rupture",
+        "relation": "amplifies",
+        "tail": "danger signaling",
+        "claim": "膜破裂增强抗原呈递细胞招募信号"
+      }
+    ]
+  ]
+}

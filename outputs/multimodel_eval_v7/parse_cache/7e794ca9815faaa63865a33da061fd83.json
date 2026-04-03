@@ -1,0 +1,158 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "准金属有机框架的可控配体去除策略",
+        "relation": "transforms",
+        "tail": "金属氧化物转化",
+        "claim": "配体去除策略引发材料向金属氧化物转化"
+      },
+      {
+        "step": 2,
+        "head": "金属氧化物转化",
+        "relation": "enables",
+        "tail": "暴露活性位点与多孔结构",
+        "claim": "材料转化过程暴露更多活性位点并形成多孔结构"
+      },
+      {
+        "step": 3,
+        "head": "暴露活性位点与多孔结构",
+        "relation": "causes",
+        "tail": "过氧化氢高效分解",
+        "claim": "多孔结构增强肿瘤微环境中过氧化氢催化效率"
+      },
+      {
+        "step": 4,
+        "head": "过氧化氢高效分解",
+        "relation": "causes",
+        "tail": "铁死亡与免疫原性细胞死亡",
+        "claim": "催化反应诱导肿瘤细胞铁死亡并触发免疫应答"
+      },
+      {
+        "step": 5,
+        "head": "铁死亡与免疫原性细胞死亡",
+        "relation": "causes",
+        "tail": "肿瘤生长抑制与免疫治疗增强",
+        "claim": "双重效应协同抑制肿瘤并提升免疫治疗效果"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "可控配体去除过程",
+        "relation": "transforms",
+        "tail": "金属节点化学环境调整",
+        "claim": "配体剥离导致金属活性中心周围化学环境改变"
+      },
+      {
+        "step": 2,
+        "head": "金属节点化学环境调整",
+        "relation": "causes",
+        "tail": "暴露金属活性中心",
+        "claim": "化学环境变化使更多金属位点转化为活性状态"
+      },
+      {
+        "step": 3,
+        "head": "暴露金属活性中心",
+        "relation": "enhances",
+        "tail": "纳米酶催化活性",
+        "claim": "活性中心增加显著提升过氧化物酶样催化效率"
+      },
+      {
+        "step": 4,
+        "head": "纳米酶催化活性",
+        "relation": "causes",
+        "tail": "高活性氧产率与谷胱甘肽耗竭",
+        "claim": "增强的催化活性导致更强的氧化应激效应"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "多孔结构纳米材料",
+        "relation": "enables",
+        "tail": "铁离子富集",
+        "claim": "多孔结构促进肿瘤微环境中铁离子积累"
+      },
+      {
+        "step": 2,
+        "head": "铁离子富集",
+        "relation": "causes",
+        "tail": "过氧化氢转化羟基自由基",
+        "claim": "铁离子催化过氧化氢转化为高毒性羟基自由基"
+      },
+      {
+        "step": 3,
+        "head": "羟基自由基产生",
+        "relation": "causes",
+        "tail": "脂质过氧化与铁死亡",
+        "claim": "自由基攻击引发肿瘤细胞脂质过氧化并导致铁死亡"
+      }
+    ]
+  ],
+  "L3": [
+    [
+      {
+        "step": 1,
+        "head": "可控配体去除策略",
+        "relation": "optimizes",
+        "tail": "孔径与Fe位点分布",
+        "claim": "配体调控优化材料孔结构与铁活性位点暴露"
+      },
+      {
+        "step": 2,
+        "head": "孔径与Fe位点分布",
+        "relation": "enhances",
+        "tail": "芬顿反应速率",
+        "claim": "优化结构显著加速芬顿反应产生活性氧"
+      },
+      {
+        "step": 3,
+        "head": "芬顿反应增强",
+        "relation": "causes",
+        "tail": "活性氧爆发",
+        "claim": "加速反应导致肿瘤内高浓度活性氧积累"
+      },
+      {
+        "step": 4,
+        "head": "活性氧爆发",
+        "relation": "causes",
+        "tail": "铁死亡与DAMPs释放",
+        "claim": "氧化应激同时诱导铁死亡和损伤相关分子释放"
+      },
+      {
+        "step": 5,
+        "head": "DAMPs释放",
+        "relation": "triggers",
+        "tail": "免疫原性细胞死亡",
+        "claim": "分子信号激活抗肿瘤免疫应答级联反应"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "Q-MIL-53(Fe)治疗",
+        "relation": "causes",
+        "tail": "铁死亡与免疫激活",
+        "claim": "材料治疗诱导肿瘤细胞死亡并启动免疫监视"
+      },
+      {
+        "step": 2,
+        "head": "PD-1抗体",
+        "relation": "inhibits",
+        "tail": "T细胞免疫抑制",
+        "claim": "抗体阻断肿瘤对T细胞的抑制信号"
+      },
+      {
+        "step": 3,
+        "head": "免疫抑制解除",
+        "relation": "enhances",
+        "tail": "T细胞活化与免疫记忆",
+        "claim": "联合治疗显著提升抗肿瘤免疫持久性与强度"
+      }
+    ]
+  ]
+}

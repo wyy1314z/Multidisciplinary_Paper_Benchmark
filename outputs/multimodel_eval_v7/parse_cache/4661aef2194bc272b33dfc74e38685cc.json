@@ -1,0 +1,116 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "dielectric gradient metamaterials",
+        "relation": "transforms",
+        "tail": "achromatic THz lens",
+        "claim": "整合介电梯度超材料与3D打印技术可设计出消色差THz透镜"
+      },
+      {
+        "step": 2,
+        "head": "tailored refractive index distribution",
+        "relation": "causes",
+        "tail": "THz imaging system",
+        "claim": "定制折射率分布与纳米结构协同作用可突破阿贝衍射极限"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "spatial modulation of refractive index",
+        "relation": "aligns",
+        "tail": "predetermined phase distribution",
+        "claim": "空间折射率调制可与预设相位分布对齐"
+      },
+      {
+        "step": 2,
+        "head": "predetermined phase distribution",
+        "relation": "compensates",
+        "tail": "chromatic/spherical aberrations",
+        "claim": "预设相位分布可补偿色差和球差"
+      },
+      {
+        "step": 3,
+        "head": "high aspect ratio nanopillar structures",
+        "relation": "enables",
+        "tail": "stable imaging performance",
+        "claim": "高纵横比纳米柱结构可实现宽频稳定成像"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "3D printing",
+        "relation": "provides",
+        "tail": "micro-scale structural control",
+        "claim": "3D打印可实现微尺度结构精确控制"
+      },
+      {
+        "step": 2,
+        "head": "3D printing resolution",
+        "relation": "determines",
+        "tail": "phase distribution",
+        "claim": "打印分辨率决定相位分布精度"
+      },
+      {
+        "step": 3,
+        "head": "dielectric gradient metamaterials",
+        "relation": "requires",
+        "tail": "refractive index profiles",
+        "claim": "超材料设计需要精确折射率剖面"
+      }
+    ]
+  ],
+  "L3": [
+    [
+      {
+        "step": 1,
+        "head": "iterative design algorithms",
+        "relation": "combines",
+        "tail": "layer-by-layer 3D printing",
+        "claim": "迭代算法与逐层打印结合可优化折射率剖面"
+      },
+      {
+        "step": 2,
+        "head": "digital printing parameters",
+        "relation": "modifies",
+        "tail": "spatial refractive index",
+        "claim": "数字参数调整可改变空间折射率分布"
+      },
+      {
+        "step": 3,
+        "head": "refractive index modulation",
+        "relation": "enhances",
+        "tail": "phase compensation",
+        "claim": "折射率调制强化相位补偿能力"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "high aspect ratio nanopillars",
+        "relation": "interacts",
+        "tail": "nanoring arrangements",
+        "claim": "高纵横比纳米柱与环形结构协同作用"
+      },
+      {
+        "step": 2,
+        "head": "nanoscatterers",
+        "relation": "enhances",
+        "tail": "numerical aperture",
+        "claim": "纳米散射体相互作用提升数值孔径"
+      },
+      {
+        "step": 3,
+        "head": "engineered metasurfaces",
+        "relation": "extends",
+        "tail": "field of view",
+        "claim": "超表面设计扩展视场角至90°"
+      }
+    ]
+  ]
+}

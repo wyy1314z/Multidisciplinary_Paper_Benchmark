@@ -1,0 +1,86 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "GPCRs",
+        "relation": "utilizes",
+        "tail": "conformational transition pathways",
+        "claim": "GPCRs使用不同的构象转换路径实现功能编码"
+      },
+      {
+        "step": 2,
+        "head": "conformational transition pathways",
+        "relation": "determines",
+        "tail": "downstream signaling bias",
+        "claim": "构象转换路径的动态互变率决定信号偏向性"
+      },
+      {
+        "step": 3,
+        "head": "dynamic allosteric nodes",
+        "relation": "governs",
+        "tail": "transition kinetics",
+        "claim": "动态别构节点调控构象转换动力学"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "ligands",
+        "relation": "modulates",
+        "tail": "energy barriers",
+        "claim": "配体调节中间态之间的能垒高度"
+      },
+      {
+        "step": 2,
+        "head": "energy barriers",
+        "relation": "creates",
+        "tail": "dynamic fingerprints",
+        "claim": "能垒差异形成独特的动态指纹特征"
+      },
+      {
+        "step": 3,
+        "head": "dynamic fingerprints",
+        "relation": "selectively engages",
+        "tail": "effector proteins",
+        "claim": "动态指纹根据时间阈值选择效应蛋白"
+      }
+    ]
+  ],
+  "L3": [
+    [
+      {
+        "step": 1,
+        "head": "transient intermediate",
+        "relation": "prefers",
+        "tail": "G protein coupling",
+        "claim": "亚稳态中间体优先偶联G蛋白"
+      },
+      {
+        "step": 2,
+        "head": "prolonged stabilization",
+        "relation": "enhances",
+        "tail": "arrestin recruitment",
+        "claim": "中间态持续稳定化增强arrestin招募"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "time-resolved structural analyses",
+        "relation": "combines",
+        "tail": "machine learning modeling",
+        "claim": "时间分辨结构分析结合动态网络建模"
+      },
+      {
+        "step": 2,
+        "head": "dynamic network modeling",
+        "relation": "identifies",
+        "tail": "druggable allosteric nodes",
+        "claim": "机器学习建模识别可药用别构位点"
+      }
+    ]
+  ]
+}

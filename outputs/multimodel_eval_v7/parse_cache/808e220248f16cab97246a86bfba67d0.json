@@ -1,0 +1,118 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "准金属有机框架材料设计与配体去除调控",
+        "relation": "enables",
+        "tail": "类酶催化活性定向调控",
+        "claim": "材料设计调控使催化活性定向优化成为可能"
+      },
+      {
+        "step": 2,
+        "head": "类酶催化活性定向调控",
+        "relation": "causes",
+        "tail": "肿瘤微环境氧化还原反应增强",
+        "claim": "催化活性提升引发肿瘤微环境氧化还原反应"
+      },
+      {
+        "step": 3,
+        "head": "肿瘤微环境氧化还原反应增强",
+        "relation": "causes",
+        "tail": "ROS生成与铁离子释放增加",
+        "claim": "氧化还原反应增强导致ROS和铁离子水平上升"
+      },
+      {
+        "step": 4,
+        "head": "ROS生成与铁离子释放增加",
+        "relation": "causes",
+        "tail": "肿瘤细胞凋亡",
+        "claim": "ROS和铁离子共同作用诱导肿瘤细胞凋亡"
+      },
+      {
+        "step": 5,
+        "head": "ROS生成与铁离子释放增加",
+        "relation": "activates",
+        "tail": "免疫细胞抗肿瘤反应",
+        "claim": "氧化应激环境激活免疫细胞介导抗肿瘤免疫"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "可控配体去除策略",
+        "relation": "causes",
+        "tail": "金属位点暴露与多孔结构优化",
+        "claim": "配体去除策略导致金属位点暴露和结构优化"
+      },
+      {
+        "step": 2,
+        "head": "金属位点暴露与多孔结构优化",
+        "relation": "enhances",
+        "tail": "纳米酶过氧化物酶与催化酶活性",
+        "claim": "结构优化显著提升纳米酶双重催化活性"
+      },
+      {
+        "step": 3,
+        "head": "纳米酶过氧化物酶与催化酶活性",
+        "relation": "regulates",
+        "tail": "催化反应速率与选择性",
+        "claim": "催化活性增强调控反应动力学和选择性"
+      },
+      {
+        "step": 4,
+        "head": "催化反应速率与选择性",
+        "relation": "causes",
+        "tail": "ROS水平升高",
+        "claim": "优化的催化性能产生足够ROS水平"
+      },
+      {
+        "step": 5,
+        "head": "ROS水平升高",
+        "relation": "induces",
+        "tail": "局部氧化应激与细胞凋亡",
+        "claim": "ROS积累引发氧化应激和肿瘤细胞凋亡"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "多孔结构纳米材料",
+        "relation": "regulates",
+        "tail": "铁离子释放速度与浓度",
+        "claim": "多孔结构调控铁离子释放动力学"
+      },
+      {
+        "step": 2,
+        "head": "铁离子释放速度与浓度",
+        "relation": "causes",
+        "tail": "铁死亡诱导",
+        "claim": "铁离子动态平衡触发铁死亡机制"
+      },
+      {
+        "step": 3,
+        "head": "多孔结构纳米材料",
+        "relation": "promotes",
+        "tail": "ROS生成与谷胱甘肽耗竭",
+        "claim": "高比表面积促进氧化应激和抗氧化耗竭"
+      },
+      {
+        "step": 4,
+        "head": "ROS生成与谷胱甘肽耗竭",
+        "relation": "activates",
+        "tail": "树突状细胞与T细胞",
+        "claim": "氧化环境激活关键免疫细胞功能"
+      },
+      {
+        "step": 5,
+        "head": "树突状细胞与T细胞",
+        "relation": "mediates",
+        "tail": "抗原提呈与浸润效应",
+        "claim": "免疫细胞协同作用增强抗肿瘤免疫应答"
+      }
+    ]
+  ],
+  "L3": []
+}

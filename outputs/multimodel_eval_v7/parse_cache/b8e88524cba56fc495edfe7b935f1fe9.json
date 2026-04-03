@@ -1,0 +1,188 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "isothermal compressibility-assisted dynamic squeezing index perturbation engineering (iCASE)",
+        "relation": "enables",
+        "tail": "hierarchical modular networks",
+        "claim": "iCASE策略通过分层模块化网络实现对酶的改造"
+      },
+      {
+        "step": 2,
+        "head": "hierarchical modular networks",
+        "relation": "modulates",
+        "tail": "hydrophobic interactions and salt bridges",
+        "claim": "分层网络调节酶的疏水相互作用和盐桥"
+      },
+      {
+        "step": 3,
+        "head": "hydrophobic interactions and salt bridges",
+        "relation": "alters",
+        "tail": "isothermal compressibility",
+        "claim": "疏水作用和盐桥的调节改变等温压缩性"
+      },
+      {
+        "step": 4,
+        "head": "isothermal compressibility",
+        "relation": "induces",
+        "tail": "adaptive evolution",
+        "claim": "等温压缩性变化引发适应性进化峰值位移"
+      },
+      {
+        "step": 5,
+        "head": "structure-based supervised machine learning model",
+        "relation": "rewires",
+        "tail": "epistatic interactions",
+        "claim": "机器学习模型动态重写上位相互作用"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "dynamic rewiring of epistatic interactions",
+        "relation": "optimizes",
+        "tail": "stability-activity trade-off",
+        "claim": "上位作用重写优化酶的稳定性-活性权衡"
+      },
+      {
+        "step": 2,
+        "head": "compression-induced conformational changes",
+        "relation": "enhances",
+        "tail": "enzyme fitness",
+        "claim": "压缩诱导的构象变化增强酶适应性"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "structure-based supervised machine learning",
+        "relation": "integrates",
+        "tail": "substrate binding mode analysis",
+        "claim": "机器学习与底物结合分析结合"
+      },
+      {
+        "step": 2,
+        "head": "dynamic squeezing index perturbations",
+        "relation": "alters",
+        "tail": "binding affinity of PET hydrolase",
+        "claim": "动态挤压扰动改变PET水解酶结合亲和力"
+      },
+      {
+        "step": 3,
+        "head": "metal ions and disulfide bonds",
+        "relation": "quantifies",
+        "tail": "epistatic couplings in fitness landscape",
+        "claim": "量化金属离子和二硫键对上位作用的贡献"
+      },
+      {
+        "step": 4,
+        "head": "epistatic couplings",
+        "relation": "enables",
+        "tail": "targeted engineering of catalytic efficiency",
+        "claim": "上位作用量化实现催化效率定向改造"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "dynamic response predictive model",
+        "relation": "maps",
+        "tail": "sign/magnitude epistasis",
+        "claim": "动态模型映射符号/幅度上位性"
+      },
+      {
+        "step": 2,
+        "head": "sign/magnitude epistasis",
+        "relation": "guides",
+        "tail": "protein surface charge redistributions",
+        "claim": "上位性映射指导蛋白质表面电荷重分布"
+      },
+      {
+        "step": 3,
+        "head": "adaptive evolution peaks",
+        "relation": "correlates",
+        "tail": "compensatory structural adjustments",
+        "claim": "适应性峰值与补偿性结构调整相关"
+      },
+      {
+        "step": 4,
+        "head": "compensatory structural adjustments",
+        "relation": "bypasses",
+        "tail": "stability-activity trade-offs",
+        "claim": "结构调整绕过稳定性-活性权衡"
+      }
+    ]
+  ],
+  "L3": [
+    [
+      {
+        "step": 1,
+        "head": "dynamic squeezing index networks",
+        "relation": "synergizes",
+        "tail": "epistasis prediction algorithms",
+        "claim": "动态网络与上位预测算法协同"
+      },
+      {
+        "step": 2,
+        "head": "synergy",
+        "relation": "co-optimizes",
+        "tail": "catalytic mechanism efficiency",
+        "claim": "协同作用共优化催化机制效率"
+      },
+      {
+        "step": 3,
+        "head": "salt bridge disruption",
+        "relation": "destabilizes",
+        "tail": "non-productive conformations",
+        "claim": "盐桥破坏选择性去稳定非生产构象"
+      },
+      {
+        "step": 4,
+        "head": "machine learning",
+        "relation": "fine-tunes",
+        "tail": "perturbation intensity",
+        "claim": "机器学习微调扰动强度"
+      },
+      {
+        "step": 5,
+        "head": "perturbation intensity",
+        "relation": "maximizes",
+        "tail": "enzyme function",
+        "claim": "扰动强度最大化酶功能"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "protein surface charge analysis",
+        "relation": "integrates",
+        "tail": "fitness landscape modeling",
+        "claim": "电荷分析整合适应性景观建模"
+      },
+      {
+        "step": 2,
+        "head": "fitness landscape modeling",
+        "relation": "validates",
+        "tail": "iCASE universality",
+        "claim": "建模验证iCASE策略普适性"
+      },
+      {
+        "step": 3,
+        "head": "isothermal compressibility changes",
+        "relation": "correlates",
+        "tail": "epistatic shifts",
+        "claim": "压缩性变化与上位性转移相关"
+      },
+      {
+        "step": 4,
+        "head": "charge-driven conformational dynamics",
+        "relation": "drives",
+        "tail": "adaptive evolution peaks",
+        "claim": "电荷驱动构象动态普遍驱动适应性峰值"
+      }
+    ]
+  ]
+}

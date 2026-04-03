@@ -1,0 +1,130 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "iCASE策略",
+        "relation": "synergistically optimizes",
+        "tail": "分层模块化网络",
+        "claim": "iCASE策略通过协同优化分层模块化网络实现酶工程改进"
+      },
+      {
+        "step": 2,
+        "head": "分层模块化网络优化",
+        "relation": "modulates",
+        "tail": "氢键网络与疏水相互作用",
+        "claim": "网络优化调节催化口袋附近的氢键网络和疏水相互作用"
+      },
+      {
+        "step": 3,
+        "head": "机器学习算法",
+        "relation": "predicts",
+        "tail": "上位突变组合",
+        "claim": "机器学习预测平衡符号上位效应和幅度上位效应的突变组合"
+      },
+      {
+        "step": 4,
+        "head": "上位突变组合",
+        "relation": "leads to",
+        "tail": "适应性进化高峰",
+        "claim": "优化的突变组合产生最小稳定性-活性权衡的适应性进化高峰"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "结构监督机器学习模型",
+        "relation": "correlates",
+        "tail": "动态挤压指数与底物结合模式",
+        "claim": "机器学习模型通过氢键模式训练建立动态指数与底物结合的定量关联"
+      },
+      {
+        "step": 2,
+        "head": "动态指数-底物关联",
+        "relation": "enables",
+        "tail": "PET结合构象预测",
+        "claim": "该关联使PET聚合物结合构象预测达到≥85%准确率"
+      },
+      {
+        "step": 3,
+        "head": "计算设计变体",
+        "relation": "validates",
+        "tail": "催化效率(k_cat/K_M)",
+        "claim": "高疏水评分设计变体通过催化效率实验验证预测准确性"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "动态挤压指数波动",
+        "relation": "mediates",
+        "tail": "变构通讯机制",
+        "claim": "动态指数触发催化残基与表面电荷残基间的变构通讯"
+      },
+      {
+        "step": 2,
+        "head": "机器学习预测残基",
+        "relation": "identifies",
+        "tail": "保守盐桥模式",
+        "claim": "预测的关键残基显示同源酶中的保守盐桥形成模式"
+      },
+      {
+        "step": 3,
+        "head": "靶向诱变",
+        "relation": "shifts",
+        "tail": "适应度景观",
+        "claim": "关键位点诱变使适应度景观向热稳定性提升方向移动"
+      }
+    ]
+  ],
+  "L3": [
+    [
+      {
+        "step": 1,
+        "head": "动态挤压指数网络",
+        "relation": "optimizes",
+        "tail": "主链刚性",
+        "claim": "化学驱动的动态指数主要通过氢键重连优化蛋白质主链刚性"
+      },
+      {
+        "step": 2,
+        "head": "机器学习上位预测",
+        "relation": "identifies",
+        "tail": "协同稳定对",
+        "claim": "机器学习优先识别协同的二硫键-金属离子配位对增强催化腔可塑性"
+      },
+      {
+        "step": 3,
+        "head": "机制互补性分析",
+        "relation": "reveals",
+        "tail": "帕累托最优突变",
+        "claim": "综合分析揭示同时最大化结构压缩性和催化效率的突变前沿"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "表面电荷分析",
+        "relation": "links",
+        "tail": "电势梯度",
+        "claim": "蛋白质表面电荷分布与电势梯度存在可量化的物理关联"
+      },
+      {
+        "step": 2,
+        "head": "电势匹配变体",
+        "relation": "exhibits",
+        "tail": "增强进化轨迹",
+        "claim": "匹配预测电势的变体显示更高的每突变适应度增益"
+      },
+      {
+        "step": 3,
+        "head": "动态响应预测",
+        "relation": "correlates",
+        "tail": "熔解温度(T_m)",
+        "claim": "动态响应指数与实验熔解温度呈现强相关性(R²>0.7)"
+      }
+    ]
+  ]
+}

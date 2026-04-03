@@ -1,0 +1,103 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "蛋白偶联受体（GPCRs）的构象动态",
+        "relation": "causes",
+        "tail": "受体的活性状态转换",
+        "claim": "构象动态导致受体活性状态转换"
+      },
+      {
+        "step": 2,
+        "head": "蛋白偶联受体（GPCRs）的构象动态",
+        "relation": "determines",
+        "tail": "药物结合位点的可及性和稳定性",
+        "claim": "构象动态决定药物结合位点特性"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "研究GPCRs在不同生理条件下的构象变化",
+        "relation": "reveals",
+        "tail": "新的药物作用机制和潜在治疗靶点",
+        "claim": "构象研究揭示新药物靶点"
+      },
+      {
+        "step": 2,
+        "head": "膜脂质环境变化",
+        "relation": "induces",
+        "tail": "隐性变构位点和侧向配体入口通道",
+        "claim": "脂质环境变化引发新结合位点"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "X射线晶体学和低温电子显微镜",
+        "relation": "enables",
+        "tail": "解析GPCRs在不同激活状态下的构象变化",
+        "claim": "结构技术解析构象变化"
+      },
+      {
+        "step": 2,
+        "head": "构象变化",
+        "relation": "correlates with",
+        "tail": "信号传导路径的开启和关闭",
+        "claim": "构象变化与信号通路相关"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "GPCRs的局部呼吸运动",
+        "relation": "causes",
+        "tail": "受体内部结构改变",
+        "claim": "局部运动引发结构改变"
+      },
+      {
+        "step": 2,
+        "head": "受体内部结构改变",
+        "relation": "enables",
+        "tail": "下游效应器的激活",
+        "claim": "结构改变激活下游效应"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "膜脂质环境",
+        "relation": "affects",
+        "tail": "GPCRs的功能",
+        "claim": "脂质环境影响受体功能"
+      },
+      {
+        "step": 2,
+        "head": "膜脂质动态变化",
+        "relation": "causes",
+        "tail": "药物结合位点闭合",
+        "claim": "脂质变化导致位点闭合"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "调整膜脂质组成",
+        "relation": "enables",
+        "tail": "暴露隐藏变构位点",
+        "claim": "脂质调控暴露新结合位点"
+      },
+      {
+        "step": 2,
+        "head": "暴露隐藏变构位点",
+        "relation": "provides",
+        "tail": "新型药物开发策略",
+        "claim": "新位点提供药物开发路径"
+      }
+    ]
+  ],
+  "L3": []
+}

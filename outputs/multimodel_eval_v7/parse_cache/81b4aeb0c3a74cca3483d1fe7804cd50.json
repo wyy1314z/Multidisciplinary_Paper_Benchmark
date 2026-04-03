@@ -1,0 +1,158 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "iCASE策略",
+        "relation": "modulates",
+        "tail": "结构柔性(化学)",
+        "claim": "iCASE策略调控蛋白质结构柔性"
+      },
+      {
+        "step": 2,
+        "head": "iCASE策略",
+        "relation": "modulates",
+        "tail": "动态响应网络(生物学)",
+        "claim": "iCASE策略调控动态响应网络"
+      },
+      {
+        "step": 3,
+        "head": "结构柔性(化学)和动态响应网络(生物学)",
+        "relation": "co-regulate",
+        "tail": "层级模块化网络",
+        "claim": "结构柔性与动态响应网络协同形成模块化网络"
+      },
+      {
+        "step": 4,
+        "head": "层级模块化网络",
+        "relation": "enhances",
+        "tail": "热稳定性",
+        "claim": "模块化网络提升工业酶热稳定性"
+      },
+      {
+        "step": 5,
+        "head": "层级模块化网络",
+        "relation": "enhances",
+        "tail": "催化活性",
+        "claim": "模块化网络增强酶催化活性"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "结构基础的监督式机器学习模型",
+        "relation": "integrates",
+        "tail": "酶-PET结合模式的分子力学分析",
+        "claim": "机器学习模型与分子力学分析整合"
+      },
+      {
+        "step": 2,
+        "head": "整合",
+        "relation": "identifies",
+        "tail": "关键氢键及疏水相互作用位点",
+        "claim": "整合分析识别关键作用位点"
+      },
+      {
+        "step": 3,
+        "head": "关键作用位点",
+        "relation": "predicts",
+        "tail": "蛋白质结构变体",
+        "claim": "关键位点预测最优结构变体"
+      },
+      {
+        "step": 4,
+        "head": "蛋白质结构变体",
+        "relation": "enhances",
+        "tail": "底物结合和酶活性",
+        "claim": "结构变体提升底物结合与催化效率"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "分子响应模型",
+        "relation": "characterizes",
+        "tail": "动态挤压指数工程对构象变化的影响",
+        "claim": "分子响应模型表征构象变化机制"
+      },
+      {
+        "step": 2,
+        "head": "表征影响",
+        "relation": "enables",
+        "tail": "精准定位关键氨基酸位点",
+        "claim": "构象表征指导关键位点定位"
+      },
+      {
+        "step": 3,
+        "head": "关键氨基酸位点",
+        "relation": "enhances",
+        "tail": "底物识别效率",
+        "claim": "关键位点优化底物识别"
+      },
+      {
+        "step": 4,
+        "head": "关键氨基酸位点",
+        "relation": "reduces",
+        "tail": "能量屏障",
+        "claim": "关键位点降低反应能垒"
+      }
+    ]
+  ],
+  "L3": [
+    [
+      {
+        "step": 1,
+        "head": "化学驱动的动态挤压指数网络",
+        "relation": "synergistically optimizes",
+        "tail": "结构基础的机器学习预测",
+        "claim": "化学网络与机器学习协同优化"
+      },
+      {
+        "step": 2,
+        "head": "协同优化",
+        "relation": "identifies",
+        "tail": "关键氨基酸-聚合物相互作用模块",
+        "claim": "协同优化筛选关键相互作用模块"
+      },
+      {
+        "step": 3,
+        "head": "关键相互作用模块",
+        "relation": "enhances",
+        "tail": "酶催化效率",
+        "claim": "关键模块提升催化效率"
+      },
+      {
+        "step": 4,
+        "head": "关键相互作用模块",
+        "relation": "stabilizes",
+        "tail": "三明治式结合构象",
+        "claim": "关键模块稳定酶-底物结合构象"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "蛋白质表面电荷分析",
+        "relation": "integrates",
+        "tail": "表型适应性景观建模及动态响应预测",
+        "claim": "多学科方法整合电荷与适应性分析"
+      },
+      {
+        "step": 2,
+        "head": "整合",
+        "relation": "captures",
+        "tail": "电荷分布变化与适应性跃迁关系",
+        "claim": "整合工作流捕捉电荷-适应性动态关系"
+      },
+      {
+        "step": 3,
+        "head": "捕捉关系",
+        "relation": "constructs",
+        "tail": "最优电荷分布与功能变异关联图谱",
+        "claim": "构建电荷分布与功能关联图谱"
+      }
+    ]
+  ]
+}

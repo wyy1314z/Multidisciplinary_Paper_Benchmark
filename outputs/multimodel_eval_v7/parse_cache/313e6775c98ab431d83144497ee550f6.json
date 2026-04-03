@@ -1,0 +1,86 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "isothermal compression-assisted dynamic extrusion with exponentially modulated pressure perturbations",
+        "relation": "causes",
+        "tail": "increased thermal stability (T₅₀)",
+        "claim": "The treatment causes a 2-3 fold increase in thermal stability"
+      },
+      {
+        "step": 2,
+        "head": "isothermal compression-assisted dynamic extrusion with exponentially modulated pressure perturbations",
+        "relation": "causes",
+        "tail": "enhanced catalytic efficiency (kcat/Km)",
+        "claim": "The treatment causes a 40-60% enhancement in catalytic efficiency"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "isothermal compression-assisted dynamic extrusion with exponentially modulated pressure perturbations",
+        "relation": "induces",
+        "tail": "controlled protein unfolding-refolding cycles",
+        "claim": "The treatment induces unfolding-refolding cycles"
+      },
+      {
+        "step": 2,
+        "head": "controlled protein unfolding-refolding cycles",
+        "relation": "selectively stabilizes",
+        "tail": "enzyme's active site geometry",
+        "claim": "Unfolding-refolding cycles stabilize active site geometry"
+      },
+      {
+        "step": 3,
+        "head": "controlled protein unfolding-refolding cycles",
+        "relation": "promotes",
+        "tail": "formation of intramolecular disulfide bonds",
+        "claim": "Unfolding-refolding cycles promote disulfide bond formation"
+      },
+      {
+        "step": 4,
+        "head": "controlled protein unfolding-refolding cycles",
+        "relation": "optimizes",
+        "tail": "hydrophobic core packing",
+        "claim": "Unfolding-refolding cycles optimize hydrophobic core packing"
+      }
+    ]
+  ],
+  "L3": [
+    [
+      {
+        "step": 1,
+        "head": "mechanical stress",
+        "relation": "breaks",
+        "tail": "weak destabilizing interactions",
+        "claim": "Mechanical stress breaks weak interactions"
+      },
+      {
+        "step": 2,
+        "head": "breaking weak destabilizing interactions",
+        "relation": "preserves and strengthens",
+        "tail": "critical structural elements responsible for catalytic function",
+        "claim": "Breaking weak interactions preserves critical structures"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "pressure oscillation frequency",
+        "relation": "matches",
+        "tail": "enzyme's intrinsic conformational relaxation time (τ)",
+        "claim": "Frequency matches enzyme's relaxation time"
+      },
+      {
+        "step": 2,
+        "head": "matching τ",
+        "relation": "achieves",
+        "tail": "optimal results",
+        "claim": "Matching τ achieves optimal results"
+      }
+    ]
+  ]
+}

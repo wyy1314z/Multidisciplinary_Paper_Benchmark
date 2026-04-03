@@ -1,0 +1,123 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "构象柔性",
+        "relation": "enables",
+        "tail": "脂质插入",
+        "claim": "构象柔性使得脂质插入成为可能"
+      },
+      {
+        "step": 2,
+        "head": "脂质插入",
+        "relation": "modulates",
+        "tail": "变构通讯网络",
+        "claim": "脂质插入通过变构通讯网络调节信号传导"
+      },
+      {
+        "step": 3,
+        "head": "变构通讯网络",
+        "relation": "regulates",
+        "tail": "神经系统疾病",
+        "claim": "变构通讯网络调节神经系统疾病状态"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "构象状态",
+        "relation": "reveals",
+        "tail": "分子调节剂",
+        "claim": "构象状态揭示分子调节剂的作用机制"
+      },
+      {
+        "step": 2,
+        "head": "分子调节剂",
+        "relation": "stabilizes",
+        "tail": "膜脂质动力学",
+        "claim": "分子调节剂通过稳定膜脂质动力学影响信号传导"
+      },
+      {
+        "step": 3,
+        "head": "膜脂质动力学",
+        "relation": "alters",
+        "tail": "信号传导",
+        "claim": "膜脂质动力学改变信号传导路径"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "膜脂质",
+        "relation": "exposes",
+        "tail": "变构药物结合位点",
+        "claim": "膜脂质动态暴露变构药物结合位点"
+      },
+      {
+        "step": 2,
+        "head": "变构药物结合位点",
+        "relation": "determines",
+        "tail": "受体亚型",
+        "claim": "变构位点决定受体亚型特异性"
+      },
+      {
+        "step": 3,
+        "head": "受体亚型",
+        "relation": "enables",
+        "tail": "药物靶向策略",
+        "claim": "受体亚型差异支持器官选择性药物靶向"
+      }
+    ]
+  ],
+  "L3": [
+    [
+      {
+        "step": 1,
+        "head": "分子动力学数据库",
+        "relation": "captures",
+        "tail": "构象动态",
+        "claim": "分子动力学捕捉构象动态特征"
+      },
+      {
+        "step": 2,
+        "head": "构象动态",
+        "relation": "maps",
+        "tail": "射线晶体学",
+        "claim": "构象动态通过晶体学验证确定功能坐标"
+      },
+      {
+        "step": 3,
+        "head": "射线晶体学",
+        "relation": "validates",
+        "tail": "变构结合位点",
+        "claim": "晶体学验证变构位点的可药物性"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "侧向配体进入通道",
+        "relation": "revealed_by",
+        "tail": "脂质插入",
+        "claim": "脂质动态揭示侧向配体通道"
+      },
+      {
+        "step": 2,
+        "head": "侧向配体进入通道",
+        "relation": "exclusion_allows",
+        "tail": "化学信号",
+        "claim": "胆固醇排除允许神经类固醇进入通道"
+      },
+      {
+        "step": 3,
+        "head": "化学信号",
+        "relation": "bypasses",
+        "tail": "神经系统疾病",
+        "claim": "非经典信号通路绕过正构竞争治疗疾病"
+      }
+    ]
+  ]
+}

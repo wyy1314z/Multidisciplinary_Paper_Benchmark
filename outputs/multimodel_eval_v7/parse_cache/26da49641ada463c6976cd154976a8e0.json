@@ -1,0 +1,128 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "Quasi-MOFs",
+        "relation": "transforms",
+        "tail": "hierarchical pore structure",
+        "claim": "Quasi-MOFs经历脱配体作用时的孔结构演化"
+      },
+      {
+        "step": 2,
+        "head": "hierarchical pore structure",
+        "relation": "causes",
+        "tail": "spatially confined catalytic microenvironments",
+        "claim": "分级孔结构形成空间限域催化微环境"
+      },
+      {
+        "step": 3,
+        "head": "spatially confined catalytic microenvironments",
+        "relation": "regulates",
+        "tail": "peroxidase-/catalase-mimic activity ratios",
+        "claim": "微环境差异调控过氧化物酶/过氧化氢酶活性比例"
+      },
+      {
+        "step": 4,
+        "head": "tumor microenvironment redox gradients",
+        "relation": "interacts",
+        "tail": "catalytic activity ratios",
+        "claim": "肿瘤氧化还原梯度与催化活性分布动态适配"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "ligand removal gradient",
+        "relation": "modulates",
+        "tail": "metal node electronic structure",
+        "claim": "配体移除梯度改变金属节点电子结构"
+      },
+      {
+        "step": 2,
+        "head": "electronic structure modulation",
+        "relation": "enhances",
+        "tail": "enzyme-mimic activity",
+        "claim": "电子结构调制增强酶模拟活性"
+      },
+      {
+        "step": 3,
+        "head": "electronic structure modulation",
+        "relation": "promotes",
+        "tail": "glutathione adsorption",
+        "claim": "电子结构调制促进谷胱甘肽吸附"
+      },
+      {
+        "step": 4,
+        "head": "ROS generation & GSH depletion",
+        "relation": "synergizes",
+        "tail": "ferroptosis",
+        "claim": "活性氧生成与谷胱甘肽耗竭协同诱导铁死亡"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "mesoporous architecture",
+        "relation": "creates",
+        "tail": "chemical microdomains",
+        "claim": "介孔结构形成化学微区"
+      },
+      {
+        "step": 2,
+        "head": "chemical microdomains",
+        "relation": "separates",
+        "tail": "iron redox cycling regions",
+        "claim": "微区实现铁氧化还原循环空间分离"
+      },
+      {
+        "step": 3,
+        "head": "spatial separation",
+        "relation": "prevents",
+        "tail": "ROS-antioxidant neutralization",
+        "claim": "空间分离阻止活性氧与抗氧化剂中和"
+      },
+      {
+        "step": 4,
+        "head": "pore size distribution",
+        "relation": "determines",
+        "tail": "redox compartmentalization efficiency",
+        "claim": "孔径分布决定氧化还原分区效率"
+      }
+    ]
+  ],
+  "L3": [
+    [
+      {
+        "step": 1,
+        "head": "dynamic ligand removal",
+        "relation": "generates",
+        "tail": "defect-rich interfaces",
+        "claim": "动态配体移除生成缺陷界面"
+      },
+      {
+        "step": 2,
+        "head": "defect-rich interfaces",
+        "relation": "optimizes",
+        "tail": "Fenton reaction kinetics",
+        "claim": "缺陷界面优化芬顿反应动力学"
+      },
+      {
+        "step": 3,
+        "head": "defect-rich interfaces",
+        "relation": "coordinates",
+        "tail": "DAMP release profiles",
+        "claim": "缺陷界面协调DAMP释放时序"
+      },
+      {
+        "step": 4,
+        "head": "coordinated ROS & DAMP",
+        "relation": "enhances",
+        "tail": "chemo-immunotherapeutic effect",
+        "claim": "活性氧与DAMP协同增强化-免疫治疗效应"
+      }
+    ]
+  ]
+}

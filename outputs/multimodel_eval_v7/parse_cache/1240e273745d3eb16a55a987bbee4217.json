@@ -1,0 +1,104 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "iCASE策略",
+        "relation": "enables",
+        "tail": "层次模块化网络构建",
+        "claim": "iCASE策略使得构建酶的层次模块化网络成为可能"
+      },
+      {
+        "step": 2,
+        "head": "层次模块化网络构建",
+        "relation": "utilizes",
+        "tail": "结构响应机制",
+        "claim": "层次模块化网络利用结构响应机制实现功能调控"
+      },
+      {
+        "step": 3,
+        "head": "结构响应机制",
+        "relation": "causes",
+        "tail": "自适应进化峰值",
+        "claim": "结构响应机制驱动酶达到自适应进化峰值"
+      },
+      {
+        "step": 4,
+        "head": "自适应进化峰值",
+        "relation": "combines_with",
+        "tail": "监督式机器学习模型",
+        "claim": "自适应进化峰值与机器学习模型形成协同作用"
+      },
+      {
+        "step": 5,
+        "head": "监督式机器学习模型",
+        "relation": "enhances",
+        "tail": "热稳定性及催化活性",
+        "claim": "机器学习模型显著提升酶的热稳定性与催化活性"
+      },
+      {
+        "step": 6,
+        "head": "热稳定性及催化活性",
+        "relation": "breaks",
+        "tail": "稳定性-活性权衡",
+        "claim": "性能提升突破传统稳定性与活性的负相关限制"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "结构基础的监督式机器学习模型",
+        "relation": "enables",
+        "tail": "结合特征捕获",
+        "claim": "机器学习模型有效识别酶与聚合物的结合特征"
+      },
+      {
+        "step": 2,
+        "head": "结合特征捕获",
+        "relation": "predicts",
+        "tail": "结合模式分析",
+        "claim": "特征捕获过程通过结构信息解析实现结合模式预测"
+      },
+      {
+        "step": 3,
+        "head": "结合模式分析",
+        "relation": "validates",
+        "tail": "实际结合情况",
+        "claim": "预测结合模式与实验观测结果高度一致"
+      },
+      {
+        "step": 4,
+        "head": "实际结合情况",
+        "relation": "provides",
+        "tail": "理论优化依据",
+        "claim": "结合机制解析为性能优化提供结构基础指导"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "分子响应模型",
+        "relation": "models",
+        "tail": "结构-功能变化",
+        "claim": "适应性进化模型动态模拟酶的结构功能演化"
+      },
+      {
+        "step": 2,
+        "head": "结构-功能变化",
+        "relation": "identifies",
+        "tail": "关键分子因素",
+        "claim": "模型参数分析揭示影响性能的核心分子响应要素"
+      },
+      {
+        "step": 3,
+        "head": "关键分子因素",
+        "relation": "guides",
+        "tail": "酶工程改造",
+        "claim": "分子响应机制指导实现热稳定性与活性的协同提升"
+      }
+    ]
+  ],
+  "L3": []
+}

@@ -1,0 +1,113 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "膜脂质环境及配体调控",
+        "relation": "enables",
+        "tail": "蛋白偶联受体构象态转换",
+        "claim": "膜环境和配体调控使得受体发生构象态转换"
+      },
+      {
+        "step": 2,
+        "head": "蛋白偶联受体构象态转换",
+        "relation": "causes",
+        "tail": "信号传导精准调节",
+        "claim": "构象态转换导致信号传导的精准调节"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "蛋白偶联受体动态呼吸运动",
+        "relation": "affects",
+        "tail": "配体结合与识别",
+        "claim": "动态呼吸运动影响配体结合与识别"
+      },
+      {
+        "step": 2,
+        "head": "蛋白偶联受体动态呼吸运动",
+        "relation": "determines",
+        "tail": "全新药物结合位点与调控通路",
+        "claim": "动态呼吸运动决定新药物位点与通路的出现"
+      },
+      {
+        "step": 3,
+        "head": "全新药物结合位点与调控通路",
+        "relation": "provides",
+        "tail": "精确药物发现与设计",
+        "claim": "新位点与通路为药物设计提供可能性"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "蛋白偶联受体（有/无配体条件）",
+        "relation": "undergoes",
+        "tail": "关键中间态转换",
+        "claim": "配体条件变化引发受体中间态转换"
+      },
+      {
+        "step": 2,
+        "head": "关键中间态",
+        "relation": "correlates with",
+        "tail": "信号通路激活/钝化",
+        "claim": "中间态与信号通路状态存在关联"
+      },
+      {
+        "step": 3,
+        "head": "X射线晶体学/冷冻电镜技术",
+        "relation": "enables",
+        "tail": "捕捉关键中间态",
+        "claim": "高分辨技术可定位中间态结构"
+      },
+      {
+        "step": 4,
+        "head": "关键中间态结构数据",
+        "relation": "reveals",
+        "tail": "构象变化与信号传递因果关系",
+        "claim": "中间态数据阐明构象-信号传递机制"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "膜微环境脂质成分",
+        "relation": "induces",
+        "tail": "受体特定构象",
+        "claim": "脂质成分诱导受体构象变化"
+      },
+      {
+        "step": 2,
+        "head": "受体特定构象",
+        "relation": "stabilizes",
+        "tail": "变构位点/侧向通路状态",
+        "claim": "特定构象稳定变构位点开放状态"
+      },
+      {
+        "step": 3,
+        "head": "分子动力学模拟",
+        "relation": "enables",
+        "tail": "分析膜-受体耦合作用",
+        "claim": "模拟技术可解析膜-受体相互作用"
+      },
+      {
+        "step": 4,
+        "head": "耦合作用数据",
+        "relation": "reveals",
+        "tail": "隐藏变构位点与配体路径",
+        "claim": "模拟结果揭示新药物靶点与通路"
+      },
+      {
+        "step": 5,
+        "head": "隐藏变构位点信息",
+        "relation": "provides",
+        "tail": "新型药物设计策略",
+        "claim": "位点数据为药物设计提供理论基础"
+      }
+    ]
+  ],
+  "L3": []
+}

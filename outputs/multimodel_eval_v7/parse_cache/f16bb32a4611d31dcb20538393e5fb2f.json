@@ -1,0 +1,55 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "interactions between intracellular loops and lipid compositions",
+        "relation": "modulates",
+        "tail": "conformational dynamics of GPCRs",
+        "claim": "细胞内环与脂质组成的相互作用调节GPCR的构象动态"
+      },
+      {
+        "step": 2,
+        "head": "conformational dynamics of GPCRs",
+        "relation": "affects",
+        "tail": "ligand binding and downstream signaling pathways",
+        "claim": "GPCR构象动态影响配体结合和下游信号通路"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "novel lipid-based modulators",
+        "relation": "serve as",
+        "tail": "potential drug targets",
+        "claim": "新型脂质调节剂可作为潜在药物靶点"
+      },
+      {
+        "step": 2,
+        "head": "potential drug targets",
+        "relation": "pave the way for",
+        "tail": "innovative therapeutic strategies",
+        "claim": "药物靶点为创新治疗策略奠定基础"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "alterations in lipid composition",
+        "relation": "lead to",
+        "tail": "distinct conformational states of GPCRs",
+        "claim": "脂质组成变化导致GPCR不同构象状态"
+      },
+      {
+        "step": 2,
+        "head": "distinct conformational states of GPCRs",
+        "relation": "correlate with",
+        "tail": "changes in receptor efficacy and specificity",
+        "claim": "GPCR构象状态与受体效能和特异性变化相关"
+      }
+    ]
+  ],
+  "L3": []
+}

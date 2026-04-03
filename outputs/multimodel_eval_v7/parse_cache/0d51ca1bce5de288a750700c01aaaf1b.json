@@ -1,0 +1,153 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "Controlled deligandation strategy",
+        "relation": "optimizes",
+        "tail": "Q-MOFs design principles",
+        "claim": "脱配体策略优化Q-MOFs结构增强催化活性"
+      },
+      {
+        "step": 2,
+        "head": "Enhanced catalytic activity",
+        "relation": "enhances",
+        "tail": "Fenton reaction efficiency",
+        "claim": "催化活性提升促进肿瘤微环境芬顿反应"
+      },
+      {
+        "step": 3,
+        "head": "Fenton reaction efficiency",
+        "relation": "increases",
+        "tail": "ROS production",
+        "claim": "芬顿反应增强导致活性氧大量生成"
+      },
+      {
+        "step": 4,
+        "head": "ROS production",
+        "relation": "triggers",
+        "tail": "Ferroptosis",
+        "claim": "活性氧积累诱导肿瘤细胞铁死亡"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "Q-MOFs porous structure",
+        "relation": "enables",
+        "tail": "Tumor microenvironment interaction",
+        "claim": "多孔结构促进与肿瘤微环境物质交换"
+      },
+      {
+        "step": 2,
+        "head": "Tumor microenvironment interaction",
+        "relation": "induces",
+        "tail": "Immunogenic cell death",
+        "claim": "微环境相互作用激活免疫原性细胞死亡"
+      },
+      {
+        "step": 3,
+        "head": "Immunogenic cell death",
+        "relation": "activates",
+        "tail": "Antitumor immune response",
+        "claim": "免疫原性死亡触发抗肿瘤免疫应答"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "Controlled deligandation",
+        "relation": "alters",
+        "tail": "Metal ion coordination environment",
+        "claim": "脱配体策略改变金属离子配位结构"
+      },
+      {
+        "step": 2,
+        "head": "Altered coordination environment",
+        "relation": "enhances",
+        "tail": "Peroxidase-like activity",
+        "claim": "配位环境改变增强过氧化物酶样活性"
+      },
+      {
+        "step": 3,
+        "head": "Enhanced peroxidase activity",
+        "relation": "promotes",
+        "tail": "ROS generation",
+        "claim": "催化活性提升导致活性氧高效生成"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "Q-MOFs porous structure",
+        "relation": "facilitates",
+        "tail": "ROS accumulation",
+        "claim": "多孔结构促进活性氧局部富集"
+      },
+      {
+        "step": 2,
+        "head": "ROS accumulation",
+        "relation": "induces",
+        "tail": "Ferroptosis",
+        "claim": "活性氧积累触发铁死亡程序"
+      },
+      {
+        "step": 3,
+        "head": "Ferroptosis",
+        "relation": "reduces",
+        "tail": "Tumor cell viability",
+        "claim": "铁死亡导致肿瘤细胞失活"
+      }
+    ]
+  ],
+  "L3": [
+    [
+      {
+        "step": 1,
+        "head": "Deligandation-induced pore optimization",
+        "relation": "enhances",
+        "tail": "Therapeutic agent retention",
+        "claim": "孔结构优化提升治疗剂滞留能力"
+      },
+      {
+        "step": 2,
+        "head": "Therapeutic agent retention",
+        "relation": "sustains",
+        "tail": "ROS release",
+        "claim": "药物滞留促进活性氧缓释"
+      },
+      {
+        "step": 3,
+        "head": "Sustained ROS release",
+        "relation": "amplifies",
+        "tail": "Immunogenic death",
+        "claim": "持续释放增强免疫原性死亡效应"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "Q-MIL-53(Fe)",
+        "relation": "promotes",
+        "tail": "Dendritic cell maturation",
+        "claim": "材料促进树突状细胞成熟"
+      },
+      {
+        "step": 2,
+        "head": "PD-1 antibody",
+        "relation": "blocks",
+        "tail": "T-cell suppression",
+        "claim": "抗体阻断T细胞抑制信号"
+      },
+      {
+        "step": 3,
+        "head": "Combined therapy",
+        "relation": "synergizes",
+        "tail": "Tumor regression",
+        "claim": "联合治疗协同增强肿瘤消退"
+      }
+    ]
+  ]
+}

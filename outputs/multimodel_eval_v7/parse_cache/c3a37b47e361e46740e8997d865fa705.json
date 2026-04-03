@@ -1,0 +1,158 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "iCASE",
+        "relation": "enables",
+        "tail": "adaptive evolution",
+        "claim": "iCASE实现适应性进化峰值通过结构响应机制"
+      },
+      {
+        "step": 2,
+        "head": "adaptive evolution",
+        "relation": "transforms",
+        "tail": "evolutionary memory networks",
+        "claim": "扩展结构响应状态通过工程化别构网络维持进化记忆"
+      },
+      {
+        "step": 3,
+        "head": "evolutionary memory networks",
+        "relation": "causes",
+        "tail": "fitness landscape",
+        "claim": "进化记忆使过去适应状态影响当前响应"
+      },
+      {
+        "step": 4,
+        "head": "fitness landscape",
+        "relation": "predicts",
+        "tail": "non-monotonic fitness",
+        "claim": "工程化别构路径酶呈现多峰值适应性景观"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "structure-based supervised machine learning",
+        "relation": "predicts",
+        "tail": "static binding modes",
+        "claim": "机器学习预测酶功能和静态结合模式"
+      },
+      {
+        "step": 2,
+        "head": "static binding modes",
+        "relation": "extends",
+        "tail": "dynamic binding trajectories",
+        "claim": "引入等温压缩性作为动态特征扩展预测能力"
+      },
+      {
+        "step": 3,
+        "head": "dynamic binding trajectories",
+        "relation": "enables",
+        "tail": "PET hydrolase",
+        "claim": "动态特征捕捉结合过程构象变化"
+      },
+      {
+        "step": 4,
+        "head": "PET hydrolase",
+        "relation": "predicts",
+        "tail": "binding kinetics",
+        "claim": "压缩性特征模型预测结合动力学"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "dynamic response predictive model",
+        "relation": "predicts",
+        "tail": "epistasis",
+        "claim": "动态响应模型可靠预测表观作用"
+      },
+      {
+        "step": 2,
+        "head": "epistasis",
+        "relation": "maps",
+        "tail": "network topology",
+        "claim": "表观网络拓扑特征反映进化路径"
+      },
+      {
+        "step": 3,
+        "head": "network topology",
+        "relation": "identifies",
+        "tail": "evolutionary hotspots",
+        "claim": "高阶节点对应进化热点"
+      },
+      {
+        "step": 4,
+        "head": "evolutionary hotspots",
+        "relation": "enables",
+        "tail": "targeted mutagenesis",
+        "claim": "热点突变实现更高定向进化成功率"
+      }
+    ]
+  ],
+  "L3": [
+    [
+      {
+        "step": 1,
+        "head": "dynamic squeezing index",
+        "relation": "improves",
+        "tail": "catalytic mechanism",
+        "claim": "动态挤压改善催化机制"
+      },
+      {
+        "step": 2,
+        "head": "catalytic mechanism",
+        "relation": "integrates",
+        "tail": "structure-based supervised machine learning",
+        "claim": "化学扰动数据训练机器学习模型"
+      },
+      {
+        "step": 3,
+        "head": "structure-based supervised machine learning",
+        "relation": "guides",
+        "tail": "chemical modification",
+        "claim": "模型指导化学修饰形成反馈循环"
+      },
+      {
+        "step": 4,
+        "head": "chemical modification",
+        "relation": "creates",
+        "tail": "adaptive optimization",
+        "claim": "化学-计算迭代循环加速优化"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "protein surface charges",
+        "relation": "affects",
+        "tail": "protein function",
+        "claim": "表面电荷影响蛋白质功能"
+      },
+      {
+        "step": 2,
+        "head": "protein function",
+        "relation": "maps",
+        "tail": "fitness landscape",
+        "claim": "适应性景观解释表观作用"
+      },
+      {
+        "step": 3,
+        "head": "fitness landscape",
+        "relation": "identifies",
+        "tail": "epistatic bridges",
+        "claim": "电荷修饰产生长程表观效应"
+      },
+      {
+        "step": 4,
+        "head": "epistatic bridges",
+        "relation": "validates",
+        "tail": "dynamic response predictive model",
+        "claim": "动态模型预测电荷敏感表观变化"
+      }
+    ]
+  ]
+}

@@ -1,0 +1,179 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "isothermal compressibility-assisted dynamic squeezing index perturbation engineering (iCASE)",
+        "relation": "establishes",
+        "tail": "hierarchical modular networks",
+        "claim": "iCASE建立分层模块网络以实现多尺度调控"
+      },
+      {
+        "step": 2,
+        "head": "hierarchical modular networks",
+        "relation": "optimizes",
+        "tail": "hydrophobic interactions",
+        "claim": "分层模块网络优化疏水相互作用"
+      },
+      {
+        "step": 3,
+        "head": "hierarchical modular networks",
+        "relation": "optimizes",
+        "tail": "epistatic fitness landscapes",
+        "claim": "分层模块网络优化上位性适应景观"
+      },
+      {
+        "step": 4,
+        "head": "machine learning-predicted structural responses",
+        "relation": "guides",
+        "tail": "salt bridges and disulfide bonds",
+        "claim": "机器学习预测指导关键网络节点的盐桥和二硫键工程"
+      },
+      {
+        "step": 5,
+        "head": "salt bridges and disulfide bonds",
+        "relation": "enhances",
+        "tail": "thermal stability and catalytic activity",
+        "claim": "盐桥和二硫键工程同时增强热稳定性和催化活性"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "structure-based supervised machine learning models",
+        "relation": "integrates",
+        "tail": "dynamic squeezing index parameters",
+        "claim": "机器学习模型整合动态挤压指数参数"
+      },
+      {
+        "step": 2,
+        "head": "dynamic squeezing index parameters",
+        "relation": "combines with",
+        "tail": "evolutionary fitness data",
+        "claim": "动态参数与进化适应数据结合"
+      },
+      {
+        "step": 3,
+        "head": "machine learning models",
+        "relation": "trained on",
+        "tail": "metal ion coordination states",
+        "claim": "模型训练包含金属离子配位状态数据"
+      },
+      {
+        "step": 4,
+        "head": "machine learning models",
+        "relation": "trained on",
+        "tail": "magnitude epistasis measurements",
+        "claim": "模型训练包含上位性强度测量数据"
+      },
+      {
+        "step": 5,
+        "head": "machine learning models",
+        "relation": "predicts",
+        "tail": "polyethylene terephthalate hydrolase-substrate binding modes",
+        "claim": "最终预测PET水解酶-底物结合模式"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "molecular response models",
+        "relation": "derived from",
+        "tail": "adaptive evolution peaks",
+        "claim": "分子响应模型源自适应进化峰"
+      },
+      {
+        "step": 2,
+        "head": "protein surface charge modifications",
+        "relation": "coordinates with",
+        "tail": "sign epistasis patterns",
+        "claim": "表面电荷修饰与上位性符号模式协调"
+      },
+      {
+        "step": 3,
+        "head": "dynamic response algorithms",
+        "relation": "predicts",
+        "tail": "sign epistasis patterns",
+        "claim": "动态算法预测上位性符号模式"
+      },
+      {
+        "step": 4,
+        "head": "computational predictions",
+        "relation": "forms feedback loop with",
+        "tail": "experimental mutagenesis",
+        "claim": "计算预测与实验诱变形成反馈循环"
+      }
+    ]
+  ],
+  "L3": [
+    [
+      {
+        "step": 1,
+        "head": "synergistic optimization of enzyme catalytic mechanisms",
+        "relation": "achieves through",
+        "tail": "chemical-driven dynamic squeezing index networks",
+        "claim": "化学驱动的动态网络实现催化机制协同优化"
+      },
+      {
+        "step": 2,
+        "head": "chemical-driven dynamic squeezing index networks",
+        "relation": "combines with",
+        "tail": "machine learning predictions",
+        "claim": "动态网络与机器学习预测结合"
+      },
+      {
+        "step": 3,
+        "head": "machine learning predictions",
+        "relation": "predicts",
+        "tail": "hydrogen bond reorganization patterns",
+        "claim": "机器学习预测氢键重组模式"
+      },
+      {
+        "step": 4,
+        "head": "hydrogen bond reorganization patterns",
+        "relation": "demonstrates",
+        "tail": "non-linear improvement",
+        "claim": "氢键重组在适应景观粗糙区域展示非线性提升"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "integrated workflow",
+        "relation": "combines",
+        "tail": "protein surface charge analysis",
+        "claim": "整合工作流结合表面电荷分析"
+      },
+      {
+        "step": 2,
+        "head": "integrated workflow",
+        "relation": "combines",
+        "tail": "phenotypic fitness landscape modeling",
+        "claim": "整合工作流结合适应景观建模"
+      },
+      {
+        "step": 3,
+        "head": "integrated workflow",
+        "relation": "combines",
+        "tail": "dynamic response prediction",
+        "claim": "整合工作流结合动态响应预测"
+      },
+      {
+        "step": 4,
+        "head": "disulfide bond engineering",
+        "relation": "performed on",
+        "tail": "epistatic hubs",
+        "claim": "二硫键工程作用于上位性枢纽"
+      },
+      {
+        "step": 5,
+        "head": "gradient boosting algorithms",
+        "relation": "identifies",
+        "tail": "epistatic hubs",
+        "claim": "梯度提升算法识别上位性枢纽"
+      }
+    ]
+  ]
+}

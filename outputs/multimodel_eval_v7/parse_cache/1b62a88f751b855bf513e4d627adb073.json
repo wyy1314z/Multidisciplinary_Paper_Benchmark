@@ -1,0 +1,77 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "GPCR全osteric位点",
+        "relation": "induces",
+        "tail": "独特构象动态模式",
+        "claim": "特定全osteric位点诱导构象动态模式"
+      },
+      {
+        "step": 2,
+        "head": "独特构象动态模式",
+        "relation": "regulates",
+        "tail": "下游信号转导路径选择性激活",
+        "claim": "构象动态调控信号通路选择性激活"
+      },
+      {
+        "step": 3,
+        "head": "独特构象动态模式",
+        "relation": "determines",
+        "tail": "偏向性配体敏感性",
+        "claim": "构象动态决定配体敏感性"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "smFRET技术",
+        "relation": "enables",
+        "tail": "全osteric构象态动态捕捉",
+        "claim": "高分辨技术捕捉构象动态"
+      },
+      {
+        "step": 2,
+        "head": "全osteric构象态动态",
+        "relation": "quantifies",
+        "tail": "动态转换频率/持续时间",
+        "claim": "量化构象动态参数"
+      },
+      {
+        "step": 3,
+        "head": "构象动态参数",
+        "relation": "reveals",
+        "tail": "构象-功能因果关系",
+        "claim": "动态特征揭示功能机制"
+      }
+    ]
+  ],
+  "L3": [
+    [
+      {
+        "step": 1,
+        "head": "特定构象动态调节",
+        "relation": "targets",
+        "tail": "药物设计策略",
+        "claim": "靶向构象动态设计药物"
+      },
+      {
+        "step": 2,
+        "head": "药物设计策略",
+        "relation": "enables",
+        "tail": "信号通路精确调控",
+        "claim": "药物策略实现通路调控"
+      },
+      {
+        "step": 3,
+        "head": "信号通路精确调控",
+        "relation": "produces",
+        "tail": "高选择性疗效药物",
+        "claim": "精确调控产生高效药物"
+      }
+    ]
+  ]
+}

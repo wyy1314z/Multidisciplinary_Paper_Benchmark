@@ -1,0 +1,98 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "等温压缩",
+        "relation": "induces",
+        "tail": "酶分子内部疏水效应增强",
+        "claim": "高压环境诱导酶分子内部疏水效应增强"
+      },
+      {
+        "step": 2,
+        "head": "疏水效应增强",
+        "relation": "promotes",
+        "tail": "α-螺旋结构重排",
+        "claim": "疏水效应增强促进α-螺旋结构重排"
+      },
+      {
+        "step": 3,
+        "head": "α-螺旋结构重排",
+        "relation": "increases",
+        "tail": "热稳定性(Tm值)",
+        "claim": "α-螺旋结构重排提高酶的热稳定性"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "动态挤压指数扰动",
+        "relation": "applies",
+        "tail": "周期性机械应力",
+        "claim": "动态挤压产生周期性机械应力"
+      },
+      {
+        "step": 2,
+        "head": "机械应力",
+        "relation": "activates",
+        "tail": "活性位点局部柔性",
+        "claim": "机械应力激活酶活性位点局部柔性"
+      },
+      {
+        "step": 3,
+        "head": "局部柔性",
+        "relation": "enhances",
+        "tail": "底物结合动力学",
+        "claim": "活性位点柔性增强促进底物结合动力学"
+      },
+      {
+        "step": 4,
+        "head": "底物结合动力学",
+        "relation": "reduces",
+        "tail": "Km值",
+        "claim": "底物结合动力学增强降低Km值"
+      }
+    ]
+  ],
+  "L3": [
+    [
+      {
+        "step": 1,
+        "head": "等温压缩",
+        "relation": "synergizes_with",
+        "tail": "动态挤压指数扰动",
+        "claim": "两种物理处理方式产生协同效应"
+      },
+      {
+        "step": 2,
+        "head": "协同效应",
+        "relation": "activates",
+        "tail": "压力-机械力双信号通路",
+        "claim": "协同作用激活双信号传导通路"
+      },
+      {
+        "step": 3,
+        "head": "双信号通路",
+        "relation": "modulates",
+        "tail": "构象动态平衡",
+        "claim": "双信号通路调控酶构象动态平衡"
+      },
+      {
+        "step": 4,
+        "head": "构象动态平衡",
+        "relation": "achieves",
+        "tail": "ΔTm ≥ 5°C",
+        "claim": "构象平衡优化实现热稳定性突破"
+      },
+      {
+        "step": 5,
+        "head": "构象动态平衡",
+        "relation": "achieves",
+        "tail": "kcat/Km提升2–5倍",
+        "claim": "构象平衡优化实现催化效率突破"
+      }
+    ]
+  ]
+}

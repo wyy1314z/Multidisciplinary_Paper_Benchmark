@@ -1,0 +1,172 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "微流体反应器",
+        "relation": "enables",
+        "tail": "快速混合试剂",
+        "claim": "微流体反应器的高效混合特性加速反应进程"
+      },
+      {
+        "step": 2,
+        "head": "在线光谱纳米粒子表征",
+        "relation": "provides",
+        "tail": "实时光谱数据",
+        "claim": "在线光谱表征实时获取纳米粒子的光谱信息"
+      },
+      {
+        "step": 3,
+        "head": "机器学习算法",
+        "relation": "optimizes",
+        "tail": "反应条件",
+        "claim": "机器学习算法基于光谱数据优化反应参数"
+      },
+      {
+        "step": 4,
+        "head": "优化后的反应条件",
+        "relation": "determines",
+        "tail": "纳米粒子尺寸/形貌/组成",
+        "claim": "优化的反应条件精确控制纳米粒子的物理化学属性"
+      },
+      {
+        "step": 5,
+        "head": "纳米粒子尺寸/形貌/组成",
+        "relation": "controls",
+        "tail": "光学性质",
+        "claim": "纳米粒子的结构特征最终决定其光学性质"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "微流体反应器",
+        "relation": "provides",
+        "tail": "高效反应环境",
+        "claim": "微流体反应器提供快速反应的物理环境"
+      },
+      {
+        "step": 2,
+        "head": "遗传算法",
+        "relation": "optimizes",
+        "tail": "反应条件",
+        "claim": "遗传算法对反应参数进行迭代优化"
+      },
+      {
+        "step": 3,
+        "head": "优化的反应条件",
+        "relation": "enables",
+        "tail": "多维化学空间筛选",
+        "claim": "参数优化加速多维化学空间的条件筛选"
+      },
+      {
+        "step": 4,
+        "head": "多维化学空间筛选",
+        "relation": "achieves",
+        "tail": "特定光学性质纳米粒子",
+        "claim": "筛选结果实现具有目标光学性质的纳米粒子合成"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "贝叶斯优化",
+        "relation": "determines",
+        "tail": "初始反应条件范围",
+        "claim": "贝叶斯优化在多维空间中确定初始参数范围"
+      },
+      {
+        "step": 2,
+        "head": "深度神经网络",
+        "relation": "minimizes",
+        "tail": "损失函数",
+        "claim": "深度神经网络通过损失函数优化参数调整"
+      },
+      {
+        "step": 3,
+        "head": "损失函数最小化",
+        "relation": "adjusts",
+        "tail": "反应条件",
+        "claim": "损失函数驱动反应条件的实时调整"
+      },
+      {
+        "step": 4,
+        "head": "调整后的反应条件",
+        "relation": "optimizes",
+        "tail": "纳米粒子合成参数",
+        "claim": "参数调整实现纳米粒子合成参数的优化"
+      }
+    ]
+  ],
+  "L3": [
+    [
+      {
+        "step": 1,
+        "head": "微流体反应器",
+        "relation": "collects",
+        "tail": "实时反应数据",
+        "claim": "微流体反应器在反应过程中实时采集数据"
+      },
+      {
+        "step": 2,
+        "head": "实时反应数据",
+        "relation": "feeds",
+        "tail": "贝叶斯优化",
+        "claim": "采集的数据传输给贝叶斯优化算法"
+      },
+      {
+        "step": 3,
+        "head": "贝叶斯优化",
+        "relation": "adjusts",
+        "tail": "反应条件",
+        "claim": "贝叶斯优化根据数据动态调整反应参数"
+      },
+      {
+        "step": 4,
+        "head": "调整后的反应条件",
+        "relation": "forms",
+        "tail": "闭环调控",
+        "claim": "参数反馈形成闭环系统实现精准控制"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "在线光谱表征",
+        "relation": "measures",
+        "tail": "光谱信息",
+        "claim": "在线光谱表征实时测量纳米粒子光谱数据"
+      },
+      {
+        "step": 2,
+        "head": "深度神经网络",
+        "relation": "builds",
+        "tail": "尺寸-光谱关联模型",
+        "claim": "深度神经网络建立光谱数据与尺寸形貌的关联模型"
+      },
+      {
+        "step": 3,
+        "head": "关联模型",
+        "relation": "minimizes",
+        "tail": "损失函数",
+        "claim": "模型通过损失函数最小化优化参数"
+      },
+      {
+        "step": 4,
+        "head": "损失函数优化",
+        "relation": "adjusts",
+        "tail": "反应条件",
+        "claim": "损失函数驱动反应条件的实时调整"
+      },
+      {
+        "step": 5,
+        "head": "调整后的反应条件",
+        "relation": "optimizes",
+        "tail": "纳米粒子尺寸形貌",
+        "claim": "参数调整实现纳米粒子尺寸形貌的精准控制"
+      }
+    ]
+  ]
+}

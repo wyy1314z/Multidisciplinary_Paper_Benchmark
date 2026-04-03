@@ -1,0 +1,137 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "Advanced structural biology techniques (X-ray crystallography, cryogenic electron microscopy)",
+        "relation": "reveals",
+        "tail": "conformational dynamics of GPCRs",
+        "claim": "结构生物学技术揭示了GPCR的构象动力学"
+      },
+      {
+        "step": 2,
+        "head": "conformational dynamics of GPCRs",
+        "relation": "influences",
+        "tail": "accessibility and shape of allosteric drug binding sites",
+        "claim": "构象动力学影响别构药物结合位点的可及性和形状"
+      },
+      {
+        "step": 3,
+        "head": "integration of molecular dynamics simulations with structural analyses",
+        "relation": "enhances",
+        "tail": "identification of novel therapeutic targets and drug development",
+        "claim": "整合模拟与结构分析可增强新靶点发现和药物开发"
+      },
+      {
+        "step": 4,
+        "head": "understanding of conformational changes correlating with allosteric site dynamics",
+        "relation": "enables",
+        "tail": "design of molecules stabilizing beneficial receptor states",
+        "claim": "理解构象变化可指导设计稳定有益受体状态的分子"
+      },
+      {
+        "step": 5,
+        "head": "design of stabilizing molecules",
+        "relation": "improves",
+        "tail": "drug efficacy and selectivity",
+        "claim": "稳定分子设计可提高药物效果和选择性"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "integration of X-ray crystallography and cryogenic electron microscopy with molecular dynamics simulations",
+        "relation": "provides",
+        "tail": "comprehensive view of GPCR conformational transitions",
+        "claim": "多模态方法提供GPCR构象转变的全面视图"
+      },
+      {
+        "step": 2,
+        "head": "comprehensive view of conformational transitions",
+        "relation": "elucidates",
+        "tail": "mechanisms of local 'breathing' motions activating signaling pathways",
+        "claim": "全面视图阐明局部运动激活信号通路的机制"
+      },
+      {
+        "step": 3,
+        "head": "elucidation of activation mechanisms",
+        "relation": "reveals",
+        "tail": "new allosteric sites for therapeutic intervention",
+        "claim": "机制解析可揭示新的治疗靶向别构位点"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "molecular dynamics simulations",
+        "relation": "predicts",
+        "tail": "effects of membrane lipid variations on GPCR conformational flexibility",
+        "claim": "模拟可预测膜脂变化对GPCR柔性的影响"
+      },
+      {
+        "step": 2,
+        "head": "simulations of different lipid compositions",
+        "relation": "identifies",
+        "tail": "conditions promoting open allosteric sites",
+        "claim": "不同脂质模拟可识别促进开放位点的条件"
+      },
+      {
+        "step": 3,
+        "head": "identification of promoting conditions",
+        "relation": "enhances",
+        "tail": "effectiveness of allosteric modulators",
+        "claim": "条件识别可增强别构调节剂效果"
+      }
+    ]
+  ],
+  "L3": [
+    [
+      {
+        "step": 1,
+        "head": "combination of X-ray crystallography, cryogenic electron microscopy, and molecular dynamics simulations",
+        "relation": "enables",
+        "tail": "construction of predictive model linking GPCR states to allosteric sites",
+        "claim": "技术组合可构建构象-别构位点关联模型"
+      },
+      {
+        "step": 2,
+        "head": "predictive model",
+        "relation": "guides",
+        "tail": "rational design of allosteric modulators",
+        "claim": "模型可指导别构调节剂的理性设计"
+      },
+      {
+        "step": 3,
+        "head": "allosteric modulators stabilizing desired conformations",
+        "relation": "associates with",
+        "tail": "pharmacological outcomes (increased activity/reduced side effects)",
+        "claim": "稳定构象的调节剂可关联预期药理效应"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "detailed molecular dynamics simulations in various lipid environments",
+        "relation": "uncovers",
+        "tail": "role of specific lipids in modulating receptor flexibility",
+        "claim": "详细模拟可揭示特定脂质对受体柔性的调控"
+      },
+      {
+        "step": 2,
+        "head": "findings on lipid roles",
+        "relation": "translates into",
+        "tail": "experimental protocols for optimizing drug delivery systems",
+        "claim": "脂质作用发现可转化为递送系统优化方案"
+      },
+      {
+        "step": 3,
+        "head": "optimized lipid composition in delivery vehicles",
+        "relation": "supports",
+        "tail": "optimal receptor conformation",
+        "claim": "优化脂质组成可维持靶受体最佳构象"
+      }
+    ]
+  ]
+}

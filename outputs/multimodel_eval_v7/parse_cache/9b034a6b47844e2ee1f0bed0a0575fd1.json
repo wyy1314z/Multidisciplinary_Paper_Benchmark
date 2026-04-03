@@ -1,0 +1,123 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "conformational dynamics of GPCRs",
+        "relation": "enables",
+        "tail": "rich dataset",
+        "claim": "构象动力学通过分子动力学模拟和结构分析生成数据集"
+      },
+      {
+        "step": 2,
+        "head": "rich dataset",
+        "relation": "reveals",
+        "tail": "impact of membrane lipid dynamics",
+        "claim": "数据集揭示膜脂质动力学对GPCR功能多样性的影响"
+      },
+      {
+        "step": 3,
+        "head": "impact of membrane lipid dynamics",
+        "relation": "leads to",
+        "tail": "identification of novel allosteric sites",
+        "claim": "膜脂质影响机制促进发现新变构位点"
+      },
+      {
+        "step": 4,
+        "head": "identification of novel allosteric sites",
+        "relation": "enables",
+        "tail": "development of selective drugs",
+        "claim": "新位点发现为开发靶向药物提供可能"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "integration of cryo-EM/X-ray data with MD simulations",
+        "relation": "creates",
+        "tail": "comprehensive model",
+        "claim": "多源数据整合建立构象-药物结合模型"
+      },
+      {
+        "step": 2,
+        "head": "comprehensive model",
+        "relation": "elucidates",
+        "tail": "conformational states' influence on drug binding",
+        "claim": "模型解析构象变化对药物亲和力的作用机制"
+      },
+      {
+        "step": 3,
+        "head": "conformational states' influence on drug binding",
+        "relation": "predicts",
+        "tail": "drug efficacy",
+        "claim": "动态相互作用预测药物治疗效果"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "GPCR flexibility from MD simulations",
+        "relation": "causes",
+        "tail": "formation of side-specific binding sites",
+        "claim": "受体柔性驱动侧向特异性结合位点形成"
+      },
+      {
+        "step": 2,
+        "head": "formation of side-specific binding sites",
+        "relation": "modulated by",
+        "tail": "membrane lipids",
+        "claim": "膜脂成分调控侧向位点表达"
+      },
+      {
+        "step": 3,
+        "head": "membrane lipids",
+        "relation": "informs",
+        "tail": "drug targeting strategies",
+        "claim": "脂质调控机制指导变构药物设计"
+      }
+    ]
+  ],
+  "L3": [
+    [
+      {
+        "step": 1,
+        "head": "synergistic approach of cryo-EM/X-ray/MD",
+        "relation": "validates",
+        "tail": "hidden allosteric sites",
+        "claim": "多技术联用验证动态变构位点存在"
+      },
+      {
+        "step": 2,
+        "head": "hidden allosteric sites",
+        "relation": "requires",
+        "tail": "experimental verification",
+        "claim": "需定点诱变等实验确认位点功能"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "membrane lipid dynamics (cholesterol)",
+        "relation": "modulates",
+        "tail": "shape/accessibility of allosteric sites",
+        "claim": "特定脂质调控变构位点空间构型"
+      },
+      {
+        "step": 2,
+        "head": "GPCR-lipid interactions",
+        "relation": "enables",
+        "tail": "design of lipid-exploiting drugs",
+        "claim": "脂质互作机制指导高选择性药物开发"
+      },
+      {
+        "step": 3,
+        "head": "lipid-exploiting drugs",
+        "relation": "tested by",
+        "tail": "in vitro lipid-manipulation experiments",
+        "claim": "体外脂质调控实验验证药物有效性"
+      }
+    ]
+  ]
+}

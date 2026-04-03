@@ -1,0 +1,72 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "conformational landscape of GPCRs",
+        "relation": "includes",
+        "tail": "distinct transient intermediate state",
+        "claim": "GPCRs的构象景观包含一个独特的瞬态中间状态"
+      },
+      {
+        "step": 2,
+        "head": "distinct transient intermediate state",
+        "relation": "stabilized by",
+        "tail": "specific lipid microdomain interactions",
+        "claim": "该中间状态由特定脂质微域相互作用稳定"
+      },
+      {
+        "step": 3,
+        "head": "distinct transient intermediate state",
+        "relation": "biases signaling toward",
+        "tail": "β-arrestin recruitment over G-protein activation",
+        "claim": "该中间状态使信号偏向β-arrestin招募而非G蛋白激活"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "distinct transient intermediate state",
+        "relation": "modulates",
+        "tail": "downstream functional mechanisms",
+        "claim": "中间状态调节下游功能机制"
+      },
+      {
+        "step": 2,
+        "head": "distinct transient intermediate state",
+        "relation": "represents",
+        "tail": "unique druggable conformation",
+        "claim": "该中间状态代表了一个独特的可药用构象"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "unique druggable conformation",
+        "relation": "allows for development of",
+        "tail": "ligands stabilizing the intermediate state",
+        "claim": "该可药用构象允许开发稳定中间状态的配体"
+      },
+      {
+        "step": 2,
+        "head": "ligands stabilizing the intermediate state",
+        "relation": "exhibit",
+        "tail": "improved selectivity and efficacy with reduced side effects",
+        "claim": "这些配体将表现出更好的选择性和疗效，减少副作用"
+      }
+    ]
+  ],
+  "L3": [
+    [
+      {
+        "step": 1,
+        "head": "combining time-resolved FRET, cryo-EM, molecular dynamics simulations, and pharmacological profiling",
+        "relation": "enables",
+        "tail": "map and characterize dynamic conformational shifts in GPCRs under varying lipid environments",
+        "claim": "结合多种技术可以映射和表征不同脂质环境下的GPCR动态构象变化"
+      }
+    ]
+  ]
+}

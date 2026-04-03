@@ -1,0 +1,48 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "Integration of meta-materials with topological structure and phase gradients into traditional optical system",
+        "relation": "enables",
+        "tail": "Breaking chromatic aberration and diffraction limit constraints in terahertz super-resolution imaging",
+        "claim": "集成超材料到传统系统可突破色差和衍射极限的限制"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "Meta-materials design",
+        "relation": "enables",
+        "tail": "Precise manipulation of terahertz wavefront",
+        "claim": "超材料设计允许精确操控太赫兹波前"
+      },
+      {
+        "step": 2,
+        "head": "Adjusting dispersion characteristics",
+        "relation": "enables",
+        "tail": "Compensating chromatic aberration",
+        "claim": "调整色散特性使得补偿色差成为可能"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "Topological structure",
+        "relation": "causes",
+        "tail": "Introduction of non-trivial phase singularities",
+        "claim": "拓扑结构导致非平凡相位奇点的引入"
+      },
+      {
+        "step": 2,
+        "head": "Non-trivial phase singularities",
+        "relation": "enables",
+        "tail": "Localizing terahertz field beyond diffraction limit",
+        "claim": "非平凡相位奇点使得超越衍射极限的局域成为可能"
+      }
+    ]
+  ],
+  "L3": []
+}

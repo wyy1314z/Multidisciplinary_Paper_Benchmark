@@ -1,0 +1,134 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "准金属有机框架材料",
+        "relation": "transforms",
+        "tail": "金属氧化物过渡态结构",
+        "claim": "配体去除调控MOF向金属氧化物渐进转变"
+      },
+      {
+        "step": 2,
+        "head": "金属氧化物过渡态结构",
+        "relation": "enables",
+        "tail": "过氧化物酶/过氧化氢酶活性增强",
+        "claim": "暴露更多活性金属位点提升催化效率"
+      },
+      {
+        "step": 3,
+        "head": "金属氧化物过渡态结构",
+        "relation": "regulates",
+        "tail": "细胞内氧化还原平衡",
+        "claim": "结构特性可调节细胞氧化还原状态"
+      },
+      {
+        "step": 4,
+        "head": "氧化还原失衡",
+        "relation": "activates",
+        "tail": "铁死亡途径",
+        "claim": "氧化应激触发肿瘤细胞铁死亡"
+      },
+      {
+        "step": 5,
+        "head": "铁死亡激活",
+        "relation": "induces",
+        "tail": "抗肿瘤免疫反应",
+        "claim": "免疫原性死亡激活机体抗肿瘤免疫"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "准金属有机框架材料",
+        "relation": "retains",
+        "tail": "多孔结构完整性",
+        "claim": "结构转变过程中维持多孔特性"
+      },
+      {
+        "step": 2,
+        "head": "多孔结构",
+        "relation": "exposes",
+        "tail": "活性金属位点",
+        "claim": "孔道结构促进活性位点暴露"
+      },
+      {
+        "step": 3,
+        "head": "活性金属位点",
+        "relation": "catalyzes",
+        "tail": "过氧化氢分解",
+        "claim": "金属中心催化过氧化氢反应"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "可控配体去除策略",
+        "relation": "modulates",
+        "tail": "铁原子配位环境",
+        "claim": "调控配体去除程度改变铁配位结构"
+      },
+      {
+        "step": 2,
+        "head": "配位环境改变",
+        "relation": "exposes",
+        "tail": "不饱和铁活性位点",
+        "claim": "部分配体移除暴露更多活性中心"
+      },
+      {
+        "step": 3,
+        "head": "不饱和铁位点",
+        "relation": "lowers",
+        "tail": "反应活化能垒",
+        "claim": "活性位点降低催化反应能垒"
+      },
+      {
+        "step": 4,
+        "head": "活化能垒降低",
+        "relation": "enhances",
+        "tail": "双重酶催化效率",
+        "claim": "能垒降低显著提升催化活性"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "多孔结构纳米材料",
+        "relation": "enables",
+        "tail": "药物载体功能",
+        "claim": "孔道系统实现药物负载与缓释"
+      },
+      {
+        "step": 2,
+        "head": "肿瘤微环境酸性条件",
+        "relation": "triggers",
+        "tail": "铁离子释放",
+        "claim": "酸性环境促进铁离子溶出"
+      },
+      {
+        "step": 3,
+        "head": "铁离子",
+        "relation": "generates",
+        "tail": "活性氧自由基",
+        "claim": "铁催化产生活性氧物种"
+      },
+      {
+        "step": 4,
+        "head": "活性氧积累",
+        "relation": "depletes",
+        "tail": "谷胱甘肽",
+        "claim": "氧化应激消耗细胞内抗氧化剂"
+      },
+      {
+        "step": 5,
+        "head": "谷胱甘肽耗竭",
+        "relation": "induces",
+        "tail": "脂质过氧化",
+        "claim": "抗氧化防御失效引发脂质过氧化"
+      }
+    ]
+  ],
+  "L3": []
+}

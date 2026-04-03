@@ -15,6 +15,12 @@ Implements:
 
 from __future__ import annotations
 
+import os
+# 必须在 import huggingface_hub / sentence_transformers / transformers 之前设置，
+# 否则库在 import 时缓存了联网状态，后续 local_files_only 无法阻止所有网络请求
+os.environ.setdefault("HF_HUB_OFFLINE", "1")
+os.environ.setdefault("TRANSFORMERS_OFFLINE", "1")
+
 import json
 import logging
 import math
@@ -38,11 +44,10 @@ try:
     def _get_sbert():
         global _SBERT_MODEL
         if _SBERT_MODEL is None:
-            # 优先使用本地缓存，避免网络不可达时失败
-            import os
-            os.environ.setdefault("HF_HUB_OFFLINE", "1")
-            os.environ.setdefault("TRANSFORMERS_OFFLINE", "1")
-            _SBERT_MODEL = SentenceTransformer("paraphrase-multilingual-MiniLM-L12-v2")
+            _SBERT_MODEL = SentenceTransformer(
+                "paraphrase-multilingual-MiniLM-L12-v2",
+                local_files_only=True,
+            )
         return _SBERT_MODEL
 
     _HAS_SBERT = True
@@ -50,6 +55,31 @@ except ImportError:
     _HAS_SBERT = False
 
     def _get_sbert():  # type: ignore[misc]
+        return None
+
+# ---------------------------------------------------------------------------
+# Optional: NLI model for factual precision (graceful degradation)
+# ---------------------------------------------------------------------------
+try:
+    from transformers import pipeline as _hf_pipeline
+
+    _NLI_MODEL = None
+
+    def _get_nli():
+        global _NLI_MODEL
+        if _NLI_MODEL is None:
+            _NLI_MODEL = _hf_pipeline(
+                "text-classification",
+                model="microsoft/deberta-xlarge-mnli",
+                device=-1,
+            )
+        return _NLI_MODEL
+
+    _HAS_NLI = True
+except ImportError:
+    _HAS_NLI = False
+
+    def _get_nli():  # type: ignore[misc]
         return None
 
 
@@ -994,3 +1024,326 @@ def path_semantic_alignment(
         "mean_alignment": round(max(mean_sim, 0.0), 4),
         "best_gt_index": best_idx,
     }
+
+
+# ===========================================================================
+#  15. Causal Direction Accuracy  (D3 — 推理链结构)
+# ===========================================================================
+
+def causal_direction_accuracy(
+    gen_path: List[Dict[str, Any]],
+    gt_paths: List[Dict[str, Any]],
+) -> float:
+    """
+    Proportion of GT-matched steps whose (head→tail) direction is correct.
+
+    CDA = forward_match / any_match
+
+    Reference: Simon (1983); Pearl (2009) — causal asymmetry.
+    """
+    if not gen_path:
+        return 0.0
+
+    gt_pairs: Set[Tuple[str, str]] = set()
+    for gt_item in gt_paths:
+        for step in gt_item.get("path", []):
+            h = (step.get("head") or "").strip().lower()
+            t = (step.get("tail") or "").strip().lower()
+            if h and t:
+                gt_pairs.add((h, t))
+
+    if not gt_pairs:
+        return 0.0
+
+    forward_match = 0
+    any_match = 0
+    for step in gen_path:
+        h = (step.get("head") or "").strip().lower()
+        t = (step.get("tail") or "").strip().lower()
+        fwd = (h, t) in gt_pairs
+        rev = (t, h) in gt_pairs
+        if fwd or rev:
+            any_match += 1
+            if fwd:
+                forward_match += 1
+
+    if any_match == 0:
+        return 0.0
+    return round(forward_match / any_match, 4)
+
+
+# ===========================================================================
+#  16. Disciplinary Leap Index  (D4 — 跨学科性)
+# ===========================================================================
+
+def disciplinary_leap_index(
+    path_steps: List[Dict[str, Any]],
+    node_disciplines: Dict[str, str],
+    disc_paths: Dict[str, List[str]],
+    max_depth: int,
+) -> float:
+    """
+    Maximum single-step taxonomy distance in the path.
+
+    DLI = max_s  d_tax(disc(head_s), disc(tail_s))
+
+    Captures the boldest cross-disciplinary leap.
+    Reference: Fortunato et al. (2018); Coccia (2022).
+    """
+    if not path_steps:
+        return 0.0
+
+    _SKIP = {"unknown", "hypothesis_inferred", "struct_relation_inferred"}
+    max_dist = 0.0
+    for step in path_steps:
+        h = (step.get("head") or "").strip()
+        t = (step.get("tail") or "").strip()
+        disc_h = node_disciplines.get(h) or node_disciplines.get(h.lower(), "unknown")
+        disc_t = node_disciplines.get(t) or node_disciplines.get(t.lower(), "unknown")
+        if disc_h in _SKIP or disc_t in _SKIP:
+            continue
+        d = taxonomy_distance(disc_h, disc_t, disc_paths, max_depth)
+        max_dist = max(max_dist, d)
+
+    return round(max_dist, 4)
+
+
+# ===========================================================================
+#  17. Discipline Balance  (D4 — 跨学科性)
+# ===========================================================================
+
+def discipline_balance(
+    path_steps: List[Dict[str, Any]],
+    node_disciplines: Dict[str, str],
+) -> float:
+    """
+    1 - Gini coefficient of discipline frequency distribution.
+
+    Balance = 1 - Gini({p_1, ..., p_k})
+
+    1.0 = perfectly balanced across disciplines, 0.0 = single discipline.
+    Reference: Stirling (2007) balance dimension; Gini (1912).
+    """
+    if not path_steps:
+        return 0.0
+
+    _SKIP = {"unknown", "hypothesis_inferred", "struct_relation_inferred"}
+    disc_counts: Counter = Counter()
+    for step in path_steps:
+        for field in ("head", "tail"):
+            ent = (step.get(field) or "").strip()
+            disc = node_disciplines.get(ent) or node_disciplines.get(ent.lower(), "unknown")
+            if disc not in _SKIP:
+                disc_counts[disc] += 1
+
+    if len(disc_counts) <= 1:
+        return 0.0
+
+    values = sorted(disc_counts.values())
+    n = len(values)
+    total = sum(values)
+    cumsum = sum((i + 1) * v for i, v in enumerate(values))
+    gini = (2 * cumsum) / (n * total) - (n + 1) / n
+
+    return round(max(1.0 - gini, 0.0), 4)
+
+
+# ===========================================================================
+#  18. Remote Association Index  (D5 — 新颖性与创造力)
+# ===========================================================================
+
+def remote_association_index(
+    path_steps: List[Dict[str, Any]],
+) -> float:
+    """
+    Mean per-step semantic distance between head and tail.
+
+    RAI = mean_s (1 - cos(emb(head_s), emb(tail_s)))
+
+    Reference: Mednick (1962) Remote Associations Test.
+    """
+    if not path_steps:
+        return 0.0
+
+    sbert = _get_sbert()
+    distances: List[float] = []
+
+    for step in path_steps:
+        h = (step.get("head") or "").strip()
+        t = (step.get("tail") or "").strip()
+        if not h or not t:
+            continue
+
+        if sbert is not None:
+            embs = sbert.encode([h, t])
+            sim = _cosine_sim_vectors(embs[0], embs[1])
+        else:
+            sim = _difflib_similarity(h, t)
+
+        distances.append(max(1.0 - sim, 0.0))
+
+    if not distances:
+        return 0.0
+    return round(float(np.mean(distances)), 4)
+
+
+# ===========================================================================
+#  19. Novelty-Convention Balance  (D5 — 新颖性与创造力)
+# ===========================================================================
+
+def novelty_convention_balance(
+    gen_path: List[Dict[str, Any]],
+    gt_paths: List[Dict[str, Any]],
+) -> float:
+    """
+    Balance between novel and conventional steps.
+
+    NCB = min(r_novel, r_conv) / max(r_novel, r_conv)
+
+    A step is 'conventional' if (h,t) or (t,h) appears in GT.
+    1.0 = perfect balance, 0.0 = all novel or all conventional.
+    Reference: Uzzi et al. (2013) Science.
+    """
+    if not gen_path:
+        return 0.0
+
+    gt_pairs: Set[Tuple[str, str]] = set()
+    for gt_item in gt_paths:
+        for step in gt_item.get("path", []):
+            h = (step.get("head") or "").strip().lower()
+            t = (step.get("tail") or "").strip().lower()
+            if h and t:
+                gt_pairs.add((h, t))
+                gt_pairs.add((t, h))
+
+    n_conv = 0
+    n_novel = 0
+    for step in gen_path:
+        h = (step.get("head") or "").strip().lower()
+        t = (step.get("tail") or "").strip().lower()
+        if (h, t) in gt_pairs:
+            n_conv += 1
+        else:
+            n_novel += 1
+
+    total = len(gen_path)
+    if total == 0:
+        return 0.0
+
+    r_conv = n_conv / total
+    r_novel = n_novel / total
+    denom = max(r_novel, r_conv)
+    if denom == 0:
+        return 0.0
+    return round(min(r_novel, r_conv) / denom, 4)
+
+
+# ===========================================================================
+#  20. Hallucination Rate  (D8 — 可靠性)
+# ===========================================================================
+
+def hallucination_rate(
+    path_steps: List[Dict[str, Any]],
+    gt_terms: List[str],
+    abstract: str,
+    entity_threshold: float = 0.75,
+) -> float:
+    """
+    Proportion of path entities not grounded in GT terms or abstract.
+
+    HR = ungrounded / total_entities
+
+    Two-tier check: (1) substring in abstract, (2) SBERT soft-match to GT.
+    Lower is better (0 = no hallucinations).
+    Reference: Min et al. (2023) FActScore; Li et al. (2023) HaluEval.
+    """
+    if not path_steps:
+        return 0.0
+
+    entities: Set[str] = set()
+    for step in path_steps:
+        for field in ("head", "tail"):
+            ent = (step.get(field) or "").strip()
+            if ent:
+                entities.add(ent)
+
+    if not entities:
+        return 0.0
+
+    abstract_lower = (abstract or "").lower()
+    gt_terms_lower = [(t or "").strip().lower() for t in (gt_terms or []) if t]
+
+    sbert = _get_sbert()
+    gt_embs = None
+    if sbert is not None and gt_terms:
+        gt_embs = sbert.encode(gt_terms)
+
+    ungrounded = 0
+    for ent in entities:
+        ent_lower = ent.lower()
+
+        # Check 1: substring in abstract
+        if abstract_lower and ent_lower in abstract_lower:
+            continue
+
+        # Check 2: soft match against GT terms
+        grounded = False
+        if gt_embs is not None:
+            ent_emb = sbert.encode([ent])[0]
+            for ge in gt_embs:
+                if _cosine_sim_vectors(ent_emb, ge) >= entity_threshold:
+                    grounded = True
+                    break
+        elif gt_terms_lower:
+            for gt in gt_terms_lower:
+                if _difflib_similarity(ent_lower, gt) >= entity_threshold:
+                    grounded = True
+                    break
+
+        if not grounded:
+            ungrounded += 1
+
+    return round(ungrounded / len(entities), 4)
+
+
+# ===========================================================================
+#  21. Factual Precision  (D8 — 可靠性)
+# ===========================================================================
+
+def factual_precision(
+    path_steps: List[Dict[str, Any]],
+    abstract: str,
+) -> float:
+    """
+    NLI-based factual precision: proportion of claims that do not
+    contradict the abstract.
+
+    FP = |{s : NLI(claim_s, abstract) != contradiction}| / num_steps
+
+    Uses DeBERTa-xlarge-mnli. Returns 0.0 if NLI model unavailable.
+    Reference: Min et al. (2023) FActScore.
+    """
+    if not path_steps or not abstract:
+        return 0.0
+
+    nli = _get_nli()
+    if nli is None:
+        logger.warning("NLI model unavailable; factual_precision returns 0.0")
+        return 0.0
+
+    non_contradicted = 0
+    for step in path_steps:
+        claim = (step.get("claim") or "").strip()
+        if not claim:
+            non_contradicted += 1  # no claim to check
+            continue
+        try:
+            result = nli(f"{abstract}</s></s>{claim}", truncation=True)
+            label = result[0]["label"].upper() if result else "NEUTRAL"
+            if label != "CONTRADICTION":
+                non_contradicted += 1
+        except Exception as e:
+            logger.warning("NLI inference failed for claim: %s", e)
+            non_contradicted += 1  # fail-open
+
+    return round(non_contradicted / len(path_steps), 4)

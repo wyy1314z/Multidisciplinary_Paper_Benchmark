@@ -1,0 +1,104 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "iCASE strategy",
+        "relation": "leverages",
+        "tail": "hierarchical modular networks",
+        "claim": "iCASE策略利用分层模块化网络诱导酶结构扰动"
+      },
+      {
+        "step": 2,
+        "head": "hierarchical modular networks",
+        "relation": "induces",
+        "tail": "targeted structural perturbations",
+        "claim": "分层模块化网络诱导靶向结构扰动"
+      },
+      {
+        "step": 3,
+        "head": "targeted structural perturbations",
+        "relation": "dynamically balances",
+        "tail": "conformational rigidity and flexibility",
+        "claim": "结构扰动动态平衡构象刚性和柔性"
+      },
+      {
+        "step": 4,
+        "head": "dynamic balance of rigidity/flexibility",
+        "relation": "optimizes",
+        "tail": "isothermal compressibility parameters",
+        "claim": "动态平衡通过机器学习驱动的挤压扰动优化压缩参数"
+      },
+      {
+        "step": 5,
+        "head": "optimized compressibility parameters",
+        "relation": "enhances",
+        "tail": "thermostability and catalytic activity",
+        "claim": "优化的压缩参数同时增强热稳定性和催化活性"
+      },
+      {
+        "step": 6,
+        "head": "enhanced thermostability and catalytic activity",
+        "relation": "overcomes",
+        "tail": "stability-activity trade-off",
+        "claim": "同时增强热稳定性和催化活性克服了工业酶的稳定性-活性权衡"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "Integration of GNNs",
+        "relation": "models",
+        "tail": "multi-scale interactions",
+        "claim": "整合图神经网络建模酶-聚合物多尺度相互作用"
+      },
+      {
+        "step": 2,
+        "head": "multi-scale interactions",
+        "relation": "enables",
+        "tail": "prediction of binding modes",
+        "claim": "多尺度相互作用预测PET水解酶-聚合物结合模式"
+      },
+      {
+        "step": 3,
+        "head": "training on crystallographic/M D data",
+        "relation": "identifies",
+        "tail": "cryptic binding pockets",
+        "claim": "晶体学和分子动力学数据训练识别聚合物构象适应性隐秘结合口袋"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "Molecular response models",
+        "relation": "pinpoint",
+        "tail": "epistatic network hotspots",
+        "claim": "表型网络衍生模型定位进化热点模块"
+      },
+      {
+        "step": 2,
+        "head": "compensatory mutations",
+        "relation": "enhance",
+        "tail": "fitness",
+        "claim": "补偿性突变（如远端环刚性化耦合活性位点柔性）增强适应性"
+      },
+      {
+        "step": 3,
+        "head": "CRISPR-Cas9 multiplex mutagenesis",
+        "relation": "engineers",
+        "tail": "co-optimized variants",
+        "claim": "CRISPR引导的多重诱变系统改造稳定性/活性共优化酶变体"
+      },
+      {
+        "step": 4,
+        "head": "free energy landscape simulations",
+        "relation": "validates",
+        "tail": "engineered variants",
+        "claim": "自由能景观模拟验证工程化酶变体"
+      }
+    ]
+  ],
+  "L3": []
+}

@@ -1,0 +1,137 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "超振荡透镜原理",
+        "relation": "combines_with",
+        "tail": "梯度超材料折射率调控",
+        "claim": "物理学超振荡原理与材料科学梯度超材料技术结合"
+      },
+      {
+        "step": 2,
+        "head": "梯度超材料",
+        "relation": "enables",
+        "tail": "亚波长纳米散射体",
+        "claim": "梯度超材料通过纳米散射体实现连续折射率分布(Δn>0.8)"
+      },
+      {
+        "step": 3,
+        "head": "超表面离轴像差补偿算法",
+        "relation": "optimizes",
+        "tail": "相位分布",
+        "claim": "算法优化产生等效负色散效应"
+      },
+      {
+        "step": 4,
+        "head": "负色散效应",
+        "relation": "eliminates",
+        "tail": "色差约束",
+        "claim": "宽带(0.2-0.9 THz)色差消除同时保持0.2λ超分辨能力"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "同心纳米环结构",
+        "relation": "achieves",
+        "tail": "宽带相位补偿",
+        "claim": "周期性排列结构实现相位补偿(Δφ=2π(kλ)⁻¹∫₀^R r dr)"
+      },
+      {
+        "step": 2,
+        "head": "几何相位梯度",
+        "relation": "satisfies",
+        "tail": "色散平衡条件",
+        "claim": "当∇Φ=2π/Λ与dn/dλ满足∂(kλ)/∂λ=0时实现消色差"
+      },
+      {
+        "step": 3,
+        "head": "消色差超分辨成像",
+        "relation": "verified_by",
+        "tail": "点扩散函数测量",
+        "claim": "实验验证半高宽<λ/3证明0.555NA消色差"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "三维打印技术",
+        "relation": "requires",
+        "tail": "高纵横比纳米柱",
+        "claim": "H/D>5:1结构需要精确制造工艺"
+      },
+      {
+        "step": 2,
+        "head": "光固化参数",
+        "relation": "controls",
+        "tail": "层间对准精度",
+        "claim": "收缩率<2%和±1μm精度复现周期排列"
+      },
+      {
+        "step": 3,
+        "head": "制造误差",
+        "relation": "models",
+        "tail": "相位畸变",
+        "claim": "ΔOPD=2π(n_print-n_design)h/λ关系建模"
+      },
+      {
+        "step": 4,
+        "head": "层厚条件",
+        "relation": "ensures",
+        "tail": "波前畸变",
+        "claim": "h<λ/10时RMS<λ/14满足超分辨需求"
+      }
+    ]
+  ],
+  "L3": [
+    [
+      {
+        "step": 1,
+        "head": "纳米柱纵横比",
+        "relation": "satisfies",
+        "tail": "周期关系",
+        "claim": "AR=5:1与Λ=λ/2满足λ/Λ=2AR条件"
+      },
+      {
+        "step": 2,
+        "head": "等效介质理论",
+        "relation": "creates",
+        "tail": "正反馈机制",
+        "claim": "n_eff=√ε_r与φ=2πn_eff h/λ形成相位正反馈"
+      },
+      {
+        "step": 3,
+        "head": "折射率分布",
+        "relation": "achieves",
+        "tail": "超分辨聚焦",
+        "claim": "σ(n)<0.05时0.9 THz实现0.18λ聚焦突破0.61λ极限"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "纳米柱阵列",
+        "relation": "enhances",
+        "tail": "倏逝波耦合",
+        "claim": "β=1.2k₀使数值孔径从0.555提升至0.8"
+      },
+      {
+        "step": 2,
+        "head": "离轴相位梯度",
+        "relation": "compensates",
+        "tail": "场曲",
+        "claim": "∇Φ=0.3k₀在±45°视场补偿像差"
+      },
+      {
+        "step": 3,
+        "head": "视场扩展",
+        "relation": "verified_by",
+        "tail": "调制传递函数",
+        "claim": "MTF>0.3 at 200 lp/mm验证协同设计有效性"
+      }
+    ]
+  ]
+}

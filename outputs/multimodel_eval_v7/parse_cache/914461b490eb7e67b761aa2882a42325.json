@@ -1,0 +1,158 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "Evolutionary algorithms",
+        "relation": "enable",
+        "tail": "multi-objective optimization",
+        "claim": "Evolutionary algorithms enable multi-objective optimization in complex spaces"
+      },
+      {
+        "step": 2,
+        "head": "Microfluidic reactors",
+        "relation": "enable",
+        "tail": "rapid iteration of reaction conditions",
+        "claim": "Microfluidic reactors enable rapid iteration of reaction conditions"
+      },
+      {
+        "step": 3,
+        "head": "Integration of evolutionary algorithms and microfluidic reactors",
+        "relation": "enables",
+        "tail": "emergent discovery of Pareto-optimal conditions",
+        "claim": "Integration enables emergent discovery of nanoparticle conditions with Pareto-optimal optical tradeoffs"
+      },
+      {
+        "step": 4,
+        "head": "emergent discovery of Pareto-optimal conditions",
+        "relation": "causes",
+        "tail": "non-trivial nanoparticle morphologies",
+        "claim": "Emergent discovery leads to nanoparticles with simultaneous optimization of plasmon resonance wavelength and FWHM"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "Chemical spaces",
+        "relation": "have",
+        "tail": "intrinsic lower-dimensional structure",
+        "claim": "Chemical spaces have intrinsic lower-dimensional structure"
+      },
+      {
+        "step": 2,
+        "head": "Topological data analysis",
+        "relation": "identifies",
+        "tail": "persistent homology features",
+        "claim": "Topological methods identify persistent homology features in high-dimensional data"
+      },
+      {
+        "step": 3,
+        "head": "Microfluidic reactors",
+        "relation": "generate",
+        "tail": "high-dimensional chemical data",
+        "claim": "Microfluidics generate data suitable for topological analysis"
+      },
+      {
+        "step": 4,
+        "head": "persistent homology navigation",
+        "relation": "reduces",
+        "tail": "iterations required for property optimization",
+        "claim": "Navigation guided by persistent homology requires fewer iterations to reach target nanoparticle properties"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "Nanoparticle formation",
+        "relation": "involves",
+        "tail": "non-equilibrium kinetic pathways",
+        "claim": "Nanoparticle formation involves non-equilibrium kinetic pathways"
+      },
+      {
+        "step": 2,
+        "head": "Reinforcement learning",
+        "relation": "excels at",
+        "tail": "discovering temporal strategies",
+        "claim": "Reinforcement learning excels at discovering non-obvious temporal strategies"
+      },
+      {
+        "step": 3,
+        "head": "RL agents",
+        "relation": "manipulate",
+        "tail": "reagent addition timing",
+        "claim": "RL agents manipulate reagent timing to trap metastable states"
+      },
+      {
+        "step": 4,
+        "head": "RL-designed protocols",
+        "relation": "produce",
+        "tail": "unconventional nanoparticle shapes",
+        "claim": "RL-designed protocols produce nanoparticle shapes not found in conventional synthesis databases"
+      }
+    ]
+  ],
+  "L3": [
+    [
+      {
+        "step": 1,
+        "head": "Microfluidic mixing",
+        "relation": "affects",
+        "tail": "nanoparticle formation kinetics",
+        "claim": "Microfluidic mixing affects nanoparticle formation kinetics"
+      },
+      {
+        "step": 2,
+        "head": "Standard Bayesian optimization kernels",
+        "relation": "ignore",
+        "tail": "transport physics",
+        "claim": "Standard BO kernels ignore transport physics in microfluidics"
+      },
+      {
+        "step": 3,
+        "head": "Physics-informed kernels",
+        "relation": "model",
+        "tail": "synthesis space with fluid dynamics",
+        "claim": "Physics-informed kernels better model synthesis space by incorporating fluid dynamics"
+      },
+      {
+        "step": 4,
+        "head": "Physics-informed Bayesian optimization",
+        "relation": "improves",
+        "tail": "convergence speed",
+        "claim": "Physics-informed BO shows faster convergence for nanoparticles in complex flow regimes"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "Reagent molecular structure",
+        "relation": "influences",
+        "tail": "nanoparticle growth",
+        "claim": "Reagent molecular structure influences nanoparticle growth"
+      },
+      {
+        "step": 2,
+        "head": "Graph neural networks",
+        "relation": "process",
+        "tail": "molecular graph representations",
+        "claim": "GNNs process molecular graph representations effectively"
+      },
+      {
+        "step": 3,
+        "head": "Combined spectral and molecular features",
+        "relation": "capture",
+        "tail": "structure-to-nanostructure relationships",
+        "claim": "Combined features capture fundamental molecular-structure-to-nanostructure relationships"
+      },
+      {
+        "step": 4,
+        "head": "GNN models",
+        "relation": "show",
+        "tail": "better generalization",
+        "claim": "GNN models show better generalization to unseen reagent classes"
+      }
+    ]
+  ]
+}

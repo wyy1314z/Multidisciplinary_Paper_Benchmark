@@ -1,0 +1,102 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "designing metasurface with asymmetric gold nanoantennas",
+        "relation": "enables",
+        "tail": "excitation and confinement of terahertz SPPs",
+        "claim": "纳米天线设计使得表面等离极化激元(SPPs)的激发与限制成为可能"
+      },
+      {
+        "step": 2,
+        "head": "excitation and confinement of terahertz SPPs",
+        "relation": "facilitates",
+        "tail": "degenerate four-wave mixing process",
+        "claim": "SPPs的场增强效应促进非线性四波混频过程"
+      },
+      {
+        "step": 3,
+        "head": "degenerate four-wave mixing process",
+        "relation": "generates",
+        "tail": "sub-diffraction-limited virtual point source",
+        "claim": "非线性光学过程产生亚衍射极限虚拟点源"
+      },
+      {
+        "step": 4,
+        "head": "virtual point source",
+        "relation": "enables",
+        "tail": "achromatic super-resolution imaging",
+        "claim": "虚拟点源实现消色差超分辨成像"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "metasurface's geometric phase control",
+        "relation": "ensures",
+        "tail": "directional emission",
+        "claim": "几何相位调控确保定向发射特性"
+      },
+      {
+        "step": 2,
+        "head": "directional emission",
+        "relation": "achieves",
+        "tail": "diffraction-unlimited focusing",
+        "claim": "定向发射实现突破衍射极限的聚焦"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "nonlinear process",
+        "relation": "avoids",
+        "tail": "wavelength-dependent focal shifts",
+        "claim": "非线性机制消除波长依赖性焦点偏移"
+      },
+      {
+        "step": 2,
+        "head": "avoidance of focal shifts",
+        "relation": "allows",
+        "tail": "broadband terahertz focusing",
+        "claim": "消除焦点偏移允许宽带太赫兹聚焦"
+      }
+    ]
+  ],
+  "L3": [
+    [
+      {
+        "step": 1,
+        "head": "material-dependent nonlinear response",
+        "relation": "causes",
+        "tail": "inherent achromatic properties",
+        "claim": "材料非线性响应导致固有消色差特性"
+      },
+      {
+        "step": 2,
+        "head": "inherent achromatic properties",
+        "relation": "eliminates",
+        "tail": "chromatic aberration limits",
+        "claim": "消色差特性突破色差限制"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "multiple frequency SPPs confinement",
+        "relation": "produces",
+        "tail": "broadband terahertz radiation",
+        "claim": "多频SPPs限制产生宽带太赫兹辐射"
+      },
+      {
+        "step": 2,
+        "head": "broadband terahertz radiation",
+        "relation": "supports",
+        "tail": "0.5–5 THz operational band",
+        "claim": "宽带辐射覆盖0.5-5 THz工作频段"
+      }
+    ]
+  ]
+}

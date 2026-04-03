@@ -1,0 +1,121 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "GPCR构象动力学",
+        "relation": "modulates",
+        "tail": "局部膜环境",
+        "claim": "GPCR的构象动态调制局部膜环境"
+      },
+      {
+        "step": 2,
+        "head": "局部膜环境",
+        "relation": "induces",
+        "tail": "微域重组",
+        "claim": "局部膜环境的变化诱导脂质微域重组"
+      },
+      {
+        "step": 3,
+        "head": "微域重组",
+        "relation": "refines",
+        "tail": "信号传导调控",
+        "claim": "微域重组作为变构调节剂的储存库，细化信号传导和药物响应"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "射线晶体学和冷冻电子显微镜数据",
+        "relation": "combined_with",
+        "tail": "分子动力学模拟",
+        "claim": "结合静态结构数据与动态模拟揭示瞬时脂质-受体相互作用"
+      },
+      {
+        "step": 2,
+        "head": "瞬时脂质-受体相互作用",
+        "relation": "stabilizes",
+        "tail": "受体中间态",
+        "claim": "这些相互作用稳定受体中间态，特异性调控信号传导"
+      },
+      {
+        "step": 3,
+        "head": "干扰脂质-受体相互作用域",
+        "relation": "disrupts",
+        "tail": "信号传导通路",
+        "claim": "通过突变或化学干预破坏这些作用域会导致信号通路失活"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "膜脂质组成变化",
+        "relation": "alters",
+        "tail": "膜曲率与流动性",
+        "claim": "脂质组成变化（如饱和度）改变局部膜的曲率与流动性"
+      },
+      {
+        "step": 2,
+        "head": "膜曲率与流动性",
+        "relation": "modulates",
+        "tail": "GPCR构象状态",
+        "claim": "膜特性变化影响GPCR构象状态及侧向通道开放"
+      },
+      {
+        "step": 3,
+        "head": "GPCR构象状态",
+        "relation": "controls",
+        "tail": "侧向配体进入通道",
+        "claim": "构象变化调控侧向配体入口和药物结合位点开放"
+      },
+      {
+        "step": 4,
+        "head": "侧向配体进入通道",
+        "relation": "influences",
+        "tail": "药物结合动力学",
+        "claim": "通道开放比例变化导致药物结合动力学调整"
+      }
+    ]
+  ],
+  "L3": [
+    [
+      {
+        "step": 1,
+        "head": "静态结构数据",
+        "relation": "integrated_with",
+        "tail": "分子动力学模拟",
+        "claim": "融合静态与动态数据构建时空解析模型"
+      },
+      {
+        "step": 2,
+        "head": "时空解析模型",
+        "relation": "identifies",
+        "tail": "构象动态与变构位点耦合",
+        "claim": "模型揭示受体呼吸动态与外周区域形成的时空关联"
+      },
+      {
+        "step": 3,
+        "head": "构象动态与变构位点",
+        "relation": "coupled_with",
+        "tail": "膜脂质插入",
+        "claim": "外周区域形成受膜脂质插入和动态调控影响"
+      },
+      {
+        "step": 4,
+        "head": "干预膜脂质环境",
+        "relation": "alters",
+        "tail": "GPCR构象及通道",
+        "claim": "人为改变脂质种类或浓度引发可预测的构象变化"
+      },
+      {
+        "step": 5,
+        "head": "GPCR构象及通道",
+        "relation": "guides",
+        "tail": "新型调节剂开发",
+        "claim": "验证整合模型并指导时间分辨调节剂设计"
+      }
+    ]
+  ]
+}

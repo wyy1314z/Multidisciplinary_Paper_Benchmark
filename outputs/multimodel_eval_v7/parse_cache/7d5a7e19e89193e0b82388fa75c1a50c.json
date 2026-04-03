@@ -1,0 +1,130 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "plasmon resonance",
+        "relation": "governs",
+        "tail": "optical properties",
+        "claim": "等离子共振主导光学性质"
+      },
+      {
+        "step": 2,
+        "head": "AFION",
+        "relation": "enables",
+        "tail": "photonic feedback",
+        "claim": "AFION的机器学习驱动合成能力使光子反馈成为可能"
+      },
+      {
+        "step": 3,
+        "head": "photonic feedback",
+        "relation": "transforms",
+        "tail": "adaptive nanostructures",
+        "claim": "光子传感器反馈形成双向控制实现自适应纳米结构"
+      },
+      {
+        "step": 4,
+        "head": "adaptive nanostructures",
+        "relation": "causes",
+        "tail": "faster optical reconfiguration",
+        "claim": "自适应纳米结构导致光学重构速度提升≥30%"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "microfluidic reactors",
+        "relation": "enables",
+        "tail": "parallel reaction channels",
+        "claim": "微流体反应器实现并行测试"
+      },
+      {
+        "step": 2,
+        "head": "multi-armed bandit algorithms",
+        "relation": "optimizes",
+        "tail": "channel allocation",
+        "claim": "多臂老虎机算法通过遗憾最小化优化通道分配"
+      },
+      {
+        "step": 3,
+        "head": "optimized allocation",
+        "relation": "causes",
+        "tail": "log(N) scaling exploration",
+        "claim": "优化后的分配使探索时间呈现log(N)缩放"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "generative adversarial networks",
+        "relation": "discovers",
+        "tail": "novel parameter combinations",
+        "claim": "生成对抗网络发现新参数组合"
+      },
+      {
+        "step": 2,
+        "head": "genetic algorithms",
+        "relation": "enforces",
+        "tail": "stability constraints",
+        "claim": "遗传算法通过适应度函数确保稳定性"
+      },
+      {
+        "step": 3,
+        "head": "co-optimized solutions",
+        "relation": "shows",
+        "tail": "inverse correlation",
+        "claim": "协同优化方案显示FWHM与zeta电位负相关"
+      }
+    ]
+  ],
+  "L3": [
+    [
+      {
+        "step": 1,
+        "head": "Bayesian optimization",
+        "relation": "targets",
+        "tail": "plasmonics",
+        "claim": "贝叶斯优化针对等离子体特性"
+      },
+      {
+        "step": 2,
+        "head": "microfluidic actuators",
+        "relation": "creates",
+        "tail": "concentration mosaics",
+        "claim": "微流体执行器创建浓度梯度马赛克"
+      },
+      {
+        "step": 3,
+        "head": "local optimization",
+        "relation": "achieves",
+        "tail": "higher density",
+        "claim": "局部优化使密度提升5倍"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "spectral fingerprints",
+        "relation": "correlates",
+        "tail": "functional performance",
+        "claim": "光谱指纹与功能性能相关"
+      },
+      {
+        "step": 2,
+        "head": "deep neural networks",
+        "relation": "maps",
+        "tail": "FWHM/shape metrics",
+        "claim": "DNN映射半高全宽参数到生物性能"
+      },
+      {
+        "step": 3,
+        "head": "model prediction",
+        "relation": "correlates",
+        "tail": "drug loading efficiency",
+        "claim": "模型预测与药物装载效率R²>0.85"
+      }
+    ]
+  ]
+}

@@ -1,0 +1,158 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "dielectric gradient metamaterials",
+        "relation": "enables",
+        "tail": "dynamic THz metalenses",
+        "claim": "介电梯度超材料与3D打印结合使动态THz金属透镜成为可能"
+      },
+      {
+        "step": 2,
+        "head": "dynamic THz metalenses",
+        "relation": "provides",
+        "tail": "real-time phase and amplitude tunability",
+        "claim": "动态THz金属透镜实现相位和振幅的实时调谐"
+      },
+      {
+        "step": 3,
+        "head": "real-time phase and amplitude tunability",
+        "relation": "overcomes",
+        "tail": "static limitations",
+        "claim": "实时调谐能力克服传统静态透镜限制"
+      },
+      {
+        "step": 4,
+        "head": "overcoming static limitations",
+        "relation": "enhances",
+        "tail": "adaptive imaging applications",
+        "claim": "突破静态限制显著增强成像适应性"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "dielectric gradient metamaterials",
+        "relation": "enhanced_by",
+        "tail": "multi-layered structures",
+        "claim": "多层结构增强介电梯度超材料性能"
+      },
+      {
+        "step": 2,
+        "head": "multi-layered structures",
+        "relation": "allows",
+        "tail": "complex light manipulation",
+        "claim": "多层设计实现复杂光场操控"
+      },
+      {
+        "step": 3,
+        "head": "complex light manipulation",
+        "relation": "corrects",
+        "tail": "higher-order chromatic aberrations",
+        "claim": "复杂操控可校正高阶色差"
+      },
+      {
+        "step": 4,
+        "head": "correcting chromatic aberrations",
+        "relation": "achieves",
+        "tail": "broadband achromatic super-resolution",
+        "claim": "色差校正实现宽谱消色差超分辨"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "two-photon polymerization",
+        "relation": "enhances",
+        "tail": "3D printing precision",
+        "claim": "双光子聚合显著提升打印精度"
+      },
+      {
+        "step": 2,
+        "head": "enhanced 3D printing",
+        "relation": "enables",
+        "tail": "ultra-fine feature fabrication",
+        "claim": "高精度制造实现超精细结构"
+      },
+      {
+        "step": 3,
+        "head": "ultra-fine features",
+        "relation": "required_for",
+        "tail": "high-NA wide-FOV metalenses",
+        "claim": "超精细结构是高NA宽视场透镜的基础"
+      },
+      {
+        "step": 4,
+        "head": "high-NA wide-FOV metalenses",
+        "relation": "improves",
+        "tail": "super-resolution imaging",
+        "claim": "高性能透镜提升超分辨成像质量"
+      }
+    ]
+  ],
+  "L3": [
+    [
+      {
+        "step": 1,
+        "head": "dielectric gradient metamaterials",
+        "relation": "combined_with",
+        "tail": "active tuning elements",
+        "claim": "主动调谐元件与超材料结合"
+      },
+      {
+        "step": 2,
+        "head": "active tuning elements",
+        "relation": "enables",
+        "tail": "real-time refractive index adjustment",
+        "claim": "主动元件实现折射率实时调节"
+      },
+      {
+        "step": 3,
+        "head": "real-time adjustment",
+        "relation": "maintains",
+        "tail": "optimal imaging performance",
+        "claim": "动态调节保持最佳成像状态"
+      },
+      {
+        "step": 4,
+        "head": "maintained performance",
+        "relation": "improves",
+        "tail": "environmental robustness",
+        "claim": "性能稳定增强环境适应性"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "high-aspect-ratio nanopillars",
+        "relation": "combined_with",
+        "tail": "subwavelength nanoscatterers",
+        "claim": "高纵横比柱与散射体协同集成"
+      },
+      {
+        "step": 2,
+        "head": "combined structures",
+        "relation": "enhance",
+        "tail": "light manipulation capabilities",
+        "claim": "结构组合增强光操控能力"
+      },
+      {
+        "step": 3,
+        "head": "enhanced light manipulation",
+        "relation": "achieves",
+        "tail": "phase and amplitude control",
+        "claim": "精确控制THz波相位振幅"
+      },
+      {
+        "step": 4,
+        "head": "phase and amplitude control",
+        "relation": "increases",
+        "tail": "numerical aperture and field of view",
+        "claim": "参数控制提升NA与视场范围"
+      }
+    ]
+  ]
+}

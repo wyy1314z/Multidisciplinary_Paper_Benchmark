@@ -1,0 +1,123 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "qMOF在酸性肿瘤微环境(pH 6.5-6.8)",
+        "relation": "enables",
+        "tail": "有机连接体构象变化",
+        "claim": "酸性环境触发连接体构象变化"
+      },
+      {
+        "step": 2,
+        "head": "有机连接体构象变化",
+        "relation": "causes",
+        "tail": "金属-金属距离缩短至3.6 Å",
+        "claim": "构象变化调节金属间距"
+      },
+      {
+        "step": 3,
+        "head": "金属-金属距离3.6 Å",
+        "relation": "enables",
+        "tail": "距离依赖电子耦合",
+        "claim": "缩短的间距促进电子耦合"
+      },
+      {
+        "step": 4,
+        "head": "距离依赖电子耦合",
+        "relation": "enables",
+        "tail": "Fe³⁺/Cu²⁺协同氧化还原循环",
+        "claim": "电子耦合驱动金属协同催化"
+      },
+      {
+        "step": 5,
+        "head": "Fe³⁺/Cu²⁺协同氧化还原循环",
+        "relation": "causes",
+        "tail": "高效生成羟基自由基",
+        "claim": "协同循环提升自由基生成效率"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "高效生成羟基自由基",
+        "relation": "causes",
+        "tail": "局部氧化应激",
+        "claim": "自由基引发氧化应激"
+      },
+      {
+        "step": 2,
+        "head": "局部氧化应激",
+        "relation": "causes",
+        "tail": "肿瘤细胞凋亡",
+        "claim": "氧化应激诱导细胞凋亡"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "双金属节点(Fe³⁺/Cu²⁺)",
+        "relation": "requires",
+        "tail": "电子缺乏有机连接体",
+        "claim": "双金属需与电子缺乏连接体配位"
+      },
+      {
+        "step": 2,
+        "head": "电子缺乏有机连接体",
+        "relation": "enables",
+        "tail": "pH依赖的质子化响应",
+        "claim": "连接体电子分布决定pH响应"
+      },
+      {
+        "step": 3,
+        "head": "pH依赖的质子化响应",
+        "relation": "modulates",
+        "tail": "金属-金属距离动态切换",
+        "claim": "质子化调控金属间距动态性"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "qMOF准金属导电性(10⁻³ S/cm)",
+        "relation": "enables",
+        "tail": "跨催化位点电子传递",
+        "claim": "导电性支持长程电子传输"
+      },
+      {
+        "step": 2,
+        "head": "跨催化位点电子传递",
+        "relation": "enhances",
+        "tail": "氧化还原循环周转率",
+        "claim": "电子传输加速催化循环"
+      }
+    ]
+  ],
+  "L3": [
+    [
+      {
+        "step": 1,
+        "head": "金属-金属距离4.2 Å",
+        "relation": "inhibits",
+        "tail": "d轨道电子交叠",
+        "claim": "长间距抑制电子耦合"
+      },
+      {
+        "step": 2,
+        "head": "d轨道电子交叠",
+        "relation": "mediates",
+        "tail": "Fe³⁺-Cu²⁺协同氧化还原",
+        "claim": "电子交叠是协同催化基础"
+      },
+      {
+        "step": 3,
+        "head": "Fe³⁺-Cu²⁺协同氧化还原",
+        "relation": "requires",
+        "tail": "桥联配位环境",
+        "claim": "双金属需共享配位框架"
+      }
+    ]
+  ]
+}

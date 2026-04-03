@@ -1,0 +1,66 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "等温压缩处理",
+        "relation": "transforms",
+        "tail": "三维结构改变",
+        "claim": "等温压缩处理改变了工业酶的三维结构"
+      },
+      {
+        "step": 2,
+        "head": "动态挤压指数扰动",
+        "relation": "transforms",
+        "tail": "结构有序重排",
+        "claim": "动态挤压指数扰动诱导了酶分子结构的有序重排"
+      },
+      {
+        "step": 3,
+        "head": "结构有序重排",
+        "relation": "enables",
+        "tail": "热稳定性增强",
+        "claim": "结构有序重排优化了酶的热稳定性"
+      },
+      {
+        "step": 4,
+        "head": "热稳定性增强",
+        "relation": "causes",
+        "tail": "高温稳定性提高",
+        "claim": "热稳定性增强使酶在高温条件下保持稳定"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "等温压缩处理",
+        "relation": "transforms",
+        "tail": "三维结构改变",
+        "claim": "等温压缩处理改变了工业酶的三维结构"
+      },
+      {
+        "step": 2,
+        "head": "动态挤压指数扰动",
+        "relation": "transforms",
+        "tail": "结构有序重排",
+        "claim": "动态挤压指数扰动诱导了酶分子结构的有序重排"
+      },
+      {
+        "step": 3,
+        "head": "结构有序重排",
+        "relation": "enables",
+        "tail": "催化活性增强",
+        "claim": "结构有序重排优化了酶的催化活性"
+      },
+      {
+        "step": 4,
+        "head": "催化活性增强",
+        "relation": "causes",
+        "tail": "产物生成速率提高",
+        "claim": "催化活性增强提升了特定反应条件下的产物生成速率"
+      }
+    ]
+  ],
+  "L2": [],
+  "L3": []
+}

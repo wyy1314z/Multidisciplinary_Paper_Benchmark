@@ -1,0 +1,144 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "蛋白偶联受体构象动力学",
+        "relation": "influences",
+        "tail": "变构药物结合位点形状",
+        "claim": "构象动力学影响变构位点形状"
+      },
+      {
+        "step": 2,
+        "head": "变构药物结合位点形状",
+        "relation": "regulates",
+        "tail": "化学信号传导",
+        "claim": "位点形状调控化学信号传导"
+      },
+      {
+        "step": 3,
+        "head": "化学信号传导",
+        "relation": "affects",
+        "tail": "药物治疗效果",
+        "claim": "信号传导影响神经系统疾病治疗效果"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "蛋白偶联受体构象柔性",
+        "relation": "alters",
+        "tail": "变构通讯网络",
+        "claim": "构象柔性改变通讯网络特性"
+      },
+      {
+        "step": 2,
+        "head": "变构通讯网络",
+        "relation": "determines",
+        "tail": "变构药物结合位点状态",
+        "claim": "通讯网络决定位点开放/关闭状态"
+      },
+      {
+        "step": 3,
+        "head": "变构药物结合位点状态",
+        "relation": "influences",
+        "tail": "配体结合",
+        "claim": "位点状态影响配体结合能力"
+      },
+      {
+        "step": 4,
+        "head": "配体结合",
+        "relation": "provides",
+        "tail": "药物靶向策略新靶点",
+        "claim": "配体结合特性为药物靶向提供新靶点"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "射线晶体学与冷冻电镜技术",
+        "relation": "enables",
+        "tail": "蛋白偶联受体构象解析",
+        "claim": "结构生物学技术解析受体构象变化"
+      },
+      {
+        "step": 2,
+        "head": "蛋白偶联受体构象变化",
+        "relation": "modulates",
+        "tail": "受体亚型信号传导",
+        "claim": "构象变化调节受体亚型信号传导"
+      },
+      {
+        "step": 3,
+        "head": "受体亚型信号传导",
+        "relation": "alters",
+        "tail": "药物亲和力",
+        "claim": "信号传导改变药物亲和力特性"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "膜脂质动力学",
+        "relation": "affects",
+        "tail": "膜脂质-受体相互作用",
+        "claim": "脂质动力学影响受体相互作用"
+      },
+      {
+        "step": 2,
+        "head": "膜脂质-受体相互作用",
+        "relation": "modifies",
+        "tail": "变构药物结合位点形状",
+        "claim": "相互作用改变位点三维结构"
+      },
+      {
+        "step": 3,
+        "head": "变构药物结合位点形状",
+        "relation": "determines",
+        "tail": "药物结合效率",
+        "claim": "位点形状决定药物结合效率"
+      }
+    ]
+  ],
+  "L3": [
+    [
+      {
+        "step": 1,
+        "head": "射线晶体学",
+        "relation": "complements",
+        "tail": "冷冻电镜技术",
+        "claim": "晶体学与电镜技术互补获取静态结构"
+      },
+      {
+        "step": 2,
+        "head": "冷冻电镜技术",
+        "relation": "collaborates",
+        "tail": "分子动力学模拟",
+        "claim": "电镜技术与模拟方法协同获取动态信息"
+      },
+      {
+        "step": 3,
+        "head": "分子动力学模拟",
+        "relation": "analyzes",
+        "tail": "构象动态-变构位点关联",
+        "claim": "模拟方法解析构象动态与位点关系"
+      },
+      {
+        "step": 4,
+        "head": "构象动态-变构位点关联",
+        "relation": "predicts",
+        "tail": "药物-受体结合情况",
+        "claim": "动态-位点关联预测药物结合特性"
+      },
+      {
+        "step": 5,
+        "head": "药物-受体结合情况",
+        "relation": "validates",
+        "tail": "药物靶向策略",
+        "claim": "结合特性验证靶向策略有效性"
+      }
+    ]
+  ]
+}

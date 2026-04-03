@@ -1,0 +1,153 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "iCASE策略",
+        "relation": "enables",
+        "tail": "分层模块网络",
+        "claim": "iCASE策略通过等温压缩性构建分层模块网络"
+      },
+      {
+        "step": 2,
+        "head": "分层模块网络",
+        "relation": "promotes",
+        "tail": "适应性进化",
+        "claim": "动态扰动网络促进酶结构适应性进化"
+      },
+      {
+        "step": 3,
+        "head": "适应性进化",
+        "relation": "affects",
+        "tail": "金属离子配位",
+        "claim": "结构适应性进化优化金属离子结合位点"
+      },
+      {
+        "step": 4,
+        "head": "适应性进化",
+        "relation": "affects",
+        "tail": "二硫键形成",
+        "claim": "结构适应性进化增强二硫键稳定性"
+      },
+      {
+        "step": 5,
+        "head": "金属离子配位/二硫键",
+        "relation": "synergizes",
+        "tail": "酶热稳定性",
+        "claim": "金属离子配位与二硫键协同稳定酶构象"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "iCASE策略",
+        "relation": "induces",
+        "tail": "动态扰动",
+        "claim": "动态挤压指数扰动触发结构响应机制"
+      },
+      {
+        "step": 2,
+        "head": "动态扰动",
+        "relation": "enhances",
+        "tail": "催化活性",
+        "claim": "结构动态性提升催化位点效率"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "结构监督机器学习",
+        "relation": "integrates",
+        "tail": "底物结合模式",
+        "claim": "整合分子对接数据提升模型输入维度"
+      },
+      {
+        "step": 2,
+        "head": "底物结合模式",
+        "relation": "captures",
+        "tail": "动态相互作用",
+        "claim": "捕获表面电荷调控的疏水/静电相互作用"
+      },
+      {
+        "step": 3,
+        "head": "动态相互作用",
+        "relation": "improves",
+        "tail": "PETase预测",
+        "claim": "动态特征增强聚合物结合模式预测精度"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "动态挤压指数",
+        "relation": "combines",
+        "tail": "上位网络",
+        "claim": "扰动分析与上位性建模整合"
+      },
+      {
+        "step": 2,
+        "head": "上位网络",
+        "relation": "identifies",
+        "tail": "突变组合",
+        "claim": "协同突变位点优化适应度景观"
+      },
+      {
+        "step": 3,
+        "head": "突变组合",
+        "relation": "enhances",
+        "tail": "酶功能",
+        "claim": "多点突变突破单一位点功能局限"
+      }
+    ]
+  ],
+  "L3": [
+    [
+      {
+        "step": 1,
+        "head": "动态挤压指数网络",
+        "relation": "synergizes",
+        "tail": "机器学习模型",
+        "claim": "化学驱动网络与预测模型协同分析"
+      },
+      {
+        "step": 2,
+        "head": "协同分析",
+        "relation": "reveals",
+        "tail": "别构路径",
+        "claim": "识别调控催化残基的隐式通讯通路"
+      },
+      {
+        "step": 3,
+        "head": "别构路径",
+        "relation": "modulates",
+        "tail": "氢键网络",
+        "claim": "路径调节优化催化机制氢键动态性"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "表面电荷分析",
+        "relation": "integrates",
+        "tail": "适应度建模",
+        "claim": "电荷分布与适应度景观联合分析"
+      },
+      {
+        "step": 2,
+        "head": "适应度建模",
+        "relation": "predicts",
+        "tail": "突变热点",
+        "claim": "识别静电环境调控的适应性突变位点"
+      },
+      {
+        "step": 3,
+        "head": "突变热点",
+        "relation": "enables",
+        "tail": "酶重新设计",
+        "claim": "靶向设计实现环境适应性表型进化"
+      }
+    ]
+  ]
+}

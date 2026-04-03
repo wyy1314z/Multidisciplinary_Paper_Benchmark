@@ -1,0 +1,151 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "dielectric gradient metamaterials",
+        "relation": "enables",
+        "tail": "phase distribution modulation",
+        "claim": "介电梯度材料提供空间可变折射率分布"
+      },
+      {
+        "step": 2,
+        "head": "3D printing",
+        "relation": "enables",
+        "tail": "dynamic microstructure tuning",
+        "claim": "3D打印实现微结构几何形态的动态调控"
+      },
+      {
+        "step": 3,
+        "head": "phase distribution modulation",
+        "relation": "corrects",
+        "tail": "chromatic aberration",
+        "claim": "相位分布调制补偿波长相关色差"
+      },
+      {
+        "step": 4,
+        "head": "dynamic microstructure tuning",
+        "relation": "corrects",
+        "tail": "spherical aberration",
+        "claim": "动态微结构调控校正球差"
+      },
+      {
+        "step": 5,
+        "head": "aberration correction",
+        "relation": "enables",
+        "tail": "super-resolution",
+        "claim": "像差校正突破阿贝衍射极限"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "dielectric gradient metamaterials",
+        "relation": "provides",
+        "tail": "refractive index distribution",
+        "claim": "介电梯度材料构建空间折射率分布"
+      },
+      {
+        "step": 2,
+        "head": "nanostructured inclusions",
+        "relation": "compensates",
+        "tail": "chromatic dispersion",
+        "claim": "纳米结构内含物补偿色散效应"
+      },
+      {
+        "step": 3,
+        "head": "dispersion compensation",
+        "relation": "achieves",
+        "tail": "achromatic super-resolution",
+        "claim": "色散平衡实现消色差超分辨成像"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "multi-material 3D printing",
+        "relation": "enables",
+        "tail": "voxel-level refractive index control",
+        "claim": "多材料打印实现体素级折射率调控"
+      },
+      {
+        "step": 2,
+        "head": "high aspect ratio nanopillars",
+        "relation": "optimizes",
+        "tail": "phase distribution",
+        "claim": "高纵横比纳米柱优化相位分布"
+      },
+      {
+        "step": 3,
+        "head": "refractive index optimization",
+        "relation": "reduces",
+        "tail": "fabrication tolerances",
+        "claim": "折射率优化降低制造公差影响"
+      }
+    ]
+  ],
+  "L3": [
+    [
+      {
+        "step": 1,
+        "head": "dielectric gradient metamaterials",
+        "relation": "transforms",
+        "tail": "phase distribution",
+        "claim": "介电梯度材料调控空间相位分布"
+      },
+      {
+        "step": 2,
+        "head": "multi-material 3D printing",
+        "relation": "creates",
+        "tail": "refractive index gradient",
+        "claim": "多材料打印构建折射率梯度"
+      },
+      {
+        "step": 3,
+        "head": "phase-refractive index synergy",
+        "relation": "enables",
+        "tail": "super-oscillatory lens",
+        "claim": "相位-折射率协同形成超振荡透镜"
+      },
+      {
+        "step": 4,
+        "head": "super-oscillatory lens",
+        "relation": "breaks",
+        "tail": "Abbe diffraction limit",
+        "claim": "超振荡透镜突破衍射极限"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "high aspect ratio nanopillars",
+        "relation": "enhances",
+        "tail": "numerical aperture",
+        "claim": "高纵横比纳米柱增强数值孔径"
+      },
+      {
+        "step": 2,
+        "head": "metasurface patterns",
+        "relation": "corrects",
+        "tail": "phase distortions",
+        "claim": "超表面图案校正相位畸变"
+      },
+      {
+        "step": 3,
+        "head": "3D printing",
+        "relation": "enables",
+        "tail": "anisotropic scattering",
+        "claim": "3D打印实现各向异性散射控制"
+      },
+      {
+        "step": 4,
+        "head": "anisotropic scattering",
+        "relation": "suppresses",
+        "tail": "off-axis aberrations",
+        "claim": "各向异性散射抑制离轴像差"
+      }
+    ]
+  ]
+}

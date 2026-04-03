@@ -1,0 +1,137 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "多金属协同掺杂",
+        "relation": "alters",
+        "tail": "纳米粒子电子结构",
+        "claim": "多金属掺杂改变纳米粒子的电子结构"
+      },
+      {
+        "step": 2,
+        "head": "纳米粒子电子结构",
+        "relation": "affects",
+        "tail": "表面等离激元共振峰",
+        "claim": "电子结构变化影响等离激元共振峰特性"
+      },
+      {
+        "step": 3,
+        "head": "微流体环境",
+        "relation": "enables",
+        "tail": "精准反应条件控制",
+        "claim": "微流体系统实现流速/温度/pH值的精确调控"
+      },
+      {
+        "step": 4,
+        "head": "实时人工智能模型",
+        "relation": "optimizes",
+        "tail": "掺杂与流量参数",
+        "claim": "AI模型根据在线光谱数据动态调整参数"
+      },
+      {
+        "step": 5,
+        "head": "表面等离激元共振峰",
+        "relation": "determines",
+        "tail": "光学性质调控",
+        "claim": "共振峰特性决定吸收峰位置与线宽的可调控性"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "微流体反应器",
+        "relation": "integrates",
+        "tail": "多级反应模组",
+        "claim": "多级模组实现反应物配比梯度生成"
+      },
+      {
+        "step": 2,
+        "head": "参数梯度扫描",
+        "relation": "generates",
+        "tail": "纳米粒子形貌演化",
+        "claim": "梯度参数组合产生多样化的形貌信息"
+      },
+      {
+        "step": 3,
+        "head": "纳米粒子形貌演化",
+        "relation": "informs",
+        "tail": "最优条件筛选",
+        "claim": "形貌数据加速最优尺寸条件的识别"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "强化学习",
+        "relation": "processes",
+        "tail": "实时光谱数据",
+        "claim": "算法解析实时合成过程的光谱反馈"
+      },
+      {
+        "step": 2,
+        "head": "光谱反馈",
+        "relation": "triggers",
+        "tail": "策略网络更新",
+        "claim": "光谱信号偏差驱动优化策略迭代"
+      },
+      {
+        "step": 3,
+        "head": "策略网络",
+        "relation": "adapts",
+        "tail": "反应参数动态调整",
+        "claim": "更新策略实现合成参数的自主修正"
+      }
+    ]
+  ],
+  "L3": [
+    [
+      {
+        "step": 1,
+        "head": "在线光谱监测",
+        "relation": "feeds",
+        "tail": "贝叶斯优化",
+        "claim": "实时数据输入优化算法"
+      },
+      {
+        "step": 2,
+        "head": "贝叶斯优化",
+        "relation": "determines",
+        "tail": "最优参数组合",
+        "claim": "算法推断下一轮最佳实验参数"
+      },
+      {
+        "step": 3,
+        "head": "最优参数组合",
+        "relation": "achieves",
+        "tail": "闭环控制",
+        "claim": "参数迭代实现光谱信号的实时追踪"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "在线光谱表征",
+        "relation": "provides",
+        "tail": "深度神经网络",
+        "claim": "实时采集光谱特征数据"
+      },
+      {
+        "step": 2,
+        "head": "深度神经网络",
+        "relation": "predicts",
+        "tail": "尺寸形貌分布",
+        "claim": "模型解析光谱数据映射尺寸参数"
+      },
+      {
+        "step": 3,
+        "head": "尺寸形貌分布",
+        "relation": "guides",
+        "tail": "自适应优化",
+        "claim": "预测结果驱动反应条件动态修正"
+      }
+    ]
+  ]
+}

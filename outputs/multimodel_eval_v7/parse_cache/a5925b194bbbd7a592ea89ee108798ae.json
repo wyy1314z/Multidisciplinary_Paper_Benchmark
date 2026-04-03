@@ -1,0 +1,107 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "膜脂质特性",
+        "relation": "regulates",
+        "tail": "GPCR构象动态",
+        "claim": "膜脂质特性调控GPCR在纳秒至微秒尺度的构象动态"
+      },
+      {
+        "step": 2,
+        "head": "GPCR构象动态",
+        "relation": "determines",
+        "tail": "变构药物结合位点可及性与可塑性",
+        "claim": "构象动态决定变构药物结合位点的可及性与可塑性"
+      },
+      {
+        "step": 3,
+        "head": "变构药物结合位点可及性与可塑性",
+        "relation": "affects",
+        "tail": "信号传导效率与新型药物靶点发现",
+        "claim": "位点特性影响信号传导效率及药物靶点发现"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "射线晶体学与冷冻电镜结构",
+        "relation": "enables",
+        "tail": "分子动力学模拟捕捉残基重排",
+        "claim": "高分辨率结构使分子动力学模拟可捕捉跨膜区残基重排"
+      },
+      {
+        "step": 2,
+        "head": "跨膜区残基重排",
+        "relation": "determines",
+        "tail": "侧向配体通道动态开放程度",
+        "claim": "残基重排决定侧向配体进入通道的开放程度"
+      },
+      {
+        "step": 3,
+        "head": "侧向配体通道开放程度",
+        "relation": "causes",
+        "tail": "信号转导路径有效性",
+        "claim": "通道开放程度直接影响信号转导有效性"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "膜脂质种类",
+        "relation": "alters",
+        "tail": "GPCR变构通讯网络",
+        "claim": "不同脂质种类改变GPCR的变构通讯网络"
+      },
+      {
+        "step": 2,
+        "head": "变构通讯网络改变",
+        "relation": "induces",
+        "tail": "部分闭合变构位点稳定化",
+        "claim": "通讯网络改变诱导变构位点部分闭合"
+      },
+      {
+        "step": 3,
+        "head": "部分闭合变构位点",
+        "relation": "modulates",
+        "tail": "小分子药物亲和力与选择性",
+        "claim": "闭合位点调控药物亲和力和选择性"
+      }
+    ]
+  ],
+  "L3": [
+    [
+      {
+        "step": 1,
+        "head": "射线晶体学/冷冻电镜结构与分子动力学模拟",
+        "relation": "integrates",
+        "tail": "构象能量景观绘制",
+        "claim": "整合结构数据与模拟生成连续性构象能量景观"
+      },
+      {
+        "step": 2,
+        "head": "候选分子调节剂",
+        "relation": "alters",
+        "tail": "构象分布与信号通路适配性",
+        "claim": "调节剂改变构象分布及信号通路适配性"
+      },
+      {
+        "step": 3,
+        "head": "构象分布与信号适配性",
+        "relation": "determines",
+        "tail": "药物结合模式与特异性调控机制",
+        "claim": "构象分布决定药物结合模式及调控机制"
+      },
+      {
+        "step": 4,
+        "head": "细胞实验与体外体系",
+        "relation": "validates",
+        "tail": "协同验证模型预测准确度",
+        "claim": "实验体系检验模型对药物靶向的预测精度"
+      }
+    ]
+  ]
+}

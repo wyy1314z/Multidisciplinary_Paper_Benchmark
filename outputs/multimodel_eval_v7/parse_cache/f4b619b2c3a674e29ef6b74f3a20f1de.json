@@ -1,0 +1,104 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "介电梯度超材料",
+        "relation": "enables",
+        "tail": "亚波长尺度电磁调控",
+        "claim": "介电梯度超材料的微观结构实现电磁波的亚波长尺度调控"
+      },
+      {
+        "step": 2,
+        "head": "三维打印技术",
+        "relation": "enables",
+        "tail": "复杂几何成型",
+        "claim": "三维打印技术实现超材料的复杂三维结构制造"
+      },
+      {
+        "step": 3,
+        "head": "亚波长尺度电磁调控",
+        "relation": "combined_with",
+        "tail": "复杂几何成型",
+        "claim": "电磁调控能力与几何成型优势结合构建THz金属enses"
+      },
+      {
+        "step": 4,
+        "head": "THz金属enses",
+        "relation": "achieves",
+        "tail": "宽频消色差",
+        "claim": "空间连续折射率分布实现宽频段色散补偿"
+      },
+      {
+        "step": 5,
+        "head": "THz金属enses",
+        "relation": "achieves",
+        "tail": "超衍射极限聚焦",
+        "claim": "突破传统衍射极限限制实现亚波长聚焦"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "亚波长单元几何参数",
+        "relation": "determines",
+        "tail": "非均匀等效折射率分布",
+        "claim": "周期性结构参数调控产生空间非均匀折射率"
+      },
+      {
+        "step": 2,
+        "head": "非均匀等效折射率分布",
+        "relation": "generates",
+        "tail": "相位梯度场",
+        "claim": "折射率分布差异构建空间相位梯度"
+      },
+      {
+        "step": 3,
+        "head": "传播相位与几何相位",
+        "relation": "synergizes",
+        "tail": "色散补偿",
+        "claim": "双相位机制协同实现宽频段相位校正"
+      },
+      {
+        "step": 4,
+        "head": "色散补偿",
+        "relation": "maintains",
+        "tail": "恒定聚焦效率",
+        "claim": "0.2-0.9 THz频段保持衍射受限聚焦性能"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "多材料3D打印",
+        "relation": "enables",
+        "tail": "梯度折射率分布",
+        "claim": "多材料逐层打印实现折射率连续调控"
+      },
+      {
+        "step": 2,
+        "head": "梯度折射率分布",
+        "relation": "requires",
+        "tail": "空间分辨率",
+        "claim": "50μm层厚满足超材料制造精度需求"
+      },
+      {
+        "step": 3,
+        "head": "界面粗糙度控制",
+        "relation": "ensures",
+        "tail": "相位分布精度",
+        "claim": "Ra<2μm表面质量保证相位分布准确性"
+      },
+      {
+        "step": 4,
+        "head": "闭环反馈控制",
+        "relation": "reduces",
+        "tail": "折射率误差",
+        "claim": "工艺参数实时调节将折射率误差控制在±3%内"
+      }
+    ]
+  ],
+  "L3": []
+}

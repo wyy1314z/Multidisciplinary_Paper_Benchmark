@@ -1,0 +1,36 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "transition metal ions (Mn and Co) incorporation into quasi-metal-organic frameworks (qMOFs)",
+        "relation": "enables",
+        "tail": "enhanced catalytic efficiency",
+        "claim": "Incorporation of Mn and Co into qMOFs enables enhanced catalytic efficiency in mimicking enzyme-like behavior"
+      },
+      {
+        "step": 2,
+        "head": "enhanced catalytic efficiency",
+        "relation": "causes",
+        "tail": "increased reactive oxygen species (ROS) generation",
+        "claim": "Enhanced catalytic efficiency causes increased ROS generation under physiological conditions"
+      },
+      {
+        "step": 3,
+        "head": "increased ROS generation",
+        "relation": "causes",
+        "tail": "selective apoptosis in tumor cells",
+        "claim": "Increased ROS generation leads to selective apoptosis in tumor cells"
+      },
+      {
+        "step": 4,
+        "head": "increased ROS generation",
+        "relation": "inhibits",
+        "tail": "cytotoxic effects on healthy cells",
+        "claim": "Increased ROS generation inhibits cytotoxic effects on healthy cells"
+      }
+    ]
+  ],
+  "L2": [],
+  "L3": []
+}

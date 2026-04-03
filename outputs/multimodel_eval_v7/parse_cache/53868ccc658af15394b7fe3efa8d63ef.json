@@ -1,0 +1,130 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "膜脂质动态",
+        "relation": "modulates",
+        "tail": "受体灵活性",
+        "claim": "膜脂质动态调制受体灵活性"
+      },
+      {
+        "step": 2,
+        "head": "受体灵活性",
+        "relation": "controls",
+        "tail": "药物结合位点可及性/几何",
+        "claim": "受体灵活性控制药物结合位点的可及性和几何结构"
+      },
+      {
+        "step": 3,
+        "head": "药物结合位点可及性/几何",
+        "relation": "determines",
+        "tail": "治疗策略疗效",
+        "claim": "药物结合位点特性决定治疗策略的疗效"
+      },
+      {
+        "step": 4,
+        "head": "受体呼吸运动-膜流动性平衡",
+        "relation": "creates",
+        "tail": "时间窗口的可药性",
+        "claim": "受体呼吸运动与膜流动性的动态平衡创造时间窗口的可药性"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "膜脂组成",
+        "relation": "alters",
+        "tail": "受体构象能量景观",
+        "claim": "特定膜脂组成改变受体构象状态的能量景观"
+      },
+      {
+        "step": 2,
+        "head": "受体构象能量景观",
+        "relation": "modulates",
+        "tail": "信号传导构象概率",
+        "claim": "能量景观变化调节信号传导构象的概率"
+      },
+      {
+        "step": 3,
+        "head": "信号传导构象概率",
+        "relation": "explains",
+        "tail": "组织特异性信号差异",
+        "claim": "构象概率差异解释组织特异性G蛋白偶联受体信号变化"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "脂质插入事件",
+        "relation": "exposes",
+        "tail": "隐藏结合口袋",
+        "claim": "协调的脂质插入事件暂时暴露隐藏的结合口袋"
+      },
+      {
+        "step": 2,
+        "head": "隐藏结合口袋",
+        "relation": "alters",
+        "tail": "药物设计方法",
+        "claim": "结合口袋的动态特性改变传统结构-based药物设计方法"
+      },
+      {
+        "step": 3,
+        "head": "脂质-药物协同靶向",
+        "relation": "enhances",
+        "tail": "药物策略",
+        "claim": "联合疗法可增强药物靶向效率"
+      }
+    ]
+  ],
+  "L3": [
+    [
+      {
+        "step": 1,
+        "head": "磷脂种类",
+        "relation": "creates",
+        "tail": "构象通道",
+        "claim": "特定磷脂种类形成连接胞外-胞内的构象通道"
+      },
+      {
+        "step": 2,
+        "head": "构象通道",
+        "relation": "connects",
+        "tail": "配体-G蛋白偶联",
+        "claim": "构象通道将配体结合与G蛋白偶联联系起来"
+      },
+      {
+        "step": 3,
+        "head": "冷冻电镜验证",
+        "relation": "validates",
+        "tail": "脂质依赖的构象耦合",
+        "claim": "冷冻电镜可验证脂质依赖的构象耦合网络"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "脂质插入事件",
+        "relation": "creates",
+        "tail": "疏水通道",
+        "claim": "协调的脂质插入形成临时疏水通道"
+      },
+      {
+        "step": 2,
+        "head": "疏水通道",
+        "relation": "allows",
+        "tail": "药物膜相进入",
+        "claim": "疏水通道允许药物从膜相进入别构位点"
+      },
+      {
+        "step": 3,
+        "head": "膜相药物设计",
+        "relation": "improves",
+        "tail": "神经治疗药物",
+        "claim": "膜渗透药物设计可优化神经治疗效果"
+      }
+    ]
+  ]
+}

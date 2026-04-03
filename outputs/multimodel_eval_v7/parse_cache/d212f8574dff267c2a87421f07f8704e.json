@@ -1,0 +1,137 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "plasmonic nanoparticle synthesis",
+        "relation": "enables",
+        "tail": "precise tuning of localized surface plasmon resonance wavelength and FWHM",
+        "claim": "化学合成技术为光学特性调控提供基础"
+      },
+      {
+        "step": 2,
+        "head": "adaptive machine learning control",
+        "relation": "transforms",
+        "tail": "reagent flow rates and light exposure intensity",
+        "claim": "计算机控制技术动态调整化学实验参数"
+      },
+      {
+        "step": 3,
+        "head": "spectral output",
+        "relation": "triggers",
+        "tail": "Bayesian optimization",
+        "claim": "材料表征数据驱动算法优化"
+      },
+      {
+        "step": 4,
+        "head": "Bayesian optimization",
+        "relation": "establishes",
+        "tail": "multi-dimensional chemical parameters to plasmonic resonance characteristics",
+        "claim": "算法建立跨尺度参数映射关系"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "microfluidic reactors",
+        "relation": "enables",
+        "tail": "high-throughput screening of reaction conditions",
+        "claim": "材料平台支持化学空间探索"
+      },
+      {
+        "step": 2,
+        "head": "rapid gradient diffusion of reagents",
+        "relation": "facilitates",
+        "tail": "laminar flow",
+        "claim": "流体特性促进试剂梯度分布"
+      },
+      {
+        "step": 3,
+        "head": "CMA-ES",
+        "relation": "identifies",
+        "tail": "synthesis pathways for nanoparticles",
+        "claim": "进化算法优化特定形貌合成路径"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "deep neural networks",
+        "relation": "predicts",
+        "tail": "seed-mediated growth parameters on nanoparticle morphology",
+        "claim": "模型解析生长参数与形貌关系"
+      },
+      {
+        "step": 2,
+        "head": "stable noise optimization branch and bound algorithms",
+        "relation": "explores",
+        "tail": "reagent concentration-time profiles",
+        "claim": "算法系统搜索化学参数空间"
+      },
+      {
+        "step": 3,
+        "head": "reagent concentration-time profiles",
+        "relation": "achieves",
+        "tail": "targeted plasmonic resonance shifts",
+        "claim": "参数优化实现光学特性调控"
+      }
+    ]
+  ],
+  "L3": [
+    [
+      {
+        "step": 1,
+        "head": "microfluidic reactor's fluid dynamics control",
+        "relation": "combines",
+        "tail": "Bayesian optimization",
+        "claim": "流体控制与算法协同作用"
+      },
+      {
+        "step": 2,
+        "head": "Bayesian optimization",
+        "relation": "modulates",
+        "tail": "syringe pump flow rates",
+        "claim": "算法动态调整实验参数"
+      },
+      {
+        "step": 3,
+        "head": "in-flow UV-Vis spectra",
+        "relation": "triggers",
+        "tail": "active feedback adjustment",
+        "claim": "实时表征驱动反馈控制"
+      },
+      {
+        "step": 4,
+        "head": "citrate reduction rates",
+        "relation": "reduces",
+        "tail": "nanoparticle size distributions polydispersity",
+        "claim": "化学调控实现单分散性控制"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "convolutional neural network",
+        "relation": "decodes",
+        "tail": "real-time nanoparticle shape evolution",
+        "claim": "模型解析动态生长过程"
+      },
+      {
+        "step": 2,
+        "head": "genetic algorithm",
+        "relation": "optimizes",
+        "tail": "laser intensity and precursor ratios",
+        "claim": "算法协同优化实验参数"
+      },
+      {
+        "step": 3,
+        "head": "laser intensity and precursor ratios",
+        "relation": "enables",
+        "tail": "autonomous synthesis of gold nanostars",
+        "claim": "参数调控实现自主合成"
+      }
+    ]
+  ]
+}

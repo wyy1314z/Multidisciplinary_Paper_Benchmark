@@ -1,0 +1,130 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "integration of dielectric gradient metamaterials with advanced 3D printing techniques",
+        "relation": "enables",
+        "tail": "precise control over the refractive index distribution",
+        "claim": "集成技术使得精确控制折射率分布成为可能"
+      },
+      {
+        "step": 2,
+        "head": "precise control over the refractive index distribution",
+        "relation": "optimizes",
+        "tail": "material properties of the metasurfaces",
+        "claim": "精确控制优化了超表面的材料属性以减少色差和球面像差"
+      },
+      {
+        "step": 3,
+        "head": "optimized material properties",
+        "relation": "mitigates",
+        "tail": "chromatic and spherical aberrations",
+        "claim": "优化后的材料属性减少了色差和球面像差"
+      },
+      {
+        "step": 4,
+        "head": "mitigated chromatic and spherical aberrations",
+        "relation": "allows for",
+        "tail": "imaging beyond the traditional diffraction limit",
+        "claim": "减少的像差允许超越传统衍射极限的成像"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "design of dielectric gradient metamaterials",
+        "relation": "enables",
+        "tail": "spatially controlled variation of the refractive index",
+        "claim": "设计使得折射率的空间受控变化成为可能"
+      },
+      {
+        "step": 2,
+        "head": "spatially controlled variation of the refractive index",
+        "relation": "counteracts",
+        "tail": "wavelength-dependent phase shifts",
+        "claim": "折射率的空间受控变化抵消了波长依赖的相移"
+      },
+      {
+        "step": 3,
+        "head": "counteracted wavelength-dependent phase shifts",
+        "relation": "facilitates",
+        "tail": "achromatic super-resolution imaging",
+        "claim": "抵消的相移促进了消色差超分辨率成像"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "precision of 3D printing technology",
+        "relation": "enables",
+        "tail": "fabrication of complex geometries of THz metalenses with high fidelity",
+        "claim": "3D打印的精度使得高保真制造复杂几何结构的THz金属透镜成为可能"
+      },
+      {
+        "step": 2,
+        "head": "utilization of advanced printing techniques",
+        "relation": "allows",
+        "tail": "deposition of high aspect ratio nanostructures",
+        "claim": "利用先进打印技术允许沉积高纵横比纳米结构"
+      },
+      {
+        "step": 3,
+        "head": "fabrication of complex geometries with high aspect ratio nanostructures",
+        "relation": "achieves",
+        "tail": "desired phase distribution for super-resolution imaging",
+        "claim": "制造复杂几何结构实现了超分辨率成像所需的相位分布"
+      }
+    ]
+  ],
+  "L3": [
+    [
+      {
+        "step": 1,
+        "head": "combination of dielectric gradient metamaterial design principles with 3D printing methods",
+        "relation": "develops",
+        "tail": "synergistic approach",
+        "claim": "结合设计原理和3D打印方法开发协同方法"
+      },
+      {
+        "step": 2,
+        "head": "synergistic approach",
+        "relation": "optimizes",
+        "tail": "phase and refractive index distributions",
+        "claim": "协同方法优化了相位和折射率分布"
+      },
+      {
+        "step": 3,
+        "head": "synergistic approach",
+        "relation": "involves",
+        "tail": "iterative testing with lens design modifications based on imaging feedback",
+        "claim": "协同方法涉及基于成像反馈的迭代测试修改设计"
+      },
+      {
+        "step": 4,
+        "head": "iterative testing and design modifications",
+        "relation": "leads to",
+        "tail": "realization of THz lens surpassing Abbe diffraction limit",
+        "claim": "迭代测试和修改设计导致实现超越阿贝衍射极限的THz透镜"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "collaboration between high aspect ratio nanostructures and metasurface technology",
+        "relation": "enables",
+        "tail": "more efficient light manipulation and collection",
+        "claim": "协作使得更高效的光操控和收集成为可能"
+      },
+      {
+        "step": 2,
+        "head": "efficient light manipulation and collection",
+        "relation": "enhances",
+        "tail": "numerical aperture of THz lenses to 0.555 and field of view to 90°",
+        "claim": "高效的光操控提高了数值孔径至0.555并扩展视场至90°"
+      }
+    ]
+  ]
+}

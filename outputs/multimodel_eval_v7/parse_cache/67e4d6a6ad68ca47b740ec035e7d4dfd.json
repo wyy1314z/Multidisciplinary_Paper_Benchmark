@@ -1,0 +1,69 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "dielectric gradient metamaterials",
+        "relation": "transforms",
+        "tail": "specific refractive index profiles",
+        "claim": "介电梯度超材料将相位分布转化为折射率剖面"
+      },
+      {
+        "step": 2,
+        "head": "specific refractive index profiles",
+        "relation": "requires",
+        "tail": "THz metalenses design",
+        "claim": "特定折射率剖面是设计THz金属透镜的基础"
+      },
+      {
+        "step": 3,
+        "head": "THZ metalenses",
+        "relation": "enables",
+        "tail": "super-resolution imaging",
+        "claim": "THZ金属透镜克服色差球差实现超分辨成像"
+      },
+      {
+        "step": 4,
+        "head": "super-resolution imaging",
+        "relation": "enables",
+        "tail": "high-precision THz applications",
+        "claim": "超分辨成像能力推动高精度THz应用"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "dielectric gradient metamaterials",
+        "relation": "compensates",
+        "tail": "chromatic aberrations",
+        "claim": "介电梯度材料补偿THz波段色差"
+      },
+      {
+        "step": 2,
+        "head": "achromatic super-resolution lenses",
+        "relation": "maintains",
+        "tail": "consistent performance",
+        "claim": "消色差透镜保持不同波长下的成像一致性"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "3D printing technology",
+        "relation": "enables",
+        "tail": "precise fabrication",
+        "claim": "3D打印实现复杂超材料结构精密制造"
+      },
+      {
+        "step": 2,
+        "head": "3D printed metalenses",
+        "relation": "facilitates",
+        "tail": "mass production",
+        "claim": "增材制造降低量产成本并提升数值孔径"
+      }
+    ]
+  ],
+  "L3": []
+}

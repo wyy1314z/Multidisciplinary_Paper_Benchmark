@@ -1,0 +1,97 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "conformational dynamics of G protein-coupled receptors (GPCRs)",
+        "relation": "modulates",
+        "tail": "signaling mechanisms",
+        "claim": "Dynamics modulate signaling mechanisms"
+      },
+      {
+        "step": 2,
+        "head": "conformational dynamics of G protein-coupled receptors (GPCRs)",
+        "relation": "influences",
+        "tail": "drug-target interactions",
+        "claim": "Dynamics influence drug-target interactions"
+      },
+      {
+        "step": 3,
+        "head": "targeted manipulation of these dynamics",
+        "relation": "enhances",
+        "tail": "therapeutic efficacy",
+        "claim": "Manipulation enhances therapeutic efficacy"
+      },
+      {
+        "step": 4,
+        "head": "targeted manipulation of these dynamics",
+        "relation": "enhances",
+        "tail": "specificity",
+        "claim": "Manipulation enhances specificity"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "structural variations observed in GPCRs",
+        "relation": "correlates with",
+        "tail": "distinct signaling outcomes",
+        "claim": "Variations correlate with signaling outcomes"
+      },
+      {
+        "step": 2,
+        "head": "specific conformational states",
+        "relation": "activate",
+        "tail": "particular downstream signaling pathways",
+        "claim": "Conformational states activate pathways"
+      },
+      {
+        "step": 3,
+        "head": "detailed structural analyses",
+        "relation": "uncovers",
+        "tail": "unique conformations",
+        "claim": "Analyses uncover unique conformations"
+      },
+      {
+        "step": 4,
+        "head": "unique conformations",
+        "relation": "serve as",
+        "tail": "potential therapeutic targets",
+        "claim": "Conformations serve as targets"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "lipid bilayer composition surrounding GPCRs",
+        "relation": "alters",
+        "tail": "conformational landscape and accessibility of allosteric sites",
+        "claim": "Composition alters landscape and site accessibility"
+      },
+      {
+        "step": 2,
+        "head": "modified lipid environment",
+        "relation": "optimizes",
+        "tail": "drug binding and efficacy",
+        "claim": "Modified environment optimizes drug binding"
+      },
+      {
+        "step": 3,
+        "head": "lipid-based drug delivery systems",
+        "relation": "stabilizes",
+        "tail": "desired conformations of the GPCRs",
+        "claim": "Systems stabilize desired conformations"
+      },
+      {
+        "step": 4,
+        "head": "stabilized desired conformations",
+        "relation": "enhances",
+        "tail": "binding affinity of therapeutics",
+        "claim": "Stabilized conformations enhance binding affinity"
+      }
+    ]
+  ],
+  "L3": []
+}

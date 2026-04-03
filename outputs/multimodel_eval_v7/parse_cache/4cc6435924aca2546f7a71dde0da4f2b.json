@@ -1,0 +1,79 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "receptor's intrinsic flexibility",
+        "relation": "interacts with",
+        "tail": "allosteric modulation by lipid rafts",
+        "claim": "The interplay between receptor's intrinsic flexibility and lipid raft modulation governs GPCR conformational dynamics"
+      },
+      {
+        "step": 2,
+        "head": "interplay between receptor's intrinsic flexibility and allosteric modulation by lipid rafts",
+        "relation": "regulates",
+        "tail": "conformational dynamics of GPCRs",
+        "claim": "This interplay dynamically regulates GPCR conformational states"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "unique lipid composition of lipid rafts",
+        "relation": "causes",
+        "tail": "distinct conformational states of GPCRs",
+        "claim": "Lipid raft composition drives formation of specific GPCR conformations"
+      },
+      {
+        "step": 2,
+        "head": "distinct conformational states of GPCRs",
+        "relation": "modulate",
+        "tail": "binding affinity and selectivity",
+        "claim": "Different conformations alter ligand/drug binding characteristics"
+      }
+    ]
+  ],
+  "L3": [
+    [
+      {
+        "step": 1,
+        "head": "raft-induced conformational changes",
+        "relation": "expose",
+        "tail": "novel allosteric binding sites",
+        "claim": "Conformational shifts reveal previously unknown allosteric sites"
+      },
+      {
+        "step": 2,
+        "head": "exposed allosteric binding sites",
+        "relation": "enable",
+        "tail": "development of highly specific drugs",
+        "claim": "Identified sites allow targeted drug design with improved specificity"
+      },
+      {
+        "step": 3,
+        "head": "highly specific drugs",
+        "relation": "provide",
+        "tail": "more effective drug discovery approach",
+        "claim": "Targeting new allosteric sites enhances therapeutic efficacy"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "advanced biophysical techniques (smFRET)",
+        "relation": "allow",
+        "tail": "direct observation of conformational changes",
+        "claim": "Single-molecule FRET enables real-time monitoring of GPCR dynamics"
+      },
+      {
+        "step": 2,
+        "head": "direct observation of conformational changes",
+        "relation": "facilitates",
+        "tail": "screening of compound libraries",
+        "claim": "Structural insights guide identification of novel allosteric modulators"
+      }
+    ]
+  ]
+}

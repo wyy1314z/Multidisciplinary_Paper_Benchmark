@@ -1,0 +1,63 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "理性设计准金属有机框架材料",
+        "relation": "enables",
+        "tail": "双活性位点形成",
+        "claim": "配位不饱和金属节点与有机配体共轭π体系协同作用形成双活性位点"
+      },
+      {
+        "step": 2,
+        "head": "双活性位点",
+        "relation": "triggers",
+        "tail": "类芬顿反应与NADH氧化酶机制",
+        "claim": "双活性位点在肿瘤微环境(pH 6.5-6.8)特异性激活双重催化机制"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "调控MLCT效应",
+        "relation": "reduces",
+        "tail": "H2O2歧化反应能垒",
+        "claim": "金属-配体电荷转移效应降低反应能垒至<0.3 eV"
+      },
+      {
+        "step": 2,
+        "head": "框架限域效应",
+        "relation": "enhances",
+        "tail": "单线态氧量子产率",
+        "claim": "空间限域效应提升¹O₂量子产率至>40%"
+      }
+    ]
+  ],
+  "L3": [
+    [
+      {
+        "step": 1,
+        "head": "准金属s/p轨道特性",
+        "relation": "enhances",
+        "tail": "GSH特异性结合",
+        "claim": "轨道电子特性增强与谷胱甘肽的分子识别作用"
+      },
+      {
+        "step": 2,
+        "head": "GSH结合",
+        "relation": "induces",
+        "tail": "氧化应激放大效应",
+        "claim": "靶向结合谷胱甘肽引发活性氧过度生成"
+      },
+      {
+        "step": 3,
+        "head": "氧化应激放大",
+        "relation": "disrupts",
+        "tail": "线粒体膜电位",
+        "claim": "过量活性氧选择性破坏肿瘤细胞线粒体功能"
+      }
+    ]
+  ]
+}

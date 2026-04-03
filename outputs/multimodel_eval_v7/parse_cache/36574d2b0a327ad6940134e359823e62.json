@@ -1,0 +1,142 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "可控配体去除策略",
+        "relation": "transforms",
+        "tail": "准金属有机框架电子结构和孔道环境",
+        "claim": "可控配体去除策略改变材料电子结构和孔道环境"
+      },
+      {
+        "step": 2,
+        "head": "准金属有机框架电子结构和孔道环境",
+        "relation": "enhances",
+        "tail": "类酶催化活性",
+        "claim": "优化后的电子结构增强类酶催化活性"
+      },
+      {
+        "step": 3,
+        "head": "类酶催化活性",
+        "relation": "causes",
+        "tail": "铁死亡和免疫原性细胞死亡",
+        "claim": "增强的催化活性激活铁死亡和免疫原性细胞死亡"
+      },
+      {
+        "step": 4,
+        "head": "铁死亡和免疫原性细胞死亡",
+        "relation": "modulates",
+        "tail": "细胞因子平衡",
+        "claim": "死亡机制调节肿瘤微环境细胞因子平衡"
+      },
+      {
+        "step": 5,
+        "head": "细胞因子平衡",
+        "relation": "enhances",
+        "tail": "抗肿瘤免疫反应",
+        "claim": "细胞因子平衡调节促进抗肿瘤免疫"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "可控配体去除策略",
+        "relation": "transforms",
+        "tail": "金属离子/节点配位环境",
+        "claim": "配体去除改变金属离子配位环境"
+      },
+      {
+        "step": 2,
+        "head": "金属离子/节点配位环境",
+        "relation": "alters",
+        "tail": "电子云分布",
+        "claim": "配位环境变化影响电子云分布"
+      },
+      {
+        "step": 3,
+        "head": "电子云分布",
+        "relation": "enhances",
+        "tail": "辣根过氧化物酶样生物催化活性",
+        "claim": "优化的电子云分布提高催化活性"
+      },
+      {
+        "step": 4,
+        "head": "辣根过氧化物酶样生物催化活性",
+        "relation": "promotes",
+        "tail": "芬顿反应",
+        "claim": "催化活性增强促进芬顿反应进行"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "多孔结构纳米材料",
+        "relation": "enables",
+        "tail": "谷胱甘肽选择性富集",
+        "claim": "可调孔结构实现谷胱甘肽选择性富集"
+      },
+      {
+        "step": 2,
+        "head": "谷胱甘肽选择性富集",
+        "relation": "reduces",
+        "tail": "谷胱甘肽过氧化物酶4活性",
+        "claim": "谷胱甘肽水平降低抑制GPX4活性"
+      },
+      {
+        "step": 3,
+        "head": "谷胱甘肽过氧化物酶4活性",
+        "relation": "inhibits",
+        "tail": "铁死亡",
+        "claim": "GPX4活性抑制促进铁死亡发生"
+      },
+      {
+        "step": 4,
+        "head": "铁死亡",
+        "relation": "triggers",
+        "tail": "免疫原性细胞死亡",
+        "claim": "铁死亡激活免疫原性细胞死亡"
+      }
+    ]
+  ],
+  "L3": [
+    [
+      {
+        "step": 1,
+        "head": "可控配体去除策略",
+        "relation": "optimizes",
+        "tail": "孔结构和表面电荷分布",
+        "claim": "配体去除策略优化材料结构和电荷分布"
+      },
+      {
+        "step": 2,
+        "head": "孔结构和表面电荷分布",
+        "relation": "enhances",
+        "tail": "肿瘤细胞亲和力",
+        "claim": "结构优化增强材料与肿瘤细胞的结合能力"
+      },
+      {
+        "step": 3,
+        "head": "肿瘤细胞亲和力",
+        "relation": "facilitates",
+        "tail": "活性氧作用和谷胱甘肽耗竭",
+        "claim": "高亲和力促进ROS作用和GSH耗竭"
+      },
+      {
+        "step": 4,
+        "head": "活性氧作用和谷胱甘肽耗竭",
+        "relation": "induces",
+        "tail": "铁死亡和免疫原性细胞死亡",
+        "claim": "氧化应激和代谢紊乱共同诱导细胞死亡"
+      },
+      {
+        "step": 5,
+        "head": "铁死亡和免疫原性细胞死亡",
+        "relation": "modulates",
+        "tail": "免疫抑制因子",
+        "claim": "死亡信号调节肿瘤微环境免疫抑制状态"
+      }
+    ]
+  ]
+}

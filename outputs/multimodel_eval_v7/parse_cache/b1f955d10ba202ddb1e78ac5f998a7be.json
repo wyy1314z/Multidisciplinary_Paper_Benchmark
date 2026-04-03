@@ -1,0 +1,158 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "AFION平台",
+        "relation": "enables",
+        "tail": "在线光谱纳米粒子表征",
+        "claim": "AFION平台实现纳米粒子光学性质的实时监测"
+      },
+      {
+        "step": 2,
+        "head": "微流体反应器",
+        "relation": "enables",
+        "tail": "反应条件快速调整",
+        "claim": "微流体反应器支持连续多条件合成"
+      },
+      {
+        "step": 3,
+        "head": "机器学习",
+        "relation": "transforms",
+        "tail": "最优反应条件组合",
+        "claim": "机器学习算法解析数据并确定最佳条件"
+      },
+      {
+        "step": 4,
+        "head": "动态调整机制",
+        "relation": "causes",
+        "tail": "光学性质精确控制",
+        "claim": "实时优化确保产物符合预期光学特性"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "在线光谱纳米粒子表征",
+        "relation": "provides",
+        "tail": "尺寸形貌实时数据",
+        "claim": "光谱技术实时获取纳米粒子形态信息"
+      },
+      {
+        "step": 2,
+        "head": "微流体反应器",
+        "relation": "allows",
+        "tail": "反应条件快速调控",
+        "claim": "反应器实现合成参数即时调整"
+      },
+      {
+        "step": 3,
+        "head": "机器学习",
+        "relation": "generates",
+        "tail": "优化调控方案",
+        "claim": "算法将数据转化为条件优化建议"
+      },
+      {
+        "step": 4,
+        "head": "实时反馈调节",
+        "relation": "achieves",
+        "tail": "尺寸形貌精确控制",
+        "claim": "闭环系统实现纳米结构精准调控"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "遗传算法",
+        "relation": "processes",
+        "tail": "多维化学空间",
+        "claim": "算法处理复杂高维反应参数空间"
+      },
+      {
+        "step": 2,
+        "head": "协方差矩阵适应进化策略",
+        "relation": "enhances",
+        "tail": "参数搜索效率",
+        "claim": "进化策略加速最优参数定位"
+      },
+      {
+        "step": 3,
+        "head": "双算法集成",
+        "relation": "enables",
+        "tail": "高效条件优化",
+        "claim": "协同优化提升反应条件探索效率"
+      },
+      {
+        "step": 4,
+        "head": "高效优化",
+        "relation": "achieves",
+        "tail": "按需合成特定光学性质",
+        "claim": "快速定位目标光学特性合成路径"
+      }
+    ]
+  ],
+  "L3": [
+    [
+      {
+        "step": 1,
+        "head": "在线光谱纳米粒子表征",
+        "relation": "feeds",
+        "tail": "深度神经网络",
+        "claim": "实时光学数据驱动神经网络预测"
+      },
+      {
+        "step": 2,
+        "head": "深度神经网络",
+        "relation": "optimizes",
+        "tail": "合成参数预测",
+        "claim": "模型预测最优合成控制参数"
+      },
+      {
+        "step": 3,
+        "head": "损失函数优化",
+        "relation": "improves",
+        "tail": "传感性能",
+        "claim": "目标函数优化提升应用适配性"
+      },
+      {
+        "step": 4,
+        "head": "实时调整机制",
+        "relation": "ensures",
+        "tail": "应用需求匹配",
+        "claim": "动态调控保障化学传感功能实现"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "光化学合成",
+        "relation": "generates",
+        "tail": "光谱特性数据",
+        "claim": "光反应过程产生可监测光谱信号"
+      },
+      {
+        "step": 2,
+        "head": "光伏效应",
+        "relation": "converts",
+        "tail": "光能至电能",
+        "claim": "光电转化提供额外能量输入"
+      },
+      {
+        "step": 3,
+        "head": "能量补充",
+        "relation": "enhances",
+        "tail": "反应效率",
+        "claim": "附加能量优化合成动力学过程"
+      },
+      {
+        "step": 4,
+        "head": "能量优化",
+        "relation": "improves",
+        "tail": "光学性能",
+        "claim": "能量调控提升产物光学特性"
+      }
+    ]
+  ]
+}

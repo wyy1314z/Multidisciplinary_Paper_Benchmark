@@ -1,0 +1,121 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "等温压缩辅助动态挤压指数扰动工程策略",
+        "relation": "requires",
+        "tail": "特定压力-温度耦合条件",
+        "claim": "工程策略需要特定压力-温度条件实现"
+      },
+      {
+        "step": 2,
+        "head": "特定压力-温度耦合条件",
+        "relation": "induces",
+        "tail": "局部有序的亚稳态结构",
+        "claim": "特定条件诱导酶结构形成亚稳态"
+      },
+      {
+        "step": 3,
+        "head": "局部有序的亚稳态结构",
+        "relation": "reduces",
+        "tail": "熵变能垒",
+        "claim": "亚稳态结构降低反应熵变阻力"
+      },
+      {
+        "step": 4,
+        "head": "熵变能垒降低",
+        "relation": "enhances",
+        "tail": "催化活性优化",
+        "claim": "熵变降低促进催化效率提升"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "动态挤压",
+        "relation": "generates",
+        "tail": "微应变场",
+        "claim": "动态挤压产生局部微应变场"
+      },
+      {
+        "step": 2,
+        "head": "微应变场",
+        "relation": "exposes",
+        "tail": "疏水核心",
+        "claim": "微应变场定向暴露疏水区域"
+      },
+      {
+        "step": 3,
+        "head": "疏水核心暴露",
+        "relation": "promotes",
+        "tail": "非共价键网络重构",
+        "claim": "疏水暴露促进氢键/离子对重构"
+      },
+      {
+        "step": 4,
+        "head": "非共价键网络重构",
+        "relation": "stabilizes",
+        "tail": "热稳定性提升",
+        "claim": "非共价重构增强酶热稳定性"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "熵变能垒降低",
+        "relation": "synergizes_with",
+        "tail": "非共价键网络重构",
+        "claim": "熵变降低与结构重构产生协同效应"
+      },
+      {
+        "step": 2,
+        "head": "协同效应",
+        "relation": "causes",
+        "tail": "Tm值增加≥8°C",
+        "claim": "协同作用显著提升热稳定性"
+      },
+      {
+        "step": 3,
+        "head": "协同效应",
+        "relation": "causes",
+        "tail": "kcat/Km提高1.5倍以上",
+        "claim": "协同作用显著优化催化效率"
+      }
+    ]
+  ],
+  "L3": [
+    [
+      {
+        "step": 1,
+        "head": "压力-剪切力",
+        "relation": "perturbs",
+        "tail": "酶构象能量景观",
+        "claim": "压力-剪切力扰动构象能量分布"
+      },
+      {
+        "step": 2,
+        "head": "能量景观扰动",
+        "relation": "selects_for",
+        "tail": "过渡态构象优化",
+        "claim": "能量扰动选择更优过渡态位置"
+      },
+      {
+        "step": 3,
+        "head": "过渡态构象优化",
+        "relation": "lowers",
+        "tail": "活化能垒",
+        "claim": "过渡态优化进一步降低反应能垒"
+      },
+      {
+        "step": 4,
+        "head": "活化能垒降低",
+        "relation": "enhances",
+        "tail": "催化活性",
+        "claim": "能垒降低直接提升催化速率"
+      }
+    ]
+  ]
+}

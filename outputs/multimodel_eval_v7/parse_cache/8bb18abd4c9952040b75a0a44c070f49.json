@@ -1,0 +1,92 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "integration of dielectric gradient metamaterials with advanced 3D printing techniques",
+        "relation": "enables",
+        "tail": "development of innovative THz metalenses",
+        "claim": "材料与技术的整合使新型THz金属透镜开发成为可能"
+      },
+      {
+        "step": 2,
+        "head": "development of innovative THz metalenses",
+        "relation": "enables",
+        "tail": "overcoming chromatic aberration and diffraction limitations",
+        "claim": "新型THz金属透镜可突破传统光学系统的衍射与色差限制"
+      },
+      {
+        "step": 3,
+        "head": "overcoming chromatic aberration and diffraction limitations",
+        "relation": "enables",
+        "tail": "high-precision imaging applications",
+        "claim": "突破物理限制后可实现高精度成像应用"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "systematic design of refractive index profile",
+        "relation": "leverages",
+        "tail": "unique properties of metamaterials",
+        "claim": "通过折射率分布设计利用超材料特性"
+      },
+      {
+        "step": 2,
+        "head": "unique properties of metamaterials",
+        "relation": "enables",
+        "tail": "super-resolution imaging capabilities",
+        "claim": "超材料特性实现超越传统系统的成像分辨率"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "dielectric gradient metamaterials",
+        "relation": "engineered to",
+        "tail": "tailored refractive index profiles",
+        "claim": "超材料可被设计为具有定制折射率分布"
+      },
+      {
+        "step": 2,
+        "head": "tailored refractive index profiles",
+        "relation": "facilitates",
+        "tail": "manipulation of THz wavefronts",
+        "claim": "定制折射率分布支持THz波前操控"
+      },
+      {
+        "step": 3,
+        "head": "manipulation of THz wavefronts",
+        "relation": "minimizes",
+        "tail": "chromatic aberration",
+        "claim": "波前操控可显著降低色差"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "3D printing technology",
+        "relation": "enables",
+        "tail": "precise control over microstructure",
+        "claim": "3D打印实现微结构的精确控制"
+      },
+      {
+        "step": 2,
+        "head": "precise control over microstructure",
+        "relation": "allows",
+        "tail": "complex dielectric gradient profiles",
+        "claim": "微结构控制可创建复杂介电梯度剖面"
+      },
+      {
+        "step": 3,
+        "head": "complex dielectric gradient profiles",
+        "relation": "enhances",
+        "tail": "super-resolution imaging performance",
+        "claim": "复杂梯度剖面显著提升超分辨成像性能"
+      }
+    ]
+  ],
+  "L3": []
+}

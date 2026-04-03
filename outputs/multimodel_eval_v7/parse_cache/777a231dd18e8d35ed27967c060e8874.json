@@ -1,0 +1,62 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "AFION lab",
+        "relation": "accelerates",
+        "tail": "discovery of optimal reaction conditions",
+        "claim": "AFION lab加速了最佳反应条件的发现"
+      },
+      {
+        "step": 2,
+        "head": "discovery of optimal reaction conditions",
+        "relation": "enables",
+        "tail": "precise and rapid tuning of optical properties",
+        "claim": "最佳反应条件的发现使得精确快速调整光学属性成为可能"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "integration of microfluidic reactor",
+        "relation": "allows",
+        "tail": "rapid exploration of multidimensional chemical space",
+        "claim": "微流体反应器的集成允许快速探索多维化学空间"
+      },
+      {
+        "step": 2,
+        "head": "rapid exploration of multidimensional chemical space",
+        "relation": "causes",
+        "tail": "efficient identification of reaction conditions",
+        "claim": "多维化学空间的快速探索导致高效识别反应条件"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "machine learning algorithms",
+        "relation": "analyzes",
+        "tail": "real-time spectroscopic data",
+        "claim": "机器学习算法分析实时光谱数据"
+      },
+      {
+        "step": 2,
+        "head": "machine learning algorithms",
+        "relation": "reduces",
+        "tail": "need for manual trials",
+        "claim": "机器学习算法减少了手动试验的需求"
+      },
+      {
+        "step": 3,
+        "head": "machine learning algorithms",
+        "relation": "improves",
+        "tail": "precision and reliability of synthesis",
+        "claim": "机器学习算法提高了合成过程的精度和可靠性"
+      }
+    ]
+  ],
+  "L3": []
+}

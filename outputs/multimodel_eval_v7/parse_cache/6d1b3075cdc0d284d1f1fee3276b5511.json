@@ -1,0 +1,38 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "lifetime of metastable intermediate conformational states",
+        "relation": "determines",
+        "tail": "functional signaling bias",
+        "claim": "The lifetime of specific intermediate conformational states critically determines functional signaling bias"
+      },
+      {
+        "step": 2,
+        "head": "functional signaling bias",
+        "relation": "enables",
+        "tail": "subtype-selective drug targeting",
+        "claim": "Functional signaling bias provides a mechanism for subtype-selective drug targeting"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "designed ligands stabilizing transient states",
+        "relation": "allows",
+        "tail": "quantification of conformational state lifetimes",
+        "claim": "Ligands stabilizing transient states enable quantification via molecular dynamics simulations"
+      },
+      {
+        "step": 2,
+        "head": "quantification of conformational state lifetimes",
+        "relation": "validates",
+        "tail": "hypothesis on signaling bias mechanism",
+        "claim": "Quantified lifetimes validate the role of state longevity in signaling bias"
+      }
+    ]
+  ],
+  "L2": [],
+  "L3": []
+}

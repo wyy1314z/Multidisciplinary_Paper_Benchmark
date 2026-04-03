@@ -1,0 +1,981 @@
+nohup: ignoring input
+
+══════════════════════════════════════════════════════════════
+[01:50:54] [STEP] Stage 5: 多模型 16 指标评测 (KG-based + LLM-as-Judge)
+══════════════════════════════════════════════════════════════
+
+2026-03-27 01:50:55,034 | INFO | ======================================================================
+2026-03-27 01:50:55,034 | INFO | Step 1: 构建全局知识图谱 (GlobalKG)
+2026-03-27 01:51:00,063 | INFO | 正在加载 Benchmark 数据集构建知识图谱: outputs/multimodel_eval_v7/benchmark_dataset.json
+Building prefix dict from the default dictionary ...
+2026-03-27 01:51:00,081 | DEBUG | Building prefix dict from the default dictionary ...
+Loading model from cache /tmp/jieba.cache
+2026-03-27 01:51:00,081 | DEBUG | Loading model from cache /tmp/jieba.cache
+Loading model cost 0.469 seconds.
+2026-03-27 01:51:00,550 | DEBUG | Loading model cost 0.469 seconds.
+Prefix dict has been built successfully.
+2026-03-27 01:51:00,551 | DEBUG | Prefix dict has been built successfully.
+2026-03-27 01:51:00,617 | INFO | KG 构建完成。共索引 186 条路径，覆盖 6 个学科。
+2026-03-27 01:51:00,618 | INFO | Step 2: 加载论文元数据
+2026-03-27 01:51:00,620 | INFO | 论文元数据映射: 5 篇
+2026-03-27 01:51:00,621 | INFO | Step 3: 开始评测 13 个模型
+2026-03-27 01:51:00,621 | INFO | ======================================================================
+2026-03-27 01:51:00,621 | INFO | [claude-sonnet-4-20250514] 开始评测: 19/20 条有效记录
+2026-03-27 01:51:00,621 | INFO | --------------------------------------------------
+2026-03-27 01:51:00,621 | INFO | [claude-sonnet-4-20250514] [1/19] P1 | a6f866ca73d0 | 'Self-driving lab for the photochemical s'
+2026-03-27 01:51:00,622 | INFO | [claude-sonnet-4-20250514] 解析完成: L1=1 L2=1 L3=1 (0.0s)
+2026-03-27 01:51:00,622 | INFO | [claude-sonnet-4-20250514] GT 参考路径: 3 条
+2026-03-27 01:51:00,622 | INFO | ────────────────────────────────────────────────────────────
+2026-03-27 01:51:00,622 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L1[0] 开始评估
+2026-03-27 01:51:00,622 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L1[0] 生成路径: Electrochemically-Controlled Surface Ligand Switching--[enables]-->Dynamic Plasmonic Tuning -> Dynamic Plasmonic Tuning--[achieves]-->Precise Control of Optical Properties
+2026-03-27 01:51:00,622 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L1[0] 参考路径数: 3 (GT: 3, web: 0)
+2026-03-27 01:51:00,622 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L1[0] query='如何实现等离激元纳米粒子光学性质的精准调控'  discipline='化学'  abstract_len=1285
+2026-03-27 01:51:00,622 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L1[0] gt_terms(30): 等离激元纳米粒子, 光学性质, 闭环纳米粒子合成, 光化学合成, 反应条件, 多维化学空间, 光谱纳米粒子性质, 试剂添加
+2026-03-27 01:51:00,623 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L1[0] ── 计算客观图指标 ──
+2026-03-27 01:51:00,623 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L1[0] consistency_f1=0.0000 (P=0.0000 R=0.0000) — 生成路径与参考路径的实体/关系重叠度
+2026-03-27 01:51:00,625 | INFO | Use pytorch device_name: cuda:0
+2026-03-27 01:51:00,625 | INFO | Load pretrained SentenceTransformer: paraphrase-multilingual-MiniLM-L12-v2
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 71479.53it/s]
+[1mBertModel LOAD REPORT[0m from: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+Key                     | Status     |  | 
+------------------------+------------+--+-
+embeddings.position_ids | UNEXPECTED |  | 
+
+[3mNotes:
+- UNEXPECTED[3m	:can be ignored when loading from different task/architecture; not ok if you expect identical arch.[0m
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  5.87it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  5.86it/s]
+2026-03-27 01:51:02,424 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L1[0] embedding_bridging=0.6942 — 路径中相邻步骤的语义跨越程度
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 161.56it/s]
+2026-03-27 01:51:02,432 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L1[0] chain_coherence=0.7622 — 相邻步骤间的语义连贯性
+2026-03-27 01:51:02,433 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L1[0] rao_stirling=0.0000 — Rao-Stirling 学科多样性指数
+2026-03-27 01:51:02,433 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L1[0] atypical_combination=0.8559 — 非典型概念组合度 (z-score)
+2026-03-27 01:51:02,433 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L1[0] disciplinary_leap_index=0.0000 — 最大学科跨越距离
+2026-03-27 01:51:02,433 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L1[0] discipline_balance=0.0000 — 学科分布均衡度 (1-Gini)
+2026-03-27 01:51:02,433 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L1[0] info_novelty=1.0000 — 信息论新颖度 (surprisal)
+2026-03-27 01:51:02,433 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L1[0] ── 计算比较型指标 (vs GT) ──
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 201.14it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 230.41it/s]
+2026-03-27 01:51:02,446 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L1[0] remote_association_index=0.7480 — 路径步骤间平均语义距离
+2026-03-27 01:51:02,446 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L1[0] causal_direction_accuracy=0.0000 — 因果方向与参考路径的吻合度
+2026-03-27 01:51:02,446 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L1[0] novelty_convention_balance=0.0000 — 新颖性与传统性的平衡度
+Loading weights:   0%|          | 0/776 [00:00<?, ?it/s]Loading weights: 100%|██████████| 776/776 [00:00<00:00, 25395.83it/s]22026-03-27 01:52:16,154 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L1[0] factual_precision=1.0000 — NLI 检测路径中 claim 与摘要的一致性
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 30.82it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 144.74it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 115.60it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 252.08it/s]
+2026-03-27 01:52:16,217 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L1[0] hallucination_rate=1.0000 — 路径中未被参考支持的实体比例
+2026-03-27 01:52:16,217 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L1[0] ── 计算 GT 证据指标 ──
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 260.69it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 189.54it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 278.41it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 204.27it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 275.31it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 202.60it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 281.18it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 203.18it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 273.39it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 202.77it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 272.23it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 203.43it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 277.69it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 206.27it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 282.98it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 198.52it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 268.42it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 198.35it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 273.46it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 197.50it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 278.43it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 199.37it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 269.23it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 196.32it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 275.67it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 199.61it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 272.16it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 200.13it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 279.40it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 199.91it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 285.21it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 185.49it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 272.00it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 203.61it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 277.60it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 204.24it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 281.48it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 202.28it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 277.31it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 202.36it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 279.14it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 201.15it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 284.15it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 203.67it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 282.18it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 202.57it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 280.31it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 203.24it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 283.34it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 154.81it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 278.93it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 201.99it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 274.07it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 203.90it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 285.02it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 198.98it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 283.57it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 205.60it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 272.76it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 202.03it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 276.49it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 121.64it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 269.73it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 143.50it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 270.95it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 138.15it/s]
+2026-03-27 01:52:16,618 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L1[0] concept_f1=0.0000 (P=0.0000 R=0.0000) — 概念覆盖度
+2026-03-27 01:52:16,621 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L1[0] evidence_coverage=0.0000 — GT 证据路径覆盖度
+2026-03-27 01:52:16,621 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L1[0] ── LLM 主观评估 ──
+2026-03-27 01:52:16,621 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L1[0] LLM prompt 长度: 1870 字符 (含 3 条参考路径)
+2026-03-27 01:52:18,041 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-27 01:52:29,119 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L1[0] LLM 原始响应: {
+    "innovation_score": 8.0,
+    "feasibility_score": 9.0,
+    "scientificity_score": 9.0,
+    "reason": "模型路径提出电化学控制配体切换的创新方法，合理跨学科且逻辑连贯，术语准确符合科学事实。"
+}
+2026-03-27 01:52:29,119 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L1[0] LLM 评分: innovation=8.00 feasibility=9.00 scientificity=9.00
+2026-03-27 01:52:30,086 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-27 01:52:48,038 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L1[0] LLM 可验证性: testability=8.0000 (specificity=7.50 measurability=8.50 falsifiability=8.00 resource_feasibility=8.00)
+2026-03-27 01:52:48,038 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L1[0] ── 评分汇总 ──
+2026-03-27 01:52:48,038 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L1[0]   atypical_combination           = 0.8559
+2026-03-27 01:52:48,038 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L1[0]   bridging                       = 1.0000
+2026-03-27 01:52:48,038 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L1[0]   causal_direction_accuracy      = 0.0000
+2026-03-27 01:52:48,038 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L1[0]   chain_coherence                = 0.7622
+2026-03-27 01:52:48,038 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L1[0]   concept_f1                     = 0.0000
+2026-03-27 01:52:48,038 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L1[0]   concept_precision              = 0.0000
+2026-03-27 01:52:48,038 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L1[0]   concept_recall                 = 0.0000
+2026-03-27 01:52:48,038 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L1[0]   consistency                    = 0.0000
+2026-03-27 01:52:48,038 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L1[0]   consistency_f1                 = 0.0000
+2026-03-27 01:52:48,038 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L1[0]   consistency_precision          = 0.0000
+2026-03-27 01:52:48,038 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L1[0]   consistency_recall             = 0.0000
+2026-03-27 01:52:48,038 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L1[0]   disciplinary_leap_index        = 0.0000
+2026-03-27 01:52:48,038 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L1[0]   discipline_balance             = 0.0000
+2026-03-27 01:52:48,038 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L1[0]   embedding_bridging             = 0.6942
+2026-03-27 01:52:48,038 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L1[0]   evidence_coverage              = 0.0000
+2026-03-27 01:52:48,038 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L1[0]   factual_precision              = 1.0000
+2026-03-27 01:52:48,038 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L1[0]   feasibility                    = 9.0000
+2026-03-27 01:52:48,038 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L1[0]   hallucination_rate             = 1.0000
+2026-03-27 01:52:48,038 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L1[0]   info_novelty                   = 1.0000
+2026-03-27 01:52:48,038 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L1[0]   innovation                     = 8.0000
+2026-03-27 01:52:48,038 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L1[0]   novelty_convention_balance     = 0.0000
+2026-03-27 01:52:48,038 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L1[0]   path_alignment_best            = 0.0000
+2026-03-27 01:52:48,038 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L1[0]   path_alignment_mean            = 0.0000
+2026-03-27 01:52:48,038 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L1[0]   rao_stirling                   = 0.0000
+2026-03-27 01:52:48,038 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L1[0]   relation_precision             = 0.0000
+2026-03-27 01:52:48,038 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L1[0]   relation_type_accuracy         = 0.0000
+2026-03-27 01:52:48,038 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L1[0]   remote_association_index       = 0.7480
+2026-03-27 01:52:48,038 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L1[0]   scientificity                  = 9.0000
+2026-03-27 01:52:48,038 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L1[0]   testability                    = 8.0000
+2026-03-27 01:52:48,038 | INFO | ────────────────────────────────────────────────────────────
+2026-03-27 01:52:48,039 | INFO | ────────────────────────────────────────────────────────────
+2026-03-27 01:52:48,039 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[0] 开始评估
+2026-03-27 01:52:48,039 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[0] 生成路径: Voltage Potentials--[modulates]-->Surface Charge Density -> Surface Charge Density--[alters]-->Local Dielectric Environment -> Local Dielectric Environment--[shifts]-->LSPR Wavelength
+2026-03-27 01:52:48,039 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[0] 参考路径数: 3 (GT: 3, web: 0)
+2026-03-27 01:52:48,039 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[0] query='如何实现等离激元纳米粒子光学性质的精准调控'  discipline='化学'  abstract_len=1285
+2026-03-27 01:52:48,039 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[0] gt_terms(30): 等离激元纳米粒子, 光学性质, 闭环纳米粒子合成, 光化学合成, 反应条件, 多维化学空间, 光谱纳米粒子性质, 试剂添加
+2026-03-27 01:52:48,039 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[0] ── 计算客观图指标 ──
+2026-03-27 01:52:48,039 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[0] consistency_f1=0.0000 (P=0.0000 R=0.0000) — 生成路径与参考路径的实体/关系重叠度
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 46.64it/s]
+2026-03-27 01:52:48,069 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[0] embedding_bridging=0.7179 — 路径中相邻步骤的语义跨越程度
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 187.38it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 187.82it/s]
+2026-03-27 01:52:48,084 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[0] chain_coherence=0.9012 — 相邻步骤间的语义连贯性
+2026-03-27 01:52:48,084 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[0] rao_stirling=0.0000 — Rao-Stirling 学科多样性指数
+2026-03-27 01:52:48,084 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[0] atypical_combination=0.8559 — 非典型概念组合度 (z-score)
+2026-03-27 01:52:48,084 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[0] disciplinary_leap_index=0.0000 — 最大学科跨越距离
+2026-03-27 01:52:48,084 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[0] discipline_balance=0.0000 — 学科分布均衡度 (1-Gini)
+2026-03-27 01:52:48,084 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[0] info_novelty=1.0000 — 信息论新颖度 (surprisal)
+2026-03-27 01:52:48,084 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[0] ── 计算比较型指标 (vs GT) ──
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 211.98it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 203.85it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 205.68it/s]
+2026-03-27 01:52:48,105 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[0] remote_association_index=0.5505 — 路径步骤间平均语义距离
+2026-03-27 01:52:48,105 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[0] causal_direction_accuracy=0.0000 — 因果方向与参考路径的吻合度
+2026-03-27 01:52:48,105 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[0] novelty_convention_balance=0.0000 — 新颖性与传统性的平衡度
+2026-03-27 01:54:50,649 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[0] factual_precision=1.0000 — NLI 检测路径中 claim 与摘要的一致性
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 51.08it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 274.05it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 273.71it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 257.13it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 278.47it/s]
+2026-03-27 01:54:50,693 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[0] hallucination_rate=1.0000 — 路径中未被参考支持的实体比例
+2026-03-27 01:54:50,693 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[0] ── 计算 GT 证据指标 ──
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 273.12it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 187.84it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 265.60it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 193.54it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 275.49it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 193.83it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 262.37it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 191.44it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 282.50it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 190.49it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 277.79it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 191.14it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 272.25it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 193.69it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 278.06it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 192.38it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 273.96it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 193.60it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 279.71it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 192.51it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 279.92it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 192.66it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 274.25it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 195.12it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 274.32it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 195.09it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 273.60it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 193.71it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 281.97it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 194.16it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 280.33it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 192.15it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 274.21it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 195.67it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 273.69it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 195.00it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 282.94it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 192.50it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 275.29it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 194.05it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 273.96it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 193.07it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 278.93it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 191.07it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 276.09it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 192.53it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 279.64it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 173.46it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 276.67it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 193.59it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 271.97it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 192.51it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 272.46it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 166.47it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 283.04it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 195.62it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 282.16it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 193.36it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 272.94it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 193.49it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 279.94it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 151.38it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 270.72it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 155.21it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 275.07it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 158.20it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 266.54it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 161.05it/s]
+2026-03-27 01:54:51,112 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[0] concept_f1=0.0000 (P=0.0000 R=0.0000) — 概念覆盖度
+2026-03-27 01:54:51,115 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[0] evidence_coverage=0.0000 — GT 证据路径覆盖度
+2026-03-27 01:54:51,115 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[0] ── LLM 主观评估 ──
+2026-03-27 01:54:51,115 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[0] LLM prompt 长度: 1712 字符 (含 3 条参考路径)
+2026-03-27 01:55:11,035 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-27 01:55:39,651 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[0] LLM 原始响应: {
+    "innovation_score": 7.0,
+    "feasibility_score": 9.0,
+    "scientificity_score": 9.0,
+    "reason": "路径揭示了电压调控表面电荷密度进而影响LSPR的机制，虽属已知原理但逻辑严密；术语准确且因果关系明确，但跨学科深度较参考路径L2稍弱。"
+}
+2026-03-27 01:55:39,651 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[0] LLM 评分: innovation=7.00 feasibility=9.00 scientificity=9.00
+2026-03-27 01:55:40,716 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-27 01:56:03,265 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[0] LLM 可验证性: testability=8.5000 (specificity=9.00 measurability=8.50 falsifiability=9.50 resource_feasibility=7.00)
+2026-03-27 01:56:03,265 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[0] ── 评分汇总 ──
+2026-03-27 01:56:03,265 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[0]   atypical_combination           = 0.8559
+2026-03-27 01:56:03,265 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[0]   bridging                       = 1.0000
+2026-03-27 01:56:03,265 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[0]   causal_direction_accuracy      = 0.0000
+2026-03-27 01:56:03,265 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[0]   chain_coherence                = 0.9012
+2026-03-27 01:56:03,265 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[0]   concept_f1                     = 0.0000
+2026-03-27 01:56:03,265 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[0]   concept_precision              = 0.0000
+2026-03-27 01:56:03,265 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[0]   concept_recall                 = 0.0000
+2026-03-27 01:56:03,265 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[0]   consistency                    = 0.0000
+2026-03-27 01:56:03,265 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[0]   consistency_f1                 = 0.0000
+2026-03-27 01:56:03,265 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[0]   consistency_precision          = 0.0000
+2026-03-27 01:56:03,265 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[0]   consistency_recall             = 0.0000
+2026-03-27 01:56:03,265 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[0]   disciplinary_leap_index        = 0.0000
+2026-03-27 01:56:03,265 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[0]   discipline_balance             = 0.0000
+2026-03-27 01:56:03,265 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[0]   embedding_bridging             = 0.7179
+2026-03-27 01:56:03,265 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[0]   evidence_coverage              = 0.0000
+2026-03-27 01:56:03,265 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[0]   factual_precision              = 1.0000
+2026-03-27 01:56:03,265 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[0]   feasibility                    = 9.0000
+2026-03-27 01:56:03,265 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[0]   hallucination_rate             = 1.0000
+2026-03-27 01:56:03,265 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[0]   info_novelty                   = 1.0000
+2026-03-27 01:56:03,265 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[0]   innovation                     = 7.0000
+2026-03-27 01:56:03,265 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[0]   novelty_convention_balance     = 0.0000
+2026-03-27 01:56:03,265 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[0]   path_alignment_best            = 0.0000
+2026-03-27 01:56:03,265 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[0]   path_alignment_mean            = 0.0000
+2026-03-27 01:56:03,265 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[0]   rao_stirling                   = 0.0000
+2026-03-27 01:56:03,265 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[0]   relation_precision             = 0.0000
+2026-03-27 01:56:03,265 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[0]   relation_type_accuracy         = 0.0000
+2026-03-27 01:56:03,265 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[0]   remote_association_index       = 0.5505
+2026-03-27 01:56:03,265 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[0]   scientificity                  = 9.0000
+2026-03-27 01:56:03,265 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[0]   testability                    = 8.5000
+2026-03-27 01:56:03,265 | INFO | ────────────────────────────────────────────────────────────
+2026-03-27 01:56:03,265 | INFO | ────────────────────────────────────────────────────────────
+2026-03-27 01:56:03,265 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L3[0] 开始评估
+2026-03-27 01:56:03,265 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L3[0] 生成路径: Electrochemical Switching--[affects]-->Organic Ligand Shell -> Organic Ligand Shell--[preserves]-->Metallic Core Integrity -> Metallic Core Integrity--[prevents]-->Particle Aggregation
+2026-03-27 01:56:03,265 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L3[0] 参考路径数: 3 (GT: 3, web: 0)
+2026-03-27 01:56:03,265 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L3[0] query='如何实现等离激元纳米粒子光学性质的精准调控'  discipline='化学'  abstract_len=1285
+2026-03-27 01:56:03,266 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L3[0] gt_terms(30): 等离激元纳米粒子, 光学性质, 闭环纳米粒子合成, 光化学合成, 反应条件, 多维化学空间, 光谱纳米粒子性质, 试剂添加
+2026-03-27 01:56:03,266 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L3[0] ── 计算客观图指标 ──
+2026-03-27 01:56:03,266 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L3[0] consistency_f1=0.0000 (P=0.0000 R=0.0000) — 生成路径与参考路径的实体/关系重叠度
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 41.40it/s]
+2026-03-27 01:56:03,292 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L3[0] embedding_bridging=0.8595 — 路径中相邻步骤的语义跨越程度
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 177.69it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 75.25it/s]
+2026-03-27 01:56:03,315 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L3[0] chain_coherence=0.8133 — 相邻步骤间的语义连贯性
+2026-03-27 01:56:03,315 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L3[0] rao_stirling=0.0000 — Rao-Stirling 学科多样性指数
+2026-03-27 01:56:03,315 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L3[0] atypical_combination=0.8559 — 非典型概念组合度 (z-score)
+2026-03-27 01:56:03,315 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L3[0] disciplinary_leap_index=0.0000 — 最大学科跨越距离
+2026-03-27 01:56:03,315 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L3[0] discipline_balance=0.0000 — 学科分布均衡度 (1-Gini)
+2026-03-27 01:56:03,315 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L3[0] info_novelty=1.0000 — 信息论新颖度 (surprisal)
+2026-03-27 01:56:03,315 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L3[0] ── 计算比较型指标 (vs GT) ──
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 86.85it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 84.82it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 145.03it/s]
+2026-03-27 01:56:03,357 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L3[0] remote_association_index=0.8425 — 路径步骤间平均语义距离
+2026-03-27 01:56:03,357 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L3[0] causal_direction_accuracy=0.0000 — 因果方向与参考路径的吻合度
+2026-03-27 01:56:03,357 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L3[0] novelty_convention_balance=0.0000 — 新颖性与传统性的平衡度
+2026-03-27 01:57:51,199 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L3[0] factual_precision=1.0000 — NLI 检测路径中 claim 与摘要的一致性
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 90.27it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 258.70it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 273.08it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 280.33it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 274.01it/s]
+2026-03-27 01:57:51,235 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L3[0] hallucination_rate=1.0000 — 路径中未被参考支持的实体比例
+2026-03-27 01:57:51,235 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L3[0] ── 计算 GT 证据指标 ──
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 276.12it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 181.16it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 277.22it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 204.96it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 273.07it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 204.10it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 284.55it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 208.49it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 282.18it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 205.96it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 281.35it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 203.76it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 273.42it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 202.67it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 282.52it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 206.41it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 271.55it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 205.44it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 282.67it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 184.11it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 282.90it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 199.69it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 274.64it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 206.71it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 276.07it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 205.54it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 278.93it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 209.12it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 283.67it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 200.60it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 272.98it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 207.01it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 265.90it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 204.04it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 267.78it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 211.37it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 284.82it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 97.40it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 272.00it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 201.79it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 278.25it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 205.29it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 279.75it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 204.22it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 277.42it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 205.50it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 282.86it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 208.33it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 280.27it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 209.50it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 277.03it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 207.43it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 278.03it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 205.54it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 249.17it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 208.67it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 278.21it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 206.33it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 272.78it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 207.67it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 274.46it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 158.45it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 283.23it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 157.33it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 280.41it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 173.33it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 281.46it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 168.55it/s]
+2026-03-27 01:57:51,653 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L3[0] concept_f1=0.0000 (P=0.0000 R=0.0000) — 概念覆盖度
+2026-03-27 01:57:51,656 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L3[0] evidence_coverage=0.0000 — GT 证据路径覆盖度
+2026-03-27 01:57:51,656 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L3[0] ── LLM 主观评估 ──
+2026-03-27 01:57:51,657 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L3[0] LLM prompt 长度: 1709 字符 (含 3 条参考路径)
+2026-03-27 01:57:52,729 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-27 01:58:30,757 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L3[0] LLM 原始响应: {
+    "innovation_score": 7.0,
+    "feasibility_score": 5.0,
+    "scientificity_score": 6.0,
+    "reason": "路径提出电化学调控配体壳层稳定金属核心的新机制，但逻辑链存在因果断裂（如核心完整性与粒子聚集的直接关联性不足），且未明确连接光学性质调控目标。术语使用基本准确，但部分因果关系缺乏实验依据。"
+}
+2026-03-27 01:58:30,757 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L3[0] LLM 评分: innovation=7.00 feasibility=5.00 scientificity=6.00
+2026-03-27 01:58:31,708 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-27 01:58:52,740 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L3[0] LLM 可验证性: testability=8.5000 (specificity=8.00 measurability=9.00 falsifiability=9.00 resource_feasibility=8.00)
+2026-03-27 01:58:52,740 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L3[0] ── 评分汇总 ──
+2026-03-27 01:58:52,740 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L3[0]   atypical_combination           = 0.8559
+2026-03-27 01:58:52,740 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L3[0]   bridging                       = 1.0000
+2026-03-27 01:58:52,740 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L3[0]   causal_direction_accuracy      = 0.0000
+2026-03-27 01:58:52,740 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L3[0]   chain_coherence                = 0.8133
+2026-03-27 01:58:52,740 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L3[0]   concept_f1                     = 0.0000
+2026-03-27 01:58:52,740 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L3[0]   concept_precision              = 0.0000
+2026-03-27 01:58:52,740 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L3[0]   concept_recall                 = 0.0000
+2026-03-27 01:58:52,740 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L3[0]   consistency                    = 0.0000
+2026-03-27 01:58:52,740 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L3[0]   consistency_f1                 = 0.0000
+2026-03-27 01:58:52,740 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L3[0]   consistency_precision          = 0.0000
+2026-03-27 01:58:52,740 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L3[0]   consistency_recall             = 0.0000
+2026-03-27 01:58:52,740 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L3[0]   disciplinary_leap_index        = 0.0000
+2026-03-27 01:58:52,740 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L3[0]   discipline_balance             = 0.0000
+2026-03-27 01:58:52,740 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L3[0]   embedding_bridging             = 0.8595
+2026-03-27 01:58:52,740 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L3[0]   evidence_coverage              = 0.0000
+2026-03-27 01:58:52,740 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L3[0]   factual_precision              = 1.0000
+2026-03-27 01:58:52,740 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L3[0]   feasibility                    = 5.0000
+2026-03-27 01:58:52,740 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L3[0]   hallucination_rate             = 1.0000
+2026-03-27 01:58:52,740 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L3[0]   info_novelty                   = 1.0000
+2026-03-27 01:58:52,740 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L3[0]   innovation                     = 7.0000
+2026-03-27 01:58:52,740 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L3[0]   novelty_convention_balance     = 0.0000
+2026-03-27 01:58:52,740 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L3[0]   path_alignment_best            = 0.0000
+2026-03-27 01:58:52,740 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L3[0]   path_alignment_mean            = 0.0000
+2026-03-27 01:58:52,740 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L3[0]   rao_stirling                   = 0.0000
+2026-03-27 01:58:52,740 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L3[0]   relation_precision             = 0.0000
+2026-03-27 01:58:52,740 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L3[0]   relation_type_accuracy         = 0.0000
+2026-03-27 01:58:52,740 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L3[0]   remote_association_index       = 0.8425
+2026-03-27 01:58:52,740 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L3[0]   scientificity                  = 6.0000
+2026-03-27 01:58:52,740 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L3[0]   testability                    = 8.5000
+2026-03-27 01:58:52,740 | INFO | ────────────────────────────────────────────────────────────
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 52.82it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 81.45it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 131.40it/s]
+2026-03-27 01:58:52,785 | INFO | [claude-sonnet-4-20250514] 评分摘要: consistency_f1=0.000  innovation=8.000  factual_precision=1.000  rao_stirling=0.000  chain_coherence=0.762  testability=8.000
+2026-03-27 01:58:52,785 | INFO | --------------------------------------------------
+2026-03-27 01:58:52,785 | INFO | [claude-sonnet-4-20250514] [2/19] P3 | a6f866ca73d0 | 'Self-driving lab for the photochemical s'
+2026-03-27 01:58:52,786 | INFO | [claude-sonnet-4-20250514] 解析完成: L1=1 L2=2 L3=2 (0.0s)
+2026-03-27 01:58:52,791 | INFO | [claude-sonnet-4-20250514] GT 参考路径: 3 条
+2026-03-27 01:58:52,791 | INFO | ────────────────────────────────────────────────────────────
+2026-03-27 01:58:52,791 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L1[0] 开始评估
+2026-03-27 01:58:52,791 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L1[0] 生成路径: microfluidic reactor continuous synthesis--[synergizes_with]-->machine learning-driven real-time optimization -> in-flow spectroscopic characterization--[provides_feedback_to]-->Bayesian optimization 
+2026-03-27 01:58:52,791 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L1[0] 参考路径数: 3 (GT: 3, web: 0)
+2026-03-27 01:58:52,791 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L1[0] query='如何实现等离激元纳米粒子光学性质的精准调控'  discipline='化学'  abstract_len=1285
+2026-03-27 01:58:52,791 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L1[0] gt_terms(30): 等离激元纳米粒子, 光学性质, 闭环纳米粒子合成, 光化学合成, 反应条件, 多维化学空间, 光谱纳米粒子性质, 试剂添加
+2026-03-27 01:58:52,791 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L1[0] ── 计算客观图指标 ──
+2026-03-27 01:58:52,791 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L1[0] consistency_f1=0.0000 (P=0.0000 R=0.0000) — 生成路径与参考路径的实体/关系重叠度
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 116.32it/s]
+2026-03-27 01:58:52,802 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L1[0] embedding_bridging=0.9526 — 路径中相邻步骤的语义跨越程度
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 115.45it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 106.90it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 158.72it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 169.31it/s]
+2026-03-27 01:58:52,843 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L1[0] chain_coherence=0.4954 — 相邻步骤间的语义连贯性
+2026-03-27 01:58:52,843 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L1[0] rao_stirling=0.0000 — Rao-Stirling 学科多样性指数
+2026-03-27 01:58:52,843 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L1[0] atypical_combination=0.8559 — 非典型概念组合度 (z-score)
+2026-03-27 01:58:52,843 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L1[0] disciplinary_leap_index=0.0000 — 最大学科跨越距离
+2026-03-27 01:58:52,843 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L1[0] discipline_balance=0.0000 — 学科分布均衡度 (1-Gini)
+2026-03-27 01:58:52,843 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L1[0] info_novelty=1.0000 — 信息论新颖度 (surprisal)
+2026-03-27 01:58:52,844 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L1[0] ── 计算比较型指标 (vs GT) ──
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 110.64it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 138.57it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 107.45it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 81.54it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 99.47it/s]
+2026-03-27 01:58:52,912 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L1[0] remote_association_index=0.7930 — 路径步骤间平均语义距离
+2026-03-27 01:58:52,912 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L1[0] causal_direction_accuracy=0.0000 — 因果方向与参考路径的吻合度
+2026-03-27 01:58:52,912 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L1[0] novelty_convention_balance=0.0000 — 新颖性与传统性的平衡度
+2026-03-27 02:03:11,517 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L1[0] factual_precision=1.0000 — NLI 检测路径中 claim 与摘要的一致性
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 86.06it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 249.54it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 251.26it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 263.68it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 233.24it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 269.25it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 270.03it/s]
+2026-03-27 02:03:11,566 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L1[0] hallucination_rate=0.6250 — 路径中未被参考支持的实体比例
+2026-03-27 02:03:11,566 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L1[0] ── 计算 GT 证据指标 ──
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 274.80it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 181.01it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 278.60it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 185.28it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 272.64it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 179.58it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 278.69it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 185.30it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 281.84it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 181.38it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 275.27it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 186.47it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 242.42it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 185.20it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 274.39it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 184.58it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 273.74it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 186.28it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 274.28it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 185.90it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 279.42it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 182.31it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 275.61it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 183.79it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 273.40it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 184.75it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 271.79it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 185.70it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 279.10it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 186.50it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 282.24it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 175.85it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 276.60it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 180.92it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 273.71it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 188.03it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 280.35it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 180.69it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 267.73it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 181.74it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 279.19it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 186.69it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 281.16it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 186.62it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 279.90it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 184.73it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 280.20it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 185.95it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 281.31it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 188.01it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 275.43it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 184.65it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 274.51it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 175.52it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 285.17it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 187.15it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 280.11it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 180.88it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 276.49it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 187.25it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 273.14it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 156.69it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 273.12it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 162.41it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 280.99it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 162.22it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 271.74it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 169.66it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 273.92it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 162.64it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 275.09it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 166.17it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 278.97it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 162.00it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 277.69it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 160.29it/s]
+2026-03-27 02:03:12,044 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L1[0] concept_f1=0.1579 (P=0.3750 R=0.1000) — 概念覆盖度
+2026-03-27 02:03:12,050 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L1[0] evidence_coverage=0.1000 — GT 证据路径覆盖度
+2026-03-27 02:03:12,050 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L1[0] ── LLM 主观评估 ──
+2026-03-27 02:03:12,050 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L1[0] LLM prompt 长度: 2209 字符 (含 3 条参考路径)
+2026-03-27 02:03:13,309 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-27 02:03:24,587 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L1[0] LLM 原始响应: {
+    "innovation_score": 8.5,
+    "feasibility_score": 8.0,
+    "scientificity_score": 8.0,
+    "reason": "模型路径引入微流控-机器学习闭环系统，突破传统材料调控范式，具有跨学科创新性；贝叶斯优化反应条件存在合理技术可行性；术语使用准确但未直接关联等离激元调控核心机制"
+}
+2026-03-27 02:03:24,587 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L1[0] LLM 评分: innovation=8.50 feasibility=8.00 scientificity=8.00
+2026-03-27 02:03:26,593 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-27 02:03:51,288 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L1[0] LLM 可验证性: testability=8.3750 (specificity=8.50 measurability=9.00 falsifiability=8.00 resource_feasibility=8.00)
+2026-03-27 02:03:51,288 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L1[0] ── 评分汇总 ──
+2026-03-27 02:03:51,288 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L1[0]   atypical_combination           = 0.8559
+2026-03-27 02:03:51,288 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L1[0]   bridging                       = 1.0000
+2026-03-27 02:03:51,288 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L1[0]   causal_direction_accuracy      = 0.0000
+2026-03-27 02:03:51,288 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L1[0]   chain_coherence                = 0.4954
+2026-03-27 02:03:51,288 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L1[0]   concept_f1                     = 0.1579
+2026-03-27 02:03:51,288 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L1[0]   concept_precision              = 0.3750
+2026-03-27 02:03:51,288 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L1[0]   concept_recall                 = 0.1000
+2026-03-27 02:03:51,288 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L1[0]   consistency                    = 0.0000
+2026-03-27 02:03:51,288 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L1[0]   consistency_f1                 = 0.0000
+2026-03-27 02:03:51,288 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L1[0]   consistency_precision          = 0.0000
+2026-03-27 02:03:51,288 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L1[0]   consistency_recall             = 0.0000
+2026-03-27 02:03:51,288 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L1[0]   disciplinary_leap_index        = 0.0000
+2026-03-27 02:03:51,288 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L1[0]   discipline_balance             = 0.0000
+2026-03-27 02:03:51,288 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L1[0]   embedding_bridging             = 0.9526
+2026-03-27 02:03:51,288 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L1[0]   evidence_coverage              = 0.1000
+2026-03-27 02:03:51,288 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L1[0]   factual_precision              = 1.0000
+2026-03-27 02:03:51,288 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L1[0]   feasibility                    = 8.0000
+2026-03-27 02:03:51,288 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L1[0]   hallucination_rate             = 0.6250
+2026-03-27 02:03:51,288 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L1[0]   info_novelty                   = 1.0000
+2026-03-27 02:03:51,288 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L1[0]   innovation                     = 8.5000
+2026-03-27 02:03:51,288 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L1[0]   novelty_convention_balance     = 0.0000
+2026-03-27 02:03:51,288 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L1[0]   path_alignment_best            = 0.0000
+2026-03-27 02:03:51,288 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L1[0]   path_alignment_mean            = 0.0000
+2026-03-27 02:03:51,288 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L1[0]   rao_stirling                   = 0.0000
+2026-03-27 02:03:51,288 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L1[0]   relation_precision             = 0.2000
+2026-03-27 02:03:51,288 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L1[0]   relation_type_accuracy         = 0.0000
+2026-03-27 02:03:51,288 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L1[0]   remote_association_index       = 0.7930
+2026-03-27 02:03:51,288 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L1[0]   scientificity                  = 8.0000
+2026-03-27 02:03:51,288 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L1[0]   testability                    = 8.3750
+2026-03-27 02:03:51,288 | INFO | ────────────────────────────────────────────────────────────
+2026-03-27 02:03:51,288 | INFO | ────────────────────────────────────────────────────────────
+2026-03-27 02:03:51,288 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[0] 开始评估
+2026-03-27 02:03:51,288 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[0] 生成路径: Microfluidic reactors--[enable]-->exponential acceleration of chemical space exploration -> genetic algorithms--[optimize]-->flow rate gradients and mixing patterns -> continuous flow--[allows_real-ti
+2026-03-27 02:03:51,288 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[0] 参考路径数: 3 (GT: 3, web: 0)
+2026-03-27 02:03:51,288 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[0] query='如何实现等离激元纳米粒子光学性质的精准调控'  discipline='化学'  abstract_len=1285
+2026-03-27 02:03:51,289 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[0] gt_terms(30): 等离激元纳米粒子, 光学性质, 闭环纳米粒子合成, 光化学合成, 反应条件, 多维化学空间, 光谱纳米粒子性质, 试剂添加
+2026-03-27 02:03:51,289 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[0] ── 计算客观图指标 ──
+2026-03-27 02:03:51,289 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[0] consistency_f1=0.0000 (P=0.0000 R=0.0000) — 生成路径与参考路径的实体/关系重叠度
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 41.76it/s]
+2026-03-27 02:03:51,315 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[0] embedding_bridging=0.5768 — 路径中相邻步骤的语义跨越程度
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 88.77it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 88.56it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 86.94it/s]
+2026-03-27 02:03:51,354 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[0] chain_coherence=0.3746 — 相邻步骤间的语义连贯性
+2026-03-27 02:03:51,354 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[0] rao_stirling=0.0000 — Rao-Stirling 学科多样性指数
+2026-03-27 02:03:51,354 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[0] atypical_combination=0.8559 — 非典型概念组合度 (z-score)
+2026-03-27 02:03:51,354 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[0] disciplinary_leap_index=0.0000 — 最大学科跨越距离
+2026-03-27 02:03:51,354 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[0] discipline_balance=0.0000 — 学科分布均衡度 (1-Gini)
+2026-03-27 02:03:51,354 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[0] info_novelty=1.0000 — 信息论新颖度 (surprisal)
+2026-03-27 02:03:51,354 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[0] ── 计算比较型指标 (vs GT) ──
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 124.75it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 71.78it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 89.32it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 92.99it/s]
+2026-03-27 02:03:51,409 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[0] remote_association_index=0.7255 — 路径步骤间平均语义距离
+2026-03-27 02:03:51,409 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[0] causal_direction_accuracy=0.0000 — 因果方向与参考路径的吻合度
+2026-03-27 02:03:51,409 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[0] novelty_convention_balance=0.0000 — 新颖性与传统性的平衡度
+2026-03-27 02:07:02,046 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[0] factual_precision=1.0000 — NLI 检测路径中 claim 与摘要的一致性
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 54.00it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 273.14it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 279.27it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 277.86it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 275.22it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 278.04it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 283.17it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 273.58it/s]
+2026-03-27 02:07:02,104 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[0] hallucination_rate=0.6250 — 路径中未被参考支持的实体比例
+2026-03-27 02:07:02,105 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[0] ── 计算 GT 证据指标 ──
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 274.25it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 177.11it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 281.36it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 180.51it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 274.17it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 178.85it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 279.55it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 180.73it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 266.56it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 178.46it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 276.20it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 181.23it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 271.70it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 184.71it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 279.16it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 180.07it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 272.64it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 188.39it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 287.42it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 186.66it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 284.84it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 183.25it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 272.91it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 89.78it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 271.48it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 89.35it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 272.55it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 179.86it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 281.89it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 180.86it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 281.97it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 184.98it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 255.69it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 183.13it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 277.18it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 155.87it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 282.29it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 184.07it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 273.26it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 184.71it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 272.64it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 179.50it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 281.52it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 184.08it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 282.52it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 183.77it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 280.12it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 179.67it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 279.99it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 182.43it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 276.23it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 135.84it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 275.98it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 179.13it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 281.55it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 182.46it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 281.80it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 89.95it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 243.94it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 183.63it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 273.17it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 164.72it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 281.10it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 157.54it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 279.34it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 160.48it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 282.05it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 157.59it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 273.60it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 158.83it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 278.12it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 159.49it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 281.21it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 151.64it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 275.00it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 170.02it/s]
+2026-03-27 02:07:02,610 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[0] concept_f1=0.1132 (P=0.3750 R=0.0667) — 概念覆盖度
+2026-03-27 02:07:02,615 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[0] evidence_coverage=0.0000 — GT 证据路径覆盖度
+2026-03-27 02:07:02,615 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[0] ── LLM 主观评估 ──
+2026-03-27 02:07:02,615 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[0] LLM prompt 长度: 1854 字符 (含 3 条参考路径)
+2026-03-27 02:07:04,010 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-27 02:07:18,383 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[0] LLM 原始响应: {
+    "innovation_score": 6.0,
+    "feasibility_score": 7.0,
+    "scientificity_score": 7.0,
+    "reason": "生成路径在微流控与算法应用层面具有技术新颖性，但未直接关联等离激元纳米粒子的核心调控机制（如局域表面等离激元共振）。步骤间逻辑链完整，但与光学性质调控的因果关系较弱。术语使用准确，但跨学科衔接（如材料科学与流体工程）的深度不足。"
+}
+2026-03-27 02:07:18,383 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[0] LLM 评分: innovation=6.00 feasibility=7.00 scientificity=7.00
+2026-03-27 02:07:19,305 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-27 02:07:43,557 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[0] LLM 可验证性: testability=6.7500 (specificity=5.50 measurability=7.50 falsifiability=8.00 resource_feasibility=6.00)
+2026-03-27 02:07:43,557 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[0] ── 评分汇总 ──
+2026-03-27 02:07:43,557 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[0]   atypical_combination           = 0.8559
+2026-03-27 02:07:43,557 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[0]   bridging                       = 1.0000
+2026-03-27 02:07:43,557 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[0]   causal_direction_accuracy      = 0.0000
+2026-03-27 02:07:43,558 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[0]   chain_coherence                = 0.3746
+2026-03-27 02:07:43,558 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[0]   concept_f1                     = 0.1132
+2026-03-27 02:07:43,558 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[0]   concept_precision              = 0.3750
+2026-03-27 02:07:43,558 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[0]   concept_recall                 = 0.0667
+2026-03-27 02:07:43,558 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[0]   consistency                    = 0.0000
+2026-03-27 02:07:43,558 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[0]   consistency_f1                 = 0.0000
+2026-03-27 02:07:43,558 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[0]   consistency_precision          = 0.0000
+2026-03-27 02:07:43,558 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[0]   consistency_recall             = 0.0000
+2026-03-27 02:07:43,558 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[0]   disciplinary_leap_index        = 0.0000
+2026-03-27 02:07:43,558 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[0]   discipline_balance             = 0.0000
+2026-03-27 02:07:43,558 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[0]   embedding_bridging             = 0.5768
+2026-03-27 02:07:43,558 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[0]   evidence_coverage              = 0.0000
+2026-03-27 02:07:43,558 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[0]   factual_precision              = 1.0000
+2026-03-27 02:07:43,558 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[0]   feasibility                    = 7.0000
+2026-03-27 02:07:43,558 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[0]   hallucination_rate             = 0.6250
+2026-03-27 02:07:43,558 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[0]   info_novelty                   = 1.0000
+2026-03-27 02:07:43,558 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[0]   innovation                     = 6.0000
+2026-03-27 02:07:43,558 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[0]   novelty_convention_balance     = 0.0000
+2026-03-27 02:07:43,558 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[0]   path_alignment_best            = 0.0000
+2026-03-27 02:07:43,558 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[0]   path_alignment_mean            = 0.0000
+2026-03-27 02:07:43,558 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[0]   rao_stirling                   = 0.0000
+2026-03-27 02:07:43,558 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[0]   relation_precision             = 0.0000
+2026-03-27 02:07:43,558 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[0]   relation_type_accuracy         = 0.0000
+2026-03-27 02:07:43,558 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[0]   remote_association_index       = 0.7255
+2026-03-27 02:07:43,558 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[0]   scientificity                  = 7.0000
+2026-03-27 02:07:43,558 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[0]   testability                    = 6.7500
+2026-03-27 02:07:43,558 | INFO | ────────────────────────────────────────────────────────────
+2026-03-27 02:07:43,558 | INFO | ────────────────────────────────────────────────────────────
+2026-03-27 02:07:43,558 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[1] 开始评估
+2026-03-27 02:07:43,558 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[1] 生成路径: Deep neural networks--[establish_predictive_relationships_between]-->reaction conditions and nanoparticle attributes -> covariance matrix adaptation algorithms--[optimize]-->multi-objective fitness fu
+2026-03-27 02:07:43,558 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[1] 参考路径数: 3 (GT: 3, web: 0)
+2026-03-27 02:07:43,558 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[1] query='如何实现等离激元纳米粒子光学性质的精准调控'  discipline='化学'  abstract_len=1285
+2026-03-27 02:07:43,558 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[1] gt_terms(30): 等离激元纳米粒子, 光学性质, 闭环纳米粒子合成, 光化学合成, 反应条件, 多维化学空间, 光谱纳米粒子性质, 试剂添加
+2026-03-27 02:07:43,558 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[1] ── 计算客观图指标 ──
+2026-03-27 02:07:43,558 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[1] consistency_f1=0.0000 (P=0.0000 R=0.0000) — 生成路径与参考路径的实体/关系重叠度
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 51.13it/s]
+2026-03-27 02:07:43,580 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[1] embedding_bridging=0.8390 — 路径中相邻步骤的语义跨越程度
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 182.91it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 98.20it/s]
+2026-03-27 02:07:43,600 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[1] chain_coherence=0.4099 — 相邻步骤间的语义连贯性
+2026-03-27 02:07:43,600 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[1] rao_stirling=0.0000 — Rao-Stirling 学科多样性指数
+2026-03-27 02:07:43,600 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[1] atypical_combination=0.8559 — 非典型概念组合度 (z-score)
+2026-03-27 02:07:43,600 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[1] disciplinary_leap_index=0.0000 — 最大学科跨越距离
+2026-03-27 02:07:43,600 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[1] discipline_balance=0.0000 — 学科分布均衡度 (1-Gini)
+2026-03-27 02:07:43,600 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[1] info_novelty=1.0000 — 信息论新颖度 (surprisal)
+2026-03-27 02:07:43,600 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[1] ── 计算比较型指标 (vs GT) ──
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 74.06it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 125.21it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 87.53it/s]
+2026-03-27 02:07:43,641 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[1] remote_association_index=0.7408 — 路径步骤间平均语义距离
+2026-03-27 02:07:43,641 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[1] causal_direction_accuracy=0.0000 — 因果方向与参考路径的吻合度
+2026-03-27 02:07:43,641 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[1] novelty_convention_balance=0.0000 — 新颖性与传统性的平衡度
+2026-03-27 02:09:41,657 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[1] factual_precision=1.0000 — NLI 检测路径中 claim 与摘要的一致性
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 31.28it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 121.94it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 260.26it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 126.89it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 126.30it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 113.29it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 128.99it/s]
+2026-03-27 02:09:41,764 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[1] hallucination_rate=0.8333 — 路径中未被参考支持的实体比例
+2026-03-27 02:09:41,764 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[1] ── 计算 GT 证据指标 ──
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 100.69it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 58.77it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 269.97it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 136.06it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 265.88it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 142.50it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 97.21it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 67.46it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 277.02it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 161.51it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 279.79it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 178.94it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 271.00it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 100.19it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 276.01it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 127.84it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 262.06it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 147.43it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 274.10it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 149.10it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 275.71it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 153.63it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 270.90it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 153.48it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 258.05it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 157.73it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 248.45it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 168.53it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 101.36it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 62.31it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 267.32it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 150.91it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 269.70it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 135.60it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 264.74it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 186.66it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 277.18it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 164.06it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 270.84it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 141.52it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 271.41it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 167.54it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 278.34it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 147.93it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 280.07it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 138.28it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 275.09it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 170.94it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 279.51it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 170.18it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 273.76it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 50.98it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 90.45it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 79.52it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 266.51it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 142.04it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 277.36it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 156.56it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 271.69it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 161.48it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 268.38it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 112.10it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 270.18it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 96.55it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 272.36it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 73.01it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 269.18it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 55.37it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 138.64it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 70.00it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 267.07it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 67.27it/s]
+2026-03-27 02:09:42,382 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[1] concept_f1=0.0556 (P=0.1667 R=0.0333) — 概念覆盖度
+2026-03-27 02:09:42,387 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[1] evidence_coverage=0.0000 — GT 证据路径覆盖度
+2026-03-27 02:09:42,387 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[1] ── LLM 主观评估 ──
+2026-03-27 02:09:42,387 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[1] LLM prompt 长度: 1820 字符 (含 3 条参考路径)
+2026-03-27 02:09:43,752 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-27 02:10:05,217 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[1] LLM 原始响应: {
+    "innovation_score": 7.0,
+    "feasibility_score": 8.0,
+    "scientificity_score": 9.0,
+    "reason": "生成路径引入机器学习方法实现跨学科创新，但未深入揭示物理化学机制；算法优化逻辑严密但依赖数据质量；术语准确且符合计算材料学趋势。"
+}
+2026-03-27 02:10:05,217 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[1] LLM 评分: innovation=7.00 feasibility=8.00 scientificity=9.00
+2026-03-27 02:10:06,127 | INFO | HTTP Request: POST http://api.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-27 02:10:22,216 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[1] LLM 可验证性: testability=7.2500 (specificity=5.00 measurability=8.00 falsifiability=9.00 resource_feasibility=7.00)
+2026-03-27 02:10:22,220 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[1] ── 评分汇总 ──
+2026-03-27 02:10:22,220 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[1]   atypical_combination           = 0.8559
+2026-03-27 02:10:22,220 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[1]   bridging                       = 1.0000
+2026-03-27 02:10:22,220 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[1]   causal_direction_accuracy      = 0.0000
+2026-03-27 02:10:22,220 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[1]   chain_coherence                = 0.4099
+2026-03-27 02:10:22,220 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[1]   concept_f1                     = 0.0556
+2026-03-27 02:10:22,220 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[1]   concept_precision              = 0.1667
+2026-03-27 02:10:22,220 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[1]   concept_recall                 = 0.0333
+2026-03-27 02:10:22,220 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[1]   consistency                    = 0.0000
+2026-03-27 02:10:22,220 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[1]   consistency_f1                 = 0.0000
+2026-03-27 02:10:22,220 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[1]   consistency_precision          = 0.0000
+2026-03-27 02:10:22,220 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[1]   consistency_recall             = 0.0000
+2026-03-27 02:10:22,220 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[1]   disciplinary_leap_index        = 0.0000
+2026-03-27 02:10:22,220 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[1]   discipline_balance             = 0.0000
+2026-03-27 02:10:22,220 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[1]   embedding_bridging             = 0.8390
+2026-03-27 02:10:22,220 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[1]   evidence_coverage              = 0.0000
+2026-03-27 02:10:22,220 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[1]   factual_precision              = 1.0000
+2026-03-27 02:10:22,220 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[1]   feasibility                    = 8.0000
+2026-03-27 02:10:22,220 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[1]   hallucination_rate             = 0.8333
+2026-03-27 02:10:22,220 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[1]   info_novelty                   = 1.0000
+2026-03-27 02:10:22,220 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[1]   innovation                     = 7.0000
+2026-03-27 02:10:22,220 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[1]   novelty_convention_balance     = 0.0000
+2026-03-27 02:10:22,220 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[1]   path_alignment_best            = 0.0000
+2026-03-27 02:10:22,220 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[1]   path_alignment_mean            = 0.0000
+2026-03-27 02:10:22,220 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[1]   rao_stirling                   = 0.0000
+2026-03-27 02:10:22,220 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[1]   relation_precision             = 0.0000
+2026-03-27 02:10:22,220 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[1]   relation_type_accuracy         = 0.0000
+2026-03-27 02:10:22,220 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[1]   remote_association_index       = 0.7408
+2026-03-27 02:10:22,220 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[1]   scientificity                  = 9.0000
+2026-03-27 02:10:22,220 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L2[1]   testability                    = 7.2500
+2026-03-27 02:10:22,220 | INFO | ────────────────────────────────────────────────────────────
+2026-03-27 02:10:22,220 | INFO | ────────────────────────────────────────────────────────────
+2026-03-27 02:10:22,220 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L3[0] 开始评估
+2026-03-27 02:10:22,220 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L3[0] 生成路径: microfluidic reactors--[integrated_with]-->Bayesian optimization -> microfluidic parameter gradients--[synergizes_with]-->Bayesian acquisition functions -> Bayesian acquisition functions--[intelligent
+2026-03-27 02:10:22,220 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L3[0] 参考路径数: 3 (GT: 3, web: 0)
+2026-03-27 02:10:22,220 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L3[0] query='如何实现等离激元纳米粒子光学性质的精准调控'  discipline='化学'  abstract_len=1285
+2026-03-27 02:10:22,220 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L3[0] gt_terms(30): 等离激元纳米粒子, 光学性质, 闭环纳米粒子合成, 光化学合成, 反应条件, 多维化学空间, 光谱纳米粒子性质, 试剂添加
+2026-03-27 02:10:22,220 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L3[0] ── 计算客观图指标 ──
+2026-03-27 02:10:22,221 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L3[0] consistency_f1=0.0000 (P=0.0000 R=0.0000) — 生成路径与参考路径的实体/关系重叠度
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 48.31it/s]
+2026-03-27 02:10:22,244 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L3[0] embedding_bridging=0.7733 — 路径中相邻步骤的语义跨越程度
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 137.04it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 112.11it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 75.02it/s]
+2026-03-27 02:10:22,279 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L3[0] chain_coherence=0.4709 — 相邻步骤间的语义连贯性
+2026-03-27 02:10:22,280 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L3[0] rao_stirling=0.0000 — Rao-Stirling 学科多样性指数
+2026-03-27 02:10:22,280 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L3[0] atypical_combination=0.8559 — 非典型概念组合度 (z-score)
+2026-03-27 02:10:22,280 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L3[0] disciplinary_leap_index=0.0000 — 最大学科跨越距离
+2026-03-27 02:10:22,280 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L3[0] discipline_balance=0.0000 — 学科分布均衡度 (1-Gini)
+2026-03-27 02:10:22,280 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L3[0] info_novelty=1.0000 — 信息论新颖度 (surprisal)
+2026-03-27 02:10:22,280 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L3[0] ── 计算比较型指标 (vs GT) ──
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 212.83it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 95.46it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 165.55it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 68.98it/s]
+2026-03-27 02:10:22,330 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L3[0] remote_association_index=0.7594 — 路径步骤间平均语义距离
+2026-03-27 02:10:22,330 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L3[0] causal_direction_accuracy=0.0000 — 因果方向与参考路径的吻合度
+2026-03-27 02:10:22,330 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L3[0] novelty_convention_balance=0.0000 — 新颖性与传统性的平衡度
+Terminated
+_association_index=0.7594 — 路径步骤间平均语义距离
+2026-03-27 02:09:26,757 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L3[0] causal_direction_accuracy=0.0000 — 因果方向与参考路径的吻合度
+2026-03-27 02:09:26,757 | INFO | [Eval] ID claude-sonnet-4-20250514_a6f866ca73d0 L3[0] novelty_convention_balance=0.0000 — 新颖性与传统性的平衡度
+Terminated

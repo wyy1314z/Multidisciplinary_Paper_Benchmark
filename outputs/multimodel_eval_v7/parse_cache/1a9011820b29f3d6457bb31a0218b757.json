@@ -1,0 +1,149 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "膜脂质动力学",
+        "relation": "exposes",
+        "tail": "变构结合位点",
+        "claim": "膜脂质动力学暴露变构结合位点"
+      },
+      {
+        "step": 2,
+        "head": "变构结合位点",
+        "relation": "enables",
+        "tail": "药物靶向策略",
+        "claim": "变构结合位点暴露为药物靶向提供机会"
+      },
+      {
+        "step": 3,
+        "head": "脂质组成变化",
+        "relation": "causes",
+        "tail": "相变调制",
+        "claim": "组织特异性脂质组成引发相变调制"
+      },
+      {
+        "step": 4,
+        "head": "相变调制",
+        "relation": "creates",
+        "tail": "药物敏感窗口",
+        "claim": "相变调制产生组织特异性药物敏感窗口"
+      },
+      {
+        "step": 5,
+        "head": "药物敏感窗口",
+        "relation": "predicts",
+        "tail": "精准医学",
+        "claim": "药物敏感窗口预测精准医学应用"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "射线晶体学",
+        "relation": "provides",
+        "tail": "静态快照",
+        "claim": "X射线晶体学和cryo-EM提供静态结构快照"
+      },
+      {
+        "step": 2,
+        "head": "静态快照",
+        "relation": "requires",
+        "tail": "分子动力学模拟",
+        "claim": "静态快照需要分子动力学揭示过渡路径"
+      },
+      {
+        "step": 3,
+        "head": "分子动力学模拟",
+        "relation": "uncovers",
+        "tail": "中间构象",
+        "claim": "分子动力学发现未识别的中间构象"
+      },
+      {
+        "step": 4,
+        "head": "中间构象",
+        "relation": "modulates",
+        "tail": "信号传导",
+        "claim": "脂质相互作用调制中间构象动力学"
+      },
+      {
+        "step": 5,
+        "head": "信号传导",
+        "relation": "predicts",
+        "tail": "时间控制",
+        "claim": "中间态稳定实现信号时间控制"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "膜脂质相互作用",
+        "relation": "creates",
+        "tail": "构象集合",
+        "claim": "膜脂质形成特定构象集合"
+      },
+      {
+        "step": 2,
+        "head": "构象集合",
+        "relation": "determines",
+        "tail": "位点可及性",
+        "claim": "构象集合决定变构位点可及性"
+      },
+      {
+        "step": 3,
+        "head": "位点可及性",
+        "relation": "predicts",
+        "tail": "药物反应",
+        "claim": "位点可及性预示药物反应模式"
+      },
+      {
+        "step": 4,
+        "head": "药物反应",
+        "relation": "guides",
+        "tail": "精准治疗",
+        "claim": "脂质分析指导个性化治疗选择"
+      }
+    ]
+  ],
+  "L3": [
+    [
+      {
+        "step": 1,
+        "head": "静态结构",
+        "relation": "misses",
+        "tail": "动态位点",
+        "claim": "静态方法遗漏动态药效团"
+      },
+      {
+        "step": 2,
+        "head": "动态位点",
+        "relation": "requires",
+        "tail": "分子动力学",
+        "claim": "MD模拟揭示动态结合几何"
+      },
+      {
+        "step": 3,
+        "head": "分子动力学",
+        "relation": "identifies",
+        "tail": "疾病状态",
+        "claim": "动态几何标记疾病特异状态"
+      },
+      {
+        "step": 4,
+        "head": "疾病状态",
+        "relation": "stabilizes",
+        "tail": "脂质相互作用",
+        "claim": "脂质相互作用稳定疾病状态"
+      },
+      {
+        "step": 5,
+        "head": "疾病状态",
+        "relation": "predicts",
+        "tail": "特异性药物",
+        "claim": "动态药效团设计减少脱靶效应"
+      }
+    ]
+  ]
+}

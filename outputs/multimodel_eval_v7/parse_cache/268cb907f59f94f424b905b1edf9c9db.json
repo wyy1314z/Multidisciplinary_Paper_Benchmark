@@ -1,0 +1,120 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "介电梯度超材料",
+        "relation": "transforms",
+        "tail": "特定厚度的折射率分布",
+        "claim": "介电梯度超材料将所需相位分布转化为特定厚度的折射率分布"
+      },
+      {
+        "step": 2,
+        "head": "特定厚度的折射率分布",
+        "relation": "enables",
+        "tail": "超构透镜设计",
+        "claim": "特定厚度的折射率分布为超构透镜设计提供基础"
+      },
+      {
+        "step": 3,
+        "head": "三维打印技术",
+        "relation": "enables",
+        "tail": "超构透镜的精确制造",
+        "claim": "三维打印技术实现超构透镜的精确制造"
+      },
+      {
+        "step": 4,
+        "head": "超构透镜",
+        "relation": "inhibits",
+        "tail": "色差与衍射极限",
+        "claim": "超构透镜突破传统光学系统的色差与衍射极限约束"
+      },
+      {
+        "step": 5,
+        "head": "突破约束",
+        "relation": "enables",
+        "tail": "太赫兹超分辨成像",
+        "claim": "突破物理极限实现太赫兹超分辨成像"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "介电梯度超材料",
+        "relation": "enables",
+        "tail": "相位调控",
+        "claim": "介电梯度超材料的折射率梯度实现不同频率太赫兹波的相位调控"
+      },
+      {
+        "step": 2,
+        "head": "相位调控",
+        "relation": "compensates",
+        "tail": "频率差异导致的相位变化",
+        "claim": "相位调控补偿频率差异引起的相位偏移"
+      },
+      {
+        "step": 3,
+        "head": "补偿相位变化",
+        "relation": "eliminates",
+        "tail": "色差",
+        "claim": "相位补偿消除色差效应"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "介电梯度超材料",
+        "relation": "alters",
+        "tail": "太赫兹波传播特性",
+        "claim": "特殊结构改变太赫兹波的传播模式"
+      },
+      {
+        "step": 2,
+        "head": "改变传播特性",
+        "relation": "breaks",
+        "tail": "衍射极限",
+        "claim": "传播特性改变突破衍射极限"
+      },
+      {
+        "step": 3,
+        "head": "突破衍射极限",
+        "relation": "enables",
+        "tail": "超分辨成像",
+        "claim": "突破物理极限实现超分辨成像"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "三维打印技术",
+        "relation": "enables",
+        "tail": "沉积控制",
+        "claim": "三维打印技术精确控制材料沉积位置与厚度"
+      },
+      {
+        "step": 2,
+        "head": "沉积控制",
+        "relation": "achieves",
+        "tail": "复杂结构构建",
+        "claim": "精确沉积实现介电梯度超材料复杂结构构建"
+      },
+      {
+        "step": 3,
+        "head": "复杂结构构建",
+        "relation": "ensures",
+        "tail": "参数符合设计",
+        "claim": "结构精确性确保参数符合设计要求"
+      },
+      {
+        "step": 4,
+        "head": "参数符合设计",
+        "relation": "enables",
+        "tail": "超构透镜制造",
+        "claim": "参数达标实现超构透镜精确制造"
+      }
+    ]
+  ],
+  "L3": []
+}

@@ -1,0 +1,228 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "quasi-metal-organic framework (Q-MOF) design principle",
+        "relation": "enables",
+        "tail": "controlled deligandation",
+        "claim": "Q-MOF设计原则通过控制脱配体策略优化材料特性"
+      },
+      {
+        "step": 2,
+        "head": "controlled deligandation",
+        "relation": "optimizes",
+        "tail": "porous structure",
+        "claim": "脱配体策略调控多孔结构形成"
+      },
+      {
+        "step": 3,
+        "head": "controlled deligandation",
+        "relation": "enhances",
+        "tail": "metal oxide formation",
+        "claim": "脱配体策略促进金属氧化物生成"
+      },
+      {
+        "step": 4,
+        "head": "porous structure",
+        "relation": "facilitates",
+        "tail": "Fenton-like reactions",
+        "claim": "多孔结构促进芬顿样反应发生"
+      },
+      {
+        "step": 5,
+        "head": "Fenton-like reactions",
+        "relation": "generates",
+        "tail": "reactive oxygen species (ROS)",
+        "claim": "芬顿反应生成活性氧物种"
+      },
+      {
+        "step": 6,
+        "head": "reactive oxygen species (ROS)",
+        "relation": "induces",
+        "tail": "ferroptosis",
+        "claim": "活性氧诱导铁死亡发生"
+      },
+      {
+        "step": 7,
+        "head": "ferroptosis",
+        "relation": "triggers",
+        "tail": "immunogenic cell death (ICD)",
+        "claim": "铁死亡触发免疫原性细胞死亡"
+      },
+      {
+        "step": 8,
+        "head": "immunogenic cell death (ICD)",
+        "relation": "promotes",
+        "tail": "dendritic cell maturation",
+        "claim": "免疫原性死亡促进树突状细胞成熟"
+      },
+      {
+        "step": 9,
+        "head": "dendritic cell maturation",
+        "relation": "enhances",
+        "tail": "T lymphocyte infiltration",
+        "claim": "树突状细胞成熟增强T细胞浸润"
+      },
+      {
+        "step": 10,
+        "head": "T lymphocyte infiltration",
+        "relation": "amplifies",
+        "tail": "cancer immunotherapy",
+        "claim": "T细胞浸润增强癌症免疫治疗效果"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "controlled deligandation strategy",
+        "relation": "alters",
+        "tail": "coordination environment of iron nodes",
+        "claim": "脱配体策略改变铁节点配位环境"
+      },
+      {
+        "step": 2,
+        "head": "altered coordination environment",
+        "relation": "increases",
+        "tail": "exposed active sites",
+        "claim": "配位环境改变增加暴露活性位点"
+      },
+      {
+        "step": 3,
+        "head": "exposed active sites",
+        "relation": "optimizes",
+        "tail": "electron transfer efficiency",
+        "claim": "活性位点暴露优化电子传递效率"
+      },
+      {
+        "step": 4,
+        "head": "electron transfer efficiency",
+        "relation": "enhances",
+        "tail": "peroxidase-mimic activity",
+        "claim": "电子传递效率提升过氧化物酶活性"
+      },
+      {
+        "step": 5,
+        "head": "peroxidase-mimic activity",
+        "relation": "disrupts",
+        "tail": "redox homeostasis",
+        "claim": "酶活性协同破坏氧化还原稳态"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "porous structure",
+        "relation": "facilitates",
+        "tail": "iron ion release",
+        "claim": "多孔结构促进铁离子释放"
+      },
+      {
+        "step": 2,
+        "head": "iron ion release",
+        "relation": "initiates",
+        "tail": "Fenton reactions",
+        "claim": "铁离子释放启动芬顿反应"
+      },
+      {
+        "step": 3,
+        "head": "Fenton reactions",
+        "relation": "generates",
+        "tail": "ROS",
+        "claim": "芬顿反应生成活性氧"
+      },
+      {
+        "step": 4,
+        "head": "ROS",
+        "relation": "triggers",
+        "tail": "lipid peroxidation",
+        "claim": "活性氧引发脂质过氧化"
+      },
+      {
+        "step": 5,
+        "head": "lipid peroxidation",
+        "relation": "inactivates",
+        "tail": "GPX4",
+        "claim": "脂质过氧化使GPX4失活"
+      },
+      {
+        "step": 6,
+        "head": "GPX4 inactivation",
+        "relation": "releases",
+        "tail": "damage-associated molecular patterns (DAMPs)",
+        "claim": "GPX4失活释放损伤相关分子模式"
+      }
+    ]
+  ],
+  "L3": [
+    [
+      {
+        "step": 1,
+        "head": "metal-organic framework-derived Q-MIL-53(Fe)",
+        "relation": "enhances",
+        "tail": "catalytic efficiency",
+        "claim": "铁基金属有机框架增强催化效率"
+      },
+      {
+        "step": 2,
+        "head": "catalytic efficiency",
+        "relation": "generates",
+        "tail": "ROS bursts",
+        "claim": "催化效率提升引发活性氧爆发"
+      },
+      {
+        "step": 3,
+        "head": "ROS bursts",
+        "relation": "activates",
+        "tail": "STING/IFN-γ pathways",
+        "claim": "活性氧爆发激活STING/IFN-γ通路"
+      },
+      {
+        "step": 4,
+        "head": "STING/IFN-γ pathways",
+        "relation": "promotes",
+        "tail": "dendritic cell maturation",
+        "claim": "通路激活促进树突状细胞成熟"
+      },
+      {
+        "step": 5,
+        "head": "dendritic cell maturation",
+        "relation": "synergizes",
+        "tail": "PD-1 blockade",
+        "claim": "细胞成熟协同PD-1阻断治疗"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "iron-based Q-MOF nanozyme",
+        "relation": "exhibits",
+        "tail": "dual enzyme-mimic activity",
+        "claim": "铁基纳米酶具有双重酶模拟活性"
+      },
+      {
+        "step": 2,
+        "head": "dual enzyme-mimic activity",
+        "relation": "modulates",
+        "tail": "tumor hypoxia",
+        "claim": "酶活性动态调节肿瘤缺氧"
+      },
+      {
+        "step": 3,
+        "head": "tumor hypoxia",
+        "relation": "enhances",
+        "tail": "antigen presentation",
+        "claim": "缺氧调节增强抗原呈递"
+      },
+      {
+        "step": 4,
+        "head": "antigen presentation",
+        "relation": "improves",
+        "tail": "immune checkpoint inhibitor efficacy",
+        "claim": "抗原呈递提升检查点抑制剂效果"
+      }
+    ]
+  ]
+}

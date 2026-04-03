@@ -1,0 +1,242 @@
+[
+  {
+    "paper_id": "a6f866ca73d0",
+    "title": "Self-driving lab for the photochemical synthesis of plasmonic nanoparticles with targeted structural and optical properties",
+    "model": "o3-mini",
+    "method_name": "P1",
+    "free_text_hypotheses": [
+      "假设通过在制备等离激元纳米粒子时引入受控的原子级过渡金属掺杂，并在生长后期施加可调谐局域光场辅助热处理，可以创建具有异质界面的核心–壳结构，从而同时调控自由电子密度和局部介电环境，实现对等离激元共振频率的精细控制。该方法预期能在传统尺寸或形状调控之外，为纳米粒子提供额外的电子和光学自由度。通过改变掺杂浓度以及光场参数，并利用暗场散射和多光谱吸收等光谱学技术对比各制备条件下纳米粒子光学响应，实现假设的系统验证。"
+    ],
+    "structured_paths": {},
+    "elapsed_seconds": 7.04,
+    "error": null
+  },
+  {
+    "paper_id": "a6f866ca73d0",
+    "title": "Self-driving lab for the photochemical synthesis of plasmonic nanoparticles with targeted structural and optical properties",
+    "model": "o3-mini",
+    "method_name": "P2",
+    "free_text_hypotheses": [
+      "L1 Hypothesis: 通过构建具有自适应反馈机制的微流控合成平台，并结合机器学习模型对过程参数进行实时优化，可以精确调控等离激元纳米粒子的形貌、尺寸及组分，从而实现其光学性质的精准调控。\n\nL2 Hypotheses:\n- Q1: 借助微流体反应器在连续流动条件下实现快速且高重复性的反应，不仅可以精细调整各参数的边界条件，还能够在多维参数空间内实时采集数据，从而显著加速对于复杂化学反应网络的探索和理解。\n- Q2: 利用机器学习算法，尤其是强化学习和监督学习，能够从实验数据中自动建立反应条件与纳米粒子光学性质之间的非线性映射关系，从而智能优化合成参数，以达到设计目标的纳米粒子生成，实现反应过程的精准控制和高效探索。"
+    ],
+    "structured_paths": {},
+    "elapsed_seconds": 6.03,
+    "error": null
+  },
+  {
+    "paper_id": "a6f866ca73d0",
+    "title": "Self-driving lab for the photochemical synthesis of plasmonic nanoparticles with targeted structural and optical properties",
+    "model": "o3-mini",
+    "method_name": "P3",
+    "free_text_hypotheses": [
+      "L1 Hypothesis: By integrating microfluidic reactors (材料科学) with real‐time in‐line spectroscopic nanoparticle characterization and advanced machine learning algorithms such as Bayesian optimization and deep neural networks (计算机科学技术), it is hypothesized that a closed-loop synthesis platform can be established to precisely control the optical properties of plasmonic nanoparticles (化学). In this system, variations in reagent addition and light intensity (化学) will be automatically adjusted, leading to tailor-made nanoparticle dimensions, morphologies, and compositions (材料科学) that directly correlate with designed plasmonic responses, such as specific resonance wavelengths and spectral bandwidths measurable in situ.\n\nL2 Hypotheses:\n- Q1: It is hypothesized that microfluidic reactors (材料科学) can accelerate the exploration of multidimensional chemical spaces (化学) by allowing rapid, continuous variation of reagent addition parameters and localized reaction conditions. When combined with high-throughput in-line spectral characterization, this setup will reveal direct correlations between flow microenvironment parameters and resulting nanoparticle size/morphology, thus significantly reducing synthesis time compared to conventional batch methods.\n- Q2: It is hypothesized that integrating machine learning models—specifically Bayesian optimization and deep neural networks (计算机科学技术)—with the closed-loop synthesis platform (化学) will enable precise prediction and control of nanoparticle synthesis parameters. By analyzing real-time optical spectra that encode nanoparticle size, shape, and composition (材料科学), the machine learning algorithms will optimize reagent concentrations and photochemical conditions to achieve targeted plasmonic properties, making the optimization process both efficient and reproducible.\n\nL3 Hypotheses:\n- Q1: It is hypothesized that coupling the microfluidic reactor (材料科学) with Bayesian optimization (计算机科学技术) in a closed-loop system will allow real-time adjustments of reaction conditions (化学) to reproducibly synthesize nanoparticles with desired plasmon resonance characteristics. Specifically, the dynamic adjustment of reagent flow rates and light exposure based on continuous spectral feedback will be directly correlated with achieving predetermined nanoparticle morphologies, which can be experimentally verified by comparing the system’s output against a series of predetermined benchmarks.\n- Q2: It is hypothesized that the combination of online spectral characterization (材料科学) and deep neural network analysis (计算机科学技术) can create a responsive, self-tuning system that optimizes nanoparticle synthesis in real-time. By detecting subtle spectral shifts that indicate changes in nanoparticle size and shape (化学), the neural network can trigger immediate modifications to synthesis parameters (such as reagent ratios or illumination intensity), establishing a causal relationship between real-time optical data and nanoparticle quality that can be validated through controlled experiments."
+    ],
+    "structured_paths": {},
+    "elapsed_seconds": 10.27,
+    "error": null
+  },
+  {
+    "paper_id": "a6f866ca73d0",
+    "title": "Self-driving lab for the photochemical synthesis of plasmonic nanoparticles with targeted structural and optical properties",
+    "model": "o3-mini",
+    "method_name": "P4",
+    "free_text_hypotheses": [
+      "L1 Hypothesis:\n  hypothesis: 结合实时在线光谱监测与自适应深度强化学习算法，实现对微流控反应器中反应条件的动态调整，可精细调控等离激元纳米粒子的光学性质。这种方法不仅基于既定的纳米粒子尺寸、形貌和组成，还引入了反应过程的时间演化特性，从而开辟了一条利用动态反应控制优化 plasmon resonance（等离激元共振）调节的新途径。\n  reasoning: \n    1. Premise: 纳米粒子在动态反应条件下的生长过程会对其最终光学性质产生显著影响。\n    2. Mechanism: 采用在线光谱测量获得实时反应数据，然后通过深度强化学习算法对微流控系统中的反应参数（如试剂添加速率、温度、流速等）进行自适应调整，使得系统能够根据反馈信号不断优化合成条件。\n    3. Testable Prediction: 实验中，该系统应能在较短时间内精确达到预设 plasmon resonance peak wavelength（等离激元共振峰波长），同时展现出更一致的半高宽和形貌一致性，相比传统静态或单步反馈调控方法，能更高效实现精准调控。\n  key_concepts: [等离激元纳米粒子, 光学性质, 在线光谱表征, 深度神经网络, 强化学习, 微流控反应器, 自适应控制]\n  disciplines_bridged: [化学, 材料科学, 计算机科学技术]\n\nL2 Hypotheses:\n- Q1:\n    hypothesis: 利用具有可调空间和时间梯度生成能力的微流控反应器，并结合遗传算法进行实时优化，可大幅加速在多维化学空间内发现新型纳米粒子的反应条件。通过设计一系列可变通道和混合策略，该系统能够同时优化多个变量，挖掘反应条件中未曾考虑的“隐含”参数，从而拓宽反应条件的可探索范围。\n    reasoning:\n      1. Premise: 微流控反应器具备精确调控流体动力学和混合模式的潜能，可产生多维梯度，有助于探索复杂反应空间。\n      2. Mechanism: 将实时光谱数据反馈输入遗传算法，该算法在高维参数空间中筛选并优化组合，通过不断进化策略寻找到新颖且有效的反应方案。\n      3. Testable Prediction: 相较于传统的固定通道反应器，新设计的多梯度微流控反应器能更快找到产生特定 plasmonic optical properties（等离激元光学性质）的最优反应条件，表现为更短的试错周期和更高的产物一致性。\n    key_concepts: [微流体反应器, 多维化学空间, 遗传算法, 实时光谱表征, 反应条件, 纳米粒子合成]\n    disciplines_bridged: [化学, 材料科学, 计算机科学技术]\n    \n- Q2:\n    hypothesis: 通过构建结合深度神经网络与连续反馈机制的混合模型，机器学习不仅能预测纳米粒子合成过程中的关键参数变化，还能在纳米粒子尺寸和形貌出现偏差时立即调整反应条件，从而实现真正自适应的纳米粒子制备策略。\n    reasoning:\n      1. Premise: 纳米粒子尺寸和形貌受复杂反应参数的影响，且传统机器学习模型往往在反应波动出现偏差时响应不够迅速。\n      2. Mechanism: 构建深度神经网络模型，该模型利用连续的在线光谱数据训练，并嵌入一种基于实时反馈的控制机制（如微调参数更新或融合强化学习），从而在合成过程中迅速识别并纠正偏差。\n      3. Testable Prediction: 该系统将在多次实验中显著降低纳米粒子尺寸和形貌的分布宽度，并能够在检测到偏离目标特性后迅速恢复稳定状态，验证其自适应优化效能。\n    key_concepts: [纳米粒子合成, 深度神经网络, 实时反馈, 在线光谱, 反应条件调整, 自适应控制]\n    disciplines_bridged: [化学, 材料科学, 计算机科学技术]\n\nL3 Hypotheses:\n- Q1:\n    hypothesis: 融合具有高空间分辨率的微流控反应器与基于贝叶斯优化的预测模型，通过实时更新反应条件的先验概率分布，可实现对闭环纳米粒子合成流程中反应条件的精细调控。这种方法将不仅利用当前数据，还能利用过去试验数据预测未来趋势，从而快速收敛至最佳合成方案。\n    reasoning:\n      1. Premise: 微流控反应器提供了精准的流体控制，而贝叶斯优化能够处理噪声数据并自我更新。\n      2. Mechanism: 在反应过程中，贝叶斯优化模型根据实时光谱特性和反馈数据不断更新其先验分布，并指导微流控系统调整操作参数，实现闭环调控。\n      3. Testable Prediction: 实验中，此系统应能够比传统固化方法更快地找到目标 plasmon resonance（等离激元共振）峰，并显示出更高的重复性和稳定性，从而证明闭环调控策略的优越性。\n    key_concepts: [微流体反应器, 贝叶斯优化, 闭环调控, 在线光谱表征, 反应条件优化]\n    disciplines_bridged: [化学, 材料科学, 计算机科学技术]\n    \n- Q2:\n    hypothesis: 利用在线光谱表征监控纳米粒子生长动力学，并将此数据输入经过专门设计的深度神经网络中，该网络学习并预测反应中即将出现的尺寸和形貌变化，进而通过实时反馈调整反应参数，确保纳米粒子在整个合成过程中保持精准和一致的形貌。\n    reasoning:\n      1. Premise: 连续的光谱数据能够反映出纳米粒子生长过程中的微小变化，而深度神经网络可以捕捉并预测这些非线性动态。\n      2. Mechanism: 在线光谱表征数据传输至深度神经网络，网络通过训练对反应状态进行实时预测，当预警出现偏离目标参数时，系统立即调整反应条件（如流速或试剂比率）修正合成路径。\n      3. Testable Prediction: 在实时优化实验中，采用此策略的系统应能持续生成形貌和尺寸高度一致的纳米粒子，其变化幅度明显低于采用传统离线校正方法的系统，从而证明实时优化整合模型的效用。\n    key_concepts: [在线光谱, 深度神经网络, 实时反馈, 纳米粒子尺寸, 形貌优化, 动态监控]\n    disciplines_bridged: [化学, 材料科学, 计算机科学技术]"
+    ],
+    "structured_paths": {},
+    "elapsed_seconds": 22.41,
+    "error": null
+  },
+  {
+    "paper_id": "0aafd9a38c81",
+    "title": "Large scale investigation of GPCR molecular dynamics data uncovers allosteric sites and lateral gateways",
+    "model": "o3-mini",
+    "method_name": "P1",
+    "free_text_hypotheses": [
+      "Hypothesis: The conformational landscape of GPCRs includes a distinct, transient intermediate state—stabilized by specific lipid microdomain interactions—that is neither fully active nor inactive but instead biases signaling toward β-arrestin recruitment over G-protein activation. This intermediate state modulates downstream functional mechanisms and represents a unique druggable conformation. We predict that ligands specifically designed to stabilize this state will exhibit improved selectivity and efficacy with reduced side effects. This hypothesis can be tested by combining time-resolved fluorescence resonance energy transfer (FRET), cryo-electron microscopy (cryo-EM), molecular dynamics simulations, and pharmacological profiling to map and characterize the dynamic conformational shifts in GPCRs under varying lipid environments."
+    ],
+    "structured_paths": {},
+    "elapsed_seconds": 8.41,
+    "error": null
+  },
+  {
+    "paper_id": "0aafd9a38c81",
+    "title": "Large scale investigation of GPCR molecular dynamics data uncovers allosteric sites and lateral gateways",
+    "model": "o3-mini",
+    "method_name": "P2",
+    "free_text_hypotheses": [
+      "L1 Hypothesis: GPCRs exhibit intrinsic dynamic “breathing” motions whose spatiotemporal fluctuations, modulated by the membrane lipid environment, dictate the transient exposure of allosteric sites and lateral ligand entrance pathways. These dynamic states serve as regulatory checkpoints for receptor activation and signal transduction, revealing new opportunities for targeted drug design by synchronizing lipid interactions with receptor conformational changes.\n\nL2 Hypotheses:\n- Q1: We hypothesize that specific, transient “breathing” motions in GPCRs—captured via high-resolution structural techniques—align with key steps in the receptor’s signaling cycle. In particular, distinct conformational intermediates act as pivotal switches that either facilitate or dampen downstream signaling events, suggesting that targeted stabilization or disruption of these states could modulate receptor function.\n- Q2: We hypothesize that the local lipid milieu dynamically orchestrates the conformation of GPCR allosteric binding sites, alternating them between open and closed states. This lipid-mediated modulation not only influences receptor signaling but also provides lateral ligand entrance gateways, thereby offering innovative avenues for designing allosteric drugs that harness the natural interplay between membrane lipids and receptor dynamics."
+    ],
+    "structured_paths": {},
+    "elapsed_seconds": 6.44,
+    "error": null
+  },
+  {
+    "paper_id": "0aafd9a38c81",
+    "title": "Large scale investigation of GPCR molecular dynamics data uncovers allosteric sites and lateral gateways",
+    "model": "o3-mini",
+    "method_name": "P3",
+    "free_text_hypotheses": [
+      "L1 Hypothesis: The dynamic “breathing” motions of GPCRs, as revealed by molecular dynamics simulations, interact synergistically with the membrane lipid environment to modulate both the accessibility and shape of allosteric drug binding sites. This cross-disciplinary hypothesis links structural biology (通过分子动力学模拟、射线晶体学和冷冻电镜揭示的构象柔性) with基础医学 (利用变构药物结合位点调控信号传导以影响治疗策略) and化学 (膜脂质与配体结合相互作用) to propose that tuning lipid composition could control GPCR conformational states and, thereby, modulate downstream signaling and therapeutic outcomes. This relationship is testable by altering membrane lipid profiles in vitro and correlating these changes with structural and functional assays.\n\nL2 Hypotheses:\n- Q1: By integrating high-resolution结构生物学技术 such as射线晶体学与冷冻电镜 with分子动力学模拟, it is hypothesized that distinct GPCR构象状态 will correlate with specific信号传导输出. In particular, the study predicts that states with an “open” allosteric drug binding pocket, observed in MD simulations, will show enhanced coupling to intracellular G蛋白 signals that can be experimentally validated using site-directed mutagenesis and functional assays.\n- Q2: It is hypothesized that the膜脂质动力学, especially the presence or absence of specific脂质插入 factors (e.g., cholesterol, sphingolipids), directly modulates GPCR构象柔性 and thereby alters the accessibility of侧向配体进入通道. This would be evidenced by molecular dynamics trajectories showing shifts in allosteric site openness, which in turn affects药物靶向策略 in cellular models.\n\nL3 Hypotheses:\n- Q1: By整合射线晶体学、冷冻电镜技术与分子动力学模拟, a collaborative model can be built whereGPCR的构象动态 is quantitatively linked to the appearance and dynamics of变构药物结合位点. Specifically, it is predicted that specific “breathing” motion amplitudes identified through MD simulation will match density shifts seen in高分辨率冷冻电镜数据, thereby providing a mechanistic basis whereby molecular调节剂 influence信号传导效率.\n- Q2: It is hypothesized that精确调控膜脂质组成 will alter GPCR’s lateral ligand entrance gateways by shifting the equilibrium of构象状态. Specifically, increasing levels of特定膜脂质 (如胆固醇) are expected to favor a receptor state with an accessible侧向配体进入通道, a prediction that can be tested by combining in vitro lipid modulation experiments with分子动力学数据库分析 and subsequent ligand binding assays in a cellular环境."
+    ],
+    "structured_paths": {},
+    "elapsed_seconds": 10.5,
+    "error": null
+  },
+  {
+    "paper_id": "0aafd9a38c81",
+    "title": "Large scale investigation of GPCR molecular dynamics data uncovers allosteric sites and lateral gateways",
+    "model": "o3-mini",
+    "method_name": "P4",
+    "free_text_hypotheses": [
+      "L1 Hypothesis:\n  hypothesis: GPCR conformational dynamics not only determine ligand-binding outcomes but also orchestrate local lipid reorganization, creating transient microdomains that act as reservoirs of lipid-derived allosteric modulators. These microdomains, in turn, refine the receptor’s signaling bias and drug responsiveness, suggesting that dynamic receptor–lipid interplay is a key modulator of GPCR functionality.\n  reasoning: \n    1. Premise: GPCRs are known to exhibit local \"breathing\" motions and flexible conformations that determine ligand binding and signal transduction.\n    2. Mechanism: These conformational fluctuations modulate the local membrane environment, inducing reorganization of lipid molecules into transient microdomains that can interact with allosteric sites and influence receptor signaling.\n    3. Testable Prediction: Altering the lipid composition (e.g., via pharmacological or genetic methods) should shift the balance of these microdomains, thereby changing GPCR signaling bias and modulating drug efficacy.\n  key_concepts: [GPCR构象动力学, 膜脂质动力学, 变构药物结合位点, 微域重组, 信号传导调控]\n  disciplines_bridged: [生物学, 基础医学, 化学]\n\nL2 Hypotheses:\n- Q1:\n    hypothesis: 利用高分辨率射线晶体学与冷冻电子显微镜数据结合分子动力学模拟，可以发现GPCR核心结构与外部脂质结合域之间的瞬时相互作用，这种相互作用在调控受体激活和下游信号传导中发挥关键作用，同时为设计基于构象状态调控的信号偏向药物提供新思路。\n    reasoning:\n      1. Premise: 现有的结构生物学技术（射线晶体学和冷冻电镜）已经揭示了GPCR的整体构象状态。\n      2. Mechanism: 将这些静态数据与分子动力学模拟结合，能揭示假定的瞬间脂质与受体作用模式，这些模式可能会形成或稳定某些中间态，进而特异性地调控信号传导。\n      3. Testable Prediction: 利用分子动力学模拟确定的瞬时脂质–受体相互作用域，通过突变或化学干预使得这些界面受到干扰，预期会导致信号传导通路的改变或失活。\n    key_concepts: [蛋白偶联受体, 射线晶体学, 冷冻电子显微镜, 分子动力学模拟, 脂质结合域, 信号传导]\n    disciplines_bridged: [生物学, 基础医学, 化学]\n    \n- Q2:\n    hypothesis: 不同的膜脂质组成会重新定义GPCR的构象平衡，并特异性地调控侧向配体进入通道与变构药物结合位点的开放状态，从而改变药物的结合动力学与效能。通过调节脂质环境，可以实现对GPCR药物靶向策略的精细调控。\n    reasoning:\n      1. Premise: 分子动力学模拟显示膜脂质与GPCR间强烈的动态相互作用，这些相互作用影响了侧向通道的开放状态和隐藏的变构结合位点。\n      2. Mechanism: 膜脂质组成变化（如饱和度、脂肪酸链长度等）改变局部膜的曲率与流动性，进而影响GPCR构象状态及所有潜在的侧向配体入口和药物结合位点。\n      3. Testable Prediction: 改变细胞膜脂质组成（例如，通过脂质替换实验），预计会观察到特定GPCR构象状态与侧向通道开放比例的显著变化，并且药物结合动力学也将发生可检测的调整。\n    key_concepts: [膜脂质动力学, 侧向配体进入通道, 变构结合位点, 分子动力学模拟, 药物靶向策略]\n    disciplines_bridged: [生物学, 基础医学, 化学]\n\nL3 Hypotheses:\n- Q1:\n    hypothesis: 通过融合射线晶体学、冷冻电镜与分子动力学模拟的数据，可以构建一个时空解析的模型，该模型揭示了GPCR“呼吸”动态如何与隐藏变构位点及侧向入口通道的形成相耦合，并与膜脂质特定作用相联。这一模型将指导开发基于时间分辨和脂质调控机制的新型GPCR调节剂。\n    reasoning:\n      1. Premise: 静态结构数据展示了GPCR在不同构象状态下的形态，而分子动力学模拟提供了时间尺度上的动态变化信息。\n      2. Mechanism: 将这两类数据融合，能够识别出受体构象动态与特定外周区域（如变构结合位点与侧向入口通道）形成之间的时空相关性，而这些区域的形成又受到膜脂质插入和动态调控的影响。\n      3. Testable Prediction: 实验上，通过人为干预膜脂质环境（例如改变脂质种类或浓度），应能引发可预测的GPCR构象及侧向入口通道改变，并对新型基于这些机制的调节剂的药效产生影响，从而验证这一整合模型。\n    key_concepts: [蛋白偶联受体, 射线晶体学, 冷冻电子显微镜, 分子动力学模拟, 构象动态, 变构结合位点, 侧向配体进入通道, 膜脂质插入]\n    disciplines_bridged: [生物学, 基础医学, 化学]"
+    ],
+    "structured_paths": {},
+    "elapsed_seconds": 18.89,
+    "error": null
+  },
+  {
+    "paper_id": "c7202044749e",
+    "title": "3D-printed aberration-free terahertz metalens for ultra-broadband achromatic super-resolution wide-angle imaging with high numerical aperture",
+    "model": "o3-mini",
+    "method_name": "P1",
+    "free_text_hypotheses": [
+      "我们假设，通过设计一种基于超材料和自适应全息光学元件的新型太赫兹透镜，可以同时校正色差并突破衍射极限。具体来说，该系统利用结构化的超材料阵列来产生局部的电磁共振和等离子体增强效应，通过动态调控元件的相位和振幅，实现对入射太赫兹波前的精确整形，从而在近场与远场结合的成像过程中打破传统光学系统的分辨率极限。这一假设可以通过制备不同设计参数的超材料样本，并在控制实验中验证其在色差校正与超分辨成像上的效果，进而对比传统成像系统，测试该系统是否能在太赫兹频段实现显著提升的分辨率。"
+    ],
+    "structured_paths": {},
+    "elapsed_seconds": 12.31,
+    "error": null
+  },
+  {
+    "paper_id": "c7202044749e",
+    "title": "3D-printed aberration-free terahertz metalens for ultra-broadband achromatic super-resolution wide-angle imaging with high numerical aperture",
+    "model": "o3-mini",
+    "method_name": "P2",
+    "free_text_hypotheses": [
+      "L1 Hypothesis: 跨学科的方法能够通过将精确控制的介电梯度超构材料与先进的三维打印技术相结合，实现突破传统色差与衍射极限的太赫兹超分辨成像系统。这种系统借助于材料科学的精细结构设计和电子、通信与自动控制技术的精准调控，不仅解决了传统太赫兹光学中固有的色差问题，还能在大视场下实现亚毫米级分辨，从而大幅推动无损检测和生物医学成像的应用。\n\nL2 Hypotheses:\n- Q1: 介电梯度超材料的局部折射率调控能够被精确设计为满足特定相位分布要求，通过这种方式可在全宽频段内校正色散效应并实现超分辨成像。即利用材料科学中对介电常数分布的微观调控，结合光学波前设计理论，可以克服传统金属透镜和体积透镜的局限，构造出既无色差又能突破衍射极限的太赫兹透镜。\n- Q2: 利用先进的三维打印技术，能够在亚毫米级分辨率下精确再现设计的介电梯度分布，通过材料沉积和微结构控制实现超构透镜的精准制造。这种制造方式不仅降低了制造成本，还能在复杂几何结构中保持高精度调控，为实现宽带、宽视场的太赫兹超分辨成像提供可行的生产工艺。"
+    ],
+    "structured_paths": {},
+    "elapsed_seconds": 6.23,
+    "error": null
+  },
+  {
+    "paper_id": "c7202044749e",
+    "title": "3D-printed aberration-free terahertz metalens for ultra-broadband achromatic super-resolution wide-angle imaging with high numerical aperture",
+    "model": "o3-mini",
+    "method_name": "P3",
+    "free_text_hypotheses": [
+      "L1 Hypothesis:  \nBy synergistically integrating dielectric gradient metamaterials with advanced 3D printing techniques, an achromatic THz lens can be engineered to simultaneously overcome chromatic and diffraction constraints. The tailored refractive index distribution—derived from optimized phase profiles—coupled with engineered high-aspect-ratio nanostructures, can lead to a THz imaging system that surpasses the traditional Abbe diffraction limit while minimizing chromatic and spherical aberrations.\n\nL2 Hypotheses:  \n- Q1: In dielectric gradient metamaterials, the spatial modulation of the refractive index can be designed to directly align with a predetermined phase distribution that compensates for both chromatic and spherical aberrations. By incorporating concepts such as high aspect ratio nanopillar structures (from Materials Science) with precise phase engineering (from Physics), it is hypothesized that the resulting metasurface will maintain a stable imaging performance across a broad THz frequency range, enabling super-resolution imaging. This hypothesis can be tested by fabricating samples with different gradient profiles and measuring their chromatic aberration and resolution performance.  \n- Q2: Utilizing 3D printing to fabricate metasurfaces introduces a pathway for precise control over micro-scale structural features. By merging the high-resolution capabilities of modern 3D printing (from Electronics and Automated Control Technology) with the design of dielectric gradient metamaterials (from Physics), it is hypothesized that the resulting THz lens will exhibit finely tuned phase distribution and refractive index profiles. This integration mechanism can be validated by comparing imaging performance and deviations in phase characteristics across devices produced at varying printing resolutions.\n\nL3 Hypotheses:  \n- Q1: Combining iterative design algorithms for phase distribution with layer-by-layer 3D printing of dielectric gradient metamaterials is hypothesized to enable controlled optimization of the refractive index profile, effectively pushing the system beyond the Abbe diffraction limit. In this mechanism, the adjustment of digital printing parameters directly influences the spatial refractive index modulation, which in turn refines the phase compensation necessary for achromatic super-resolution. This hypothesis can be falsified by systematically varying the printing and design parameters and quantifying the resulting imaging resolution and aberration reduction.  \n- Q2: The cooperative action of high aspect ratio nanopillar structures with ultrathin metasurface designs (such as concentric nanoring arrangements) is hypothesized to enhance the numerical aperture up to 0.555 and extend the field of view to 90°. The proposed mechanism relies on the synergistic interplay between near-field interactions of nanoscatterers and the angular response of engineered metasurfaces. This can be rigorously tested by fabricating metasurfaces with varying nanopillar configurations and evaluating the corresponding improvements in numerical aperture and off-axis imaging performance using angular-resolved THz imaging experiments."
+    ],
+    "structured_paths": {},
+    "elapsed_seconds": 9.87,
+    "error": null
+  },
+  {
+    "paper_id": "c7202044749e",
+    "title": "3D-printed aberration-free terahertz metalens for ultra-broadband achromatic super-resolution wide-angle imaging with high numerical aperture",
+    "model": "o3-mini",
+    "method_name": "P4",
+    "free_text_hypotheses": [
+      "L1 Hypothesis:\n  hypothesis: Integrating adaptively controlled metasurface elements with dielectric gradient metamaterials can lead to tunable THz metalenses that not only overcome chromatic and spherical aberrations but also actively adjust phase profiles in real time to surpass the traditional diffraction limit. This fusion of dynamic phase correction and engineered refractive index gradients is anticipated to yield an imaging system capable of high-resolution, aberration-free performance across a broad THz spectrum.\n  reasoning: \n    1. Premise: Traditional THz lenses are limited by chromatic and spherical aberrations alongside the diffraction limit.\n    2. Mechanism: By merging dielectric gradient metamaterials (which allow static refractive index control) with programmable metasurfaces (capable of dynamic phase distribution adjustment), the system can continuously align the wavefront, compensating for dispersion and aberrations.\n    3. Testable Prediction: Experiments that incorporate a feedback-controlled metasurface into a dielectric gradient design will show tunable focal properties and improved imaging resolution, even under varying frequency conditions, effectively exceeding the conventional diffraction limit.\n  key_concepts: [terahertz, dielectric gradient metamaterials, metasurface, phase distribution, chromatic aberration, diffraction limit]\n  disciplines_bridged: [物理学, 材料科学, 电子、通信与自动控制技术]\n\nL2 Hypotheses:\n- Q1:\n    hypothesis: Embedding nanoscale gradients in dielectric materials using structures such as high aspect ratio nanopillars and concentric nanopatterned rings can generate a multi-scale refractive index profile that intrinsically compensates for chromatic dispersion, leading to inherently achromatic and super-resolving THz imaging.\n    reasoning: \n      1. Premise: Dielectric gradient metamaterials have shown promise in controlling refractive index profiles to correct chromatic aberration.\n      2. Mechanism: Creating nanoscale gradients—with structures like nanopillars tuned to various dimensions—enables multi-band phase and dispersion control. This structural diversity allows the lens to adjust its phase response over a broad THz band.\n      3. Testable Prediction: Fabricated lenses using these graded nanopillar arrays will exhibit consistent focal lengths and resolution across multiple THz frequencies, confirmed via spectral imaging tests.\n    key_concepts: [dielectric gradient metamaterials, high aspect ratio nanopillars, chromatic dispersion, super-resolution]\n    disciplines_bridged: [物理学, 材料科学]\n\n- Q2:\n    hypothesis: Enhancing 3D printing techniques with real-time, multi-material deposition and adaptive laser-assisted sintering processes will allow the fabrication of metalenses with precisely controlled, sub-wavelength refractive index gradients and complex meta-atom structures, thereby minimizing manufacturing-induced aberrations.\n    reasoning: \n      1. Premise: 3D printing is a cost-effective method for fabricating complex optical structures, yet its resolution and material control need improvement for optical precision.\n      2. Mechanism: Integrating real-time feedback loops and multi-material printing into the 3D printing process enables on-the-fly adjustments, ensuring that the desired intricate refractive index distributions and phase profiles are accurately produced.\n      3. Testable Prediction: Metalenses produced using this enhanced 3D printing approach will demonstrate a closer match between designed and actual optical performance, measurable in reduced spherical aberration and controlled numerical aperture.\n    key_concepts: [3D printing, dielectric gradient metamaterials, meta-atom, refractive index profile, phase distribution]\n    disciplines_bridged: [电子、通信与自动控制技术, 材料科学]\n\nL3 Hypotheses:\n- Q1:\n    hypothesis: Combining an iterative design-fabrication-simulation loop—where advanced 3D printing is integrated with machine learning–guided adjustments—with dielectric gradient metamaterial design will allow for dynamic optimization of both phase and refractive index distributions, thereby pushing the metalens performance beyond the Abbe diffraction limit.\n    reasoning: \n      1. Premise: Achieving sub-diffraction-limited resolution requires both an optimized phase distribution and precisely controlled refractive index gradients.\n      2. Mechanism: An iterative system that uses real-time feedback from electromagnetic simulations and optical testing, combined with adaptive 3D printing (enhanced via machine learning), can fine-tune the dielectric gradients and phase structures at the sub-wavelength scale.\n      3. Testable Prediction: This approach will result in metalenses that consistently resolve features smaller than the traditional limits (e.g., sub-0.2 mm) across the entire 0.2–0.9 THz range, as evidenced by imaging tests on high-detail patterns.\n    key_concepts: [3D printing, machine learning, dielectric gradient metamaterials, phase distribution, refractive index gradient, Abbe diffraction limit]\n    disciplines_bridged: [物理学, 材料科学, 电子、通信与自动控制技术]\n\n- Q2:\n    hypothesis: Integrating high aspect ratio nanopillar structures within a metasurface-based design—where asymmetric nanopillar geometries are engineered to provide directional phase corrections—can simultaneously enhance the numerical aperture up to or beyond 0.555 and expand the effective field of view to 90° by compensating for off-axis aberrations.\n    reasoning: \n      1. Premise: High aspect ratio nanopillars enhance local light confinement, thereby improving numerical aperture, while metasurfaces can mitigate off-axis aberrations.\n      2. Mechanism: Incorporating asymmetrically designed nanopillars into the metasurface architecture provides directional control over the phase response; this dual strategy facilitates both light concentration (boosting NA) and tailored off-axis phase corrections (extending FOV).\n      3. Testable Prediction: Experimental demonstration of this compound structure will exhibit significant improvements in NA (≥0.555) and clear, aberration-minimized imaging over a 90° FOV, confirmed through off-axis resolution tests.\n    key_concepts: [high aspect ratio nanopillars, metasurfaces, numerical aperture, field of view, off-axis aberration, phase correction]\n    disciplines_bridged: [物理学, 材料科学, 电子、通信与自动控制技术]"
+    ],
+    "structured_paths": {},
+    "elapsed_seconds": 21.2,
+    "error": null
+  },
+  {
+    "paper_id": "c5641167db43",
+    "title": "Tailoring industrial enzymes for thermostability and activity evolution by the machine learning-based iCASE strategy",
+    "model": "o3-mini",
+    "method_name": "P1",
+    "free_text_hypotheses": [
+      "我们假设，在严格控制的等温压缩与动态挤压过程中，通过精确调控机械应力梯度（即挤压扰动指数），酶分子会发生特定位点的构象重构，尤其是在催化活性中心附近形成额外的氢键网络和增加局部刚性。这种重构可以同时使分子整体变得更耐热（通过减少热诱导的不利构象变动）并在催化部位保留或增强必要的柔性，从而提高催化效率。该假设可通过比较传统工艺与本策略处理后的酶在恒定高温条件下的半衰期、活性曲线（Km、Vmax）以及微观结构变化（例如通过傅里叶红外光谱和X射线晶体学）来具体测试。"
+    ],
+    "structured_paths": {},
+    "elapsed_seconds": 13.84,
+    "error": null
+  },
+  {
+    "paper_id": "c5641167db43",
+    "title": "Tailoring industrial enzymes for thermostability and activity evolution by the machine learning-based iCASE strategy",
+    "model": "o3-mini",
+    "method_name": "P2",
+    "free_text_hypotheses": [
+      "L1 Hypothesis: 我们假设通过采用等温压缩辅助动态挤压指数扰动工程（iCASE）策略，能够在维持或提升酶催化活性的同时，通过动态调控分子内网络结构来增强工业酶的热稳定性。利用结构响应的适应进化机制以及结构基础的监督式机器学习模型，可以预测和优化酶的微环境，从而平衡酶的稳定性与活性，实现工业应用中对高性能酶的精确设计。\n\nL2 Hypotheses:\n- Q1: 结合结构解析数据和监督式机器学习模型，我们假设能够精确预测聚对苯二甲酸乙二醇酯水解酶与聚合物之间的结合模式。该模型将挖掘关键氨基酸残基与聚合物相互作用的动态信息，通过模拟分子间的氢键、疏水性和静电互作，为酶与聚合物复合物构建高效结合位点提供定量指导，从而优化催化效率。\n- Q2: 基于适应性进化的分子响应模型，我们假设局部结构扰动能够触发全局动态网络的重构，而这一动态响应正是改造酶的关键。通过定量捕捉这一响应过程，可在分子层面指导酶工程改造，实现精准调控，从而生成既具有高热稳定性又保持高催化活性的酶变体。"
+    ],
+    "structured_paths": {},
+    "elapsed_seconds": 8.99,
+    "error": null
+  },
+  {
+    "paper_id": "c5641167db43",
+    "title": "Tailoring industrial enzymes for thermostability and activity evolution by the machine learning-based iCASE strategy",
+    "model": "o3-mini",
+    "method_name": "P3",
+    "free_text_hypotheses": [
+      "L1 Hypothesis:  \nIntegrating the isothermal compressibility‐assisted dynamic squeezing index perturbation engineering—which modulates key chemical interactions such as hydrogen bonds, salt bridges, and metal ion coordination—with structure-based supervised machine learning models allows us to predict and steer enzyme adaptive evolution. This synergy, crossing chemistry and computer science, is expected to sculpt hierarchical modular networks that fine‐tune substrate binding modes and catalytic mechanisms, thereby enhancing both thermal stability and catalytic activity as observed on the enzyme fitness landscape from a biological perspective.\n\nL2 Hypotheses:  \n- Q1: By leveraging detailed structural descriptors (e.g., hydrophobic interactions, disulfide bonds, and protein surface charges) from the chemical domain in combination with dynamic response predictive models (from computer science), we hypothesize that the machine learning algorithm can accurately predict the substrate binding mode of polyethylene terephthalate hydrolase with its polyester substrate. The mechanism entails identifying key residue interactions that govern adaptive evolution (biology) and correlating them with structural perturbations induced by the dynamic squeezing index. Testing this could involve mutational studies to validate predicted binding changes.  \n\n- Q2: We propose that the incorporation of epistasis prediction via structure-based supervised machine learning (computer science) into the analysis of adaptive evolution (biology) can guide enzyme engineering by pinpointing critical perturbations at the molecular level—such as modifying metal ion coordination sites or refining disulfide bond arrangements (chemistry). The mechanism suggests that controlled adjustments that shift the fitness landscape can produce cumulative improvements in enzyme stability and activity, a hypothesis that is testable by iterative mutagenesis and activity assays.\n\nL3 Hypotheses:  \n- Q1: The dynamic squeezing index network, reflecting chemical modulation of hydrogen bonds and protein surface charges, when combined with real-time predictions from structure-based machine learning algorithms (computer science), is hypothesized to cooperatively optimize the catalytic mechanism of enzymes. The proposed mechanism involves the machine learning model detecting subtle changes in dynamic structural features that are then precisely targeted by chemical perturbations, leading to improved enzyme kinetics—a prediction that can be falsified by comparing catalytic turnover rates before and after intervention.\n\n- Q2: We hypothesize that an integrated workflow—combining detailed protein surface charge analysis (chemistry), phenotype adaptive landscape modeling (biology), and dynamic response predictive modeling (computer science)—will provide a robust validation framework for enzyme engineering modifications. Specifically, the interplay among these factors is anticipated to reveal how alterations in surface charges drive adaptive responses, thereby reshaping the enzyme's fitness landscape. This model is testable by cross-validating predictions with experimental measurements of enzyme stability and function under varied environmental conditions."
+    ],
+    "structured_paths": {},
+    "elapsed_seconds": 11.53,
+    "error": null
+  },
+  {
+    "paper_id": "c5641167db43",
+    "title": "Tailoring industrial enzymes for thermostability and activity evolution by the machine learning-based iCASE strategy",
+    "model": "o3-mini",
+    "method_name": "P4",
+    "free_text_hypotheses": [
+      "L1 Hypothesis:\n  hypothesis: 将金属离子调控策略与等温压缩辅助动态挤压指数扰动工程（iCASE）相结合，通过在分子层面精细控制蛋白质表面电荷和二硫键的形成，构建更为坚韧和灵活的层级模块网络，从而同时提升工业酶的热稳定性和催化活性。\n  reasoning: \n    1. Premise: 已知金属离子和二硫键能稳定蛋白质结构，而iCASE策略利用动态挤压指数优化分子结构。\n    2. Mechanism: 通过在iCASE框架内引入金属离子调控，可在蛋白质表面形成强化的氢键和盐桥网络，促使层级模块网络在应对热胁迫时既保持稳定性又保持必需的结构柔性，以维持高活性。\n    3. Testable Prediction: 经金属离子调控的酶变体在高温工业反应中将表现出比传统iCASE改造酶更高的热稳定性和催化速率，可通过热稳定性测试和催化活性测定验证该预测。\n  key_concepts: [等温压缩辅助动态挤压、层级模块网络、金属离子、二硫键、热稳定性、催化活性]\n  disciplines_bridged: [化学, 生物学, 计算机科学技术]\n\nL2 Hypotheses:\n- Q1:\n    hypothesis: 通过在结构基础的监督式机器学习模型中引入蛋白质表面电荷分布和动态构象变化参数，可以更精确地预测聚对苯二甲酸乙二醇酯水解酶与聚合物的结合模式，为聚合物降解提供更精准的分子设计依据。\n    reasoning:\n      1. Premise: 现有模型主要依据静态结构进行结合模式预测，而蛋白质表面电荷、盐桥和疏水作用在实际结合过程中起重要作用。\n      2. Mechanism: 将分子动力学仿真中获得的时间序列数据（如表面电荷分布、盐桥重排及疏水相互作用）作为特征，整合到监督学习模型中，可捕捉酶与聚合物结合时的动态适应性变化，提升预测精度。\n      3. Testable Prediction: 新模型将能够在不同离子强度及温度条件下准确预测聚对苯二甲酸乙二醇酯水解酶的结合模式，实验对比验证后，其预测准确度明显高于传统模型。\n    key_concepts: [结构基础监督学习模型, PET水解酶, PET聚合物, 蛋白质表面电荷, 动态构象, 盐桥]\n    disciplines_bridged: [化学, 生物学, 计算机科学技术]\n- Q2:\n    hypothesis: 利用基于适应性进化机制的分子动态响应模型，可以识别并优化酶中不易直观观察到的远程调控位点，从而通过非直接催化部位的调整来增强整体酶活性和适应性。\n    reasoning:\n      1. Premise: 适应性进化揭示了酶在面对扰动时通过远程位点的结构响应来调控功能，而传统工程方法通常只关注活性位点。\n      2. Mechanism: 将分子动态响应预测模型与适应性进化理论结合，利用机器学习识别所有可能参与远程调控的残基网络，再通过实验验证这些位点对酶功能的正向调控作用。\n      3. Testable Prediction: 基于该模型设计的多点突变酶变体将展示出比单点或活性位点改造更优的催化活性和环境适应性，其表型适应性景观中的正向突变效应将得到实验证实。\n    key_concepts: [适应性进化, 动态响应预测模型, 远程调控, 酶活性, 表型适应性景观, 机器学习]\n    disciplines_bridged: [生物学, 化学, 计算机科学技术]\n\nL3 Hypotheses:\n- Q1:\n    hypothesis: 构建一个实时反馈闭环系统，结合化学驱动的动态挤压指数网络数据与结构基础机器学习预测，能够在反应过程中即时识别并调整最优催化构象，从而显著优化酶催化机制。\n    reasoning:\n      1. Premise: 化学反应过程中存在多种瞬时构象状态，而机器学习模型可从实时数据中提取关键模式。\n      2. Mechanism: 将实时测量的动态挤压指数网络数据输入到经过训练的机器学习模型中，模型分析后输出最佳催化构象建议，进而通过反馈调控实现构象自动优化，以达到最佳催化效率。\n      3. Testable Prediction: 实施该闭环系统后，在连续反应条件下观察到的酶催化速率与稳定性均优于传统静态系统，可通过在线监测和后期反应动力学数据验证该预测。\n    key_concepts: [动态挤压指数网络, 结构基础机器学习, 实时反馈, 催化构象, 酶催化机制]\n    disciplines_bridged: [化学, 计算机科学技术, 生物学]\n- Q2:\n    hypothesis: 通过整合蛋白质表面电荷分析、酶的表型适应性景观建模以及动态响应预测至统一工作流中，能够系统性地识别并校正导致符号表型互作的不利交互，从而为定向进化提供精确的改造方向。\n    reasoning:\n      1. Premise: 蛋白质表面电荷、适应性景观和动态响应在决定酶结构与功能对应关系中共同发挥作用，但传统方法往往分开分析。\n      2. Mechanism: 将实验获得的蛋白质表面电荷分布数据、基于机器学习的表型适应性景观模型及动态响应预测数据进行整合，形成一个多维数据工作流，综合分析后识别出降低不利符号表型互作的关键结构改造位点。\n      3. Testable Prediction: 应用该工作流指导获得的酶变体将在突变累积过程中显示显著减少负面表型互作，且整体适应性和功能性均较对照组有明显提升，可通过系统性表型与功能测试验证。\n    key_concepts: [蛋白质表面电荷, 表型适应性景观, 动态响应预测, 符号表型互作, 定向进化, 工作流整合]\n    disciplines_bridged: [化学, 生物学, 计算机科学技术]"
+    ],
+    "structured_paths": {},
+    "elapsed_seconds": 25.7,
+    "error": null
+  },
+  {
+    "paper_id": "69cf875bdbf7",
+    "title": "Quasi Fe MIL-53 nanozyme inducing ferroptosis and immunogenic cell death for cancer immunotherapy",
+    "model": "o3-mini",
+    "method_name": "P1",
+    "free_text_hypotheses": [
+      "假设：通过在准金属有机框架材料中嵌入具有特定电子给体/受体特性的过渡金属中心，并在有机配体上引入肿瘤微环境响应元件（如pH敏感或ROS响应官能团），可实现精准控制其类酶催化活性。在肿瘤低pH环境下，这类材料能够优先激活内建的催化反应（例如，类过氧化物酶或氧化酶活性），从而在局部快速产生大量反应性氧种，选择性诱导肿瘤细胞凋亡，同时抑制正常细胞活性。该假设不仅明确了准金属有机框架的设计原则，也具体指向其在复杂体内环境中响应并放大的催化机制，并可通过体内外一系列生物化学与影像学实验来验证其肿瘤治疗效果。"
+    ],
+    "structured_paths": {},
+    "elapsed_seconds": 5.7,
+    "error": null
+  },
+  {
+    "paper_id": "69cf875bdbf7",
+    "title": "Quasi Fe MIL-53 nanozyme inducing ferroptosis and immunogenic cell death for cancer immunotherapy",
+    "model": "o3-mini",
+    "method_name": "P2",
+    "free_text_hypotheses": [
+      "L1 Hypothesis: 通过合理设计准金属有机框架材料并调控其配体去除程度，可以定向调控其类酶催化活性，实现在肿瘤微环境中有效的氧化和还原反应。该过程不仅通过增强反应性氧物种（ROS）生成和铁离子释放直接诱导肿瘤细胞凋亡，还通过激活免疫细胞介导抗肿瘤免疫反应，从而实现直接杀伤与免疫调控的双重肿瘤治疗效果。\n\nL2 Hypotheses:\n- Q1: 通过可控配体去除策略，准金属有机框架中金属位点的暴露和多孔结构的优化能够显著提升纳米酶的过氧化物酶与催化酶活性。该策略调控了催化反应的速率和选择性，有望在肿瘤微环境中产生足够的ROS水平，实现局部氧化应激和细胞凋亡，从而提升肿瘤治疗效果。\n- Q2: 多孔结构纳米材料能通过调控微环境中铁离子的释放速度和局部浓度，从而诱导铁死亡。高比表面积和内部孔道不仅促进ROS生成及谷胱甘肽耗竭，还进一步激活免疫细胞（如树突状细胞和T细胞）的抗原提呈与浸润效应，协同实现肿瘤生长的有效抑制。"
+    ],
+    "structured_paths": {},
+    "elapsed_seconds": 8.03,
+    "error": null
+  },
+  {
+    "paper_id": "69cf875bdbf7",
+    "title": "Quasi Fe MIL-53 nanozyme inducing ferroptosis and immunogenic cell death for cancer immunotherapy",
+    "model": "o3-mini",
+    "method_name": "P3",
+    "free_text_hypotheses": [
+      "L1 Hypothesis: \n通过将化学中的可控配体去除策略与材料科学中多孔结构设计相结合，准金属有机框架（例如Q-MIL-53(Fe)）能够同时优化其类酶催化活性和结构特性，以触发基础医学中抗肿瘤免疫反应。例如，优化后的孔结构不仅提升了Fe离子的暴露率，增强了过氧化物酶样和芬顿反应产生的活性氧（ROS），而且促使肿瘤细胞发生铁死亡和免疫原性细胞死亡，从而促进树突状细胞成熟和T细胞浸润。这一假设可以通过DFT计算、催化活性测试与免疫标记检测来验证。\n\nL2 Hypotheses:\n- Q1 (准金属有机框架的可控配体去除策略如何影响纳米酶催化活性): \n采用可控配体去除策略制备的Q-MIL-53(Fe)通过减少有机配体的覆盖，提高了金属离子/节点的暴露程度，这不仅拓宽了可调孔结构，而且直接增强了其过氧化物酶及催化氧化反应（如芬顿反应）的活性。化学中的DFT计算可用于量化这些结构变化对催化位点电子分布的影响，与此同时，材料科学的纳米材料表征技术可验证结构孔隙率的提升，从而共同证实这种策略对纳米酶催化活性提升的具体作用机制。\n\n- Q2 (多孔结构纳米材料如何通过铁死亡机制抑制肿瘤生长):\n多孔结构的纳米材料（如Q-MIL-53(Fe)）能够通过增强表面积促进Fe离子与过氧化氢的反应，产生活性氧从而诱导铁死亡。与此同时，结构优化提升了谷胱甘肽耗竭能力，减弱了肿瘤细胞的抗氧化防御。结合基础医学中铁死亡信号及细胞内活性氧水平的检测，这一假设提出：纳米材料的孔结构调控直接与肿瘤细胞铁死亡路径的活化成正相关关系，且这一过程可通过体内外实验进行验证。\n\nL3 Hypotheses:\n- Q1 (金属有机框架衍生的准金属有机框架通过可控配体去除策略优化孔结构，结合芬顿反应调控肿瘤微环境，同时诱导铁死亡和免疫原性细胞死亡的协同治疗机制):\n通过可控配体去除制备的Q-MIL-53(Fe)可以实现对孔结构的精细调控，从而最大化Fe节点的利用效率，增强其催化产生ROS的能力。此机制利用化学领域中的芬顿反应原理，在肿瘤微环境中加速活性氧累积，诱导铁死亡以及免疫原性细胞死亡，并激活树突状细胞成熟和T细胞浸润，促进体内抗肿瘤免疫反应。该假设可以通过联用DFT计算、纳米结构表征、细胞死亡路径检测及免疫细胞活性评估进行系统测试和验证。"
+    ],
+    "structured_paths": {},
+    "elapsed_seconds": 15.45,
+    "error": null
+  },
+  {
+    "paper_id": "69cf875bdbf7",
+    "title": "Quasi Fe MIL-53 nanozyme inducing ferroptosis and immunogenic cell death for cancer immunotherapy",
+    "model": "o3-mini",
+    "method_name": "P4",
+    "free_text_hypotheses": [
+      "L1 Hypothesis:\n  hypothesis: 在宏观层面，我们提出通过设计具有多级孔径分布和内置pH/还原敏感配体的准金属有机框架，可以在肿瘤酸性微环境中实现受控崩解，释放出高密度的活性铁位点，从而启动级联的过氧化物酶样反应产生短寿命活性氧，既诱导铁死亡，又通过释放损伤相关分子模式(DAMPs)促进免疫原性细胞死亡，最终激活树突状细胞和T细胞以发挥持久的抗肿瘤免疫作用。\n  reasoning: 前提：在酸性和还原环境下，具有敏感配体的纳米材料可实现受控崩解；机制：多级孔径和内置敏感配体促使框架在肿瘤微环境中特异性崩解，暴露额外的催化活性位点，产生大量ROS，既直接诱导铁死亡，也通过DAMPs诱发免疫细胞介导的肿瘤清除；预测：与传统Q-MIL-53(Fe)相比，新型材料将在细胞水平和动物模型中展示更高的铁死亡、免疫原性细胞死亡及T细胞浸润水平，从而实现更强的抗肿瘤疗效。\n  key_concepts: [准金属有机框架, pH敏感配体, 多级孔径, 活性氧, 铁死亡, 免疫原性细胞死亡, DAMPs]\n  disciplines_bridged: [化学, 材料科学, 基础医学]\n\nL2 Hypotheses:\n- Q1:\n    hypothesis: 通过在Q-MIL-53(Fe)框架的配体中引入可掺杂的杂原子（如硫原子）并采用精细的可控配体去除策略，可以在纳米结构中形成高密度缺陷位点，这些缺陷位点不仅提升对底物的吸附能力，而且增强了过氧化物酶样活性，进而提高催化反应中与肿瘤细胞活性氧产生的关联性。\n    reasoning: 前提：配体中引入杂原子后，其在去除过程中更易形成缺陷；机制：利用缺陷位点增强底物（如H2O2）的吸附与活化，从而加速芬顿反应产生更多ROS；预测：与常规Q-MIL-53(Fe)对比，新材料在体外活性氧生成和肿瘤细胞杀伤实验中表现更优。\n    key_concepts: [可控配体去除策略, 杂原子掺杂, 缺陷位点, 过氧化物酶催化活性, 芬顿反应]\n    disciplines_bridged: [化学, 材料科学]\n- Q2:\n    hypothesis: 采用分层多孔结构设计的纳米材料可通过调控局部铁释放和底物扩散，从而在酸性肿瘤微环境中增强局部芬顿反应效率，进一步促进脂质过氧化，诱导细胞内铁死亡，并间接激活抗肿瘤免疫反应。\n    reasoning: 前提：多孔结构不仅提供较大比表面积，还可调控内部分子和离子的扩散；机制：分层孔结构有利于在不同区域实现缓释与富集，导致局部铁离子浓度增加，从而激活强化的芬顿反应产生大量ROS引发脂质过氧化；预测：在酸性环境下，该材料将比传统均质结构材料表现出更显著的铁死亡信号和肿瘤抑制效果。\n    key_concepts: [多孔结构, 分层孔径, 局部铁释放, 芬顿反应, 脂质过氧化, 铁死亡]\n    disciplines_bridged: [材料科学, 基础医学]\n\nL3 Hypotheses:\n- Q1:\n    hypothesis: 针对操作层面的研究，我们提出一种利用金属有机框架衍生的准金属有机框架新型设计，该设计通过可控配体去除策略构建梯度孔径和特异性活性位点，利用肿瘤局部酸性环境激活芬顿反应，产生高浓度ROS，从而同时诱导铁死亡和免疫原性细胞死亡，实现协同化疗和免疫治疗的双重抗肿瘤机制。这样的协同效果不仅能快速破坏肿瘤细胞，还能释放丰富的DAMPs，促进树突状细胞成熟和T淋巴细胞浸润。\n    reasoning: 前提：通过控制配体去除策略优化孔结构可获得梯度孔径和更多暴露的金属活性位点；机制：在肿瘤酸性环境中，这些活性位点触发局部强化的芬顿反应，产生高浓度ROS，引发铁死亡以及免疫原性细胞死亡，进而释放DAMPs激活免疫系统；预测：该材料在体内不仅可证明肿瘤生长被显著抑制，而且免疫细胞的浸润和活化水平提高，显示出双重抗肿瘤效果，相较于单一治疗方式具有更持久的治疗效果。\n    key_concepts: [准金属有机框架, 梯度孔径, 可控配体去除, 芬顿反应, 铁死亡, 免疫原性细胞死亡, DAMPs]\n    disciplines_bridged: [化学, 材料科学, 基础医学]"
+    ],
+    "structured_paths": {},
+    "elapsed_seconds": 22.42,
+    "error": null
+  }
+]

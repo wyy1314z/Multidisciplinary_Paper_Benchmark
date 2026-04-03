@@ -1,0 +1,130 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "isothermal compressibility-assisted dynamic squeezing index perturbation engineering (iCASE)",
+        "relation": "enables",
+        "tail": "hierarchical modular networks",
+        "claim": "iCASE enables the construction of hierarchical modular networks reflecting dynamic squeezing index"
+      },
+      {
+        "step": 2,
+        "head": "hierarchical modular networks",
+        "relation": "improves",
+        "tail": "enzyme structural integrity",
+        "claim": "Hierarchical networks optimize enzyme structural integrity through dynamic squeezing index representation"
+      },
+      {
+        "step": 3,
+        "head": "machine learning models",
+        "relation": "predicts",
+        "tail": "optimal enzyme conditions",
+        "claim": "Machine learning models predict optimal conditions for enzyme performance based on network data"
+      },
+      {
+        "step": 4,
+        "head": "synergistic effect",
+        "relation": "validates",
+        "tail": "chemical-computational integration",
+        "claim": "Synergistic validation between chemical engineering and computational methods confirms enhanced enzyme properties"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "dynamic squeezing index",
+        "relation": "provides",
+        "tail": "conformational insights",
+        "claim": "Dynamic squeezing index provides insights into substrate-induced conformational changes"
+      },
+      {
+        "step": 2,
+        "head": "machine learning algorithms",
+        "relation": "correlates",
+        "tail": "conformational changes",
+        "claim": "ML algorithms correlate conformational changes with catalytic efficiency metrics"
+      },
+      {
+        "step": 3,
+        "head": "predicted binding modes",
+        "relation": "validates",
+        "tail": "crystallographic data",
+        "claim": "Predicted binding modes validate against experimental crystallographic and kinetic data"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "adaptive evolution analysis",
+        "relation": "identifies",
+        "tail": "key residues",
+        "claim": "Adaptive evolution analysis identifies critical residues (H-bonds, salt bridges, hydrophobic interactions)"
+      },
+      {
+        "step": 2,
+        "head": "identified interactions",
+        "relation": "guides",
+        "tail": "enzyme variant design",
+        "claim": "Key residue interactions guide rational design of improved enzyme variants"
+      },
+      {
+        "step": 3,
+        "head": "engineered mutations",
+        "relation": "validates",
+        "tail": "catalytic assays",
+        "claim": "Engineered mutations validate against catalytic assay performance metrics"
+      }
+    ]
+  ],
+  "L3": [
+    [
+      {
+        "step": 1,
+        "head": "dynamic squeezing index network",
+        "relation": "identifies",
+        "tail": "metal ion roles",
+        "claim": "Network identifies critical structural features like metal ions and disulfide bonds"
+      },
+      {
+        "step": 2,
+        "head": "structural features",
+        "relation": "optimizes",
+        "tail": "active site configuration",
+        "claim": "Critical features optimize active site configuration for stability/activity"
+      },
+      {
+        "step": 3,
+        "head": "engineered enzymes",
+        "relation": "compares",
+        "tail": "non-engineered variants",
+        "claim": "Engineered enzymes show improved catalytic efficiency compared to conventional designs"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "protein surface charge analysis",
+        "relation": "correlates",
+        "tail": "adaptive landscapes",
+        "claim": "Surface charge analysis correlates with phenotypic adaptive landscape predictions"
+      },
+      {
+        "step": 2,
+        "head": "dynamic response prediction",
+        "relation": "refines",
+        "tail": "engineering workflow",
+        "claim": "Dynamic response prediction refines comprehensive enzyme engineering framework"
+      },
+      {
+        "step": 3,
+        "head": "integrated workflow",
+        "relation": "validates",
+        "tail": "thermal stability data",
+        "claim": "Workflow validates against experimental stability/activity measurements under varied conditions"
+      }
+    ]
+  ]
+}

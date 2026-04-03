@@ -1,0 +1,132 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "partial ligand removal",
+        "relation": "induces",
+        "tail": "electronic structure modulation",
+        "claim": "部分配体去除引起准MOFs电子结构调制"
+      },
+      {
+        "step": 2,
+        "head": "electronic structure modulation",
+        "relation": "creates",
+        "tail": "electron-deficient iron sites",
+        "claim": "电子结构调制产生缺电子铁位点"
+      },
+      {
+        "step": 3,
+        "head": "electron-deficient iron sites",
+        "relation": "enhance",
+        "tail": "Fenton-like catalytic activity",
+        "claim": "缺电子铁位点增强Fenton样催化活性"
+      },
+      {
+        "step": 4,
+        "head": "Fenton-like catalytic activity",
+        "relation": "causes",
+        "tail": "ROS generation",
+        "claim": "Fenton样活性导致ROS生成"
+      },
+      {
+        "step": 5,
+        "head": "electron-deficient iron sites",
+        "relation": "facilitates",
+        "tail": "glutathione depletion",
+        "claim": "缺电子铁位点通过Fe-S配位促进谷胱甘肽耗尽"
+      },
+      {
+        "step": 6,
+        "head": "ROS generation & glutathione depletion",
+        "relation": "synergistically trigger",
+        "tail": "immunogenic ferroptosis",
+        "claim": "ROS生成和谷胱甘肽耗尽协同触发免疫原性铁死亡"
+      },
+      {
+        "step": 7,
+        "head": "immunogenic ferroptosis",
+        "relation": "establishes",
+        "tail": "self-amplifying tumor-immunological microenvironment",
+        "claim": "铁死亡建立自我放大肿瘤免疫微环境"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "Controlled deligandation",
+        "relation": "generates",
+        "tail": "unsaturated iron sites",
+        "claim": "受控脱配体作用生成配位不饱和铁位点"
+      },
+      {
+        "step": 2,
+        "head": "unsaturated iron sites",
+        "relation": "optimizes",
+        "tail": "d-band center position",
+        "claim": "不饱和铁位点优化d带中心位置"
+      },
+      {
+        "step": 3,
+        "head": "optimized d-band center",
+        "relation": "lowers",
+        "tail": "energy barrier for H₂O₂ cleavage",
+        "claim": "优化的d带中心降低H₂O₂均裂能垒"
+      },
+      {
+        "step": 4,
+        "head": "quasi-MOF phase",
+        "relation": "facilitates",
+        "tail": "reversible Fe valence transition",
+        "claim": "准MOF相促进可逆铁价态转变"
+      },
+      {
+        "step": 5,
+        "head": "Fe valence transition",
+        "relation": "enables",
+        "tail": "pH-adaptive enzyme switching",
+        "claim": "铁价态转变实现pH自适应酶功能切换"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "mesoporous architecture",
+        "relation": "acts as",
+        "tail": "ion reservoir",
+        "claim": "介孔结构作为纳米离子储库"
+      },
+      {
+        "step": 2,
+        "head": "ion reservoir",
+        "relation": "sustains",
+        "tail": "labile iron pool elevation",
+        "claim": "离子储库维持细胞内不稳定铁池升高"
+      },
+      {
+        "step": 3,
+        "head": "labile iron pool elevation",
+        "relation": "promotes",
+        "tail": "ACSL4-mediated lipid peroxidation",
+        "claim": "铁池升高促进ACSL4介导的脂质过氧化"
+      },
+      {
+        "step": 4,
+        "head": "mesoporous confinement",
+        "relation": "protects",
+        "tail": "catalytic iron centers",
+        "claim": "多孔限域保护催化铁中心免受失活"
+      },
+      {
+        "step": 5,
+        "head": "pH-responsive degradation",
+        "relation": "maintains",
+        "tail": "iron homeostasis",
+        "claim": "pH响应降解维持铁稳态"
+      }
+    ]
+  ],
+  "L3": []
+}

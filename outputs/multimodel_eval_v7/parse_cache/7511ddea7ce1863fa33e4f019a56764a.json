@@ -1,0 +1,106 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "等温压缩辅助动态挤压指数扰动工程（iCASE）策略",
+        "relation": "enables",
+        "tail": "层次模块网络构建",
+        "claim": "iCASE策略通过构建层次模块网络为酶结构响应机制优化提供基础"
+      },
+      {
+        "step": 2,
+        "head": "层次模块网络构建",
+        "relation": "transforms",
+        "tail": "酶的结构响应机制",
+        "claim": "层次模块网络优化改变了酶的结构响应机制"
+      },
+      {
+        "step": 3,
+        "head": "酶的结构响应机制",
+        "relation": "causes",
+        "tail": "工业酶热稳定性提升",
+        "claim": "优化后的结构响应机制显著提高工业酶热稳定性"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "等温压缩辅助动态挤压指数扰动工程（iCASE）策略",
+        "relation": "requires",
+        "tail": "物理化学环境精确控制",
+        "claim": "iCASE策略需要对酶的物理化学环境进行精确控制"
+      },
+      {
+        "step": 2,
+        "head": "物理化学环境精确控制",
+        "relation": "induces",
+        "tail": "有利构象变化",
+        "claim": "精确控制诱导酶在特定条件发生有利构象变化"
+      },
+      {
+        "step": 3,
+        "head": "有利构象变化",
+        "relation": "enhances",
+        "tail": "高温稳定性与催化效率",
+        "claim": "构象变化增强酶在高温下的稳定性和催化效率"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "结构基础的监督式机器学习模型",
+        "relation": "enables",
+        "tail": "PETase结合模式预测",
+        "claim": "机器学习模型能够有效预测PETase与聚合物的结合模式"
+      },
+      {
+        "step": 2,
+        "head": "PETase结合模式预测",
+        "relation": "identifies",
+        "tail": "关键氨基酸残基",
+        "claim": "模型可识别与聚合物相互作用的关键氨基酸残基"
+      },
+      {
+        "step": 3,
+        "head": "关键氨基酸残基",
+        "relation": "provides",
+        "tail": "PETase变体设计依据",
+        "claim": "关键残基信息为设计高效降解PETase变体提供理论依据"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "适应性进化机制的分子响应模型",
+        "relation": "simulates",
+        "tail": "不同环境下的结构变化",
+        "claim": "模型能模拟不同环境条件下的酶结构变化"
+      },
+      {
+        "step": 2,
+        "head": "不同环境下的结构变化",
+        "relation": "predicts",
+        "tail": "酶功能与适应度",
+        "claim": "结构变化模拟可预测酶的功能表现和适应度"
+      },
+      {
+        "step": 3,
+        "head": "酶功能与适应度预测",
+        "relation": "reveals",
+        "tail": "结构-功能关系",
+        "claim": "预测结果揭示酶进化过程中的结构-功能关系"
+      },
+      {
+        "step": 4,
+        "head": "结构-功能关系",
+        "relation": "guides",
+        "tail": "定向进化实验",
+        "claim": "结构-功能关系为定向进化实验提供筛选指导"
+      }
+    ]
+  ],
+  "L3": []
+}

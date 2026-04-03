@@ -1,0 +1,135 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "准金属有机框架",
+        "relation": "requires",
+        "tail": "pH敏感配体",
+        "claim": "准金属有机框架需要pH敏感配体实现环境响应"
+      },
+      {
+        "step": 2,
+        "head": "pH敏感配体",
+        "relation": "enables",
+        "tail": "多级孔径崩解",
+        "claim": "pH敏感配体在酸性环境触发多级孔径结构崩解"
+      },
+      {
+        "step": 3,
+        "head": "多级孔径崩解",
+        "relation": "releases",
+        "tail": "活性铁位点",
+        "claim": "结构崩解释放高密度铁催化位点"
+      },
+      {
+        "step": 4,
+        "head": "活性铁位点",
+        "relation": "catalyzes",
+        "tail": "过氧化物酶反应",
+        "claim": "铁位点催化过氧化物酶样反应生成ROS"
+      },
+      {
+        "step": 5,
+        "head": "过氧化物酶反应",
+        "relation": "induces",
+        "tail": "铁死亡/DAMPs释放",
+        "claim": "ROS同时诱导铁死亡并触发DAMPs释放"
+      },
+      {
+        "step": 6,
+        "head": "DAMPs释放",
+        "relation": "activates",
+        "tail": "树突状/T细胞",
+        "claim": "DAMPs激活免疫细胞实现抗肿瘤作用"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "杂原子掺杂",
+        "relation": "requires",
+        "tail": "可控配体去除",
+        "claim": "硫原子掺杂需要精确配体去除策略"
+      },
+      {
+        "step": 2,
+        "head": "可控配体去除",
+        "relation": "creates",
+        "tail": "缺陷位点",
+        "claim": "配体去除形成高密度催化缺陷位点"
+      },
+      {
+        "step": 3,
+        "head": "缺陷位点",
+        "relation": "enhances",
+        "tail": "芬顿反应",
+        "claim": "缺陷位点增强底物吸附与ROS生成"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "分层孔径",
+        "relation": "regulates",
+        "tail": "局部铁释放",
+        "claim": "多孔结构调控铁离子空间分布"
+      },
+      {
+        "step": 2,
+        "head": "局部铁释放",
+        "relation": "amplifies",
+        "tail": "芬顿反应",
+        "claim": "高浓度铁强化ROS生成"
+      },
+      {
+        "step": 3,
+        "head": "芬顿反应",
+        "relation": "induces",
+        "tail": "脂质过氧化",
+        "claim": "ROS引发氧化应激导致铁死亡"
+      }
+    ]
+  ],
+  "L3": [
+    [
+      {
+        "step": 1,
+        "head": "梯度孔径",
+        "relation": "requires",
+        "tail": "可控配体去除",
+        "claim": "孔径梯度依赖配体精确调控"
+      },
+      {
+        "step": 2,
+        "head": "可控配体去除",
+        "relation": "exposes",
+        "tail": "活性位点",
+        "claim": "去除配体暴露金属催化中心"
+      },
+      {
+        "step": 3,
+        "head": "活性位点",
+        "relation": "triggers",
+        "tail": "芬顿反应",
+        "claim": "酸性环境激活铁催化ROS生成"
+      },
+      {
+        "step": 4,
+        "head": "芬顿反应",
+        "relation": "causes",
+        "tail": "铁死亡/DAMPs",
+        "claim": "ROS同时诱导细胞死亡与免疫激活"
+      },
+      {
+        "step": 5,
+        "head": "DAMPs",
+        "relation": "promotes",
+        "tail": "T细胞浸润",
+        "claim": "免疫信号分子增强抗肿瘤免疫响应"
+      }
+    ]
+  ]
+}

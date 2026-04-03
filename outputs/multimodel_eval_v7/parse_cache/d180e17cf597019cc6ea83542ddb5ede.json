@@ -1,0 +1,151 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "构象动力学",
+        "relation": "interacts_with",
+        "tail": "膜脂质动力学",
+        "claim": "构象动力学与膜脂质动力学存在动态相互作用"
+      },
+      {
+        "step": 2,
+        "head": "膜脂质动力学",
+        "relation": "forms",
+        "tail": "变构通讯网络",
+        "claim": "膜脂质与受体界面形成瞬态变构网络"
+      },
+      {
+        "step": 3,
+        "head": "变构通讯网络",
+        "relation": "serves_as",
+        "tail": "进化保守信号枢纽",
+        "claim": "变构网络作为跨受体亚型的保守信号枢纽"
+      },
+      {
+        "step": 4,
+        "head": "进化保守信号枢纽",
+        "relation": "targeted_by",
+        "tail": "脂质模拟分子调节剂",
+        "claim": "进化保守枢纽可被脂质模拟化合物靶向调控"
+      },
+      {
+        "step": 5,
+        "head": "脂质模拟分子调节剂",
+        "relation": "stabilizes",
+        "tail": "特定构象状态",
+        "claim": "脂质模拟剂可稳定特定受体构象状态"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "构象动力学",
+        "relation": "exhibits",
+        "tail": "多时间尺度运动",
+        "claim": "GPCR构象运动呈现分形时间模式"
+      },
+      {
+        "step": 2,
+        "head": "多时间尺度运动",
+        "relation": "creates",
+        "tail": "分级信号状态",
+        "claim": "不同时间尺度运动产生层级化信号状态"
+      },
+      {
+        "step": 3,
+        "head": "分级信号状态",
+        "relation": "decoded_by",
+        "tail": "多尺度MD-cryoEM整合",
+        "claim": "多模态技术可解码层级信号特征"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "膜脂质动力学",
+        "relation": "modulates",
+        "tail": "变构药物结合位点",
+        "claim": "脂质组成调控变构位点可及性"
+      },
+      {
+        "step": 2,
+        "head": "变构药物结合位点",
+        "relation": "encoded_by",
+        "tail": "组织特异性脂质组",
+        "claim": "脂质簇编码受体亚型特异性访问权限"
+      },
+      {
+        "step": 3,
+        "head": "组织特异性脂质组",
+        "relation": "guides",
+        "tail": "药物靶向策略",
+        "claim": "组织脂质组特征指导精准药物设计"
+      }
+    ]
+  ],
+  "L3": [
+    [
+      {
+        "step": 1,
+        "head": "射线晶体学",
+        "relation": "reveals",
+        "tail": "晶体水分子",
+        "claim": "晶体学可解析水分子空间分布"
+      },
+      {
+        "step": 2,
+        "head": "分子动力学模拟",
+        "relation": "identifies",
+        "tail": "侧向配体进入通道",
+        "claim": "MD模拟揭示侧向通道动态特征"
+      },
+      {
+        "step": 3,
+        "head": "晶体水分子",
+        "relation": "transmits",
+        "tail": "变构通讯网络",
+        "claim": "水分子网络传递别构信号"
+      },
+      {
+        "step": 4,
+        "head": "变构通讯网络",
+        "relation": "connects",
+        "tail": "配体-G蛋白耦合位点",
+        "claim": "水合指纹系统整合配体-效应器通讯"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "构象柔性",
+        "relation": "disrupted_by",
+        "tail": "神经系统疾病突变",
+        "claim": "疾病突变破坏构象动态平衡"
+      },
+      {
+        "step": 2,
+        "head": "神经系统疾病突变",
+        "relation": "alters",
+        "tail": "脂质-受体相互作用语法",
+        "claim": "突变导致脂质互作模式异常"
+      },
+      {
+        "step": 3,
+        "head": "脂质插入",
+        "relation": "restored_by",
+        "tail": "杂合药物",
+        "claim": "脂锚-药效团双配体可恢复动态特征"
+      },
+      {
+        "step": 4,
+        "head": "杂合药物",
+        "relation": "treats",
+        "tail": "神经系统疾病模型",
+        "claim": "混合药物策略在疾病模型中可验证疗效"
+      }
+    ]
+  ]
+}

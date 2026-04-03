@@ -1,0 +1,62 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "metasurface-based lens design",
+        "relation": "enables",
+        "tail": "dynamic adjustment of phase/amplitude",
+        "claim": "超表面透镜设计使得对太赫兹波的相位/振幅动态调整成为可能"
+      },
+      {
+        "step": 2,
+        "head": "dynamic adjustment of phase/amplitude",
+        "relation": "causes",
+        "tail": "super-resolution imaging",
+        "claim": "相位/振幅动态调整突破衍射极限实现超分辨率成像"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "machine learning algorithm",
+        "relation": "provides",
+        "tail": "active feedback",
+        "claim": "机器学习算法提供主动反馈机制"
+      },
+      {
+        "step": 2,
+        "head": "active feedback",
+        "relation": "optimizes",
+        "tail": "metasurface lens performance",
+        "claim": "主动反馈优化超表面透镜性能"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "tunable metamaterial structure",
+        "relation": "enables",
+        "tail": "real-time wavefront manipulation",
+        "claim": "可调超材料结构实现实时波前操控"
+      },
+      {
+        "step": 2,
+        "head": "real-time wavefront manipulation",
+        "relation": "compensates",
+        "tail": "chromatic aberrations",
+        "claim": "实时波前操控补偿色差"
+      },
+      {
+        "step": 3,
+        "head": "compensation of chromatic aberrations",
+        "relation": "enhances",
+        "tail": "spatial resolution",
+        "claim": "色差补偿提升空间分辨率"
+      }
+    ]
+  ],
+  "L3": []
+}

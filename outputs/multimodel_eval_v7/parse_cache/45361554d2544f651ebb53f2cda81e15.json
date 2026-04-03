@@ -1,0 +1,130 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "machine learning",
+        "relation": "enables",
+        "tail": "real-time adaptive control",
+        "claim": "机器学习算法使微流体反应器的实时自适应控制成为可能"
+      },
+      {
+        "step": 2,
+        "head": "real-time adaptive control",
+        "relation": "transforms",
+        "tail": "reaction conditions",
+        "claim": "实时自适应控制动态调整反应条件"
+      },
+      {
+        "step": 3,
+        "head": "reaction conditions",
+        "relation": "causes",
+        "tail": "novel nanoparticle structures",
+        "claim": "动态调整的反应条件导致新型纳米粒子结构的合成"
+      },
+      {
+        "step": 4,
+        "head": "novel nanoparticle structures",
+        "relation": "exhibits",
+        "tail": "unique optical properties",
+        "claim": "新型纳米粒子结构展现出传统方法无法实现的光学特性"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "genetic algorithm",
+        "relation": "enhances",
+        "tail": "exploration of chemical space",
+        "claim": "遗传算法增强多维化学空间的探索能力"
+      },
+      {
+        "step": 2,
+        "head": "exploration of chemical space",
+        "relation": "optimizes",
+        "tail": "reaction conditions",
+        "claim": "化学空间探索优化反应条件搜索"
+      },
+      {
+        "step": 3,
+        "head": "reaction conditions",
+        "relation": "determines",
+        "tail": "nanoparticle morphology",
+        "claim": "优化的反应条件决定纳米粒子形貌"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "deep reinforcement learning",
+        "relation": "enables",
+        "tail": "autonomous adaptation",
+        "claim": "深度强化学习使自主实验室具备自适应能力"
+      },
+      {
+        "step": 2,
+        "head": "autonomous adaptation",
+        "relation": "improves",
+        "tail": "synthesis efficiency",
+        "claim": "自适应策略提升合成效率"
+      },
+      {
+        "step": 3,
+        "head": "synthesis efficiency",
+        "relation": "leads to",
+        "tail": "new synthesis pathways",
+        "claim": "效率提升可能发现新的合成路径"
+      }
+    ]
+  ],
+  "L3": [
+    [
+      {
+        "step": 1,
+        "head": "Bayesian optimization",
+        "relation": "combines with",
+        "tail": "in-flow spectroscopic data",
+        "claim": "贝叶斯优化与实时光谱数据结合"
+      },
+      {
+        "step": 2,
+        "head": "in-flow spectroscopic data",
+        "relation": "guides",
+        "tail": "dynamic adjustment",
+        "claim": "光谱数据指导反应条件动态调整"
+      },
+      {
+        "step": 3,
+        "head": "dynamic adjustment",
+        "relation": "ensures",
+        "tail": "precise optical properties",
+        "claim": "动态调整确保纳米粒子光学特性精确控制"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "deep neural networks",
+        "relation": "provides",
+        "tail": "initial prediction",
+        "claim": "深度神经网络提供初始预测"
+      },
+      {
+        "step": 2,
+        "head": "initial prediction",
+        "relation": "refined by",
+        "tail": "evolutionary algorithms",
+        "claim": "进化算法对初始预测进行精调"
+      },
+      {
+        "step": 3,
+        "head": "evolutionary algorithms",
+        "relation": "achieves",
+        "tail": "on-demand synthesis",
+        "claim": "混合方法实现按需合成高精度纳米粒子"
+      }
+    ]
+  ]
+}

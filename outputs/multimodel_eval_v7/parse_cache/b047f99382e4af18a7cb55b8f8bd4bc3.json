@@ -1,0 +1,102 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "机器学习 and 微流体反应器",
+        "relation": "enables",
+        "tail": "精准调控等离激元纳米粒子光学性质",
+        "claim": "跨学科集成技术使光学性质动态调控成为可能"
+      },
+      {
+        "step": 2,
+        "head": "精准调控",
+        "relation": "achieves",
+        "tail": "多维化学空间加速探索",
+        "claim": "动态反应条件优化提升化学空间探索效率"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "微流体反应器",
+        "relation": "accelerates",
+        "tail": "多维化学空间探索",
+        "claim": "微流控技术通过快速参数采样加速化学空间探索"
+      },
+      {
+        "step": 2,
+        "head": "遗传算法",
+        "relation": "maps",
+        "tail": "高维参数空间→纳米粒子尺寸/形貌",
+        "claim": "进化算法建立参数空间与材料特性间的映射关系"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "机器学习",
+        "relation": "optimizes",
+        "tail": "纳米粒子合成参数",
+        "claim": "算法将反应条件转化为深度学习超参数"
+      },
+      {
+        "step": 2,
+        "head": "深度神经网络",
+        "relation": "uses",
+        "tail": "光谱特征作为训练标签",
+        "claim": "光谱数据驱动模型预测最优试剂配比"
+      }
+    ]
+  ],
+  "L3": [
+    [
+      {
+        "step": 1,
+        "head": "贝叶斯优化",
+        "relation": "synergizes",
+        "tail": "微流体反应器",
+        "claim": "算法与硬件协同实现闭环调控"
+      },
+      {
+        "step": 2,
+        "head": "贝叶斯优化",
+        "relation": "models",
+        "tail": "光谱结果为高斯过程",
+        "claim": "统计模型指导反应条件迭代更新"
+      },
+      {
+        "step": 3,
+        "head": "微流体反应器",
+        "relation": "adjusts",
+        "tail": "试剂流量",
+        "claim": "硬件执行算法指令优化反应参数"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "在线光谱表征",
+        "relation": "feeds",
+        "tail": "深度神经网络",
+        "claim": "实时光学数据驱动模型训练"
+      },
+      {
+        "step": 2,
+        "head": "深度神经网络",
+        "relation": "regresses",
+        "tail": "光谱数据→结构特征",
+        "claim": "模型建立光学信号与纳米结构的定量关系"
+      },
+      {
+        "step": 3,
+        "head": "损失函数",
+        "relation": "backpropagates",
+        "tail": "微流控参数调整",
+        "claim": "误差反向传播优化合成过程"
+      }
+    ]
+  ]
+}

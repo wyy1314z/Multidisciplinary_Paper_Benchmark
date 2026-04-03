@@ -1,0 +1,63 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "dual perturbation strategy",
+        "relation": "enhances",
+        "tail": "thermal stability",
+        "claim": "双重扰动策略通过优化活性位点微环境刚性-柔性平衡提高热稳定性"
+      },
+      {
+        "step": 2,
+        "head": "dual perturbation strategy",
+        "relation": "enhances",
+        "tail": "catalytic activity",
+        "claim": "双重扰动策略通过优化活性位点微环境刚性-柔性平衡提高催化活性"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "isothermal compression",
+        "relation": "causes",
+        "tail": "conformational strain",
+        "claim": "等温压缩引发构象应变"
+      },
+      {
+        "step": 2,
+        "head": "conformational strain",
+        "relation": "stabilizes",
+        "tail": "enzyme core",
+        "claim": "构象应变通过热力学稳定酶核心"
+      }
+    ]
+  ],
+  "L3": [
+    [
+      {
+        "step": 1,
+        "head": "molecular dynamics simulations",
+        "relation": "identifies",
+        "tail": "high-flexibility loops",
+        "claim": "分子动力学模拟识别高柔性环区域"
+      },
+      {
+        "step": 2,
+        "head": "disulfide bonds",
+        "relation": "introduces",
+        "tail": "dynamic extrusion index perturbation",
+        "claim": "在高柔性环引入二硫键产生动态挤出指数扰动"
+      },
+      {
+        "step": 3,
+        "head": "dynamic extrusion index perturbation",
+        "relation": "restricts",
+        "tail": "non-essential motions",
+        "claim": "动态挤出指数扰动选择性限制非必要运动"
+      }
+    ]
+  ]
+}
