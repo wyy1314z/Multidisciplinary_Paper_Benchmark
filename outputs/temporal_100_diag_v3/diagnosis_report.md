@@ -1,0 +1,76 @@
+# Temporal Run Diagnosis
+
+## Key Findings
+- benchmark 候选在分类阶段从 80 降到 38，缩水 42 篇。
+- 2025 验证集在分类阶段从 20 降到 12，缩水 8 篇。
+- 日志中出现 34 次低于 cross-disc 阈值过滤。
+- 日志中出现 16 次单学科过滤。
+- 分类层级选择中出现 2 次 'no valid items'，说明模型输出与候选层级不匹配。
+- validity 结果中有 12 篇文章只在嵌套 metadata 中保留期刊/影响信号，顶层字段为空。
+
+## Stage Counts
+- `benchmark_raw`: 80
+- `benchmark_classified`: 38
+- `benchmark_extractions`: 38
+- `benchmark_dataset`: 35
+- `validity_raw`: 20
+- `validity_classified`: 12
+- `validity_extractions`: 12
+- `validity_result`: 12
+- `query_eval`: None
+- `query_results`: None
+
+## Log Diagnostics
+- `non_multidisciplinary_count`: 16
+- `below_threshold_count`: 34
+- `no_valid_items_count`: 2
+- `below_threshold_examples`:
+  - MitoHiFi: a python pipeline for mitochondrial genome assembl
+  - A draft human pangenome reference
+  - cGAS–STING drives ageing-related inflammation and neurodegen
+  - Operando studies reveal active Cu nanograins for CO2 electro
+  - Lecanemab: Appropriate Use Recommendations
+  - Extensive global wetland loss over the past three centuries
+  - Energy consumption of current and future production of lithi
+  - Silicon heterojunction solar cells with up to 26.81% efficie
+- `non_multidisciplinary_examples`:
+  - {'计算机科学技术'}): Artificial intelligence in higher education: the state of th
+  - {'计算机科学技术'}): Examining Science Education in ChatGPT: An Exploratory Study
+  - {'计算机科学技术'}): A survey of uncertainty in deep neural networks
+  - {'计算机科学技术'}): Generative AI
+  - {'地球科学'}): Heat-related mortality in Europe during the summer of 2022
+  - {'计算机科学技术'}): Visual attention network
+  - {'计算机科学技术'}): Parameter-efficient fine-tuning of large-scale pre-trained l
+  - {'计算机科学技术'}): Deep learning modelling techniques: current progress, applic
+- `no_valid_items_examples`:
+  - base_path=['社会学'], parsed_items=['妇女问题研究', '社会工作', '社会群体及分层问题研究', '应用社会学其他学科'], raw_output=[妇女问题研究; 社会工作; 社会群体及分层问题研究; 应用社会学其他学科]
+  - base_path=['环境科学技术'], parsed_items=['环境生物学', '环境毒理学', '环境化学', '环境地学'], raw_output=[环境生物学; 环境毒理学; 环境化学; 环境地学]
+
+## Extraction Diagnostics
+### benchmark_extractions
+- `total`: 38
+- `ok`: 35
+- `failed`: 3
+- `primary_in_secondary_list_count`: 0
+- `primary_in_secondary_list_examples`: []
+- `empty_query_count`: 0
+- `empty_hypothesis_count`: 0
+- `failed_examples`: [{'title': 'Evaluating the Feasibility of ChatGPT in Healthcare: An Analysis of Multiple Clinical and Research Scenarios', 'error': "unknown_error: 1 validation error for Extraction\n  Value error, 假设.一级 至少包含一条知识路径，用于回答 查询.一级 [type=value_error, input_value={'meta': MetaInfo(title='...究的闭环验证'])}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.11/v/value_error"}, {'title': 'An autonomous laboratory for the accelerated synthesis of inorganic materials', 'error': 'unknown_error: 3 validation errors for StructExtraction\n跨学科关系.4.quant.value.str\n  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]\n    For further information visit https://errors.pydantic.dev/2.11/v/string_type\n跨学科关系.4.quant.value.int\n  Input should be a vali'}, {'title': 'Geometric constraints on human brain function', 'error': 'unknown_error: 无法从模型输出中提取合法 JSON 对象'}]
+
+### validity_extractions
+- `total`: 12
+- `ok`: 12
+- `failed`: 0
+- `primary_in_secondary_list_count`: 0
+- `primary_in_secondary_list_examples`: []
+- `empty_query_count`: 0
+- `empty_hypothesis_count`: 0
+- `failed_examples`: []
+
+## Validity Diagnostics
+- `num_papers`: 12
+- `metadata_nested_present_count`: 12
+- `metadata_top_level_missing_count`: 12
+- `overall_metric_summary`: {'consistency': {'mean': 0.0, 'zero_count': 12, 'non_null_count': 12}, 'concept_f1': {'mean': 0.3969, 'zero_count': 0, 'non_null_count': 12}, 'relation_precision': {'mean': 0.0685, 'zero_count': 10, 'non_null_count': 12}, 'path_alignment_best': {'mean': 0.0, 'zero_count': 12, 'non_null_count': 12}, 'rao_stirling': {'mean': 0.0, 'zero_count': 12, 'non_null_count': 12}, 'innovation': {'mean': 3.5823, 'zero_count': 5, 'non_null_count': 12}, 'scientificity': {'mean': 3.8391, 'zero_count': 5, 'non_null_count': 12}, 'testability': {'mean': 3.683, 'zero_count': 5, 'non_null_count': 12}}
+
+## Query Evaluation Diagnostics

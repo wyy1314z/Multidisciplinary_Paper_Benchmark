@@ -1,0 +1,91 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "单原子钴位点",
+        "relation": "enables",
+        "tail": "纳米岛封装结构",
+        "claim": "单原子钴位点与纳米岛封装结构的协同作用可同时提升催化活性和稳定性"
+      },
+      {
+        "step": 2,
+        "head": "纳米岛封装结构",
+        "relation": "protects",
+        "tail": "单原子位点",
+        "claim": "纳米岛物理限域保护单原子位点"
+      },
+      {
+        "step": 3,
+        "head": "空间限制",
+        "relation": "reduces",
+        "tail": "金属浸出",
+        "claim": "空间限制减少金属浸出"
+      },
+      {
+        "step": 4,
+        "head": "单原子位点",
+        "relation": "maintains",
+        "tail": "高本征活性",
+        "claim": "单原子位点维持高本征活性"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "纳米岛封装层",
+        "relation": "regulates",
+        "tail": "单原子位点的局部电子结构",
+        "claim": "纳米岛封装层可调控单原子位点的局部电子结构"
+      },
+      {
+        "step": 2,
+        "head": "界面电荷转移",
+        "relation": "enhances",
+        "tail": "氧化还原能力",
+        "claim": "界面电荷转移增强氧化还原能力"
+      },
+      {
+        "step": 3,
+        "head": "优化",
+        "relation": "improves",
+        "tail": "H2O2活化能垒与·OH生成动力学",
+        "claim": "优化H2O2活化能垒与·OH生成动力学"
+      }
+    ]
+  ],
+  "L3": [
+    [
+      {
+        "step": 1,
+        "head": "分级孔隙结构",
+        "relation": "solves",
+        "tail": "传质限制与活性位暴露的矛盾",
+        "claim": "分级孔隙结构可解决传质限制与活性位暴露的矛盾"
+      },
+      {
+        "step": 2,
+        "head": "大孔道",
+        "relation": "promotes",
+        "tail": "底物扩散",
+        "claim": "大孔道促进底物扩散"
+      },
+      {
+        "step": 3,
+        "head": "微孔",
+        "relation": "stabilizes",
+        "tail": "单原子",
+        "claim": "微孔稳定单原子"
+      },
+      {
+        "step": 4,
+        "head": "高周转频率",
+        "relation": "achieves",
+        "tail": "长循环寿命的协同",
+        "claim": "实现高周转频率与长循环寿命的协同"
+      }
+    ]
+  ]
+}

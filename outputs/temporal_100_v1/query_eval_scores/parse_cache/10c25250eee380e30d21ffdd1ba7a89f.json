@@ -1,0 +1,146 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "生成模型融合多尺度材料特征与物理化学约束",
+        "relation": "enables",
+        "tail": "热力学稳定性优化",
+        "claim": "多尺度特征融合为热力学稳定性优化提供基础"
+      },
+      {
+        "step": 2,
+        "head": "生成模型融合多尺度材料特征与物理化学约束",
+        "relation": "enables",
+        "tail": "结构多样性优化",
+        "claim": "物理化学约束整合促进结构多样性探索"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "晶体数据库潜在空间拓扑分析",
+        "relation": "identifies",
+        "tail": "亚稳态材料能量弛豫路径",
+        "claim": "拓扑分析揭示亚稳态能量演化轨迹"
+      },
+      {
+        "step": 2,
+        "head": "能量弛豫路径识别",
+        "relation": "breaks",
+        "tail": "组合化学局部最优陷阱",
+        "claim": "能量路径解析突破传统组合优化局限"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "原子电负性与键长分布关联性",
+        "relation": "learns",
+        "tail": "图神经网络",
+        "claim": "GNN捕获原子级电子结构关联特征"
+      },
+      {
+        "step": 2,
+        "head": "电荷平衡",
+        "relation": "transforms",
+        "tail": "键能优化",
+        "claim": "电荷重分布驱动键能动态调节"
+      },
+      {
+        "step": 3,
+        "head": "键能优化",
+        "relation": "modulates",
+        "tail": "晶格畸变度",
+        "claim": "键能调控实现晶格应变动态控制"
+      },
+      {
+        "step": 4,
+        "head": "晶格畸变度调整",
+        "relation": "approximates",
+        "tail": "DFT自由能曲面",
+        "claim": "畸变调控逼近量子力学稳定性判据"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "晶体点群对称性与多面体复杂度",
+        "relation": "constructs",
+        "tail": "对抗生成网络鉴别器",
+        "claim": "对称性特征构建多样性敏感判别准则"
+      },
+      {
+        "step": 2,
+        "head": "鉴别器引导",
+        "relation": "generates",
+        "tail": "潜在空间非均匀采样",
+        "claim": "非对称采样增强结构探索遍历性"
+      },
+      {
+        "step": 3,
+        "head": "对称性破缺",
+        "relation": "induces",
+        "tail": "结构异质性",
+        "claim": "对称破缺驱动超晶格结构形成"
+      },
+      {
+        "step": 4,
+        "head": "结构异质性",
+        "relation": "simulates",
+        "tail": "高熵合金拓扑相变",
+        "claim": "异质结构实现多主元合金相工程"
+      }
+    ]
+  ],
+  "L3": [
+    [
+      {
+        "step": 1,
+        "head": "原子半径与氧化态兼容性",
+        "relation": "embeds",
+        "tail": "Transformer周期表知识",
+        "claim": "序列模型隐式编码元素周期律特征"
+      },
+      {
+        "step": 2,
+        "head": "电子层结构",
+        "relation": "predicts",
+        "tail": "晶体场稳定化能",
+        "claim": "注意力机制捕获轨道相互作用能级"
+      },
+      {
+        "step": 3,
+        "head": "晶体场能预测",
+        "relation": "models",
+        "tail": "4f-3d轨道耦合",
+        "claim": "电子相关效应解析稀土过渡金属协同"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "晶格畸变能与表面能各向异性",
+        "relation": "integrates",
+        "tail": "贝叶斯优化势函数",
+        "claim": "多物理量耦合构建能量约束超曲面"
+      },
+      {
+        "step": 2,
+        "head": "应力松弛",
+        "relation": "evaluates",
+        "tail": "缺陷容忍度",
+        "claim": "动态约束平衡机械稳定性与缺陷容限"
+      },
+      {
+        "step": 3,
+        "head": "缺陷容忍度评估",
+        "relation": "searches",
+        "tail": "Pareto前沿",
+        "claim": "多目标优化协调电子迁移与位错运动"
+      }
+    ]
+  ]
+}

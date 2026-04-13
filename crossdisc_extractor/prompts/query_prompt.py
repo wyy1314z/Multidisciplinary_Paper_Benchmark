@@ -503,6 +503,26 @@ def _coerce_obj(text: str):
         return coerce_json_object(text)
 
 
+def _sanitize_query_obj(obj: dict) -> dict:
+    buckets = obj.get("按辅助学科分类")
+    if not isinstance(buckets, dict):
+        buckets = {}
+    clean_buckets = {}
+    for disc, bucket in buckets.items():
+        key = str(disc).strip()
+        if not key:
+            continue
+        if not isinstance(bucket, dict):
+            bucket = {"概念": [], "关系": [], "rationale": ""}
+        clean_buckets[key] = {
+            "概念": bucket.get("概念", []),
+            "关系": bucket.get("关系", []),
+            "rationale": bucket.get("rationale", bucket.get("理由", bucket.get("说明", ""))),
+        }
+    obj["按辅助学科分类"] = clean_buckets
+    return obj
+
+
 def parse_query_output(text: str, struct: Optional[StructExtraction] = None) -> QueryAndBuckets:
     """
     重要变化：
@@ -515,10 +535,11 @@ def parse_query_output(text: str, struct: Optional[StructExtraction] = None) -> 
     if not {"按辅助学科分类", "查询"}.issubset(obj.keys()):
         raise ValueError("查询生成输出缺少字段 按辅助学科分类 / 查询")
 
+    obj = _sanitize_query_obj(obj)
+
     parsed = QueryAndBuckets.model_validate(obj)
 
     # 自动修复“查询必须中文”：不报错，不失败
     parsed.查询 = ensure_query_chinese(parsed.查询, struct=struct)
 
     return parsed
-

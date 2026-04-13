@@ -1,0 +1,119 @@
+{
+  "num_records": 21970,
+  "overall": {
+    "calls": 21970,
+    "success_calls": 13970,
+    "error_calls": 8000,
+    "prompt_tokens": 66450589,
+    "completion_tokens": 2193523,
+    "total_tokens": 68644112,
+    "latency_sec_sum": 97219.9059,
+    "usage_source_counts": {
+      "estimate": 8000,
+      "actual": 13970
+    },
+    "call_kind_counts": {
+      "classifier_ainvoke": 19298,
+      "chat_completion": 2672
+    },
+    "models": {
+      "deepseek-v3": 21970
+    }
+  },
+  "by_stage": {
+    "stage1": {
+      "calls": 19298,
+      "success_calls": 11298,
+      "error_calls": 8000,
+      "prompt_tokens": 55566950,
+      "completion_tokens": 237389,
+      "total_tokens": 55804339,
+      "latency_sec_sum": 41566.572,
+      "usage_source_counts": {
+        "estimate": 8000,
+        "actual": 11298
+      },
+      "call_kind_counts": {
+        "classifier_ainvoke": 19298
+      },
+      "models": {
+        "deepseek-v3": 19298
+      }
+    },
+    "stage2": {
+      "calls": 2672,
+      "success_calls": 2672,
+      "error_calls": 0,
+      "prompt_tokens": 10883639,
+      "completion_tokens": 1956134,
+      "total_tokens": 12839773,
+      "latency_sec_sum": 55653.3339,
+      "usage_source_counts": {
+        "actual": 2672
+      },
+      "call_kind_counts": {
+        "chat_completion": 2672
+      },
+      "models": {
+        "deepseek-v3": 2672
+      }
+    }
+  },
+  "by_command": {
+    "stage1::classify_nature_nc_2024_candidates": {
+      "calls": 19298,
+      "success_calls": 11298,
+      "error_calls": 8000,
+      "prompt_tokens": 55566950,
+      "completion_tokens": 237389,
+      "total_tokens": 55804339,
+      "latency_sec_sum": 41566.572,
+      "usage_source_counts": {
+        "estimate": 8000,
+        "actual": 11298
+      },
+      "call_kind_counts": {
+        "classifier_ainvoke": 19298
+      },
+      "models": {
+        "deepseek-v3": 19298
+      }
+    },
+    "stage2::extract_nature_nc_2024_crossdisc": {
+      "calls": 2672,
+      "success_calls": 2672,
+      "error_calls": 0,
+      "prompt_tokens": 10883639,
+      "completion_tokens": 1956134,
+      "total_tokens": 12839773,
+      "latency_sec_sum": 55653.3339,
+      "usage_source_counts": {
+        "actual": 2672
+      },
+      "call_kind_counts": {
+        "chat_completion": 2672
+      },
+      "models": {
+        "deepseek-v3": 2672
+      }
+    }
+  },
+  "largest_token_commands": [
+    {
+      "command_key": "stage1::classify_nature_nc_2024_candidates",
+      "total_tokens": 55804339,
+      "prompt_tokens": 55566950,
+      "completion_tokens": 237389,
+      "calls": 19298,
+      "latency_sec_sum": 41566.572
+    },
+    {
+      "command_key": "stage2::extract_nature_nc_2024_crossdisc",
+      "total_tokens": 12839773,
+      "prompt_tokens": 10883639,
+      "completion_tokens": 1956134,
+      "calls": 2672,
+      "latency_sec_sum": 55653.3339
+    }
+  ]
+}

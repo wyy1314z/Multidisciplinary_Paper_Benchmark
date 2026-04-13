@@ -12,6 +12,8 @@ from tenacity import retry, stop_after_attempt, wait_exponential, retry_if_excep
 
 from openai import OpenAI, APIStatusError, APITimeoutError
 
+from crossdisc_extractor.utils.usage_telemetry import env_stream_enabled, log_usage_event, normalize_usage
+
 logger = logging.getLogger("crossdisc.llm")
 
 # MODEL_NAME = os.environ.get("OPENAI_MODEL", "deepseek-v3")
@@ -171,40 +173,81 @@ def chat_completion_with_retry(
     if max_tokens is not None:
         kwargs["max_tokens"] = int(max_tokens)
 
-    # 强制开启 stream=True 以避免 HTTP 524 (Gateway Timeout)
-    # 因为很多代理层（如 Cloudflare / Nginx）会在 100s-600s 无数据传输时切断连接。
-    # 使用流式传输可以保持连接活跃。
-    kwargs["stream"] = True
+    stream_enabled = env_stream_enabled(default=True)
+    # 默认保持 stream=True 以避免长请求在代理层超时；
+    # 对于小规模 smoke test，可通过 CROSSDISC_LLM_STREAM=0 关闭流式，
+    # 以提高获取 usage 元数据的概率。
+    kwargs["stream"] = stream_enabled
+    if stream_enabled:
+        kwargs["stream_options"] = {"include_usage": True}
 
+    call_start = time.time()
     try:
         resp = client.chat.completions.create(**kwargs)
+        usage = None
+        if stream_enabled:
+            collected_content = []
+            finish_reason = None
+            for chunk in resp:
+                usage = usage or normalize_usage(getattr(chunk, "usage", None))
+                if not chunk.choices:
+                    continue
+                choice = chunk.choices[0]
+                if choice.delta.content:
+                    collected_content.append(choice.delta.content)
+                if choice.finish_reason:
+                    finish_reason = choice.finish_reason
 
-        # 处理流式响应
-        collected_content = []
-        finish_reason = None
-        for chunk in resp:
-            if not chunk.choices:
-                continue
-            choice = chunk.choices[0]
-            if choice.delta.content:
-                collected_content.append(choice.delta.content)
-            if choice.finish_reason:
-                finish_reason = choice.finish_reason
+            if finish_reason == "length":
+                logger.warning(
+                    "模型输出因 max_tokens 限制被截断 (finish_reason='length')，"
+                    "当前 max_tokens=%s，建议增大该值",
+                    kwargs.get("max_tokens", "未设置"),
+                )
+            output = "".join(collected_content)
+        else:
+            usage = normalize_usage(getattr(resp, "usage", None))
+            output = _get_content_from_resp(resp)
 
-        if finish_reason == "length":
-            logger.warning(
-                "模型输出因 max_tokens 限制被截断 (finish_reason='length')，"
-                "当前 max_tokens=%s，建议增大该值",
-                kwargs.get("max_tokens", "未设置"),
-            )
-
-        return "".join(collected_content)
+        log_usage_event(
+            call_kind="chat_completion",
+            model=MODEL_NAME,
+            messages=messages,
+            output_text=output,
+            usage=usage,
+            success=True,
+            latency_sec=time.time() - call_start,
+            extra={
+                "temperature": temperature,
+                "max_tokens_requested": int(max_tokens) if max_tokens is not None else None,
+                "stream": stream_enabled,
+            },
+        )
+        return output
 
     except Exception as e:
         # 优化：如果是 524 超时或 APITimeoutError，回退参数通常无效，直接抛出以便重试
         if isinstance(e, APITimeoutError):
+            log_usage_event(
+                call_kind="chat_completion",
+                model=MODEL_NAME,
+                messages=messages,
+                success=False,
+                error=str(e),
+                latency_sec=time.time() - call_start,
+                extra={"temperature": temperature, "max_tokens_requested": int(max_tokens) if max_tokens is not None else None, "stream": stream_enabled},
+            )
             raise ModelTransportError(f"LLM 调用超时 (Client Timeout): {e}")
         if isinstance(e, APIStatusError) and e.status_code == 524:
+            log_usage_event(
+                call_kind="chat_completion",
+                model=MODEL_NAME,
+                messages=messages,
+                success=False,
+                error=str(e),
+                latency_sec=time.time() - call_start,
+                extra={"temperature": temperature, "max_tokens_requested": int(max_tokens) if max_tokens is not None else None, "stream": stream_enabled},
+            )
             raise ModelTransportError(f"LLM 调用超时 (Server 524): {e}")
         # 429 Rate Limit: 读取 Retry-After 并等待后重试
         if isinstance(e, APIStatusError) and e.status_code == 429:
@@ -213,9 +256,27 @@ def chat_completion_with_retry(
                 retry_after = int(e.response.headers.get("Retry-After", 30))
             logger.warning("Rate limited (429), 等待 %ds 后重试…", retry_after)
             time.sleep(retry_after)
+            log_usage_event(
+                call_kind="chat_completion",
+                model=MODEL_NAME,
+                messages=messages,
+                success=False,
+                error=f"429 retry_after={retry_after}s: {e}",
+                latency_sec=time.time() - call_start,
+                extra={"temperature": temperature, "max_tokens_requested": int(max_tokens) if max_tokens is not None else None, "stream": stream_enabled},
+            )
             raise ModelTransportError(f"Rate limited, retry after {retry_after}s")
         # 522/554 等其他网关超时，也直接重试
         if isinstance(e, APIStatusError) and e.status_code in (502, 503, 522, 554):
+            log_usage_event(
+                call_kind="chat_completion",
+                model=MODEL_NAME,
+                messages=messages,
+                success=False,
+                error=str(e),
+                latency_sec=time.time() - call_start,
+                extra={"temperature": temperature, "max_tokens_requested": int(max_tokens) if max_tokens is not None else None, "stream": stream_enabled},
+            )
             raise ModelTransportError(f"LLM 网关错误 (HTTP {e.status_code}): {e}")
 
         # 一些 OpenAI-compatible 服务端可能不支持 max_tokens/seed 等参数。
@@ -228,6 +289,9 @@ def chat_completion_with_retry(
         if "seed" in fallback_kwargs:
             fallback_kwargs.pop("seed", None)
             removed.append("seed")
+        if "stream_options" in fallback_kwargs:
+            fallback_kwargs.pop("stream_options", None)
+            removed.append("stream_options")
         
         # 回退时也保持 stream=True，除非流式本身也是问题（极少见）
         # 但为了保险，如果流式失败，可以尝试关闭流式？不，524 主要是因为非流式太慢。
@@ -236,17 +300,62 @@ def chat_completion_with_retry(
         if removed:
             try:
                 resp = client.chat.completions.create(**fallback_kwargs)
-                collected_content = []
-                for chunk in resp:
-                    if not chunk.choices:
-                        continue
-                    delta = chunk.choices[0].delta
-                    if delta.content:
-                        collected_content.append(delta.content)
-                return "".join(collected_content)
+                usage = None
+                if fallback_kwargs.get("stream"):
+                    collected_content = []
+                    for chunk in resp:
+                        usage = usage or normalize_usage(getattr(chunk, "usage", None))
+                        if not chunk.choices:
+                            continue
+                        delta = chunk.choices[0].delta
+                        if delta.content:
+                            collected_content.append(delta.content)
+                    output = "".join(collected_content)
+                else:
+                    usage = normalize_usage(getattr(resp, "usage", None))
+                    output = _get_content_from_resp(resp)
+                log_usage_event(
+                    call_kind="chat_completion",
+                    model=MODEL_NAME,
+                    messages=messages,
+                    output_text=output,
+                    usage=usage,
+                    success=True,
+                    latency_sec=time.time() - call_start,
+                    extra={
+                        "temperature": temperature,
+                        "max_tokens_requested": int(max_tokens) if max_tokens is not None else None,
+                        "stream": bool(fallback_kwargs.get("stream")),
+                        "fallback_removed": removed,
+                    },
+                )
+                return output
             except Exception as e2:
+                log_usage_event(
+                    call_kind="chat_completion",
+                    model=MODEL_NAME,
+                    messages=messages,
+                    success=False,
+                    error=f"fallback_removed={removed}: {e2}",
+                    latency_sec=time.time() - call_start,
+                    extra={
+                        "temperature": temperature,
+                        "max_tokens_requested": int(max_tokens) if max_tokens is not None else None,
+                        "stream": bool(fallback_kwargs.get("stream")),
+                        "fallback_removed": removed,
+                    },
+                )
                 raise ModelTransportError(f"LLM 调用失败(回退移除 {removed} 后仍失败): {e2}")
         else:
+            log_usage_event(
+                call_kind="chat_completion",
+                model=MODEL_NAME,
+                messages=messages,
+                success=False,
+                error=str(e),
+                latency_sec=time.time() - call_start,
+                extra={"temperature": temperature, "max_tokens_requested": int(max_tokens) if max_tokens is not None else None, "stream": stream_enabled},
+            )
             raise ModelTransportError(f"LLM 调用失败: {e}")
 
     # 下面的代码在 stream=True 模式下不再需要，因为我们手动聚合了 content

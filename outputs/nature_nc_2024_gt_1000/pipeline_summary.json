@@ -1,0 +1,25 @@
+{
+  "input_csv": "/ssd/wangyuyang/git/data/raw_data/nature_springer_2024.csv",
+  "raw_limit": 1000,
+  "journals": [
+    "Nature",
+    "Nature Communications"
+  ],
+  "crossdisc_threshold": 0.5,
+  "num_workers": 8,
+  "language_mode": "chinese",
+  "paths": {
+    "benchmark_raw": "outputs/nature_nc_2024_gt_1000/benchmark_raw_2024_nature_nc_1000.jsonl",
+    "benchmark_classified": "outputs/nature_nc_2024_gt_1000/benchmark_classified_2024_nature_nc_1000.jsonl",
+    "benchmark_extractions": "outputs/nature_nc_2024_gt_1000/benchmark_extractions_2024_nature_nc_1000.jsonl",
+    "benchmark_dataset": "outputs/nature_nc_2024_gt_1000/benchmark_dataset_2024_nature_nc_1000.json",
+    "timing_summary": "outputs/nature_nc_2024_gt_1000/timing_summary.json",
+    "usage_summary": "outputs/nature_nc_2024_gt_1000/usage_summary.json"
+  },
+  "counts": {
+    "raw_candidates": 1000,
+    "crossdisciplinary_candidates": 383,
+    "successful_extractions": 381,
+    "gt_entries": 381
+  }
+}

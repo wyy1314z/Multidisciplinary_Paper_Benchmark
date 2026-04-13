@@ -1,0 +1,162 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "贸易关联物质流分析",
+        "relation": "tracks",
+        "tail": "塑料原料/半成品/成品流动路径",
+        "claim": "追踪塑料原料、半成品和成品在国家间的流动路径"
+      },
+      {
+        "step": 2,
+        "head": "流动路径分析",
+        "relation": "reveals",
+        "tail": "多层级网络结构",
+        "claim": "揭示全球塑料供应链中的多层级网络结构"
+      },
+      {
+        "step": 3,
+        "head": "多层级网络结构",
+        "relation": "reflects",
+        "tail": "国家功能角色与依赖关系",
+        "claim": "网络拓扑特征反映不同国家在系统中的功能角色与依赖关系"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "发展中国家",
+        "relation": "performs",
+        "tail": "塑料加工与低端制造",
+        "claim": "发展中国家主要承担塑料加工与低端制造功能"
+      },
+      {
+        "step": 2,
+        "head": "低端制造功能",
+        "relation": "results in",
+        "tail": "半成品出口比例高",
+        "claim": "导致其出口中半成品比例较高"
+      },
+      {
+        "step": 3,
+        "head": "高收入国家",
+        "relation": "dominates",
+        "tail": "最终消费与废塑料再进口",
+        "claim": "高收入国家主导塑料制品的最终消费与废塑料的再进口"
+      },
+      {
+        "step": 4,
+        "head": "分工模式",
+        "relation": "creates",
+        "tail": "不对称物质流动格局",
+        "claim": "形成不对称的物质流动格局"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "塑料种类分布差异",
+        "relation": "affects",
+        "tail": "区域集中度与弹性",
+        "claim": "影响供应链的区域集中度与弹性"
+      },
+      {
+        "step": 2,
+        "head": "高集中度出口",
+        "relation": "increases",
+        "tail": "地缘敏感性",
+        "claim": "特定种类塑料的高集中度出口增加全球供应链对地缘政治或环境冲击的敏感性"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "贸易政策与运输成本",
+        "relation": "alters",
+        "tail": "塑料流动路径",
+        "claim": "动态变化影响跨国塑料流动路径"
+      },
+      {
+        "step": 2,
+        "head": "流动路径变化",
+        "relation": "triggers",
+        "tail": "网络结构重构",
+        "claim": "导致供应链网络结构发生重构"
+      },
+      {
+        "step": 3,
+        "head": "网络重构",
+        "relation": "manifests as",
+        "tail": "区域化趋势或新兴枢纽",
+        "claim": "表现为区域化趋势增强或新兴贸易枢纽的出现"
+      }
+    ]
+  ],
+  "L3": [
+    [
+      {
+        "step": 1,
+        "head": "跨国公司策略",
+        "relation": "transmits",
+        "tail": "供应链传导机制",
+        "claim": "跨国公司的采购与生产布局策略通过供应链传导机制"
+      },
+      {
+        "step": 2,
+        "head": "传导机制",
+        "relation": "shapes",
+        "tail": "国家间流动模式",
+        "claim": "影响国家间的塑料流动模式"
+      },
+      {
+        "step": 3,
+        "head": "绿色采购政策",
+        "relation": "generates",
+        "tail": "异质性环境影响",
+        "claim": "其绿色采购政策的实施程度在不同区域产生异质性的环境影响"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "信息不对称与治理碎片化",
+        "relation": "exacerbates",
+        "tail": "非法贸易与走私",
+        "claim": "加剧非法贸易与废弃物走私行为"
+      },
+      {
+        "step": 2,
+        "head": "非法贸易",
+        "relation": "creates",
+        "tail": "隐性流动",
+        "claim": "导致物质流分析中出现隐性流动"
+      },
+      {
+        "step": 3,
+        "head": "隐性流动",
+        "relation": "underestimates",
+        "tail": "环境压力与风险",
+        "claim": "从而低估某些地区的环境压力与健康风险"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "动态建模",
+        "relation": "predicts",
+        "tail": "政策干预影响",
+        "claim": "可预测政策干预对全球塑料流动路径与节点脆弱性的影响"
+      },
+      {
+        "step": 2,
+        "head": "政策预测",
+        "relation": "provides",
+        "tail": "决策支持",
+        "claim": "为构建更具韧性和可持续性的供应链提供决策支持"
+      }
+    ]
+  ]
+}

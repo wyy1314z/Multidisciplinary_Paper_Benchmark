@@ -32,6 +32,7 @@
   - [数据合并](#6-数据合并)
 - [功能十二：开发相关命令](#功能十二开发相关命令)
 - [完整端到端流程](#完整端到端流程)
+- [三阶段时序实验方案](#三阶段时序实验方案)
 - [附录：输入数据格式说明](#附录输入数据格式说明)
 - [附录：常见问题](#附录常见问题)
 
@@ -510,25 +511,13 @@ python run.py export \
 
 **这是什么**：将抽取结果清洗并转换为标准化的 Benchmark 格式，自动构建 Ground Truth 知识图谱。
 
-**前提**：已完成批量抽取，有 `results.jsonl`（或 `.json`）输出文件。
-
-> 注意：`build_dataset.py` 使用 `json.load()` 读取输入，因此需要标准 JSON 数组格式。
-> 如果你的结果是 JSONL 格式，先转换为 JSON 数组：
-> ```bash
-> python -c "
-> import json
-> with open('outputs/results.jsonl') as f:
->     data = [json.loads(line) for line in f if line.strip()]
-> with open('outputs/results.json', 'w') as f:
->     json.dump(data, f, ensure_ascii=False, indent=2)
-> "
-> ```
+**前提**：已完成批量抽取，有 `results.jsonl` 或 `results.json` 输出文件。
 
 **构建 Benchmark：**
 
 ```bash
 python -m crossdisc_extractor.benchmark.build_dataset \
-  --input outputs/results.json \
+  --input outputs/results.jsonl \
   --output outputs/benchmark.json
 ```
 
@@ -750,30 +739,21 @@ crossdisc-pipeline full \
   --language-mode chinese \
   --resume
 
-# Step 3：JSONL 转 JSON（Benchmark 构建所需格式）
-python -c "
-import json
-with open('outputs/results.jsonl') as f:
-    data = [json.loads(line) for line in f if line.strip()]
-with open('outputs/results.json', 'w') as f:
-    json.dump(data, f, ensure_ascii=False, indent=2)
-"
-
-# Step 4：构建 Benchmark 知识图谱
+# Step 3：构建 Benchmark 知识图谱
 python -m crossdisc_extractor.benchmark.build_dataset \
-  --input outputs/results.json \
+  --input outputs/results.jsonl \
   --output outputs/benchmark.json
 
-# Step 5：自动评测
+# Step 4：自动评测
 python -m crossdisc_extractor.benchmark.evaluate_benchmark \
   --benchmark outputs/benchmark.json \
   --predictions outputs/results.jsonl \
   --output outputs/eval_results.json
 
-# Step 6：验证数据质量
+# Step 5：验证数据质量
 python scripts/verify_term_flow.py outputs/results.json
 
-# Step 7：可视化
+# Step 6：可视化
 python visualize_results.py
 ```
 
@@ -819,6 +799,172 @@ python run.py export \
   --input outputs/results.jsonl \
   --output outputs/summary.csv
 ```
+
+---
+
+## 三阶段时序实验方案
+
+以下命令清单对应新的三阶段方案：
+
+1. `2023/2024` 论文构造 benchmark 体系
+2. `2025` 真实文章 hypothesis 验证 benchmark 有效性
+3. `2025` query 驱动多模型生成，并用 benchmark 统一评测
+
+建议先进入项目根目录并激活虚拟环境：
+
+```bash
+cd /ssd/wangyuyang/git/benchmark
+source .venv/bin/activate
+```
+
+### 阶段一：用 2023/2024 论文构造 benchmark
+
+#### Step 1：统一预处理原始 CSV
+
+```bash
+prepare-temporal-papers \
+  --inputs \
+    /ssd/wangyuyang/git/data/raw_data/nature_springer_2023.csv \
+    /ssd/wangyuyang/git/data/raw_data/nature_springer_2024.csv \
+  --output outputs/temporal/benchmark_raw_2023_2024.jsonl \
+  --year-lte 2024
+```
+
+#### Step 2：跨学科分类筛选
+
+```bash
+crossdisc-pipeline classify \
+  --input outputs/temporal/benchmark_raw_2023_2024.jsonl \
+  --output outputs/temporal/benchmark_classified_2023_2024.jsonl \
+  --config configs/default.yaml \
+  --crossdisc-threshold 0.5
+```
+
+#### Step 3：运行三阶段知识抽取
+
+```bash
+python run.py batch \
+  --input outputs/temporal/benchmark_classified_2023_2024.jsonl \
+  --output outputs/temporal/benchmark_extractions_2023_2024.jsonl \
+  --num-workers 8 \
+  --max-tokens-hyp 8192 \
+  --language-mode chinese \
+  --resume
+```
+
+#### Step 4：构建 benchmark 数据集
+
+```bash
+python -m crossdisc_extractor.benchmark.build_dataset \
+  --input outputs/temporal/benchmark_extractions_2023_2024.jsonl \
+  --output outputs/temporal/benchmark_dataset_2023_2024.json \
+  --gt-mode evidence \
+  --taxonomy data/msc_converted.json
+```
+
+### 阶段二：用 2025 真实 hypothesis 验证 benchmark 有效性
+
+#### Step 1：预处理 2025 原始数据
+
+```bash
+prepare-temporal-papers \
+  --inputs /ssd/wangyuyang/git/data/raw_data/nature_springer_2025.csv \
+  --output outputs/temporal/validity_raw_2025.jsonl \
+  --year-eq 2025
+```
+
+#### Step 2：跨学科分类筛选
+
+```bash
+crossdisc-pipeline classify \
+  --input outputs/temporal/validity_raw_2025.jsonl \
+  --output outputs/temporal/validity_classified_2025.jsonl \
+  --config configs/default.yaml \
+  --crossdisc-threshold 0.5
+```
+
+#### Step 3：抽取 2025 论文的真实 hypothesis
+
+```bash
+python run.py batch \
+  --input outputs/temporal/validity_classified_2025.jsonl \
+  --output outputs/temporal/validity_extractions_2025.jsonl \
+  --num-workers 8 \
+  --max-tokens-hyp 8192 \
+  --language-mode chinese \
+  --resume
+```
+
+#### Step 4：对真实 hypothesis 做 benchmark 有效性评估
+
+```bash
+benchmark-validity-eval \
+  --benchmark outputs/temporal/benchmark_dataset_2023_2024.json \
+  --extractions outputs/temporal/validity_extractions_2025.jsonl \
+  --output outputs/temporal/benchmark_validity_2025.json \
+  --taxonomy data/msc_converted.json
+```
+
+#### Step 5：分析评估分数与期刊/FWCI/引用数的关系
+
+```bash
+analyze-benchmark-validity \
+  --input outputs/temporal/benchmark_validity_2025.json \
+  --output outputs/temporal/benchmark_validity_analysis_2025.json \
+  --min-journal-count 20
+```
+
+### 阶段三：用 2025 query 评测各模型假设生成能力
+
+#### Step 1：导出 query-centric 测试集
+
+```bash
+build-query-eval-set \
+  --input outputs/temporal/validity_extractions_2025.jsonl \
+  --output outputs/temporal/query_eval_2025.json
+```
+
+#### Step 2：让多个模型基于 query 生成 hypothesis
+
+```bash
+query-benchmark \
+  --input outputs/temporal/query_eval_2025.json \
+  --output-dir outputs/temporal/query_model_results \
+  --models gpt-4o-mini,qwen3-235b-a22b,deepseek-v3 \
+  --prompt-level L1
+```
+
+#### Step 3：用 benchmark 统一做 16 指标评测
+
+```bash
+python run_multimodel_eval_16metrics.py \
+  --model-results-dir outputs/temporal/query_model_results \
+  --benchmark outputs/temporal/benchmark_dataset_2023_2024.json \
+  --test-data outputs/temporal/query_eval_2025.json \
+  --input-mode query_eval \
+  --output-dir outputs/temporal/query_eval_scores \
+  --taxonomy data/msc_converted.json
+```
+
+### 一条龙执行建议
+
+如果你只想先验证流程是否跑通，可以对每个阶段都加小样本限制：
+
+```bash
+prepare-temporal-papers \
+  --inputs /ssd/wangyuyang/git/data/raw_data/nature_springer_2023.csv \
+  --output /tmp/benchmark_small.jsonl \
+  --year-eq 2023 \
+  --limit 50
+```
+
+对后续脚本也建议先用 `--max-items 10` 或较小的 `--num-workers` 做 dry run。
+
+### 注意事项
+
+- 第二阶段和第三阶段都应使用 `nature_springer_2025.csv`，而不是只有单一期刊 `Nature` 的 `nature_2025.csv`。
+- 时序实验中不建议开启 `evaluate_benchmark.py` 的 `--web-search`，否则可能引入未来信息泄漏。
+- 若未配置 `OPENAI_API_KEY`，生成与 LLM 打分只会返回 Mock 结果，适合流程测试，不适合正式实验。
 
 ---
 

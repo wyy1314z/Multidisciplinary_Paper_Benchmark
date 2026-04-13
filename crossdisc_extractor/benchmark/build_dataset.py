@@ -23,9 +23,28 @@ from crossdisc_extractor.schemas import Extraction
 logger = logging.getLogger("build_dataset")
 
 
+def _build_metadata(item: Dict[str, Any], meta: Optional[Dict[str, Any]] = None) -> Dict[str, Any]:
+    meta = meta or {}
+    return {
+        "journal": meta.get("journal", item.get("journal", "")),
+        "journal_id": meta.get("journal_id", item.get("journal_id", "")),
+        "issn_l": meta.get("issn_l", item.get("issn_l", "")),
+        "source_type": meta.get("source_type", item.get("source_type", "")),
+        "doi": meta.get("doi", item.get("doi", "")),
+        "publication_date": meta.get("publication_date", item.get("publication_date", "")),
+        "publication_year": meta.get("publication_year", item.get("publication_year")),
+        "fwci": meta.get("fwci", item.get("fwci")),
+        "cited_by_count": meta.get("cited_by_count", item.get("cited_by_count")),
+        "field": meta.get("field", item.get("field", "")),
+    }
+
+
 def load_extractions(input_path: str) -> List[Dict[str, Any]]:
     with open(input_path, "r", encoding="utf-8") as f:
-        data = json.load(f)
+        if input_path.lower().endswith(".jsonl"):
+            data = [json.loads(line) for line in f if line.strip()]
+        else:
+            data = json.load(f)
 
     valid_data = []
     for item in data:
@@ -50,6 +69,7 @@ def convert_to_benchmark_format(item: Dict[str, Any]) -> Optional[Dict[str, Any]
                 "secondary_disciplines": extraction.meta.secondary_list,
                 "abstract": item.get("abstract", ""),
             },
+            "metadata": _build_metadata(item, extraction.meta.model_dump()),
             "ground_truth": {
                 "graph": extraction.graph.model_dump() if extraction.graph else None,
                 "hypothesis_paths": {
@@ -130,6 +150,7 @@ def convert_to_evidence_grounded_format(
                 "secondary_disciplines": secondary_list,
                 "abstract": abstract,
             },
+            "metadata": _build_metadata(item, meta),
             "ground_truth": {
                 "terms": gt["terms"],
                 "relations": gt["relations"],

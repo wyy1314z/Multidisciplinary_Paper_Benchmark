@@ -1,0 +1,152 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "结构化电子病历与医学知识图谱的多任务预训练",
+        "relation": "enhances",
+        "tail": "模型对临床术语的语义理解能力",
+        "claim": "多任务预训练增强了模型对临床术语的语义理解能力"
+      },
+      {
+        "step": 2,
+        "head": "联合优化实体识别与关系推理任务",
+        "relation": "enhances",
+        "tail": "诊断逻辑连贯性",
+        "claim": "联合优化任务增强了诊断逻辑连贯性"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "反事实数据增强方法",
+        "relation": "enables",
+        "tail": "模拟症状-疾病关联的潜在因果路径",
+        "claim": "因果推理框架启用了因果路径模拟"
+      },
+      {
+        "step": 2,
+        "head": "模拟症状-疾病关联的潜在因果路径",
+        "relation": "alleviates",
+        "tail": "真实世界数据偏差",
+        "claim": "因果路径模拟缓解了数据偏差"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "多模态医学数据对齐学习",
+        "relation": "constructs",
+        "tail": "跨模态关联表征",
+        "claim": "对齐学习构建了跨模态表征"
+      },
+      {
+        "step": 2,
+        "head": "跨模态关联表征",
+        "relation": "reduces",
+        "tail": "单一数据模态的诊断不确定性",
+        "claim": "跨模态表征降低了诊断不确定性"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "动态推理链生成机制",
+        "relation": "improves",
+        "tail": "诊断过程的逻辑可追溯性",
+        "claim": "推理链机制提升了逻辑可追溯性"
+      },
+      {
+        "step": 2,
+        "head": "分步验证中间结论",
+        "relation": "reduces",
+        "tail": "连贯性谬误",
+        "claim": "分步验证减少了逻辑谬误"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "可微分医学逻辑规则约束",
+        "relation": "transforms",
+        "tail": "临床指南排除标准",
+        "claim": "规则约束转化了临床指南标准"
+      },
+      {
+        "step": 2,
+        "head": "数学约束条件",
+        "relation": "lowers",
+        "tail": "模型输出与医学规范的偏离度",
+        "claim": "数学约束降低了模型偏离度"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "医生-模型协同决策框架",
+        "relation": "simulates",
+        "tail": "专家修正错误推理路径",
+        "claim": "协同框架模拟了专家修正过程"
+      },
+      {
+        "step": 2,
+        "head": "动态反馈机制",
+        "relation": "optimizes",
+        "tail": "诊断策略",
+        "claim": "反馈机制优化了诊断策略"
+      }
+    ]
+  ],
+  "L3": [
+    [
+      {
+        "step": 1,
+        "head": "联邦学习框架",
+        "relation": "shares",
+        "tail": "参数与隐私保护技术",
+        "claim": "联邦框架实现了参数共享"
+      },
+      {
+        "step": 2,
+        "head": "参数共享与隐私保护技术",
+        "relation": "improves",
+        "tail": "地域特异性疾病识别能力",
+        "claim": "共享技术提升了地域疾病识别"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "上下文敏感建模",
+        "relation": "integrates",
+        "tail": "患者人口学特征与就诊场景信息",
+        "claim": "敏感建模整合了患者上下文信息"
+      },
+      {
+        "step": 2,
+        "head": "动态调整症状权重矩阵",
+        "relation": "achieves",
+        "tail": "个性化诊断优先级排序",
+        "claim": "权重调整实现了个性化排序"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "医学知识更新机制",
+        "relation": "assesses",
+        "tail": "文献证据等级与指南版本",
+        "claim": "更新机制评估了文献证据等级"
+      },
+      {
+        "step": 2,
+        "head": "增量式模型微调",
+        "relation": "synchronizes",
+        "tail": "诊断能力与临床研究进展",
+        "claim": "微调保持了诊断能力同步演进"
+      }
+    ]
+  ]
+}

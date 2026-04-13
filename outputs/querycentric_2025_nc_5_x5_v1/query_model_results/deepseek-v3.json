@@ -1,0 +1,112 @@
+[
+  {
+    "paper_id": "f4465d25f7c9",
+    "method_name": "deepseek-v3-L1",
+    "prompt_level": "L1",
+    "query": "如何通过单原子催化剂设计突破类芬顿催化中活性与稳定性的权衡？",
+    "free_text_hypotheses": [
+      "[L1] 单原子钴位点与纳米岛封装结构的协同作用可同时提升催化活性和稳定性\n- 关键实体：Co单原子、碳基纳米岛封装结构\n- 作用关系：纳米岛物理限域保护单原子位点\n- 预期机制：空间限制减少金属浸出，同时维持单原子高本征活性\n\n[L2] 纳米岛封装层可调控单原子位点的局部电子结构\n- 关键实体：石墨化碳壳层、Co-N4配位结构\n- 作用关系：界面电荷转移增强氧化还原能力\n- 预期机制：优化H2O2活化能垒与·OH生成动力学\n\n[L3] 分级孔隙结构可解决传质限制与活性位暴露的矛盾\n- 关键实体：介孔-微孔复合载体\n- 作用关系：大孔道促进底物扩散，微孔稳定单原子\n- 预期机制：实现高周转频率与长循环寿命的协同"
+    ],
+    "error": "",
+    "metadata": {
+      "journal": "Nature Communications",
+      "journal_id": "https://openalex.org/S64187185",
+      "issn_l": "2041-1723",
+      "source_type": "journal",
+      "doi": "https://doi.org/10.1038/s41467-024-55622-y",
+      "publication_date": "2025-01-02",
+      "publication_year": 2025,
+      "fwci": 93.87822721,
+      "cited_by_count": 96,
+      "field": "Electrocatalysts for Energy Conversion"
+    }
+  },
+  {
+    "paper_id": "b5d9e2f1eeaf",
+    "method_name": "deepseek-v3-L1",
+    "prompt_level": "L1",
+    "query": "如何提升中红外光电探测器的探测率与响应速度至理论极限？",
+    "free_text_hypotheses": [
+      "[L1] 假设1：通过构建垂直传输通道的范德瓦尔斯异质结构，可以同时优化载流子分离效率与输运速度，从而实现接近理论极限的探测率和响应速度。  \n关键实体：范德瓦尔斯异质结构（如BP/MoS₂）、垂直传输通道  \n作用关系：界面内建电场增强载流子分离，垂直输运减少散射路径  \n预期机制：缩短载流子渡越时间，降低复合损耗  \n\n[L2] 假设2：在异质结中引入梯度带隙材料（如WSe₂-xSx合金），可通过能带工程扩展光谱响应范围并抑制暗电流。  \n关键实体：梯度带隙材料、中红外吸收层  \n作用关系：带隙梯度形成内建电场，拓宽有效吸收波长  \n预期机制：提升探测率（D*）至Jones量级，同时保持亚纳秒响应  \n\n[L3] 假设3：通过原子级调控异质结界面缺陷态（如硫空位钝化），可突破传统噪声限制。  \n关键实体：界面缺陷态、表面钝化层（如h-BN）  \n作用关系：缺陷钝化降低陷阱辅助隧穿噪声  \n预期机制：实现背景限探测（BLIP）性能，响应速度达RC时间常数极限"
+    ],
+    "error": "",
+    "metadata": {
+      "journal": "Nature Communications",
+      "journal_id": "https://openalex.org/S64187185",
+      "issn_l": "2041-1723",
+      "source_type": "journal",
+      "doi": "https://doi.org/10.1038/s41467-025-55887-x",
+      "publication_date": "2025-01-10",
+      "publication_year": 2025,
+      "fwci": 163.74682493,
+      "cited_by_count": 81,
+      "field": "Advanced Semiconductor Detectors and Materials"
+    }
+  },
+  {
+    "paper_id": "49822610b620",
+    "method_name": "deepseek-v3-L1",
+    "prompt_level": "L1",
+    "query": "如何通过高模量隔膜设计解决锌枝晶问题",
+    "free_text_hypotheses": [
+      "[L1] 高模量隔膜通过机械抑制锌枝晶生长  \n- 关键实体：高模量隔膜（弹性模量>5GPa）、锌枝晶  \n- 作用关系：物理屏障作用限制锌沉积形貌  \n- 预期机制：隔膜的高刚性可抵抗锌枝晶穿刺力（>0.5MPa），迫使锌沿二维方向均匀沉积  \n\n[L2] 仿生结构设计增强离子筛分能力  \n- 关键实体：梯度多孔结构（10-100nm）、Zn²⁺溶剂化鞘  \n- 作用关系：选择性离子传输调控沉积动力学  \n- 预期机制：仿生血管状孔道（表层10nm/底层100nm）可剥离溶剂化分子，提高Zn²⁺迁移数至>0.8  \n\n[L3] 生物降解材料界面稳定化效应  \n- 关键实体：聚乳酸基隔膜、Zn/电解质界面  \n- 作用关系：原位形成有机-无机杂化SEI层  \n- 预期机制：材料降解产物（乳酸锌）参与构建含ZnCO₃的复合界面层，将析氢过电位提升≥200mV"
+    ],
+    "error": "",
+    "metadata": {
+      "journal": "Nature Communications",
+      "journal_id": "https://openalex.org/S64187185",
+      "issn_l": "2041-1723",
+      "source_type": "journal",
+      "doi": "https://doi.org/10.1038/s41467-025-56325-8",
+      "publication_date": "2025-01-25",
+      "publication_year": 2025,
+      "fwci": 163.74682493,
+      "cited_by_count": 81,
+      "field": "Advanced battery technologies research"
+    }
+  },
+  {
+    "paper_id": "9d7ad46d50d0",
+    "method_name": "deepseek-v3-L1",
+    "prompt_level": "L1",
+    "query": "如何利用吸湿性铁水凝胶和叶脉结构设计高效的能量收集器？",
+    "free_text_hypotheses": [
+      "[L1] 吸湿性铁水凝胶的离子梯度与叶脉微通道结构协同作用可提升能量收集效率  \n- 铁水凝胶在湿度变化下产生可逆的Fe2+/Fe3+氧化还原反应（关键实体），通过叶脉状分形微通道（关键实体）形成离子浓度梯度，驱动离子定向迁移（作用关系），其电能输出比传统平面结构提高50%以上（预期机制）  \n\n[L2] 叶脉仿生层级孔隙可优化水凝胶的吸湿-解吸动力学  \n- 三级分叉叶脉结构（关键实体）通过毛细作用力（作用关系）加速水分子在铁水凝胶中的渗透/蒸发循环（预期机制），使单位时间产电脉冲频率提升至自然蒸发的3倍  \n- 铁水凝胶中配位不饱和的Fe-O位点（关键实体）与叶脉木质素残留物（关键实体）形成氢键网络（作用关系），将水分吸附焓降低15-20kJ/mol（预期机制）  \n\n[L3] 氧化还原反应与机械形变的耦合效应可突破现有能量密度极限  \n- 水凝胶溶胀/收缩过程中的晶格应变（关键实体）使Fe-O键长发生周期性变化（作用关系），通过压电效应将机械能转化为附加电势（预期机制）  \n- 叶脉主脉/侧脉的刚度梯度（关键实体）诱导非对称应力分布（作用关系），产生0.5-1.2V的额外界面电势差（预期机制）"
+    ],
+    "error": "",
+    "metadata": {
+      "journal": "Nature Communications",
+      "journal_id": "https://openalex.org/S64187185",
+      "issn_l": "2041-1723",
+      "source_type": "journal",
+      "doi": "https://doi.org/10.1038/s41467-025-60341-z",
+      "publication_date": "2025-06-06",
+      "publication_year": 2025,
+      "fwci": 153.63899623,
+      "cited_by_count": 76,
+      "field": "Energy Harvesting in Wireless Networks"
+    }
+  },
+  {
+    "paper_id": "3e2570ebbc22",
+    "method_name": "deepseek-v3-L1",
+    "prompt_level": "L1",
+    "query": "如何构建基于深度学习的多模态框架来评估电池健康状态？",
+    "free_text_hypotheses": [
+      "[L1] 多模态数据融合假设  \n1. 关键实体：电压/电流时序数据（电气模态） + 热成像数据（热模态） + 充电行为日志（操作模态）  \n2. 作用关系：通过跨模态注意力机制建立时序-空间-操作特征的动态权重分配  \n3. 预期机制：三模态联合训练比单模态提升SOH预测精度15%以上（MAE指标）  \n\n[L2] 退化模式解耦假设  \n1. 关键实体：容量衰减模式（化学老化） + 内阻增长模式（机械老化）  \n2. 作用关系：设计双分支神经网络分别捕捉不同退化模式的敏感特征  \n3. 预期机制：解耦后的特征空间可使循环寿命预测误差降低20%（RMSE指标）  \n\n[L3] 迁移学习泛化假设  \n1. 关键实体：源领域（实验室数据） + 目标领域（真实EV运行数据）  \n2. 作用关系：通过对抗域适应对齐不同充放电工况下的特征分布  \n3. 预期机制：跨数据集测试时模型性能下降幅度控制在5%以内（F1-score指标）"
+    ],
+    "error": "",
+    "metadata": {
+      "journal": "Nature Communications",
+      "journal_id": "https://openalex.org/S64187185",
+      "issn_l": "2041-1723",
+      "source_type": "journal",
+      "doi": "https://doi.org/10.1038/s41467-025-56485-7",
+      "publication_date": "2025-01-29",
+      "publication_year": 2025,
+      "fwci": 156.77105282,
+      "cited_by_count": 72,
+      "field": "Advanced Battery Technologies Research"
+    }
+  }
+]

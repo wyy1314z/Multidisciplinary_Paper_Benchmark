@@ -1,0 +1,24 @@
+[
+  {
+    "paper_id": "b5d9e2f1eeaf",
+    "method_name": "claude-3-5-haiku-20241022-L1",
+    "prompt_level": "L1",
+    "query": "如何通过新型异质结构设计提升光电探测器的综合性能",
+    "free_text_hypotheses": [
+      "[ERROR] LLM 网关错误 (HTTP 503): Error code: 503 - {'error': {'message': '当前分组 企业用户 下对于模型 claude-3-5-haiku-20241022 计费模式 [按量计费] 无可用渠道 (request id: 2026041316332785804666619848550)', 'type': 'shell_api_error'}}"
+    ],
+    "error": "LLM 网关错误 (HTTP 503): Error code: 503 - {'error': {'message': '当前分组 企业用户 下对于模型 claude-3-5-haiku-20241022 计费模式 [按量计费] 无可用渠道 (request id: 2026041316332785804666619848550)', 'type': 'shell_api_error'}}",
+    "metadata": {
+      "journal": "Nature Communications",
+      "journal_id": "https://openalex.org/S64187185",
+      "issn_l": "2041-1723",
+      "source_type": "journal",
+      "doi": "https://doi.org/10.1038/s41467-025-55887-x",
+      "publication_date": "2025-01-10",
+      "publication_year": 2025,
+      "fwci": 163.74682493,
+      "cited_by_count": 81,
+      "field": "Advanced Semiconductor Detectors and Materials"
+    }
+  }
+]

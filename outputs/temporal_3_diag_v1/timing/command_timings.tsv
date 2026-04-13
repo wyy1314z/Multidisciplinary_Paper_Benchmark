@@ -1,0 +1,13 @@
+stage	command	start_epoch	end_epoch	elapsed_sec	real_sec	user_sec	sys_sec	max_rss_kb	exit_code
+stage0	prepare_temporal_papers_benchmark	1775742190	1775742200	10					0
+stage1	classify_benchmark_candidates	1775742200	1775742241	41					0
+stage2	extract_benchmark_candidates	1775742241	1775743780	1539					0
+stage3	build_benchmark_dataset	1775743781	1775743790	9					0
+stage4	prepare_temporal_papers_validity	1775743790	1775743800	10					0
+stage5	classify_validity_candidates	1775743800	1775743842	42					0
+stage6	extract_validity_candidates	1775743842	1775745144	1302					0
+stage7	evaluate_benchmark_validity	1775745144	1775775247	30103					0
+stage7	analyze_benchmark_validity	1775775247	1775775248	1					0
+stage8	build_query_eval_set	1775775248	1775775248	0					0
+stage9	run_query_benchmark	1775775249	1775775357	108					0
+stage10	run_multimodel_eval_16metrics	1775775357	1775775376	19					0

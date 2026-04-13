@@ -164,6 +164,28 @@ class ConceptEntry(BaseModel):
     source: str = Field(default="abstract", description="抽取来源：abstract | refs[i]")
     confidence: float = Field(default=0.5, ge=0.0, le=1.0)
 
+    @field_validator("term", mode="before")
+    @classmethod
+    def _coerce_term(cls, v):
+        if v is None:
+            return ""
+        return str(v)
+
+    @field_validator("evidence", mode="before")
+    @classmethod
+    def _coerce_evidence(cls, v):
+        if v is None:
+            return ""
+        return str(v)
+
+    @field_validator("source", mode="before")
+    @classmethod
+    def _coerce_source(cls, v):
+        if v is None:
+            return "abstract"
+        text = str(v).strip()
+        return text or "abstract"
+
     @model_validator(mode="after")
     def _trim(self):
         self.term = (self.term or "").strip()
@@ -180,10 +202,46 @@ class Concepts(BaseModel):
     主学科: List[ConceptEntry] = Field(default_factory=list, description="主学科概念条目")
     辅学科: Dict[str, List[ConceptEntry]] = Field(default_factory=dict, description="辅学科→概念条目列表")
 
+    @staticmethod
+    def _unwrap_concept_list(v):
+        if v is None:
+            return []
+        if isinstance(v, list):
+            return v
+        if isinstance(v, dict):
+            for key in ("ConceptEntry", "概念", "主学科", "items", "entries"):
+                val = v.get(key)
+                if isinstance(val, list):
+                    return val
+            merged = []
+            for val in v.values():
+                if isinstance(val, list):
+                    merged.extend(val)
+            return merged
+        return []
+
+    @field_validator("主学科", mode="before")
+    @classmethod
+    def _coerce_main_terms(cls, v):
+        return cls._unwrap_concept_list(v)
+
     @field_validator("主学科")
     @classmethod
     def _nonempty_terms(cls, v: List[ConceptEntry]) -> List[ConceptEntry]:
         return v or []
+
+    @field_validator("辅学科", mode="before")
+    @classmethod
+    def _coerce_groups(cls, v):
+        if not isinstance(v, dict):
+            return {}
+        out = {}
+        for k, lst in v.items():
+            key = (k or "").strip()
+            if not key:
+                continue
+            out[key] = cls._unwrap_concept_list(lst)
+        return out
 
     @field_validator("辅学科")
     @classmethod
@@ -221,6 +279,41 @@ class RelationEntry(BaseModel):
     source: str
     confidence: float = Field(..., ge=0.0, le=1.0)
 
+    @field_validator("direction", mode="before")
+    @classmethod
+    def _coerce_direction(cls, v):
+        if v is None:
+            return "->"
+        text = str(v).strip()
+        if text in {"", "->", "<-", "term_a_to_term_b", "term_b_to_term_a"}:
+            return "->"
+        return "->"
+
+    @field_validator("assumptions", mode="before")
+    @classmethod
+    def _coerce_assumptions(cls, v):
+        if v is None:
+            return []
+        if isinstance(v, list):
+            return [str(x).strip() for x in v if str(x).strip()]
+        text = str(v).strip()
+        return [text] if text else []
+
+    @field_validator("evidence", mode="before")
+    @classmethod
+    def _coerce_relation_evidence(cls, v):
+        if v is None:
+            return ""
+        return str(v)
+
+    @field_validator("source", mode="before")
+    @classmethod
+    def _coerce_relation_source(cls, v):
+        if v is None:
+            return "abstract"
+        text = str(v).strip()
+        return text or "abstract"
+
     @model_validator(mode="after")
     def _chk(self):
         self.head = (self.head or "").strip()
@@ -239,7 +332,56 @@ class RelationEntry(BaseModel):
 class ClassifiedBucket(BaseModel):
     概念: List[str] = Field(default_factory=list)
     关系: List[int] = Field(default_factory=list, description="引用 跨学科关系 数组中的索引")
-    rationale: str = Field(..., description="一句话理由")
+    rationale: str = Field(default="", description="一句话理由")
+
+    @field_validator("概念", mode="before")
+    @classmethod
+    def _coerce_concepts(cls, v):
+        if v is None:
+            return []
+        if isinstance(v, list):
+            return [str(x).strip() for x in v if str(x).strip()]
+        if isinstance(v, dict):
+            for key in ("概念", "ConceptEntry", "items", "entries"):
+                val = v.get(key)
+                if isinstance(val, list):
+                    return [str(x).strip() for x in val if str(x).strip()]
+        text = str(v).strip()
+        return [text] if text else []
+
+    @field_validator("关系", mode="before")
+    @classmethod
+    def _coerce_relations(cls, v):
+        if v is None:
+            return []
+        if isinstance(v, list):
+            out = []
+            for x in v:
+                try:
+                    out.append(int(x))
+                except Exception:
+                    continue
+            return out
+        try:
+            return [int(v)]
+        except Exception:
+            return []
+
+    @field_validator("rationale", mode="before")
+    @classmethod
+    def _coerce_rationale(cls, v):
+        if v is None:
+            return ""
+        return str(v)
+
+    @model_validator(mode="after")
+    def _fill_rationale(self):
+        self.rationale = (self.rationale or "").strip()
+        if not self.rationale:
+            n_concepts = len(self.概念 or [])
+            n_relations = len(self.关系 or [])
+            self.rationale = f"该辅助学科提供了 {n_concepts} 个相关概念与 {n_relations} 条相关关系。"
+        return self
 
 
 class Query3Levels(BaseModel):
@@ -375,6 +517,16 @@ class MetaInfo(BaseModel):
     title: str
     primary: str
     secondary_list: List[str] = Field(default_factory=list)
+    journal: str = ""
+    journal_id: str = ""
+    issn_l: str = ""
+    source_type: str = ""
+    doi: str = ""
+    publication_date: str = ""
+    publication_year: Optional[int] = None
+    fwci: Optional[float] = None
+    cited_by_count: Optional[int] = None
+    field: str = ""
 
 
 class StructExtraction(BaseModel):

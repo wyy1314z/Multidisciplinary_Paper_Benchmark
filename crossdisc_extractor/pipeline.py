@@ -78,6 +78,16 @@ def _classifier_output_to_extractor_input(
         "secondary_list": secondary_list,
         "main_levels": ml_str,
         "non_main_levels": nml_str,
+        "journal": paper.get("journal", ""),
+        "journal_id": paper.get("journal_id", ""),
+        "issn_l": paper.get("issn_l", ""),
+        "source_type": paper.get("source_type", ""),
+        "doi": paper.get("doi", ""),
+        "publication_date": paper.get("publication_date", ""),
+        "publication_year": paper.get("publication_year"),
+        "fwci": paper.get("fwci"),
+        "cited_by_count": paper.get("cited_by_count"),
+        "field": paper.get("field", ""),
     }
 
 

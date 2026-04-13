@@ -12,6 +12,7 @@ from crossdisc_extractor.benchmark.metrics import (
     build_cooccurrence_from_kg,
     embedding_bridging_score,
     enhanced_path_consistency,
+    factual_precision,
     hierarchical_depth_progression,
     information_theoretic_novelty,
     rao_stirling_diversity,
@@ -285,6 +286,82 @@ class TestEmbeddingBridging:
         ]
         score = embedding_bridging_score(path)
         assert score > 0.0
+
+
+# ── Factual Precision ─────────────────────────────────────────────────────
+
+class TestFactualPrecision:
+    def test_without_abstract_uses_gt_relations(self, monkeypatch):
+        monkeypatch.setattr(
+            "crossdisc_extractor.benchmark.metrics._get_nli",
+            lambda: None,
+        )
+        path = [
+            {
+                "step": 1,
+                "head": "Graph neural network",
+                "tail": "protein structure prediction",
+                "relation": "method_applied_to",
+                "claim": "Graph neural networks can be applied to protein structure prediction",
+            }
+        ]
+        gt_relations = [
+            {
+                "head": "Graph neural network",
+                "tail": "protein structure prediction",
+                "relation_type": "method_applied_to",
+                "evidence_sentence": "Graph neural networks are applied to protein structure prediction.",
+            }
+        ]
+        score = factual_precision(path, abstract="", gt_relations=gt_relations)
+        assert score == 1.0
+
+    def test_without_abstract_falls_back_to_gt_terms(self, monkeypatch):
+        monkeypatch.setattr(
+            "crossdisc_extractor.benchmark.metrics._get_nli",
+            lambda: None,
+        )
+        monkeypatch.setattr(
+            "crossdisc_extractor.benchmark.metrics._get_sbert",
+            lambda: None,
+        )
+        path = [
+            {
+                "step": 1,
+                "head": "quantum dots",
+                "tail": "solar cells",
+                "relation": "improves",
+                "claim": "Quantum dots may improve solar cells",
+            }
+        ]
+        score = factual_precision(
+            path,
+            abstract="",
+            gt_terms=["quantum dots", "solar cells", "photovoltaics"],
+            gt_relations=[],
+        )
+        assert score == 1.0
+
+    def test_without_any_evidence_returns_zero(self, monkeypatch):
+        monkeypatch.setattr(
+            "crossdisc_extractor.benchmark.metrics._get_nli",
+            lambda: None,
+        )
+        monkeypatch.setattr(
+            "crossdisc_extractor.benchmark.metrics._get_sbert",
+            lambda: None,
+        )
+        path = [
+            {
+                "step": 1,
+                "head": "unknown concept",
+                "tail": "another unknown concept",
+                "relation": "causes",
+                "claim": "Unknown concept causes another unknown concept",
+            }
+        ]
+        score = factual_precision(path, abstract="", gt_terms=[], gt_relations=[])
+        assert score == 0.0
 
 
 # ── Build Discipline Paths ────────────────────────────────────────────────

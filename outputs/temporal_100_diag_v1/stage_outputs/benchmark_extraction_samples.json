@@ -1,0 +1,3387 @@
+[
+  {
+    "title": "MitoHiFi: a python pipeline for mitochondrial genome assembly from PacBio high fidelity reads",
+    "abstract": "Abstract Background PacBio high fidelity (HiFi) sequencing reads are both long (15–20 kb) and highly accurate (&gt; Q20). Because of these properties, they have revolutionised genome assembly leading to more accurate and contiguous genomes. In eukaryotes the mitochondrial genome is sequenced alongside the nuclear genome often at very high coverage. A dedicated tool for mitochondrial genome assembly using HiFi reads is still missing. Results MitoHiFi was developed within the Darwin Tree of Life Project to assemble mitochondrial genomes from the HiFi reads generated for target species. The input for MitoHiFi is either the raw reads or the assembled contigs, and the tool outputs a mitochondrial genome sequence fasta file along with annotation of protein and RNA genes. Variants arising from heteroplasmy are assembled independently, and nuclear insertions of mitochondrial sequences are identified and not used in organellar genome assembly. MitoHiFi has been used to assemble 374 mitochondrial genomes (368 Metazoa and 6 Fungi species) for the Darwin Tree of Life Project, the Vertebrate Genomes Project and the Aquatic Symbiosis Genome Project. Inspection of 60 mitochondrial genomes assembled with MitoHiFi for species that already have reference sequences in public databases showed the widespread presence of previously unreported repeats. Conclusions MitoHiFi is able to assemble mitochondrial genomes from a wide phylogenetic range of taxa from Pacbio HiFi data. MitoHiFi is written in python and is freely available on GitHub ( https://github.com/marcelauliano/MitoHiFi ). MitoHiFi is available with its dependencies as a Docker container on GitHub (ghcr.io/marcelauliano/mitohifi:master).",
+    "pdf_url": "https://doi.org/10.1186/s12859-023-05385-y",
+    "primary": "计算机科学技术",
+    "secondary": "计算机科学技术, 生物学",
+    "secondary_list": [
+      "计算机科学技术",
+      "生物学"
+    ],
+    "introduction": "",
+    "journal": "BMC Bioinformatics",
+    "journal_id": "https://openalex.org/S19032547",
+    "issn_l": "1471-2105",
+    "source_type": "journal",
+    "doi": "https://doi.org/10.1186/s12859-023-05385-y",
+    "publication_date": "2023-07-18",
+    "publication_year": 2023,
+    "fwci": 297.62966344,
+    "cited_by_count": 1600,
+    "field": "Genomics and Phylogenetic Studies",
+    "parsed": {
+      "meta": {
+        "title": "MitoHiFi: a python pipeline for mitochondrial genome assembly from PacBio high fidelity reads",
+        "primary": "计算机科学技术",
+        "secondary_list": [
+          "计算机科学技术",
+          "生物学"
+        ],
+        "journal": "BMC Bioinformatics",
+        "journal_id": "https://openalex.org/S19032547",
+        "issn_l": "1471-2105",
+        "source_type": "journal",
+        "doi": "https://doi.org/10.1186/s12859-023-05385-y",
+        "publication_date": "2023-07-18",
+        "publication_year": 2023,
+        "fwci": 297.62966344,
+        "cited_by_count": 1600,
+        "field": "Genomics and Phylogenetic Studies"
+      },
+      "概念": {
+        "主学科": [
+          {
+            "term": "python pipeline",
+            "normalized": "流程工具",
+            "std_label": "软件工具",
+            "evidence": "MitoHiFi: a python pipeline for mitochondrial genome assembly",
+            "source": "abstract",
+            "confidence": 0.95
+          },
+          {
+            "term": "Docker container",
+            "normalized": "容器化部署技术",
+            "std_label": "部署工具",
+            "evidence": "available as a Docker container on GitHub",
+            "source": "abstract",
+            "confidence": 0.9
+          },
+          {
+            "term": "fasta file",
+            "normalized": "格式文件",
+            "std_label": "数据格式",
+            "evidence": "outputs a mitochondrial genome sequence fasta file",
+            "source": "abstract",
+            "confidence": 0.98
+          },
+          {
+            "term": "raw reads",
+            "normalized": "原始测序数据",
+            "std_label": "输入数据",
+            "evidence": "input is either the raw reads or the assembled contigs",
+            "source": "abstract",
+            "confidence": 0.97
+          },
+          {
+            "term": "assembled contigs",
+            "normalized": "组装连续序列",
+            "std_label": "中间数据",
+            "evidence": "input is either the raw reads or the assembled contigs",
+            "source": "abstract",
+            "confidence": 0.96
+          },
+          {
+            "term": "GitHub",
+            "normalized": "代码托管平台",
+            "std_label": "开发平台",
+            "evidence": "freely available on GitHub",
+            "source": "abstract",
+            "confidence": 0.92
+          },
+          {
+            "term": "pipeline",
+            "normalized": "流水线架构",
+            "std_label": "系统架构",
+            "evidence": "python pipeline for mitochondrial genome assembly",
+            "source": "abstract",
+            "confidence": 0.93
+          },
+          {
+            "term": "variant detection",
+            "normalized": "变异检测",
+            "std_label": "分析功能",
+            "evidence": "Variants arising from heteroplasmy are assembled",
+            "source": "abstract",
+            "confidence": 0.88
+          },
+          {
+            "term": "nuclear insertions",
+            "normalized": "核基因组插入",
+            "std_label": "数据过滤",
+            "evidence": "nuclear insertions of mitochondrial sequences are identified",
+            "source": "abstract",
+            "confidence": 0.89
+          },
+          {
+            "term": "phylogenetic range",
+            "normalized": "系统发育范围",
+            "std_label": "应用范围",
+            "evidence": "assemble mitochondrial genomes from a wide phylogenetic range",
+            "source": "abstract",
+            "confidence": 0.87
+          }
+        ],
+        "辅学科": {
+          "计算机科学技术": [
+            {
+              "term": "high fidelity reads",
+              "normalized": "高保真测序",
+              "std_label": "输入数据",
+              "evidence": "PacBio high fidelity (HiFi) sequencing reads",
+              "source": "abstract",
+              "confidence": 0.94
+            },
+            {
+              "term": "long reads",
+              "normalized": "长读长测序",
+              "std_label": "技术特征",
+              "evidence": "HiFi sequencing reads are both long (15–20 kb)",
+              "source": "abstract",
+              "confidence": 0.91
+            },
+            {
+              "term": "Q20",
+              "normalized": "测序质量值",
+              "std_label": "性能指标",
+              "evidence": "highly accurate (> Q20)",
+              "source": "abstract",
+              "confidence": 0.9
+            },
+            {
+              "term": "contiguous genomes",
+              "normalized": "连续基因组",
+              "std_label": "输出质量",
+              "evidence": "more accurate and contiguous genomes",
+              "source": "abstract",
+              "confidence": 0.89
+            },
+            {
+              "term": "automated annotation",
+              "normalized": "自动化注释",
+              "std_label": "功能模块",
+              "evidence": "annotation of protein and RNA genes",
+              "source": "abstract",
+              "confidence": 0.88
+            }
+          ],
+          "生物学": [
+            {
+              "term": "mitochondrial genome",
+              "normalized": "线粒体基因组",
+              "std_label": "研究对象",
+              "evidence": "mitochondrial genome assembly",
+              "source": "abstract",
+              "confidence": 0.98
+            },
+            {
+              "term": "nuclear genome",
+              "normalized": "核基因组",
+              "std_label": "对比对象",
+              "evidence": "mitochondrial genome is sequenced alongside the nuclear genome",
+              "source": "abstract",
+              "confidence": 0.95
+            },
+            {
+              "term": "heteroplasmy",
+              "normalized": "异质性",
+              "std_label": "遗传现象",
+              "evidence": "Variants arising from heteroplasmy",
+              "source": "abstract",
+              "confidence": 0.92
+            },
+            {
+              "term": "protein-coding genes",
+              "normalized": "蛋白编码基因",
+              "std_label": "注释对象",
+              "evidence": "annotation of protein and RNA genes",
+              "source": "abstract",
+              "confidence": 0.93
+            },
+            {
+              "term": "RNA genes",
+              "normalized": "编码基因",
+              "std_label": "注释对象",
+              "evidence": "annotation of protein and RNA genes",
+              "source": "abstract",
+              "confidence": 0.93
+            },
+            {
+              "term": "repeats",
+              "normalized": "重复序列",
+              "std_label": "基因组特征",
+              "evidence": "previously unreported repeats",
+              "source": "abstract",
+              "confidence": 0.9
+            },
+            {
+              "term": "Metazoa",
+              "normalized": "后生动物",
+              "std_label": "物种分类",
+              "evidence": "368 Metazoa and 6 Fungi species",
+              "source": "abstract",
+              "confidence": 0.88
+            },
+            {
+              "term": "Fungi",
+              "normalized": "真菌",
+              "std_label": "物种分类",
+              "evidence": "6 Fungi species",
+              "source": "abstract",
+              "confidence": 0.87
+            },
+            {
+              "term": "organellar genome",
+              "normalized": "细胞器基因组",
+              "std_label": "目标对象",
+              "evidence": "not used in organellar genome assembly",
+              "source": "abstract",
+              "confidence": 0.85
+            },
+            {
+              "term": "aquatic symbiosis",
+              "normalized": "水生共生",
+              "std_label": "应用场景",
+              "evidence": "Aquatic Symbiosis Genome Project",
+              "source": "abstract",
+              "confidence": 0.83
+            }
+          ]
+        }
+      },
+      "跨学科关系": [
+        {
+          "head": "流程工具",
+          "relation": "用于组装",
+          "relation_type": "method_applied_to",
+          "relation_type_norm": "method_applied_to",
+          "relation_type_raw": "method_applied_to",
+          "tail": "线粒体基因组",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "MitoHiFi was developed to assemble mitochondrial genomes from HiFi reads",
+          "source": "abstract",
+          "confidence": 0.965
+        },
+        {
+          "head": "高保真测序",
+          "relation": "促进生成",
+          "relation_type": "improves_metric",
+          "relation_type_norm": "improves_metric",
+          "relation_type_raw": "improves_metric",
+          "tail": "连续基因组",
+          "direction": "->",
+          "quant": {
+            "metric": "基因组连续性",
+            "value": "显著提升"
+          },
+          "assumptions": [],
+          "evidence": "HiFi reads have revolutionised genome assembly leading to more accurate and contiguous genomes",
+          "source": "abstract",
+          "confidence": 0.92
+        },
+        {
+          "head": "变异检测",
+          "relation": "检测来源",
+          "relation_type": "inferred_from",
+          "relation_type_norm": "inferred_from",
+          "relation_type_raw": "inferred_from",
+          "tail": "异质性",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "Variants arising from heteroplasmy are assembled independently",
+          "source": "abstract",
+          "confidence": 0.9
+        },
+        {
+          "head": "核基因组插入",
+          "relation": "需要排除的干扰",
+          "relation_type": "constrains",
+          "relation_type_norm": "constrains",
+          "relation_type_raw": "constrains",
+          "tail": "数据过滤",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "nuclear insertions of mitochondrial sequences are identified and not used in organellar genome assembly",
+          "source": "abstract",
+          "confidence": 0.87
+        },
+        {
+          "head": "格式文件",
+          "relation": "承载内容",
+          "relation_type": "maps_to",
+          "relation_type_norm": "maps_to",
+          "relation_type_raw": "maps_to",
+          "tail": "线粒体基因组序列",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "outputs a mitochondrial genome sequence fasta file",
+          "source": "abstract",
+          "confidence": 0.97
+        },
+        {
+          "head": "系统发育范围",
+          "relation": "适用范围扩展",
+          "relation_type": "extends",
+          "relation_type_norm": "extends",
+          "relation_type_raw": "extends",
+          "tail": "流程工具",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "assemble mitochondrial genomes from a wide phylogenetic range of taxa",
+          "source": "abstract",
+          "confidence": 0.88
+        },
+        {
+          "head": "自动化注释",
+          "relation": "功能实现",
+          "relation_type": "method_applied_to",
+          "relation_type_norm": "method_applied_to",
+          "relation_type_raw": "method_applied_to",
+          "tail": "蛋白编码基因",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "annotation of protein and RNA genes",
+          "source": "abstract",
+          "confidence": 0.905
+        },
+        {
+          "head": "容器化部署技术",
+          "relation": "分发方式",
+          "relation_type": "generalizes",
+          "relation_type_norm": "generalizes",
+          "relation_type_raw": "generalizes",
+          "tail": "开发平台",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "available as a Docker container on GitHub",
+          "source": "abstract",
+          "confidence": 0.91
+        }
+      ],
+      "按辅助学科分类": {
+        "计算机科学技术": {
+          "概念": [
+            "高保真测序",
+            "长读长测序",
+            "测序质量值",
+            "连续基因组",
+            "自动化注释"
+          ],
+          "关系": [
+            1,
+            5,
+            7
+          ],
+          "rationale": "提供高通量测序技术支持与基因组组装算法实现"
+        },
+        "生物学": {
+          "概念": [
+            "线粒体基因组",
+            "核基因组",
+            "异质性",
+            "蛋白编码基因",
+            "重复序列"
+          ],
+          "关系": [
+            0,
+            2,
+            3,
+            6
+          ],
+          "rationale": "定义基因组组装目标对象及其遗传特征分析"
+        }
+      },
+      "查询": {
+        "一级": "基因组组装流程工具的核心功能与性能优化方向",
+        "二级": [
+          "如何通过高保真测序技术提升线粒体基因组组装连续性",
+          "自动化注释模块在蛋白编码基因识别中的应用"
+        ],
+        "三级": [
+          "流程工具如何整合长读长测序技术与异质性变异检测实现精准基因组组装",
+          "容器化部署技术如何结合系统发育范围扩展特性提升跨物种基因组分析能力"
+        ]
+      },
+      "假设": {
+        "一级": [
+          [
+            {
+              "step": 1,
+              "head": "系统发育范围",
+              "relation": "适用范围扩展",
+              "tail": "流程工具",
+              "claim": "系统发育范围的扩展推动流程工具的组装能力提升"
+            },
+            {
+              "step": 2,
+              "head": "流程工具",
+              "relation": "采用容器化部署技术",
+              "tail": "容器化部署技术",
+              "claim": "容器化部署技术提高流程工具的可移植性和易用性"
+            },
+            {
+              "step": 3,
+              "head": "容器化部署技术",
+              "relation": "基于代码托管平台",
+              "tail": "代码托管平台",
+              "claim": "代码托管平台为容器化部署提供基础设施支持"
+            }
+          ],
+          [
+            {
+              "step": 1,
+              "head": "高保真测序",
+              "relation": "促进生成",
+              "tail": "连续基因组",
+              "claim": "高保真测序技术显著提升基因组组装的连续性"
+            },
+            {
+              "step": 2,
+              "head": "连续基因组",
+              "relation": "优化组装质量",
+              "tail": "线粒体基因组",
+              "claim": "连续基因组特性保障线粒体基因组组装完整性"
+            },
+            {
+              "step": 3,
+              "head": "线粒体基因组",
+              "relation": "需要自动化注释",
+              "tail": "自动化注释",
+              "claim": "自动化注释模块完善线粒体基因组功能解析"
+            }
+          ]
+        ],
+        "二级": [
+          [
+            {
+              "step": 1,
+              "head": "高保真测序",
+              "relation": "具有特征",
+              "tail": "长读长测序",
+              "claim": "高保真测序 具有特征 长读长测序"
+            },
+            {
+              "step": 2,
+              "head": "长读长测序",
+              "relation": "促进生成",
+              "tail": "连续基因组",
+              "claim": "长读长测序 促进生成 连续基因组"
+            },
+            {
+              "step": 3,
+              "head": "连续基因组",
+              "relation": "构成",
+              "tail": "线粒体基因组",
+              "claim": "连续基因组 构成 线粒体基因组"
+            }
+          ],
+          [
+            {
+              "step": 1,
+              "head": "自动化注释",
+              "relation": "功能实现",
+              "tail": "编码基因",
+              "claim": "自动化注释 功能实现 编码基因"
+            },
+            {
+              "step": 2,
+              "head": "编码基因",
+              "relation": "具体类型",
+              "tail": "蛋白编码基因",
+              "claim": "编码基因 具体类型 蛋白编码基因"
+            },
+            {
+              "step": 3,
+              "head": "蛋白编码基因",
+              "relation": "定位位置",
+              "tail": "线粒体基因组",
+              "claim": "蛋白编码基因 定位位置 线粒体基因组"
+            }
+          ]
+        ],
+        "三级": [
+          [
+            {
+              "step": 1,
+              "head": "长读长测序",
+              "relation": "促进生成",
+              "tail": "连续基因组",
+              "claim": "长读长测序 促进生成 连续基因组"
+            },
+            {
+              "step": 2,
+              "head": "连续基因组",
+              "relation": "需要检测",
+              "tail": "变异检测",
+              "claim": "连续基因组 需要检测 变异检测"
+            },
+            {
+              "step": 3,
+              "head": "变异检测",
+              "relation": "检测来源",
+              "tail": "异质性",
+              "claim": "变异检测 检测来源 异质性"
+            }
+          ],
+          [
+            {
+              "step": 1,
+              "head": "容器化部署技术",
+              "relation": "结合扩展",
+              "tail": "系统发育范围",
+              "claim": "容器化部署技术 结合扩展 系统发育范围"
+            },
+            {
+              "step": 2,
+              "head": "系统发育范围",
+              "relation": "适用范围扩展",
+              "tail": "流程工具",
+              "claim": "系统发育范围 适用范围扩展 流程工具"
+            },
+            {
+              "step": 3,
+              "head": "流程工具",
+              "relation": "用于组装",
+              "tail": "线粒体基因组",
+              "claim": "流程工具 用于组装 线粒体基因组"
+            }
+          ]
+        ],
+        "一级总结": [
+          "跨物种组装瓶颈需计算机科学技术的容器化部署技术支持，预期提升工具分发效率与跨平台兼容性",
+          "基因组连续性瓶颈需生物学的注释功能协同优化，预期增强功能基因识别精度与组装完整性"
+        ],
+        "二级总结": [
+          "高保真测序通过长读长技术特征促进连续基因组生成，从而改善线粒体基因组组装质量",
+          "自动化注释模块通过识别编码基因中的蛋白编码序列，实现线粒体基因组的功能定位"
+        ],
+        "三级总结": [
+          "长读长测序通过提升基因组连续性，支持变异检测对异质性位点的精准识别，实现线粒体基因组完整组装验证",
+          "容器化部署技术与系统发育范围扩展特性结合，通过流程工具的跨物种适配能力，完成不同真菌与后生动物线粒体基因组的标准化组装验证"
+        ]
+      },
+      "graph": {
+        "nodes": [
+          {
+            "id": "流程工具",
+            "term": "python pipeline",
+            "normalized": "流程工具",
+            "discipline": "计算机科学技术",
+            "evidence": "MitoHiFi: a python pipeline for mitochondrial genome assembly",
+            "source": "abstract",
+            "confidence": 0.95
+          },
+          {
+            "id": "容器化部署技术",
+            "term": "Docker container",
+            "normalized": "容器化部署技术",
+            "discipline": "计算机科学技术",
+            "evidence": "available as a Docker container on GitHub",
+            "source": "abstract",
+            "confidence": 0.9
+          },
+          {
+            "id": "格式文件",
+            "term": "fasta file",
+            "normalized": "格式文件",
+            "discipline": "计算机科学技术",
+            "evidence": "outputs a mitochondrial genome sequence fasta file",
+            "source": "abstract",
+            "confidence": 0.98
+          },
+          {
+            "id": "原始测序数据",
+            "term": "raw reads",
+            "normalized": "原始测序数据",
+            "discipline": "计算机科学技术",
+            "evidence": "input is either the raw reads or the assembled contigs",
+            "source": "abstract",
+            "confidence": 0.97
+          },
+          {
+            "id": "组装连续序列",
+            "term": "assembled contigs",
+            "normalized": "组装连续序列",
+            "discipline": "计算机科学技术",
+            "evidence": "input is either the raw reads or the assembled contigs",
+            "source": "abstract",
+            "confidence": 0.96
+          },
+          {
+            "id": "代码托管平台",
+            "term": "GitHub",
+            "normalized": "代码托管平台",
+            "discipline": "计算机科学技术",
+            "evidence": "freely available on GitHub",
+            "source": "abstract",
+            "confidence": 0.92
+          },
+          {
+            "id": "流水线架构",
+            "term": "pipeline",
+            "normalized": "流水线架构",
+            "discipline": "计算机科学技术",
+            "evidence": "python pipeline for mitochondrial genome assembly",
+            "source": "abstract",
+            "confidence": 0.93
+          },
+          {
+            "id": "变异检测",
+            "term": "variant detection",
+            "normalized": "变异检测",
+            "discipline": "计算机科学技术",
+            "evidence": "Variants arising from heteroplasmy are assembled",
+            "source": "abstract",
+            "confidence": 0.88
+          },
+          {
+            "id": "核基因组插入",
+            "term": "nuclear insertions",
+            "normalized": "核基因组插入",
+            "discipline": "计算机科学技术",
+            "evidence": "nuclear insertions of mitochondrial sequences are identified",
+            "source": "abstract",
+            "confidence": 0.89
+          },
+          {
+            "id": "系统发育范围",
+            "term": "phylogenetic range",
+            "normalized": "系统发育范围",
+            "discipline": "计算机科学技术",
+            "evidence": "assemble mitochondrial genomes from a wide phylogenetic range",
+            "source": "abstract",
+            "confidence": 0.87
+          },
+          {
+            "id": "高保真测序",
+            "term": "high fidelity reads",
+            "normalized": "高保真测序",
+            "discipline": "计算机科学技术",
+            "evidence": "PacBio high fidelity (HiFi) sequencing reads",
+            "source": "abstract",
+            "confidence": 0.94
+          },
+          {
+            "id": "长读长测序",
+            "term": "long reads",
+            "normalized": "长读长测序",
+            "discipline": "计算机科学技术",
+            "evidence": "HiFi sequencing reads are both long (15–20 kb)",
+            "source": "abstract",
+            "confidence": 0.91
+          },
+          {
+            "id": "测序质量值",
+            "term": "Q20",
+            "normalized": "测序质量值",
+            "discipline": "计算机科学技术",
+            "evidence": "highly accurate (> Q20)",
+            "source": "abstract",
+            "confidence": 0.9
+          },
+          {
+            "id": "连续基因组",
+            "term": "contiguous genomes",
+            "normalized": "连续基因组",
+            "discipline": "计算机科学技术",
+            "evidence": "more accurate and contiguous genomes",
+            "source": "abstract",
+            "confidence": 0.89
+          },
+          {
+            "id": "自动化注释",
+            "term": "automated annotation",
+            "normalized": "自动化注释",
+            "discipline": "计算机科学技术",
+            "evidence": "annotation of protein and RNA genes",
+            "source": "abstract",
+            "confidence": 0.88
+          },
+          {
+            "id": "线粒体基因组",
+            "term": "mitochondrial genome",
+            "normalized": "线粒体基因组",
+            "discipline": "生物学",
+            "evidence": "mitochondrial genome assembly",
+            "source": "abstract",
+            "confidence": 0.98
+          },
+          {
+            "id": "核基因组",
+            "term": "nuclear genome",
+            "normalized": "核基因组",
+            "discipline": "生物学",
+            "evidence": "mitochondrial genome is sequenced alongside the nuclear genome",
+            "source": "abstract",
+            "confidence": 0.95
+          },
+          {
+            "id": "异质性",
+            "term": "heteroplasmy",
+            "normalized": "异质性",
+            "discipline": "生物学",
+            "evidence": "Variants arising from heteroplasmy",
+            "source": "abstract",
+            "confidence": 0.92
+          },
+          {
+            "id": "蛋白编码基因",
+            "term": "protein-coding genes",
+            "normalized": "蛋白编码基因",
+            "discipline": "生物学",
+            "evidence": "annotation of protein and RNA genes",
+            "source": "abstract",
+            "confidence": 0.93
+          },
+          {
+            "id": "编码基因",
+            "term": "RNA genes",
+            "normalized": "编码基因",
+            "discipline": "生物学",
+            "evidence": "annotation of protein and RNA genes",
+            "source": "abstract",
+            "confidence": 0.93
+          },
+          {
+            "id": "重复序列",
+            "term": "repeats",
+            "normalized": "重复序列",
+            "discipline": "生物学",
+            "evidence": "previously unreported repeats",
+            "source": "abstract",
+            "confidence": 0.9
+          },
+          {
+            "id": "后生动物",
+            "term": "Metazoa",
+            "normalized": "后生动物",
+            "discipline": "生物学",
+            "evidence": "368 Metazoa and 6 Fungi species",
+            "source": "abstract",
+            "confidence": 0.88
+          },
+          {
+            "id": "真菌",
+            "term": "Fungi",
+            "normalized": "真菌",
+            "discipline": "生物学",
+            "evidence": "6 Fungi species",
+            "source": "abstract",
+            "confidence": 0.87
+          },
+          {
+            "id": "细胞器基因组",
+            "term": "organellar genome",
+            "normalized": "细胞器基因组",
+            "discipline": "生物学",
+            "evidence": "not used in organellar genome assembly",
+            "source": "abstract",
+            "confidence": 0.85
+          },
+          {
+            "id": "水生共生",
+            "term": "aquatic symbiosis",
+            "normalized": "水生共生",
+            "discipline": "生物学",
+            "evidence": "Aquatic Symbiosis Genome Project",
+            "source": "abstract",
+            "confidence": 0.83
+          },
+          {
+            "id": "数据过滤",
+            "term": "数据过滤",
+            "normalized": "数据过滤",
+            "discipline": "struct_relation_inferred",
+            "evidence": "",
+            "source": "struct_relation_inferred",
+            "confidence": 0.8
+          },
+          {
+            "id": "线粒体基因组序列",
+            "term": "线粒体基因组序列",
+            "normalized": "线粒体基因组序列",
+            "discipline": "struct_relation_inferred",
+            "evidence": "",
+            "source": "struct_relation_inferred",
+            "confidence": 0.8
+          },
+          {
+            "id": "开发平台",
+            "term": "开发平台",
+            "normalized": "开发平台",
+            "discipline": "struct_relation_inferred",
+            "evidence": "",
+            "source": "struct_relation_inferred",
+            "confidence": 0.8
+          }
+        ],
+        "edges": [
+          {
+            "source": "流程工具",
+            "target": "线粒体基因组",
+            "relation": "用于组装",
+            "relation_type": "method_applied_to",
+            "metadata": {
+              "evidence": "MitoHiFi was developed to assemble mitochondrial genomes from HiFi reads",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "高保真测序",
+            "target": "连续基因组",
+            "relation": "促进生成",
+            "relation_type": "improves_metric",
+            "metadata": {
+              "evidence": "HiFi reads have revolutionised genome assembly leading to more accurate and contiguous genomes",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "变异检测",
+            "target": "异质性",
+            "relation": "检测来源",
+            "relation_type": "inferred_from",
+            "metadata": {
+              "evidence": "Variants arising from heteroplasmy are assembled independently",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "核基因组插入",
+            "target": "数据过滤",
+            "relation": "需要排除的干扰",
+            "relation_type": "constrains",
+            "metadata": {
+              "evidence": "nuclear insertions of mitochondrial sequences are identified and not used in organellar genome assembly",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "格式文件",
+            "target": "线粒体基因组序列",
+            "relation": "承载内容",
+            "relation_type": "maps_to",
+            "metadata": {
+              "evidence": "outputs a mitochondrial genome sequence fasta file",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "系统发育范围",
+            "target": "流程工具",
+            "relation": "适用范围扩展",
+            "relation_type": "extends",
+            "metadata": {
+              "evidence": "assemble mitochondrial genomes from a wide phylogenetic range of taxa",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "自动化注释",
+            "target": "蛋白编码基因",
+            "relation": "功能实现",
+            "relation_type": "method_applied_to",
+            "metadata": {
+              "evidence": "annotation of protein and RNA genes",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "容器化部署技术",
+            "target": "开发平台",
+            "relation": "分发方式",
+            "relation_type": "generalizes",
+            "metadata": {
+              "evidence": "available as a Docker container on GitHub",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "系统发育范围",
+            "target": "流程工具",
+            "relation": "适用范围扩展",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "系统发育范围的扩展推动流程工具的组装能力提升",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "流程工具",
+            "target": "容器化部署技术",
+            "relation": "采用容器化部署技术",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "容器化部署技术提高流程工具的可移植性和易用性",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "容器化部署技术",
+            "target": "代码托管平台",
+            "relation": "基于代码托管平台",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "代码托管平台为容器化部署提供基础设施支持",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "高保真测序",
+            "target": "连续基因组",
+            "relation": "促进生成",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "高保真测序技术显著提升基因组组装的连续性",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "连续基因组",
+            "target": "线粒体基因组",
+            "relation": "优化组装质量",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "连续基因组特性保障线粒体基因组组装完整性",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "线粒体基因组",
+            "target": "自动化注释",
+            "relation": "需要自动化注释",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "自动化注释模块完善线粒体基因组功能解析",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "高保真测序",
+            "target": "长读长测序",
+            "relation": "具有特征",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "高保真测序 具有特征 长读长测序",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "长读长测序",
+            "target": "连续基因组",
+            "relation": "促进生成",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "长读长测序 促进生成 连续基因组",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "连续基因组",
+            "target": "线粒体基因组",
+            "relation": "构成",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "连续基因组 构成 线粒体基因组",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "自动化注释",
+            "target": "编码基因",
+            "relation": "功能实现",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "自动化注释 功能实现 编码基因",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "编码基因",
+            "target": "蛋白编码基因",
+            "relation": "具体类型",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "编码基因 具体类型 蛋白编码基因",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "蛋白编码基因",
+            "target": "线粒体基因组",
+            "relation": "定位位置",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "蛋白编码基因 定位位置 线粒体基因组",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "长读长测序",
+            "target": "连续基因组",
+            "relation": "促进生成",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "长读长测序 促进生成 连续基因组",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "连续基因组",
+            "target": "变异检测",
+            "relation": "需要检测",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "连续基因组 需要检测 变异检测",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "变异检测",
+            "target": "异质性",
+            "relation": "检测来源",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "变异检测 检测来源 异质性",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "容器化部署技术",
+            "target": "系统发育范围",
+            "relation": "结合扩展",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "容器化部署技术 结合扩展 系统发育范围",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "系统发育范围",
+            "target": "流程工具",
+            "relation": "适用范围扩展",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "系统发育范围 适用范围扩展 流程工具",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "流程工具",
+            "target": "线粒体基因组",
+            "relation": "用于组装",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "流程工具 用于组装 线粒体基因组",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          }
+        ]
+      },
+      "metrics": {
+        "path_consistency": 0.2777777777777778,
+        "coverage": 0.4642857142857143,
+        "bridging_score": 0.391304347826087,
+        "rao_stirling_diversity": 0.1337,
+        "embedding_bridging": 0.6926,
+        "consistency_precision": 0.0,
+        "consistency_recall": 0.0,
+        "consistency_f1": 0.0,
+        "info_novelty": 0.0,
+        "chain_coherence": 0.8545,
+        "atypical_combination": 0.6225,
+        "kg_density": 0.0251,
+        "kg_inverse_modularity": 0.982,
+        "kg_largest_cc_ratio": 0.5,
+        "kg_avg_betweenness": 0.018,
+        "kg_clustering_coefficient": 0.2202,
+        "concept_recall": 0.0,
+        "concept_precision": 0.0,
+        "concept_f1": 0.0,
+        "relation_precision": 0.0,
+        "relation_type_accuracy": 0.0,
+        "evidence_coverage": 0.0,
+        "path_alignment_best": 0.0,
+        "path_alignment_mean": 0.0
+      }
+    },
+    "raw": "/* stage1: struct */\n/* concepts round1 */\n{\"meta\":{\"title\":\"MitoHiFi: a python pipeline for mitochondrial genome assembly from PacBio high fidelity reads\",\"primary\":\"计算机科学技术\",\"secondary_list\":[\"计算机科学技术\",\"生物学\"]},\"概念\":{\"主学科\":[{\"term\":\"python pipeline\",\"normalized\":\"Python流程工具\",\"std_label\":\"软件工具\",\"evidence\":\"MitoHiFi: a python pipeline for mitochondrial genome assembly\",\"source\":\"abstract\",\"confidence\":0.95},{\"term\":\"Docker container\",\"normalized\":\"容器化部署技术\",\"std_label\":\"部署工具\",\"evidence\":\"available as a Docker container on GitHub\",\"source\":\"abstract\",\"confidence\":0.9},{\"term\":\"fasta file\",\"normalized\":\"FASTA格式文件\",\"std_label\":\"数据格式\",\"evidence\":\"outputs a mitochondrial genome sequence fasta file\",\"source\":\"abstract\",\"confidence\":0.98},{\"term\":\"raw reads\",\"normalized\":\"原始测序数据\",\"std_label\":\"输入数据\",\"evidence\":\"input is either the raw reads or the assembled contigs\",\"source\":\"abstract\",\"confidence\":0.97},{\"term\":\"assembled contigs\",\"normalized\":\"组装连续序列\",\"std_label\":\"中间数据\",\"evidence\":\"input is either the raw reads or the assembled contigs\",\"source\":\"abstract\",\"confidence\":0.96},{\"term\":\"GitHub\",\"normalized\":\"代码托管平台\",\"std_label\":\"开发平台\",\"evidence\":\"freely available on GitHub\",\"source\":\"abstract\",\"confidence\":0.92},{\"term\":\"pipeline\",\"normalized\":\"流水线架构\",\"std_label\":\"系统架构\",\"evidence\":\"python pipeline for mitochondrial genome assembly\",\"source\":\"abstract\",\"confidence\":0.93},{\"term\":\"variant detection\",\"normalized\":\"变异检测\",\"std_label\":\"分析功能\",\"evidence\":\"Variants arising from heteroplasmy are assembled\",\"source\":\"abstract\",\"confidence\":0.88},{\"term\":\"nuclear insertions\",\"normalized\":\"核基因组插入\",\"std_label\":\"数据过滤\",\"evidence\":\"nuclear insertions of mitochondrial sequences are identified\",\"source\":\"abstract\",\"confidence\":0.89},{\"term\":\"phylogenetic range\",\"normalized\":\"系统发育范围\",\"std_label\":\"应用范围\",\"evidence\":\"assemble mitochondrial genomes from a wide phylogenetic range\",\"source\":\"abstract\",\"confidence\":0.87}],\"辅学科\":{\"计算机科学技术\":[{\"term\":\"high fidelity reads\",\"normalized\":\"高保真测序\",\"std_label\":\"输入数据\",\"evidence\":\"PacBio high fidelity (HiFi) sequencing reads\",\"source\":\"abstract\",\"confidence\":0.94},{\"term\":\"long reads\",\"normalized\":\"长读长测序\",\"std_label\":\"技术特征\",\"evidence\":\"HiFi sequencing reads are both long (15–20 kb)\",\"source\":\"abstract\",\"confidence\":0.91},{\"term\":\"Q20\",\"normalized\":\"测序质量值\",\"std_label\":\"性能指标\",\"evidence\":\"highly accurate (> Q20)\",\"source\":\"abstract\",\"confidence\":0.9},{\"term\":\"contiguous genomes\",\"normalized\":\"连续基因组\",\"std_label\":\"输出质量\",\"evidence\":\"more accurate and contiguous genomes\",\"source\":\"abstract\",\"confidence\":0.89},{\"term\":\"automated annotation\",\"normalized\":\"自动化注释\",\"std_label\":\"功能模块\",\"evidence\":\"annotation of protein and RNA genes\",\"source\":\"abstract\",\"confidence\":0.88}],\"生物学\":[{\"term\":\"mitochondrial genome\",\"normalized\":\"线粒体基因组\",\"std_label\":\"研究对象\",\"evidence\":\"mitochondrial genome assembly\",\"source\":\"abstract\",\"confidence\":0.98},{\"term\":\"nuclear genome\",\"normalized\":\"核基因组\",\"std_label\":\"对比对象\",\"evidence\":\"mitochondrial genome is sequenced alongside the nuclear genome\",\"source\":\"abstract\",\"confidence\":0.95},{\"term\":\"heteroplasmy\",\"normalized\":\"异质性\",\"std_label\":\"遗传现象\",\"evidence\":\"Variants arising from heteroplasmy\",\"source\":\"abstract\",\"confidence\":0.92},{\"term\":\"protein-coding genes\",\"normalized\":\"蛋白编码基因\",\"std_label\":\"注释对象\",\"evidence\":\"annotation of protein and RNA genes\",\"source\":\"abstract\",\"confidence\":0.93},{\"term\":\"RNA genes\",\"normalized\":\"RNA编码基因\",\"std_label\":\"注释对象\",\"evidence\":\"annotation of protein and RNA genes\",\"source\":\"abstract\",\"confidence\":0.93},{\"term\":\"repeats\",\"normalized\":\"重复序列\",\"std_label\":\"基因组特征\",\"evidence\":\"previously unreported repeats\",\"source\":\"abstract\",\"confidence\":0.9},{\"term\":\"Metazoa\",\"normalized\":\"后生动物\",\"std_label\":\"物种分类\",\"evidence\":\"368 Metazoa and 6 Fungi species\",\"source\":\"abstract\",\"confidence\":0.88},{\"term\":\"Fungi\",\"normalized\":\"真菌\",\"std_label\":\"物种分类\",\"evidence\":\"6 Fungi species\",\"source\":\"abstract\",\"confidence\":0.87},{\"term\":\"organellar genome\",\"normalized\":\"细胞器基因组\",\"std_label\":\"目标对象\",\"evidence\":\"not used in organellar genome assembly\",\"source\":\"abstract\",\"confidence\":0.85},{\"term\":\"aquatic symbiosis\",\"normalized\":\"水生共生\",\"std_label\":\"应用场景\",\"evidence\":\"Aquatic Symbiosis Genome Project\",\"source\":\"abstract\",\"confidence\":0.83}]}}}\n\n/* concepts round2 (supplement) */\n{\"补充概念\": {\"主学科\": [\"MitoHiFi\"], \"辅学科\": {\"生物学\": [\"PacBio\", \"HiFi\"]}}}\n\n/* relations */\n{\n  \"跨学科关系\": [\n    {\n      \"head\": \"流程工具\",\n      \"tail\": \"线粒体基因组\",\n      \"relation\": \"用于组装\",\n      \"relation_type\": \"method_applied_to\",\n      \"direction\": \"->\",\n      \"evidence\": \"MitoHiFi was developed to assemble mitochondrial genomes from HiFi reads\",\n      \"source\": \"abstract\",\n      \"confidence\": 0.965\n    },\n    {\n      \"head\": \"高保真测序\",\n      \"tail\": \"连续基因组\",\n      \"relation\": \"促进生成\",\n      \"relation_type\": \"improves_metric\",\n      \"direction\": \"->\",\n      \"quant\": {\"metric\": \"基因组连续性\", \"value\": \"显著提升\"},\n      \"evidence\": \"HiFi reads have revolutionised genome assembly leading to more accurate and contiguous genomes\",\n      \"source\": \"abstract\",\n      \"confidence\": 0.92\n    },\n    {\n      \"head\": \"变异检测\",\n      \"tail\": \"异质性\",\n      \"relation\": \"检测来源\",\n      \"relation_type\": \"inferred_from\",\n      \"direction\": \"->\",\n      \"evidence\": \"Variants arising from heteroplasmy are assembled independently\",\n      \"source\": \"abstract\",\n      \"confidence\": 0.9\n    },\n    {\n      \"head\": \"核基因组插入\",\n      \"tail\": \"数据过滤\",\n      \"relation\": \"需要排除的干扰\",\n      \"relation_type\": \"constrains\",\n      \"direction\": \"->\",\n      \"evidence\": \"nuclear insertions of mitochondrial sequences are identified and not used in organellar genome assembly\",\n      \"source\": \"abstract\",\n      \"confidence\": 0.87\n    },\n    {\n      \"head\": \"格式文件\",\n      \"tail\": \"线粒体基因组序列\",\n      \"relation\": \"承载内容\",\n      \"relation_type\": \"maps_to\",\n      \"direction\": \"->\",\n      \"evidence\": \"outputs a mitochondrial genome sequence fasta file\",\n      \"source\": \"abstract\",\n      \"confidence\": 0.97\n    },\n    {\n      \"head\": \"系统发育范围\",\n      \"tail\": \"流程工具\",\n      \"relation\": \"适用范围扩展\",\n      \"relation_type\": \"extends\",\n      \"direction\": \"->\",\n      \"evidence\": \"assemble mitochondrial genomes from a wide phylogenetic range of taxa\",\n      \"source\": \"abstract\",\n      \"confidence\": 0.88\n    },\n    {\n      \"head\": \"自动化注释\",\n      \"tail\": \"蛋白编码基因\",\n      \"relation\": \"功能实现\",\n      \"relation_type\": \"method_applied_to\",\n      \"direction\": \"->\",\n      \"evidence\": \"annotation of protein and RNA genes\",\n      \"source\": \"abstract\",\n      \"confidence\": 0.905\n    },\n    {\n      \"head\": \"容器化部署技术\",\n      \"tail\": \"开发平台\",\n      \"relation\": \"分发方式\",\n      \"relation_type\": \"generalizes\",\n      \"direction\": \"->\",\n      \"evidence\": \"available as a Docker container on GitHub\",\n      \"source\": \"abstract\",\n      \"confidence\": 0.91\n    }\n  ]\n}\n\n/* stage2: query */\n{\n  \"按辅助学科分类\": {\n    \"计算机科学技术\": {\n      \"概念\": [\n        \"高保真测序\",\n        \"长读长测序\",\n        \"测序质量值\",\n        \"连续基因组\",\n        \"自动化注释\"\n      ],\n      \"关系\": [1, 5, 7],\n      \"rationale\": \"提供高通量测序技术支持与基因组组装算法实现\"\n    },\n    \"生物学\": {\n      \"概念\": [\n        \"线粒体基因组\",\n        \"核基因组\",\n        \"异质性\",\n        \"蛋白编码基因\",\n        \"重复序列\"\n      ],\n      \"关系\": [0, 2, 3, 6],\n      \"rationale\": \"定义基因组组装目标对象及其遗传特征分析\"\n    }\n  },\n  \"查询\": {\n    \"一级\": \"基因组组装流程工具的核心功能与性能优化方向\",\n    \"二级\": [\n      \"如何通过高保真测序技术提升线粒体基因组组装连续性\",\n      \"自动化注释模块在蛋白编码基因识别中的应用\"\n    ],\n    \"三级\": [\n      \"流程工具如何整合长读长测序技术与异质性变异检测实现精准基因组组装\",\n      \"容器化部署技术如何结合系统发育范围扩展特性提升跨物种基因组分析能力\"\n    ]\n  }\n}\n\n/* stage3: hypothesis L1 */\n{\n  \"假设\": {\n    \"一级\": [\n      [\n        {\n          \"step\": 1,\n          \"head\": \"系统发育范围\",\n          \"relation\": \"适用范围扩展\",\n          \"tail\": \"流程工具\",\n          \"claim\": \"系统发育范围的扩展推动流程工具的组装能力提升\"\n        },\n        {\n          \"step\": 2,\n          \"head\": \"流程工具\",\n          \"relation\": \"采用容器化部署技术\",\n          \"tail\": \"容器化部署技术\",\n          \"claim\": \"容器化部署技术提高流程工具的可移植性和易用性\"\n        },\n        {\n          \"step\": 3,\n          \"head\": \"容器化部署技术\",\n          \"relation\": \"基于代码托管平台\",\n          \"tail\": \"代码托管平台\",\n          \"claim\": \"代码托管平台为容器化部署提供基础设施支持\"\n        }\n      ],\n      [\n        {\n          \"step\": 1,\n          \"head\": \"高保真测序\",\n          \"relation\": \"促进生成\",\n          \"tail\": \"连续基因组\",\n          \"claim\": \"高保真测序技术显著提升基因组组装的连续性\"\n        },\n        {\n          \"step\": 2,\n          \"head\": \"连续基因组\",\n          \"relation\": \"优化组装质量\",\n          \"tail\": \"线粒体基因组\",\n          \"claim\": \"连续基因组特性保障线粒体基因组组装完整性\"\n        },\n        {\n          \"step\": 3,\n          \"head\": \"线粒体基因组\",\n          \"relation\": \"需要自动化注释\",\n          \"tail\": \"自动化注释\",\n          \"claim\": \"自动化注释模块完善线粒体基因组功能解析\"\n        }\n      ]\n    ],\n    \"一级总结\": [\n      \"跨物种组装瓶颈需计算机科学技术的容器化部署技术支持，预期提升工具分发效率与跨平台兼容性\",\n      \"基因组连续性瓶颈需生物学的注释功能协同优化，预期增强功能基因识别精度与组装完整性\"\n    ]\n  }\n}\n\n/* stage3: hypothesis L2 */\n{\n  \"假设\": {\n    \"二级\": [\n      [\n        {\n          \"step\": 1,\n          \"head\": \"高保真测序\",\n          \"relation\": \"具有特征\",\n          \"tail\": \"长读长测序\"\n        },\n        {\n          \"step\": 2,\n          \"head\": \"长读长测序\",\n          \"relation\": \"促进生成\",\n          \"tail\": \"连续基因组\"\n        },\n        {\n          \"step\": 3,\n          \"head\": \"连续基因组\",\n          \"relation\": \"构成\",\n          \"tail\": \"线粒体基因组\"\n        }\n      ],\n      [\n        {\n          \"step\": 1,\n          \"head\": \"自动化注释\",\n          \"relation\": \"功能实现\",\n          \"tail\": \"编码基因\"\n        },\n        {\n          \"step\": 2,\n          \"head\": \"编码基因\",\n          \"relation\": \"具体类型\",\n          \"tail\": \"蛋白编码基因\"\n        },\n        {\n          \"step\": 3,\n          \"head\": \"蛋白编码基因\",\n          \"relation\": \"定位位置\",\n          \"tail\": \"线粒体基因组\"\n        }\n      ]\n    ],\n    \"二级总结\": [\n      \"高保真测序通过长读长技术特征促进连续基因组生成，从而改善线粒体基因组组装质量\",\n      \"自动化注释模块通过识别编码基因中的蛋白编码序列，实现线粒体基因组的功能定位\"\n    ]\n  }\n}\n\n/* stage3: hypothesis L3 */\n{\n  \"假设\": {\n    \"三级\": [\n      [\n        {\n          \"head\": \"长读长测序\",\n          \"relation\": \"促进生成\",\n          \"tail\": \"连续基因组\"\n        },\n        {\n          \"head\": \"连续基因组\",\n          \"relation\": \"需要检测\",\n          \"tail\": \"变异检测\"\n        },\n        {\n          \"head\": \"变异检测\",\n          \"relation\": \"检测来源\",\n          \"tail\": \"异质性\"\n        }\n      ],\n      [\n        {\n          \"head\": \"容器化部署技术\",\n          \"relation\": \"结合扩展\",\n          \"tail\": \"系统发育范围\"\n        },\n        {\n          \"head\": \"系统发育范围\",\n          \"relation\": \"适用范围扩展\",\n          \"tail\": \"流程工具\"\n        },\n        {\n          \"head\": \"流程工具\",\n          \"relation\": \"用于组装\",\n          \"tail\": \"线粒体基因组\"\n        }\n      ]\n    ],\n    \"三级总结\": [\n      \"长读长测序通过提升基因组连续性，支持变异检测对异质性位点的精准识别，实现线粒体基因组完整组装验证\",\n      \"容器化部署技术与系统发育范围扩展特性结合，通过流程工具的跨物种适配能力，完成不同真菌与后生动物线粒体基因组的标准化组装验证\"\n    ]\n  }\n}",
+    "ok": true,
+    "error": ""
+  },
+  {
+    "title": "De novo design of protein structure and function with RFdiffusion",
+    "abstract": "Abstract There has been considerable recent progress in designing new proteins using deep-learning methods 1–9 . Despite this progress, a general deep-learning framework for protein design that enables solution of a wide range of design challenges, including de novo binder design and design of higher-order symmetric architectures, has yet to be described. Diffusion models 10,11 have had considerable success in image and language generative modelling but limited success when applied to protein modelling, probably due to the complexity of protein backbone geometry and sequence–structure relationships. Here we show that by fine-tuning the RoseTTAFold structure prediction network on protein structure denoising tasks, we obtain a generative model of protein backbones that achieves outstanding performance on unconditional and topology-constrained protein monomer design, protein binder design, symmetric oligomer design, enzyme active site scaffolding and symmetric motif scaffolding for therapeutic and metal-binding protein design. We demonstrate the power and generality of the method, called RoseTTAFold diffusion (RFdiffusion), by experimentally characterizing the structures and functions of hundreds of designed symmetric assemblies, metal-binding proteins and protein binders. The accuracy of RFdiffusion is confirmed by the cryogenic electron microscopy structure of a designed binder in complex with influenza haemagglutinin that is nearly identical to the design model. In a manner analogous to networks that produce images from user-specified inputs, RFdiffusion enables the design of diverse functional proteins from simple molecular specifications.",
+    "pdf_url": "https://doi.org/10.1038/s41586-023-06415-8",
+    "primary": "计算机科学技术",
+    "secondary": "计算机科学技术, 生物学",
+    "secondary_list": [
+      "计算机科学技术",
+      "生物学"
+    ],
+    "introduction": "De novo design of protein structure and \nfunction with RFdiffusion\n\nhttps://doi.org/10.1038/s41586-023-06415-8\n\nReceived: 14 December 2022\n\nAccepted: 7 July 2023\n\nPublished online: 11 July 2023\n\nOpen access\n\n Check for updates\n\nJoseph L. Watson1,2,15, David Juergens1,2,3,15, Nathaniel R. Bennett1,2,3,15, Brian L. Trippe2,4,5,15, \nJason Yim2,6,15, Helen E. Eisenach1,2,15, Woody Ahern1,2,7,15, Andrew J. Borst1,2, Robert J. Ragotte1,2, \nLukas F. Milles1,2, Basile I. M. Wicky1,2, Nikita Hanikel1,2, Samuel J. Pellock1,2, Alexis Courbet1,2,8, \nWilliam Sheffler1,2, Jue Wang1,2, Preetham Venkatesh1,2,9, Isaac Sappington1,2,9, \nSusana Vázquez Torres1,2,9, Anna Lauko1,2,9, Valentin De Bortoli8, Emile Mathieu10, \nSergey Ovchinnikov11,12, Regina Barzilay6, Tommi S. Jaakkola6, Frank DiMaio1,2, Minkyung Baek13 \n& David Baker1,2,14 ✉\n\nThere has been considerable recent progress in designing new proteins using deep- \nlearning methods1–9. Despite this progress, a general deep-learning framework for \nprotein design that enables solution of a wide range of design challenges, including \nde novo binder design and design of higher-order symmetric architectures, has yet to \nbe described. Diffusion models10,11 have had considerable success in image and \nlanguage generative modelling but limited success when applied to protein modelling, \nprobably due to the complexity of protein backbone geometry and sequence–structure \nrelationships. Here we show that by fine-tuning the RoseTTAFold structure prediction \nnetwork on protein structure denoising tasks, we obtain a generative model of protein \nbackbones that achieves outstanding performance on unconditional and topology- \nconstrained protein monomer design, protein binder design, symmetric oligomer \ndesign, enzyme active site scaffolding and symmetric motif scaffolding for therapeutic \nand metal-binding protein design. We demonstrate the power and generality of the \nmethod, called RoseTTAFold diffusion (RFdiffusion), by experimentally characterizing \nthe structures and functions of hundreds of designed symmetric assemblies, metal- \nbinding proteins and protein binders. The accuracy of RFdiffusion is confirmed by the \ncryogenic electron microscopy structure of a designed binder in complex with influenza \nhaemagglutinin that is nearly identical to the design model. In a manner analogous to \nnetworks that produce images from user-specified inputs, RFdiffusion enables the \ndesign of diverse functional proteins from simple molecular specifications.\n\nDe novo protein design seeks to generate proteins with specified \nstructural and/or functional properties, for example, making a bind-\ning interaction with a given target12, folding into a particular topology13 \nor containing a catalytic site4. Denoising diffusion probabilistic models \n(DDPMs), a powerful class of machine learning models recently dem-\nonstrated to generate new photorealistic images in response to text \nprompts14,15, have several properties well suited to protein design. First, \nDDPMs generate highly diverse outputs, as they are trained to denoise \ndata (for instance, images or text) that have been corrupted with Gauss-\nian noise. By learning to stochastically reverse this corruption, diverse \noutputs closely resembling the training data are generated. Second, \nDDPMs can be guided at each step of the iterative generation process \ntowards specific design objectives through provision of conditioning \n\ninformation. Third, for almost all protein design applications it is neces-\nsary to explicitly model three-dimensional (3D) structures; rotation-\nally equivariant DDPMs can do this in a global representation frame \nindependent manner. Recent work has adapted DDPMs for protein \nmonomer design by conditioning on small protein ‘motifs’5,9 or on sec-\nondary structure and block-adjacency (‘fold’) information8. Although \npromising, these attempts have shown limited success in generating \nsequences that fold to the intended structures in silico5,16, probably due \nto the limited ability of the denoising networks to generate realistic \nprotein backbones, and have not been tested experimentally.\n\nWe reasoned that improved diffusion models for protein design \ncould be developed by taking advantage of the deep understanding of \nprotein structure implicit in powerful structure prediction methods \n\n1Department of Biochemistry, University of Washington, Seattle, WA, USA. 2Institute for Protein Design, University of Washington, Seattle, WA, USA. 3Graduate Program in Molecular \nEngineering, University of Washington, Seattle, WA, USA. 4Columbia University, Department of Statistics, New York, NY, USA. 5Irving Institute for Cancer Dynamics, Columbia University, \nNew York, NY, USA. 6Massachusetts Institute of Technology, Cambridge, MA, USA. 7Paul G. Allen School of Computer Science and Engineering, University of Washington, Seattle, WA, USA. \n8National Centre for Scientific Research, École Normale Supérieure rue d’Ulm, Paris, France. 9Graduate Program in Biological Physics, Structure and Design, University of Washington, Seattle, \nWA, USA. 10Department of Engineering, University of Cambridge, Cambridge, UK. 11Faculty of Applied Sciences, Harvard University, Cambridge, MA, USA. 12John Harvard Distinguished Science \nFellowship, Harvard University, Cambridge, MA, USA. 13School of Biological Sciences, Seoul National University, Seoul, Republic of Korea. 14Howard Hughes Medical Institute, University of \nWashington, Seattle, WA, USA. 15These authors contributed equally: Joseph L. Watson, David Juergens, Nathaniel R. Bennett, Brian L. Trippe, Jason Yim, Helen E. Eisenach, Woody Ahern. \n✉e-mail: dabaker@uw.edu\n\nNature | Vol 620 | 31 August 2023 | 1089\n\nArticle\fsuch as AlphaFold2 (ref. 17) (AF2) and RoseTTAFold18 (RF). RF has prop-\nerties well suited for use in a protein design DDPM (Fig. 1a): it gener-\nates protein structures with high precision, operates on a rigid-frame \nrepresentation of residues with rotational equivariance and has an \nar",
+    "journal": "Nature",
+    "journal_id": "https://openalex.org/S137773608",
+    "issn_l": "0028-0836",
+    "source_type": "journal",
+    "doi": "https://doi.org/10.1038/s41586-023-06415-8",
+    "publication_date": "2023-07-11",
+    "publication_year": 2023,
+    "fwci": 284.07572368,
+    "cited_by_count": 1531,
+    "field": "Protein Structure and Dynamics",
+    "parsed": {
+      "meta": {
+        "title": "De novo design of protein structure and function with RFdiffusion",
+        "primary": "计算机科学技术",
+        "secondary_list": [
+          "计算机科学技术",
+          "生物学"
+        ],
+        "journal": "Nature",
+        "journal_id": "https://openalex.org/S137773608",
+        "issn_l": "0028-0836",
+        "source_type": "journal",
+        "doi": "https://doi.org/10.1038/s41586-023-06415-8",
+        "publication_date": "2023-07-11",
+        "publication_year": 2023,
+        "fwci": 284.07572368,
+        "cited_by_count": 1531,
+        "field": "Protein Structure and Dynamics"
+      },
+      "概念": {
+        "主学科": [
+          {
+            "term": "deep-learning methods",
+            "normalized": "深度学习方法",
+            "std_label": "深度学习",
+            "evidence": "considerable recent progress in designing new proteins using deep-learning methods",
+            "source": "abstract",
+            "confidence": 0.95
+          },
+          {
+            "term": "Diffusion models",
+            "normalized": "扩散模型",
+            "std_label": "扩散模型",
+            "evidence": "Diffusion models have had considerable success in image and language generative modelling",
+            "source": "abstract",
+            "confidence": 0.98
+          },
+          {
+            "term": "RoseTTAFold structure prediction network",
+            "normalized": "结构预测网络",
+            "std_label": "蛋白质结构预测",
+            "evidence": "fine-tuning the RoseTTAFold structure prediction network on protein structure denoising tasks",
+            "source": "abstract",
+            "confidence": 0.97
+          },
+          {
+            "term": "generative model",
+            "normalized": "生成模型",
+            "std_label": "生成模型",
+            "evidence": "generative model of protein backbones",
+            "source": "abstract",
+            "confidence": 0.93
+          },
+          {
+            "term": "Denoising diffusion probabilistic models (DDPMs)",
+            "normalized": "去噪扩散概率模型",
+            "std_label": "扩散模型",
+            "evidence": "Denoising diffusion probabilistic models (DDPMs)",
+            "source": "introduction",
+            "confidence": 0.96
+          },
+          {
+            "term": "Gaussian noise",
+            "normalized": "高斯噪声",
+            "std_label": "高斯噪声",
+            "evidence": "corrupted with Gaussian noise",
+            "source": "introduction",
+            "confidence": 0.92
+          },
+          {
+            "term": "rotationally equivariant DDPMs",
+            "normalized": "旋转等变扩散模型",
+            "std_label": "旋转等变模型",
+            "evidence": "rotationally equivariant DDPMs can do this in a global representation frame",
+            "source": "introduction",
+            "confidence": 0.94
+          },
+          {
+            "term": "AlphaFold2 (AF2)",
+            "normalized": "AlphaFold2",
+            "std_label": "蛋白质结构预测",
+            "evidence": "AlphaFold2 (ref. 17) (AF2)",
+            "source": "introduction",
+            "confidence": 0.98
+          },
+          {
+            "term": "rigid-frame representation",
+            "normalized": "刚性框架表示",
+            "std_label": "表示学习",
+            "evidence": "rigid-frame representation of residues",
+            "source": "introduction",
+            "confidence": 0.91
+          },
+          {
+            "term": "RFdiffusion",
+            "normalized": "RFdiffusion",
+            "std_label": "蛋白质设计",
+            "evidence": "method called RoseTTAFold diffusion (RFdiffusion)",
+            "source": "abstract",
+            "confidence": 0.99
+          }
+        ],
+        "辅学科": {
+          "计算机科学技术": [
+            {
+              "term": "protein structure denoising tasks",
+              "normalized": "蛋白质结构去噪任务",
+              "std_label": "去噪任务",
+              "evidence": "fine-tuning the RoseTTAFold structure prediction network on protein structure denoising tasks",
+              "source": "abstract",
+              "confidence": 0.93
+            },
+            {
+              "term": "topology-constrained protein monomer design",
+              "normalized": "拓扑约束蛋白质单体设计",
+              "std_label": "约束设计",
+              "evidence": "topology-constrained protein monomer design",
+              "source": "abstract",
+              "confidence": 0.92
+            },
+            {
+              "term": "symmetric motif scaffolding",
+              "normalized": "对称基序支架",
+              "std_label": "结构设计",
+              "evidence": "symmetric motif scaffolding for therapeutic and metal-binding protein design",
+              "source": "abstract",
+              "confidence": 0.94
+            },
+            {
+              "term": "iterative generation process",
+              "normalized": "迭代生成过程",
+              "std_label": "生成模型",
+              "evidence": "iterative generation process towards specific design objectives",
+              "source": "introduction",
+              "confidence": 0.91
+            },
+            {
+              "term": "conditioning information",
+              "normalized": "条件信息",
+              "std_label": "条件生成",
+              "evidence": "conditioning information",
+              "source": "introduction",
+              "confidence": 0.93
+            }
+          ],
+          "生物学": [
+            {
+              "term": "protein binder design",
+              "normalized": "蛋白质结合剂设计",
+              "std_label": "蛋白质设计",
+              "evidence": "protein binder design",
+              "source": "abstract",
+              "confidence": 0.96
+            },
+            {
+              "term": "symmetric oligomer design",
+              "normalized": "对称寡聚体设计",
+              "std_label": "蛋白质设计",
+              "evidence": "symmetric oligomer design",
+              "source": "abstract",
+              "confidence": 0.95
+            },
+            {
+              "term": "enzyme active site scaffolding",
+              "normalized": "酶活性位点支架",
+              "std_label": "酶设计",
+              "evidence": "enzyme active site scaffolding",
+              "source": "abstract",
+              "confidence": 0.94
+            },
+            {
+              "term": "metal-binding protein design",
+              "normalized": "金属结合蛋白设计",
+              "std_label": "蛋白质设计",
+              "evidence": "metal-binding protein design",
+              "source": "abstract",
+              "confidence": 0.95
+            },
+            {
+              "term": "cryogenic electron microscopy",
+              "normalized": "冷冻电子显微镜",
+              "std_label": "结构生物学",
+              "evidence": "cryogenic electron microscopy structure",
+              "source": "abstract",
+              "confidence": 0.97
+            },
+            {
+              "term": "influenza haemagglutinin",
+              "normalized": "流感血球凝集素",
+              "std_label": "病毒蛋白",
+              "evidence": "influenza haemagglutinin",
+              "source": "abstract",
+              "confidence": 0.96
+            },
+            {
+              "term": "catalytic site",
+              "normalized": "催化位点",
+              "std_label": "酶活性位点",
+              "evidence": "containing a catalytic site",
+              "source": "introduction",
+              "confidence": 0.93
+            },
+            {
+              "term": "secondary structure",
+              "normalized": "二级结构",
+              "std_label": "蛋白质结构",
+              "evidence": "secondary structure and block-adjacency",
+              "source": "introduction",
+              "confidence": 0.94
+            },
+            {
+              "term": "block-adjacency ('fold') information",
+              "normalized": "模块邻接折叠信息",
+              "std_label": "结构信息",
+              "evidence": "block-adjacency ('fold') information",
+              "source": "introduction",
+              "confidence": 0.92
+            }
+          ]
+        }
+      },
+      "跨学科关系": [
+        {
+          "head": "深度学习方法",
+          "relation": "应用于",
+          "relation_type": "method_applied_to",
+          "relation_type_norm": "method_applied_to",
+          "relation_type_raw": "method_applied_to",
+          "tail": "蛋白质结合剂设计",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "considerable recent progress in designing new proteins using deep-learning methods",
+          "source": "abstract",
+          "confidence": 0.95
+        },
+        {
+          "head": "扩散模型",
+          "relation": "成功应用于",
+          "relation_type": "method_applied_to",
+          "relation_type_norm": "method_applied_to",
+          "relation_type_raw": "method_applied_to",
+          "tail": "对称寡聚体设计",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "Diffusion models have had considerable success in image and language generative modelling but limited success when applied to protein modelling",
+          "source": "abstract",
+          "confidence": 0.92
+        },
+        {
+          "head": "生成模型",
+          "relation": "实现",
+          "relation_type": "improves_metric",
+          "relation_type_norm": "improves_metric",
+          "relation_type_raw": "improves_metric",
+          "tail": "酶活性位点支架",
+          "direction": "->",
+          "quant": {
+            "metric": "设计准确性",
+            "value": "outstanding performance"
+          },
+          "assumptions": [],
+          "evidence": "generative model of protein backbones that achieves outstanding performance on... enzyme active site scaffolding",
+          "source": "abstract",
+          "confidence": 0.93
+        },
+        {
+          "head": "去噪扩散概率模型",
+          "relation": "通过去噪任务实现",
+          "relation_type": "extends",
+          "relation_type_norm": "extends",
+          "relation_type_raw": "extends",
+          "tail": "拓扑约束蛋白质单体设计",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "Denoising diffusion probabilistic models (DDPMs)... can be guided towards specific design objectives through provision of conditioning information",
+          "source": "introduction",
+          "confidence": 0.94
+        },
+        {
+          "head": "旋转等变模型",
+          "relation": "实现全局表示",
+          "relation_type": "maps_to",
+          "relation_type_norm": "maps_to",
+          "relation_type_raw": "maps_to",
+          "tail": "三维结构建模",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "rotationally equivariant DDPMs can do this in a global representation frame independent manner",
+          "source": "introduction",
+          "confidence": 0.91
+        },
+        {
+          "head": "AlphaFold2",
+          "relation": "改进基础模型",
+          "relation_type": "generalizes",
+          "relation_type_norm": "generalizes",
+          "relation_type_raw": "generalizes",
+          "tail": "蛋白质结构预测网络",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "AlphaFold2... properties well suited for use in a protein design DDPM",
+          "source": "introduction",
+          "confidence": 0.89
+        },
+        {
+          "head": "RFdiffusion",
+          "relation": "实现功能设计",
+          "relation_type": "method_applied_to",
+          "relation_type_norm": "method_applied_to",
+          "relation_type_raw": "method_applied_to",
+          "tail": "金属结合蛋白设计",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "method called RoseTTAFold diffusion (RFdiffusion)... metal-binding protein design",
+          "source": "abstract",
+          "confidence": 0.97
+        },
+        {
+          "head": "迭代生成过程",
+          "relation": "依赖于",
+          "relation_type": "depends_on",
+          "relation_type_norm": "depends_on",
+          "relation_type_raw": "depends_on",
+          "tail": "条件信息",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "iterative generation process towards specific design objectives through provision of conditioning information",
+          "source": "introduction",
+          "confidence": 0.9
+        },
+        {
+          "head": "冷冻电子显微镜",
+          "relation": "验证方法",
+          "relation_type": "corresponds_to",
+          "relation_type_norm": "corresponds_to",
+          "relation_type_raw": "corresponds_to",
+          "tail": "设计模型验证",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "accuracy confirmed by cryogenic electron microscopy structure nearly identical to design model",
+          "source": "abstract",
+          "confidence": 0.95
+        },
+        {
+          "head": "刚性框架表示",
+          "relation": "实现精确建模",
+          "relation_type": "improves_metric",
+          "relation_type_norm": "improves_metric",
+          "relation_type_raw": "improves_metric",
+          "tail": "蛋白质残基建模",
+          "direction": "->",
+          "quant": {
+            "metric": "结构精度",
+            "value": "high precision"
+          },
+          "assumptions": [],
+          "evidence": "rigid-frame representation of residues with rotational equivariance generates protein structures with high precision",
+          "source": "introduction",
+          "confidence": 0.88
+        }
+      ],
+      "按辅助学科分类": {
+        "生物学": {
+          "概念": [
+            "蛋白质结合剂设计",
+            "对称寡聚体设计",
+            "酶活性位点支架",
+            "金属结合蛋白设计",
+            "冷冻电子显微镜",
+            "流感血球凝集素",
+            "催化位点",
+            "二级结构",
+            "模块邻接折叠信息"
+          ],
+          "关系": [
+            0,
+            1,
+            2,
+            6,
+            8
+          ],
+          "rationale": "生物学为蛋白质设计提供应用场景和实验验证方法"
+        }
+      },
+      "查询": {
+        "一级": "如何通过深度学习方法实现蛋白质结构与功能的从头设计",
+        "二级": [
+          "深度学习方法如何提升酶活性位点支架的设计准确性",
+          "蛋白质结构去噪任务如何优化拓扑约束单体设计"
+        ],
+        "三级": [
+          "去噪扩散概率模型如何结合酶活性位点支架设计并通过冷冻电子显微镜验证结构",
+          "旋转等变模型如何通过全局表示框架改进对称寡聚体设计流程"
+        ]
+      },
+      "假设": {
+        "一级": [
+          [
+            {
+              "step": 1,
+              "head": "深度学习方法",
+              "relation": "应用于",
+              "tail": "蛋白质结合剂设计",
+              "claim": "深度学习方法通过蛋白质结合剂设计实现功能创新，需结合生物学验证方法提升结构精度"
+            },
+            {
+              "step": 2,
+              "head": "蛋白质结合剂设计",
+              "relation": "依赖于",
+              "tail": "冷冻电子显微镜",
+              "claim": "冷冻电子显微镜的验证能力可弥补计算设计的结构偏差"
+            },
+            {
+              "step": 3,
+              "head": "冷冻电子显微镜",
+              "relation": "验证设计模型",
+              "tail": "金属结合蛋白设计",
+              "claim": "金属结合蛋白设计的三维结构需通过冷冻电子显微镜验证实现功能优化"
+            }
+          ],
+          [
+            {
+              "step": 1,
+              "head": "生成模型",
+              "relation": "实现",
+              "tail": "酶活性位点支架",
+              "claim": "生成模型通过酶活性位点支架设计提升催化效率，需引入生物学催化位点知识优化功能属性"
+            },
+            {
+              "step": 2,
+              "head": "酶活性位点支架",
+              "relation": "包含",
+              "tail": "催化位点",
+              "claim": "催化位点的空间构型决定酶设计的功能可行性"
+            },
+            {
+              "step": 3,
+              "head": "催化位点",
+              "relation": "依赖于",
+              "tail": "模块邻接折叠信息",
+              "claim": "模块邻接折叠信息的精确建模可增强催化位点设计的结构稳定性"
+            }
+          ]
+        ],
+        "二级": [
+          [
+            {
+              "step": 1,
+              "head": "深度学习方法",
+              "relation": "应用于",
+              "tail": "生成模型",
+              "claim": "深度学习方法 应用于 生成模型"
+            },
+            {
+              "step": 2,
+              "head": "生成模型",
+              "relation": "基于",
+              "tail": "迭代生成过程",
+              "claim": "生成模型 基于 迭代生成过程"
+            },
+            {
+              "step": 3,
+              "head": "迭代生成过程",
+              "relation": "实现",
+              "tail": "酶活性位点支架",
+              "claim": "迭代生成过程 实现 酶活性位点支架"
+            }
+          ],
+          [
+            {
+              "step": 1,
+              "head": "蛋白质结构去噪任务",
+              "relation": "应用于",
+              "tail": "去噪扩散概率模型",
+              "claim": "蛋白质结构去噪任务 应用于 去噪扩散概率模型"
+            },
+            {
+              "step": 2,
+              "head": "去噪扩散概率模型",
+              "relation": "改进",
+              "tail": "结构预测网络",
+              "claim": "去噪扩散概率模型 改进"
+            },
+            {
+              "step": 3,
+              "head": "结构预测网络",
+              "relation": "优化",
+              "tail": "拓扑约束蛋白质单体设计",
+              "claim": "优化 拓扑约束蛋白质单体设计"
+            }
+          ]
+        ],
+        "三级": [
+          [
+            {
+              "step": 1,
+              "head": "去噪扩散概率模型",
+              "relation": "通过条件信息优化",
+              "tail": "酶活性位点支架",
+              "claim": "去噪扩散概率模型 通过条件信息优化 酶活性位点支架"
+            },
+            {
+              "step": 2,
+              "head": "酶活性位点支架",
+              "relation": "实现催化位点精确建模",
+              "tail": "冷冻电子显微镜",
+              "claim": "酶活性位点支架 实现催化位点精确建模 冷冻电子显微镜"
+            },
+            {
+              "step": 3,
+              "head": "冷冻电子显微镜",
+              "relation": "验证结构准确性",
+              "tail": "金属结合蛋白设计",
+              "claim": "冷冻电子显微镜 验证结构准确性 金属结合蛋白设计"
+            }
+          ],
+          [
+            {
+              "step": 1,
+              "head": "旋转等变扩散模型",
+              "relation": "构建全局表示框架",
+              "tail": "对称寡聚体设计",
+              "claim": "旋转等变扩散模型 构建全局表示框架 对称寡聚体设计"
+            },
+            {
+              "step": 2,
+              "head": "对称寡聚体设计",
+              "relation": "依赖模块邻接折叠信息",
+              "tail": "迭代生成过程",
+              "claim": "对称寡聚体设计 依赖模块邻接折叠信息 迭代生成过程"
+            },
+            {
+              "step": 3,
+              "head": "迭代生成过程",
+              "relation": "输出三维结构模型",
+              "tail": "冷冻电子显微镜",
+              "claim": "迭代生成过程 输出三维结构模型 冷冻电子显微镜"
+            }
+          ]
+        ],
+        "一级总结": [
+          "主学科深度学习方法在蛋白质功能设计存在结构验证瓶颈，需生物学冷冻电子显微镜技术补位实现精准验证",
+          "主学科生成模型在酶活性位点设计存在功能适配瓶颈，需生物学催化位点知识补位提升催化效率"
+        ],
+        "二级总结": [
+          "深度学习方法通过生成模型的迭代生成机制，将酶活性位点支架设计转化为可计算的序列生成问题",
+          "蛋白质结构去噪任务利用扩散模型对的改进能力，将拓扑约束转化为结构能量空间的优化问题"
+        ],
+        "三级总结": [
+          "去噪扩散概率模型利用条件信息优化酶活性位点支架设计，并通过冷冻电子显微镜验证催化位点空间构象的准确性",
+          "旋转等变扩散模型通过全局表示框架生成对称寡聚体设计，结合迭代生成过程与模块邻接折叠信息，最终由冷冻电子显微镜验证三维结构模型"
+        ]
+      },
+      "graph": {
+        "nodes": [
+          {
+            "id": "深度学习方法",
+            "term": "deep-learning methods",
+            "normalized": "深度学习方法",
+            "discipline": "计算机科学技术",
+            "evidence": "considerable recent progress in designing new proteins using deep-learning methods",
+            "source": "abstract",
+            "confidence": 0.95
+          },
+          {
+            "id": "扩散模型",
+            "term": "Diffusion models",
+            "normalized": "扩散模型",
+            "discipline": "计算机科学技术",
+            "evidence": "Diffusion models have had considerable success in image and language generative modelling",
+            "source": "abstract",
+            "confidence": 0.98
+          },
+          {
+            "id": "结构预测网络",
+            "term": "RoseTTAFold structure prediction network",
+            "normalized": "结构预测网络",
+            "discipline": "计算机科学技术",
+            "evidence": "fine-tuning the RoseTTAFold structure prediction network on protein structure denoising tasks",
+            "source": "abstract",
+            "confidence": 0.97
+          },
+          {
+            "id": "生成模型",
+            "term": "generative model",
+            "normalized": "生成模型",
+            "discipline": "计算机科学技术",
+            "evidence": "generative model of protein backbones",
+            "source": "abstract",
+            "confidence": 0.93
+          },
+          {
+            "id": "去噪扩散概率模型",
+            "term": "Denoising diffusion probabilistic models (DDPMs)",
+            "normalized": "去噪扩散概率模型",
+            "discipline": "计算机科学技术",
+            "evidence": "Denoising diffusion probabilistic models (DDPMs)",
+            "source": "introduction",
+            "confidence": 0.96
+          },
+          {
+            "id": "高斯噪声",
+            "term": "Gaussian noise",
+            "normalized": "高斯噪声",
+            "discipline": "计算机科学技术",
+            "evidence": "corrupted with Gaussian noise",
+            "source": "introduction",
+            "confidence": 0.92
+          },
+          {
+            "id": "旋转等变扩散模型",
+            "term": "rotationally equivariant DDPMs",
+            "normalized": "旋转等变扩散模型",
+            "discipline": "计算机科学技术",
+            "evidence": "rotationally equivariant DDPMs can do this in a global representation frame",
+            "source": "introduction",
+            "confidence": 0.94
+          },
+          {
+            "id": "AlphaFold2",
+            "term": "AlphaFold2 (AF2)",
+            "normalized": "AlphaFold2",
+            "discipline": "计算机科学技术",
+            "evidence": "AlphaFold2 (ref. 17) (AF2)",
+            "source": "introduction",
+            "confidence": 0.98
+          },
+          {
+            "id": "刚性框架表示",
+            "term": "rigid-frame representation",
+            "normalized": "刚性框架表示",
+            "discipline": "计算机科学技术",
+            "evidence": "rigid-frame representation of residues",
+            "source": "introduction",
+            "confidence": 0.91
+          },
+          {
+            "id": "RFdiffusion",
+            "term": "RFdiffusion",
+            "normalized": "RFdiffusion",
+            "discipline": "计算机科学技术",
+            "evidence": "method called RoseTTAFold diffusion (RFdiffusion)",
+            "source": "abstract",
+            "confidence": 0.99
+          },
+          {
+            "id": "蛋白质结构去噪任务",
+            "term": "protein structure denoising tasks",
+            "normalized": "蛋白质结构去噪任务",
+            "discipline": "计算机科学技术",
+            "evidence": "fine-tuning the RoseTTAFold structure prediction network on protein structure denoising tasks",
+            "source": "abstract",
+            "confidence": 0.93
+          },
+          {
+            "id": "拓扑约束蛋白质单体设计",
+            "term": "topology-constrained protein monomer design",
+            "normalized": "拓扑约束蛋白质单体设计",
+            "discipline": "计算机科学技术",
+            "evidence": "topology-constrained protein monomer design",
+            "source": "abstract",
+            "confidence": 0.92
+          },
+          {
+            "id": "对称基序支架",
+            "term": "symmetric motif scaffolding",
+            "normalized": "对称基序支架",
+            "discipline": "计算机科学技术",
+            "evidence": "symmetric motif scaffolding for therapeutic and metal-binding protein design",
+            "source": "abstract",
+            "confidence": 0.94
+          },
+          {
+            "id": "迭代生成过程",
+            "term": "iterative generation process",
+            "normalized": "迭代生成过程",
+            "discipline": "计算机科学技术",
+            "evidence": "iterative generation process towards specific design objectives",
+            "source": "introduction",
+            "confidence": 0.91
+          },
+          {
+            "id": "条件信息",
+            "term": "conditioning information",
+            "normalized": "条件信息",
+            "discipline": "计算机科学技术",
+            "evidence": "conditioning information",
+            "source": "introduction",
+            "confidence": 0.93
+          },
+          {
+            "id": "蛋白质结合剂设计",
+            "term": "protein binder design",
+            "normalized": "蛋白质结合剂设计",
+            "discipline": "生物学",
+            "evidence": "protein binder design",
+            "source": "abstract",
+            "confidence": 0.96
+          },
+          {
+            "id": "对称寡聚体设计",
+            "term": "symmetric oligomer design",
+            "normalized": "对称寡聚体设计",
+            "discipline": "生物学",
+            "evidence": "symmetric oligomer design",
+            "source": "abstract",
+            "confidence": 0.95
+          },
+          {
+            "id": "酶活性位点支架",
+            "term": "enzyme active site scaffolding",
+            "normalized": "酶活性位点支架",
+            "discipline": "生物学",
+            "evidence": "enzyme active site scaffolding",
+            "source": "abstract",
+            "confidence": 0.94
+          },
+          {
+            "id": "金属结合蛋白设计",
+            "term": "metal-binding protein design",
+            "normalized": "金属结合蛋白设计",
+            "discipline": "生物学",
+            "evidence": "metal-binding protein design",
+            "source": "abstract",
+            "confidence": 0.95
+          },
+          {
+            "id": "冷冻电子显微镜",
+            "term": "cryogenic electron microscopy",
+            "normalized": "冷冻电子显微镜",
+            "discipline": "生物学",
+            "evidence": "cryogenic electron microscopy structure",
+            "source": "abstract",
+            "confidence": 0.97
+          },
+          {
+            "id": "流感血球凝集素",
+            "term": "influenza haemagglutinin",
+            "normalized": "流感血球凝集素",
+            "discipline": "生物学",
+            "evidence": "influenza haemagglutinin",
+            "source": "abstract",
+            "confidence": 0.96
+          },
+          {
+            "id": "催化位点",
+            "term": "catalytic site",
+            "normalized": "催化位点",
+            "discipline": "生物学",
+            "evidence": "containing a catalytic site",
+            "source": "introduction",
+            "confidence": 0.93
+          },
+          {
+            "id": "二级结构",
+            "term": "secondary structure",
+            "normalized": "二级结构",
+            "discipline": "生物学",
+            "evidence": "secondary structure and block-adjacency",
+            "source": "introduction",
+            "confidence": 0.94
+          },
+          {
+            "id": "模块邻接折叠信息",
+            "term": "block-adjacency ('fold') information",
+            "normalized": "模块邻接折叠信息",
+            "discipline": "生物学",
+            "evidence": "block-adjacency ('fold') information",
+            "source": "introduction",
+            "confidence": 0.92
+          },
+          {
+            "id": "旋转等变模型",
+            "term": "旋转等变模型",
+            "normalized": "旋转等变模型",
+            "discipline": "struct_relation_inferred",
+            "evidence": "",
+            "source": "struct_relation_inferred",
+            "confidence": 0.8
+          },
+          {
+            "id": "三维结构建模",
+            "term": "三维结构建模",
+            "normalized": "三维结构建模",
+            "discipline": "struct_relation_inferred",
+            "evidence": "",
+            "source": "struct_relation_inferred",
+            "confidence": 0.8
+          },
+          {
+            "id": "蛋白质结构预测网络",
+            "term": "蛋白质结构预测网络",
+            "normalized": "蛋白质结构预测网络",
+            "discipline": "struct_relation_inferred",
+            "evidence": "",
+            "source": "struct_relation_inferred",
+            "confidence": 0.8
+          },
+          {
+            "id": "设计模型验证",
+            "term": "设计模型验证",
+            "normalized": "设计模型验证",
+            "discipline": "struct_relation_inferred",
+            "evidence": "",
+            "source": "struct_relation_inferred",
+            "confidence": 0.8
+          },
+          {
+            "id": "蛋白质残基建模",
+            "term": "蛋白质残基建模",
+            "normalized": "蛋白质残基建模",
+            "discipline": "struct_relation_inferred",
+            "evidence": "",
+            "source": "struct_relation_inferred",
+            "confidence": 0.8
+          }
+        ],
+        "edges": [
+          {
+            "source": "深度学习方法",
+            "target": "蛋白质结合剂设计",
+            "relation": "应用于",
+            "relation_type": "method_applied_to",
+            "metadata": {
+              "evidence": "considerable recent progress in designing new proteins using deep-learning methods",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "扩散模型",
+            "target": "对称寡聚体设计",
+            "relation": "成功应用于",
+            "relation_type": "method_applied_to",
+            "metadata": {
+              "evidence": "Diffusion models have had considerable success in image and language generative modelling but limited success when applied to protein modelling",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "生成模型",
+            "target": "酶活性位点支架",
+            "relation": "实现",
+            "relation_type": "improves_metric",
+            "metadata": {
+              "evidence": "generative model of protein backbones that achieves outstanding performance on... enzyme active site scaffolding",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "去噪扩散概率模型",
+            "target": "拓扑约束蛋白质单体设计",
+            "relation": "通过去噪任务实现",
+            "relation_type": "extends",
+            "metadata": {
+              "evidence": "Denoising diffusion probabilistic models (DDPMs)... can be guided towards specific design objectives through provision of conditioning information",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "旋转等变模型",
+            "target": "三维结构建模",
+            "relation": "实现全局表示",
+            "relation_type": "maps_to",
+            "metadata": {
+              "evidence": "rotationally equivariant DDPMs can do this in a global representation frame independent manner",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "AlphaFold2",
+            "target": "蛋白质结构预测网络",
+            "relation": "改进基础模型",
+            "relation_type": "generalizes",
+            "metadata": {
+              "evidence": "AlphaFold2... properties well suited for use in a protein design DDPM",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "RFdiffusion",
+            "target": "金属结合蛋白设计",
+            "relation": "实现功能设计",
+            "relation_type": "method_applied_to",
+            "metadata": {
+              "evidence": "method called RoseTTAFold diffusion (RFdiffusion)... metal-binding protein design",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "迭代生成过程",
+            "target": "条件信息",
+            "relation": "依赖于",
+            "relation_type": "depends_on",
+            "metadata": {
+              "evidence": "iterative generation process towards specific design objectives through provision of conditioning information",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "冷冻电子显微镜",
+            "target": "设计模型验证",
+            "relation": "验证方法",
+            "relation_type": "corresponds_to",
+            "metadata": {
+              "evidence": "accuracy confirmed by cryogenic electron microscopy structure nearly identical to design model",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "刚性框架表示",
+            "target": "蛋白质残基建模",
+            "relation": "实现精确建模",
+            "relation_type": "improves_metric",
+            "metadata": {
+              "evidence": "rigid-frame representation of residues with rotational equivariance generates protein structures with high precision",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "深度学习方法",
+            "target": "蛋白质结合剂设计",
+            "relation": "应用于",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "深度学习方法通过蛋白质结合剂设计实现功能创新，需结合生物学验证方法提升结构精度",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "蛋白质结合剂设计",
+            "target": "冷冻电子显微镜",
+            "relation": "依赖于",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "冷冻电子显微镜的验证能力可弥补计算设计的结构偏差",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "冷冻电子显微镜",
+            "target": "金属结合蛋白设计",
+            "relation": "验证设计模型",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "金属结合蛋白设计的三维结构需通过冷冻电子显微镜验证实现功能优化",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "生成模型",
+            "target": "酶活性位点支架",
+            "relation": "实现",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "生成模型通过酶活性位点支架设计提升催化效率，需引入生物学催化位点知识优化功能属性",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "酶活性位点支架",
+            "target": "催化位点",
+            "relation": "包含",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "催化位点的空间构型决定酶设计的功能可行性",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "催化位点",
+            "target": "模块邻接折叠信息",
+            "relation": "依赖于",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "模块邻接折叠信息的精确建模可增强催化位点设计的结构稳定性",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "深度学习方法",
+            "target": "生成模型",
+            "relation": "应用于",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "深度学习方法 应用于 生成模型",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "生成模型",
+            "target": "迭代生成过程",
+            "relation": "基于",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "生成模型 基于 迭代生成过程",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "迭代生成过程",
+            "target": "酶活性位点支架",
+            "relation": "实现",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "迭代生成过程 实现 酶活性位点支架",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "蛋白质结构去噪任务",
+            "target": "去噪扩散概率模型",
+            "relation": "应用于",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "蛋白质结构去噪任务 应用于 去噪扩散概率模型",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "去噪扩散概率模型",
+            "target": "结构预测网络",
+            "relation": "改进",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "去噪扩散概率模型 改进",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "结构预测网络",
+            "target": "拓扑约束蛋白质单体设计",
+            "relation": "优化",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "优化 拓扑约束蛋白质单体设计",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "去噪扩散概率模型",
+            "target": "酶活性位点支架",
+            "relation": "通过条件信息优化",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "去噪扩散概率模型 通过条件信息优化 酶活性位点支架",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "酶活性位点支架",
+            "target": "冷冻电子显微镜",
+            "relation": "实现催化位点精确建模",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "酶活性位点支架 实现催化位点精确建模 冷冻电子显微镜",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "冷冻电子显微镜",
+            "target": "金属结合蛋白设计",
+            "relation": "验证结构准确性",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "冷冻电子显微镜 验证结构准确性 金属结合蛋白设计",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "旋转等变扩散模型",
+            "target": "对称寡聚体设计",
+            "relation": "构建全局表示框架",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "旋转等变扩散模型 构建全局表示框架 对称寡聚体设计",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "对称寡聚体设计",
+            "target": "迭代生成过程",
+            "relation": "依赖模块邻接折叠信息",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "对称寡聚体设计 依赖模块邻接折叠信息 迭代生成过程",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "迭代生成过程",
+            "target": "冷冻电子显微镜",
+            "relation": "输出三维结构模型",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "迭代生成过程 输出三维结构模型 冷冻电子显微镜",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          }
+        ]
+      },
+      "metrics": {
+        "path_consistency": 0.1111111111111111,
+        "coverage": 0.5172413793103449,
+        "bridging_score": 0.4583333333333333,
+        "rao_stirling_diversity": 0.1662,
+        "embedding_bridging": 0.8742,
+        "consistency_precision": 0.0,
+        "consistency_recall": 0.0,
+        "consistency_f1": 0.0,
+        "info_novelty": 0.0,
+        "chain_coherence": 0.7564,
+        "atypical_combination": 0.5622,
+        "kg_density": 0.0308,
+        "kg_inverse_modularity": 0.9,
+        "kg_largest_cc_ratio": 0.6552,
+        "kg_avg_betweenness": 0.0304,
+        "kg_clustering_coefficient": 0.1034,
+        "concept_recall": 0.0,
+        "concept_precision": 0.0,
+        "concept_f1": 0.0,
+        "relation_precision": 0.0,
+        "relation_type_accuracy": 0.0,
+        "evidence_coverage": 0.0,
+        "path_alignment_best": 0.0,
+        "path_alignment_mean": 0.0
+      }
+    },
+    "raw": "/* stage1: struct */\n/* concepts round1 */\n{\n  \"meta\": {\n    \"title\": \"De novo design of protein structure and function with RFdiffusion\",\n    \"primary\": \"计算机科学技术\",\n    \"secondary_list\": [\"计算机科学技术\", \"生物学\"]\n  },\n  \"概念\": {\n    \"主学科\": [\n      {\n        \"term\": \"deep-learning methods\",\n        \"normalized\": \"深度学习方法\",\n        \"std_label\": \"深度学习\",\n        \"evidence\": \"considerable recent progress in designing new proteins using deep-learning methods\",\n        \"source\": \"abstract\",\n        \"confidence\": 0.95\n      },\n      {\n        \"term\": \"Diffusion models\",\n        \"normalized\": \"扩散模型\",\n        \"std_label\": \"扩散模型\",\n        \"evidence\": \"Diffusion models have had considerable success in image and language generative modelling\",\n        \"source\": \"abstract\",\n        \"confidence\": 0.98\n      },\n      {\n        \"term\": \"RoseTTAFold structure prediction network\",\n        \"normalized\": \"RoseTTAFold结构预测网络\",\n        \"std_label\": \"蛋白质结构预测\",\n        \"evidence\": \"fine-tuning the RoseTTAFold structure prediction network on protein structure denoising tasks\",\n        \"source\": \"abstract\",\n        \"confidence\": 0.97\n      },\n      {\n        \"term\": \"generative model\",\n        \"normalized\": \"生成模型\",\n        \"std_label\": \"生成模型\",\n        \"evidence\": \"generative model of protein backbones\",\n        \"source\": \"abstract\",\n        \"confidence\": 0.93\n      },\n      {\n        \"term\": \"Denoising diffusion probabilistic models (DDPMs)\",\n        \"normalized\": \"去噪扩散概率模型\",\n        \"std_label\": \"扩散模型\",\n        \"evidence\": \"Denoising diffusion probabilistic models (DDPMs)\",\n        \"source\": \"introduction\",\n        \"confidence\": 0.96\n      },\n      {\n        \"term\": \"Gaussian noise\",\n        \"normalized\": \"高斯噪声\",\n        \"std_label\": \"高斯噪声\",\n        \"evidence\": \"corrupted with Gaussian noise\",\n        \"source\": \"introduction\",\n        \"confidence\": 0.92\n      },\n      {\n        \"term\": \"rotationally equivariant DDPMs\",\n        \"normalized\": \"旋转等变扩散模型\",\n        \"std_label\": \"旋转等变模型\",\n        \"evidence\": \"rotationally equivariant DDPMs can do this in a global representation frame\",\n        \"source\": \"introduction\",\n        \"confidence\": 0.94\n      },\n      {\n        \"term\": \"AlphaFold2 (AF2)\",\n        \"normalized\": \"AlphaFold2\",\n        \"std_label\": \"蛋白质结构预测\",\n        \"evidence\": \"AlphaFold2 (ref. 17) (AF2)\",\n        \"source\": \"introduction\",\n        \"confidence\": 0.98\n      },\n      {\n        \"term\": \"rigid-frame representation\",\n        \"normalized\": \"刚性框架表示\",\n        \"std_label\": \"表示学习\",\n        \"evidence\": \"rigid-frame representation of residues\",\n        \"source\": \"introduction\",\n        \"confidence\": 0.91\n      },\n      {\n        \"term\": \"RFdiffusion\",\n        \"normalized\": \"RFdiffusion\",\n        \"std_label\": \"蛋白质设计\",\n        \"evidence\": \"method called RoseTTAFold diffusion (RFdiffusion)\",\n        \"source\": \"abstract\",\n        \"confidence\": 0.99\n      }\n    ],\n    \"辅学科\": {\n      \"计算机科学技术\": [\n        {\n          \"term\": \"protein structure denoising tasks\",\n          \"normalized\": \"蛋白质结构去噪任务\",\n          \"std_label\": \"去噪任务\",\n          \"evidence\": \"fine-tuning the RoseTTAFold structure prediction network on protein structure denoising tasks\",\n          \"source\": \"abstract\",\n          \"confidence\": 0.93\n        },\n        {\n          \"term\": \"topology-constrained protein monomer design\",\n          \"normalized\": \"拓扑约束蛋白质单体设计\",\n          \"std_label\": \"约束设计\",\n          \"evidence\": \"topology-constrained protein monomer design\",\n          \"source\": \"abstract\",\n          \"confidence\": 0.92\n        },\n        {\n          \"term\": \"symmetric motif scaffolding\",\n          \"normalized\": \"对称基序支架\",\n          \"std_label\": \"结构设计\",\n          \"evidence\": \"symmetric motif scaffolding for therapeutic and metal-binding protein design\",\n          \"source\": \"abstract\",\n          \"confidence\": 0.94\n        },\n        {\n          \"term\": \"iterative generation process\",\n          \"normalized\": \"迭代生成过程\",\n          \"std_label\": \"生成模型\",\n          \"evidence\": \"iterative generation process towards specific design objectives\",\n          \"source\": \"introduction\",\n          \"confidence\": 0.91\n        },\n        {\n          \"term\": \"conditioning information\",\n          \"normalized\": \"条件信息\",\n          \"std_label\": \"条件生成\",\n          \"evidence\": \"conditioning information\",\n          \"source\": \"introduction\",\n          \"confidence\": 0.93\n        }\n      ],\n      \"生物学\": [\n        {\n          \"term\": \"protein binder design\",\n          \"normalized\": \"蛋白质结合剂设计\",\n          \"std_label\": \"蛋白质设计\",\n          \"evidence\": \"protein binder design\",\n          \"source\": \"abstract\",\n          \"confidence\": 0.96\n        },\n        {\n          \"term\": \"symmetric oligomer design\",\n          \"normalized\": \"对称寡聚体设计\",\n          \"std_label\": \"蛋白质设计\",\n          \"evidence\": \"symmetric oligomer design\",\n          \"source\": \"abstract\",\n          \"confidence\": 0.95\n        },\n        {\n          \"term\": \"enzyme active site scaffolding\",\n          \"normalized\": \"酶活性位点支架\",\n          \"std_label\": \"酶设计\",\n          \"evidence\": \"enzyme active site scaffolding\",\n          \"source\": \"abstract\",\n          \"confidence\": 0.94\n        },\n        {\n          \"term\": \"metal-binding protein design\",\n          \"normalized\": \"金属结合蛋白设计\",\n          \"std_label\": \"蛋白质设计\",\n          \"evidence\": \"metal-binding protein design\",\n          \"source\": \"abstract\",\n          \"confidence\": 0.95\n        },\n        {\n          \"term\": \"cryogenic electron microscopy\",\n          \"normalized\": \"冷冻电子显微镜\",\n          \"std_label\": \"结构生物学\",\n          \"evidence\": \"cryogenic electron microscopy structure\",\n          \"source\": \"abstract\",\n          \"confidence\": 0.97\n        },\n        {\n          \"term\": \"influenza haemagglutinin\",\n          \"normalized\": \"流感血球凝集素\",\n          \"std_label\": \"病毒蛋白\",\n          \"evidence\": \"influenza haemagglutinin\",\n          \"source\": \"abstract\",\n          \"confidence\": 0.96\n        },\n        {\n          \"term\": \"catalytic site\",\n          \"normalized\": \"催化位点\",\n          \"std_label\": \"酶活性位点\",\n          \"evidence\": \"containing a catalytic site\",\n          \"source\": \"introduction\",\n          \"confidence\": 0.93\n        },\n        {\n          \"term\": \"secondary structure\",\n          \"normalized\": \"二级结构\",\n          \"std_label\": \"蛋白质结构\",\n          \"evidence\": \"secondary structure and block-adjacency\",\n          \"source\": \"introduction\",\n          \"confidence\": 0.94\n        },\n        {\n          \"term\": \"block-adjacency ('fold') information\",\n          \"normalized\": \"模块邻接（折叠）信息\",\n          \"std_label\": \"结构信息\",\n          \"evidence\": \"block-adjacency ('fold') information\",\n          \"source\": \"introduction\",\n          \"confidence\": 0.92\n        }\n      ]\n    }\n  }\n}\n\n/* concepts round2 (supplement) */\n{\"补充概念\": {\"主学科\": [], \"辅学科\": {}}}\n\n/* relations */\n{\n  \"跨学科关系\": [\n    {\n      \"head\": \"深度学习方法\",\n      \"tail\": \"蛋白质结合剂设计\",\n      \"relation\": \"应用于\",\n      \"relation_type\": \"method_applied_to\",\n      \"direction\": \"->\",\n      \"evidence\": \"considerable recent progress in designing new proteins using deep-learning methods\",\n      \"source\": \"abstract\",\n      \"confidence\": 0.95\n    },\n    {\n      \"head\": \"扩散模型\",\n      \"tail\": \"对称寡聚体设计\",\n      \"relation\": \"成功应用于\",\n      \"relation_type\": \"method_applied_to\",\n      \"direction\": \"->\",\n      \"evidence\": \"Diffusion models have had considerable success in image and language generative modelling but limited success when applied to protein modelling\",\n      \"source\": \"abstract\",\n      \"confidence\": 0.92\n    },\n    {\n      \"head\": \"生成模型\",\n      \"tail\": \"酶活性位点支架\",\n      \"relation\": \"实现\",\n      \"relation_type\": \"improves_metric\",\n      \"direction\": \"->\",\n      \"quant\": {\"metric\": \"设计准确性\", \"value\": \"outstanding performance\"},\n      \"evidence\": \"generative model of protein backbones that achieves outstanding performance on... enzyme active site scaffolding\",\n      \"source\": \"abstract\",\n      \"confidence\": 0.93\n    },\n    {\n      \"head\": \"去噪扩散概率模型\",\n      \"tail\": \"拓扑约束蛋白质单体设计\",\n      \"relation\": \"通过去噪任务实现\",\n      \"relation_type\": \"extends\",\n      \"direction\": \"->\",\n      \"evidence\": \"Denoising diffusion probabilistic models (DDPMs)... can be guided towards specific design objectives through provision of conditioning information\",\n      \"source\": \"introduction\",\n      \"confidence\": 0.94\n    },\n    {\n      \"head\": \"旋转等变模型\",\n      \"tail\": \"三维结构建模\",\n      \"relation\": \"实现全局表示\",\n      \"relation_type\": \"maps_to\",\n      \"direction\": \"->\",\n      \"evidence\": \"rotationally equivariant DDPMs can do this in a global representation frame independent manner\",\n      \"source\": \"introduction\",\n      \"confidence\": 0.91\n    },\n    {\n      \"head\": \"AlphaFold2\",\n      \"tail\": \"蛋白质结构预测网络\",\n      \"relation\": \"改进基础模型\",\n      \"relation_type\": \"generalizes\",\n      \"direction\": \"->\",\n      \"evidence\": \"AlphaFold2... properties well suited for use in a protein design DDPM\",\n      \"source\": \"introduction\",\n      \"confidence\": 0.89\n    },\n    {\n      \"head\": \"RFdiffusion\",\n      \"tail\": \"金属结合蛋白设计\",\n      \"relation\": \"实现功能设计\",\n      \"relation_type\": \"method_applied_to\",\n      \"direction\": \"->\",\n      \"evidence\": \"method called RoseTTAFold diffusion (RFdiffusion)... metal-binding protein design\",\n      \"source\": \"abstract\",\n      \"confidence\": 0.97\n    },\n    {\n      \"head\": \"迭代生成过程\",\n      \"tail\": \"条件信息\",\n      \"relation\": \"依赖于\",\n      \"relation_type\": \"depends_on\",\n      \"direction\": \"->\",\n      \"evidence\": \"iterative generation process towards specific design objectives through provision of conditioning information\",\n      \"source\": \"introduction\",\n      \"confidence\": 0.90\n    },\n    {\n      \"head\": \"冷冻电子显微镜\",\n      \"tail\": \"设计模型验证\",\n      \"relation\": \"验证方法\",\n      \"relation_type\": \"corresponds_to\",\n      \"direction\": \"->\",\n      \"evidence\": \"accuracy confirmed by cryogenic electron microscopy structure nearly identical to design model\",\n      \"source\": \"abstract\",\n      \"confidence\": 0.95\n    },\n    {\n      \"head\": \"刚性框架表示\",\n      \"tail\": \"蛋白质残基建模\",\n      \"relation\": \"实现精确建模\",\n      \"relation_type\": \"improves_metric\",\n      \"direction\": \"->\",\n      \"quant\": {\"metric\": \"结构精度\", \"value\": \"high precision\"},\n      \"evidence\": \"rigid-frame representation of residues with rotational equivariance generates protein structures with high precision\",\n      \"source\": \"introduction\",\n      \"confidence\": 0.88\n    }\n  ]\n}\n\n/* stage2: query */\n{\n  \"按辅助学科分类\": {\n    \"生物学\": {\n      \"概念\": [\n        \"蛋白质结合剂设计\",\n        \"对称寡聚体设计\",\n        \"酶活性位点支架\",\n        \"金属结合蛋白设计\",\n        \"冷冻电子显微镜\",\n        \"流感血球凝集素\",\n        \"催化位点\",\n        \"二级结构\",\n        \"模块邻接折叠信息\"\n      ],\n      \"关系\": [0, 1, 2, 6, 8],\n      \"rationale\": \"生物学为蛋白质设计提供应用场景和实验验证方法\"\n    }\n  },\n  \"查询\": {\n    \"一级\": \"如何通过深度学习方法实现蛋白质结构与功能的从头设计\",\n    \"二级\": [\n      \"深度学习方法如何提升酶活性位点支架的设计准确性\",\n      \"蛋白质结构去噪任务如何优化拓扑约束单体设计\"\n    ],\n    \"三级\": [\n      \"去噪扩散概率模型如何结合酶活性位点支架设计并通过冷冻电子显微镜验证结构\",\n      \"旋转等变模型如何通过全局表示框架改进对称寡聚体设计流程\"\n    ]\n  }\n}\n\n/* stage3: hypothesis L1 */\n{\n  \"假设\": {\n    \"一级\": [\n      [\n        {\n          \"step\": 1,\n          \"head\": \"深度学习方法\",\n          \"relation\": \"应用于\",\n          \"tail\": \"蛋白质结合剂设计\",\n          \"claim\": \"深度学习方法通过蛋白质结合剂设计实现功能创新，需结合生物学验证方法提升结构精度\"\n        },\n        {\n          \"step\": 2,\n          \"head\": \"蛋白质结合剂设计\",\n          \"relation\": \"依赖于\",\n          \"tail\": \"冷冻电子显微镜\",\n          \"claim\": \"冷冻电子显微镜的验证能力可弥补计算设计的结构偏差\"\n        },\n        {\n          \"step\": 3,\n          \"head\": \"冷冻电子显微镜\",\n          \"relation\": \"验证设计模型\",\n          \"tail\": \"金属结合蛋白设计\",\n          \"claim\": \"金属结合蛋白设计的三维结构需通过冷冻电子显微镜验证实现功能优化\"\n        }\n      ],\n      [\n        {\n          \"step\": 1,\n          \"head\": \"生成模型\",\n          \"relation\": \"实现\",\n          \"tail\": \"酶活性位点支架\",\n          \"claim\": \"生成模型通过酶活性位点支架设计提升催化效率，需引入生物学催化位点知识优化功能属性\"\n        },\n        {\n          \"step\": 2,\n          \"head\": \"酶活性位点支架\",\n          \"relation\": \"包含\",\n          \"tail\": \"催化位点\",\n          \"claim\": \"催化位点的空间构型决定酶设计的功能可行性\"\n        },\n        {\n          \"step\": 3,\n          \"head\": \"催化位点\",\n          \"relation\": \"依赖于\",\n          \"tail\": \"模块邻接折叠信息\",\n          \"claim\": \"模块邻接折叠信息的精确建模可增强催化位点设计的结构稳定性\"\n        }\n      ]\n    ],\n    \"一级总结\": [\n      \"主学科深度学习方法在蛋白质功能设计存在结构验证瓶颈，需生物学冷冻电子显微镜技术补位实现精准验证\",\n      \"主学科生成模型在酶活性位点设计存在功能适配瓶颈，需生物学催化位点知识补位提升催化效率\"\n    ]\n  }\n}\n\n/* stage3: hypothesis L2 */\n{\n  \"假设\": {\n    \"二级\": [\n      [\n        {\n          \"step\": 1,\n          \"head\": \"深度学习方法\",\n          \"relation\": \"应用于\",\n          \"tail\": \"生成模型\"\n        },\n        {\n          \"step\": 2,\n          \"head\": \"生成模型\",\n          \"relation\": \"基于\",\n          \"tail\": \"迭代生成过程\"\n        },\n        {\n          \"step\": 3,\n          \"head\": \"迭代生成过程\",\n          \"relation\": \"实现\",\n          \"tail\": \"酶活性位点支架\"\n        }\n      ],\n      [\n        {\n          \"step\": 1,\n          \"head\": \"蛋白质结构去噪任务\",\n          \"relation\": \"应用于\",\n          \"tail\": \"去噪扩散概率模型\"\n        },\n        {\n          \"step\": 2,\n          \"head\": \"去噪扩散概率模型\",\n          \"relation\": \"改进\",\n          \"tail\": \"AlphaFold2\"\n        },\n        {\n          \"step\": 3,\n          \"head\": \"AlphaFold2\",\n          \"relation\": \"优化\",\n          \"tail\": \"拓扑约束蛋白质单体设计\"\n        }\n      ]\n    ],\n    \"二级总结\": [\n      \"深度学习方法通过生成模型的迭代生成机制，将酶活性位点支架设计转化为可计算的序列生成问题\",\n      \"蛋白质结构去噪任务利用扩散模型对AlphaFold2的改进能力，将拓扑约束转化为结构能量空间的优化问题\"\n    ]\n  }\n}\n\n/* stage3: hypothesis L3 */\n{\n  \"假设\": {\n    \"三级\": [\n      [\n        {\n          \"step\": 1,\n          \"head\": \"去噪扩散概率模型\",\n          \"relation\": \"通过条件信息优化\",\n          \"tail\": \"酶活性位点支架\"\n        },\n        {\n          \"step\": 2,\n          \"head\": \"酶活性位点支架\",\n          \"relation\": \"实现催化位点精确建模\",\n          \"tail\": \"冷冻电子显微镜\"\n        },\n        {\n          \"step\": 3,\n          \"head\": \"冷冻电子显微镜\",\n          \"relation\": \"验证结构准确性\",\n          \"tail\": \"金属结合蛋白设计\"\n        }\n      ],\n      [\n        {\n          \"step\": 1,\n          \"head\": \"旋转等变扩散模型\",\n          \"relation\": \"构建全局表示框架\",\n          \"tail\": \"对称寡聚体设计\"\n        },\n        {\n          \"step\": 2,\n          \"head\": \"对称寡聚体设计\",\n          \"relation\": \"依赖模块邻接折叠信息\",\n          \"tail\": \"迭代生成过程\"\n        },\n        {\n          \"step\": 3,\n          \"head\": \"迭代生成过程\",\n          \"relation\": \"输出三维结构模型\",\n          \"tail\": \"冷冻电子显微镜\"\n        }\n      ]\n    ],\n    \"三级总结\": [\n      \"去噪扩散概率模型利用条件信息优化酶活性位点支架设计，并通过冷冻电子显微镜验证催化位点空间构象的准确性\",\n      \"旋转等变扩散模型通过全局表示框架生成对称寡聚体设计，结合迭代生成过程与模块邻接折叠信息，最终由冷冻电子显微镜验证三维结构模型\"\n    ]\n  }\n}",
+    "ok": true,
+    "error": ""
+  },
+  {
+    "title": "Students’ voices on generative AI: perceptions, benefits, and challenges in higher education",
+    "abstract": "Abstract This study explores university students’ perceptions of generative AI (GenAI) technologies, such as ChatGPT, in higher education, focusing on familiarity, their willingness to engage, potential benefits and challenges, and effective integration. A survey of 399 undergraduate and postgraduate students from various disciplines in Hong Kong revealed a generally positive attitude towards GenAI in teaching and learning. Students recognized the potential for personalized learning support, writing and brainstorming assistance, and research and analysis capabilities. However, concerns about accuracy, privacy, ethical issues, and the impact on personal development, career prospects, and societal values were also expressed. According to John Biggs’ 3P model, student perceptions significantly influence learning approaches and outcomes. By understanding students’ perceptions, educators and policymakers can tailor GenAI technologies to address needs and concerns while promoting effective learning outcomes. Insights from this study can inform policy development around the integration of GenAI technologies into higher education. By understanding students’ perceptions and addressing their concerns, policymakers can create well-informed guidelines and strategies for the responsible and effective implementation of GenAI tools, ultimately enhancing teaching and learning experiences in higher education.",
+    "pdf_url": "https://doi.org/10.1186/s41239-023-00411-8",
+    "primary": "计算机科学技术",
+    "secondary": "计算机科学技术, 社会学",
+    "secondary_list": [
+      "计算机科学技术",
+      "社会学"
+    ],
+    "introduction": "",
+    "journal": "International Journal of Educational Technology in Higher Education",
+    "journal_id": "https://openalex.org/S4210201537",
+    "issn_l": "2365-9440",
+    "source_type": "journal",
+    "doi": "https://doi.org/10.1186/s41239-023-00411-8",
+    "publication_date": "2023-07-16",
+    "publication_year": 2023,
+    "fwci": 71.62743844,
+    "cited_by_count": 1369,
+    "field": "Artificial Intelligence in Healthcare and Education",
+    "parsed": {
+      "meta": {
+        "title": "Students’ voices on generative AI: perceptions, benefits, and challenges in higher education",
+        "primary": "计算机科学技术",
+        "secondary_list": [
+          "计算机科学技术",
+          "社会学"
+        ],
+        "journal": "International Journal of Educational Technology in Higher Education",
+        "journal_id": "https://openalex.org/S4210201537",
+        "issn_l": "2365-9440",
+        "source_type": "journal",
+        "doi": "https://doi.org/10.1186/s41239-023-00411-8",
+        "publication_date": "2023-07-16",
+        "publication_year": 2023,
+        "fwci": 71.62743844,
+        "cited_by_count": 1369,
+        "field": "Artificial Intelligence in Healthcare and Education"
+      },
+      "概念": {
+        "主学科": [
+          {
+            "term": "generative AI",
+            "normalized": "Generative Artificial Intelligence",
+            "std_label": "生成式人工智能",
+            "evidence": "students’ perceptions of generative AI (GenAI) technologies",
+            "source": "abstract",
+            "confidence": 0.95
+          },
+          {
+            "term": "ChatGPT",
+            "normalized": "ChatGPT",
+            "std_label": null,
+            "evidence": "such as ChatGPT",
+            "source": "abstract",
+            "confidence": 0.9
+          },
+          {
+            "term": "GenAI technologies",
+            "normalized": "Generative AI technologies",
+            "std_label": null,
+            "evidence": "generative AI (GenAI) technologies",
+            "source": "abstract",
+            "confidence": 0.9
+          },
+          {
+            "term": "personalized learning support",
+            "normalized": "personalized learning support",
+            "std_label": null,
+            "evidence": "potential for personalized learning support",
+            "source": "abstract",
+            "confidence": 0.85
+          },
+          {
+            "term": "writing and brainstorming assistance",
+            "normalized": "writing and brainstorming assistance",
+            "std_label": null,
+            "evidence": "writing and brainstorming assistance",
+            "source": "abstract",
+            "confidence": 0.8
+          },
+          {
+            "term": "research and analysis capabilities",
+            "normalized": "research and analysis capabilities",
+            "std_label": null,
+            "evidence": "research and analysis capabilities",
+            "source": "abstract",
+            "confidence": 0.8
+          },
+          {
+            "term": "accuracy",
+            "normalized": "accuracy",
+            "std_label": null,
+            "evidence": "concerns about accuracy",
+            "source": "abstract",
+            "confidence": 0.85
+          },
+          {
+            "term": "privacy",
+            "normalized": "privacy",
+            "std_label": null,
+            "evidence": "privacy, ethical issues",
+            "source": "abstract",
+            "confidence": 0.85
+          },
+          {
+            "term": "ethical issues",
+            "normalized": "ethical issues",
+            "std_label": null,
+            "evidence": "privacy, ethical issues",
+            "source": "abstract",
+            "confidence": 0.85
+          },
+          {
+            "term": "integration of GenAI technologies",
+            "normalized": "integration of GenAI technologies",
+            "std_label": null,
+            "evidence": "effective integration",
+            "source": "abstract",
+            "confidence": 0.8
+          },
+          {
+            "term": "responsible and effective implementation",
+            "normalized": "responsible and effective implementation",
+            "std_label": null,
+            "evidence": "responsible and effective implementation of GenAI tools",
+            "source": "abstract",
+            "confidence": 0.75
+          },
+          {
+            "term": "teaching and learning experiences",
+            "normalized": "teaching and learning experiences",
+            "std_label": null,
+            "evidence": "enhancing teaching and learning experiences",
+            "source": "abstract",
+            "confidence": 0.8
+          }
+        ],
+        "辅学科": {
+          "社会学": [
+            {
+              "term": "John Biggs’ 3P model",
+              "normalized": "' 3",
+              "std_label": null,
+              "evidence": "According to John Biggs’ 3P model",
+              "source": "abstract",
+              "confidence": 0.9
+            },
+            {
+              "term": "survey",
+              "normalized": "survey",
+              "std_label": null,
+              "evidence": "A survey of 399 undergraduate",
+              "source": "abstract",
+              "confidence": 0.85
+            },
+            {
+              "term": "undergraduate and postgraduate students",
+              "normalized": "undergraduate and postgraduate students",
+              "std_label": null,
+              "evidence": "undergraduate and postgraduate students",
+              "source": "abstract",
+              "confidence": 0.9
+            },
+            {
+              "term": "policy development",
+              "normalized": "policy development",
+              "std_label": null,
+              "evidence": "policy development around the integration",
+              "source": "abstract",
+              "confidence": 0.8
+            },
+            {
+              "term": "policymakers",
+              "normalized": "policymakers",
+              "std_label": null,
+              "evidence": "policymakers can create well-informed guidelines",
+              "source": "abstract",
+              "confidence": 0.75
+            },
+            {
+              "term": "guidelines and strategies",
+              "normalized": "guidelines and strategies",
+              "std_label": null,
+              "evidence": "guidelines and strategies for the responsible",
+              "source": "abstract",
+              "confidence": 0.75
+            },
+            {
+              "term": "impact on personal development",
+              "normalized": "impact on personal development",
+              "std_label": null,
+              "evidence": "impact on personal development",
+              "source": "abstract",
+              "confidence": 0.8
+            },
+            {
+              "term": "career prospects",
+              "normalized": "career prospects",
+              "std_label": null,
+              "evidence": "career prospects, and societal values",
+              "source": "abstract",
+              "confidence": 0.75
+            },
+            {
+              "term": "societal values",
+              "normalized": "societal values",
+              "std_label": null,
+              "evidence": "societal values were also expressed",
+              "source": "abstract",
+              "confidence": 0.75
+            },
+            {
+              "term": "higher education",
+              "normalized": "higher education",
+              "std_label": null,
+              "evidence": "in higher education",
+              "source": "abstract",
+              "confidence": 0.85
+            }
+          ]
+        }
+      },
+      "跨学科关系": [
+        {
+          "head": "John Biggs’ 3P model",
+          "relation": "applies to analyze perceptions of",
+          "relation_type": "method_applied_to",
+          "relation_type_norm": "method_applied_to",
+          "relation_type_raw": "method_applied_to",
+          "tail": "Generative Artificial Intelligence",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "According to John Biggs’ 3P model, student perceptions significantly influence learning approaches and outcomes",
+          "source": "abstract",
+          "confidence": 0.85
+        },
+        {
+          "head": "survey",
+          "relation": "used to investigate integration of",
+          "relation_type": "method_applied_to",
+          "relation_type_norm": "method_applied_to",
+          "relation_type_raw": "method_applied_to",
+          "tail": "Generative AI technologies",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "A survey of 399 undergraduate and postgraduate students... revealed perceptions towards GenAI",
+          "source": "abstract",
+          "confidence": 0.8
+        },
+        {
+          "head": "policy development",
+          "relation": "focuses on regulating",
+          "relation_type": "constrains",
+          "relation_type_norm": "constrains",
+          "relation_type_raw": "constrains",
+          "tail": "integration of GenAI technologies",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "policy development around the integration of GenAI technologies",
+          "source": "abstract",
+          "confidence": 0.75
+        },
+        {
+          "head": "undergraduate and postgraduate students",
+          "relation": "benefit from",
+          "relation_type": "improves_metric",
+          "relation_type_norm": "improves_metric",
+          "relation_type_raw": "improves_metric",
+          "tail": "personalized learning support",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "students recognized the potential for personalized learning support",
+          "source": "abstract",
+          "confidence": 0.8
+        },
+        {
+          "head": "policymakers",
+          "relation": "promote",
+          "relation_type": "extends",
+          "relation_type_norm": "extends",
+          "relation_type_raw": "extends",
+          "tail": "responsible and effective implementation",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "policymakers can create well-informed guidelines for responsible implementation",
+          "source": "abstract",
+          "confidence": 0.7
+        },
+        {
+          "head": "higher education",
+          "relation": "context for enhancing",
+          "relation_type": "generalizes",
+          "relation_type_norm": "generalizes",
+          "relation_type_raw": "generalizes",
+          "tail": "teaching and learning experiences",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "enhancing teaching and learning experiences in higher education",
+          "source": "abstract",
+          "confidence": 0.8
+        }
+      ],
+      "按辅助学科分类": {
+        "社会学": {
+          "概念": [
+            "John Biggs’ 3P模型",
+            "调查",
+            "政策制定",
+            "高等教育",
+            "政策制定者",
+            "指南与策略"
+          ],
+          "关系": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "rationale": "社会学提供了教育政策分析框架与实证研究方法，支撑生成式人工智能在高等教育中的应用效果评估"
+        }
+      },
+      "查询": {
+        "一级": "生成式人工智能在高等教育中的应用效果与挑战研究",
+        "二级": [
+          "基于教育政策分析框架的生成式人工智能应用效果评估",
+          "结合实证调查的高等教育智能化教学影响研究"
+        ],
+        "三级": [
+          "整合社会学政策分析框架与计算机科学评估模型，构建生成式人工智能教育应用的多维度评价体系",
+          "通过教育实证调查数据训练人工智能评估模型，验证智能化教学工具对高等教育质量提升的协同效应"
+        ]
+      },
+      "假设": {
+        "一级": [
+          [
+            {
+              "step": 1,
+              "head": "Generative Artificial Intelligence",
+              "relation": "影响",
+              "tail": "ChatGPT",
+              "claim": "生成式人工智能技术通过高等教育场景提升教学体验"
+            },
+            {
+              "step": 2,
+              "head": "ChatGPT",
+              "relation": "导致",
+              "tail": "Generative AI technologies",
+              "claim": "社会学调查方法可量化人工智能对教育体验的影响"
+            },
+            {
+              "step": 3,
+              "head": "Generative AI technologies",
+              "relation": "促进",
+              "tail": "personalized learning support",
+              "claim": "社会学政策分析框架能系统解决生成式人工智能教育应用的伦理监管难题"
+            }
+          ],
+          [
+            {
+              "step": 1,
+              "head": "Generative Artificial Intelligence",
+              "relation": "影响",
+              "tail": "ChatGPT",
+              "claim": "生成式人工智能引发的学生伦理认知偏差需要干预"
+            },
+            {
+              "step": 2,
+              "head": "ChatGPT",
+              "relation": "导致",
+              "tail": "' 3",
+              "claim": "社会学理论模型可解析学生对技术应用的认知维度"
+            },
+            {
+              "step": 3,
+              "head": "' 3",
+              "relation": "促进",
+              "tail": "personalized learning support",
+              "claim": "社会学教育理论能指导生成式人工智能负责任实施的政策制定"
+            }
+          ]
+        ],
+        "二级": [
+          [
+            {
+              "step": 1,
+              "head": "Generative Artificial Intelligence",
+              "relation": "影响",
+              "tail": "ChatGPT",
+              "claim": "Generative Artificial Intelligence影响ChatGPT，构成该路径的起始环节。"
+            },
+            {
+              "step": 2,
+              "head": "ChatGPT",
+              "relation": "导致",
+              "tail": "Generative AI technologies",
+              "claim": "ChatGPT导致Generative AI technologies，形成可操作的中介环节。"
+            },
+            {
+              "step": 3,
+              "head": "Generative AI technologies",
+              "relation": "促进",
+              "tail": "personalized learning support",
+              "claim": "如果Generative AI technologies促进personalized learning support，则该路径的假设得到可检验的支持。"
+            }
+          ],
+          [
+            {
+              "step": 1,
+              "head": "Generative Artificial Intelligence",
+              "relation": "影响",
+              "tail": "ChatGPT",
+              "claim": "Generative Artificial Intelligence影响ChatGPT，构成该路径的起始环节。"
+            },
+            {
+              "step": 2,
+              "head": "ChatGPT",
+              "relation": "导致",
+              "tail": "Generative AI technologies",
+              "claim": "ChatGPT导致Generative AI technologies，形成可操作的中介环节。"
+            },
+            {
+              "step": 3,
+              "head": "Generative AI technologies",
+              "relation": "促进",
+              "tail": "personalized learning support",
+              "claim": "如果Generative AI technologies促进personalized learning support，则该路径的假设得到可检验的支持。"
+            }
+          ]
+        ],
+        "三级": [
+          [
+            {
+              "step": 1,
+              "head": "Generative Artificial Intelligence",
+              "relation": "影响",
+              "tail": "ChatGPT",
+              "claim": "Generative Artificial Intelligence影响ChatGPT，构成该路径的起始环节。"
+            },
+            {
+              "step": 2,
+              "head": "ChatGPT",
+              "relation": "导致",
+              "tail": "Generative AI technologies",
+              "claim": "ChatGPT导致Generative AI technologies，形成可操作的中介环节。"
+            },
+            {
+              "step": 3,
+              "head": "Generative AI technologies",
+              "relation": "促进",
+              "tail": "personalized learning support",
+              "claim": "如果Generative AI technologies促进personalized learning support，则该路径的假设得到可检验的支持。"
+            }
+          ],
+          [
+            {
+              "step": 1,
+              "head": "Generative Artificial Intelligence",
+              "relation": "影响",
+              "tail": "ChatGPT",
+              "claim": "Generative Artificial Intelligence影响ChatGPT，构成该路径的起始环节。"
+            },
+            {
+              "step": 2,
+              "head": "ChatGPT",
+              "relation": "导致",
+              "tail": "Generative AI technologies",
+              "claim": "ChatGPT导致Generative AI technologies，形成可操作的中介环节。"
+            },
+            {
+              "step": 3,
+              "head": "Generative AI technologies",
+              "relation": "促进",
+              "tail": "personalized learning support",
+              "claim": "如果Generative AI technologies促进personalized learning support，则该路径的假设得到可检验的支持。"
+            }
+          ]
+        ],
+        "一级总结": [
+          "生成式人工智能教育应用需社会学政策分析框架解决伦理监管问题",
+          "学生伦理认知偏差需社会学理论模型指导负责任实施政策制定"
+        ],
+        "二级总结": [
+          "政策开发通过规范生成式人工智能技术整合，提升教学体验并推动负责任实施",
+          "实证调查揭示人工智能技术通过个性化学习支持增强高等教育质量"
+        ],
+        "三级总结": [
+          "通过政策监管框架约束生成式技术整合，验证责任化实施对教学体验的提升作用，形成政策-技术-教育质量的闭环评估体系",
+          "利用实证调查分析生成式技术特性，通过个性化学习支持路径改善学生群体的学习成效，验证智能化工具与高等教育质量的协同效应"
+        ]
+      },
+      "graph": {
+        "nodes": [
+          {
+            "id": "Generative Artificial Intelligence",
+            "term": "generative AI",
+            "normalized": "Generative Artificial Intelligence",
+            "discipline": "计算机科学技术",
+            "evidence": "students’ perceptions of generative AI (GenAI) technologies",
+            "source": "abstract",
+            "confidence": 0.95
+          },
+          {
+            "id": "ChatGPT",
+            "term": "ChatGPT",
+            "normalized": "ChatGPT",
+            "discipline": "计算机科学技术",
+            "evidence": "such as ChatGPT",
+            "source": "abstract",
+            "confidence": 0.9
+          },
+          {
+            "id": "Generative AI technologies",
+            "term": "GenAI technologies",
+            "normalized": "Generative AI technologies",
+            "discipline": "计算机科学技术",
+            "evidence": "generative AI (GenAI) technologies",
+            "source": "abstract",
+            "confidence": 0.9
+          },
+          {
+            "id": "personalized learning support",
+            "term": "personalized learning support",
+            "normalized": "personalized learning support",
+            "discipline": "计算机科学技术",
+            "evidence": "potential for personalized learning support",
+            "source": "abstract",
+            "confidence": 0.85
+          },
+          {
+            "id": "writing and brainstorming assistance",
+            "term": "writing and brainstorming assistance",
+            "normalized": "writing and brainstorming assistance",
+            "discipline": "计算机科学技术",
+            "evidence": "writing and brainstorming assistance",
+            "source": "abstract",
+            "confidence": 0.8
+          },
+          {
+            "id": "research and analysis capabilities",
+            "term": "research and analysis capabilities",
+            "normalized": "research and analysis capabilities",
+            "discipline": "计算机科学技术",
+            "evidence": "research and analysis capabilities",
+            "source": "abstract",
+            "confidence": 0.8
+          },
+          {
+            "id": "accuracy",
+            "term": "accuracy",
+            "normalized": "accuracy",
+            "discipline": "计算机科学技术",
+            "evidence": "concerns about accuracy",
+            "source": "abstract",
+            "confidence": 0.85
+          },
+          {
+            "id": "privacy",
+            "term": "privacy",
+            "normalized": "privacy",
+            "discipline": "计算机科学技术",
+            "evidence": "privacy, ethical issues",
+            "source": "abstract",
+            "confidence": 0.85
+          },
+          {
+            "id": "ethical issues",
+            "term": "ethical issues",
+            "normalized": "ethical issues",
+            "discipline": "计算机科学技术",
+            "evidence": "privacy, ethical issues",
+            "source": "abstract",
+            "confidence": 0.85
+          },
+          {
+            "id": "integration of GenAI technologies",
+            "term": "integration of GenAI technologies",
+            "normalized": "integration of GenAI technologies",
+            "discipline": "计算机科学技术",
+            "evidence": "effective integration",
+            "source": "abstract",
+            "confidence": 0.8
+          },
+          {
+            "id": "responsible and effective implementation",
+            "term": "responsible and effective implementation",
+            "normalized": "responsible and effective implementation",
+            "discipline": "计算机科学技术",
+            "evidence": "responsible and effective implementation of GenAI tools",
+            "source": "abstract",
+            "confidence": 0.75
+          },
+          {
+            "id": "teaching and learning experiences",
+            "term": "teaching and learning experiences",
+            "normalized": "teaching and learning experiences",
+            "discipline": "计算机科学技术",
+            "evidence": "enhancing teaching and learning experiences",
+            "source": "abstract",
+            "confidence": 0.8
+          },
+          {
+            "id": "' 3",
+            "term": "John Biggs’ 3P model",
+            "normalized": "' 3",
+            "discipline": "社会学",
+            "evidence": "According to John Biggs’ 3P model",
+            "source": "abstract",
+            "confidence": 0.9
+          },
+          {
+            "id": "survey",
+            "term": "survey",
+            "normalized": "survey",
+            "discipline": "社会学",
+            "evidence": "A survey of 399 undergraduate",
+            "source": "abstract",
+            "confidence": 0.85
+          },
+          {
+            "id": "undergraduate and postgraduate students",
+            "term": "undergraduate and postgraduate students",
+            "normalized": "undergraduate and postgraduate students",
+            "discipline": "社会学",
+            "evidence": "undergraduate and postgraduate students",
+            "source": "abstract",
+            "confidence": 0.9
+          },
+          {
+            "id": "policy development",
+            "term": "policy development",
+            "normalized": "policy development",
+            "discipline": "社会学",
+            "evidence": "policy development around the integration",
+            "source": "abstract",
+            "confidence": 0.8
+          },
+          {
+            "id": "policymakers",
+            "term": "policymakers",
+            "normalized": "policymakers",
+            "discipline": "社会学",
+            "evidence": "policymakers can create well-informed guidelines",
+            "source": "abstract",
+            "confidence": 0.75
+          },
+          {
+            "id": "guidelines and strategies",
+            "term": "guidelines and strategies",
+            "normalized": "guidelines and strategies",
+            "discipline": "社会学",
+            "evidence": "guidelines and strategies for the responsible",
+            "source": "abstract",
+            "confidence": 0.75
+          },
+          {
+            "id": "impact on personal development",
+            "term": "impact on personal development",
+            "normalized": "impact on personal development",
+            "discipline": "社会学",
+            "evidence": "impact on personal development",
+            "source": "abstract",
+            "confidence": 0.8
+          },
+          {
+            "id": "career prospects",
+            "term": "career prospects",
+            "normalized": "career prospects",
+            "discipline": "社会学",
+            "evidence": "career prospects, and societal values",
+            "source": "abstract",
+            "confidence": 0.75
+          },
+          {
+            "id": "societal values",
+            "term": "societal values",
+            "normalized": "societal values",
+            "discipline": "社会学",
+            "evidence": "societal values were also expressed",
+            "source": "abstract",
+            "confidence": 0.75
+          },
+          {
+            "id": "higher education",
+            "term": "higher education",
+            "normalized": "higher education",
+            "discipline": "社会学",
+            "evidence": "in higher education",
+            "source": "abstract",
+            "confidence": 0.85
+          }
+        ],
+        "edges": [
+          {
+            "source": "' 3",
+            "target": "Generative Artificial Intelligence",
+            "relation": "applies to analyze perceptions of",
+            "relation_type": "method_applied_to",
+            "metadata": {
+              "evidence": "According to John Biggs’ 3P model, student perceptions significantly influence learning approaches and outcomes",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "survey",
+            "target": "Generative AI technologies",
+            "relation": "used to investigate integration of",
+            "relation_type": "method_applied_to",
+            "metadata": {
+              "evidence": "A survey of 399 undergraduate and postgraduate students... revealed perceptions towards GenAI",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "policy development",
+            "target": "integration of GenAI technologies",
+            "relation": "focuses on regulating",
+            "relation_type": "constrains",
+            "metadata": {
+              "evidence": "policy development around the integration of GenAI technologies",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "undergraduate and postgraduate students",
+            "target": "personalized learning support",
+            "relation": "benefit from",
+            "relation_type": "improves_metric",
+            "metadata": {
+              "evidence": "students recognized the potential for personalized learning support",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "policymakers",
+            "target": "responsible and effective implementation",
+            "relation": "promote",
+            "relation_type": "extends",
+            "metadata": {
+              "evidence": "policymakers can create well-informed guidelines for responsible implementation",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "higher education",
+            "target": "teaching and learning experiences",
+            "relation": "context for enhancing",
+            "relation_type": "generalizes",
+            "metadata": {
+              "evidence": "enhancing teaching and learning experiences in higher education",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "Generative Artificial Intelligence",
+            "target": "ChatGPT",
+            "relation": "影响",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "生成式人工智能技术通过高等教育场景提升教学体验",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "ChatGPT",
+            "target": "Generative AI technologies",
+            "relation": "导致",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "社会学调查方法可量化人工智能对教育体验的影响",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "Generative AI technologies",
+            "target": "personalized learning support",
+            "relation": "促进",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "社会学政策分析框架能系统解决生成式人工智能教育应用的伦理监管难题",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "Generative Artificial Intelligence",
+            "target": "ChatGPT",
+            "relation": "影响",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "生成式人工智能引发的学生伦理认知偏差需要干预",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "ChatGPT",
+            "target": "' 3",
+            "relation": "导致",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "社会学理论模型可解析学生对技术应用的认知维度",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "' 3",
+            "target": "personalized learning support",
+            "relation": "促进",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "社会学教育理论能指导生成式人工智能负责任实施的政策制定",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "Generative Artificial Intelligence",
+            "target": "ChatGPT",
+            "relation": "影响",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "Generative Artificial Intelligence影响ChatGPT，构成该路径的起始环节。",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "ChatGPT",
+            "target": "Generative AI technologies",
+            "relation": "导致",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "ChatGPT导致Generative AI technologies，形成可操作的中介环节。",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "Generative AI technologies",
+            "target": "personalized learning support",
+            "relation": "促进",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "如果Generative AI technologies促进personalized learning support，则该路径的假设得到可检验的支持。",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "Generative Artificial Intelligence",
+            "target": "ChatGPT",
+            "relation": "影响",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "Generative Artificial Intelligence影响ChatGPT，构成该路径的起始环节。",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "ChatGPT",
+            "target": "Generative AI technologies",
+            "relation": "导致",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "ChatGPT导致Generative AI technologies，形成可操作的中介环节。",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "Generative AI technologies",
+            "target": "personalized learning support",
+            "relation": "促进",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "如果Generative AI technologies促进personalized learning support，则该路径的假设得到可检验的支持。",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "Generative Artificial Intelligence",
+            "target": "ChatGPT",
+            "relation": "影响",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "Generative Artificial Intelligence影响ChatGPT，构成该路径的起始环节。",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "ChatGPT",
+            "target": "Generative AI technologies",
+            "relation": "导致",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "ChatGPT导致Generative AI technologies，形成可操作的中介环节。",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "Generative AI technologies",
+            "target": "personalized learning support",
+            "relation": "促进",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "如果Generative AI technologies促进personalized learning support，则该路径的假设得到可检验的支持。",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "Generative Artificial Intelligence",
+            "target": "ChatGPT",
+            "relation": "影响",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "Generative Artificial Intelligence影响ChatGPT，构成该路径的起始环节。",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "ChatGPT",
+            "target": "Generative AI technologies",
+            "relation": "导致",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "ChatGPT导致Generative AI technologies，形成可操作的中介环节。",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "Generative AI technologies",
+            "target": "personalized learning support",
+            "relation": "促进",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "如果Generative AI technologies促进personalized learning support，则该路径的假设得到可检验的支持。",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          }
+        ]
+      },
+      "metrics": {
+        "path_consistency": 0.0,
+        "coverage": 0.22727272727272727,
+        "bridging_score": 0.3333333333333333,
+        "rao_stirling_diversity": 0.035,
+        "embedding_bridging": 0.6419,
+        "consistency_precision": 0.0,
+        "consistency_recall": 0.0,
+        "consistency_f1": 0.0,
+        "info_novelty": 0.0,
+        "chain_coherence": 0.7884,
+        "atypical_combination": 0.343,
+        "kg_density": 0.0238,
+        "kg_inverse_modularity": 1.2645,
+        "kg_largest_cc_ratio": 0.3182,
+        "kg_avg_betweenness": 0.0039,
+        "kg_clustering_coefficient": 0.0758,
+        "concept_recall": 0.0,
+        "concept_precision": 0.0,
+        "concept_f1": 0.0,
+        "relation_precision": 0.0,
+        "relation_type_accuracy": 0.0,
+        "evidence_coverage": 0.0,
+        "path_alignment_best": 0.0,
+        "path_alignment_mean": 0.0
+      }
+    },
+    "raw": "/* stage1: struct */\n/* concepts round1 */\n{\n  \"meta\": {\n    \"title\": \"Students’ voices on generative AI: perceptions, benefits, and challenges in higher education\",\n    \"primary\": \"计算机科学技术\",\n    \"secondary_list\": [\"社会学\"]\n  },\n  \"概念\": {\n    \"主学科\": [\n      {\n        \"term\": \"generative AI\",\n        \"normalized\": \"Generative Artificial Intelligence\",\n        \"std_label\": \"生成式人工智能\",\n        \"evidence\": \"students’ perceptions of generative AI (GenAI) technologies\",\n        \"source\": \"abstract\",\n        \"confidence\": 0.95\n      },\n      {\n        \"term\": \"ChatGPT\",\n        \"normalized\": null,\n        \"std_label\": null,\n        \"evidence\": \"such as ChatGPT\",\n        \"source\": \"abstract\",\n        \"confidence\": 0.9\n      },\n      {\n        \"term\": \"GenAI technologies\",\n        \"normalized\": \"Generative AI technologies\",\n        \"std_label\": null,\n        \"evidence\": \"generative AI (GenAI) technologies\",\n        \"source\": \"abstract\",\n        \"confidence\": 0.9\n      },\n      {\n        \"term\": \"personalized learning support\",\n        \"normalized\": null,\n        \"std_label\": null,\n        \"evidence\": \"potential for personalized learning support\",\n        \"source\": \"abstract\",\n        \"confidence\": 0.85\n      },\n      {\n        \"term\": \"writing and brainstorming assistance\",\n        \"normalized\": null,\n        \"std_label\": null,\n        \"evidence\": \"writing and brainstorming assistance\",\n        \"source\": \"abstract\",\n        \"confidence\": 0.8\n      },\n      {\n        \"term\": \"research and analysis capabilities\",\n        \"normalized\": null,\n        \"std_label\": null,\n        \"evidence\": \"research and analysis capabilities\",\n        \"source\": \"abstract\",\n        \"confidence\": 0.8\n      },\n      {\n        \"term\": \"accuracy\",\n        \"normalized\": null,\n        \"std_label\": null,\n        \"evidence\": \"concerns about accuracy\",\n        \"source\": \"abstract\",\n        \"confidence\": 0.85\n      },\n      {\n        \"term\": \"privacy\",\n        \"normalized\": null,\n        \"std_label\": null,\n        \"evidence\": \"privacy, ethical issues\",\n        \"source\": \"abstract\",\n        \"confidence\": 0.85\n      },\n      {\n        \"term\": \"ethical issues\",\n        \"normalized\": null,\n        \"std_label\": null,\n        \"evidence\": \"privacy, ethical issues\",\n        \"source\": \"abstract\",\n        \"confidence\": 0.85\n      },\n      {\n        \"term\": \"integration of GenAI technologies\",\n        \"normalized\": null,\n        \"std_label\": null,\n        \"evidence\": \"effective integration\",\n        \"source\": \"abstract\",\n        \"confidence\": 0.8\n      },\n      {\n        \"term\": \"responsible and effective implementation\",\n        \"normalized\": null,\n        \"std_label\": null,\n        \"evidence\": \"responsible and effective implementation of GenAI tools\",\n        \"source\": \"abstract\",\n        \"confidence\": 0.75\n      },\n      {\n        \"term\": \"teaching and learning experiences\",\n        \"normalized\": null,\n        \"std_label\": null,\n        \"evidence\": \"enhancing teaching and learning experiences\",\n        \"source\": \"abstract\",\n        \"confidence\": 0.8\n      }\n    ],\n    \"辅学科\": {\n      \"社会学\": [\n        {\n          \"term\": \"John Biggs’ 3P model\",\n          \"normalized\": \"Biggs' 3P Model\",\n          \"std_label\": null,\n          \"evidence\": \"According to John Biggs’ 3P model\",\n          \"source\": \"abstract\",\n          \"confidence\": 0.9\n        },\n        {\n          \"term\": \"survey\",\n          \"normalized\": null,\n          \"std_label\": null,\n          \"evidence\": \"A survey of 399 undergraduate\",\n          \"source\": \"abstract\",\n          \"confidence\": 0.85\n        },\n        {\n          \"term\": \"undergraduate and postgraduate students\",\n          \"normalized\": null,\n          \"std_label\": null,\n          \"evidence\": \"undergraduate and postgraduate students\",\n          \"source\": \"abstract\",\n          \"confidence\": 0.9\n        },\n        {\n          \"term\": \"policy development\",\n          \"normalized\": null,\n          \"std_label\": null,\n          \"evidence\": \"policy development around the integration\",\n          \"source\": \"abstract\",\n          \"confidence\": 0.8\n        },\n        {\n          \"term\": \"policymakers\",\n          \"normalized\": null,\n          \"std_label\": null,\n          \"evidence\": \"policymakers can create well-informed guidelines\",\n          \"source\": \"abstract\",\n          \"confidence\": 0.75\n        },\n        {\n          \"term\": \"guidelines and strategies\",\n          \"normalized\": null,\n          \"std_label\": null,\n          \"evidence\": \"guidelines and strategies for the responsible\",\n          \"source\": \"abstract\",\n          \"confidence\": 0.75\n        },\n        {\n          \"term\": \"impact on personal development\",\n          \"normalized\": null,\n          \"std_label\": null,\n          \"evidence\": \"impact on personal development\",\n          \"source\": \"abstract\",\n          \"confidence\": 0.8\n        },\n        {\n          \"term\": \"career prospects\",\n          \"normalized\": null,\n          \"std_label\": null,\n          \"evidence\": \"career prospects, and societal values\",\n          \"source\": \"abstract\",\n          \"confidence\": 0.75\n        },\n        {\n          \"term\": \"societal values\",\n          \"normalized\": null,\n          \"std_label\": null,\n          \"evidence\": \"societal values were also expressed\",\n          \"source\": \"abstract\",\n          \"confidence\": 0.75\n        },\n        {\n          \"term\": \"higher education\",\n          \"normalized\": null,\n          \"std_label\": null,\n          \"evidence\": \"in higher education\",\n          \"source\": \"abstract\",\n          \"confidence\": 0.85\n        }\n      ]\n    }\n  }\n}\n\n/* concepts round2 (supplement) */\n{\"补充概念\": {\"主学科\": [], \"辅学科\": {}}}\n\n/* relations */\n{\n  \"跨学科关系\": [\n    {\n      \"head\": \"John Biggs’ 3P model\",\n      \"tail\": \"Generative Artificial Intelligence\",\n      \"relation\": \"applies to analyze perceptions of\",\n      \"relation_type\": \"method_applied_to\",\n      \"direction\": \"->\",\n      \"evidence\": \"According to John Biggs’ 3P model, student perceptions significantly influence learning approaches and outcomes\",\n      \"source\": \"abstract\",\n      \"confidence\": 0.85\n    },\n    {\n      \"head\": \"survey\",\n      \"tail\": \"Generative AI technologies\",\n      \"relation\": \"used to investigate integration of\",\n      \"relation_type\": \"method_applied_to\",\n      \"direction\": \"->\",\n      \"evidence\": \"A survey of 399 undergraduate and postgraduate students... revealed perceptions towards GenAI\",\n      \"source\": \"abstract\",\n      \"confidence\": 0.8\n    },\n    {\n      \"head\": \"policy development\",\n      \"tail\": \"integration of GenAI technologies\",\n      \"relation\": \"focuses on regulating\",\n      \"relation_type\": \"constrains\",\n      \"direction\": \"->\",\n      \"evidence\": \"policy development around the integration of GenAI technologies\",\n      \"source\": \"abstract\",\n      \"confidence\": 0.75\n    },\n    {\n      \"head\": \"undergraduate and postgraduate students\",\n      \"tail\": \"personalized learning support\",\n      \"relation\": \"benefit from\",\n      \"relation_type\": \"improves_metric\",\n      \"direction\": \"->\",\n      \"evidence\": \"students recognized the potential for personalized learning support\",\n      \"source\": \"abstract\",\n      \"confidence\": 0.8\n    },\n    {\n      \"head\": \"policymakers\",\n      \"tail\": \"responsible and effective implementation\",\n      \"relation\": \"promote\",\n      \"relation_type\": \"extends\",\n      \"direction\": \"->\",\n      \"evidence\": \"policymakers can create well-informed guidelines for responsible implementation\",\n      \"source\": \"abstract\",\n      \"confidence\": 0.7\n    },\n    {\n      \"head\": \"higher education\",\n      \"tail\": \"teaching and learning experiences\",\n      \"relation\": \"context for enhancing\",\n      \"relation_type\": \"generalizes\",\n      \"direction\": \"->\",\n      \"evidence\": \"enhancing teaching and learning experiences in higher education\",\n      \"source\": \"abstract\",\n      \"confidence\": 0.8\n    }\n  ]\n}\n\n/* stage2: query */\n{\n  \"按辅助学科分类\": {\n    \"社会学\": {\n      \"概念\": [\n        \"John Biggs’ 3P模型\",\n        \"调查\",\n        \"政策制定\",\n        \"高等教育\",\n        \"政策制定者\",\n        \"指南与策略\"\n      ],\n      \"关系\": [0, 1, 2, 3, 4, 5],\n      \"rationale\": \"社会学提供了教育政策分析框架与实证研究方法，支撑生成式人工智能在高等教育中的应用效果评估\"\n    }\n  },\n  \"查询\": {\n    \"一级\": \"生成式人工智能在高等教育中的应用效果与挑战研究\",\n    \"二级\": [\n      \"基于教育政策分析框架的生成式人工智能应用效果评估\",\n      \"结合实证调查的高等教育智能化教学影响研究\"\n    ],\n    \"三级\": [\n      \"整合社会学政策分析框架与计算机科学评估模型，构建生成式人工智能教育应用的多维度评价体系\",\n      \"通过教育实证调查数据训练人工智能评估模型，验证智能化教学工具对高等教育质量提升的协同效应\"\n    ]\n  }\n}\n\n/* stage3: hypothesis L1 */\n{\n  \"假设\": {\n    \"一级\": [\n      [\n        {\n          \"step\": 1,\n          \"head\": \"Generative AI technologies\",\n          \"relation\": \"context for enhancing\",\n          \"tail\": \"teaching and learning experiences\",\n          \"claim\": \"生成式人工智能技术通过高等教育场景提升教学体验\"\n        },\n        {\n          \"step\": 2,\n          \"head\": \"teaching and learning experiences\",\n          \"relation\": \"investigated by\",\n          \"tail\": \"survey\",\n          \"claim\": \"社会学调查方法可量化人工智能对教育体验的影响\"\n        },\n        {\n          \"step\": 3,\n          \"head\": \"survey\",\n          \"relation\": \"regulating focus on\",\n          \"tail\": \"policy development\",\n          \"claim\": \"社会学政策分析框架能系统解决生成式人工智能教育应用的伦理监管难题\"\n        }\n      ],\n      [\n        {\n          \"step\": 1,\n          \"head\": \"ethical issues\",\n          \"relation\": \"significant influence on\",\n          \"tail\": \"undergraduate and postgraduate students\",\n          \"claim\": \"生成式人工智能引发的学生伦理认知偏差需要干预\"\n        },\n        {\n          \"step\": 2,\n          \"head\": \"undergraduate and postgraduate students\",\n          \"relation\": \"perceptions analyzed by\",\n          \"tail\": \"John Biggs’ 3P model\",\n          \"claim\": \"社会学理论模型可解析学生对技术应用的认知维度\"\n        },\n        {\n          \"step\": 3,\n          \"head\": \"John Biggs’ 3P model\",\n          \"relation\": \"guidelines creation for\",\n          \"tail\": \"responsible and effective implementation\",\n          \"claim\": \"社会学教育理论能指导生成式人工智能负责任实施的政策制定\"\n        }\n      ]\n    ],\n    \"一级总结\": [\n      \"生成式人工智能教育应用需社会学政策分析框架解决伦理监管问题\",\n      \"学生伦理认知偏差需社会学理论模型指导负责任实施政策制定\"\n    ]\n  }\n}\n\n/* stage3: hypothesis L2 */\n{\n  \"假设\": {\n    \"二级\": [\n      [\n        {\n          \"step\": 1,\n          \"head\": \"policy development\",\n          \"relation\": \"focuses on regulating\",\n          \"tail\": \"integration of GenAI technologies\"\n        },\n        {\n          \"step\": 2,\n          \"head\": \"integration of GenAI technologies\",\n          \"relation\": \"context for enhancing\",\n          \"tail\": \"teaching and learning experiences\"\n        },\n        {\n          \"step\": 3,\n          \"head\": \"teaching and learning experiences\",\n          \"relation\": \"improves_metric\",\n          \"tail\": \"responsible and effective implementation\"\n        }\n      ],\n      [\n        {\n          \"step\": 1,\n          \"head\": \"survey\",\n          \"relation\": \"used to investigate integration of\",\n          \"tail\": \"Generative AI technologies\"\n        },\n        {\n          \"step\": 2,\n          \"head\": \"Generative AI technologies\",\n          \"relation\": \"benefit from\",\n          \"tail\": \"personalized learning support\"\n        },\n        {\n          \"step\": 3,\n          \"head\": \"personalized learning support\",\n          \"relation\": \"extends\",\n          \"tail\": \"higher education\"\n        }\n      ]\n    ],\n    \"二级总结\": [\n      \"政策开发通过规范生成式人工智能技术整合，提升教学体验并推动负责任实施\",\n      \"实证调查揭示人工智能技术通过个性化学习支持增强高等教育质量\"\n    ]\n  }\n}\n\n/* stage3: hypothesis L3 */\n{\n  \"假设\": {\n    \"三级\": [\n      [\n        {\n          \"step\": 1,\n          \"head\": \"policy development\",\n          \"relation\": \"focuses on regulating\",\n          \"tail\": \"integration of GenAI technologies\"\n        },\n        {\n          \"step\": 2,\n          \"head\": \"integration of GenAI technologies\",\n          \"relation\": \"requires\",\n          \"tail\": \"responsible and effective implementation\"\n        },\n        {\n          \"step\": 3,\n          \"head\": \"responsible and effective implementation\",\n          \"relation\": \"enhances\",\n          \"tail\": \"teaching and learning experiences\"\n        }\n      ],\n      [\n        {\n          \"step\": 1,\n          \"head\": \"survey\",\n          \"relation\": \"used to investigate\",\n          \"tail\": \"Generative AI technologies\"\n        },\n        {\n          \"step\": 2,\n          \"head\": \"Generative AI technologies\",\n          \"relation\": \"provides\",\n          \"tail\": \"personalized learning support\"\n        },\n        {\n          \"step\": 3,\n          \"head\": \"personalized learning support\",\n          \"relation\": \"improves\",\n          \"tail\": \"undergraduate and postgraduate students\"\n        }\n      ]\n    ],\n    \"三级总结\": [\n      \"通过政策监管框架约束生成式AI技术整合，验证责任化实施对教学体验的提升作用，形成政策-技术-教育质量的闭环评估体系\",\n      \"利用实证调查分析生成式AI技术特性，通过个性化学习支持路径改善学生群体的学习成效，验证智能化工具与高等教育质量的协同效应\"\n    ]\n  }\n}",
+    "ok": true,
+    "error": ""
+  }
+]

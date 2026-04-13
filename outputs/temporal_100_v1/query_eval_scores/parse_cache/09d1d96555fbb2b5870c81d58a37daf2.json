@@ -1,0 +1,148 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "经济政策工具",
+        "relation": "enables",
+        "tail": "绿色氢能规模化发展",
+        "claim": "不同政策工具通过差异化机制推动绿色氢能规模化"
+      },
+      {
+        "step": 2,
+        "head": "全生命周期成本模型与市场扩散模型耦合",
+        "relation": "quantifies",
+        "tail": "政策工具效果差异",
+        "claim": "模型耦合分析可量化评估政策工具的效果差异"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "碳定价机制",
+        "relation": "increases",
+        "tail": "化石能源使用成本",
+        "claim": "碳定价通过提高化石能源成本形成价格信号"
+      },
+      {
+        "step": 2,
+        "head": "化石能源成本",
+        "relation": "indirectly enhances",
+        "tail": "绿色氢能市场竞争力",
+        "claim": "成本差异扩大间接增强氢能市场竞争力"
+      },
+      {
+        "step": 3,
+        "head": "不同碳价情景",
+        "relation": "quantifies",
+        "tail": "氢能渗透率变化",
+        "claim": "通过情景比较可量化碳价对渗透率的影响"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "财政补贴",
+        "relation": "reduces",
+        "tail": "初始投资门槛",
+        "claim": "直接补贴降低绿色氢能项目投资门槛"
+      },
+      {
+        "step": 2,
+        "head": "补贴强度与持续时间",
+        "relation": "determines",
+        "tail": "政策效果非线性关系",
+        "claim": "补贴参数与效果呈现非线性关联特征"
+      },
+      {
+        "step": 3,
+        "head": "成本-效益弹性分析",
+        "relation": "characterizes",
+        "tail": "政策效果",
+        "claim": "弹性分析可刻画补贴政策的动态效果"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "政府采购承诺",
+        "relation": "creates",
+        "tail": "稳定需求预期",
+        "claim": "政府需求承诺形成市场预期稳定性"
+      },
+      {
+        "step": 2,
+        "head": "需求预期",
+        "relation": "promotes",
+        "tail": "规模经济形成",
+        "claim": "稳定预期促进产业链规模经济效应"
+      },
+      {
+        "step": 3,
+        "head": "供应链成本曲线与投资函数",
+        "relation": "models",
+        "tail": "政策影响",
+        "claim": "通过成本曲线和投资函数可建模评估政策影响"
+      }
+    ]
+  ],
+  "L3": [
+    [
+      {
+        "step": 1,
+        "head": "碳定价与补贴协同",
+        "relation": "outperforms",
+        "tail": "单一政策工具",
+        "claim": "政策组合的协同效应强于单一工具效果"
+      },
+      {
+        "step": 2,
+        "head": "多主体动态博弈模型",
+        "relation": "simulates",
+        "tail": "政策协同效应",
+        "claim": "博弈模型可模拟量化政策协同动态过程"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "政策不确定性",
+        "relation": "reduces",
+        "tail": "投资意愿",
+        "claim": "政策波动性抑制氢能领域投资行为"
+      },
+      {
+        "step": 2,
+        "head": "政策稳定性与可预期性",
+        "relation": "incorporates",
+        "tail": "风险折现因子",
+        "claim": "稳定性参数可通过风险因子纳入决策模型"
+      },
+      {
+        "step": 3,
+        "head": "风险折现因子",
+        "relation": "quantifies",
+        "tail": "投资决策影响",
+        "claim": "折现因子可量化政策不确定性对投资的影响"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "区域资源禀赋与能源结构",
+        "relation": "generates",
+        "tail": "空间异质性",
+        "claim": "区域差异导致政策效果呈现空间异质特征"
+      },
+      {
+        "step": 2,
+        "head": "空间计量模型",
+        "relation": "identifies",
+        "tail": "政策响应敏感度",
+        "claim": "空间模型可识别不同区域的政策弹性区间"
+      }
+    ]
+  ]
+}

@@ -1,0 +1,894 @@
+[
+  {
+    "paper_id": "f4465d25f7c9",
+    "title": "Nano-island-encapsulated cobalt single-atom catalysts for breaking activity-stability trade-off in Fenton-like reactions",
+    "abstract": "Single-atom catalysts (SACs) have been increasingly acknowledged for their performance in sustainable Fenton-like catalysis. However, SACs face a trade-off between activity and stability in peroxymonosulfate (PMS)-based systems. Herein, we design a nano-island encapsulated single cobalt atom (Co<sub>SA/Zn.O</sub>-ZnO) catalyst to enhance the activity and stability of PMS activation for contaminant degradation via an \"island-sea\" synergistic effect. In this configuration, small carrier-based ZnO nanoparticles (the \"islands\") are utilized to confine and stabilize Co single atoms. The expansive ZnO substrate (the \"sea\") upholds a neutral microenvironment within the reaction system. The Co<sub>SA/Zn.O</sub>-ZnO/PMS system exhibits a remarkable selectivity in exclusively generating sulfate radicals (SO<sub>4</sub><sup>•-</sup>), leading to a complete removal of various recalcitrant pollutants within a shorter period. Characterized by minimal leaching of active sites, robust catalytic performance, and low-toxicity decontamination, this system proves highly efficient in multiple treatment cycles and complex water matrices. The design effectively breaks the activity-stability trade-off typically associated with SACs.",
+    "primary_discipline": "化学",
+    "secondary_disciplines": [
+      "材料科学",
+      "环境科学技术"
+    ],
+    "queries": {
+      "L1": "如何通过单原子催化剂设计突破类芬顿催化中活性与稳定性的权衡？",
+      "L2": [
+        "氧化锌纳米结构如何优化单原子催化剂的载体性能？",
+        "硫酸根自由基生成机制如何提升污染物降解效率？"
+      ],
+      "L3": [
+        "纳米岛封装结构与氧化锌基底如何协同调控钴单原子的配位环境，从而在过氧单硫酸盐活化中实现高选择性与稳定性？",
+        "材料科学的载体设计与环境科学的污染物降解评估如何联合验证催化剂在复杂水体中的实际应用效能？"
+      ]
+    },
+    "gt_terms": [
+      "单原子催化剂",
+      "类芬顿催化",
+      "过氧单硫酸盐",
+      "纳米岛封装单钴原子催化剂",
+      "硫酸根自由基",
+      "难降解污染物",
+      "活性位点",
+      "催化性能",
+      "低毒性去污",
+      "活性-稳定性权衡",
+      "过氧单硫酸盐高级氧化过程",
+      "活性氧物种",
+      "难降解有机污染物",
+      "催化选择性",
+      "电子结构",
+      "不饱和配位环境",
+      "析氢反应",
+      "氧空位",
+      "氧化锌纳米颗粒",
+      "氧化锌基底",
+      "碳材料",
+      "纳米岛系统",
+      "多相催化剂",
+      "污染物降解",
+      "复杂水体",
+      "废水",
+      "持久性有机污染物",
+      "水处理风险"
+    ],
+    "gt_relations": [
+      {
+        "head": "纳米岛封装单钴原子催化剂",
+        "relation": "enhances the activity and stability of",
+        "relation_type": "improves_metric",
+        "relation_type_norm": "improves_metric",
+        "relation_type_raw": "improves_metric",
+        "tail": "过氧单硫酸盐",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [
+          "island-sea synergistic effect"
+        ],
+        "evidence": "Herein, we design a nano-island encapsulated single cobalt atom (CoSA/Zn.O-ZnO) catalyst to enhance the activity and stability of PMS activation for contaminant degradation via an \"island-sea\" synergistic effect.",
+        "source": "abstract",
+        "confidence": 0.9
+      },
+      {
+        "head": "氧化锌纳米颗粒",
+        "relation": "confines and stabilizes",
+        "relation_type": "constrains",
+        "relation_type_norm": "constrains",
+        "relation_type_raw": "constrains",
+        "tail": "单原子催化剂",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [
+          "small carrier-based configuration"
+        ],
+        "evidence": "In this configuration, small carrier-based ZnO nanoparticles (the \"islands\") are utilized to confine and stabilize Co single atoms.",
+        "source": "abstract",
+        "confidence": 0.95
+      },
+      {
+        "head": "氧化锌基底",
+        "relation": "upholds a neutral microenvironment within",
+        "relation_type": "constrains",
+        "relation_type_norm": "constrains",
+        "relation_type_raw": "constrains",
+        "tail": "反应系统",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [
+          "expansive substrate"
+        ],
+        "evidence": "The expansive ZnO substrate (the \"sea\") upholds a neutral microenvironment within the reaction system.",
+        "source": "abstract",
+        "confidence": 0.85
+      },
+      {
+        "head": "纳米岛封装单钴原子催化剂",
+        "relation": "exhibits remarkable selectivity in generating",
+        "relation_type": "method_applied_to",
+        "relation_type_norm": "method_applied_to",
+        "relation_type_raw": "method_applied_to",
+        "tail": "硫酸根自由基",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [
+          "PMS activation"
+        ],
+        "evidence": "The CoSA/Zn.O-ZnO/PMS system exhibits a remarkable selectivity in exclusively generating sulfate radicals (SO4•-), leading to a complete removal of various recalcitrant pollutants within a shorter period.",
+        "source": "abstract",
+        "confidence": 0.9
+      },
+      {
+        "head": "硫酸根自由基",
+        "relation": "leads to complete removal of",
+        "relation_type": "improves_metric",
+        "relation_type_norm": "improves_metric",
+        "relation_type_raw": "improves_metric",
+        "tail": "难降解污染物",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [
+          "shorter treatment period"
+        ],
+        "evidence": "The CoSA/Zn.O-ZnO/PMS system exhibits a remarkable selectivity in exclusively generating sulfate radicals (SO4•-), leading to a complete removal of various recalcitrant pollutants within a shorter period.",
+        "source": "abstract",
+        "confidence": 0.85
+      },
+      {
+        "head": "单原子催化剂",
+        "relation": "addresses cost and catalytic selectivity issues in",
+        "relation_type": "improves_metric",
+        "relation_type_norm": "improves_metric",
+        "relation_type_raw": "improves_metric",
+        "tail": "过氧单硫酸盐高级氧化过程",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [
+          "efficient utilization of metal atoms"
+        ],
+        "evidence": "SACs are anticipated to address cost and catalytic selectivity issues in PMS-AOPs, owing to their efficient utilization of metal atoms and adjustable electronic structures.",
+        "source": "introduction",
+        "confidence": 0.8
+      },
+      {
+        "head": "不饱和配位环境",
+        "relation": "stems high reactivity of",
+        "relation_type": "driven_by",
+        "relation_type_norm": "driven_by",
+        "relation_type_raw": "driven_by",
+        "tail": "单原子催化剂",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [
+          "unsaturated coordination"
+        ],
+        "evidence": "The high reactivity of SACs stems from their unsaturated coordination environments.",
+        "source": "introduction",
+        "confidence": 0.9
+      },
+      {
+        "head": "纳米岛系统",
+        "relation": "influences development of",
+        "relation_type": "extends",
+        "relation_type_norm": "extends",
+        "relation_type_raw": "extends",
+        "tail": "多相催化剂",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [
+          "innovative design"
+        ],
+        "evidence": "The recent progress of nano-island systems has significantly influenced the development of innovative heterogeneous catalysts.",
+        "source": "introduction",
+        "confidence": 0.85
+      }
+    ],
+    "metadata": {
+      "journal": "Nature Communications",
+      "journal_id": "https://openalex.org/S64187185",
+      "issn_l": "2041-1723",
+      "source_type": "journal",
+      "doi": "https://doi.org/10.1038/s41467-024-55622-y",
+      "publication_date": "2025-01-02",
+      "publication_year": 2025,
+      "fwci": 93.87822721,
+      "cited_by_count": 96,
+      "field": "Electrocatalysts for Energy Conversion"
+    }
+  },
+  {
+    "paper_id": "b5d9e2f1eeaf",
+    "title": "High-sensitivity, high-speed, broadband mid-infrared photodetector enabled by a van der Waals heterostructure with a vertical transport channel",
+    "abstract": "The realization of room-temperature-operated, high-performance, miniaturized, low-power-consumption and Complementary Metal-Oxide-Semiconductor (CMOS)-compatible mid-infrared photodetectors is highly desirable for next-generation optoelectronic applications, but has thus far remained an outstanding challenge using conventional materials. Two-dimensional (2D) heterostructures provide an alternative path toward this goal, yet despite continued efforts, their performance has not matched that of low-temperature HgCdTe photodetectors. Here, we push the detectivity and response speed of a 2D heterostructure-based mid-infrared photodetector to be comparable to, and even superior to, commercial cooled HgCdTe photodetectors by utilizing a vertical transport channel (graphene/black phosphorus/molybdenum disulfide/graphene). The minimized carrier transit path of tens of nanometers facilitates efficient and fast carrier transport, leading to significantly improved performance, with a mid-infrared detectivity reaching 2.38 × 10<sup>11</sup> cmHz<sup>1/2</sup>W<sup>-1</sup> (approaching the theoretical limit), a fast response time of 10.4 ns at 1550 nm, and an ultrabroadband detection range spanning from the ultraviolet to mid-infrared wavelengths. Our study provides design guidelines for next-generation high-performance room-temperature-operated mid-infrared photodetectors.",
+    "primary_discipline": "物理学",
+    "secondary_disciplines": [
+      "材料科学",
+      "电子、通信与自动控制技术"
+    ],
+    "queries": {
+      "L1": "如何提升中红外光电探测器的探测率与响应速度至理论极限？",
+      "L2": [
+        "如何结合二维材料异质结构与垂直传输通道设计优化探测器性能？",
+        "如何通过互补金属氧化物半导体工艺实现低噪声电流控制？"
+      ],
+      "L3": [
+        "如何通过石墨烯-黑磷-二硫化钼异质结构缩短载流子传输路径，并与互补金属氧化物半导体工艺协同降低暗电流？",
+        "如何量化垂直传输通道对载流子传输时间的改善效应，建立其与响应速度提升的数学模型？"
+      ]
+    },
+    "gt_terms": [
+      "中红外光电探测器",
+      "范德华异质结构",
+      "垂直传输通道",
+      "探测率",
+      "响应速度",
+      "载流子传输路径",
+      "载流子传输",
+      "中红外探测率",
+      "响应时间",
+      "超宽带检测范围",
+      "暗电流",
+      "外量子效率",
+      "载流子传输时间",
+      "噪声电流",
+      "石墨烯",
+      "黑磷",
+      "二硫化钼",
+      "碲镉汞",
+      "二维异质结构",
+      "窄带隙",
+      "族超晶格",
+      "互补金属氧化物半导体",
+      "光电应用",
+      "光伏模式",
+      "背景限制红外光电探测器",
+      "自供电",
+      "光伏器件"
+    ],
+    "gt_relations": [
+      {
+        "head": "van der Waals heterostructure",
+        "relation": "enables",
+        "relation_type": "method_applied_to",
+        "relation_type_norm": "method_applied_to",
+        "relation_type_raw": "method_applied_to",
+        "tail": "mid-infrared photodetector",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [],
+        "evidence": "High-sensitivity, high-speed, broadband mid-infrared photodetector enabled by a van der Waals heterostructure with a vertical transport channel",
+        "source": "abstract",
+        "confidence": 1.0
+      },
+      {
+        "head": "vertical transport channel",
+        "relation": "facilitates",
+        "relation_type": "improves_metric",
+        "relation_type_norm": "improves_metric",
+        "relation_type_raw": "improves_metric",
+        "tail": "carrier transport",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [],
+        "evidence": "The minimized carrier transit path of tens of nanometers facilitates efficient and fast carrier transport",
+        "source": "abstract",
+        "confidence": 1.0
+      },
+      {
+        "head": "carrier transport",
+        "relation": "leads to improved",
+        "relation_type": "improves_metric",
+        "relation_type_norm": "improves_metric",
+        "relation_type_raw": "improves_metric",
+        "tail": "response speed",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [],
+        "evidence": "leading to significantly improved performance, with a mid-infrared detectivity reaching 2.38 × 10<sup>11</sup> cmHz<sup>1/2</sup>W<sup>-1</sup> (approaching the theoretical limit), a fast response time of 10.4 ns at 1550 nm",
+        "source": "abstract",
+        "confidence": 1.0
+      },
+      {
+        "head": "2D heterostructure",
+        "relation": "comparable to",
+        "relation_type": "corresponds_to",
+        "relation_type_norm": "corresponds_to",
+        "relation_type_raw": "corresponds_to",
+        "tail": "HgCdTe",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [],
+        "evidence": "Here, we push the detectivity and response speed of a 2D heterostructure-based mid-infrared photodetector to be comparable to, and even superior to, commercial cooled HgCdTe photodetectors",
+        "source": "abstract",
+        "confidence": 1.0
+      },
+      {
+        "head": "van der Waals heterostructure",
+        "relation": "reduces",
+        "relation_type": "improves_metric",
+        "relation_type_norm": "improves_metric",
+        "relation_type_raw": "improves_metric",
+        "tail": "dark current",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [],
+        "evidence": "Two-dimensional (2D) van der Waals heterostructures are promising for reducing the dark current and achieving high-performance room-temperature-operated mid-infrared photodetectors",
+        "source": "introduction",
+        "confidence": 1.0
+      },
+      {
+        "head": "narrow bandgaps",
+        "relation": "limits",
+        "relation_type": "constrains",
+        "relation_type_norm": "constrains",
+        "relation_type_raw": "constrains",
+        "tail": "external quantum efficiency",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [],
+        "evidence": "which is particularly difficult for mid-infrared materials with narrow bandgaps",
+        "source": "introduction",
+        "confidence": 1.0
+      },
+      {
+        "head": "carrier transit time",
+        "relation": "affects",
+        "relation_type": "constrains",
+        "relation_type_norm": "constrains",
+        "relation_type_raw": "constrains",
+        "tail": "response time",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [],
+        "evidence": "An often overlooked issue in response time optimization is the carrier transit time",
+        "source": "introduction",
+        "confidence": 1.0
+      },
+      {
+        "head": "noise current",
+        "relation": "limits",
+        "relation_type": "constrains",
+        "relation_type_norm": "constrains",
+        "relation_type_raw": "constrains",
+        "tail": "detectivity",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [],
+        "evidence": "To further push the detectivity and response speed to their theoretical limits, an approach that can synergistically reduce the noise current",
+        "source": "introduction",
+        "confidence": 1.0
+      }
+    ],
+    "metadata": {
+      "journal": "Nature Communications",
+      "journal_id": "https://openalex.org/S64187185",
+      "issn_l": "2041-1723",
+      "source_type": "journal",
+      "doi": "https://doi.org/10.1038/s41467-025-55887-x",
+      "publication_date": "2025-01-10",
+      "publication_year": 2025,
+      "fwci": 163.74682493,
+      "cited_by_count": 81,
+      "field": "Advanced Semiconductor Detectors and Materials"
+    }
+  },
+  {
+    "paper_id": "49822610b620",
+    "title": "Biomimetic and biodegradable separator with high modulus and large ionic conductivity enables dendrite-free zinc-ion batteries",
+    "abstract": "The advancement of aqueous zinc-based batteries is greatly restricted by zinc dendrites. One potential solution to this challenge lies in the employment of high-modulus separators. However, achieving both high modulus and large ionic conductivity in a single separator remains a formidable task. Inspired by the wood architecture, this study breaks this trade-off by designing an anisotropic and biodegradable separator. This design significantly improves the modulus along the oriented direction while simultaneously facilitating fast Zn<sup>2+</sup> ion transport through aligned vertical channels. Additionally, this configuration resolves the contradiction between low separator thickness and good dendrite-inhibition capability. These benefits are supported by finite element simulations and comprehensive experimental validation, which also underscore the critical role of modulus enhancement for separators. By employing the anisotropic separator, a prolonged life span is realized for Zn||Zn cells, along with improved cyclability in full batteries. This work presents a strategy for separator modification towards dendrite-free metal batteries.",
+    "primary_discipline": "材料科学",
+    "secondary_disciplines": [
+      "化学"
+    ],
+    "queries": {
+      "L1": "如何通过高模量隔膜设计解决锌枝晶问题",
+      "L2": [
+        "如何结合生物启发设计和化学改性提升隔膜性能",
+        "电解质添加剂如何协同隔膜抑制枝晶生长"
+      ],
+      "L3": [
+        "木材结构启发的各向异性隔膜如何通过化学交联与离子通道协同实现枝晶抑制",
+        "聚乙烯醇水凝胶的力学增强策略与电解质添加剂如何协同优化电极界面稳定性"
+      ]
+    },
+    "gt_terms": [
+      "锌枝晶",
+      "高模量隔膜",
+      "各向异性可生物降解隔膜",
+      "定向方向的模量",
+      "+离子传输",
+      "对齐的垂直通道",
+      "隔膜厚度",
+      "枝晶抑制能力",
+      "有限元模拟",
+      "模量增强",
+      "||电池",
+      "循环性能",
+      "水系锌基电池",
+      "木材结构",
+      "无枝晶金属电池",
+      "+离子传输",
+      "析氢反应",
+      "电解质添加剂改性",
+      "水凝胶电解质",
+      "锌电极/电解质界面",
+      "离子传输",
+      "玻璃纤维隔膜",
+      "杨氏模量",
+      "聚乙烯醇水凝胶"
+    ],
+    "gt_relations": [
+      {
+        "head": "wood architecture",
+        "relation": "inspired by",
+        "relation_type": "inferred_from",
+        "relation_type_norm": "inferred_from",
+        "relation_type_raw": "inferred_from",
+        "tail": "anisotropic and biodegradable separator",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [
+          "Biomimicry can be applied to material design"
+        ],
+        "evidence": "Inspired by the wood architecture, this study breaks this trade-off by designing an anisotropic and biodegradable separator.",
+        "source": "abstract",
+        "confidence": 0.95
+      },
+      {
+        "head": "anisotropic and biodegradable separator",
+        "relation": "significantly improves",
+        "relation_type": "improves_metric",
+        "relation_type_norm": "improves_metric",
+        "relation_type_raw": "improves_metric",
+        "tail": "modulus along the oriented direction",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [
+          "Anisotropic design enhances mechanical properties"
+        ],
+        "evidence": "This design significantly improves the modulus along the oriented direction while simultaneously facilitating fast Zn2+ ion transport through aligned vertical channels.",
+        "source": "abstract",
+        "confidence": 0.9
+      },
+      {
+        "head": "anisotropic and biodegradable separator",
+        "relation": "facilitates",
+        "relation_type": "improves_metric",
+        "relation_type_norm": "improves_metric",
+        "relation_type_raw": "improves_metric",
+        "tail": "Zn2+ ion transport",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [
+          "Aligned channels enhance ion transport"
+        ],
+        "evidence": "This design significantly improves the modulus along the oriented direction while simultaneously facilitating fast Zn2+ ion transport through aligned vertical channels.",
+        "source": "abstract",
+        "confidence": 0.9
+      },
+      {
+        "head": "modulus enhancement",
+        "relation": "critical role for",
+        "relation_type": "improves_metric",
+        "relation_type_norm": "improves_metric",
+        "relation_type_raw": "improves_metric",
+        "tail": "dendrite-inhibition capability",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [
+          "Higher modulus prevents dendrite penetration"
+        ],
+        "evidence": "These benefits are supported by finite element simulations and comprehensive experimental validation, which also underscore the critical role of modulus enhancement for separators.",
+        "source": "abstract",
+        "confidence": 0.85
+      },
+      {
+        "head": "anisotropic and biodegradable separator",
+        "relation": "prolongs life span of",
+        "relation_type": "improves_metric",
+        "relation_type_norm": "improves_metric",
+        "relation_type_raw": "improves_metric",
+        "tail": "Zn||Zn cells",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [
+          "Dendrite suppression extends battery life"
+        ],
+        "evidence": "By employing the anisotropic separator, a prolonged life span is realized for Zn||Zn cells, along with improved cyclability in full batteries.",
+        "source": "abstract",
+        "confidence": 0.8
+      },
+      {
+        "head": "poly(vinyl alcohol) (PVA) hydrogel",
+        "relation": "similar design strategy as",
+        "relation_type": "corresponds_to",
+        "relation_type_norm": "corresponds_to",
+        "relation_type_raw": "corresponds_to",
+        "tail": "anisotropic and biodegradable separator",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [
+          "Anisotropic materials share common enhancement mechanisms"
+        ],
+        "evidence": "For instance, an anisotropic poly(vinyl alcohol) (PVA) hydrogel with oriented honeycomb-like pores was successfully established through directional freezing and salting-out strategies...",
+        "source": "introduction",
+        "confidence": 0.75
+      },
+      {
+        "head": "Young's modulus",
+        "relation": "determines",
+        "relation_type": "depends_on",
+        "relation_type_norm": "depends_on",
+        "relation_type_raw": "depends_on",
+        "tail": "dendrite-inhibition capability",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [
+          "Mechanical properties dictate dendrite resistance"
+        ],
+        "evidence": "Nevertheless, Young's modulus of VVLP separator (137.4 MPa) is insufficient.",
+        "source": "introduction",
+        "confidence": 0.8
+      }
+    ],
+    "metadata": {
+      "journal": "Nature Communications",
+      "journal_id": "https://openalex.org/S64187185",
+      "issn_l": "2041-1723",
+      "source_type": "journal",
+      "doi": "https://doi.org/10.1038/s41467-025-56325-8",
+      "publication_date": "2025-01-25",
+      "publication_year": 2025,
+      "fwci": 163.74682493,
+      "cited_by_count": 81,
+      "field": "Advanced battery technologies research"
+    }
+  },
+  {
+    "paper_id": "9d7ad46d50d0",
+    "title": "Leaf-based energy harvesting and storage utilizing hygroscopic iron hydrogel for continuous power generation",
+    "abstract": "Abstract In the era of big data, developing next-generation self-powered continuous energy harvesting systems is of great importance. Taking advantage of fallen leaves’ specific structural advantage gifted by nature, we propose a facile approach to convert fallen leaves into energy harvesters from ubiquitous moisture, based on surface treatments and asymmetric coating of hygroscopic iron hydrogels. Upon moisture absorption, a water gradient is established between areas with/without hydrogel coating, and maintained due to gel-like behaviors and leaf veins for water retention and diffusion restriction, thus forming electrical double layers over the leaf surface and showing capacitance-like behavior for energy charging and discharging. Besides, the specific leaf cell structures with small grooves enabled uniform carbon coatings instead of aggregations, and high electrical conductivity, resulting in 49 μA/cm 2 and 497 μW/cm 3 electrical output, achieving competitive performance with the state-of-art and potential for lower environmental impact compared to other types of energy harvesters.",
+    "primary_discipline": "材料科学",
+    "secondary_disciplines": [
+      "能源科学技术",
+      "化学"
+    ],
+    "queries": {
+      "L1": "如何利用吸湿性铁水凝胶和叶脉结构设计高效的能量收集器？",
+      "L2": [
+        "如何结合能源科学技术中的自供电系统和化学中的水凝胶材料，优化能量收集器的性能？",
+        "如何利用摩擦电纳米发电机和金属有机框架提升能量收集器的功率密度？"
+      ],
+      "L3": [
+        "如何通过水凝胶的吸湿性和叶脉结构的扩散限制，协同设计连续能量收集系统的工作流？",
+        "如何整合碳涂层技术和复合材料，验证能量收集器在充放电过程中的稳定性？"
+      ]
+    },
+    "gt_terms": [
+      "吸湿性铁水凝胶",
+      "类凝胶行为",
+      "叶脉",
+      "双电层",
+      "类电容行为",
+      "特定叶细胞结构",
+      "碳涂层",
+      "电导率",
+      "脱木质素叶子",
+      "炭黑",
+      "超吸湿性铁水凝胶",
+      "基于叶子的能量收集器",
+      "自供电连续能量收集系统",
+      "能量充放电",
+      "电输出",
+      "可再生能源",
+      "摩擦电纳米发电机",
+      "运动能量",
+      "功率密度",
+      "水梯度",
+      "保水性",
+      "扩散限制",
+      "吸湿",
+      "水凝胶",
+      "金属有机框架",
+      "复合材料"
+    ],
+    "gt_relations": [
+      {
+        "head": "hygroscopic iron hydrogels",
+        "relation": "establishes",
+        "relation_type": "method_applied_to",
+        "relation_type_norm": "method_applied_to",
+        "relation_type_raw": "method_applied_to",
+        "tail": "water gradient",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [
+          "moisture absorption is sufficient for gradient formation"
+        ],
+        "evidence": "a water gradient is established between areas with/without hydrogel coating",
+        "source": "abstract",
+        "confidence": 0.9
+      },
+      {
+        "head": "gel-like behaviors",
+        "relation": "enables",
+        "relation_type": "method_applied_to",
+        "relation_type_norm": "method_applied_to",
+        "relation_type_raw": "method_applied_to",
+        "tail": "water retention",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [
+          "gel-like structures can effectively retain water"
+        ],
+        "evidence": "maintained due to gel-like behaviors and leaf veins for water retention",
+        "source": "abstract",
+        "confidence": 0.8
+      },
+      {
+        "head": "leaf veins",
+        "relation": "causes",
+        "relation_type": "method_applied_to",
+        "relation_type_norm": "method_applied_to",
+        "relation_type_raw": "method_applied_to",
+        "tail": "diffusion restriction",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [
+          "leaf veins can restrict water diffusion"
+        ],
+        "evidence": "maintained due to gel-like behaviors and leaf veins for water retention and diffusion restriction",
+        "source": "abstract",
+        "confidence": 0.9
+      },
+      {
+        "head": "specific leaf cell structures",
+        "relation": "enables",
+        "relation_type": "method_applied_to",
+        "relation_type_norm": "method_applied_to",
+        "relation_type_raw": "method_applied_to",
+        "tail": "carbon coatings",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [
+          "leaf cell structures can support uniform coatings"
+        ],
+        "evidence": "the specific leaf cell structures with small grooves enabled uniform carbon coatings instead of aggregations",
+        "source": "abstract",
+        "confidence": 0.9
+      },
+      {
+        "head": "carbon coatings",
+        "relation": "improves",
+        "relation_type": "improves_metric",
+        "relation_type_norm": "improves_metric",
+        "relation_type_raw": "improves_metric",
+        "tail": "electrical conductivity",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [
+          "carbon coatings enhance conductivity"
+        ],
+        "evidence": "and high electrical conductivity, resulting in 49 μA/cm2 and 497 μW/cm3 electrical output",
+        "source": "abstract",
+        "confidence": 0.9
+      },
+      {
+        "head": "delignified leaves",
+        "relation": "treated_with",
+        "relation_type": "method_applied_to",
+        "relation_type_norm": "method_applied_to",
+        "relation_type_raw": "method_applied_to",
+        "tail": "carbon black",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [
+          "delignification allows better carbon coating"
+        ],
+        "evidence": "conductive treatment of delignified leaves by dip-coating them in carbon black",
+        "source": "introduction",
+        "confidence": 0.9
+      },
+      {
+        "head": "super-hygroscopic iron hydrogel",
+        "relation": "enables",
+        "relation_type": "method_applied_to",
+        "relation_type_norm": "method_applied_to",
+        "relation_type_raw": "method_applied_to",
+        "tail": "leaf-based energy harvester",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [
+          "hydrogel can effectively harvest moisture"
+        ],
+        "evidence": "convert fallen leaves into a leaf-based energy harvester by utilizing an asymmetric structure with a super-hygroscopic iron hydrogel",
+        "source": "introduction",
+        "confidence": 0.9
+      },
+      {
+        "head": "self-powered continuous energy harvesting systems",
+        "relation": "contributes_to",
+        "relation_type": "method_applied_to",
+        "relation_type_norm": "method_applied_to",
+        "relation_type_raw": "method_applied_to",
+        "tail": "renewable energy",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [
+          "energy harvesting supports renewable energy goals"
+        ],
+        "evidence": "developing next-generation self-powered continuous energy harvesting systems is of great importance",
+        "source": "abstract",
+        "confidence": 0.9
+      },
+      {
+        "head": "triboelectric nanogenerators",
+        "relation": "harvests",
+        "relation_type": "method_applied_to",
+        "relation_type_norm": "method_applied_to",
+        "relation_type_raw": "method_applied_to",
+        "tail": "motion energy",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [
+          "TENGs can effectively convert motion to energy"
+        ],
+        "evidence": "provide an effective approach to harvesting motion energy",
+        "source": "introduction",
+        "confidence": 0.9
+      },
+      {
+        "head": "hydrogels",
+        "relation": "classified_as",
+        "relation_type": "corresponds_to",
+        "relation_type_norm": "corresponds_to",
+        "relation_type_raw": "corresponds_to",
+        "tail": "composite materials",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [
+          "hydrogels are a type of composite material"
+        ],
+        "evidence": "developing hygroscopic materials for moisture capture, including hydrogels, metal-organic frameworks, and composite materials",
+        "source": "introduction",
+        "confidence": 0.9
+      }
+    ],
+    "metadata": {
+      "journal": "Nature Communications",
+      "journal_id": "https://openalex.org/S64187185",
+      "issn_l": "2041-1723",
+      "source_type": "journal",
+      "doi": "https://doi.org/10.1038/s41467-025-60341-z",
+      "publication_date": "2025-06-06",
+      "publication_year": 2025,
+      "fwci": 153.63899623,
+      "cited_by_count": 76,
+      "field": "Energy Harvesting in Wireless Networks"
+    }
+  },
+  {
+    "paper_id": "3e2570ebbc22",
+    "title": "Multi-modal framework for battery state of health evaluation using open-source electric vehicle data",
+    "abstract": "Accurate, practical, and robust evaluation of the battery state of health is crucial to the efficient and reliable operation of electric vehicles. However, the limited availability of large-scale, high-quality field data hinders the development of the battery management system for state of health estimation, lifetime prediction, and fault detection in various applications. In this work, to gain insights into underlying factors limiting battery management system performance in real-world vehicles, we analyze the operational data of 300 diverse electric vehicles over three years to understand the disparities between field data and laboratory battery test data and their effect on state of health estimation. Furthermore, we propose a deep learning-based multi-modal framework to effectively leverage historical vehicle data for efficient, accurate, and cost-effective state of health estimation. The proposed paradigm exhibits considerable potential for numerous applications in state estimation and diagnostics in multi-sensor systems. Furthermore, we make the field data of these electric vehicles publicly available aiming to promote further research on the development of effective and reliable battery management systems for real-world vehicles.",
+    "primary_discipline": "计算机科学技术",
+    "secondary_disciplines": [
+      "动力与电气工程"
+    ],
+    "queries": {
+      "L1": "如何构建基于深度学习的多模态框架来评估电池健康状态？",
+      "L2": [
+        "如何结合动力与电气工程中的电化学机制分析优化电池健康状态评估？",
+        "如何利用多传感器系统提升状态估计的准确性？"
+      ],
+      "L3": [
+        "如何通过深度学习多模态框架整合电化学机制分析与多传感器数据，构建端到端的电池健康状态评估工作流？",
+        "如何验证实验室电池测试数据与现场数据在电池管理系统开发中的协同效应？"
+      ]
+    },
+    "gt_terms": [
+      "多模态框架",
+      "基于深度学习的",
+      "状态估计",
+      "诊断",
+      "多传感器系统",
+      "历史车辆数据",
+      "成本效益高的",
+      "开源的",
+      "现场数据",
+      "运行数据",
+      "电池健康状态",
+      "电动汽车",
+      "电池管理系统",
+      "健康状态估计",
+      "寿命预测",
+      "故障检测",
+      "实验室电池测试数据",
+      "锂离子电池",
+      "电化学机制",
+      "固体电解质界面生长",
+      "活性材料损失",
+      "锂镀层"
+    ],
+    "gt_relations": [
+      {
+        "head": "multi-modal framework",
+        "relation": "proposes for evaluation",
+        "relation_type": "method_applied_to",
+        "relation_type_norm": "method_applied_to",
+        "relation_type_raw": "method_applied_to",
+        "tail": "battery state of health",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [],
+        "evidence": "we propose a deep learning-based multi-modal framework to effectively leverage historical vehicle data for efficient, accurate, and cost-effective state of health estimation",
+        "source": "abstract",
+        "confidence": 0.9
+      },
+      {
+        "head": "deep learning-based",
+        "relation": "improves",
+        "relation_type": "improves_metric",
+        "relation_type_norm": "improves_metric",
+        "relation_type_raw": "improves_metric",
+        "tail": "state of health estimation",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [],
+        "evidence": "we propose a deep learning-based multi-modal framework to effectively leverage historical vehicle data for efficient, accurate, and cost-effective state of health estimation",
+        "source": "abstract",
+        "confidence": 0.85
+      },
+      {
+        "head": "field data",
+        "relation": "hinders development of",
+        "relation_type": "constrains",
+        "relation_type_norm": "constrains",
+        "relation_type_raw": "constrains",
+        "tail": "battery management system",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [],
+        "evidence": "the limited availability of large-scale, high-quality field data hinders the development of the battery management system",
+        "source": "abstract",
+        "confidence": 0.8
+      },
+      {
+        "head": "operational data",
+        "relation": "analyzed to understand",
+        "relation_type": "inferred_from",
+        "relation_type_norm": "inferred_from",
+        "relation_type_raw": "inferred_from",
+        "tail": "battery management system",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [],
+        "evidence": "we analyze the operational data of 300 diverse electric vehicles over three years to understand the disparities between field data and laboratory battery test data and their effect on state of health estimation",
+        "source": "abstract",
+        "confidence": 0.8
+      },
+      {
+        "head": "multi-sensor systems",
+        "relation": "applications in",
+        "relation_type": "method_applied_to",
+        "relation_type_norm": "method_applied_to",
+        "relation_type_raw": "method_applied_to",
+        "tail": "state estimation",
+        "direction": "->",
+        "quant": null,
+        "assumptions": [],
+        "evidence": "considerable potential for numerous applications in state estimation and diagnostics in multi-sensor systems",
+        "source": "abstract",
+        "confidence": 0.75
+      }
+    ],
+    "metadata": {
+      "journal": "Nature Communications",
+      "journal_id": "https://openalex.org/S64187185",
+      "issn_l": "2041-1723",
+      "source_type": "journal",
+      "doi": "https://doi.org/10.1038/s41467-025-56485-7",
+      "publication_date": "2025-01-29",
+      "publication_year": 2025,
+      "fwci": 156.77105282,
+      "cited_by_count": 72,
+      "field": "Advanced Battery Technologies Research"
+    }
+  }
+]

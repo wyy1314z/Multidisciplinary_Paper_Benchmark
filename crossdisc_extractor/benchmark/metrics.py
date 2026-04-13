@@ -21,6 +21,7 @@ import os
 os.environ.setdefault("HF_HUB_OFFLINE", "1")
 os.environ.setdefault("TRANSFORMERS_OFFLINE", "1")
 
+import gc
 import json
 import logging
 import math
@@ -33,6 +34,41 @@ import numpy as np
 
 logger = logging.getLogger("eval_metrics")
 
+try:
+    import torch as _TORCH
+except ImportError:  # pragma: no cover
+    _TORCH = None
+
+
+def _torch_cuda_available() -> bool:
+    return bool(_TORCH is not None and _TORCH.cuda.is_available())
+
+
+def _clear_torch_cuda_cache() -> None:
+    if _TORCH is not None and _TORCH.cuda.is_available():
+        try:
+            _TORCH.cuda.empty_cache()
+        except Exception:
+            pass
+    gc.collect()
+
+
+def _resolve_sbert_device() -> str:
+    raw = (os.getenv("CROSSDISC_SBERT_DEVICE") or "").strip().lower()
+    if raw in {"", "cpu", "-1", "none", "off", "no-gpu", "nogpu"}:
+        return "cpu"
+    if raw == "auto":
+        return "cuda" if _torch_cuda_available() else "cpu"
+    return raw
+
+
+def _candidate_sbert_devices(preferred: str) -> List[str]:
+    if preferred == "cpu":
+        return ["cpu"]
+    if preferred.startswith("cuda"):
+        return [preferred, "cpu"]
+    return [preferred, "cpu"]
+
 # ---------------------------------------------------------------------------
 # Optional: sentence-transformers (graceful degradation)
 # ---------------------------------------------------------------------------
@@ -40,14 +76,46 @@ try:
     from sentence_transformers import SentenceTransformer
 
     _SBERT_MODEL: Optional[SentenceTransformer] = None
+    _SBERT_DEVICE: Optional[str] = None
 
     def _get_sbert():
-        global _SBERT_MODEL
+        global _SBERT_MODEL, _SBERT_DEVICE
         if _SBERT_MODEL is None:
-            _SBERT_MODEL = SentenceTransformer(
-                "paraphrase-multilingual-MiniLM-L12-v2",
-                local_files_only=True,
-            )
+            preferred_device = _resolve_sbert_device()
+            last_error: Optional[Exception] = None
+            for device in _candidate_sbert_devices(preferred_device):
+                try:
+                    _SBERT_MODEL = SentenceTransformer(
+                        "paraphrase-multilingual-MiniLM-L12-v2",
+                        local_files_only=True,
+                        device=device,
+                    )
+                    _SBERT_DEVICE = device
+                    if device == "cpu" and preferred_device != "cpu":
+                        logger.warning(
+                            "SBERT switched to CPU mode (preferred=%s).",
+                            preferred_device,
+                        )
+                    break
+                except Exception as exc:  # pragma: no cover - runtime hardware dependent
+                    last_error = exc
+                    _SBERT_MODEL = None
+                    lower = str(exc).lower()
+                    is_cuda_issue = "out of memory" in lower or "cuda" in lower
+                    if device != "cpu" and is_cuda_issue:
+                        logger.warning(
+                            "SBERT init on %s failed (%s); retrying on CPU.",
+                            device,
+                            exc,
+                        )
+                        _clear_torch_cuda_cache()
+                        continue
+                    if device == "cpu":
+                        logger.warning("SBERT CPU init failed: %s", exc)
+                        return None
+                    raise
+            if _SBERT_MODEL is None and last_error is not None:
+                logger.warning("SBERT unavailable, fallback to string similarity: %s", last_error)
         return _SBERT_MODEL
 
     _HAS_SBERT = True
@@ -1312,38 +1380,143 @@ def hallucination_rate(
 
 def factual_precision(
     path_steps: List[Dict[str, Any]],
-    abstract: str,
+    abstract: str = "",
+    gt_terms: Optional[List[str]] = None,
+    gt_relations: Optional[List[Dict[str, Any]]] = None,
+    entity_threshold: float = 0.75,
 ) -> float:
     """
-    NLI-based factual precision: proportion of claims that do not
-    contradict the abstract.
+    Factual precision with tiered fallback:
+    1. If abstract is available: NLI-based non-contradiction against abstract
+    2. Else if GT relations are available: check whether each step is supported by
+       a matching GT relation/evidence sentence
+    3. Else if GT terms are available: require both head/tail entities to be grounded
+       in GT terms
+
+    This makes the metric usable for query-only / held-out evaluation settings
+    where the original abstract may be absent.
 
     FP = |{s : NLI(claim_s, abstract) != contradiction}| / num_steps
 
-    Uses DeBERTa-xlarge-mnli. Returns 0.0 if NLI model unavailable.
+    Uses DeBERTa-xlarge-mnli when textual evidence is available.
     Reference: Min et al. (2023) FActScore.
     """
-    if not path_steps or not abstract:
+    if not path_steps:
         return 0.0
 
-    nli = _get_nli()
-    if nli is None:
-        logger.warning("NLI model unavailable; factual_precision returns 0.0")
-        return 0.0
+    gt_terms = gt_terms or []
+    gt_relations = gt_relations or []
 
-    non_contradicted = 0
+    def _entity_grounded(entity: str) -> bool:
+        ent = (entity or "").strip()
+        if not ent or not gt_terms:
+            return False
+        ent_lower = ent.lower()
+        sbert = _get_sbert()
+        if sbert is not None:
+            ent_emb = sbert.encode([ent])[0]
+            gt_embs = sbert.encode(gt_terms)
+            return any(
+                _cosine_sim_vectors(ent_emb, gt_emb) >= entity_threshold
+                for gt_emb in gt_embs
+            )
+        return any(
+            _difflib_similarity(ent_lower, (gt or "").strip().lower()) >= entity_threshold
+            for gt in gt_terms
+        )
+
+    def _step_supported_by_gt_relation(step: Dict[str, Any]) -> bool:
+        gen_h = (step.get("head") or "").strip().lower()
+        gen_t = (step.get("tail") or "").strip().lower()
+        gen_rt = _normalize_rel(step.get("relation_type") or step.get("relation") or "")
+        claim = (step.get("claim") or "").strip()
+
+        if not gen_h or not gen_t or not gt_relations:
+            return False
+
+        best_relation: Optional[Dict[str, Any]] = None
+        best_sim = 0.0
+        best_reverse = False
+
+        for rel in gt_relations:
+            gt_h = (rel.get("head") or "").strip().lower()
+            gt_t = (rel.get("tail") or "").strip().lower()
+            if not gt_h or not gt_t:
+                continue
+
+            direct_sim = (_difflib_similarity(gen_h, gt_h) + _difflib_similarity(gen_t, gt_t)) / 2
+            reverse_sim = (_difflib_similarity(gen_h, gt_t) + _difflib_similarity(gen_t, gt_h)) / 2
+
+            if direct_sim >= reverse_sim:
+                pair_sim = direct_sim
+                reverse = False
+            else:
+                pair_sim = reverse_sim
+                reverse = True
+
+            if pair_sim > best_sim:
+                best_sim = pair_sim
+                best_relation = rel
+                best_reverse = reverse
+
+        if best_relation is None or best_sim < entity_threshold:
+            return False
+
+        gt_rt = _normalize_rel(best_relation.get("relation_type") or "")
+        relation_supported = False
+        if not gen_rt or not gt_rt:
+            relation_supported = True
+        elif gen_rt == gt_rt or _same_relation_cluster_str(gen_rt, gt_rt):
+            relation_supported = True
+        elif best_reverse and gt_rt in _SYMMETRIC_RELATIONS:
+            relation_supported = True
+
+        if not relation_supported:
+            return False
+
+        evidence_sentence = (best_relation.get("evidence_sentence") or "").strip()
+        nli = _get_nli()
+        if claim and evidence_sentence and nli is not None:
+            try:
+                result = nli(f"{evidence_sentence}</s></s>{claim}", truncation=True)
+                label = result[0]["label"].upper() if result else "NEUTRAL"
+                return label != "CONTRADICTION"
+            except Exception as e:
+                logger.warning("NLI inference failed for GT evidence factual check: %s", e)
+
+        return True
+
+    if abstract:
+        nli = _get_nli()
+        if nli is None:
+            logger.warning("NLI model unavailable; factual_precision falls back to GT-based checks")
+        else:
+            non_contradicted = 0
+            for step in path_steps:
+                claim = (step.get("claim") or "").strip()
+                if not claim:
+                    non_contradicted += 1  # no claim to check
+                    continue
+                try:
+                    result = nli(f"{abstract}</s></s>{claim}", truncation=True)
+                    label = result[0]["label"].upper() if result else "NEUTRAL"
+                    if label != "CONTRADICTION":
+                        non_contradicted += 1
+                except Exception as e:
+                    logger.warning("NLI inference failed for claim: %s", e)
+                    non_contradicted += 1  # fail-open
+            return round(non_contradicted / len(path_steps), 4)
+
+    supported_steps = 0
     for step in path_steps:
         claim = (step.get("claim") or "").strip()
         if not claim:
-            non_contradicted += 1  # no claim to check
+            supported_steps += 1
             continue
-        try:
-            result = nli(f"{abstract}</s></s>{claim}", truncation=True)
-            label = result[0]["label"].upper() if result else "NEUTRAL"
-            if label != "CONTRADICTION":
-                non_contradicted += 1
-        except Exception as e:
-            logger.warning("NLI inference failed for claim: %s", e)
-            non_contradicted += 1  # fail-open
+        if _step_supported_by_gt_relation(step):
+            supported_steps += 1
+            continue
+        if _entity_grounded(step.get("head") or "") and _entity_grounded(step.get("tail") or ""):
+            supported_steps += 1
 
-    return round(non_contradicted / len(path_steps), 4)
+    return round(supported_steps / len(path_steps), 4)

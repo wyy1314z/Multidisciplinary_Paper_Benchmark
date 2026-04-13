@@ -1,0 +1,3709 @@
+[
+  {
+    "title": "MIMIC-IV, a freely accessible electronic health record dataset",
+    "abstract": "Abstract Digital data collection during routine clinical practice is now ubiquitous within hospitals. The data contains valuable information on the care of patients and their response to treatments, offering exciting opportunities for research. Typically, data are stored within archival systems that are not intended to support research. These systems are often inaccessible to researchers and structured for optimal storage, rather than interpretability and analysis. Here we present MIMIC-IV, a publicly available database sourced from the electronic health record of the Beth Israel Deaconess Medical Center. Information available includes patient measurements, orders, diagnoses, procedures, treatments, and deidentified free-text clinical notes. MIMIC-IV is intended to support a wide array of research studies and educational material, helping to reduce barriers to conducting clinical research.",
+    "pdf_url": "https://doi.org/10.1038/s41597-022-01899-x",
+    "primary": "基础医学",
+    "secondary": "基础医学, 临床医学, 计算机科学技术",
+    "secondary_list": [
+      "基础医学",
+      "临床医学",
+      "计算机科学技术"
+    ],
+    "introduction": "oPEN\n\nData DESCRIPto R\n\nMIMIC-IV, a freely accessible \nelectronic health record dataset\n\nalistair E. W. Johnson1,2 ✉, Lucas Bulgarelli \nSteven Horng \nLi-wei H. Lehman1, Leo a. Celi \n\n 3, tom J. Pollard \n\n 1,3 & Roger G. Mark \n\n 1\n\n 1, Lu Shen3, alvin Gayles3, ayad Shammout3, \n\n 1, Sicheng Hao1, Benjamin Moody1, Brian Gow \n\n 1, \n\nDigital data collection during routine clinical practice is now ubiquitous within hospitals. the data \ncontains valuable information on the care of patients and their response to treatments, offering exciting \nopportunities for research. typically, data are stored within archival systems that are not intended \nto support research. these systems are often inaccessible to researchers and structured for optimal \nstorage, rather than interpretability and analysis. Here we present MIMIC-IV, a publicly available \ndatabase sourced from the electronic health record of the Beth Israel Deaconess Medical Center. \nInformation available includes patient measurements, orders, diagnoses, procedures, treatments, and \ndeidentified free-text clinical notes. MIMIC-IV is intended to support a wide array of research studies \nand educational material, helping to reduce barriers to conducting clinical research.\n\nBackground\nThanks to the widespread adoption of electronic health record systems, data collected during routine clinical \npractice is now digitally stored in hospitals across the United States. Despite widespread storage of this data, \narchiving systems are often not designed to support research, making them difficult to navigate and access. In \naddition, routinely collected clinical data is often sporadic and noisy, reflecting the processes by which it was \ngenerated, where quality of data collection is understandably peripheral to the act of providing high quality care.\nThe intensive care unit (ICU) is an especially data-rich environment as patients require close monitoring. \nThe typically acute nature of ICU patient illness and the importance of immediate intervention also make the \nenvironment of high-interest to researchers. Uniquely, there are a number of publicly available critical care data-\nsets which have enabled research in this area. These projects largely build upon MIMIC, a waveform database \nwith demographics digitally transcribed from paper records for over 90 patients1. MIMIC-II followed with a \nsignificantly increased sample size and breadth of information due to the clinical information being entirely \nsourced from various digital information systems2. More recently, MIMIC-III was published in 2015 and sig-\nnificantly expanded MIMIC-II, containing data for over 40,000 patients3. Outside of the MIMIC projects, a \nnumber of other critical care datasets have been made available to the worldwide research community. The \neICU Collaborative Research Database (eICU-CRD) v2.0 comprises of 200,859 stays at ICUs and step-down \nunits across 208 hospitals in the continental United States4. The AmsterdamUMCdb provides granular infor-\nmation for 23,106 admissions of 20,109 unique individuals admitted to a single academic medical center in \nthe Netherlands5. The HiRID database contains high-resolution data for almost 34,000 admissions between \n2008–2016 at Bern University Hospital in Switzerland6,7. HiRID contains 712 routinely collected physiological \nvariables with one data entry every two minutes. The Pediatric Intensive Care (PIC) database is sourced from \nThe Children’s Hospital at Zhejiang University School of Medicine with 12,881 patients and 13,941 ICU stays \nadmitted from 2010–20188.\n\nAlthough the increasing number of datasets publicly available for research is encouraging, a number of \nareas for improvement remain. Data content varies considerably across datasets, with each having a particular \nstrength. HiRID contains high resolution physiologic variables, eICU-CRD spans hundreds of distinct hospi-\ntals, while PIC contains pediatric patients. Clinical practice evolves quickly, requiring continual updating of \nthe resources in order for derivative research to remain relevant. Finally, most datasets comprise of only one \nmodality of information, clinical observations, and omit other important domains such as imaging, free-text, \nphysiologic waveforms, and genomics.\n\n1Massachusetts institute of technology, cambridge, MA, USA. 2the Hospital for Sick children, toronto, On, canada. \n3Beth israel Deaconess Medical center, Boston, MA, USA. ✉e-mail: aewj@mit.edu\n\nScientific Data | (2023) 10:1 | https://doi.org/10.1038/s41597-022-01899-x\n\n1\n\nwww.nature.com/scientificdata\fFig. 1 An overview of the development process for MIMIC. Data are acquired from the BIDMC data \nwarehouse, the ICU information system (MetaVision), and external sources (“acquisition”). Structured Query \nLanguage (SQL) scripts merge the various data sources into a single schema (“transformation”). Finally, \ndeidentification algorithms are applied to selectively remove protected health information from the reformatted \nschema. Tables present in MIMIC-IV are provided on the far right of the figure under their respective module. \nIssues raised on the MIMIC Code Repository are assessed and used to improve the build process as appropriate.\n\nIn this paper we describe the public release of MIMIC-IV, a contemporary electronic health record dataset \ncovering a decade of admissions between 2008 and 2019. MIMIC-IV complements the growing area of publicly \naccessible critical care datasets in a number of ways. First, MIMIC-IV is contemporary, containing information \nfrom 2008–2019. Second, MIMIC-IV incorporates new precise digital information sources such as the elec-\ntronic medicine administration record. Third, MIMIC-IV establishes a modular organization of the constituent \ndata allowing linking of the database to external departments and distinct modalities of data.\n\nMethods\nMIMIC-IV is the result of a collaboration between Beth Israel Deaconess Medical Center (BIDMC) and \nMassachusetts Institute of Technology (MIT",
+    "journal": "Scientific Data",
+    "journal_id": "https://openalex.org/S2607323502",
+    "issn_l": "2052-4463",
+    "source_type": "journal",
+    "doi": "https://doi.org/10.1038/s41597-022-01899-x",
+    "publication_date": "2023-01-03",
+    "publication_year": 2023,
+    "fwci": 564.5287817,
+    "cited_by_count": 2205,
+    "field": "Machine Learning in Healthcare",
+    "parsed": {
+      "meta": {
+        "title": "MIMIC-IV, a freely accessible electronic health record dataset",
+        "primary": "基础医学",
+        "secondary_list": [
+          "基础医学",
+          "临床医学",
+          "计算机科学技术"
+        ],
+        "journal": "Scientific Data",
+        "journal_id": "https://openalex.org/S2607323502",
+        "issn_l": "2052-4463",
+        "source_type": "journal",
+        "doi": "https://doi.org/10.1038/s41597-022-01899-x",
+        "publication_date": "2023-01-03",
+        "publication_year": 2023,
+        "fwci": 564.5287817,
+        "cited_by_count": 2205,
+        "field": "Machine Learning in Healthcare"
+      },
+      "概念": {
+        "主学科": [
+          {
+            "term": "MIMIC-IV",
+            "normalized": "MIMIC-IV",
+            "std_label": null,
+            "evidence": "Here we present MIMIC-IV, a publicly available database",
+            "source": "abstract",
+            "confidence": 0.95
+          },
+          {
+            "term": "electronic health record",
+            "normalized": "电子健康记录",
+            "std_label": null,
+            "evidence": "database sourced from the electronic health record",
+            "source": "abstract",
+            "confidence": 0.92
+          },
+          {
+            "term": "patient measurements",
+            "normalized": "患者测量数据",
+            "std_label": null,
+            "evidence": "Information available includes patient measurements",
+            "source": "abstract",
+            "confidence": 0.9
+          },
+          {
+            "term": "deidentified free-text clinical notes",
+            "normalized": "去标识化自由文本临床记录",
+            "std_label": null,
+            "evidence": "deidentified free-text clinical notes",
+            "source": "abstract",
+            "confidence": 0.93
+          },
+          {
+            "term": "clinical research",
+            "normalized": "临床研究",
+            "std_label": null,
+            "evidence": "reduce barriers to conducting clinical research",
+            "source": "abstract",
+            "confidence": 0.9
+          },
+          {
+            "term": "waveform database",
+            "normalized": "波形数据库",
+            "std_label": null,
+            "evidence": "MIMIC, a waveform database with demographics",
+            "source": "introduction",
+            "confidence": 0.88
+          },
+          {
+            "term": "physiological variables",
+            "normalized": "生理变量",
+            "std_label": null,
+            "evidence": "HiRID contains high resolution physiologic variables",
+            "source": "introduction",
+            "confidence": 0.91
+          },
+          {
+            "term": "protected health information",
+            "normalized": "受保护健康信息",
+            "std_label": null,
+            "evidence": "remove protected health information",
+            "source": "introduction",
+            "confidence": 0.94
+          },
+          {
+            "term": "data warehouse",
+            "normalized": "数据仓库",
+            "std_label": null,
+            "evidence": "BIDMC data warehouse",
+            "source": "introduction",
+            "confidence": 0.92
+          },
+          {
+            "term": "digital information systems",
+            "normalized": "数字信息系统",
+            "std_label": null,
+            "evidence": "clinical information being entirely sourced from digital information systems",
+            "source": "introduction",
+            "confidence": 0.89
+          }
+        ],
+        "辅学科": {
+          "基础医学": [
+            {
+              "term": "MIMIC-II",
+              "normalized": "MIMIC-II",
+              "std_label": null,
+              "evidence": "MIMIC-II followed with increased sample size",
+              "source": "introduction",
+              "confidence": 0.93
+            },
+            {
+              "term": "MIMIC-III",
+              "normalized": "MIMIC-III",
+              "std_label": null,
+              "evidence": "MIMIC-III was published in 2015",
+              "source": "introduction",
+              "confidence": 0.93
+            },
+            {
+              "term": "genomics",
+              "normalized": "基因组学",
+              "std_label": null,
+              "evidence": "imaging, free-text, physiologic waveforms, and genomics",
+              "source": "introduction",
+              "confidence": 0.9
+            },
+            {
+              "term": "clinical observations",
+              "normalized": "临床观察",
+              "std_label": null,
+              "evidence": "most datasets comprise only one modality of information, clinical observations",
+              "source": "introduction",
+              "confidence": 0.88
+            },
+            {
+              "term": "data deidentification",
+              "normalized": "数据去标识化",
+              "std_label": null,
+              "evidence": "deidentification algorithms are applied",
+              "source": "introduction",
+              "confidence": 0.91
+            }
+          ],
+          "临床医学": [
+            {
+              "term": "intensive care unit (ICU)",
+              "normalized": "重症监护病房",
+              "std_label": null,
+              "evidence": "The intensive care unit (ICU) is a data-rich environment",
+              "source": "introduction",
+              "confidence": 0.95
+            },
+            {
+              "term": "critical care datasets",
+              "normalized": "重症监护数据集",
+              "std_label": null,
+              "evidence": "publicly available critical care datasets",
+              "source": "introduction",
+              "confidence": 0.92
+            },
+            {
+              "term": "pediatric patients",
+              "normalized": "儿科患者",
+              "std_label": null,
+              "evidence": "PIC contains pediatric patients",
+              "source": "introduction",
+              "confidence": 0.9
+            },
+            {
+              "term": "diagnoses",
+              "normalized": "诊断",
+              "std_label": null,
+              "evidence": "Information available includes diagnoses",
+              "source": "abstract",
+              "confidence": 0.93
+            }
+          ],
+          "计算机科学技术": [
+            {
+              "term": "SQL scripts",
+              "normalized": "脚本",
+              "std_label": null,
+              "evidence": "Structured Query Language (SQL) scripts merge data sources",
+              "source": "introduction",
+              "confidence": 0.94
+            },
+            {
+              "term": "modular organization",
+              "normalized": "模块化组织",
+              "std_label": null,
+              "evidence": "MIMIC-IV establishes a modular organization",
+              "source": "introduction",
+              "confidence": 0.92
+            },
+            {
+              "term": "electronic medicine administration record",
+              "normalized": "电子药品管理记录",
+              "std_label": null,
+              "evidence": "new precise digital sources like electronic medicine administration record",
+              "source": "introduction",
+              "confidence": 0.89
+            },
+            {
+              "term": "data integration",
+              "normalized": "数据整合",
+              "std_label": null,
+              "evidence": "merge various data sources into a single schema",
+              "source": "introduction",
+              "confidence": 0.91
+            },
+            {
+              "term": "MetaVision",
+              "normalized": "MetaVision",
+              "std_label": null,
+              "evidence": "ICU information system (MetaVision)",
+              "source": "introduction",
+              "confidence": 0.93
+            }
+          ]
+        }
+      },
+      "跨学科关系": [
+        {
+          "head": "MIMIC-IV",
+          "relation": "is derived from",
+          "relation_type": "maps_to",
+          "relation_type_norm": "maps_to",
+          "relation_type_raw": "maps_to",
+          "tail": "电子健康记录",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "database sourced from the electronic health record",
+          "source": "abstract",
+          "confidence": 0.93
+        },
+        {
+          "head": "MIMIC-IV",
+          "relation": "achieves through",
+          "relation_type": "method_applied_to",
+          "relation_type_norm": "method_applied_to",
+          "relation_type_raw": "method_applied_to",
+          "tail": "数据整合",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "SQL scripts merge various data sources into a single schema",
+          "source": "introduction",
+          "confidence": 0.91
+        },
+        {
+          "head": "MIMIC-IV",
+          "relation": "implements",
+          "relation_type": "extends",
+          "relation_type_norm": "extends",
+          "relation_type_raw": "extends",
+          "tail": "模块化组织",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "MIMIC-IV establishes a modular organization",
+          "source": "introduction",
+          "confidence": 0.92
+        },
+        {
+          "head": "MIMIC-IV",
+          "relation": "supports",
+          "relation_type": "improves_metric",
+          "relation_type_norm": "improves_metric",
+          "relation_type_raw": "improves_metric",
+          "tail": "临床研究",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "intended to support a wide array of research studies",
+          "source": "abstract",
+          "confidence": 0.9
+        },
+        {
+          "head": "数据仓库",
+          "relation": "integrates data from",
+          "relation_type": "constrains",
+          "relation_type_norm": "constrains",
+          "relation_type_raw": "constrains",
+          "tail": "MetaVision",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "BIDMC data warehouse and ICU information system (MetaVision)",
+          "source": "introduction",
+          "confidence": 0.93
+        },
+        {
+          "head": "waveform database",
+          "relation": "evolves to",
+          "relation_type": "generalizes",
+          "relation_type_norm": "generalizes",
+          "relation_type_raw": "generalizes",
+          "tail": "MIMIC-II",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "MIMIC-II followed with significantly increased sample size",
+          "source": "introduction",
+          "confidence": 0.93
+        },
+        {
+          "head": "physiological variables",
+          "relation": "contained in",
+          "relation_type": "maps_to",
+          "relation_type_norm": "maps_to",
+          "relation_type_raw": "maps_to",
+          "tail": "HiRID database",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "HiRID contains high-resolution physiological variables",
+          "source": "introduction",
+          "confidence": 0.91
+        },
+        {
+          "head": "genomics",
+          "relation": "contrasts with",
+          "relation_type": "corresponds_to",
+          "relation_type_norm": "corresponds_to",
+          "relation_type_raw": "corresponds_to",
+          "tail": "clinical observations",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "most datasets comprise only clinical observations, omitting genomics",
+          "source": "introduction",
+          "confidence": 0.88
+        },
+        {
+          "head": "data deidentification",
+          "relation": "targets",
+          "relation_type": "method_applied_to",
+          "relation_type_norm": "method_applied_to",
+          "relation_type_raw": "method_applied_to",
+          "tail": "protected health information",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "deidentification algorithms remove protected health information",
+          "source": "introduction",
+          "confidence": 0.91
+        },
+        {
+          "head": "电子药品管理记录",
+          "relation": "enhances",
+          "relation_type": "extends",
+          "relation_type_norm": "extends",
+          "relation_type_raw": "extends",
+          "tail": "digital information systems",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "incorporates new precise digital sources like electronic medicine administration record",
+          "source": "introduction",
+          "confidence": 0.89
+        },
+        {
+          "head": "重症监护病房",
+          "relation": "generates data for",
+          "relation_type": "driven_by",
+          "relation_type_norm": "driven_by",
+          "relation_type_raw": "driven_by",
+          "tail": "critical care datasets",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "ICU is a data-rich environment enabling critical care datasets",
+          "source": "introduction",
+          "confidence": 0.95
+        },
+        {
+          "head": "MIMIC-III",
+          "relation": "precedes",
+          "relation_type": "generalizes",
+          "relation_type_norm": "generalizes",
+          "relation_type_raw": "generalizes",
+          "tail": "MIMIC-IV",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "MIMIC-III published in 2015 significantly expanded, followed by MIMIC-IV",
+          "source": "introduction",
+          "confidence": 0.93
+        }
+      ],
+      "按辅助学科分类": {
+        "基础医学": {
+          "概念": [
+            "MIMIC-II",
+            "MIMIC-III",
+            "基因组学",
+            "临床观察",
+            "数据去标识化"
+          ],
+          "关系": [
+            5,
+            7,
+            8,
+            11
+          ],
+          "rationale": "提供医学数据标准化与历史演进支持"
+        },
+        "临床医学": {
+          "概念": [
+            "重症监护病房",
+            "重症监护数据集",
+            "儿科患者",
+            "诊断"
+          ],
+          "关系": [
+            10
+          ],
+          "rationale": "提供临床数据来源与应用场景"
+        },
+        "计算机科学技术": {
+          "概念": [
+            "脚本",
+            "模块化组织",
+            "电子药品管理记录",
+            "数据整合",
+            "MetaVision"
+          ],
+          "关系": [
+            1,
+            2,
+            4,
+            9
+          ],
+          "rationale": "实现数据整合与系统架构设计"
+        }
+      },
+      "查询": {
+        "一级": "如何促进临床研究？",
+        "二级": [
+          "如何通过数据整合与模块化设计提升临床研究效率？",
+          "重症监护病房的多源数据如何通过支持诊断分析？"
+        ],
+        "三级": [
+          "如何整合重症监护病房的多源数据并通过模块化架构支持临床研究与基因组学分析？",
+          "数据整合技术与去标识化算法如何协同保障数据质量与临床应用安全？"
+        ]
+      },
+      "假设": {
+        "一级": [
+          [
+            {
+              "step": 1,
+              "head": "MIMIC-IV",
+              "relation": "影响",
+              "tail": "数据整合",
+              "claim": "数据整合"
+            },
+            {
+              "step": 2,
+              "head": "数据整合",
+              "relation": "导致",
+              "tail": "脚本",
+              "claim": "数据整合 脚本"
+            },
+            {
+              "step": 3,
+              "head": "脚本",
+              "relation": "促进",
+              "tail": "临床研究",
+              "claim": "脚本 临床研究"
+            }
+          ],
+          [
+            {
+              "step": 1,
+              "head": "重症监护病房",
+              "relation": "影响",
+              "tail": "重症监护数据集",
+              "claim": "重症监护病房 重症监护数据集"
+            },
+            {
+              "step": 2,
+              "head": "重症监护数据集",
+              "relation": "导致",
+              "tail": "诊断",
+              "claim": "重症监护数据集 诊断"
+            },
+            {
+              "step": 3,
+              "head": "诊断",
+              "relation": "促进",
+              "tail": "临床研究",
+              "claim": "诊断 临床研究"
+            }
+          ],
+          [
+            {
+              "step": 1,
+              "head": "MIMIC-IV",
+              "relation": "影响",
+              "tail": "数据去标识化",
+              "claim": "数据去标识化"
+            },
+            {
+              "step": 2,
+              "head": "数据去标识化",
+              "relation": "导致",
+              "tail": "受保护健康信息",
+              "claim": "数据去标识化 受保护健康信息"
+            },
+            {
+              "step": 3,
+              "head": "受保护健康信息",
+              "relation": "促进",
+              "tail": "临床研究",
+              "claim": "受保护健康信息 临床研究"
+            }
+          ]
+        ],
+        "二级": [
+          [
+            {
+              "step": 1,
+              "head": "数据整合",
+              "relation": "实现方式",
+              "tail": "模块化组织",
+              "claim": "数据整合 实现方式 模块化组织"
+            },
+            {
+              "step": 2,
+              "head": "模块化组织",
+              "relation": "促进",
+              "tail": "临床研究",
+              "claim": "模块化组织 促进 临床研究"
+            },
+            {
+              "step": 3,
+              "head": "临床研究",
+              "relation": "扩展应用",
+              "tail": "基因组学",
+              "claim": "临床研究 扩展应用 基因组学"
+            }
+          ],
+          [
+            {
+              "step": 1,
+              "head": "重症监护病房",
+              "relation": "产生",
+              "tail": "数据整合",
+              "claim": "重症监护病房 产生 数据整合"
+            },
+            {
+              "step": 2,
+              "head": "数据整合",
+              "relation": "支持",
+              "tail": "诊断",
+              "claim": "数据整合 支持 诊断"
+            },
+            {
+              "step": 3,
+              "head": "诊断",
+              "relation": "优化",
+              "tail": "临床观察",
+              "claim": "诊断 优化 临床观察"
+            }
+          ]
+        ],
+        "三级": [
+          [
+            {
+              "step": 1,
+              "head": "重症监护病房",
+              "relation": "影响",
+              "tail": "数据仓库",
+              "claim": "重症监护病房的数据通过数据仓库进行集中存储"
+            },
+            {
+              "step": 2,
+              "head": "数据仓库",
+              "relation": "导致",
+              "tail": "数据整合",
+              "claim": "数据仓库通过脚本实现多源数据整合"
+            },
+            {
+              "step": 3,
+              "head": "数据整合",
+              "relation": "促进",
+              "tail": "模块化组织",
+              "claim": "数据整合结果形成模块化组织架构"
+            }
+          ],
+          [
+            {
+              "step": 1,
+              "head": "数据整合",
+              "relation": "影响",
+              "tail": "脚本",
+              "claim": "数据整合依赖脚本技术实现"
+            },
+            {
+              "step": 2,
+              "head": "脚本",
+              "relation": "导致",
+              "tail": "数据去标识化",
+              "claim": "脚本为数据去标识化提供技术基础"
+            },
+            {
+              "step": 3,
+              "head": "数据去标识化",
+              "relation": "促进",
+              "tail": "受保护健康信息",
+              "claim": "去标识化算法直接处理受保护健康信息"
+            }
+          ]
+        ],
+        "一级总结": [
+          "数据整合通过计算机科学技术的脚本方法提升效率，促进临床研究",
+          "重症监护数据集通过临床医学的诊断分析支持临床研究",
+          "数据去标识化通过基础医学的方法保障数据安全以促进临床研究"
+        ],
+        "二级总结": [
+          "计算机科学技术通过数据整合与模块化组织架构，将分散的电子健康记录转化为标准化研究资源，推动基础医学领域的基因组学研究扩展",
+          "临床医学利用重症监护病房的多源数据整合能力，构建精准诊断模型，从而改进传统临床观察方法的局限性"
+        ],
+        "三级总结": [
+          "通过重症监护病房数据汇聚至数据仓库，经脚本整合形成模块化组织架构，最终支持临床研究与基因组学分析",
+          "数据整合技术通过脚本与去标识化算法协同作用，在消除受保护健康信息的同时保障临床数据质量与应用安全"
+        ]
+      },
+      "graph": {
+        "nodes": [
+          {
+            "id": "MIMIC-IV",
+            "term": "MIMIC-IV",
+            "normalized": "MIMIC-IV",
+            "discipline": "基础医学",
+            "evidence": "Here we present MIMIC-IV, a publicly available database",
+            "source": "abstract",
+            "confidence": 0.95
+          },
+          {
+            "id": "电子健康记录",
+            "term": "electronic health record",
+            "normalized": "电子健康记录",
+            "discipline": "基础医学",
+            "evidence": "database sourced from the electronic health record",
+            "source": "abstract",
+            "confidence": 0.92
+          },
+          {
+            "id": "患者测量数据",
+            "term": "patient measurements",
+            "normalized": "患者测量数据",
+            "discipline": "基础医学",
+            "evidence": "Information available includes patient measurements",
+            "source": "abstract",
+            "confidence": 0.9
+          },
+          {
+            "id": "去标识化自由文本临床记录",
+            "term": "deidentified free-text clinical notes",
+            "normalized": "去标识化自由文本临床记录",
+            "discipline": "基础医学",
+            "evidence": "deidentified free-text clinical notes",
+            "source": "abstract",
+            "confidence": 0.93
+          },
+          {
+            "id": "临床研究",
+            "term": "clinical research",
+            "normalized": "临床研究",
+            "discipline": "基础医学",
+            "evidence": "reduce barriers to conducting clinical research",
+            "source": "abstract",
+            "confidence": 0.9
+          },
+          {
+            "id": "波形数据库",
+            "term": "waveform database",
+            "normalized": "波形数据库",
+            "discipline": "基础医学",
+            "evidence": "MIMIC, a waveform database with demographics",
+            "source": "introduction",
+            "confidence": 0.88
+          },
+          {
+            "id": "生理变量",
+            "term": "physiological variables",
+            "normalized": "生理变量",
+            "discipline": "基础医学",
+            "evidence": "HiRID contains high resolution physiologic variables",
+            "source": "introduction",
+            "confidence": 0.91
+          },
+          {
+            "id": "受保护健康信息",
+            "term": "protected health information",
+            "normalized": "受保护健康信息",
+            "discipline": "基础医学",
+            "evidence": "remove protected health information",
+            "source": "introduction",
+            "confidence": 0.94
+          },
+          {
+            "id": "数据仓库",
+            "term": "data warehouse",
+            "normalized": "数据仓库",
+            "discipline": "基础医学",
+            "evidence": "BIDMC data warehouse",
+            "source": "introduction",
+            "confidence": 0.92
+          },
+          {
+            "id": "数字信息系统",
+            "term": "digital information systems",
+            "normalized": "数字信息系统",
+            "discipline": "基础医学",
+            "evidence": "clinical information being entirely sourced from digital information systems",
+            "source": "introduction",
+            "confidence": 0.89
+          },
+          {
+            "id": "MIMIC-II",
+            "term": "MIMIC-II",
+            "normalized": "MIMIC-II",
+            "discipline": "基础医学",
+            "evidence": "MIMIC-II followed with increased sample size",
+            "source": "introduction",
+            "confidence": 0.93
+          },
+          {
+            "id": "MIMIC-III",
+            "term": "MIMIC-III",
+            "normalized": "MIMIC-III",
+            "discipline": "基础医学",
+            "evidence": "MIMIC-III was published in 2015",
+            "source": "introduction",
+            "confidence": 0.93
+          },
+          {
+            "id": "基因组学",
+            "term": "genomics",
+            "normalized": "基因组学",
+            "discipline": "基础医学",
+            "evidence": "imaging, free-text, physiologic waveforms, and genomics",
+            "source": "introduction",
+            "confidence": 0.9
+          },
+          {
+            "id": "临床观察",
+            "term": "clinical observations",
+            "normalized": "临床观察",
+            "discipline": "基础医学",
+            "evidence": "most datasets comprise only one modality of information, clinical observations",
+            "source": "introduction",
+            "confidence": 0.88
+          },
+          {
+            "id": "数据去标识化",
+            "term": "data deidentification",
+            "normalized": "数据去标识化",
+            "discipline": "基础医学",
+            "evidence": "deidentification algorithms are applied",
+            "source": "introduction",
+            "confidence": 0.91
+          },
+          {
+            "id": "重症监护病房",
+            "term": "intensive care unit (ICU)",
+            "normalized": "重症监护病房",
+            "discipline": "临床医学",
+            "evidence": "The intensive care unit (ICU) is a data-rich environment",
+            "source": "introduction",
+            "confidence": 0.95
+          },
+          {
+            "id": "重症监护数据集",
+            "term": "critical care datasets",
+            "normalized": "重症监护数据集",
+            "discipline": "临床医学",
+            "evidence": "publicly available critical care datasets",
+            "source": "introduction",
+            "confidence": 0.92
+          },
+          {
+            "id": "儿科患者",
+            "term": "pediatric patients",
+            "normalized": "儿科患者",
+            "discipline": "临床医学",
+            "evidence": "PIC contains pediatric patients",
+            "source": "introduction",
+            "confidence": 0.9
+          },
+          {
+            "id": "诊断",
+            "term": "diagnoses",
+            "normalized": "诊断",
+            "discipline": "临床医学",
+            "evidence": "Information available includes diagnoses",
+            "source": "abstract",
+            "confidence": 0.93
+          },
+          {
+            "id": "脚本",
+            "term": "SQL scripts",
+            "normalized": "脚本",
+            "discipline": "计算机科学技术",
+            "evidence": "Structured Query Language (SQL) scripts merge data sources",
+            "source": "introduction",
+            "confidence": 0.94
+          },
+          {
+            "id": "模块化组织",
+            "term": "modular organization",
+            "normalized": "模块化组织",
+            "discipline": "计算机科学技术",
+            "evidence": "MIMIC-IV establishes a modular organization",
+            "source": "introduction",
+            "confidence": 0.92
+          },
+          {
+            "id": "电子药品管理记录",
+            "term": "electronic medicine administration record",
+            "normalized": "电子药品管理记录",
+            "discipline": "计算机科学技术",
+            "evidence": "new precise digital sources like electronic medicine administration record",
+            "source": "introduction",
+            "confidence": 0.89
+          },
+          {
+            "id": "数据整合",
+            "term": "data integration",
+            "normalized": "数据整合",
+            "discipline": "计算机科学技术",
+            "evidence": "merge various data sources into a single schema",
+            "source": "introduction",
+            "confidence": 0.91
+          },
+          {
+            "id": "MetaVision",
+            "term": "MetaVision",
+            "normalized": "MetaVision",
+            "discipline": "计算机科学技术",
+            "evidence": "ICU information system (MetaVision)",
+            "source": "introduction",
+            "confidence": 0.93
+          },
+          {
+            "id": "HiRID database",
+            "term": "HiRID database",
+            "normalized": "HiRID database",
+            "discipline": "struct_relation_inferred",
+            "evidence": "",
+            "source": "struct_relation_inferred",
+            "confidence": 0.8
+          }
+        ],
+        "edges": [
+          {
+            "source": "MIMIC-IV",
+            "target": "电子健康记录",
+            "relation": "is derived from",
+            "relation_type": "maps_to",
+            "metadata": {
+              "evidence": "database sourced from the electronic health record",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "MIMIC-IV",
+            "target": "数据整合",
+            "relation": "achieves through",
+            "relation_type": "method_applied_to",
+            "metadata": {
+              "evidence": "SQL scripts merge various data sources into a single schema",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "MIMIC-IV",
+            "target": "模块化组织",
+            "relation": "implements",
+            "relation_type": "extends",
+            "metadata": {
+              "evidence": "MIMIC-IV establishes a modular organization",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "MIMIC-IV",
+            "target": "临床研究",
+            "relation": "supports",
+            "relation_type": "improves_metric",
+            "metadata": {
+              "evidence": "intended to support a wide array of research studies",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "数据仓库",
+            "target": "MetaVision",
+            "relation": "integrates data from",
+            "relation_type": "constrains",
+            "metadata": {
+              "evidence": "BIDMC data warehouse and ICU information system (MetaVision)",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "波形数据库",
+            "target": "MIMIC-II",
+            "relation": "evolves to",
+            "relation_type": "generalizes",
+            "metadata": {
+              "evidence": "MIMIC-II followed with significantly increased sample size",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "生理变量",
+            "target": "HiRID database",
+            "relation": "contained in",
+            "relation_type": "maps_to",
+            "metadata": {
+              "evidence": "HiRID contains high-resolution physiological variables",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "基因组学",
+            "target": "临床观察",
+            "relation": "contrasts with",
+            "relation_type": "corresponds_to",
+            "metadata": {
+              "evidence": "most datasets comprise only clinical observations, omitting genomics",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "数据去标识化",
+            "target": "受保护健康信息",
+            "relation": "targets",
+            "relation_type": "method_applied_to",
+            "metadata": {
+              "evidence": "deidentification algorithms remove protected health information",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "电子药品管理记录",
+            "target": "数字信息系统",
+            "relation": "enhances",
+            "relation_type": "extends",
+            "metadata": {
+              "evidence": "incorporates new precise digital sources like electronic medicine administration record",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "重症监护病房",
+            "target": "重症监护数据集",
+            "relation": "generates data for",
+            "relation_type": "driven_by",
+            "metadata": {
+              "evidence": "ICU is a data-rich environment enabling critical care datasets",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "MIMIC-III",
+            "target": "MIMIC-IV",
+            "relation": "precedes",
+            "relation_type": "generalizes",
+            "metadata": {
+              "evidence": "MIMIC-III published in 2015 significantly expanded, followed by MIMIC-IV",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "MIMIC-IV",
+            "target": "数据整合",
+            "relation": "影响",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "数据整合",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "数据整合",
+            "target": "脚本",
+            "relation": "导致",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "数据整合 脚本",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "脚本",
+            "target": "临床研究",
+            "relation": "促进",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "脚本 临床研究",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "重症监护病房",
+            "target": "重症监护数据集",
+            "relation": "影响",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "重症监护病房 重症监护数据集",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "重症监护数据集",
+            "target": "诊断",
+            "relation": "导致",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "重症监护数据集 诊断",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "诊断",
+            "target": "临床研究",
+            "relation": "促进",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "诊断 临床研究",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "MIMIC-IV",
+            "target": "数据去标识化",
+            "relation": "影响",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "数据去标识化",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 2
+            }
+          },
+          {
+            "source": "数据去标识化",
+            "target": "受保护健康信息",
+            "relation": "导致",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "数据去标识化 受保护健康信息",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 2
+            }
+          },
+          {
+            "source": "受保护健康信息",
+            "target": "临床研究",
+            "relation": "促进",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "受保护健康信息 临床研究",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 2
+            }
+          },
+          {
+            "source": "数据整合",
+            "target": "模块化组织",
+            "relation": "实现方式",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "数据整合 实现方式 模块化组织",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "模块化组织",
+            "target": "临床研究",
+            "relation": "促进",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "模块化组织 促进 临床研究",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "临床研究",
+            "target": "基因组学",
+            "relation": "扩展应用",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "临床研究 扩展应用 基因组学",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "重症监护病房",
+            "target": "数据整合",
+            "relation": "产生",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "重症监护病房 产生 数据整合",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "数据整合",
+            "target": "诊断",
+            "relation": "支持",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "数据整合 支持 诊断",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "诊断",
+            "target": "临床观察",
+            "relation": "优化",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "诊断 优化 临床观察",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "重症监护病房",
+            "target": "数据仓库",
+            "relation": "影响",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "重症监护病房的数据通过数据仓库进行集中存储",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "数据仓库",
+            "target": "数据整合",
+            "relation": "导致",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "数据仓库通过脚本实现多源数据整合",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "数据整合",
+            "target": "模块化组织",
+            "relation": "促进",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "数据整合结果形成模块化组织架构",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "数据整合",
+            "target": "脚本",
+            "relation": "影响",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "数据整合依赖脚本技术实现",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "脚本",
+            "target": "数据去标识化",
+            "relation": "导致",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "脚本为数据去标识化提供技术基础",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "数据去标识化",
+            "target": "受保护健康信息",
+            "relation": "促进",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "去标识化算法直接处理受保护健康信息",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          }
+        ]
+      },
+      "metrics": {
+        "path_consistency": 0.19047619047619047,
+        "coverage": 0.52,
+        "bridging_score": 0.4375,
+        "rao_stirling_diversity": 0.2143,
+        "embedding_bridging": 0.0,
+        "consistency_precision": 0.0,
+        "consistency_recall": 0.0,
+        "consistency_f1": 0.0,
+        "info_novelty": 0.0,
+        "chain_coherence": 0.0,
+        "atypical_combination": 0.61,
+        "kg_density": 0.045,
+        "kg_inverse_modularity": 0.9225,
+        "kg_largest_cc_ratio": 0.64,
+        "kg_avg_betweenness": 0.0243,
+        "kg_clustering_coefficient": 0.0667,
+        "concept_recall": 0.0,
+        "concept_precision": 0.0,
+        "concept_f1": 0.0,
+        "relation_precision": 0.0,
+        "relation_type_accuracy": 0.0,
+        "evidence_coverage": 0.0,
+        "path_alignment_best": 0.0,
+        "path_alignment_mean": 0.0
+      }
+    },
+    "raw": "/* stage1: struct */\n/* concepts round1 */\n{\n  \"meta\": {\n    \"title\": \"MIMIC-IV, a freely accessible electronic health record dataset\",\n    \"primary\": \"基础医学\",\n    \"secondary_list\": [\"基础医学\", \"临床医学\", \"计算机科学技术\"]\n  },\n  \"概念\": {\n    \"主学科\": [\n      {\"term\": \"MIMIC-IV\", \"normalized\": \"MIMIC-IV\", \"std_label\": null, \"evidence\": \"Here we present MIMIC-IV, a publicly available database\", \"source\": \"abstract\", \"confidence\": 0.95},\n      {\"term\": \"electronic health record\", \"normalized\": \"电子健康记录\", \"std_label\": null, \"evidence\": \"database sourced from the electronic health record\", \"source\": \"abstract\", \"confidence\": 0.92},\n      {\"term\": \"patient measurements\", \"normalized\": \"患者测量数据\", \"std_label\": null, \"evidence\": \"Information available includes patient measurements\", \"source\": \"abstract\", \"confidence\": 0.9},\n      {\"term\": \"deidentified free-text clinical notes\", \"normalized\": \"去标识化自由文本临床记录\", \"std_label\": null, \"evidence\": \"deidentified free-text clinical notes\", \"source\": \"abstract\", \"confidence\": 0.93},\n      {\"term\": \"clinical research\", \"normalized\": \"临床研究\", \"std_label\": null, \"evidence\": \"reduce barriers to conducting clinical research\", \"source\": \"abstract\", \"confidence\": 0.9},\n      {\"term\": \"waveform database\", \"normalized\": \"波形数据库\", \"std_label\": null, \"evidence\": \"MIMIC, a waveform database with demographics\", \"source\": \"introduction\", \"confidence\": 0.88},\n      {\"term\": \"physiological variables\", \"normalized\": \"生理变量\", \"std_label\": null, \"evidence\": \"HiRID contains high resolution physiologic variables\", \"source\": \"introduction\", \"confidence\": 0.91},\n      {\"term\": \"protected health information\", \"normalized\": \"受保护健康信息\", \"std_label\": null, \"evidence\": \"remove protected health information\", \"source\": \"introduction\", \"confidence\": 0.94},\n      {\"term\": \"data warehouse\", \"normalized\": \"数据仓库\", \"std_label\": null, \"evidence\": \"BIDMC data warehouse\", \"source\": \"introduction\", \"confidence\": 0.92},\n      {\"term\": \"digital information systems\", \"normalized\": \"数字信息系统\", \"std_label\": null, \"evidence\": \"clinical information being entirely sourced from digital information systems\", \"source\": \"introduction\", \"confidence\": 0.89}\n    ],\n    \"辅学科\": {\n      \"基础医学\": [\n        {\"term\": \"MIMIC-II\", \"normalized\": \"MIMIC-II\", \"std_label\": null, \"evidence\": \"MIMIC-II followed with increased sample size\", \"source\": \"introduction\", \"confidence\": 0.93},\n        {\"term\": \"MIMIC-III\", \"normalized\": \"MIMIC-III\", \"std_label\": null, \"evidence\": \"MIMIC-III was published in 2015\", \"source\": \"introduction\", \"confidence\": 0.93},\n        {\"term\": \"genomics\", \"normalized\": \"基因组学\", \"std_label\": null, \"evidence\": \"imaging, free-text, physiologic waveforms, and genomics\", \"source\": \"introduction\", \"confidence\": 0.9},\n        {\"term\": \"clinical observations\", \"normalized\": \"临床观察\", \"std_label\": null, \"evidence\": \"most datasets comprise only one modality of information, clinical observations\", \"source\": \"introduction\", \"confidence\": 0.88},\n        {\"term\": \"data deidentification\", \"normalized\": \"数据去标识化\", \"std_label\": null, \"evidence\": \"deidentification algorithms are applied\", \"source\": \"introduction\", \"confidence\": 0.91}\n      ],\n      \"临床医学\": [\n        {\"term\": \"intensive care unit (ICU)\", \"normalized\": \"重症监护病房\", \"std_label\": null, \"evidence\": \"The intensive care unit (ICU) is a data-rich environment\", \"source\": \"introduction\", \"confidence\": 0.95},\n        {\"term\": \"critical care datasets\", \"normalized\": \"重症监护数据集\", \"std_label\": null, \"evidence\": \"publicly available critical care datasets\", \"source\": \"introduction\", \"confidence\": 0.92},\n        {\"term\": \"pediatric patients\", \"normalized\": \"儿科患者\", \"std_label\": null, \"evidence\": \"PIC contains pediatric patients\", \"source\": \"introduction\", \"confidence\": 0.9},\n        {\"term\": \"diagnoses\", \"normalized\": \"诊断\", \"std_label\": null, \"evidence\": \"Information available includes diagnoses\", \"source\": \"abstract\", \"confidence\": 0.93},\n        {\"term\": \"treatments\", \"normalized\": \"治疗\", \"std_label\": null, \"evidence\": \"Information available includes treatments\", \"source\": \"abstract\", \"confidence\": 0.93}\n      ],\n      \"计算机科学技术\": [\n        {\"term\": \"SQL scripts\", \"normalized\": \"SQL脚本\", \"std_label\": null, \"evidence\": \"Structured Query Language (SQL) scripts merge data sources\", \"source\": \"introduction\", \"confidence\": 0.94},\n        {\"term\": \"modular organization\", \"normalized\": \"模块化组织\", \"std_label\": null, \"evidence\": \"MIMIC-IV establishes a modular organization\", \"source\": \"introduction\", \"confidence\": 0.92},\n        {\"term\": \"electronic medicine administration record\", \"normalized\": \"电子药品管理记录\", \"std_label\": null, \"evidence\": \"new precise digital sources like electronic medicine administration record\", \"source\": \"introduction\", \"confidence\": 0.89},\n        {\"term\": \"data integration\", \"normalized\": \"数据整合\", \"std_label\": null, \"evidence\": \"merge various data sources into a single schema\", \"source\": \"introduction\", \"confidence\": 0.91},\n        {\"term\": \"MetaVision\", \"normalized\": \"MetaVision\", \"std_label\": null, \"evidence\": \"ICU information system (MetaVision)\", \"source\": \"introduction\", \"confidence\": 0.93}\n      ]\n    }\n  }\n}\n\n/* concepts round2 (supplement) */\n{\"补充概念\": {\"主学科\": [\"eICU Collaborative Research Database\", \"AmsterdamUMCdb\", \"HiRID database\", \"Pediatric Intensive Care database\"], \"辅学科\": {\"临床医学\": [\"step-down units\", \"waveform database\"]}}}\n\n/* relations */\n{\"跨学科关系\":[{\"head\":\"MIMIC-IV\",\"tail\":\"电子健康记录\",\"relation\":\"is derived from\",\"relation_type\":\"maps_to\",\"direction\":\"->\",\"evidence\":\"database sourced from the electronic health record\",\"source\":\"abstract\",\"confidence\":0.93},{\"head\":\"MIMIC-IV\",\"tail\":\"数据整合\",\"relation\":\"achieves through\",\"relation_type\":\"method_applied_to\",\"direction\":\"->\",\"evidence\":\"SQL scripts merge various data sources into a single schema\",\"source\":\"introduction\",\"confidence\":0.91},{\"head\":\"MIMIC-IV\",\"tail\":\"模块化组织\",\"relation\":\"implements\",\"relation_type\":\"extends\",\"direction\":\"->\",\"evidence\":\"MIMIC-IV establishes a modular organization\",\"source\":\"introduction\",\"confidence\":0.92},{\"head\":\"MIMIC-IV\",\"tail\":\"临床研究\",\"relation\":\"supports\",\"relation_type\":\"improves_metric\",\"direction\":\"->\",\"evidence\":\"intended to support a wide array of research studies\",\"source\":\"abstract\",\"confidence\":0.9},{\"head\":\"数据仓库\",\"tail\":\"MetaVision\",\"relation\":\"integrates data from\",\"relation_type\":\"constrains\",\"direction\":\"->\",\"evidence\":\"BIDMC data warehouse and ICU information system (MetaVision)\",\"source\":\"introduction\",\"confidence\":0.93},{\"head\":\"waveform database\",\"tail\":\"MIMIC-II\",\"relation\":\"evolves to\",\"relation_type\":\"generalizes\",\"direction\":\"->\",\"evidence\":\"MIMIC-II followed with significantly increased sample size\",\"source\":\"introduction\",\"confidence\":0.93},{\"head\":\"physiological variables\",\"tail\":\"HiRID database\",\"relation\":\"contained in\",\"relation_type\":\"maps_to\",\"direction\":\"->\",\"evidence\":\"HiRID contains high-resolution physiological variables\",\"source\":\"introduction\",\"confidence\":0.91},{\"head\":\"genomics\",\"tail\":\"clinical observations\",\"relation\":\"contrasts with\",\"relation_type\":\"corresponds_to\",\"direction\":\"->\",\"evidence\":\"most datasets comprise only clinical observations, omitting genomics\",\"source\":\"introduction\",\"confidence\":0.88},{\"head\":\"data deidentification\",\"tail\":\"protected health information\",\"relation\":\"targets\",\"relation_type\":\"method_applied_to\",\"direction\":\"->\",\"evidence\":\"deidentification algorithms remove protected health information\",\"source\":\"introduction\",\"confidence\":0.91},{\"head\":\"电子药品管理记录\",\"tail\":\"digital information systems\",\"relation\":\"enhances\",\"relation_type\":\"extends\",\"direction\":\"->\",\"evidence\":\"incorporates new precise digital sources like electronic medicine administration record\",\"source\":\"introduction\",\"confidence\":0.89},{\"head\":\"重症监护病房\",\"tail\":\"critical care datasets\",\"relation\":\"generates data for\",\"relation_type\":\"driven_by\",\"direction\":\"->\",\"evidence\":\"ICU is a data-rich environment enabling critical care datasets\",\"source\":\"introduction\",\"confidence\":0.95},{\"head\":\"MIMIC-III\",\"tail\":\"MIMIC-IV\",\"relation\":\"precedes\",\"relation_type\":\"generalizes\",\"direction\":\"->\",\"evidence\":\"MIMIC-III published in 2015 significantly expanded, followed by MIMIC-IV\",\"source\":\"introduction\",\"confidence\":0.93}]}\n\n/* stage2: query */\n{\n  \"按辅助学科分类\": {\n    \"基础医学\": {\n      \"概念\": [\"MIMIC-II\", \"MIMIC-III\", \"基因组学\", \"临床观察\", \"数据去标识化\"],\n      \"关系\": [5, 7, 8, 11],\n      \"rationale\": \"提供医学数据标准化与历史演进支持\"\n    },\n    \"临床医学\": {\n      \"概念\": [\"重症监护病房\", \"重症监护数据集\", \"儿科患者\", \"诊断\"],\n      \"关系\": [10],\n      \"rationale\": \"提供临床数据来源与应用场景\"\n    },\n    \"计算机科学技术\": {\n      \"概念\": [\"脚本\", \"模块化组织\", \"电子药品管理记录\", \"数据整合\", \"MetaVision\"],\n      \"关系\": [1, 2, 4, 9],\n      \"rationale\": \"实现数据整合与系统架构设计\"\n    }\n  },\n  \"查询\": {\n    \"一级\": \"MIMIC-IV如何促进临床研究？\",\n    \"二级\": [\n      \"MIMIC-IV如何通过数据整合与模块化设计提升临床研究效率？\",\n      \"重症监护病房的多源数据如何通过MIMIC-IV支持诊断分析？\"\n    ],\n    \"三级\": [\n      \"MIMIC-IV如何整合重症监护病房的多源数据并通过模块化架构支持临床研究与基因组学分析？\",\n      \"数据整合技术与去标识化算法如何协同保障MIMIC-IV数据质量与临床应用安全？\"\n    ]\n  }\n}\n\n/* stage3: hypothesis L1 */\n{\n  \"假设\": {\n    \"一级\": [\n      [\n        {\"step\":1, \"head\":\"MIMIC-IV\", \"relation\":\"achieves through\", \"tail\":\"数据整合\"},\n        {\"step\":2, \"head\":\"数据整合\", \"relation\":\"requires method\", \"tail\":\"脚本\"},\n        {\"step\":3, \"head\":\"脚本\", \"relation\":\"enhances efficiency of\", \"tail\":\"临床研究\"}\n      ],\n      [\n        {\"step\":1, \"head\":\"重症监护病房\", \"relation\":\"generates data for\", \"tail\":\"重症监护数据集\"},\n        {\"step\":2, \"head\":\"重症监护数据集\", \"relation\":\"contains\", \"tail\":\"诊断\"},\n        {\"step\":3, \"head\":\"诊断\", \"relation\":\"supports advancement of\", \"tail\":\"临床研究\"}\n      ],\n      [\n        {\"step\":1, \"head\":\"MIMIC-IV\", \"relation\":\"requires processing\", \"tail\":\"数据去标识化\"},\n        {\"step\":2, \"head\":\"数据去标识化\", \"relation\":\"targets\", \"tail\":\"受保护健康信息\"},\n        {\"step\":3, \"head\":\"受保护健康信息\", \"relation\":\"ensures security for\", \"tail\":\"临床研究\"}\n      ]\n    ],\n    \"一级总结\": [\n      \"数据整合通过计算机科学技术的脚本方法提升效率，促进临床研究\",\n      \"重症监护数据集通过临床医学的诊断分析支持临床研究\",\n      \"数据去标识化通过基础医学的方法保障数据安全以促进临床研究\"\n    ]\n  }\n}\n\n/* stage3: hypothesis L2 */\n{\n  \"假设\": {\n    \"二级\": [\n      [\n        {\n          \"step\": 1,\n          \"head\": \"数据整合\",\n          \"relation\": \"实现方式\",\n          \"tail\": \"模块化组织\"\n        },\n        {\n          \"step\": 2,\n          \"head\": \"模块化组织\",\n          \"relation\": \"促进\",\n          \"tail\": \"临床研究\"\n        },\n        {\n          \"step\": 3,\n          \"head\": \"临床研究\",\n          \"relation\": \"扩展应用\",\n          \"tail\": \"基因组学\"\n        }\n      ],\n      [\n        {\n          \"step\": 1,\n          \"head\": \"重症监护病房\",\n          \"relation\": \"产生\",\n          \"tail\": \"数据整合\"\n        },\n        {\n          \"step\": 2,\n          \"head\": \"数据整合\",\n          \"relation\": \"支持\",\n          \"tail\": \"诊断\"\n        },\n        {\n          \"step\": 3,\n          \"head\": \"诊断\",\n          \"relation\": \"优化\",\n          \"tail\": \"临床观察\"\n        }\n      ]\n    ],\n    \"二级总结\": [\n      \"计算机科学技术通过数据整合与模块化组织架构，将分散的电子健康记录转化为标准化研究资源，推动基础医学领域的基因组学研究扩展\",\n      \"临床医学利用重症监护病房的多源数据整合能力，构建精准诊断模型，从而改进传统临床观察方法的局限性\"\n    ]\n  }\n}\n\n/* stage3: hypothesis L3 */\n{\n  \"假设\": {\n    \"三级\": [\n      [\n        {\n          \"head\": \"重症监护病房\",\n          \"tail\": \"数据仓库\",\n          \"relation\": \"integrates data from\",\n          \"claim\": \"重症监护病房的数据通过数据仓库进行集中存储\"\n        },\n        {\n          \"head\": \"数据仓库\",\n          \"tail\": \"数据整合\",\n          \"relation\": \"achieves through\",\n          \"claim\": \"数据仓库通过SQL脚本实现多源数据整合\"\n        },\n        {\n          \"head\": \"数据整合\",\n          \"tail\": \"模块化组织\",\n          \"relation\": \"implements\",\n          \"claim\": \"数据整合结果形成模块化组织架构\"\n        }\n      ],\n      [\n        {\n          \"head\": \"数据整合\",\n          \"tail\": \"脚本\",\n          \"relation\": \"achieves through\",\n          \"claim\": \"数据整合依赖SQL脚本技术实现\"\n        },\n        {\n          \"head\": \"脚本\",\n          \"tail\": \"数据去标识化\",\n          \"relation\": \"supports\",\n          \"claim\": \"SQL脚本为数据去标识化提供技术基础\"\n        },\n        {\n          \"head\": \"数据去标识化\",\n          \"tail\": \"受保护健康信息\",\n          \"relation\": \"targets\",\n          \"claim\": \"去标识化算法直接处理受保护健康信息\"\n        }\n      ]\n    ],\n    \"三级总结\": [\n      \"通过重症监护病房数据汇聚至数据仓库，经SQL脚本整合形成模块化组织架构，最终支持临床研究与基因组学分析\",\n      \"数据整合技术通过SQL脚本与去标识化算法协同作用，在消除受保护健康信息的同时保障临床数据质量与应用安全\"\n    ]\n  }\n}",
+    "ok": true,
+    "error": ""
+  },
+  {
+    "title": "De novo design of protein structure and function with RFdiffusion",
+    "abstract": "Abstract There has been considerable recent progress in designing new proteins using deep-learning methods 1–9 . Despite this progress, a general deep-learning framework for protein design that enables solution of a wide range of design challenges, including de novo binder design and design of higher-order symmetric architectures, has yet to be described. Diffusion models 10,11 have had considerable success in image and language generative modelling but limited success when applied to protein modelling, probably due to the complexity of protein backbone geometry and sequence–structure relationships. Here we show that by fine-tuning the RoseTTAFold structure prediction network on protein structure denoising tasks, we obtain a generative model of protein backbones that achieves outstanding performance on unconditional and topology-constrained protein monomer design, protein binder design, symmetric oligomer design, enzyme active site scaffolding and symmetric motif scaffolding for therapeutic and metal-binding protein design. We demonstrate the power and generality of the method, called RoseTTAFold diffusion (RFdiffusion), by experimentally characterizing the structures and functions of hundreds of designed symmetric assemblies, metal-binding proteins and protein binders. The accuracy of RFdiffusion is confirmed by the cryogenic electron microscopy structure of a designed binder in complex with influenza haemagglutinin that is nearly identical to the design model. In a manner analogous to networks that produce images from user-specified inputs, RFdiffusion enables the design of diverse functional proteins from simple molecular specifications.",
+    "pdf_url": "https://doi.org/10.1038/s41586-023-06415-8",
+    "primary": "计算机科学技术",
+    "secondary": "计算机科学技术, 生物学",
+    "secondary_list": [
+      "计算机科学技术",
+      "生物学"
+    ],
+    "introduction": "De novo design of protein structure and \nfunction with RFdiffusion\n\nhttps://doi.org/10.1038/s41586-023-06415-8\n\nReceived: 14 December 2022\n\nAccepted: 7 July 2023\n\nPublished online: 11 July 2023\n\nOpen access\n\n Check for updates\n\nJoseph L. Watson1,2,15, David Juergens1,2,3,15, Nathaniel R. Bennett1,2,3,15, Brian L. Trippe2,4,5,15, \nJason Yim2,6,15, Helen E. Eisenach1,2,15, Woody Ahern1,2,7,15, Andrew J. Borst1,2, Robert J. Ragotte1,2, \nLukas F. Milles1,2, Basile I. M. Wicky1,2, Nikita Hanikel1,2, Samuel J. Pellock1,2, Alexis Courbet1,2,8, \nWilliam Sheffler1,2, Jue Wang1,2, Preetham Venkatesh1,2,9, Isaac Sappington1,2,9, \nSusana Vázquez Torres1,2,9, Anna Lauko1,2,9, Valentin De Bortoli8, Emile Mathieu10, \nSergey Ovchinnikov11,12, Regina Barzilay6, Tommi S. Jaakkola6, Frank DiMaio1,2, Minkyung Baek13 \n& David Baker1,2,14 ✉\n\nThere has been considerable recent progress in designing new proteins using deep- \nlearning methods1–9. Despite this progress, a general deep-learning framework for \nprotein design that enables solution of a wide range of design challenges, including \nde novo binder design and design of higher-order symmetric architectures, has yet to \nbe described. Diffusion models10,11 have had considerable success in image and \nlanguage generative modelling but limited success when applied to protein modelling, \nprobably due to the complexity of protein backbone geometry and sequence–structure \nrelationships. Here we show that by fine-tuning the RoseTTAFold structure prediction \nnetwork on protein structure denoising tasks, we obtain a generative model of protein \nbackbones that achieves outstanding performance on unconditional and topology- \nconstrained protein monomer design, protein binder design, symmetric oligomer \ndesign, enzyme active site scaffolding and symmetric motif scaffolding for therapeutic \nand metal-binding protein design. We demonstrate the power and generality of the \nmethod, called RoseTTAFold diffusion (RFdiffusion), by experimentally characterizing \nthe structures and functions of hundreds of designed symmetric assemblies, metal- \nbinding proteins and protein binders. The accuracy of RFdiffusion is confirmed by the \ncryogenic electron microscopy structure of a designed binder in complex with influenza \nhaemagglutinin that is nearly identical to the design model. In a manner analogous to \nnetworks that produce images from user-specified inputs, RFdiffusion enables the \ndesign of diverse functional proteins from simple molecular specifications.\n\nDe novo protein design seeks to generate proteins with specified \nstructural and/or functional properties, for example, making a bind-\ning interaction with a given target12, folding into a particular topology13 \nor containing a catalytic site4. Denoising diffusion probabilistic models \n(DDPMs), a powerful class of machine learning models recently dem-\nonstrated to generate new photorealistic images in response to text \nprompts14,15, have several properties well suited to protein design. First, \nDDPMs generate highly diverse outputs, as they are trained to denoise \ndata (for instance, images or text) that have been corrupted with Gauss-\nian noise. By learning to stochastically reverse this corruption, diverse \noutputs closely resembling the training data are generated. Second, \nDDPMs can be guided at each step of the iterative generation process \ntowards specific design objectives through provision of conditioning \n\ninformation. Third, for almost all protein design applications it is neces-\nsary to explicitly model three-dimensional (3D) structures; rotation-\nally equivariant DDPMs can do this in a global representation frame \nindependent manner. Recent work has adapted DDPMs for protein \nmonomer design by conditioning on small protein ‘motifs’5,9 or on sec-\nondary structure and block-adjacency (‘fold’) information8. Although \npromising, these attempts have shown limited success in generating \nsequences that fold to the intended structures in silico5,16, probably due \nto the limited ability of the denoising networks to generate realistic \nprotein backbones, and have not been tested experimentally.\n\nWe reasoned that improved diffusion models for protein design \ncould be developed by taking advantage of the deep understanding of \nprotein structure implicit in powerful structure prediction methods \n\n1Department of Biochemistry, University of Washington, Seattle, WA, USA. 2Institute for Protein Design, University of Washington, Seattle, WA, USA. 3Graduate Program in Molecular \nEngineering, University of Washington, Seattle, WA, USA. 4Columbia University, Department of Statistics, New York, NY, USA. 5Irving Institute for Cancer Dynamics, Columbia University, \nNew York, NY, USA. 6Massachusetts Institute of Technology, Cambridge, MA, USA. 7Paul G. Allen School of Computer Science and Engineering, University of Washington, Seattle, WA, USA. \n8National Centre for Scientific Research, École Normale Supérieure rue d’Ulm, Paris, France. 9Graduate Program in Biological Physics, Structure and Design, University of Washington, Seattle, \nWA, USA. 10Department of Engineering, University of Cambridge, Cambridge, UK. 11Faculty of Applied Sciences, Harvard University, Cambridge, MA, USA. 12John Harvard Distinguished Science \nFellowship, Harvard University, Cambridge, MA, USA. 13School of Biological Sciences, Seoul National University, Seoul, Republic of Korea. 14Howard Hughes Medical Institute, University of \nWashington, Seattle, WA, USA. 15These authors contributed equally: Joseph L. Watson, David Juergens, Nathaniel R. Bennett, Brian L. Trippe, Jason Yim, Helen E. Eisenach, Woody Ahern. \n✉e-mail: dabaker@uw.edu\n\nNature | Vol 620 | 31 August 2023 | 1089\n\nArticle\fsuch as AlphaFold2 (ref. 17) (AF2) and RoseTTAFold18 (RF). RF has prop-\nerties well suited for use in a protein design DDPM (Fig. 1a): it gener-\nates protein structures with high precision, operates on a rigid-frame \nrepresentation of residues with rotational equivariance and has an \nar",
+    "journal": "Nature",
+    "journal_id": "https://openalex.org/S137773608",
+    "issn_l": "0028-0836",
+    "source_type": "journal",
+    "doi": "https://doi.org/10.1038/s41586-023-06415-8",
+    "publication_date": "2023-07-11",
+    "publication_year": 2023,
+    "fwci": 284.07572368,
+    "cited_by_count": 1531,
+    "field": "Protein Structure and Dynamics",
+    "parsed": {
+      "meta": {
+        "title": "De novo design of protein structure and function with RFdiffusion",
+        "primary": "计算机科学技术",
+        "secondary_list": [
+          "计算机科学技术",
+          "生物学"
+        ],
+        "journal": "Nature",
+        "journal_id": "https://openalex.org/S137773608",
+        "issn_l": "0028-0836",
+        "source_type": "journal",
+        "doi": "https://doi.org/10.1038/s41586-023-06415-8",
+        "publication_date": "2023-07-11",
+        "publication_year": 2023,
+        "fwci": 284.07572368,
+        "cited_by_count": 1531,
+        "field": "Protein Structure and Dynamics"
+      },
+      "概念": {
+        "主学科": [
+          {
+            "term": "deep-learning methods",
+            "normalized": "深度学习方法",
+            "std_label": "深度学习",
+            "evidence": "designing new proteins using deep-learning methods",
+            "source": "abstract",
+            "confidence": 0.95
+          },
+          {
+            "term": "diffusion models",
+            "normalized": "扩散模型",
+            "std_label": "扩散模型",
+            "evidence": "Diffusion models have had considerable success",
+            "source": "abstract",
+            "confidence": 0.92
+          },
+          {
+            "term": "RoseTTAFold structure prediction network",
+            "normalized": "结构预测网络",
+            "std_label": "结构预测模型",
+            "evidence": "fine-tuning the RoseTTAFold structure prediction network",
+            "source": "abstract",
+            "confidence": 0.98
+          },
+          {
+            "term": "generative model",
+            "normalized": "生成模型",
+            "std_label": "生成模型",
+            "evidence": "generative model of protein backbones",
+            "source": "abstract",
+            "confidence": 0.93
+          },
+          {
+            "term": "topology-constrained",
+            "normalized": "拓扑约束",
+            "std_label": "拓扑约束",
+            "evidence": "topology-constrained protein monomer design",
+            "source": "abstract",
+            "confidence": 0.88
+          },
+          {
+            "term": "symmetric oligomer design",
+            "normalized": "对称寡聚体设计",
+            "std_label": "对称设计",
+            "evidence": "symmetric oligomer design",
+            "source": "abstract",
+            "confidence": 0.85
+          },
+          {
+            "term": "Denoising diffusion probabilistic models",
+            "normalized": "去噪扩散概率模型",
+            "std_label": "扩散模型",
+            "evidence": "Denoising diffusion probabilistic models (DDPMs)",
+            "source": "introduction",
+            "confidence": 0.91
+          },
+          {
+            "term": "Gaussian noise",
+            "normalized": "高斯噪声",
+            "std_label": "高斯噪声",
+            "evidence": "corrupted with Gaussian noise",
+            "source": "introduction",
+            "confidence": 0.94
+          },
+          {
+            "term": "rotationally equivariant",
+            "normalized": "旋转等变",
+            "std_label": "旋转等变",
+            "evidence": "rotationally equivariant DDPMs",
+            "source": "introduction",
+            "confidence": 0.89
+          },
+          {
+            "term": "block-adjacency",
+            "normalized": "块邻接",
+            "std_label": "块邻接",
+            "evidence": "block-adjacency ('fold') information",
+            "source": "introduction",
+            "confidence": 0.87
+          },
+          {
+            "term": "RFdiffusion",
+            "normalized": "扩散模型",
+            "std_label": "扩散模型",
+            "evidence": "method called RoseTTAFold diffusion (RFdiffusion)",
+            "source": "abstract",
+            "confidence": 0.99
+          }
+        ],
+        "辅学科": {
+          "生物学": [
+            {
+              "term": "protein design",
+              "normalized": "蛋白质设计",
+              "std_label": "蛋白质设计",
+              "evidence": "general deep-learning framework for protein design",
+              "source": "abstract",
+              "confidence": 0.97
+            },
+            {
+              "term": "de novo binder design",
+              "normalized": "从头结合体设计",
+              "std_label": "蛋白质设计",
+              "evidence": "de novo binder design",
+              "source": "abstract",
+              "confidence": 0.95
+            },
+            {
+              "term": "higher-order symmetric architectures",
+              "normalized": "高阶对称结构",
+              "std_label": "蛋白质结构",
+              "evidence": "higher-order symmetric architectures",
+              "source": "abstract",
+              "confidence": 0.92
+            },
+            {
+              "term": "protein backbones",
+              "normalized": "蛋白质主链",
+              "std_label": "蛋白质结构",
+              "evidence": "generative model of protein backbones",
+              "source": "abstract",
+              "confidence": 0.96
+            },
+            {
+              "term": "enzyme active site scaffolding",
+              "normalized": "酶活性位点支架",
+              "std_label": "蛋白质功能",
+              "evidence": "enzyme active site scaffolding",
+              "source": "abstract",
+              "confidence": 0.93
+            },
+            {
+              "term": "metal-binding proteins",
+              "normalized": "金属结合蛋白",
+              "std_label": "功能蛋白",
+              "evidence": "metal-binding proteins",
+              "source": "abstract",
+              "confidence": 0.94
+            },
+            {
+              "term": "cryogenic electron microscopy",
+              "normalized": "冷冻电子显微镜",
+              "std_label": "实验技术",
+              "evidence": "cryogenic electron microscopy structure",
+              "source": "abstract",
+              "confidence": 0.95
+            },
+            {
+              "term": "influenza haemagglutinin",
+              "normalized": "流感血凝素",
+              "std_label": "靶标蛋白",
+              "evidence": "influenza haemagglutinin",
+              "source": "abstract",
+              "confidence": 0.91
+            },
+            {
+              "term": "secondary structure",
+              "normalized": "二级结构",
+              "std_label": "蛋白质结构",
+              "evidence": "conditioning on secondary structure",
+              "source": "introduction",
+              "confidence": 0.93
+            },
+            {
+              "term": "AlphaFold2",
+              "normalized": "阿尔法折叠2",
+              "std_label": "结构预测模型",
+              "evidence": "AlphaFold2 (ref. 17) (AF2)",
+              "source": "introduction",
+              "confidence": 0.98
+            },
+            {
+              "term": "rigid-frame representation",
+              "normalized": "刚性框架表示",
+              "std_label": "结构表示",
+              "evidence": "rigid-frame representation of residues",
+              "source": "introduction",
+              "confidence": 0.89
+            }
+          ]
+        }
+      },
+      "跨学科关系": [
+        {
+          "head": "deep-learning methods",
+          "relation": "applied to solve protein design challenges",
+          "relation_type": "method_applied_to",
+          "relation_type_norm": "method_applied_to",
+          "relation_type_raw": "method_applied_to",
+          "tail": "protein design",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "designing new proteins using deep-learning methods",
+          "source": "abstract",
+          "confidence": 0.95
+        },
+        {
+          "head": "diffusion models",
+          "relation": "applied to protein modelling with limited success",
+          "relation_type": "method_applied_to",
+          "relation_type_norm": "method_applied_to",
+          "relation_type_raw": "method_applied_to",
+          "tail": "protein modelling",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "Diffusion models have had limited success when applied to protein modelling",
+          "source": "abstract",
+          "confidence": 0.92
+        },
+        {
+          "head": "RoseTTAFold structure prediction network",
+          "relation": "fine-tuned for protein structure denoising tasks",
+          "relation_type": "method_applied_to",
+          "relation_type_norm": "method_applied_to",
+          "relation_type_raw": "method_applied_to",
+          "tail": "protein backbone design",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "fine-tuning the RoseTTAFold structure prediction network on protein structure denoising tasks",
+          "source": "abstract",
+          "confidence": 0.98
+        },
+        {
+          "head": "RFdiffusion",
+          "relation": "enables symmetric oligomer design",
+          "relation_type": "method_applied_to",
+          "relation_type_norm": "method_applied_to",
+          "relation_type_raw": "method_applied_to",
+          "tail": "symmetric oligomer design",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "symmetric oligomer design achievements of RFdiffusion",
+          "source": "abstract",
+          "confidence": 0.99
+        },
+        {
+          "head": "RFdiffusion",
+          "relation": "enables metal-binding protein design",
+          "relation_type": "method_applied_to",
+          "relation_type_norm": "method_applied_to",
+          "relation_type_raw": "method_applied_to",
+          "tail": "metal-binding proteins",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "design of hundreds of metal-binding proteins",
+          "source": "abstract",
+          "confidence": 0.99
+        },
+        {
+          "head": "Denoising diffusion probabilistic models",
+          "relation": "generates protein backbones through denoising",
+          "relation_type": "method_applied_to",
+          "relation_type_norm": "method_applied_to",
+          "relation_type_raw": "method_applied_to",
+          "tail": "protein backbones",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "DDPMs generate protein backbones by learning to reverse Gaussian noise corruption",
+          "source": "introduction",
+          "confidence": 0.91
+        },
+        {
+          "head": "AlphaFold2",
+          "relation": "provides structural understanding for design",
+          "relation_type": "maps_to",
+          "relation_type_norm": "maps_to",
+          "relation_type_raw": "maps_to",
+          "tail": "structure prediction",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "deep understanding of protein structure from AlphaFold2",
+          "source": "introduction",
+          "confidence": 0.98
+        },
+        {
+          "head": "secondary structure",
+          "relation": "conditions protein design process",
+          "relation_type": "constrains",
+          "relation_type_norm": "constrains",
+          "relation_type_raw": "constrains",
+          "tail": "protein design",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "conditioning on secondary structure information",
+          "source": "introduction",
+          "confidence": 0.93
+        },
+        {
+          "head": "cryogenic electron microscopy",
+          "relation": "validates designed binder structures",
+          "relation_type": "corresponds_to",
+          "relation_type_norm": "corresponds_to",
+          "relation_type_raw": "corresponds_to",
+          "tail": "structure validation",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "cryogenic electron microscopy confirms binder structure accuracy",
+          "source": "abstract",
+          "confidence": 0.95
+        },
+        {
+          "head": "Gaussian noise",
+          "relation": "used in training denoising diffusion models",
+          "relation_type": "improves_metric",
+          "relation_type_norm": "improves_metric",
+          "relation_type_raw": "improves_metric",
+          "tail": "protein structure denoising",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "corrupted with Gaussian noise in DDPM training",
+          "source": "introduction",
+          "confidence": 0.94
+        }
+      ],
+      "按辅助学科分类": {
+        "生物学": {
+          "概念": [
+            "蛋白质设计",
+            "金属结合蛋白",
+            "冷冻电子显微镜",
+            "对称寡聚体设计",
+            "蛋白质主链",
+            "阿尔法折叠2",
+            "二级结构",
+            "酶活性位点支架"
+          ],
+          "关系": [
+            0,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "rationale": "提供蛋白质设计目标、结构验证手段及生物物理约束条件"
+        }
+      },
+      "查询": {
+        "一级": "如何利用深度学习方法实现蛋白质三维结构的从头生成与功能优化",
+        "二级": [
+          "深度学习生成模型如何结合蛋白质二级结构约束进行主链设计",
+          "扩散模型在对称寡聚体结构生成中如何整合刚性框架表示"
+        ],
+        "三级": [
+          "基于深度学习的扩散模型如何协同冷冻电子显微镜验证实现金属结合蛋白的从头设计",
+          "蛋白质主链生成模型联合阿尔法折叠2结构预测如何优化酶活性位点支架的拓扑结构"
+        ]
+      },
+      "假设": {
+        "一级": [
+          [
+            {
+              "step": 1,
+              "head": "生成模型",
+              "relation": "生成蛋白质主链几何构象",
+              "tail": "蛋白质主链",
+              "claim": "生成模型通过学习主链二面角分布能够生成符合立体化学规则的初始构象"
+            },
+            {
+              "step": 2,
+              "head": "蛋白质主链",
+              "relation": "受二级结构类型调控",
+              "tail": "二级结构",
+              "claim": "主链构象需满足α螺旋和β折叠等二级结构的氢键模式约束"
+            },
+            {
+              "step": 3,
+              "head": "二级结构",
+              "relation": "决定酶活性位点支架拓扑",
+              "tail": "酶活性位点支架",
+              "claim": "二级结构元件的空间排列需要生物学知识指导活性位点的催化几何构型设计"
+            }
+          ],
+          [
+            {
+              "step": 1,
+              "head": "扩散模型",
+              "relation": "实现对称寡聚体从头生成",
+              "tail": "对称寡聚体设计",
+              "claim": "扩散模型通过旋转等变架构能够生成具有对称性的蛋白质组装体"
+            },
+            {
+              "step": 2,
+              "head": "对称寡聚体设计",
+              "relation": "依赖块邻接信息编码",
+              "tail": "块邻接",
+              "claim": "块邻接特征编码使模型能捕捉对称亚基间的界面互补性"
+            },
+            {
+              "step": 3,
+              "head": "块邻接",
+              "relation": "需冷冻电子显微镜验证组装构象",
+              "tail": "冷冻电子显微镜",
+              "claim": "对称组装体的设计结果需要冷冻电子显微镜技术验证界面残基的空间适配性"
+            }
+          ]
+        ],
+        "二级": [
+          [
+            {
+              "step": 1,
+              "head": "深度学习方法",
+              "relation": "生成模型是深度学习方法的具体实现",
+              "tail": "生成模型",
+              "claim": "深度学习方法通过生成模型实现蛋白质设计"
+            },
+            {
+              "step": 2,
+              "head": "生成模型",
+              "relation": "生成模型直接生成蛋白质主链结构",
+              "tail": "蛋白质主链",
+              "claim": "生成模型能够生成符合物理规律的蛋白质主链"
+            },
+            {
+              "step": 3,
+              "head": "蛋白质主链",
+              "relation": "二级结构约束指导蛋白质主链生成",
+              "tail": "二级结构",
+              "claim": "二级结构信息约束生成模型输出符合预期的主链构象"
+            }
+          ],
+          [
+            {
+              "step": 1,
+              "head": "扩散模型",
+              "relation": "扩散模型直接应用于对称寡聚体设计",
+              "tail": "对称寡聚体设计",
+              "claim": "扩散模型能够生成具有对称性的寡聚体结构"
+            },
+            {
+              "step": 2,
+              "head": "对称寡聚体设计",
+              "relation": "刚性框架表示用于描述对称寡聚体结构",
+              "tail": "刚性框架表示",
+              "claim": "刚性框架表示确保寡聚体对称结构的稳定性"
+            },
+            {
+              "step": 3,
+              "head": "刚性框架表示",
+              "relation": "刚性框架表示支撑高阶对称结构生成",
+              "tail": "高阶对称结构",
+              "claim": "刚性框架表示促进生成具有复杂对称性的高阶结构"
+            }
+          ]
+        ],
+        "三级": [
+          [
+            {
+              "step": 1,
+              "head": "深度学习方法",
+              "relation": "深度学习方法通过扩散模型生成蛋白质结构",
+              "tail": "扩散模型",
+              "claim": "扩散模型继承深度学习方法的蛋白质设计能力"
+            },
+            {
+              "step": 2,
+              "head": "扩散模型",
+              "relation": "扩散模型生成结构需冷冻电子显微镜验证",
+              "tail": "冷冻电子显微镜",
+              "claim": "冷冻电子显微镜提供实验验证闭环"
+            },
+            {
+              "step": 3,
+              "head": "冷冻电子显微镜",
+              "relation": "冷冻电子显微镜验证金属结合蛋白设计",
+              "tail": "金属结合蛋白",
+              "claim": "金属结合蛋白设计通过实验验证完成闭环"
+            }
+          ],
+          [
+            {
+              "step": 1,
+              "head": "生成模型",
+              "relation": "生成模型联合阿尔法折叠2进行结构预测",
+              "tail": "阿尔法折叠2",
+              "claim": "阿尔法折叠2提供结构预测基础"
+            },
+            {
+              "step": 2,
+              "head": "阿尔法折叠2",
+              "relation": "阿尔法折叠2预测结果受拓扑约束优化",
+              "tail": "拓扑约束",
+              "claim": "拓扑约束优化结构预测结果"
+            },
+            {
+              "step": 3,
+              "head": "拓扑约束",
+              "relation": "拓扑约束优化酶活性位点支架",
+              "tail": "酶活性位点支架",
+              "claim": "酶活性位点支架通过拓扑优化完成功能设计"
+            }
+          ]
+        ],
+        "一级总结": [
+          "主学科生成模型结合二级结构约束，需生物学指导酶活性位点的空间排布优化",
+          "主学科扩散模型生成对称组装体，需生物学冷冻电子显微镜验证界面构象准确性"
+        ],
+        "二级总结": [
+          "利用深度学习生成模型结合二级结构约束生成蛋白质主链",
+          "扩散模型通过刚性框架表示实现高阶对称寡聚体结构生成"
+        ],
+        "三级总结": [
+          "深度学习驱动的扩散模型结合冷冻电镜验证，实现金属结合蛋白的从头设计闭环",
+          "生成模型联合阿尔法折叠2结构预测通过拓扑约束优化，完成酶活性位点支架的功能设计"
+        ]
+      },
+      "graph": {
+        "nodes": [
+          {
+            "id": "深度学习方法",
+            "term": "deep-learning methods",
+            "normalized": "深度学习方法",
+            "discipline": "计算机科学技术",
+            "evidence": "designing new proteins using deep-learning methods",
+            "source": "abstract",
+            "confidence": 0.95
+          },
+          {
+            "id": "扩散模型",
+            "term": "diffusion models",
+            "normalized": "扩散模型",
+            "discipline": "计算机科学技术",
+            "evidence": "Diffusion models have had considerable success",
+            "source": "abstract",
+            "confidence": 0.92
+          },
+          {
+            "id": "结构预测网络",
+            "term": "RoseTTAFold structure prediction network",
+            "normalized": "结构预测网络",
+            "discipline": "计算机科学技术",
+            "evidence": "fine-tuning the RoseTTAFold structure prediction network",
+            "source": "abstract",
+            "confidence": 0.98
+          },
+          {
+            "id": "生成模型",
+            "term": "generative model",
+            "normalized": "生成模型",
+            "discipline": "计算机科学技术",
+            "evidence": "generative model of protein backbones",
+            "source": "abstract",
+            "confidence": 0.93
+          },
+          {
+            "id": "拓扑约束",
+            "term": "topology-constrained",
+            "normalized": "拓扑约束",
+            "discipline": "计算机科学技术",
+            "evidence": "topology-constrained protein monomer design",
+            "source": "abstract",
+            "confidence": 0.88
+          },
+          {
+            "id": "对称寡聚体设计",
+            "term": "symmetric oligomer design",
+            "normalized": "对称寡聚体设计",
+            "discipline": "计算机科学技术",
+            "evidence": "symmetric oligomer design",
+            "source": "abstract",
+            "confidence": 0.85
+          },
+          {
+            "id": "去噪扩散概率模型",
+            "term": "Denoising diffusion probabilistic models",
+            "normalized": "去噪扩散概率模型",
+            "discipline": "计算机科学技术",
+            "evidence": "Denoising diffusion probabilistic models (DDPMs)",
+            "source": "introduction",
+            "confidence": 0.91
+          },
+          {
+            "id": "高斯噪声",
+            "term": "Gaussian noise",
+            "normalized": "高斯噪声",
+            "discipline": "计算机科学技术",
+            "evidence": "corrupted with Gaussian noise",
+            "source": "introduction",
+            "confidence": 0.94
+          },
+          {
+            "id": "旋转等变",
+            "term": "rotationally equivariant",
+            "normalized": "旋转等变",
+            "discipline": "计算机科学技术",
+            "evidence": "rotationally equivariant DDPMs",
+            "source": "introduction",
+            "confidence": 0.89
+          },
+          {
+            "id": "块邻接",
+            "term": "block-adjacency",
+            "normalized": "块邻接",
+            "discipline": "计算机科学技术",
+            "evidence": "block-adjacency ('fold') information",
+            "source": "introduction",
+            "confidence": 0.87
+          },
+          {
+            "id": "蛋白质设计",
+            "term": "protein design",
+            "normalized": "蛋白质设计",
+            "discipline": "生物学",
+            "evidence": "general deep-learning framework for protein design",
+            "source": "abstract",
+            "confidence": 0.97
+          },
+          {
+            "id": "从头结合体设计",
+            "term": "de novo binder design",
+            "normalized": "从头结合体设计",
+            "discipline": "生物学",
+            "evidence": "de novo binder design",
+            "source": "abstract",
+            "confidence": 0.95
+          },
+          {
+            "id": "高阶对称结构",
+            "term": "higher-order symmetric architectures",
+            "normalized": "高阶对称结构",
+            "discipline": "生物学",
+            "evidence": "higher-order symmetric architectures",
+            "source": "abstract",
+            "confidence": 0.92
+          },
+          {
+            "id": "蛋白质主链",
+            "term": "protein backbones",
+            "normalized": "蛋白质主链",
+            "discipline": "生物学",
+            "evidence": "generative model of protein backbones",
+            "source": "abstract",
+            "confidence": 0.96
+          },
+          {
+            "id": "酶活性位点支架",
+            "term": "enzyme active site scaffolding",
+            "normalized": "酶活性位点支架",
+            "discipline": "生物学",
+            "evidence": "enzyme active site scaffolding",
+            "source": "abstract",
+            "confidence": 0.93
+          },
+          {
+            "id": "金属结合蛋白",
+            "term": "metal-binding proteins",
+            "normalized": "金属结合蛋白",
+            "discipline": "生物学",
+            "evidence": "metal-binding proteins",
+            "source": "abstract",
+            "confidence": 0.94
+          },
+          {
+            "id": "冷冻电子显微镜",
+            "term": "cryogenic electron microscopy",
+            "normalized": "冷冻电子显微镜",
+            "discipline": "生物学",
+            "evidence": "cryogenic electron microscopy structure",
+            "source": "abstract",
+            "confidence": 0.95
+          },
+          {
+            "id": "流感血凝素",
+            "term": "influenza haemagglutinin",
+            "normalized": "流感血凝素",
+            "discipline": "生物学",
+            "evidence": "influenza haemagglutinin",
+            "source": "abstract",
+            "confidence": 0.91
+          },
+          {
+            "id": "二级结构",
+            "term": "secondary structure",
+            "normalized": "二级结构",
+            "discipline": "生物学",
+            "evidence": "conditioning on secondary structure",
+            "source": "introduction",
+            "confidence": 0.93
+          },
+          {
+            "id": "阿尔法折叠2",
+            "term": "AlphaFold2",
+            "normalized": "阿尔法折叠2",
+            "discipline": "生物学",
+            "evidence": "AlphaFold2 (ref. 17) (AF2)",
+            "source": "introduction",
+            "confidence": 0.98
+          },
+          {
+            "id": "刚性框架表示",
+            "term": "rigid-frame representation",
+            "normalized": "刚性框架表示",
+            "discipline": "生物学",
+            "evidence": "rigid-frame representation of residues",
+            "source": "introduction",
+            "confidence": 0.89
+          },
+          {
+            "id": "protein modelling",
+            "term": "protein modelling",
+            "normalized": "protein modelling",
+            "discipline": "struct_relation_inferred",
+            "evidence": "",
+            "source": "struct_relation_inferred",
+            "confidence": 0.8
+          },
+          {
+            "id": "protein backbone design",
+            "term": "protein backbone design",
+            "normalized": "protein backbone design",
+            "discipline": "struct_relation_inferred",
+            "evidence": "",
+            "source": "struct_relation_inferred",
+            "confidence": 0.8
+          },
+          {
+            "id": "RFdiffusion",
+            "term": "RFdiffusion",
+            "normalized": "RFdiffusion",
+            "discipline": "struct_relation_inferred",
+            "evidence": "",
+            "source": "struct_relation_inferred",
+            "confidence": 0.8
+          },
+          {
+            "id": "structure prediction",
+            "term": "structure prediction",
+            "normalized": "structure prediction",
+            "discipline": "struct_relation_inferred",
+            "evidence": "",
+            "source": "struct_relation_inferred",
+            "confidence": 0.8
+          },
+          {
+            "id": "structure validation",
+            "term": "structure validation",
+            "normalized": "structure validation",
+            "discipline": "struct_relation_inferred",
+            "evidence": "",
+            "source": "struct_relation_inferred",
+            "confidence": 0.8
+          },
+          {
+            "id": "protein structure denoising",
+            "term": "protein structure denoising",
+            "normalized": "protein structure denoising",
+            "discipline": "struct_relation_inferred",
+            "evidence": "",
+            "source": "struct_relation_inferred",
+            "confidence": 0.8
+          }
+        ],
+        "edges": [
+          {
+            "source": "深度学习方法",
+            "target": "蛋白质设计",
+            "relation": "applied to solve protein design challenges",
+            "relation_type": "method_applied_to",
+            "metadata": {
+              "evidence": "designing new proteins using deep-learning methods",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "扩散模型",
+            "target": "protein modelling",
+            "relation": "applied to protein modelling with limited success",
+            "relation_type": "method_applied_to",
+            "metadata": {
+              "evidence": "Diffusion models have had limited success when applied to protein modelling",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "结构预测网络",
+            "target": "protein backbone design",
+            "relation": "fine-tuned for protein structure denoising tasks",
+            "relation_type": "method_applied_to",
+            "metadata": {
+              "evidence": "fine-tuning the RoseTTAFold structure prediction network on protein structure denoising tasks",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "RFdiffusion",
+            "target": "对称寡聚体设计",
+            "relation": "enables symmetric oligomer design",
+            "relation_type": "method_applied_to",
+            "metadata": {
+              "evidence": "symmetric oligomer design achievements of RFdiffusion",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "RFdiffusion",
+            "target": "金属结合蛋白",
+            "relation": "enables metal-binding protein design",
+            "relation_type": "method_applied_to",
+            "metadata": {
+              "evidence": "design of hundreds of metal-binding proteins",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "去噪扩散概率模型",
+            "target": "蛋白质主链",
+            "relation": "generates protein backbones through denoising",
+            "relation_type": "method_applied_to",
+            "metadata": {
+              "evidence": "DDPMs generate protein backbones by learning to reverse Gaussian noise corruption",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "阿尔法折叠2",
+            "target": "structure prediction",
+            "relation": "provides structural understanding for design",
+            "relation_type": "maps_to",
+            "metadata": {
+              "evidence": "deep understanding of protein structure from AlphaFold2",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "二级结构",
+            "target": "蛋白质设计",
+            "relation": "conditions protein design process",
+            "relation_type": "constrains",
+            "metadata": {
+              "evidence": "conditioning on secondary structure information",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "冷冻电子显微镜",
+            "target": "structure validation",
+            "relation": "validates designed binder structures",
+            "relation_type": "corresponds_to",
+            "metadata": {
+              "evidence": "cryogenic electron microscopy confirms binder structure accuracy",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "高斯噪声",
+            "target": "protein structure denoising",
+            "relation": "used in training denoising diffusion models",
+            "relation_type": "improves_metric",
+            "metadata": {
+              "evidence": "corrupted with Gaussian noise in DDPM training",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "生成模型",
+            "target": "蛋白质主链",
+            "relation": "生成蛋白质主链几何构象",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "生成模型通过学习主链二面角分布能够生成符合立体化学规则的初始构象",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "蛋白质主链",
+            "target": "二级结构",
+            "relation": "受二级结构类型调控",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "主链构象需满足α螺旋和β折叠等二级结构的氢键模式约束",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "二级结构",
+            "target": "酶活性位点支架",
+            "relation": "决定酶活性位点支架拓扑",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "二级结构元件的空间排列需要生物学知识指导活性位点的催化几何构型设计",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "扩散模型",
+            "target": "对称寡聚体设计",
+            "relation": "实现对称寡聚体从头生成",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "扩散模型通过旋转等变架构能够生成具有对称性的蛋白质组装体",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "对称寡聚体设计",
+            "target": "块邻接",
+            "relation": "依赖块邻接信息编码",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "块邻接特征编码使模型能捕捉对称亚基间的界面互补性",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "块邻接",
+            "target": "冷冻电子显微镜",
+            "relation": "需冷冻电子显微镜验证组装构象",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "对称组装体的设计结果需要冷冻电子显微镜技术验证界面残基的空间适配性",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "深度学习方法",
+            "target": "生成模型",
+            "relation": "生成模型是深度学习方法的具体实现",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "深度学习方法通过生成模型实现蛋白质设计",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "生成模型",
+            "target": "蛋白质主链",
+            "relation": "生成模型直接生成蛋白质主链结构",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "生成模型能够生成符合物理规律的蛋白质主链",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "蛋白质主链",
+            "target": "二级结构",
+            "relation": "二级结构约束指导蛋白质主链生成",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "二级结构信息约束生成模型输出符合预期的主链构象",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "扩散模型",
+            "target": "对称寡聚体设计",
+            "relation": "扩散模型直接应用于对称寡聚体设计",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "扩散模型能够生成具有对称性的寡聚体结构",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "对称寡聚体设计",
+            "target": "刚性框架表示",
+            "relation": "刚性框架表示用于描述对称寡聚体结构",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "刚性框架表示确保寡聚体对称结构的稳定性",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "刚性框架表示",
+            "target": "高阶对称结构",
+            "relation": "刚性框架表示支撑高阶对称结构生成",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "刚性框架表示促进生成具有复杂对称性的高阶结构",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "深度学习方法",
+            "target": "扩散模型",
+            "relation": "深度学习方法通过扩散模型生成蛋白质结构",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "扩散模型继承深度学习方法的蛋白质设计能力",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "扩散模型",
+            "target": "冷冻电子显微镜",
+            "relation": "扩散模型生成结构需冷冻电子显微镜验证",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "冷冻电子显微镜提供实验验证闭环",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "冷冻电子显微镜",
+            "target": "金属结合蛋白",
+            "relation": "冷冻电子显微镜验证金属结合蛋白设计",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "金属结合蛋白设计通过实验验证完成闭环",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "生成模型",
+            "target": "阿尔法折叠2",
+            "relation": "生成模型联合阿尔法折叠2进行结构预测",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "阿尔法折叠2提供结构预测基础",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "阿尔法折叠2",
+            "target": "拓扑约束",
+            "relation": "阿尔法折叠2预测结果受拓扑约束优化",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "拓扑约束优化结构预测结果",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "拓扑约束",
+            "target": "酶活性位点支架",
+            "relation": "拓扑约束优化酶活性位点支架",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "酶活性位点支架通过拓扑优化完成功能设计",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          }
+        ]
+      },
+      "metrics": {
+        "path_consistency": 0.0,
+        "coverage": 0.5185185185185185,
+        "bridging_score": 0.47619047619047616,
+        "rao_stirling_diversity": 0.1667,
+        "embedding_bridging": 0.0,
+        "consistency_precision": 0.0,
+        "consistency_recall": 0.0,
+        "consistency_f1": 0.0,
+        "info_novelty": 0.0,
+        "chain_coherence": 0.0,
+        "atypical_combination": 0.6225,
+        "kg_density": 0.0356,
+        "kg_inverse_modularity": 1.0296,
+        "kg_largest_cc_ratio": 0.7407,
+        "kg_avg_betweenness": 0.0539,
+        "kg_clustering_coefficient": 0.0,
+        "concept_recall": 0.0,
+        "concept_precision": 0.0,
+        "concept_f1": 0.0,
+        "relation_precision": 0.0,
+        "relation_type_accuracy": 0.0,
+        "evidence_coverage": 0.0,
+        "path_alignment_best": 0.0,
+        "path_alignment_mean": 0.0
+      }
+    },
+    "raw": "/* stage1: struct */\n/* concepts round1 */\n{\n  \"meta\": {\n    \"title\": \"De novo design of protein structure and function with RFdiffusion\",\n    \"primary\": \"计算机科学技术\",\n    \"secondary_list\": [\"生物学\"]\n  },\n  \"概念\": {\n    \"主学科\": [\n      {\n        \"term\": \"deep-learning methods\",\n        \"normalized\": \"深度学习方法\",\n        \"std_label\": \"深度学习\",\n        \"evidence\": \"designing new proteins using deep-learning methods\",\n        \"source\": \"abstract\",\n        \"confidence\": 0.95\n      },\n      {\n        \"term\": \"diffusion models\",\n        \"normalized\": \"扩散模型\",\n        \"std_label\": \"扩散模型\",\n        \"evidence\": \"Diffusion models have had considerable success\",\n        \"source\": \"abstract\",\n        \"confidence\": 0.92\n      },\n      {\n        \"term\": \"RoseTTAFold structure prediction network\",\n        \"normalized\": \"RoseTTAFold结构预测网络\",\n        \"std_label\": \"结构预测模型\",\n        \"evidence\": \"fine-tuning the RoseTTAFold structure prediction network\",\n        \"source\": \"abstract\",\n        \"confidence\": 0.98\n      },\n      {\n        \"term\": \"generative model\",\n        \"normalized\": \"生成模型\",\n        \"std_label\": \"生成模型\",\n        \"evidence\": \"generative model of protein backbones\",\n        \"source\": \"abstract\",\n        \"confidence\": 0.93\n      },\n      {\n        \"term\": \"topology-constrained\",\n        \"normalized\": \"拓扑约束\",\n        \"std_label\": \"拓扑约束\",\n        \"evidence\": \"topology-constrained protein monomer design\",\n        \"source\": \"abstract\",\n        \"confidence\": 0.88\n      },\n      {\n        \"term\": \"symmetric oligomer design\",\n        \"normalized\": \"对称寡聚体设计\",\n        \"std_label\": \"对称设计\",\n        \"evidence\": \"symmetric oligomer design\",\n        \"source\": \"abstract\",\n        \"confidence\": 0.85\n      },\n      {\n        \"term\": \"Denoising diffusion probabilistic models\",\n        \"normalized\": \"去噪扩散概率模型\",\n        \"std_label\": \"扩散模型\",\n        \"evidence\": \"Denoising diffusion probabilistic models (DDPMs)\",\n        \"source\": \"introduction\",\n        \"confidence\": 0.91\n      },\n      {\n        \"term\": \"Gaussian noise\",\n        \"normalized\": \"高斯噪声\",\n        \"std_label\": \"高斯噪声\",\n        \"evidence\": \"corrupted with Gaussian noise\",\n        \"source\": \"introduction\",\n        \"confidence\": 0.94\n      },\n      {\n        \"term\": \"rotationally equivariant\",\n        \"normalized\": \"旋转等变\",\n        \"std_label\": \"旋转等变\",\n        \"evidence\": \"rotationally equivariant DDPMs\",\n        \"source\": \"introduction\",\n        \"confidence\": 0.89\n      },\n      {\n        \"term\": \"block-adjacency\",\n        \"normalized\": \"块邻接\",\n        \"std_label\": \"块邻接\",\n        \"evidence\": \"block-adjacency ('fold') information\",\n        \"source\": \"introduction\",\n        \"confidence\": 0.87\n      },\n      {\n        \"term\": \"RFdiffusion\",\n        \"normalized\": \"RoseTTAFold扩散模型\",\n        \"std_label\": \"扩散模型\",\n        \"evidence\": \"method called RoseTTAFold diffusion (RFdiffusion)\",\n        \"source\": \"abstract\",\n        \"confidence\": 0.99\n      }\n    ],\n    \"辅学科\": {\n      \"生物学\": [\n        {\n          \"term\": \"protein design\",\n          \"normalized\": \"蛋白质设计\",\n          \"std_label\": \"蛋白质设计\",\n          \"evidence\": \"general deep-learning framework for protein design\",\n          \"source\": \"abstract\",\n          \"confidence\": 0.97\n        },\n        {\n          \"term\": \"de novo binder design\",\n          \"normalized\": \"从头结合体设计\",\n          \"std_label\": \"蛋白质设计\",\n          \"evidence\": \"de novo binder design\",\n          \"source\": \"abstract\",\n          \"confidence\": 0.95\n        },\n        {\n          \"term\": \"higher-order symmetric architectures\",\n          \"normalized\": \"高阶对称结构\",\n          \"std_label\": \"蛋白质结构\",\n          \"evidence\": \"higher-order symmetric architectures\",\n          \"source\": \"abstract\",\n          \"confidence\": 0.92\n        },\n        {\n          \"term\": \"protein backbones\",\n          \"normalized\": \"蛋白质主链\",\n          \"std_label\": \"蛋白质结构\",\n          \"evidence\": \"generative model of protein backbones\",\n          \"source\": \"abstract\",\n          \"confidence\": 0.96\n        },\n        {\n          \"term\": \"enzyme active site scaffolding\",\n          \"normalized\": \"酶活性位点支架\",\n          \"std_label\": \"蛋白质功能\",\n          \"evidence\": \"enzyme active site scaffolding\",\n          \"source\": \"abstract\",\n          \"confidence\": 0.93\n        },\n        {\n          \"term\": \"metal-binding proteins\",\n          \"normalized\": \"金属结合蛋白\",\n          \"std_label\": \"功能蛋白\",\n          \"evidence\": \"metal-binding proteins\",\n          \"source\": \"abstract\",\n          \"confidence\": 0.94\n        },\n        {\n          \"term\": \"cryogenic electron microscopy\",\n          \"normalized\": \"冷冻电子显微镜\",\n          \"std_label\": \"实验技术\",\n          \"evidence\": \"cryogenic electron microscopy structure\",\n          \"source\": \"abstract\",\n          \"confidence\": 0.95\n        },\n        {\n          \"term\": \"influenza haemagglutinin\",\n          \"normalized\": \"流感血凝素\",\n          \"std_label\": \"靶标蛋白\",\n          \"evidence\": \"influenza haemagglutinin\",\n          \"source\": \"abstract\",\n          \"confidence\": 0.91\n        },\n        {\n          \"term\": \"secondary structure\",\n          \"normalized\": \"二级结构\",\n          \"std_label\": \"蛋白质结构\",\n          \"evidence\": \"conditioning on secondary structure\",\n          \"source\": \"introduction\",\n          \"confidence\": 0.93\n        },\n        {\n          \"term\": \"AlphaFold2\",\n          \"normalized\": \"阿尔法折叠2\",\n          \"std_label\": \"结构预测模型\",\n          \"evidence\": \"AlphaFold2 (ref. 17) (AF2)\",\n          \"source\": \"introduction\",\n          \"confidence\": 0.98\n        },\n        {\n          \"term\": \"rigid-frame representation\",\n          \"normalized\": \"刚性框架表示\",\n          \"std_label\": \"结构表示\",\n          \"evidence\": \"rigid-frame representation of residues\",\n          \"source\": \"introduction\",\n          \"confidence\": 0.89\n        }\n      ]\n    }\n  }\n}\n\n/* concepts round2 (supplement) */\n{\"补充概念\": {\"主学科\": [\"Denoising diffusion probabilistic models (DDPMs)\", \"AlphaFold2 (AF2)\"], \"辅学科\": {\"计算机科学技术\": [\"DDPMs\", \"AF2\"], \"生物学\": [\"Denoising diffusion probabilistic models\", \"AlphaFold2\"]}}}\n\n/* relations */\n{\n  \"跨学科关系\": [\n    {\n      \"head\": \"deep-learning methods\",\n      \"tail\": \"protein design\",\n      \"relation\": \"applied to solve protein design challenges\",\n      \"relation_type\": \"method_applied_to\",\n      \"direction\": \"->\",\n      \"evidence\": \"designing new proteins using deep-learning methods\",\n      \"source\": \"abstract\",\n      \"confidence\": 0.95\n    },\n    {\n      \"head\": \"diffusion models\",\n      \"tail\": \"protein modelling\",\n      \"relation\": \"applied to protein modelling with limited success\",\n      \"relation_type\": \"method_applied_to\",\n      \"direction\": \"->\",\n      \"evidence\": \"Diffusion models have had limited success when applied to protein modelling\",\n      \"source\": \"abstract\",\n      \"confidence\": 0.92\n    },\n    {\n      \"head\": \"RoseTTAFold structure prediction network\",\n      \"tail\": \"protein backbone design\",\n      \"relation\": \"fine-tuned for protein structure denoising tasks\",\n      \"relation_type\": \"method_applied_to\",\n      \"direction\": \"->\",\n      \"evidence\": \"fine-tuning the RoseTTAFold structure prediction network on protein structure denoising tasks\",\n      \"source\": \"abstract\",\n      \"confidence\": 0.98\n    },\n    {\n      \"head\": \"RFdiffusion\",\n      \"tail\": \"symmetric oligomer design\",\n      \"relation\": \"enables symmetric oligomer design\",\n      \"relation_type\": \"method_applied_to\",\n      \"direction\": \"->\",\n      \"evidence\": \"symmetric oligomer design achievements of RFdiffusion\",\n      \"source\": \"abstract\",\n      \"confidence\": 0.99\n    },\n    {\n      \"head\": \"RFdiffusion\",\n      \"tail\": \"metal-binding proteins\",\n      \"relation\": \"enables metal-binding protein design\",\n      \"relation_type\": \"method_applied_to\",\n      \"direction\": \"->\",\n      \"evidence\": \"design of hundreds of metal-binding proteins\",\n      \"source\": \"abstract\",\n      \"confidence\": 0.99\n    },\n    {\n      \"head\": \"Denoising diffusion probabilistic models\",\n      \"tail\": \"protein backbones\",\n      \"relation\": \"generates protein backbones through denoising\",\n      \"relation_type\": \"method_applied_to\",\n      \"direction\": \"->\",\n      \"evidence\": \"DDPMs generate protein backbones by learning to reverse Gaussian noise corruption\",\n      \"source\": \"introduction\",\n      \"confidence\": 0.91\n    },\n    {\n      \"head\": \"AlphaFold2\",\n      \"tail\": \"structure prediction\",\n      \"relation\": \"provides structural understanding for design\",\n      \"relation_type\": \"maps_to\",\n      \"direction\": \"->\",\n      \"evidence\": \"deep understanding of protein structure from AlphaFold2\",\n      \"source\": \"introduction\",\n      \"confidence\": 0.98\n    },\n    {\n      \"head\": \"secondary structure\",\n      \"tail\": \"protein design\",\n      \"relation\": \"conditions protein design process\",\n      \"relation_type\": \"constrains\",\n      \"direction\": \"->\",\n      \"evidence\": \"conditioning on secondary structure information\",\n      \"source\": \"introduction\",\n      \"confidence\": 0.93\n    },\n    {\n      \"head\": \"cryogenic electron microscopy\",\n      \"tail\": \"structure validation\",\n      \"relation\": \"validates designed binder structures\",\n      \"relation_type\": \"corresponds_to\",\n      \"direction\": \"->\",\n      \"evidence\": \"cryogenic electron microscopy confirms binder structure accuracy\",\n      \"source\": \"abstract\",\n      \"confidence\": 0.95\n    },\n    {\n      \"head\": \"Gaussian noise\",\n      \"tail\": \"protein structure denoising\",\n      \"relation\": \"used in training denoising diffusion models\",\n      \"relation_type\": \"improves_metric\",\n      \"direction\": \"->\",\n      \"evidence\": \"corrupted with Gaussian noise in DDPM training\",\n      \"source\": \"introduction\",\n      \"confidence\": 0.94\n    }\n  ]\n}\n\n/* stage2: query */\n{\n  \"按辅助学科分类\": {\n    \"生物学\": {\n      \"概念\": [\n        \"蛋白质设计\",\n        \"金属结合蛋白\",\n        \"冷冻电子显微镜\",\n        \"对称寡聚体设计\",\n        \"蛋白质主链\",\n        \"阿尔法折叠2\",\n        \"二级结构\",\n        \"酶活性位点支架\"\n      ],\n      \"关系\": [0, 2, 3, 4, 5, 6, 7, 8],\n      \"rationale\": \"提供蛋白质设计目标、结构验证手段及生物物理约束条件\"\n    }\n  },\n  \"查询\": {\n    \"一级\": \"如何利用深度学习方法实现蛋白质三维结构的从头生成与功能优化\",\n    \"二级\": [\n      \"深度学习生成模型如何结合蛋白质二级结构约束进行主链设计\",\n      \"扩散模型在对称寡聚体结构生成中如何整合刚性框架表示\"\n    ],\n    \"三级\": [\n      \"基于深度学习的扩散模型如何协同冷冻电子显微镜验证实现金属结合蛋白的从头设计\",\n      \"蛋白质主链生成模型联合阿尔法折叠2结构预测如何优化酶活性位点支架的拓扑结构\"\n    ]\n  }\n}\n\n/* stage3: hypothesis L1 */\n{\n  \"假设\": {\n    \"一级\": [\n      [\n        { \"step\": 1, \"head\": \"生成模型\", \"relation\": \"生成蛋白质主链几何构象\", \"tail\": \"蛋白质主链\", \"claim\": \"生成模型通过学习主链二面角分布能够生成符合立体化学规则的初始构象\" },\n        { \"step\": 2, \"head\": \"蛋白质主链\", \"relation\": \"受二级结构类型调控\", \"tail\": \"二级结构\", \"claim\": \"主链构象需满足α螺旋和β折叠等二级结构的氢键模式约束\" },\n        { \"step\": 3, \"head\": \"二级结构\", \"relation\": \"决定酶活性位点支架拓扑\", \"tail\": \"酶活性位点支架\", \"claim\": \"二级结构元件的空间排列需要生物学知识指导活性位点的催化几何构型设计\" }\n      ],\n      [\n        { \"step\": 1, \"head\": \"扩散模型\", \"relation\": \"实现对称寡聚体从头生成\", \"tail\": \"对称寡聚体设计\", \"claim\": \"扩散模型通过旋转等变架构能够生成具有Cn对称性的蛋白质组装体\" },\n        { \"step\": 2, \"head\": \"对称寡聚体设计\", \"relation\": \"依赖块邻接信息编码\", \"tail\": \"块邻接\", \"claim\": \"块邻接特征编码使模型能捕捉对称亚基间的界面互补性\" },\n        { \"step\": 3, \"head\": \"块邻接\", \"relation\": \"需冷冻电子显微镜验证组装构象\", \"tail\": \"冷冻电子显微镜\", \"claim\": \"对称组装体的设计结果需要冷冻电子显微镜技术验证界面残基的空间适配性\" }\n      ]\n    ],\n    \"一级总结\": [\n      \"主学科生成模型结合二级结构约束，需生物学指导酶活性位点的空间排布优化\",\n      \"主学科扩散模型生成对称组装体，需生物学冷冻电子显微镜验证界面构象准确性\"\n    ]\n  }\n}\n\n/* stage3: hypothesis L2 */\n{\n  \"假设\": {\n    \"二级\": [\n      [\n        {\n          \"head\": \"深度学习方法\",\n          \"tail\": \"生成模型\",\n          \"relation\": \"生成模型是深度学习方法的具体实现\",\n          \"claim\": \"深度学习方法通过生成模型实现蛋白质设计\"\n        },\n        {\n          \"head\": \"生成模型\",\n          \"tail\": \"蛋白质主链\",\n          \"relation\": \"生成模型直接生成蛋白质主链结构\",\n          \"claim\": \"生成模型能够生成符合物理规律的蛋白质主链\"\n        },\n        {\n          \"head\": \"蛋白质主链\",\n          \"tail\": \"二级结构\",\n          \"relation\": \"二级结构约束指导蛋白质主链生成\",\n          \"claim\": \"二级结构信息约束生成模型输出符合预期的主链构象\"\n        }\n      ],\n      [\n        {\n          \"head\": \"扩散模型\",\n          \"tail\": \"对称寡聚体设计\",\n          \"relation\": \"扩散模型直接应用于对称寡聚体设计\",\n          \"claim\": \"扩散模型能够生成具有对称性的寡聚体结构\"\n        },\n        {\n          \"head\": \"对称寡聚体设计\",\n          \"tail\": \"刚性框架表示\",\n          \"relation\": \"刚性框架表示用于描述对称寡聚体结构\",\n          \"claim\": \"刚性框架表示确保寡聚体对称结构的稳定性\"\n        },\n        {\n          \"head\": \"刚性框架表示\",\n          \"tail\": \"高阶对称结构\",\n          \"relation\": \"刚性框架表示支撑高阶对称结构生成\",\n          \"claim\": \"刚性框架表示促进生成具有复杂对称性的高阶结构\"\n        }\n      ]\n    ],\n    \"二级总结\": [\n      \"利用深度学习生成模型结合二级结构约束生成蛋白质主链\",\n      \"扩散模型通过刚性框架表示实现高阶对称寡聚体结构生成\"\n    ]\n  }\n}\n\n/* stage3: hypothesis L3 */\n{\n  \"假设\": {\n    \"三级\": [\n      [\n        {\n          \"step\": 1,\n          \"head\": \"深度学习方法\",\n          \"tail\": \"扩散模型\",\n          \"relation\": \"深度学习方法通过扩散模型生成蛋白质结构\",\n          \"claim\": \"扩散模型继承深度学习方法的蛋白质设计能力\"\n        },\n        {\n          \"step\": 2,\n          \"head\": \"扩散模型\",\n          \"tail\": \"冷冻电子显微镜\",\n          \"relation\": \"扩散模型生成结构需冷冻电子显微镜验证\",\n          \"claim\": \"冷冻电子显微镜提供实验验证闭环\"\n        },\n        {\n          \"step\": 3,\n          \"head\": \"冷冻电子显微镜\",\n          \"tail\": \"金属结合蛋白\",\n          \"relation\": \"冷冻电子显微镜验证金属结合蛋白设计\",\n          \"claim\": \"金属结合蛋白设计通过实验验证完成闭环\"\n        }\n      ],\n      [\n        {\n          \"step\": 1,\n          \"head\": \"生成模型\",\n          \"tail\": \"阿尔法折叠2\",\n          \"relation\": \"生成模型联合阿尔法折叠2进行结构预测\",\n          \"claim\": \"阿尔法折叠2提供结构预测基础\"\n        },\n        {\n          \"step\": 2,\n          \"head\": \"阿尔法折叠2\",\n          \"tail\": \"拓扑约束\",\n          \"relation\": \"阿尔法折叠2预测结果受拓扑约束优化\",\n          \"claim\": \"拓扑约束优化结构预测结果\"\n        },\n        {\n          \"step\": 3,\n          \"head\": \"拓扑约束\",\n          \"tail\": \"酶活性位点支架\",\n          \"relation\": \"拓扑约束优化酶活性位点支架\",\n          \"claim\": \"酶活性位点支架通过拓扑优化完成功能设计\"\n        }\n      ]\n    ],\n    \"三级总结\": [\n      \"深度学习驱动的扩散模型结合冷冻电镜验证，实现金属结合蛋白的从头设计闭环\",\n      \"生成模型联合阿尔法折叠2结构预测通过拓扑约束优化，完成酶活性位点支架的功能设计\"\n    ]\n  }\n}",
+    "ok": true,
+    "error": ""
+  },
+  {
+    "title": "Accurate medium-range global weather forecasting with 3D neural networks",
+    "abstract": "Abstract Weather forecasting is important for science and society. At present, the most accurate forecast system is the numerical weather prediction (NWP) method, which represents atmospheric states as discretized grids and numerically solves partial differential equations that describe the transition between those states 1 . However, this procedure is computationally expensive. Recently, artificial-intelligence-based methods 2 have shown potential in accelerating weather forecasting by orders of magnitude, but the forecast accuracy is still significantly lower than that of NWP methods. Here we introduce an artificial-intelligence-based method for accurate, medium-range global weather forecasting. We show that three-dimensional deep networks equipped with Earth-specific priors are effective at dealing with complex patterns in weather data, and that a hierarchical temporal aggregation strategy reduces accumulation errors in medium-range forecasting. Trained on 39 years of global data, our program, Pangu-Weather, obtains stronger deterministic forecast results on reanalysis data in all tested variables when compared with the world’s best NWP system, the operational integrated forecasting system of the European Centre for Medium-Range Weather Forecasts (ECMWF) 3 . Our method also works well with extreme weather forecasts and ensemble forecasts. When initialized with reanalysis data, the accuracy of tracking tropical cyclones is also higher than that of ECMWF-HRES.",
+    "pdf_url": "https://doi.org/10.1038/s41586-023-06185-3",
+    "primary": "计算机科学技术",
+    "secondary": "计算机科学技术, 地球科学, 信息科学与系统科学",
+    "secondary_list": [
+      "计算机科学技术",
+      "地球科学",
+      "信息科学与系统科学"
+    ],
+    "introduction": "Accurate medium-range global weather \nforecasting with 3D neural networks\n\nhttps://doi.org/10.1038/s41586-023-06185-3\n\nKaifeng Bi1, Lingxi Xie1, Hengheng Zhang1, Xin Chen1, Xiaotao Gu1 & Qi Tian1 ✉\n\nReceived: 5 January 2023\n\nAccepted: 9 May 2023\n\nPublished online: 5 July 2023\n\nOpen access\n\n Check for updates\n\nWeather forecasting is important for science and society. At present, the most accurate \nforecast system is the numerical weather prediction (NWP) method, which represents \natmospheric states as discretized grids and numerically solves partial differential \nequations that describe the transition between those states1. However, this procedure \nis computationally expensive. Recently, artificial-intelligence-based methods2 have \nshown potential in accelerating weather forecasting by orders of magnitude, but \nthe forecast accuracy is still significantly lower than that of NWP methods. Here we \nintroduce an artificial-intelligence-based method for accurate, medium-range global \nweather forecasting. We show that three-dimensional deep networks equipped with \nEarth-specific priors are effective at dealing with complex patterns in weather data, \nand that a hierarchical temporal aggregation strategy reduces accumulation errors \nin medium-range forecasting. Trained on 39 years of global data, our program, \nPangu-Weather, obtains stronger deterministic forecast results on reanalysis data in \nall tested variables when compared with the world’s best NWP system, the operational \nintegrated forecasting system of the European Centre for Medium-Range Weather \nForecasts (ECMWF)3. Our method also works well with extreme weather forecasts and \nensemble forecasts. When initialized with reanalysis data, the accuracy of tracking \ntropical cyclones is also higher than that of ECMWF-HRES.\n\nWeather forecasting is an important application of scientific computing \nthat aims to predict future weather changes, especially in regards to \nextreme weather events. In the past decade, high-performance comput-\ning systems have greatly accelerated research in the field of numerical \nweather prediction (NWP) methods1. Conventional NWP methods are \nprimarily concerned with describing the transitions between discre-\ntized grids of atmospheric states using partial differential equations \n(PDEs) and then solving them with numerical simulations4–6. These \nmethods are often slow; a single simulation for a ten-day forecast can \ntake hours of computation in a supercomputer that has hundreds of \nnodes7. In addition, conventional NWP algorithms largely rely on para-\nmeterization, which uses approximate functions to capture unresolved \nprocesses, where errors can be introduced by approximation8,9.\n\nThe rapid development of deep learning10 has introduced a prom-\nising direction, which the scientific community refers to as artificial \nintelligence (AI)-based methods2,11–16. Here, the methodology is to \ntrain a deep neural network to capture the relationship between the \ninput (reanalysis weather data at a given point in time) and the output \n(reanalysis weather data at the target point in time). On specialized \ncomputational devices such as graphics processing units (GPUs), \nAI-based methods are extremely fast. To give a recent example, Four-\nCastNet2 takes only 7 s to compute a 100-member, 24-hour forecast, \nwhich is orders of magnitudes faster than conventional NWP methods. \nHowever, the accuracy of FourCastNet is still below satisfactory; its \nroot mean square error (RMSE) of a 5-day Z500 (500 hPa geopotential) \nforecast is 484.5, which is much worse than the 333.7 reported by the \noperational integrated forecasting system (IFS) of the European Centre \n\nfor Medium-Range Weather Forecasts (ECMWF)3. In a recent survey17, \nresearchers agreed that AI holds great potential, but admitted that \n“a number of fundamental breakthroughs are needed” before AI-based \nmethods can beat NWP.\n\nThese breakthroughs seem to be happening earlier than expected. \nHere we present Pangu-Weather (see Methods for an explanation of the \nname ‘Pangu’), a powerful AI-based weather forecasting system that \nproduces stronger deterministic forecast results than the operational \nIFS on all tested weather variables against reanalysis data. Our techni-\ncal contributions are two-fold. First, we integrated height information \ninto a new dimension so that the input and output of our deep neu-\nral networks can be conceptualized in three dimensions. We further \ndesigned a three-dimensional (3D) Earth-specific transformer (3DEST) \narchitecture to inject Earth-specific priors into the deep networks. \nOur experiments show that 3D models, by formulating height into \nan individual dimension, have the ability to capture the relationship \nbetween atmospheric states in different pressure levels and thus yield \nsignificant accuracy gains, compared with two-dimensional models \nsuch as FourCastNet2. Second, we applied a hierarchical temporal \naggregation algorithm that involves training a series of models with \nincreasing forecast lead times. Hence, in the testing stage, the num-\nber of iterations needed for medium-range weather forecasting was \nlargely reduced, and the cumulative forecast errors were alleviated. \nExperiments on the fifth generation of ECMWF reanalysis (ERA5) data18 \nvalidated that Pangu-Weather is good at deterministic forecast and \nextreme weather forecast while being more than 10,000-times faster \nthan the operational IFS.\n\n1Huawei Cloud, Shenzhen, China. ✉e-mail: tian.qi1@huawei.com\n\nNature | Vol 619 | 20 July 2023 | 533\n\nArticle\f80\n\n40\n\n0\n\n–40\n\n)\n1\n–\ns\nm\n\n(\n\nd\ne\ne\np\ns\nd\nn\nW\n\ni\n\n2 × 4 × 4\npatch\nembedding\n\na\n\n3D Earth-specific transformer\n\n(C = 192)\n\n2 × 4 × 4\npatch\nrecovery\n\nMerge\n\nLayer 1\nEarth-specific block × 2\n(8 × 360 × 181 × C)\n\nLayer 4\nEarth-specific block × 2\n(8 × 360 × 181 × C)\n\nSplit\n\nUpper-air variables\n(13 × 1,440 × 721 × 5)\n\n4 × 4\npatch\nembedding\n\n)\n1\n–\ns\nm\n\n(\n\n20\n\n10\n\n0\n\n–10\n\n–20\n\nd\ne\ne\np\ns\nd\nn\nW\nSurface variables\n(1,440 × 721 × 4)\n\ni\n\nDown-sampli",
+    "journal": "Nature",
+    "journal_id": "https://openalex.org/S137773608",
+    "issn_l": "0028-0836",
+    "source_type": "journal",
+    "doi": "https://doi.org/10.1038/s41586-023-06185-3",
+    "publication_date": "2023-07-05",
+    "publication_year": 2023,
+    "fwci": 246.82161288,
+    "cited_by_count": 1145,
+    "field": "Meteorological Phenomena and Simulations",
+    "parsed": {
+      "meta": {
+        "title": "Accurate medium-range global weather forecasting with 3D neural networks",
+        "primary": "计算机科学技术",
+        "secondary_list": [
+          "计算机科学技术",
+          "地球科学",
+          "信息科学与系统科学"
+        ],
+        "journal": "Nature",
+        "journal_id": "https://openalex.org/S137773608",
+        "issn_l": "0028-0836",
+        "source_type": "journal",
+        "doi": "https://doi.org/10.1038/s41586-023-06185-3",
+        "publication_date": "2023-07-05",
+        "publication_year": 2023,
+        "fwci": 246.82161288,
+        "cited_by_count": 1145,
+        "field": "Meteorological Phenomena and Simulations"
+      },
+      "概念": {
+        "主学科": [
+          {
+            "term": "3D neural networks",
+            "normalized": "三维神经网络",
+            "std_label": "Three-Dimensional Neural Networks",
+            "evidence": "Accurate medium-range global weather forecasting with 3D neural networks",
+            "source": "abstract",
+            "confidence": 0.98
+          },
+          {
+            "term": "artificial-intelligence-based methods",
+            "normalized": "人工智能方法",
+            "std_label": "AI-Based Methods",
+            "evidence": "Recently, artificial-intelligence-based methods have shown potential in accelerating weather forecasting",
+            "source": "abstract",
+            "confidence": 0.97
+          },
+          {
+            "term": "three-dimensional deep networks",
+            "normalized": "三维深度网络",
+            "std_label": "3D Deep Networks",
+            "evidence": "three-dimensional deep networks equipped with Earth-specific priors",
+            "source": "abstract",
+            "confidence": 0.96
+          },
+          {
+            "term": "Earth-specific priors",
+            "normalized": "地球特定先验知识",
+            "std_label": "Earth-Specific Priors",
+            "evidence": "three-dimensional deep networks equipped with Earth-specific priors",
+            "source": "abstract",
+            "confidence": 0.95
+          },
+          {
+            "term": "hierarchical temporal aggregation strategy",
+            "normalized": "分层时间聚合策略",
+            "std_label": "Hierarchical Temporal Aggregation",
+            "evidence": "hierarchical temporal aggregation strategy reduces accumulation errors",
+            "source": "abstract",
+            "confidence": 0.94
+          },
+          {
+            "term": "Pangu-Weather",
+            "normalized": "盘古气象",
+            "std_label": "Pangu-Weather",
+            "evidence": "our program, Pangu-Weather, obtains stronger deterministic forecast results",
+            "source": "abstract",
+            "confidence": 0.99
+          },
+          {
+            "term": "deep neural networks",
+            "normalized": "深度神经网络",
+            "std_label": "Deep Neural Networks",
+            "evidence": "input and output of our deep neural networks",
+            "source": "introduction",
+            "confidence": 0.96
+          },
+          {
+            "term": "3D Earth-specific transformer",
+            "normalized": "三维地球特定变压器",
+            "std_label": "3D Earth-Specific Transformer",
+            "evidence": "three-dimensional (3D) Earth-specific transformer (3DEST)",
+            "source": "introduction",
+            "confidence": 0.95
+          },
+          {
+            "term": "patch embedding",
+            "normalized": "块嵌入",
+            "std_label": "Patch Embedding",
+            "evidence": "2 × 4 × 4 patch embedding",
+            "source": "introduction",
+            "confidence": 0.93
+          },
+          {
+            "term": "patch recovery",
+            "normalized": "块恢复",
+            "std_label": "Patch Recovery",
+            "evidence": "2 × 4 × 4 patch recovery",
+            "source": "introduction",
+            "confidence": 0.92
+          },
+          {
+            "term": "GPU",
+            "normalized": "图形处理器",
+            "std_label": "Graphics Processing Unit",
+            "evidence": "graphics processing units (GPUs)",
+            "source": "introduction",
+            "confidence": 0.97
+          },
+          {
+            "term": "deterministic forecast",
+            "normalized": "确定性预测",
+            "std_label": "Deterministic Forecast",
+            "evidence": "stronger deterministic forecast results",
+            "source": "abstract",
+            "confidence": 0.94
+          }
+        ],
+        "辅学科": {
+          "地球科学": [
+            {
+              "term": "numerical weather prediction (NWP)",
+              "normalized": "数值天气预报",
+              "std_label": "Numerical Weather Prediction",
+              "evidence": "numerical weather prediction (NWP) method",
+              "source": "abstract",
+              "confidence": 0.99
+            },
+            {
+              "term": "partial differential equations",
+              "normalized": "偏微分方程",
+              "std_label": "Partial Differential Equations",
+              "evidence": "partial differential equations that describe the transition between those states",
+              "source": "abstract",
+              "confidence": 0.98
+            },
+            {
+              "term": "reanalysis data",
+              "normalized": "再分析数据",
+              "std_label": "Reanalysis Data",
+              "evidence": "deterministic forecast results on reanalysis data",
+              "source": "abstract",
+              "confidence": 0.97
+            },
+            {
+              "term": "tropical cyclones",
+              "normalized": "热带气旋",
+              "std_label": "Tropical Cyclones",
+              "evidence": "tracking tropical cyclones",
+              "source": "abstract",
+              "confidence": 0.96
+            },
+            {
+              "term": "ECMWF",
+              "normalized": "欧洲中期天气预报中心",
+              "std_label": "European Centre for Medium-Range Weather Forecasts",
+              "evidence": "European Centre for Medium-Range Weather Forecasts (ECMWF)",
+              "source": "abstract",
+              "confidence": 0.99
+            },
+            {
+              "term": "extreme weather forecasts",
+              "normalized": "极端天气预测",
+              "std_label": "Extreme Weather Forecasts",
+              "evidence": "Our method also works well with extreme weather forecasts",
+              "source": "abstract",
+              "confidence": 0.95
+            },
+            {
+              "term": "atmospheric states",
+              "normalized": "大气状态",
+              "std_label": "Atmospheric States",
+              "evidence": "discretized grids and numerically solves partial differential equations that describe the transition between those states",
+              "source": "abstract",
+              "confidence": 0.94
+            },
+            {
+              "term": "ERA5 data",
+              "normalized": "第五代再分析数据",
+              "std_label": "ERA5 Data",
+              "evidence": "fifth generation of ECMWF reanalysis (ERA5) data",
+              "source": "introduction",
+              "confidence": 0.97
+            },
+            {
+              "term": "parameterization",
+              "normalized": "参数化",
+              "std_label": "Parameterization",
+              "evidence": "conventional NWP algorithms largely rely on parameterization",
+              "source": "introduction",
+              "confidence": 0.93
+            }
+          ],
+          "信息科学与系统科学": [
+            {
+              "term": "ensemble forecasts",
+              "normalized": "集合预测",
+              "std_label": "Ensemble Forecasts",
+              "evidence": "Our method also works well with... ensemble forecasts",
+              "source": "abstract",
+              "confidence": 0.95
+            },
+            {
+              "term": "root mean square error (RMSE)",
+              "normalized": "均方根误差",
+              "std_label": "Root Mean Square Error",
+              "evidence": "root mean square error (RMSE) of a 5-day Z500 forecast",
+              "source": "introduction",
+              "confidence": 0.96
+            },
+            {
+              "term": "high-performance computing systems",
+              "normalized": "高性能计算系统",
+              "std_label": "High-Performance Computing",
+              "evidence": "high-performance computing systems have greatly accelerated research",
+              "source": "introduction",
+              "confidence": 0.97
+            },
+            {
+              "term": "forecast lead times",
+              "normalized": "预测提前期",
+              "std_label": "Forecast Lead Times",
+              "evidence": "training a series of models with increasing forecast lead times",
+              "source": "introduction",
+              "confidence": 0.93
+            },
+            {
+              "term": "deep learning",
+              "normalized": "深度学习",
+              "std_label": "Deep Learning",
+              "evidence": "The rapid development of deep learning",
+              "source": "introduction",
+              "confidence": 0.98
+            },
+            {
+              "term": "FourCastNet",
+              "normalized": "四维预报网络",
+              "std_label": "FourCastNet",
+              "evidence": "FourCastNet2 takes only 7 s to compute a 100-member, 24-hour forecast",
+              "source": "introduction",
+              "confidence": 0.96
+            }
+          ]
+        }
+      },
+      "跨学科关系": [
+        {
+          "head": "three-dimensional deep networks",
+          "relation": "integrates Earth-specific priors to capture atmospheric patterns",
+          "relation_type": "method_applied_to",
+          "relation_type_norm": "method_applied_to",
+          "relation_type_raw": "method_applied_to",
+          "tail": "Earth-specific priors",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "three-dimensional deep networks equipped with Earth-specific priors are effective at dealing with complex patterns in weather data",
+          "source": "abstract",
+          "confidence": 0.96
+        },
+        {
+          "head": "hierarchical temporal aggregation strategy",
+          "relation": "reduces accumulation errors in medium-range forecasting",
+          "relation_type": "improves_metric",
+          "relation_type_norm": "improves_metric",
+          "relation_type_raw": "improves_metric",
+          "tail": "numerical weather prediction (NWP)",
+          "direction": "->",
+          "quant": {
+            "metric": "accumulation error",
+            "value": "reduced"
+          },
+          "assumptions": [],
+          "evidence": "hierarchical temporal aggregation strategy reduces accumulation errors in medium-range forecasting",
+          "source": "abstract",
+          "confidence": 0.94
+        },
+        {
+          "head": "Pangu-Weather",
+          "relation": "outperforms the operational integrated forecasting system in deterministic forecasts",
+          "relation_type": "generalizes",
+          "relation_type_norm": "generalizes",
+          "relation_type_raw": "generalizes",
+          "tail": "ECMWF",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "Pangu-Weather obtains stronger deterministic forecast results than ECMWF's operational integrated forecasting system",
+          "source": "abstract",
+          "confidence": 0.99
+        },
+        {
+          "head": "deep learning",
+          "relation": "provides foundational development for AI-based weather forecasting",
+          "relation_type": "driven_by",
+          "relation_type_norm": "driven_by",
+          "relation_type_raw": "driven_by",
+          "tail": "artificial-intelligence-based methods",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "The rapid development of deep learning has introduced a promising direction referred to as AI-based methods",
+          "source": "introduction",
+          "confidence": 0.98
+        },
+        {
+          "head": "3D Earth-specific transformer",
+          "relation": "captures relationships between different pressure levels in atmospheric states",
+          "relation_type": "method_applied_to",
+          "relation_type_norm": "method_applied_to",
+          "relation_type_raw": "method_applied_to",
+          "tail": "atmospheric states",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "3D models formulate height into an individual dimension to capture relationships between atmospheric states in different pressure levels",
+          "source": "introduction",
+          "confidence": 0.95
+        },
+        {
+          "head": "GPU",
+          "relation": "enables acceleration of AI-based weather forecasting computations",
+          "relation_type": "method_applied_to",
+          "relation_type_norm": "method_applied_to",
+          "relation_type_raw": "method_applied_to",
+          "tail": "artificial-intelligence-based methods",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "AI-based methods are extremely fast on specialized computational devices such as GPUs",
+          "source": "introduction",
+          "confidence": 0.97
+        },
+        {
+          "head": "parameterization",
+          "relation": "introduces approximation errors in conventional NWP methods",
+          "relation_type": "constrains",
+          "relation_type_norm": "constrains",
+          "relation_type_raw": "constrains",
+          "tail": "numerical weather prediction (NWP)",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "conventional NWP algorithms largely rely on parameterization where errors can be introduced by approximation",
+          "source": "introduction",
+          "confidence": 0.93
+        },
+        {
+          "head": "root mean square error (RMSE)",
+          "relation": "measures and compares forecast accuracy against operational systems",
+          "relation_type": "improves_metric",
+          "relation_type_norm": "improves_metric",
+          "relation_type_raw": "improves_metric",
+          "tail": "FourCastNet",
+          "direction": "->",
+          "quant": {
+            "metric": "RMSE",
+            "value": "333.7 vs 484.5"
+          },
+          "assumptions": [],
+          "evidence": "ECMWF's RMSE of 333.7 outperforms FourCastNet's 484.5 in 5-day Z500 forecasts",
+          "source": "introduction",
+          "confidence": 0.96
+        }
+      ],
+      "按辅助学科分类": {
+        "地球科学": {
+          "概念": [
+            "数值天气预报",
+            "偏微分方程",
+            "再分析数据",
+            "热带气旋",
+            "欧洲中期天气预报中心",
+            "极端天气预测",
+            "大气状态",
+            "第五代再分析数据",
+            "参数化"
+          ],
+          "关系": [
+            1,
+            2,
+            4,
+            6,
+            7
+          ],
+          "rationale": "提供大气动力学建模基础与气象数据验证标准"
+        },
+        "信息科学与系统科学": {
+          "概念": [
+            "集合预测",
+            "均方根误差",
+            "高性能计算系统",
+            "预测提前期",
+            "深度学习",
+            "四维预报网络"
+          ],
+          "关系": [
+            3,
+            5,
+            7
+          ],
+          "rationale": "支撑预测模型评估体系与计算加速技术实现"
+        }
+      },
+      "查询": {
+        "一级": "三维神经网络如何提升中程全球天气预报的确定性预测能力",
+        "二级": [
+          "地球科学的数值天气预报方法如何与三维深度网络结合减少累积误差",
+          "信息科学的深度学习技术如何优化大气状态参数化过程"
+        ],
+        "三级": [
+          "三维地球特定变压器如何融合地球特定先验知识与高性能计算系统实现热带气旋跟踪",
+          "分层时间聚合策略如何协同集合预测与均方根误差指标提升极端天气预测可靠性"
+        ]
+      },
+      "假设": {
+        "一级": [
+          [
+            {
+              "step": 1,
+              "head": "三维深度网络",
+              "relation": "整合地球特定先验知识以捕捉大气模式",
+              "tail": "地球特定先验知识",
+              "claim": "三维深度网络通过整合地球特定先验知识，可更精准建模大气状态的空间关联性，需地球科学提供动态参数约束"
+            },
+            {
+              "step": 2,
+              "head": "地球特定先验知识",
+              "relation": "建立与大气状态垂直维度的物理关联",
+              "tail": "大气状态",
+              "claim": "地球特定先验知识通过三维地球特定变压器建模不同压力层大气状态关系，需地球科学优化参数化方案"
+            },
+            {
+              "step": 3,
+              "head": "大气状态",
+              "relation": "通过多尺度特征融合提升确定性预测稳定性",
+              "tail": "确定性预测",
+              "claim": "大气状态的精细化表征可降低数值天气预报的累积误差，需信息科学与系统科学构建高效计算框架"
+            }
+          ],
+          [
+            {
+              "step": 1,
+              "head": "三维神经网络",
+              "relation": "采用分层时间聚合策略优化序列预测",
+              "tail": "分层时间聚合策略",
+              "claim": "三维神经网络通过分层时间聚合策略可缓解长期依赖问题，需信息科学与系统科学设计误差传播控制机制"
+            },
+            {
+              "step": 2,
+              "head": "分层时间聚合策略",
+              "relation": "协同数值天气预报模型减少迭代误差",
+              "tail": "数值天气预报",
+              "claim": "分层时间聚合策略通过多阶段误差校正改进数值天气预报方法，需地球科学提供动态过程约束"
+            },
+            {
+              "step": 3,
+              "head": "数值天气预报",
+              "relation": "基于再分析数据验证确定性预测可靠性",
+              "tail": "确定性预测",
+              "claim": "数值天气预报的改进可提升极端天气预测的确定性，需信息科学与系统科学优化集合预测算法"
+            }
+          ],
+          [
+            {
+              "step": 1,
+              "head": "三维神经网络",
+              "relation": "依赖深度学习技术构建复杂非线性映射",
+              "tail": "深度学习",
+              "claim": "三维神经网络的架构创新依赖深度学习理论突破，需信息科学与系统科学解决模型可解释性难题"
+            },
+            {
+              "step": 2,
+              "head": "深度学习",
+              "relation": "驱动高性能计算系统加速气象推演",
+              "tail": "高性能计算系统",
+              "claim": "深度学习算法需要高性能计算系统支撑大规模气象数据训练，需信息科学与系统科学优化分布式计算架构"
+            },
+            {
+              "step": 3,
+              "head": "高性能计算系统",
+              "relation": "通过块嵌入技术提升确定性预测效率",
+              "tail": "确定性预测",
+              "claim": "高性能计算系统的硬件加速可缩短确定性预测的计算周期，需地球科学提供物理一致性验证标准"
+            }
+          ]
+        ],
+        "二级": [
+          [
+            {
+              "step": 1,
+              "head": "数值天气预报",
+              "relation": "结合三维深度网络的地球特定先验知识",
+              "tail": "三维深度网络",
+              "claim": "数值天气预报 结合三维深度网络的地球特定先验知识 三维深度网络"
+            },
+            {
+              "step": 2,
+              "head": "三维深度网络",
+              "relation": "采用分层时间聚合策略减少误差",
+              "tail": "分层时间聚合策略",
+              "claim": "三维深度网络 采用分层时间聚合策略减少误差 分层时间聚合策略"
+            },
+            {
+              "step": 3,
+              "head": "分层时间聚合策略",
+              "relation": "提升确定性预测的稳定性",
+              "tail": "确定性预测",
+              "claim": "分层时间聚合策略 提升确定性预测的稳定性 确定性预测"
+            }
+          ],
+          [
+            {
+              "step": 1,
+              "head": "深度学习",
+              "relation": "驱动人工智能方法突破传统参数化限制",
+              "tail": "人工智能方法",
+              "claim": "深度学习 驱动人工智能方法突破传统参数化限制 人工智能方法"
+            },
+            {
+              "step": 2,
+              "head": "人工智能方法",
+              "relation": "重构大气状态参数化的数学表达",
+              "tail": "参数化",
+              "claim": "人工智能方法 重构大气状态参数化的数学表达 参数化"
+            },
+            {
+              "step": 3,
+              "head": "参数化",
+              "relation": "增强大气状态预测的物理一致性",
+              "tail": "大气状态",
+              "claim": "参数化 增强大气状态预测的物理一致性 大气状态"
+            }
+          ]
+        ],
+        "三级": [
+          [
+            {
+              "step": 1,
+              "head": "三维地球特定变压器",
+              "relation": "整合地球特定先验知识捕捉大气状态关系",
+              "tail": "地球特定先验知识",
+              "claim": "三维地球特定变压器通过整合地球特定先验知识，建立大气状态在不同压力层的关联性"
+            },
+            {
+              "step": 2,
+              "head": "地球特定先验知识",
+              "relation": "结合高性能计算系统加速气象数据处理",
+              "tail": "高性能计算系统",
+              "claim": "地球特定先验知识与高性能计算系统结合，提升气象数据实时处理效率"
+            },
+            {
+              "step": 3,
+              "head": "高性能计算系统",
+              "relation": "实现热带气旋的实时跟踪与预测",
+              "tail": "热带气旋",
+              "claim": "高性能计算系统支持热带气旋的动态轨迹模拟与预测验证"
+            }
+          ],
+          [
+            {
+              "step": 1,
+              "head": "分层时间聚合策略",
+              "relation": "减少数值天气预报的累积误差",
+              "tail": "数值天气预报",
+              "claim": "分层时间聚合策略通过多阶段误差校正优化数值天气预报流程"
+            },
+            {
+              "step": 2,
+              "head": "数值天气预报",
+              "relation": "结合集合预测提升极端天气预测稳定性",
+              "tail": "集合预测",
+              "claim": "数值天气预报框架集成集合预测方法增强极端天气预测的鲁棒性"
+            },
+            {
+              "step": 3,
+              "head": "集合预测",
+              "relation": "通过均方根误差评估预测可靠性",
+              "tail": "均方根误差",
+              "claim": "集合预测结果与均方根误差指标结合验证极端天气预测的准确性"
+            }
+          ]
+        ],
+        "一级总结": [
+          "主学科瓶颈：三维模型对大气物理过程表征不足，地球科学通过动态参数约束补位，预期提升大气状态垂直维度解析能力",
+          "主学科瓶颈：时间序列预测误差累积显著，信息科学通过误差控制机制补位，预期增强数值天气预报的长期稳定性",
+          "主学科瓶颈：模型训练效率制约应用落地，信息科学通过计算架构优化补位，预期缩短确定性预测的业务化周期"
+        ],
+        "二级总结": [
+          "地球科学通过三维深度网络整合地球特定先验知识，结合分层时间聚合策略将累积误差问题转化为可优化的时序建模任务，最终提升主学科的确定性预测稳定性",
+          "信息科学利用深度学习构建人工智能方法，通过参数化过程的数学重构将大气状态预测转化为可微分物理约束问题，最终优化主学科对大气状态的物理一致性建模"
+        ],
+        "三级总结": [
+          "三维地球特定变压器整合先验知识建模大气状态，通过高性能计算系统加速实现热带气旋跟踪闭环",
+          "分层时间聚合策略优化数值天气预报流程，结合集合预测与均方根误差验证极端天气预测可靠性"
+        ]
+      },
+      "graph": {
+        "nodes": [
+          {
+            "id": "三维神经网络",
+            "term": "3D neural networks",
+            "normalized": "三维神经网络",
+            "discipline": "计算机科学技术",
+            "evidence": "Accurate medium-range global weather forecasting with 3D neural networks",
+            "source": "abstract",
+            "confidence": 0.98
+          },
+          {
+            "id": "人工智能方法",
+            "term": "artificial-intelligence-based methods",
+            "normalized": "人工智能方法",
+            "discipline": "计算机科学技术",
+            "evidence": "Recently, artificial-intelligence-based methods have shown potential in accelerating weather forecasting",
+            "source": "abstract",
+            "confidence": 0.97
+          },
+          {
+            "id": "三维深度网络",
+            "term": "three-dimensional deep networks",
+            "normalized": "三维深度网络",
+            "discipline": "计算机科学技术",
+            "evidence": "three-dimensional deep networks equipped with Earth-specific priors",
+            "source": "abstract",
+            "confidence": 0.96
+          },
+          {
+            "id": "地球特定先验知识",
+            "term": "Earth-specific priors",
+            "normalized": "地球特定先验知识",
+            "discipline": "计算机科学技术",
+            "evidence": "three-dimensional deep networks equipped with Earth-specific priors",
+            "source": "abstract",
+            "confidence": 0.95
+          },
+          {
+            "id": "分层时间聚合策略",
+            "term": "hierarchical temporal aggregation strategy",
+            "normalized": "分层时间聚合策略",
+            "discipline": "计算机科学技术",
+            "evidence": "hierarchical temporal aggregation strategy reduces accumulation errors",
+            "source": "abstract",
+            "confidence": 0.94
+          },
+          {
+            "id": "盘古气象",
+            "term": "Pangu-Weather",
+            "normalized": "盘古气象",
+            "discipline": "计算机科学技术",
+            "evidence": "our program, Pangu-Weather, obtains stronger deterministic forecast results",
+            "source": "abstract",
+            "confidence": 0.99
+          },
+          {
+            "id": "深度神经网络",
+            "term": "deep neural networks",
+            "normalized": "深度神经网络",
+            "discipline": "计算机科学技术",
+            "evidence": "input and output of our deep neural networks",
+            "source": "introduction",
+            "confidence": 0.96
+          },
+          {
+            "id": "三维地球特定变压器",
+            "term": "3D Earth-specific transformer",
+            "normalized": "三维地球特定变压器",
+            "discipline": "计算机科学技术",
+            "evidence": "three-dimensional (3D) Earth-specific transformer (3DEST)",
+            "source": "introduction",
+            "confidence": 0.95
+          },
+          {
+            "id": "块嵌入",
+            "term": "patch embedding",
+            "normalized": "块嵌入",
+            "discipline": "计算机科学技术",
+            "evidence": "2 × 4 × 4 patch embedding",
+            "source": "introduction",
+            "confidence": 0.93
+          },
+          {
+            "id": "块恢复",
+            "term": "patch recovery",
+            "normalized": "块恢复",
+            "discipline": "计算机科学技术",
+            "evidence": "2 × 4 × 4 patch recovery",
+            "source": "introduction",
+            "confidence": 0.92
+          },
+          {
+            "id": "图形处理器",
+            "term": "GPU",
+            "normalized": "图形处理器",
+            "discipline": "计算机科学技术",
+            "evidence": "graphics processing units (GPUs)",
+            "source": "introduction",
+            "confidence": 0.97
+          },
+          {
+            "id": "确定性预测",
+            "term": "deterministic forecast",
+            "normalized": "确定性预测",
+            "discipline": "计算机科学技术",
+            "evidence": "stronger deterministic forecast results",
+            "source": "abstract",
+            "confidence": 0.94
+          },
+          {
+            "id": "数值天气预报",
+            "term": "numerical weather prediction (NWP)",
+            "normalized": "数值天气预报",
+            "discipline": "地球科学",
+            "evidence": "numerical weather prediction (NWP) method",
+            "source": "abstract",
+            "confidence": 0.99
+          },
+          {
+            "id": "偏微分方程",
+            "term": "partial differential equations",
+            "normalized": "偏微分方程",
+            "discipline": "地球科学",
+            "evidence": "partial differential equations that describe the transition between those states",
+            "source": "abstract",
+            "confidence": 0.98
+          },
+          {
+            "id": "再分析数据",
+            "term": "reanalysis data",
+            "normalized": "再分析数据",
+            "discipline": "地球科学",
+            "evidence": "deterministic forecast results on reanalysis data",
+            "source": "abstract",
+            "confidence": 0.97
+          },
+          {
+            "id": "热带气旋",
+            "term": "tropical cyclones",
+            "normalized": "热带气旋",
+            "discipline": "地球科学",
+            "evidence": "tracking tropical cyclones",
+            "source": "abstract",
+            "confidence": 0.96
+          },
+          {
+            "id": "欧洲中期天气预报中心",
+            "term": "ECMWF",
+            "normalized": "欧洲中期天气预报中心",
+            "discipline": "地球科学",
+            "evidence": "European Centre for Medium-Range Weather Forecasts (ECMWF)",
+            "source": "abstract",
+            "confidence": 0.99
+          },
+          {
+            "id": "极端天气预测",
+            "term": "extreme weather forecasts",
+            "normalized": "极端天气预测",
+            "discipline": "地球科学",
+            "evidence": "Our method also works well with extreme weather forecasts",
+            "source": "abstract",
+            "confidence": 0.95
+          },
+          {
+            "id": "大气状态",
+            "term": "atmospheric states",
+            "normalized": "大气状态",
+            "discipline": "地球科学",
+            "evidence": "discretized grids and numerically solves partial differential equations that describe the transition between those states",
+            "source": "abstract",
+            "confidence": 0.94
+          },
+          {
+            "id": "第五代再分析数据",
+            "term": "ERA5 data",
+            "normalized": "第五代再分析数据",
+            "discipline": "地球科学",
+            "evidence": "fifth generation of ECMWF reanalysis (ERA5) data",
+            "source": "introduction",
+            "confidence": 0.97
+          },
+          {
+            "id": "参数化",
+            "term": "parameterization",
+            "normalized": "参数化",
+            "discipline": "地球科学",
+            "evidence": "conventional NWP algorithms largely rely on parameterization",
+            "source": "introduction",
+            "confidence": 0.93
+          },
+          {
+            "id": "集合预测",
+            "term": "ensemble forecasts",
+            "normalized": "集合预测",
+            "discipline": "信息科学与系统科学",
+            "evidence": "Our method also works well with... ensemble forecasts",
+            "source": "abstract",
+            "confidence": 0.95
+          },
+          {
+            "id": "均方根误差",
+            "term": "root mean square error (RMSE)",
+            "normalized": "均方根误差",
+            "discipline": "信息科学与系统科学",
+            "evidence": "root mean square error (RMSE) of a 5-day Z500 forecast",
+            "source": "introduction",
+            "confidence": 0.96
+          },
+          {
+            "id": "高性能计算系统",
+            "term": "high-performance computing systems",
+            "normalized": "高性能计算系统",
+            "discipline": "信息科学与系统科学",
+            "evidence": "high-performance computing systems have greatly accelerated research",
+            "source": "introduction",
+            "confidence": 0.97
+          },
+          {
+            "id": "预测提前期",
+            "term": "forecast lead times",
+            "normalized": "预测提前期",
+            "discipline": "信息科学与系统科学",
+            "evidence": "training a series of models with increasing forecast lead times",
+            "source": "introduction",
+            "confidence": 0.93
+          },
+          {
+            "id": "深度学习",
+            "term": "deep learning",
+            "normalized": "深度学习",
+            "discipline": "信息科学与系统科学",
+            "evidence": "The rapid development of deep learning",
+            "source": "introduction",
+            "confidence": 0.98
+          },
+          {
+            "id": "四维预报网络",
+            "term": "FourCastNet",
+            "normalized": "四维预报网络",
+            "discipline": "信息科学与系统科学",
+            "evidence": "FourCastNet2 takes only 7 s to compute a 100-member, 24-hour forecast",
+            "source": "introduction",
+            "confidence": 0.96
+          }
+        ],
+        "edges": [
+          {
+            "source": "三维深度网络",
+            "target": "地球特定先验知识",
+            "relation": "integrates Earth-specific priors to capture atmospheric patterns",
+            "relation_type": "method_applied_to",
+            "metadata": {
+              "evidence": "three-dimensional deep networks equipped with Earth-specific priors are effective at dealing with complex patterns in weather data",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "分层时间聚合策略",
+            "target": "数值天气预报",
+            "relation": "reduces accumulation errors in medium-range forecasting",
+            "relation_type": "improves_metric",
+            "metadata": {
+              "evidence": "hierarchical temporal aggregation strategy reduces accumulation errors in medium-range forecasting",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "盘古气象",
+            "target": "欧洲中期天气预报中心",
+            "relation": "outperforms the operational integrated forecasting system in deterministic forecasts",
+            "relation_type": "generalizes",
+            "metadata": {
+              "evidence": "Pangu-Weather obtains stronger deterministic forecast results than ECMWF's operational integrated forecasting system",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "深度学习",
+            "target": "人工智能方法",
+            "relation": "provides foundational development for AI-based weather forecasting",
+            "relation_type": "driven_by",
+            "metadata": {
+              "evidence": "The rapid development of deep learning has introduced a promising direction referred to as AI-based methods",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "三维地球特定变压器",
+            "target": "大气状态",
+            "relation": "captures relationships between different pressure levels in atmospheric states",
+            "relation_type": "method_applied_to",
+            "metadata": {
+              "evidence": "3D models formulate height into an individual dimension to capture relationships between atmospheric states in different pressure levels",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "图形处理器",
+            "target": "人工智能方法",
+            "relation": "enables acceleration of AI-based weather forecasting computations",
+            "relation_type": "method_applied_to",
+            "metadata": {
+              "evidence": "AI-based methods are extremely fast on specialized computational devices such as GPUs",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "参数化",
+            "target": "数值天气预报",
+            "relation": "introduces approximation errors in conventional NWP methods",
+            "relation_type": "constrains",
+            "metadata": {
+              "evidence": "conventional NWP algorithms largely rely on parameterization where errors can be introduced by approximation",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "均方根误差",
+            "target": "四维预报网络",
+            "relation": "measures and compares forecast accuracy against operational systems",
+            "relation_type": "improves_metric",
+            "metadata": {
+              "evidence": "ECMWF's RMSE of 333.7 outperforms FourCastNet's 484.5 in 5-day Z500 forecasts",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "三维深度网络",
+            "target": "地球特定先验知识",
+            "relation": "整合地球特定先验知识以捕捉大气模式",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "三维深度网络通过整合地球特定先验知识，可更精准建模大气状态的空间关联性，需地球科学提供动态参数约束",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "地球特定先验知识",
+            "target": "大气状态",
+            "relation": "建立与大气状态垂直维度的物理关联",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "地球特定先验知识通过三维地球特定变压器建模不同压力层大气状态关系，需地球科学优化参数化方案",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "大气状态",
+            "target": "确定性预测",
+            "relation": "通过多尺度特征融合提升确定性预测稳定性",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "大气状态的精细化表征可降低数值天气预报的累积误差，需信息科学与系统科学构建高效计算框架",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "三维神经网络",
+            "target": "分层时间聚合策略",
+            "relation": "采用分层时间聚合策略优化序列预测",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "三维神经网络通过分层时间聚合策略可缓解长期依赖问题，需信息科学与系统科学设计误差传播控制机制",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "分层时间聚合策略",
+            "target": "数值天气预报",
+            "relation": "协同数值天气预报模型减少迭代误差",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "分层时间聚合策略通过多阶段误差校正改进数值天气预报方法，需地球科学提供动态过程约束",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "数值天气预报",
+            "target": "确定性预测",
+            "relation": "基于再分析数据验证确定性预测可靠性",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "数值天气预报的改进可提升极端天气预测的确定性，需信息科学与系统科学优化集合预测算法",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "三维神经网络",
+            "target": "深度学习",
+            "relation": "依赖深度学习技术构建复杂非线性映射",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "三维神经网络的架构创新依赖深度学习理论突破，需信息科学与系统科学解决模型可解释性难题",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 2
+            }
+          },
+          {
+            "source": "深度学习",
+            "target": "高性能计算系统",
+            "relation": "驱动高性能计算系统加速气象推演",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "深度学习算法需要高性能计算系统支撑大规模气象数据训练，需信息科学与系统科学优化分布式计算架构",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 2
+            }
+          },
+          {
+            "source": "高性能计算系统",
+            "target": "确定性预测",
+            "relation": "通过块嵌入技术提升确定性预测效率",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "高性能计算系统的硬件加速可缩短确定性预测的计算周期，需地球科学提供物理一致性验证标准",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 2
+            }
+          },
+          {
+            "source": "数值天气预报",
+            "target": "三维深度网络",
+            "relation": "结合三维深度网络的地球特定先验知识",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "数值天气预报 结合三维深度网络的地球特定先验知识 三维深度网络",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "三维深度网络",
+            "target": "分层时间聚合策略",
+            "relation": "采用分层时间聚合策略减少误差",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "三维深度网络 采用分层时间聚合策略减少误差 分层时间聚合策略",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "分层时间聚合策略",
+            "target": "确定性预测",
+            "relation": "提升确定性预测的稳定性",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "分层时间聚合策略 提升确定性预测的稳定性 确定性预测",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "深度学习",
+            "target": "人工智能方法",
+            "relation": "驱动人工智能方法突破传统参数化限制",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "深度学习 驱动人工智能方法突破传统参数化限制 人工智能方法",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "人工智能方法",
+            "target": "参数化",
+            "relation": "重构大气状态参数化的数学表达",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "人工智能方法 重构大气状态参数化的数学表达 参数化",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "参数化",
+            "target": "大气状态",
+            "relation": "增强大气状态预测的物理一致性",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "参数化 增强大气状态预测的物理一致性 大气状态",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "三维地球特定变压器",
+            "target": "地球特定先验知识",
+            "relation": "整合地球特定先验知识捕捉大气状态关系",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "三维地球特定变压器通过整合地球特定先验知识，建立大气状态在不同压力层的关联性",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "地球特定先验知识",
+            "target": "高性能计算系统",
+            "relation": "结合高性能计算系统加速气象数据处理",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "地球特定先验知识与高性能计算系统结合，提升气象数据实时处理效率",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "高性能计算系统",
+            "target": "热带气旋",
+            "relation": "实现热带气旋的实时跟踪与预测",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "高性能计算系统支持热带气旋的动态轨迹模拟与预测验证",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "分层时间聚合策略",
+            "target": "数值天气预报",
+            "relation": "减少数值天气预报的累积误差",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "分层时间聚合策略通过多阶段误差校正优化数值天气预报流程",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "数值天气预报",
+            "target": "集合预测",
+            "relation": "结合集合预测提升极端天气预测稳定性",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "数值天气预报框架集成集合预测方法增强极端天气预测的鲁棒性",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "集合预测",
+            "target": "均方根误差",
+            "relation": "通过均方根误差评估预测可靠性",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "集合预测结果与均方根误差指标结合验证极端天气预测的准确性",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          }
+        ]
+      },
+      "metrics": {
+        "path_consistency": 0.19047619047619047,
+        "coverage": 0.5555555555555556,
+        "bridging_score": 0.5862068965517241,
+        "rao_stirling_diversity": 0.2082,
+        "embedding_bridging": 0.0,
+        "consistency_precision": 0.0,
+        "consistency_recall": 0.0,
+        "consistency_f1": 0.0,
+        "info_novelty": 0.0,
+        "chain_coherence": 0.0,
+        "atypical_combination": 0.5571,
+        "kg_density": 0.0356,
+        "kg_inverse_modularity": 0.9264,
+        "kg_largest_cc_ratio": 0.6296,
+        "kg_avg_betweenness": 0.0266,
+        "kg_clustering_coefficient": 0.0877,
+        "concept_recall": 0.0,
+        "concept_precision": 0.0,
+        "concept_f1": 0.0,
+        "relation_precision": 0.0,
+        "relation_type_accuracy": 0.0,
+        "evidence_coverage": 0.0,
+        "path_alignment_best": 0.0,
+        "path_alignment_mean": 0.0
+      }
+    },
+    "raw": "/* stage1: struct */\n/* concepts round1 */\n{\n  \"meta\": {\n    \"title\": \"Accurate medium-range global weather forecasting with 3D neural networks\",\n    \"primary\": \"计算机科学技术\",\n    \"secondary_list\": [\"地球科学\", \"信息科学与系统科学\"]\n  },\n  \"概念\": {\n    \"主学科\": [\n      {\n        \"term\": \"3D neural networks\",\n        \"normalized\": \"三维神经网络\",\n        \"std_label\": \"Three-Dimensional Neural Networks\",\n        \"evidence\": \"Accurate medium-range global weather forecasting with 3D neural networks\",\n        \"source\": \"abstract\",\n        \"confidence\": 0.98\n      },\n      {\n        \"term\": \"artificial-intelligence-based methods\",\n        \"normalized\": \"人工智能方法\",\n        \"std_label\": \"AI-Based Methods\",\n        \"evidence\": \"Recently, artificial-intelligence-based methods have shown potential in accelerating weather forecasting\",\n        \"source\": \"abstract\",\n        \"confidence\": 0.97\n      },\n      {\n        \"term\": \"three-dimensional deep networks\",\n        \"normalized\": \"三维深度网络\",\n        \"std_label\": \"3D Deep Networks\",\n        \"evidence\": \"three-dimensional deep networks equipped with Earth-specific priors\",\n        \"source\": \"abstract\",\n        \"confidence\": 0.96\n      },\n      {\n        \"term\": \"Earth-specific priors\",\n        \"normalized\": \"地球特定先验知识\",\n        \"std_label\": \"Earth-Specific Priors\",\n        \"evidence\": \"three-dimensional deep networks equipped with Earth-specific priors\",\n        \"source\": \"abstract\",\n        \"confidence\": 0.95\n      },\n      {\n        \"term\": \"hierarchical temporal aggregation strategy\",\n        \"normalized\": \"分层时间聚合策略\",\n        \"std_label\": \"Hierarchical Temporal Aggregation\",\n        \"evidence\": \"hierarchical temporal aggregation strategy reduces accumulation errors\",\n        \"source\": \"abstract\",\n        \"confidence\": 0.94\n      },\n      {\n        \"term\": \"Pangu-Weather\",\n        \"normalized\": \"盘古气象\",\n        \"std_label\": \"Pangu-Weather\",\n        \"evidence\": \"our program, Pangu-Weather, obtains stronger deterministic forecast results\",\n        \"source\": \"abstract\",\n        \"confidence\": 0.99\n      },\n      {\n        \"term\": \"deep neural networks\",\n        \"normalized\": \"深度神经网络\",\n        \"std_label\": \"Deep Neural Networks\",\n        \"evidence\": \"input and output of our deep neural networks\",\n        \"source\": \"introduction\",\n        \"confidence\": 0.96\n      },\n      {\n        \"term\": \"3D Earth-specific transformer\",\n        \"normalized\": \"三维地球特定变压器\",\n        \"std_label\": \"3D Earth-Specific Transformer\",\n        \"evidence\": \"three-dimensional (3D) Earth-specific transformer (3DEST)\",\n        \"source\": \"introduction\",\n        \"confidence\": 0.95\n      },\n      {\n        \"term\": \"patch embedding\",\n        \"normalized\": \"块嵌入\",\n        \"std_label\": \"Patch Embedding\",\n        \"evidence\": \"2 × 4 × 4 patch embedding\",\n        \"source\": \"introduction\",\n        \"confidence\": 0.93\n      },\n      {\n        \"term\": \"patch recovery\",\n        \"normalized\": \"块恢复\",\n        \"std_label\": \"Patch Recovery\",\n        \"evidence\": \"2 × 4 × 4 patch recovery\",\n        \"source\": \"introduction\",\n        \"confidence\": 0.92\n      },\n      {\n        \"term\": \"GPU\",\n        \"normalized\": \"图形处理器\",\n        \"std_label\": \"Graphics Processing Unit\",\n        \"evidence\": \"graphics processing units (GPUs)\",\n        \"source\": \"introduction\",\n        \"confidence\": 0.97\n      },\n      {\n        \"term\": \"deterministic forecast\",\n        \"normalized\": \"确定性预测\",\n        \"std_label\": \"Deterministic Forecast\",\n        \"evidence\": \"stronger deterministic forecast results\",\n        \"source\": \"abstract\",\n        \"confidence\": 0.94\n      }\n    ],\n    \"辅学科\": {\n      \"地球科学\": [\n        {\n          \"term\": \"numerical weather prediction (NWP)\",\n          \"normalized\": \"数值天气预报\",\n          \"std_label\": \"Numerical Weather Prediction\",\n          \"evidence\": \"numerical weather prediction (NWP) method\",\n          \"source\": \"abstract\",\n          \"confidence\": 0.99\n        },\n        {\n          \"term\": \"partial differential equations\",\n          \"normalized\": \"偏微分方程\",\n          \"std_label\": \"Partial Differential Equations\",\n          \"evidence\": \"partial differential equations that describe the transition between those states\",\n          \"source\": \"abstract\",\n          \"confidence\": 0.98\n        },\n        {\n          \"term\": \"reanalysis data\",\n          \"normalized\": \"再分析数据\",\n          \"std_label\": \"Reanalysis Data\",\n          \"evidence\": \"deterministic forecast results on reanalysis data\",\n          \"source\": \"abstract\",\n          \"confidence\": 0.97\n        },\n        {\n          \"term\": \"tropical cyclones\",\n          \"normalized\": \"热带气旋\",\n          \"std_label\": \"Tropical Cyclones\",\n          \"evidence\": \"tracking tropical cyclones\",\n          \"source\": \"abstract\",\n          \"confidence\": 0.96\n        },\n        {\n          \"term\": \"ECMWF\",\n          \"normalized\": \"欧洲中期天气预报中心\",\n          \"std_label\": \"European Centre for Medium-Range Weather Forecasts\",\n          \"evidence\": \"European Centre for Medium-Range Weather Forecasts (ECMWF)\",\n          \"source\": \"abstract\",\n          \"confidence\": 0.99\n        },\n        {\n          \"term\": \"extreme weather forecasts\",\n          \"normalized\": \"极端天气预测\",\n          \"std_label\": \"Extreme Weather Forecasts\",\n          \"evidence\": \"Our method also works well with extreme weather forecasts\",\n          \"source\": \"abstract\",\n          \"confidence\": 0.95\n        },\n        {\n          \"term\": \"atmospheric states\",\n          \"normalized\": \"大气状态\",\n          \"std_label\": \"Atmospheric States\",\n          \"evidence\": \"discretized grids and numerically solves partial differential equations that describe the transition between those states\",\n          \"source\": \"abstract\",\n          \"confidence\": 0.94\n        },\n        {\n          \"term\": \"ERA5 data\",\n          \"normalized\": \"第五代ECMWF再分析数据\",\n          \"std_label\": \"ERA5 Data\",\n          \"evidence\": \"fifth generation of ECMWF reanalysis (ERA5) data\",\n          \"source\": \"introduction\",\n          \"confidence\": 0.97\n        },\n        {\n          \"term\": \"parameterization\",\n          \"normalized\": \"参数化\",\n          \"std_label\": \"Parameterization\",\n          \"evidence\": \"conventional NWP algorithms largely rely on parameterization\",\n          \"source\": \"introduction\",\n          \"confidence\": 0.93\n        }\n      ],\n      \"信息科学与系统科学\": [\n        {\n          \"term\": \"ensemble forecasts\",\n          \"normalized\": \"集合预测\",\n          \"std_label\": \"Ensemble Forecasts\",\n          \"evidence\": \"Our method also works well with... ensemble forecasts\",\n          \"source\": \"abstract\",\n          \"confidence\": 0.95\n        },\n        {\n          \"term\": \"root mean square error (RMSE)\",\n          \"normalized\": \"均方根误差\",\n          \"std_label\": \"Root Mean Square Error\",\n          \"evidence\": \"root mean square error (RMSE) of a 5-day Z500 forecast\",\n          \"source\": \"introduction\",\n          \"confidence\": 0.96\n        },\n        {\n          \"term\": \"high-performance computing systems\",\n          \"normalized\": \"高性能计算系统\",\n          \"std_label\": \"High-Performance Computing\",\n          \"evidence\": \"high-performance computing systems have greatly accelerated research\",\n          \"source\": \"introduction\",\n          \"confidence\": 0.97\n        },\n        {\n          \"term\": \"forecast lead times\",\n          \"normalized\": \"预测提前期\",\n          \"std_label\": \"Forecast Lead Times\",\n          \"evidence\": \"training a series of models with increasing forecast lead times\",\n          \"source\": \"introduction\",\n          \"confidence\": 0.93\n        },\n        {\n          \"term\": \"deep learning\",\n          \"normalized\": \"深度学习\",\n          \"std_label\": \"Deep Learning\",\n          \"evidence\": \"The rapid development of deep learning\",\n          \"source\": \"introduction\",\n          \"confidence\": 0.98\n        },\n        {\n          \"term\": \"FourCastNet\",\n          \"normalized\": \"四维预报网络\",\n          \"std_label\": \"FourCastNet\",\n          \"evidence\": \"FourCastNet2 takes only 7 s to compute a 100-member, 24-hour forecast\",\n          \"source\": \"introduction\",\n          \"confidence\": 0.96\n        }\n      ]\n    }\n  }\n}\n\n/* concepts round2 (supplement) */\n{\"补充概念\": {\"主学科\": [\"计算机科学技术\", \"地球科学\"], \"辅学科\": {\"地球科学\": [\"Z500 (500 hPa geopotential)\", \"ECMWF-HRES\"], \"计算机科学技术\": [\"Integrated Forecasting System (IFS)\", \"Earth-specific block\"]}}}\n\n/* relations */\n{\n  \"跨学科关系\": [\n    {\n      \"head\": \"three-dimensional deep networks\",\n      \"tail\": \"Earth-specific priors\",\n      \"relation\": \"integrates Earth-specific priors to capture atmospheric patterns\",\n      \"relation_type\": \"method_applied_to\",\n      \"direction\": \"->\",\n      \"evidence\": \"three-dimensional deep networks equipped with Earth-specific priors are effective at dealing with complex patterns in weather data\",\n      \"source\": \"abstract\",\n      \"confidence\": 0.96\n    },\n    {\n      \"head\": \"hierarchical temporal aggregation strategy\",\n      \"tail\": \"numerical weather prediction (NWP)\",\n      \"relation\": \"reduces accumulation errors in medium-range forecasting\",\n      \"relation_type\": \"improves_metric\",\n      \"direction\": \"->\",\n      \"quant\": {\"metric\": \"accumulation error\", \"value\": \"reduced\"},\n      \"evidence\": \"hierarchical temporal aggregation strategy reduces accumulation errors in medium-range forecasting\",\n      \"source\": \"abstract\",\n      \"confidence\": 0.94\n    },\n    {\n      \"head\": \"Pangu-Weather\",\n      \"tail\": \"ECMWF\",\n      \"relation\": \"outperforms the operational integrated forecasting system in deterministic forecasts\",\n      \"relation_type\": \"generalizes\",\n      \"direction\": \"->\",\n      \"evidence\": \"Pangu-Weather obtains stronger deterministic forecast results than ECMWF's operational integrated forecasting system\",\n      \"source\": \"abstract\",\n      \"confidence\": 0.99\n    },\n    {\n      \"head\": \"deep learning\",\n      \"tail\": \"artificial-intelligence-based methods\",\n      \"relation\": \"provides foundational development for AI-based weather forecasting\",\n      \"relation_type\": \"driven_by\",\n      \"direction\": \"->\",\n      \"evidence\": \"The rapid development of deep learning has introduced a promising direction referred to as AI-based methods\",\n      \"source\": \"introduction\",\n      \"confidence\": 0.98\n    },\n    {\n      \"head\": \"3D Earth-specific transformer\",\n      \"tail\": \"atmospheric states\",\n      \"relation\": \"captures relationships between different pressure levels in atmospheric states\",\n      \"relation_type\": \"method_applied_to\",\n      \"direction\": \"->\",\n      \"evidence\": \"3D models formulate height into an individual dimension to capture relationships between atmospheric states in different pressure levels\",\n      \"source\": \"introduction\",\n      \"confidence\": 0.95\n    },\n    {\n      \"head\": \"GPU\",\n      \"tail\": \"artificial-intelligence-based methods\",\n      \"relation\": \"enables acceleration of AI-based weather forecasting computations\",\n      \"relation_type\": \"method_applied_to\",\n      \"direction\": \"->\",\n      \"evidence\": \"AI-based methods are extremely fast on specialized computational devices such as GPUs\",\n      \"source\": \"introduction\",\n      \"confidence\": 0.97\n    },\n    {\n      \"head\": \"parameterization\",\n      \"tail\": \"numerical weather prediction (NWP)\",\n      \"relation\": \"introduces approximation errors in conventional NWP methods\",\n      \"relation_type\": \"constrains\",\n      \"direction\": \"->\",\n      \"evidence\": \"conventional NWP algorithms largely rely on parameterization where errors can be introduced by approximation\",\n      \"source\": \"introduction\",\n      \"confidence\": 0.93\n    },\n    {\n      \"head\": \"root mean square error (RMSE)\",\n      \"tail\": \"FourCastNet\",\n      \"relation\": \"measures and compares forecast accuracy against operational systems\",\n      \"relation_type\": \"improves_metric\",\n      \"direction\": \"->\",\n      \"quant\": {\"metric\": \"RMSE\", \"value\": \"333.7 vs 484.5\"},\n      \"evidence\": \"ECMWF's RMSE of 333.7 outperforms FourCastNet's 484.5 in 5-day Z500 forecasts\",\n      \"source\": \"introduction\",\n      \"confidence\": 0.96\n    }\n  ]\n}\n\n/* stage2: query */\n{\n  \"按辅助学科分类\": {\n    \"地球科学\": {\n      \"概念\": [\n        \"数值天气预报\",\n        \"偏微分方程\",\n        \"再分析数据\",\n        \"热带气旋\",\n        \"欧洲中期天气预报中心\",\n        \"极端天气预测\",\n        \"大气状态\",\n        \"第五代再分析数据\",\n        \"参数化\"\n      ],\n      \"关系\": [1, 2, 4, 6, 7],\n      \"rationale\": \"提供大气动力学建模基础与气象数据验证标准\"\n    },\n    \"信息科学与系统科学\": {\n      \"概念\": [\n        \"集合预测\",\n        \"均方根误差\",\n        \"高性能计算系统\",\n        \"预测提前期\",\n        \"深度学习\",\n        \"四维预报网络\"\n      ],\n      \"关系\": [3, 5, 7],\n      \"rationale\": \"支撑预测模型评估体系与计算加速技术实现\"\n    }\n  },\n  \"查询\": {\n    \"一级\": \"三维神经网络如何提升中程全球天气预报的确定性预测能力\",\n    \"二级\": [\n      \"地球科学的数值天气预报方法如何与三维深度网络结合减少累积误差\",\n      \"信息科学的深度学习技术如何优化大气状态参数化过程\"\n    ],\n    \"三级\": [\n      \"三维地球特定变压器如何融合地球特定先验知识与高性能计算系统实现热带气旋跟踪\",\n      \"分层时间聚合策略如何协同集合预测与均方根误差指标提升极端天气预测可靠性\"\n    ]\n  }\n}\n\n/* stage3: hypothesis L1 */\n{\n  \"假设\": {\n    \"一级\": [\n      [\n        {\n          \"step\": 1,\n          \"head\": \"三维深度网络\",\n          \"relation\": \"整合地球特定先验知识以捕捉大气模式\",\n          \"tail\": \"地球特定先验知识\",\n          \"claim\": \"三维深度网络通过整合地球特定先验知识，可更精准建模大气状态的空间关联性，需地球科学提供动态参数约束\"\n        },\n        {\n          \"step\": 2,\n          \"head\": \"地球特定先验知识\",\n          \"relation\": \"建立与大气状态垂直维度的物理关联\",\n          \"tail\": \"大气状态\",\n          \"claim\": \"地球特定先验知识通过三维地球特定变压器建模不同压力层大气状态关系，需地球科学优化参数化方案\"\n        },\n        {\n          \"step\": 3,\n          \"head\": \"大气状态\",\n          \"relation\": \"通过多尺度特征融合提升确定性预测稳定性\",\n          \"tail\": \"确定性预测\",\n          \"claim\": \"大气状态的精细化表征可降低数值天气预报的累积误差，需信息科学与系统科学构建高效计算框架\"\n        }\n      ],\n      [\n        {\n          \"step\": 1,\n          \"head\": \"三维神经网络\",\n          \"relation\": \"采用分层时间聚合策略优化序列预测\",\n          \"tail\": \"分层时间聚合策略\",\n          \"claim\": \"三维神经网络通过分层时间聚合策略可缓解长期依赖问题，需信息科学与系统科学设计误差传播控制机制\"\n        },\n        {\n          \"step\": 2,\n          \"head\": \"分层时间聚合策略\",\n          \"relation\": \"协同数值天气预报模型减少迭代误差\",\n          \"tail\": \"数值天气预报\",\n          \"claim\": \"分层时间聚合策略通过多阶段误差校正改进数值天气预报方法，需地球科学提供动态过程约束\"\n        },\n        {\n          \"step\": 3,\n          \"head\": \"数值天气预报\",\n          \"relation\": \"基于再分析数据验证确定性预测可靠性\",\n          \"tail\": \"确定性预测\",\n          \"claim\": \"数值天气预报的改进可提升极端天气预测的确定性，需信息科学与系统科学优化集合预测算法\"\n        }\n      ],\n      [\n        {\n          \"step\": 1,\n          \"head\": \"三维神经网络\",\n          \"relation\": \"依赖深度学习技术构建复杂非线性映射\",\n          \"tail\": \"深度学习\",\n          \"claim\": \"三维神经网络的架构创新依赖深度学习理论突破，需信息科学与系统科学解决模型可解释性难题\"\n        },\n        {\n          \"step\": 2,\n          \"head\": \"深度学习\",\n          \"relation\": \"驱动高性能计算系统加速气象推演\",\n          \"tail\": \"高性能计算系统\",\n          \"claim\": \"深度学习算法需要高性能计算系统支撑大规模气象数据训练，需信息科学与系统科学优化分布式计算架构\"\n        },\n        {\n          \"step\": 3,\n          \"head\": \"高性能计算系统\",\n          \"relation\": \"通过块嵌入技术提升确定性预测效率\",\n          \"tail\": \"确定性预测\",\n          \"claim\": \"高性能计算系统的硬件加速可缩短确定性预测的计算周期，需地球科学提供物理一致性验证标准\"\n        }\n      ]\n    ],\n    \"一级总结\": [\n      \"主学科瓶颈：三维模型对大气物理过程表征不足，地球科学通过动态参数约束补位，预期提升大气状态垂直维度解析能力\",\n      \"主学科瓶颈：时间序列预测误差累积显著，信息科学通过误差控制机制补位，预期增强数值天气预报的长期稳定性\",\n      \"主学科瓶颈：模型训练效率制约应用落地，信息科学通过计算架构优化补位，预期缩短确定性预测的业务化周期\"\n    ]\n  }\n}\n\n/* stage3: hypothesis L2 */\n{\n  \"假设\": {\n    \"二级\": [\n      [\n        {\n          \"step\": 1,\n          \"head\": \"数值天气预报\",\n          \"relation\": \"结合三维深度网络的地球特定先验知识\",\n          \"tail\": \"三维深度网络\"\n        },\n        {\n          \"step\": 2,\n          \"head\": \"三维深度网络\",\n          \"relation\": \"采用分层时间聚合策略减少误差\",\n          \"tail\": \"分层时间聚合策略\"\n        },\n        {\n          \"step\": 3,\n          \"head\": \"分层时间聚合策略\",\n          \"relation\": \"提升确定性预测的稳定性\",\n          \"tail\": \"确定性预测\"\n        }\n      ],\n      [\n        {\n          \"step\": 1,\n          \"head\": \"深度学习\",\n          \"relation\": \"驱动人工智能方法突破传统参数化限制\",\n          \"tail\": \"人工智能方法\"\n        },\n        {\n          \"step\": 2,\n          \"head\": \"人工智能方法\",\n          \"relation\": \"重构大气状态参数化的数学表达\",\n          \"tail\": \"参数化\"\n        },\n        {\n          \"step\": 3,\n          \"head\": \"参数化\",\n          \"relation\": \"增强大气状态预测的物理一致性\",\n          \"tail\": \"大气状态\"\n        }\n      ]\n    ],\n    \"二级总结\": [\n      \"地球科学通过三维深度网络整合地球特定先验知识，结合分层时间聚合策略将累积误差问题转化为可优化的时序建模任务，最终提升主学科的确定性预测稳定性\",\n      \"信息科学利用深度学习构建人工智能方法，通过参数化过程的数学重构将大气状态预测转化为可微分物理约束问题，最终优化主学科对大气状态的物理一致性建模\"\n    ]\n  }\n}\n\n/* stage3: hypothesis L3 */\n{\n  \"假设\": {\n    \"三级\": [\n      [\n        {\n          \"head\": \"三维地球特定变压器\",\n          \"tail\": \"地球特定先验知识\",\n          \"relation\": \"整合地球特定先验知识捕捉大气状态关系\",\n          \"claim\": \"三维地球特定变压器通过整合地球特定先验知识，建立大气状态在不同压力层的关联性\"\n        },\n        {\n          \"head\": \"地球特定先验知识\",\n          \"tail\": \"高性能计算系统\",\n          \"relation\": \"结合高性能计算系统加速气象数据处理\",\n          \"claim\": \"地球特定先验知识与高性能计算系统结合，提升气象数据实时处理效率\"\n        },\n        {\n          \"head\": \"高性能计算系统\",\n          \"tail\": \"热带气旋\",\n          \"relation\": \"实现热带气旋的实时跟踪与预测\",\n          \"claim\": \"高性能计算系统支持热带气旋的动态轨迹模拟与预测验证\"\n        }\n      ],\n      [\n        {\n          \"head\": \"分层时间聚合策略\",\n          \"tail\": \"数值天气预报\",\n          \"relation\": \"减少数值天气预报的累积误差\",\n          \"claim\": \"分层时间聚合策略通过多阶段误差校正优化数值天气预报流程\"\n        },\n        {\n          \"head\": \"数值天气预报\",\n          \"tail\": \"集合预测\",\n          \"relation\": \"结合集合预测提升极端天气预测稳定性\",\n          \"claim\": \"数值天气预报框架集成集合预测方法增强极端天气预测的鲁棒性\"\n        },\n        {\n          \"head\": \"集合预测\",\n          \"tail\": \"均方根误差\",\n          \"relation\": \"通过均方根误差评估预测可靠性\",\n          \"claim\": \"集合预测结果与均方根误差指标结合验证极端天气预测的准确性\"\n        }\n      ]\n    ],\n    \"三级总结\": [\n      \"三维地球特定变压器整合先验知识建模大气状态，通过高性能计算系统加速实现热带气旋跟踪闭环\",\n      \"分层时间聚合策略优化数值天气预报流程，结合集合预测与均方根误差验证极端天气预测可靠性\"\n    ]\n  }\n}",
+    "ok": true,
+    "error": ""
+  }
+]

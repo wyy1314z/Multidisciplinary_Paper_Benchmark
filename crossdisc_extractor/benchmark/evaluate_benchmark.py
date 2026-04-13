@@ -27,7 +27,12 @@ from typing import Any, Dict, List, Optional, Tuple
 import numpy as np
 from tqdm import tqdm
 
-from crossdisc_extractor.benchmark.eval_prompts import PROMPT_EVAL_DEEP, PROMPT_EVAL_L1, PROMPT_TESTABILITY
+from crossdisc_extractor.benchmark.eval_prompts import (
+    PROMPT_EVAL_DEEP,
+    PROMPT_EVAL_L1,
+    PROMPT_FEASIBILITY,
+    PROMPT_TESTABILITY,
+)
 from crossdisc_extractor.benchmark.metrics import (
     _build_discipline_paths,
     _load_taxonomy,
@@ -520,10 +525,12 @@ def evaluate_single_path(
                 tag, scores["novelty_convention_balance"])
 
     # Factual Precision (NLI-based, needs abstract)
-    if abstract:
-        scores["factual_precision"] = factual_precision(path, abstract)
-    else:
-        scores["factual_precision"] = 0.0
+    scores["factual_precision"] = factual_precision(
+        path,
+        abstract=abstract,
+        gt_terms=gt_terms or [],
+        gt_relations=gt_relations or [],
+    )
     logger.info("[Eval] %s factual_precision=%.4f — NLI 检测路径中 claim 与摘要的一致性",
                 tag, scores["factual_precision"])
 
@@ -602,15 +609,58 @@ def evaluate_single_path(
     try:
         resp = chat_completion_with_retry(messages, temperature=0.0)
         llm_scores = parse_llm_score(resp)
+        if "feasibility" in llm_scores:
+            llm_scores["legacy_feasibility"] = llm_scores["feasibility"]
         logger.info("[Eval] %s LLM 原始响应: %s", tag, resp[:300])
         logger.info("[Eval] %s LLM 评分: innovation=%.2f feasibility=%.2f scientificity=%.2f",
                     tag, llm_scores.get("innovation", 0), llm_scores.get("feasibility", 0),
                     llm_scores.get("scientificity", 0))
     except Exception as e:
         logger.error("[Eval] %s LLM 评估请求失败: %s", tag, e)
-        llm_scores = {"innovation": 0.0, "feasibility": 0.0, "scientificity": 0.0}
+        llm_scores = {
+            "innovation": 0.0,
+            "feasibility": 0.0,
+            "legacy_feasibility": 0.0,
+            "scientificity": 0.0,
+        }
 
     scores.update(llm_scores)
+
+    # ── Feasibility (LLM, dedicated rubric) ────────────────────────────
+    try:
+        feasibility_prompt = PROMPT_FEASIBILITY.format(hypothesis_path=path_str)
+        feasibility_msgs = [{"role": "user", "content": feasibility_prompt}]
+        feasibility_resp = chat_completion_with_retry(feasibility_msgs, temperature=0.0)
+        feasibility_scores = parse_llm_score(
+            feasibility_resp,
+            fields=[
+                "data_feasibility",
+                "method_feasibility",
+                "resource_feasibility",
+                "validation_readiness",
+            ],
+        )
+        scores["feasibility_data"] = feasibility_scores.get("data_feasibility", 0.0)
+        scores["feasibility_method"] = feasibility_scores.get("method_feasibility", 0.0)
+        scores["feasibility_resource"] = feasibility_scores.get("resource_feasibility", 0.0)
+        scores["feasibility_validation"] = feasibility_scores.get("validation_readiness", 0.0)
+        scores["feasibility"] = float(np.mean(list(feasibility_scores.values())))
+        logger.info(
+            "[Eval] %s LLM 现实可行性: feasibility=%.4f (data=%.2f method=%.2f resource=%.2f validation=%.2f)",
+            tag,
+            scores["feasibility"],
+            scores["feasibility_data"],
+            scores["feasibility_method"],
+            scores["feasibility_resource"],
+            scores["feasibility_validation"],
+        )
+    except Exception as e:
+        logger.warning("[Eval] %s Feasibility 评估失败: %s", tag, e)
+        scores["feasibility_data"] = 0.0
+        scores["feasibility_method"] = 0.0
+        scores["feasibility_resource"] = 0.0
+        scores["feasibility_validation"] = 0.0
+        scores["feasibility"] = 0.0
 
     # ── Testability (LLM) ─────────────────────────────────────────────
 

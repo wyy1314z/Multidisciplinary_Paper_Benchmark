@@ -177,3 +177,48 @@ class TestConceptEntry:
     def test_fields_trimmed(self):
         c = ConceptEntry(term="  dl  ", evidence="e", source="s", confidence=0.8)
         assert c.term == "dl"
+
+    def test_none_evidence_and_source_are_coerced(self):
+        c = ConceptEntry(term="dl", evidence=None, source=None, confidence=0.8)
+        assert c.evidence == ""
+        assert c.source == "abstract"
+
+
+class TestSchemaRecovery:
+    def test_concepts_aux_group_unwraps_dict_wrapper(self):
+        from crossdisc_extractor.schemas import Concepts
+
+        c = Concepts.model_validate(
+            {
+                "主学科": [],
+                "辅学科": {
+                    "化学": {
+                        "ConceptEntry": [
+                            {"term": "catalyst", "evidence": None, "source": None, "confidence": 0.8}
+                        ]
+                    }
+                },
+            }
+        )
+        assert len(c.辅学科["化学"]) == 1
+        assert c.辅学科["化学"][0].source == "abstract"
+
+    def test_relation_direction_is_normalized(self):
+        r = RelationEntry(
+            head="a",
+            relation="rel",
+            relation_type="other",
+            tail="b",
+            direction="<-",
+            evidence=None,
+            source=None,
+            confidence=0.8,
+        )
+        assert r.direction == "->"
+        assert r.source == "abstract"
+
+    def test_classified_bucket_fills_missing_rationale(self):
+        from crossdisc_extractor.schemas import ClassifiedBucket
+
+        bucket = ClassifiedBucket.model_validate({"概念": ["x", "y"], "关系": [0, 1]})
+        assert bucket.rationale

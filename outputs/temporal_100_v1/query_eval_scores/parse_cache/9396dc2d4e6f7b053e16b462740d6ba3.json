@@ -1,0 +1,162 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "小鼠视觉皮层功能连接组",
+        "relation": "contains",
+        "tail": "神经元不变性特征",
+        "claim": "小鼠视觉皮层功能连接组中存在神经元不变性特征"
+      },
+      {
+        "step": 2,
+        "head": "神经元不变性特征",
+        "relation": "maintains_stability_under",
+        "tail": "不同视觉刺激条件",
+        "claim": "这些特征在不同视觉刺激条件下保持稳定"
+      },
+      {
+        "step": 3,
+        "head": "神经元不变性特征",
+        "relation": "serves_as",
+        "tail": "大脑信息处理结构性基础",
+        "claim": "这些特征可能作为大脑信息处理的结构性基础"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "神经元不变性特征",
+        "relation": "maintains",
+        "tail": "局部环路连接模式",
+        "claim": "不变性特征通过稳定的局部环路连接模式"
+      },
+      {
+        "step": 2,
+        "head": "局部环路连接模式",
+        "relation": "supports",
+        "tail": "跨视觉任务信息一致性",
+        "claim": "局部环路连接模式维持跨任务的信息一致性"
+      },
+      {
+        "step": 3,
+        "head": "跨视觉任务信息一致性",
+        "relation": "contributes_to",
+        "tail": "感知稳定性",
+        "claim": "信息一致性支持感知稳定性"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "不变性连接模式",
+        "relation": "coexists_with",
+        "tail": "可塑性连接",
+        "claim": "不变性连接与可塑性连接并存"
+      },
+      {
+        "step": 2,
+        "head": "不变性-可塑性连接",
+        "relation": "forms",
+        "tail": "动态-静态网络架构",
+        "claim": "形成动态-静态结合的网络架构"
+      },
+      {
+        "step": 3,
+        "head": "动态-静态网络架构",
+        "relation": "supports",
+        "tail": "稳定编码与适应性解码",
+        "claim": "支撑信息的稳定编码与适应性解码"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "视觉皮层区域",
+        "relation": "exhibits",
+        "tail": "不变性连接拓扑差异",
+        "claim": "不同区域存在不变性连接拓扑差异"
+      },
+      {
+        "step": 2,
+        "head": "不变性连接拓扑差异",
+        "relation": "determines",
+        "tail": "层级视觉处理功能分工",
+        "claim": "拓扑差异决定层级处理中的功能分工"
+      }
+    ]
+  ],
+  "L3": [
+    [
+      {
+        "step": 1,
+        "head": "V1高密度不变性连接",
+        "relation": "mediates",
+        "tail": "同步振荡机制",
+        "claim": "V1的高密度连接通过同步振荡机制"
+      },
+      {
+        "step": 2,
+        "head": "同步振荡机制",
+        "relation": "coordinates",
+        "tail": "群体神经元活动",
+        "claim": "协调群体神经元活动"
+      },
+      {
+        "step": 3,
+        "head": "群体神经元活动",
+        "relation": "enhances",
+        "tail": "基本视觉特征鲁棒表征",
+        "claim": "增强对基本视觉特征的鲁棒表征"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "V2不变性连接",
+        "relation": "interacts_with",
+        "tail": "长程投射神经元",
+        "claim": "不变性连接与长程投射神经元交互"
+      },
+      {
+        "step": 2,
+        "head": "不变性-长程交互",
+        "relation": "enhances",
+        "tail": "复杂视觉模式识别",
+        "claim": "增强复杂视觉模式识别能力"
+      },
+      {
+        "step": 3,
+        "head": "复杂模式识别",
+        "relation": "supports",
+        "tail": "上下文依赖感知判断",
+        "claim": "支持上下文依赖的感知判断"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "LM区不变性连接",
+        "relation": "maintains",
+        "tail": "稳定通路与前额叶",
+        "claim": "通过稳定通路与前额叶连接"
+      },
+      {
+        "step": 2,
+        "head": "稳定通路",
+        "relation": "sustains",
+        "tail": "工作记忆视觉表征",
+        "claim": "维持视觉信息在工作记忆中的持久表征"
+      },
+      {
+        "step": 3,
+        "head": "持久表征",
+        "relation": "influences",
+        "tail": "决策行为输出",
+        "claim": "影响决策行为输出"
+      }
+    ]
+  ]
+}

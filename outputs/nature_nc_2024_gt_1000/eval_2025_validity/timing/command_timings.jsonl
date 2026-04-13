@@ -1,0 +1,4 @@
+{"stage": "stage0", "command": "prepare_2025_balanced_candidate_pool", "start_epoch": 1776048472, "end_epoch": 1776048480, "elapsed_sec": 8.0, "real_sec": 8.46, "user_sec": 10.98, "sys_sec": 0.82, "max_rss_kb": 815640, "exit_code": 0}
+{"stage": "stage1", "command": "classify_2025_candidate_pool", "start_epoch": 1776048480, "end_epoch": 1776050220, "elapsed_sec": 1740.0, "real_sec": 1739.86, "user_sec": 49.14, "sys_sec": 5.26, "max_rss_kb": 797700, "exit_code": 0}
+{"stage": "stage2", "command": "sample_2025_crossdisc_balanced_100", "start_epoch": 1776050220, "end_epoch": 1776050221, "elapsed_sec": 1.0, "real_sec": 0.34, "user_sec": 4.18, "sys_sec": 0.07, "max_rss_kb": 110464, "exit_code": 0}
+{"stage": "stage3", "command": "extract_2025_balanced_100", "start_epoch": 1776050221, "end_epoch": 1776051903, "elapsed_sec": 1682.0, "real_sec": 1682.69, "user_sec": 686.75, "sys_sec": 128.74, "max_rss_kb": 2564440, "exit_code": 0}

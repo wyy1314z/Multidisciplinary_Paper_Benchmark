@@ -1,0 +1,8 @@
+{"stage": "stage0", "command": "prepare_temporal_papers_benchmark", "start_epoch": 1775708821, "end_epoch": 1775708827, "elapsed_sec": 6.0, "real_sec": 0.0, "user_sec": 0.0, "sys_sec": 0.0, "max_rss_kb": 0, "exit_code": 0}
+{"stage": "stage1", "command": "classify_benchmark_candidates", "start_epoch": 1775708827, "end_epoch": 1775709028, "elapsed_sec": 201.0, "real_sec": 0.0, "user_sec": 0.0, "sys_sec": 0.0, "max_rss_kb": 0, "exit_code": 0}
+{"stage": "stage2", "command": "extract_benchmark_candidates", "start_epoch": 1775709028, "end_epoch": 1775711950, "elapsed_sec": 2922.0, "real_sec": 0.0, "user_sec": 0.0, "sys_sec": 0.0, "max_rss_kb": 0, "exit_code": 0}
+{"stage": "stage3", "command": "build_benchmark_dataset", "start_epoch": 1775711950, "end_epoch": 1775712040, "elapsed_sec": 90.0, "real_sec": 0.0, "user_sec": 0.0, "sys_sec": 0.0, "max_rss_kb": 0, "exit_code": 0}
+{"stage": "stage4", "command": "prepare_temporal_papers_validity", "start_epoch": 1775712041, "end_epoch": 1775712047, "elapsed_sec": 6.0, "real_sec": 0.0, "user_sec": 0.0, "sys_sec": 0.0, "max_rss_kb": 0, "exit_code": 0}
+{"stage": "stage5", "command": "classify_validity_candidates", "start_epoch": 1775712047, "end_epoch": 1775712113, "elapsed_sec": 66.0, "real_sec": 0.0, "user_sec": 0.0, "sys_sec": 0.0, "max_rss_kb": 0, "exit_code": 0}
+{"stage": "stage6", "command": "extract_validity_candidates", "start_epoch": 1775712113, "end_epoch": 1775713379, "elapsed_sec": 1266.0, "real_sec": 0.0, "user_sec": 0.0, "sys_sec": 0.0, "max_rss_kb": 0, "exit_code": 0}
+{"stage": "stage7", "command": "evaluate_benchmark_validity", "start_epoch": 1775713379, "end_epoch": 1775791380, "elapsed_sec": 78001.0, "real_sec": 0.0, "user_sec": 0.0, "sys_sec": 0.0, "max_rss_kb": 0, "exit_code": 0}

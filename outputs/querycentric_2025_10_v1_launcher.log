@@ -1,0 +1,4 @@
+nohup: ignoring input
+Starting background run. Log: outputs/querycentric_2025_10_v1/pipeline.log
+Watch progress: tail -f outputs/querycentric_2025_10_v1/pipeline.log
+Background PID: 3984999

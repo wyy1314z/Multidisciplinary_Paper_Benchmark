@@ -1,0 +1,28 @@
+{
+  "input_csv": "/ssd/wangyuyang/git/data/raw_data/nature_springer_2023.csv",
+  "data_year": 2023,
+  "raw_limit": 2000,
+  "run_tag": "2023_nature_nc_2000",
+  "exclude_titles_from": "",
+  "journals": [
+    "Nature",
+    "Nature Communications"
+  ],
+  "crossdisc_threshold": 0.5,
+  "num_workers": 8,
+  "language_mode": "chinese",
+  "paths": {
+    "benchmark_raw": "outputs/nature_nc_2023_gt_2000/benchmark_raw_2023_nature_nc_2000.jsonl",
+    "benchmark_classified": "outputs/nature_nc_2023_gt_2000/benchmark_classified_2023_nature_nc_2000.jsonl",
+    "benchmark_extractions": "outputs/nature_nc_2023_gt_2000/benchmark_extractions_2023_nature_nc_2000.jsonl",
+    "benchmark_dataset": "outputs/nature_nc_2023_gt_2000/benchmark_dataset_2023_nature_nc_2000.json",
+    "timing_summary": "outputs/nature_nc_2023_gt_2000/timing_summary.json",
+    "usage_summary": "outputs/nature_nc_2023_gt_2000/usage_summary.json"
+  },
+  "counts": {
+    "raw_candidates": 2000,
+    "crossdisciplinary_candidates": 720,
+    "successful_extractions": 717,
+    "gt_entries": 717
+  }
+}

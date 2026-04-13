@@ -1,0 +1,136 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "多源遥感数据同化",
+        "relation": "enables",
+        "tail": "植被-大气交互过程动态参数化",
+        "claim": "多源数据同化技术使植被-大气动态参数化成为可能"
+      },
+      {
+        "step": 2,
+        "head": "植被-大气交互过程动态参数化",
+        "relation": "contributes_to",
+        "tail": "时空分辨率跃升",
+        "claim": "动态参数化突破推动模型时空分辨率提升"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "改进的物理约束算法",
+        "relation": "enables",
+        "tail": "土壤水分垂直异质性建模",
+        "claim": "物理约束算法改进支持土壤水分垂直分布建模"
+      },
+      {
+        "step": 2,
+        "head": "土壤水分垂直异质性建模",
+        "relation": "contributes_to",
+        "tail": "时空分辨率跃升",
+        "claim": "垂直异质性建模突破推动分辨率提升"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "SMAP与ECOSTRESS数据耦合同化",
+        "relation": "requires",
+        "tail": "贝叶斯优化框架",
+        "claim": "多源数据融合需要贝叶斯优化框架整合波段信息"
+      },
+      {
+        "step": 2,
+        "head": "贝叶斯优化框架",
+        "relation": "achieves",
+        "tail": "土壤水分反演精度提升15%",
+        "claim": "优化框架使土壤水分反演精度达标"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "MODIS叶面积指数时间序列",
+        "relation": "drives",
+        "tail": "气孔导度模型",
+        "claim": "植被参数驱动冠层蒸散发模型构建"
+      },
+      {
+        "step": 2,
+        "head": "气孔导度模型",
+        "relation": "simulates",
+        "tail": "干旱胁迫响应滞后效应",
+        "claim": "动态模型实现干旱响应滞后效应模拟"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "改进Richards方程",
+        "relation": "combines_with",
+        "tail": "宇宙射线中子数据",
+        "claim": "物理模型与观测数据融合构建新方法"
+      },
+      {
+        "step": 2,
+        "head": "三层土壤水力传导函数",
+        "relation": "reduces",
+        "tail": "根区水分估算误差<8%",
+        "claim": "分层建模显著降低水分估算误差"
+      }
+    ]
+  ],
+  "L3": [
+    [
+      {
+        "step": 1,
+        "head": "SMAP主被动观测数据",
+        "relation": "integrates_with",
+        "tail": "ERA5再分析资料",
+        "claim": "多源数据融合形成时空嵌套框架"
+      },
+      {
+        "step": 2,
+        "head": "时空嵌套框架",
+        "relation": "solves",
+        "tail": "边界层湍流参数化失真",
+        "claim": "新框架解决亚10km尺度参数化难题"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "VIIRS夜间光数据",
+        "relation": "combines_with",
+        "tail": "FLUXNET涡相关观测",
+        "claim": "多源观测数据融合建立参数库基础"
+      },
+      {
+        "step": 2,
+        "head": "生物节律参数库",
+        "relation": "improves",
+        "tail": "昼夜不对称蒸散发机制",
+        "claim": "参数库完善夜间蒸散发过程建模"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "多层土壤热力学模型",
+        "relation": "constrained_by",
+        "tail": "Sentinel-1雷达数据",
+        "claim": "模型与观测数据联合约束相变过程"
+      },
+      {
+        "step": 2,
+        "head": "双阈值判定方法",
+        "relation": "achieves",
+        "tail": "0.1°C网格尺度潜热通量重构",
+        "claim": "高精度方法实现冻土区相变潜热模拟"
+      }
+    ]
+  ]
+}

@@ -141,6 +141,10 @@ def parse_concepts_output(text: str) -> Dict[str, Any]:
         # 但我们要求必须有 meta 以确认题目等信息
         # 暂时严格一点
         raise ValueError("概念抽取输出缺少必要字段 meta / 概念")
+    concepts = obj.get("概念")
+    if isinstance(concepts, dict):
+        concepts.setdefault("主学科", [])
+        concepts.setdefault("辅学科", {})
     return obj
 
 
@@ -238,7 +242,20 @@ def parse_relations_output(text: str, original_text: str = "") -> List[Dict[str,
     if "跨学科关系" in obj:
         val = obj["跨学科关系"]
         if isinstance(val, list):
-            return val
+            out = []
+            for item in val:
+                if not isinstance(item, dict):
+                    continue
+                item = dict(item)
+                item["direction"] = "->"
+                if item.get("evidence") is None:
+                    item["evidence"] = ""
+                if item.get("source") in (None, ""):
+                    item["source"] = "abstract"
+                if item.get("assumptions") is None:
+                    item["assumptions"] = []
+                out.append(item)
+            return out
         return []
     
     # fallback

@@ -1,0 +1,1 @@
+{"stage": "prepare", "command": "prepare_2025_candidates", "argv": "python scripts/prepare_temporal_papers.py --inputs /ssd/wangyuyang/git/data/raw_data/nature_springer_2025.csv --output outputs/querycentric_2025_10_v1/raw_2025_candidates.jsonl --year-eq 2025 --limit 60", "elapsed_sec": 6.8295, "real_sec": 6.8295, "max_rss_kb": 0, "exit_code": 0}

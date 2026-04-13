@@ -1,0 +1,4 @@
+{"stage": "stage0", "command": "prepare_nature_nc_2023_candidates", "start_epoch": 1776049212, "end_epoch": 1776049216, "elapsed_sec": 4.0, "real_sec": 4.76, "user_sec": 7.88, "sys_sec": 0.78, "max_rss_kb": 500744, "exit_code": 0}
+{"stage": "stage1", "command": "classify_nature_nc_2023_candidates", "start_epoch": 1776049216, "end_epoch": 1776053426, "elapsed_sec": 4210.0, "real_sec": 4209.21, "user_sec": 89.22, "sys_sec": 7.86, "max_rss_kb": 814972, "exit_code": 0}
+{"stage": "stage2", "command": "extract_nature_nc_2023_crossdisc", "start_epoch": 1776053426, "end_epoch": 1776068298, "elapsed_sec": 14872.0, "real_sec": 14872.28, "user_sec": 7754.19, "sys_sec": 705.14, "max_rss_kb": 4365612, "exit_code": 0}
+{"stage": "stage3", "command": "build_nature_nc_2023_gt_dataset", "start_epoch": 1776068299, "end_epoch": 1776071289, "elapsed_sec": 2990.0, "real_sec": 2990.74, "user_sec": 2073.77, "sys_sec": 4.46, "max_rss_kb": 204288, "exit_code": 0}

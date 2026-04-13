@@ -1,0 +1,655 @@
+{
+  "source_dir": "/ssd/wangyuyang/git/benchmark/outputs/querycentric_2025_multijournal_300_v1",
+  "validity_input": "/ssd/wangyuyang/git/benchmark/outputs/querycentric_2025_multijournal_300_v1/hypothesis_validity_2025_query_existing.json",
+  "sample_size": 10,
+  "unique_journals": 8,
+  "journal_tier_definition": {
+    "5": "Nature flagship journal",
+    "4": "Nature-branded subject journals, e.g. Nature Medicine/Methods/Energy",
+    "3": "Communications series or Scientific Data",
+    "2": "npj series or Scientific Reports",
+    "1": "other Springer Nature journals",
+    "note": "This is a local proxy tier, not an external JCR/CiteScore ranking."
+  },
+  "excluded_score_fields_reason": "OPENAI_API_KEY was unavailable; LLM subjective fields innovation/scientificity/legacy_feasibility were mock/random, and feasibility/testability collapsed to zero. Correlations therefore use objective non-mock path metrics only.",
+  "objective_composite_components": [
+    "score_chain_coherence",
+    "score_concept_f1",
+    "score_concept_recall",
+    "score_remote_association_index",
+    "score_embedding_bridging",
+    "score_bridging",
+    "score_factual_precision"
+  ],
+  "metric_stats": {
+    "score_atypical_combination": {
+      "mean": 0.8767603128214165,
+      "std": 1.1102230246251565e-16,
+      "unique_values": 1
+    },
+    "score_bridging": {
+      "mean": 0.9631666944166944,
+      "std": 0.03196333091357777,
+      "unique_values": 8
+    },
+    "score_causal_direction_accuracy": {
+      "mean": 0.0,
+      "std": 0.0,
+      "unique_values": 1
+    },
+    "score_chain_coherence": {
+      "mean": 0.5767311904761905,
+      "std": 0.02168462794113787,
+      "unique_values": 10
+    },
+    "score_concept_f1": {
+      "mean": 0.29555238095238096,
+      "std": 0.03773019320904463,
+      "unique_values": 10
+    },
+    "score_concept_precision": {
+      "mean": 0.9708333333333332,
+      "std": 0.045833333333333344,
+      "unique_values": 3
+    },
+    "score_concept_recall": {
+      "mean": 0.17539738095238094,
+      "std": 0.026087797241417243,
+      "unique_values": 10
+    },
+    "score_consistency": {
+      "mean": 0.0,
+      "std": 0.0,
+      "unique_values": 1
+    },
+    "score_consistency_f1": {
+      "mean": 0.0,
+      "std": 0.0,
+      "unique_values": 1
+    },
+    "score_consistency_precision": {
+      "mean": 0.0,
+      "std": 0.0,
+      "unique_values": 1
+    },
+    "score_consistency_recall": {
+      "mean": 0.0,
+      "std": 0.0,
+      "unique_values": 1
+    },
+    "score_disciplinary_leap_index": {
+      "mean": 0.0,
+      "std": 0.0,
+      "unique_values": 1
+    },
+    "score_discipline_balance": {
+      "mean": 0.0,
+      "std": 0.0,
+      "unique_values": 1
+    },
+    "score_embedding_bridging": {
+      "mean": 0.9381683333333333,
+      "std": 0.0527824683909766,
+      "unique_values": 8
+    },
+    "score_evidence_coverage": {
+      "mean": 0.011666666666666665,
+      "std": 0.034999999999999996,
+      "unique_values": 2
+    },
+    "score_factual_precision": {
+      "mean": 0.961115,
+      "std": 0.06110500000000001,
+      "unique_values": 3
+    },
+    "score_feasibility": {
+      "mean": 0.0,
+      "std": 0.0,
+      "unique_values": 1
+    },
+    "score_feasibility_data": {
+      "mean": 0.0,
+      "std": 0.0,
+      "unique_values": 1
+    },
+    "score_feasibility_method": {
+      "mean": 0.0,
+      "std": 0.0,
+      "unique_values": 1
+    },
+    "score_feasibility_resource": {
+      "mean": 0.0,
+      "std": 0.0,
+      "unique_values": 1
+    },
+    "score_feasibility_validation": {
+      "mean": 0.0,
+      "std": 0.0,
+      "unique_values": 1
+    },
+    "score_hallucination_rate": {
+      "mean": 0.029166666666666664,
+      "std": 0.04583333333333334,
+      "unique_values": 3
+    },
+    "score_info_novelty": {
+      "mean": 1.0,
+      "std": 0.0,
+      "unique_values": 1
+    },
+    "score_innovation": {
+      "mean": 7.21452380952381,
+      "std": 0.48201138713132385,
+      "unique_values": 10
+    },
+    "score_legacy_feasibility": {
+      "mean": 6.351904761904762,
+      "std": 0.6823867676620583,
+      "unique_values": 8
+    },
+    "score_novelty_convention_balance": {
+      "mean": 0.0,
+      "std": 0.0,
+      "unique_values": 1
+    },
+    "score_path_alignment_best": {
+      "mean": 0.0,
+      "std": 0.0,
+      "unique_values": 1
+    },
+    "score_path_alignment_mean": {
+      "mean": 0.0,
+      "std": 0.0,
+      "unique_values": 1
+    },
+    "score_rao_stirling": {
+      "mean": 0.0,
+      "std": 0.0,
+      "unique_values": 1
+    },
+    "score_relation_precision": {
+      "mean": 0.03888666666666667,
+      "std": 0.11665999999999999,
+      "unique_values": 2
+    },
+    "score_relation_type_accuracy": {
+      "mean": 0.0,
+      "std": 0.0,
+      "unique_values": 1
+    },
+    "score_remote_association_index": {
+      "mean": 0.9399247619047619,
+      "std": 0.018841300740804583,
+      "unique_values": 10
+    },
+    "score_scientificity": {
+      "mean": 7.668809523809524,
+      "std": 0.5151837947797153,
+      "unique_values": 9
+    },
+    "score_testability": {
+      "mean": 0.0,
+      "std": 0.0,
+      "unique_values": 1
+    }
+  },
+  "correlations": {
+    "journal_tier": {
+      "objective_hypothesis_score": {
+        "n": 10,
+        "spearman": 0.15790840679034454,
+        "pearson": 0.37306746115454
+      },
+      "score_bridging": {
+        "n": 10,
+        "spearman": 0.6793963602893714,
+        "pearson": 0.7178004551854021
+      },
+      "score_chain_coherence": {
+        "n": 10,
+        "spearman": 0.40135053392545905,
+        "pearson": 0.5348141056161745
+      },
+      "score_concept_f1": {
+        "n": 10,
+        "spearman": -0.4934637712198267,
+        "pearson": -0.39653188116220567
+      },
+      "score_concept_precision": {
+        "n": 10,
+        "spearman": -0.1707825127659933,
+        "pearson": -0.1688311688311691
+      },
+      "score_concept_recall": {
+        "n": 10,
+        "spearman": -0.4934637712198267,
+        "pearson": -0.39613615638978844
+      },
+      "score_embedding_bridging": {
+        "n": 10,
+        "spearman": 0.6793963602893714,
+        "pearson": 0.7209238979745791
+      },
+      "score_evidence_coverage": {
+        "n": 10,
+        "spearman": -0.06299407883487121,
+        "pearson": -0.04761904761904761
+      },
+      "score_factual_precision": {
+        "n": 10,
+        "spearman": -0.1707825127659933,
+        "pearson": -0.16883116883116883
+      },
+      "score_hallucination_rate": {
+        "n": 10,
+        "spearman": 0.1707825127659933,
+        "pearson": 0.16883116883116897
+      },
+      "score_relation_precision": {
+        "n": 10,
+        "spearman": -0.06299407883487121,
+        "pearson": -0.047619047619047644
+      },
+      "score_remote_association_index": {
+        "n": 10,
+        "spearman": 0.1842264745887353,
+        "pearson": 0.08888419651007198
+      }
+    },
+    "fwci": {
+      "objective_hypothesis_score": {
+        "n": 10,
+        "spearman": 0.44242424242424244,
+        "pearson": 0.3075516624212919
+      },
+      "score_bridging": {
+        "n": 10,
+        "spearman": 0.49696992650327754,
+        "pearson": 0.30980741940402173
+      },
+      "score_chain_coherence": {
+        "n": 10,
+        "spearman": 0.7575757575757576,
+        "pearson": 0.5480937444733182
+      },
+      "score_concept_f1": {
+        "n": 10,
+        "spearman": -0.15151515151515152,
+        "pearson": -0.12747798150331427
+      },
+      "score_concept_precision": {
+        "n": 10,
+        "spearman": -0.08989331499509895,
+        "pearson": 0.24333785101567718
+      },
+      "score_concept_recall": {
+        "n": 10,
+        "spearman": -0.11515151515151516,
+        "pearson": -0.1393401711008999
+      },
+      "score_embedding_bridging": {
+        "n": 10,
+        "spearman": 0.49696992650327754,
+        "pearson": 0.29648266901406517
+      },
+      "score_evidence_coverage": {
+        "n": 10,
+        "spearman": 0.5222329678670935,
+        "pearson": 0.7036284057981721
+      },
+      "score_factual_precision": {
+        "n": 10,
+        "spearman": -0.08989331499509895,
+        "pearson": 0.2433378510156775
+      },
+      "score_hallucination_rate": {
+        "n": 10,
+        "spearman": 0.08989331499509895,
+        "pearson": -0.24333785101567723
+      },
+      "score_relation_precision": {
+        "n": 10,
+        "spearman": 0.5222329678670935,
+        "pearson": 0.703628405798172
+      },
+      "score_remote_association_index": {
+        "n": 10,
+        "spearman": 0.030303030303030304,
+        "pearson": -0.21490176682259976
+      }
+    },
+    "cited_by_count": {
+      "objective_hypothesis_score": {
+        "n": 10,
+        "spearman": 0.6565379871744698,
+        "pearson": 0.6252912208919129
+      },
+      "score_bridging": {
+        "n": 10,
+        "spearman": 0.5600238595129264,
+        "pearson": 0.6097847710985844
+      },
+      "score_chain_coherence": {
+        "n": 10,
+        "spearman": 0.5957474328064633,
+        "pearson": 0.4152473423150095
+      },
+      "score_concept_f1": {
+        "n": 10,
+        "spearman": 0.12766016417281356,
+        "pearson": 0.08650838175346082
+      },
+      "score_concept_precision": {
+        "n": 10,
+        "spearman": -0.38320959473365873,
+        "pearson": -0.17908182007038503
+      },
+      "score_concept_recall": {
+        "n": 10,
+        "spearman": 0.21884599572482324,
+        "pearson": 0.08710545529894856
+      },
+      "score_embedding_bridging": {
+        "n": 10,
+        "spearman": 0.5600238595129264,
+        "pearson": 0.6123853261244803
+      },
+      "score_evidence_coverage": {
+        "n": 10,
+        "spearman": 0.29101262323732424,
+        "pearson": 0.13709926884509263
+      },
+      "score_factual_precision": {
+        "n": 10,
+        "spearman": -0.38320959473365873,
+        "pearson": -0.179081820070384
+      },
+      "score_hallucination_rate": {
+        "n": 10,
+        "spearman": 0.38320959473365873,
+        "pearson": 0.17908182007038437
+      },
+      "score_relation_precision": {
+        "n": 10,
+        "spearman": 0.29101262323732424,
+        "pearson": 0.13709926884509258
+      },
+      "score_remote_association_index": {
+        "n": 10,
+        "spearman": 0.46200821319684904,
+        "pearson": 0.265030877421808
+      }
+    }
+  },
+  "tier_summary": [
+    {
+      "journal_tier": 5,
+      "journal_tier_label": "T5 flagship Nature",
+      "paper_count": 3,
+      "journal_count": 1,
+      "objective_hypothesis_score_mean": 0.6173424956373003,
+      "objective_hypothesis_score_std": 0.0650028683288494,
+      "fwci_mean": 738.02220931,
+      "cited_by_count_mean": 165.0,
+      "chain_coherence_mean": 0.5845039682539682,
+      "concept_f1_mean": 0.258363492063492,
+      "remote_association_mean": 0.9469769841269841
+    },
+    {
+      "journal_tier": 4,
+      "journal_tier_label": "T4 Nature subject journal",
+      "paper_count": 5,
+      "journal_count": 5,
+      "objective_hypothesis_score_mean": 0.6251621095146612,
+      "objective_hypothesis_score_std": 0.1603506324934915,
+      "fwci_mean": 586.44884025,
+      "cited_by_count_mean": 136.8,
+      "chain_coherence_mean": 0.58364,
+      "concept_f1_mean": 0.31923333333333337,
+      "remote_association_mean": 0.9338066666666667
+    },
+    {
+      "journal_tier": 3,
+      "journal_tier_label": "T3 Communications / Scientific Data",
+      "paper_count": 2,
+      "journal_count": 2,
+      "objective_hypothesis_score_mean": 0.4377753343537172,
+      "objective_hypothesis_score_std": 0.24182370060540032,
+      "fwci_mean": 258.67189666499996,
+      "cited_by_count_mean": 105.5,
+      "chain_coherence_mean": 0.5478000000000001,
+      "concept_f1_mean": 0.29213333333333336,
+      "remote_association_mean": 0.9446416666666666
+    }
+  ],
+  "journal_summary": [
+    {
+      "journal": "Nature",
+      "journal_tier": 5,
+      "journal_tier_label": "T5 flagship Nature",
+      "paper_count": 3,
+      "objective_hypothesis_score_mean": 0.6173424956373003,
+      "fwci_mean": 738.02220931,
+      "cited_by_count_mean": 165.0,
+      "chain_coherence_mean": 0.5845039682539682,
+      "concept_f1_mean": 0.258363492063492,
+      "remote_association_mean": 0.9469769841269841
+    },
+    {
+      "journal": "Nature Energy",
+      "journal_tier": 4,
+      "journal_tier_label": "T4 Nature subject journal",
+      "paper_count": 1,
+      "objective_hypothesis_score_mean": 0.8080635799433497,
+      "fwci_mean": 335.03649574,
+      "cited_by_count_mean": 205.0,
+      "chain_coherence_mean": 0.5929333333333334,
+      "concept_f1_mean": 0.32583333333333336,
+      "remote_association_mean": 0.9591333333333333
+    },
+    {
+      "journal": "Nature Human Behaviour",
+      "journal_tier": 4,
+      "journal_tier_label": "T4 Nature subject journal",
+      "paper_count": 1,
+      "objective_hypothesis_score_mean": 0.698256668451062,
+      "fwci_mean": 1638.85859802,
+      "cited_by_count_mean": 158.0,
+      "chain_coherence_mean": 0.6002333333333333,
+      "concept_f1_mean": 0.3333,
+      "remote_association_mean": 0.9254833333333332
+    },
+    {
+      "journal": "Nature Medicine",
+      "journal_tier": 4,
+      "journal_tier_label": "T4 Nature subject journal",
+      "paper_count": 1,
+      "objective_hypothesis_score_mean": 0.6978517576560817,
+      "fwci_mean": 380.46155358,
+      "cited_by_count_mean": 102.0,
+      "chain_coherence_mean": 0.5769666666666667,
+      "concept_f1_mean": 0.30893333333333334,
+      "remote_association_mean": 0.9386
+    },
+    {
+      "journal": "Nature Methods",
+      "journal_tier": 4,
+      "journal_tier_label": "T4 Nature subject journal",
+      "paper_count": 1,
+      "objective_hypothesis_score_mean": 0.5095666639598508,
+      "fwci_mean": 420.92729636,
+      "cited_by_count_mean": 120.0,
+      "chain_coherence_mean": 0.6030333333333333,
+      "concept_f1_mean": 0.30140000000000006,
+      "remote_association_mean": 0.9242666666666666
+    },
+    {
+      "journal": "Nature Machine Intelligence",
+      "journal_tier": 4,
+      "journal_tier_label": "T4 Nature subject journal",
+      "paper_count": 1,
+      "objective_hypothesis_score_mean": 0.4120718775629618,
+      "fwci_mean": 156.96025755,
+      "cited_by_count_mean": 99.0,
+      "chain_coherence_mean": 0.5450333333333334,
+      "concept_f1_mean": 0.3267,
+      "remote_association_mean": 0.92155
+    },
+    {
+      "journal": "Communications Earth & Environment",
+      "journal_tier": 3,
+      "journal_tier_label": "T3 Communications / Scientific Data",
+      "paper_count": 1,
+      "objective_hypothesis_score_mean": 0.6087705129034212,
+      "fwci_mean": 315.24160806,
+      "cited_by_count_mean": 112.0,
+      "chain_coherence_mean": 0.537,
+      "concept_f1_mean": 0.34415,
+      "remote_association_mean": 0.9722166666666666
+    },
+    {
+      "journal": "Scientific Data",
+      "journal_tier": 3,
+      "journal_tier_label": "T3 Communications / Scientific Data",
+      "paper_count": 1,
+      "objective_hypothesis_score_mean": 0.2667801558040132,
+      "fwci_mean": 202.10218527,
+      "cited_by_count_mean": 99.0,
+      "chain_coherence_mean": 0.5586000000000001,
+      "concept_f1_mean": 0.24011666666666664,
+      "remote_association_mean": 0.9170666666666666
+    }
+  ],
+  "paper_table": [
+    {
+      "paper_id": "2225d7c27bc7",
+      "title": "A generative model for inorganic materials design",
+      "journal": "Nature",
+      "journal_tier": 5,
+      "journal_tier_label": "T5 flagship Nature",
+      "objective_hypothesis_score": 0.6906441134102896,
+      "fwci": 378.92425813,
+      "cited_by_count": 239,
+      "score_chain_coherence": 0.5821666666666666,
+      "score_concept_f1": 0.2759,
+      "score_remote_association_index": 0.9380333333333333
+    },
+    {
+      "paper_id": "02a29846bd79",
+      "title": "Impacts of climate change on global agriculture accounting for adaptation",
+      "journal": "Nature",
+      "journal_tier": 5,
+      "journal_tier_label": "T5 flagship Nature",
+      "objective_hypothesis_score": 0.5946748021002067,
+      "fwci": 1499.28027669,
+      "cited_by_count": 109,
+      "score_chain_coherence": 0.5925285714285714,
+      "score_concept_f1": 0.23135714285714284,
+      "score_remote_association_index": 0.9348142857142856
+    },
+    {
+      "paper_id": "1cda11f2340e",
+      "title": "Towards conversational diagnostic artificial intelligence",
+      "journal": "Nature",
+      "journal_tier": 5,
+      "journal_tier_label": "T5 flagship Nature",
+      "objective_hypothesis_score": 0.5667085714014044,
+      "fwci": 335.86209311,
+      "cited_by_count": 147,
+      "score_chain_coherence": 0.5788166666666666,
+      "score_concept_f1": 0.2678333333333333,
+      "score_remote_association_index": 0.9680833333333334
+    },
+    {
+      "paper_id": "36f2e3b6d5ea",
+      "title": "The green hydrogen ambition and implementation gap",
+      "journal": "Nature Energy",
+      "journal_tier": 4,
+      "journal_tier_label": "T4 Nature subject journal",
+      "objective_hypothesis_score": 0.8080635799433497,
+      "fwci": 335.03649574,
+      "cited_by_count": 205,
+      "score_chain_coherence": 0.5929333333333334,
+      "score_concept_f1": 0.32583333333333336,
+      "score_remote_association_index": 0.9591333333333333
+    },
+    {
+      "paper_id": "5687efdb42d8",
+      "title": "Trust in scientists and their role in society across 68 countries",
+      "journal": "Nature Human Behaviour",
+      "journal_tier": 4,
+      "journal_tier_label": "T4 Nature subject journal",
+      "objective_hypothesis_score": 0.698256668451062,
+      "fwci": 1638.85859802,
+      "cited_by_count": 158,
+      "score_chain_coherence": 0.6002333333333333,
+      "score_concept_f1": 0.3333,
+      "score_remote_association_index": 0.9254833333333332
+    },
+    {
+      "paper_id": "3f8dfd6b86e1",
+      "title": "Integrating the environmental and genetic architectures of aging and mortality",
+      "journal": "Nature Medicine",
+      "journal_tier": 4,
+      "journal_tier_label": "T4 Nature subject journal",
+      "objective_hypothesis_score": 0.6978517576560817,
+      "fwci": 380.46155358,
+      "cited_by_count": 102,
+      "score_chain_coherence": 0.5769666666666667,
+      "score_concept_f1": 0.30893333333333334,
+      "score_remote_association_index": 0.9386
+    },
+    {
+      "paper_id": "f4a1a43168be",
+      "title": "Segment Anything for Microscopy",
+      "journal": "Nature Methods",
+      "journal_tier": 4,
+      "journal_tier_label": "T4 Nature subject journal",
+      "objective_hypothesis_score": 0.5095666639598508,
+      "fwci": 420.92729636,
+      "cited_by_count": 120,
+      "score_chain_coherence": 0.6030333333333333,
+      "score_concept_f1": 0.30140000000000006,
+      "score_remote_association_index": 0.9242666666666666
+    },
+    {
+      "paper_id": "ca020fae5692",
+      "title": "The design space of E(3)-equivariant atom-centred interatomic potentials",
+      "journal": "Nature Machine Intelligence",
+      "journal_tier": 4,
+      "journal_tier_label": "T4 Nature subject journal",
+      "objective_hypothesis_score": 0.4120718775629618,
+      "fwci": 156.96025755,
+      "cited_by_count": 99,
+      "score_chain_coherence": 0.5450333333333334,
+      "score_concept_f1": 0.3267,
+      "score_remote_association_index": 0.92155
+    },
+    {
+      "paper_id": "0255ab1bc1d2",
+      "title": "Complexities of the global plastics supply chain revealed in a trade-linked material flow analysis",
+      "journal": "Communications Earth & Environment",
+      "journal_tier": 3,
+      "journal_tier_label": "T3 Communications / Scientific Data",
+      "objective_hypothesis_score": 0.6087705129034212,
+      "fwci": 315.24160806,
+      "cited_by_count": 112,
+      "score_chain_coherence": 0.537,
+      "score_concept_f1": 0.34415,
+      "score_remote_association_index": 0.9722166666666666
+    },
+    {
+      "paper_id": "dfb1e5f6e06d",
+      "title": "GLEAM4: global land evaporation and soil moisture dataset at 0.1° resolution from 1980 to near present",
+      "journal": "Scientific Data",
+      "journal_tier": 3,
+      "journal_tier_label": "T3 Communications / Scientific Data",
+      "objective_hypothesis_score": 0.2667801558040132,
+      "fwci": 202.10218527,
+      "cited_by_count": 99,
+      "score_chain_coherence": 0.5586000000000001,
+      "score_concept_f1": 0.24011666666666664,
+      "score_remote_association_index": 0.9170666666666666
+    }
+  ]
+}

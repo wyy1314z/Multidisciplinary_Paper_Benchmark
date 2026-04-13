@@ -1,0 +1,3248 @@
+[
+  {
+    "title": "MIMIC-IV, a freely accessible electronic health record dataset",
+    "abstract": "Abstract Digital data collection during routine clinical practice is now ubiquitous within hospitals. The data contains valuable information on the care of patients and their response to treatments, offering exciting opportunities for research. Typically, data are stored within archival systems that are not intended to support research. These systems are often inaccessible to researchers and structured for optimal storage, rather than interpretability and analysis. Here we present MIMIC-IV, a publicly available database sourced from the electronic health record of the Beth Israel Deaconess Medical Center. Information available includes patient measurements, orders, diagnoses, procedures, treatments, and deidentified free-text clinical notes. MIMIC-IV is intended to support a wide array of research studies and educational material, helping to reduce barriers to conducting clinical research.",
+    "pdf_url": "https://doi.org/10.1038/s41597-022-01899-x",
+    "primary": "基础医学",
+    "secondary": "临床医学, 计算机科学技术",
+    "secondary_list": [
+      "临床医学",
+      "计算机科学技术"
+    ],
+    "introduction": "oPEN\n\nData DESCRIPto R\n\nMIMIC-IV, a freely accessible \nelectronic health record dataset\n\nalistair E. W. Johnson1,2 ✉, Lucas Bulgarelli \nSteven Horng \nLi-wei H. Lehman1, Leo a. Celi \n\n 3, tom J. Pollard \n\n 1,3 & Roger G. Mark \n\n 1\n\n 1, Lu Shen3, alvin Gayles3, ayad Shammout3, \n\n 1, Sicheng Hao1, Benjamin Moody1, Brian Gow \n\n 1, \n\nDigital data collection during routine clinical practice is now ubiquitous within hospitals. the data \ncontains valuable information on the care of patients and their response to treatments, offering exciting \nopportunities for research. typically, data are stored within archival systems that are not intended \nto support research. these systems are often inaccessible to researchers and structured for optimal \nstorage, rather than interpretability and analysis. Here we present MIMIC-IV, a publicly available \ndatabase sourced from the electronic health record of the Beth Israel Deaconess Medical Center. \nInformation available includes patient measurements, orders, diagnoses, procedures, treatments, and \ndeidentified free-text clinical notes. MIMIC-IV is intended to support a wide array of research studies \nand educational material, helping to reduce barriers to conducting clinical research.\n\nBackground\nThanks to the widespread adoption of electronic health record systems, data collected during routine clinical \npractice is now digitally stored in hospitals across the United States. Despite widespread storage of this data, \narchiving systems are often not designed to support research, making them difficult to navigate and access. In \naddition, routinely collected clinical data is often sporadic and noisy, reflecting the processes by which it was \ngenerated, where quality of data collection is understandably peripheral to the act of providing high quality care.\nThe intensive care unit (ICU) is an especially data-rich environment as patients require close monitoring. \nThe typically acute nature of ICU patient illness and the importance of immediate intervention also make the \nenvironment of high-interest to researchers. Uniquely, there are a number of publicly available critical care data-\nsets which have enabled research in this area. These projects largely build upon MIMIC, a waveform database \nwith demographics digitally transcribed from paper records for over 90 patients1. MIMIC-II followed with a \nsignificantly increased sample size and breadth of information due to the clinical information being entirely \nsourced from various digital information systems2. More recently, MIMIC-III was published in 2015 and sig-\nnificantly expanded MIMIC-II, containing data for over 40,000 patients3. Outside of the MIMIC projects, a \nnumber of other critical care datasets have been made available to the worldwide research community. The \neICU Collaborative Research Database (eICU-CRD) v2.0 comprises of 200,859 stays at ICUs and step-down \nunits across 208 hospitals in the continental United States4. The AmsterdamUMCdb provides granular infor-\nmation for 23,106 admissions of 20,109 unique individuals admitted to a single academic medical center in \nthe Netherlands5. The HiRID database contains high-resolution data for almost 34,000 admissions between \n2008–2016 at Bern University Hospital in Switzerland6,7. HiRID contains 712 routinely collected physiological \nvariables with one data entry every two minutes. The Pediatric Intensive Care (PIC) database is sourced from \nThe Children’s Hospital at Zhejiang University School of Medicine with 12,881 patients and 13,941 ICU stays \nadmitted from 2010–20188.\n\nAlthough the increasing number of datasets publicly available for research is encouraging, a number of \nareas for improvement remain. Data content varies considerably across datasets, with each having a particular \nstrength. HiRID contains high resolution physiologic variables, eICU-CRD spans hundreds of distinct hospi-\ntals, while PIC contains pediatric patients. Clinical practice evolves quickly, requiring continual updating of \nthe resources in order for derivative research to remain relevant. Finally, most datasets comprise of only one \nmodality of information, clinical observations, and omit other important domains such as imaging, free-text, \nphysiologic waveforms, and genomics.\n\n1Massachusetts institute of technology, cambridge, MA, USA. 2the Hospital for Sick children, toronto, On, canada. \n3Beth israel Deaconess Medical center, Boston, MA, USA. ✉e-mail: aewj@mit.edu\n\nScientific Data | (2023) 10:1 | https://doi.org/10.1038/s41597-022-01899-x\n\n1\n\nwww.nature.com/scientificdata\fFig. 1 An overview of the development process for MIMIC. Data are acquired from the BIDMC data \nwarehouse, the ICU information system (MetaVision), and external sources (“acquisition”). Structured Query \nLanguage (SQL) scripts merge the various data sources into a single schema (“transformation”). Finally, \ndeidentification algorithms are applied to selectively remove protected health information from the reformatted \nschema. Tables present in MIMIC-IV are provided on the far right of the figure under their respective module. \nIssues raised on the MIMIC Code Repository are assessed and used to improve the build process as appropriate.\n\nIn this paper we describe the public release of MIMIC-IV, a contemporary electronic health record dataset \ncovering a decade of admissions between 2008 and 2019. MIMIC-IV complements the growing area of publicly \naccessible critical care datasets in a number of ways. First, MIMIC-IV is contemporary, containing information \nfrom 2008–2019. Second, MIMIC-IV incorporates new precise digital information sources such as the elec-\ntronic medicine administration record. Third, MIMIC-IV establishes a modular organization of the constituent \ndata allowing linking of the database to external departments and distinct modalities of data.\n\nMethods\nMIMIC-IV is the result of a collaboration between Beth Israel Deaconess Medical Center (BIDMC) and \nMassachusetts Institute of Technology (MIT",
+    "journal": "Scientific Data",
+    "journal_id": "https://openalex.org/S2607323502",
+    "issn_l": "2052-4463",
+    "source_type": "journal",
+    "doi": "https://doi.org/10.1038/s41597-022-01899-x",
+    "publication_date": "2023-01-03",
+    "publication_year": 2023,
+    "fwci": 564.5287817,
+    "cited_by_count": 2205,
+    "field": "Machine Learning in Healthcare",
+    "parsed": {
+      "meta": {
+        "title": "MIMIC-IV, a freely accessible electronic health record dataset",
+        "primary": "基础医学",
+        "secondary_list": [
+          "临床医学",
+          "计算机科学技术"
+        ],
+        "journal": "Scientific Data",
+        "journal_id": "https://openalex.org/S2607323502",
+        "issn_l": "2052-4463",
+        "source_type": "journal",
+        "doi": "https://doi.org/10.1038/s41597-022-01899-x",
+        "publication_date": "2023-01-03",
+        "publication_year": 2023,
+        "fwci": 564.5287817,
+        "cited_by_count": 2205,
+        "field": "Machine Learning in Healthcare"
+      },
+      "概念": {
+        "主学科": [
+          {
+            "term": "electronic health record",
+            "normalized": "电子健康记录",
+            "std_label": null,
+            "evidence": "a publicly available database sourced from the electronic health record of the Beth Israel Deaconess Medical Center",
+            "source": "abstract",
+            "confidence": 0.95
+          },
+          {
+            "term": "patient measurements",
+            "normalized": "患者测量数据",
+            "std_label": null,
+            "evidence": "Information available includes patient measurements, orders, diagnoses, procedures, treatments, and deidentified free-text clinical notes",
+            "source": "abstract",
+            "confidence": 0.9
+          },
+          {
+            "term": "physiologic variables",
+            "normalized": "生理变量",
+            "std_label": null,
+            "evidence": "HiRID contains high resolution physiologic variables",
+            "source": "introduction",
+            "confidence": 0.85
+          },
+          {
+            "term": "clinical data",
+            "normalized": "临床数据",
+            "std_label": null,
+            "evidence": "clinically collected clinical data is often sporadic and noisy",
+            "source": "introduction",
+            "confidence": 0.88
+          },
+          {
+            "term": "protected health information",
+            "normalized": "受保护的健康信息",
+            "std_label": null,
+            "evidence": "deidentification algorithms...selectively remove protected health information",
+            "source": "introduction",
+            "confidence": 0.92
+          },
+          {
+            "term": "waveform database",
+            "normalized": "波形数据库",
+            "std_label": null,
+            "evidence": "These projects largely build upon MIMIC, a waveform database with demographics digitally transcribed",
+            "source": "introduction",
+            "confidence": 0.87
+          },
+          {
+            "term": "data modalities",
+            "normalized": "数据模态",
+            "std_label": null,
+            "evidence": "omit other important domains such as imaging, free-text, physiologic waveforms, and genomics",
+            "source": "introduction",
+            "confidence": 0.83
+          },
+          {
+            "term": "demographics",
+            "normalized": "人口统计学数据",
+            "std_label": null,
+            "evidence": "waveform database with demographics digitally transcribed",
+            "source": "introduction",
+            "confidence": 0.85
+          },
+          {
+            "term": "sample size",
+            "normalized": "样本量",
+            "std_label": null,
+            "evidence": "MIMIC-II followed with a significantly increased sample size",
+            "source": "introduction",
+            "confidence": 0.88
+          },
+          {
+            "term": "data warehouse",
+            "normalized": "数据仓库",
+            "std_label": null,
+            "evidence": "Data are acquired from the BIDMC data warehouse",
+            "source": "introduction",
+            "confidence": 0.9
+          }
+        ],
+        "辅学科": {
+          "临床医学": [
+            {
+              "term": "intensive care unit",
+              "normalized": "重症监护病房",
+              "std_label": null,
+              "evidence": "The intensive care unit (ICU) is an especially data-rich environment",
+              "source": "introduction",
+              "confidence": 0.95
+            },
+            {
+              "term": "clinical practice",
+              "normalized": "临床实践",
+              "std_label": null,
+              "evidence": "Digital data collection during routine clinical practice is now ubiquitous",
+              "source": "abstract",
+              "confidence": 0.92
+            },
+            {
+              "term": "diagnoses",
+              "normalized": "诊断",
+              "std_label": null,
+              "evidence": "Information available includes patient measurements, orders, diagnoses, procedures, treatments",
+              "source": "abstract",
+              "confidence": 0.9
+            },
+            {
+              "term": "deidentified free-text clinical notes",
+              "normalized": "去标识化自由文本临床记录",
+              "std_label": null,
+              "evidence": "treatments, and deidentified free-text clinical notes",
+              "source": "abstract",
+              "confidence": 0.93
+            },
+            {
+              "term": "eICU Collaborative Research Database",
+              "normalized": "协作研究数据库",
+              "std_label": null,
+              "evidence": "The eICU Collaborative Research Database (eICU-CRD) v2.0 comprises of 200,859 stays",
+              "source": "introduction",
+              "confidence": 0.94
+            },
+            {
+              "term": "Pediatric Intensive Care database",
+              "normalized": "儿科重症监护数据库",
+              "std_label": null,
+              "evidence": "The Pediatric Intensive Care (PIC) database is sourced from The Children’s Hospital",
+              "source": "introduction",
+              "confidence": 0.91
+            },
+            {
+              "term": "clinical observations",
+              "normalized": "临床观察",
+              "std_label": null,
+              "evidence": "most datasets comprise of only one modality of information, clinical observations",
+              "source": "introduction",
+              "confidence": 0.87
+            },
+            {
+              "term": "hospital admissions",
+              "normalized": "医院入院",
+              "std_label": null,
+              "evidence": "MIMIC-IV...covering a decade of admissions between 2008 and 2019",
+              "source": "introduction",
+              "confidence": 0.89
+            },
+            {
+              "term": "quality of care",
+              "normalized": "护理质量",
+              "std_label": null,
+              "evidence": "quality of data collection is understandably peripheral to the act of providing high quality care",
+              "source": "introduction",
+              "confidence": 0.85
+            }
+          ],
+          "计算机科学技术": [
+            {
+              "term": "Structured Query Language",
+              "normalized": "结构化查询语言",
+              "std_label": "SQL",
+              "evidence": "Structured Query Language (SQL) scripts merge the various data sources",
+              "source": "introduction",
+              "confidence": 0.96
+            },
+            {
+              "term": "deidentification algorithms",
+              "normalized": "去识别化算法",
+              "std_label": null,
+              "evidence": "deidentification algorithms are applied to selectively remove protected health information",
+              "source": "introduction",
+              "confidence": 0.94
+            },
+            {
+              "term": "modular organization",
+              "normalized": "模块化组织",
+              "std_label": null,
+              "evidence": "MIMIC-IV establishes a modular organization of the constituent data",
+              "source": "introduction",
+              "confidence": 0.92
+            },
+            {
+              "term": "data schema",
+              "normalized": "数据模式",
+              "std_label": null,
+              "evidence": "SQL scripts merge...into a single schema",
+              "source": "introduction",
+              "confidence": 0.89
+            },
+            {
+              "term": "digital information systems",
+              "normalized": "数字信息系统",
+              "std_label": null,
+              "evidence": "MIMIC-II...information being entirely sourced from various digital information systems",
+              "source": "introduction",
+              "confidence": 0.88
+            },
+            {
+              "term": "data repository",
+              "normalized": "数据存储库",
+              "std_label": null,
+              "evidence": "Issues raised on the MIMIC Code Repository are assessed",
+              "source": "introduction",
+              "confidence": 0.86
+            },
+            {
+              "term": "data integration",
+              "normalized": "数据整合",
+              "std_label": null,
+              "evidence": "SQL scripts merge the various data sources into a single schema",
+              "source": "introduction",
+              "confidence": 0.9
+            },
+            {
+              "term": "high-resolution data",
+              "normalized": "高分辨率数据",
+              "std_label": null,
+              "evidence": "HiRID contains high-resolution data for almost 34,000 admissions",
+              "source": "introduction",
+              "confidence": 0.91
+            },
+            {
+              "term": "data acquisition",
+              "normalized": "数据采集",
+              "std_label": null,
+              "evidence": "Data are acquired from the BIDMC data warehouse, the ICU information system",
+              "source": "introduction",
+              "confidence": 0.89
+            },
+            {
+              "term": "database schema",
+              "normalized": "数据库模式",
+              "std_label": null,
+              "evidence": "merge the various data sources into a single schema",
+              "source": "introduction",
+              "confidence": 0.87
+            }
+          ]
+        }
+      },
+      "跨学科关系": [
+        {
+          "head": "Structured Query Language",
+          "relation": "merges various data sources into a single schema",
+          "relation_type": "method_applied_to",
+          "relation_type_norm": "method_applied_to",
+          "relation_type_raw": "method_applied_to",
+          "tail": "data warehouse",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "Structured Query Language (SQL) scripts merge the various data sources into a single schema",
+          "source": "introduction",
+          "confidence": 0.9
+        },
+        {
+          "head": "deidentification algorithms",
+          "relation": "selectively remove protected health information",
+          "relation_type": "method_applied_to",
+          "relation_type_norm": "method_applied_to",
+          "relation_type_raw": "method_applied_to",
+          "tail": "protected health information",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "deidentification algorithms are applied to selectively remove protected health information",
+          "source": "introduction",
+          "confidence": 0.94
+        },
+        {
+          "head": "modular organization",
+          "relation": "establishes a modular organization of the constituent data",
+          "relation_type": "generalizes",
+          "relation_type_norm": "generalizes",
+          "relation_type_raw": "generalizes",
+          "tail": "waveform database",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "MIMIC-IV establishes a modular organization of the constituent data allowing linking of the database to external departments",
+          "source": "introduction",
+          "confidence": 0.92
+        },
+        {
+          "head": "high-resolution data",
+          "relation": "contains high resolution physiologic variables",
+          "relation_type": "improves_metric",
+          "relation_type_norm": "improves_metric",
+          "relation_type_raw": "improves_metric",
+          "tail": "physiologic variables",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "HiRID contains high resolution physiologic variables",
+          "source": "introduction",
+          "confidence": 0.91
+        },
+        {
+          "head": "digital information systems",
+          "relation": "information being entirely sourced from various digital information systems",
+          "relation_type": "driven_by",
+          "relation_type_norm": "driven_by",
+          "relation_type_raw": "driven_by",
+          "tail": "clinical practice",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "MIMIC-II...information being entirely sourced from various digital information systems",
+          "source": "introduction",
+          "confidence": 0.88
+        },
+        {
+          "head": "data integration",
+          "relation": "merge the various data sources into a single schema",
+          "relation_type": "method_applied_to",
+          "relation_type_norm": "method_applied_to",
+          "relation_type_raw": "method_applied_to",
+          "tail": "patient measurements",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "SQL scripts merge the various data sources into a single schema",
+          "source": "introduction",
+          "confidence": 0.9
+        },
+        {
+          "head": "database schema",
+          "relation": "merge the various data sources into a single schema",
+          "relation_type": "maps_to",
+          "relation_type_norm": "maps_to",
+          "relation_type_raw": "maps_to",
+          "tail": "waveform database",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "merge the various data sources into a single schema",
+          "source": "introduction",
+          "confidence": 0.87
+        }
+      ],
+      "按辅助学科分类": {
+        "临床医学": {
+          "概念": [
+            "重症监护病房",
+            "临床实践",
+            "诊断",
+            "去标识化自由文本临床记录",
+            "协作研究数据库",
+            "儿科重症监护数据库",
+            "临床观察",
+            "医院入院",
+            "护理质量"
+          ],
+          "关系": [
+            4,
+            5
+          ],
+          "rationale": "提供临床场景需求与真实世界数据验证"
+        },
+        "计算机科学技术": {
+          "概念": [
+            "结构化查询语言",
+            "去识别化算法",
+            "模块化组织",
+            "数据模式",
+            "数字信息系统",
+            "数据存储库",
+            "数据整合",
+            "高分辨率数据",
+            "数据采集",
+            "数据库模式"
+          ],
+          "关系": [
+            0,
+            1,
+            2,
+            3,
+            5,
+            6
+          ],
+          "rationale": "支撑数据架构设计与处理的技术实现"
+        }
+      },
+      "查询": {
+        "一级": "电子健康记录数据整合对医疗质量改进有何核心价值",
+        "二级": [
+          "临床实践场景下数据采集完整性如何影响诊断准确性",
+          "模块化组织结构对医疗数据仓库的优化作用"
+        ],
+        "三级": [
+          "如何通过结构化查询语言整合重症监护病房生理变量与去标识化临床记录",
+          "数字信息系统与数据整合技术如何协同提升医院入院数据的时效性与安全性"
+        ]
+      },
+      "假设": {
+        "一级": [
+          [
+            {
+              "step": 1,
+              "head": "电子健康记录",
+              "relation": "通过数据整合技术实现多源数据融合",
+              "tail": "数据整合",
+              "claim": "电子健康记录的多源异构特性需要数据整合技术消除系统间壁垒，这是提升医疗质量的基础前提"
+            },
+            {
+              "step": 2,
+              "head": "数据整合",
+              "relation": "依赖结构化查询语言构建统一数据模式",
+              "tail": "结构化查询语言",
+              "claim": "数据整合过程必须通过结构化查询语言建立标准化数据模式，确保临床数据的可计算性与可追溯性"
+            },
+            {
+              "step": 3,
+              "head": "结构化查询语言",
+              "relation": "优化数据仓库的实时访问性能",
+              "tail": "数据仓库",
+              "claim": "基于计算机科学技术的数据库优化可提升数据仓库的并发访问效率，从而增强临床决策支持系统的响应能力"
+            }
+          ],
+          [
+            {
+              "step": 1,
+              "head": "数据采集",
+              "relation": "决定临床观察数据的完整性",
+              "tail": "临床观察",
+              "claim": "基础医学研究中数据采集的粒度缺陷会导致临床观察数据的系统性缺失，影响诊疗模型构建"
+            },
+            {
+              "step": 2,
+              "head": "临床观察",
+              "relation": "需要模块化组织实现多维度关联分析",
+              "tail": "模块化组织",
+              "claim": "临床观察数据的多维度关联需要模块化组织架构支撑，这是突破传统数据孤岛的关键"
+            },
+            {
+              "step": 3,
+              "head": "模块化组织",
+              "relation": "提升波形数据库的跨科室协同能力",
+              "tail": "波形数据库",
+              "claim": "采用计算机科学的模块化设计理念可增强波形数据库的跨科室协同分析能力，显著改善重症监护质量"
+            }
+          ],
+          [
+            {
+              "step": 1,
+              "head": "生理变量",
+              "relation": "高分辨率监测数据提升诊断精度",
+              "tail": "高分辨率数据",
+              "claim": "基础医学研究中生理变量的监测精度瓶颈需要高分辨率数据采集技术突破"
+            },
+            {
+              "step": 2,
+              "head": "高分辨率数据",
+              "relation": "依赖数据整合实现多模态融合",
+              "tail": "数据整合",
+              "claim": "多模态生理数据的整合是实现精准医疗的关键中间环节"
+            },
+            {
+              "step": 3,
+              "head": "数据整合",
+              "relation": "通过数据库模式优化支持动态扩展",
+              "tail": "数据库模式",
+              "claim": "基于计算机科学的动态数据库模式设计可支撑生理监测数据的持续扩展与实时分析"
+            }
+          ]
+        ],
+        "二级": [
+          [
+            {
+              "step": 1,
+              "head": "数据采集",
+              "relation": "影响数据完整性",
+              "tail": "临床数据",
+              "claim": "数据采集 影响数据完整性 临床数据"
+            },
+            {
+              "step": 2,
+              "head": "临床数据",
+              "relation": "决定诊断依据",
+              "tail": "诊断",
+              "claim": "临床数据 决定诊断依据 诊断"
+            },
+            {
+              "step": 3,
+              "head": "诊断",
+              "relation": "关联医疗决策质量",
+              "tail": "护理质量",
+              "claim": "诊断 关联医疗决策质量 护理质量"
+            }
+          ],
+          [
+            {
+              "step": 1,
+              "head": "模块化组织",
+              "relation": "优化数据结构",
+              "tail": "波形数据库",
+              "claim": "模块化组织 优化数据结构 波形数据库"
+            },
+            {
+              "step": 2,
+              "head": "波形数据库",
+              "relation": "构成核心组件",
+              "tail": "数据仓库",
+              "claim": "波形数据库 构成核心组件 数据仓库"
+            },
+            {
+              "step": 3,
+              "head": "数据仓库",
+              "relation": "支持入院数据管理",
+              "tail": "医院入院",
+              "claim": "数据仓库 支持入院数据管理 医院入院"
+            }
+          ]
+        ],
+        "三级": [
+          [
+            {
+              "step": 1,
+              "head": "结构化查询语言",
+              "relation": "合并多种数据源到单一模式",
+              "tail": "数据库模式",
+              "claim": "结构化查询语言 合并多种数据源到单一模式 数据库模式"
+            },
+            {
+              "step": 2,
+              "head": "数据库模式",
+              "relation": "映射到波形数据库",
+              "tail": "波形数据库",
+              "claim": "数据库模式 映射到波形数据库 波形数据库"
+            },
+            {
+              "step": 3,
+              "head": "波形数据库",
+              "relation": "包含高分辨率生理变量",
+              "tail": "生理变量",
+              "claim": "波形数据库 包含高分辨率生理变量 生理变量"
+            }
+          ],
+          [
+            {
+              "step": 1,
+              "head": "数字信息系统",
+              "relation": "信息完全来源于数字信息系统",
+              "tail": "临床实践",
+              "claim": "数字信息系统 信息完全来源于数字信息系统 临床实践"
+            },
+            {
+              "step": 2,
+              "head": "临床实践",
+              "relation": "覆盖医院入院数据采集",
+              "tail": "医院入院",
+              "claim": "临床实践 覆盖医院入院数据采集 医院入院"
+            },
+            {
+              "step": 3,
+              "head": "医院入院",
+              "relation": "通过数据整合技术提升安全性",
+              "tail": "数据整合",
+              "claim": "医院入院 通过数据整合技术提升安全性 数据整合"
+            }
+          ]
+        ],
+        "一级总结": [
+          "电子健康记录的多源异构特性需计算机科学技术通过数据整合与数据库优化技术补位，提升临床决策系统性能",
+          "临床观察数据的完整性缺陷需借助计算机科学的模块化组织架构设计补位，增强跨科室协同分析能力",
+          "生理变量监测精度瓶颈需计算机科学的数据整合与动态模式设计补位，支撑多模态实时分析"
+        ],
+        "二级总结": [
+          "临床实践中的数据采集完整性通过提升临床数据质量，增强诊断准确性并最终改善护理质量",
+          "模块化组织通过优化波形数据库结构强化数据仓库功能，从而提升医院入院数据管理效率"
+        ],
+        "三级总结": [
+          "通过结构化查询语言构建统一数据库模式，关联波形数据库实现生理变量整合，并最终验证其对重症监护数据的闭环管理价值",
+          "基于数字信息系统支撑临床实践数据采集，结合医院入院场景的数据整合技术，形成兼顾时效性与隐私保护的医疗数据治理闭环"
+        ]
+      },
+      "graph": {
+        "nodes": [
+          {
+            "id": "电子健康记录",
+            "term": "electronic health record",
+            "normalized": "电子健康记录",
+            "discipline": "基础医学",
+            "evidence": "a publicly available database sourced from the electronic health record of the Beth Israel Deaconess Medical Center",
+            "source": "abstract",
+            "confidence": 0.95
+          },
+          {
+            "id": "患者测量数据",
+            "term": "patient measurements",
+            "normalized": "患者测量数据",
+            "discipline": "基础医学",
+            "evidence": "Information available includes patient measurements, orders, diagnoses, procedures, treatments, and deidentified free-text clinical notes",
+            "source": "abstract",
+            "confidence": 0.9
+          },
+          {
+            "id": "生理变量",
+            "term": "physiologic variables",
+            "normalized": "生理变量",
+            "discipline": "基础医学",
+            "evidence": "HiRID contains high resolution physiologic variables",
+            "source": "introduction",
+            "confidence": 0.85
+          },
+          {
+            "id": "临床数据",
+            "term": "clinical data",
+            "normalized": "临床数据",
+            "discipline": "基础医学",
+            "evidence": "clinically collected clinical data is often sporadic and noisy",
+            "source": "introduction",
+            "confidence": 0.88
+          },
+          {
+            "id": "受保护的健康信息",
+            "term": "protected health information",
+            "normalized": "受保护的健康信息",
+            "discipline": "基础医学",
+            "evidence": "deidentification algorithms...selectively remove protected health information",
+            "source": "introduction",
+            "confidence": 0.92
+          },
+          {
+            "id": "波形数据库",
+            "term": "waveform database",
+            "normalized": "波形数据库",
+            "discipline": "基础医学",
+            "evidence": "These projects largely build upon MIMIC, a waveform database with demographics digitally transcribed",
+            "source": "introduction",
+            "confidence": 0.87
+          },
+          {
+            "id": "数据模态",
+            "term": "data modalities",
+            "normalized": "数据模态",
+            "discipline": "基础医学",
+            "evidence": "omit other important domains such as imaging, free-text, physiologic waveforms, and genomics",
+            "source": "introduction",
+            "confidence": 0.83
+          },
+          {
+            "id": "人口统计学数据",
+            "term": "demographics",
+            "normalized": "人口统计学数据",
+            "discipline": "基础医学",
+            "evidence": "waveform database with demographics digitally transcribed",
+            "source": "introduction",
+            "confidence": 0.85
+          },
+          {
+            "id": "样本量",
+            "term": "sample size",
+            "normalized": "样本量",
+            "discipline": "基础医学",
+            "evidence": "MIMIC-II followed with a significantly increased sample size",
+            "source": "introduction",
+            "confidence": 0.88
+          },
+          {
+            "id": "数据仓库",
+            "term": "data warehouse",
+            "normalized": "数据仓库",
+            "discipline": "基础医学",
+            "evidence": "Data are acquired from the BIDMC data warehouse",
+            "source": "introduction",
+            "confidence": 0.9
+          },
+          {
+            "id": "重症监护病房",
+            "term": "intensive care unit",
+            "normalized": "重症监护病房",
+            "discipline": "临床医学",
+            "evidence": "The intensive care unit (ICU) is an especially data-rich environment",
+            "source": "introduction",
+            "confidence": 0.95
+          },
+          {
+            "id": "临床实践",
+            "term": "clinical practice",
+            "normalized": "临床实践",
+            "discipline": "临床医学",
+            "evidence": "Digital data collection during routine clinical practice is now ubiquitous",
+            "source": "abstract",
+            "confidence": 0.92
+          },
+          {
+            "id": "诊断",
+            "term": "diagnoses",
+            "normalized": "诊断",
+            "discipline": "临床医学",
+            "evidence": "Information available includes patient measurements, orders, diagnoses, procedures, treatments",
+            "source": "abstract",
+            "confidence": 0.9
+          },
+          {
+            "id": "去标识化自由文本临床记录",
+            "term": "deidentified free-text clinical notes",
+            "normalized": "去标识化自由文本临床记录",
+            "discipline": "临床医学",
+            "evidence": "treatments, and deidentified free-text clinical notes",
+            "source": "abstract",
+            "confidence": 0.93
+          },
+          {
+            "id": "协作研究数据库",
+            "term": "eICU Collaborative Research Database",
+            "normalized": "协作研究数据库",
+            "discipline": "临床医学",
+            "evidence": "The eICU Collaborative Research Database (eICU-CRD) v2.0 comprises of 200,859 stays",
+            "source": "introduction",
+            "confidence": 0.94
+          },
+          {
+            "id": "儿科重症监护数据库",
+            "term": "Pediatric Intensive Care database",
+            "normalized": "儿科重症监护数据库",
+            "discipline": "临床医学",
+            "evidence": "The Pediatric Intensive Care (PIC) database is sourced from The Children’s Hospital",
+            "source": "introduction",
+            "confidence": 0.91
+          },
+          {
+            "id": "临床观察",
+            "term": "clinical observations",
+            "normalized": "临床观察",
+            "discipline": "临床医学",
+            "evidence": "most datasets comprise of only one modality of information, clinical observations",
+            "source": "introduction",
+            "confidence": 0.87
+          },
+          {
+            "id": "医院入院",
+            "term": "hospital admissions",
+            "normalized": "医院入院",
+            "discipline": "临床医学",
+            "evidence": "MIMIC-IV...covering a decade of admissions between 2008 and 2019",
+            "source": "introduction",
+            "confidence": 0.89
+          },
+          {
+            "id": "护理质量",
+            "term": "quality of care",
+            "normalized": "护理质量",
+            "discipline": "临床医学",
+            "evidence": "quality of data collection is understandably peripheral to the act of providing high quality care",
+            "source": "introduction",
+            "confidence": 0.85
+          },
+          {
+            "id": "结构化查询语言",
+            "term": "Structured Query Language",
+            "normalized": "结构化查询语言",
+            "discipline": "计算机科学技术",
+            "evidence": "Structured Query Language (SQL) scripts merge the various data sources",
+            "source": "introduction",
+            "confidence": 0.96
+          },
+          {
+            "id": "去识别化算法",
+            "term": "deidentification algorithms",
+            "normalized": "去识别化算法",
+            "discipline": "计算机科学技术",
+            "evidence": "deidentification algorithms are applied to selectively remove protected health information",
+            "source": "introduction",
+            "confidence": 0.94
+          },
+          {
+            "id": "模块化组织",
+            "term": "modular organization",
+            "normalized": "模块化组织",
+            "discipline": "计算机科学技术",
+            "evidence": "MIMIC-IV establishes a modular organization of the constituent data",
+            "source": "introduction",
+            "confidence": 0.92
+          },
+          {
+            "id": "数据模式",
+            "term": "data schema",
+            "normalized": "数据模式",
+            "discipline": "计算机科学技术",
+            "evidence": "SQL scripts merge...into a single schema",
+            "source": "introduction",
+            "confidence": 0.89
+          },
+          {
+            "id": "数字信息系统",
+            "term": "digital information systems",
+            "normalized": "数字信息系统",
+            "discipline": "计算机科学技术",
+            "evidence": "MIMIC-II...information being entirely sourced from various digital information systems",
+            "source": "introduction",
+            "confidence": 0.88
+          },
+          {
+            "id": "数据存储库",
+            "term": "data repository",
+            "normalized": "数据存储库",
+            "discipline": "计算机科学技术",
+            "evidence": "Issues raised on the MIMIC Code Repository are assessed",
+            "source": "introduction",
+            "confidence": 0.86
+          },
+          {
+            "id": "数据整合",
+            "term": "data integration",
+            "normalized": "数据整合",
+            "discipline": "计算机科学技术",
+            "evidence": "SQL scripts merge the various data sources into a single schema",
+            "source": "introduction",
+            "confidence": 0.9
+          },
+          {
+            "id": "高分辨率数据",
+            "term": "high-resolution data",
+            "normalized": "高分辨率数据",
+            "discipline": "计算机科学技术",
+            "evidence": "HiRID contains high-resolution data for almost 34,000 admissions",
+            "source": "introduction",
+            "confidence": 0.91
+          },
+          {
+            "id": "数据采集",
+            "term": "data acquisition",
+            "normalized": "数据采集",
+            "discipline": "计算机科学技术",
+            "evidence": "Data are acquired from the BIDMC data warehouse, the ICU information system",
+            "source": "introduction",
+            "confidence": 0.89
+          },
+          {
+            "id": "数据库模式",
+            "term": "database schema",
+            "normalized": "数据库模式",
+            "discipline": "计算机科学技术",
+            "evidence": "merge the various data sources into a single schema",
+            "source": "introduction",
+            "confidence": 0.87
+          }
+        ],
+        "edges": [
+          {
+            "source": "结构化查询语言",
+            "target": "数据仓库",
+            "relation": "merges various data sources into a single schema",
+            "relation_type": "method_applied_to",
+            "metadata": {
+              "evidence": "Structured Query Language (SQL) scripts merge the various data sources into a single schema",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "去识别化算法",
+            "target": "受保护的健康信息",
+            "relation": "selectively remove protected health information",
+            "relation_type": "method_applied_to",
+            "metadata": {
+              "evidence": "deidentification algorithms are applied to selectively remove protected health information",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "模块化组织",
+            "target": "波形数据库",
+            "relation": "establishes a modular organization of the constituent data",
+            "relation_type": "generalizes",
+            "metadata": {
+              "evidence": "MIMIC-IV establishes a modular organization of the constituent data allowing linking of the database to external departments",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "高分辨率数据",
+            "target": "生理变量",
+            "relation": "contains high resolution physiologic variables",
+            "relation_type": "improves_metric",
+            "metadata": {
+              "evidence": "HiRID contains high resolution physiologic variables",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "数字信息系统",
+            "target": "临床实践",
+            "relation": "information being entirely sourced from various digital information systems",
+            "relation_type": "driven_by",
+            "metadata": {
+              "evidence": "MIMIC-II...information being entirely sourced from various digital information systems",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "数据整合",
+            "target": "患者测量数据",
+            "relation": "merge the various data sources into a single schema",
+            "relation_type": "method_applied_to",
+            "metadata": {
+              "evidence": "SQL scripts merge the various data sources into a single schema",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "数据库模式",
+            "target": "波形数据库",
+            "relation": "merge the various data sources into a single schema",
+            "relation_type": "maps_to",
+            "metadata": {
+              "evidence": "merge the various data sources into a single schema",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "电子健康记录",
+            "target": "数据整合",
+            "relation": "通过数据整合技术实现多源数据融合",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "电子健康记录的多源异构特性需要数据整合技术消除系统间壁垒，这是提升医疗质量的基础前提",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "数据整合",
+            "target": "结构化查询语言",
+            "relation": "依赖结构化查询语言构建统一数据模式",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "数据整合过程必须通过结构化查询语言建立标准化数据模式，确保临床数据的可计算性与可追溯性",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "结构化查询语言",
+            "target": "数据仓库",
+            "relation": "优化数据仓库的实时访问性能",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "基于计算机科学技术的数据库优化可提升数据仓库的并发访问效率，从而增强临床决策支持系统的响应能力",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "数据采集",
+            "target": "临床观察",
+            "relation": "决定临床观察数据的完整性",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "基础医学研究中数据采集的粒度缺陷会导致临床观察数据的系统性缺失，影响诊疗模型构建",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "临床观察",
+            "target": "模块化组织",
+            "relation": "需要模块化组织实现多维度关联分析",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "临床观察数据的多维度关联需要模块化组织架构支撑，这是突破传统数据孤岛的关键",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "模块化组织",
+            "target": "波形数据库",
+            "relation": "提升波形数据库的跨科室协同能力",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "采用计算机科学的模块化设计理念可增强波形数据库的跨科室协同分析能力，显著改善重症监护质量",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "生理变量",
+            "target": "高分辨率数据",
+            "relation": "高分辨率监测数据提升诊断精度",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "基础医学研究中生理变量的监测精度瓶颈需要高分辨率数据采集技术突破",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 2
+            }
+          },
+          {
+            "source": "高分辨率数据",
+            "target": "数据整合",
+            "relation": "依赖数据整合实现多模态融合",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "多模态生理数据的整合是实现精准医疗的关键中间环节",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 2
+            }
+          },
+          {
+            "source": "数据整合",
+            "target": "数据库模式",
+            "relation": "通过数据库模式优化支持动态扩展",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "基于计算机科学的动态数据库模式设计可支撑生理监测数据的持续扩展与实时分析",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 2
+            }
+          },
+          {
+            "source": "数据采集",
+            "target": "临床数据",
+            "relation": "影响数据完整性",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "数据采集 影响数据完整性 临床数据",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "临床数据",
+            "target": "诊断",
+            "relation": "决定诊断依据",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "临床数据 决定诊断依据 诊断",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "诊断",
+            "target": "护理质量",
+            "relation": "关联医疗决策质量",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "诊断 关联医疗决策质量 护理质量",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "模块化组织",
+            "target": "波形数据库",
+            "relation": "优化数据结构",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "模块化组织 优化数据结构 波形数据库",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "波形数据库",
+            "target": "数据仓库",
+            "relation": "构成核心组件",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "波形数据库 构成核心组件 数据仓库",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "数据仓库",
+            "target": "医院入院",
+            "relation": "支持入院数据管理",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "数据仓库 支持入院数据管理 医院入院",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "结构化查询语言",
+            "target": "数据库模式",
+            "relation": "合并多种数据源到单一模式",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "结构化查询语言 合并多种数据源到单一模式 数据库模式",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "数据库模式",
+            "target": "波形数据库",
+            "relation": "映射到波形数据库",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "数据库模式 映射到波形数据库 波形数据库",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "波形数据库",
+            "target": "生理变量",
+            "relation": "包含高分辨率生理变量",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "波形数据库 包含高分辨率生理变量 生理变量",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "数字信息系统",
+            "target": "临床实践",
+            "relation": "信息完全来源于数字信息系统",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "数字信息系统 信息完全来源于数字信息系统 临床实践",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "临床实践",
+            "target": "医院入院",
+            "relation": "覆盖医院入院数据采集",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "临床实践 覆盖医院入院数据采集 医院入院",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "医院入院",
+            "target": "数据整合",
+            "relation": "通过数据整合技术提升安全性",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "医院入院 通过数据整合技术提升安全性 数据整合",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          }
+        ]
+      },
+      "metrics": {
+        "path_consistency": 0.23809523809523808,
+        "coverage": 0.5862068965517241,
+        "bridging_score": 0.7142857142857143,
+        "rao_stirling_diversity": 0.2143,
+        "embedding_bridging": 0.6215,
+        "consistency_precision": 0.0,
+        "consistency_recall": 0.0,
+        "consistency_f1": 0.0,
+        "info_novelty": 0.0,
+        "chain_coherence": 0.8108,
+        "atypical_combination": 0.5571,
+        "kg_density": 0.0283,
+        "kg_inverse_modularity": 0.9959,
+        "kg_largest_cc_ratio": 0.6207,
+        "kg_avg_betweenness": 0.0391,
+        "kg_clustering_coefficient": 0.0253,
+        "concept_recall": 0.0,
+        "concept_precision": 0.0,
+        "concept_f1": 0.0,
+        "relation_precision": 0.0,
+        "relation_type_accuracy": 0.0,
+        "evidence_coverage": 0.0,
+        "path_alignment_best": 0.0,
+        "path_alignment_mean": 0.0
+      }
+    },
+    "raw": "/* stage1: struct */\n/* concepts round1 */\n{\n  \"meta\": {\n    \"title\": \"MIMIC-IV, a freely accessible electronic health record dataset\",\n    \"primary\": \"基础医学\",\n    \"secondary_list\": [\"临床医学\", \"计算机科学技术\"]\n  },\n  \"概念\": {\n    \"主学科\": [\n      {\n        \"term\": \"electronic health record\",\n        \"normalized\": \"电子健康记录\",\n        \"std_label\": null,\n        \"evidence\": \"a publicly available database sourced from the electronic health record of the Beth Israel Deaconess Medical Center\",\n        \"source\": \"abstract\",\n        \"confidence\": 0.95\n      },\n      {\n        \"term\": \"patient measurements\",\n        \"normalized\": \"患者测量数据\",\n        \"std_label\": null,\n        \"evidence\": \"Information available includes patient measurements, orders, diagnoses, procedures, treatments, and deidentified free-text clinical notes\",\n        \"source\": \"abstract\",\n        \"confidence\": 0.9\n      },\n      {\n        \"term\": \"physiologic variables\",\n        \"normalized\": \"生理变量\",\n        \"std_label\": null,\n        \"evidence\": \"HiRID contains high resolution physiologic variables\",\n        \"source\": \"introduction\",\n        \"confidence\": 0.85\n      },\n      {\n        \"term\": \"clinical data\",\n        \"normalized\": \"临床数据\",\n        \"std_label\": null,\n        \"evidence\": \"clinically collected clinical data is often sporadic and noisy\",\n        \"source\": \"introduction\",\n        \"confidence\": 0.88\n      },\n      {\n        \"term\": \"protected health information\",\n        \"normalized\": \"受保护的健康信息\",\n        \"std_label\": null,\n        \"evidence\": \"deidentification algorithms...selectively remove protected health information\",\n        \"source\": \"introduction\",\n        \"confidence\": 0.92\n      },\n      {\n        \"term\": \"waveform database\",\n        \"normalized\": \"波形数据库\",\n        \"std_label\": null,\n        \"evidence\": \"These projects largely build upon MIMIC, a waveform database with demographics digitally transcribed\",\n        \"source\": \"introduction\",\n        \"confidence\": 0.87\n      },\n      {\n        \"term\": \"data modalities\",\n        \"normalized\": \"数据模态\",\n        \"std_label\": null,\n        \"evidence\": \"omit other important domains such as imaging, free-text, physiologic waveforms, and genomics\",\n        \"source\": \"introduction\",\n        \"confidence\": 0.83\n      },\n      {\n        \"term\": \"demographics\",\n        \"normalized\": \"人口统计学数据\",\n        \"std_label\": null,\n        \"evidence\": \"waveform database with demographics digitally transcribed\",\n        \"source\": \"introduction\",\n        \"confidence\": 0.85\n      },\n      {\n        \"term\": \"sample size\",\n        \"normalized\": \"样本量\",\n        \"std_label\": null,\n        \"evidence\": \"MIMIC-II followed with a significantly increased sample size\",\n        \"source\": \"introduction\",\n        \"confidence\": 0.88\n      },\n      {\n        \"term\": \"data warehouse\",\n        \"normalized\": \"数据仓库\",\n        \"std_label\": null,\n        \"evidence\": \"Data are acquired from the BIDMC data warehouse\",\n        \"source\": \"introduction\",\n        \"confidence\": 0.9\n      }\n    ],\n    \"辅学科\": {\n      \"临床医学\": [\n        {\n          \"term\": \"intensive care unit\",\n          \"normalized\": \"重症监护病房\",\n          \"std_label\": null,\n          \"evidence\": \"The intensive care unit (ICU) is an especially data-rich environment\",\n          \"source\": \"introduction\",\n          \"confidence\": 0.95\n        },\n        {\n          \"term\": \"clinical practice\",\n          \"normalized\": \"临床实践\",\n          \"std_label\": null,\n          \"evidence\": \"Digital data collection during routine clinical practice is now ubiquitous\",\n          \"source\": \"abstract\",\n          \"confidence\": 0.92\n        },\n        {\n          \"term\": \"diagnoses\",\n          \"normalized\": \"诊断\",\n          \"std_label\": null,\n          \"evidence\": \"Information available includes patient measurements, orders, diagnoses, procedures, treatments\",\n          \"source\": \"abstract\",\n          \"confidence\": 0.9\n        },\n        {\n          \"term\": \"treatments\",\n          \"normalized\": \"治疗\",\n          \"std_label\": null,\n          \"evidence\": \"offering exciting opportunities for research...treatments, and deidentified free-text clinical notes\",\n          \"source\": \"abstract\",\n          \"confidence\": 0.88\n        },\n        {\n          \"term\": \"deidentified free-text clinical notes\",\n          \"normalized\": \"去标识化自由文本临床记录\",\n          \"std_label\": null,\n          \"evidence\": \"treatments, and deidentified free-text clinical notes\",\n          \"source\": \"abstract\",\n          \"confidence\": 0.93\n        },\n        {\n          \"term\": \"eICU Collaborative Research Database\",\n          \"normalized\": \"eICU协作研究数据库\",\n          \"std_label\": null,\n          \"evidence\": \"The eICU Collaborative Research Database (eICU-CRD) v2.0 comprises of 200,859 stays\",\n          \"source\": \"introduction\",\n          \"confidence\": 0.94\n        },\n        {\n          \"term\": \"Pediatric Intensive Care database\",\n          \"normalized\": \"儿科重症监护数据库\",\n          \"std_label\": null,\n          \"evidence\": \"The Pediatric Intensive Care (PIC) database is sourced from The Children’s Hospital\",\n          \"source\": \"introduction\",\n          \"confidence\": 0.91\n        },\n        {\n          \"term\": \"clinical observations\",\n          \"normalized\": \"临床观察\",\n          \"std_label\": null,\n          \"evidence\": \"most datasets comprise of only one modality of information, clinical observations\",\n          \"source\": \"introduction\",\n          \"confidence\": 0.87\n        },\n        {\n          \"term\": \"hospital admissions\",\n          \"normalized\": \"医院入院\",\n          \"std_label\": null,\n          \"evidence\": \"MIMIC-IV...covering a decade of admissions between 2008 and 2019\",\n          \"source\": \"introduction\",\n          \"confidence\": 0.89\n        },\n        {\n          \"term\": \"quality of care\",\n          \"normalized\": \"护理质量\",\n          \"std_label\": null,\n          \"evidence\": \"quality of data collection is understandably peripheral to the act of providing high quality care\",\n          \"source\": \"introduction\",\n          \"confidence\": 0.85\n        }\n      ],\n      \"计算机科学技术\": [\n        {\n          \"term\": \"Structured Query Language\",\n          \"normalized\": \"结构化查询语言\",\n          \"std_label\": \"SQL\",\n          \"evidence\": \"Structured Query Language (SQL) scripts merge the various data sources\",\n          \"source\": \"introduction\",\n          \"confidence\": 0.96\n        },\n        {\n          \"term\": \"deidentification algorithms\",\n          \"normalized\": \"去识别化算法\",\n          \"std_label\": null,\n          \"evidence\": \"deidentification algorithms are applied to selectively remove protected health information\",\n          \"source\": \"introduction\",\n          \"confidence\": 0.94\n        },\n        {\n          \"term\": \"modular organization\",\n          \"normalized\": \"模块化组织\",\n          \"std_label\": null,\n          \"evidence\": \"MIMIC-IV establishes a modular organization of the constituent data\",\n          \"source\": \"introduction\",\n          \"confidence\": 0.92\n        },\n        {\n          \"term\": \"data schema\",\n          \"normalized\": \"数据模式\",\n          \"std_label\": null,\n          \"evidence\": \"SQL scripts merge...into a single schema\",\n          \"source\": \"introduction\",\n          \"confidence\": 0.89\n        },\n        {\n          \"term\": \"digital information systems\",\n          \"normalized\": \"数字信息系统\",\n          \"std_label\": null,\n          \"evidence\": \"MIMIC-II...information being entirely sourced from various digital information systems\",\n          \"source\": \"introduction\",\n          \"confidence\": 0.88\n        },\n        {\n          \"term\": \"data repository\",\n          \"normalized\": \"数据存储库\",\n          \"std_label\": null,\n          \"evidence\": \"Issues raised on the MIMIC Code Repository are assessed\",\n          \"source\": \"introduction\",\n          \"confidence\": 0.86\n        },\n        {\n          \"term\": \"data integration\",\n          \"normalized\": \"数据整合\",\n          \"std_label\": null,\n          \"evidence\": \"SQL scripts merge the various data sources into a single schema\",\n          \"source\": \"introduction\",\n          \"confidence\": 0.9\n        },\n        {\n          \"term\": \"high-resolution data\",\n          \"normalized\": \"高分辨率数据\",\n          \"std_label\": null,\n          \"evidence\": \"HiRID contains high-resolution data for almost 34,000 admissions\",\n          \"source\": \"introduction\",\n          \"confidence\": 0.91\n        },\n        {\n          \"term\": \"data acquisition\",\n          \"normalized\": \"数据采集\",\n          \"std_label\": null,\n          \"evidence\": \"Data are acquired from the BIDMC data warehouse, the ICU information system\",\n          \"source\": \"introduction\",\n          \"confidence\": 0.89\n        },\n        {\n          \"term\": \"database schema\",\n          \"normalized\": \"数据库模式\",\n          \"std_label\": null,\n          \"evidence\": \"merge the various data sources into a single schema\",\n          \"source\": \"introduction\",\n          \"confidence\": 0.87\n        }\n      ]\n    }\n  }\n}\n\n/* concepts round2 (supplement) */\n{\"补充概念\": {\"主学科\": [\"MIMIC-IV\", \"MetaVision\", \"electronic medicine administration record\", \"AmsterdamUMCdb\", \"HiRID database\"], \"辅学科\": {\"临床医学\": [\"MIMIC-IV\", \"MetaVision\", \"electronic medicine administration record\", \"AmsterdamUMCdb\", \"HiRID database\"], \"计算机科学技术\": [\"MetaVision\", \"electronic medicine administration record\"]}}}\n\n/* relations */\n{\n  \"跨学科关系\": [\n    {\n      \"head\": \"Structured Query Language\",\n      \"tail\": \"data warehouse\",\n      \"relation\": \"merges various data sources into a single schema\",\n      \"relation_type\": \"method_applied_to\",\n      \"direction\": \"->\",\n      \"evidence\": \"Structured Query Language (SQL) scripts merge the various data sources into a single schema\",\n      \"source\": \"introduction\",\n      \"confidence\": 0.9\n    },\n    {\n      \"head\": \"deidentification algorithms\",\n      \"tail\": \"protected health information\",\n      \"relation\": \"selectively remove protected health information\",\n      \"relation_type\": \"method_applied_to\",\n      \"direction\": \"->\",\n      \"evidence\": \"deidentification algorithms are applied to selectively remove protected health information\",\n      \"source\": \"introduction\",\n      \"confidence\": 0.94\n    },\n    {\n      \"head\": \"modular organization\",\n      \"tail\": \"waveform database\",\n      \"relation\": \"establishes a modular organization of the constituent data\",\n      \"relation_type\": \"generalizes\",\n      \"direction\": \"->\",\n      \"evidence\": \"MIMIC-IV establishes a modular organization of the constituent data allowing linking of the database to external departments\",\n      \"source\": \"introduction\",\n      \"confidence\": 0.92\n    },\n    {\n      \"head\": \"high-resolution data\",\n      \"tail\": \"physiologic variables\",\n      \"relation\": \"contains high resolution physiologic variables\",\n      \"relation_type\": \"improves_metric\",\n      \"direction\": \"->\",\n      \"evidence\": \"HiRID contains high resolution physiologic variables\",\n      \"source\": \"introduction\",\n      \"confidence\": 0.91\n    },\n    {\n      \"head\": \"digital information systems\",\n      \"tail\": \"clinical practice\",\n      \"relation\": \"information being entirely sourced from various digital information systems\",\n      \"relation_type\": \"driven_by\",\n      \"direction\": \"->\",\n      \"evidence\": \"MIMIC-II...information being entirely sourced from various digital information systems\",\n      \"source\": \"introduction\",\n      \"confidence\": 0.88\n    },\n    {\n      \"head\": \"data integration\",\n      \"tail\": \"patient measurements\",\n      \"relation\": \"merge the various data sources into a single schema\",\n      \"relation_type\": \"method_applied_to\",\n      \"direction\": \"->\",\n      \"evidence\": \"SQL scripts merge the various data sources into a single schema\",\n      \"source\": \"introduction\",\n      \"confidence\": 0.9\n    },\n    {\n      \"head\": \"database schema\",\n      \"tail\": \"waveform database\",\n      \"relation\": \"merge the various data sources into a single schema\",\n      \"relation_type\": \"maps_to\",\n      \"direction\": \"->\",\n      \"evidence\": \"merge the various data sources into a single schema\",\n      \"source\": \"introduction\",\n      \"confidence\": 0.87\n    }\n  ]\n}\n\n/* stage2: query */\n{\n  \"按辅助学科分类\": {\n    \"临床医学\": {\n      \"概念\": [\n        \"重症监护病房\",\n        \"临床实践\",\n        \"诊断\",\n        \"去标识化自由文本临床记录\",\n        \"协作研究数据库\",\n        \"儿科重症监护数据库\",\n        \"临床观察\",\n        \"医院入院\",\n        \"护理质量\"\n      ],\n      \"关系\": [4, 5],\n      \"rationale\": \"提供临床场景需求与真实世界数据验证\"\n    },\n    \"计算机科学技术\": {\n      \"概念\": [\n        \"结构化查询语言\",\n        \"去识别化算法\",\n        \"模块化组织\",\n        \"数据模式\",\n        \"数字信息系统\",\n        \"数据存储库\",\n        \"数据整合\",\n        \"高分辨率数据\",\n        \"数据采集\",\n        \"数据库模式\"\n      ],\n      \"关系\": [0, 1, 2, 3, 5, 6],\n      \"rationale\": \"支撑数据架构设计与处理的技术实现\"\n    }\n  },\n  \"查询\": {\n    \"一级\": \"电子健康记录数据整合对医疗质量改进有何核心价值\",\n    \"二级\": [\n      \"临床实践场景下数据采集完整性如何影响诊断准确性\",\n      \"模块化组织结构对医疗数据仓库的优化作用\"\n    ],\n    \"三级\": [\n      \"如何通过结构化查询语言整合重症监护病房生理变量与去标识化临床记录\",\n      \"数字信息系统与数据整合技术如何协同提升医院入院数据的时效性与安全性\"\n    ]\n  }\n}\n\n/* stage3: hypothesis L1 */\n{\n  \"假设\": {\n    \"一级\": [\n      [\n        {\n          \"step\": 1,\n          \"head\": \"电子健康记录\",\n          \"relation\": \"通过数据整合技术实现多源数据融合\",\n          \"tail\": \"数据整合\",\n          \"claim\": \"电子健康记录的多源异构特性需要数据整合技术消除系统间壁垒，这是提升医疗质量的基础前提\"\n        },\n        {\n          \"step\": 2,\n          \"head\": \"数据整合\",\n          \"relation\": \"依赖结构化查询语言构建统一数据模式\",\n          \"tail\": \"结构化查询语言\",\n          \"claim\": \"数据整合过程必须通过结构化查询语言建立标准化数据模式，确保临床数据的可计算性与可追溯性\"\n        },\n        {\n          \"step\": 3,\n          \"head\": \"结构化查询语言\",\n          \"relation\": \"优化数据仓库的实时访问性能\",\n          \"tail\": \"数据仓库\",\n          \"claim\": \"基于计算机科学技术的数据库优化可提升数据仓库的并发访问效率，从而增强临床决策支持系统的响应能力\"\n        }\n      ],\n      [\n        {\n          \"step\": 1,\n          \"head\": \"数据采集\",\n          \"relation\": \"决定临床观察数据的完整性\",\n          \"tail\": \"临床观察\",\n          \"claim\": \"基础医学研究中数据采集的粒度缺陷会导致临床观察数据的系统性缺失，影响诊疗模型构建\"\n        },\n        {\n          \"step\": 2,\n          \"head\": \"临床观察\",\n          \"relation\": \"需要模块化组织实现多维度关联分析\",\n          \"tail\": \"模块化组织\",\n          \"claim\": \"临床观察数据的多维度关联需要模块化组织架构支撑，这是突破传统数据孤岛的关键\"\n        },\n        {\n          \"step\": 3,\n          \"head\": \"模块化组织\",\n          \"relation\": \"提升波形数据库的跨科室协同能力\",\n          \"tail\": \"波形数据库\",\n          \"claim\": \"采用计算机科学的模块化设计理念可增强波形数据库的跨科室协同分析能力，显著改善重症监护质量\"\n        }\n      ],\n      [\n        {\n          \"step\": 1,\n          \"head\": \"生理变量\",\n          \"relation\": \"高分辨率监测数据提升诊断精度\",\n          \"tail\": \"高分辨率数据\",\n          \"claim\": \"基础医学研究中生理变量的监测精度瓶颈需要高分辨率数据采集技术突破\"\n        },\n        {\n          \"step\": 2,\n          \"head\": \"高分辨率数据\",\n          \"relation\": \"依赖数据整合实现多模态融合\",\n          \"tail\": \"数据整合\",\n          \"claim\": \"多模态生理数据的整合是实现精准医疗的关键中间环节\"\n        },\n        {\n          \"step\": 3,\n          \"head\": \"数据整合\",\n          \"relation\": \"通过数据库模式优化支持动态扩展\",\n          \"tail\": \"数据库模式\",\n          \"claim\": \"基于计算机科学的动态数据库模式设计可支撑生理监测数据的持续扩展与实时分析\"\n        }\n      ]\n    ],\n    \"一级总结\": [\n      \"电子健康记录的多源异构特性需计算机科学技术通过数据整合与数据库优化技术补位，提升临床决策系统性能\",\n      \"临床观察数据的完整性缺陷需借助计算机科学的模块化组织架构设计补位，增强跨科室协同分析能力\",\n      \"生理变量监测精度瓶颈需计算机科学的数据整合与动态模式设计补位，支撑多模态实时分析\"\n    ]\n  }\n}\n\n/* stage3: hypothesis L2 */\n{\n  \"假设\": {\n    \"二级\": [\n      [\n        {\n          \"head\": \"数据采集\",\n          \"tail\": \"临床数据\",\n          \"relation\": \"影响数据完整性\",\n          \"step\": 1\n        },\n        {\n          \"head\": \"临床数据\",\n          \"tail\": \"诊断\",\n          \"relation\": \"决定诊断依据\",\n          \"step\": 2\n        },\n        {\n          \"head\": \"诊断\",\n          \"tail\": \"护理质量\",\n          \"relation\": \"关联医疗决策质量\",\n          \"step\": 3\n        }\n      ],\n      [\n        {\n          \"head\": \"模块化组织\",\n          \"tail\": \"波形数据库\",\n          \"relation\": \"优化数据结构\",\n          \"step\": 1\n        },\n        {\n          \"head\": \"波形数据库\",\n          \"tail\": \"数据仓库\",\n          \"relation\": \"构成核心组件\",\n          \"step\": 2\n        },\n        {\n          \"head\": \"数据仓库\",\n          \"tail\": \"医院入院\",\n          \"relation\": \"支持入院数据管理\",\n          \"step\": 3\n        }\n      ]\n    ],\n    \"二级总结\": [\n      \"临床实践中的数据采集完整性通过提升临床数据质量，增强诊断准确性并最终改善护理质量\",\n      \"模块化组织通过优化波形数据库结构强化数据仓库功能，从而提升医院入院数据管理效率\"\n    ]\n  }\n}\n\n/* stage3: hypothesis L3 */\n{\n  \"假设\": {\n    \"三级\": [\n      [\n        {\n          \"step\": 1,\n          \"head\": \"结构化查询语言\",\n          \"relation\": \"合并多种数据源到单一模式\",\n          \"tail\": \"数据库模式\"\n        },\n        {\n          \"step\": 2,\n          \"head\": \"数据库模式\",\n          \"relation\": \"映射到波形数据库\",\n          \"tail\": \"波形数据库\"\n        },\n        {\n          \"step\": 3,\n          \"head\": \"波形数据库\",\n          \"relation\": \"包含高分辨率生理变量\",\n          \"tail\": \"生理变量\"\n        }\n      ],\n      [\n        {\n          \"step\": 1,\n          \"head\": \"数字信息系统\",\n          \"relation\": \"信息完全来源于数字信息系统\",\n          \"tail\": \"临床实践\"\n        },\n        {\n          \"step\": 2,\n          \"head\": \"临床实践\",\n          \"relation\": \"覆盖医院入院数据采集\",\n          \"tail\": \"医院入院\"\n        },\n        {\n          \"step\": 3,\n          \"head\": \"医院入院\",\n          \"relation\": \"通过数据整合技术提升安全性\",\n          \"tail\": \"数据整合\"\n        }\n      ]\n    ],\n    \"三级总结\": [\n      \"通过结构化查询语言构建统一数据库模式，关联波形数据库实现生理变量整合，并最终验证其对重症监护数据的闭环管理价值\",\n      \"基于数字信息系统支撑临床实践数据采集，结合医院入院场景的数据整合技术，形成兼顾时效性与隐私保护的医疗数据治理闭环\"\n    ]\n  }\n}",
+    "ok": true,
+    "error": ""
+  },
+  {
+    "title": "De novo design of protein structure and function with RFdiffusion",
+    "abstract": "Abstract There has been considerable recent progress in designing new proteins using deep-learning methods 1–9 . Despite this progress, a general deep-learning framework for protein design that enables solution of a wide range of design challenges, including de novo binder design and design of higher-order symmetric architectures, has yet to be described. Diffusion models 10,11 have had considerable success in image and language generative modelling but limited success when applied to protein modelling, probably due to the complexity of protein backbone geometry and sequence–structure relationships. Here we show that by fine-tuning the RoseTTAFold structure prediction network on protein structure denoising tasks, we obtain a generative model of protein backbones that achieves outstanding performance on unconditional and topology-constrained protein monomer design, protein binder design, symmetric oligomer design, enzyme active site scaffolding and symmetric motif scaffolding for therapeutic and metal-binding protein design. We demonstrate the power and generality of the method, called RoseTTAFold diffusion (RFdiffusion), by experimentally characterizing the structures and functions of hundreds of designed symmetric assemblies, metal-binding proteins and protein binders. The accuracy of RFdiffusion is confirmed by the cryogenic electron microscopy structure of a designed binder in complex with influenza haemagglutinin that is nearly identical to the design model. In a manner analogous to networks that produce images from user-specified inputs, RFdiffusion enables the design of diverse functional proteins from simple molecular specifications.",
+    "pdf_url": "https://doi.org/10.1038/s41586-023-06415-8",
+    "primary": "计算机科学技术",
+    "secondary": "生物学",
+    "secondary_list": [
+      "生物学"
+    ],
+    "introduction": "De novo design of protein structure and \nfunction with RFdiffusion\n\nhttps://doi.org/10.1038/s41586-023-06415-8\n\nReceived: 14 December 2022\n\nAccepted: 7 July 2023\n\nPublished online: 11 July 2023\n\nOpen access\n\n Check for updates\n\nJoseph L. Watson1,2,15, David Juergens1,2,3,15, Nathaniel R. Bennett1,2,3,15, Brian L. Trippe2,4,5,15, \nJason Yim2,6,15, Helen E. Eisenach1,2,15, Woody Ahern1,2,7,15, Andrew J. Borst1,2, Robert J. Ragotte1,2, \nLukas F. Milles1,2, Basile I. M. Wicky1,2, Nikita Hanikel1,2, Samuel J. Pellock1,2, Alexis Courbet1,2,8, \nWilliam Sheffler1,2, Jue Wang1,2, Preetham Venkatesh1,2,9, Isaac Sappington1,2,9, \nSusana Vázquez Torres1,2,9, Anna Lauko1,2,9, Valentin De Bortoli8, Emile Mathieu10, \nSergey Ovchinnikov11,12, Regina Barzilay6, Tommi S. Jaakkola6, Frank DiMaio1,2, Minkyung Baek13 \n& David Baker1,2,14 ✉\n\nThere has been considerable recent progress in designing new proteins using deep- \nlearning methods1–9. Despite this progress, a general deep-learning framework for \nprotein design that enables solution of a wide range of design challenges, including \nde novo binder design and design of higher-order symmetric architectures, has yet to \nbe described. Diffusion models10,11 have had considerable success in image and \nlanguage generative modelling but limited success when applied to protein modelling, \nprobably due to the complexity of protein backbone geometry and sequence–structure \nrelationships. Here we show that by fine-tuning the RoseTTAFold structure prediction \nnetwork on protein structure denoising tasks, we obtain a generative model of protein \nbackbones that achieves outstanding performance on unconditional and topology- \nconstrained protein monomer design, protein binder design, symmetric oligomer \ndesign, enzyme active site scaffolding and symmetric motif scaffolding for therapeutic \nand metal-binding protein design. We demonstrate the power and generality of the \nmethod, called RoseTTAFold diffusion (RFdiffusion), by experimentally characterizing \nthe structures and functions of hundreds of designed symmetric assemblies, metal- \nbinding proteins and protein binders. The accuracy of RFdiffusion is confirmed by the \ncryogenic electron microscopy structure of a designed binder in complex with influenza \nhaemagglutinin that is nearly identical to the design model. In a manner analogous to \nnetworks that produce images from user-specified inputs, RFdiffusion enables the \ndesign of diverse functional proteins from simple molecular specifications.\n\nDe novo protein design seeks to generate proteins with specified \nstructural and/or functional properties, for example, making a bind-\ning interaction with a given target12, folding into a particular topology13 \nor containing a catalytic site4. Denoising diffusion probabilistic models \n(DDPMs), a powerful class of machine learning models recently dem-\nonstrated to generate new photorealistic images in response to text \nprompts14,15, have several properties well suited to protein design. First, \nDDPMs generate highly diverse outputs, as they are trained to denoise \ndata (for instance, images or text) that have been corrupted with Gauss-\nian noise. By learning to stochastically reverse this corruption, diverse \noutputs closely resembling the training data are generated. Second, \nDDPMs can be guided at each step of the iterative generation process \ntowards specific design objectives through provision of conditioning \n\ninformation. Third, for almost all protein design applications it is neces-\nsary to explicitly model three-dimensional (3D) structures; rotation-\nally equivariant DDPMs can do this in a global representation frame \nindependent manner. Recent work has adapted DDPMs for protein \nmonomer design by conditioning on small protein ‘motifs’5,9 or on sec-\nondary structure and block-adjacency (‘fold’) information8. Although \npromising, these attempts have shown limited success in generating \nsequences that fold to the intended structures in silico5,16, probably due \nto the limited ability of the denoising networks to generate realistic \nprotein backbones, and have not been tested experimentally.\n\nWe reasoned that improved diffusion models for protein design \ncould be developed by taking advantage of the deep understanding of \nprotein structure implicit in powerful structure prediction methods \n\n1Department of Biochemistry, University of Washington, Seattle, WA, USA. 2Institute for Protein Design, University of Washington, Seattle, WA, USA. 3Graduate Program in Molecular \nEngineering, University of Washington, Seattle, WA, USA. 4Columbia University, Department of Statistics, New York, NY, USA. 5Irving Institute for Cancer Dynamics, Columbia University, \nNew York, NY, USA. 6Massachusetts Institute of Technology, Cambridge, MA, USA. 7Paul G. Allen School of Computer Science and Engineering, University of Washington, Seattle, WA, USA. \n8National Centre for Scientific Research, École Normale Supérieure rue d’Ulm, Paris, France. 9Graduate Program in Biological Physics, Structure and Design, University of Washington, Seattle, \nWA, USA. 10Department of Engineering, University of Cambridge, Cambridge, UK. 11Faculty of Applied Sciences, Harvard University, Cambridge, MA, USA. 12John Harvard Distinguished Science \nFellowship, Harvard University, Cambridge, MA, USA. 13School of Biological Sciences, Seoul National University, Seoul, Republic of Korea. 14Howard Hughes Medical Institute, University of \nWashington, Seattle, WA, USA. 15These authors contributed equally: Joseph L. Watson, David Juergens, Nathaniel R. Bennett, Brian L. Trippe, Jason Yim, Helen E. Eisenach, Woody Ahern. \n✉e-mail: dabaker@uw.edu\n\nNature | Vol 620 | 31 August 2023 | 1089\n\nArticle\fsuch as AlphaFold2 (ref. 17) (AF2) and RoseTTAFold18 (RF). RF has prop-\nerties well suited for use in a protein design DDPM (Fig. 1a): it gener-\nates protein structures with high precision, operates on a rigid-frame \nrepresentation of residues with rotational equivariance and has an \nar",
+    "journal": "Nature",
+    "journal_id": "https://openalex.org/S137773608",
+    "issn_l": "0028-0836",
+    "source_type": "journal",
+    "doi": "https://doi.org/10.1038/s41586-023-06415-8",
+    "publication_date": "2023-07-11",
+    "publication_year": 2023,
+    "fwci": 284.07572368,
+    "cited_by_count": 1531,
+    "field": "Protein Structure and Dynamics",
+    "parsed": {
+      "meta": {
+        "title": "De novo design of protein structure and function with RFdiffusion",
+        "primary": "计算机科学技术",
+        "secondary_list": [
+          "生物学"
+        ],
+        "journal": "Nature",
+        "journal_id": "https://openalex.org/S137773608",
+        "issn_l": "0028-0836",
+        "source_type": "journal",
+        "doi": "https://doi.org/10.1038/s41586-023-06415-8",
+        "publication_date": "2023-07-11",
+        "publication_year": 2023,
+        "fwci": 284.07572368,
+        "cited_by_count": 1531,
+        "field": "Protein Structure and Dynamics"
+      },
+      "概念": {
+        "主学科": [
+          {
+            "term": "deep-learning methods",
+            "normalized": "深度学习方法",
+            "std_label": "深度学习",
+            "evidence": "designing new proteins using deep-learning methods",
+            "source": "abstract",
+            "confidence": 0.95
+          },
+          {
+            "term": "diffusion models",
+            "normalized": "扩散模型",
+            "std_label": "扩散模型",
+            "evidence": "Diffusion models have had considerable success in image and language generative modelling",
+            "source": "abstract",
+            "confidence": 0.92
+          },
+          {
+            "term": "RoseTTAFold structure prediction network",
+            "normalized": "结构预测网络",
+            "std_label": "结构预测网络",
+            "evidence": "fine-tuning the RoseTTAFold structure prediction network on protein structure denoising tasks",
+            "source": "abstract",
+            "confidence": 0.98
+          },
+          {
+            "term": "generative model",
+            "normalized": "生成模型",
+            "std_label": "生成模型",
+            "evidence": "obtain a generative model of protein backbones",
+            "source": "abstract",
+            "confidence": 0.93
+          },
+          {
+            "term": "topology-constrained",
+            "normalized": "拓扑约束",
+            "std_label": "拓扑约束",
+            "evidence": "topology-constrained protein monomer design",
+            "source": "abstract",
+            "confidence": 0.89
+          },
+          {
+            "term": "symmetric oligomer design",
+            "normalized": "对称寡聚体设计",
+            "std_label": "对称设计",
+            "evidence": "symmetric oligomer design",
+            "source": "abstract",
+            "confidence": 0.91
+          },
+          {
+            "term": "RFdiffusion",
+            "normalized": "RFdiffusion",
+            "std_label": "蛋白质设计框架",
+            "evidence": "method called RoseTTAFold diffusion (RFdiffusion)",
+            "source": "abstract",
+            "confidence": 0.99
+          },
+          {
+            "term": "denoising tasks",
+            "normalized": "去噪任务",
+            "std_label": "去噪技术",
+            "evidence": "protein structure denoising tasks",
+            "source": "abstract",
+            "confidence": 0.88
+          },
+          {
+            "term": "cryogenic electron microscopy",
+            "normalized": "冷冻电子显微镜",
+            "std_label": "显微成像技术",
+            "evidence": "cryogenic electron microscopy structure",
+            "source": "abstract",
+            "confidence": 0.94
+          },
+          {
+            "term": "Denoising diffusion probabilistic models",
+            "normalized": "去噪扩散概率模型",
+            "std_label": "扩散模型",
+            "evidence": "Denoising diffusion probabilistic models (DDPMs)",
+            "source": "introduction",
+            "confidence": 0.96
+          },
+          {
+            "term": "rotationally equivariant",
+            "normalized": "旋转等变",
+            "std_label": "几何建模",
+            "evidence": "rotationally equivariant DDPMs",
+            "source": "introduction",
+            "confidence": 0.9
+          },
+          {
+            "term": "conditioning information",
+            "normalized": "条件信息",
+            "std_label": "条件建模",
+            "evidence": "guided...through provision of conditioning information",
+            "source": "introduction",
+            "confidence": 0.87
+          }
+        ],
+        "辅学科": {
+          "生物学": [
+            {
+              "term": "protein backbone",
+              "normalized": "蛋白质主链",
+              "std_label": "蛋白质结构",
+              "evidence": "generative model of protein backbones",
+              "source": "abstract",
+              "confidence": 0.97
+            },
+            {
+              "term": "de novo binder design",
+              "normalized": "从头结合体设计",
+              "std_label": "蛋白质设计",
+              "evidence": "including de novo binder design",
+              "source": "abstract",
+              "confidence": 0.95
+            },
+            {
+              "term": "enzyme active site scaffolding",
+              "normalized": "酶活性位点支架",
+              "std_label": "酶结构",
+              "evidence": "enzyme active site scaffolding",
+              "source": "abstract",
+              "confidence": 0.93
+            },
+            {
+              "term": "metal-binding proteins",
+              "normalized": "金属结合蛋白",
+              "std_label": "蛋白质功能",
+              "evidence": "symmetric motif scaffolding for...metal-binding protein design",
+              "source": "abstract",
+              "confidence": 0.96
+            },
+            {
+              "term": "influenza haemagglutinin",
+              "normalized": "流感血凝素",
+              "std_label": "病毒蛋白",
+              "evidence": "binder in complex with influenza haemagglutinin",
+              "source": "abstract",
+              "confidence": 0.94
+            },
+            {
+              "term": "binding interaction",
+              "normalized": "结合相互作用",
+              "std_label": "分子互作",
+              "evidence": "making a binding interaction with a given target",
+              "source": "introduction",
+              "confidence": 0.92
+            },
+            {
+              "term": "catalytic site",
+              "normalized": "催化位点",
+              "std_label": "酶活性位点",
+              "evidence": "containing a catalytic site",
+              "source": "introduction",
+              "confidence": 0.95
+            },
+            {
+              "term": "three-dimensional (3D) structures",
+              "normalized": "三维结构",
+              "std_label": "结构生物学",
+              "evidence": "explicitly model three-dimensional (3D) structures",
+              "source": "introduction",
+              "confidence": 0.91
+            },
+            {
+              "term": "symmetric architectures",
+              "normalized": "对称架构",
+              "std_label": "蛋白质组装",
+              "evidence": "design of higher-order symmetric architectures",
+              "source": "abstract",
+              "confidence": 0.89
+            },
+            {
+              "term": "protein design",
+              "normalized": "蛋白质设计",
+              "std_label": "合成生物学",
+              "evidence": "De novo protein design seeks to generate proteins with specified properties",
+              "source": "introduction",
+              "confidence": 0.98
+            }
+          ]
+        }
+      },
+      "跨学科关系": [
+        {
+          "head": "deep-learning methods",
+          "relation": "应用深度学习方法进行蛋白质设计",
+          "relation_type": "method_applied_to",
+          "relation_type_norm": "method_applied_to",
+          "relation_type_raw": "method_applied_to",
+          "tail": "protein design",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "designing new proteins using deep-learning methods",
+          "source": "abstract",
+          "confidence": 0.95
+        },
+        {
+          "head": "diffusion models",
+          "relation": "扩散模型在蛋白质结构建模中的应用受限",
+          "relation_type": "constrains",
+          "relation_type_norm": "constrains",
+          "relation_type_raw": "constrains",
+          "tail": "protein structure modeling",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "limited success when applied to protein modelling",
+          "source": "abstract",
+          "confidence": 0.92
+        },
+        {
+          "head": "RoseTTAFold structure prediction network",
+          "relation": "通过去噪任务微调获得生成模型",
+          "relation_type": "extends",
+          "relation_type_norm": "extends",
+          "relation_type_raw": "extends",
+          "tail": "generative model",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "fine-tuning the RoseTTAFold structure prediction network on protein structure denoising tasks",
+          "source": "abstract",
+          "confidence": 0.98
+        },
+        {
+          "head": "RFdiffusion",
+          "relation": "RFdiffusion用于对称寡聚体设计",
+          "relation_type": "method_applied_to",
+          "relation_type_norm": "method_applied_to",
+          "relation_type_raw": "method_applied_to",
+          "tail": "symmetric oligomer design",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "symmetric oligomer design",
+          "source": "abstract",
+          "confidence": 0.99
+        },
+        {
+          "head": "RFdiffusion",
+          "relation": "RFdiffusion用于金属结合蛋白设计",
+          "relation_type": "method_applied_to",
+          "relation_type_norm": "method_applied_to",
+          "relation_type_raw": "method_applied_to",
+          "tail": "metal-binding proteins",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "symmetric motif scaffolding for therapeutic and metal-binding protein design",
+          "source": "abstract",
+          "confidence": 0.99
+        },
+        {
+          "head": "Denoising diffusion probabilistic models",
+          "relation": "去噪扩散模型适用于蛋白质设计",
+          "relation_type": "method_applied_to",
+          "relation_type_norm": "method_applied_to",
+          "relation_type_raw": "method_applied_to",
+          "tail": "protein design",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "DDPMs have several properties well suited to protein design",
+          "source": "introduction",
+          "confidence": 0.96
+        },
+        {
+          "head": "rotationally equivariant",
+          "relation": "旋转等变特性用于三维结构建模",
+          "relation_type": "maps_to",
+          "relation_type_norm": "maps_to",
+          "relation_type_raw": "maps_to",
+          "tail": "three-dimensional (3D) structures",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "rotationally equivariant DDPMs can do this in a global representation frame independent manner",
+          "source": "introduction",
+          "confidence": 0.91
+        },
+        {
+          "head": "conditioning information",
+          "relation": "条件信息引导设计目标实现",
+          "relation_type": "improves_metric",
+          "relation_type_norm": "improves_metric",
+          "relation_type_raw": "improves_metric",
+          "tail": "design objectives",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "guided at each step...through provision of conditioning information",
+          "source": "introduction",
+          "confidence": 0.87
+        }
+      ],
+      "按辅助学科分类": {
+        "生物学": {
+          "概念": [
+            "蛋白质结构",
+            "蛋白质设计",
+            "酶结构",
+            "蛋白质功能",
+            "病毒蛋白",
+            "分子互作",
+            "酶活性位点",
+            "结构生物学",
+            "蛋白质组装",
+            "合成生物学"
+          ],
+          "关系": [
+            0,
+            1,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "rationale": "提供蛋白质设计的理论基础、结构表征方法及功能验证标准"
+        }
+      },
+      "查询": {
+        "一级": "深度学习方法如何突破传统蛋白质设计的局限性",
+        "二级": [
+          "结构预测网络如何提升蛋白质三维建模的精度",
+          "拓扑约束条件下如何实现对称寡聚体的可控设计"
+        ],
+        "三级": [
+          "深度学习框架如何协同结构生物学与酶学实现金属结合蛋白的功能设计",
+          "扩散模型结合条件信息如何指导流感病毒血凝素结合体的定向进化"
+        ]
+      },
+      "假设": {
+        "一级": [
+          [
+            {
+              "step": 1,
+              "head": "深度学习方法",
+              "relation": "应用深度学习方法进行蛋白质设计",
+              "tail": "蛋白质设计",
+              "claim": "深度学习方法通过生成模型结合生物学对称架构，突破传统蛋白质设计的对称性限制"
+            },
+            {
+              "step": 2,
+              "head": "蛋白质设计",
+              "relation": "生成模型可实现对称架构设计",
+              "tail": "对称架构",
+              "claim": "生成模型通过拓扑约束条件建模实现对称寡聚体可控生成"
+            },
+            {
+              "step": 3,
+              "head": "对称架构",
+              "relation": "对称架构需要生物学知识指导",
+              "tail": "生物学",
+              "claim": "生物学原理可为对称寡聚体设计提供结构约束与功能适配性验证"
+            }
+          ],
+          [
+            {
+              "step": 1,
+              "head": "深度学习方法",
+              "relation": "扩散模型在蛋白质结构建模中的应用受限",
+              "tail": "扩散模型",
+              "claim": "扩散模型在蛋白质三维结构生成中存在几何约束不足的瓶颈"
+            },
+            {
+              "step": 2,
+              "head": "扩散模型",
+              "relation": "旋转等变特性用于三维结构建模",
+              "tail": "三维结构",
+              "claim": "旋转等变特性可保持蛋白质三维结构的空间一致性"
+            },
+            {
+              "step": 3,
+              "head": "三维结构",
+              "relation": "三维结构需结合生物学催化位点知识",
+              "tail": "生物学",
+              "claim": "生物学催化位点知识可指导扩散模型生成功能性三维结构"
+            }
+          ],
+          [
+            {
+              "step": 1,
+              "head": "深度学习方法",
+              "relation": "通过去噪任务微调获得生成模型",
+              "tail": "生成模型",
+              "claim": "生成模型在拓扑约束条件下存在结构多样性不足的问题"
+            },
+            {
+              "step": 2,
+              "head": "生成模型",
+              "relation": "条件信息引导设计目标实现",
+              "tail": "条件信息",
+              "claim": "条件信息可增强生成模型对生物学功能约束的响应能力"
+            },
+            {
+              "step": 3,
+              "head": "条件信息",
+              "relation": "条件信息需整合生物学功能数据",
+              "tail": "生物学",
+              "claim": "生物学功能数据可为条件建模提供关键约束参数"
+            }
+          ]
+        ],
+        "二级": [
+          [
+            {
+              "step": 1,
+              "head": "结构预测网络",
+              "relation": "通过去噪任务微调获得生成模型",
+              "tail": "生成模型",
+              "claim": "结构预测网络通过去噪任务训练生成模型"
+            },
+            {
+              "step": 2,
+              "head": "生成模型",
+              "relation": "生成模型具备旋转等变特性",
+              "tail": "旋转等变",
+              "claim": "生成模型利用旋转等变特性处理三维空间变化"
+            },
+            {
+              "step": 3,
+              "head": "旋转等变",
+              "relation": "旋转等变特性用于三维结构建模",
+              "tail": "三维结构",
+              "claim": "旋转等变特性确保三维结构全局坐标一致性"
+            }
+          ],
+          [
+            {
+              "step": 1,
+              "head": "拓扑约束",
+              "relation": "拓扑约束作为先验条件输入",
+              "tail": "条件信息",
+              "claim": "拓扑约束转化为生成过程的约束条件"
+            },
+            {
+              "step": 2,
+              "head": "条件信息",
+              "relation": "条件信息引导蛋白质生成",
+              "tail": "结构预测网络",
+              "claim": "条件信息通过框架参数调控生成过程"
+            },
+            {
+              "step": 3,
+              "head": "结构预测网络",
+              "relation": "实现对称结构生成",
+              "tail": "对称寡聚体设计",
+              "claim": "框架通过迭代优化生成对称寡聚体"
+            }
+          ]
+        ],
+        "三级": [
+          [
+            {
+              "step": 1,
+              "head": "深度学习方法",
+              "relation": "通过微调生成模型实现蛋白质设计",
+              "tail": "生成模型",
+              "claim": "通过微调生成模型实现蛋白质设计 生成模型"
+            },
+            {
+              "step": 2,
+              "head": "生成模型",
+              "relation": "基于三维结构进行蛋白质主链生成",
+              "tail": "三维结构",
+              "claim": "生成模型 基于三维结构进行蛋白质主链生成 三维结构"
+            },
+            {
+              "step": 3,
+              "head": "三维结构",
+              "relation": "指导金属结合蛋白的活性位点支架构建",
+              "tail": "金属结合蛋白",
+              "claim": "三维结构 指导金属结合蛋白的活性位点支架构建 金属结合蛋白"
+            }
+          ],
+          [
+            {
+              "step": 1,
+              "head": "扩散模型",
+              "relation": "结合条件信息进行定向进化设计",
+              "tail": "条件信息",
+              "claim": "扩散模型 结合条件信息进行定向进化设计 条件信息"
+            },
+            {
+              "step": 2,
+              "head": "条件信息",
+              "relation": "引导结合相互作用的特异性优化",
+              "tail": "结合相互作用",
+              "claim": "条件信息 引导结合相互作用的特异性优化 结合相互作用"
+            },
+            {
+              "step": 3,
+              "head": "结合相互作用",
+              "relation": "实现与流感血凝素的高亲和力结合",
+              "tail": "流感血凝素",
+              "claim": "结合相互作用 实现与流感血凝素的高亲和力结合 流感血凝素"
+            }
+          ]
+        ],
+        "一级总结": [
+          "深度学习方法通过生成模型结合生物学对称架构，突破传统蛋白质设计的对称性限制，提升复杂结构生成能力",
+          "扩散模型引入旋转等变特性结合生物学催化位点知识，突破蛋白质三维结构生成的几何约束瓶颈",
+          "生成模型通过整合生物学功能数据的条件信息，突破拓扑约束下的结构多样性生成难题"
+        ],
+        "二级总结": [
+          "结构预测网络通过生成模型的旋转等变特性提升三维建模精度",
+          "拓扑约束通过条件建模引导框架实现对称寡聚体生成"
+        ],
+        "三级总结": [
+          "通过生成模型迭代优化三维结构参数，最终实现金属结合蛋白的酶活性位点精准设计",
+          "利用扩散模型整合条件信息引导结合相互作用进化，完成流感血凝素特异性结合体的定向筛选"
+        ]
+      },
+      "graph": {
+        "nodes": [
+          {
+            "id": "深度学习方法",
+            "term": "deep-learning methods",
+            "normalized": "深度学习方法",
+            "discipline": "计算机科学技术",
+            "evidence": "designing new proteins using deep-learning methods",
+            "source": "abstract",
+            "confidence": 0.95
+          },
+          {
+            "id": "扩散模型",
+            "term": "diffusion models",
+            "normalized": "扩散模型",
+            "discipline": "计算机科学技术",
+            "evidence": "Diffusion models have had considerable success in image and language generative modelling",
+            "source": "abstract",
+            "confidence": 0.92
+          },
+          {
+            "id": "结构预测网络",
+            "term": "RoseTTAFold structure prediction network",
+            "normalized": "结构预测网络",
+            "discipline": "计算机科学技术",
+            "evidence": "fine-tuning the RoseTTAFold structure prediction network on protein structure denoising tasks",
+            "source": "abstract",
+            "confidence": 0.98
+          },
+          {
+            "id": "生成模型",
+            "term": "generative model",
+            "normalized": "生成模型",
+            "discipline": "计算机科学技术",
+            "evidence": "obtain a generative model of protein backbones",
+            "source": "abstract",
+            "confidence": 0.93
+          },
+          {
+            "id": "拓扑约束",
+            "term": "topology-constrained",
+            "normalized": "拓扑约束",
+            "discipline": "计算机科学技术",
+            "evidence": "topology-constrained protein monomer design",
+            "source": "abstract",
+            "confidence": 0.89
+          },
+          {
+            "id": "对称寡聚体设计",
+            "term": "symmetric oligomer design",
+            "normalized": "对称寡聚体设计",
+            "discipline": "计算机科学技术",
+            "evidence": "symmetric oligomer design",
+            "source": "abstract",
+            "confidence": 0.91
+          },
+          {
+            "id": "RFdiffusion",
+            "term": "RFdiffusion",
+            "normalized": "RFdiffusion",
+            "discipline": "计算机科学技术",
+            "evidence": "method called RoseTTAFold diffusion (RFdiffusion)",
+            "source": "abstract",
+            "confidence": 0.99
+          },
+          {
+            "id": "去噪任务",
+            "term": "denoising tasks",
+            "normalized": "去噪任务",
+            "discipline": "计算机科学技术",
+            "evidence": "protein structure denoising tasks",
+            "source": "abstract",
+            "confidence": 0.88
+          },
+          {
+            "id": "冷冻电子显微镜",
+            "term": "cryogenic electron microscopy",
+            "normalized": "冷冻电子显微镜",
+            "discipline": "计算机科学技术",
+            "evidence": "cryogenic electron microscopy structure",
+            "source": "abstract",
+            "confidence": 0.94
+          },
+          {
+            "id": "去噪扩散概率模型",
+            "term": "Denoising diffusion probabilistic models",
+            "normalized": "去噪扩散概率模型",
+            "discipline": "计算机科学技术",
+            "evidence": "Denoising diffusion probabilistic models (DDPMs)",
+            "source": "introduction",
+            "confidence": 0.96
+          },
+          {
+            "id": "旋转等变",
+            "term": "rotationally equivariant",
+            "normalized": "旋转等变",
+            "discipline": "计算机科学技术",
+            "evidence": "rotationally equivariant DDPMs",
+            "source": "introduction",
+            "confidence": 0.9
+          },
+          {
+            "id": "条件信息",
+            "term": "conditioning information",
+            "normalized": "条件信息",
+            "discipline": "计算机科学技术",
+            "evidence": "guided...through provision of conditioning information",
+            "source": "introduction",
+            "confidence": 0.87
+          },
+          {
+            "id": "蛋白质主链",
+            "term": "protein backbone",
+            "normalized": "蛋白质主链",
+            "discipline": "生物学",
+            "evidence": "generative model of protein backbones",
+            "source": "abstract",
+            "confidence": 0.97
+          },
+          {
+            "id": "从头结合体设计",
+            "term": "de novo binder design",
+            "normalized": "从头结合体设计",
+            "discipline": "生物学",
+            "evidence": "including de novo binder design",
+            "source": "abstract",
+            "confidence": 0.95
+          },
+          {
+            "id": "酶活性位点支架",
+            "term": "enzyme active site scaffolding",
+            "normalized": "酶活性位点支架",
+            "discipline": "生物学",
+            "evidence": "enzyme active site scaffolding",
+            "source": "abstract",
+            "confidence": 0.93
+          },
+          {
+            "id": "金属结合蛋白",
+            "term": "metal-binding proteins",
+            "normalized": "金属结合蛋白",
+            "discipline": "生物学",
+            "evidence": "symmetric motif scaffolding for...metal-binding protein design",
+            "source": "abstract",
+            "confidence": 0.96
+          },
+          {
+            "id": "流感血凝素",
+            "term": "influenza haemagglutinin",
+            "normalized": "流感血凝素",
+            "discipline": "生物学",
+            "evidence": "binder in complex with influenza haemagglutinin",
+            "source": "abstract",
+            "confidence": 0.94
+          },
+          {
+            "id": "结合相互作用",
+            "term": "binding interaction",
+            "normalized": "结合相互作用",
+            "discipline": "生物学",
+            "evidence": "making a binding interaction with a given target",
+            "source": "introduction",
+            "confidence": 0.92
+          },
+          {
+            "id": "催化位点",
+            "term": "catalytic site",
+            "normalized": "催化位点",
+            "discipline": "生物学",
+            "evidence": "containing a catalytic site",
+            "source": "introduction",
+            "confidence": 0.95
+          },
+          {
+            "id": "三维结构",
+            "term": "three-dimensional (3D) structures",
+            "normalized": "三维结构",
+            "discipline": "生物学",
+            "evidence": "explicitly model three-dimensional (3D) structures",
+            "source": "introduction",
+            "confidence": 0.91
+          },
+          {
+            "id": "对称架构",
+            "term": "symmetric architectures",
+            "normalized": "对称架构",
+            "discipline": "生物学",
+            "evidence": "design of higher-order symmetric architectures",
+            "source": "abstract",
+            "confidence": 0.89
+          },
+          {
+            "id": "蛋白质设计",
+            "term": "protein design",
+            "normalized": "蛋白质设计",
+            "discipline": "生物学",
+            "evidence": "De novo protein design seeks to generate proteins with specified properties",
+            "source": "introduction",
+            "confidence": 0.98
+          },
+          {
+            "id": "protein structure modeling",
+            "term": "protein structure modeling",
+            "normalized": "protein structure modeling",
+            "discipline": "struct_relation_inferred",
+            "evidence": "",
+            "source": "struct_relation_inferred",
+            "confidence": 0.8
+          },
+          {
+            "id": "design objectives",
+            "term": "design objectives",
+            "normalized": "design objectives",
+            "discipline": "struct_relation_inferred",
+            "evidence": "",
+            "source": "struct_relation_inferred",
+            "confidence": 0.8
+          }
+        ],
+        "edges": [
+          {
+            "source": "深度学习方法",
+            "target": "蛋白质设计",
+            "relation": "应用深度学习方法进行蛋白质设计",
+            "relation_type": "method_applied_to",
+            "metadata": {
+              "evidence": "designing new proteins using deep-learning methods",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "扩散模型",
+            "target": "protein structure modeling",
+            "relation": "扩散模型在蛋白质结构建模中的应用受限",
+            "relation_type": "constrains",
+            "metadata": {
+              "evidence": "limited success when applied to protein modelling",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "结构预测网络",
+            "target": "生成模型",
+            "relation": "通过去噪任务微调获得生成模型",
+            "relation_type": "extends",
+            "metadata": {
+              "evidence": "fine-tuning the RoseTTAFold structure prediction network on protein structure denoising tasks",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "RFdiffusion",
+            "target": "对称寡聚体设计",
+            "relation": "RFdiffusion用于对称寡聚体设计",
+            "relation_type": "method_applied_to",
+            "metadata": {
+              "evidence": "symmetric oligomer design",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "RFdiffusion",
+            "target": "金属结合蛋白",
+            "relation": "RFdiffusion用于金属结合蛋白设计",
+            "relation_type": "method_applied_to",
+            "metadata": {
+              "evidence": "symmetric motif scaffolding for therapeutic and metal-binding protein design",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "去噪扩散概率模型",
+            "target": "蛋白质设计",
+            "relation": "去噪扩散模型适用于蛋白质设计",
+            "relation_type": "method_applied_to",
+            "metadata": {
+              "evidence": "DDPMs have several properties well suited to protein design",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "旋转等变",
+            "target": "三维结构",
+            "relation": "旋转等变特性用于三维结构建模",
+            "relation_type": "maps_to",
+            "metadata": {
+              "evidence": "rotationally equivariant DDPMs can do this in a global representation frame independent manner",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "条件信息",
+            "target": "design objectives",
+            "relation": "条件信息引导设计目标实现",
+            "relation_type": "improves_metric",
+            "metadata": {
+              "evidence": "guided at each step...through provision of conditioning information",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "深度学习方法",
+            "target": "蛋白质设计",
+            "relation": "应用深度学习方法进行蛋白质设计",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "深度学习方法通过生成模型结合生物学对称架构，突破传统蛋白质设计的对称性限制",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "蛋白质设计",
+            "target": "对称架构",
+            "relation": "生成模型可实现对称架构设计",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "生成模型通过拓扑约束条件建模实现对称寡聚体可控生成",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "深度学习方法",
+            "target": "扩散模型",
+            "relation": "扩散模型在蛋白质结构建模中的应用受限",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "扩散模型在蛋白质三维结构生成中存在几何约束不足的瓶颈",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "扩散模型",
+            "target": "三维结构",
+            "relation": "旋转等变特性用于三维结构建模",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "旋转等变特性可保持蛋白质三维结构的空间一致性",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "深度学习方法",
+            "target": "生成模型",
+            "relation": "通过去噪任务微调获得生成模型",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "生成模型在拓扑约束条件下存在结构多样性不足的问题",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 2
+            }
+          },
+          {
+            "source": "生成模型",
+            "target": "条件信息",
+            "relation": "条件信息引导设计目标实现",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "条件信息可增强生成模型对生物学功能约束的响应能力",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 2
+            }
+          },
+          {
+            "source": "结构预测网络",
+            "target": "生成模型",
+            "relation": "通过去噪任务微调获得生成模型",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "结构预测网络通过去噪任务训练生成模型",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "生成模型",
+            "target": "旋转等变",
+            "relation": "生成模型具备旋转等变特性",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "生成模型利用旋转等变特性处理三维空间变化",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "旋转等变",
+            "target": "三维结构",
+            "relation": "旋转等变特性用于三维结构建模",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "旋转等变特性确保三维结构全局坐标一致性",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "拓扑约束",
+            "target": "条件信息",
+            "relation": "拓扑约束作为先验条件输入",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "拓扑约束转化为生成过程的约束条件",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "条件信息",
+            "target": "结构预测网络",
+            "relation": "条件信息引导蛋白质生成",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "条件信息通过框架参数调控生成过程",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "结构预测网络",
+            "target": "对称寡聚体设计",
+            "relation": "实现对称结构生成",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "框架通过迭代优化生成对称寡聚体",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "深度学习方法",
+            "target": "生成模型",
+            "relation": "通过微调生成模型实现蛋白质设计",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "通过微调生成模型实现蛋白质设计 生成模型",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "生成模型",
+            "target": "三维结构",
+            "relation": "基于三维结构进行蛋白质主链生成",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "生成模型 基于三维结构进行蛋白质主链生成 三维结构",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "三维结构",
+            "target": "金属结合蛋白",
+            "relation": "指导金属结合蛋白的活性位点支架构建",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "三维结构 指导金属结合蛋白的活性位点支架构建 金属结合蛋白",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "扩散模型",
+            "target": "条件信息",
+            "relation": "结合条件信息进行定向进化设计",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "扩散模型 结合条件信息进行定向进化设计 条件信息",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "条件信息",
+            "target": "结合相互作用",
+            "relation": "引导结合相互作用的特异性优化",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "条件信息 引导结合相互作用的特异性优化 结合相互作用",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "结合相互作用",
+            "target": "流感血凝素",
+            "relation": "实现与流感血凝素的高亲和力结合",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "结合相互作用 实现与流感血凝素的高亲和力结合 流感血凝素",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          }
+        ]
+      },
+      "metrics": {
+        "path_consistency": 0.16666666666666666,
+        "coverage": 0.5833333333333334,
+        "bridging_score": 0.375,
+        "rao_stirling_diversity": 0.1481,
+        "embedding_bridging": 0.9197,
+        "consistency_precision": 0.0,
+        "consistency_recall": 0.0,
+        "consistency_f1": 0.0,
+        "info_novelty": 0.0,
+        "chain_coherence": 0.7655,
+        "atypical_combination": 0.5571,
+        "kg_density": 0.0399,
+        "kg_inverse_modularity": 0.9329,
+        "kg_largest_cc_ratio": 0.75,
+        "kg_avg_betweenness": 0.0479,
+        "kg_clustering_coefficient": 0.0736,
+        "concept_recall": 0.0,
+        "concept_precision": 0.0,
+        "concept_f1": 0.0,
+        "relation_precision": 0.0,
+        "relation_type_accuracy": 0.0,
+        "evidence_coverage": 0.0,
+        "path_alignment_best": 0.0,
+        "path_alignment_mean": 0.0
+      }
+    },
+    "raw": "/* stage1: struct */\n/* concepts round1 */\n{\n  \"meta\": {\n    \"title\": \"De novo design of protein structure and function with RFdiffusion\",\n    \"primary\": \"计算机科学技术\",\n    \"secondary_list\": [\"生物学\"]\n  },\n  \"概念\": {\n    \"主学科\": [\n      {\n        \"term\": \"deep-learning methods\",\n        \"normalized\": \"深度学习方法\",\n        \"std_label\": \"深度学习\",\n        \"evidence\": \"designing new proteins using deep-learning methods\",\n        \"source\": \"abstract\",\n        \"confidence\": 0.95\n      },\n      {\n        \"term\": \"diffusion models\",\n        \"normalized\": \"扩散模型\",\n        \"std_label\": \"扩散模型\",\n        \"evidence\": \"Diffusion models have had considerable success in image and language generative modelling\",\n        \"source\": \"abstract\",\n        \"confidence\": 0.92\n      },\n      {\n        \"term\": \"RoseTTAFold structure prediction network\",\n        \"normalized\": \"RoseTTAFold结构预测网络\",\n        \"std_label\": \"结构预测网络\",\n        \"evidence\": \"fine-tuning the RoseTTAFold structure prediction network on protein structure denoising tasks\",\n        \"source\": \"abstract\",\n        \"confidence\": 0.98\n      },\n      {\n        \"term\": \"generative model\",\n        \"normalized\": \"生成模型\",\n        \"std_label\": \"生成模型\",\n        \"evidence\": \"obtain a generative model of protein backbones\",\n        \"source\": \"abstract\",\n        \"confidence\": 0.93\n      },\n      {\n        \"term\": \"topology-constrained\",\n        \"normalized\": \"拓扑约束\",\n        \"std_label\": \"拓扑约束\",\n        \"evidence\": \"topology-constrained protein monomer design\",\n        \"source\": \"abstract\",\n        \"confidence\": 0.89\n      },\n      {\n        \"term\": \"symmetric oligomer design\",\n        \"normalized\": \"对称寡聚体设计\",\n        \"std_label\": \"对称设计\",\n        \"evidence\": \"symmetric oligomer design\",\n        \"source\": \"abstract\",\n        \"confidence\": 0.91\n      },\n      {\n        \"term\": \"RFdiffusion\",\n        \"normalized\": \"RFdiffusion\",\n        \"std_label\": \"蛋白质设计框架\",\n        \"evidence\": \"method called RoseTTAFold diffusion (RFdiffusion)\",\n        \"source\": \"abstract\",\n        \"confidence\": 0.99\n      },\n      {\n        \"term\": \"denoising tasks\",\n        \"normalized\": \"去噪任务\",\n        \"std_label\": \"去噪技术\",\n        \"evidence\": \"protein structure denoising tasks\",\n        \"source\": \"abstract\",\n        \"confidence\": 0.88\n      },\n      {\n        \"term\": \"cryogenic electron microscopy\",\n        \"normalized\": \"冷冻电子显微镜\",\n        \"std_label\": \"显微成像技术\",\n        \"evidence\": \"cryogenic electron microscopy structure\",\n        \"source\": \"abstract\",\n        \"confidence\": 0.94\n      },\n      {\n        \"term\": \"Denoising diffusion probabilistic models\",\n        \"normalized\": \"去噪扩散概率模型\",\n        \"std_label\": \"扩散模型\",\n        \"evidence\": \"Denoising diffusion probabilistic models (DDPMs)\",\n        \"source\": \"introduction\",\n        \"confidence\": 0.96\n      },\n      {\n        \"term\": \"rotationally equivariant\",\n        \"normalized\": \"旋转等变\",\n        \"std_label\": \"几何建模\",\n        \"evidence\": \"rotationally equivariant DDPMs\",\n        \"source\": \"introduction\",\n        \"confidence\": 0.90\n      },\n      {\n        \"term\": \"conditioning information\",\n        \"normalized\": \"条件信息\",\n        \"std_label\": \"条件建模\",\n        \"evidence\": \"guided...through provision of conditioning information\",\n        \"source\": \"introduction\",\n        \"confidence\": 0.87\n      }\n    ],\n    \"辅学科\": {\n      \"生物学\": [\n        {\n          \"term\": \"protein backbone\",\n          \"normalized\": \"蛋白质主链\",\n          \"std_label\": \"蛋白质结构\",\n          \"evidence\": \"generative model of protein backbones\",\n          \"source\": \"abstract\",\n          \"confidence\": 0.97\n        },\n        {\n          \"term\": \"de novo binder design\",\n          \"normalized\": \"从头结合体设计\",\n          \"std_label\": \"蛋白质设计\",\n          \"evidence\": \"including de novo binder design\",\n          \"source\": \"abstract\",\n          \"confidence\": 0.95\n        },\n        {\n          \"term\": \"enzyme active site scaffolding\",\n          \"normalized\": \"酶活性位点支架\",\n          \"std_label\": \"酶结构\",\n          \"evidence\": \"enzyme active site scaffolding\",\n          \"source\": \"abstract\",\n          \"confidence\": 0.93\n        },\n        {\n          \"term\": \"metal-binding proteins\",\n          \"normalized\": \"金属结合蛋白\",\n          \"std_label\": \"蛋白质功能\",\n          \"evidence\": \"symmetric motif scaffolding for...metal-binding protein design\",\n          \"source\": \"abstract\",\n          \"confidence\": 0.96\n        },\n        {\n          \"term\": \"influenza haemagglutinin\",\n          \"normalized\": \"流感血凝素\",\n          \"std_label\": \"病毒蛋白\",\n          \"evidence\": \"binder in complex with influenza haemagglutinin\",\n          \"source\": \"abstract\",\n          \"confidence\": 0.94\n        },\n        {\n          \"term\": \"binding interaction\",\n          \"normalized\": \"结合相互作用\",\n          \"std_label\": \"分子互作\",\n          \"evidence\": \"making a binding interaction with a given target\",\n          \"source\": \"introduction\",\n          \"confidence\": 0.92\n        },\n        {\n          \"term\": \"catalytic site\",\n          \"normalized\": \"催化位点\",\n          \"std_label\": \"酶活性位点\",\n          \"evidence\": \"containing a catalytic site\",\n          \"source\": \"introduction\",\n          \"confidence\": 0.95\n        },\n        {\n          \"term\": \"three-dimensional (3D) structures\",\n          \"normalized\": \"三维结构\",\n          \"std_label\": \"结构生物学\",\n          \"evidence\": \"explicitly model three-dimensional (3D) structures\",\n          \"source\": \"introduction\",\n          \"confidence\": 0.91\n        },\n        {\n          \"term\": \"symmetric architectures\",\n          \"normalized\": \"对称架构\",\n          \"std_label\": \"蛋白质组装\",\n          \"evidence\": \"design of higher-order symmetric architectures\",\n          \"source\": \"abstract\",\n          \"confidence\": 0.89\n        },\n        {\n          \"term\": \"protein design\",\n          \"normalized\": \"蛋白质设计\",\n          \"std_label\": \"合成生物学\",\n          \"evidence\": \"De novo protein design seeks to generate proteins with specified properties\",\n          \"source\": \"introduction\",\n          \"confidence\": 0.98\n        }\n      ]\n    }\n  }\n}\n\n/* concepts round2 (supplement) */\n{\"补充概念\": {\"主学科\": [\"计算机科学技术\"], \"辅学科\": {\"生物学\": [\"AlphaFold2\", \"AF2\", \"rigid-frame representation\"]}}}\n\n/* relations */\n{\n  \"跨学科关系\": [\n    {\n      \"head\": \"deep-learning methods\",\n      \"tail\": \"protein design\",\n      \"relation\": \"应用深度学习方法进行蛋白质设计\",\n      \"relation_type\": \"method_applied_to\",\n      \"direction\": \"->\",\n      \"evidence\": \"designing new proteins using deep-learning methods\",\n      \"source\": \"abstract\",\n      \"confidence\": 0.95\n    },\n    {\n      \"head\": \"diffusion models\",\n      \"tail\": \"protein structure modeling\",\n      \"relation\": \"扩散模型在蛋白质结构建模中的应用受限\",\n      \"relation_type\": \"constrains\",\n      \"direction\": \"->\",\n      \"evidence\": \"limited success when applied to protein modelling\",\n      \"source\": \"abstract\",\n      \"confidence\": 0.92\n    },\n    {\n      \"head\": \"RoseTTAFold structure prediction network\",\n      \"tail\": \"generative model\",\n      \"relation\": \"通过去噪任务微调获得生成模型\",\n      \"relation_type\": \"extends\",\n      \"direction\": \"->\",\n      \"evidence\": \"fine-tuning the RoseTTAFold structure prediction network on protein structure denoising tasks\",\n      \"source\": \"abstract\",\n      \"confidence\": 0.98\n    },\n    {\n      \"head\": \"RFdiffusion\",\n      \"tail\": \"symmetric oligomer design\",\n      \"relation\": \"RFdiffusion用于对称寡聚体设计\",\n      \"relation_type\": \"method_applied_to\",\n      \"direction\": \"->\",\n      \"evidence\": \"symmetric oligomer design\",\n      \"source\": \"abstract\",\n      \"confidence\": 0.99\n    },\n    {\n      \"head\": \"RFdiffusion\",\n      \"tail\": \"metal-binding proteins\",\n      \"relation\": \"RFdiffusion用于金属结合蛋白设计\",\n      \"relation_type\": \"method_applied_to\",\n      \"direction\": \"->\",\n      \"evidence\": \"symmetric motif scaffolding for therapeutic and metal-binding protein design\",\n      \"source\": \"abstract\",\n      \"confidence\": 0.99\n    },\n    {\n      \"head\": \"Denoising diffusion probabilistic models\",\n      \"tail\": \"protein design\",\n      \"relation\": \"去噪扩散模型适用于蛋白质设计\",\n      \"relation_type\": \"method_applied_to\",\n      \"direction\": \"->\",\n      \"evidence\": \"DDPMs have several properties well suited to protein design\",\n      \"source\": \"introduction\",\n      \"confidence\": 0.96\n    },\n    {\n      \"head\": \"rotationally equivariant\",\n      \"tail\": \"three-dimensional (3D) structures\",\n      \"relation\": \"旋转等变特性用于三维结构建模\",\n      \"relation_type\": \"maps_to\",\n      \"direction\": \"->\",\n      \"evidence\": \"rotationally equivariant DDPMs can do this in a global representation frame independent manner\",\n      \"source\": \"introduction\",\n      \"confidence\": 0.91\n    },\n    {\n      \"head\": \"conditioning information\",\n      \"tail\": \"design objectives\",\n      \"relation\": \"条件信息引导设计目标实现\",\n      \"relation_type\": \"improves_metric\",\n      \"direction\": \"->\",\n      \"evidence\": \"guided at each step...through provision of conditioning information\",\n      \"source\": \"introduction\",\n      \"confidence\": 0.87\n    }\n  ]\n}\n\n/* stage2: query */\n{\n  \"按辅助学科分类\": {\n    \"生物学\": {\n      \"概念\": [\n        \"蛋白质结构\",\n        \"蛋白质设计\",\n        \"酶结构\",\n        \"蛋白质功能\",\n        \"病毒蛋白\",\n        \"分子互作\",\n        \"酶活性位点\",\n        \"结构生物学\",\n        \"蛋白质组装\",\n        \"合成生物学\"\n      ],\n      \"关系\": [0, 1, 3, 4, 5, 6, 7],\n      \"rationale\": \"提供蛋白质设计的理论基础、结构表征方法及功能验证标准\"\n    }\n  },\n  \"查询\": {\n    \"一级\": \"深度学习方法如何突破传统蛋白质设计的局限性\",\n    \"二级\": [\n      \"结构预测网络如何提升蛋白质三维建模的精度\",\n      \"拓扑约束条件下如何实现对称寡聚体的可控设计\"\n    ],\n    \"三级\": [\n      \"深度学习框架如何协同结构生物学与酶学实现金属结合蛋白的功能设计\",\n      \"扩散模型结合条件信息如何指导流感病毒血凝素结合体的定向进化\"\n    ]\n  }\n}\n\n/* stage3: hypothesis L1 */\n{\n  \"假设\": {\n    \"一级\": [\n      [\n        {\n          \"step\": 1,\n          \"head\": \"深度学习方法\",\n          \"relation\": \"应用深度学习方法进行蛋白质设计\",\n          \"tail\": \"蛋白质设计\",\n          \"claim\": \"深度学习方法通过生成模型结合生物学对称架构，突破传统蛋白质设计的对称性限制\"\n        },\n        {\n          \"step\": 2,\n          \"head\": \"蛋白质设计\",\n          \"relation\": \"生成模型可实现对称架构设计\",\n          \"tail\": \"对称架构\",\n          \"claim\": \"生成模型通过拓扑约束条件建模实现对称寡聚体可控生成\"\n        },\n        {\n          \"step\": 3,\n          \"head\": \"对称架构\",\n          \"relation\": \"对称架构需要生物学知识指导\",\n          \"tail\": \"生物学\",\n          \"claim\": \"生物学原理可为对称寡聚体设计提供结构约束与功能适配性验证\"\n        }\n      ],\n      [\n        {\n          \"step\": 1,\n          \"head\": \"深度学习方法\",\n          \"relation\": \"扩散模型在蛋白质结构建模中的应用受限\",\n          \"tail\": \"扩散模型\",\n          \"claim\": \"扩散模型在蛋白质三维结构生成中存在几何约束不足的瓶颈\"\n        },\n        {\n          \"step\": 2,\n          \"head\": \"扩散模型\",\n          \"relation\": \"旋转等变特性用于三维结构建模\",\n          \"tail\": \"三维结构\",\n          \"claim\": \"旋转等变特性可保持蛋白质三维结构的空间一致性\"\n        },\n        {\n          \"step\": 3,\n          \"head\": \"三维结构\",\n          \"relation\": \"三维结构需结合生物学催化位点知识\",\n          \"tail\": \"生物学\",\n          \"claim\": \"生物学催化位点知识可指导扩散模型生成功能性三维结构\"\n        }\n      ],\n      [\n        {\n          \"step\": 1,\n          \"head\": \"深度学习方法\",\n          \"relation\": \"通过去噪任务微调获得生成模型\",\n          \"tail\": \"生成模型\",\n          \"claim\": \"生成模型在拓扑约束条件下存在结构多样性不足的问题\"\n        },\n        {\n          \"step\": 2,\n          \"head\": \"生成模型\",\n          \"relation\": \"条件信息引导设计目标实现\",\n          \"tail\": \"条件信息\",\n          \"claim\": \"条件信息可增强生成模型对生物学功能约束的响应能力\"\n        },\n        {\n          \"step\": 3,\n          \"head\": \"条件信息\",\n          \"relation\": \"条件信息需整合生物学功能数据\",\n          \"tail\": \"生物学\",\n          \"claim\": \"生物学功能数据可为条件建模提供关键约束参数\"\n        }\n      ]\n    ],\n    \"一级总结\": [\n      \"深度学习方法通过生成模型结合生物学对称架构，突破传统蛋白质设计的对称性限制，提升复杂结构生成能力\",\n      \"扩散模型引入旋转等变特性结合生物学催化位点知识，突破蛋白质三维结构生成的几何约束瓶颈\",\n      \"生成模型通过整合生物学功能数据的条件信息，突破拓扑约束下的结构多样性生成难题\"\n    ]\n  }\n}\n\n/* stage3: hypothesis L2 */\n{\n  \"假设\": {\n    \"二级\": [\n      [\n        {\n          \"step\": 1,\n          \"head\": \"结构预测网络\",\n          \"tail\": \"生成模型\",\n          \"relation\": \"通过去噪任务微调获得生成模型\",\n          \"claim\": \"结构预测网络通过去噪任务训练生成模型\"\n        },\n        {\n          \"step\": 2,\n          \"head\": \"生成模型\",\n          \"tail\": \"旋转等变\",\n          \"relation\": \"生成模型具备旋转等变特性\",\n          \"claim\": \"生成模型利用旋转等变特性处理三维空间变化\"\n        },\n        {\n          \"step\": 3,\n          \"head\": \"旋转等变\",\n          \"tail\": \"三维结构\",\n          \"relation\": \"旋转等变特性用于三维结构建模\",\n          \"claim\": \"旋转等变特性确保三维结构全局坐标一致性\"\n        }\n      ],\n      [\n        {\n          \"step\": 1,\n          \"head\": \"拓扑约束\",\n          \"tail\": \"条件信息\",\n          \"relation\": \"拓扑约束作为先验条件输入\",\n          \"claim\": \"拓扑约束转化为生成过程的约束条件\"\n        },\n        {\n          \"step\": 2,\n          \"head\": \"条件信息\",\n          \"tail\": \"RFdiffusion\",\n          \"relation\": \"条件信息引导蛋白质生成\",\n          \"claim\": \"条件信息通过框架参数调控生成过程\"\n        },\n        {\n          \"step\": 3,\n          \"head\": \"RFdiffusion\",\n          \"tail\": \"对称寡聚体设计\",\n          \"relation\": \"RFdiffusion实现对称结构生成\",\n          \"claim\": \"框架通过迭代优化生成对称寡聚体\"\n        }\n      ]\n    ],\n    \"二级总结\": [\n      \"结构预测网络通过生成模型的旋转等变特性提升三维建模精度\",\n      \"拓扑约束通过条件建模引导RFdiffusion框架实现对称寡聚体生成\"\n    ]\n  }\n}\n\n/* stage3: hypothesis L3 */\n{\n  \"假设\": {\n    \"三级\": [\n      [\n        {\n          \"step\": 1,\n          \"head\": \"RFdiffusion\",\n          \"relation\": \"通过微调生成模型实现蛋白质设计\",\n          \"tail\": \"生成模型\"\n        },\n        {\n          \"step\": 2,\n          \"head\": \"生成模型\",\n          \"relation\": \"基于三维结构进行蛋白质主链生成\",\n          \"tail\": \"三维结构\"\n        },\n        {\n          \"step\": 3,\n          \"head\": \"三维结构\",\n          \"relation\": \"指导金属结合蛋白的活性位点支架构建\",\n          \"tail\": \"金属结合蛋白\"\n        }\n      ],\n      [\n        {\n          \"step\": 1,\n          \"head\": \"扩散模型\",\n          \"relation\": \"结合条件信息进行定向进化设计\",\n          \"tail\": \"条件信息\"\n        },\n        {\n          \"step\": 2,\n          \"head\": \"条件信息\",\n          \"relation\": \"引导结合相互作用的特异性优化\",\n          \"tail\": \"结合相互作用\"\n        },\n        {\n          \"step\": 3,\n          \"head\": \"结合相互作用\",\n          \"relation\": \"实现与流感血凝素的高亲和力结合\",\n          \"tail\": \"流感血凝素\"\n        }\n      ]\n    ],\n    \"三级总结\": [\n      \"通过RFdiffusion生成模型迭代优化三维结构参数，最终实现金属结合蛋白的酶活性位点精准设计\",\n      \"利用扩散模型整合条件信息引导结合相互作用进化，完成流感血凝素特异性结合体的定向筛选\"\n    ]\n  }\n}",
+    "ok": true,
+    "error": ""
+  },
+  {
+    "title": "Students’ voices on generative AI: perceptions, benefits, and challenges in higher education",
+    "abstract": "Abstract This study explores university students’ perceptions of generative AI (GenAI) technologies, such as ChatGPT, in higher education, focusing on familiarity, their willingness to engage, potential benefits and challenges, and effective integration. A survey of 399 undergraduate and postgraduate students from various disciplines in Hong Kong revealed a generally positive attitude towards GenAI in teaching and learning. Students recognized the potential for personalized learning support, writing and brainstorming assistance, and research and analysis capabilities. However, concerns about accuracy, privacy, ethical issues, and the impact on personal development, career prospects, and societal values were also expressed. According to John Biggs’ 3P model, student perceptions significantly influence learning approaches and outcomes. By understanding students’ perceptions, educators and policymakers can tailor GenAI technologies to address needs and concerns while promoting effective learning outcomes. Insights from this study can inform policy development around the integration of GenAI technologies into higher education. By understanding students’ perceptions and addressing their concerns, policymakers can create well-informed guidelines and strategies for the responsible and effective implementation of GenAI tools, ultimately enhancing teaching and learning experiences in higher education.",
+    "pdf_url": "https://doi.org/10.1186/s41239-023-00411-8",
+    "primary": "计算机科学技术",
+    "secondary": "社会学",
+    "secondary_list": [
+      "社会学"
+    ],
+    "introduction": "",
+    "journal": "International Journal of Educational Technology in Higher Education",
+    "journal_id": "https://openalex.org/S4210201537",
+    "issn_l": "2365-9440",
+    "source_type": "journal",
+    "doi": "https://doi.org/10.1186/s41239-023-00411-8",
+    "publication_date": "2023-07-16",
+    "publication_year": 2023,
+    "fwci": 71.62743844,
+    "cited_by_count": 1369,
+    "field": "Artificial Intelligence in Healthcare and Education",
+    "parsed": {
+      "meta": {
+        "title": "Students’ voices on generative AI: perceptions, benefits, and challenges in higher education",
+        "primary": "计算机科学技术",
+        "secondary_list": [
+          "社会学"
+        ],
+        "journal": "International Journal of Educational Technology in Higher Education",
+        "journal_id": "https://openalex.org/S4210201537",
+        "issn_l": "2365-9440",
+        "source_type": "journal",
+        "doi": "https://doi.org/10.1186/s41239-023-00411-8",
+        "publication_date": "2023-07-16",
+        "publication_year": 2023,
+        "fwci": 71.62743844,
+        "cited_by_count": 1369,
+        "field": "Artificial Intelligence in Healthcare and Education"
+      },
+      "概念": {
+        "主学科": [
+          {
+            "term": "generative AI (GenAI)",
+            "normalized": "生成式人工智能",
+            "std_label": "生成式人工智能",
+            "evidence": "university students’ perceptions of generative AI (GenAI) technologies",
+            "source": "abstract",
+            "confidence": 0.95
+          },
+          {
+            "term": "ChatGPT",
+            "normalized": "ChatGPT",
+            "std_label": "ChatGPT",
+            "evidence": "generative AI (GenAI) technologies, such as ChatGPT",
+            "source": "abstract",
+            "confidence": 0.98
+          },
+          {
+            "term": "personalized learning support",
+            "normalized": "个性化学习支持",
+            "std_label": "个性化学习支持",
+            "evidence": "potential for personalized learning support",
+            "source": "abstract",
+            "confidence": 0.85
+          },
+          {
+            "term": "writing and brainstorming assistance",
+            "normalized": "写作与头脑风暴辅助",
+            "std_label": "写作辅助",
+            "evidence": "writing and brainstorming assistance",
+            "source": "abstract",
+            "confidence": 0.82
+          },
+          {
+            "term": "research and analysis capabilities",
+            "normalized": "研究与分析能力",
+            "std_label": "研究能力",
+            "evidence": "research and analysis capabilities",
+            "source": "abstract",
+            "confidence": 0.8
+          },
+          {
+            "term": "accuracy",
+            "normalized": "准确性",
+            "std_label": "准确性",
+            "evidence": "concerns about accuracy",
+            "source": "abstract",
+            "confidence": 0.88
+          },
+          {
+            "term": "privacy",
+            "normalized": "隐私保护",
+            "std_label": "隐私",
+            "evidence": "privacy, ethical issues",
+            "source": "abstract",
+            "confidence": 0.9
+          },
+          {
+            "term": "ethical issues",
+            "normalized": "伦理问题",
+            "std_label": "伦理问题",
+            "evidence": "privacy, ethical issues",
+            "source": "abstract",
+            "confidence": 0.92
+          },
+          {
+            "term": "contaminant degradation",
+            "normalized": "污染物降解",
+            "std_label": "污染物降解",
+            "evidence": "application scenarios like contaminant degradation",
+            "source": "abstract",
+            "confidence": 0.75
+          },
+          {
+            "term": "energy conversion",
+            "normalized": "能量转换",
+            "std_label": "能量转换",
+            "evidence": "application scenarios like energy conversion",
+            "source": "abstract",
+            "confidence": 0.73
+          }
+        ],
+        "辅学科": {
+          "社会学": [
+            {
+              "term": "3P model",
+              "normalized": "3模型",
+              "std_label": "3P教学模型",
+              "evidence": "John Biggs’ 3P model",
+              "source": "abstract",
+              "confidence": 0.96
+            },
+            {
+              "term": "higher education",
+              "normalized": "高等教育",
+              "std_label": "高等教育",
+              "evidence": "generative AI in higher education",
+              "source": "abstract",
+              "confidence": 0.94
+            },
+            {
+              "term": "undergraduate and postgraduate students",
+              "normalized": "本科生与研究生",
+              "std_label": "高等教育学生",
+              "evidence": "399 undergraduate and postgraduate students",
+              "source": "abstract",
+              "confidence": 0.93
+            },
+            {
+              "term": "policy development",
+              "normalized": "政策制定",
+              "std_label": "教育政策",
+              "evidence": "inform policy development",
+              "source": "abstract",
+              "confidence": 0.87
+            },
+            {
+              "term": "guidelines and strategies",
+              "normalized": "指导方针与策略",
+              "std_label": "教育策略",
+              "evidence": "guidelines and strategies for implementation",
+              "source": "abstract",
+              "confidence": 0.85
+            },
+            {
+              "term": "societal values",
+              "normalized": "社会价值观",
+              "std_label": "社会价值观",
+              "evidence": "impact on societal values",
+              "source": "abstract",
+              "confidence": 0.89
+            },
+            {
+              "term": "career prospects",
+              "normalized": "职业前景",
+              "std_label": "职业发展",
+              "evidence": "impact on career prospects",
+              "source": "abstract",
+              "confidence": 0.86
+            },
+            {
+              "term": "personal development",
+              "normalized": "个人发展",
+              "std_label": "个人成长",
+              "evidence": "impact on personal development",
+              "source": "abstract",
+              "confidence": 0.88
+            }
+          ]
+        }
+      },
+      "跨学科关系": [
+        {
+          "head": "生成式人工智能",
+          "relation": "applied to",
+          "relation_type": "method_applied_to",
+          "relation_type_norm": "method_applied_to",
+          "relation_type_raw": "method_applied_to",
+          "tail": "高等教育",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "generative AI (GenAI) technologies... in higher education",
+          "source": "abstract",
+          "confidence": 0.95
+        },
+        {
+          "head": "伦理问题",
+          "relation": "constrains the impact on",
+          "relation_type": "constrains",
+          "relation_type_norm": "constrains",
+          "relation_type_raw": "constrains",
+          "tail": "社会价值观",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "concerns about the impact on societal values",
+          "source": "abstract",
+          "confidence": 0.85
+        },
+        {
+          "head": "生成式人工智能",
+          "relation": "drives policy development for",
+          "relation_type": "driven_by",
+          "relation_type_norm": "driven_by",
+          "relation_type_raw": "driven_by",
+          "tail": "教育政策",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "Insights from this study can inform policy development around the integration of GenAI",
+          "source": "abstract",
+          "confidence": 0.9
+        },
+        {
+          "head": "个性化学习支持",
+          "relation": "applied to enhance",
+          "relation_type": "method_applied_to",
+          "relation_type_norm": "method_applied_to",
+          "relation_type_raw": "method_applied_to",
+          "tail": "高等教育",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "potential for personalized learning support... in higher education",
+          "source": "abstract",
+          "confidence": 0.9
+        },
+        {
+          "head": "3P教学模型",
+          "relation": "inferred from analyzing student perceptions in",
+          "relation_type": "inferred_from",
+          "relation_type_norm": "inferred_from",
+          "relation_type_raw": "inferred_from",
+          "tail": "高等教育学生",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "John Biggs’ 3P model indicates student perceptions influence learning outcomes",
+          "source": "abstract",
+          "confidence": 0.92
+        }
+      ],
+      "按辅助学科分类": {
+        "社会学": {
+          "概念": [
+            "3P教学模型",
+            "高等教育",
+            "高等教育学生",
+            "教育政策",
+            "教育策略",
+            "社会价值观",
+            "职业发展",
+            "个人成长"
+          ],
+          "关系": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "rationale": "社会学视角分析学生对生成式人工智能的感知，探讨其对教育政策、社会价值观及个人发展的影响机制"
+        }
+      },
+      "查询": {
+        "一级": "生成式人工智能在高等教育中的应用潜力与挑战",
+        "二级": [
+          "生成式人工智能如何通过教育政策制定促进高等教育改革",
+          "学生对生成式人工智能的接受度与个人发展的关系研究"
+        ],
+        "三级": [
+          "基于3教学模型分析生成式人工智能在高等教育中的政策实施效果与社会价值观影响"
+        ]
+      },
+      "假设": {
+        "一级": [
+          [
+            {
+              "step": 1,
+              "head": "生成式人工智能",
+              "relation": "应用于",
+              "tail": "高等教育",
+              "claim": "生成式人工智能在高等教育中的应用可能引发伦理问题"
+            },
+            {
+              "step": 2,
+              "head": "高等教育",
+              "relation": "伴随",
+              "tail": "伦理问题",
+              "claim": "高等教育场景中生成式人工智能的使用存在伦理争议"
+            },
+            {
+              "step": 3,
+              "head": "伦理问题",
+              "relation": "约束社会价值观的影响",
+              "tail": "社会价值观",
+              "claim": "需要社会学介入评估生成式人工智能伦理问题对社会价值观的冲击"
+            }
+          ],
+          [
+            {
+              "step": 1,
+              "head": "生成式人工智能",
+              "relation": "驱动",
+              "tail": "个性化学习支持",
+              "claim": "生成式人工智能通过个性化学习支持提升高等教育质量"
+            },
+            {
+              "step": 2,
+              "head": "个性化学习支持",
+              "relation": "增强",
+              "tail": "高等教育",
+              "claim": "个性化学习支持强化高等教育的教学效果"
+            },
+            {
+              "step": 3,
+              "head": "高等教育",
+              "relation": "需要政策规范",
+              "tail": "政策制定",
+              "claim": "高等教育应用生成式人工智能需社会学指导政策制定"
+            }
+          ]
+        ],
+        "二级": [
+          [
+            {
+              "step": 1,
+              "head": "生成式人工智能",
+              "relation": "政策制定",
+              "tail": "政策制定",
+              "claim": "生成式人工智能 政策制定 政策制定"
+            },
+            {
+              "step": 2,
+              "head": "政策制定",
+              "relation": "导致",
+              "tail": "指导方针与策略",
+              "claim": "政策制定 指导方针与策略"
+            },
+            {
+              "step": 3,
+              "head": "指导方针与策略",
+              "relation": "促进",
+              "tail": "高等教育",
+              "claim": "指导方针与策略 高等教育"
+            }
+          ],
+          [
+            {
+              "step": 1,
+              "head": "生成式人工智能",
+              "relation": "影响",
+              "tail": "高等教育学生",
+              "claim": "生成式人工智能 高等教育学生"
+            },
+            {
+              "step": 2,
+              "head": "高等教育学生",
+              "relation": "导致",
+              "tail": "个人发展",
+              "claim": "高等教育学生 个人发展"
+            },
+            {
+              "step": 3,
+              "head": "个人发展",
+              "relation": "促进",
+              "tail": "职业前景",
+              "claim": "个人发展 职业前景"
+            }
+          ]
+        ],
+        "三级": [
+          [
+            {
+              "step": 1,
+              "head": "3模型",
+              "relation": "影响",
+              "tail": "生成式人工智能",
+              "claim": "3模型通过分析学生对生成式人工智能的感知推导其教育应用逻辑"
+            },
+            {
+              "step": 2,
+              "head": "生成式人工智能",
+              "relation": "政策制定",
+              "tail": "教育政策",
+              "claim": "生成式人工智能的技术特性驱动高等教育政策制定的创新方向"
+            },
+            {
+              "step": 3,
+              "head": "教育政策",
+              "relation": "促进",
+              "tail": "社会价值观",
+              "claim": "教育政策实施通过伦理问题调节生成式人工智能对社会价值观的影响"
+            }
+          ]
+        ],
+        "一级总结": [
+          "主学科瓶颈：生成式人工智能在高等教育应用中的伦理争议需社会学评估社会价值观影响",
+          "主学科瓶颈：生成式人工智能提升高等教育质量需社会学指导政策规范制定"
+        ],
+        "二级总结": [
+          "社会学中的政策制定机制通过生成式人工智能驱动教育策略，优化高等教育改革路径",
+          "基于学生接受度的社会学分析揭示生成式人工智能对个人发展的促进作用，提升职业发展关联性"
+        ],
+        "三级总结": [
+          "通过3模型解析生成式人工智能教育应用→驱动政策创新→伦理调节社会价值观影响的闭环验证路径"
+        ]
+      },
+      "graph": {
+        "nodes": [
+          {
+            "id": "生成式人工智能",
+            "term": "generative AI (GenAI)",
+            "normalized": "生成式人工智能",
+            "discipline": "计算机科学技术",
+            "evidence": "university students’ perceptions of generative AI (GenAI) technologies",
+            "source": "abstract",
+            "confidence": 0.95
+          },
+          {
+            "id": "ChatGPT",
+            "term": "ChatGPT",
+            "normalized": "ChatGPT",
+            "discipline": "计算机科学技术",
+            "evidence": "generative AI (GenAI) technologies, such as ChatGPT",
+            "source": "abstract",
+            "confidence": 0.98
+          },
+          {
+            "id": "个性化学习支持",
+            "term": "personalized learning support",
+            "normalized": "个性化学习支持",
+            "discipline": "计算机科学技术",
+            "evidence": "potential for personalized learning support",
+            "source": "abstract",
+            "confidence": 0.85
+          },
+          {
+            "id": "写作与头脑风暴辅助",
+            "term": "writing and brainstorming assistance",
+            "normalized": "写作与头脑风暴辅助",
+            "discipline": "计算机科学技术",
+            "evidence": "writing and brainstorming assistance",
+            "source": "abstract",
+            "confidence": 0.82
+          },
+          {
+            "id": "研究与分析能力",
+            "term": "research and analysis capabilities",
+            "normalized": "研究与分析能力",
+            "discipline": "计算机科学技术",
+            "evidence": "research and analysis capabilities",
+            "source": "abstract",
+            "confidence": 0.8
+          },
+          {
+            "id": "准确性",
+            "term": "accuracy",
+            "normalized": "准确性",
+            "discipline": "计算机科学技术",
+            "evidence": "concerns about accuracy",
+            "source": "abstract",
+            "confidence": 0.88
+          },
+          {
+            "id": "隐私保护",
+            "term": "privacy",
+            "normalized": "隐私保护",
+            "discipline": "计算机科学技术",
+            "evidence": "privacy, ethical issues",
+            "source": "abstract",
+            "confidence": 0.9
+          },
+          {
+            "id": "伦理问题",
+            "term": "ethical issues",
+            "normalized": "伦理问题",
+            "discipline": "计算机科学技术",
+            "evidence": "privacy, ethical issues",
+            "source": "abstract",
+            "confidence": 0.92
+          },
+          {
+            "id": "污染物降解",
+            "term": "contaminant degradation",
+            "normalized": "污染物降解",
+            "discipline": "计算机科学技术",
+            "evidence": "application scenarios like contaminant degradation",
+            "source": "abstract",
+            "confidence": 0.75
+          },
+          {
+            "id": "能量转换",
+            "term": "energy conversion",
+            "normalized": "能量转换",
+            "discipline": "计算机科学技术",
+            "evidence": "application scenarios like energy conversion",
+            "source": "abstract",
+            "confidence": 0.73
+          },
+          {
+            "id": "3模型",
+            "term": "3P model",
+            "normalized": "3模型",
+            "discipline": "社会学",
+            "evidence": "John Biggs’ 3P model",
+            "source": "abstract",
+            "confidence": 0.96
+          },
+          {
+            "id": "高等教育",
+            "term": "higher education",
+            "normalized": "高等教育",
+            "discipline": "社会学",
+            "evidence": "generative AI in higher education",
+            "source": "abstract",
+            "confidence": 0.94
+          },
+          {
+            "id": "本科生与研究生",
+            "term": "undergraduate and postgraduate students",
+            "normalized": "本科生与研究生",
+            "discipline": "社会学",
+            "evidence": "399 undergraduate and postgraduate students",
+            "source": "abstract",
+            "confidence": 0.93
+          },
+          {
+            "id": "政策制定",
+            "term": "policy development",
+            "normalized": "政策制定",
+            "discipline": "社会学",
+            "evidence": "inform policy development",
+            "source": "abstract",
+            "confidence": 0.87
+          },
+          {
+            "id": "指导方针与策略",
+            "term": "guidelines and strategies",
+            "normalized": "指导方针与策略",
+            "discipline": "社会学",
+            "evidence": "guidelines and strategies for implementation",
+            "source": "abstract",
+            "confidence": 0.85
+          },
+          {
+            "id": "社会价值观",
+            "term": "societal values",
+            "normalized": "社会价值观",
+            "discipline": "社会学",
+            "evidence": "impact on societal values",
+            "source": "abstract",
+            "confidence": 0.89
+          },
+          {
+            "id": "职业前景",
+            "term": "career prospects",
+            "normalized": "职业前景",
+            "discipline": "社会学",
+            "evidence": "impact on career prospects",
+            "source": "abstract",
+            "confidence": 0.86
+          },
+          {
+            "id": "个人发展",
+            "term": "personal development",
+            "normalized": "个人发展",
+            "discipline": "社会学",
+            "evidence": "impact on personal development",
+            "source": "abstract",
+            "confidence": 0.88
+          },
+          {
+            "id": "教育政策",
+            "term": "教育政策",
+            "normalized": "教育政策",
+            "discipline": "struct_relation_inferred",
+            "evidence": "",
+            "source": "struct_relation_inferred",
+            "confidence": 0.8
+          },
+          {
+            "id": "3P教学模型",
+            "term": "3P教学模型",
+            "normalized": "3P教学模型",
+            "discipline": "struct_relation_inferred",
+            "evidence": "",
+            "source": "struct_relation_inferred",
+            "confidence": 0.8
+          },
+          {
+            "id": "高等教育学生",
+            "term": "高等教育学生",
+            "normalized": "高等教育学生",
+            "discipline": "struct_relation_inferred",
+            "evidence": "",
+            "source": "struct_relation_inferred",
+            "confidence": 0.8
+          }
+        ],
+        "edges": [
+          {
+            "source": "生成式人工智能",
+            "target": "高等教育",
+            "relation": "applied to",
+            "relation_type": "method_applied_to",
+            "metadata": {
+              "evidence": "generative AI (GenAI) technologies... in higher education",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "伦理问题",
+            "target": "社会价值观",
+            "relation": "constrains the impact on",
+            "relation_type": "constrains",
+            "metadata": {
+              "evidence": "concerns about the impact on societal values",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "生成式人工智能",
+            "target": "教育政策",
+            "relation": "drives policy development for",
+            "relation_type": "driven_by",
+            "metadata": {
+              "evidence": "Insights from this study can inform policy development around the integration of GenAI",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "个性化学习支持",
+            "target": "高等教育",
+            "relation": "applied to enhance",
+            "relation_type": "method_applied_to",
+            "metadata": {
+              "evidence": "potential for personalized learning support... in higher education",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "3P教学模型",
+            "target": "高等教育学生",
+            "relation": "inferred from analyzing student perceptions in",
+            "relation_type": "inferred_from",
+            "metadata": {
+              "evidence": "John Biggs’ 3P model indicates student perceptions influence learning outcomes",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "生成式人工智能",
+            "target": "高等教育",
+            "relation": "应用于",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "生成式人工智能在高等教育中的应用可能引发伦理问题",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "高等教育",
+            "target": "伦理问题",
+            "relation": "伴随",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "高等教育场景中生成式人工智能的使用存在伦理争议",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "伦理问题",
+            "target": "社会价值观",
+            "relation": "约束社会价值观的影响",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "需要社会学介入评估生成式人工智能伦理问题对社会价值观的冲击",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "生成式人工智能",
+            "target": "个性化学习支持",
+            "relation": "驱动",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "生成式人工智能通过个性化学习支持提升高等教育质量",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "个性化学习支持",
+            "target": "高等教育",
+            "relation": "增强",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "个性化学习支持强化高等教育的教学效果",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "高等教育",
+            "target": "政策制定",
+            "relation": "需要政策规范",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "高等教育应用生成式人工智能需社会学指导政策制定",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "生成式人工智能",
+            "target": "政策制定",
+            "relation": "政策制定",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "生成式人工智能 政策制定 政策制定",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "政策制定",
+            "target": "指导方针与策略",
+            "relation": "导致",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "政策制定 指导方针与策略",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "指导方针与策略",
+            "target": "高等教育",
+            "relation": "促进",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "指导方针与策略 高等教育",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "生成式人工智能",
+            "target": "高等教育学生",
+            "relation": "影响",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "生成式人工智能 高等教育学生",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "高等教育学生",
+            "target": "个人发展",
+            "relation": "导致",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "高等教育学生 个人发展",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "个人发展",
+            "target": "职业前景",
+            "relation": "促进",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "个人发展 职业前景",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "3模型",
+            "target": "生成式人工智能",
+            "relation": "影响",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "3模型通过分析学生对生成式人工智能的感知推导其教育应用逻辑",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "生成式人工智能",
+            "target": "教育政策",
+            "relation": "政策制定",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "生成式人工智能的技术特性驱动高等教育政策制定的创新方向",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "教育政策",
+            "target": "社会价值观",
+            "relation": "促进",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "教育政策实施通过伦理问题调节生成式人工智能对社会价值观的影响",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          }
+        ]
+      },
+      "metrics": {
+        "path_consistency": 0.26666666666666666,
+        "coverage": 0.5714285714285714,
+        "bridging_score": 0.6428571428571429,
+        "rao_stirling_diversity": 0.1578,
+        "embedding_bridging": 0.7081,
+        "consistency_precision": 0.0,
+        "consistency_recall": 0.0,
+        "consistency_f1": 0.0,
+        "info_novelty": 0.0,
+        "chain_coherence": 0.8276,
+        "atypical_combination": 0.0,
+        "kg_density": 0.0381,
+        "kg_inverse_modularity": 1.0078,
+        "kg_largest_cc_ratio": 0.619,
+        "kg_avg_betweenness": 0.0288,
+        "kg_clustering_coefficient": 0.1476,
+        "concept_recall": 0.0,
+        "concept_precision": 0.0,
+        "concept_f1": 0.0,
+        "relation_precision": 0.0,
+        "relation_type_accuracy": 0.0,
+        "evidence_coverage": 0.0,
+        "path_alignment_best": 0.0,
+        "path_alignment_mean": 0.0
+      }
+    },
+    "raw": "/* stage1: struct */\n/* concepts round1 */\n{\n  \"meta\": {\n    \"title\": \"Students’ voices on generative AI: perceptions, benefits, and challenges in higher education\",\n    \"primary\": \"计算机科学技术\",\n    \"secondary_list\": [\"社会学\"]\n  },\n  \"概念\": {\n    \"主学科\": [\n      {\n        \"term\": \"generative AI (GenAI)\",\n        \"normalized\": \"生成式人工智能\",\n        \"std_label\": \"生成式人工智能\",\n        \"evidence\": \"university students’ perceptions of generative AI (GenAI) technologies\",\n        \"source\": \"abstract\",\n        \"confidence\": 0.95\n      },\n      {\n        \"term\": \"ChatGPT\",\n        \"normalized\": \"ChatGPT\",\n        \"std_label\": \"ChatGPT\",\n        \"evidence\": \"generative AI (GenAI) technologies, such as ChatGPT\",\n        \"source\": \"abstract\",\n        \"confidence\": 0.98\n      },\n      {\n        \"term\": \"personalized learning support\",\n        \"normalized\": \"个性化学习支持\",\n        \"std_label\": \"个性化学习支持\",\n        \"evidence\": \"potential for personalized learning support\",\n        \"source\": \"abstract\",\n        \"confidence\": 0.85\n      },\n      {\n        \"term\": \"writing and brainstorming assistance\",\n        \"normalized\": \"写作与头脑风暴辅助\",\n        \"std_label\": \"写作辅助\",\n        \"evidence\": \"writing and brainstorming assistance\",\n        \"source\": \"abstract\",\n        \"confidence\": 0.82\n      },\n      {\n        \"term\": \"research and analysis capabilities\",\n        \"normalized\": \"研究与分析能力\",\n        \"std_label\": \"研究能力\",\n        \"evidence\": \"research and analysis capabilities\",\n        \"source\": \"abstract\",\n        \"confidence\": 0.80\n      },\n      {\n        \"term\": \"accuracy\",\n        \"normalized\": \"准确性\",\n        \"std_label\": \"准确性\",\n        \"evidence\": \"concerns about accuracy\",\n        \"source\": \"abstract\",\n        \"confidence\": 0.88\n      },\n      {\n        \"term\": \"privacy\",\n        \"normalized\": \"隐私保护\",\n        \"std_label\": \"隐私\",\n        \"evidence\": \"privacy, ethical issues\",\n        \"source\": \"abstract\",\n        \"confidence\": 0.90\n      },\n      {\n        \"term\": \"ethical issues\",\n        \"normalized\": \"伦理问题\",\n        \"std_label\": \"伦理问题\",\n        \"evidence\": \"privacy, ethical issues\",\n        \"source\": \"abstract\",\n        \"confidence\": 0.92\n      },\n      {\n        \"term\": \"contaminant degradation\",\n        \"normalized\": \"污染物降解\",\n        \"std_label\": \"污染物降解\",\n        \"evidence\": \"application scenarios like contaminant degradation\",\n        \"source\": \"abstract\",\n        \"confidence\": 0.75\n      },\n      {\n        \"term\": \"energy conversion\",\n        \"normalized\": \"能量转换\",\n        \"std_label\": \"能量转换\",\n        \"evidence\": \"application scenarios like energy conversion\",\n        \"source\": \"abstract\",\n        \"confidence\": 0.73\n      }\n    ],\n    \"辅学科\": {\n      \"社会学\": [\n        {\n          \"term\": \"3P model\",\n          \"normalized\": \"3P模型\",\n          \"std_label\": \"3P教学模型\",\n          \"evidence\": \"John Biggs’ 3P model\",\n          \"source\": \"abstract\",\n          \"confidence\": 0.96\n        },\n        {\n          \"term\": \"higher education\",\n          \"normalized\": \"高等教育\",\n          \"std_label\": \"高等教育\",\n          \"evidence\": \"generative AI in higher education\",\n          \"source\": \"abstract\",\n          \"confidence\": 0.94\n        },\n        {\n          \"term\": \"undergraduate and postgraduate students\",\n          \"normalized\": \"本科生与研究生\",\n          \"std_label\": \"高等教育学生\",\n          \"evidence\": \"399 undergraduate and postgraduate students\",\n          \"source\": \"abstract\",\n          \"confidence\": 0.93\n        },\n        {\n          \"term\": \"policy development\",\n          \"normalized\": \"政策制定\",\n          \"std_label\": \"教育政策\",\n          \"evidence\": \"inform policy development\",\n          \"source\": \"abstract\",\n          \"confidence\": 0.87\n        },\n        {\n          \"term\": \"guidelines and strategies\",\n          \"normalized\": \"指导方针与策略\",\n          \"std_label\": \"教育策略\",\n          \"evidence\": \"guidelines and strategies for implementation\",\n          \"source\": \"abstract\",\n          \"confidence\": 0.85\n        },\n        {\n          \"term\": \"societal values\",\n          \"normalized\": \"社会价值观\",\n          \"std_label\": \"社会价值观\",\n          \"evidence\": \"impact on societal values\",\n          \"source\": \"abstract\",\n          \"confidence\": 0.89\n        },\n        {\n          \"term\": \"career prospects\",\n          \"normalized\": \"职业前景\",\n          \"std_label\": \"职业发展\",\n          \"evidence\": \"impact on career prospects\",\n          \"source\": \"abstract\",\n          \"confidence\": 0.86\n        },\n        {\n          \"term\": \"personal development\",\n          \"normalized\": \"个人发展\",\n          \"std_label\": \"个人成长\",\n          \"evidence\": \"impact on personal development\",\n          \"source\": \"abstract\",\n          \"confidence\": 0.88\n        }\n      ]\n    }\n  }\n}\n\n/* concepts round2 (supplement) */\n{\"补充概念\": {\"主学科\": [], \"辅学科\": {}}}\n\n/* relations */\n{\n  \"跨学科关系\": [\n    {\n      \"head\": \"生成式人工智能\",\n      \"tail\": \"高等教育\",\n      \"relation\": \"applied to\",\n      \"relation_type\": \"method_applied_to\",\n      \"direction\": \"->\",\n      \"evidence\": \"generative AI (GenAI) technologies... in higher education\",\n      \"source\": \"abstract\",\n      \"confidence\": 0.95,\n      \"assumptions\": []\n    },\n    {\n      \"head\": \"伦理问题\",\n      \"tail\": \"社会价值观\",\n      \"relation\": \"constrains the impact on\",\n      \"relation_type\": \"constrains\",\n      \"direction\": \"->\",\n      \"evidence\": \"concerns about the impact on societal values\",\n      \"source\": \"abstract\",\n      \"confidence\": 0.85,\n      \"assumptions\": []\n    },\n    {\n      \"head\": \"生成式人工智能\",\n      \"tail\": \"教育政策\",\n      \"relation\": \"drives policy development for\",\n      \"relation_type\": \"driven_by\",\n      \"direction\": \"->\",\n      \"evidence\": \"Insights from this study can inform policy development around the integration of GenAI\",\n      \"source\": \"abstract\",\n      \"confidence\": 0.9,\n      \"assumptions\": []\n    },\n    {\n      \"head\": \"个性化学习支持\",\n      \"tail\": \"高等教育\",\n      \"relation\": \"applied to enhance\",\n      \"relation_type\": \"method_applied_to\",\n      \"direction\": \"->\",\n      \"evidence\": \"potential for personalized learning support... in higher education\",\n      \"source\": \"abstract\",\n      \"confidence\": 0.9,\n      \"assumptions\": []\n    },\n    {\n      \"head\": \"3P教学模型\",\n      \"tail\": \"高等教育学生\",\n      \"relation\": \"inferred from analyzing student perceptions in\",\n      \"relation_type\": \"inferred_from\",\n      \"direction\": \"->\",\n      \"evidence\": \"John Biggs’ 3P model indicates student perceptions influence learning outcomes\",\n      \"source\": \"abstract\",\n      \"confidence\": 0.92,\n      \"assumptions\": []\n    }\n  ]\n}\n\n/* stage2: query */\n{\n  \"按辅助学科分类\": {\n    \"社会学\": {\n      \"概念\": [\n        \"3P教学模型\",\n        \"高等教育\",\n        \"高等教育学生\",\n        \"教育政策\",\n        \"教育策略\",\n        \"社会价值观\",\n        \"职业发展\",\n        \"个人成长\"\n      ],\n      \"关系\": [0, 1, 2, 3, 4],\n      \"rationale\": \"社会学视角分析学生对生成式人工智能的感知，探讨其对教育政策、社会价值观及个人发展的影响机制\"\n    }\n  },\n  \"查询\": {\n    \"一级\": \"生成式人工智能在高等教育中的应用潜力与挑战\",\n    \"二级\": [\n      \"生成式人工智能如何通过教育政策制定促进高等教育改革\",\n      \"学生对生成式人工智能的接受度与个人发展的关系研究\"\n    ],\n    \"三级\": [\n      \"基于3P教学模型分析生成式人工智能在高等教育中的政策实施效果与社会价值观影响\"\n    ]\n  }\n}\n\n/* stage3: hypothesis L1 */\n{\n  \"假设\": {\n    \"一级\": [\n      [\n        {\n          \"step\": 1,\n          \"head\": \"生成式人工智能\",\n          \"relation\": \"应用于\",\n          \"tail\": \"高等教育\",\n          \"claim\": \"生成式人工智能在高等教育中的应用可能引发伦理问题\"\n        },\n        {\n          \"step\": 2,\n          \"head\": \"高等教育\",\n          \"relation\": \"伴随\",\n          \"tail\": \"伦理问题\",\n          \"claim\": \"高等教育场景中生成式人工智能的使用存在伦理争议\"\n        },\n        {\n          \"step\": 3,\n          \"head\": \"伦理问题\",\n          \"relation\": \"约束社会价值观的影响\",\n          \"tail\": \"社会价值观\",\n          \"claim\": \"需要社会学介入评估生成式人工智能伦理问题对社会价值观的冲击\"\n        }\n      ],\n      [\n        {\n          \"step\": 1,\n          \"head\": \"生成式人工智能\",\n          \"relation\": \"驱动\",\n          \"tail\": \"个性化学习支持\",\n          \"claim\": \"生成式人工智能通过个性化学习支持提升高等教育质量\"\n        },\n        {\n          \"step\": 2,\n          \"head\": \"个性化学习支持\",\n          \"relation\": \"增强\",\n          \"tail\": \"高等教育\",\n          \"claim\": \"个性化学习支持强化高等教育的教学效果\"\n        },\n        {\n          \"step\": 3,\n          \"head\": \"高等教育\",\n          \"relation\": \"需要政策规范\",\n          \"tail\": \"政策制定\",\n          \"claim\": \"高等教育应用生成式人工智能需社会学指导政策制定\"\n        }\n      ]\n    ],\n    \"一级总结\": [\n      \"主学科瓶颈：生成式人工智能在高等教育应用中的伦理争议需社会学评估社会价值观影响\",\n      \"主学科瓶颈：生成式人工智能提升高等教育质量需社会学指导政策规范制定\"\n    ]\n  }\n}\n\n/* stage3: hypothesis L2 */\n{\n  \"假设\": {\n    \"二级\": [\n      [\n        {\n          \"step\": 1,\n          \"head\": \"生成式人工智能\",\n          \"relation\": \"drives policy development for\",\n          \"tail\": \"政策制定\"\n        },\n        {\n          \"step\": 2,\n          \"head\": \"政策制定\",\n          \"relation\": \"leads to development of\",\n          \"tail\": \"指导方针与策略\"\n        },\n        {\n          \"step\": 3,\n          \"head\": \"指导方针与策略\",\n          \"relation\": \"applied to enhance\",\n          \"tail\": \"高等教育\"\n        }\n      ],\n      [\n        {\n          \"step\": 1,\n          \"head\": \"生成式人工智能\",\n          \"relation\": \"perceived by\",\n          \"tail\": \"高等教育学生\"\n        },\n        {\n          \"step\": 2,\n          \"head\": \"高等教育学生\",\n          \"relation\": \"impacts\",\n          \"tail\": \"个人发展\"\n        },\n        {\n          \"step\": 3,\n          \"head\": \"个人发展\",\n          \"relation\": \"associated with\",\n          \"tail\": \"职业前景\"\n        }\n      ]\n    ],\n    \"二级总结\": [\n      \"社会学中的政策制定机制通过生成式人工智能驱动教育策略，优化高等教育改革路径\",\n      \"基于学生接受度的社会学分析揭示生成式人工智能对个人发展的促进作用，提升职业发展关联性\"\n    ]\n  }\n}\n\n/* stage3: hypothesis L3 */\n{\n  \"假设\": {\n    \"三级\": [\n      [\n        {\n          \"step\": 1,\n          \"head\": \"3模型\",\n          \"relation\": \"inferred from analyzing student perceptions in\",\n          \"tail\": \"生成式人工智能\",\n          \"claim\": \"3模型通过分析学生对生成式人工智能的感知推导其教育应用逻辑\"\n        },\n        {\n          \"step\": 2,\n          \"head\": \"生成式人工智能\",\n          \"relation\": \"drives policy development for\",\n          \"tail\": \"教育政策\",\n          \"claim\": \"生成式人工智能的技术特性驱动高等教育政策制定的创新方向\"\n        },\n        {\n          \"step\": 3,\n          \"head\": \"教育政策\",\n          \"relation\": \"influences through ethical constraints\",\n          \"tail\": \"社会价值观\",\n          \"claim\": \"教育政策实施通过伦理问题调节生成式人工智能对社会价值观的影响\"\n        }\n      ]\n    ],\n    \"三级总结\": [\n      \"通过3模型解析生成式人工智能教育应用→驱动政策创新→伦理调节社会价值观影响的闭环验证路径\"\n    ]\n  }\n}",
+    "ok": true,
+    "error": ""
+  }
+]

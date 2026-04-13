@@ -1,0 +1,134 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "微塑料和纳米塑料",
+        "relation": "causes",
+        "tail": "差异性生物累积",
+        "claim": "微塑料和纳米塑料导致主要器官中的差异性生物累积"
+      },
+      {
+        "step": 2,
+        "head": "差异性生物累积",
+        "relation": "correlates",
+        "tail": "器官生理屏障功能、代谢速率及暴露途径",
+        "claim": "生物累积程度与器官的屏障功能、代谢速率及暴露途径密切相关"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "血脑屏障完整性降低",
+        "relation": "enables",
+        "tail": "纳米塑料渗透",
+        "claim": "血脑屏障完整性降低促进纳米塑料渗透"
+      },
+      {
+        "step": 2,
+        "head": "纳米塑料渗透",
+        "relation": "causes",
+        "tail": "脑组织滞留",
+        "claim": "纳米塑料渗透导致其在脑组织中的滞留"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "肝脏作为主要代谢器官",
+        "relation": "accumulates",
+        "tail": "微塑料",
+        "claim": "肝脏通过吞噬作用积累大量微塑料"
+      },
+      {
+        "step": 2,
+        "head": "微塑料的化学组成和表面老化程度",
+        "relation": "inhibits",
+        "tail": "清除效率",
+        "claim": "微塑料的化学组成和表面老化程度限制其清除效率"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "吸入暴露",
+        "relation": "causes",
+        "tail": "肺部微塑料累积",
+        "claim": "吸入暴露导致肺部成为微塑料累积的初始靶器官"
+      },
+      {
+        "step": 2,
+        "head": "肺部微塑料累积量",
+        "relation": "correlates",
+        "tail": "环境微塑料浓度",
+        "claim": "肺部颗粒负荷量与环境微塑料浓度呈正相关"
+      },
+      {
+        "step": 3,
+        "head": "肺部微塑料累积",
+        "relation": "enables",
+        "tail": "循环系统迁移",
+        "claim": "肺部微塑料可经由循环系统向其他器官迁移"
+      }
+    ]
+  ],
+  "L3": [
+    [
+      {
+        "step": 1,
+        "head": "脑中微塑料累积",
+        "relation": "activates",
+        "tail": "小胶质细胞",
+        "claim": "微塑料累积激活小胶质细胞"
+      },
+      {
+        "step": 2,
+        "head": "激活的小胶质细胞",
+        "relation": "releases",
+        "tail": "促炎因子（如IL-6、TNF-α）",
+        "claim": "激活的小胶质细胞释放促炎因子"
+      },
+      {
+        "step": 3,
+        "head": "促炎因子释放",
+        "relation": "causes",
+        "tail": "神经退行性病变",
+        "claim": "促炎因子参与神经退行性病变的发生"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "纳米塑料长期滞留",
+        "relation": "interferes",
+        "tail": "脂质代谢通路（如PPARα信号）",
+        "claim": "纳米塑料滞留干扰脂质代谢通路"
+      },
+      {
+        "step": 2,
+        "head": "脂质代谢通路干扰",
+        "relation": "causes",
+        "tail": "非酒精性脂肪肝病变",
+        "claim": "代谢通路干扰引发非酒精性脂肪肝"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "微塑料在肺部沉积",
+        "relation": "induces",
+        "tail": "氧化应激和DNA损伤",
+        "claim": "微塑料沉积促进氧化应激和DNA损伤"
+      },
+      {
+        "step": 2,
+        "head": "氧化应激和DNA损伤",
+        "relation": "causes",
+        "tail": "异常增殖和癌变",
+        "claim": "氧化应激和DNA损伤增加肺细胞癌变风险"
+      }
+    ]
+  ]
+}

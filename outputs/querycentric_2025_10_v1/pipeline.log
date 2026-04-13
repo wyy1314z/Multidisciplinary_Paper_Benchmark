@@ -1,0 +1,1461 @@
+[1/5] Prepare 2025 raw papers: outputs/querycentric_2025_10_v1/raw_2025_300.jsonl
+2026-04-13 07:08:11,375 | INFO | Reading CSV: /ssd/wangyuyang/git/data/raw_data/nature_springer_2025.csv
+2026-04-13 07:08:18,120 | INFO | Prepared 10 records -> outputs/querycentric_2025_10_v1/raw_2025_300.jsonl
+[2/5] Classify and filter cross-disciplinary papers: outputs/querycentric_2025_10_v1/classified_2025_300_crossdisc.jsonl
+2026-04-13 07:08:22,043 | INFO | Loaded taxonomy with 50 L1 categories from /ssd/wangyuyang/git/benchmark/data/msc_converted.json
+2026-04-13 07:08:24,775 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:08:24,952 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:08:25,030 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:08:25,050 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:08:25,132 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:08:25,140 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:08:25,457 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:08:25,995 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:08:26,154 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:08:26,574 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:08:26,665 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:08:26,680 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:08:26,926 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:08:26,980 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:08:26,999 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:08:27,028 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:08:27,790 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:08:28,117 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:08:28,326 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:08:28,374 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:08:28,470 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:08:28,725 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:08:28,874 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:08:28,905 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:08:29,053 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:08:29,375 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:08:29,425 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:08:29,643 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:08:30,132 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:08:30,260 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:08:30,261 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:08:30,430 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:08:30,932 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:08:30,988 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:08:31,268 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:08:31,331 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:08:31,351 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:08:31,436 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:08:31,437 | WARNING | Level 1 attempt 1/4: no valid items, base_path=['环境科学技术'], parsed_items=['环境化学', '环境生物学', '环境毒理学', '环境生态学'], raw_output=[环境化学; 环境生物学; 环境毒理学; 环境生态学]
+2026-04-13 07:08:31,706 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:08:32,044 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:08:32,102 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:08:32,175 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:08:32,502 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:08:32,887 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:08:33,138 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:08:33,191 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:08:33,285 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:08:33,341 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:08:33,345 | WARNING | Level 1 attempt 2/4: no valid items, base_path=['环境科学技术'], parsed_items=['环境化学', '环境生物学', '环境毒理学', '环境管理学'], raw_output=[环境化学; 环境生物学; 环境毒理学; 环境管理学]
+2026-04-13 07:08:33,362 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:08:33,546 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:08:33,550 | INFO | [5/10] Non-multidisciplinary (single L1: {'计算机科学技术'}): DeepSeek-R1 incentivizes reasoning in LLMs through reinforce
+2026-04-13 07:08:33,611 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:08:34,143 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:08:34,679 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:08:34,819 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:08:34,874 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:08:35,039 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:08:35,105 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:08:35,110 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:08:35,110 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:08:35,182 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:08:35,575 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:08:36,697 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:08:36,698 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:08:36,716 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:08:36,938 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:08:36,989 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:08:37,060 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:08:37,121 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:08:37,189 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:08:37,272 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:08:38,394 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:08:38,521 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:08:38,649 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:08:38,692 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:08:38,784 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:08:38,845 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:08:38,905 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:08:39,275 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:08:39,475 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:08:39,740 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:08:39,966 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:08:40,333 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:08:40,514 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:08:40,804 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:08:40,930 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:08:40,987 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:08:41,179 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:08:41,665 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:08:42,281 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:08:42,289 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:08:42,381 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:08:42,437 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:08:42,663 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:08:42,731 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:08:42,894 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:08:42,899 | INFO | Cross-disc confidence=0.70 (threshold=0.50): The paper integrates deep learning (computer science) with microscopy (biology) to improve segmentation tasks, requiring meaningful synthesis of both fields. However, the primary contribution remains applicational (adapting a CS tool for biology), limiting the depth of cross-disciplinary synthesis.
+2026-04-13 07:08:42,899 | INFO | [9/10] Multidisciplinary (score=0.70): Segment Anything for Microscopy → primary=计算机科学技术, secondary=生物学
+2026-04-13 07:08:43,246 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:08:43,762 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:08:43,764 | INFO | Cross-disc confidence=0.20 (threshold=0.50): The paper primarily focuses on a specific biological and medical research question related to spinal cord injury and macrophage behavior, without integrating theories or methods from multiple distinct fields. The disciplines listed (基础医学, 生物学) are closely related within the life sciences, and the study does not demonstrate substantial intellectual synthesis across field boundaries.
+2026-04-13 07:08:43,764 | INFO | [2/10] Below cross-disc confidence threshold (score=0.20 < threshold=0.50, reason=The paper primarily focuses on a specific biological and medical research question related to spinal cord injury and macrophage behavior, without integrating theories or methods from multiple distinct fields. The disciplines listed (基础医学, 生物学) are closely related within the life sciences, and the study does not demonstrate substantial intellectual synthesis across field boundaries.): Cytosolic phospholipase A2 in infiltrating monocyte derived 
+2026-04-13 07:08:43,899 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:08:43,906 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:08:43,988 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:08:44,072 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:08:45,131 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:08:45,233 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:08:45,339 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:08:45,494 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:08:45,688 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:08:45,736 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:08:45,740 | INFO | Cross-disc confidence=0.40 (threshold=0.50): The paper primarily focuses on cancer biology and immunology within the broader fields of clinical and basic medicine, with some overlap in biology. While it integrates concepts from these areas, the synthesis does not deeply involve distinct, unrelated disciplines, and the contribution can largely be understood within the realm of medical and biological sciences.
+2026-04-13 07:08:45,740 | INFO | [7/10] Below cross-disc confidence threshold (score=0.40 < threshold=0.50, reason=The paper primarily focuses on cancer biology and immunology within the broader fields of clinical and basic medicine, with some overlap in biology. While it integrates concepts from these areas, the synthesis does not deeply involve distinct, unrelated disciplines, and the contribution can largely be understood within the realm of medical and biological sciences.): Immune evasion through mitochondrial transfer in the tumour 
+2026-04-13 07:08:45,941 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:08:45,943 | INFO | Cross-disc confidence=0.80 (threshold=0.50): The paper deeply integrates theories and methods from clinical medicine and computer science (AI/LLMs), creating a system (AMIE) whose contribution cannot be fully understood within either discipline alone. It involves substantial synthesis, such as adapting LLM self-play techniques to clinical diagnostic dialogue and designing evaluation frameworks rooted in medical practice.
+2026-04-13 07:08:45,943 | INFO | [8/10] Multidisciplinary (score=0.80): Towards conversational diagnostic artificial intelligence → primary=计算机科学技术, secondary=临床医学
+2026-04-13 07:08:46,935 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:08:47,305 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:08:47,739 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:08:47,740 | INFO | Cross-disc confidence=0.70 (threshold=0.50): The paper integrates environmental science, economics, and energy technology to address the challenges of green hydrogen implementation, requiring synthesis across these fields for a full understanding of the issue.
+2026-04-13 07:08:47,740 | INFO | [4/10] Multidisciplinary (score=0.70): The green hydrogen ambition and implementation gap → primary=能源科学技术, secondary=经济学, 环境科学技术
+2026-04-13 07:08:48,601 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:08:48,603 | INFO | Cross-disc confidence=0.70 (threshold=0.50): The paper integrates theories and methods from political science, sociology, and statistics, addressing public trust in scientists across multiple countries. The contribution requires understanding of all three fields to fully grasp the implications, indicating meaningful integration.
+2026-04-13 07:08:48,603 | INFO | [6/10] Multidisciplinary (score=0.70): Trust in scientists and their role in society across 68 coun → primary=社会学, secondary=政治学, 统计学
+2026-04-13 07:08:48,626 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:08:48,629 | INFO | Cross-disc confidence=0.70 (threshold=0.50): The paper integrates theories and methods from environmental science, management, and economics to analyze the global plastics supply chain. It requires understanding trade patterns (economics), material flows (environmental science), and supply chain management (management), indicating meaningful integration of multiple distinct fields.
+2026-04-13 07:08:48,629 | INFO | [10/10] Multidisciplinary (score=0.70): Complexities of the global plastics supply chain revealed in → primary=环境科学技术, secondary=经济学, 管理学
+2026-04-13 07:08:48,759 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:08:49,445 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:08:51,741 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:08:51,745 | INFO | Cross-disc confidence=0.70 (threshold=0.50): The paper integrates methods from computer science (generative models) with materials science and chemistry to design inorganic materials, demonstrating meaningful synthesis across these fields. However, the connection to computer science is methodological rather than theoretical, limiting the depth of cross-disciplinary integration.
+2026-04-13 07:08:51,745 | INFO | [3/10] Multidisciplinary (score=0.70): A generative model for inorganic materials design → primary=材料科学, secondary=化学, 计算机科学技术
+2026-04-13 07:08:52,334 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:08:52,336 | INFO | Cross-disc confidence=0.70 (threshold=0.50): Moderately cross-disciplinary due to meaningful integration of methods and insights from environmental science, biology, and basic medicine to address microplastic bioaccumulation in human tissues, though the synthesis could be deeper.
+2026-04-13 07:08:52,337 | INFO | [1/10] Multidisciplinary (score=0.70): Bioaccumulation of microplastics in decedent human brains → primary=生物学, secondary=基础医学, 环境科学技术
+2026-04-13 07:08:52,338 | INFO | Classification complete: 10 total → 10 classified → 7 multidisciplinary → outputs/querycentric_2025_10_v1/classified_2025_300_crossdisc.jsonl
+[3/5] Extract CrossDisc queries and hypotheses: outputs/querycentric_2025_10_v1/extractions_2025_300_crossdisc.jsonl
+2026-04-13 07:08:53,769 | INFO | 开始处理：共 7 条，跳过 0 条，待处理 7 条 (num_workers=4, language_mode=chinese)
+2026-04-13 07:08:53,769 | INFO | 使用 ThreadPoolExecutor 并行处理，max_workers=4
+2026-04-13 07:08:53,769 | INFO | Nature DOI 转换为直接 PDF 链接：https://www.nature.com/articles/s41591-024-03453-1.pdf
+2026-04-13 07:08:53,770 | INFO | 下载 PDF：https://www.nature.com/articles/s41591-024-03453-1.pdf
+2026-04-13 07:08:53,770 | INFO | Nature DOI 转换为直接 PDF 链接：https://www.nature.com/articles/s41586-025-08628-5.pdf
+2026-04-13 07:08:53,772 | INFO | 下载 PDF：https://www.nature.com/articles/s41586-025-08628-5.pdf
+2026-04-13 07:08:53,770 | INFO | Nature DOI 转换为直接 PDF 链接：https://www.nature.com/articles/s41562-024-02090-5.pdf
+2026-04-13 07:08:53,772 | INFO | 下载 PDF：https://www.nature.com/articles/s41562-024-02090-5.pdf
+2026-04-13 07:08:53,770 | INFO | Nature DOI 转换为直接 PDF 链接：https://www.nature.com/articles/s41560-024-01684-7.pdf
+2026-04-13 07:08:53,773 | INFO | 下载 PDF：https://www.nature.com/articles/s41560-024-01684-7.pdf
+2026-04-13 07:09:05,562 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:09:18,434 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:09:31,047 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:09:39,947 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:10:08,920 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:10:13,932 | WARNING | Supplementary concept extraction failed: 'str' object has no attribute 'get'
+2026-04-13 07:10:13,947 | INFO | Loaded EN-ZH mapping: 393 English aliases
+2026-04-13 07:10:13,947 | INFO | Loaded terminology dictionary: 3067 terms, 51 disciplines
+2026-04-13 07:10:14,904 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:10:15,360 | INFO | Concept grounding and filtering completed
+2026-04-13 07:10:18,095 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:10:22,856 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:10:22,907 | WARNING | Supplementary concept extraction failed: 'str' object has no attribute 'get'
+2026-04-13 07:10:22,925 | INFO | Loaded EN-ZH mapping: 393 English aliases
+2026-04-13 07:10:22,929 | INFO | Loaded terminology dictionary: 3067 terms, 51 disciplines
+2026-04-13 07:10:23,573 | INFO | Supplementary extraction merged successfully
+2026-04-13 07:10:23,635 | INFO | Loaded EN-ZH mapping: 393 English aliases
+2026-04-13 07:10:23,635 | INFO | Loaded terminology dictionary: 3067 terms, 51 disciplines
+2026-04-13 07:10:24,361 | INFO | Concept grounding and filtering completed
+2026-04-13 07:10:25,212 | INFO | Concept grounding and filtering completed
+2026-04-13 07:10:26,185 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:10:27,455 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:10:34,560 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:10:43,897 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:10:44,573 | WARNING | Supplementary concept extraction failed: 'str' object has no attribute 'get'
+2026-04-13 07:10:44,589 | INFO | Loaded EN-ZH mapping: 393 English aliases
+2026-04-13 07:10:44,589 | INFO | Loaded terminology dictionary: 3067 terms, 51 disciplines
+2026-04-13 07:10:46,331 | INFO | Concept grounding and filtering completed
+2026-04-13 07:10:48,779 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:10:49,671 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:10:56,183 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:10:56,240 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:10:56,434 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:10:56,833 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:11:01,309 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:11:01,522 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:11:01,576 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:11:07,155 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:11:07,497 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:11:08,294 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:11:09,287 | INFO | Hypothesis entity alignment: 0/0 (0.0%)
+2026-04-13 07:11:11,926 | INFO | Hypothesis entity alignment: 0/0 (0.0%)
+2026-04-13 07:11:14,282 | INFO | Load pretrained SentenceTransformer: paraphrase-multilingual-MiniLM-L12-v2
+2026-04-13 07:11:14,291 | INFO | Load pretrained SentenceTransformer: paraphrase-multilingual-MiniLM-L12-v2
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s][ALoading weights: 100%|██████████| 199/199 [00:00<00:00, 23800.69it/s]
+Loading weights: 100%|██████████| 199/199 [00:00<00:00, 10055.37it/s]
+[1mBertModel LOAD REPORT[0m from: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+Key                     | Status     |  | 
+------------------------+------------+--+-
+embeddings.position_ids | UNEXPECTED |  | 
+
+[3mNotes:
+- UNEXPECTED[3m	:can be ignored when loading from different task/architecture; not ok if you expect identical arch.[0m
+[1mBertModel LOAD REPORT[0m from: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+Key                     | Status     |  | 
+------------------------+------------+--+-
+embeddings.position_ids | UNEXPECTED |  | 
+
+[3mNotes:
+- UNEXPECTED[3m	:can be ignored when loading from different task/architecture; not ok if you expect identical arch.[0m
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s][ABatches: 100%|██████████| 1/1 [00:00<00:00,  6.99it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  6.95it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00,  6.47it/s][ABatches: 100%|██████████| 1/1 [00:00<00:00,  6.46it/s]
+
+Batches:   0%|          | 0/1 [00:00<?, ?it/s][ABatches: 100%|██████████| 1/1 [00:00<00:00,  9.19it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  9.17it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00,  8.77it/s][ABatches: 100%|██████████| 1/1 [00:00<00:00,  8.76it/s]
+
+Batches:   0%|          | 0/1 [00:00<?, ?it/s][ABatches: 100%|██████████| 1/1 [00:00<00:00,  6.89it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  6.88it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00,  6.16it/s][ABatches: 100%|██████████| 1/1 [00:00<00:00,  6.16it/s]
+
+Batches:   0%|          | 0/1 [00:00<?, ?it/s][ABatches: 100%|██████████| 1/1 [00:00<00:00,  4.20it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  4.20it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00,  5.25it/s][ABatches: 100%|██████████| 1/1 [00:00<00:00,  5.25it/s]
+
+Batches:   0%|          | 0/1 [00:00<?, ?it/s][A
+Batches: 100%|██████████| 1/1 [00:00<00:00,  9.51it/s][ABatches: 100%|██████████| 1/1 [00:00<00:00,  9.49it/s]
+
+Batches:   0%|          | 0/1 [00:00<?, ?it/s][ABatches: 100%|██████████| 1/1 [00:00<00:00,  6.55it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  6.54it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00,  5.61it/s][ABatches: 100%|██████████| 1/1 [00:00<00:00,  5.58it/s]
+
+Batches:   0%|          | 0/1 [00:00<?, ?it/s][ABatches: 100%|██████████| 1/1 [00:00<00:00,  6.71it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  6.70it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  6.88it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  6.87it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00,  5.41it/s][ABatches: 100%|██████████| 1/1 [00:00<00:00,  5.40it/s]
+
+Batches:   0%|          | 0/1 [00:00<?, ?it/s][ABatches: 100%|██████████| 1/1 [00:00<00:00,  6.69it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  6.69it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00,  7.59it/s][ABatches: 100%|██████████| 1/1 [00:00<00:00,  7.58it/s]
+
+Batches:   0%|          | 0/1 [00:00<?, ?it/s][ABatches: 100%|██████████| 1/1 [00:00<00:00,  8.87it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  8.86it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00,  5.81it/s][ABatches: 100%|██████████| 1/1 [00:00<00:00,  5.80it/s]
+
+Batches:   0%|          | 0/1 [00:00<?, ?it/s][A
+Batches: 100%|██████████| 1/1 [00:00<00:00,  8.43it/s][ABatches: 100%|██████████| 1/1 [00:00<00:00,  8.40it/s]
+
+Batches:   0%|          | 0/1 [00:00<?, ?it/s][ABatches: 100%|██████████| 1/1 [00:00<00:00,  5.26it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  5.26it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00,  7.71it/s][ABatches: 100%|██████████| 1/1 [00:00<00:00,  7.69it/s]
+
+Batches:   0%|          | 0/1 [00:00<?, ?it/s][ABatches: 100%|██████████| 1/1 [00:00<00:00,  5.34it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  5.34it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00,  5.61it/s][ABatches: 100%|██████████| 1/1 [00:00<00:00,  5.60it/s]
+
+Batches:   0%|          | 0/1 [00:00<?, ?it/s][ABatches: 100%|██████████| 1/1 [00:00<00:00,  5.79it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  5.76it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00,  5.91it/s][ABatches: 100%|██████████| 1/1 [00:00<00:00,  5.89it/s]
+
+Batches:   0%|          | 0/1 [00:00<?, ?it/s][ABatches: 100%|██████████| 1/1 [00:00<00:00,  6.79it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  6.78it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00,  5.69it/s][ABatches: 100%|██████████| 1/1 [00:00<00:00,  5.69it/s]
+Batches: 100%|██████████| 1/1 [00:00<00:00,  4.40it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  4.40it/s]
+2026-04-13 07:11:20,332 | INFO | Hypothesis entity alignment: 0/0 (0.0%)
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]2026-04-13 07:11:20,486 | INFO | Nature DOI 转换为直接 PDF 链接：https://www.nature.com/articles/s41586-025-08866-7.pdf
+2026-04-13 07:11:20,488 | INFO | Nature DOI 转换为直接 PDF 链接：https://www.nature.com/articles/s41592-024-02580-4.pdf
+2026-04-13 07:11:20,488 | INFO | 下载 PDF：https://www.nature.com/articles/s41592-024-02580-4.pdf
+2026-04-13 07:11:20,488 | INFO | 下载 PDF：https://www.nature.com/articles/s41586-025-08866-7.pdf
+Batches: 100%|██████████| 1/1 [00:00<00:00,  5.27it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  5.26it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  9.31it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  9.30it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  8.68it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  8.67it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  4.33it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  4.33it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  3.79it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  3.79it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  5.10it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  5.10it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  7.02it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  7.01it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  8.47it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  8.46it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  6.86it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  6.85it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  8.79it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  8.78it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  4.65it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  4.64it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  7.20it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  7.19it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  5.84it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  5.84it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  6.71it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  6.70it/s]
+2026-04-13 07:11:22,681 | INFO | Nature DOI 转换为直接 PDF 链接：https://www.nature.com/articles/s43247-025-02169-5.pdf
+2026-04-13 07:11:22,684 | INFO | 下载 PDF：https://www.nature.com/articles/s43247-025-02169-5.pdf
+2026-04-13 07:11:23,459 | WARNING | Cannot set gray non-stroke color because /'P0' is an invalid float value
+2026-04-13 07:11:23,460 | WARNING | Cannot set gray non-stroke color because /'P1' is an invalid float value
+2026-04-13 07:11:23,462 | WARNING | Cannot set gray non-stroke color because /'P2' is an invalid float value
+2026-04-13 07:11:23,462 | WARNING | Cannot set gray non-stroke color because /'P3' is an invalid float value
+2026-04-13 07:11:23,465 | WARNING | Cannot set gray non-stroke color because /'P4' is an invalid float value
+2026-04-13 07:11:23,465 | WARNING | Cannot set gray non-stroke color because /'P5' is an invalid float value
+2026-04-13 07:11:23,468 | WARNING | Cannot set gray non-stroke color because /'P6' is an invalid float value
+2026-04-13 07:11:23,468 | WARNING | Cannot set gray non-stroke color because /'P7' is an invalid float value
+2026-04-13 07:11:23,470 | WARNING | Cannot set gray non-stroke color because /'P8' is an invalid float value
+2026-04-13 07:11:23,470 | WARNING | Cannot set gray non-stroke color because /'P9' is an invalid float value
+2026-04-13 07:11:23,471 | WARNING | Cannot set gray non-stroke color because /'P10' is an invalid float value
+2026-04-13 07:11:23,471 | WARNING | Cannot set gray non-stroke color because /'P11' is an invalid float value
+2026-04-13 07:11:23,472 | WARNING | Cannot set gray non-stroke color because /'P12' is an invalid float value
+2026-04-13 07:11:23,472 | WARNING | Cannot set gray non-stroke color because /'P13' is an invalid float value
+2026-04-13 07:11:23,472 | WARNING | Cannot set gray non-stroke color because /'P14' is an invalid float value
+2026-04-13 07:11:23,472 | WARNING | Cannot set gray non-stroke color because /'P15' is an invalid float value
+2026-04-13 07:11:23,541 | WARNING | Cannot set gray non-stroke color because /'P0' is an invalid float value
+2026-04-13 07:11:23,541 | WARNING | Cannot set gray non-stroke color because /'P1' is an invalid float value
+2026-04-13 07:11:23,542 | WARNING | Cannot set gray non-stroke color because /'P2' is an invalid float value
+2026-04-13 07:11:23,543 | WARNING | Cannot set gray non-stroke color because /'P3' is an invalid float value
+2026-04-13 07:11:23,545 | WARNING | Cannot set gray non-stroke color because /'P4' is an invalid float value
+2026-04-13 07:11:23,545 | WARNING | Cannot set gray non-stroke color because /'P5' is an invalid float value
+2026-04-13 07:11:23,547 | WARNING | Cannot set gray non-stroke color because /'P6' is an invalid float value
+2026-04-13 07:11:23,547 | WARNING | Cannot set gray non-stroke color because /'P7' is an invalid float value
+2026-04-13 07:11:23,549 | WARNING | Cannot set gray non-stroke color because /'P8' is an invalid float value
+2026-04-13 07:11:23,549 | WARNING | Cannot set gray non-stroke color because /'P9' is an invalid float value
+2026-04-13 07:11:23,549 | WARNING | Cannot set gray non-stroke color because /'P10' is an invalid float value
+2026-04-13 07:11:23,549 | WARNING | Cannot set gray non-stroke color because /'P11' is an invalid float value
+2026-04-13 07:11:23,551 | WARNING | Cannot set gray non-stroke color because /'P12' is an invalid float value
+2026-04-13 07:11:23,551 | WARNING | Cannot set gray non-stroke color because /'P13' is an invalid float value
+2026-04-13 07:11:23,554 | WARNING | Cannot set gray non-stroke color because /'P14' is an invalid float value
+2026-04-13 07:11:23,554 | WARNING | Cannot set gray non-stroke color because /'P15' is an invalid float value
+2026-04-13 07:11:24,916 | WARNING | Cannot set gray stroke color because /'P0' is an invalid float value
+2026-04-13 07:11:24,917 | WARNING | Cannot set gray stroke color because /'P1' is an invalid float value
+2026-04-13 07:11:24,918 | WARNING | Cannot set gray stroke color because /'P2' is an invalid float value
+2026-04-13 07:11:24,920 | WARNING | Cannot set gray stroke color because /'P3' is an invalid float value
+2026-04-13 07:11:24,920 | WARNING | Cannot set gray stroke color because /'P4' is an invalid float value
+2026-04-13 07:11:24,920 | WARNING | Cannot set gray stroke color because /'P5' is an invalid float value
+2026-04-13 07:11:24,920 | WARNING | Cannot set gray stroke color because /'P6' is an invalid float value
+2026-04-13 07:11:24,920 | WARNING | Cannot set gray stroke color because /'P7' is an invalid float value
+2026-04-13 07:11:25,019 | WARNING | Cannot set gray non-stroke color because /'P0' is an invalid float value
+2026-04-13 07:11:25,019 | WARNING | Cannot set gray non-stroke color because /'P1' is an invalid float value
+2026-04-13 07:11:25,019 | WARNING | Cannot set gray non-stroke color because /'P2' is an invalid float value
+2026-04-13 07:11:25,020 | WARNING | Cannot set gray non-stroke color because /'P3' is an invalid float value
+2026-04-13 07:11:25,020 | WARNING | Cannot set gray non-stroke color because /'P4' is an invalid float value
+2026-04-13 07:11:25,020 | WARNING | Cannot set gray non-stroke color because /'P5' is an invalid float value
+2026-04-13 07:11:25,020 | WARNING | Cannot set gray non-stroke color because /'P6' is an invalid float value
+2026-04-13 07:11:25,047 | WARNING | Cannot set gray non-stroke color because /'P7' is an invalid float value
+2026-04-13 07:11:25,070 | WARNING | Cannot set gray non-stroke color because /'P0' is an invalid float value
+2026-04-13 07:11:25,070 | WARNING | Cannot set gray non-stroke color because /'P1' is an invalid float value
+2026-04-13 07:11:25,071 | WARNING | Cannot set gray non-stroke color because /'P2' is an invalid float value
+2026-04-13 07:11:25,071 | WARNING | Cannot set gray non-stroke color because /'P3' is an invalid float value
+2026-04-13 07:11:25,071 | WARNING | Cannot set gray non-stroke color because /'P4' is an invalid float value
+2026-04-13 07:11:25,072 | WARNING | Cannot set gray non-stroke color because /'P5' is an invalid float value
+2026-04-13 07:11:25,072 | WARNING | Cannot set gray non-stroke color because /'P6' is an invalid float value
+2026-04-13 07:11:25,072 | WARNING | Cannot set gray non-stroke color because /'P7' is an invalid float value
+2026-04-13 07:11:25,073 | WARNING | Cannot set gray non-stroke color because /'P8' is an invalid float value
+2026-04-13 07:11:25,073 | WARNING | Cannot set gray non-stroke color because /'P9' is an invalid float value
+2026-04-13 07:11:25,074 | WARNING | Cannot set gray non-stroke color because /'P10' is an invalid float value
+2026-04-13 07:11:25,074 | WARNING | Cannot set gray non-stroke color because /'P11' is an invalid float value
+2026-04-13 07:11:25,074 | WARNING | Cannot set gray non-stroke color because /'P12' is an invalid float value
+2026-04-13 07:11:25,075 | WARNING | Cannot set gray non-stroke color because /'P13' is an invalid float value
+2026-04-13 07:11:25,077 | WARNING | Cannot set gray non-stroke color because /'P14' is an invalid float value
+2026-04-13 07:11:25,192 | WARNING | Cannot set gray non-stroke color because /'P0' is an invalid float value
+2026-04-13 07:11:25,193 | WARNING | Cannot set gray non-stroke color because /'P1' is an invalid float value
+2026-04-13 07:11:25,194 | WARNING | Cannot set gray non-stroke color because /'P2' is an invalid float value
+2026-04-13 07:11:25,194 | WARNING | Cannot set gray non-stroke color because /'P3' is an invalid float value
+2026-04-13 07:11:25,195 | WARNING | Cannot set gray non-stroke color because /'P4' is an invalid float value
+2026-04-13 07:11:25,195 | WARNING | Cannot set gray non-stroke color because /'P5' is an invalid float value
+2026-04-13 07:11:25,196 | WARNING | Cannot set gray non-stroke color because /'P6' is an invalid float value
+2026-04-13 07:11:25,196 | WARNING | Cannot set gray non-stroke color because /'P7' is an invalid float value
+2026-04-13 07:11:25,197 | WARNING | Cannot set gray non-stroke color because /'P8' is an invalid float value
+2026-04-13 07:11:25,208 | WARNING | Cannot set gray non-stroke color because /'P9' is an invalid float value
+2026-04-13 07:11:26,483 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:11:26,908 | WARNING | Cannot set gray non-stroke color because /'P0' is an invalid float value
+2026-04-13 07:11:26,914 | WARNING | Cannot set gray non-stroke color because /'P1' is an invalid float value
+2026-04-13 07:11:26,949 | WARNING | Cannot set gray non-stroke color because /'P2' is an invalid float value
+2026-04-13 07:11:26,949 | WARNING | Cannot set gray non-stroke color because /'P3' is an invalid float value
+2026-04-13 07:11:26,981 | WARNING | Cannot set gray non-stroke color because /'P4' is an invalid float value
+2026-04-13 07:11:26,986 | WARNING | Cannot set gray non-stroke color because /'P5' is an invalid float value
+2026-04-13 07:11:27,025 | WARNING | Cannot set gray non-stroke color because /'P6' is an invalid float value
+2026-04-13 07:11:27,025 | WARNING | Cannot set gray non-stroke color because /'P7' is an invalid float value
+2026-04-13 07:11:27,126 | WARNING | Cannot set gray non-stroke color because /'P8' is an invalid float value
+2026-04-13 07:11:27,132 | WARNING | Cannot set gray non-stroke color because /'P9' is an invalid float value
+2026-04-13 07:11:27,185 | WARNING | Cannot set gray non-stroke color because /'P10' is an invalid float value
+2026-04-13 07:11:27,239 | WARNING | Cannot set gray non-stroke color because /'P11' is an invalid float value
+2026-04-13 07:11:27,314 | WARNING | Cannot set gray non-stroke color because /'P12' is an invalid float value
+2026-04-13 07:11:27,373 | WARNING | Cannot set gray non-stroke color because /'P13' is an invalid float value
+2026-04-13 07:11:27,415 | WARNING | Cannot set gray non-stroke color because /'P14' is an invalid float value
+2026-04-13 07:11:27,465 | WARNING | Cannot set gray non-stroke color because /'P15' is an invalid float value
+2026-04-13 07:11:27,540 | WARNING | Cannot set gray non-stroke color because /'P16' is an invalid float value
+2026-04-13 07:11:27,703 | WARNING | Cannot set gray non-stroke color because /'P17' is an invalid float value
+2026-04-13 07:11:27,731 | WARNING | Cannot set gray non-stroke color because /'P18' is an invalid float value
+2026-04-13 07:11:27,736 | WARNING | Cannot set gray non-stroke color because /'P19' is an invalid float value
+2026-04-13 07:11:27,751 | WARNING | Cannot set gray non-stroke color because /'P20' is an invalid float value
+2026-04-13 07:11:27,752 | WARNING | Cannot set gray non-stroke color because /'P21' is an invalid float value
+2026-04-13 07:11:27,769 | WARNING | Cannot set gray non-stroke color because /'P22' is an invalid float value
+2026-04-13 07:11:27,769 | WARNING | Cannot set gray non-stroke color because /'P23' is an invalid float value
+2026-04-13 07:11:27,790 | WARNING | Cannot set gray non-stroke color because /'P24' is an invalid float value
+2026-04-13 07:11:27,790 | WARNING | Cannot set gray non-stroke color because /'P25' is an invalid float value
+2026-04-13 07:11:27,825 | WARNING | Cannot set gray non-stroke color because /'P26' is an invalid float value
+2026-04-13 07:11:27,830 | WARNING | Cannot set gray non-stroke color because /'P27' is an invalid float value
+2026-04-13 07:11:27,864 | WARNING | Cannot set gray non-stroke color because /'P28' is an invalid float value
+2026-04-13 07:11:27,885 | WARNING | Cannot set gray non-stroke color because /'P29' is an invalid float value
+2026-04-13 07:11:27,910 | WARNING | Cannot set gray non-stroke color because /'P30' is an invalid float value
+2026-04-13 07:11:27,948 | WARNING | Cannot set gray non-stroke color because /'P31' is an invalid float value
+2026-04-13 07:11:27,976 | WARNING | Cannot set gray non-stroke color because /'P32' is an invalid float value
+2026-04-13 07:11:28,016 | WARNING | Cannot set gray non-stroke color because /'P33' is an invalid float value
+2026-04-13 07:11:28,071 | WARNING | Cannot set gray non-stroke color because /'P34' is an invalid float value
+2026-04-13 07:11:28,234 | WARNING | Cannot set gray non-stroke color because /'P35' is an invalid float value
+2026-04-13 07:11:28,253 | WARNING | Cannot set gray non-stroke color because /'P36' is an invalid float value
+2026-04-13 07:11:28,259 | WARNING | Cannot set gray non-stroke color because /'P37' is an invalid float value
+2026-04-13 07:11:28,284 | WARNING | Cannot set gray non-stroke color because /'P38' is an invalid float value
+2026-04-13 07:11:28,289 | WARNING | Cannot set gray non-stroke color because /'P39' is an invalid float value
+2026-04-13 07:11:28,322 | WARNING | Cannot set gray non-stroke color because /'P40' is an invalid float value
+2026-04-13 07:11:28,327 | WARNING | Cannot set gray non-stroke color because /'P41' is an invalid float value
+2026-04-13 07:11:28,354 | WARNING | Cannot set gray non-stroke color because /'P42' is an invalid float value
+2026-04-13 07:11:28,359 | WARNING | Cannot set gray non-stroke color because /'P43' is an invalid float value
+2026-04-13 07:11:28,439 | WARNING | Cannot set gray non-stroke color because /'P44' is an invalid float value
+2026-04-13 07:11:28,445 | WARNING | Cannot set gray non-stroke color because /'P45' is an invalid float value
+2026-04-13 07:11:28,503 | WARNING | Cannot set gray non-stroke color because /'P46' is an invalid float value
+2026-04-13 07:11:28,524 | WARNING | Cannot set gray non-stroke color because /'P47' is an invalid float value
+2026-04-13 07:11:28,559 | WARNING | Cannot set gray non-stroke color because /'P48' is an invalid float value
+2026-04-13 07:11:28,597 | WARNING | Cannot set gray non-stroke color because /'P49' is an invalid float value
+2026-04-13 07:11:28,620 | WARNING | Cannot set gray non-stroke color because /'P50' is an invalid float value
+2026-04-13 07:11:28,647 | WARNING | Cannot set gray non-stroke color because /'P51' is an invalid float value
+2026-04-13 07:11:28,688 | WARNING | Cannot set gray non-stroke color because /'P52' is an invalid float value
+2026-04-13 07:11:28,913 | WARNING | Cannot set gray non-stroke color because /'P53' is an invalid float value
+2026-04-13 07:11:28,932 | WARNING | Cannot set gray non-stroke color because /'P54' is an invalid float value
+2026-04-13 07:11:28,932 | WARNING | Cannot set gray non-stroke color because /'P55' is an invalid float value
+2026-04-13 07:11:28,948 | WARNING | Cannot set gray non-stroke color because /'P56' is an invalid float value
+2026-04-13 07:11:28,948 | WARNING | Cannot set gray non-stroke color because /'P57' is an invalid float value
+2026-04-13 07:11:28,986 | WARNING | Cannot set gray non-stroke color because /'P58' is an invalid float value
+2026-04-13 07:11:28,990 | WARNING | Cannot set gray non-stroke color because /'P59' is an invalid float value
+2026-04-13 07:11:29,047 | WARNING | Cannot set gray non-stroke color because /'P60' is an invalid float value
+2026-04-13 07:11:29,053 | WARNING | Cannot set gray non-stroke color because /'P61' is an invalid float value
+2026-04-13 07:11:29,153 | WARNING | Cannot set gray non-stroke color because /'P62' is an invalid float value
+2026-04-13 07:11:29,159 | WARNING | Cannot set gray non-stroke color because /'P63' is an invalid float value
+2026-04-13 07:11:29,236 | WARNING | Cannot set gray non-stroke color because /'P64' is an invalid float value
+2026-04-13 07:11:29,262 | WARNING | Cannot set gray non-stroke color because /'P65' is an invalid float value
+2026-04-13 07:11:29,330 | WARNING | Cannot set gray non-stroke color because /'P66' is an invalid float value
+2026-04-13 07:11:29,367 | WARNING | Cannot set gray non-stroke color because /'P67' is an invalid float value
+2026-04-13 07:11:29,416 | WARNING | Cannot set gray non-stroke color because /'P68' is an invalid float value
+2026-04-13 07:11:29,466 | WARNING | Cannot set gray non-stroke color because /'P69' is an invalid float value
+2026-04-13 07:11:29,491 | WARNING | Cannot set gray non-stroke color because /'P70' is an invalid float value
+2026-04-13 07:11:29,897 | WARNING | Cannot set gray non-stroke color because /'P71' is an invalid float value
+2026-04-13 07:11:30,204 | WARNING | Cannot set gray non-stroke color because /'P0' is an invalid float value
+2026-04-13 07:11:30,255 | WARNING | Cannot set gray non-stroke color because /'P1' is an invalid float value
+2026-04-13 07:11:30,291 | WARNING | Cannot set gray non-stroke color because /'P2' is an invalid float value
+2026-04-13 07:11:30,310 | WARNING | Cannot set gray non-stroke color because /'P3' is an invalid float value
+2026-04-13 07:11:30,328 | WARNING | Cannot set gray non-stroke color because /'P4' is an invalid float value
+2026-04-13 07:11:30,347 | WARNING | Cannot set gray non-stroke color because /'P5' is an invalid float value
+2026-04-13 07:11:30,409 | WARNING | Cannot set gray non-stroke color because /'P6' is an invalid float value
+2026-04-13 07:11:30,437 | WARNING | Cannot set gray non-stroke color because /'P7' is an invalid float value
+2026-04-13 07:11:30,474 | WARNING | Cannot set gray non-stroke color because /'P8' is an invalid float value
+2026-04-13 07:11:30,503 | WARNING | Cannot set gray non-stroke color because /'P9' is an invalid float value
+2026-04-13 07:11:30,531 | WARNING | Cannot set gray non-stroke color because /'P10' is an invalid float value
+2026-04-13 07:11:30,592 | WARNING | Cannot set gray non-stroke color because /'P11' is an invalid float value
+2026-04-13 07:11:30,613 | WARNING | Cannot set gray non-stroke color because /'P12' is an invalid float value
+2026-04-13 07:11:30,639 | WARNING | Cannot set gray non-stroke color because /'P13' is an invalid float value
+2026-04-13 07:11:30,669 | WARNING | Cannot set gray non-stroke color because /'P14' is an invalid float value
+2026-04-13 07:11:30,719 | WARNING | Cannot set gray non-stroke color because /'P15' is an invalid float value
+2026-04-13 07:11:30,725 | WARNING | Cannot set gray non-stroke color because /'P16' is an invalid float value
+2026-04-13 07:11:30,740 | WARNING | Cannot set gray non-stroke color because /'P17' is an invalid float value
+2026-04-13 07:11:30,756 | WARNING | Cannot set gray non-stroke color because /'P18' is an invalid float value
+2026-04-13 07:11:30,774 | WARNING | Cannot set gray non-stroke color because /'P19' is an invalid float value
+2026-04-13 07:11:30,790 | WARNING | Cannot set gray non-stroke color because /'P20' is an invalid float value
+2026-04-13 07:11:30,803 | WARNING | Cannot set gray non-stroke color because /'P21' is an invalid float value
+2026-04-13 07:11:30,822 | WARNING | Cannot set gray non-stroke color because /'P22' is an invalid float value
+2026-04-13 07:11:30,836 | WARNING | Cannot set gray non-stroke color because /'P23' is an invalid float value
+2026-04-13 07:11:30,853 | WARNING | Cannot set gray non-stroke color because /'P24' is an invalid float value
+2026-04-13 07:11:30,867 | WARNING | Cannot set gray non-stroke color because /'P25' is an invalid float value
+2026-04-13 07:11:30,880 | WARNING | Cannot set gray non-stroke color because /'P26' is an invalid float value
+2026-04-13 07:11:30,890 | WARNING | Cannot set gray non-stroke color because /'P27' is an invalid float value
+2026-04-13 07:11:30,904 | WARNING | Cannot set gray non-stroke color because /'P28' is an invalid float value
+2026-04-13 07:11:30,914 | WARNING | Cannot set gray non-stroke color because /'P29' is an invalid float value
+2026-04-13 07:11:30,926 | WARNING | Cannot set gray non-stroke color because /'P30' is an invalid float value
+2026-04-13 07:11:30,959 | WARNING | Cannot set gray non-stroke color because /'P31' is an invalid float value
+2026-04-13 07:11:30,965 | WARNING | Cannot set gray non-stroke color because /'P32' is an invalid float value
+2026-04-13 07:11:30,980 | WARNING | Cannot set gray non-stroke color because /'P33' is an invalid float value
+2026-04-13 07:11:30,997 | WARNING | Cannot set gray non-stroke color because /'P34' is an invalid float value
+2026-04-13 07:11:31,015 | WARNING | Cannot set gray non-stroke color because /'P35' is an invalid float value
+2026-04-13 07:11:31,030 | WARNING | Cannot set gray non-stroke color because /'P36' is an invalid float value
+2026-04-13 07:11:31,044 | WARNING | Cannot set gray non-stroke color because /'P37' is an invalid float value
+2026-04-13 07:11:31,065 | WARNING | Cannot set gray non-stroke color because /'P38' is an invalid float value
+2026-04-13 07:11:31,079 | WARNING | Cannot set gray non-stroke color because /'P39' is an invalid float value
+2026-04-13 07:11:31,094 | WARNING | Cannot set gray non-stroke color because /'P40' is an invalid float value
+2026-04-13 07:11:31,114 | WARNING | Cannot set gray non-stroke color because /'P41' is an invalid float value
+2026-04-13 07:11:31,127 | WARNING | Cannot set gray non-stroke color because /'P42' is an invalid float value
+2026-04-13 07:11:31,138 | WARNING | Cannot set gray non-stroke color because /'P43' is an invalid float value
+2026-04-13 07:11:31,152 | WARNING | Cannot set gray non-stroke color because /'P44' is an invalid float value
+2026-04-13 07:11:31,163 | WARNING | Cannot set gray non-stroke color because /'P45' is an invalid float value
+2026-04-13 07:11:31,174 | WARNING | Cannot set gray non-stroke color because /'P46' is an invalid float value
+2026-04-13 07:11:31,204 | WARNING | Cannot set gray non-stroke color because /'P47' is an invalid float value
+2026-04-13 07:11:31,209 | WARNING | Cannot set gray non-stroke color because /'P48' is an invalid float value
+2026-04-13 07:11:31,224 | WARNING | Cannot set gray non-stroke color because /'P49' is an invalid float value
+2026-04-13 07:11:31,241 | WARNING | Cannot set gray non-stroke color because /'P50' is an invalid float value
+2026-04-13 07:11:31,259 | WARNING | Cannot set gray non-stroke color because /'P51' is an invalid float value
+2026-04-13 07:11:31,285 | WARNING | Cannot set gray non-stroke color because /'P52' is an invalid float value
+2026-04-13 07:11:31,299 | WARNING | Cannot set gray non-stroke color because /'P53' is an invalid float value
+2026-04-13 07:11:31,318 | WARNING | Cannot set gray non-stroke color because /'P54' is an invalid float value
+2026-04-13 07:11:31,331 | WARNING | Cannot set gray non-stroke color because /'P55' is an invalid float value
+2026-04-13 07:11:31,346 | WARNING | Cannot set gray non-stroke color because /'P56' is an invalid float value
+2026-04-13 07:11:31,360 | WARNING | Cannot set gray non-stroke color because /'P57' is an invalid float value
+2026-04-13 07:11:31,373 | WARNING | Cannot set gray non-stroke color because /'P58' is an invalid float value
+2026-04-13 07:11:31,391 | WARNING | Cannot set gray non-stroke color because /'P59' is an invalid float value
+2026-04-13 07:11:31,405 | WARNING | Cannot set gray non-stroke color because /'P60' is an invalid float value
+2026-04-13 07:11:31,416 | WARNING | Cannot set gray non-stroke color because /'P61' is an invalid float value
+2026-04-13 07:11:31,427 | WARNING | Cannot set gray non-stroke color because /'P62' is an invalid float value
+2026-04-13 07:11:31,458 | WARNING | Cannot set gray non-stroke color because /'P63' is an invalid float value
+2026-04-13 07:11:31,497 | WARNING | Cannot set gray non-stroke color because /'P0' is an invalid float value
+2026-04-13 07:11:31,497 | WARNING | Cannot set gray non-stroke color because /'P1' is an invalid float value
+2026-04-13 07:11:31,516 | WARNING | Cannot set gray non-stroke color because /'P2' is an invalid float value
+2026-04-13 07:11:31,517 | WARNING | Cannot set gray non-stroke color because /'P3' is an invalid float value
+2026-04-13 07:11:31,529 | WARNING | Cannot set gray non-stroke color because /'P4' is an invalid float value
+2026-04-13 07:11:31,530 | WARNING | Cannot set gray non-stroke color because /'P5' is an invalid float value
+2026-04-13 07:11:31,542 | WARNING | Cannot set gray non-stroke color because /'P6' is an invalid float value
+2026-04-13 07:11:31,543 | WARNING | Cannot set gray non-stroke color because /'P7' is an invalid float value
+2026-04-13 07:11:31,568 | WARNING | Cannot set gray non-stroke color because /'P8' is an invalid float value
+2026-04-13 07:11:31,574 | WARNING | Cannot set gray non-stroke color because /'P9' is an invalid float value
+2026-04-13 07:11:31,574 | WARNING | Cannot set gray non-stroke color because /'P10' is an invalid float value
+2026-04-13 07:11:31,591 | WARNING | Cannot set gray non-stroke color because /'P11' is an invalid float value
+2026-04-13 07:11:31,591 | WARNING | Cannot set gray non-stroke color because /'P12' is an invalid float value
+2026-04-13 07:11:31,604 | WARNING | Cannot set gray non-stroke color because /'P13' is an invalid float value
+2026-04-13 07:11:31,604 | WARNING | Cannot set gray non-stroke color because /'P14' is an invalid float value
+2026-04-13 07:11:31,624 | WARNING | Cannot set gray non-stroke color because /'P15' is an invalid float value
+2026-04-13 07:11:31,624 | WARNING | Cannot set gray non-stroke color because /'P16' is an invalid float value
+2026-04-13 07:11:31,650 | WARNING | Cannot set gray non-stroke color because /'P17' is an invalid float value
+2026-04-13 07:11:32,418 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:11:40,967 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:11:57,488 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:12:08,710 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:12:09,035 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:12:09,178 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:12:14,732 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:12:20,275 | WARNING | Supplementary concept extraction failed: 'str' object has no attribute 'get'
+2026-04-13 07:12:20,284 | INFO | Loaded EN-ZH mapping: 393 English aliases
+2026-04-13 07:12:20,284 | INFO | Loaded terminology dictionary: 3067 terms, 51 disciplines
+2026-04-13 07:12:21,539 | INFO | Concept grounding and filtering completed
+2026-04-13 07:12:22,350 | INFO | Hypothesis entity alignment: 0/0 (0.0%)
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  9.47it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  9.45it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  9.87it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  9.86it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  5.96it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  5.96it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  4.29it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  4.29it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  7.10it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  7.10it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  4.74it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  4.74it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]2026-04-13 07:12:23,592 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+Batches: 100%|██████████| 1/1 [00:00<00:00,  3.57it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  3.57it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  7.92it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  7.91it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  5.01it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  5.01it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  5.16it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  5.15it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  4.85it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  4.84it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  3.74it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  3.74it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  7.53it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  7.52it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  6.25it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  6.24it/s]
+2026-04-13 07:12:28,839 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:12:29,449 | INFO | Supplementary extraction merged successfully
+2026-04-13 07:12:29,466 | INFO | Loaded EN-ZH mapping: 393 English aliases
+2026-04-13 07:12:29,466 | INFO | Loaded terminology dictionary: 3067 terms, 51 disciplines
+2026-04-13 07:12:30,557 | INFO | Concept grounding and filtering completed
+2026-04-13 07:12:32,320 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:12:40,205 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:12:40,917 | INFO | Supplementary extraction merged successfully
+2026-04-13 07:12:40,932 | INFO | Loaded EN-ZH mapping: 393 English aliases
+2026-04-13 07:12:40,932 | INFO | Loaded terminology dictionary: 3067 terms, 51 disciplines
+2026-04-13 07:12:42,863 | INFO | Concept grounding and filtering completed
+2026-04-13 07:12:45,196 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:12:52,031 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:13:01,083 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:13:02,635 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:13:02,778 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:13:02,948 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:13:10,397 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:13:11,684 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:13:11,992 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:13:12,224 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:13:13,979 | INFO | Hypothesis entity alignment: 0/0 (0.0%)
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 10.65it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 10.27it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  6.35it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  6.35it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  5.96it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  5.96it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  5.84it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  5.83it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  4.35it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  4.35it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  5.63it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  5.62it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  6.61it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  6.60it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  7.48it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  7.47it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  6.08it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  6.07it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  6.30it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  6.29it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  6.66it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  6.65it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  7.27it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  7.26it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  6.51it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  6.51it/s]
+2026-04-13 07:13:21,758 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:13:21,875 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:13:22,219 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:13:23,627 | INFO | Hypothesis entity alignment: 0/0 (0.0%)
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  4.66it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  4.66it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  7.90it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  7.89it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  7.03it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  7.02it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  7.58it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  7.57it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  7.35it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  7.35it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  7.05it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  7.05it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  5.65it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  5.64it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  6.16it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  6.15it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  4.21it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  4.21it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  6.33it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  6.32it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  5.82it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  5.82it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  5.83it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  5.83it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  7.97it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  7.96it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  5.09it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  5.09it/s]
+2026-04-13 07:13:34,121 | INFO | Hypothesis entity alignment: 0/0 (0.0%)
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  5.69it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  5.67it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 11.08it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  6.24it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  6.24it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  5.08it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  5.07it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  4.55it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  4.55it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  4.45it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  4.45it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  7.62it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  7.61it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  7.81it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  7.80it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  8.83it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  8.82it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  8.93it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  8.92it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  6.82it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  6.81it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  7.49it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  7.48it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  6.16it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  6.15it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  4.38it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  4.37it/s]
+2026-04-13 07:13:36,392 | INFO | [7/7] 当前成功 7
+2026-04-13 07:13:36,415 | INFO | 完成：总计 7，成功 7，失败 0。输出 -> outputs/querycentric_2025_10_v1/extractions_2025_300_crossdisc.jsonl
+Exception ignored in: <function ResourceTracker.__del__ at 0x7f4d1b4c2200>
+Traceback (most recent call last):
+  File "/ssd/wangyuyang/miniconda3/envs/wyy/lib/python3.12/site-packages/multiprocess/resource_tracker.py", line 80, in __del__
+  File "/ssd/wangyuyang/miniconda3/envs/wyy/lib/python3.12/site-packages/multiprocess/resource_tracker.py", line 89, in _stop
+  File "/ssd/wangyuyang/miniconda3/envs/wyy/lib/python3.12/site-packages/multiprocess/resource_tracker.py", line 102, in _stop_locked
+AttributeError: '_thread.RLock' object has no attribute '_recursion_count'
+[4/5] Build query-centric evaluation set: outputs/querycentric_2025_10_v1/query_eval_2025_300.json
+2026-04-13 07:13:38,115 | INFO | Saved 7 query-eval rows -> outputs/querycentric_2025_10_v1/query_eval_2025_300.json
+[5/6] Generate hypotheses for models: gpt-3.5-turbo-0125,gpt-4-turbo-2024-04-09,gpt-4o-mini-2024-07-18,gpt-4o-2024-11-20,o1-2024-12-17,claude-3-5-haiku-20241022,claude-3-5-sonnet-20241022,deepseek-v3,doubao-pro-32k-241215
+2026-04-13 07:13:38,605 | INFO | Generating hypotheses with model=gpt-3.5-turbo-0125 prompt_level=L1
+2026-04-13 07:13:40,674 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:13:45,430 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:13:50,819 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:13:54,244 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:13:57,764 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:14:06,120 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:14:14,546 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:14:17,962 | INFO | Saved 7 generated records -> outputs/querycentric_2025_10_v1/query_model_results/gpt-3.5-turbo-0125.json
+2026-04-13 07:14:17,962 | INFO | Generating hypotheses with model=gpt-4-turbo-2024-04-09 prompt_level=L1
+2026-04-13 07:14:24,340 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:14:31,154 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:14:39,739 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:14:49,572 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:14:57,333 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:15:05,024 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:15:13,299 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:15:16,851 | INFO | Saved 7 generated records -> outputs/querycentric_2025_10_v1/query_model_results/gpt-4-turbo-2024-04-09.json
+2026-04-13 07:15:16,851 | INFO | Generating hypotheses with model=gpt-4o-mini-2024-07-18 prompt_level=L1
+2026-04-13 07:15:18,358 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:15:24,773 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:15:29,413 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:15:34,430 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:15:38,555 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:15:45,848 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:15:50,024 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:15:52,586 | INFO | Saved 7 generated records -> outputs/querycentric_2025_10_v1/query_model_results/gpt-4o-mini-2024-07-18.json
+2026-04-13 07:15:52,586 | INFO | Generating hypotheses with model=gpt-4o-2024-11-20 prompt_level=L1
+2026-04-13 07:15:54,331 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:16:03,677 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:16:11,277 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:16:23,411 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:16:32,755 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:16:41,592 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:16:52,284 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:17:03,683 | INFO | Saved 7 generated records -> outputs/querycentric_2025_10_v1/query_model_results/gpt-4o-2024-11-20.json
+2026-04-13 07:17:03,683 | INFO | Generating hypotheses with model=o1-2024-12-17 prompt_level=L1
+2026-04-13 07:17:11,615 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:17:31,443 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:17:46,679 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:18:00,399 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:18:10,042 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:23:51,273 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:24:05,812 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:24:09,343 | INFO | Saved 7 generated records -> outputs/querycentric_2025_10_v1/query_model_results/o1-2024-12-17.json
+2026-04-13 07:24:09,343 | INFO | Generating hypotheses with model=claude-3-5-haiku-20241022 prompt_level=L1
+2026-04-13 07:24:09,591 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 503 Service Unavailable"
+2026-04-13 07:24:09,593 | INFO | LLM 重试 #1，等待 5s…
+2026-04-13 07:24:15,184 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 503 Service Unavailable"
+2026-04-13 07:24:15,185 | INFO | LLM 重试 #2，等待 5s…
+2026-04-13 07:24:20,792 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 503 Service Unavailable"
+2026-04-13 07:24:20,793 | INFO | LLM 重试 #3，等待 8s…
+2026-04-13 07:24:29,406 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 503 Service Unavailable"
+2026-04-13 07:24:29,407 | INFO | LLM 重试 #4，等待 16s…
+2026-04-13 07:24:46,016 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 503 Service Unavailable"
+2026-04-13 07:24:46,017 | WARNING | [claude-3-5-haiku-20241022] [1/7] generation failed for 73c077788a0a: LLM 网关错误 (HTTP 503): Error code: 503 - {'error': {'message': '当前分组 企业用户 下对于模型 claude-3-5-haiku-20241022 计费模式 [按量计费] 无可用渠道 (request id: 2026041315244590610342151759589)', 'type': 'shell_api_error'}}
+2026-04-13 07:24:46,017 | ERROR | [claude-3-5-haiku-20241022] looks unavailable on this gateway; skip remaining 6 items. Error: LLM 网关错误 (HTTP 503): Error code: 503 - {'error': {'message': '当前分组 企业用户 下对于模型 claude-3-5-haiku-20241022 计费模式 [按量计费] 无可用渠道 (request id: 2026041315244590610342151759589)', 'type': 'shell_api_error'}}
+2026-04-13 07:24:46,017 | INFO | Saved 1 generated records -> outputs/querycentric_2025_10_v1/query_model_results/claude-3-5-haiku-20241022.json
+2026-04-13 07:24:46,017 | INFO | Generating hypotheses with model=claude-3-5-sonnet-20241022 prompt_level=L1
+2026-04-13 07:24:46,253 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 503 Service Unavailable"
+2026-04-13 07:24:46,254 | INFO | LLM 重试 #1，等待 5s…
+2026-04-13 07:24:51,864 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 503 Service Unavailable"
+2026-04-13 07:24:51,865 | INFO | LLM 重试 #2，等待 5s…
+2026-04-13 07:24:57,476 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 503 Service Unavailable"
+2026-04-13 07:24:57,477 | INFO | LLM 重试 #3，等待 8s…
+2026-04-13 07:25:06,099 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 503 Service Unavailable"
+2026-04-13 07:25:06,100 | INFO | LLM 重试 #4，等待 16s…
+2026-04-13 07:25:22,696 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 503 Service Unavailable"
+2026-04-13 07:25:22,697 | WARNING | [claude-3-5-sonnet-20241022] [1/7] generation failed for 73c077788a0a: LLM 网关错误 (HTTP 503): Error code: 503 - {'error': {'message': '当前分组 企业用户 下对于模型 claude-3-5-sonnet-20241022 计费模式 [按量计费] 无可用渠道 (request id: 2026041315252258588540684883924)', 'type': 'shell_api_error'}}
+2026-04-13 07:25:22,697 | ERROR | [claude-3-5-sonnet-20241022] looks unavailable on this gateway; skip remaining 6 items. Error: LLM 网关错误 (HTTP 503): Error code: 503 - {'error': {'message': '当前分组 企业用户 下对于模型 claude-3-5-sonnet-20241022 计费模式 [按量计费] 无可用渠道 (request id: 2026041315252258588540684883924)', 'type': 'shell_api_error'}}
+2026-04-13 07:25:22,697 | INFO | Saved 1 generated records -> outputs/querycentric_2025_10_v1/query_model_results/claude-3-5-sonnet-20241022.json
+2026-04-13 07:25:22,697 | INFO | Generating hypotheses with model=deepseek-v3 prompt_level=L1
+2026-04-13 07:25:23,788 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:25:34,591 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:25:45,380 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:25:55,425 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:26:07,359 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:26:19,705 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:26:30,103 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:26:38,426 | INFO | Saved 7 generated records -> outputs/querycentric_2025_10_v1/query_model_results/deepseek-v3.json
+2026-04-13 07:26:38,426 | INFO | Generating hypotheses with model=doubao-pro-32k-241215 prompt_level=L1
+2026-04-13 07:26:38,668 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 503 Service Unavailable"
+2026-04-13 07:26:38,669 | INFO | LLM 重试 #1，等待 5s…
+2026-04-13 07:26:44,271 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 503 Service Unavailable"
+2026-04-13 07:26:44,271 | INFO | LLM 重试 #2，等待 5s…
+2026-04-13 07:26:49,851 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 503 Service Unavailable"
+2026-04-13 07:26:49,853 | INFO | LLM 重试 #3，等待 8s…
+2026-04-13 07:26:58,471 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 503 Service Unavailable"
+2026-04-13 07:26:58,474 | INFO | LLM 重试 #4，等待 16s…
+2026-04-13 07:27:15,096 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 503 Service Unavailable"
+2026-04-13 07:27:15,097 | WARNING | [doubao-pro-32k-241215] [1/7] generation failed for 73c077788a0a: LLM 网关错误 (HTTP 503): Error code: 503 - {'error': {'message': '当前分组 企业用户 下对于模型 doubao-pro-32k-241215 计费模式 [按量计费] 无可用渠道 (request id: 2026041315271497767130241055693)', 'type': 'shell_api_error'}}
+2026-04-13 07:27:15,097 | ERROR | [doubao-pro-32k-241215] looks unavailable on this gateway; skip remaining 6 items. Error: LLM 网关错误 (HTTP 503): Error code: 503 - {'error': {'message': '当前分组 企业用户 下对于模型 doubao-pro-32k-241215 计费模式 [按量计费] 无可用渠道 (request id: 2026041315271497767130241055693)', 'type': 'shell_api_error'}}
+2026-04-13 07:27:15,097 | INFO | Saved 1 generated records -> outputs/querycentric_2025_10_v1/query_model_results/doubao-pro-32k-241215.json
+[6/6] Evaluate model outputs with judge model: gpt-4o-mini-2024-07-18
+2026-04-13 07:27:16,742 | INFO | ======================================================================
+2026-04-13 07:27:16,742 | INFO | Step 1: 构建全局知识图谱 (GlobalKG)
+2026-04-13 07:27:22,883 | INFO | 正在加载 Benchmark 数据集构建知识图谱: outputs/temporal_3000_diag_v1/benchmark_dataset_2023_2024.json
+Building prefix dict from the default dictionary ...
+2026-04-13 07:27:23,831 | DEBUG | Building prefix dict from the default dictionary ...
+Loading model from cache /tmp/jieba.cache
+2026-04-13 07:27:23,831 | DEBUG | Loading model from cache /tmp/jieba.cache
+Loading model cost 0.459 seconds.
+2026-04-13 07:27:24,290 | DEBUG | Loading model cost 0.459 seconds.
+Prefix dict has been built successfully.
+2026-04-13 07:27:24,290 | DEBUG | Prefix dict has been built successfully.
+2026-04-13 07:27:26,673 | INFO | KG 构建完成。共索引 6159 条路径，覆盖 28 个学科。
+2026-04-13 07:27:26,721 | INFO | Step 2: 加载论文元数据
+2026-04-13 07:27:26,722 | INFO | 论文元数据映射: 7 篇
+2026-04-13 07:27:26,722 | INFO | Step 3: 开始评测 9 个模型
+2026-04-13 07:27:26,722 | WARNING | [claude-3-5-haiku-20241022] 所有 1 条记录均失败，跳过
+2026-04-13 07:27:26,723 | WARNING | [claude-3-5-sonnet-20241022] 所有 1 条记录均失败，跳过
+2026-04-13 07:27:26,723 | INFO | ======================================================================
+2026-04-13 07:27:26,723 | INFO | [deepseek-v3] 开始评测: 7/7 条有效记录
+2026-04-13 07:27:26,723 | INFO | --------------------------------------------------
+2026-04-13 07:27:26,723 | INFO | [deepseek-v3] [1/7] deepseek-v3-L1 | 73c077788a0a | 'Bioaccumulation of microplastics in dece'
+2026-04-13 07:27:28,627 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:27:36,978 | INFO | [deepseek-v3] 解析完成: L1=1 L2=1 L3=1 (10.3s)
+2026-04-13 07:27:36,990 | INFO | [deepseek-v3] GT 参考路径: 3 条
+2026-04-13 07:27:36,990 | INFO | ────────────────────────────────────────────────────────────
+2026-04-13 07:27:36,990 | INFO | [Eval] ID deepseek-v3_73c077788a0a L1[0] 开始评估
+2026-04-13 07:27:36,990 | INFO | [Eval] ID deepseek-v3_73c077788a0a L1[0] 生成路径: 微塑料纳米颗粒--[enables]-->生物冠形成 -> 生物冠形成--[causes]-->内吞作用 -> 内吞作用--[enables]-->微塑料进入脑毛细血管内皮细胞 -> 粒径<100nm的微塑料--[causes]-->血脑屏障通透性增加 -> 慢性炎症状态--[causes]-->微塑料通过胞吞转运进入脑实质
+2026-04-13 07:27:36,990 | INFO | [Eval] ID deepseek-v3_73c077788a0a L1[0] 参考路径数: 3 (GT: 3, web: 0)
+2026-04-13 07:27:36,990 | INFO | [Eval] ID deepseek-v3_73c077788a0a L1[0] query='微塑料在人类大脑中的生物累积机制及其病理影响是什么'  discipline='生物学'  abstract_len=1483
+2026-04-13 07:27:36,990 | INFO | [Eval] ID deepseek-v3_73c077788a0a L1[0] gt_terms(29): 微塑料和纳米塑料, 热解气相色谱-质谱法, 衰减全反射傅里叶变换红外光谱, 电子显微镜与能量色散光谱, 聚乙烯, 纳米级碎片状片段, 脑血管壁, 免疫细胞
+2026-04-13 07:27:36,990 | INFO | [Eval] ID deepseek-v3_73c077788a0a L1[0] ── 计算客观图指标 ──
+2026-04-13 07:27:36,991 | INFO | [Eval] ID deepseek-v3_73c077788a0a L1[0] consistency_f1=0.0000 (P=0.0000 R=0.0000) — 生成路径与参考路径的实体/关系重叠度
+2026-04-13 07:27:36,994 | INFO | Load pretrained SentenceTransformer: paraphrase-multilingual-MiniLM-L12-v2
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 61544.50it/s]
+[1mBertModel LOAD REPORT[0m from: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+Key                     | Status     |  | 
+------------------------+------------+--+-
+embeddings.position_ids | UNEXPECTED |  | 
+
+[3mNotes:
+- UNEXPECTED[3m	:can be ignored when loading from different task/architecture; not ok if you expect identical arch.[0m
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:06<00:00,  6.32s/it]Batches: 100%|██████████| 1/1 [00:06<00:00,  6.32s/it]
+2026-04-13 07:27:45,187 | INFO | [Eval] ID deepseek-v3_73c077788a0a L1[0] embedding_bridging=0.3252 — 路径中相邻步骤的语义跨越程度
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:06<00:00,  6.39s/it]Batches: 100%|██████████| 1/1 [00:06<00:00,  6.39s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:05<00:00,  5.74s/it]Batches: 100%|██████████| 1/1 [00:05<00:00,  5.74s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:10<00:00, 10.22s/it]Batches: 100%|██████████| 1/1 [00:10<00:00, 10.22s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:10<00:00, 10.22s/it]Batches: 100%|██████████| 1/1 [00:10<00:00, 10.22s/it]
+2026-04-13 07:28:17,762 | INFO | [Eval] ID deepseek-v3_73c077788a0a L1[0] chain_coherence=0.6587 — 相邻步骤间的语义连贯性
+2026-04-13 07:28:17,763 | INFO | [Eval] ID deepseek-v3_73c077788a0a L1[0] rao_stirling=0.0000 — Rao-Stirling 学科多样性指数
+2026-04-13 07:28:17,763 | INFO | [Eval] ID deepseek-v3_73c077788a0a L1[0] atypical_combination=0.8768 — 非典型概念组合度 (z-score)
+2026-04-13 07:28:17,763 | INFO | [Eval] ID deepseek-v3_73c077788a0a L1[0] disciplinary_leap_index=0.0000 — 最大学科跨越距离
+2026-04-13 07:28:17,763 | INFO | [Eval] ID deepseek-v3_73c077788a0a L1[0] discipline_balance=0.0000 — 学科分布均衡度 (1-Gini)
+2026-04-13 07:28:17,763 | INFO | [Eval] ID deepseek-v3_73c077788a0a L1[0] info_novelty=1.0000 — 信息论新颖度 (surprisal)
+2026-04-13 07:28:17,763 | INFO | [Eval] ID deepseek-v3_73c077788a0a L1[0] ── 计算比较型指标 (vs GT) ──
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:05<00:00,  5.98s/it]Batches: 100%|██████████| 1/1 [00:05<00:00,  5.98s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:05<00:00,  5.18s/it]Batches: 100%|██████████| 1/1 [00:05<00:00,  5.18s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:06<00:00,  6.67s/it]Batches: 100%|██████████| 1/1 [00:06<00:00,  6.67s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:06<00:00,  6.18s/it]Batches: 100%|██████████| 1/1 [00:06<00:00,  6.18s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:04<00:00,  4.74s/it]Batches: 100%|██████████| 1/1 [00:04<00:00,  4.74s/it]
+2026-04-13 07:28:46,548 | INFO | [Eval] ID deepseek-v3_73c077788a0a L1[0] remote_association_index=0.7307 — 路径步骤间平均语义距离
+2026-04-13 07:28:46,548 | INFO | [Eval] ID deepseek-v3_73c077788a0a L1[0] causal_direction_accuracy=0.0000 — 因果方向与参考路径的吻合度
+2026-04-13 07:28:46,548 | INFO | [Eval] ID deepseek-v3_73c077788a0a L1[0] novelty_convention_balance=0.0000 — 新颖性与传统性的平衡度
+Loading weights:   0%|          | 0/776 [00:00<?, ?it/s]Loading weights: 100%|██████████| 776/776 [00:00<00:00, 61882.65it/s]
+2026-04-13 07:43:17,782 | INFO | [Eval] ID deepseek-v3_73c077788a0a L1[0] factual_precision=1.0000 — NLI 检测路径中 claim 与摘要的一致性
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:13<00:00, 13.11s/it]Batches: 100%|██████████| 1/1 [00:13<00:00, 13.12s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:07<00:00,  7.73s/it]Batches: 100%|██████████| 1/1 [00:07<00:00,  7.73s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:07<00:00,  7.82s/it]Batches: 100%|██████████| 1/1 [00:07<00:00,  7.82s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:07<00:00,  7.28s/it]Batches: 100%|██████████| 1/1 [00:07<00:00,  7.28s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:06<00:00,  6.49s/it]Batches: 100%|██████████| 1/1 [00:06<00:00,  6.49s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:06<00:00,  6.81s/it]Batches: 100%|██████████| 1/1 [00:06<00:00,  6.81s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:07<00:00,  7.06s/it]Batches: 100%|██████████| 1/1 [00:07<00:00,  7.06s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:06<00:00,  6.45s/it]Batches: 100%|██████████| 1/1 [00:06<00:00,  6.45s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:06<00:00,  6.97s/it]Batches: 100%|██████████| 1/1 [00:06<00:00,  6.97s/it]
+2026-04-13 07:44:27,582 | INFO | [Eval] ID deepseek-v3_73c077788a0a L1[0] hallucination_rate=0.3750 — 路径中未被参考支持的实体比例
+2026-04-13 07:44:27,583 | INFO | [Eval] ID deepseek-v3_73c077788a0a L1[0] ── 计算 GT 证据指标 ──
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:07<00:00,  7.28s/it]Batches: 100%|██████████| 1/1 [00:07<00:00,  7.28s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:13<00:00, 13.15s/it]Batches: 100%|██████████| 1/1 [00:13<00:00, 13.15s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:07<00:00,  7.09s/it]Batches: 100%|██████████| 1/1 [00:07<00:00,  7.09s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:14<00:00, 14.72s/it]Batches: 100%|██████████| 1/1 [00:14<00:00, 14.72s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:07<00:00,  7.17s/it]Batches: 100%|██████████| 1/1 [00:07<00:00,  7.17s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:13<00:00, 13.56s/it]Batches: 100%|██████████| 1/1 [00:13<00:00, 13.56s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:06<00:00,  6.62s/it]Batches: 100%|██████████| 1/1 [00:06<00:00,  6.62s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:12<00:00, 12.54s/it]Batches: 100%|██████████| 1/1 [00:12<00:00, 12.54s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:07<00:00,  7.27s/it]Batches: 100%|██████████| 1/1 [00:07<00:00,  7.27s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:12<00:00, 12.34s/it]Batches: 100%|██████████| 1/1 [00:12<00:00, 12.35s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:07<00:00,  7.54s/it]Batches: 100%|██████████| 1/1 [00:07<00:00,  7.54s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:13<00:00, 13.14s/it]Batches: 100%|██████████| 1/1 [00:13<00:00, 13.14s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:08<00:00,  8.13s/it]Batches: 100%|██████████| 1/1 [00:08<00:00,  8.13s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:14<00:00, 14.02s/it]Batches: 100%|██████████| 1/1 [00:14<00:00, 14.02s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:08<00:00,  8.08s/it]Batches: 100%|██████████| 1/1 [00:08<00:00,  8.09s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:15<00:00, 15.30s/it]Batches: 100%|██████████| 1/1 [00:15<00:00, 15.30s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:08<00:00,  8.44s/it]Batches: 100%|██████████| 1/1 [00:08<00:00,  8.44s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:15<00:00, 15.20s/it]Batches: 100%|██████████| 1/1 [00:15<00:00, 15.20s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:08<00:00,  8.40s/it]Batches: 100%|██████████| 1/1 [00:08<00:00,  8.40s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:15<00:00, 15.09s/it]Batches: 100%|██████████| 1/1 [00:15<00:00, 15.09s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:08<00:00,  8.45s/it]Batches: 100%|██████████| 1/1 [00:08<00:00,  8.45s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:14<00:00, 14.86s/it]Batches: 100%|██████████| 1/1 [00:14<00:00, 14.86s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:08<00:00,  8.22s/it]Batches: 100%|██████████| 1/1 [00:08<00:00,  8.22s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:15<00:00, 15.40s/it]Batches: 100%|██████████| 1/1 [00:15<00:00, 15.40s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:07<00:00,  7.44s/it]Batches: 100%|██████████| 1/1 [00:07<00:00,  7.44s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:15<00:00, 15.69s/it]Batches: 100%|██████████| 1/1 [00:15<00:00, 15.69s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:08<00:00,  8.02s/it]Batches: 100%|██████████| 1/1 [00:08<00:00,  8.02s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:16<00:00, 16.04s/it]Batches: 100%|██████████| 1/1 [00:16<00:00, 16.04s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:08<00:00,  8.27s/it]Batches: 100%|██████████| 1/1 [00:08<00:00,  8.27s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:12<00:00, 12.46s/it]Batches: 100%|██████████| 1/1 [00:12<00:00, 12.46s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:07<00:00,  7.94s/it]Batches: 100%|██████████| 1/1 [00:07<00:00,  7.94s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:14<00:00, 14.47s/it]Batches: 100%|██████████| 1/1 [00:14<00:00, 14.47s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:07<00:00,  7.76s/it]Batches: 100%|██████████| 1/1 [00:07<00:00,  7.76s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:13<00:00, 13.09s/it]Batches: 100%|██████████| 1/1 [00:13<00:00, 13.09s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:07<00:00,  7.72s/it]Batches: 100%|██████████| 1/1 [00:07<00:00,  7.72s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:15<00:00, 15.32s/it]Batches: 100%|██████████| 1/1 [00:15<00:00, 15.32s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:08<00:00,  8.09s/it]Batches: 100%|██████████| 1/1 [00:08<00:00,  8.09s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:15<00:00, 15.19s/it]Batches: 100%|██████████| 1/1 [00:15<00:00, 15.19s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:08<00:00,  8.17s/it]Batches: 100%|██████████| 1/1 [00:08<00:00,  8.17s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:15<00:00, 15.40s/it]Batches: 100%|██████████| 1/1 [00:15<00:00, 15.40s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:08<00:00,  8.57s/it]Batches: 100%|██████████| 1/1 [00:08<00:00,  8.57s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:15<00:00, 15.14s/it]Batches: 100%|██████████| 1/1 [00:15<00:00, 15.14s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:08<00:00,  8.02s/it]Batches: 100%|██████████| 1/1 [00:08<00:00,  8.02s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:14<00:00, 14.25s/it]Batches: 100%|██████████| 1/1 [00:14<00:00, 14.25s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:07<00:00,  7.40s/it]Batches: 100%|██████████| 1/1 [00:07<00:00,  7.40s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:14<00:00, 14.14s/it]Batches: 100%|██████████| 1/1 [00:14<00:00, 14.14s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:07<00:00,  7.72s/it]Batches: 100%|██████████| 1/1 [00:07<00:00,  7.72s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:14<00:00, 14.40s/it]Batches: 100%|██████████| 1/1 [00:14<00:00, 14.40s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:07<00:00,  7.76s/it]Batches: 100%|██████████| 1/1 [00:07<00:00,  7.76s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:14<00:00, 14.58s/it]Batches: 100%|██████████| 1/1 [00:14<00:00, 14.58s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:07<00:00,  7.36s/it]Batches: 100%|██████████| 1/1 [00:07<00:00,  7.36s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:15<00:00, 15.41s/it]Batches: 100%|██████████| 1/1 [00:15<00:00, 15.41s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:07<00:00,  7.93s/it]Batches: 100%|██████████| 1/1 [00:07<00:00,  7.93s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:14<00:00, 14.33s/it]Batches: 100%|██████████| 1/1 [00:14<00:00, 14.33s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:08<00:00,  8.51s/it]Batches: 100%|██████████| 1/1 [00:08<00:00,  8.51s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:14<00:00, 14.08s/it]Batches: 100%|██████████| 1/1 [00:14<00:00, 14.08s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:07<00:00,  7.02s/it]Batches: 100%|██████████| 1/1 [00:07<00:00,  7.02s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:12<00:00, 12.94s/it]Batches: 100%|██████████| 1/1 [00:12<00:00, 12.94s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:06<00:00,  6.78s/it]Batches: 100%|██████████| 1/1 [00:06<00:00,  6.78s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:13<00:00, 13.78s/it]Batches: 100%|██████████| 1/1 [00:13<00:00, 13.78s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:07<00:00,  7.59s/it]Batches: 100%|██████████| 1/1 [00:07<00:00,  7.59s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:13<00:00, 13.44s/it]Batches: 100%|██████████| 1/1 [00:13<00:00, 13.44s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:08<00:00,  8.31s/it]Batches: 100%|██████████| 1/1 [00:08<00:00,  8.31s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:14<00:00, 14.10s/it]Batches: 100%|██████████| 1/1 [00:14<00:00, 14.10s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:07<00:00,  7.41s/it]Batches: 100%|██████████| 1/1 [00:07<00:00,  7.41s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:12<00:00, 12.56s/it]Batches: 100%|██████████| 1/1 [00:12<00:00, 12.56s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:08<00:00,  8.41s/it]Batches: 100%|██████████| 1/1 [00:08<00:00,  8.41s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:13<00:00, 13.10s/it]Batches: 100%|██████████| 1/1 [00:13<00:00, 13.10s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:07<00:00,  7.88s/it]Batches: 100%|██████████| 1/1 [00:07<00:00,  7.89s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:14<00:00, 14.60s/it]Batches: 100%|██████████| 1/1 [00:14<00:00, 14.60s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:08<00:00,  8.72s/it]Batches: 100%|██████████| 1/1 [00:08<00:00,  8.72s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:14<00:00, 14.10s/it]Batches: 100%|██████████| 1/1 [00:14<00:00, 14.10s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:07<00:00,  7.90s/it]Batches: 100%|██████████| 1/1 [00:07<00:00,  7.91s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:15<00:00, 15.16s/it]Batches: 100%|██████████| 1/1 [00:15<00:00, 15.16s/it]
+2026-04-13 07:58:04,409 | INFO | [Eval] ID deepseek-v3_73c077788a0a L1[0] concept_f1=0.3109 (P=0.6250 R=0.2069) — 概念覆盖度
+2026-04-13 07:58:04,422 | INFO | [Eval] ID deepseek-v3_73c077788a0a L1[0] evidence_coverage=0.0000 — GT 证据路径覆盖度
+2026-04-13 07:58:04,422 | INFO | [Eval] ID deepseek-v3_73c077788a0a L1[0] ── LLM 主观评估 ──
+2026-04-13 07:58:04,426 | INFO | [Eval] ID deepseek-v3_73c077788a0a L1[0] LLM prompt 长度: 2136 字符 (含 3 条参考路径)
+2026-04-13 07:58:06,639 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:58:07,826 | INFO | [Eval] ID deepseek-v3_73c077788a0a L1[0] LLM 原始响应: {
+    "innovation_score": 8.0,
+    "feasibility_score": 7.5,
+    "scientificity_score": 8.5,
+    "reason": "模型生成的路径提出了微塑料在生物冠形成和内吞作用中的新颖联系，超出了参考路径的范围，显示出一定的创新性。逻辑上，路径各步骤之间的联系较为合理，但在某些环节（如慢性炎症状态与微塑料转运的直接关系）上可能存在一定的跳跃。术语和概念使用准确，符合科学事实，整体上具有较高的科学性。"
+}
+2026-04-13 07:58:07,826 | INFO | [Eval] ID deepseek-v3_73c077788a0a L1[0] LLM 评分: innovation=8.00 feasibility=7.50 scientificity=8.50
+2026-04-13 07:58:09,556 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:58:10,788 | INFO | [Eval] ID deepseek-v3_73c077788a0a L1[0] LLM 现实可行性: feasibility=5.0000 (data=5.00 method=5.00 resource=5.00 validation=5.00)
+2026-04-13 07:58:12,439 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 07:58:13,688 | INFO | [Eval] ID deepseek-v3_73c077788a0a L1[0] LLM 可验证性: testability=7.0000 (specificity=7.00 measurability=8.00 falsifiability=7.00 resource_feasibility=6.00)
+2026-04-13 07:58:13,688 | INFO | [Eval] ID deepseek-v3_73c077788a0a L1[0] ── 评分汇总 ──
+2026-04-13 07:58:13,688 | INFO | [Eval] ID deepseek-v3_73c077788a0a L1[0]   atypical_combination           = 0.8768
+2026-04-13 07:58:13,688 | INFO | [Eval] ID deepseek-v3_73c077788a0a L1[0]   bridging                       = 0.8000
+2026-04-13 07:58:13,688 | INFO | [Eval] ID deepseek-v3_73c077788a0a L1[0]   causal_direction_accuracy      = 0.0000
+2026-04-13 07:58:13,688 | INFO | [Eval] ID deepseek-v3_73c077788a0a L1[0]   chain_coherence                = 0.6587
+2026-04-13 07:58:13,688 | INFO | [Eval] ID deepseek-v3_73c077788a0a L1[0]   concept_f1                     = 0.3109
+2026-04-13 07:58:13,688 | INFO | [Eval] ID deepseek-v3_73c077788a0a L1[0]   concept_precision              = 0.6250
+2026-04-13 07:58:13,688 | INFO | [Eval] ID deepseek-v3_73c077788a0a L1[0]   concept_recall                 = 0.2069
+2026-04-13 07:58:13,688 | INFO | [Eval] ID deepseek-v3_73c077788a0a L1[0]   consistency                    = 0.0000
+2026-04-13 07:58:13,688 | INFO | [Eval] ID deepseek-v3_73c077788a0a L1[0]   consistency_f1                 = 0.0000
+2026-04-13 07:58:13,688 | INFO | [Eval] ID deepseek-v3_73c077788a0a L1[0]   consistency_precision          = 0.0000
+2026-04-13 07:58:13,688 | INFO | [Eval] ID deepseek-v3_73c077788a0a L1[0]   consistency_recall             = 0.0000
+2026-04-13 07:58:13,688 | INFO | [Eval] ID deepseek-v3_73c077788a0a L1[0]   disciplinary_leap_index        = 0.0000
+2026-04-13 07:58:13,688 | INFO | [Eval] ID deepseek-v3_73c077788a0a L1[0]   discipline_balance             = 0.0000
+2026-04-13 07:58:13,688 | INFO | [Eval] ID deepseek-v3_73c077788a0a L1[0]   embedding_bridging             = 0.3252
+2026-04-13 07:58:13,688 | INFO | [Eval] ID deepseek-v3_73c077788a0a L1[0]   evidence_coverage              = 0.0000
+2026-04-13 07:58:13,688 | INFO | [Eval] ID deepseek-v3_73c077788a0a L1[0]   factual_precision              = 1.0000
+2026-04-13 07:58:13,688 | INFO | [Eval] ID deepseek-v3_73c077788a0a L1[0]   feasibility                    = 5.0000
+2026-04-13 07:58:13,688 | INFO | [Eval] ID deepseek-v3_73c077788a0a L1[0]   feasibility_data               = 5.0000
+2026-04-13 07:58:13,688 | INFO | [Eval] ID deepseek-v3_73c077788a0a L1[0]   feasibility_method             = 5.0000
+2026-04-13 07:58:13,688 | INFO | [Eval] ID deepseek-v3_73c077788a0a L1[0]   feasibility_resource           = 5.0000
+2026-04-13 07:58:13,688 | INFO | [Eval] ID deepseek-v3_73c077788a0a L1[0]   feasibility_validation         = 5.0000
+2026-04-13 07:58:13,688 | INFO | [Eval] ID deepseek-v3_73c077788a0a L1[0]   hallucination_rate             = 0.3750
+2026-04-13 07:58:13,688 | INFO | [Eval] ID deepseek-v3_73c077788a0a L1[0]   info_novelty                   = 1.0000
+2026-04-13 07:58:13,688 | INFO | [Eval] ID deepseek-v3_73c077788a0a L1[0]   innovation                     = 8.0000
+2026-04-13 07:58:13,688 | INFO | [Eval] ID deepseek-v3_73c077788a0a L1[0]   legacy_feasibility             = 7.5000
+2026-04-13 07:58:13,688 | INFO | [Eval] ID deepseek-v3_73c077788a0a L1[0]   novelty_convention_balance     = 0.0000
+2026-04-13 07:58:13,688 | INFO | [Eval] ID deepseek-v3_73c077788a0a L1[0]   path_alignment_best            = 0.0000
+2026-04-13 07:58:13,688 | INFO | [Eval] ID deepseek-v3_73c077788a0a L1[0]   path_alignment_mean            = 0.0000
+2026-04-13 07:58:13,688 | INFO | [Eval] ID deepseek-v3_73c077788a0a L1[0]   rao_stirling                   = 0.0000
+2026-04-13 07:58:13,688 | INFO | [Eval] ID deepseek-v3_73c077788a0a L1[0]   relation_precision             = 0.0000
+2026-04-13 07:58:13,688 | INFO | [Eval] ID deepseek-v3_73c077788a0a L1[0]   relation_type_accuracy         = 0.0000
+2026-04-13 07:58:13,688 | INFO | [Eval] ID deepseek-v3_73c077788a0a L1[0]   remote_association_index       = 0.7307
+2026-04-13 07:58:13,688 | INFO | [Eval] ID deepseek-v3_73c077788a0a L1[0]   scientificity                  = 8.5000
+2026-04-13 07:58:13,688 | INFO | [Eval] ID deepseek-v3_73c077788a0a L1[0]   testability                    = 7.0000
+2026-04-13 07:58:13,688 | INFO | ────────────────────────────────────────────────────────────
+2026-04-13 07:58:13,688 | INFO | ────────────────────────────────────────────────────────────
+2026-04-13 07:58:13,688 | INFO | [Eval] ID deepseek-v3_73c077788a0a L2[0] 开始评估
+2026-04-13 07:58:13,688 | INFO | [Eval] ID deepseek-v3_73c077788a0a L2[0] 生成路径: 聚苯乙烯微塑料--[causes]-->兴奋性毒性 -> PET微塑料--[causes]-->α-突触核蛋白异常聚集 -> 微塑料-金属复合物--[causes]-->脑内氧化应激水平增加
+2026-04-13 07:58:13,688 | INFO | [Eval] ID deepseek-v3_73c077788a0a L2[0] 参考路径数: 3 (GT: 3, web: 0)
+2026-04-13 07:58:13,688 | INFO | [Eval] ID deepseek-v3_73c077788a0a L2[0] query='微塑料在人类大脑中的生物累积机制及其病理影响是什么'  discipline='生物学'  abstract_len=1483
+2026-04-13 07:58:13,688 | INFO | [Eval] ID deepseek-v3_73c077788a0a L2[0] gt_terms(29): 微塑料和纳米塑料, 热解气相色谱-质谱法, 衰减全反射傅里叶变换红外光谱, 电子显微镜与能量色散光谱, 聚乙烯, 纳米级碎片状片段, 脑血管壁, 免疫细胞
+2026-04-13 07:58:13,688 | INFO | [Eval] ID deepseek-v3_73c077788a0a L2[0] ── 计算客观图指标 ──
+2026-04-13 07:58:13,693 | INFO | [Eval] ID deepseek-v3_73c077788a0a L2[0] consistency_f1=0.0000 (P=0.0000 R=0.0000) — 生成路径与参考路径的实体/关系重叠度
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:07<00:00,  7.20s/it]Batches: 100%|██████████| 1/1 [00:07<00:00,  7.20s/it]
+2026-04-13 07:58:20,899 | INFO | [Eval] ID deepseek-v3_73c077788a0a L2[0] embedding_bridging=0.9287 — 路径中相邻步骤的语义跨越程度
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:14<00:00, 14.94s/it]Batches: 100%|██████████| 1/1 [00:14<00:00, 14.94s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:13<00:00, 13.28s/it]Batches: 100%|██████████| 1/1 [00:13<00:00, 13.28s/it]
+2026-04-13 07:58:49,125 | INFO | [Eval] ID deepseek-v3_73c077788a0a L2[0] chain_coherence=0.3806 — 相邻步骤间的语义连贯性
+2026-04-13 07:58:49,128 | INFO | [Eval] ID deepseek-v3_73c077788a0a L2[0] rao_stirling=0.0000 — Rao-Stirling 学科多样性指数
+2026-04-13 07:58:49,128 | INFO | [Eval] ID deepseek-v3_73c077788a0a L2[0] atypical_combination=0.8768 — 非典型概念组合度 (z-score)
+2026-04-13 07:58:49,128 | INFO | [Eval] ID deepseek-v3_73c077788a0a L2[0] disciplinary_leap_index=0.0000 — 最大学科跨越距离
+2026-04-13 07:58:49,128 | INFO | [Eval] ID deepseek-v3_73c077788a0a L2[0] discipline_balance=0.0000 — 学科分布均衡度 (1-Gini)
+2026-04-13 07:58:49,128 | INFO | [Eval] ID deepseek-v3_73c077788a0a L2[0] info_novelty=1.0000 — 信息论新颖度 (surprisal)
+2026-04-13 07:58:49,128 | INFO | [Eval] ID deepseek-v3_73c077788a0a L2[0] ── 计算比较型指标 (vs GT) ──
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:06<00:00,  6.92s/it]Batches: 100%|██████████| 1/1 [00:06<00:00,  6.92s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:04<00:00,  4.52s/it]Batches: 100%|██████████| 1/1 [00:04<00:00,  4.52s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.05s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.05s/it]
+2026-04-13 07:59:03,631 | INFO | [Eval] ID deepseek-v3_73c077788a0a L2[0] remote_association_index=0.8695 — 路径步骤间平均语义距离
+2026-04-13 07:59:03,631 | INFO | [Eval] ID deepseek-v3_73c077788a0a L2[0] causal_direction_accuracy=0.0000 — 因果方向与参考路径的吻合度
+2026-04-13 07:59:03,631 | INFO | [Eval] ID deepseek-v3_73c077788a0a L2[0] novelty_convention_balance=0.0000 — 新颖性与传统性的平衡度
+2026-04-13 08:07:18,198 | INFO | [Eval] ID deepseek-v3_73c077788a0a L2[0] factual_precision=1.0000 — NLI 检测路径中 claim 与摘要的一致性
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:15<00:00, 15.28s/it]Batches: 100%|██████████| 1/1 [00:15<00:00, 15.28s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:08<00:00,  8.17s/it]Batches: 100%|██████████| 1/1 [00:08<00:00,  8.17s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:08<00:00,  8.29s/it]Batches: 100%|██████████| 1/1 [00:08<00:00,  8.29s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:07<00:00,  7.31s/it]Batches: 100%|██████████| 1/1 [00:07<00:00,  7.31s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:08<00:00,  8.43s/it]Batches: 100%|██████████| 1/1 [00:08<00:00,  8.43s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:07<00:00,  7.74s/it]Batches: 100%|██████████| 1/1 [00:07<00:00,  7.74s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:07<00:00,  7.58s/it]Batches: 100%|██████████| 1/1 [00:07<00:00,  7.58s/it]
+2026-04-13 08:08:21,084 | INFO | [Eval] ID deepseek-v3_73c077788a0a L2[0] hallucination_rate=0.3333 — 路径中未被参考支持的实体比例
+2026-04-13 08:08:21,084 | INFO | [Eval] ID deepseek-v3_73c077788a0a L2[0] ── 计算 GT 证据指标 ──
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:07<00:00,  7.43s/it]Batches: 100%|██████████| 1/1 [00:07<00:00,  7.43s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:10<00:00, 10.46s/it]Batches: 100%|██████████| 1/1 [00:10<00:00, 10.46s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:08<00:00,  8.36s/it]Batches: 100%|██████████| 1/1 [00:08<00:00,  8.36s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:08<00:00,  8.51s/it]Batches: 100%|██████████| 1/1 [00:08<00:00,  8.51s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:07<00:00,  7.49s/it]Batches: 100%|██████████| 1/1 [00:07<00:00,  7.49s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:09<00:00,  9.35s/it]Batches: 100%|██████████| 1/1 [00:09<00:00,  9.35s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:07<00:00,  7.54s/it]Batches: 100%|██████████| 1/1 [00:07<00:00,  7.54s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:07<00:00,  7.94s/it]Batches: 100%|██████████| 1/1 [00:07<00:00,  7.94s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:07<00:00,  7.85s/it]Batches: 100%|██████████| 1/1 [00:07<00:00,  7.85s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:09<00:00,  9.80s/it]Batches: 100%|██████████| 1/1 [00:09<00:00,  9.80s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:08<00:00,  8.79s/it]Batches: 100%|██████████| 1/1 [00:08<00:00,  8.79s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:12<00:00, 12.60s/it]Batches: 100%|██████████| 1/1 [00:12<00:00, 12.60s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:08<00:00,  8.51s/it]Batches: 100%|██████████| 1/1 [00:08<00:00,  8.51s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:09<00:00,  9.62s/it]Batches: 100%|██████████| 1/1 [00:09<00:00,  9.62s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:07<00:00,  7.67s/it]Batches: 100%|██████████| 1/1 [00:07<00:00,  7.67s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:08<00:00,  8.81s/it]Batches: 100%|██████████| 1/1 [00:08<00:00,  8.81s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:08<00:00,  8.34s/it]Batches: 100%|██████████| 1/1 [00:08<00:00,  8.34s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:08<00:00,  8.77s/it]Batches: 100%|██████████| 1/1 [00:08<00:00,  8.77s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:07<00:00,  7.62s/it]Batches: 100%|██████████| 1/1 [00:07<00:00,  7.62s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:08<00:00,  8.34s/it]Batches: 100%|██████████| 1/1 [00:08<00:00,  8.35s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:07<00:00,  7.81s/it]Batches: 100%|██████████| 1/1 [00:07<00:00,  7.81s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:08<00:00,  8.96s/it]Batches: 100%|██████████| 1/1 [00:08<00:00,  8.96s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:07<00:00,  7.84s/it]Batches: 100%|██████████| 1/1 [00:07<00:00,  7.84s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:09<00:00,  9.06s/it]Batches: 100%|██████████| 1/1 [00:09<00:00,  9.06s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:09<00:00,  9.08s/it]Batches: 100%|██████████| 1/1 [00:09<00:00,  9.08s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:08<00:00,  8.88s/it]Batches: 100%|██████████| 1/1 [00:08<00:00,  8.88s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:07<00:00,  7.43s/it]Batches: 100%|██████████| 1/1 [00:07<00:00,  7.43s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:08<00:00,  8.71s/it]Batches: 100%|██████████| 1/1 [00:08<00:00,  8.71s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:07<00:00,  7.84s/it]Batches: 100%|██████████| 1/1 [00:07<00:00,  7.84s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:08<00:00,  8.96s/it]Batches: 100%|██████████| 1/1 [00:08<00:00,  8.96s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:07<00:00,  7.78s/it]Batches: 100%|██████████| 1/1 [00:07<00:00,  7.78s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:08<00:00,  8.74s/it]Batches: 100%|██████████| 1/1 [00:08<00:00,  8.74s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:08<00:00,  8.13s/it]Batches: 100%|██████████| 1/1 [00:08<00:00,  8.13s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:08<00:00,  8.39s/it]Batches: 100%|██████████| 1/1 [00:08<00:00,  8.39s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:07<00:00,  7.67s/it]Batches: 100%|██████████| 1/1 [00:07<00:00,  7.67s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:09<00:00,  9.09s/it]Batches: 100%|██████████| 1/1 [00:09<00:00,  9.09s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:08<00:00,  8.09s/it]Batches: 100%|██████████| 1/1 [00:08<00:00,  8.09s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:08<00:00,  8.14s/it]Batches: 100%|██████████| 1/1 [00:08<00:00,  8.14s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:08<00:00,  8.18s/it]Batches: 100%|██████████| 1/1 [00:08<00:00,  8.18s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:08<00:00,  8.94s/it]Batches: 100%|██████████| 1/1 [00:08<00:00,  8.94s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:07<00:00,  7.58s/it]Batches: 100%|██████████| 1/1 [00:07<00:00,  7.58s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:09<00:00,  9.17s/it]Batches: 100%|██████████| 1/1 [00:09<00:00,  9.17s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:08<00:00,  8.71s/it]Batches: 100%|██████████| 1/1 [00:08<00:00,  8.71s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:06<00:00,  6.61s/it]Batches: 100%|██████████| 1/1 [00:06<00:00,  6.61s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:05<00:00,  5.51s/it]Batches: 100%|██████████| 1/1 [00:05<00:00,  5.51s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:06<00:00,  6.57s/it]Batches: 100%|██████████| 1/1 [00:06<00:00,  6.57s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:07<00:00,  7.79s/it]Batches: 100%|██████████| 1/1 [00:07<00:00,  7.79s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:09<00:00,  9.74s/it]Batches: 100%|██████████| 1/1 [00:09<00:00,  9.74s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:08<00:00,  8.40s/it]Batches: 100%|██████████| 1/1 [00:08<00:00,  8.40s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:08<00:00,  8.67s/it]Batches: 100%|██████████| 1/1 [00:08<00:00,  8.67s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:08<00:00,  8.62s/it]Batches: 100%|██████████| 1/1 [00:08<00:00,  8.62s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:09<00:00,  9.13s/it]Batches: 100%|██████████| 1/1 [00:09<00:00,  9.13s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:08<00:00,  8.06s/it]Batches: 100%|██████████| 1/1 [00:08<00:00,  8.06s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:08<00:00,  8.25s/it]Batches: 100%|██████████| 1/1 [00:08<00:00,  8.25s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:08<00:00,  8.67s/it]Batches: 100%|██████████| 1/1 [00:08<00:00,  8.67s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:08<00:00,  8.97s/it]Batches: 100%|██████████| 1/1 [00:08<00:00,  8.97s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:07<00:00,  7.97s/it]Batches: 100%|██████████| 1/1 [00:07<00:00,  7.97s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:08<00:00,  8.87s/it]Batches: 100%|██████████| 1/1 [00:08<00:00,  8.87s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:08<00:00,  8.21s/it]Batches: 100%|██████████| 1/1 [00:08<00:00,  8.21s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:12<00:00, 12.96s/it]Batches: 100%|██████████| 1/1 [00:12<00:00, 12.96s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:05<00:00,  5.37s/it]Batches: 100%|██████████| 1/1 [00:05<00:00,  5.37s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:11<00:00, 11.42s/it]Batches: 100%|██████████| 1/1 [00:11<00:00, 11.42s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:06<00:00,  6.26s/it]Batches: 100%|██████████| 1/1 [00:06<00:00,  6.26s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:10<00:00, 10.70s/it]Batches: 100%|██████████| 1/1 [00:10<00:00, 10.70s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:05<00:00,  5.63s/it]Batches: 100%|██████████| 1/1 [00:05<00:00,  5.63s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:11<00:00, 11.63s/it]Batches: 100%|██████████| 1/1 [00:11<00:00, 11.63s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:05<00:00,  5.72s/it]Batches: 100%|██████████| 1/1 [00:05<00:00,  5.72s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:10<00:00, 10.77s/it]Batches: 100%|██████████| 1/1 [00:10<00:00, 10.77s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:05<00:00,  5.42s/it]Batches: 100%|██████████| 1/1 [00:05<00:00,  5.42s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:10<00:00, 10.75s/it]Batches: 100%|██████████| 1/1 [00:10<00:00, 10.75s/it]
+2026-04-13 08:18:15,056 | INFO | [Eval] ID deepseek-v3_73c077788a0a L2[0] concept_f1=0.3158 (P=0.6667 R=0.2069) — 概念覆盖度
+2026-04-13 08:18:15,060 | INFO | [Eval] ID deepseek-v3_73c077788a0a L2[0] evidence_coverage=0.0000 — GT 证据路径覆盖度
+2026-04-13 08:18:15,060 | INFO | [Eval] ID deepseek-v3_73c077788a0a L2[0] ── LLM 主观评估 ──
+2026-04-13 08:18:15,061 | INFO | [Eval] ID deepseek-v3_73c077788a0a L2[0] LLM prompt 长度: 1806 字符 (含 3 条参考路径)
+2026-04-13 08:18:17,421 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 08:18:18,763 | INFO | [Eval] ID deepseek-v3_73c077788a0a L2[0] LLM 原始响应: {
+    "innovation_score": 7.5,
+    "feasibility_score": 8.0,
+    "scientificity_score": 8.5,
+    "reason": "该路径揭示了微塑料对神经系统的多重影响机制，涉及兴奋性毒性、蛋白质聚集和氧化应激等方面，显示出一定的创新性和科学性。然而，推理链条的严密性在某些步骤上仍有待加强，特别是在不同类型微塑料的具体作用机制上。"
+}
+2026-04-13 08:18:18,763 | INFO | [Eval] ID deepseek-v3_73c077788a0a L2[0] LLM 评分: innovation=7.50 feasibility=8.00 scientificity=8.50
+2026-04-13 08:18:20,354 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 08:18:21,592 | INFO | [Eval] ID deepseek-v3_73c077788a0a L2[0] LLM 现实可行性: feasibility=5.0000 (data=5.00 method=5.00 resource=5.00 validation=5.00)
+2026-04-13 08:18:23,294 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 08:18:24,613 | INFO | [Eval] ID deepseek-v3_73c077788a0a L2[0] LLM 可验证性: testability=7.2500 (specificity=7.00 measurability=8.00 falsifiability=8.00 resource_feasibility=6.00)
+2026-04-13 08:18:24,613 | INFO | [Eval] ID deepseek-v3_73c077788a0a L2[0] ── 评分汇总 ──
+2026-04-13 08:18:24,613 | INFO | [Eval] ID deepseek-v3_73c077788a0a L2[0]   atypical_combination           = 0.8768
+2026-04-13 08:18:24,613 | INFO | [Eval] ID deepseek-v3_73c077788a0a L2[0]   bridging                       = 1.0000
+2026-04-13 08:18:24,613 | INFO | [Eval] ID deepseek-v3_73c077788a0a L2[0]   causal_direction_accuracy      = 0.0000
+2026-04-13 08:18:24,613 | INFO | [Eval] ID deepseek-v3_73c077788a0a L2[0]   chain_coherence                = 0.3806
+2026-04-13 08:18:24,613 | INFO | [Eval] ID deepseek-v3_73c077788a0a L2[0]   concept_f1                     = 0.3158
+2026-04-13 08:18:24,613 | INFO | [Eval] ID deepseek-v3_73c077788a0a L2[0]   concept_precision              = 0.6667
+2026-04-13 08:18:24,613 | INFO | [Eval] ID deepseek-v3_73c077788a0a L2[0]   concept_recall                 = 0.2069
+2026-04-13 08:18:24,613 | INFO | [Eval] ID deepseek-v3_73c077788a0a L2[0]   consistency                    = 0.0000
+2026-04-13 08:18:24,613 | INFO | [Eval] ID deepseek-v3_73c077788a0a L2[0]   consistency_f1                 = 0.0000
+2026-04-13 08:18:24,613 | INFO | [Eval] ID deepseek-v3_73c077788a0a L2[0]   consistency_precision          = 0.0000
+2026-04-13 08:18:24,613 | INFO | [Eval] ID deepseek-v3_73c077788a0a L2[0]   consistency_recall             = 0.0000
+2026-04-13 08:18:24,613 | INFO | [Eval] ID deepseek-v3_73c077788a0a L2[0]   disciplinary_leap_index        = 0.0000
+2026-04-13 08:18:24,613 | INFO | [Eval] ID deepseek-v3_73c077788a0a L2[0]   discipline_balance             = 0.0000
+2026-04-13 08:18:24,613 | INFO | [Eval] ID deepseek-v3_73c077788a0a L2[0]   embedding_bridging             = 0.9287
+2026-04-13 08:18:24,613 | INFO | [Eval] ID deepseek-v3_73c077788a0a L2[0]   evidence_coverage              = 0.0000
+2026-04-13 08:18:24,613 | INFO | [Eval] ID deepseek-v3_73c077788a0a L2[0]   factual_precision              = 1.0000
+2026-04-13 08:18:24,613 | INFO | [Eval] ID deepseek-v3_73c077788a0a L2[0]   feasibility                    = 5.0000
+2026-04-13 08:18:24,613 | INFO | [Eval] ID deepseek-v3_73c077788a0a L2[0]   feasibility_data               = 5.0000
+2026-04-13 08:18:24,613 | INFO | [Eval] ID deepseek-v3_73c077788a0a L2[0]   feasibility_method             = 5.0000
+2026-04-13 08:18:24,614 | INFO | [Eval] ID deepseek-v3_73c077788a0a L2[0]   feasibility_resource           = 5.0000
+2026-04-13 08:18:24,614 | INFO | [Eval] ID deepseek-v3_73c077788a0a L2[0]   feasibility_validation         = 5.0000
+2026-04-13 08:18:24,614 | INFO | [Eval] ID deepseek-v3_73c077788a0a L2[0]   hallucination_rate             = 0.3333
+2026-04-13 08:18:24,614 | INFO | [Eval] ID deepseek-v3_73c077788a0a L2[0]   info_novelty                   = 1.0000
+2026-04-13 08:18:24,614 | INFO | [Eval] ID deepseek-v3_73c077788a0a L2[0]   innovation                     = 7.5000
+2026-04-13 08:18:24,614 | INFO | [Eval] ID deepseek-v3_73c077788a0a L2[0]   legacy_feasibility             = 8.0000
+2026-04-13 08:18:24,614 | INFO | [Eval] ID deepseek-v3_73c077788a0a L2[0]   novelty_convention_balance     = 0.0000
+2026-04-13 08:18:24,614 | INFO | [Eval] ID deepseek-v3_73c077788a0a L2[0]   path_alignment_best            = 0.0000
+2026-04-13 08:18:24,614 | INFO | [Eval] ID deepseek-v3_73c077788a0a L2[0]   path_alignment_mean            = 0.0000
+2026-04-13 08:18:24,614 | INFO | [Eval] ID deepseek-v3_73c077788a0a L2[0]   rao_stirling                   = 0.0000
+2026-04-13 08:18:24,614 | INFO | [Eval] ID deepseek-v3_73c077788a0a L2[0]   relation_precision             = 0.0000
+2026-04-13 08:18:24,614 | INFO | [Eval] ID deepseek-v3_73c077788a0a L2[0]   relation_type_accuracy         = 0.0000
+2026-04-13 08:18:24,614 | INFO | [Eval] ID deepseek-v3_73c077788a0a L2[0]   remote_association_index       = 0.8695
+2026-04-13 08:18:24,614 | INFO | [Eval] ID deepseek-v3_73c077788a0a L2[0]   scientificity                  = 8.5000
+2026-04-13 08:18:24,614 | INFO | [Eval] ID deepseek-v3_73c077788a0a L2[0]   testability                    = 7.2500
+2026-04-13 08:18:24,614 | INFO | ────────────────────────────────────────────────────────────
+2026-04-13 08:18:24,614 | INFO | ────────────────────────────────────────────────────────────
+2026-04-13 08:18:24,614 | INFO | [Eval] ID deepseek-v3_73c077788a0a L3[0] 开始评估
+2026-04-13 08:18:24,614 | INFO | [Eval] ID deepseek-v3_73c077788a0a L3[0] 生成路径: 海马区微塑料积累--[causes]-->认知障碍 -> 黑质致密部多巴胺神经元--[inhibits]-->运动功能 -> 脑内微塑料负荷--[correlates with]-->血脑屏障损伤程度
+2026-04-13 08:18:24,614 | INFO | [Eval] ID deepseek-v3_73c077788a0a L3[0] 参考路径数: 3 (GT: 3, web: 0)
+2026-04-13 08:18:24,614 | INFO | [Eval] ID deepseek-v3_73c077788a0a L3[0] query='微塑料在人类大脑中的生物累积机制及其病理影响是什么'  discipline='生物学'  abstract_len=1483
+2026-04-13 08:18:24,614 | INFO | [Eval] ID deepseek-v3_73c077788a0a L3[0] gt_terms(29): 微塑料和纳米塑料, 热解气相色谱-质谱法, 衰减全反射傅里叶变换红外光谱, 电子显微镜与能量色散光谱, 聚乙烯, 纳米级碎片状片段, 脑血管壁, 免疫细胞
+2026-04-13 08:18:24,614 | INFO | [Eval] ID deepseek-v3_73c077788a0a L3[0] ── 计算客观图指标 ──
+2026-04-13 08:18:24,614 | INFO | [Eval] ID deepseek-v3_73c077788a0a L3[0] consistency_f1=0.0000 (P=0.0000 R=0.0000) — 生成路径与参考路径的实体/关系重叠度
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:06<00:00,  6.35s/it]Batches: 100%|██████████| 1/1 [00:06<00:00,  6.35s/it]
+2026-04-13 08:18:30,968 | INFO | [Eval] ID deepseek-v3_73c077788a0a L3[0] embedding_bridging=0.8684 — 路径中相邻步骤的语义跨越程度
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:10<00:00, 10.49s/it]Batches: 100%|██████████| 1/1 [00:10<00:00, 10.49s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:10<00:00, 10.11s/it]Batches: 100%|██████████| 1/1 [00:10<00:00, 10.11s/it]
+2026-04-13 08:18:51,569 | INFO | [Eval] ID deepseek-v3_73c077788a0a L3[0] chain_coherence=0.5232 — 相邻步骤间的语义连贯性
+2026-04-13 08:18:51,569 | INFO | [Eval] ID deepseek-v3_73c077788a0a L3[0] rao_stirling=0.0000 — Rao-Stirling 学科多样性指数
+2026-04-13 08:18:51,569 | INFO | [Eval] ID deepseek-v3_73c077788a0a L3[0] atypical_combination=0.8768 — 非典型概念组合度 (z-score)
+2026-04-13 08:18:51,569 | INFO | [Eval] ID deepseek-v3_73c077788a0a L3[0] disciplinary_leap_index=0.0000 — 最大学科跨越距离
+2026-04-13 08:18:51,569 | INFO | [Eval] ID deepseek-v3_73c077788a0a L3[0] discipline_balance=0.0000 — 学科分布均衡度 (1-Gini)
+2026-04-13 08:18:51,569 | INFO | [Eval] ID deepseek-v3_73c077788a0a L3[0] info_novelty=1.0000 — 信息论新颖度 (surprisal)
+2026-04-13 08:18:51,569 | INFO | [Eval] ID deepseek-v3_73c077788a0a L3[0] ── 计算比较型指标 (vs GT) ──
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:05<00:00,  5.25s/it]Batches: 100%|██████████| 1/1 [00:05<00:00,  5.25s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:06<00:00,  6.03s/it]Batches: 100%|██████████| 1/1 [00:06<00:00,  6.03s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:05<00:00,  6.00s/it]Batches: 100%|██████████| 1/1 [00:05<00:00,  6.00s/it]
+2026-04-13 08:19:08,852 | INFO | [Eval] ID deepseek-v3_73c077788a0a L3[0] remote_association_index=0.7182 — 路径步骤间平均语义距离
+2026-04-13 08:19:08,852 | INFO | [Eval] ID deepseek-v3_73c077788a0a L3[0] causal_direction_accuracy=0.0000 — 因果方向与参考路径的吻合度
+2026-04-13 08:19:08,852 | INFO | [Eval] ID deepseek-v3_73c077788a0a L3[0] novelty_convention_balance=0.0000 — 新颖性与传统性的平衡度
+2026-04-13 08:25:15,881 | INFO | [Eval] ID deepseek-v3_73c077788a0a L3[0] factual_precision=1.0000 — NLI 检测路径中 claim 与摘要的一致性
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:16<00:00, 16.72s/it]Batches: 100%|██████████| 1/1 [00:16<00:00, 16.72s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:08<00:00,  8.23s/it]Batches: 100%|██████████| 1/1 [00:08<00:00,  8.23s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:07<00:00,  7.72s/it]Batches: 100%|██████████| 1/1 [00:07<00:00,  7.72s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:07<00:00,  7.42s/it]Batches: 100%|██████████| 1/1 [00:07<00:00,  7.42s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:07<00:00,  7.23s/it]Batches: 100%|██████████| 1/1 [00:07<00:00,  7.23s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:07<00:00,  7.34s/it]Batches: 100%|██████████| 1/1 [00:07<00:00,  7.34s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:07<00:00,  7.40s/it]Batches: 100%|██████████| 1/1 [00:07<00:00,  7.40s/it]
+2026-04-13 08:26:18,014 | INFO | [Eval] ID deepseek-v3_73c077788a0a L3[0] hallucination_rate=0.6667 — 路径中未被参考支持的实体比例
+2026-04-13 08:26:18,014 | INFO | [Eval] ID deepseek-v3_73c077788a0a L3[0] ── 计算 GT 证据指标 ──
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:07<00:00,  7.33s/it]Batches: 100%|██████████| 1/1 [00:07<00:00,  7.34s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:08<00:00,  8.94s/it]Batches: 100%|██████████| 1/1 [00:08<00:00,  8.94s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:08<00:00,  8.18s/it]Batches: 100%|██████████| 1/1 [00:08<00:00,  8.18s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:08<00:00,  8.23s/it]Batches: 100%|██████████| 1/1 [00:08<00:00,  8.23s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:04<00:00,  4.93s/it]Batches: 100%|██████████| 1/1 [00:04<00:00,  4.93s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:05<00:00,  5.28s/it]Batches: 100%|██████████| 1/1 [00:05<00:00,  5.28s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:04<00:00,  4.47s/it]Batches: 100%|██████████| 1/1 [00:04<00:00,  4.48s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:04<00:00,  4.91s/it]Batches: 100%|██████████| 1/1 [00:04<00:00,  4.91s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:04<00:00,  4.92s/it]Batches: 100%|██████████| 1/1 [00:04<00:00,  4.92s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:05<00:00,  5.54s/it]Batches: 100%|██████████| 1/1 [00:05<00:00,  5.54s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:04<00:00,  4.94s/it]Batches: 100%|██████████| 1/1 [00:04<00:00,  4.94s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:05<00:00,  5.11s/it]Batches: 100%|██████████| 1/1 [00:05<00:00,  5.11s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:04<00:00,  4.25s/it]Batches: 100%|██████████| 1/1 [00:04<00:00,  4.25s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:05<00:00,  5.11s/it]Batches: 100%|██████████| 1/1 [00:05<00:00,  5.11s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:04<00:00,  4.69s/it]Batches: 100%|██████████| 1/1 [00:04<00:00,  4.69s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:05<00:00,  5.08s/it]Batches: 100%|██████████| 1/1 [00:05<00:00,  5.08s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:06<00:00,  6.63s/it]Batches: 100%|██████████| 1/1 [00:06<00:00,  6.63s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:08<00:00,  8.89s/it]Batches: 100%|██████████| 1/1 [00:08<00:00,  8.89s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:07<00:00,  7.89s/it]Batches: 100%|██████████| 1/1 [00:07<00:00,  7.89s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:08<00:00,  8.02s/it]Batches: 100%|██████████| 1/1 [00:08<00:00,  8.02s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:07<00:00,  7.13s/it]Batches: 100%|██████████| 1/1 [00:07<00:00,  7.13s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:08<00:00,  8.28s/it]Batches: 100%|██████████| 1/1 [00:08<00:00,  8.28s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:07<00:00,  7.32s/it]Batches: 100%|██████████| 1/1 [00:07<00:00,  7.32s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:07<00:00,  7.68s/it]Batches: 100%|██████████| 1/1 [00:07<00:00,  7.68s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:07<00:00,  7.59s/it]Batches: 100%|██████████| 1/1 [00:07<00:00,  7.59s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:07<00:00,  7.83s/it]Batches: 100%|██████████| 1/1 [00:07<00:00,  7.83s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:07<00:00,  7.79s/it]Batches: 100%|██████████| 1/1 [00:07<00:00,  7.79s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:07<00:00,  7.81s/it]Batches: 100%|██████████| 1/1 [00:07<00:00,  7.81s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:06<00:00,  6.92s/it]Batches: 100%|██████████| 1/1 [00:06<00:00,  6.92s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:08<00:00,  8.66s/it]Batches: 100%|██████████| 1/1 [00:08<00:00,  8.66s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:06<00:00,  6.58s/it]Batches: 100%|██████████| 1/1 [00:06<00:00,  6.58s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:07<00:00,  7.68s/it]Batches: 100%|██████████| 1/1 [00:07<00:00,  7.68s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:07<00:00,  7.83s/it]Batches: 100%|██████████| 1/1 [00:07<00:00,  7.84s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:07<00:00,  7.02s/it]Batches: 100%|██████████| 1/1 [00:07<00:00,  7.02s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:04<00:00,  4.43s/it]Batches: 100%|██████████| 1/1 [00:04<00:00,  4.43s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:06<00:00,  6.29s/it]Batches: 100%|██████████| 1/1 [00:06<00:00,  6.29s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:05<00:00,  5.34s/it]Batches: 100%|██████████| 1/1 [00:05<00:00,  5.34s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:05<00:00,  5.96s/it]Batches: 100%|██████████| 1/1 [00:05<00:00,  5.96s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:05<00:00,  5.67s/it]Batches: 100%|██████████| 1/1 [00:05<00:00,  5.67s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:06<00:00,  6.38s/it]Batches: 100%|██████████| 1/1 [00:06<00:00,  6.38s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:05<00:00,  5.55s/it]Batches: 100%|██████████| 1/1 [00:05<00:00,  5.55s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:05<00:00,  5.99s/it]Batches: 100%|██████████| 1/1 [00:05<00:00,  5.99s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:05<00:00,  5.28s/it]Batches: 100%|██████████| 1/1 [00:05<00:00,  5.28s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:05<00:00,  5.89s/it]Batches: 100%|██████████| 1/1 [00:05<00:00,  5.89s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:05<00:00,  5.46s/it]Batches: 100%|██████████| 1/1 [00:05<00:00,  5.46s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:05<00:00,  5.62s/it]Batches: 100%|██████████| 1/1 [00:05<00:00,  5.62s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:05<00:00,  5.24s/it]Batches: 100%|██████████| 1/1 [00:05<00:00,  5.24s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:06<00:00,  6.49s/it]Batches: 100%|██████████| 1/1 [00:06<00:00,  6.49s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:05<00:00,  5.28s/it]Batches: 100%|██████████| 1/1 [00:05<00:00,  5.28s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:05<00:00,  5.57s/it]Batches: 100%|██████████| 1/1 [00:05<00:00,  5.57s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:04<00:00,  4.83s/it]Batches: 100%|██████████| 1/1 [00:04<00:00,  4.83s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:05<00:00,  5.93s/it]Batches: 100%|██████████| 1/1 [00:05<00:00,  5.93s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:05<00:00,  5.40s/it]Batches: 100%|██████████| 1/1 [00:05<00:00,  5.40s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:05<00:00,  5.70s/it]Batches: 100%|██████████| 1/1 [00:05<00:00,  5.70s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:05<00:00,  5.45s/it]Batches: 100%|██████████| 1/1 [00:05<00:00,  5.45s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:06<00:00,  6.15s/it]Batches: 100%|██████████| 1/1 [00:06<00:00,  6.15s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.92s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.92s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.46s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.46s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.09s/it]Batches: 100%|██████████| 1/1 [00:02<00:00,  2.09s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.95s/it]Batches: 100%|██████████| 1/1 [00:03<00:00,  3.95s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.73s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.73s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:09<00:00,  9.62s/it]Batches: 100%|██████████| 1/1 [00:09<00:00,  9.63s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:04<00:00,  4.81s/it]Batches: 100%|██████████| 1/1 [00:04<00:00,  4.81s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:09<00:00,  9.87s/it]Batches: 100%|██████████| 1/1 [00:09<00:00,  9.87s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:05<00:00,  5.09s/it]Batches: 100%|██████████| 1/1 [00:05<00:00,  5.09s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:09<00:00,  9.12s/it]Batches: 100%|██████████| 1/1 [00:09<00:00,  9.12s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:04<00:00,  4.96s/it]Batches: 100%|██████████| 1/1 [00:04<00:00,  4.96s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:09<00:00,  9.79s/it]Batches: 100%|██████████| 1/1 [00:09<00:00,  9.79s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:05<00:00,  5.48s/it]Batches: 100%|██████████| 1/1 [00:05<00:00,  5.48s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:09<00:00,  9.22s/it]Batches: 100%|██████████| 1/1 [00:09<00:00,  9.22s/it]
+2026-04-13 08:33:31,838 | INFO | [Eval] ID deepseek-v3_73c077788a0a L3[0] concept_f1=0.1579 (P=0.3333 R=0.1034) — 概念覆盖度
+2026-04-13 08:33:31,844 | INFO | [Eval] ID deepseek-v3_73c077788a0a L3[0] evidence_coverage=0.0000 — GT 证据路径覆盖度
+2026-04-13 08:33:31,844 | INFO | [Eval] ID deepseek-v3_73c077788a0a L3[0] ── LLM 主观评估 ──
+2026-04-13 08:33:31,844 | INFO | [Eval] ID deepseek-v3_73c077788a0a L3[0] LLM prompt 长度: 1829 字符 (含 3 条参考路径)
+2026-04-13 08:33:33,653 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 08:33:34,726 | INFO | [Eval] ID deepseek-v3_73c077788a0a L3[0] LLM 原始响应: {
+    "innovation_score": 8.5,
+    "feasibility_score": 7.5,
+    "scientificity_score": 8.0,
+    "reason": "该路径揭示了微塑料对大脑的多重影响机制，涉及认知障碍、运动功能和血脑屏障损伤，显示出较高的创新性。然而，推理链条在某些环节的因果关系尚需进一步验证，整体可行性略显不足。概念使用较为专业，符合科学标准。"
+}
+2026-04-13 08:33:34,730 | INFO | [Eval] ID deepseek-v3_73c077788a0a L3[0] LLM 评分: innovation=8.50 feasibility=7.50 scientificity=8.00
+2026-04-13 08:33:36,340 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 08:33:37,876 | INFO | [Eval] ID deepseek-v3_73c077788a0a L3[0] LLM 现实可行性: feasibility=5.0000 (data=5.00 method=5.00 resource=5.00 validation=5.00)
+2026-04-13 08:33:39,193 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 08:33:40,549 | INFO | [Eval] ID deepseek-v3_73c077788a0a L3[0] LLM 可验证性: testability=7.0000 (specificity=7.00 measurability=8.00 falsifiability=7.00 resource_feasibility=6.00)
+2026-04-13 08:33:40,549 | INFO | [Eval] ID deepseek-v3_73c077788a0a L3[0] ── 评分汇总 ──
+2026-04-13 08:33:40,549 | INFO | [Eval] ID deepseek-v3_73c077788a0a L3[0]   atypical_combination           = 0.8768
+2026-04-13 08:33:40,549 | INFO | [Eval] ID deepseek-v3_73c077788a0a L3[0]   bridging                       = 1.0000
+2026-04-13 08:33:40,549 | INFO | [Eval] ID deepseek-v3_73c077788a0a L3[0]   causal_direction_accuracy      = 0.0000
+2026-04-13 08:33:40,549 | INFO | [Eval] ID deepseek-v3_73c077788a0a L3[0]   chain_coherence                = 0.5232
+2026-04-13 08:33:40,549 | INFO | [Eval] ID deepseek-v3_73c077788a0a L3[0]   concept_f1                     = 0.1579
+2026-04-13 08:33:40,549 | INFO | [Eval] ID deepseek-v3_73c077788a0a L3[0]   concept_precision              = 0.3333
+2026-04-13 08:33:40,549 | INFO | [Eval] ID deepseek-v3_73c077788a0a L3[0]   concept_recall                 = 0.1034
+2026-04-13 08:33:40,549 | INFO | [Eval] ID deepseek-v3_73c077788a0a L3[0]   consistency                    = 0.0000
+2026-04-13 08:33:40,549 | INFO | [Eval] ID deepseek-v3_73c077788a0a L3[0]   consistency_f1                 = 0.0000
+2026-04-13 08:33:40,549 | INFO | [Eval] ID deepseek-v3_73c077788a0a L3[0]   consistency_precision          = 0.0000
+2026-04-13 08:33:40,549 | INFO | [Eval] ID deepseek-v3_73c077788a0a L3[0]   consistency_recall             = 0.0000
+2026-04-13 08:33:40,549 | INFO | [Eval] ID deepseek-v3_73c077788a0a L3[0]   disciplinary_leap_index        = 0.0000
+2026-04-13 08:33:40,549 | INFO | [Eval] ID deepseek-v3_73c077788a0a L3[0]   discipline_balance             = 0.0000
+2026-04-13 08:33:40,549 | INFO | [Eval] ID deepseek-v3_73c077788a0a L3[0]   embedding_bridging             = 0.8684
+2026-04-13 08:33:40,549 | INFO | [Eval] ID deepseek-v3_73c077788a0a L3[0]   evidence_coverage              = 0.0000
+2026-04-13 08:33:40,550 | INFO | [Eval] ID deepseek-v3_73c077788a0a L3[0]   factual_precision              = 1.0000
+2026-04-13 08:33:40,550 | INFO | [Eval] ID deepseek-v3_73c077788a0a L3[0]   feasibility                    = 5.0000
+2026-04-13 08:33:40,550 | INFO | [Eval] ID deepseek-v3_73c077788a0a L3[0]   feasibility_data               = 5.0000
+2026-04-13 08:33:40,550 | INFO | [Eval] ID deepseek-v3_73c077788a0a L3[0]   feasibility_method             = 5.0000
+2026-04-13 08:33:40,550 | INFO | [Eval] ID deepseek-v3_73c077788a0a L3[0]   feasibility_resource           = 5.0000
+2026-04-13 08:33:40,550 | INFO | [Eval] ID deepseek-v3_73c077788a0a L3[0]   feasibility_validation         = 5.0000
+2026-04-13 08:33:40,550 | INFO | [Eval] ID deepseek-v3_73c077788a0a L3[0]   hallucination_rate             = 0.6667
+2026-04-13 08:33:40,550 | INFO | [Eval] ID deepseek-v3_73c077788a0a L3[0]   info_novelty                   = 1.0000
+2026-04-13 08:33:40,550 | INFO | [Eval] ID deepseek-v3_73c077788a0a L3[0]   innovation                     = 8.5000
+2026-04-13 08:33:40,550 | INFO | [Eval] ID deepseek-v3_73c077788a0a L3[0]   legacy_feasibility             = 7.5000
+2026-04-13 08:33:40,550 | INFO | [Eval] ID deepseek-v3_73c077788a0a L3[0]   novelty_convention_balance     = 0.0000
+2026-04-13 08:33:40,550 | INFO | [Eval] ID deepseek-v3_73c077788a0a L3[0]   path_alignment_best            = 0.0000
+2026-04-13 08:33:40,550 | INFO | [Eval] ID deepseek-v3_73c077788a0a L3[0]   path_alignment_mean            = 0.0000
+2026-04-13 08:33:40,550 | INFO | [Eval] ID deepseek-v3_73c077788a0a L3[0]   rao_stirling                   = 0.0000
+2026-04-13 08:33:40,550 | INFO | [Eval] ID deepseek-v3_73c077788a0a L3[0]   relation_precision             = 0.0000
+2026-04-13 08:33:40,550 | INFO | [Eval] ID deepseek-v3_73c077788a0a L3[0]   relation_type_accuracy         = 0.0000
+2026-04-13 08:33:40,550 | INFO | [Eval] ID deepseek-v3_73c077788a0a L3[0]   remote_association_index       = 0.7182
+2026-04-13 08:33:40,550 | INFO | [Eval] ID deepseek-v3_73c077788a0a L3[0]   scientificity                  = 8.0000
+2026-04-13 08:33:40,550 | INFO | [Eval] ID deepseek-v3_73c077788a0a L3[0]   testability                    = 7.0000
+2026-04-13 08:33:40,550 | INFO | ────────────────────────────────────────────────────────────
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:05<00:00,  5.08s/it]Batches: 100%|██████████| 1/1 [00:05<00:00,  5.08s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:05<00:00,  5.13s/it]Batches: 100%|██████████| 1/1 [00:05<00:00,  5.13s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:05<00:00,  5.50s/it]Batches: 100%|██████████| 1/1 [00:05<00:00,  5.50s/it]
+2026-04-13 08:33:56,271 | INFO | [deepseek-v3] 评分摘要: consistency_f1=0.000  innovation=8.000  factual_precision=1.000  rao_stirling=0.000  chain_coherence=0.659  testability=7.000
+2026-04-13 08:33:56,271 | INFO | --------------------------------------------------
+2026-04-13 08:33:56,272 | INFO | [deepseek-v3] [2/7] deepseek-v3-L1 | 2225d7c27bc7 | 'A generative model for inorganic materia'
+2026-04-13 08:33:58,245 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 08:34:10,550 | INFO | [deepseek-v3] 解析完成: L1=2 L2=2 L3=2 (14.3s)
+2026-04-13 08:34:10,612 | INFO | [deepseek-v3] GT 参考路径: 3 条
+2026-04-13 08:34:10,612 | INFO | ────────────────────────────────────────────────────────────
+2026-04-13 08:34:10,612 | INFO | [Eval] ID deepseek-v3_2225d7c27bc7 L1[0] 开始评估
+2026-04-13 08:34:10,612 | INFO | [Eval] ID deepseek-v3_2225d7c27bc7 L1[0] 生成路径: 无机晶体材料的电子结构与化学键合特征--[enables]-->生成对抗网络(GAN)进行逆向设计 -> 生成对抗网络(GAN)--[requires]-->调节生成器的潜在空间参数 -> 调节生成器的潜在空间参数--[optimizes]-->导电性、热稳定性和机械强度
+2026-04-13 08:34:10,612 | INFO | [Eval] ID deepseek-v3_2225d7c27bc7 L1[0] 参考路径数: 3 (GT: 3, web: 0)
+2026-04-13 08:34:10,612 | INFO | [Eval] ID deepseek-v3_2225d7c27bc7 L1[0] query='如何设计满足多目标约束的新型无机功能材料'  discipline='材料科学'  abstract_len=1335
+2026-04-13 08:34:10,612 | INFO | [Eval] ID deepseek-v3_2225d7c27bc7 L1[0] gt_terms(31): 功能材料, 无机材料, 稳定晶体, 性质约束, 局部能量最小值, 机械性能, 电子性能, 磁性能
+2026-04-13 08:34:10,612 | INFO | [Eval] ID deepseek-v3_2225d7c27bc7 L1[0] ── 计算客观图指标 ──
+2026-04-13 08:34:10,612 | INFO | [Eval] ID deepseek-v3_2225d7c27bc7 L1[0] consistency_f1=0.0000 (P=0.0000 R=0.0000) — 生成路径与参考路径的实体/关系重叠度
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:05<00:00,  5.11s/it]Batches: 100%|██████████| 1/1 [00:05<00:00,  5.11s/it]
+2026-04-13 08:34:15,735 | INFO | [Eval] ID deepseek-v3_2225d7c27bc7 L1[0] embedding_bridging=0.5586 — 路径中相邻步骤的语义跨越程度
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:04<00:00,  4.49s/it]Batches: 100%|██████████| 1/1 [00:04<00:00,  4.49s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:05<00:00,  5.54s/it]Batches: 100%|██████████| 1/1 [00:05<00:00,  5.54s/it]
+2026-04-13 08:34:25,778 | INFO | [Eval] ID deepseek-v3_2225d7c27bc7 L1[0] chain_coherence=0.6751 — 相邻步骤间的语义连贯性
+2026-04-13 08:34:25,778 | INFO | [Eval] ID deepseek-v3_2225d7c27bc7 L1[0] rao_stirling=0.0000 — Rao-Stirling 学科多样性指数
+2026-04-13 08:34:25,778 | INFO | [Eval] ID deepseek-v3_2225d7c27bc7 L1[0] atypical_combination=0.8768 — 非典型概念组合度 (z-score)
+2026-04-13 08:34:25,778 | INFO | [Eval] ID deepseek-v3_2225d7c27bc7 L1[0] disciplinary_leap_index=0.0000 — 最大学科跨越距离
+2026-04-13 08:34:25,778 | INFO | [Eval] ID deepseek-v3_2225d7c27bc7 L1[0] discipline_balance=0.0000 — 学科分布均衡度 (1-Gini)
+2026-04-13 08:34:25,778 | INFO | [Eval] ID deepseek-v3_2225d7c27bc7 L1[0] info_novelty=1.0000 — 信息论新颖度 (surprisal)
+2026-04-13 08:34:25,778 | INFO | [Eval] ID deepseek-v3_2225d7c27bc7 L1[0] ── 计算比较型指标 (vs GT) ──
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:05<00:00,  5.24s/it]Batches: 100%|██████████| 1/1 [00:05<00:00,  5.24s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:04<00:00,  4.90s/it]Batches: 100%|██████████| 1/1 [00:04<00:00,  4.90s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:06<00:00,  6.45s/it]Batches: 100%|██████████| 1/1 [00:06<00:00,  6.45s/it]
+2026-04-13 08:34:42,369 | INFO | [Eval] ID deepseek-v3_2225d7c27bc7 L1[0] remote_association_index=0.7479 — 路径步骤间平均语义距离
+2026-04-13 08:34:42,372 | INFO | [Eval] ID deepseek-v3_2225d7c27bc7 L1[0] causal_direction_accuracy=0.0000 — 因果方向与参考路径的吻合度
+2026-04-13 08:34:42,372 | INFO | [Eval] ID deepseek-v3_2225d7c27bc7 L1[0] novelty_convention_balance=0.0000 — 新颖性与传统性的平衡度
+2026-04-13 08:46:19,359 | INFO | [Eval] ID deepseek-v3_2225d7c27bc7 L1[0] factual_precision=1.0000 — NLI 检测路径中 claim 与摘要的一致性
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:20<00:00, 20.41s/it]Batches: 100%|██████████| 1/1 [00:20<00:00, 20.41s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:11<00:00, 11.86s/it]Batches: 100%|██████████| 1/1 [00:11<00:00, 11.86s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:09<00:00,  9.23s/it]Batches: 100%|██████████| 1/1 [00:09<00:00,  9.23s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:08<00:00,  8.86s/it]Batches: 100%|██████████| 1/1 [00:08<00:00,  8.86s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:11<00:00, 11.30s/it]Batches: 100%|██████████| 1/1 [00:11<00:00, 11.30s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:10<00:00, 10.94s/it]Batches: 100%|██████████| 1/1 [00:10<00:00, 10.94s/it]
+2026-04-13 08:47:31,998 | INFO | [Eval] ID deepseek-v3_2225d7c27bc7 L1[0] hallucination_rate=0.8000 — 路径中未被参考支持的实体比例
+2026-04-13 08:47:31,998 | INFO | [Eval] ID deepseek-v3_2225d7c27bc7 L1[0] ── 计算 GT 证据指标 ──
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:11<00:00, 11.99s/it]Batches: 100%|██████████| 1/1 [00:11<00:00, 11.99s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:13<00:00, 13.89s/it]Batches: 100%|██████████| 1/1 [00:13<00:00, 13.89s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:12<00:00, 12.33s/it]Batches: 100%|██████████| 1/1 [00:12<00:00, 12.33s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:12<00:00, 12.59s/it]Batches: 100%|██████████| 1/1 [00:12<00:00, 12.59s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:11<00:00, 11.97s/it]Batches: 100%|██████████| 1/1 [00:11<00:00, 11.97s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:12<00:00, 12.43s/it]Batches: 100%|██████████| 1/1 [00:12<00:00, 12.43s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:11<00:00, 11.23s/it]Batches: 100%|██████████| 1/1 [00:11<00:00, 11.23s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:13<00:00, 13.60s/it]Batches: 100%|██████████| 1/1 [00:13<00:00, 13.60s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:12<00:00, 12.21s/it]Batches: 100%|██████████| 1/1 [00:12<00:00, 12.21s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:12<00:00, 12.13s/it]Batches: 100%|██████████| 1/1 [00:12<00:00, 12.13s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:11<00:00, 11.27s/it]Batches: 100%|██████████| 1/1 [00:11<00:00, 11.27s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:12<00:00, 12.49s/it]Batches: 100%|██████████| 1/1 [00:12<00:00, 12.49s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:11<00:00, 11.36s/it]Batches: 100%|██████████| 1/1 [00:11<00:00, 11.36s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:14<00:00, 14.42s/it]Batches: 100%|██████████| 1/1 [00:14<00:00, 14.42s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:13<00:00, 13.06s/it]Batches: 100%|██████████| 1/1 [00:13<00:00, 13.06s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:15<00:00, 15.68s/it]Batches: 100%|██████████| 1/1 [00:15<00:00, 15.68s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:14<00:00, 14.22s/it]Batches: 100%|██████████| 1/1 [00:14<00:00, 14.22s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:14<00:00, 14.43s/it]Batches: 100%|██████████| 1/1 [00:14<00:00, 14.43s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:12<00:00, 12.91s/it]Batches: 100%|██████████| 1/1 [00:12<00:00, 12.91s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:13<00:00, 13.54s/it]Batches: 100%|██████████| 1/1 [00:13<00:00, 13.54s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:11<00:00, 11.19s/it]Batches: 100%|██████████| 1/1 [00:11<00:00, 11.19s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:13<00:00, 13.25s/it]Batches: 100%|██████████| 1/1 [00:13<00:00, 13.25s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:11<00:00, 11.49s/it]Batches: 100%|██████████| 1/1 [00:11<00:00, 11.49s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:13<00:00, 13.20s/it]Batches: 100%|██████████| 1/1 [00:13<00:00, 13.20s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:12<00:00, 12.14s/it]Batches: 100%|██████████| 1/1 [00:12<00:00, 12.14s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:13<00:00, 13.68s/it]Batches: 100%|██████████| 1/1 [00:13<00:00, 13.69s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:12<00:00, 12.38s/it]Batches: 100%|██████████| 1/1 [00:12<00:00, 12.39s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:12<00:00, 12.29s/it]Batches: 100%|██████████| 1/1 [00:12<00:00, 12.30s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:11<00:00, 11.72s/it]Batches: 100%|██████████| 1/1 [00:11<00:00, 11.72s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:13<00:00, 13.23s/it]Batches: 100%|██████████| 1/1 [00:13<00:00, 13.23s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:12<00:00, 12.75s/it]Batches: 100%|██████████| 1/1 [00:12<00:00, 12.75s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:13<00:00, 13.98s/it]Batches: 100%|██████████| 1/1 [00:13<00:00, 13.99s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:12<00:00, 12.23s/it]Batches: 100%|██████████| 1/1 [00:12<00:00, 12.23s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:13<00:00, 13.92s/it]Batches: 100%|██████████| 1/1 [00:13<00:00, 13.92s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:12<00:00, 12.80s/it]Batches: 100%|██████████| 1/1 [00:12<00:00, 12.80s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:14<00:00, 14.72s/it]Batches: 100%|██████████| 1/1 [00:14<00:00, 14.72s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:12<00:00, 12.08s/it]Batches: 100%|██████████| 1/1 [00:12<00:00, 12.08s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:12<00:00, 12.47s/it]Batches: 100%|██████████| 1/1 [00:12<00:00, 12.47s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:13<00:00, 13.10s/it]Batches: 100%|██████████| 1/1 [00:13<00:00, 13.10s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:12<00:00, 12.94s/it]Batches: 100%|██████████| 1/1 [00:12<00:00, 12.94s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:12<00:00, 12.14s/it]Batches: 100%|██████████| 1/1 [00:12<00:00, 12.14s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:14<00:00, 14.44s/it]Batches: 100%|██████████| 1/1 [00:14<00:00, 14.44s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:13<00:00, 13.74s/it]Batches: 100%|██████████| 1/1 [00:13<00:00, 13.74s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:15<00:00, 15.71s/it]Batches: 100%|██████████| 1/1 [00:15<00:00, 15.71s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:12<00:00, 12.17s/it]Batches: 100%|██████████| 1/1 [00:12<00:00, 12.17s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:15<00:00, 15.18s/it]Batches: 100%|██████████| 1/1 [00:15<00:00, 15.18s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:14<00:00, 14.11s/it]Batches: 100%|██████████| 1/1 [00:14<00:00, 14.11s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:15<00:00, 15.11s/it]Batches: 100%|██████████| 1/1 [00:15<00:00, 15.11s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:13<00:00, 13.50s/it]Batches: 100%|██████████| 1/1 [00:13<00:00, 13.50s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:15<00:00, 15.05s/it]Batches: 100%|██████████| 1/1 [00:15<00:00, 15.05s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:13<00:00, 13.89s/it]Batches: 100%|██████████| 1/1 [00:13<00:00, 13.89s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:16<00:00, 16.17s/it]Batches: 100%|██████████| 1/1 [00:16<00:00, 16.17s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:13<00:00, 13.24s/it]Batches: 100%|██████████| 1/1 [00:13<00:00, 13.24s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:14<00:00, 14.66s/it]Batches: 100%|██████████| 1/1 [00:14<00:00, 14.66s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:13<00:00, 13.78s/it]Batches: 100%|██████████| 1/1 [00:13<00:00, 13.78s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:14<00:00, 14.26s/it]Batches: 100%|██████████| 1/1 [00:14<00:00, 14.27s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:14<00:00, 14.70s/it]Batches: 100%|██████████| 1/1 [00:14<00:00, 14.70s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:14<00:00, 14.79s/it]Batches: 100%|██████████| 1/1 [00:14<00:00, 14.79s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:13<00:00, 13.43s/it]Batches: 100%|██████████| 1/1 [00:13<00:00, 13.43s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:15<00:00, 15.62s/it]Batches: 100%|██████████| 1/1 [00:15<00:00, 15.62s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:13<00:00, 13.57s/it]Batches: 100%|██████████| 1/1 [00:13<00:00, 13.57s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:15<00:00, 15.29s/it]Batches: 100%|██████████| 1/1 [00:15<00:00, 15.29s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:14<00:00, 14.44s/it]Batches: 100%|██████████| 1/1 [00:14<00:00, 14.44s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:27<00:00, 27.38s/it]Batches: 100%|██████████| 1/1 [00:27<00:00, 27.38s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:14<00:00, 14.92s/it]Batches: 100%|██████████| 1/1 [00:14<00:00, 14.92s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:27<00:00, 27.21s/it]Batches: 100%|██████████| 1/1 [00:27<00:00, 27.21s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:15<00:00, 15.26s/it]Batches: 100%|██████████| 1/1 [00:15<00:00, 15.26s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:27<00:00, 27.27s/it]Batches: 100%|██████████| 1/1 [00:27<00:00, 27.27s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:14<00:00, 14.04s/it]Batches: 100%|██████████| 1/1 [00:14<00:00, 14.04s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:26<00:00, 26.25s/it]Batches: 100%|██████████| 1/1 [00:26<00:00, 26.25s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:13<00:00, 13.31s/it]Batches: 100%|██████████| 1/1 [00:13<00:00, 13.32s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:27<00:00, 27.27s/it]Batches: 100%|██████████| 1/1 [00:27<00:00, 27.28s/it]
+2026-04-13 09:04:47,837 | INFO | [Eval] ID deepseek-v3_2225d7c27bc7 L1[0] concept_f1=0.0556 (P=0.2000 R=0.0323) — 概念覆盖度
+2026-04-13 09:04:47,847 | INFO | [Eval] ID deepseek-v3_2225d7c27bc7 L1[0] evidence_coverage=0.0000 — GT 证据路径覆盖度
+2026-04-13 09:04:47,847 | INFO | [Eval] ID deepseek-v3_2225d7c27bc7 L1[0] ── LLM 主观评估 ──
+2026-04-13 09:04:47,847 | INFO | [Eval] ID deepseek-v3_2225d7c27bc7 L1[0] LLM prompt 长度: 2007 字符 (含 3 条参考路径)
+2026-04-13 09:04:49,726 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 09:04:50,973 | INFO | [Eval] ID deepseek-v3_2225d7c27bc7 L1[0] LLM 原始响应: {
+    "innovation_score": 7.0,
+    "feasibility_score": 8.0,
+    "scientificity_score": 8.0,
+    "reason": "模型生成的路径提出了通过GAN进行逆向设计的创新思路，虽然与参考路径的主题有所不同，但在材料科学的背景下是合理的。路径逻辑上连贯，术语使用准确，符合科学事实。"
+}
+2026-04-13 09:04:50,984 | INFO | [Eval] ID deepseek-v3_2225d7c27bc7 L1[0] LLM 评分: innovation=7.00 feasibility=8.00 scientificity=8.00
+2026-04-13 09:04:52,620 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 09:04:53,677 | INFO | [Eval] ID deepseek-v3_2225d7c27bc7 L1[0] LLM 现实可行性: feasibility=5.7500 (data=7.00 method=6.00 resource=5.00 validation=5.00)
+2026-04-13 09:04:55,192 | INFO | HTTP Request: POST https://apifs.shubiaobiao.cn/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-13 09:04:56,320 | INFO | [Eval] ID deepseek-v3_2225d7c27bc7 L1[0] LLM 可验证性: testability=6.5000 (specificity=7.00 measurability=8.00 falsifiability=6.00 resource_feasibility=5.00)
+2026-04-13 09:04:56,321 | INFO | [Eval] ID deepseek-v3_2225d7c27bc7 L1[0] ── 评分汇总 ──
+2026-04-13 09:04:56,321 | INFO | [Eval] ID deepseek-v3_2225d7c27bc7 L1[0]   atypical_combination           = 0.8768
+2026-04-13 09:04:56,321 | INFO | [Eval] ID deepseek-v3_2225d7c27bc7 L1[0]   bridging                       = 1.0000
+2026-04-13 09:04:56,321 | INFO | [Eval] ID deepseek-v3_2225d7c27bc7 L1[0]   causal_direction_accuracy      = 0.0000
+2026-04-13 09:04:56,321 | INFO | [Eval] ID deepseek-v3_2225d7c27bc7 L1[0]   chain_coherence                = 0.6751
+2026-04-13 09:04:56,321 | INFO | [Eval] ID deepseek-v3_2225d7c27bc7 L1[0]   concept_f1                     = 0.0556
+2026-04-13 09:04:56,321 | INFO | [Eval] ID deepseek-v3_2225d7c27bc7 L1[0]   concept_precision              = 0.2000
+2026-04-13 09:04:56,321 | INFO | [Eval] ID deepseek-v3_2225d7c27bc7 L1[0]   concept_recall                 = 0.0323
+2026-04-13 09:04:56,321 | INFO | [Eval] ID deepseek-v3_2225d7c27bc7 L1[0]   consistency                    = 0.0000
+2026-04-13 09:04:56,321 | INFO | [Eval] ID deepseek-v3_2225d7c27bc7 L1[0]   consistency_f1                 = 0.0000
+2026-04-13 09:04:56,321 | INFO | [Eval] ID deepseek-v3_2225d7c27bc7 L1[0]   consistency_precision          = 0.0000
+2026-04-13 09:04:56,321 | INFO | [Eval] ID deepseek-v3_2225d7c27bc7 L1[0]   consistency_recall             = 0.0000
+2026-04-13 09:04:56,344 | INFO | [Eval] ID deepseek-v3_2225d7c27bc7 L1[0]   disciplinary_leap_index        = 0.0000
+2026-04-13 09:04:56,344 | INFO | [Eval] ID deepseek-v3_2225d7c27bc7 L1[0]   discipline_balance             = 0.0000
+2026-04-13 09:04:56,344 | INFO | [Eval] ID deepseek-v3_2225d7c27bc7 L1[0]   embedding_bridging             = 0.5586
+2026-04-13 09:04:56,344 | INFO | [Eval] ID deepseek-v3_2225d7c27bc7 L1[0]   evidence_coverage              = 0.0000
+2026-04-13 09:04:56,344 | INFO | [Eval] ID deepseek-v3_2225d7c27bc7 L1[0]   factual_precision              = 1.0000
+2026-04-13 09:04:56,344 | INFO | [Eval] ID deepseek-v3_2225d7c27bc7 L1[0]   feasibility                    = 5.7500
+2026-04-13 09:04:56,344 | INFO | [Eval] ID deepseek-v3_2225d7c27bc7 L1[0]   feasibility_data               = 7.0000
+2026-04-13 09:04:56,344 | INFO | [Eval] ID deepseek-v3_2225d7c27bc7 L1[0]   feasibility_method             = 6.0000
+2026-04-13 09:04:56,344 | INFO | [Eval] ID deepseek-v3_2225d7c27bc7 L1[0]   feasibility_resource           = 5.0000
+2026-04-13 09:04:56,344 | INFO | [Eval] ID deepseek-v3_2225d7c27bc7 L1[0]   feasibility_validation         = 5.0000
+2026-04-13 09:04:56,344 | INFO | [Eval] ID deepseek-v3_2225d7c27bc7 L1[0]   hallucination_rate             = 0.8000
+2026-04-13 09:04:56,344 | INFO | [Eval] ID deepseek-v3_2225d7c27bc7 L1[0]   info_novelty                   = 1.0000
+2026-04-13 09:04:56,344 | INFO | [Eval] ID deepseek-v3_2225d7c27bc7 L1[0]   innovation                     = 7.0000
+2026-04-13 09:04:56,344 | INFO | [Eval] ID deepseek-v3_2225d7c27bc7 L1[0]   legacy_feasibility             = 8.0000
+2026-04-13 09:04:56,344 | INFO | [Eval] ID deepseek-v3_2225d7c27bc7 L1[0]   novelty_convention_balance     = 0.0000
+2026-04-13 09:04:56,344 | INFO | [Eval] ID deepseek-v3_2225d7c27bc7 L1[0]   path_alignment_best            = 0.0000
+2026-04-13 09:04:56,344 | INFO | [Eval] ID deepseek-v3_2225d7c27bc7 L1[0]   path_alignment_mean            = 0.0000
+2026-04-13 09:04:56,344 | INFO | [Eval] ID deepseek-v3_2225d7c27bc7 L1[0]   rao_stirling                   = 0.0000
+2026-04-13 09:04:56,344 | INFO | [Eval] ID deepseek-v3_2225d7c27bc7 L1[0]   relation_precision             = 0.0000
+2026-04-13 09:04:56,344 | INFO | [Eval] ID deepseek-v3_2225d7c27bc7 L1[0]   relation_type_accuracy         = 0.0000
+2026-04-13 09:04:56,344 | INFO | [Eval] ID deepseek-v3_2225d7c27bc7 L1[0]   remote_association_index       = 0.7479
+2026-04-13 09:04:56,344 | INFO | [Eval] ID deepseek-v3_2225d7c27bc7 L1[0]   scientificity                  = 8.0000
+2026-04-13 09:04:56,344 | INFO | [Eval] ID deepseek-v3_2225d7c27bc7 L1[0]   testability                    = 6.5000
+2026-04-13 09:04:56,344 | INFO | ────────────────────────────────────────────────────────────
+2026-04-13 09:04:56,344 | INFO | ────────────────────────────────────────────────────────────
+2026-04-13 09:04:56,344 | INFO | [Eval] ID deepseek-v3_2225d7c27bc7 L1[1] 开始评估
+2026-04-13 09:04:56,344 | INFO | [Eval] ID deepseek-v3_2225d7c27bc7 L1[1] 生成路径: 基于图神经网络的晶体结构生成模型--[enables]-->自动探索未开发的化学空间 -> 输入包含元素电负性、离子半径等特征--[causes]-->模型输出的候选材料在带隙宽度和催化活性方面优于传统方法设计的材料
+2026-04-13 09:04:56,344 | INFO | [Eval] ID deepseek-v3_2225d7c27bc7 L1[1] 参考路径数: 3 (GT: 3, web: 0)
+2026-04-13 09:04:56,344 | INFO | [Eval] ID deepseek-v3_2225d7c27bc7 L1[1] query='如何设计满足多目标约束的新型无机功能材料'  discipline='材料科学'  abstract_len=1335
+2026-04-13 09:04:56,344 | INFO | [Eval] ID deepseek-v3_2225d7c27bc7 L1[1] gt_terms(31): 功能材料, 无机材料, 稳定晶体, 性质约束, 局部能量最小值, 机械性能, 电子性能, 磁性能
+2026-04-13 09:04:56,345 | INFO | [Eval] ID deepseek-v3_2225d7c27bc7 L1[1] ── 计算客观图指标 ──
+2026-04-13 09:04:56,345 | INFO | [Eval] ID deepseek-v3_2225d7c27bc7 L1[1] consistency_f1=0.0000 (P=0.0000 R=0.0000) — 生成路径与参考路径的实体/关系重叠度
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:16<00:00, 16.77s/it]Batches: 100%|██████████| 1/1 [00:16<00:00, 16.77s/it]
+2026-04-13 09:05:13,133 | INFO | [Eval] ID deepseek-v3_2225d7c27bc7 L1[1] embedding_bridging=0.6294 — 路径中相邻步骤的语义跨越程度
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:16<00:00, 16.24s/it]Batches: 100%|██████████| 1/1 [00:16<00:00, 16.24s/it]
+2026-04-13 09:05:29,376 | INFO | [Eval] ID deepseek-v3_2225d7c27bc7 L1[1] chain_coherence=0.3095 — 相邻步骤间的语义连贯性
+2026-04-13 09:05:29,396 | INFO | [Eval] ID deepseek-v3_2225d7c27bc7 L1[1] rao_stirling=0.0000 — Rao-Stirling 学科多样性指数
+2026-04-13 09:05:29,396 | INFO | [Eval] ID deepseek-v3_2225d7c27bc7 L1[1] atypical_combination=0.8768 — 非典型概念组合度 (z-score)
+2026-04-13 09:05:29,396 | INFO | [Eval] ID deepseek-v3_2225d7c27bc7 L1[1] disciplinary_leap_index=0.0000 — 最大学科跨越距离
+2026-04-13 09:05:29,396 | INFO | [Eval] ID deepseek-v3_2225d7c27bc7 L1[1] discipline_balance=0.0000 — 学科分布均衡度 (1-Gini)
+2026-04-13 09:05:29,396 | INFO | [Eval] ID deepseek-v3_2225d7c27bc7 L1[1] info_novelty=1.0000 — 信息论新颖度 (surprisal)
+2026-04-13 09:05:29,396 | INFO | [Eval] ID deepseek-v3_2225d7c27bc7 L1[1] ── 计算比较型指标 (vs GT) ──
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:16<00:00, 16.21s/it]Batches: 100%|██████████| 1/1 [00:16<00:00, 16.21s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:16<00:00, 16.43s/it]Batches: 100%|██████████| 1/1 [00:16<00:00, 16.43s/it]
+2026-04-13 09:06:02,051 | INFO | [Eval] ID deepseek-v3_2225d7c27bc7 L1[1] remote_association_index=0.5786 — 路径步骤间平均语义距离
+2026-04-13 09:06:02,051 | INFO | [Eval] ID deepseek-v3_2225d7c27bc7 L1[1] causal_direction_accuracy=0.0000 — 因果方向与参考路径的吻合度
+2026-04-13 09:06:02,051 | INFO | [Eval] ID deepseek-v3_2225d7c27bc7 L1[1] novelty_convention_balance=0.0000 — 新颖性与传统性的平衡度
+2026-04-13 09:16:54,088 | INFO | [Eval] ID deepseek-v3_2225d7c27bc7 L1[1] factual_precision=1.0000 — NLI 检测路径中 claim 与摘要的一致性
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:28<00:00, 28.03s/it]Batches: 100%|██████████| 1/1 [00:28<00:00, 28.03s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:16<00:00, 16.30s/it]Batches: 100%|██████████| 1/1 [00:16<00:00, 16.30s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:16<00:00, 16.89s/it]Batches: 100%|██████████| 1/1 [00:16<00:00, 16.89s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:16<00:00, 16.64s/it]Batches: 100%|██████████| 1/1 [00:16<00:00, 16.64s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:18<00:00, 18.45s/it]Batches: 100%|██████████| 1/1 [00:18<00:00, 18.45s/it]
+2026-04-13 09:18:30,493 | INFO | [Eval] ID deepseek-v3_2225d7c27bc7 L1[1] hallucination_rate=1.0000 — 路径中未被参考支持的实体比例
+2026-04-13 09:18:30,493 | INFO | [Eval] ID deepseek-v3_2225d7c27bc7 L1[1] ── 计算 GT 证据指标 ──
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:17<00:00, 17.07s/it]Batches: 100%|██████████| 1/1 [00:17<00:00, 17.07s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:30<00:00, 30.29s/it]Batches: 100%|██████████| 1/1 [00:30<00:00, 30.30s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:16<00:00, 16.81s/it]Batches: 100%|██████████| 1/1 [00:16<00:00, 16.81s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:29<00:00, 29.48s/it]Batches: 100%|██████████| 1/1 [00:29<00:00, 29.48s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:16<00:00, 16.14s/it]Batches: 100%|██████████| 1/1 [00:16<00:00, 16.14s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:31<00:00, 31.13s/it]Batches: 100%|██████████| 1/1 [00:31<00:00, 31.13s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:16<00:00, 16.42s/it]Batches: 100%|██████████| 1/1 [00:16<00:00, 16.42s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:32<00:00, 32.68s/it]Batches: 100%|██████████| 1/1 [00:32<00:00, 32.68s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:17<00:00, 17.62s/it]Batches: 100%|██████████| 1/1 [00:17<00:00, 17.62s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:31<00:00, 31.07s/it]Batches: 100%|██████████| 1/1 [00:31<00:00, 31.07s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:16<00:00, 16.72s/it]Batches: 100%|██████████| 1/1 [00:16<00:00, 16.72s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:30<00:00, 30.72s/it]Batches: 100%|██████████| 1/1 [00:30<00:00, 30.72s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:16<00:00, 16.88s/it]Batches: 100%|██████████| 1/1 [00:16<00:00, 16.88s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:29<00:00, 29.26s/it]Batches: 100%|██████████| 1/1 [00:29<00:00, 29.26s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:15<00:00, 15.60s/it]Batches: 100%|██████████| 1/1 [00:15<00:00, 15.60s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:28<00:00, 28.15s/it]Batches: 100%|██████████| 1/1 [00:28<00:00, 28.15s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:16<00:00, 16.61s/it]Batches: 100%|██████████| 1/1 [00:16<00:00, 16.61s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:30<00:00, 30.47s/it]Batches: 100%|██████████| 1/1 [00:30<00:00, 30.47s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:17<00:00, 17.11s/it]Batches: 100%|██████████| 1/1 [00:17<00:00, 17.11s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:29<00:00, 29.95s/it]Batches: 100%|██████████| 1/1 [00:29<00:00, 29.95s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:16<00:00, 16.15s/it]Batches: 100%|██████████| 1/1 [00:16<00:00, 16.15s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:29<00:00, 29.42s/it]Batches: 100%|██████████| 1/1 [00:29<00:00, 29.42s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:17<00:00, 17.30s/it]Batches: 100%|██████████| 1/1 [00:17<00:00, 17.30s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:33<00:00, 33.43s/it]Batches: 100%|██████████| 1/1 [00:33<00:00, 33.43s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:20<00:00, 20.19s/it]Batches: 100%|██████████| 1/1 [00:20<00:00, 20.19s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]

@@ -1,0 +1,112 @@
+[
+  {
+    "paper_id": "b5d9e2f1eeaf",
+    "method_name": "gpt-4o-mini-2024-07-18-L1",
+    "prompt_level": "L1",
+    "query": "如何通过新型异质结构设计提升光电探测器的综合性能",
+    "free_text_hypotheses": [
+      "[L1] 设计一种新型的范德瓦尔斯异质结构，通过调节层间材料的能带结构，提升光电探测器的光吸收效率，从而提高其灵敏度。\n\n[L2] 在新型异质结构中引入二维材料（如石墨烯或过渡金属硫化物），利用其优异的载流子迁移率，增强光电探测器的响应速度，进而实现高频信号的有效检测。\n\n[L3] 通过优化异质结构中各层的厚度和排列顺序，调节光子与载流子的相互作用，提升探测器在宽频段内的光谱响应范围，进而实现对中红外波段的高效探测。"
+    ],
+    "error": "",
+    "metadata": {
+      "journal": "Nature Communications",
+      "journal_id": "https://openalex.org/S64187185",
+      "issn_l": "2041-1723",
+      "source_type": "journal",
+      "doi": "https://doi.org/10.1038/s41467-025-55887-x",
+      "publication_date": "2025-01-10",
+      "publication_year": 2025,
+      "fwci": 163.74682493,
+      "cited_by_count": 81,
+      "field": "Advanced Semiconductor Detectors and Materials"
+    }
+  },
+  {
+    "paper_id": "72e1ebf6c828",
+    "method_name": "gpt-4o-mini-2024-07-18-L1",
+    "prompt_level": "L1",
+    "query": "如何通过化学手段提升水系锌电池的循环稳定性与库仑效率",
+    "free_text_hypotheses": [
+      "[L1] 在水系锌电池中添加特定的有机化合物作为电解液添加剂，可以通过形成稳定的界面膜来提升电池的循环稳定性和库仑效率。\n\n[L2] 选择具有高极性和低挥发性的有机化合物，能够在锌电极表面形成保护膜，从而减少锌的腐蚀和析氢反应，进而提高电池的循环稳定性。\n\n[L2] 通过调节电解液中添加剂的浓度，可以优化电极界面的电化学反应动力学，从而提升锌电池的库仑效率。\n\n[L3] 研究不同有机添加剂的分子结构与其在电极表面形成的界面膜特性之间的关系，以确定最佳的添加剂组合，从而实现更高的循环稳定性和库仑效率。\n\n[L3] 通过使用表面分析技术（如XPS和SEM）监测电极表面膜的形成和演变，探讨膜的厚度和组成对锌电池性能的影响机制。"
+    ],
+    "error": "",
+    "metadata": {
+      "journal": "Nature Communications",
+      "journal_id": "https://openalex.org/S64187185",
+      "issn_l": "2041-1723",
+      "source_type": "journal",
+      "doi": "https://doi.org/10.1038/s41467-025-56607-1",
+      "publication_date": "2025-02-20",
+      "publication_year": 2025,
+      "fwci": 157.68212771,
+      "cited_by_count": 78,
+      "field": "Advanced battery technologies research"
+    }
+  },
+  {
+    "paper_id": "9d7ad46d50d0",
+    "method_name": "gpt-4o-mini-2024-07-18-L1",
+    "prompt_level": "L1",
+    "query": "如何利用落叶开发高效的能量收集系统",
+    "free_text_hypotheses": [
+      "[L1] 假设1：落叶中的天然多糖与铁氢凝胶结合后，能够形成一种新型复合材料，该材料在潮湿环境中具有更高的能量收集效率。\n\n[L1] 假设2：通过优化落叶的处理方式（如干燥、粉碎），可以增强其与铁氢凝胶的相互作用，从而提高能量转化率。\n\n[L2] 假设1：在不同湿度条件下，落叶与铁氢凝胶的复合材料能够通过吸湿性吸收水分，进而促进电化学反应，提升电能输出。\n\n[L2] 假设2：落叶的表面结构和化学成分影响其与铁氢凝胶的结合强度，从而影响能量收集系统的整体性能。\n\n[L3] 假设1：通过调节铁氢凝胶的合成条件（如pH值和温度），可以优化其与落叶的相互作用，进而提高能量收集系统在不同环境条件下的稳定性和效率。\n\n[L3] 假设2：在不同的落叶种类中，某些特定的化学成分（如单宁或纤维素）能够显著增强与铁氢凝胶的电化学反应，从而提高能量收集能力。"
+    ],
+    "error": "",
+    "metadata": {
+      "journal": "Nature Communications",
+      "journal_id": "https://openalex.org/S64187185",
+      "issn_l": "2041-1723",
+      "source_type": "journal",
+      "doi": "https://doi.org/10.1038/s41467-025-60341-z",
+      "publication_date": "2025-06-06",
+      "publication_year": 2025,
+      "fwci": 153.63899623,
+      "cited_by_count": 76,
+      "field": "Energy Harvesting in Wireless Networks"
+    }
+  },
+  {
+    "paper_id": "1c052ae6f605",
+    "method_name": "gpt-4o-mini-2024-07-18-L1",
+    "prompt_level": "L1",
+    "query": "如何理解铬化锑中发现的交变磁性及其物理特性？",
+    "free_text_hypotheses": [
+      "[L1] 假设铬化锑中的交变磁性与其晶体结构中的原子排列密切相关，具体表现为不同晶体取向下的自旋极化程度存在显著差异。\n\n[L2] 假设在铬化锑的特定晶体取向下，交变磁性导致的自旋分裂会影响电子的能带结构，从而改变材料的电导率和热导率。\n\n[L3] 假设通过计算机模拟可以预测铬化锑在不同温度和外部磁场下的自旋分裂行为，从而为优化其在自旋电子学中的应用提供理论依据。"
+    ],
+    "error": "",
+    "metadata": {
+      "journal": "Nature Communications",
+      "journal_id": "https://openalex.org/S64187185",
+      "issn_l": "2041-1723",
+      "source_type": "journal",
+      "doi": "https://doi.org/10.1038/s41467-025-56647-7",
+      "publication_date": "2025-02-07",
+      "publication_year": 2025,
+      "fwci": 258.17123135,
+      "cited_by_count": 75,
+      "field": "Magnetic properties of thin films"
+    }
+  },
+  {
+    "paper_id": "3e2570ebbc22",
+    "method_name": "gpt-4o-mini-2024-07-18-L1",
+    "prompt_level": "L1",
+    "query": "如何构建基于深度学习的多模态框架来提升电池状态估计的准确性",
+    "free_text_hypotheses": [
+      "[L1] 通过结合电池的电压、温度和充电循环数据，构建一个多模态深度学习模型，可以显著提高电池状态估计的准确性。\n\n[L2] 在多模态深度学习模型中，使用卷积神经网络（CNN）处理电池的图像数据（如电池外观和内部结构），能够提取出与电池健康状态相关的视觉特征，从而增强模型的预测能力。\n\n[L2] 通过引入循环神经网络（RNN）处理电池的时间序列数据（如充电和放电曲线），可以捕捉电池性能随时间变化的动态特征，从而提高状态估计的时效性和准确性。\n\n[L3] 将CNN和RNN的输出结合，通过注意力机制加权融合不同模态的信息，可以优化模型的决策过程，使其在复杂环境下对电池状态的评估更加精准。\n\n[L3] 在多模态框架中，利用迁移学习技术，将在其他电池数据集上训练的模型参数迁移到目标电池数据集上，可以有效减少训练时间并提高模型在新数据上的泛化能力。"
+    ],
+    "error": "",
+    "metadata": {
+      "journal": "Nature Communications",
+      "journal_id": "https://openalex.org/S64187185",
+      "issn_l": "2041-1723",
+      "source_type": "journal",
+      "doi": "https://doi.org/10.1038/s41467-025-56485-7",
+      "publication_date": "2025-01-29",
+      "publication_year": 2025,
+      "fwci": 156.77105282,
+      "cited_by_count": 72,
+      "field": "Advanced Battery Technologies Research"
+    }
+  }
+]

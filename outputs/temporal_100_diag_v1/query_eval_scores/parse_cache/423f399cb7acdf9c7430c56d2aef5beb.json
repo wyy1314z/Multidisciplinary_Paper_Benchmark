@@ -1,0 +1,152 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "非稳态可再生能源供电",
+        "relation": "causes",
+        "tail": "电解水制氢效率下降",
+        "claim": "非稳态供电导致电解水制氢效率下降"
+      },
+      {
+        "step": 2,
+        "head": "电解水制氢效率下降",
+        "relation": "causes",
+        "tail": "绿氢生产成本增加和稳定性问题",
+        "claim": "效率下降导致生产成本增加和稳定性问题"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "绿氢储运技术未实现大规模高效应用",
+        "relation": "enables",
+        "tail": "高压容器与液化高能耗",
+        "claim": "储运技术低效导致高能耗"
+      },
+      {
+        "step": 2,
+        "head": "高压容器与液化高能耗",
+        "relation": "inhibits",
+        "tail": "绿氢在交通与工业领域渗透",
+        "claim": "高能耗限制绿氢在交通与工业的应用"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "绿氢产业链关键材料稀缺",
+        "relation": "inhibits",
+        "tail": "电解槽大规模部署",
+        "claim": "材料稀缺制约电解槽部署规模"
+      },
+      {
+        "step": 2,
+        "head": "电解槽大规模部署受限",
+        "relation": "delays",
+        "tail": "绿氢成本下降",
+        "claim": "部署受限延缓成本下降"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "碳定价机制未反映绿氢负碳属性",
+        "relation": "causes",
+        "tail": "绿氢价格劣势",
+        "claim": "碳定价缺陷导致绿氢价格劣势"
+      },
+      {
+        "step": 2,
+        "head": "绿氢价格劣势",
+        "relation": "extends",
+        "tail": "投资回报周期",
+        "claim": "价格劣势延长投资回报周期"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "绿氢项目融资渠道有限",
+        "relation": "lacks",
+        "tail": "长期购氢协议等金融工具",
+        "claim": "融资渠道有限缺乏收益保障工具"
+      },
+      {
+        "step": 2,
+        "head": "长期购氢协议缺乏",
+        "relation": "increases",
+        "tail": "投资风险",
+        "claim": "缺乏协议增加投资者风险"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "区域间能源市场分割",
+        "relation": "prevents",
+        "tail": "绿氢跨区域调配",
+        "claim": "市场分割阻碍跨区域调配"
+      },
+      {
+        "step": 2,
+        "head": "绿氢跨区域调配受阻",
+        "relation": "delays",
+        "tail": "统一价格机制形成",
+        "claim": "调配受阻延缓价格机制统一"
+      }
+    ]
+  ],
+  "L3": [
+    [
+      {
+        "step": 1,
+        "head": "绿氢全生命周期水资源消耗",
+        "relation": "causes",
+        "tail": "干旱地区生态压力",
+        "claim": "水资源消耗引发生态压力"
+      },
+      {
+        "step": 2,
+        "head": "干旱地区生态压力",
+        "relation": "triggers",
+        "tail": "社会争议",
+        "claim": "生态压力触发社会争议"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "绿氢输氢管道建设",
+        "relation": "raises",
+        "tail": "公众安全担忧",
+        "claim": "基础设施引发安全担忧"
+      },
+      {
+        "step": 2,
+        "head": "公众安全担忧",
+        "relation": "delays",
+        "tail": "项目落地",
+        "claim": "安全担忧延缓项目实施"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "绿氢发展",
+        "relation": "exacerbates",
+        "tail": "能源资源分配不均",
+        "claim": "绿氢发展加剧资源分配不均"
+      },
+      {
+        "step": 2,
+        "head": "能源资源分配不均",
+        "relation": "impedes",
+        "tail": "能源公平转型",
+        "claim": "分配不均阻碍公平转型"
+      }
+    ]
+  ]
+}

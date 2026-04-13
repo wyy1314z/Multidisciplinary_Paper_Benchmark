@@ -2,12 +2,14 @@
 
 import logging
 import re
+import time
 from typing import List, Optional
 
 from langchain_openai import ChatOpenAI
 from langchain_core.messages import HumanMessage
 
 from crossdisc_extractor.classifier.config import LLMConfig
+from crossdisc_extractor.utils.usage_telemetry import extract_langchain_usage, log_usage_event
 
 logger = logging.getLogger(__name__)
 
@@ -27,20 +29,58 @@ class BaseLLM:
 
     def invoke(self, prompt: str) -> str:
         """Synchronous single-turn prompt invocation."""
+        start = time.time()
         try:
             resp = self.llm.invoke([HumanMessage(content=prompt)])
-            return (resp.content or "").strip()
+            output = (resp.content or "").strip()
+            log_usage_event(
+                call_kind="classifier_invoke",
+                model=self.cfg.model_name,
+                prompt_text=prompt,
+                output_text=output,
+                usage=extract_langchain_usage(resp),
+                success=True,
+                latency_sec=time.time() - start,
+            )
+            return output
         except Exception as e:
             logger.error("LLM invoke failed: %s", e)
+            log_usage_event(
+                call_kind="classifier_invoke",
+                model=self.cfg.model_name,
+                prompt_text=prompt,
+                success=False,
+                error=str(e),
+                latency_sec=time.time() - start,
+            )
             return ""
 
     async def ainvoke(self, prompt: str) -> str:
         """Asynchronous single-turn prompt invocation."""
+        start = time.time()
         try:
             resp = await self.llm.ainvoke([HumanMessage(content=prompt)])
-            return (resp.content or "").strip()
+            output = (resp.content or "").strip()
+            log_usage_event(
+                call_kind="classifier_ainvoke",
+                model=self.cfg.model_name,
+                prompt_text=prompt,
+                output_text=output,
+                usage=extract_langchain_usage(resp),
+                success=True,
+                latency_sec=time.time() - start,
+            )
+            return output
         except Exception as e:
             logger.error("LLM async invoke failed: %s", e)
+            log_usage_event(
+                call_kind="classifier_ainvoke",
+                model=self.cfg.model_name,
+                prompt_text=prompt,
+                success=False,
+                error=str(e),
+                latency_sec=time.time() - start,
+            )
             return ""
 
     @staticmethod

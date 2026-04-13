@@ -1,0 +1,24 @@
+[
+  {
+    "paper_id": "73c077788a0a",
+    "method_name": "doubao-pro-32k-241215-L1",
+    "prompt_level": "L1",
+    "query": "微塑料在人类大脑中的生物累积机制及其病理影响是什么",
+    "free_text_hypotheses": [
+      "[ERROR] LLM 网关错误 (HTTP 503): Error code: 503 - {'error': {'message': '当前分组 企业用户 下对于模型 doubao-pro-32k-241215 计费模式 [按量计费] 无可用渠道 (request id: 2026041315271497767130241055693)', 'type': 'shell_api_error'}}"
+    ],
+    "error": "LLM 网关错误 (HTTP 503): Error code: 503 - {'error': {'message': '当前分组 企业用户 下对于模型 doubao-pro-32k-241215 计费模式 [按量计费] 无可用渠道 (request id: 2026041315271497767130241055693)', 'type': 'shell_api_error'}}",
+    "metadata": {
+      "journal": "Nature Medicine",
+      "journal_id": "https://openalex.org/S203256638",
+      "issn_l": "1078-8956",
+      "source_type": "journal",
+      "doi": "https://doi.org/10.1038/s41591-024-03453-1",
+      "publication_date": "2025-02-03",
+      "publication_year": 2025,
+      "fwci": 732.30334375,
+      "cited_by_count": 446,
+      "field": "Microplastics and Plastic Pollution"
+    }
+  }
+]

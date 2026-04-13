@@ -1,0 +1,5 @@
+stage	command	start_epoch	end_epoch	elapsed_sec	real_sec	user_sec	sys_sec	max_rss_kb	exit_code
+stage0	prepare_2025_balanced_candidate_pool	1776048472	1776048480	8	8.46	10.98	0.82	815640	0
+stage1	classify_2025_candidate_pool	1776048480	1776050220	1740	1739.86	49.14	5.26	797700	0
+stage2	sample_2025_crossdisc_balanced_100	1776050220	1776050221	1	0.34	4.18	0.07	110464	0
+stage3	extract_2025_balanced_100	1776050221	1776051903	1682	1682.69	686.75	128.74	2564440	0

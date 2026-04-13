@@ -43,6 +43,57 @@ PROMPT_EVAL_L1 = """你是一个跨学科研究评估专家。
 只输出 JSON，不要输出其他内容。
 """
 
+# 评估假设路径的现实可行性 (Feasibility)
+# 与 testability 区分：
+# - testability 关注“能否被检验/证伪”
+# - feasibility 关注“在当前资源和方法条件下能否真正执行”
+PROMPT_FEASIBILITY = """你是一位跨学科科研评估专家。请评估以下研究假设路径的现实可行性（Feasibility）。
+
+【假设路径】
+{hypothesis_path}
+
+【评分原则】
+Feasibility 不等于逻辑是否通顺，也不等于是否可证伪。
+它专门评估：在当前可获得的数据、方法、资源和验证条件下，这条假设是否现实可执行。
+
+【评分维度】(每项 0-10 分)
+1. **数据可行性 (Data Feasibility)**:
+   - 验证该假设所需的数据、样本或文献证据是否现实可获得？
+   - 10分: 公开或常规实验/观测数据即可支持
+   - 5分: 数据可获得，但需要较高成本收集或整合
+   - 0分: 关键数据几乎不可得，或依赖不存在的数据来源
+
+2. **方法可行性 (Method Feasibility)**:
+   - 验证该假设所需的方法、模型、实验流程是否已经存在且成熟？
+   - 10分: 可直接采用成熟方法实施
+   - 5分: 需要组合多种专业方法，但总体可行
+   - 0分: 严重依赖尚不成熟或不存在的方法
+
+3. **资源可行性 (Resource Feasibility)**:
+   - 所需设备、计算、时间和跨学科协作成本是否合理？
+   - 10分: 常规研究团队即可完成
+   - 5分: 需要较强资源支持，但现实中可组织
+   - 0分: 需要极端昂贵、稀缺或几乎不可获得的资源
+
+4. **验证准备度 (Validation Readiness)**:
+   - 是否能够提出一个清晰、现实的最小验证方案？
+   - 10分: 可直接形成最小可行验证方案
+   - 5分: 需要进一步细化后可验证
+   - 0分: 尚无法落到可执行验证步骤
+
+【输出格式】
+请输出一个 JSON 对象，包含以下字段：
+{{{{
+    "data_feasibility": <float>,
+    "method_feasibility": <float>,
+    "resource_feasibility": <float>,
+    "validation_readiness": <float>,
+    "minimum_viable_validation": "<一句话说明最小可行验证方案>",
+    "reason": "<简短说明主要瓶颈>"
+}}}}
+只输出 JSON，不要输出其他内容。
+"""
+
 # 评估假设路径的可验证性 (Testability)
 # 参考: Popper (1959) 可证伪性原则 + Si et al. (2024) Expected Effectiveness
 PROMPT_TESTABILITY = """你是一位实验设计专家。请评估以下跨学科研究假设路径的可验证性。

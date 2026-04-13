@@ -1,0 +1,68 @@
+[
+  {
+    "paper_id": "73c077788a0a",
+    "method_name": "qwen3-235b-a22b-L1",
+    "prompt_level": "L1",
+    "query": "人类大脑中微塑料生物累积的时空分布规律及其毒性效应机制",
+    "free_text_hypotheses": [
+      "[ERROR] LLM 调用失败: Error code: 401 - {'error': {'message': '该令牌额度已用尽 (request id: 2026041006544617404899075233573)', 'type': 'shell_api_error'}}"
+    ],
+    "error": "LLM 调用失败: Error code: 401 - {'error': {'message': '该令牌额度已用尽 (request id: 2026041006544617404899075233573)', 'type': 'shell_api_error'}}",
+    "metadata": {
+      "journal": "Nature Medicine",
+      "journal_id": "https://openalex.org/S203256638",
+      "issn_l": "1078-8956",
+      "source_type": "journal",
+      "doi": "https://doi.org/10.1038/s41591-024-03453-1",
+      "publication_date": "2025-02-03",
+      "publication_year": 2025,
+      "fwci": 732.30334375,
+      "cited_by_count": 446,
+      "field": "Microplastics and Plastic Pollution"
+    }
+  },
+  {
+    "paper_id": "df6870da869d",
+    "method_name": "qwen3-235b-a22b-L1",
+    "prompt_level": "L1",
+    "query": "脊髓损伤后单核细胞来源巨噬细胞的促炎表型如何影响神经修复微环境？",
+    "free_text_hypotheses": [
+      "[ERROR] LLM 调用失败: Error code: 401 - {'error': {'message': '该令牌额度已用尽 (request id: 2026041006552172085926091384727)', 'type': 'shell_api_error'}}"
+    ],
+    "error": "LLM 调用失败: Error code: 401 - {'error': {'message': '该令牌额度已用尽 (request id: 2026041006552172085926091384727)', 'type': 'shell_api_error'}}",
+    "metadata": {
+      "journal": "Scientific Reports",
+      "journal_id": "https://openalex.org/S196734849",
+      "issn_l": "2045-2322",
+      "source_type": "journal",
+      "doi": "https://doi.org/10.1038/s41598-024-84936-6",
+      "publication_date": "2025-01-02",
+      "publication_year": 2025,
+      "fwci": 1476.74340107,
+      "cited_by_count": 301,
+      "field": "Spinal Cord Injury Research"
+    }
+  },
+  {
+    "paper_id": "2225d7c27bc7",
+    "method_name": "qwen3-235b-a22b-L1",
+    "prompt_level": "L1",
+    "query": "生成模型如何提升无机材料设计的稳定性与多样性",
+    "free_text_hypotheses": [
+      "[ERROR] LLM 调用失败: Error code: 401 - {'error': {'message': '该令牌额度已用尽 (request id: 2026041006555693880921872884402)', 'type': 'shell_api_error'}}"
+    ],
+    "error": "LLM 调用失败: Error code: 401 - {'error': {'message': '该令牌额度已用尽 (request id: 2026041006555693880921872884402)', 'type': 'shell_api_error'}}",
+    "metadata": {
+      "journal": "Nature",
+      "journal_id": "https://openalex.org/S137773608",
+      "issn_l": "0028-0836",
+      "source_type": "journal",
+      "doi": "https://doi.org/10.1038/s41586-025-08628-5",
+      "publication_date": "2025-01-16",
+      "publication_year": 2025,
+      "fwci": 378.92425813,
+      "cited_by_count": 239,
+      "field": "Machine Learning in Materials Science"
+    }
+  }
+]

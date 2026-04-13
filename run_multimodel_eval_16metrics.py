@@ -39,6 +39,11 @@ logging.basicConfig(
 )
 logger = logging.getLogger("multimodel_eval")
 
+
+def _sanitize_model_name(model_name: str) -> str:
+    return model_name.replace("/", "_").replace(":", "_")
+
+
 # ---------------------------------------------------------------------------
 # LLM 调用: 文本→结构化路径解析
 # ---------------------------------------------------------------------------
@@ -158,16 +163,52 @@ def parse_hypothesis_to_paths(
 
 
 # ---------------------------------------------------------------------------
-# Build paper metadata map from test_extraction.json
+# Build paper metadata map from extraction or query-eval JSON
 # ---------------------------------------------------------------------------
 
-def build_paper_map(test_data_path: str) -> Dict[str, Dict[str, Any]]:
-    """从 test_extraction.json 构建 paper_id → 元数据 映射。"""
+def build_paper_map(test_data_path: str, input_mode: str = "auto") -> Dict[str, Dict[str, Any]]:
+    """构建 paper_id → 元数据 映射。
+
+    Supported input modes:
+    - extraction: raw extraction result items containing parsed/meta/查询/概念
+    - query_eval: query-centric rows built by scripts/build_query_eval_set.py
+    - auto: infer from the first item
+    """
     with open(test_data_path, encoding="utf-8") as f:
         items = json.load(f)
 
+    if not items:
+        return {}
+
+    if input_mode == "auto":
+        first = items[0]
+        if "parsed" in first:
+            input_mode = "extraction"
+        elif "queries" in first:
+            input_mode = "query_eval"
+        else:
+            raise ValueError("无法自动识别 test-data 格式，请显式指定 --input-mode")
+
     paper_map = {}
     for item in items:
+        if input_mode == "query_eval":
+            title = item.get("title", "")
+            pid = item.get("paper_id") or hashlib.md5(title.encode("utf-8")).hexdigest()[:12]
+            queries = item.get("queries", {})
+            paper_map[pid] = {
+                "title": title,
+                "abstract": item.get("abstract", ""),
+                "primary": item.get("primary_discipline", ""),
+                "secondary_list": item.get("secondary_disciplines", []),
+                "l1_query": queries.get("L1", ""),
+                "l2_queries": queries.get("L2", []),
+                "l3_queries": queries.get("L3", []),
+                "gt_terms": item.get("gt_terms", []),
+                "gt_relations": item.get("gt_relations", []),
+                "metadata": item.get("metadata", {}),
+            }
+            continue
+
         parsed = item.get("parsed", {})
         meta = parsed.get("meta", {})
         title = meta.get("title", item.get("title", ""))
@@ -176,7 +217,6 @@ def build_paper_map(test_data_path: str) -> Dict[str, Dict[str, Any]]:
         queries = parsed.get("查询", {})
         concepts = parsed.get("概念", {})
 
-        # Extract gt_terms from concepts
         gt_terms = []
         for c in concepts.get("主学科", []):
             t = (c.get("normalized") or c.get("term", "")).strip()
@@ -188,7 +228,6 @@ def build_paper_map(test_data_path: str) -> Dict[str, Dict[str, Any]]:
                 if t:
                     gt_terms.append(t)
 
-        # Extract gt_relations from 跨学科关系
         gt_relations = parsed.get("跨学科关系", [])
 
         paper_map[pid] = {
@@ -201,6 +240,11 @@ def build_paper_map(test_data_path: str) -> Dict[str, Dict[str, Any]]:
             "l3_queries": queries.get("三级", []),
             "gt_terms": gt_terms,
             "gt_relations": gt_relations,
+            "metadata": {
+                "journal": meta.get("journal", item.get("journal", "")),
+                "fwci": meta.get("fwci", item.get("fwci")),
+                "cited_by_count": meta.get("cited_by_count", item.get("cited_by_count")),
+            },
         }
 
     logger.info("论文元数据映射: %d 篇", len(paper_map))
@@ -218,7 +262,9 @@ def main():
     parser.add_argument("--test-data", required=True, help="test_extraction.json (论文元数据)")
     parser.add_argument("--output-dir", required=True, help="输出目录")
     parser.add_argument("--taxonomy", default=None, help="学科分类树 JSON")
+    parser.add_argument("--input-mode", choices=["auto", "extraction", "query_eval"], default="auto")
     parser.add_argument("--max-items", type=int, default=None, help="每个模型最多评测 N 条")
+    parser.add_argument("--include-models", nargs="*", default=None, help="只评测这些模型名")
     parser.add_argument("--skip-models", nargs="*", default=[], help="跳过的模型名")
     args = parser.parse_args()
 
@@ -241,17 +287,25 @@ def main():
 
     # 2. 加载论文元数据
     logger.info("Step 2: 加载论文元数据")
-    paper_map = build_paper_map(args.test_data)
+    paper_map = build_paper_map(args.test_data, input_mode=args.input_mode)
 
     # 3. 遍历模型结果
     model_files = sorted(glob.glob(os.path.join(args.model_results_dir, "*.json")))
     logger.info("Step 3: 开始评测 %d 个模型", len(model_files))
 
     all_results: List[Dict[str, Any]] = []
-    skipped_models = set(args.skip_models or [])
+    included_models = (
+        {_sanitize_model_name(model_name) for model_name in args.include_models}
+        if args.include_models
+        else None
+    )
+    skipped_models = {_sanitize_model_name(model_name) for model_name in (args.skip_models or [])}
 
     for model_file in model_files:
         model_name = os.path.basename(model_file).replace(".json", "")
+        if included_models is not None and model_name not in included_models:
+            logger.info("[%s] 跳过 (不在 include-models 中)", model_name)
+            continue
         if model_name in skipped_models:
             logger.info("[%s] 跳过 (用户指定)", model_name)
             continue

@@ -1,0 +1,208 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "小鼠视觉皮层不同层级区域的神经元集群",
+        "relation": "synchronizes via",
+        "tail": "特定频率的振荡（γ波段30-80Hz）",
+        "claim": "神经元集群通过γ波段振荡实现同步化"
+      },
+      {
+        "step": 2,
+        "head": "特定频率的振荡同步化",
+        "relation": "forms",
+        "tail": "任务依赖的功能模块",
+        "claim": "振荡同步化形成任务依赖功能模块"
+      },
+      {
+        "step": 3,
+        "head": "功能模块的同步强度",
+        "relation": "positively correlates with",
+        "tail": "视觉特征整合效率",
+        "claim": "同步强度与特征整合效率正相关"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "抑制性中间神经元（PV+/SST+细胞）",
+        "relation": "regulates",
+        "tail": "邻近兴奋性神经元的发放时序",
+        "claim": "中间神经元调控兴奋性神经元时序"
+      },
+      {
+        "step": 2,
+        "head": "兴奋性神经元的发放时序调控",
+        "relation": "enables",
+        "tail": "动态门控作用",
+        "claim": "发放时序调控实现动态门控"
+      },
+      {
+        "step": 3,
+        "head": "抑制性中间神经元的活动水平",
+        "relation": "has nonlinear relationship with",
+        "tail": "跨区域信息流方向性",
+        "claim": "活动水平与信息流方向性呈非线性关系"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "视觉经验依赖的突触可塑性（STDP机制）",
+        "relation": "induces",
+        "tail": "功能连接权重的梯度重构",
+        "claim": "STDP机制引发连接权重梯度重构"
+      },
+      {
+        "step": 2,
+        "head": "功能连接权重梯度重构",
+        "relation": "manifests as",
+        "tail": "层级化连接强度梯度（V1→V2→LM递增）",
+        "claim": "梯度重构表现为层级化连接强度递增"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "不同视觉任务（运动方向辨别/物体识别）",
+        "relation": "induces",
+        "tail": "功能网络拓扑结构特异性重组",
+        "claim": "视觉任务诱导网络拓扑重组"
+      },
+      {
+        "step": 2,
+        "head": "功能网络拓扑重组",
+        "relation": "creates",
+        "tail": "模块化指数与任务复杂度的U型关系",
+        "claim": "重组导致模块化指数与复杂度U型关系"
+      },
+      {
+        "step": 3,
+        "head": "U型关系特性",
+        "relation": "requires",
+        "tail": "动态图模型跨状态建模",
+        "claim": "U型关系需动态图模型解析"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "胶质细胞（星形胶质细胞）",
+        "relation": "generates",
+        "tail": "钙信号波动",
+        "claim": "胶质细胞产生钙信号波动"
+      },
+      {
+        "step": 2,
+        "head": "钙信号波动",
+        "relation": "regulates",
+        "tail": "局部血流动力学响应",
+        "claim": "钙信号调节局部血流"
+      },
+      {
+        "step": 3,
+        "head": "钙信号时空特征",
+        "relation": "asymmetrically couples with",
+        "tail": "BOLD-fMRI功能连接矩阵",
+        "claim": "钙信号与fMRI矩阵存在非对称耦合"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "遗传标记的特定神经元类型（Tlx3+锥体神经元）",
+        "relation": "exhibits",
+        "tail": "分层网络形成时序",
+        "claim": "神经元类型呈现分层形成时序"
+      },
+      {
+        "step": 2,
+        "head": "分层网络形成时序",
+        "relation": "determines",
+        "tail": "轴突投射拓扑结构",
+        "claim": "形成时序决定轴突拓扑结构"
+      },
+      {
+        "step": 3,
+        "head": "轴突投射拓扑结构",
+        "relation": "corresponds to",
+        "tail": "功能连接组模块化程度",
+        "claim": "拓扑结构与模块化程度跨尺度对应"
+      }
+    ]
+  ],
+  "L3": [
+    [
+      {
+        "step": 1,
+        "head": "阿尔茨海默病小鼠模型",
+        "relation": "exhibits",
+        "tail": "Aβ斑块沉积",
+        "claim": "疾病模型呈现Aβ斑块沉积"
+      },
+      {
+        "step": 2,
+        "head": "Aβ斑块沉积",
+        "relation": "causes",
+        "tail": "θ波段相位同步异常",
+        "claim": "斑块沉积导致θ波同步异常"
+      },
+      {
+        "step": 3,
+        "head": "θ波段相位同步异常",
+        "relation": "correlates spatially with",
+        "tail": "突触丢失空间分布模式",
+        "claim": "同步异常与突触丢失呈空间相关"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "跨物种保守的基因共表达模块（ME3模块）",
+        "relation": "regulates",
+        "tail": "突触粘附分子表达水平",
+        "claim": "基因模块调控突触粘附分子表达"
+      },
+      {
+        "step": 2,
+        "head": "突触粘附分子表达水平",
+        "relation": "determines",
+        "tail": "功能连接组模块化指数",
+        "claim": "分子表达决定连接组模块化指数"
+      },
+      {
+        "step": 3,
+        "head": "基因共表达模块扰动",
+        "relation": "induces",
+        "tail": "CRISPR敲除模型剂量依赖性网络重构",
+        "claim": "基因扰动引发剂量依赖网络重构"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "视觉皮层功能网络",
+        "relation": "exhibits",
+        "tail": "最小能量路径",
+        "claim": "功能网络存在最小能量路径"
+      },
+      {
+        "step": 2,
+        "head": "最小能量路径",
+        "relation": "nonlinearly maps to",
+        "tail": "解剖连接各向异性扩散系数",
+        "claim": "能量路径与扩散系数非线性映射"
+      },
+      {
+        "step": 3,
+        "head": "非线性映射特性",
+        "relation": "requires",
+        "tail": "能量景观模型构建",
+        "claim": "需结合DTI与动态系统理论建模"
+      }
+    ]
+  ]
+}

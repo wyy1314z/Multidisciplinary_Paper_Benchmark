@@ -1,0 +1,112 @@
+[
+  {
+    "paper_id": "f4465d25f7c9",
+    "method_name": "gpt-3.5-turbo-0125-L1",
+    "prompt_level": "L1",
+    "query": "如何通过单原子催化剂设计突破类芬顿催化中活性与稳定性的权衡？",
+    "free_text_hypotheses": [
+      "[L1] 通过调节纳米岛的形态和尺寸，可以优化钴单原子催化剂在类芬顿反应中的催化活性和稳定性。假设较小的纳米岛能够提供更高的比表面积，从而增强催化剂的活性，同时保持良好的结构稳定性。\n\n[L2] 在钴单原子催化剂中引入不同的配体或掺杂元素，可以调节其电子结构，从而提高其在类芬顿反应中的催化效率。假设特定的掺杂元素能够增强钴原子的氧化还原能力，进而提升反应速率。\n\n[L3] 通过控制催化剂的合成条件（如温度、pH值和反应时间），可以实现对钴单原子催化剂的微观结构调控，进而影响其在类芬顿反应中的活性与稳定性。假设在特定的合成条件下，能够形成更为均匀的单原子分布，从而提高催化剂的整体性能。"
+    ],
+    "error": "",
+    "metadata": {
+      "journal": "Nature Communications",
+      "journal_id": "https://openalex.org/S64187185",
+      "issn_l": "2041-1723",
+      "source_type": "journal",
+      "doi": "https://doi.org/10.1038/s41467-024-55622-y",
+      "publication_date": "2025-01-02",
+      "publication_year": 2025,
+      "fwci": 93.87822721,
+      "cited_by_count": 96,
+      "field": "Electrocatalysts for Energy Conversion"
+    }
+  },
+  {
+    "paper_id": "b5d9e2f1eeaf",
+    "method_name": "gpt-3.5-turbo-0125-L1",
+    "prompt_level": "L1",
+    "query": "如何提升中红外光电探测器的探测率与响应速度至理论极限？",
+    "free_text_hypotheses": [
+      "[L1] 在垂直传输通道的范德瓦尔斯异质结构中，增加界面层的数量可以提高载流子迁移率，从而提升中红外光电探测器的探测率。\n\n[L2] 通过优化异质结构中各层材料的带隙和能带对齐，可以增强光吸收效率，进而提高中红外光电探测器的响应速度。\n\n[L3] 引入外部电场以调节载流子浓度和分布，可以实现对中红外光电探测器的动态响应调节，从而在不同光照条件下达到理论极限的探测率与响应速度。"
+    ],
+    "error": "",
+    "metadata": {
+      "journal": "Nature Communications",
+      "journal_id": "https://openalex.org/S64187185",
+      "issn_l": "2041-1723",
+      "source_type": "journal",
+      "doi": "https://doi.org/10.1038/s41467-025-55887-x",
+      "publication_date": "2025-01-10",
+      "publication_year": 2025,
+      "fwci": 163.74682493,
+      "cited_by_count": 81,
+      "field": "Advanced Semiconductor Detectors and Materials"
+    }
+  },
+  {
+    "paper_id": "49822610b620",
+    "method_name": "gpt-3.5-turbo-0125-L1",
+    "prompt_level": "L1",
+    "query": "如何通过高模量隔膜设计解决锌枝晶问题",
+    "free_text_hypotheses": [
+      "[L1] 假设高模量生物仿生隔膜能够通过增强锌离子的传输路径，降低锌离子在电极表面的沉积速率，从而减少锌枝晶的形成。\n\n[L2] 假设在高模量生物仿生隔膜中引入特定的纳米结构能够增加隔膜的机械强度，进而提高其对锌离子流动的选择性，促进均匀沉积，抑制枝晶生长。\n\n[L2] 假设通过调节隔膜的化学成分和微观结构，可以优化其离子导电性，使得锌离子在隔膜中的迁移速率显著提高，从而减少锌枝晶的生成。\n\n[L3] 假设在高模量隔膜中添加生物相容性聚合物能够形成自修复机制，增强隔膜在锌离子电池循环过程中的稳定性，进一步降低枝晶的风险。\n\n[L3] 假设通过对隔膜表面进行功能化处理，可以改善锌离子在隔膜界面的吸附特性，进而实现更均匀的锌沉积，减少枝晶的形成。"
+    ],
+    "error": "",
+    "metadata": {
+      "journal": "Nature Communications",
+      "journal_id": "https://openalex.org/S64187185",
+      "issn_l": "2041-1723",
+      "source_type": "journal",
+      "doi": "https://doi.org/10.1038/s41467-025-56325-8",
+      "publication_date": "2025-01-25",
+      "publication_year": 2025,
+      "fwci": 163.74682493,
+      "cited_by_count": 81,
+      "field": "Advanced battery technologies research"
+    }
+  },
+  {
+    "paper_id": "9d7ad46d50d0",
+    "method_name": "gpt-3.5-turbo-0125-L1",
+    "prompt_level": "L1",
+    "query": "如何利用吸湿性铁水凝胶和叶脉结构设计高效的能量收集器？",
+    "free_text_hypotheses": [
+      "[L1] 假设1: 吸湿性铁水凝胶的水分吸附能力与其表面结构的微观特征之间存在正相关关系，优化微观结构可以提高水分吸附效率，从而增强能量收集效率。\n\n[L1] 假设2: 叶脉结构的导电性与其几何形状和材料组成之间存在关联，通过调节叶脉的几何形状可以提高其导电性能，进而提升能量传输效率。\n\n[L2] 假设1: 在吸湿性铁水凝胶中引入纳米级导电填料（如碳纳米管）可以显著提高其电导率，从而增强其在能量收集器中的能量转换效率。\n\n[L2] 假设2: 结合叶脉结构与吸湿性铁水凝胶的复合材料能够形成更为有效的水分管理系统，促进水分的快速转移和电能的持续输出。\n\n[L3] 假设1: 通过调节吸湿性铁水凝胶的化学成分（如铁离子的浓度）可以优化其吸湿特性，从而实现更高的能量收集效率，尤其是在高湿环境下。\n\n[L3] 假设2: 叶脉结构的表面处理（如涂覆亲水性材料）能够增强其与吸湿性铁水凝胶的界面相互作用，进而提高整体能量收集器的性能。"
+    ],
+    "error": "",
+    "metadata": {
+      "journal": "Nature Communications",
+      "journal_id": "https://openalex.org/S64187185",
+      "issn_l": "2041-1723",
+      "source_type": "journal",
+      "doi": "https://doi.org/10.1038/s41467-025-60341-z",
+      "publication_date": "2025-06-06",
+      "publication_year": 2025,
+      "fwci": 153.63899623,
+      "cited_by_count": 76,
+      "field": "Energy Harvesting in Wireless Networks"
+    }
+  },
+  {
+    "paper_id": "3e2570ebbc22",
+    "method_name": "gpt-3.5-turbo-0125-L1",
+    "prompt_level": "L1",
+    "query": "如何构建基于深度学习的多模态框架来评估电池健康状态？",
+    "free_text_hypotheses": [
+      "[L1] 假设1：通过结合电池的电压、温度和充放电循环数据，深度学习模型能够有效识别电池健康状态的关键特征，从而提高评估的准确性。\n\n[L1] 假设2：利用开源电动汽车数据集中的多模态信息（如驾驶行为、环境条件和电池使用历史），可以构建一个深度学习框架，增强电池健康状态评估的鲁棒性。\n\n[L1] 假设3：通过引入图神经网络处理电池之间的相互影响，能够进一步提升多模态框架在电池健康状态评估中的性能。\n\n[L2] 假设1：在多模态框架中，采用卷积神经网络（CNN）处理电池图像数据（如电池外观），可以有效捕捉到物理损伤特征，从而辅助健康状态评估。\n\n[L2] 假设2：通过时间序列分析技术，结合电池的历史充放电数据，深度学习模型能够识别出电池老化趋势，从而预测未来的健康状态。\n\n[L2] 假设3：在多模态框架中，融合传感器数据（如温度和湿度）与电池性能数据，可以提高模型对环境因素影响的敏感性，从而优化健康状态评估。\n\n[L3] 假设1：通过对比不同深度学习模型（如LSTM与CNN）的性能，能够确定最适合处理电池健康状态评估的架构，从而为未来研究提供指导。\n\n[L3] 假设2：在多模态框架中，采用自注意力机制可以增强模型对重要特征的关注，从而提高电池健康状态评估的精度和可靠性。\n\n[L3] 假设3：通过集成学习方法，将多个深度学习模型的输出进行融合，可以进一步提升电池健康状态评估的整体性能，尤其是在数据稀缺的情况下。"
+    ],
+    "error": "",
+    "metadata": {
+      "journal": "Nature Communications",
+      "journal_id": "https://openalex.org/S64187185",
+      "issn_l": "2041-1723",
+      "source_type": "journal",
+      "doi": "https://doi.org/10.1038/s41467-025-56485-7",
+      "publication_date": "2025-01-29",
+      "publication_year": 2025,
+      "fwci": 156.77105282,
+      "cited_by_count": 72,
+      "field": "Advanced Battery Technologies Research"
+    }
+  }
+]

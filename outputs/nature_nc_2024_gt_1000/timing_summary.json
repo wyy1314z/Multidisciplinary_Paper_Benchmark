@@ -1,0 +1,144 @@
+{
+  "num_records": 7,
+  "by_stage": {
+    "stage0": {
+      "num_commands": 3,
+      "elapsed_sec_sum": 17.0,
+      "real_sec_sum": 16.81,
+      "max_rss_kb_max": 591420,
+      "commands": [
+        {
+          "command": "prepare_nature_nc_2024_candidates",
+          "elapsed_sec": 6.0,
+          "real_sec": 5.61,
+          "max_rss_kb": 590600,
+          "exit_code": 0
+        },
+        {
+          "command": "prepare_nature_nc_2024_candidates",
+          "elapsed_sec": 6.0,
+          "real_sec": 5.79,
+          "max_rss_kb": 591420,
+          "exit_code": 0
+        },
+        {
+          "command": "prepare_nature_nc_2024_candidates",
+          "elapsed_sec": 5.0,
+          "real_sec": 5.41,
+          "max_rss_kb": 590820,
+          "exit_code": 0
+        }
+      ]
+    },
+    "stage1": {
+      "num_commands": 2,
+      "elapsed_sec_sum": 3302.0,
+      "real_sec_sum": 3301.22,
+      "max_rss_kb_max": 817708,
+      "commands": [
+        {
+          "command": "classify_nature_nc_2024_candidates",
+          "elapsed_sec": 2406.0,
+          "real_sec": 2405.31,
+          "max_rss_kb": 809048,
+          "exit_code": 0
+        },
+        {
+          "command": "classify_nature_nc_2024_candidates",
+          "elapsed_sec": 896.0,
+          "real_sec": 895.91,
+          "max_rss_kb": 817708,
+          "exit_code": 0
+        }
+      ]
+    },
+    "stage2": {
+      "num_commands": 1,
+      "elapsed_sec_sum": 7079.0,
+      "real_sec_sum": 7079.54,
+      "max_rss_kb_max": 3735624,
+      "commands": [
+        {
+          "command": "extract_nature_nc_2024_crossdisc",
+          "elapsed_sec": 7079.0,
+          "real_sec": 7079.54,
+          "max_rss_kb": 3735624,
+          "exit_code": 0
+        }
+      ]
+    },
+    "stage3": {
+      "num_commands": 1,
+      "elapsed_sec_sum": 1277.0,
+      "real_sec_sum": 1276.46,
+      "max_rss_kb_max": 131712,
+      "commands": [
+        {
+          "command": "build_nature_nc_2024_gt_dataset",
+          "elapsed_sec": 1277.0,
+          "real_sec": 1276.46,
+          "max_rss_kb": 131712,
+          "exit_code": 0
+        }
+      ]
+    }
+  },
+  "slowest_commands": [
+    {
+      "stage": "stage2",
+      "command": "extract_nature_nc_2024_crossdisc",
+      "elapsed_sec": 7079.0,
+      "real_sec": 7079.54,
+      "max_rss_kb": 3735624,
+      "exit_code": 0
+    },
+    {
+      "stage": "stage1",
+      "command": "classify_nature_nc_2024_candidates",
+      "elapsed_sec": 2406.0,
+      "real_sec": 2405.31,
+      "max_rss_kb": 809048,
+      "exit_code": 0
+    },
+    {
+      "stage": "stage3",
+      "command": "build_nature_nc_2024_gt_dataset",
+      "elapsed_sec": 1277.0,
+      "real_sec": 1276.46,
+      "max_rss_kb": 131712,
+      "exit_code": 0
+    },
+    {
+      "stage": "stage1",
+      "command": "classify_nature_nc_2024_candidates",
+      "elapsed_sec": 896.0,
+      "real_sec": 895.91,
+      "max_rss_kb": 817708,
+      "exit_code": 0
+    },
+    {
+      "stage": "stage0",
+      "command": "prepare_nature_nc_2024_candidates",
+      "elapsed_sec": 6.0,
+      "real_sec": 5.61,
+      "max_rss_kb": 590600,
+      "exit_code": 0
+    },
+    {
+      "stage": "stage0",
+      "command": "prepare_nature_nc_2024_candidates",
+      "elapsed_sec": 6.0,
+      "real_sec": 5.79,
+      "max_rss_kb": 591420,
+      "exit_code": 0
+    },
+    {
+      "stage": "stage0",
+      "command": "prepare_nature_nc_2024_candidates",
+      "elapsed_sec": 5.0,
+      "real_sec": 5.41,
+      "max_rss_kb": 590820,
+      "exit_code": 0
+    }
+  ]
+}

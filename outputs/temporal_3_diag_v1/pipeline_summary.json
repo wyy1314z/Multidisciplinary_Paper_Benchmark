@@ -1,0 +1,16 @@
+{
+  "benchmark_raw": "outputs/temporal_3_diag_v1/benchmark_raw_2023_2024.jsonl",
+  "benchmark_classified": "outputs/temporal_3_diag_v1/benchmark_classified_2023_2024.jsonl",
+  "benchmark_extractions": "outputs/temporal_3_diag_v1/benchmark_extractions_2023_2024.jsonl",
+  "benchmark_dataset": "outputs/temporal_3_diag_v1/benchmark_dataset_2023_2024.json",
+  "validity_raw": "outputs/temporal_3_diag_v1/validity_raw_2025.jsonl",
+  "validity_classified": "outputs/temporal_3_diag_v1/validity_classified_2025.jsonl",
+  "validity_extractions": "outputs/temporal_3_diag_v1/validity_extractions_2025.jsonl",
+  "benchmark_validity": "outputs/temporal_3_diag_v1/benchmark_validity_2025.json",
+  "benchmark_validity_analysis": "outputs/temporal_3_diag_v1/benchmark_validity_analysis_2025.json",
+  "query_eval": "outputs/temporal_3_diag_v1/query_eval_2025.json",
+  "query_model_results": "outputs/temporal_3_diag_v1/query_model_results",
+  "query_eval_scores": "outputs/temporal_3_diag_v1/query_eval_scores",
+  "llm_usage_log": "outputs/temporal_3_diag_v1/usage/llm_usage.jsonl",
+  "timing_log": "outputs/temporal_3_diag_v1/timing/command_timings.jsonl"
+}

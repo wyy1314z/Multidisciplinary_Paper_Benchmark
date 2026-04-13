@@ -1,0 +1,5 @@
+stage	command	start_epoch	end_epoch	elapsed_sec	real_sec	user_sec	sys_sec	max_rss_kb	exit_code
+stage0	prepare_nature_nc_2023_candidates	1776049212	1776049216	4	4.76	7.88	0.78	500744	0
+stage1	classify_nature_nc_2023_candidates	1776049216	1776053426	4210	4209.21	89.22	7.86	814972	0
+stage2	extract_nature_nc_2023_crossdisc	1776053426	1776068298	14872	14872.28	7754.19	705.14	4365612	0
+stage3	build_nature_nc_2023_gt_dataset	1776068299	1776071289	2990	2990.74	2073.77	4.46	204288	0

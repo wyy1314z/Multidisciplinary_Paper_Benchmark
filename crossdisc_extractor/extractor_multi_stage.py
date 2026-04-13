@@ -400,13 +400,62 @@ def _extract_L1_list(levels_text: str) -> List[str]:
     return out
 
 
+def _normalize_secondary_list(primary: str, secondary_list: List[str]) -> List[str]:
+    """Deduplicate secondary disciplines and remove the primary discipline."""
+    primary_norm = (primary or "").strip()
+    out: List[str] = []
+    seen = set()
+    for item in secondary_list or []:
+        name = (item or "").strip()
+        if not name or name == primary_norm or name in seen:
+            continue
+        seen.add(name)
+        out.append(name)
+    return out
+
+
 def _extract_fields(obj: Dict[str, Any]) -> Optional[Dict[str, Any]]:
     """
-    尝试从多种字段名中抽取 title / abstract / pdf_url / main_levels / non_main_levels / primary / secondary。
+    尝试从多种字段名中抽取 title / abstract / pdf_url / main_levels /
+    non_main_levels / primary / secondary 以及时序实验所需元数据。
     """
     if not isinstance(obj, dict):
         return None
-    title = (obj.get("title") or obj.get("题目") or "").strip()
+
+    def _clean_str(*keys: str) -> str:
+        for key in keys:
+            val = obj.get(key)
+            if val is None:
+                continue
+            text = str(val).strip()
+            if text and text.lower() != "nan":
+                return text
+        return ""
+
+    def _clean_int(*keys: str) -> Optional[int]:
+        text = _clean_str(*keys)
+        if not text:
+            return None
+        try:
+            return int(float(text))
+        except Exception:
+            return None
+
+    def _clean_float(*keys: str) -> Optional[float]:
+        text = _clean_str(*keys)
+        if not text:
+            return None
+        try:
+            return float(text)
+        except Exception:
+            return None
+
+    title = (
+        obj.get("title")
+        or obj.get("display_name")
+        or obj.get("题目")
+        or ""
+    ).strip()
     abstract = (obj.get("abstract") or obj.get("摘要") or "").strip()
     pdf_url = (obj.get("pdf_url") or obj.get("pdf") or obj.get("doi") or "").strip()
 
@@ -434,6 +483,8 @@ def _extract_fields(obj: Dict[str, Any]) -> Optional[Dict[str, Any]]:
 
             secondary_list = [s.strip() for s in re.split(r"[;,，]", sec_raw) if s.strip()]
 
+    secondary_list = _normalize_secondary_list(primary, secondary_list)
+
     secondary_str = ", ".join(secondary_list)
 
     if title and abstract:
@@ -444,6 +495,16 @@ def _extract_fields(obj: Dict[str, Any]) -> Optional[Dict[str, Any]]:
             "primary": primary,
             "secondary": secondary_str,
             "secondary_list": secondary_list,
+            "journal": _clean_str("journal", "journal_name", "primary_location.source.display_name"),
+            "journal_id": _clean_str("journal_id", "primary_location.source.id"),
+            "issn_l": _clean_str("issn_l", "primary_location.source.issn_l"),
+            "source_type": _clean_str("source_type", "primary_location.source.type"),
+            "doi": _clean_str("doi"),
+            "publication_date": _clean_str("publication_date"),
+            "publication_year": _clean_int("publication_year", "year"),
+            "fwci": _clean_float("fwci"),
+            "cited_by_count": _clean_int("cited_by_count"),
+            "field": _clean_str("field", "topics.field.display_name"),
         }
     return None
 
@@ -800,6 +861,7 @@ def run_pipeline_for_item(
     primary: str,
     secondary_list: List[str],
     pdf_url: str,
+    metadata: Optional[Dict[str, Any]] = None,
     temperature_struct: float = 0.2,
     temperature_query: float = 0.2,
     temperature_hyp: float = 0.3,
@@ -837,6 +899,25 @@ def run_pipeline_for_item(
         max_tokens=max_tokens_struct,
     )
     concepts_obj = parse_concepts_output(raw_concepts)
+    meta = concepts_obj.setdefault("meta", {})
+    meta["title"] = title
+    meta["primary"] = primary
+    meta["secondary_list"] = secondary_list
+    if metadata:
+        for key in (
+            "journal",
+            "journal_id",
+            "issn_l",
+            "source_type",
+            "doi",
+            "publication_date",
+            "publication_year",
+            "fwci",
+            "cited_by_count",
+            "field",
+        ):
+            if key in metadata and metadata[key] is not None:
+                meta[key] = metadata[key]
 
     # ── Stage 1b: Second-round supplementary extraction (Direction 5) ─
     raw_concepts_supp = ""
@@ -966,9 +1047,8 @@ def run_pipeline_for_item(
     hyp = Hypothesis3Levels(**hyp_args)
 
     # 聚合为最终 Extraction
-    meta = struct.meta
     final = Extraction(
-        meta=meta,
+        meta=struct.meta,
         概念=struct.概念,
         跨学科关系=struct.跨学科关系,
         按辅助学科分类=qa.按辅助学科分类,
@@ -1029,6 +1109,18 @@ def _process_one_item(
     primary = it.get("primary", "")
     secondary = it.get("secondary", "")
     secondary_list = it.get("secondary_list", [])
+    metadata = {
+        "journal": it.get("journal", ""),
+        "journal_id": it.get("journal_id", ""),
+        "issn_l": it.get("issn_l", ""),
+        "source_type": it.get("source_type", ""),
+        "doi": it.get("doi", ""),
+        "publication_date": it.get("publication_date", ""),
+        "publication_year": it.get("publication_year"),
+        "fwci": it.get("fwci"),
+        "cited_by_count": it.get("cited_by_count"),
+        "field": it.get("field", ""),
+    }
 
     rec: Dict[str, Any] = {
         "title": title,
@@ -1038,6 +1130,7 @@ def _process_one_item(
         "secondary": secondary,
         "secondary_list": secondary_list,
         "introduction": "",
+        **metadata,
     }
 
     ok_flag = False
@@ -1048,6 +1141,7 @@ def _process_one_item(
             primary=primary,
             secondary_list=secondary_list,
             pdf_url=pdf_url,
+            metadata=metadata,
             max_tokens_struct=max_tokens_struct,
             max_tokens_query=max_tokens_query,
             max_tokens_hyp=max_tokens_hyp,

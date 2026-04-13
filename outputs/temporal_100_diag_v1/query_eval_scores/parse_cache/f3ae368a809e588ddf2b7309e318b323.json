@@ -1,0 +1,215 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "注意力机制",
+        "relation": "transforms",
+        "tail": "显微图像特征",
+        "claim": "动态特征加权实现显微图像特征增强"
+      },
+      {
+        "step": 2,
+        "head": "显微图像特征",
+        "relation": "enables",
+        "tail": "自适应调整感受野",
+        "claim": "增强的特征支持感受野自适应调整"
+      },
+      {
+        "step": 3,
+        "head": "自适应调整感受野",
+        "relation": "matches",
+        "tail": "不同尺度生物结构",
+        "claim": "可变感受野实现多尺度结构匹配"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "物理先验知识",
+        "relation": "embeds",
+        "tail": "光学传播模型",
+        "claim": "物理约束嵌入损失函数设计"
+      },
+      {
+        "step": 2,
+        "head": "光学传播模型",
+        "relation": "regularizes",
+        "tail": "梯度下降",
+        "claim": "正则化优化过程抑制噪声干扰"
+      },
+      {
+        "step": 3,
+        "head": "梯度下降正则化",
+        "relation": "improves",
+        "tail": "分割边界鲁棒性",
+        "claim": "噪声抑制提升模型抗伪影能力"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "教师网络",
+        "relation": "transfers",
+        "tail": "知识迁移",
+        "claim": "跨模态特征知识提取"
+      },
+      {
+        "step": 2,
+        "head": "知识迁移",
+        "relation": "aligns",
+        "tail": "细胞形态特征空间",
+        "claim": "对比学习实现模态特征对齐"
+      },
+      {
+        "step": 3,
+        "head": "特征空间对齐",
+        "relation": "enables",
+        "tail": "统一表征学习",
+        "claim": "对齐特征空间支持多模态联合训练"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "细胞接触网络",
+        "relation": "models",
+        "tail": "拓扑关系",
+        "claim": "图神经网络构建细胞拓扑结构"
+      },
+      {
+        "step": 2,
+        "head": "拓扑关系建模",
+        "relation": "learns",
+        "tail": "边界语义关联",
+        "claim": "图卷积层学习细胞边界特征"
+      },
+      {
+        "step": 3,
+        "head": "边界语义关联",
+        "relation": "improves",
+        "tail": "实例分割效果",
+        "claim": "拓扑约束提升密集结构分割精度"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "细胞周期相位",
+        "relation": "guides",
+        "tail": "动态规划匹配",
+        "claim": "生物学周期约束轨迹优化"
+      },
+      {
+        "step": 2,
+        "head": "动态规划匹配",
+        "relation": "maintains",
+        "tail": "时序一致性",
+        "claim": "跨帧匹配保持细胞谱系连贯"
+      },
+      {
+        "step": 3,
+        "head": "时序一致性",
+        "relation": "enables",
+        "tail": "有丝分裂追踪",
+        "claim": "时间约束实现分裂动态解析"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "病理表型",
+        "relation": "associates",
+        "tail": "弱监督定位",
+        "claim": "诊断标签指导特征定位"
+      },
+      {
+        "step": 2,
+        "head": "弱监督定位",
+        "relation": "builds",
+        "tail": "概念嵌入层",
+        "claim": "嵌入层建立形态-标签关联"
+      },
+      {
+        "step": 3,
+        "head": "概念嵌入关联",
+        "relation": "identifies",
+        "tail": "病变区域",
+        "claim": "知识引导实现病变自动识别"
+      }
+    ]
+  ],
+  "L3": [
+    [
+      {
+        "step": 1,
+        "head": "分割轮廓",
+        "relation": "embeds",
+        "tail": "物理方程",
+        "claim": "几何特征耦合生物物理模型"
+      },
+      {
+        "step": 2,
+        "head": "物理方程嵌入",
+        "relation": "computes",
+        "tail": "细胞张力",
+        "claim": "有限元分析转化力学参数"
+      },
+      {
+        "step": 3,
+        "head": "细胞力学参数",
+        "relation": "quantifies",
+        "tail": "生物力学指标",
+        "claim": "可微分计算实现力学估计"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "细胞器掩码",
+        "relation": "defines",
+        "tail": "空间关联",
+        "claim": "亚细胞区室特征定位"
+      },
+      {
+        "step": 2,
+        "head": "空间关联分析",
+        "relation": "models",
+        "tail": "反应扩散方程",
+        "claim": "生化反应动力学建模"
+      },
+      {
+        "step": 3,
+        "head": "反应扩散模拟",
+        "relation": "reveals",
+        "tail": "功能异质性",
+        "claim": "空间建模解析区室功能差异"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "模型压缩",
+        "relation": "enables",
+        "tail": "实时处理",
+        "claim": "量子化剪枝降低计算负载"
+      },
+      {
+        "step": 2,
+        "head": "实时处理",
+        "relation": "supports",
+        "tail": "高速成像",
+        "claim": "低延迟推断匹配采集速度"
+      },
+      {
+        "step": 3,
+        "head": "高速成像",
+        "relation": "achieves",
+        "tail": "4D重建",
+        "claim": "时空对齐实现活体动态建模"
+      }
+    ]
+  ]
+}

@@ -5,6 +5,7 @@ from crossdisc_extractor.benchmark.evaluate_benchmark import (
     _path_hash,
     _tokenize_for_bridging,
     normalize_paths_structure,
+    parse_llm_score,
 )
 
 
@@ -126,3 +127,31 @@ class TestNormalizePathsStructure:
 
     def test_empty_returns_empty(self):
         assert normalize_paths_structure([]) == []
+
+
+class TestParseLlmScore:
+    def test_parse_default_scores(self):
+        resp = '{"innovation_score": 7.5, "feasibility_score": 6.0, "scientificity_score": 8.0}'
+        parsed = parse_llm_score(resp)
+        assert parsed["innovation"] == 7.5
+        assert parsed["feasibility"] == 6.0
+        assert parsed["scientificity"] == 8.0
+
+    def test_parse_feasibility_subscores(self):
+        resp = (
+            '{"data_feasibility": 7.0, "method_feasibility": 6.5, '
+            '"resource_feasibility": 5.0, "validation_readiness": 8.0}'
+        )
+        parsed = parse_llm_score(
+            resp,
+            fields=[
+                "data_feasibility",
+                "method_feasibility",
+                "resource_feasibility",
+                "validation_readiness",
+            ],
+        )
+        assert parsed["data_feasibility"] == 7.0
+        assert parsed["method_feasibility"] == 6.5
+        assert parsed["resource_feasibility"] == 5.0
+        assert parsed["validation_readiness"] == 8.0

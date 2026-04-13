@@ -1,0 +1,4 @@
+stage	command	start_epoch	end_epoch	elapsed_sec	real_sec	user_sec	sys_sec	max_rss_kb	exit_code
+stage0	prepare_nature_nc_2024_candidates_before_exclusion	1776049222	1776049228	6	6.50	9.84	0.61	593996	0
+stage0	exclude_previous_and_limit_nature_nc_2024	1776049229	1776049229	0	0.09	0.07	0.02	18816	0
+stage1	classify_nature_nc_2024_candidates	1776049229	1776053279	4050	4050.41	86.20	6.95	813552	0

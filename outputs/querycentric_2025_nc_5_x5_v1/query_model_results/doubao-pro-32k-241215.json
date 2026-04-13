@@ -1,0 +1,24 @@
+[
+  {
+    "paper_id": "f4465d25f7c9",
+    "method_name": "doubao-pro-32k-241215-L1",
+    "prompt_level": "L1",
+    "query": "如何通过单原子催化剂设计突破类芬顿催化中活性与稳定性的权衡？",
+    "free_text_hypotheses": [
+      "[ERROR] LLM 网关错误 (HTTP 503): Error code: 503 - {'error': {'message': '当前分组 企业用户 下对于模型 doubao-pro-32k-241215 计费模式 [按量计费] 无可用渠道 (request id: 2026041316354264475729904653209)', 'type': 'shell_api_error'}}"
+    ],
+    "error": "LLM 网关错误 (HTTP 503): Error code: 503 - {'error': {'message': '当前分组 企业用户 下对于模型 doubao-pro-32k-241215 计费模式 [按量计费] 无可用渠道 (request id: 2026041316354264475729904653209)', 'type': 'shell_api_error'}}",
+    "metadata": {
+      "journal": "Nature Communications",
+      "journal_id": "https://openalex.org/S64187185",
+      "issn_l": "2041-1723",
+      "source_type": "journal",
+      "doi": "https://doi.org/10.1038/s41467-024-55622-y",
+      "publication_date": "2025-01-02",
+      "publication_year": 2025,
+      "fwci": 93.87822721,
+      "cited_by_count": 96,
+      "field": "Electrocatalysts for Energy Conversion"
+    }
+  }
+]

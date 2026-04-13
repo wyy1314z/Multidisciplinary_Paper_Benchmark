@@ -1,0 +1,148 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "适应措施",
+        "relation": "enables",
+        "tail": "区域气候适应性作物品种推广、灌溉技术改进和耕作制度调整",
+        "claim": "适应措施使得具体技术应用成为可能"
+      },
+      {
+        "step": 2,
+        "head": "区域气候适应性作物品种推广、灌溉技术改进和耕作制度调整",
+        "relation": "collectively_causes",
+        "tail": "生产系统的稳定性提升",
+        "claim": "技术组合应用提升农业系统稳定性"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "气候适应性作物品种引入",
+        "relation": "enhances",
+        "tail": "作物高温和干旱耐受性",
+        "claim": "品种改良增强作物抗逆性"
+      },
+      {
+        "step": 2,
+        "head": "作物高温和干旱耐受性",
+        "relation": "reduces",
+        "tail": "极端气候事件产量波动",
+        "claim": "抗逆性提升降低产量波动风险"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "精准灌溉与水资源管理",
+        "relation": "optimizes",
+        "tail": "水分利用效率",
+        "claim": "技术应用提高水资源效率"
+      },
+      {
+        "step": 2,
+        "head": "水分利用效率",
+        "relation": "alleviates",
+        "tail": "农业干旱压力",
+        "claim": "效率优化缓解干旱胁迫"
+      },
+      {
+        "step": 3,
+        "head": "农业干旱压力",
+        "relation": "maintains",
+        "tail": "作物生长周期稳定性",
+        "claim": "干旱缓解维持作物生长周期"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "农业生产制度动态调整",
+        "relation": "establishes",
+        "tail": "气候风险时间分散机制",
+        "claim": "制度调整构建风险分散体系"
+      },
+      {
+        "step": 2,
+        "head": "气候风险时间分散机制",
+        "relation": "enhances",
+        "tail": "农业系统适应能力",
+        "claim": "风险分散提升系统适应性"
+      }
+    ]
+  ],
+  "L3": [
+    [
+      {
+        "step": 1,
+        "head": "转基因耐热小麦品种引入",
+        "relation": "upregulates",
+        "tail": "抗氧化酶系统",
+        "claim": "基因改良激活抗氧化机制"
+      },
+      {
+        "step": 2,
+        "head": "抗氧化酶系统",
+        "relation": "reduces",
+        "tail": "光合作用抑制效应",
+        "claim": "酶系统缓解光合抑制"
+      },
+      {
+        "step": 3,
+        "head": "光合作用抑制效应",
+        "relation": "maintains",
+        "tail": "籽粒灌浆效率",
+        "claim": "光合稳定维持产量形成"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "滴灌与遥感监测结合",
+        "relation": "creates",
+        "tail": "实时土壤水分反馈机制",
+        "claim": "技术整合构建监测系统"
+      },
+      {
+        "step": 2,
+        "head": "实时土壤水分反馈机制",
+        "relation": "reduces",
+        "tail": "水资源浪费",
+        "claim": "精准灌溉降低水耗"
+      },
+      {
+        "step": 3,
+        "head": "水资源浪费",
+        "relation": "improves",
+        "tail": "玉米产量稳定性",
+        "claim": "节水措施稳定作物产量"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "气候预测模型播种期优化",
+        "relation": "shifts",
+        "tail": "关键生育期与极端气候窗口错开",
+        "claim": "时序调整规避气候风险"
+      },
+      {
+        "step": 2,
+        "head": "关键生育期与极端气候窗口错开",
+        "relation": "increases",
+        "tail": "大豆单产",
+        "claim": "避害机制提升单产水平"
+      },
+      {
+        "step": 3,
+        "head": "大豆单产",
+        "relation": "reduces",
+        "tail": "年际波动幅度",
+        "claim": "产量提升稳定年际波动"
+      }
+    ]
+  ]
+}

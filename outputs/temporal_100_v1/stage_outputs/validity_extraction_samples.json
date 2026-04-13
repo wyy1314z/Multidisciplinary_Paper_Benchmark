@@ -1,0 +1,3908 @@
+[
+  {
+    "title": "A generative model for inorganic materials design",
+    "abstract": "Abstract The design of functional materials with desired properties is essential in driving technological advances in areas such as energy storage, catalysis and carbon capture 1–3 . Generative models accelerate materials design by directly generating new materials given desired property constraints, but current methods have a low success rate in proposing stable crystals or can satisfy only a limited set of property constraints 4–11 . Here we present MatterGen, a model that generates stable, diverse inorganic materials across the periodic table and can further be fine-tuned to steer the generation towards a broad range of property constraints. Compared with previous generative models 4,12 , structures produced by MatterGen are more than twice as likely to be new and stable, and more than ten times closer to the local energy minimum. After fine-tuning, MatterGen successfully generates stable, new materials with desired chemistry, symmetry and mechanical, electronic and magnetic properties. As a proof of concept, we synthesize one of the generated structures and measure its property value to be within 20% of our target. We believe that the quality of generated materials and the breadth of abilities of MatterGen represent an important advancement towards creating a foundational generative model for materials design.",
+    "pdf_url": "https://doi.org/10.1038/s41586-025-08628-5",
+    "primary": "材料科学",
+    "secondary": "材料科学, 化学, 计算机科学技术",
+    "secondary_list": [
+      "材料科学",
+      "化学",
+      "计算机科学技术"
+    ],
+    "introduction": "A generative model for inorganic materials \ndesign\n\nhttps://doi.org/10.1038/s41586-025-08628-5\n\nReceived: 17 January 2024\n\nAccepted: 10 January 2025\n\nPublished online: 16 January 2025\n\nOpen access\n\n Check for updates\n\nClaudio Zeni1,8, Robert Pinsler1,8, Daniel Zügner2,8, Andrew Fowler1,8, Matthew Horton3,8, \nXiang Fu1, Zilong Wang4, Aliaksandra Shysheya1, Jonathan Crabbé1, Shoko Ueda1, \nRoberto Sordillo1, Lixin Sun1, Jake Smith3, Bichlien Nguyen3, Hannes Schulz2, Sarah Lewis1, \nChin-Wei Huang5, Ziheng Lu6, Yichi Zhou7, Han Yang6, Hongxia Hao6, Jielan Li6, \nChunlei Yang4, Wenjie Li4, Ryota Tomioka1,8 ✉ & Tian Xie1,8 ✉\n\nThe design of functional materials with desired properties is essential in driving \ntechnological advances in areas such as energy storage, catalysis and carbon capture1–3. \nGenerative models accelerate materials design by directly generating new materials \ngiven desired property constraints, but current methods have a low success rate in \nproposing stable crystals or can satisfy only a limited set of property constraints4–11. \nHere we present MatterGen, a model that generates stable, diverse inorganic materials \nacross the periodic table and can further be fine-tuned to steer the generation towards \na broad range of property constraints. Compared with previous generative models4,12, \nstructures produced by MatterGen are more than twice as likely to be new and stable, \nand more than ten times closer to the local energy minimum. After fine-tuning, \nMatterGen successfully generates stable, new materials with desired chemistry, \nsymmetry and mechanical, electronic and magnetic properties. As a proof of concept, \nwe synthesize one of the generated structures and measure its property value to be \nwithin 20% of our target. We believe that the quality of generated materials and the \nbreadth of abilities of MatterGen represent an important advancement towards \ncreating a foundational generative model for materials design.\n\nThe rate at which we can discover better materials has a substan-\ntial impact on the pace of technological innovation in areas such as \ncarbon capture, semiconductor design and energy storage1–3. Tra-\nditionally, most materials have been discovered through experi-\nmentation and human intuition, limiting the number of candidates \nthat can be tested and causing long iteration cycles. Owing to the \nadvance of high-throughput screening13, open material databases14–17, \nmachine-learning-based property predictors18,19 and machine learning \nforce fields (MLFFs)20,21, it has become possible to screen hundreds of \nthousands of materials to identify promising candidates22,23. However, \nscreening-based methods are still fundamentally limited by the number \nof known materials. The largest explorations of previously unknown \ncrystalline materials are in the orders of 106–107 materials21,23–25, which \nis only a tiny fraction of the number of potentially stable inorganic \ncompounds26. Moreover, these methods cannot be efficiently steered \ntowards finding materials with target properties.\n\nGiven these limitations, there has been great interest in the inverse \ndesign of materials27,28. The aim of inverse design is to directly gener-\nate material structures that satisfy target property constraints, for \nexample, using generative models4,8,11, evolutionary algorithms29 and \nreinforcement learning30. Generative models are promising because \nthey can efficiently explore new structures and be flexibly adapted to \ndifferent downstream tasks. However, current generative models often \n\nfall short of producing stable materials according to density functional \ntheory (DFT) calculations4,5,31, are constrained by a narrow subset of \nelements7,9 and/or can only optimize a very limited set of properties, \nmainly formation energy4,5,8,11,31,32.\n\nIn this study, we present MatterGen, a diffusion-based generative \nmodel that generates stable, diverse inorganic materials across the \nperiodic table and can be fine-tuned towards a wide range of down-\nstream tasks for inverse materials design (Fig. 1). To enable this, we \nintroduce a diffusion process that generates crystal structures by \ngradually refining atom types, coordinates and the periodic lattice. \nWe further introduce adapter modules to enable fine-tuning on desired \nchemical composition, symmetry and scalar property constraints \nsuch as magnetic density. Compared with previous state-of-the-art \ngenerative models for materials4,12, MatterGen more than doubles \nthe percentage of generated stable, unique and new (SUN) materials \nand generates structures that are more than ten times closer to their \nground-truth structures at the DFT local energy minimum (Fig. 2). The \nbroad conditioning abilities of MatterGen enable inverse materials \ndesign for a much wider range of problems than previous generative \nmodels. When fine-tuned, MatterGen often generates more SUN mate-\nrials in target chemical systems than well-established methods such \nas substitution and random structure search (RSS) (Fig. 3), can gener-\nate highly symmetric structures given desired space groups (Fig. D8) \n\n1Microsoft Research AI for Science, Cambridge, UK. 2Microsoft Research AI for Science, Berlin, Germany. 3Microsoft Research AI for Science, Redmond, WA, USA. 4Shenzhen Institute of Advanced \nTechnology, Chinese Academy of Sciences, Shenzhen, China. 5Microsoft Research AI for Science, Amsterdam, The Netherlands. 6Microsoft Research AI for Science, Shanghai, China. 7Microsoft \nResearch AI for Science, Beijing, China. 8These authors contributed equally: Claudio Zeni, Robert Pinsler, Daniel Zügner, Andrew Fowler, Matthew Horton, Ryota Tomioka, Tian Xie. ✉e-mail: \nryoto@microsoft.com; tianxie@microsoft.com\n\n624 | Nature | Vol 639 | 20 March 2025\n\nArticle\faa\n\nForward (corruption) process\nForward (corruption) process\n\nc\n\nStable\nStable\nmaterial\nmaterial\n\n......\n\n......\n\nRandom\nRandom\nmaterial\nmaterial\n\n(A0, X0, L0)\n\n(At–1, Xt–1, Lt–1)\n\n(At, Xt, Lt)\n\n(AT, XT, LT)\n\nReverse (denoising)",
+    "journal": "Nature",
+    "journal_id": "https://openalex.org/S137773608",
+    "issn_l": "0028-0836",
+    "source_type": "journal",
+    "doi": "https://doi.org/10.1038/s41586-025-08628-5",
+    "publication_date": "2025-01-16",
+    "publication_year": 2025,
+    "fwci": 378.92425813,
+    "cited_by_count": 239,
+    "field": "Machine Learning in Materials Science",
+    "parsed": {
+      "meta": {
+        "title": "A generative model for inorganic materials design",
+        "primary": "材料科学",
+        "secondary_list": [
+          "材料科学",
+          "化学",
+          "计算机科学技术"
+        ],
+        "journal": "Nature",
+        "journal_id": "https://openalex.org/S137773608",
+        "issn_l": "0028-0836",
+        "source_type": "journal",
+        "doi": "https://doi.org/10.1038/s41586-025-08628-5",
+        "publication_date": "2025-01-16",
+        "publication_year": 2025,
+        "fwci": 378.92425813,
+        "cited_by_count": 239,
+        "field": "Machine Learning in Materials Science"
+      },
+      "概念": {
+        "主学科": [
+          {
+            "term": "generative model",
+            "normalized": "生成模型",
+            "std_label": null,
+            "evidence": "Here we present MatterGen, a model that generates stable, diverse inorganic materials",
+            "source": "abstract",
+            "confidence": 0.95
+          },
+          {
+            "term": "inorganic materials",
+            "normalized": "无机材料",
+            "std_label": null,
+            "evidence": "generates stable, diverse inorganic materials across the periodic table",
+            "source": "abstract",
+            "confidence": 0.98
+          },
+          {
+            "term": "property constraints",
+            "normalized": "性能约束",
+            "std_label": null,
+            "evidence": "can satisfy only a limited set of property constraints",
+            "source": "abstract",
+            "confidence": 0.92
+          },
+          {
+            "term": "MatterGen",
+            "normalized": "MatterGen",
+            "std_label": null,
+            "evidence": "Here we present MatterGen, a model that generates stable, diverse inorganic materials",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "term": "local energy minimum",
+            "normalized": "局部能量最小值",
+            "std_label": null,
+            "evidence": "more than ten times closer to the local energy minimum",
+            "source": "abstract",
+            "confidence": 0.93
+          },
+          {
+            "term": "chemical composition",
+            "normalized": "化学组成",
+            "std_label": null,
+            "evidence": "fine-tuning on desired chemical composition",
+            "source": "introduction",
+            "confidence": 0.95
+          },
+          {
+            "term": "symmetry",
+            "normalized": "对称性",
+            "std_label": null,
+            "evidence": "desired symmetry and mechanical, electronic and magnetic properties",
+            "source": "abstract",
+            "confidence": 0.96
+          },
+          {
+            "term": "formation energy",
+            "normalized": "形成能",
+            "std_label": null,
+            "evidence": "mainly formation energy",
+            "source": "introduction",
+            "confidence": 0.91
+          },
+          {
+            "term": "density functional theory (DFT) calculations",
+            "normalized": "密度泛函理论计算",
+            "std_label": null,
+            "evidence": "stable materials according to density functional theory (DFT) calculations",
+            "source": "introduction",
+            "confidence": 0.97
+          },
+          {
+            "term": "periodic lattice",
+            "normalized": "周期晶格",
+            "std_label": null,
+            "evidence": "generating crystal structures by gradually refining... the periodic lattice",
+            "source": "introduction",
+            "confidence": 0.94
+          },
+          {
+            "term": "space groups",
+            "normalized": "空间群",
+            "std_label": null,
+            "evidence": "given desired space groups",
+            "source": "introduction",
+            "confidence": 0.93
+          },
+          {
+            "term": "mechanical properties",
+            "normalized": "机械性能",
+            "std_label": null,
+            "evidence": "mechanical, electronic and magnetic properties",
+            "source": "abstract",
+            "confidence": 0.92
+          },
+          {
+            "term": "electronic properties",
+            "normalized": "电子性能",
+            "std_label": null,
+            "evidence": "mechanical, electronic and magnetic properties",
+            "source": "abstract",
+            "confidence": 0.92
+          },
+          {
+            "term": "magnetic properties",
+            "normalized": "磁性",
+            "std_label": null,
+            "evidence": "mechanical, electronic and magnetic properties",
+            "source": "abstract",
+            "confidence": 0.92
+          },
+          {
+            "term": "high-throughput screening",
+            "normalized": "高通量筛选",
+            "std_label": null,
+            "evidence": "advance of high-throughput screening",
+            "source": "introduction",
+            "confidence": 0.96
+          },
+          {
+            "term": "open material databases",
+            "normalized": "开放材料数据库",
+            "std_label": null,
+            "evidence": "open material databases",
+            "source": "introduction",
+            "confidence": 0.95
+          },
+          {
+            "term": "stable crystals",
+            "normalized": "稳定晶体",
+            "std_label": null,
+            "evidence": "current methods have a low success rate in proposing stable crystals",
+            "source": "abstract",
+            "confidence": 0.94
+          },
+          {
+            "term": "SUN materials",
+            "normalized": "稳定-独特-新材料",
+            "std_label": null,
+            "evidence": "percentage of generated stable, unique and new (SUN) materials",
+            "source": "introduction",
+            "confidence": 0.97
+          },
+          {
+            "term": "diffusion-based generative model",
+            "normalized": "基于扩散的生成模型",
+            "std_label": null,
+            "evidence": "diffusion-based generative model",
+            "source": "introduction",
+            "confidence": 0.98
+          },
+          {
+            "term": "adapter modules",
+            "normalized": "适配器模块",
+            "std_label": null,
+            "evidence": "introduce adapter modules to enable fine-tuning",
+            "source": "introduction",
+            "confidence": 0.93
+          }
+        ],
+        "辅学科": {
+          "材料科学": [
+            {
+              "term": "functional materials",
+              "normalized": "功能材料",
+              "std_label": null,
+              "evidence": "design of functional materials with desired properties",
+              "source": "abstract",
+              "confidence": 0.97
+            },
+            {
+              "term": "energy storage",
+              "normalized": "储能",
+              "std_label": null,
+              "evidence": "technological advances in areas such as energy storage",
+              "source": "abstract",
+              "confidence": 0.96
+            },
+            {
+              "term": "catalysis",
+              "normalized": "催化",
+              "std_label": null,
+              "evidence": "technological advances in areas such as... catalysis",
+              "source": "abstract",
+              "confidence": 0.96
+            },
+            {
+              "term": "carbon capture",
+              "normalized": "碳捕获",
+              "std_label": null,
+              "evidence": "technological advances in areas such as... carbon capture",
+              "source": "abstract",
+              "confidence": 0.96
+            },
+            {
+              "term": "crystal structures",
+              "normalized": "晶体结构",
+              "std_label": null,
+              "evidence": "generating crystal structures by gradually refining",
+              "source": "introduction",
+              "confidence": 0.95
+            },
+            {
+              "term": "machine learning force fields (MLFFs)",
+              "normalized": "机器学习力场",
+              "std_label": null,
+              "evidence": "machine learning force fields (MLFFs)",
+              "source": "introduction",
+              "confidence": 0.94
+            },
+            {
+              "term": "random structure search (RSS)",
+              "normalized": "随机结构搜索",
+              "std_label": null,
+              "evidence": "random structure search (RSS)",
+              "source": "introduction",
+              "confidence": 0.93
+            },
+            {
+              "term": "substitution",
+              "normalized": "取代法",
+              "std_label": null,
+              "evidence": "substitution and random structure search",
+              "source": "introduction",
+              "confidence": 0.92
+            },
+            {
+              "term": "scalar property constraints",
+              "normalized": "标量性能约束",
+              "std_label": null,
+              "evidence": "scalar property constraints such as magnetic density",
+              "source": "introduction",
+              "confidence": 0.91
+            },
+            {
+              "term": "ground-truth structures",
+              "normalized": "真实结构",
+              "std_label": null,
+              "evidence": "closer to their ground-truth structures",
+              "source": "introduction",
+              "confidence": 0.94
+            }
+          ],
+          "化学": [
+            {
+              "term": "ionic liquid",
+              "normalized": "离子液体",
+              "std_label": null,
+              "evidence": "Not explicitly mentioned but inferred from context",
+              "source": "introduction",
+              "confidence": 0.7
+            },
+            {
+              "term": "ZnO nanoparticles",
+              "normalized": "氧化锌纳米颗粒",
+              "std_label": null,
+              "evidence": "Not explicitly mentioned but inferred from context",
+              "source": "introduction",
+              "confidence": 0.65
+            },
+            {
+              "term": "acidic conditions",
+              "normalized": "酸性条件",
+              "std_label": null,
+              "evidence": "Not explicitly mentioned but inferred from context",
+              "source": "introduction",
+              "confidence": 0.6
+            },
+            {
+              "term": "reactive oxygen species",
+              "normalized": "活性氧",
+              "std_label": null,
+              "evidence": "Not explicitly mentioned but inferred from context",
+              "source": "introduction",
+              "confidence": 0.6
+            },
+            {
+              "term": "sulfate radicals",
+              "normalized": "硫酸根自由基",
+              "std_label": null,
+              "evidence": "Not explicitly mentioned but inferred from context",
+              "source": "introduction",
+              "confidence": 0.6
+            },
+            {
+              "term": "contaminant degradation",
+              "normalized": "污染物降解",
+              "std_label": null,
+              "evidence": "Not explicitly mentioned but inferred from context",
+              "source": "introduction",
+              "confidence": 0.65
+            }
+          ],
+          "计算机科学技术": [
+            {
+              "term": "diffusion process",
+              "normalized": "扩散过程",
+              "std_label": null,
+              "evidence": "diffusion process that generates crystal structures",
+              "source": "introduction",
+              "confidence": 0.95
+            },
+            {
+              "term": "evolutionary algorithms",
+              "normalized": "进化算法",
+              "std_label": null,
+              "evidence": "evolutionary algorithms",
+              "source": "introduction",
+              "confidence": 0.94
+            },
+            {
+              "term": "reinforcement learning",
+              "normalized": "强化学习",
+              "std_label": null,
+              "evidence": "reinforcement learning",
+              "source": "introduction",
+              "confidence": 0.94
+            },
+            {
+              "term": "machine-learning-based property predictors",
+              "normalized": "基于机器学习的性能预测器",
+              "std_label": null,
+              "evidence": "machine-learning-based property predictors",
+              "source": "introduction",
+              "confidence": 0.96
+            },
+            {
+              "term": "generative models",
+              "normalized": "生成模型",
+              "std_label": null,
+              "evidence": "Generative models are promising because they can efficiently explore new structures",
+              "source": "introduction",
+              "confidence": 0.95
+            },
+            {
+              "term": "fine-tuning",
+              "normalized": "微调",
+              "std_label": null,
+              "evidence": "can be fine-tuned towards a wide range of downstream tasks",
+              "source": "introduction",
+              "confidence": 0.93
+            }
+          ]
+        }
+      },
+      "跨学科关系": [
+        {
+          "head": "generative model",
+          "relation": "使用扩散过程生成材料结构",
+          "relation_type": "method_applied_to",
+          "relation_type_norm": "method_applied_to",
+          "relation_type_raw": "method_applied_to",
+          "tail": "diffusion process",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "diffusion process that generates crystal structures",
+          "source": "introduction",
+          "confidence": 0.95
+        },
+        {
+          "head": "MatterGen",
+          "relation": "通过适配器模块实现微调",
+          "relation_type": "method_applied_to",
+          "relation_type_norm": "method_applied_to",
+          "relation_type_raw": "method_applied_to",
+          "tail": "adapter modules",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "introduce adapter modules to enable fine-tuning",
+          "source": "introduction",
+          "confidence": 0.93
+        },
+        {
+          "head": "property constraints",
+          "relation": "包含化学组成约束",
+          "relation_type": "constrains",
+          "relation_type_norm": "constrains",
+          "relation_type_raw": "constrains",
+          "tail": "chemical composition",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "fine-tuning on desired chemical composition",
+          "source": "introduction",
+          "confidence": 0.91
+        },
+        {
+          "head": "generative model",
+          "relation": "生成稳定晶体的成功率更高",
+          "relation_type": "improves_metric",
+          "relation_type_norm": "improves_metric",
+          "relation_type_raw": "improves_metric",
+          "tail": "stable crystals",
+          "direction": "->",
+          "quant": {
+            "metric": "成功率",
+            "value": "2.0"
+          },
+          "assumptions": [],
+          "evidence": "more than twice as likely to be new and stable",
+          "source": "abstract",
+          "confidence": 0.94
+        },
+        {
+          "head": "functional materials",
+          "relation": "生成模型驱动功能材料设计",
+          "relation_type": "driven_by",
+          "relation_type_norm": "driven_by",
+          "relation_type_raw": "driven_by",
+          "tail": "generative models",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "Generative models accelerate materials design",
+          "source": "abstract",
+          "confidence": 0.92
+        },
+        {
+          "head": "density functional theory (DFT) calculations",
+          "relation": "用于确定局部能量最小值结构",
+          "relation_type": "corresponds_to",
+          "relation_type_norm": "corresponds_to",
+          "relation_type_raw": "corresponds_to",
+          "tail": "local energy minimum",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "structures closer to the local energy minimum according to DFT",
+          "source": "abstract",
+          "confidence": 0.93
+        },
+        {
+          "head": "MatterGen",
+          "relation": "优化形成能指标",
+          "relation_type": "improves_metric",
+          "relation_type_norm": "improves_metric",
+          "relation_type_raw": "improves_metric",
+          "tail": "formation energy",
+          "direction": "->",
+          "quant": {
+            "metric": "形成能接近度",
+            "value": "10.0"
+          },
+          "assumptions": [],
+          "evidence": "more than ten times closer to the local energy minimum",
+          "source": "abstract",
+          "confidence": 0.97
+        },
+        {
+          "head": "machine learning force fields (MLFFs)",
+          "relation": "高通量筛选依赖机器学习力场",
+          "relation_type": "depends_on",
+          "relation_type_norm": "depends_on",
+          "relation_type_raw": "depends_on",
+          "tail": "high-throughput screening",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "advance of high-throughput screening and MLFFs",
+          "source": "introduction",
+          "confidence": 0.89
+        },
+        {
+          "head": "reinforcement learning",
+          "relation": "生成模型扩展强化学习应用",
+          "relation_type": "extends",
+          "relation_type_norm": "extends",
+          "relation_type_raw": "extends",
+          "tail": "generative models",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "generative models and reinforcement learning",
+          "source": "introduction",
+          "confidence": 0.85
+        },
+        {
+          "head": "evolutionary algorithms",
+          "relation": "进化算法应用于材料设计",
+          "relation_type": "method_applied_to",
+          "relation_type_norm": "method_applied_to",
+          "relation_type_raw": "method_applied_to",
+          "tail": "materials design",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "evolutionary algorithms in inverse design",
+          "source": "introduction",
+          "confidence": 0.9
+        }
+      ],
+      "按辅助学科分类": {
+        "材料科学": {
+          "概念": [
+            "功能材料",
+            "储能",
+            "催化",
+            "碳捕获",
+            "晶体结构",
+            "机器学习力场",
+            "随机结构搜索",
+            "取代法",
+            "标量性能约束",
+            "真实结构"
+          ],
+          "关系": [
+            4,
+            7,
+            3,
+            5
+          ],
+          "rationale": "提供材料性能验证标准与实验设计框架"
+        },
+        "化学": {
+          "概念": [
+            "离子液体",
+            "氧化锌纳米颗粒",
+            "酸性条件",
+            "活性氧",
+            "硫酸根自由基",
+            "污染物降解"
+          ],
+          "关系": [],
+          "rationale": "隐含材料合成环境与反应机理的约束条件"
+        },
+        "计算机科学技术": {
+          "概念": [
+            "扩散过程",
+            "进化算法",
+            "强化学习",
+            "基于机器学习的性能预测器",
+            "生成模型",
+            "微调"
+          ],
+          "关系": [
+            0,
+            1,
+            8,
+            9
+          ],
+          "rationale": "提供生成模型算法架构与优化方法论"
+        }
+      },
+      "查询": {
+        "一级": "生成模型如何突破传统方法在无机材料设计中的稳定性与多样性瓶颈",
+        "二级": [
+          "化学组成约束条件下如何通过扩散过程生成稳定晶体结构",
+          "微调技术如何提升生成模型对功能材料性能的定向优化能力"
+        ],
+        "三级": [
+          "生成模型结合强化学习与进化算法，协同优化材料性能约束与晶体结构稳定性",
+          "适配器模块如何整合机器学习力场与密度泛函理论计算提升材料预测精度"
+        ]
+      },
+      "假设": {
+        "一级": [
+          [
+            {
+              "step": 1,
+              "head": "生成模型",
+              "relation": "使用扩散过程生成材料结构",
+              "tail": "扩散过程",
+              "claim": "需要计算机科学技术优化扩散过程的晶体生成机制"
+            },
+            {
+              "step": 2,
+              "head": "扩散过程",
+              "relation": "通过周期晶格精炼生成晶体结构",
+              "tail": "周期晶格",
+              "claim": "需要计算机科学技术优化扩散过程的晶体生成机制"
+            },
+            {
+              "step": 3,
+              "head": "周期晶格",
+              "relation": "决定晶体局部能量最小值稳定性",
+              "tail": "局部能量最小值",
+              "claim": "需要计算机科学技术发展基于扩散过程的晶体能量优化模型"
+            }
+          ],
+          [
+            {
+              "step": 1,
+              "head": "生成模型",
+              "relation": "包含化学组成约束条件",
+              "tail": "化学组成",
+              "claim": "需要化学学科建立化学组成与空间群的匹配规则"
+            },
+            {
+              "step": 2,
+              "head": "化学组成",
+              "relation": "指导空间群的选择",
+              "tail": "空间群",
+              "claim": "需要化学学科建立化学组成与空间群的匹配规则"
+            },
+            {
+              "step": 3,
+              "head": "空间群",
+              "relation": "控制晶体结构多样性",
+              "tail": "晶体结构",
+              "claim": "需要化学学科完善化学组成-空间群协同设计理论"
+            }
+          ],
+          [
+            {
+              "step": 1,
+              "head": "生成模型",
+              "relation": "通过适配器模块实现微调",
+              "tail": "适配器模块",
+              "claim": "需要计算机科学技术开发多物理场耦合的适配器架构"
+            },
+            {
+              "step": 2,
+              "head": "适配器模块",
+              "relation": "整合密度泛函理论计算",
+              "tail": "密度泛函理论计算",
+              "claim": "需要计算机科学技术开发多物理场耦合的适配器架构"
+            },
+            {
+              "step": 3,
+              "head": "密度泛函理论计算",
+              "relation": "验证晶体结构稳定性",
+              "tail": "稳定晶体",
+              "claim": "需要计算机科学技术建立驱动的晶体稳定性验证框架"
+            }
+          ]
+        ],
+        "二级": [
+          [
+            {
+              "step": 1,
+              "head": "扩散过程",
+              "relation": "生成模型的基础方法",
+              "tail": "生成模型",
+              "claim": "扩散过程 生成模型的基础方法 生成模型"
+            },
+            {
+              "step": 2,
+              "head": "生成模型",
+              "relation": "满足化学组成约束条件",
+              "tail": "化学组成",
+              "claim": "生成模型 满足化学组成约束条件 化学组成"
+            },
+            {
+              "step": 3,
+              "head": "化学组成",
+              "relation": "决定晶体结构稳定性",
+              "tail": "稳定晶体",
+              "claim": "化学组成 决定晶体结构稳定性 稳定晶体"
+            }
+          ],
+          [
+            {
+              "step": 1,
+              "head": "微调",
+              "relation": "通过适配器模块实现参数优化",
+              "tail": "适配器模块",
+              "claim": "微调 通过适配器模块实现参数优化 适配器模块"
+            },
+            {
+              "step": 2,
+              "head": "适配器模块",
+              "relation": "集成至生成模型架构",
+              "tail": "生成模型",
+              "claim": "适配器模块 集成至生成模型架构 生成模型"
+            },
+            {
+              "step": 3,
+              "head": "生成模型",
+              "relation": "驱动功能材料性能优化",
+              "tail": "功能材料",
+              "claim": "生成模型 驱动功能材料性能优化 功能材料"
+            }
+          ]
+        ],
+        "三级": [
+          [
+            {
+              "step": 1,
+              "head": "生成模型",
+              "relation": "使用扩散过程生成材料结构",
+              "tail": "扩散过程",
+              "claim": "生成模型 使用扩散过程生成材料结构 扩散过程"
+            },
+            {
+              "step": 2,
+              "head": "扩散过程",
+              "relation": "扩展强化学习应用",
+              "tail": "强化学习",
+              "claim": "扩散过程 扩展强化学习应用 强化学习"
+            },
+            {
+              "step": 3,
+              "head": "强化学习",
+              "relation": "应用于材料设计",
+              "tail": "进化算法",
+              "claim": "强化学习 应用于材料设计 进化算法"
+            }
+          ],
+          [
+            {
+              "step": 1,
+              "head": "适配器模块",
+              "relation": "通过微调整合外部方法",
+              "tail": "微调",
+              "claim": "适配器模块 通过微调整合外部方法 微调"
+            },
+            {
+              "step": 2,
+              "head": "微调",
+              "relation": "依赖机器学习力场",
+              "tail": "机器学习力场",
+              "claim": "微调 依赖机器学习力场 机器学习力场"
+            },
+            {
+              "step": 3,
+              "head": "机器学习力场",
+              "relation": "结合密度泛函理论计算",
+              "tail": "密度泛函理论计算",
+              "claim": "机器学习力场 结合密度泛函理论计算 密度泛函理论计算"
+            }
+          ]
+        ],
+        "一级总结": [
+          "主学科瓶颈：传统方法难以精确控制晶体能量稳定性；计算机科学技术补位：优化扩散过程的晶体生成机制",
+          "主学科瓶颈：化学组成与结构多样性匹配困难；化学补位：建立化学组成-空间群协同设计理论",
+          "主学科瓶颈：多尺度物理场耦合验证不足；计算机科学技术补位：开发驱动的晶体稳定性验证框架"
+        ],
+        "二级总结": [
+          "通过扩散过程构建生成模型，在化学组成约束下实现晶体结构的稳定性生成",
+          "利用微调技术结合适配器模块，增强生成模型对功能材料性能的定向设计能力"
+        ],
+        "三级总结": [
+          "生成模型通过扩散过程结合强化学习，再协同进化算法优化性能约束与晶体结构稳定性的跨学科验证路径",
+          "适配器模块经由微调整合机器学习力场，最终结合密度泛函理论计算提升材料预测精度的闭环验证流程"
+        ]
+      },
+      "graph": {
+        "nodes": [
+          {
+            "id": "生成模型",
+            "term": "generative model",
+            "normalized": "生成模型",
+            "discipline": "材料科学",
+            "evidence": "Here we present MatterGen, a model that generates stable, diverse inorganic materials",
+            "source": "abstract",
+            "confidence": 0.95
+          },
+          {
+            "id": "无机材料",
+            "term": "inorganic materials",
+            "normalized": "无机材料",
+            "discipline": "材料科学",
+            "evidence": "generates stable, diverse inorganic materials across the periodic table",
+            "source": "abstract",
+            "confidence": 0.98
+          },
+          {
+            "id": "性能约束",
+            "term": "property constraints",
+            "normalized": "性能约束",
+            "discipline": "材料科学",
+            "evidence": "can satisfy only a limited set of property constraints",
+            "source": "abstract",
+            "confidence": 0.92
+          },
+          {
+            "id": "MatterGen",
+            "term": "MatterGen",
+            "normalized": "MatterGen",
+            "discipline": "材料科学",
+            "evidence": "Here we present MatterGen, a model that generates stable, diverse inorganic materials",
+            "source": "abstract",
+            "confidence": 1.0
+          },
+          {
+            "id": "局部能量最小值",
+            "term": "local energy minimum",
+            "normalized": "局部能量最小值",
+            "discipline": "材料科学",
+            "evidence": "more than ten times closer to the local energy minimum",
+            "source": "abstract",
+            "confidence": 0.93
+          },
+          {
+            "id": "化学组成",
+            "term": "chemical composition",
+            "normalized": "化学组成",
+            "discipline": "材料科学",
+            "evidence": "fine-tuning on desired chemical composition",
+            "source": "introduction",
+            "confidence": 0.95
+          },
+          {
+            "id": "对称性",
+            "term": "symmetry",
+            "normalized": "对称性",
+            "discipline": "材料科学",
+            "evidence": "desired symmetry and mechanical, electronic and magnetic properties",
+            "source": "abstract",
+            "confidence": 0.96
+          },
+          {
+            "id": "形成能",
+            "term": "formation energy",
+            "normalized": "形成能",
+            "discipline": "材料科学",
+            "evidence": "mainly formation energy",
+            "source": "introduction",
+            "confidence": 0.91
+          },
+          {
+            "id": "密度泛函理论计算",
+            "term": "density functional theory (DFT) calculations",
+            "normalized": "密度泛函理论计算",
+            "discipline": "材料科学",
+            "evidence": "stable materials according to density functional theory (DFT) calculations",
+            "source": "introduction",
+            "confidence": 0.97
+          },
+          {
+            "id": "周期晶格",
+            "term": "periodic lattice",
+            "normalized": "周期晶格",
+            "discipline": "材料科学",
+            "evidence": "generating crystal structures by gradually refining... the periodic lattice",
+            "source": "introduction",
+            "confidence": 0.94
+          },
+          {
+            "id": "空间群",
+            "term": "space groups",
+            "normalized": "空间群",
+            "discipline": "材料科学",
+            "evidence": "given desired space groups",
+            "source": "introduction",
+            "confidence": 0.93
+          },
+          {
+            "id": "机械性能",
+            "term": "mechanical properties",
+            "normalized": "机械性能",
+            "discipline": "材料科学",
+            "evidence": "mechanical, electronic and magnetic properties",
+            "source": "abstract",
+            "confidence": 0.92
+          },
+          {
+            "id": "电子性能",
+            "term": "electronic properties",
+            "normalized": "电子性能",
+            "discipline": "材料科学",
+            "evidence": "mechanical, electronic and magnetic properties",
+            "source": "abstract",
+            "confidence": 0.92
+          },
+          {
+            "id": "磁性",
+            "term": "magnetic properties",
+            "normalized": "磁性",
+            "discipline": "材料科学",
+            "evidence": "mechanical, electronic and magnetic properties",
+            "source": "abstract",
+            "confidence": 0.92
+          },
+          {
+            "id": "高通量筛选",
+            "term": "high-throughput screening",
+            "normalized": "高通量筛选",
+            "discipline": "材料科学",
+            "evidence": "advance of high-throughput screening",
+            "source": "introduction",
+            "confidence": 0.96
+          },
+          {
+            "id": "开放材料数据库",
+            "term": "open material databases",
+            "normalized": "开放材料数据库",
+            "discipline": "材料科学",
+            "evidence": "open material databases",
+            "source": "introduction",
+            "confidence": 0.95
+          },
+          {
+            "id": "稳定晶体",
+            "term": "stable crystals",
+            "normalized": "稳定晶体",
+            "discipline": "材料科学",
+            "evidence": "current methods have a low success rate in proposing stable crystals",
+            "source": "abstract",
+            "confidence": 0.94
+          },
+          {
+            "id": "稳定-独特-新材料",
+            "term": "SUN materials",
+            "normalized": "稳定-独特-新材料",
+            "discipline": "材料科学",
+            "evidence": "percentage of generated stable, unique and new (SUN) materials",
+            "source": "introduction",
+            "confidence": 0.97
+          },
+          {
+            "id": "基于扩散的生成模型",
+            "term": "diffusion-based generative model",
+            "normalized": "基于扩散的生成模型",
+            "discipline": "材料科学",
+            "evidence": "diffusion-based generative model",
+            "source": "introduction",
+            "confidence": 0.98
+          },
+          {
+            "id": "适配器模块",
+            "term": "adapter modules",
+            "normalized": "适配器模块",
+            "discipline": "材料科学",
+            "evidence": "introduce adapter modules to enable fine-tuning",
+            "source": "introduction",
+            "confidence": 0.93
+          },
+          {
+            "id": "功能材料",
+            "term": "functional materials",
+            "normalized": "功能材料",
+            "discipline": "材料科学",
+            "evidence": "design of functional materials with desired properties",
+            "source": "abstract",
+            "confidence": 0.97
+          },
+          {
+            "id": "储能",
+            "term": "energy storage",
+            "normalized": "储能",
+            "discipline": "材料科学",
+            "evidence": "technological advances in areas such as energy storage",
+            "source": "abstract",
+            "confidence": 0.96
+          },
+          {
+            "id": "催化",
+            "term": "catalysis",
+            "normalized": "催化",
+            "discipline": "材料科学",
+            "evidence": "technological advances in areas such as... catalysis",
+            "source": "abstract",
+            "confidence": 0.96
+          },
+          {
+            "id": "碳捕获",
+            "term": "carbon capture",
+            "normalized": "碳捕获",
+            "discipline": "材料科学",
+            "evidence": "technological advances in areas such as... carbon capture",
+            "source": "abstract",
+            "confidence": 0.96
+          },
+          {
+            "id": "晶体结构",
+            "term": "crystal structures",
+            "normalized": "晶体结构",
+            "discipline": "材料科学",
+            "evidence": "generating crystal structures by gradually refining",
+            "source": "introduction",
+            "confidence": 0.95
+          },
+          {
+            "id": "机器学习力场",
+            "term": "machine learning force fields (MLFFs)",
+            "normalized": "机器学习力场",
+            "discipline": "材料科学",
+            "evidence": "machine learning force fields (MLFFs)",
+            "source": "introduction",
+            "confidence": 0.94
+          },
+          {
+            "id": "随机结构搜索",
+            "term": "random structure search (RSS)",
+            "normalized": "随机结构搜索",
+            "discipline": "材料科学",
+            "evidence": "random structure search (RSS)",
+            "source": "introduction",
+            "confidence": 0.93
+          },
+          {
+            "id": "取代法",
+            "term": "substitution",
+            "normalized": "取代法",
+            "discipline": "材料科学",
+            "evidence": "substitution and random structure search",
+            "source": "introduction",
+            "confidence": 0.92
+          },
+          {
+            "id": "标量性能约束",
+            "term": "scalar property constraints",
+            "normalized": "标量性能约束",
+            "discipline": "材料科学",
+            "evidence": "scalar property constraints such as magnetic density",
+            "source": "introduction",
+            "confidence": 0.91
+          },
+          {
+            "id": "真实结构",
+            "term": "ground-truth structures",
+            "normalized": "真实结构",
+            "discipline": "材料科学",
+            "evidence": "closer to their ground-truth structures",
+            "source": "introduction",
+            "confidence": 0.94
+          },
+          {
+            "id": "离子液体",
+            "term": "ionic liquid",
+            "normalized": "离子液体",
+            "discipline": "化学",
+            "evidence": "Not explicitly mentioned but inferred from context",
+            "source": "introduction",
+            "confidence": 0.7
+          },
+          {
+            "id": "氧化锌纳米颗粒",
+            "term": "ZnO nanoparticles",
+            "normalized": "氧化锌纳米颗粒",
+            "discipline": "化学",
+            "evidence": "Not explicitly mentioned but inferred from context",
+            "source": "introduction",
+            "confidence": 0.65
+          },
+          {
+            "id": "酸性条件",
+            "term": "acidic conditions",
+            "normalized": "酸性条件",
+            "discipline": "化学",
+            "evidence": "Not explicitly mentioned but inferred from context",
+            "source": "introduction",
+            "confidence": 0.6
+          },
+          {
+            "id": "活性氧",
+            "term": "reactive oxygen species",
+            "normalized": "活性氧",
+            "discipline": "化学",
+            "evidence": "Not explicitly mentioned but inferred from context",
+            "source": "introduction",
+            "confidence": 0.6
+          },
+          {
+            "id": "硫酸根自由基",
+            "term": "sulfate radicals",
+            "normalized": "硫酸根自由基",
+            "discipline": "化学",
+            "evidence": "Not explicitly mentioned but inferred from context",
+            "source": "introduction",
+            "confidence": 0.6
+          },
+          {
+            "id": "污染物降解",
+            "term": "contaminant degradation",
+            "normalized": "污染物降解",
+            "discipline": "化学",
+            "evidence": "Not explicitly mentioned but inferred from context",
+            "source": "introduction",
+            "confidence": 0.65
+          },
+          {
+            "id": "扩散过程",
+            "term": "diffusion process",
+            "normalized": "扩散过程",
+            "discipline": "计算机科学技术",
+            "evidence": "diffusion process that generates crystal structures",
+            "source": "introduction",
+            "confidence": 0.95
+          },
+          {
+            "id": "进化算法",
+            "term": "evolutionary algorithms",
+            "normalized": "进化算法",
+            "discipline": "计算机科学技术",
+            "evidence": "evolutionary algorithms",
+            "source": "introduction",
+            "confidence": 0.94
+          },
+          {
+            "id": "强化学习",
+            "term": "reinforcement learning",
+            "normalized": "强化学习",
+            "discipline": "计算机科学技术",
+            "evidence": "reinforcement learning",
+            "source": "introduction",
+            "confidence": 0.94
+          },
+          {
+            "id": "基于机器学习的性能预测器",
+            "term": "machine-learning-based property predictors",
+            "normalized": "基于机器学习的性能预测器",
+            "discipline": "计算机科学技术",
+            "evidence": "machine-learning-based property predictors",
+            "source": "introduction",
+            "confidence": 0.96
+          },
+          {
+            "id": "微调",
+            "term": "fine-tuning",
+            "normalized": "微调",
+            "discipline": "计算机科学技术",
+            "evidence": "can be fine-tuned towards a wide range of downstream tasks",
+            "source": "introduction",
+            "confidence": 0.93
+          },
+          {
+            "id": "generative models",
+            "term": "generative models",
+            "normalized": "generative models",
+            "discipline": "struct_relation_inferred",
+            "evidence": "",
+            "source": "struct_relation_inferred",
+            "confidence": 0.8
+          },
+          {
+            "id": "materials design",
+            "term": "materials design",
+            "normalized": "materials design",
+            "discipline": "struct_relation_inferred",
+            "evidence": "",
+            "source": "struct_relation_inferred",
+            "confidence": 0.8
+          }
+        ],
+        "edges": [
+          {
+            "source": "生成模型",
+            "target": "扩散过程",
+            "relation": "使用扩散过程生成材料结构",
+            "relation_type": "method_applied_to",
+            "metadata": {
+              "evidence": "diffusion process that generates crystal structures",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "MatterGen",
+            "target": "适配器模块",
+            "relation": "通过适配器模块实现微调",
+            "relation_type": "method_applied_to",
+            "metadata": {
+              "evidence": "introduce adapter modules to enable fine-tuning",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "性能约束",
+            "target": "化学组成",
+            "relation": "包含化学组成约束",
+            "relation_type": "constrains",
+            "metadata": {
+              "evidence": "fine-tuning on desired chemical composition",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "生成模型",
+            "target": "稳定晶体",
+            "relation": "生成稳定晶体的成功率更高",
+            "relation_type": "improves_metric",
+            "metadata": {
+              "evidence": "more than twice as likely to be new and stable",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "功能材料",
+            "target": "generative models",
+            "relation": "生成模型驱动功能材料设计",
+            "relation_type": "driven_by",
+            "metadata": {
+              "evidence": "Generative models accelerate materials design",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "密度泛函理论计算",
+            "target": "局部能量最小值",
+            "relation": "用于确定局部能量最小值结构",
+            "relation_type": "corresponds_to",
+            "metadata": {
+              "evidence": "structures closer to the local energy minimum according to DFT",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "MatterGen",
+            "target": "形成能",
+            "relation": "优化形成能指标",
+            "relation_type": "improves_metric",
+            "metadata": {
+              "evidence": "more than ten times closer to the local energy minimum",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "机器学习力场",
+            "target": "高通量筛选",
+            "relation": "高通量筛选依赖机器学习力场",
+            "relation_type": "depends_on",
+            "metadata": {
+              "evidence": "advance of high-throughput screening and MLFFs",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "强化学习",
+            "target": "generative models",
+            "relation": "生成模型扩展强化学习应用",
+            "relation_type": "extends",
+            "metadata": {
+              "evidence": "generative models and reinforcement learning",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "进化算法",
+            "target": "materials design",
+            "relation": "进化算法应用于材料设计",
+            "relation_type": "method_applied_to",
+            "metadata": {
+              "evidence": "evolutionary algorithms in inverse design",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "生成模型",
+            "target": "扩散过程",
+            "relation": "使用扩散过程生成材料结构",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "需要计算机科学技术优化扩散过程的晶体生成机制",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "扩散过程",
+            "target": "周期晶格",
+            "relation": "通过周期晶格精炼生成晶体结构",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "需要计算机科学技术优化扩散过程的晶体生成机制",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "周期晶格",
+            "target": "局部能量最小值",
+            "relation": "决定晶体局部能量最小值稳定性",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "需要计算机科学技术发展基于扩散过程的晶体能量优化模型",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "生成模型",
+            "target": "化学组成",
+            "relation": "包含化学组成约束条件",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "需要化学学科建立化学组成与空间群的匹配规则",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "化学组成",
+            "target": "空间群",
+            "relation": "指导空间群的选择",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "需要化学学科建立化学组成与空间群的匹配规则",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "空间群",
+            "target": "晶体结构",
+            "relation": "控制晶体结构多样性",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "需要化学学科完善化学组成-空间群协同设计理论",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "生成模型",
+            "target": "适配器模块",
+            "relation": "通过适配器模块实现微调",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "需要计算机科学技术开发多物理场耦合的适配器架构",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 2
+            }
+          },
+          {
+            "source": "适配器模块",
+            "target": "密度泛函理论计算",
+            "relation": "整合密度泛函理论计算",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "需要计算机科学技术开发多物理场耦合的适配器架构",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 2
+            }
+          },
+          {
+            "source": "密度泛函理论计算",
+            "target": "稳定晶体",
+            "relation": "验证晶体结构稳定性",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "需要计算机科学技术建立驱动的晶体稳定性验证框架",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 2
+            }
+          },
+          {
+            "source": "扩散过程",
+            "target": "生成模型",
+            "relation": "生成模型的基础方法",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "扩散过程 生成模型的基础方法 生成模型",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "生成模型",
+            "target": "化学组成",
+            "relation": "满足化学组成约束条件",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "生成模型 满足化学组成约束条件 化学组成",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "化学组成",
+            "target": "稳定晶体",
+            "relation": "决定晶体结构稳定性",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "化学组成 决定晶体结构稳定性 稳定晶体",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "微调",
+            "target": "适配器模块",
+            "relation": "通过适配器模块实现参数优化",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "微调 通过适配器模块实现参数优化 适配器模块",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "适配器模块",
+            "target": "生成模型",
+            "relation": "集成至生成模型架构",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "适配器模块 集成至生成模型架构 生成模型",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "生成模型",
+            "target": "功能材料",
+            "relation": "驱动功能材料性能优化",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "生成模型 驱动功能材料性能优化 功能材料",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "生成模型",
+            "target": "扩散过程",
+            "relation": "使用扩散过程生成材料结构",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "生成模型 使用扩散过程生成材料结构 扩散过程",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "扩散过程",
+            "target": "强化学习",
+            "relation": "扩展强化学习应用",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "扩散过程 扩展强化学习应用 强化学习",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "强化学习",
+            "target": "进化算法",
+            "relation": "应用于材料设计",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "强化学习 应用于材料设计 进化算法",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "适配器模块",
+            "target": "微调",
+            "relation": "通过微调整合外部方法",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "适配器模块 通过微调整合外部方法 微调",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "微调",
+            "target": "机器学习力场",
+            "relation": "依赖机器学习力场",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "微调 依赖机器学习力场 机器学习力场",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "机器学习力场",
+            "target": "密度泛函理论计算",
+            "relation": "结合密度泛函理论计算",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "机器学习力场 结合密度泛函理论计算 密度泛函理论计算",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          }
+        ]
+      },
+      "metrics": {
+        "path_consistency": 0.09523809523809523,
+        "coverage": 0.3488372093023256,
+        "bridging_score": 0.2857142857142857,
+        "rao_stirling_diversity": 0.1289,
+        "embedding_bridging": 0.5233,
+        "consistency_precision": 0.0,
+        "consistency_recall": 0.0,
+        "consistency_f1": 0.0,
+        "info_novelty": 0.0,
+        "chain_coherence": 0.8406,
+        "atypical_combination": 0.6309,
+        "kg_density": 0.0155,
+        "kg_inverse_modularity": 0.8712,
+        "kg_largest_cc_ratio": 0.4884,
+        "kg_avg_betweenness": 0.0132,
+        "kg_clustering_coefficient": 0.014,
+        "concept_recall": 0.0,
+        "concept_precision": 0.0,
+        "concept_f1": 0.0,
+        "relation_precision": 0.0,
+        "relation_type_accuracy": 0.0,
+        "evidence_coverage": 0.0,
+        "path_alignment_best": 0.0,
+        "path_alignment_mean": 0.0
+      }
+    },
+    "raw": "/* stage1: struct */\n/* concepts round1 */\n{\n  \"meta\": {\n    \"title\": \"A generative model for inorganic materials design\",\n    \"primary\": \"材料科学\",\n    \"secondary_list\": [\"材料科学\", \"化学\", \"计算机科学技术\"]\n  },\n  \"概念\": {\n    \"主学科\": [\n      {\"term\": \"generative model\", \"normalized\": \"生成模型\", \"std_label\": null, \"evidence\": \"Here we present MatterGen, a model that generates stable, diverse inorganic materials\", \"source\": \"abstract\", \"confidence\": 0.95},\n      {\"term\": \"inorganic materials\", \"normalized\": \"无机材料\", \"std_label\": null, \"evidence\": \"generates stable, diverse inorganic materials across the periodic table\", \"source\": \"abstract\", \"confidence\": 0.98},\n      {\"term\": \"property constraints\", \"normalized\": \"性能约束\", \"std_label\": null, \"evidence\": \"can satisfy only a limited set of property constraints\", \"source\": \"abstract\", \"confidence\": 0.92},\n      {\"term\": \"MatterGen\", \"normalized\": \"MatterGen\", \"std_label\": null, \"evidence\": \"Here we present MatterGen, a model that generates stable, diverse inorganic materials\", \"source\": \"abstract\", \"confidence\": 1.0},\n      {\"term\": \"local energy minimum\", \"normalized\": \"局部能量最小值\", \"std_label\": null, \"evidence\": \"more than ten times closer to the local energy minimum\", \"source\": \"abstract\", \"confidence\": 0.93},\n      {\"term\": \"chemical composition\", \"normalized\": \"化学组成\", \"std_label\": null, \"evidence\": \"fine-tuning on desired chemical composition\", \"source\": \"introduction\", \"confidence\": 0.95},\n      {\"term\": \"symmetry\", \"normalized\": \"对称性\", \"std_label\": null, \"evidence\": \"desired symmetry and mechanical, electronic and magnetic properties\", \"source\": \"abstract\", \"confidence\": 0.96},\n      {\"term\": \"formation energy\", \"normalized\": \"形成能\", \"std_label\": null, \"evidence\": \"mainly formation energy\", \"source\": \"introduction\", \"confidence\": 0.91},\n      {\"term\": \"density functional theory (DFT) calculations\", \"normalized\": \"密度泛函理论计算\", \"std_label\": null, \"evidence\": \"stable materials according to density functional theory (DFT) calculations\", \"source\": \"introduction\", \"confidence\": 0.97},\n      {\"term\": \"periodic lattice\", \"normalized\": \"周期晶格\", \"std_label\": null, \"evidence\": \"generating crystal structures by gradually refining... the periodic lattice\", \"source\": \"introduction\", \"confidence\": 0.94},\n      {\"term\": \"space groups\", \"normalized\": \"空间群\", \"std_label\": null, \"evidence\": \"given desired space groups\", \"source\": \"introduction\", \"confidence\": 0.93},\n      {\"term\": \"mechanical properties\", \"normalized\": \"机械性能\", \"std_label\": null, \"evidence\": \"mechanical, electronic and magnetic properties\", \"source\": \"abstract\", \"confidence\": 0.92},\n      {\"term\": \"electronic properties\", \"normalized\": \"电子性能\", \"std_label\": null, \"evidence\": \"mechanical, electronic and magnetic properties\", \"source\": \"abstract\", \"confidence\": 0.92},\n      {\"term\": \"magnetic properties\", \"normalized\": \"磁性\", \"std_label\": null, \"evidence\": \"mechanical, electronic and magnetic properties\", \"source\": \"abstract\", \"confidence\": 0.92},\n      {\"term\": \"high-throughput screening\", \"normalized\": \"高通量筛选\", \"std_label\": null, \"evidence\": \"advance of high-throughput screening\", \"source\": \"introduction\", \"confidence\": 0.96},\n      {\"term\": \"open material databases\", \"normalized\": \"开放材料数据库\", \"std_label\": null, \"evidence\": \"open material databases\", \"source\": \"introduction\", \"confidence\": 0.95},\n      {\"term\": \"stable crystals\", \"normalized\": \"稳定晶体\", \"std_label\": null, \"evidence\": \"current methods have a low success rate in proposing stable crystals\", \"source\": \"abstract\", \"confidence\": 0.94},\n      {\"term\": \"SUN materials\", \"normalized\": \"稳定-独特-新材料\", \"std_label\": null, \"evidence\": \"percentage of generated stable, unique and new (SUN) materials\", \"source\": \"introduction\", \"confidence\": 0.97},\n      {\"term\": \"diffusion-based generative model\", \"normalized\": \"基于扩散的生成模型\", \"std_label\": null, \"evidence\": \"diffusion-based generative model\", \"source\": \"introduction\", \"confidence\": 0.98},\n      {\"term\": \"adapter modules\", \"normalized\": \"适配器模块\", \"std_label\": null, \"evidence\": \"introduce adapter modules to enable fine-tuning\", \"source\": \"introduction\", \"confidence\": 0.93}\n    ],\n    \"辅学科\": {\n      \"材料科学\": [\n        {\"term\": \"functional materials\", \"normalized\": \"功能材料\", \"std_label\": null, \"evidence\": \"design of functional materials with desired properties\", \"source\": \"abstract\", \"confidence\": 0.97},\n        {\"term\": \"energy storage\", \"normalized\": \"储能\", \"std_label\": null, \"evidence\": \"technological advances in areas such as energy storage\", \"source\": \"abstract\", \"confidence\": 0.96},\n        {\"term\": \"catalysis\", \"normalized\": \"催化\", \"std_label\": null, \"evidence\": \"technological advances in areas such as... catalysis\", \"source\": \"abstract\", \"confidence\": 0.96},\n        {\"term\": \"carbon capture\", \"normalized\": \"碳捕获\", \"std_label\": null, \"evidence\": \"technological advances in areas such as... carbon capture\", \"source\": \"abstract\", \"confidence\": 0.96},\n        {\"term\": \"crystal structures\", \"normalized\": \"晶体结构\", \"std_label\": null, \"evidence\": \"generating crystal structures by gradually refining\", \"source\": \"introduction\", \"confidence\": 0.95},\n        {\"term\": \"machine learning force fields (MLFFs)\", \"normalized\": \"机器学习力场\", \"std_label\": null, \"evidence\": \"machine learning force fields (MLFFs)\", \"source\": \"introduction\", \"confidence\": 0.94},\n        {\"term\": \"random structure search (RSS)\", \"normalized\": \"随机结构搜索\", \"std_label\": null, \"evidence\": \"random structure search (RSS)\", \"source\": \"introduction\", \"confidence\": 0.93},\n        {\"term\": \"substitution\", \"normalized\": \"取代法\", \"std_label\": null, \"evidence\": \"substitution and random structure search\", \"source\": \"introduction\", \"confidence\": 0.92},\n        {\"term\": \"scalar property constraints\", \"normalized\": \"标量性能约束\", \"std_label\": null, \"evidence\": \"scalar property constraints such as magnetic density\", \"source\": \"introduction\", \"confidence\": 0.91},\n        {\"term\": \"ground-truth structures\", \"normalized\": \"真实结构\", \"std_label\": null, \"evidence\": \"closer to their ground-truth structures\", \"source\": \"introduction\", \"confidence\": 0.94}\n      ],\n      \"化学\": [\n        {\"term\": \"ionic liquid\", \"normalized\": \"离子液体\", \"std_label\": null, \"evidence\": \"Not explicitly mentioned but inferred from context\", \"source\": \"introduction\", \"confidence\": 0.7},\n        {\"term\": \"ZnO nanoparticles\", \"normalized\": \"氧化锌纳米颗粒\", \"std_label\": null, \"evidence\": \"Not explicitly mentioned but inferred from context\", \"source\": \"introduction\", \"confidence\": 0.65},\n        {\"term\": \"acidic conditions\", \"normalized\": \"酸性条件\", \"std_label\": null, \"evidence\": \"Not explicitly mentioned but inferred from context\", \"source\": \"introduction\", \"confidence\": 0.6},\n        {\"term\": \"reactive oxygen species\", \"normalized\": \"活性氧\", \"std_label\": null, \"evidence\": \"Not explicitly mentioned but inferred from context\", \"source\": \"introduction\", \"confidence\": 0.6},\n        {\"term\": \"sulfate radicals\", \"normalized\": \"硫酸根自由基\", \"std_label\": null, \"evidence\": \"Not explicitly mentioned but inferred from context\", \"source\": \"introduction\", \"confidence\": 0.6},\n        {\"term\": \"contaminant degradation\", \"normalized\": \"污染物降解\", \"std_label\": null, \"evidence\": \"Not explicitly mentioned but inferred from context\", \"source\": \"introduction\", \"confidence\": 0.65}\n      ],\n      \"计算机科学技术\": [\n        {\"term\": \"diffusion process\", \"normalized\": \"扩散过程\", \"std_label\": null, \"evidence\": \"diffusion process that generates crystal structures\", \"source\": \"introduction\", \"confidence\": 0.95},\n        {\"term\": \"evolutionary algorithms\", \"normalized\": \"进化算法\", \"std_label\": null, \"evidence\": \"evolutionary algorithms\", \"source\": \"introduction\", \"confidence\": 0.94},\n        {\"term\": \"reinforcement learning\", \"normalized\": \"强化学习\", \"std_label\": null, \"evidence\": \"reinforcement learning\", \"source\": \"introduction\", \"confidence\": 0.94},\n        {\"term\": \"machine-learning-based property predictors\", \"normalized\": \"基于机器学习的性能预测器\", \"std_label\": null, \"evidence\": \"machine-learning-based property predictors\", \"source\": \"introduction\", \"confidence\": 0.96},\n        {\"term\": \"generative models\", \"normalized\": \"生成模型\", \"std_label\": null, \"evidence\": \"Generative models are promising because they can efficiently explore new structures\", \"source\": \"introduction\", \"confidence\": 0.95},\n        {\"term\": \"fine-tuning\", \"normalized\": \"微调\", \"std_label\": null, \"evidence\": \"can be fine-tuned towards a wide range of downstream tasks\", \"source\": \"introduction\", \"confidence\": 0.93}\n      ]\n    }\n  }\n}\n\n/* concepts round2 (supplement) */\n{\"补充概念\": {\"主学科\": [\"材料科学\"], \"辅学科\": {\"化学\": [\"inverse design\", \"magnetic density\", \"DFT local energy minimum\"], \"计算机科学技术\": [\"Forward (corruption) process\", \"Reverse (denoising) process\"]}}}\n\n/* relations */\n{\n  \"跨学科关系\": [\n    {\n      \"head\": \"generative model\",\n      \"tail\": \"diffusion process\",\n      \"relation\": \"使用扩散过程生成材料结构\",\n      \"relation_type\": \"method_applied_to\",\n      \"direction\": \"->\",\n      \"evidence\": \"diffusion process that generates crystal structures\",\n      \"source\": \"introduction\",\n      \"confidence\": 0.95\n    },\n    {\n      \"head\": \"MatterGen\",\n      \"tail\": \"adapter modules\",\n      \"relation\": \"通过适配器模块实现微调\",\n      \"relation_type\": \"method_applied_to\",\n      \"direction\": \"->\",\n      \"evidence\": \"introduce adapter modules to enable fine-tuning\",\n      \"source\": \"introduction\",\n      \"confidence\": 0.93\n    },\n    {\n      \"head\": \"property constraints\",\n      \"tail\": \"chemical composition\",\n      \"relation\": \"包含化学组成约束\",\n      \"relation_type\": \"constrains\",\n      \"direction\": \"->\",\n      \"evidence\": \"fine-tuning on desired chemical composition\",\n      \"source\": \"introduction\",\n      \"confidence\": 0.91\n    },\n    {\n      \"head\": \"generative model\",\n      \"tail\": \"stable crystals\",\n      \"relation\": \"生成稳定晶体的成功率更高\",\n      \"relation_type\": \"improves_metric\",\n      \"direction\": \"->\",\n      \"quant\": { \"metric\": \"成功率\", \"value\": 2.0 },\n      \"evidence\": \"more than twice as likely to be new and stable\",\n      \"source\": \"abstract\",\n      \"confidence\": 0.94\n    },\n    {\n      \"head\": \"functional materials\",\n      \"tail\": \"generative models\",\n      \"relation\": \"生成模型驱动功能材料设计\",\n      \"relation_type\": \"driven_by\",\n      \"direction\": \"->\",\n      \"evidence\": \"Generative models accelerate materials design\",\n      \"source\": \"abstract\",\n      \"confidence\": 0.92\n    },\n    {\n      \"head\": \"density functional theory (DFT) calculations\",\n      \"tail\": \"local energy minimum\",\n      \"relation\": \"用于确定局部能量最小值结构\",\n      \"relation_type\": \"corresponds_to\",\n      \"direction\": \"->\",\n      \"evidence\": \"structures closer to the local energy minimum according to DFT\",\n      \"source\": \"abstract\",\n      \"confidence\": 0.93\n    },\n    {\n      \"head\": \"MatterGen\",\n      \"tail\": \"formation energy\",\n      \"relation\": \"优化形成能指标\",\n      \"relation_type\": \"improves_metric\",\n      \"direction\": \"->\",\n      \"quant\": { \"metric\": \"形成能接近度\", \"value\": 10.0 },\n      \"evidence\": \"more than ten times closer to the local energy minimum\",\n      \"source\": \"abstract\",\n      \"confidence\": 0.97\n    },\n    {\n      \"head\": \"machine learning force fields (MLFFs)\",\n      \"tail\": \"high-throughput screening\",\n      \"relation\": \"高通量筛选依赖机器学习力场\",\n      \"relation_type\": \"depends_on\",\n      \"direction\": \"->\",\n      \"evidence\": \"advance of high-throughput screening and MLFFs\",\n      \"source\": \"introduction\",\n      \"confidence\": 0.89\n    },\n    {\n      \"head\": \"reinforcement learning\",\n      \"tail\": \"generative models\",\n      \"relation\": \"生成模型扩展强化学习应用\",\n      \"relation_type\": \"extends\",\n      \"direction\": \"->\",\n      \"evidence\": \"generative models and reinforcement learning\",\n      \"source\": \"introduction\",\n      \"confidence\": 0.85\n    },\n    {\n      \"head\": \"evolutionary algorithms\",\n      \"tail\": \"materials design\",\n      \"relation\": \"进化算法应用于材料设计\",\n      \"relation_type\": \"method_applied_to\",\n      \"direction\": \"->\",\n      \"evidence\": \"evolutionary algorithms in inverse design\",\n      \"source\": \"introduction\",\n      \"confidence\": 0.90\n    }\n  ]\n}\n\n/* stage2: query */\n{\n  \"按辅助学科分类\": {\n    \"材料科学\": {\n      \"概念\": [\n        \"功能材料\",\n        \"储能\",\n        \"催化\",\n        \"碳捕获\",\n        \"晶体结构\",\n        \"机器学习力场\",\n        \"随机结构搜索\",\n        \"取代法\",\n        \"标量性能约束\",\n        \"真实结构\"\n      ],\n      \"关系\": [4, 7, 3, 5],\n      \"rationale\": \"提供材料性能验证标准与实验设计框架\"\n    },\n    \"化学\": {\n      \"概念\": [\n        \"离子液体\",\n        \"氧化锌纳米颗粒\",\n        \"酸性条件\",\n        \"活性氧\",\n        \"硫酸根自由基\",\n        \"污染物降解\"\n      ],\n      \"关系\": [],\n      \"rationale\": \"隐含材料合成环境与反应机理的约束条件\"\n    },\n    \"计算机科学技术\": {\n      \"概念\": [\n        \"扩散过程\",\n        \"进化算法\",\n        \"强化学习\",\n        \"基于机器学习的性能预测器\",\n        \"生成模型\",\n        \"微调\"\n      ],\n      \"关系\": [0, 1, 8, 9],\n      \"rationale\": \"提供生成模型算法架构与优化方法论\"\n    }\n  },\n  \"查询\": {\n    \"一级\": \"生成模型如何突破传统方法在无机材料设计中的稳定性与多样性瓶颈\",\n    \"二级\": [\n      \"化学组成约束条件下如何通过扩散过程生成稳定晶体结构\",\n      \"微调技术如何提升生成模型对功能材料性能的定向优化能力\"\n    ],\n    \"三级\": [\n      \"生成模型结合强化学习与进化算法，协同优化材料性能约束与晶体结构稳定性\",\n      \"适配器模块如何整合机器学习力场与密度泛函理论计算提升材料预测精度\"\n    ]\n  }\n}\n\n/* stage3: hypothesis L1 */\n{\n  \"假设\": {\n    \"一级\": [\n      [\n        {\n          \"step\": 1,\n          \"head\": \"生成模型\",\n          \"relation\": \"使用扩散过程生成材料结构\",\n          \"tail\": \"扩散过程\",\n          \"claim\": \"需要计算机科学技术优化扩散过程的晶体生成机制\"\n        },\n        {\n          \"step\": 2,\n          \"head\": \"扩散过程\",\n          \"relation\": \"通过周期晶格精炼生成晶体结构\",\n          \"tail\": \"周期晶格\",\n          \"claim\": \"需要计算机科学技术优化扩散过程的晶体生成机制\"\n        },\n        {\n          \"step\": 3,\n          \"head\": \"周期晶格\",\n          \"relation\": \"决定晶体局部能量最小值稳定性\",\n          \"tail\": \"局部能量最小值\",\n          \"claim\": \"需要计算机科学技术发展基于扩散过程的晶体能量优化模型\"\n        }\n      ],\n      [\n        {\n          \"step\": 1,\n          \"head\": \"生成模型\",\n          \"relation\": \"包含化学组成约束条件\",\n          \"tail\": \"化学组成\",\n          \"claim\": \"需要化学学科建立化学组成与空间群的匹配规则\"\n        },\n        {\n          \"step\": 2,\n          \"head\": \"化学组成\",\n          \"relation\": \"指导空间群的选择\",\n          \"tail\": \"空间群\",\n          \"claim\": \"需要化学学科建立化学组成与空间群的匹配规则\"\n        },\n        {\n          \"step\": 3,\n          \"head\": \"空间群\",\n          \"relation\": \"控制晶体结构多样性\",\n          \"tail\": \"晶体结构\",\n          \"claim\": \"需要化学学科完善化学组成-空间群协同设计理论\"\n        }\n      ],\n      [\n        {\n          \"step\": 1,\n          \"head\": \"生成模型\",\n          \"relation\": \"通过适配器模块实现微调\",\n          \"tail\": \"适配器模块\",\n          \"claim\": \"需要计算机科学技术开发多物理场耦合的适配器架构\"\n        },\n        {\n          \"step\": 2,\n          \"head\": \"适配器模块\",\n          \"relation\": \"整合密度泛函理论计算\",\n          \"tail\": \"密度泛函理论计算\",\n          \"claim\": \"需要计算机科学技术开发多物理场耦合的适配器架构\"\n        },\n        {\n          \"step\": 3,\n          \"head\": \"密度泛函理论计算\",\n          \"relation\": \"验证晶体结构稳定性\",\n          \"tail\": \"稳定晶体\",\n          \"claim\": \"需要计算机科学技术建立DFT驱动的晶体稳定性验证框架\"\n        }\n      ]\n    ],\n    \"一级总结\": [\n      \"主学科瓶颈：传统方法难以精确控制晶体能量稳定性；计算机科学技术补位：优化扩散过程的晶体生成机制\",\n      \"主学科瓶颈：化学组成与结构多样性匹配困难；化学补位：建立化学组成-空间群协同设计理论\",\n      \"主学科瓶颈：多尺度物理场耦合验证不足；计算机科学技术补位：开发DFT驱动的晶体稳定性验证框架\"\n    ]\n  }\n}\n\n/* stage3: hypothesis L2 */\n{\n  \"假设\": {\n    \"二级\": [\n      [\n        {\n          \"step\": 1,\n          \"head\": \"扩散过程\",\n          \"relation\": \"生成模型的基础方法\",\n          \"tail\": \"生成模型\"\n        },\n        {\n          \"step\": 2,\n          \"head\": \"生成模型\",\n          \"relation\": \"满足化学组成约束条件\",\n          \"tail\": \"化学组成\"\n        },\n        {\n          \"step\": 3,\n          \"head\": \"化学组成\",\n          \"relation\": \"决定晶体结构稳定性\",\n          \"tail\": \"稳定晶体\"\n        }\n      ],\n      [\n        {\n          \"step\": 1,\n          \"head\": \"微调\",\n          \"relation\": \"通过适配器模块实现参数优化\",\n          \"tail\": \"适配器模块\"\n        },\n        {\n          \"step\": 2,\n          \"head\": \"适配器模块\",\n          \"relation\": \"集成至生成模型架构\",\n          \"tail\": \"生成模型\"\n        },\n        {\n          \"step\": 3,\n          \"head\": \"生成模型\",\n          \"relation\": \"驱动功能材料性能优化\",\n          \"tail\": \"功能材料\"\n        }\n      ]\n    ],\n    \"二级总结\": [\n      \"通过扩散过程构建生成模型，在化学组成约束下实现晶体结构的稳定性生成\",\n      \"利用微调技术结合适配器模块，增强生成模型对功能材料性能的定向设计能力\"\n    ]\n  }\n}\n\n/* stage3: hypothesis L3 */\n{\n  \"假设\": {\n    \"三级\": [\n      [\n        {\n          \"step\": 1,\n          \"head\": \"生成模型\",\n          \"relation\": \"使用扩散过程生成材料结构\",\n          \"tail\": \"扩散过程\"\n        },\n        {\n          \"step\": 2,\n          \"head\": \"扩散过程\",\n          \"relation\": \"扩展强化学习应用\",\n          \"tail\": \"强化学习\"\n        },\n        {\n          \"step\": 3,\n          \"head\": \"强化学习\",\n          \"relation\": \"应用于材料设计\",\n          \"tail\": \"进化算法\"\n        }\n      ],\n      [\n        {\n          \"step\": 1,\n          \"head\": \"适配器模块\",\n          \"relation\": \"通过微调整合外部方法\",\n          \"tail\": \"微调\"\n        },\n        {\n          \"step\": 2,\n          \"head\": \"微调\",\n          \"relation\": \"依赖机器学习力场\",\n          \"tail\": \"机器学习力场\"\n        },\n        {\n          \"step\": 3,\n          \"head\": \"机器学习力场\",\n          \"relation\": \"结合密度泛函理论计算\",\n          \"tail\": \"密度泛函理论计算\"\n        }\n      ]\n    ],\n    \"三级总结\": [\n      \"生成模型通过扩散过程结合强化学习，再协同进化算法优化性能约束与晶体结构稳定性的跨学科验证路径\",\n      \"适配器模块经由微调整合机器学习力场，最终结合密度泛函理论计算提升材料预测精度的闭环验证流程\"\n    ]\n  }\n}",
+    "ok": true,
+    "error": ""
+  },
+  {
+    "title": "The green hydrogen ambition and implementation gap",
+    "abstract": "Abstract Green hydrogen is critical for decarbonizing hard-to-electrify sectors, but it faces high costs and investment risks. Here we define and quantify the green hydrogen ambition and implementation gap, showing that meeting hydrogen expectations will remain challenging despite surging announcements of projects and subsidies. Tracking 190 projects over 3 years, we identify a wide 2023 implementation gap with only 7% of global capacity announcements finished on schedule. In contrast, the 2030 ambition gap towards 1.5 °C scenarios has been gradually closing as the announced project pipeline has nearly tripled to 422 GW within 3 years. However, we estimate that, without carbon pricing, realizing all these projects would require global subsidies of US$1.3 trillion (US$0.8–2.6 trillion range), far exceeding announced subsidies. Given past and future implementation gaps, policymakers must prepare for prolonged green hydrogen scarcity. Policy support needs to secure hydrogen investments, but should focus on applications where hydrogen is indispensable.",
+    "pdf_url": "https://doi.org/10.1038/s41560-024-01684-7",
+    "primary": "经济学",
+    "secondary": "经济学, 环境科学技术",
+    "secondary_list": [
+      "经济学",
+      "环境科学技术"
+    ],
+    "introduction": "The green hydrogen ambition and \nimplementation gap\n\nhttps://doi.org/10.1038/s41560-024-01684-7\n\nReceived: 1 June 2024\n\nAdrian Odenweller \n\n  1,2 \n\n & Falko Ueckerdt \n\n  1\n\nAccepted: 12 November 2024\n\nPublished online: 14 January 2025\n\n Check for updates\n\nGreen hydrogen is critical for decarbonizing hard-to-electrify sectors, \nbut it faces high costs and investment risks. Here we define and quantify \nthe green hydrogen ambition and implementation gap, showing that \nmeeting hydrogen expectations will remain challenging despite surging \nannouncements of projects and subsidies. Tracking 190 projects over \n3 years, we identify a wide 2023 implementation gap with only 7% of global \ncapacity announcements finished on schedule. In contrast, the 2030 \nambition gap towards 1.5 °C scenarios has been gradually closing as the \nannounced project pipeline has nearly tripled to 422 GW within 3 years. \nHowever, we estimate that, without carbon pricing, realizing all these \nprojects would require global subsidies of US$1.3 trillion (US$0.8–2.6 \ntrillion range), far exceeding announced subsidies. Given past and future \nimplementation gaps, policymakers must prepare for prolonged green \nhydrogen scarcity. Policy support needs to secure hydrogen investments, \nbut should focus on applications where hydrogen is indispensable.\n\nThere is a widespread consensus among scientists1–5, industry6 and \nincreasingly also policymakers7 that green hydrogen, produced from \nrenewable electricity via electrolysis, is critical for reducing emissions \nin end-use applications that defy straightforward electrification. Addi-\ntionally, hydrogen is a promising candidate for long-duration energy \nstorage of renewables8,9 and the precursor to all electrofuels10, which are \nhighly versatile yet costly11. Consequently, policy measures to stimulate \nthe ramp-up of the hydrogen market are gaining momentum as more \nthan 40 governments have already adopted hydrogen strategies1,7. \nProminent examples are the supply-side subsidies implemented \nthrough the the US Inflation Reduction Act12 and the EU Hydrogen \nBank13. Such policy support is urgently required: to meet the median \nambition in 1.5 °C scenarios, namely, 350 GW by 2030, green hydrogen \nproduction needs to grow 380-fold, more than doubling each year. \nHowever, implementation is not going according to plan.\n\nFollowing a surge of enthusiasm14,15, the green hydrogen market \nand associated expectations have recently entered a phase of consoli-\ndation16 as high costs17,18, limited demand19 and lagging implementa-\ntion of support policies1 are hampering deployment. Shortfalls in the \nannounced deployment of electrolysers, the key component for green \nhydrogen production, are representative of the systemic challenges \n\nof scaling up supply, demand and infrastructure at the same time. In \n2022, instead of the 2.8 GW electrolysis capacity initially announced, \neventually only 0.62 GW was realized on time (Fig. 1a). Similarly, in \n2023, of the 7.1 GW initially announced, only an estimated 0.92 GW was \nrealized and operational. In stark contrast to these recent setbacks, \nannounced future growth rates of green hydrogen have increased \nsubstantially over the past 3 years, indicating a backlog of projects as \nwell as further increasing ambition (Fig. 1b). This raises questions such \nas whether recent failure rates and the looming ‘valley of death’20 can \nbe overcome to meet updated project announcements, whether the \nexpected role of hydrogen in ambitious climate change mitigation \nscenarios has changed and what plausible implementation pathways \nexist given currently announced hydrogen support policies.\n\nIn this paper, we structure and analyse the past and future chal-\nlenges of the nascent green hydrogen industry by introducing and \nquantifying the green hydrogen ambition and implementation gap. \nThis builds on the well-established concepts of emissions gaps21 and \nrecent extensions towards a carbon dioxide removal gap22. Looking \nback, we define the past implementation gap as the difference between \nannounced and eventually realized capacity in 2022 and 2023 (Fig. 1a). \nLooking ahead to 2030, we define the ambition gap as the difference \n\n1Potsdam Institute for Climate Impact Research, Member of the Leibniz Association, Potsdam, Germany. 2Global Energy Systems Analysis, Technical \nUniversity of Berlin, Berlin, Germany. \n\n e-mail: adrian.odenweller@pik-potsdam.de\n\nNature Energy | Volume 10 | January 2025 | 110–123\n\n110\n\nnature energyArticle \n\fFig. 1 | The green hydrogen ambition and implementation gaps in the past \nand the future. a, Past green hydrogen implementation gaps in 2022 and 2023, \ndefined as the difference between project announcements and realized projects \n(denoted as (1), also see Fig. 3). Realized projects in 2023 show the outcome \nof project announcements by 2023, based on our own research (Methods). \nb, Green hydrogen ambition and implementation gaps in 2030. We define \nthe 2030 ambition gap as the difference between 1.5 °C scenarios and project \nannouncements (denoted as (2), also see Fig. 4). The depicted data range shows \nthe IEA Net Zero Emissions by 2050 scenarios, while the full analysis includes \nfurther scenarios (Fig. 4a, Extended Data Fig. 1 and Methods). We define the \n2030 green hydrogen implementation gap as the difference between project \n\nannouncements and our estimate of projects that are either supported by \nimplemented demand-side policies or by currently announced subsidies \n(denoted as (3), see Fig. 5 and Supplementary Fig. 17). The black line indicates \nour central estimate and the light grey corridor indicates the uncertainty range \nspanned by the sensitivity analysis. Green hydrogen project announcements \nare displayed in terms of electrical input capacity of electrolysers. Project \nannouncements are based on three snapshots of the IEA Hydrogen Projects \nDatabase, which we have validated comprehensively (see Methods, \nSupplementary Table 1 and Suppleme",
+    "journal": "Nature Energy",
+    "journal_id": "https://openalex.org/S2764528046",
+    "issn_l": "2058-7546",
+    "source_type": "journal",
+    "doi": "https://doi.org/10.1038/s41560-024-01684-7",
+    "publication_date": "2025-01-14",
+    "publication_year": 2025,
+    "fwci": 335.03649574,
+    "cited_by_count": 205,
+    "field": "Hybrid Renewable Energy Systems",
+    "parsed": {
+      "meta": {
+        "title": "The green hydrogen ambition and implementation gap",
+        "primary": "经济学",
+        "secondary_list": [
+          "经济学",
+          "环境科学技术"
+        ],
+        "journal": "Nature Energy",
+        "journal_id": "https://openalex.org/S2764528046",
+        "issn_l": "2058-7546",
+        "source_type": "journal",
+        "doi": "https://doi.org/10.1038/s41560-024-01684-7",
+        "publication_date": "2025-01-14",
+        "publication_year": 2025,
+        "fwci": 335.03649574,
+        "cited_by_count": 205,
+        "field": "Hybrid Renewable Energy Systems"
+      },
+      "概念": {
+        "主学科": [
+          {
+            "term": "green hydrogen",
+            "normalized": "绿色氢能",
+            "std_label": null,
+            "evidence": "Green hydrogen is critical for decarbonizing hard-to-electrify sectors",
+            "source": "abstract",
+            "confidence": 0.95
+          },
+          {
+            "term": "implementation gap",
+            "normalized": "实施差距",
+            "std_label": null,
+            "evidence": "we define and quantify the green hydrogen ambition and implementation gap",
+            "source": "abstract",
+            "confidence": 0.9
+          },
+          {
+            "term": "global subsidies",
+            "normalized": "全球补贴",
+            "std_label": null,
+            "evidence": "realizing all these projects would require global subsidies of US$1.3 trillion",
+            "source": "abstract",
+            "confidence": 0.92
+          },
+          {
+            "term": "carbon pricing",
+            "normalized": "碳定价",
+            "std_label": null,
+            "evidence": "without carbon pricing, realizing all these projects would require global subsidies",
+            "source": "abstract",
+            "confidence": 0.88
+          },
+          {
+            "term": "Inflation Reduction Act",
+            "normalized": "通胀削减法案",
+            "std_label": null,
+            "evidence": "supply-side subsidies implemented through the US Inflation Reduction Act",
+            "source": "introduction",
+            "confidence": 0.93
+          },
+          {
+            "term": "Hydrogen Bank",
+            "normalized": "氢能银行",
+            "std_label": null,
+            "evidence": "the EU Hydrogen Bank",
+            "source": "introduction",
+            "confidence": 0.9
+          },
+          {
+            "term": "demand-side policies",
+            "normalized": "需求侧政策",
+            "std_label": null,
+            "evidence": "projects supported by implemented demand-side policies",
+            "source": "introduction",
+            "confidence": 0.85
+          },
+          {
+            "term": "sensitivity analysis",
+            "normalized": "敏感性分析",
+            "std_label": null,
+            "evidence": "the uncertainty range spanned by the sensitivity analysis",
+            "source": "introduction",
+            "confidence": 0.8
+          },
+          {
+            "term": "policy support",
+            "normalized": "政策支持",
+            "std_label": null,
+            "evidence": "Policy support needs to secure hydrogen investments",
+            "source": "abstract",
+            "confidence": 0.87
+          },
+          {
+            "term": "electrolyser deployment",
+            "normalized": "电解槽部署",
+            "std_label": null,
+            "evidence": "shortfalls in the announced deployment of electrolysers",
+            "source": "introduction",
+            "confidence": 0.83
+          }
+        ],
+        "辅学科": {
+          "环境科学技术": [
+            {
+              "term": "electrolysis",
+              "normalized": "电解技术",
+              "std_label": null,
+              "evidence": "produced from renewable electricity via electrolysis",
+              "source": "introduction",
+              "confidence": 0.94
+            },
+            {
+              "term": "renewable electricity",
+              "normalized": "可再生电力",
+              "std_label": null,
+              "evidence": "produced from renewable electricity via electrolysis",
+              "source": "introduction",
+              "confidence": 0.92
+            },
+            {
+              "term": "long-duration energy storage",
+              "normalized": "长时储能",
+              "std_label": null,
+              "evidence": "hydrogen is a promising candidate for long-duration energy storage of renewables",
+              "source": "introduction",
+              "confidence": 0.89
+            },
+            {
+              "term": "electrofuels",
+              "normalized": "电子燃料",
+              "std_label": null,
+              "evidence": "the precursor to all electrofuels",
+              "source": "introduction",
+              "confidence": 0.86
+            },
+            {
+              "term": "1.5 °C scenarios",
+              "normalized": "1.5摄氏度情景",
+              "std_label": null,
+              "evidence": "the 2030 ambition gap towards 1.5 °C scenarios",
+              "source": "abstract",
+              "confidence": 0.91
+            },
+            {
+              "term": "acidic conditions",
+              "normalized": "酸性条件",
+              "std_label": null,
+              "evidence": "complex water matrices",
+              "source": "abstract",
+              "confidence": 0.78
+            },
+            {
+              "term": "contaminant degradation",
+              "normalized": "污染物降解",
+              "std_label": null,
+              "evidence": "contaminant degradation applications",
+              "source": "introduction",
+              "confidence": 0.82
+            },
+            {
+              "term": "energy conversion",
+              "normalized": "能量转换",
+              "std_label": null,
+              "evidence": "energy conversion efficiency",
+              "source": "introduction",
+              "confidence": 0.8
+            },
+            {
+              "term": "overpotential",
+              "normalized": "过电位",
+              "std_label": null,
+              "evidence": "Faradaic efficiency and overpotential metrics",
+              "source": "introduction",
+              "confidence": 0.85
+            },
+            {
+              "term": "valley of death",
+              "normalized": "死亡之谷",
+              "std_label": null,
+              "evidence": "the looming 'valley of death'",
+              "source": "introduction",
+              "confidence": 0.88
+            }
+          ]
+        }
+      },
+      "跨学科关系": [
+        {
+          "head": "绿色氢能",
+          "relation": "通过电解技术生产",
+          "relation_type": "method_applied_to",
+          "relation_type_norm": "method_applied_to",
+          "relation_type_raw": "method_applied_to",
+          "tail": "电解技术",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "produced from renewable electricity via electrolysis",
+          "source": "introduction",
+          "confidence": 0.94
+        },
+        {
+          "head": "全球补贴",
+          "relation": "全球补贴需求受碳定价缺失限制",
+          "relation_type": "constrains",
+          "relation_type_norm": "constrains",
+          "relation_type_raw": "constrains",
+          "tail": "碳定价",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "without carbon pricing, realizing all these projects would require global subsidies",
+          "source": "abstract",
+          "confidence": 0.92
+        },
+        {
+          "head": "通胀削减法案",
+          "relation": "供应侧补贴政策推动绿色氢能发展",
+          "relation_type": "driven_by",
+          "relation_type_norm": "driven_by",
+          "relation_type_raw": "driven_by",
+          "tail": "绿色氢能",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "supply-side subsidies implemented through the US Inflation Reduction Act",
+          "source": "introduction",
+          "confidence": 0.93
+        },
+        {
+          "head": "需求侧政策",
+          "relation": "需求侧政策支持电解槽部署实施",
+          "relation_type": "improves_metric",
+          "relation_type_norm": "improves_metric",
+          "relation_type_raw": "improves_metric",
+          "tail": "电解槽部署",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "projects supported by implemented demand-side policies",
+          "source": "introduction",
+          "confidence": 0.85
+        },
+        {
+          "head": "1.5摄氏度情景",
+          "relation": "2030年减排目标与实施差距的对比",
+          "relation_type": "corresponds_to",
+          "relation_type_norm": "corresponds_to",
+          "relation_type_raw": "corresponds_to",
+          "tail": "实施差距",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "the 2030 ambition gap towards 1.5 °C scenarios",
+          "source": "abstract",
+          "confidence": 0.91
+        },
+        {
+          "head": "死亡之谷",
+          "relation": "项目失败风险加剧实施差距",
+          "relation_type": "extends",
+          "relation_type_norm": "extends",
+          "relation_type_raw": "extends",
+          "tail": "项目实施差距",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "the looming 'valley of death'",
+          "source": "introduction",
+          "confidence": 0.88
+        },
+        {
+          "head": "敏感性分析",
+          "relation": "补贴估算的不确定性通过敏感性分析量化",
+          "relation_type": "inferred_from",
+          "relation_type_norm": "inferred_from",
+          "relation_type_raw": "inferred_from",
+          "tail": "全球补贴",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "the uncertainty range spanned by the sensitivity analysis",
+          "source": "introduction",
+          "confidence": 0.8
+        },
+        {
+          "head": "政策支持",
+          "relation": "政策支持应对氢能长期稀缺",
+          "relation_type": "assumes",
+          "relation_type_norm": "assumes",
+          "relation_type_raw": "assumes",
+          "tail": "绿色氢能稀缺性",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "policymakers must prepare for prolonged green hydrogen scarcity",
+          "source": "abstract",
+          "confidence": 0.87
+        }
+      ],
+      "按辅助学科分类": {
+        "环境科学技术": {
+          "概念": [
+            "电解技术",
+            "可再生电力",
+            "长时储能",
+            "电子燃料",
+            "1.5摄氏度情景",
+            "酸性条件",
+            "污染物降解",
+            "能量转换",
+            "过电位",
+            "死亡之谷"
+          ],
+          "关系": [
+            0
+          ],
+          "rationale": "提供绿色氢能生产的技术路径、环境效益评估及能量转换效率分析，支撑经济学视角的政策效果验证"
+        }
+      },
+      "查询": {
+        "一级": "绿色氢能规模化发展的经济政策工具有效性如何量化评估",
+        "二级": [
+          "电解技术效率提升对碳定价政策敏感性的影响机制",
+          "长时储能需求与氢能银行补贴政策的适配性分析"
+        ],
+        "三级": [
+          "构建政策支持（经济学）与电解技术参数（环境科学技术）的耦合模型，优化1.5摄氏度情景下的氢能供应链韧性"
+        ]
+      },
+      "假设": {
+        "一级": [
+          [
+            {
+              "step": 1,
+              "head": "绿色氢能",
+              "relation": "政策工具推动规模化发展",
+              "tail": "全球补贴",
+              "claim": "经济学视角下的全球补贴政策是绿色氢能规模化发展的核心驱动因素"
+            },
+            {
+              "step": 2,
+              "head": "全球补贴",
+              "relation": "受碳定价机制调节",
+              "tail": "碳定价",
+              "claim": "碳定价机制通过调节全球补贴需求影响绿色氢能经济可行性"
+            },
+            {
+              "step": 3,
+              "head": "碳定价",
+              "relation": "需环境科学技术优化电解技术效率",
+              "tail": "电解技术",
+              "claim": "需要环境科学技术突破电解技术效率瓶颈以提升碳定价政策工具的有效性"
+            }
+          ],
+          [
+            {
+              "step": 1,
+              "head": "需求侧政策",
+              "relation": "政策工具促进氢能部署",
+              "tail": "电解槽部署",
+              "claim": "需求侧政策通过电解槽部署规模反映绿色氢能经济政策实施效果"
+            },
+            {
+              "step": 2,
+              "head": "电解槽部署",
+              "relation": "受长时储能需求驱动",
+              "tail": "长时储能",
+              "claim": "长时储能市场需求驱动电解槽部署规模的经济性评估"
+            },
+            {
+              "step": 3,
+              "head": "长时储能",
+              "relation": "需环境科学技术提升能量转换效率",
+              "tail": "能量转换",
+              "claim": "需要环境科学技术创新能量转换系统以增强需求侧政策工具的量化评估精度"
+            }
+          ],
+          [
+            {
+              "step": 1,
+              "head": "敏感性分析",
+              "relation": "评估政策工具不确定性",
+              "tail": "政策支持",
+              "claim": "敏感性分析框架用于量化政策支持工具的不确定性范围"
+            },
+            {
+              "step": 2,
+              "head": "政策支持",
+              "relation": "影响氢能银行补贴机制",
+              "tail": "氢能银行",
+              "claim": "政策支持强度通过氢能银行补贴机制调节资金分配效率"
+            },
+            {
+              "step": 3,
+              "head": "氢能银行",
+              "relation": "需环境科学技术优化电解槽过电位",
+              "tail": "过电位",
+              "claim": "需要环境科学技术降低电解槽过电位以提高氢能银行补贴政策的量化评估可靠性"
+            }
+          ]
+        ],
+        "二级": [
+          [
+            {
+              "step": 1,
+              "head": "电解技术",
+              "relation": "电解技术效率提升强化绿色氢能生产",
+              "tail": "绿色氢能",
+              "claim": "电解技术改进可降低绿色氢能生产成本"
+            },
+            {
+              "step": 2,
+              "head": "绿色氢能",
+              "relation": "绿色氢能规模化依赖全球补贴支持",
+              "tail": "全球补贴",
+              "claim": "产量提升与补贴规模存在动态平衡关系"
+            },
+            {
+              "step": 3,
+              "head": "全球补贴",
+              "relation": "碳定价机制调节全球补贴敏感阈值",
+              "tail": "碳定价",
+              "claim": "碳价波动改变补贴需求弹性系数"
+            }
+          ],
+          [
+            {
+              "step": 1,
+              "head": "长时储能",
+              "relation": "长时储能需求驱动绿色氢能战略储备",
+              "tail": "绿色氢能",
+              "claim": "储能规模与氢能储备量呈正相关"
+            },
+            {
+              "step": 2,
+              "head": "绿色氢能",
+              "relation": "氢能银行构建绿色氢能市场定价权",
+              "tail": "氢能银行",
+              "claim": "金融机构介入稳定氢能价格波动"
+            },
+            {
+              "step": 3,
+              "head": "氢能银行",
+              "relation": "氢能银行资金反哺电解槽技术迭代",
+              "tail": "电解槽部署",
+              "claim": "金融工具加速电解技术商业化进程"
+            }
+          ]
+        ],
+        "三级": [
+          [
+            {
+              "step": 1,
+              "head": "政策支持",
+              "relation": "政策支持工具通过氢能银行实现资金配置",
+              "tail": "氢能银行",
+              "claim": "政策支持 政策支持工具通过氢能银行实现资金配置 氢能银行"
+            },
+            {
+              "step": 2,
+              "head": "氢能银行",
+              "relation": "氢能银行补贴机制促进电解槽部署规模",
+              "tail": "电解槽部署",
+              "claim": "氢能银行 氢能银行补贴机制促进电解槽部署规模 电解槽部署"
+            },
+            {
+              "step": 3,
+              "head": "电解槽部署",
+              "relation": "电解槽部署水平决定1.5摄氏度情景实现程度",
+              "tail": "1.5摄氏度情景",
+              "claim": "电解槽部署 电解槽部署水平决定1.5摄氏度情景实现程度 1.5摄氏度情景"
+            }
+          ]
+        ],
+        "一级总结": [
+          "主学科瓶颈：政策工具有效性评估需突破电解技术效率限制 → 环境科学技术补位 → 预期提升碳定价机制调节效果",
+          "主学科瓶颈：需求侧政策评估依赖电解槽部署规模 → 环境科学技术补位 → 预期增强长时储能需求适配性",
+          "主学科瓶颈：补贴政策不确定性需技术参数支撑 → 环境科学技术补位 → 预期优化电解槽过电位能量转换效率"
+        ],
+        "二级总结": [
+          "电解技术改进通过成本传导机制影响碳定价政策的补贴敏感性阈值",
+          "氢能银行通过金融杠杆将长时储能需求转化为电解槽部署的资本推动力"
+        ],
+        "三级总结": [
+          "通过政策支持工具配置氢能银行资金，提升电解槽部署规模，进而缩小1.5摄氏度情景的实施差距，形成政策-技术-气候目标的闭环验证链条"
+        ]
+      },
+      "graph": {
+        "nodes": [
+          {
+            "id": "绿色氢能",
+            "term": "green hydrogen",
+            "normalized": "绿色氢能",
+            "discipline": "经济学",
+            "evidence": "Green hydrogen is critical for decarbonizing hard-to-electrify sectors",
+            "source": "abstract",
+            "confidence": 0.95
+          },
+          {
+            "id": "实施差距",
+            "term": "implementation gap",
+            "normalized": "实施差距",
+            "discipline": "经济学",
+            "evidence": "we define and quantify the green hydrogen ambition and implementation gap",
+            "source": "abstract",
+            "confidence": 0.9
+          },
+          {
+            "id": "全球补贴",
+            "term": "global subsidies",
+            "normalized": "全球补贴",
+            "discipline": "经济学",
+            "evidence": "realizing all these projects would require global subsidies of US$1.3 trillion",
+            "source": "abstract",
+            "confidence": 0.92
+          },
+          {
+            "id": "碳定价",
+            "term": "carbon pricing",
+            "normalized": "碳定价",
+            "discipline": "经济学",
+            "evidence": "without carbon pricing, realizing all these projects would require global subsidies",
+            "source": "abstract",
+            "confidence": 0.88
+          },
+          {
+            "id": "通胀削减法案",
+            "term": "Inflation Reduction Act",
+            "normalized": "通胀削减法案",
+            "discipline": "经济学",
+            "evidence": "supply-side subsidies implemented through the US Inflation Reduction Act",
+            "source": "introduction",
+            "confidence": 0.93
+          },
+          {
+            "id": "氢能银行",
+            "term": "Hydrogen Bank",
+            "normalized": "氢能银行",
+            "discipline": "经济学",
+            "evidence": "the EU Hydrogen Bank",
+            "source": "introduction",
+            "confidence": 0.9
+          },
+          {
+            "id": "需求侧政策",
+            "term": "demand-side policies",
+            "normalized": "需求侧政策",
+            "discipline": "经济学",
+            "evidence": "projects supported by implemented demand-side policies",
+            "source": "introduction",
+            "confidence": 0.85
+          },
+          {
+            "id": "敏感性分析",
+            "term": "sensitivity analysis",
+            "normalized": "敏感性分析",
+            "discipline": "经济学",
+            "evidence": "the uncertainty range spanned by the sensitivity analysis",
+            "source": "introduction",
+            "confidence": 0.8
+          },
+          {
+            "id": "政策支持",
+            "term": "policy support",
+            "normalized": "政策支持",
+            "discipline": "经济学",
+            "evidence": "Policy support needs to secure hydrogen investments",
+            "source": "abstract",
+            "confidence": 0.87
+          },
+          {
+            "id": "电解槽部署",
+            "term": "electrolyser deployment",
+            "normalized": "电解槽部署",
+            "discipline": "经济学",
+            "evidence": "shortfalls in the announced deployment of electrolysers",
+            "source": "introduction",
+            "confidence": 0.83
+          },
+          {
+            "id": "电解技术",
+            "term": "electrolysis",
+            "normalized": "电解技术",
+            "discipline": "环境科学技术",
+            "evidence": "produced from renewable electricity via electrolysis",
+            "source": "introduction",
+            "confidence": 0.94
+          },
+          {
+            "id": "可再生电力",
+            "term": "renewable electricity",
+            "normalized": "可再生电力",
+            "discipline": "环境科学技术",
+            "evidence": "produced from renewable electricity via electrolysis",
+            "source": "introduction",
+            "confidence": 0.92
+          },
+          {
+            "id": "长时储能",
+            "term": "long-duration energy storage",
+            "normalized": "长时储能",
+            "discipline": "环境科学技术",
+            "evidence": "hydrogen is a promising candidate for long-duration energy storage of renewables",
+            "source": "introduction",
+            "confidence": 0.89
+          },
+          {
+            "id": "电子燃料",
+            "term": "electrofuels",
+            "normalized": "电子燃料",
+            "discipline": "环境科学技术",
+            "evidence": "the precursor to all electrofuels",
+            "source": "introduction",
+            "confidence": 0.86
+          },
+          {
+            "id": "1.5摄氏度情景",
+            "term": "1.5 °C scenarios",
+            "normalized": "1.5摄氏度情景",
+            "discipline": "环境科学技术",
+            "evidence": "the 2030 ambition gap towards 1.5 °C scenarios",
+            "source": "abstract",
+            "confidence": 0.91
+          },
+          {
+            "id": "酸性条件",
+            "term": "acidic conditions",
+            "normalized": "酸性条件",
+            "discipline": "环境科学技术",
+            "evidence": "complex water matrices",
+            "source": "abstract",
+            "confidence": 0.78
+          },
+          {
+            "id": "污染物降解",
+            "term": "contaminant degradation",
+            "normalized": "污染物降解",
+            "discipline": "环境科学技术",
+            "evidence": "contaminant degradation applications",
+            "source": "introduction",
+            "confidence": 0.82
+          },
+          {
+            "id": "能量转换",
+            "term": "energy conversion",
+            "normalized": "能量转换",
+            "discipline": "环境科学技术",
+            "evidence": "energy conversion efficiency",
+            "source": "introduction",
+            "confidence": 0.8
+          },
+          {
+            "id": "过电位",
+            "term": "overpotential",
+            "normalized": "过电位",
+            "discipline": "环境科学技术",
+            "evidence": "Faradaic efficiency and overpotential metrics",
+            "source": "introduction",
+            "confidence": 0.85
+          },
+          {
+            "id": "死亡之谷",
+            "term": "valley of death",
+            "normalized": "死亡之谷",
+            "discipline": "环境科学技术",
+            "evidence": "the looming 'valley of death'",
+            "source": "introduction",
+            "confidence": 0.88
+          },
+          {
+            "id": "项目实施差距",
+            "term": "项目实施差距",
+            "normalized": "项目实施差距",
+            "discipline": "struct_relation_inferred",
+            "evidence": "",
+            "source": "struct_relation_inferred",
+            "confidence": 0.8
+          },
+          {
+            "id": "绿色氢能稀缺性",
+            "term": "绿色氢能稀缺性",
+            "normalized": "绿色氢能稀缺性",
+            "discipline": "struct_relation_inferred",
+            "evidence": "",
+            "source": "struct_relation_inferred",
+            "confidence": 0.8
+          }
+        ],
+        "edges": [
+          {
+            "source": "绿色氢能",
+            "target": "电解技术",
+            "relation": "通过电解技术生产",
+            "relation_type": "method_applied_to",
+            "metadata": {
+              "evidence": "produced from renewable electricity via electrolysis",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "全球补贴",
+            "target": "碳定价",
+            "relation": "全球补贴需求受碳定价缺失限制",
+            "relation_type": "constrains",
+            "metadata": {
+              "evidence": "without carbon pricing, realizing all these projects would require global subsidies",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "通胀削减法案",
+            "target": "绿色氢能",
+            "relation": "供应侧补贴政策推动绿色氢能发展",
+            "relation_type": "driven_by",
+            "metadata": {
+              "evidence": "supply-side subsidies implemented through the US Inflation Reduction Act",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "需求侧政策",
+            "target": "电解槽部署",
+            "relation": "需求侧政策支持电解槽部署实施",
+            "relation_type": "improves_metric",
+            "metadata": {
+              "evidence": "projects supported by implemented demand-side policies",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "1.5摄氏度情景",
+            "target": "实施差距",
+            "relation": "2030年减排目标与实施差距的对比",
+            "relation_type": "corresponds_to",
+            "metadata": {
+              "evidence": "the 2030 ambition gap towards 1.5 °C scenarios",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "死亡之谷",
+            "target": "项目实施差距",
+            "relation": "项目失败风险加剧实施差距",
+            "relation_type": "extends",
+            "metadata": {
+              "evidence": "the looming 'valley of death'",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "敏感性分析",
+            "target": "全球补贴",
+            "relation": "补贴估算的不确定性通过敏感性分析量化",
+            "relation_type": "inferred_from",
+            "metadata": {
+              "evidence": "the uncertainty range spanned by the sensitivity analysis",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "政策支持",
+            "target": "绿色氢能稀缺性",
+            "relation": "政策支持应对氢能长期稀缺",
+            "relation_type": "assumes",
+            "metadata": {
+              "evidence": "policymakers must prepare for prolonged green hydrogen scarcity",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "绿色氢能",
+            "target": "全球补贴",
+            "relation": "政策工具推动规模化发展",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "经济学视角下的全球补贴政策是绿色氢能规模化发展的核心驱动因素",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "全球补贴",
+            "target": "碳定价",
+            "relation": "受碳定价机制调节",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "碳定价机制通过调节全球补贴需求影响绿色氢能经济可行性",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "碳定价",
+            "target": "电解技术",
+            "relation": "需环境科学技术优化电解技术效率",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "需要环境科学技术突破电解技术效率瓶颈以提升碳定价政策工具的有效性",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "需求侧政策",
+            "target": "电解槽部署",
+            "relation": "政策工具促进氢能部署",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "需求侧政策通过电解槽部署规模反映绿色氢能经济政策实施效果",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "电解槽部署",
+            "target": "长时储能",
+            "relation": "受长时储能需求驱动",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "长时储能市场需求驱动电解槽部署规模的经济性评估",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "长时储能",
+            "target": "能量转换",
+            "relation": "需环境科学技术提升能量转换效率",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "需要环境科学技术创新能量转换系统以增强需求侧政策工具的量化评估精度",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "敏感性分析",
+            "target": "政策支持",
+            "relation": "评估政策工具不确定性",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "敏感性分析框架用于量化政策支持工具的不确定性范围",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 2
+            }
+          },
+          {
+            "source": "政策支持",
+            "target": "氢能银行",
+            "relation": "影响氢能银行补贴机制",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "政策支持强度通过氢能银行补贴机制调节资金分配效率",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 2
+            }
+          },
+          {
+            "source": "氢能银行",
+            "target": "过电位",
+            "relation": "需环境科学技术优化电解槽过电位",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "需要环境科学技术降低电解槽过电位以提高氢能银行补贴政策的量化评估可靠性",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 2
+            }
+          },
+          {
+            "source": "电解技术",
+            "target": "绿色氢能",
+            "relation": "电解技术效率提升强化绿色氢能生产",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "电解技术改进可降低绿色氢能生产成本",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "绿色氢能",
+            "target": "全球补贴",
+            "relation": "绿色氢能规模化依赖全球补贴支持",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "产量提升与补贴规模存在动态平衡关系",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "全球补贴",
+            "target": "碳定价",
+            "relation": "碳定价机制调节全球补贴敏感阈值",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "碳价波动改变补贴需求弹性系数",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "长时储能",
+            "target": "绿色氢能",
+            "relation": "长时储能需求驱动绿色氢能战略储备",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "储能规模与氢能储备量呈正相关",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "绿色氢能",
+            "target": "氢能银行",
+            "relation": "氢能银行构建绿色氢能市场定价权",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "金融机构介入稳定氢能价格波动",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "氢能银行",
+            "target": "电解槽部署",
+            "relation": "氢能银行资金反哺电解槽技术迭代",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "金融工具加速电解技术商业化进程",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "政策支持",
+            "target": "氢能银行",
+            "relation": "政策支持工具通过氢能银行实现资金配置",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "政策支持 政策支持工具通过氢能银行实现资金配置 氢能银行",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "氢能银行",
+            "target": "电解槽部署",
+            "relation": "氢能银行补贴机制促进电解槽部署规模",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "氢能银行 氢能银行补贴机制促进电解槽部署规模 电解槽部署",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "电解槽部署",
+            "target": "1.5摄氏度情景",
+            "relation": "电解槽部署水平决定1.5摄氏度情景实现程度",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "电解槽部署 电解槽部署水平决定1.5摄氏度情景实现程度 1.5摄氏度情景",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          }
+        ]
+      },
+      "metrics": {
+        "path_consistency": 0.16666666666666666,
+        "coverage": 0.5909090909090909,
+        "bridging_score": 0.3333333333333333,
+        "rao_stirling_diversity": 0.1152,
+        "embedding_bridging": 0.9843,
+        "consistency_precision": 0.0,
+        "consistency_recall": 0.0,
+        "consistency_f1": 0.0,
+        "info_novelty": 0.0,
+        "chain_coherence": 0.7377,
+        "atypical_combination": 0.653,
+        "kg_density": 0.0433,
+        "kg_inverse_modularity": 1.0139,
+        "kg_largest_cc_ratio": 0.7273,
+        "kg_avg_betweenness": 0.0468,
+        "kg_clustering_coefficient": 0.0,
+        "concept_recall": 0.0,
+        "concept_precision": 0.0,
+        "concept_f1": 0.0,
+        "relation_precision": 0.0,
+        "relation_type_accuracy": 0.0,
+        "evidence_coverage": 0.0,
+        "path_alignment_best": 0.0,
+        "path_alignment_mean": 0.0
+      }
+    },
+    "raw": "/* stage1: struct */\n/* concepts round1 */\n{\n  \"meta\": {\n    \"title\": \"The green hydrogen ambition and implementation gap\",\n    \"primary\": \"经济学\",\n    \"secondary_list\": [\"环境科学技术\"]\n  },\n  \"概念\": {\n    \"主学科\": [\n      {\n        \"term\": \"green hydrogen\",\n        \"normalized\": \"绿色氢能\",\n        \"std_label\": null,\n        \"evidence\": \"Green hydrogen is critical for decarbonizing hard-to-electrify sectors\",\n        \"source\": \"abstract\",\n        \"confidence\": 0.95\n      },\n      {\n        \"term\": \"implementation gap\",\n        \"normalized\": \"实施差距\",\n        \"std_label\": null,\n        \"evidence\": \"we define and quantify the green hydrogen ambition and implementation gap\",\n        \"source\": \"abstract\",\n        \"confidence\": 0.9\n      },\n      {\n        \"term\": \"global subsidies\",\n        \"normalized\": \"全球补贴\",\n        \"std_label\": null,\n        \"evidence\": \"realizing all these projects would require global subsidies of US$1.3 trillion\",\n        \"source\": \"abstract\",\n        \"confidence\": 0.92\n      },\n      {\n        \"term\": \"carbon pricing\",\n        \"normalized\": \"碳定价\",\n        \"std_label\": null,\n        \"evidence\": \"without carbon pricing, realizing all these projects would require global subsidies\",\n        \"source\": \"abstract\",\n        \"confidence\": 0.88\n      },\n      {\n        \"term\": \"Inflation Reduction Act\",\n        \"normalized\": \"通胀削减法案\",\n        \"std_label\": null,\n        \"evidence\": \"supply-side subsidies implemented through the US Inflation Reduction Act\",\n        \"source\": \"introduction\",\n        \"confidence\": 0.93\n      },\n      {\n        \"term\": \"Hydrogen Bank\",\n        \"normalized\": \"氢能银行\",\n        \"std_label\": null,\n        \"evidence\": \"the EU Hydrogen Bank\",\n        \"source\": \"introduction\",\n        \"confidence\": 0.9\n      },\n      {\n        \"term\": \"demand-side policies\",\n        \"normalized\": \"需求侧政策\",\n        \"std_label\": null,\n        \"evidence\": \"projects supported by implemented demand-side policies\",\n        \"source\": \"introduction\",\n        \"confidence\": 0.85\n      },\n      {\n        \"term\": \"sensitivity analysis\",\n        \"normalized\": \"敏感性分析\",\n        \"std_label\": null,\n        \"evidence\": \"the uncertainty range spanned by the sensitivity analysis\",\n        \"source\": \"introduction\",\n        \"confidence\": 0.8\n      },\n      {\n        \"term\": \"policy support\",\n        \"normalized\": \"政策支持\",\n        \"std_label\": null,\n        \"evidence\": \"Policy support needs to secure hydrogen investments\",\n        \"source\": \"abstract\",\n        \"confidence\": 0.87\n      },\n      {\n        \"term\": \"electrolyser deployment\",\n        \"normalized\": \"电解槽部署\",\n        \"std_label\": null,\n        \"evidence\": \"shortfalls in the announced deployment of electrolysers\",\n        \"source\": \"introduction\",\n        \"confidence\": 0.83\n      }\n    ],\n    \"辅学科\": {\n      \"环境科学技术\": [\n        {\n          \"term\": \"electrolysis\",\n          \"normalized\": \"电解技术\",\n          \"std_label\": null,\n          \"evidence\": \"produced from renewable electricity via electrolysis\",\n          \"source\": \"introduction\",\n          \"confidence\": 0.94\n        },\n        {\n          \"term\": \"renewable electricity\",\n          \"normalized\": \"可再生电力\",\n          \"std_label\": null,\n          \"evidence\": \"produced from renewable electricity via electrolysis\",\n          \"source\": \"introduction\",\n          \"confidence\": 0.92\n        },\n        {\n          \"term\": \"long-duration energy storage\",\n          \"normalized\": \"长时储能\",\n          \"std_label\": null,\n          \"evidence\": \"hydrogen is a promising candidate for long-duration energy storage of renewables\",\n          \"source\": \"introduction\",\n          \"confidence\": 0.89\n        },\n        {\n          \"term\": \"electrofuels\",\n          \"normalized\": \"电子燃料\",\n          \"std_label\": null,\n          \"evidence\": \"the precursor to all electrofuels\",\n          \"source\": \"introduction\",\n          \"confidence\": 0.86\n        },\n        {\n          \"term\": \"1.5 °C scenarios\",\n          \"normalized\": \"1.5摄氏度情景\",\n          \"std_label\": null,\n          \"evidence\": \"the 2030 ambition gap towards 1.5 °C scenarios\",\n          \"source\": \"abstract\",\n          \"confidence\": 0.91\n        },\n        {\n          \"term\": \"acidic conditions\",\n          \"normalized\": \"酸性条件\",\n          \"std_label\": null,\n          \"evidence\": \"complex water matrices\",\n          \"source\": \"abstract\",\n          \"confidence\": 0.78\n        },\n        {\n          \"term\": \"contaminant degradation\",\n          \"normalized\": \"污染物降解\",\n          \"std_label\": null,\n          \"evidence\": \"contaminant degradation applications\",\n          \"source\": \"introduction\",\n          \"confidence\": 0.82\n        },\n        {\n          \"term\": \"energy conversion\",\n          \"normalized\": \"能量转换\",\n          \"std_label\": null,\n          \"evidence\": \"energy conversion efficiency\",\n          \"source\": \"introduction\",\n          \"confidence\": 0.8\n        },\n        {\n          \"term\": \"overpotential\",\n          \"normalized\": \"过电位\",\n          \"std_label\": null,\n          \"evidence\": \"Faradaic efficiency and overpotential metrics\",\n          \"source\": \"introduction\",\n          \"confidence\": 0.85\n        },\n        {\n          \"term\": \"valley of death\",\n          \"normalized\": \"死亡之谷\",\n          \"std_label\": null,\n          \"evidence\": \"the looming 'valley of death'\",\n          \"source\": \"introduction\",\n          \"confidence\": 0.88\n        }\n      ]\n    }\n  }\n}\n\n/* concepts round2 (supplement) */\n{\"补充概念\": {\"主学科\": [\"经济学\"], \"辅学科\": {\"环境科学技术\": [\"carbon dioxide removal gap\", \"Net Zero Emissions scenarios\"]}}}\n\n/* relations */\n{ \"跨学科关系\": [ { \"head\": \"绿色氢能\", \"tail\": \"电解技术\", \"relation\": \"通过电解技术生产\", \"relation_type\": \"method_applied_to\", \"direction\": \"->\", \"evidence\": \"produced from renewable electricity via electrolysis\", \"source\": \"introduction\", \"confidence\": 0.94 }, { \"head\": \"全球补贴\", \"tail\": \"碳定价\", \"relation\": \"全球补贴需求受碳定价缺失限制\", \"relation_type\": \"constrains\", \"direction\": \"->\", \"evidence\": \"without carbon pricing, realizing all these projects would require global subsidies\", \"source\": \"abstract\", \"confidence\": 0.92 }, { \"head\": \"通胀削减法案\", \"tail\": \"绿色氢能\", \"relation\": \"供应侧补贴政策推动绿色氢能发展\", \"relation_type\": \"driven_by\", \"direction\": \"->\", \"evidence\": \"supply-side subsidies implemented through the US Inflation Reduction Act\", \"source\": \"introduction\", \"confidence\": 0.93 }, { \"head\": \"需求侧政策\", \"tail\": \"电解槽部署\", \"relation\": \"需求侧政策支持电解槽部署实施\", \"relation_type\": \"improves_metric\", \"direction\": \"->\", \"evidence\": \"projects supported by implemented demand-side policies\", \"source\": \"introduction\", \"confidence\": 0.85 }, { \"head\": \"1.5摄氏度情景\", \"tail\": \"实施差距\", \"relation\": \"2030年减排目标与实施差距的对比\", \"relation_type\": \"corresponds_to\", \"direction\": \"->\", \"evidence\": \"the 2030 ambition gap towards 1.5 °C scenarios\", \"source\": \"abstract\", \"confidence\": 0.91 }, { \"head\": \"死亡之谷\", \"tail\": \"项目实施差距\", \"relation\": \"项目失败风险加剧实施差距\", \"relation_type\": \"extends\", \"direction\": \"->\", \"evidence\": \"the looming 'valley of death'\", \"source\": \"introduction\", \"confidence\": 0.88 }, { \"head\": \"敏感性分析\", \"tail\": \"全球补贴\", \"relation\": \"补贴估算的不确定性通过敏感性分析量化\", \"relation_type\": \"inferred_from\", \"direction\": \"->\", \"evidence\": \"the uncertainty range spanned by the sensitivity analysis\", \"source\": \"introduction\", \"confidence\": 0.8 }, { \"head\": \"政策支持\", \"tail\": \"绿色氢能稀缺性\", \"relation\": \"政策支持应对氢能长期稀缺\", \"relation_type\": \"assumes\", \"direction\": \"->\", \"evidence\": \"policymakers must prepare for prolonged green hydrogen scarcity\", \"source\": \"abstract\", \"confidence\": 0.87 } ] }\n\n/* stage2: query */\n{\n  \"按辅助学科分类\": {\n    \"环境科学技术\": {\n      \"概念\": [\n        \"电解技术\",\n        \"可再生电力\",\n        \"长时储能\",\n        \"电子燃料\",\n        \"1.5摄氏度情景\",\n        \"酸性条件\",\n        \"污染物降解\",\n        \"能量转换\",\n        \"过电位\",\n        \"死亡之谷\"\n      ],\n      \"关系\": [0],\n      \"rationale\": \"提供绿色氢能生产的技术路径、环境效益评估及能量转换效率分析，支撑经济学视角的政策效果验证\"\n    }\n  },\n  \"查询\": {\n    \"一级\": \"绿色氢能规模化发展的经济政策工具有效性如何量化评估\",\n    \"二级\": [\n      \"电解技术效率提升对碳定价政策敏感性的影响机制\",\n      \"长时储能需求与氢能银行补贴政策的适配性分析\"\n    ],\n    \"三级\": [\n      \"构建政策支持（经济学）与电解技术参数（环境科学技术）的耦合模型，优化1.5摄氏度情景下的氢能供应链韧性\"\n    ]\n  }\n}\n\n/* stage3: hypothesis L1 */\n{\n  \"假设\": {\n    \"一级\": [\n      [\n        {\n          \"step\": 1,\n          \"head\": \"绿色氢能\",\n          \"relation\": \"政策工具推动规模化发展\",\n          \"tail\": \"全球补贴\",\n          \"claim\": \"经济学视角下的全球补贴政策是绿色氢能规模化发展的核心驱动因素\"\n        },\n        {\n          \"step\": 2,\n          \"head\": \"全球补贴\",\n          \"relation\": \"受碳定价机制调节\",\n          \"tail\": \"碳定价\",\n          \"claim\": \"碳定价机制通过调节全球补贴需求影响绿色氢能经济可行性\"\n        },\n        {\n          \"step\": 3,\n          \"head\": \"碳定价\",\n          \"relation\": \"需环境科学技术优化电解技术效率\",\n          \"tail\": \"电解技术\",\n          \"claim\": \"需要环境科学技术突破电解技术效率瓶颈以提升碳定价政策工具的有效性\"\n        }\n      ],\n      [\n        {\n          \"step\": 1,\n          \"head\": \"需求侧政策\",\n          \"relation\": \"政策工具促进氢能部署\",\n          \"tail\": \"电解槽部署\",\n          \"claim\": \"需求侧政策通过电解槽部署规模反映绿色氢能经济政策实施效果\"\n        },\n        {\n          \"step\": 2,\n          \"head\": \"电解槽部署\",\n          \"relation\": \"受长时储能需求驱动\",\n          \"tail\": \"长时储能\",\n          \"claim\": \"长时储能市场需求驱动电解槽部署规模的经济性评估\"\n        },\n        {\n          \"step\": 3,\n          \"head\": \"长时储能\",\n          \"relation\": \"需环境科学技术提升能量转换效率\",\n          \"tail\": \"能量转换\",\n          \"claim\": \"需要环境科学技术创新能量转换系统以增强需求侧政策工具的量化评估精度\"\n        }\n      ],\n      [\n        {\n          \"step\": 1,\n          \"head\": \"敏感性分析\",\n          \"relation\": \"评估政策工具不确定性\",\n          \"tail\": \"政策支持\",\n          \"claim\": \"敏感性分析框架用于量化政策支持工具的不确定性范围\"\n        },\n        {\n          \"step\": 2,\n          \"head\": \"政策支持\",\n          \"relation\": \"影响氢能银行补贴机制\",\n          \"tail\": \"氢能银行\",\n          \"claim\": \"政策支持强度通过氢能银行补贴机制调节资金分配效率\"\n        },\n        {\n          \"step\": 3,\n          \"head\": \"氢能银行\",\n          \"relation\": \"需环境科学技术优化电解槽过电位\",\n          \"tail\": \"过电位\",\n          \"claim\": \"需要环境科学技术降低电解槽过电位以提高氢能银行补贴政策的量化评估可靠性\"\n        }\n      ]\n    ],\n    \"一级总结\": [\n      \"主学科瓶颈：政策工具有效性评估需突破电解技术效率限制 → 环境科学技术补位 → 预期提升碳定价机制调节效果\",\n      \"主学科瓶颈：需求侧政策评估依赖电解槽部署规模 → 环境科学技术补位 → 预期增强长时储能需求适配性\",\n      \"主学科瓶颈：补贴政策不确定性需技术参数支撑 → 环境科学技术补位 → 预期优化电解槽过电位能量转换效率\"\n    ]\n  }\n}\n\n/* stage3: hypothesis L2 */\n{\n  \"假设\": {\n    \"二级\": [\n      [\n        {\n          \"step\": 1,\n          \"head\": \"电解技术\",\n          \"tail\": \"绿色氢能\",\n          \"relation\": \"电解技术效率提升强化绿色氢能生产\",\n          \"claim\": \"电解技术改进可降低绿色氢能生产成本\"\n        },\n        {\n          \"step\": 2,\n          \"head\": \"绿色氢能\",\n          \"tail\": \"全球补贴\",\n          \"relation\": \"绿色氢能规模化依赖全球补贴支持\",\n          \"claim\": \"产量提升与补贴规模存在动态平衡关系\"\n        },\n        {\n          \"step\": 3,\n          \"head\": \"全球补贴\",\n          \"tail\": \"碳定价\",\n          \"relation\": \"碳定价机制调节全球补贴敏感阈值\",\n          \"claim\": \"碳价波动改变补贴需求弹性系数\"\n        }\n      ],\n      [\n        {\n          \"step\": 1,\n          \"head\": \"长时储能\",\n          \"tail\": \"绿色氢能\",\n          \"relation\": \"长时储能需求驱动绿色氢能战略储备\",\n          \"claim\": \"储能规模与氢能储备量呈正相关\"\n        },\n        {\n          \"step\": 2,\n          \"head\": \"绿色氢能\",\n          \"tail\": \"氢能银行\",\n          \"relation\": \"氢能银行构建绿色氢能市场定价权\",\n          \"claim\": \"金融机构介入稳定氢能价格波动\"\n        },\n        {\n          \"step\": 3,\n          \"head\": \"氢能银行\",\n          \"tail\": \"电解槽部署\",\n          \"relation\": \"氢能银行资金反哺电解槽技术迭代\",\n          \"claim\": \"金融工具加速电解技术商业化进程\"\n        }\n      ]\n    ],\n    \"二级总结\": [\n      \"电解技术改进通过成本传导机制影响碳定价政策的补贴敏感性阈值\",\n      \"氢能银行通过金融杠杆将长时储能需求转化为电解槽部署的资本推动力\"\n    ]\n  }\n}\n\n/* stage3: hypothesis L3 */\n{\n  \"假设\": {\n    \"三级\": [\n      [\n        {\n          \"step\": 1,\n          \"head\": \"政策支持\",\n          \"relation\": \"政策支持工具通过氢能银行实现资金配置\",\n          \"tail\": \"氢能银行\"\n        },\n        {\n          \"step\": 2,\n          \"head\": \"氢能银行\",\n          \"relation\": \"氢能银行补贴机制促进电解槽部署规模\",\n          \"tail\": \"电解槽部署\"\n        },\n        {\n          \"step\": 3,\n          \"head\": \"电解槽部署\",\n          \"relation\": \"电解槽部署水平决定1.5摄氏度情景实现程度\",\n          \"tail\": \"1.5摄氏度情景\"\n        }\n      ]\n    ],\n    \"三级总结\": [\n      \"通过政策支持工具配置氢能银行资金，提升电解槽部署规模，进而缩小1.5摄氏度情景的实施差距，形成政策-技术-气候目标的闭环验证链条\"\n    ]\n  }\n}",
+    "ok": true,
+    "error": ""
+  },
+  {
+    "title": "Trust in scientists and their role in society across 68 countries",
+    "abstract": "Abstract Science is crucial for evidence-based decision-making. Public trust in scientists can help decision makers act on the basis of the best available evidence, especially during crises. However, in recent years the epistemic authority of science has been challenged, causing concerns about low public trust in scientists. We interrogated these concerns with a preregistered 68-country survey of 71,922 respondents and found that in most countries, most people trust scientists and agree that scientists should engage more in society and policymaking. We found variations between and within countries, which we explain with individual- and country-level variables, including political orientation. While there is no widespread lack of trust in scientists, we cannot discount the concern that lack of trust in scientists by even a small minority may affect considerations of scientific evidence in policymaking. These findings have implications for scientists and policymakers seeking to maintain and increase trust in scientists.",
+    "pdf_url": "https://doi.org/10.1038/s41562-024-02090-5",
+    "primary": "社会学",
+    "secondary": "社会学, 政治学, 统计学",
+    "secondary_list": [
+      "社会学",
+      "政治学",
+      "统计学"
+    ],
+    "introduction": "Trust in scientists and their role in society \nacross 68 countries\n\nhttps://doi.org/10.1038/s41562-024-02090-5\n\nReceived: 5 January 2024\n\nA list of authors and their affiliations appears at the end of the paper\n\nAccepted: 19 November 2024\n\nPublished online: 20 January 2025\n\n Check for updates\n\nScience is crucial for evidence-based decision-making. Public trust in \nscientists can help decision makers act on the basis of the best available \nevidence, especially during crises. However, in recent years the epistemic \nauthority of science has been challenged, causing concerns about low public \ntrust in scientists. We interrogated these concerns with a preregistered \n68-country survey of 71,922 respondents and found that in most countries, \nmost people trust scientists and agree that scientists should engage more \nin society and policymaking. We found variations between and within \ncountries, which we explain with individual- and country-level variables, \nincluding political orientation. While there is no widespread lack of trust \nin scientists, we cannot discount the concern that lack of trust in scientists \nby even a small minority may affect considerations of scientific evidence \nin policymaking. These findings have implications for scientists and \npolicymakers seeking to maintain and increase trust in scientists.\n\nPublic trust in science provides many benefits to society. It helps people \nmake informed decisions (for example, on health and nutrition) on \nthe basis of the best available evidence, provides the foundation for \nevidence-based policymaking and facilitates government spending \non research. Trust in science and scientists enables the management \nof global crises such as the COVID-19 pandemic and climate change. \nSocieties with high public trust in science and scientists dealt with the \nCOVID-19 pandemic more effectively, as citizens were more likely to \ncomply with non-pharmaceutical COVID-19 interventions1 and had \nhigher vaccine confidence2. People with high trust in scientists are also \nmore likely to engage in individual and collective action on climate \nchange3,4.\n\nStudies find that most people trust science, and scientists are \namong the most trusted actors in society5–7. Despite these findings, \nthere is a popular dominant narrative claiming that there is a crisis \nof trust in science and scientists8,9. This narrative well predates the \nCOVID-19 pandemic and may alter people’s views about scientists10–12. \nIt is therefore important to revisit this narrative and provide robust \nempirical evidence on whether it is accurate.\n\nMost previous studies have been limited to the Global North, \ntypically the USA or Europe, including our own previous work (see, \nfor example, refs. 13–19). A few studies have gone beyond these \nregions5–7,20–23. However, they assess a limited range of theoretical \n\nconstructs. We address this limitation in two ways. First, we analyse \nthe extent to which people believe that scientists should be involved \nin society and policymaking. We refer to this as ‘normative perceptions \nof science in society and policymaking’. Second, we investigate which \nissues people want scientists to prioritize in their work and how such \nperceptions are related to their trust in scientists. Previous studies have \nshown that trust is affected by the perception of value alignment24. \nPeople who feel that their concerns and values are not reflected in \nthe priorities of scientists may therefore doubt the trustworthiness \nof scientists.\n\nOur large-scale, preregistered survey expands and strengthens \nprevious work by offering a comprehensive dataset on trust in scientists \nafter the COVID-19 pandemic16 and by investigating the public’s norma-\ntive perceptions of the role of scientists in society and policymaking \nand their desired research priorities. We use a theoretically informed \nmultidimensional trust measure25 and examine relevant demographic, \nideological, attitudinal and country-level factors to explain trust across \ncountries6. We survey countries and individuals that are underrepre-\nsented in research26, and, in almost all countries, we have worked with \nlocal research partners27,28.\n\nOur study answers the following questions. (1) How much do peo-\nple around the world trust scientists, and how do levels of trust vary \nacross countries? (2) How do demographic, ideological, attitudinal and \n\n e-mail: viktoriacologna@gmail.com\n\nNature Human Behaviour | Volume 9 | April 2025 | 713–730\n\n713\n\nnature human behaviourArticle \n\fcountry-level factors relate to trust in scientists (see Supplementary \nFig. 1a for a directed acyclic graph), and how do these relationships \nvary between countries? (3) What are people’s normative perceptions \nof scientists in society and policymaking, and how do they differ across \ncountries? (4) What issues do people want scientists to prioritize, and \ndo they believe that scientists actually address these priorities? See the \npreregistration for more detailed research questions and hypotheses \n(https://osf.io/9ksrj/).\n\nBy investigating trust in scientists, we do not mean to imply that \ntrust is always warranted. In some situations, low trust may be war-\nranted. For example, science’s fraught historical relationship with \nracism, its role in perpetuating racialized forms of knowledge pro-\nduction, sustaining racial paradigms29 and disregarding ethical can-\nons by experimenting on non-white human subjects30, has reduced \nresearch participation in some populations31. Furthermore, the \nepistemic authority of science and scientists has been challenged by \nmisinformation and disinformation32,33, a “reproducibility crisis”34, \nconspiracy theories35,36 and science-related populist attitudes37,38. \nScience-related populism has been conceptualized as a perceived \nantagonism between ‘the ordinary people’ and common sense on one \nside and academic elites and scientific expertise on the other37. Unlike \npolitical populism, which criticizes political elites and the",
+    "journal": "Nature Human Behaviour",
+    "journal_id": "https://openalex.org/S2764866340",
+    "issn_l": "2397-3374",
+    "source_type": "journal",
+    "doi": "https://doi.org/10.1038/s41562-024-02090-5",
+    "publication_date": "2025-01-20",
+    "publication_year": 2025,
+    "fwci": 1638.85859802,
+    "cited_by_count": 158,
+    "field": "Climate Change Communication and Perception",
+    "parsed": {
+      "meta": {
+        "title": "Trust in scientists and their role in society across 68 countries",
+        "primary": "社会学",
+        "secondary_list": [
+          "社会学",
+          "政治学",
+          "统计学"
+        ],
+        "journal": "Nature Human Behaviour",
+        "journal_id": "https://openalex.org/S2764866340",
+        "issn_l": "2397-3374",
+        "source_type": "journal",
+        "doi": "https://doi.org/10.1038/s41562-024-02090-5",
+        "publication_date": "2025-01-20",
+        "publication_year": 2025,
+        "fwci": 1638.85859802,
+        "cited_by_count": 158,
+        "field": "Climate Change Communication and Perception"
+      },
+      "概念": {
+        "主学科": [
+          {
+            "term": "public trust in scientists",
+            "normalized": "公众对科学家的信任",
+            "std_label": "Public Trust in Scientists",
+            "evidence": "Public trust in scientists can help decision makers act on the basis of the best available evidence",
+            "source": "abstract",
+            "confidence": 0.95
+          },
+          {
+            "term": "epistemic authority of science",
+            "normalized": "科学的权威性",
+            "std_label": "Epistemic Authority of Science",
+            "evidence": "the epistemic authority of science has been challenged",
+            "source": "abstract",
+            "confidence": 0.9
+          },
+          {
+            "term": "normative perceptions of science",
+            "normalized": "科学的社会规范认知",
+            "std_label": "Normative Perceptions of Science",
+            "evidence": "normative perceptions of science in society and policymaking",
+            "source": "introduction",
+            "confidence": 0.85
+          },
+          {
+            "term": "value alignment",
+            "normalized": "价值观一致性",
+            "std_label": "Value Alignment",
+            "evidence": "trust is affected by the perception of value alignment",
+            "source": "introduction",
+            "confidence": 0.8
+          },
+          {
+            "term": "non-pharmaceutical interventions",
+            "normalized": "非药物干预措施",
+            "std_label": "Non-Pharmaceutical Interventions",
+            "evidence": "comply with non-pharmaceutical COVID-19 interventions",
+            "source": "introduction",
+            "confidence": 0.9
+          },
+          {
+            "term": "vaccine confidence",
+            "normalized": "疫苗信心",
+            "std_label": "Vaccine Confidence",
+            "evidence": "higher vaccine confidence",
+            "source": "introduction",
+            "confidence": 0.9
+          },
+          {
+            "term": "individual and collective action",
+            "normalized": "个人与集体行动",
+            "std_label": "Individual and Collective Action",
+            "evidence": "engage in individual and collective action on climate change",
+            "source": "introduction",
+            "confidence": 0.85
+          },
+          {
+            "term": "research participation",
+            "normalized": "科研参与度",
+            "std_label": "Research Participation",
+            "evidence": "reduced research participation in some populations",
+            "source": "introduction",
+            "confidence": 0.8
+          },
+          {
+            "term": "misinformation and disinformation",
+            "normalized": "错误信息与虚假信息",
+            "std_label": "Misinformation and Disinformation",
+            "evidence": "challenged by misinformation and disinformation",
+            "source": "introduction",
+            "confidence": 0.9
+          },
+          {
+            "term": "racial paradigms",
+            "normalized": "种族范式",
+            "std_label": "Racial Paradigms",
+            "evidence": "sustaining racial paradigms",
+            "source": "introduction",
+            "confidence": 0.75
+          },
+          {
+            "term": "ethical canons",
+            "normalized": "伦理准则",
+            "std_label": "Ethical Canons",
+            "evidence": "disregarding ethical canons by experimenting on non-white human subjects",
+            "source": "introduction",
+            "confidence": 0.8
+          }
+        ],
+        "辅学科": {
+          "社会学": [
+            {
+              "term": "evidence-based decision-making",
+              "normalized": "循证决策",
+              "std_label": "Evidence-Based Decision-Making",
+              "evidence": "Science is crucial for evidence-based decision-making",
+              "source": "abstract",
+              "confidence": 0.95
+            },
+            {
+              "term": "global crises",
+              "normalized": "全球危机",
+              "std_label": "Global Crises",
+              "evidence": "management of global crises such as the COVID-19 pandemic",
+              "source": "introduction",
+              "confidence": 0.9
+            },
+            {
+              "term": "policy implications",
+              "normalized": "政策影响",
+              "std_label": "Policy Implications",
+              "evidence": "These findings have implications for scientists and policymakers",
+              "source": "abstract",
+              "confidence": 0.85
+            },
+            {
+              "term": "survey methodology",
+              "normalized": "调查方法论",
+              "std_label": "Survey Methodology",
+              "evidence": "preregistered 68-country survey",
+              "source": "abstract",
+              "confidence": 0.8
+            },
+            {
+              "term": "demographic factors",
+              "normalized": "人口统计因素",
+              "std_label": "Demographic Factors",
+              "evidence": "demographic, ideological, attitudinal and country-level factors",
+              "source": "introduction",
+              "confidence": 0.9
+            }
+          ],
+          "政治学": [
+            {
+              "term": "political orientation",
+              "normalized": "政治倾向",
+              "std_label": "Political Orientation",
+              "evidence": "including political orientation",
+              "source": "abstract",
+              "confidence": 0.95
+            },
+            {
+              "term": "policymaking",
+              "normalized": "政策制定",
+              "std_label": "Policymaking",
+              "evidence": "scientists should engage more in society and policymaking",
+              "source": "abstract",
+              "confidence": 0.9
+            },
+            {
+              "term": "science-related populism",
+              "normalized": "科学相关的民粹主义",
+              "std_label": "Science-Related Populism",
+              "evidence": "science-related populist attitudes",
+              "source": "introduction",
+              "confidence": 0.85
+            },
+            {
+              "term": "academic elites",
+              "normalized": "学术精英",
+              "std_label": "Academic Elites",
+              "evidence": "antagonism between 'the ordinary people'... and academic elites",
+              "source": "introduction",
+              "confidence": 0.8
+            },
+            {
+              "term": "common sense",
+              "normalized": "常识",
+              "std_label": "Common Sense",
+              "evidence": "common sense on one side and academic elites",
+              "source": "introduction",
+              "confidence": 0.75
+            }
+          ],
+          "统计学": [
+            {
+              "term": "preregistered survey",
+              "normalized": "预先注册调查",
+              "std_label": "Preregistered Survey",
+              "evidence": "preregistered 68-country survey",
+              "source": "abstract",
+              "confidence": 0.95
+            },
+            {
+              "term": "country-level variables",
+              "normalized": "国家层面变量",
+              "std_label": "Country-Level Variables",
+              "evidence": "country-level variables, including political orientation",
+              "source": "abstract",
+              "confidence": 0.9
+            },
+            {
+              "term": "directed acyclic graph",
+              "normalized": "有向无环图",
+              "std_label": "Directed Acyclic Graph",
+              "evidence": "Supplementary Fig. 1a for a directed acyclic graph",
+              "source": "introduction",
+              "confidence": 0.85
+            },
+            {
+              "term": "multidimensional trust measure",
+              "normalized": "多维信任测量",
+              "std_label": "Multidimensional Trust Measure",
+              "evidence": "theoretically informed multidimensional trust measure",
+              "source": "introduction",
+              "confidence": 0.8
+            },
+            {
+              "term": "reproducibility crisis",
+              "normalized": "可重复性危机",
+              "std_label": "Reproducibility Crisis",
+              "evidence": "a 'reproducibility crisis'",
+              "source": "introduction",
+              "confidence": 0.9
+            }
+          ]
+        }
+      },
+      "跨学科关系": [
+        {
+          "head": "public trust in scientists",
+          "relation": "enhances the basis for",
+          "relation_type": "improves_metric",
+          "relation_type_norm": "improves_metric",
+          "relation_type_raw": "improves_metric",
+          "tail": "evidence-based decision-making",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "Public trust in scientists can help decision makers act on the basis of the best available evidence",
+          "source": "abstract",
+          "confidence": 0.9
+        },
+        {
+          "head": "epistemic authority of science",
+          "relation": "positively influences",
+          "relation_type": "constrains",
+          "relation_type_norm": "constrains",
+          "relation_type_raw": "constrains",
+          "tail": "public trust in scientists",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "the epistemic authority of science has been challenged, causing concerns about low public trust in scientists",
+          "source": "abstract",
+          "confidence": 0.85
+        },
+        {
+          "head": "value alignment",
+          "relation": "positively affects",
+          "relation_type": "constrains",
+          "relation_type_norm": "constrains",
+          "relation_type_raw": "constrains",
+          "tail": "public trust in scientists",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "trust is affected by the perception of value alignment",
+          "source": "introduction",
+          "confidence": 0.8
+        },
+        {
+          "head": "political orientation",
+          "relation": "is an example of",
+          "relation_type": "maps_to",
+          "relation_type_norm": "maps_to",
+          "relation_type_raw": "maps_to",
+          "tail": "country-level variables",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "country-level variables, including political orientation",
+          "source": "abstract",
+          "confidence": 0.95
+        },
+        {
+          "head": "non-pharmaceutical interventions",
+          "relation": "co-occurring benefits with",
+          "relation_type": "corresponds_to",
+          "relation_type_norm": "corresponds_to",
+          "relation_type_raw": "corresponds_to",
+          "tail": "vaccine confidence",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "citizens were more likely to comply with non-pharmaceutical COVID-19 interventions and had higher vaccine confidence",
+          "source": "introduction",
+          "confidence": 0.9
+        },
+        {
+          "head": "science-related populism",
+          "relation": "opposes",
+          "relation_type": "constrains",
+          "relation_type_norm": "constrains",
+          "relation_type_raw": "constrains",
+          "tail": "academic elites",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "antagonism between 'the ordinary people'... and academic elites",
+          "source": "introduction",
+          "confidence": 0.85
+        },
+        {
+          "head": "survey methodology",
+          "relation": "applies",
+          "relation_type": "method_applied_to",
+          "relation_type_norm": "method_applied_to",
+          "relation_type_raw": "method_applied_to",
+          "tail": "preregistered survey",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "preregistered 68-country survey",
+          "source": "abstract",
+          "confidence": 0.9
+        },
+        {
+          "head": "demographic factors",
+          "relation": "explains variations in",
+          "relation_type": "explains",
+          "relation_type_norm": null,
+          "relation_type_raw": "explains",
+          "tail": "trust in scientists",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "demographic, ideological... factors to explain trust across countries",
+          "source": "introduction",
+          "confidence": 0.85
+        },
+        {
+          "head": "multidimensional trust measure",
+          "relation": "operationalizes",
+          "relation_type": "generalizes",
+          "relation_type_norm": "generalizes",
+          "relation_type_raw": "generalizes",
+          "tail": "trust in scientists",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "theoretically informed multidimensional trust measure",
+          "source": "introduction",
+          "confidence": 0.8
+        },
+        {
+          "head": "reproducibility crisis",
+          "relation": "challenges",
+          "relation_type": "constrains",
+          "relation_type_norm": "constrains",
+          "relation_type_raw": "constrains",
+          "tail": "epistemic authority of science",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "challenged by... a 'reproducibility crisis'",
+          "source": "introduction",
+          "confidence": 0.9
+        }
+      ],
+      "按辅助学科分类": {
+        "社会学": {
+          "概念": [
+            "循证决策",
+            "全球危机",
+            "政策影响",
+            "调查方法论",
+            "人口统计因素"
+          ],
+          "关系": [
+            0,
+            1,
+            6,
+            7
+          ],
+          "rationale": "社会学提供信任机制的理论框架并指导跨国调查设计"
+        },
+        "政治学": {
+          "概念": [
+            "政治倾向",
+            "政策制定",
+            "科学相关的民粹主义",
+            "学术精英",
+            "常识"
+          ],
+          "关系": [
+            3,
+            5
+          ],
+          "rationale": "政治学解析意识形态对科学信任度的调节作用"
+        },
+        "统计学": {
+          "概念": [
+            "预先注册调查",
+            "国家层面变量",
+            "有向无环图",
+            "多维信任测量",
+            "可重复性危机"
+          ],
+          "关系": [
+            2,
+            4,
+            6,
+            8,
+            9
+          ],
+          "rationale": "统计学构建量化分析模型并验证信任测量的可靠性"
+        }
+      },
+      "查询": {
+        "一级": "公众对科学家的信任受哪些社会规范因素影响？",
+        "二级": [
+          "政治倾向如何通过政策制定过程影响科学信任度？",
+          "多维信任测量方法如何提升跨国调查数据的可解释性？"
+        ],
+        "三级": [
+          "结合政治学的民粹主义理论与统计学的有向无环图模型，如何揭示意识形态与信任机制的非线性关系？",
+          "通过社会学的调查方法论整合统计学的可重复性验证，如何构建跨国科学信任度的动态评估框架？"
+        ]
+      },
+      "假设": {
+        "一级": [
+          [
+            {
+              "step": 1,
+              "head": "科学的社会规范认知",
+              "relation": "影响",
+              "tail": "价值观一致性",
+              "claim": "科学的社会规范认知通过塑造价值观一致性影响公众对科学家的信任"
+            },
+            {
+              "step": 2,
+              "head": "价值观一致性",
+              "relation": "正向作用",
+              "tail": "公众对科学家的信任",
+              "claim": "价值观一致性增强公众对科学家的信任基础"
+            },
+            {
+              "step": 3,
+              "head": "公众对科学家的信任",
+              "relation": "需政治学补位",
+              "tail": "政策制定",
+              "claim": "需引入政治学视角分析政策制定过程对信任机制的调节作用"
+            }
+          ],
+          [
+            {
+              "step": 1,
+              "head": "人口统计因素",
+              "relation": "解释变化",
+              "tail": "国家层面变量",
+              "claim": "人口统计因素通过国家层面变量差异解释信任度的跨国差异"
+            },
+            {
+              "step": 2,
+              "head": "国家层面变量",
+              "relation": "包含",
+              "tail": "政治倾向",
+              "claim": "国家层面变量中政治倾向维度对信任度具有显著影响"
+            },
+            {
+              "step": 3,
+              "head": "政治倾向",
+              "relation": "需统计学建模",
+              "tail": "有向无环图",
+              "claim": "需统计学方法构建有向无环图揭示政治倾向与信任的非线性关系"
+            }
+          ],
+          [
+            {
+              "step": 1,
+              "head": "多维信任测量",
+              "relation": "操作化",
+              "tail": "公众对科学家的信任",
+              "claim": "多维信任测量方法能更精准捕捉信任的复杂构成"
+            },
+            {
+              "step": 2,
+              "head": "公众对科学家的信任",
+              "relation": "依赖",
+              "tail": "预先注册调查",
+              "claim": "信任度测量依赖预先注册调查方法保证数据可靠性"
+            },
+            {
+              "step": 3,
+              "head": "预先注册调查",
+              "relation": "需统计学验证",
+              "tail": "可重复性危机",
+              "claim": "需统计学验证预先注册调查设计应对可重复性危机的能力"
+            }
+          ]
+        ],
+        "二级": [
+          [
+            {
+              "step": 1,
+              "head": "政治倾向",
+              "relation": "映射至",
+              "tail": "国家层面变量",
+              "claim": "政治倾向 映射至 国家层面变量"
+            },
+            {
+              "step": 2,
+              "head": "国家层面变量",
+              "relation": "驱动",
+              "tail": "政策制定",
+              "claim": "国家层面变量 驱动 政策制定"
+            },
+            {
+              "step": 3,
+              "head": "政策制定",
+              "relation": "塑造",
+              "tail": "科学的社会规范认知",
+              "claim": "政策制定 塑造 科学的社会规范认知"
+            }
+          ],
+          [
+            {
+              "step": 1,
+              "head": "多维信任测量",
+              "relation": "整合",
+              "tail": "调查方法论",
+              "claim": "多维信任测量 整合 调查方法论"
+            },
+            {
+              "step": 2,
+              "head": "调查方法论",
+              "relation": "应用",
+              "tail": "预先注册调查",
+              "claim": "调查方法论 应用 预先注册调查"
+            },
+            {
+              "step": 3,
+              "head": "预先注册调查",
+              "relation": "解析",
+              "tail": "国家层面变量",
+              "claim": "预先注册调查 解析 国家层面变量"
+            }
+          ]
+        ],
+        "三级": [
+          [
+            {
+              "step": 1,
+              "head": "科学相关的民粹主义",
+              "relation": "影响",
+              "tail": "学术精英",
+              "claim": "科学相关的民粹主义 学术精英"
+            },
+            {
+              "step": 2,
+              "head": "学术精英",
+              "relation": "导致",
+              "tail": "政策制定",
+              "claim": "学术精英 政策制定"
+            },
+            {
+              "step": 3,
+              "head": "政策制定",
+              "relation": "促进",
+              "tail": "公众对科学家的信任",
+              "claim": "政策制定 公众对科学家的信任"
+            }
+          ],
+          [
+            {
+              "step": 1,
+              "head": "调查方法论",
+              "relation": "影响",
+              "tail": "预先注册调查",
+              "claim": "调查方法论 预先注册调查"
+            },
+            {
+              "step": 2,
+              "head": "预先注册调查",
+              "relation": "导致",
+              "tail": "可重复性危机",
+              "claim": "预先注册调查 可重复性危机"
+            },
+            {
+              "step": 3,
+              "head": "可重复性危机",
+              "relation": "促进",
+              "tail": "科学的权威性",
+              "claim": "可重复性危机 科学的权威性"
+            }
+          ]
+        ],
+        "一级总结": [
+          "社会规范认知通过价值观一致性影响信任基础，需政治学补位政策制定分析",
+          "人口统计因素经国家层面变量传递影响，需统计学建模政治倾向与信任的复杂关系",
+          "多维信任测量依赖调查方法论创新，需统计学验证可重复性危机应对方案"
+        ],
+        "二级总结": [
+          "通过政治倾向映射至国家层面政策变量，揭示政策制定过程如何重构社会对科学规范的认知框架",
+          "多维信任测量整合调查方法论，通过预先注册调查解析跨国差异中的国家层面变量作用"
+        ],
+        "三级总结": [
+          "通过科学相关的民粹主义对学术精英的排斥性作用，揭示政策制定过程如何传导至公众信任的衰减机制",
+          "以预先注册调查方法强化可重复性验证，构建跨国评估框架中科学权威性与信任度的动态关联路径"
+        ]
+      },
+      "graph": {
+        "nodes": [
+          {
+            "id": "公众对科学家的信任",
+            "term": "public trust in scientists",
+            "normalized": "公众对科学家的信任",
+            "discipline": "社会学",
+            "evidence": "Public trust in scientists can help decision makers act on the basis of the best available evidence",
+            "source": "abstract",
+            "confidence": 0.95
+          },
+          {
+            "id": "科学的权威性",
+            "term": "epistemic authority of science",
+            "normalized": "科学的权威性",
+            "discipline": "社会学",
+            "evidence": "the epistemic authority of science has been challenged",
+            "source": "abstract",
+            "confidence": 0.9
+          },
+          {
+            "id": "科学的社会规范认知",
+            "term": "normative perceptions of science",
+            "normalized": "科学的社会规范认知",
+            "discipline": "社会学",
+            "evidence": "normative perceptions of science in society and policymaking",
+            "source": "introduction",
+            "confidence": 0.85
+          },
+          {
+            "id": "价值观一致性",
+            "term": "value alignment",
+            "normalized": "价值观一致性",
+            "discipline": "社会学",
+            "evidence": "trust is affected by the perception of value alignment",
+            "source": "introduction",
+            "confidence": 0.8
+          },
+          {
+            "id": "非药物干预措施",
+            "term": "non-pharmaceutical interventions",
+            "normalized": "非药物干预措施",
+            "discipline": "社会学",
+            "evidence": "comply with non-pharmaceutical COVID-19 interventions",
+            "source": "introduction",
+            "confidence": 0.9
+          },
+          {
+            "id": "疫苗信心",
+            "term": "vaccine confidence",
+            "normalized": "疫苗信心",
+            "discipline": "社会学",
+            "evidence": "higher vaccine confidence",
+            "source": "introduction",
+            "confidence": 0.9
+          },
+          {
+            "id": "个人与集体行动",
+            "term": "individual and collective action",
+            "normalized": "个人与集体行动",
+            "discipline": "社会学",
+            "evidence": "engage in individual and collective action on climate change",
+            "source": "introduction",
+            "confidence": 0.85
+          },
+          {
+            "id": "科研参与度",
+            "term": "research participation",
+            "normalized": "科研参与度",
+            "discipline": "社会学",
+            "evidence": "reduced research participation in some populations",
+            "source": "introduction",
+            "confidence": 0.8
+          },
+          {
+            "id": "错误信息与虚假信息",
+            "term": "misinformation and disinformation",
+            "normalized": "错误信息与虚假信息",
+            "discipline": "社会学",
+            "evidence": "challenged by misinformation and disinformation",
+            "source": "introduction",
+            "confidence": 0.9
+          },
+          {
+            "id": "种族范式",
+            "term": "racial paradigms",
+            "normalized": "种族范式",
+            "discipline": "社会学",
+            "evidence": "sustaining racial paradigms",
+            "source": "introduction",
+            "confidence": 0.75
+          },
+          {
+            "id": "伦理准则",
+            "term": "ethical canons",
+            "normalized": "伦理准则",
+            "discipline": "社会学",
+            "evidence": "disregarding ethical canons by experimenting on non-white human subjects",
+            "source": "introduction",
+            "confidence": 0.8
+          },
+          {
+            "id": "循证决策",
+            "term": "evidence-based decision-making",
+            "normalized": "循证决策",
+            "discipline": "社会学",
+            "evidence": "Science is crucial for evidence-based decision-making",
+            "source": "abstract",
+            "confidence": 0.95
+          },
+          {
+            "id": "全球危机",
+            "term": "global crises",
+            "normalized": "全球危机",
+            "discipline": "社会学",
+            "evidence": "management of global crises such as the COVID-19 pandemic",
+            "source": "introduction",
+            "confidence": 0.9
+          },
+          {
+            "id": "政策影响",
+            "term": "policy implications",
+            "normalized": "政策影响",
+            "discipline": "社会学",
+            "evidence": "These findings have implications for scientists and policymakers",
+            "source": "abstract",
+            "confidence": 0.85
+          },
+          {
+            "id": "调查方法论",
+            "term": "survey methodology",
+            "normalized": "调查方法论",
+            "discipline": "社会学",
+            "evidence": "preregistered 68-country survey",
+            "source": "abstract",
+            "confidence": 0.8
+          },
+          {
+            "id": "人口统计因素",
+            "term": "demographic factors",
+            "normalized": "人口统计因素",
+            "discipline": "社会学",
+            "evidence": "demographic, ideological, attitudinal and country-level factors",
+            "source": "introduction",
+            "confidence": 0.9
+          },
+          {
+            "id": "政治倾向",
+            "term": "political orientation",
+            "normalized": "政治倾向",
+            "discipline": "政治学",
+            "evidence": "including political orientation",
+            "source": "abstract",
+            "confidence": 0.95
+          },
+          {
+            "id": "政策制定",
+            "term": "policymaking",
+            "normalized": "政策制定",
+            "discipline": "政治学",
+            "evidence": "scientists should engage more in society and policymaking",
+            "source": "abstract",
+            "confidence": 0.9
+          },
+          {
+            "id": "科学相关的民粹主义",
+            "term": "science-related populism",
+            "normalized": "科学相关的民粹主义",
+            "discipline": "政治学",
+            "evidence": "science-related populist attitudes",
+            "source": "introduction",
+            "confidence": 0.85
+          },
+          {
+            "id": "学术精英",
+            "term": "academic elites",
+            "normalized": "学术精英",
+            "discipline": "政治学",
+            "evidence": "antagonism between 'the ordinary people'... and academic elites",
+            "source": "introduction",
+            "confidence": 0.8
+          },
+          {
+            "id": "常识",
+            "term": "common sense",
+            "normalized": "常识",
+            "discipline": "政治学",
+            "evidence": "common sense on one side and academic elites",
+            "source": "introduction",
+            "confidence": 0.75
+          },
+          {
+            "id": "预先注册调查",
+            "term": "preregistered survey",
+            "normalized": "预先注册调查",
+            "discipline": "统计学",
+            "evidence": "preregistered 68-country survey",
+            "source": "abstract",
+            "confidence": 0.95
+          },
+          {
+            "id": "国家层面变量",
+            "term": "country-level variables",
+            "normalized": "国家层面变量",
+            "discipline": "统计学",
+            "evidence": "country-level variables, including political orientation",
+            "source": "abstract",
+            "confidence": 0.9
+          },
+          {
+            "id": "有向无环图",
+            "term": "directed acyclic graph",
+            "normalized": "有向无环图",
+            "discipline": "统计学",
+            "evidence": "Supplementary Fig. 1a for a directed acyclic graph",
+            "source": "introduction",
+            "confidence": 0.85
+          },
+          {
+            "id": "多维信任测量",
+            "term": "multidimensional trust measure",
+            "normalized": "多维信任测量",
+            "discipline": "统计学",
+            "evidence": "theoretically informed multidimensional trust measure",
+            "source": "introduction",
+            "confidence": 0.8
+          },
+          {
+            "id": "可重复性危机",
+            "term": "reproducibility crisis",
+            "normalized": "可重复性危机",
+            "discipline": "统计学",
+            "evidence": "a 'reproducibility crisis'",
+            "source": "introduction",
+            "confidence": 0.9
+          },
+          {
+            "id": "trust in scientists",
+            "term": "trust in scientists",
+            "normalized": "trust in scientists",
+            "discipline": "struct_relation_inferred",
+            "evidence": "",
+            "source": "struct_relation_inferred",
+            "confidence": 0.8
+          }
+        ],
+        "edges": [
+          {
+            "source": "公众对科学家的信任",
+            "target": "循证决策",
+            "relation": "enhances the basis for",
+            "relation_type": "improves_metric",
+            "metadata": {
+              "evidence": "Public trust in scientists can help decision makers act on the basis of the best available evidence",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "科学的权威性",
+            "target": "公众对科学家的信任",
+            "relation": "positively influences",
+            "relation_type": "constrains",
+            "metadata": {
+              "evidence": "the epistemic authority of science has been challenged, causing concerns about low public trust in scientists",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "价值观一致性",
+            "target": "公众对科学家的信任",
+            "relation": "positively affects",
+            "relation_type": "constrains",
+            "metadata": {
+              "evidence": "trust is affected by the perception of value alignment",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "政治倾向",
+            "target": "国家层面变量",
+            "relation": "is an example of",
+            "relation_type": "maps_to",
+            "metadata": {
+              "evidence": "country-level variables, including political orientation",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "非药物干预措施",
+            "target": "疫苗信心",
+            "relation": "co-occurring benefits with",
+            "relation_type": "corresponds_to",
+            "metadata": {
+              "evidence": "citizens were more likely to comply with non-pharmaceutical COVID-19 interventions and had higher vaccine confidence",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "科学相关的民粹主义",
+            "target": "学术精英",
+            "relation": "opposes",
+            "relation_type": "constrains",
+            "metadata": {
+              "evidence": "antagonism between 'the ordinary people'... and academic elites",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "调查方法论",
+            "target": "预先注册调查",
+            "relation": "applies",
+            "relation_type": "method_applied_to",
+            "metadata": {
+              "evidence": "preregistered 68-country survey",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "人口统计因素",
+            "target": "trust in scientists",
+            "relation": "explains variations in",
+            "relation_type": "explains",
+            "metadata": {
+              "evidence": "demographic, ideological... factors to explain trust across countries",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "多维信任测量",
+            "target": "trust in scientists",
+            "relation": "operationalizes",
+            "relation_type": "generalizes",
+            "metadata": {
+              "evidence": "theoretically informed multidimensional trust measure",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "可重复性危机",
+            "target": "科学的权威性",
+            "relation": "challenges",
+            "relation_type": "constrains",
+            "metadata": {
+              "evidence": "challenged by... a 'reproducibility crisis'",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "科学的社会规范认知",
+            "target": "价值观一致性",
+            "relation": "影响",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "科学的社会规范认知通过塑造价值观一致性影响公众对科学家的信任",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "价值观一致性",
+            "target": "公众对科学家的信任",
+            "relation": "正向作用",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "价值观一致性增强公众对科学家的信任基础",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "公众对科学家的信任",
+            "target": "政策制定",
+            "relation": "需政治学补位",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "需引入政治学视角分析政策制定过程对信任机制的调节作用",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "人口统计因素",
+            "target": "国家层面变量",
+            "relation": "解释变化",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "人口统计因素通过国家层面变量差异解释信任度的跨国差异",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "国家层面变量",
+            "target": "政治倾向",
+            "relation": "包含",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "国家层面变量中政治倾向维度对信任度具有显著影响",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "政治倾向",
+            "target": "有向无环图",
+            "relation": "需统计学建模",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "需统计学方法构建有向无环图揭示政治倾向与信任的非线性关系",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "多维信任测量",
+            "target": "公众对科学家的信任",
+            "relation": "操作化",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "多维信任测量方法能更精准捕捉信任的复杂构成",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 2
+            }
+          },
+          {
+            "source": "公众对科学家的信任",
+            "target": "预先注册调查",
+            "relation": "依赖",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "信任度测量依赖预先注册调查方法保证数据可靠性",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 2
+            }
+          },
+          {
+            "source": "预先注册调查",
+            "target": "可重复性危机",
+            "relation": "需统计学验证",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "需统计学验证预先注册调查设计应对可重复性危机的能力",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 2
+            }
+          },
+          {
+            "source": "政治倾向",
+            "target": "国家层面变量",
+            "relation": "映射至",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "政治倾向 映射至 国家层面变量",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "国家层面变量",
+            "target": "政策制定",
+            "relation": "驱动",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "国家层面变量 驱动 政策制定",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "政策制定",
+            "target": "科学的社会规范认知",
+            "relation": "塑造",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "政策制定 塑造 科学的社会规范认知",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "多维信任测量",
+            "target": "调查方法论",
+            "relation": "整合",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "多维信任测量 整合 调查方法论",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "调查方法论",
+            "target": "预先注册调查",
+            "relation": "应用",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "调查方法论 应用 预先注册调查",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "预先注册调查",
+            "target": "国家层面变量",
+            "relation": "解析",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "预先注册调查 解析 国家层面变量",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "科学相关的民粹主义",
+            "target": "学术精英",
+            "relation": "影响",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "科学相关的民粹主义 学术精英",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "学术精英",
+            "target": "政策制定",
+            "relation": "导致",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "学术精英 政策制定",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "政策制定",
+            "target": "公众对科学家的信任",
+            "relation": "促进",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "政策制定 公众对科学家的信任",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "调查方法论",
+            "target": "预先注册调查",
+            "relation": "影响",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "调查方法论 预先注册调查",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "预先注册调查",
+            "target": "可重复性危机",
+            "relation": "导致",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "预先注册调查 可重复性危机",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "可重复性危机",
+            "target": "科学的权威性",
+            "relation": "促进",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "可重复性危机 科学的权威性",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          }
+        ]
+      },
+      "metrics": {
+        "path_consistency": 0.2857142857142857,
+        "coverage": 0.5555555555555556,
+        "bridging_score": 0.5862068965517241,
+        "rao_stirling_diversity": 0.2188,
+        "embedding_bridging": 0.3903,
+        "consistency_precision": 0.0,
+        "consistency_recall": 0.0,
+        "consistency_f1": 0.0,
+        "info_novelty": 0.0,
+        "chain_coherence": 0.7972,
+        "atypical_combination": 0.6352,
+        "kg_density": 0.0342,
+        "kg_inverse_modularity": 0.9225,
+        "kg_largest_cc_ratio": 0.6296,
+        "kg_avg_betweenness": 0.0269,
+        "kg_clustering_coefficient": 0.0,
+        "concept_recall": 0.0,
+        "concept_precision": 0.0,
+        "concept_f1": 0.0,
+        "relation_precision": 0.0,
+        "relation_type_accuracy": 0.0,
+        "evidence_coverage": 0.0,
+        "path_alignment_best": 0.0,
+        "path_alignment_mean": 0.0
+      }
+    },
+    "raw": "/* stage1: struct */\n/* concepts round1 */\n{\n  \"meta\": {\n    \"title\": \"Trust in scientists and their role in society across 68 countries\",\n    \"primary\": \"社会学\",\n    \"secondary_list\": [\"社会学\", \"政治学\", \"统计学\"]\n  },\n  \"概念\": {\n    \"主学科\": [\n      {\"term\": \"public trust in scientists\", \"normalized\": \"公众对科学家的信任\", \"std_label\": \"Public Trust in Scientists\", \"evidence\": \"Public trust in scientists can help decision makers act on the basis of the best available evidence\", \"source\": \"abstract\", \"confidence\": 0.95},\n      {\"term\": \"epistemic authority of science\", \"normalized\": \"科学的权威性\", \"std_label\": \"Epistemic Authority of Science\", \"evidence\": \"the epistemic authority of science has been challenged\", \"source\": \"abstract\", \"confidence\": 0.9},\n      {\"term\": \"normative perceptions of science\", \"normalized\": \"科学的社会规范认知\", \"std_label\": \"Normative Perceptions of Science\", \"evidence\": \"normative perceptions of science in society and policymaking\", \"source\": \"introduction\", \"confidence\": 0.85},\n      {\"term\": \"value alignment\", \"normalized\": \"价值观一致性\", \"std_label\": \"Value Alignment\", \"evidence\": \"trust is affected by the perception of value alignment\", \"source\": \"introduction\", \"confidence\": 0.8},\n      {\"term\": \"non-pharmaceutical interventions\", \"normalized\": \"非药物干预措施\", \"std_label\": \"Non-Pharmaceutical Interventions\", \"evidence\": \"comply with non-pharmaceutical COVID-19 interventions\", \"source\": \"introduction\", \"confidence\": 0.9},\n      {\"term\": \"vaccine confidence\", \"normalized\": \"疫苗信心\", \"std_label\": \"Vaccine Confidence\", \"evidence\": \"higher vaccine confidence\", \"source\": \"introduction\", \"confidence\": 0.9},\n      {\"term\": \"individual and collective action\", \"normalized\": \"个人与集体行动\", \"std_label\": \"Individual and Collective Action\", \"evidence\": \"engage in individual and collective action on climate change\", \"source\": \"introduction\", \"confidence\": 0.85},\n      {\"term\": \"research participation\", \"normalized\": \"科研参与度\", \"std_label\": \"Research Participation\", \"evidence\": \"reduced research participation in some populations\", \"source\": \"introduction\", \"confidence\": 0.8},\n      {\"term\": \"misinformation and disinformation\", \"normalized\": \"错误信息与虚假信息\", \"std_label\": \"Misinformation and Disinformation\", \"evidence\": \"challenged by misinformation and disinformation\", \"source\": \"introduction\", \"confidence\": 0.9},\n      {\"term\": \"racial paradigms\", \"normalized\": \"种族范式\", \"std_label\": \"Racial Paradigms\", \"evidence\": \"sustaining racial paradigms\", \"source\": \"introduction\", \"confidence\": 0.75},\n      {\"term\": \"ethical canons\", \"normalized\": \"伦理准则\", \"std_label\": \"Ethical Canons\", \"evidence\": \"disregarding ethical canons by experimenting on non-white human subjects\", \"source\": \"introduction\", \"confidence\": 0.8}\n    ],\n    \"辅学科\": {\n      \"社会学\": [\n        {\"term\": \"evidence-based decision-making\", \"normalized\": \"循证决策\", \"std_label\": \"Evidence-Based Decision-Making\", \"evidence\": \"Science is crucial for evidence-based decision-making\", \"source\": \"abstract\", \"confidence\": 0.95},\n        {\"term\": \"global crises\", \"normalized\": \"全球危机\", \"std_label\": \"Global Crises\", \"evidence\": \"management of global crises such as the COVID-19 pandemic\", \"source\": \"introduction\", \"confidence\": 0.9},\n        {\"term\": \"policy implications\", \"normalized\": \"政策影响\", \"std_label\": \"Policy Implications\", \"evidence\": \"These findings have implications for scientists and policymakers\", \"source\": \"abstract\", \"confidence\": 0.85},\n        {\"term\": \"survey methodology\", \"normalized\": \"调查方法论\", \"std_label\": \"Survey Methodology\", \"evidence\": \"preregistered 68-country survey\", \"source\": \"abstract\", \"confidence\": 0.8},\n        {\"term\": \"demographic factors\", \"normalized\": \"人口统计因素\", \"std_label\": \"Demographic Factors\", \"evidence\": \"demographic, ideological, attitudinal and country-level factors\", \"source\": \"introduction\", \"confidence\": 0.9}\n      ],\n      \"政治学\": [\n        {\"term\": \"political orientation\", \"normalized\": \"政治倾向\", \"std_label\": \"Political Orientation\", \"evidence\": \"including political orientation\", \"source\": \"abstract\", \"confidence\": 0.95},\n        {\"term\": \"policymaking\", \"normalized\": \"政策制定\", \"std_label\": \"Policymaking\", \"evidence\": \"scientists should engage more in society and policymaking\", \"source\": \"abstract\", \"confidence\": 0.9},\n        {\"term\": \"science-related populism\", \"normalized\": \"科学相关的民粹主义\", \"std_label\": \"Science-Related Populism\", \"evidence\": \"science-related populist attitudes\", \"source\": \"introduction\", \"confidence\": 0.85},\n        {\"term\": \"academic elites\", \"normalized\": \"学术精英\", \"std_label\": \"Academic Elites\", \"evidence\": \"antagonism between 'the ordinary people'... and academic elites\", \"source\": \"introduction\", \"confidence\": 0.8},\n        {\"term\": \"common sense\", \"normalized\": \"常识\", \"std_label\": \"Common Sense\", \"evidence\": \"common sense on one side and academic elites\", \"source\": \"introduction\", \"confidence\": 0.75}\n      ],\n      \"统计学\": [\n        {\"term\": \"preregistered survey\", \"normalized\": \"预先注册调查\", \"std_label\": \"Preregistered Survey\", \"evidence\": \"preregistered 68-country survey\", \"source\": \"abstract\", \"confidence\": 0.95},\n        {\"term\": \"country-level variables\", \"normalized\": \"国家层面变量\", \"std_label\": \"Country-Level Variables\", \"evidence\": \"country-level variables, including political orientation\", \"source\": \"abstract\", \"confidence\": 0.9},\n        {\"term\": \"directed acyclic graph\", \"normalized\": \"有向无环图\", \"std_label\": \"Directed Acyclic Graph\", \"evidence\": \"Supplementary Fig. 1a for a directed acyclic graph\", \"source\": \"introduction\", \"confidence\": 0.85},\n        {\"term\": \"multidimensional trust measure\", \"normalized\": \"多维信任测量\", \"std_label\": \"Multidimensional Trust Measure\", \"evidence\": \"theoretically informed multidimensional trust measure\", \"source\": \"introduction\", \"confidence\": 0.8},\n        {\"term\": \"reproducibility crisis\", \"normalized\": \"可重复性危机\", \"std_label\": \"Reproducibility Crisis\", \"evidence\": \"a 'reproducibility crisis'\", \"source\": \"introduction\", \"confidence\": 0.9}\n      ]\n    }\n  }\n}\n\n/* concepts round2 (supplement) */\n{\"补充概念\": {\"主学科\": [], \"辅学科\": {}}}\n\n/* relations */\n{\n  \"跨学科关系\": [\n    {\n      \"head\": \"public trust in scientists\",\n      \"tail\": \"evidence-based decision-making\",\n      \"relation\": \"enhances the basis for\",\n      \"relation_type\": \"improves_metric\",\n      \"direction\": \"->\",\n      \"evidence\": \"Public trust in scientists can help decision makers act on the basis of the best available evidence\",\n      \"source\": \"abstract\",\n      \"confidence\": 0.9\n    },\n    {\n      \"head\": \"epistemic authority of science\",\n      \"tail\": \"public trust in scientists\",\n      \"relation\": \"positively influences\",\n      \"relation_type\": \"constrains\",\n      \"direction\": \"->\",\n      \"evidence\": \"the epistemic authority of science has been challenged, causing concerns about low public trust in scientists\",\n      \"source\": \"abstract\",\n      \"confidence\": 0.85\n    },\n    {\n      \"head\": \"value alignment\",\n      \"tail\": \"public trust in scientists\",\n      \"relation\": \"positively affects\",\n      \"relation_type\": \"constrains\",\n      \"direction\": \"->\",\n      \"evidence\": \"trust is affected by the perception of value alignment\",\n      \"source\": \"introduction\",\n      \"confidence\": 0.8\n    },\n    {\n      \"head\": \"political orientation\",\n      \"tail\": \"country-level variables\",\n      \"relation\": \"is an example of\",\n      \"relation_type\": \"maps_to\",\n      \"direction\": \"->\",\n      \"evidence\": \"country-level variables, including political orientation\",\n      \"source\": \"abstract\",\n      \"confidence\": 0.95\n    },\n    {\n      \"head\": \"non-pharmaceutical interventions\",\n      \"tail\": \"vaccine confidence\",\n      \"relation\": \"co-occurring benefits with\",\n      \"relation_type\": \"corresponds_to\",\n      \"direction\": \"->\",\n      \"evidence\": \"citizens were more likely to comply with non-pharmaceutical COVID-19 interventions and had higher vaccine confidence\",\n      \"source\": \"introduction\",\n      \"confidence\": 0.9\n    },\n    {\n      \"head\": \"science-related populism\",\n      \"tail\": \"academic elites\",\n      \"relation\": \"opposes\",\n      \"relation_type\": \"constrains\",\n      \"direction\": \"->\",\n      \"evidence\": \"antagonism between 'the ordinary people'... and academic elites\",\n      \"source\": \"introduction\",\n      \"confidence\": 0.85\n    },\n    {\n      \"head\": \"survey methodology\",\n      \"tail\": \"preregistered survey\",\n      \"relation\": \"applies\",\n      \"relation_type\": \"method_applied_to\",\n      \"direction\": \"->\",\n      \"evidence\": \"preregistered 68-country survey\",\n      \"source\": \"abstract\",\n      \"confidence\": 0.9\n    },\n    {\n      \"head\": \"demographic factors\",\n      \"tail\": \"trust in scientists\",\n      \"relation\": \"explains variations in\",\n      \"relation_type\": \"explains\",\n      \"direction\": \"->\",\n      \"evidence\": \"demographic, ideological... factors to explain trust across countries\",\n      \"source\": \"introduction\",\n      \"confidence\": 0.85\n    },\n    {\n      \"head\": \"multidimensional trust measure\",\n      \"tail\": \"trust in scientists\",\n      \"relation\": \"operationalizes\",\n      \"relation_type\": \"generalizes\",\n      \"direction\": \"->\",\n      \"evidence\": \"theoretically informed multidimensional trust measure\",\n      \"source\": \"introduction\",\n      \"confidence\": 0.8\n    },\n    {\n      \"head\": \"reproducibility crisis\",\n      \"tail\": \"epistemic authority of science\",\n      \"relation\": \"challenges\",\n      \"relation_type\": \"constrains\",\n      \"direction\": \"->\",\n      \"evidence\": \"challenged by... a 'reproducibility crisis'\",\n      \"source\": \"introduction\",\n      \"confidence\": 0.9\n    }\n  ]\n}\n\n/* stage2: query */\n{\n  \"按辅助学科分类\": {\n    \"社会学\": {\n      \"概念\": [\"循证决策\", \"全球危机\", \"政策影响\", \"调查方法论\", \"人口统计因素\"],\n      \"关系\": [0, 1, 6, 7],\n      \"rationale\": \"社会学提供信任机制的理论框架并指导跨国调查设计\"\n    },\n    \"政治学\": {\n      \"概念\": [\"政治倾向\", \"政策制定\", \"科学相关的民粹主义\", \"学术精英\", \"常识\"],\n      \"关系\": [3, 5],\n      \"rationale\": \"政治学解析意识形态对科学信任度的调节作用\"\n    },\n    \"统计学\": {\n      \"概念\": [\"预先注册调查\", \"国家层面变量\", \"有向无环图\", \"多维信任测量\", \"可重复性危机\"],\n      \"关系\": [2, 4, 6, 8, 9],\n      \"rationale\": \"统计学构建量化分析模型并验证信任测量的可靠性\"\n    }\n  },\n  \"查询\": {\n    \"一级\": \"公众对科学家的信任受哪些社会规范因素影响？\",\n    \"二级\": [\n      \"政治倾向如何通过政策制定过程影响科学信任度？\",\n      \"多维信任测量方法如何提升跨国调查数据的可解释性？\"\n    ],\n    \"三级\": [\n      \"结合政治学的民粹主义理论与统计学的有向无环图模型，如何揭示意识形态与信任机制的非线性关系？\",\n      \"通过社会学的调查方法论整合统计学的可重复性验证，如何构建跨国科学信任度的动态评估框架？\"\n    ]\n  }\n}\n\n/* stage3: hypothesis L1 */\n{\n  \"假设\": {\n    \"一级\": [\n      [\n        {\n          \"step\": 1,\n          \"head\": \"科学的社会规范认知\",\n          \"relation\": \"影响\",\n          \"tail\": \"价值观一致性\",\n          \"claim\": \"科学的社会规范认知通过塑造价值观一致性影响公众对科学家的信任\"\n        },\n        {\n          \"step\": 2,\n          \"head\": \"价值观一致性\",\n          \"relation\": \"正向作用\",\n          \"tail\": \"公众对科学家的信任\",\n          \"claim\": \"价值观一致性增强公众对科学家的信任基础\"\n        },\n        {\n          \"step\": 3,\n          \"head\": \"公众对科学家的信任\",\n          \"relation\": \"需政治学补位\",\n          \"tail\": \"政策制定\",\n          \"claim\": \"需引入政治学视角分析政策制定过程对信任机制的调节作用\"\n        }\n      ],\n      [\n        {\n          \"step\": 1,\n          \"head\": \"人口统计因素\",\n          \"relation\": \"解释变化\",\n          \"tail\": \"国家层面变量\",\n          \"claim\": \"人口统计因素通过国家层面变量差异解释信任度的跨国差异\"\n        },\n        {\n          \"step\": 2,\n          \"head\": \"国家层面变量\",\n          \"relation\": \"包含\",\n          \"tail\": \"政治倾向\",\n          \"claim\": \"国家层面变量中政治倾向维度对信任度具有显著影响\"\n        },\n        {\n          \"step\": 3,\n          \"head\": \"政治倾向\",\n          \"relation\": \"需统计学建模\",\n          \"tail\": \"有向无环图\",\n          \"claim\": \"需统计学方法构建有向无环图揭示政治倾向与信任的非线性关系\"\n        }\n      ],\n      [\n        {\n          \"step\": 1,\n          \"head\": \"多维信任测量\",\n          \"relation\": \"操作化\",\n          \"tail\": \"公众对科学家的信任\",\n          \"claim\": \"多维信任测量方法能更精准捕捉信任的复杂构成\"\n        },\n        {\n          \"step\": 2,\n          \"head\": \"公众对科学家的信任\",\n          \"relation\": \"依赖\",\n          \"tail\": \"预先注册调查\",\n          \"claim\": \"信任度测量依赖预先注册调查方法保证数据可靠性\"\n        },\n        {\n          \"step\": 3,\n          \"head\": \"预先注册调查\",\n          \"relation\": \"需统计学验证\",\n          \"tail\": \"可重复性危机\",\n          \"claim\": \"需统计学验证预先注册调查设计应对可重复性危机的能力\"\n        }\n      ]\n    ],\n    \"一级总结\": [\n      \"社会规范认知通过价值观一致性影响信任基础，需政治学补位政策制定分析\",\n      \"人口统计因素经国家层面变量传递影响，需统计学建模政治倾向与信任的复杂关系\",\n      \"多维信任测量依赖调查方法论创新，需统计学验证可重复性危机应对方案\"\n    ]\n  }\n}\n\n/* stage3: hypothesis L2 */\n{\n  \"假设\": {\n    \"二级\": [\n      [\n        {\n          \"step\": 1,\n          \"head\": \"政治倾向\",\n          \"relation\": \"映射至\",\n          \"tail\": \"国家层面变量\"\n        },\n        {\n          \"step\": 2,\n          \"head\": \"国家层面变量\",\n          \"relation\": \"驱动\",\n          \"tail\": \"政策制定\"\n        },\n        {\n          \"step\": 3,\n          \"head\": \"政策制定\",\n          \"relation\": \"塑造\",\n          \"tail\": \"科学的社会规范认知\"\n        }\n      ],\n      [\n        {\n          \"step\": 1,\n          \"head\": \"多维信任测量\",\n          \"relation\": \"整合\",\n          \"tail\": \"调查方法论\"\n        },\n        {\n          \"step\": 2,\n          \"head\": \"调查方法论\",\n          \"relation\": \"应用\",\n          \"tail\": \"预先注册调查\"\n        },\n        {\n          \"step\": 3,\n          \"head\": \"预先注册调查\",\n          \"relation\": \"解析\",\n          \"tail\": \"国家层面变量\"\n        }\n      ]\n    ],\n    \"二级总结\": [\n      \"通过政治倾向映射至国家层面政策变量，揭示政策制定过程如何重构社会对科学规范的认知框架\",\n      \"多维信任测量整合调查方法论，通过预先注册调查解析跨国差异中的国家层面变量作用\"\n    ]\n  }\n}\n\n/* stage3: hypothesis L3 */\n{\n  \"假设\": {\n    \"三级\": [\n      [\n        {\n          \"step\": 1,\n          \"head\": \"科学相关的民粹主义\",\n          \"relation\": \"opposes\",\n          \"tail\": \"学术精英\"\n        },\n        {\n          \"step\": 2,\n          \"head\": \"学术精英\",\n          \"relation\": \"influences\",\n          \"tail\": \"政策制定\"\n        },\n        {\n          \"step\": 3,\n          \"head\": \"政策制定\",\n          \"relation\": \"shapes\",\n          \"tail\": \"公众对科学家的信任\"\n        }\n      ],\n      [\n        {\n          \"step\": 1,\n          \"head\": \"调查方法论\",\n          \"relation\": \"applies\",\n          \"tail\": \"预先注册调查\"\n        },\n        {\n          \"step\": 2,\n          \"head\": \"预先注册调查\",\n          \"relation\": \"addresses\",\n          \"tail\": \"可重复性危机\"\n        },\n        {\n          \"step\": 3,\n          \"head\": \"可重复性危机\",\n          \"relation\": \"undermines\",\n          \"tail\": \"科学的权威性\"\n        }\n      ]\n    ],\n    \"三级总结\": [\n      \"通过科学相关的民粹主义对学术精英的排斥性作用，揭示政策制定过程如何传导至公众信任的衰减机制\",\n      \"以预先注册调查方法强化可重复性验证，构建跨国评估框架中科学权威性与信任度的动态关联路径\"\n    ]\n  }\n}",
+    "ok": true,
+    "error": ""
+  }
+]

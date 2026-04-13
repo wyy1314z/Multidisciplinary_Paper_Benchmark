@@ -1,0 +1,56 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "石墨烯/MoS2/黑磷的垂直异质结构",
+        "relation": "enables",
+        "tail": "光电探测器的响应速度和光谱响应范围提升",
+        "claim": "通过构建异质结构，提升光电探测器的性能"
+      },
+      {
+        "step": 2,
+        "head": "异质界面",
+        "relation": "transforms",
+        "tail": "载流子分离与输运",
+        "claim": "异质界面实现高效载流子分离与输运"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "vdW异质结",
+        "relation": "requires",
+        "tail": "纳米级垂直传输通道",
+        "claim": "在vdW异质结中引入纳米级通道以降低暗电流"
+      },
+      {
+        "step": 2,
+        "head": "梯度功函数设计",
+        "relation": "enables",
+        "tail": "内置电场",
+        "claim": "梯度功函数设计形成内置电场以提升自驱动响应度"
+      }
+    ]
+  ],
+  "L3": [
+    [
+      {
+        "step": 1,
+        "head": "异质结探测器",
+        "relation": "couples with",
+        "tail": "等离子体超表面",
+        "claim": "异质结探测器与超表面耦合以提升灵敏度"
+      },
+      {
+        "step": 2,
+        "head": "芯片级异质集成方案",
+        "relation": "optimizes",
+        "tail": "3dB带宽",
+        "claim": "芯片级集成方案优化以实现高带宽"
+      }
+    ]
+  ]
+}

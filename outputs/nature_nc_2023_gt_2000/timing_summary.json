@@ -1,0 +1,99 @@
+{
+  "num_records": 4,
+  "by_stage": {
+    "stage0": {
+      "num_commands": 1,
+      "elapsed_sec_sum": 4.0,
+      "real_sec_sum": 4.76,
+      "max_rss_kb_max": 500744,
+      "commands": [
+        {
+          "command": "prepare_nature_nc_2023_candidates",
+          "elapsed_sec": 4.0,
+          "real_sec": 4.76,
+          "max_rss_kb": 500744,
+          "exit_code": 0
+        }
+      ]
+    },
+    "stage1": {
+      "num_commands": 1,
+      "elapsed_sec_sum": 4210.0,
+      "real_sec_sum": 4209.21,
+      "max_rss_kb_max": 814972,
+      "commands": [
+        {
+          "command": "classify_nature_nc_2023_candidates",
+          "elapsed_sec": 4210.0,
+          "real_sec": 4209.21,
+          "max_rss_kb": 814972,
+          "exit_code": 0
+        }
+      ]
+    },
+    "stage2": {
+      "num_commands": 1,
+      "elapsed_sec_sum": 14872.0,
+      "real_sec_sum": 14872.28,
+      "max_rss_kb_max": 4365612,
+      "commands": [
+        {
+          "command": "extract_nature_nc_2023_crossdisc",
+          "elapsed_sec": 14872.0,
+          "real_sec": 14872.28,
+          "max_rss_kb": 4365612,
+          "exit_code": 0
+        }
+      ]
+    },
+    "stage3": {
+      "num_commands": 1,
+      "elapsed_sec_sum": 2990.0,
+      "real_sec_sum": 2990.74,
+      "max_rss_kb_max": 204288,
+      "commands": [
+        {
+          "command": "build_nature_nc_2023_gt_dataset",
+          "elapsed_sec": 2990.0,
+          "real_sec": 2990.74,
+          "max_rss_kb": 204288,
+          "exit_code": 0
+        }
+      ]
+    }
+  },
+  "slowest_commands": [
+    {
+      "stage": "stage2",
+      "command": "extract_nature_nc_2023_crossdisc",
+      "elapsed_sec": 14872.0,
+      "real_sec": 14872.28,
+      "max_rss_kb": 4365612,
+      "exit_code": 0
+    },
+    {
+      "stage": "stage1",
+      "command": "classify_nature_nc_2023_candidates",
+      "elapsed_sec": 4210.0,
+      "real_sec": 4209.21,
+      "max_rss_kb": 814972,
+      "exit_code": 0
+    },
+    {
+      "stage": "stage3",
+      "command": "build_nature_nc_2023_gt_dataset",
+      "elapsed_sec": 2990.0,
+      "real_sec": 2990.74,
+      "max_rss_kb": 204288,
+      "exit_code": 0
+    },
+    {
+      "stage": "stage0",
+      "command": "prepare_nature_nc_2023_candidates",
+      "elapsed_sec": 4.0,
+      "real_sec": 4.76,
+      "max_rss_kb": 500744,
+      "exit_code": 0
+    }
+  ]
+}

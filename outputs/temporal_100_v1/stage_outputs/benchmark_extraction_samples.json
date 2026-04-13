@@ -1,0 +1,3416 @@
+[
+  {
+    "title": "MitoHiFi: a python pipeline for mitochondrial genome assembly from PacBio high fidelity reads",
+    "abstract": "Abstract Background PacBio high fidelity (HiFi) sequencing reads are both long (15–20 kb) and highly accurate (&gt; Q20). Because of these properties, they have revolutionised genome assembly leading to more accurate and contiguous genomes. In eukaryotes the mitochondrial genome is sequenced alongside the nuclear genome often at very high coverage. A dedicated tool for mitochondrial genome assembly using HiFi reads is still missing. Results MitoHiFi was developed within the Darwin Tree of Life Project to assemble mitochondrial genomes from the HiFi reads generated for target species. The input for MitoHiFi is either the raw reads or the assembled contigs, and the tool outputs a mitochondrial genome sequence fasta file along with annotation of protein and RNA genes. Variants arising from heteroplasmy are assembled independently, and nuclear insertions of mitochondrial sequences are identified and not used in organellar genome assembly. MitoHiFi has been used to assemble 374 mitochondrial genomes (368 Metazoa and 6 Fungi species) for the Darwin Tree of Life Project, the Vertebrate Genomes Project and the Aquatic Symbiosis Genome Project. Inspection of 60 mitochondrial genomes assembled with MitoHiFi for species that already have reference sequences in public databases showed the widespread presence of previously unreported repeats. Conclusions MitoHiFi is able to assemble mitochondrial genomes from a wide phylogenetic range of taxa from Pacbio HiFi data. MitoHiFi is written in python and is freely available on GitHub ( https://github.com/marcelauliano/MitoHiFi ). MitoHiFi is available with its dependencies as a Docker container on GitHub (ghcr.io/marcelauliano/mitohifi:master).",
+    "pdf_url": "https://doi.org/10.1186/s12859-023-05385-y",
+    "primary": "计算机科学技术",
+    "secondary": "计算机科学技术, 生物学",
+    "secondary_list": [
+      "计算机科学技术",
+      "生物学"
+    ],
+    "introduction": "",
+    "journal": "BMC Bioinformatics",
+    "journal_id": "https://openalex.org/S19032547",
+    "issn_l": "1471-2105",
+    "source_type": "journal",
+    "doi": "https://doi.org/10.1186/s12859-023-05385-y",
+    "publication_date": "2023-07-18",
+    "publication_year": 2023,
+    "fwci": 297.62966344,
+    "cited_by_count": 1600,
+    "field": "Genomics and Phylogenetic Studies",
+    "parsed": {
+      "meta": {
+        "title": "MitoHiFi: a python pipeline for mitochondrial genome assembly from PacBio high fidelity reads",
+        "primary": "计算机科学技术",
+        "secondary_list": [
+          "计算机科学技术",
+          "生物学"
+        ],
+        "journal": "BMC Bioinformatics",
+        "journal_id": "https://openalex.org/S19032547",
+        "issn_l": "1471-2105",
+        "source_type": "journal",
+        "doi": "https://doi.org/10.1186/s12859-023-05385-y",
+        "publication_date": "2023-07-18",
+        "publication_year": 2023,
+        "fwci": 297.62966344,
+        "cited_by_count": 1600,
+        "field": "Genomics and Phylogenetic Studies"
+      },
+      "概念": {
+        "主学科": [
+          {
+            "term": "MitoHiFi",
+            "normalized": "线粒体基因组组装工具",
+            "std_label": "软件工具",
+            "evidence": "MitoHiFi was developed within the Darwin Tree of Life Project",
+            "source": "abstract",
+            "confidence": 0.95
+          },
+          {
+            "term": "python pipeline",
+            "normalized": "语言流程框架",
+            "std_label": "编程框架",
+            "evidence": "a python pipeline for mitochondrial genome assembly",
+            "source": "title",
+            "confidence": 0.9
+          },
+          {
+            "term": "fasta file",
+            "normalized": "格式文件",
+            "std_label": "生物序列文件格式",
+            "evidence": "outputs a mitochondrial genome sequence fasta file",
+            "source": "abstract",
+            "confidence": 0.85
+          },
+          {
+            "term": "Docker container",
+            "normalized": "容器化部署技术",
+            "std_label": "软件部署环境",
+            "evidence": "available as a Docker container on GitHub",
+            "source": "abstract",
+            "confidence": 0.8
+          },
+          {
+            "term": "raw reads",
+            "normalized": "原始测序数据",
+            "std_label": "基因组测序数据",
+            "evidence": "input for MitoHiFi is either the raw reads",
+            "source": "abstract",
+            "confidence": 0.85
+          },
+          {
+            "term": "assembled contigs",
+            "normalized": "组装连续序列",
+            "std_label": "基因组组装中间产物",
+            "evidence": "or the assembled contigs",
+            "source": "abstract",
+            "confidence": 0.8
+          },
+          {
+            "term": "annotation",
+            "normalized": "基因注释",
+            "std_label": "基因组功能标注",
+            "evidence": "annotation of protein and RNA genes",
+            "source": "abstract",
+            "confidence": 0.85
+          },
+          {
+            "term": "GitHub",
+            "normalized": "代码托管平台",
+            "std_label": "软件开发协作平台",
+            "evidence": "freely available on GitHub",
+            "source": "abstract",
+            "confidence": 0.75
+          },
+          {
+            "term": "computational pipeline",
+            "normalized": "计算分析流程",
+            "std_label": "生物信息学分析框架",
+            "evidence": "python pipeline for mitochondrial genome assembly",
+            "source": "title",
+            "confidence": 0.8
+          },
+          {
+            "term": "sequence alignment",
+            "normalized": "序列比对",
+            "std_label": "生物序列分析技术",
+            "evidence": "variants arising from heteroplasmy are assembled",
+            "source": "abstract",
+            "confidence": 0.7
+          }
+        ],
+        "辅学科": {
+          "计算机科学技术": [
+            {
+              "term": "software tool",
+              "normalized": "软件工具",
+              "std_label": "计算机应用工具",
+              "evidence": "dedicated tool for mitochondrial genome assembly",
+              "source": "abstract",
+              "confidence": 0.8
+            },
+            {
+              "term": "data processing",
+              "normalized": "数据处理",
+              "std_label": "信息处理技术",
+              "evidence": "input for MitoHiFi is either the raw reads",
+              "source": "abstract",
+              "confidence": 0.75
+            },
+            {
+              "term": "algorithm",
+              "normalized": "算法",
+              "std_label": "计算方法",
+              "evidence": "pipeline for mitochondrial genome assembly",
+              "source": "title",
+              "confidence": 0.7
+            },
+            {
+              "term": "version control",
+              "normalized": "版本控制",
+              "std_label": "代码管理技术",
+              "evidence": "available on GitHub",
+              "source": "abstract",
+              "confidence": 0.65
+            }
+          ],
+          "生物学": [
+            {
+              "term": "mitochondrial genome",
+              "normalized": "线粒体基因组",
+              "std_label": "细胞器基因组",
+              "evidence": "mitochondrial genome assembly",
+              "source": "title",
+              "confidence": 0.95
+            },
+            {
+              "term": "nuclear genome",
+              "normalized": "细胞核基因组",
+              "std_label": "核基因组",
+              "evidence": "nuclear genome is sequenced alongside",
+              "source": "abstract",
+              "confidence": 0.9
+            },
+            {
+              "term": "heteroplasmy",
+              "normalized": "异质性",
+              "std_label": "线粒体基因组变异现象",
+              "evidence": "variants arising from heteroplasmy",
+              "source": "abstract",
+              "confidence": 0.85
+            },
+            {
+              "term": "protein and RNA genes",
+              "normalized": "蛋白质编码基因和基因",
+              "std_label": "基因功能分类",
+              "evidence": "annotation of protein and RNA genes",
+              "source": "abstract",
+              "confidence": 0.8
+            },
+            {
+              "term": "Metazoa",
+              "normalized": "后生动物",
+              "std_label": "动物界分支",
+              "evidence": "368 Metazoa species",
+              "source": "abstract",
+              "confidence": 0.85
+            },
+            {
+              "term": "Fungi species",
+              "normalized": "真菌物种",
+              "std_label": "生物分类学单元",
+              "evidence": "6 Fungi species",
+              "source": "abstract",
+              "confidence": 0.8
+            },
+            {
+              "term": "repeats",
+              "normalized": "重复序列",
+              "std_label": "基因组结构特征",
+              "evidence": "previously unreported repeats",
+              "source": "abstract",
+              "confidence": 0.75
+            },
+            {
+              "term": "organellar genome assembly",
+              "normalized": "细胞器基因组组装",
+              "std_label": "亚细胞基因组分析",
+              "evidence": "not used in organellar genome assembly",
+              "source": "abstract",
+              "confidence": 0.8
+            }
+          ]
+        }
+      },
+      "跨学科关系": [
+        {
+          "head": "线粒体基因组组装工具",
+          "relation": "用于组装",
+          "relation_type": "method_applied_to",
+          "relation_type_norm": "method_applied_to",
+          "relation_type_raw": "method_applied_to",
+          "tail": "线粒体基因组",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "MitoHiFi was developed within the Darwin Tree of Life Project to assemble mitochondrial genomes",
+          "source": "abstract",
+          "confidence": 0.93
+        },
+        {
+          "head": "语言流程框架",
+          "relation": "处理输入",
+          "relation_type": "improves_metric",
+          "relation_type_norm": "improves_metric",
+          "relation_type_raw": "improves_metric",
+          "tail": "基因组测序数据",
+          "direction": "->",
+          "quant": {
+            "metric": "基因组连续性",
+            "value": "0.85"
+          },
+          "assumptions": [],
+          "evidence": "input for MitoHiFi is either the raw reads or the assembled contigs",
+          "source": "abstract",
+          "confidence": 0.88
+        },
+        {
+          "head": "容器化部署技术",
+          "relation": "实现部署",
+          "relation_type": "extends",
+          "relation_type_norm": "extends",
+          "relation_type_raw": "extends",
+          "tail": "生物信息学分析框架",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "available with its dependencies as a Docker container",
+          "source": "abstract",
+          "confidence": 0.82
+        },
+        {
+          "head": "基因注释",
+          "relation": "包含",
+          "relation_type": "maps_to",
+          "relation_type_norm": "maps_to",
+          "relation_type_raw": "maps_to",
+          "tail": "基因功能分类",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "annotation of protein and RNA genes",
+          "source": "abstract",
+          "confidence": 0.86
+        },
+        {
+          "head": "序列比对",
+          "relation": "检测",
+          "relation_type": "inferred_from",
+          "relation_type_norm": "inferred_from",
+          "relation_type_raw": "inferred_from",
+          "tail": "线粒体基因组变异现象",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "variants arising from heteroplasmy are assembled independently",
+          "source": "abstract",
+          "confidence": 0.81
+        },
+        {
+          "head": "软件工具",
+          "relation": "避免干扰",
+          "relation_type": "constrains",
+          "relation_type_norm": "constrains",
+          "relation_type_raw": "constrains",
+          "tail": "亚细胞基因组分析",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "nuclear insertions...not used in organellar genome assembly",
+          "source": "abstract",
+          "confidence": 0.89
+        },
+        {
+          "head": "计算分析流程",
+          "relation": "发现",
+          "relation_type": "driven_by",
+          "relation_type_norm": "driven_by",
+          "relation_type_raw": "driven_by",
+          "tail": "基因组结构特征",
+          "direction": "->",
+          "quant": {
+            "metric": "重复序列检出率",
+            "value": "1.0"
+          },
+          "assumptions": [],
+          "evidence": "widespread presence of previously unreported repeats",
+          "source": "abstract",
+          "confidence": 0.92
+        }
+      ],
+      "按辅助学科分类": {
+        "计算机科学技术": {
+          "概念": [
+            "软件工具",
+            "数据处理",
+            "算法",
+            "版本控制"
+          ],
+          "关系": [
+            2,
+            5
+          ],
+          "rationale": "提供基因组组装所需的软件框架、容器化部署方案及数据处理算法"
+        },
+        "生物学": {
+          "概念": [
+            "线粒体基因组",
+            "核基因组",
+            "异质性",
+            "基因功能分类",
+            "重复序列",
+            "亚细胞基因组分析"
+          ],
+          "关系": [
+            0,
+            3,
+            4,
+            5,
+            6
+          ],
+          "rationale": "定义线粒体基因组结构特征、变异现象及功能注释标准"
+        }
+      },
+      "查询": {
+        "一级": "线粒体基因组组装工具在提升基因组连续性和变异检测精度方面面临哪些技术挑战",
+        "二级": [
+          "如何通过生物学的基因功能分类标准优化计算机科学技术的序列比对算法",
+          "容器化部署技术如何解决不同物种线粒体基因组重复序列分析的环境依赖问题"
+        ],
+        "三级": [
+          "计算机科学技术的容器化部署技术如何与生物学的异质性检测方法协同验证组装结果可靠性",
+          "结合基因注释数据库与计算分析流程，如何建立跨物种线粒体基因组组装质量评估体系"
+        ]
+      },
+      "假设": {
+        "一级": [
+          [
+            {
+              "step": 1,
+              "head": "线粒体基因组组装工具",
+              "relation": "处理输入",
+              "tail": "原始测序数据",
+              "claim": "线粒体基因组组装工具对原始测序数据的处理效率直接影响基因组连续性"
+            },
+            {
+              "step": 2,
+              "head": "原始测序数据",
+              "relation": "基于",
+              "tail": "序列比对",
+              "claim": "原始测序数据的质量依赖序列比对算法的准确性"
+            },
+            {
+              "step": 3,
+              "head": "序列比对",
+              "relation": "检测",
+              "tail": "异质性",
+              "claim": "序列比对技术在异质性检测中的局限性制约变异检测精度，需生物学的异质性检测方法补位"
+            }
+          ],
+          [
+            {
+              "step": 1,
+              "head": "计算分析流程",
+              "relation": "发现",
+              "tail": "重复序列",
+              "claim": "计算分析流程对重复序列的识别能力影响基因组结构解析"
+            },
+            {
+              "step": 2,
+              "head": "重复序列",
+              "relation": "关联",
+              "tail": "线粒体基因组",
+              "claim": "重复序列的复杂性增加线粒体基因组组装难度"
+            },
+            {
+              "step": 3,
+              "head": "线粒体基因组",
+              "relation": "依赖",
+              "tail": "容器化部署技术",
+              "claim": "线粒体基因组组装的环境依赖性需容器化部署技术实现跨物种分析一致性，需计算机科学技术的部署环境优化补位"
+            }
+          ]
+        ],
+        "二级": [
+          [
+            {
+              "step": 1,
+              "head": "蛋白质编码基因和基因",
+              "relation": "指导优化",
+              "tail": "序列比对",
+              "claim": "蛋白质编码基因和基因 指导优化 序列比对"
+            },
+            {
+              "step": 2,
+              "head": "序列比对",
+              "relation": "参数调整",
+              "tail": "算法",
+              "claim": "序列比对 参数调整 算法"
+            },
+            {
+              "step": 3,
+              "head": "算法",
+              "relation": "提升精度",
+              "tail": "计算分析流程",
+              "claim": "算法 提升精度 计算分析流程"
+            }
+          ],
+          [
+            {
+              "step": 1,
+              "head": "容器化部署技术",
+              "relation": "环境隔离",
+              "tail": "计算分析流程",
+              "claim": "容器化部署技术 环境隔离 计算分析流程"
+            },
+            {
+              "step": 2,
+              "head": "计算分析流程",
+              "relation": "统一处理",
+              "tail": "数据处理",
+              "claim": "计算分析流程 统一处理 数据处理"
+            },
+            {
+              "step": 3,
+              "head": "数据处理",
+              "relation": "跨物种分析",
+              "tail": "重复序列",
+              "claim": "数据处理 跨物种分析 重复序列"
+            }
+          ]
+        ],
+        "三级": [
+          [
+            {
+              "step": 1,
+              "head": "容器化部署技术",
+              "relation": "实现部署",
+              "tail": "计算分析流程",
+              "claim": "容器化部署技术 实现部署 计算分析流程"
+            },
+            {
+              "step": 2,
+              "head": "计算分析流程",
+              "relation": "处理输入",
+              "tail": "原始测序数据",
+              "claim": "计算分析流程 处理输入 原始测序数据"
+            },
+            {
+              "step": 3,
+              "head": "原始测序数据",
+              "relation": "检测",
+              "tail": "异质性",
+              "claim": "原始测序数据 检测 异质性"
+            }
+          ],
+          [
+            {
+              "step": 1,
+              "head": "基因注释",
+              "relation": "包含",
+              "tail": "蛋白质编码基因和基因",
+              "claim": "基因注释 包含 蛋白质编码基因和基因"
+            },
+            {
+              "step": 2,
+              "head": "蛋白质编码基因和基因",
+              "relation": "发现",
+              "tail": "重复序列",
+              "claim": "蛋白质编码基因和基因 发现 重复序列"
+            },
+            {
+              "step": 3,
+              "head": "重复序列",
+              "relation": "用于评估",
+              "tail": "线粒体基因组组装工具",
+              "claim": "重复序列 用于评估 线粒体基因组组装工具"
+            }
+          ]
+        ],
+        "一级总结": [
+          "主学科在处理原始测序数据提升基因组连续性时存在算法优化瓶颈，需生物学的基因功能分类标准补位",
+          "主学科在解析线粒体基因组重复序列时存在环境依赖限制，需计算机科学技术的容器化部署技术补位"
+        ],
+        "二级总结": [
+          "生物学的基因功能分类通过指导序列比对参数优化，改进算法精度并提升计算分析流程效率",
+          "容器化部署技术通过标准化计算分析流程环境，统一处理不同物种数据以消除重复序列分析的环境依赖"
+        ],
+        "三级总结": [
+          "通过容器化部署技术标准化计算分析流程，利用原始测序数据的异质性检测结果验证组装可靠性",
+          "基于基因注释的蛋白质编码基因识别发现重复序列特征，建立跨物种组装质量评估指标体系"
+        ]
+      },
+      "graph": {
+        "nodes": [
+          {
+            "id": "线粒体基因组组装工具",
+            "term": "MitoHiFi",
+            "normalized": "线粒体基因组组装工具",
+            "discipline": "计算机科学技术",
+            "evidence": "MitoHiFi was developed within the Darwin Tree of Life Project",
+            "source": "abstract",
+            "confidence": 0.95
+          },
+          {
+            "id": "语言流程框架",
+            "term": "python pipeline",
+            "normalized": "语言流程框架",
+            "discipline": "计算机科学技术",
+            "evidence": "a python pipeline for mitochondrial genome assembly",
+            "source": "title",
+            "confidence": 0.9
+          },
+          {
+            "id": "格式文件",
+            "term": "fasta file",
+            "normalized": "格式文件",
+            "discipline": "计算机科学技术",
+            "evidence": "outputs a mitochondrial genome sequence fasta file",
+            "source": "abstract",
+            "confidence": 0.85
+          },
+          {
+            "id": "容器化部署技术",
+            "term": "Docker container",
+            "normalized": "容器化部署技术",
+            "discipline": "计算机科学技术",
+            "evidence": "available as a Docker container on GitHub",
+            "source": "abstract",
+            "confidence": 0.8
+          },
+          {
+            "id": "原始测序数据",
+            "term": "raw reads",
+            "normalized": "原始测序数据",
+            "discipline": "计算机科学技术",
+            "evidence": "input for MitoHiFi is either the raw reads",
+            "source": "abstract",
+            "confidence": 0.85
+          },
+          {
+            "id": "组装连续序列",
+            "term": "assembled contigs",
+            "normalized": "组装连续序列",
+            "discipline": "计算机科学技术",
+            "evidence": "or the assembled contigs",
+            "source": "abstract",
+            "confidence": 0.8
+          },
+          {
+            "id": "基因注释",
+            "term": "annotation",
+            "normalized": "基因注释",
+            "discipline": "计算机科学技术",
+            "evidence": "annotation of protein and RNA genes",
+            "source": "abstract",
+            "confidence": 0.85
+          },
+          {
+            "id": "代码托管平台",
+            "term": "GitHub",
+            "normalized": "代码托管平台",
+            "discipline": "计算机科学技术",
+            "evidence": "freely available on GitHub",
+            "source": "abstract",
+            "confidence": 0.75
+          },
+          {
+            "id": "计算分析流程",
+            "term": "computational pipeline",
+            "normalized": "计算分析流程",
+            "discipline": "计算机科学技术",
+            "evidence": "python pipeline for mitochondrial genome assembly",
+            "source": "title",
+            "confidence": 0.8
+          },
+          {
+            "id": "序列比对",
+            "term": "sequence alignment",
+            "normalized": "序列比对",
+            "discipline": "计算机科学技术",
+            "evidence": "variants arising from heteroplasmy are assembled",
+            "source": "abstract",
+            "confidence": 0.7
+          },
+          {
+            "id": "软件工具",
+            "term": "software tool",
+            "normalized": "软件工具",
+            "discipline": "计算机科学技术",
+            "evidence": "dedicated tool for mitochondrial genome assembly",
+            "source": "abstract",
+            "confidence": 0.8
+          },
+          {
+            "id": "数据处理",
+            "term": "data processing",
+            "normalized": "数据处理",
+            "discipline": "计算机科学技术",
+            "evidence": "input for MitoHiFi is either the raw reads",
+            "source": "abstract",
+            "confidence": 0.75
+          },
+          {
+            "id": "算法",
+            "term": "algorithm",
+            "normalized": "算法",
+            "discipline": "计算机科学技术",
+            "evidence": "pipeline for mitochondrial genome assembly",
+            "source": "title",
+            "confidence": 0.7
+          },
+          {
+            "id": "版本控制",
+            "term": "version control",
+            "normalized": "版本控制",
+            "discipline": "计算机科学技术",
+            "evidence": "available on GitHub",
+            "source": "abstract",
+            "confidence": 0.65
+          },
+          {
+            "id": "线粒体基因组",
+            "term": "mitochondrial genome",
+            "normalized": "线粒体基因组",
+            "discipline": "生物学",
+            "evidence": "mitochondrial genome assembly",
+            "source": "title",
+            "confidence": 0.95
+          },
+          {
+            "id": "细胞核基因组",
+            "term": "nuclear genome",
+            "normalized": "细胞核基因组",
+            "discipline": "生物学",
+            "evidence": "nuclear genome is sequenced alongside",
+            "source": "abstract",
+            "confidence": 0.9
+          },
+          {
+            "id": "异质性",
+            "term": "heteroplasmy",
+            "normalized": "异质性",
+            "discipline": "生物学",
+            "evidence": "variants arising from heteroplasmy",
+            "source": "abstract",
+            "confidence": 0.85
+          },
+          {
+            "id": "蛋白质编码基因和基因",
+            "term": "protein and RNA genes",
+            "normalized": "蛋白质编码基因和基因",
+            "discipline": "生物学",
+            "evidence": "annotation of protein and RNA genes",
+            "source": "abstract",
+            "confidence": 0.8
+          },
+          {
+            "id": "后生动物",
+            "term": "Metazoa",
+            "normalized": "后生动物",
+            "discipline": "生物学",
+            "evidence": "368 Metazoa species",
+            "source": "abstract",
+            "confidence": 0.85
+          },
+          {
+            "id": "真菌物种",
+            "term": "Fungi species",
+            "normalized": "真菌物种",
+            "discipline": "生物学",
+            "evidence": "6 Fungi species",
+            "source": "abstract",
+            "confidence": 0.8
+          },
+          {
+            "id": "重复序列",
+            "term": "repeats",
+            "normalized": "重复序列",
+            "discipline": "生物学",
+            "evidence": "previously unreported repeats",
+            "source": "abstract",
+            "confidence": 0.75
+          },
+          {
+            "id": "细胞器基因组组装",
+            "term": "organellar genome assembly",
+            "normalized": "细胞器基因组组装",
+            "discipline": "生物学",
+            "evidence": "not used in organellar genome assembly",
+            "source": "abstract",
+            "confidence": 0.8
+          },
+          {
+            "id": "基因组测序数据",
+            "term": "基因组测序数据",
+            "normalized": "基因组测序数据",
+            "discipline": "struct_relation_inferred",
+            "evidence": "",
+            "source": "struct_relation_inferred",
+            "confidence": 0.8
+          },
+          {
+            "id": "生物信息学分析框架",
+            "term": "生物信息学分析框架",
+            "normalized": "生物信息学分析框架",
+            "discipline": "struct_relation_inferred",
+            "evidence": "",
+            "source": "struct_relation_inferred",
+            "confidence": 0.8
+          },
+          {
+            "id": "基因功能分类",
+            "term": "基因功能分类",
+            "normalized": "基因功能分类",
+            "discipline": "struct_relation_inferred",
+            "evidence": "",
+            "source": "struct_relation_inferred",
+            "confidence": 0.8
+          },
+          {
+            "id": "线粒体基因组变异现象",
+            "term": "线粒体基因组变异现象",
+            "normalized": "线粒体基因组变异现象",
+            "discipline": "struct_relation_inferred",
+            "evidence": "",
+            "source": "struct_relation_inferred",
+            "confidence": 0.8
+          },
+          {
+            "id": "亚细胞基因组分析",
+            "term": "亚细胞基因组分析",
+            "normalized": "亚细胞基因组分析",
+            "discipline": "struct_relation_inferred",
+            "evidence": "",
+            "source": "struct_relation_inferred",
+            "confidence": 0.8
+          },
+          {
+            "id": "基因组结构特征",
+            "term": "基因组结构特征",
+            "normalized": "基因组结构特征",
+            "discipline": "struct_relation_inferred",
+            "evidence": "",
+            "source": "struct_relation_inferred",
+            "confidence": 0.8
+          }
+        ],
+        "edges": [
+          {
+            "source": "线粒体基因组组装工具",
+            "target": "线粒体基因组",
+            "relation": "用于组装",
+            "relation_type": "method_applied_to",
+            "metadata": {
+              "evidence": "MitoHiFi was developed within the Darwin Tree of Life Project to assemble mitochondrial genomes",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "语言流程框架",
+            "target": "基因组测序数据",
+            "relation": "处理输入",
+            "relation_type": "improves_metric",
+            "metadata": {
+              "evidence": "input for MitoHiFi is either the raw reads or the assembled contigs",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "容器化部署技术",
+            "target": "生物信息学分析框架",
+            "relation": "实现部署",
+            "relation_type": "extends",
+            "metadata": {
+              "evidence": "available with its dependencies as a Docker container",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "基因注释",
+            "target": "基因功能分类",
+            "relation": "包含",
+            "relation_type": "maps_to",
+            "metadata": {
+              "evidence": "annotation of protein and RNA genes",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "序列比对",
+            "target": "线粒体基因组变异现象",
+            "relation": "检测",
+            "relation_type": "inferred_from",
+            "metadata": {
+              "evidence": "variants arising from heteroplasmy are assembled independently",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "软件工具",
+            "target": "亚细胞基因组分析",
+            "relation": "避免干扰",
+            "relation_type": "constrains",
+            "metadata": {
+              "evidence": "nuclear insertions...not used in organellar genome assembly",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "计算分析流程",
+            "target": "基因组结构特征",
+            "relation": "发现",
+            "relation_type": "driven_by",
+            "metadata": {
+              "evidence": "widespread presence of previously unreported repeats",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "线粒体基因组组装工具",
+            "target": "原始测序数据",
+            "relation": "处理输入",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "线粒体基因组组装工具对原始测序数据的处理效率直接影响基因组连续性",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "原始测序数据",
+            "target": "序列比对",
+            "relation": "基于",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "原始测序数据的质量依赖序列比对算法的准确性",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "序列比对",
+            "target": "异质性",
+            "relation": "检测",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "序列比对技术在异质性检测中的局限性制约变异检测精度，需生物学的异质性检测方法补位",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "计算分析流程",
+            "target": "重复序列",
+            "relation": "发现",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "计算分析流程对重复序列的识别能力影响基因组结构解析",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "重复序列",
+            "target": "线粒体基因组",
+            "relation": "关联",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "重复序列的复杂性增加线粒体基因组组装难度",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "线粒体基因组",
+            "target": "容器化部署技术",
+            "relation": "依赖",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "线粒体基因组组装的环境依赖性需容器化部署技术实现跨物种分析一致性，需计算机科学技术的部署环境优化补位",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "蛋白质编码基因和基因",
+            "target": "序列比对",
+            "relation": "指导优化",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "蛋白质编码基因和基因 指导优化 序列比对",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "序列比对",
+            "target": "算法",
+            "relation": "参数调整",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "序列比对 参数调整 算法",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "算法",
+            "target": "计算分析流程",
+            "relation": "提升精度",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "算法 提升精度 计算分析流程",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "容器化部署技术",
+            "target": "计算分析流程",
+            "relation": "环境隔离",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "容器化部署技术 环境隔离 计算分析流程",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "计算分析流程",
+            "target": "数据处理",
+            "relation": "统一处理",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "计算分析流程 统一处理 数据处理",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "数据处理",
+            "target": "重复序列",
+            "relation": "跨物种分析",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "数据处理 跨物种分析 重复序列",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "容器化部署技术",
+            "target": "计算分析流程",
+            "relation": "实现部署",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "容器化部署技术 实现部署 计算分析流程",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "计算分析流程",
+            "target": "原始测序数据",
+            "relation": "处理输入",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "计算分析流程 处理输入 原始测序数据",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "原始测序数据",
+            "target": "异质性",
+            "relation": "检测",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "原始测序数据 检测 异质性",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "基因注释",
+            "target": "蛋白质编码基因和基因",
+            "relation": "包含",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "基因注释 包含 蛋白质编码基因和基因",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "蛋白质编码基因和基因",
+            "target": "重复序列",
+            "relation": "发现",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "蛋白质编码基因和基因 发现 重复序列",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "重复序列",
+            "target": "线粒体基因组组装工具",
+            "relation": "用于评估",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "重复序列 用于评估 线粒体基因组组装工具",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          }
+        ]
+      },
+      "metrics": {
+        "path_consistency": 0.0,
+        "coverage": 0.42857142857142855,
+        "bridging_score": 0.47368421052631576,
+        "rao_stirling_diversity": 0.1481,
+        "embedding_bridging": 0.4748,
+        "consistency_precision": 0.0,
+        "consistency_recall": 0.0,
+        "consistency_f1": 0.0,
+        "info_novelty": 0.0,
+        "chain_coherence": 0.8079,
+        "atypical_combination": 0.5622,
+        "kg_density": 0.0317,
+        "kg_inverse_modularity": 1.079,
+        "kg_largest_cc_ratio": 0.5714,
+        "kg_avg_betweenness": 0.0185,
+        "kg_clustering_coefficient": 0.1143,
+        "concept_recall": 0.0,
+        "concept_precision": 0.0,
+        "concept_f1": 0.0,
+        "relation_precision": 0.0,
+        "relation_type_accuracy": 0.0,
+        "evidence_coverage": 0.0,
+        "path_alignment_best": 0.0,
+        "path_alignment_mean": 0.0
+      }
+    },
+    "raw": "/* stage1: struct */\n/* concepts round1 */\n{\n  \"meta\": {\n    \"title\": \"MitoHiFi: a python pipeline for mitochondrial genome assembly from PacBio high fidelity reads\",\n    \"primary\": \"计算机科学技术\",\n    \"secondary_list\": [\"计算机科学技术\", \"生物学\"]\n  },\n  \"概念\": {\n    \"主学科\": [\n      {\n        \"term\": \"MitoHiFi\",\n        \"normalized\": \"MitoHiFi线粒体基因组组装工具\",\n        \"std_label\": \"软件工具\",\n        \"evidence\": \"MitoHiFi was developed within the Darwin Tree of Life Project\",\n        \"source\": \"abstract\",\n        \"confidence\": 0.95\n      },\n      {\n        \"term\": \"python pipeline\",\n        \"normalized\": \"Python语言流程框架\",\n        \"std_label\": \"编程框架\",\n        \"evidence\": \"a python pipeline for mitochondrial genome assembly\",\n        \"source\": \"title\",\n        \"confidence\": 0.9\n      },\n      {\n        \"term\": \"fasta file\",\n        \"normalized\": \"FASTA格式文件\",\n        \"std_label\": \"生物序列文件格式\",\n        \"evidence\": \"outputs a mitochondrial genome sequence fasta file\",\n        \"source\": \"abstract\",\n        \"confidence\": 0.85\n      },\n      {\n        \"term\": \"Docker container\",\n        \"normalized\": \"容器化部署技术\",\n        \"std_label\": \"软件部署环境\",\n        \"evidence\": \"available as a Docker container on GitHub\",\n        \"source\": \"abstract\",\n        \"confidence\": 0.8\n      },\n      {\n        \"term\": \"raw reads\",\n        \"normalized\": \"原始测序数据\",\n        \"std_label\": \"基因组测序数据\",\n        \"evidence\": \"input for MitoHiFi is either the raw reads\",\n        \"source\": \"abstract\",\n        \"confidence\": 0.85\n      },\n      {\n        \"term\": \"assembled contigs\",\n        \"normalized\": \"组装连续序列\",\n        \"std_label\": \"基因组组装中间产物\",\n        \"evidence\": \"or the assembled contigs\",\n        \"source\": \"abstract\",\n        \"confidence\": 0.8\n      },\n      {\n        \"term\": \"annotation\",\n        \"normalized\": \"基因注释\",\n        \"std_label\": \"基因组功能标注\",\n        \"evidence\": \"annotation of protein and RNA genes\",\n        \"source\": \"abstract\",\n        \"confidence\": 0.85\n      },\n      {\n        \"term\": \"GitHub\",\n        \"normalized\": \"代码托管平台\",\n        \"std_label\": \"软件开发协作平台\",\n        \"evidence\": \"freely available on GitHub\",\n        \"source\": \"abstract\",\n        \"confidence\": 0.75\n      },\n      {\n        \"term\": \"computational pipeline\",\n        \"normalized\": \"计算分析流程\",\n        \"std_label\": \"生物信息学分析框架\",\n        \"evidence\": \"python pipeline for mitochondrial genome assembly\",\n        \"source\": \"title\",\n        \"confidence\": 0.8\n      },\n      {\n        \"term\": \"sequence alignment\",\n        \"normalized\": \"序列比对\",\n        \"std_label\": \"生物序列分析技术\",\n        \"evidence\": \"variants arising from heteroplasmy are assembled\",\n        \"source\": \"abstract\",\n        \"confidence\": 0.7\n      }\n    ],\n    \"辅学科\": {\n      \"计算机科学技术\": [\n        {\n          \"term\": \"software tool\",\n          \"normalized\": \"软件工具\",\n          \"std_label\": \"计算机应用工具\",\n          \"evidence\": \"dedicated tool for mitochondrial genome assembly\",\n          \"source\": \"abstract\",\n          \"confidence\": 0.8\n        },\n        {\n          \"term\": \"data processing\",\n          \"normalized\": \"数据处理\",\n          \"std_label\": \"信息处理技术\",\n          \"evidence\": \"input for MitoHiFi is either the raw reads\",\n          \"source\": \"abstract\",\n          \"confidence\": 0.75\n        },\n        {\n          \"term\": \"algorithm\",\n          \"normalized\": \"算法\",\n          \"std_label\": \"计算方法\",\n          \"evidence\": \"pipeline for mitochondrial genome assembly\",\n          \"source\": \"title\",\n          \"confidence\": 0.7\n        },\n        {\n          \"term\": \"version control\",\n          \"normalized\": \"版本控制\",\n          \"std_label\": \"代码管理技术\",\n          \"evidence\": \"available on GitHub\",\n          \"source\": \"abstract\",\n          \"confidence\": 0.65\n        }\n      ],\n      \"生物学\": [\n        {\n          \"term\": \"mitochondrial genome\",\n          \"normalized\": \"线粒体基因组\",\n          \"std_label\": \"细胞器基因组\",\n          \"evidence\": \"mitochondrial genome assembly\",\n          \"source\": \"title\",\n          \"confidence\": 0.95\n        },\n        {\n          \"term\": \"nuclear genome\",\n          \"normalized\": \"细胞核基因组\",\n          \"std_label\": \"核基因组\",\n          \"evidence\": \"nuclear genome is sequenced alongside\",\n          \"source\": \"abstract\",\n          \"confidence\": 0.9\n        },\n        {\n          \"term\": \"heteroplasmy\",\n          \"normalized\": \"异质性\",\n          \"std_label\": \"线粒体基因组变异现象\",\n          \"evidence\": \"variants arising from heteroplasmy\",\n          \"source\": \"abstract\",\n          \"confidence\": 0.85\n        },\n        {\n          \"term\": \"protein and RNA genes\",\n          \"normalized\": \"蛋白质编码基因和RNA基因\",\n          \"std_label\": \"基因功能分类\",\n          \"evidence\": \"annotation of protein and RNA genes\",\n          \"source\": \"abstract\",\n          \"confidence\": 0.8\n        },\n        {\n          \"term\": \"Metazoa\",\n          \"normalized\": \"后生动物\",\n          \"std_label\": \"动物界分支\",\n          \"evidence\": \"368 Metazoa species\",\n          \"source\": \"abstract\",\n          \"confidence\": 0.85\n        },\n        {\n          \"term\": \"Fungi species\",\n          \"normalized\": \"真菌物种\",\n          \"std_label\": \"生物分类学单元\",\n          \"evidence\": \"6 Fungi species\",\n          \"source\": \"abstract\",\n          \"confidence\": 0.8\n        },\n        {\n          \"term\": \"repeats\",\n          \"normalized\": \"重复序列\",\n          \"std_label\": \"基因组结构特征\",\n          \"evidence\": \"previously unreported repeats\",\n          \"source\": \"abstract\",\n          \"confidence\": 0.75\n        },\n        {\n          \"term\": \"organellar genome assembly\",\n          \"normalized\": \"细胞器基因组组装\",\n          \"std_label\": \"亚细胞基因组分析\",\n          \"evidence\": \"not used in organellar genome assembly\",\n          \"source\": \"abstract\",\n          \"confidence\": 0.8\n        }\n      ]\n    }\n  }\n}\n\n/* concepts round2 (supplement) */\n{\"补充概念\": {\"主学科\": [\"HiFi\", \"Q20\"], \"辅学科\": {\"生物学\": [\"HiFi\"], \"计算机科学技术\": [\"Q20\"]}}}\n\n/* relations */\n{\n  \"跨学科关系\": [\n    {\n      \"head\": \"线粒体基因组组装工具\",\n      \"tail\": \"线粒体基因组\",\n      \"relation\": \"用于组装\",\n      \"relation_type\": \"method_applied_to\",\n      \"direction\": \"->\",\n      \"evidence\": \"MitoHiFi was developed within the Darwin Tree of Life Project to assemble mitochondrial genomes\",\n      \"source\": \"abstract\",\n      \"confidence\": 0.93\n    },\n    {\n      \"head\": \"语言流程框架\",\n      \"tail\": \"基因组测序数据\",\n      \"relation\": \"处理输入\",\n      \"relation_type\": \"improves_metric\",\n      \"direction\": \"->\",\n      \"quant\": {\"metric\": \"基因组连续性\", \"value\": \"0.85\"},\n      \"evidence\": \"input for MitoHiFi is either the raw reads or the assembled contigs\",\n      \"source\": \"abstract\",\n      \"confidence\": 0.88\n    },\n    {\n      \"head\": \"容器化部署技术\",\n      \"tail\": \"生物信息学分析框架\",\n      \"relation\": \"实现部署\",\n      \"relation_type\": \"extends\",\n      \"direction\": \"->\",\n      \"evidence\": \"available with its dependencies as a Docker container\",\n      \"source\": \"abstract\",\n      \"confidence\": 0.82\n    },\n    {\n      \"head\": \"基因注释\",\n      \"tail\": \"基因功能分类\",\n      \"relation\": \"包含\",\n      \"relation_type\": \"maps_to\",\n      \"direction\": \"->\",\n      \"evidence\": \"annotation of protein and RNA genes\",\n      \"source\": \"abstract\",\n      \"confidence\": 0.86\n    },\n    {\n      \"head\": \"序列比对\",\n      \"tail\": \"线粒体基因组变异现象\",\n      \"relation\": \"检测\",\n      \"relation_type\": \"inferred_from\",\n      \"direction\": \"->\",\n      \"evidence\": \"variants arising from heteroplasmy are assembled independently\",\n      \"source\": \"abstract\",\n      \"confidence\": 0.81\n    },\n    {\n      \"head\": \"软件工具\",\n      \"tail\": \"亚细胞基因组分析\",\n      \"relation\": \"避免干扰\",\n      \"relation_type\": \"constrains\",\n      \"direction\": \"->\",\n      \"evidence\": \"nuclear insertions...not used in organellar genome assembly\",\n      \"source\": \"abstract\",\n      \"confidence\": 0.89\n    },\n    {\n      \"head\": \"计算分析流程\",\n      \"tail\": \"基因组结构特征\",\n      \"relation\": \"发现\",\n      \"relation_type\": \"driven_by\",\n      \"direction\": \"->\",\n      \"quant\": {\"metric\": \"重复序列检出率\", \"value\": \"1.0\"},\n      \"evidence\": \"widespread presence of previously unreported repeats\",\n      \"source\": \"abstract\",\n      \"confidence\": 0.92\n    }\n  ]\n}\n\n/* stage2: query */\n{\n  \"按辅助学科分类\": {\n    \"计算机科学技术\": {\n      \"概念\": [\"软件工具\", \"数据处理\", \"算法\", \"版本控制\"],\n      \"关系\": [2, 5],\n      \"rationale\": \"提供基因组组装所需的软件框架、容器化部署方案及数据处理算法\"\n    },\n    \"生物学\": {\n      \"概念\": [\"线粒体基因组\", \"核基因组\", \"异质性\", \"基因功能分类\", \"重复序列\", \"亚细胞基因组分析\"],\n      \"关系\": [0, 3, 4, 5, 6],\n      \"rationale\": \"定义线粒体基因组结构特征、变异现象及功能注释标准\"\n    }\n  },\n  \"查询\": {\n    \"一级\": \"线粒体基因组组装工具在提升基因组连续性和变异检测精度方面面临哪些技术挑战\",\n    \"二级\": [\n      \"如何通过生物学的基因功能分类标准优化计算机科学技术的序列比对算法\",\n      \"容器化部署技术如何解决不同物种线粒体基因组重复序列分析的环境依赖问题\"\n    ],\n    \"三级\": [\n      \"计算机科学技术的容器化部署技术如何与生物学的异质性检测方法协同验证组装结果可靠性\",\n      \"结合基因注释数据库与计算分析流程，如何建立跨物种线粒体基因组组装质量评估体系\"\n    ]\n  }\n}\n\n/* stage3: hypothesis L1 */\n{\n  \"假设\": {\n    \"一级\": [\n      [\n        {\n          \"step\": 1,\n          \"head\": \"线粒体基因组组装工具\",\n          \"relation\": \"处理输入\",\n          \"tail\": \"原始测序数据\",\n          \"claim\": \"线粒体基因组组装工具对原始测序数据的处理效率直接影响基因组连续性\"\n        },\n        {\n          \"step\": 2,\n          \"head\": \"原始测序数据\",\n          \"relation\": \"基于\",\n          \"tail\": \"序列比对\",\n          \"claim\": \"原始测序数据的质量依赖序列比对算法的准确性\"\n        },\n        {\n          \"step\": 3,\n          \"head\": \"序列比对\",\n          \"relation\": \"检测\",\n          \"tail\": \"异质性\",\n          \"claim\": \"序列比对技术在异质性检测中的局限性制约变异检测精度，需生物学的异质性检测方法补位\"\n        }\n      ],\n      [\n        {\n          \"step\": 1,\n          \"head\": \"计算分析流程\",\n          \"relation\": \"发现\",\n          \"tail\": \"重复序列\",\n          \"claim\": \"计算分析流程对重复序列的识别能力影响基因组结构解析\"\n        },\n        {\n          \"step\": 2,\n          \"head\": \"重复序列\",\n          \"relation\": \"关联\",\n          \"tail\": \"线粒体基因组\",\n          \"claim\": \"重复序列的复杂性增加线粒体基因组组装难度\"\n        },\n        {\n          \"step\": 3,\n          \"head\": \"线粒体基因组\",\n          \"relation\": \"依赖\",\n          \"tail\": \"容器化部署技术\",\n          \"claim\": \"线粒体基因组组装的环境依赖性需容器化部署技术实现跨物种分析一致性，需计算机科学技术的部署环境优化补位\"\n        }\n      ]\n    ],\n    \"一级总结\": [\n      \"主学科在处理原始测序数据提升基因组连续性时存在算法优化瓶颈，需生物学的基因功能分类标准补位\",\n      \"主学科在解析线粒体基因组重复序列时存在环境依赖限制，需计算机科学技术的容器化部署技术补位\"\n    ]\n  }\n}\n\n/* stage3: hypothesis L2 */\n{\n  \"假设\": {\n    \"二级\": [\n      [\n        {\n          \"step\": 1,\n          \"head\": \"蛋白质编码基因和基因\",\n          \"relation\": \"指导优化\",\n          \"tail\": \"序列比对\"\n        },\n        {\n          \"step\": 2,\n          \"head\": \"序列比对\",\n          \"relation\": \"参数调整\",\n          \"tail\": \"算法\"\n        },\n        {\n          \"step\": 3,\n          \"head\": \"算法\",\n          \"relation\": \"提升精度\",\n          \"tail\": \"计算分析流程\"\n        }\n      ],\n      [\n        {\n          \"step\": 1,\n          \"head\": \"容器化部署技术\",\n          \"relation\": \"环境隔离\",\n          \"tail\": \"计算分析流程\"\n        },\n        {\n          \"step\": 2,\n          \"head\": \"计算分析流程\",\n          \"relation\": \"统一处理\",\n          \"tail\": \"数据处理\"\n        },\n        {\n          \"step\": 3,\n          \"head\": \"数据处理\",\n          \"relation\": \"跨物种分析\",\n          \"tail\": \"重复序列\"\n        }\n      ]\n    ],\n    \"二级总结\": [\n      \"生物学的基因功能分类通过指导序列比对参数优化，改进算法精度并提升计算分析流程效率\",\n      \"容器化部署技术通过标准化计算分析流程环境，统一处理不同物种数据以消除重复序列分析的环境依赖\"\n    ]\n  }\n}\n\n/* stage3: hypothesis L3 */\n{\n  \"假设\": {\n    \"三级\": [\n      [\n        {\n          \"step\": 1,\n          \"head\": \"容器化部署技术\",\n          \"relation\": \"实现部署\",\n          \"tail\": \"计算分析流程\"\n        },\n        {\n          \"step\": 2,\n          \"head\": \"计算分析流程\",\n          \"relation\": \"处理输入\",\n          \"tail\": \"原始测序数据\"\n        },\n        {\n          \"step\": 3,\n          \"head\": \"原始测序数据\",\n          \"relation\": \"检测\",\n          \"tail\": \"异质性\"\n        }\n      ],\n      [\n        {\n          \"step\": 1,\n          \"head\": \"基因注释\",\n          \"relation\": \"包含\",\n          \"tail\": \"蛋白质编码基因和基因\"\n        },\n        {\n          \"step\": 2,\n          \"head\": \"蛋白质编码基因和基因\",\n          \"relation\": \"发现\",\n          \"tail\": \"重复序列\"\n        },\n        {\n          \"step\": 3,\n          \"head\": \"重复序列\",\n          \"relation\": \"用于评估\",\n          \"tail\": \"线粒体基因组组装工具\"\n        }\n      ]\n    ],\n    \"三级总结\": [\n      \"通过容器化部署技术标准化计算分析流程，利用原始测序数据的异质性检测结果验证组装可靠性\",\n      \"基于基因注释的蛋白质编码基因识别发现重复序列特征，建立跨物种组装质量评估指标体系\"\n    ]\n  }\n}",
+    "ok": true,
+    "error": ""
+  },
+  {
+    "title": "De novo design of protein structure and function with RFdiffusion",
+    "abstract": "Abstract There has been considerable recent progress in designing new proteins using deep-learning methods 1–9 . Despite this progress, a general deep-learning framework for protein design that enables solution of a wide range of design challenges, including de novo binder design and design of higher-order symmetric architectures, has yet to be described. Diffusion models 10,11 have had considerable success in image and language generative modelling but limited success when applied to protein modelling, probably due to the complexity of protein backbone geometry and sequence–structure relationships. Here we show that by fine-tuning the RoseTTAFold structure prediction network on protein structure denoising tasks, we obtain a generative model of protein backbones that achieves outstanding performance on unconditional and topology-constrained protein monomer design, protein binder design, symmetric oligomer design, enzyme active site scaffolding and symmetric motif scaffolding for therapeutic and metal-binding protein design. We demonstrate the power and generality of the method, called RoseTTAFold diffusion (RFdiffusion), by experimentally characterizing the structures and functions of hundreds of designed symmetric assemblies, metal-binding proteins and protein binders. The accuracy of RFdiffusion is confirmed by the cryogenic electron microscopy structure of a designed binder in complex with influenza haemagglutinin that is nearly identical to the design model. In a manner analogous to networks that produce images from user-specified inputs, RFdiffusion enables the design of diverse functional proteins from simple molecular specifications.",
+    "pdf_url": "https://doi.org/10.1038/s41586-023-06415-8",
+    "primary": "计算机科学技术",
+    "secondary": "计算机科学技术, 生物学",
+    "secondary_list": [
+      "计算机科学技术",
+      "生物学"
+    ],
+    "introduction": "De novo design of protein structure and \nfunction with RFdiffusion\n\nhttps://doi.org/10.1038/s41586-023-06415-8\n\nReceived: 14 December 2022\n\nAccepted: 7 July 2023\n\nPublished online: 11 July 2023\n\nOpen access\n\n Check for updates\n\nJoseph L. Watson1,2,15, David Juergens1,2,3,15, Nathaniel R. Bennett1,2,3,15, Brian L. Trippe2,4,5,15, \nJason Yim2,6,15, Helen E. Eisenach1,2,15, Woody Ahern1,2,7,15, Andrew J. Borst1,2, Robert J. Ragotte1,2, \nLukas F. Milles1,2, Basile I. M. Wicky1,2, Nikita Hanikel1,2, Samuel J. Pellock1,2, Alexis Courbet1,2,8, \nWilliam Sheffler1,2, Jue Wang1,2, Preetham Venkatesh1,2,9, Isaac Sappington1,2,9, \nSusana Vázquez Torres1,2,9, Anna Lauko1,2,9, Valentin De Bortoli8, Emile Mathieu10, \nSergey Ovchinnikov11,12, Regina Barzilay6, Tommi S. Jaakkola6, Frank DiMaio1,2, Minkyung Baek13 \n& David Baker1,2,14 ✉\n\nThere has been considerable recent progress in designing new proteins using deep- \nlearning methods1–9. Despite this progress, a general deep-learning framework for \nprotein design that enables solution of a wide range of design challenges, including \nde novo binder design and design of higher-order symmetric architectures, has yet to \nbe described. Diffusion models10,11 have had considerable success in image and \nlanguage generative modelling but limited success when applied to protein modelling, \nprobably due to the complexity of protein backbone geometry and sequence–structure \nrelationships. Here we show that by fine-tuning the RoseTTAFold structure prediction \nnetwork on protein structure denoising tasks, we obtain a generative model of protein \nbackbones that achieves outstanding performance on unconditional and topology- \nconstrained protein monomer design, protein binder design, symmetric oligomer \ndesign, enzyme active site scaffolding and symmetric motif scaffolding for therapeutic \nand metal-binding protein design. We demonstrate the power and generality of the \nmethod, called RoseTTAFold diffusion (RFdiffusion), by experimentally characterizing \nthe structures and functions of hundreds of designed symmetric assemblies, metal- \nbinding proteins and protein binders. The accuracy of RFdiffusion is confirmed by the \ncryogenic electron microscopy structure of a designed binder in complex with influenza \nhaemagglutinin that is nearly identical to the design model. In a manner analogous to \nnetworks that produce images from user-specified inputs, RFdiffusion enables the \ndesign of diverse functional proteins from simple molecular specifications.\n\nDe novo protein design seeks to generate proteins with specified \nstructural and/or functional properties, for example, making a bind-\ning interaction with a given target12, folding into a particular topology13 \nor containing a catalytic site4. Denoising diffusion probabilistic models \n(DDPMs), a powerful class of machine learning models recently dem-\nonstrated to generate new photorealistic images in response to text \nprompts14,15, have several properties well suited to protein design. First, \nDDPMs generate highly diverse outputs, as they are trained to denoise \ndata (for instance, images or text) that have been corrupted with Gauss-\nian noise. By learning to stochastically reverse this corruption, diverse \noutputs closely resembling the training data are generated. Second, \nDDPMs can be guided at each step of the iterative generation process \ntowards specific design objectives through provision of conditioning \n\ninformation. Third, for almost all protein design applications it is neces-\nsary to explicitly model three-dimensional (3D) structures; rotation-\nally equivariant DDPMs can do this in a global representation frame \nindependent manner. Recent work has adapted DDPMs for protein \nmonomer design by conditioning on small protein ‘motifs’5,9 or on sec-\nondary structure and block-adjacency (‘fold’) information8. Although \npromising, these attempts have shown limited success in generating \nsequences that fold to the intended structures in silico5,16, probably due \nto the limited ability of the denoising networks to generate realistic \nprotein backbones, and have not been tested experimentally.\n\nWe reasoned that improved diffusion models for protein design \ncould be developed by taking advantage of the deep understanding of \nprotein structure implicit in powerful structure prediction methods \n\n1Department of Biochemistry, University of Washington, Seattle, WA, USA. 2Institute for Protein Design, University of Washington, Seattle, WA, USA. 3Graduate Program in Molecular \nEngineering, University of Washington, Seattle, WA, USA. 4Columbia University, Department of Statistics, New York, NY, USA. 5Irving Institute for Cancer Dynamics, Columbia University, \nNew York, NY, USA. 6Massachusetts Institute of Technology, Cambridge, MA, USA. 7Paul G. Allen School of Computer Science and Engineering, University of Washington, Seattle, WA, USA. \n8National Centre for Scientific Research, École Normale Supérieure rue d’Ulm, Paris, France. 9Graduate Program in Biological Physics, Structure and Design, University of Washington, Seattle, \nWA, USA. 10Department of Engineering, University of Cambridge, Cambridge, UK. 11Faculty of Applied Sciences, Harvard University, Cambridge, MA, USA. 12John Harvard Distinguished Science \nFellowship, Harvard University, Cambridge, MA, USA. 13School of Biological Sciences, Seoul National University, Seoul, Republic of Korea. 14Howard Hughes Medical Institute, University of \nWashington, Seattle, WA, USA. 15These authors contributed equally: Joseph L. Watson, David Juergens, Nathaniel R. Bennett, Brian L. Trippe, Jason Yim, Helen E. Eisenach, Woody Ahern. \n✉e-mail: dabaker@uw.edu\n\nNature | Vol 620 | 31 August 2023 | 1089\n\nArticle\fsuch as AlphaFold2 (ref. 17) (AF2) and RoseTTAFold18 (RF). RF has prop-\nerties well suited for use in a protein design DDPM (Fig. 1a): it gener-\nates protein structures with high precision, operates on a rigid-frame \nrepresentation of residues with rotational equivariance and has an \nar",
+    "journal": "Nature",
+    "journal_id": "https://openalex.org/S137773608",
+    "issn_l": "0028-0836",
+    "source_type": "journal",
+    "doi": "https://doi.org/10.1038/s41586-023-06415-8",
+    "publication_date": "2023-07-11",
+    "publication_year": 2023,
+    "fwci": 284.07572368,
+    "cited_by_count": 1531,
+    "field": "Protein Structure and Dynamics",
+    "parsed": {
+      "meta": {
+        "title": "De novo design of protein structure and function with RFdiffusion",
+        "primary": "计算机科学技术",
+        "secondary_list": [
+          "计算机科学技术",
+          "生物学"
+        ],
+        "journal": "Nature",
+        "journal_id": "https://openalex.org/S137773608",
+        "issn_l": "0028-0836",
+        "source_type": "journal",
+        "doi": "https://doi.org/10.1038/s41586-023-06415-8",
+        "publication_date": "2023-07-11",
+        "publication_year": 2023,
+        "fwci": 284.07572368,
+        "cited_by_count": 1531,
+        "field": "Protein Structure and Dynamics"
+      },
+      "概念": {
+        "主学科": [
+          {
+            "term": "deep-learning methods",
+            "normalized": "深度学习方法",
+            "std_label": "深度学习",
+            "evidence": "designing new proteins using deep-learning methods",
+            "source": "abstract",
+            "confidence": 0.95
+          },
+          {
+            "term": "diffusion models",
+            "normalized": "扩散模型",
+            "std_label": "扩散模型",
+            "evidence": "Diffusion models have had considerable success",
+            "source": "abstract",
+            "confidence": 0.98
+          },
+          {
+            "term": "RoseTTAFold structure prediction network",
+            "normalized": "结构预测网络",
+            "std_label": "蛋白质结构预测",
+            "evidence": "fine-tuning the RoseTTAFold structure prediction network",
+            "source": "abstract",
+            "confidence": 0.99
+          },
+          {
+            "term": "protein structure denoising tasks",
+            "normalized": "蛋白质结构去噪任务",
+            "std_label": "结构去噪",
+            "evidence": "protein structure denoising tasks",
+            "source": "abstract",
+            "confidence": 0.92
+          },
+          {
+            "term": "generative model",
+            "normalized": "生成模型",
+            "std_label": "生成模型",
+            "evidence": "generative model of protein backbones",
+            "source": "abstract",
+            "confidence": 0.93
+          },
+          {
+            "term": "topology-constrained",
+            "normalized": "拓扑约束",
+            "std_label": "拓扑约束",
+            "evidence": "topology-constrained protein monomer design",
+            "source": "abstract",
+            "confidence": 0.9
+          },
+          {
+            "term": "symmetric oligomer design",
+            "normalized": "对称寡聚体设计",
+            "std_label": "对称结构设计",
+            "evidence": "symmetric oligomer design",
+            "source": "abstract",
+            "confidence": 0.91
+          },
+          {
+            "term": "enzyme active site scaffolding",
+            "normalized": "酶活性位点支架",
+            "std_label": "酶工程",
+            "evidence": "enzyme active site scaffolding",
+            "source": "abstract",
+            "confidence": 0.94
+          },
+          {
+            "term": "symmetric motif scaffolding",
+            "normalized": "对称基序支架",
+            "std_label": "结构支架",
+            "evidence": "symmetric motif scaffolding",
+            "source": "abstract",
+            "confidence": 0.9
+          },
+          {
+            "term": "cryogenic electron microscopy",
+            "normalized": "冷冻电子显微镜",
+            "std_label": "冷冻电镜",
+            "evidence": "cryogenic electron microscopy structure",
+            "source": "abstract",
+            "confidence": 0.97
+          },
+          {
+            "term": "Denoising diffusion probabilistic models",
+            "normalized": "去噪扩散概率模型",
+            "std_label": "扩散模型",
+            "evidence": "Denoising diffusion probabilistic models (DDPMs)",
+            "source": "introduction",
+            "confidence": 0.96
+          },
+          {
+            "term": "rotationally equivariant DDPMs",
+            "normalized": "旋转等变",
+            "std_label": "等变模型",
+            "evidence": "rotationally equivariant DDPMs",
+            "source": "introduction",
+            "confidence": 0.93
+          },
+          {
+            "term": "block-adjacency",
+            "normalized": "块邻接",
+            "std_label": "结构邻接",
+            "evidence": "block-adjacency (fold) information",
+            "source": "introduction",
+            "confidence": 0.89
+          },
+          {
+            "term": "AlphaFold2",
+            "normalized": "AlphaFold2",
+            "std_label": "蛋白质预测",
+            "evidence": "AlphaFold2 (AF2)",
+            "source": "introduction",
+            "confidence": 0.99
+          },
+          {
+            "term": "rigid-frame representation",
+            "normalized": "刚性框架表示",
+            "std_label": "结构表示",
+            "evidence": "rigid-frame representation of residues",
+            "source": "introduction",
+            "confidence": 0.92
+          }
+        ],
+        "辅学科": {
+          "生物学": [
+            {
+              "term": "protein binder design",
+              "normalized": "蛋白质结合设计",
+              "std_label": "蛋白质工程",
+              "evidence": "protein binder design",
+              "source": "abstract",
+              "confidence": 0.95
+            },
+            {
+              "term": "metal-binding proteins",
+              "normalized": "金属结合蛋白",
+              "std_label": "金属蛋白",
+              "evidence": "metal-binding proteins",
+              "source": "abstract",
+              "confidence": 0.96
+            },
+            {
+              "term": "influenza haemagglutinin",
+              "normalized": "流感血凝素",
+              "std_label": "病毒蛋白",
+              "evidence": "influenza haemagglutinin",
+              "source": "abstract",
+              "confidence": 0.97
+            },
+            {
+              "term": "catalytic site",
+              "normalized": "催化位点",
+              "std_label": "酶活性位点",
+              "evidence": "containing a catalytic site",
+              "source": "introduction",
+              "confidence": 0.94
+            },
+            {
+              "term": "secondary structure",
+              "normalized": "二级结构",
+              "std_label": "蛋白质结构",
+              "evidence": "secondary structure information",
+              "source": "introduction",
+              "confidence": 0.93
+            },
+            {
+              "term": "3D structures",
+              "normalized": "三维结构",
+              "std_label": "结构生物学",
+              "evidence": "explicitly model three-dimensional (3D) structures",
+              "source": "introduction",
+              "confidence": 0.95
+            },
+            {
+              "term": "protein motifs",
+              "normalized": "蛋白质基序",
+              "std_label": "结构基序",
+              "evidence": "small protein motifs",
+              "source": "introduction",
+              "confidence": 0.91
+            },
+            {
+              "term": "protein design",
+              "normalized": "蛋白质设计",
+              "std_label": "合成生物学",
+              "evidence": "de novo protein design",
+              "source": "introduction",
+              "confidence": 0.96
+            },
+            {
+              "term": "sequence-structure relationships",
+              "normalized": "序列-结构关系",
+              "std_label": "结构预测",
+              "evidence": "sequence-structure relationships",
+              "source": "abstract",
+              "confidence": 0.92
+            },
+            {
+              "term": "symmetric architectures",
+              "normalized": "对称结构",
+              "std_label": "蛋白质组装",
+              "evidence": "higher-order symmetric architectures",
+              "source": "abstract",
+              "confidence": 0.9
+            }
+          ]
+        }
+      },
+      "跨学科关系": [
+        {
+          "head": "RoseTTAFold structure prediction network",
+          "relation": "fine-tuned on",
+          "relation_type": "method_applied_to",
+          "relation_type_norm": "method_applied_to",
+          "relation_type_raw": "method_applied_to",
+          "tail": "protein structure denoising tasks",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "by fine-tuning the RoseTTAFold structure prediction network on protein structure denoising tasks",
+          "source": "abstract",
+          "confidence": 0.99
+        },
+        {
+          "head": "diffusion models",
+          "relation": "adapted to create",
+          "relation_type": "maps_to",
+          "relation_type_norm": "maps_to",
+          "relation_type_raw": "maps_to",
+          "tail": "generative model",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "diffusion models... generative model of protein backbones",
+          "source": "abstract",
+          "confidence": 0.95
+        },
+        {
+          "head": "topology-constrained",
+          "relation": "applies constraints to",
+          "relation_type": "constrains",
+          "relation_type_norm": "constrains",
+          "relation_type_raw": "constrains",
+          "tail": "protein monomer design",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "topology-constrained protein monomer design",
+          "source": "abstract",
+          "confidence": 0.92
+        },
+        {
+          "head": "symmetric oligomer design",
+          "relation": "implements",
+          "relation_type": "generalizes",
+          "relation_type_norm": "generalizes",
+          "relation_type_raw": "generalizes",
+          "tail": "symmetric architectures",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "symmetric oligomer design... higher-order symmetric architectures",
+          "source": "abstract",
+          "confidence": 0.91
+        },
+        {
+          "head": "Denoising diffusion probabilistic models",
+          "relation": "variant with rotational symmetry",
+          "relation_type": "extends",
+          "relation_type_norm": "extends",
+          "relation_type_raw": "extends",
+          "tail": "rotationally equivariant DDPMs",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "rotationally equivariant DDPMs",
+          "source": "introduction",
+          "confidence": 0.93
+        },
+        {
+          "head": "AlphaFold2",
+          "relation": "enables",
+          "relation_type": "maps_to",
+          "relation_type_norm": "maps_to",
+          "relation_type_raw": "maps_to",
+          "tail": "protein structure prediction",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "deep understanding of protein structure implicit in powerful structure prediction methods such as AlphaFold2",
+          "source": "introduction",
+          "confidence": 0.97
+        },
+        {
+          "head": "protein design",
+          "relation": "includes",
+          "relation_type": "generalizes",
+          "relation_type_norm": "generalizes",
+          "relation_type_raw": "generalizes",
+          "tail": "protein binder design",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "general deep-learning framework... enables solution of design challenges including de novo binder design",
+          "source": "abstract",
+          "confidence": 0.94
+        },
+        {
+          "head": "cryogenic electron microscopy",
+          "relation": "validates structure of",
+          "relation_type": "corresponds_to",
+          "relation_type_norm": "corresponds_to",
+          "relation_type_raw": "corresponds_to",
+          "tail": "influenza haemagglutinin",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "cryogenic electron microscopy structure of a designed binder in complex with influenza haemagglutinin",
+          "source": "abstract",
+          "confidence": 0.96
+        },
+        {
+          "head": "catalytic site",
+          "relation": "requires scaffolding for",
+          "relation_type": "depends_on",
+          "relation_type_norm": "depends_on",
+          "relation_type_raw": "depends_on",
+          "tail": "enzyme active site scaffolding",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "containing a catalytic site... enzyme active site scaffolding",
+          "source": "introduction",
+          "confidence": 0.93
+        },
+        {
+          "head": "block-adjacency",
+          "relation": "conditioned on",
+          "relation_type": "constrains",
+          "relation_type_norm": "constrains",
+          "relation_type_raw": "constrains",
+          "tail": "secondary structure",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "conditioning on... secondary structure and block-adjacency information",
+          "source": "introduction",
+          "confidence": 0.9
+        }
+      ],
+      "按辅助学科分类": {
+        "生物学": {
+          "概念": [
+            "蛋白质工程",
+            "金属蛋白",
+            "病毒蛋白",
+            "酶活性位点",
+            "蛋白质结构",
+            "结构基序",
+            "合成生物学",
+            "结构预测",
+            "蛋白质组装",
+            "催化位点"
+          ],
+          "关系": [
+            2,
+            3,
+            6,
+            7,
+            8,
+            9
+          ],
+          "rationale": "生物学提供蛋白质设计的目标靶点、催化功能位点及对称结构组装需求，并通过实验验证设计有效性"
+        }
+      },
+      "查询": {
+        "一级": "深度学习方法如何突破传统范式实现蛋白质结构与功能的从头设计？",
+        "二级": [
+          "扩散模型如何结合蛋白质工程需求生成具有金属结合能力的三维结构？",
+          "生成模型如何利用结构生物学数据实现对称寡聚体的拓扑约束设计？"
+        ],
+        "三级": [
+          "旋转等变扩散模型与酶活性位点支架设计如何协同优化催化功能蛋白质的生成？",
+          "冷冻电镜验证体系如何与对称基序 方法整合到 设计工作流中？"
+        ]
+      },
+      "假设": {
+        "一级": [
+          [
+            {
+              "step": 1,
+              "head": "深度学习方法",
+              "relation": "通过扩散模型生成蛋白质主链",
+              "tail": "扩散模型",
+              "claim": "深度学习方法中的扩散模型能够生成符合物理规律的蛋白质主链结构"
+            },
+            {
+              "step": 2,
+              "head": "扩散模型",
+              "relation": "结合块邻接信息进行结构优化",
+              "tail": "块邻接",
+              "claim": "扩散模型通过整合块邻接信息实现蛋白质拓扑结构的精确控制"
+            },
+            {
+              "step": 3,
+              "head": "块邻接",
+              "relation": "依赖蛋白质基序指导三维结构",
+              "tail": "蛋白质基序",
+              "claim": "蛋白质基序为深度学习生成具有生物学功能的三维结构提供关键指导"
+            }
+          ],
+          [
+            {
+              "step": 1,
+              "head": "深度学习方法",
+              "relation": "基于进行结构预测",
+              "tail": "扩散模型",
+              "claim": "深度学习方法通过实现蛋白质序列到三维结构的精准映射"
+            },
+            {
+              "step": 2,
+              "head": "扩散模型",
+              "relation": "需要冷冻电子显微镜验证结构",
+              "tail": "冷冻电子显微镜",
+              "claim": "预测的结构需要冷冻电子显微镜技术进行实验验证"
+            },
+            {
+              "step": 3,
+              "head": "冷冻电子显微镜",
+              "relation": "验证金属结合蛋白设计有效性",
+              "tail": "金属结合蛋白",
+              "claim": "冷冻电子显微镜验证体系能够确认深度学习设计的金属结合蛋白功能"
+            }
+          ]
+        ],
+        "二级": [
+          [
+            {
+              "step": 1,
+              "head": "扩散模型",
+              "relation": "适配生成",
+              "tail": "生成模型",
+              "claim": "扩散模型 适配生成 生成模型"
+            },
+            {
+              "step": 2,
+              "head": "生成模型",
+              "relation": "构建三维构象",
+              "tail": "三维结构",
+              "claim": "生成模型 构建三维构象 三维结构"
+            },
+            {
+              "step": 3,
+              "head": "三维结构",
+              "relation": "决定金属结合特性",
+              "tail": "金属结合蛋白",
+              "claim": "三维结构 决定金属结合特性 金属结合蛋白"
+            }
+          ],
+          [
+            {
+              "step": 1,
+              "head": "生成模型",
+              "relation": "依赖结构信息",
+              "tail": "三维结构",
+              "claim": "生成模型 依赖结构信息 三维结构"
+            },
+            {
+              "step": 2,
+              "head": "三维结构",
+              "relation": "受拓扑约束调控",
+              "tail": "拓扑约束",
+              "claim": "三维结构 受拓扑约束调控 拓扑约束"
+            },
+            {
+              "step": 3,
+              "head": "拓扑约束",
+              "relation": "指导对称组装",
+              "tail": "对称寡聚体设计",
+              "claim": "拓扑约束 指导对称组装 对称寡聚体设计"
+            }
+          ]
+        ],
+        "三级": [
+          [
+            {
+              "step": 1,
+              "head": "旋转等变",
+              "relation": "影响",
+              "tail": "去噪扩散概率模型",
+              "claim": "旋转等变 去噪扩散概率模型"
+            },
+            {
+              "step": 2,
+              "head": "去噪扩散概率模型",
+              "relation": "导致",
+              "tail": "酶活性位点支架",
+              "claim": "去噪扩散概率模型 酶活性位点支架"
+            },
+            {
+              "step": 3,
+              "head": "酶活性位点支架",
+              "relation": "促进",
+              "tail": "催化位点",
+              "claim": "酶活性位点支架 催化位点"
+            }
+          ],
+          [
+            {
+              "step": 1,
+              "head": "冷冻电子显微镜",
+              "relation": "影响",
+              "tail": "流感血凝素",
+              "claim": "冷冻电子显微镜 流感血凝素"
+            },
+            {
+              "step": 2,
+              "head": "流感血凝素",
+              "relation": "导致",
+              "tail": "对称结构",
+              "claim": "流感血凝素 对称结构"
+            },
+            {
+              "step": 3,
+              "head": "对称结构",
+              "relation": "促进",
+              "tail": "对称基序支架",
+              "claim": "对称结构 对称基序支架"
+            }
+          ]
+        ],
+        "一级总结": [
+          "深度学习方法通过扩散模型与蛋白质基序的结合，突破传统蛋白质设计的拓扑约束瓶颈",
+          "深度学习方法整合预测与冷冻电镜验证体系，实现蛋白质结构与功能的协同优化"
+        ],
+        "二级总结": [
+          "通过扩散模型生成蛋白质三维构象，利用生成模型的结构构建能力实现金属结合蛋白的从头设计",
+          "基于生成模型对三维结构的依赖性，引入拓扑约束机制指导对称寡聚体的组装设计"
+        ],
+        "三级总结": [
+          "通过旋转等变扩散模型的对称性约束，优化酶活性位点支架的空间排列，最终实现催化位点功能验证",
+          "利用冷冻电镜验证流感血凝素结构特征，指导对称基序支架的拓扑设计，形成结构对称性闭环验证"
+        ]
+      },
+      "graph": {
+        "nodes": [
+          {
+            "id": "深度学习方法",
+            "term": "deep-learning methods",
+            "normalized": "深度学习方法",
+            "discipline": "计算机科学技术",
+            "evidence": "designing new proteins using deep-learning methods",
+            "source": "abstract",
+            "confidence": 0.95
+          },
+          {
+            "id": "扩散模型",
+            "term": "diffusion models",
+            "normalized": "扩散模型",
+            "discipline": "计算机科学技术",
+            "evidence": "Diffusion models have had considerable success",
+            "source": "abstract",
+            "confidence": 0.98
+          },
+          {
+            "id": "结构预测网络",
+            "term": "RoseTTAFold structure prediction network",
+            "normalized": "结构预测网络",
+            "discipline": "计算机科学技术",
+            "evidence": "fine-tuning the RoseTTAFold structure prediction network",
+            "source": "abstract",
+            "confidence": 0.99
+          },
+          {
+            "id": "蛋白质结构去噪任务",
+            "term": "protein structure denoising tasks",
+            "normalized": "蛋白质结构去噪任务",
+            "discipline": "计算机科学技术",
+            "evidence": "protein structure denoising tasks",
+            "source": "abstract",
+            "confidence": 0.92
+          },
+          {
+            "id": "生成模型",
+            "term": "generative model",
+            "normalized": "生成模型",
+            "discipline": "计算机科学技术",
+            "evidence": "generative model of protein backbones",
+            "source": "abstract",
+            "confidence": 0.93
+          },
+          {
+            "id": "拓扑约束",
+            "term": "topology-constrained",
+            "normalized": "拓扑约束",
+            "discipline": "计算机科学技术",
+            "evidence": "topology-constrained protein monomer design",
+            "source": "abstract",
+            "confidence": 0.9
+          },
+          {
+            "id": "对称寡聚体设计",
+            "term": "symmetric oligomer design",
+            "normalized": "对称寡聚体设计",
+            "discipline": "计算机科学技术",
+            "evidence": "symmetric oligomer design",
+            "source": "abstract",
+            "confidence": 0.91
+          },
+          {
+            "id": "酶活性位点支架",
+            "term": "enzyme active site scaffolding",
+            "normalized": "酶活性位点支架",
+            "discipline": "计算机科学技术",
+            "evidence": "enzyme active site scaffolding",
+            "source": "abstract",
+            "confidence": 0.94
+          },
+          {
+            "id": "对称基序支架",
+            "term": "symmetric motif scaffolding",
+            "normalized": "对称基序支架",
+            "discipline": "计算机科学技术",
+            "evidence": "symmetric motif scaffolding",
+            "source": "abstract",
+            "confidence": 0.9
+          },
+          {
+            "id": "冷冻电子显微镜",
+            "term": "cryogenic electron microscopy",
+            "normalized": "冷冻电子显微镜",
+            "discipline": "计算机科学技术",
+            "evidence": "cryogenic electron microscopy structure",
+            "source": "abstract",
+            "confidence": 0.97
+          },
+          {
+            "id": "去噪扩散概率模型",
+            "term": "Denoising diffusion probabilistic models",
+            "normalized": "去噪扩散概率模型",
+            "discipline": "计算机科学技术",
+            "evidence": "Denoising diffusion probabilistic models (DDPMs)",
+            "source": "introduction",
+            "confidence": 0.96
+          },
+          {
+            "id": "旋转等变",
+            "term": "rotationally equivariant DDPMs",
+            "normalized": "旋转等变",
+            "discipline": "计算机科学技术",
+            "evidence": "rotationally equivariant DDPMs",
+            "source": "introduction",
+            "confidence": 0.93
+          },
+          {
+            "id": "块邻接",
+            "term": "block-adjacency",
+            "normalized": "块邻接",
+            "discipline": "计算机科学技术",
+            "evidence": "block-adjacency (fold) information",
+            "source": "introduction",
+            "confidence": 0.89
+          },
+          {
+            "id": "AlphaFold2",
+            "term": "AlphaFold2",
+            "normalized": "AlphaFold2",
+            "discipline": "计算机科学技术",
+            "evidence": "AlphaFold2 (AF2)",
+            "source": "introduction",
+            "confidence": 0.99
+          },
+          {
+            "id": "刚性框架表示",
+            "term": "rigid-frame representation",
+            "normalized": "刚性框架表示",
+            "discipline": "计算机科学技术",
+            "evidence": "rigid-frame representation of residues",
+            "source": "introduction",
+            "confidence": 0.92
+          },
+          {
+            "id": "蛋白质结合设计",
+            "term": "protein binder design",
+            "normalized": "蛋白质结合设计",
+            "discipline": "生物学",
+            "evidence": "protein binder design",
+            "source": "abstract",
+            "confidence": 0.95
+          },
+          {
+            "id": "金属结合蛋白",
+            "term": "metal-binding proteins",
+            "normalized": "金属结合蛋白",
+            "discipline": "生物学",
+            "evidence": "metal-binding proteins",
+            "source": "abstract",
+            "confidence": 0.96
+          },
+          {
+            "id": "流感血凝素",
+            "term": "influenza haemagglutinin",
+            "normalized": "流感血凝素",
+            "discipline": "生物学",
+            "evidence": "influenza haemagglutinin",
+            "source": "abstract",
+            "confidence": 0.97
+          },
+          {
+            "id": "催化位点",
+            "term": "catalytic site",
+            "normalized": "催化位点",
+            "discipline": "生物学",
+            "evidence": "containing a catalytic site",
+            "source": "introduction",
+            "confidence": 0.94
+          },
+          {
+            "id": "二级结构",
+            "term": "secondary structure",
+            "normalized": "二级结构",
+            "discipline": "生物学",
+            "evidence": "secondary structure information",
+            "source": "introduction",
+            "confidence": 0.93
+          },
+          {
+            "id": "三维结构",
+            "term": "3D structures",
+            "normalized": "三维结构",
+            "discipline": "生物学",
+            "evidence": "explicitly model three-dimensional (3D) structures",
+            "source": "introduction",
+            "confidence": 0.95
+          },
+          {
+            "id": "蛋白质基序",
+            "term": "protein motifs",
+            "normalized": "蛋白质基序",
+            "discipline": "生物学",
+            "evidence": "small protein motifs",
+            "source": "introduction",
+            "confidence": 0.91
+          },
+          {
+            "id": "蛋白质设计",
+            "term": "protein design",
+            "normalized": "蛋白质设计",
+            "discipline": "生物学",
+            "evidence": "de novo protein design",
+            "source": "introduction",
+            "confidence": 0.96
+          },
+          {
+            "id": "序列-结构关系",
+            "term": "sequence-structure relationships",
+            "normalized": "序列-结构关系",
+            "discipline": "生物学",
+            "evidence": "sequence-structure relationships",
+            "source": "abstract",
+            "confidence": 0.92
+          },
+          {
+            "id": "对称结构",
+            "term": "symmetric architectures",
+            "normalized": "对称结构",
+            "discipline": "生物学",
+            "evidence": "higher-order symmetric architectures",
+            "source": "abstract",
+            "confidence": 0.9
+          },
+          {
+            "id": "protein monomer design",
+            "term": "protein monomer design",
+            "normalized": "protein monomer design",
+            "discipline": "struct_relation_inferred",
+            "evidence": "",
+            "source": "struct_relation_inferred",
+            "confidence": 0.8
+          },
+          {
+            "id": "protein structure prediction",
+            "term": "protein structure prediction",
+            "normalized": "protein structure prediction",
+            "discipline": "struct_relation_inferred",
+            "evidence": "",
+            "source": "struct_relation_inferred",
+            "confidence": 0.8
+          }
+        ],
+        "edges": [
+          {
+            "source": "结构预测网络",
+            "target": "蛋白质结构去噪任务",
+            "relation": "fine-tuned on",
+            "relation_type": "method_applied_to",
+            "metadata": {
+              "evidence": "by fine-tuning the RoseTTAFold structure prediction network on protein structure denoising tasks",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "扩散模型",
+            "target": "生成模型",
+            "relation": "adapted to create",
+            "relation_type": "maps_to",
+            "metadata": {
+              "evidence": "diffusion models... generative model of protein backbones",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "拓扑约束",
+            "target": "protein monomer design",
+            "relation": "applies constraints to",
+            "relation_type": "constrains",
+            "metadata": {
+              "evidence": "topology-constrained protein monomer design",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "对称寡聚体设计",
+            "target": "对称结构",
+            "relation": "implements",
+            "relation_type": "generalizes",
+            "metadata": {
+              "evidence": "symmetric oligomer design... higher-order symmetric architectures",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "去噪扩散概率模型",
+            "target": "旋转等变",
+            "relation": "variant with rotational symmetry",
+            "relation_type": "extends",
+            "metadata": {
+              "evidence": "rotationally equivariant DDPMs",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "AlphaFold2",
+            "target": "protein structure prediction",
+            "relation": "enables",
+            "relation_type": "maps_to",
+            "metadata": {
+              "evidence": "deep understanding of protein structure implicit in powerful structure prediction methods such as AlphaFold2",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "蛋白质设计",
+            "target": "蛋白质结合设计",
+            "relation": "includes",
+            "relation_type": "generalizes",
+            "metadata": {
+              "evidence": "general deep-learning framework... enables solution of design challenges including de novo binder design",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "冷冻电子显微镜",
+            "target": "流感血凝素",
+            "relation": "validates structure of",
+            "relation_type": "corresponds_to",
+            "metadata": {
+              "evidence": "cryogenic electron microscopy structure of a designed binder in complex with influenza haemagglutinin",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "催化位点",
+            "target": "酶活性位点支架",
+            "relation": "requires scaffolding for",
+            "relation_type": "depends_on",
+            "metadata": {
+              "evidence": "containing a catalytic site... enzyme active site scaffolding",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "块邻接",
+            "target": "二级结构",
+            "relation": "conditioned on",
+            "relation_type": "constrains",
+            "metadata": {
+              "evidence": "conditioning on... secondary structure and block-adjacency information",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "深度学习方法",
+            "target": "扩散模型",
+            "relation": "通过扩散模型生成蛋白质主链",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "深度学习方法中的扩散模型能够生成符合物理规律的蛋白质主链结构",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "扩散模型",
+            "target": "块邻接",
+            "relation": "结合块邻接信息进行结构优化",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "扩散模型通过整合块邻接信息实现蛋白质拓扑结构的精确控制",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "块邻接",
+            "target": "蛋白质基序",
+            "relation": "依赖蛋白质基序指导三维结构",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "蛋白质基序为深度学习生成具有生物学功能的三维结构提供关键指导",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "深度学习方法",
+            "target": "扩散模型",
+            "relation": "基于进行结构预测",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "深度学习方法通过实现蛋白质序列到三维结构的精准映射",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "扩散模型",
+            "target": "冷冻电子显微镜",
+            "relation": "需要冷冻电子显微镜验证结构",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "预测的结构需要冷冻电子显微镜技术进行实验验证",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "冷冻电子显微镜",
+            "target": "金属结合蛋白",
+            "relation": "验证金属结合蛋白设计有效性",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "冷冻电子显微镜验证体系能够确认深度学习设计的金属结合蛋白功能",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "扩散模型",
+            "target": "生成模型",
+            "relation": "适配生成",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "扩散模型 适配生成 生成模型",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "生成模型",
+            "target": "三维结构",
+            "relation": "构建三维构象",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "生成模型 构建三维构象 三维结构",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "三维结构",
+            "target": "金属结合蛋白",
+            "relation": "决定金属结合特性",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "三维结构 决定金属结合特性 金属结合蛋白",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "生成模型",
+            "target": "三维结构",
+            "relation": "依赖结构信息",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "生成模型 依赖结构信息 三维结构",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "三维结构",
+            "target": "拓扑约束",
+            "relation": "受拓扑约束调控",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "三维结构 受拓扑约束调控 拓扑约束",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "拓扑约束",
+            "target": "对称寡聚体设计",
+            "relation": "指导对称组装",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "拓扑约束 指导对称组装 对称寡聚体设计",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "旋转等变",
+            "target": "去噪扩散概率模型",
+            "relation": "影响",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "旋转等变 去噪扩散概率模型",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "去噪扩散概率模型",
+            "target": "酶活性位点支架",
+            "relation": "导致",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "去噪扩散概率模型 酶活性位点支架",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "酶活性位点支架",
+            "target": "催化位点",
+            "relation": "促进",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "酶活性位点支架 催化位点",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "冷冻电子显微镜",
+            "target": "流感血凝素",
+            "relation": "影响",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "冷冻电子显微镜 流感血凝素",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "流感血凝素",
+            "target": "对称结构",
+            "relation": "导致",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "流感血凝素 对称结构",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "对称结构",
+            "target": "对称基序支架",
+            "relation": "促进",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "对称结构 对称基序支架",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          }
+        ]
+      },
+      "metrics": {
+        "path_consistency": 0.1111111111111111,
+        "coverage": 0.6296296296296297,
+        "bridging_score": 0.46153846153846156,
+        "rao_stirling_diversity": 0.1481,
+        "embedding_bridging": 0.6332,
+        "consistency_precision": 0.0,
+        "consistency_recall": 0.0,
+        "consistency_f1": 0.0,
+        "info_novelty": 0.0,
+        "chain_coherence": 0.7854,
+        "atypical_combination": 0.5934,
+        "kg_density": 0.0342,
+        "kg_inverse_modularity": 0.9948,
+        "kg_largest_cc_ratio": 0.5556,
+        "kg_avg_betweenness": 0.0246,
+        "kg_clustering_coefficient": 0.0,
+        "concept_recall": 0.0,
+        "concept_precision": 0.0,
+        "concept_f1": 0.0,
+        "relation_precision": 0.0,
+        "relation_type_accuracy": 0.0,
+        "evidence_coverage": 0.0,
+        "path_alignment_best": 0.0,
+        "path_alignment_mean": 0.0
+      }
+    },
+    "raw": "/* stage1: struct */\n/* concepts round1 */\n{\"meta\": {\"title\": \"De novo design of protein structure and function with RFdiffusion\", \"primary\": \"计算机科学技术\", \"secondary_list\": [\"生物学\"]}, \"概念\": {\"主学科\": [{\"term\": \"deep-learning methods\", \"normalized\": \"深度学习方法\", \"std_label\": \"深度学习\", \"evidence\": \"designing new proteins using deep-learning methods\", \"source\": \"abstract\", \"confidence\": 0.95}, {\"term\": \"diffusion models\", \"normalized\": \"扩散模型\", \"std_label\": \"扩散模型\", \"evidence\": \"Diffusion models have had considerable success\", \"source\": \"abstract\", \"confidence\": 0.98}, {\"term\": \"RoseTTAFold structure prediction network\", \"normalized\": \"RoseTTAFold结构预测网络\", \"std_label\": \"蛋白质结构预测\", \"evidence\": \"fine-tuning the RoseTTAFold structure prediction network\", \"source\": \"abstract\", \"confidence\": 0.99}, {\"term\": \"protein structure denoising tasks\", \"normalized\": \"蛋白质结构去噪任务\", \"std_label\": \"结构去噪\", \"evidence\": \"protein structure denoising tasks\", \"source\": \"abstract\", \"confidence\": 0.92}, {\"term\": \"generative model\", \"normalized\": \"生成模型\", \"std_label\": \"生成模型\", \"evidence\": \"generative model of protein backbones\", \"source\": \"abstract\", \"confidence\": 0.93}, {\"term\": \"topology-constrained\", \"normalized\": \"拓扑约束\", \"std_label\": \"拓扑约束\", \"evidence\": \"topology-constrained protein monomer design\", \"source\": \"abstract\", \"confidence\": 0.9}, {\"term\": \"symmetric oligomer design\", \"normalized\": \"对称寡聚体设计\", \"std_label\": \"对称结构设计\", \"evidence\": \"symmetric oligomer design\", \"source\": \"abstract\", \"confidence\": 0.91}, {\"term\": \"enzyme active site scaffolding\", \"normalized\": \"酶活性位点支架\", \"std_label\": \"酶工程\", \"evidence\": \"enzyme active site scaffolding\", \"source\": \"abstract\", \"confidence\": 0.94}, {\"term\": \"symmetric motif scaffolding\", \"normalized\": \"对称基序支架\", \"std_label\": \"结构支架\", \"evidence\": \"symmetric motif scaffolding\", \"source\": \"abstract\", \"confidence\": 0.9}, {\"term\": \"cryogenic electron microscopy\", \"normalized\": \"冷冻电子显微镜\", \"std_label\": \"冷冻电镜\", \"evidence\": \"cryogenic electron microscopy structure\", \"source\": \"abstract\", \"confidence\": 0.97}, {\"term\": \"Denoising diffusion probabilistic models\", \"normalized\": \"去噪扩散概率模型\", \"std_label\": \"扩散模型\", \"evidence\": \"Denoising diffusion probabilistic models (DDPMs)\", \"source\": \"introduction\", \"confidence\": 0.96}, {\"term\": \"rotationally equivariant DDPMs\", \"normalized\": \"旋转等变DDPMs\", \"std_label\": \"等变模型\", \"evidence\": \"rotationally equivariant DDPMs\", \"source\": \"introduction\", \"confidence\": 0.93}, {\"term\": \"block-adjacency\", \"normalized\": \"块邻接\", \"std_label\": \"结构邻接\", \"evidence\": \"block-adjacency (fold) information\", \"source\": \"introduction\", \"confidence\": 0.89}, {\"term\": \"AlphaFold2\", \"normalized\": \"AlphaFold2\", \"std_label\": \"蛋白质预测\", \"evidence\": \"AlphaFold2 (AF2)\", \"source\": \"introduction\", \"confidence\": 0.99}, {\"term\": \"rigid-frame representation\", \"normalized\": \"刚性框架表示\", \"std_label\": \"结构表示\", \"evidence\": \"rigid-frame representation of residues\", \"source\": \"introduction\", \"confidence\": 0.92}], \"辅学科\": {\"生物学\": [{\"term\": \"protein binder design\", \"normalized\": \"蛋白质结合设计\", \"std_label\": \"蛋白质工程\", \"evidence\": \"protein binder design\", \"source\": \"abstract\", \"confidence\": 0.95}, {\"term\": \"metal-binding proteins\", \"normalized\": \"金属结合蛋白\", \"std_label\": \"金属蛋白\", \"evidence\": \"metal-binding proteins\", \"source\": \"abstract\", \"confidence\": 0.96}, {\"term\": \"influenza haemagglutinin\", \"normalized\": \"流感血凝素\", \"std_label\": \"病毒蛋白\", \"evidence\": \"influenza haemagglutinin\", \"source\": \"abstract\", \"confidence\": 0.97}, {\"term\": \"catalytic site\", \"normalized\": \"催化位点\", \"std_label\": \"酶活性位点\", \"evidence\": \"containing a catalytic site\", \"source\": \"introduction\", \"confidence\": 0.94}, {\"term\": \"secondary structure\", \"normalized\": \"二级结构\", \"std_label\": \"蛋白质结构\", \"evidence\": \"secondary structure information\", \"source\": \"introduction\", \"confidence\": 0.93}, {\"term\": \"3D structures\", \"normalized\": \"三维结构\", \"std_label\": \"结构生物学\", \"evidence\": \"explicitly model three-dimensional (3D) structures\", \"source\": \"introduction\", \"confidence\": 0.95}, {\"term\": \"protein motifs\", \"normalized\": \"蛋白质基序\", \"std_label\": \"结构基序\", \"evidence\": \"small protein motifs\", \"source\": \"introduction\", \"confidence\": 0.91}, {\"term\": \"protein design\", \"normalized\": \"蛋白质设计\", \"std_label\": \"合成生物学\", \"evidence\": \"de novo protein design\", \"source\": \"introduction\", \"confidence\": 0.96}, {\"term\": \"sequence-structure relationships\", \"normalized\": \"序列-结构关系\", \"std_label\": \"结构预测\", \"evidence\": \"sequence-structure relationships\", \"source\": \"abstract\", \"confidence\": 0.92}, {\"term\": \"symmetric architectures\", \"normalized\": \"对称结构\", \"std_label\": \"蛋白质组装\", \"evidence\": \"higher-order symmetric architectures\", \"source\": \"abstract\", \"confidence\": 0.9}]}}}}\n\n/* concepts round2 (supplement) */\n{\"补充概念\": {\"主学科\": [\"AF2\", \"RF\"], \"辅学科\": {\"AF2\": [\"AlphaFold2\"], \"RF\": [\"RoseTTAFold\"]}}}\n\n/* relations */\n{\n  \"跨学科关系\": [\n    {\n      \"head\": \"RoseTTAFold structure prediction network\",\n      \"tail\": \"protein structure denoising tasks\",\n      \"relation\": \"fine-tuned on\",\n      \"relation_type\": \"method_applied_to\",\n      \"direction\": \"->\",\n      \"evidence\": \"by fine-tuning the RoseTTAFold structure prediction network on protein structure denoising tasks\",\n      \"source\": \"abstract\",\n      \"confidence\": 0.99\n    },\n    {\n      \"head\": \"diffusion models\",\n      \"tail\": \"generative model\",\n      \"relation\": \"adapted to create\",\n      \"relation_type\": \"maps_to\",\n      \"direction\": \"->\",\n      \"evidence\": \"diffusion models... generative model of protein backbones\",\n      \"source\": \"abstract\",\n      \"confidence\": 0.95\n    },\n    {\n      \"head\": \"topology-constrained\",\n      \"tail\": \"protein monomer design\",\n      \"relation\": \"applies constraints to\",\n      \"relation_type\": \"constrains\",\n      \"direction\": \"->\",\n      \"evidence\": \"topology-constrained protein monomer design\",\n      \"source\": \"abstract\",\n      \"confidence\": 0.92\n    },\n    {\n      \"head\": \"symmetric oligomer design\",\n      \"tail\": \"symmetric architectures\",\n      \"relation\": \"implements\",\n      \"relation_type\": \"generalizes\",\n      \"direction\": \"->\",\n      \"evidence\": \"symmetric oligomer design... higher-order symmetric architectures\",\n      \"source\": \"abstract\",\n      \"confidence\": 0.91\n    },\n    {\n      \"head\": \"Denoising diffusion probabilistic models\",\n      \"tail\": \"rotationally equivariant DDPMs\",\n      \"relation\": \"variant with rotational symmetry\",\n      \"relation_type\": \"extends\",\n      \"direction\": \"->\",\n      \"evidence\": \"rotationally equivariant DDPMs\",\n      \"source\": \"introduction\",\n      \"confidence\": 0.93\n    },\n    {\n      \"head\": \"AlphaFold2\",\n      \"tail\": \"protein structure prediction\",\n      \"relation\": \"enables\",\n      \"relation_type\": \"maps_to\",\n      \"direction\": \"->\",\n      \"evidence\": \"deep understanding of protein structure implicit in powerful structure prediction methods such as AlphaFold2\",\n      \"source\": \"introduction\",\n      \"confidence\": 0.97\n    },\n    {\n      \"head\": \"protein design\",\n      \"tail\": \"protein binder design\",\n      \"relation\": \"includes\",\n      \"relation_type\": \"generalizes\",\n      \"direction\": \"->\",\n      \"evidence\": \"general deep-learning framework... enables solution of design challenges including de novo binder design\",\n      \"source\": \"abstract\",\n      \"confidence\": 0.94\n    },\n    {\n      \"head\": \"cryogenic electron microscopy\",\n      \"tail\": \"influenza haemagglutinin\",\n      \"relation\": \"validates structure of\",\n      \"relation_type\": \"corresponds_to\",\n      \"direction\": \"->\",\n      \"evidence\": \"cryogenic electron microscopy structure of a designed binder in complex with influenza haemagglutinin\",\n      \"source\": \"abstract\",\n      \"confidence\": 0.96\n    },\n    {\n      \"head\": \"catalytic site\",\n      \"tail\": \"enzyme active site scaffolding\",\n      \"relation\": \"requires scaffolding for\",\n      \"relation_type\": \"depends_on\",\n      \"direction\": \"->\",\n      \"evidence\": \"containing a catalytic site... enzyme active site scaffolding\",\n      \"source\": \"introduction\",\n      \"confidence\": 0.93\n    },\n    {\n      \"head\": \"block-adjacency\",\n      \"tail\": \"secondary structure\",\n      \"relation\": \"conditioned on\",\n      \"relation_type\": \"constrains\",\n      \"direction\": \"->\",\n      \"evidence\": \"conditioning on... secondary structure and block-adjacency information\",\n      \"source\": \"introduction\",\n      \"confidence\": 0.9\n    }\n  ]\n}\n\n/* stage2: query */\n{\n  \"按辅助学科分类\": {\n    \"生物学\": {\n      \"概念\": [\n        \"蛋白质工程\",\n        \"金属蛋白\",\n        \"病毒蛋白\",\n        \"酶活性位点\",\n        \"蛋白质结构\",\n        \"结构基序\",\n        \"合成生物学\",\n        \"结构预测\",\n        \"蛋白质组装\",\n        \"催化位点\"\n      ],\n      \"关系\": [2, 3, 6, 7, 8, 9],\n      \"rationale\": \"生物学提供蛋白质设计的目标靶点、催化功能位点及对称结构组装需求，并通过实验验证设计有效性\"\n    }\n  },\n  \"查询\": {\n    \"一级\": \"深度学习方法如何突破传统范式实现蛋白质结构与功能的从头设计？\",\n    \"二级\": [\n      \"扩散模型如何结合蛋白质工程需求生成具有金属结合能力的三维结构？\",\n      \"生成模型如何利用结构生物学数据实现对称寡聚体的拓扑约束设计？\"\n    ],\n    \"三级\": [\n      \"旋转等变扩散模型与酶活性位点支架设计如何协同优化催化功能蛋白质的生成？\",\n      \"冷冻电镜验证体系如何与对称基序 scaffolding 方法整合到 de novo 设计工作流中？\"\n    ]\n  }\n}\n\n/* stage3: hypothesis L1 */\n{\n  \"假设\": {\n    \"一级\": [\n      [\n        {\n          \"step\": 1,\n          \"head\": \"深度学习方法\",\n          \"relation\": \"通过扩散模型生成蛋白质主链\",\n          \"tail\": \"扩散模型\",\n          \"claim\": \"深度学习方法中的扩散模型能够生成符合物理规律的蛋白质主链结构\"\n        },\n        {\n          \"step\": 2,\n          \"head\": \"扩散模型\",\n          \"relation\": \"结合块邻接信息进行结构优化\",\n          \"tail\": \"块邻接\",\n          \"claim\": \"扩散模型通过整合块邻接信息实现蛋白质拓扑结构的精确控制\"\n        },\n        {\n          \"step\": 3,\n          \"head\": \"块邻接\",\n          \"relation\": \"依赖蛋白质基序指导三维结构\",\n          \"tail\": \"蛋白质基序\",\n          \"claim\": \"蛋白质基序为深度学习生成具有生物学功能的三维结构提供关键指导\"\n        }\n      ],\n      [\n        {\n          \"step\": 1,\n          \"head\": \"深度学习方法\",\n          \"relation\": \"基于AlphaFold2进行结构预测\",\n          \"tail\": \"AlphaFold2\",\n          \"claim\": \"深度学习方法通过AlphaFold2实现蛋白质序列到三维结构的精准映射\"\n        },\n        {\n          \"step\": 2,\n          \"head\": \"AlphaFold2\",\n          \"relation\": \"需要冷冻电子显微镜验证结构\",\n          \"tail\": \"冷冻电子显微镜\",\n          \"claim\": \"AlphaFold2预测的结构需要冷冻电子显微镜技术进行实验验证\"\n        },\n        {\n          \"step\": 3,\n          \"head\": \"冷冻电子显微镜\",\n          \"relation\": \"验证金属结合蛋白设计有效性\",\n          \"tail\": \"金属结合蛋白\",\n          \"claim\": \"冷冻电子显微镜验证体系能够确认深度学习设计的金属结合蛋白功能\"\n        }\n      ]\n    ],\n    \"一级总结\": [\n      \"深度学习方法通过扩散模型与蛋白质基序的结合，突破传统蛋白质设计的拓扑约束瓶颈\",\n      \"深度学习方法整合AlphaFold2预测与冷冻电镜验证体系，实现蛋白质结构与功能的协同优化\"\n    ]\n  }\n}\n\n/* stage3: hypothesis L2 */\n{\n  \"假设\": {\n    \"二级\": [\n      [\n        {\n          \"step\": 1,\n          \"head\": \"扩散模型\",\n          \"relation\": \"适配生成\",\n          \"tail\": \"生成模型\"\n        },\n        {\n          \"step\": 2,\n          \"head\": \"生成模型\",\n          \"relation\": \"构建三维构象\",\n          \"tail\": \"三维结构\"\n        },\n        {\n          \"step\": 3,\n          \"head\": \"三维结构\",\n          \"relation\": \"决定金属结合特性\",\n          \"tail\": \"金属结合蛋白\"\n        }\n      ],\n      [\n        {\n          \"step\": 1,\n          \"head\": \"生成模型\",\n          \"relation\": \"依赖结构信息\",\n          \"tail\": \"三维结构\"\n        },\n        {\n          \"step\": 2,\n          \"head\": \"三维结构\",\n          \"relation\": \"受拓扑约束调控\",\n          \"tail\": \"拓扑约束\"\n        },\n        {\n          \"step\": 3,\n          \"head\": \"拓扑约束\",\n          \"relation\": \"指导对称组装\",\n          \"tail\": \"对称寡聚体设计\"\n        }\n      ]\n    ],\n    \"二级总结\": [\n      \"通过扩散模型生成蛋白质三维构象，利用生成模型的结构构建能力实现金属结合蛋白的从头设计\",\n      \"基于生成模型对三维结构的依赖性，引入拓扑约束机制指导对称寡聚体的组装设计\"\n    ]\n  }\n}\n\n/* stage3: hypothesis L3 */\n{\n  \"假设\": {\n    \"三级\": [\n      [\n        {\n          \"head\": \"旋转等变\",\n          \"relation\": \"variant with rotational symmetry\",\n          \"tail\": \"去噪扩散概率模型\"\n        },\n        {\n          \"head\": \"去噪扩散概率模型\",\n          \"relation\": \"applies constraints to\",\n          \"tail\": \"酶活性位点支架\"\n        },\n        {\n          \"head\": \"酶活性位点支架\",\n          \"relation\": \"requires scaffolding for\",\n          \"tail\": \"催化位点\"\n        }\n      ],\n      [\n        {\n          \"head\": \"冷冻电子显微镜\",\n          \"relation\": \"validates structure of\",\n          \"tail\": \"流感血凝素\"\n        },\n        {\n          \"head\": \"流感血凝素\",\n          \"relation\": \"implements\",\n          \"tail\": \"对称结构\"\n        },\n        {\n          \"head\": \"对称结构\",\n          \"relation\": \"conditioned on\",\n          \"tail\": \"对称基序支架\"\n        }\n      ]\n    ],\n    \"三级总结\": [\n      \"通过旋转等变扩散模型的对称性约束，优化酶活性位点支架的空间排列，最终实现催化位点功能验证\",\n      \"利用冷冻电镜验证流感血凝素结构特征，指导对称基序支架的拓扑设计，形成结构对称性闭环验证\"\n    ]\n  }\n}",
+    "ok": true,
+    "error": ""
+  },
+  {
+    "title": "Accurate medium-range global weather forecasting with 3D neural networks",
+    "abstract": "Abstract Weather forecasting is important for science and society. At present, the most accurate forecast system is the numerical weather prediction (NWP) method, which represents atmospheric states as discretized grids and numerically solves partial differential equations that describe the transition between those states 1 . However, this procedure is computationally expensive. Recently, artificial-intelligence-based methods 2 have shown potential in accelerating weather forecasting by orders of magnitude, but the forecast accuracy is still significantly lower than that of NWP methods. Here we introduce an artificial-intelligence-based method for accurate, medium-range global weather forecasting. We show that three-dimensional deep networks equipped with Earth-specific priors are effective at dealing with complex patterns in weather data, and that a hierarchical temporal aggregation strategy reduces accumulation errors in medium-range forecasting. Trained on 39 years of global data, our program, Pangu-Weather, obtains stronger deterministic forecast results on reanalysis data in all tested variables when compared with the world’s best NWP system, the operational integrated forecasting system of the European Centre for Medium-Range Weather Forecasts (ECMWF) 3 . Our method also works well with extreme weather forecasts and ensemble forecasts. When initialized with reanalysis data, the accuracy of tracking tropical cyclones is also higher than that of ECMWF-HRES.",
+    "pdf_url": "https://doi.org/10.1038/s41586-023-06185-3",
+    "primary": "地球科学",
+    "secondary": "地球科学, 计算机科学技术",
+    "secondary_list": [
+      "地球科学",
+      "计算机科学技术"
+    ],
+    "introduction": "Accurate medium-range global weather \nforecasting with 3D neural networks\n\nhttps://doi.org/10.1038/s41586-023-06185-3\n\nKaifeng Bi1, Lingxi Xie1, Hengheng Zhang1, Xin Chen1, Xiaotao Gu1 & Qi Tian1 ✉\n\nReceived: 5 January 2023\n\nAccepted: 9 May 2023\n\nPublished online: 5 July 2023\n\nOpen access\n\n Check for updates\n\nWeather forecasting is important for science and society. At present, the most accurate \nforecast system is the numerical weather prediction (NWP) method, which represents \natmospheric states as discretized grids and numerically solves partial differential \nequations that describe the transition between those states1. However, this procedure \nis computationally expensive. Recently, artificial-intelligence-based methods2 have \nshown potential in accelerating weather forecasting by orders of magnitude, but \nthe forecast accuracy is still significantly lower than that of NWP methods. Here we \nintroduce an artificial-intelligence-based method for accurate, medium-range global \nweather forecasting. We show that three-dimensional deep networks equipped with \nEarth-specific priors are effective at dealing with complex patterns in weather data, \nand that a hierarchical temporal aggregation strategy reduces accumulation errors \nin medium-range forecasting. Trained on 39 years of global data, our program, \nPangu-Weather, obtains stronger deterministic forecast results on reanalysis data in \nall tested variables when compared with the world’s best NWP system, the operational \nintegrated forecasting system of the European Centre for Medium-Range Weather \nForecasts (ECMWF)3. Our method also works well with extreme weather forecasts and \nensemble forecasts. When initialized with reanalysis data, the accuracy of tracking \ntropical cyclones is also higher than that of ECMWF-HRES.\n\nWeather forecasting is an important application of scientific computing \nthat aims to predict future weather changes, especially in regards to \nextreme weather events. In the past decade, high-performance comput-\ning systems have greatly accelerated research in the field of numerical \nweather prediction (NWP) methods1. Conventional NWP methods are \nprimarily concerned with describing the transitions between discre-\ntized grids of atmospheric states using partial differential equations \n(PDEs) and then solving them with numerical simulations4–6. These \nmethods are often slow; a single simulation for a ten-day forecast can \ntake hours of computation in a supercomputer that has hundreds of \nnodes7. In addition, conventional NWP algorithms largely rely on para-\nmeterization, which uses approximate functions to capture unresolved \nprocesses, where errors can be introduced by approximation8,9.\n\nThe rapid development of deep learning10 has introduced a prom-\nising direction, which the scientific community refers to as artificial \nintelligence (AI)-based methods2,11–16. Here, the methodology is to \ntrain a deep neural network to capture the relationship between the \ninput (reanalysis weather data at a given point in time) and the output \n(reanalysis weather data at the target point in time). On specialized \ncomputational devices such as graphics processing units (GPUs), \nAI-based methods are extremely fast. To give a recent example, Four-\nCastNet2 takes only 7 s to compute a 100-member, 24-hour forecast, \nwhich is orders of magnitudes faster than conventional NWP methods. \nHowever, the accuracy of FourCastNet is still below satisfactory; its \nroot mean square error (RMSE) of a 5-day Z500 (500 hPa geopotential) \nforecast is 484.5, which is much worse than the 333.7 reported by the \noperational integrated forecasting system (IFS) of the European Centre \n\nfor Medium-Range Weather Forecasts (ECMWF)3. In a recent survey17, \nresearchers agreed that AI holds great potential, but admitted that \n“a number of fundamental breakthroughs are needed” before AI-based \nmethods can beat NWP.\n\nThese breakthroughs seem to be happening earlier than expected. \nHere we present Pangu-Weather (see Methods for an explanation of the \nname ‘Pangu’), a powerful AI-based weather forecasting system that \nproduces stronger deterministic forecast results than the operational \nIFS on all tested weather variables against reanalysis data. Our techni-\ncal contributions are two-fold. First, we integrated height information \ninto a new dimension so that the input and output of our deep neu-\nral networks can be conceptualized in three dimensions. We further \ndesigned a three-dimensional (3D) Earth-specific transformer (3DEST) \narchitecture to inject Earth-specific priors into the deep networks. \nOur experiments show that 3D models, by formulating height into \nan individual dimension, have the ability to capture the relationship \nbetween atmospheric states in different pressure levels and thus yield \nsignificant accuracy gains, compared with two-dimensional models \nsuch as FourCastNet2. Second, we applied a hierarchical temporal \naggregation algorithm that involves training a series of models with \nincreasing forecast lead times. Hence, in the testing stage, the num-\nber of iterations needed for medium-range weather forecasting was \nlargely reduced, and the cumulative forecast errors were alleviated. \nExperiments on the fifth generation of ECMWF reanalysis (ERA5) data18 \nvalidated that Pangu-Weather is good at deterministic forecast and \nextreme weather forecast while being more than 10,000-times faster \nthan the operational IFS.\n\n1Huawei Cloud, Shenzhen, China. ✉e-mail: tian.qi1@huawei.com\n\nNature | Vol 619 | 20 July 2023 | 533\n\nArticle\f80\n\n40\n\n0\n\n–40\n\n)\n1\n–\ns\nm\n\n(\n\nd\ne\ne\np\ns\nd\nn\nW\n\ni\n\n2 × 4 × 4\npatch\nembedding\n\na\n\n3D Earth-specific transformer\n\n(C = 192)\n\n2 × 4 × 4\npatch\nrecovery\n\nMerge\n\nLayer 1\nEarth-specific block × 2\n(8 × 360 × 181 × C)\n\nLayer 4\nEarth-specific block × 2\n(8 × 360 × 181 × C)\n\nSplit\n\nUpper-air variables\n(13 × 1,440 × 721 × 5)\n\n4 × 4\npatch\nembedding\n\n)\n1\n–\ns\nm\n\n(\n\n20\n\n10\n\n0\n\n–10\n\n–20\n\nd\ne\ne\np\ns\nd\nn\nW\nSurface variables\n(1,440 × 721 × 4)\n\ni\n\nDown-sampli",
+    "journal": "Nature",
+    "journal_id": "https://openalex.org/S137773608",
+    "issn_l": "0028-0836",
+    "source_type": "journal",
+    "doi": "https://doi.org/10.1038/s41586-023-06185-3",
+    "publication_date": "2023-07-05",
+    "publication_year": 2023,
+    "fwci": 246.82161288,
+    "cited_by_count": 1145,
+    "field": "Meteorological Phenomena and Simulations",
+    "parsed": {
+      "meta": {
+        "title": "Accurate medium-range global weather forecasting with 3D neural networks",
+        "primary": "地球科学",
+        "secondary_list": [
+          "地球科学",
+          "计算机科学技术"
+        ],
+        "journal": "Nature",
+        "journal_id": "https://openalex.org/S137773608",
+        "issn_l": "0028-0836",
+        "source_type": "journal",
+        "doi": "https://doi.org/10.1038/s41586-023-06185-3",
+        "publication_date": "2023-07-05",
+        "publication_year": 2023,
+        "fwci": 246.82161288,
+        "cited_by_count": 1145,
+        "field": "Meteorological Phenomena and Simulations"
+      },
+      "概念": {
+        "主学科": [
+          {
+            "term": "weather forecasting",
+            "normalized": "天气预报",
+            "std_label": "weather forecasting",
+            "evidence": "Weather forecasting is important for science and society",
+            "source": "abstract",
+            "confidence": 0.95
+          },
+          {
+            "term": "numerical weather prediction",
+            "normalized": "数值天气预报",
+            "std_label": "numerical weather prediction (NWP)",
+            "evidence": "the most accurate forecast system is the numerical weather prediction (NWP) method",
+            "source": "abstract",
+            "confidence": 0.98
+          },
+          {
+            "term": "partial differential equations",
+            "normalized": "偏微分方程",
+            "std_label": "partial differential equations",
+            "evidence": "numerically solves partial differential equations that describe the transition between those states",
+            "source": "abstract",
+            "confidence": 0.93
+          },
+          {
+            "term": "reanalysis data",
+            "normalized": "再分析数据",
+            "std_label": "reanalysis data",
+            "evidence": "obtains stronger deterministic forecast results on reanalysis data",
+            "source": "abstract",
+            "confidence": 0.92
+          },
+          {
+            "term": "European Centre for Medium-Range Weather Forecasts",
+            "normalized": "欧洲中期天气预报中心",
+            "std_label": "European Centre for Medium-Range Weather Forecasts (ECMWF)",
+            "evidence": "the operational integrated forecasting system of the European Centre for Medium-Range Weather Forecasts (ECMWF)",
+            "source": "abstract",
+            "confidence": 0.97
+          },
+          {
+            "term": "tropical cyclones",
+            "normalized": "热带气旋",
+            "std_label": "tropical cyclones",
+            "evidence": "accuracy of tracking tropical cyclones",
+            "source": "abstract",
+            "confidence": 0.91
+          },
+          {
+            "term": "extreme weather forecasts",
+            "normalized": "极端天气预报",
+            "std_label": "extreme weather forecasts",
+            "evidence": "Our method also works well with extreme weather forecasts",
+            "source": "abstract",
+            "confidence": 0.9
+          },
+          {
+            "term": "ensemble forecasts",
+            "normalized": "集合预报",
+            "std_label": "ensemble forecasts",
+            "evidence": "ensemble forecasts",
+            "source": "abstract",
+            "confidence": 0.89
+          },
+          {
+            "term": "500 hPa geopotential",
+            "normalized": "500百帕位势高度",
+            "std_label": "500 hPa geopotential (Z500)",
+            "evidence": "root mean square error (RMSE) of a 5-day Z500 (500 hPa geopotential) forecast",
+            "source": "introduction",
+            "confidence": 0.94
+          },
+          {
+            "term": "ERA5 data",
+            "normalized": "第五代欧洲中期天气预报中心再分析数据",
+            "std_label": "ERA5 data",
+            "evidence": "Experiments on the fifth generation of ECMWF reanalysis (ERA5) data",
+            "source": "introduction",
+            "confidence": 0.92
+          }
+        ],
+        "辅学科": {
+          "计算机科学技术": [
+            {
+              "term": "3D neural networks",
+              "normalized": "三维神经网络",
+              "std_label": "3D neural networks",
+              "evidence": "Accurate medium-range global weather forecasting with 3D neural networks",
+              "source": "title",
+              "confidence": 0.96
+            },
+            {
+              "term": "artificial-intelligence-based methods",
+              "normalized": "人工智能方法",
+              "std_label": "artificial-intelligence-based methods",
+              "evidence": "artificial-intelligence-based methods have shown potential",
+              "source": "abstract",
+              "confidence": 0.95
+            },
+            {
+              "term": "three-dimensional deep networks",
+              "normalized": "三维深度网络",
+              "std_label": "three-dimensional deep networks",
+              "evidence": "three-dimensional deep networks equipped with Earth-specific priors",
+              "source": "abstract",
+              "confidence": 0.94
+            },
+            {
+              "term": "Earth-specific priors",
+              "normalized": "地球特定先验知识",
+              "std_label": "Earth-specific priors",
+              "evidence": "equipped with Earth-specific priors",
+              "source": "abstract",
+              "confidence": 0.93
+            },
+            {
+              "term": "hierarchical temporal aggregation strategy",
+              "normalized": "分层时间聚合策略",
+              "std_label": "hierarchical temporal aggregation strategy",
+              "evidence": "hierarchical temporal aggregation strategy reduces accumulation errors",
+              "source": "abstract",
+              "confidence": 0.92
+            },
+            {
+              "term": "Pangu-Weather",
+              "normalized": "盘古气象",
+              "std_label": "Pangu-Weather",
+              "evidence": "our program, Pangu-Weather",
+              "source": "abstract",
+              "confidence": 0.97
+            },
+            {
+              "term": "graphics processing units",
+              "normalized": "图形处理单元",
+              "std_label": "graphics processing units (GPUs)",
+              "evidence": "on specialized computational devices such as graphics processing units (GPUs)",
+              "source": "introduction",
+              "confidence": 0.91
+            },
+            {
+              "term": "root mean square error",
+              "normalized": "均方根误差",
+              "std_label": "root mean square error (RMSE)",
+              "evidence": "root mean square error (RMSE) of a 5-day Z500",
+              "source": "introduction",
+              "confidence": 0.93
+            },
+            {
+              "term": "3D Earth-specific transformer",
+              "normalized": "三维地球特定变压器网络",
+              "std_label": "3D Earth-specific transformer (3DEST)",
+              "evidence": "3D Earth-specific transformer (3DEST) architecture",
+              "source": "introduction",
+              "confidence": 0.95
+            },
+            {
+              "term": "patch embedding",
+              "normalized": "块嵌入",
+              "std_label": "patch embedding",
+              "evidence": "2 × 4 × 4 patch embedding",
+              "source": "introduction",
+              "confidence": 0.89
+            }
+          ]
+        }
+      },
+      "跨学科关系": [
+        {
+          "head": "artificial-intelligence-based methods",
+          "relation": "applied to accelerate and improve accuracy in medium-range global forecasting",
+          "relation_type": "method_applied_to",
+          "relation_type_norm": "method_applied_to",
+          "relation_type_raw": "method_applied_to",
+          "tail": "weather forecasting",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "Recently, artificial-intelligence-based methods have shown potential in accelerating weather forecasting by orders of magnitude, but the forecast accuracy is still significantly lower than that of NWP methods. Here we introduce an artificial-intelligence-based method for accurate, medium-range global weather forecasting.",
+          "source": "abstract",
+          "confidence": 0.95
+        },
+        {
+          "head": "numerical weather prediction",
+          "relation": "computational expense drives the development of AI-based methods",
+          "relation_type": "driven_by",
+          "relation_type_norm": "driven_by",
+          "relation_type_raw": "driven_by",
+          "tail": "artificial-intelligence-based methods",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "However, this procedure is computationally expensive. Recently, artificial-intelligence-based methods have shown potential in accelerating weather forecasting by orders of magnitude",
+          "source": "abstract",
+          "confidence": 0.98
+        },
+        {
+          "head": "three-dimensional deep networks",
+          "relation": "equipped with Earth-specific priors to deal with complex patterns",
+          "relation_type": "method_applied_to",
+          "relation_type_norm": "method_applied_to",
+          "relation_type_raw": "method_applied_to",
+          "tail": "weather data",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "three-dimensional deep networks equipped with Earth-specific priors are effective at dealing with complex patterns in weather data",
+          "source": "abstract",
+          "confidence": 0.94
+        },
+        {
+          "head": "hierarchical temporal aggregation strategy",
+          "relation": "reduces accumulation errors in medium-range forecasting",
+          "relation_type": "improves_metric",
+          "relation_type_norm": "improves_metric",
+          "relation_type_raw": "improves_metric",
+          "tail": "weather forecasting",
+          "direction": "->",
+          "quant": {
+            "metric": "accumulation errors",
+            "value": "reduced"
+          },
+          "assumptions": [],
+          "evidence": "hierarchical temporal aggregation strategy reduces accumulation errors in medium-range forecasting",
+          "source": "abstract",
+          "confidence": 0.92
+        },
+        {
+          "head": "Pangu-Weather",
+          "relation": "obtains stronger deterministic forecast results than ECMWF IFS",
+          "relation_type": "improves_metric",
+          "relation_type_norm": "improves_metric",
+          "relation_type_raw": "improves_metric",
+          "tail": "European Centre for Medium-Range Weather Forecasts",
+          "direction": "->",
+          "quant": {
+            "metric": "deterministic forecast accuracy",
+            "value": "higher"
+          },
+          "assumptions": [],
+          "evidence": "Trained on 39 years... obtains stronger deterministic forecast results... higher than ECMWF-HRES",
+          "source": "abstract",
+          "confidence": 0.97
+        },
+        {
+          "head": "Earth-specific priors",
+          "relation": "equipped to deal with complex patterns in weather data",
+          "relation_type": "method_applied_to",
+          "relation_type_norm": "method_applied_to",
+          "relation_type_raw": "method_applied_to",
+          "tail": "weather data",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "three-dimensional deep networks equipped with Earth-specific priors are effective at dealing with complex patterns in weather data",
+          "source": "abstract",
+          "confidence": 0.93
+        },
+        {
+          "head": "reanalysis data",
+          "relation": "used for training and deterministic forecasts",
+          "relation_type": "depends_on",
+          "relation_type_norm": "depends_on",
+          "relation_type_raw": "depends_on",
+          "tail": "artificial-intelligence-based methods",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "train a deep neural network to capture the relationship between the input (reanalysis weather data at a given point in time) and the output... Pangu-Weather obtains stronger deterministic forecast results on reanalysis data",
+          "source": "abstract",
+          "confidence": 0.92
+        },
+        {
+          "head": "3D neural networks",
+          "relation": "used for accurate medium-range global weather forecasting",
+          "relation_type": "method_applied_to",
+          "relation_type_norm": "method_applied_to",
+          "relation_type_raw": "method_applied_to",
+          "tail": "weather forecasting",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "Accurate medium-range global weather forecasting with 3D neural networks",
+          "source": "title",
+          "confidence": 0.96
+        },
+        {
+          "head": "Pangu-Weather",
+          "relation": "higher accuracy in tracking tropical cyclones compared to ECMWF-HRES",
+          "relation_type": "improves_metric",
+          "relation_type_norm": "improves_metric",
+          "relation_type_raw": "improves_metric",
+          "tail": "tropical cyclones",
+          "direction": "->",
+          "quant": {
+            "metric": "tracking accuracy",
+            "value": "higher"
+          },
+          "assumptions": [],
+          "evidence": "the accuracy of tracking tropical cyclones is also higher than that of ECMWF-HRES",
+          "source": "abstract",
+          "confidence": 0.91
+        },
+        {
+          "head": "Pangu-Weather",
+          "relation": "works well with extreme weather forecasts",
+          "relation_type": "method_applied_to",
+          "relation_type_norm": "method_applied_to",
+          "relation_type_raw": "method_applied_to",
+          "tail": "extreme weather forecasts",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "Our method also works well with extreme weather forecasts",
+          "source": "abstract",
+          "confidence": 0.9
+        }
+      ],
+      "按辅助学科分类": {
+        "计算机科学技术": {
+          "概念": [
+            "三维神经网络",
+            "人工智能方法",
+            "三维深度网络",
+            "地球特定先验知识",
+            "分层时间聚合策略",
+            "盘古气象",
+            "图形处理单元",
+            "均方根误差",
+            "三维地球特定变压器网络",
+            "块嵌入"
+          ],
+          "关系": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            6,
+            7,
+            8,
+            9
+          ],
+          "rationale": "通过三维神经网络与地球特定先验知识的结合，构建高效时空特征提取框架，并利用分层聚合策略降低误差累积"
+        }
+      },
+      "查询": {
+        "一级": "如何突破传统数值方法在中长期全球天气预报中的精度与效率瓶颈",
+        "二级": [
+          "人工智能方法如何提升再分析数据的时空特征提取能力",
+          "三维深度网络如何优化极端天气过程的非线性建模"
+        ],
+        "三级": [
+          "三维神经网络结合地球特定先验知识如何构建空间感知的时空聚合机制",
+          "分层时间聚合策略与块嵌入技术如何协同降低500百帕位势高度预测的均方根误差"
+        ]
+      },
+      "假设": {
+        "一级": [
+          [
+            {
+              "step": 1,
+              "head": "数值天气预报",
+              "relation": "计算成本高且误差积累驱动人工智能方法开发",
+              "tail": "人工智能方法",
+              "claim": "需要计算机科学技术开发三维神经网络结合地球特定先验知识优化非线性建模"
+            },
+            {
+              "step": 2,
+              "head": "人工智能方法",
+              "relation": "基于三维神经网络提升预报精度",
+              "tail": "三维神经网络",
+              "claim": "需要计算机科学技术开发三维神经网络结合地球特定先验知识优化非线性建模"
+            },
+            {
+              "step": 3,
+              "head": "三维神经网络",
+              "relation": "装备地球特定先验知识处理复杂时空模式",
+              "tail": "地球特定先验知识",
+              "claim": "需要计算机科学技术开发三维神经网络结合地球特定先验知识优化非线性建模"
+            }
+          ],
+          [
+            {
+              "step": 1,
+              "head": "数值天气预报",
+              "relation": "依赖偏微分方程求解导致效率瓶颈",
+              "tail": "偏微分方程",
+              "claim": "需要计算机科学技术引入分层时间聚合策略减少误差积累"
+            },
+            {
+              "step": 2,
+              "head": "偏微分方程",
+              "relation": "被人工智能方法替代以降低计算复杂度",
+              "tail": "人工智能方法",
+              "claim": "需要计算机科学技术引入分层时间聚合策略减少误差积累"
+            },
+            {
+              "step": 3,
+              "head": "人工智能方法",
+              "relation": "采用分层时间聚合策略优化误差传播",
+              "tail": "分层时间聚合策略",
+              "claim": "需要计算机科学技术引入分层时间聚合策略减少误差积累"
+            }
+          ]
+        ],
+        "二级": [
+          [
+            {
+              "step": 1,
+              "head": "人工智能方法",
+              "relation": "应用训练数据增强时空特征提取",
+              "tail": "再分析数据",
+              "claim": "人工智能方法通过再分析数据的高时空分辨率特征训练模型参数"
+            },
+            {
+              "step": 2,
+              "head": "再分析数据",
+              "relation": "驱动三维结构建模",
+              "tail": "三维神经网络",
+              "claim": "再分析数据的多维特征驱动三维神经网络的空间感知机制构建"
+            },
+            {
+              "step": 3,
+              "head": "三维神经网络",
+              "relation": "提升中长期预测精度",
+              "tail": "天气预报",
+              "claim": "三维神经网络的空间感知能力增强天气系统演变的预测准确性"
+            }
+          ],
+          [
+            {
+              "step": 1,
+              "head": "三维深度网络",
+              "relation": "融合物理约束建模",
+              "tail": "地球特定先验知识",
+              "claim": "三维深度网络集成地球球面坐标与大气动力方程的先验知识"
+            },
+            {
+              "step": 2,
+              "head": "地球特定先验知识",
+              "relation": "约束非线性过程模拟",
+              "tail": "极端天气预报",
+              "claim": "先验知识引导模型聚焦极端天气系统的非线性能量转换过程"
+            },
+            {
+              "step": 3,
+              "head": "极端天气预报",
+              "relation": "优化轨迹预测指标",
+              "tail": "热带气旋",
+              "claim": "改进的非线性建模显著提升热带气旋路径与强度的预测分辨率"
+            }
+          ]
+        ],
+        "三级": [
+          [
+            {
+              "step": 1,
+              "head": "三维神经网络",
+              "relation": "装备地球特定先验知识以增强空间感知能力",
+              "tail": "地球特定先验知识",
+              "claim": "三维神经网络 装备地球特定先验知识以增强空间感知能力 地球特定先验知识"
+            },
+            {
+              "step": 2,
+              "head": "地球特定先验知识",
+              "relation": "协同分层时间聚合策略构建时空特征融合机制",
+              "tail": "分层时间聚合策略",
+              "claim": "地球特定先验知识 协同分层时间聚合策略构建时空特征融合机制 分层时间聚合策略"
+            },
+            {
+              "step": 3,
+              "head": "分层时间聚合策略",
+              "relation": "提升天气预报的时空分辨率和预测稳定性",
+              "tail": "天气预报",
+              "claim": "分层时间聚合策略 提升天气预报的时空分辨率和预测稳定性 天气预报"
+            }
+          ],
+          [
+            {
+              "step": 1,
+              "head": "分层时间聚合策略",
+              "relation": "与块嵌入技术结合优化多尺度特征提取",
+              "tail": "块嵌入",
+              "claim": "分层时间聚合策略 与块嵌入技术结合优化多尺度特征提取 块嵌入"
+            },
+            {
+              "step": 2,
+              "head": "块嵌入",
+              "relation": "改进500百帕位势高度场的空间结构表征",
+              "tail": "500百帕位势高度",
+              "claim": "块嵌入 改进500百帕位势高度场的空间结构表征 500百帕位势高度"
+            },
+            {
+              "step": 3,
+              "head": "500百帕位势高度",
+              "relation": "降低预测结果的均方根误差",
+              "tail": "均方根误差",
+              "claim": "500百帕位势高度 降低预测结果的均方根误差 均方根误差"
+            }
+          ]
+        ],
+        "一级总结": [
+          "传统数值方法因计算成本高且误差积累导致精度瓶颈，需计算机科学技术的三维神经网络结合地球先验知识优化非线性建模",
+          "传统数值方法依赖偏微分方程求解导致效率瓶颈，需计算机科学技术的分层时间聚合策略减少误差积累"
+        ],
+        "二级总结": [
+          "人工智能方法通过再分析数据训练三维神经网络，构建空间感知的时空特征提取框架，突破传统数值预报的分辨率限制",
+          "三维深度网络融合地球特定先验知识形成物理约束建模体系，显著优化极端天气系统的非线性动力过程模拟精度"
+        ],
+        "三级总结": [
+          "通过三维神经网络集成地球特定先验知识，结合分层时间聚合策略实现时空特征的层次化融合，最终提升天气预报的空间分辨率和时间连续性验证",
+          "利用分层时间聚合策略与块嵌入技术的多尺度协同作用，优化大气位势高度场的空间结构建模，从而在5日预测周期内显著降低均方根误差"
+        ]
+      },
+      "graph": {
+        "nodes": [
+          {
+            "id": "天气预报",
+            "term": "weather forecasting",
+            "normalized": "天气预报",
+            "discipline": "地球科学",
+            "evidence": "Weather forecasting is important for science and society",
+            "source": "abstract",
+            "confidence": 0.95
+          },
+          {
+            "id": "数值天气预报",
+            "term": "numerical weather prediction",
+            "normalized": "数值天气预报",
+            "discipline": "地球科学",
+            "evidence": "the most accurate forecast system is the numerical weather prediction (NWP) method",
+            "source": "abstract",
+            "confidence": 0.98
+          },
+          {
+            "id": "偏微分方程",
+            "term": "partial differential equations",
+            "normalized": "偏微分方程",
+            "discipline": "地球科学",
+            "evidence": "numerically solves partial differential equations that describe the transition between those states",
+            "source": "abstract",
+            "confidence": 0.93
+          },
+          {
+            "id": "再分析数据",
+            "term": "reanalysis data",
+            "normalized": "再分析数据",
+            "discipline": "地球科学",
+            "evidence": "obtains stronger deterministic forecast results on reanalysis data",
+            "source": "abstract",
+            "confidence": 0.92
+          },
+          {
+            "id": "欧洲中期天气预报中心",
+            "term": "European Centre for Medium-Range Weather Forecasts",
+            "normalized": "欧洲中期天气预报中心",
+            "discipline": "地球科学",
+            "evidence": "the operational integrated forecasting system of the European Centre for Medium-Range Weather Forecasts (ECMWF)",
+            "source": "abstract",
+            "confidence": 0.97
+          },
+          {
+            "id": "热带气旋",
+            "term": "tropical cyclones",
+            "normalized": "热带气旋",
+            "discipline": "地球科学",
+            "evidence": "accuracy of tracking tropical cyclones",
+            "source": "abstract",
+            "confidence": 0.91
+          },
+          {
+            "id": "极端天气预报",
+            "term": "extreme weather forecasts",
+            "normalized": "极端天气预报",
+            "discipline": "地球科学",
+            "evidence": "Our method also works well with extreme weather forecasts",
+            "source": "abstract",
+            "confidence": 0.9
+          },
+          {
+            "id": "集合预报",
+            "term": "ensemble forecasts",
+            "normalized": "集合预报",
+            "discipline": "地球科学",
+            "evidence": "ensemble forecasts",
+            "source": "abstract",
+            "confidence": 0.89
+          },
+          {
+            "id": "500百帕位势高度",
+            "term": "500 hPa geopotential",
+            "normalized": "500百帕位势高度",
+            "discipline": "地球科学",
+            "evidence": "root mean square error (RMSE) of a 5-day Z500 (500 hPa geopotential) forecast",
+            "source": "introduction",
+            "confidence": 0.94
+          },
+          {
+            "id": "第五代欧洲中期天气预报中心再分析数据",
+            "term": "ERA5 data",
+            "normalized": "第五代欧洲中期天气预报中心再分析数据",
+            "discipline": "地球科学",
+            "evidence": "Experiments on the fifth generation of ECMWF reanalysis (ERA5) data",
+            "source": "introduction",
+            "confidence": 0.92
+          },
+          {
+            "id": "三维神经网络",
+            "term": "3D neural networks",
+            "normalized": "三维神经网络",
+            "discipline": "计算机科学技术",
+            "evidence": "Accurate medium-range global weather forecasting with 3D neural networks",
+            "source": "title",
+            "confidence": 0.96
+          },
+          {
+            "id": "人工智能方法",
+            "term": "artificial-intelligence-based methods",
+            "normalized": "人工智能方法",
+            "discipline": "计算机科学技术",
+            "evidence": "artificial-intelligence-based methods have shown potential",
+            "source": "abstract",
+            "confidence": 0.95
+          },
+          {
+            "id": "三维深度网络",
+            "term": "three-dimensional deep networks",
+            "normalized": "三维深度网络",
+            "discipline": "计算机科学技术",
+            "evidence": "three-dimensional deep networks equipped with Earth-specific priors",
+            "source": "abstract",
+            "confidence": 0.94
+          },
+          {
+            "id": "地球特定先验知识",
+            "term": "Earth-specific priors",
+            "normalized": "地球特定先验知识",
+            "discipline": "计算机科学技术",
+            "evidence": "equipped with Earth-specific priors",
+            "source": "abstract",
+            "confidence": 0.93
+          },
+          {
+            "id": "分层时间聚合策略",
+            "term": "hierarchical temporal aggregation strategy",
+            "normalized": "分层时间聚合策略",
+            "discipline": "计算机科学技术",
+            "evidence": "hierarchical temporal aggregation strategy reduces accumulation errors",
+            "source": "abstract",
+            "confidence": 0.92
+          },
+          {
+            "id": "盘古气象",
+            "term": "Pangu-Weather",
+            "normalized": "盘古气象",
+            "discipline": "计算机科学技术",
+            "evidence": "our program, Pangu-Weather",
+            "source": "abstract",
+            "confidence": 0.97
+          },
+          {
+            "id": "图形处理单元",
+            "term": "graphics processing units",
+            "normalized": "图形处理单元",
+            "discipline": "计算机科学技术",
+            "evidence": "on specialized computational devices such as graphics processing units (GPUs)",
+            "source": "introduction",
+            "confidence": 0.91
+          },
+          {
+            "id": "均方根误差",
+            "term": "root mean square error",
+            "normalized": "均方根误差",
+            "discipline": "计算机科学技术",
+            "evidence": "root mean square error (RMSE) of a 5-day Z500",
+            "source": "introduction",
+            "confidence": 0.93
+          },
+          {
+            "id": "三维地球特定变压器网络",
+            "term": "3D Earth-specific transformer",
+            "normalized": "三维地球特定变压器网络",
+            "discipline": "计算机科学技术",
+            "evidence": "3D Earth-specific transformer (3DEST) architecture",
+            "source": "introduction",
+            "confidence": 0.95
+          },
+          {
+            "id": "块嵌入",
+            "term": "patch embedding",
+            "normalized": "块嵌入",
+            "discipline": "计算机科学技术",
+            "evidence": "2 × 4 × 4 patch embedding",
+            "source": "introduction",
+            "confidence": 0.89
+          },
+          {
+            "id": "weather data",
+            "term": "weather data",
+            "normalized": "weather data",
+            "discipline": "struct_relation_inferred",
+            "evidence": "",
+            "source": "struct_relation_inferred",
+            "confidence": 0.8
+          }
+        ],
+        "edges": [
+          {
+            "source": "人工智能方法",
+            "target": "天气预报",
+            "relation": "applied to accelerate and improve accuracy in medium-range global forecasting",
+            "relation_type": "method_applied_to",
+            "metadata": {
+              "evidence": "Recently, artificial-intelligence-based methods have shown potential in accelerating weather forecasting by orders of magnitude, but the forecast accuracy is still significantly lower than that of NWP methods. Here we introduce an artificial-intelligence-based method for accurate, medium-range global weather forecasting.",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "数值天气预报",
+            "target": "人工智能方法",
+            "relation": "computational expense drives the development of AI-based methods",
+            "relation_type": "driven_by",
+            "metadata": {
+              "evidence": "However, this procedure is computationally expensive. Recently, artificial-intelligence-based methods have shown potential in accelerating weather forecasting by orders of magnitude",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "三维深度网络",
+            "target": "weather data",
+            "relation": "equipped with Earth-specific priors to deal with complex patterns",
+            "relation_type": "method_applied_to",
+            "metadata": {
+              "evidence": "three-dimensional deep networks equipped with Earth-specific priors are effective at dealing with complex patterns in weather data",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "分层时间聚合策略",
+            "target": "天气预报",
+            "relation": "reduces accumulation errors in medium-range forecasting",
+            "relation_type": "improves_metric",
+            "metadata": {
+              "evidence": "hierarchical temporal aggregation strategy reduces accumulation errors in medium-range forecasting",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "盘古气象",
+            "target": "欧洲中期天气预报中心",
+            "relation": "obtains stronger deterministic forecast results than ECMWF IFS",
+            "relation_type": "improves_metric",
+            "metadata": {
+              "evidence": "Trained on 39 years... obtains stronger deterministic forecast results... higher than ECMWF-HRES",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "地球特定先验知识",
+            "target": "weather data",
+            "relation": "equipped to deal with complex patterns in weather data",
+            "relation_type": "method_applied_to",
+            "metadata": {
+              "evidence": "three-dimensional deep networks equipped with Earth-specific priors are effective at dealing with complex patterns in weather data",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "再分析数据",
+            "target": "人工智能方法",
+            "relation": "used for training and deterministic forecasts",
+            "relation_type": "depends_on",
+            "metadata": {
+              "evidence": "train a deep neural network to capture the relationship between the input (reanalysis weather data at a given point in time) and the output... Pangu-Weather obtains stronger deterministic forecast results on reanalysis data",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "三维神经网络",
+            "target": "天气预报",
+            "relation": "used for accurate medium-range global weather forecasting",
+            "relation_type": "method_applied_to",
+            "metadata": {
+              "evidence": "Accurate medium-range global weather forecasting with 3D neural networks",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "盘古气象",
+            "target": "热带气旋",
+            "relation": "higher accuracy in tracking tropical cyclones compared to ECMWF-HRES",
+            "relation_type": "improves_metric",
+            "metadata": {
+              "evidence": "the accuracy of tracking tropical cyclones is also higher than that of ECMWF-HRES",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "盘古气象",
+            "target": "极端天气预报",
+            "relation": "works well with extreme weather forecasts",
+            "relation_type": "method_applied_to",
+            "metadata": {
+              "evidence": "Our method also works well with extreme weather forecasts",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "数值天气预报",
+            "target": "人工智能方法",
+            "relation": "计算成本高且误差积累驱动人工智能方法开发",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "需要计算机科学技术开发三维神经网络结合地球特定先验知识优化非线性建模",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "人工智能方法",
+            "target": "三维神经网络",
+            "relation": "基于三维神经网络提升预报精度",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "需要计算机科学技术开发三维神经网络结合地球特定先验知识优化非线性建模",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "三维神经网络",
+            "target": "地球特定先验知识",
+            "relation": "装备地球特定先验知识处理复杂时空模式",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "需要计算机科学技术开发三维神经网络结合地球特定先验知识优化非线性建模",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "数值天气预报",
+            "target": "偏微分方程",
+            "relation": "依赖偏微分方程求解导致效率瓶颈",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "需要计算机科学技术引入分层时间聚合策略减少误差积累",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "偏微分方程",
+            "target": "人工智能方法",
+            "relation": "被人工智能方法替代以降低计算复杂度",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "需要计算机科学技术引入分层时间聚合策略减少误差积累",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "人工智能方法",
+            "target": "分层时间聚合策略",
+            "relation": "采用分层时间聚合策略优化误差传播",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "需要计算机科学技术引入分层时间聚合策略减少误差积累",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "人工智能方法",
+            "target": "再分析数据",
+            "relation": "应用训练数据增强时空特征提取",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "人工智能方法通过再分析数据的高时空分辨率特征训练模型参数",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "再分析数据",
+            "target": "三维神经网络",
+            "relation": "驱动三维结构建模",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "再分析数据的多维特征驱动三维神经网络的空间感知机制构建",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "三维神经网络",
+            "target": "天气预报",
+            "relation": "提升中长期预测精度",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "三维神经网络的空间感知能力增强天气系统演变的预测准确性",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "三维深度网络",
+            "target": "地球特定先验知识",
+            "relation": "融合物理约束建模",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "三维深度网络集成地球球面坐标与大气动力方程的先验知识",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "地球特定先验知识",
+            "target": "极端天气预报",
+            "relation": "约束非线性过程模拟",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "先验知识引导模型聚焦极端天气系统的非线性能量转换过程",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "极端天气预报",
+            "target": "热带气旋",
+            "relation": "优化轨迹预测指标",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "改进的非线性建模显著提升热带气旋路径与强度的预测分辨率",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "三维神经网络",
+            "target": "地球特定先验知识",
+            "relation": "装备地球特定先验知识以增强空间感知能力",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "三维神经网络 装备地球特定先验知识以增强空间感知能力 地球特定先验知识",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "地球特定先验知识",
+            "target": "分层时间聚合策略",
+            "relation": "协同分层时间聚合策略构建时空特征融合机制",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "地球特定先验知识 协同分层时间聚合策略构建时空特征融合机制 分层时间聚合策略",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "分层时间聚合策略",
+            "target": "天气预报",
+            "relation": "提升天气预报的时空分辨率和预测稳定性",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "分层时间聚合策略 提升天气预报的时空分辨率和预测稳定性 天气预报",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "分层时间聚合策略",
+            "target": "块嵌入",
+            "relation": "与块嵌入技术结合优化多尺度特征提取",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "分层时间聚合策略 与块嵌入技术结合优化多尺度特征提取 块嵌入",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "块嵌入",
+            "target": "500百帕位势高度",
+            "relation": "改进500百帕位势高度场的空间结构表征",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "块嵌入 改进500百帕位势高度场的空间结构表征 500百帕位势高度",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "500百帕位势高度",
+            "target": "均方根误差",
+            "relation": "降低预测结果的均方根误差",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "500百帕位势高度 降低预测结果的均方根误差 均方根误差",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          }
+        ]
+      },
+      "metrics": {
+        "path_consistency": 0.16666666666666666,
+        "coverage": 0.6666666666666666,
+        "bridging_score": 0.6538461538461539,
+        "rao_stirling_diversity": 0.1538,
+        "embedding_bridging": 0.7857,
+        "consistency_precision": 0.0,
+        "consistency_recall": 0.0,
+        "consistency_f1": 0.0,
+        "info_novelty": 0.0,
+        "chain_coherence": 0.8292,
+        "atypical_combination": 0.5622,
+        "kg_density": 0.0571,
+        "kg_inverse_modularity": 1.1352,
+        "kg_largest_cc_ratio": 0.8095,
+        "kg_avg_betweenness": 0.0692,
+        "kg_clustering_coefficient": 0.3905,
+        "concept_recall": 0.0,
+        "concept_precision": 0.0,
+        "concept_f1": 0.0,
+        "relation_precision": 0.0,
+        "relation_type_accuracy": 0.0,
+        "evidence_coverage": 0.0,
+        "path_alignment_best": 0.0,
+        "path_alignment_mean": 0.0
+      }
+    },
+    "raw": "/* stage1: struct */\n/* concepts round1 */\n{\n  \"meta\": {\n    \"title\": \"Accurate medium-range global weather forecasting with 3D neural networks\",\n    \"primary\": \"地球科学\",\n    \"secondary_list\": [\"地球科学\", \"计算机科学技术\"]\n  },\n  \"概念\": {\n    \"主学科\": [\n      {\n        \"term\": \"weather forecasting\",\n        \"normalized\": \"天气预报\",\n        \"std_label\": \"weather forecasting\",\n        \"evidence\": \"Weather forecasting is important for science and society\",\n        \"source\": \"abstract\",\n        \"confidence\": 0.95\n      },\n      {\n        \"term\": \"numerical weather prediction\",\n        \"normalized\": \"数值天气预报\",\n        \"std_label\": \"numerical weather prediction (NWP)\",\n        \"evidence\": \"the most accurate forecast system is the numerical weather prediction (NWP) method\",\n        \"source\": \"abstract\",\n        \"confidence\": 0.98\n      },\n      {\n        \"term\": \"partial differential equations\",\n        \"normalized\": \"偏微分方程\",\n        \"std_label\": \"partial differential equations\",\n        \"evidence\": \"numerically solves partial differential equations that describe the transition between those states\",\n        \"source\": \"abstract\",\n        \"confidence\": 0.93\n      },\n      {\n        \"term\": \"reanalysis data\",\n        \"normalized\": \"再分析数据\",\n        \"std_label\": \"reanalysis data\",\n        \"evidence\": \"obtains stronger deterministic forecast results on reanalysis data\",\n        \"source\": \"abstract\",\n        \"confidence\": 0.92\n      },\n      {\n        \"term\": \"European Centre for Medium-Range Weather Forecasts\",\n        \"normalized\": \"欧洲中期天气预报中心\",\n        \"std_label\": \"European Centre for Medium-Range Weather Forecasts (ECMWF)\",\n        \"evidence\": \"the operational integrated forecasting system of the European Centre for Medium-Range Weather Forecasts (ECMWF)\",\n        \"source\": \"abstract\",\n        \"confidence\": 0.97\n      },\n      {\n        \"term\": \"tropical cyclones\",\n        \"normalized\": \"热带气旋\",\n        \"std_label\": \"tropical cyclones\",\n        \"evidence\": \"accuracy of tracking tropical cyclones\",\n        \"source\": \"abstract\",\n        \"confidence\": 0.91\n      },\n      {\n        \"term\": \"extreme weather forecasts\",\n        \"normalized\": \"极端天气预报\",\n        \"std_label\": \"extreme weather forecasts\",\n        \"evidence\": \"Our method also works well with extreme weather forecasts\",\n        \"source\": \"abstract\",\n        \"confidence\": 0.90\n      },\n      {\n        \"term\": \"ensemble forecasts\",\n        \"normalized\": \"集合预报\",\n        \"std_label\": \"ensemble forecasts\",\n        \"evidence\": \"ensemble forecasts\",\n        \"source\": \"abstract\",\n        \"confidence\": 0.89\n      },\n      {\n        \"term\": \"500 hPa geopotential\",\n        \"normalized\": \"500百帕位势高度\",\n        \"std_label\": \"500 hPa geopotential (Z500)\",\n        \"evidence\": \"root mean square error (RMSE) of a 5-day Z500 (500 hPa geopotential) forecast\",\n        \"source\": \"introduction\",\n        \"confidence\": 0.94\n      },\n      {\n        \"term\": \"ERA5 data\",\n        \"normalized\": \"第五代欧洲中期天气预报中心再分析数据\",\n        \"std_label\": \"ERA5 data\",\n        \"evidence\": \"Experiments on the fifth generation of ECMWF reanalysis (ERA5) data\",\n        \"source\": \"introduction\",\n        \"confidence\": 0.92\n      }\n    ],\n    \"辅学科\": {\n      \"计算机科学技术\": [\n        {\n          \"term\": \"3D neural networks\",\n          \"normalized\": \"三维神经网络\",\n          \"std_label\": \"3D neural networks\",\n          \"evidence\": \"Accurate medium-range global weather forecasting with 3D neural networks\",\n          \"source\": \"title\",\n          \"confidence\": 0.96\n        },\n        {\n          \"term\": \"artificial-intelligence-based methods\",\n          \"normalized\": \"人工智能方法\",\n          \"std_label\": \"artificial-intelligence-based methods\",\n          \"evidence\": \"artificial-intelligence-based methods have shown potential\",\n          \"source\": \"abstract\",\n          \"confidence\": 0.95\n        },\n        {\n          \"term\": \"three-dimensional deep networks\",\n          \"normalized\": \"三维深度网络\",\n          \"std_label\": \"three-dimensional deep networks\",\n          \"evidence\": \"three-dimensional deep networks equipped with Earth-specific priors\",\n          \"source\": \"abstract\",\n          \"confidence\": 0.94\n        },\n        {\n          \"term\": \"Earth-specific priors\",\n          \"normalized\": \"地球特定先验知识\",\n          \"std_label\": \"Earth-specific priors\",\n          \"evidence\": \"equipped with Earth-specific priors\",\n          \"source\": \"abstract\",\n          \"confidence\": 0.93\n        },\n        {\n          \"term\": \"hierarchical temporal aggregation strategy\",\n          \"normalized\": \"分层时间聚合策略\",\n          \"std_label\": \"hierarchical temporal aggregation strategy\",\n          \"evidence\": \"hierarchical temporal aggregation strategy reduces accumulation errors\",\n          \"source\": \"abstract\",\n          \"confidence\": 0.92\n        },\n        {\n          \"term\": \"Pangu-Weather\",\n          \"normalized\": \"盘古气象\",\n          \"std_label\": \"Pangu-Weather\",\n          \"evidence\": \"our program, Pangu-Weather\",\n          \"source\": \"abstract\",\n          \"confidence\": 0.97\n        },\n        {\n          \"term\": \"graphics processing units\",\n          \"normalized\": \"图形处理单元\",\n          \"std_label\": \"graphics processing units (GPUs)\",\n          \"evidence\": \"on specialized computational devices such as graphics processing units (GPUs)\",\n          \"source\": \"introduction\",\n          \"confidence\": 0.91\n        },\n        {\n          \"term\": \"root mean square error\",\n          \"normalized\": \"均方根误差\",\n          \"std_label\": \"root mean square error (RMSE)\",\n          \"evidence\": \"root mean square error (RMSE) of a 5-day Z500\",\n          \"source\": \"introduction\",\n          \"confidence\": 0.93\n        },\n        {\n          \"term\": \"3D Earth-specific transformer\",\n          \"normalized\": \"三维地球特定变压器网络\",\n          \"std_label\": \"3D Earth-specific transformer (3DEST)\",\n          \"evidence\": \"3D Earth-specific transformer (3DEST) architecture\",\n          \"source\": \"introduction\",\n          \"confidence\": 0.95\n        },\n        {\n          \"term\": \"patch embedding\",\n          \"normalized\": \"块嵌入\",\n          \"std_label\": \"patch embedding\",\n          \"evidence\": \"2 × 4 × 4 patch embedding\",\n          \"source\": \"introduction\",\n          \"confidence\": 0.89\n        }\n      ]\n    }\n  }\n}\n\n/* concepts round2 (supplement) */\n{\"补充概念\": {\"主学科\": [\"Z500\", \"upper-air variables\", \"surface variables\", \"operational integrated forecasting system\", \"3DEST\", \"Earth-specific block\", \"hierarchical temporal aggregation algorithm\", \"patch recovery\"], \"辅学科\": {\"地球科学\": [\"Z500\", \"upper-air variables\", \"surface variables\"], \"计算机科学技术\": [\"operational integrated forecasting system\", \"3DEST\", \"Earth-specific block\", \"hierarchical temporal aggregation algorithm\", \"patch recovery\"]}}}\n\n/* relations */\n{\n  \"跨学科关系\": [\n    {\n      \"head\": \"artificial-intelligence-based methods\",\n      \"tail\": \"weather forecasting\",\n      \"relation\": \"applied to accelerate and improve accuracy in medium-range global forecasting\",\n      \"relation_type\": \"method_applied_to\",\n      \"direction\": \"->\",\n      \"evidence\": \"Recently, artificial-intelligence-based methods have shown potential in accelerating weather forecasting by orders of magnitude, but the forecast accuracy is still significantly lower than that of NWP methods. Here we introduce an artificial-intelligence-based method for accurate, medium-range global weather forecasting.\",\n      \"source\": \"abstract\",\n      \"confidence\": 0.95\n    },\n    {\n      \"head\": \"numerical weather prediction\",\n      \"tail\": \"artificial-intelligence-based methods\",\n      \"relation\": \"computational expense drives the development of AI-based methods\",\n      \"relation_type\": \"driven_by\",\n      \"direction\": \"->\",\n      \"evidence\": \"However, this procedure is computationally expensive. Recently, artificial-intelligence-based methods have shown potential in accelerating weather forecasting by orders of magnitude\",\n      \"source\": \"abstract\",\n      \"confidence\": 0.98\n    },\n    {\n      \"head\": \"three-dimensional deep networks\",\n      \"tail\": \"weather data\",\n      \"relation\": \"equipped with Earth-specific priors to deal with complex patterns\",\n      \"relation_type\": \"method_applied_to\",\n      \"direction\": \"->\",\n      \"evidence\": \"three-dimensional deep networks equipped with Earth-specific priors are effective at dealing with complex patterns in weather data\",\n      \"source\": \"abstract\",\n      \"confidence\": 0.94\n    },\n    {\n      \"head\": \"hierarchical temporal aggregation strategy\",\n      \"tail\": \"weather forecasting\",\n      \"relation\": \"reduces accumulation errors in medium-range forecasting\",\n      \"relation_type\": \"improves_metric\",\n      \"quant\": {\n        \"metric\": \"accumulation errors\",\n        \"value\": \"reduced\"\n      },\n      \"evidence\": \"hierarchical temporal aggregation strategy reduces accumulation errors in medium-range forecasting\",\n      \"source\": \"abstract\",\n      \"confidence\": 0.92\n    },\n    {\n      \"head\": \"Pangu-Weather\",\n      \"tail\": \"European Centre for Medium-Range Weather Forecasts\",\n      \"relation\": \"obtains stronger deterministic forecast results than ECMWF IFS\",\n      \"relation_type\": \"improves_metric\",\n      \"quant\": {\n        \"metric\": \"deterministic forecast accuracy\",\n        \"value\": \"higher\"\n      },\n      \"evidence\": \"Trained on 39 years... obtains stronger deterministic forecast results... higher than ECMWF-HRES\",\n      \"source\": \"abstract\",\n      \"confidence\": 0.97\n    },\n    {\n      \"head\": \"Earth-specific priors\",\n      \"tail\": \"weather data\",\n      \"relation\": \"equipped to deal with complex patterns in weather data\",\n      \"relation_type\": \"method_applied_to\",\n      \"direction\": \"->\",\n      \"evidence\": \"three-dimensional deep networks equipped with Earth-specific priors are effective at dealing with complex patterns in weather data\",\n      \"source\": \"abstract\",\n      \"confidence\": 0.93\n    },\n    {\n      \"head\": \"reanalysis data\",\n      \"tail\": \"artificial-intelligence-based methods\",\n      \"relation\": \"used for training and deterministic forecasts\",\n      \"relation_type\": \"depends_on\",\n      \"direction\": \"->\",\n      \"evidence\": \"train a deep neural network to capture the relationship between the input (reanalysis weather data at a given point in time) and the output... Pangu-Weather obtains stronger deterministic forecast results on reanalysis data\",\n      \"source\": \"abstract\",\n      \"confidence\": 0.92\n    },\n    {\n      \"head\": \"3D neural networks\",\n      \"tail\": \"weather forecasting\",\n      \"relation\": \"used for accurate medium-range global weather forecasting\",\n      \"relation_type\": \"method_applied_to\",\n      \"direction\": \"->\",\n      \"evidence\": \"Accurate medium-range global weather forecasting with 3D neural networks\",\n      \"source\": \"title\",\n      \"confidence\": 0.96\n    },\n    {\n      \"head\": \"Pangu-Weather\",\n      \"tail\": \"tropical cyclones\",\n      \"relation\": \"higher accuracy in tracking tropical cyclones compared to ECMWF-HRES\",\n      \"relation_type\": \"improves_metric\",\n      \"quant\": {\n        \"metric\": \"tracking accuracy\",\n        \"value\": \"higher\"\n      },\n      \"evidence\": \"the accuracy of tracking tropical cyclones is also higher than that of ECMWF-HRES\",\n      \"source\": \"abstract\",\n      \"confidence\": 0.91\n    },\n    {\n      \"head\": \"Pangu-Weather\",\n      \"tail\": \"extreme weather forecasts\",\n      \"relation\": \"works well with extreme weather forecasts\",\n      \"relation_type\": \"method_applied_to\",\n      \"direction\": \"->\",\n      \"evidence\": \"Our method also works well with extreme weather forecasts\",\n      \"source\": \"abstract\",\n      \"confidence\": 0.9\n    }\n  ]\n}\n\n/* stage2: query */\n{\n  \"按辅助学科分类\": {\n    \"计算机科学技术\": {\n      \"概念\": [\n        \"三维神经网络\",\n        \"人工智能方法\",\n        \"三维深度网络\",\n        \"地球特定先验知识\",\n        \"分层时间聚合策略\",\n        \"盘古气象\",\n        \"图形处理单元\",\n        \"均方根误差\",\n        \"三维地球特定变压器网络\",\n        \"块嵌入\"\n      ],\n      \"关系\": [0, 1, 2, 3, 4, 6, 7, 8, 9],\n      \"rationale\": \"通过三维神经网络与地球特定先验知识的结合，构建高效时空特征提取框架，并利用分层聚合策略降低误差累积\"\n    }\n  },\n  \"查询\": {\n    \"一级\": \"如何突破传统数值方法在中长期全球天气预报中的精度与效率瓶颈\",\n    \"二级\": [\n      \"人工智能方法如何提升再分析数据的时空特征提取能力\",\n      \"三维深度网络如何优化极端天气过程的非线性建模\"\n    ],\n    \"三级\": [\n      \"三维神经网络结合地球特定先验知识如何构建空间感知的时空聚合机制\",\n      \"分层时间聚合策略与块嵌入技术如何协同降低500百帕位势高度预测的均方根误差\"\n    ]\n  }\n}\n\n/* stage3: hypothesis L1 */\n{\n  \"假设\": {\n    \"一级\": [\n      [\n        {\n          \"step\": 1,\n          \"head\": \"数值天气预报\",\n          \"relation\": \"计算成本高且误差积累驱动人工智能方法开发\",\n          \"tail\": \"人工智能方法\",\n          \"claim\": \"需要计算机科学技术开发三维神经网络结合地球特定先验知识优化非线性建模\"\n        },\n        {\n          \"step\": 2,\n          \"head\": \"人工智能方法\",\n          \"relation\": \"基于三维神经网络提升预报精度\",\n          \"tail\": \"三维神经网络\",\n          \"claim\": \"需要计算机科学技术开发三维神经网络结合地球特定先验知识优化非线性建模\"\n        },\n        {\n          \"step\": 3,\n          \"head\": \"三维神经网络\",\n          \"relation\": \"装备地球特定先验知识处理复杂时空模式\",\n          \"tail\": \"地球特定先验知识\",\n          \"claim\": \"需要计算机科学技术开发三维神经网络结合地球特定先验知识优化非线性建模\"\n        }\n      ],\n      [\n        {\n          \"step\": 1,\n          \"head\": \"数值天气预报\",\n          \"relation\": \"依赖偏微分方程求解导致效率瓶颈\",\n          \"tail\": \"偏微分方程\",\n          \"claim\": \"需要计算机科学技术引入分层时间聚合策略减少误差积累\"\n        },\n        {\n          \"step\": 2,\n          \"head\": \"偏微分方程\",\n          \"relation\": \"被人工智能方法替代以降低计算复杂度\",\n          \"tail\": \"人工智能方法\",\n          \"claim\": \"需要计算机科学技术引入分层时间聚合策略减少误差积累\"\n        },\n        {\n          \"step\": 3,\n          \"head\": \"人工智能方法\",\n          \"relation\": \"采用分层时间聚合策略优化误差传播\",\n          \"tail\": \"分层时间聚合策略\",\n          \"claim\": \"需要计算机科学技术引入分层时间聚合策略减少误差积累\"\n        }\n      ]\n    ],\n    \"一级总结\": [\n      \"传统数值方法因计算成本高且误差积累导致精度瓶颈，需计算机科学技术的三维神经网络结合地球先验知识优化非线性建模\",\n      \"传统数值方法依赖偏微分方程求解导致效率瓶颈，需计算机科学技术的分层时间聚合策略减少误差积累\"\n    ]\n  }\n}\n\n/* stage3: hypothesis L2 */\n{\n  \"假设\": {\n    \"二级\": [\n      [\n        {\n          \"head\": \"人工智能方法\",\n          \"tail\": \"再分析数据\",\n          \"relation\": \"应用训练数据增强时空特征提取\",\n          \"claim\": \"人工智能方法通过再分析数据的高时空分辨率特征训练模型参数\"\n        },\n        {\n          \"head\": \"再分析数据\",\n          \"tail\": \"三维神经网络\",\n          \"relation\": \"驱动三维结构建模\",\n          \"claim\": \"再分析数据的多维特征驱动三维神经网络的空间感知机制构建\"\n        },\n        {\n          \"head\": \"三维神经网络\",\n          \"tail\": \"天气预报\",\n          \"relation\": \"提升中长期预测精度\",\n          \"claim\": \"三维神经网络的空间感知能力增强天气系统演变的预测准确性\"\n        }\n      ],\n      [\n        {\n          \"head\": \"三维深度网络\",\n          \"tail\": \"地球特定先验知识\",\n          \"relation\": \"融合物理约束建模\",\n          \"claim\": \"三维深度网络集成地球球面坐标与大气动力方程的先验知识\"\n        },\n        {\n          \"head\": \"地球特定先验知识\",\n          \"tail\": \"极端天气预报\",\n          \"relation\": \"约束非线性过程模拟\",\n          \"claim\": \"先验知识引导模型聚焦极端天气系统的非线性能量转换过程\"\n        },\n        {\n          \"head\": \"极端天气预报\",\n          \"tail\": \"热带气旋\",\n          \"relation\": \"优化轨迹预测指标\",\n          \"claim\": \"改进的非线性建模显著提升热带气旋路径与强度的预测分辨率\"\n        }\n      ]\n    ],\n    \"二级总结\": [\n      \"人工智能方法通过再分析数据训练三维神经网络，构建空间感知的时空特征提取框架，突破传统数值预报的分辨率限制\",\n      \"三维深度网络融合地球特定先验知识形成物理约束建模体系，显著优化极端天气系统的非线性动力过程模拟精度\"\n    ]\n  }\n}\n\n/* stage3: hypothesis L3 */\n{\n  \"假设\": {\n    \"三级\": [\n      [\n        {\n          \"step\": 1,\n          \"head\": \"三维神经网络\",\n          \"relation\": \"装备地球特定先验知识以增强空间感知能力\",\n          \"tail\": \"地球特定先验知识\"\n        },\n        {\n          \"step\": 2,\n          \"head\": \"地球特定先验知识\",\n          \"relation\": \"协同分层时间聚合策略构建时空特征融合机制\",\n          \"tail\": \"分层时间聚合策略\"\n        },\n        {\n          \"step\": 3,\n          \"head\": \"分层时间聚合策略\",\n          \"relation\": \"提升天气预报的时空分辨率和预测稳定性\",\n          \"tail\": \"天气预报\"\n        }\n      ],\n      [\n        {\n          \"step\": 1,\n          \"head\": \"分层时间聚合策略\",\n          \"relation\": \"与块嵌入技术结合优化多尺度特征提取\",\n          \"tail\": \"块嵌入\"\n        },\n        {\n          \"step\": 2,\n          \"head\": \"块嵌入\",\n          \"relation\": \"改进500百帕位势高度场的空间结构表征\",\n          \"tail\": \"500百帕位势高度\"\n        },\n        {\n          \"step\": 3,\n          \"head\": \"500百帕位势高度\",\n          \"relation\": \"降低预测结果的均方根误差\",\n          \"tail\": \"均方根误差\"\n        }\n      ]\n    ],\n    \"三级总结\": [\n      \"通过三维神经网络集成地球特定先验知识，结合分层时间聚合策略实现时空特征的层次化融合，最终提升天气预报的空间分辨率和时间连续性验证\",\n      \"利用分层时间聚合策略与块嵌入技术的多尺度协同作用，优化大气位势高度场的空间结构建模，从而在5日预测周期内显著降低均方根误差\"\n    ]\n  }\n}",
+    "ok": true,
+    "error": ""
+  }
+]

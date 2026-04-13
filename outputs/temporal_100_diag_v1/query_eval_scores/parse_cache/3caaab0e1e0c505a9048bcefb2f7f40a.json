@@ -1,0 +1,180 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "气候变化",
+        "relation": "alters",
+        "tail": "作物生长条件",
+        "claim": "气候变化改变了作物生长条件"
+      },
+      {
+        "step": 2,
+        "head": "作物生长条件",
+        "relation": "affects",
+        "tail": "全球粮食安全",
+        "claim": "作物生长条件的变化影响全球粮食安全"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "气候变化",
+        "relation": "induces",
+        "tail": "市场价格波动",
+        "claim": "气候变化引发市场价格波动"
+      },
+      {
+        "step": 2,
+        "head": "市场价格波动",
+        "relation": "impacts",
+        "tail": "全球粮食安全",
+        "claim": "市场价格波动影响全球粮食安全"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "适应措施实施效果",
+        "relation": "depends on",
+        "tail": "技术可行性与经济成本的协同作用",
+        "claim": "适应措施效果依赖技术可行性与经济成本的协同作用"
+      },
+      {
+        "step": 2,
+        "head": "技术可行性",
+        "relation": "interacts with",
+        "tail": "经济成本",
+        "claim": "技术可行性与经济成本存在协同作用"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "温度升高和降水模式改变",
+        "relation": "causes",
+        "tail": "主要粮食作物单产下降",
+        "claim": "气候因素导致作物单产下降"
+      },
+      {
+        "step": 2,
+        "head": "主要粮食作物单产下降",
+        "relation": "intensifies in",
+        "tail": "热带地区接近作物耐热阈值",
+        "claim": "热带地区因接近耐热阈值加剧产量下降"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "气候波动",
+        "relation": "triggers",
+        "tail": "农产品价格波动",
+        "claim": "气候波动引发价格波动"
+      },
+      {
+        "step": 2,
+        "head": "农产品价格波动",
+        "relation": "transmits through",
+        "tail": "贸易网络",
+        "claim": "价格波动通过贸易网络传导"
+      },
+      {
+        "step": 3,
+        "head": "贸易网络传导效应",
+        "relation": "increases",
+        "tail": "经济依赖型国家营养不良率",
+        "claim": "贸易传导导致营养不良率上升"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "灌溉设施扩张和种植制度调整",
+        "relation": "enhances",
+        "tail": "系统韧性",
+        "claim": "适应措施提升系统韧性"
+      },
+      {
+        "step": 2,
+        "head": "系统韧性提升",
+        "relation": "constrained by",
+        "tail": "区域水资源承载力",
+        "claim": "水资源承载力限制措施规模"
+      },
+      {
+        "step": 3,
+        "head": "系统韧性提升",
+        "relation": "constrained by",
+        "tail": "农业补贴政策经济激励强度",
+        "claim": "经济激励强度限制措施规模"
+      }
+    ]
+  ],
+  "L3": [
+    [
+      {
+        "step": 1,
+        "head": "二氧化碳浓度倍增",
+        "relation": "enhances",
+        "tail": "C3作物光合效率",
+        "claim": "CO₂浓度提升增强光合效率"
+      },
+      {
+        "step": 2,
+        "head": "高温胁迫",
+        "relation": "causes",
+        "tail": "花期缩短效应",
+        "claim": "高温导致花期缩短"
+      },
+      {
+        "step": 3,
+        "head": "光合效率提升",
+        "relation": "offset by",
+        "tail": "花期缩短效应",
+        "claim": "花期缩短部分抵消光合增益"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "产量波动超过5%阈值",
+        "relation": "triggers",
+        "tail": "出口国贸易限制政策",
+        "claim": "产量波动触发贸易限制"
+      },
+      {
+        "step": 2,
+        "head": "贸易限制政策",
+        "relation": "amplifies",
+        "tail": "全球市场价格波动",
+        "claim": "贸易限制放大市场价格波动"
+      },
+      {
+        "step": 3,
+        "head": "市场价格波动放大",
+        "relation": "increases",
+        "tail": "净粮食进口国饥饿风险",
+        "claim": "价格波动加剧进口国饥饿风险"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "灌溉成本超过农场净收益15%",
+        "relation": "triggers",
+        "tail": "小农户转向气候保险",
+        "claim": "成本阈值促使适应工具转换"
+      },
+      {
+        "step": 2,
+        "head": "技术-经济转换机制",
+        "relation": "modulated by",
+        "tail": "农村金融渗透率",
+        "claim": "农村金融调控适应工具转换"
+      }
+    ]
+  ]
+}

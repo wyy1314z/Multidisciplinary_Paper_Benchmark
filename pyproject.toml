@@ -75,6 +75,11 @@ crossdisc = "crossdisc_extractor.extractor_multi_stage:main"
 crossdisc-pipeline = "crossdisc_extractor.pipeline:main"
 mdc-classify = "scripts.classify:main"
 mdc-demo = "scripts.run_demo:main"
+prepare-temporal-papers = "scripts.prepare_temporal_papers:main"
+build-query-eval-set = "scripts.build_query_eval_set:main"
+benchmark-validity-eval = "crossdisc_extractor.benchmark.evaluate_benchmark_validity:main"
+query-benchmark = "run_query_benchmark:main"
+analyze-benchmark-validity = "scripts.analyze_benchmark_validity:main"
 
 [project.urls]
 Repository = "https://github.com/wangyuyang/crossdisc-benchmark"

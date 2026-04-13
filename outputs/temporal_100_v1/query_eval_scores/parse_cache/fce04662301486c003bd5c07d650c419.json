@@ -1,0 +1,134 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "视觉基础模型",
+        "relation": "enables",
+        "tail": "预训练的通用特征表示",
+        "claim": "视觉基础模型支持预训练的通用特征表示"
+      },
+      {
+        "step": 2,
+        "head": "预训练的通用特征表示",
+        "relation": "improves",
+        "tail": "显微镜图像分割准确性",
+        "claim": "通用特征表示提升分割准确性"
+      },
+      {
+        "step": 3,
+        "head": "预训练的通用特征表示",
+        "relation": "enhances",
+        "tail": "泛化能力",
+        "claim": "通用特征表示增强模型泛化能力"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "自监督学习策略",
+        "relation": "enhances",
+        "tail": "细胞边界敏感性",
+        "claim": "自监督学习提升细胞边界检测敏感性"
+      },
+      {
+        "step": 2,
+        "head": "细胞边界敏感性",
+        "relation": "improves",
+        "tail": "分割精度",
+        "claim": "边界敏感性增强导致分割精度提升"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "提示机制",
+        "relation": "enables",
+        "tail": "跨模态适配",
+        "claim": "提示机制支持多模态显微图像适配"
+      },
+      {
+        "step": 2,
+        "head": "跨模态适配",
+        "relation": "boosts",
+        "tail": "分割效率",
+        "claim": "跨模态适配能力提升分割效率"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "跨模态对齐能力",
+        "relation": "facilitates",
+        "tail": "知识迁移",
+        "claim": "跨模态对齐促进知识迁移"
+      },
+      {
+        "step": 2,
+        "head": "知识迁移",
+        "relation": "alleviates",
+        "tail": "数据标注瓶颈",
+        "claim": "知识迁移缓解标注数据稀缺问题"
+      }
+    ]
+  ],
+  "L3": [
+    [
+      {
+        "step": 1,
+        "head": "生物学先验知识",
+        "relation": "guides",
+        "tail": "结构化损失函数",
+        "claim": "生物知识指导损失函数设计"
+      },
+      {
+        "step": 2,
+        "head": "结构化损失函数",
+        "relation": "optimizes",
+        "tail": "粘连细胞分割",
+        "claim": "结构化损失优化复杂细胞分割效果"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "时间序列信息",
+        "relation": "integrates",
+        "tail": "动态建模模块",
+        "claim": "时序信息融合动态建模"
+      },
+      {
+        "step": 2,
+        "head": "动态建模模块",
+        "relation": "enhances",
+        "tail": "动态过程连续性",
+        "claim": "动态模块提升细胞行为解析能力"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "交互式平台",
+        "relation": "combines",
+        "tail": "用户反馈机制",
+        "claim": "平台集成用户反馈系统"
+      },
+      {
+        "step": 2,
+        "head": "用户反馈机制",
+        "relation": "enables",
+        "tail": "增量学习策略",
+        "claim": "反馈机制驱动增量学习"
+      },
+      {
+        "step": 3,
+        "head": "增量学习策略",
+        "relation": "achieves",
+        "tail": "实时优化",
+        "claim": "增量学习实现分析过程实时优化"
+      }
+    ]
+  ]
+}

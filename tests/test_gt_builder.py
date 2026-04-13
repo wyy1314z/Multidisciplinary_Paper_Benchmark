@@ -494,6 +494,7 @@ class TestPathSemanticAlignment:
 
 from crossdisc_extractor.benchmark.build_dataset import (
     convert_to_evidence_grounded_format,
+    load_extractions,
 )
 
 
@@ -508,11 +509,19 @@ class TestConvertToEvidenceGrounded:
             "title": "量子化学模拟研究",
             "abstract": "量子力学方法被应用于有机化学分子模拟。",
             "introduction": "本文将量子力学原理应用于有机化学。",
+            "journal": "Nature Communications",
+            "publication_year": 2025,
+            "fwci": 3.2,
+            "cited_by_count": 12,
             "parsed": {
                 "meta": {
                     "title": "量子化学模拟研究",
                     "primary": "物理学",
                     "secondary_list": ["化学"],
+                    "journal": "Nature Communications",
+                    "publication_year": 2025,
+                    "fwci": 3.2,
+                    "cited_by_count": 12,
                 },
             },
         }
@@ -525,8 +534,26 @@ class TestConvertToEvidenceGrounded:
             assert "terms" in result["ground_truth"]
             assert "relations" in result["ground_truth"]
             assert "paths" in result["ground_truth"]
+            assert result["metadata"]["journal"] == "Nature Communications"
+            assert result["metadata"]["publication_year"] == 2025
+            assert result["metadata"]["fwci"] == 3.2
+            assert result["metadata"]["cited_by_count"] == 12
 
     def test_no_text(self):
         item = {"ok": True, "title": "test", "abstract": "", "introduction": ""}
         result = convert_to_evidence_grounded_format(item)
         assert result is None
+
+    def test_load_extractions_supports_jsonl(self, tmp_path):
+        path = tmp_path / "sample.jsonl"
+        rows = [
+            {"ok": True, "parsed": {"meta": {"title": "A"}}},
+            {"ok": False, "parsed": None},
+        ]
+        path.write_text(
+            "\n".join(json.dumps(r, ensure_ascii=False) for r in rows),
+            encoding="utf-8",
+        )
+        loaded = load_extractions(str(path))
+        assert len(loaded) == 1
+        assert loaded[0]["parsed"]["meta"]["title"] == "A"

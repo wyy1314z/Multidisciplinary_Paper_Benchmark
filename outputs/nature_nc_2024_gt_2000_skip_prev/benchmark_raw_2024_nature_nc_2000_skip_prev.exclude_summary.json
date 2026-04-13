@@ -1,0 +1,10 @@
+{
+  "source": "outputs/nature_nc_2024_gt_2000_skip_prev/benchmark_raw_2024_nature_nc_2000_skip_prev_pre_exclude.jsonl",
+  "exclude_path": "outputs/nature_nc_2024_gt_1000/benchmark_raw_2024_nature_nc_1000.jsonl",
+  "output": "outputs/nature_nc_2024_gt_2000_skip_prev/benchmark_raw_2024_nature_nc_2000_skip_prev.jsonl",
+  "limit": 2000,
+  "excluded_titles": 1000,
+  "excluded_dois": 1000,
+  "skipped_records": 1000,
+  "selected_records": 2000
+}

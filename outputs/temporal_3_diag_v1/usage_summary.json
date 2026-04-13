@@ -1,0 +1,296 @@
+{
+  "num_records": 339,
+  "overall": {
+    "calls": 339,
+    "success_calls": 129,
+    "error_calls": 210,
+    "prompt_tokens": 389413,
+    "completion_tokens": 98747,
+    "total_tokens": 488160,
+    "latency_sec_sum": 2569.9983,
+    "usage_source_counts": {
+      "actual": 129,
+      "estimate": 210
+    },
+    "call_kind_counts": {
+      "classifier_ainvoke": 69,
+      "chat_completion": 270
+    },
+    "models": {
+      "deepseek-v3": 69,
+      "qwen3-235b-a22b": 270
+    }
+  },
+  "by_stage": {
+    "stage1": {
+      "calls": 32,
+      "success_calls": 32,
+      "error_calls": 0,
+      "prompt_tokens": 26909,
+      "completion_tokens": 621,
+      "total_tokens": 27530,
+      "latency_sec_sum": 78.6315,
+      "usage_source_counts": {
+        "actual": 32
+      },
+      "call_kind_counts": {
+        "classifier_ainvoke": 32
+      },
+      "models": {
+        "deepseek-v3": 32
+      }
+    },
+    "stage2": {
+      "calls": 21,
+      "success_calls": 21,
+      "error_calls": 0,
+      "prompt_tokens": 60877,
+      "completion_tokens": 50325,
+      "total_tokens": 111202,
+      "latency_sec_sum": 1192.8485,
+      "usage_source_counts": {
+        "actual": 21
+      },
+      "call_kind_counts": {
+        "chat_completion": 21
+      },
+      "models": {
+        "qwen3-235b-a22b": 21
+      }
+    },
+    "stage5": {
+      "calls": 37,
+      "success_calls": 37,
+      "error_calls": 0,
+      "prompt_tokens": 31345,
+      "completion_tokens": 775,
+      "total_tokens": 32120,
+      "latency_sec_sum": 84.2879,
+      "usage_source_counts": {
+        "actual": 37
+      },
+      "call_kind_counts": {
+        "classifier_ainvoke": 37
+      },
+      "models": {
+        "deepseek-v3": 37
+      }
+    },
+    "stage6": {
+      "calls": 21,
+      "success_calls": 21,
+      "error_calls": 0,
+      "prompt_tokens": 79786,
+      "completion_tokens": 34318,
+      "total_tokens": 114104,
+      "latency_sec_sum": 842.2048,
+      "usage_source_counts": {
+        "actual": 21
+      },
+      "call_kind_counts": {
+        "chat_completion": 21
+      },
+      "models": {
+        "qwen3-235b-a22b": 21
+      }
+    },
+    "stage7": {
+      "calls": 213,
+      "success_calls": 18,
+      "error_calls": 195,
+      "prompt_tokens": 185766,
+      "completion_tokens": 12708,
+      "total_tokens": 198474,
+      "latency_sec_sum": 367.7564,
+      "usage_source_counts": {
+        "actual": 18,
+        "estimate": 195
+      },
+      "call_kind_counts": {
+        "chat_completion": 213
+      },
+      "models": {
+        "qwen3-235b-a22b": 213
+      }
+    },
+    "stage9": {
+      "calls": 15,
+      "success_calls": 0,
+      "error_calls": 15,
+      "prompt_tokens": 4730,
+      "completion_tokens": 0,
+      "total_tokens": 4730,
+      "latency_sec_sum": 4.2692,
+      "usage_source_counts": {
+        "estimate": 15
+      },
+      "call_kind_counts": {
+        "chat_completion": 15
+      },
+      "models": {
+        "qwen3-235b-a22b": 15
+      }
+    }
+  },
+  "by_command": {
+    "stage1::classify_benchmark_candidates": {
+      "calls": 32,
+      "success_calls": 32,
+      "error_calls": 0,
+      "prompt_tokens": 26909,
+      "completion_tokens": 621,
+      "total_tokens": 27530,
+      "latency_sec_sum": 78.6315,
+      "usage_source_counts": {
+        "actual": 32
+      },
+      "call_kind_counts": {
+        "classifier_ainvoke": 32
+      },
+      "models": {
+        "deepseek-v3": 32
+      }
+    },
+    "stage2::extract_benchmark_candidates": {
+      "calls": 21,
+      "success_calls": 21,
+      "error_calls": 0,
+      "prompt_tokens": 60877,
+      "completion_tokens": 50325,
+      "total_tokens": 111202,
+      "latency_sec_sum": 1192.8485,
+      "usage_source_counts": {
+        "actual": 21
+      },
+      "call_kind_counts": {
+        "chat_completion": 21
+      },
+      "models": {
+        "qwen3-235b-a22b": 21
+      }
+    },
+    "stage5::classify_validity_candidates": {
+      "calls": 37,
+      "success_calls": 37,
+      "error_calls": 0,
+      "prompt_tokens": 31345,
+      "completion_tokens": 775,
+      "total_tokens": 32120,
+      "latency_sec_sum": 84.2879,
+      "usage_source_counts": {
+        "actual": 37
+      },
+      "call_kind_counts": {
+        "classifier_ainvoke": 37
+      },
+      "models": {
+        "deepseek-v3": 37
+      }
+    },
+    "stage6::extract_validity_candidates": {
+      "calls": 21,
+      "success_calls": 21,
+      "error_calls": 0,
+      "prompt_tokens": 79786,
+      "completion_tokens": 34318,
+      "total_tokens": 114104,
+      "latency_sec_sum": 842.2048,
+      "usage_source_counts": {
+        "actual": 21
+      },
+      "call_kind_counts": {
+        "chat_completion": 21
+      },
+      "models": {
+        "qwen3-235b-a22b": 21
+      }
+    },
+    "stage7::evaluate_benchmark_validity": {
+      "calls": 213,
+      "success_calls": 18,
+      "error_calls": 195,
+      "prompt_tokens": 185766,
+      "completion_tokens": 12708,
+      "total_tokens": 198474,
+      "latency_sec_sum": 367.7564,
+      "usage_source_counts": {
+        "actual": 18,
+        "estimate": 195
+      },
+      "call_kind_counts": {
+        "chat_completion": 213
+      },
+      "models": {
+        "qwen3-235b-a22b": 213
+      }
+    },
+    "stage9::run_query_benchmark": {
+      "calls": 15,
+      "success_calls": 0,
+      "error_calls": 15,
+      "prompt_tokens": 4730,
+      "completion_tokens": 0,
+      "total_tokens": 4730,
+      "latency_sec_sum": 4.2692,
+      "usage_source_counts": {
+        "estimate": 15
+      },
+      "call_kind_counts": {
+        "chat_completion": 15
+      },
+      "models": {
+        "qwen3-235b-a22b": 15
+      }
+    }
+  },
+  "largest_token_commands": [
+    {
+      "command_key": "stage7::evaluate_benchmark_validity",
+      "total_tokens": 198474,
+      "prompt_tokens": 185766,
+      "completion_tokens": 12708,
+      "calls": 213,
+      "latency_sec_sum": 367.7564
+    },
+    {
+      "command_key": "stage6::extract_validity_candidates",
+      "total_tokens": 114104,
+      "prompt_tokens": 79786,
+      "completion_tokens": 34318,
+      "calls": 21,
+      "latency_sec_sum": 842.2048
+    },
+    {
+      "command_key": "stage2::extract_benchmark_candidates",
+      "total_tokens": 111202,
+      "prompt_tokens": 60877,
+      "completion_tokens": 50325,
+      "calls": 21,
+      "latency_sec_sum": 1192.8485
+    },
+    {
+      "command_key": "stage5::classify_validity_candidates",
+      "total_tokens": 32120,
+      "prompt_tokens": 31345,
+      "completion_tokens": 775,
+      "calls": 37,
+      "latency_sec_sum": 84.2879
+    },
+    {
+      "command_key": "stage1::classify_benchmark_candidates",
+      "total_tokens": 27530,
+      "prompt_tokens": 26909,
+      "completion_tokens": 621,
+      "calls": 32,
+      "latency_sec_sum": 78.6315
+    },
+    {
+      "command_key": "stage9::run_query_benchmark",
+      "total_tokens": 4730,
+      "prompt_tokens": 4730,
+      "completion_tokens": 0,
+      "calls": 15,
+      "latency_sec_sum": 4.2692
+    }
+  ]
+}

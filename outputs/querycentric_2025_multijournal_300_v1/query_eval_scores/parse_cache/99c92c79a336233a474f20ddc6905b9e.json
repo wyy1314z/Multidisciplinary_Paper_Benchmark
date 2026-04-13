@@ -1,0 +1,91 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "GAN",
+        "relation": "enables",
+        "tail": "功能材料生成模型",
+        "claim": "GAN使得功能材料生成模型的构建成为可能"
+      },
+      {
+        "step": 2,
+        "head": "功能材料生成模型",
+        "relation": "causes",
+        "tail": "特定电子结构的功能材料",
+        "claim": "功能材料生成模型导致了特定电子结构的功能材料的生成"
+      },
+      {
+        "step": 3,
+        "head": "GNN",
+        "relation": "enables",
+        "tail": "无机材料探索",
+        "claim": "GNN使得无机材料的高效探索成为可能"
+      },
+      {
+        "step": 4,
+        "head": "无机材料探索",
+        "relation": "causes",
+        "tail": "目标热力学稳定性",
+        "claim": "无机材料的高效探索导致了目标热力学稳定性的实现"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "对称性约束",
+        "relation": "inhibits",
+        "tail": "无效结构生成",
+        "claim": "对称性约束限制了无效结构的生成"
+      },
+      {
+        "step": 2,
+        "head": "对称性约束",
+        "relation": "enables",
+        "tail": "物理合理性和可合成性",
+        "claim": "对称性约束提高了生成晶体结构的物理合理性和可合成性"
+      },
+      {
+        "step": 3,
+        "head": "多目标优化",
+        "relation": "enables",
+        "tail": "新型多功能材料发现",
+        "claim": "多目标优化使得新型多功能材料的发现成为可能"
+      },
+      {
+        "step": 4,
+        "head": "多目标优化",
+        "relation": "reveals",
+        "tail": "性能之间的权衡关系",
+        "claim": "多目标优化揭示了材料性能之间的权衡关系"
+      }
+    ]
+  ],
+  "L3": [
+    [
+      {
+        "step": 1,
+        "head": "反应路径预测",
+        "relation": "transforms",
+        "tail": "合成路线",
+        "claim": "反应路径预测模块能够直接输出可实现的合成路线"
+      },
+      {
+        "step": 2,
+        "head": "迁移学习",
+        "relation": "enables",
+        "tail": "无机材料发现",
+        "claim": "迁移学习加速了无机材料的发现"
+      },
+      {
+        "step": 3,
+        "head": "有机分子模型",
+        "relation": "transfers",
+        "tail": "无机材料领域知识",
+        "claim": "有机分子生成模型的知识被迁移至无机材料领域"
+      }
+    ]
+  ]
+}

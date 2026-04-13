@@ -1,0 +1,166 @@
+{
+  "L1": [
+    [
+      {
+        "step": 1,
+        "head": "社会规范因素",
+        "relation": "includes",
+        "tail": "教育水平",
+        "claim": "社会规范因素包含教育水平这一维度"
+      },
+      {
+        "step": 2,
+        "head": "教育水平",
+        "relation": "positively influences",
+        "tail": "公众对科学家的信任",
+        "claim": "教育水平正向影响公众对科学家的信任"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "社会规范因素",
+        "relation": "includes",
+        "tail": "媒体使用习惯",
+        "claim": "社会规范因素包含媒体使用习惯这一维度"
+      },
+      {
+        "step": 2,
+        "head": "媒体使用习惯",
+        "relation": "negatively influences",
+        "tail": "公众对科学家的信任",
+        "claim": "媒体使用习惯负向影响公众对科学家的信任"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "社会规范因素",
+        "relation": "includes",
+        "tail": "宗教参与度",
+        "claim": "社会规范因素包含宗教参与度这一维度"
+      },
+      {
+        "step": 2,
+        "head": "宗教参与度",
+        "relation": "negatively influences",
+        "tail": "公众对科学家的信任",
+        "claim": "宗教参与度正向影响公众对科学家的信任"
+      }
+    ]
+  ],
+  "L2": [
+    [
+      {
+        "step": 1,
+        "head": "教育水平",
+        "relation": "enables",
+        "tail": "对科学方法的理解和专业知识认可",
+        "claim": "教育水平增强对科学方法的理解和对专业知识的认可"
+      },
+      {
+        "step": 2,
+        "head": "对科学方法的理解和专业知识认可",
+        "relation": "causes",
+        "tail": "对科学家的信任",
+        "claim": "科学理解与专业认可导致对科学家的信任"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "主流媒体科学信息获取",
+        "relation": "causes",
+        "tail": "科学争议夸大或问题简化",
+        "claim": "主流媒体报道导致科学争议夸大或问题简化"
+      },
+      {
+        "step": 2,
+        "head": "科学争议夸大或问题简化",
+        "relation": "reduces",
+        "tail": "对科学家的信任",
+        "claim": "科学争议夸大降低公众对科学家的信任"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "宗教参与度",
+        "relation": "associated with",
+        "tail": "科学与宗教冲突领域",
+        "claim": "宗教参与度与科学议题冲突领域相关"
+      },
+      {
+        "step": 2,
+        "head": "科学与宗教冲突领域",
+        "relation": "reduces",
+        "tail": "对科学家的信任",
+        "claim": "科学与宗教冲突领域降低对科学家的信任"
+      }
+    ]
+  ],
+  "L3": [
+    [
+      {
+        "step": 1,
+        "head": "高等教育普及率",
+        "relation": "enables",
+        "tail": "制度化科学教育",
+        "claim": "高等教育普及推动制度化科学教育"
+      },
+      {
+        "step": 2,
+        "head": "制度化科学教育",
+        "relation": "causes",
+        "tail": "科学共同体正面认知",
+        "claim": "制度化教育塑造科学共同体正面认知"
+      },
+      {
+        "step": 3,
+        "head": "科学共同体正面认知",
+        "relation": "causes",
+        "tail": "社会整体信任水平",
+        "claim": "正面认知提升社会整体科学信任水平"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "社交媒体新闻依赖",
+        "relation": "requires",
+        "tail": "算法驱动信息过滤",
+        "claim": "社交媒体依赖需要算法信息过滤"
+      },
+      {
+        "step": 2,
+        "head": "算法驱动信息过滤",
+        "relation": "exacerbates",
+        "tail": "科学共识误解",
+        "claim": "算法过滤加剧科学共识误解"
+      },
+      {
+        "step": 3,
+        "head": "科学共识误解",
+        "relation": "reduces",
+        "tail": "科学家信任度",
+        "claim": "科学误解导致科学家信任度下降"
+      }
+    ],
+    [
+      {
+        "step": 1,
+        "head": "宗教影响力",
+        "relation": "creates",
+        "tail": "价值观冲突机制",
+        "claim": "宗教影响力引发价值观冲突"
+      },
+      {
+        "step": 2,
+        "head": "价值观冲突机制",
+        "relation": "reduces",
+        "tail": "科学家信任度",
+        "claim": "价值观冲突导致科学家信任度下降"
+      }
+    ]
+  ]
+}

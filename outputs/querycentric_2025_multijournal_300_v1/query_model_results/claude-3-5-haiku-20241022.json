@@ -1,0 +1,24 @@
+[
+  {
+    "paper_id": "2225d7c27bc7",
+    "method_name": "claude-3-5-haiku-20241022-L1",
+    "prompt_level": "L1",
+    "query": "如何设计具有特定性能的功能材料？",
+    "free_text_hypotheses": [
+      "[ERROR] LLM 网关错误 (HTTP 503): Error code: 503 - {'error': {'message': '当前分组 企业用户 下对于模型 claude-3-5-haiku-20241022 计费模式 [按量计费] 无可用渠道 (request id: 2026041316530329105274745129797)', 'type': 'shell_api_error'}}"
+    ],
+    "error": "LLM 网关错误 (HTTP 503): Error code: 503 - {'error': {'message': '当前分组 企业用户 下对于模型 claude-3-5-haiku-20241022 计费模式 [按量计费] 无可用渠道 (request id: 2026041316530329105274745129797)', 'type': 'shell_api_error'}}",
+    "metadata": {
+      "journal": "Nature",
+      "journal_id": "https://openalex.org/S137773608",
+      "issn_l": "0028-0836",
+      "source_type": "journal",
+      "doi": "https://doi.org/10.1038/s41586-025-08628-5",
+      "publication_date": "2025-01-16",
+      "publication_year": 2025,
+      "fwci": 378.92425813,
+      "cited_by_count": 239,
+      "field": "Machine Learning in Materials Science"
+    }
+  }
+]

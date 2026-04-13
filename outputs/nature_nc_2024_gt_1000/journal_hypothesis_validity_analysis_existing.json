@@ -1,0 +1,793 @@
+{
+  "analysis_type": "existing_extraction_metric_preanalysis_no_new_llm_calls",
+  "input": "/ssd/wangyuyang/git/benchmark/outputs/nature_nc_2024_gt_1000/benchmark_extractions_2024_nature_nc_1000.jsonl",
+  "limitations": [
+    "This is a preliminary analysis using existing extraction graph/hypothesis metrics, not benchmark_validity LLM-as-judge scores.",
+    "Journal tier is only binary here: Nature=2, Nature Communications=1, so journal-tier correlation is weakly powered.",
+    "FWCI and cited_by_count are paper-level impact proxies, not pure journal-tier labels.",
+    "p-values are not computed because scipy is not installed in this environment."
+  ],
+  "metric_definition": {
+    "hypothesis_quality_composite": [
+      "path_consistency",
+      "coverage",
+      "bridging_score",
+      "rao_stirling_diversity",
+      "embedding_bridging",
+      "chain_coherence",
+      "atypical_combination"
+    ],
+    "hypothesis_coherence_score": [
+      "path_consistency",
+      "coverage",
+      "chain_coherence"
+    ],
+    "crossdisciplinary_breadth_score": [
+      "bridging_score",
+      "rao_stirling_diversity",
+      "embedding_bridging",
+      "atypical_combination"
+    ]
+  },
+  "counts": {
+    "input_records": 383,
+    "ok_records": 381,
+    "failed_records": 2,
+    "journal_counts": {
+      "Nature Communications": 316,
+      "Nature": 65
+    }
+  },
+  "by_journal": {
+    "Nature": {
+      "n": 65,
+      "fwci": {
+        "n": 65,
+        "mean": 65.778246,
+        "std": 57.376046,
+        "min": 11.854092,
+        "p25": 33.444863,
+        "median": 43.702497,
+        "p75": 77.492595,
+        "max": 290.005461
+      },
+      "cited_by_count": {
+        "n": 65,
+        "mean": 118.153846,
+        "std": 107.670102,
+        "min": 35.0,
+        "p25": 57.0,
+        "median": 78.0,
+        "p75": 113.0,
+        "max": 510.0
+      },
+      "scores": {
+        "hypothesis_quality_composite": {
+          "n": 65,
+          "mean": 0.456167,
+          "std": 0.056511,
+          "min": 0.278595,
+          "p25": 0.423451,
+          "median": 0.463902,
+          "p75": 0.492208,
+          "max": 0.57786
+        },
+        "hypothesis_coherence_score": {
+          "n": 65,
+          "mean": 0.46516,
+          "std": 0.057462,
+          "min": 0.353354,
+          "p25": 0.424994,
+          "median": 0.459987,
+          "p75": 0.499074,
+          "max": 0.689826
+        },
+        "crossdisciplinary_breadth_score": {
+          "n": 65,
+          "mean": 0.449421,
+          "std": 0.081287,
+          "min": 0.15295,
+          "p25": 0.410825,
+          "median": 0.458521,
+          "p75": 0.50541,
+          "max": 0.59525
+        },
+        "path_consistency": {
+          "n": 65,
+          "mean": 0.156851,
+          "std": 0.11353,
+          "min": 0.0,
+          "p25": 0.111111,
+          "median": 0.142857,
+          "p75": 0.222222,
+          "max": 0.611111
+        },
+        "coverage": {
+          "n": 65,
+          "mean": 0.451222,
+          "std": 0.121217,
+          "min": 0.147727,
+          "p25": 0.366667,
+          "median": 0.424242,
+          "p75": 0.535714,
+          "max": 0.75
+        },
+        "bridging_score": {
+          "n": 65,
+          "mean": 0.427559,
+          "std": 0.176241,
+          "min": 0.0,
+          "p25": 0.318182,
+          "median": 0.433333,
+          "p75": 0.541667,
+          "max": 0.75
+        },
+        "rao_stirling_diversity": {
+          "n": 65,
+          "mean": 0.151594,
+          "std": 0.050041,
+          "min": 0.0,
+          "p25": 0.124,
+          "median": 0.162,
+          "p75": 0.1901,
+          "max": 0.2222
+        },
+        "embedding_bridging": {
+          "n": 65,
+          "mean": 0.686398,
+          "std": 0.120905,
+          "min": 0.3938,
+          "p25": 0.6049,
+          "median": 0.6944,
+          "p75": 0.781,
+          "max": 0.9254
+        },
+        "chain_coherence": {
+          "n": 65,
+          "mean": 0.787408,
+          "std": 0.030836,
+          "min": 0.7193,
+          "p25": 0.7608,
+          "median": 0.7921,
+          "p75": 0.8072,
+          "max": 0.8561
+        },
+        "atypical_combination": {
+          "n": 65,
+          "mean": 0.532134,
+          "std": 0.172418,
+          "min": 0.0,
+          "p25": 0.5622,
+          "median": 0.5934,
+          "p75": 0.6189,
+          "max": 0.653
+        },
+        "consistency_f1": {
+          "n": 65,
+          "mean": 0.0,
+          "std": 0.0,
+          "min": 0.0,
+          "p25": 0.0,
+          "median": 0.0,
+          "p75": 0.0,
+          "max": 0.0
+        },
+        "concept_f1": {
+          "n": 65,
+          "mean": 0.0,
+          "std": 0.0,
+          "min": 0.0,
+          "p25": 0.0,
+          "median": 0.0,
+          "p75": 0.0,
+          "max": 0.0
+        },
+        "relation_precision": {
+          "n": 65,
+          "mean": 0.0,
+          "std": 0.0,
+          "min": 0.0,
+          "p25": 0.0,
+          "median": 0.0,
+          "p75": 0.0,
+          "max": 0.0
+        },
+        "path_alignment_best": {
+          "n": 65,
+          "mean": 0.0,
+          "std": 0.0,
+          "min": 0.0,
+          "p25": 0.0,
+          "median": 0.0,
+          "p75": 0.0,
+          "max": 0.0
+        },
+        "evidence_coverage": {
+          "n": 65,
+          "mean": 0.0,
+          "std": 0.0,
+          "min": 0.0,
+          "p25": 0.0,
+          "median": 0.0,
+          "p75": 0.0,
+          "max": 0.0
+        }
+      },
+      "primary_top10": {
+        "生物学": 19,
+        "基础医学": 10,
+        "物理学": 10,
+        "计算机科学技术": 7,
+        "化学": 6,
+        "地球科学": 6,
+        "经济学": 2,
+        "材料科学": 2,
+        "数学": 1,
+        "环境科学技术": 1
+      }
+    },
+    "Nature Communications": {
+      "n": 316,
+      "fwci": {
+        "n": 316,
+        "mean": 33.497859,
+        "std": 30.809754,
+        "min": 5.588358,
+        "p25": 16.868998,
+        "median": 26.25397,
+        "p75": 41.568221,
+        "max": 351.329783
+      },
+      "cited_by_count": {
+        "n": 316,
+        "mean": 66.079114,
+        "std": 39.320863,
+        "min": 34.0,
+        "p25": 40.0,
+        "median": 55.0,
+        "p75": 77.0,
+        "max": 436.0
+      },
+      "scores": {
+        "hypothesis_quality_composite": {
+          "n": 316,
+          "mean": 0.446999,
+          "std": 0.054201,
+          "min": 0.239711,
+          "p25": 0.414594,
+          "median": 0.452916,
+          "p75": 0.484049,
+          "max": 0.577982
+        },
+        "hypothesis_coherence_score": {
+          "n": 316,
+          "mean": 0.460582,
+          "std": 0.06052,
+          "min": 0.309063,
+          "p25": 0.419806,
+          "median": 0.45477,
+          "p75": 0.499578,
+          "max": 0.666754
+        },
+        "crossdisciplinary_breadth_score": {
+          "n": 316,
+          "mean": 0.436812,
+          "std": 0.080775,
+          "min": 0.130876,
+          "p25": 0.385552,
+          "median": 0.44907,
+          "p75": 0.495083,
+          "max": 0.607593
+        },
+        "path_consistency": {
+          "n": 316,
+          "mean": 0.144681,
+          "std": 0.110924,
+          "min": 0.0,
+          "p25": 0.055556,
+          "median": 0.121324,
+          "p75": 0.2,
+          "max": 0.6875
+        },
+        "coverage": {
+          "n": 316,
+          "mean": 0.458102,
+          "std": 0.121978,
+          "min": 0.188679,
+          "p25": 0.375,
+          "median": 0.461538,
+          "p75": 0.541667,
+          "max": 0.846154
+        },
+        "bridging_score": {
+          "n": 316,
+          "mean": 0.430267,
+          "std": 0.155099,
+          "min": 0.0,
+          "p25": 0.333333,
+          "median": 0.434783,
+          "p75": 0.529352,
+          "max": 0.833333
+        },
+        "rao_stirling_diversity": {
+          "n": 316,
+          "mean": 0.158402,
+          "std": 0.049097,
+          "min": 0.0,
+          "p25": 0.1337,
+          "median": 0.16435,
+          "p75": 0.19765,
+          "max": 0.222
+        },
+        "embedding_bridging": {
+          "n": 316,
+          "mean": 0.66129,
+          "std": 0.140502,
+          "min": 0.0,
+          "p25": 0.582875,
+          "median": 0.68425,
+          "p75": 0.755775,
+          "max": 0.9711
+        },
+        "chain_coherence": {
+          "n": 316,
+          "mean": 0.778964,
+          "std": 0.037035,
+          "min": 0.6674,
+          "p25": 0.756725,
+          "median": 0.77955,
+          "p75": 0.8067,
+          "max": 0.8634
+        },
+        "atypical_combination": {
+          "n": 316,
+          "mean": 0.497287,
+          "std": 0.202239,
+          "min": 0.0,
+          "p25": 0.5622,
+          "median": 0.5913,
+          "p75": 0.5934,
+          "max": 0.653
+        },
+        "consistency_f1": {
+          "n": 316,
+          "mean": 0.0,
+          "std": 0.0,
+          "min": 0.0,
+          "p25": 0.0,
+          "median": 0.0,
+          "p75": 0.0,
+          "max": 0.0
+        },
+        "concept_f1": {
+          "n": 316,
+          "mean": 0.0,
+          "std": 0.0,
+          "min": 0.0,
+          "p25": 0.0,
+          "median": 0.0,
+          "p75": 0.0,
+          "max": 0.0
+        },
+        "relation_precision": {
+          "n": 316,
+          "mean": 0.0,
+          "std": 0.0,
+          "min": 0.0,
+          "p25": 0.0,
+          "median": 0.0,
+          "p75": 0.0,
+          "max": 0.0
+        },
+        "path_alignment_best": {
+          "n": 316,
+          "mean": 0.0,
+          "std": 0.0,
+          "min": 0.0,
+          "p25": 0.0,
+          "median": 0.0,
+          "p75": 0.0,
+          "max": 0.0
+        },
+        "evidence_coverage": {
+          "n": 316,
+          "mean": 0.0,
+          "std": 0.0,
+          "min": 0.0,
+          "p25": 0.0,
+          "median": 0.0,
+          "p75": 0.0,
+          "max": 0.0
+        }
+      },
+      "primary_top10": {
+        "化学": 65,
+        "计算机科学技术": 62,
+        "材料科学": 54,
+        "生物学": 43,
+        "物理学": 38,
+        "基础医学": 31,
+        "地球科学": 9,
+        "农学": 3,
+        "能源科学技术": 2,
+        "林学": 1
+      }
+    }
+  },
+  "spearman_correlations_no_p_values": [
+    {
+      "signal": "cited_by_count",
+      "score": "path_consistency",
+      "n": 381,
+      "spearman_rho": 0.130281
+    },
+    {
+      "signal": "cited_by_count",
+      "score": "hypothesis_quality_composite",
+      "n": 381,
+      "spearman_rho": 0.093541
+    },
+    {
+      "signal": "cited_by_count",
+      "score": "crossdisciplinary_breadth_score",
+      "n": 381,
+      "spearman_rho": 0.073457
+    },
+    {
+      "signal": "cited_by_count",
+      "score": "bridging_score",
+      "n": 381,
+      "spearman_rho": 0.068391
+    },
+    {
+      "signal": "cited_by_count",
+      "score": "hypothesis_coherence_score",
+      "n": 381,
+      "spearman_rho": 0.067697
+    },
+    {
+      "signal": "cited_by_count",
+      "score": "chain_coherence",
+      "n": 381,
+      "spearman_rho": 0.061424
+    },
+    {
+      "signal": "cited_by_count",
+      "score": "atypical_combination",
+      "n": 381,
+      "spearman_rho": 0.057907
+    },
+    {
+      "signal": "cited_by_count",
+      "score": "rao_stirling_diversity",
+      "n": 381,
+      "spearman_rho": 0.055236
+    },
+    {
+      "signal": "cited_by_count",
+      "score": "coverage",
+      "n": 381,
+      "spearman_rho": -0.03345
+    },
+    {
+      "signal": "cited_by_count",
+      "score": "embedding_bridging",
+      "n": 381,
+      "spearman_rho": 0.024666
+    },
+    {
+      "signal": "fwci",
+      "score": "chain_coherence",
+      "n": 381,
+      "spearman_rho": 0.201429
+    },
+    {
+      "signal": "fwci",
+      "score": "hypothesis_coherence_score",
+      "n": 381,
+      "spearman_rho": 0.15059
+    },
+    {
+      "signal": "fwci",
+      "score": "path_consistency",
+      "n": 381,
+      "spearman_rho": 0.127542
+    },
+    {
+      "signal": "fwci",
+      "score": "hypothesis_quality_composite",
+      "n": 381,
+      "spearman_rho": 0.089123
+    },
+    {
+      "signal": "fwci",
+      "score": "crossdisciplinary_breadth_score",
+      "n": 381,
+      "spearman_rho": 0.054549
+    },
+    {
+      "signal": "fwci",
+      "score": "bridging_score",
+      "n": 381,
+      "spearman_rho": 0.053177
+    },
+    {
+      "signal": "fwci",
+      "score": "embedding_bridging",
+      "n": 381,
+      "spearman_rho": 0.032612
+    },
+    {
+      "signal": "fwci",
+      "score": "coverage",
+      "n": 381,
+      "spearman_rho": 0.028756
+    },
+    {
+      "signal": "fwci",
+      "score": "rao_stirling_diversity",
+      "n": 381,
+      "spearman_rho": -0.020986
+    },
+    {
+      "signal": "fwci",
+      "score": "atypical_combination",
+      "n": 381,
+      "spearman_rho": -0.00903
+    },
+    {
+      "signal": "journal_tier_binary",
+      "score": "atypical_combination",
+      "n": 381,
+      "spearman_rho": 0.078244
+    },
+    {
+      "signal": "journal_tier_binary",
+      "score": "chain_coherence",
+      "n": 381,
+      "spearman_rho": 0.074892
+    },
+    {
+      "signal": "journal_tier_binary",
+      "score": "rao_stirling_diversity",
+      "n": 381,
+      "spearman_rho": -0.061383
+    },
+    {
+      "signal": "journal_tier_binary",
+      "score": "crossdisciplinary_breadth_score",
+      "n": 381,
+      "spearman_rho": 0.060839
+    },
+    {
+      "signal": "journal_tier_binary",
+      "score": "embedding_bridging",
+      "n": 381,
+      "spearman_rho": 0.055225
+    },
+    {
+      "signal": "journal_tier_binary",
+      "score": "hypothesis_quality_composite",
+      "n": 381,
+      "spearman_rho": 0.052846
+    },
+    {
+      "signal": "journal_tier_binary",
+      "score": "path_consistency",
+      "n": 381,
+      "spearman_rho": 0.044254
+    },
+    {
+      "signal": "journal_tier_binary",
+      "score": "coverage",
+      "n": 381,
+      "spearman_rho": -0.026902
+    },
+    {
+      "signal": "journal_tier_binary",
+      "score": "hypothesis_coherence_score",
+      "n": 381,
+      "spearman_rho": 0.024678
+    },
+    {
+      "signal": "journal_tier_binary",
+      "score": "bridging_score",
+      "n": 381,
+      "spearman_rho": -0.006885
+    }
+  ],
+  "nature_vs_nature_communications_differences": [
+    {
+      "score": "atypical_combination",
+      "nature_n": 65,
+      "nature_mean": 0.532134,
+      "nature_median": 0.5934,
+      "nc_n": 316,
+      "nc_mean": 0.497287,
+      "nc_median": 0.5913,
+      "mean_diff_nature_minus_nc": 0.034847,
+      "median_diff_nature_minus_nc": 0.0021,
+      "cliffs_delta_nature_vs_nc": 0.118549
+    },
+    {
+      "score": "embedding_bridging",
+      "nature_n": 65,
+      "nature_mean": 0.686398,
+      "nature_median": 0.6944,
+      "nc_n": 316,
+      "nc_mean": 0.66129,
+      "nc_median": 0.68425,
+      "mean_diff_nature_minus_nc": 0.025108,
+      "median_diff_nature_minus_nc": 0.01015,
+      "cliffs_delta_nature_vs_nc": 0.084761
+    },
+    {
+      "score": "crossdisciplinary_breadth_score",
+      "nature_n": 65,
+      "nature_mean": 0.449421,
+      "nature_median": 0.458521,
+      "nc_n": 316,
+      "nc_mean": 0.436812,
+      "nc_median": 0.44907,
+      "mean_diff_nature_minus_nc": 0.01261,
+      "median_diff_nature_minus_nc": 0.009451,
+      "cliffs_delta_nature_vs_nc": 0.093379
+    },
+    {
+      "score": "path_consistency",
+      "nature_n": 65,
+      "nature_mean": 0.156851,
+      "nature_median": 0.142857,
+      "nc_n": 316,
+      "nc_mean": 0.144681,
+      "nc_median": 0.121324,
+      "mean_diff_nature_minus_nc": 0.01217,
+      "median_diff_nature_minus_nc": 0.021534,
+      "cliffs_delta_nature_vs_nc": 0.067575
+    },
+    {
+      "score": "hypothesis_quality_composite",
+      "nature_n": 65,
+      "nature_mean": 0.456167,
+      "nature_median": 0.463902,
+      "nc_n": 316,
+      "nc_mean": 0.446999,
+      "nc_median": 0.452916,
+      "mean_diff_nature_minus_nc": 0.009167,
+      "median_diff_nature_minus_nc": 0.010986,
+      "cliffs_delta_nature_vs_nc": 0.08111
+    },
+    {
+      "score": "chain_coherence",
+      "nature_n": 65,
+      "nature_mean": 0.787408,
+      "nature_median": 0.7921,
+      "nc_n": 316,
+      "nc_mean": 0.778964,
+      "nc_median": 0.77955,
+      "mean_diff_nature_minus_nc": 0.008443,
+      "median_diff_nature_minus_nc": 0.01255,
+      "cliffs_delta_nature_vs_nc": 0.114946
+    },
+    {
+      "score": "coverage",
+      "nature_n": 65,
+      "nature_mean": 0.451222,
+      "nature_median": 0.424242,
+      "nc_n": 316,
+      "nc_mean": 0.458102,
+      "nc_median": 0.461538,
+      "mean_diff_nature_minus_nc": -0.00688,
+      "median_diff_nature_minus_nc": -0.037296,
+      "cliffs_delta_nature_vs_nc": -0.041285
+    },
+    {
+      "score": "rao_stirling_diversity",
+      "nature_n": 65,
+      "nature_mean": 0.151594,
+      "nature_median": 0.162,
+      "nc_n": 316,
+      "nc_mean": 0.158402,
+      "nc_median": 0.16435,
+      "mean_diff_nature_minus_nc": -0.006808,
+      "median_diff_nature_minus_nc": -0.00235,
+      "cliffs_delta_nature_vs_nc": -0.094206
+    },
+    {
+      "score": "hypothesis_coherence_score",
+      "nature_n": 65,
+      "nature_mean": 0.46516,
+      "nature_median": 0.459987,
+      "nc_n": 316,
+      "nc_mean": 0.460582,
+      "nc_median": 0.45477,
+      "mean_diff_nature_minus_nc": 0.004578,
+      "median_diff_nature_minus_nc": 0.005217,
+      "cliffs_delta_nature_vs_nc": 0.037877
+    },
+    {
+      "score": "bridging_score",
+      "nature_n": 65,
+      "nature_mean": 0.427559,
+      "nature_median": 0.433333,
+      "nc_n": 316,
+      "nc_mean": 0.430267,
+      "nc_median": 0.434783,
+      "mean_diff_nature_minus_nc": -0.002708,
+      "median_diff_nature_minus_nc": -0.001449,
+      "cliffs_delta_nature_vs_nc": -0.010565
+    },
+    {
+      "score": "consistency_f1",
+      "nature_n": 65,
+      "nature_mean": 0.0,
+      "nature_median": 0.0,
+      "nc_n": 316,
+      "nc_mean": 0.0,
+      "nc_median": 0.0,
+      "mean_diff_nature_minus_nc": 0.0,
+      "median_diff_nature_minus_nc": 0.0,
+      "cliffs_delta_nature_vs_nc": 0.0
+    },
+    {
+      "score": "concept_f1",
+      "nature_n": 65,
+      "nature_mean": 0.0,
+      "nature_median": 0.0,
+      "nc_n": 316,
+      "nc_mean": 0.0,
+      "nc_median": 0.0,
+      "mean_diff_nature_minus_nc": 0.0,
+      "median_diff_nature_minus_nc": 0.0,
+      "cliffs_delta_nature_vs_nc": 0.0
+    },
+    {
+      "score": "relation_precision",
+      "nature_n": 65,
+      "nature_mean": 0.0,
+      "nature_median": 0.0,
+      "nc_n": 316,
+      "nc_mean": 0.0,
+      "nc_median": 0.0,
+      "mean_diff_nature_minus_nc": 0.0,
+      "median_diff_nature_minus_nc": 0.0,
+      "cliffs_delta_nature_vs_nc": 0.0
+    },
+    {
+      "score": "path_alignment_best",
+      "nature_n": 65,
+      "nature_mean": 0.0,
+      "nature_median": 0.0,
+      "nc_n": 316,
+      "nc_mean": 0.0,
+      "nc_median": 0.0,
+      "mean_diff_nature_minus_nc": 0.0,
+      "median_diff_nature_minus_nc": 0.0,
+      "cliffs_delta_nature_vs_nc": 0.0
+    },
+    {
+      "score": "evidence_coverage",
+      "nature_n": 65,
+      "nature_mean": 0.0,
+      "nature_median": 0.0,
+      "nc_n": 316,
+      "nc_mean": 0.0,
+      "nc_median": 0.0,
+      "mean_diff_nature_minus_nc": 0.0,
+      "median_diff_nature_minus_nc": 0.0,
+      "cliffs_delta_nature_vs_nc": 0.0
+    }
+  ],
+  "failed_examples": [
+    {
+      "title": "Development of multifunctional membranes via plasma-assisted nonsolvent induced phase separation",
+      "journal": "Nature Communications",
+      "error": "unknown_error: 无法从模型输出中提取合法 JSON 对象：疑似输出被截断"
+    },
+    {
+      "title": "A retrofit sensing strategy for soft fluidic robots",
+      "journal": "Nature Communications",
+      "error": "unknown_error: 无法从模型输出中提取合法 JSON 对象"
+    }
+  ]
+}

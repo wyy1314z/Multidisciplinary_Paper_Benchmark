@@ -1,0 +1,2971 @@
+[
+  {
+    "title": "MIMIC-IV, a freely accessible electronic health record dataset",
+    "abstract": "Abstract Digital data collection during routine clinical practice is now ubiquitous within hospitals. The data contains valuable information on the care of patients and their response to treatments, offering exciting opportunities for research. Typically, data are stored within archival systems that are not intended to support research. These systems are often inaccessible to researchers and structured for optimal storage, rather than interpretability and analysis. Here we present MIMIC-IV, a publicly available database sourced from the electronic health record of the Beth Israel Deaconess Medical Center. Information available includes patient measurements, orders, diagnoses, procedures, treatments, and deidentified free-text clinical notes. MIMIC-IV is intended to support a wide array of research studies and educational material, helping to reduce barriers to conducting clinical research.",
+    "pdf_url": "https://doi.org/10.1038/s41597-022-01899-x",
+    "primary": "基础医学",
+    "secondary": "计算机科学技术",
+    "secondary_list": [
+      "计算机科学技术"
+    ],
+    "introduction": "oPEN\n\nData DESCRIPto R\n\nMIMIC-IV, a freely accessible \nelectronic health record dataset\n\nalistair E. W. Johnson1,2 ✉, Lucas Bulgarelli \nSteven Horng \nLi-wei H. Lehman1, Leo a. Celi \n\n 3, tom J. Pollard \n\n 1,3 & Roger G. Mark \n\n 1\n\n 1, Lu Shen3, alvin Gayles3, ayad Shammout3, \n\n 1, Sicheng Hao1, Benjamin Moody1, Brian Gow \n\n 1, \n\nDigital data collection during routine clinical practice is now ubiquitous within hospitals. the data \ncontains valuable information on the care of patients and their response to treatments, offering exciting \nopportunities for research. typically, data are stored within archival systems that are not intended \nto support research. these systems are often inaccessible to researchers and structured for optimal \nstorage, rather than interpretability and analysis. Here we present MIMIC-IV, a publicly available \ndatabase sourced from the electronic health record of the Beth Israel Deaconess Medical Center. \nInformation available includes patient measurements, orders, diagnoses, procedures, treatments, and \ndeidentified free-text clinical notes. MIMIC-IV is intended to support a wide array of research studies \nand educational material, helping to reduce barriers to conducting clinical research.\n\nBackground\nThanks to the widespread adoption of electronic health record systems, data collected during routine clinical \npractice is now digitally stored in hospitals across the United States. Despite widespread storage of this data, \narchiving systems are often not designed to support research, making them difficult to navigate and access. In \naddition, routinely collected clinical data is often sporadic and noisy, reflecting the processes by which it was \ngenerated, where quality of data collection is understandably peripheral to the act of providing high quality care.\nThe intensive care unit (ICU) is an especially data-rich environment as patients require close monitoring. \nThe typically acute nature of ICU patient illness and the importance of immediate intervention also make the \nenvironment of high-interest to researchers. Uniquely, there are a number of publicly available critical care data-\nsets which have enabled research in this area. These projects largely build upon MIMIC, a waveform database \nwith demographics digitally transcribed from paper records for over 90 patients1. MIMIC-II followed with a \nsignificantly increased sample size and breadth of information due to the clinical information being entirely \nsourced from various digital information systems2. More recently, MIMIC-III was published in 2015 and sig-\nnificantly expanded MIMIC-II, containing data for over 40,000 patients3. Outside of the MIMIC projects, a \nnumber of other critical care datasets have been made available to the worldwide research community. The \neICU Collaborative Research Database (eICU-CRD) v2.0 comprises of 200,859 stays at ICUs and step-down \nunits across 208 hospitals in the continental United States4. The AmsterdamUMCdb provides granular infor-\nmation for 23,106 admissions of 20,109 unique individuals admitted to a single academic medical center in \nthe Netherlands5. The HiRID database contains high-resolution data for almost 34,000 admissions between \n2008–2016 at Bern University Hospital in Switzerland6,7. HiRID contains 712 routinely collected physiological \nvariables with one data entry every two minutes. The Pediatric Intensive Care (PIC) database is sourced from \nThe Children’s Hospital at Zhejiang University School of Medicine with 12,881 patients and 13,941 ICU stays \nadmitted from 2010–20188.\n\nAlthough the increasing number of datasets publicly available for research is encouraging, a number of \nareas for improvement remain. Data content varies considerably across datasets, with each having a particular \nstrength. HiRID contains high resolution physiologic variables, eICU-CRD spans hundreds of distinct hospi-\ntals, while PIC contains pediatric patients. Clinical practice evolves quickly, requiring continual updating of \nthe resources in order for derivative research to remain relevant. Finally, most datasets comprise of only one \nmodality of information, clinical observations, and omit other important domains such as imaging, free-text, \nphysiologic waveforms, and genomics.\n\n1Massachusetts institute of technology, cambridge, MA, USA. 2the Hospital for Sick children, toronto, On, canada. \n3Beth israel Deaconess Medical center, Boston, MA, USA. ✉e-mail: aewj@mit.edu\n\nScientific Data | (2023) 10:1 | https://doi.org/10.1038/s41597-022-01899-x\n\n1\n\nwww.nature.com/scientificdata\fFig. 1 An overview of the development process for MIMIC. Data are acquired from the BIDMC data \nwarehouse, the ICU information system (MetaVision), and external sources (“acquisition”). Structured Query \nLanguage (SQL) scripts merge the various data sources into a single schema (“transformation”). Finally, \ndeidentification algorithms are applied to selectively remove protected health information from the reformatted \nschema. Tables present in MIMIC-IV are provided on the far right of the figure under their respective module. \nIssues raised on the MIMIC Code Repository are assessed and used to improve the build process as appropriate.\n\nIn this paper we describe the public release of MIMIC-IV, a contemporary electronic health record dataset \ncovering a decade of admissions between 2008 and 2019. MIMIC-IV complements the growing area of publicly \naccessible critical care datasets in a number of ways. First, MIMIC-IV is contemporary, containing information \nfrom 2008–2019. Second, MIMIC-IV incorporates new precise digital information sources such as the elec-\ntronic medicine administration record. Third, MIMIC-IV establishes a modular organization of the constituent \ndata allowing linking of the database to external departments and distinct modalities of data.\n\nMethods\nMIMIC-IV is the result of a collaboration between Beth Israel Deaconess Medical Center (BIDMC) and \nMassachusetts Institute of Technology (MIT",
+    "journal": "Scientific Data",
+    "journal_id": "https://openalex.org/S2607323502",
+    "issn_l": "2052-4463",
+    "source_type": "journal",
+    "doi": "https://doi.org/10.1038/s41597-022-01899-x",
+    "publication_date": "2023-01-03",
+    "publication_year": 2023,
+    "fwci": 564.5287817,
+    "cited_by_count": 2205,
+    "field": "Machine Learning in Healthcare",
+    "parsed": {
+      "meta": {
+        "title": "MIMIC-IV, a freely accessible electronic health record dataset",
+        "primary": "基础医学",
+        "secondary_list": [
+          "计算机科学技术"
+        ],
+        "journal": "Scientific Data",
+        "journal_id": "https://openalex.org/S2607323502",
+        "issn_l": "2052-4463",
+        "source_type": "journal",
+        "doi": "https://doi.org/10.1038/s41597-022-01899-x",
+        "publication_date": "2023-01-03",
+        "publication_year": 2023,
+        "fwci": 564.5287817,
+        "cited_by_count": 2205,
+        "field": "Machine Learning in Healthcare"
+      },
+      "概念": {
+        "主学科": [
+          {
+            "term": "MIMIC-IV",
+            "normalized": "MIMIC-IV",
+            "std_label": null,
+            "evidence": "Here we present MIMIC-IV, a publicly available database",
+            "source": "abstract",
+            "confidence": 0.95
+          },
+          {
+            "term": "electronic health record",
+            "normalized": "electronic health record",
+            "std_label": null,
+            "evidence": "electronic health record of the Beth Israel Deaconess Medical Center",
+            "source": "abstract",
+            "confidence": 0.98
+          },
+          {
+            "term": "patient measurements",
+            "normalized": "patient measurements",
+            "std_label": null,
+            "evidence": "Information available includes patient measurements",
+            "source": "abstract",
+            "confidence": 0.92
+          },
+          {
+            "term": "deidentified free-text clinical notes",
+            "normalized": "deidentified free-text clinical notes",
+            "std_label": null,
+            "evidence": "deidentified free-text clinical notes",
+            "source": "abstract",
+            "confidence": 0.93
+          },
+          {
+            "term": "intensive care unit",
+            "normalized": "intensive care unit",
+            "std_label": null,
+            "evidence": "The intensive care unit (ICU) is an especially data-rich environment",
+            "source": "introduction",
+            "confidence": 0.97
+          },
+          {
+            "term": "critical care datasets",
+            "normalized": "critical care datasets",
+            "std_label": null,
+            "evidence": "publicly available critical care datasets",
+            "source": "introduction",
+            "confidence": 0.94
+          },
+          {
+            "term": "MIMIC-II",
+            "normalized": "MIMIC-II",
+            "std_label": null,
+            "evidence": "MIMIC-II followed with a significantly increased sample size",
+            "source": "introduction",
+            "confidence": 0.95
+          },
+          {
+            "term": "eICU Collaborative Research Database",
+            "normalized": "eICU Collaborative Research Database",
+            "std_label": null,
+            "evidence": "The eICU Collaborative Research Database (eICU-CRD) v2.0",
+            "source": "introduction",
+            "confidence": 0.93
+          },
+          {
+            "term": "AmsterdamUMCdb",
+            "normalized": "AmsterdamUMCdb",
+            "std_label": null,
+            "evidence": "The AmsterdamUMCdb provides granular information",
+            "source": "introduction",
+            "confidence": 0.92
+          },
+          {
+            "term": "Pediatric Intensive Care",
+            "normalized": "Pediatric Intensive Care",
+            "std_label": null,
+            "evidence": "The Pediatric Intensive Care (PIC) database",
+            "source": "introduction",
+            "confidence": 0.94
+          },
+          {
+            "term": "physiologic variables",
+            "normalized": "physiologic variables",
+            "std_label": null,
+            "evidence": "HiRID contains high resolution physiologic variables",
+            "source": "introduction",
+            "confidence": 0.91
+          },
+          {
+            "term": "protected health information",
+            "normalized": "protected health information",
+            "std_label": null,
+            "evidence": "selectively remove protected health information",
+            "source": "introduction",
+            "confidence": 0.93
+          }
+        ],
+        "辅学科": {
+          "计算机科学技术": [
+            {
+              "term": "Structured Query Language",
+              "normalized": "Structured Query Language",
+              "std_label": null,
+              "evidence": "Structured Query Language (SQL) scripts merge the various data sources",
+              "source": "introduction",
+              "confidence": 0.96
+            },
+            {
+              "term": "deidentification algorithms",
+              "normalized": "deidentification algorithms",
+              "std_label": null,
+              "evidence": "deidentification algorithms are applied to selectively remove",
+              "source": "introduction",
+              "confidence": 0.95
+            },
+            {
+              "term": "data warehouse",
+              "normalized": "data warehouse",
+              "std_label": null,
+              "evidence": "BIDMC data warehouse",
+              "source": "introduction",
+              "confidence": 0.94
+            },
+            {
+              "term": "ICU information system",
+              "normalized": "ICU information system",
+              "std_label": null,
+              "evidence": "ICU information system (MetaVision)",
+              "source": "introduction",
+              "confidence": 0.93
+            },
+            {
+              "term": "modular organization",
+              "normalized": "modular organization",
+              "std_label": null,
+              "evidence": "modular organization of the constituent data",
+              "source": "introduction",
+              "confidence": 0.92
+            },
+            {
+              "term": "MIMIC Code Repository",
+              "normalized": "MIMIC Code Repository",
+              "std_label": null,
+              "evidence": "Issues raised on the MIMIC Code Repository",
+              "source": "introduction",
+              "confidence": 0.91
+            }
+          ]
+        }
+      },
+      "跨学科关系": [
+        {
+          "head": "MIMIC-IV",
+          "relation": "uses SQL scripts to merge data sources into a single schema",
+          "relation_type": "method_applied_to",
+          "relation_type_norm": "method_applied_to",
+          "relation_type_raw": "method_applied_to",
+          "tail": "Structured Query Language",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "Structured Query Language (SQL) scripts merge the various data sources into a single schema",
+          "source": "introduction",
+          "confidence": 0.96
+        },
+        {
+          "head": "MIMIC-IV",
+          "relation": "applies deidentification algorithms to selectively remove protected health information",
+          "relation_type": "method_applied_to",
+          "relation_type_norm": "method_applied_to",
+          "relation_type_raw": "method_applied_to",
+          "tail": "deidentification algorithms",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "deidentification algorithms are applied to selectively remove protected health information",
+          "source": "introduction",
+          "confidence": 0.95
+        },
+        {
+          "head": "MIMIC-IV",
+          "relation": "establishes a modular organization allowing linking to external departments",
+          "relation_type": "method_applied_to",
+          "relation_type_norm": "method_applied_to",
+          "relation_type_raw": "method_applied_to",
+          "tail": "modular organization",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "modular organization of the constituent data allowing linking of the database to external departments",
+          "source": "introduction",
+          "confidence": 0.92
+        },
+        {
+          "head": "MIMIC Code Repository",
+          "relation": "issues raised on the repository improve the build process",
+          "relation_type": "improves_metric",
+          "relation_type_norm": "improves_metric",
+          "relation_type_raw": "improves_metric",
+          "tail": "MIMIC-IV",
+          "direction": "->",
+          "quant": {
+            "metric": "database build quality",
+            "value": "1"
+          },
+          "assumptions": [],
+          "evidence": "Issues raised on the MIMIC Code Repository are assessed and used to improve the build process",
+          "source": "introduction",
+          "confidence": 0.91
+        }
+      ],
+      "按辅助学科分类": {
+        "计算机科学技术": {
+          "概念": [
+            "结构化查询语言",
+            "去识别算法",
+            "数据仓库",
+            "ICU信息系统",
+            "模块化组织",
+            "MIMIC代码仓库"
+          ],
+          "关系": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "rationale": "通过结构化查询语言整合数据源，应用去识别算法保护患者隐私，并采用模块化组织提升数据库构建质量"
+        }
+      },
+      "查询": {
+        "一级": "数据库在电子健康记录领域的主要贡献是什么",
+        "二级": [
+          "如何结合结构化查询语言实现多源数据整合",
+          "去识别算法在中保护患者隐私的具体应用方法"
+        ],
+        "三级": [
+          "结构化查询语言与模块化组织如何协同优化数据仓库的构建流程",
+          "代码仓库反馈机制如何通过去识别算法改进提升数据库质量"
+        ]
+      },
+      "假设": {
+        "一级": [
+          [
+            {
+              "step": 1,
+              "head": "MIMIC-IV",
+              "relation": "影响",
+              "tail": "electronic health record",
+              "claim": "通过结构化查询语言实现多源异构数据的标准化整合"
+            },
+            {
+              "step": 2,
+              "head": "electronic health record",
+              "relation": "导致",
+              "tail": "patient measurements",
+              "claim": "结构化查询语言支持模块化组织实现数据仓库的可扩展性设计"
+            },
+            {
+              "step": 3,
+              "head": "patient measurements",
+              "relation": "促进",
+              "tail": "deidentified free-text clinical notes",
+              "claim": "模块化组织架构显著提升数据仓库与外部系统的互操作性"
+            }
+          ],
+          [
+            {
+              "step": 1,
+              "head": "MIMIC-IV",
+              "relation": "影响",
+              "tail": "electronic health record",
+              "claim": "采用去识别算法有效消除敏感健康信息的隐私风险"
+            },
+            {
+              "step": 2,
+              "head": "electronic health record",
+              "relation": "导致",
+              "tail": "patient measurements",
+              "claim": "去识别算法保障了脱敏临床文本在科研中的合规使用"
+            },
+            {
+              "step": 3,
+              "head": "patient measurements",
+              "relation": "促进",
+              "tail": "deidentified free-text clinical notes",
+              "claim": "脱敏临床文本显著提升电子健康记录的科研应用价值"
+            }
+          ],
+          [
+            {
+              "step": 1,
+              "head": "MIMIC-IV",
+              "relation": "影响",
+              "tail": "electronic health record",
+              "claim": "代码仓库的反馈机制持续优化数据库构建流程"
+            },
+            {
+              "step": 2,
+              "head": "electronic health record",
+              "relation": "导致",
+              "tail": "patient measurements",
+              "claim": "通过迭代改进强化去识别算法的隐私保护效能"
+            },
+            {
+              "step": 3,
+              "head": "patient measurements",
+              "relation": "促进",
+              "tail": "deidentified free-text clinical notes",
+              "claim": "去识别算法技术确保敏感健康信息符合法规要求"
+            }
+          ]
+        ],
+        "二级": [
+          [
+            {
+              "step": 1,
+              "head": "MIMIC-IV",
+              "relation": "使用结构化查询语言整合多源数据",
+              "tail": "electronic health record",
+              "claim": "使用结构化查询语言整合多源数据"
+            },
+            {
+              "step": 2,
+              "head": "electronic health record",
+              "relation": "构建数据仓库模式",
+              "tail": "patient measurements",
+              "claim": "构建数据仓库模式"
+            },
+            {
+              "step": 3,
+              "head": "patient measurements",
+              "relation": "实现电子健康记录标准化",
+              "tail": "deidentified free-text clinical notes",
+              "claim": "实现电子健康记录标准化"
+            }
+          ],
+          [
+            {
+              "step": 1,
+              "head": "MIMIC-IV",
+              "relation": "应用去识别算法保护隐私",
+              "tail": "electronic health record",
+              "claim": "应用去识别算法保护隐私"
+            },
+            {
+              "step": 2,
+              "head": "electronic health record",
+              "relation": "消除敏感健康信息",
+              "tail": "patient measurements",
+              "claim": "消除敏感健康信息"
+            },
+            {
+              "step": 3,
+              "head": "patient measurements",
+              "relation": "生成去识别临床记录",
+              "tail": "deidentified free-text clinical notes",
+              "claim": "生成去识别临床记录"
+            }
+          ]
+        ],
+        "三级": [
+          [
+            {
+              "step": 1,
+              "head": "MIMIC-IV",
+              "relation": "协同整合多源数据",
+              "tail": "electronic health record",
+              "claim": "协同整合多源数据"
+            },
+            {
+              "step": 2,
+              "head": "electronic health record",
+              "relation": "优化数据仓库架构",
+              "tail": "patient measurements",
+              "claim": "优化数据仓库架构"
+            },
+            {
+              "step": 3,
+              "head": "patient measurements",
+              "relation": "验证构建流程效率",
+              "tail": "deidentified free-text clinical notes",
+              "claim": "验证构建流程效率"
+            }
+          ],
+          [
+            {
+              "step": 1,
+              "head": "MIMIC-IV",
+              "relation": "反馈驱动算法优化",
+              "tail": "electronic health record",
+              "claim": "反馈驱动算法优化"
+            },
+            {
+              "step": 2,
+              "head": "electronic health record",
+              "relation": "强化隐私保护机制",
+              "tail": "patient measurements",
+              "claim": "强化隐私保护机制"
+            },
+            {
+              "step": 3,
+              "head": "patient measurements",
+              "relation": "提升数据库质量",
+              "tail": "deidentified free-text clinical notes",
+              "claim": "提升数据库质量"
+            }
+          ]
+        ],
+        "一级总结": [
+          "基础医学领域电子健康记录整合需计算机科学技术提供结构化查询语言与模块化架构支持，预期提升数据互操作性",
+          "患者隐私保护需计算机科学技术提供去识别算法保障，预期增强临床数据科研应用价值",
+          "数据库质量改进需计算机科学技术代码仓库反馈机制支撑，预期强化隐私合规性"
+        ],
+        "二级总结": [
+          "计算机科学技术通过结构化查询语言与数据仓库技术，将多源异构医疗数据转化为标准化电子健康记录体系",
+          "计算机科学技术利用去识别算法消除患者隐私信息，将原始临床记录转化为可共享的去识别自由文本数据"
+        ],
+        "三级总结": [
+          "通过结构化查询语言与模块化组织的协同作用，验证数据仓库架构优化对构建流程的改进效果",
+          "基于代码仓库反馈机制改进去识别算法，验证隐私保护机制对数据库质量的提升路径"
+        ]
+      },
+      "graph": {
+        "nodes": [
+          {
+            "id": "MIMIC-IV",
+            "term": "MIMIC-IV",
+            "normalized": "MIMIC-IV",
+            "discipline": "基础医学",
+            "evidence": "Here we present MIMIC-IV, a publicly available database",
+            "source": "abstract",
+            "confidence": 0.95
+          },
+          {
+            "id": "electronic health record",
+            "term": "electronic health record",
+            "normalized": "electronic health record",
+            "discipline": "基础医学",
+            "evidence": "electronic health record of the Beth Israel Deaconess Medical Center",
+            "source": "abstract",
+            "confidence": 0.98
+          },
+          {
+            "id": "patient measurements",
+            "term": "patient measurements",
+            "normalized": "patient measurements",
+            "discipline": "基础医学",
+            "evidence": "Information available includes patient measurements",
+            "source": "abstract",
+            "confidence": 0.92
+          },
+          {
+            "id": "deidentified free-text clinical notes",
+            "term": "deidentified free-text clinical notes",
+            "normalized": "deidentified free-text clinical notes",
+            "discipline": "基础医学",
+            "evidence": "deidentified free-text clinical notes",
+            "source": "abstract",
+            "confidence": 0.93
+          },
+          {
+            "id": "intensive care unit",
+            "term": "intensive care unit",
+            "normalized": "intensive care unit",
+            "discipline": "基础医学",
+            "evidence": "The intensive care unit (ICU) is an especially data-rich environment",
+            "source": "introduction",
+            "confidence": 0.97
+          },
+          {
+            "id": "critical care datasets",
+            "term": "critical care datasets",
+            "normalized": "critical care datasets",
+            "discipline": "基础医学",
+            "evidence": "publicly available critical care datasets",
+            "source": "introduction",
+            "confidence": 0.94
+          },
+          {
+            "id": "MIMIC-II",
+            "term": "MIMIC-II",
+            "normalized": "MIMIC-II",
+            "discipline": "基础医学",
+            "evidence": "MIMIC-II followed with a significantly increased sample size",
+            "source": "introduction",
+            "confidence": 0.95
+          },
+          {
+            "id": "eICU Collaborative Research Database",
+            "term": "eICU Collaborative Research Database",
+            "normalized": "eICU Collaborative Research Database",
+            "discipline": "基础医学",
+            "evidence": "The eICU Collaborative Research Database (eICU-CRD) v2.0",
+            "source": "introduction",
+            "confidence": 0.93
+          },
+          {
+            "id": "AmsterdamUMCdb",
+            "term": "AmsterdamUMCdb",
+            "normalized": "AmsterdamUMCdb",
+            "discipline": "基础医学",
+            "evidence": "The AmsterdamUMCdb provides granular information",
+            "source": "introduction",
+            "confidence": 0.92
+          },
+          {
+            "id": "Pediatric Intensive Care",
+            "term": "Pediatric Intensive Care",
+            "normalized": "Pediatric Intensive Care",
+            "discipline": "基础医学",
+            "evidence": "The Pediatric Intensive Care (PIC) database",
+            "source": "introduction",
+            "confidence": 0.94
+          },
+          {
+            "id": "physiologic variables",
+            "term": "physiologic variables",
+            "normalized": "physiologic variables",
+            "discipline": "基础医学",
+            "evidence": "HiRID contains high resolution physiologic variables",
+            "source": "introduction",
+            "confidence": 0.91
+          },
+          {
+            "id": "protected health information",
+            "term": "protected health information",
+            "normalized": "protected health information",
+            "discipline": "基础医学",
+            "evidence": "selectively remove protected health information",
+            "source": "introduction",
+            "confidence": 0.93
+          },
+          {
+            "id": "Structured Query Language",
+            "term": "Structured Query Language",
+            "normalized": "Structured Query Language",
+            "discipline": "计算机科学技术",
+            "evidence": "Structured Query Language (SQL) scripts merge the various data sources",
+            "source": "introduction",
+            "confidence": 0.96
+          },
+          {
+            "id": "deidentification algorithms",
+            "term": "deidentification algorithms",
+            "normalized": "deidentification algorithms",
+            "discipline": "计算机科学技术",
+            "evidence": "deidentification algorithms are applied to selectively remove",
+            "source": "introduction",
+            "confidence": 0.95
+          },
+          {
+            "id": "data warehouse",
+            "term": "data warehouse",
+            "normalized": "data warehouse",
+            "discipline": "计算机科学技术",
+            "evidence": "BIDMC data warehouse",
+            "source": "introduction",
+            "confidence": 0.94
+          },
+          {
+            "id": "ICU information system",
+            "term": "ICU information system",
+            "normalized": "ICU information system",
+            "discipline": "计算机科学技术",
+            "evidence": "ICU information system (MetaVision)",
+            "source": "introduction",
+            "confidence": 0.93
+          },
+          {
+            "id": "modular organization",
+            "term": "modular organization",
+            "normalized": "modular organization",
+            "discipline": "计算机科学技术",
+            "evidence": "modular organization of the constituent data",
+            "source": "introduction",
+            "confidence": 0.92
+          },
+          {
+            "id": "MIMIC Code Repository",
+            "term": "MIMIC Code Repository",
+            "normalized": "MIMIC Code Repository",
+            "discipline": "计算机科学技术",
+            "evidence": "Issues raised on the MIMIC Code Repository",
+            "source": "introduction",
+            "confidence": 0.91
+          }
+        ],
+        "edges": [
+          {
+            "source": "MIMIC-IV",
+            "target": "Structured Query Language",
+            "relation": "uses SQL scripts to merge data sources into a single schema",
+            "relation_type": "method_applied_to",
+            "metadata": {
+              "evidence": "Structured Query Language (SQL) scripts merge the various data sources into a single schema",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "MIMIC-IV",
+            "target": "deidentification algorithms",
+            "relation": "applies deidentification algorithms to selectively remove protected health information",
+            "relation_type": "method_applied_to",
+            "metadata": {
+              "evidence": "deidentification algorithms are applied to selectively remove protected health information",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "MIMIC-IV",
+            "target": "modular organization",
+            "relation": "establishes a modular organization allowing linking to external departments",
+            "relation_type": "method_applied_to",
+            "metadata": {
+              "evidence": "modular organization of the constituent data allowing linking of the database to external departments",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "MIMIC Code Repository",
+            "target": "MIMIC-IV",
+            "relation": "issues raised on the repository improve the build process",
+            "relation_type": "improves_metric",
+            "metadata": {
+              "evidence": "Issues raised on the MIMIC Code Repository are assessed and used to improve the build process",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "MIMIC-IV",
+            "target": "electronic health record",
+            "relation": "影响",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "通过结构化查询语言实现多源异构数据的标准化整合",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "electronic health record",
+            "target": "patient measurements",
+            "relation": "导致",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "结构化查询语言支持模块化组织实现数据仓库的可扩展性设计",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "patient measurements",
+            "target": "deidentified free-text clinical notes",
+            "relation": "促进",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "模块化组织架构显著提升数据仓库与外部系统的互操作性",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "MIMIC-IV",
+            "target": "electronic health record",
+            "relation": "影响",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "采用去识别算法有效消除敏感健康信息的隐私风险",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "electronic health record",
+            "target": "patient measurements",
+            "relation": "导致",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "去识别算法保障了脱敏临床文本在科研中的合规使用",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "patient measurements",
+            "target": "deidentified free-text clinical notes",
+            "relation": "促进",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "脱敏临床文本显著提升电子健康记录的科研应用价值",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "MIMIC-IV",
+            "target": "electronic health record",
+            "relation": "影响",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "代码仓库的反馈机制持续优化数据库构建流程",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 2
+            }
+          },
+          {
+            "source": "electronic health record",
+            "target": "patient measurements",
+            "relation": "导致",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "通过迭代改进强化去识别算法的隐私保护效能",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 2
+            }
+          },
+          {
+            "source": "patient measurements",
+            "target": "deidentified free-text clinical notes",
+            "relation": "促进",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "去识别算法技术确保敏感健康信息符合法规要求",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 2
+            }
+          },
+          {
+            "source": "MIMIC-IV",
+            "target": "electronic health record",
+            "relation": "使用结构化查询语言整合多源数据",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "使用结构化查询语言整合多源数据",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "electronic health record",
+            "target": "patient measurements",
+            "relation": "构建数据仓库模式",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "构建数据仓库模式",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "patient measurements",
+            "target": "deidentified free-text clinical notes",
+            "relation": "实现电子健康记录标准化",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "实现电子健康记录标准化",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "MIMIC-IV",
+            "target": "electronic health record",
+            "relation": "应用去识别算法保护隐私",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "应用去识别算法保护隐私",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "electronic health record",
+            "target": "patient measurements",
+            "relation": "消除敏感健康信息",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "消除敏感健康信息",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "patient measurements",
+            "target": "deidentified free-text clinical notes",
+            "relation": "生成去识别临床记录",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "生成去识别临床记录",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "MIMIC-IV",
+            "target": "electronic health record",
+            "relation": "协同整合多源数据",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "协同整合多源数据",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "electronic health record",
+            "target": "patient measurements",
+            "relation": "优化数据仓库架构",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "优化数据仓库架构",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "patient measurements",
+            "target": "deidentified free-text clinical notes",
+            "relation": "验证构建流程效率",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "验证构建流程效率",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "MIMIC-IV",
+            "target": "electronic health record",
+            "relation": "反馈驱动算法优化",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "反馈驱动算法优化",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "electronic health record",
+            "target": "patient measurements",
+            "relation": "强化隐私保护机制",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "强化隐私保护机制",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "patient measurements",
+            "target": "deidentified free-text clinical notes",
+            "relation": "提升数据库质量",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "提升数据库质量",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          }
+        ]
+      },
+      "metrics": {
+        "path_consistency": 0.0,
+        "coverage": 0.2222222222222222,
+        "bridging_score": 0.16,
+        "rao_stirling_diversity": 0.0,
+        "embedding_bridging": 0.6986,
+        "consistency_precision": 0.0,
+        "consistency_recall": 0.0,
+        "consistency_f1": 0.0,
+        "info_novelty": 0.0,
+        "chain_coherence": 0.7108,
+        "atypical_combination": 0.0,
+        "kg_density": 0.0229,
+        "kg_inverse_modularity": 1.1633,
+        "kg_largest_cc_ratio": 0.4444,
+        "kg_avg_betweenness": 0.0139,
+        "kg_clustering_coefficient": 0.0,
+        "concept_recall": 0.0,
+        "concept_precision": 0.0,
+        "concept_f1": 0.0,
+        "relation_precision": 0.0,
+        "relation_type_accuracy": 0.0,
+        "evidence_coverage": 0.0,
+        "path_alignment_best": 0.0,
+        "path_alignment_mean": 0.0
+      }
+    },
+    "raw": "/* stage1: struct */\n/* concepts round1 */\n{\n  \"meta\": {\n    \"title\": \"MIMIC-IV, a freely accessible electronic health record dataset\",\n    \"primary\": \"基础医学\",\n    \"secondary_list\": [\"计算机科学技术\"]\n  },\n  \"概念\": {\n    \"主学科\": [\n      {\n        \"term\": \"MIMIC-IV\",\n        \"normalized\": null,\n        \"std_label\": null,\n        \"evidence\": \"Here we present MIMIC-IV, a publicly available database\",\n        \"source\": \"abstract\",\n        \"confidence\": 0.95\n      },\n      {\n        \"term\": \"electronic health record\",\n        \"normalized\": null,\n        \"std_label\": null,\n        \"evidence\": \"electronic health record of the Beth Israel Deaconess Medical Center\",\n        \"source\": \"abstract\",\n        \"confidence\": 0.98\n      },\n      {\n        \"term\": \"patient measurements\",\n        \"normalized\": null,\n        \"std_label\": null,\n        \"evidence\": \"Information available includes patient measurements\",\n        \"source\": \"abstract\",\n        \"confidence\": 0.92\n      },\n      {\n        \"term\": \"deidentified free-text clinical notes\",\n        \"normalized\": null,\n        \"std_label\": null,\n        \"evidence\": \"deidentified free-text clinical notes\",\n        \"source\": \"abstract\",\n        \"confidence\": 0.93\n      },\n      {\n        \"term\": \"intensive care unit\",\n        \"normalized\": null,\n        \"std_label\": null,\n        \"evidence\": \"The intensive care unit (ICU) is an especially data-rich environment\",\n        \"source\": \"introduction\",\n        \"confidence\": 0.97\n      },\n      {\n        \"term\": \"critical care datasets\",\n        \"normalized\": null,\n        \"std_label\": null,\n        \"evidence\": \"publicly available critical care datasets\",\n        \"source\": \"introduction\",\n        \"confidence\": 0.94\n      },\n      {\n        \"term\": \"MIMIC-II\",\n        \"normalized\": null,\n        \"std_label\": null,\n        \"evidence\": \"MIMIC-II followed with a significantly increased sample size\",\n        \"source\": \"introduction\",\n        \"confidence\": 0.95\n      },\n      {\n        \"term\": \"eICU Collaborative Research Database\",\n        \"normalized\": null,\n        \"std_label\": null,\n        \"evidence\": \"The eICU Collaborative Research Database (eICU-CRD) v2.0\",\n        \"source\": \"introduction\",\n        \"confidence\": 0.93\n      },\n      {\n        \"term\": \"AmsterdamUMCdb\",\n        \"normalized\": null,\n        \"std_label\": null,\n        \"evidence\": \"The AmsterdamUMCdb provides granular information\",\n        \"source\": \"introduction\",\n        \"confidence\": 0.92\n      },\n      {\n        \"term\": \"Pediatric Intensive Care\",\n        \"normalized\": null,\n        \"std_label\": null,\n        \"evidence\": \"The Pediatric Intensive Care (PIC) database\",\n        \"source\": \"introduction\",\n        \"confidence\": 0.94\n      },\n      {\n        \"term\": \"physiologic variables\",\n        \"normalized\": null,\n        \"std_label\": null,\n        \"evidence\": \"HiRID contains high resolution physiologic variables\",\n        \"source\": \"introduction\",\n        \"confidence\": 0.91\n      },\n      {\n        \"term\": \"protected health information\",\n        \"normalized\": null,\n        \"std_label\": null,\n        \"evidence\": \"selectively remove protected health information\",\n        \"source\": \"introduction\",\n        \"confidence\": 0.93\n      }\n    ],\n    \"辅学科\": {\n      \"计算机科学技术\": [\n        {\n          \"term\": \"Structured Query Language\",\n          \"normalized\": null,\n          \"std_label\": null,\n          \"evidence\": \"Structured Query Language (SQL) scripts merge the various data sources\",\n          \"source\": \"introduction\",\n          \"confidence\": 0.96\n        },\n        {\n          \"term\": \"deidentification algorithms\",\n          \"normalized\": null,\n          \"std_label\": null,\n          \"evidence\": \"deidentification algorithms are applied to selectively remove\",\n          \"source\": \"introduction\",\n          \"confidence\": 0.95\n        },\n        {\n          \"term\": \"data warehouse\",\n          \"normalized\": null,\n          \"std_label\": null,\n          \"evidence\": \"BIDMC data warehouse\",\n          \"source\": \"introduction\",\n          \"confidence\": 0.94\n        },\n        {\n          \"term\": \"ICU information system\",\n          \"normalized\": null,\n          \"std_label\": null,\n          \"evidence\": \"ICU information system (MetaVision)\",\n          \"source\": \"introduction\",\n          \"confidence\": 0.93\n        },\n        {\n          \"term\": \"modular organization\",\n          \"normalized\": null,\n          \"std_label\": null,\n          \"evidence\": \"modular organization of the constituent data\",\n          \"source\": \"introduction\",\n          \"confidence\": 0.92\n        },\n        {\n          \"term\": \"MIMIC Code Repository\",\n          \"normalized\": null,\n          \"std_label\": null,\n          \"evidence\": \"Issues raised on the MIMIC Code Repository\",\n          \"source\": \"introduction\",\n          \"confidence\": 0.91\n        }\n      ]\n    }\n  }\n}\n\n/* concepts round2 (supplement) */\n{\"补充概念\": {\"主学科\": [\"waveform database\", \"electronic medicine administration record\", \"clinical information systems\", \"eICU-CRD\", \"PIC\", \"MetaVision\"], \"辅学科\": {\"基础医学\": [\"waveform database\", \"electronic medicine administration record\"], \"计算机科学技术\": [\"clinical information systems\", \"eICU-CRD\", \"PIC\", \"MetaVision\"]}}}\n\n/* relations */\n{ \"跨学科关系\": [ { \"head\": \"MIMIC-IV\", \"tail\": \"Structured Query Language\", \"relation\": \"uses SQL scripts to merge data sources into a single schema\", \"relation_type\": \"method_applied_to\", \"direction\": \"->\", \"evidence\": \"Structured Query Language (SQL) scripts merge the various data sources into a single schema\", \"source\": \"introduction\", \"confidence\": 0.96 }, { \"head\": \"MIMIC-IV\", \"tail\": \"deidentification algorithms\", \"relation\": \"applies deidentification algorithms to selectively remove protected health information\", \"relation_type\": \"method_applied_to\", \"direction\": \"->\", \"evidence\": \"deidentification algorithms are applied to selectively remove protected health information\", \"source\": \"introduction\", \"confidence\": 0.95 }, { \"head\": \"MIMIC-IV\", \"tail\": \"modular organization\", \"relation\": \"establishes a modular organization allowing linking to external departments\", \"relation_type\": \"method_applied_to\", \"direction\": \"->\", \"evidence\": \"modular organization of the constituent data allowing linking of the database to external departments\", \"source\": \"introduction\", \"confidence\": 0.92 }, { \"head\": \"MIMIC Code Repository\", \"tail\": \"MIMIC-IV\", \"relation\": \"issues raised on the repository improve the build process\", \"relation_type\": \"improves_metric\", \"direction\": \"->\", \"quant\": { \"metric\": \"database build quality\", \"value\": 1 }, \"evidence\": \"Issues raised on the MIMIC Code Repository are assessed and used to improve the build process\", \"source\": \"introduction\", \"confidence\": 0.91, \"assumptions\": [] } ] }\n\n/* stage2: query */\n{\n  \"按辅助学科分类\": {\n    \"计算机科学技术\": {\n      \"概念\": [\n        \"结构化查询语言\",\n        \"去识别算法\",\n        \"数据仓库\",\n        \"ICU信息系统\",\n        \"模块化组织\",\n        \"MIMIC代码仓库\"\n      ],\n      \"关系\": [0, 1, 2, 3],\n      \"rationale\": \"通过结构化查询语言整合数据源，应用去识别算法保护患者隐私，并采用模块化组织提升数据库构建质量\"\n    }\n  },\n  \"查询\": {\n    \"一级\": \"MIMIC-IV数据库在电子健康记录领域的主要贡献是什么\",\n    \"二级\": [\n      \"MIMIC-IV如何结合结构化查询语言实现多源数据整合\",\n      \"去识别算法在MIMIC-IV中保护患者隐私的具体应用方法\"\n    ],\n    \"三级\": [\n      \"结构化查询语言与模块化组织如何协同优化ICU数据仓库的构建流程\",\n      \"MIMIC代码仓库反馈机制如何通过去识别算法改进提升数据库质量\"\n    ]\n  }\n}\n\n/* stage3: hypothesis L1 */\n{\n  \"假设\": {\n    \"一级\": [\n      [\n        {\n          \"step\": 1,\n          \"head\": \"MIMIC-IV\",\n          \"relation\": \"uses SQL scripts to merge data sources into a single schema\",\n          \"tail\": \"Structured Query Language\",\n          \"claim\": \"MIMIC-IV通过结构化查询语言实现多源异构数据的标准化整合\"\n        },\n        {\n          \"step\": 2,\n          \"head\": \"Structured Query Language\",\n          \"relation\": \"supports modular organization of database architecture\",\n          \"tail\": \"modular organization\",\n          \"claim\": \"结构化查询语言支持模块化组织实现数据仓库的可扩展性设计\"\n        },\n        {\n          \"step\": 3,\n          \"head\": \"modular organization\",\n          \"relation\": \"enhances integration capability with external departments\",\n          \"tail\": \"data warehouse\",\n          \"claim\": \"模块化组织架构显著提升数据仓库与外部系统的互操作性\"\n        }\n      ],\n      [\n        {\n          \"step\": 1,\n          \"head\": \"MIMIC-IV\",\n          \"relation\": \"applies deidentification algorithms to selectively remove protected health information\",\n          \"tail\": \"deidentification algorithms\",\n          \"claim\": \"MIMIC-IV采用去识别算法有效消除敏感健康信息的隐私风险\"\n        },\n        {\n          \"step\": 2,\n          \"head\": \"deidentification algorithms\",\n          \"relation\": \"enables secure utilization of deidentified clinical notes\",\n          \"tail\": \"deidentified free-text clinical notes\",\n          \"claim\": \"去识别算法保障了脱敏临床文本在科研中的合规使用\"\n        },\n        {\n          \"step\": 3,\n          \"head\": \"deidentified free-text clinical notes\",\n          \"relation\": \"expands research value of electronic health records\",\n          \"tail\": \"electronic health record\",\n          \"claim\": \"脱敏临床文本显著提升电子健康记录的科研应用价值\"\n        }\n      ],\n      [\n        {\n          \"step\": 1,\n          \"head\": \"MIMIC Code Repository\",\n          \"relation\": \"issues raised on the repository improve the build process\",\n          \"tail\": \"MIMIC-IV\",\n          \"claim\": \"代码仓库的反馈机制持续优化MIMIC-IV数据库构建流程\"\n        },\n        {\n          \"step\": 2,\n          \"head\": \"MIMIC-IV\",\n          \"relation\": \"applies deidentification algorithms to selectively remove protected health information\",\n          \"tail\": \"deidentification algorithms\",\n          \"claim\": \"MIMIC-IV通过迭代改进强化去识别算法的隐私保护效能\"\n        },\n        {\n          \"step\": 3,\n          \"head\": \"deidentification algorithms\",\n          \"relation\": \"ensures compliance with data privacy regulations\",\n          \"tail\": \"protected health information\",\n          \"claim\": \"去识别算法技术确保敏感健康信息符合法规要求\"\n        }\n      ]\n    ],\n    \"一级总结\": [\n      \"基础医学领域电子健康记录整合需计算机科学技术提供结构化查询语言与模块化架构支持，预期提升数据互操作性\",\n      \"患者隐私保护需计算机科学技术提供去识别算法保障，预期增强临床数据科研应用价值\",\n      \"数据库质量改进需计算机科学技术代码仓库反馈机制支撑，预期强化隐私合规性\"\n    ]\n  }\n}\n\n/* stage3: hypothesis L2 */\n{\n  \"假设\": {\n    \"二级\": [\n      [\n        {\n          \"step\": 1,\n          \"head\": \"MIMIC-IV\",\n          \"relation\": \"使用结构化查询语言整合多源数据\",\n          \"tail\": \"Structured Query Language\"\n        },\n        {\n          \"step\": 2,\n          \"head\": \"Structured Query Language\",\n          \"relation\": \"构建数据仓库模式\",\n          \"tail\": \"data warehouse\"\n        },\n        {\n          \"step\": 3,\n          \"head\": \"data warehouse\",\n          \"relation\": \"实现电子健康记录标准化\",\n          \"tail\": \"electronic health record\"\n        }\n      ],\n      [\n        {\n          \"step\": 1,\n          \"head\": \"MIMIC-IV\",\n          \"relation\": \"应用去识别算法保护隐私\",\n          \"tail\": \"deidentification algorithms\"\n        },\n        {\n          \"step\": 2,\n          \"head\": \"deidentification algorithms\",\n          \"relation\": \"消除敏感健康信息\",\n          \"tail\": \"protected health information\"\n        },\n        {\n          \"step\": 3,\n          \"head\": \"protected health information\",\n          \"relation\": \"生成去识别临床记录\",\n          \"tail\": \"deidentified free-text clinical notes\"\n        }\n      ]\n    ],\n    \"二级总结\": [\n      \"计算机科学技术通过结构化查询语言与数据仓库技术，将多源异构医疗数据转化为标准化电子健康记录体系\",\n      \"计算机科学技术利用去识别算法消除患者隐私信息，将原始临床记录转化为可共享的去识别自由文本数据\"\n    ]\n  }\n}\n\n/* stage3: hypothesis L3 */\n{\n  \"假设\": {\n    \"三级\": [\n      [\n        {\n          \"step\": 1,\n          \"head\": \"Structured Query Language\",\n          \"relation\": \"协同整合多源数据\",\n          \"tail\": \"modular organization\"\n        },\n        {\n          \"step\": 2,\n          \"head\": \"modular organization\",\n          \"relation\": \"优化数据仓库架构\",\n          \"tail\": \"data warehouse\"\n        },\n        {\n          \"step\": 3,\n          \"head\": \"data warehouse\",\n          \"relation\": \"验证构建流程效率\",\n          \"tail\": \"MIMIC-IV\"\n        }\n      ],\n      [\n        {\n          \"step\": 1,\n          \"head\": \"MIMIC Code Repository\",\n          \"relation\": \"反馈驱动算法优化\",\n          \"tail\": \"deidentification algorithms\"\n        },\n        {\n          \"step\": 2,\n          \"head\": \"deidentification algorithms\",\n          \"relation\": \"强化隐私保护机制\",\n          \"tail\": \"protected health information\"\n        },\n        {\n          \"step\": 3,\n          \"head\": \"protected health information\",\n          \"relation\": \"提升数据库质量\",\n          \"tail\": \"MIMIC-IV\"\n        }\n      ]\n    ],\n    \"三级总结\": [\n      \"通过结构化查询语言与模块化组织的协同作用，验证数据仓库架构优化对MIMIC-IV构建流程的改进效果\",\n      \"基于代码仓库反馈机制改进去识别算法，验证隐私保护机制对MIMIC-IV数据库质量的提升路径\"\n    ]\n  }\n}",
+    "ok": true,
+    "error": ""
+  },
+  {
+    "title": "MitoHiFi: a python pipeline for mitochondrial genome assembly from PacBio high fidelity reads",
+    "abstract": "Abstract Background PacBio high fidelity (HiFi) sequencing reads are both long (15–20 kb) and highly accurate (&gt; Q20). Because of these properties, they have revolutionised genome assembly leading to more accurate and contiguous genomes. In eukaryotes the mitochondrial genome is sequenced alongside the nuclear genome often at very high coverage. A dedicated tool for mitochondrial genome assembly using HiFi reads is still missing. Results MitoHiFi was developed within the Darwin Tree of Life Project to assemble mitochondrial genomes from the HiFi reads generated for target species. The input for MitoHiFi is either the raw reads or the assembled contigs, and the tool outputs a mitochondrial genome sequence fasta file along with annotation of protein and RNA genes. Variants arising from heteroplasmy are assembled independently, and nuclear insertions of mitochondrial sequences are identified and not used in organellar genome assembly. MitoHiFi has been used to assemble 374 mitochondrial genomes (368 Metazoa and 6 Fungi species) for the Darwin Tree of Life Project, the Vertebrate Genomes Project and the Aquatic Symbiosis Genome Project. Inspection of 60 mitochondrial genomes assembled with MitoHiFi for species that already have reference sequences in public databases showed the widespread presence of previously unreported repeats. Conclusions MitoHiFi is able to assemble mitochondrial genomes from a wide phylogenetic range of taxa from Pacbio HiFi data. MitoHiFi is written in python and is freely available on GitHub ( https://github.com/marcelauliano/MitoHiFi ). MitoHiFi is available with its dependencies as a Docker container on GitHub (ghcr.io/marcelauliano/mitohifi:master).",
+    "pdf_url": "https://doi.org/10.1186/s12859-023-05385-y",
+    "primary": "计算机科学技术",
+    "secondary": "生物学",
+    "secondary_list": [
+      "生物学"
+    ],
+    "introduction": "",
+    "journal": "BMC Bioinformatics",
+    "journal_id": "https://openalex.org/S19032547",
+    "issn_l": "1471-2105",
+    "source_type": "journal",
+    "doi": "https://doi.org/10.1186/s12859-023-05385-y",
+    "publication_date": "2023-07-18",
+    "publication_year": 2023,
+    "fwci": 297.62966344,
+    "cited_by_count": 1600,
+    "field": "Genomics and Phylogenetic Studies",
+    "parsed": {
+      "meta": {
+        "title": "MitoHiFi: a python pipeline for mitochondrial genome assembly from PacBio high fidelity reads",
+        "primary": "计算机科学技术",
+        "secondary_list": [
+          "生物学"
+        ],
+        "journal": "BMC Bioinformatics",
+        "journal_id": "https://openalex.org/S19032547",
+        "issn_l": "1471-2105",
+        "source_type": "journal",
+        "doi": "https://doi.org/10.1186/s12859-023-05385-y",
+        "publication_date": "2023-07-18",
+        "publication_year": 2023,
+        "fwci": 297.62966344,
+        "cited_by_count": 1600,
+        "field": "Genomics and Phylogenetic Studies"
+      },
+      "概念": {
+        "主学科": [
+          {
+            "term": "MitoHiFi",
+            "normalized": "MitoHiFi",
+            "std_label": "软件工具",
+            "evidence": "MitoHiFi was developed within the Darwin Tree of Life Project",
+            "source": "abstract",
+            "confidence": 0.95
+          },
+          {
+            "term": "python pipeline",
+            "normalized": "流程",
+            "std_label": "软件框架",
+            "evidence": "a python pipeline for mitochondrial genome assembly",
+            "source": "title",
+            "confidence": 0.9
+          },
+          {
+            "term": "Docker container",
+            "normalized": "容器",
+            "std_label": "部署工具",
+            "evidence": "available as a Docker container on GitHub",
+            "source": "abstract",
+            "confidence": 0.85
+          },
+          {
+            "term": "GitHub",
+            "normalized": "GitHub",
+            "std_label": "代码托管平台",
+            "evidence": "freely available on GitHub",
+            "source": "abstract",
+            "confidence": 0.8
+          },
+          {
+            "term": "fasta file",
+            "normalized": "格式文件",
+            "std_label": "数据格式",
+            "evidence": "outputs a mitochondrial genome sequence fasta file",
+            "source": "abstract",
+            "confidence": 0.85
+          },
+          {
+            "term": "annotation",
+            "normalized": "注释",
+            "std_label": "数据标注",
+            "evidence": "annotation of protein and RNA genes",
+            "source": "abstract",
+            "confidence": 0.8
+          }
+        ],
+        "辅学科": {
+          "生物学": [
+            {
+              "term": "mitochondrial genome",
+              "normalized": "线粒体基因组",
+              "std_label": "基因组",
+              "evidence": "mitochondrial genome assembly",
+              "source": "title",
+              "confidence": 0.95
+            },
+            {
+              "term": "PacBio high fidelity (HiFi) sequencing reads",
+              "normalized": "高保真测序读段",
+              "std_label": "测序技术",
+              "evidence": "PacBio high fidelity (HiFi) sequencing reads are both long (15–20 kb) and highly accurate",
+              "source": "abstract",
+              "confidence": 0.9
+            },
+            {
+              "term": "nuclear genome",
+              "normalized": "核基因组",
+              "std_label": "基因组",
+              "evidence": "the nuclear genome is sequenced alongside the mitochondrial genome",
+              "source": "abstract",
+              "confidence": 0.85
+            },
+            {
+              "term": "heteroplasmy",
+              "normalized": "异质性",
+              "std_label": "生物学现象",
+              "evidence": "Variants arising from heteroplasmy are assembled independently",
+              "source": "abstract",
+              "confidence": 0.8
+            },
+            {
+              "term": "nuclear insertions of mitochondrial sequences",
+              "normalized": "核插入线粒体序列",
+              "std_label": "基因组事件",
+              "evidence": "nuclear insertions of mitochondrial sequences are identified",
+              "source": "abstract",
+              "confidence": 0.85
+            },
+            {
+              "term": "protein and RNA genes",
+              "normalized": "蛋白质和基因",
+              "std_label": "基因类型",
+              "evidence": "annotation of protein and RNA genes",
+              "source": "abstract",
+              "confidence": 0.8
+            },
+            {
+              "term": "Metazoa",
+              "normalized": "后生动物",
+              "std_label": "生物分类",
+              "evidence": "368 Metazoa and 6 Fungi species",
+              "source": "abstract",
+              "confidence": 0.75
+            },
+            {
+              "term": "Fungi",
+              "normalized": "真菌",
+              "std_label": "生物分类",
+              "evidence": "6 Fungi species",
+              "source": "abstract",
+              "confidence": 0.75
+            },
+            {
+              "term": "repeats",
+              "normalized": "重复序列",
+              "std_label": "基因组特征",
+              "evidence": "widespread presence of previously unreported repeats",
+              "source": "abstract",
+              "confidence": 0.8
+            }
+          ]
+        }
+      },
+      "跨学科关系": [
+        {
+          "head": "MitoHiFi",
+          "relation": "用于组装",
+          "relation_type": "method_applied_to",
+          "relation_type_norm": "method_applied_to",
+          "relation_type_raw": "method_applied_to",
+          "tail": "线粒体基因组",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "MitoHiFi was developed [...] to assemble mitochondrial genomes",
+          "source": "abstract",
+          "confidence": 0.95
+        },
+        {
+          "head": "流程",
+          "relation": "应用于",
+          "relation_type": "method_applied_to",
+          "relation_type_norm": "method_applied_to",
+          "relation_type_raw": "method_applied_to",
+          "tail": "高保真测序读段",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "assemble mitochondrial genomes from the HiFi reads",
+          "source": "abstract",
+          "confidence": 0.9
+        },
+        {
+          "head": "MitoHiFi",
+          "relation": "输出",
+          "relation_type": "maps_to",
+          "relation_type_norm": "maps_to",
+          "relation_type_raw": "maps_to",
+          "tail": "格式文件",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "outputs a mitochondrial genome sequence fasta file",
+          "source": "abstract",
+          "confidence": 0.85
+        },
+        {
+          "head": "MitoHiFi",
+          "relation": "执行基因注释",
+          "relation_type": "method_applied_to",
+          "relation_type_norm": "method_applied_to",
+          "relation_type_raw": "method_applied_to",
+          "tail": "注释",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "annotation of protein and RNA genes",
+          "source": "abstract",
+          "confidence": 0.8
+        },
+        {
+          "head": "容器",
+          "relation": "依赖于",
+          "relation_type": "depends_on",
+          "relation_type_norm": "depends_on",
+          "relation_type_raw": "depends_on",
+          "tail": "MitoHiFi",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "available with its dependencies as a Docker container",
+          "source": "abstract",
+          "confidence": 0.85
+        },
+        {
+          "head": "高保真测序读段",
+          "relation": "驱动组装",
+          "relation_type": "driven_by",
+          "relation_type_norm": "driven_by",
+          "relation_type_raw": "driven_by",
+          "tail": "线粒体基因组",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "revolutionised genome assembly leading to more accurate and contiguous genomes",
+          "source": "abstract",
+          "confidence": 0.9
+        },
+        {
+          "head": "核插入线粒体序列",
+          "relation": "排除干扰",
+          "relation_type": "constrains",
+          "relation_type_norm": "constrains",
+          "relation_type_raw": "constrains",
+          "tail": "线粒体基因组组装",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "nuclear insertions [...] are identified and not used in organellar genome assembly",
+          "source": "abstract",
+          "confidence": 0.85
+        },
+        {
+          "head": "GitHub",
+          "relation": "托管",
+          "relation_type": "generalizes",
+          "relation_type_norm": "generalizes",
+          "relation_type_raw": "generalizes",
+          "tail": "MitoHiFi",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "freely available on GitHub",
+          "source": "abstract",
+          "confidence": 0.8
+        }
+      ],
+      "按辅助学科分类": {
+        "生物学": {
+          "概念": [
+            "线粒体基因组",
+            "高保真测序读段",
+            "核基因组",
+            "异质性",
+            "核插入线粒体序列",
+            "蛋白质和基因",
+            "后生动物",
+            "真菌",
+            "重复序列"
+          ],
+          "关系": [
+            0,
+            1,
+            5,
+            6
+          ],
+          "rationale": "提供线粒体基因组数据资源与高通量测序技术支撑，实现基因组组装的精准建模"
+        }
+      },
+      "查询": {
+        "一级": "软件工具在基因组组装中的核心优势是什么？",
+        "二级": [
+          "如何结合高保真测序技术提升线粒体基因组组装准确性？",
+          "基因注释方法如何与核基因组数据协同优化组装结果？"
+        ],
+        "三级": [
+          "如何整合高保真测序技术与基因注释方法实现线粒体基因组的高效组装与分析？",
+          "基于核插入线粒体序列识别的组装排除机制与软件流程如何协同保障基因组数据完整性？"
+        ]
+      },
+      "假设": {
+        "一级": [
+          [
+            {
+              "step": 1,
+              "head": "MitoHiFi",
+              "relation": "用于组装",
+              "tail": "线粒体基因组",
+              "claim": "通过自动化流程实现线粒体基因组的高效组装"
+            },
+            {
+              "step": 2,
+              "head": "线粒体基因组",
+              "relation": "驱动组装",
+              "tail": "高保真测序读段",
+              "claim": "高保真测序读段的长片段特性保障了线粒体基因组组装的连续性"
+            },
+            {
+              "step": 3,
+              "head": "高保真测序读段",
+              "relation": "排除干扰",
+              "tail": "核插入线粒体序列",
+              "claim": "生物学辅学科的核插入序列识别机制有效避免了基因组组装的污染风险"
+            }
+          ],
+          [
+            {
+              "step": 1,
+              "head": "流程",
+              "relation": "应用于",
+              "tail": "高保真测序读段",
+              "claim": "软件流程通过参数优化适配高保真测序数据特征"
+            },
+            {
+              "step": 2,
+              "head": "高保真测序读段",
+              "relation": "驱动组装",
+              "tail": "线粒体基因组",
+              "claim": "测序技术的准确性提升直接转化为基因组组装质量的改善"
+            },
+            {
+              "step": 3,
+              "head": "线粒体基因组",
+              "relation": "执行基因注释",
+              "tail": "注释",
+              "claim": "生物学知识库支持线粒体基因组的蛋白质和基因精准注释"
+            }
+          ]
+        ],
+        "二级": [
+          [
+            {
+              "step": 1,
+              "head": "流程",
+              "relation": "应用于",
+              "tail": "高保真测序读段",
+              "claim": "流程处理高保真测序读段以优化数据输入"
+            },
+            {
+              "step": 2,
+              "head": "高保真测序读段",
+              "relation": "驱动组装",
+              "tail": "线粒体基因组",
+              "claim": "高保真测序读段的长读长和准确性提升组装连续性和正确率"
+            },
+            {
+              "step": 3,
+              "head": "线粒体基因组",
+              "relation": "被集成于",
+              "tail": "GitHub",
+              "claim": "集成线粒体基因组组装结果以实现自动化分析"
+            }
+          ],
+          [
+            {
+              "step": 1,
+              "head": "注释",
+              "relation": "基于",
+              "tail": "蛋白质和基因",
+              "claim": "基因注释方法依赖蛋白质和基因的特征识别"
+            },
+            {
+              "step": 2,
+              "head": "蛋白质和基因",
+              "relation": "存在于",
+              "tail": "核基因组",
+              "claim": "蛋白质编码基因在核基因组中提供同源序列参考"
+            },
+            {
+              "step": 3,
+              "head": "核基因组",
+              "relation": "产生干扰",
+              "tail": "核插入线粒体序列",
+              "claim": "核基因组数据中的插入序列干扰线粒体基因组组装"
+            }
+          ]
+        ],
+        "三级": [
+          [
+            {
+              "step": 1,
+              "head": "高保真测序读段",
+              "relation": "应用于",
+              "tail": "流程",
+              "claim": "高保真测序读段 应用于 流程"
+            },
+            {
+              "step": 2,
+              "head": "流程",
+              "relation": "组装",
+              "tail": "线粒体基因组",
+              "claim": "流程 组装 线粒体基因组"
+            },
+            {
+              "step": 3,
+              "head": "线粒体基因组",
+              "relation": "执行基因注释",
+              "tail": "蛋白质和基因",
+              "claim": "线粒体基因组 执行基因注释 蛋白质和基因"
+            }
+          ],
+          [
+            {
+              "step": 1,
+              "head": "核插入线粒体序列",
+              "relation": "识别",
+              "tail": "流程",
+              "claim": "核插入线粒体序列 识别 流程"
+            },
+            {
+              "step": 2,
+              "head": "流程",
+              "relation": "排除干扰",
+              "tail": "线粒体基因组",
+              "claim": "流程 排除干扰 线粒体基因组"
+            },
+            {
+              "step": 3,
+              "head": "线粒体基因组",
+              "relation": "保障数据完整性",
+              "tail": "核基因组",
+              "claim": "线粒体基因组 保障数据完整性 核基因组"
+            }
+          ]
+        ],
+        "一级总结": [
+          "主学科软件工具在基因组组装中面临核插入干扰问题，需生物学辅学科识别排除核插入序列，从而提升组装准确性",
+          "主学科软件流程通过适配高保真测序技术特性，结合生物学基因注释方法，实现线粒体基因组的完整组装与功能解析"
+        ],
+        "二级总结": [
+          "通过流程处理高保真测序读段，利用其长读长特性驱动线粒体基因组组装，并集成至实现自动化分析",
+          "基于蛋白质基因特征的注释方法结合核基因组同源序列，识别并排除核插入线粒体序列干扰"
+        ],
+        "三级总结": [
+          "通过高保真测序读段的应用流程实现线粒体基因组组装，并在组装完成后对蛋白质和基因进行注释，形成完整的分析闭环",
+          "通过流程识别核插入线粒体序列并排除其对线粒体基因组的干扰，最终保障核基因组数据的完整性"
+        ]
+      },
+      "graph": {
+        "nodes": [
+          {
+            "id": "MitoHiFi",
+            "term": "MitoHiFi",
+            "normalized": "MitoHiFi",
+            "discipline": "计算机科学技术",
+            "evidence": "MitoHiFi was developed within the Darwin Tree of Life Project",
+            "source": "abstract",
+            "confidence": 0.95
+          },
+          {
+            "id": "流程",
+            "term": "python pipeline",
+            "normalized": "流程",
+            "discipline": "计算机科学技术",
+            "evidence": "a python pipeline for mitochondrial genome assembly",
+            "source": "title",
+            "confidence": 0.9
+          },
+          {
+            "id": "容器",
+            "term": "Docker container",
+            "normalized": "容器",
+            "discipline": "计算机科学技术",
+            "evidence": "available as a Docker container on GitHub",
+            "source": "abstract",
+            "confidence": 0.85
+          },
+          {
+            "id": "GitHub",
+            "term": "GitHub",
+            "normalized": "GitHub",
+            "discipline": "计算机科学技术",
+            "evidence": "freely available on GitHub",
+            "source": "abstract",
+            "confidence": 0.8
+          },
+          {
+            "id": "格式文件",
+            "term": "fasta file",
+            "normalized": "格式文件",
+            "discipline": "计算机科学技术",
+            "evidence": "outputs a mitochondrial genome sequence fasta file",
+            "source": "abstract",
+            "confidence": 0.85
+          },
+          {
+            "id": "注释",
+            "term": "annotation",
+            "normalized": "注释",
+            "discipline": "计算机科学技术",
+            "evidence": "annotation of protein and RNA genes",
+            "source": "abstract",
+            "confidence": 0.8
+          },
+          {
+            "id": "线粒体基因组",
+            "term": "mitochondrial genome",
+            "normalized": "线粒体基因组",
+            "discipline": "生物学",
+            "evidence": "mitochondrial genome assembly",
+            "source": "title",
+            "confidence": 0.95
+          },
+          {
+            "id": "高保真测序读段",
+            "term": "PacBio high fidelity (HiFi) sequencing reads",
+            "normalized": "高保真测序读段",
+            "discipline": "生物学",
+            "evidence": "PacBio high fidelity (HiFi) sequencing reads are both long (15–20 kb) and highly accurate",
+            "source": "abstract",
+            "confidence": 0.9
+          },
+          {
+            "id": "核基因组",
+            "term": "nuclear genome",
+            "normalized": "核基因组",
+            "discipline": "生物学",
+            "evidence": "the nuclear genome is sequenced alongside the mitochondrial genome",
+            "source": "abstract",
+            "confidence": 0.85
+          },
+          {
+            "id": "异质性",
+            "term": "heteroplasmy",
+            "normalized": "异质性",
+            "discipline": "生物学",
+            "evidence": "Variants arising from heteroplasmy are assembled independently",
+            "source": "abstract",
+            "confidence": 0.8
+          },
+          {
+            "id": "核插入线粒体序列",
+            "term": "nuclear insertions of mitochondrial sequences",
+            "normalized": "核插入线粒体序列",
+            "discipline": "生物学",
+            "evidence": "nuclear insertions of mitochondrial sequences are identified",
+            "source": "abstract",
+            "confidence": 0.85
+          },
+          {
+            "id": "蛋白质和基因",
+            "term": "protein and RNA genes",
+            "normalized": "蛋白质和基因",
+            "discipline": "生物学",
+            "evidence": "annotation of protein and RNA genes",
+            "source": "abstract",
+            "confidence": 0.8
+          },
+          {
+            "id": "后生动物",
+            "term": "Metazoa",
+            "normalized": "后生动物",
+            "discipline": "生物学",
+            "evidence": "368 Metazoa and 6 Fungi species",
+            "source": "abstract",
+            "confidence": 0.75
+          },
+          {
+            "id": "真菌",
+            "term": "Fungi",
+            "normalized": "真菌",
+            "discipline": "生物学",
+            "evidence": "6 Fungi species",
+            "source": "abstract",
+            "confidence": 0.75
+          },
+          {
+            "id": "重复序列",
+            "term": "repeats",
+            "normalized": "重复序列",
+            "discipline": "生物学",
+            "evidence": "widespread presence of previously unreported repeats",
+            "source": "abstract",
+            "confidence": 0.8
+          },
+          {
+            "id": "线粒体基因组组装",
+            "term": "线粒体基因组组装",
+            "normalized": "线粒体基因组组装",
+            "discipline": "struct_relation_inferred",
+            "evidence": "",
+            "source": "struct_relation_inferred",
+            "confidence": 0.8
+          }
+        ],
+        "edges": [
+          {
+            "source": "MitoHiFi",
+            "target": "线粒体基因组",
+            "relation": "用于组装",
+            "relation_type": "method_applied_to",
+            "metadata": {
+              "evidence": "MitoHiFi was developed [...] to assemble mitochondrial genomes",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "流程",
+            "target": "高保真测序读段",
+            "relation": "应用于",
+            "relation_type": "method_applied_to",
+            "metadata": {
+              "evidence": "assemble mitochondrial genomes from the HiFi reads",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "MitoHiFi",
+            "target": "格式文件",
+            "relation": "输出",
+            "relation_type": "maps_to",
+            "metadata": {
+              "evidence": "outputs a mitochondrial genome sequence fasta file",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "MitoHiFi",
+            "target": "注释",
+            "relation": "执行基因注释",
+            "relation_type": "method_applied_to",
+            "metadata": {
+              "evidence": "annotation of protein and RNA genes",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "容器",
+            "target": "MitoHiFi",
+            "relation": "依赖于",
+            "relation_type": "depends_on",
+            "metadata": {
+              "evidence": "available with its dependencies as a Docker container",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "高保真测序读段",
+            "target": "线粒体基因组",
+            "relation": "驱动组装",
+            "relation_type": "driven_by",
+            "metadata": {
+              "evidence": "revolutionised genome assembly leading to more accurate and contiguous genomes",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "核插入线粒体序列",
+            "target": "线粒体基因组组装",
+            "relation": "排除干扰",
+            "relation_type": "constrains",
+            "metadata": {
+              "evidence": "nuclear insertions [...] are identified and not used in organellar genome assembly",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "GitHub",
+            "target": "MitoHiFi",
+            "relation": "托管",
+            "relation_type": "generalizes",
+            "metadata": {
+              "evidence": "freely available on GitHub",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "MitoHiFi",
+            "target": "线粒体基因组",
+            "relation": "用于组装",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "通过自动化流程实现线粒体基因组的高效组装",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "线粒体基因组",
+            "target": "高保真测序读段",
+            "relation": "驱动组装",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "高保真测序读段的长片段特性保障了线粒体基因组组装的连续性",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "高保真测序读段",
+            "target": "核插入线粒体序列",
+            "relation": "排除干扰",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "生物学辅学科的核插入序列识别机制有效避免了基因组组装的污染风险",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "流程",
+            "target": "高保真测序读段",
+            "relation": "应用于",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "软件流程通过参数优化适配高保真测序数据特征",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "高保真测序读段",
+            "target": "线粒体基因组",
+            "relation": "驱动组装",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "测序技术的准确性提升直接转化为基因组组装质量的改善",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "线粒体基因组",
+            "target": "注释",
+            "relation": "执行基因注释",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "生物学知识库支持线粒体基因组的蛋白质和基因精准注释",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "流程",
+            "target": "高保真测序读段",
+            "relation": "应用于",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "流程处理高保真测序读段以优化数据输入",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "高保真测序读段",
+            "target": "线粒体基因组",
+            "relation": "驱动组装",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "高保真测序读段的长读长和准确性提升组装连续性和正确率",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "线粒体基因组",
+            "target": "GitHub",
+            "relation": "被集成于",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "集成线粒体基因组组装结果以实现自动化分析",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "注释",
+            "target": "蛋白质和基因",
+            "relation": "基于",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "基因注释方法依赖蛋白质和基因的特征识别",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "蛋白质和基因",
+            "target": "核基因组",
+            "relation": "存在于",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "蛋白质编码基因在核基因组中提供同源序列参考",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "核基因组",
+            "target": "核插入线粒体序列",
+            "relation": "产生干扰",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "核基因组数据中的插入序列干扰线粒体基因组组装",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "高保真测序读段",
+            "target": "流程",
+            "relation": "应用于",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "高保真测序读段 应用于 流程",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "流程",
+            "target": "线粒体基因组",
+            "relation": "组装",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "流程 组装 线粒体基因组",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "线粒体基因组",
+            "target": "蛋白质和基因",
+            "relation": "执行基因注释",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "线粒体基因组 执行基因注释 蛋白质和基因",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "核插入线粒体序列",
+            "target": "流程",
+            "relation": "识别",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "核插入线粒体序列 识别 流程",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "流程",
+            "target": "线粒体基因组",
+            "relation": "排除干扰",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "流程 排除干扰 线粒体基因组",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "线粒体基因组",
+            "target": "核基因组",
+            "relation": "保障数据完整性",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "线粒体基因组 保障数据完整性 核基因组",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          }
+        ]
+      },
+      "metrics": {
+        "path_consistency": 0.2777777777777778,
+        "coverage": 0.5625,
+        "bridging_score": 0.48,
+        "rao_stirling_diversity": 0.1337,
+        "embedding_bridging": 0.5593,
+        "consistency_precision": 0.0,
+        "consistency_recall": 0.0,
+        "consistency_f1": 0.0,
+        "info_novelty": 0.0,
+        "chain_coherence": 0.8004,
+        "atypical_combination": 0.6274,
+        "kg_density": 0.0833,
+        "kg_inverse_modularity": 0.9275,
+        "kg_largest_cc_ratio": 0.75,
+        "kg_avg_betweenness": 0.0458,
+        "kg_clustering_coefficient": 0.2878,
+        "concept_recall": 0.0,
+        "concept_precision": 0.0,
+        "concept_f1": 0.0,
+        "relation_precision": 0.0,
+        "relation_type_accuracy": 0.0,
+        "evidence_coverage": 0.0,
+        "path_alignment_best": 0.0,
+        "path_alignment_mean": 0.0
+      }
+    },
+    "raw": "/* stage1: struct */\n/* concepts round1 */\n{\n  \"meta\": {\n    \"title\": \"MitoHiFi: a python pipeline for mitochondrial genome assembly from PacBio high fidelity reads\",\n    \"primary\": \"计算机科学技术\",\n    \"secondary_list\": [\"生物学\"]\n  },\n  \"概念\": {\n    \"主学科\": [\n      {\n        \"term\": \"MitoHiFi\",\n        \"normalized\": \"MitoHiFi\",\n        \"std_label\": \"软件工具\",\n        \"evidence\": \"MitoHiFi was developed within the Darwin Tree of Life Project\",\n        \"source\": \"abstract\",\n        \"confidence\": 0.95\n      },\n      {\n        \"term\": \"python pipeline\",\n        \"normalized\": \"Python流程\",\n        \"std_label\": \"软件框架\",\n        \"evidence\": \"a python pipeline for mitochondrial genome assembly\",\n        \"source\": \"title\",\n        \"confidence\": 0.9\n      },\n      {\n        \"term\": \"Docker container\",\n        \"normalized\": \"Docker容器\",\n        \"std_label\": \"部署工具\",\n        \"evidence\": \"available as a Docker container on GitHub\",\n        \"source\": \"abstract\",\n        \"confidence\": 0.85\n      },\n      {\n        \"term\": \"GitHub\",\n        \"normalized\": \"GitHub\",\n        \"std_label\": \"代码托管平台\",\n        \"evidence\": \"freely available on GitHub\",\n        \"source\": \"abstract\",\n        \"confidence\": 0.8\n      },\n      {\n        \"term\": \"fasta file\",\n        \"normalized\": \"FASTA格式文件\",\n        \"std_label\": \"数据格式\",\n        \"evidence\": \"outputs a mitochondrial genome sequence fasta file\",\n        \"source\": \"abstract\",\n        \"confidence\": 0.85\n      },\n      {\n        \"term\": \"annotation\",\n        \"normalized\": \"注释\",\n        \"std_label\": \"数据标注\",\n        \"evidence\": \"annotation of protein and RNA genes\",\n        \"source\": \"abstract\",\n        \"confidence\": 0.8\n      }\n    ],\n    \"辅学科\": {\n      \"生物学\": [\n        {\n          \"term\": \"mitochondrial genome\",\n          \"normalized\": \"线粒体基因组\",\n          \"std_label\": \"基因组\",\n          \"evidence\": \"mitochondrial genome assembly\",\n          \"source\": \"title\",\n          \"confidence\": 0.95\n        },\n        {\n          \"term\": \"PacBio high fidelity (HiFi) sequencing reads\",\n          \"normalized\": \"PacBio高保真测序读段\",\n          \"std_label\": \"测序技术\",\n          \"evidence\": \"PacBio high fidelity (HiFi) sequencing reads are both long (15–20 kb) and highly accurate\",\n          \"source\": \"abstract\",\n          \"confidence\": 0.9\n        },\n        {\n          \"term\": \"nuclear genome\",\n          \"normalized\": \"核基因组\",\n          \"std_label\": \"基因组\",\n          \"evidence\": \"the nuclear genome is sequenced alongside the mitochondrial genome\",\n          \"source\": \"abstract\",\n          \"confidence\": 0.85\n        },\n        {\n          \"term\": \"heteroplasmy\",\n          \"normalized\": \"异质性\",\n          \"std_label\": \"生物学现象\",\n          \"evidence\": \"Variants arising from heteroplasmy are assembled independently\",\n          \"source\": \"abstract\",\n          \"confidence\": 0.8\n        },\n        {\n          \"term\": \"nuclear insertions of mitochondrial sequences\",\n          \"normalized\": \"核插入线粒体序列\",\n          \"std_label\": \"基因组事件\",\n          \"evidence\": \"nuclear insertions of mitochondrial sequences are identified\",\n          \"source\": \"abstract\",\n          \"confidence\": 0.85\n        },\n        {\n          \"term\": \"protein and RNA genes\",\n          \"normalized\": \"蛋白质和RNA基因\",\n          \"std_label\": \"基因类型\",\n          \"evidence\": \"annotation of protein and RNA genes\",\n          \"source\": \"abstract\",\n          \"confidence\": 0.8\n        },\n        {\n          \"term\": \"Metazoa\",\n          \"normalized\": \"后生动物\",\n          \"std_label\": \"生物分类\",\n          \"evidence\": \"368 Metazoa and 6 Fungi species\",\n          \"source\": \"abstract\",\n          \"confidence\": 0.75\n        },\n        {\n          \"term\": \"Fungi\",\n          \"normalized\": \"真菌\",\n          \"std_label\": \"生物分类\",\n          \"evidence\": \"6 Fungi species\",\n          \"source\": \"abstract\",\n          \"confidence\": 0.75\n        },\n        {\n          \"term\": \"repeats\",\n          \"normalized\": \"重复序列\",\n          \"std_label\": \"基因组特征\",\n          \"evidence\": \"widespread presence of previously unreported repeats\",\n          \"source\": \"abstract\",\n          \"confidence\": 0.8\n        }\n      ]\n    }\n  }\n}\n\n/* concepts round2 (supplement) */\n{\"补充概念\": {\"主学科\": [], \"辅学科\": {\"生物学\": [\"Q20\", \"contigs\", \"organellar genome\", \"reference sequence\"]}}}\n\n/* relations */\n{\n  \"跨学科关系\": [\n    {\n      \"head\": \"MitoHiFi\",\n      \"tail\": \"线粒体基因组\",\n      \"relation\": \"用于组装\",\n      \"relation_type\": \"method_applied_to\",\n      \"direction\": \"->\",\n      \"evidence\": \"MitoHiFi was developed [...] to assemble mitochondrial genomes\",\n      \"source\": \"abstract\",\n      \"confidence\": 0.95\n    },\n    {\n      \"head\": \"流程\",\n      \"tail\": \"高保真测序读段\",\n      \"relation\": \"应用于\",\n      \"relation_type\": \"method_applied_to\",\n      \"direction\": \"->\",\n      \"evidence\": \"assemble mitochondrial genomes from the HiFi reads\",\n      \"source\": \"abstract\",\n      \"confidence\": 0.9\n    },\n    {\n      \"head\": \"MitoHiFi\",\n      \"tail\": \"格式文件\",\n      \"relation\": \"输出\",\n      \"relation_type\": \"maps_to\",\n      \"direction\": \"->\",\n      \"evidence\": \"outputs a mitochondrial genome sequence fasta file\",\n      \"source\": \"abstract\",\n      \"confidence\": 0.85\n    },\n    {\n      \"head\": \"MitoHiFi\",\n      \"tail\": \"注释\",\n      \"relation\": \"执行基因注释\",\n      \"relation_type\": \"method_applied_to\",\n      \"direction\": \"->\",\n      \"evidence\": \"annotation of protein and RNA genes\",\n      \"source\": \"abstract\",\n      \"confidence\": 0.8\n    },\n    {\n      \"head\": \"容器\",\n      \"tail\": \"MitoHiFi\",\n      \"relation\": \"依赖于\",\n      \"relation_type\": \"depends_on\",\n      \"direction\": \"->\",\n      \"evidence\": \"available with its dependencies as a Docker container\",\n      \"source\": \"abstract\",\n      \"confidence\": 0.85\n    },\n    {\n      \"head\": \"高保真测序读段\",\n      \"tail\": \"线粒体基因组\",\n      \"relation\": \"驱动组装\",\n      \"relation_type\": \"driven_by\",\n      \"direction\": \"->\",\n      \"evidence\": \"revolutionised genome assembly leading to more accurate and contiguous genomes\",\n      \"source\": \"abstract\",\n      \"confidence\": 0.9\n    },\n    {\n      \"head\": \"核插入线粒体序列\",\n      \"tail\": \"线粒体基因组组装\",\n      \"relation\": \"排除干扰\",\n      \"relation_type\": \"constrains\",\n      \"direction\": \"->\",\n      \"evidence\": \"nuclear insertions [...] are identified and not used in organellar genome assembly\",\n      \"source\": \"abstract\",\n      \"confidence\": 0.85\n    },\n    {\n      \"head\": \"GitHub\",\n      \"tail\": \"MitoHiFi\",\n      \"relation\": \"托管\",\n      \"relation_type\": \"generalizes\",\n      \"direction\": \"->\",\n      \"evidence\": \"freely available on GitHub\",\n      \"source\": \"abstract\",\n      \"confidence\": 0.8\n    }\n  ]\n}\n\n/* stage2: query */\n{\n  \"按辅助学科分类\": {\n    \"生物学\": {\n      \"概念\": [\n        \"线粒体基因组\",\n        \"高保真测序读段\",\n        \"核基因组\",\n        \"异质性\",\n        \"核插入线粒体序列\",\n        \"蛋白质和基因\",\n        \"后生动物\",\n        \"真菌\",\n        \"重复序列\"\n      ],\n      \"关系\": [0, 1, 5, 6],\n      \"rationale\": \"提供线粒体基因组数据资源与高通量测序技术支撑，实现基因组组装的精准建模\"\n    }\n  },\n  \"查询\": {\n    \"一级\": \"MitoHiFi软件工具在基因组组装中的核心优势是什么？\",\n    \"二级\": [\n      \"如何结合高保真测序技术提升线粒体基因组组装准确性？\",\n      \"基因注释方法如何与核基因组数据协同优化组装结果？\"\n    ],\n    \"三级\": [\n      \"MitoHiFi如何整合高保真测序技术与基因注释方法实现线粒体基因组的高效组装与分析？\",\n      \"基于核插入线粒体序列识别的组装排除机制与软件流程如何协同保障基因组数据完整性？\"\n    ]\n  }\n}\n\n/* stage3: hypothesis L1 */\n{\n  \"假设\": {\n    \"一级\": [\n      [\n        {\n          \"step\": 1,\n          \"head\": \"MitoHiFi\",\n          \"relation\": \"用于组装\",\n          \"tail\": \"线粒体基因组\",\n          \"claim\": \"MitoHiFi通过自动化流程实现线粒体基因组的高效组装\"\n        },\n        {\n          \"step\": 2,\n          \"head\": \"线粒体基因组\",\n          \"relation\": \"驱动组装\",\n          \"tail\": \"高保真测序读段\",\n          \"claim\": \"高保真测序读段的长片段特性保障了线粒体基因组组装的连续性\"\n        },\n        {\n          \"step\": 3,\n          \"head\": \"高保真测序读段\",\n          \"relation\": \"排除干扰\",\n          \"tail\": \"核插入线粒体序列\",\n          \"claim\": \"生物学辅学科的核插入序列识别机制有效避免了基因组组装的污染风险\"\n        }\n      ],\n      [\n        {\n          \"step\": 1,\n          \"head\": \"流程\",\n          \"relation\": \"应用于\",\n          \"tail\": \"高保真测序读段\",\n          \"claim\": \"软件流程通过参数优化适配高保真测序数据特征\"\n        },\n        {\n          \"step\": 2,\n          \"head\": \"高保真测序读段\",\n          \"relation\": \"驱动组装\",\n          \"tail\": \"线粒体基因组\",\n          \"claim\": \"测序技术的准确性提升直接转化为基因组组装质量的改善\"\n        },\n        {\n          \"step\": 3,\n          \"head\": \"线粒体基因组\",\n          \"relation\": \"执行基因注释\",\n          \"tail\": \"注释\",\n          \"claim\": \"生物学知识库支持线粒体基因组的蛋白质和RNA基因精准注释\"\n        }\n      ]\n    ],\n    \"一级总结\": [\n      \"主学科软件工具在基因组组装中面临核插入干扰问题，需生物学辅学科识别排除核插入序列，从而提升组装准确性\",\n      \"主学科软件流程通过适配高保真测序技术特性，结合生物学基因注释方法，实现线粒体基因组的完整组装与功能解析\"\n    ]\n  }\n}\n\n/* stage3: hypothesis L2 */\n{\n  \"假设\": {\n    \"二级\": [\n      [\n        {\n          \"step\": 1,\n          \"head\": \"流程\",\n          \"tail\": \"高保真测序读段\",\n          \"relation\": \"应用于\",\n          \"claim\": \"流程处理高保真测序读段以优化数据输入\"\n        },\n        {\n          \"step\": 2,\n          \"head\": \"高保真测序读段\",\n          \"tail\": \"线粒体基因组\",\n          \"relation\": \"驱动组装\",\n          \"claim\": \"高保真测序读段的长读长和准确性提升组装连续性和正确率\"\n        },\n        {\n          \"step\": 3,\n          \"head\": \"线粒体基因组\",\n          \"tail\": \"MitoHiFi\",\n          \"relation\": \"被集成于\",\n          \"claim\": \"MitoHiFi集成线粒体基因组组装结果以实现自动化分析\"\n        }\n      ],\n      [\n        {\n          \"step\": 1,\n          \"head\": \"注释\",\n          \"tail\": \"蛋白质和基因\",\n          \"relation\": \"基于\",\n          \"claim\": \"基因注释方法依赖蛋白质和RNA基因的特征识别\"\n        },\n        {\n          \"step\": 2,\n          \"head\": \"蛋白质和基因\",\n          \"tail\": \"核基因组\",\n          \"relation\": \"存在于\",\n          \"claim\": \"蛋白质编码基因在核基因组中提供同源序列参考\"\n        },\n        {\n          \"step\": 3,\n          \"head\": \"核基因组\",\n          \"tail\": \"核插入线粒体序列\",\n          \"relation\": \"产生干扰\",\n          \"claim\": \"核基因组数据中的插入序列干扰线粒体基因组组装\"\n        }\n      ]\n    ],\n    \"二级总结\": [\n      \"通过流程处理高保真测序读段，利用其长读长特性驱动线粒体基因组组装，并集成至MitoHiFi实现自动化分析\",\n      \"基于蛋白质基因特征的注释方法结合核基因组同源序列，识别并排除核插入线粒体序列干扰\"\n    ]\n  }\n}\n\n/* stage3: hypothesis L3 */\n{\n  \"假设\": {\n    \"三级\": [\n      [\n        {\"step\":1, \"head\":\"高保真测序读段\", \"relation\":\"应用于\", \"tail\":\"流程\"},\n        {\"step\":2, \"head\":\"流程\", \"relation\":\"组装\", \"tail\":\"线粒体基因组\"},\n        {\"step\":3, \"head\":\"线粒体基因组\", \"relation\":\"执行基因注释\", \"tail\":\"蛋白质和基因\"}\n      ],\n      [\n        {\"step\":1, \"head\":\"核插入线粒体序列\", \"relation\":\"识别\", \"tail\":\"流程\"},\n        {\"step\":2, \"head\":\"流程\", \"relation\":\"排除干扰\", \"tail\":\"线粒体基因组\"},\n        {\"step\":3, \"head\":\"线粒体基因组\", \"relation\":\"保障数据完整性\", \"tail\":\"核基因组\"}\n      ]\n    ],\n    \"三级总结\": [\n      \"通过高保真测序读段的应用流程实现线粒体基因组组装，并在组装完成后对蛋白质和基因进行注释，形成完整的分析闭环\",\n      \"通过流程识别核插入线粒体序列并排除其对线粒体基因组的干扰，最终保障核基因组数据的完整性\"\n    ]\n  }\n}",
+    "ok": true,
+    "error": ""
+  },
+  {
+    "title": "De novo design of protein structure and function with RFdiffusion",
+    "abstract": "Abstract There has been considerable recent progress in designing new proteins using deep-learning methods 1–9 . Despite this progress, a general deep-learning framework for protein design that enables solution of a wide range of design challenges, including de novo binder design and design of higher-order symmetric architectures, has yet to be described. Diffusion models 10,11 have had considerable success in image and language generative modelling but limited success when applied to protein modelling, probably due to the complexity of protein backbone geometry and sequence–structure relationships. Here we show that by fine-tuning the RoseTTAFold structure prediction network on protein structure denoising tasks, we obtain a generative model of protein backbones that achieves outstanding performance on unconditional and topology-constrained protein monomer design, protein binder design, symmetric oligomer design, enzyme active site scaffolding and symmetric motif scaffolding for therapeutic and metal-binding protein design. We demonstrate the power and generality of the method, called RoseTTAFold diffusion (RFdiffusion), by experimentally characterizing the structures and functions of hundreds of designed symmetric assemblies, metal-binding proteins and protein binders. The accuracy of RFdiffusion is confirmed by the cryogenic electron microscopy structure of a designed binder in complex with influenza haemagglutinin that is nearly identical to the design model. In a manner analogous to networks that produce images from user-specified inputs, RFdiffusion enables the design of diverse functional proteins from simple molecular specifications.",
+    "pdf_url": "https://doi.org/10.1038/s41586-023-06415-8",
+    "primary": "计算机科学技术",
+    "secondary": "生物学",
+    "secondary_list": [
+      "生物学"
+    ],
+    "introduction": "De novo design of protein structure and \nfunction with RFdiffusion\n\nhttps://doi.org/10.1038/s41586-023-06415-8\n\nReceived: 14 December 2022\n\nAccepted: 7 July 2023\n\nPublished online: 11 July 2023\n\nOpen access\n\n Check for updates\n\nJoseph L. Watson1,2,15, David Juergens1,2,3,15, Nathaniel R. Bennett1,2,3,15, Brian L. Trippe2,4,5,15, \nJason Yim2,6,15, Helen E. Eisenach1,2,15, Woody Ahern1,2,7,15, Andrew J. Borst1,2, Robert J. Ragotte1,2, \nLukas F. Milles1,2, Basile I. M. Wicky1,2, Nikita Hanikel1,2, Samuel J. Pellock1,2, Alexis Courbet1,2,8, \nWilliam Sheffler1,2, Jue Wang1,2, Preetham Venkatesh1,2,9, Isaac Sappington1,2,9, \nSusana Vázquez Torres1,2,9, Anna Lauko1,2,9, Valentin De Bortoli8, Emile Mathieu10, \nSergey Ovchinnikov11,12, Regina Barzilay6, Tommi S. Jaakkola6, Frank DiMaio1,2, Minkyung Baek13 \n& David Baker1,2,14 ✉\n\nThere has been considerable recent progress in designing new proteins using deep- \nlearning methods1–9. Despite this progress, a general deep-learning framework for \nprotein design that enables solution of a wide range of design challenges, including \nde novo binder design and design of higher-order symmetric architectures, has yet to \nbe described. Diffusion models10,11 have had considerable success in image and \nlanguage generative modelling but limited success when applied to protein modelling, \nprobably due to the complexity of protein backbone geometry and sequence–structure \nrelationships. Here we show that by fine-tuning the RoseTTAFold structure prediction \nnetwork on protein structure denoising tasks, we obtain a generative model of protein \nbackbones that achieves outstanding performance on unconditional and topology- \nconstrained protein monomer design, protein binder design, symmetric oligomer \ndesign, enzyme active site scaffolding and symmetric motif scaffolding for therapeutic \nand metal-binding protein design. We demonstrate the power and generality of the \nmethod, called RoseTTAFold diffusion (RFdiffusion), by experimentally characterizing \nthe structures and functions of hundreds of designed symmetric assemblies, metal- \nbinding proteins and protein binders. The accuracy of RFdiffusion is confirmed by the \ncryogenic electron microscopy structure of a designed binder in complex with influenza \nhaemagglutinin that is nearly identical to the design model. In a manner analogous to \nnetworks that produce images from user-specified inputs, RFdiffusion enables the \ndesign of diverse functional proteins from simple molecular specifications.\n\nDe novo protein design seeks to generate proteins with specified \nstructural and/or functional properties, for example, making a bind-\ning interaction with a given target12, folding into a particular topology13 \nor containing a catalytic site4. Denoising diffusion probabilistic models \n(DDPMs), a powerful class of machine learning models recently dem-\nonstrated to generate new photorealistic images in response to text \nprompts14,15, have several properties well suited to protein design. First, \nDDPMs generate highly diverse outputs, as they are trained to denoise \ndata (for instance, images or text) that have been corrupted with Gauss-\nian noise. By learning to stochastically reverse this corruption, diverse \noutputs closely resembling the training data are generated. Second, \nDDPMs can be guided at each step of the iterative generation process \ntowards specific design objectives through provision of conditioning \n\ninformation. Third, for almost all protein design applications it is neces-\nsary to explicitly model three-dimensional (3D) structures; rotation-\nally equivariant DDPMs can do this in a global representation frame \nindependent manner. Recent work has adapted DDPMs for protein \nmonomer design by conditioning on small protein ‘motifs’5,9 or on sec-\nondary structure and block-adjacency (‘fold’) information8. Although \npromising, these attempts have shown limited success in generating \nsequences that fold to the intended structures in silico5,16, probably due \nto the limited ability of the denoising networks to generate realistic \nprotein backbones, and have not been tested experimentally.\n\nWe reasoned that improved diffusion models for protein design \ncould be developed by taking advantage of the deep understanding of \nprotein structure implicit in powerful structure prediction methods \n\n1Department of Biochemistry, University of Washington, Seattle, WA, USA. 2Institute for Protein Design, University of Washington, Seattle, WA, USA. 3Graduate Program in Molecular \nEngineering, University of Washington, Seattle, WA, USA. 4Columbia University, Department of Statistics, New York, NY, USA. 5Irving Institute for Cancer Dynamics, Columbia University, \nNew York, NY, USA. 6Massachusetts Institute of Technology, Cambridge, MA, USA. 7Paul G. Allen School of Computer Science and Engineering, University of Washington, Seattle, WA, USA. \n8National Centre for Scientific Research, École Normale Supérieure rue d’Ulm, Paris, France. 9Graduate Program in Biological Physics, Structure and Design, University of Washington, Seattle, \nWA, USA. 10Department of Engineering, University of Cambridge, Cambridge, UK. 11Faculty of Applied Sciences, Harvard University, Cambridge, MA, USA. 12John Harvard Distinguished Science \nFellowship, Harvard University, Cambridge, MA, USA. 13School of Biological Sciences, Seoul National University, Seoul, Republic of Korea. 14Howard Hughes Medical Institute, University of \nWashington, Seattle, WA, USA. 15These authors contributed equally: Joseph L. Watson, David Juergens, Nathaniel R. Bennett, Brian L. Trippe, Jason Yim, Helen E. Eisenach, Woody Ahern. \n✉e-mail: dabaker@uw.edu\n\nNature | Vol 620 | 31 August 2023 | 1089\n\nArticle\fsuch as AlphaFold2 (ref. 17) (AF2) and RoseTTAFold18 (RF). RF has prop-\nerties well suited for use in a protein design DDPM (Fig. 1a): it gener-\nates protein structures with high precision, operates on a rigid-frame \nrepresentation of residues with rotational equivariance and has an \nar",
+    "journal": "Nature",
+    "journal_id": "https://openalex.org/S137773608",
+    "issn_l": "0028-0836",
+    "source_type": "journal",
+    "doi": "https://doi.org/10.1038/s41586-023-06415-8",
+    "publication_date": "2023-07-11",
+    "publication_year": 2023,
+    "fwci": 284.07572368,
+    "cited_by_count": 1531,
+    "field": "Protein Structure and Dynamics",
+    "parsed": {
+      "meta": {
+        "title": "De novo design of protein structure and function with RFdiffusion",
+        "primary": "计算机科学技术",
+        "secondary_list": [
+          "生物学"
+        ],
+        "journal": "Nature",
+        "journal_id": "https://openalex.org/S137773608",
+        "issn_l": "0028-0836",
+        "source_type": "journal",
+        "doi": "https://doi.org/10.1038/s41586-023-06415-8",
+        "publication_date": "2023-07-11",
+        "publication_year": 2023,
+        "fwci": 284.07572368,
+        "cited_by_count": 1531,
+        "field": "Protein Structure and Dynamics"
+      },
+      "概念": {
+        "主学科": [
+          {
+            "term": "deep-learning methods",
+            "normalized": "深度学习方法",
+            "std_label": "深度学习",
+            "evidence": "designing new proteins using deep-learning methods",
+            "source": "abstract",
+            "confidence": 0.95
+          },
+          {
+            "term": "diffusion models",
+            "normalized": "扩散模型",
+            "std_label": "扩散模型",
+            "evidence": "Diffusion models have had considerable success",
+            "source": "abstract",
+            "confidence": 0.98
+          },
+          {
+            "term": "RoseTTAFold structure prediction network",
+            "normalized": "结构预测网络",
+            "std_label": "结构预测模型",
+            "evidence": "fine-tuning the RoseTTAFold structure prediction network",
+            "source": "abstract",
+            "confidence": 0.99
+          },
+          {
+            "term": "generative model",
+            "normalized": "生成模型",
+            "std_label": "生成模型",
+            "evidence": "generative model of protein backbones",
+            "source": "abstract",
+            "confidence": 0.97
+          },
+          {
+            "term": "topology-constrained",
+            "normalized": "拓扑约束",
+            "std_label": "拓扑约束",
+            "evidence": "topology-constrained protein monomer design",
+            "source": "abstract",
+            "confidence": 0.93
+          },
+          {
+            "term": "symmetric oligomer design",
+            "normalized": "对称寡聚体设计",
+            "std_label": "结构设计",
+            "evidence": "symmetric oligomer design",
+            "source": "abstract",
+            "confidence": 0.95
+          },
+          {
+            "term": "denoising tasks",
+            "normalized": "去噪任务",
+            "std_label": "去噪处理",
+            "evidence": "protein structure denoising tasks",
+            "source": "abstract",
+            "confidence": 0.92
+          },
+          {
+            "term": "cryogenic electron microscopy",
+            "normalized": "冷冻电子显微镜",
+            "std_label": "成像技术",
+            "evidence": "cryogenic electron microscopy structure",
+            "source": "abstract",
+            "confidence": 0.96
+          },
+          {
+            "term": "Denoising Diffusion Probabilistic Models (DDPMs)",
+            "normalized": "去噪扩散概率模型",
+            "std_label": "扩散模型",
+            "evidence": "Denoising Diffusion Probabilistic Models (DDPMs)",
+            "source": "introduction",
+            "confidence": 0.99
+          },
+          {
+            "term": "rotationally equivariant",
+            "normalized": "旋转等变",
+            "std_label": "数学性质",
+            "evidence": "rotationally equivariant DDPMs",
+            "source": "introduction",
+            "confidence": 0.94
+          },
+          {
+            "term": "AlphaFold2 (AF2)",
+            "normalized": "AlphaFold2",
+            "std_label": "结构预测模型",
+            "evidence": "AlphaFold2 (ref. 17) (AF2)",
+            "source": "introduction",
+            "confidence": 0.98
+          },
+          {
+            "term": "RFdiffusion",
+            "normalized": "RFdiffusion",
+            "std_label": "生成模型",
+            "evidence": "method, called RoseTTAFold diffusion (RFdiffusion)",
+            "source": "abstract",
+            "confidence": 0.99
+          }
+        ],
+        "辅学科": {
+          "生物学": [
+            {
+              "term": "protein design",
+              "normalized": "蛋白质设计",
+              "std_label": "分子设计",
+              "evidence": "general deep-learning framework for protein design",
+              "source": "abstract",
+              "confidence": 0.98
+            },
+            {
+              "term": "de novo binder design",
+              "normalized": "从头结合体设计",
+              "std_label": "分子设计",
+              "evidence": "de novo binder design",
+              "source": "abstract",
+              "confidence": 0.97
+            },
+            {
+              "term": "enzyme active site scaffolding",
+              "normalized": "酶活性位点支架",
+              "std_label": "分子结构",
+              "evidence": "enzyme active site scaffolding",
+              "source": "abstract",
+              "confidence": 0.96
+            },
+            {
+              "term": "metal-binding proteins",
+              "normalized": "金属结合蛋白",
+              "std_label": "蛋白质类型",
+              "evidence": "metal-binding proteins",
+              "source": "abstract",
+              "confidence": 0.95
+            },
+            {
+              "term": "symmetric motif scaffolding",
+              "normalized": "对称基序支架",
+              "std_label": "分子结构",
+              "evidence": "symmetric motif scaffolding",
+              "source": "abstract",
+              "confidence": 0.94
+            },
+            {
+              "term": "influenza haemagglutinin",
+              "normalized": "流感血凝素",
+              "std_label": "蛋白质类型",
+              "evidence": "influenza haemagglutinin",
+              "source": "abstract",
+              "confidence": 0.97
+            },
+            {
+              "term": "protein backbone geometry",
+              "normalized": "蛋白质主链几何",
+              "std_label": "分子结构",
+              "evidence": "complexity of protein backbone geometry",
+              "source": "abstract",
+              "confidence": 0.93
+            },
+            {
+              "term": "sequence-structure relationships",
+              "normalized": "序列-结构关系",
+              "std_label": "生物关系",
+              "evidence": "sequence–structure relationships",
+              "source": "abstract",
+              "confidence": 0.92
+            },
+            {
+              "term": "symmetric assemblies",
+              "normalized": "对称组装体",
+              "std_label": "分子结构",
+              "evidence": "symmetric assemblies",
+              "source": "abstract",
+              "confidence": 0.95
+            },
+            {
+              "term": "catalytic site",
+              "normalized": "催化位点",
+              "std_label": "分子结构",
+              "evidence": "containing a catalytic site",
+              "source": "introduction",
+              "confidence": 0.96
+            },
+            {
+              "term": "3D structures",
+              "normalized": "三维结构",
+              "std_label": "分子结构",
+              "evidence": "explicitly model three-dimensional (3D) structures",
+              "source": "introduction",
+              "confidence": 0.98
+            },
+            {
+              "term": "protein monomer design",
+              "normalized": "蛋白质单体设计",
+              "std_label": "分子设计",
+              "evidence": "protein monomer design",
+              "source": "introduction",
+              "confidence": 0.94
+            }
+          ]
+        }
+      },
+      "跨学科关系": [
+        {
+          "head": "deep-learning methods",
+          "relation": "applied to design proteins",
+          "relation_type": "method_applied_to",
+          "relation_type_norm": "method_applied_to",
+          "relation_type_raw": "method_applied_to",
+          "tail": "protein design",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "designing new proteins using deep-learning methods",
+          "source": "abstract",
+          "confidence": 0.95
+        },
+        {
+          "head": "diffusion models",
+          "relation": "applied to protein modelling with limited success",
+          "relation_type": "method_applied_to",
+          "relation_type_norm": "method_applied_to",
+          "relation_type_raw": "method_applied_to",
+          "tail": "protein design",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "Diffusion models have had considerable success in image and language generative modelling but limited success when applied to protein modelling",
+          "source": "abstract",
+          "confidence": 0.9
+        },
+        {
+          "head": "RoseTTAFold structure prediction network",
+          "relation": "fine-tuned on denoising tasks to achieve outstanding performance",
+          "relation_type": "method_applied_to",
+          "relation_type_norm": "method_applied_to",
+          "relation_type_raw": "method_applied_to",
+          "tail": "protein monomer design",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "by fine-tuning the RoseTTAFold structure prediction network on protein structure denoising tasks, we obtain a generative model of protein backbones that achieves outstanding performance on protein monomer design",
+          "source": "abstract",
+          "confidence": 0.99
+        },
+        {
+          "head": "generative model",
+          "relation": "generates protein backbones for binder design",
+          "relation_type": "method_applied_to",
+          "relation_type_norm": "method_applied_to",
+          "relation_type_raw": "method_applied_to",
+          "tail": "protein binder design",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "generative model of protein backbones that achieves outstanding performance on protein binder design",
+          "source": "abstract",
+          "confidence": 0.97
+        },
+        {
+          "head": "RFdiffusion",
+          "relation": "enables design of symmetric assemblies",
+          "relation_type": "method_applied_to",
+          "relation_type_norm": "method_applied_to",
+          "relation_type_raw": "method_applied_to",
+          "tail": "symmetric assemblies",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "method, called RoseTTAFold diffusion (RFdiffusion), by experimentally characterizing the structures and functions of hundreds of designed symmetric assemblies",
+          "source": "abstract",
+          "confidence": 0.98
+        },
+        {
+          "head": "Denoising Diffusion Probabilistic Models (DDPMs)",
+          "relation": "have properties well suited to protein design",
+          "relation_type": "method_applied_to",
+          "relation_type_norm": "method_applied_to",
+          "relation_type_raw": "method_applied_to",
+          "tail": "protein design",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "Denoising Diffusion Probabilistic Models (DDPMs)... have several properties well suited to protein design",
+          "source": "introduction",
+          "confidence": 0.97
+        },
+        {
+          "head": "topology-constrained",
+          "relation": "constrains the design of protein monomers",
+          "relation_type": "constrains",
+          "relation_type_norm": "constrains",
+          "relation_type_raw": "constrains",
+          "tail": "protein monomer design",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "topology-constrained protein monomer design",
+          "source": "abstract",
+          "confidence": 0.93
+        },
+        {
+          "head": "rotationally equivariant",
+          "relation": "models 3D structures in frame-independent manner",
+          "relation_type": "method_applied_to",
+          "relation_type_norm": "method_applied_to",
+          "relation_type_raw": "method_applied_to",
+          "tail": "3D structures",
+          "direction": "->",
+          "quant": null,
+          "assumptions": [],
+          "evidence": "rotationally equivariant DDPMs can do this in a global representation frame independent manner",
+          "source": "abstract",
+          "confidence": 0.94
+        }
+      ],
+      "按辅助学科分类": {
+        "生物学": {
+          "概念": [
+            "蛋白质设计",
+            "从头结合体设计",
+            "酶活性位点支架",
+            "金属结合蛋白",
+            "对称基序支架",
+            "流感血凝素",
+            "蛋白质主链几何",
+            "序列-结构关系",
+            "对称组装体",
+            "催化位点",
+            "三维结构",
+            "蛋白质单体设计"
+          ],
+          "关系": [
+            0,
+            1,
+            2,
+            4,
+            5,
+            6,
+            7
+          ],
+          "rationale": "提供蛋白质设计的理论基础与实验验证目标"
+        }
+      },
+      "查询": {
+        "一级": "深度学习方法如何突破蛋白质三维结构的生成精度瓶颈",
+        "二级": [
+          "生成模型在拓扑约束条件下如何优化蛋白质主链几何特性",
+          "结构预测网络如何协同对称组装体的几何特征进行参数调优"
+        ],
+        "三级": [
+          "如何通过旋转等变扩散模型耦合序列-结构关系实现金属结合蛋白的从头设计",
+          "冷冻电子显微镜数据如何指导去噪扩散概率模型进行流感血凝素的催化位点重构"
+        ]
+      },
+      "假设": {
+        "一级": [
+          [
+            {
+              "step": 1,
+              "head": "深度学习方法",
+              "relation": "应用于蛋白质设计",
+              "tail": "生成模型",
+              "claim": "深度学习方法通过生成模型实现蛋白质主链几何特性建模"
+            },
+            {
+              "step": 2,
+              "head": "生成模型",
+              "relation": "受拓扑约束影响",
+              "tail": "拓扑约束",
+              "claim": "生成模型在拓扑约束条件下优化蛋白质折叠模式"
+            },
+            {
+              "step": 3,
+              "head": "拓扑约束",
+              "relation": "决定三维结构精度",
+              "tail": "三维结构",
+              "claim": "拓扑约束通过生物学序列-结构关系指导三维结构精确生成"
+            }
+          ]
+        ],
+        "二级": [
+          [
+            {
+              "step": 1,
+              "head": "生成模型",
+              "relation": "在拓扑约束条件下进行结构生成",
+              "tail": "拓扑约束",
+              "claim": "生成模型 在拓扑约束条件下进行结构生成 拓扑约束"
+            },
+            {
+              "step": 2,
+              "head": "拓扑约束",
+              "relation": "限制蛋白质单体设计空间",
+              "tail": "蛋白质单体设计",
+              "claim": "拓扑约束 限制蛋白质单体设计空间 蛋白质单体设计"
+            },
+            {
+              "step": 3,
+              "head": "蛋白质单体设计",
+              "relation": "决定蛋白质主链几何特性",
+              "tail": "蛋白质主链几何",
+              "claim": "蛋白质单体设计 决定蛋白质主链几何特性 蛋白质主链几何"
+            }
+          ],
+          [
+            {
+              "step": 1,
+              "head": "结构预测网络",
+              "relation": "通过去噪任务优化参数",
+              "tail": "去噪任务",
+              "claim": "结构预测网络 通过去噪任务优化参数 去噪任务"
+            },
+            {
+              "step": 2,
+              "head": "去噪任务",
+              "relation": "处理对称组装体几何特征",
+              "tail": "对称组装体",
+              "claim": "去噪任务 处理对称组装体几何特征 对称组装体"
+            },
+            {
+              "step": 3,
+              "head": "对称组装体",
+              "relation": "指导对称寡聚体设计参数",
+              "tail": "对称寡聚体设计",
+              "claim": "对称组装体 指导对称寡聚体设计参数 对称寡聚体设计"
+            }
+          ]
+        ],
+        "三级": [
+          [
+            {
+              "step": 1,
+              "head": "旋转等变",
+              "relation": "旋转等变性质为扩散模型提供空间对称性保障",
+              "tail": "扩散模型",
+              "claim": "旋转等变 旋转等变性质为扩散模型提供空间对称性保障 扩散模型"
+            },
+            {
+              "step": 2,
+              "head": "扩散模型",
+              "relation": "扩散模型通过序列-结构关系建模实现构象空间采样",
+              "tail": "序列-结构关系",
+              "claim": "扩散模型 扩散模型通过序列-结构关系建模实现构象空间采样 序列-结构关系"
+            },
+            {
+              "step": 3,
+              "head": "序列-结构关系",
+              "relation": "序列-结构关系指导金属结合蛋白的从头生成",
+              "tail": "金属结合蛋白",
+              "claim": "序列-结构关系 序列-结构关系指导金属结合蛋白的从头生成 金属结合蛋白"
+            }
+          ],
+          [
+            {
+              "step": 1,
+              "head": "冷冻电子显微镜",
+              "relation": "冷冻电子显微镜提供实验数据约束模型训练",
+              "tail": "去噪扩散概率模型",
+              "claim": "冷冻电子显微镜 冷冻电子显微镜提供实验数据约束模型训练 去噪扩散概率模型"
+            },
+            {
+              "step": 2,
+              "head": "去噪扩散概率模型",
+              "relation": "去噪扩散概率模型重构三维结构特征",
+              "tail": "三维结构",
+              "claim": "去噪扩散概率模型 去噪扩散概率模型重构三维结构特征 三维结构"
+            },
+            {
+              "step": 3,
+              "head": "三维结构",
+              "relation": "三维结构特征指导流感血凝素催化位点设计",
+              "tail": "催化位点",
+              "claim": "三维结构 三维结构特征指导流感血凝素催化位点设计 催化位点"
+            }
+          ]
+        ],
+        "一级总结": [
+          "深度学习方法通过生成模型在拓扑约束下优化蛋白质三维结构生成，需生物学解析序列-结构关系以突破精度瓶颈"
+        ],
+        "二级总结": [
+          "生成模型通过拓扑约束调控蛋白质单体设计，从而优化主链几何特性",
+          "结构预测网络利用去噪任务处理对称组装体几何特征，实现寡聚体设计参数调优"
+        ],
+        "三级总结": [
+          "通过旋转等变扩散模型建立空间对称性约束，结合序列-结构关系建模实现金属结合蛋白的构象生成与优化",
+          "利用冷冻电子显微镜数据训练去噪扩散模型，通过三维结构重构实现流感血凝素催化位点的精准设计"
+        ]
+      },
+      "graph": {
+        "nodes": [
+          {
+            "id": "深度学习方法",
+            "term": "deep-learning methods",
+            "normalized": "深度学习方法",
+            "discipline": "计算机科学技术",
+            "evidence": "designing new proteins using deep-learning methods",
+            "source": "abstract",
+            "confidence": 0.95
+          },
+          {
+            "id": "扩散模型",
+            "term": "diffusion models",
+            "normalized": "扩散模型",
+            "discipline": "计算机科学技术",
+            "evidence": "Diffusion models have had considerable success",
+            "source": "abstract",
+            "confidence": 0.98
+          },
+          {
+            "id": "结构预测网络",
+            "term": "RoseTTAFold structure prediction network",
+            "normalized": "结构预测网络",
+            "discipline": "计算机科学技术",
+            "evidence": "fine-tuning the RoseTTAFold structure prediction network",
+            "source": "abstract",
+            "confidence": 0.99
+          },
+          {
+            "id": "生成模型",
+            "term": "generative model",
+            "normalized": "生成模型",
+            "discipline": "计算机科学技术",
+            "evidence": "generative model of protein backbones",
+            "source": "abstract",
+            "confidence": 0.97
+          },
+          {
+            "id": "拓扑约束",
+            "term": "topology-constrained",
+            "normalized": "拓扑约束",
+            "discipline": "计算机科学技术",
+            "evidence": "topology-constrained protein monomer design",
+            "source": "abstract",
+            "confidence": 0.93
+          },
+          {
+            "id": "对称寡聚体设计",
+            "term": "symmetric oligomer design",
+            "normalized": "对称寡聚体设计",
+            "discipline": "计算机科学技术",
+            "evidence": "symmetric oligomer design",
+            "source": "abstract",
+            "confidence": 0.95
+          },
+          {
+            "id": "去噪任务",
+            "term": "denoising tasks",
+            "normalized": "去噪任务",
+            "discipline": "计算机科学技术",
+            "evidence": "protein structure denoising tasks",
+            "source": "abstract",
+            "confidence": 0.92
+          },
+          {
+            "id": "冷冻电子显微镜",
+            "term": "cryogenic electron microscopy",
+            "normalized": "冷冻电子显微镜",
+            "discipline": "计算机科学技术",
+            "evidence": "cryogenic electron microscopy structure",
+            "source": "abstract",
+            "confidence": 0.96
+          },
+          {
+            "id": "去噪扩散概率模型",
+            "term": "Denoising Diffusion Probabilistic Models (DDPMs)",
+            "normalized": "去噪扩散概率模型",
+            "discipline": "计算机科学技术",
+            "evidence": "Denoising Diffusion Probabilistic Models (DDPMs)",
+            "source": "introduction",
+            "confidence": 0.99
+          },
+          {
+            "id": "旋转等变",
+            "term": "rotationally equivariant",
+            "normalized": "旋转等变",
+            "discipline": "计算机科学技术",
+            "evidence": "rotationally equivariant DDPMs",
+            "source": "introduction",
+            "confidence": 0.94
+          },
+          {
+            "id": "AlphaFold2",
+            "term": "AlphaFold2 (AF2)",
+            "normalized": "AlphaFold2",
+            "discipline": "计算机科学技术",
+            "evidence": "AlphaFold2 (ref. 17) (AF2)",
+            "source": "introduction",
+            "confidence": 0.98
+          },
+          {
+            "id": "RFdiffusion",
+            "term": "RFdiffusion",
+            "normalized": "RFdiffusion",
+            "discipline": "计算机科学技术",
+            "evidence": "method, called RoseTTAFold diffusion (RFdiffusion)",
+            "source": "abstract",
+            "confidence": 0.99
+          },
+          {
+            "id": "蛋白质设计",
+            "term": "protein design",
+            "normalized": "蛋白质设计",
+            "discipline": "生物学",
+            "evidence": "general deep-learning framework for protein design",
+            "source": "abstract",
+            "confidence": 0.98
+          },
+          {
+            "id": "从头结合体设计",
+            "term": "de novo binder design",
+            "normalized": "从头结合体设计",
+            "discipline": "生物学",
+            "evidence": "de novo binder design",
+            "source": "abstract",
+            "confidence": 0.97
+          },
+          {
+            "id": "酶活性位点支架",
+            "term": "enzyme active site scaffolding",
+            "normalized": "酶活性位点支架",
+            "discipline": "生物学",
+            "evidence": "enzyme active site scaffolding",
+            "source": "abstract",
+            "confidence": 0.96
+          },
+          {
+            "id": "金属结合蛋白",
+            "term": "metal-binding proteins",
+            "normalized": "金属结合蛋白",
+            "discipline": "生物学",
+            "evidence": "metal-binding proteins",
+            "source": "abstract",
+            "confidence": 0.95
+          },
+          {
+            "id": "对称基序支架",
+            "term": "symmetric motif scaffolding",
+            "normalized": "对称基序支架",
+            "discipline": "生物学",
+            "evidence": "symmetric motif scaffolding",
+            "source": "abstract",
+            "confidence": 0.94
+          },
+          {
+            "id": "流感血凝素",
+            "term": "influenza haemagglutinin",
+            "normalized": "流感血凝素",
+            "discipline": "生物学",
+            "evidence": "influenza haemagglutinin",
+            "source": "abstract",
+            "confidence": 0.97
+          },
+          {
+            "id": "蛋白质主链几何",
+            "term": "protein backbone geometry",
+            "normalized": "蛋白质主链几何",
+            "discipline": "生物学",
+            "evidence": "complexity of protein backbone geometry",
+            "source": "abstract",
+            "confidence": 0.93
+          },
+          {
+            "id": "序列-结构关系",
+            "term": "sequence-structure relationships",
+            "normalized": "序列-结构关系",
+            "discipline": "生物学",
+            "evidence": "sequence–structure relationships",
+            "source": "abstract",
+            "confidence": 0.92
+          },
+          {
+            "id": "对称组装体",
+            "term": "symmetric assemblies",
+            "normalized": "对称组装体",
+            "discipline": "生物学",
+            "evidence": "symmetric assemblies",
+            "source": "abstract",
+            "confidence": 0.95
+          },
+          {
+            "id": "催化位点",
+            "term": "catalytic site",
+            "normalized": "催化位点",
+            "discipline": "生物学",
+            "evidence": "containing a catalytic site",
+            "source": "introduction",
+            "confidence": 0.96
+          },
+          {
+            "id": "三维结构",
+            "term": "3D structures",
+            "normalized": "三维结构",
+            "discipline": "生物学",
+            "evidence": "explicitly model three-dimensional (3D) structures",
+            "source": "introduction",
+            "confidence": 0.98
+          },
+          {
+            "id": "蛋白质单体设计",
+            "term": "protein monomer design",
+            "normalized": "蛋白质单体设计",
+            "discipline": "生物学",
+            "evidence": "protein monomer design",
+            "source": "introduction",
+            "confidence": 0.94
+          },
+          {
+            "id": "protein binder design",
+            "term": "protein binder design",
+            "normalized": "protein binder design",
+            "discipline": "struct_relation_inferred",
+            "evidence": "",
+            "source": "struct_relation_inferred",
+            "confidence": 0.8
+          }
+        ],
+        "edges": [
+          {
+            "source": "深度学习方法",
+            "target": "蛋白质设计",
+            "relation": "applied to design proteins",
+            "relation_type": "method_applied_to",
+            "metadata": {
+              "evidence": "designing new proteins using deep-learning methods",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "扩散模型",
+            "target": "蛋白质设计",
+            "relation": "applied to protein modelling with limited success",
+            "relation_type": "method_applied_to",
+            "metadata": {
+              "evidence": "Diffusion models have had considerable success in image and language generative modelling but limited success when applied to protein modelling",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "结构预测网络",
+            "target": "蛋白质单体设计",
+            "relation": "fine-tuned on denoising tasks to achieve outstanding performance",
+            "relation_type": "method_applied_to",
+            "metadata": {
+              "evidence": "by fine-tuning the RoseTTAFold structure prediction network on protein structure denoising tasks, we obtain a generative model of protein backbones that achieves outstanding performance on protein monomer design",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "生成模型",
+            "target": "protein binder design",
+            "relation": "generates protein backbones for binder design",
+            "relation_type": "method_applied_to",
+            "metadata": {
+              "evidence": "generative model of protein backbones that achieves outstanding performance on protein binder design",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "RFdiffusion",
+            "target": "对称组装体",
+            "relation": "enables design of symmetric assemblies",
+            "relation_type": "method_applied_to",
+            "metadata": {
+              "evidence": "method, called RoseTTAFold diffusion (RFdiffusion), by experimentally characterizing the structures and functions of hundreds of designed symmetric assemblies",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "去噪扩散概率模型",
+            "target": "蛋白质设计",
+            "relation": "have properties well suited to protein design",
+            "relation_type": "method_applied_to",
+            "metadata": {
+              "evidence": "Denoising Diffusion Probabilistic Models (DDPMs)... have several properties well suited to protein design",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "拓扑约束",
+            "target": "蛋白质单体设计",
+            "relation": "constrains the design of protein monomers",
+            "relation_type": "constrains",
+            "metadata": {
+              "evidence": "topology-constrained protein monomer design",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "旋转等变",
+            "target": "三维结构",
+            "relation": "models 3D structures in frame-independent manner",
+            "relation_type": "method_applied_to",
+            "metadata": {
+              "evidence": "rotationally equivariant DDPMs can do this in a global representation frame independent manner",
+              "source": "struct",
+              "direction": "->"
+            }
+          },
+          {
+            "source": "深度学习方法",
+            "target": "生成模型",
+            "relation": "应用于蛋白质设计",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "深度学习方法通过生成模型实现蛋白质主链几何特性建模",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "生成模型",
+            "target": "拓扑约束",
+            "relation": "受拓扑约束影响",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "生成模型在拓扑约束条件下优化蛋白质折叠模式",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "拓扑约束",
+            "target": "三维结构",
+            "relation": "决定三维结构精度",
+            "relation_type": "H1",
+            "metadata": {
+              "claim": "拓扑约束通过生物学序列-结构关系指导三维结构精确生成",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "生成模型",
+            "target": "拓扑约束",
+            "relation": "在拓扑约束条件下进行结构生成",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "生成模型 在拓扑约束条件下进行结构生成 拓扑约束",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "拓扑约束",
+            "target": "蛋白质单体设计",
+            "relation": "限制蛋白质单体设计空间",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "拓扑约束 限制蛋白质单体设计空间 蛋白质单体设计",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "蛋白质单体设计",
+            "target": "蛋白质主链几何",
+            "relation": "决定蛋白质主链几何特性",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "蛋白质单体设计 决定蛋白质主链几何特性 蛋白质主链几何",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "结构预测网络",
+            "target": "去噪任务",
+            "relation": "通过去噪任务优化参数",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "结构预测网络 通过去噪任务优化参数 去噪任务",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "去噪任务",
+            "target": "对称组装体",
+            "relation": "处理对称组装体几何特征",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "去噪任务 处理对称组装体几何特征 对称组装体",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "对称组装体",
+            "target": "对称寡聚体设计",
+            "relation": "指导对称寡聚体设计参数",
+            "relation_type": "H2",
+            "metadata": {
+              "claim": "对称组装体 指导对称寡聚体设计参数 对称寡聚体设计",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "旋转等变",
+            "target": "扩散模型",
+            "relation": "旋转等变性质为扩散模型提供空间对称性保障",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "旋转等变 旋转等变性质为扩散模型提供空间对称性保障 扩散模型",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "扩散模型",
+            "target": "序列-结构关系",
+            "relation": "扩散模型通过序列-结构关系建模实现构象空间采样",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "扩散模型 扩散模型通过序列-结构关系建模实现构象空间采样 序列-结构关系",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "序列-结构关系",
+            "target": "金属结合蛋白",
+            "relation": "序列-结构关系指导金属结合蛋白的从头生成",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "序列-结构关系 序列-结构关系指导金属结合蛋白的从头生成 金属结合蛋白",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 0
+            }
+          },
+          {
+            "source": "冷冻电子显微镜",
+            "target": "去噪扩散概率模型",
+            "relation": "冷冻电子显微镜提供实验数据约束模型训练",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "冷冻电子显微镜 冷冻电子显微镜提供实验数据约束模型训练 去噪扩散概率模型",
+              "step": 1,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "去噪扩散概率模型",
+            "target": "三维结构",
+            "relation": "去噪扩散概率模型重构三维结构特征",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "去噪扩散概率模型 去噪扩散概率模型重构三维结构特征 三维结构",
+              "step": 2,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          },
+          {
+            "source": "三维结构",
+            "target": "催化位点",
+            "relation": "三维结构特征指导流感血凝素催化位点设计",
+            "relation_type": "H3",
+            "metadata": {
+              "claim": "三维结构 三维结构特征指导流感血凝素催化位点设计 催化位点",
+              "step": 3,
+              "source": "hypothesis",
+              "path_index": 1
+            }
+          }
+        ]
+      },
+      "metrics": {
+        "path_consistency": 0.06666666666666667,
+        "coverage": 0.68,
+        "bridging_score": 0.5909090909090909,
+        "rao_stirling_diversity": 0.16,
+        "embedding_bridging": 0.7823,
+        "consistency_precision": 0.0,
+        "consistency_recall": 0.0,
+        "consistency_f1": 0.0,
+        "info_novelty": 0.0,
+        "chain_coherence": 0.7657,
+        "atypical_combination": 0.5689,
+        "kg_density": 0.035,
+        "kg_inverse_modularity": 1.1032,
+        "kg_largest_cc_ratio": 0.8,
+        "kg_avg_betweenness": 0.0826,
+        "kg_clustering_coefficient": 0.0,
+        "concept_recall": 0.0,
+        "concept_precision": 0.0,
+        "concept_f1": 0.0,
+        "relation_precision": 0.0,
+        "relation_type_accuracy": 0.0,
+        "evidence_coverage": 0.0,
+        "path_alignment_best": 0.0,
+        "path_alignment_mean": 0.0
+      }
+    },
+    "raw": "/* stage1: struct */\n/* concepts round1 */\n{\n  \"meta\": {\n    \"title\": \"De novo design of protein structure and function with RFdiffusion\",\n    \"primary\": \"计算机科学技术\",\n    \"secondary_list\": [\"生物学\"]\n  },\n  \"概念\": {\n    \"主学科\": [\n      {\n        \"term\": \"deep-learning methods\",\n        \"normalized\": \"深度学习方法\",\n        \"std_label\": \"深度学习\",\n        \"evidence\": \"designing new proteins using deep-learning methods\",\n        \"source\": \"abstract\",\n        \"confidence\": 0.95\n      },\n      {\n        \"term\": \"diffusion models\",\n        \"normalized\": \"扩散模型\",\n        \"std_label\": \"扩散模型\",\n        \"evidence\": \"Diffusion models have had considerable success\",\n        \"source\": \"abstract\",\n        \"confidence\": 0.98\n      },\n      {\n        \"term\": \"RoseTTAFold structure prediction network\",\n        \"normalized\": \"RoseTTAFold结构预测网络\",\n        \"std_label\": \"结构预测模型\",\n        \"evidence\": \"fine-tuning the RoseTTAFold structure prediction network\",\n        \"source\": \"abstract\",\n        \"confidence\": 0.99\n      },\n      {\n        \"term\": \"generative model\",\n        \"normalized\": \"生成模型\",\n        \"std_label\": \"生成模型\",\n        \"evidence\": \"generative model of protein backbones\",\n        \"source\": \"abstract\",\n        \"confidence\": 0.97\n      },\n      {\n        \"term\": \"topology-constrained\",\n        \"normalized\": \"拓扑约束\",\n        \"std_label\": \"拓扑约束\",\n        \"evidence\": \"topology-constrained protein monomer design\",\n        \"source\": \"abstract\",\n        \"confidence\": 0.93\n      },\n      {\n        \"term\": \"symmetric oligomer design\",\n        \"normalized\": \"对称寡聚体设计\",\n        \"std_label\": \"结构设计\",\n        \"evidence\": \"symmetric oligomer design\",\n        \"source\": \"abstract\",\n        \"confidence\": 0.95\n      },\n      {\n        \"term\": \"denoising tasks\",\n        \"normalized\": \"去噪任务\",\n        \"std_label\": \"去噪处理\",\n        \"evidence\": \"protein structure denoising tasks\",\n        \"source\": \"abstract\",\n        \"confidence\": 0.92\n      },\n      {\n        \"term\": \"cryogenic electron microscopy\",\n        \"normalized\": \"冷冻电子显微镜\",\n        \"std_label\": \"成像技术\",\n        \"evidence\": \"cryogenic electron microscopy structure\",\n        \"source\": \"abstract\",\n        \"confidence\": 0.96\n      },\n      {\n        \"term\": \"Denoising Diffusion Probabilistic Models (DDPMs)\",\n        \"normalized\": \"去噪扩散概率模型\",\n        \"std_label\": \"扩散模型\",\n        \"evidence\": \"Denoising Diffusion Probabilistic Models (DDPMs)\",\n        \"source\": \"introduction\",\n        \"confidence\": 0.99\n      },\n      {\n        \"term\": \"rotationally equivariant\",\n        \"normalized\": \"旋转等变\",\n        \"std_label\": \"数学性质\",\n        \"evidence\": \"rotationally equivariant DDPMs\",\n        \"source\": \"introduction\",\n        \"confidence\": 0.94\n      },\n      {\n        \"term\": \"AlphaFold2 (AF2)\",\n        \"normalized\": \"AlphaFold2\",\n        \"std_label\": \"结构预测模型\",\n        \"evidence\": \"AlphaFold2 (ref. 17) (AF2)\",\n        \"source\": \"introduction\",\n        \"confidence\": 0.98\n      },\n      {\n        \"term\": \"RFdiffusion\",\n        \"normalized\": \"RFdiffusion\",\n        \"std_label\": \"生成模型\",\n        \"evidence\": \"method, called RoseTTAFold diffusion (RFdiffusion)\",\n        \"source\": \"abstract\",\n        \"confidence\": 0.99\n      }\n    ],\n    \"辅学科\": {\n      \"生物学\": [\n        {\n          \"term\": \"protein design\",\n          \"normalized\": \"蛋白质设计\",\n          \"std_label\": \"分子设计\",\n          \"evidence\": \"general deep-learning framework for protein design\",\n          \"source\": \"abstract\",\n          \"confidence\": 0.98\n        },\n        {\n          \"term\": \"de novo binder design\",\n          \"normalized\": \"从头结合体设计\",\n          \"std_label\": \"分子设计\",\n          \"evidence\": \"de novo binder design\",\n          \"source\": \"abstract\",\n          \"confidence\": 0.97\n        },\n        {\n          \"term\": \"enzyme active site scaffolding\",\n          \"normalized\": \"酶活性位点支架\",\n          \"std_label\": \"分子结构\",\n          \"evidence\": \"enzyme active site scaffolding\",\n          \"source\": \"abstract\",\n          \"confidence\": 0.96\n        },\n        {\n          \"term\": \"metal-binding proteins\",\n          \"normalized\": \"金属结合蛋白\",\n          \"std_label\": \"蛋白质类型\",\n          \"evidence\": \"metal-binding proteins\",\n          \"source\": \"abstract\",\n          \"confidence\": 0.95\n        },\n        {\n          \"term\": \"symmetric motif scaffolding\",\n          \"normalized\": \"对称基序支架\",\n          \"std_label\": \"分子结构\",\n          \"evidence\": \"symmetric motif scaffolding\",\n          \"source\": \"abstract\",\n          \"confidence\": 0.94\n        },\n        {\n          \"term\": \"influenza haemagglutinin\",\n          \"normalized\": \"流感血凝素\",\n          \"std_label\": \"蛋白质类型\",\n          \"evidence\": \"influenza haemagglutinin\",\n          \"source\": \"abstract\",\n          \"confidence\": 0.97\n        },\n        {\n          \"term\": \"protein backbone geometry\",\n          \"normalized\": \"蛋白质主链几何\",\n          \"std_label\": \"分子结构\",\n          \"evidence\": \"complexity of protein backbone geometry\",\n          \"source\": \"abstract\",\n          \"confidence\": 0.93\n        },\n        {\n          \"term\": \"sequence-structure relationships\",\n          \"normalized\": \"序列-结构关系\",\n          \"std_label\": \"生物关系\",\n          \"evidence\": \"sequence–structure relationships\",\n          \"source\": \"abstract\",\n          \"confidence\": 0.92\n        },\n        {\n          \"term\": \"symmetric assemblies\",\n          \"normalized\": \"对称组装体\",\n          \"std_label\": \"分子结构\",\n          \"evidence\": \"symmetric assemblies\",\n          \"source\": \"abstract\",\n          \"confidence\": 0.95\n        },\n        {\n          \"term\": \"catalytic site\",\n          \"normalized\": \"催化位点\",\n          \"std_label\": \"分子结构\",\n          \"evidence\": \"containing a catalytic site\",\n          \"source\": \"introduction\",\n          \"confidence\": 0.96\n        },\n        {\n          \"term\": \"3D structures\",\n          \"normalized\": \"三维结构\",\n          \"std_label\": \"分子结构\",\n          \"evidence\": \"explicitly model three-dimensional (3D) structures\",\n          \"source\": \"introduction\",\n          \"confidence\": 0.98\n        },\n        {\n          \"term\": \"protein monomer design\",\n          \"normalized\": \"蛋白质单体设计\",\n          \"std_label\": \"分子设计\",\n          \"evidence\": \"protein monomer design\",\n          \"source\": \"introduction\",\n          \"confidence\": 0.94\n        }\n      ]\n    }\n  }\n}\n\n/* concepts round2 (supplement) */\n{\"补充概念\": {\"主学科\": [\"计算机科学技术\"], \"辅学科\": {\"生物学\": [\"secondary structure\", \"rigid-frame representation\", \"block-adjacency\"], \"材料科学\": [\"Gaussian noise\"], \"基础医学\": [\"photorealistic images\"]}}}\n\n/* relations */\n{\n  \"跨学科关系\": [\n    {\n      \"head\": \"deep-learning methods\",\n      \"tail\": \"protein design\",\n      \"relation\": \"applied to design proteins\",\n      \"relation_type\": \"method_applied_to\",\n      \"direction\": \"->\",\n      \"evidence\": \"designing new proteins using deep-learning methods\",\n      \"source\": \"abstract\",\n      \"confidence\": 0.95,\n      \"assumptions\": []\n    },\n    {\n      \"head\": \"diffusion models\",\n      \"tail\": \"protein design\",\n      \"relation\": \"applied to protein modelling with limited success\",\n      \"relation_type\": \"method_applied_to\",\n      \"direction\": \"->\",\n      \"evidence\": \"Diffusion models have had considerable success in image and language generative modelling but limited success when applied to protein modelling\",\n      \"source\": \"abstract\",\n      \"confidence\": 0.9,\n      \"assumptions\": []\n    },\n    {\n      \"head\": \"RoseTTAFold structure prediction network\",\n      \"tail\": \"protein monomer design\",\n      \"relation\": \"fine-tuned on denoising tasks to achieve outstanding performance\",\n      \"relation_type\": \"method_applied_to\",\n      \"direction\": \"->\",\n      \"evidence\": \"by fine-tuning the RoseTTAFold structure prediction network on protein structure denoising tasks, we obtain a generative model of protein backbones that achieves outstanding performance on protein monomer design\",\n      \"source\": \"abstract\",\n      \"confidence\": 0.99,\n      \"assumptions\": []\n    },\n    {\n      \"head\": \"generative model\",\n      \"tail\": \"protein binder design\",\n      \"relation\": \"generates protein backbones for binder design\",\n      \"relation_type\": \"method_applied_to\",\n      \"direction\": \"->\",\n      \"evidence\": \"generative model of protein backbones that achieves outstanding performance on protein binder design\",\n      \"source\": \"abstract\",\n      \"confidence\": 0.97,\n      \"assumptions\": []\n    },\n    {\n      \"head\": \"RFdiffusion\",\n      \"tail\": \"symmetric assemblies\",\n      \"relation\": \"enables design of symmetric assemblies\",\n      \"relation_type\": \"method_applied_to\",\n      \"direction\": \"->\",\n      \"evidence\": \"method, called RoseTTAFold diffusion (RFdiffusion), by experimentally characterizing the structures and functions of hundreds of designed symmetric assemblies\",\n      \"source\": \"abstract\",\n      \"confidence\": 0.98,\n      \"assumptions\": []\n    },\n    {\n      \"head\": \"Denoising Diffusion Probabilistic Models (DDPMs)\",\n      \"tail\": \"protein design\",\n      \"relation\": \"have properties well suited to protein design\",\n      \"relation_type\": \"method_applied_to\",\n      \"direction\": \"->\",\n      \"evidence\": \"Denoising Diffusion Probabilistic Models (DDPMs)... have several properties well suited to protein design\",\n      \"source\": \"introduction\",\n      \"confidence\": 0.97,\n      \"assumptions\": []\n    },\n    {\n      \"head\": \"topology-constrained\",\n      \"tail\": \"protein monomer design\",\n      \"relation\": \"constrains the design of protein monomers\",\n      \"relation_type\": \"constrains\",\n      \"direction\": \"->\",\n      \"evidence\": \"topology-constrained protein monomer design\",\n      \"source\": \"abstract\",\n      \"confidence\": 0.93,\n      \"assumptions\": []\n    },\n    {\n      \"head\": \"rotationally equivariant\",\n      \"tail\": \"3D structures\",\n      \"relation\": \"models 3D structures in frame-independent manner\",\n      \"relation_type\": \"method_applied_to\",\n      \"direction\": \"->\",\n      \"evidence\": \"rotationally equivariant DDPMs can do this in a global representation frame independent manner\",\n      \"source\": \"abstract\",\n      \"confidence\": 0.94,\n      \"assumptions\": []\n    }\n  ]\n}\n\n/* stage2: query */\n{\n  \"按辅助学科分类\": {\n    \"生物学\": {\n      \"概念\": [\n        \"蛋白质设计\",\n        \"从头结合体设计\",\n        \"酶活性位点支架\",\n        \"金属结合蛋白\",\n        \"对称基序支架\",\n        \"流感血凝素\",\n        \"蛋白质主链几何\",\n        \"序列-结构关系\",\n        \"对称组装体\",\n        \"催化位点\",\n        \"三维结构\",\n        \"蛋白质单体设计\"\n      ],\n      \"关系\": [0, 1, 2, 4, 5, 6, 7],\n      \"rationale\": \"提供蛋白质设计的理论基础与实验验证目标\"\n    }\n  },\n  \"查询\": {\n    \"一级\": \"深度学习方法如何突破蛋白质三维结构的生成精度瓶颈\",\n    \"二级\": [\n      \"生成模型在拓扑约束条件下如何优化蛋白质主链几何特性\",\n      \"结构预测网络如何协同对称组装体的几何特征进行参数调优\"\n    ],\n    \"三级\": [\n      \"如何通过旋转等变扩散模型耦合序列-结构关系实现金属结合蛋白的从头设计\",\n      \"冷冻电子显微镜数据如何指导去噪扩散概率模型进行流感血凝素的催化位点重构\"\n    ]\n  }\n}\n\n/* stage3: hypothesis L1 */\n{\n  \"假设\": {\n    \"一级\": [\n      [\n        {\n          \"step\": 1,\n          \"head\": \"深度学习方法\",\n          \"relation\": \"应用于蛋白质设计\",\n          \"tail\": \"生成模型\",\n          \"claim\": \"深度学习方法通过生成模型实现蛋白质主链几何特性建模\"\n        },\n        {\n          \"step\": 2,\n          \"head\": \"生成模型\",\n          \"relation\": \"受拓扑约束影响\",\n          \"tail\": \"拓扑约束\",\n          \"claim\": \"生成模型在拓扑约束条件下优化蛋白质折叠模式\"\n        },\n        {\n          \"step\": 3,\n          \"head\": \"拓扑约束\",\n          \"relation\": \"决定三维结构精度\",\n          \"tail\": \"三维结构\",\n          \"claim\": \"拓扑约束通过生物学序列-结构关系指导三维结构精确生成\"\n        }\n      ]\n    ],\n    \"一级总结\": [\n      \"深度学习方法通过生成模型在拓扑约束下优化蛋白质三维结构生成，需生物学解析序列-结构关系以突破精度瓶颈\"\n    ]\n  }\n}\n\n/* stage3: hypothesis L2 */\n{\n  \"假设\": {\n    \"二级\": [\n      [\n        {\n          \"step\": 1,\n          \"head\": \"生成模型\",\n          \"relation\": \"在拓扑约束条件下进行结构生成\",\n          \"tail\": \"拓扑约束\"\n        },\n        {\n          \"step\": 2,\n          \"head\": \"拓扑约束\",\n          \"relation\": \"限制蛋白质单体设计空间\",\n          \"tail\": \"蛋白质单体设计\"\n        },\n        {\n          \"step\": 3,\n          \"head\": \"蛋白质单体设计\",\n          \"relation\": \"决定蛋白质主链几何特性\",\n          \"tail\": \"蛋白质主链几何\"\n        }\n      ],\n      [\n        {\n          \"step\": 1,\n          \"head\": \"结构预测网络\",\n          \"relation\": \"通过去噪任务优化参数\",\n          \"tail\": \"去噪任务\"\n        },\n        {\n          \"step\": 2,\n          \"head\": \"去噪任务\",\n          \"relation\": \"处理对称组装体几何特征\",\n          \"tail\": \"对称组装体\"\n        },\n        {\n          \"step\": 3,\n          \"head\": \"对称组装体\",\n          \"relation\": \"指导对称寡聚体设计参数\",\n          \"tail\": \"对称寡聚体设计\"\n        }\n      ]\n    ],\n    \"二级总结\": [\n      \"生成模型通过拓扑约束调控蛋白质单体设计，从而优化主链几何特性\",\n      \"结构预测网络利用去噪任务处理对称组装体几何特征，实现寡聚体设计参数调优\"\n    ]\n  }\n}\n\n/* stage3: hypothesis L3 */\n{\n  \"假设\": {\n    \"三级\": [\n      [\n        {\n          \"step\": 1,\n          \"head\": \"旋转等变\",\n          \"relation\": \"旋转等变性质为扩散模型提供空间对称性保障\",\n          \"tail\": \"扩散模型\"\n        },\n        {\n          \"step\": 2,\n          \"head\": \"扩散模型\",\n          \"relation\": \"扩散模型通过序列-结构关系建模实现构象空间采样\",\n          \"tail\": \"序列-结构关系\"\n        },\n        {\n          \"step\": 3,\n          \"head\": \"序列-结构关系\",\n          \"relation\": \"序列-结构关系指导金属结合蛋白的从头生成\",\n          \"tail\": \"金属结合蛋白\"\n        }\n      ],\n      [\n        {\n          \"step\": 1,\n          \"head\": \"冷冻电子显微镜\",\n          \"relation\": \"冷冻电子显微镜提供实验数据约束模型训练\",\n          \"tail\": \"去噪扩散概率模型\"\n        },\n        {\n          \"step\": 2,\n          \"head\": \"去噪扩散概率模型\",\n          \"relation\": \"去噪扩散概率模型重构三维结构特征\",\n          \"tail\": \"三维结构\"\n        },\n        {\n          \"step\": 3,\n          \"head\": \"三维结构\",\n          \"relation\": \"三维结构特征指导流感血凝素催化位点设计\",\n          \"tail\": \"催化位点\"\n        }\n      ]\n    ],\n    \"三级总结\": [\n      \"通过旋转等变扩散模型建立空间对称性约束，结合序列-结构关系建模实现金属结合蛋白的构象生成与优化\",\n      \"利用冷冻电子显微镜数据训练去噪扩散模型，通过三维结构重构实现流感血凝素催化位点的精准设计\"\n    ]\n  }\n}",
+    "ok": true,
+    "error": ""
+  }
+]

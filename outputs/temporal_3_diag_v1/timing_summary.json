@@ -1,0 +1,275 @@
+{
+  "num_records": 12,
+  "by_stage": {
+    "stage0": {
+      "num_commands": 1,
+      "elapsed_sec_sum": 10.0,
+      "real_sec_sum": 0.0,
+      "max_rss_kb_max": 0,
+      "commands": [
+        {
+          "command": "prepare_temporal_papers_benchmark",
+          "elapsed_sec": 10.0,
+          "real_sec": 0.0,
+          "max_rss_kb": 0,
+          "exit_code": 0
+        }
+      ]
+    },
+    "stage1": {
+      "num_commands": 1,
+      "elapsed_sec_sum": 41.0,
+      "real_sec_sum": 0.0,
+      "max_rss_kb_max": 0,
+      "commands": [
+        {
+          "command": "classify_benchmark_candidates",
+          "elapsed_sec": 41.0,
+          "real_sec": 0.0,
+          "max_rss_kb": 0,
+          "exit_code": 0
+        }
+      ]
+    },
+    "stage10": {
+      "num_commands": 1,
+      "elapsed_sec_sum": 19.0,
+      "real_sec_sum": 0.0,
+      "max_rss_kb_max": 0,
+      "commands": [
+        {
+          "command": "run_multimodel_eval_16metrics",
+          "elapsed_sec": 19.0,
+          "real_sec": 0.0,
+          "max_rss_kb": 0,
+          "exit_code": 0
+        }
+      ]
+    },
+    "stage2": {
+      "num_commands": 1,
+      "elapsed_sec_sum": 1539.0,
+      "real_sec_sum": 0.0,
+      "max_rss_kb_max": 0,
+      "commands": [
+        {
+          "command": "extract_benchmark_candidates",
+          "elapsed_sec": 1539.0,
+          "real_sec": 0.0,
+          "max_rss_kb": 0,
+          "exit_code": 0
+        }
+      ]
+    },
+    "stage3": {
+      "num_commands": 1,
+      "elapsed_sec_sum": 9.0,
+      "real_sec_sum": 0.0,
+      "max_rss_kb_max": 0,
+      "commands": [
+        {
+          "command": "build_benchmark_dataset",
+          "elapsed_sec": 9.0,
+          "real_sec": 0.0,
+          "max_rss_kb": 0,
+          "exit_code": 0
+        }
+      ]
+    },
+    "stage4": {
+      "num_commands": 1,
+      "elapsed_sec_sum": 10.0,
+      "real_sec_sum": 0.0,
+      "max_rss_kb_max": 0,
+      "commands": [
+        {
+          "command": "prepare_temporal_papers_validity",
+          "elapsed_sec": 10.0,
+          "real_sec": 0.0,
+          "max_rss_kb": 0,
+          "exit_code": 0
+        }
+      ]
+    },
+    "stage5": {
+      "num_commands": 1,
+      "elapsed_sec_sum": 42.0,
+      "real_sec_sum": 0.0,
+      "max_rss_kb_max": 0,
+      "commands": [
+        {
+          "command": "classify_validity_candidates",
+          "elapsed_sec": 42.0,
+          "real_sec": 0.0,
+          "max_rss_kb": 0,
+          "exit_code": 0
+        }
+      ]
+    },
+    "stage6": {
+      "num_commands": 1,
+      "elapsed_sec_sum": 1302.0,
+      "real_sec_sum": 0.0,
+      "max_rss_kb_max": 0,
+      "commands": [
+        {
+          "command": "extract_validity_candidates",
+          "elapsed_sec": 1302.0,
+          "real_sec": 0.0,
+          "max_rss_kb": 0,
+          "exit_code": 0
+        }
+      ]
+    },
+    "stage7": {
+      "num_commands": 2,
+      "elapsed_sec_sum": 30104.0,
+      "real_sec_sum": 0.0,
+      "max_rss_kb_max": 0,
+      "commands": [
+        {
+          "command": "evaluate_benchmark_validity",
+          "elapsed_sec": 30103.0,
+          "real_sec": 0.0,
+          "max_rss_kb": 0,
+          "exit_code": 0
+        },
+        {
+          "command": "analyze_benchmark_validity",
+          "elapsed_sec": 1.0,
+          "real_sec": 0.0,
+          "max_rss_kb": 0,
+          "exit_code": 0
+        }
+      ]
+    },
+    "stage8": {
+      "num_commands": 1,
+      "elapsed_sec_sum": 0.0,
+      "real_sec_sum": 0.0,
+      "max_rss_kb_max": 0,
+      "commands": [
+        {
+          "command": "build_query_eval_set",
+          "elapsed_sec": 0.0,
+          "real_sec": 0.0,
+          "max_rss_kb": 0,
+          "exit_code": 0
+        }
+      ]
+    },
+    "stage9": {
+      "num_commands": 1,
+      "elapsed_sec_sum": 108.0,
+      "real_sec_sum": 0.0,
+      "max_rss_kb_max": 0,
+      "commands": [
+        {
+          "command": "run_query_benchmark",
+          "elapsed_sec": 108.0,
+          "real_sec": 0.0,
+          "max_rss_kb": 0,
+          "exit_code": 0
+        }
+      ]
+    }
+  },
+  "slowest_commands": [
+    {
+      "stage": "stage7",
+      "command": "evaluate_benchmark_validity",
+      "elapsed_sec": 30103.0,
+      "real_sec": 0.0,
+      "max_rss_kb": 0,
+      "exit_code": 0
+    },
+    {
+      "stage": "stage2",
+      "command": "extract_benchmark_candidates",
+      "elapsed_sec": 1539.0,
+      "real_sec": 0.0,
+      "max_rss_kb": 0,
+      "exit_code": 0
+    },
+    {
+      "stage": "stage6",
+      "command": "extract_validity_candidates",
+      "elapsed_sec": 1302.0,
+      "real_sec": 0.0,
+      "max_rss_kb": 0,
+      "exit_code": 0
+    },
+    {
+      "stage": "stage9",
+      "command": "run_query_benchmark",
+      "elapsed_sec": 108.0,
+      "real_sec": 0.0,
+      "max_rss_kb": 0,
+      "exit_code": 0
+    },
+    {
+      "stage": "stage5",
+      "command": "classify_validity_candidates",
+      "elapsed_sec": 42.0,
+      "real_sec": 0.0,
+      "max_rss_kb": 0,
+      "exit_code": 0
+    },
+    {
+      "stage": "stage1",
+      "command": "classify_benchmark_candidates",
+      "elapsed_sec": 41.0,
+      "real_sec": 0.0,
+      "max_rss_kb": 0,
+      "exit_code": 0
+    },
+    {
+      "stage": "stage10",
+      "command": "run_multimodel_eval_16metrics",
+      "elapsed_sec": 19.0,
+      "real_sec": 0.0,
+      "max_rss_kb": 0,
+      "exit_code": 0
+    },
+    {
+      "stage": "stage0",
+      "command": "prepare_temporal_papers_benchmark",
+      "elapsed_sec": 10.0,
+      "real_sec": 0.0,
+      "max_rss_kb": 0,
+      "exit_code": 0
+    },
+    {
+      "stage": "stage4",
+      "command": "prepare_temporal_papers_validity",
+      "elapsed_sec": 10.0,
+      "real_sec": 0.0,
+      "max_rss_kb": 0,
+      "exit_code": 0
+    },
+    {
+      "stage": "stage3",
+      "command": "build_benchmark_dataset",
+      "elapsed_sec": 9.0,
+      "real_sec": 0.0,
+      "max_rss_kb": 0,
+      "exit_code": 0
+    },
+    {
+      "stage": "stage7",
+      "command": "analyze_benchmark_validity",
+      "elapsed_sec": 1.0,
+      "real_sec": 0.0,
+      "max_rss_kb": 0,
+      "exit_code": 0
+    },
+    {
+      "stage": "stage8",
+      "command": "build_query_eval_set",
+      "elapsed_sec": 0.0,
+      "real_sec": 0.0,
+      "max_rss_kb": 0,
+      "exit_code": 0
+    }
+  ]
+}

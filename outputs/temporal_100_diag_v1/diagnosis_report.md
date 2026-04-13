@@ -1,0 +1,86 @@
+# Temporal Run Diagnosis
+
+## Key Findings
+- benchmark 候选在分类阶段从 80 降到 41，缩水 39 篇。
+- 2025 验证集在分类阶段从 20 降到 12，缩水 8 篇。
+- 日志中出现 35 次低于 cross-disc 阈值过滤。
+- 日志中出现 12 次单学科过滤。
+- 分类层级选择中出现 2 次 'no valid items'，说明模型输出与候选层级不匹配。
+- 抽取结果里有 11 条记录出现 primary 落入 secondary_list，跨学科元信息被污染。
+- validity 结果中有 12 篇文章只在嵌套 metadata 中保留期刊/影响信号，顶层字段为空。
+- query 评测中 L1_relation_precision 全为 0，关系级对齐完全失效。
+- query 评测中 L1_path_alignment_best 全为 0，路径对齐指标完全失效。
+- query eval 只有 12 条样本，统计解释力偏弱。
+
+## Stage Counts
+- `benchmark_raw`: 80
+- `benchmark_classified`: 41
+- `benchmark_extractions`: 45
+- `benchmark_dataset`: 45
+- `validity_raw`: 20
+- `validity_classified`: 12
+- `validity_extractions`: 13
+- `validity_result`: 12
+- `query_eval`: 12
+- `query_results`: 12
+
+## Log Diagnostics
+- `non_multidisciplinary_count`: 12
+- `below_threshold_count`: 35
+- `no_valid_items_count`: 2
+- `below_threshold_examples`:
+  - MIMIC-IV, a freely accessible electronic health record datas
+  - Students’ voices on generative AI: perceptions, benefits, an
+  - Suppressing quantum errors by scaling a surface code logical
+  - Visual attention network
+  - Heat-related mortality in Europe during the summer of 2022
+  - Operando studies reveal active Cu nanograins for CO2 electro
+  - Lecanemab: Appropriate Use Recommendations
+  - Energy consumption of current and future production of lithi
+- `non_multidisciplinary_examples`:
+  - {'计算机科学技术'}): Artificial intelligence in higher education: the state of th
+  - {'计算机科学技术'}): Examining Science Education in ChatGPT: An Exploratory Study
+  - {'计算机科学技术'}): Generative AI
+  - {'计算机科学技术'}): Deep learning modelling techniques: current progress, applic
+  - {'计算机科学技术'}): Parameter-efficient fine-tuning of large-scale pre-trained l
+  - {'计算机科学技术'}): Role of AI chatbots in education: systematic literature revi
+  - {'临床医学'}): Elranatamab in relapsed or refractory multiple myeloma: phas
+  - {'计算机科学技术'}): A modified Adam algorithm for deep neural network optimizati
+- `no_valid_items_examples`:
+  - base_path=['环境科学技术'], parsed_items=['环境管理学', '环境系统工程', '环境规划', '环境质量监测与评价'], raw_output=[环境管理学; 环境系统工程; 环境规划; 环境质量监测与评价]
+  - base_path=['环境科学技术'], parsed_items=['环境管理学', '区域环境学', '环境规划', '环境系统工程'], raw_output=[环境管理学; 区域环境学; 环境规划; 环境系统工程]
+
+## Extraction Diagnostics
+### benchmark_extractions
+- `total`: 45
+- `ok`: 45
+- `failed`: 0
+- `primary_in_secondary_list_count`: 40
+- `primary_in_secondary_list_examples`: ['MitoHiFi: a python pipeline for mitochondrial genome assembly from PacBio high fidelity reads', 'De novo design of protein structure and function with RFdiffusion', 'Students’ voices on generative AI: perceptions, benefits, and challenges in higher education', 'Plasma proteomic associations with genetics and health in the UK Biobank', 'Accurate medium-range global weather forecasting with 3D neural networks', 'Evaluating the Feasibility of ChatGPT in Healthcare: An Analysis of Multiple Clinical and Research Scenarios', 'A comprehensive AI policy education framework for university teaching and learning', 'Scaling deep learning for materials discovery']
+- `empty_query_count`: 0
+- `empty_hypothesis_count`: 0
+- `failed_examples`: []
+
+### validity_extractions
+- `total`: 13
+- `ok`: 12
+- `failed`: 1
+- `primary_in_secondary_list_count`: 11
+- `primary_in_secondary_list_examples`: ['A generative model for inorganic materials design', 'The green hydrogen ambition and implementation gap', 'Towards conversational diagnostic artificial intelligence', 'Segment Anything for Microscopy', 'Complexities of the global plastics supply chain revealed in a trade-linked material flow analysis', 'Impacts of climate change on global agriculture accounting for adaptation', 'Functional connectomics spanning multiple areas of mouse visual cortex', 'The design space of E(3)-equivariant atom-centred interatomic potentials']
+- `empty_query_count`: 0
+- `empty_hypothesis_count`: 0
+- `failed_examples`: [{'title': 'Trust in scientists and their role in society across 68 countries', 'error': "unknown_error: 1 validation error for Hypothesis3Levels\n  Value error, 假设.三级[0] 最后一步 claim 不得为空（用于总结） [type=value_error, input_value={'一级': [[HypothesisSt...的中介传导链条']}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.11/v/value_error"}]
+
+## Validity Diagnostics
+- `num_papers`: 12
+- `metadata_nested_present_count`: 12
+- `metadata_top_level_missing_count`: 12
+- `overall_metric_summary`: {'consistency': {'mean': 0.0, 'zero_count': 12, 'non_null_count': 12}, 'concept_f1': {'mean': 0.3889, 'zero_count': 0, 'non_null_count': 12}, 'relation_precision': {'mean': 0.0556, 'zero_count': 10, 'non_null_count': 12}, 'path_alignment_best': {'mean': 0.0, 'zero_count': 12, 'non_null_count': 12}, 'rao_stirling': {'mean': 0.0, 'zero_count': 12, 'non_null_count': 12}, 'innovation': {'mean': 6.4714, 'zero_count': 0, 'non_null_count': 12}, 'scientificity': {'mean': 7.0075, 'zero_count': 0, 'non_null_count': 12}, 'testability': {'mean': 7.0435, 'zero_count': 0, 'non_null_count': 12}}
+
+## Query Evaluation Diagnostics
+- `num_rows`: 12
+- `parse_error_count`: 0
+- `parse_cache_count`: 12
+- `model_counts`: {'qwen3-235b-a22b': 12}
+- `metric_summary`: {'L1_concept_f1': {'mean': 0.1113, 'zero_count': 0, 'non_null_count': 12}, 'L1_relation_precision': {'mean': 0.0, 'zero_count': 12, 'non_null_count': 12}, 'L1_path_alignment_best': {'mean': 0.0, 'zero_count': 12, 'non_null_count': 12}, 'L1_rao_stirling': {'mean': 0.0, 'zero_count': 12, 'non_null_count': 12}, 'L2_concept_f1': {'mean': 0.0939, 'zero_count': 1, 'non_null_count': 12}, 'L2_relation_precision': {'mean': 0.0, 'zero_count': 12, 'non_null_count': 12}, 'L2_path_alignment_best': {'mean': 0.0, 'zero_count': 12, 'non_null_count': 12}, 'L3_concept_f1': {'mean': 0.0596, 'zero_count': 1, 'non_null_count': 12}, 'L3_relation_precision': {'mean': 0.0, 'zero_count': 12, 'non_null_count': 12}, 'L3_path_alignment_best': {'mean': 0.0, 'zero_count': 12, 'non_null_count': 12}, 'L1_factual_precision': {'mean': 1.0, 'zero_count': 0, 'non_null_count': 12}, 'L1_innovation': {'mean': 7.3403, 'zero_count': 0, 'non_null_count': 12}, 'L1_scientificity': {'mean': 8.4931, 'zero_count': 0, 'non_null_count': 12}, 'L1_testability': {'mean': 7.1997, 'zero_count': 0, 'non_null_count': 12}}
+- `summary_keys`: ['by_model_method', 'by_model_overall']
