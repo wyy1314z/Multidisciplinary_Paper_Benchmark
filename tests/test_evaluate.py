@@ -2,8 +2,10 @@
 import pytest
 from crossdisc_extractor.benchmark.evaluate_benchmark import (
     GraphMetricEvaluator,
+    GlobalKG,
     _path_hash,
     _tokenize_for_bridging,
+    evaluate_single_path,
     normalize_paths_structure,
     parse_llm_score,
 )
@@ -155,3 +157,122 @@ class TestParseLlmScore:
         assert parsed["method_feasibility"] == 6.5
         assert parsed["resource_feasibility"] == 5.0
         assert parsed["validation_readiness"] == 8.0
+
+
+class TestEvaluateSinglePathOptimization:
+    def test_x5_only_skips_legacy_outputs(self, monkeypatch):
+        def fake_chat_completion(messages, temperature=0.0):
+            return (
+                '{"data_feasibility": 7.0, "method_feasibility": 6.5, '
+                '"resource_feasibility": 6.0, "validation_readiness": 8.0, '
+                '"specificity": 7.0, "measurability": 7.5, '
+                '"falsifiability": 8.0}'
+            )
+
+        monkeypatch.setattr(
+            "crossdisc_extractor.benchmark.evaluate_benchmark.chat_completion_with_retry",
+            fake_chat_completion,
+        )
+
+        path = [
+            {
+                "step": 1,
+                "head": "Graph neural network",
+                "tail": "protein structure prediction",
+                "relation": "method_applied_to",
+                "claim": "Graph neural networks can be applied to protein structure prediction",
+            }
+        ]
+        gt_paths = [{"path": path}]
+        gt_relations = [
+            {
+                "head": "Graph neural network",
+                "tail": "protein structure prediction",
+                "relation_type": "method_applied_to",
+                "evidence_sentence": "Graph neural networks are applied to protein structure prediction.",
+            }
+        ]
+
+        scores = evaluate_single_path(
+            path,
+            gt_paths,
+            query="protein structure prediction",
+            discipline="计算机科学技术",
+            level="L1",
+            gt_terms=["Graph neural network", "protein structure prediction"],
+            gt_relations=gt_relations,
+            gt_evidence_paths=gt_paths,
+            abstract="Graph neural networks are applied to protein structure prediction.",
+            fast_mode=True,
+            x5_only=True,
+            include_legacy_llm_judge=False,
+        )
+
+        assert "innovation" not in scores
+        assert "scientificity" not in scores
+        assert "legacy_feasibility" not in scores
+        assert "consistency" not in scores
+        assert "concept_precision" not in scores
+        assert "concept_recall" not in scores
+        assert "path_alignment_mean" not in scores
+        assert "concept_f1" in scores
+        assert "path_alignment_best" in scores
+        assert "feasibility" in scores
+        assert "testability" in scores
+
+
+class TestGlobalKGReferenceSource:
+    def test_default_loads_evidence_paths_not_legacy(self, tmp_path):
+        benchmark = [
+            {
+                "id": "paper-1",
+                "input": {
+                    "title": "Paper 1",
+                    "primary_discipline": "计算机科学技术",
+                    "abstract": "A evidence B.",
+                },
+                "ground_truth": {
+                    "terms": [
+                        {"normalized": "Evidence A", "discipline": "计算机科学技术"},
+                        {"normalized": "Evidence B", "discipline": "生物学"},
+                    ],
+                    "paths": [
+                        {
+                            "path": [
+                                {
+                                    "step": 1,
+                                    "head": "Evidence A",
+                                    "relation_type": "method_applied_to",
+                                    "relation": "method_applied_to",
+                                    "tail": "Evidence B",
+                                    "evidence": "A evidence B.",
+                                    "support_level": "direct",
+                                }
+                            ],
+                            "support_level": "direct",
+                        }
+                    ],
+                    "hypothesis_paths": {
+                        "L1": [[{"step": 1, "head": "Legacy A", "relation": "r", "tail": "Legacy B"}]],
+                        "L2": [],
+                        "L3": [],
+                    },
+                },
+            }
+        ]
+        path = tmp_path / "benchmark.json"
+        path.write_text(__import__("json").dumps(benchmark, ensure_ascii=False), encoding="utf-8")
+
+        kg = GlobalKG(str(path))
+
+        assert kg.total_triples == 1
+        assert ("evidence a", "method_applied_to", "evidence b") in kg.all_triples
+        assert ("legacy a", "r", "legacy b") not in kg.all_triples
+
+    def test_legacy_reference_requires_explicit_allow(self, tmp_path):
+        benchmark = [{"id": "paper-1", "input": {}, "ground_truth": {"hypothesis_paths": {}}}]
+        path = tmp_path / "benchmark.json"
+        path.write_text(__import__("json").dumps(benchmark), encoding="utf-8")
+
+        with pytest.raises(ValueError):
+            GlobalKG(str(path), reference_source="legacy_llm")

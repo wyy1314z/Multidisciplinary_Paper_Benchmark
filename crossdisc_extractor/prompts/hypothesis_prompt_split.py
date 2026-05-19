@@ -209,11 +209,43 @@ def _collect_allowed_normalized(struct: StructExtraction) -> List[str]:
     return allowed
 
 
+def _query_for_prompt(query: Query3Levels) -> Query3Levels:
+    """Return a prompt-local query copy, applying Chinese cleanup only in Chinese mode."""
+    from crossdisc_extractor.config import LanguageMode, get_language_mode
+
+    q = query.model_copy(deep=True)
+    if get_language_mode() == LanguageMode.CHINESE:
+        _ensure_chinese_query_inplace(q)
+    return q
+
+
+def _single_query_view(query: Query3Levels, level: int, query_index: int) -> Query3Levels:
+    """Build a Query3Levels view that contains exactly one L2 or L3 query."""
+    if level == 2:
+        if query_index < 0 or query_index >= len(query.二级 or []):
+            raise IndexError(f"Query.二级 index out of range: {query_index}")
+        return Query3Levels(
+            一级=query.一级,
+            二级=[query.二级[query_index]],
+            三级=[],
+        )
+    if level == 3:
+        if query_index < 0 or query_index >= len(query.三级 or []):
+            raise IndexError(f"Query.三级 index out of range: {query_index}")
+        paired_l2 = [query.二级[query_index]] if query_index < len(query.二级 or []) else []
+        return Query3Levels(
+            一级=query.一级,
+            二级=paired_l2,
+            三级=[query.三级[query_index]],
+        )
+    raise ValueError(f"Single-query view only supports level 2 or 3, got {level}")
+
+
 def _build_user_content(struct: StructExtraction, query: Query3Levels) -> str:
-    # 复用原有的 user template 逻辑
-    _ensure_chinese_query_inplace(query)
+    # 复用原有的 user template 逻辑；不要原地修改调用方的 query 对象。
+    query_for_prompt = _query_for_prompt(query)
     summary_json = build_struct_summary_json(struct)
-    query_json = json.dumps(query.model_dump(), ensure_ascii=False, indent=2)
+    query_json = json.dumps(query_for_prompt.model_dump(), ensure_ascii=False, indent=2)
 
     primary = struct.meta.primary
     sec_list = [s.strip() for s in (struct.meta.secondary_list or []) if s.strip()]
@@ -284,6 +316,24 @@ def build_hypothesis_messages_l2(
     ]
 
 
+def build_hypothesis_messages_l2_single(
+    struct: StructExtraction,
+    query: Query3Levels,
+    query_index: int,
+) -> List[Dict[str, str]]:
+    """Build messages for exactly one original L2 query."""
+    single_query = _single_query_view(query, level=2, query_index=query_index)
+    messages = build_hypothesis_messages_l2(struct, single_query)
+    messages[-1]["content"] += (
+        f"\n【单条 Query 模式】\n"
+        f"- 本次只处理原始 Query.二级[{query_index + 1}]。\n"
+        f"- 输出的 `假设.二级` 必须恰好包含 1 条路径。\n"
+        f"- 输出的 `二级总结` 必须恰好包含 1 个字符串，并总结这 1 条路径。\n"
+        f"- 禁止输出其他二级 Query 对应的路径；禁止合并多个 Query。\n"
+    )
+    return messages
+
+
 def build_hypothesis_messages_l3(
     struct: StructExtraction,
     query: Query3Levels,
@@ -301,6 +351,24 @@ def build_hypothesis_messages_l3(
         {"role": "system", "content": prompt},
         {"role": "user", "content": user_content},
     ]
+
+
+def build_hypothesis_messages_l3_single(
+    struct: StructExtraction,
+    query: Query3Levels,
+    query_index: int,
+) -> List[Dict[str, str]]:
+    """Build messages for exactly one original L3 query."""
+    single_query = _single_query_view(query, level=3, query_index=query_index)
+    messages = build_hypothesis_messages_l3(struct, single_query)
+    messages[-1]["content"] += (
+        f"\n【单条 Query 模式】\n"
+        f"- 本次只处理原始 Query.三级[{query_index + 1}]。\n"
+        f"- 输出的 `假设.三级` 必须恰好包含 1 条路径。\n"
+        f"- 输出的 `三级总结` 必须恰好包含 1 个字符串，并总结这 1 条路径。\n"
+        f"- 禁止输出其他三级 Query 对应的路径；禁止合并多个 Query。\n"
+    )
+    return messages
 
 
 def _coerce_flat_steps_to_nested(hdict: dict) -> dict:

@@ -16,7 +16,12 @@ import json
 import time
 from typing import Optional
 
-from baseline.common import BaseHypothesisAdapter, PaperInput, HypothesisOutput
+from baseline.common import (
+    BaseHypothesisAdapter,
+    HypothesisOutput,
+    PaperInput,
+    get_external_baseline_input,
+)
 
 
 AI_SCIENTIST_SYSTEM = """You are an ambitious AI research scientist. Your goal is to propose \
@@ -30,6 +35,7 @@ that extend or build upon this work. Each idea should be a structured JSON objec
 
 Paper Title: {title}
 Abstract: {abstract}
+Introduction Snippet: {introduction}
 Primary Field: {primary}
 Related Fields: {secondary}
 
@@ -62,11 +68,13 @@ class AiScientistAdapter(BaseHypothesisAdapter):
     def generate(self, paper: PaperInput, num_hypotheses: int = 3) -> HypothesisOutput:
         from crossdisc_extractor.utils.llm import chat_completion_with_retry
 
+        context = get_external_baseline_input(paper)
         user_msg = AI_SCIENTIST_USER_TEMPLATE.format(
-            title=paper.title,
-            abstract=paper.abstract,
-            primary=paper.primary_discipline or "N/A",
-            secondary=", ".join(paper.secondary_disciplines) if paper.secondary_disciplines else "N/A",
+            title=context.title,
+            abstract=context.abstract,
+            introduction=context.introduction_text,
+            primary=context.primary_discipline,
+            secondary=context.secondary_text,
             num=num_hypotheses,
         )
         messages = [

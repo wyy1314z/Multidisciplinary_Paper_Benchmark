@@ -8,7 +8,7 @@ Stages:
 3) hypothesis: 假设(三级知识路径 + 总结)
 """
 
-__version__ = "0.1.0"
+__version__ = "0.2.0"
 
 from crossdisc_extractor.config import LanguageMode, PipelineConfig
 from crossdisc_extractor.schemas import (

@@ -83,7 +83,7 @@ class GTRelation:
 
     __slots__ = (
         "head", "tail", "relation_type", "relation_detail",
-        "evidence_sentence", "confidence", "source_method",
+        "evidence_sentence", "support_level", "confidence", "source_method",
     )
 
     def __init__(
@@ -93,6 +93,7 @@ class GTRelation:
         relation_type: str,
         relation_detail: str = "",
         evidence_sentence: str = "",
+        support_level: str = "weak",
         confidence: float = 1.0,
         source_method: str = "cooccurrence",
     ):
@@ -101,6 +102,7 @@ class GTRelation:
         self.relation_type = relation_type
         self.relation_detail = relation_detail
         self.evidence_sentence = evidence_sentence
+        self.support_level = support_level
         self.confidence = confidence
         self.source_method = source_method
 
@@ -111,6 +113,7 @@ class GTRelation:
             "relation_type": self.relation_type,
             "relation_detail": self.relation_detail,
             "evidence_sentence": self.evidence_sentence,
+            "support_level": self.support_level,
             "confidence": self.confidence,
             "source_method": self.source_method,
         }
@@ -119,23 +122,39 @@ class GTRelation:
 class GTPath:
     """A ground truth path derived from graph traversal."""
 
-    __slots__ = ("steps", "disciplines_crossed", "total_evidence_confidence")
+    __slots__ = (
+        "steps", "disciplines_crossed", "total_evidence_confidence",
+        "support_level", "evidence_sentences", "path_support_score",
+        "unsupported_step_count",
+    )
 
     def __init__(
         self,
         steps: List[Dict[str, Any]],
         disciplines_crossed: List[str],
         total_evidence_confidence: float = 1.0,
+        support_level: str = "inferred",
+        evidence_sentences: Optional[List[str]] = None,
+        path_support_score: float = 0.0,
+        unsupported_step_count: int = 0,
     ):
         self.steps = steps
         self.disciplines_crossed = disciplines_crossed
         self.total_evidence_confidence = total_evidence_confidence
+        self.support_level = support_level
+        self.evidence_sentences = evidence_sentences or []
+        self.path_support_score = path_support_score
+        self.unsupported_step_count = unsupported_step_count
 
     def to_dict(self) -> Dict[str, Any]:
         return {
             "path": self.steps,
             "disciplines_crossed": self.disciplines_crossed,
             "total_evidence_confidence": self.total_evidence_confidence,
+            "support_level": self.support_level,
+            "evidence_sentences": self.evidence_sentences,
+            "path_support_score": self.path_support_score,
+            "unsupported_step_count": self.unsupported_step_count,
         }
 
 
@@ -673,6 +692,7 @@ def _classify_relations_via_llm(
                     relation_type=rel_type,
                     relation_detail=rel_detail,
                     evidence_sentence=sentence,
+                    support_level=(rel.get("support_level") or ("direct" if conf >= 0.7 else "weak")),
                     confidence=conf,
                     source_method="llm_classification",
                 ))
@@ -714,11 +734,13 @@ def _classify_relations_heuristic(
         # Try to find relation type from keywords
         matched_type = "corresponds_to"  # default for co-occurrence
         matched_conf = 0.5
+        matched_support = "weak"
 
         for pattern, rel_type in relation_patterns:
             if re.search(pattern, best_sentence, re.IGNORECASE):
                 matched_type = rel_type
                 matched_conf = 0.6
+                matched_support = "direct"
                 break
 
         # Determine direction from sentence order
@@ -739,6 +761,7 @@ def _classify_relations_heuristic(
                 relation_type=matched_type,
                 relation_detail=f"{head} {matched_type} {tail}",
                 evidence_sentence=best_sentence,
+                support_level=matched_support,
                 confidence=matched_conf,
                 source_method="heuristic",
             ))
@@ -809,6 +832,7 @@ def build_gt_paths(
             relation_type=rel.relation_type,
             relation_detail=rel.relation_detail,
             evidence=rel.evidence_sentence,
+            support_level=rel.support_level,
             confidence=rel.confidence,
         )
 
@@ -871,9 +895,14 @@ def build_gt_paths(
                 except nx.NetworkXError:
                     continue
 
-    # Sort by: number of disciplines crossed (desc), confidence (desc)
+    # Sort by: number of disciplines crossed (desc), support quality (desc), confidence (desc)
+    support_rank = {"direct": 3, "local": 2, "inferred": 1, "weak": 0, "unsupported": -1}
     gt_paths.sort(
-        key=lambda p: (len(set(p.disciplines_crossed)), p.total_evidence_confidence),
+        key=lambda p: (
+            len(set(p.disciplines_crossed)),
+            support_rank.get(p.support_level, 0),
+            p.total_evidence_confidence,
+        ),
         reverse=True,
     )
 
@@ -906,6 +935,8 @@ def _node_path_to_gt_path(
     steps: List[Dict[str, Any]] = []
     disciplines_seen: List[str] = []
     confidences: List[float] = []
+    support_levels: List[str] = []
+    evidence_sentences: List[str] = []
 
     for i in range(len(node_path) - 1):
         src = node_path[i]
@@ -920,13 +951,17 @@ def _node_path_to_gt_path(
         head_disc = src_data.get("discipline", "unknown")
         tail_disc = tgt_data.get("discipline", "unknown")
 
+        evidence = edge_data.get("evidence", "")
+        support_level = edge_data.get("support_level", "weak")
         step = {
             "step": i + 1,
             "head": head_term,
             "tail": tail_term,
             "relation_type": edge_data.get("relation_type", "other"),
             "relation": edge_data.get("relation_detail", ""),
-            "evidence": edge_data.get("evidence", ""),
+            "evidence": evidence,
+            "evidence_sentence": evidence,
+            "support_level": support_level,
             "head_discipline": head_disc,
             "tail_discipline": tail_disc,
         }
@@ -937,14 +972,40 @@ def _node_path_to_gt_path(
         if tail_disc and tail_disc != "unknown":
             disciplines_seen.append(tail_disc)
         confidences.append(edge_data.get("confidence", 0.5))
+        support_levels.append(support_level)
+        if evidence:
+            evidence_sentences.append(evidence)
 
     total_conf = sum(confidences) / len(confidences) if confidences else 0.0
+    path_support_level = _aggregate_path_support_level(support_levels)
+    unsupported_count = sum(1 for level in support_levels if level == "unsupported")
 
     return GTPath(
         steps=steps,
         disciplines_crossed=list(dict.fromkeys(disciplines_seen)),  # unique, order-preserving
         total_evidence_confidence=round(total_conf, 4),
+        support_level=path_support_level,
+        evidence_sentences=list(dict.fromkeys(evidence_sentences)),
+        path_support_score=round(total_conf, 4),
+        unsupported_step_count=unsupported_count,
     )
+
+
+def _aggregate_path_support_level(support_levels: List[str]) -> str:
+    """Aggregate per-edge support labels into a conservative path-level label."""
+    if not support_levels:
+        return "unsupported"
+    levels = set(support_levels)
+    if "unsupported" in levels:
+        return "unsupported"
+    if levels == {"direct"}:
+        return "direct"
+    if levels <= {"direct", "local"}:
+        return "local"
+    # Weak co-occurrence relations are kept as inferred path evidence, not direct evidence.
+    if levels <= {"direct", "local", "weak"}:
+        return "inferred"
+    return "weak"
 
 
 # ===========================================================================
@@ -1026,6 +1087,7 @@ def build_ground_truth(
         max_path_length=max_path_length,
         max_paths=max_paths,
     )
+    paths = [p for p in paths if p.support_level != "unsupported"]
     logger.info("Built %d GT paths", len(paths))
 
     # Build concept graph representation
@@ -1047,7 +1109,15 @@ def _empty_gt() -> Dict[str, Any]:
         "paths": [],
         "concept_graph": {"nodes": [], "edges": []},
         "stats": {"n_terms": 0, "n_relations": 0, "n_paths": 0,
-                  "n_disciplines": 0, "grounding_rate": 0.0},
+                  "n_disciplines": 0, "grounding_rate": 0.0,
+                  "relation_support_distribution": {},
+                  "path_support_distribution": {},
+                  "n_direct_relations": 0,
+                  "n_local_relations": 0,
+                  "n_inferred_relations": 0,
+                  "n_weak_relations": 0,
+                  "n_unsupported_relations": 0,
+                  "n_unsupported_path_steps": 0},
     }
 
 
@@ -1073,6 +1143,8 @@ def _build_concept_graph_dict(
             "relation_type": r.relation_type,
             "relation_detail": r.relation_detail,
             "evidence": r.evidence_sentence,
+            "evidence_sentence": r.evidence_sentence,
+            "support_level": r.support_level,
             "confidence": r.confidence,
         })
 
@@ -1097,6 +1169,15 @@ def _compute_stats(
         1 for p in paths
         if len(set(p.disciplines_crossed)) >= 2
     )
+    relation_support_counts: Dict[str, int] = defaultdict(int)
+    for r in relations:
+        relation_support_counts[r.support_level] += 1
+
+    path_support_counts: Dict[str, int] = defaultdict(int)
+    unsupported_path_steps = 0
+    for p in paths:
+        path_support_counts[p.support_level] += 1
+        unsupported_path_steps += p.unsupported_step_count
 
     return {
         "n_terms": n_terms,
@@ -1108,4 +1189,12 @@ def _compute_stats(
         "n_disciplines": len(disciplines),
         "disciplines": sorted(disciplines),
         "avg_path_length": round(avg_path_len, 2),
+        "relation_support_distribution": dict(sorted(relation_support_counts.items())),
+        "path_support_distribution": dict(sorted(path_support_counts.items())),
+        "n_direct_relations": relation_support_counts.get("direct", 0),
+        "n_local_relations": relation_support_counts.get("local", 0),
+        "n_inferred_relations": relation_support_counts.get("inferred", 0),
+        "n_weak_relations": relation_support_counts.get("weak", 0),
+        "n_unsupported_relations": relation_support_counts.get("unsupported", 0),
+        "n_unsupported_path_steps": unsupported_path_steps,
     }

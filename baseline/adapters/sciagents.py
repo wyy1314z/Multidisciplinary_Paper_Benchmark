@@ -18,7 +18,12 @@ import json
 import time
 from typing import Optional
 
-from baseline.common import BaseHypothesisAdapter, PaperInput, HypothesisOutput
+from baseline.common import (
+    BaseHypothesisAdapter,
+    HypothesisOutput,
+    PaperInput,
+    get_external_baseline_input,
+)
 
 
 ONTOLOGIST_PROMPT = """You are the Ontologist agent. Your role is to analyze a scientific \
@@ -26,6 +31,7 @@ paper and define the key concepts, their relationships, and the knowledge domain
 
 Paper Title: {title}
 Abstract: {abstract}
+Introduction Snippet: {introduction}
 Primary Field: {primary}
 Related Fields: {secondary}
 
@@ -47,6 +53,7 @@ Ontological Analysis:
 Original Paper:
 Title: {title}
 Abstract: {abstract}
+Introduction Snippet: {introduction}
 
 Generate {num} novel hypotheses. Each should:
 1. Address an identified knowledge gap
@@ -96,13 +103,15 @@ class SciAgentsAdapter(BaseHypothesisAdapter):
 
         t0 = time.time()
         raw_responses = []
+        context = get_external_baseline_input(paper)
 
         # Agent 1: Ontologist
         onto_msg = ONTOLOGIST_PROMPT.format(
-            title=paper.title,
-            abstract=paper.abstract,
-            primary=paper.primary_discipline or "N/A",
-            secondary=", ".join(paper.secondary_disciplines) if paper.secondary_disciplines else "N/A",
+            title=context.title,
+            abstract=context.abstract,
+            introduction=context.introduction_text,
+            primary=context.primary_discipline,
+            secondary=context.secondary_text,
         )
         try:
             onto_resp = chat_completion_with_retry(
@@ -120,8 +129,9 @@ class SciAgentsAdapter(BaseHypothesisAdapter):
         # Agent 2: Scientist
         sci_msg = SCIENTIST_PROMPT.format(
             ontology=onto_resp,
-            title=paper.title,
-            abstract=paper.abstract,
+            title=context.title,
+            abstract=context.abstract,
+            introduction=context.introduction_text,
             num=num_hypotheses,
         )
         try:
@@ -140,7 +150,7 @@ class SciAgentsAdapter(BaseHypothesisAdapter):
 
         # Agent 3: Critic (refine)
         critic_msg = CRITIC_PROMPT.format(
-            title=paper.title,
+            title=context.title,
             hypotheses=sci_resp,
         )
         try:

@@ -8,6 +8,7 @@ from crossdisc_extractor.schemas import (
     ConceptEntry,
     Concepts,
     RelationEntry,
+    Extraction,
 )
 
 
@@ -219,6 +220,22 @@ class TestSchemaRecovery:
 
     def test_classified_bucket_fills_missing_rationale(self):
         from crossdisc_extractor.schemas import ClassifiedBucket
+        b = ClassifiedBucket(概念=["a"], 关系=[1])
+        assert b.rationale
 
-        bucket = ClassifiedBucket.model_validate({"概念": ["x", "y"], "关系": [0, 1]})
-        assert bucket.rationale
+    def test_extraction_serializes_entity_alignment_stats(self):
+        path = _make_valid_path()
+        extraction = Extraction(
+            meta={
+                "title": "t",
+                "primary": "计算机科学技术",
+                "secondary_list": ["生物学"],
+            },
+            概念={"主学科": [], "辅学科": {}},
+            跨学科关系=[],
+            按辅助学科分类={},
+            查询={"一级": "如何改进目标？", "二级": [], "三级": []},
+            假设={"一级": [path], "一级总结": ["总结"]},
+            entity_alignment_stats={"aligned": 2, "missing": 1},
+        )
+        assert extraction.model_dump()["entity_alignment_stats"] == {"aligned": 2, "missing": 1}

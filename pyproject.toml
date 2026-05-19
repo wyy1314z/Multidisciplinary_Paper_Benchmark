@@ -79,10 +79,12 @@ prepare-temporal-papers = "scripts.prepare_temporal_papers:main"
 build-query-eval-set = "scripts.build_query_eval_set:main"
 benchmark-validity-eval = "crossdisc_extractor.benchmark.evaluate_benchmark_validity:main"
 query-benchmark = "run_query_benchmark:main"
+multiagent-query-benchmark = "run_multiagent_query_benchmark:main"
+multimodel-eval-16metrics = "run_multimodel_eval_16metrics:main"
 analyze-benchmark-validity = "scripts.analyze_benchmark_validity:main"
 
 [project.urls]
-Repository = "https://github.com/wangyuyang/crossdisc-benchmark"
+Repository = "https://github.com/wyy1314z/Multidisciplinary_Paper_Benchmark"
 
 # ── Ruff ──────────────────────────────────────────────────────────────────────
 [tool.ruff]

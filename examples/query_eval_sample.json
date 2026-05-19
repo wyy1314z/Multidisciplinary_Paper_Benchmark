@@ -1,0 +1,30 @@
+[
+  {
+    "paper_id": "sample-001",
+    "title": "Deep learning for protein structure prediction",
+    "journal": "Example Journal",
+    "doi": "https://doi.org/10.0000/example-001",
+    "publication_date": "2025-01-01",
+    "primary_discipline": "Computer Science",
+    "secondary_disciplines": ["Biology"],
+    "query": {
+      "L1": "How can representation learning improve scientific reasoning about protein structure?",
+      "L2": "How can neural sequence representations connect evolutionary signals with molecular mechanisms?",
+      "L3": "How can graph neural networks integrate residue contacts, conformational uncertainty, and experimental constraints into a testable protein design workflow?"
+    }
+  },
+  {
+    "paper_id": "sample-002",
+    "title": "Bayesian optimization for autonomous materials discovery",
+    "journal": "Example Journal",
+    "doi": "https://doi.org/10.0000/example-002",
+    "publication_date": "2025-01-02",
+    "primary_discipline": "Computer Science",
+    "secondary_disciplines": ["Materials Science", "Chemistry"],
+    "query": {
+      "L1": "How can active learning accelerate cross-disciplinary materials discovery?",
+      "L2": "How can uncertainty-aware optimization connect synthesis parameters with material properties?",
+      "L3": "How can a closed-loop system combine robotic synthesis, surrogate modeling, and spectroscopic validation to generate testable materials hypotheses?"
+    }
+  }
+]

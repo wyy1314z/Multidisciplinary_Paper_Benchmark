@@ -3,7 +3,7 @@ crossdisc_extractor/benchmark/web_search.py
 
 Web-search-augmented reference path retrieval.
 
-Uses Semantic Scholar API to find similar papers, then extracts
+Uses scholarly search APIs to find similar papers, then extracts
 knowledge paths via the existing extraction pipeline. The extracted
 paths are formatted identically to GT paths so they can be seamlessly
 merged into evaluation metrics.
@@ -18,6 +18,7 @@ import hashlib
 import json
 import logging
 import os
+import re
 import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from typing import Any, Dict, List, Optional, Tuple
@@ -27,14 +28,214 @@ import requests
 logger = logging.getLogger("eval_web_search")
 
 # ---------------------------------------------------------------------------
-#  Semantic Scholar API
+#  Scholarly Search APIs
 # ---------------------------------------------------------------------------
 
 _S2_SEARCH_URL = "https://api.semanticscholar.org/graph/v1/paper/search"
 _S2_API_KEY = os.environ.get("S2_API_KEY", "")  # optional, raises rate limit
+_OPENALEX_WORKS_URL = "https://api.openalex.org/works"
+_OPENALEX_API_KEY = os.environ.get("OPENALEX_API_KEY", "")
+_OPENALEX_MAILTO = os.environ.get("OPENALEX_MAILTO", "")
+_OPENALEX_SKIP_SELF_MATCH = os.environ.get("OPENALEX_SKIP_SELF_MATCH", "").lower() in {"1", "true", "yes"}
 
 
-def search_similar_papers(
+def _reconstruct_openalex_abstract(inverted_index: Optional[Dict[str, List[int]]]) -> str:
+    if not inverted_index:
+        return ""
+
+    positioned: List[Tuple[int, str]] = []
+    for token, positions in inverted_index.items():
+        for pos in positions:
+            positioned.append((int(pos), token))
+    positioned.sort(key=lambda x: x[0])
+    return " ".join(token for _, token in positioned)
+
+
+_OPENALEX_QUERY_STOPWORDS = {
+    "the", "a", "an", "and", "or", "of", "for", "to", "in", "on", "with",
+    "by", "from", "as", "is", "are", "was", "were", "this", "that", "these",
+    "those", "abstract", "study", "paper", "using", "used", "new",
+}
+
+
+def _openalex_core_terms(text: str, max_terms: int = 12) -> str:
+    """Build a compact scholarly-search query from free text."""
+    tokens = re.findall(r"[A-Za-z][A-Za-z0-9_-]{2,}", text or "")
+    kept: List[str] = []
+    seen = set()
+    for token in tokens:
+        low = token.lower()
+        if low in _OPENALEX_QUERY_STOPWORDS or low in seen:
+            continue
+        seen.add(low)
+        kept.append(token)
+        if len(kept) >= max_terms:
+            break
+    return " ".join(kept)
+
+
+def _openalex_candidate_queries(title: str, abstract: str = "") -> List[str]:
+    """
+    OpenAlex's `search` works best with a title or compact keyword query.
+
+    Do not blindly concatenate title + abstract: for source snippets this can
+    over-constrain OpenAlex and return zero results even when the title alone
+    finds the paper. Keep abstract-derived text only as a fallback keyword query.
+    """
+    candidates: List[str] = []
+    title = (title or "").strip()
+    abstract = (abstract or "").strip()
+
+    def add(query: str) -> None:
+        query = re.sub(r"\s+", " ", (query or "").strip())
+        if query and query.lower() not in {q.lower() for q in candidates}:
+            candidates.append(query)
+
+    add(title)
+    add(_openalex_core_terms(title))
+
+    doi_match = re.search(r"10\.\d{4,9}/[-._;()/:A-Za-z0-9]+", " ".join([title, abstract]))
+    if doi_match:
+        add(doi_match.group(0))
+
+    # If the title is too generic or absent, fall back to compact abstract terms.
+    add(_openalex_core_terms(abstract))
+    add(_openalex_core_terms(" ".join([title, abstract]), max_terms=16))
+    return candidates
+
+
+def search_openalex_papers(
+    title: str,
+    abstract: str = "",
+    limit: int = 10,
+) -> List[Dict[str, Any]]:
+    """Search OpenAlex works and return papers with reconstructed abstracts."""
+    candidate_queries = _openalex_candidate_queries(title, abstract)
+    if not candidate_queries:
+        logger.info("[Step1-Search:OpenAlex] 空查询，跳过搜索")
+        return []
+
+    base_params: Dict[str, Any] = {
+        "per-page": min(limit + 5, 50),
+        "filter": "has_abstract:true",
+        "select": ",".join([
+            "id",
+            "doi",
+            "display_name",
+            "title",
+            "abstract_inverted_index",
+            "publication_year",
+            "ids",
+            "primary_location",
+            "best_oa_location",
+            "cited_by_count",
+        ]),
+    }
+    if _OPENALEX_API_KEY:
+        base_params["api_key"] = _OPENALEX_API_KEY
+    if _OPENALEX_MAILTO:
+        base_params["mailto"] = _OPENALEX_MAILTO
+
+    logger.info("[Step1-Search:OpenAlex] 查询 OpenAlex Works API ...")
+    logger.info("[Step1-Search:OpenAlex]   candidate queries = %s", [q[:100] for q in candidate_queries])
+    logger.info("[Step1-Search:OpenAlex]   limit = %d (请求 %d)", limit, base_params["per-page"])
+
+    headers = {"User-Agent": "crossdisc-benchmark/1.0"}
+    results: List[Dict[str, Any]] = []
+    raw_total = 0
+    skipped_no_abstract = 0
+    skipped_self_match = 0
+    title_lower = title.strip().lower()
+
+    for query_idx, query in enumerate(candidate_queries, start=1):
+        params = dict(base_params)
+        params["search"] = query[:300]
+        query_raw_total = 0
+        query_skipped_no_abstract = 0
+        query_skipped_self_match = 0
+
+        logger.info("[Step1-Search:OpenAlex]   try #%d query = '%s'", query_idx, params["search"][:120])
+
+        for attempt in range(3):
+            try:
+                resp = requests.get(
+                    _OPENALEX_WORKS_URL,
+                    params=params,
+                    headers=headers,
+                    timeout=30,
+                )
+                if resp.status_code == 429:
+                    wait = int(resp.headers.get("Retry-After", 2 ** attempt + 1))
+                    logger.warning(
+                        "[Step1-Search:OpenAlex] rate limited (429), waiting %ds ... (attempt %d/3)",
+                        wait, attempt + 1,
+                    )
+                    time.sleep(wait)
+                    continue
+                resp.raise_for_status()
+                data = resp.json().get("results", [])
+                query_raw_total = len(data)
+                raw_total += query_raw_total
+
+                for work in data:
+                    work_title = (work.get("display_name") or work.get("title") or "").strip()
+                    work_abstract = _reconstruct_openalex_abstract(work.get("abstract_inverted_index"))
+                    if not work_title or not work_abstract:
+                        query_skipped_no_abstract += 1
+                        continue
+                    if _OPENALEX_SKIP_SELF_MATCH and work_title.lower() == title_lower:
+                        query_skipped_self_match += 1
+                        continue
+
+                    ids = work.get("ids") or {}
+                    paper_id = work.get("id") or ids.get("openalex", "")
+                    if any(p.get("paperId") == paper_id for p in results):
+                        continue
+
+                    location = work.get("best_oa_location") or work.get("primary_location") or {}
+                    results.append({
+                        "title": work_title,
+                        "abstract": work_abstract,
+                        "paperId": paper_id,
+                        "doi": work.get("doi") or ids.get("doi", ""),
+                        "year": work.get("publication_year"),
+                        "url": location.get("landing_page_url") or ids.get("openalex", ""),
+                        "source_provider": "openalex",
+                        "source_query": params["search"],
+                        "cited_by_count": work.get("cited_by_count", 0),
+                    })
+                    if len(results) >= limit:
+                        break
+
+                skipped_no_abstract += query_skipped_no_abstract
+                skipped_self_match += query_skipped_self_match
+                logger.info(
+                    "[Step1-Search:OpenAlex]   try #%d 返回 %d 篇，保留累计 %d 篇 (无摘要跳过: %d, 自匹配跳过: %d)",
+                    query_idx, query_raw_total, len(results), query_skipped_no_abstract, query_skipped_self_match,
+                )
+                break
+            except requests.RequestException as e:
+                logger.warning("[Step1-Search:OpenAlex] attempt %d/3 failed: %s", attempt + 1, e)
+                if attempt < 2:
+                    time.sleep(2 ** attempt)
+
+        if results:
+            break
+
+    logger.info(
+        "[Step1-Search:OpenAlex] API 累计返回 %d 篇原始结果，过滤后保留 %d 篇 (无摘要跳过: %d, 自匹配跳过: %d)",
+        raw_total, len(results), skipped_no_abstract, skipped_self_match,
+    )
+    for i, p in enumerate(results):
+        logger.info(
+            "[Step1-Search:OpenAlex]   [%d/%d] title='%s' paperId=%s year=%s",
+            i + 1, len(results), p["title"][:70], str(p.get("paperId", ""))[:40], p.get("year"),
+        )
+
+    return results
+
+
+def search_semantic_scholar_papers(
     title: str,
     abstract: str = "",
     limit: int = 10,
@@ -116,6 +317,32 @@ def search_similar_papers(
     return results
 
 
+def search_similar_papers(
+    title: str,
+    abstract: str = "",
+    limit: int = 10,
+    provider: str = "openalex",
+) -> List[Dict[str, Any]]:
+    provider = (provider or "openalex").strip().lower()
+    if provider in {"openalex", "oa"}:
+        return search_openalex_papers(title, abstract=abstract, limit=limit)
+    if provider in {"semantic_scholar", "semanticscholar", "s2"}:
+        papers = search_semantic_scholar_papers(title, abstract=abstract, limit=limit)
+        for paper in papers:
+            paper.setdefault("source_provider", "semantic_scholar")
+        return papers
+    if provider == "auto":
+        papers = search_openalex_papers(title, abstract=abstract, limit=limit)
+        if papers:
+            return papers
+        logger.warning("[Step1-Search] OpenAlex returned no papers; falling back to Semantic Scholar")
+        papers = search_semantic_scholar_papers(title, abstract=abstract, limit=limit)
+        for paper in papers:
+            paper.setdefault("source_provider", "semantic_scholar")
+        return papers
+    raise ValueError(f"Unsupported web search provider: {provider}")
+
+
 # ---------------------------------------------------------------------------
 #  Lightweight discipline classification via LLM
 # ---------------------------------------------------------------------------
@@ -177,6 +404,8 @@ def extract_paths_from_paper(
     abstract: str,
     primary: str,
     secondary_list: List[str],
+    source_provider: str = "openalex",
+    source_paper_id: str = "",
 ) -> List[Dict[str, Any]]:
     """
     Run the full extraction pipeline on a paper and return its
@@ -228,6 +457,8 @@ def extract_paths_from_paper(
                 "level": en_level,
                 "discipline": primary,
                 "source": "web_search",
+                "source_provider": source_provider,
+                "source_paper_id": source_paper_id,
                 "source_paper": title,
             })
 
@@ -252,8 +483,13 @@ def extract_paths_from_paper(
 #  Cache utilities
 # ---------------------------------------------------------------------------
 
-def _cache_key(title: str) -> str:
-    return hashlib.md5(title.strip().lower().encode("utf-8")).hexdigest()
+def _cache_key(title: str, provider: str = "openalex", limit: int = 10) -> str:
+    provider_norm = provider.strip().lower()
+    # Bump OpenAlex cache after query-strategy changes so stale empty caches
+    # created by over-specific title+abstract searches are not reused.
+    strategy = "openalex_query_v2" if provider_norm == "openalex" else "default"
+    content = f"{provider_norm}::{strategy}::{limit}::{title.strip().lower()}"
+    return hashlib.md5(content.encode("utf-8")).hexdigest()
 
 
 def _load_cache(cache_dir: str, key: str) -> Optional[List[Dict[str, Any]]]:
@@ -299,11 +535,12 @@ def search_and_extract_reference_paths(
     limit: int = 10,
     cache_dir: str = "web_search_cache",
     max_workers: int = 3,
+    provider: str = "openalex",
 ) -> List[Dict[str, Any]]:
     """
     Search for similar papers and extract knowledge paths from them.
 
-    1. Query Semantic Scholar for similar papers
+    1. Query the selected scholarly search provider for similar papers
     2. Classify each paper's disciplines (LLM)
     3. Run extraction pipeline to get hypothesis paths
     4. Return paths in gt_set-compatible format
@@ -330,7 +567,8 @@ def search_and_extract_reference_paths(
         List of path dicts, each with keys: path, level, discipline,
         source ("web_search"), source_paper.
     """
-    key = _cache_key(title)
+    provider = (provider or "openalex").strip().lower()
+    key = _cache_key(title, provider=provider, limit=limit)
     cached = _load_cache(cache_dir, key)
     if cached is not None:
         logger.info("=" * 70)
@@ -341,7 +579,7 @@ def search_and_extract_reference_paths(
     logger.info("=" * 70)
     logger.info("[WebSearch] 开始处理论文: '%s'", title[:80])
     logger.info("[WebSearch] abstract = '%s'", (abstract or "")[:120])
-    logger.info("[WebSearch] limit=%d, max_workers=%d, cache_dir='%s'", limit, max_workers, cache_dir)
+    logger.info("[WebSearch] provider=%s, limit=%d, max_workers=%d, cache_dir='%s'", provider, limit, max_workers, cache_dir)
     logger.info("=" * 70)
 
     # Initialize trace record
@@ -351,6 +589,7 @@ def search_and_extract_reference_paths(
             "title": title,
             "abstract": (abstract or "")[:500],
             "limit": limit,
+            "provider": provider,
         },
         "step1_search": {},
         "step2_classify": [],
@@ -362,16 +601,25 @@ def search_and_extract_reference_paths(
     logger.info("-" * 50)
     logger.info("[Step1-Search] >>> 搜索相似论文 ...")
     t0 = time.time()
-    papers = search_similar_papers(title, abstract, limit=limit)
+    papers = search_similar_papers(title, abstract, limit=limit, provider=provider)
     elapsed_search = time.time() - t0
     logger.info("[Step1-Search] 耗时 %.1fs", elapsed_search)
 
     trace["step1_search"] = {
         "query": title.strip()[:200],
+        "provider": provider,
         "elapsed_sec": round(elapsed_search, 2),
         "num_results": len(papers),
         "papers": [
-            {"title": p["title"], "paperId": p["paperId"], "abstract_len": len(p.get("abstract", ""))}
+            {
+                "title": p["title"],
+                "paperId": p.get("paperId", ""),
+                "doi": p.get("doi", ""),
+                "year": p.get("year"),
+                "url": p.get("url", ""),
+                "source_provider": p.get("source_provider", provider),
+                "abstract_len": len(p.get("abstract", "")),
+            }
             for p in papers
         ],
     }
@@ -399,6 +647,10 @@ def search_and_extract_reference_paths(
         p_trace: Dict[str, Any] = {
             "title": p_title,
             "paperId": paper.get("paperId", ""),
+            "source_provider": paper.get("source_provider", provider),
+            "doi": paper.get("doi", ""),
+            "year": paper.get("year"),
+            "url": paper.get("url", ""),
         }
 
         # Step 2: Classify
@@ -420,7 +672,14 @@ def search_and_extract_reference_paths(
 
         # Step 3: Extract
         t_ext = time.time()
-        paths = extract_paths_from_paper(p_title, p_abstract, primary, secondary_list)
+        paths = extract_paths_from_paper(
+            p_title,
+            p_abstract,
+            primary,
+            secondary_list,
+            source_provider=paper.get("source_provider", provider),
+            source_paper_id=paper.get("paperId", ""),
+        )
         elapsed_ext = time.time() - t_ext
         p_trace["extract"] = {
             "elapsed_sec": round(elapsed_ext, 2),

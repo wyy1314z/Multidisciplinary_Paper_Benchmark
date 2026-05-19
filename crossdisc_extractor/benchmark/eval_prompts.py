@@ -52,6 +52,9 @@ PROMPT_FEASIBILITY = """你是一位跨学科科研评估专家。请评估以�
 【假设路径】
 {hypothesis_path}
 
+【参考证据（由当前评估开关决定，可能来自 Benchmark GT、Web Search，或为空）】
+{reference_evidence}
+
 【评分原则】
 Feasibility 不等于逻辑是否通顺，也不等于是否可证伪。
 它专门评估：在当前可获得的数据、方法、资源和验证条件下，这条假设是否现实可执行。
@@ -83,14 +86,14 @@ Feasibility 不等于逻辑是否通顺，也不等于是否可证伪。
 
 【输出格式】
 请输出一个 JSON 对象，包含以下字段：
-{{{{
+{{
     "data_feasibility": <float>,
     "method_feasibility": <float>,
     "resource_feasibility": <float>,
     "validation_readiness": <float>,
     "minimum_viable_validation": "<一句话说明最小可行验证方案>",
     "reason": "<简短说明主要瓶颈>"
-}}}}
+}}
 只输出 JSON，不要输出其他内容。
 """
 
@@ -100,6 +103,9 @@ PROMPT_TESTABILITY = """你是一位实验设计专家。请评估以下跨学�
 
 【假设路径】
 {hypothesis_path}
+
+【参考证据（由当前评估开关决定，可能来自 Benchmark GT、Web Search，或为空）】
+{reference_evidence}
 
 【评分维度】(每项 0-10 分)
 1. **具体性 (Specificity)**:
@@ -116,21 +122,21 @@ PROMPT_TESTABILITY = """你是一位实验设计专家。请评估以下跨学�
    - 是否存在可能的实验结果能否定该假设？
    - 如果任何结果都不能否定它，说明它不是好的科学假设
 
-4. **资源可行性 (Resource Feasibility)**:
-   - 验证该假设需要的实验资源是否合理？
-   - 10分: 标准实验室即可验证
-   - 5分: 需要专业设备但可获取
-   - 0分: 需要尚不存在的技术
+4. **验证设计清晰度 / 资源可行性 (Validation Design Clarity / Resource Feasibility)**:
+   - 是否能提出明确的最小验证方案，且该方案所需资源是否合理？
+   - 10分: 最小验证方案清晰，标准实验室或常规数据即可验证
+   - 5分: 需要进一步细化，或需要专业设备但现实中可获取
+   - 0分: 无法形成明确验证方案，或严重依赖尚不存在的技术
 
 【输出格式】
 请输出一个 JSON 对象，包含以下字段：
-{{{{
+{{
     "specificity": <float>,
     "measurability": <float>,
     "falsifiability": <float>,
     "resource_feasibility": <float>,
     "suggested_experiment": "<简述一个验证方案>"
-}}}}
+}}
 只输出 JSON，不要输出其他内容。
 """
 # 重点：逻辑深度、跨学科融合度

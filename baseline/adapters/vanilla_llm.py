@@ -13,7 +13,12 @@ import json
 import time
 from typing import Optional
 
-from baseline.common import BaseHypothesisAdapter, PaperInput, HypothesisOutput
+from baseline.common import (
+    BaseHypothesisAdapter,
+    HypothesisOutput,
+    PaperInput,
+    get_external_baseline_input,
+)
 
 
 VANILLA_SYSTEM = """You are a scientific research expert. Given a paper's title and abstract, \
@@ -28,6 +33,8 @@ Requirements:
 VANILLA_USER_TEMPLATE = """Paper Title: {title}
 
 Abstract: {abstract}
+
+Introduction Snippet: {introduction}
 
 Primary Discipline: {primary}
 Related Disciplines: {secondary}
@@ -50,11 +57,13 @@ class VanillaLLMAdapter(BaseHypothesisAdapter):
     def generate(self, paper: PaperInput, num_hypotheses: int = 3) -> HypothesisOutput:
         from crossdisc_extractor.utils.llm import chat_completion_with_retry
 
+        context = get_external_baseline_input(paper)
         user_msg = VANILLA_USER_TEMPLATE.format(
-            title=paper.title,
-            abstract=paper.abstract,
-            primary=paper.primary_discipline or "N/A",
-            secondary=", ".join(paper.secondary_disciplines) if paper.secondary_disciplines else "N/A",
+            title=context.title,
+            abstract=context.abstract,
+            introduction=context.introduction_text,
+            primary=context.primary_discipline,
+            secondary=context.secondary_text,
             num=num_hypotheses,
         )
         messages = [

@@ -25,6 +25,34 @@ import numpy as np
 
 logger = logging.getLogger("baseline.evaluate")
 
+
+def _is_valid_hypothesis(hypothesis: Any) -> bool:
+    if not isinstance(hypothesis, str):
+        return False
+    cleaned = hypothesis.strip()
+    return bool(cleaned) and not cleaned.startswith("[ERROR]")
+
+
+def select_primary_hypothesis(free_hypotheses: List[str]) -> str:
+    """
+    选择进入评测的主假设。
+
+    策略：
+    1. 优先保留第 1 条（尊重生成方法本身的排序）
+    2. 如果第 1 条无效，再回退到“最长的有效假设”
+    """
+    if not free_hypotheses:
+        return ""
+
+    first = free_hypotheses[0]
+    if _is_valid_hypothesis(first):
+        return first.strip()
+
+    valid_hypotheses = [h.strip() for h in free_hypotheses if _is_valid_hypothesis(h)]
+    if not valid_hypotheses:
+        return ""
+    return max(valid_hypotheses, key=len)
+
 # ---------------------------------------------------------------------------
 #  A) IdeaBench 风格指标（自由文本假设 vs 原文 abstract）
 # ---------------------------------------------------------------------------
@@ -241,10 +269,10 @@ def evaluate_single_output(
     # --- 自由文本指标 ---
     free_hyps = output.get("free_text_hypotheses", [])
     if free_hyps and abstract:
-        # 取最佳假设（最长的非 error 假设）
-        valid_hyps = [h for h in free_hyps if not h.startswith("[ERROR]")]
+        # 优先使用第 1 条；若首条失败，再回退到最长的有效假设。
+        valid_hyps = [h.strip() for h in free_hyps if _is_valid_hypothesis(h)]
         if valid_hyps:
-            best_hyp = max(valid_hyps, key=len)
+            best_hyp = select_primary_hypothesis(free_hyps)
             result["text_metrics"] = compute_text_similarity_metrics(best_hyp, abstract)
             if use_llm_judge:
                 result["llm_judge"] = llm_judge_hypothesis(title, abstract, best_hyp)
@@ -375,4 +403,3 @@ def print_comparison_table(aggregated: Dict[str, Dict[str, Any]]):
             print(row)
 
     print("\n" + "=" * 80)
-

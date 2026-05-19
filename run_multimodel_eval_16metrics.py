@@ -44,6 +44,37 @@ def _sanitize_model_name(model_name: str) -> str:
     return model_name.replace("/", "_").replace(":", "_")
 
 
+def _load_model_records(path: str) -> List[Dict[str, Any]]:
+    with open(path, encoding="utf-8") as f:
+        payload = json.load(f)
+
+    if isinstance(payload, list):
+        bad_items = [type(item).__name__ for item in payload if not isinstance(item, dict)]
+        if bad_items:
+            logger.warning(
+                "[%s] 发现 %d 条非 dict 记录，已跳过: %s",
+                os.path.basename(path),
+                len(bad_items),
+                ", ".join(sorted(set(bad_items))),
+            )
+        return [item for item in payload if isinstance(item, dict)]
+
+    if isinstance(payload, dict):
+        if isinstance(payload.get("records"), list):
+            records = payload["records"]
+            logger.info("[%s] 从 payload['records'] 读取 %d 条记录", os.path.basename(path), len(records))
+            return [item for item in records if isinstance(item, dict)]
+        logger.info("[%s] 跳过元数据文件（顶层是 dict，不是记录列表）", os.path.basename(path))
+        return []
+
+    logger.warning(
+        "[%s] 顶层 JSON 类型为 %s，无法作为模型记录读取，已跳过",
+        os.path.basename(path),
+        type(payload).__name__,
+    )
+    return []
+
+
 # ---------------------------------------------------------------------------
 # LLM 调用: 文本→结构化路径解析
 # ---------------------------------------------------------------------------
@@ -184,7 +215,7 @@ def build_paper_map(test_data_path: str, input_mode: str = "auto") -> Dict[str, 
         first = items[0]
         if "parsed" in first:
             input_mode = "extraction"
-        elif "queries" in first:
+        elif "queries" in first or "query" in first:
             input_mode = "query_eval"
         else:
             raise ValueError("无法自动识别 test-data 格式，请显式指定 --input-mode")
@@ -194,7 +225,7 @@ def build_paper_map(test_data_path: str, input_mode: str = "auto") -> Dict[str, 
         if input_mode == "query_eval":
             title = item.get("title", "")
             pid = item.get("paper_id") or hashlib.md5(title.encode("utf-8")).hexdigest()[:12]
-            queries = item.get("queries", {})
+            queries = item.get("queries") or item.get("query") or {}
             paper_map[pid] = {
                 "title": title,
                 "abstract": item.get("abstract", ""),
@@ -262,10 +293,38 @@ def main():
     parser.add_argument("--test-data", required=True, help="test_extraction.json (论文元数据)")
     parser.add_argument("--output-dir", required=True, help="输出目录")
     parser.add_argument("--taxonomy", default=None, help="学科分类树 JSON")
+    parser.add_argument("--use-benchmark-gt", dest="use_benchmark_gt", action="store_true", default=True,
+                        help="评估时使用 Benchmark GT 参考证据和 KG 背景统计 (默认开启)")
+    parser.add_argument("--no-benchmark-gt", dest="use_benchmark_gt", action="store_false",
+                        help="评估时不使用 Benchmark GT 参考证据和 KG 背景统计；可与 --web-search 独立组合")
+    parser.add_argument("--include-paper-gt", dest="include_paper_gt", action="store_true", default=True,
+                        help="将 test-data 中的 gt_terms/gt_relations 作为本地 GT 并入 reference evidence (默认开启)")
+    parser.add_argument("--exclude-paper-gt", dest="include_paper_gt", action="store_false",
+                        help="不使用 test-data 自带 gt_terms/gt_relations，仅使用 Benchmark GT / Web Search GT")
+    parser.add_argument("--web-search", action="store_true", help="启用 Web Search 参考证据")
+    parser.add_argument("--no-web-search", dest="web_search", action="store_false",
+                        help="禁用 Web Search 参考证据 (默认)")
+    parser.add_argument("--web-search-limit", type=int, default=10, help="搜索相似论文数量")
+    parser.add_argument("--web-cache-dir", default=None, help="Web Search 缓存目录")
+    parser.add_argument("--web-provider", choices=["openalex", "semantic_scholar", "auto"], default="openalex",
+                        help="Web Search provider (默认 openalex)")
     parser.add_argument("--input-mode", choices=["auto", "extraction", "query_eval"], default="auto")
     parser.add_argument("--max-items", type=int, default=None, help="每个模型最多评测 N 条")
     parser.add_argument("--include-models", nargs="*", default=None, help="只评测这些模型名")
     parser.add_argument("--skip-models", nargs="*", default=[], help="跳过的模型名")
+    parser.add_argument("--fast-mode", dest="fast_mode", action="store_true",
+                        help="使用快速近似版客观指标（默认开启）")
+    parser.add_argument("--full-mode", dest="fast_mode", action="store_false",
+                        help="关闭 fast mode，使用完整版客观指标")
+    parser.add_argument("--x5-only", dest="x5_only", action="store_true",
+                        help="只计算 X+5 所需指标（默认开启）")
+    parser.add_argument("--all-metrics", dest="x5_only", action="store_false",
+                        help="计算全部旧指标（包括非 X+5 指标）")
+    parser.add_argument("--with-legacy-llm-judge", dest="include_legacy_llm_judge", action="store_true",
+                        help="额外计算 innovation/scientificity/legacy_feasibility")
+    parser.add_argument("--skip-legacy-llm-judge", dest="include_legacy_llm_judge", action="store_false",
+                        help="跳过 legacy LLM judge（默认）")
+    parser.set_defaults(fast_mode=True, x5_only=True, include_legacy_llm_judge=False)
     args = parser.parse_args()
 
     os.makedirs(args.output_dir, exist_ok=True)
@@ -277,10 +336,19 @@ def main():
     logger.info("Step 1: 构建全局知识图谱 (GlobalKG)")
     from crossdisc_extractor.benchmark.evaluate_benchmark import (
         GlobalKG,
+        build_reference_evidence,
         evaluate_single_path,
         normalize_paths_structure,
         structural_diversity,
         hierarchical_depth_progression,
+    )
+
+    logger.info(
+        "Evaluation optimization profile: fast_mode=%s x5_only=%s include_legacy_llm_judge=%s include_paper_gt=%s",
+        args.fast_mode,
+        args.x5_only,
+        args.include_legacy_llm_judge,
+        args.include_paper_gt,
     )
 
     kg = GlobalKG(args.benchmark, taxonomy_path=args.taxonomy)
@@ -290,7 +358,10 @@ def main():
     paper_map = build_paper_map(args.test_data, input_mode=args.input_mode)
 
     # 3. 遍历模型结果
-    model_files = sorted(glob.glob(os.path.join(args.model_results_dir, "*.json")))
+    model_files = [
+        path for path in sorted(glob.glob(os.path.join(args.model_results_dir, "*.json")))
+        if os.path.basename(path) != "manifest.json"
+    ]
     logger.info("Step 3: 开始评测 %d 个模型", len(model_files))
 
     all_results: List[Dict[str, Any]] = []
@@ -310,8 +381,10 @@ def main():
             logger.info("[%s] 跳过 (用户指定)", model_name)
             continue
 
-        with open(model_file, encoding="utf-8") as f:
-            records = json.load(f)
+        records = _load_model_records(model_file)
+        if not records:
+            logger.warning("[%s] 没有可用记录，跳过", model_name)
+            continue
 
         # Skip models with all errors
         valid_records = [r for r in records if not r.get("error")]
@@ -365,14 +438,54 @@ def main():
                 })
                 continue
 
-            # 3b. 检索 GT 参考路径
+            # 3b. 构造可独立开关的 GT / Web Search 参考证据
             l1_query = paper["l1_query"] or f"关于 {paper['primary']} 的 {paper['title']} 的跨学科研究假设"
-            gt_set = kg.retrieve_relevant_paths(paper["primary"], l1_query, k=3)
-            logger.info("[%s] GT 参考路径: %d 条", model_name, len(gt_set))
+            gt_set: List[Dict[str, Any]] = []
+            if args.use_benchmark_gt:
+                gt_set = kg.retrieve_relevant_paths(paper["primary"], l1_query, k=3)
+                logger.info("[%s] Benchmark GT 参考路径: %d 条", model_name, len(gt_set))
+            else:
+                logger.info("[%s] Benchmark GT 已关闭", model_name)
 
-            if not gt_set:
-                logger.warning("[%s] 无 GT 参考路径，跳过", model_name)
-                continue
+            web_ref_paths: List[Dict[str, Any]] = []
+            if args.web_search:
+                try:
+                    from crossdisc_extractor.benchmark.web_search import search_and_extract_reference_paths
+
+                    web_cache = args.web_cache_dir or os.path.join(args.output_dir, "web_search_cache")
+                    web_ref_paths = search_and_extract_reference_paths(
+                        title=paper["title"],
+                        abstract=paper["abstract"],
+                        limit=args.web_search_limit,
+                        cache_dir=web_cache,
+                        provider=args.web_provider,
+                    )
+                    logger.info("[%s] Web Search 参考路径: %d 条", model_name, len(web_ref_paths))
+                except Exception as e:
+                    logger.warning("[%s] Web Search 失败 (non-fatal): %s", model_name, e)
+            else:
+                logger.info("[%s] Web Search 已关闭", model_name)
+
+            if args.include_paper_gt:
+                gt_data = {
+                    "terms": [
+                        {"term": term, "normalized": term}
+                        for term in (paper.get("gt_terms") or [])
+                    ],
+                    "relations": paper.get("gt_relations") or [],
+                    "paths": [],
+                }
+            else:
+                gt_data = {"terms": [], "relations": [], "paths": []}
+            reference_evidence = build_reference_evidence(
+                gt_data=gt_data,
+                benchmark_gt_paths=gt_set,
+                web_ref_paths=web_ref_paths,
+                use_benchmark_gt=args.use_benchmark_gt,
+                use_web_search=args.web_search,
+            )
+            reference_paths = reference_evidence["reference_paths"]
+            logger.info("[%s] Reference evidence: %s", model_name, reference_evidence["source_counts"])
 
             # 3c. 逐 level 评估
             item_scores: Dict[str, list] = defaultdict(list)
@@ -386,16 +499,20 @@ def main():
                     try:
                         s = evaluate_single_path(
                             path,
-                            gt_set,
+                            reference_paths,
                             l1_query,
                             paper["primary"],
                             level,
                             gen_query=l1_query,
                             kg=kg,
-                            gt_terms=paper.get("gt_terms"),
-                            gt_relations=paper.get("gt_relations"),
-                            gt_evidence_paths=None,
+                            gt_terms=reference_evidence["gt_terms"],
+                            gt_relations=reference_evidence["gt_relations"],
+                            gt_evidence_paths=reference_evidence["gt_evidence_paths"],
                             abstract=paper["abstract"],
+                            use_kg_background=args.use_benchmark_gt,
+                            fast_mode=args.fast_mode,
+                            x5_only=args.x5_only,
+                            include_legacy_llm_judge=args.include_legacy_llm_judge,
                             _item_id=f"{model_name}_{pid}",
                             _path_idx=pi,
                         )
@@ -404,22 +521,23 @@ def main():
                     except Exception as e:
                         logger.error("[%s] 评估失败 %s[%d]: %s", model_name, level, pi, e)
 
-            # Structural diversity (per-level)
-            for lvl in ["L1", "L2", "L3"]:
-                lvl_paths = parsed_paths.get(lvl, [])
-                if lvl_paths:
-                    sd = structural_diversity(lvl_paths)
-                    for sdk, sdv in sd.items():
-                        item_scores[f"{lvl}_{sdk}"].append(sdv)
+            if not args.x5_only:
+                # Structural diversity (per-level)
+                for lvl in ["L1", "L2", "L3"]:
+                    lvl_paths = parsed_paths.get(lvl, [])
+                    if lvl_paths:
+                        sd = structural_diversity(lvl_paths)
+                        for sdk, sdv in sd.items():
+                            item_scores[f"{lvl}_{sdk}"].append(sdv)
 
-            # Hierarchical depth progression
-            hdp = hierarchical_depth_progression(
-                parsed_paths.get("L1", []),
-                parsed_paths.get("L2", []),
-                parsed_paths.get("L3", []),
-            )
-            for hdp_k, hdp_v in hdp.items():
-                item_scores[f"depth_{hdp_k}"].append(hdp_v)
+                # Hierarchical depth progression
+                hdp = hierarchical_depth_progression(
+                    parsed_paths.get("L1", []),
+                    parsed_paths.get("L2", []),
+                    parsed_paths.get("L3", []),
+                )
+                for hdp_k, hdp_v in hdp.items():
+                    item_scores[f"depth_{hdp_k}"].append(hdp_v)
 
             # Average scores
             avg_scores = {k: float(np.mean(v)) if v else 0.0 for k, v in item_scores.items()}
@@ -430,12 +548,25 @@ def main():
                 "paper_id": pid,
                 "title": paper["title"],
                 "parse_error": False,
+                "reference_sources": reference_evidence["source_counts"],
+                "evaluation_profile": {
+                    "fast_mode": args.fast_mode,
+                    "x5_only": args.x5_only,
+                    "include_legacy_llm_judge": args.include_legacy_llm_judge,
+                    "include_paper_gt": args.include_paper_gt,
+                },
                 "scores": avg_scores,
             })
 
             # Log summary
-            key_metrics = ["L1_consistency_f1", "L1_innovation", "L1_factual_precision",
-                           "L1_rao_stirling", "L1_chain_coherence", "L1_testability"]
+            key_metrics = [
+                "L1_consistency_f1",
+                "L1_factual_precision",
+                "L1_rao_stirling",
+                "L1_chain_coherence",
+                "L1_testability",
+                "L1_feasibility",
+            ]
             parts = [f"{m.replace('L1_','')}={avg_scores.get(m, 0):.3f}" for m in key_metrics if m in avg_scores]
             logger.info("[%s] 评分摘要: %s", model_name, "  ".join(parts))
 
@@ -479,38 +610,85 @@ def main():
     final_summary = {
         "by_model_method": summary,
         "by_model_overall": model_overall,
+        "evaluation_profile": {
+            "fast_mode": args.fast_mode,
+            "x5_only": args.x5_only,
+            "include_legacy_llm_judge": args.include_legacy_llm_judge,
+            "include_paper_gt": args.include_paper_gt,
+        },
     }
+
+    try:
+        from crossdisc_extractor.benchmark.x5_metrics import (
+            compute_x5_breakdown,
+            build_x5_scores,
+            build_x5_scores_by_level,
+        )
+
+        final_summary["x5_by_model_overall"] = build_x5_scores_by_level(model_overall)
+        final_summary["x5_breakdown_by_model_overall"] = {
+            level: {
+                model: compute_x5_breakdown(scores, level=level)
+                for model, scores in sorted(model_overall.items())
+            }
+            for level in ("L1", "L2", "L3")
+        }
+        x5_by_model_method: Dict[str, Dict[str, Dict[str, Dict[str, float]]]] = {}
+        x5_breakdown_by_model_method: Dict[str, Any] = {}
+        for model, methods in summary.items():
+            x5_by_model_method[model] = {
+                method: {
+                    level: build_x5_scores({method: scores}, level=level)[method]
+                    for level in ("L1", "L2", "L3")
+                }
+                for method, scores in methods.items()
+            }
+            x5_breakdown_by_model_method[model] = {
+                method: {
+                    level: compute_x5_breakdown(scores, level=level)
+                    for level in ("L1", "L2", "L3")
+                }
+                for method, scores in methods.items()
+            }
+        final_summary["x5_by_model_method"] = x5_by_model_method
+        final_summary["x5_breakdown_by_model_method"] = x5_breakdown_by_model_method
+    except Exception as exc:
+        logger.warning("X+5 aggregation failed (non-fatal): %s", exc)
 
     summary_path = os.path.join(args.output_dir, "multimodel_16metrics_summary.json")
     with open(summary_path, "w", encoding="utf-8") as f:
         json.dump(final_summary, f, ensure_ascii=False, indent=2)
     logger.info("聚合摘要已保存: %s", summary_path)
 
-    # 6. Print summary table
-    print("\n" + "=" * 90)
-    print("多模型 16 指标评测结果总览")
-    print("=" * 90)
+    # 6. Print X+5 summary table
+    print("\n" + "=" * 118)
+    print("多模型 X+5 指标评测结果总览 (L1)")
+    print("=" * 118)
 
-    # Core 6 metrics for display
+    x5_l1 = final_summary.get("x5_by_model_overall", {}).get("L1", {})
     display_metrics = [
-        "L1_innovation", "L1_testability", "L1_consistency_f1",
-        "L1_rao_stirling", "L1_factual_precision", "L1_atypical_combination",
+        "interdisciplinary_integration",
+        "structural_validity",
+        "evidence_groundedness",
+        "novelty",
+        "testability",
+        "feasibility",
     ]
-    short_names = ["innov", "test", "cons_f1", "rao_stir", "fact_prec", "atyp_comb"]
+    short_names = ["interdisc", "struct", "evidence", "novelty", "test", "feasible"]
 
-    header = f"{'Model':<30s}" + "".join(f"{n:>10s}" for n in short_names)
+    header = f"{'Model':<30s}" + "".join(f"{n:>14s}" for n in short_names)
     print(header)
-    print("-" * 90)
+    print("-" * 118)
 
-    for model in sorted(model_overall.keys()):
-        vals = model_overall[model]
+    for model in sorted(x5_l1.keys()):
+        vals = x5_l1[model]
         row = f"{model:<30s}"
         for m in display_metrics:
             v = vals.get(m, 0.0)
-            row += f"{v:>10.4f}"
+            row += f"{v:>14.4f}"
         print(row)
 
-    print("=" * 90)
+    print("=" * 118)
     print(f"\n评测完成。共 {len(all_results)} 条记录, {len(model_overall)} 个有效模型。")
 
 

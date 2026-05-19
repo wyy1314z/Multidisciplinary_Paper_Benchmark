@@ -34,6 +34,76 @@ class PaperInput:
         return asdict(self)
 
 
+EXTERNAL_BASELINE_INTRO_MAX_CHARS = 2000
+
+
+@dataclass(frozen=True)
+class ExternalBaselineInput:
+    """
+    外部 baseline 的最小公平输入视图。
+
+    这层显式屏蔽 concepts / relations / queries 等项目内部结构化字段，
+    让外部 baseline 统一只使用论文文本与学科标签。
+    """
+    title: str
+    abstract: str
+    introduction: str = ""
+    primary_discipline: str = "N/A"
+    secondary_disciplines: tuple[str, ...] = ()
+
+    @property
+    def secondary_text(self) -> str:
+        return ", ".join(self.secondary_disciplines) if self.secondary_disciplines else "N/A"
+
+    @property
+    def introduction_text(self) -> str:
+        return self.introduction or "N/A"
+
+
+def _normalize_prompt_text(text: str) -> str:
+    """压缩空白，避免长文本 prompt 中出现异常空行或多空格。"""
+    return " ".join((text or "").split())
+
+
+def _truncate_text(text: str, max_chars: int) -> str:
+    text = _normalize_prompt_text(text)
+    if not text or len(text) <= max_chars:
+        return text
+
+    clipped = text[:max_chars].rsplit(" ", 1)[0].strip()
+    if not clipped:
+        clipped = text[:max_chars].strip()
+    return f"{clipped}..."
+
+
+def get_external_baseline_input(
+    paper: PaperInput,
+    intro_max_chars: int = EXTERNAL_BASELINE_INTRO_MAX_CHARS,
+) -> ExternalBaselineInput:
+    """
+    返回外部 baseline 允许使用的输入字段。
+
+    白名单:
+    - title
+    - abstract
+    - introduction
+    - primary / secondary discipline labels
+    """
+    secondary = tuple(
+        d for d in (_normalize_prompt_text(x) for x in (paper.secondary_disciplines or []))
+        if d
+    )
+    primary = _normalize_prompt_text(paper.primary_discipline) or "N/A"
+
+    return ExternalBaselineInput(
+        title=_normalize_prompt_text(paper.title),
+        abstract=_normalize_prompt_text(paper.abstract),
+        introduction=_truncate_text(paper.introduction, intro_max_chars),
+        primary_discipline=primary,
+        secondary_disciplines=secondary,
+    )
+
+
 # ---------------------------------------------------------------------------
 #  统一输出格式
 # ---------------------------------------------------------------------------

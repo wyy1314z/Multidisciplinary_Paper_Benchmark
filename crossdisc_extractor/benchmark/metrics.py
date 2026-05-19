@@ -34,6 +34,16 @@ import numpy as np
 
 logger = logging.getLogger("eval_metrics")
 
+_SBERT_TEXT_CACHE: Dict[str, np.ndarray] = {}
+_NLI_LABEL_CACHE: Dict[Tuple[str, str], str] = {}
+_EMBEDDING_BRIDGING_CACHE: Dict[Tuple[str, str], float] = {}
+_CONCEPT_COVERAGE_CACHE: Dict[Tuple[Tuple[str, ...], Tuple[str, ...], float], Dict[str, float]] = {}
+_PATH_ALIGNMENT_CACHE: Dict[Tuple[str, Tuple[str, ...]], Dict[str, float]] = {}
+_REMOTE_ASSOCIATION_CACHE: Dict[Tuple[Tuple[str, str], ...], float] = {}
+_HALLUCINATION_RATE_CACHE: Dict[Tuple[Tuple[str, ...], Tuple[str, ...], str, float], float] = {}
+_FACTUAL_PRECISION_CACHE: Dict[Tuple[Any, ...], float] = {}
+_CHAIN_COHERENCE_CACHE: Dict[Tuple[Tuple[str, str, str, str], ...], Dict[str, Any]] = {}
+
 try:
     import torch as _TORCH
 except ImportError:  # pragma: no cover
@@ -157,6 +167,85 @@ def _cosine_sim_vectors(a: np.ndarray, b: np.ndarray) -> float:
     if na == 0 or nb == 0:
         return 0.0
     return float(np.dot(a, b) / (na * nb))
+
+
+def _cache_text(text: str) -> str:
+    return (text or "").strip()
+
+
+def _cache_text_lower(text: str) -> str:
+    return _cache_text(text).lower()
+
+
+def _path_signature(path_steps: List[Dict[str, Any]]) -> Tuple[Tuple[str, str, str, str], ...]:
+    return tuple(
+        (
+            _cache_text_lower(step.get("head", "")),
+            _cache_text_lower(step.get("relation") or step.get("relation_type") or ""),
+            _cache_text_lower(step.get("tail", "")),
+            _cache_text_lower(step.get("claim", "")),
+        )
+        for step in path_steps
+    )
+
+
+def _relation_signature(gt_relations: List[Dict[str, Any]]) -> Tuple[Tuple[str, str, str, str], ...]:
+    items = []
+    for rel in gt_relations:
+        items.append(
+            (
+                _cache_text_lower(rel.get("head", "")),
+                _cache_text_lower(rel.get("tail", "")),
+                _cache_text_lower(rel.get("relation_type", "")),
+                _cache_text(rel.get("evidence_sentence", "")),
+            )
+        )
+    return tuple(items)
+
+
+def _path_to_text(path_steps: List[Dict[str, Any]]) -> str:
+    parts = []
+    for step in path_steps:
+        head = step.get("head", "")
+        rel = step.get("relation", step.get("relation_type", ""))
+        tail = step.get("tail", "")
+        parts.append(f"{head} [{rel}] {tail}")
+    return " -> ".join(parts)
+
+
+def _encode_texts_cached(texts: List[str]) -> Optional[List[np.ndarray]]:
+    sbert = _get_sbert()
+    if sbert is None:
+        return None
+
+    keys = [_cache_text(text) for text in texts]
+    missing = [key for key in keys if key not in _SBERT_TEXT_CACHE]
+    if missing:
+        embeddings = sbert.encode(missing)
+        for key, emb in zip(missing, embeddings):
+            _SBERT_TEXT_CACHE[key] = np.asarray(emb)
+
+    return [_SBERT_TEXT_CACHE[key] for key in keys]
+
+
+def _cached_nli_label(premise: str, hypothesis: str) -> Optional[str]:
+    premise_text = _cache_text(premise)
+    hypothesis_text = _cache_text(hypothesis)
+    if not premise_text or not hypothesis_text:
+        return None
+
+    cache_key = (premise_text, hypothesis_text)
+    if cache_key in _NLI_LABEL_CACHE:
+        return _NLI_LABEL_CACHE[cache_key]
+
+    nli = _get_nli()
+    if nli is None:
+        return None
+
+    result = nli(f"{premise_text}</s></s>{hypothesis_text}", truncation=True)
+    label = result[0]["label"].upper() if result else "NEUTRAL"
+    _NLI_LABEL_CACHE[cache_key] = label
+    return label
 
 
 # ===========================================================================
@@ -323,6 +412,23 @@ def reasoning_chain_coherence(path_steps: List[Dict[str, Any]]) -> Dict[str, Any
     if len(path_steps) <= 1:
         return {"overall_coherence": 1.0, "per_hop": [], "weakest_hop_score": 1.0}
 
+    cache_key = tuple(
+        (
+            _cache_text(step.get("claim", "")),
+            _cache_text(path_steps[i + 1].get("claim", "")) if i + 1 < len(path_steps) else "",
+            _cache_text(step.get("tail", "")),
+            _cache_text(path_steps[i + 1].get("head", "")) if i + 1 < len(path_steps) else "",
+        )
+        for i, step in enumerate(path_steps[:-1])
+    )
+    if cache_key in _CHAIN_COHERENCE_CACHE:
+        cached = _CHAIN_COHERENCE_CACHE[cache_key]
+        return {
+            "overall_coherence": cached["overall_coherence"],
+            "per_hop": [dict(hop) for hop in cached["per_hop"]],
+            "weakest_hop_score": cached["weakest_hop_score"],
+        }
+
     sbert = _get_sbert()
 
     hop_scores: List[Dict[str, Any]] = []
@@ -333,7 +439,7 @@ def reasoning_chain_coherence(path_steps: List[Dict[str, Any]]) -> Dict[str, Any
         next_head = (path_steps[i + 1].get("head") or "")
 
         if sbert is not None:
-            embs = sbert.encode([curr_claim, next_claim, curr_tail, next_head])
+            embs = _encode_texts_cached([curr_claim, next_claim, curr_tail, next_head]) or []
             claim_coh = _cosine_sim_vectors(embs[0], embs[1])
             bridge_nat = _cosine_sim_vectors(embs[2], embs[3])
         else:
@@ -351,11 +457,17 @@ def reasoning_chain_coherence(path_steps: List[Dict[str, Any]]) -> Dict[str, Any
     overall = float(np.mean([h["combined"] for h in hop_scores])) if hop_scores else 1.0
     weakest = min((h["combined"] for h in hop_scores), default=1.0)
 
-    return {
+    result = {
         "overall_coherence": round(overall, 4),
         "per_hop": hop_scores,
         "weakest_hop_score": round(weakest, 4),
     }
+    _CHAIN_COHERENCE_CACHE[cache_key] = {
+        "overall_coherence": result["overall_coherence"],
+        "per_hop": [dict(hop) for hop in hop_scores],
+        "weakest_hop_score": result["weakest_hop_score"],
+    }
+    return result
 
 
 # ===========================================================================
@@ -810,14 +922,20 @@ def embedding_bridging_score(gen_path: List[Dict[str, Any]]) -> float:
     if not start or not end:
         return 0.0
 
+    cache_key = (_cache_text(start), _cache_text(end))
+    if cache_key in _EMBEDDING_BRIDGING_CACHE:
+        return _EMBEDDING_BRIDGING_CACHE[cache_key]
+
     sbert = _get_sbert()
     if sbert is not None:
-        embs = sbert.encode([start, end])
+        embs = _encode_texts_cached([start, end]) or []
         sim = _cosine_sim_vectors(embs[0], embs[1])
-        return round(max(1.0 - sim, 0.0), 4)
+        score = round(max(1.0 - sim, 0.0), 4)
     else:
         sim = _difflib_similarity(start, end)
-        return round(max(1.0 - sim, 0.0), 4)
+        score = round(max(1.0 - sim, 0.0), 4)
+    _EMBEDDING_BRIDGING_CACHE[cache_key] = score
+    return score
 
 
 # ===========================================================================
@@ -857,18 +975,33 @@ def concept_coverage(
     if not gen_entities:
         return {"concept_recall": 0.0, "concept_precision": 0.0, "concept_f1": 0.0}
 
+    cache_key = (
+        tuple(sorted(_cache_text(entity) for entity in gen_entities)),
+        tuple(sorted(_cache_text(term) for term in gt_terms if term)),
+        round(float(threshold), 4),
+    )
+    if cache_key in _CONCEPT_COVERAGE_CACHE:
+        return dict(_CONCEPT_COVERAGE_CACHE[cache_key])
+
     # Use SBERT if available for matching, otherwise difflib
     sbert = _get_sbert()
+    gen_entities = list(cache_key[0])
+    gt_terms = list(cache_key[1])
 
     # Recall: how many GT terms are covered
     gt_covered = 0
+    if sbert is not None:
+        gt_embs = _encode_texts_cached(gt_terms) or []
+        gen_embs = _encode_texts_cached(gen_entities) or []
+    else:
+        gt_embs = []
+        gen_embs = []
     for gt_term in gt_terms:
         best_sim = 0.0
         if sbert is not None:
-            gt_emb = sbert.encode([gt_term])
-            gen_embs = sbert.encode(gen_entities)
+            gt_emb = gt_embs[gt_terms.index(gt_term)]
             for ge in gen_embs:
-                sim = _cosine_sim_vectors(gt_emb[0], ge)
+                sim = _cosine_sim_vectors(gt_emb, ge)
                 best_sim = max(best_sim, sim)
         else:
             for ge in gen_entities:
@@ -883,10 +1016,9 @@ def concept_coverage(
     for ge in gen_entities:
         best_sim = 0.0
         if sbert is not None:
-            ge_emb = sbert.encode([ge])
-            gt_embs = sbert.encode(gt_terms)
+            ge_emb = gen_embs[gen_entities.index(ge)]
             for gte in gt_embs:
-                sim = _cosine_sim_vectors(ge_emb[0], gte)
+                sim = _cosine_sim_vectors(ge_emb, gte)
                 best_sim = max(best_sim, sim)
         else:
             for gt_term in gt_terms:
@@ -900,11 +1032,13 @@ def concept_coverage(
     precision = gen_matched / len(gen_entities)
     f1 = (2 * precision * recall / (precision + recall)) if (precision + recall) > 0 else 0.0
 
-    return {
+    result = {
         "concept_recall": round(recall, 4),
         "concept_precision": round(precision, 4),
         "concept_f1": round(f1, 4),
     }
+    _CONCEPT_COVERAGE_CACHE[cache_key] = result
+    return dict(result)
 
 
 # ===========================================================================
@@ -1050,15 +1184,6 @@ def path_semantic_alignment(
     if not gen_path or not gt_paths:
         return {"best_alignment": 0.0, "mean_alignment": 0.0, "best_gt_index": -1}
 
-    def _path_to_text(path_steps: List[Dict[str, Any]]) -> str:
-        parts = []
-        for s in path_steps:
-            h = s.get("head", "")
-            r = s.get("relation", s.get("relation_type", ""))
-            t = s.get("tail", "")
-            parts.append(f"{h} [{r}] {t}")
-        return " → ".join(parts)
-
     gen_text = _path_to_text(gen_path)
 
     gt_texts = []
@@ -1072,10 +1197,14 @@ def path_semantic_alignment(
     if not gt_texts:
         return {"best_alignment": 0.0, "mean_alignment": 0.0, "best_gt_index": -1}
 
+    cache_key = (_cache_text(gen_text), tuple(_cache_text(text) for text in gt_texts))
+    if cache_key in _PATH_ALIGNMENT_CACHE:
+        return dict(_PATH_ALIGNMENT_CACHE[cache_key])
+
     sbert = _get_sbert()
     if sbert is not None:
         all_texts = [gen_text] + gt_texts
-        embs = sbert.encode(all_texts)
+        embs = _encode_texts_cached(all_texts) or []
         gen_emb = embs[0]
         gt_embs = embs[1:]
 
@@ -1087,11 +1216,13 @@ def path_semantic_alignment(
     best_sim = float(sims[best_idx])
     mean_sim = float(np.mean(sims))
 
-    return {
+    result = {
         "best_alignment": round(max(best_sim, 0.0), 4),
         "mean_alignment": round(max(mean_sim, 0.0), 4),
         "best_gt_index": best_idx,
     }
+    _PATH_ALIGNMENT_CACHE[cache_key] = result
+    return dict(result)
 
 
 # ===========================================================================
@@ -1233,6 +1364,14 @@ def remote_association_index(
     if not path_steps:
         return 0.0
 
+    cache_key = tuple(
+        (_cache_text(step.get("head", "")), _cache_text(step.get("tail", "")))
+        for step in path_steps
+        if _cache_text(step.get("head", "")) and _cache_text(step.get("tail", ""))
+    )
+    if cache_key in _REMOTE_ASSOCIATION_CACHE:
+        return _REMOTE_ASSOCIATION_CACHE[cache_key]
+
     sbert = _get_sbert()
     distances: List[float] = []
 
@@ -1243,7 +1382,7 @@ def remote_association_index(
             continue
 
         if sbert is not None:
-            embs = sbert.encode([h, t])
+            embs = _encode_texts_cached([h, t]) or []
             sim = _cosine_sim_vectors(embs[0], embs[1])
         else:
             sim = _difflib_similarity(h, t)
@@ -1252,7 +1391,9 @@ def remote_association_index(
 
     if not distances:
         return 0.0
-    return round(float(np.mean(distances)), 4)
+    score = round(float(np.mean(distances)), 4)
+    _REMOTE_ASSOCIATION_CACHE[cache_key] = score
+    return score
 
 
 # ===========================================================================
@@ -1340,11 +1481,19 @@ def hallucination_rate(
 
     abstract_lower = (abstract or "").lower()
     gt_terms_lower = [(t or "").strip().lower() for t in (gt_terms or []) if t]
+    cache_key = (
+        tuple(sorted(_cache_text(entity) for entity in entities)),
+        tuple(sorted(_cache_text(term) for term in gt_terms if term)),
+        abstract_lower,
+        round(float(entity_threshold), 4),
+    )
+    if cache_key in _HALLUCINATION_RATE_CACHE:
+        return _HALLUCINATION_RATE_CACHE[cache_key]
 
     sbert = _get_sbert()
     gt_embs = None
     if sbert is not None and gt_terms:
-        gt_embs = sbert.encode(gt_terms)
+        gt_embs = _encode_texts_cached(gt_terms) or []
 
     ungrounded = 0
     for ent in entities:
@@ -1357,7 +1506,7 @@ def hallucination_rate(
         # Check 2: soft match against GT terms
         grounded = False
         if gt_embs is not None:
-            ent_emb = sbert.encode([ent])[0]
+            ent_emb = (_encode_texts_cached([ent]) or [None])[0]
             for ge in gt_embs:
                 if _cosine_sim_vectors(ent_emb, ge) >= entity_threshold:
                     grounded = True
@@ -1371,7 +1520,9 @@ def hallucination_rate(
         if not grounded:
             ungrounded += 1
 
-    return round(ungrounded / len(entities), 4)
+    score = round(ungrounded / len(entities), 4)
+    _HALLUCINATION_RATE_CACHE[cache_key] = score
+    return score
 
 
 # ===========================================================================
@@ -1383,46 +1534,76 @@ def factual_precision(
     abstract: str = "",
     gt_terms: Optional[List[str]] = None,
     gt_relations: Optional[List[Dict[str, Any]]] = None,
+    gt_evidence_paths: Optional[List[Dict[str, Any]]] = None,
     entity_threshold: float = 0.75,
 ) -> float:
     """
-    Factual precision with tiered fallback:
-    1. If abstract is available: NLI-based non-contradiction against abstract
-    2. Else if GT relations are available: check whether each step is supported by
-       a matching GT relation/evidence sentence
-    3. Else if GT terms are available: require both head/tail entities to be grounded
-       in GT terms
+    Factual precision with multi-source support:
+    1. Source abstract non-contradiction (weight 0.5)
+    2. GT evidence/path text non-contradiction (weight 0.3)
+    3. GT relation support / grounding fallback (weight 0.2)
+
+    Missing channels are skipped and the remaining weights are renormalized.
 
     This makes the metric usable for query-only / held-out evaluation settings
     where the original abstract may be absent.
-
-    FP = |{s : NLI(claim_s, abstract) != contradiction}| / num_steps
-
-    Uses DeBERTa-xlarge-mnli when textual evidence is available.
-    Reference: Min et al. (2023) FActScore.
     """
     if not path_steps:
         return 0.0
 
     gt_terms = gt_terms or []
     gt_relations = gt_relations or []
+    gt_evidence_paths = gt_evidence_paths or []
+    cache_key = (
+        _path_signature(path_steps),
+        _cache_text(abstract),
+        tuple(sorted(_cache_text(term) for term in gt_terms if term)),
+        _relation_signature(gt_relations),
+        tuple(
+            sorted(
+                (
+                    _cache_text(path.get("context", "")),
+                    tuple(
+                        sorted(
+                            _cache_text(
+                                step.get("evidence")
+                                or step.get("claim")
+                                or step.get("relation")
+                                or ""
+                            )
+                            for step in (path.get("path", []) or [])
+                            if isinstance(step, dict)
+                        )
+                    ),
+                )
+                for path in gt_evidence_paths
+                if isinstance(path, dict)
+            )
+        ),
+        round(float(entity_threshold), 4),
+    )
+    if cache_key in _FACTUAL_PRECISION_CACHE:
+        return _FACTUAL_PRECISION_CACHE[cache_key]
+
+    gt_terms_key = cache_key[2]
+    gt_term_list = list(gt_terms_key)
+    gt_term_embs = _encode_texts_cached(gt_term_list) if gt_term_list else None
 
     def _entity_grounded(entity: str) -> bool:
         ent = (entity or "").strip()
-        if not ent or not gt_terms:
+        if not ent or not gt_term_list:
             return False
         ent_lower = ent.lower()
         sbert = _get_sbert()
-        if sbert is not None:
-            ent_emb = sbert.encode([ent])[0]
-            gt_embs = sbert.encode(gt_terms)
+        if sbert is not None and gt_term_embs is not None:
+            ent_emb = (_encode_texts_cached([ent]) or [None])[0]
             return any(
                 _cosine_sim_vectors(ent_emb, gt_emb) >= entity_threshold
-                for gt_emb in gt_embs
+                for gt_emb in gt_term_embs
             )
         return any(
             _difflib_similarity(ent_lower, (gt or "").strip().lower()) >= entity_threshold
-            for gt in gt_terms
+            for gt in gt_term_list
         )
 
     def _step_supported_by_gt_relation(step: Dict[str, Any]) -> bool:
@@ -1475,48 +1656,115 @@ def factual_precision(
             return False
 
         evidence_sentence = (best_relation.get("evidence_sentence") or "").strip()
-        nli = _get_nli()
-        if claim and evidence_sentence and nli is not None:
+        if claim and evidence_sentence:
             try:
-                result = nli(f"{evidence_sentence}</s></s>{claim}", truncation=True)
-                label = result[0]["label"].upper() if result else "NEUTRAL"
+                label = _cached_nli_label(evidence_sentence, claim)
+                if label is None:
+                    return True
                 return label != "CONTRADICTION"
             except Exception as e:
                 logger.warning("NLI inference failed for GT evidence factual check: %s", e)
 
         return True
 
-    if abstract:
-        nli = _get_nli()
-        if nli is None:
-            logger.warning("NLI model unavailable; factual_precision falls back to GT-based checks")
-        else:
-            non_contradicted = 0
-            for step in path_steps:
-                claim = (step.get("claim") or "").strip()
-                if not claim:
-                    non_contradicted += 1  # no claim to check
-                    continue
-                try:
-                    result = nli(f"{abstract}</s></s>{claim}", truncation=True)
-                    label = result[0]["label"].upper() if result else "NEUTRAL"
-                    if label != "CONTRADICTION":
-                        non_contradicted += 1
-                except Exception as e:
-                    logger.warning("NLI inference failed for claim: %s", e)
-                    non_contradicted += 1  # fail-open
-            return round(non_contradicted / len(path_steps), 4)
+    def _matched_gt_evidence_texts(step: Dict[str, Any]) -> List[str]:
+        gen_h = (step.get("head") or "").strip().lower()
+        gen_t = (step.get("tail") or "").strip().lower()
+        if not gen_h or not gen_t:
+            return []
 
-    supported_steps = 0
-    for step in path_steps:
+        texts: List[str] = []
+        for ref_path in gt_evidence_paths:
+            if not isinstance(ref_path, dict):
+                continue
+            path_steps_ref = ref_path.get("path", []) or []
+            best_sim = 0.0
+            best_text = ""
+            for ref_step in path_steps_ref:
+                if not isinstance(ref_step, dict):
+                    continue
+                ref_h = (ref_step.get("head") or "").strip().lower()
+                ref_t = (ref_step.get("tail") or "").strip().lower()
+                if not ref_h or not ref_t:
+                    continue
+                direct_sim = (_difflib_similarity(gen_h, ref_h) + _difflib_similarity(gen_t, ref_t)) / 2
+                reverse_sim = (_difflib_similarity(gen_h, ref_t) + _difflib_similarity(gen_t, ref_h)) / 2
+                pair_sim = max(direct_sim, reverse_sim)
+                if pair_sim > best_sim:
+                    best_sim = pair_sim
+                    best_text = (
+                        (ref_step.get("evidence") or "").strip()
+                        or (ref_step.get("claim") or "").strip()
+                        or (ref_step.get("relation") or "").strip()
+                    )
+            if best_sim >= entity_threshold:
+                if best_text:
+                    texts.append(best_text)
+                context = (ref_path.get("context") or "").strip()
+                if context:
+                    texts.append(context)
+        return texts
+
+    def _non_contradicted(text: str, claim: str) -> bool:
+        if not text or not claim:
+            return True
+        try:
+            label = _cached_nli_label(text, claim) or "NEUTRAL"
+            return label != "CONTRADICTION"
+        except Exception as e:
+            logger.warning("NLI inference failed for claim: %s", e)
+            return True  # fail-open
+
+    def _source_abstract_score(step: Dict[str, Any]) -> Optional[float]:
         claim = (step.get("claim") or "").strip()
         if not claim:
-            supported_steps += 1
-            continue
-        if _step_supported_by_gt_relation(step):
-            supported_steps += 1
-            continue
-        if _entity_grounded(step.get("head") or "") and _entity_grounded(step.get("tail") or ""):
-            supported_steps += 1
+            return 1.0
+        if not abstract:
+            return None
+        if _get_nli() is None:
+            logger.warning("NLI model unavailable; factual_precision source-abstract channel skipped")
+            return None
+        return 1.0 if _non_contradicted(abstract, claim) else 0.0
 
-    return round(supported_steps / len(path_steps), 4)
+    def _gt_evidence_score(step: Dict[str, Any]) -> Optional[float]:
+        claim = (step.get("claim") or "").strip()
+        if not claim:
+            return 1.0
+        evidence_texts = _matched_gt_evidence_texts(step)
+        if not evidence_texts:
+            return None
+        if _get_nli() is None:
+            logger.warning("NLI model unavailable; factual_precision GT-evidence channel skipped")
+            return None
+        return 1.0 if any(_non_contradicted(text, claim) for text in evidence_texts) else 0.0
+
+    def _gt_support_score(step: Dict[str, Any]) -> Optional[float]:
+        claim = (step.get("claim") or "").strip()
+        if not claim:
+            return 1.0
+        if _step_supported_by_gt_relation(step):
+            return 1.0
+        if _entity_grounded(step.get("head") or "") and _entity_grounded(step.get("tail") or ""):
+            return 1.0
+        if gt_relations or gt_terms:
+            return 0.0
+        return None
+
+    step_scores: List[float] = []
+    for step in path_steps:
+        channel_values = [
+            (0.5, _source_abstract_score(step)),
+            (0.3, _gt_evidence_score(step)),
+            (0.2, _gt_support_score(step)),
+        ]
+        available = [(w, v) for w, v in channel_values if v is not None]
+        if not available:
+            step_scores.append(0.0)
+            continue
+        total_weight = sum(w for w, _ in available)
+        weighted = sum(w * float(v) for w, v in available) / total_weight
+        step_scores.append(weighted)
+
+    score = round(sum(step_scores) / len(path_steps), 4)
+    _FACTUAL_PRECISION_CACHE[cache_key] = score
+    return score

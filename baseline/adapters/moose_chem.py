@@ -17,7 +17,12 @@ import json
 import time
 from typing import Optional
 
-from baseline.common import BaseHypothesisAdapter, PaperInput, HypothesisOutput
+from baseline.common import (
+    BaseHypothesisAdapter,
+    HypothesisOutput,
+    PaperInput,
+    get_external_baseline_input,
+)
 
 
 # Stage 1: 提取灵感片段
@@ -27,6 +32,7 @@ scientific findings, methods, and insights from the following paper as a list of
 
 Title: {title}
 Abstract: {abstract}
+Introduction Snippet: {introduction}
 
 Output as JSON: {{"inspirations": ["finding 1", "finding 2", ...]}}
 Extract 3-5 key inspirations. Only output JSON."""
@@ -70,10 +76,13 @@ class MooseChemAdapter(BaseHypothesisAdapter):
 
         t0 = time.time()
         raw_responses = []
+        context = get_external_baseline_input(paper)
 
         # Stage 1: Extract inspirations
         insp_msg = MOOSE_INSPIRATION_PROMPT.format(
-            title=paper.title, abstract=paper.abstract,
+            title=context.title,
+            abstract=context.abstract,
+            introduction=context.introduction_text,
         )
         try:
             insp_resp = chat_completion_with_retry(
@@ -97,8 +106,8 @@ class MooseChemAdapter(BaseHypothesisAdapter):
         insp_text = "\n".join(f"  [{i}] {ins}" for i, ins in enumerate(inspirations))
         hyp_msg = MOOSE_HYPOTHESIS_PROMPT.format(
             inspirations=insp_text,
-            primary=paper.primary_discipline or "N/A",
-            secondary=", ".join(paper.secondary_disciplines) if paper.secondary_disciplines else "N/A",
+            primary=context.primary_discipline,
+            secondary=context.secondary_text,
             num=num_hypotheses,
         )
         try:

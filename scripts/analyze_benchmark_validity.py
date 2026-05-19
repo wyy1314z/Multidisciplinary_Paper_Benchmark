@@ -25,6 +25,8 @@ def _flatten_rows(payload: Dict[str, Any]) -> pd.DataFrame:
         row.update(paper.get("metadata", {}))
         for metric, value in paper.get("overall_scores", {}).items():
             row[f"score_{metric}"] = value
+        for metric, value in paper.get("x5_overall", {}).items():
+            row[f"x5_{metric}"] = value
         rows.append(row)
     return pd.DataFrame(rows)
 
@@ -45,7 +47,10 @@ def main() -> None:
     if df.empty:
         raise SystemExit("No paper rows found in validity result")
 
-    score_cols = [c for c in df.columns if c.startswith("score_")]
+    score_cols = [
+        c for c in df.columns
+        if c.startswith("score_") or c.startswith("x5_")
+    ]
     numeric_signals = [c for c in ["fwci", "cited_by_count"] if c in df.columns]
 
     signal_correlations: Dict[str, Dict[str, float]] = {}

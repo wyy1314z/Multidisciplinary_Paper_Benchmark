@@ -1,5 +1,7 @@
 # CrossDisc Benchmark 评估指标完整汇总表
 
+> **状态说明**：本文档保留细粒度指标清单，主要用于诊断和消融分析。当前项目的主报告口径已收敛为 **X+5** 指标体系：`Interdisciplinary Integration` + `Structural Validity`、`Evidence Groundedness`、`Novelty`、`Testability`、`Feasibility`。主体系说明见 `docs/evaluation_metrics_integrated.md`。
+
 > 共计 **61 个独立指标**（不含 L1/L2/L3 层级变体），涵盖 10 大类别。
 > 其中 19 个指标存在 L1/L2/L3 层级变体，实际评估维度达 **90+**。
 

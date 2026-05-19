@@ -526,9 +526,11 @@ def _sanitize_query_obj(obj: dict) -> dict:
 def parse_query_output(text: str, struct: Optional[StructExtraction] = None) -> QueryAndBuckets:
     """
     重要变化：
-    - 不再因为“查询中含英文”而抛错导致整条记录失败；
-    - 发现英文时会自动清洗/替换并返回修复后的 QueryAndBuckets。
+    - 中文模式下，不再因为“查询中含英文”而抛错导致整条记录失败；
+    - original 模式下保留原文语言，不做中文化清洗。
     """
+    from crossdisc_extractor.config import LanguageMode, get_language_mode
+
     obj = _coerce_obj(text)
     if not isinstance(obj, dict):
         raise ValueError("查询生成输出不是 JSON 对象")
@@ -539,7 +541,8 @@ def parse_query_output(text: str, struct: Optional[StructExtraction] = None) -> 
 
     parsed = QueryAndBuckets.model_validate(obj)
 
-    # 自动修复“查询必须中文”：不报错，不失败
-    parsed.查询 = ensure_query_chinese(parsed.查询, struct=struct)
+    # 自动修复“查询必须中文”：仅中文模式启用；original 模式保留原文术语。
+    if get_language_mode() == LanguageMode.CHINESE:
+        parsed.查询 = ensure_query_chinese(parsed.查询, struct=struct)
 
     return parsed

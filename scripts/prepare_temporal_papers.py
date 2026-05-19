@@ -109,7 +109,17 @@ def normalize_journal_name(name: str) -> str:
 def iter_normalized_records(csv_path: Path) -> Iterable[Dict[str, Any]]:
     logger.info("Reading CSV: %s", csv_path)
     usecols = {candidate for candidates in STANDARD_COLUMNS.values() for candidate in candidates}
-    df = pd.read_csv(csv_path, dtype=str, usecols=lambda c: c in usecols)
+    # The 2025 Springer/Nature export contains a few very long, irregular rows.
+    # The Python engine is slower than the C parser, but it handles malformed
+    # rows more gracefully and keeps small benchmark sampling runs from failing
+    # before any model work starts.
+    df = pd.read_csv(
+        csv_path,
+        dtype=str,
+        usecols=lambda c: c in usecols,
+        engine="python",
+        on_bad_lines="skip",
+    )
     for row in df.to_dict(orient="records"):
         record = normalize_row(row)
         if record:

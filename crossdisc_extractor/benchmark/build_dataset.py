@@ -61,6 +61,21 @@ def convert_to_benchmark_format(item: Dict[str, Any]) -> Optional[Dict[str, Any]
         if not extraction.graph:
             extraction = build_graph_and_metrics(extraction)
 
+        legacy_paths = {
+            "L1": [
+                [p.model_dump() for p in path]
+                for path in extraction.假设.一级
+            ],
+            "L2": [
+                [p.model_dump() for p in path]
+                for path in extraction.假设.二级
+            ],
+            "L3": [
+                [p.model_dump() for p in path]
+                for path in extraction.假设.三级
+            ],
+        }
+
         entry = {
             "id": item.get("title", "")[:50],
             "input": {
@@ -69,23 +84,20 @@ def convert_to_benchmark_format(item: Dict[str, Any]) -> Optional[Dict[str, Any]
                 "secondary_disciplines": extraction.meta.secondary_list,
                 "abstract": item.get("abstract", ""),
             },
-            "metadata": _build_metadata(item, extraction.meta.model_dump()),
+            "metadata": {
+                **_build_metadata(item, extraction.meta.model_dump()),
+                "gt_source": "legacy_llm",
+                "uses_llm_generated_gt": True,
+            },
             "ground_truth": {
                 "graph": extraction.graph.model_dump() if extraction.graph else None,
-                "hypothesis_paths": {
-                    "L1": [
-                        [p.model_dump() for p in path]
-                        for path in extraction.假设.一级
-                    ],
-                    "L2": [
-                        [p.model_dump() for p in path]
-                        for path in extraction.假设.二级
-                    ],
-                    "L3": [
-                        [p.model_dump() for p in path]
-                        for path in extraction.假设.三级
-                    ],
-                },
+                "hypothesis_paths": legacy_paths,
+            },
+            "model_outputs": {
+                "legacy_llm_hypothesis_paths": legacy_paths,
+            },
+            "supplementary": {
+                "legacy_paths_for_ablation": legacy_paths,
             },
             "metrics": extraction.metrics.model_dump()
             if extraction.metrics
@@ -150,7 +162,11 @@ def convert_to_evidence_grounded_format(
                 "secondary_disciplines": secondary_list,
                 "abstract": abstract,
             },
-            "metadata": _build_metadata(item, meta),
+            "metadata": {
+                **_build_metadata(item, meta),
+                "gt_source": "evidence",
+                "uses_llm_generated_gt": False,
+            },
             "ground_truth": {
                 "terms": gt["terms"],
                 "relations": gt["relations"],
@@ -168,9 +184,12 @@ def convert_to_evidence_grounded_format(
                 "L2": hyp.get("二级", []),
                 "L3": hyp.get("三级", []),
             }
-            entry["ground_truth"]["hypothesis_paths_legacy"] = hp
-            # evaluate_benchmark.py reads "hypothesis_paths" key
-            entry["ground_truth"]["hypothesis_paths"] = hp
+            entry["model_outputs"] = {
+                "legacy_llm_hypothesis_paths": hp,
+            }
+            entry["supplementary"] = {
+                "legacy_paths_for_ablation": hp,
+            }
 
         return entry
 

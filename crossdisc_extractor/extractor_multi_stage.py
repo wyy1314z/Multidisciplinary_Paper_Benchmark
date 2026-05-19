@@ -29,8 +29,8 @@ from crossdisc_extractor.prompts.struct_prompt_split import (
 from crossdisc_extractor.prompts.query_prompt import build_query_messages, parse_query_output
 from crossdisc_extractor.prompts.hypothesis_prompt_split import (
     build_hypothesis_messages_l1,
-    build_hypothesis_messages_l2,
-    build_hypothesis_messages_l3,
+    build_hypothesis_messages_l2_single,
+    build_hypothesis_messages_l3_single,
     parse_partial_hypothesis,
 )
 from crossdisc_extractor.graph_builder import build_graph_and_metrics
@@ -870,6 +870,7 @@ def run_pipeline_for_item(
     max_tokens_query: int = 4096,
     max_tokens_hyp: int = 4096,
     language_mode: str = "chinese",
+    single_query_per_level: bool = False,
 ) -> Tuple[Extraction, str, str]:
     """
     核心多阶段 pipeline：
@@ -1006,12 +1007,17 @@ def run_pipeline_for_item(
         seed=(None if seed is None else seed + 1),
         max_tokens=max_tokens_query,
     )
-    qa = parse_query_output(raw_query)
+    qa = parse_query_output(raw_query, struct=struct)
+    if single_query_per_level:
+        qa.查询.二级 = list(qa.查询.二级 or [])[:1]
+        qa.查询.三级 = list(qa.查询.三级 or [])[:1]
 
-    # ── Stage 3: Hypothesis (Split into L1, L2, L3) — 并行调用 ──────
+    # ── Stage 3: Hypothesis ─────────────────────────────────────────
+    # L1 remains one macro-level call. L2/L3 are generated one query at a
+    # time, then assembled by index, so query/hypothesis counts stay aligned.
     messages_hyp_l1 = build_hypothesis_messages_l1(struct, qa.查询)
-    messages_hyp_l2 = build_hypothesis_messages_l2(struct, qa.查询)
-    messages_hyp_l3 = build_hypothesis_messages_l3(struct, qa.查询)
+    l2_queries = list(qa.查询.二级 or [])
+    l3_queries = list(qa.查询.三级 or [])
 
     def _call_hyp(messages, seed_offset, level):
         raw = chat_completion_with_retry(
@@ -1022,19 +1028,82 @@ def run_pipeline_for_item(
         )
         return raw, parse_partial_hypothesis(raw, level=level, struct=struct)
 
-    with ThreadPoolExecutor(max_workers=3) as hyp_executor:
-        f1 = hyp_executor.submit(_call_hyp, messages_hyp_l1, 2, 1)
-        f2 = hyp_executor.submit(_call_hyp, messages_hyp_l2, 3, 2)
-        f3 = hyp_executor.submit(_call_hyp, messages_hyp_l3, 4, 3)
-        raw_hyp_l1, hyp_l1_dict = f1.result()
-        raw_hyp_l2, hyp_l2_dict = f2.result()
-        raw_hyp_l3, hyp_l3_dict = f3.result()
+    def _call_single_query_hyp(messages, seed_offset, level, query_index):
+        raw, parsed = _call_hyp(messages, seed_offset, level)
+        level_key = "二级" if level == 2 else "三级"
+        summary_key = f"{level_key}总结"
+        paths = parsed.get(level_key) or []
+        summaries = parsed.get(summary_key) or []
+        if not paths:
+            raise ModelOutputError(f"假设 L{level} Query[{query_index + 1}] 未生成任何有效路径")
+        if len(paths) > 1:
+            logger.warning(
+                "假设 L%d Query[%d] 生成了 %d 条路径；单条 Query 模式仅保留第 1 条",
+                level, query_index + 1, len(paths),
+            )
+        summary = summaries[0] if summaries else ""
+        return raw, paths[0], summary
+
+    raw_hyp_l2_parts: List[Optional[str]] = [None] * len(l2_queries)
+    raw_hyp_l3_parts: List[Optional[str]] = [None] * len(l3_queries)
+    hyp_l2_paths: List[Any] = [None] * len(l2_queries)
+    hyp_l3_paths: List[Any] = [None] * len(l3_queries)
+    hyp_l2_summaries: List[str] = [""] * len(l2_queries)
+    hyp_l3_summaries: List[str] = [""] * len(l3_queries)
+
+    max_hyp_workers = max(1, min(8, 1 + len(l2_queries) + len(l3_queries)))
+    with ThreadPoolExecutor(max_workers=max_hyp_workers) as hyp_executor:
+        futures = {
+            hyp_executor.submit(_call_hyp, messages_hyp_l1, 2, 1): ("L1", 0),
+        }
+
+        for i in range(len(l2_queries)):
+            messages = build_hypothesis_messages_l2_single(struct, qa.查询, i)
+            futures[hyp_executor.submit(_call_single_query_hyp, messages, 100 + i, 2, i)] = ("L2", i)
+
+        for i in range(len(l3_queries)):
+            messages = build_hypothesis_messages_l3_single(struct, qa.查询, i)
+            futures[hyp_executor.submit(_call_single_query_hyp, messages, 200 + i, 3, i)] = ("L3", i)
+
+        raw_hyp_l1 = ""
+        hyp_l1_dict = {}
+        for future in as_completed(futures):
+            level_label, query_index = futures[future]
+            if level_label == "L1":
+                raw_hyp_l1, hyp_l1_dict = future.result()
+                if single_query_per_level:
+                    for key in ("一级", "一级总结"):
+                        values = hyp_l1_dict.get(key)
+                        if isinstance(values, list) and len(values) > 1:
+                            logger.info("single_query_per_level: 假设.%s 仅保留第 1 条", key)
+                            hyp_l1_dict[key] = values[:1]
+            elif level_label == "L2":
+                raw, path, summary = future.result()
+                raw_hyp_l2_parts[query_index] = raw
+                hyp_l2_paths[query_index] = path
+                hyp_l2_summaries[query_index] = summary
+            elif level_label == "L3":
+                raw, path, summary = future.result()
+                raw_hyp_l3_parts[query_index] = raw
+                hyp_l3_paths[query_index] = path
+                hyp_l3_summaries[query_index] = summary
+
+    raw_hyp_l2 = "\n\n".join(
+        f"/* L2 query {i + 1}/{len(l2_queries)} */\n{raw or ''}"
+        for i, raw in enumerate(raw_hyp_l2_parts)
+    )
+    raw_hyp_l3 = "\n\n".join(
+        f"/* L3 query {i + 1}/{len(l3_queries)} */\n{raw or ''}"
+        for i, raw in enumerate(raw_hyp_l3_parts)
+    )
 
     # ── Stage 3b: Entity alignment (Direction 3) ─────────────────────
     hyp_args = {}
     hyp_args.update(hyp_l1_dict)
-    hyp_args.update(hyp_l2_dict)
-    hyp_args.update(hyp_l3_dict)
+    hyp_args["二级"] = hyp_l2_paths
+    hyp_args["二级总结"] = hyp_l2_summaries
+    hyp_args["三级"] = hyp_l3_paths
+    hyp_args["三级总结"] = hyp_l3_summaries
 
     try:
         hyp_args = _align_hypothesis_entities(hyp_args, concepts_obj)
@@ -1061,8 +1130,7 @@ def run_pipeline_for_item(
 
     # Attach alignment stats to the final output (as extra metadata)
     if alignment_stats:
-        final_dict = final.model_dump()
-        final_dict["_entity_alignment_stats"] = alignment_stats
+        final.entity_alignment_stats = alignment_stats
 
     # 把各阶段的原始输出拼在一起（方便调试）
     raw_all = (
@@ -1103,6 +1171,7 @@ def _process_one_item(
     max_tokens_query: int = 12000,
     max_tokens_hyp: int = 12000,
     language_mode: str = "chinese",
+    single_query_per_level: bool = False,
 ) -> Tuple[int, Dict[str, Any], bool]:
     title, abstract = it["title"], it["abstract"]
     pdf_url = it.get("pdf_url", "")
@@ -1146,6 +1215,7 @@ def _process_one_item(
             max_tokens_query=max_tokens_query,
             max_tokens_hyp=max_tokens_hyp,
             language_mode=language_mode,   # 修复：language_mode 现在正确传递
+            single_query_per_level=single_query_per_level,
         )
         rec["introduction"] = introduction
         rec["parsed"] = result.model_dump()
@@ -1194,6 +1264,7 @@ def run_benchmark(
     max_tokens_query: int = 4096,
     max_tokens_hyp: int = 4096,
     language_mode: str = "chinese",
+    single_query_per_level: bool = False,
     resume: bool = True,   # 新增：断点续传，跳过已成功完成的记录
 ):
     items = load_inputs(input_path)
@@ -1226,7 +1297,8 @@ def run_benchmark(
 
     logger.info(
         f"开始处理：共 {len(items)} 条，跳过 {skipped} 条，待处理 {total} 条 "
-        f"(num_workers={num_workers}, language_mode={language_mode})"
+        f"(num_workers={num_workers}, language_mode={language_mode}, "
+        f"single_query_per_level={single_query_per_level})"
     )
 
     if total == 0:
@@ -1249,6 +1321,7 @@ def run_benchmark(
                 max_tokens_query=max_tokens_query,
                 max_tokens_hyp=max_tokens_hyp,
                 language_mode=language_mode,
+                single_query_per_level=single_query_per_level,
             )
             out_records.append(rec)
             if ok_flag:
@@ -1289,6 +1362,7 @@ def run_benchmark(
                 max_tokens_query,
                 max_tokens_hyp,
                 language_mode,      # 修复：language_mode 正确传入并行 worker
+                single_query_per_level,
             ): i
             for i, it in enumerate(pending, 1)
         }
@@ -1462,6 +1536,11 @@ def build_argparser() -> argparse.ArgumentParser:
     one.add_argument("--max-tokens-query", type=int, default=4096, help="Stage2(query) 最大生成 token")
     one.add_argument("--max-tokens-hyp", type=int, default=4096, help="Stage3(hypothesis) 最大生成 token")
     one.add_argument(
+        "--single-query-per-level",
+        action="store_true",
+        help="每个层级只保留第一个 query，并使每层最终只保留一条假设路径",
+    )
+    one.add_argument(
         "--show-raw",
         action="store_true",
         help="显示三个阶段的模型原始响应",
@@ -1515,6 +1594,11 @@ def build_argparser() -> argparse.ArgumentParser:
     bat.add_argument("--max-tokens-struct", type=int, default=12000, help="Stage1(struct) 最大生成 token（避免输出截断）")
     bat.add_argument("--max-tokens-query", type=int, default=12000, help="Stage2(query) 最大生成 token")
     bat.add_argument("--max-tokens-hyp", type=int, default=12000, help="Stage3(hypothesis) 最大生成 token")
+    bat.add_argument(
+        "--single-query-per-level",
+        action="store_true",
+        help="每个层级只保留第一个 query，并使每层最终只保留一条假设路径",
+    )
 
     exp = sub.add_parser("export", help="导出摘要信息（CSV/JSON）")
     exp.add_argument("--input", required=True, help="结构化结果 JSON 文件")
@@ -1559,6 +1643,7 @@ def main():
                 max_tokens_query=args.max_tokens_query,
                 max_tokens_hyp=args.max_tokens_hyp,
                 language_mode=args.language_mode,
+                single_query_per_level=args.single_query_per_level,
             )
             packed = {
                 "title": args.title,
@@ -1612,6 +1697,7 @@ def main():
             max_tokens_query=args.max_tokens_query,
             max_tokens_hyp=args.max_tokens_hyp,
             language_mode=args.language_mode,
+            single_query_per_level=args.single_query_per_level,
             resume=args.resume,
         )
     elif args.cmd == "export":

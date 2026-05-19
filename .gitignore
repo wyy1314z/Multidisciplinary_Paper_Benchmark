@@ -39,14 +39,21 @@ htmlcov/
 coverage.xml
 .coverage
 
-# Outputs (large data files, generated results)
-outputs/*.json
-outputs/*.jsonl
-outputs/*.png
-outputs/*.csv
-outputs/*.xlsx
-!outputs/.gitkeep
+# Outputs and caches (generated artifacts)
+outputs/
+web_search_cache/
+baseline/outputs/
+*.log
+*.pid
+
+# Large local source datasets
+data/raw/
+data/*.csv
+data/*.jsonl
+data/*.xlsx
+!data/discipline_mapping_en_zh.json
+!data/msc_converted.json
+!data/paper_1.json
 
 # PDF inputs
 *.pdf
-data/nature_springer_2025.csv

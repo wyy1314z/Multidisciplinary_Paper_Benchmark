@@ -616,6 +616,7 @@ class Extraction(BaseModel):
     假设: Hypothesis3Levels
     graph: Optional[ConceptGraph] = None
     metrics: Optional[GraphMetrics] = None
+    entity_alignment_stats: Optional[Dict[str, Any]] = None
 
     @model_validator(mode="after")
     def _check_alignment(self):

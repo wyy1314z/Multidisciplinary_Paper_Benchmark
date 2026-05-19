@@ -266,6 +266,7 @@ class TestGTRelation:
         d = rel.to_dict()
         assert d["head"] == "机器学习"
         assert d["relation_type"] == "method_applied_to"
+        assert "support_level" in d
 
 
 class TestExtractTerms:
@@ -303,6 +304,7 @@ class TestBuildRelations:
         # Should find at least one relation from co-occurrence
         if relations:
             assert relations[0].evidence_sentence != ""
+            assert relations[0].support_level in {"direct", "weak"}
 
     def test_no_cooccurrence(self):
         terms = [
@@ -332,6 +334,8 @@ class TestBuildGtPaths:
         # Should find at least A→B→C
         if paths:
             assert len(paths[0].steps) >= 1
+            assert paths[0].support_level in {"direct", "local", "inferred", "weak"}
+            assert "evidence_sentences" in paths[0].to_dict()
 
     def test_cross_discipline_filter(self):
         terms = [
@@ -362,6 +366,7 @@ class TestBuildGtPaths:
         if paths:
             for step in paths[0].steps:
                 assert "evidence" in step
+                assert "support_level" in step
 
 
 class TestBuildGroundTruth:
@@ -384,6 +389,8 @@ class TestBuildGroundTruth:
         assert "concept_graph" in result
         assert "stats" in result
         assert isinstance(result["stats"]["n_terms"], int)
+        assert "relation_support_distribution" in result["stats"]
+        assert "path_support_distribution" in result["stats"]
 
     def test_empty_input(self, tmp_path):
         taxonomy = {"数学": {}}
@@ -523,6 +530,11 @@ class TestConvertToEvidenceGrounded:
                     "fwci": 3.2,
                     "cited_by_count": 12,
                 },
+                "假设": {
+                    "一级": [[{"step": 1, "head": "LLM A", "relation": "r", "tail": "LLM B"}]],
+                    "二级": [],
+                    "三级": [],
+                },
             },
         }
 
@@ -538,6 +550,11 @@ class TestConvertToEvidenceGrounded:
             assert result["metadata"]["publication_year"] == 2025
             assert result["metadata"]["fwci"] == 3.2
             assert result["metadata"]["cited_by_count"] == 12
+            assert result["metadata"]["gt_source"] == "evidence"
+            assert result["metadata"]["uses_llm_generated_gt"] is False
+            assert "hypothesis_paths" not in result["ground_truth"]
+            assert "legacy_llm_hypothesis_paths" in result["model_outputs"]
+            assert "legacy_paths_for_ablation" in result["supplementary"]
 
     def test_no_text(self):
         item = {"ok": True, "title": "test", "abstract": "", "introduction": ""}

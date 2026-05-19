@@ -14,7 +14,12 @@ from __future__ import annotations
 import time
 from typing import Optional
 
-from baseline.common import BaseHypothesisAdapter, PaperInput, HypothesisOutput
+from baseline.common import (
+    BaseHypothesisAdapter,
+    HypothesisOutput,
+    PaperInput,
+    get_external_baseline_input,
+)
 
 
 # IdeaBench 原始 prompt 模板（从 IdeaBench/src/generation/generate_hypotheses.py 提取）
@@ -28,6 +33,8 @@ IDEABENCH_USER_TEMPLATE = """Here is the background information:
 Title: {title}
 
 Abstract: {abstract}
+
+Introduction Snippet: {introduction}
 
 Using this information, reason over it and come up with a novel hypothesis. \
 Please avoid copying ideas directly, rather use the insights to inspire a novel \
@@ -48,9 +55,11 @@ class IdeaBenchAdapter(BaseHypothesisAdapter):
     def generate(self, paper: PaperInput, num_hypotheses: int = 3) -> HypothesisOutput:
         from crossdisc_extractor.utils.llm import chat_completion_with_retry
 
+        context = get_external_baseline_input(paper)
         user_msg = IDEABENCH_USER_TEMPLATE.format(
-            title=paper.title,
-            abstract=paper.abstract,
+            title=context.title,
+            abstract=context.abstract,
+            introduction=context.introduction_text,
         )
         messages = [
             {"role": "system", "content": IDEABENCH_SYSTEM},
